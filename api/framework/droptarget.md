@@ -1,7 +1,7 @@
 ---
 title: kendo.ui.DropTarget
-slug: web-kendo.ui.droptarget
-tags: api,web
+slug: framework-kendo.ui.droptarget
+tags: api,framework
 publish: true
 ---
 

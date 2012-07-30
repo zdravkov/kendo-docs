@@ -1,7 +1,7 @@
 ---
 title: kendo.ui.Draggable
-slug: web-kendo.ui.draggable
-tags: api,web
+slug: framework-kendo.ui.draggable
+tags: api,framework
 publish: true
 ---
 
@@ -52,7 +52,7 @@ Provides a way for customization of the drag indicator. If a function is supplie
              //  return element.clone();
          }
      });
-    
+
     //hint as jQuery object
      $("#draggable").kendoDraggable({
          hint: $("#draggableHint");
