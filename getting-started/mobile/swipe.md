@@ -1,11 +1,11 @@
 ---
-title: Mobile Swipe overview
+title: Mobile Swipe
 slug: gs-mobile-swipe
 tags: getting-started,mobile
 publish: true
 ---
 
-# Mobile Swipe Overview
+# Mobile Swipe
 
 The mobile swipe component handles user horizontal swiping events.
 

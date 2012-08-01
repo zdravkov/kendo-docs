@@ -1,5 +1,5 @@
 ---
-title: Mobile Pane Overview
+title: Mobile Pane
 slug: gs-mobile-pane
 tags: getting-started,mobile
 publish: true

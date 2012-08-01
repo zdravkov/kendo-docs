@@ -1,11 +1,11 @@
 ---
-title: Mobile ScrollView Overview
+title: Mobile ScrollView
 slug: gs-mobile-scrollview
 tags: getting-started,mobile
 publish: true
 ---
 
-# Mobile ScrollView Overview
+# Mobile ScrollView
 
 The Kendo Mobile ScrollView widget is used to scroll content wider than the device screen.
 
