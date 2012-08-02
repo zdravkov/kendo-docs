@@ -99,7 +99,7 @@ The name of the field whose value is going to be returned.
 
 #### Returns
 
-The value of the specified field.
+`Object` The value of the specified field.
 
 ### parent
 
