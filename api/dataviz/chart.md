@@ -4833,14 +4833,13 @@ The default options for all vertical line series. For more details see the serie
 
 Sets Chart theme. Available themes: default, blueOpal, black.
 
-### title `Object`
+### title `Object`, `String`
 
-The chart title configuration options.
+The chart title configuration options or text.
 
 ### title.align `String`*(default: "center")*
 
  The alignment of the title.
-
 
 #### *"left"*
 
@@ -4985,7 +4984,22 @@ The title is positioned on the bottom.
 
 ### title.text `String`
 
-The title of the chart.
+The title of the chart. You can also set the text directly for a title with default options.
+
+#### Example
+
+    $("#chart ").kendoChart({
+        title: {
+            text: "Sales data"
+        },
+        ...
+    });
+
+    $("#chart ").kendoChart({
+        title: "Sales data",
+        ...
+    });
+
 
 ### title.visible `Boolean`*(default: false)*
 
