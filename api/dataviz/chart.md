@@ -1263,6 +1263,10 @@ The plot area configuration options. This is the area containing the plotted ser
 
  The background color of the plot area.
 
+### plotArea.opacity `Number`*(default: 1)*
+
+ The background opacity of the plot area.
+
 ### plotArea.border `Object`
 
 The border of the plot area.
