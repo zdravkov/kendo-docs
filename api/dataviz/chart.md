@@ -917,6 +917,10 @@ This is the entire visible area of the chart.
 
 The background color of the chart area.
 
+### chartArea.opacity `Number`*(default: 1)*
+
+ The background opacity of the chart area.
+
 ### chartArea.border `Object`
 
 The border of the chart area.
