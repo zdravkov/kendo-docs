@@ -823,20 +823,20 @@ The text of the title.
         ...
     });
 
-### categoryAxis.type `String`*(default: "Category")*
+### categoryAxis.type `String`*(default: "category")*
 
  The axis type.
 
 
-#### *"Category"*
+#### *"category"*
 
 Discrete category axis.
 
-#### *"Date"*
+#### *"date"*
 
 Specialized axis for displaying chronological data.
 
-### categoryAxis.type: "Date"
+### categoryAxis.type: "date"
 
 Properties specific to the date-time value axis.
 
@@ -844,7 +844,7 @@ Properties specific to the date-time value axis.
 Note: The Chart will automatically switch to a date category axis if the categories
 are of type Date. Specify type explicitly when such behavior is undesired.
 
-### categoryAxis.type: "Date".baseUnit `String`
+### categoryAxis.type: "date".baseUnit `String`
 
 The base time interval for the axis.
 The default baseUnit is determined automatically from the minimum difference
@@ -859,15 +859,15 @@ between subsequent categories. Available options:
 Series data is aggregated for the specified base unit by using the
 **series.aggregate** function.
 
-### categoryAxis.type: "Date".labels `Object`
+### categoryAxis.type: "date".labels `Object`
 
 Label settings specific to the date axis.
 
-### categoryAxis.type: "Date".labels.culture `String`*(default: global culture)*
+### categoryAxis.type: "date".labels.culture `String`*(default: global culture)*
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
 
-### categoryAxis.type: "Date".labels.dateFormats `Object`
+### categoryAxis.type: "date".labels.dateFormats `Object`
 
 Date format strings
 
@@ -890,14 +890,14 @@ Date format strings
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
-### categoryAxis.type: "Date".max `Number`
+### categoryAxis.type: "date".max `Number`
 
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
 This is often used in combination with the **min** configuration option to
 set up a fixed date range.
 
-### categoryAxis.type: "Date".min `Number`
+### categoryAxis.type: "date".min `Number`
 
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
@@ -5908,7 +5908,7 @@ The text of the title.
 Scatter charts X-axis configuration options.
 Includes **all valueAxis options** in addition to:
 
-### xAxis.type `String`*(default: "Numeric")*
+### xAxis.type `String`*(default: "numeric")*
 
  The axis type.
 
@@ -5918,23 +5918,23 @@ is of type Date. Specify type explicitly when such behavior is undesired.
 
 
 
-#### *"Numeric"*
+#### *"numeric"*
 
 Generic axis with automatic range.
 
-#### *"Date"*
+#### *"date"*
 
 Suitable for displaying chronological data.
 
-### xAxis.type: "Date"
+### xAxis.type: "date"
 
 Properties specific to the date-time value axis
 
-### xAxis.type: "Date".axisCrossingValue `Date`
+### xAxis.type: "date".axisCrossingValue `Date`
 
 Date at which the Y axis crosses this axis.
 
-### xAxis.type: "Date".baseUnit `String`
+### xAxis.type: "date".baseUnit `String`
 
 The base time interval for the axis labels.
 The default baseUnit is determined automatically from the value range. Available options:
@@ -5945,15 +5945,15 @@ The default baseUnit is determined automatically from the value range. Available
 * months
 * years
 
-### xAxis.type: "Date".labels `Object`
+### xAxis.type: "date".labels `Object`
 
 Label settings specific to the date axis.
 
-### xAxis.type: "Date".labels.culture `String`*(default: global culture)*
+### xAxis.type: "date".labels.culture `String`*(default: global culture)*
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
 
-### xAxis.type: "Date".labels.dateFormats `Object`
+### xAxis.type: "date".labels.dateFormats `Object`
 
 Date format strings
 
@@ -5976,34 +5976,34 @@ Date format strings
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
-### xAxis.type: "Date".majorUnit `Number`
+### xAxis.type: "date".majorUnit `Number`
 
 The interval between major divisions in base units.
 
-### xAxis.type: "Date".max `Date`
+### xAxis.type: "date".max `Date`
 
 The end date of the axis.
 This is often used in combination with the **min** configuration option.
 
-### xAxis.type: "Date".min `Date`
+### xAxis.type: "date".min `Date`
 
 The start date of the axis.
 This is often used in combination with the **max** configuration option.
 
-### xAxis.type: "Date".minorUnit `Number`
+### xAxis.type: "date".minorUnit `Number`
 
 The interval between minor divisions in base units.
 It defaults to 1/5th of the majorUnit.
 
-### xAxis.type: "Numeric" `Number`
+### xAxis.type: "numeric" `Number`
 
 Options specific to the numeric axis.
 
-### xAxis.type: "Numeric".axisCrossingValue *(default: 0)*
+### xAxis.type: "numeric".axisCrossingValue *(default: 0)*
 
 Value at which the first Y axis crosses this axis.
 
-### xAxis.type: "Numeric".axisCrossingValue `Array`*(default: [0])*
+### xAxis.type: "numeric".axisCrossingValue `Array`*(default: [0])*
 
 Values at which the Y axes cross this X axis.
 <p>
