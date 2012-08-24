@@ -6,7 +6,7 @@ publish: true
 ---
 
 # Tutorial: HTML5 Development For ASP.NET Developers Part 4
-## Hello Kendo UI
+## Hello Kendo
 
 In this tutorial, you will work with the most complex widget, the **[Kendo UI
 Grid][4]** as well as one of the core components, the **[Kendo UI
