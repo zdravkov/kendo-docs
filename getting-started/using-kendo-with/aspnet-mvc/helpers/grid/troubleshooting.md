@@ -59,12 +59,9 @@ There are a few possible solutions:
             var data = GetData();
             var serializer = new JavaScriptSerializer();
             var result = new ContentResult();
-
             serializer.MaxJsonLength = Int32.MaxValue; // Whatever max length you want here
-
             result.Content = serializer.Serialize(data.ToDataSourceResult(request));
             result.ContentType = "application/json";
-
             return result;
         }
 
