@@ -57,15 +57,12 @@ There are a few possible solutions:
         public ActionResult Read([DataSourceRequest] DataSourceRequest request)
         {
             var data = GetData();
-
             var serializer = new JavaScriptSerializer();
-
+            var result = new ContentResult();            
+            
             serializer.MaxJsonLength = Int32.MaxValue; // Whatever max length you want here
 
-            var result = new ContentResult();
-
             result.Content = serializer.Serialize(data.ToDataSourceResult(request));
-
             result.ContentType = "application/json";
 
             return result;
