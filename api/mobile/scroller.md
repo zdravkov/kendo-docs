@@ -9,6 +9,10 @@ publish: true
 
 ## Configuration
 
+### zoom `Boolean`*(default: false)*
+
+If set to true, the user can zoom in/out the contents of the widget using the pinch/zoom gesture.
+
 ### elastic `Boolean`*(default: true)*
 
  Weather or not to allow out of bounds dragging and easing.
@@ -51,15 +55,15 @@ Indicate that the pull event is handled (i.e. data from the server has been retr
          <h2 id="pull-to-refresh-clock"></h2>
      </div>
     <script>
-    
+
      function updateClock() {
          pullTime = kendo.toString(new Date(), "hh:mm:ss tt" );
          $("#pull-to-refresh-clock").html("Last update at " + pullTime + ". <br /> Pull to refresh.");
      }
-    
+
      function initPullToRefreshScroller(e) {
          var scroller = e.view.scroller;
-    
+
          scroller.setOptions({
              pullToRefresh: true,
              pull: function() {

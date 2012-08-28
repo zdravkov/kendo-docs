@@ -24,14 +24,18 @@ will try to resolve a reference to the view model variable in the global scope.
        <span data-bind="text:bar"></span>
     </div>
 
+### zoom `Boolean`*(default: false)*
+
+If set to true, the user can zoom in/out the contents of the view using the pinch/zoom gesture.
+
 ### stretch `Boolean`*(default: false)*
 
- If set to true, the view will stretch its child contents to occupy the entire view, while disabling kinetic scrolling.
+If set to true, the view will stretch its child contents to occupy the entire view, while disabling kinetic scrolling.
 Useful if the view contains an image or a map.
 
 ### title `String`
 
- The text to display in the navbar title (if present) and the browser title.
+The text to display in the navbar title (if present) and the browser title.
 
 ## Events
 
