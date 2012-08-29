@@ -422,6 +422,21 @@ A JSON-formatted string or selector that specifies the node to be inserted.
 
 The node that follows the inserted node.
 
+### parent
+
+Gets the parent node of the item
+
+#### Example
+
+    var treeView = $("#treeView").data("kendoTreeView");
+    var parentNode = treeView.parent($("#firstItem"));
+
+#### Parameters
+
+##### node `Element`
+
+The child node whose parent will be returned.
+
 ### remove
 
 Removes a node from a TreeView.
