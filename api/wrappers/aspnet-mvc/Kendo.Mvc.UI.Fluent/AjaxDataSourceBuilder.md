@@ -10,7 +10,7 @@ Defines the fluent interface for configuring the DataSource AJAX create/update/d
 
 ## Methods
 
-### Update(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
+### Update(System.Action&lt;Kendo.Mvc.UI.Fluent.CrudOperationBuilder&gt;)
 Configures the URL for Update operation.
 
 ### Update(System.String,System.String)
