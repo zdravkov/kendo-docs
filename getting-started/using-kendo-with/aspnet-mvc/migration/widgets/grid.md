@@ -48,6 +48,27 @@ DataBinding Configuration Is Moved to Datasource:
 
 ### Methods
 
+**OperationMode** has changed to **ServerOperation**:
+
+#### Old
+
+    Html.Telerik().Grid<Order>()
+        .Name("Grid")      
+        .DataBinding(dataBinding => dataBinding.Ajax().OperationMode(GridOperationMode.Client))
+
+#### New
+
+    Html.Kendo().Grid<Order>()
+        .Name("Grid")
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .ServerOperation(false)
+        )
+
+**DataBinding.WebService** Is Removed
+ 
+
+
 Databinding "Url" Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
 
 #### Old -> New
@@ -67,26 +88,6 @@ Destroy
 ##### Insert
 
 Create
- 
-###
-**OperationMode** is change to **ServerOperation**:
-
-#### Old
-
-    Html.Telerik().Grid<Order>()
-        .Name("Grid")      
-        .DataBinding(dataBinding => dataBinding.Ajax().OperationMode(GridOperationMode.Client))
-
-#### New
-
-    Html.Kendo().Grid<Order>()
-        .Name("Grid")
-        .DataSource(dataSource => dataSource
-            .Ajax()
-            .ServerOperation(false)
-        )
-
-**DataBinding.WebService** Is Removed
  
 ## DetailView
 
