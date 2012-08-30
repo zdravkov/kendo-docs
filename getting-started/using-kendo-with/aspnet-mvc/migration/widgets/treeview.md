@@ -181,6 +181,8 @@ Removed. See the [Checkbox Support](#checkbox-support) section of this document.
 
 Apart from changing the event builders, the following changes have been introduced:
 
+#### MVC -> Kendo
+
 ##### OnLoad
 
 Removed. Use **$(document).ready()**
