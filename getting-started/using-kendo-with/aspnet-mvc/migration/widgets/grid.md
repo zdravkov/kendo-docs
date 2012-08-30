@@ -89,7 +89,9 @@ Create
  
 ## DetailView
 
-### **DetailView.Clienttemplate** Changed to **ClientDetailTemplateId**:
+### Methods
+
+**DetailView.Clienttemplate** Changed to **ClientDetailTemplateId**:
 
 #### Old
 
@@ -113,7 +115,7 @@ Create
             .ToClientTemplate())
     </script>
  
-### **DetailView.Template** changed to **DetailTemplate**:
+**DetailView.Template** changed to **DetailTemplate**:
  
 #### Old
       
