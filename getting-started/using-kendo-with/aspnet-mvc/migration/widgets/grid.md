@@ -87,7 +87,7 @@ Destroy
 
 Create
  
-### DetailView
+## DetailView
 
 ### **DetailView.Clienttemplate** Changed to **ClientDetailTemplateId**:
 
