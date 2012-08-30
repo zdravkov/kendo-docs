@@ -66,8 +66,6 @@ DataBinding Configuration Is Moved to Datasource:
         )
 
 **DataBinding.WebService** Is Removed
- 
-
 
 Databinding "Url" Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
 
