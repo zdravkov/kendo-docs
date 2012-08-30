@@ -180,8 +180,6 @@ Inline edit forms are immediately closed when the update button is clicked. This
         }
     </script>
 
-### Changes
-
 #### Old
 
     Html.Telerik().Grid<Order>()
@@ -202,8 +200,6 @@ Inline edit forms are immediately closed when the update button is clicked. This
 ## Grouping 
 
 Groups Configuration Is Moved to Datasource:
-
-### Changes
 
 #### Old
 
@@ -228,8 +224,6 @@ Groups Configuration Is Moved to Datasource:
 
 **OrderBy** Is Moved to The DataSource Configuration:
 
-### Changes
-
 #### Old
 
     Html.Telerik().Grid<Order>()
@@ -248,8 +242,6 @@ Groups Configuration Is Moved to Datasource:
 ## Filtering
 
 **Filters** Is Moved to The DataSource Configuration:
-
-### Changes
 
 #### Old
        
@@ -271,8 +263,6 @@ Groups Configuration Is Moved to Datasource:
 **Position** Is Not Available.
 
 **PageSize** And Total Is Moved to the DataSource Configuration:
-
-### Changes
 
 #### Old
  
@@ -298,8 +288,6 @@ Groups Configuration Is Moved to Datasource:
 
 **Aggregates** are moved to the DataSource configuration:
 
-### Changes
-
 #### Old
 
     Html.Telerik().Grid<Order>()
@@ -324,8 +312,6 @@ Groups Configuration Is Moved to Datasource:
         )
         
 **ReadOnly** In Moved To DataSource Model Configuration:
-
-### Changes
 
 #### Old
 
