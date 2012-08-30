@@ -27,6 +27,8 @@ DataKeys Are Moved to the Datasource Model Configuration:
  
 ## DataBinding
 
+### Configuration
+
 DataBinding Configuration Is Moved to Datasource:
  
 #### Old
@@ -66,6 +68,7 @@ Destroy
 
 Create
  
+###
 **OperationMode** is change to **ServerOperation**:
 
 #### Old
@@ -83,7 +86,7 @@ Create
             .ServerOperation(false)
         )
 
-### **DataBinding.WebService** Is Removed
+**DataBinding.WebService** Is Removed
  
 ## DetailView
 
