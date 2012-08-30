@@ -87,13 +87,11 @@ Destroy
 
 Create
  
-## DetailView
-
-### Methods
+### DetailView
 
 **DetailView.Clienttemplate** Changed to **ClientDetailTemplateId**:
 
-### Old
+#### Old
 
     Html.Telerik().Grid<Order>()
         .Name("Grid")
@@ -103,7 +101,7 @@ Create
             .ToHtmlString()
         ))
 
-### New
+#### New
 
     Html.Kendo().Grid<Order>()
         .Name("Grid")
