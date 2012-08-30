@@ -44,7 +44,7 @@ DataBinding Configuration Is Moved to Datasource:
             .Read(read => read.Action("AjaxBinding ", "Grid"))
         )
  
-### Databinding "Url" Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
+Databinding "Url" Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
 
 #### Old -> New
                 
