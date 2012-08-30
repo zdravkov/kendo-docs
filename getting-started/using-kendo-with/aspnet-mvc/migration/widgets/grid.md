@@ -69,6 +69,8 @@ DataBinding Configuration Is Moved to Datasource:
 
 Databinding "Url" Methods Are Renamed to Match the KendoUI Datasource Client Configuration.
 
+### Changes
+
 #### Old -> New
                 
 ##### Select 
