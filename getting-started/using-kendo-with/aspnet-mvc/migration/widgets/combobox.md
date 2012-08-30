@@ -293,7 +293,7 @@ Encode:
     
     Template(“ #= data.Text #”)
 
-## Client-Side API
+### Client-Side API
  
 #### MVC -> Kendo
  
