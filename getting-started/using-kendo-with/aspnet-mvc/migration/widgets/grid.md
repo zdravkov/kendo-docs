@@ -499,8 +499,8 @@ Removed. Utilize **DataBound** instead and utilize the following code snippet:
             var dataItem = data[i];
             var tr = $("#grid").find("[data-uid='" + dataItem.uid + "']");
             // use the table row (tr) and data item (dataItem)
+        }
      }
-}
 
 ##### OnRowSelect
 
