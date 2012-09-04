@@ -44,7 +44,7 @@ A collection of column objects or collection of strings that represents the name
         dataSource: sharedDataSource,
         columns: [ { title: "Action", command: "destroy" }, // creates a column with delete buttons
                    { title: "Title", field: "title", width: 200, template: "<div id='title'>${ title }</div>" },
-                   { title: "Year", field: "year", filterable: false, sortable: true, format: "{0:dd/MMMM/yyyy}" } ];
+                   { title: "Year", field: "year", filterable: false, sortable: true, format: "{0:dd/MMMM/yyyy}" } ]
     });
 
 ### columns.command `String`
