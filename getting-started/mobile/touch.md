@@ -10,10 +10,9 @@ publish: true
 The kendo Touch widget exposes a cross-browser/platform compatible API for handling user-initiated touch events, multi-touch gestures and event sequences (drag, swipe, etc.).
 On a pointer enabled devices (i.e. desktops and laptops), mouse events are treated as touch events.
 
-
 ## Getting Started
 
-The mobile Application will automatically initialize a Touch Events widget for every element with `role` data attribute set to `touch` present in the views/layouts' markup.
+The mobile Application will automatically initialize a Touch widget for every element with `role` data attribute set to `touch` present in the views/layouts' markup.
 Alternatively, it can be initialized using jQuery plugin syntax in the containing mobile View **init event handler**.
 
 ### Handle element touch events
@@ -52,7 +51,7 @@ The multitouch gestures event object has a `touches` property, which is an array
         }
     </script>
 
-## Handle Dragging Outside the Element Boundaries
+## Dragging Outside the Element Boundaries
 
 If the Touch widget is instantiated with a small DOM element, the mouse/finger may leave element boundaries while dragging. In this case, by default, the `dragend` event will be triggered.
 The `global` configuration option would cause the touch widget to track the events for the entire document surface until the finger is lifted. This is the behavior of the kendo Draggable widget.
@@ -80,4 +79,4 @@ For a detailed description for each event, please see the [API Reference](foo).
 
 **Notice**: the multi-touch gestures work only on platforms that support multitouch (iOS 4+, Android 4+).
 
-
+**Notice**: currently, only two finger gestures are supported, as the platform usually has system-wide actions attached to three finger actions.
