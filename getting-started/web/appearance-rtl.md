@@ -6,6 +6,8 @@ publish: true
 
 # RTL Support
 
+## How to use it
+
 In order to enable RTL support of the **Kendo UI** web widgets, please do the following:
 
 1. Register the **kendo.rtl.css** stylesheet. It is found in the same folder as the `kendo.common.css` file.
@@ -17,4 +19,10 @@ The `k-rtl` class has the following effects:
 2. It causes the **Kendo UI** web widgets to change their layout in accordance with common RTL conventions. The `kendo.rtl.css` stylesheet is required for this to happen.
 3. Widget scripts detect RTL mode via this class whenever necessary, so that the widgets change their behavior accordingly.
 
-Note that the Pager widget and the Grid pager do not reverse the order of the page number buttons.
+## Notes on layout
+
+* Vertical scrollbar position may be on the left or right side, depending on the used browser. This cannot be controlled with CSS or script.
+* The Pager widget and the Grid pager do not reverse the order of the page number buttons.
+* The ListView layout depends entirely on the defined template. The widgets does nothing to convert an existing LTR template to RTL layout. If a `k-rtl` CSS class
+is present and applied to a wrapper element, text direction will be reversed, but not floats, margins, paddings, etc.
+* The Splitter does not reverse the order of its panes in RTL mode.
