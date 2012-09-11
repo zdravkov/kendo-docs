@@ -14,7 +14,8 @@ On a pointer enabled devices (i.e. desktops and laptops), mouse events are treat
 
 ### surface `jQuery` *(default:  null)*
 
-If specified, the user drags will be limited to the surface element boundaries (instead of the widget element). Useful for if the widget is instantiated on small DOM elements, like buttons, or thin list items.
+If specified, the user drags will be limited to the surface element boundaries (instead of the widget element).
+This setting is useful if the widget is instantiated on small DOM elements like buttons, or thin list items.
 
 #### Example
     <ul id="list">
@@ -85,18 +86,187 @@ The maximum amount of time in milliseconds the swipe event can last. Slower swip
 
 The timeout in milliseconds before the `hold` event is fired.
 
+**Notice**: the hold event will be triggered after the time passes, not after the user lifts his/hers finger.
+
 ### doubleTapTimeout `Number` *(default: 400)*
+
+The maximum period (in milliseconds) between two consecutive taps which will trigger the doubletap event.
 
 ## Events
 
 ### touchstart
+
+Fires when the user presses the element.
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
 ### dragstart
+
+Fires when the user starts dragging the element.
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
 ### drag
+
+Fires each time the user drags (within the element boundaries).
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
 ### dragend
+
+Fires when the user lifts his/hers finger, or drags outside of the element boundaries.
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
 ### tap
+
+Fires when the user taps on the element. A touch sequence is considered a tap if the user does not perform dragging.
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
 ### doubletap
+
+Fires when the user quickly taps twice on the element.
+
+**Notice**: The two taps should be at a maximum distance of 3 pixels.
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
 ### hold
+
+Fires when the user presses and holds  his/hers finger on the element for a minimum amount of time.
+
+The minimum amount can be configured through the `minHold` configuration option.
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
 ### swipe
+
+Fires when the user performs a horizontal swipe on the element.
+
+For this event to be triggered, the `enableSwipe` configuration option should be set to `true`.
+
+The `minXDelta`, `maxYDelta` and `maxDuration` configuration options determine when the drag event sequence is considered a swipe.
+
+#### Event Data
+
+##### e.touch `TouchEvent`
+
+The touch event instance
+
+#### e.direction `String`
+
+The swipe event direction. Can be either `left` or `right`.
+
 ### gesturestart
+
+Fires when the user presses the element with two fingers (or presses with a second finger while a first finger is still touching the element).
+
+#### Event Data
+
+##### e.touches `Array`
+
+An array containing the active touches
+
+##### e.distance `Number`
+
+The distance (in pixels) between the two touches
+
+##### e.center `Point`
+
+The center point between the two touches. The point has two properties, `x` and `y`, which contain the x and the y coordinate, respectively.
+
 ### gesturechange
+
+Fires when the user moves a finger while multiple fingers are touching the element.
+
+#### Event Data
+
+##### e.touches `Array`
+
+An array containing the active touches
+
+##### e.distance `Number`
+
+The distance (in pixels) between the two touches
+
+##### e.center `Point`
+
+The center point between the two touches. The point has two properties, `x` and `y`, which contain the x and the y coordinate, respectively.
+
+
 ### gestureend
+
+Fires when the user lifts the second finger from the element.
+**Notice**: After the last finger is moved, the `dragend` event is fired.
+
+#### Event Data
+
+##### e.touches `Array`
+
+An array containing the active touches
+
+##### e.distance `Number`
+
+The distance (in pixels) between the two touches
+
+##### e.center `Point`
+
+The center point between the two touches. The point has two properties, `x` and `y`, which contain the x and the y coordinate, respectively.
+
+# TouchEvent
+
+The touch event object (available in the event handler event object) contains information about an active touch. Each instance has two properites of type `TouchAxis` - `x` and `y`.
+
+# TouchAxis
+
+## Properties
+
+### location `Number`
+
+The offset of the touch relative to the _entire document_ (pageX/Y);
+
+### startLocation `Number`
+
+The offset of the touch relative to the document when the drag started;
+
+### client `Number`
+
+The offset of the touch relative to the _viewport_ (clientX/Y);
+
+### delta `Number`
+
+The change from the previous event location
+
+### velocity `Number`
+
+The pixels per millisecond speed of the current move. For instance, the mobile ScrollView widget considers a swipe with velocity below 0.8 a slow one, while velocity above 1.6 is a fast one.
+
