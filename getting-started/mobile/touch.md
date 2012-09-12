@@ -53,7 +53,7 @@ Each touch event handler receives an event object as a parameter. The touch even
 which contains information about the touch event like its current coordinates, initial position,
 the DOM element, etc.
 
-For a full list of the properties of the Touch object, see the [Touch Object API reference](foo).
+For a full list of the properties of the Touch object, see the [Touch Object API reference](/api/mobile/touch/#TouchObject).
 
 The multitouch gestures event object parameter has a `touches` property, which is an array of two touch objects.
 In addition to that, a `distance` and `center` properties are exposed.
@@ -82,17 +82,17 @@ The widget `global` configuration option would cause the touch widget to track t
 ## Touch Events / Sequences
 
 The Touch Widget exposes four touch events - `touchstart`, `dragstart`, `drag`, and `dragend`, corresponding to the four stages of the touch sequence.
-For a detailed event description and sample code, please see the [touch widget API reference](foo).
+For a detailed event description and sample code, please see the [touch widget API reference](/api/mobile/touch).
 
 ## Tap, Doubletap, and Hold Events
 
 In addition to the drag events, `tap`, `doubletap` and `hold` events may be fired if the user does not move his/hers finger after pressing.
-The `hold` event minimum time and the `doubletap` maximum time between two successive taps can be set through the [touch widget configuration options](options).
+The `hold` event minimum time and the `doubletap` maximum time between two successive taps can be set through the [touch widget configuration options](/api/mobile/touch#configuration).
 
 ## Swipe Events
 
 If the `enableSwipe` configuration option is set to **true**, the Touch widget recognizes horizontal swipes and fires the `swipe` event.
-The swipe minimum distance, maximum horizontal deviation, and maximum duration can be set through the [configuration options](options).
+The swipe minimum distance, maximum horizontal deviation, and maximum duration can be set through the [configuration options](/api/mobile/touch#configuration).
 
 **Notice**: if the `enableSwipe` option is set to true, the `dragstart`, `drag` and `dragend` events **will not be fired**.
 
@@ -101,7 +101,7 @@ The swipe minimum distance, maximum horizontal deviation, and maximum duration c
 If the `multiTouch` configuration option is set to **true**, the Touch widget will recognize two-finger gestures,
 and fire `gesturestart`, `gesturechange` and `gestureend` events.
 
-For a detailed description for each event, please see the [API Reference](foo).
+For a detailed description for each event, please see the [API Reference](/api/mobile/touch).
 
 **Notice**: the multi-touch gestures work only on platforms that support multitouch (iOS 4+, Android 4+).
 

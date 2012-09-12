@@ -1,21 +1,20 @@
 ---
 title: kendo.ui.Touch
-slug: mobile-kendo..ui.touch
+slug: mobile-kendo.ui.touch
 tags: api,mobile
 publish: true
 ---
 
 # kendo.ui.Touch
 
-The kendo Touch widget exposes a cross-browser/platform compatible API for handling user-initiated touch events, multi-touch gestures and event sequences (drag, swipe, etc.).
-On a pointer enabled devices (i.e. desktops and laptops), mouse events are treated as touch events.
+The kendo Touch widget exposes a cross-platform compatible API for handling user-initiated touch events, multi-touch gestures and event sequences (drag, swipe, etc.).
 
 ## Configuration
 
 ### surface `jQuery` *(default:  null)*
 
-If specified, the user drags will be limited to the surface element boundaries (instead of the widget element).
-This setting is useful if the widget is instantiated on small DOM elements like buttons, or thin list items.
+If specified, the user drags will be tracked within the surface boundaries.
+This option is useful if the widget is instantiated on small DOM elements like buttons, or thin list items.
 
 #### Example
     <ul id="list">
@@ -222,7 +221,6 @@ The distance (in pixels) between the two touches
 
 The center point between the two touches. The point has two properties, `x` and `y`, which contain the x and the y coordinate, respectively.
 
-
 ### gestureend
 
 Fires when the user lifts the second finger from the element.
@@ -244,7 +242,22 @@ The center point between the two touches. The point has two properties, `x` and 
 
 # TouchEvent
 
-The touch event object (available in the event handler event object) contains information about an active touch. Each instance has two properites of type `TouchAxis` - `x` and `y`.
+The touch event object (available in the event handler event object) contains information about an active touch.  The touch event object instance has two properites of type `TouchAxis` - `x` and `y`.
+
+## Example
+
+    <div data-role="touch" data-tap="getEventInfo">Tap me</div>
+
+    <script>
+        function getEventInfo(e) {
+            var touch = e.touch;
+            var xAxis = touch.x;
+            var yAxis = touch.y;
+
+            console.log(x.location);
+            console.log(y.location);
+        }
+    </script>
 
 # TouchAxis
 
@@ -256,7 +269,7 @@ The offset of the touch relative to the _entire document_ (pageX/Y);
 
 ### startLocation `Number`
 
-The offset of the touch relative to the document when the drag started;
+The offset of the touch relative to the document when the touch started;
 
 ### client `Number`
 
