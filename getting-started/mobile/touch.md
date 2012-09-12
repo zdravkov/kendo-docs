@@ -103,8 +103,5 @@ and fire `gesturestart`, `gesturechange` and `gestureend` events.
 
 For a detailed description for each event, please see the [API Reference](/api/mobile/touch).
 
-**Notice**: the multi-touch gestures work only on platforms that support multitouch (iOS 4+, Android 4+).
-
-**Notice**: currently, only two finger gestures are supported,
+> Multi-touch gestures work only on platforms that support multitouch (iOS 4+, Android 4+). What's more, currently, only two finger gestures are supported,
 as the majority of the currently available mobile platforms usually have system-wide actions attached to three finger gestures.
-
