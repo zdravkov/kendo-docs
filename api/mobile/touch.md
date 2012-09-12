@@ -240,7 +240,7 @@ The distance (in pixels) between the two touches
 
 The center point between the two touches. The point has two properties, `x` and `y`, which contain the x and the y coordinate, respectively.
 
-## TouchEvent
+### TouchEvent
 
 The touch event object (available in the event handler event object) contains information about an active touch.  The touch event object instance has two properites of type `TouchAxis` - `x` and `y`.
 
@@ -259,7 +259,7 @@ The touch event object (available in the event handler event object) contains in
         }
     </script>
 
-## TouchAxis
+### TouchAxis
 
 ## Properties
 
