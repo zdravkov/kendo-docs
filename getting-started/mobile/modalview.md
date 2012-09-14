@@ -1,11 +1,11 @@
 ---
-title: Mobile ModalView
+title: Mobile ModalView Overview
 slug: gs-mobile-modalview
 tags: getting-started,mobile
 publish: true
 ---
 
-# Mobile ModalView
+# Mobile ModalView Overview
 
 The Kendo ModalView is used to present self-contained functionality in the context of the current task.
 
