@@ -6,9 +6,17 @@ publish: true
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## KendoUI 2012 Q3
+
+### Changes from 2012 Q1 SP1 (2011.1.515)
+
+#### Breaking changes
+
+* **Mobile:** the kendoMobileSwipe plugin is obsolete - replace its usage with the **touch** widget.
+
 ## KendoUI 2012 Q2
 
-### Changes from 2011 Q1 SP1 (2011.1.515)
+### Changes from 2012 Q1 SP1 (2012.1.322)
 
 #### Breaking changes
 
