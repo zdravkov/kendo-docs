@@ -1,11 +1,11 @@
 ---
-title: Mobile Button
+title: Button
 slug: gs-mobile-button
 tags: getting-started,mobile
 publish: true
 ---
 
-# Mobile Button
+# Button
 
 The mobile Button widget navigates to mobile View or executes a custom callback when tapped.
 

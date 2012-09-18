@@ -1,11 +1,11 @@
 ---
-title: Mobile ListView
+title: ListView
 slug: gs-mobile-listview
 tags: api,mobile
 publish: true
 ---
 
-# Mobile ListView
+# ListView
 
 The Kendo Mobile ListView widget is used to display flat or grouped list of items.
 It can be either used in unbound mode by enhancing an HTML `ul` element, or bound to a DataSource instance.

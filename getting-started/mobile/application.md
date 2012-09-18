@@ -1,11 +1,11 @@
 ---
-title: Mobile Application
+title: Application
 slug: gs-mobile-application
 tags: getting-started, mobile
 publish: true
 ---
 
-# Mobile Application
+# Application
 
 The Kendo mobile **Application** provides the necessary tools for building native-looking web based mobile applications.
 
