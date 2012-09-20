@@ -853,6 +853,7 @@ between subsequent categories. Available options:
 * minutes
 * hours
 * days
+* weeks
 * months
 * years
 
@@ -877,6 +878,10 @@ Date format strings
 "HH:mm"
 
 #### *"days"*
+
+"M/d"
+
+#### *"weeks"*
 
 "M/d"
 
@@ -5942,6 +5947,7 @@ The default baseUnit is determined automatically from the value range. Available
 * minutes
 * hours
 * days
+* weeks
 * months
 * years
 
@@ -5963,6 +5969,10 @@ Date format strings
 "HH:mm"
 
 #### *"days"*
+
+"M/d"
+
+#### *"weeks"*
 
 "M/d"
 
