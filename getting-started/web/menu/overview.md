@@ -122,3 +122,16 @@ its behavior.
 
     var menu = $("#menu").data("kendoMenu");
 
+## Keyboard Navigation
+
+The Menu provides keyboard navigation once it gains focus (either programmatically or as a result of a user click). Initially, the first root item is activated.
+The following keys and user actions are supported:
+
+* Left and right arrow keys move the active item left and right on the root level of horizontal Menus.
+* Up and down arrow keys move the active item up and down of vertical Menu item groups.
+* Down arrow opens an item group a horizontal Menu.
+* Right arrow opens an item group of a vertical Menu.
+* Left arrow closes an item group.
+* Right arrow moves the active state to the next root item of a horizontal Menu, if the previous active item has been inside an item group.
+* Escape closes an item group.
+* (Shift+) Tab blurs the Menu and moves focus to the next (previous) focusable page element.
