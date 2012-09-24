@@ -40,8 +40,8 @@ If effects are passed as an object, then the arguments should be specified insid
         duration: 200,
         complete: function (element) {
             // Execute on completion
-        })
-    }
+        }
+    });
 
 #### Parameters
 ##### effects `String|Object`
