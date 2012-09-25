@@ -32,9 +32,9 @@ of categories to denote the far end of the axis.
     <p>
     $("#chart").kendoChart({
          categoryAxis: {
-             categories: ["A", "B"]
-                 axisCrossingValue: [0, 100]
-             },
+         categories: ["A", "B"]
+             axisCrossingValue: [0, 100]
+         },
          valueAxis: [{ }, { name: "secondary" }],
          ...
     })'
@@ -68,7 +68,6 @@ The data field containing the category name.
     var data = [ { sales: 200, year: 2005 }, { sales: 300, year: 2006 }, { sales: 400, year: 2007 }];
     // specify the "year" as the field for the category axis
     $("#chart").kendoChart({
-        ...,
         categoryAxis: {
             field: "year"
         },
@@ -500,8 +499,7 @@ Configures the minor grid lines.  These are the lines that are an extension of t
 the body of the chart.
 
 Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid
-lines visibility being set to **true**
-.
+lines visibility being set to **true**.
 
 #### Example
 
@@ -521,7 +519,7 @@ lines visibility being set to **true**
 
 ### categoryAxis.minorGridLines.color `String`*(default: "black")*
 
- The color of the lines. Any valid CSS color string will work here, including hex and
+The color of the lines. Any valid CSS color string will work here, including hex and
 rgb.
 
 Note that this setting has no effect if the visibility of the minor
@@ -4436,9 +4434,504 @@ The category axis is rendered vertically instead of horizontally.
 Vertical line series accepts the same parameters as line series.
 The line and the category axis are now vertical instead of horizontal.
 
-### series.visibleInLegend `Boolean`*(default: true)*
+### series.type="candlestick"
 
- A value indicating whether to show the series in the legend.
+Available options for candlestick series.
+
+### series.type="candlestick".aggregates `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
+
+Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return values are displayed instead of the individual points.
+
+#### *"max"*
+
+The highest value for the date period.
+
+#### *"min"*
+
+The lowest value for the date period.
+
+#### *"sum"*
+
+The sum of all values for the date period.
+
+#### *"count"*
+
+The number of values for the date period.
+
+#### *"avg"*
+
+The average of all values for the date period.
+
+#### *function (values, series)*
+
+User-defined aggregate function.
+
+### series.type="candlestick".axis `String`*(default: primary)*
+
+The name of the value axis to use.
+
+### series.type="candlestick".border `Object`
+
+The border of the series.
+
+### series.type="candlestick".border.color `String`*(default: the color of the curren series)*
+
+The color of the border.
+
+### series.type="candlestick".border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### series.type="candlestick".border.width `Number`*(default: 1)*
+
+ The width of the border.
+
+### series.type="candlestick".color `String`
+
+The series base color.
+
+### series.type="candlestick".colorField `String`
+
+The data field containing the point color.
+
+### series.type="candlestick".downColor `String`
+
+The series color when open value is smoller then close value.
+
+### series.type="candlestick".downColorField `String`
+
+The data field containing the body color.
+
+### series.type="candlestick".openField `String`
+
+The data field containing the open value.
+
+### series.type="candlestick".highField `String`
+
+The data field containing the high value.
+
+### series.type="candlestick".lowField `String`
+
+The data field containing the low value.
+
+### series.type="candlestick".closeField `String`
+
+The data field containing the close value.
+
+### series.type="candlestick".gap `Number`*(default: 1)*
+
+The distance between category clusters.
+
+### series.type="candlestick".name `String`
+
+The series name.
+
+### series.type="candlestick".opacity `Number`*(default: 1)*
+
+The series opacity.
+
+### series.type="candlestick".overlay `Object`
+
+The effects overlay.
+
+### series.type="candlestick".overlay.gradient `String`*(default: "glass")*
+
+The gradient name.
+
+#### *"glass"*
+
+The bars have glass effect overlay.
+
+#### *"none"*
+
+The bars have no effect overlay.
+
+### series.type="candlestick".spacing `Number`*(default: 0.3)*
+
+Space between points.
+
+### series.type="candlestick".stack `Boolean`*(default: false)*
+
+A value indicating if the series should be stacked.
+
+### series.type="candlestick".tooltip `Object`
+
+The data point tooltip configuration options.
+
+### series.type="candlestick".tooltip.background `String`
+
+The background color of the tooltip. The default is determined from the series color.
+
+### series.type="candlestick".tooltip.border `Object`
+
+The border configuration options.
+
+### series.type="candlestick".tooltip.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### series.type="candlestick".tooltip.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### series.type="candlestick".tooltip.color `String`
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### series.type="candlestick".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The tooltip font.
+
+### series.type="candlestick".tooltip.format `String`
+
+The tooltip format. Format variables:
+
+0 - the open value
+1 - the high value
+2 - the low value
+3 - the close value
+4 - the category name
+
+#### Example
+
+    // sets format of the tooltip
+    format: "{0:C}--{1:C}--{2:C}--{3:C}"
+
+### series.type="candlestick".tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### series.type="candlestick".tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+
+*   **value.open** - the point open value
+*   **value.high** - the point high value
+*   **value.low** - the point low value
+*   **value.close** - the point close value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "candlestick",
+                 name: "Series 1",
+                 data: [[300, 450, 125, 200]],
+                 tooltip: {
+                     visible: true,
+                     template: "#= category # - #= value.open #"
+                 }
+             }
+         ]
+    });
+
+### series.type="candlestick".tooltip.visible `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be displayed.
+
+### series.type="candlestick".line `String`
+
+The line of the candlestick chart.
+
+### series.type="candlestick".line.color `String`
+
+The line color of the candlestick chart.
+
+### series.type="candlestick".line.opacity `Number`*(default: 1)*
+
+The line opacity of the candlestick chart.
+
+### series.type="candlestick".line.width `String`*(default: 2)*
+
+The line width of the candlestick chart.
+
+### series.type="ohlc"
+
+Available options for ohlc series.
+
+### series.type="ohlc".aggregates `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
+
+Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return values are displayed instead of the individual points.
+
+#### *"max"*
+
+The highest value for the date period.
+
+#### *"min"*
+
+The lowest value for the date period.
+
+#### *"sum"*
+
+The sum of all values for the date period.
+
+#### *"count"*
+
+The number of values for the date period.
+
+#### *"avg"*
+
+The average of all values for the date period.
+
+#### *function (values, series)*
+
+User-defined aggregate function.
+
+### series.type="ohlc".axis `String`*(default: primary)*
+
+The name of the value axis to use.
+
+### series.type="ohlc".border `Object`
+
+The border of the series.
+
+### series.type="ohlc".border.color `String`*(default: the color of the curren series)*
+
+The color of the border.
+
+### series.type="ohlc".border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### series.type="ohlc".border.width `Number`*(default: 1)*
+
+ The width of the border.
+
+### series.type="ohlc".color `String`
+
+The series base color.
+
+### series.type="ohlc".colorField `String`
+
+The data field containing the point color.
+
+### series.type="ohlc".openField `String`
+
+The data field containing the open value.
+
+### series.type="ohlc".highField `String`
+
+The data field containing the high value.
+
+### series.type="ohlc".lowField `String`
+
+The data field containing the low value.
+
+### series.type="ohlc".closeField `String`
+
+The data field containing the close value.
+
+### series.type="ohlc".gap `Number`*(default: 1)*
+
+The distance between category clusters.
+
+### series.type="ohlc".name `String`
+
+The series name.
+
+### series.type="ohlc".opacity `Number`*(default: 1)*
+
+The series opacity.
+
+### series.type="ohlc".overlay `Object`
+
+The effects overlay.
+
+### series.type="ohlc".spacing `Number`*(default: 0.3)*
+
+Space between points.
+
+### series.type="ohlc".stack `Boolean`*(default: false)*
+
+A value indicating if the series should be stacked.
+
+### series.type="ohlc".tooltip `Object`
+
+The data point tooltip configuration options.
+
+### series.type="ohlc".tooltip.background `String`
+
+The background color of the tooltip. The default is determined from the series color.
+
+### series.type="ohlc".tooltip.border `Object`
+
+The border configuration options.
+
+### series.type="ohlc".tooltip.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### series.type="ohlc".tooltip.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### series.type="ohlc".tooltip.color `String`
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### series.type="ohlc".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The tooltip font.
+
+### series.type="ohlc".tooltip.format `String`
+
+The tooltip format. Format variables:
+
+0 - the open value
+1 - the high value
+2 - the low value
+3 - the close value
+4 - the category name
+
+#### Example
+
+    // sets format of the tooltip
+    format: "{0:C}--{1:C}--{2:C}--{3:C}"
+
+### series.type="ohlc".tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### series.type="ohlc".tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+*   **value.open** - the point open value
+*   **value.high** - the point high value
+*   **value.low** - the point low value
+*   **value.close** - the point close value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "ohlc",
+                 name: "Series 1",
+                 data: [[300, 450, 125, 200]],
+                 tooltip: {
+                     visible: true,
+                     template: "#= category # - #= value.open #"
+                 }
+             }
+         ]
+    });
+
+### series.type="ohlc".tooltip.visible `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be displayed.
+
+### series.type="ohlc".line `String`
+
+The line of the ohlc chart.
+
+### series.type="ohlc".line.color `String`
+
+The line color of the ohlc chart.
+
+### series.type="ohlc".line.opacity `Number`*(default: 1)*
+
+The line opacity of the ohlc chart.
+
+### series.type="ohlc".line.width `String`*(default: 2)*
+
+The line width of the ohlc chart.
 
 ### seriesColors `Array`
 
@@ -4453,6 +4946,16 @@ Default values for each series.
 The area configuration options.
 The default options for all area series. For more details see the series options.
 
+### seriesDefaults.candlestick `Object`
+
+The candlestick configuration options.
+The default options for all candlestick series. For more details see the series options.
+
+### seriesDefaults.ohlc `Object`
+
+The ohlc configuration options.
+The default options for all ohlc series. For more details see the series options.
+
 ### seriesDefaults.bar `Object`
 
 The default options for all bar series. For more details see the series options.
@@ -4463,12 +4966,11 @@ The border of the series.
 
 ### seriesDefaults.border.color `String`*(default: "black")*
 
- The color of the border.
+The color of the border.
 
 ### seriesDefaults.border.dashType `String`*(default: "solid")*
 
- The dash type of the border.
-
+The dash type of the border.
 
 #### *"solid"*
 
