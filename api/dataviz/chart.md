@@ -74,6 +74,12 @@ The data field containing the category name.
         ...
     });
 
+### categoryAxis.justified `Boolean`*(default: false)*
+
+Positions categories and series points on major ticks. This removes the empty space before and after the series.
+
+This option is ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
+
 ### categoryAxis.labels `Object`
 
 Configures the axis labels.
