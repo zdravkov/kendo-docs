@@ -56,3 +56,13 @@ use the API to control its behavior.
 
     var slider = $("#slider").data("kendoSlider");
 
+## Slider Keyboard Navigation
+
+The Slider draghandles are able to receive focus via tabbing. When this happens, the respective draghandle is displayed with its "active" style
+and the following keys and behaviors are supported:
+
+*	Right and Up increment the value by a smallStep amount
+*	Left and Down decrement the value by a smallStep amount
+*	Page Up and Page Down increment/decrement by a largeStep amount
+*	Home and End place the focused draghandle at the minimum or maximum value
+*	In right-to-left (RTL) mode the behavior of the left and right arrow keys is reversed.
