@@ -82,26 +82,6 @@ Provides a way to specify custom editor for this column.
          ]
       });
 
-### columns.editor `Object`
-
-Column editor configuration.
-
-### columns.editor.container `Object`
-
-The container in which the editor must be added.
-
-### columns.editor.options `Object`
-
-Additional options.
-
-### columns.editor.options.field `String`
-
-The field for the editor.
-
-### columns.editor.options.model `Object`
-
-The model for the editor.
-
 ### columns.encoded `Boolean`*(default: true)*
 
  Specified whether the column content is escaped. Disable encoding if the data contains HTML markup.
