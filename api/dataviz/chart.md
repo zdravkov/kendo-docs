@@ -21,7 +21,7 @@ The category axis configuration options.
 
 Category index at which the first value axis crosses this axis.
 
-### categoryAxis.axisCrossingValue `Array`*(default: [0])*
+### categoryAxis.axisCrossingValues `Array`*(default: [0])*
 
 Category indicies at which the value axes cross the category axis.
 
@@ -32,12 +32,12 @@ of categories to denote the far end of the axis.
     <p>
     $("#chart").kendoChart({
          categoryAxis: {
-         categories: ["A", "B"]
-             axisCrossingValue: [0, 100]
+             categories: ["A", "B"],
+             axisCrossingValues: [0, 100]
          },
          valueAxis: [{ }, { name: "secondary" }],
          ...
-    })'
+    })
     </p>
 
 ### categoryAxis.categories `Array`
@@ -68,6 +68,9 @@ The data field containing the category name.
     var data = [ { sales: 200, year: 2005 }, { sales: 300, year: 2006 }, { sales: 400, year: 2007 }];
     // specify the "year" as the field for the category axis
     $("#chart").kendoChart({
+        dataSource: {
+            data: data
+        },
         categoryAxis: {
             field: "year"
         },
@@ -84,52 +87,17 @@ This option is ignored if either bar, column, ohlc or candlestick series are plo
 
 Configures the axis labels.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            labels: {
-                // set the background color of the labels to a light grey
-                background: "#e2e2e2",
-                // rotate the labels just slightly for visual effect
-                rotation: 10,
-                // format the labels for currency
-                format: "C"
-            }
-        },
-        ...
-    });
-
 ### categoryAxis.labels.background `String`
 
-The background color of the labels. Any valid CSS color string will work here, including hex
-and rgb.
+The background color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 ### categoryAxis.labels.border `Object`
 
 The border of the labels.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            labels: {
-                border: {
-                    // make the width 1
-                    width: 1,
-                    // set the color to a dark blue
-                    color: "#336699",
-                    // set the border style to dashed
-                    dashType: "dash"
-                }
-            }
-        },
-        ...
-    });
-
 ### categoryAxis.labels.border.color `String`*(default: "black")*
 
- The color of the border. Any valid CSS color string will work here, including hex and rgb.
+The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
 ### categoryAxis.labels.border.dashType `String`*(default: "solid")*
 
@@ -165,7 +133,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.labels.border.width `Number`*(default: 0)*
 
- The width of the border.
+The width of the border.
 
 ### categoryAxis.labels.color `String`
 
@@ -175,60 +143,22 @@ The text color of the labels. Any valid CSS color string will work here, includi
 
 The font style of the labels.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            labels: {
-                // make the font 14px
-                font: "14px Arial,Helvetica,sans-serif"
-            }
-        },
-        ...
-    });
-
 ### categoryAxis.labels.format `String`
 
 The format of the labels.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-           labels: {
-               // set the format to currency
-               format: "C"
-           }
-        },
-        ...
-    });
-
 ### categoryAxis.labels.margin `Number | Object`*(default: 0)*
 
- The margin of the labels.
+The margin of the labels.
 
 #### Example
+    
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
 
-    $("#chart").kendoChart({
-        categoryAxis: {
-            label: {
-                // sets the top, right, bottom and left margin to 3px.
-                margin: 3
-            }
-        },
-        ...
-    });
-    //
-    $("#chart").kendoChart({
-        categoryAxis: {
-            label: {
-                // sets the top and left margin to 1px
-                // margin right and bottom are with 0px (by default)
-                margin: { top: 1, left: 1 }
-            }
-        },
-        ...
-    });
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 0px (by default)
+    margin: { top: 1, left: 1 }
 
 ### categoryAxis.labels.mirror `Boolean`
 
@@ -236,64 +166,37 @@ Mirrors the axis labels and ticks.
 If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            labels: {
-                // mirror the labels on the right
-                mirror: true
-            }
-        },
-        ...
-    });
-
 ### categoryAxis.labels.padding `Number | Object`*(default: 0)*
 
 The padding of the labels.
 
 #### Example
 
-    $("#chart").kendoChart({
-        categoryAxis: {
-            label: {
-                // sets the top, right, bottom and left padding to 3px.
-                padding: 3
-            }
-        },
-        ...
-    });
-    //
-    $("#chart").kendoChart({
-        categoryAxis: {
-            label: {
-                // sets the top and left padding to 1px
-                // padding right and bottom are with 0px (by default)
-                padding: { top: 1, left: 1 }
-            }
-        },
-        ...
-    });
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+    
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
 
 ### categoryAxis.labels.rotation `Number`*(default: 0)*
 
- The rotation angle of the labels.
+The rotation angle of the labels.
 
 ### categoryAxis.labels.skip `Number`*(default: 1)*
 
- Number of labels to skip.
+Number of labels to skip.
 Skips rendering the first n labels.
 
 ### categoryAxis.labels.step `Number`*(default: 1)*
 
- Label rendering step.
+Label rendering step.
 Every n-th label is rendered where n is the step
 
 ### categoryAxis.labels.template `String/Function`
 
 The label template.
 Template variables:
-
 
 *   **value** - the value
 
@@ -305,8 +208,8 @@ Template variables:
              text: "My Chart Title"
          },
          series: [{
-                 name: "Series 1",
-                 data: [200, 450, 300, 125]
+             name: "Series 1",
+             data: [200, 450, 300, 125]
          }],
          categoryAxis: {
              categories: [2000, 2001, 2002, 2003],
@@ -319,42 +222,15 @@ Template variables:
 
 ### categoryAxis.labels.visible `Boolean`*(default: true)*
 
- The visibility of the labels.
-
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            labels: {
-                // hide the lables
-                visible: false
-            }
-        },
-        ...
-    });
+The visibility of the labels.
 
 ### categoryAxis.line `Object`
 
 Configures the axis line. This will also effect major and minor ticks, but not gridlines.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            line: {
-                // change the line width to 2 pixels
-                width: 2,
-                // set the color to light grey
-                color: "#e2e2e2"
-            }
-        },
-        ...
-    });
-
 ### categoryAxis.line.color `String`*(default: "black")*
 
- The color of the lines. Any valid CSS color string will work here, including hex and rgb.
-
+The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
 **Note:** This will also effect the major and minor ticks, but not the grid lines.
 
@@ -392,23 +268,11 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.line.visible `Boolean`*(default: true)*
 
- The visibility of the lines.
-
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            line: {
-                // hide the lines completely
-                visible: false
-            }
-        },
-        ...
-    });
+The visibility of the lines.
 
 ### categoryAxis.line.width `Number`*(default: 1)*
 
- The width of the line. This will also effect the major and minor ticks, but
+The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 ### categoryAxis.majorGridLines `Object`
@@ -416,23 +280,9 @@ not the grid lines.
 Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-             majorGridLines: {
-                // set the width of the lines to 2 pixels
-                width: 2,
-                // set the color to a dark blue
-                color: "#336699"
-            }
-        },
-        ...
-    });
-
 ### categoryAxis.majorGridLines.color `String`*(default: "black")*
 
- The color of the lines. Any valid CSS color string will work here, including hex and rgb.
+The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
 ### categoryAxis.majorGridLines.dashType `String`*(default: "solid")*
 
@@ -468,23 +318,11 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.majorGridLines.visible `Boolean`*(default: false)*
 
- The visibility of the lines.
-
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            majorGridLines: {
-                // hide the major grid lines
-                visible: false
-            }
-        },
-        ...
-    });
+The visibility of the lines.
 
 ### categoryAxis.majorGridLines.width `Number`*(default: 1)*
 
- The width of the lines.
+The width of the lines.
 
 ### categoryAxis.majorTicks `Object`
 
@@ -492,36 +330,19 @@ The major ticks of the axis.
 
 ### categoryAxis.majorTicks.size `Number`*(default: 4)*
 
- The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick
+The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick
 on the chart.
 
 ### categoryAxis.majorTicks.visible `Boolean`*(default: true)*
 
- The visibility of the major ticks.
+The visibility of the major ticks.
 
 ### categoryAxis.minorGridLines `Object`
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
 the body of the chart.
 
-Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid
-lines visibility being set to **true**.
-
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            minorGridLines: {
-                // set visible to true
-                visible: true,
-                // set width to 2 pixels
-                width: 2,
-                // set the color to a dark blue
-                color: "#336699"
-            }
-        },
-        ...
-    });
+Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid lines visibility being set to **true**.
 
 ### categoryAxis.minorGridLines.color `String`*(default: "black")*
 
@@ -565,11 +386,11 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### categoryAxis.minorGridLines.visible `Boolean`*(default: false)*
 
- The visibility of the lines.
+The visibility of the lines.
 
 ### categoryAxis.minorGridLines.width `Number`*(default: 1> The width of the lines. <p)*
 
- The width of the lines.
+The width of the lines.
 
 Note that this setting has no effect if the visibility of the minor
 grid lines is not set to **true**.
@@ -580,22 +401,21 @@ The minor ticks of the axis.
 
 ### categoryAxis.minorTicks.size `Number`*(default: 3)*
 
- The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick
+The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick
 on the chart.
 
 ### categoryAxis.minorTicks.visible `Boolean`*(default: false)*
 
- The visibility of the minor ticks.
+The visibility of the minor ticks.
 
 ### categoryAxis.name `Object`*(default: primary)*
 
- The unique axis name.
+The unique axis name.
 
 ### categoryAxis.plotBands `Array`
 
 The plot bands of category axis.
 The plot band fields:
-
 
 #### *"from"*
 
@@ -609,42 +429,14 @@ The end position of the plot band.
 
 The color of the plot band.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            plotBands: [{
-                from: 0.2,
-                to: 0.4,
-                color: "green"
-            }]
-        },
-     });
-
 ### categoryAxis.reverse `Boolean`*(default: false)*
 
- Reverses the axis direction -
+Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
 
 ### categoryAxis.title `Object`
 
 The title of the category axis.
-
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            title: {
-                // set the text of the title
-                text: "Sales By District",
-                // decreate the font size of the title to 14 px
-                font: "14px Arial,Helvetica,sans-serif",
-                // move the title to the bottom
-                position: "bottom"
-            }
-        },
-        ...
-    });
 
 ### categoryAxis.title.background `String`
 
@@ -655,28 +447,9 @@ hex and rgb.
 
 The border of the title.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            title: {
-                // tweak the border around the title
-                border: {
-                    // set the width to 1
-                    width: 1,
-                    // set the color to a dark blue
-                    color: "#336699",
-                    // set the style to dashed
-                    dashType: "dash"
-                }
-            }
-        },
-        ...
-    });
-
 ### categoryAxis.title.border.color `String`*(default: "black")*
 
- The color of the border. Any valid CSS color string will work here, including
+The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
 
 ### categoryAxis.title.border.dashType `String`*(default: "solid")*
@@ -711,13 +484,9 @@ Specifies a line consisting of a repeating pattern of long-dash-dot.
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
-#### Example
-
-
-
 ### categoryAxis.title.border.width `Number`*(default: 0)*
 
- The width of the border.
+The width of the border.
 
 ### categoryAxis.title.color `String`
 
@@ -727,21 +496,9 @@ The text color of the title. Any valid CSS color string will work here, includin
 
 The font style of the title.
 
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            title: {
-                // decreate the font size of the title to 14 px
-                font: "14px Arial,Helvetica,sans-serif"
-            }
-        }
-        ...
-    });
-
 ### categoryAxis.title.margin `Number|Object`*(default: 5)*
 
- The margin of the title.
+The margin of the title.
 
 #### Example
 
@@ -768,8 +525,7 @@ The font style of the title.
 
 ### categoryAxis.title.position `String`*(default: "center")*
 
- The position of the title.
-
+The position of the title.
 
 #### *"top"*
 
@@ -793,19 +549,7 @@ The axis title is positioned in the center
 
 ### categoryAxis.title.rotation `Number`*(default: 0)*
 
- The rotation angle of the title.
-
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            title: {
-                // rotate the title 20 degrees
-                rotate: 20
-            }
-        },
-        ...
-    });
+The rotation angle of the title.
 
 ### categoryAxis.title.text `String`
 
@@ -813,24 +557,11 @@ The text of the title.
 
 ### categoryAxis.title.visible `Boolean`*(default: true)*
 
- The visibility of the title.
-
-#### Example
-
-    $("#chart").kendoChart({
-        categoryAxis: {
-            title: {
-                // hide the title
-                visible: false
-            }
-        },
-        ...
-    });
+The visibility of the title.
 
 ### categoryAxis.type `String`*(default: "category")*
 
- The axis type.
-
+The axis type.
 
 #### *"category"*
 
@@ -840,15 +571,14 @@ Discrete category axis.
 
 Specialized axis for displaying chronological data.
 
-### categoryAxis.type: "date"
+### categoryAxis.type="date"
 
 Properties specific to the date-time value axis.
-
 
 Note: The Chart will automatically switch to a date category axis if the categories
 are of type Date. Specify type explicitly when such behavior is undesired.
 
-### categoryAxis.type: "date".baseUnit `String`
+### categoryAxis.type="date".baseUnit `String`
 
 The base time interval for the axis.
 The default baseUnit is determined automatically from the minimum difference
@@ -864,15 +594,15 @@ between subsequent categories. Available options:
 Series data is aggregated for the specified base unit by using the
 **series.aggregate** function.
 
-### categoryAxis.type: "date".labels `Object`
+### categoryAxis.type="date".labels `Object`
 
 Label settings specific to the date axis.
 
-### categoryAxis.type: "date".labels.culture `String`*(default: global culture)*
+### categoryAxis.type="date".labels.culture `String`*(default: global culture)*
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
 
-### categoryAxis.type: "date".labels.dateFormats `Object`
+### categoryAxis.type="date".labels.dateFormats `Object`
 
 Date format strings
 
@@ -899,14 +629,14 @@ Date format strings
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
-### categoryAxis.type: "date".max `Number`
+### categoryAxis.type="date".max `Date`
 
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
 This is often used in combination with the **min** configuration option to
 set up a fixed date range.
 
-### categoryAxis.type: "date".min `Number`
+### categoryAxis.type="date".min `Date`
 
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
@@ -928,7 +658,7 @@ The background color of the chart area.
 
 ### chartArea.opacity `Number`*(default: 1)*
 
- The background opacity of the chart area.
+The background opacity of the chart area.
 
 ### chartArea.border `Object`
 
@@ -972,15 +702,15 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### chartArea.border.width `Number`*(default: 0)*
 
- The width of the border.
+The width of the border.
 
 ### chartArea.height `Number`*(default: 400)*
 
- The height of the chart area.
+The height of the chart area.
 
 ### chartArea.margin `Number|Object`*(default: 5)*
 
- The margin of the chart area.
+The margin of the chart area.
 
 #### Example
 
@@ -5604,12 +5334,10 @@ Template variables:
          title: {
              text: "My Chart Title"
          },
-         series: [
-             {
-                 name: "Series 1",
-                 data: [200, 450, 300, 125]
-             }
-         ],
+         series: [{
+             name: "Series 1",
+             data: [200, 450, 300, 125]         
+         }],
          categoryAxis: {
              categories: [2000, 2001, 2002, 2003]
          },
@@ -5621,7 +5349,7 @@ Template variables:
 
 ### tooltip.visible `Boolean`*(default: false)*
 
- A value indicating if the tooltip should be displayed.
+A value indicating if the tooltip should be displayed.
 
 ### transitions `Boolean`*(default: true)*
 
@@ -5633,7 +5361,29 @@ The value axis configuration options.
 
 ### valueAxis.axisCrossingValue `Number`*(default: 0)*
 
- Value at which the category axis crosses this axis.
+Value at which the category axis crosses this axis.
+
+### valueAxis.axisCrossingValues `Array`*(default: [0])*
+
+Value indicies at which the category axes cross the value axis.
+
+**Note:&nbsp;** Specify an index greater than or equal to the number
+of categories to denote the far end of the axis.
+
+#### Example
+    <p>
+    $("#chart").kendoChart({
+         categoryAxis: [{
+             categories: ["A", "B"]
+         }, {
+             categories: ["C", "D"]
+         }],
+         valueAxis: {
+             axisCrossingValues: [0, 1]
+         },
+         ...
+    })
+    </p>
 
 ### valueAxis.color `String`
 
@@ -5644,25 +5394,6 @@ Individual color settings for line and labels take priority. Any valid CSS color
 
 Configures the axis labels.
 
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            labels: {
-                // set the color of the text on the labels to a dark blue
-                color: "#336699",
-                // set the background color of the labels to a light grey
-                background: "#e2e2e2",
-                // make the font 14px
-                // rotate the labels just slightly for visual effect
-                rotation: 10,
-                // format the labels for currency
-                format: "C"
-            }
-        },
-        ...
-    });
-
 ### valueAxis.labels.background `String`
 
 The background color of the labels. Any valid CSS color string will work here, including
@@ -5672,33 +5403,14 @@ hex and rgb
 
 The border of the labels.
 
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            labels: {
-                border: {
-                    // make the width 1
-                    width: 1,
-                    // set the color to a dark blue
-                    color: "#336699",
-                    // set the border style to dashed
-                    dashType: "dash"
-                }
-            }
-        },
-        ...
-    });
-
 ### valueAxis.labels.border.color `String`*(default: "black")*
 
- The color of the border. Any valid CSS color string will work here, including
+The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
 
 ### valueAxis.labels.border.dashType `String`*(default: "solid")*
 
- The dash type of the border.
-
+The dash type of the border.
 
 #### *"solid"*
 
@@ -5730,7 +5442,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### valueAxis.labels.border.width `Number`*(default: 0)*
 
- The width of the border.
+The width of the border.
 
 ### valueAxis.labels.color `String`
 
@@ -5758,30 +5470,16 @@ The format of the labels.
 
 ### valueAxis.labels.margin `Number|Object`*(default: 0)*
 
- The margin of the labels.
+The margin of the labels.
 
 #### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            label: {
-                // sets the top, right, bottom and left margin to 3px.
-                margin: 3
-           }
-        },
-        ...
-    });
-    //
-    $("#chart").kendoChart({
-        valueAxis: {
-            label: {
-                // sets the top and left margin to 1px
-                // margin right and bottom are with 0px (by default)
-                margin: { top: 1, left: 1 }
-            }
-        },
-        ...
-    });
+    
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+           
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 0px (by default)
+    margin: { top: 1, left: 1 }
 
 ### valueAxis.labels.mirror `Boolean`
 
@@ -5789,64 +5487,37 @@ Mirrors the axis labels and ticks.
 If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
 
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            labels: {
-                // mirror the labels on the right
-                 mirror: true
-            }
-        },
-        ...
-    });
-
 ### valueAxis.labels.padding `Number | Object`*(default: 0)*
 
- The padding of the labels.
+The padding of the labels.
 
 #### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            label: {
-                // sets the top, right, bottom and left padding to 3px.
-                padding: 3
-            }
-        },
-        ...
-    });
-    //
-    $("#chart").kendoChart({
-        valueAxis: {
-            label: {
-                // sets the top and left padding to 1px
-                // padding right and bottom are with 0px (by default)
-                padding: { top: 1, left: 1 }
-            }
-        },
-        ...
-    });
+    
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+            
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
 
 ### valueAxis.labels.rotation `Number`*(default: 0)*
 
- The rotation angle of the labels.
+The rotation angle of the labels.
 
 ### valueAxis.labels.skip `Number`*(default: 1)*
 
- Number of labels to skip.
+Number of labels to skip.
 Skips rendering the first n labels.
 
 ### valueAxis.labels.step `Number`*(default: 1)*
 
- Label rendering step.
+Label rendering step.
 Every n-th label is rendered where n is the step
 
 ### valueAxis.labels.template `String/Function`
 
 The label template.
 Template variables:
-
 
 *   **value** - the value
 
@@ -5876,47 +5547,20 @@ Template variables:
 
 ### valueAxis.labels.visible `Boolean`*(default: true)*
 
- The visibility of the labels.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            labels: {
-                // hide the axis labels
-                visible: false
-            }
-       },
-       ...
-    });
+The visibility of the labels.
 
 ### valueAxis.line `Object`
 
 Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
 
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            line: {
-                // change the line width to 2 pixels
-                width: 2,
-                // set the color to light grey
-                color: "#e2e2e2"
-            }
-        },
-        ...
-    });
-
 ### valueAxis.line.color `String`*(default: "black")*
 
- The color of the line. This will also effect the major and minor ticks, but
+The color of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 ### valueAxis.line.dashType `String`*(default: "solid")*
 
- The dash type of the line.
-
+The dash type of the line.
 
 #### *"solid"*
 
@@ -5948,71 +5592,29 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### valueAxis.line.visible `Boolean`*(default: true)*
 
- The visibility of the line.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            line: {
-                // hide the axis lines altogether
-                visible: false
-            }
-        },
-        ...
-    });
+The visibility of the line.
 
 ### valueAxis.line.width `Number`*(default: 1)*
 
- The width of the line. This will also effect the major and minor ticks, but
+The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 ### valueAxis.majorGridLines `Object`
 
-Configures the major grid lines.  These are the lines that are an extension of the major ticks through the
+Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            minorGridLines: {
-                // set visible to true
-                visible: true,
-                // set width to 2 pixels
-                width: 2,
-                // set the color to a dark blue
-                color: "#336699",
-                // set the dashType to dot
-                dashType: "dot"
-            }
-        },
-        ...
-    });
 
 ### valueAxis.majorGridLines.color `String`*(default: "black")*
 
- The color of the lines.
+The color of the lines.
 
 ### valueAxis.majorGridLines.visible `Boolean`*(default: true)*
 
- The visibility of the lines.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            minorGridLines: {
-                // set visible to true
-                visible: false
-            }
-        },
-        ...
-    });
+The visibility of the lines.
 
 ### valueAxis.majorGridLines.width `Number`*(default: 1)*
 
- The width of the lines.
+The width of the lines.
 
 ### valueAxis.majorTicks `Object`
 
@@ -6020,12 +5622,11 @@ The major ticks of the axis.
 
 ### valueAxis.majorTicks.size `Number`*(default: 4)*
 
- The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick
-on the chart.
+The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
 
 ### valueAxis.majorTicks.visible `Boolean`*(default: true)*
 
- The visibility of the major ticks.
+The visibility of the major ticks.
 
 ### valueAxis.majorUnit `Number`
 
@@ -6033,12 +5634,12 @@ The interval between major divisions.
 
 ### valueAxis.max `Number`*(default: 1)*
 
- The maximum value of the axis.
+The maximum value of the axis.
 This is often used in combination with the **min** configuration option.
 
 ### valueAxis.min `Number`*(default: 0)*
 
- The minimum value of the axis.
+The minimum value of the axis.
 This is often used in combination with the **max** configuration option.
 
 ### valueAxis.minorGridLines `Object`
@@ -6047,15 +5648,13 @@ Configures the minor grid lines.  These are the lines that are an extension of t
 
 ### valueAxis.minorGridLines.color `String`*(default: "black")*
 
- The color of the lines.
-
+The color of the lines.
 
 Note that this has no effect if the visibility of the minor grid lines is not set to **true**.
 
 ### valueAxis.minorGridLines.dashType `String`*(default: "solid")*
 
- The dash type of the minor grid lines.
-
+The dash type of the minor grid lines.
 
 #### *"solid"*
 
@@ -6086,48 +5685,15 @@ Specifies a line consisting of a repeating pattern of long-dash-dot.
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 body of the chart.
 
-Note that minor grid lines are not visible by default, therefore none of these settings will take effect without the minor grid
-lines visibility being set to **true**
-.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            minorGridLines: {
-                // set visible to true
-                visible: true,
-                // set width to 2 pixels
-                width: 2,
-                // set the color to a dark blue
-                color: "#336699",
-                // set the dashType to dot
-                dashType: "dot"
-            }
-        },
-        ...
-    });
+Note that minor grid lines are not visible by default, therefore none of these settings will take effect without the minor grid lines visibility being set to **true**.
 
 ### valueAxis.minorGridLines.visible `Boolean`*(default: false)*
 
- The visibility of the lines.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            minorGridLines: {
-                // set visible to true. they are hidden by default
-                visible: true
-            }
-        },
-        ...
-    });
+The visibility of the lines.
 
 ### valueAxis.minorGridLines.width `Number`*(default: 1)*
 
- The width of the lines.
-
+The width of the lines.
 
 Note that this settings has no effect if the visibility of the minor grid lines is not set to **true**.
 
@@ -6137,12 +5703,11 @@ The minor ticks of the axis.
 
 ### valueAxis.minorTicks.size `Number`*(default: 3)*
 
- The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick
-on the chart.
+The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
 
 ### valueAxis.minorTicks.visible `Boolean`*(default: false)*
 
- The visibility of the minor ticks.
+The visibility of the minor ticks.
 
 ### valueAxis.minorUnit `Number`
 
@@ -6151,13 +5716,12 @@ It defaults to 1/5th of the majorUnit.
 
 ### valueAxis.name `Object`*(default: primary)*
 
- The unique axis name.
+The unique axis name.
 
 ### valueAxis.plotBands `Array`
 
 The plot bands of the value axis.
 The plot band fields:
-
 
 #### *"from"*
 
@@ -6186,28 +5750,12 @@ The color of the plot band.
 
 ### valueAxis.reverse `Boolean`*(default: false)*
 
- Reverses the axis direction -
+Reverses the axis direction -
 values increase from right to left and from top to bottom.
 
 ### valueAxis.title `Object`
 
 The title of the value axis.
-
-#### Example
-
-    $("#chart").kendoChart({
-        title: {
-            // set the color of the title text to a dark blue
-            color: "#336699",
-            // set the background color to a light grey
-            background: "#e2e2e2",
-            // set the text of the title
-            text: "Sales By District",
-            // move the title to the bottom
-            position: "bottom"
-        },
-        ...
-    });
 
 ### valueAxis.title.background `String`
 
@@ -6218,33 +5766,13 @@ hex and rgb.
 
 The border of the title.
 
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // tweak the border around the title
-                border: {
-                    // set the width to 1
-                    width: 1,
-                    // set the color to a dark blue
-                    color: "#336699",
-                    // set the style to dashed
-                    dashType: "dash"
-                }
-            }
-        },
-        ...
-    });
-
 ### valueAxis.title.border.color `String`*(default: "black")*
 
- The color of the border.
+The color of the border.
 
 ### valueAxis.title.border.dashType `String`*(default: "solid")*
 
- The dash type of the border.
-
+The dash type of the border.
 
 #### *"solid"*
 
@@ -6276,7 +5804,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### valueAxis.title.border.width `Number`*(default: 0)*
 
- The width of the border.
+The width of the border.
 
 ### valueAxis.title.color `String`
 
@@ -6286,75 +5814,35 @@ The text color of the title. Any valid CSS color string will work here, includin
 
 The font style of the title.
 
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // decreate the font size of the title to 14 px
-                font: "14px Arial,Helvetica,sans-serif"
-            }
-        }
-        ...
-    });
-
 ### valueAxis.title.margin `Number | Object`*(default: 5)*
 
- The margin of the title.
+The margin of the title.
 
 #### Example
 
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // sets the top, right, bottom and left margin to 3px.
-                margin: 3
-            }
-        },
-        ...
-    });
-    //
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // sets the top and left margin to 1px
-                // margin right and bottom are with 0px (by default)
-                margin: { top: 1, left: 1 }
-            }
-        },
-        ...
-    });
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+    
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 0px (by default)
+    margin: { top: 1, left: 1 }
 
 ### valueAxis.title.padding `Number | Object`*(default: 0)*
 
- The padding of the title.
+The padding of the title.
 
 #### Example
 
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // sets the top, right, bottom and left padding to 3px.
-                padding: 3
-            }
-        },
-        ...
-    });
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // sets the top and left padding to 1px
-                // padding right and bottom are with 0px (by default)
-                padding: { top: 1, left: 1 }
-            }
-        },
-        ...
-    });
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
 
 ### valueAxis.title.position `String`*(default: "center")*
 
- The position of the title.
-
+The position of the title.
 
 #### *"top"*
 
@@ -6378,19 +5866,7 @@ The axis title is positioned on the left (applicable to horizontal axis).
 
 ### valueAxis.title.rotation `Number`*(default: 0)*
 
- The rotation angle of the title.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // rotate the title 20 degrees
-                rotate: 20
-            }
-        },
-        ...
-    });
+The rotation angle of the title.
 
 ### valueAxis.title.text `String`
 
@@ -6398,23 +5874,11 @@ The text of the title.
 
 ### valueAxis.title.visible `Boolean`*(default: true)*
 
- The visibility of the title.
-
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            title: {
-                // hide the title
-                visible: false
-            }
-        },
-        ...
-    });
+The visibility of the title.
 
 ### valueAxis.visible `Boolean`*(default: true)*
 
- The visibility of the axis.
+The visibility of the axis.
 
 ### xAxis `Object`
 
@@ -6423,13 +5887,10 @@ Includes **all valueAxis options** in addition to:
 
 ### xAxis.type `String`*(default: "numeric")*
 
- The axis type.
-
+The axis type.
 
 Note: The Chart will automatically switch to a date axis if the series X value
 is of type Date. Specify type explicitly when such behavior is undesired.
-
-
 
 #### *"numeric"*
 
@@ -6470,7 +5931,6 @@ Culture to use for formatting the dates. See [Globalization](http://www.kendoui.
 ### xAxis.type: "date".labels.dateFormats `Object`
 
 Date format strings
-
 
 #### *"hours"*
 
@@ -6533,7 +5993,7 @@ axis maximum value to denote the far end of the axis.
     $("#chart").kendoChart({
          ...,
          xAxis: {
-             axisCrossingValue: [0, 1000]
+             axisCrossingValues: [0, 1000]
          },
          yAxis: [{ }, { name: "secondary" }],
          ...
