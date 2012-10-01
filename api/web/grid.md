@@ -82,6 +82,10 @@ Provides a way to specify custom editor for this column.
          ]
       });
 
+### columns.editor `Object`
+
+Column editor configuration.
+
 ### columns.editor.container `Object`
 
 The container in which the editor must be added.
@@ -270,6 +274,10 @@ Indicates whether item should be switched to edit mode on click.
          ],
          groupable: true
     });
+
+### groupable.messages `Object`
+
+ Sets the messages displayed during grouping.
 
 ### groupable.messages.empty `String`
 
@@ -696,7 +704,7 @@ Prepares the **Grid** for safe removal from DOM. Detaches all event handlers and
 #### Example
 
     var grid = $("#grid").data("kendoGrid");
-    
+
     // detach events
     grid.destroy();
 
@@ -931,7 +939,7 @@ The column object with its properties, e.g. `encoded`, `field` and `title`.
 ##### e.oldWidth `Number`
 
 The previous column width.
-	 
+
 ##### e.newWidth `Number`
 
 The new column width.
