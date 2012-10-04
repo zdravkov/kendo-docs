@@ -578,6 +578,38 @@ Properties specific to the date-time value axis.
 Note: The Chart will automatically switch to a date category axis if the categories
 are of type Date. Specify type explicitly when such behavior is undesired.
 
+### categoryAxis.type="date".autoBaseUnitSteps `Object`
+
+Specifies the discrete **baseUnitStep** values when
+either **baseUnit** is set to "fit" or **baseUnitStep** is set to "auto".
+
+The default configuration is as follows:
+* `minutes: [1, 2, 5, 15, 30]`
+* `hours: [1, 2, 3, 6, 12]`
+* `days: [1, 2, 3]`
+* `weeks: [1, 2]`
+* `months: [1, 2, 3, 6]`
+* `years: [1, 2, 3, 5, 10, 25, 50]`
+
+Each setting can be overriden individually.
+
+#### Example
+
+    $("#chart").kendoChart({
+        categoryAxis: {
+            categories: [
+                new Date("2012/02/01 00:00:00"),
+                new Date("2012/02/02 00:00:00"),
+                new Date("2012/02/20 00:00:00")
+            ],
+            baseUnitStep: "auto",
+            autoBaseUnitSteps: {
+                days: [3]
+            }
+        },
+        ...
+    });
+
 ### categoryAxis.type="date".baseUnit `String`
 
 The base time interval for the axis.
@@ -590,9 +622,20 @@ between subsequent categories. Available options:
 * weeks
 * months
 * years
+* **fit**
+
+Setting **baseUnit** to "fit" will set such base unit and **baseUnitStep**
+that the total number of categories does not exceed **maxDateGroups**.
 
 Series data is aggregated for the specified base unit by using the
 **series.aggregate** function.
+
+### categoryAxis.type="date".baseUnitStep `Object`*(default: 1)*
+
+Sets the step (interval) between categories in base units.
+Specifiying "auto" will set the step to such value that the total number of categories does not exceed **maxDateGroups**.
+
+This option is ignored if **baseUnit** is set to "fit".
 
 ### categoryAxis.type="date".labels `Object`
 
@@ -666,6 +709,13 @@ Use the *kendo.days* constants to specify the day by name.
 * kendo.days.Friday (5)
 * kendo.days.Saturday (6)
 
+
+### categoryAxis.type="date".maxDateGroups `Number`*(default: 10)*
+
+Specifies the maximum number of groups (categories) to produce when
+either **baseUnit** is set to "fit" or **baseUnitStep** is set to "auto".
+
+This option is ignored in all other cases.
 
 ### categoryAxis.visible `Boolean`*(default: true)*
 
