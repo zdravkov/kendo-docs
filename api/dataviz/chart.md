@@ -633,15 +633,24 @@ Setting the labels **format** option will override these defaults.
 
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
-This is often used in combination with the **min** configuration option to
+This is often used in combination with the **min** and **roundToBaseUnit** configuration options to
 set up a fixed date range.
 
 ### categoryAxis.type="date".min `Date`
 
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
-This is often used in combination with the **max** configuration option to
+This is often used in combination with the **max** and **roundToBaseUnit** configuration options to
 set up a fixed date range.
+
+### categoryAxis.type="date".roundToBaseUnit `Boolean`*(default: true)*
+
+By default, the first and last dates will be rounded off to the nearest base unit.
+Specifying **false** for this option will disable this behavior.
+
+This option is most useful in combination with explicit **min** and **max** dates.
+
+It will be ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
 
 ### categoryAxis.visible `Boolean`*(default: true)*
 
