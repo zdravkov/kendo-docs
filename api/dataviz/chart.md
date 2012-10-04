@@ -626,6 +626,7 @@ Date format strings
 #### *"years"*
 
 "yyyy"
+
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
@@ -651,6 +652,20 @@ Specifying **false** for this option will disable this behavior.
 This option is most useful in combination with explicit **min** and **max** dates.
 
 It will be ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
+
+### categoryAxis.type="date".weekStartDay `Number`*(default: kendo.days.Sunday)*
+
+Specifies the week start day when **baseUnit** is set to "weeks".
+Use the *kendo.days* constants to specify the day by name.
+
+* kendo.days.Sunday (0)
+* kendo.days.Monday (1)
+* kendo.days.Tuesday (2)
+* kendo.days.Wednesday (3)
+* kendo.days.Thursday (4)
+* kendo.days.Friday (5)
+* kendo.days.Saturday (6)
+
 
 ### categoryAxis.visible `Boolean`*(default: true)*
 
