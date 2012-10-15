@@ -37,11 +37,11 @@ Menu content expands from the top down. Similar to slideIn.
          animation: { open: { effects: "fadeIn" } }
      });
 
-### animation.close `Animation`
+### animation.close `Object`
 
 The animation that will be used when closing sub menus.
 
-### animation.open `Animation`
+### animation.open `Object`
 
 The animation that will be used when opening sub menus.
 
@@ -190,7 +190,7 @@ Prepares the **Menu** for safe removal from DOM. Detaches all event handlers and
 #### Example
 
     var menu = $("#menu").data("kendoMenu");
-    
+
     // detach events
     menu.destroy();
 

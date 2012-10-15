@@ -19,11 +19,11 @@ and "Maximize".
 A collection of {Animation} objects, used to change default animations. A value of **false**
 will disable all animations in the widget.
 
-### animation.close `Animation`
+### animation.close `Object`
 
 The animation that will be used when a Window closes.
 
-### animation.open `Animation`
+### animation.open `Object`
 
 The animation that will be used when a Window opens.
 

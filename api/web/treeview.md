@@ -31,7 +31,7 @@ Setting this option to **false** will disable all animations.
         }
     });
 
-### animation.collapse `Animation`
+### animation.collapse `Object`
 
 The animation that will be used when collapsing items.
 
@@ -65,7 +65,7 @@ is collapsed. Options include **"fadeOut"**.
         }
     });
 
-### animation.expand `Animation`
+### animation.expand `Object`
 
 The animation that will be used when expanding items.
 
@@ -147,7 +147,7 @@ the image URL of the treeview nodes.
         { id: 1, text: "Tea", image: "tea.png" },
         { id: 2, text: "Coffee", image: "coffee.png" }
     ];
-    
+
     $("#treeview").kendoTreeView({
         dataSource: items,
         dataImageUrlField: "image"
@@ -168,7 +168,7 @@ the sprite CSS class of the treeview nodes.
         { id: 1, text: "Tea", sprite: "icon-tea" },
         { id: 2, text: "Coffee", sprite: "icon-coffee" }
     ];
-    
+
     $("#treeview").kendoTreeView({
         dataSource: items,
         dataSpriteCssClassField: "sprite"
@@ -198,7 +198,7 @@ the link URL of the treeview nodes.
         { id: 1, text: "Tea", LinksTo: "http://tea.example.com" },
         { id: 2, text: "Coffee", LinksTo: "http://coffee.example.com" }
     ];
-    
+
     $("#treeview").kendoTreeView({
         dataSource: items,
         dataUrlField: "LinksTo"
@@ -262,10 +262,10 @@ Collapses nodes.
 #### Example
 
     var treeview = $("#treeview").data("kendoTreeView");
-    
+
     // collapse the node with id="firstItem"
     treeview.collapse(document.getElementById("firstItem"));
-    
+
     // collapse all nodes
     treeview.collapse(".k-item");
 
@@ -301,7 +301,7 @@ Prepares the **TreeView** for safe removal from DOM. Detaches all event handlers
 #### Example
 
     var treeView = $("#treeView").data("kendoTreeView");
-    
+
     // detach events
     treeView.destroy();
 
@@ -334,10 +334,10 @@ Enables or disables nodes.
 #### Example
 
     var treeview = $("#treeview").data("kendoTreeView");
-    
+
     // disable the node with id="firstItem"
     treeview.enable(document.getElementById("firstItem"), false);
-    
+
     // enable all nodes
     treeview.enable(".k-item");
 
@@ -358,10 +358,10 @@ Expands nodes.
 #### Example
 
     var treeview = $("#treeview").data("kendoTreeView");
-    
+
     // expands the node with id="firstItem"
     treeview.expand(document.getElementById("firstItem"));
-    
+
     // expands all nodes
     treeview.expand(".k-item");
 
