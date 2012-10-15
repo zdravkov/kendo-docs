@@ -152,7 +152,7 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    
+
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
 
@@ -174,7 +174,7 @@ The padding of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -1401,7 +1401,7 @@ Template variables:
 
  The visibility of the labels.
 
-### series.type="area".line `String`
+### series.type="area".line `String|Object`
 
 The line of the area chart.
 
@@ -5410,7 +5410,7 @@ Template variables:
          },
          series: [{
              name: "Series 1",
-             data: [200, 450, 300, 125]         
+             data: [200, 450, 300, 125]
          }],
          categoryAxis: {
              categories: [2000, 2001, 2002, 2003]
@@ -5547,10 +5547,10 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    
+
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-           
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 0px (by default)
     margin: { top: 1, left: 1 }
@@ -5566,10 +5566,10 @@ mirroring the axis will render them to the right.
 The padding of the labels.
 
 #### Example
-    
+
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-            
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -5896,7 +5896,7 @@ The margin of the title.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 0px (by default)
     margin: { top: 1, left: 1 }
