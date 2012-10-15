@@ -477,7 +477,7 @@ Multiple row selection.
 
 Multiple cell selection.
 
-### sortable `Object`
+### sortable `Boolean|Object`
 
 Defines whether grid columns are sortable.
 
