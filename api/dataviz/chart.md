@@ -408,7 +408,7 @@ on the chart.
 
 The visibility of the minor ticks.
 
-### categoryAxis.name `Object`*(default: primary)*
+### categoryAxis.name `String`*(default: primary)*
 
 The unique axis name.
 
