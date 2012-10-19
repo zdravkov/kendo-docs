@@ -193,7 +193,7 @@ Skips rendering the first n labels.
 Label rendering step.
 Every n-th label is rendered where n is the step
 
-### categoryAxis.labels.template `String/Function`
+### categoryAxis.labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -1361,7 +1361,7 @@ The label is positioned at the bottom of the area chart marker.
 
 The label is positioned at the left of the area chart marker.
 
-### series.type="area".labels.template `String/Function`
+### series.type="area".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -1793,7 +1793,7 @@ The label is positioned inside, near the base of the bar.
 The label is positioned outside, near the end of the bar.
              Not applicable for stacked bar series.
 
-### series.type="bar".labels.template `String/Function`
+### series.type="bar".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -2119,7 +2119,7 @@ The label is positioned at the bottom of the bubble chart marker.
 
 The label is positioned at the left of the bubble chart marker.
 
-### series.type="bubble".labels.template `String/Function`
+### series.type="bubble".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -2567,7 +2567,7 @@ The labels are positioned inside, near the end of the donut segments.
 The labels are positioned outside, near the end of the donut segments.
              The labels and the donut segments are connected with connector line.
 
-### series.type="donut".labels.template `String/Function`
+### series.type="donut".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -2914,7 +2914,7 @@ The label is positioned at the bottom of the line chart marker.
 
 The label is positioned at the left of the line chart marker.
 
-### series.type="line".labels.template `String/Function`
+### series.type="line".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -3374,7 +3374,7 @@ The labels are positioned inside, near the end of the pie segments.
 The labels are positioned outside, near the end of the pie segments.
              The labels and the pie segments are connected with connector line.
 
-### series.type="pie".labels.template `String/Function`
+### series.type="pie".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -3673,7 +3673,7 @@ The label is positioned at the bottom of the scatter chart marker.
 
 The label is positioned at the left of the scatter chart marker.
 
-### series.type="scatter".labels.template `String/Function`
+### series.type="scatter".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -4030,7 +4030,7 @@ The label is positioned at the bottom of the scatter chart marker.
 
 The label is positioned at the left of the scatter chart marker.
 
-### series.type="scatterLine".labels.template `String/Function`
+### series.type="scatterLine".labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -4970,7 +4970,7 @@ The format of the labels.
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### seriesDefaults.labels.template `String/Function`
+### seriesDefaults.labels.template `String|Function`
 
 The label template.
 Template variables:
@@ -5588,7 +5588,7 @@ Skips rendering the first n labels.
 Label rendering step.
 Every n-th label is rendered where n is the step
 
-### valueAxis.labels.template `String/Function`
+### valueAxis.labels.template `String|Function`
 
 The label template.
 Template variables:
