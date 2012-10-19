@@ -178,7 +178,7 @@ Instance of DataSource or Object with DataSource configuration.
 Template to be used for rendering the detail rows in the grid.
 See the [**Detail Template**](http://demos.kendoui.com/web/grid/detailtemplate.html) example.
 
-### editable `Object`
+### editable `Boolean|Object` *(default: false)*
 
 Indicates whether editing is enabled/disabled.
 
