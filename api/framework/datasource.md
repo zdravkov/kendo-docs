@@ -39,7 +39,19 @@ Specifies the local JavaScript object to use for the data source.
 
 ### filter `Array | Object`*(default: undefined)*
 
- Sets initial filter
+ Sets the initial filter.
+
+#### filter.operator `String`
+
+ Specifies the filter operator. One of the following values "eq", "neq", "lt", "lte", "gt", "gte", "startswith", "endswith", "contains".
+
+#### filter.field `String`
+
+ Specifies the field to filter by.
+
+#### filter.value `Object`
+
+ Specifies the value to filter for.
 
 #### Example
 
