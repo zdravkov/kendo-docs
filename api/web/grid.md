@@ -9,6 +9,36 @@ publish: true
 
 ## Configuration
 
+### altRowTemplate `Function`
+
+Template to be used for rendering the alternate rows in the grid.
+
+#### Example
+
+    //template
+    <script id="altRowTemplate" type="text/x-kendo-tmpl">
+        <tr class="k-alt">
+            <td>
+                <img src="${ BoxArt.SmallUrl }" alt="${ Name }" />
+            </td>
+            <td>
+                ${ Name }
+            </td>
+            <td>
+                ${ AverageRating }
+            </td>
+        </tr>
+    </script>
+
+    //grid intialization
+    <script>PO details informaiton
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            altRowTemplate: kendo.template($("#altRowTemplate").html()),
+            height: 200
+        });
+    </script>
+
 ### autoBind `Boolean`*(default: true)*
 
  Indicates whether the grid will call read on the DataSource initially.
