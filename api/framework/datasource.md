@@ -591,7 +591,7 @@ Options for remote create data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Specify Create As Function
+#### Example: Specify Create As Function *(Note: transport methods should be consistent - read, update and destroy should be specified as functions too)*
 
     var dataSource = new kendo.data.DataSource({
         transport: {
@@ -726,7 +726,7 @@ Options for remote destroy data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Specify Destroy As Function
+#### Example: Specify Destroy As Function *(Note: transport methods should be consistent - read, create and update should be specified as functions too)*
 
     var dataSource = new kendo.data.DataSource({
         transport: {
@@ -881,7 +881,7 @@ Options for remote read data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Specify Read As Function
+#### Example: Specify Read As Function *(Note: transport methods should be consistent - create, update and destroy should be specified as functions too)*
 
     var dataSource = new kendo.data.DataSource({
         transport: {
@@ -1016,7 +1016,7 @@ Options for remote update data operation, or the URL of the remote service.
         }
     });
 
-#### Example: Specify Update As Function
+#### Example: Specify Update As Function *(Note: transport methods should be consistent - read, create and destroy should be specified as functions too)*
 
     var dataSource = new kendo.data.DataSource({
         transport: {
