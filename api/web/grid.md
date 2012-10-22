@@ -171,6 +171,100 @@ The template for column's cells.
          ]
       });
 
+### columns.groupHeaderTemplate `String`
+
+The template for group header item.
+
+#### Example
+
+    $("#grid").kendoGrid({
+         dataSource: {
+             data: createRandomData(50),
+             pageSize: 10,
+             group: { field: "BirthDate" }
+         },
+         columns: [
+             {
+                 field: "Name"
+             },
+             {
+                 field: "BirthDate",
+                 title: "Birth Date",
+                 groupHeaderTemplate: 'Birth Date: #= value #'
+            }
+         ]
+      });
+
+### columns.groupFooterTemplate `String`
+
+The template for column's cell in group footer item.
+
+#### Example
+
+    $("#grid").kendoGrid({
+         dataSource: {
+             data: createRandomData(50),
+             pageSize: 10,
+             group: { field: "BirthDate" }
+         },
+         columns: [
+             {
+                 field: "Name"
+             },
+             {
+                 field: "BirthDate",
+                 title: "Birth Date",
+                 groupFooterTemplate: 'custom text'
+            }
+         ]
+      });
+
+### columns.footerTemplate `String`
+
+The template for column's cell in footer item.
+
+#### Example
+
+    $("#grid").kendoGrid({
+         dataSource: {
+             data: createRandomData(50),
+             pageSize: 10
+         },
+         columns: [
+             {
+                 field: "Name"
+             },
+             {
+                 field: "BirthDate",
+                 title: "Birth Date",
+                 footerTemplate: 'custom footer text'
+            }
+         ]
+      });
+
+### columns.headerTemplate `String`
+
+The template for column's cell in header item.
+
+#### Example
+
+    $("#grid").kendoGrid({
+         dataSource: {
+             data: createRandomData(50),
+             pageSize: 10
+         },
+         columns: [
+             {
+                 field: "Name"
+             },
+             {
+                 field: "BirthDate",
+                 title: "Birth Date",
+                 headerTemplate: 'custom header text'
+            }
+         ]
+      });
+
 ### columns.title `String`
 
 The text that will be displayed in the column header.
