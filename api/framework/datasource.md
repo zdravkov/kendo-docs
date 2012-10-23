@@ -13,6 +13,14 @@ publish: true
 
  Sets fields on which initial aggregates should be calculated
 
+### aggregate.field `String`
+
+ Specifies the field on which the aggregate will be calculated.
+
+### aggregate.aggregate `String`
+
+ Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average"
+
 #### Example
 
     // calculates total sum of unitPrice field's values.
@@ -74,6 +82,26 @@ Specifies the local JavaScript object to use for the data source.
 ### group `Array | Object`*(default: undefined)*
 
  Sets initial grouping
+
+### group.field `String`
+
+ Specifies the field to group by.
+
+### group.dir `String`
+
+ Specifies the order of the groupped items.
+
+### group.aggregates `Array`
+
+ Specifies the aggregate function for this group.
+
+### group.aggregates.field `String`
+
+ Specifies the field on which the aggregate will be calculated.
+
+### group.aggregates.aggregate `String`
+
+ Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average"
 
 #### Example
 
@@ -559,6 +587,14 @@ It is possible to modify these parameters by using the `parameterMap` function f
 ### sort `Array | Object`*(default: undefined)*
 
  Sets initial sort order
+
+### sort.field `String`
+
+ Sets the field to sort on.
+
+### sort.dir `String`
+
+ Sets the sort direction. Possible values are: "asc", "desc", null. If null is set, the sort expression is removed.
 
 #### Example
 
