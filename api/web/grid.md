@@ -171,6 +171,29 @@ The template for column's cells.
          ]
       });
 
+### columns.aggregates `Array`
+
+The aggregates to be used when grouping is applied
+
+#### Example
+
+    $("#grid").kendoGrid({
+         dataSource: {
+             data: createRandomData(50),
+             pageSize: 10
+         },
+         columns: [
+             {
+                 field: "Name"
+             },
+             {
+                 field: "UnitPrice",
+                 aggregates: ["count", "sum"]
+             }
+         ]
+      });
+
+
 ### columns.groupHeaderTemplate `String`
 
 The template for group header item.
