@@ -77,9 +77,25 @@ A collection of column objects or collection of strings that represents the name
                    { title: "Year", field: "year", filterable: false, sortable: true, format: "{0:dd/MMMM/yyyy}" } ]
     });
 
-### columns.command `String`
+### columns.command `String|Array`
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
+
+### columns.command.name `String`
+
+The unique name of the command. The supported built-in commands are: "create", "cancel", "save", "destroy".
+
+### columns.command.text `String`
+
+The text displayed by the command.
+
+### columns.command.className `String`
+
+The CSS class of the command.
+
+### columns.command.click `Function`
+
+The JavaScript function executed when the user clicks the command button.
 
 ### columns.editor `Function`
 
