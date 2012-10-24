@@ -12,6 +12,8 @@ publish: true
 ### dateField `String`*(default: "date")*
 
 The field containing the point date.
+It is used as a default `field` for all date axes, including the navigator pane.
+
 The data item field value must be either:
 
 ####* Date instance
