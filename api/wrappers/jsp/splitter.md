@@ -175,6 +175,7 @@ Triggered when a pane is resized.
 
 ## Event Tags
  
+
 ### <kendo:splitter-collapse>
 
 Triggered when a pane of a Splitter is collapsed.
@@ -184,12 +185,14 @@ Triggered when a pane of a Splitter is collapsed.
         <kendo:splitter-collapse>
             <script>
                 function(e) {
-                    // Code to handle the Collapse event.
+                    // Code to handle the collapse event.
                 }
             </script>
         </kendo:splitter-collapse>
     </kendo:splitter>
+
  
+
 ### <kendo:splitter-contentLoad>
 
 Triggered when the content for a pane has finished loading.
@@ -199,12 +202,14 @@ Triggered when the content for a pane has finished loading.
         <kendo:splitter-contentLoad>
             <script>
                 function(e) {
-                    // Code to handle the ContentLoad event.
+                    // Code to handle the contentLoad event.
                 }
             </script>
         </kendo:splitter-contentLoad>
     </kendo:splitter>
+
  
+
 ### <kendo:splitter-expand>
 
 Triggered when a pane of a Splitter is expanded.
@@ -214,12 +219,14 @@ Triggered when a pane of a Splitter is expanded.
         <kendo:splitter-expand>
             <script>
                 function(e) {
-                    // Code to handle the Expand event.
+                    // Code to handle the expand event.
                 }
             </script>
         </kendo:splitter-expand>
     </kendo:splitter>
+
  
+
 ### <kendo:splitter-layoutChange>
 
 Fires when the splitter layout has changed
@@ -229,12 +236,14 @@ Fires when the splitter layout has changed
         <kendo:splitter-layoutChange>
             <script>
                 function(e) {
-                    // Code to handle the LayoutChange event.
+                    // Code to handle the layoutChange event.
                 }
             </script>
         </kendo:splitter-layoutChange>
     </kendo:splitter>
+
  
+
 ### <kendo:splitter-resize>
 
 Triggered when a pane is resized.
@@ -244,11 +253,12 @@ Triggered when a pane is resized.
         <kendo:splitter-resize>
             <script>
                 function(e) {
-                    // Code to handle the Resize event.
+                    // Code to handle the resize event.
                 }
             </script>
         </kendo:splitter-resize>
     </kendo:splitter>
+
  
 
 ## Child JSP Tags

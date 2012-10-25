@@ -185,6 +185,7 @@ Fires when the time drop-down list is opened
 
 ## Event Tags
  
+
 ### <kendo:timePicker-change>
 
 Triggered when the underlying value of a TimePicker is changed.
@@ -194,12 +195,14 @@ Triggered when the underlying value of a TimePicker is changed.
         <kendo:timePicker-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:timePicker-change>
     </kendo:timePicker>
+
  
+
 ### <kendo:timePicker-close>
 
 Fires when the time drop-down list is closed
@@ -209,12 +212,14 @@ Fires when the time drop-down list is closed
         <kendo:timePicker-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:timePicker-close>
     </kendo:timePicker>
+
  
+
 ### <kendo:timePicker-open>
 
 Fires when the time drop-down list is opened
@@ -224,11 +229,12 @@ Fires when the time drop-down list is opened
         <kendo:timePicker-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:timePicker-open>
     </kendo:timePicker>
+
  
 
 ## Child JSP Tags

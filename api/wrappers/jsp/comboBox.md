@@ -335,6 +335,7 @@ Triggered when a Li element is selected.
 
 ## Event Tags
  
+
 ### <kendo:comboBox-change>
 
 Fires when the value has been changed.
@@ -344,12 +345,14 @@ Fires when the value has been changed.
         <kendo:comboBox-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:comboBox-change>
     </kendo:comboBox>
+
  
+
 ### <kendo:comboBox-close>
 
 Fires when the drop-down list is closed
@@ -359,12 +362,14 @@ Fires when the drop-down list is closed
         <kendo:comboBox-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:comboBox-close>
     </kendo:comboBox>
+
  
+
 ### <kendo:comboBox-dataBound>
 
 Fires when the ComboBox has received data from the data source.
@@ -374,12 +379,14 @@ Fires when the ComboBox has received data from the data source.
         <kendo:comboBox-dataBound>
             <script>
                 function(e) {
-                    // Code to handle the DataBound event.
+                    // Code to handle the dataBound event.
                 }
             </script>
         </kendo:comboBox-dataBound>
     </kendo:comboBox>
+
  
+
 ### <kendo:comboBox-open>
 
 Fires when the drop-down list is opened
@@ -389,12 +396,14 @@ Fires when the drop-down list is opened
         <kendo:comboBox-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:comboBox-open>
     </kendo:comboBox>
+
  
+
 ### <kendo:comboBox-select>
 
 Triggered when a Li element is selected.
@@ -404,11 +413,12 @@ Triggered when a Li element is selected.
         <kendo:comboBox-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:comboBox-select>
     </kendo:comboBox>
+
  
 
 ## Child JSP Tags

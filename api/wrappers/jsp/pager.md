@@ -145,6 +145,7 @@ Fires when the current page has changed.
 
 ## Event Tags
  
+
 ### <kendo:pager-change>
 
 Fires when the current page has changed.
@@ -154,11 +155,12 @@ Fires when the current page has changed.
         <kendo:pager-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:pager-change>
     </kendo:pager>
+
  
 
 ## Child JSP Tags

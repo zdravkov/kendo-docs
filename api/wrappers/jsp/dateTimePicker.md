@@ -227,6 +227,7 @@ Fires when the calendar or the time drop-down list is opened
 
 ## Event Tags
   
+
 ### <kendo:dateTimePicker-change>
 
 Triggered when the underlying value of a DateTimePicker is changed.
@@ -236,12 +237,14 @@ Triggered when the underlying value of a DateTimePicker is changed.
         <kendo:dateTimePicker-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:dateTimePicker-change>
     </kendo:dateTimePicker>
+
  
+
 ### <kendo:dateTimePicker-close>
 
 Fires when the calendar or the time drop-down list is closed
@@ -251,12 +254,14 @@ Fires when the calendar or the time drop-down list is closed
         <kendo:dateTimePicker-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:dateTimePicker-close>
     </kendo:dateTimePicker>
+
  
+
 ### <kendo:dateTimePicker-open>
 
 Fires when the calendar or the time drop-down list is opened
@@ -266,11 +271,12 @@ Fires when the calendar or the time drop-down list is opened
         <kendo:dateTimePicker-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:dateTimePicker-open>
     </kendo:dateTimePicker>
+
  
 
 ## Child JSP Tags

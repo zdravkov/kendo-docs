@@ -205,6 +205,7 @@ Triggered when an item of a PanelBar is selected.
 
 ## Event Tags
   
+
 ### <kendo:panelBar-activate>
 
 Triggered when an item of a PanelBar is activated.
@@ -214,12 +215,14 @@ Triggered when an item of a PanelBar is activated.
         <kendo:panelBar-activate>
             <script>
                 function(e) {
-                    // Code to handle the Activate event.
+                    // Code to handle the activate event.
                 }
             </script>
         </kendo:panelBar-activate>
     </kendo:panelBar>
+
  
+
 ### <kendo:panelBar-collapse>
 
 Triggered when an item of a PanelBar is collapsed.
@@ -229,12 +232,14 @@ Triggered when an item of a PanelBar is collapsed.
         <kendo:panelBar-collapse>
             <script>
                 function(e) {
-                    // Code to handle the Collapse event.
+                    // Code to handle the collapse event.
                 }
             </script>
         </kendo:panelBar-collapse>
     </kendo:panelBar>
+
  
+
 ### <kendo:panelBar-contentLoad>
 
 Fires when content is fetched from an AJAX request.
@@ -244,12 +249,14 @@ Fires when content is fetched from an AJAX request.
         <kendo:panelBar-contentLoad>
             <script>
                 function(e) {
-                    // Code to handle the ContentLoad event.
+                    // Code to handle the contentLoad event.
                 }
             </script>
         </kendo:panelBar-contentLoad>
     </kendo:panelBar>
+
  
+
 ### <kendo:panelBar-error>
 
 Fires when AJAX request results in an error.
@@ -259,12 +266,14 @@ Fires when AJAX request results in an error.
         <kendo:panelBar-error>
             <script>
                 function(e) {
-                    // Code to handle the Error event.
+                    // Code to handle the error event.
                 }
             </script>
         </kendo:panelBar-error>
     </kendo:panelBar>
+
  
+
 ### <kendo:panelBar-expand>
 
 Triggered when an item of a PanelBar is expanded.
@@ -274,12 +283,14 @@ Triggered when an item of a PanelBar is expanded.
         <kendo:panelBar-expand>
             <script>
                 function(e) {
-                    // Code to handle the Expand event.
+                    // Code to handle the expand event.
                 }
             </script>
         </kendo:panelBar-expand>
     </kendo:panelBar>
+
  
+
 ### <kendo:panelBar-select>
 
 Triggered when an item of a PanelBar is selected.
@@ -289,11 +300,12 @@ Triggered when an item of a PanelBar is selected.
         <kendo:panelBar-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:panelBar-select>
     </kendo:panelBar>
+
  
 
 ## Child JSP Tags

@@ -31,6 +31,21 @@ Options for remote destroy data operation, or the URL of the remote service.
 
 
 
+### parameterMap `String`
+
+Convert the request parameters from dataSource format to remote service specific format.
+
+#### Example
+    <kendo:dataSource parameterMap="handle_parameterMap">
+    </kendo:dataSource>
+    <script>
+        function handle_parameterMap(e) {
+            // Code to handle the parameterMap event.
+        }
+    </script>
+
+
+
 ### read `String`
 
 Options for remote read data operation, or the URL of the remote service.
@@ -51,40 +66,11 @@ Options for remote update data operation, or the URL of the remote service.
 
 
 
-### parameterMap `String`
-
-Convert the request parameters from dataSource format to remote service specific format.
-
-#### Example
-    <kendo:dataSource parameterMap="handle_parameterMap">
-    </kendo:dataSource>
-    <script>
-        function handle_parameterMap(e) {
-            // Code to handle the parameterMap event.
-        }
-    </script>
-
-
-
 ### Event Attributes
-
-
-### parameterMap `String`
-
-Convert the request parameters from dataSource format to remote service specific format.
-
-#### Example
-    <kendo:dataSource parameterMap="handle_parameterMap">
-    </kendo:dataSource>
-    <script>
-        function handle_parameterMap(e) {
-            // Code to handle the parameterMap event.
-        }
-    </script>
-
 
 ## Event Tags
     
+
 ### <kendo:dataSource-transport-parameterMap>
 
 Convert the request parameters from dataSource format to remote service specific format.
@@ -94,11 +80,12 @@ Convert the request parameters from dataSource format to remote service specific
         <kendo:dataSource-transport-parameterMap>
             <script>
                 function(e) {
-                    // Code to handle the ParameterMap event.
+                    // Code to handle the parameterMap event.
                 }
             </script>
         </kendo:dataSource-transport-parameterMap>
     </kendo:dataSource-transport>
+
  
 
 ## Child JSP Tags

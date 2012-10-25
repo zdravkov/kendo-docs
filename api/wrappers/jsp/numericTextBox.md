@@ -185,6 +185,7 @@ Fires when the value is changed from the spin buttons
 
 ## Event Tags
 
+
 ### <kendo:numericTextBox-change>
 
 Fires when the value is changed
@@ -194,12 +195,14 @@ Fires when the value is changed
         <kendo:numericTextBox-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:numericTextBox-change>
     </kendo:numericTextBox>
+
  
+
 ### <kendo:numericTextBox-spin>
 
 Fires when the value is changed from the spin buttons
@@ -209,11 +212,12 @@ Fires when the value is changed from the spin buttons
         <kendo:numericTextBox-spin>
             <script>
                 function(e) {
-                    // Code to handle the Spin event.
+                    // Code to handle the spin event.
                 }
             </script>
         </kendo:numericTextBox-spin>
     </kendo:numericTextBox>
+
  
 
 ## Child JSP Tags

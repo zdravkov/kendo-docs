@@ -422,6 +422,7 @@ Triggered when a Window has been resized by a user.
 
 ## Event Tags
  
+
 ### <kendo:window-activate>
 
 Triggered when a Window has finished its opening animation.
@@ -431,12 +432,14 @@ Triggered when a Window has finished its opening animation.
         <kendo:window-activate>
             <script>
                 function(e) {
-                    // Code to handle the Activate event.
+                    // Code to handle the activate event.
                 }
             </script>
         </kendo:window-activate>
     </kendo:window>
+
  
+
 ### <kendo:window-close>
 
 Triggered when a Window is closed (by a user or through the close() method).
@@ -446,12 +449,14 @@ Triggered when a Window is closed (by a user or through the close() method).
         <kendo:window-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:window-close>
     </kendo:window>
+
  
+
 ### <kendo:window-deactivate>
 
 Triggered when a Window has finished its closing animation.
@@ -461,12 +466,14 @@ Triggered when a Window has finished its closing animation.
         <kendo:window-deactivate>
             <script>
                 function(e) {
-                    // Code to handle the Deactivate event.
+                    // Code to handle the deactivate event.
                 }
             </script>
         </kendo:window-deactivate>
     </kendo:window>
+
  
+
 ### <kendo:window-dragend>
 
 Triggered when a Window has been moved by a user.
@@ -476,12 +483,14 @@ Triggered when a Window has been moved by a user.
         <kendo:window-dragend>
             <script>
                 function(e) {
-                    // Code to handle the Dragend event.
+                    // Code to handle the dragend event.
                 }
             </script>
         </kendo:window-dragend>
     </kendo:window>
+
  
+
 ### <kendo:window-dragstart>
 
 Triggered when the user starts to move the window.
@@ -491,12 +500,14 @@ Triggered when the user starts to move the window.
         <kendo:window-dragstart>
             <script>
                 function(e) {
-                    // Code to handle the Dragstart event.
+                    // Code to handle the dragstart event.
                 }
             </script>
         </kendo:window-dragstart>
     </kendo:window>
+
  
+
 ### <kendo:window-error>
 
 Triggered when an AJAX request for content fails.
@@ -506,12 +517,14 @@ Triggered when an AJAX request for content fails.
         <kendo:window-error>
             <script>
                 function(e) {
-                    // Code to handle the Error event.
+                    // Code to handle the error event.
                 }
             </script>
         </kendo:window-error>
     </kendo:window>
+
  
+
 ### <kendo:window-open>
 
 Triggered when a Window is opened (i.e. the open() method is called).
@@ -521,12 +534,14 @@ Triggered when a Window is opened (i.e. the open() method is called).
         <kendo:window-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:window-open>
     </kendo:window>
+
  
+
 ### <kendo:window-refresh>
 
 Triggered when the content of a Window has finished loading via AJAX,
@@ -538,12 +553,14 @@ has been clicked on a window with static content.
         <kendo:window-refresh>
             <script>
                 function(e) {
-                    // Code to handle the Refresh event.
+                    // Code to handle the refresh event.
                 }
             </script>
         </kendo:window-refresh>
     </kendo:window>
+
  
+
 ### <kendo:window-resize>
 
 Triggered when a Window has been resized by a user.
@@ -553,11 +570,12 @@ Triggered when a Window has been resized by a user.
         <kendo:window-resize>
             <script>
                 function(e) {
-                    // Code to handle the Resize event.
+                    // Code to handle the resize event.
                 }
             </script>
         </kendo:window-resize>
     </kendo:window>
+
  
 
 ## Child JSP Tags

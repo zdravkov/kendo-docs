@@ -208,6 +208,7 @@ Fires when chart series are hovered.
 
 ## Event Tags
           
+
 ### <kendo:chart-axisLabelClick>
 
 Fires when an axis label is clicked.
@@ -217,12 +218,14 @@ Fires when an axis label is clicked.
         <kendo:chart-axisLabelClick>
             <script>
                 function(e) {
-                    // Code to handle the AxisLabelClick event.
+                    // Code to handle the axisLabelClick event.
                 }
             </script>
         </kendo:chart-axisLabelClick>
     </kendo:chart>
+
  
+
 ### <kendo:chart-dataBound>
 
 Fires when the chart has received data from the data source
@@ -233,12 +236,14 @@ and is about to render it.
         <kendo:chart-dataBound>
             <script>
                 function(e) {
-                    // Code to handle the DataBound event.
+                    // Code to handle the dataBound event.
                 }
             </script>
         </kendo:chart-dataBound>
     </kendo:chart>
+
  
+
 ### <kendo:chart-plotAreaClick>
 
 Fires when plot area is clicked.
@@ -248,12 +253,14 @@ Fires when plot area is clicked.
         <kendo:chart-plotAreaClick>
             <script>
                 function(e) {
-                    // Code to handle the PlotAreaClick event.
+                    // Code to handle the plotAreaClick event.
                 }
             </script>
         </kendo:chart-plotAreaClick>
     </kendo:chart>
+
  
+
 ### <kendo:chart-seriesClick>
 
 Fires when chart series are clicked.
@@ -263,12 +270,14 @@ Fires when chart series are clicked.
         <kendo:chart-seriesClick>
             <script>
                 function(e) {
-                    // Code to handle the SeriesClick event.
+                    // Code to handle the seriesClick event.
                 }
             </script>
         </kendo:chart-seriesClick>
     </kendo:chart>
+
  
+
 ### <kendo:chart-seriesHover>
 
 Fires when chart series are hovered.
@@ -278,11 +287,12 @@ Fires when chart series are hovered.
         <kendo:chart-seriesHover>
             <script>
                 function(e) {
-                    // Code to handle the SeriesHover event.
+                    // Code to handle the seriesHover event.
                 }
             </script>
         </kendo:chart-seriesHover>
     </kendo:chart>
+
  
 
 ## Child JSP Tags

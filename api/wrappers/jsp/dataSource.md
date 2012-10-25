@@ -315,6 +315,7 @@ Fires when a data request is received. Raised after a Create, Read, Update or De
 
 ## Event Tags
       
+
 ### <kendo:dataSource-change>
 
 Fires when data is changed or read from the transport.
@@ -324,12 +325,14 @@ Fires when data is changed or read from the transport.
         <kendo:dataSource-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:dataSource-change>
     </kendo:dataSource>
+
  
+
 ### <kendo:dataSource-error>
 
 Fires when an error occurs during data read or sync. The event arguments are the same as the ones of the error event of $.ajax().
@@ -339,12 +342,14 @@ Fires when an error occurs during data read or sync. The event arguments are the
         <kendo:dataSource-error>
             <script>
                 function(e) {
-                    // Code to handle the Error event.
+                    // Code to handle the error event.
                 }
             </script>
         </kendo:dataSource-error>
     </kendo:dataSource>
+
  
+
 ### <kendo:dataSource-sync>
 
 Fires after changes are synced.
@@ -354,12 +359,14 @@ Fires after changes are synced.
         <kendo:dataSource-sync>
             <script>
                 function(e) {
-                    // Code to handle the Sync event.
+                    // Code to handle the sync event.
                 }
             </script>
         </kendo:dataSource-sync>
     </kendo:dataSource>
+
  
+
 ### <kendo:dataSource-requestStart>
 
 Fires when data request is to be made.
@@ -369,12 +376,14 @@ Fires when data request is to be made.
         <kendo:dataSource-requestStart>
             <script>
                 function(e) {
-                    // Code to handle the RequestStart event.
+                    // Code to handle the requestStart event.
                 }
             </script>
         </kendo:dataSource-requestStart>
     </kendo:dataSource>
+
  
+
 ### <kendo:dataSource-requestEnd>
 
 Fires when a data request is received. Raised after a Create, Read, Update or Destroy request is performed.
@@ -384,11 +393,12 @@ Fires when a data request is received. Raised after a Create, Read, Update or De
         <kendo:dataSource-requestEnd>
             <script>
                 function(e) {
-                    // Code to handle the RequestEnd event.
+                    // Code to handle the requestEnd event.
                 }
             </script>
         </kendo:dataSource-requestEnd>
     </kendo:dataSource>
+
  
 
 ## Child JSP Tags

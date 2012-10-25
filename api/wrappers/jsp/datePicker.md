@@ -197,6 +197,7 @@ Fires when the calendar is opened
 
 ## Event Tags
   
+
 ### <kendo:datePicker-change>
 
 Fires when the selected date is changed
@@ -206,12 +207,14 @@ Fires when the selected date is changed
         <kendo:datePicker-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:datePicker-change>
     </kendo:datePicker>
+
  
+
 ### <kendo:datePicker-close>
 
 Fires when the calendar is closed
@@ -221,12 +224,14 @@ Fires when the calendar is closed
         <kendo:datePicker-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:datePicker-close>
     </kendo:datePicker>
+
  
+
 ### <kendo:datePicker-open>
 
 Fires when the calendar is opened
@@ -236,11 +241,12 @@ Fires when the calendar is opened
         <kendo:datePicker-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:datePicker-open>
     </kendo:datePicker>
+
  
 
 ## Child JSP Tags

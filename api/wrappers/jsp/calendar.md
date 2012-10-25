@@ -165,6 +165,7 @@ Fires when navigate
 
 ## Event Tags
  
+
 ### <kendo:calendar-change>
 
 Fires when the selected date is changed
@@ -174,12 +175,14 @@ Fires when the selected date is changed
         <kendo:calendar-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:calendar-change>
     </kendo:calendar>
+
  
+
 ### <kendo:calendar-navigate>
 
 Fires when navigate
@@ -189,11 +192,12 @@ Fires when navigate
         <kendo:calendar-navigate>
             <script>
                 function(e) {
-                    // Code to handle the Navigate event.
+                    // Code to handle the navigate event.
                 }
             </script>
         </kendo:calendar-navigate>
     </kendo:calendar>
+
  
 
 ## Child JSP Tags

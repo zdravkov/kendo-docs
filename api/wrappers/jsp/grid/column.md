@@ -21,6 +21,21 @@ Definition of command column. The supported built-in commands are: "create", "ca
 
 
 
+### editor `String`
+
+Provides a way to specify custom editor for this column.
+
+#### Example
+    <kendo:grid editor="handle_editor">
+    </kendo:grid>
+    <script>
+        function handle_editor(e) {
+            // Code to handle the editor event.
+        }
+    </script>
+
+
+
 ### encoded `boolean`
 
 Specified whether the column content is escaped. Disable encoding if the data contains HTML markup.
@@ -151,40 +166,11 @@ The width of the column.
 
 
 
-### editor `String`
-
-Provides a way to specify custom editor for this column.
-
-#### Example
-    <kendo:grid editor="handle_editor">
-    </kendo:grid>
-    <script>
-        function handle_editor(e) {
-            // Code to handle the editor event.
-        }
-    </script>
-
-
-
 ### Event Attributes
-
-
-### editor `String`
-
-Provides a way to specify custom editor for this column.
-
-#### Example
-    <kendo:grid editor="handle_editor">
-    </kendo:grid>
-    <script>
-        function handle_editor(e) {
-            // Code to handle the editor event.
-        }
-    </script>
-
 
 ## Event Tags
  
+
 ### <kendo:grid-column-editor>
 
 Provides a way to specify custom editor for this column.
@@ -194,11 +180,12 @@ Provides a way to specify custom editor for this column.
         <kendo:grid-column-editor>
             <script>
                 function(e) {
-                    // Code to handle the Editor event.
+                    // Code to handle the editor event.
                 }
             </script>
         </kendo:grid-column-editor>
     </kendo:grid-column>
+
  
 
 ## Child JSP Tags

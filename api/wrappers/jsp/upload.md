@@ -291,6 +291,7 @@ Cancelling the event will prevent the upload.
 
 ## Event Tags
   
+
 ### <kendo:upload-cancel>
 
 Fires when the upload has been cancelled while in progress.
@@ -300,12 +301,14 @@ Fires when the upload has been cancelled while in progress.
         <kendo:upload-cancel>
             <script>
                 function(e) {
-                    // Code to handle the Cancel event.
+                    // Code to handle the cancel event.
                 }
             </script>
         </kendo:upload-cancel>
     </kendo:upload>
+
  
+
 ### <kendo:upload-complete>
 
 Fires when all active uploads have completed either successfully or with errors.
@@ -315,12 +318,14 @@ Fires when all active uploads have completed either successfully or with errors.
         <kendo:upload-complete>
             <script>
                 function(e) {
-                    // Code to handle the Complete event.
+                    // Code to handle the complete event.
                 }
             </script>
         </kendo:upload-complete>
     </kendo:upload>
+
  
+
 ### <kendo:upload-error>
 
 Fires when an upload / remove operation has failed.
@@ -330,12 +335,14 @@ Fires when an upload / remove operation has failed.
         <kendo:upload-error>
             <script>
                 function(e) {
-                    // Code to handle the Error event.
+                    // Code to handle the error event.
                 }
             </script>
         </kendo:upload-error>
     </kendo:upload>
+
  
+
 ### <kendo:upload-progress>
 
 Fires when upload progress data is available.
@@ -345,12 +352,14 @@ Fires when upload progress data is available.
         <kendo:upload-progress>
             <script>
                 function(e) {
-                    // Code to handle the Progress event.
+                    // Code to handle the progress event.
                 }
             </script>
         </kendo:upload-progress>
     </kendo:upload>
+
  
+
 ### <kendo:upload-remove>
 
 Fires when an uploaded file is about to be removed.
@@ -361,12 +370,14 @@ Cancelling the event will prevent the remove.
         <kendo:upload-remove>
             <script>
                 function(e) {
-                    // Code to handle the Remove event.
+                    // Code to handle the remove event.
                 }
             </script>
         </kendo:upload-remove>
     </kendo:upload>
+
  
+
 ### <kendo:upload-select>
 
 Triggered when a file(s) is selected. Note: Cancelling this event will prevent the selection from
@@ -377,12 +388,14 @@ occurring.
         <kendo:upload-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:upload-select>
     </kendo:upload>
+
  
+
 ### <kendo:upload-success>
 
 Fires when an upload / remove operation has been completed successfully.
@@ -392,12 +405,14 @@ Fires when an upload / remove operation has been completed successfully.
         <kendo:upload-success>
             <script>
                 function(e) {
-                    // Code to handle the Success event.
+                    // Code to handle the success event.
                 }
             </script>
         </kendo:upload-success>
     </kendo:upload>
+
  
+
 ### <kendo:upload-upload>
 
 Fires when one or more files are about to be uploaded.
@@ -408,11 +423,12 @@ Cancelling the event will prevent the upload.
         <kendo:upload-upload>
             <script>
                 function(e) {
-                    // Code to handle the Upload event.
+                    // Code to handle the upload event.
                 }
             </script>
         </kendo:upload-upload>
     </kendo:upload>
+
  
 
 ## Child JSP Tags

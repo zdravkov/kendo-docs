@@ -65,6 +65,21 @@ Describes the
 
 
 
+### parse `String`
+
+Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
+
+#### Example
+    <kendo:dataSource parse="handle_parse">
+    </kendo:dataSource>
+    <script>
+        function handle_parse(e) {
+            // Code to handle the parse event.
+        }
+    </script>
+
+
+
 ### total `String`
 
 Specifies the field from the response which contains the total number of data items. If set to a function - the function will be called to
@@ -86,39 +101,10 @@ Specify the type of the response - XML or JSON. The only supported values are
 
 
 
-### parse `String`
-
-Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
-
-#### Example
-    <kendo:dataSource parse="handle_parse">
-    </kendo:dataSource>
-    <script>
-        function handle_parse(e) {
-            // Code to handle the parse event.
-        }
-    </script>
-
-
-
 ### Event Attributes
 
-
-### parse `String`
-
-Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
-
-#### Example
-    <kendo:dataSource parse="handle_parse">
-    </kendo:dataSource>
-    <script>
-        function handle_parse(e) {
-            // Code to handle the parse event.
-        }
-    </script>
-
-
 ## Event Tags
+
 
 ### <kendo:dataSource-schema-parse>
 
@@ -129,11 +115,12 @@ Executed before the server response is used. Appropriate for preprocessing or pa
         <kendo:dataSource-schema-parse>
             <script>
                 function(e) {
-                    // Code to handle the Parse event.
+                    // Code to handle the parse event.
                 }
             </script>
         </kendo:dataSource-schema-parse>
     </kendo:dataSource-schema>
+
  
 
 ## Child JSP Tags

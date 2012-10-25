@@ -286,6 +286,7 @@ Triggered when a Li element is selected.
 
 ## Event Tags
  
+
 ### <kendo:autoComplete-change>
 
 Fires when the value has been changed.
@@ -295,12 +296,14 @@ Fires when the value has been changed.
         <kendo:autoComplete-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:autoComplete-change>
     </kendo:autoComplete>
+
  
+
 ### <kendo:autoComplete-close>
 
 Fires when the drop-down list is closed
@@ -310,12 +313,14 @@ Fires when the drop-down list is closed
         <kendo:autoComplete-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:autoComplete-close>
     </kendo:autoComplete>
+
  
+
 ### <kendo:autoComplete-dataBound>
 
 Fires when the AutoComplete has received data from the data source.
@@ -325,12 +330,14 @@ Fires when the AutoComplete has received data from the data source.
         <kendo:autoComplete-dataBound>
             <script>
                 function(e) {
-                    // Code to handle the DataBound event.
+                    // Code to handle the dataBound event.
                 }
             </script>
         </kendo:autoComplete-dataBound>
     </kendo:autoComplete>
+
  
+
 ### <kendo:autoComplete-open>
 
 Fires when the drop-down list is opened
@@ -340,12 +347,14 @@ Fires when the drop-down list is opened
         <kendo:autoComplete-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:autoComplete-open>
     </kendo:autoComplete>
+
  
+
 ### <kendo:autoComplete-select>
 
 Triggered when a Li element is selected.
@@ -355,11 +364,12 @@ Triggered when a Li element is selected.
         <kendo:autoComplete-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:autoComplete-select>
     </kendo:autoComplete>
+
  
 
 ## Child JSP Tags

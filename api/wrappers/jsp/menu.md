@@ -167,6 +167,7 @@ Fires when a menu item gets selected.
 
 ## Event Tags
   
+
 ### <kendo:menu-close>
 
 Fires after a sub menu gets closed.
@@ -176,12 +177,14 @@ Fires after a sub menu gets closed.
         <kendo:menu-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:menu-close>
     </kendo:menu>
+
  
+
 ### <kendo:menu-open>
 
 Fires before a sub menu gets opened.
@@ -191,12 +194,14 @@ Fires before a sub menu gets opened.
         <kendo:menu-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:menu-open>
     </kendo:menu>
+
  
+
 ### <kendo:menu-select>
 
 Fires when a menu item gets selected.
@@ -206,11 +211,12 @@ Fires when a menu item gets selected.
         <kendo:menu-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:menu-select>
     </kendo:menu>
+
  
 
 ## Child JSP Tags

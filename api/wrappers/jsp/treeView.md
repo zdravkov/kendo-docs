@@ -342,6 +342,7 @@ Triggered when a node gets selected.
 
 ## Event Tags
    
+
 ### <kendo:treeView-collapse>
 
 Triggered before a subgroup gets collapsed.
@@ -351,12 +352,14 @@ Triggered before a subgroup gets collapsed.
         <kendo:treeView-collapse>
             <script>
                 function(e) {
-                    // Code to handle the Collapse event.
+                    // Code to handle the collapse event.
                 }
             </script>
         </kendo:treeView-collapse>
     </kendo:treeView>
+
  
+
 ### <kendo:treeView-dataBound>
 
 Triggered after the dataSource change event has been processed (adding/removing items);
@@ -366,12 +369,14 @@ Triggered after the dataSource change event has been processed (adding/removing 
         <kendo:treeView-dataBound>
             <script>
                 function(e) {
-                    // Code to handle the DataBound event.
+                    // Code to handle the dataBound event.
                 }
             </script>
         </kendo:treeView-dataBound>
     </kendo:treeView>
+
  
+
 ### <kendo:treeView-drag>
 
 Triggered while a node is being dragged.
@@ -381,12 +386,14 @@ Triggered while a node is being dragged.
         <kendo:treeView-drag>
             <script>
                 function(e) {
-                    // Code to handle the Drag event.
+                    // Code to handle the drag event.
                 }
             </script>
         </kendo:treeView-drag>
     </kendo:treeView>
+
  
+
 ### <kendo:treeView-dragend>
 
 Triggered after a node has been dropped.
@@ -396,12 +403,14 @@ Triggered after a node has been dropped.
         <kendo:treeView-dragend>
             <script>
                 function(e) {
-                    // Code to handle the Dragend event.
+                    // Code to handle the dragend event.
                 }
             </script>
         </kendo:treeView-dragend>
     </kendo:treeView>
+
  
+
 ### <kendo:treeView-dragstart>
 
 Triggered before the dragging of a node starts.
@@ -411,12 +420,14 @@ Triggered before the dragging of a node starts.
         <kendo:treeView-dragstart>
             <script>
                 function(e) {
-                    // Code to handle the Dragstart event.
+                    // Code to handle the dragstart event.
                 }
             </script>
         </kendo:treeView-dragstart>
     </kendo:treeView>
+
  
+
 ### <kendo:treeView-drop>
 
 Triggered when a node is being dropped.
@@ -426,12 +437,14 @@ Triggered when a node is being dropped.
         <kendo:treeView-drop>
             <script>
                 function(e) {
-                    // Code to handle the Drop event.
+                    // Code to handle the drop event.
                 }
             </script>
         </kendo:treeView-drop>
     </kendo:treeView>
+
  
+
 ### <kendo:treeView-expand>
 
 Triggered before a subgroup gets expanded.
@@ -441,12 +454,14 @@ Triggered before a subgroup gets expanded.
         <kendo:treeView-expand>
             <script>
                 function(e) {
-                    // Code to handle the Expand event.
+                    // Code to handle the expand event.
                 }
             </script>
         </kendo:treeView-expand>
     </kendo:treeView>
+
  
+
 ### <kendo:treeView-select>
 
 Triggered when a node gets selected.
@@ -456,11 +471,12 @@ Triggered when a node gets selected.
         <kendo:treeView-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:treeView-select>
     </kendo:treeView>
+
  
 
 ## Child JSP Tags

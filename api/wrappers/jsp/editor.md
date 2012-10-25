@@ -236,6 +236,7 @@ Fires when the Editor selection has changed.
 
 ## Event Tags
 
+
 ### <kendo:editor-change>
 
 Fires when Editor is blurred and its content has changed.
@@ -245,12 +246,14 @@ Fires when Editor is blurred and its content has changed.
         <kendo:editor-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:editor-change>
     </kendo:editor>
+
  
+
 ### <kendo:editor-execute>
 
 Fires when an Editor command is executed.
@@ -260,12 +263,14 @@ Fires when an Editor command is executed.
         <kendo:editor-execute>
             <script>
                 function(e) {
-                    // Code to handle the Execute event.
+                    // Code to handle the execute event.
                 }
             </script>
         </kendo:editor-execute>
     </kendo:editor>
+
  
+
 ### <kendo:editor-keydown>
 
 Fires when the user depresses a keyboard key. Triggered multiple times if the user holds the key down.
@@ -275,12 +280,14 @@ Fires when the user depresses a keyboard key. Triggered multiple times if the us
         <kendo:editor-keydown>
             <script>
                 function(e) {
-                    // Code to handle the Keydown event.
+                    // Code to handle the keydown event.
                 }
             </script>
         </kendo:editor-keydown>
     </kendo:editor>
+
  
+
 ### <kendo:editor-keyup>
 
 Fires when the user releases a keyboard key.
@@ -290,12 +297,14 @@ Fires when the user releases a keyboard key.
         <kendo:editor-keyup>
             <script>
                 function(e) {
-                    // Code to handle the Keyup event.
+                    // Code to handle the keyup event.
                 }
             </script>
         </kendo:editor-keyup>
     </kendo:editor>
+
  
+
 ### <kendo:editor-paste>
 
 Fires before when content is pasted in the Editor.
@@ -305,12 +314,14 @@ Fires before when content is pasted in the Editor.
         <kendo:editor-paste>
             <script>
                 function(e) {
-                    // Code to handle the Paste event.
+                    // Code to handle the paste event.
                 }
             </script>
         </kendo:editor-paste>
     </kendo:editor>
+
  
+
 ### <kendo:editor-select>
 
 Fires when the Editor selection has changed.
@@ -320,11 +331,12 @@ Fires when the Editor selection has changed.
         <kendo:editor-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:editor-select>
     </kendo:editor>
+
  
 
 ## Child JSP Tags

@@ -210,6 +210,7 @@ Triggered before a tab is selected.
 
 ## Event Tags
   
+
 ### <kendo:tabStrip-activate>
 
 Triggered just after a tab is being made visible, but before the end of the animation
@@ -219,12 +220,14 @@ Triggered just after a tab is being made visible, but before the end of the anim
         <kendo:tabStrip-activate>
             <script>
                 function(e) {
-                    // Code to handle the Activate event.
+                    // Code to handle the activate event.
                 }
             </script>
         </kendo:tabStrip-activate>
     </kendo:tabStrip>
+
  
+
 ### <kendo:tabStrip-contentLoad>
 
 Triggered when content is fetched from an AJAX request.
@@ -234,12 +237,14 @@ Triggered when content is fetched from an AJAX request.
         <kendo:tabStrip-contentLoad>
             <script>
                 function(e) {
-                    // Code to handle the ContentLoad event.
+                    // Code to handle the contentLoad event.
                 }
             </script>
         </kendo:tabStrip-contentLoad>
     </kendo:tabStrip>
+
  
+
 ### <kendo:tabStrip-error>
 
 Triggered when an AJAX request results in an error.
@@ -249,12 +254,14 @@ Triggered when an AJAX request results in an error.
         <kendo:tabStrip-error>
             <script>
                 function(e) {
-                    // Code to handle the Error event.
+                    // Code to handle the error event.
                 }
             </script>
         </kendo:tabStrip-error>
     </kendo:tabStrip>
+
  
+
 ### <kendo:tabStrip-select>
 
 Triggered before a tab is selected.
@@ -264,11 +271,12 @@ Triggered before a tab is selected.
         <kendo:tabStrip-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:tabStrip-select>
     </kendo:tabStrip>
+
  
 
 ## Child JSP Tags

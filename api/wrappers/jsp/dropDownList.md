@@ -295,6 +295,7 @@ Triggered when a Li element is selected.
 
 ## Event Tags
  
+
 ### <kendo:dropDownList-change>
 
 Fires when the value has been changed.
@@ -304,12 +305,14 @@ Fires when the value has been changed.
         <kendo:dropDownList-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:dropDownList-change>
     </kendo:dropDownList>
+
  
+
 ### <kendo:dropDownList-close>
 
 Fires when the drop-down list is closed
@@ -319,12 +322,14 @@ Fires when the drop-down list is closed
         <kendo:dropDownList-close>
             <script>
                 function(e) {
-                    // Code to handle the Close event.
+                    // Code to handle the close event.
                 }
             </script>
         </kendo:dropDownList-close>
     </kendo:dropDownList>
+
  
+
 ### <kendo:dropDownList-dataBound>
 
 Fires when the drop-down list has received data from the data source.
@@ -334,12 +339,14 @@ Fires when the drop-down list has received data from the data source.
         <kendo:dropDownList-dataBound>
             <script>
                 function(e) {
-                    // Code to handle the DataBound event.
+                    // Code to handle the dataBound event.
                 }
             </script>
         </kendo:dropDownList-dataBound>
     </kendo:dropDownList>
+
  
+
 ### <kendo:dropDownList-open>
 
 Fires when the drop-down list is opened
@@ -349,12 +356,14 @@ Fires when the drop-down list is opened
         <kendo:dropDownList-open>
             <script>
                 function(e) {
-                    // Code to handle the Open event.
+                    // Code to handle the open event.
                 }
             </script>
         </kendo:dropDownList-open>
     </kendo:dropDownList>
+
  
+
 ### <kendo:dropDownList-select>
 
 Triggered when a Li element is selected.
@@ -364,11 +373,12 @@ Triggered when a Li element is selected.
         <kendo:dropDownList-select>
             <script>
                 function(e) {
-                    // Code to handle the Select event.
+                    // Code to handle the select event.
                 }
             </script>
         </kendo:dropDownList-select>
     </kendo:dropDownList>
+
  
 
 ## Child JSP Tags

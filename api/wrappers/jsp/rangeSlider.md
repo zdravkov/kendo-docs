@@ -157,6 +157,7 @@ Fires when the user drags the drag handle to a new position.
 
 ## Event Tags
  
+
 ### <kendo:rangeSlider-change>
 
 Fires when the rangeSlider value changes as a result of selecting a new value with one of the drag handles or the keyboard.
@@ -166,12 +167,14 @@ Fires when the rangeSlider value changes as a result of selecting a new value wi
         <kendo:rangeSlider-change>
             <script>
                 function(e) {
-                    // Code to handle the Change event.
+                    // Code to handle the change event.
                 }
             </script>
         </kendo:rangeSlider-change>
     </kendo:rangeSlider>
+
  
+
 ### <kendo:rangeSlider-slide>
 
 Fires when the user drags the drag handle to a new position.
@@ -181,11 +184,12 @@ Fires when the user drags the drag handle to a new position.
         <kendo:rangeSlider-slide>
             <script>
                 function(e) {
-                    // Code to handle the Slide event.
+                    // Code to handle the slide event.
                 }
             </script>
         </kendo:rangeSlider-slide>
     </kendo:rangeSlider>
+
  
 
 ## Child JSP Tags

@@ -58,22 +58,8 @@ The JavaScript function executed when the user clicks the command button.
 
 ### Event Attributes
 
-
-### click `String`
-
-The JavaScript function executed when the user clicks the command button.
-
-#### Example
-    <kendo:grid click="handle_click">
-    </kendo:grid>
-    <script>
-        function handle_click(e) {
-            // Code to handle the click event.
-        }
-    </script>
-
-
 ## Event Tags
+
 
 ### <kendo:grid-column-commandItem-click>
 
@@ -84,11 +70,12 @@ The JavaScript function executed when the user clicks the command button.
         <kendo:grid-column-commandItem-click>
             <script>
                 function(e) {
-                    // Code to handle the Click event.
+                    // Code to handle the click event.
                 }
             </script>
         </kendo:grid-column-commandItem-click>
     </kendo:grid-column-commandItem>
+
  
 
 ## Child JSP Tags
