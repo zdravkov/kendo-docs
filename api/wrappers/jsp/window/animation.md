@@ -13,7 +13,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-The animation that will be used when a Window closes.
+The animation that will be used when a Window closes. Related tag: [<kendo:window-close>](#kendo-window-close). 
 
 #### Example
     <kendo:window close="close">
@@ -23,7 +23,7 @@ The animation that will be used when a Window closes.
 
 ### open `Object`
 
-The animation that will be used when a Window opens.
+The animation that will be used when a Window opens. Related tag: [<kendo:window-open>](#kendo-window-open). 
 
 #### Example
     <kendo:window open="open">

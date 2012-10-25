@@ -187,7 +187,7 @@ The data field containing the bubble size value.
 
 ### xAxis `String`
 
-The name of the X axis to use.
+The name of the X axis to use. Related tag: [<kendo:chart-xAxis>](#kendo-chart-xAxis). 
 
 #### Example
     <kendo:chart xAxis="xAxis">

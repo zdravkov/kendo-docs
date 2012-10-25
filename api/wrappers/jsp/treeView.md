@@ -13,7 +13,7 @@ A JSP tag representing Kendo TreeView.
 
 ### checkboxes `boolean`
 
-If
+If Related tag: [<kendo:treeView-checkboxes>](#kendo-treeView-checkboxes). 
 
 #### Example
     <kendo:treeView checkboxes="checkboxes">

@@ -54,7 +54,7 @@ See the
 
 ### editable `boolean`
 
-Indicates whether editing is enabled/disabled.
+Indicates whether editing is enabled/disabled. Related tag: [<kendo:grid-editable>](#kendo-grid-editable). 
 
 #### Example
     <kendo:grid editable="editable">
@@ -74,7 +74,7 @@ Indicates whether filtering is enabled/disabled.
 
 ### groupable `boolean`
 
-Indicates whether grouping is enabled/disabled.
+Indicates whether grouping is enabled/disabled. Related tag: [<kendo:grid-groupable>](#kendo-grid-groupable). 
 
 #### Example
     <kendo:grid groupable="groupable">
@@ -94,7 +94,7 @@ Indicates whether keyboard navigation is enabled/disabled.
 
 ### pageable `boolean`
 
-Indicates whether paging is enabled/disabled.
+Indicates whether paging is enabled/disabled. Related tag: [<kendo:grid-pageable>](#kendo-grid-pageable). 
 
 #### Example
     <kendo:grid pageable="pageable">
@@ -139,7 +139,7 @@ Indicates whether selection is enabled/disabled. Possible values:
 
 ### sortable `boolean`
 
-Defines whether grid columns are sortable.
+Defines whether grid columns are sortable. Related tag: [<kendo:grid-sortable>](#kendo-grid-sortable). 
 
 #### Example
     <kendo:grid sortable="sortable">

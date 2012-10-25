@@ -13,7 +13,7 @@ A JSP tag representing Kendo Localization.
 
 ### cancel `String`
 
-Sets the text of the cancel button text.
+Sets the text of the cancel button text. Related tag: [<kendo:upload-cancel>](#kendo-upload-cancel). 
 
 #### Example
     <kendo:upload cancel="cancel">
@@ -33,7 +33,7 @@ Sets the drop zone hint.
 
 ### remove `String`
 
-Sets the text of the remove button text.
+Sets the text of the remove button text. Related tag: [<kendo:upload-remove>](#kendo-upload-remove). 
 
 #### Example
     <kendo:upload remove="remove">
@@ -53,7 +53,7 @@ Sets the text of the retry button text.
 
 ### select `String`
 
-Sets the "Select..." button text.
+Sets the "Select..." button text. Related tag: [<kendo:upload-select>](#kendo-upload-select). 
 
 #### Example
     <kendo:upload select="select">

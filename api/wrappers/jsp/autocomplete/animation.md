@@ -13,7 +13,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-Animation to be used for closing of the popup.
+Animation to be used for closing of the popup. Related tag: [<kendo:autoComplete-close>](#kendo-autoComplete-close). 
 
 #### Example
     <kendo:autoComplete close="close">
@@ -23,7 +23,7 @@ Animation to be used for closing of the popup.
 
 ### open `Object`
 
-Animation to be used for opening of the popup.
+Animation to be used for opening of the popup. Related tag: [<kendo:autoComplete-open>](#kendo-autoComplete-open). 
 
 #### Example
     <kendo:autoComplete open="open">
