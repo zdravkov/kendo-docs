@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem-labels>
 A JSP tag representing Kendo Labels.
 
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-labels></kendo:chart-seriesItem-labels>
+    </kendo:chart-seriesItem>
+
+
 ## Configuration Attributes
 
 
@@ -121,11 +127,6 @@ The padding of the labels.
     </kendo:chart-seriesItem-labels>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

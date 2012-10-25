@@ -8,6 +8,7 @@ publish: true
 # <kendo:panelBar>
 A JSP tag representing Kendo PanelBar.
 
+
 ## Configuration Attributes
 
 

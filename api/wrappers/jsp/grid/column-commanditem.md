@@ -8,6 +8,12 @@ publish: true
 # <kendo:grid-column-commandItem>
 A JSP tag representing Kendo CommandItem.
 
+#### Example
+    <kendo:grid-column-command>
+        <kendo:grid-column-commandItem></kendo:grid-column-commandItem>
+    </kendo:grid-column-command>
+
+
 ## Configuration Attributes
 
 
@@ -55,28 +61,6 @@ The JavaScript function executed when the user clicks the command button.
     </script>
 
 
-
-### Event Attributes
-
-## Event Tags
-
-
-### <kendo:grid-column-commandItem-click>
-
-The JavaScript function executed when the user clicks the command button.
-
-#### Example
-    <kendo:grid-column-commandItem>
-        <kendo:grid-column-commandItem-click>
-            <script>
-                function(e) {
-                    // Code to handle the click event.
-                }
-            </script>
-        </kendo:grid-column-commandItem-click>
-    </kendo:grid-column-commandItem>
-
- 
 
 ## Child JSP Tags
  

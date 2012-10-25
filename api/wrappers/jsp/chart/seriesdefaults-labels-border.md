@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesDefaults-labels-border>
 A JSP tag representing Kendo Border.
 
+#### Example
+    <kendo:chart-seriesDefaults-labels>
+        <kendo:chart-seriesDefaults-labels-border></kendo:chart-seriesDefaults-labels-border>
+    </kendo:chart-seriesDefaults-labels>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ The width of the border.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

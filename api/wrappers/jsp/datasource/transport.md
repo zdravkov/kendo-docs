@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-transport>
 A JSP tag representing Kendo Transport.
 
+#### Example
+    <kendo:dataSource>
+        <kendo:dataSource-transport></kendo:dataSource-transport>
+    </kendo:dataSource>
+
+
 ## Configuration Attributes
 
 
@@ -65,28 +71,6 @@ Options for remote update data operation, or the URL of the remote service.
     </kendo:dataSource>
 
 
-
-### Event Attributes
-
-## Event Tags
-    
-
-### <kendo:dataSource-transport-parameterMap>
-
-Convert the request parameters from dataSource format to remote service specific format.
-
-#### Example
-    <kendo:dataSource-transport>
-        <kendo:dataSource-transport-parameterMap>
-            <script>
-                function(e) {
-                    // Code to handle the parameterMap event.
-                }
-            </script>
-        </kendo:dataSource-transport-parameterMap>
-    </kendo:dataSource-transport>
-
- 
 
 ## Child JSP Tags
 

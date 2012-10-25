@@ -8,13 +8,11 @@ publish: true
 # <kendo:tabStrip-items>
 A JSP tag representing Kendo Items.
 
-## Configuration Attributes
+#### Example
+    <kendo:tabStrip>
+        <kendo:tabStrip-items></kendo:tabStrip-items>
+    </kendo:tabStrip>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

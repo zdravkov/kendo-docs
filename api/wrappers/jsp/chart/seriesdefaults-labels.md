@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesDefaults-labels>
 A JSP tag representing Kendo Labels.
 
+#### Example
+    <kendo:chart-seriesDefaults>
+        <kendo:chart-seriesDefaults-labels></kendo:chart-seriesDefaults-labels>
+    </kendo:chart-seriesDefaults>
+
+
 ## Configuration Attributes
 
 
@@ -94,11 +100,6 @@ The visibility of the labels.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

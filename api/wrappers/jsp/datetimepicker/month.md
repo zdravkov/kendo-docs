@@ -8,6 +8,12 @@ publish: true
 # <kendo:dateTimePicker-month>
 A JSP tag representing Kendo Month.
 
+#### Example
+    <kendo:dateTimePicker>
+        <kendo:dateTimePicker-month></kendo:dateTimePicker-month>
+    </kendo:dateTimePicker>
+
+
 ## Configuration Attributes
 
 
@@ -30,12 +36,4 @@ the minimum and maximum values.
     <kendo:dateTimePicker empty="empty">
     </kendo:dateTimePicker>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

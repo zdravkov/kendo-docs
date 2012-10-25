@@ -8,13 +8,11 @@ publish: true
 # <kendo:grid-column-command>
 A JSP tag representing Kendo Command.
 
-## Configuration Attributes
+#### Example
+    <kendo:grid-column>
+        <kendo:grid-column-command></kendo:grid-column-command>
+    </kendo:grid-column>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

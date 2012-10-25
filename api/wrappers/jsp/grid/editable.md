@@ -8,6 +8,12 @@ publish: true
 # <kendo:grid-editable>
 A JSP tag representing Kendo Editable.
 
+#### Example
+    <kendo:grid>
+        <kendo:grid-editable></kendo:grid-editable>
+    </kendo:grid>
+
+
 ## Configuration Attributes
 
 
@@ -59,12 +65,4 @@ Indicates whether item should be switched to edit mode on click.
     <kendo:grid update="update">
     </kendo:grid>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

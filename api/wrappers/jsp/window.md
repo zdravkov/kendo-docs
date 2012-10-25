@@ -8,6 +8,7 @@ publish: true
 # <kendo:window>
 A JSP tag representing Kendo Window.
 
+
 ## Configuration Attributes
 
 

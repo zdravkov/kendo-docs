@@ -8,13 +8,11 @@ publish: true
 # <kendo:grid-toolbar>
 A JSP tag representing Kendo Toolbar.
 
-## Configuration Attributes
+#### Example
+    <kendo:grid>
+        <kendo:grid-toolbar></kendo:grid-toolbar>
+    </kendo:grid>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

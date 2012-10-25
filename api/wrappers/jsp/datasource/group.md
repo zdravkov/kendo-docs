@@ -8,13 +8,11 @@ publish: true
 # <kendo:dataSource-group>
 A JSP tag representing Kendo Group.
 
-## Configuration Attributes
+#### Example
+    <kendo:dataSource>
+        <kendo:dataSource-group></kendo:dataSource-group>
+    </kendo:dataSource>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

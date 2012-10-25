@@ -8,13 +8,11 @@ publish: true
 # <kendo:menu-items>
 A JSP tag representing Kendo Items.
 
-## Configuration Attributes
+#### Example
+    <kendo:menu>
+        <kendo:menu-items></kendo:menu-items>
+    </kendo:menu>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

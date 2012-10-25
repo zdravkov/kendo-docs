@@ -8,6 +8,12 @@ publish: true
 # <kendo:panelBar-animation-close>
 A JSP tag representing Kendo Close.
 
+#### Example
+    <kendo:panelBar-animation>
+        <kendo:panelBar-animation-close></kendo:panelBar-animation-close>
+    </kendo:panelBar-animation>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ A whitespace-delimited string of animation effects that are utilized when a
     <kendo:panelBar effects="effects">
     </kendo:panelBar>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

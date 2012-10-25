@@ -8,6 +8,12 @@ publish: true
 # <kendo:grid-pageable>
 A JSP tag representing Kendo Pageable.
 
+#### Example
+    <kendo:grid>
+        <kendo:grid-pageable></kendo:grid-pageable>
+    </kendo:grid>
+
+
 ## Configuration Attributes
 
 
@@ -90,11 +96,6 @@ Defines if a label showing current paging information will be displayed.
     </kendo:grid>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

@@ -8,13 +8,11 @@ publish: true
 # <kendo:grid-groupable>
 A JSP tag representing Kendo Groupable.
 
-## Configuration Attributes
+#### Example
+    <kendo:grid>
+        <kendo:grid-groupable></kendo:grid-groupable>
+    </kendo:grid>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:pager-messages>
 A JSP tag representing Kendo Messages.
 
+#### Example
+    <kendo:pager>
+        <kendo:pager-messages></kendo:pager-messages>
+    </kendo:pager>
+
+
 ## Configuration Attributes
 
 
@@ -109,12 +115,4 @@ Defines the text of the refresh button tooltip.
     <kendo:pager refresh="refresh">
     </kendo:pager>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

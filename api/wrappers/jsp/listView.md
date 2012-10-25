@@ -8,6 +8,7 @@ publish: true
 # <kendo:listView>
 A JSP tag representing Kendo ListView.
 
+
 ## Configuration Attributes
 
 

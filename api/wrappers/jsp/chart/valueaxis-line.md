@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-valueAxis-line>
 A JSP tag representing Kendo Line.
 
+#### Example
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-line></kendo:chart-valueAxis-line>
+    </kendo:chart-valueAxis>
+
+
 ## Configuration Attributes
 
 
@@ -51,12 +57,4 @@ not the grid lines.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-groupItem-aggregate>
 A JSP tag representing Kendo Aggregate.
 
+#### Example
+    <kendo:dataSource-groupItem-aggregates>
+        <kendo:dataSource-groupItem-aggregate></kendo:dataSource-groupItem-aggregate>
+    </kendo:dataSource-groupItem-aggregates>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Specifies the aggregate function. Possible values are: "min", "max", "count", "s
     <kendo:dataSource aggregate="aggregate">
     </kendo:dataSource>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

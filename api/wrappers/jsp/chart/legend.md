@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-legend>
 A JSP tag representing Kendo Legend.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-legend></kendo:chart-legend>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -84,11 +90,6 @@ The visibility of the legend.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
-  
 
 ## Child JSP Tags
 

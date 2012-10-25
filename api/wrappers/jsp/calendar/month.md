@@ -8,6 +8,12 @@ publish: true
 # <kendo:calendar-month>
 A JSP tag representing Kendo Month.
 
+#### Example
+    <kendo:calendar>
+        <kendo:calendar-month></kendo:calendar-month>
+    </kendo:calendar>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Template to be used for rendering the cells in the "month" view, which are not i
     <kendo:calendar empty="empty">
     </kendo:calendar>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

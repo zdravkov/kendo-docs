@@ -8,6 +8,7 @@ publish: true
 # <kendo:slider>
 A JSP tag representing Kendo Slider.
 
+
 ## Configuration Attributes
 
 

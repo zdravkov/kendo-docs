@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-sortItem>
 A JSP tag representing Kendo SortItem.
 
+#### Example
+    <kendo:dataSource-sort>
+        <kendo:dataSource-sortItem></kendo:dataSource-sortItem>
+    </kendo:dataSource-sort>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Sets the sort direction. Possible values are: "asc", "desc", null. If null is se
     <kendo:dataSource dir="dir">
     </kendo:dataSource>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

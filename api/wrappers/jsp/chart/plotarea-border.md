@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-plotArea-border>
 A JSP tag representing Kendo Border.
 
+#### Example
+    <kendo:chart-plotArea>
+        <kendo:chart-plotArea-border></kendo:chart-plotArea-border>
+    </kendo:chart-plotArea>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ The width of the border.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem>
 A JSP tag representing Kendo SeriesItem.
 
+#### Example
+    <kendo:chart-series>
+        <kendo:chart-seriesItem></kendo:chart-seriesItem>
+    </kendo:chart-series>
+
+
 ## Configuration Attributes
 
 
@@ -398,11 +404,6 @@ A boolean value indicating whether to show the sector in the legend.
     </kendo:chart-seriesItem>
 
 
-
-### Event Attributes
-
-## Event Tags
-        
 
 ## Child JSP Tags
 

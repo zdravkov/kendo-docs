@@ -8,6 +8,12 @@ publish: true
 # <kendo:treeView-item>
 A JSP tag representing Kendo Item.
 
+#### Example
+    <kendo:treeView-items>
+        <kendo:treeView-item></kendo:treeView-item>
+    </kendo:treeView-items>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Specifies the class name for the sprite image displayed by the item
     <kendo:treeView spriteCssClass="spriteCssClass">
     </kendo:treeView>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

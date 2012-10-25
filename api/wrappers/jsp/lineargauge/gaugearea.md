@@ -8,6 +8,12 @@ publish: true
 # <kendo:linearGauge-gaugeArea>
 A JSP tag representing Kendo GaugeArea.
 
+#### Example
+    <kendo:linearGauge>
+        <kendo:linearGauge-gaugeArea></kendo:linearGauge-gaugeArea>
+    </kendo:linearGauge>
+
+
 ## Configuration Attributes
 
 
@@ -51,11 +57,6 @@ The width of the gauge area.
     </kendo:linearGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

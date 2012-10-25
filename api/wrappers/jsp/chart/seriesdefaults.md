@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesDefaults>
 A JSP tag representing Kendo SeriesDefaults.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-seriesDefaults></kendo:chart-seriesDefaults>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -192,11 +198,6 @@ The default options for all vertical line series. For more details see the serie
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
-   
 
 ## Child JSP Tags
 

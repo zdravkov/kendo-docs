@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-legend-labels>
 A JSP tag representing Kendo Labels.
 
+#### Example
+    <kendo:chart-legend>
+        <kendo:chart-legend-labels></kendo:chart-legend-labels>
+    </kendo:chart-legend>
+
+
 ## Configuration Attributes
 
 
@@ -42,12 +48,4 @@ Template variables:
     <kendo:chart template="template">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

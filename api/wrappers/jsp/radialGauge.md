@@ -8,6 +8,7 @@ publish: true
 # <kendo:radialGauge>
 A JSP tag representing Kendo RadialGauge.
 
+
 ## Configuration Attributes
 
 
@@ -40,11 +41,6 @@ A value indicating if transition animations should be played.
     </kendo:radialGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
-   
 
 ## Child JSP Tags
 

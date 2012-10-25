@@ -8,6 +8,12 @@ publish: true
 # <kendo:grid-sortable>
 A JSP tag representing Kendo Sortable.
 
+#### Example
+    <kendo:grid>
+        <kendo:grid-sortable></kendo:grid-sortable>
+    </kendo:grid>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Defines sorting mode. Possible values:
     <kendo:grid mode="mode">
     </kendo:grid>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

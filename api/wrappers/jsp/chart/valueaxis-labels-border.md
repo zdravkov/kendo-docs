@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-valueAxis-labels-border>
 A JSP tag representing Kendo Border.
 
+#### Example
+    <kendo:chart-valueAxis-labels>
+        <kendo:chart-valueAxis-labels-border></kendo:chart-valueAxis-labels-border>
+    </kendo:chart-valueAxis-labels>
+
+
 ## Configuration Attributes
 
 
@@ -40,12 +46,4 @@ The width of the border.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

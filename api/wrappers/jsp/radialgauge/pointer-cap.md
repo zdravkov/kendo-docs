@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-pointer-cap>
 A JSP tag representing Kendo Cap.
 
+#### Example
+    <kendo:radialGauge-pointer>
+        <kendo:radialGauge-pointer-cap></kendo:radialGauge-pointer-cap>
+    </kendo:radialGauge-pointer>
+
+
 ## Configuration Attributes
 
 
@@ -30,12 +36,4 @@ The size of the cap in percents. (from 0 to 1)
     <kendo:radialGauge size="size">
     </kendo:radialGauge>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

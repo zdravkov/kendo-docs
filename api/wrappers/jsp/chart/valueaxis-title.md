@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-valueAxis-title>
 A JSP tag representing Kendo Title.
 
+#### Example
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-title></kendo:chart-valueAxis-title>
+    </kendo:chart-valueAxis>
+
+
 ## Configuration Attributes
 
 
@@ -101,11 +107,6 @@ The visibility of the title.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

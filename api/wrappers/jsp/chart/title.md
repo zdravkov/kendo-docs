@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-title>
 A JSP tag representing Kendo Title.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-title></kendo:chart-title>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -90,11 +96,6 @@ The visibility of the title.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:stockChart-navigator>
 A JSP tag representing Kendo Navigator.
 
+#### Example
+    <kendo:stockChart>
+        <kendo:stockChart-navigator></kendo:stockChart-navigator>
+    </kendo:stockChart>
+
+
 ## Configuration Attributes
 
 
@@ -20,11 +26,6 @@ Array of series definitions.
     </kendo:stockChart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

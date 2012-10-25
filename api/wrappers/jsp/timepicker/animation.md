@@ -8,6 +8,12 @@ publish: true
 # <kendo:timePicker-animation>
 A JSP tag representing Kendo Animation.
 
+#### Example
+    <kendo:timePicker>
+        <kendo:timePicker-animation></kendo:timePicker-animation>
+    </kendo:timePicker>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Animation to be used for opening of the popup. Related tag: [<kendo:timePicker-o
     <kendo:timePicker open="open">
     </kendo:timePicker>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

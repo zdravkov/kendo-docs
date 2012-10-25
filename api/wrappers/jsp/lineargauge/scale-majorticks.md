@@ -8,6 +8,12 @@ publish: true
 # <kendo:linearGauge-scale-majorTicks>
 A JSP tag representing Kendo MajorTicks.
 
+#### Example
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-majorTicks></kendo:linearGauge-scale-majorTicks>
+    </kendo:linearGauge-scale>
+
+
 ## Configuration Attributes
 
 
@@ -51,12 +57,4 @@ The width of the major ticks.
     <kendo:linearGauge width="width">
     </kendo:linearGauge>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

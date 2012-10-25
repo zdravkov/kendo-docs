@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-categoryAxis>
 A JSP tag representing Kendo CategoryAxis.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-categoryAxis></kendo:chart-categoryAxis>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -212,11 +218,6 @@ The visibility of the axis.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
-       
 
 ## Child JSP Tags
 

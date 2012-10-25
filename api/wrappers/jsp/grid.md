@@ -8,6 +8,7 @@ publish: true
 # <kendo:grid>
 A JSP tag representing Kendo Grid.
 
+
 ## Configuration Attributes
 
 

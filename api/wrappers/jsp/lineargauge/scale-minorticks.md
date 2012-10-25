@@ -8,6 +8,12 @@ publish: true
 # <kendo:linearGauge-scale-minorTicks>
 A JSP tag representing Kendo MinorTicks.
 
+#### Example
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-minorTicks></kendo:linearGauge-scale-minorTicks>
+    </kendo:linearGauge-scale>
+
+
 ## Configuration Attributes
 
 
@@ -51,12 +57,4 @@ The width of the minor ticks.
     <kendo:linearGauge width="width">
     </kendo:linearGauge>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

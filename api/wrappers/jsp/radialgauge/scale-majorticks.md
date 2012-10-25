@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-scale-majorTicks>
 A JSP tag representing Kendo MajorTicks.
 
+#### Example
+    <kendo:radialGauge-scale>
+        <kendo:radialGauge-scale-majorTicks></kendo:radialGauge-scale-majorTicks>
+    </kendo:radialGauge-scale>
+
+
 ## Configuration Attributes
 
 
@@ -51,12 +57,4 @@ The width of the major ticks.
     <kendo:radialGauge width="width">
     </kendo:radialGauge>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

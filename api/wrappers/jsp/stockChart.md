@@ -8,6 +8,7 @@ publish: true
 # <kendo:stockChart>
 A JSP tag representing Kendo StockChart.
 
+
 ## Configuration Attributes
 
 
@@ -21,11 +22,6 @@ It is used as a default
     </kendo:stockChart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

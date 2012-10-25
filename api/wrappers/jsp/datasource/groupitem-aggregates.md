@@ -8,13 +8,11 @@ publish: true
 # <kendo:dataSource-groupItem-aggregates>
 A JSP tag representing Kendo Aggregates.
 
-## Configuration Attributes
+#### Example
+    <kendo:dataSource-groupItem>
+        <kendo:dataSource-groupItem-aggregates></kendo:dataSource-groupItem-aggregates>
+    </kendo:dataSource-groupItem>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

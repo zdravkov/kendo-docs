@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem-connectors>
 A JSP tag representing Kendo Connectors.
 
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-connectors></kendo:chart-seriesItem-connectors>
+    </kendo:chart-seriesItem>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ The width of the connector line.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

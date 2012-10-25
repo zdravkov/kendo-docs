@@ -8,13 +8,11 @@ publish: true
 # <kendo:splitter-panes>
 A JSP tag representing Kendo Panes.
 
-## Configuration Attributes
+#### Example
+    <kendo:splitter>
+        <kendo:splitter-panes></kendo:splitter-panes>
+    </kendo:splitter>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

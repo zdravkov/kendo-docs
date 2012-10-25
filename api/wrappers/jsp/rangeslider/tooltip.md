@@ -8,6 +8,12 @@ publish: true
 # <kendo:rangeSlider-tooltip>
 A JSP tag representing Kendo Tooltip.
 
+#### Example
+    <kendo:rangeSlider>
+        <kendo:rangeSlider-tooltip></kendo:rangeSlider-tooltip>
+    </kendo:rangeSlider>
+
+
 ## Configuration Attributes
 
 
@@ -40,12 +46,4 @@ Template of the tooltip.
     <kendo:rangeSlider template="template">
     </kendo:rangeSlider>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

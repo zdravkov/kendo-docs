@@ -8,6 +8,12 @@ publish: true
 # <kendo:datePicker-animation>
 A JSP tag representing Kendo Animation.
 
+#### Example
+    <kendo:datePicker>
+        <kendo:datePicker-animation></kendo:datePicker-animation>
+    </kendo:datePicker>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ The animation(s) used for displaying of the pop-up. Related tag: [<kendo:datePic
     <kendo:datePicker open="open">
     </kendo:datePicker>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

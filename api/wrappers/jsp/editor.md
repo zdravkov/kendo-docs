@@ -8,6 +8,7 @@ publish: true
 # <kendo:editor>
 A JSP tag representing Kendo Editor.
 
+
 ## Configuration Attributes
 
 

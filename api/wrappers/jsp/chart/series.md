@@ -8,13 +8,11 @@ publish: true
 # <kendo:chart-series>
 A JSP tag representing Kendo Series.
 
-## Configuration Attributes
+#### Example
+    <kendo:chart>
+        <kendo:chart-series></kendo:chart-series>
+    </kendo:chart>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

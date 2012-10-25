@@ -8,6 +8,12 @@ publish: true
 # <kendo:tabStrip-item>
 A JSP tag representing Kendo Item.
 
+#### Example
+    <kendo:tabStrip-items>
+        <kendo:tabStrip-item></kendo:tabStrip-item>
+    </kendo:tabStrip-items>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Specifies the class name for the sprite image displayed by the item
     <kendo:tabStrip spriteCssClass="spriteCssClass">
     </kendo:tabStrip>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-categoryAxis-majorGridLines>
 A JSP tag representing Kendo MajorGridLines.
 
+#### Example
+    <kendo:chart-categoryAxis>
+        <kendo:chart-categoryAxis-majorGridLines></kendo:chart-categoryAxis-majorGridLines>
+    </kendo:chart-categoryAxis>
+
+
 ## Configuration Attributes
 
 
@@ -49,12 +55,4 @@ The width of the lines.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

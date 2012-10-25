@@ -8,6 +8,7 @@ publish: true
 # <kendo:splitter>
 A JSP tag representing Kendo Splitter.
 
+
 ## Configuration Attributes
 
 

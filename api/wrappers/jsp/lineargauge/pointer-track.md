@@ -8,6 +8,12 @@ publish: true
 # <kendo:linearGauge-pointer-track>
 A JSP tag representing Kendo Track.
 
+#### Example
+    <kendo:linearGauge-pointer>
+        <kendo:linearGauge-pointer-track></kendo:linearGauge-pointer-track>
+    </kendo:linearGauge-pointer>
+
+
 ## Configuration Attributes
 
 
@@ -50,11 +56,6 @@ The visibility of the track.
     </kendo:linearGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

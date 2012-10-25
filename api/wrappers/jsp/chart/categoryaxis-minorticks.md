@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-categoryAxis-minorTicks>
 A JSP tag representing Kendo MinorTicks.
 
+#### Example
+    <kendo:chart-categoryAxis>
+        <kendo:chart-categoryAxis-minorTicks></kendo:chart-categoryAxis-minorTicks>
+    </kendo:chart-categoryAxis>
+
+
 ## Configuration Attributes
 
 
@@ -30,12 +36,4 @@ The visibility of the minor ticks.
     <kendo:chart visible="visible">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

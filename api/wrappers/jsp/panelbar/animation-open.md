@@ -8,6 +8,12 @@ publish: true
 # <kendo:panelBar-animation-open>
 A JSP tag representing Kendo Open.
 
+#### Example
+    <kendo:panelBar-animation>
+        <kendo:panelBar-animation-open></kendo:panelBar-animation-open>
+    </kendo:panelBar-animation>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ Specifies how the
     <kendo:panelBar show="show">
     </kendo:panelBar>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

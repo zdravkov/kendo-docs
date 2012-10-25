@@ -8,6 +8,7 @@ publish: true
 # <kendo:pager>
 A JSP tag representing Kendo Pager.
 
+
 ## Configuration Attributes
 
 

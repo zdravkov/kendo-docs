@@ -8,6 +8,12 @@ publish: true
 # <kendo:splitter-pane>
 A JSP tag representing Kendo Pane.
 
+#### Example
+    <kendo:splitter-panes>
+        <kendo:splitter-pane></kendo:splitter-pane>
+    </kendo:splitter-panes>
+
+
 ## Configuration Attributes
 
 
@@ -92,12 +98,4 @@ value must not exceed
     <kendo:splitter size="size">
     </kendo:splitter>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

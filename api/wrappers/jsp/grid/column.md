@@ -8,6 +8,12 @@ publish: true
 # <kendo:grid-column>
 A JSP tag representing Kendo Column.
 
+#### Example
+    <kendo:grid-columns>
+        <kendo:grid-column></kendo:grid-column>
+    </kendo:grid-columns>
+
+
 ## Configuration Attributes
 
 
@@ -165,28 +171,6 @@ The width of the column.
     </kendo:grid>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
-
-### <kendo:grid-column-editor>
-
-Provides a way to specify custom editor for this column.
-
-#### Example
-    <kendo:grid-column>
-        <kendo:grid-column-editor>
-            <script>
-                function(e) {
-                    // Code to handle the editor event.
-                }
-            </script>
-        </kendo:grid-column-editor>
-    </kendo:grid-column>
-
- 
 
 ## Child JSP Tags
 

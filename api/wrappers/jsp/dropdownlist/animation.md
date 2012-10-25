@@ -8,6 +8,12 @@ publish: true
 # <kendo:dropDownList-animation>
 A JSP tag representing Kendo Animation.
 
+#### Example
+    <kendo:dropDownList>
+        <kendo:dropDownList-animation></kendo:dropDownList-animation>
+    </kendo:dropDownList>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Animation to be used for opening of the popup. Related tag: [<kendo:dropDownList
     <kendo:dropDownList open="open">
     </kendo:dropDownList>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:treeView-checkboxes>
 A JSP tag representing Kendo Checkboxes.
 
+#### Example
+    <kendo:treeView>
+        <kendo:treeView-checkboxes></kendo:treeView-checkboxes>
+    </kendo:treeView>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Template for the checkbox rendering. Used to set the  checkbox name attribute, o
     <kendo:treeView template="template">
     </kendo:treeView>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

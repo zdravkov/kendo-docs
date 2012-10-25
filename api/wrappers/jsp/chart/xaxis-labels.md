@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-xAxis-labels>
 A JSP tag representing Kendo Labels.
 
+#### Example
+    <kendo:chart-xAxis>
+        <kendo:chart-xAxis-labels></kendo:chart-xAxis-labels>
+    </kendo:chart-xAxis>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Date format strings
     <kendo:chart dateFormats="dateFormats">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:linearGauge-scale-labels>
 A JSP tag representing Kendo Labels.
 
+#### Example
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-labels></kendo:linearGauge-scale-labels>
+    </kendo:linearGauge-scale>
+
+
 ## Configuration Attributes
 
 
@@ -93,11 +99,6 @@ The visibility of the labels.
     </kendo:linearGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

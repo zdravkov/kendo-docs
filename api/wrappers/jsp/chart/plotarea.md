@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-plotArea>
 A JSP tag representing Kendo PlotArea.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-plotArea></kendo:chart-plotArea>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -40,11 +46,6 @@ The margin of the plot area.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

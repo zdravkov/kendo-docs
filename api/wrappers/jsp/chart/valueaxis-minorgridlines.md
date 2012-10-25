@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-valueAxis-minorGridLines>
 A JSP tag representing Kendo MinorGridLines.
 
+#### Example
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-minorGridLines></kendo:chart-valueAxis-minorGridLines>
+    </kendo:chart-valueAxis>
+
+
 ## Configuration Attributes
 
 
@@ -49,12 +55,4 @@ The width of the lines.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

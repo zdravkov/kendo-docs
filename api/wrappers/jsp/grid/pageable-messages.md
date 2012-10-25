@@ -8,6 +8,12 @@ publish: true
 # <kendo:grid-pageable-messages>
 A JSP tag representing Kendo Messages.
 
+#### Example
+    <kendo:grid-pageable>
+        <kendo:grid-pageable-messages></kendo:grid-pageable-messages>
+    </kendo:grid-pageable>
+
+
 ## Configuration Attributes
 
 
@@ -109,12 +115,4 @@ Defines the text of the refresh button tooltip.
     <kendo:grid refresh="refresh">
     </kendo:grid>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

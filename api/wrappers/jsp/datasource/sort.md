@@ -8,13 +8,11 @@ publish: true
 # <kendo:dataSource-sort>
 A JSP tag representing Kendo Sort.
 
-## Configuration Attributes
+#### Example
+    <kendo:dataSource>
+        <kendo:dataSource-sort></kendo:dataSource-sort>
+    </kendo:dataSource>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

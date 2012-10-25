@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem-tooltip-border>
 A JSP tag representing Kendo Border.
 
+#### Example
+    <kendo:chart-seriesItem-tooltip>
+        <kendo:chart-seriesItem-tooltip-border></kendo:chart-seriesItem-tooltip-border>
+    </kendo:chart-seriesItem-tooltip>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ The width of the border.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-transport-create>
 A JSP tag representing Kendo Create.
 
+#### Example
+    <kendo:dataSource-transport>
+        <kendo:dataSource-transport-create></kendo:dataSource-transport-create>
+    </kendo:dataSource-transport>
+
+
 ## Configuration Attributes
 
 
@@ -70,12 +76,4 @@ Refer to the
     <kendo:dataSource-transport-create data="data">
     </kendo:dataSource-transport-create>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

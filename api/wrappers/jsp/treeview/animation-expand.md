@@ -8,6 +8,12 @@ publish: true
 # <kendo:treeView-animation-expand>
 A JSP tag representing Kendo Expand.
 
+#### Example
+    <kendo:treeView-animation>
+        <kendo:treeView-animation-expand></kendo:treeView-animation-expand>
+    </kendo:treeView-animation>
+
+
 ## Configuration Attributes
 
 
@@ -40,12 +46,4 @@ If
     <kendo:treeView show="show">
     </kendo:treeView>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem-tooltip>
 A JSP tag representing Kendo Tooltip.
 
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-tooltip></kendo:chart-seriesItem-tooltip>
+    </kendo:chart-seriesItem>
+
+
 ## Configuration Attributes
 
 
@@ -81,11 +87,6 @@ The padding of the tooltip.
     </kendo:chart-seriesItem-tooltip>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

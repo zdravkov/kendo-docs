@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-transport-update>
 A JSP tag representing Kendo Update.
 
+#### Example
+    <kendo:dataSource-transport>
+        <kendo:dataSource-transport-update></kendo:dataSource-transport-update>
+    </kendo:dataSource-transport>
+
+
 ## Configuration Attributes
 
 
@@ -70,12 +76,4 @@ Refer to the
     <kendo:dataSource-transport-update data="data">
     </kendo:dataSource-transport-update>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

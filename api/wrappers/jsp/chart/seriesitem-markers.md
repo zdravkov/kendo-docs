@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem-markers>
 A JSP tag representing Kendo Markers.
 
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-markers></kendo:chart-seriesItem-markers>
+    </kendo:chart-seriesItem>
+
+
 ## Configuration Attributes
 
 
@@ -50,11 +56,6 @@ The markers visibility.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

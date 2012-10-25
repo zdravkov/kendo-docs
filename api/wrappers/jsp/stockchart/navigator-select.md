@@ -8,6 +8,12 @@ publish: true
 # <kendo:stockChart-navigator-select>
 A JSP tag representing Kendo Select.
 
+#### Example
+    <kendo:stockChart-navigator>
+        <kendo:stockChart-navigator-select></kendo:stockChart-navigator-select>
+    </kendo:stockChart-navigator>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ The upper boundary of the selected range.
     <kendo:stockChart to="to">
     </kendo:stockChart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

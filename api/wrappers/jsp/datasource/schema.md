@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-schema>
 A JSP tag representing Kendo Schema.
 
+#### Example
+    <kendo:dataSource>
+        <kendo:dataSource-schema></kendo:dataSource-schema>
+    </kendo:dataSource>
+
+
 ## Configuration Attributes
 
 
@@ -100,28 +106,6 @@ Specify the type of the response - XML or JSON. The only supported values are
     </kendo:dataSource>
 
 
-
-### Event Attributes
-
-## Event Tags
-
-
-### <kendo:dataSource-schema-parse>
-
-Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
-
-#### Example
-    <kendo:dataSource-schema>
-        <kendo:dataSource-schema-parse>
-            <script>
-                function(e) {
-                    // Code to handle the parse event.
-                }
-            </script>
-        </kendo:dataSource-schema-parse>
-    </kendo:dataSource-schema>
-
- 
 
 ## Child JSP Tags
  

@@ -8,6 +8,7 @@ publish: true
 # <kendo:chart>
 A JSP tag representing Kendo Chart.
 
+
 ## Configuration Attributes
 
 

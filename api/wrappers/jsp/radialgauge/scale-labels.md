@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-scale-labels>
 A JSP tag representing Kendo Labels.
 
+#### Example
+    <kendo:radialGauge-scale>
+        <kendo:radialGauge-scale-labels></kendo:radialGauge-scale-labels>
+    </kendo:radialGauge-scale>
+
+
 ## Configuration Attributes
 
 
@@ -103,11 +109,6 @@ The visibility of the labels.
     </kendo:radialGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

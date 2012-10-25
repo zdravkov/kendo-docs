@@ -8,6 +8,12 @@ publish: true
 # <kendo:tabStrip-animation-open>
 A JSP tag representing Kendo Open.
 
+#### Example
+    <kendo:tabStrip-animation>
+        <kendo:tabStrip-animation-open></kendo:tabStrip-animation-open>
+    </kendo:tabStrip-animation>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ Specifies whether the TabStrip should be able to collapse completely when clicki
     <kendo:tabStrip show="show">
     </kendo:tabStrip>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

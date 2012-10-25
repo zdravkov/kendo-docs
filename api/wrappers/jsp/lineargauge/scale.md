@@ -8,6 +8,12 @@ publish: true
 # <kendo:linearGauge-scale>
 A JSP tag representing Kendo Scale.
 
+#### Example
+    <kendo:linearGauge>
+        <kendo:linearGauge-scale></kendo:linearGauge-scale>
+    </kendo:linearGauge>
+
+
 ## Configuration Attributes
 
 
@@ -92,11 +98,6 @@ The position of the gauge.
     </kendo:linearGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
-   
 
 ## Child JSP Tags
 

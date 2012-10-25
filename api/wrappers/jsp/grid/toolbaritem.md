@@ -8,6 +8,12 @@ publish: true
 # <kendo:grid-toolbarItem>
 A JSP tag representing Kendo ToolbarItem.
 
+#### Example
+    <kendo:grid-toolbar>
+        <kendo:grid-toolbarItem></kendo:grid-toolbarItem>
+    </kendo:grid-toolbar>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ The text of the command that will be set on the button.
     <kendo:grid text="text">
     </kendo:grid>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

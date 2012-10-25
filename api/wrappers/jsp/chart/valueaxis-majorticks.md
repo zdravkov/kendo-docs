@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-valueAxis-majorTicks>
 A JSP tag representing Kendo MajorTicks.
 
+#### Example
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-majorTicks></kendo:chart-valueAxis-majorTicks>
+    </kendo:chart-valueAxis>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ The visibility of the major ticks.
     <kendo:chart visible="visible">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-transport-read>
 A JSP tag representing Kendo Read.
 
+#### Example
+    <kendo:dataSource-transport>
+        <kendo:dataSource-transport-read></kendo:dataSource-transport-read>
+    </kendo:dataSource-transport>
+
+
 ## Configuration Attributes
 
 
@@ -70,12 +76,4 @@ Refer to the
     <kendo:dataSource-transport-read data="data">
     </kendo:dataSource-transport-read>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

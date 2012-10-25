@@ -8,6 +8,12 @@ publish: true
 # <kendo:panelBar-item>
 A JSP tag representing Kendo Item.
 
+#### Example
+    <kendo:panelBar-items>
+        <kendo:panelBar-item></kendo:panelBar-item>
+    </kendo:panelBar-items>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Specifies the class name for the sprite image displayed by the item
     <kendo:panelBar spriteCssClass="spriteCssClass">
     </kendo:panelBar>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

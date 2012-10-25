@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-groupItem>
 A JSP tag representing Kendo GroupItem.
 
+#### Example
+    <kendo:dataSource-group>
+        <kendo:dataSource-groupItem></kendo:dataSource-groupItem>
+    </kendo:dataSource-group>
+
+
 ## Configuration Attributes
 
 
@@ -30,11 +36,6 @@ Specifies the order of the groupped items.
     </kendo:dataSource>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

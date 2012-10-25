@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-categoryAxis-minorGridLines>
 A JSP tag representing Kendo MinorGridLines.
 
+#### Example
+    <kendo:chart-categoryAxis>
+        <kendo:chart-categoryAxis-minorGridLines></kendo:chart-categoryAxis-minorGridLines>
+    </kendo:chart-categoryAxis>
+
+
 ## Configuration Attributes
 
 
@@ -50,12 +56,4 @@ The width of the lines.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-scale-labels-border>
 A JSP tag representing Kendo Border.
 
+#### Example
+    <kendo:radialGauge-scale-labels>
+        <kendo:radialGauge-scale-labels-border></kendo:radialGauge-scale-labels-border>
+    </kendo:radialGauge-scale-labels>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ The width of the border.
     <kendo:radialGauge width="width">
     </kendo:radialGauge>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

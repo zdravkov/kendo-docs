@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-scale-minorTicks>
 A JSP tag representing Kendo MinorTicks.
 
+#### Example
+    <kendo:radialGauge-scale>
+        <kendo:radialGauge-scale-minorTicks></kendo:radialGauge-scale-minorTicks>
+    </kendo:radialGauge-scale>
+
+
 ## Configuration Attributes
 
 
@@ -51,12 +57,4 @@ The width of the minor ticks.
     <kendo:radialGauge width="width">
     </kendo:radialGauge>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

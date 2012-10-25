@@ -8,6 +8,12 @@ publish: true
 # <kendo:autoComplete-animation>
 A JSP tag representing Kendo Animation.
 
+#### Example
+    <kendo:autoComplete>
+        <kendo:autoComplete-animation></kendo:autoComplete-animation>
+    </kendo:autoComplete>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Animation to be used for opening of the popup. Related tag: [<kendo:autoComplete
     <kendo:autoComplete open="open">
     </kendo:autoComplete>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

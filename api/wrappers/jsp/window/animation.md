@@ -8,6 +8,12 @@ publish: true
 # <kendo:window-animation>
 A JSP tag representing Kendo Animation.
 
+#### Example
+    <kendo:window>
+        <kendo:window-animation></kendo:window-animation>
+    </kendo:window>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ The animation that will be used when a Window opens. Related tag: [<kendo:window
     <kendo:window open="open">
     </kendo:window>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

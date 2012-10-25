@@ -8,6 +8,12 @@ publish: true
 # <kendo:tabStrip-animation-close>
 A JSP tag representing Kendo Close.
 
+#### Example
+    <kendo:tabStrip-animation>
+        <kendo:tabStrip-animation-close></kendo:tabStrip-animation-close>
+    </kendo:tabStrip-animation>
+
+
 ## Configuration Attributes
 
 
@@ -30,12 +36,4 @@ is closed. By default not specified - uses the opening animation with reverse.
     <kendo:tabStrip effects="effects">
     </kendo:tabStrip>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

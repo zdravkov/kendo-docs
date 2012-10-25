@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-scale>
 A JSP tag representing Kendo Scale.
 
+#### Example
+    <kendo:radialGauge>
+        <kendo:radialGauge-scale></kendo:radialGauge-scale>
+    </kendo:radialGauge>
+
+
 ## Configuration Attributes
 
 
@@ -93,11 +99,6 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
     </kendo:radialGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
-   
 
 ## Child JSP Tags
 

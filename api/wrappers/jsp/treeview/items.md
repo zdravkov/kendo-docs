@@ -8,13 +8,11 @@ publish: true
 # <kendo:treeView-items>
 A JSP tag representing Kendo Items.
 
-## Configuration Attributes
+#### Example
+    <kendo:treeView>
+        <kendo:treeView-items></kendo:treeView-items>
+    </kendo:treeView>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

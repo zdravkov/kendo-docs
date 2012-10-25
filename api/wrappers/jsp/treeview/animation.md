@@ -8,13 +8,11 @@ publish: true
 # <kendo:treeView-animation>
 A JSP tag representing Kendo Animation.
 
-## Configuration Attributes
+#### Example
+    <kendo:treeView>
+        <kendo:treeView-animation></kendo:treeView-animation>
+    </kendo:treeView>
 
-
-### Event Attributes
-
-## Event Tags
-  
 
 ## Child JSP Tags
 

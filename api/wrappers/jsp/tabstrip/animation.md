@@ -8,13 +8,11 @@ publish: true
 # <kendo:tabStrip-animation>
 A JSP tag representing Kendo Animation.
 
-## Configuration Attributes
+#### Example
+    <kendo:tabStrip>
+        <kendo:tabStrip-animation></kendo:tabStrip-animation>
+    </kendo:tabStrip>
 
-
-### Event Attributes
-
-## Event Tags
-  
 
 ## Child JSP Tags
 

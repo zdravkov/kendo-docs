@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-categoryAxis-title>
 A JSP tag representing Kendo Title.
 
+#### Example
+    <kendo:chart-categoryAxis>
+        <kendo:chart-categoryAxis-title></kendo:chart-categoryAxis-title>
+    </kendo:chart-categoryAxis>
+
+
 ## Configuration Attributes
 
 
@@ -91,11 +97,6 @@ The visibility of the title.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

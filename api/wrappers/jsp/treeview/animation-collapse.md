@@ -8,6 +8,12 @@ publish: true
 # <kendo:treeView-animation-collapse>
 A JSP tag representing Kendo Collapse.
 
+#### Example
+    <kendo:treeView-animation>
+        <kendo:treeView-animation-collapse></kendo:treeView-animation-collapse>
+    </kendo:treeView-animation>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ A whitespace-delimited string of animation effects that are utilized when a
     <kendo:treeView effects="effects">
     </kendo:treeView>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

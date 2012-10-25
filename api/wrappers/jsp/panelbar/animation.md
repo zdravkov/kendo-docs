@@ -8,13 +8,11 @@ publish: true
 # <kendo:panelBar-animation>
 A JSP tag representing Kendo Animation.
 
-## Configuration Attributes
+#### Example
+    <kendo:panelBar>
+        <kendo:panelBar-animation></kendo:panelBar-animation>
+    </kendo:panelBar>
 
-
-### Event Attributes
-
-## Event Tags
-  
 
 ## Child JSP Tags
 

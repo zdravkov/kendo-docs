@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-valueAxis-labels>
 A JSP tag representing Kendo Labels.
 
+#### Example
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-labels></kendo:chart-valueAxis-labels>
+    </kendo:chart-valueAxis>
+
+
 ## Configuration Attributes
 
 
@@ -136,11 +142,6 @@ The visibility of the labels.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

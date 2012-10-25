@@ -8,6 +8,12 @@ publish: true
 # <kendo:comboBox-animation>
 A JSP tag representing Kendo Animation.
 
+#### Example
+    <kendo:comboBox>
+        <kendo:comboBox-animation></kendo:comboBox-animation>
+    </kendo:comboBox>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Animation to be used for opening of the popup. Related tag: [<kendo:comboBox-ope
     <kendo:comboBox open="open">
     </kendo:comboBox>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-xAxis>
 A JSP tag representing Kendo XAxis.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-xAxis></kendo:chart-xAxis>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -94,11 +100,6 @@ Options specific to the numeric axis.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

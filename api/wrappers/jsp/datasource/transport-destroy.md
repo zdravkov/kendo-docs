@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-transport-destroy>
 A JSP tag representing Kendo Destroy.
 
+#### Example
+    <kendo:dataSource-transport>
+        <kendo:dataSource-transport-destroy></kendo:dataSource-transport-destroy>
+    </kendo:dataSource-transport>
+
+
 ## Configuration Attributes
 
 
@@ -70,12 +76,4 @@ Refer to the
     <kendo:dataSource-transport-destroy data="data">
     </kendo:dataSource-transport-destroy>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

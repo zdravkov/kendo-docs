@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-valueAxis>
 A JSP tag representing Kendo ValueAxis.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-valueAxis></kendo:chart-valueAxis>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -126,11 +132,6 @@ The visibility of the axis.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
-       
 
 ## Child JSP Tags
 

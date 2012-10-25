@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem-negativeValues>
 A JSP tag representing Kendo NegativeValues.
 
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-negativeValues></kendo:chart-seriesItem-negativeValues>
+    </kendo:chart-seriesItem>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ The visibility of the negative values.
     <kendo:chart visible="visible">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

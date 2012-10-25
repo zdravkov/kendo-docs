@@ -8,13 +8,11 @@ publish: true
 # <kendo:dataSource-filter>
 A JSP tag representing Kendo Filter.
 
-## Configuration Attributes
+#### Example
+    <kendo:dataSource>
+        <kendo:dataSource-filter></kendo:dataSource-filter>
+    </kendo:dataSource>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

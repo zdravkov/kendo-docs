@@ -8,6 +8,12 @@ publish: true
 # <kendo:slider-tooltip>
 A JSP tag representing Kendo Tooltip.
 
+#### Example
+    <kendo:slider>
+        <kendo:slider-tooltip></kendo:slider-tooltip>
+    </kendo:slider>
+
+
 ## Configuration Attributes
 
 
@@ -40,12 +46,4 @@ Template of the tooltip.
     <kendo:slider template="template">
     </kendo:slider>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

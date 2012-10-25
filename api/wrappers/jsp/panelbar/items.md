@@ -8,13 +8,11 @@ publish: true
 # <kendo:panelBar-items>
 A JSP tag representing Kendo Items.
 
-## Configuration Attributes
+#### Example
+    <kendo:panelBar>
+        <kendo:panelBar-items></kendo:panelBar-items>
+    </kendo:panelBar>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

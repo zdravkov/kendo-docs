@@ -8,6 +8,12 @@ publish: true
 # <kendo:menu-item>
 A JSP tag representing Kendo Item.
 
+#### Example
+    <kendo:menu-items>
+        <kendo:menu-item></kendo:menu-item>
+    </kendo:menu-items>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ Specifies the class name for the sprite image displayed by the item
     <kendo:menu spriteCssClass="spriteCssClass">
     </kendo:menu>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

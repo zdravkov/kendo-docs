@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-tooltip>
 A JSP tag representing Kendo Tooltip.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-tooltip></kendo:chart-tooltip>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -81,11 +87,6 @@ A value indicating if the tooltip should be displayed.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

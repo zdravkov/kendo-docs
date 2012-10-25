@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-seriesItem-line>
 A JSP tag representing Kendo Line.
 
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-line></kendo:chart-seriesItem-line>
+    </kendo:chart-seriesItem>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ The line width of the area chart.
     <kendo:chart width="width">
     </kendo:chart>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

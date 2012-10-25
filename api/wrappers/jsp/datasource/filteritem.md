@@ -8,6 +8,12 @@ publish: true
 # <kendo:dataSource-filterItem>
 A JSP tag representing Kendo FilterItem.
 
+#### Example
+    <kendo:dataSource-filter>
+        <kendo:dataSource-filterItem></kendo:dataSource-filterItem>
+    </kendo:dataSource-filter>
+
+
 ## Configuration Attributes
 
 
@@ -39,12 +45,4 @@ Specifies the value to filter for.
     <kendo:dataSource value="value">
     </kendo:dataSource>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

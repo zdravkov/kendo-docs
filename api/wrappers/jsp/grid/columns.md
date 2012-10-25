@@ -8,13 +8,11 @@ publish: true
 # <kendo:grid-columns>
 A JSP tag representing Kendo Columns.
 
-## Configuration Attributes
+#### Example
+    <kendo:grid>
+        <kendo:grid-columns></kendo:grid-columns>
+    </kendo:grid>
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

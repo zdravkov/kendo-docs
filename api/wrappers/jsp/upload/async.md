@@ -8,6 +8,12 @@ publish: true
 # <kendo:upload-async>
 A JSP tag representing Kendo Async.
 
+#### Example
+    <kendo:upload>
+        <kendo:upload-async></kendo:upload-async>
+    </kendo:upload>
+
+
 ## Configuration Attributes
 
 
@@ -83,12 +89,4 @@ containing one or more fields with the same name as the original input name.
     <kendo:upload saveUrl="saveUrl">
     </kendo:upload>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

@@ -8,6 +8,12 @@ publish: true
 # <kendo:upload-localization>
 A JSP tag representing Kendo Localization.
 
+#### Example
+    <kendo:upload>
+        <kendo:upload-localization></kendo:upload-localization>
+    </kendo:upload>
+
+
 ## Configuration Attributes
 
 
@@ -99,12 +105,4 @@ Sets the text of the "Upload files" button.
     <kendo:upload uploadSelectedFiles="uploadSelectedFiles">
     </kendo:upload>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

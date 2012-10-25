@@ -8,6 +8,7 @@ publish: true
 # <kendo:tabStrip>
 A JSP tag representing Kendo TabStrip.
 
+
 ## Configuration Attributes
 
 

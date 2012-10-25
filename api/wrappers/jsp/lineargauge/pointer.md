@@ -8,6 +8,12 @@ publish: true
 # <kendo:linearGauge-pointer>
 A JSP tag representing Kendo Pointer.
 
+#### Example
+    <kendo:linearGauge>
+        <kendo:linearGauge-pointer></kendo:linearGauge-pointer>
+    </kendo:linearGauge>
+
+
 ## Configuration Attributes
 
 
@@ -71,11 +77,6 @@ The value of the gauge.
     </kendo:linearGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
-  
 
 ## Child JSP Tags
 

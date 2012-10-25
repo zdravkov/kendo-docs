@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-pointer>
 A JSP tag representing Kendo Pointer.
 
+#### Example
+    <kendo:radialGauge>
+        <kendo:radialGauge-pointer></kendo:radialGauge-pointer>
+    </kendo:radialGauge>
+
+
 ## Configuration Attributes
 
 
@@ -31,11 +37,6 @@ The value of the gauge.
     </kendo:radialGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

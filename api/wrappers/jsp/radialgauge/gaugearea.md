@@ -8,6 +8,12 @@ publish: true
 # <kendo:radialGauge-gaugeArea>
 A JSP tag representing Kendo GaugeArea.
 
+#### Example
+    <kendo:radialGauge>
+        <kendo:radialGauge-gaugeArea></kendo:radialGauge-gaugeArea>
+    </kendo:radialGauge>
+
+
 ## Configuration Attributes
 
 
@@ -51,11 +57,6 @@ The width of the gauge area.
     </kendo:radialGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 

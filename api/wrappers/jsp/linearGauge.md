@@ -8,6 +8,7 @@ publish: true
 # <kendo:linearGauge>
 A JSP tag representing Kendo LinearGauge.
 
+
 ## Configuration Attributes
 
 
@@ -20,11 +21,6 @@ A value indicating if transition animations should be played.
     </kendo:linearGauge>
 
 
-
-### Event Attributes
-
-## Event Tags
-   
 
 ## Child JSP Tags
 

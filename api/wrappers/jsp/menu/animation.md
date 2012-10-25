@@ -8,6 +8,12 @@ publish: true
 # <kendo:menu-animation>
 A JSP tag representing Kendo Animation.
 
+#### Example
+    <kendo:menu>
+        <kendo:menu-animation></kendo:menu-animation>
+    </kendo:menu>
+
+
 ## Configuration Attributes
 
 
@@ -29,12 +35,4 @@ The animation that will be used when opening sub menus. Related tag: [<kendo:men
     <kendo:menu open="open">
     </kendo:menu>
 
-
-
-### Event Attributes
-
-## Event Tags
-
-
-## Child JSP Tags
 

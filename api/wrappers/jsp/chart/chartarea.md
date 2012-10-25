@@ -8,6 +8,12 @@ publish: true
 # <kendo:chart-chartArea>
 A JSP tag representing Kendo ChartArea.
 
+#### Example
+    <kendo:chart>
+        <kendo:chart-chartArea></kendo:chart-chartArea>
+    </kendo:chart>
+
+
 ## Configuration Attributes
 
 
@@ -60,11 +66,6 @@ The width of the chart area.
     </kendo:chart>
 
 
-
-### Event Attributes
-
-## Event Tags
- 
 
 ## Child JSP Tags
 
