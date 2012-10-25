@@ -67,4 +67,10 @@ The width of the chart area.
 ### [<kendo:chart-chartArea-border>](/api/wrappers/jsp/chart/chartarea-border)
 
 The border of the chart area.
+
+#### Example
+
+    <kendo:chart-chartArea>
+        <kendo:chart-chartArea-border></kendo:chart-chartArea-border>
+    </kendo:chart-chartArea>
  

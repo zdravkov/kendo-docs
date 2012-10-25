@@ -22,4 +22,10 @@ A JSP tag representing Kendo Items.
 ### [<kendo:tabStrip-item>](/api/wrappers/jsp/tabstrip/item)
 
 Contains items of TabStrip
+
+#### Example
+
+    <kendo:tabStrip-items>
+        <kendo:tabStrip-item></kendo:tabStrip-item>
+    </kendo:tabStrip-items>
  

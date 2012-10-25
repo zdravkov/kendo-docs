@@ -50,12 +50,30 @@ A value indicating if transition animations should be played.
 
 The gauge area configuration options.
 This is the entire visible area of the gauge.
+
+#### Example
+
+    <kendo:radialGauge>
+        <kendo:radialGauge-gaugeArea></kendo:radialGauge-gaugeArea>
+    </kendo:radialGauge>
  
 ### [<kendo:radialGauge-pointer>](/api/wrappers/jsp/radialgauge/pointer)
 
 The pointer configuration options.
+
+#### Example
+
+    <kendo:radialGauge>
+        <kendo:radialGauge-pointer></kendo:radialGauge-pointer>
+    </kendo:radialGauge>
  
 ### [<kendo:radialGauge-scale>](/api/wrappers/jsp/radialgauge/scale)
 
 Configures the scale.
+
+#### Example
+
+    <kendo:radialGauge>
+        <kendo:radialGauge-scale></kendo:radialGauge-scale>
+    </kendo:radialGauge>
  

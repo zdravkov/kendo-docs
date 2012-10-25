@@ -58,4 +58,10 @@ The markers visibility.
 ### [<kendo:chart-seriesItem-markers-border>](/api/wrappers/jsp/chart/seriesitem-markers-border)
 
 The border of the markers.
+
+#### Example
+
+    <kendo:chart-seriesItem-markers>
+        <kendo:chart-seriesItem-markers-border></kendo:chart-seriesItem-markers-border>
+    </kendo:chart-seriesItem-markers>
  

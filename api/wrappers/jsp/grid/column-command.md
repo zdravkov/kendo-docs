@@ -22,4 +22,10 @@ A JSP tag representing Kendo Command.
 ### [<kendo:grid-column-commandItem>](/api/wrappers/jsp/grid/column-commanditem)
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
+
+#### Example
+
+    <kendo:grid-column-command>
+        <kendo:grid-column-commandItem></kendo:grid-column-commandItem>
+    </kendo:grid-column-command>
  

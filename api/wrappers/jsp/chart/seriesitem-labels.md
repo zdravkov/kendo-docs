@@ -122,4 +122,10 @@ The padding of the labels.
 ### [<kendo:chart-seriesItem-labels-border>](/api/wrappers/jsp/chart/seriesitem-labels-border)
 
 The border of the labels.
+
+#### Example
+
+    <kendo:chart-seriesItem-labels>
+        <kendo:chart-seriesItem-labels-border></kendo:chart-seriesItem-labels-border>
+    </kendo:chart-seriesItem-labels>
  

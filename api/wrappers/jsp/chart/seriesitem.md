@@ -372,32 +372,80 @@ A boolean value indicating whether to show the sector in the legend.
 ### [<kendo:chart-seriesItem-labels>](/api/wrappers/jsp/chart/seriesitem-labels)
 
 Configures the series data labels.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-labels></kendo:chart-seriesItem-labels>
+    </kendo:chart-seriesItem>
  
 ### [<kendo:chart-seriesItem-border>](/api/wrappers/jsp/chart/seriesitem-border)
 
 The border of the labels.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-border></kendo:chart-seriesItem-border>
+    </kendo:chart-seriesItem>
  
 ### [<kendo:chart-seriesItem-line>](/api/wrappers/jsp/chart/seriesitem-line)
 
 The line of the area chart.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-line></kendo:chart-seriesItem-line>
+    </kendo:chart-seriesItem>
  
 ### [<kendo:chart-seriesItem-markers>](/api/wrappers/jsp/chart/seriesitem-markers)
 
 Configures the area markers.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-markers></kendo:chart-seriesItem-markers>
+    </kendo:chart-seriesItem>
  
 ### [<kendo:chart-seriesItem-tooltip>](/api/wrappers/jsp/chart/seriesitem-tooltip)
 
 The data point tooltip configuration options.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-tooltip></kendo:chart-seriesItem-tooltip>
+    </kendo:chart-seriesItem>
  
 ### [<kendo:chart-seriesItem-overlay>](/api/wrappers/jsp/chart/seriesitem-overlay)
 
 The effects overlay.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-overlay></kendo:chart-seriesItem-overlay>
+    </kendo:chart-seriesItem>
  
 ### [<kendo:chart-seriesItem-negativeValues>](/api/wrappers/jsp/chart/seriesitem-negativevalues)
 
 The settings for negative values.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-negativeValues></kendo:chart-seriesItem-negativeValues>
+    </kendo:chart-seriesItem>
  
 ### [<kendo:chart-seriesItem-connectors>](/api/wrappers/jsp/chart/seriesitem-connectors)
 
 The label connectors options.
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-connectors></kendo:chart-seriesItem-connectors>
+    </kendo:chart-seriesItem>
  

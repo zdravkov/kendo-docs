@@ -22,4 +22,10 @@ A JSP tag representing Kendo Sort.
 ### [<kendo:dataSource-sortItem>](/api/wrappers/jsp/datasource/sortitem)
 
 Sets initial sort order
+
+#### Example
+
+    <kendo:dataSource-sort>
+        <kendo:dataSource-sortItem></kendo:dataSource-sortItem>
+    </kendo:dataSource-sort>
  

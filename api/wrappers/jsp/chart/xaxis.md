@@ -98,4 +98,10 @@ Options specific to the numeric axis.
 ### [<kendo:chart-xAxis-labels>](/api/wrappers/jsp/chart/xaxis-labels)
 
 Label settings specific to the date axis.
+
+#### Example
+
+    <kendo:chart-xAxis>
+        <kendo:chart-xAxis-labels></kendo:chart-xAxis-labels>
+    </kendo:chart-xAxis>
  

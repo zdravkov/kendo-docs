@@ -176,4 +176,10 @@ Provides a way to specify custom editor for this column.
 ### [<kendo:grid-column-command>](/api/wrappers/jsp/grid/column-command)
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
+
+#### Example
+
+    <kendo:grid-column>
+        <kendo:grid-column-command></kendo:grid-column-command>
+    </kendo:grid-column>
   

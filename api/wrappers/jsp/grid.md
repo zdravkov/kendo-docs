@@ -469,25 +469,61 @@ Fires before the grid calls DataSource sync.
 ### [<kendo:grid-columns>](/api/wrappers/jsp/grid/columns)
 
 A collection of column objects or collection of strings that represents the name of the fields.
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-columns></kendo:grid-columns>
+    </kendo:grid>
  
 ### [<kendo:grid-editable>](/api/wrappers/jsp/grid/editable)
 
 Indicates whether editing is enabled/disabled.
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-editable></kendo:grid-editable>
+    </kendo:grid>
  
 ### [<kendo:grid-groupable>](/api/wrappers/jsp/grid/groupable)
 
 Indicates whether grouping is enabled/disabled.
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-groupable></kendo:grid-groupable>
+    </kendo:grid>
  
 ### [<kendo:grid-pageable>](/api/wrappers/jsp/grid/pageable)
 
 Indicates whether paging is enabled/disabled.
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-pageable></kendo:grid-pageable>
+    </kendo:grid>
  
 ### [<kendo:grid-sortable>](/api/wrappers/jsp/grid/sortable)
 
 Defines whether grid columns are sortable.
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-sortable></kendo:grid-sortable>
+    </kendo:grid>
  
 ### [<kendo:grid-toolbar>](/api/wrappers/jsp/grid/toolbar)
 
 This is a list of commands for which the corresponding buttons will be rendered.
 The supported built-in commands are: "create", "cancel", "save", "destroy".
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-toolbar></kendo:grid-toolbar>
+    </kendo:grid>
               

@@ -297,24 +297,60 @@ Fires when a data request is received. Raised after a Create, Read, Update or De
 ### [<kendo:dataSource-aggregate>](/api/wrappers/jsp/datasource/aggregate)
 
 Sets fields on which initial aggregates should be calculated
+
+#### Example
+
+    <kendo:dataSource>
+        <kendo:dataSource-aggregate></kendo:dataSource-aggregate>
+    </kendo:dataSource>
  
 ### [<kendo:dataSource-filter>](/api/wrappers/jsp/datasource/filter)
 
 Sets the initial filter.
+
+#### Example
+
+    <kendo:dataSource>
+        <kendo:dataSource-filter></kendo:dataSource-filter>
+    </kendo:dataSource>
  
 ### [<kendo:dataSource-group>](/api/wrappers/jsp/datasource/group)
 
 Sets initial grouping
+
+#### Example
+
+    <kendo:dataSource>
+        <kendo:dataSource-group></kendo:dataSource-group>
+    </kendo:dataSource>
  
 ### [<kendo:dataSource-schema>](/api/wrappers/jsp/datasource/schema)
 
 Set the object responsible for describing the raw data format.
+
+#### Example
+
+    <kendo:dataSource>
+        <kendo:dataSource-schema></kendo:dataSource-schema>
+    </kendo:dataSource>
  
 ### [<kendo:dataSource-sort>](/api/wrappers/jsp/datasource/sort)
 
 Sets initial sort order
+
+#### Example
+
+    <kendo:dataSource>
+        <kendo:dataSource-sort></kendo:dataSource-sort>
+    </kendo:dataSource>
  
 ### [<kendo:dataSource-transport>](/api/wrappers/jsp/datasource/transport)
 
 Specifies the settings for loading and saving data. This can be a remote or local/in-memory data.
+
+#### Example
+
+    <kendo:dataSource>
+        <kendo:dataSource-transport></kendo:dataSource-transport>
+    </kendo:dataSource>
       

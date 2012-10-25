@@ -59,4 +59,10 @@ The width of the gauge area.
 ### [<kendo:radialGauge-gaugeArea-border>](/api/wrappers/jsp/radialgauge/gaugearea-border)
 
 The border of the gauge area.
+
+#### Example
+
+    <kendo:radialGauge-gaugeArea>
+        <kendo:radialGauge-gaugeArea-border></kendo:radialGauge-gaugeArea-border>
+    </kendo:radialGauge-gaugeArea>
  

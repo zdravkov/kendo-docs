@@ -77,9 +77,21 @@ The value of the gauge.
 ### [<kendo:linearGauge-pointer-border>](/api/wrappers/jsp/lineargauge/pointer-border)
 
 The border of the pointer.
+
+#### Example
+
+    <kendo:linearGauge-pointer>
+        <kendo:linearGauge-pointer-border></kendo:linearGauge-pointer-border>
+    </kendo:linearGauge-pointer>
  
 ### [<kendo:linearGauge-pointer-track>](/api/wrappers/jsp/lineargauge/pointer-track)
 
 The element arround/under the pointer.
 (available only for 'barIndicator' shape)
+
+#### Example
+
+    <kendo:linearGauge-pointer>
+        <kendo:linearGauge-pointer-track></kendo:linearGauge-pointer-track>
+    </kendo:linearGauge-pointer>
  

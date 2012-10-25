@@ -127,29 +127,71 @@ The visibility of the axis.
 ### [<kendo:chart-valueAxis-labels>](/api/wrappers/jsp/chart/valueaxis-labels)
 
 Configures the axis labels.
+
+#### Example
+
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-labels></kendo:chart-valueAxis-labels>
+    </kendo:chart-valueAxis>
  
 ### [<kendo:chart-valueAxis-line>](/api/wrappers/jsp/chart/valueaxis-line)
 
 Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
+
+#### Example
+
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-line></kendo:chart-valueAxis-line>
+    </kendo:chart-valueAxis>
  
 ### [<kendo:chart-valueAxis-majorGridLines>](/api/wrappers/jsp/chart/valueaxis-majorgridlines)
 
 Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
+
+#### Example
+
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-majorGridLines></kendo:chart-valueAxis-majorGridLines>
+    </kendo:chart-valueAxis>
  
 ### [<kendo:chart-valueAxis-majorTicks>](/api/wrappers/jsp/chart/valueaxis-majorticks)
 
 The major ticks of the axis.
+
+#### Example
+
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-majorTicks></kendo:chart-valueAxis-majorTicks>
+    </kendo:chart-valueAxis>
  
 ### [<kendo:chart-valueAxis-minorGridLines>](/api/wrappers/jsp/chart/valueaxis-minorgridlines)
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through the
+
+#### Example
+
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-minorGridLines></kendo:chart-valueAxis-minorGridLines>
+    </kendo:chart-valueAxis>
  
 ### [<kendo:chart-valueAxis-minorTicks>](/api/wrappers/jsp/chart/valueaxis-minorticks)
 
 The minor ticks of the axis.
+
+#### Example
+
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-minorTicks></kendo:chart-valueAxis-minorTicks>
+    </kendo:chart-valueAxis>
  
 ### [<kendo:chart-valueAxis-title>](/api/wrappers/jsp/chart/valueaxis-title)
 
 The title of the value axis.
+
+#### Example
+
+    <kendo:chart-valueAxis>
+        <kendo:chart-valueAxis-title></kendo:chart-valueAxis-title>
+    </kendo:chart-valueAxis>
  

@@ -152,4 +152,10 @@ Fires when the user drags the drag handle to a new position.
 ### [<kendo:rangeSlider-tooltip>](/api/wrappers/jsp/rangeslider/tooltip)
 
 Configuration of the
+
+#### Example
+
+    <kendo:rangeSlider>
+        <kendo:rangeSlider-tooltip></kendo:rangeSlider-tooltip>
+    </kendo:rangeSlider>
    

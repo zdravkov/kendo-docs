@@ -199,8 +199,20 @@ Triggered when an item of a PanelBar is selected.
 ### [<kendo:panelBar-animation>](/api/wrappers/jsp/panelbar/animation)
 
 A collection of visual animations used when
+
+#### Example
+
+    <kendo:panelBar>
+        <kendo:panelBar-animation></kendo:panelBar-animation>
+    </kendo:panelBar>
  
 ### [<kendo:panelBar-items>](/api/wrappers/jsp/panelbar/items)
 
 Contains items of PanelBar
+
+#### Example
+
+    <kendo:panelBar>
+        <kendo:panelBar-items></kendo:panelBar-items>
+    </kendo:panelBar>
        

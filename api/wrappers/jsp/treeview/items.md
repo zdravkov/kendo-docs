@@ -22,4 +22,10 @@ A JSP tag representing Kendo Items.
 ### [<kendo:treeView-item>](/api/wrappers/jsp/treeview/item)
 
 Contains items of TreeView
+
+#### Example
+
+    <kendo:treeView-items>
+        <kendo:treeView-item></kendo:treeView-item>
+    </kendo:treeView-items>
  

@@ -178,4 +178,10 @@ Fires when the time drop-down list is opened
 ### [<kendo:timePicker-animation>](/api/wrappers/jsp/timepicker/animation)
 
 Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+
+#### Example
+
+    <kendo:timePicker>
+        <kendo:timePicker-animation></kendo:timePicker-animation>
+    </kendo:timePicker>
     

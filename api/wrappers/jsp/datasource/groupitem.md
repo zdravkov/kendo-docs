@@ -40,4 +40,10 @@ Specifies the order of the groupped items.
 ### [<kendo:dataSource-groupItem-aggregates>](/api/wrappers/jsp/datasource/groupitem-aggregates)
 
 Specifies the aggregate function for this group.
+
+#### Example
+
+    <kendo:dataSource-groupItem>
+        <kendo:dataSource-groupItem-aggregates></kendo:dataSource-groupItem-aggregates>
+    </kendo:dataSource-groupItem>
  

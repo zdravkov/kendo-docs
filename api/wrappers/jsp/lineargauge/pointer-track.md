@@ -58,4 +58,10 @@ The visibility of the track.
 ### [<kendo:linearGauge-pointer-track-border>](/api/wrappers/jsp/lineargauge/pointer-track-border)
 
 The border of the track.
+
+#### Example
+
+    <kendo:linearGauge-pointer-track>
+        <kendo:linearGauge-pointer-track-border></kendo:linearGauge-pointer-track-border>
+    </kendo:linearGauge-pointer-track>
  

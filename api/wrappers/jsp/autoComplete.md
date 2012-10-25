@@ -271,4 +271,10 @@ Triggered when a Li element is selected.
 ### [<kendo:autoComplete-animation>](/api/wrappers/jsp/autocomplete/animation)
 
 Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+
+#### Example
+
+    <kendo:autoComplete>
+        <kendo:autoComplete-animation></kendo:autoComplete-animation>
+    </kendo:autoComplete>
       

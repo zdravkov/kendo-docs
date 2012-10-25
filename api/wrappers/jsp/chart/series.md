@@ -22,4 +22,10 @@ A JSP tag representing Kendo Series.
 ### [<kendo:chart-seriesItem>](/api/wrappers/jsp/chart/seriesitem)
 
 Array of series definitions.
+
+#### Example
+
+    <kendo:chart-series>
+        <kendo:chart-seriesItem></kendo:chart-seriesItem>
+    </kendo:chart-series>
  

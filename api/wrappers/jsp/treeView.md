@@ -326,12 +326,30 @@ Triggered when a node gets selected.
 
 A collection of visual animations used when items are expanded or collapsed through user interaction.
 Setting this option to
+
+#### Example
+
+    <kendo:treeView>
+        <kendo:treeView-animation></kendo:treeView-animation>
+    </kendo:treeView>
  
 ### [<kendo:treeView-checkboxes>](/api/wrappers/jsp/treeview/checkboxes)
 
 If
+
+#### Example
+
+    <kendo:treeView>
+        <kendo:treeView-checkboxes></kendo:treeView-checkboxes>
+    </kendo:treeView>
  
 ### [<kendo:treeView-items>](/api/wrappers/jsp/treeview/items)
 
 Contains items of TreeView
+
+#### Example
+
+    <kendo:treeView>
+        <kendo:treeView-items></kendo:treeView-items>
+    </kendo:treeView>
          

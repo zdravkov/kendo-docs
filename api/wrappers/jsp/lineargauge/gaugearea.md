@@ -59,4 +59,10 @@ The width of the gauge area.
 ### [<kendo:linearGauge-gaugeArea-border>](/api/wrappers/jsp/lineargauge/gaugearea-border)
 
 The border of the gauge area.
+
+#### Example
+
+    <kendo:linearGauge-gaugeArea>
+        <kendo:linearGauge-gaugeArea-border></kendo:linearGauge-gaugeArea-border>
+    </kendo:linearGauge-gaugeArea>
  

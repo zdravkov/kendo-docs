@@ -159,4 +159,10 @@ Fires when navigate
 ### [<kendo:calendar-month>](/api/wrappers/jsp/calendar/month)
 
 Templates for the cells rendered in the "month" view.
+
+#### Example
+
+    <kendo:calendar>
+        <kendo:calendar-month></kendo:calendar-month>
+    </kendo:calendar>
    

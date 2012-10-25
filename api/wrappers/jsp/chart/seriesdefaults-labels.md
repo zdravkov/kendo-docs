@@ -98,4 +98,10 @@ The visibility of the labels.
 ### [<kendo:chart-seriesDefaults-labels-border>](/api/wrappers/jsp/chart/seriesdefaults-labels-border)
 
 The border of the labels.
+
+#### Example
+
+    <kendo:chart-seriesDefaults-labels>
+        <kendo:chart-seriesDefaults-labels-border></kendo:chart-seriesDefaults-labels-border>
+    </kendo:chart-seriesDefaults-labels>
  

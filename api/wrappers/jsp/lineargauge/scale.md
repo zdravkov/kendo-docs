@@ -96,12 +96,30 @@ The position of the gauge.
 ### [<kendo:linearGauge-scale-labels>](/api/wrappers/jsp/lineargauge/scale-labels)
 
 Configures the scale labels.
+
+#### Example
+
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-labels></kendo:linearGauge-scale-labels>
+    </kendo:linearGauge-scale>
  
 ### [<kendo:linearGauge-scale-majorTicks>](/api/wrappers/jsp/lineargauge/scale-majorticks)
 
 Configures the scale major ticks.
+
+#### Example
+
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-majorTicks></kendo:linearGauge-scale-majorTicks>
+    </kendo:linearGauge-scale>
  
 ### [<kendo:linearGauge-scale-minorTicks>](/api/wrappers/jsp/lineargauge/scale-minorticks)
 
 Configures the scale minor ticks.
+
+#### Example
+
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-minorTicks></kendo:linearGauge-scale-minorTicks>
+    </kendo:linearGauge-scale>
  

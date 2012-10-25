@@ -22,4 +22,10 @@ A JSP tag representing Kendo Groupable.
 ### [<kendo:grid-groupable-messages>](/api/wrappers/jsp/grid/groupable-messages)
 
 Sets the messages displayed during grouping.
+
+#### Example
+
+    <kendo:grid-groupable>
+        <kendo:grid-groupable-messages></kendo:grid-groupable-messages>
+    </kendo:grid-groupable>
  

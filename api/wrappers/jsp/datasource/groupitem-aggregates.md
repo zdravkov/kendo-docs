@@ -22,4 +22,10 @@ A JSP tag representing Kendo Aggregates.
 ### [<kendo:dataSource-groupItem-aggregate>](/api/wrappers/jsp/datasource/groupitem-aggregate)
 
 Specifies the aggregate function for this group.
+
+#### Example
+
+    <kendo:dataSource-groupItem-aggregates>
+        <kendo:dataSource-groupItem-aggregate></kendo:dataSource-groupItem-aggregate>
+    </kendo:dataSource-groupItem-aggregates>
  

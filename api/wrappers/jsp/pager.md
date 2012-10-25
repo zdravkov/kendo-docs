@@ -140,4 +140,10 @@ Fires when the current page has changed.
 ### [<kendo:pager-messages>](/api/wrappers/jsp/pager/messages)
 
 Defines texts shown within the pager.
+
+#### Example
+
+    <kendo:pager>
+        <kendo:pager-messages></kendo:pager-messages>
+    </kendo:pager>
   

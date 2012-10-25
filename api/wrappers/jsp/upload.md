@@ -279,8 +279,20 @@ Cancelling the event will prevent the upload.
 ### [<kendo:upload-async>](/api/wrappers/jsp/upload/async)
 
 Configures the ability to upload a file(s) in an asynchronous manner. Please refer to the
+
+#### Example
+
+    <kendo:upload>
+        <kendo:upload-async></kendo:upload-async>
+    </kendo:upload>
  
 ### [<kendo:upload-localization>](/api/wrappers/jsp/upload/localization)
 
 Sets the strings rendered by the Upload.
+
+#### Example
+
+    <kendo:upload>
+        <kendo:upload-localization></kendo:upload-localization>
+    </kendo:upload>
          

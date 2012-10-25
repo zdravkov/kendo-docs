@@ -22,4 +22,10 @@ A JSP tag representing Kendo Group.
 ### [<kendo:dataSource-groupItem>](/api/wrappers/jsp/datasource/groupitem)
 
 Sets initial grouping
+
+#### Example
+
+    <kendo:dataSource-group>
+        <kendo:dataSource-groupItem></kendo:dataSource-groupItem>
+    </kendo:dataSource-group>
  

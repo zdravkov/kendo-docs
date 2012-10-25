@@ -202,8 +202,20 @@ Triggered before a tab is selected.
 ### [<kendo:tabStrip-animation>](/api/wrappers/jsp/tabstrip/animation)
 
 A collection of visual animations used when
+
+#### Example
+
+    <kendo:tabStrip>
+        <kendo:tabStrip-animation></kendo:tabStrip-animation>
+    </kendo:tabStrip>
  
 ### [<kendo:tabStrip-items>](/api/wrappers/jsp/tabstrip/items)
 
 Contains items of TabStrip
+
+#### Example
+
+    <kendo:tabStrip>
+        <kendo:tabStrip-items></kendo:tabStrip-items>
+    </kendo:tabStrip>
      

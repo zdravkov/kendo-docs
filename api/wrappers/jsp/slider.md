@@ -169,4 +169,10 @@ Fires when the user drags the drag handle to a new position.
 ### [<kendo:slider-tooltip>](/api/wrappers/jsp/slider/tooltip)
 
 Configuration of the
+
+#### Example
+
+    <kendo:slider>
+        <kendo:slider-tooltip></kendo:slider-tooltip>
+    </kendo:slider>
    

@@ -94,4 +94,10 @@ The visibility of the title.
 ### [<kendo:chart-title-border>](/api/wrappers/jsp/chart/title-border)
 
 The border of the title.
+
+#### Example
+
+    <kendo:chart-title>
+        <kendo:chart-title-border></kendo:chart-title-border>
+    </kendo:chart-title>
  

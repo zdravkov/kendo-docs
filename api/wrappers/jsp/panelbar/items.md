@@ -22,4 +22,10 @@ A JSP tag representing Kendo Items.
 ### [<kendo:panelBar-item>](/api/wrappers/jsp/panelbar/item)
 
 Contains items of PanelBar
+
+#### Example
+
+    <kendo:panelBar-items>
+        <kendo:panelBar-item></kendo:panelBar-item>
+    </kendo:panelBar-items>
  

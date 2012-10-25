@@ -22,4 +22,10 @@ A JSP tag representing Kendo Panes.
 ### [<kendo:splitter-pane>](/api/wrappers/jsp/splitter/pane)
 
 An array of pane definitions.
+
+#### Example
+
+    <kendo:splitter-panes>
+        <kendo:splitter-pane></kendo:splitter-pane>
+    </kendo:splitter-panes>
  

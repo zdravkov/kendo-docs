@@ -95,4 +95,10 @@ The visibility of the title.
 ### [<kendo:chart-categoryAxis-title-border>](/api/wrappers/jsp/chart/categoryaxis-title-border)
 
 The border of the title.
+
+#### Example
+
+    <kendo:chart-categoryAxis-title>
+        <kendo:chart-categoryAxis-title-border></kendo:chart-categoryAxis-title-border>
+    </kendo:chart-categoryAxis-title>
  

@@ -23,4 +23,10 @@ A JSP tag representing Kendo Toolbar.
 
 This is a list of commands for which the corresponding buttons will be rendered.
 The supported built-in commands are: "create", "cancel", "save", "destroy".
+
+#### Example
+
+    <kendo:grid-toolbar>
+        <kendo:grid-toolbarItem></kendo:grid-toolbarItem>
+    </kendo:grid-toolbar>
  

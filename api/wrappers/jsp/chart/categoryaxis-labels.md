@@ -153,4 +153,10 @@ Date format strings
 ### [<kendo:chart-categoryAxis-labels-border>](/api/wrappers/jsp/chart/categoryaxis-labels-border)
 
 The border of the labels.
+
+#### Example
+
+    <kendo:chart-categoryAxis-labels>
+        <kendo:chart-categoryAxis-labels-border></kendo:chart-categoryAxis-labels-border>
+    </kendo:chart-categoryAxis-labels>
  

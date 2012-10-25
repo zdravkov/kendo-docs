@@ -171,4 +171,10 @@ Triggered when a pane is resized.
 ### [<kendo:splitter-panes>](/api/wrappers/jsp/splitter/panes)
 
 An array of pane definitions.
+
+#### Example
+
+    <kendo:splitter>
+        <kendo:splitter-panes></kendo:splitter-panes>
+    </kendo:splitter>
       

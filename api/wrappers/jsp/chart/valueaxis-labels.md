@@ -136,4 +136,10 @@ The visibility of the labels.
 ### [<kendo:chart-valueAxis-labels-border>](/api/wrappers/jsp/chart/valueaxis-labels-border)
 
 The border of the labels.
+
+#### Example
+
+    <kendo:chart-valueAxis-labels>
+        <kendo:chart-valueAxis-labels-border></kendo:chart-valueAxis-labels-border>
+    </kendo:chart-valueAxis-labels>
  

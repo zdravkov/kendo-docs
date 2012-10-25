@@ -97,4 +97,10 @@ The visibility of the labels.
 ### [<kendo:linearGauge-scale-labels-border>](/api/wrappers/jsp/lineargauge/scale-labels-border)
 
 The border of the labels.
+
+#### Example
+
+    <kendo:linearGauge-scale-labels>
+        <kendo:linearGauge-scale-labels-border></kendo:linearGauge-scale-labels-border>
+    </kendo:linearGauge-scale-labels>
  

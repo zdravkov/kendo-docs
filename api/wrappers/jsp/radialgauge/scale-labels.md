@@ -106,4 +106,10 @@ The visibility of the labels.
 ### [<kendo:radialGauge-scale-labels-border>](/api/wrappers/jsp/radialgauge/scale-labels-border)
 
 The border of the labels.
+
+#### Example
+
+    <kendo:radialGauge-scale-labels>
+        <kendo:radialGauge-scale-labels-border></kendo:radialGauge-scale-labels-border>
+    </kendo:radialGauge-scale-labels>
  

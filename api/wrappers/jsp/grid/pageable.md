@@ -94,4 +94,10 @@ Defines if a label showing current paging information will be displayed.
 ### [<kendo:grid-pageable-messages>](/api/wrappers/jsp/grid/pageable-messages)
 
 Defines texts shown within the pager.
+
+#### Example
+
+    <kendo:grid-pageable>
+        <kendo:grid-pageable-messages></kendo:grid-pageable-messages>
+    </kendo:grid-pageable>
  

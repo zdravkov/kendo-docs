@@ -398,4 +398,10 @@ Triggered when a Window has been resized by a user.
 ### [<kendo:window-animation>](/api/wrappers/jsp/window/animation)
 
 A collection of {Animation} objects, used to change default animations. A value of
+
+#### Example
+
+    <kendo:window>
+        <kendo:window-animation></kendo:window-animation>
+    </kendo:window>
           

@@ -22,4 +22,10 @@ A JSP tag representing Kendo Filter.
 ### [<kendo:dataSource-filterItem>](/api/wrappers/jsp/datasource/filteritem)
 
 Sets the initial filter.
+
+#### Example
+
+    <kendo:dataSource-filter>
+        <kendo:dataSource-filterItem></kendo:dataSource-filterItem>
+    </kendo:dataSource-filter>
  

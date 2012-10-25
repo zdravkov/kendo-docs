@@ -201,42 +201,102 @@ Fires when chart series are hovered.
 ### [<kendo:chart-categoryAxis>](/api/wrappers/jsp/chart/categoryaxis)
 
 The category axis configuration options.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-categoryAxis></kendo:chart-categoryAxis>
+    </kendo:chart>
  
 ### [<kendo:chart-title>](/api/wrappers/jsp/chart/title)
 
 The title of the category axis.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-title></kendo:chart-title>
+    </kendo:chart>
  
 ### [<kendo:chart-chartArea>](/api/wrappers/jsp/chart/chartarea)
 
 The chart area configuration options.
 This is the entire visible area of the chart.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-chartArea></kendo:chart-chartArea>
+    </kendo:chart>
  
 ### [<kendo:chart-legend>](/api/wrappers/jsp/chart/legend)
 
 The chart legend configuration options.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-legend></kendo:chart-legend>
+    </kendo:chart>
  
 ### [<kendo:chart-plotArea>](/api/wrappers/jsp/chart/plotarea)
 
 The plot area configuration options. This is the area containing the plotted series.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-plotArea></kendo:chart-plotArea>
+    </kendo:chart>
  
 ### [<kendo:chart-series>](/api/wrappers/jsp/chart/series)
 
 Array of series definitions.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-series></kendo:chart-series>
+    </kendo:chart>
  
 ### [<kendo:chart-tooltip>](/api/wrappers/jsp/chart/tooltip)
 
 The data point tooltip configuration options.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-tooltip></kendo:chart-tooltip>
+    </kendo:chart>
  
 ### [<kendo:chart-seriesDefaults>](/api/wrappers/jsp/chart/seriesdefaults)
 
 Default values for each series.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-seriesDefaults></kendo:chart-seriesDefaults>
+    </kendo:chart>
  
 ### [<kendo:chart-valueAxis>](/api/wrappers/jsp/chart/valueaxis)
 
 The value axis configuration options.
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-valueAxis></kendo:chart-valueAxis>
+    </kendo:chart>
  
 ### [<kendo:chart-xAxis>](/api/wrappers/jsp/chart/xaxis)
 
 Scatter charts X-axis configuration options.
 Includes
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-xAxis></kendo:chart-xAxis>
+    </kendo:chart>
       

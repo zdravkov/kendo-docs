@@ -162,8 +162,20 @@ Fires when a menu item gets selected.
 ### [<kendo:menu-animation>](/api/wrappers/jsp/menu/animation)
 
 A collection of
+
+#### Example
+
+    <kendo:menu>
+        <kendo:menu-animation></kendo:menu-animation>
+    </kendo:menu>
  
 ### [<kendo:menu-items>](/api/wrappers/jsp/menu/items)
 
 Contains items of Menu
+
+#### Example
+
+    <kendo:menu>
+        <kendo:menu-items></kendo:menu-items>
+    </kendo:menu>
     

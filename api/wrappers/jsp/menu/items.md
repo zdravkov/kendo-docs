@@ -22,4 +22,10 @@ A JSP tag representing Kendo Items.
 ### [<kendo:menu-item>](/api/wrappers/jsp/menu/item)
 
 Contains items of Menu
+
+#### Example
+
+    <kendo:menu-items>
+        <kendo:menu-item></kendo:menu-item>
+    </kendo:menu-items>
  
