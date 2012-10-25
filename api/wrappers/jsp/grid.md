@@ -18,7 +18,8 @@ Indicates whether the grid will call read on the DataSource initially.
 #### Example
     <kendo:grid autoBind="autoBind">
     </kendo:grid>
-    
+
+
 
 ### editable `boolean`
 
@@ -27,7 +28,8 @@ Indicates whether editing is enabled/disabled.
 #### Example
     <kendo:grid editable="editable">
     </kendo:grid>
-    
+
+
 
 ### filterable `boolean`
 
@@ -36,7 +38,8 @@ Indicates whether filtering is enabled/disabled.
 #### Example
     <kendo:grid filterable="filterable">
     </kendo:grid>
-    
+
+
 
 ### groupable `boolean`
 
@@ -45,7 +48,8 @@ Indicates whether grouping is enabled/disabled.
 #### Example
     <kendo:grid groupable="groupable">
     </kendo:grid>
-    
+
+
 
 ### navigatable `boolean`
 
@@ -54,7 +58,8 @@ Indicates whether keyboard navigation is enabled/disabled.
 #### Example
     <kendo:grid navigatable="navigatable">
     </kendo:grid>
-    
+
+
 
 ### pageable `boolean`
 
@@ -63,7 +68,8 @@ Indicates whether paging is enabled/disabled.
 #### Example
     <kendo:grid pageable="pageable">
     </kendo:grid>
-    
+
+
 
 ### scrollable `boolean`
 
@@ -72,7 +78,8 @@ Enable/disable grid scrolling. Possible values:
 #### Example
     <kendo:grid scrollable="scrollable">
     </kendo:grid>
-    
+
+
 
 ### selectable `String`
 
@@ -81,7 +88,8 @@ Indicates whether selection is enabled/disabled. Possible values:
 #### Example
     <kendo:grid selectable="selectable">
     </kendo:grid>
-    
+
+
 
 ### sortable `boolean`
 
@@ -90,9 +98,8 @@ Defines whether grid columns are sortable.
 #### Example
     <kendo:grid sortable="sortable">
     </kendo:grid>
-    
 
-## Event Attributes
+
 
 ### altRowTemplate `String`
 
@@ -106,6 +113,8 @@ Template to be used for rendering the alternate rows in the grid.
             // Code to handle the altRowTemplate event.
         }
     </script>
+
+
 
 ### detailTemplate `String`
 
@@ -121,6 +130,8 @@ See the
         }
     </script>
 
+
+
 ### rowTemplate `String`
 
 Template to be used for rendering the rows in the grid.
@@ -133,6 +144,8 @@ Template to be used for rendering the rows in the grid.
             // Code to handle the rowTemplate event.
         }
     </script>
+
+
 
 ### change `String`
 
@@ -147,6 +160,8 @@ Fires when the grid selection has changed.
         }
     </script>
 
+
+
 ### columnResize `String`
 
 Fires when the user resizes a column.
@@ -159,6 +174,8 @@ Fires when the user resizes a column.
             // Code to handle the columnResize event.
         }
     </script>
+
+
 
 ### dataBound `String`
 
@@ -173,6 +190,8 @@ Fires when the grid has received data from the data source.
         }
     </script>
 
+
+
 ### detailCollapse `String`
 
 Fires when the grid detail row is collapsed.
@@ -185,6 +204,8 @@ Fires when the grid detail row is collapsed.
             // Code to handle the detailCollapse event.
         }
     </script>
+
+
 
 ### detailExpand `String`
 
@@ -199,6 +220,8 @@ Fires when the grid detail row is expanded.
         }
     </script>
 
+
+
 ### detailInit `String`
 
 Fires when the grid detail is initialized.
@@ -211,6 +234,8 @@ Fires when the grid detail is initialized.
             // Code to handle the detailInit event.
         }
     </script>
+
+
 
 ### edit `String`
 
@@ -225,6 +250,8 @@ Fires when the grid enters edit mode.
         }
     </script>
 
+
+
 ### remove `String`
 
 Fires before the grid item is removed.
@@ -238,6 +265,8 @@ Fires before the grid item is removed.
         }
     </script>
 
+
+
 ### save `String`
 
 Fires before the grid item is changed.
@@ -250,6 +279,207 @@ Fires before the grid item is changed.
             // Code to handle the save event.
         }
     </script>
+
+
+
+### saveChanges `String`
+
+Fires before the grid calls DataSource sync.
+
+#### Example
+    <kendo:grid saveChanges="handle_saveChanges">
+    </kendo:grid>
+    <script>
+        function handle_saveChanges(e) {
+            // Code to handle the saveChanges event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### altRowTemplate `String`
+
+Template to be used for rendering the alternate rows in the grid.
+
+#### Example
+    <kendo:grid altRowTemplate="handle_altRowTemplate">
+    </kendo:grid>
+    <script>
+        function handle_altRowTemplate(e) {
+            // Code to handle the altRowTemplate event.
+        }
+    </script>
+
+
+
+### detailTemplate `String`
+
+Template to be used for rendering the detail rows in the grid.
+See the
+
+#### Example
+    <kendo:grid detailTemplate="handle_detailTemplate">
+    </kendo:grid>
+    <script>
+        function handle_detailTemplate(e) {
+            // Code to handle the detailTemplate event.
+        }
+    </script>
+
+
+
+### rowTemplate `String`
+
+Template to be used for rendering the rows in the grid.
+
+#### Example
+    <kendo:grid rowTemplate="handle_rowTemplate">
+    </kendo:grid>
+    <script>
+        function handle_rowTemplate(e) {
+            // Code to handle the rowTemplate event.
+        }
+    </script>
+
+
+
+### change `String`
+
+Fires when the grid selection has changed.
+
+#### Example
+    <kendo:grid change="handle_change">
+    </kendo:grid>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
+
+
+### columnResize `String`
+
+Fires when the user resizes a column.
+
+#### Example
+    <kendo:grid columnResize="handle_columnResize">
+    </kendo:grid>
+    <script>
+        function handle_columnResize(e) {
+            // Code to handle the columnResize event.
+        }
+    </script>
+
+
+
+### dataBound `String`
+
+Fires when the grid has received data from the data source.
+
+#### Example
+    <kendo:grid dataBound="handle_dataBound">
+    </kendo:grid>
+    <script>
+        function handle_dataBound(e) {
+            // Code to handle the dataBound event.
+        }
+    </script>
+
+
+
+### detailCollapse `String`
+
+Fires when the grid detail row is collapsed.
+
+#### Example
+    <kendo:grid detailCollapse="handle_detailCollapse">
+    </kendo:grid>
+    <script>
+        function handle_detailCollapse(e) {
+            // Code to handle the detailCollapse event.
+        }
+    </script>
+
+
+
+### detailExpand `String`
+
+Fires when the grid detail row is expanded.
+
+#### Example
+    <kendo:grid detailExpand="handle_detailExpand">
+    </kendo:grid>
+    <script>
+        function handle_detailExpand(e) {
+            // Code to handle the detailExpand event.
+        }
+    </script>
+
+
+
+### detailInit `String`
+
+Fires when the grid detail is initialized.
+
+#### Example
+    <kendo:grid detailInit="handle_detailInit">
+    </kendo:grid>
+    <script>
+        function handle_detailInit(e) {
+            // Code to handle the detailInit event.
+        }
+    </script>
+
+
+
+### edit `String`
+
+Fires when the grid enters edit mode.
+
+#### Example
+    <kendo:grid edit="handle_edit">
+    </kendo:grid>
+    <script>
+        function handle_edit(e) {
+            // Code to handle the edit event.
+        }
+    </script>
+
+
+
+### remove `String`
+
+Fires before the grid item is removed.
+
+#### Example
+    <kendo:grid remove="handle_remove">
+    </kendo:grid>
+    <script>
+        function handle_remove(e) {
+            // Code to handle the remove event.
+        }
+    </script>
+
+
+
+### save `String`
+
+Fires before the grid item is changed.
+
+#### Example
+    <kendo:grid save="handle_save">
+    </kendo:grid>
+    <script>
+        function handle_save(e) {
+            // Code to handle the save event.
+        }
+    </script>
+
+
 
 ### saveChanges `String`
 

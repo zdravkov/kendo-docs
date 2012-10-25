@@ -18,7 +18,8 @@ Specifies that sub menus should close after item selection (provided they won't 
 #### Example
     <kendo:menu closeOnClick="closeOnClick">
     </kendo:menu>
-    
+
+
 
 ### direction `String`
 
@@ -29,7 +30,8 @@ its sub menus to the left.
 #### Example
     <kendo:menu direction="direction">
     </kendo:menu>
-    
+
+
 
 ### hoverDelay `float`
 
@@ -38,7 +40,8 @@ Specifies the delay in ms before the menu is opened/closed - used to avoid accid
 #### Example
     <kendo:menu hoverDelay="hoverDelay">
     </kendo:menu>
-    
+
+
 
 ### openOnClick `boolean`
 
@@ -47,7 +50,8 @@ Specifies that the root sub menus will be opened on item click.
 #### Example
     <kendo:menu openOnClick="openOnClick">
     </kendo:menu>
-    
+
+
 
 ### orientation `String`
 
@@ -56,7 +60,8 @@ Root menu orientation. Could be horizontal or vertical.
 #### Example
     <kendo:menu orientation="orientation">
     </kendo:menu>
-    
+
+
 
 ### popupCollision `String`
 
@@ -65,9 +70,8 @@ Specifies how Menu should adjust to screen boundaries. By default the strategy i
 #### Example
     <kendo:menu popupCollision="popupCollision">
     </kendo:menu>
-    
 
-## Event Attributes
+
 
 ### close `String`
 
@@ -82,6 +86,8 @@ Fires after a sub menu gets closed.
         }
     </script>
 
+
+
 ### open `String`
 
 Fires before a sub menu gets opened.
@@ -94,6 +100,56 @@ Fires before a sub menu gets opened.
             // Code to handle the open event.
         }
     </script>
+
+
+
+### select `String`
+
+Fires when a menu item gets selected.
+
+#### Example
+    <kendo:menu select="handle_select">
+    </kendo:menu>
+    <script>
+        function handle_select(e) {
+            // Code to handle the select event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### close `String`
+
+Fires after a sub menu gets closed.
+
+#### Example
+    <kendo:menu close="handle_close">
+    </kendo:menu>
+    <script>
+        function handle_close(e) {
+            // Code to handle the close event.
+        }
+    </script>
+
+
+
+### open `String`
+
+Fires before a sub menu gets opened.
+
+#### Example
+    <kendo:menu open="handle_open">
+    </kendo:menu>
+    <script>
+        function handle_open(e) {
+            // Code to handle the open event.
+        }
+    </script>
+
+
 
 ### select `String`
 

@@ -16,30 +16,32 @@ A JSP tag representing Kendo MajorGridLines.
 The color of the lines.
 
 #### Example
-    <kendo:chart-valueAxis-majorGridLines color="color">
-    </kendo:chart-valueAxis-majorGridLines>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the lines.
 
 #### Example
-    <kendo:chart-valueAxis-majorGridLines visible="visible">
-    </kendo:chart-valueAxis-majorGridLines>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the lines.
 
 #### Example
-    <kendo:chart-valueAxis-majorGridLines width="width">
-    </kendo:chart-valueAxis-majorGridLines>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

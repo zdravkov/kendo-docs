@@ -16,18 +16,20 @@ A JSP tag representing Kendo Legend.
 The background color of the legend. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-legend background="background">
-    </kendo:chart-legend>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the legend.
 
 #### Example
-    <kendo:chart-legend margin="margin">
-    </kendo:chart-legend>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### offsetX `float`
 
@@ -36,9 +38,10 @@ For instance, a value of 20 will move the legend 20 pixels to the right of it's 
 to the left of the current position.
 
 #### Example
-    <kendo:chart-legend offsetX="offsetX">
-    </kendo:chart-legend>
-    
+    <kendo:chart offsetX="offsetX">
+    </kendo:chart>
+
+
 
 ### offsetY `float`
 
@@ -47,39 +50,42 @@ For instance, a value of 20 will move the legend 20 pixels down from it's initia
 upwards from the current position.
 
 #### Example
-    <kendo:chart-legend offsetY="offsetY">
-    </kendo:chart-legend>
-    
+    <kendo:chart offsetY="offsetY">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding of the legend.
 
 #### Example
-    <kendo:chart-legend padding="padding">
-    </kendo:chart-legend>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### position `String`
 
 The positions of the legend.
 
 #### Example
-    <kendo:chart-legend position="position">
-    </kendo:chart-legend>
-    
+    <kendo:chart position="position">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the legend.
 
 #### Example
-    <kendo:chart-legend visible="visible">
-    </kendo:chart-legend>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
   

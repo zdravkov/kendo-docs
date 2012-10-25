@@ -18,9 +18,8 @@ Specifies the orientation of the
 #### Example
     <kendo:splitter orientation="orientation">
     </kendo:splitter>
-    
 
-## Event Attributes
+
 
 ### collapse `String`
 
@@ -35,6 +34,8 @@ Triggered when a pane of a Splitter is collapsed.
         }
     </script>
 
+
+
 ### contentLoad `String`
 
 Triggered when the content for a pane has finished loading.
@@ -47,6 +48,8 @@ Triggered when the content for a pane has finished loading.
             // Code to handle the contentLoad event.
         }
     </script>
+
+
 
 ### expand `String`
 
@@ -61,6 +64,8 @@ Triggered when a pane of a Splitter is expanded.
         }
     </script>
 
+
+
 ### layoutChange `String`
 
 Fires when the splitter layout has changed
@@ -73,6 +78,86 @@ Fires when the splitter layout has changed
             // Code to handle the layoutChange event.
         }
     </script>
+
+
+
+### resize `String`
+
+Triggered when a pane is resized.
+
+#### Example
+    <kendo:splitter resize="handle_resize">
+    </kendo:splitter>
+    <script>
+        function handle_resize(e) {
+            // Code to handle the resize event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### collapse `String`
+
+Triggered when a pane of a Splitter is collapsed.
+
+#### Example
+    <kendo:splitter collapse="handle_collapse">
+    </kendo:splitter>
+    <script>
+        function handle_collapse(e) {
+            // Code to handle the collapse event.
+        }
+    </script>
+
+
+
+### contentLoad `String`
+
+Triggered when the content for a pane has finished loading.
+
+#### Example
+    <kendo:splitter contentLoad="handle_contentLoad">
+    </kendo:splitter>
+    <script>
+        function handle_contentLoad(e) {
+            // Code to handle the contentLoad event.
+        }
+    </script>
+
+
+
+### expand `String`
+
+Triggered when a pane of a Splitter is expanded.
+
+#### Example
+    <kendo:splitter expand="handle_expand">
+    </kendo:splitter>
+    <script>
+        function handle_expand(e) {
+            // Code to handle the expand event.
+        }
+    </script>
+
+
+
+### layoutChange `String`
+
+Fires when the splitter layout has changed
+
+#### Example
+    <kendo:splitter layoutChange="handle_layoutChange">
+    </kendo:splitter>
+    <script>
+        function handle_layoutChange(e) {
+            // Code to handle the layoutChange event.
+        }
+    </script>
+
+
 
 ### resize `String`
 

@@ -16,75 +16,82 @@ A JSP tag representing Kendo Title.
 The alignment of the title.
 
 #### Example
-    <kendo:chart-title align="align">
-    </kendo:chart-title>
-    
+    <kendo:chart align="align">
+    </kendo:chart>
+
+
 
 ### background `String`
 
 The background color of the title.
 
 #### Example
-    <kendo:chart-title background="background">
-    </kendo:chart-title>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### font `String`
 
 The font of the title.
 
 #### Example
-    <kendo:chart-title font="font">
-    </kendo:chart-title>
-    
+    <kendo:chart font="font">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the title.
 
 #### Example
-    <kendo:chart-title margin="margin">
-    </kendo:chart-title>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding of the title.
 
 #### Example
-    <kendo:chart-title padding="padding">
-    </kendo:chart-title>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### position `String`
 
 The position of the title.
 
 #### Example
-    <kendo:chart-title position="position">
-    </kendo:chart-title>
-    
+    <kendo:chart position="position">
+    </kendo:chart>
+
+
 
 ### text `String`
 
 The title of the chart. You can also set the text directly for a title with default options.
 
 #### Example
-    <kendo:chart-title text="text">
-    </kendo:chart-title>
-    
+    <kendo:chart text="text">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the title.
 
 #### Example
-    <kendo:chart-title visible="visible">
-    </kendo:chart-title>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

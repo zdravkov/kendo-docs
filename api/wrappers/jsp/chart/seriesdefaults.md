@@ -17,9 +17,10 @@ The area configuration options.
 The default options for all area series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults area="area">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart area="area">
+    </kendo:chart>
+
+
 
 ### candlestick `Object`
 
@@ -27,9 +28,10 @@ The candlestick configuration options.
 The default options for all candlestick series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults candlestick="candlestick">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart candlestick="candlestick">
+    </kendo:chart>
+
+
 
 ### ohlc `Object`
 
@@ -37,18 +39,20 @@ The ohlc configuration options.
 The default options for all ohlc series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults ohlc="ohlc">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart ohlc="ohlc">
+    </kendo:chart>
+
+
 
 ### bar `Object`
 
 The default options for all bar series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults bar="bar">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart bar="bar">
+    </kendo:chart>
+
+
 
 ### bubble `Object`
 
@@ -56,9 +60,10 @@ The bubble configuration options.
 The default options for all bubble series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults bubble="bubble">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart bubble="bubble">
+    </kendo:chart>
+
+
 
 ### column `Object`
 
@@ -66,9 +71,10 @@ The column configuration options.
 The default options for all column series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults column="column">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart column="column">
+    </kendo:chart>
+
+
 
 ### donut `Object`
 
@@ -76,18 +82,20 @@ The donut configuration options.
 The default options for all donut series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults donut="donut">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart donut="donut">
+    </kendo:chart>
+
+
 
 ### gap `float`
 
 The distance between category clusters.
 
 #### Example
-    <kendo:chart-seriesDefaults gap="gap">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart gap="gap">
+    </kendo:chart>
+
+
 
 ### line `Object`
 
@@ -95,18 +103,20 @@ The line configuration options.
 The default options for all line series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults line="line">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart line="line">
+    </kendo:chart>
+
+
 
 ### overlay `Object`
 
 The effects overlay.
 
 #### Example
-    <kendo:chart-seriesDefaults overlay="overlay">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart overlay="overlay">
+    </kendo:chart>
+
+
 
 ### pie `Object`
 
@@ -114,9 +124,10 @@ The pie configuration options.
 The default options for all pie series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults pie="pie">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart pie="pie">
+    </kendo:chart>
+
+
 
 ### scatter `Object`
 
@@ -124,9 +135,10 @@ The scatter configuration options.
 The default options for all scatter series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults scatter="scatter">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart scatter="scatter">
+    </kendo:chart>
+
+
 
 ### scatterLine `Object`
 
@@ -134,27 +146,30 @@ The scatterLine configuration options.
 The default options for all scatterLine series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults scatterLine="scatterLine">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart scatterLine="scatterLine">
+    </kendo:chart>
+
+
 
 ### spacing `float`
 
 Space between bars.
 
 #### Example
-    <kendo:chart-seriesDefaults spacing="spacing">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart spacing="spacing">
+    </kendo:chart>
+
+
 
 ### stack `boolean`
 
 A value indicating if the series should be stacked.
 
 #### Example
-    <kendo:chart-seriesDefaults stack="stack">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart stack="stack">
+    </kendo:chart>
+
+
 
 ### verticalArea `Object`
 
@@ -162,9 +177,10 @@ The vertical area configuration options.
 The default options for all vertical area series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults verticalArea="verticalArea">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart verticalArea="verticalArea">
+    </kendo:chart>
+
+
 
 ### verticalLine `Object`
 
@@ -172,12 +188,12 @@ The vertical line configuration options.
 The default options for all vertical line series. For more details see the series options.
 
 #### Example
-    <kendo:chart-seriesDefaults verticalLine="verticalLine">
-    </kendo:chart-seriesDefaults>
-    
+    <kendo:chart verticalLine="verticalLine">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
    

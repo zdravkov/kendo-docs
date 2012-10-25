@@ -16,30 +16,32 @@ A JSP tag representing Kendo Open.
 The number of milliseconds used for the visual animation when an item is opened.
 
 #### Example
-    <kendo:panelBar-animation-open duration="duration">
-    </kendo:panelBar-animation-open>
-    
+    <kendo:panelBar duration="duration">
+    </kendo:panelBar>
+
+
 
 ### effects `String`
 
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
 
 #### Example
-    <kendo:panelBar-animation-open effects="effects">
-    </kendo:panelBar-animation-open>
-    
+    <kendo:panelBar effects="effects">
+    </kendo:panelBar>
+
+
 
 ### show `boolean`
 
 Specifies how the
 
 #### Example
-    <kendo:panelBar-animation-open show="show">
-    </kendo:panelBar-animation-open>
-    
+    <kendo:panelBar show="show">
+    </kendo:panelBar>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

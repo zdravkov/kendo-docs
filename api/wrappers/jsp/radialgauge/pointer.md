@@ -17,21 +17,22 @@ The color of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge-pointer color="color">
-    </kendo:radialGauge-pointer>
-    
+    <kendo:radialGauge color="color">
+    </kendo:radialGauge>
+
+
 
 ### value `float`
 
 The value of the gauge.
 
 #### Example
-    <kendo:radialGauge-pointer value="value">
-    </kendo:radialGauge-pointer>
-    
+    <kendo:radialGauge value="value">
+    </kendo:radialGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

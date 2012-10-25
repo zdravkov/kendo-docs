@@ -11,8 +11,7 @@ A JSP tag representing Kendo Aggregate.
 ## Configuration Attributes
 
 
-## Event Attributes
-
+### Event Attributes
 
 ## Event Tags
  

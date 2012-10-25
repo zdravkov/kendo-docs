@@ -17,21 +17,22 @@ The axis minor tick size. This is the length of the line in pixels that is drawn
 on the chart.
 
 #### Example
-    <kendo:chart-categoryAxis-minorTicks size="size">
-    </kendo:chart-categoryAxis-minorTicks>
-    
+    <kendo:chart size="size">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the minor ticks.
 
 #### Example
-    <kendo:chart-categoryAxis-minorTicks visible="visible">
-    </kendo:chart-categoryAxis-minorTicks>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

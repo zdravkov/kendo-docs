@@ -16,21 +16,22 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:treeView-item text="text">
-    </kendo:treeView-item>
-    
+    <kendo:treeView text="text">
+    </kendo:treeView>
+
+
 
 ### spriteCssClass `String`
 
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:treeView-item spriteCssClass="spriteCssClass">
-    </kendo:treeView-item>
-    
+    <kendo:treeView spriteCssClass="spriteCssClass">
+    </kendo:treeView>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

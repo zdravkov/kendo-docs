@@ -16,9 +16,10 @@ A JSP tag representing Kendo Tooltip.
 Disables (
 
 #### Example
-    <kendo:rangeSlider-tooltip enabled="enabled">
-    </kendo:rangeSlider-tooltip>
-    
+    <kendo:rangeSlider enabled="enabled">
+    </kendo:rangeSlider>
+
+
 
 ### format `String`
 
@@ -26,21 +27,22 @@ Format string for the text of the tooltip. Note: The applied format will also in
 the
 
 #### Example
-    <kendo:rangeSlider-tooltip format="format">
-    </kendo:rangeSlider-tooltip>
-    
+    <kendo:rangeSlider format="format">
+    </kendo:rangeSlider>
+
+
 
 ### template `String`
 
 Template of the tooltip.
 
 #### Example
-    <kendo:rangeSlider-tooltip template="template">
-    </kendo:rangeSlider-tooltip>
-    
+    <kendo:rangeSlider template="template">
+    </kendo:rangeSlider>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

@@ -16,21 +16,22 @@ A JSP tag representing Kendo Animation.
 Animation to be used for closing of the popup.
 
 #### Example
-    <kendo:timePicker-animation close="close">
-    </kendo:timePicker-animation>
-    
+    <kendo:timePicker close="close">
+    </kendo:timePicker>
+
+
 
 ### open `Object`
 
 Animation to be used for opening of the popup.
 
 #### Example
-    <kendo:timePicker-animation open="open">
-    </kendo:timePicker-animation>
-    
+    <kendo:timePicker open="open">
+    </kendo:timePicker>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

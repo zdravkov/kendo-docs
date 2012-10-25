@@ -17,30 +17,32 @@ The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
 
 #### Example
-    <kendo:chart-valueAxis-labels-border color="color">
-    </kendo:chart-valueAxis-labels-border>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### dashType `String`
 
 The dash type of the border.
 
 #### Example
-    <kendo:chart-valueAxis-labels-border dashType="dashType">
-    </kendo:chart-valueAxis-labels-border>
-    
+    <kendo:chart dashType="dashType">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the border.
 
 #### Example
-    <kendo:chart-valueAxis-labels-border width="width">
-    </kendo:chart-valueAxis-labels-border>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

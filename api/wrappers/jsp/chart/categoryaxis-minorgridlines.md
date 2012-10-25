@@ -17,39 +17,42 @@ The color of the lines. Any valid CSS color string will work here, including hex
 rgb.
 
 #### Example
-    <kendo:chart-categoryAxis-minorGridLines color="color">
-    </kendo:chart-categoryAxis-minorGridLines>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### dashType `String`
 
 The dash type of the grid lines.
 
 #### Example
-    <kendo:chart-categoryAxis-minorGridLines dashType="dashType">
-    </kendo:chart-categoryAxis-minorGridLines>
-    
+    <kendo:chart dashType="dashType">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the lines.
 
 #### Example
-    <kendo:chart-categoryAxis-minorGridLines visible="visible">
-    </kendo:chart-categoryAxis-minorGridLines>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the lines.
 
 #### Example
-    <kendo:chart-categoryAxis-minorGridLines width="width">
-    </kendo:chart-categoryAxis-minorGridLines>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

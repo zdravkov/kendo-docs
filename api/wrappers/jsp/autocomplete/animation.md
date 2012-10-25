@@ -16,21 +16,22 @@ A JSP tag representing Kendo Animation.
 Animation to be used for closing of the popup.
 
 #### Example
-    <kendo:autoComplete-animation close="close">
-    </kendo:autoComplete-animation>
-    
+    <kendo:autoComplete close="close">
+    </kendo:autoComplete>
+
+
 
 ### open `Object`
 
 Animation to be used for opening of the popup.
 
 #### Example
-    <kendo:autoComplete-animation open="open">
-    </kendo:autoComplete-animation>
-    
+    <kendo:autoComplete open="open">
+    </kendo:autoComplete>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

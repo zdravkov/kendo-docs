@@ -17,39 +17,42 @@ The background of the gauge area.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge-gaugeArea background="background">
-    </kendo:radialGauge-gaugeArea>
-    
+    <kendo:radialGauge background="background">
+    </kendo:radialGauge>
+
+
 
 ### height `float`
 
 The height of the gauge area.
 
 #### Example
-    <kendo:radialGauge-gaugeArea height="height">
-    </kendo:radialGauge-gaugeArea>
-    
+    <kendo:radialGauge height="height">
+    </kendo:radialGauge>
+
+
 
 ### margin `float`
 
 The margin of the gauge area.
 
 #### Example
-    <kendo:radialGauge-gaugeArea margin="margin">
-    </kendo:radialGauge-gaugeArea>
-    
+    <kendo:radialGauge margin="margin">
+    </kendo:radialGauge>
+
+
 
 ### width `float`
 
 The width of the gauge area.
 
 #### Example
-    <kendo:radialGauge-gaugeArea width="width">
-    </kendo:radialGauge-gaugeArea>
-    
+    <kendo:radialGauge width="width">
+    </kendo:radialGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

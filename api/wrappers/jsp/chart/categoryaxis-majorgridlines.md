@@ -16,39 +16,42 @@ A JSP tag representing Kendo MajorGridLines.
 The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-categoryAxis-majorGridLines color="color">
-    </kendo:chart-categoryAxis-majorGridLines>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### dashType `String`
 
 The dash type of the grid lines.
 
 #### Example
-    <kendo:chart-categoryAxis-majorGridLines dashType="dashType">
-    </kendo:chart-categoryAxis-majorGridLines>
-    
+    <kendo:chart dashType="dashType">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the lines.
 
 #### Example
-    <kendo:chart-categoryAxis-majorGridLines visible="visible">
-    </kendo:chart-categoryAxis-majorGridLines>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the lines.
 
 #### Example
-    <kendo:chart-categoryAxis-majorGridLines width="width">
-    </kendo:chart-categoryAxis-majorGridLines>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

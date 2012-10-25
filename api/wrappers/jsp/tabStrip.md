@@ -18,7 +18,8 @@ Specifies whether the TabStrip should be able to collapse completely when clicki
 #### Example
     <kendo:tabStrip collapsible="collapsible">
     </kendo:tabStrip>
-    
+
+
 
 ### dataContentField `String`
 
@@ -28,7 +29,8 @@ the tab content element.
 #### Example
     <kendo:tabStrip dataContentField="dataContentField">
     </kendo:tabStrip>
-    
+
+
 
 ### dataContentUrlField `String`
 
@@ -38,7 +40,8 @@ the ajax loaded tab content.
 #### Example
     <kendo:tabStrip dataContentUrlField="dataContentUrlField">
     </kendo:tabStrip>
-    
+
+
 
 ### dataImageUrlField `String`
 
@@ -48,7 +51,8 @@ the tab.
 #### Example
     <kendo:tabStrip dataImageUrlField="dataImageUrlField">
     </kendo:tabStrip>
-    
+
+
 
 ### dataSpriteCssClass `String`
 
@@ -58,7 +62,8 @@ the tab.
 #### Example
     <kendo:tabStrip dataSpriteCssClass="dataSpriteCssClass">
     </kendo:tabStrip>
-    
+
+
 
 ### dataTextField `String`
 
@@ -67,7 +72,8 @@ Sets the field of the data item that provides the text name of the tab.
 #### Example
     <kendo:tabStrip dataTextField="dataTextField">
     </kendo:tabStrip>
-    
+
+
 
 ### dataUrlField `String`
 
@@ -77,9 +83,8 @@ tab.
 #### Example
     <kendo:tabStrip dataUrlField="dataUrlField">
     </kendo:tabStrip>
-    
 
-## Event Attributes
+
 
 ### activate `String`
 
@@ -94,6 +99,8 @@ Triggered just after a tab is being made visible, but before the end of the anim
         }
     </script>
 
+
+
 ### contentLoad `String`
 
 Triggered when content is fetched from an AJAX request.
@@ -107,6 +114,8 @@ Triggered when content is fetched from an AJAX request.
         }
     </script>
 
+
+
 ### error `String`
 
 Triggered when an AJAX request results in an error.
@@ -119,6 +128,71 @@ Triggered when an AJAX request results in an error.
             // Code to handle the error event.
         }
     </script>
+
+
+
+### select `String`
+
+Triggered before a tab is selected.
+
+#### Example
+    <kendo:tabStrip select="handle_select">
+    </kendo:tabStrip>
+    <script>
+        function handle_select(e) {
+            // Code to handle the select event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### activate `String`
+
+Triggered just after a tab is being made visible, but before the end of the animation
+
+#### Example
+    <kendo:tabStrip activate="handle_activate">
+    </kendo:tabStrip>
+    <script>
+        function handle_activate(e) {
+            // Code to handle the activate event.
+        }
+    </script>
+
+
+
+### contentLoad `String`
+
+Triggered when content is fetched from an AJAX request.
+
+#### Example
+    <kendo:tabStrip contentLoad="handle_contentLoad">
+    </kendo:tabStrip>
+    <script>
+        function handle_contentLoad(e) {
+            // Code to handle the contentLoad event.
+        }
+    </script>
+
+
+
+### error `String`
+
+Triggered when an AJAX request results in an error.
+
+#### Example
+    <kendo:tabStrip error="handle_error">
+    </kendo:tabStrip>
+    <script>
+        function handle_error(e) {
+            // Code to handle the error event.
+        }
+    </script>
+
+
 
 ### select `String`
 

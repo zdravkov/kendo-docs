@@ -16,46 +16,66 @@ A JSP tag representing Kendo Transport.
 Options for remote create data operation, or the URL of the remote service.
 
 #### Example
-    <kendo:dataSource-transport create="create">
-    </kendo:dataSource-transport>
-    
+    <kendo:dataSource create="create">
+    </kendo:dataSource>
+
+
 
 ### destroy `String`
 
 Options for remote destroy data operation, or the URL of the remote service.
 
 #### Example
-    <kendo:dataSource-transport destroy="destroy">
-    </kendo:dataSource-transport>
-    
+    <kendo:dataSource destroy="destroy">
+    </kendo:dataSource>
+
+
 
 ### read `String`
 
 Options for remote read data operation, or the URL of the remote service.
 
 #### Example
-    <kendo:dataSource-transport read="read">
-    </kendo:dataSource-transport>
-    
+    <kendo:dataSource read="read">
+    </kendo:dataSource>
+
+
 
 ### update `String`
 
 Options for remote update data operation, or the URL of the remote service.
 
 #### Example
-    <kendo:dataSource-transport update="update">
-    </kendo:dataSource-transport>
-    
+    <kendo:dataSource update="update">
+    </kendo:dataSource>
 
-## Event Attributes
+
 
 ### parameterMap `String`
 
 Convert the request parameters from dataSource format to remote service specific format.
 
 #### Example
-    <kendo:dataSource-transport parameterMap="handle_parameterMap">
-    </kendo:dataSource-transport>
+    <kendo:dataSource parameterMap="handle_parameterMap">
+    </kendo:dataSource>
+    <script>
+        function handle_parameterMap(e) {
+            // Code to handle the parameterMap event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### parameterMap `String`
+
+Convert the request parameters from dataSource format to remote service specific format.
+
+#### Example
+    <kendo:dataSource parameterMap="handle_parameterMap">
+    </kendo:dataSource>
     <script>
         function handle_parameterMap(e) {
             // Code to handle the parameterMap event.

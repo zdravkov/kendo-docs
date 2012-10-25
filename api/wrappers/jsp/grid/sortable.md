@@ -16,21 +16,22 @@ A JSP tag representing Kendo Sortable.
 Defines whether column can have unsorted state.
 
 #### Example
-    <kendo:grid-sortable allowUnsort="allowUnsort">
-    </kendo:grid-sortable>
-    
+    <kendo:grid allowUnsort="allowUnsort">
+    </kendo:grid>
+
+
 
 ### mode `String`
 
 Defines sorting mode. Possible values:
 
 #### Example
-    <kendo:grid-sortable mode="mode">
-    </kendo:grid-sortable>
-    
+    <kendo:grid mode="mode">
+    </kendo:grid>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

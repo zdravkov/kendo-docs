@@ -18,7 +18,8 @@ Sets fields on which initial aggregates should be calculated
 #### Example
     <kendo:dataSource aggregate="aggregate">
     </kendo:dataSource>
-    
+
+
 
 ### autoSync `boolean`
 
@@ -27,7 +28,8 @@ Enables (
 #### Example
     <kendo:dataSource autoSync="autoSync">
     </kendo:dataSource>
-    
+
+
 
 ### batch `boolean`
 
@@ -36,7 +38,8 @@ Enables (
 #### Example
     <kendo:dataSource batch="batch">
     </kendo:dataSource>
-    
+
+
 
 ### data `Object`
 
@@ -45,7 +48,8 @@ Specifies the local JavaScript object to use for the data source.
 #### Example
     <kendo:dataSource data="data">
     </kendo:dataSource>
-    
+
+
 
 ### filter `Object`
 
@@ -54,7 +58,8 @@ Sets the initial filter.
 #### Example
     <kendo:dataSource filter="filter">
     </kendo:dataSource>
-    
+
+
 
 ### group `Object`
 
@@ -63,7 +68,8 @@ Sets initial grouping
 #### Example
     <kendo:dataSource group="group">
     </kendo:dataSource>
-    
+
+
 
 ### page `float`
 
@@ -72,7 +78,8 @@ Sets the index of the displayed page of data.
 #### Example
     <kendo:dataSource page="page">
     </kendo:dataSource>
-    
+
+
 
 ### pageSize `float`
 
@@ -81,7 +88,8 @@ Sets the number of records which contains a given page of data.
 #### Example
     <kendo:dataSource pageSize="pageSize">
     </kendo:dataSource>
-    
+
+
 
 ### serverAggregates `boolean`
 
@@ -90,7 +98,8 @@ Determines if aggregates are calculated on the server or not. By default aggrega
 #### Example
     <kendo:dataSource serverAggregates="serverAggregates">
     </kendo:dataSource>
-    
+
+
 
 ### serverFiltering `boolean`
 
@@ -99,7 +108,8 @@ Determines if filtering of the data is handled on the server. By default filteri
 #### Example
     <kendo:dataSource serverFiltering="serverFiltering">
     </kendo:dataSource>
-    
+
+
 
 ### serverGrouping `boolean`
 
@@ -108,7 +118,8 @@ Determines if grouping of the data is handled on the server. By default grouping
 #### Example
     <kendo:dataSource serverGrouping="serverGrouping">
     </kendo:dataSource>
-    
+
+
 
 ### serverPaging `boolean`
 
@@ -117,7 +128,8 @@ Determines if paging of the data is on the server. By default paging is performe
 #### Example
     <kendo:dataSource serverPaging="serverPaging">
     </kendo:dataSource>
-    
+
+
 
 ### serverSorting `boolean`
 
@@ -126,7 +138,8 @@ Determines if sorting of the data should is handled on the server. By default so
 #### Example
     <kendo:dataSource serverSorting="serverSorting">
     </kendo:dataSource>
-    
+
+
 
 ### sort `Object`
 
@@ -135,7 +148,8 @@ Sets initial sort order
 #### Example
     <kendo:dataSource sort="sort">
     </kendo:dataSource>
-    
+
+
 
 ### type `String`
 
@@ -144,9 +158,8 @@ Loads transport with preconfigured settings. Currently supports only "odata" (Re
 #### Example
     <kendo:dataSource type="type">
     </kendo:dataSource>
-    
 
-## Event Attributes
+
 
 ### change `String`
 
@@ -161,6 +174,8 @@ Fires when data is changed or read from the transport.
         }
     </script>
 
+
+
 ### error `String`
 
 Fires when an error occurs during data read or sync. The event arguments are the same as the ones of the error event of $.ajax().
@@ -173,6 +188,8 @@ Fires when an error occurs during data read or sync. The event arguments are the
             // Code to handle the error event.
         }
     </script>
+
+
 
 ### sync `String`
 
@@ -187,6 +204,8 @@ Fires after changes are synced.
         }
     </script>
 
+
+
 ### requestStart `String`
 
 Fires when data request is to be made.
@@ -199,6 +218,86 @@ Fires when data request is to be made.
             // Code to handle the requestStart event.
         }
     </script>
+
+
+
+### requestEnd `String`
+
+Fires when a data request is received. Raised after a Create, Read, Update or Destroy request is performed.
+
+#### Example
+    <kendo:dataSource requestEnd="handle_requestEnd">
+    </kendo:dataSource>
+    <script>
+        function handle_requestEnd(e) {
+            // Code to handle the requestEnd event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### change `String`
+
+Fires when data is changed or read from the transport.
+
+#### Example
+    <kendo:dataSource change="handle_change">
+    </kendo:dataSource>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
+
+
+### error `String`
+
+Fires when an error occurs during data read or sync. The event arguments are the same as the ones of the error event of $.ajax().
+
+#### Example
+    <kendo:dataSource error="handle_error">
+    </kendo:dataSource>
+    <script>
+        function handle_error(e) {
+            // Code to handle the error event.
+        }
+    </script>
+
+
+
+### sync `String`
+
+Fires after changes are synced.
+
+#### Example
+    <kendo:dataSource sync="handle_sync">
+    </kendo:dataSource>
+    <script>
+        function handle_sync(e) {
+            // Code to handle the sync event.
+        }
+    </script>
+
+
+
+### requestStart `String`
+
+Fires when data request is to be made.
+
+#### Example
+    <kendo:dataSource requestStart="handle_requestStart">
+    </kendo:dataSource>
+    <script>
+        function handle_requestStart(e) {
+            // Code to handle the requestStart event.
+        }
+    </script>
+
+
 
 ### requestEnd `String`
 

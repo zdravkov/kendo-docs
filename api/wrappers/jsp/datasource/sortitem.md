@@ -16,21 +16,22 @@ A JSP tag representing Kendo SortItem.
 Sets the field to sort on.
 
 #### Example
-    <kendo:dataSource-sortItem field="field">
-    </kendo:dataSource-sortItem>
-    
+    <kendo:dataSource field="field">
+    </kendo:dataSource>
+
+
 
 ### dir `String`
 
 Sets the sort direction. Possible values are: "asc", "desc", null. If null is set, the sort expression is removed.
 
 #### Example
-    <kendo:dataSource-sortItem dir="dir">
-    </kendo:dataSource-sortItem>
-    
+    <kendo:dataSource dir="dir">
+    </kendo:dataSource>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

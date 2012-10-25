@@ -18,7 +18,8 @@ Indicates whether the list view will call read on the DataSource initially.
 #### Example
     <kendo:listView autoBind="autoBind">
     </kendo:listView>
-    
+
+
 
 ### navigatable `boolean`
 
@@ -27,7 +28,8 @@ Indicates whether keyboard navigation is enabled/disabled.
 #### Example
     <kendo:listView navigatable="navigatable">
     </kendo:listView>
-    
+
+
 
 ### selectable `String`
 
@@ -36,9 +38,8 @@ Indicates whether selection is enabled/disabled. Possible values:
 #### Example
     <kendo:listView selectable="selectable">
     </kendo:listView>
-    
 
-## Event Attributes
+
 
 ### editTemplate `String`
 
@@ -53,6 +54,8 @@ Specifies ListView item template in edit mode.
         }
     </script>
 
+
+
 ### template `String`
 
 Specifies ListView item template.
@@ -66,6 +69,8 @@ Specifies ListView item template.
         }
     </script>
 
+
+
 ### change `String`
 
 Fires when the list view selection has changed.
@@ -78,6 +83,8 @@ Fires when the list view selection has changed.
             // Code to handle the change event.
         }
     </script>
+
+
 
 ### dataBound `String`
 
@@ -93,6 +100,8 @@ and is about to render it.
         }
     </script>
 
+
+
 ### edit `String`
 
 Fires when the list view enters edit mode.
@@ -105,6 +114,102 @@ Fires when the list view enters edit mode.
             // Code to handle the edit event.
         }
     </script>
+
+
+
+### remove `String`
+
+Fires before the list view item is removed.
+
+#### Example
+    <kendo:listView remove="handle_remove">
+    </kendo:listView>
+    <script>
+        function handle_remove(e) {
+            // Code to handle the remove event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### editTemplate `String`
+
+Specifies ListView item template in edit mode.
+
+#### Example
+    <kendo:listView editTemplate="handle_editTemplate">
+    </kendo:listView>
+    <script>
+        function handle_editTemplate(e) {
+            // Code to handle the editTemplate event.
+        }
+    </script>
+
+
+
+### template `String`
+
+Specifies ListView item template.
+
+#### Example
+    <kendo:listView template="handle_template">
+    </kendo:listView>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+
+
+### change `String`
+
+Fires when the list view selection has changed.
+
+#### Example
+    <kendo:listView change="handle_change">
+    </kendo:listView>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
+
+
+### dataBound `String`
+
+Fires when the list view has received data from the data source.
+and is about to render it.
+
+#### Example
+    <kendo:listView dataBound="handle_dataBound">
+    </kendo:listView>
+    <script>
+        function handle_dataBound(e) {
+            // Code to handle the dataBound event.
+        }
+    </script>
+
+
+
+### edit `String`
+
+Fires when the list view enters edit mode.
+
+#### Example
+    <kendo:listView edit="handle_edit">
+    </kendo:listView>
+    <script>
+        function handle_edit(e) {
+            // Code to handle the edit event.
+        }
+    </script>
+
+
 
 ### remove `String`
 

@@ -16,48 +16,52 @@ A JSP tag representing Kendo Editable.
 Defines the text that will be used in confirmation box when delete an item.
 
 #### Example
-    <kendo:grid-editable confirmation="confirmation">
-    </kendo:grid-editable>
-    
+    <kendo:grid confirmation="confirmation">
+    </kendo:grid>
+
+
 
 ### destroy `boolean`
 
 Indicates whether item should be deleted when click on delete button.
 
 #### Example
-    <kendo:grid-editable destroy="destroy">
-    </kendo:grid-editable>
-    
+    <kendo:grid destroy="destroy">
+    </kendo:grid>
+
+
 
 ### mode `String`
 
 Indicates which of the available edit modes(incell(default)/inline/popup) will be used
 
 #### Example
-    <kendo:grid-editable mode="mode">
-    </kendo:grid-editable>
-    
+    <kendo:grid mode="mode">
+    </kendo:grid>
+
+
 
 ### template `String`
 
 Template which will be use during popup editing
 
 #### Example
-    <kendo:grid-editable template="template">
-    </kendo:grid-editable>
-    
+    <kendo:grid template="template">
+    </kendo:grid>
+
+
 
 ### update `boolean`
 
 Indicates whether item should be switched to edit mode on click.
 
 #### Example
-    <kendo:grid-editable update="update">
-    </kendo:grid-editable>
-    
+    <kendo:grid update="update">
+    </kendo:grid>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

@@ -17,9 +17,10 @@ The background color of the labels. Any valid CSS color string will work here,
 including hex and rgb.
 
 #### Example
-    <kendo:chart-seriesDefaults-labels background="background">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### color `String`
 
@@ -27,9 +28,10 @@ The text color of the labels. Any valid CSS color string will work here, inlcudi
 and rgb.
 
 #### Example
-    <kendo:chart-seriesDefaults-labels color="color">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### font `String`
 
@@ -37,36 +39,40 @@ The font style of the labels.
 labels
 
 #### Example
-    <kendo:chart-seriesDefaults-labels font="font">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart font="font">
+    </kendo:chart>
+
+
 
 ### format `String`
 
 The format of the labels.
 
 #### Example
-    <kendo:chart-seriesDefaults-labels format="format">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart format="format">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the labels.
 
 #### Example
-    <kendo:chart-seriesDefaults-labels margin="margin">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding of the labels.
 
 #### Example
-    <kendo:chart-seriesDefaults-labels padding="padding">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### template `String`
 
@@ -74,21 +80,22 @@ The label template.
 Template variables:
 
 #### Example
-    <kendo:chart-seriesDefaults-labels template="template">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart template="template">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the labels.
 
 #### Example
-    <kendo:chart-seriesDefaults-labels visible="visible">
-    </kendo:chart-seriesDefaults-labels>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

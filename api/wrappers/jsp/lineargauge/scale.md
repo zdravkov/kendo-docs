@@ -16,36 +16,40 @@ A JSP tag representing Kendo Scale.
 The interval between major divisions.
 
 #### Example
-    <kendo:linearGauge-scale majorUnit="majorUnit">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge majorUnit="majorUnit">
+    </kendo:linearGauge>
+
+
 
 ### max `float`
 
 The maximum value of the scale.
 
 #### Example
-    <kendo:linearGauge-scale max="max">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge max="max">
+    </kendo:linearGauge>
+
+
 
 ### min `float`
 
 The minimum value of the scale.
 
 #### Example
-    <kendo:linearGauge-scale min="min">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge min="min">
+    </kendo:linearGauge>
+
+
 
 ### minorUnit `float`
 
 The interval between minor divisions.
 
 #### Example
-    <kendo:linearGauge-scale minorUnit="minorUnit">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge minorUnit="minorUnit">
+    </kendo:linearGauge>
+
+
 
 ### mirror `boolean`
 
@@ -53,9 +57,10 @@ Mirrors the scale labels and ticks.
 If the labels are normally on the left side of the scale, mirroring the scale will render them to the right.
 
 #### Example
-    <kendo:linearGauge-scale mirror="mirror">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge mirror="mirror">
+    </kendo:linearGauge>
+
+
 
 ### ranges `Object`
 
@@ -63,30 +68,32 @@ The ranges of the scale.
 The range fields:
 
 #### Example
-    <kendo:linearGauge-scale ranges="ranges">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge ranges="ranges">
+    </kendo:linearGauge>
+
+
 
 ### reverse `boolean`
 
 Reverses the axis direction - values increase from right to left and from top to bottom.
 
 #### Example
-    <kendo:linearGauge-scale reverse="reverse">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge reverse="reverse">
+    </kendo:linearGauge>
+
+
 
 ### vertical `boolean`
 
 The position of the gauge.
 
 #### Example
-    <kendo:linearGauge-scale vertical="vertical">
-    </kendo:linearGauge-scale>
-    
+    <kendo:linearGauge vertical="vertical">
+    </kendo:linearGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
    

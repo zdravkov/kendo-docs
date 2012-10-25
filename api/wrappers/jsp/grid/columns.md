@@ -11,8 +11,7 @@ A JSP tag representing Kendo Columns.
 ## Configuration Attributes
 
 
-## Event Attributes
-
+### Event Attributes
 
 ## Event Tags
  

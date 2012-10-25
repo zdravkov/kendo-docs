@@ -16,18 +16,20 @@ A JSP tag representing Kendo ValueAxis.
 Value at which the category axis crosses this axis.
 
 #### Example
-    <kendo:chart-valueAxis axisCrossingValue="axisCrossingValue">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart axisCrossingValue="axisCrossingValue">
+    </kendo:chart>
+
+
 
 ### axisCrossingValues `Object`
 
 Value indicies at which the category axes cross the value axis.
 
 #### Example
-    <kendo:chart-valueAxis axisCrossingValues="axisCrossingValues">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart axisCrossingValues="axisCrossingValues">
+    </kendo:chart>
+
+
 
 ### color `String`
 
@@ -35,18 +37,20 @@ Color to apply to all axis elements.
 Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-valueAxis color="color">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### majorUnit `float`
 
 The interval between major divisions.
 
 #### Example
-    <kendo:chart-valueAxis majorUnit="majorUnit">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart majorUnit="majorUnit">
+    </kendo:chart>
+
+
 
 ### max `float`
 
@@ -54,9 +58,10 @@ The maximum value of the axis.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart-valueAxis max="max">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart max="max">
+    </kendo:chart>
+
+
 
 ### min `float`
 
@@ -64,9 +69,10 @@ The minimum value of the axis.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart-valueAxis min="min">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart min="min">
+    </kendo:chart>
+
+
 
 ### minorUnit `float`
 
@@ -74,18 +80,20 @@ The interval between minor divisions.
 It defaults to 1/5th of the majorUnit.
 
 #### Example
-    <kendo:chart-valueAxis minorUnit="minorUnit">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart minorUnit="minorUnit">
+    </kendo:chart>
+
+
 
 ### name `Object`
 
 The unique axis name.
 
 #### Example
-    <kendo:chart-valueAxis name="name">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart name="name">
+    </kendo:chart>
+
+
 
 ### plotBands `Object`
 
@@ -93,9 +101,10 @@ The plot bands of the value axis.
 The plot band fields:
 
 #### Example
-    <kendo:chart-valueAxis plotBands="plotBands">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart plotBands="plotBands">
+    </kendo:chart>
+
+
 
 ### reverse `boolean`
 
@@ -103,21 +112,22 @@ Reverses the axis direction -
 values increase from right to left and from top to bottom.
 
 #### Example
-    <kendo:chart-valueAxis reverse="reverse">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart reverse="reverse">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the axis.
 
 #### Example
-    <kendo:chart-valueAxis visible="visible">
-    </kendo:chart-valueAxis>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
        

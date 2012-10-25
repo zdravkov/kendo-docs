@@ -18,9 +18,8 @@ Specifies how the
 #### Example
     <kendo:panelBar expandMode="expandMode">
     </kendo:panelBar>
-    
 
-## Event Attributes
+
 
 ### activate `String`
 
@@ -35,6 +34,8 @@ Triggered when an item of a PanelBar is activated.
         }
     </script>
 
+
+
 ### collapse `String`
 
 Triggered when an item of a PanelBar is collapsed.
@@ -47,6 +48,8 @@ Triggered when an item of a PanelBar is collapsed.
             // Code to handle the collapse event.
         }
     </script>
+
+
 
 ### contentLoad `String`
 
@@ -61,6 +64,8 @@ Fires when content is fetched from an AJAX request.
         }
     </script>
 
+
+
 ### error `String`
 
 Fires when AJAX request results in an error.
@@ -74,6 +79,8 @@ Fires when AJAX request results in an error.
         }
     </script>
 
+
+
 ### expand `String`
 
 Triggered when an item of a PanelBar is expanded.
@@ -86,6 +93,101 @@ Triggered when an item of a PanelBar is expanded.
             // Code to handle the expand event.
         }
     </script>
+
+
+
+### select `String`
+
+Triggered when an item of a PanelBar is selected.
+
+#### Example
+    <kendo:panelBar select="handle_select">
+    </kendo:panelBar>
+    <script>
+        function handle_select(e) {
+            // Code to handle the select event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### activate `String`
+
+Triggered when an item of a PanelBar is activated.
+
+#### Example
+    <kendo:panelBar activate="handle_activate">
+    </kendo:panelBar>
+    <script>
+        function handle_activate(e) {
+            // Code to handle the activate event.
+        }
+    </script>
+
+
+
+### collapse `String`
+
+Triggered when an item of a PanelBar is collapsed.
+
+#### Example
+    <kendo:panelBar collapse="handle_collapse">
+    </kendo:panelBar>
+    <script>
+        function handle_collapse(e) {
+            // Code to handle the collapse event.
+        }
+    </script>
+
+
+
+### contentLoad `String`
+
+Fires when content is fetched from an AJAX request.
+
+#### Example
+    <kendo:panelBar contentLoad="handle_contentLoad">
+    </kendo:panelBar>
+    <script>
+        function handle_contentLoad(e) {
+            // Code to handle the contentLoad event.
+        }
+    </script>
+
+
+
+### error `String`
+
+Fires when AJAX request results in an error.
+
+#### Example
+    <kendo:panelBar error="handle_error">
+    </kendo:panelBar>
+    <script>
+        function handle_error(e) {
+            // Code to handle the error event.
+        }
+    </script>
+
+
+
+### expand `String`
+
+Triggered when an item of a PanelBar is expanded.
+
+#### Example
+    <kendo:panelBar expand="handle_expand">
+    </kendo:panelBar>
+    <script>
+        function handle_expand(e) {
+            // Code to handle the expand event.
+        }
+    </script>
+
+
 
 ### select `String`
 

@@ -16,45 +16,50 @@ A JSP tag representing Kendo Labels.
 The background color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-categoryAxis-labels background="background">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### color `String`
 
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-categoryAxis-labels color="color">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### font `String`
 
 The font style of the labels.
 
 #### Example
-    <kendo:chart-categoryAxis-labels font="font">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart font="font">
+    </kendo:chart>
+
+
 
 ### format `String`
 
 The format of the labels.
 
 #### Example
-    <kendo:chart-categoryAxis-labels format="format">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart format="format">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the labels.
 
 #### Example
-    <kendo:chart-categoryAxis-labels margin="margin">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### mirror `boolean`
 
@@ -63,27 +68,30 @@ If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
 
 #### Example
-    <kendo:chart-categoryAxis-labels mirror="mirror">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart mirror="mirror">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding of the labels.
 
 #### Example
-    <kendo:chart-categoryAxis-labels padding="padding">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### rotation `float`
 
 The rotation angle of the labels.
 
 #### Example
-    <kendo:chart-categoryAxis-labels rotation="rotation">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart rotation="rotation">
+    </kendo:chart>
+
+
 
 ### skip `float`
 
@@ -91,9 +99,10 @@ Number of labels to skip.
 Skips rendering the first n labels.
 
 #### Example
-    <kendo:chart-categoryAxis-labels skip="skip">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart skip="skip">
+    </kendo:chart>
+
+
 
 ### step `float`
 
@@ -101,9 +110,10 @@ Label rendering step.
 Every n-th label is rendered where n is the step
 
 #### Example
-    <kendo:chart-categoryAxis-labels step="step">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart step="step">
+    </kendo:chart>
+
+
 
 ### template `String`
 
@@ -111,39 +121,42 @@ The label template.
 Template variables:
 
 #### Example
-    <kendo:chart-categoryAxis-labels template="template">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart template="template">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the labels.
 
 #### Example
-    <kendo:chart-categoryAxis-labels visible="visible">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
+
+
 
 ### culture `String`
 
 Culture to use for formatting the dates. See
 
 #### Example
-    <kendo:chart-categoryAxis-labels culture="culture">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart culture="culture">
+    </kendo:chart>
+
+
 
 ### dateFormats `Object`
 
 Date format strings
 
 #### Example
-    <kendo:chart-categoryAxis-labels dateFormats="dateFormats">
-    </kendo:chart-categoryAxis-labels>
-    
+    <kendo:chart dateFormats="dateFormats">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

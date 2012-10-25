@@ -16,21 +16,22 @@ A JSP tag representing Kendo Animation.
 Animation to be used for closing of the popup.
 
 #### Example
-    <kendo:comboBox-animation close="close">
-    </kendo:comboBox-animation>
-    
+    <kendo:comboBox close="close">
+    </kendo:comboBox>
+
+
 
 ### open `Object`
 
 Animation to be used for opening of the popup.
 
 #### Example
-    <kendo:comboBox-animation open="open">
-    </kendo:comboBox-animation>
-    
+    <kendo:comboBox open="open">
+    </kendo:comboBox>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

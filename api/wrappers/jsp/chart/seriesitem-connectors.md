@@ -16,30 +16,32 @@ A JSP tag representing Kendo Connectors.
 The color of the connector line.
 
 #### Example
-    <kendo:chart-seriesItem-connectors color="color">
-    </kendo:chart-seriesItem-connectors>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding between the connector line and the label, and connector line and donut chart.
 
 #### Example
-    <kendo:chart-seriesItem-connectors padding="padding">
-    </kendo:chart-seriesItem-connectors>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the connector line.
 
 #### Example
-    <kendo:chart-seriesItem-connectors width="width">
-    </kendo:chart-seriesItem-connectors>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

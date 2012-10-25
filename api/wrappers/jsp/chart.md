@@ -18,7 +18,8 @@ The default colors for the chart's series. When all colors are used, new colors 
 #### Example
     <kendo:chart seriesColors="seriesColors">
     </kendo:chart>
-    
+
+
 
 ### theme `String`
 
@@ -27,7 +28,8 @@ Sets Chart theme. Available themes: default, blueOpal, black.
 #### Example
     <kendo:chart theme="theme">
     </kendo:chart>
-    
+
+
 
 ### transitions `boolean`
 
@@ -36,7 +38,8 @@ A value indicating if transition animations should be played.
 #### Example
     <kendo:chart transitions="transitions">
     </kendo:chart>
-    
+
+
 
 ### yAxis `Object`
 
@@ -46,9 +49,8 @@ See
 #### Example
     <kendo:chart yAxis="yAxis">
     </kendo:chart>
-    
 
-## Event Attributes
+
 
 ### axisLabelClick `String`
 
@@ -62,6 +64,8 @@ Fires when an axis label is clicked.
             // Code to handle the axisLabelClick event.
         }
     </script>
+
+
 
 ### dataBound `String`
 
@@ -77,6 +81,8 @@ and is about to render it.
         }
     </script>
 
+
+
 ### plotAreaClick `String`
 
 Fires when plot area is clicked.
@@ -90,6 +96,8 @@ Fires when plot area is clicked.
         }
     </script>
 
+
+
 ### seriesClick `String`
 
 Fires when chart series are clicked.
@@ -102,6 +110,87 @@ Fires when chart series are clicked.
             // Code to handle the seriesClick event.
         }
     </script>
+
+
+
+### seriesHover `String`
+
+Fires when chart series are hovered.
+
+#### Example
+    <kendo:chart seriesHover="handle_seriesHover">
+    </kendo:chart>
+    <script>
+        function handle_seriesHover(e) {
+            // Code to handle the seriesHover event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### axisLabelClick `String`
+
+Fires when an axis label is clicked.
+
+#### Example
+    <kendo:chart axisLabelClick="handle_axisLabelClick">
+    </kendo:chart>
+    <script>
+        function handle_axisLabelClick(e) {
+            // Code to handle the axisLabelClick event.
+        }
+    </script>
+
+
+
+### dataBound `String`
+
+Fires when the chart has received data from the data source
+and is about to render it.
+
+#### Example
+    <kendo:chart dataBound="handle_dataBound">
+    </kendo:chart>
+    <script>
+        function handle_dataBound(e) {
+            // Code to handle the dataBound event.
+        }
+    </script>
+
+
+
+### plotAreaClick `String`
+
+Fires when plot area is clicked.
+
+#### Example
+    <kendo:chart plotAreaClick="handle_plotAreaClick">
+    </kendo:chart>
+    <script>
+        function handle_plotAreaClick(e) {
+            // Code to handle the plotAreaClick event.
+        }
+    </script>
+
+
+
+### seriesClick `String`
+
+Fires when chart series are clicked.
+
+#### Example
+    <kendo:chart seriesClick="handle_seriesClick">
+    </kendo:chart>
+    <script>
+        function handle_seriesClick(e) {
+            // Code to handle the seriesClick event.
+        }
+    </script>
+
+
 
 ### seriesHover `String`
 

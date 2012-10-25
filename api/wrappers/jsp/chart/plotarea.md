@@ -16,30 +16,32 @@ A JSP tag representing Kendo PlotArea.
 The background color of the plot area.
 
 #### Example
-    <kendo:chart-plotArea background="background">
-    </kendo:chart-plotArea>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### opacity `float`
 
 The background opacity of the plot area.
 
 #### Example
-    <kendo:chart-plotArea opacity="opacity">
-    </kendo:chart-plotArea>
-    
+    <kendo:chart opacity="opacity">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the plot area.
 
 #### Example
-    <kendo:chart-plotArea margin="margin">
-    </kendo:chart-plotArea>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

@@ -16,45 +16,50 @@ A JSP tag representing Kendo Tooltip.
 The background color of the tooltip. The default is determined from the series color.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip background="background">
-    </kendo:chart-seriesDefaults-tooltip>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip color="color">
-    </kendo:chart-seriesDefaults-tooltip>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### font `String`
 
 The tooltip font.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip font="font">
-    </kendo:chart-seriesDefaults-tooltip>
-    
+    <kendo:chart font="font">
+    </kendo:chart>
+
+
 
 ### format `String`
 
 The tooltip format.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip format="format">
-    </kendo:chart-seriesDefaults-tooltip>
-    
+    <kendo:chart format="format">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding of the tooltip.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip padding="padding">
-    </kendo:chart-seriesDefaults-tooltip>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### template `String`
 
@@ -62,21 +67,22 @@ The tooltip template.
 Template variables:
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip template="template">
-    </kendo:chart-seriesDefaults-tooltip>
-    
+    <kendo:chart template="template">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 A value indicating if the tooltip should be displayed.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip visible="visible">
-    </kendo:chart-seriesDefaults-tooltip>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

@@ -16,30 +16,32 @@ A JSP tag representing Kendo Border.
 The color of the border.
 
 #### Example
-    <kendo:chart-seriesItem-labels-border color="color">
-    </kendo:chart-seriesItem-labels-border>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### dashType `String`
 
 The dash type of the border.
 
 #### Example
-    <kendo:chart-seriesItem-labels-border dashType="dashType">
-    </kendo:chart-seriesItem-labels-border>
-    
+    <kendo:chart dashType="dashType">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the border.
 
 #### Example
-    <kendo:chart-seriesItem-labels-border width="width">
-    </kendo:chart-seriesItem-labels-border>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

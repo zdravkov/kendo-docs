@@ -11,8 +11,7 @@ A JSP tag representing Kendo Command.
 ## Configuration Attributes
 
 
-## Event Attributes
-
+### Event Attributes
 
 ## Event Tags
  

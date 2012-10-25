@@ -16,30 +16,32 @@ A JSP tag representing Kendo ToolbarItem.
 The name of the command. One of the predefined or a custom.
 
 #### Example
-    <kendo:grid-toolbarItem name="name">
-    </kendo:grid-toolbarItem>
-    
+    <kendo:grid name="name">
+    </kendo:grid>
+
+
 
 ### template `String`
 
 The template for the command button.
 
 #### Example
-    <kendo:grid-toolbarItem template="template">
-    </kendo:grid-toolbarItem>
-    
+    <kendo:grid template="template">
+    </kendo:grid>
+
+
 
 ### text `String`
 
 The text of the command that will be set on the button.
 
 #### Example
-    <kendo:grid-toolbarItem text="text">
-    </kendo:grid-toolbarItem>
-    
+    <kendo:grid text="text">
+    </kendo:grid>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

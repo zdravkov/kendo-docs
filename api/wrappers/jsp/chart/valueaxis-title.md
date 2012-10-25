@@ -17,84 +17,92 @@ The background color of the title. Any valid CSS color string will work here, in
 hex and rgb.
 
 #### Example
-    <kendo:chart-valueAxis-title background="background">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-valueAxis-title color="color">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### font `String`
 
 The font style of the title.
 
 #### Example
-    <kendo:chart-valueAxis-title font="font">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart font="font">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the title.
 
 #### Example
-    <kendo:chart-valueAxis-title margin="margin">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding of the title.
 
 #### Example
-    <kendo:chart-valueAxis-title padding="padding">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### position `String`
 
 The position of the title.
 
 #### Example
-    <kendo:chart-valueAxis-title position="position">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart position="position">
+    </kendo:chart>
+
+
 
 ### rotation `float`
 
 The rotation angle of the title.
 
 #### Example
-    <kendo:chart-valueAxis-title rotation="rotation">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart rotation="rotation">
+    </kendo:chart>
+
+
 
 ### text `String`
 
 The text of the title.
 
 #### Example
-    <kendo:chart-valueAxis-title text="text">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart text="text">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the title.
 
 #### Example
-    <kendo:chart-valueAxis-title visible="visible">
-    </kendo:chart-valueAxis-title>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

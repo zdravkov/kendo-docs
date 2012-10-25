@@ -19,7 +19,8 @@ handle must be focused). Note: The allied largeStep will also set large tick for
 #### Example
     <kendo:rangeSlider largeStep="largeStep">
     </kendo:rangeSlider>
-    
+
+
 
 ### max `float`
 
@@ -28,7 +29,8 @@ The maximum value of the
 #### Example
     <kendo:rangeSlider max="max">
     </kendo:rangeSlider>
-    
+
+
 
 ### min `float`
 
@@ -37,7 +39,8 @@ The minimum value of the
 #### Example
     <kendo:rangeSlider min="min">
     </kendo:rangeSlider>
-    
+
+
 
 ### orientation `String`
 
@@ -47,7 +50,8 @@ The orientation of a
 #### Example
     <kendo:rangeSlider orientation="orientation">
     </kendo:rangeSlider>
-    
+
+
 
 ### selectionEnd `float`
 
@@ -56,7 +60,8 @@ The selection end value of the
 #### Example
     <kendo:rangeSlider selectionEnd="selectionEnd">
     </kendo:rangeSlider>
-    
+
+
 
 ### selectionStart `float`
 
@@ -65,7 +70,8 @@ The selection start value of the
 #### Example
     <kendo:rangeSlider selectionStart="selectionStart">
     </kendo:rangeSlider>
-    
+
+
 
 ### smallStep `float`
 
@@ -74,7 +80,8 @@ The small step value of the
 #### Example
     <kendo:rangeSlider smallStep="smallStep">
     </kendo:rangeSlider>
-    
+
+
 
 ### tickPlacement `String`
 
@@ -83,9 +90,8 @@ Denotes the location of the tick marks in the
 #### Example
     <kendo:rangeSlider tickPlacement="tickPlacement">
     </kendo:rangeSlider>
-    
 
-## Event Attributes
+
 
 ### change `String`
 
@@ -99,6 +105,41 @@ Fires when the rangeSlider value changes as a result of selecting a new value wi
             // Code to handle the change event.
         }
     </script>
+
+
+
+### slide `String`
+
+Fires when the user drags the drag handle to a new position.
+
+#### Example
+    <kendo:rangeSlider slide="handle_slide">
+    </kendo:rangeSlider>
+    <script>
+        function handle_slide(e) {
+            // Code to handle the slide event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### change `String`
+
+Fires when the rangeSlider value changes as a result of selecting a new value with one of the drag handles or the keyboard.
+
+#### Example
+    <kendo:rangeSlider change="handle_change">
+    </kendo:rangeSlider>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
+
 
 ### slide `String`
 

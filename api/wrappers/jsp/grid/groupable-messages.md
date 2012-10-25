@@ -16,12 +16,12 @@ A JSP tag representing Kendo Messages.
 Sets the text of the empty grouping area message
 
 #### Example
-    <kendo:grid-groupable-messages empty="empty">
-    </kendo:grid-groupable-messages>
-    
+    <kendo:grid empty="empty">
+    </kendo:grid>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

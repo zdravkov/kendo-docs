@@ -16,21 +16,22 @@ A JSP tag representing Kendo Animation.
 The animation(s) used for hiding of the pop-up.
 
 #### Example
-    <kendo:datePicker-animation close="close">
-    </kendo:datePicker-animation>
-    
+    <kendo:datePicker close="close">
+    </kendo:datePicker>
+
+
 
 ### open `Object`
 
 The animation(s) used for displaying of the pop-up.
 
 #### Example
-    <kendo:datePicker-animation open="open">
-    </kendo:datePicker-animation>
-    
+    <kendo:datePicker open="open">
+    </kendo:datePicker>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

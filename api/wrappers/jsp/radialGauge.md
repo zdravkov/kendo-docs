@@ -18,7 +18,8 @@ The width of the range indicators.
 #### Example
     <kendo:radialGauge rangeSize="rangeSize">
     </kendo:radialGauge>
-    
+
+
 
 ### rangeDistance `float`
 
@@ -27,7 +28,8 @@ The distance from the range indicators to the ticks.
 #### Example
     <kendo:radialGauge rangeDistance="rangeDistance">
     </kendo:radialGauge>
-    
+
+
 
 ### transitions `boolean`
 
@@ -36,10 +38,10 @@ A value indicating if transition animations should be played.
 #### Example
     <kendo:radialGauge transitions="transitions">
     </kendo:radialGauge>
-    
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
    

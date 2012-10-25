@@ -16,9 +16,10 @@ A JSP tag representing Kendo Close.
 The number of milliseconds used for the visual animation when the current tab is closed.
 
 #### Example
-    <kendo:tabStrip-animation-close duration="duration">
-    </kendo:tabStrip-animation-close>
-    
+    <kendo:tabStrip duration="duration">
+    </kendo:tabStrip>
+
+
 
 ### effects `String`
 
@@ -26,12 +27,12 @@ A whitespace-delimited string of animation effects that are utilized when the cu
 is closed. By default not specified - uses the opening animation with reverse.
 
 #### Example
-    <kendo:tabStrip-animation-close effects="effects">
-    </kendo:tabStrip-animation-close>
-    
+    <kendo:tabStrip effects="effects">
+    </kendo:tabStrip>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

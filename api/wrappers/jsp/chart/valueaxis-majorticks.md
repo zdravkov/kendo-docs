@@ -16,21 +16,22 @@ A JSP tag representing Kendo MajorTicks.
 The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
 
 #### Example
-    <kendo:chart-valueAxis-majorTicks size="size">
-    </kendo:chart-valueAxis-majorTicks>
-    
+    <kendo:chart size="size">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the major ticks.
 
 #### Example
-    <kendo:chart-valueAxis-majorTicks visible="visible">
-    </kendo:chart-valueAxis-majorTicks>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

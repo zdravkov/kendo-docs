@@ -16,30 +16,32 @@ A JSP tag representing Kendo FilterItem.
 Specifies the filter operator. One of the following values "eq", "neq", "lt", "lte", "gt", "gte", "startswith", "endswith", "contains".
 
 #### Example
-    <kendo:dataSource-filterItem operator="operator">
-    </kendo:dataSource-filterItem>
-    
+    <kendo:dataSource operator="operator">
+    </kendo:dataSource>
+
+
 
 ### field `String`
 
 Specifies the field to filter by.
 
 #### Example
-    <kendo:dataSource-filterItem field="field">
-    </kendo:dataSource-filterItem>
-    
+    <kendo:dataSource field="field">
+    </kendo:dataSource>
+
+
 
 ### value `Object`
 
 Specifies the value to filter for.
 
 #### Example
-    <kendo:dataSource-filterItem value="value">
-    </kendo:dataSource-filterItem>
-    
+    <kendo:dataSource value="value">
+    </kendo:dataSource>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

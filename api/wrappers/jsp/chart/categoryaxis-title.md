@@ -17,75 +17,82 @@ The background color of the title. Any valid CSS color string will work here, in
 hex and rgb.
 
 #### Example
-    <kendo:chart-categoryAxis-title background="background">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-categoryAxis-title color="color">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### font `String`
 
 The font style of the title.
 
 #### Example
-    <kendo:chart-categoryAxis-title font="font">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart font="font">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the title.
 
 #### Example
-    <kendo:chart-categoryAxis-title margin="margin">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### position `String`
 
 The position of the title.
 
 #### Example
-    <kendo:chart-categoryAxis-title position="position">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart position="position">
+    </kendo:chart>
+
+
 
 ### rotation `float`
 
 The rotation angle of the title.
 
 #### Example
-    <kendo:chart-categoryAxis-title rotation="rotation">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart rotation="rotation">
+    </kendo:chart>
+
+
 
 ### text `String`
 
 The text of the title.
 
 #### Example
-    <kendo:chart-categoryAxis-title text="text">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart text="text">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the title.
 
 #### Example
-    <kendo:chart-categoryAxis-title visible="visible">
-    </kendo:chart-categoryAxis-title>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

@@ -17,18 +17,20 @@ The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart-legend-labels color="color">
-    </kendo:chart-legend-labels>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### font `String`
 
 The font style of the labels.
 
 #### Example
-    <kendo:chart-legend-labels font="font">
-    </kendo:chart-legend-labels>
-    
+    <kendo:chart font="font">
+    </kendo:chart>
+
+
 
 ### template `String`
 
@@ -37,12 +39,12 @@ Template variables:
 *
 
 #### Example
-    <kendo:chart-legend-labels template="template">
-    </kendo:chart-legend-labels>
-    
+    <kendo:chart template="template">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

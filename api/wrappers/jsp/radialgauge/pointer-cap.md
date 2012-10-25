@@ -17,21 +17,22 @@ The color of the cap.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge-pointer-cap color="color">
-    </kendo:radialGauge-pointer-cap>
-    
+    <kendo:radialGauge color="color">
+    </kendo:radialGauge>
+
+
 
 ### size `float`
 
 The size of the cap in percents. (from 0 to 1)
 
 #### Example
-    <kendo:radialGauge-pointer-cap size="size">
-    </kendo:radialGauge-pointer-cap>
-    
+    <kendo:radialGauge size="size">
+    </kendo:radialGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

@@ -16,12 +16,12 @@ A JSP tag representing Kendo Overlay.
 The gradient name.
 
 #### Example
-    <kendo:chart-seriesItem-overlay gradient="gradient">
-    </kendo:chart-seriesItem-overlay>
-    
+    <kendo:chart gradient="gradient">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

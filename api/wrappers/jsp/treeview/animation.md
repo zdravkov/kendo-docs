@@ -11,8 +11,7 @@ A JSP tag representing Kendo Animation.
 ## Configuration Attributes
 
 
-## Event Attributes
-
+### Event Attributes
 
 ## Event Tags
   

@@ -16,21 +16,22 @@ A JSP tag representing Kendo Animation.
 The animation that will be used when a Window closes.
 
 #### Example
-    <kendo:window-animation close="close">
-    </kendo:window-animation>
-    
+    <kendo:window close="close">
+    </kendo:window>
+
+
 
 ### open `Object`
 
 The animation that will be used when a Window opens.
 
 #### Example
-    <kendo:window-animation open="open">
-    </kendo:window-animation>
-    
+    <kendo:window open="open">
+    </kendo:window>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

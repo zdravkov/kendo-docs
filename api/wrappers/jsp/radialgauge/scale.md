@@ -17,45 +17,50 @@ The end angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
 
 #### Example
-    <kendo:radialGauge-scale endAngle="endAngle">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge endAngle="endAngle">
+    </kendo:radialGauge>
+
+
 
 ### majorUnit `float`
 
 The interval between major divisions.
 
 #### Example
-    <kendo:radialGauge-scale majorUnit="majorUnit">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge majorUnit="majorUnit">
+    </kendo:radialGauge>
+
+
 
 ### max `float`
 
 The maximum value of the scale.
 
 #### Example
-    <kendo:radialGauge-scale max="max">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge max="max">
+    </kendo:radialGauge>
+
+
 
 ### min `float`
 
 The minimum value of the scale.
 
 #### Example
-    <kendo:radialGauge-scale min="min">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge min="min">
+    </kendo:radialGauge>
+
+
 
 ### minorUnit `float`
 
 The interval between minor divisions.
 
 #### Example
-    <kendo:radialGauge-scale minorUnit="minorUnit">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge minorUnit="minorUnit">
+    </kendo:radialGauge>
+
+
 
 ### ranges `Object`
 
@@ -63,18 +68,20 @@ The ranges of the scale.
 The range fields:
 
 #### Example
-    <kendo:radialGauge-scale ranges="ranges">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge ranges="ranges">
+    </kendo:radialGauge>
+
+
 
 ### reverse `boolean`
 
 Reverses the scale direction - values are increase anticlockwise.
 
 #### Example
-    <kendo:radialGauge-scale reverse="reverse">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge reverse="reverse">
+    </kendo:radialGauge>
+
+
 
 ### startAngle `float`
 
@@ -82,12 +89,12 @@ The start angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
 
 #### Example
-    <kendo:radialGauge-scale startAngle="startAngle">
-    </kendo:radialGauge-scale>
-    
+    <kendo:radialGauge startAngle="startAngle">
+    </kendo:radialGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
    

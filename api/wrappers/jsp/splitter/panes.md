@@ -11,8 +11,7 @@ A JSP tag representing Kendo Panes.
 ## Configuration Attributes
 
 
-## Event Attributes
-
+### Event Attributes
 
 ## Event Tags
  

@@ -16,21 +16,22 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:panelBar-item text="text">
-    </kendo:panelBar-item>
-    
+    <kendo:panelBar text="text">
+    </kendo:panelBar>
+
+
 
 ### spriteCssClass `String`
 
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:panelBar-item spriteCssClass="spriteCssClass">
-    </kendo:panelBar-item>
-    
+    <kendo:panelBar spriteCssClass="spriteCssClass">
+    </kendo:panelBar>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

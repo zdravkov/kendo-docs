@@ -16,18 +16,20 @@ A JSP tag representing Kendo SeriesItem.
 Array of data points.
 
 #### Example
-    <kendo:chart-seriesItem data="data">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart data="data">
+    </kendo:chart>
+
+
 
 ### field `String`
 
 The data field containing the series value.
 
 #### Example
-    <kendo:chart-seriesItem field="field">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart field="field">
+    </kendo:chart>
+
+
 
 ### groupNameTemplate `String`
 
@@ -36,18 +38,20 @@ series when binding to grouped data.
 Template variables:
 
 #### Example
-    <kendo:chart-seriesItem groupNameTemplate="groupNameTemplate">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart groupNameTemplate="groupNameTemplate">
+    </kendo:chart>
+
+
 
 ### name `String`
 
 The series name visible in the legend.
 
 #### Example
-    <kendo:chart-seriesItem name="name">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart name="name">
+    </kendo:chart>
+
+
 
 ### aggregate `String`
 
@@ -56,153 +60,170 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return value is displayed instead of the individual points.
 
 #### Example
-    <kendo:chart-seriesItem aggregate="aggregate">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart aggregate="aggregate">
+    </kendo:chart>
+
+
 
 ### color `String`
 
 The series base color.
 
 #### Example
-    <kendo:chart-seriesItem color="color">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### line `String`
 
 The line of the area chart.
 
 #### Example
-    <kendo:chart-seriesItem line="line">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart line="line">
+    </kendo:chart>
+
+
 
 ### missingValues `String`
 
 Configures the behavior for handling missing values in area series.
 
 #### Example
-    <kendo:chart-seriesItem missingValues="missingValues">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart missingValues="missingValues">
+    </kendo:chart>
+
+
 
 ### opacity `float`
 
 The series opacity.
 
 #### Example
-    <kendo:chart-seriesItem opacity="opacity">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart opacity="opacity">
+    </kendo:chart>
+
+
 
 ### axis `String`
 
 The name of the value axis to use.
 
 #### Example
-    <kendo:chart-seriesItem axis="axis">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart axis="axis">
+    </kendo:chart>
+
+
 
 ### colorField `String`
 
 The data field containing the bar color.
 
 #### Example
-    <kendo:chart-seriesItem colorField="colorField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart colorField="colorField">
+    </kendo:chart>
+
+
 
 ### gap `float`
 
 The distance between category clusters.
 
 #### Example
-    <kendo:chart-seriesItem gap="gap">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart gap="gap">
+    </kendo:chart>
+
+
 
 ### spacing `float`
 
 Space between bars.
 
 #### Example
-    <kendo:chart-seriesItem spacing="spacing">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart spacing="spacing">
+    </kendo:chart>
+
+
 
 ### categoryField `String`
 
 The data field containing the bubble category name.
 
 #### Example
-    <kendo:chart-seriesItem categoryField="categoryField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart categoryField="categoryField">
+    </kendo:chart>
+
+
 
 ### maxSize `float`
 
 The max size of the bubble.
 
 #### Example
-    <kendo:chart-seriesItem maxSize="maxSize">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart maxSize="maxSize">
+    </kendo:chart>
+
+
 
 ### minSize `float`
 
 The min size of the bubble.
 
 #### Example
-    <kendo:chart-seriesItem minSize="minSize">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart minSize="minSize">
+    </kendo:chart>
+
+
 
 ### sizeField `String`
 
 The data field containing the bubble size value.
 
 #### Example
-    <kendo:chart-seriesItem sizeField="sizeField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart sizeField="sizeField">
+    </kendo:chart>
+
+
 
 ### xAxis `String`
 
 The name of the X axis to use.
 
 #### Example
-    <kendo:chart-seriesItem xAxis="xAxis">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart xAxis="xAxis">
+    </kendo:chart>
+
+
 
 ### xField `String`
 
 The data field containing the bubble x value.
 
 #### Example
-    <kendo:chart-seriesItem xField="xField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart xField="xField">
+    </kendo:chart>
+
+
 
 ### yAxis `String`
 
 The name of the Y axis to use.
 
 #### Example
-    <kendo:chart-seriesItem yAxis="yAxis">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart yAxis="yAxis">
+    </kendo:chart>
+
+
 
 ### yField `String`
 
 The data field containing the bubble y value.
 
 #### Example
-    <kendo:chart-seriesItem yField="yField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart yField="yField">
+    </kendo:chart>
+
+
 
 ### explodeField `String`
 
@@ -210,18 +231,20 @@ The data field containing a boolean value that indicates if the sector is explod
 (available only for the last level of the series).
 
 #### Example
-    <kendo:chart-seriesItem explodeField="explodeField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart explodeField="explodeField">
+    </kendo:chart>
+
+
 
 ### holeSize `float`
 
 The the size of the donut hole.
 
 #### Example
-    <kendo:chart-seriesItem holeSize="holeSize">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart holeSize="holeSize">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
@@ -229,54 +252,60 @@ The margin around each series
 (not available for the last level of the series).
 
 #### Example
-    <kendo:chart-seriesItem margin="margin">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### padding `float`
 
 The padding around the donut chart (equal on all sides).
 
 #### Example
-    <kendo:chart-seriesItem padding="padding">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart padding="padding">
+    </kendo:chart>
+
+
 
 ### size `float`
 
 The size of the series.
 
 #### Example
-    <kendo:chart-seriesItem size="size">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart size="size">
+    </kendo:chart>
+
+
 
 ### startAngle `float`
 
 The start angle of the first donut segment.
 
 #### Example
-    <kendo:chart-seriesItem startAngle="startAngle">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart startAngle="startAngle">
+    </kendo:chart>
+
+
 
 ### dashType `String`
 
 The dash type of the line.
 
 #### Example
-    <kendo:chart-seriesItem dashType="dashType">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart dashType="dashType">
+    </kendo:chart>
+
+
 
 ### width `String`
 
 The line width of the line chart.
 
 #### Example
-    <kendo:chart-seriesItem width="width">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
+
+
 
 ### aggregates `Object`
 
@@ -285,63 +314,70 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return values are displayed instead of the individual points.
 
 #### Example
-    <kendo:chart-seriesItem aggregates="aggregates">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart aggregates="aggregates">
+    </kendo:chart>
+
+
 
 ### downColor `String`
 
 The series color when open value is smoller then close value.
 
 #### Example
-    <kendo:chart-seriesItem downColor="downColor">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart downColor="downColor">
+    </kendo:chart>
+
+
 
 ### downColorField `String`
 
 The data field containing the body color.
 
 #### Example
-    <kendo:chart-seriesItem downColorField="downColorField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart downColorField="downColorField">
+    </kendo:chart>
+
+
 
 ### openField `String`
 
 The data field containing the open value.
 
 #### Example
-    <kendo:chart-seriesItem openField="openField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart openField="openField">
+    </kendo:chart>
+
+
 
 ### highField `String`
 
 The data field containing the high value.
 
 #### Example
-    <kendo:chart-seriesItem highField="highField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart highField="highField">
+    </kendo:chart>
+
+
 
 ### lowField `String`
 
 The data field containing the low value.
 
 #### Example
-    <kendo:chart-seriesItem lowField="lowField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart lowField="lowField">
+    </kendo:chart>
+
+
 
 ### closeField `String`
 
 The data field containing the close value.
 
 #### Example
-    <kendo:chart-seriesItem closeField="closeField">
-    </kendo:chart-seriesItem>
-    
+    <kendo:chart closeField="closeField">
+    </kendo:chart>
+
+
 
 ### stack `Object`
 
@@ -350,7 +386,8 @@ A value indicating if the series should be stacked.
 #### Example
     <kendo:chart-seriesItem stack="stack">
     </kendo:chart-seriesItem>
-    
+
+
 
 ### visibleInLegendField `Object`
 
@@ -359,10 +396,10 @@ A boolean value indicating whether to show the sector in the legend.
 #### Example
     <kendo:chart-seriesItem visibleInLegendField="visibleInLegendField">
     </kendo:chart-seriesItem>
-    
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
         

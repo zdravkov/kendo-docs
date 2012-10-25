@@ -17,27 +17,30 @@ The color of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 #### Example
-    <kendo:chart-valueAxis-line color="color">
-    </kendo:chart-valueAxis-line>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### dashType `String`
 
 The dash type of the line.
 
 #### Example
-    <kendo:chart-valueAxis-line dashType="dashType">
-    </kendo:chart-valueAxis-line>
-    
+    <kendo:chart dashType="dashType">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the line.
 
 #### Example
-    <kendo:chart-valueAxis-line visible="visible">
-    </kendo:chart-valueAxis-line>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
+
+
 
 ### width `float`
 
@@ -45,12 +48,12 @@ The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 #### Example
-    <kendo:chart-valueAxis-line width="width">
-    </kendo:chart-valueAxis-line>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

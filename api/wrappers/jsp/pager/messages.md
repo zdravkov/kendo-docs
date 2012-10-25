@@ -16,93 +16,102 @@ A JSP tag representing Kendo Messages.
 Defines the info text.
 
 #### Example
-    <kendo:pager-messages display="display">
-    </kendo:pager-messages>
-    
+    <kendo:pager display="display">
+    </kendo:pager>
+
+
 
 ### empty `String`
 
 Defines the info text shown when there are no records to be displayed.
 
 #### Example
-    <kendo:pager-messages empty="empty">
-    </kendo:pager-messages>
-    
+    <kendo:pager empty="empty">
+    </kendo:pager>
+
+
 
 ### page `String`
 
 Defines the first part of the text of the input option.
 
 #### Example
-    <kendo:pager-messages page="page">
-    </kendo:pager-messages>
-    
+    <kendo:pager page="page">
+    </kendo:pager>
+
+
 
 ### of `String`
 
 Defines the last part of the text of the input option.
 
 #### Example
-    <kendo:pager-messages of="of">
-    </kendo:pager-messages>
-    
+    <kendo:pager of="of">
+    </kendo:pager>
+
+
 
 ### itemsPerPage `String`
 
 Defines the text displayed after the select element of the pageSizes mode.
 
 #### Example
-    <kendo:pager-messages itemsPerPage="itemsPerPage">
-    </kendo:pager-messages>
-    
+    <kendo:pager itemsPerPage="itemsPerPage">
+    </kendo:pager>
+
+
 
 ### first `String`
 
 Defines the text of the first page button tooltip.
 
 #### Example
-    <kendo:pager-messages first="first">
-    </kendo:pager-messages>
-    
+    <kendo:pager first="first">
+    </kendo:pager>
+
+
 
 ### previous `String`
 
 Defines the text of the previous page button tooltip.
 
 #### Example
-    <kendo:pager-messages previous="previous">
-    </kendo:pager-messages>
-    
+    <kendo:pager previous="previous">
+    </kendo:pager>
+
+
 
 ### next `String`
 
 Defines the text of the next page button tooltip.
 
 #### Example
-    <kendo:pager-messages next="next">
-    </kendo:pager-messages>
-    
+    <kendo:pager next="next">
+    </kendo:pager>
+
+
 
 ### last `String`
 
 Defines the text of the last page button tooltip.
 
 #### Example
-    <kendo:pager-messages last="last">
-    </kendo:pager-messages>
-    
+    <kendo:pager last="last">
+    </kendo:pager>
+
+
 
 ### refresh `String`
 
 Defines the text of the refresh button tooltip.
 
 #### Example
-    <kendo:pager-messages refresh="refresh">
-    </kendo:pager-messages>
-    
+    <kendo:pager refresh="refresh">
+    </kendo:pager>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

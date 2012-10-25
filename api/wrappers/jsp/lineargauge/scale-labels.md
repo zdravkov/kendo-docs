@@ -17,9 +17,10 @@ The background color of the labels.
 Any valid CSS color string will work here, including hex and rgb
 
 #### Example
-    <kendo:linearGauge-scale-labels background="background">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge background="background">
+    </kendo:linearGauge>
+
+
 
 ### color `String`
 
@@ -27,45 +28,50 @@ The text color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge-scale-labels color="color">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge color="color">
+    </kendo:linearGauge>
+
+
 
 ### font `String`
 
 The font style of the labels.
 
 #### Example
-    <kendo:linearGauge-scale-labels font="font">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge font="font">
+    </kendo:linearGauge>
+
+
 
 ### format `String`
 
 The format of the labels.
 
 #### Example
-    <kendo:linearGauge-scale-labels format="format">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge format="format">
+    </kendo:linearGauge>
+
+
 
 ### margin `float`
 
 The margin of the labels.
 
 #### Example
-    <kendo:linearGauge-scale-labels margin="margin">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge margin="margin">
+    </kendo:linearGauge>
+
+
 
 ### padding `float`
 
 The padding of the labels.
 
 #### Example
-    <kendo:linearGauge-scale-labels padding="padding">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge padding="padding">
+    </kendo:linearGauge>
+
+
 
 ### template `String`
 
@@ -73,21 +79,22 @@ The label template.
 Template variables:
 
 #### Example
-    <kendo:linearGauge-scale-labels template="template">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge template="template">
+    </kendo:linearGauge>
+
+
 
 ### visible `boolean`
 
 The visibility of the labels.
 
 #### Example
-    <kendo:linearGauge-scale-labels visible="visible">
-    </kendo:linearGauge-scale-labels>
-    
+    <kendo:linearGauge visible="visible">
+    </kendo:linearGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

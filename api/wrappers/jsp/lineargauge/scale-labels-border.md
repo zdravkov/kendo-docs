@@ -16,30 +16,32 @@ A JSP tag representing Kendo Border.
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge-scale-labels-border color="color">
-    </kendo:linearGauge-scale-labels-border>
-    
+    <kendo:linearGauge color="color">
+    </kendo:linearGauge>
+
+
 
 ### dashType `String`
 
 The dash type of the border.
 
 #### Example
-    <kendo:linearGauge-scale-labels-border dashType="dashType">
-    </kendo:linearGauge-scale-labels-border>
-    
+    <kendo:linearGauge dashType="dashType">
+    </kendo:linearGauge>
+
+
 
 ### width `float`
 
 The width of the border.
 
 #### Example
-    <kendo:linearGauge-scale-labels-border width="width">
-    </kendo:linearGauge-scale-labels-border>
-    
+    <kendo:linearGauge width="width">
+    </kendo:linearGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

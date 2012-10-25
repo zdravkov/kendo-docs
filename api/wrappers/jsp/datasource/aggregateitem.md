@@ -16,21 +16,22 @@ A JSP tag representing Kendo AggregateItem.
 Specifies the field on which the aggregate will be calculated.
 
 #### Example
-    <kendo:dataSource-aggregateItem field="field">
-    </kendo:dataSource-aggregateItem>
-    
+    <kendo:dataSource field="field">
+    </kendo:dataSource>
+
+
 
 ### aggregate `String`
 
 Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average"
 
 #### Example
-    <kendo:dataSource-aggregateItem aggregate="aggregate">
-    </kendo:dataSource-aggregateItem>
-    
+    <kendo:dataSource aggregate="aggregate">
+    </kendo:dataSource>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

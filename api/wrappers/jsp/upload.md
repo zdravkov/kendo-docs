@@ -18,7 +18,8 @@ Enables (
 #### Example
     <kendo:upload enabled="enabled">
     </kendo:upload>
-    
+
+
 
 ### multiple `boolean`
 
@@ -27,7 +28,8 @@ Enables (
 #### Example
     <kendo:upload multiple="multiple">
     </kendo:upload>
-    
+
+
 
 ### showFileList `boolean`
 
@@ -36,9 +38,8 @@ Enables (
 #### Example
     <kendo:upload showFileList="showFileList">
     </kendo:upload>
-    
 
-## Event Attributes
+
 
 ### cancel `String`
 
@@ -53,6 +54,8 @@ Fires when the upload has been cancelled while in progress.
         }
     </script>
 
+
+
 ### complete `String`
 
 Fires when all active uploads have completed either successfully or with errors.
@@ -65,6 +68,8 @@ Fires when all active uploads have completed either successfully or with errors.
             // Code to handle the complete event.
         }
     </script>
+
+
 
 ### error `String`
 
@@ -79,6 +84,8 @@ Fires when an upload / remove operation has failed.
         }
     </script>
 
+
+
 ### progress `String`
 
 Fires when upload progress data is available.
@@ -91,6 +98,8 @@ Fires when upload progress data is available.
             // Code to handle the progress event.
         }
     </script>
+
+
 
 ### remove `String`
 
@@ -106,6 +115,8 @@ Cancelling the event will prevent the remove.
         }
     </script>
 
+
+
 ### select `String`
 
 Triggered when a file(s) is selected. Note: Cancelling this event will prevent the selection from
@@ -120,6 +131,8 @@ occurring.
         }
     </script>
 
+
+
 ### success `String`
 
 Fires when an upload / remove operation has been completed successfully.
@@ -132,6 +145,134 @@ Fires when an upload / remove operation has been completed successfully.
             // Code to handle the success event.
         }
     </script>
+
+
+
+### upload `String`
+
+Fires when one or more files are about to be uploaded.
+Cancelling the event will prevent the upload.
+
+#### Example
+    <kendo:upload upload="handle_upload">
+    </kendo:upload>
+    <script>
+        function handle_upload(e) {
+            // Code to handle the upload event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### cancel `String`
+
+Fires when the upload has been cancelled while in progress.
+
+#### Example
+    <kendo:upload cancel="handle_cancel">
+    </kendo:upload>
+    <script>
+        function handle_cancel(e) {
+            // Code to handle the cancel event.
+        }
+    </script>
+
+
+
+### complete `String`
+
+Fires when all active uploads have completed either successfully or with errors.
+
+#### Example
+    <kendo:upload complete="handle_complete">
+    </kendo:upload>
+    <script>
+        function handle_complete(e) {
+            // Code to handle the complete event.
+        }
+    </script>
+
+
+
+### error `String`
+
+Fires when an upload / remove operation has failed.
+
+#### Example
+    <kendo:upload error="handle_error">
+    </kendo:upload>
+    <script>
+        function handle_error(e) {
+            // Code to handle the error event.
+        }
+    </script>
+
+
+
+### progress `String`
+
+Fires when upload progress data is available.
+
+#### Example
+    <kendo:upload progress="handle_progress">
+    </kendo:upload>
+    <script>
+        function handle_progress(e) {
+            // Code to handle the progress event.
+        }
+    </script>
+
+
+
+### remove `String`
+
+Fires when an uploaded file is about to be removed.
+Cancelling the event will prevent the remove.
+
+#### Example
+    <kendo:upload remove="handle_remove">
+    </kendo:upload>
+    <script>
+        function handle_remove(e) {
+            // Code to handle the remove event.
+        }
+    </script>
+
+
+
+### select `String`
+
+Triggered when a file(s) is selected. Note: Cancelling this event will prevent the selection from
+occurring.
+
+#### Example
+    <kendo:upload select="handle_select">
+    </kendo:upload>
+    <script>
+        function handle_select(e) {
+            // Code to handle the select event.
+        }
+    </script>
+
+
+
+### success `String`
+
+Fires when an upload / remove operation has been completed successfully.
+
+#### Example
+    <kendo:upload success="handle_success">
+    </kendo:upload>
+    <script>
+        function handle_success(e) {
+            // Code to handle the success event.
+        }
+    </script>
+
+
 
 ### upload `String`
 

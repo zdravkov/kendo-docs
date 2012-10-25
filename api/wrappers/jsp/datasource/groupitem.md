@@ -16,21 +16,22 @@ A JSP tag representing Kendo GroupItem.
 Specifies the field to group by.
 
 #### Example
-    <kendo:dataSource-groupItem field="field">
-    </kendo:dataSource-groupItem>
-    
+    <kendo:dataSource field="field">
+    </kendo:dataSource>
+
+
 
 ### dir `String`
 
 Specifies the order of the groupped items.
 
 #### Example
-    <kendo:dataSource-groupItem dir="dir">
-    </kendo:dataSource-groupItem>
-    
+    <kendo:dataSource dir="dir">
+    </kendo:dataSource>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

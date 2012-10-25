@@ -16,18 +16,20 @@ A JSP tag representing Kendo Pointer.
 The color of the pointer.
 
 #### Example
-    <kendo:linearGauge-pointer color="color">
-    </kendo:linearGauge-pointer>
-    
+    <kendo:linearGauge color="color">
+    </kendo:linearGauge>
+
+
 
 ### margin `float`
 
 The margin of the pointer.
 
 #### Example
-    <kendo:linearGauge-pointer margin="margin">
-    </kendo:linearGauge-pointer>
-    
+    <kendo:linearGauge margin="margin">
+    </kendo:linearGauge>
+
+
 
 ### opacity `float`
 
@@ -35,39 +37,42 @@ The opacity of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge-pointer opacity="opacity">
-    </kendo:linearGauge-pointer>
-    
+    <kendo:linearGauge opacity="opacity">
+    </kendo:linearGauge>
+
+
 
 ### shape `String`
 
 The shape of the pointer.
 
 #### Example
-    <kendo:linearGauge-pointer shape="shape">
-    </kendo:linearGauge-pointer>
-    
+    <kendo:linearGauge shape="shape">
+    </kendo:linearGauge>
+
+
 
 ### size `float`
 
 The size of the pointer.
 
 #### Example
-    <kendo:linearGauge-pointer size="size">
-    </kendo:linearGauge-pointer>
-    
+    <kendo:linearGauge size="size">
+    </kendo:linearGauge>
+
+
 
 ### value `float`
 
 The value of the gauge.
 
 #### Example
-    <kendo:linearGauge-pointer value="value">
-    </kendo:linearGauge-pointer>
-    
+    <kendo:linearGauge value="value">
+    </kendo:linearGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
   

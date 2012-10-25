@@ -19,10 +19,10 @@ It is used as a default
 #### Example
     <kendo:stockChart dateField="dateField">
     </kendo:stockChart>
-    
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

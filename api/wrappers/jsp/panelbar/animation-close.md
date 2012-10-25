@@ -16,21 +16,22 @@ A JSP tag representing Kendo Close.
 The number of milliseconds used for the visual animation when a
 
 #### Example
-    <kendo:panelBar-animation-close duration="duration">
-    </kendo:panelBar-animation-close>
-    
+    <kendo:panelBar duration="duration">
+    </kendo:panelBar>
+
+
 
 ### effects `String`
 
 A whitespace-delimited string of animation effects that are utilized when a
 
 #### Example
-    <kendo:panelBar-animation-close effects="effects">
-    </kendo:panelBar-animation-close>
-    
+    <kendo:panelBar effects="effects">
+    </kendo:panelBar>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

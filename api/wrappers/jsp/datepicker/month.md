@@ -16,9 +16,10 @@ A JSP tag representing Kendo Month.
 Template to be used for rendering the cells in the calendar "month" view, which are in range.
 
 #### Example
-    <kendo:datePicker-month content="content">
-    </kendo:datePicker-month>
-    
+    <kendo:datePicker content="content">
+    </kendo:datePicker>
+
+
 
 ### empty `String`
 
@@ -26,12 +27,12 @@ The template used for rendering the cells in the calendar "month" view, which ar
 the minimum and maximum values.
 
 #### Example
-    <kendo:datePicker-month empty="empty">
-    </kendo:datePicker-month>
-    
+    <kendo:datePicker empty="empty">
+    </kendo:datePicker>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

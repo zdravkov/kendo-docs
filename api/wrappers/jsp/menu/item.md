@@ -16,21 +16,22 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:menu-item text="text">
-    </kendo:menu-item>
-    
+    <kendo:menu text="text">
+    </kendo:menu>
+
+
 
 ### spriteCssClass `String`
 
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:menu-item spriteCssClass="spriteCssClass">
-    </kendo:menu-item>
-    
+    <kendo:menu spriteCssClass="spriteCssClass">
+    </kendo:menu>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

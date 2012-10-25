@@ -16,21 +16,22 @@ A JSP tag representing Kendo Animation.
 The animation that will be used when closing sub menus.
 
 #### Example
-    <kendo:menu-animation close="close">
-    </kendo:menu-animation>
-    
+    <kendo:menu close="close">
+    </kendo:menu>
+
+
 
 ### open `Object`
 
 The animation that will be used when opening sub menus.
 
 #### Example
-    <kendo:menu-animation open="open">
-    </kendo:menu-animation>
-    
+    <kendo:menu open="open">
+    </kendo:menu>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

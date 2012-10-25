@@ -17,39 +17,42 @@ The background of the gauge area.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge-gaugeArea background="background">
-    </kendo:linearGauge-gaugeArea>
-    
+    <kendo:linearGauge background="background">
+    </kendo:linearGauge>
+
+
 
 ### height `float`
 
 The height of the gauge area.
 
 #### Example
-    <kendo:linearGauge-gaugeArea height="height">
-    </kendo:linearGauge-gaugeArea>
-    
+    <kendo:linearGauge height="height">
+    </kendo:linearGauge>
+
+
 
 ### margin `float`
 
 The margin of the gauge area.
 
 #### Example
-    <kendo:linearGauge-gaugeArea margin="margin">
-    </kendo:linearGauge-gaugeArea>
-    
+    <kendo:linearGauge margin="margin">
+    </kendo:linearGauge>
+
+
 
 ### width `float`
 
 The width of the gauge area.
 
 #### Example
-    <kendo:linearGauge-gaugeArea width="width">
-    </kendo:linearGauge-gaugeArea>
-    
+    <kendo:linearGauge width="width">
+    </kendo:linearGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

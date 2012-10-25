@@ -16,21 +16,22 @@ A JSP tag representing Kendo Labels.
 Culture to use for formatting the dates. See
 
 #### Example
-    <kendo:chart-xAxis-labels culture="culture">
-    </kendo:chart-xAxis-labels>
-    
+    <kendo:chart culture="culture">
+    </kendo:chart>
+
+
 
 ### dateFormats `Object`
 
 Date format strings
 
 #### Example
-    <kendo:chart-xAxis-labels dateFormats="dateFormats">
-    </kendo:chart-xAxis-labels>
-    
+    <kendo:chart dateFormats="dateFormats">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

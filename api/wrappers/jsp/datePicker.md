@@ -18,7 +18,8 @@ Specifies the culture info used by the widget.
 #### Example
     <kendo:datePicker culture="culture">
     </kendo:datePicker>
-    
+
+
 
 ### depth `String`
 
@@ -28,7 +29,8 @@ settings are available for the
 #### Example
     <kendo:datePicker depth="depth">
     </kendo:datePicker>
-    
+
+
 
 ### footer `String`
 
@@ -37,7 +39,8 @@ Template to be used for rendering the footer of the calendar.
 #### Example
     <kendo:datePicker footer="footer">
     </kendo:datePicker>
-    
+
+
 
 ### format `String`
 
@@ -46,7 +49,8 @@ Specifies the format, which is used to format the value of the DatePicker displa
 #### Example
     <kendo:datePicker format="format">
     </kendo:datePicker>
-    
+
+
 
 ### max `java.util.Date`
 
@@ -55,7 +59,8 @@ Specifies the maximum date, which the calendar can show.
 #### Example
     <kendo:datePicker max="max">
     </kendo:datePicker>
-    
+
+
 
 ### min `java.util.Date`
 
@@ -64,7 +69,8 @@ Specifies the minimum date that the calendar can show.
 #### Example
     <kendo:datePicker min="min">
     </kendo:datePicker>
-    
+
+
 
 ### parseFormats `Object`
 
@@ -73,7 +79,8 @@ Specifies the formats, which are used to parse the value set with value() method
 #### Example
     <kendo:datePicker parseFormats="parseFormats">
     </kendo:datePicker>
-    
+
+
 
 ### start `String`
 
@@ -83,7 +90,8 @@ The following settings are available for the
 #### Example
     <kendo:datePicker start="start">
     </kendo:datePicker>
-    
+
+
 
 ### value `java.util.Date`
 
@@ -92,9 +100,8 @@ Specifies the selected date.
 #### Example
     <kendo:datePicker value="value">
     </kendo:datePicker>
-    
 
-## Event Attributes
+
 
 ### change `String`
 
@@ -109,6 +116,8 @@ Fires when the selected date is changed
         }
     </script>
 
+
+
 ### close `String`
 
 Fires when the calendar is closed
@@ -121,6 +130,56 @@ Fires when the calendar is closed
             // Code to handle the close event.
         }
     </script>
+
+
+
+### open `String`
+
+Fires when the calendar is opened
+
+#### Example
+    <kendo:datePicker open="handle_open">
+    </kendo:datePicker>
+    <script>
+        function handle_open(e) {
+            // Code to handle the open event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### change `String`
+
+Fires when the selected date is changed
+
+#### Example
+    <kendo:datePicker change="handle_change">
+    </kendo:datePicker>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
+
+
+### close `String`
+
+Fires when the calendar is closed
+
+#### Example
+    <kendo:datePicker close="handle_close">
+    </kendo:datePicker>
+    <script>
+        function handle_close(e) {
+            // Code to handle the close event.
+        }
+    </script>
+
+
 
 ### open `String`
 

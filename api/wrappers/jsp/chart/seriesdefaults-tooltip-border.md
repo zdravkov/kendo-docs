@@ -16,21 +16,22 @@ A JSP tag representing Kendo Border.
 The color of the border.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip-border color="color">
-    </kendo:chart-seriesDefaults-tooltip-border>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the border.
 
 #### Example
-    <kendo:chart-seriesDefaults-tooltip-border width="width">
-    </kendo:chart-seriesDefaults-tooltip-border>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

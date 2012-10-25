@@ -11,8 +11,7 @@ A JSP tag representing Kendo Items.
 ## Configuration Attributes
 
 
-## Event Attributes
-
+### Event Attributes
 
 ## Event Tags
  

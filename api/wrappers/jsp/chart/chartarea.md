@@ -16,48 +16,52 @@ A JSP tag representing Kendo ChartArea.
 The background color of the chart area.
 
 #### Example
-    <kendo:chart-chartArea background="background">
-    </kendo:chart-chartArea>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### opacity `float`
 
 The background opacity of the chart area.
 
 #### Example
-    <kendo:chart-chartArea opacity="opacity">
-    </kendo:chart-chartArea>
-    
+    <kendo:chart opacity="opacity">
+    </kendo:chart>
+
+
 
 ### height `float`
 
 The height of the chart area.
 
 #### Example
-    <kendo:chart-chartArea height="height">
-    </kendo:chart-chartArea>
-    
+    <kendo:chart height="height">
+    </kendo:chart>
+
+
 
 ### margin `float`
 
 The margin of the chart area.
 
 #### Example
-    <kendo:chart-chartArea margin="margin">
-    </kendo:chart-chartArea>
-    
+    <kendo:chart margin="margin">
+    </kendo:chart>
+
+
 
 ### width `float`
 
 The width of the chart area.
 
 #### Example
-    <kendo:chart-chartArea width="width">
-    </kendo:chart-chartArea>
-    
+    <kendo:chart width="width">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

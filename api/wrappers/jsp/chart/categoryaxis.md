@@ -16,27 +16,30 @@ A JSP tag representing Kendo CategoryAxis.
 Category index at which the first value axis crosses this axis.
 
 #### Example
-    <kendo:chart-categoryAxis axisCrossingValue="axisCrossingValue">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart axisCrossingValue="axisCrossingValue">
+    </kendo:chart>
+
+
 
 ### axisCrossingValues `Object`
 
 Category indicies at which the value axes cross the category axis.
 
 #### Example
-    <kendo:chart-categoryAxis axisCrossingValues="axisCrossingValues">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart axisCrossingValues="axisCrossingValues">
+    </kendo:chart>
+
+
 
 ### categories `Object`
 
 Array of category names.
 
 #### Example
-    <kendo:chart-categoryAxis categories="categories">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart categories="categories">
+    </kendo:chart>
+
+
 
 ### color `String`
 
@@ -44,36 +47,40 @@ Color to apply to all axis elements. Any valid CSS color string will work here, 
 Individual color settings for line and labels take priority.
 
 #### Example
-    <kendo:chart-categoryAxis color="color">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### field `String`
 
 The data field containing the category name.
 
 #### Example
-    <kendo:chart-categoryAxis field="field">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart field="field">
+    </kendo:chart>
+
+
 
 ### justified `boolean`
 
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
 
 #### Example
-    <kendo:chart-categoryAxis justified="justified">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart justified="justified">
+    </kendo:chart>
+
+
 
 ### name `String`
 
 The unique axis name.
 
 #### Example
-    <kendo:chart-categoryAxis name="name">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart name="name">
+    </kendo:chart>
+
+
 
 ### plotBands `Object`
 
@@ -81,9 +88,10 @@ The plot bands of category axis.
 The plot band fields:
 
 #### Example
-    <kendo:chart-categoryAxis plotBands="plotBands">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart plotBands="plotBands">
+    </kendo:chart>
+
+
 
 ### reverse `boolean`
 
@@ -91,27 +99,30 @@ Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
 
 #### Example
-    <kendo:chart-categoryAxis reverse="reverse">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart reverse="reverse">
+    </kendo:chart>
+
+
 
 ### type `String`
 
 The axis type.
 
 #### Example
-    <kendo:chart-categoryAxis type="type">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart type="type">
+    </kendo:chart>
+
+
 
 ### autoBaseUnitSteps `Object`
 
 Specifies the discrete
 
 #### Example
-    <kendo:chart-categoryAxis autoBaseUnitSteps="autoBaseUnitSteps">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart autoBaseUnitSteps="autoBaseUnitSteps">
+    </kendo:chart>
+
+
 
 ### baseUnit `String`
 
@@ -120,9 +131,10 @@ The default baseUnit is determined automatically from the minimum difference
 between subsequent categories. Available options:
 
 #### Example
-    <kendo:chart-categoryAxis baseUnit="baseUnit">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart baseUnit="baseUnit">
+    </kendo:chart>
+
+
 
 ### baseUnitStep `Object`
 
@@ -130,9 +142,10 @@ Sets the step (interval) between categories in base units.
 Specifiying "auto" will set the step to such value that the total number of categories does not exceed
 
 #### Example
-    <kendo:chart-categoryAxis baseUnitStep="baseUnitStep">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart baseUnitStep="baseUnitStep">
+    </kendo:chart>
+
+
 
 ### max `java.util.Date`
 
@@ -141,9 +154,10 @@ By default, the minimum date is the same as the last category.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart-categoryAxis max="max">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart max="max">
+    </kendo:chart>
+
+
 
 ### min `java.util.Date`
 
@@ -152,9 +166,10 @@ By default, the minimum date is the same as the first category.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart-categoryAxis min="min">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart min="min">
+    </kendo:chart>
+
+
 
 ### roundToBaseUnit `boolean`
 
@@ -162,18 +177,20 @@ By default, the first and last dates will be rounded off to the nearest base uni
 Specifying
 
 #### Example
-    <kendo:chart-categoryAxis roundToBaseUnit="roundToBaseUnit">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart roundToBaseUnit="roundToBaseUnit">
+    </kendo:chart>
+
+
 
 ### weekStartDay `float`
 
 Specifies the week start day when
 
 #### Example
-    <kendo:chart-categoryAxis weekStartDay="weekStartDay">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart weekStartDay="weekStartDay">
+    </kendo:chart>
+
+
 
 ### maxDateGroups `float`
 
@@ -181,21 +198,22 @@ Specifies the maximum number of groups (categories) to produce when
 either
 
 #### Example
-    <kendo:chart-categoryAxis maxDateGroups="maxDateGroups">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart maxDateGroups="maxDateGroups">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the axis.
 
 #### Example
-    <kendo:chart-categoryAxis visible="visible">
-    </kendo:chart-categoryAxis>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
        

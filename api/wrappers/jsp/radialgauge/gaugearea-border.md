@@ -16,30 +16,32 @@ A JSP tag representing Kendo Border.
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge-gaugeArea-border color="color">
-    </kendo:radialGauge-gaugeArea-border>
-    
+    <kendo:radialGauge color="color">
+    </kendo:radialGauge>
+
+
 
 ### dashType `String`
 
 The dash type of the border.
 
 #### Example
-    <kendo:radialGauge-gaugeArea-border dashType="dashType">
-    </kendo:radialGauge-gaugeArea-border>
-    
+    <kendo:radialGauge dashType="dashType">
+    </kendo:radialGauge>
+
+
 
 ### width `float`
 
 The width of the border.
 
 #### Example
-    <kendo:radialGauge-gaugeArea-border width="width">
-    </kendo:radialGauge-gaugeArea-border>
-    
+    <kendo:radialGauge width="width">
+    </kendo:radialGauge>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

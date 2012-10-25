@@ -18,7 +18,8 @@ If
 #### Example
     <kendo:treeView checkboxes="checkboxes">
     </kendo:treeView>
-    
+
+
 
 ### dataImageUrlField `String`
 
@@ -28,7 +29,8 @@ the image URL of the treeview nodes.
 #### Example
     <kendo:treeView dataImageUrlField="dataImageUrlField">
     </kendo:treeView>
-    
+
+
 
 ### dataSpriteCssClassField `String`
 
@@ -38,7 +40,8 @@ the sprite CSS class of the treeview nodes.
 #### Example
     <kendo:treeView dataSpriteCssClassField="dataSpriteCssClassField">
     </kendo:treeView>
-    
+
+
 
 ### dataTextField `String`
 
@@ -48,7 +51,8 @@ the text content of the treeview nodes.
 #### Example
     <kendo:treeView dataTextField="dataTextField">
     </kendo:treeView>
-    
+
+
 
 ### dataUrlField `String`
 
@@ -58,7 +62,8 @@ the link URL of the treeview nodes.
 #### Example
     <kendo:treeView dataUrlField="dataUrlField">
     </kendo:treeView>
-    
+
+
 
 ### dragAndDrop `boolean`
 
@@ -67,7 +72,8 @@ Disables (
 #### Example
     <kendo:treeView dragAndDrop="dragAndDrop">
     </kendo:treeView>
-    
+
+
 
 ### loadOnDemand `boolean`
 
@@ -79,7 +85,8 @@ HierarchicalDataSource instance), the default value of this option is false.
 #### Example
     <kendo:treeView loadOnDemand="loadOnDemand">
     </kendo:treeView>
-    
+
+
 
 ### template `String`
 
@@ -88,9 +95,8 @@ Template for rendering of the nodes of the treeview.
 #### Example
     <kendo:treeView template="template">
     </kendo:treeView>
-    
 
-## Event Attributes
+
 
 ### collapse `String`
 
@@ -105,6 +111,8 @@ Triggered before a subgroup gets collapsed.
         }
     </script>
 
+
+
 ### dataBound `String`
 
 Triggered after the dataSource change event has been processed (adding/removing items);
@@ -117,6 +125,8 @@ Triggered after the dataSource change event has been processed (adding/removing 
             // Code to handle the dataBound event.
         }
     </script>
+
+
 
 ### drag `String`
 
@@ -131,6 +141,8 @@ Triggered while a node is being dragged.
         }
     </script>
 
+
+
 ### dragend `String`
 
 Triggered after a node has been dropped.
@@ -143,6 +155,8 @@ Triggered after a node has been dropped.
             // Code to handle the dragend event.
         }
     </script>
+
+
 
 ### dragstart `String`
 
@@ -157,6 +171,8 @@ Triggered before the dragging of a node starts.
         }
     </script>
 
+
+
 ### drop `String`
 
 Triggered when a node is being dropped.
@@ -170,6 +186,8 @@ Triggered when a node is being dropped.
         }
     </script>
 
+
+
 ### expand `String`
 
 Triggered before a subgroup gets expanded.
@@ -182,6 +200,131 @@ Triggered before a subgroup gets expanded.
             // Code to handle the expand event.
         }
     </script>
+
+
+
+### select `String`
+
+Triggered when a node gets selected.
+
+#### Example
+    <kendo:treeView select="handle_select">
+    </kendo:treeView>
+    <script>
+        function handle_select(e) {
+            // Code to handle the select event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### collapse `String`
+
+Triggered before a subgroup gets collapsed.
+
+#### Example
+    <kendo:treeView collapse="handle_collapse">
+    </kendo:treeView>
+    <script>
+        function handle_collapse(e) {
+            // Code to handle the collapse event.
+        }
+    </script>
+
+
+
+### dataBound `String`
+
+Triggered after the dataSource change event has been processed (adding/removing items);
+
+#### Example
+    <kendo:treeView dataBound="handle_dataBound">
+    </kendo:treeView>
+    <script>
+        function handle_dataBound(e) {
+            // Code to handle the dataBound event.
+        }
+    </script>
+
+
+
+### drag `String`
+
+Triggered while a node is being dragged.
+
+#### Example
+    <kendo:treeView drag="handle_drag">
+    </kendo:treeView>
+    <script>
+        function handle_drag(e) {
+            // Code to handle the drag event.
+        }
+    </script>
+
+
+
+### dragend `String`
+
+Triggered after a node has been dropped.
+
+#### Example
+    <kendo:treeView dragend="handle_dragend">
+    </kendo:treeView>
+    <script>
+        function handle_dragend(e) {
+            // Code to handle the dragend event.
+        }
+    </script>
+
+
+
+### dragstart `String`
+
+Triggered before the dragging of a node starts.
+
+#### Example
+    <kendo:treeView dragstart="handle_dragstart">
+    </kendo:treeView>
+    <script>
+        function handle_dragstart(e) {
+            // Code to handle the dragstart event.
+        }
+    </script>
+
+
+
+### drop `String`
+
+Triggered when a node is being dropped.
+
+#### Example
+    <kendo:treeView drop="handle_drop">
+    </kendo:treeView>
+    <script>
+        function handle_drop(e) {
+            // Code to handle the drop event.
+        }
+    </script>
+
+
+
+### expand `String`
+
+Triggered before a subgroup gets expanded.
+
+#### Example
+    <kendo:treeView expand="handle_expand">
+    </kendo:treeView>
+    <script>
+        function handle_expand(e) {
+            // Code to handle the expand event.
+        }
+    </script>
+
+
 
 ### select `String`
 

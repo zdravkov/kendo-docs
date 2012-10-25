@@ -18,7 +18,8 @@ Specifies the culture info used by the widget.
 #### Example
     <kendo:dateTimePicker culture="culture">
     </kendo:dateTimePicker>
-    
+
+
 
 ### dates `Object`
 
@@ -27,7 +28,8 @@ Specifies a list of dates, which are shown in the time drop-down list. If not se
 #### Example
     <kendo:dateTimePicker dates="dates">
     </kendo:dateTimePicker>
-    
+
+
 
 ### depth `String`
 
@@ -37,7 +39,8 @@ settings are available for the
 #### Example
     <kendo:dateTimePicker depth="depth">
     </kendo:dateTimePicker>
-    
+
+
 
 ### footer `String`
 
@@ -46,7 +49,8 @@ Template to be used for rendering the footer of the calendar.
 #### Example
     <kendo:dateTimePicker footer="footer">
     </kendo:dateTimePicker>
-    
+
+
 
 ### format `String`
 
@@ -55,7 +59,8 @@ Specifies the format, which is used to format the value of the DateTimePicker di
 #### Example
     <kendo:dateTimePicker format="format">
     </kendo:dateTimePicker>
-    
+
+
 
 ### interval `float`
 
@@ -64,7 +69,8 @@ Specifies the interval, between values in the popup list, in minutes.
 #### Example
     <kendo:dateTimePicker interval="interval">
     </kendo:dateTimePicker>
-    
+
+
 
 ### max `java.util.Date`
 
@@ -73,7 +79,8 @@ Specifies the maximum date, which the calendar can show.
 #### Example
     <kendo:dateTimePicker max="max">
     </kendo:dateTimePicker>
-    
+
+
 
 ### min `java.util.Date`
 
@@ -82,7 +89,8 @@ Specifies the minimum date that the calendar can show.
 #### Example
     <kendo:dateTimePicker min="min">
     </kendo:dateTimePicker>
-    
+
+
 
 ### parseFormats `Object`
 
@@ -91,7 +99,8 @@ Specifies the formats, which are used to parse the value set with value() method
 #### Example
     <kendo:dateTimePicker parseFormats="parseFormats">
     </kendo:dateTimePicker>
-    
+
+
 
 ### start `String`
 
@@ -101,7 +110,8 @@ The following settings are available for the
 #### Example
     <kendo:dateTimePicker start="start">
     </kendo:dateTimePicker>
-    
+
+
 
 ### timeFormat `String`
 
@@ -110,7 +120,8 @@ Specifies the format, which is used to format the values in the time drop-down l
 #### Example
     <kendo:dateTimePicker timeFormat="timeFormat">
     </kendo:dateTimePicker>
-    
+
+
 
 ### value `java.util.Date`
 
@@ -119,9 +130,8 @@ Specifies the selected value.
 #### Example
     <kendo:dateTimePicker value="value">
     </kendo:dateTimePicker>
-    
 
-## Event Attributes
+
 
 ### change `String`
 
@@ -136,6 +146,8 @@ Triggered when the underlying value of a DateTimePicker is changed.
         }
     </script>
 
+
+
 ### close `String`
 
 Fires when the calendar or the time drop-down list is closed
@@ -148,6 +160,56 @@ Fires when the calendar or the time drop-down list is closed
             // Code to handle the close event.
         }
     </script>
+
+
+
+### open `String`
+
+Fires when the calendar or the time drop-down list is opened
+
+#### Example
+    <kendo:dateTimePicker open="handle_open">
+    </kendo:dateTimePicker>
+    <script>
+        function handle_open(e) {
+            // Code to handle the open event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### change `String`
+
+Triggered when the underlying value of a DateTimePicker is changed.
+
+#### Example
+    <kendo:dateTimePicker change="handle_change">
+    </kendo:dateTimePicker>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
+
+
+### close `String`
+
+Fires when the calendar or the time drop-down list is closed
+
+#### Example
+    <kendo:dateTimePicker close="handle_close">
+    </kendo:dateTimePicker>
+    <script>
+        function handle_close(e) {
+            // Code to handle the close event.
+        }
+    </script>
+
+
 
 ### open `String`
 

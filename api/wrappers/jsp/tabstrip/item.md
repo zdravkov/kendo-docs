@@ -16,21 +16,22 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:tabStrip-item text="text">
-    </kendo:tabStrip-item>
-    
+    <kendo:tabStrip text="text">
+    </kendo:tabStrip>
+
+
 
 ### spriteCssClass `String`
 
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:tabStrip-item spriteCssClass="spriteCssClass">
-    </kendo:tabStrip-item>
-    
+    <kendo:tabStrip spriteCssClass="spriteCssClass">
+    </kendo:tabStrip>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

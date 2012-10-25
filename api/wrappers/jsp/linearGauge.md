@@ -18,10 +18,10 @@ A value indicating if transition animations should be played.
 #### Example
     <kendo:linearGauge transitions="transitions">
     </kendo:linearGauge>
-    
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
    

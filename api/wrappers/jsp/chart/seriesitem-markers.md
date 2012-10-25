@@ -16,39 +16,42 @@ A JSP tag representing Kendo Markers.
 The background color of the current series markers.
 
 #### Example
-    <kendo:chart-seriesItem-markers background="background">
-    </kendo:chart-seriesItem-markers>
-    
+    <kendo:chart background="background">
+    </kendo:chart>
+
+
 
 ### size `float`
 
 The marker size.
 
 #### Example
-    <kendo:chart-seriesItem-markers size="size">
-    </kendo:chart-seriesItem-markers>
-    
+    <kendo:chart size="size">
+    </kendo:chart>
+
+
 
 ### type `String`
 
 Configures the markers shape type.
 
 #### Example
-    <kendo:chart-seriesItem-markers type="type">
-    </kendo:chart-seriesItem-markers>
-    
+    <kendo:chart type="type">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The markers visibility.
 
 #### Example
-    <kendo:chart-seriesItem-markers visible="visible">
-    </kendo:chart-seriesItem-markers>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

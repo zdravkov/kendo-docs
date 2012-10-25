@@ -16,21 +16,22 @@ A JSP tag representing Kendo Select.
 The lower boundary of the selected range.
 
 #### Example
-    <kendo:stockChart-navigator-select from="from">
-    </kendo:stockChart-navigator-select>
-    
+    <kendo:stockChart from="from">
+    </kendo:stockChart>
+
+
 
 ### to `java.util.Date`
 
 The upper boundary of the selected range.
 
 #### Example
-    <kendo:stockChart-navigator-select to="to">
-    </kendo:stockChart-navigator-select>
-    
+    <kendo:stockChart to="to">
+    </kendo:stockChart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

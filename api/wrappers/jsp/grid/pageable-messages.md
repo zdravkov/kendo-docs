@@ -16,93 +16,102 @@ A JSP tag representing Kendo Messages.
 Defines the info text.
 
 #### Example
-    <kendo:grid-pageable-messages display="display">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid display="display">
+    </kendo:grid>
+
+
 
 ### empty `String`
 
 Defines the info text shown when there are no records to be displayed.
 
 #### Example
-    <kendo:grid-pageable-messages empty="empty">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid empty="empty">
+    </kendo:grid>
+
+
 
 ### page `String`
 
 Defines the first part of the text of the input option.
 
 #### Example
-    <kendo:grid-pageable-messages page="page">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid page="page">
+    </kendo:grid>
+
+
 
 ### of `String`
 
 Defines the last part of the text of the input option.
 
 #### Example
-    <kendo:grid-pageable-messages of="of">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid of="of">
+    </kendo:grid>
+
+
 
 ### itemsPerPage `String`
 
 Defines the text displayed after the select element of the pageSizes mode.
 
 #### Example
-    <kendo:grid-pageable-messages itemsPerPage="itemsPerPage">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid itemsPerPage="itemsPerPage">
+    </kendo:grid>
+
+
 
 ### first `String`
 
 Defines the text of the first page button tooltip.
 
 #### Example
-    <kendo:grid-pageable-messages first="first">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid first="first">
+    </kendo:grid>
+
+
 
 ### previous `String`
 
 Defines the text of the previous page button tooltip.
 
 #### Example
-    <kendo:grid-pageable-messages previous="previous">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid previous="previous">
+    </kendo:grid>
+
+
 
 ### next `String`
 
 Defines the text of the next page button tooltip.
 
 #### Example
-    <kendo:grid-pageable-messages next="next">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid next="next">
+    </kendo:grid>
+
+
 
 ### last `String`
 
 Defines the text of the last page button tooltip.
 
 #### Example
-    <kendo:grid-pageable-messages last="last">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid last="last">
+    </kendo:grid>
+
+
 
 ### refresh `String`
 
 Defines the text of the refresh button tooltip.
 
 #### Example
-    <kendo:grid-pageable-messages refresh="refresh">
-    </kendo:grid-pageable-messages>
-    
+    <kendo:grid refresh="refresh">
+    </kendo:grid>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

@@ -16,21 +16,22 @@ A JSP tag representing Kendo NegativeValues.
 The color of the negative values.
 
 #### Example
-    <kendo:chart-seriesItem-negativeValues color="color">
-    </kendo:chart-seriesItem-negativeValues>
-    
+    <kendo:chart color="color">
+    </kendo:chart>
+
+
 
 ### visible `boolean`
 
 The visibility of the negative values.
 
 #### Example
-    <kendo:chart-seriesItem-negativeValues visible="visible">
-    </kendo:chart-seriesItem-negativeValues>
-    
+    <kendo:chart visible="visible">
+    </kendo:chart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 

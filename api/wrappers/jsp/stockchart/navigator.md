@@ -16,12 +16,12 @@ A JSP tag representing Kendo Navigator.
 Array of series definitions.
 
 #### Example
-    <kendo:stockChart-navigator series="series">
-    </kendo:stockChart-navigator>
-    
+    <kendo:stockChart series="series">
+    </kendo:stockChart>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
  

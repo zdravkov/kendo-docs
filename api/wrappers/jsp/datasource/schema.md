@@ -17,9 +17,10 @@ Specifies the field from the response which contains the aggregate results. If s
 return the aggregate results for the current response.
 
 #### Example
-    <kendo:dataSource-schema aggregates="aggregates">
-    </kendo:dataSource-schema>
-    
+    <kendo:dataSource aggregates="aggregates">
+    </kendo:dataSource>
+
+
 
 ### data `String`
 
@@ -27,9 +28,10 @@ Specifies the field from the response which contains the data items. If set to a
 return the data items for the current response.
 
 #### Example
-    <kendo:dataSource-schema data="data">
-    </kendo:dataSource-schema>
-    
+    <kendo:dataSource data="data">
+    </kendo:dataSource>
+
+
 
 ### errors `String`
 
@@ -37,9 +39,10 @@ Specifies the field from the response which contains any errors. If set to a fun
 return the errors for the current response (if present). If there are any errors the
 
 #### Example
-    <kendo:dataSource-schema errors="errors">
-    </kendo:dataSource-schema>
-    
+    <kendo:dataSource errors="errors">
+    </kendo:dataSource>
+
+
 
 ### groups `String`
 
@@ -47,18 +50,20 @@ Specifies the field from the response which contains the groups. If set to a fun
 return the groups for the current response.
 
 #### Example
-    <kendo:dataSource-schema groups="groups">
-    </kendo:dataSource-schema>
-    
+    <kendo:dataSource groups="groups">
+    </kendo:dataSource>
+
+
 
 ### model `Object`
 
 Describes the
 
 #### Example
-    <kendo:dataSource-schema model="model">
-    </kendo:dataSource-schema>
-    
+    <kendo:dataSource model="model">
+    </kendo:dataSource>
+
+
 
 ### total `String`
 
@@ -66,28 +71,46 @@ Specifies the field from the response which contains the total number of data it
 return the total number of data items for the current response.
 
 #### Example
-    <kendo:dataSource-schema total="total">
-    </kendo:dataSource-schema>
-    
+    <kendo:dataSource total="total">
+    </kendo:dataSource>
+
+
 
 ### type `String`
 
 Specify the type of the response - XML or JSON. The only supported values are
 
 #### Example
-    <kendo:dataSource-schema type="type">
-    </kendo:dataSource-schema>
-    
+    <kendo:dataSource type="type">
+    </kendo:dataSource>
 
-## Event Attributes
+
 
 ### parse `String`
 
 Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
 
 #### Example
-    <kendo:dataSource-schema parse="handle_parse">
-    </kendo:dataSource-schema>
+    <kendo:dataSource parse="handle_parse">
+    </kendo:dataSource>
+    <script>
+        function handle_parse(e) {
+            // Code to handle the parse event.
+        }
+    </script>
+
+
+
+### Event Attributes
+
+
+### parse `String`
+
+Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
+
+#### Example
+    <kendo:dataSource parse="handle_parse">
+    </kendo:dataSource>
     <script>
         function handle_parse(e) {
             // Code to handle the parse event.

@@ -16,84 +16,92 @@ A JSP tag representing Kendo Localization.
 Sets the text of the cancel button text.
 
 #### Example
-    <kendo:upload-localization cancel="cancel">
-    </kendo:upload-localization>
-    
+    <kendo:upload cancel="cancel">
+    </kendo:upload>
+
+
 
 ### dropFilesHere `String`
 
 Sets the drop zone hint.
 
 #### Example
-    <kendo:upload-localization dropFilesHere="dropFilesHere">
-    </kendo:upload-localization>
-    
+    <kendo:upload dropFilesHere="dropFilesHere">
+    </kendo:upload>
+
+
 
 ### remove `String`
 
 Sets the text of the remove button text.
 
 #### Example
-    <kendo:upload-localization remove="remove">
-    </kendo:upload-localization>
-    
+    <kendo:upload remove="remove">
+    </kendo:upload>
+
+
 
 ### retry `String`
 
 Sets the text of the retry button text.
 
 #### Example
-    <kendo:upload-localization retry="retry">
-    </kendo:upload-localization>
-    
+    <kendo:upload retry="retry">
+    </kendo:upload>
+
+
 
 ### select `String`
 
 Sets the "Select..." button text.
 
 #### Example
-    <kendo:upload-localization select="select">
-    </kendo:upload-localization>
-    
+    <kendo:upload select="select">
+    </kendo:upload>
+
+
 
 ### statusFailed `String`
 
 Sets the status message for failed uploads.
 
 #### Example
-    <kendo:upload-localization statusFailed="statusFailed">
-    </kendo:upload-localization>
-    
+    <kendo:upload statusFailed="statusFailed">
+    </kendo:upload>
+
+
 
 ### statusUploaded `String`
 
 Sets the status message for uploaded files.
 
 #### Example
-    <kendo:upload-localization statusUploaded="statusUploaded">
-    </kendo:upload-localization>
-    
+    <kendo:upload statusUploaded="statusUploaded">
+    </kendo:upload>
+
+
 
 ### statusUploading `String`
 
 Sets the status message for files that are being uploaded.
 
 #### Example
-    <kendo:upload-localization statusUploading="statusUploading">
-    </kendo:upload-localization>
-    
+    <kendo:upload statusUploading="statusUploading">
+    </kendo:upload>
+
+
 
 ### uploadSelectedFiles `String`
 
 Sets the text of the "Upload files" button.
 
 #### Example
-    <kendo:upload-localization uploadSelectedFiles="uploadSelectedFiles">
-    </kendo:upload-localization>
-    
+    <kendo:upload uploadSelectedFiles="uploadSelectedFiles">
+    </kendo:upload>
 
-## Event Attributes
 
+
+### Event Attributes
 
 ## Event Tags
 
