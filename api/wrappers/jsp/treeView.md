@@ -14,7 +14,7 @@ A JSP tag representing Kendo TreeView.
 
 ### checkboxes `boolean`
 
-If Related tag: [kendo:treeView-checkboxes](#kendo-treeView-checkboxes). 
+If Further configuration is available via [kendo:treeView-checkboxes](#kendo-treeView-checkboxes). 
 
 #### Example
     <kendo:treeView checkboxes="checkboxes">

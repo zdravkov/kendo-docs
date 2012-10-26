@@ -14,25 +14,25 @@ A JSP tag representing Kendo Animation.
     </kendo:window>
 
 
-## Configuration Attributes
+## Child JSP Tags
 
+### [kendo:window-animation-close](/api/wrappers/jsp/window/animation-close)
 
-### close `Object`
-
-The animation that will be used when a Window closes. Related tag: [kendo:window-close](#kendo-window-close). 
-
-#### Example
-    <kendo:window close="close">
-    </kendo:window>
-
-
-
-### open `Object`
-
-The animation that will be used when a Window opens. Related tag: [kendo:window-open](#kendo-window-open). 
+The animation that will be used when a Window closes.
 
 #### Example
-    <kendo:window open="open">
-    </kendo:window>
 
+    <kendo:window-animation>
+        <kendo:window-animation-close></kendo:window-animation-close>
+    </kendo:window-animation>
+ 
+### [kendo:window-animation-open](/api/wrappers/jsp/window/animation-open)
 
+The animation that will be used when a Window opens.
+
+#### Example
+
+    <kendo:window-animation>
+        <kendo:window-animation-open></kendo:window-animation-open>
+    </kendo:window-animation>
+ 

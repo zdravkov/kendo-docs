@@ -14,25 +14,25 @@ A JSP tag representing Kendo Animation.
     </kendo:dropDownList>
 
 
-## Configuration Attributes
+## Child JSP Tags
 
+### [kendo:dropDownList-animation-close](/api/wrappers/jsp/dropdownlist/animation-close)
 
-### close `Object`
-
-Animation to be used for closing of the popup. Related tag: [kendo:dropDownList-close](#kendo-dropDownList-close). 
-
-#### Example
-    <kendo:dropDownList close="close">
-    </kendo:dropDownList>
-
-
-
-### open `Object`
-
-Animation to be used for opening of the popup. Related tag: [kendo:dropDownList-open](#kendo-dropDownList-open). 
+Animation to be used for closing of the popup.
 
 #### Example
-    <kendo:dropDownList open="open">
-    </kendo:dropDownList>
 
+    <kendo:dropDownList-animation>
+        <kendo:dropDownList-animation-close></kendo:dropDownList-animation-close>
+    </kendo:dropDownList-animation>
+ 
+### [kendo:dropDownList-animation-open](/api/wrappers/jsp/dropdownlist/animation-open)
 
+Animation to be used for opening of the popup.
+
+#### Example
+
+    <kendo:dropDownList-animation>
+        <kendo:dropDownList-animation-open></kendo:dropDownList-animation-open>
+    </kendo:dropDownList-animation>
+ 

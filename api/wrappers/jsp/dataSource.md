@@ -14,7 +14,7 @@ A JSP tag representing Kendo DataSource.
 
 ### aggregate `Object`
 
-Sets fields on which initial aggregates should be calculated Related tag: [kendo:dataSource-aggregate](#kendo-dataSource-aggregate). 
+Sets fields on which initial aggregates should be calculated Further configuration is available via [kendo:dataSource-aggregate](#kendo-dataSource-aggregate). 
 
 #### Example
     <kendo:dataSource aggregate="aggregate">
@@ -54,7 +54,7 @@ Specifies the local JavaScript object to use for the data source.
 
 ### filter `Object`
 
-Sets the initial filter. Related tag: [kendo:dataSource-filter](#kendo-dataSource-filter). 
+Sets the initial filter. Further configuration is available via [kendo:dataSource-filter](#kendo-dataSource-filter). 
 
 #### Example
     <kendo:dataSource filter="filter">
@@ -64,7 +64,7 @@ Sets the initial filter. Related tag: [kendo:dataSource-filter](#kendo-dataSourc
 
 ### group `Object`
 
-Sets initial grouping Related tag: [kendo:dataSource-group](#kendo-dataSource-group). 
+Sets initial grouping Further configuration is available via [kendo:dataSource-group](#kendo-dataSource-group). 
 
 #### Example
     <kendo:dataSource group="group">
@@ -144,7 +144,7 @@ Determines if sorting of the data should is handled on the server. By default so
 
 ### sort `Object`
 
-Sets initial sort order Related tag: [kendo:dataSource-sort](#kendo-dataSource-sort). 
+Sets initial sort order Further configuration is available via [kendo:dataSource-sort](#kendo-dataSource-sort). 
 
 #### Example
     <kendo:dataSource sort="sort">

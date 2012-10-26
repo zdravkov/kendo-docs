@@ -14,25 +14,25 @@ A JSP tag representing Kendo Animation.
     </kendo:autoComplete>
 
 
-## Configuration Attributes
+## Child JSP Tags
 
+### [kendo:autoComplete-animation-close](/api/wrappers/jsp/autocomplete/animation-close)
 
-### close `Object`
-
-Animation to be used for closing of the popup. Related tag: [kendo:autoComplete-close](#kendo-autoComplete-close). 
-
-#### Example
-    <kendo:autoComplete close="close">
-    </kendo:autoComplete>
-
-
-
-### open `Object`
-
-Animation to be used for opening of the popup. Related tag: [kendo:autoComplete-open](#kendo-autoComplete-open). 
+Animation to be used for closing of the popup.
 
 #### Example
-    <kendo:autoComplete open="open">
-    </kendo:autoComplete>
 
+    <kendo:autoComplete-animation>
+        <kendo:autoComplete-animation-close></kendo:autoComplete-animation-close>
+    </kendo:autoComplete-animation>
+ 
+### [kendo:autoComplete-animation-open](/api/wrappers/jsp/autocomplete/animation-open)
 
+Animation to be used for opening of the popup.
+
+#### Example
+
+    <kendo:autoComplete-animation>
+        <kendo:autoComplete-animation-open></kendo:autoComplete-animation-open>
+    </kendo:autoComplete-animation>
+ 

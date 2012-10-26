@@ -14,25 +14,25 @@ A JSP tag representing Kendo Animation.
     </kendo:timePicker>
 
 
-## Configuration Attributes
+## Child JSP Tags
 
+### [kendo:timePicker-animation-close](/api/wrappers/jsp/timepicker/animation-close)
 
-### close `Object`
-
-Animation to be used for closing of the popup. Related tag: [kendo:timePicker-close](#kendo-timePicker-close). 
-
-#### Example
-    <kendo:timePicker close="close">
-    </kendo:timePicker>
-
-
-
-### open `Object`
-
-Animation to be used for opening of the popup. Related tag: [kendo:timePicker-open](#kendo-timePicker-open). 
+Animation to be used for closing of the popup.
 
 #### Example
-    <kendo:timePicker open="open">
-    </kendo:timePicker>
 
+    <kendo:timePicker-animation>
+        <kendo:timePicker-animation-close></kendo:timePicker-animation-close>
+    </kendo:timePicker-animation>
+ 
+### [kendo:timePicker-animation-open](/api/wrappers/jsp/timepicker/animation-open)
 
+Animation to be used for opening of the popup.
+
+#### Example
+
+    <kendo:timePicker-animation>
+        <kendo:timePicker-animation-open></kendo:timePicker-animation-open>
+    </kendo:timePicker-animation>
+ 

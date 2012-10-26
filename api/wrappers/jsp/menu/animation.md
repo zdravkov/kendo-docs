@@ -14,25 +14,25 @@ A JSP tag representing Kendo Animation.
     </kendo:menu>
 
 
-## Configuration Attributes
+## Child JSP Tags
 
+### [kendo:menu-animation-close](/api/wrappers/jsp/menu/animation-close)
 
-### close `Object`
-
-The animation that will be used when closing sub menus. Related tag: [kendo:menu-close](#kendo-menu-close). 
-
-#### Example
-    <kendo:menu close="close">
-    </kendo:menu>
-
-
-
-### open `Object`
-
-The animation that will be used when opening sub menus. Related tag: [kendo:menu-open](#kendo-menu-open). 
+The animation that will be used when closing sub menus.
 
 #### Example
-    <kendo:menu open="open">
-    </kendo:menu>
 
+    <kendo:menu-animation>
+        <kendo:menu-animation-close></kendo:menu-animation-close>
+    </kendo:menu-animation>
+ 
+### [kendo:menu-animation-open](/api/wrappers/jsp/menu/animation-open)
 
+The animation that will be used when opening sub menus.
+
+#### Example
+
+    <kendo:menu-animation>
+        <kendo:menu-animation-open></kendo:menu-animation-open>
+    </kendo:menu-animation>
+ 

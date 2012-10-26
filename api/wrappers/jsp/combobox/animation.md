@@ -14,25 +14,25 @@ A JSP tag representing Kendo Animation.
     </kendo:comboBox>
 
 
-## Configuration Attributes
+## Child JSP Tags
 
+### [kendo:comboBox-animation-close](/api/wrappers/jsp/combobox/animation-close)
 
-### close `Object`
-
-Animation to be used for closing of the popup. Related tag: [kendo:comboBox-close](#kendo-comboBox-close). 
-
-#### Example
-    <kendo:comboBox close="close">
-    </kendo:comboBox>
-
-
-
-### open `Object`
-
-Animation to be used for opening of the popup. Related tag: [kendo:comboBox-open](#kendo-comboBox-open). 
+Animation to be used for closing of the popup.
 
 #### Example
-    <kendo:comboBox open="open">
-    </kendo:comboBox>
 
+    <kendo:comboBox-animation>
+        <kendo:comboBox-animation-close></kendo:comboBox-animation-close>
+    </kendo:comboBox-animation>
+ 
+### [kendo:comboBox-animation-open](/api/wrappers/jsp/combobox/animation-open)
 
+Animation to be used for opening of the popup.
+
+#### Example
+
+    <kendo:comboBox-animation>
+        <kendo:comboBox-animation-open></kendo:comboBox-animation-open>
+    </kendo:comboBox-animation>
+ 
