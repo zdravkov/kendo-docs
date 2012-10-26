@@ -1,6 +1,6 @@
 ---
 title: treeView-animation
-slug: treeView-animation
+slug: jsp-treeView-animation
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-negativeValues
-slug: chart-seriesItem-negativeValues
+slug: jsp-chart-seriesItem-negativeValues
 tags: api, java
 publish: true
 ---

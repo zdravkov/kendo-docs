@@ -1,6 +1,6 @@
 ---
 title: editor
-slug: editor
+slug: jsp-editor
 tags: api, java
 publish: true
 ---

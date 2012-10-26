@@ -1,6 +1,6 @@
 ---
 title: pager-messages
-slug: pager-messages
+slug: jsp-pager-messages
 tags: api, java
 publish: true
 ---

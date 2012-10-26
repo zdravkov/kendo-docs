@@ -1,6 +1,6 @@
 ---
 title: upload-async
-slug: upload-async
+slug: jsp-upload-async
 tags: api, java
 publish: true
 ---

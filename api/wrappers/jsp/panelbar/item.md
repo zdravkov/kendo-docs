@@ -1,6 +1,6 @@
 ---
 title: panelBar-item
-slug: panelBar-item
+slug: jsp-panelBar-item
 tags: api, java
 publish: true
 ---

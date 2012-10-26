@@ -1,6 +1,6 @@
 ---
 title: radialGauge-pointer
-slug: radialGauge-pointer
+slug: jsp-radialGauge-pointer
 tags: api, java
 publish: true
 ---

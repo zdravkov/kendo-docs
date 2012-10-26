@@ -1,6 +1,6 @@
 ---
 title: treeView-animation-expand
-slug: treeView-animation-expand
+slug: jsp-treeView-animation-expand
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: chart-categoryAxis-labels-border
-slug: chart-categoryAxis-labels-border
+slug: jsp-chart-categoryAxis-labels-border
 tags: api, java
 publish: true
 ---

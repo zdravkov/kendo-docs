@@ -1,6 +1,6 @@
 ---
 title: chart-categoryAxis-majorTicks
-slug: chart-categoryAxis-majorTicks
+slug: jsp-chart-categoryAxis-majorTicks
 tags: api, java
 publish: true
 ---

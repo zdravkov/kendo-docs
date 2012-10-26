@@ -1,6 +1,6 @@
 ---
 title: numericTextBox
-slug: numericTextBox
+slug: jsp-numericTextBox
 tags: api, java
 publish: true
 ---

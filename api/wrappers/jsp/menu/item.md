@@ -1,6 +1,6 @@
 ---
 title: menu-item
-slug: menu-item
+slug: jsp-menu-item
 tags: api, java
 publish: true
 ---

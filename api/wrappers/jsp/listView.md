@@ -1,6 +1,6 @@
 ---
 title: listView
-slug: listView
+slug: jsp-listView
 tags: api, java
 publish: true
 ---

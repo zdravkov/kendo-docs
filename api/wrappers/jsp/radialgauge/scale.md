@@ -1,6 +1,6 @@
 ---
 title: radialGauge-scale
-slug: radialGauge-scale
+slug: jsp-radialGauge-scale
 tags: api, java
 publish: true
 ---

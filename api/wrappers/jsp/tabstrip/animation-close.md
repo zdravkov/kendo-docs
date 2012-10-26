@@ -1,6 +1,6 @@
 ---
 title: tabStrip-animation-close
-slug: tabStrip-animation-close
+slug: jsp-tabStrip-animation-close
 tags: api, java
 publish: true
 ---

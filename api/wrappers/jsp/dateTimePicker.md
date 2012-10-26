@@ -1,6 +1,6 @@
 ---
 title: dateTimePicker
-slug: dateTimePicker
+slug: jsp-dateTimePicker
 tags: api, java
 publish: true
 ---

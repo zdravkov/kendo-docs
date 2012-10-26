@@ -1,6 +1,6 @@
 ---
 title: chart-valueAxis-title-border
-slug: chart-valueAxis-title-border
+slug: jsp-chart-valueAxis-title-border
 tags: api, java
 publish: true
 ---

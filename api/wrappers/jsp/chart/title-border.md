@@ -1,6 +1,6 @@
 ---
 title: chart-title-border
-slug: chart-title-border
+slug: jsp-chart-title-border
 tags: api, java
 publish: true
 ---

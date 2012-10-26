@@ -1,6 +1,6 @@
 ---
 title: dataSource-schema
-slug: dataSource-schema
+slug: jsp-dataSource-schema
 tags: api, java
 publish: true
 ---

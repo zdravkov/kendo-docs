@@ -1,6 +1,6 @@
 ---
 title: linearGauge-scale-labels
-slug: linearGauge-scale-labels
+slug: jsp-linearGauge-scale-labels
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: chart-valueAxis
-slug: chart-valueAxis
+slug: jsp-chart-valueAxis
 tags: api, java
 publish: true
 ---

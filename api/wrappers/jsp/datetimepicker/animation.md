@@ -1,6 +1,6 @@
 ---
 title: dateTimePicker-animation
-slug: dateTimePicker-animation
+slug: jsp-dateTimePicker-animation
 tags: api, java
 publish: true
 ---

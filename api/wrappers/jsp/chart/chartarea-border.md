@@ -1,6 +1,6 @@
 ---
 title: chart-chartArea-border
-slug: chart-chartArea-border
+slug: jsp-chart-chartArea-border
 tags: api, java
 publish: true
 ---

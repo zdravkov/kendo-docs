@@ -1,6 +1,6 @@
 ---
 title: chart-categoryAxis-majorGridLines
-slug: chart-categoryAxis-majorGridLines
+slug: jsp-chart-categoryAxis-majorGridLines
 tags: api, java
 publish: true
 ---

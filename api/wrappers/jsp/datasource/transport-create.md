@@ -1,6 +1,6 @@
 ---
 title: dataSource-transport-create
-slug: dataSource-transport-create
+slug: jsp-dataSource-transport-create
 tags: api, java
 publish: true
 ---

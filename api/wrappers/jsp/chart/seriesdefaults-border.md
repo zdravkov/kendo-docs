@@ -1,6 +1,6 @@
 ---
 title: chart-seriesDefaults-border
-slug: chart-seriesDefaults-border
+slug: jsp-chart-seriesDefaults-border
 tags: api, java
 publish: true
 ---

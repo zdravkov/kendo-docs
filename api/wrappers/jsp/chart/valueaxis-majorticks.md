@@ -1,6 +1,6 @@
 ---
 title: chart-valueAxis-majorTicks
-slug: chart-valueAxis-majorTicks
+slug: jsp-chart-valueAxis-majorTicks
 tags: api, java
 publish: true
 ---

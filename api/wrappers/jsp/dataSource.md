@@ -1,6 +1,6 @@
 ---
 title: dataSource
-slug: dataSource
+slug: jsp-dataSource
 tags: api, java
 publish: true
 ---

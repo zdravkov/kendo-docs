@@ -1,6 +1,6 @@
 ---
 title: panelBar-animation-open
-slug: panelBar-animation-open
+slug: jsp-panelBar-animation-open
 tags: api, java
 publish: true
 ---

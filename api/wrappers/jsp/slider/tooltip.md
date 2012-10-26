@@ -1,6 +1,6 @@
 ---
 title: slider-tooltip
-slug: slider-tooltip
+slug: jsp-slider-tooltip
 tags: api, java
 publish: true
 ---

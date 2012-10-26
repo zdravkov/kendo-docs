@@ -1,6 +1,6 @@
 ---
 title: window-animation
-slug: window-animation
+slug: jsp-window-animation
 tags: api, java
 publish: true
 ---

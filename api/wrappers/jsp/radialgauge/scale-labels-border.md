@@ -1,6 +1,6 @@
 ---
 title: radialGauge-scale-labels-border
-slug: radialGauge-scale-labels-border
+slug: jsp-radialGauge-scale-labels-border
 tags: api, java
 publish: true
 ---

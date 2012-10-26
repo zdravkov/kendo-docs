@@ -1,6 +1,6 @@
 ---
 title: splitter
-slug: splitter
+slug: jsp-splitter
 tags: api, java
 publish: true
 ---

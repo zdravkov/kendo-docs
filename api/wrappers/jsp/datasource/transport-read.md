@@ -1,6 +1,6 @@
 ---
 title: dataSource-transport-read
-slug: dataSource-transport-read
+slug: jsp-dataSource-transport-read
 tags: api, java
 publish: true
 ---

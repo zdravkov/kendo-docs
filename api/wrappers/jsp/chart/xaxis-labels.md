@@ -1,6 +1,6 @@
 ---
 title: chart-xAxis-labels
-slug: chart-xAxis-labels
+slug: jsp-chart-xAxis-labels
 tags: api, java
 publish: true
 ---

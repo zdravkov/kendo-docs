@@ -1,6 +1,6 @@
 ---
 title: treeView-checkboxes
-slug: treeView-checkboxes
+slug: jsp-treeView-checkboxes
 tags: api, java
 publish: true
 ---

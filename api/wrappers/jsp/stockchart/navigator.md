@@ -1,6 +1,6 @@
 ---
 title: stockChart-navigator
-slug: stockChart-navigator
+slug: jsp-stockChart-navigator
 tags: api, java
 publish: true
 ---

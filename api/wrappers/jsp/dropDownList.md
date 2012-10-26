@@ -1,6 +1,6 @@
 ---
 title: dropDownList
-slug: dropDownList
+slug: jsp-dropDownList
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: rangeSlider-tooltip
-slug: rangeSlider-tooltip
+slug: jsp-rangeSlider-tooltip
 tags: api, java
 publish: true
 ---

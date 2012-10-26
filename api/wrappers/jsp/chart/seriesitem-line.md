@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-line
-slug: chart-seriesItem-line
+slug: jsp-chart-seriesItem-line
 tags: api, java
 publish: true
 ---

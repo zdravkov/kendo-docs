@@ -1,6 +1,6 @@
 ---
 title: grid-column
-slug: grid-column
+slug: jsp-grid-column
 tags: api, java
 publish: true
 ---

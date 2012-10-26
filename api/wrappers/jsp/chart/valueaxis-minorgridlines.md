@@ -1,6 +1,6 @@
 ---
 title: chart-valueAxis-minorGridLines
-slug: chart-valueAxis-minorGridLines
+slug: jsp-chart-valueAxis-minorGridLines
 tags: api, java
 publish: true
 ---

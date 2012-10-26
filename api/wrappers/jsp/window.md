@@ -1,6 +1,6 @@
 ---
 title: window
-slug: window
+slug: jsp-window
 tags: api, java
 publish: true
 ---

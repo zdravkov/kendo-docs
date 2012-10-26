@@ -1,6 +1,6 @@
 ---
 title: radialGauge-scale-majorTicks
-slug: radialGauge-scale-majorTicks
+slug: jsp-radialGauge-scale-majorTicks
 tags: api, java
 publish: true
 ---

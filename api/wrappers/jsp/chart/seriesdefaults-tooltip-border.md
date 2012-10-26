@@ -1,6 +1,6 @@
 ---
 title: chart-seriesDefaults-tooltip-border
-slug: chart-seriesDefaults-tooltip-border
+slug: jsp-chart-seriesDefaults-tooltip-border
 tags: api, java
 publish: true
 ---

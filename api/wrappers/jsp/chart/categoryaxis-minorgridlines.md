@@ -1,6 +1,6 @@
 ---
 title: chart-categoryAxis-minorGridLines
-slug: chart-categoryAxis-minorGridLines
+slug: jsp-chart-categoryAxis-minorGridLines
 tags: api, java
 publish: true
 ---

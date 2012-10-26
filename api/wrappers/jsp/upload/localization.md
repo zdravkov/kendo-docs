@@ -1,6 +1,6 @@
 ---
 title: upload-localization
-slug: upload-localization
+slug: jsp-upload-localization
 tags: api, java
 publish: true
 ---

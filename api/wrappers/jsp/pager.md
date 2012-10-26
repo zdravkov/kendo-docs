@@ -1,6 +1,6 @@
 ---
 title: pager
-slug: pager
+slug: jsp-pager
 tags: api, java
 publish: true
 ---

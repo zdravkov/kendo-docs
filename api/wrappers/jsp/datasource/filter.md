@@ -1,6 +1,6 @@
 ---
 title: dataSource-filter
-slug: dataSource-filter
+slug: jsp-dataSource-filter
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: panelBar
-slug: panelBar
+slug: jsp-panelBar
 tags: api, java
 publish: true
 ---

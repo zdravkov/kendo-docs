@@ -1,6 +1,6 @@
 ---
 title: chart-chartArea
-slug: chart-chartArea
+slug: jsp-chart-chartArea
 tags: api, java
 publish: true
 ---

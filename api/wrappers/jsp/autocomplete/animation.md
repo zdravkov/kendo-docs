@@ -1,6 +1,6 @@
 ---
 title: autoComplete-animation
-slug: autoComplete-animation
+slug: jsp-autoComplete-animation
 tags: api, java
 publish: true
 ---

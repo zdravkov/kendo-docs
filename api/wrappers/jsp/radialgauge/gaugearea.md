@@ -1,6 +1,6 @@
 ---
 title: radialGauge-gaugeArea
-slug: radialGauge-gaugeArea
+slug: jsp-radialGauge-gaugeArea
 tags: api, java
 publish: true
 ---

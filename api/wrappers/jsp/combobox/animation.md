@@ -1,6 +1,6 @@
 ---
 title: comboBox-animation
-slug: comboBox-animation
+slug: jsp-comboBox-animation
 tags: api, java
 publish: true
 ---

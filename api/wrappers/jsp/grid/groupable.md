@@ -1,6 +1,6 @@
 ---
 title: grid-groupable
-slug: grid-groupable
+slug: jsp-grid-groupable
 tags: api, java
 publish: true
 ---

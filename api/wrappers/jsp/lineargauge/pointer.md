@@ -1,6 +1,6 @@
 ---
 title: linearGauge-pointer
-slug: linearGauge-pointer
+slug: jsp-linearGauge-pointer
 tags: api, java
 publish: true
 ---

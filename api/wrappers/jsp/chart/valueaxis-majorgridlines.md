@@ -1,6 +1,6 @@
 ---
 title: chart-valueAxis-majorGridLines
-slug: chart-valueAxis-majorGridLines
+slug: jsp-chart-valueAxis-majorGridLines
 tags: api, java
 publish: true
 ---

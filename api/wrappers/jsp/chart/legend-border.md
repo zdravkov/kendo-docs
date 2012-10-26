@@ -1,6 +1,6 @@
 ---
 title: chart-legend-border
-slug: chart-legend-border
+slug: jsp-chart-legend-border
 tags: api, java
 publish: true
 ---

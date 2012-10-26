@@ -1,6 +1,6 @@
 ---
 title: slider
-slug: slider
+slug: jsp-slider
 tags: api, java
 publish: true
 ---

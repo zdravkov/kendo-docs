@@ -1,6 +1,6 @@
 ---
 title: dataSource-aggregate
-slug: dataSource-aggregate
+slug: jsp-dataSource-aggregate
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: treeView-items
-slug: treeView-items
+slug: jsp-treeView-items
 tags: api, java
 publish: true
 ---

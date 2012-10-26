@@ -1,6 +1,6 @@
 ---
 title: radialGauge-pointer-cap
-slug: radialGauge-pointer-cap
+slug: jsp-radialGauge-pointer-cap
 tags: api, java
 publish: true
 ---

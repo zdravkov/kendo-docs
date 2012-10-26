@@ -1,6 +1,6 @@
 ---
 title: treeView-animation-collapse
-slug: treeView-animation-collapse
+slug: jsp-treeView-animation-collapse
 tags: api, java
 publish: true
 ---

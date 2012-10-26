@@ -1,6 +1,6 @@
 ---
 title: linearGauge
-slug: linearGauge
+slug: jsp-linearGauge
 tags: api, java
 publish: true
 ---

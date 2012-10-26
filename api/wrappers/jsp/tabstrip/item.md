@@ -1,6 +1,6 @@
 ---
 title: tabStrip-item
-slug: tabStrip-item
+slug: jsp-tabStrip-item
 tags: api, java
 publish: true
 ---

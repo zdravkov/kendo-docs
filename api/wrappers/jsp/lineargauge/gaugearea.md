@@ -1,6 +1,6 @@
 ---
 title: linearGauge-gaugeArea
-slug: linearGauge-gaugeArea
+slug: jsp-linearGauge-gaugeArea
 tags: api, java
 publish: true
 ---

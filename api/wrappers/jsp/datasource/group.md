@@ -1,6 +1,6 @@
 ---
 title: dataSource-group
-slug: dataSource-group
+slug: jsp-dataSource-group
 tags: api, java
 publish: true
 ---

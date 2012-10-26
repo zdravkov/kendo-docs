@@ -1,6 +1,6 @@
 ---
 title: chart-xAxis
-slug: chart-xAxis
+slug: jsp-chart-xAxis
 tags: api, java
 publish: true
 ---

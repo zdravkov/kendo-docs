@@ -1,6 +1,6 @@
 ---
 title: chart-series
-slug: chart-series
+slug: jsp-chart-series
 tags: api, java
 publish: true
 ---

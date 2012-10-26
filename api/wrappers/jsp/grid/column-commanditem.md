@@ -1,6 +1,6 @@
 ---
 title: grid-column-commandItem
-slug: grid-column-commandItem
+slug: jsp-grid-column-commandItem
 tags: api, java
 publish: true
 ---

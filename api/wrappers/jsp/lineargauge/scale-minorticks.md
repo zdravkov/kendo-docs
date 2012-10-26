@@ -1,6 +1,6 @@
 ---
 title: linearGauge-scale-minorTicks
-slug: linearGauge-scale-minorTicks
+slug: jsp-linearGauge-scale-minorTicks
 tags: api, java
 publish: true
 ---

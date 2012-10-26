@@ -1,6 +1,6 @@
 ---
 title: autoComplete
-slug: autoComplete
+slug: jsp-autoComplete
 tags: api, java
 publish: true
 ---

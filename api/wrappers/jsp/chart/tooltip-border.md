@@ -1,6 +1,6 @@
 ---
 title: chart-tooltip-border
-slug: chart-tooltip-border
+slug: jsp-chart-tooltip-border
 tags: api, java
 publish: true
 ---

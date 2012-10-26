@@ -1,6 +1,6 @@
 ---
 title: radialGauge-scale-minorTicks
-slug: radialGauge-scale-minorTicks
+slug: jsp-radialGauge-scale-minorTicks
 tags: api, java
 publish: true
 ---

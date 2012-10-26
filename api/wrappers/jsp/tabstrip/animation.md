@@ -1,6 +1,6 @@
 ---
 title: tabStrip-animation
-slug: tabStrip-animation
+slug: jsp-tabStrip-animation
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-labels-border
-slug: chart-seriesItem-labels-border
+slug: jsp-chart-seriesItem-labels-border
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: splitter-pane
-slug: splitter-pane
+slug: jsp-splitter-pane
 tags: api, java
 publish: true
 ---

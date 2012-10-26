@@ -1,6 +1,6 @@
 ---
 title: dataSource-transport-update
-slug: dataSource-transport-update
+slug: jsp-dataSource-transport-update
 tags: api, java
 publish: true
 ---

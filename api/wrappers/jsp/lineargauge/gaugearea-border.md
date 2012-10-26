@@ -1,6 +1,6 @@
 ---
 title: linearGauge-gaugeArea-border
-slug: linearGauge-gaugeArea-border
+slug: jsp-linearGauge-gaugeArea-border
 tags: api, java
 publish: true
 ---

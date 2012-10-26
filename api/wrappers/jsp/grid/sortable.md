@@ -1,6 +1,6 @@
 ---
 title: grid-sortable
-slug: grid-sortable
+slug: jsp-grid-sortable
 tags: api, java
 publish: true
 ---

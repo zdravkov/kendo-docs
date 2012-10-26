@@ -1,6 +1,6 @@
 ---
 title: dataSource-transport-destroy
-slug: dataSource-transport-destroy
+slug: jsp-dataSource-transport-destroy
 tags: api, java
 publish: true
 ---

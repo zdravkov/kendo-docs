@@ -1,6 +1,6 @@
 ---
 title: timePicker-animation
-slug: timePicker-animation
+slug: jsp-timePicker-animation
 tags: api, java
 publish: true
 ---

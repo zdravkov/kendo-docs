@@ -1,6 +1,6 @@
 ---
 title: menu-animation
-slug: menu-animation
+slug: jsp-menu-animation
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: grid-pageable-messages
-slug: grid-pageable-messages
+slug: jsp-grid-pageable-messages
 tags: api, java
 publish: true
 ---

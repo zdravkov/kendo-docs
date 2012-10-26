@@ -1,6 +1,6 @@
 ---
 title: linearGauge-pointer-border
-slug: linearGauge-pointer-border
+slug: jsp-linearGauge-pointer-border
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: linearGauge-scale-labels-border
-slug: linearGauge-scale-labels-border
+slug: jsp-linearGauge-scale-labels-border
 tags: api, java
 publish: true
 ---

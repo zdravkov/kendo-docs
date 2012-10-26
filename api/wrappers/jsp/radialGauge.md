@@ -1,6 +1,6 @@
 ---
 title: radialGauge
-slug: radialGauge
+slug: jsp-radialGauge
 tags: api, java
 publish: true
 ---

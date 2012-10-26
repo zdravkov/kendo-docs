@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-markers
-slug: chart-seriesItem-markers
+slug: jsp-chart-seriesItem-markers
 tags: api, java
 publish: true
 ---

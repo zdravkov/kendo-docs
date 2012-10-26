@@ -1,6 +1,6 @@
 ---
 title: chart-valueAxis-minorTicks
-slug: chart-valueAxis-minorTicks
+slug: jsp-chart-valueAxis-minorTicks
 tags: api, java
 publish: true
 ---

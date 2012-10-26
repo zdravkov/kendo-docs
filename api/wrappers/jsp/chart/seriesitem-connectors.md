@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-connectors
-slug: chart-seriesItem-connectors
+slug: jsp-chart-seriesItem-connectors
 tags: api, java
 publish: true
 ---

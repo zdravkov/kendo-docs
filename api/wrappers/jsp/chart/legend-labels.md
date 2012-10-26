@@ -1,6 +1,6 @@
 ---
 title: chart-legend-labels
-slug: chart-legend-labels
+slug: jsp-chart-legend-labels
 tags: api, java
 publish: true
 ---

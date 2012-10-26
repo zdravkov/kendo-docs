@@ -1,6 +1,6 @@
 ---
 title: linearGauge-scale-majorTicks
-slug: linearGauge-scale-majorTicks
+slug: jsp-linearGauge-scale-majorTicks
 tags: api, java
 publish: true
 ---

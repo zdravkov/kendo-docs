@@ -1,6 +1,6 @@
 ---
 title: chart-categoryAxis-title
-slug: chart-categoryAxis-title
+slug: jsp-chart-categoryAxis-title
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: grid-groupable-messages
-slug: grid-groupable-messages
+slug: jsp-grid-groupable-messages
 tags: api, java
 publish: true
 ---

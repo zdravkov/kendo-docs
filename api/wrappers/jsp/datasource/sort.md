@@ -1,6 +1,6 @@
 ---
 title: dataSource-sort
-slug: dataSource-sort
+slug: jsp-dataSource-sort
 tags: api, java
 publish: true
 ---

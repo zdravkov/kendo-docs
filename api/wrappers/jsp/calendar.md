@@ -1,6 +1,6 @@
 ---
 title: calendar
-slug: calendar
+slug: jsp-calendar
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: chart-tooltip
-slug: chart-tooltip
+slug: jsp-chart-tooltip
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: grid
-slug: grid
+slug: jsp-grid
 tags: api, java
 publish: true
 ---

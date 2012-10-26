@@ -1,6 +1,6 @@
 ---
 title: upload
-slug: upload
+slug: jsp-upload
 tags: api, java
 publish: true
 ---

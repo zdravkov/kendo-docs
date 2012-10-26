@@ -1,6 +1,6 @@
 ---
 title: calendar-month
-slug: calendar-month
+slug: jsp-calendar-month
 tags: api, java
 publish: true
 ---

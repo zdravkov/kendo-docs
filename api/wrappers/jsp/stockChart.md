@@ -1,6 +1,6 @@
 ---
 title: stockChart
-slug: stockChart
+slug: jsp-stockChart
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: dataSource-groupItem-aggregates
-slug: dataSource-groupItem-aggregates
+slug: jsp-dataSource-groupItem-aggregates
 tags: api, java
 publish: true
 ---

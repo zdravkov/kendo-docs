@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-labels
-slug: chart-seriesItem-labels
+slug: jsp-chart-seriesItem-labels
 tags: api, java
 publish: true
 ---

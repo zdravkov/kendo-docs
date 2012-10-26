@@ -1,6 +1,6 @@
 ---
 title: chart
-slug: chart
+slug: jsp-chart
 tags: api, java
 publish: true
 ---

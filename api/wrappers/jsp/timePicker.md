@@ -1,6 +1,6 @@
 ---
 title: timePicker
-slug: timePicker
+slug: jsp-timePicker
 tags: api, java
 publish: true
 ---

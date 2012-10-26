@@ -1,6 +1,6 @@
 ---
 title: rangeSlider
-slug: rangeSlider
+slug: jsp-rangeSlider
 tags: api, java
 publish: true
 ---

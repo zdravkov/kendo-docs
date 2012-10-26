@@ -1,6 +1,6 @@
 ---
 title: grid-pageable
-slug: grid-pageable
+slug: jsp-grid-pageable
 tags: api, java
 publish: true
 ---

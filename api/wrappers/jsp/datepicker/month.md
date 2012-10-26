@@ -1,6 +1,6 @@
 ---
 title: datePicker-month
-slug: datePicker-month
+slug: jsp-datePicker-month
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-tooltip
-slug: chart-seriesItem-tooltip
+slug: jsp-chart-seriesItem-tooltip
 tags: api, java
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: chart-seriesItem-overlay
-slug: chart-seriesItem-overlay
+slug: jsp-chart-seriesItem-overlay
 tags: api, java
 publish: true
 ---

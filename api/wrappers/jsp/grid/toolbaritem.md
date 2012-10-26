@@ -1,6 +1,6 @@
 ---
 title: grid-toolbarItem
-slug: grid-toolbarItem
+slug: jsp-grid-toolbarItem
 tags: api, java
 publish: true
 ---

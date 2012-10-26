@@ -1,6 +1,6 @@
 ---
 title: chart-seriesDefaults-labels
-slug: chart-seriesDefaults-labels
+slug: jsp-chart-seriesDefaults-labels
 tags: api, java
 publish: true
 ---

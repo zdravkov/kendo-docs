@@ -1,6 +1,6 @@
 ---
 title: treeView
-slug: treeView
+slug: jsp-treeView
 tags: api, java
 publish: true
 ---

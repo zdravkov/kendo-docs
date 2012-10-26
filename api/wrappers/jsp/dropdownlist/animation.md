@@ -1,6 +1,6 @@
 ---
 title: dropDownList-animation
-slug: dropDownList-animation
+slug: jsp-dropDownList-animation
 tags: api, java
 publish: true
 ---

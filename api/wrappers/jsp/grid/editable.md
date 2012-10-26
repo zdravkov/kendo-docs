@@ -1,6 +1,6 @@
 ---
 title: grid-editable
-slug: grid-editable
+slug: jsp-grid-editable
 tags: api, java
 publish: true
 ---

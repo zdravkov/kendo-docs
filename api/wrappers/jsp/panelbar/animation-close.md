@@ -1,6 +1,6 @@
 ---
 title: panelBar-animation-close
-slug: panelBar-animation-close
+slug: jsp-panelBar-animation-close
 tags: api, java
 publish: true
 ---

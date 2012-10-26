@@ -1,6 +1,6 @@
 ---
 title: comboBox
-slug: comboBox
+slug: jsp-comboBox
 tags: api, java
 publish: true
 ---

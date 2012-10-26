@@ -1,6 +1,6 @@
 ---
 title: chart-legend
-slug: chart-legend
+slug: jsp-chart-legend
 tags: api, java
 publish: true
 ---
