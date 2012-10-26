@@ -31,6 +31,14 @@ The animation(s) used for hiding of the pop-up.
         }
     });
 
+### animation.close.effects `String`
+
+Effect to be used for closing of the popup.
+
+### animation.close.duration `Number`
+
+Difines the animation duration.
+
 ### animation.open `Object`
 
 The animation(s) used for displaying of the pop-up.
@@ -46,6 +54,14 @@ The animation(s) used for displaying of the pop-up.
             }
         }
     });
+
+### animation.open.effects `String`
+
+Effect to be used for opening of the popup.
+
+### animation.open.duration `Number`
+
+Difines the animation duration.
 
 ### culture `String`*(default: en-US)*
 
@@ -254,7 +270,7 @@ Prepares the **DatePicker** for safe removal from DOM. Detaches all event handle
 #### Example
 
     var datePicker = $("#datePicker").data("kendoDatePicker");
-    
+
     // detach events
     datePicker.destroy();
 
