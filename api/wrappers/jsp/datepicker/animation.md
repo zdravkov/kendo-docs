@@ -19,7 +19,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-The animation(s) used for hiding of the pop-up. Related tag: [\<kendo:datePicker-close\>](#kendo-datePicker-close). 
+The animation(s) used for hiding of the pop-up. Related tag: [kendo:datePicker-close](#kendo-datePicker-close). 
 
 #### Example
     <kendo:datePicker close="close">
@@ -29,7 +29,7 @@ The animation(s) used for hiding of the pop-up. Related tag: [\<kendo:datePicker
 
 ### open `Object`
 
-The animation(s) used for displaying of the pop-up. Related tag: [\<kendo:datePicker-open\>](#kendo-datePicker-open). 
+The animation(s) used for displaying of the pop-up. Related tag: [kendo:datePicker-open](#kendo-datePicker-open). 
 
 #### Example
     <kendo:datePicker open="open">

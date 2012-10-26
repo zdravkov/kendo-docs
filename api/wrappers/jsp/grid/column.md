@@ -84,7 +84,7 @@ The format that will be applied on the column cells.
 
 ### sortable `boolean`
 
-Specifies whether given column is sortable. Related tag: [\<kendo:grid-sortable\>](#kendo-grid-sortable). 
+Specifies whether given column is sortable. Related tag: [kendo:grid-sortable](#kendo-grid-sortable). 
 
 #### Example
     <kendo:grid sortable="sortable">

@@ -19,7 +19,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-Animation to be used for closing of the popup. Related tag: [\<kendo:dropDownList-close\>](#kendo-dropDownList-close). 
+Animation to be used for closing of the popup. Related tag: [kendo:dropDownList-close](#kendo-dropDownList-close). 
 
 #### Example
     <kendo:dropDownList close="close">
@@ -29,7 +29,7 @@ Animation to be used for closing of the popup. Related tag: [\<kendo:dropDownLis
 
 ### open `Object`
 
-Animation to be used for opening of the popup. Related tag: [\<kendo:dropDownList-open\>](#kendo-dropDownList-open). 
+Animation to be used for opening of the popup. Related tag: [kendo:dropDownList-open](#kendo-dropDownList-open). 
 
 #### Example
     <kendo:dropDownList open="open">
