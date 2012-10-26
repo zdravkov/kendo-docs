@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# \<kendo:grid\>
+# &lt;kendo:grid&gt;
 A JSP tag representing Kendo Grid.
 
 
