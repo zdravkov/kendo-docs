@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:radialGauge-pointer-cap>
+# \<kendo:radialGauge-pointer-cap\>
 A JSP tag representing Kendo Cap.
 
 #### Example

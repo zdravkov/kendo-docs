@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-toolbarItem>
+# \<kendo:grid-toolbarItem\>
 A JSP tag representing Kendo ToolbarItem.
 
 #### Example

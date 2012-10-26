@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:menu-item>
+# \<kendo:menu-item\>
 A JSP tag representing Kendo Item.
 
 #### Example

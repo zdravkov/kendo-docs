@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:linearGauge-gaugeArea>
+# \<kendo:linearGauge-gaugeArea\>
 A JSP tag representing Kendo GaugeArea.
 
 #### Example
@@ -60,7 +60,7 @@ The width of the gauge area.
 
 ## Child JSP Tags
 
-### [<kendo:linearGauge-gaugeArea-border>](/api/wrappers/jsp/lineargauge/gaugearea-border)
+### [\<kendo:linearGauge-gaugeArea-border\>](/api/wrappers/jsp/lineargauge/gaugearea-border)
 
 The border of the gauge area.
 

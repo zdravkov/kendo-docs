@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-categoryAxis-line>
+# \<kendo:chart-categoryAxis-line\>
 A JSP tag representing Kendo Line.
 
 #### Example

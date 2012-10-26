@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-groupItem>
+# \<kendo:dataSource-groupItem\>
 A JSP tag representing Kendo GroupItem.
 
 #### Example
@@ -39,7 +39,7 @@ Specifies the order of the groupped items.
 
 ## Child JSP Tags
 
-### [<kendo:dataSource-groupItem-aggregates>](/api/wrappers/jsp/datasource/groupitem-aggregates)
+### [\<kendo:dataSource-groupItem-aggregates\>](/api/wrappers/jsp/datasource/groupitem-aggregates)
 
 Specifies the aggregate function for this group.
 

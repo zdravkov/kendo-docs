@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:treeView-animation-expand>
+# \<kendo:treeView-animation-expand\>
 A JSP tag representing Kendo Expand.
 
 #### Example

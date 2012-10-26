@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-valueAxis-majorGridLines>
+# \<kendo:chart-valueAxis-majorGridLines\>
 A JSP tag representing Kendo MajorGridLines.
 
 #### Example

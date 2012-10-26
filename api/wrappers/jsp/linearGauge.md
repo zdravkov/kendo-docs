@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:linearGauge>
+# \<kendo:linearGauge\>
 A JSP tag representing Kendo LinearGauge.
 
 
@@ -24,7 +24,7 @@ A value indicating if transition animations should be played.
 
 ## Child JSP Tags
 
-### [<kendo:linearGauge-gaugeArea>](/api/wrappers/jsp/lineargauge/gaugearea)
+### [\<kendo:linearGauge-gaugeArea\>](/api/wrappers/jsp/lineargauge/gaugearea)
 
 The gauge area configuration options.
 This is the entire visible area of the gauge.
@@ -35,7 +35,7 @@ This is the entire visible area of the gauge.
         <kendo:linearGauge-gaugeArea></kendo:linearGauge-gaugeArea>
     </kendo:linearGauge>
  
-### [<kendo:linearGauge-pointer>](/api/wrappers/jsp/lineargauge/pointer)
+### [\<kendo:linearGauge-pointer\>](/api/wrappers/jsp/lineargauge/pointer)
 
 The pointer configuration options.
 
@@ -45,7 +45,7 @@ The pointer configuration options.
         <kendo:linearGauge-pointer></kendo:linearGauge-pointer>
     </kendo:linearGauge>
  
-### [<kendo:linearGauge-scale>](/api/wrappers/jsp/lineargauge/scale)
+### [\<kendo:linearGauge-scale\>](/api/wrappers/jsp/lineargauge/scale)
 
 Configures the scale.
 

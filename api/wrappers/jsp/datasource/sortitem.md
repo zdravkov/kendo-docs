@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-sortItem>
+# \<kendo:dataSource-sortItem\>
 A JSP tag representing Kendo SortItem.
 
 #### Example

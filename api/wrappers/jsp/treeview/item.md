@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:treeView-item>
+# \<kendo:treeView-item\>
 A JSP tag representing Kendo Item.
 
 #### Example

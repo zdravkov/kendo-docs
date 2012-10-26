@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:tabStrip-animation>
+# \<kendo:tabStrip-animation\>
 A JSP tag representing Kendo Animation.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Animation.
 
 ## Child JSP Tags
 
-### [<kendo:tabStrip-animation-close>](/api/wrappers/jsp/tabstrip/animation-close)
+### [\<kendo:tabStrip-animation-close\>](/api/wrappers/jsp/tabstrip/animation-close)
 
 The visual animation(s) that will be used when the current tab is closed.
 
@@ -26,7 +26,7 @@ The visual animation(s) that will be used when the current tab is closed.
         <kendo:tabStrip-animation-close></kendo:tabStrip-animation-close>
     </kendo:tabStrip-animation>
  
-### [<kendo:tabStrip-animation-open>](/api/wrappers/jsp/tabstrip/animation-open)
+### [\<kendo:tabStrip-animation-open\>](/api/wrappers/jsp/tabstrip/animation-open)
 
 The visual animation(s) that will be used when the new tab is shown.
 

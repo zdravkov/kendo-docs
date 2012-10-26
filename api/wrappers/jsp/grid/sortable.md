@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-sortable>
+# \<kendo:grid-sortable\>
 A JSP tag representing Kendo Sortable.
 
 #### Example

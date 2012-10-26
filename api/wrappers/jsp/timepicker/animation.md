@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:timePicker-animation>
+# \<kendo:timePicker-animation\>
 A JSP tag representing Kendo Animation.
 
 #### Example
@@ -19,7 +19,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-Animation to be used for closing of the popup. Related tag: [<kendo:timePicker-close>](#kendo-timePicker-close). 
+Animation to be used for closing of the popup. Related tag: [\<kendo:timePicker-close\>](#kendo-timePicker-close). 
 
 #### Example
     <kendo:timePicker close="close">
@@ -29,7 +29,7 @@ Animation to be used for closing of the popup. Related tag: [<kendo:timePicker-c
 
 ### open `Object`
 
-Animation to be used for opening of the popup. Related tag: [<kendo:timePicker-open>](#kendo-timePicker-open). 
+Animation to be used for opening of the popup. Related tag: [\<kendo:timePicker-open\>](#kendo-timePicker-open). 
 
 #### Example
     <kendo:timePicker open="open">

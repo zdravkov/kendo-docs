@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-series>
+# \<kendo:chart-series\>
 A JSP tag representing Kendo Series.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Series.
 
 ## Child JSP Tags
 
-### [<kendo:chart-seriesItem>](/api/wrappers/jsp/chart/seriesitem)
+### [\<kendo:chart-seriesItem\>](/api/wrappers/jsp/chart/seriesitem)
 
 Array of series definitions.
 

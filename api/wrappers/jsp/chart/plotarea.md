@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-plotArea>
+# \<kendo:chart-plotArea\>
 A JSP tag representing Kendo PlotArea.
 
 #### Example
@@ -49,7 +49,7 @@ The margin of the plot area.
 
 ## Child JSP Tags
 
-### [<kendo:chart-plotArea-border>](/api/wrappers/jsp/chart/plotarea-border)
+### [\<kendo:chart-plotArea-border\>](/api/wrappers/jsp/chart/plotarea-border)
 
 The border of the plot area.
 

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-seriesDefaults-labels-border>
+# \<kendo:chart-seriesDefaults-labels-border\>
 A JSP tag representing Kendo Border.
 
 #### Example

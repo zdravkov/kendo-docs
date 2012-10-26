@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-categoryAxis-labels>
+# \<kendo:chart-categoryAxis-labels\>
 A JSP tag representing Kendo Labels.
 
 #### Example
@@ -164,7 +164,7 @@ Date format strings
 
 ## Child JSP Tags
 
-### [<kendo:chart-categoryAxis-labels-border>](/api/wrappers/jsp/chart/categoryaxis-labels-border)
+### [\<kendo:chart-categoryAxis-labels-border\>](/api/wrappers/jsp/chart/categoryaxis-labels-border)
 
 The border of the labels.
 

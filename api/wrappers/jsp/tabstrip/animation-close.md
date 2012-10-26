@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:tabStrip-animation-close>
+# \<kendo:tabStrip-animation-close\>
 A JSP tag representing Kendo Close.
 
 #### Example

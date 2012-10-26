@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:panelBar-animation-open>
+# \<kendo:panelBar-animation-open\>
 A JSP tag representing Kendo Open.
 
 #### Example

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dateTimePicker-animation>
+# \<kendo:dateTimePicker-animation\>
 A JSP tag representing Kendo Animation.
 
 #### Example
@@ -19,7 +19,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-The animation(s) used for hiding of the pop-up. Related tag: [<kendo:dateTimePicker-close>](#kendo-dateTimePicker-close). 
+The animation(s) used for hiding of the pop-up. Related tag: [\<kendo:dateTimePicker-close\>](#kendo-dateTimePicker-close). 
 
 #### Example
     <kendo:dateTimePicker close="close">
@@ -29,7 +29,7 @@ The animation(s) used for hiding of the pop-up. Related tag: [<kendo:dateTimePic
 
 ### open `Object`
 
-The animation(s) used for displaying of the pop-up. Related tag: [<kendo:dateTimePicker-open>](#kendo-dateTimePicker-open). 
+The animation(s) used for displaying of the pop-up. Related tag: [\<kendo:dateTimePicker-open\>](#kendo-dateTimePicker-open). 
 
 #### Example
     <kendo:dateTimePicker open="open">

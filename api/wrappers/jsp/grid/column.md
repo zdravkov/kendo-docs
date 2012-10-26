@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-column>
+# \<kendo:grid-column\>
 A JSP tag representing Kendo Column.
 
 #### Example
@@ -84,7 +84,7 @@ The format that will be applied on the column cells.
 
 ### sortable `boolean`
 
-Specifies whether given column is sortable. Related tag: [<kendo:grid-sortable>](#kendo-grid-sortable). 
+Specifies whether given column is sortable. Related tag: [\<kendo:grid-sortable\>](#kendo-grid-sortable). 
 
 #### Example
     <kendo:grid sortable="sortable">
@@ -174,7 +174,7 @@ The width of the column.
 
 ## Child JSP Tags
 
-### [<kendo:grid-column-command>](/api/wrappers/jsp/grid/column-command)
+### [\<kendo:grid-column-command\>](/api/wrappers/jsp/grid/column-command)
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
 

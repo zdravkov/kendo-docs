@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:linearGauge-scale-majorTicks>
+# \<kendo:linearGauge-scale-majorTicks\>
 A JSP tag representing Kendo MajorTicks.
 
 #### Example

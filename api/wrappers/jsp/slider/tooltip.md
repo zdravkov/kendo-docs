@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:slider-tooltip>
+# \<kendo:slider-tooltip\>
 A JSP tag representing Kendo Tooltip.
 
 #### Example

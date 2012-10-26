@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:radialGauge-scale-minorTicks>
+# \<kendo:radialGauge-scale-minorTicks\>
 A JSP tag representing Kendo MinorTicks.
 
 #### Example

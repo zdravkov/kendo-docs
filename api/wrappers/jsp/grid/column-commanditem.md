@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-column-commandItem>
+# \<kendo:grid-column-commandItem\>
 A JSP tag representing Kendo CommandItem.
 
 #### Example

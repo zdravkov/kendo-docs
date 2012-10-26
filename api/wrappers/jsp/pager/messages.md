@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:pager-messages>
+# \<kendo:pager-messages\>
 A JSP tag representing Kendo Messages.
 
 #### Example

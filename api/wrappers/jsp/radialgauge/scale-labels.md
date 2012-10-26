@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:radialGauge-scale-labels>
+# \<kendo:radialGauge-scale-labels\>
 A JSP tag representing Kendo Labels.
 
 #### Example
@@ -112,7 +112,7 @@ The visibility of the labels.
 
 ## Child JSP Tags
 
-### [<kendo:radialGauge-scale-labels-border>](/api/wrappers/jsp/radialgauge/scale-labels-border)
+### [\<kendo:radialGauge-scale-labels-border\>](/api/wrappers/jsp/radialgauge/scale-labels-border)
 
 The border of the labels.
 

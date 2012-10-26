@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:radialGauge-pointer>
+# \<kendo:radialGauge-pointer\>
 A JSP tag representing Kendo Pointer.
 
 #### Example
@@ -40,7 +40,7 @@ The value of the gauge.
 
 ## Child JSP Tags
 
-### [<kendo:radialGauge-pointer-cap>](/api/wrappers/jsp/radialgauge/pointer-cap)
+### [\<kendo:radialGauge-pointer-cap\>](/api/wrappers/jsp/radialgauge/pointer-cap)
 
 The cap configuration options.
 

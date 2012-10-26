@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:calendar>
+# \<kendo:calendar\>
 A JSP tag representing Kendo Calendar.
 
 
@@ -167,7 +167,7 @@ Fires when navigate
 ## Event Tags
  
 
-### <kendo:calendar-change>
+### \<kendo:calendar-change\>
 
 Fires when the selected date is changed
 
@@ -184,7 +184,7 @@ Fires when the selected date is changed
 
  
 
-### <kendo:calendar-navigate>
+### \<kendo:calendar-navigate\>
 
 Fires when navigate
 
@@ -203,7 +203,7 @@ Fires when navigate
 
 ## Child JSP Tags
 
-### [<kendo:calendar-month>](/api/wrappers/jsp/calendar/month)
+### [\<kendo:calendar-month\>](/api/wrappers/jsp/calendar/month)
 
 Templates for the cells rendered in the "month" view.
 

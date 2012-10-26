@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:menu-items>
+# \<kendo:menu-items\>
 A JSP tag representing Kendo Items.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Items.
 
 ## Child JSP Tags
 
-### [<kendo:menu-item>](/api/wrappers/jsp/menu/item)
+### [\<kendo:menu-item\>](/api/wrappers/jsp/menu/item)
 
 Contains items of Menu
 

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:treeView-checkboxes>
+# \<kendo:treeView-checkboxes\>
 A JSP tag representing Kendo Checkboxes.
 
 #### Example

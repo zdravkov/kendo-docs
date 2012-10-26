@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-pageable>
+# \<kendo:grid-pageable\>
 A JSP tag representing Kendo Pageable.
 
 #### Example
@@ -99,7 +99,7 @@ Defines if a label showing current paging information will be displayed.
 
 ## Child JSP Tags
 
-### [<kendo:grid-pageable-messages>](/api/wrappers/jsp/grid/pageable-messages)
+### [\<kendo:grid-pageable-messages\>](/api/wrappers/jsp/grid/pageable-messages)
 
 Defines texts shown within the pager.
 

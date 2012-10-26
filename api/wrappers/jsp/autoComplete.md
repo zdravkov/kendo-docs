@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:autoComplete>
+# \<kendo:autoComplete\>
 A JSP tag representing Kendo AutoComplete.
 
 
@@ -288,7 +288,7 @@ Triggered when a Li element is selected.
 ## Event Tags
  
 
-### <kendo:autoComplete-change>
+### \<kendo:autoComplete-change\>
 
 Fires when the value has been changed.
 
@@ -305,7 +305,7 @@ Fires when the value has been changed.
 
  
 
-### <kendo:autoComplete-close>
+### \<kendo:autoComplete-close\>
 
 Fires when the drop-down list is closed
 
@@ -322,7 +322,7 @@ Fires when the drop-down list is closed
 
  
 
-### <kendo:autoComplete-dataBound>
+### \<kendo:autoComplete-dataBound\>
 
 Fires when the AutoComplete has received data from the data source.
 
@@ -339,7 +339,7 @@ Fires when the AutoComplete has received data from the data source.
 
  
 
-### <kendo:autoComplete-open>
+### \<kendo:autoComplete-open\>
 
 Fires when the drop-down list is opened
 
@@ -356,7 +356,7 @@ Fires when the drop-down list is opened
 
  
 
-### <kendo:autoComplete-select>
+### \<kendo:autoComplete-select\>
 
 Triggered when a Li element is selected.
 
@@ -375,7 +375,7 @@ Triggered when a Li element is selected.
 
 ## Child JSP Tags
 
-### [<kendo:autoComplete-animation>](/api/wrappers/jsp/autocomplete/animation)
+### [\<kendo:autoComplete-animation\>](/api/wrappers/jsp/autocomplete/animation)
 
 Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 

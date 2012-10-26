@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-seriesDefaults-tooltip>
+# \<kendo:chart-seriesDefaults-tooltip\>
 A JSP tag representing Kendo Tooltip.
 
 #### Example
@@ -90,7 +90,7 @@ A value indicating if the tooltip should be displayed.
 
 ## Child JSP Tags
 
-### [<kendo:chart-seriesDefaults-tooltip-border>](/api/wrappers/jsp/chart/seriesdefaults-tooltip-border)
+### [\<kendo:chart-seriesDefaults-tooltip-border\>](/api/wrappers/jsp/chart/seriesdefaults-tooltip-border)
 
 The border configuration options.
 

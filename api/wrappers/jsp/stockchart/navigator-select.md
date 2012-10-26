@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:stockChart-navigator-select>
+# \<kendo:stockChart-navigator-select\>
 A JSP tag representing Kendo Select.
 
 #### Example

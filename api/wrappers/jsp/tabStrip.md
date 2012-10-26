@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:tabStrip>
+# \<kendo:tabStrip\>
 A JSP tag representing Kendo TabStrip.
 
 
@@ -212,7 +212,7 @@ Triggered before a tab is selected.
 ## Event Tags
   
 
-### <kendo:tabStrip-activate>
+### \<kendo:tabStrip-activate\>
 
 Triggered just after a tab is being made visible, but before the end of the animation
 
@@ -229,7 +229,7 @@ Triggered just after a tab is being made visible, but before the end of the anim
 
  
 
-### <kendo:tabStrip-contentLoad>
+### \<kendo:tabStrip-contentLoad\>
 
 Triggered when content is fetched from an AJAX request.
 
@@ -246,7 +246,7 @@ Triggered when content is fetched from an AJAX request.
 
  
 
-### <kendo:tabStrip-error>
+### \<kendo:tabStrip-error\>
 
 Triggered when an AJAX request results in an error.
 
@@ -263,7 +263,7 @@ Triggered when an AJAX request results in an error.
 
  
 
-### <kendo:tabStrip-select>
+### \<kendo:tabStrip-select\>
 
 Triggered before a tab is selected.
 
@@ -282,7 +282,7 @@ Triggered before a tab is selected.
 
 ## Child JSP Tags
 
-### [<kendo:tabStrip-animation>](/api/wrappers/jsp/tabstrip/animation)
+### [\<kendo:tabStrip-animation\>](/api/wrappers/jsp/tabstrip/animation)
 
 A collection of visual animations used when
 
@@ -292,7 +292,7 @@ A collection of visual animations used when
         <kendo:tabStrip-animation></kendo:tabStrip-animation>
     </kendo:tabStrip>
  
-### [<kendo:tabStrip-items>](/api/wrappers/jsp/tabstrip/items)
+### [\<kendo:tabStrip-items\>](/api/wrappers/jsp/tabstrip/items)
 
 Contains items of TabStrip
 

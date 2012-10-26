@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-seriesItem-labels>
+# \<kendo:chart-seriesItem-labels\>
 A JSP tag representing Kendo Labels.
 
 #### Example
@@ -130,7 +130,7 @@ The padding of the labels.
 
 ## Child JSP Tags
 
-### [<kendo:chart-seriesItem-labels-border>](/api/wrappers/jsp/chart/seriesitem-labels-border)
+### [\<kendo:chart-seriesItem-labels-border\>](/api/wrappers/jsp/chart/seriesitem-labels-border)
 
 The border of the labels.
 

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-schema>
+# \<kendo:dataSource-schema\>
 A JSP tag representing Kendo Schema.
 
 #### Example

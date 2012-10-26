@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:linearGauge-scale-labels>
+# \<kendo:linearGauge-scale-labels\>
 A JSP tag representing Kendo Labels.
 
 #### Example
@@ -102,7 +102,7 @@ The visibility of the labels.
 
 ## Child JSP Tags
 
-### [<kendo:linearGauge-scale-labels-border>](/api/wrappers/jsp/lineargauge/scale-labels-border)
+### [\<kendo:linearGauge-scale-labels-border\>](/api/wrappers/jsp/lineargauge/scale-labels-border)
 
 The border of the labels.
 

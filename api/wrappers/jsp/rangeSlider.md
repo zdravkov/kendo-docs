@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:rangeSlider>
+# \<kendo:rangeSlider\>
 A JSP tag representing Kendo RangeSlider.
 
 
@@ -159,7 +159,7 @@ Fires when the user drags the drag handle to a new position.
 ## Event Tags
  
 
-### <kendo:rangeSlider-change>
+### \<kendo:rangeSlider-change\>
 
 Fires when the rangeSlider value changes as a result of selecting a new value with one of the drag handles or the keyboard.
 
@@ -176,7 +176,7 @@ Fires when the rangeSlider value changes as a result of selecting a new value wi
 
  
 
-### <kendo:rangeSlider-slide>
+### \<kendo:rangeSlider-slide\>
 
 Fires when the user drags the drag handle to a new position.
 
@@ -195,7 +195,7 @@ Fires when the user drags the drag handle to a new position.
 
 ## Child JSP Tags
 
-### [<kendo:rangeSlider-tooltip>](/api/wrappers/jsp/rangeslider/tooltip)
+### [\<kendo:rangeSlider-tooltip\>](/api/wrappers/jsp/rangeslider/tooltip)
 
 Configuration of the
 

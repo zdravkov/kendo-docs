@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-valueAxis-line>
+# \<kendo:chart-valueAxis-line\>
 A JSP tag representing Kendo Line.
 
 #### Example

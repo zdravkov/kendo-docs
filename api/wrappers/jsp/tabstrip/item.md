@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:tabStrip-item>
+# \<kendo:tabStrip-item\>
 A JSP tag representing Kendo Item.
 
 #### Example

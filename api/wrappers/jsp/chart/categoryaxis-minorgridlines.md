@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-categoryAxis-minorGridLines>
+# \<kendo:chart-categoryAxis-minorGridLines\>
 A JSP tag representing Kendo MinorGridLines.
 
 #### Example

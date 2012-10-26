@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid>
+# \<kendo:grid\>
 A JSP tag representing Kendo Grid.
 
 
@@ -55,7 +55,7 @@ See the
 
 ### editable `boolean`
 
-Indicates whether editing is enabled/disabled. Related tag: [<kendo:grid-editable>](#kendo-grid-editable). 
+Indicates whether editing is enabled/disabled. Related tag: [\<kendo:grid-editable\>](#kendo-grid-editable). 
 
 #### Example
     <kendo:grid editable="editable">
@@ -75,7 +75,7 @@ Indicates whether filtering is enabled/disabled.
 
 ### groupable `boolean`
 
-Indicates whether grouping is enabled/disabled. Related tag: [<kendo:grid-groupable>](#kendo-grid-groupable). 
+Indicates whether grouping is enabled/disabled. Related tag: [\<kendo:grid-groupable\>](#kendo-grid-groupable). 
 
 #### Example
     <kendo:grid groupable="groupable">
@@ -95,7 +95,7 @@ Indicates whether keyboard navigation is enabled/disabled.
 
 ### pageable `boolean`
 
-Indicates whether paging is enabled/disabled. Related tag: [<kendo:grid-pageable>](#kendo-grid-pageable). 
+Indicates whether paging is enabled/disabled. Related tag: [\<kendo:grid-pageable\>](#kendo-grid-pageable). 
 
 #### Example
     <kendo:grid pageable="pageable">
@@ -140,7 +140,7 @@ Indicates whether selection is enabled/disabled. Possible values:
 
 ### sortable `boolean`
 
-Defines whether grid columns are sortable. Related tag: [<kendo:grid-sortable>](#kendo-grid-sortable). 
+Defines whether grid columns are sortable. Related tag: [\<kendo:grid-sortable\>](#kendo-grid-sortable). 
 
 #### Example
     <kendo:grid sortable="sortable">
@@ -453,7 +453,7 @@ Fires before the grid calls DataSource sync.
 ## Event Tags
       
 
-### <kendo:grid-change>
+### \<kendo:grid-change\>
 
 Fires when the grid selection has changed.
 
@@ -470,7 +470,7 @@ Fires when the grid selection has changed.
 
  
 
-### <kendo:grid-columnResize>
+### \<kendo:grid-columnResize\>
 
 Fires when the user resizes a column.
 
@@ -487,7 +487,7 @@ Fires when the user resizes a column.
 
  
 
-### <kendo:grid-dataBound>
+### \<kendo:grid-dataBound\>
 
 Fires when the grid has received data from the data source.
 
@@ -504,7 +504,7 @@ Fires when the grid has received data from the data source.
 
  
 
-### <kendo:grid-detailCollapse>
+### \<kendo:grid-detailCollapse\>
 
 Fires when the grid detail row is collapsed.
 
@@ -521,7 +521,7 @@ Fires when the grid detail row is collapsed.
 
  
 
-### <kendo:grid-detailExpand>
+### \<kendo:grid-detailExpand\>
 
 Fires when the grid detail row is expanded.
 
@@ -538,7 +538,7 @@ Fires when the grid detail row is expanded.
 
  
 
-### <kendo:grid-detailInit>
+### \<kendo:grid-detailInit\>
 
 Fires when the grid detail is initialized.
 
@@ -555,7 +555,7 @@ Fires when the grid detail is initialized.
 
  
 
-### <kendo:grid-edit>
+### \<kendo:grid-edit\>
 
 Fires when the grid enters edit mode.
 
@@ -572,7 +572,7 @@ Fires when the grid enters edit mode.
 
  
 
-### <kendo:grid-remove>
+### \<kendo:grid-remove\>
 
 Fires before the grid item is removed.
 
@@ -589,7 +589,7 @@ Fires before the grid item is removed.
 
  
 
-### <kendo:grid-save>
+### \<kendo:grid-save\>
 
 Fires before the grid item is changed.
 
@@ -606,7 +606,7 @@ Fires before the grid item is changed.
 
  
 
-### <kendo:grid-saveChanges>
+### \<kendo:grid-saveChanges\>
 
 Fires before the grid calls DataSource sync.
 
@@ -623,7 +623,7 @@ Fires before the grid calls DataSource sync.
 
  
 
-### <kendo:grid-altRowTemplate>
+### \<kendo:grid-altRowTemplate\>
 
 Template to be used for rendering the alternate rows in the grid.
 
@@ -640,7 +640,7 @@ Template to be used for rendering the alternate rows in the grid.
 
  
 
-### <kendo:grid-detailTemplate>
+### \<kendo:grid-detailTemplate\>
 
 Template to be used for rendering the detail rows in the grid.
 See the
@@ -658,7 +658,7 @@ See the
 
  
 
-### <kendo:grid-rowTemplate>
+### \<kendo:grid-rowTemplate\>
 
 Template to be used for rendering the rows in the grid.
 
@@ -677,7 +677,7 @@ Template to be used for rendering the rows in the grid.
 
 ## Child JSP Tags
 
-### [<kendo:grid-columns>](/api/wrappers/jsp/grid/columns)
+### [\<kendo:grid-columns\>](/api/wrappers/jsp/grid/columns)
 
 A collection of column objects or collection of strings that represents the name of the fields.
 
@@ -687,7 +687,7 @@ A collection of column objects or collection of strings that represents the name
         <kendo:grid-columns></kendo:grid-columns>
     </kendo:grid>
  
-### [<kendo:grid-editable>](/api/wrappers/jsp/grid/editable)
+### [\<kendo:grid-editable\>](/api/wrappers/jsp/grid/editable)
 
 Indicates whether editing is enabled/disabled.
 
@@ -697,7 +697,7 @@ Indicates whether editing is enabled/disabled.
         <kendo:grid-editable></kendo:grid-editable>
     </kendo:grid>
  
-### [<kendo:grid-groupable>](/api/wrappers/jsp/grid/groupable)
+### [\<kendo:grid-groupable\>](/api/wrappers/jsp/grid/groupable)
 
 Indicates whether grouping is enabled/disabled.
 
@@ -707,7 +707,7 @@ Indicates whether grouping is enabled/disabled.
         <kendo:grid-groupable></kendo:grid-groupable>
     </kendo:grid>
  
-### [<kendo:grid-pageable>](/api/wrappers/jsp/grid/pageable)
+### [\<kendo:grid-pageable\>](/api/wrappers/jsp/grid/pageable)
 
 Indicates whether paging is enabled/disabled.
 
@@ -717,7 +717,7 @@ Indicates whether paging is enabled/disabled.
         <kendo:grid-pageable></kendo:grid-pageable>
     </kendo:grid>
  
-### [<kendo:grid-sortable>](/api/wrappers/jsp/grid/sortable)
+### [\<kendo:grid-sortable\>](/api/wrappers/jsp/grid/sortable)
 
 Defines whether grid columns are sortable.
 
@@ -727,7 +727,7 @@ Defines whether grid columns are sortable.
         <kendo:grid-sortable></kendo:grid-sortable>
     </kendo:grid>
  
-### [<kendo:grid-toolbar>](/api/wrappers/jsp/grid/toolbar)
+### [\<kendo:grid-toolbar\>](/api/wrappers/jsp/grid/toolbar)
 
 This is a list of commands for which the corresponding buttons will be rendered.
 The supported built-in commands are: "create", "cancel", "save", "destroy".

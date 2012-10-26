@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:stockChart-navigator>
+# \<kendo:stockChart-navigator\>
 A JSP tag representing Kendo Navigator.
 
 #### Example
@@ -29,7 +29,7 @@ Array of series definitions.
 
 ## Child JSP Tags
 
-### [<kendo:stockChart-navigator-select>](/api/wrappers/jsp/stockchart/navigator-select)
+### [\<kendo:stockChart-navigator-select\>](/api/wrappers/jsp/stockchart/navigator-select)
 
 Specifies the initially selected range.
 

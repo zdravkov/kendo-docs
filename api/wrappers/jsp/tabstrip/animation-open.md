@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:tabStrip-animation-open>
+# \<kendo:tabStrip-animation-open\>
 A JSP tag representing Kendo Open.
 
 #### Example

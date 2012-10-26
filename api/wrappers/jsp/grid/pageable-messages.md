@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-pageable-messages>
+# \<kendo:grid-pageable-messages\>
 A JSP tag representing Kendo Messages.
 
 #### Example

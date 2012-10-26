@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-transport-update>
+# \<kendo:dataSource-transport-update\>
 A JSP tag representing Kendo Update.
 
 #### Example

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-categoryAxis-minorTicks>
+# \<kendo:chart-categoryAxis-minorTicks\>
 A JSP tag representing Kendo MinorTicks.
 
 #### Example

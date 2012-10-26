@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:window>
+# \<kendo:window\>
 A JSP tag representing Kendo Window.
 
 
@@ -424,7 +424,7 @@ Triggered when a Window has been resized by a user.
 ## Event Tags
  
 
-### <kendo:window-activate>
+### \<kendo:window-activate\>
 
 Triggered when a Window has finished its opening animation.
 
@@ -441,7 +441,7 @@ Triggered when a Window has finished its opening animation.
 
  
 
-### <kendo:window-close>
+### \<kendo:window-close\>
 
 Triggered when a Window is closed (by a user or through the close() method).
 
@@ -458,7 +458,7 @@ Triggered when a Window is closed (by a user or through the close() method).
 
  
 
-### <kendo:window-deactivate>
+### \<kendo:window-deactivate\>
 
 Triggered when a Window has finished its closing animation.
 
@@ -475,7 +475,7 @@ Triggered when a Window has finished its closing animation.
 
  
 
-### <kendo:window-dragend>
+### \<kendo:window-dragend\>
 
 Triggered when a Window has been moved by a user.
 
@@ -492,7 +492,7 @@ Triggered when a Window has been moved by a user.
 
  
 
-### <kendo:window-dragstart>
+### \<kendo:window-dragstart\>
 
 Triggered when the user starts to move the window.
 
@@ -509,7 +509,7 @@ Triggered when the user starts to move the window.
 
  
 
-### <kendo:window-error>
+### \<kendo:window-error\>
 
 Triggered when an AJAX request for content fails.
 
@@ -526,7 +526,7 @@ Triggered when an AJAX request for content fails.
 
  
 
-### <kendo:window-open>
+### \<kendo:window-open\>
 
 Triggered when a Window is opened (i.e. the open() method is called).
 
@@ -543,7 +543,7 @@ Triggered when a Window is opened (i.e. the open() method is called).
 
  
 
-### <kendo:window-refresh>
+### \<kendo:window-refresh\>
 
 Triggered when the content of a Window has finished loading via AJAX,
 when the window iframe has finished loading, or when the refresh button
@@ -562,7 +562,7 @@ has been clicked on a window with static content.
 
  
 
-### <kendo:window-resize>
+### \<kendo:window-resize\>
 
 Triggered when a Window has been resized by a user.
 
@@ -581,7 +581,7 @@ Triggered when a Window has been resized by a user.
 
 ## Child JSP Tags
 
-### [<kendo:window-animation>](/api/wrappers/jsp/window/animation)
+### [\<kendo:window-animation\>](/api/wrappers/jsp/window/animation)
 
 A collection of {Animation} objects, used to change default animations. A value of
 

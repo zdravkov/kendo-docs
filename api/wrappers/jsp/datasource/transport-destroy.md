@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-transport-destroy>
+# \<kendo:dataSource-transport-destroy\>
 A JSP tag representing Kendo Destroy.
 
 #### Example

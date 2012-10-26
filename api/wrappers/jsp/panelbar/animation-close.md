@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:panelBar-animation-close>
+# \<kendo:panelBar-animation-close\>
 A JSP tag representing Kendo Close.
 
 #### Example

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dateTimePicker-month>
+# \<kendo:dateTimePicker-month\>
 A JSP tag representing Kendo Month.
 
 #### Example

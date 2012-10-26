@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-categoryAxis-majorTicks>
+# \<kendo:chart-categoryAxis-majorTicks\>
 A JSP tag representing Kendo MajorTicks.
 
 #### Example

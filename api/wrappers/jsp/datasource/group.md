@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-group>
+# \<kendo:dataSource-group\>
 A JSP tag representing Kendo Group.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Group.
 
 ## Child JSP Tags
 
-### [<kendo:dataSource-groupItem>](/api/wrappers/jsp/datasource/groupitem)
+### [\<kendo:dataSource-groupItem\>](/api/wrappers/jsp/datasource/groupitem)
 
 Sets initial grouping
 

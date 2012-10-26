@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:calendar-month>
+# \<kendo:calendar-month\>
 A JSP tag representing Kendo Month.
 
 #### Example

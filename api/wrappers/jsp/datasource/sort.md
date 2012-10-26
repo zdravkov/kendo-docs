@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-sort>
+# \<kendo:dataSource-sort\>
 A JSP tag representing Kendo Sort.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Sort.
 
 ## Child JSP Tags
 
-### [<kendo:dataSource-sortItem>](/api/wrappers/jsp/datasource/sortitem)
+### [\<kendo:dataSource-sortItem\>](/api/wrappers/jsp/datasource/sortitem)
 
 Sets initial sort order
 

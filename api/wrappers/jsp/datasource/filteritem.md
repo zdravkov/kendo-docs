@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-filterItem>
+# \<kendo:dataSource-filterItem\>
 A JSP tag representing Kendo FilterItem.
 
 #### Example

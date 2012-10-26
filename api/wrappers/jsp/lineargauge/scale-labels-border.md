@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:linearGauge-scale-labels-border>
+# \<kendo:linearGauge-scale-labels-border\>
 A JSP tag representing Kendo Border.
 
 #### Example

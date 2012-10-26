@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:treeView-animation-collapse>
+# \<kendo:treeView-animation-collapse\>
 A JSP tag representing Kendo Collapse.
 
 #### Example

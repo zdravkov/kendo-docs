@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-transport-read>
+# \<kendo:dataSource-transport-read\>
 A JSP tag representing Kendo Read.
 
 #### Example

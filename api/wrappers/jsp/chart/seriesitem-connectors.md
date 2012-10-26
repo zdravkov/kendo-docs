@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-seriesItem-connectors>
+# \<kendo:chart-seriesItem-connectors\>
 A JSP tag representing Kendo Connectors.
 
 #### Example

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:panelBar-items>
+# \<kendo:panelBar-items\>
 A JSP tag representing Kendo Items.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Items.
 
 ## Child JSP Tags
 
-### [<kendo:panelBar-item>](/api/wrappers/jsp/panelbar/item)
+### [\<kendo:panelBar-item\>](/api/wrappers/jsp/panelbar/item)
 
 Contains items of PanelBar
 

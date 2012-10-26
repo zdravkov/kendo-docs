@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-valueAxis>
+# \<kendo:chart-valueAxis\>
 A JSP tag representing Kendo ValueAxis.
 
 #### Example
@@ -135,7 +135,7 @@ The visibility of the axis.
 
 ## Child JSP Tags
 
-### [<kendo:chart-valueAxis-labels>](/api/wrappers/jsp/chart/valueaxis-labels)
+### [\<kendo:chart-valueAxis-labels\>](/api/wrappers/jsp/chart/valueaxis-labels)
 
 Configures the axis labels.
 
@@ -145,7 +145,7 @@ Configures the axis labels.
         <kendo:chart-valueAxis-labels></kendo:chart-valueAxis-labels>
     </kendo:chart-valueAxis>
  
-### [<kendo:chart-valueAxis-line>](/api/wrappers/jsp/chart/valueaxis-line)
+### [\<kendo:chart-valueAxis-line\>](/api/wrappers/jsp/chart/valueaxis-line)
 
 Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
 
@@ -155,7 +155,7 @@ Configures the axis line. This will also affect the major and minor ticks, but n
         <kendo:chart-valueAxis-line></kendo:chart-valueAxis-line>
     </kendo:chart-valueAxis>
  
-### [<kendo:chart-valueAxis-majorGridLines>](/api/wrappers/jsp/chart/valueaxis-majorgridlines)
+### [\<kendo:chart-valueAxis-majorGridLines\>](/api/wrappers/jsp/chart/valueaxis-majorgridlines)
 
 Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
@@ -166,7 +166,7 @@ body of the chart.
         <kendo:chart-valueAxis-majorGridLines></kendo:chart-valueAxis-majorGridLines>
     </kendo:chart-valueAxis>
  
-### [<kendo:chart-valueAxis-majorTicks>](/api/wrappers/jsp/chart/valueaxis-majorticks)
+### [\<kendo:chart-valueAxis-majorTicks\>](/api/wrappers/jsp/chart/valueaxis-majorticks)
 
 The major ticks of the axis.
 
@@ -176,7 +176,7 @@ The major ticks of the axis.
         <kendo:chart-valueAxis-majorTicks></kendo:chart-valueAxis-majorTicks>
     </kendo:chart-valueAxis>
  
-### [<kendo:chart-valueAxis-minorGridLines>](/api/wrappers/jsp/chart/valueaxis-minorgridlines)
+### [\<kendo:chart-valueAxis-minorGridLines\>](/api/wrappers/jsp/chart/valueaxis-minorgridlines)
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through the
 
@@ -186,7 +186,7 @@ Configures the minor grid lines.  These are the lines that are an extension of t
         <kendo:chart-valueAxis-minorGridLines></kendo:chart-valueAxis-minorGridLines>
     </kendo:chart-valueAxis>
  
-### [<kendo:chart-valueAxis-minorTicks>](/api/wrappers/jsp/chart/valueaxis-minorticks)
+### [\<kendo:chart-valueAxis-minorTicks\>](/api/wrappers/jsp/chart/valueaxis-minorticks)
 
 The minor ticks of the axis.
 
@@ -196,7 +196,7 @@ The minor ticks of the axis.
         <kendo:chart-valueAxis-minorTicks></kendo:chart-valueAxis-minorTicks>
     </kendo:chart-valueAxis>
  
-### [<kendo:chart-valueAxis-title>](/api/wrappers/jsp/chart/valueaxis-title)
+### [\<kendo:chart-valueAxis-title\>](/api/wrappers/jsp/chart/valueaxis-title)
 
 The title of the value axis.
 

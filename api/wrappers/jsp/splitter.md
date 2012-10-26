@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:splitter>
+# \<kendo:splitter\>
 A JSP tag representing Kendo Splitter.
 
 
@@ -177,7 +177,7 @@ Triggered when a pane is resized.
 ## Event Tags
  
 
-### <kendo:splitter-collapse>
+### \<kendo:splitter-collapse\>
 
 Triggered when a pane of a Splitter is collapsed.
 
@@ -194,7 +194,7 @@ Triggered when a pane of a Splitter is collapsed.
 
  
 
-### <kendo:splitter-contentLoad>
+### \<kendo:splitter-contentLoad\>
 
 Triggered when the content for a pane has finished loading.
 
@@ -211,7 +211,7 @@ Triggered when the content for a pane has finished loading.
 
  
 
-### <kendo:splitter-expand>
+### \<kendo:splitter-expand\>
 
 Triggered when a pane of a Splitter is expanded.
 
@@ -228,7 +228,7 @@ Triggered when a pane of a Splitter is expanded.
 
  
 
-### <kendo:splitter-layoutChange>
+### \<kendo:splitter-layoutChange\>
 
 Fires when the splitter layout has changed
 
@@ -245,7 +245,7 @@ Fires when the splitter layout has changed
 
  
 
-### <kendo:splitter-resize>
+### \<kendo:splitter-resize\>
 
 Triggered when a pane is resized.
 
@@ -264,7 +264,7 @@ Triggered when a pane is resized.
 
 ## Child JSP Tags
 
-### [<kendo:splitter-panes>](/api/wrappers/jsp/splitter/panes)
+### [\<kendo:splitter-panes\>](/api/wrappers/jsp/splitter/panes)
 
 An array of pane definitions.
 

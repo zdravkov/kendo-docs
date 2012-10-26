@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:stockChart>
+# \<kendo:stockChart\>
 A JSP tag representing Kendo StockChart.
 
 
@@ -25,7 +25,7 @@ It is used as a default
 
 ## Child JSP Tags
 
-### [<kendo:stockChart-navigator>](/api/wrappers/jsp/stockchart/navigator)
+### [\<kendo:stockChart-navigator\>](/api/wrappers/jsp/stockchart/navigator)
 
 The data navigator configuration options.
 

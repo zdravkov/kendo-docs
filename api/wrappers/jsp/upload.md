@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:upload>
+# \<kendo:upload\>
 A JSP tag representing Kendo Upload.
 
 
@@ -293,7 +293,7 @@ Cancelling the event will prevent the upload.
 ## Event Tags
   
 
-### <kendo:upload-cancel>
+### \<kendo:upload-cancel\>
 
 Fires when the upload has been cancelled while in progress.
 
@@ -310,7 +310,7 @@ Fires when the upload has been cancelled while in progress.
 
  
 
-### <kendo:upload-complete>
+### \<kendo:upload-complete\>
 
 Fires when all active uploads have completed either successfully or with errors.
 
@@ -327,7 +327,7 @@ Fires when all active uploads have completed either successfully or with errors.
 
  
 
-### <kendo:upload-error>
+### \<kendo:upload-error\>
 
 Fires when an upload / remove operation has failed.
 
@@ -344,7 +344,7 @@ Fires when an upload / remove operation has failed.
 
  
 
-### <kendo:upload-progress>
+### \<kendo:upload-progress\>
 
 Fires when upload progress data is available.
 
@@ -361,7 +361,7 @@ Fires when upload progress data is available.
 
  
 
-### <kendo:upload-remove>
+### \<kendo:upload-remove\>
 
 Fires when an uploaded file is about to be removed.
 Cancelling the event will prevent the remove.
@@ -379,7 +379,7 @@ Cancelling the event will prevent the remove.
 
  
 
-### <kendo:upload-select>
+### \<kendo:upload-select\>
 
 Triggered when a file(s) is selected. Note: Cancelling this event will prevent the selection from
 occurring.
@@ -397,7 +397,7 @@ occurring.
 
  
 
-### <kendo:upload-success>
+### \<kendo:upload-success\>
 
 Fires when an upload / remove operation has been completed successfully.
 
@@ -414,7 +414,7 @@ Fires when an upload / remove operation has been completed successfully.
 
  
 
-### <kendo:upload-upload>
+### \<kendo:upload-upload\>
 
 Fires when one or more files are about to be uploaded.
 Cancelling the event will prevent the upload.
@@ -434,7 +434,7 @@ Cancelling the event will prevent the upload.
 
 ## Child JSP Tags
 
-### [<kendo:upload-async>](/api/wrappers/jsp/upload/async)
+### [\<kendo:upload-async\>](/api/wrappers/jsp/upload/async)
 
 Configures the ability to upload a file(s) in an asynchronous manner. Please refer to the
 
@@ -444,7 +444,7 @@ Configures the ability to upload a file(s) in an asynchronous manner. Please ref
         <kendo:upload-async></kendo:upload-async>
     </kendo:upload>
  
-### [<kendo:upload-localization>](/api/wrappers/jsp/upload/localization)
+### [\<kendo:upload-localization\>](/api/wrappers/jsp/upload/localization)
 
 Sets the strings rendered by the Upload.
 

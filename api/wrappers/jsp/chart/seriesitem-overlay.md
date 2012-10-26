@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-seriesItem-overlay>
+# \<kendo:chart-seriesItem-overlay\>
 A JSP tag representing Kendo Overlay.
 
 #### Example

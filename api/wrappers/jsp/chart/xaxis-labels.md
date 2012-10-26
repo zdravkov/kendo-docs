@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-xAxis-labels>
+# \<kendo:chart-xAxis-labels\>
 A JSP tag representing Kendo Labels.
 
 #### Example

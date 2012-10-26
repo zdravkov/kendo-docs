@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-valueAxis-title>
+# \<kendo:chart-valueAxis-title\>
 A JSP tag representing Kendo Title.
 
 #### Example
@@ -110,7 +110,7 @@ The visibility of the title.
 
 ## Child JSP Tags
 
-### [<kendo:chart-valueAxis-title-border>](/api/wrappers/jsp/chart/valueaxis-title-border)
+### [\<kendo:chart-valueAxis-title-border\>](/api/wrappers/jsp/chart/valueaxis-title-border)
 
 The border of the title.
 

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:numericTextBox>
+# \<kendo:numericTextBox\>
 A JSP tag representing Kendo NumericTextBox.
 
 
@@ -187,7 +187,7 @@ Fires when the value is changed from the spin buttons
 ## Event Tags
 
 
-### <kendo:numericTextBox-change>
+### \<kendo:numericTextBox-change\>
 
 Fires when the value is changed
 
@@ -204,7 +204,7 @@ Fires when the value is changed
 
  
 
-### <kendo:numericTextBox-spin>
+### \<kendo:numericTextBox-spin\>
 
 Fires when the value is changed from the spin buttons
 

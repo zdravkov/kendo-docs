@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-groupable-messages>
+# \<kendo:grid-groupable-messages\>
 A JSP tag representing Kendo Messages.
 
 #### Example

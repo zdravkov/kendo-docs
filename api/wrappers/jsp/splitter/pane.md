@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:splitter-pane>
+# \<kendo:splitter-pane\>
 A JSP tag representing Kendo Pane.
 
 #### Example

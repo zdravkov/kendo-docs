@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:splitter-panes>
+# \<kendo:splitter-panes\>
 A JSP tag representing Kendo Panes.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Panes.
 
 ## Child JSP Tags
 
-### [<kendo:splitter-pane>](/api/wrappers/jsp/splitter/pane)
+### [\<kendo:splitter-pane\>](/api/wrappers/jsp/splitter/pane)
 
 An array of pane definitions.
 

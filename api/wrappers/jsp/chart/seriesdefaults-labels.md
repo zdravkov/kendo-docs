@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-seriesDefaults-labels>
+# \<kendo:chart-seriesDefaults-labels\>
 A JSP tag representing Kendo Labels.
 
 #### Example
@@ -103,7 +103,7 @@ The visibility of the labels.
 
 ## Child JSP Tags
 
-### [<kendo:chart-seriesDefaults-labels-border>](/api/wrappers/jsp/chart/seriesdefaults-labels-border)
+### [\<kendo:chart-seriesDefaults-labels-border\>](/api/wrappers/jsp/chart/seriesdefaults-labels-border)
 
 The border of the labels.
 

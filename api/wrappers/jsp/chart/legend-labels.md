@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-legend-labels>
+# \<kendo:chart-legend-labels\>
 A JSP tag representing Kendo Labels.
 
 #### Example

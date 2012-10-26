@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:linearGauge-pointer-track>
+# \<kendo:linearGauge-pointer-track\>
 A JSP tag representing Kendo Track.
 
 #### Example
@@ -59,7 +59,7 @@ The visibility of the track.
 
 ## Child JSP Tags
 
-### [<kendo:linearGauge-pointer-track-border>](/api/wrappers/jsp/lineargauge/pointer-track-border)
+### [\<kendo:linearGauge-pointer-track-border\>](/api/wrappers/jsp/lineargauge/pointer-track-border)
 
 The border of the track.
 

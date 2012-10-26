@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:window-animation>
+# \<kendo:window-animation\>
 A JSP tag representing Kendo Animation.
 
 #### Example
@@ -19,7 +19,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-The animation that will be used when a Window closes. Related tag: [<kendo:window-close>](#kendo-window-close). 
+The animation that will be used when a Window closes. Related tag: [\<kendo:window-close\>](#kendo-window-close). 
 
 #### Example
     <kendo:window close="close">
@@ -29,7 +29,7 @@ The animation that will be used when a Window closes. Related tag: [<kendo:windo
 
 ### open `Object`
 
-The animation that will be used when a Window opens. Related tag: [<kendo:window-open>](#kendo-window-open). 
+The animation that will be used when a Window opens. Related tag: [\<kendo:window-open\>](#kendo-window-open). 
 
 #### Example
     <kendo:window open="open">

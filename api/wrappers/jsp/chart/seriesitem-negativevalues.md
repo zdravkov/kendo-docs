@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-seriesItem-negativeValues>
+# \<kendo:chart-seriesItem-negativeValues\>
 A JSP tag representing Kendo NegativeValues.
 
 #### Example

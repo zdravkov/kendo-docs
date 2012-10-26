@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:datePicker>
+# \<kendo:datePicker\>
 A JSP tag representing Kendo DatePicker.
 
 
@@ -199,7 +199,7 @@ Fires when the calendar is opened
 ## Event Tags
   
 
-### <kendo:datePicker-change>
+### \<kendo:datePicker-change\>
 
 Fires when the selected date is changed
 
@@ -216,7 +216,7 @@ Fires when the selected date is changed
 
  
 
-### <kendo:datePicker-close>
+### \<kendo:datePicker-close\>
 
 Fires when the calendar is closed
 
@@ -233,7 +233,7 @@ Fires when the calendar is closed
 
  
 
-### <kendo:datePicker-open>
+### \<kendo:datePicker-open\>
 
 Fires when the calendar is opened
 
@@ -252,7 +252,7 @@ Fires when the calendar is opened
 
 ## Child JSP Tags
 
-### [<kendo:datePicker-animation>](/api/wrappers/jsp/datepicker/animation)
+### [\<kendo:datePicker-animation\>](/api/wrappers/jsp/datepicker/animation)
 
 The animation(s) used for opening and/or closing the pop-up. Setting this value to
 
@@ -262,7 +262,7 @@ The animation(s) used for opening and/or closing the pop-up. Setting this value 
         <kendo:datePicker-animation></kendo:datePicker-animation>
     </kendo:datePicker>
  
-### [<kendo:datePicker-month>](/api/wrappers/jsp/datepicker/month)
+### [\<kendo:datePicker-month\>](/api/wrappers/jsp/datepicker/month)
 
 Templates for the cells rendered in the calendar "month" view.
 

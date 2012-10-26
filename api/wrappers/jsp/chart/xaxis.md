@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-xAxis>
+# \<kendo:chart-xAxis\>
 A JSP tag representing Kendo XAxis.
 
 #### Example
@@ -103,7 +103,7 @@ Options specific to the numeric axis.
 
 ## Child JSP Tags
 
-### [<kendo:chart-xAxis-labels>](/api/wrappers/jsp/chart/xaxis-labels)
+### [\<kendo:chart-xAxis-labels\>](/api/wrappers/jsp/chart/xaxis-labels)
 
 Label settings specific to the date axis.
 

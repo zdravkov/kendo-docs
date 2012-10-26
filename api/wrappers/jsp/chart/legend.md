@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:chart-legend>
+# \<kendo:chart-legend\>
 A JSP tag representing Kendo Legend.
 
 #### Example
@@ -93,7 +93,7 @@ The visibility of the legend.
 
 ## Child JSP Tags
 
-### [<kendo:chart-legend-border>](/api/wrappers/jsp/chart/legend-border)
+### [\<kendo:chart-legend-border\>](/api/wrappers/jsp/chart/legend-border)
 
 The border of the legend.
 
@@ -103,7 +103,7 @@ The border of the legend.
         <kendo:chart-legend-border></kendo:chart-legend-border>
     </kendo:chart-legend>
  
-### [<kendo:chart-legend-labels>](/api/wrappers/jsp/chart/legend-labels)
+### [\<kendo:chart-legend-labels\>](/api/wrappers/jsp/chart/legend-labels)
 
 Configures the legend labels.
 

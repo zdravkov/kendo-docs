@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:treeView-animation>
+# \<kendo:treeView-animation\>
 A JSP tag representing Kendo Animation.
 
 #### Example
@@ -16,7 +16,7 @@ A JSP tag representing Kendo Animation.
 
 ## Child JSP Tags
 
-### [<kendo:treeView-animation-collapse>](/api/wrappers/jsp/treeview/animation-collapse)
+### [\<kendo:treeView-animation-collapse\>](/api/wrappers/jsp/treeview/animation-collapse)
 
 The animation that will be used when collapsing items.
 
@@ -26,7 +26,7 @@ The animation that will be used when collapsing items.
         <kendo:treeView-animation-collapse></kendo:treeView-animation-collapse>
     </kendo:treeView-animation>
  
-### [<kendo:treeView-animation-expand>](/api/wrappers/jsp/treeview/animation-expand)
+### [\<kendo:treeView-animation-expand\>](/api/wrappers/jsp/treeview/animation-expand)
 
 The animation that will be used when expanding items.
 

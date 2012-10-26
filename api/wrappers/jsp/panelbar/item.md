@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:panelBar-item>
+# \<kendo:panelBar-item\>
 A JSP tag representing Kendo Item.
 
 #### Example

@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:upload-async>
+# \<kendo:upload-async\>
 A JSP tag representing Kendo Async.
 
 #### Example

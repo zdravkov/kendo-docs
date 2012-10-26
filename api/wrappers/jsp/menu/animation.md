@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:menu-animation>
+# \<kendo:menu-animation\>
 A JSP tag representing Kendo Animation.
 
 #### Example
@@ -19,7 +19,7 @@ A JSP tag representing Kendo Animation.
 
 ### close `Object`
 
-The animation that will be used when closing sub menus. Related tag: [<kendo:menu-close>](#kendo-menu-close). 
+The animation that will be used when closing sub menus. Related tag: [\<kendo:menu-close\>](#kendo-menu-close). 
 
 #### Example
     <kendo:menu close="close">
@@ -29,7 +29,7 @@ The animation that will be used when closing sub menus. Related tag: [<kendo:men
 
 ### open `Object`
 
-The animation that will be used when opening sub menus. Related tag: [<kendo:menu-open>](#kendo-menu-open). 
+The animation that will be used when opening sub menus. Related tag: [\<kendo:menu-open\>](#kendo-menu-open). 
 
 #### Example
     <kendo:menu open="open">

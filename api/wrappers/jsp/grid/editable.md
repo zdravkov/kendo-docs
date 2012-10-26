@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:grid-editable>
+# \<kendo:grid-editable\>
 A JSP tag representing Kendo Editable.
 
 #### Example

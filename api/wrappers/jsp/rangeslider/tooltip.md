@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:rangeSlider-tooltip>
+# \<kendo:rangeSlider-tooltip\>
 A JSP tag representing Kendo Tooltip.
 
 #### Example

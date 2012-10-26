@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# <kendo:dataSource-aggregateItem>
+# \<kendo:dataSource-aggregateItem\>
 A JSP tag representing Kendo AggregateItem.
 
 #### Example
@@ -29,7 +29,7 @@ Specifies the field on which the aggregate will be calculated.
 
 ### aggregate `String`
 
-Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average" Related tag: [<kendo:dataSource-aggregate>](#kendo-dataSource-aggregate). 
+Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average" Related tag: [\<kendo:dataSource-aggregate\>](#kendo-dataSource-aggregate). 
 
 #### Example
     <kendo:dataSource aggregate="aggregate">
