@@ -51,7 +51,7 @@ Open the ActionSheet.
     </ul>
 
     <script>
-        $("#actionsheet").data("kendoMobileActionsheet").open($("#button"));
+        $("#actionsheet").data("kendoMobileActionSheet").open($("#button"));
     </script>
 
 #### Parameters
