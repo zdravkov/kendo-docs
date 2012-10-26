@@ -29,7 +29,7 @@ Array of series definitions.
 
 ## Child JSP Tags
 
-### [\<kendo:stockChart-navigator-select\>](/api/wrappers/jsp/stockchart/navigator-select)
+### [kendo:stockChart-navigator-select](/api/wrappers/jsp/stockchart/navigator-select)
 
 Specifies the initially selected range.
 

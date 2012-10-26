@@ -59,7 +59,7 @@ The visibility of the track.
 
 ## Child JSP Tags
 
-### [\<kendo:linearGauge-pointer-track-border\>](/api/wrappers/jsp/lineargauge/pointer-track-border)
+### [kendo:linearGauge-pointer-track-border](/api/wrappers/jsp/lineargauge/pointer-track-border)
 
 The border of the track.
 

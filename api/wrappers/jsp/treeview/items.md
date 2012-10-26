@@ -16,7 +16,7 @@ A JSP tag representing Kendo Items.
 
 ## Child JSP Tags
 
-### [\<kendo:treeView-item\>](/api/wrappers/jsp/treeview/item)
+### [kendo:treeView-item](/api/wrappers/jsp/treeview/item)
 
 Contains items of TreeView
 

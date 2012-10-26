@@ -16,7 +16,7 @@ A JSP tag representing Kendo Filter.
 
 ## Child JSP Tags
 
-### [\<kendo:dataSource-filterItem\>](/api/wrappers/jsp/datasource/filteritem)
+### [kendo:dataSource-filterItem](/api/wrappers/jsp/datasource/filteritem)
 
 Sets the initial filter.
 

@@ -221,7 +221,7 @@ The visibility of the axis.
 
 ## Child JSP Tags
 
-### [\<kendo:chart-categoryAxis-labels\>](/api/wrappers/jsp/chart/categoryaxis-labels)
+### [kendo:chart-categoryAxis-labels](/api/wrappers/jsp/chart/categoryaxis-labels)
 
 Configures the axis labels.
 
@@ -231,7 +231,7 @@ Configures the axis labels.
         <kendo:chart-categoryAxis-labels></kendo:chart-categoryAxis-labels>
     </kendo:chart-categoryAxis>
  
-### [\<kendo:chart-categoryAxis-line\>](/api/wrappers/jsp/chart/categoryaxis-line)
+### [kendo:chart-categoryAxis-line](/api/wrappers/jsp/chart/categoryaxis-line)
 
 Configures the axis line. This will also effect major and minor ticks, but not gridlines.
 
@@ -241,7 +241,7 @@ Configures the axis line. This will also effect major and minor ticks, but not g
         <kendo:chart-categoryAxis-line></kendo:chart-categoryAxis-line>
     </kendo:chart-categoryAxis>
  
-### [\<kendo:chart-categoryAxis-majorGridLines\>](/api/wrappers/jsp/chart/categoryaxis-majorgridlines)
+### [kendo:chart-categoryAxis-majorGridLines](/api/wrappers/jsp/chart/categoryaxis-majorgridlines)
 
 Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
@@ -252,7 +252,7 @@ body of the chart.
         <kendo:chart-categoryAxis-majorGridLines></kendo:chart-categoryAxis-majorGridLines>
     </kendo:chart-categoryAxis>
  
-### [\<kendo:chart-categoryAxis-majorTicks\>](/api/wrappers/jsp/chart/categoryaxis-majorticks)
+### [kendo:chart-categoryAxis-majorTicks](/api/wrappers/jsp/chart/categoryaxis-majorticks)
 
 The major ticks of the axis.
 
@@ -262,7 +262,7 @@ The major ticks of the axis.
         <kendo:chart-categoryAxis-majorTicks></kendo:chart-categoryAxis-majorTicks>
     </kendo:chart-categoryAxis>
  
-### [\<kendo:chart-categoryAxis-minorGridLines\>](/api/wrappers/jsp/chart/categoryaxis-minorgridlines)
+### [kendo:chart-categoryAxis-minorGridLines](/api/wrappers/jsp/chart/categoryaxis-minorgridlines)
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
 the body of the chart.
@@ -273,7 +273,7 @@ the body of the chart.
         <kendo:chart-categoryAxis-minorGridLines></kendo:chart-categoryAxis-minorGridLines>
     </kendo:chart-categoryAxis>
  
-### [\<kendo:chart-categoryAxis-minorTicks\>](/api/wrappers/jsp/chart/categoryaxis-minorticks)
+### [kendo:chart-categoryAxis-minorTicks](/api/wrappers/jsp/chart/categoryaxis-minorticks)
 
 The minor ticks of the axis.
 
@@ -283,7 +283,7 @@ The minor ticks of the axis.
         <kendo:chart-categoryAxis-minorTicks></kendo:chart-categoryAxis-minorTicks>
     </kendo:chart-categoryAxis>
  
-### [\<kendo:chart-categoryAxis-title\>](/api/wrappers/jsp/chart/categoryaxis-title)
+### [kendo:chart-categoryAxis-title](/api/wrappers/jsp/chart/categoryaxis-title)
 
 The title of the category axis.
 

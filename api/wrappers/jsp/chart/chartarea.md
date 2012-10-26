@@ -69,7 +69,7 @@ The width of the chart area.
 
 ## Child JSP Tags
 
-### [\<kendo:chart-chartArea-border\>](/api/wrappers/jsp/chart/chartarea-border)
+### [kendo:chart-chartArea-border](/api/wrappers/jsp/chart/chartarea-border)
 
 The border of the chart area.
 

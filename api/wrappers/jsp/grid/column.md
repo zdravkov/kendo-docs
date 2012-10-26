@@ -174,7 +174,7 @@ The width of the column.
 
 ## Child JSP Tags
 
-### [\<kendo:grid-column-command\>](/api/wrappers/jsp/grid/column-command)
+### [kendo:grid-column-command](/api/wrappers/jsp/grid/column-command)
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
 

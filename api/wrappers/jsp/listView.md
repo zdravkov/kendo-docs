@@ -199,7 +199,7 @@ Fires before the list view item is removed.
 ## Event Tags
 
 
-### \<kendo:listView-change\>
+### kendo:listView-change
 
 Fires when the list view selection has changed.
 
@@ -216,7 +216,7 @@ Fires when the list view selection has changed.
 
  
 
-### \<kendo:listView-dataBound\>
+### kendo:listView-dataBound
 
 Fires when the list view has received data from the data source.
 and is about to render it.
@@ -234,7 +234,7 @@ and is about to render it.
 
  
 
-### \<kendo:listView-edit\>
+### kendo:listView-edit
 
 Fires when the list view enters edit mode.
 
@@ -251,7 +251,7 @@ Fires when the list view enters edit mode.
 
  
 
-### \<kendo:listView-remove\>
+### kendo:listView-remove
 
 Fires before the list view item is removed.
 
@@ -268,7 +268,7 @@ Fires before the list view item is removed.
 
  
 
-### \<kendo:listView-editTemplate\>
+### kendo:listView-editTemplate
 
 Specifies ListView item template in edit mode.
 
@@ -285,7 +285,7 @@ Specifies ListView item template in edit mode.
 
  
 
-### \<kendo:listView-template\>
+### kendo:listView-template
 
 Specifies ListView item template.
 

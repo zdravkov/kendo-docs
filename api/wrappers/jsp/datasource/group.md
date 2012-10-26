@@ -16,7 +16,7 @@ A JSP tag representing Kendo Group.
 
 ## Child JSP Tags
 
-### [\<kendo:dataSource-groupItem\>](/api/wrappers/jsp/datasource/groupitem)
+### [kendo:dataSource-groupItem](/api/wrappers/jsp/datasource/groupitem)
 
 Sets initial grouping
 

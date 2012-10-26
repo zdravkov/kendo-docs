@@ -112,7 +112,7 @@ The visibility of the labels.
 
 ## Child JSP Tags
 
-### [\<kendo:radialGauge-scale-labels-border\>](/api/wrappers/jsp/radialgauge/scale-labels-border)
+### [kendo:radialGauge-scale-labels-border](/api/wrappers/jsp/radialgauge/scale-labels-border)
 
 The border of the labels.
 

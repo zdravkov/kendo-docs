@@ -102,7 +102,7 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
 
 ## Child JSP Tags
 
-### [\<kendo:radialGauge-scale-labels\>](/api/wrappers/jsp/radialgauge/scale-labels)
+### [kendo:radialGauge-scale-labels](/api/wrappers/jsp/radialgauge/scale-labels)
 
 Configures the scale labels.
 
@@ -112,7 +112,7 @@ Configures the scale labels.
         <kendo:radialGauge-scale-labels></kendo:radialGauge-scale-labels>
     </kendo:radialGauge-scale>
  
-### [\<kendo:radialGauge-scale-majorTicks\>](/api/wrappers/jsp/radialgauge/scale-majorticks)
+### [kendo:radialGauge-scale-majorTicks](/api/wrappers/jsp/radialgauge/scale-majorticks)
 
 Configures the scale major ticks.
 
@@ -122,7 +122,7 @@ Configures the scale major ticks.
         <kendo:radialGauge-scale-majorTicks></kendo:radialGauge-scale-majorTicks>
     </kendo:radialGauge-scale>
  
-### [\<kendo:radialGauge-scale-minorTicks\>](/api/wrappers/jsp/radialgauge/scale-minorticks)
+### [kendo:radialGauge-scale-minorTicks](/api/wrappers/jsp/radialgauge/scale-minorticks)
 
 Configures the scale minor ticks.
 

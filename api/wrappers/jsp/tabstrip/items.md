@@ -16,7 +16,7 @@ A JSP tag representing Kendo Items.
 
 ## Child JSP Tags
 
-### [\<kendo:tabStrip-item\>](/api/wrappers/jsp/tabstrip/item)
+### [kendo:tabStrip-item](/api/wrappers/jsp/tabstrip/item)
 
 Contains items of TabStrip
 

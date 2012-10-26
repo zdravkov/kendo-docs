@@ -337,7 +337,7 @@ Triggered when a Li element is selected.
 ## Event Tags
  
 
-### \<kendo:comboBox-change\>
+### kendo:comboBox-change
 
 Fires when the value has been changed.
 
@@ -354,7 +354,7 @@ Fires when the value has been changed.
 
  
 
-### \<kendo:comboBox-close\>
+### kendo:comboBox-close
 
 Fires when the drop-down list is closed
 
@@ -371,7 +371,7 @@ Fires when the drop-down list is closed
 
  
 
-### \<kendo:comboBox-dataBound\>
+### kendo:comboBox-dataBound
 
 Fires when the ComboBox has received data from the data source.
 
@@ -388,7 +388,7 @@ Fires when the ComboBox has received data from the data source.
 
  
 
-### \<kendo:comboBox-open\>
+### kendo:comboBox-open
 
 Fires when the drop-down list is opened
 
@@ -405,7 +405,7 @@ Fires when the drop-down list is opened
 
  
 
-### \<kendo:comboBox-select\>
+### kendo:comboBox-select
 
 Triggered when a Li element is selected.
 
@@ -424,7 +424,7 @@ Triggered when a Li element is selected.
 
 ## Child JSP Tags
 
-### [\<kendo:comboBox-animation\>](/api/wrappers/jsp/combobox/animation)
+### [kendo:comboBox-animation](/api/wrappers/jsp/combobox/animation)
 
 Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
 

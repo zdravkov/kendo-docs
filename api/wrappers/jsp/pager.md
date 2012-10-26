@@ -147,7 +147,7 @@ Fires when the current page has changed.
 ## Event Tags
  
 
-### \<kendo:pager-change\>
+### kendo:pager-change
 
 Fires when the current page has changed.
 
@@ -166,7 +166,7 @@ Fires when the current page has changed.
 
 ## Child JSP Tags
 
-### [\<kendo:pager-messages\>](/api/wrappers/jsp/pager/messages)
+### [kendo:pager-messages](/api/wrappers/jsp/pager/messages)
 
 Defines texts shown within the pager.
 

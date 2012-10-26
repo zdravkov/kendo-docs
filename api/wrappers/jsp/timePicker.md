@@ -187,7 +187,7 @@ Fires when the time drop-down list is opened
 ## Event Tags
  
 
-### \<kendo:timePicker-change\>
+### kendo:timePicker-change
 
 Triggered when the underlying value of a TimePicker is changed.
 
@@ -204,7 +204,7 @@ Triggered when the underlying value of a TimePicker is changed.
 
  
 
-### \<kendo:timePicker-close\>
+### kendo:timePicker-close
 
 Fires when the time drop-down list is closed
 
@@ -221,7 +221,7 @@ Fires when the time drop-down list is closed
 
  
 
-### \<kendo:timePicker-open\>
+### kendo:timePicker-open
 
 Fires when the time drop-down list is opened
 
@@ -240,7 +240,7 @@ Fires when the time drop-down list is opened
 
 ## Child JSP Tags
 
-### [\<kendo:timePicker-animation\>](/api/wrappers/jsp/timepicker/animation)
+### [kendo:timePicker-animation](/api/wrappers/jsp/timepicker/animation)
 
 Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 

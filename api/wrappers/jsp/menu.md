@@ -169,7 +169,7 @@ Fires when a menu item gets selected.
 ## Event Tags
   
 
-### \<kendo:menu-close\>
+### kendo:menu-close
 
 Fires after a sub menu gets closed.
 
@@ -186,7 +186,7 @@ Fires after a sub menu gets closed.
 
  
 
-### \<kendo:menu-open\>
+### kendo:menu-open
 
 Fires before a sub menu gets opened.
 
@@ -203,7 +203,7 @@ Fires before a sub menu gets opened.
 
  
 
-### \<kendo:menu-select\>
+### kendo:menu-select
 
 Fires when a menu item gets selected.
 
@@ -222,7 +222,7 @@ Fires when a menu item gets selected.
 
 ## Child JSP Tags
 
-### [\<kendo:menu-animation\>](/api/wrappers/jsp/menu/animation)
+### [kendo:menu-animation](/api/wrappers/jsp/menu/animation)
 
 A collection of
 
@@ -232,7 +232,7 @@ A collection of
         <kendo:menu-animation></kendo:menu-animation>
     </kendo:menu>
  
-### [\<kendo:menu-items\>](/api/wrappers/jsp/menu/items)
+### [kendo:menu-items](/api/wrappers/jsp/menu/items)
 
 Contains items of Menu
 

@@ -145,7 +145,7 @@ The visibility of the labels.
 
 ## Child JSP Tags
 
-### [\<kendo:chart-valueAxis-labels-border\>](/api/wrappers/jsp/chart/valueaxis-labels-border)
+### [kendo:chart-valueAxis-labels-border](/api/wrappers/jsp/chart/valueaxis-labels-border)
 
 The border of the labels.
 

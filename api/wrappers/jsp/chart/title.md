@@ -99,7 +99,7 @@ The visibility of the title.
 
 ## Child JSP Tags
 
-### [\<kendo:chart-title-border\>](/api/wrappers/jsp/chart/title-border)
+### [kendo:chart-title-border](/api/wrappers/jsp/chart/title-border)
 
 The border of the title.
 

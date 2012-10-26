@@ -344,7 +344,7 @@ Triggered when a node gets selected.
 ## Event Tags
    
 
-### \<kendo:treeView-collapse\>
+### kendo:treeView-collapse
 
 Triggered before a subgroup gets collapsed.
 
@@ -361,7 +361,7 @@ Triggered before a subgroup gets collapsed.
 
  
 
-### \<kendo:treeView-dataBound\>
+### kendo:treeView-dataBound
 
 Triggered after the dataSource change event has been processed (adding/removing items);
 
@@ -378,7 +378,7 @@ Triggered after the dataSource change event has been processed (adding/removing 
 
  
 
-### \<kendo:treeView-drag\>
+### kendo:treeView-drag
 
 Triggered while a node is being dragged.
 
@@ -395,7 +395,7 @@ Triggered while a node is being dragged.
 
  
 
-### \<kendo:treeView-dragend\>
+### kendo:treeView-dragend
 
 Triggered after a node has been dropped.
 
@@ -412,7 +412,7 @@ Triggered after a node has been dropped.
 
  
 
-### \<kendo:treeView-dragstart\>
+### kendo:treeView-dragstart
 
 Triggered before the dragging of a node starts.
 
@@ -429,7 +429,7 @@ Triggered before the dragging of a node starts.
 
  
 
-### \<kendo:treeView-drop\>
+### kendo:treeView-drop
 
 Triggered when a node is being dropped.
 
@@ -446,7 +446,7 @@ Triggered when a node is being dropped.
 
  
 
-### \<kendo:treeView-expand\>
+### kendo:treeView-expand
 
 Triggered before a subgroup gets expanded.
 
@@ -463,7 +463,7 @@ Triggered before a subgroup gets expanded.
 
  
 
-### \<kendo:treeView-select\>
+### kendo:treeView-select
 
 Triggered when a node gets selected.
 
@@ -482,7 +482,7 @@ Triggered when a node gets selected.
 
 ## Child JSP Tags
 
-### [\<kendo:treeView-animation\>](/api/wrappers/jsp/treeview/animation)
+### [kendo:treeView-animation](/api/wrappers/jsp/treeview/animation)
 
 A collection of visual animations used when items are expanded or collapsed through user interaction.
 Setting this option to
@@ -493,7 +493,7 @@ Setting this option to
         <kendo:treeView-animation></kendo:treeView-animation>
     </kendo:treeView>
  
-### [\<kendo:treeView-checkboxes\>](/api/wrappers/jsp/treeview/checkboxes)
+### [kendo:treeView-checkboxes](/api/wrappers/jsp/treeview/checkboxes)
 
 If
 
@@ -503,7 +503,7 @@ If
         <kendo:treeView-checkboxes></kendo:treeView-checkboxes>
     </kendo:treeView>
  
-### [\<kendo:treeView-items\>](/api/wrappers/jsp/treeview/items)
+### [kendo:treeView-items](/api/wrappers/jsp/treeview/items)
 
 Contains items of TreeView
 

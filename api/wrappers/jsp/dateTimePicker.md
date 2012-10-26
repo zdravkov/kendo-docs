@@ -229,7 +229,7 @@ Fires when the calendar or the time drop-down list is opened
 ## Event Tags
   
 
-### \<kendo:dateTimePicker-change\>
+### kendo:dateTimePicker-change
 
 Triggered when the underlying value of a DateTimePicker is changed.
 
@@ -246,7 +246,7 @@ Triggered when the underlying value of a DateTimePicker is changed.
 
  
 
-### \<kendo:dateTimePicker-close\>
+### kendo:dateTimePicker-close
 
 Fires when the calendar or the time drop-down list is closed
 
@@ -263,7 +263,7 @@ Fires when the calendar or the time drop-down list is closed
 
  
 
-### \<kendo:dateTimePicker-open\>
+### kendo:dateTimePicker-open
 
 Fires when the calendar or the time drop-down list is opened
 
@@ -282,7 +282,7 @@ Fires when the calendar or the time drop-down list is opened
 
 ## Child JSP Tags
 
-### [\<kendo:dateTimePicker-animation\>](/api/wrappers/jsp/datetimepicker/animation)
+### [kendo:dateTimePicker-animation](/api/wrappers/jsp/datetimepicker/animation)
 
 The animation(s) used for opening and/or closing the pop-ups. Setting this value to
 
@@ -292,7 +292,7 @@ The animation(s) used for opening and/or closing the pop-ups. Setting this value
         <kendo:dateTimePicker-animation></kendo:dateTimePicker-animation>
     </kendo:dateTimePicker>
  
-### [\<kendo:dateTimePicker-month\>](/api/wrappers/jsp/datetimepicker/month)
+### [kendo:dateTimePicker-month](/api/wrappers/jsp/datetimepicker/month)
 
 Templates for the cells rendered in the calendar "month" view.
 

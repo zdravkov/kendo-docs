@@ -102,7 +102,7 @@ The visibility of the labels.
 
 ## Child JSP Tags
 
-### [\<kendo:linearGauge-scale-labels-border\>](/api/wrappers/jsp/lineargauge/scale-labels-border)
+### [kendo:linearGauge-scale-labels-border](/api/wrappers/jsp/lineargauge/scale-labels-border)
 
 The border of the labels.
 

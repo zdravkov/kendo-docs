@@ -407,7 +407,7 @@ A boolean value indicating whether to show the sector in the legend.
 
 ## Child JSP Tags
 
-### [\<kendo:chart-seriesItem-labels\>](/api/wrappers/jsp/chart/seriesitem-labels)
+### [kendo:chart-seriesItem-labels](/api/wrappers/jsp/chart/seriesitem-labels)
 
 Configures the series data labels.
 
@@ -417,7 +417,7 @@ Configures the series data labels.
         <kendo:chart-seriesItem-labels></kendo:chart-seriesItem-labels>
     </kendo:chart-seriesItem>
  
-### [\<kendo:chart-seriesItem-border\>](/api/wrappers/jsp/chart/seriesitem-border)
+### [kendo:chart-seriesItem-border](/api/wrappers/jsp/chart/seriesitem-border)
 
 The border of the labels.
 
@@ -427,7 +427,7 @@ The border of the labels.
         <kendo:chart-seriesItem-border></kendo:chart-seriesItem-border>
     </kendo:chart-seriesItem>
  
-### [\<kendo:chart-seriesItem-line\>](/api/wrappers/jsp/chart/seriesitem-line)
+### [kendo:chart-seriesItem-line](/api/wrappers/jsp/chart/seriesitem-line)
 
 The line of the area chart.
 
@@ -437,7 +437,7 @@ The line of the area chart.
         <kendo:chart-seriesItem-line></kendo:chart-seriesItem-line>
     </kendo:chart-seriesItem>
  
-### [\<kendo:chart-seriesItem-markers\>](/api/wrappers/jsp/chart/seriesitem-markers)
+### [kendo:chart-seriesItem-markers](/api/wrappers/jsp/chart/seriesitem-markers)
 
 Configures the area markers.
 
@@ -447,7 +447,7 @@ Configures the area markers.
         <kendo:chart-seriesItem-markers></kendo:chart-seriesItem-markers>
     </kendo:chart-seriesItem>
  
-### [\<kendo:chart-seriesItem-tooltip\>](/api/wrappers/jsp/chart/seriesitem-tooltip)
+### [kendo:chart-seriesItem-tooltip](/api/wrappers/jsp/chart/seriesitem-tooltip)
 
 The data point tooltip configuration options.
 
@@ -457,7 +457,7 @@ The data point tooltip configuration options.
         <kendo:chart-seriesItem-tooltip></kendo:chart-seriesItem-tooltip>
     </kendo:chart-seriesItem>
  
-### [\<kendo:chart-seriesItem-overlay\>](/api/wrappers/jsp/chart/seriesitem-overlay)
+### [kendo:chart-seriesItem-overlay](/api/wrappers/jsp/chart/seriesitem-overlay)
 
 The effects overlay.
 
@@ -467,7 +467,7 @@ The effects overlay.
         <kendo:chart-seriesItem-overlay></kendo:chart-seriesItem-overlay>
     </kendo:chart-seriesItem>
  
-### [\<kendo:chart-seriesItem-negativeValues\>](/api/wrappers/jsp/chart/seriesitem-negativevalues)
+### [kendo:chart-seriesItem-negativeValues](/api/wrappers/jsp/chart/seriesitem-negativevalues)
 
 The settings for negative values.
 
@@ -477,7 +477,7 @@ The settings for negative values.
         <kendo:chart-seriesItem-negativeValues></kendo:chart-seriesItem-negativeValues>
     </kendo:chart-seriesItem>
  
-### [\<kendo:chart-seriesItem-connectors\>](/api/wrappers/jsp/chart/seriesitem-connectors)
+### [kendo:chart-seriesItem-connectors](/api/wrappers/jsp/chart/seriesitem-connectors)
 
 The label connectors options.
 

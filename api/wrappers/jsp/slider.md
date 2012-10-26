@@ -178,7 +178,7 @@ Fires when the user drags the drag handle to a new position.
 ## Event Tags
  
 
-### \<kendo:slider-change\>
+### kendo:slider-change
 
 Fires when the slider value changes as a result of selecting a new value with the drag handle, buttons or keyboard.
 
@@ -195,7 +195,7 @@ Fires when the slider value changes as a result of selecting a new value with th
 
  
 
-### \<kendo:slider-slide\>
+### kendo:slider-slide
 
 Fires when the user drags the drag handle to a new position.
 
@@ -214,7 +214,7 @@ Fires when the user drags the drag handle to a new position.
 
 ## Child JSP Tags
 
-### [\<kendo:slider-tooltip\>](/api/wrappers/jsp/slider/tooltip)
+### [kendo:slider-tooltip](/api/wrappers/jsp/slider/tooltip)
 
 Configuration of the
 

@@ -207,7 +207,7 @@ Triggered when an item of a PanelBar is selected.
 ## Event Tags
   
 
-### \<kendo:panelBar-activate\>
+### kendo:panelBar-activate
 
 Triggered when an item of a PanelBar is activated.
 
@@ -224,7 +224,7 @@ Triggered when an item of a PanelBar is activated.
 
  
 
-### \<kendo:panelBar-collapse\>
+### kendo:panelBar-collapse
 
 Triggered when an item of a PanelBar is collapsed.
 
@@ -241,7 +241,7 @@ Triggered when an item of a PanelBar is collapsed.
 
  
 
-### \<kendo:panelBar-contentLoad\>
+### kendo:panelBar-contentLoad
 
 Fires when content is fetched from an AJAX request.
 
@@ -258,7 +258,7 @@ Fires when content is fetched from an AJAX request.
 
  
 
-### \<kendo:panelBar-error\>
+### kendo:panelBar-error
 
 Fires when AJAX request results in an error.
 
@@ -275,7 +275,7 @@ Fires when AJAX request results in an error.
 
  
 
-### \<kendo:panelBar-expand\>
+### kendo:panelBar-expand
 
 Triggered when an item of a PanelBar is expanded.
 
@@ -292,7 +292,7 @@ Triggered when an item of a PanelBar is expanded.
 
  
 
-### \<kendo:panelBar-select\>
+### kendo:panelBar-select
 
 Triggered when an item of a PanelBar is selected.
 
@@ -311,7 +311,7 @@ Triggered when an item of a PanelBar is selected.
 
 ## Child JSP Tags
 
-### [\<kendo:panelBar-animation\>](/api/wrappers/jsp/panelbar/animation)
+### [kendo:panelBar-animation](/api/wrappers/jsp/panelbar/animation)
 
 A collection of visual animations used when
 
@@ -321,7 +321,7 @@ A collection of visual animations used when
         <kendo:panelBar-animation></kendo:panelBar-animation>
     </kendo:panelBar>
  
-### [\<kendo:panelBar-items\>](/api/wrappers/jsp/panelbar/items)
+### [kendo:panelBar-items](/api/wrappers/jsp/panelbar/items)
 
 Contains items of PanelBar
 

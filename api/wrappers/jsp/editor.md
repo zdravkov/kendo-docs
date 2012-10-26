@@ -238,7 +238,7 @@ Fires when the Editor selection has changed.
 ## Event Tags
 
 
-### \<kendo:editor-change\>
+### kendo:editor-change
 
 Fires when Editor is blurred and its content has changed.
 
@@ -255,7 +255,7 @@ Fires when Editor is blurred and its content has changed.
 
  
 
-### \<kendo:editor-execute\>
+### kendo:editor-execute
 
 Fires when an Editor command is executed.
 
@@ -272,7 +272,7 @@ Fires when an Editor command is executed.
 
  
 
-### \<kendo:editor-keydown\>
+### kendo:editor-keydown
 
 Fires when the user depresses a keyboard key. Triggered multiple times if the user holds the key down.
 
@@ -289,7 +289,7 @@ Fires when the user depresses a keyboard key. Triggered multiple times if the us
 
  
 
-### \<kendo:editor-keyup\>
+### kendo:editor-keyup
 
 Fires when the user releases a keyboard key.
 
@@ -306,7 +306,7 @@ Fires when the user releases a keyboard key.
 
  
 
-### \<kendo:editor-paste\>
+### kendo:editor-paste
 
 Fires before when content is pasted in the Editor.
 
@@ -323,7 +323,7 @@ Fires before when content is pasted in the Editor.
 
  
 
-### \<kendo:editor-select\>
+### kendo:editor-select
 
 Fires when the Editor selection has changed.
 

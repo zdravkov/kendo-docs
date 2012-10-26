@@ -59,7 +59,7 @@ The markers visibility.
 
 ## Child JSP Tags
 
-### [\<kendo:chart-seriesItem-markers-border\>](/api/wrappers/jsp/chart/seriesitem-markers-border)
+### [kendo:chart-seriesItem-markers-border](/api/wrappers/jsp/chart/seriesitem-markers-border)
 
 The border of the markers.
 

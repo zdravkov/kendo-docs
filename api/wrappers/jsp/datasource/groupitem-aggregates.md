@@ -16,7 +16,7 @@ A JSP tag representing Kendo Aggregates.
 
 ## Child JSP Tags
 
-### [\<kendo:dataSource-groupItem-aggregate\>](/api/wrappers/jsp/datasource/groupitem-aggregate)
+### [kendo:dataSource-groupItem-aggregate](/api/wrappers/jsp/datasource/groupitem-aggregate)
 
 Specifies the aggregate function for this group.
 

@@ -90,7 +90,7 @@ A value indicating if the tooltip should be displayed.
 
 ## Child JSP Tags
 
-### [\<kendo:chart-tooltip-border\>](/api/wrappers/jsp/chart/tooltip-border)
+### [kendo:chart-tooltip-border](/api/wrappers/jsp/chart/tooltip-border)
 
 The border configuration options.
 

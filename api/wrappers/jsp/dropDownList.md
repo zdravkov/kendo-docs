@@ -297,7 +297,7 @@ Triggered when a Li element is selected.
 ## Event Tags
  
 
-### \<kendo:dropDownList-change\>
+### kendo:dropDownList-change
 
 Fires when the value has been changed.
 
@@ -314,7 +314,7 @@ Fires when the value has been changed.
 
  
 
-### \<kendo:dropDownList-close\>
+### kendo:dropDownList-close
 
 Fires when the drop-down list is closed
 
@@ -331,7 +331,7 @@ Fires when the drop-down list is closed
 
  
 
-### \<kendo:dropDownList-dataBound\>
+### kendo:dropDownList-dataBound
 
 Fires when the drop-down list has received data from the data source.
 
@@ -348,7 +348,7 @@ Fires when the drop-down list has received data from the data source.
 
  
 
-### \<kendo:dropDownList-open\>
+### kendo:dropDownList-open
 
 Fires when the drop-down list is opened
 
@@ -365,7 +365,7 @@ Fires when the drop-down list is opened
 
  
 
-### \<kendo:dropDownList-select\>
+### kendo:dropDownList-select
 
 Triggered when a Li element is selected.
 
@@ -384,7 +384,7 @@ Triggered when a Li element is selected.
 
 ## Child JSP Tags
 
-### [\<kendo:dropDownList-animation\>](/api/wrappers/jsp/dropdownlist/animation)
+### [kendo:dropDownList-animation](/api/wrappers/jsp/dropdownlist/animation)
 
 Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 
