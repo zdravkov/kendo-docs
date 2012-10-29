@@ -446,6 +446,10 @@ Indicates whether item should be switched to edit mode on click.
         }
     });
 
+### height `Number|String`
+
+ Sets the height of the grid.
+
 ### navigatable `Boolean`*(default: false)*
 
  Indicates whether keyboard navigation is enabled/disabled.
@@ -602,24 +606,11 @@ Template to be used for rendering the rows in the grid.
 
 ### scrollable `Boolean | Object`*(default: true)*
 
- Enable/disable grid scrolling. Possible values:
+ Enable/disable grid scrolling.
 
+### scrollable.virtual `Boolean` *(default: false)*
 
-#### *true*
-
-Enables grid vertical scrolling
-
-#### *false*
-
-Disables grid vertical scrolling
-
-#### *{ virtual: false }*
-
-Enables grid vertical scrolling without data virtualization. Same as first option.
-
-#### *{ virtual: true }*
-
-Enables grid vertical scrolling with data virtualization.
+ Enable/disable virtual scrolling. When enabled the grid will display only a single page of data (configured via `dataSource.pageSize`).
 
 #### Example
 
