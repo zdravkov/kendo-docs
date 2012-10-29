@@ -77,6 +77,24 @@ A collection of column objects or collection of strings that represents the name
                    { title: "Year", field: "year", filterable: false, sortable: true, format: "{0:dd/MMMM/yyyy}" } ]
     });
 
+### columns.attributes `Object`
+
+Definition of column cells' HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
+
+#### Example
+
+    $("#grid").kendoGrid({
+        columns: [
+            {
+                field: "Price",
+                attributes: {
+                    "class": "myClass",
+                    style: "text-align: right"
+                }
+            }
+        ]
+    });
+
 ### columns.command `String|Array`
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
@@ -160,6 +178,39 @@ The format that will be applied on the column cells.
          ]
       });
 
+### columns.headerAttributes `Object`
+
+Definition of column header cell's HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
+
+#### Example
+
+    $("#grid").kendoGrid({
+        columns: [
+            {
+                field: "Price",
+                headerAttributes: {
+                    "class": "myHeader",
+                    style: "text-align: right"
+                }
+            }
+        ]
+    });
+      
+### columns.headerTemplate `String`
+
+The template for column's header cell. If sorting is enabled, it will be wrapped in a `<a class="k-link">` element, so the template should consist of only inline elements
+in order to have valid HTML markup in the Grid.
+
+#### Example
+
+    $("#grid").kendoGrid({
+         columns: [
+             {
+                 headerTemplate: '<input type="checkbox" id="checkAll" />'
+            }
+         ]
+      });
+      
 ### columns.sortable `Boolean`*(default: true)*
 
  Specifies whether given column is sortable.
@@ -187,7 +238,6 @@ The template for column's cells.
          ]
       });
 
-<<<<<<< HEAD
 ### columns.aggregates `Array`
 
 The aggregates to be used when grouping is applied
@@ -278,21 +328,6 @@ The template for column's cell in footer item.
                  field: "BirthDate",
                  title: "Birth Date",
                  footerTemplate: 'custom footer text'
-            }
-         ]
-      });
-
-### columns.headerTemplate `String`
-
-The template for column's header cell. If sorting is enabled, it will be wrapped in a `<a class="k-link">` element, so the template should consist of only inline elements
-in order to have valid HTML markup in the Grid.
-
-#### Example
-
-    $("#grid").kendoGrid({
-         columns: [
-             {
-                 headerTemplate: '<input type="checkbox" id="checkAll" />'
             }
          ]
       });
