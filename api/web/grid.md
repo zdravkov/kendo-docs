@@ -187,6 +187,7 @@ The template for column's cells.
          ]
       });
 
+<<<<<<< HEAD
 ### columns.aggregates `Array`
 
 The aggregates to be used when grouping is applied
@@ -283,23 +284,15 @@ The template for column's cell in footer item.
 
 ### columns.headerTemplate `String`
 
-The template for column's cell in header item.
+The template for column's header cell. If sorting is enabled, it will be wrapped in a `<a class="k-link">` element, so the template should consist of only inline elements
+in order to have valid HTML markup in the Grid.
 
 #### Example
 
     $("#grid").kendoGrid({
-         dataSource: {
-             data: createRandomData(50),
-             pageSize: 10
-         },
          columns: [
              {
-                 field: "Name"
-             },
-             {
-                 field: "BirthDate",
-                 title: "Birth Date",
-                 headerTemplate: 'custom header text'
+                 headerTemplate: '<input type="checkbox" id="checkAll" />'
             }
          ]
       });
