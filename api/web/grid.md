@@ -704,7 +704,7 @@ Defines that only once column can be sorted at a time.
 
 Defines that multiple columns can be sorted at a time.
 
-### toolbar `Array|String|Function`
+### toolbar `Array`
 
 This is a list of commands for which the corresponding buttons will be rendered.
 The supported built-in commands are: "create", "cancel", "save", "destroy".
