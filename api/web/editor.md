@@ -197,19 +197,47 @@ as a collection of required properties, while the insertHtml  tool requires a co
 
     Set the object which describes the image/directory entry fields. Note that a name, type and size fields should be set.
 
+### imagebrowser.schema.model.id `String`
+
+    The name of the field which acts as an identifier.
+
 ### imagebrowser.schema.model.fields `Object`
 
 ### imagebrowser.schema.model.fields.name `Object|String`
 
     The field which contains the name of the image/directory
 
+### imagebrowser.schema.model.fields.name.field `String`
+
+    The name of the field.
+
+### imagebrowser.schema.model.fields.name.parse `Function`
+
+    Specifies the function which will parse the field value. If not set default parsers will be used.
+
 ### imagebrowser.schema.model.fields.type `Object|String`
 
     The field which contains the type of the entry. Either *f* for image or *d* for directory.
 
+### imagebrowser.schema.model.fields.type.parse `Function`
+
+    Specifies the function which will parse the field value. If not set default parsers will be used.
+
+### imagebrowser.schema.model.fields.type.field `String`
+
+    The name of the field.
+
 ### imagebrowser.schema.model.fields.size `Object|String`
 
     The field which contains the size of image.
+
+### imagebrowser.schema.model.fields.size.field `String`
+
+    The name of the field.
+
+### imagebrowser.schema.model.fields.size.parse `Function`
+
+    Specifies the function which will parse the field value. If not set default parsers will be used.
 
 ### imagebrowser.messages `Object`
 
