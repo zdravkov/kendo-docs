@@ -195,7 +195,7 @@ Definition of column header cell's HTML attributes. Reserved words in Javascript
             }
         ]
     });
-      
+
 ### columns.headerTemplate `String`
 
 The template for column's header cell. If sorting is enabled, it will be wrapped in a `<a class="k-link">` element, so the template should consist of only inline elements
@@ -210,7 +210,7 @@ in order to have valid HTML markup in the Grid.
             }
          ]
       });
-      
+
 ### columns.sortable `Boolean`*(default: true)*
 
  Specifies whether given column is sortable.
@@ -704,10 +704,11 @@ Defines that only once column can be sorted at a time.
 
 Defines that multiple columns can be sorted at a time.
 
-### toolbar `Array`
+### toolbar `Array|String|Function`
 
 This is a list of commands for which the corresponding buttons will be rendered.
 The supported built-in commands are: "create", "cancel", "save", "destroy".
+Or template to be used for rendering the toolbar content.
 
 #### Example
 
