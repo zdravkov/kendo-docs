@@ -150,7 +150,7 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-
+    
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
 
@@ -172,7 +172,7 @@ The padding of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-
+    
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -191,7 +191,7 @@ Skips rendering the first n labels.
 Label rendering step.
 Every n-th label is rendered where n is the step
 
-### categoryAxis.labels.template `String|Function`
+### categoryAxis.labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -1351,7 +1351,7 @@ The label is positioned at the bottom of the area chart marker.
 
 The label is positioned at the left of the area chart marker.
 
-### series.type="area".labels.template `String|Function`
+### series.type="area".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -1391,7 +1391,7 @@ Template variables:
 
  The visibility of the labels.
 
-### series.type="area".line `String|Object`
+### series.type="area".line `String | Object`
 
 The line of the area chart.
 
@@ -1783,7 +1783,7 @@ The label is positioned inside, near the base of the bar.
 The label is positioned outside, near the end of the bar.
              Not applicable for stacked bar series.
 
-### series.type="bar".labels.template `String|Function`
+### series.type="bar".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -2109,7 +2109,7 @@ The label is positioned at the bottom of the bubble chart marker.
 
 The label is positioned at the left of the bubble chart marker.
 
-### series.type="bubble".labels.template `String|Function`
+### series.type="bubble".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -2557,7 +2557,7 @@ The labels are positioned inside, near the end of the donut segments.
 The labels are positioned outside, near the end of the donut segments.
              The labels and the donut segments are connected with connector line.
 
-### series.type="donut".labels.template `String|Function`
+### series.type="donut".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -2904,7 +2904,7 @@ The label is positioned at the bottom of the line chart marker.
 
 The label is positioned at the left of the line chart marker.
 
-### series.type="line".labels.template `String|Function`
+### series.type="line".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -3364,7 +3364,7 @@ The labels are positioned inside, near the end of the pie segments.
 The labels are positioned outside, near the end of the pie segments.
              The labels and the pie segments are connected with connector line.
 
-### series.type="pie".labels.template `String|Function`
+### series.type="pie".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -3663,7 +3663,7 @@ The label is positioned at the bottom of the scatter chart marker.
 
 The label is positioned at the left of the scatter chart marker.
 
-### series.type="scatter".labels.template `String|Function`
+### series.type="scatter".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -4018,7 +4018,7 @@ The label is positioned at the bottom of the scatter chart marker.
 
 The label is positioned at the left of the scatter chart marker.
 
-### series.type="scatterLine".labels.template `String|Function`
+### series.type="scatterLine".labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -4958,7 +4958,7 @@ The format of the labels.
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### seriesDefaults.labels.template `String|Function`
+### seriesDefaults.labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -5398,7 +5398,7 @@ Template variables:
          },
          series: [{
              name: "Series 1",
-             data: [200, 450, 300, 125]
+             data: [200, 450, 300, 125]         
          }],
          categoryAxis: {
              categories: [2000, 2001, 2002, 2003]
@@ -5535,10 +5535,10 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-
+    
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-
+           
     // sets the top and left margin to 1px
     // margin right and bottom are with 0px (by default)
     margin: { top: 1, left: 1 }
@@ -5554,10 +5554,10 @@ mirroring the axis will render them to the right.
 The padding of the labels.
 
 #### Example
-
+    
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-
+            
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -5576,7 +5576,7 @@ Skips rendering the first n labels.
 Label rendering step.
 Every n-th label is rendered where n is the step
 
-### valueAxis.labels.template `String|Function`
+### valueAxis.labels.template `String | Function`
 
 The label template.
 Template variables:
@@ -5884,7 +5884,7 @@ The margin of the title.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-
+    
     // sets the top and left margin to 1px
     // margin right and bottom are with 0px (by default)
     margin: { top: 1, left: 1 }
@@ -5954,23 +5954,15 @@ The axis type.
 Note: The Chart will automatically switch to a date axis if the series X value
 is of type Date. Specify type explicitly when such behavior is undesired.
 
-#### *"numeric"*
+### xAxis.axisCrossingValue `Object | Date | Array`
 
-Generic axis with automatic range.
+Value at which the Y axis crosses this axis. (Only for object)
 
-#### *"date"*
+Value indicies at which the Y axes cross the value axis. (Only for array)
 
-Suitable for displaying chronological data.
+Date at which the Y axis crosses this axis. (Only for date)
 
-### xAxis.type: "date"
-
-Properties specific to the date-time value axis
-
-### xAxis.type: "date".axisCrossingValue `Date`
-
-Date at which the Y axis crosses this axis.
-
-### xAxis.type: "date".baseUnit `String`
+### xAxis.baseUnit `String`
 
 The base time interval for the axis labels.
 The default baseUnit is determined automatically from the value range. Available options:
@@ -5982,15 +5974,15 @@ The default baseUnit is determined automatically from the value range. Available
 * months
 * years
 
-### xAxis.type: "date".labels `Object`
+### xAxis.labels `Object`
 
 Label settings specific to the date axis.
 
-### xAxis.type: "date".labels.culture `String`*(default: global culture)*
+### xAxis.labels.culture `String`*(default: global culture)*
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
 
-### xAxis.type: "date".labels.dateFormats `Object`
+### xAxis.labels.dateFormats `Object`
 
 Date format strings
 
@@ -6013,37 +6005,31 @@ Date format strings
 #### *"years"*
 
 "yyyy"
+
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
-### xAxis.type: "date".majorUnit `Number`
+### xAxis.majorUnit `Number`
 
 The interval between major divisions in base units.
 
-### xAxis.type: "date".max `Date`
+### xAxis.max `Object`
 
 The end date of the axis.
 This is often used in combination with the **min** configuration option.
 
-### xAxis.type: "date".min `Date`
+### xAxis.min `Object`
 
-The start date of the axis.
+The maximum value of the axis.
 This is often used in combination with the **max** configuration option.
 
-### xAxis.type: "date".minorUnit `Number`
+### xAxis.minorUnit `Number`
 
 The interval between minor divisions in base units.
 It defaults to 1/5th of the majorUnit.
 
-### xAxis.type: "numeric" `Number`
-
-Options specific to the numeric axis.
-
-### xAxis.type: "numeric".axisCrossingValue *(default: 0)*
-
+### xAxis.axisCrossingValue `Object | Array`
 Value at which the first Y axis crosses this axis.
-
-### xAxis.type: "numeric".axisCrossingValue `Array`*(default: [0])*
 
 Values at which the Y axes cross this X axis.
 <p>
@@ -6055,7 +6041,7 @@ axis maximum value to denote the far end of the axis.
     $("#chart").kendoChart({
          ...,
          xAxis: {
-             axisCrossingValues: [0, 1000]
+             axisCrossingValue: [0, 1000]
          },
          yAxis: [{ }, { name: "secondary" }],
          ...
@@ -6064,8 +6050,106 @@ axis maximum value to denote the far end of the axis.
 
 ### yAxis `Object`
 
-The scatter charts Y-axis configuration options.
-See **xAxis** for list of available options.
+### yAxis.type `String`*(default: "numeric")*
+
+The axis type.
+
+Note: The Chart will automatically switch to a date axis if the series X value
+is of type Date. Specify type explicitly when such behavior is undesired.
+
+### yAxis.axisCrossingValue `Object | Date | Array`
+
+Value at which the Y axis crosses this axis. (Only for object)
+
+Value indicies at which the Y axes cross the value axis. (Only for array)
+
+Date at which the Y axis crosses this axis. (Only for date)
+
+### yAxis.baseUnit `String`
+
+The base time interval for the axis labels.
+The default baseUnit is determined automatically from the value range. Available options:
+
+* minutes
+* hours
+* days
+* weeks
+* months
+* years
+
+### yAxis.labels `Object`
+
+Label settings specific to the date axis.
+
+### yAxis.labels.culture `String`*(default: global culture)*
+
+Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
+
+### yAxis.labels.dateFormats `Object`
+
+Date format strings
+
+#### *"hours"*
+
+"HH:mm"
+
+#### *"days"*
+
+"M/d"
+
+#### *"weeks"*
+
+"M/d"
+
+#### *"months"*
+
+"MMM 'yy"
+
+#### *"years"*
+
+"yyyy"
+
+The Chart will choose the appropriate format for the current `baseUnit`.
+Setting the labels **format** option will override these defaults.
+
+### yAxis.majorUnit `Number`
+
+The interval between major divisions in base units.
+
+### yAxis.max `Object`
+
+The end date of the axis.
+This is often used in combination with the **min** configuration option.
+
+### yAxis.min `Object`
+
+The maximum value of the axis.
+This is often used in combination with the **max** configuration option.
+
+### yAxis.minorUnit `Number`
+
+The interval between minor divisions in base units.
+It defaults to 1/5th of the majorUnit.
+
+### yAxis.axisCrossingValue `Object | Array`
+Value at which the first Y axis crosses this axis.
+
+Values at which the Y axes cross this X axis.
+<p>
+**Note:&nbsp;** Specify a value greater than or equal to the
+axis maximum value to denote the far end of the axis.
+
+#### Example
+
+    $("#chart").kendoChart({
+         ...,
+         yAxis: {
+             axisCrossingValue: [0, 1000]
+         },
+         xAxis: [{ }, { name: "secondary" }],
+         ...
+    });
+    </p>
 
 ## Methods
 
