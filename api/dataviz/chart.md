@@ -4476,7 +4476,7 @@ Template variables:
 
 A value indicating if the tooltip should be displayed.
 
-### series.type="candlestick".line `String`
+### series.type="candlestick".line `Object`
 
 The line of the candlestick chart.
 
@@ -4715,7 +4715,7 @@ Template variables:
 
 A value indicating if the tooltip should be displayed.
 
-### series.type="ohlc".line `String`
+### series.type="ohlc".line `Object`
 
 The line of the ohlc chart.
 
