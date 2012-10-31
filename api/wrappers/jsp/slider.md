@@ -214,9 +214,11 @@ Fires when the user drags the drag handle to a new position.
 
 ## Child JSP Tags
 
-### [kendo:slider-tooltip](/api/wrappers/jsp/slider/tooltip)
+### kendo:slider-tooltip
 
 Configuration of the
+
+More documentation is available at [kendo:slider-tooltip](/api/wrappers/jsp/slider/tooltip).
 
 #### Example
 

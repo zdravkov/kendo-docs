@@ -195,9 +195,11 @@ Fires when the user drags the drag handle to a new position.
 
 ## Child JSP Tags
 
-### [kendo:rangeSlider-tooltip](/api/wrappers/jsp/rangeslider/tooltip)
+### kendo:rangeSlider-tooltip
 
 Configuration of the
+
+More documentation is available at [kendo:rangeSlider-tooltip](/api/wrappers/jsp/rangeslider/tooltip).
 
 #### Example
 

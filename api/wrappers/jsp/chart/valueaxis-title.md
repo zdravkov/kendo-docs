@@ -110,9 +110,11 @@ The visibility of the title.
 
 ## Child JSP Tags
 
-### [kendo:chart-valueAxis-title-border](/api/wrappers/jsp/chart/valueaxis-title-border)
+### kendo:chart-valueAxis-title-border
 
 The border of the title.
+
+More documentation is available at [kendo:chart-valueAxis-title-border](/api/wrappers/jsp/chart/valueaxis-title-border).
 
 #### Example
 

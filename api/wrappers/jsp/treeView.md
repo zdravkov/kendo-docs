@@ -482,10 +482,12 @@ Triggered when a node gets selected.
 
 ## Child JSP Tags
 
-### [kendo:treeView-animation](/api/wrappers/jsp/treeview/animation)
+### kendo:treeView-animation
 
 A collection of visual animations used when items are expanded or collapsed through user interaction.
 Setting this option to
+
+More documentation is available at [kendo:treeView-animation](/api/wrappers/jsp/treeview/animation).
 
 #### Example
 
@@ -493,9 +495,11 @@ Setting this option to
         <kendo:treeView-animation></kendo:treeView-animation>
     </kendo:treeView>
  
-### [kendo:treeView-checkboxes](/api/wrappers/jsp/treeview/checkboxes)
+### kendo:treeView-checkboxes
 
 If
+
+More documentation is available at [kendo:treeView-checkboxes](/api/wrappers/jsp/treeview/checkboxes).
 
 #### Example
 
@@ -503,9 +507,11 @@ If
         <kendo:treeView-checkboxes></kendo:treeView-checkboxes>
     </kendo:treeView>
  
-### [kendo:treeView-items](/api/wrappers/jsp/treeview/items)
+### kendo:treeView-items
 
 Contains items of TreeView
+
+More documentation is available at [kendo:treeView-items](/api/wrappers/jsp/treeview/items).
 
 #### Example
 

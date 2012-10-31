@@ -130,9 +130,11 @@ The padding of the labels.
 
 ## Child JSP Tags
 
-### [kendo:chart-seriesItem-labels-border](/api/wrappers/jsp/chart/seriesitem-labels-border)
+### kendo:chart-seriesItem-labels-border
 
 The border of the labels.
+
+More documentation is available at [kendo:chart-seriesItem-labels-border](/api/wrappers/jsp/chart/seriesitem-labels-border).
 
 #### Example
 

@@ -166,9 +166,11 @@ Fires when the current page has changed.
 
 ## Child JSP Tags
 
-### [kendo:pager-messages](/api/wrappers/jsp/pager/messages)
+### kendo:pager-messages
 
 Defines texts shown within the pager.
+
+More documentation is available at [kendo:pager-messages](/api/wrappers/jsp/pager/messages).
 
 #### Example
 

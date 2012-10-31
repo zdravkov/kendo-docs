@@ -74,9 +74,11 @@ Options for remote update data operation, or the URL of the remote service.
 
 ## Child JSP Tags
 
-### [kendo:dataSource-transport-create](/api/wrappers/jsp/datasource/transport-create)
+### kendo:dataSource-transport-create
 
 Options for remote create data operation, or the URL of the remote service.
+
+More documentation is available at [kendo:dataSource-transport-create](/api/wrappers/jsp/datasource/transport-create).
 
 #### Example
 
@@ -84,9 +86,11 @@ Options for remote create data operation, or the URL of the remote service.
         <kendo:dataSource-transport-create></kendo:dataSource-transport-create>
     </kendo:dataSource-transport>
  
-### [kendo:dataSource-transport-destroy](/api/wrappers/jsp/datasource/transport-destroy)
+### kendo:dataSource-transport-destroy
 
 Options for remote destroy data operation, or the URL of the remote service.
+
+More documentation is available at [kendo:dataSource-transport-destroy](/api/wrappers/jsp/datasource/transport-destroy).
 
 #### Example
 
@@ -94,9 +98,11 @@ Options for remote destroy data operation, or the URL of the remote service.
         <kendo:dataSource-transport-destroy></kendo:dataSource-transport-destroy>
     </kendo:dataSource-transport>
  
-### [kendo:dataSource-transport-read](/api/wrappers/jsp/datasource/transport-read)
+### kendo:dataSource-transport-read
 
 Options for remote read data operation, or the URL of the remote service.
+
+More documentation is available at [kendo:dataSource-transport-read](/api/wrappers/jsp/datasource/transport-read).
 
 #### Example
 
@@ -104,9 +110,11 @@ Options for remote read data operation, or the URL of the remote service.
         <kendo:dataSource-transport-read></kendo:dataSource-transport-read>
     </kendo:dataSource-transport>
  
-### [kendo:dataSource-transport-update](/api/wrappers/jsp/datasource/transport-update)
+### kendo:dataSource-transport-update
 
 Options for remote update data operation, or the URL of the remote service.
+
+More documentation is available at [kendo:dataSource-transport-update](/api/wrappers/jsp/datasource/transport-update).
 
 #### Example
 

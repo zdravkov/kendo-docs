@@ -44,10 +44,12 @@ A value indicating if transition animations should be played.
 
 ## Child JSP Tags
 
-### [kendo:radialGauge-gaugeArea](/api/wrappers/jsp/radialgauge/gaugearea)
+### kendo:radialGauge-gaugeArea
 
 The gauge area configuration options.
 This is the entire visible area of the gauge.
+
+More documentation is available at [kendo:radialGauge-gaugeArea](/api/wrappers/jsp/radialgauge/gaugearea).
 
 #### Example
 
@@ -55,9 +57,11 @@ This is the entire visible area of the gauge.
         <kendo:radialGauge-gaugeArea></kendo:radialGauge-gaugeArea>
     </kendo:radialGauge>
  
-### [kendo:radialGauge-pointer](/api/wrappers/jsp/radialgauge/pointer)
+### kendo:radialGauge-pointer
 
 The pointer configuration options.
+
+More documentation is available at [kendo:radialGauge-pointer](/api/wrappers/jsp/radialgauge/pointer).
 
 #### Example
 
@@ -65,9 +69,11 @@ The pointer configuration options.
         <kendo:radialGauge-pointer></kendo:radialGauge-pointer>
     </kendo:radialGauge>
  
-### [kendo:radialGauge-scale](/api/wrappers/jsp/radialgauge/scale)
+### kendo:radialGauge-scale
 
 Configures the scale.
+
+More documentation is available at [kendo:radialGauge-scale](/api/wrappers/jsp/radialgauge/scale).
 
 #### Example
 

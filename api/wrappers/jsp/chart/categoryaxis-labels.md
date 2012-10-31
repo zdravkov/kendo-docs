@@ -164,9 +164,11 @@ Date format strings
 
 ## Child JSP Tags
 
-### [kendo:chart-categoryAxis-labels-border](/api/wrappers/jsp/chart/categoryaxis-labels-border)
+### kendo:chart-categoryAxis-labels-border
 
 The border of the labels.
+
+More documentation is available at [kendo:chart-categoryAxis-labels-border](/api/wrappers/jsp/chart/categoryaxis-labels-border).
 
 #### Example
 

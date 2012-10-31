@@ -17,6 +17,16 @@ A JSP tag representing Kendo Column.
 ## Configuration Attributes
 
 
+### attributes `Object`
+
+Definition of column cells' HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
+
+#### Example
+    <kendo:grid attributes="attributes">
+    </kendo:grid>
+
+
+
 ### command `String`
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
@@ -82,6 +92,26 @@ The format that will be applied on the column cells.
 
 
 
+### headerAttributes `Object`
+
+Definition of column header cell's HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
+
+#### Example
+    <kendo:grid headerAttributes="headerAttributes">
+    </kendo:grid>
+
+
+
+### headerTemplate `String`
+
+The template for column's header cell. If sorting is enabled, it will be wrapped in a
+
+#### Example
+    <kendo:grid headerTemplate="headerTemplate">
+    </kendo:grid>
+
+
+
 ### sortable `boolean`
 
 Specifies whether given column is sortable. Further configuration is available via [kendo:grid-sortable](#kendo-grid-sortable). 
@@ -142,22 +172,22 @@ The template for column's cell in footer item.
 
 
 
-### headerTemplate `String`
-
-The template for column's cell in header item.
-
-#### Example
-    <kendo:grid headerTemplate="headerTemplate">
-    </kendo:grid>
-
-
-
 ### title `String`
 
 The text that will be displayed in the column header.
 
 #### Example
     <kendo:grid title="title">
+    </kendo:grid>
+
+
+
+### values `Object`
+
+An array of values that will be used in a foreign key column. Each item in the array should have a
+
+#### Example
+    <kendo:grid values="values">
     </kendo:grid>
 
 
@@ -174,9 +204,11 @@ The width of the column.
 
 ## Child JSP Tags
 
-### [kendo:grid-column-command](/api/wrappers/jsp/grid/column-command)
+### kendo:grid-column-command
 
 Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
+
+More documentation is available at [kendo:grid-column-command](/api/wrappers/jsp/grid/column-command).
 
 #### Example
 

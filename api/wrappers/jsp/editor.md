@@ -236,7 +236,7 @@ Fires when the Editor selection has changed.
 
 
 ## Event Tags
-
+ 
 
 ### kendo:editor-change
 
@@ -341,4 +341,16 @@ Fires when the Editor selection has changed.
  
 
 ## Child JSP Tags
-      
+
+### kendo:editor-imagebrowser
+
+Configuration for image browser dialog.
+
+More documentation is available at [kendo:editor-imagebrowser](/api/wrappers/jsp/editor/imagebrowser).
+
+#### Example
+
+    <kendo:editor>
+        <kendo:editor-imagebrowser></kendo:editor-imagebrowser>
+    </kendo:editor>
+       

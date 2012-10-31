@@ -60,9 +60,11 @@ The width of the gauge area.
 
 ## Child JSP Tags
 
-### [kendo:radialGauge-gaugeArea-border](/api/wrappers/jsp/radialgauge/gaugearea-border)
+### kendo:radialGauge-gaugeArea-border
 
 The border of the gauge area.
+
+More documentation is available at [kendo:radialGauge-gaugeArea-border](/api/wrappers/jsp/radialgauge/gaugearea-border).
 
 #### Example
 

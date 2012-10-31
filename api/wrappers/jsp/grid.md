@@ -5,7 +5,7 @@ tags: api, java
 publish: true
 ---
 
-# &lt;kendo:grid&gt;
+# \<kendo:grid\>
 A JSP tag representing Kendo Grid.
 
 
@@ -83,6 +83,16 @@ Indicates whether grouping is enabled/disabled. Further configuration is availab
 
 
 
+### height `float`
+
+Sets the height of the grid.
+
+#### Example
+    <kendo:grid height="height">
+    </kendo:grid>
+
+
+
 ### navigatable `boolean`
 
 Indicates whether keyboard navigation is enabled/disabled.
@@ -120,7 +130,7 @@ Template to be used for rendering the rows in the grid.
 
 ### scrollable `boolean`
 
-Enable/disable grid scrolling. Possible values:
+Enable/disable grid scrolling. Further configuration is available via [kendo:grid-scrollable](#kendo-grid-scrollable). 
 
 #### Example
     <kendo:grid scrollable="scrollable">
@@ -451,7 +461,7 @@ Fires before the grid calls DataSource sync.
 
 
 ## Event Tags
-      
+       
 
 ### kendo:grid-change
 
@@ -677,9 +687,11 @@ Template to be used for rendering the rows in the grid.
 
 ## Child JSP Tags
 
-### [kendo:grid-columns](/api/wrappers/jsp/grid/columns)
+### kendo:grid-columns
 
 A collection of column objects or collection of strings that represents the name of the fields.
+
+More documentation is available at [kendo:grid-columns](/api/wrappers/jsp/grid/columns).
 
 #### Example
 
@@ -687,9 +699,11 @@ A collection of column objects or collection of strings that represents the name
         <kendo:grid-columns></kendo:grid-columns>
     </kendo:grid>
  
-### [kendo:grid-editable](/api/wrappers/jsp/grid/editable)
+### kendo:grid-editable
 
 Indicates whether editing is enabled/disabled.
+
+More documentation is available at [kendo:grid-editable](/api/wrappers/jsp/grid/editable).
 
 #### Example
 
@@ -697,9 +711,11 @@ Indicates whether editing is enabled/disabled.
         <kendo:grid-editable></kendo:grid-editable>
     </kendo:grid>
  
-### [kendo:grid-groupable](/api/wrappers/jsp/grid/groupable)
+### kendo:grid-groupable
 
 Indicates whether grouping is enabled/disabled.
+
+More documentation is available at [kendo:grid-groupable](/api/wrappers/jsp/grid/groupable).
 
 #### Example
 
@@ -707,9 +723,11 @@ Indicates whether grouping is enabled/disabled.
         <kendo:grid-groupable></kendo:grid-groupable>
     </kendo:grid>
  
-### [kendo:grid-pageable](/api/wrappers/jsp/grid/pageable)
+### kendo:grid-pageable
 
 Indicates whether paging is enabled/disabled.
+
+More documentation is available at [kendo:grid-pageable](/api/wrappers/jsp/grid/pageable).
 
 #### Example
 
@@ -717,9 +735,23 @@ Indicates whether paging is enabled/disabled.
         <kendo:grid-pageable></kendo:grid-pageable>
     </kendo:grid>
  
-### [kendo:grid-sortable](/api/wrappers/jsp/grid/sortable)
+### kendo:grid-scrollable
+
+Enable/disable grid scrolling.
+
+More documentation is available at [kendo:grid-scrollable](/api/wrappers/jsp/grid/scrollable).
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-scrollable></kendo:grid-scrollable>
+    </kendo:grid>
+ 
+### kendo:grid-sortable
 
 Defines whether grid columns are sortable.
+
+More documentation is available at [kendo:grid-sortable](/api/wrappers/jsp/grid/sortable).
 
 #### Example
 
@@ -727,10 +759,13 @@ Defines whether grid columns are sortable.
         <kendo:grid-sortable></kendo:grid-sortable>
     </kendo:grid>
  
-### [kendo:grid-toolbar](/api/wrappers/jsp/grid/toolbar)
+### kendo:grid-toolbar
 
 This is a list of commands for which the corresponding buttons will be rendered.
 The supported built-in commands are: "create", "cancel", "save", "destroy".
+Or template to be used for rendering the toolbar content.
+
+More documentation is available at [kendo:grid-toolbar](/api/wrappers/jsp/grid/toolbar).
 
 #### Example
 

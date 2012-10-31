@@ -101,9 +101,11 @@ The position of the gauge.
 
 ## Child JSP Tags
 
-### [kendo:linearGauge-scale-labels](/api/wrappers/jsp/lineargauge/scale-labels)
+### kendo:linearGauge-scale-labels
 
 Configures the scale labels.
+
+More documentation is available at [kendo:linearGauge-scale-labels](/api/wrappers/jsp/lineargauge/scale-labels).
 
 #### Example
 
@@ -111,9 +113,11 @@ Configures the scale labels.
         <kendo:linearGauge-scale-labels></kendo:linearGauge-scale-labels>
     </kendo:linearGauge-scale>
  
-### [kendo:linearGauge-scale-majorTicks](/api/wrappers/jsp/lineargauge/scale-majorticks)
+### kendo:linearGauge-scale-majorTicks
 
 Configures the scale major ticks.
+
+More documentation is available at [kendo:linearGauge-scale-majorTicks](/api/wrappers/jsp/lineargauge/scale-majorticks).
 
 #### Example
 
@@ -121,9 +125,11 @@ Configures the scale major ticks.
         <kendo:linearGauge-scale-majorTicks></kendo:linearGauge-scale-majorTicks>
     </kendo:linearGauge-scale>
  
-### [kendo:linearGauge-scale-minorTicks](/api/wrappers/jsp/lineargauge/scale-minorticks)
+### kendo:linearGauge-scale-minorTicks
 
 Configures the scale minor ticks.
+
+More documentation is available at [kendo:linearGauge-scale-minorTicks](/api/wrappers/jsp/lineargauge/scale-minorticks).
 
 #### Example
 

@@ -282,9 +282,11 @@ Triggered before a tab is selected.
 
 ## Child JSP Tags
 
-### [kendo:tabStrip-animation](/api/wrappers/jsp/tabstrip/animation)
+### kendo:tabStrip-animation
 
 A collection of visual animations used when
+
+More documentation is available at [kendo:tabStrip-animation](/api/wrappers/jsp/tabstrip/animation).
 
 #### Example
 
@@ -292,9 +294,11 @@ A collection of visual animations used when
         <kendo:tabStrip-animation></kendo:tabStrip-animation>
     </kendo:tabStrip>
  
-### [kendo:tabStrip-items](/api/wrappers/jsp/tabstrip/items)
+### kendo:tabStrip-items
 
 Contains items of TabStrip
+
+More documentation is available at [kendo:tabStrip-items](/api/wrappers/jsp/tabstrip/items).
 
 #### Example
 

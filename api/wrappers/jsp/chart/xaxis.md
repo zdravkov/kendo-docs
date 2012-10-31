@@ -27,16 +27,6 @@ The axis type.
 
 
 
-### axisCrossingValue `java.util.Date`
-
-Date at which the Y axis crosses this axis.
-
-#### Example
-    <kendo:chart axisCrossingValue="axisCrossingValue">
-    </kendo:chart>
-
-
-
 ### baseUnit `String`
 
 The base time interval for the axis labels.
@@ -58,7 +48,7 @@ The interval between major divisions in base units.
 
 
 
-### max `java.util.Date`
+### max `Object`
 
 The end date of the axis.
 This is often used in combination with the
@@ -69,9 +59,9 @@ This is often used in combination with the
 
 
 
-### min `java.util.Date`
+### min `Object`
 
-The start date of the axis.
+The maximum value of the axis.
 This is often used in combination with the
 
 #### Example
@@ -91,21 +81,23 @@ It defaults to 1/5th of the majorUnit.
 
 
 
-###  `float`
+### axisCrossingValue `Object`
 
-Options specific to the numeric axis.
+Value at which the Y axis crosses this axis. (Only for object)
 
 #### Example
-    <kendo:chart ="">
-    </kendo:chart>
+    <kendo:chart-xAxis axisCrossingValue="axisCrossingValue">
+    </kendo:chart-xAxis>
 
 
 
 ## Child JSP Tags
 
-### [kendo:chart-xAxis-labels](/api/wrappers/jsp/chart/xaxis-labels)
+### kendo:chart-xAxis-labels
 
 Label settings specific to the date axis.
+
+More documentation is available at [kendo:chart-xAxis-labels](/api/wrappers/jsp/chart/xaxis-labels).
 
 #### Example
 

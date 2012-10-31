@@ -16,9 +16,11 @@ A JSP tag representing Kendo Columns.
 
 ## Child JSP Tags
 
-### [kendo:grid-column](/api/wrappers/jsp/grid/column)
+### kendo:grid-column
 
 A collection of column objects or collection of strings that represents the name of the fields.
+
+More documentation is available at [kendo:grid-column](/api/wrappers/jsp/grid/column).
 
 #### Example
 

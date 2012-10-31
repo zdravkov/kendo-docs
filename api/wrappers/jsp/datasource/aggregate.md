@@ -16,9 +16,11 @@ A JSP tag representing Kendo Aggregate.
 
 ## Child JSP Tags
 
-### [kendo:dataSource-aggregateItem](/api/wrappers/jsp/datasource/aggregateitem)
+### kendo:dataSource-aggregateItem
 
 Sets fields on which initial aggregates should be calculated
+
+More documentation is available at [kendo:dataSource-aggregateItem](/api/wrappers/jsp/datasource/aggregateitem).
 
 #### Example
 

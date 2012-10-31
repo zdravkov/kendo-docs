@@ -16,9 +16,11 @@ A JSP tag representing Kendo Animation.
 
 ## Child JSP Tags
 
-### [kendo:dateTimePicker-animation-close](/api/wrappers/jsp/datetimepicker/animation-close)
+### kendo:dateTimePicker-animation-close
 
 The animation(s) used for hiding of the pop-up.
+
+More documentation is available at [kendo:dateTimePicker-animation-close](/api/wrappers/jsp/datetimepicker/animation-close).
 
 #### Example
 
@@ -26,9 +28,11 @@ The animation(s) used for hiding of the pop-up.
         <kendo:dateTimePicker-animation-close></kendo:dateTimePicker-animation-close>
     </kendo:dateTimePicker-animation>
  
-### [kendo:dateTimePicker-animation-open](/api/wrappers/jsp/datetimepicker/animation-open)
+### kendo:dateTimePicker-animation-open
 
 The animation(s) used for displaying of the pop-up.
+
+More documentation is available at [kendo:dateTimePicker-animation-open](/api/wrappers/jsp/datetimepicker/animation-open).
 
 #### Example
 

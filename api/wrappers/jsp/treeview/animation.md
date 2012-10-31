@@ -16,9 +16,11 @@ A JSP tag representing Kendo Animation.
 
 ## Child JSP Tags
 
-### [kendo:treeView-animation-collapse](/api/wrappers/jsp/treeview/animation-collapse)
+### kendo:treeView-animation-collapse
 
 The animation that will be used when collapsing items.
+
+More documentation is available at [kendo:treeView-animation-collapse](/api/wrappers/jsp/treeview/animation-collapse).
 
 #### Example
 
@@ -26,9 +28,11 @@ The animation that will be used when collapsing items.
         <kendo:treeView-animation-collapse></kendo:treeView-animation-collapse>
     </kendo:treeView-animation>
  
-### [kendo:treeView-animation-expand](/api/wrappers/jsp/treeview/animation-expand)
+### kendo:treeView-animation-expand
 
 The animation that will be used when expanding items.
+
+More documentation is available at [kendo:treeView-animation-expand](/api/wrappers/jsp/treeview/animation-expand).
 
 #### Example
 

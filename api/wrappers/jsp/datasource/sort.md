@@ -16,9 +16,11 @@ A JSP tag representing Kendo Sort.
 
 ## Child JSP Tags
 
-### [kendo:dataSource-sortItem](/api/wrappers/jsp/datasource/sortitem)
+### kendo:dataSource-sortItem
 
 Sets initial sort order
+
+More documentation is available at [kendo:dataSource-sortItem](/api/wrappers/jsp/datasource/sortitem).
 
 #### Example
 

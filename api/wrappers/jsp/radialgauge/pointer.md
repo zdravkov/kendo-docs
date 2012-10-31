@@ -40,9 +40,11 @@ The value of the gauge.
 
 ## Child JSP Tags
 
-### [kendo:radialGauge-pointer-cap](/api/wrappers/jsp/radialgauge/pointer-cap)
+### kendo:radialGauge-pointer-cap
 
 The cap configuration options.
+
+More documentation is available at [kendo:radialGauge-pointer-cap](/api/wrappers/jsp/radialgauge/pointer-cap).
 
 #### Example
 

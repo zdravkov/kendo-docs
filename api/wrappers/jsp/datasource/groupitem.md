@@ -39,9 +39,11 @@ Specifies the order of the groupped items.
 
 ## Child JSP Tags
 
-### [kendo:dataSource-groupItem-aggregates](/api/wrappers/jsp/datasource/groupitem-aggregates)
+### kendo:dataSource-groupItem-aggregates
 
 Specifies the aggregate function for this group.
+
+More documentation is available at [kendo:dataSource-groupItem-aggregates](/api/wrappers/jsp/datasource/groupitem-aggregates).
 
 #### Example
 

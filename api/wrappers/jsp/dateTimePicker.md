@@ -282,9 +282,11 @@ Fires when the calendar or the time drop-down list is opened
 
 ## Child JSP Tags
 
-### [kendo:dateTimePicker-animation](/api/wrappers/jsp/datetimepicker/animation)
+### kendo:dateTimePicker-animation
 
 The animation(s) used for opening and/or closing the pop-ups. Setting this value to
+
+More documentation is available at [kendo:dateTimePicker-animation](/api/wrappers/jsp/datetimepicker/animation).
 
 #### Example
 
@@ -292,9 +294,11 @@ The animation(s) used for opening and/or closing the pop-ups. Setting this value
         <kendo:dateTimePicker-animation></kendo:dateTimePicker-animation>
     </kendo:dateTimePicker>
  
-### [kendo:dateTimePicker-month](/api/wrappers/jsp/datetimepicker/month)
+### kendo:dateTimePicker-month
 
 Templates for the cells rendered in the calendar "month" view.
+
+More documentation is available at [kendo:dateTimePicker-month](/api/wrappers/jsp/datetimepicker/month).
 
 #### Example
 

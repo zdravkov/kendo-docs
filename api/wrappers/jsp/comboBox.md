@@ -424,9 +424,11 @@ Triggered when a Li element is selected.
 
 ## Child JSP Tags
 
-### [kendo:comboBox-animation](/api/wrappers/jsp/combobox/animation)
+### kendo:comboBox-animation
 
 Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
+
+More documentation is available at [kendo:comboBox-animation](/api/wrappers/jsp/combobox/animation).
 
 #### Example
 

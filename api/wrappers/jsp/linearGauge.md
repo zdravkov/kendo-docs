@@ -24,10 +24,12 @@ A value indicating if transition animations should be played.
 
 ## Child JSP Tags
 
-### [kendo:linearGauge-gaugeArea](/api/wrappers/jsp/lineargauge/gaugearea)
+### kendo:linearGauge-gaugeArea
 
 The gauge area configuration options.
 This is the entire visible area of the gauge.
+
+More documentation is available at [kendo:linearGauge-gaugeArea](/api/wrappers/jsp/lineargauge/gaugearea).
 
 #### Example
 
@@ -35,9 +37,11 @@ This is the entire visible area of the gauge.
         <kendo:linearGauge-gaugeArea></kendo:linearGauge-gaugeArea>
     </kendo:linearGauge>
  
-### [kendo:linearGauge-pointer](/api/wrappers/jsp/lineargauge/pointer)
+### kendo:linearGauge-pointer
 
 The pointer configuration options.
+
+More documentation is available at [kendo:linearGauge-pointer](/api/wrappers/jsp/lineargauge/pointer).
 
 #### Example
 
@@ -45,9 +49,11 @@ The pointer configuration options.
         <kendo:linearGauge-pointer></kendo:linearGauge-pointer>
     </kendo:linearGauge>
  
-### [kendo:linearGauge-scale](/api/wrappers/jsp/lineargauge/scale)
+### kendo:linearGauge-scale
 
 Configures the scale.
+
+More documentation is available at [kendo:linearGauge-scale](/api/wrappers/jsp/lineargauge/scale).
 
 #### Example
 

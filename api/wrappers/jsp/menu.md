@@ -222,9 +222,11 @@ Fires when a menu item gets selected.
 
 ## Child JSP Tags
 
-### [kendo:menu-animation](/api/wrappers/jsp/menu/animation)
+### kendo:menu-animation
 
 A collection of
+
+More documentation is available at [kendo:menu-animation](/api/wrappers/jsp/menu/animation).
 
 #### Example
 
@@ -232,9 +234,11 @@ A collection of
         <kendo:menu-animation></kendo:menu-animation>
     </kendo:menu>
  
-### [kendo:menu-items](/api/wrappers/jsp/menu/items)
+### kendo:menu-items
 
 Contains items of Menu
+
+More documentation is available at [kendo:menu-items](/api/wrappers/jsp/menu/items).
 
 #### Example
 

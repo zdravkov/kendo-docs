@@ -36,3 +36,13 @@ Specifies the class name for the sprite image displayed by the item
     </kendo:menu>
 
 
+
+### expanded `boolean`
+
+Specifies whether the item is initially expanded
+
+#### Example
+    <kendo:menu expanded="expanded">
+    </kendo:menu>
+
+

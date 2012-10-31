@@ -36,3 +36,13 @@ Specifies the class name for the sprite image displayed by the item
     </kendo:treeView>
 
 
+
+### expanded `boolean`
+
+Specifies whether the item is initially expanded
+
+#### Example
+    <kendo:treeView expanded="expanded">
+    </kendo:treeView>
+
+

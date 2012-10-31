@@ -384,9 +384,11 @@ Triggered when a Li element is selected.
 
 ## Child JSP Tags
 
-### [kendo:dropDownList-animation](/api/wrappers/jsp/dropdownlist/animation)
+### kendo:dropDownList-animation
 
 Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+
+More documentation is available at [kendo:dropDownList-animation](/api/wrappers/jsp/dropdownlist/animation).
 
 #### Example
 

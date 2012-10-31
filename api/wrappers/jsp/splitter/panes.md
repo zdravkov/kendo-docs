@@ -16,9 +16,11 @@ A JSP tag representing Kendo Panes.
 
 ## Child JSP Tags
 
-### [kendo:splitter-pane](/api/wrappers/jsp/splitter/pane)
+### kendo:splitter-pane
 
 An array of pane definitions.
+
+More documentation is available at [kendo:splitter-pane](/api/wrappers/jsp/splitter/pane).
 
 #### Example
 

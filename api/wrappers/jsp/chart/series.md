@@ -16,9 +16,11 @@ A JSP tag representing Kendo Series.
 
 ## Child JSP Tags
 
-### [kendo:chart-seriesItem](/api/wrappers/jsp/chart/seriesitem)
+### kendo:chart-seriesItem
 
 Array of series definitions.
+
+More documentation is available at [kendo:chart-seriesItem](/api/wrappers/jsp/chart/seriesitem).
 
 #### Example
 

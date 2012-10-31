@@ -17,26 +17,6 @@ A JSP tag representing Kendo CategoryAxis.
 ## Configuration Attributes
 
 
-### axisCrossingValue `float`
-
-Category index at which the first value axis crosses this axis.
-
-#### Example
-    <kendo:chart axisCrossingValue="axisCrossingValue">
-    </kendo:chart>
-
-
-
-### axisCrossingValues `Object`
-
-Category indicies at which the value axes cross the category axis.
-
-#### Example
-    <kendo:chart axisCrossingValues="axisCrossingValues">
-    </kendo:chart>
-
-
-
 ### categories `Object`
 
 Array of category names.
@@ -153,7 +133,7 @@ Specifiying "auto" will set the step to such value that the total number of cate
 
 
 
-### max `java.util.Date`
+### max `Object`
 
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
@@ -165,7 +145,7 @@ This is often used in combination with the
 
 
 
-### min `java.util.Date`
+### min `Object`
 
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
@@ -219,11 +199,23 @@ The visibility of the axis.
 
 
 
+### axisCrossingValue `Object`
+
+Category index at which the first value axis crosses this axis. (Only for object)
+
+#### Example
+    <kendo:chart-categoryAxis axisCrossingValue="axisCrossingValue">
+    </kendo:chart-categoryAxis>
+
+
+
 ## Child JSP Tags
 
-### [kendo:chart-categoryAxis-labels](/api/wrappers/jsp/chart/categoryaxis-labels)
+### kendo:chart-categoryAxis-labels
 
 Configures the axis labels.
+
+More documentation is available at [kendo:chart-categoryAxis-labels](/api/wrappers/jsp/chart/categoryaxis-labels).
 
 #### Example
 
@@ -231,9 +223,11 @@ Configures the axis labels.
         <kendo:chart-categoryAxis-labels></kendo:chart-categoryAxis-labels>
     </kendo:chart-categoryAxis>
  
-### [kendo:chart-categoryAxis-line](/api/wrappers/jsp/chart/categoryaxis-line)
+### kendo:chart-categoryAxis-line
 
 Configures the axis line. This will also effect major and minor ticks, but not gridlines.
+
+More documentation is available at [kendo:chart-categoryAxis-line](/api/wrappers/jsp/chart/categoryaxis-line).
 
 #### Example
 
@@ -241,10 +235,12 @@ Configures the axis line. This will also effect major and minor ticks, but not g
         <kendo:chart-categoryAxis-line></kendo:chart-categoryAxis-line>
     </kendo:chart-categoryAxis>
  
-### [kendo:chart-categoryAxis-majorGridLines](/api/wrappers/jsp/chart/categoryaxis-majorgridlines)
+### kendo:chart-categoryAxis-majorGridLines
 
 Configures the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
+
+More documentation is available at [kendo:chart-categoryAxis-majorGridLines](/api/wrappers/jsp/chart/categoryaxis-majorgridlines).
 
 #### Example
 
@@ -252,9 +248,11 @@ body of the chart.
         <kendo:chart-categoryAxis-majorGridLines></kendo:chart-categoryAxis-majorGridLines>
     </kendo:chart-categoryAxis>
  
-### [kendo:chart-categoryAxis-majorTicks](/api/wrappers/jsp/chart/categoryaxis-majorticks)
+### kendo:chart-categoryAxis-majorTicks
 
 The major ticks of the axis.
+
+More documentation is available at [kendo:chart-categoryAxis-majorTicks](/api/wrappers/jsp/chart/categoryaxis-majorticks).
 
 #### Example
 
@@ -262,10 +260,12 @@ The major ticks of the axis.
         <kendo:chart-categoryAxis-majorTicks></kendo:chart-categoryAxis-majorTicks>
     </kendo:chart-categoryAxis>
  
-### [kendo:chart-categoryAxis-minorGridLines](/api/wrappers/jsp/chart/categoryaxis-minorgridlines)
+### kendo:chart-categoryAxis-minorGridLines
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
 the body of the chart.
+
+More documentation is available at [kendo:chart-categoryAxis-minorGridLines](/api/wrappers/jsp/chart/categoryaxis-minorgridlines).
 
 #### Example
 
@@ -273,9 +273,11 @@ the body of the chart.
         <kendo:chart-categoryAxis-minorGridLines></kendo:chart-categoryAxis-minorGridLines>
     </kendo:chart-categoryAxis>
  
-### [kendo:chart-categoryAxis-minorTicks](/api/wrappers/jsp/chart/categoryaxis-minorticks)
+### kendo:chart-categoryAxis-minorTicks
 
 The minor ticks of the axis.
+
+More documentation is available at [kendo:chart-categoryAxis-minorTicks](/api/wrappers/jsp/chart/categoryaxis-minorticks).
 
 #### Example
 
@@ -283,9 +285,11 @@ The minor ticks of the axis.
         <kendo:chart-categoryAxis-minorTicks></kendo:chart-categoryAxis-minorTicks>
     </kendo:chart-categoryAxis>
  
-### [kendo:chart-categoryAxis-title](/api/wrappers/jsp/chart/categoryaxis-title)
+### kendo:chart-categoryAxis-title
 
 The title of the category axis.
+
+More documentation is available at [kendo:chart-categoryAxis-title](/api/wrappers/jsp/chart/categoryaxis-title).
 
 #### Example
 

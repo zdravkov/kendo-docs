@@ -80,9 +80,11 @@ The value of the gauge.
 
 ## Child JSP Tags
 
-### [kendo:linearGauge-pointer-border](/api/wrappers/jsp/lineargauge/pointer-border)
+### kendo:linearGauge-pointer-border
 
 The border of the pointer.
+
+More documentation is available at [kendo:linearGauge-pointer-border](/api/wrappers/jsp/lineargauge/pointer-border).
 
 #### Example
 
@@ -90,10 +92,12 @@ The border of the pointer.
         <kendo:linearGauge-pointer-border></kendo:linearGauge-pointer-border>
     </kendo:linearGauge-pointer>
  
-### [kendo:linearGauge-pointer-track](/api/wrappers/jsp/lineargauge/pointer-track)
+### kendo:linearGauge-pointer-track
 
 The element arround/under the pointer.
 (available only for 'barIndicator' shape)
+
+More documentation is available at [kendo:linearGauge-pointer-track](/api/wrappers/jsp/lineargauge/pointer-track).
 
 #### Example
 

@@ -203,9 +203,11 @@ Fires when navigate
 
 ## Child JSP Tags
 
-### [kendo:calendar-month](/api/wrappers/jsp/calendar/month)
+### kendo:calendar-month
 
 Templates for the cells rendered in the "month" view.
+
+More documentation is available at [kendo:calendar-month](/api/wrappers/jsp/calendar/month).
 
 #### Example
 

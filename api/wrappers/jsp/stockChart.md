@@ -25,9 +25,11 @@ It is used as a default
 
 ## Child JSP Tags
 
-### [kendo:stockChart-navigator](/api/wrappers/jsp/stockchart/navigator)
+### kendo:stockChart-navigator
 
 The data navigator configuration options.
+
+More documentation is available at [kendo:stockChart-navigator](/api/wrappers/jsp/stockchart/navigator).
 
 #### Example
 

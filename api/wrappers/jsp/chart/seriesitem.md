@@ -59,6 +59,16 @@ The series name visible in the legend.
 
 
 
+###  `Object`
+
+Available options for area series:
+
+#### Example
+    <kendo:chart ="">
+    </kendo:chart>
+
+
+
 ### aggregate `String`
 
 Aggregate function for date series.
@@ -213,7 +223,7 @@ The data field containing the bubble x value.
 
 ### yAxis `String`
 
-The name of the Y axis to use.
+The name of the Y axis to use. Further configuration is available via [kendo:chart-yAxis](#kendo-chart-yAxis). 
 
 #### Example
     <kendo:chart yAxis="yAxis">
@@ -407,9 +417,11 @@ A boolean value indicating whether to show the sector in the legend.
 
 ## Child JSP Tags
 
-### [kendo:chart-seriesItem-labels](/api/wrappers/jsp/chart/seriesitem-labels)
+### kendo:chart-seriesItem-labels
 
 Configures the series data labels.
+
+More documentation is available at [kendo:chart-seriesItem-labels](/api/wrappers/jsp/chart/seriesitem-labels).
 
 #### Example
 
@@ -417,9 +429,11 @@ Configures the series data labels.
         <kendo:chart-seriesItem-labels></kendo:chart-seriesItem-labels>
     </kendo:chart-seriesItem>
  
-### [kendo:chart-seriesItem-border](/api/wrappers/jsp/chart/seriesitem-border)
+### kendo:chart-seriesItem-border
 
 The border of the labels.
+
+More documentation is available at [kendo:chart-seriesItem-border](/api/wrappers/jsp/chart/seriesitem-border).
 
 #### Example
 
@@ -427,9 +441,11 @@ The border of the labels.
         <kendo:chart-seriesItem-border></kendo:chart-seriesItem-border>
     </kendo:chart-seriesItem>
  
-### [kendo:chart-seriesItem-line](/api/wrappers/jsp/chart/seriesitem-line)
+### kendo:chart-seriesItem-line
 
 The line of the area chart.
+
+More documentation is available at [kendo:chart-seriesItem-line](/api/wrappers/jsp/chart/seriesitem-line).
 
 #### Example
 
@@ -437,9 +453,11 @@ The line of the area chart.
         <kendo:chart-seriesItem-line></kendo:chart-seriesItem-line>
     </kendo:chart-seriesItem>
  
-### [kendo:chart-seriesItem-markers](/api/wrappers/jsp/chart/seriesitem-markers)
+### kendo:chart-seriesItem-markers
 
 Configures the area markers.
+
+More documentation is available at [kendo:chart-seriesItem-markers](/api/wrappers/jsp/chart/seriesitem-markers).
 
 #### Example
 
@@ -447,9 +465,11 @@ Configures the area markers.
         <kendo:chart-seriesItem-markers></kendo:chart-seriesItem-markers>
     </kendo:chart-seriesItem>
  
-### [kendo:chart-seriesItem-tooltip](/api/wrappers/jsp/chart/seriesitem-tooltip)
+### kendo:chart-seriesItem-tooltip
 
 The data point tooltip configuration options.
+
+More documentation is available at [kendo:chart-seriesItem-tooltip](/api/wrappers/jsp/chart/seriesitem-tooltip).
 
 #### Example
 
@@ -457,9 +477,11 @@ The data point tooltip configuration options.
         <kendo:chart-seriesItem-tooltip></kendo:chart-seriesItem-tooltip>
     </kendo:chart-seriesItem>
  
-### [kendo:chart-seriesItem-overlay](/api/wrappers/jsp/chart/seriesitem-overlay)
+### kendo:chart-seriesItem-overlay
 
 The effects overlay.
+
+More documentation is available at [kendo:chart-seriesItem-overlay](/api/wrappers/jsp/chart/seriesitem-overlay).
 
 #### Example
 
@@ -467,9 +489,11 @@ The effects overlay.
         <kendo:chart-seriesItem-overlay></kendo:chart-seriesItem-overlay>
     </kendo:chart-seriesItem>
  
-### [kendo:chart-seriesItem-negativeValues](/api/wrappers/jsp/chart/seriesitem-negativevalues)
+### kendo:chart-seriesItem-negativeValues
 
 The settings for negative values.
+
+More documentation is available at [kendo:chart-seriesItem-negativeValues](/api/wrappers/jsp/chart/seriesitem-negativevalues).
 
 #### Example
 
@@ -477,9 +501,11 @@ The settings for negative values.
         <kendo:chart-seriesItem-negativeValues></kendo:chart-seriesItem-negativeValues>
     </kendo:chart-seriesItem>
  
-### [kendo:chart-seriesItem-connectors](/api/wrappers/jsp/chart/seriesitem-connectors)
+### kendo:chart-seriesItem-connectors
 
 The label connectors options.
+
+More documentation is available at [kendo:chart-seriesItem-connectors](/api/wrappers/jsp/chart/seriesitem-connectors).
 
 #### Example
 

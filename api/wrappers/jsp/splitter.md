@@ -264,9 +264,11 @@ Triggered when a pane is resized.
 
 ## Child JSP Tags
 
-### [kendo:splitter-panes](/api/wrappers/jsp/splitter/panes)
+### kendo:splitter-panes
 
 An array of pane definitions.
+
+More documentation is available at [kendo:splitter-panes](/api/wrappers/jsp/splitter/panes).
 
 #### Example
 

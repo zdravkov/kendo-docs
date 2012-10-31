@@ -311,9 +311,11 @@ Triggered when an item of a PanelBar is selected.
 
 ## Child JSP Tags
 
-### [kendo:panelBar-animation](/api/wrappers/jsp/panelbar/animation)
+### kendo:panelBar-animation
 
 A collection of visual animations used when
+
+More documentation is available at [kendo:panelBar-animation](/api/wrappers/jsp/panelbar/animation).
 
 #### Example
 
@@ -321,9 +323,11 @@ A collection of visual animations used when
         <kendo:panelBar-animation></kendo:panelBar-animation>
     </kendo:panelBar>
  
-### [kendo:panelBar-items](/api/wrappers/jsp/panelbar/items)
+### kendo:panelBar-items
 
 Contains items of PanelBar
+
+More documentation is available at [kendo:panelBar-items](/api/wrappers/jsp/panelbar/items).
 
 #### Example
 

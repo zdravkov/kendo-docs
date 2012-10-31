@@ -16,9 +16,11 @@ A JSP tag representing Kendo Items.
 
 ## Child JSP Tags
 
-### [kendo:panelBar-item](/api/wrappers/jsp/panelbar/item)
+### kendo:panelBar-item
 
 Contains items of PanelBar
+
+More documentation is available at [kendo:panelBar-item](/api/wrappers/jsp/panelbar/item).
 
 #### Example
 

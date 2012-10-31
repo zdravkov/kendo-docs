@@ -16,9 +16,11 @@ A JSP tag representing Kendo Items.
 
 ## Child JSP Tags
 
-### [kendo:menu-item](/api/wrappers/jsp/menu/item)
+### kendo:menu-item
 
 Contains items of Menu
+
+More documentation is available at [kendo:menu-item](/api/wrappers/jsp/menu/item).
 
 #### Example
 

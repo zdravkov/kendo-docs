@@ -42,17 +42,6 @@ A value indicating if transition animations should be played.
 
 
 
-### yAxis `Object`
-
-The scatter charts Y-axis configuration options.
-See
-
-#### Example
-    <kendo:chart yAxis="yAxis">
-    </kendo:chart>
-
-
-
 ### axisLabelClick `String`
 
 Fires when an axis label is clicked.
@@ -208,7 +197,7 @@ Fires when chart series are hovered.
 
 
 ## Event Tags
-          
+           
 
 ### kendo:chart-axisLabelClick
 
@@ -298,9 +287,11 @@ Fires when chart series are hovered.
 
 ## Child JSP Tags
 
-### [kendo:chart-categoryAxis](/api/wrappers/jsp/chart/categoryaxis)
+### kendo:chart-categoryAxis
 
 The category axis configuration options.
+
+More documentation is available at [kendo:chart-categoryAxis](/api/wrappers/jsp/chart/categoryaxis).
 
 #### Example
 
@@ -308,9 +299,11 @@ The category axis configuration options.
         <kendo:chart-categoryAxis></kendo:chart-categoryAxis>
     </kendo:chart>
  
-### [kendo:chart-title](/api/wrappers/jsp/chart/title)
+### kendo:chart-title
 
 The title of the category axis.
+
+More documentation is available at [kendo:chart-title](/api/wrappers/jsp/chart/title).
 
 #### Example
 
@@ -318,10 +311,12 @@ The title of the category axis.
         <kendo:chart-title></kendo:chart-title>
     </kendo:chart>
  
-### [kendo:chart-chartArea](/api/wrappers/jsp/chart/chartarea)
+### kendo:chart-chartArea
 
 The chart area configuration options.
 This is the entire visible area of the chart.
+
+More documentation is available at [kendo:chart-chartArea](/api/wrappers/jsp/chart/chartarea).
 
 #### Example
 
@@ -329,9 +324,11 @@ This is the entire visible area of the chart.
         <kendo:chart-chartArea></kendo:chart-chartArea>
     </kendo:chart>
  
-### [kendo:chart-legend](/api/wrappers/jsp/chart/legend)
+### kendo:chart-legend
 
 The chart legend configuration options.
+
+More documentation is available at [kendo:chart-legend](/api/wrappers/jsp/chart/legend).
 
 #### Example
 
@@ -339,9 +336,11 @@ The chart legend configuration options.
         <kendo:chart-legend></kendo:chart-legend>
     </kendo:chart>
  
-### [kendo:chart-plotArea](/api/wrappers/jsp/chart/plotarea)
+### kendo:chart-plotArea
 
 The plot area configuration options. This is the area containing the plotted series.
+
+More documentation is available at [kendo:chart-plotArea](/api/wrappers/jsp/chart/plotarea).
 
 #### Example
 
@@ -349,9 +348,11 @@ The plot area configuration options. This is the area containing the plotted ser
         <kendo:chart-plotArea></kendo:chart-plotArea>
     </kendo:chart>
  
-### [kendo:chart-series](/api/wrappers/jsp/chart/series)
+### kendo:chart-series
 
 Array of series definitions.
+
+More documentation is available at [kendo:chart-series](/api/wrappers/jsp/chart/series).
 
 #### Example
 
@@ -359,9 +360,11 @@ Array of series definitions.
         <kendo:chart-series></kendo:chart-series>
     </kendo:chart>
  
-### [kendo:chart-tooltip](/api/wrappers/jsp/chart/tooltip)
+### kendo:chart-tooltip
 
 The data point tooltip configuration options.
+
+More documentation is available at [kendo:chart-tooltip](/api/wrappers/jsp/chart/tooltip).
 
 #### Example
 
@@ -369,9 +372,11 @@ The data point tooltip configuration options.
         <kendo:chart-tooltip></kendo:chart-tooltip>
     </kendo:chart>
  
-### [kendo:chart-seriesDefaults](/api/wrappers/jsp/chart/seriesdefaults)
+### kendo:chart-seriesDefaults
 
 Default values for each series.
+
+More documentation is available at [kendo:chart-seriesDefaults](/api/wrappers/jsp/chart/seriesdefaults).
 
 #### Example
 
@@ -379,9 +384,11 @@ Default values for each series.
         <kendo:chart-seriesDefaults></kendo:chart-seriesDefaults>
     </kendo:chart>
  
-### [kendo:chart-valueAxis](/api/wrappers/jsp/chart/valueaxis)
+### kendo:chart-valueAxis
 
 The value axis configuration options.
+
+More documentation is available at [kendo:chart-valueAxis](/api/wrappers/jsp/chart/valueaxis).
 
 #### Example
 
@@ -389,14 +396,28 @@ The value axis configuration options.
         <kendo:chart-valueAxis></kendo:chart-valueAxis>
     </kendo:chart>
  
-### [kendo:chart-xAxis](/api/wrappers/jsp/chart/xaxis)
+### kendo:chart-xAxis
 
 Scatter charts X-axis configuration options.
 Includes
+
+More documentation is available at [kendo:chart-xAxis](/api/wrappers/jsp/chart/xaxis).
 
 #### Example
 
     <kendo:chart>
         <kendo:chart-xAxis></kendo:chart-xAxis>
+    </kendo:chart>
+ 
+### kendo:chart-yAxis
+
+The axis type.
+
+More documentation is available at [kendo:chart-yAxis](/api/wrappers/jsp/chart/yaxis).
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-yAxis></kendo:chart-yAxis>
     </kendo:chart>
       

@@ -581,9 +581,11 @@ Triggered when a Window has been resized by a user.
 
 ## Child JSP Tags
 
-### [kendo:window-animation](/api/wrappers/jsp/window/animation)
+### kendo:window-animation
 
 A collection of {Animation} objects, used to change default animations. A value of
+
+More documentation is available at [kendo:window-animation](/api/wrappers/jsp/window/animation).
 
 #### Example
 

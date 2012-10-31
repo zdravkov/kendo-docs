@@ -36,3 +36,13 @@ Specifies the class name for the sprite image displayed by the item
     </kendo:panelBar>
 
 
+
+### expanded `boolean`
+
+Specifies whether the item is initially expanded
+
+#### Example
+    <kendo:panelBar expanded="expanded">
+    </kendo:panelBar>
+
+

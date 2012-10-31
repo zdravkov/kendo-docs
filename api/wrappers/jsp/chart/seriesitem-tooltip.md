@@ -90,9 +90,11 @@ The padding of the tooltip.
 
 ## Child JSP Tags
 
-### [kendo:chart-seriesItem-tooltip-border](/api/wrappers/jsp/chart/seriesitem-tooltip-border)
+### kendo:chart-seriesItem-tooltip-border
 
 The border configuration options.
+
+More documentation is available at [kendo:chart-seriesItem-tooltip-border](/api/wrappers/jsp/chart/seriesitem-tooltip-border).
 
 #### Example
 

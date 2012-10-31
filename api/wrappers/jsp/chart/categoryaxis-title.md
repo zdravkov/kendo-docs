@@ -100,9 +100,11 @@ The visibility of the title.
 
 ## Child JSP Tags
 
-### [kendo:chart-categoryAxis-title-border](/api/wrappers/jsp/chart/categoryaxis-title-border)
+### kendo:chart-categoryAxis-title-border
 
 The border of the title.
+
+More documentation is available at [kendo:chart-categoryAxis-title-border](/api/wrappers/jsp/chart/categoryaxis-title-border).
 
 #### Example
 

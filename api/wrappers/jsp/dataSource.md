@@ -404,9 +404,11 @@ Fires when a data request is received. Raised after a Create, Read, Update or De
 
 ## Child JSP Tags
 
-### [kendo:dataSource-aggregate](/api/wrappers/jsp/datasource/aggregate)
+### kendo:dataSource-aggregate
 
 Sets fields on which initial aggregates should be calculated
+
+More documentation is available at [kendo:dataSource-aggregate](/api/wrappers/jsp/datasource/aggregate).
 
 #### Example
 
@@ -414,9 +416,11 @@ Sets fields on which initial aggregates should be calculated
         <kendo:dataSource-aggregate></kendo:dataSource-aggregate>
     </kendo:dataSource>
  
-### [kendo:dataSource-filter](/api/wrappers/jsp/datasource/filter)
+### kendo:dataSource-filter
 
 Sets the initial filter.
+
+More documentation is available at [kendo:dataSource-filter](/api/wrappers/jsp/datasource/filter).
 
 #### Example
 
@@ -424,9 +428,11 @@ Sets the initial filter.
         <kendo:dataSource-filter></kendo:dataSource-filter>
     </kendo:dataSource>
  
-### [kendo:dataSource-group](/api/wrappers/jsp/datasource/group)
+### kendo:dataSource-group
 
 Sets initial grouping
+
+More documentation is available at [kendo:dataSource-group](/api/wrappers/jsp/datasource/group).
 
 #### Example
 
@@ -434,9 +440,11 @@ Sets initial grouping
         <kendo:dataSource-group></kendo:dataSource-group>
     </kendo:dataSource>
  
-### [kendo:dataSource-schema](/api/wrappers/jsp/datasource/schema)
+### kendo:dataSource-schema
 
 Set the object responsible for describing the raw data format.
+
+More documentation is available at [kendo:dataSource-schema](/api/wrappers/jsp/datasource/schema).
 
 #### Example
 
@@ -444,9 +452,11 @@ Set the object responsible for describing the raw data format.
         <kendo:dataSource-schema></kendo:dataSource-schema>
     </kendo:dataSource>
  
-### [kendo:dataSource-sort](/api/wrappers/jsp/datasource/sort)
+### kendo:dataSource-sort
 
 Sets initial sort order
+
+More documentation is available at [kendo:dataSource-sort](/api/wrappers/jsp/datasource/sort).
 
 #### Example
 
@@ -454,9 +464,11 @@ Sets initial sort order
         <kendo:dataSource-sort></kendo:dataSource-sort>
     </kendo:dataSource>
  
-### [kendo:dataSource-transport](/api/wrappers/jsp/datasource/transport)
+### kendo:dataSource-transport
 
 Specifies the settings for loading and saving data. This can be a remote or local/in-memory data.
+
+More documentation is available at [kendo:dataSource-transport](/api/wrappers/jsp/datasource/transport).
 
 #### Example
 

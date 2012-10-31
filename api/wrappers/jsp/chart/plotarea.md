@@ -49,9 +49,11 @@ The margin of the plot area.
 
 ## Child JSP Tags
 
-### [kendo:chart-plotArea-border](/api/wrappers/jsp/chart/plotarea-border)
+### kendo:chart-plotArea-border
 
 The border of the plot area.
+
+More documentation is available at [kendo:chart-plotArea-border](/api/wrappers/jsp/chart/plotarea-border).
 
 #### Example
 
