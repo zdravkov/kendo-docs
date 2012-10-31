@@ -17,13 +17,11 @@ Default options for all chart axes.
 
 The category axis configuration options.
 
-### categoryAxis.axisCrossingValue `Number`*(default: 0)*
+### categoryAxis.axisCrossingValue `Object | Date | Array`
 
-Category index at which the first value axis crosses this axis.
+Category index at which the first value axis crosses this axis. (Only for object)
 
-### categoryAxis.axisCrossingValues `Array`*(default: [0])*
-
-Category indicies at which the value axes cross the category axis.
+Category indicies at which the value axes cross the category axis. (Only for array)
 
 **Note:&nbsp;** Specify an index greater than or equal to the number
 of categories to denote the far end of the axis.
@@ -33,9 +31,9 @@ of categories to denote the far end of the axis.
     $("#chart").kendoChart({
          categoryAxis: {
              categories: ["A", "B"],
-             axisCrossingValues: [0, 100]
+             axisCrossingValue: [0, 100]
          },
-         valueAxis: [{ }, { name: "secondary" }],
+         valueAxis: [{ }, { name: "secondary" }]
          ...
     })
     </p>
@@ -571,14 +569,7 @@ Discrete category axis.
 
 Specialized axis for displaying chronological data.
 
-### categoryAxis.type="date"
-
-Properties specific to the date-time value axis.
-
-Note: The Chart will automatically switch to a date category axis if the categories
-are of type Date. Specify type explicitly when such behavior is undesired.
-
-### categoryAxis.type="date".autoBaseUnitSteps `Object`
+### categoryAxis.autoBaseUnitSteps `Object`
 
 Specifies the discrete **baseUnitStep** values when
 either **baseUnit** is set to "fit" or **baseUnitStep** is set to "auto".
@@ -610,7 +601,7 @@ Each setting can be overriden individually.
         ...
     });
 
-### categoryAxis.type="date".baseUnit `String`
+### categoryAxis.baseUnit `String`
 
 The base time interval for the axis.
 The default baseUnit is determined automatically from the minimum difference
@@ -630,25 +621,24 @@ that the total number of categories does not exceed **maxDateGroups**.
 Series data is aggregated for the specified base unit by using the
 **series.aggregate** function.
 
-### categoryAxis.type="date".baseUnitStep `Object`*(default: 1)*
+### categoryAxis.baseUnitStep `Object`*(default: 1)*
 
 Sets the step (interval) between categories in base units.
 Specifiying "auto" will set the step to such value that the total number of categories does not exceed **maxDateGroups**.
 
 This option is ignored if **baseUnit** is set to "fit".
 
-### categoryAxis.type="date".labels `Object`
+### categoryAxis.labels `Object`
 
 Label settings specific to the date axis.
 
-### categoryAxis.type="date".labels.culture `String`*(default: global culture)*
+### categoryAxis.labels.culture `String`*(default: global culture)*
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
 
-### categoryAxis.type="date".labels.dateFormats `Object`
+### categoryAxis.labels.dateFormats `Object`
 
 Date format strings
-
 
 #### *"hours"*
 
@@ -673,21 +663,21 @@ Date format strings
 The Chart will choose the appropriate format for the current `baseUnit`.
 Setting the labels **format** option will override these defaults.
 
-### categoryAxis.type="date".max `Date`
+### categoryAxis.max `Object`
 
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
 This is often used in combination with the **min** and **roundToBaseUnit** configuration options to
 set up a fixed date range.
 
-### categoryAxis.type="date".min `Date`
+### categoryAxis.min `Object`
 
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
 This is often used in combination with the **max** and **roundToBaseUnit** configuration options to
 set up a fixed date range.
 
-### categoryAxis.type="date".roundToBaseUnit `Boolean`*(default: true)*
+### categoryAxis.roundToBaseUnit `Boolean`*(default: true)*
 
 By default, the first and last dates will be rounded off to the nearest base unit.
 Specifying **false** for this option will disable this behavior.
@@ -696,7 +686,7 @@ This option is most useful in combination with explicit **min** and **max** date
 
 It will be ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
 
-### categoryAxis.type="date".weekStartDay `Number`*(default: kendo.days.Sunday)*
+### categoryAxis.weekStartDay `Number`*(default: kendo.days.Sunday)*
 
 Specifies the week start day when **baseUnit** is set to "weeks".
 Use the *kendo.days* constants to specify the day by name.
@@ -710,7 +700,7 @@ Use the *kendo.days* constants to specify the day by name.
 * kendo.days.Saturday (6)
 
 
-### categoryAxis.type="date".maxDateGroups `Number`*(default: 10)*
+### categoryAxis.maxDateGroups `Number`*(default: 10)*
 
 Specifies the maximum number of groups (categories) to produce when
 either **baseUnit** is set to "fit" or **baseUnitStep** is set to "auto".
@@ -1205,7 +1195,7 @@ Template variables:
 
 The series name visible in the legend.
 
-### series.type="area"
+### series.type="area" `Object`
 
 Available options for area series:
 
@@ -1579,7 +1569,7 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
-### series.type="bar"
+### series.type="bar" `Object`
 
 Available options for bar series:
 
@@ -1958,7 +1948,7 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
-### series.type="bubble"
+### series.type="bubble" `Object`
 
 Available options for bubble series:
 
@@ -2309,7 +2299,7 @@ The data field containing the bubble y value.
 Column series accepts the same parameters as bar series.
 The difference is that column series are rendered on a horizontal category axis.
 
-### series.type="donut"
+### series.type="donut" `Object`
 
 Available options for donut series:
 
@@ -2721,7 +2711,7 @@ Template variables:
 
  A value indicating if the tooltip should be displayed.
 
-### series.type="line"
+### series.type="line" `Object`
 
 Available options for line series:
 
@@ -3120,7 +3110,7 @@ Template variables:
 
  The line width of the line chart.
 
-### series.type="pie"
+### series.type="pie" `Object`
 
 Available options for pie series:
 
@@ -3532,7 +3522,7 @@ A boolean value indicating whether to show the sector in the legend.
 
 A boolean value indicating whether to show the sector in the legend.
 
-### series.type="scatter"
+### series.type="scatter" `Object`
 
 Available options for scatter series:
 
@@ -3846,17 +3836,17 @@ Template variables:
 
 ### series.type="scatter".tooltip.visible `Boolean`*(default: false)*
 
- A value indicating if the tooltip should be displayed.
+A value indicating if the tooltip should be displayed.
 
 ### series.type="scatter".xAxis `String`*(default: primary)*
 
- The name of the X axis to use.
+The name of the X axis to use.
 
 ### series.type="scatter".yAxis `String`*(default: primary)*
 
- The name of the Y axis to use.
+The name of the Y axis to use.
 
-### series.type="scatterLine"
+### series.type="scatterLine" `Object`
 
 Available options for scatter line series:
 
@@ -3866,8 +3856,7 @@ The series base color.
 
 ### series.type="scatterLine".dashType `String`*(default: "solid")*
 
- The dash type of the line.
-
+The dash type of the line.
 
 #### *"solid"*
 
@@ -3901,7 +3890,6 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 Array of data items (optional).
 The scatter chart can be bound to an array of arrays with two numbers (X and Y).
-
 
 #### Example
 
@@ -4244,7 +4232,7 @@ The category axis is rendered vertically instead of horizontally.
 Vertical line series accepts the same parameters as line series.
 The line and the category axis are now vertical instead of horizontal.
 
-### series.type="candlestick"
+### series.type="candlestick" `Object`
 
 Available options for candlestick series.
 
@@ -4504,7 +4492,7 @@ The line opacity of the candlestick chart.
 
 The line width of the candlestick chart.
 
-### series.type="ohlc"
+### series.type="ohlc" `Object`
 
 Available options for ohlc series.
 
