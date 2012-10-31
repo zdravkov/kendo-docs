@@ -14,7 +14,7 @@ Kendo MVVM provides the ability to create custom bindings.
 
 A custom binding is registered by extending the `kendo.data.Binder` object.
 
-#### Example: one-way binding (only the HTML element will be updated)
+#### Example: one-way binding (the HTML element will be updated when the view-model changes)
 
     <script>
         kendo.data.binders.slide = kendo.data.Binder.extend({
@@ -115,7 +115,7 @@ The **set** method accepts one parameter and sets it as a new value of the bound
 
     this.bindings["slide"].set(false) //sets the slideValue to false
 
-## Declaring a custom binding in the View
+## Using the custom binding
 
 Custom bindings are set via `data-bind` attribute.
 
