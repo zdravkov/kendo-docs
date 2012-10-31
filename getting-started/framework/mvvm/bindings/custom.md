@@ -26,9 +26,22 @@ A `custom` binding is registered by extending the `kendo.data.Binder` object.
         }
     });
 
+### init
+
+This is the binding constructor. If this function is overriden the base Binder constructor should be called explicitly.
+
+    init: function(element, bindings, options) {
+        kendo.data.Binder.fn.init.call(this, element, bindings, options); //call the base constructor
+        
+        var that = this;
+        $(that.element).on("change", function() { //hook up to the change event of the element
+            that.change(); //call the change function
+        });
+    }
+
 ### refresh
 
-The `refresh` event handler is responsible for updating the HTML element. It will be executed each time when the value of the bound MVVM field chandes. The bound DOM element and attached MVVM bindings could be retrieved through the context of the function.
+The `refresh` handler is responsible for updating the HTML element. It will be executed each time when the value of the bound MVVM field chandes. The bound DOM element and attached MVVM bindings could be retrieved through the context of the function.
 
     refresh: function() {
         this.bindings //contains all bindings for the current element
@@ -48,7 +61,7 @@ The `refresh` event handler is responsible for updating the HTML element. It wil
 
 ### change
 
-The `change` event handler is responsible for updating the View-Model. It listens for the change event of the bound HTML input element. The View-Model is updated through the `set(value)` method of the binding.
+The `change` handler is responsible for updating the View-Model. It listens for the change event of the bound HTML input element. The View-Model is updated through the `set(value)` method of the binding.
 
     change: function() {
         this.bindings //contains all bindings for the current element
@@ -58,6 +71,16 @@ The `change` event handler is responsible for updating the View-Model. It listen
 #### Example: two-way binding
 
     kendo.data.binders.numericValue = kendo.data.Binder.extend({
+        init: function(element, bindings, options) {
+            //call the base constructor
+            kendo.data.Binder.fn.init.call(this, element, bindings, options);
+
+            var that = this;
+            //listen for the change event of the element
+            $(that.element).on("change", function() {
+                that.change(); //call the change function
+            });
+        },
         refresh: function() {
             var that = this,
                 value = that.bindings["numericValue"].get(); //get the value from the View-Model
@@ -82,15 +105,15 @@ Bindings have two important methods - `get()` and `set(value)`.
 
 The **get** method will return the value from the View-Model.
 
-    this.bindings.slide.get() //outputs true
+    this.bindings["slide"].get() //outputs true
 
 The **set** method accepts one parameter and sets it as a new value of the bound field from the View-Model.
 
-    this.bindings.slide.set(false) //sets the slideValue to false
+    this.bindings["slide"].set(false) //sets the slideValue to false
 
 ## Declaring a custom binding in the View
 
-Custom bindings are set by `data-bind` attribute.
+Custom bindings are set via `data-bind` attribute.
 
     <div id="target" data-bind="slide: slideValue">
         One Big Orange Square.
