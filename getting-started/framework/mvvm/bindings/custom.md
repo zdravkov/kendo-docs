@@ -26,22 +26,57 @@ A `custom` binding is registered by extending the `kendo.data.Binder` object.
         }
     });
 
-### refresh function
+### refresh
 
-The `refresh` function will be called each time when the value of the bound MVVM field chandes. The logic that have to be executed upon a change of the bound value should be places in this function. The bound DOM element and attached MVVM bindings could be retrieved through the context of the `refresh` function.
+The `refresh` event handler is responsible for updating the HTML element. It will be executed each time when the value of the bound MVVM field chandes. The bound DOM element and attached MVVM bindings could be retrieved through the context of the function.
 
     refresh: function() {
         this.bindings //contains all bindings for the current element
         this.element //reference the to the DOM element
     }
 
-### change function
+#### Example: HTML element update
+    refresh: function() {
+        var value = this.bindings["slide"].get(); //get the value from the View-Model
+    
+        if (value) {
+            $(this.element).slideDown();
+        } else {
+            $(this.element).slideUp();
+        }
+    }
 
-Change function is responsible for updating the View-Model.
+### change
 
-**Important: the change function will be executed only for input elements**
+The `change` event handler is responsible for updating the View-Model. It listens for the change event of the bound HTML input element. The View-Model is updated through the `set(value)` method of the binding.
 
-### bindings-methods
+    change: function() {
+        this.bindings //contains all bindings for the current element
+        this.element //reference the to the DOM element
+    }
+
+#### Example: two-way binding
+
+    kendo.data.binders.numericValue = kendo.data.Binder.extend({
+        refresh: function() {
+            var that = this,
+                value = that.bindings["numericValue"].get(); //get the value from the View-Model
+            $(that.element).val(value); //update the HTML input element
+            
+            $(that.element).one("change", function() {
+                that.change(); //calls the change function
+            });
+        },
+        change: function() {
+            var value = this.element.value;
+            //in this example the View-Model will be updated only if the value of the input is a number
+            if (!isNaN(value)) {
+                this.bindings["numericValue"].set(value); //update the View-Model
+            }
+        }
+    });
+
+### bindings - methods
 
 Bindings have two important methods - `get()` and `set(value)`.
 
