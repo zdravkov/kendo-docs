@@ -1146,6 +1146,28 @@ Fires when the grid has received data from the data source.
          // handle event
      });
 
+### dataBinding
+
+Fires when the grid is about to be rendered.
+
+#### Example
+
+     $("#grid").kendoGrid({
+         dataBinding: function(e) {
+             // handle event
+         }
+     });
+
+#### To set after initialization
+
+     // get a reference to the grid
+     var grid = $("#grid").data("kendoGrid");
+     // bind to the dataBound event
+     grid.bind("dataBound", function(e) {
+         // handle event
+     });
+
+
 ### detailCollapse
 
 Fires when the grid detail row is collapsed.
