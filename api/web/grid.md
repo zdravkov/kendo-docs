@@ -426,6 +426,14 @@ Indicates whether item should be switched to edit mode on click.
 
  Indicates whether filtering is enabled/disabled.
 
+### reorderable `Boolean`*(default:false)*
+
+ Indicates whether column reordering is enabled/disable.
+
+### resizable `Boolean`*(default:false)*
+
+ Indicates whether column resizing is enabled/disable.
+
 ### groupable `Boolean | Object`*(default: false)*
 
  Indicates whether grouping is enabled/disabled.
