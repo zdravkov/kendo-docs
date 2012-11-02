@@ -20,7 +20,7 @@ The preferred method of getting KendoUI is to browse to [kendoui.com][1] and dow
 Depending on whether you are using the Trial version, or have purchased the full Commercial version,
 you will have a .zip file that follows one of these directory structures:
 
-!(images/kendo-commecrial-zip-layout.png)
+![kendo-commecrial-zip-layout](images/kendo-commecrial-zip-layout.png)
 
 The **\js** and **\styles** folders in the root of the .zip file contain the "minified"
 versions of the KendoUI .js and .css files.
@@ -40,7 +40,7 @@ information and the CDN URLs, please see: **[Getting Started: Javascript Depende
 
 Kendo UI Web is also avaiable using the NuGet package manager in Visual Studio. Simply search for 'kendo'.
 
-!(images/kendo-nuget.png)
+![kendo-nuget](images/kendo-nuget.png)
 
 ### More Information
 
@@ -154,10 +154,10 @@ We need to make sure that Kendo’s JavaScript files come after jQuery. For stylin
         @RenderSection("scripts", required: false)
     </body>
 
-Typical practice is to include as much JavaScript at the bottom of the <body> element as possible.
-In the Music Store project, we are actually including jQuery in the <head>. This will be discussed
+Typical practice is to include as much JavaScript at the bottom of the **<body>** element as possible.
+In the Music Store project, we are actually including jQuery in the **<head>**. This will be discussed
 later in the tutorial, but it is because we later use some of the [Kendo UI ASP.NET MVC Helpers][4]
-which inset <script> tags into the <body> of the page, and require that jQuery already be defined.
+which inserts **<script>** tags into the **<body>** of the page, and require that jQuery already be defined.
 
     [1]: http://www.kendoui.com/download
 

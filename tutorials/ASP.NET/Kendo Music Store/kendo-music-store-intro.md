@@ -27,7 +27,7 @@ It is split into two major applications.
 
 The "Web" application demonstrates Kendo UI Web and is intended for desktop browsers.
 
-!(images/kendo-music-store-intro-web-screenshot.png)
+![kendo-music-store-intro-web-screenshot](images/kendo-music-store-intro-web-screenshot.png)
 
 The "Mobile" application demonstrates Kendo UI Mobile and is intended for phones and tablets.
 

@@ -7,7 +7,7 @@ publish: true
 
 # Album Search - Kendo Music Store
 
-!(images/kendo-search-overview.png)
+![kendo-search-overview](images/kendo-search-overview.png)
 
 The Music Store application provides an entry box for searching the store by album title.
 To implement this, a [Kendo AutoComplete Widget][1] was used. The desire was to have the
@@ -17,7 +17,7 @@ title, and artists name, and be clickable to get details about the album.
 
 ## Add the input box
 
-We start with a normal <input> element:
+We start with a normal **<input>** element:
 
     <input id="main-search"/>
 
