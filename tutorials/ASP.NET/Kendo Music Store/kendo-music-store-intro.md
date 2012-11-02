@@ -1,5 +1,5 @@
 ---
-title: Introduction - Kendo Music Store
+title: Introduction
 slug: kendo-music-store-intro
 tags: Tutorial
 publish: true
@@ -11,13 +11,13 @@ In this tutorial, we will review portions of the **Kendo Music Store** sample pr
 focusing on how Kendo UI was used, and the ways in which it interacts with ASP.NET MVC
 and WebAPI.
 
-This sample project was based on Microsoft's **[MVC Music Store][1]**, so much of the
+This sample project was based on Microsoft's **[MVC Music Store](http://mvcmusicstore.codeplex.com/)**, so much of the
 server-side processing and the data structure are reused in this project. The UI of the
 music store was completely redesigned with Kendo UI.
 
 ## Get the Source Code
 
-Start by getting the source code for the [Kendo Music Store from GitHub][2].
+Start by getting the source code for the [Kendo Music Store from GitHub](https://www.github.com/telerik/kendo-music-store).
 The project is for use with Microsoft VisualStudio 2012, and requires MVC 4 and NuGet.
 
 ## Explore the Tutorial
@@ -30,7 +30,3 @@ The "Web" application demonstrates Kendo UI Web and is intended for desktop brow
 ![kendo-music-store-intro-web-screenshot](images/kendo-music-store-intro-web-screenshot.png)
 
 The "Mobile" application demonstrates Kendo UI Mobile and is intended for phones and tablets.
-
-   [1]: http://mvcmusicstore.codeplex.com/
-
-   [2]: https://www.github.com/telerik/kendo-music-store

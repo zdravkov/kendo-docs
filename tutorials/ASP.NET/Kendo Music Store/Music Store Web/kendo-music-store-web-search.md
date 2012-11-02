@@ -1,5 +1,5 @@
 ---
-title: Project Setup - Kendo Music Store
+title: Creating the Album Search Box
 slug: kendo-music-store-web-search
 tags: Tutorial
 publish: true
@@ -10,14 +10,14 @@ publish: true
 ![kendo-search-overview](images/kendo-search-overview.png)
 
 The Music Store application provides an entry box for searching the store by album title.
-To implement this, a [Kendo AutoComplete Widget][1] was used. The desire was to have the
+To implement this, a [Kendo AutoComplete Widget](http://demos.kendoui.com/web/autocomplete/index.html) was used. The desire was to have the
 autocomplete box query the server for albums that match the user's entered text, and have
-the filtering performed server-side, using a [remote DataSource][2]. The results would then be listed, showing the album art,
+the filtering performed server-side, using a [remote DataSource](http://demos.kendoui.com/web/datasource/remote-data.html). The results would then be listed, showing the album art,
 title, and artists name, and be clickable to get details about the album.
 
 ## Add the input box
 
-We start with a normal **<input>** element:
+We start with a normal **&lt;input&gt;** element:
 
     <input id="main-search"/>
 
@@ -69,15 +69,15 @@ Next we turn the input element into an AutoComplete widget with JavaScript:
 
 Lets look closer at what each portion of this JavaScript is doing...
 
-**filter: 'contains'** – Specifies that autocomplete results just need to contain the entered text, anywhere. The default is 'starts with'.
+**filter: 'contains'** - Specifies that autocomplete results just need to contain the entered text, anywhere. The default is 'starts with'.
 
-**minLength: 3** – Indicates that the autocomplete dropdown will not display until the user has entered at least 3 characters.
+**minLength: 3** - Indicates that the autocomplete dropdown will not display until the user has entered at least 3 characters.
 
-**dataTextField: 'Title'** – The name of the field in the data that is searched to find autocomplete results. In this example, we are showing autocomplete results for albums whose titles contain the text entered by the user.
+**dataTextField: 'Title'** - The name of the field in the data that is searched to find autocomplete results. In this example, we are showing autocomplete results for albums whose titles contain the text entered by the user.
 
-**placeholder: "Search music..."** – This is the text that is displayed in the text box as a placeholder, until the user clicks into the input box.
+**placeholder: "Search music..."** - This is the text that is displayed in the text box as a placeholder, until the user clicks into the input box.
 
-**dataSource: {}** – Here we configure the source for our autocomplete data. We have specified the URL to our WebAPI for Albums as the source. There is a lot going on in this data source, but most of it is enabling server-side filtering using OData.
+**dataSource: {}** - Here we configure the source for our autocomplete data. We have specified the URL to our WebAPI for Albums as the source. There is a lot going on in this data source, but most of it is enabling server-side filtering using OData.
 
 ## Customizing the Dropdown Items
 
@@ -127,7 +127,7 @@ The HTML for your template then goes inside the <script> tags. For our auto-comp
 </script>
 
 You can see here that we are using the **${...}** notation to indicate fields that need to be pulled from the JS object that is being bound to the template.
-We also could have used the **#= #** notation, for example **<span>#=data.Title#</span>** would have also worked.
+We also could have used the **#= #** notation, for example **&lt;span>#=data.Title#</span&gt;** would have also worked.
 
 We are also taking advantage of ASP.NET MVC's ability to render partial pages here, and including out templates as partial pages.
 In the **_Layout.cshtml** file, this template is included with the line:
@@ -135,7 +135,7 @@ In the **_Layout.cshtml** file, this template is included with the line:
     @Html.Partial("_SearchResultTemplatePartial")
 
 If we were not using ASP.NET MVC, we could have written some additional code to load templates from external files.
-For more information on remote template loading, see [How To: Load Templates from External Files][3].
+For more information on remote template loading, see [How To: Load Templates from External Files](http://docs.kendoui.com/howto/load-templates-external-files).
 
 Now that the template is included in the body of the page, the application code is using a jQuery selector
 to fetch this <script> element by its id, and get the contents.
@@ -195,8 +195,9 @@ to do this is:
 
 There are some compatibility issues that are being worked around in this code, because at the time of
 creating this project, WebAPI OData did not support some of the OData parameters that Kendo uses by default.
-This process is explained in much more detail in a separate Kendo Blog post: [Using Kendo UI With MVC4, WebAPI, OData And EF][4].
-For more information on each field set on the DataSource, also see the [DataSource documentation][5].
+This process is explained in much more detail in a separate Kendo Blog post:
+[Using Kendo UI With MVC4, WebAPI, OData And EF](http://www.kendoui.com/blogs/teamblog/posts/12-10-25/using_kendo_ui_with_mvc4_webapi_odata_and_ef.aspx).
+For more information on each field set on the DataSource, also see the [DataSource documentation](http://docs.kendoui.com/api/framework/datasource).
 
 ## Handling the selection of a search result
 
@@ -237,13 +238,3 @@ within the <li>, and jQuery's **.data()** method to get the value of the **data-
 
 Once we have the album ID, we can show our album details by calling **store.viewAlbumDetails(albumId);**, which
 will be discussed in more detail later in this tutorial.
-
-    [1]: http://demos.kendoui.com/web/autocomplete/index.html
-
-    [2]: http://demos.kendoui.com/web/datasource/remote-data.html
-
-	[3]: http://docs.kendoui.com/howto/load-templates-external-files
-	
-	[4]: http://www.kendoui.com/blogs/teamblog/posts/12-10-25/using_kendo_ui_with_mvc4_webapi_odata_and_ef.aspx
-	
-	[5]: http://docs.kendoui.com/api/framework/datasource
