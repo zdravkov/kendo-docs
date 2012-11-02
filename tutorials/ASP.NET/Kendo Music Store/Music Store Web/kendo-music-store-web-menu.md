@@ -40,7 +40,7 @@ pattern later on, but for our first control, let's keep it simple.)
 ## Add the Genres pull-down menu
 
 Next we can move the Genres list into a pull-down menu. Any **&lt;li&gt;** elements that in turn contain another
-list **&lt;ul&gt;** element are treated as a pull-down item. Let’s start with an empty pull-down menu item for our Genres:
+list **&lt;ul&gt;** element are treated as a pull-down item. Let's start with an empty pull-down menu item for our Genres:
 
     <li>Genres
         <ul>

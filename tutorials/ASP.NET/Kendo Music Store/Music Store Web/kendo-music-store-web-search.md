@@ -81,13 +81,13 @@ Lets look closer at what each portion of this JavaScript is doing...
 
 ## Customizing the Dropdown Items
 
-Each autocomplete item in the dropdown will be a <li> element, and within that element, a template is used to render the result.
-If not specified, Kendo will put the text of the field specified by the **dataTextField** property into the <li>.
+Each autocomplete item in the dropdown will be a &lt;li&gt; element, and within that element, a template is used to render the result.
+If not specified, Kendo will put the text of the field specified by the **dataTextField** property into the &lt;li&gt;.
 We can use templates to make much nicer looking results. In this case, we are including the album cover art, title, and artist name.
 
     template: kendo.template($("#search-result-template").html())
 
-The template property *could* be set to a string, for example **template: "foo"**, and each result would render <li>foo</li>.
+The template property *could* be set to a string, for example **template: "foo"**, and each result would render &lt;li&gt;foo&lt;/li&gt;.
 To make more intricate templates, you can use '#...#' or '${...}' to put in javascript and calculated values.
 
 For example, a better template than "foo" would be:
@@ -113,21 +113,21 @@ Including a template in the body of your HTML is done by placing the tag:
 
     <script type="text/x-kendo-template" id="some-template-name">...</script>
 
-inside the <body> of your document. The **type** is always **"text/x-kendo-template"**, and the **id** is the unique name of your template.
-The HTML for your template then goes inside the <script> tags. For our auto-complete search box, out template is:
+inside the &lt;body&gt; of your document. The **type** is always **"text/x-kendo-template"**, and the **id** is the unique name of your template.
+The HTML for your template then goes inside the &lt;script&gt; tags. For our auto-complete search box, out template is:
 
-<script id="search-result-template" type="text/x-kendo-template">
-    <div class="album-wide" data-album-id="${data.AlbumId}">
-        <img src="${data.AlbumArtUrl}" />
-        <div>
-            <span>${data.Title}</span>
-            <span>${data.Artist.Name}</span>
+    <script id="search-result-template" type="text/x-kendo-template">
+        <div class="album-wide" data-album-id="${data.AlbumId}">
+            <img src="${data.AlbumArtUrl}" />
+            <div>
+                <span>${data.Title}</span>
+                <span>${data.Artist.Name}</span>
+            </div>
         </div>
-    </div>
-</script>
+    </script>
 
 You can see here that we are using the **${...}** notation to indicate fields that need to be pulled from the JS object that is being bound to the template.
-We also could have used the **#= #** notation, for example **&lt;span>#=data.Title#</span&gt;** would have also worked.
+We also could have used the **#= #** notation, for example **&lt;span&gt;#=data.Title#&lt;/span&gt;** would have also worked.
 
 We are also taking advantage of ASP.NET MVC's ability to render partial pages here, and including out templates as partial pages.
 In the **_Layout.cshtml** file, this template is included with the line:
@@ -138,7 +138,7 @@ If we were not using ASP.NET MVC, we could have written some additional code to 
 For more information on remote template loading, see [How To: Load Templates from External Files](http://docs.kendoui.com/howto/load-templates-external-files).
 
 Now that the template is included in the body of the page, the application code is using a jQuery selector
-to fetch this <script> element by its id, and get the contents.
+to fetch this &lt;script&gt; element by its id, and get the contents.
 It then calls **kendo.template()** to process the template.
 
     kendo.template($("#search-result-template").html())
@@ -151,29 +151,29 @@ want to return every album title in the store to the client. A quick breakdown o
 to do this is:
 
         dataSource: {
-		
-		    // We will use OData format requests.
+        
+            // We will use OData format requests.
             type: "odata",
-			
-			// Let paging and filtering happen on the server, not on the client.
+            
+            // Let paging and filtering happen on the server, not on the client.
             serverFiltering: true,
             serverPaging: true,
-			
-			// Set the number of records for the server to return.
-			// This will be our max number of search results,
-			// since we will just show the 1st "page".
+            
+            // Set the number of records for the server to return.
+            // This will be our max number of search results,
+            // since we will just show the 1st "page".
             pageSize: store.config.searchMaxResults,
-			
-			
+            
+            
             transport: {
-			    // Set the URL to read data from to our WebAPI controller,
-				// and specify that we want JSON data.
+                // Set the URL to read data from to our WebAPI controller,
+                // and specify that we want JSON data.
                 read: {
                     url: store.config.albumsUrl,
                     dataType: "json"
                 },
-				
-				// This fixes some compatibility issues between Kendo and WebAPI OData
+                
+                // This fixes some compatibility issues between Kendo and WebAPI OData
                 parameterMap: function (options, type) {
                     var paramMap = kendo.data.transports.odata.parameterMap(options);
                     delete paramMap.$inlinecount;
@@ -181,8 +181,8 @@ to do this is:
                     return paramMap;
                 }
             },
-			
-			// This fixes some compatibility issues between Kendo and WebAPI OData
+            
+            // This fixes some compatibility issues between Kendo and WebAPI OData
             schema: {
                 data: function (data) {
                     return data;
@@ -206,7 +206,7 @@ We do this by specifying a function to handle the **selected** event on the auto
 
         // This function will be called when the user selects an item from the auto-complete result list.
         select: function (e) {
-		    // ... code omitted ...
+            // ... code omitted ...
         }
 
 The first thing we will do in this case is override some of the default behavior for the auto-complete box.
@@ -219,8 +219,8 @@ and also **e.sender.value("")** to clear the text:
             e.preventDefault(); // Stop the selected item text from moving up to the AutoComplete.
             e.sender.value(""); // Clear the user entered search term.
 
-**e.sender** is the jQuery object representing the <input> element. The **.value()** method is also standard jQuery,
-and sets the value of the <input> element to an empty string. This triggers Kendo to put the placeholder message back in place.
+**e.sender** is the jQuery object representing the &lt;input&gt; element. The **.value()** method is also standard jQuery,
+and sets the value of the &lt;input&gt; element to an empty string. This triggers Kendo to put the placeholder message back in place.
 
 Next we want to display the album details to the user. To do this, we need to get the album ID. This process was
 somewhat complicated. You may have noticed back on our template for each item, we added a **data-album-id** attribute
@@ -229,11 +229,11 @@ to each search result:
     <script id="search-result-template" type="text/x-kendo-template">
         <div class="album-wide" data-album-id="${data.AlbumId}">
 
-In the event object **e**, **e.item** is the <li> element. Then we can use a jQuery selector to get the <div> element
-within the <li>, and jQuery's **.data()** method to get the value of the **data-album-id** attribute:
+In the event object **e**, **e.item** is the &lt;li&gt; element. Then we can use a jQuery selector to get the &lt;div&gt; element
+within the &lt;li&gt;, and jQuery's **.data()** method to get the value of the **data-album-id** attribute:
 
         select: function (e) {
-		    // ... code omitted ...
+            // ... code omitted ...
             var albumId = e.item.children("div").data("album-id");
 
 Once we have the album ID, we can show our album details by calling **store.viewAlbumDetails(albumId);**, which

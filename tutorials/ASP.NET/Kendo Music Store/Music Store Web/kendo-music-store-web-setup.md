@@ -50,7 +50,7 @@ and also using DataViz. If we were only going to be using a few select portions 
 we would have taken individual JavaScript files and make a seperate bundle for them, reducing
 the download size for the end user.
 
-> For more information on this topic, see: **[Getting Started: Downloading Kendo](http://docs.kendoui.com/getting-started/downloading-kendo)**
+For more information on this topic, see: [Getting Started: Downloading Kendo](http://docs.kendoui.com/getting-started/downloading-kendo)
 
 ## Create MVC Bundles
 
