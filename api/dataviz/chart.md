@@ -150,7 +150,7 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    
+
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
 
@@ -172,7 +172,7 @@ The padding of the labels.
 
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-    
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -1136,64 +1136,10 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 Array of series definitions.
 
-
-
 The series type is determined by the value of the type field.
 If a type value is missing, the type is assumed to be the one specified in seriesDefaults.
 
-
-
 Each series type has a different set of options.
-
-### series.data `Array`
-
-Array of data points.
-
-### series.field `String`
-
-The data field containing the series value.
-
-### series.groupNameTemplate `String`
-
-Name template for auto-generated
-series when binding to grouped data.
-Template variables:
-
-
-*   **series** - the series options
-*   **group** - the data group
-*   **group.field** - the name of the field used for grouping
-*   **group.value** - the field value for this group.
-
-#### Example
-
-    // chart intialization
-    $("#chart").kendoChart({
-         title: {
-             text: "My Chart Title"
-         },
-         dataSource: {
-             data: seriesData,
-             group: {
-                 field: "product",
-                 dir: "desc"
-             }
-         },
-         series: [{
-                 type: "bar",
-                 name: "Sales",
-                 field: "sales",
-                 groupNameTemplate: "#= series.name # for #= group.field # #= group.value #"
-                 // Sales for product Bar,
-                 // Sales for product Foo,
-                 // etc.
-             }
-         ]
-    });
-
-### series.name `String`
-
-The series name visible in the legend.
 
 ### series.type="area" `Object`
 
@@ -5398,7 +5344,7 @@ Template variables:
          },
          series: [{
              name: "Series 1",
-             data: [200, 450, 300, 125]         
+             data: [200, 450, 300, 125]
          }],
          categoryAxis: {
              categories: [2000, 2001, 2002, 2003]
@@ -5535,10 +5481,10 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    
+
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-           
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 0px (by default)
     margin: { top: 1, left: 1 }
@@ -5554,10 +5500,10 @@ mirroring the axis will render them to the right.
 The padding of the labels.
 
 #### Example
-    
+
     // sets the top, right, bottom and left padding to 3px.
     padding: 3
-            
+
     // sets the top and left padding to 1px
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
@@ -5884,7 +5830,7 @@ The margin of the title.
 
     // sets the top, right, bottom and left margin to 3px.
     margin: 3
-    
+
     // sets the top and left margin to 1px
     // margin right and bottom are with 0px (by default)
     margin: { top: 1, left: 1 }
