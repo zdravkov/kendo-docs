@@ -10,10 +10,9 @@ publish: true
 ![kendo-menu-overview](images/kendo-menu-overview.png)
 
 The main menu of the Music Store application shows off some of the functionality of the [Kendo Menu Widget](http://demos.kendoui.com/web/menu/index.html).
-Each of the three menu items shows off something different. The **Genres** item utilizes a pull-down menu of 
-items to show all the genres of music in the store. The **About** item displays some static content within a panel
-that opens below the menu. The **Contact** item works like a hyperlink or button, and navigates when clicked on,
-instead of displaying a sub-menu.
+The **Genres** item uses a pull-down menu of items to show all the genres of music in the store.
+The **About** item displays some static content within a panel that opens below the menu.
+The **Contact** item works like a hyperlink or button and navigates when clicked on, instead of displaying a sub-menu.
 
 ## Add the Main Menu
 
@@ -32,15 +31,13 @@ Converting this to a Kendo menu is easy. We just add the JavaScript:
         $("#menu").kendoMenu();
     });
 
-This uses a jQuery selector to get our **&lt;ul&gt;** tag with the id "menu," and turns it into a Kendo UI menu.
-This type of kendo usage is sometimes called "explicit" widget initialization, since the element is directly
-targeted in JavaScript (We will see examples of implicit initialization, **data-** attributes and the MVVM
-pattern later on, but for our first control, let's keep it simple.)
+This uses a jQuery selector to get our **&lt;ul&gt;** tag with the id "menu," then turns it into a Kendo UI menu.
+This type of kendo usage is sometimes called "explicit" widget initialization, since the element is directly targeted in JavaScript (we will see examples of implicit initialization, **data-** attributes, and the MVVM pattern later on, but let's keep it simple for our first control.)
 
 ## Add the Genres pull-down menu
 
-Next we can move the Genres list into a pull-down menu. Any **&lt;li&gt;** elements that in turn contain another
-list **&lt;ul&gt;** element are treated as a pull-down item. Let's start with an empty pull-down menu item for our Genres:
+Next we move the Genres list into a pull-down menu.
+Any **&lt;li&gt;** elements that in turn contain another list **&lt;ul&gt;** element are treated as a pull-down item.Let's start with an empty pull-down menu item for our Genres:
 
     <li>Genres
         <ul>
@@ -79,7 +76,7 @@ This partial outputs a list of **&lt;li&gt;** elements that work as links to eac
 
 Another ability of the Kendo Menu control is adding any content into a drop-down menu item.
 It does not have to be a list of selectable items, like the Genres.
-To add content to a menu item, Include a **&lt;ul&gt;** element, with a single **&lt;li&gt;** element.
+To add content to a menu item, include a **&lt;ul&gt;** element with a single **&lt;li&gt;** element.
 Within that element, use a **&lt;div&gt;** to specify the content.
 For example, let's add this content for out "About" menu item:
 

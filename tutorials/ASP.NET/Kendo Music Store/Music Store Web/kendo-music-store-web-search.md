@@ -9,11 +9,11 @@ publish: true
 
 ![kendo-search-overview](images/kendo-search-overview.png)
 
-The Music Store application provides an entry box for searching the store by album title.
-To implement this, a [Kendo AutoComplete Widget](http://demos.kendoui.com/web/autocomplete/index.html) was used. The desire was to have the
-autocomplete box query the server for albums that match the user's entered text, and have
-the filtering performed server-side, using a [remote DataSource](http://demos.kendoui.com/web/datasource/remote-data.html). The results would then be listed, showing the album art,
-title, and artists name, and be clickable to get details about the album.
+The Music Store application provides an text box for searching the store by album title.
+To implement this, a [Kendo AutoComplete Widget](http://demos.kendoui.com/web/autocomplete/index.html) was used.
+The desire was to have the autocomplete box query the server for albums that match the user's entered text and have
+the filtering performed server-side, using a [remote DataSource](http://demos.kendoui.com/web/datasource/remote-data.html).
+The results would then be listed with the album art, title, and artist name, and be clickable to get details about the album.
 
 ## Add the input box
 
@@ -67,7 +67,7 @@ Next we turn the input element into an AutoComplete widget with JavaScript:
         }
     });
 
-Lets look closer at what each portion of this JavaScript is doing...
+Let's look closer at what each part of this JavaScript is doing:
 
 **filter: 'contains'** - Specifies that autocomplete results just need to contain the entered text, anywhere. The default is 'starts with'.
 
@@ -75,28 +75,28 @@ Lets look closer at what each portion of this JavaScript is doing...
 
 **dataTextField: 'Title'** - The name of the field in the data that is searched to find autocomplete results. In this example, we are showing autocomplete results for albums whose titles contain the text entered by the user.
 
-**placeholder: "Search music..."** - This is the text that is displayed in the text box as a placeholder, until the user clicks into the input box.
+**placeholder: 'Search music...'** - This is the text that is displayed in the text box as a placeholder until the user clicks into the input box.
 
-**dataSource: {}** - Here we configure the source for our autocomplete data. We have specified the URL to our WebAPI for Albums as the source. There is a lot going on in this data source, but most of it is enabling server-side filtering using OData.
+**dataSource: {}** - Here we configure the source for our autocomplete data. We have specified the URL of our Albums WebAPI as the source. There is a lot going on in this data source, but most of it is enabling server-side filtering using OData.
 
 ## Customizing the Dropdown Items
 
-Each autocomplete item in the dropdown will be a &lt;li&gt; element, and within that element, a template is used to render the result.
+Each autocomplete item in the dropdown will be a &lt;li&gt; element. Within that element, a template is used to render the result.
 If not specified, Kendo will put the text of the field specified by the **dataTextField** property into the &lt;li&gt;.
 We can use templates to make much nicer looking results. In this case, we are including the album cover art, title, and artist name.
 
     template: kendo.template($("#search-result-template").html())
 
 The template property *could* be set to a string, for example **template: "foo"**, and each result would render &lt;li&gt;foo&lt;/li&gt;.
-To make more intricate templates, you can use '#...#' or '${...}' to put in javascript and calculated values.
+To make more intricate templates, you can use '#...#' or '${...}' to put in JavaScript and calculated values.
 
 For example, a better template than "foo" would be:
 
     template: "<img src='${data.AlbumArtUrl}' /><span>${data.Title}</span><span>${data.Artist.Name}</span>"
 
 Here, the template is using the special value **data**.
-This variable is set to the result JavaScript object that this template is being generated for.
-So, looking at this template, we can infer that our returned JSON from the server had included search results in the format:
+This variable is set to the JavaScript object that this template is being generated for.
+Looking at this template, we can infer that our returned JSON from the server had included search results in the format:
 
     {
         AlbumArtUrl: "...",
@@ -106,7 +106,7 @@ So, looking at this template, we can infer that our returned JSON from the serve
     }
 
 However, even with this improved template, we are including some HTML elements in an inline string in JavaScript.
-This isn't always a good maintainable approach, as it is sometimes difficult to track down generated HTML in JavaScript.
+This isn't always a good maintainable approach, as it can be difficult to track down generated HTML in JavaScript.
 Instead, we can use the **kendo.template()** method to render HTML from a template that was included back in the HTML body.
 
 Including a template in the body of your HTML is done by placing the tag:
@@ -127,7 +127,7 @@ The HTML for your template then goes inside the &lt;script&gt; tags. For our aut
     </script>
 
 You can see here that we are using the **${...}** notation to indicate fields that need to be pulled from the JS object that is being bound to the template.
-We also could have used the **#= #** notation, for example **&lt;span&gt;#=data.Title#&lt;/span&gt;** would have also worked.
+We also could have used the **#= #** notation; **&lt;span&gt;#=data.Title#&lt;/span&gt;** would have worked as well.
 
 We are also taking advantage of ASP.NET MVC's ability to render partial pages here, and including out templates as partial pages.
 In the **_Layout.cshtml** file, this template is included with the line:
@@ -137,15 +137,14 @@ In the **_Layout.cshtml** file, this template is included with the line:
 If we were not using ASP.NET MVC, we could have written some additional code to load templates from external files.
 For more information on remote template loading, see [How To: Load Templates from External Files](http://docs.kendoui.com/howto/load-templates-external-files).
 
-Now that the template is included in the body of the page, the application code is using a jQuery selector
-to fetch this &lt;script&gt; element by its id, and get the contents.
+Now that the template is included in the body of the page, the application code is using a jQuery selector to fetch this &lt;script&gt; element by its id and get the contents.
 It then calls **kendo.template()** to process the template.
 
     kendo.template($("#search-result-template").html())
 
 ## Getting the data from the server, and server-side filtering.
 
-Ideally, we want the server to perform the filtering for our search auto-complete box.
+Ideally, we want the server to perform the filtering for our search autocomplete box.
 Kendo supports both client and server side filtering, but in a real music store, we would not
 want to return every album title in the store to the client. A quick breakdown of the code
 to do this is:
@@ -209,28 +208,26 @@ We do this by specifying a function to handle the **selected** event on the auto
             // ... code omitted ...
         }
 
-The first thing we will do in this case is override some of the default behavior for the auto-complete box.
-Normally, wen you select something from a standard auto-complete box, the selected text is moved up into the box.
-We really don't need that behavior. Instead, we want to clear the user's entered text, resetting back to the
-"Search music..." placeholder text. To do this, we call **preventDefault()** on the event to suppress the normal handling,
-and also **e.sender.value("")** to clear the text:
+The first thing we will do in this case is override some of the default behavior for the autocomplete box.
+Normally, when you select something from a standard auto-complete box, the selected text is moved up into the box.
+We don't need that behavior. Instead, we want to clear the user's entered text, resetting back to the "Search music..." placeholder text.
+To do this, we call **preventDefault()** on the event to suppress the normal handling and **e.sender.value("")** to clear the text:
 
         select: function (e) {
             e.preventDefault(); // Stop the selected item text from moving up to the AutoComplete.
             e.sender.value(""); // Clear the user entered search term.
 
-**e.sender** is the jQuery object representing the &lt;input&gt; element. The **.value()** method is also standard jQuery,
-and sets the value of the &lt;input&gt; element to an empty string. This triggers Kendo to put the placeholder message back in place.
+**e.sender** is the jQuery object representing the &lt;input&gt; element.
+The **.value()** method is also standard jQuery, and sets the value of the &lt;input&gt; element to an empty string. This triggers Kendo to put the placeholder message back in place.
 
-Next we want to display the album details to the user. To do this, we need to get the album ID. This process was
-somewhat complicated. You may have noticed back on our template for each item, we added a **data-album-id** attribute
-to each search result:
+Next we want to display the album details to the user. To do this, we need to get the album ID.
+This process was somewhat complicated. You may have noticed we added a **data-album-id** attribute to each search result on our template:
 
     <script id="search-result-template" type="text/x-kendo-template">
         <div class="album-wide" data-album-id="${data.AlbumId}">
 
-In the event object **e**, **e.item** is the &lt;li&gt; element. Then we can use a jQuery selector to get the &lt;div&gt; element
-within the &lt;li&gt;, and jQuery's **.data()** method to get the value of the **data-album-id** attribute:
+In the event object **e**, **e.item** is the &lt;li&gt; element.
+Then we can use a jQuery selector to get the &lt;div&gt; element within the &lt;li&gt;, and jQuery's **.data()** method to get the value of the **data-album-id** attribute:
 
         select: function (e) {
             // ... code omitted ...
