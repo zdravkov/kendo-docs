@@ -76,13 +76,12 @@ Difines the animation duration.
 
 ### dates `Array`
 
- Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
-
+ Specifies a list of dates, which will be passed to the month template of the DateView. All dates, which match the date portion of the selected date will be used to re-bind the TimeView.
 
 #### Example
 
     $("#dateTimePicker").kendoDateTimePicker({
-        dates: [new Date(2000, 10, 10, 10, 0, 0), new Date(2000, 10, 10, 30, 0)] //the drop-down list will consist only two entries - "10:00 AM" and "10:30 AM"
+        dates: [new Date(2000, 10, 10, 10, 0, 0), new Date(2000, 10, 10, 10, 30, 0)] //the drop-down list will consist only two entries ("10:00 AM", "10:30 AM") if selected date is 10/10/2000
     });
 
 ### depth `String`
