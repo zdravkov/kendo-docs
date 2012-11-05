@@ -1145,6 +1145,30 @@ Each series type has a different set of options.
 
 Available options for area series:
 
+### series.type="area".data `Array`
+
+Array of data points.
+
+### series.type="area".field `String`
+
+The data field containing the series value.
+
+### series.type="area".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="area".name `String`
+
+The series name visible in the legend.
+
 ### series.type="area".aggregate `String`*(default: "max")*
 
  Aggregate function for date series.
@@ -1518,6 +1542,30 @@ Template variables:
 ### series.type="bar" `Object`
 
 Available options for bar series:
+
+### series.type="bar".data `Array`
+
+Array of data points.
+
+### series.type="bar".field `String`
+
+The data field containing the series value.
+
+### series.type="bar".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="bar".name `String`
+
+The series name visible in the legend.
 
 ### series.type="bar".aggregate `String`*(default: "max")*
 
@@ -1898,6 +1946,30 @@ Template variables:
 
 Available options for bubble series:
 
+### series.type="bubble".data `Array`
+
+Array of data points.
+
+### series.type="bubble".field `String`
+
+The data field containing the series value.
+
+### series.type="bubble".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="bubble".name `String`
+
+The series name visible in the legend.
+
 ### series.type="bubble".border `Object`
 
 The border of the bubble.
@@ -2249,6 +2321,30 @@ The difference is that column series are rendered on a horizontal category axis.
 
 Available options for donut series:
 
+### series.type="donut".data `Array`
+
+Array of data points.
+
+### series.type="donut".field `String`
+
+The data field containing the series value.
+
+### series.type="donut".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="donut".name `String`
+
+The series name.
+
 ### series.type="donut".border `Object`
 
 The border of the series.
@@ -2259,8 +2355,7 @@ The color of the border.
 
 ### series.type="donut".border.dashType `String`*(default: solid)*
 
- The dash type of the border.
-
+The dash type of the border.
 
 #### *"solid"*
 
@@ -2661,12 +2756,35 @@ Template variables:
 
 Available options for line series:
 
+### series.type="line".data `Array`
+
+Array of data points.
+
+### series.type="line".field `String`
+
+The data field containing the series value.
+
+### series.type="line".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="line".name `String`
+
+The series name visible in the legend.
+
 ### series.type="line".aggregate `String`*(default: "max")*
 
- Aggregate function for date series.
+Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
 The function return value is displayed instead of the individual points.
-
 
 #### *"max"*
 
@@ -3059,6 +3177,30 @@ Template variables:
 ### series.type="pie" `Object`
 
 Available options for pie series:
+
+### series.type="pie".data `Array`
+
+Array of data points.
+
+### series.type="pie".field `String`
+
+The data field containing the series value.
+
+### series.type="pie".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="pie".name `String`
+
+The series name.
 
 ### series.type="pie".border `Object`
 
@@ -3472,6 +3614,30 @@ A boolean value indicating whether to show the sector in the legend.
 
 Available options for scatter series:
 
+### series.type="scatter".data `Array`
+
+Array of data points.
+
+### series.type="scatter".field `String`
+
+The data field containing the series value.
+
+### series.type="scatter".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="scatter".name `String`
+
+The series name visible in the legend.
+
 ### series.type="scatter".color `String`
 
 The series base color.
@@ -3795,6 +3961,30 @@ The name of the Y axis to use.
 ### series.type="scatterLine" `Object`
 
 Available options for scatter line series:
+
+### series.type="scatterLine".data `Array`
+
+Array of data points.
+
+### series.type="scatterLine".field `String`
+
+The data field containing the series value.
+
+### series.type="scatterLine".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="scatterLine".name `String`
+
+The series name visible in the legend.
 
 ### series.type="scatterLine".color `String`
 
@@ -4182,6 +4372,30 @@ The line and the category axis are now vertical instead of horizontal.
 
 Available options for candlestick series.
 
+### series.type="candlestick".data `Array`
+
+Array of data points.
+
+### series.type="candlestick".field `String`
+
+The data field containing the series value.
+
+### series.type="candlestick".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="candlestick".name `String`
+
+The series name visible in the legend.
+
 ### series.type="candlestick".aggregates `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
 
 Aggregate function for date series.
@@ -4441,6 +4655,30 @@ The line width of the candlestick chart.
 ### series.type="ohlc" `Object`
 
 Available options for ohlc series.
+
+### series.type="ohlc".data `Array`
+
+Array of data points.
+
+### series.type="ohlc".field `String`
+
+The data field containing the series value.
+
+### series.type="ohlc".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="ohlc".name `String`
+
+The series name visible in the legend.
 
 ### series.type="ohlc".aggregates `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
 
