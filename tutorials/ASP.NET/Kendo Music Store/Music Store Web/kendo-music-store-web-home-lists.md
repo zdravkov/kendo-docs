@@ -15,7 +15,7 @@ using the **data-** attributes, and the [Kendo MVVM](http://demos.kendoui.com/we
 
 This page is contained in the files **Views\Home\Index.cshtml** and **Scripts\App\home-index.js**
 
-## Displaying items in a ListView with MVVM, templates, and binding to a remote data source.
+## Displaying items in a ListView (with MVVM, templates, and binding to a remote data source)
 
 ![kendo-music-store-web-main-lists-screenshot](images\kendo-music-store-web-main-lists-screenshot.png)
 

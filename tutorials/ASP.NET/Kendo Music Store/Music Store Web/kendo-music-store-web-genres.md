@@ -18,7 +18,7 @@ The albums will be limited to 20 per page, and display paging navigation at both
 
 This view is contained in **Views/Store/Browse.cshtml**.
 
-We start with a [Kendo ListView](http://demos.kendoui.com/web/listview/index.html) widget that will
+We start with a Kendo ListView(http://demos.kendoui.com/web/listview/index.html) widget that will
 become the container for the Albums.
 
     <div data-role="listview" data-bind="source: albums" data-template="album-template"></div>
@@ -27,7 +27,7 @@ The **data-role="listview"** attribute tells Kendo that this element will be tur
 The **data-bind="source: albums"** tells the widget which property on the view model contains the data to list.
 The **data-template="album-template"** indicates the name of the template to use for each Album.
 
-Note that we are reusing the same Album template from the [Main Page](kendo-music-store-home-lists) list views
+Note that we are reusing the same Album template from the Main Page(kendo-music-store-home-lists) list views
 by using the same ASP.NET MVC partial on both pages. This is a great way to keep the Albums looking and
 behaving consistently between the two views.
 
