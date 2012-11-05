@@ -74,6 +74,17 @@ Difines the animation duration.
         culture: "de-DE"
     });
 
+### dates `Array`
+
+ Specifies a list of dates, which will be passed to the month template.
+
+
+#### Example
+
+    $("#datepicker").kendoDatePicker({
+        dates: [new Date(2000, 10, 10, 10, 0, 0), new Date(2000, 10, 10, 30, 0)] //can manipulate month template depending on this array.
+    });
+
 ### depth `String`
 
 Specifies the navigation depth. The following
