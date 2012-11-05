@@ -340,6 +340,22 @@ The text that will be displayed in the column header.
 
 The width of the column.
 
+### columns.menu `Boolean`
+
+Indicates whether the column should be visible in column menu.
+
+### columnMenu `Boolean | Object`
+
+Enables column header menu
+
+### columnMenu.sortable `Boolean`
+
+Enable/disable sorting section in column header menu.
+
+### columnMenu.filterable `Boolean`
+
+Enable/disable filter section in column header menu.
+
 ### dataSource `kendo.data.DataSource | Object`
 
 Instance of DataSource or Object with DataSource configuration.
