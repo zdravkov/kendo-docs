@@ -1940,6 +1940,409 @@ Template variables:
 
 ### series.type="bar".tooltip.visible `Boolean`*(default: false)*
 
+A value indicating if the tooltip should be displayed.
+
+### series.type="column" `Object`
+
+Available options for column series:
+
+### series.type="column".data `Array`
+
+Array of data points.
+
+### series.type="column".field `String`
+
+The data field containing the series value.
+
+### series.type="column".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### series.type="column".name `String`
+
+The series name visible in the legend.
+
+### series.type="column".aggregate `String`*(default: "max")*
+
+ Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
+
+
+#### *"max"*
+
+The highest value for the date period.
+
+#### *"min"*
+
+The lowest value for the date period.
+
+#### *"sum"*
+
+The sum of all values for the date period.
+
+#### *"count"*
+
+The number of values for the date period.
+
+#### *"avg"*
+
+The average of all values for the date period.
+
+#### *function (values, series)*
+
+User-defined aggregate function.
+
+### series.type="column".axis `String`*(default: primary)*
+
+ The name of the value axis to use.
+
+### series.type="column".border `Object`
+
+The border of the series.
+
+### series.type="column".border.color `String`*(default: the color of the curren series)*
+
+The color of the border.
+
+### series.type="column".border.dashType `String`*(default: "solid")*
+
+ The dash type of the border.
+
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### series.type="column".border.width `Number`*(default: 1)*
+
+ The width of the border.
+
+### series.type="column".color `String`
+
+The series base color.
+
+### series.type="column".colorField `String`
+
+The data field containing the column color.
+
+### series.type="column".gap `Number`*(default: 1.5)*
+
+ The distance between category clusters.
+
+### series.type="column".labels `Object`
+
+Configures the series data labels.
+
+### series.type="column".labels.background `String`
+
+The background color of the labels.
+
+### series.type="column".labels.border `Object`
+
+The border of the labels.
+
+### series.type="column".labels.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### series.type="column".labels.border.dashType `String`*(default: "solid")*
+
+ The dash type of the border.
+
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### series.type="column".labels.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### series.type="column".labels.color `String`
+
+The text color of the labels.
+
+### series.type="column".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### series.type="column".labels.format `String`
+
+The format of the labels.
+
+#### Example
+
+    //sets format of the labels
+    format: "C"
+
+### series.type="column".labels.margin `Number|Object`*(default: 2)*
+
+ The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 2px (by default)
+    margin: { top: 1, left: 1 }
+
+### series.type="column".labels.padding `Number|Object`*(default: 2)*
+
+ The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 2px (by default)
+    padding: { top: 1, left: 1 }
+
+### series.type="column".labels.position `String`*(default: "outsideEnd")*
+
+Defines the position of the column labels.
+
+
+#### *"center"*
+
+The label is positioned at the column center.
+
+#### *"insideEnd"*
+
+The label is positioned inside, near the end of the column.
+
+#### *"insideBase"*
+
+The label is positioned inside, near the base of the column.
+
+#### *"outsideEnd"*
+
+The label is positioned outside, near the end of the column.
+             Not applicable for stacked column series.
+
+### series.type="column".labels.template `String | Function`
+
+The label template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "column",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 labels: {
+                     // label template
+                     template: "#= value #%",
+                     visible: true
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### series.type="column".labels.visible `Boolean`*(default: false)*
+
+ The visibility of the labels.
+
+### series.type="column".name `String`
+
+The series name.
+
+### series.type="column".opacity `Number`*(default: 1)*
+
+ The series opacity.
+
+### series.type="column".overlay `Object`
+
+The effects overlay.
+
+### series.type="column".overlay.gradient `String`*(default: "glass")*
+
+ The gradient name.
+
+
+#### *"glass"*
+
+The columns have glass effect overlay.
+
+#### *"none"*
+
+The columns have no effect overlay.
+
+### series.type="column".spacing `Number`*(default: 0.4)*
+
+ Space between columns.
+
+### series.type="column".stack `Boolean`*(default: false)*
+
+A value indicating if the series should be stacked.
+
+### series.type="column".stack `String`
+
+Indicates that the series should be stacked in a group with the specified name.
+
+### series.type="column".tooltip `Object`
+
+The data point tooltip configuration options.
+
+### series.type="column".tooltip.background `String`
+
+The background color of the tooltip. The default is determined from the series color.
+
+### series.type="column".tooltip.border `Object`
+
+The border configuration options.
+
+### series.type="column".tooltip.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### series.type="column".tooltip.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### series.type="column".tooltip.color `String`
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### series.type="column".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+ The tooltip font.
+
+### series.type="column".tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### series.type="column".tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### series.type="column".tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "column",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 tooltip: {
+                     visible: true,
+                 template: "#= category # - #= value #"
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### series.type="column".tooltip.visible `Boolean`*(default: false)*
+
  A value indicating if the tooltip should be displayed.
 
 ### series.type="bubble" `Object`
@@ -2311,11 +2714,6 @@ The data field containing the bubble x value.
 ### series.type="bubble".yField `String`
 
 The data field containing the bubble y value.
-
-### series.type="column"
-
-Column series accepts the same parameters as bar series.
-The difference is that column series are rendered on a horizontal category axis.
 
 ### series.type="donut" `Object`
 
