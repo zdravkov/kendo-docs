@@ -16,7 +16,7 @@ using NuGet.
 ### Downloading Kendo UI
 
 KendoUI is divided into three parts: Web, Mobile, and DataViz.
-The preferred method of getting KendoUI is to browse to [kendoui.com][1] and download Kendo UI as a .zip file.
+The preferred method of getting KendoUI is to browse to [kendoui.com](http://www.kendoui.com/download) and download Kendo UI as a .zip file.
 Depending on whether you are using the Trial version, or have purchased the full Commercial version,
 you will have a .zip file that follows one of these directory structures:
 
@@ -132,7 +132,7 @@ The **Release** version of the **web.config** file would set debug to false:
 
 We can now add Kendo, and any other third-party libraries we are going to use, to the pages.
 The Music Store uses the **Views\Shared\_Layout.cshtml** master page, so we will add Kendo here.
-We need to make sure that Kendo’s JavaScript files come after jQuery. For styling, we include
+We need to make sure that Kendo's JavaScript files come after jQuery. For styling, we include
 **kendo.common.min.css**, plus one of the Kendo UI Themes. In this example we are using
 **kendo.default.min.css**, which is the Default theme.
 
