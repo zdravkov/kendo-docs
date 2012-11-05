@@ -78,7 +78,7 @@ and notifying the view when it needs to be redrawn.
 The last line of JavaScript tells kendo to apply bindings between the viewModel and the HTML
 element with the ID "body", using normal jQuery selector syntax.
 In our view model, we have set a featured artist on the **featuredArtistName** property.
-This text string will be shown in our <h3> header element, due to the data-binding:
+This text string will be shown in our &lt;h3&gt; header element, due to the data-binding:
 
     <h3>Featured Artist: <span data-bind="text: featuredArtistName"></span></h3>
 
