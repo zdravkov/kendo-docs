@@ -36,7 +36,7 @@ These are the features that we want the Cart Menu widget to support:
 
 ## Boilerplate Custom Widget
 
-> For more information on creating a custom widget, Burke Holland has a couple excelent blog posts on the KendoUI blog:
+> For more information on creating a custom widget, Burke Holland has a couple excellent blog posts on the KendoUI blog:
 > [Creating Custom Kendo UI Plugins](http://www.kendoui.com/blogs/teamblog/posts/12-04-03/creating_custom_kendo_ui_plugins.aspx)
 > and [Creating a DataSource Aware Kendo UI Widget](http://www.kendoui.com/blogs/teamblog/posts/12-04-10/creating_a_datasource_aware_kendo_ui_widget.aspx)
 
@@ -83,7 +83,7 @@ Note that The function name to initialize the widget is "kendo" plus the widget 
 
 We need to use a DataSource that represents the shopping cart to display the cart items and the the total.
 To do this, we will pass the datasource as an option when the JavaScript call is made to initialize the widget.
-To be consistant with the other Kendo widgets, this parameter is named **dataSource**.
+To be consistent with the other Kendo widgets, this parameter is named **dataSource**.
 
     $("#cart-menu").kendoCartMenu({
         dataSource: store.cart.getCart()
@@ -123,7 +123,7 @@ When that method call returns, **this.options** will be:
             name: "CartMenu",
             autoBind: true,
             template: "",
-			dataSource: store.cart.getCart()
+            dataSource: store.cart.getCart()
         }
 
 In the init function, we now call:
@@ -149,7 +149,7 @@ This function is defined in the widget:
         }
 
 This starts by making a call to **kendo.data.DataSource.create()** and passes in the options.
-This Kendo function will look at the options obejct and return the dataSource, if it contains one.
+This Kendo function will look at the options object and return the dataSource, if it contains one.
 If the options object did not contain a dataSource then a new empty DataSource is created and returned.
 
 Next we bind the **_refresh()** function to the "change" event on the dataSource.
@@ -198,15 +198,15 @@ This gets the targeted &lt;ul&gt; element using **$(element)** and saves a refer
 It then appends the rest of the contents for the menu to the element with **that._menu.append(subMenu)**.
 
     <li>
-	  <span class='cm-count'></span>
-	  <ul>
-	    <li>
-		  <div class='k-content'>
-		    <ul></ul>
-			<div class='cm-checkout'>
-			  <span class='cm-total'>Total: <span class='cm-amount'></span></span>
-			  <a href='/ShoppingCart/' class='k-button'>Checkout</a>
-			</div>
+      <span class='cm-count'></span>
+      <ul>
+        <li>
+          <div class='k-content'>
+            <ul></ul>
+            <div class='cm-checkout'>
+              <span class='cm-total'>Total: <span class='cm-amount'></span></span>
+              <a href='/ShoppingCart/' class='k-button'>Checkout</a>
+            </div>
           </div>
         </li>
       </ul>
@@ -231,7 +231,7 @@ This anchor tag is the Checkout button that will proceed to the store's checkout
 
     <a href='/ShoppingCart/' class='k-button'>Checkout</a>
 
-After manipulating the DOM elements we make standard Kendo method calls to initialize these elements as Kedno widgets:
+After manipulating the DOM elements we make standard Kendo method calls to initialize these elements as Kendo widgets:
 
             that._menu.kendoMenu();
             that._listView.kendoListView({
@@ -240,7 +240,7 @@ After manipulating the DOM elements we make standard Kendo method calls to initi
             });
 
 Note that we are binding out ListView to the same DataSource that was originally passed to the Cart Menu widget.
-	
+    
 ## Updating the Display
 
 We update the displayed items to the user whenever the DataSource changes within the **_refresh()** function.

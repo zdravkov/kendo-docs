@@ -37,7 +37,7 @@ The **viewAlbumDetails()** function makes a jQuery AJAX call to load the Album f
         }
 
 ## Create View Model
-		
+        
 Upon completion of the AJAX request, the **store._createAlbumDetailsViewModel()** function is called.
 This method takes the Album record returned from the server, and returns an object that will be used as the view model for the details window.
 
@@ -152,7 +152,7 @@ Next we turn it into a Kendo Window widget:
             });
 
 The **close** event is being used to detect when the window closes, either by adding an album to the cart or the user clicks the "X" button.
-It then finds the oringinally added element and removes it from the DOM.
+It then finds the originally added element and removes it from the DOM.
 
 Finally, the window is positioned and shown. In this sample, we call **window.center()** to place the window in the middle of the screen.
 We could have also calculated an actual X and Y coordinate to position the window at.
