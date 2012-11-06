@@ -1141,6 +1141,10 @@ If a type value is missing, the type is assumed to be the one specified in serie
 
 Each series type has a different set of options.
 
+### series.type `String`
+
+The type of the series.
+
 ### series.type="area" `Object`
 
 Available options for area series:
