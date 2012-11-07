@@ -13,7 +13,7 @@ publish: true
 
 Default options for all chart axes.
 
-### categoryAxis `Object`
+### categoryAxis `Array`
 
 The category axis configuration options.
 
@@ -6003,35 +6003,17 @@ A value indicating if the tooltip should be displayed.
 
 A value indicating if transition animations should be played.
 
-### valueAxis `Object`
+### valueAxis `Array`
 
 The value axis configuration options.
 
-### valueAxis.axisCrossingValue `Number`*(default: 0)*
+### valueAxis.axisCrossingValue `Object | Date | Array`
 
-Value at which the category axis crosses this axis.
+Value at which the category axis crosses this axis. (Only for object)
 
-### valueAxis.axisCrossingValues `Array`*(default: [0])*
+Value indicies at which the category axes cross the value axis. (Only for array)
 
-Value indicies at which the category axes cross the value axis.
-
-**Note:&nbsp;** Specify an index greater than or equal to the number
-of categories to denote the far end of the axis.
-
-#### Example
-    <p>
-    $("#chart").kendoChart({
-         categoryAxis: [{
-             categories: ["A", "B"]
-         }, {
-             categories: ["C", "D"]
-         }],
-         valueAxis: {
-             axisCrossingValues: [0, 1]
-         },
-         ...
-    })
-    </p>
+Date at which the category axis crosses this axis. (Only for date)
 
 ### valueAxis.color `String`
 
@@ -6528,12 +6510,12 @@ The visibility of the title.
 
 The visibility of the axis.
 
-### xAxis `Object`
+### xAxis `Array`
 
 Scatter charts X-axis configuration options.
 Includes **all valueAxis options** in addition to:
 
-### xAxis.type `String`*(default: "numeric")*
+### xAxis.type `String` *(default: "numeric")*
 
 The axis type.
 
@@ -6634,7 +6616,10 @@ axis maximum value to denote the far end of the axis.
     });
     </p>
 
-### yAxis `Object`
+### yAxis `Array`
+
+Scatter charts Y-axis configuration options.
+Includes **all valueAxis options** in addition to:
 
 ### yAxis.type `String`*(default: "numeric")*
 
