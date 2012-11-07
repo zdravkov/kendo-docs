@@ -7,7 +7,7 @@ publish: true
 
 # Creating the Store Management Charts - Kendo Music Store
 
-![kendo-manage-charts-screenshot](images/kendo-manage-charts-screenshot)
+![kendo-manage-charts-screenshot](images/kendo-manage-charts-screenshot.png)
 
 When logged in to the Music Store as an administrator an additional button titled "Manage Store" is made available in the upper right corner.
 This opens the management graphs which can be used to monitor the sales status of the store.
