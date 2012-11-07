@@ -109,6 +109,10 @@ Specifies whether the window will be initially visible.
 
 Specifies width of the window.
 
+### height `Number`
+
+Specifies height of the window.
+
 ## Methods
 
 ### center
