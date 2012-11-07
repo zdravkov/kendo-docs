@@ -105,6 +105,10 @@ The text in the window title bar.
 
 Specifies whether the window will be initially visible.
 
+### width `Number`
+
+Specifies width of the window.
+
 ## Methods
 
 ### center
