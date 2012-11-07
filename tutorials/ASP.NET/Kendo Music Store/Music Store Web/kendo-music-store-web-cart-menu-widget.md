@@ -152,13 +152,13 @@ This starts by making a call to **kendo.data.DataSource.create()** and passes in
 This Kendo function will look at the options object and return the dataSource, if it contains one.
 If the options object did not contain a dataSource then a new empty DataSource is created and returned.
 
-Next we bind the **_refresh()** function to the "change" event on the dataSource.
-This means any time the shopping cart data source changes, the **_refresh()** method will be called.
+Next we bind the **\_refresh()** function to the "change" event on the dataSource.
+This means any time the shopping cart data source changes, the **\_refresh()** method will be called.
 
 Finally, we check to see if the "autoBind" options is set. If it is, we perform a **fetch()** against the datasource.
 Using and respecting an option named **autoBind** is common practice for any widget that is binding to a data source.
 
-At this point, a reference to the passed in data source is saved as **that.dataSource** and the **_refresh()** function
+At this point, a reference to the passed in data source is saved as **that.dataSource** and the **\_refresh()** function
 will be called whenever that data source changes.
 
 ## Creating the Composite Widgets.
@@ -194,8 +194,8 @@ We do this in the init function:
             });
         }
 
-This gets the targeted &lt;ul&gt; element using **$(element)** and saves a reference to it in **that._menu** so we can use it in later functions.
-It then appends the rest of the contents for the menu to the element with **that._menu.append(subMenu)**.
+This gets the targeted &lt;ul&gt; element using **$(element)** and saves a reference to it in **that.\_menu** so we can use it in later functions.
+It then appends the rest of the contents for the menu to the element with **that.\_menu.append(subMenu)**.
 
     <li>
       <span class='cm-count'></span>
@@ -243,7 +243,7 @@ Note that we are binding out ListView to the same DataSource that was originally
     
 ## Updating the Display
 
-We update the displayed items to the user whenever the DataSource changes within the **_refresh()** function.
+We update the displayed items to the user whenever the DataSource changes within the **\_refresh()** function.
 This function is bound to the data source's "change" event.
 
         _refresh: function () {
@@ -265,7 +265,7 @@ This function is bound to the data source's "change" event.
         }
 
 Here we use jQuery to update the text of our total price element, display the total number of items in the cart,
-and call **_animate_bg()** to cause the top level menu element to flash orange for a moment.
+and call **\_animate\_bg()** to cause the top level menu element to flash orange for a moment.
 
 ## Removing Albums from the Cart.
 
