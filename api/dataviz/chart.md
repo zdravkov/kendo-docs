@@ -6544,7 +6544,135 @@ The default baseUnit is determined automatically from the value range. Available
 
 ### xAxis.labels `Object`
 
-Label settings specific to the date axis.
+Configures the axis labels.
+
+### xAxis.labels.background `String`
+
+The background color of the labels. Any valid CSS color string will work here, including
+hex and rgb
+
+### xAxis.labels.border `Object`
+
+The border of the labels.
+
+### xAxis.labels.border.color `String`*(default: "black")*
+
+The color of the border. Any valid CSS color string will work here, including
+hex and rgb.
+
+### xAxis.labels.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### xAxis.labels.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### xAxis.labels.color `String`
+
+The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
+
+### xAxis.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### xAxis.labels.format `String`
+
+The format of the labels.
+
+#### Example
+
+    $("#chart").kendoChart({
+        xAxis: {
+           labels: {
+               // set the format to currency
+               format: "C"
+           }
+        },
+        ...
+    });
+
+### xAxis.labels.margin `Number|Object`*(default: 0)*
+
+The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 0px (by default)
+    margin: { top: 1, left: 1 }
+
+### xAxis.labels.mirror `Boolean`
+
+Mirrors the axis labels and ticks.
+If the labels are normally on the left side of the axis,
+mirroring the axis will render them to the right.
+
+### xAxis.labels.padding `Number | Object`*(default: 0)*
+
+The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
+
+### xAxis.labels.rotation `Number`*(default: 0)*
+
+The rotation angle of the labels.
+
+### xAxis.labels.skip `Number`*(default: 1)*
+
+Number of labels to skip.
+Skips rendering the first n labels.
+
+### xAxis.labels.step `Number`*(default: 1)*
+
+Label rendering step.
+Every n-th label is rendered where n is the step
+
+### xAxis.labels.template `String | Function`
+
+The label template.
+
+### xAxis.labels.visible `Boolean`*(default: true)*
+
+The visibility of the labels.
 
 ### xAxis.labels.culture `String`*(default: global culture)*
 
@@ -6648,9 +6776,142 @@ The default baseUnit is determined automatically from the value range. Available
 * months
 * years
 
+### yAxis.color `String`
+
+Color to apply to all axis elements.
+Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
+
 ### yAxis.labels `Object`
 
-Label settings specific to the date axis.
+Configures the axis labels.
+
+### yAxis.labels.background `String`
+
+The background color of the labels. Any valid CSS color string will work here, including
+hex and rgb
+
+### yAxis.labels.border `Object`
+
+The border of the labels.
+
+### yAxis.labels.border.color `String`*(default: "black")*
+
+The color of the border. Any valid CSS color string will work here, including
+hex and rgb.
+
+### yAxis.labels.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### yAxis.labels.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### yAxis.labels.color `String`
+
+The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
+
+### yAxis.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### yAxis.labels.format `String`
+
+The format of the labels.
+
+#### Example
+
+    $("#chart").kendoChart({
+        yAxis: {
+           labels: {
+               // set the format to currency
+               format: "C"
+           }
+        },
+        ...
+    });
+
+### yAxis.labels.margin `Number|Object`*(default: 0)*
+
+The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 0px (by default)
+    margin: { top: 1, left: 1 }
+
+### yAxis.labels.mirror `Boolean`
+
+Mirrors the axis labels and ticks.
+If the labels are normally on the left side of the axis,
+mirroring the axis will render them to the right.
+
+### yAxis.labels.padding `Number | Object`*(default: 0)*
+
+The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
+
+### yAxis.labels.rotation `Number`*(default: 0)*
+
+The rotation angle of the labels.
+
+### yAxis.labels.skip `Number`*(default: 1)*
+
+Number of labels to skip.
+Skips rendering the first n labels.
+
+### yAxis.labels.step `Number`*(default: 1)*
+
+Label rendering step.
+Every n-th label is rendered where n is the step
+
+### yAxis.labels.template `String | Function`
+
+The label template.
+
+### yAxis.labels.visible `Boolean`*(default: true)*
+
+The visibility of the labels.
 
 ### yAxis.labels.culture `String`*(default: global culture)*
 
