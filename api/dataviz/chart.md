@@ -412,18 +412,17 @@ The unique axis name.
 
 ### categoryAxis.plotBands `Array`
 
-The plot bands of category axis.
-The plot band fields:
+The plot bands of the category axis.
 
-#### *"from"*
+#### categoryAxis.plotBands.from `Number`
 
-The start position of the plot band.
+The start position of the plot band in axis units.
 
-#### *"to"*
+#### categoryAxis.plotBands.to `Number`
 
-The end position of the plot band.
+The end position of the plot band in axis units.
 
-#### *"color"*
+#### categoryAxis.plotBands.color `String`
 
 The color of the plot band.
 
@@ -6351,32 +6350,18 @@ The unique axis name.
 ### valueAxis.plotBands `Array`
 
 The plot bands of the value axis.
-The plot band fields:
 
-#### *"from"*
+#### valueAxis.plotBands.from `Number`
 
 The start position of the plot band in axis units.
 
-#### *"to"*
+#### valueAxis.plotBands.to `Number`
 
 The end position of the plot band in axis units.
 
-#### *"color"*
+#### valueAxis.plotBands.color `String`
 
 The color of the plot band.
-
-#### Example
-
-    $("#chart").kendoChart({
-        ...,
-        valueAxis: {
-            plotBands: [{
-                from: 0.2,
-                to: 0.4,
-                color: "green"
-            }]
-        },
-     });
 
 ### valueAxis.reverse `Boolean`*(default: false)*
 
@@ -6514,6 +6499,11 @@ The visibility of the axis.
 
 Scatter charts X-axis configuration options.
 Includes **all valueAxis options** in addition to:
+
+### xAxis.color `String`
+
+Color to apply to all axis elements.
+Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
 
 ### xAxis.type `String` *(default: "numeric")*
 
@@ -6743,6 +6733,237 @@ axis maximum value to denote the far end of the axis.
          ...
     });
     </p>
+
+### xAxis.line `Object`
+
+Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
+
+### xAxis.line.color `String`*(default: "black")*
+
+The color of the line. This will also effect the major and minor ticks, but
+not the grid lines.
+
+### xAxis.line.dashType `String`*(default: "solid")*
+
+The dash type of the line.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### xAxis.line.visible `Boolean`*(default: true)*
+
+The visibility of the line.
+
+### xAxis.line.width `Number`*(default: 1)*
+
+The width of the line. This will also effect the major and minor ticks, but
+not the grid lines.
+
+### xAxis.majorGridLines `Object`
+
+Configures the major grid lines. These are the lines that are an extension of the major ticks through the
+body of the chart.
+
+### xAxis.majorGridLines.color `String`*(default: "black")*
+
+The color of the lines.
+
+### xAxis.majorGridLines.visible `Boolean`*(default: true)*
+
+The visibility of the lines.
+
+### xAxis.majorGridLines.width `Number`*(default: 1)*
+
+The width of the lines.
+
+### xAxis.majorTicks `Object`
+
+The major ticks of the axis.
+
+### xAxis.majorTicks.size `Number`*(default: 4)*
+
+The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
+
+### xAxis.majorTicks.visible `Boolean`*(default: true)*
+
+The visibility of the major ticks.
+
+### xAxis.name `Object`*(default: primary)*
+
+The unique axis name.
+
+### xAxis.plotBands `Array`
+
+The plot bands of the xAxis.
+
+#### xAxis.plotBands.from `Number`
+
+The start position of the plot band in axis units.
+
+#### xAxis.plotBands.to `Number`
+
+The end position of the plot band in axis units.
+
+#### xAxis.plotBands.color `String`
+
+The color of the plot band.
+
+### xAxis.reverse `Boolean`*(default: false)*
+
+Reverses the axis direction -
+values increase from right to left and from top to bottom.
+
+### xAxis.title `Object`
+
+The title of the value axis.
+
+### xAxis.title.background `String`
+
+The background color of the title. Any valid CSS color string will work here, including
+hex and rgb.
+
+### xAxis.title.border `Object`
+
+The border of the title.
+
+### xAxis.title.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### xAxis.title.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### xAxis.title.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### xAxis.title.color `String`
+
+The text color of the title. Any valid CSS color string will work here, including hex and rgb.
+
+### xAxis.title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
+
+The font style of the title.
+
+### xAxis.title.margin `Number | Object`*(default: 5)*
+
+The margin of the title.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 0px (by default)
+    margin: { top: 1, left: 1 }
+
+### xAxis.title.padding `Number | Object`*(default: 0)*
+
+The padding of the title.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
+
+### xAxis.title.position `String`*(default: "center")*
+
+The position of the title.
+
+#### *"top"*
+
+The axis title is positioned on the top (applicable to vertical axis).
+
+#### *"bottom"*
+
+The axis title is positioned on the bottom (applicable to vertical axis).
+
+#### *"left"*
+
+The axis title is positioned on the left (applicable to horizontal axis).
+
+#### *"right"*
+
+"The axis title is positioned on the right (applicable to horizontal axis).
+
+#### *"center"*
+
+"The axis title is positioned in the center.
+
+### xAxis.title.rotation `Number`*(default: 0)*
+
+The rotation angle of the title.
+
+### xAxis.title.text `String`
+
+The text of the title.
+
+### xAxis.title.visible `Boolean`*(default: true)*
+
+The visibility of the title.
+
+### xAxis.visible `Boolean`*(default: true)*
+
+The visibility of the axis.
 
 ### yAxis `Array`
 
@@ -6982,6 +7203,237 @@ axis maximum value to denote the far end of the axis.
          ...
     });
     </p>
+
+### yAxis.line `Object`
+
+Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
+
+### yAxis.line.color `String`*(default: "black")*
+
+The color of the line. This will also effect the major and minor ticks, but
+not the grid lines.
+
+### yAxis.line.dashType `String`*(default: "solid")*
+
+The dash type of the line.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### yAxis.line.visible `Boolean`*(default: true)*
+
+The visibility of the line.
+
+### yAxis.line.width `Number`*(default: 1)*
+
+The width of the line. This will also effect the major and minor ticks, but
+not the grid lines.
+
+### yAxis.majorGridLines `Object`
+
+Configures the major grid lines. These are the lines that are an extension of the major ticks through the
+body of the chart.
+
+### yAxis.majorGridLines.color `String`*(default: "black")*
+
+The color of the lines.
+
+### yAxis.majorGridLines.visible `Boolean`*(default: true)*
+
+The visibility of the lines.
+
+### yAxis.majorGridLines.width `Number`*(default: 1)*
+
+The width of the lines.
+
+### yAxis.majorTicks `Object`
+
+The major ticks of the axis.
+
+### yAxis.majorTicks.size `Number`*(default: 4)*
+
+The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
+
+### yAxis.majorTicks.visible `Boolean`*(default: true)*
+
+The visibility of the major ticks.
+
+### yAxis.name `Object`*(default: primary)*
+
+The unique axis name.
+
+### yAxis.plotBands `Array`
+
+The plot bands of the yAxis.
+
+#### yAxis.plotBands.from `Number`
+
+The start position of the plot band in axis units.
+
+#### yAxis.plotBands.to `Number`
+
+The end position of the plot band in axis units.
+
+#### yAxis.plotBands.color `String`
+
+The color of the plot band.
+
+### yAxis.reverse `Boolean`*(default: false)*
+
+Reverses the axis direction -
+values increase from right to left and from top to bottom.
+
+### yAxis.title `Object`
+
+The title of the value axis.
+
+### yAxis.title.background `String`
+
+The background color of the title. Any valid CSS color string will work here, including
+hex and rgb.
+
+### yAxis.title.border `Object`
+
+The border of the title.
+
+### yAxis.title.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### yAxis.title.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### yAxis.title.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### yAxis.title.color `String`
+
+The text color of the title. Any valid CSS color string will work here, including hex and rgb.
+
+### yAxis.title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
+
+The font style of the title.
+
+### yAxis.title.margin `Number | Object`*(default: 5)*
+
+The margin of the title.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 0px (by default)
+    margin: { top: 1, left: 1 }
+
+### yAxis.title.padding `Number | Object`*(default: 0)*
+
+The padding of the title.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
+
+### yAxis.title.position `String`*(default: "center")*
+
+The position of the title.
+
+#### *"top"*
+
+The axis title is positioned on the top (applicable to vertical axis).
+
+#### *"bottom"*
+
+The axis title is positioned on the bottom (applicable to vertical axis).
+
+#### *"left"*
+
+The axis title is positioned on the left (applicable to horizontal axis).
+
+#### *"right"*
+
+"The axis title is positioned on the right (applicable to horizontal axis).
+
+#### *"center"*
+
+"The axis title is positioned in the center.
+
+### yAxis.title.rotation `Number`*(default: 0)*
+
+The rotation angle of the title.
+
+### yAxis.title.text `String`
+
+The text of the title.
+
+### yAxis.title.visible `Boolean`*(default: true)*
+
+The visibility of the title.
+
+### yAxis.visible `Boolean`*(default: true)*
+
+The visibility of the axis.
 
 ## Methods
 
