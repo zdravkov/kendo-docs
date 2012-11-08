@@ -14,11 +14,12 @@ The New Project wizard is used for creation of a new Kendo UI for ASP.NET MVC Ap
  
 ![New Project Wizard](images/new1.png)
 
-Using the controls in the Kendo UI for ASP.NET MVC Project Settings page you can modify various project-wide settings:
+Using the options in the Kendo UI for ASP.NET MVC Project Settings page you can modify various project-wide settings:
 
 -	**Version** - Choose which version of Kendo UI for ASP.NET MVC to use
 -	**Target ASP.NET MVC Version** – Choose the targeted ASP.NET MVC version
 -	**View Engine** – Choose between Razor and WebForms
+-	**Theme** – Choose the visual theme for your Kendo UI for ASP.NET MVC Application
 -	**Copy Editor Templates** - Copy the predefined editor templates to ~/Views/Shared/EditorTemplates
 -	**Use CDN Support** - Enable or disable [CDN](http://docs.kendoui.com/getting-started/javascript-dependencies#cdn) support.
 -	**Copy Global Resources** - Copy the localization files to ~/Scripts/kendo/{version}/cultures 
@@ -36,3 +37,18 @@ On the next step the New Project wizard’s Data Access page offers you initiali
 	- [Generate the domain model from a database - Database First](http://www.telerik.com/help/openaccess-orm/getting-started-root-generating-model-mappings-taking-database-first-approach.html)
 
 - **Skip creating an OpenAccess Model Library Project** - No data access project will be added.
+
+##Creation of New Kendo UI web application
+
+When you click 'Finish', the creation of new Kendo UI web application will begin. The wizard will:
+
+- Create new ASP.NET MVC application
+- Copy all Kendo UI scripts, including the vsdoc script that enables the VS Intellisense feature (if CDN support is not enabled)
+- Copy all Kendo UI content files (if CDN support is not enabled)
+- Copy all Kendo UI global resources (optional)
+- Copy all Kendo UI editor templates (optional)
+- Add reference to the Kendo.Mvc assembly
+- Apply the pre-selected theme
+- Create test project (optional)
+
+

@@ -27,7 +27,7 @@ If you have layout and master page you can choose whether you want to apply the 
 
 ![update Project Resources](images/convert2.png)
  
-- **Theme** - choose the visual theme for your Kendo UI for ASP.NET MVC Application
+- **Theme** - Choose the visual theme for your Kendo UI for ASP.NET MVC Application
 	
 In case you have neither a master page nor a layout page you have the opportunity to add one:
  
