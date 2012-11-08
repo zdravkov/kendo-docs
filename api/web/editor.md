@@ -122,6 +122,18 @@ as a collection of required properties, while the insertHtml  tool requires a co
          ]
      });
 
+### tools.name `String`
+
+The mandatory name of the tool. The built-in tools are "bold", "italic", "underline", "strikethrough", "fontName", "fontSize", "foreColor", "backColor", "justifyLeft", "justifyCenter", "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent", "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
+
+### tools.tooltip `String`
+
+The text which will be displayed when the end-user hovers the tool button with the mouse.
+
+### tools.exec `Function`
+
+The JavaScript function which will be executed when the end-user clicks the tool button.
+
 ### imagebrowser `Object`
 
 Configuration for image browser dialog.
