@@ -6,7 +6,7 @@ publish: true
 
 #Visual Studio Extensions Options
 
-The Visual Studio Extensions options dialog provides settings allowing you to configure the Telerik Visual Studio Extensions to best suit your needs.
+The Visual Studio Extensions options dialog provides settings allowing you to configure the Kendo UI for ASP.NET MVC Visual Studio Extensions to best suit your needs.
 
 It can be accessed through **Visual Studio | Telerik | VSExtensions Options…**
 
