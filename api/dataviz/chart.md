@@ -426,6 +426,10 @@ The end position of the plot band in axis units.
 
 The color of the plot band.
 
+### categoryAxis.plotBands.opacity `Number`
+
+The opacity of the plot band.
+
 ### categoryAxis.reverse `Boolean`*(default: false)*
 
 Reverses the axis direction -
@@ -2356,9 +2360,7 @@ Available options for bubble series:
 
 Array of data points.
 
-### series.type="bubble".field `String`
-
-The data field containing the series value.
+### series.type="bubble".aField `String`
 
 ### series.type="bubble".groupNameTemplate `String`
 
@@ -4015,13 +4017,17 @@ A boolean value indicating whether to show the sector in the legend.
 
 Available options for scatter series:
 
+### series.type="scatter".xField `String`
+
+The data field containing the scatter x value.
+
+### series.type="scatter".yField `String`
+
+The data field containing the scatter y value.
+
 ### series.type="scatter".data `Array`
 
 Array of data points.
-
-### series.type="scatter".field `String`
-
-The data field containing the series value.
 
 ### series.type="scatter".groupNameTemplate `String`
 
@@ -4367,9 +4373,13 @@ Available options for scatter line series:
 
 Array of data points.
 
-### series.type="scatterLine".field `String`
+### series.type="scatterLine".xField `String`
 
-The data field containing the series value.
+The data field containing the bubble x value.
+
+### series.type="scatterLine".yField `String`
+
+The data field containing the bubble y value.
 
 ### series.type="scatterLine".groupNameTemplate `String`
 
@@ -6363,6 +6373,10 @@ The end position of the plot band in axis units.
 
 The color of the plot band.
 
+### valueAxis.plotBands.opacity `Number`
+
+The opacity of the plot band.
+
 ### valueAxis.reverse `Boolean`*(default: false)*
 
 Reverses the axis direction -
@@ -6833,6 +6847,10 @@ The end position of the plot band in axis units.
 
 The color of the plot band.
 
+### xAxis.plotBands.opacity `Number`
+
+The opacity of the plot band.
+
 ### xAxis.reverse `Boolean`*(default: false)*
 
 Reverses the axis direction -
@@ -7302,6 +7320,10 @@ The end position of the plot band in axis units.
 ### yAxis.plotBands.color `String`
 
 The color of the plot band.
+
+### yAxis.plotBands.opacity `Number`
+
+The opacity of the plot band.
 
 ### yAxis.reverse `Boolean`*(default: false)*
 
