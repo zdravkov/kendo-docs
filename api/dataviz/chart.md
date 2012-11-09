@@ -414,15 +414,15 @@ The unique axis name.
 
 The plot bands of the category axis.
 
-#### categoryAxis.plotBands.from `Number`
+### categoryAxis.plotBands.from `Number`
 
 The start position of the plot band in axis units.
 
-#### categoryAxis.plotBands.to `Number`
+### categoryAxis.plotBands.to `Number`
 
 The end position of the plot band in axis units.
 
-#### categoryAxis.plotBands.color `String`
+### categoryAxis.plotBands.color `String`
 
 The color of the plot band.
 
@@ -6351,15 +6351,15 @@ The unique axis name.
 
 The plot bands of the value axis.
 
-#### valueAxis.plotBands.from `Number`
+### valueAxis.plotBands.from `Number`
 
 The start position of the plot band in axis units.
 
-#### valueAxis.plotBands.to `Number`
+### valueAxis.plotBands.to `Number`
 
 The end position of the plot band in axis units.
 
-#### valueAxis.plotBands.color `String`
+### valueAxis.plotBands.color `String`
 
 The color of the plot band.
 
@@ -6821,15 +6821,15 @@ The unique axis name.
 
 The plot bands of the xAxis.
 
-#### xAxis.plotBands.from `Number`
+### xAxis.plotBands.from `Number`
 
 The start position of the plot band in axis units.
 
-#### xAxis.plotBands.to `Number`
+### xAxis.plotBands.to `Number`
 
 The end position of the plot band in axis units.
 
-#### xAxis.plotBands.color `String`
+### xAxis.plotBands.color `String`
 
 The color of the plot band.
 
@@ -7291,15 +7291,15 @@ The unique axis name.
 
 The plot bands of the yAxis.
 
-#### yAxis.plotBands.from `Number`
+### yAxis.plotBands.from `Number`
 
 The start position of the plot band in axis units.
 
-#### yAxis.plotBands.to `Number`
+### yAxis.plotBands.to `Number`
 
 The end position of the plot band in axis units.
 
-#### yAxis.plotBands.color `String`
+### yAxis.plotBands.color `String`
 
 The color of the plot band.
 
