@@ -24,7 +24,7 @@ Once the totals are updated, the cart data is also updated in the local storage.
 
 By providing a DataSource to bind against for cart data we give all parts of the application a way to be notified
 of cart data updates.
-For example, singe the cart menu widget and cart checkout view are bound to the same datasource, if you navigate
+For example, since the cart menu widget and cart checkout view are bound to the same datasource, if you navigate
 to the checkout page and remove an item from the cart the cart menu widget will immediately update.
 No extra JavaScript had to be written to accomplish this. It is notified of the DataSource change and knows to update.
 
@@ -66,7 +66,7 @@ A convenience function is defined on the cart that retrieves the value of the ag
 
 When the set of items in the DataSource is empty, the aggregate will not be created,
 so we need to check for its existence before reading its value.
-The array of all the aggregates is retrieved by calling **.aggregates()** function.
+The array of all the aggregates is retrieved by calling the **.aggregates()** function.
 The aggregate is then accessed by its field name, and finally its aggregate name.
 If the "Total" aggregate does not exist, we default to 0 since the cart is empty.
 

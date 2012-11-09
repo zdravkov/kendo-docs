@@ -97,7 +97,7 @@ This is done with a standard jQuery AJAX call, instead of using a Kendo DataSour
 
 On successful response from the server, the **genre** property is set on the viewModel.
 This will cause the view to update and show the genre's name.
-Note that is actually happens asynchronously. The page initially displays an empty &lt;h3&gt; tag
+Note that actually happens asynchronously. The page initially displays an empty &lt;h3&gt; tag
 and when the JavaScript is run the element is bound to the viewModel.genre property.
 If the jQuery AJAX request has not finished, this will still be null. Once the AJAX request finishes
 it calls the **.set()** method on the viewModel to set the genre.

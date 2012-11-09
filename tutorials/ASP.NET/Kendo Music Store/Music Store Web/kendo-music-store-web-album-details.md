@@ -15,7 +15,7 @@ More than one album details window can be opened at once, and they can be dragge
 
 ## Calling a Common Function
 
-The album details can be opened from 3 places in the Music Store; the Main page,the Genre list, and the Search auto-complete dropdown.
+The album details can be opened from 3 places in the Music Store: the Main page, the Genre list, and the Search auto-complete dropdown.
 All 3 of them call one common function: **store.viewAlbumDetails()** and pass the ID of the album to display.
 
 The **store** is an object held in the global JS scope that contains a variety of common operations that apply to the entire Music Store.
@@ -68,7 +68,7 @@ The View Model for the details popup window contains:
 **data** contains the Album object that was returned from the server.
 
 **total** is a calculated field, and returns the album price multiplied by the selected quantity. It uses the **.get()** method
-on the Kendo observable to retrieve the price and quantity so that if either of those values changes, the bound view will be notified
+on the Kendo observable to retrieve the price and quantity; if either of those values changes, the bound view will be notified
 that the **total()** function needs to be re-executed to get an updated value. If we had simply used "return data.Price * this.quantity;"
 then the view would not have updated when quantity changed.
 

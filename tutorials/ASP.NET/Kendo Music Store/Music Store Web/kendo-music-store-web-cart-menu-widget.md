@@ -62,7 +62,7 @@ First we need to extend the base Widget class in the kendo.ui namespace.
         kendo.ui.plugin(CartMenu);
     })(jQuery);
 
-We start by calling **kendo.ui.Widget.extend()** and passing in an object with the properties and functions that we want out widget to contain.
+We start by calling **kendo.ui.Widget.extend()** and passing in an object with the properties and functions that we want our widget to contain.
 This kendo method builds a new Kendo Plugin object with the correct prototype that also contains the properties and functions we defined.
 This created widget object is then passed to **kendo.ui.plugin()** to register it in Kendo's collection of plugins.
 
@@ -81,7 +81,7 @@ Note that The function name to initialize the widget is "kendo" plus the widget 
 
 ## Binding to a DataSource.
 
-We need to use a DataSource that represents the shopping cart to display the cart items and the the total.
+We need to use a DataSource that represents the shopping cart to display the cart items and the total.
 To do this, we will pass the datasource as an option when the JavaScript call is made to initialize the widget.
 To be consistent with the other Kendo widgets, this parameter is named **dataSource**.
 
@@ -155,8 +155,8 @@ If the options object did not contain a dataSource then a new empty DataSource i
 Next we bind the **\_refresh()** function to the "change" event on the dataSource.
 This means any time the shopping cart data source changes, the **\_refresh()** method will be called.
 
-Finally, we check to see if the "autoBind" options is set. If it is, we perform a **fetch()** against the datasource.
-Using and respecting an option named **autoBind** is common practice for any widget that is binding to a data source.
+Finally, we check to see if the "autoBind" option is set. If it is, we perform a **fetch()** against the datasource.
+Implementing an option named **autoBind** is not required but is common practice for any widget that is binding to a data source.
 
 At this point, a reference to the passed in data source is saved as **that.dataSource** and the **\_refresh()** function
 will be called whenever that data source changes.
@@ -239,7 +239,7 @@ After manipulating the DOM elements we make standard Kendo method calls to initi
                 template: that.template
             });
 
-Note that we are binding out ListView to the same DataSource that was originally passed to the Cart Menu widget.
+Note that we are binding our ListView to the same DataSource that was originally passed to the Cart Menu widget.
     
 ## Updating the Display
 

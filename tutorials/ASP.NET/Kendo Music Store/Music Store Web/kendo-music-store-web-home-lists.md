@@ -35,7 +35,7 @@ we can start with some simple HTML markup to represent the 2 ListView widgets:
 We have set **data-role="listview"** of each &lt;div&gt; so that Kendo knows to transform these &lt;div&gt;s
 into ListView widgets. Each album will look the same between the 2 lists, so we chose to share a template.
 Both &lt;div&gt;s get the attribute **data-template="album-template"**.
-In addition, we also need to add the template itself:
+In addition, we need to add the template itself:
 
     <script id="album-template" type="text/x-kendo-template">
         <div class="album" data-bind="click: viewAlbumDetails">
@@ -46,8 +46,8 @@ In addition, we also need to add the template itself:
         </div>
     </script>
 
-We have moved the template off to an ASP.NET MVC partial, so keep the code clean, and allow
-reuse of the template between pages, then imported it with:
+We moved the template to an ASP.NET MVC partial to keep the code clean and allow
+reuse of the template between pages. The partial was then included with:
 
     @Html.Partial("_AlbumListTemplatePartial")
 	
@@ -75,7 +75,7 @@ This means we need to create our view model in JavaScript, which is:
 
 Our viewModel is a Kendo **Observable** object, which facilitates the updating of properties
 and notifying the view when it needs to be redrawn.
-The last line of JavaScript tells kendo to apply bindings between the viewModel and the HTML
+The last line of JavaScript tells Kendo to apply bindings between the viewModel and the HTML
 element with the ID "body", using normal jQuery selector syntax.
 In our view model, we have set a featured artist on the **featuredArtistName** property.
 This text string will be shown in our &lt;h3&gt; header element, due to the data-binding:
@@ -105,8 +105,8 @@ We can start by setting up a property on our view model to hold the URLs for the
         ]
     });
 
-The **bannerImages** property is just a simple array of image URLs. Next we make our custom binding.
-Best practice is to separate your custom Kendo extensions into a separate file, or multiple files if they become large.
+The **bannerImages** property is just a simple array of image URLs. Next we will make our custom binding.
+The best practice is to separate your custom Kendo extensions into a separate file, or multiple files if they become large.
 In this case, we put our custom binder in **Scripts\App\kendo-custom-bindings.js**. The basic layout for the custom binder is:
 
 	kendo.data.binders.rotateImages = kendo.data.Binder.extend({
@@ -135,7 +135,7 @@ This is where you would normally put the code to update your element.
 The **destroy** function is called when the binder is removed or cleaned up. Any tear-down code would be put here, and would normally
 undo anything that the **init** function had done.
 
-For our image rotator, Our **init** function fetches the array of images to rotate, and a time delay value from a **data-rotate-delay**
+For our image rotator, our **init** function fetches the array of images to rotate, and a time delay value from a **data-rotate-delay**
 attribute to use to time the image change. It also defines a **doImageRotation** function that gets assigned to the binding,
 so we can get and use the function in our **refresh** method.
 
