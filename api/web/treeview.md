@@ -738,3 +738,13 @@ Triggered when a node gets selected.
 ##### e.node `Node`
 
 The selected node
+
+### navigate
+
+Triggered when the user moves the focus on another node
+
+#### Event Data
+
+##### e.node `Node`
+
+The focused node
