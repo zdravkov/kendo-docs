@@ -9,9 +9,9 @@ publish: true
 
 ## Configuration
 
-### animation `Object`
+### animation `Object|Boolean`
 
-A collection of visual animations used when **PanelBar** items are opened or closed through
+A collection of visual animations used when **PanelBar** items are exapnd or collapsed through
 user interactions. Setting this option to **false** will disable all animations.
 
 #### Example
@@ -19,19 +19,19 @@ user interactions. Setting this option to **false** will disable all animations.
     $("#panelBar").kendoPanelBar({
         animation: {
             // fade-out closing items over 1000 milliseconds
-            close: {
+            collapse: {
                 duration: 1000,
                 effects: "fadeOut"
             },
            // fade-in and expand opening items over 500 milliseconds
-           open: {
+           expand: {
                duration: 500,
                effects: "expandVertical fadeIn"
            }
        }
     });
 
-### animation.close `Object`
+### animation.collapse `Object`
 
 The visual animation(s) that will be used when **PanelBar** items are closed.
 
@@ -39,14 +39,14 @@ The visual animation(s) that will be used when **PanelBar** items are closed.
 
     $("#panelBar").kendoPanelBar({
         animation: {
-            close: {
+            collapse: {
                 duration: 200,
                 effects: "fadeOut"
             }
         }
     });
 
-### animation.close.duration `Number`*(default: 200)*
+### animation.collapse.duration `Number`*(default: 200)*
 
 The number of milliseconds used for the visual animation when a **PanelBar** item is closed.
 
@@ -54,15 +54,13 @@ The number of milliseconds used for the visual animation when a **PanelBar** ite
 
     $("#panelBar").kendoPanelBar({
         animation: {
-            close: {
-
-                       duration: 1000
-
-                   }
+           collapse: {
+                duration: 1000
+           }
       }
     });
 
-### animation.close.effects `String`
+### animation.collapse.effects `String`
 
 A whitespace-delimited string of animation effects that are utilized when a **PanelBar** item
 is closed. Options include **"fadeOut"**.
@@ -71,14 +69,14 @@ is closed. Options include **"fadeOut"**.
 
     $("#panelBar").kendoPanelBar({
         animation: {
-            close: {
+            collapse: {
                 duration: 1000,
                 effects: "fadeOut"
             }
         }
     });
 
-### animation.open `Object`
+### animation.expand `Object`
 
 The visual animation(s) that will be used when opening items.
 
@@ -86,14 +84,14 @@ The visual animation(s) that will be used when opening items.
 
     $("#panelBar").kendoPanelBar({
         animation: {
-            open: {
+            expand: {
                 duration: 200,
                 effects: "expandVertical"
             }
         }
     });
 
-### animation.open.duration `Number`*(default: 200)*
+### animation.expand.duration `Number`*(default: 200)*
 
 The number of milliseconds used for the visual animation when an item is opened.
 
@@ -101,18 +99,18 @@ The number of milliseconds used for the visual animation when an item is opened.
 
     $("#panelBar").kendoPanelBar({
      animation: {
-          open: {
+          expand: {
               duration: 1000
           }
        }
     });
 
-### animation.open.effects `String`*(default: "expandVertical")*
+### animation.expand.effects `String`*(default: "expandVertical")*
 
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
 **"expandVertical"** and **"fadeIn"**.
 
-### animation.open.show `Boolean`*(default: true)*
+### animation.expand.show `Boolean`*(default: true)*
 
 
 
@@ -236,7 +234,7 @@ Prepares the **PanelBar** for safe removal from DOM. Detaches all event handlers
 #### Example
 
     var panelBar = $("#panelBar").data("kendoPanelBar");
-    
+
     // detach events
     panelBar.destroy();
 
