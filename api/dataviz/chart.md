@@ -7546,6 +7546,66 @@ and is about to render it.
         // Series data is now available
     }
 
+### dragStart
+
+Fires when the user has used the mouse or a swipe gesture to drag the chart.
+
+The drag operation can be aborted by calling `e.preventDefault()`.
+
+#### Event Data
+
+##### e.axisRanges `Object`
+
+A hastable containing the initial range (min and max values) of *named* axes.
+The axis name is used as a key.
+
+#### Example
+
+    $("#chart").kendoChart({
+        valueAxis: {
+            name: "price"
+        },
+        ...
+    }
+
+    function onDragStart(e) {
+        var minPrice = e.axisRanges.price.min;
+    }
+
+##### e.originalEvent `Object`
+
+The original user event that triggered the drag action.
+
+### drag
+
+Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+#### Event Data
+
+##### e.axisRanges `Object`
+
+A hastable containing the current range (min and max values) of *named* axes.
+The axis name is used as a key.
+
+##### e.originalEvent `Object`
+
+The original user event that triggered the drag action.
+
+### dragEnd
+
+Fires as long as the user is dragging the chart.
+
+#### Event Data
+
+##### e.axisRanges `Object`
+
+A hastable containing the current range (min and max values) of *named* axes.
+The axis name is used as a key.
+
+##### e.originalEvent `Object`
+
+The original user event that triggered the drag action.
+
 ### plotAreaClick
 
 Fires when plot area is clicked.
