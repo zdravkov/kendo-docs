@@ -7787,6 +7787,15 @@ A negative delta indicates "zoom in", while a positive "zoom out".
 
 The original user event that triggered the zoom action.
 
+This event can be used to prevent the default mousewheel action (scroll).
+
+#### Example
+
+    function onZoom(e) {
+        // Prevent window scroll
+        e.originalEvent.preventDefault();
+    }
+
 ### zoomEnd
 
 Fires when the user stops zooming the chart.
