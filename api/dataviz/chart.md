@@ -7559,19 +7559,6 @@ The drag operation can be aborted by calling `e.preventDefault()`.
 A hastable containing the initial range (min and max values) of *named* axes.
 The axis name is used as a key.
 
-#### Example
-
-    $("#chart").kendoChart({
-        valueAxis: {
-            name: "price"
-        },
-        ...
-    }
-
-    function onDragStart(e) {
-        var minPrice = e.axisRanges.price.min;
-    }
-
 ##### e.originalEvent `Object`
 
 The original user event that triggered the drag action.
@@ -7584,8 +7571,25 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
 
 ##### e.axisRanges `Object`
 
-A hastable containing the current range (min and max values) of *named* axes.
+A hastable containing the suggested current range (min and max values) of *named* axes.
 The axis name is used as a key.
+
+Note that the axis ranges are not updated automatically. You need to call
+set_options with either the suggested or custom min/max values for them to take effect.
+
+#### Example
+
+    $("#chart").kendoChart({
+        valueAxis: {
+            name: "price"
+        },
+        drag: onDrag
+        ...
+    }
+
+    function onDrag(e) {
+        var minPrice = e.axisRanges.price.min;
+    }
 
 ##### e.originalEvent `Object`
 
@@ -7593,13 +7597,13 @@ The original user event that triggered the drag action.
 
 ### dragEnd
 
-Fires as long as the user is dragging the chart.
+Fires when the user stops dragging the chart.
 
 #### Event Data
 
 ##### e.axisRanges `Object`
 
-A hastable containing the current range (min and max values) of *named* axes.
+A hastable containing the final range (min and max values) of *named* axes.
 The axis name is used as a key.
 
 ##### e.originalEvent `Object`
@@ -7727,3 +7731,74 @@ The original data item (when binding to dataSource).
 ##### e.element `Object`
 
 The DOM element of the data point.
+
+### zoomStart
+
+Fires when the user has used the mousewheel to zoom the chart.
+
+The zoom operation can be aborted by calling `e.preventDefault()`.
+
+#### Event Data
+
+##### e.axisRanges `Object`
+
+A hastable containing the initial range (min and max values) of *named* axes.
+The axis name is used as a key.
+
+##### e.originalEvent `Object`
+
+The original user event that triggered the zoom action.
+
+### zoom
+
+Fires as long as the user is zooming the chart using the mousewheel.
+
+#### Event Data
+
+##### e.axisRanges `Object`
+
+A hastable containing the suggested current range (min and max values) of *named* axes.
+The axis name is used as a key.
+
+Note that the axis ranges are not updated automatically. You need to call
+set_options with either the suggested or custom min/max values for them to take effect.
+
+#### Example
+
+    $("#chart").kendoChart({
+        valueAxis: {
+            name: "price"
+        },
+        zoom: onZoom
+        ...
+    }
+
+    function onZoom(e) {
+        var minPrice = e.axisRanges.price.min;
+    }
+
+##### e.delta `Number`
+
+A number that indicates the zoom amount and direction.
+
+A negative delta indicates "zoom in", while a positive "zoom out".
+
+##### e.originalEvent `Object`
+
+The original user event that triggered the zoom action.
+
+### zoomEnd
+
+Fires when the user stops zooming the chart.
+
+#### Event Data
+
+##### e.axisRanges `Object`
+
+A hastable containing the final range (min and max values) of *named* axes.
+The axis name is used as a key.
+
+##### e.originalEvent `Object`
+
+The original user event that triggered the zoom action.
+
