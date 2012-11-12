@@ -314,21 +314,6 @@ The interval between minor divisions.
 ### scale.ranges `Array`
 
 The ranges of the scale.
-The range fields:
-
-
-#### *"from"*
-
-The start position of the range in scale units.
-
-#### *"to"*
-
-The end position of the range in scale units.
-
-#### *"color"*
-
-The color of the range.
-Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
 
@@ -341,6 +326,23 @@ Any valid CSS color string will work here, including hex and rgb.
             }]
         }
      });
+
+### scale.ranges.from `Number`
+
+The start position of the range in scale units.
+
+### scale.ranges.to `Number`
+
+The end position of the range in scale units.
+
+### scale.ranges.opacity `Number`
+
+The opacity of the range.
+
+### scale.ranges.color `String`
+
+The color of the range.
+Any valid CSS color string will work here, including hex and rgb.
 
 ### scale.reverse `Boolean`*(default: false)*
 
