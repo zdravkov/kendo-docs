@@ -7,7 +7,7 @@ publish: true
 
 # Tutorial: Tips for Creating Accessible Charts with Kendo UI DataViz
 
-**Summary**: In this post, I’ll share five practical tips (with code samples and illustrative videos) for making Kendo UI DataViz charts and graphs more accessible. These are things you can quickly and easily do in your own apps today to make it easier for disabled users to use assistive technologies to interact with your content.
+**Summary**: In this article, we'll look at five practical tips (with code samples and illustrative videos) for making Kendo UI DataViz charts and graphs more accessible. These are things you can quickly and easily do in your own apps today to make it easier for disabled users to use assistive technologies to interact with your content.
 
 ## The Case for Accessible Charts
 
