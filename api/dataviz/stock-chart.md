@@ -647,6 +647,7 @@ Specifies the discrete **baseUnitStep** values when
 either **baseUnit** is set to "fit" or **baseUnitStep** is set to "auto".
 
 The default configuration is as follows:
+
 * `minutes: [1, 2, 5, 15, 30]`
 * `hours: [1, 2, 3, 6, 12]`
 * `days: [1, 2, 3]`
