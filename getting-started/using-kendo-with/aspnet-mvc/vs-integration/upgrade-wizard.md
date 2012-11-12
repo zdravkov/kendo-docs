@@ -11,7 +11,7 @@ This help topic shows how to upgrade a Kendo UI for ASP.NET MVC Application.
 The Upgrade Wizard has two main purposes:
 
 - Check and retrieve the latest available Kendo UI for ASP.NET MVC  release
-- Change the version of Kendo UI for ASP.NET MVC the projects in the solution use.
+- Change the version of Kendo UI for ASP.NET MVC in the projects in the solution use.
 
 The Upgrade Wizard can be launched from **Visual Studio | Telerik | Kendo UI for ASP.NET MVC | Upgrade Wizard**
   
