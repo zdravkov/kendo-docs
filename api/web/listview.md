@@ -139,6 +139,10 @@ Specifies ListView item template.
          template: kendo.template($("#template").html())
      });
 
+### altTemplate `Function`
+
+Template to be used for rendering the alternate items in the listview.
+
 ## Methods
 
 ### add
