@@ -68,17 +68,6 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
 
 
 
-### ranges `Object`
-
-The ranges of the scale.
-The range fields:
-
-#### Example
-    <kendo:linearGauge ranges="ranges">
-    </kendo:linearGauge>
-
-
-
 ### reverse `boolean`
 
 Reverses the axis direction - values increase from right to left and from top to bottom.
@@ -101,6 +90,18 @@ The position of the gauge.
 
 ## Child JSP Tags
 
+### kendo:linearGauge-scale-line
+
+Configures the axis line.
+
+More documentation is available at [kendo:linearGauge-scale-line](/api/wrappers/jsp/lineargauge/scale-line).
+
+#### Example
+
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-line></kendo:linearGauge-scale-line>
+    </kendo:linearGauge-scale>
+ 
 ### kendo:linearGauge-scale-labels
 
 Configures the scale labels.
@@ -135,5 +136,17 @@ More documentation is available at [kendo:linearGauge-scale-minorTicks](/api/wra
 
     <kendo:linearGauge-scale>
         <kendo:linearGauge-scale-minorTicks></kendo:linearGauge-scale-minorTicks>
+    </kendo:linearGauge-scale>
+ 
+### kendo:linearGauge-scale-ranges
+
+The ranges of the scale.
+
+More documentation is available at [kendo:linearGauge-scale-ranges](/api/wrappers/jsp/lineargauge/scale-ranges).
+
+#### Example
+
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-ranges></kendo:linearGauge-scale-ranges>
     </kendo:linearGauge-scale>
  

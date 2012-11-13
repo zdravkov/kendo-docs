@@ -182,22 +182,22 @@ The text that will be displayed in the column header.
 
 
 
-### values `Object`
-
-An array of values that will be used in a foreign key column. Each item in the array should have a
-
-#### Example
-    <kendo:grid values="values">
-    </kendo:grid>
-
-
-
 ### width `String`
 
 The width of the column.
 
 #### Example
     <kendo:grid width="width">
+    </kendo:grid>
+
+
+
+### menu `boolean`
+
+Indicates whether the column should be visible in column menu.
+
+#### Example
+    <kendo:grid menu="menu">
     </kendo:grid>
 
 

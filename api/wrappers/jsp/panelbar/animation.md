@@ -16,27 +16,27 @@ A JSP tag representing Kendo Animation.
 
 ## Child JSP Tags
 
-### kendo:panelBar-animation-close
+### kendo:panelBar-animation-collapse
 
 The visual animation(s) that will be used when
 
-More documentation is available at [kendo:panelBar-animation-close](/api/wrappers/jsp/panelbar/animation-close).
+More documentation is available at [kendo:panelBar-animation-collapse](/api/wrappers/jsp/panelbar/animation-collapse).
 
 #### Example
 
     <kendo:panelBar-animation>
-        <kendo:panelBar-animation-close></kendo:panelBar-animation-close>
+        <kendo:panelBar-animation-collapse></kendo:panelBar-animation-collapse>
     </kendo:panelBar-animation>
  
-### kendo:panelBar-animation-open
+### kendo:panelBar-animation-expand
 
 The visual animation(s) that will be used when opening items.
 
-More documentation is available at [kendo:panelBar-animation-open](/api/wrappers/jsp/panelbar/animation-open).
+More documentation is available at [kendo:panelBar-animation-expand](/api/wrappers/jsp/panelbar/animation-expand).
 
 #### Example
 
     <kendo:panelBar-animation>
-        <kendo:panelBar-animation-open></kendo:panelBar-animation-open>
+        <kendo:panelBar-animation-expand></kendo:panelBar-animation-expand>
     </kendo:panelBar-animation>
  

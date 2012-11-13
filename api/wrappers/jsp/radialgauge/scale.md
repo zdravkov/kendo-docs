@@ -68,17 +68,6 @@ The interval between minor divisions.
 
 
 
-### ranges `Object`
-
-The ranges of the scale.
-The range fields:
-
-#### Example
-    <kendo:radialGauge ranges="ranges">
-    </kendo:radialGauge>
-
-
-
 ### reverse `boolean`
 
 Reverses the scale direction - values are increase anticlockwise.
@@ -136,5 +125,17 @@ More documentation is available at [kendo:radialGauge-scale-minorTicks](/api/wra
 
     <kendo:radialGauge-scale>
         <kendo:radialGauge-scale-minorTicks></kendo:radialGauge-scale-minorTicks>
+    </kendo:radialGauge-scale>
+ 
+### kendo:radialGauge-scale-ranges
+
+The ranges of the scale.
+
+More documentation is available at [kendo:radialGauge-scale-ranges](/api/wrappers/jsp/radialgauge/scale-ranges).
+
+#### Example
+
+    <kendo:radialGauge-scale>
+        <kendo:radialGauge-scale-ranges></kendo:radialGauge-scale-ranges>
     </kendo:radialGauge-scale>
  

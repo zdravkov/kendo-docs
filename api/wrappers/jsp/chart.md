@@ -73,6 +73,51 @@ and is about to render it.
 
 
 
+### dragStart `String`
+
+Fires when the user has used the mouse or a swipe gesture to drag the chart.
+
+#### Example
+    <kendo:chart dragStart="handle_dragStart">
+    </kendo:chart>
+    <script>
+        function handle_dragStart(e) {
+            // Code to handle the dragStart event.
+        }
+    </script>
+
+
+
+### drag `String`
+
+Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+#### Example
+    <kendo:chart drag="handle_drag">
+    </kendo:chart>
+    <script>
+        function handle_drag(e) {
+            // Code to handle the drag event.
+        }
+    </script>
+
+
+
+### dragEnd `String`
+
+Fires when the user stops dragging the chart.
+
+#### Example
+    <kendo:chart dragEnd="handle_dragEnd">
+    </kendo:chart>
+    <script>
+        function handle_dragEnd(e) {
+            // Code to handle the dragEnd event.
+        }
+    </script>
+
+
+
 ### plotAreaClick `String`
 
 Fires when plot area is clicked.
@@ -113,6 +158,51 @@ Fires when chart series are hovered.
     <script>
         function handle_seriesHover(e) {
             // Code to handle the seriesHover event.
+        }
+    </script>
+
+
+
+### zoomStart `String`
+
+Fires when the user has used the mousewheel to zoom the chart.
+
+#### Example
+    <kendo:chart zoomStart="handle_zoomStart">
+    </kendo:chart>
+    <script>
+        function handle_zoomStart(e) {
+            // Code to handle the zoomStart event.
+        }
+    </script>
+
+
+
+### zoom `String`
+
+Fires as long as the user is zooming the chart using the mousewheel.
+
+#### Example
+    <kendo:chart zoom="handle_zoom">
+    </kendo:chart>
+    <script>
+        function handle_zoom(e) {
+            // Code to handle the zoom event.
+        }
+    </script>
+
+
+
+### zoomEnd `String`
+
+Fires when the user stops zooming the chart.
+
+#### Example
+    <kendo:chart zoomEnd="handle_zoomEnd">
+    </kendo:chart>
+    <script>
+        function handle_zoomEnd(e) {
+            // Code to handle the zoomEnd event.
         }
     </script>
 
@@ -152,6 +242,51 @@ and is about to render it.
 
 
 
+### dragStart `String`
+
+Fires when the user has used the mouse or a swipe gesture to drag the chart.
+
+#### Example
+    <kendo:chart dragStart="handle_dragStart">
+    </kendo:chart>
+    <script>
+        function handle_dragStart(e) {
+            // Code to handle the dragStart event.
+        }
+    </script>
+
+
+
+### drag `String`
+
+Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+#### Example
+    <kendo:chart drag="handle_drag">
+    </kendo:chart>
+    <script>
+        function handle_drag(e) {
+            // Code to handle the drag event.
+        }
+    </script>
+
+
+
+### dragEnd `String`
+
+Fires when the user stops dragging the chart.
+
+#### Example
+    <kendo:chart dragEnd="handle_dragEnd">
+    </kendo:chart>
+    <script>
+        function handle_dragEnd(e) {
+            // Code to handle the dragEnd event.
+        }
+    </script>
+
+
+
 ### plotAreaClick `String`
 
 Fires when plot area is clicked.
@@ -196,6 +331,51 @@ Fires when chart series are hovered.
     </script>
 
 
+
+### zoomStart `String`
+
+Fires when the user has used the mousewheel to zoom the chart.
+
+#### Example
+    <kendo:chart zoomStart="handle_zoomStart">
+    </kendo:chart>
+    <script>
+        function handle_zoomStart(e) {
+            // Code to handle the zoomStart event.
+        }
+    </script>
+
+
+
+### zoom `String`
+
+Fires as long as the user is zooming the chart using the mousewheel.
+
+#### Example
+    <kendo:chart zoom="handle_zoom">
+    </kendo:chart>
+    <script>
+        function handle_zoom(e) {
+            // Code to handle the zoom event.
+        }
+    </script>
+
+
+
+### zoomEnd `String`
+
+Fires when the user stops zooming the chart.
+
+#### Example
+    <kendo:chart zoomEnd="handle_zoomEnd">
+    </kendo:chart>
+    <script>
+        function handle_zoomEnd(e) {
+            // Code to handle the zoomEnd event.
+        }
+    </script>
+
+
 ## Event Tags
            
 
@@ -230,6 +410,57 @@ and is about to render it.
                 }
             </script>
         </kendo:chart-dataBound>
+    </kendo:chart>
+
+ 
+
+### kendo:chart-dragStart
+
+Fires when the user has used the mouse or a swipe gesture to drag the chart.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-dragStart>
+            <script>
+                function(e) {
+                    // Code to handle the dragStart event.
+                }
+            </script>
+        </kendo:chart-dragStart>
+    </kendo:chart>
+
+ 
+
+### kendo:chart-drag
+
+Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-drag>
+            <script>
+                function(e) {
+                    // Code to handle the drag event.
+                }
+            </script>
+        </kendo:chart-drag>
+    </kendo:chart>
+
+ 
+
+### kendo:chart-dragEnd
+
+Fires when the user stops dragging the chart.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-dragEnd>
+            <script>
+                function(e) {
+                    // Code to handle the dragEnd event.
+                }
+            </script>
+        </kendo:chart-dragEnd>
     </kendo:chart>
 
  
@@ -285,6 +516,57 @@ Fires when chart series are hovered.
 
  
 
+### kendo:chart-zoomStart
+
+Fires when the user has used the mousewheel to zoom the chart.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-zoomStart>
+            <script>
+                function(e) {
+                    // Code to handle the zoomStart event.
+                }
+            </script>
+        </kendo:chart-zoomStart>
+    </kendo:chart>
+
+ 
+
+### kendo:chart-zoom
+
+Fires as long as the user is zooming the chart using the mousewheel.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-zoom>
+            <script>
+                function(e) {
+                    // Code to handle the zoom event.
+                }
+            </script>
+        </kendo:chart-zoom>
+    </kendo:chart>
+
+ 
+
+### kendo:chart-zoomEnd
+
+Fires when the user stops zooming the chart.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-zoomEnd>
+            <script>
+                function(e) {
+                    // Code to handle the zoomEnd event.
+                }
+            </script>
+        </kendo:chart-zoomEnd>
+    </kendo:chart>
+
+ 
+
 ## Child JSP Tags
 
 ### kendo:chart-categoryAxis
@@ -336,6 +618,18 @@ More documentation is available at [kendo:chart-legend](/api/wrappers/jsp/chart/
         <kendo:chart-legend></kendo:chart-legend>
     </kendo:chart>
  
+### kendo:chart-panes
+
+The chart panes configuration.
+
+More documentation is available at [kendo:chart-panes](/api/wrappers/jsp/chart/panes).
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-panes></kendo:chart-panes>
+    </kendo:chart>
+ 
 ### kendo:chart-plotArea
 
 The plot area configuration options. This is the area containing the plotted series.
@@ -372,18 +666,6 @@ More documentation is available at [kendo:chart-tooltip](/api/wrappers/jsp/chart
         <kendo:chart-tooltip></kendo:chart-tooltip>
     </kendo:chart>
  
-### kendo:chart-seriesDefaults
-
-Default values for each series.
-
-More documentation is available at [kendo:chart-seriesDefaults](/api/wrappers/jsp/chart/seriesdefaults).
-
-#### Example
-
-    <kendo:chart>
-        <kendo:chart-seriesDefaults></kendo:chart-seriesDefaults>
-    </kendo:chart>
- 
 ### kendo:chart-valueAxis
 
 The value axis configuration options.
@@ -411,7 +693,8 @@ More documentation is available at [kendo:chart-xAxis](/api/wrappers/jsp/chart/x
  
 ### kendo:chart-yAxis
 
-The axis type.
+Scatter charts Y-axis configuration options.
+Includes
 
 More documentation is available at [kendo:chart-yAxis](/api/wrappers/jsp/chart/yaxis).
 
@@ -420,4 +703,4 @@ More documentation is available at [kendo:chart-yAxis](/api/wrappers/jsp/chart/y
     <kendo:chart>
         <kendo:chart-yAxis></kendo:chart-yAxis>
     </kendo:chart>
-      
+            

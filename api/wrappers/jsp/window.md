@@ -145,6 +145,26 @@ Specifies whether the window will be initially visible.
 
 
 
+### width `float`
+
+Specifies width of the window.
+
+#### Example
+    <kendo:window width="width">
+    </kendo:window>
+
+
+
+### height `float`
+
+Specifies height of the window.
+
+#### Example
+    <kendo:window height="height">
+    </kendo:window>
+
+
+
 ### activate `String`
 
 Triggered when a Window has finished its opening animation.

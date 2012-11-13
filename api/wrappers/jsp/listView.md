@@ -22,21 +22,6 @@ Indicates whether the list view will call read on the DataSource initially.
 
 
 
-### editTemplate `String`
-
-Specifies ListView item template in edit mode.
-
-#### Example
-    <kendo:listView editTemplate="handle_editTemplate">
-    </kendo:listView>
-    <script>
-        function handle_editTemplate(e) {
-            // Code to handle the editTemplate event.
-        }
-    </script>
-
-
-
 ### navigatable `boolean`
 
 Indicates whether keyboard navigation is enabled/disabled.
@@ -59,16 +44,51 @@ Indicates whether selection is enabled/disabled. Possible values:
 
 ### template `String`
 
-Specifies ListView item template.
+The id of the template used for rendering the items in the listview.
 
 #### Example
-    <kendo:listView template="handle_template">
+    <kendo:listView template="template">
     </kendo:listView>
-    <script>
-        function handle_template(e) {
-            // Code to handle the template event.
-        }
-    </script>
+
+
+
+### pageable `boolean`
+
+Indicates whether paging is enabled/disabled.
+
+#### Example
+    <kendo:listView pageable="pageable">
+    </kendo:listView>
+
+
+
+### editTemplate `String`
+
+Specifies ListView item template in edit mode.
+
+#### Example
+    <kendo:listView editTemplate="editTemplate">
+    </kendo:listView>
+
+
+
+### altTemplate `String`
+
+Template to be used for rendering the alternate items in the listview.
+
+#### Example
+    <kendo:listView altTemplate="altTemplate">
+    </kendo:listView>
+
+
+
+### tagName `String`
+
+Specifies ListView wrapper element tag name.
+
+#### Example
+    <kendo:listView tagName="tagName">
+    </kendo:listView>
 
 
 
@@ -268,39 +288,5 @@ Fires before the list view item is removed.
 
  
 
-### kendo:listView-editTemplate
-
-Specifies ListView item template in edit mode.
-
-#### Example
-    <kendo:listView>
-        <kendo:listView-editTemplate>
-            <script>
-                function(e) {
-                    // Code to handle the editTemplate event.
-                }
-            </script>
-        </kendo:listView-editTemplate>
-    </kendo:listView>
-
- 
-
-### kendo:listView-template
-
-Specifies ListView item template.
-
-#### Example
-    <kendo:listView>
-        <kendo:listView-template>
-            <script>
-                function(e) {
-                    // Code to handle the template event.
-                }
-            </script>
-        </kendo:listView-template>
-    </kendo:listView>
-
- 
-
 ## Child JSP Tags
-      
+    

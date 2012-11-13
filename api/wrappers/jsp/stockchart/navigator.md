@@ -14,21 +14,20 @@ A JSP tag representing Kendo Navigator.
     </kendo:stockChart>
 
 
-## Configuration Attributes
+## Child JSP Tags
 
-
-### series `Object`
+### kendo:stockChart-navigator-series
 
 Array of series definitions.
 
+More documentation is available at [kendo:stockChart-navigator-series](/api/wrappers/jsp/stockchart/navigator-series).
+
 #### Example
-    <kendo:stockChart series="series">
-    </kendo:stockChart>
 
-
-
-## Child JSP Tags
-
+    <kendo:stockChart-navigator>
+        <kendo:stockChart-navigator-series></kendo:stockChart-navigator-series>
+    </kendo:stockChart-navigator>
+ 
 ### kendo:stockChart-navigator-select
 
 Specifies the initially selected range.

@@ -12,21 +12,6 @@ A JSP tag representing Kendo Grid.
 ## Configuration Attributes
 
 
-### altRowTemplate `String`
-
-Template to be used for rendering the alternate rows in the grid.
-
-#### Example
-    <kendo:grid altRowTemplate="handle_altRowTemplate">
-    </kendo:grid>
-    <script>
-        function handle_altRowTemplate(e) {
-            // Code to handle the altRowTemplate event.
-        }
-    </script>
-
-
-
 ### autoBind `boolean`
 
 Indicates whether the grid will call read on the DataSource initially.
@@ -37,19 +22,13 @@ Indicates whether the grid will call read on the DataSource initially.
 
 
 
-### detailTemplate `String`
+### columnMenu `boolean`
 
-Template to be used for rendering the detail rows in the grid.
-See the
+Enables column header menu Further configuration is available via [kendo:grid-columnMenu](#kendo-grid-columnMenu). 
 
 #### Example
-    <kendo:grid detailTemplate="handle_detailTemplate">
+    <kendo:grid columnMenu="columnMenu">
     </kendo:grid>
-    <script>
-        function handle_detailTemplate(e) {
-            // Code to handle the detailTemplate event.
-        }
-    </script>
 
 
 
@@ -69,6 +48,26 @@ Indicates whether filtering is enabled/disabled.
 
 #### Example
     <kendo:grid filterable="filterable">
+    </kendo:grid>
+
+
+
+### reorderable `boolean`
+
+Indicates whether column reordering is enabled/disable.
+
+#### Example
+    <kendo:grid reorderable="reorderable">
+    </kendo:grid>
+
+
+
+### resizable `boolean`
+
+Indicates whether column resizing is enabled/disable.
+
+#### Example
+    <kendo:grid resizable="resizable">
     </kendo:grid>
 
 
@@ -113,21 +112,6 @@ Indicates whether paging is enabled/disabled. Further configuration is available
 
 
 
-### rowTemplate `String`
-
-Template to be used for rendering the rows in the grid.
-
-#### Example
-    <kendo:grid rowTemplate="handle_rowTemplate">
-    </kendo:grid>
-    <script>
-        function handle_rowTemplate(e) {
-            // Code to handle the rowTemplate event.
-        }
-    </script>
-
-
-
 ### scrollable `boolean`
 
 Enable/disable grid scrolling. Further configuration is available via [kendo:grid-scrollable](#kendo-grid-scrollable). 
@@ -154,6 +138,36 @@ Defines whether grid columns are sortable. Further configuration is available vi
 
 #### Example
     <kendo:grid sortable="sortable">
+    </kendo:grid>
+
+
+
+### detailTemplate `String`
+
+The id of the template used for rendering the detail rows in the grid.
+
+#### Example
+    <kendo:grid detailTemplate="detailTemplate">
+    </kendo:grid>
+
+
+
+### rowTemplate `String`
+
+The id of the template used for rendering the rows in the grid.
+
+#### Example
+    <kendo:grid rowTemplate="rowTemplate">
+    </kendo:grid>
+
+
+
+### altRowTemplate `String`
+
+The id of the template used for rendering the alternate rows in the grid.
+
+#### Example
+    <kendo:grid altRowTemplate="altRowTemplate">
     </kendo:grid>
 
 
@@ -198,6 +212,21 @@ Fires when the grid has received data from the data source.
     <script>
         function handle_dataBound(e) {
             // Code to handle the dataBound event.
+        }
+    </script>
+
+
+
+### dataBinding `String`
+
+Fires when the grid is about to be rendered.
+
+#### Example
+    <kendo:grid dataBinding="handle_dataBinding">
+    </kendo:grid>
+    <script>
+        function handle_dataBinding(e) {
+            // Code to handle the dataBinding event.
         }
     </script>
 
@@ -356,6 +385,21 @@ Fires when the grid has received data from the data source.
 
 
 
+### dataBinding `String`
+
+Fires when the grid is about to be rendered.
+
+#### Example
+    <kendo:grid dataBinding="handle_dataBinding">
+    </kendo:grid>
+    <script>
+        function handle_dataBinding(e) {
+            // Code to handle the dataBinding event.
+        }
+    </script>
+
+
+
 ### detailCollapse `String`
 
 Fires when the grid detail row is collapsed.
@@ -461,7 +505,7 @@ Fires before the grid calls DataSource sync.
 
 
 ## Event Tags
-       
+        
 
 ### kendo:grid-change
 
@@ -510,6 +554,23 @@ Fires when the grid has received data from the data source.
                 }
             </script>
         </kendo:grid-dataBound>
+    </kendo:grid>
+
+ 
+
+### kendo:grid-dataBinding
+
+Fires when the grid is about to be rendered.
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-dataBinding>
+            <script>
+                function(e) {
+                    // Code to handle the dataBinding event.
+                }
+            </script>
+        </kendo:grid-dataBinding>
     </kendo:grid>
 
  
@@ -633,58 +694,6 @@ Fires before the grid calls DataSource sync.
 
  
 
-### kendo:grid-altRowTemplate
-
-Template to be used for rendering the alternate rows in the grid.
-
-#### Example
-    <kendo:grid>
-        <kendo:grid-altRowTemplate>
-            <script>
-                function(e) {
-                    // Code to handle the altRowTemplate event.
-                }
-            </script>
-        </kendo:grid-altRowTemplate>
-    </kendo:grid>
-
- 
-
-### kendo:grid-detailTemplate
-
-Template to be used for rendering the detail rows in the grid.
-See the
-
-#### Example
-    <kendo:grid>
-        <kendo:grid-detailTemplate>
-            <script>
-                function(e) {
-                    // Code to handle the detailTemplate event.
-                }
-            </script>
-        </kendo:grid-detailTemplate>
-    </kendo:grid>
-
- 
-
-### kendo:grid-rowTemplate
-
-Template to be used for rendering the rows in the grid.
-
-#### Example
-    <kendo:grid>
-        <kendo:grid-rowTemplate>
-            <script>
-                function(e) {
-                    // Code to handle the rowTemplate event.
-                }
-            </script>
-        </kendo:grid-rowTemplate>
-    </kendo:grid>
-
- 
-
 ## Child JSP Tags
 
 ### kendo:grid-columns
@@ -697,6 +706,18 @@ More documentation is available at [kendo:grid-columns](/api/wrappers/jsp/grid/c
 
     <kendo:grid>
         <kendo:grid-columns></kendo:grid-columns>
+    </kendo:grid>
+ 
+### kendo:grid-columnMenu
+
+Enables column header menu
+
+More documentation is available at [kendo:grid-columnMenu](/api/wrappers/jsp/grid/columnmenu).
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-columnMenu></kendo:grid-columnMenu>
     </kendo:grid>
  
 ### kendo:grid-editable
@@ -772,4 +793,4 @@ More documentation is available at [kendo:grid-toolbar](/api/wrappers/jsp/grid/t
     <kendo:grid>
         <kendo:grid-toolbar></kendo:grid-toolbar>
     </kendo:grid>
-              
+            

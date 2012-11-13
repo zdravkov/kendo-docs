@@ -24,7 +24,7 @@ Specifies the culture info used by the widget.
 
 ### dates `Object`
 
-Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
+Specifies a list of dates, which will be passed to the month template of the DateView. All dates, which match the date portion of the selected date will be used to re-bind the TimeView.
 
 #### Example
     <kendo:dateTimePicker dates="dates">

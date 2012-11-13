@@ -17,6 +17,26 @@ A JSP tag representing Kendo SeriesItem.
 ## Configuration Attributes
 
 
+### type `String`
+
+The type of the series.
+
+#### Example
+    <kendo:chart type="type">
+    </kendo:chart>
+
+
+
+###  `Object`
+
+Available options for area series:
+
+#### Example
+    <kendo:chart ="">
+    </kendo:chart>
+
+
+
 ### data `Object`
 
 Array of data points.
@@ -41,7 +61,6 @@ The data field containing the series value.
 
 Name template for auto-generated
 series when binding to grouped data.
-Template variables:
 
 #### Example
     <kendo:chart groupNameTemplate="groupNameTemplate">
@@ -55,16 +74,6 @@ The series name visible in the legend.
 
 #### Example
     <kendo:chart name="name">
-    </kendo:chart>
-
-
-
-###  `Object`
-
-Available options for area series:
-
-#### Example
-    <kendo:chart ="">
     </kendo:chart>
 
 
@@ -157,6 +166,17 @@ Space between bars.
 
 #### Example
     <kendo:chart spacing="spacing">
+    </kendo:chart>
+
+
+
+### aField `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+#### Example
+    <kendo:chart aField="aField">
     </kendo:chart>
 
 
@@ -397,7 +417,7 @@ The data field containing the close value.
 
 ### stack `Object`
 
-A value indicating if the series should be stacked.
+Indicates that the series should be stacked in a group with the specified name.
 
 #### Example
     <kendo:chart-seriesItem stack="stack">

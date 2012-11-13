@@ -12,6 +12,16 @@ A JSP tag representing Kendo PanelBar.
 ## Configuration Attributes
 
 
+### animation `boolean`
+
+A collection of visual animations used when Further configuration is available via [kendo:panelBar-animation](#kendo-panelBar-animation). 
+
+#### Example
+    <kendo:panelBar animation="animation">
+    </kendo:panelBar>
+
+
+
 ### expandMode `String`
 
 Specifies how the

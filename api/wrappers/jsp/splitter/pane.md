@@ -37,7 +37,7 @@ Specifies whether a pane is collapsible (
 
 
 
-### contentUrl `boolean`
+### contentUrl `String`
 
 Specifies the URL from which to load the content of a pane.
 

@@ -42,17 +42,6 @@ Allows custom stylesheets to be included within the editing area.
 
 
 
-### tools `Object`
-
-A collection of tools that should render a button, combobox, etc, to interact with the Editor. Custom tools are defined
-as a collection of required properties, while the insertHtml  tool requires a collection of text-value pairs
-
-#### Example
-    <kendo:editor tools="tools">
-    </kendo:editor>
-
-
-
 ### change `String`
 
 Fires when Editor is blurred and its content has changed.
@@ -236,7 +225,7 @@ Fires when the Editor selection has changed.
 
 
 ## Event Tags
- 
+  
 
 ### kendo:editor-change
 
@@ -342,6 +331,19 @@ Fires when the Editor selection has changed.
 
 ## Child JSP Tags
 
+### kendo:editor-tools
+
+A collection of tools that should render a button, combobox, etc, to interact with the Editor. Custom tools are defined
+as a collection of required properties, while the insertHtml  tool requires a collection of text-value pairs
+
+More documentation is available at [kendo:editor-tools](/api/wrappers/jsp/editor/tools).
+
+#### Example
+
+    <kendo:editor>
+        <kendo:editor-tools></kendo:editor-tools>
+    </kendo:editor>
+ 
 ### kendo:editor-imagebrowser
 
 Configuration for image browser dialog.

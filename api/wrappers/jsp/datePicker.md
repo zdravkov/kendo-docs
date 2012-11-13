@@ -22,6 +22,16 @@ Specifies the culture info used by the widget.
 
 
 
+### dates `Object`
+
+Specifies a list of dates, which will be passed to the month template.
+
+#### Example
+    <kendo:datePicker dates="dates">
+    </kendo:datePicker>
+
+
+
 ### depth `String`
 
 Specifies the navigation depth. The following

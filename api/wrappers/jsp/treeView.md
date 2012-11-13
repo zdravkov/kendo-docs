@@ -219,6 +219,21 @@ Triggered when a node gets selected.
 
 
 
+### navigate `String`
+
+Triggered when the user moves the focus on another node
+
+#### Example
+    <kendo:treeView navigate="handle_navigate">
+    </kendo:treeView>
+    <script>
+        function handle_navigate(e) {
+            // Code to handle the navigate event.
+        }
+    </script>
+
+
+
 ### Event Attributes
 
 
@@ -337,6 +352,21 @@ Triggered when a node gets selected.
     <script>
         function handle_select(e) {
             // Code to handle the select event.
+        }
+    </script>
+
+
+
+### navigate `String`
+
+Triggered when the user moves the focus on another node
+
+#### Example
+    <kendo:treeView navigate="handle_navigate">
+    </kendo:treeView>
+    <script>
+        function handle_navigate(e) {
+            // Code to handle the navigate event.
         }
     </script>
 
@@ -480,6 +510,23 @@ Triggered when a node gets selected.
 
  
 
+### kendo:treeView-navigate
+
+Triggered when the user moves the focus on another node
+
+#### Example
+    <kendo:treeView>
+        <kendo:treeView-navigate>
+            <script>
+                function(e) {
+                    // Code to handle the navigate event.
+                }
+            </script>
+        </kendo:treeView-navigate>
+    </kendo:treeView>
+
+ 
+
 ## Child JSP Tags
 
 ### kendo:treeView-animation
@@ -518,4 +565,4 @@ More documentation is available at [kendo:treeView-items](/api/wrappers/jsp/tree
     <kendo:treeView>
         <kendo:treeView-items></kendo:treeView-items>
     </kendo:treeView>
-         
+          

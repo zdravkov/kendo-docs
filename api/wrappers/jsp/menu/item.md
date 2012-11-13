@@ -27,6 +27,16 @@ Specifies the text displayed by the item
 
 
 
+### imageUrl `String`
+
+Specifies the URL of the image displayed by the item
+
+#### Example
+    <kendo:menu imageUrl="imageUrl">
+    </kendo:menu>
+
+
+
 ### spriteCssClass `String`
 
 Specifies the class name for the sprite image displayed by the item
@@ -43,6 +53,26 @@ Specifies whether the item is initially expanded
 
 #### Example
     <kendo:menu expanded="expanded">
+    </kendo:menu>
+
+
+
+### enabled `boolean`
+
+Specifies whether the item is initially enabled
+
+#### Example
+    <kendo:menu enabled="enabled">
+    </kendo:menu>
+
+
+
+### selected `boolean`
+
+Specifies whether the item is initially selected
+
+#### Example
+    <kendo:menu selected="selected">
     </kendo:menu>
 
 
