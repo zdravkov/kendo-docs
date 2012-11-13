@@ -86,21 +86,21 @@ copy **kendo.common.min.css**, the theme file (e.g. **kendo.default.min.css**), 
 7.  Configure your page to include the Kendo UI DataViz JavaScript and CSS files. **Important**: If you want to use Kendo UI Web and DataViz at the same time you should include **kendo.all.min.js** instead of **kendo.web.min.js** and **kendo.dataviz.min.js**. You
     can also create a custom JavaScript file using the [Custom Download Builder](http://www.kendoui.com/custom-download).
 
-     <link href="resources/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
-     <link href="resources/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
-     <link href="resources/styles/kendo.[theme].min.css" rel="stylesheet" type="text/css" />
-     <link href="resources/styles/kendo.dataviz.[theme].min.css" rel="stylesheet" type="text/css" />
+        <link href="resources/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
+        <link href="resources/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
+        <link href="resources/styles/kendo.[theme].min.css" rel="stylesheet" type="text/css" />
+        <link href="resources/styles/kendo.dataviz.[theme].min.css" rel="stylesheet" type="text/css" />
 
-     <script src="resources/js/jquery.min.js"></script>
-     <script src="resources/js/kendo.dataviz.min.js"></script>
+        <script src="resources/js/jquery.min.js"></script>
+        <script src="resources/js/kendo.dataviz.min.js"></script>
 
 9.  Add taglib mapping to the kendo tags
 
-    <%@taglib prefix="kendo" uri="http://www.kendoui.com/jsp/tags"%>
+        <%@taglib prefix="kendo" uri="http://www.kendoui.com/jsp/tags"%>
 
 10.  Use any Kendo UI HtmlHelper extension:
 
-    <kendo:datePicker name="datePicker"></kendo:datePicker>
+        <kendo:datePicker name="datePicker"></kendo:datePicker>
 
 ### Using CDN
 
@@ -109,5 +109,5 @@ You can include the JavaScript and CSS files from CDN. Don't forget to specify t
     <link href="http://cdn.kendostatic.com/<version>/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
     <link href="http://cdn.kendostatic.com/<version>/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
     <!-- jQuery is not hosted on Kendo CDN - include from another location -->
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="http://cdn.kendostatic.com/<version>/js/kendo.web.min.js"></script>
