@@ -248,6 +248,54 @@ The value of the gauge.
 
 Configures the scale.
 
+### scale.line `Object`
+
+Configures the axis line.
+
+### scale.line.color `String`*(default: "black")*
+
+The color of the lines. Any valid CSS color string will work here, including hex and rgb.
+
+### scale.line.dashType `String`*(default: "solid")*
+
+The dash type of the line.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### scale.line.visible `Boolean`*(default: true)*
+
+The visibility of the lines.
+
+### scale.line.width `Number`*(default: 1)*
+
+The width of the line..
+
 ### scale.labels `Object`
 
 Configures the scale labels.
@@ -268,7 +316,6 @@ The color of the border. Any valid CSS color string will work here, including he
 ### scale.labels.border.dashType `String`*(default: "solid")*
 
 The dash type of the border.
-
 
 #### *"solid"*
 
