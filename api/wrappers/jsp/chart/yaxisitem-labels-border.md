@@ -23,8 +23,8 @@ The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-labels-border color="color">
+    </kendo:chart-yAxisItem-labels-border>
 
 
 
@@ -33,8 +33,8 @@ hex and rgb.
 The dash type of the border.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-labels-border dashType="dashType">
+    </kendo:chart-yAxisItem-labels-border>
 
 
 
@@ -43,7 +43,7 @@ The dash type of the border.
 The width of the border.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-labels-border width="width">
+    </kendo:chart-yAxisItem-labels-border>
 
 

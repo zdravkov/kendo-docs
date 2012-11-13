@@ -19,21 +19,21 @@ A JSP tag representing Kendo Transport.
 
 ### create `String`
 
-Options for remote create data operation, or the URL of the remote service.
+Options for remote create data operation, or the URL of the remote service. Further configuration is available via [kendo:dataSource-transport-create](#kendo-dataSource-transport-create). 
 
 #### Example
-    <kendo:dataSource create="create">
-    </kendo:dataSource>
+    <kendo:dataSource-transport create="create">
+    </kendo:dataSource-transport>
 
 
 
 ### destroy `String`
 
-Options for remote destroy data operation, or the URL of the remote service.
+Options for remote destroy data operation, or the URL of the remote service. Further configuration is available via [kendo:dataSource-transport-destroy](#kendo-dataSource-transport-destroy). 
 
 #### Example
-    <kendo:dataSource destroy="destroy">
-    </kendo:dataSource>
+    <kendo:dataSource-transport destroy="destroy">
+    </kendo:dataSource-transport>
 
 
 
@@ -42,8 +42,8 @@ Options for remote destroy data operation, or the URL of the remote service.
 Convert the request parameters from dataSource format to remote service specific format.
 
 #### Example
-    <kendo:dataSource parameterMap="handle_parameterMap">
-    </kendo:dataSource>
+    <kendo:dataSource-transport parameterMap="handle_parameterMap">
+    </kendo:dataSource-transport>
     <script>
         function handle_parameterMap(e) {
             // Code to handle the parameterMap event.
@@ -54,21 +54,21 @@ Convert the request parameters from dataSource format to remote service specific
 
 ### read `String`
 
-Options for remote read data operation, or the URL of the remote service.
+Options for remote read data operation, or the URL of the remote service. Further configuration is available via [kendo:dataSource-transport-read](#kendo-dataSource-transport-read). 
 
 #### Example
-    <kendo:dataSource read="read">
-    </kendo:dataSource>
+    <kendo:dataSource-transport read="read">
+    </kendo:dataSource-transport>
 
 
 
 ### update `String`
 
-Options for remote update data operation, or the URL of the remote service.
+Options for remote update data operation, or the URL of the remote service. Further configuration is available via [kendo:dataSource-transport-update](#kendo-dataSource-transport-update). 
 
 #### Example
-    <kendo:dataSource update="update">
-    </kendo:dataSource>
+    <kendo:dataSource-transport update="update">
+    </kendo:dataSource-transport>
 
 
 

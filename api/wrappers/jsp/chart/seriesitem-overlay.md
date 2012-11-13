@@ -22,7 +22,7 @@ A JSP tag representing Kendo Overlay.
 The gradient name.
 
 #### Example
-    <kendo:chart gradient="gradient">
-    </kendo:chart>
+    <kendo:chart-seriesItem-overlay gradient="gradient">
+    </kendo:chart-seriesItem-overlay>
 
 

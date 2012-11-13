@@ -22,8 +22,8 @@ A JSP tag representing Kendo Legend.
 The background color of the legend. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-legend background="background">
+    </kendo:stockChart-legend>
 
 
 
@@ -32,8 +32,8 @@ The background color of the legend. Any valid CSS color string will work here, i
 The margin of the legend.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-legend margin="margin">
+    </kendo:stockChart-legend>
 
 
 
@@ -44,8 +44,8 @@ For instance, a value of 20 will move the legend 20 pixels to the right of it's 
 to the left of the current position.
 
 #### Example
-    <kendo:stockChart offsetX="offsetX">
-    </kendo:stockChart>
+    <kendo:stockChart-legend offsetX="offsetX">
+    </kendo:stockChart-legend>
 
 
 
@@ -56,8 +56,8 @@ For instance, a value of 20 will move the legend 20 pixels down from it's initia
 upwards from the current position.
 
 #### Example
-    <kendo:stockChart offsetY="offsetY">
-    </kendo:stockChart>
+    <kendo:stockChart-legend offsetY="offsetY">
+    </kendo:stockChart-legend>
 
 
 
@@ -66,8 +66,8 @@ upwards from the current position.
 The padding of the legend.
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-legend padding="padding">
+    </kendo:stockChart-legend>
 
 
 
@@ -76,8 +76,8 @@ The padding of the legend.
 The positions of the legend.
 
 #### Example
-    <kendo:stockChart position="position">
-    </kendo:stockChart>
+    <kendo:stockChart-legend position="position">
+    </kendo:stockChart-legend>
 
 
 
@@ -86,8 +86,8 @@ The positions of the legend.
 The visibility of the legend.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-legend visible="visible">
+    </kendo:stockChart-legend>
 
 
 

@@ -22,8 +22,8 @@ A JSP tag representing Kendo SeriesItem.
 The type of the series.
 
 #### Example
-    <kendo:stockChart type="type">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem type="type">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -32,8 +32,8 @@ The type of the series.
 Available options for area series:
 
 #### Example
-    <kendo:stockChart ="">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem ="">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -42,8 +42,8 @@ Available options for area series:
 Array of data points.
 
 #### Example
-    <kendo:stockChart data="data">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem data="data">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -52,8 +52,8 @@ Array of data points.
 The data field containing the series value.
 
 #### Example
-    <kendo:stockChart field="field">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem field="field">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -63,8 +63,8 @@ Name template for auto-generated
 series when binding to grouped data.
 
 #### Example
-    <kendo:stockChart groupNameTemplate="groupNameTemplate">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem groupNameTemplate="groupNameTemplate">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -73,8 +73,8 @@ series when binding to grouped data.
 The series name visible in the legend.
 
 #### Example
-    <kendo:stockChart name="name">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem name="name">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -85,8 +85,8 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return value is displayed instead of the individual points.
 
 #### Example
-    <kendo:stockChart aggregate="aggregate">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem aggregate="aggregate">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -95,18 +95,18 @@ The function return value is displayed instead of the individual points.
 The series base color.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem color="color">
+    </kendo:stockChart-seriesItem>
 
 
 
 ### line `String`
 
-The line of the area chart.
+The line of the area chart. Further configuration is available via [kendo:stockChart-seriesItem-line](#kendo-stockChart-seriesItem-line). 
 
 #### Example
-    <kendo:stockChart line="line">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem line="line">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -115,8 +115,8 @@ The line of the area chart.
 Configures the behavior for handling missing values in area series.
 
 #### Example
-    <kendo:stockChart missingValues="missingValues">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem missingValues="missingValues">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -125,8 +125,8 @@ Configures the behavior for handling missing values in area series.
 The series opacity.
 
 #### Example
-    <kendo:stockChart opacity="opacity">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem opacity="opacity">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -135,8 +135,8 @@ The series opacity.
 The name of the value axis to use.
 
 #### Example
-    <kendo:stockChart axis="axis">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem axis="axis">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -145,8 +145,8 @@ The name of the value axis to use.
 The data field containing the bar color.
 
 #### Example
-    <kendo:stockChart colorField="colorField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem colorField="colorField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -155,8 +155,8 @@ The data field containing the bar color.
 The distance between category clusters.
 
 #### Example
-    <kendo:stockChart gap="gap">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem gap="gap">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -165,8 +165,8 @@ The distance between category clusters.
 Space between bars.
 
 #### Example
-    <kendo:stockChart spacing="spacing">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem spacing="spacing">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -176,8 +176,8 @@ Name template for auto-generated
 series when binding to grouped data.
 
 #### Example
-    <kendo:stockChart aField="aField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem aField="aField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -186,8 +186,8 @@ series when binding to grouped data.
 The data field containing the bubble category name.
 
 #### Example
-    <kendo:stockChart categoryField="categoryField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem categoryField="categoryField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -196,8 +196,8 @@ The data field containing the bubble category name.
 The max size of the bubble.
 
 #### Example
-    <kendo:stockChart maxSize="maxSize">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem maxSize="maxSize">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -206,8 +206,8 @@ The max size of the bubble.
 The min size of the bubble.
 
 #### Example
-    <kendo:stockChart minSize="minSize">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem minSize="minSize">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -216,18 +216,18 @@ The min size of the bubble.
 The data field containing the bubble size value.
 
 #### Example
-    <kendo:stockChart sizeField="sizeField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem sizeField="sizeField">
+    </kendo:stockChart-seriesItem>
 
 
 
 ### xAxis `String`
 
-The name of the X axis to use. Further configuration is available via [kendo:stockChart-xAxis](#kendo-stockChart-xAxis). 
+The name of the X axis to use.
 
 #### Example
-    <kendo:stockChart xAxis="xAxis">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem xAxis="xAxis">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -236,18 +236,18 @@ The name of the X axis to use. Further configuration is available via [kendo:sto
 The data field containing the bubble x value.
 
 #### Example
-    <kendo:stockChart xField="xField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem xField="xField">
+    </kendo:stockChart-seriesItem>
 
 
 
 ### yAxis `String`
 
-The name of the Y axis to use. Further configuration is available via [kendo:stockChart-yAxis](#kendo-stockChart-yAxis). 
+The name of the Y axis to use.
 
 #### Example
-    <kendo:stockChart yAxis="yAxis">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem yAxis="yAxis">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -256,8 +256,8 @@ The name of the Y axis to use. Further configuration is available via [kendo:sto
 The data field containing the bubble y value.
 
 #### Example
-    <kendo:stockChart yField="yField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem yField="yField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -267,8 +267,8 @@ The data field containing a boolean value that indicates if the sector is explod
 (available only for the last level of the series).
 
 #### Example
-    <kendo:stockChart explodeField="explodeField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem explodeField="explodeField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -277,8 +277,8 @@ The data field containing a boolean value that indicates if the sector is explod
 The the size of the donut hole.
 
 #### Example
-    <kendo:stockChart holeSize="holeSize">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem holeSize="holeSize">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -288,8 +288,8 @@ The margin around each series
 (not available for the last level of the series).
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem margin="margin">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -298,8 +298,8 @@ The margin around each series
 The padding around the donut chart (equal on all sides).
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem padding="padding">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -308,8 +308,8 @@ The padding around the donut chart (equal on all sides).
 The size of the series.
 
 #### Example
-    <kendo:stockChart size="size">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem size="size">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -318,8 +318,8 @@ The size of the series.
 The start angle of the first donut segment.
 
 #### Example
-    <kendo:stockChart startAngle="startAngle">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem startAngle="startAngle">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -328,8 +328,8 @@ The start angle of the first donut segment.
 The dash type of the line.
 
 #### Example
-    <kendo:stockChart dashType="dashType">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem dashType="dashType">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -338,8 +338,8 @@ The dash type of the line.
 The line width of the line chart.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem width="width">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -350,8 +350,8 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return values are displayed instead of the individual points.
 
 #### Example
-    <kendo:stockChart aggregates="aggregates">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem aggregates="aggregates">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -360,8 +360,8 @@ The function return values are displayed instead of the individual points.
 The series color when open value is smoller then close value.
 
 #### Example
-    <kendo:stockChart downColor="downColor">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem downColor="downColor">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -370,8 +370,8 @@ The series color when open value is smoller then close value.
 The data field containing the body color.
 
 #### Example
-    <kendo:stockChart downColorField="downColorField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem downColorField="downColorField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -380,8 +380,8 @@ The data field containing the body color.
 The data field containing the open value.
 
 #### Example
-    <kendo:stockChart openField="openField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem openField="openField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -390,8 +390,8 @@ The data field containing the open value.
 The data field containing the high value.
 
 #### Example
-    <kendo:stockChart highField="highField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem highField="highField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -400,8 +400,8 @@ The data field containing the high value.
 The data field containing the low value.
 
 #### Example
-    <kendo:stockChart lowField="lowField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem lowField="lowField">
+    </kendo:stockChart-seriesItem>
 
 
 
@@ -410,8 +410,8 @@ The data field containing the low value.
 The data field containing the close value.
 
 #### Example
-    <kendo:stockChart closeField="closeField">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem closeField="closeField">
+    </kendo:stockChart-seriesItem>
 
 
 

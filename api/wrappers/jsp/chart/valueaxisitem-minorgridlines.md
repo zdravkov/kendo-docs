@@ -22,8 +22,8 @@ A JSP tag representing Kendo MinorGridLines.
 The color of the lines.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-minorGridLines color="color">
+    </kendo:chart-valueAxisItem-minorGridLines>
 
 
 
@@ -32,8 +32,8 @@ The color of the lines.
 The dash type of the minor grid lines.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-minorGridLines dashType="dashType">
+    </kendo:chart-valueAxisItem-minorGridLines>
 
 
 
@@ -42,8 +42,8 @@ The dash type of the minor grid lines.
 The visibility of the lines.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-minorGridLines visible="visible">
+    </kendo:chart-valueAxisItem-minorGridLines>
 
 
 
@@ -52,7 +52,7 @@ The visibility of the lines.
 The width of the lines.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-minorGridLines width="width">
+    </kendo:chart-valueAxisItem-minorGridLines>
 
 

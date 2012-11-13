@@ -22,8 +22,8 @@ A JSP tag representing Kendo Pane.
 Specifies whether a pane is initially collapsed (
 
 #### Example
-    <kendo:splitter collapsed="collapsed">
-    </kendo:splitter>
+    <kendo:splitter-pane collapsed="collapsed">
+    </kendo:splitter-pane>
 
 
 
@@ -32,8 +32,8 @@ Specifies whether a pane is initially collapsed (
 Specifies whether a pane is collapsible (
 
 #### Example
-    <kendo:splitter collapsible="collapsible">
-    </kendo:splitter>
+    <kendo:splitter-pane collapsible="collapsible">
+    </kendo:splitter-pane>
 
 
 
@@ -42,8 +42,8 @@ Specifies whether a pane is collapsible (
 Specifies the URL from which to load the content of a pane.
 
 #### Example
-    <kendo:splitter contentUrl="contentUrl">
-    </kendo:splitter>
+    <kendo:splitter-pane contentUrl="contentUrl">
+    </kendo:splitter-pane>
 
 
 
@@ -53,8 +53,8 @@ Specifies the maximum size of a pane defined as pixels (i.e. "200px") or as a pe
 size of a resized pane cannot exceed the defined maximum size.
 
 #### Example
-    <kendo:splitter max="max">
-    </kendo:splitter>
+    <kendo:splitter-pane max="max">
+    </kendo:splitter-pane>
 
 
 
@@ -64,8 +64,8 @@ Specifies the minimum size of a pane defined as pixels (i.e. "200px") or as a pe
 size of a resized pane cannot be less than the defined minimum size.
 
 #### Example
-    <kendo:splitter min="min">
-    </kendo:splitter>
+    <kendo:splitter-pane min="min">
+    </kendo:splitter-pane>
 
 
 
@@ -74,8 +74,8 @@ size of a resized pane cannot be less than the defined minimum size.
 Specifies whether a pane is resizable (
 
 #### Example
-    <kendo:splitter resizable="resizable">
-    </kendo:splitter>
+    <kendo:splitter-pane resizable="resizable">
+    </kendo:splitter-pane>
 
 
 
@@ -84,8 +84,8 @@ Specifies whether a pane is resizable (
 Specifies whether a pane is scrollable (
 
 #### Example
-    <kendo:splitter scrollable="scrollable">
-    </kendo:splitter>
+    <kendo:splitter-pane scrollable="scrollable">
+    </kendo:splitter-pane>
 
 
 
@@ -95,7 +95,7 @@ Specifies the size of a pane defined as pixels (i.e. "200px") or as a percentage
 value must not exceed
 
 #### Example
-    <kendo:splitter size="size">
-    </kendo:splitter>
+    <kendo:splitter-pane size="size">
+    </kendo:splitter-pane>
 
 

@@ -22,8 +22,8 @@ A JSP tag representing Kendo Collapse.
 The number of milliseconds used for the visual animation when a
 
 #### Example
-    <kendo:panelBar duration="duration">
-    </kendo:panelBar>
+    <kendo:panelBar-animation-collapse duration="duration">
+    </kendo:panelBar-animation-collapse>
 
 
 
@@ -32,7 +32,7 @@ The number of milliseconds used for the visual animation when a
 A whitespace-delimited string of animation effects that are utilized when a
 
 #### Example
-    <kendo:panelBar effects="effects">
-    </kendo:panelBar>
+    <kendo:panelBar-animation-collapse effects="effects">
+    </kendo:panelBar-animation-collapse>
 
 

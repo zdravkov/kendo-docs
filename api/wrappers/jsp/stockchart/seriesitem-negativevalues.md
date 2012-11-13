@@ -22,8 +22,8 @@ A JSP tag representing Kendo NegativeValues.
 The color of the negative values.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-negativeValues color="color">
+    </kendo:stockChart-seriesItem-negativeValues>
 
 
 
@@ -32,7 +32,7 @@ The color of the negative values.
 The visibility of the negative values.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-negativeValues visible="visible">
+    </kendo:stockChart-seriesItem-negativeValues>
 
 

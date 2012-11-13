@@ -22,7 +22,7 @@ A JSP tag representing Kendo Messages.
 Sets the text of the empty grouping area message
 
 #### Example
-    <kendo:grid empty="empty">
-    </kendo:grid>
+    <kendo:grid-groupable-messages empty="empty">
+    </kendo:grid-groupable-messages>
 
 

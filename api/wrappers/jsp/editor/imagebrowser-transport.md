@@ -22,8 +22,8 @@ A JSP tag representing Kendo Transport.
 Options or URL for remote image retrieval.
 
 #### Example
-    <kendo:editor read="read">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-transport read="read">
+    </kendo:editor-imagebrowser-transport>
 
 
 
@@ -32,8 +32,8 @@ Options or URL for remote image retrieval.
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
 
 #### Example
-    <kendo:editor thumbnailUrl="thumbnailUrl">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-transport thumbnailUrl="thumbnailUrl">
+    </kendo:editor-imagebrowser-transport>
 
 
 
@@ -42,8 +42,8 @@ The URL for retrieving the thumbnail version of the image. If not specified a de
 The URL which will handle the upload of the new images. If not specified the Upload button will not be displayed.
 
 #### Example
-    <kendo:editor uploadUrl="uploadUrl">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-transport uploadUrl="uploadUrl">
+    </kendo:editor-imagebrowser-transport>
 
 
 
@@ -52,8 +52,8 @@ The URL which will handle the upload of the new images. If not specified the Upl
 The URL responsible for serving the original image. A file name placeholder should be specifed.
 
 #### Example
-    <kendo:editor imageUrl="imageUrl">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-transport imageUrl="imageUrl">
+    </kendo:editor-imagebrowser-transport>
 
 
 
@@ -62,8 +62,8 @@ The URL responsible for serving the original image. A file name placeholder shou
 Options or URL which will handle the file and directory deletion. If not specified the delete button will not be present.
 
 #### Example
-    <kendo:editor destroy="destroy">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-transport destroy="destroy">
+    </kendo:editor-imagebrowser-transport>
 
 
 
@@ -72,7 +72,7 @@ Options or URL which will handle the file and directory deletion. If not specifi
 Options or URL which will handle the directory creation. If not specified that create new folder button will not be present.
 
 #### Example
-    <kendo:editor create="create">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-transport create="create">
+    </kendo:editor-imagebrowser-transport>
 
 

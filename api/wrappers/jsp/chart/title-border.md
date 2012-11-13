@@ -22,8 +22,8 @@ A JSP tag representing Kendo Border.
 The color of the border.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-title-border color="color">
+    </kendo:chart-title-border>
 
 
 
@@ -32,8 +32,8 @@ The color of the border.
 The dash type of the border.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-title-border dashType="dashType">
+    </kendo:chart-title-border>
 
 
 
@@ -42,7 +42,7 @@ The dash type of the border.
 The width of the border.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-title-border width="width">
+    </kendo:chart-title-border>
 
 

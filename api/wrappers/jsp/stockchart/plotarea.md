@@ -22,8 +22,8 @@ A JSP tag representing Kendo PlotArea.
 The background color of the plot area.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-plotArea background="background">
+    </kendo:stockChart-plotArea>
 
 
 
@@ -32,8 +32,8 @@ The background color of the plot area.
 The background opacity of the plot area.
 
 #### Example
-    <kendo:stockChart opacity="opacity">
-    </kendo:stockChart>
+    <kendo:stockChart-plotArea opacity="opacity">
+    </kendo:stockChart-plotArea>
 
 
 
@@ -42,8 +42,8 @@ The background opacity of the plot area.
 The margin of the plot area.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-plotArea margin="margin">
+    </kendo:stockChart-plotArea>
 
 
 

@@ -22,8 +22,8 @@ A JSP tag representing Kendo Messages.
 Defines the info text.
 
 #### Example
-    <kendo:grid display="display">
-    </kendo:grid>
+    <kendo:grid-pageable-messages display="display">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -32,8 +32,8 @@ Defines the info text.
 Defines the info text shown when there are no records to be displayed.
 
 #### Example
-    <kendo:grid empty="empty">
-    </kendo:grid>
+    <kendo:grid-pageable-messages empty="empty">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -42,8 +42,8 @@ Defines the info text shown when there are no records to be displayed.
 Defines the first part of the text of the input option.
 
 #### Example
-    <kendo:grid page="page">
-    </kendo:grid>
+    <kendo:grid-pageable-messages page="page">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -52,8 +52,8 @@ Defines the first part of the text of the input option.
 Defines the last part of the text of the input option.
 
 #### Example
-    <kendo:grid of="of">
-    </kendo:grid>
+    <kendo:grid-pageable-messages of="of">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -62,8 +62,8 @@ Defines the last part of the text of the input option.
 Defines the text displayed after the select element of the pageSizes mode.
 
 #### Example
-    <kendo:grid itemsPerPage="itemsPerPage">
-    </kendo:grid>
+    <kendo:grid-pageable-messages itemsPerPage="itemsPerPage">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -72,8 +72,8 @@ Defines the text displayed after the select element of the pageSizes mode.
 Defines the text of the first page button tooltip.
 
 #### Example
-    <kendo:grid first="first">
-    </kendo:grid>
+    <kendo:grid-pageable-messages first="first">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -82,8 +82,8 @@ Defines the text of the first page button tooltip.
 Defines the text of the previous page button tooltip.
 
 #### Example
-    <kendo:grid previous="previous">
-    </kendo:grid>
+    <kendo:grid-pageable-messages previous="previous">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -92,8 +92,8 @@ Defines the text of the previous page button tooltip.
 Defines the text of the next page button tooltip.
 
 #### Example
-    <kendo:grid next="next">
-    </kendo:grid>
+    <kendo:grid-pageable-messages next="next">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -102,8 +102,8 @@ Defines the text of the next page button tooltip.
 Defines the text of the last page button tooltip.
 
 #### Example
-    <kendo:grid last="last">
-    </kendo:grid>
+    <kendo:grid-pageable-messages last="last">
+    </kendo:grid-pageable-messages>
 
 
 
@@ -112,7 +112,7 @@ Defines the text of the last page button tooltip.
 Defines the text of the refresh button tooltip.
 
 #### Example
-    <kendo:grid refresh="refresh">
-    </kendo:grid>
+    <kendo:grid-pageable-messages refresh="refresh">
+    </kendo:grid-pageable-messages>
 
 

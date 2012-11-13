@@ -22,8 +22,8 @@ A JSP tag representing Kendo Labels.
 The background color of the labels.
 
 #### Example
-    <kendo:chart background="background">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels background="background">
+    </kendo:chart-seriesItem-labels>
 
 
 
@@ -32,8 +32,8 @@ The background color of the labels.
 The text color of the labels.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels color="color">
+    </kendo:chart-seriesItem-labels>
 
 
 
@@ -42,8 +42,8 @@ The text color of the labels.
 The font style of the labels.
 
 #### Example
-    <kendo:chart font="font">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels font="font">
+    </kendo:chart-seriesItem-labels>
 
 
 
@@ -52,8 +52,8 @@ The font style of the labels.
 The format of the labels.
 
 #### Example
-    <kendo:chart format="format">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels format="format">
+    </kendo:chart-seriesItem-labels>
 
 
 
@@ -62,8 +62,8 @@ The format of the labels.
 Defines the position of the area labels.
 
 #### Example
-    <kendo:chart position="position">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels position="position">
+    </kendo:chart-seriesItem-labels>
 
 
 
@@ -72,8 +72,8 @@ Defines the position of the area labels.
 The visibility of the labels.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels visible="visible">
+    </kendo:chart-seriesItem-labels>
 
 
 
@@ -82,8 +82,8 @@ The visibility of the labels.
 Defines the alignment of the donut labels.
 
 #### Example
-    <kendo:chart align="align">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels align="align">
+    </kendo:chart-seriesItem-labels>
 
 
 
@@ -92,8 +92,8 @@ Defines the alignment of the donut labels.
 The distance of the labels.
 
 #### Example
-    <kendo:chart distance="distance">
-    </kendo:chart>
+    <kendo:chart-seriesItem-labels distance="distance">
+    </kendo:chart-seriesItem-labels>
 
 
 

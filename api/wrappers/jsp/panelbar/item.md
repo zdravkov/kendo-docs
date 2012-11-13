@@ -22,8 +22,8 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:panelBar text="text">
-    </kendo:panelBar>
+    <kendo:panelBar-item text="text">
+    </kendo:panelBar-item>
 
 
 
@@ -32,8 +32,8 @@ Specifies the text displayed by the item
 Specifies the URL of the image displayed by the item
 
 #### Example
-    <kendo:panelBar imageUrl="imageUrl">
-    </kendo:panelBar>
+    <kendo:panelBar-item imageUrl="imageUrl">
+    </kendo:panelBar-item>
 
 
 
@@ -42,8 +42,8 @@ Specifies the URL of the image displayed by the item
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:panelBar spriteCssClass="spriteCssClass">
-    </kendo:panelBar>
+    <kendo:panelBar-item spriteCssClass="spriteCssClass">
+    </kendo:panelBar-item>
 
 
 
@@ -52,8 +52,8 @@ Specifies the class name for the sprite image displayed by the item
 Specifies whether the item is initially expanded
 
 #### Example
-    <kendo:panelBar expanded="expanded">
-    </kendo:panelBar>
+    <kendo:panelBar-item expanded="expanded">
+    </kendo:panelBar-item>
 
 
 
@@ -62,8 +62,8 @@ Specifies whether the item is initially expanded
 Specifies whether the item is initially enabled
 
 #### Example
-    <kendo:panelBar enabled="enabled">
-    </kendo:panelBar>
+    <kendo:panelBar-item enabled="enabled">
+    </kendo:panelBar-item>
 
 
 
@@ -72,8 +72,8 @@ Specifies whether the item is initially enabled
 Specifies the url from which the item content will be loaded
 
 #### Example
-    <kendo:panelBar contentUrl="contentUrl">
-    </kendo:panelBar>
+    <kendo:panelBar-item contentUrl="contentUrl">
+    </kendo:panelBar-item>
 
 
 
@@ -82,7 +82,7 @@ Specifies the url from which the item content will be loaded
 Specifies whether the item is initially selected
 
 #### Example
-    <kendo:panelBar selected="selected">
-    </kendo:panelBar>
+    <kendo:panelBar-item selected="selected">
+    </kendo:panelBar-item>
 
 

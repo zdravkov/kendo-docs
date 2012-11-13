@@ -23,8 +23,8 @@ The color of the minor ticks.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-minorTicks color="color">
+    </kendo:linearGauge-scale-minorTicks>
 
 
 
@@ -34,8 +34,8 @@ The minor tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
 
 #### Example
-    <kendo:linearGauge size="size">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-minorTicks size="size">
+    </kendo:linearGauge-scale-minorTicks>
 
 
 
@@ -44,8 +44,8 @@ This is the length of the line in pixels that is drawn to indicate the tick on t
 The visibility of the minor ticks.
 
 #### Example
-    <kendo:linearGauge visible="visible">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-minorTicks visible="visible">
+    </kendo:linearGauge-scale-minorTicks>
 
 
 
@@ -54,7 +54,7 @@ The visibility of the minor ticks.
 The width of the minor ticks.
 
 #### Example
-    <kendo:linearGauge width="width">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-minorTicks width="width">
+    </kendo:linearGauge-scale-minorTicks>
 
 

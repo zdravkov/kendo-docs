@@ -22,8 +22,8 @@ A JSP tag representing Kendo ChartArea.
 The background color of the chart area.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-chartArea background="background">
+    </kendo:stockChart-chartArea>
 
 
 
@@ -32,8 +32,8 @@ The background color of the chart area.
 The background opacity of the chart area.
 
 #### Example
-    <kendo:stockChart opacity="opacity">
-    </kendo:stockChart>
+    <kendo:stockChart-chartArea opacity="opacity">
+    </kendo:stockChart-chartArea>
 
 
 
@@ -42,8 +42,8 @@ The background opacity of the chart area.
 The height of the chart area.
 
 #### Example
-    <kendo:stockChart height="height">
-    </kendo:stockChart>
+    <kendo:stockChart-chartArea height="height">
+    </kendo:stockChart-chartArea>
 
 
 
@@ -52,8 +52,8 @@ The height of the chart area.
 The margin of the chart area.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-chartArea margin="margin">
+    </kendo:stockChart-chartArea>
 
 
 
@@ -62,8 +62,8 @@ The margin of the chart area.
 The width of the chart area.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-chartArea width="width">
+    </kendo:stockChart-chartArea>
 
 
 

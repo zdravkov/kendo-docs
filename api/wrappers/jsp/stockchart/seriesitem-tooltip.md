@@ -22,8 +22,8 @@ A JSP tag representing Kendo Tooltip.
 The background color of the tooltip. The default is determined from the series color.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-tooltip background="background">
+    </kendo:stockChart-seriesItem-tooltip>
 
 
 
@@ -32,8 +32,8 @@ The background color of the tooltip. The default is determined from the series c
 The text color of the tooltip. The default is the same as the series labels color.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-tooltip color="color">
+    </kendo:stockChart-seriesItem-tooltip>
 
 
 
@@ -42,8 +42,8 @@ The text color of the tooltip. The default is the same as the series labels colo
 The tooltip font.
 
 #### Example
-    <kendo:stockChart font="font">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-tooltip font="font">
+    </kendo:stockChart-seriesItem-tooltip>
 
 
 
@@ -52,8 +52,8 @@ The tooltip font.
 The tooltip format.
 
 #### Example
-    <kendo:stockChart format="format">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-tooltip format="format">
+    </kendo:stockChart-seriesItem-tooltip>
 
 
 
@@ -62,8 +62,8 @@ The tooltip format.
 A value indicating if the tooltip should be displayed.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-tooltip visible="visible">
+    </kendo:stockChart-seriesItem-tooltip>
 
 
 

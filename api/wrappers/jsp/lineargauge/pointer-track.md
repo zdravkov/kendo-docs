@@ -22,8 +22,8 @@ A JSP tag representing Kendo Track.
 The color of the track.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer-track color="color">
+    </kendo:linearGauge-pointer-track>
 
 
 
@@ -32,8 +32,8 @@ The color of the track.
 The opacity of the track.
 
 #### Example
-    <kendo:linearGauge opacity="opacity">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer-track opacity="opacity">
+    </kendo:linearGauge-pointer-track>
 
 
 
@@ -42,8 +42,8 @@ The opacity of the track.
 The size of the track.
 
 #### Example
-    <kendo:linearGauge size="size">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer-track size="size">
+    </kendo:linearGauge-pointer-track>
 
 
 
@@ -52,8 +52,8 @@ The size of the track.
 The visibility of the track.
 
 #### Example
-    <kendo:linearGauge visible="visible">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer-track visible="visible">
+    </kendo:linearGauge-pointer-track>
 
 
 

@@ -22,8 +22,8 @@ A JSP tag representing Kendo Labels.
 The background color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels background="background">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -32,8 +32,8 @@ The background color of the labels. Any valid CSS color string will work here, i
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels color="color">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -42,8 +42,8 @@ The text color of the labels. Any valid CSS color string will work here, includi
 The font style of the labels.
 
 #### Example
-    <kendo:stockChart font="font">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels font="font">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -52,8 +52,8 @@ The font style of the labels.
 The format of the labels.
 
 #### Example
-    <kendo:stockChart format="format">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels format="format">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -62,8 +62,8 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels margin="margin">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -74,8 +74,8 @@ If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
 
 #### Example
-    <kendo:stockChart mirror="mirror">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels mirror="mirror">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -84,8 +84,8 @@ mirroring the axis will render them to the right.
 The padding of the labels.
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels padding="padding">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -94,8 +94,8 @@ The padding of the labels.
 The rotation angle of the labels.
 
 #### Example
-    <kendo:stockChart rotation="rotation">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels rotation="rotation">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -105,8 +105,8 @@ Number of labels to skip.
 Skips rendering the first n labels.
 
 #### Example
-    <kendo:stockChart skip="skip">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels skip="skip">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -116,8 +116,8 @@ Label rendering step.
 Every n-th label is rendered where n is the step
 
 #### Example
-    <kendo:stockChart step="step">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels step="step">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -127,8 +127,8 @@ The label template.
 Template variables:
 
 #### Example
-    <kendo:stockChart template="template">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels template="template">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -137,8 +137,8 @@ Template variables:
 The visibility of the labels.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels visible="visible">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -147,8 +147,8 @@ The visibility of the labels.
 Culture to use for formatting the dates. See
 
 #### Example
-    <kendo:stockChart culture="culture">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels culture="culture">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 
@@ -157,8 +157,8 @@ Culture to use for formatting the dates. See
 Date format strings
 
 #### Example
-    <kendo:stockChart dateFormats="dateFormats">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-labels dateFormats="dateFormats">
+    </kendo:stockChart-categoryAxisItem-labels>
 
 
 

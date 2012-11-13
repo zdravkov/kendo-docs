@@ -22,8 +22,8 @@ A JSP tag representing Kendo Expand.
 The number of milliseconds used for the visual animation when an item is opened.
 
 #### Example
-    <kendo:panelBar duration="duration">
-    </kendo:panelBar>
+    <kendo:panelBar-animation-expand duration="duration">
+    </kendo:panelBar-animation-expand>
 
 
 
@@ -32,8 +32,8 @@ The number of milliseconds used for the visual animation when an item is opened.
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
 
 #### Example
-    <kendo:panelBar effects="effects">
-    </kendo:panelBar>
+    <kendo:panelBar-animation-expand effects="effects">
+    </kendo:panelBar-animation-expand>
 
 
 
@@ -42,7 +42,7 @@ A whitespace-delimited string of animation effects that are used when an item is
 Specifies how the
 
 #### Example
-    <kendo:panelBar show="show">
-    </kendo:panelBar>
+    <kendo:panelBar-animation-expand show="show">
+    </kendo:panelBar-animation-expand>
 
 

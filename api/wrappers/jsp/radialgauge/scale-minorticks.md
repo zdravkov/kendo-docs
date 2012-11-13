@@ -23,8 +23,8 @@ The color of the minor ticks.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge color="color">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-minorTicks color="color">
+    </kendo:radialGauge-scale-minorTicks>
 
 
 
@@ -34,8 +34,8 @@ The minor tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
 
 #### Example
-    <kendo:radialGauge size="size">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-minorTicks size="size">
+    </kendo:radialGauge-scale-minorTicks>
 
 
 
@@ -44,8 +44,8 @@ This is the length of the line in pixels that is drawn to indicate the tick on t
 The visibility of the minor ticks.
 
 #### Example
-    <kendo:radialGauge visible="visible">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-minorTicks visible="visible">
+    </kendo:radialGauge-scale-minorTicks>
 
 
 
@@ -54,7 +54,7 @@ The visibility of the minor ticks.
 The width of the minor ticks.
 
 #### Example
-    <kendo:radialGauge width="width">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-minorTicks width="width">
+    </kendo:radialGauge-scale-minorTicks>
 
 

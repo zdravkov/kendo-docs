@@ -23,8 +23,8 @@ The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-legend-labels color="color">
+    </kendo:stockChart-legend-labels>
 
 
 
@@ -33,8 +33,8 @@ Any valid CSS color string will work here, including hex and rgb.
 The font style of the labels.
 
 #### Example
-    <kendo:stockChart font="font">
-    </kendo:stockChart>
+    <kendo:stockChart-legend-labels font="font">
+    </kendo:stockChart-legend-labels>
 
 
 
@@ -45,7 +45,7 @@ Template variables:
 *
 
 #### Example
-    <kendo:stockChart template="template">
-    </kendo:stockChart>
+    <kendo:stockChart-legend-labels template="template">
+    </kendo:stockChart-legend-labels>
 
 

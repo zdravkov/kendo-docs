@@ -23,8 +23,8 @@ Color to apply to all axis elements.
 Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem color="color">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -33,8 +33,8 @@ Individual color settings for line and labels take priority. Any valid CSS color
 The interval between major divisions.
 
 #### Example
-    <kendo:stockChart majorUnit="majorUnit">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem majorUnit="majorUnit">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -44,8 +44,8 @@ The maximum value of the axis.
 This is often used in combination with the
 
 #### Example
-    <kendo:stockChart max="max">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem max="max">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -55,8 +55,8 @@ The minimum value of the axis.
 This is often used in combination with the
 
 #### Example
-    <kendo:stockChart min="min">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem min="min">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -66,8 +66,8 @@ The interval between minor divisions.
 It defaults to 1/5th of the majorUnit.
 
 #### Example
-    <kendo:stockChart minorUnit="minorUnit">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem minorUnit="minorUnit">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -76,8 +76,8 @@ It defaults to 1/5th of the majorUnit.
 The unique axis name.
 
 #### Example
-    <kendo:stockChart name="name">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem name="name">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -86,8 +86,8 @@ The unique axis name.
 Prevents the automatic axis range from snapping to 0.
 
 #### Example
-    <kendo:stockChart narrowRange="narrowRange">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem narrowRange="narrowRange">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -97,8 +97,8 @@ The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
 
 #### Example
-    <kendo:stockChart pane="pane">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem pane="pane">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -108,8 +108,8 @@ Reverses the axis direction -
 values increase from right to left and from top to bottom.
 
 #### Example
-    <kendo:stockChart reverse="reverse">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem reverse="reverse">
+    </kendo:stockChart-valueAxisItem>
 
 
 
@@ -118,8 +118,8 @@ values increase from right to left and from top to bottom.
 The visibility of the axis.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem visible="visible">
+    </kendo:stockChart-valueAxisItem>
 
 
 

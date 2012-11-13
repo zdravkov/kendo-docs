@@ -22,8 +22,8 @@ A JSP tag representing Kendo SeriesItem.
 The type of the series.
 
 #### Example
-    <kendo:stockChart type="type">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem type="type">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -32,8 +32,8 @@ The type of the series.
 Available options for line series:
 
 #### Example
-    <kendo:stockChart ="">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem ="">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -42,8 +42,8 @@ Available options for line series:
 Array of data points.
 
 #### Example
-    <kendo:stockChart data="data">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem data="data">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -52,8 +52,8 @@ Array of data points.
 The data field containing the series value.
 
 #### Example
-    <kendo:stockChart field="field">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem field="field">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -63,8 +63,8 @@ Name template for auto-generated
 series when binding to grouped data.
 
 #### Example
-    <kendo:stockChart groupNameTemplate="groupNameTemplate">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem groupNameTemplate="groupNameTemplate">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -73,8 +73,8 @@ series when binding to grouped data.
 The series name visible in the legend.
 
 #### Example
-    <kendo:stockChart name="name">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem name="name">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -85,8 +85,8 @@ This function is used when a category (an year, month, etc.) contains two or mor
 The function return value is displayed instead of the individual points.
 
 #### Example
-    <kendo:stockChart aggregate="aggregate">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem aggregate="aggregate">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -95,8 +95,8 @@ The function return value is displayed instead of the individual points.
 The name of the value axis to use.
 
 #### Example
-    <kendo:stockChart axis="axis">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem axis="axis">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -105,8 +105,8 @@ The name of the value axis to use.
 The series base color.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem color="color">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -115,8 +115,8 @@ The series base color.
 The dash type of the line.
 
 #### Example
-    <kendo:stockChart dashType="dashType">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem dashType="dashType">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -125,8 +125,8 @@ The dash type of the line.
 Configures the behavior for handling missing values in line series.
 
 #### Example
-    <kendo:stockChart missingValues="missingValues">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem missingValues="missingValues">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -135,8 +135,8 @@ Configures the behavior for handling missing values in line series.
 The series opacity.
 
 #### Example
-    <kendo:stockChart opacity="opacity">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem opacity="opacity">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -145,18 +145,18 @@ The series opacity.
 The line width of the line chart.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem width="width">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
 ### line `String`
 
-The line of the area chart.
+The line of the area chart. Further configuration is available via [kendo:stockChart-navigator-seriesItem-line](#kendo-stockChart-navigator-seriesItem-line). 
 
 #### Example
-    <kendo:stockChart line="line">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem line="line">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -165,8 +165,8 @@ The line of the area chart.
 The data field containing the column color.
 
 #### Example
-    <kendo:stockChart colorField="colorField">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem colorField="colorField">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -175,8 +175,8 @@ The data field containing the column color.
 The distance between category clusters.
 
 #### Example
-    <kendo:stockChart gap="gap">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem gap="gap">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -185,8 +185,8 @@ The distance between category clusters.
 Space between columns.
 
 #### Example
-    <kendo:stockChart spacing="spacing">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem spacing="spacing">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 
@@ -195,8 +195,8 @@ Space between columns.
 Indicates that the series should be stacked in a group with the specified name.
 
 #### Example
-    <kendo:stockChart stack="stack">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem stack="stack">
+    </kendo:stockChart-navigator-seriesItem>
 
 
 

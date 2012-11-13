@@ -23,8 +23,8 @@ The end angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
 
 #### Example
-    <kendo:radialGauge endAngle="endAngle">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale endAngle="endAngle">
+    </kendo:radialGauge-scale>
 
 
 
@@ -33,8 +33,8 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
 The interval between major divisions.
 
 #### Example
-    <kendo:radialGauge majorUnit="majorUnit">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale majorUnit="majorUnit">
+    </kendo:radialGauge-scale>
 
 
 
@@ -43,8 +43,8 @@ The interval between major divisions.
 The maximum value of the scale.
 
 #### Example
-    <kendo:radialGauge max="max">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale max="max">
+    </kendo:radialGauge-scale>
 
 
 
@@ -53,8 +53,8 @@ The maximum value of the scale.
 The minimum value of the scale.
 
 #### Example
-    <kendo:radialGauge min="min">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale min="min">
+    </kendo:radialGauge-scale>
 
 
 
@@ -63,8 +63,8 @@ The minimum value of the scale.
 The interval between minor divisions.
 
 #### Example
-    <kendo:radialGauge minorUnit="minorUnit">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale minorUnit="minorUnit">
+    </kendo:radialGauge-scale>
 
 
 
@@ -73,8 +73,8 @@ The interval between minor divisions.
 Reverses the scale direction - values are increase anticlockwise.
 
 #### Example
-    <kendo:radialGauge reverse="reverse">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale reverse="reverse">
+    </kendo:radialGauge-scale>
 
 
 
@@ -84,8 +84,8 @@ The start angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
 
 #### Example
-    <kendo:radialGauge startAngle="startAngle">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale startAngle="startAngle">
+    </kendo:radialGauge-scale>
 
 
 

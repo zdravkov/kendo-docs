@@ -22,8 +22,8 @@ A JSP tag representing Kendo Update.
 If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter,
 
 #### Example
-    <kendo:dataSource cache="cache">
-    </kendo:dataSource>
+    <kendo:dataSource-transport-update cache="cache">
+    </kendo:dataSource-transport-update>
 
 
 
@@ -32,8 +32,8 @@ If set to false, it will force requested pages not to be cached by the browser. 
 The content-type HTTP header sent to the server. Default is
 
 #### Example
-    <kendo:dataSource contentType="contentType">
-    </kendo:dataSource>
+    <kendo:dataSource-transport-update contentType="contentType">
+    </kendo:dataSource-transport-update>
 
 
 
@@ -42,8 +42,8 @@ The content-type HTTP header sent to the server. Default is
 The type of data that you're expecting back from the server. Commonly used values are
 
 #### Example
-    <kendo:dataSource dataType="dataType">
-    </kendo:dataSource>
+    <kendo:dataSource-transport-update dataType="dataType">
+    </kendo:dataSource-transport-update>
 
 
 
@@ -52,8 +52,8 @@ The type of data that you're expecting back from the server. Commonly used value
 The type of request to make (
 
 #### Example
-    <kendo:dataSource type="type">
-    </kendo:dataSource>
+    <kendo:dataSource-transport-update type="type">
+    </kendo:dataSource-transport-update>
 
 
 
@@ -62,8 +62,8 @@ The type of request to make (
 The remote url to call when creating a new record.
 
 #### Example
-    <kendo:dataSource url="url">
-    </kendo:dataSource>
+    <kendo:dataSource-transport-update url="url">
+    </kendo:dataSource-transport-update>
 
 
 

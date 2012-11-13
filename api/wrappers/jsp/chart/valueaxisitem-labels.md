@@ -23,8 +23,8 @@ The background color of the labels. Any valid CSS color string will work here, i
 hex and rgb
 
 #### Example
-    <kendo:chart background="background">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels background="background">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -33,8 +33,8 @@ hex and rgb
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels color="color">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -43,8 +43,8 @@ The text color of the labels. Any valid CSS color string will work here, includi
 The font style of the labels.
 
 #### Example
-    <kendo:chart font="font">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels font="font">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -53,8 +53,8 @@ The font style of the labels.
 The format of the labels.
 
 #### Example
-    <kendo:chart format="format">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels format="format">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -63,8 +63,8 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    <kendo:chart margin="margin">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels margin="margin">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -75,8 +75,8 @@ If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
 
 #### Example
-    <kendo:chart mirror="mirror">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels mirror="mirror">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -85,8 +85,8 @@ mirroring the axis will render them to the right.
 The padding of the labels.
 
 #### Example
-    <kendo:chart padding="padding">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels padding="padding">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -95,8 +95,8 @@ The padding of the labels.
 The rotation angle of the labels.
 
 #### Example
-    <kendo:chart rotation="rotation">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels rotation="rotation">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -106,8 +106,8 @@ Number of labels to skip.
 Skips rendering the first n labels.
 
 #### Example
-    <kendo:chart skip="skip">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels skip="skip">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -117,8 +117,8 @@ Label rendering step.
 Every n-th label is rendered where n is the step
 
 #### Example
-    <kendo:chart step="step">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels step="step">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -128,8 +128,8 @@ The label template.
 Template variables:
 
 #### Example
-    <kendo:chart template="template">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels template="template">
+    </kendo:chart-valueAxisItem-labels>
 
 
 
@@ -138,8 +138,8 @@ Template variables:
 The visibility of the labels.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-labels visible="visible">
+    </kendo:chart-valueAxisItem-labels>
 
 
 

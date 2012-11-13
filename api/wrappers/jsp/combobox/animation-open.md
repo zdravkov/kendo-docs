@@ -22,8 +22,8 @@ A JSP tag representing Kendo Open.
 Effect to be used for opening of the popup.
 
 #### Example
-    <kendo:comboBox effects="effects">
-    </kendo:comboBox>
+    <kendo:comboBox-animation-open effects="effects">
+    </kendo:comboBox-animation-open>
 
 
 
@@ -32,7 +32,7 @@ Effect to be used for opening of the popup.
 Difines the animation duration.
 
 #### Example
-    <kendo:comboBox duration="duration">
-    </kendo:comboBox>
+    <kendo:comboBox-animation-open duration="duration">
+    </kendo:comboBox-animation-open>
 
 

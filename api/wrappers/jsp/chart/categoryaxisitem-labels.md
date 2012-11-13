@@ -22,8 +22,8 @@ A JSP tag representing Kendo Labels.
 The background color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart background="background">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels background="background">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -32,8 +32,8 @@ The background color of the labels. Any valid CSS color string will work here, i
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels color="color">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -42,8 +42,8 @@ The text color of the labels. Any valid CSS color string will work here, includi
 The font style of the labels.
 
 #### Example
-    <kendo:chart font="font">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels font="font">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -52,8 +52,8 @@ The font style of the labels.
 The format of the labels.
 
 #### Example
-    <kendo:chart format="format">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels format="format">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -62,8 +62,8 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    <kendo:chart margin="margin">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels margin="margin">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -74,8 +74,8 @@ If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
 
 #### Example
-    <kendo:chart mirror="mirror">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels mirror="mirror">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -84,8 +84,8 @@ mirroring the axis will render them to the right.
 The padding of the labels.
 
 #### Example
-    <kendo:chart padding="padding">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels padding="padding">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -94,8 +94,8 @@ The padding of the labels.
 The rotation angle of the labels.
 
 #### Example
-    <kendo:chart rotation="rotation">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels rotation="rotation">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -105,8 +105,8 @@ Number of labels to skip.
 Skips rendering the first n labels.
 
 #### Example
-    <kendo:chart skip="skip">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels skip="skip">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -116,8 +116,8 @@ Label rendering step.
 Every n-th label is rendered where n is the step
 
 #### Example
-    <kendo:chart step="step">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels step="step">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -127,8 +127,8 @@ The label template.
 Template variables:
 
 #### Example
-    <kendo:chart template="template">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels template="template">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -137,8 +137,8 @@ Template variables:
 The visibility of the labels.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels visible="visible">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -147,8 +147,8 @@ The visibility of the labels.
 Culture to use for formatting the dates. See
 
 #### Example
-    <kendo:chart culture="culture">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels culture="culture">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 
@@ -157,8 +157,8 @@ Culture to use for formatting the dates. See
 Date format strings
 
 #### Example
-    <kendo:chart dateFormats="dateFormats">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-labels dateFormats="dateFormats">
+    </kendo:chart-categoryAxisItem-labels>
 
 
 

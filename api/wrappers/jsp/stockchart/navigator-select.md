@@ -22,8 +22,8 @@ A JSP tag representing Kendo Select.
 The lower boundary of the selected range.
 
 #### Example
-    <kendo:stockChart from="from">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-select from="from">
+    </kendo:stockChart-navigator-select>
 
 
 
@@ -32,7 +32,7 @@ The lower boundary of the selected range.
 The upper boundary of the selected range.
 
 #### Example
-    <kendo:stockChart to="to">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-select to="to">
+    </kendo:stockChart-navigator-select>
 
 

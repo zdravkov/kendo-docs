@@ -23,8 +23,8 @@ The background color of the title. Any valid CSS color string will work here, in
 hex and rgb.
 
 #### Example
-    <kendo:chart background="background">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title background="background">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -33,8 +33,8 @@ hex and rgb.
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title color="color">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -43,8 +43,8 @@ The text color of the title. Any valid CSS color string will work here, includin
 The font style of the title.
 
 #### Example
-    <kendo:chart font="font">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title font="font">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -53,8 +53,8 @@ The font style of the title.
 The margin of the title.
 
 #### Example
-    <kendo:chart margin="margin">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title margin="margin">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -63,8 +63,8 @@ The margin of the title.
 The padding of the title.
 
 #### Example
-    <kendo:chart padding="padding">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title padding="padding">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -73,8 +73,8 @@ The padding of the title.
 The position of the title.
 
 #### Example
-    <kendo:chart position="position">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title position="position">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -83,8 +83,8 @@ The position of the title.
 The rotation angle of the title.
 
 #### Example
-    <kendo:chart rotation="rotation">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title rotation="rotation">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -93,8 +93,8 @@ The rotation angle of the title.
 The text of the title.
 
 #### Example
-    <kendo:chart text="text">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title text="text">
+    </kendo:chart-valueAxisItem-title>
 
 
 
@@ -103,8 +103,8 @@ The text of the title.
 The visibility of the title.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-title visible="visible">
+    </kendo:chart-valueAxisItem-title>
 
 
 

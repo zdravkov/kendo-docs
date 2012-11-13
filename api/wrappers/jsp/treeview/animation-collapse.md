@@ -22,8 +22,8 @@ A JSP tag representing Kendo Collapse.
 The number of milliseconds used for the animation when a node is expanded.
 
 #### Example
-    <kendo:treeView duration="duration">
-    </kendo:treeView>
+    <kendo:treeView-animation-collapse duration="duration">
+    </kendo:treeView-animation-collapse>
 
 
 
@@ -32,7 +32,7 @@ The number of milliseconds used for the animation when a node is expanded.
 A whitespace-delimited string of animation effects that are utilized when a
 
 #### Example
-    <kendo:treeView effects="effects">
-    </kendo:treeView>
+    <kendo:treeView-animation-collapse effects="effects">
+    </kendo:treeView-animation-collapse>
 
 

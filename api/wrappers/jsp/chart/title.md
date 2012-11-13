@@ -22,8 +22,8 @@ A JSP tag representing Kendo Title.
 The alignment of the title.
 
 #### Example
-    <kendo:chart align="align">
-    </kendo:chart>
+    <kendo:chart-title align="align">
+    </kendo:chart-title>
 
 
 
@@ -32,8 +32,8 @@ The alignment of the title.
 The background color of the title.
 
 #### Example
-    <kendo:chart background="background">
-    </kendo:chart>
+    <kendo:chart-title background="background">
+    </kendo:chart-title>
 
 
 
@@ -42,8 +42,8 @@ The background color of the title.
 The font of the title.
 
 #### Example
-    <kendo:chart font="font">
-    </kendo:chart>
+    <kendo:chart-title font="font">
+    </kendo:chart-title>
 
 
 
@@ -52,8 +52,8 @@ The font of the title.
 The margin of the title.
 
 #### Example
-    <kendo:chart margin="margin">
-    </kendo:chart>
+    <kendo:chart-title margin="margin">
+    </kendo:chart-title>
 
 
 
@@ -62,8 +62,8 @@ The margin of the title.
 The padding of the title.
 
 #### Example
-    <kendo:chart padding="padding">
-    </kendo:chart>
+    <kendo:chart-title padding="padding">
+    </kendo:chart-title>
 
 
 
@@ -72,8 +72,8 @@ The padding of the title.
 The position of the title.
 
 #### Example
-    <kendo:chart position="position">
-    </kendo:chart>
+    <kendo:chart-title position="position">
+    </kendo:chart-title>
 
 
 
@@ -82,8 +82,8 @@ The position of the title.
 The title of the chart. You can also set the text directly for a title with default options.
 
 #### Example
-    <kendo:chart text="text">
-    </kendo:chart>
+    <kendo:chart-title text="text">
+    </kendo:chart-title>
 
 
 
@@ -92,8 +92,8 @@ The title of the chart. You can also set the text directly for a title with defa
 The visibility of the title.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-title visible="visible">
+    </kendo:chart-title>
 
 
 

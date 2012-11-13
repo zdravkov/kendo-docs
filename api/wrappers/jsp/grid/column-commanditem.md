@@ -22,8 +22,8 @@ A JSP tag representing Kendo CommandItem.
 The unique name of the command. The supported built-in commands are: "create", "cancel", "save", "destroy".
 
 #### Example
-    <kendo:grid name="name">
-    </kendo:grid>
+    <kendo:grid-column-commandItem name="name">
+    </kendo:grid-column-commandItem>
 
 
 
@@ -32,8 +32,8 @@ The unique name of the command. The supported built-in commands are: "create", "
 The text displayed by the command.
 
 #### Example
-    <kendo:grid text="text">
-    </kendo:grid>
+    <kendo:grid-column-commandItem text="text">
+    </kendo:grid-column-commandItem>
 
 
 
@@ -42,8 +42,8 @@ The text displayed by the command.
 The CSS class of the command.
 
 #### Example
-    <kendo:grid className="className">
-    </kendo:grid>
+    <kendo:grid-column-commandItem className="className">
+    </kendo:grid-column-commandItem>
 
 
 
@@ -52,8 +52,8 @@ The CSS class of the command.
 The JavaScript function executed when the user clicks the command button.
 
 #### Example
-    <kendo:grid click="handle_click">
-    </kendo:grid>
+    <kendo:grid-column-commandItem click="handle_click">
+    </kendo:grid-column-commandItem>
     <script>
         function handle_click(e) {
             // Code to handle the click event.

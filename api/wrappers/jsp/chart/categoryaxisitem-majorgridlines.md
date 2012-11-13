@@ -22,8 +22,8 @@ A JSP tag representing Kendo MajorGridLines.
 The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-majorGridLines color="color">
+    </kendo:chart-categoryAxisItem-majorGridLines>
 
 
 
@@ -32,8 +32,8 @@ The color of the lines. Any valid CSS color string will work here, including hex
 The dash type of the grid lines.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-majorGridLines dashType="dashType">
+    </kendo:chart-categoryAxisItem-majorGridLines>
 
 
 
@@ -42,8 +42,8 @@ The dash type of the grid lines.
 The visibility of the lines.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-majorGridLines visible="visible">
+    </kendo:chart-categoryAxisItem-majorGridLines>
 
 
 
@@ -52,7 +52,7 @@ The visibility of the lines.
 The width of the lines.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-majorGridLines width="width">
+    </kendo:chart-categoryAxisItem-majorGridLines>
 
 

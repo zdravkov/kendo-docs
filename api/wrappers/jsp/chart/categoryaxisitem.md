@@ -22,8 +22,8 @@ A JSP tag representing Kendo CategoryAxisItem.
 Array of category names.
 
 #### Example
-    <kendo:chart categories="categories">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem categories="categories">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -33,8 +33,8 @@ Color to apply to all axis elements. Any valid CSS color string will work here, 
 Individual color settings for line and labels take priority.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem color="color">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -43,8 +43,8 @@ Individual color settings for line and labels take priority.
 The data field containing the category name.
 
 #### Example
-    <kendo:chart field="field">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem field="field">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -53,8 +53,8 @@ The data field containing the category name.
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
 
 #### Example
-    <kendo:chart justified="justified">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem justified="justified">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -63,8 +63,8 @@ Positions categories and series points on major ticks. This removes the empty sp
 The unique axis name.
 
 #### Example
-    <kendo:chart name="name">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem name="name">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -74,8 +74,8 @@ The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
 
 #### Example
-    <kendo:chart pane="pane">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem pane="pane">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -85,8 +85,8 @@ Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
 
 #### Example
-    <kendo:chart reverse="reverse">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem reverse="reverse">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -95,8 +95,8 @@ categories are listed from right to left and from top to bottom.
 The axis type.
 
 #### Example
-    <kendo:chart type="type">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem type="type">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -105,8 +105,8 @@ The axis type.
 Specifies the discrete
 
 #### Example
-    <kendo:chart autoBaseUnitSteps="autoBaseUnitSteps">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem autoBaseUnitSteps="autoBaseUnitSteps">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -117,8 +117,8 @@ The default baseUnit is determined automatically from the minimum difference
 between subsequent categories. Available options:
 
 #### Example
-    <kendo:chart baseUnit="baseUnit">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem baseUnit="baseUnit">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -128,8 +128,8 @@ Sets the step (interval) between categories in base units.
 Specifiying "auto" will set the step to such value that the total number of categories does not exceed
 
 #### Example
-    <kendo:chart baseUnitStep="baseUnitStep">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem baseUnitStep="baseUnitStep">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -140,8 +140,8 @@ By default, the minimum date is the same as the last category.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart max="max">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem max="max">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -152,8 +152,8 @@ By default, the minimum date is the same as the first category.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart min="min">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem min="min">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -163,8 +163,8 @@ By default, the first and last dates will be rounded off to the nearest base uni
 Specifying
 
 #### Example
-    <kendo:chart roundToBaseUnit="roundToBaseUnit">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem roundToBaseUnit="roundToBaseUnit">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -173,8 +173,8 @@ Specifying
 Specifies the week start day when
 
 #### Example
-    <kendo:chart weekStartDay="weekStartDay">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem weekStartDay="weekStartDay">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -184,8 +184,8 @@ Specifies the maximum number of groups (categories) to produce when
 either
 
 #### Example
-    <kendo:chart maxDateGroups="maxDateGroups">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem maxDateGroups="maxDateGroups">
+    </kendo:chart-categoryAxisItem>
 
 
 
@@ -194,8 +194,8 @@ either
 The visibility of the axis.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem visible="visible">
+    </kendo:chart-categoryAxisItem>
 
 
 

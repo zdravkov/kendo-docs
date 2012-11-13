@@ -22,8 +22,8 @@ A JSP tag representing Kendo Labels.
 The background color of the labels.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-labels background="background">
+    </kendo:stockChart-navigator-seriesItem-labels>
 
 
 
@@ -32,8 +32,8 @@ The background color of the labels.
 The text color of the labels.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-labels color="color">
+    </kendo:stockChart-navigator-seriesItem-labels>
 
 
 
@@ -42,8 +42,8 @@ The text color of the labels.
 The font style of the labels.
 
 #### Example
-    <kendo:stockChart font="font">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-labels font="font">
+    </kendo:stockChart-navigator-seriesItem-labels>
 
 
 
@@ -52,8 +52,8 @@ The font style of the labels.
 The format of the labels.
 
 #### Example
-    <kendo:stockChart format="format">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-labels format="format">
+    </kendo:stockChart-navigator-seriesItem-labels>
 
 
 
@@ -62,8 +62,8 @@ The format of the labels.
 Defines the position of the line labels.
 
 #### Example
-    <kendo:stockChart position="position">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-labels position="position">
+    </kendo:stockChart-navigator-seriesItem-labels>
 
 
 
@@ -72,8 +72,8 @@ Defines the position of the line labels.
 The visibility of the labels.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-labels visible="visible">
+    </kendo:stockChart-navigator-seriesItem-labels>
 
 
 

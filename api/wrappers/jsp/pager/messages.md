@@ -22,8 +22,8 @@ A JSP tag representing Kendo Messages.
 Defines the info text.
 
 #### Example
-    <kendo:pager display="display">
-    </kendo:pager>
+    <kendo:pager-messages display="display">
+    </kendo:pager-messages>
 
 
 
@@ -32,8 +32,8 @@ Defines the info text.
 Defines the info text shown when there are no records to be displayed.
 
 #### Example
-    <kendo:pager empty="empty">
-    </kendo:pager>
+    <kendo:pager-messages empty="empty">
+    </kendo:pager-messages>
 
 
 
@@ -42,8 +42,8 @@ Defines the info text shown when there are no records to be displayed.
 Defines the first part of the text of the input option.
 
 #### Example
-    <kendo:pager page="page">
-    </kendo:pager>
+    <kendo:pager-messages page="page">
+    </kendo:pager-messages>
 
 
 
@@ -52,8 +52,8 @@ Defines the first part of the text of the input option.
 Defines the last part of the text of the input option.
 
 #### Example
-    <kendo:pager of="of">
-    </kendo:pager>
+    <kendo:pager-messages of="of">
+    </kendo:pager-messages>
 
 
 
@@ -62,8 +62,8 @@ Defines the last part of the text of the input option.
 Defines the text displayed after the select element of the pageSizes mode.
 
 #### Example
-    <kendo:pager itemsPerPage="itemsPerPage">
-    </kendo:pager>
+    <kendo:pager-messages itemsPerPage="itemsPerPage">
+    </kendo:pager-messages>
 
 
 
@@ -72,8 +72,8 @@ Defines the text displayed after the select element of the pageSizes mode.
 Defines the text of the first page button tooltip.
 
 #### Example
-    <kendo:pager first="first">
-    </kendo:pager>
+    <kendo:pager-messages first="first">
+    </kendo:pager-messages>
 
 
 
@@ -82,8 +82,8 @@ Defines the text of the first page button tooltip.
 Defines the text of the previous page button tooltip.
 
 #### Example
-    <kendo:pager previous="previous">
-    </kendo:pager>
+    <kendo:pager-messages previous="previous">
+    </kendo:pager-messages>
 
 
 
@@ -92,8 +92,8 @@ Defines the text of the previous page button tooltip.
 Defines the text of the next page button tooltip.
 
 #### Example
-    <kendo:pager next="next">
-    </kendo:pager>
+    <kendo:pager-messages next="next">
+    </kendo:pager-messages>
 
 
 
@@ -102,8 +102,8 @@ Defines the text of the next page button tooltip.
 Defines the text of the last page button tooltip.
 
 #### Example
-    <kendo:pager last="last">
-    </kendo:pager>
+    <kendo:pager-messages last="last">
+    </kendo:pager-messages>
 
 
 
@@ -112,7 +112,7 @@ Defines the text of the last page button tooltip.
 Defines the text of the refresh button tooltip.
 
 #### Example
-    <kendo:pager refresh="refresh">
-    </kendo:pager>
+    <kendo:pager-messages refresh="refresh">
+    </kendo:pager-messages>
 
 

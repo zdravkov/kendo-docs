@@ -19,11 +19,11 @@ A JSP tag representing Kendo Localization.
 
 ### cancel `String`
 
-Sets the text of the cancel button text. Further configuration is available via [kendo:upload-cancel](#kendo-upload-cancel). 
+Sets the text of the cancel button text.
 
 #### Example
-    <kendo:upload cancel="cancel">
-    </kendo:upload>
+    <kendo:upload-localization cancel="cancel">
+    </kendo:upload-localization>
 
 
 
@@ -32,18 +32,18 @@ Sets the text of the cancel button text. Further configuration is available via 
 Sets the drop zone hint.
 
 #### Example
-    <kendo:upload dropFilesHere="dropFilesHere">
-    </kendo:upload>
+    <kendo:upload-localization dropFilesHere="dropFilesHere">
+    </kendo:upload-localization>
 
 
 
 ### remove `String`
 
-Sets the text of the remove button text. Further configuration is available via [kendo:upload-remove](#kendo-upload-remove). 
+Sets the text of the remove button text.
 
 #### Example
-    <kendo:upload remove="remove">
-    </kendo:upload>
+    <kendo:upload-localization remove="remove">
+    </kendo:upload-localization>
 
 
 
@@ -52,18 +52,18 @@ Sets the text of the remove button text. Further configuration is available via 
 Sets the text of the retry button text.
 
 #### Example
-    <kendo:upload retry="retry">
-    </kendo:upload>
+    <kendo:upload-localization retry="retry">
+    </kendo:upload-localization>
 
 
 
 ### select `String`
 
-Sets the "Select..." button text. Further configuration is available via [kendo:upload-select](#kendo-upload-select). 
+Sets the "Select..." button text.
 
 #### Example
-    <kendo:upload select="select">
-    </kendo:upload>
+    <kendo:upload-localization select="select">
+    </kendo:upload-localization>
 
 
 
@@ -72,8 +72,8 @@ Sets the "Select..." button text. Further configuration is available via [kendo:
 Sets the status message for failed uploads.
 
 #### Example
-    <kendo:upload statusFailed="statusFailed">
-    </kendo:upload>
+    <kendo:upload-localization statusFailed="statusFailed">
+    </kendo:upload-localization>
 
 
 
@@ -82,8 +82,8 @@ Sets the status message for failed uploads.
 Sets the status message for uploaded files.
 
 #### Example
-    <kendo:upload statusUploaded="statusUploaded">
-    </kendo:upload>
+    <kendo:upload-localization statusUploaded="statusUploaded">
+    </kendo:upload-localization>
 
 
 
@@ -92,8 +92,8 @@ Sets the status message for uploaded files.
 Sets the status message for files that are being uploaded.
 
 #### Example
-    <kendo:upload statusUploading="statusUploading">
-    </kendo:upload>
+    <kendo:upload-localization statusUploading="statusUploading">
+    </kendo:upload-localization>
 
 
 
@@ -102,7 +102,7 @@ Sets the status message for files that are being uploaded.
 Sets the text of the "Upload files" button.
 
 #### Example
-    <kendo:upload uploadSelectedFiles="uploadSelectedFiles">
-    </kendo:upload>
+    <kendo:upload-localization uploadSelectedFiles="uploadSelectedFiles">
+    </kendo:upload-localization>
 
 

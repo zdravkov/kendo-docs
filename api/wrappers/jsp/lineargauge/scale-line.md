@@ -22,8 +22,8 @@ A JSP tag representing Kendo Line.
 The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-line color="color">
+    </kendo:linearGauge-scale-line>
 
 
 
@@ -32,8 +32,8 @@ The color of the lines. Any valid CSS color string will work here, including hex
 The dash type of the line.
 
 #### Example
-    <kendo:linearGauge dashType="dashType">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-line dashType="dashType">
+    </kendo:linearGauge-scale-line>
 
 
 
@@ -42,8 +42,8 @@ The dash type of the line.
 The visibility of the lines.
 
 #### Example
-    <kendo:linearGauge visible="visible">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-line visible="visible">
+    </kendo:linearGauge-scale-line>
 
 
 
@@ -52,7 +52,7 @@ The visibility of the lines.
 The width of the line..
 
 #### Example
-    <kendo:linearGauge width="width">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-line width="width">
+    </kendo:linearGauge-scale-line>
 
 

@@ -22,8 +22,8 @@ A JSP tag representing Kendo CategoryAxisItem.
 Array of category names.
 
 #### Example
-    <kendo:stockChart categories="categories">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem categories="categories">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -33,8 +33,8 @@ Color to apply to all axis elements. Any valid CSS color string will work here, 
 Individual color settings for line and labels take priority.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem color="color">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -43,8 +43,8 @@ Individual color settings for line and labels take priority.
 The data field containing the category name.
 
 #### Example
-    <kendo:stockChart field="field">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem field="field">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -53,8 +53,8 @@ The data field containing the category name.
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
 
 #### Example
-    <kendo:stockChart justified="justified">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem justified="justified">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -63,8 +63,8 @@ Positions categories and series points on major ticks. This removes the empty sp
 The unique axis name.
 
 #### Example
-    <kendo:stockChart name="name">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem name="name">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -74,8 +74,8 @@ The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
 
 #### Example
-    <kendo:stockChart pane="pane">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem pane="pane">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -85,8 +85,8 @@ Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
 
 #### Example
-    <kendo:stockChart reverse="reverse">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem reverse="reverse">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -95,8 +95,8 @@ categories are listed from right to left and from top to bottom.
 The axis type.
 
 #### Example
-    <kendo:stockChart type="type">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem type="type">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -105,8 +105,8 @@ The axis type.
 Specifies the discrete
 
 #### Example
-    <kendo:stockChart autoBaseUnitSteps="autoBaseUnitSteps">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem autoBaseUnitSteps="autoBaseUnitSteps">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -117,8 +117,8 @@ The default baseUnit is determined automatically from the minimum difference
 between subsequent categories. Available options:
 
 #### Example
-    <kendo:stockChart baseUnit="baseUnit">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem baseUnit="baseUnit">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -128,8 +128,8 @@ Sets the step (interval) between categories in base units.
 Specifiying "auto" will set the step to such value that the total number of categories does not exceed
 
 #### Example
-    <kendo:stockChart baseUnitStep="baseUnitStep">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem baseUnitStep="baseUnitStep">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -140,8 +140,8 @@ By default, the minimum date is the same as the last category.
 This is often used in combination with the
 
 #### Example
-    <kendo:stockChart max="max">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem max="max">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -152,8 +152,8 @@ By default, the minimum date is the same as the first category.
 This is often used in combination with the
 
 #### Example
-    <kendo:stockChart min="min">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem min="min">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -163,8 +163,8 @@ By default, the first and last dates will be rounded off to the nearest base uni
 Specifying
 
 #### Example
-    <kendo:stockChart roundToBaseUnit="roundToBaseUnit">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem roundToBaseUnit="roundToBaseUnit">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -173,8 +173,8 @@ Specifying
 Specifies the week start day when
 
 #### Example
-    <kendo:stockChart weekStartDay="weekStartDay">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem weekStartDay="weekStartDay">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -184,8 +184,8 @@ Specifies the maximum number of groups (categories) to produce when
 either
 
 #### Example
-    <kendo:stockChart maxDateGroups="maxDateGroups">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem maxDateGroups="maxDateGroups">
+    </kendo:stockChart-categoryAxisItem>
 
 
 
@@ -194,8 +194,8 @@ either
 The visibility of the axis.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem visible="visible">
+    </kendo:stockChart-categoryAxisItem>
 
 
 

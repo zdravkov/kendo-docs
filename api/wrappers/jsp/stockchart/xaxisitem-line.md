@@ -23,8 +23,8 @@ The color of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-line color="color">
+    </kendo:stockChart-xAxisItem-line>
 
 
 
@@ -33,8 +33,8 @@ not the grid lines.
 The dash type of the line.
 
 #### Example
-    <kendo:stockChart dashType="dashType">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-line dashType="dashType">
+    </kendo:stockChart-xAxisItem-line>
 
 
 
@@ -43,8 +43,8 @@ The dash type of the line.
 The visibility of the line.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-line visible="visible">
+    </kendo:stockChart-xAxisItem-line>
 
 
 
@@ -54,7 +54,7 @@ The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-line width="width">
+    </kendo:stockChart-xAxisItem-line>
 
 

@@ -23,8 +23,8 @@ The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-pane-title-border color="color">
+    </kendo:stockChart-pane-title-border>
 
 
 
@@ -33,8 +33,8 @@ hex and rgb.
 The dash type of the border.
 
 #### Example
-    <kendo:stockChart dashType="dashType">
-    </kendo:stockChart>
+    <kendo:stockChart-pane-title-border dashType="dashType">
+    </kendo:stockChart-pane-title-border>
 
 
 
@@ -43,7 +43,7 @@ The dash type of the border.
 The width of the border.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-pane-title-border width="width">
+    </kendo:stockChart-pane-title-border>
 
 

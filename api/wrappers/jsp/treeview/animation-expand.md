@@ -23,8 +23,8 @@ The number of milliseconds used for the animation when a
 node is expanded.
 
 #### Example
-    <kendo:treeView duration="duration">
-    </kendo:treeView>
+    <kendo:treeView-animation-expand duration="duration">
+    </kendo:treeView-animation-expand>
 
 
 
@@ -33,8 +33,8 @@ node is expanded.
 A whitespace-delimited string of animation effects that are utilized when a
 
 #### Example
-    <kendo:treeView effects="effects">
-    </kendo:treeView>
+    <kendo:treeView-animation-expand effects="effects">
+    </kendo:treeView-animation-expand>
 
 
 
@@ -43,7 +43,7 @@ A whitespace-delimited string of animation effects that are utilized when a
 If
 
 #### Example
-    <kendo:treeView show="show">
-    </kendo:treeView>
+    <kendo:treeView-animation-expand show="show">
+    </kendo:treeView-animation-expand>
 
 

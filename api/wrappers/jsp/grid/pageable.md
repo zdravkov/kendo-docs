@@ -22,8 +22,8 @@ A JSP tag representing Kendo Pageable.
 Defines the number of records which will be displyed.
 
 #### Example
-    <kendo:grid pageSize="pageSize">
-    </kendo:grid>
+    <kendo:grid-pageable pageSize="pageSize">
+    </kendo:grid-pageable>
 
 
 
@@ -32,8 +32,8 @@ Defines the number of records which will be displyed.
 Defines if buttons for navigating to the first, last, previous and next pages will be shown.
 
 #### Example
-    <kendo:grid previousNext="previousNext">
-    </kendo:grid>
+    <kendo:grid-pageable previousNext="previousNext">
+    </kendo:grid-pageable>
 
 
 
@@ -42,8 +42,8 @@ Defines if buttons for navigating to the first, last, previous and next pages wi
 Defines if numeric portion of the pager will be shown.
 
 #### Example
-    <kendo:grid numeric="numeric">
-    </kendo:grid>
+    <kendo:grid-pageable numeric="numeric">
+    </kendo:grid-pageable>
 
 
 
@@ -52,8 +52,8 @@ Defines if numeric portion of the pager will be shown.
 Defines the number of buttons displayed in the numeric pager.
 
 #### Example
-    <kendo:grid buttonCount="buttonCount">
-    </kendo:grid>
+    <kendo:grid-pageable buttonCount="buttonCount">
+    </kendo:grid-pageable>
 
 
 
@@ -62,8 +62,8 @@ Defines the number of buttons displayed in the numeric pager.
 Defines if an input element which allows the user to navigate to given page will be displayed.
 
 #### Example
-    <kendo:grid input="input">
-    </kendo:grid>
+    <kendo:grid-pageable input="input">
+    </kendo:grid-pageable>
 
 
 
@@ -72,8 +72,8 @@ Defines if an input element which allows the user to navigate to given page will
 Displayes a list with predefined page sizes. An array of values to be displayed can be provided.
 
 #### Example
-    <kendo:grid pageSizes="pageSizes">
-    </kendo:grid>
+    <kendo:grid-pageable pageSizes="pageSizes">
+    </kendo:grid-pageable>
 
 
 
@@ -82,8 +82,8 @@ Displayes a list with predefined page sizes. An array of values to be displayed 
 Defines if a refresh button will be displayed.
 
 #### Example
-    <kendo:grid refresh="refresh">
-    </kendo:grid>
+    <kendo:grid-pageable refresh="refresh">
+    </kendo:grid-pageable>
 
 
 
@@ -92,8 +92,8 @@ Defines if a refresh button will be displayed.
 Defines if a label showing current paging information will be displayed.
 
 #### Example
-    <kendo:grid info="info">
-    </kendo:grid>
+    <kendo:grid-pageable info="info">
+    </kendo:grid-pageable>
 
 
 

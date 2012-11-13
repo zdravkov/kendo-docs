@@ -23,8 +23,8 @@ The color of the major ticks.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-majorTicks color="color">
+    </kendo:linearGauge-scale-majorTicks>
 
 
 
@@ -34,8 +34,8 @@ The major tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
 
 #### Example
-    <kendo:linearGauge size="size">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-majorTicks size="size">
+    </kendo:linearGauge-scale-majorTicks>
 
 
 
@@ -44,8 +44,8 @@ This is the length of the line in pixels that is drawn to indicate the tick on t
 The visibility of the major ticks.
 
 #### Example
-    <kendo:linearGauge visible="visible">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-majorTicks visible="visible">
+    </kendo:linearGauge-scale-majorTicks>
 
 
 
@@ -54,7 +54,7 @@ The visibility of the major ticks.
 The width of the major ticks.
 
 #### Example
-    <kendo:linearGauge width="width">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-majorTicks width="width">
+    </kendo:linearGauge-scale-majorTicks>
 
 

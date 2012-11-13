@@ -22,8 +22,8 @@ A JSP tag representing Kendo ToolbarItem.
 The name of the command. One of the predefined or a custom.
 
 #### Example
-    <kendo:grid name="name">
-    </kendo:grid>
+    <kendo:grid-toolbarItem name="name">
+    </kendo:grid-toolbarItem>
 
 
 
@@ -32,8 +32,8 @@ The name of the command. One of the predefined or a custom.
 The template for the command button.
 
 #### Example
-    <kendo:grid template="template">
-    </kendo:grid>
+    <kendo:grid-toolbarItem template="template">
+    </kendo:grid-toolbarItem>
 
 
 
@@ -42,7 +42,7 @@ The template for the command button.
 The text of the command that will be set on the button.
 
 #### Example
-    <kendo:grid text="text">
-    </kendo:grid>
+    <kendo:grid-toolbarItem text="text">
+    </kendo:grid-toolbarItem>
 
 

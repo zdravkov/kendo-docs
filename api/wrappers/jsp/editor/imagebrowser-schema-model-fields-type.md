@@ -22,8 +22,8 @@ A JSP tag representing Kendo Type.
 Specifies the function which will parse the field value. If not set default parsers will be used.
 
 #### Example
-    <kendo:editor parse="handle_parse">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-schema-model-fields-type parse="handle_parse">
+    </kendo:editor-imagebrowser-schema-model-fields-type>
     <script>
         function handle_parse(e) {
             // Code to handle the parse event.
@@ -37,8 +37,8 @@ Specifies the function which will parse the field value. If not set default pars
 The name of the field.
 
 #### Example
-    <kendo:editor field="field">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-schema-model-fields-type field="field">
+    </kendo:editor-imagebrowser-schema-model-fields-type>
 
 
 

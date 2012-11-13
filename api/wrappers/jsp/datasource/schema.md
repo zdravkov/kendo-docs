@@ -23,8 +23,8 @@ Specifies the field from the response which contains the aggregate results. If s
 return the aggregate results for the current response.
 
 #### Example
-    <kendo:dataSource aggregates="aggregates">
-    </kendo:dataSource>
+    <kendo:dataSource-schema aggregates="aggregates">
+    </kendo:dataSource-schema>
 
 
 
@@ -34,8 +34,8 @@ Specifies the field from the response which contains the data items. If set to a
 return the data items for the current response.
 
 #### Example
-    <kendo:dataSource data="data">
-    </kendo:dataSource>
+    <kendo:dataSource-schema data="data">
+    </kendo:dataSource-schema>
 
 
 
@@ -45,8 +45,8 @@ Specifies the field from the response which contains any errors. If set to a fun
 return the errors for the current response (if present). If there are any errors the
 
 #### Example
-    <kendo:dataSource errors="errors">
-    </kendo:dataSource>
+    <kendo:dataSource-schema errors="errors">
+    </kendo:dataSource-schema>
 
 
 
@@ -56,8 +56,8 @@ Specifies the field from the response which contains the groups. If set to a fun
 return the groups for the current response.
 
 #### Example
-    <kendo:dataSource groups="groups">
-    </kendo:dataSource>
+    <kendo:dataSource-schema groups="groups">
+    </kendo:dataSource-schema>
 
 
 
@@ -66,8 +66,8 @@ return the groups for the current response.
 Describes the
 
 #### Example
-    <kendo:dataSource model="model">
-    </kendo:dataSource>
+    <kendo:dataSource-schema model="model">
+    </kendo:dataSource-schema>
 
 
 
@@ -76,8 +76,8 @@ Describes the
 Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
 
 #### Example
-    <kendo:dataSource parse="handle_parse">
-    </kendo:dataSource>
+    <kendo:dataSource-schema parse="handle_parse">
+    </kendo:dataSource-schema>
     <script>
         function handle_parse(e) {
             // Code to handle the parse event.
@@ -92,8 +92,8 @@ Specifies the field from the response which contains the total number of data it
 return the total number of data items for the current response.
 
 #### Example
-    <kendo:dataSource total="total">
-    </kendo:dataSource>
+    <kendo:dataSource-schema total="total">
+    </kendo:dataSource-schema>
 
 
 
@@ -102,8 +102,8 @@ return the total number of data items for the current response.
 Specify the type of the response - XML or JSON. The only supported values are
 
 #### Example
-    <kendo:dataSource type="type">
-    </kendo:dataSource>
+    <kendo:dataSource-schema type="type">
+    </kendo:dataSource-schema>
 
 
 

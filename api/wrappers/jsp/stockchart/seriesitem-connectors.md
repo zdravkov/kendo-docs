@@ -22,8 +22,8 @@ A JSP tag representing Kendo Connectors.
 The color of the connector line.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-connectors color="color">
+    </kendo:stockChart-seriesItem-connectors>
 
 
 
@@ -32,8 +32,8 @@ The color of the connector line.
 The padding between the connector line and the label, and connector line and donut chart.
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-connectors padding="padding">
+    </kendo:stockChart-seriesItem-connectors>
 
 
 
@@ -42,7 +42,7 @@ The padding between the connector line and the label, and connector line and don
 The width of the connector line.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-connectors width="width">
+    </kendo:stockChart-seriesItem-connectors>
 
 

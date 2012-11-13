@@ -22,8 +22,8 @@ A JSP tag representing Kendo PlotBand.
 The start position of the plot band in axis units.
 
 #### Example
-    <kendo:chart from="from">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-plotBand from="from">
+    </kendo:chart-yAxisItem-plotBand>
 
 
 
@@ -32,8 +32,8 @@ The start position of the plot band in axis units.
 The end position of the plot band in axis units.
 
 #### Example
-    <kendo:chart to="to">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-plotBand to="to">
+    </kendo:chart-yAxisItem-plotBand>
 
 
 
@@ -42,8 +42,8 @@ The end position of the plot band in axis units.
 The color of the plot band.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-plotBand color="color">
+    </kendo:chart-yAxisItem-plotBand>
 
 
 
@@ -52,7 +52,7 @@ The color of the plot band.
 The opacity of the plot band.
 
 #### Example
-    <kendo:chart opacity="opacity">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-plotBand opacity="opacity">
+    </kendo:chart-yAxisItem-plotBand>
 
 

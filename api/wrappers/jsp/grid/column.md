@@ -22,18 +22,18 @@ A JSP tag representing Kendo Column.
 Definition of column cells' HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
 
 #### Example
-    <kendo:grid attributes="attributes">
-    </kendo:grid>
+    <kendo:grid-column attributes="attributes">
+    </kendo:grid-column>
 
 
 
 ### command `String`
 
-Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
+Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy". Further configuration is available via [kendo:grid-column-command](#kendo-grid-column-command). 
 
 #### Example
-    <kendo:grid command="command">
-    </kendo:grid>
+    <kendo:grid-column command="command">
+    </kendo:grid-column>
 
 
 
@@ -42,8 +42,8 @@ Definition of command column. The supported built-in commands are: "create", "ca
 Provides a way to specify custom editor for this column.
 
 #### Example
-    <kendo:grid editor="handle_editor">
-    </kendo:grid>
+    <kendo:grid-column editor="handle_editor">
+    </kendo:grid-column>
     <script>
         function handle_editor(e) {
             // Code to handle the editor event.
@@ -57,8 +57,8 @@ Provides a way to specify custom editor for this column.
 Specified whether the column content is escaped. Disable encoding if the data contains HTML markup.
 
 #### Example
-    <kendo:grid encoded="encoded">
-    </kendo:grid>
+    <kendo:grid-column encoded="encoded">
+    </kendo:grid-column>
 
 
 
@@ -67,8 +67,8 @@ Specified whether the column content is escaped. Disable encoding if the data co
 The field from the datasource that will be displayed in the column.
 
 #### Example
-    <kendo:grid field="field">
-    </kendo:grid>
+    <kendo:grid-column field="field">
+    </kendo:grid-column>
 
 
 
@@ -77,8 +77,8 @@ The field from the datasource that will be displayed in the column.
 Specifies whether given column is filterable.
 
 #### Example
-    <kendo:grid filterable="filterable">
-    </kendo:grid>
+    <kendo:grid-column filterable="filterable">
+    </kendo:grid-column>
 
 
 
@@ -87,8 +87,8 @@ Specifies whether given column is filterable.
 The format that will be applied on the column cells.
 
 #### Example
-    <kendo:grid format="format">
-    </kendo:grid>
+    <kendo:grid-column format="format">
+    </kendo:grid-column>
 
 
 
@@ -97,8 +97,8 @@ The format that will be applied on the column cells.
 Definition of column header cell's HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
 
 #### Example
-    <kendo:grid headerAttributes="headerAttributes">
-    </kendo:grid>
+    <kendo:grid-column headerAttributes="headerAttributes">
+    </kendo:grid-column>
 
 
 
@@ -107,18 +107,18 @@ Definition of column header cell's HTML attributes. Reserved words in Javascript
 The template for column's header cell. If sorting is enabled, it will be wrapped in a
 
 #### Example
-    <kendo:grid headerTemplate="headerTemplate">
-    </kendo:grid>
+    <kendo:grid-column headerTemplate="headerTemplate">
+    </kendo:grid-column>
 
 
 
 ### sortable `boolean`
 
-Specifies whether given column is sortable. Further configuration is available via [kendo:grid-sortable](#kendo-grid-sortable). 
+Specifies whether given column is sortable.
 
 #### Example
-    <kendo:grid sortable="sortable">
-    </kendo:grid>
+    <kendo:grid-column sortable="sortable">
+    </kendo:grid-column>
 
 
 
@@ -127,8 +127,8 @@ Specifies whether given column is sortable. Further configuration is available v
 The template for column's cells.
 
 #### Example
-    <kendo:grid template="template">
-    </kendo:grid>
+    <kendo:grid-column template="template">
+    </kendo:grid-column>
 
 
 
@@ -137,8 +137,8 @@ The template for column's cells.
 The aggregates to be used when grouping is applied
 
 #### Example
-    <kendo:grid aggregates="aggregates">
-    </kendo:grid>
+    <kendo:grid-column aggregates="aggregates">
+    </kendo:grid-column>
 
 
 
@@ -147,8 +147,8 @@ The aggregates to be used when grouping is applied
 The template for group header item.
 
 #### Example
-    <kendo:grid groupHeaderTemplate="groupHeaderTemplate">
-    </kendo:grid>
+    <kendo:grid-column groupHeaderTemplate="groupHeaderTemplate">
+    </kendo:grid-column>
 
 
 
@@ -157,8 +157,8 @@ The template for group header item.
 The template for column's cell in group footer item.
 
 #### Example
-    <kendo:grid groupFooterTemplate="groupFooterTemplate">
-    </kendo:grid>
+    <kendo:grid-column groupFooterTemplate="groupFooterTemplate">
+    </kendo:grid-column>
 
 
 
@@ -167,8 +167,8 @@ The template for column's cell in group footer item.
 The template for column's cell in footer item.
 
 #### Example
-    <kendo:grid footerTemplate="footerTemplate">
-    </kendo:grid>
+    <kendo:grid-column footerTemplate="footerTemplate">
+    </kendo:grid-column>
 
 
 
@@ -177,8 +177,8 @@ The template for column's cell in footer item.
 The text that will be displayed in the column header.
 
 #### Example
-    <kendo:grid title="title">
-    </kendo:grid>
+    <kendo:grid-column title="title">
+    </kendo:grid-column>
 
 
 
@@ -187,8 +187,8 @@ The text that will be displayed in the column header.
 The width of the column.
 
 #### Example
-    <kendo:grid width="width">
-    </kendo:grid>
+    <kendo:grid-column width="width">
+    </kendo:grid-column>
 
 
 
@@ -197,8 +197,8 @@ The width of the column.
 Indicates whether the column should be visible in column menu.
 
 #### Example
-    <kendo:grid menu="menu">
-    </kendo:grid>
+    <kendo:grid-column menu="menu">
+    </kendo:grid-column>
 
 
 

@@ -23,8 +23,8 @@ The color of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-line color="color">
+    </kendo:chart-yAxisItem-line>
 
 
 
@@ -33,8 +33,8 @@ not the grid lines.
 The dash type of the line.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-line dashType="dashType">
+    </kendo:chart-yAxisItem-line>
 
 
 
@@ -43,8 +43,8 @@ The dash type of the line.
 The visibility of the line.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-line visible="visible">
+    </kendo:chart-yAxisItem-line>
 
 
 
@@ -54,7 +54,7 @@ The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-line width="width">
+    </kendo:chart-yAxisItem-line>
 
 

@@ -23,8 +23,8 @@ The background color of the title. Any valid CSS color string will work here, in
 hex and rgb.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title background="background">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -33,8 +33,8 @@ hex and rgb.
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title color="color">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -43,8 +43,8 @@ The text color of the title. Any valid CSS color string will work here, includin
 The font style of the title.
 
 #### Example
-    <kendo:stockChart font="font">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title font="font">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -53,8 +53,8 @@ The font style of the title.
 The margin of the title.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title margin="margin">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -63,8 +63,8 @@ The margin of the title.
 The padding of the title.
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title padding="padding">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -73,8 +73,8 @@ The padding of the title.
 The position of the title.
 
 #### Example
-    <kendo:stockChart position="position">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title position="position">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -83,8 +83,8 @@ The position of the title.
 The rotation angle of the title.
 
 #### Example
-    <kendo:stockChart rotation="rotation">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title rotation="rotation">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -93,8 +93,8 @@ The rotation angle of the title.
 The text of the title.
 
 #### Example
-    <kendo:stockChart text="text">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title text="text">
+    </kendo:stockChart-yAxisItem-title>
 
 
 
@@ -103,8 +103,8 @@ The text of the title.
 The visibility of the title.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-title visible="visible">
+    </kendo:stockChart-yAxisItem-title>
 
 
 

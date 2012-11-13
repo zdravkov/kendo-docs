@@ -22,8 +22,8 @@ A JSP tag representing Kendo Month.
 Template to be used for rendering the cells in the "month" view, which are in range.
 
 #### Example
-    <kendo:calendar content="content">
-    </kendo:calendar>
+    <kendo:calendar-month content="content">
+    </kendo:calendar-month>
 
 
 
@@ -32,7 +32,7 @@ Template to be used for rendering the cells in the "month" view, which are in ra
 Template to be used for rendering the cells in the "month" view, which are not in the min/max range.
 
 #### Example
-    <kendo:calendar empty="empty">
-    </kendo:calendar>
+    <kendo:calendar-month empty="empty">
+    </kendo:calendar-month>
 
 

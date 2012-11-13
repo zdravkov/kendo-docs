@@ -22,8 +22,8 @@ A JSP tag representing Kendo Line.
 The color of the lines. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-line color="color">
+    </kendo:chart-categoryAxisItem-line>
 
 
 
@@ -32,8 +32,8 @@ The color of the lines. Any valid CSS color string will work here, including hex
 The dash type of the line.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-line dashType="dashType">
+    </kendo:chart-categoryAxisItem-line>
 
 
 
@@ -42,8 +42,8 @@ The dash type of the line.
 The visibility of the lines.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-line visible="visible">
+    </kendo:chart-categoryAxisItem-line>
 
 
 
@@ -53,7 +53,7 @@ The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-line width="width">
+    </kendo:chart-categoryAxisItem-line>
 
 

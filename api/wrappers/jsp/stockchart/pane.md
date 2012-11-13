@@ -22,8 +22,8 @@ A JSP tag representing Kendo Pane.
 The unique pane name.
 
 #### Example
-    <kendo:stockChart name="name">
-    </kendo:stockChart>
+    <kendo:stockChart-pane name="name">
+    </kendo:stockChart-pane>
 
 
 
@@ -32,8 +32,8 @@ The unique pane name.
 The margin of the pane.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-pane margin="margin">
+    </kendo:stockChart-pane>
 
 
 
@@ -42,8 +42,8 @@ The margin of the pane.
 The padding of the pane.
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-pane padding="padding">
+    </kendo:stockChart-pane>
 
 
 
@@ -52,8 +52,8 @@ The padding of the pane.
 The background color of the pane.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-pane background="background">
+    </kendo:stockChart-pane>
 
 
 
@@ -62,18 +62,18 @@ The background color of the pane.
 The pane height in pixels.
 
 #### Example
-    <kendo:stockChart height="height">
-    </kendo:stockChart>
+    <kendo:stockChart-pane height="height">
+    </kendo:stockChart-pane>
 
 
 
 ### title `String`
 
-The pane title text or configuration. Further configuration is available via [kendo:stockChart-title](#kendo-stockChart-title). 
+The pane title text or configuration. Further configuration is available via [kendo:stockChart-pane-title](#kendo-stockChart-pane-title). 
 
 #### Example
-    <kendo:stockChart title="title">
-    </kendo:stockChart>
+    <kendo:stockChart-pane title="title">
+    </kendo:stockChart-pane>
 
 
 

@@ -19,11 +19,11 @@ A JSP tag representing Kendo ColumnMenu.
 
 ### sortable `boolean`
 
-Enable/disable sorting section in column header menu. Further configuration is available via [kendo:grid-sortable](#kendo-grid-sortable). 
+Enable/disable sorting section in column header menu.
 
 #### Example
-    <kendo:grid sortable="sortable">
-    </kendo:grid>
+    <kendo:grid-columnMenu sortable="sortable">
+    </kendo:grid-columnMenu>
 
 
 
@@ -32,7 +32,7 @@ Enable/disable sorting section in column header menu. Further configuration is a
 Enable/disable filter section in column header menu.
 
 #### Example
-    <kendo:grid filterable="filterable">
-    </kendo:grid>
+    <kendo:grid-columnMenu filterable="filterable">
+    </kendo:grid-columnMenu>
 
 

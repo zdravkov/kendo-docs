@@ -19,31 +19,31 @@ A JSP tag representing Kendo Fields.
 
 ### name `String`
 
-The field which contains the name of the image/directory
+The field which contains the name of the image/directory Further configuration is available via [kendo:editor-imagebrowser-schema-model-fields-name](#kendo-editor-imagebrowser-schema-model-fields-name). 
 
 #### Example
-    <kendo:editor name="name">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-schema-model-fields name="name">
+    </kendo:editor-imagebrowser-schema-model-fields>
 
 
 
 ### type `String`
 
-The field which contains the type of the entry. Either
+The field which contains the type of the entry. Either Further configuration is available via [kendo:editor-imagebrowser-schema-model-fields-type](#kendo-editor-imagebrowser-schema-model-fields-type). 
 
 #### Example
-    <kendo:editor type="type">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-schema-model-fields type="type">
+    </kendo:editor-imagebrowser-schema-model-fields>
 
 
 
 ### size `String`
 
-The field which contains the size of image.
+The field which contains the size of image. Further configuration is available via [kendo:editor-imagebrowser-schema-model-fields-size](#kendo-editor-imagebrowser-schema-model-fields-size). 
 
 #### Example
-    <kendo:editor size="size">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-schema-model-fields size="size">
+    </kendo:editor-imagebrowser-schema-model-fields>
 
 
 

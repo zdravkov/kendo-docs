@@ -22,8 +22,8 @@ A JSP tag representing Kendo Model.
 The name of the field which acts as an identifier.
 
 #### Example
-    <kendo:editor id="id">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-schema-model id="id">
+    </kendo:editor-imagebrowser-schema-model>
 
 
 

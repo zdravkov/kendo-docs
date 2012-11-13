@@ -22,8 +22,8 @@ A JSP tag representing Kendo Pane.
 The unique pane name.
 
 #### Example
-    <kendo:chart name="name">
-    </kendo:chart>
+    <kendo:chart-pane name="name">
+    </kendo:chart-pane>
 
 
 
@@ -32,8 +32,8 @@ The unique pane name.
 The margin of the pane.
 
 #### Example
-    <kendo:chart margin="margin">
-    </kendo:chart>
+    <kendo:chart-pane margin="margin">
+    </kendo:chart-pane>
 
 
 
@@ -42,8 +42,8 @@ The margin of the pane.
 The padding of the pane.
 
 #### Example
-    <kendo:chart padding="padding">
-    </kendo:chart>
+    <kendo:chart-pane padding="padding">
+    </kendo:chart-pane>
 
 
 
@@ -52,8 +52,8 @@ The padding of the pane.
 The background color of the pane.
 
 #### Example
-    <kendo:chart background="background">
-    </kendo:chart>
+    <kendo:chart-pane background="background">
+    </kendo:chart-pane>
 
 
 
@@ -62,18 +62,18 @@ The background color of the pane.
 The pane height in pixels.
 
 #### Example
-    <kendo:chart height="height">
-    </kendo:chart>
+    <kendo:chart-pane height="height">
+    </kendo:chart-pane>
 
 
 
 ### title `String`
 
-The pane title text or configuration. Further configuration is available via [kendo:chart-title](#kendo-chart-title). 
+The pane title text or configuration. Further configuration is available via [kendo:chart-pane-title](#kendo-chart-pane-title). 
 
 #### Example
-    <kendo:chart title="title">
-    </kendo:chart>
+    <kendo:chart-pane title="title">
+    </kendo:chart-pane>
 
 
 

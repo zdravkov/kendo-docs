@@ -22,8 +22,8 @@ A JSP tag representing Kendo MinorTicks.
 The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
 
 #### Example
-    <kendo:chart size="size">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-minorTicks size="size">
+    </kendo:chart-valueAxisItem-minorTicks>
 
 
 
@@ -32,7 +32,7 @@ The axis minor tick size. This is the length of the line in pixels that is drawn
 The visibility of the minor ticks.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem-minorTicks visible="visible">
+    </kendo:chart-valueAxisItem-minorTicks>
 
 

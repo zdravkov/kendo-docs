@@ -22,8 +22,8 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:tabStrip text="text">
-    </kendo:tabStrip>
+    <kendo:tabStrip-item text="text">
+    </kendo:tabStrip-item>
 
 
 
@@ -32,8 +32,8 @@ Specifies the text displayed by the item
 Specifies the URL of the image displayed by the item
 
 #### Example
-    <kendo:tabStrip imageUrl="imageUrl">
-    </kendo:tabStrip>
+    <kendo:tabStrip-item imageUrl="imageUrl">
+    </kendo:tabStrip-item>
 
 
 
@@ -42,8 +42,8 @@ Specifies the URL of the image displayed by the item
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:tabStrip spriteCssClass="spriteCssClass">
-    </kendo:tabStrip>
+    <kendo:tabStrip-item spriteCssClass="spriteCssClass">
+    </kendo:tabStrip-item>
 
 
 
@@ -52,8 +52,8 @@ Specifies the class name for the sprite image displayed by the item
 Specifies whether the item is initially expanded
 
 #### Example
-    <kendo:tabStrip expanded="expanded">
-    </kendo:tabStrip>
+    <kendo:tabStrip-item expanded="expanded">
+    </kendo:tabStrip-item>
 
 
 
@@ -62,8 +62,8 @@ Specifies whether the item is initially expanded
 Specifies whether the item is initially enabled
 
 #### Example
-    <kendo:tabStrip enabled="enabled">
-    </kendo:tabStrip>
+    <kendo:tabStrip-item enabled="enabled">
+    </kendo:tabStrip-item>
 
 
 
@@ -72,8 +72,8 @@ Specifies whether the item is initially enabled
 Specifies the url from which the item content will be loaded
 
 #### Example
-    <kendo:tabStrip contentUrl="contentUrl">
-    </kendo:tabStrip>
+    <kendo:tabStrip-item contentUrl="contentUrl">
+    </kendo:tabStrip-item>
 
 
 
@@ -82,7 +82,7 @@ Specifies the url from which the item content will be loaded
 Specifies whether the item is initially selected
 
 #### Example
-    <kendo:tabStrip selected="selected">
-    </kendo:tabStrip>
+    <kendo:tabStrip-item selected="selected">
+    </kendo:tabStrip-item>
 
 

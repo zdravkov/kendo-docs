@@ -22,8 +22,8 @@ A JSP tag representing Kendo Markers.
 The background color of the current series markers.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-markers background="background">
+    </kendo:stockChart-seriesItem-markers>
 
 
 
@@ -32,8 +32,8 @@ The background color of the current series markers.
 The marker size.
 
 #### Example
-    <kendo:stockChart size="size">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-markers size="size">
+    </kendo:stockChart-seriesItem-markers>
 
 
 
@@ -42,8 +42,8 @@ The marker size.
 Configures the markers shape type.
 
 #### Example
-    <kendo:stockChart type="type">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-markers type="type">
+    </kendo:stockChart-seriesItem-markers>
 
 
 
@@ -52,8 +52,8 @@ Configures the markers shape type.
 The markers visibility.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-seriesItem-markers visible="visible">
+    </kendo:stockChart-seriesItem-markers>
 
 
 

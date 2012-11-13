@@ -22,8 +22,8 @@ A JSP tag representing Kendo Scale.
 The interval between major divisions.
 
 #### Example
-    <kendo:linearGauge majorUnit="majorUnit">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale majorUnit="majorUnit">
+    </kendo:linearGauge-scale>
 
 
 
@@ -32,8 +32,8 @@ The interval between major divisions.
 The maximum value of the scale.
 
 #### Example
-    <kendo:linearGauge max="max">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale max="max">
+    </kendo:linearGauge-scale>
 
 
 
@@ -42,8 +42,8 @@ The maximum value of the scale.
 The minimum value of the scale.
 
 #### Example
-    <kendo:linearGauge min="min">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale min="min">
+    </kendo:linearGauge-scale>
 
 
 
@@ -52,8 +52,8 @@ The minimum value of the scale.
 The interval between minor divisions.
 
 #### Example
-    <kendo:linearGauge minorUnit="minorUnit">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale minorUnit="minorUnit">
+    </kendo:linearGauge-scale>
 
 
 
@@ -63,8 +63,8 @@ Mirrors the scale labels and ticks.
 If the labels are normally on the left side of the scale, mirroring the scale will render them to the right.
 
 #### Example
-    <kendo:linearGauge mirror="mirror">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale mirror="mirror">
+    </kendo:linearGauge-scale>
 
 
 
@@ -73,8 +73,8 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
 Reverses the axis direction - values increase from right to left and from top to bottom.
 
 #### Example
-    <kendo:linearGauge reverse="reverse">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale reverse="reverse">
+    </kendo:linearGauge-scale>
 
 
 
@@ -83,8 +83,8 @@ Reverses the axis direction - values increase from right to left and from top to
 The position of the gauge.
 
 #### Example
-    <kendo:linearGauge vertical="vertical">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale vertical="vertical">
+    </kendo:linearGauge-scale>
 
 
 

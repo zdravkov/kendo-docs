@@ -23,8 +23,8 @@ The axis major tick size. This is the length of the line in pixels that is drawn
 on the chart.
 
 #### Example
-    <kendo:chart size="size">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-majorTicks size="size">
+    </kendo:chart-categoryAxisItem-majorTicks>
 
 
 
@@ -33,7 +33,7 @@ on the chart.
 The visibility of the major ticks.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-majorTicks visible="visible">
+    </kendo:chart-categoryAxisItem-majorTicks>
 
 

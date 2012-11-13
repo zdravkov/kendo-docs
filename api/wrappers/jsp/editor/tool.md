@@ -22,8 +22,8 @@ A JSP tag representing Kendo Tool.
 The mandatory name of the tool. The built-in tools are "bold", "italic", "underline", "strikethrough", "fontName", "fontSize", "foreColor", "backColor", "justifyLeft", "justifyCenter", "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent", "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
 
 #### Example
-    <kendo:editor name="name">
-    </kendo:editor>
+    <kendo:editor-tool name="name">
+    </kendo:editor-tool>
 
 
 
@@ -32,8 +32,8 @@ The mandatory name of the tool. The built-in tools are "bold", "italic", "underl
 The text which will be displayed when the end-user hovers the tool button with the mouse.
 
 #### Example
-    <kendo:editor tooltip="tooltip">
-    </kendo:editor>
+    <kendo:editor-tool tooltip="tooltip">
+    </kendo:editor-tool>
 
 
 
@@ -42,8 +42,8 @@ The text which will be displayed when the end-user hovers the tool button with t
 The JavaScript function which will be executed when the end-user clicks the tool button.
 
 #### Example
-    <kendo:editor exec="handle_exec">
-    </kendo:editor>
+    <kendo:editor-tool exec="handle_exec">
+    </kendo:editor-tool>
     <script>
         function handle_exec(e) {
             // Code to handle the exec event.

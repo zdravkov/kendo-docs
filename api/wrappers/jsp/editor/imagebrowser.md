@@ -22,8 +22,8 @@ A JSP tag representing Kendo Imagebrowser.
 Defines the allowed file extensions.
 
 #### Example
-    <kendo:editor fileTypes="fileTypes">
-    </kendo:editor>
+    <kendo:editor-imagebrowser fileTypes="fileTypes">
+    </kendo:editor-imagebrowser>
 
 
 

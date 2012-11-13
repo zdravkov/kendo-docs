@@ -23,8 +23,8 @@ The color of the lines. Any valid CSS color string will work here, including hex
 rgb.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-minorGridLines color="color">
+    </kendo:stockChart-categoryAxisItem-minorGridLines>
 
 
 
@@ -33,8 +33,8 @@ rgb.
 The dash type of the grid lines.
 
 #### Example
-    <kendo:stockChart dashType="dashType">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-minorGridLines dashType="dashType">
+    </kendo:stockChart-categoryAxisItem-minorGridLines>
 
 
 
@@ -43,8 +43,8 @@ The dash type of the grid lines.
 The visibility of the lines.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-minorGridLines visible="visible">
+    </kendo:stockChart-categoryAxisItem-minorGridLines>
 
 
 
@@ -53,7 +53,7 @@ The visibility of the lines.
 The width of the lines.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-categoryAxisItem-minorGridLines width="width">
+    </kendo:stockChart-categoryAxisItem-minorGridLines>
 
 

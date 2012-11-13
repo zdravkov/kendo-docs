@@ -23,8 +23,8 @@ The background color of the labels. Any valid CSS color string will work here, i
 hex and rgb
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels background="background">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -33,8 +33,8 @@ hex and rgb
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels color="color">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -43,8 +43,8 @@ The text color of the labels. Any valid CSS color string will work here, includi
 The font style of the labels.
 
 #### Example
-    <kendo:stockChart font="font">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels font="font">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -53,8 +53,8 @@ The font style of the labels.
 The format of the labels.
 
 #### Example
-    <kendo:stockChart format="format">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels format="format">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -63,8 +63,8 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels margin="margin">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -75,8 +75,8 @@ If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
 
 #### Example
-    <kendo:stockChart mirror="mirror">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels mirror="mirror">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -85,8 +85,8 @@ mirroring the axis will render them to the right.
 The padding of the labels.
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels padding="padding">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -95,8 +95,8 @@ The padding of the labels.
 The rotation angle of the labels.
 
 #### Example
-    <kendo:stockChart rotation="rotation">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels rotation="rotation">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -106,8 +106,8 @@ Number of labels to skip.
 Skips rendering the first n labels.
 
 #### Example
-    <kendo:stockChart skip="skip">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels skip="skip">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -117,8 +117,8 @@ Label rendering step.
 Every n-th label is rendered where n is the step
 
 #### Example
-    <kendo:stockChart step="step">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels step="step">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -127,8 +127,8 @@ Every n-th label is rendered where n is the step
 The label template.
 
 #### Example
-    <kendo:stockChart template="template">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels template="template">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -137,8 +137,8 @@ The label template.
 The visibility of the labels.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels visible="visible">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -147,8 +147,8 @@ The visibility of the labels.
 Culture to use for formatting the dates. See
 
 #### Example
-    <kendo:stockChart culture="culture">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels culture="culture">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 
@@ -157,8 +157,8 @@ Culture to use for formatting the dates. See
 Date format strings
 
 #### Example
-    <kendo:stockChart dateFormats="dateFormats">
-    </kendo:stockChart>
+    <kendo:stockChart-xAxisItem-labels dateFormats="dateFormats">
+    </kendo:stockChart-xAxisItem-labels>
 
 
 

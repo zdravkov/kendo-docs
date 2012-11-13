@@ -22,8 +22,8 @@ A JSP tag representing Kendo Editable.
 Defines the text that will be used in confirmation box when delete an item.
 
 #### Example
-    <kendo:grid confirmation="confirmation">
-    </kendo:grid>
+    <kendo:grid-editable confirmation="confirmation">
+    </kendo:grid-editable>
 
 
 
@@ -32,8 +32,8 @@ Defines the text that will be used in confirmation box when delete an item.
 Indicates whether item should be deleted when click on delete button.
 
 #### Example
-    <kendo:grid destroy="destroy">
-    </kendo:grid>
+    <kendo:grid-editable destroy="destroy">
+    </kendo:grid-editable>
 
 
 
@@ -42,8 +42,8 @@ Indicates whether item should be deleted when click on delete button.
 Indicates which of the available edit modes(incell(default)/inline/popup) will be used
 
 #### Example
-    <kendo:grid mode="mode">
-    </kendo:grid>
+    <kendo:grid-editable mode="mode">
+    </kendo:grid-editable>
 
 
 
@@ -52,8 +52,8 @@ Indicates which of the available edit modes(incell(default)/inline/popup) will b
 Template which will be use during popup editing
 
 #### Example
-    <kendo:grid template="template">
-    </kendo:grid>
+    <kendo:grid-editable template="template">
+    </kendo:grid-editable>
 
 
 
@@ -62,7 +62,7 @@ Template which will be use during popup editing
 Indicates whether item should be switched to edit mode on click.
 
 #### Example
-    <kendo:grid update="update">
-    </kendo:grid>
+    <kendo:grid-editable update="update">
+    </kendo:grid-editable>
 
 

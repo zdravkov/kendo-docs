@@ -22,8 +22,8 @@ A JSP tag representing Kendo Range.
 The start position of the range in scale units.
 
 #### Example
-    <kendo:radialGauge from="from">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-range from="from">
+    </kendo:radialGauge-scale-range>
 
 
 
@@ -32,8 +32,8 @@ The start position of the range in scale units.
 The end position of the range in scale units.
 
 #### Example
-    <kendo:radialGauge to="to">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-range to="to">
+    </kendo:radialGauge-scale-range>
 
 
 
@@ -42,8 +42,8 @@ The end position of the range in scale units.
 The opacity of the range.
 
 #### Example
-    <kendo:radialGauge opacity="opacity">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-range opacity="opacity">
+    </kendo:radialGauge-scale-range>
 
 
 
@@ -53,7 +53,7 @@ The color of the range.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge color="color">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-range color="color">
+    </kendo:radialGauge-scale-range>
 
 

@@ -23,8 +23,8 @@ The background color of the labels.
 Any valid CSS color string will work here, including hex and rgb
 
 #### Example
-    <kendo:radialGauge background="background">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels background="background">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -34,8 +34,8 @@ The text color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge color="color">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels color="color">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -44,8 +44,8 @@ Any valid CSS color string will work here, including hex and rgb.
 The font style of the labels.
 
 #### Example
-    <kendo:radialGauge font="font">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels font="font">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -54,8 +54,8 @@ The font style of the labels.
 The format of the labels.
 
 #### Example
-    <kendo:radialGauge format="format">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels format="format">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -64,8 +64,8 @@ The format of the labels.
 The margin of the labels.
 
 #### Example
-    <kendo:radialGauge margin="margin">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels margin="margin">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -74,8 +74,8 @@ The margin of the labels.
 The padding of the labels.
 
 #### Example
-    <kendo:radialGauge padding="padding">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels padding="padding">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -84,8 +84,8 @@ The padding of the labels.
 The labels positions.
 
 #### Example
-    <kendo:radialGauge position="position">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels position="position">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -95,8 +95,8 @@ The label template.
 Template variables:
 
 #### Example
-    <kendo:radialGauge template="template">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels template="template">
+    </kendo:radialGauge-scale-labels>
 
 
 
@@ -105,8 +105,8 @@ Template variables:
 The visibility of the labels.
 
 #### Example
-    <kendo:radialGauge visible="visible">
-    </kendo:radialGauge>
+    <kendo:radialGauge-scale-labels visible="visible">
+    </kendo:radialGauge-scale-labels>
 
 
 

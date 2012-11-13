@@ -22,8 +22,8 @@ A JSP tag representing Kendo Open.
 Effect to be used for opening of the popup.
 
 #### Example
-    <kendo:dateTimePicker effects="effects">
-    </kendo:dateTimePicker>
+    <kendo:dateTimePicker-animation-open effects="effects">
+    </kendo:dateTimePicker-animation-open>
 
 
 
@@ -32,7 +32,7 @@ Effect to be used for opening of the popup.
 Difines the animation duration.
 
 #### Example
-    <kendo:dateTimePicker duration="duration">
-    </kendo:dateTimePicker>
+    <kendo:dateTimePicker-animation-open duration="duration">
+    </kendo:dateTimePicker-animation-open>
 
 

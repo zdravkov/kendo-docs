@@ -23,8 +23,8 @@ The selected files will be uploaded immediately by default. You can change this 
 autoUpload to false.
 
 #### Example
-    <kendo:upload autoUpload="autoUpload">
-    </kendo:upload>
+    <kendo:upload-async autoUpload="autoUpload">
+    </kendo:upload-async>
 
 
 
@@ -34,8 +34,8 @@ The selected files will be uploaded in separate requests, if this is supported b
 You can change this behavior by setting batch to true.
 
 #### Example
-    <kendo:upload batch="batch">
-    </kendo:upload>
+    <kendo:upload-async batch="batch">
+    </kendo:upload-async>
 
 
 
@@ -44,8 +44,8 @@ You can change this behavior by setting batch to true.
 The name of the form field submitted to the Remove URL.
 
 #### Example
-    <kendo:upload removeField="removeField">
-    </kendo:upload>
+    <kendo:upload-async removeField="removeField">
+    </kendo:upload-async>
 
 
 
@@ -55,8 +55,8 @@ The URL of the handler responsible for removing uploaded files (if any). The han
 requests containing one or more "fileNames" fields specifying the files to be deleted.
 
 #### Example
-    <kendo:upload removeUrl="removeUrl">
-    </kendo:upload>
+    <kendo:upload-async removeUrl="removeUrl">
+    </kendo:upload-async>
 
 
 
@@ -65,8 +65,8 @@ requests containing one or more "fileNames" fields specifying the files to be de
 The HTTP verb to be used by the remove action.
 
 #### Example
-    <kendo:upload removeVerb="removeVerb">
-    </kendo:upload>
+    <kendo:upload-async removeVerb="removeVerb">
+    </kendo:upload-async>
 
 
 
@@ -75,8 +75,8 @@ The HTTP verb to be used by the remove action.
 The name of the form field submitted to the save URL. The default value is the input name.
 
 #### Example
-    <kendo:upload saveField="saveField">
-    </kendo:upload>
+    <kendo:upload-async saveField="saveField">
+    </kendo:upload-async>
 
 
 
@@ -86,7 +86,7 @@ The URL of the handler that will receive the submitted files. The handler must a
 containing one or more fields with the same name as the original input name.
 
 #### Example
-    <kendo:upload saveUrl="saveUrl">
-    </kendo:upload>
+    <kendo:upload-async saveUrl="saveUrl">
+    </kendo:upload-async>
 
 

@@ -22,8 +22,8 @@ A JSP tag representing Kendo Open.
 Effect to be used for opening of the popup.
 
 #### Example
-    <kendo:autoComplete effects="effects">
-    </kendo:autoComplete>
+    <kendo:autoComplete-animation-open effects="effects">
+    </kendo:autoComplete-animation-open>
 
 
 
@@ -32,7 +32,7 @@ Effect to be used for opening of the popup.
 Difines the animation duration.
 
 #### Example
-    <kendo:autoComplete duration="duration">
-    </kendo:autoComplete>
+    <kendo:autoComplete-animation-open duration="duration">
+    </kendo:autoComplete-animation-open>
 
 

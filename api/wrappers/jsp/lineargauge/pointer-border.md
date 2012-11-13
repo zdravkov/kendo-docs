@@ -23,8 +23,8 @@ The color of the border.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer-border color="color">
+    </kendo:linearGauge-pointer-border>
 
 
 
@@ -33,8 +33,8 @@ Any valid CSS color string will work here, including hex and rgb.
 The dash type of the border.
 
 #### Example
-    <kendo:linearGauge dashType="dashType">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer-border dashType="dashType">
+    </kendo:linearGauge-pointer-border>
 
 
 
@@ -43,7 +43,7 @@ The dash type of the border.
 The width of the border.
 
 #### Example
-    <kendo:linearGauge width="width">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer-border width="width">
+    </kendo:linearGauge-pointer-border>
 
 

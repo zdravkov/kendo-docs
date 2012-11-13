@@ -22,8 +22,8 @@ A JSP tag representing Kendo Line.
 The line color of the area chart.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-seriesItem-line color="color">
+    </kendo:chart-seriesItem-line>
 
 
 
@@ -32,8 +32,8 @@ The line color of the area chart.
 The line opacity of the area chart.
 
 #### Example
-    <kendo:chart opacity="opacity">
-    </kendo:chart>
+    <kendo:chart-seriesItem-line opacity="opacity">
+    </kendo:chart-seriesItem-line>
 
 
 
@@ -42,7 +42,7 @@ The line opacity of the area chart.
 The line width of the area chart.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-seriesItem-line width="width">
+    </kendo:chart-seriesItem-line>
 
 

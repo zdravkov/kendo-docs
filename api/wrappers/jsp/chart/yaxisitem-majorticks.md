@@ -22,8 +22,8 @@ A JSP tag representing Kendo MajorTicks.
 The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
 
 #### Example
-    <kendo:chart size="size">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-majorTicks size="size">
+    </kendo:chart-yAxisItem-majorTicks>
 
 
 
@@ -32,7 +32,7 @@ The axis major tick size. This is the length of the line in pixels that is drawn
 The visibility of the major ticks.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-yAxisItem-majorTicks visible="visible">
+    </kendo:chart-yAxisItem-majorTicks>
 
 

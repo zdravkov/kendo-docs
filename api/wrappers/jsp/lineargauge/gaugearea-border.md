@@ -22,8 +22,8 @@ A JSP tag representing Kendo Border.
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-gaugeArea-border color="color">
+    </kendo:linearGauge-gaugeArea-border>
 
 
 
@@ -32,8 +32,8 @@ The color of the border. Any valid CSS color string will work here, including he
 The dash type of the border.
 
 #### Example
-    <kendo:linearGauge dashType="dashType">
-    </kendo:linearGauge>
+    <kendo:linearGauge-gaugeArea-border dashType="dashType">
+    </kendo:linearGauge-gaugeArea-border>
 
 
 
@@ -42,7 +42,7 @@ The dash type of the border.
 The width of the border.
 
 #### Example
-    <kendo:linearGauge width="width">
-    </kendo:linearGauge>
+    <kendo:linearGauge-gaugeArea-border width="width">
+    </kendo:linearGauge-gaugeArea-border>
 
 

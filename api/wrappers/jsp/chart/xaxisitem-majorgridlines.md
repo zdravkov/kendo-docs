@@ -22,8 +22,8 @@ A JSP tag representing Kendo MajorGridLines.
 The color of the lines.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-xAxisItem-majorGridLines color="color">
+    </kendo:chart-xAxisItem-majorGridLines>
 
 
 
@@ -32,8 +32,8 @@ The color of the lines.
 The visibility of the lines.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-xAxisItem-majorGridLines visible="visible">
+    </kendo:chart-xAxisItem-majorGridLines>
 
 
 
@@ -42,7 +42,7 @@ The visibility of the lines.
 The width of the lines.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-xAxisItem-majorGridLines width="width">
+    </kendo:chart-xAxisItem-majorGridLines>
 
 

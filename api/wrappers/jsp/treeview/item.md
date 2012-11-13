@@ -22,8 +22,8 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:treeView text="text">
-    </kendo:treeView>
+    <kendo:treeView-item text="text">
+    </kendo:treeView-item>
 
 
 
@@ -32,8 +32,8 @@ Specifies the text displayed by the item
 Specifies the URL of the image displayed by the item
 
 #### Example
-    <kendo:treeView imageUrl="imageUrl">
-    </kendo:treeView>
+    <kendo:treeView-item imageUrl="imageUrl">
+    </kendo:treeView-item>
 
 
 
@@ -42,8 +42,8 @@ Specifies the URL of the image displayed by the item
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:treeView spriteCssClass="spriteCssClass">
-    </kendo:treeView>
+    <kendo:treeView-item spriteCssClass="spriteCssClass">
+    </kendo:treeView-item>
 
 
 
@@ -52,8 +52,8 @@ Specifies the class name for the sprite image displayed by the item
 Specifies whether the item is initially expanded
 
 #### Example
-    <kendo:treeView expanded="expanded">
-    </kendo:treeView>
+    <kendo:treeView-item expanded="expanded">
+    </kendo:treeView-item>
 
 
 
@@ -62,8 +62,8 @@ Specifies whether the item is initially expanded
 Specifies whether the item is initially enabled
 
 #### Example
-    <kendo:treeView enabled="enabled">
-    </kendo:treeView>
+    <kendo:treeView-item enabled="enabled">
+    </kendo:treeView-item>
 
 
 
@@ -72,7 +72,7 @@ Specifies whether the item is initially enabled
 Specifies whether the item is initially selected
 
 #### Example
-    <kendo:treeView selected="selected">
-    </kendo:treeView>
+    <kendo:treeView-item selected="selected">
+    </kendo:treeView-item>
 
 

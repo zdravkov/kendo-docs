@@ -23,8 +23,8 @@ The color of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:radialGauge color="color">
-    </kendo:radialGauge>
+    <kendo:radialGauge-pointer color="color">
+    </kendo:radialGauge-pointer>
 
 
 
@@ -33,8 +33,8 @@ Any valid CSS color string will work here, including hex and rgb.
 The value of the gauge.
 
 #### Example
-    <kendo:radialGauge value="value">
-    </kendo:radialGauge>
+    <kendo:radialGauge-pointer value="value">
+    </kendo:radialGauge-pointer>
 
 
 

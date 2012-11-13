@@ -22,8 +22,8 @@ A JSP tag representing Kendo Border.
 The color of the border.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-tooltip-border color="color">
+    </kendo:stockChart-navigator-seriesItem-tooltip-border>
 
 
 
@@ -32,7 +32,7 @@ The color of the border.
 The width of the border.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-navigator-seriesItem-tooltip-border width="width">
+    </kendo:stockChart-navigator-seriesItem-tooltip-border>
 
 

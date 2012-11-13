@@ -22,8 +22,8 @@ A JSP tag representing Kendo GroupItem.
 Specifies the field to group by.
 
 #### Example
-    <kendo:dataSource field="field">
-    </kendo:dataSource>
+    <kendo:dataSource-groupItem field="field">
+    </kendo:dataSource-groupItem>
 
 
 
@@ -32,8 +32,8 @@ Specifies the field to group by.
 Specifies the order of the groupped items.
 
 #### Example
-    <kendo:dataSource dir="dir">
-    </kendo:dataSource>
+    <kendo:dataSource-groupItem dir="dir">
+    </kendo:dataSource-groupItem>
 
 
 

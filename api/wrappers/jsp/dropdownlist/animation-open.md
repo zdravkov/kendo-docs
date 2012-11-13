@@ -22,8 +22,8 @@ A JSP tag representing Kendo Open.
 Effect to be used for opening of the popup.
 
 #### Example
-    <kendo:dropDownList effects="effects">
-    </kendo:dropDownList>
+    <kendo:dropDownList-animation-open effects="effects">
+    </kendo:dropDownList-animation-open>
 
 
 
@@ -32,7 +32,7 @@ Effect to be used for opening of the popup.
 Difines the animation duration.
 
 #### Example
-    <kendo:dropDownList duration="duration">
-    </kendo:dropDownList>
+    <kendo:dropDownList-animation-open duration="duration">
+    </kendo:dropDownList-animation-open>
 
 

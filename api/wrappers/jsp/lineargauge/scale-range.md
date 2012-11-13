@@ -22,8 +22,8 @@ A JSP tag representing Kendo Range.
 The start position of the range in scale units.
 
 #### Example
-    <kendo:linearGauge from="from">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-range from="from">
+    </kendo:linearGauge-scale-range>
 
 
 
@@ -32,8 +32,8 @@ The start position of the range in scale units.
 The end position of the range in scale units.
 
 #### Example
-    <kendo:linearGauge to="to">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-range to="to">
+    </kendo:linearGauge-scale-range>
 
 
 
@@ -42,8 +42,8 @@ The end position of the range in scale units.
 The opacity of the range.
 
 #### Example
-    <kendo:linearGauge opacity="opacity">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-range opacity="opacity">
+    </kendo:linearGauge-scale-range>
 
 
 
@@ -53,7 +53,7 @@ The color of the range.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-scale-range color="color">
+    </kendo:linearGauge-scale-range>
 
 

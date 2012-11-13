@@ -22,8 +22,8 @@ A JSP tag representing Kendo Title.
 The alignment of the title.
 
 #### Example
-    <kendo:stockChart align="align">
-    </kendo:stockChart>
+    <kendo:stockChart-title align="align">
+    </kendo:stockChart-title>
 
 
 
@@ -32,8 +32,8 @@ The alignment of the title.
 The background color of the title.
 
 #### Example
-    <kendo:stockChart background="background">
-    </kendo:stockChart>
+    <kendo:stockChart-title background="background">
+    </kendo:stockChart-title>
 
 
 
@@ -42,8 +42,8 @@ The background color of the title.
 The font of the title.
 
 #### Example
-    <kendo:stockChart font="font">
-    </kendo:stockChart>
+    <kendo:stockChart-title font="font">
+    </kendo:stockChart-title>
 
 
 
@@ -52,8 +52,8 @@ The font of the title.
 The margin of the title.
 
 #### Example
-    <kendo:stockChart margin="margin">
-    </kendo:stockChart>
+    <kendo:stockChart-title margin="margin">
+    </kendo:stockChart-title>
 
 
 
@@ -62,8 +62,8 @@ The margin of the title.
 The padding of the title.
 
 #### Example
-    <kendo:stockChart padding="padding">
-    </kendo:stockChart>
+    <kendo:stockChart-title padding="padding">
+    </kendo:stockChart-title>
 
 
 
@@ -72,8 +72,8 @@ The padding of the title.
 The position of the title.
 
 #### Example
-    <kendo:stockChart position="position">
-    </kendo:stockChart>
+    <kendo:stockChart-title position="position">
+    </kendo:stockChart-title>
 
 
 
@@ -82,8 +82,8 @@ The position of the title.
 The title of the chart. You can also set the text directly for a title with default options.
 
 #### Example
-    <kendo:stockChart text="text">
-    </kendo:stockChart>
+    <kendo:stockChart-title text="text">
+    </kendo:stockChart-title>
 
 
 
@@ -92,8 +92,8 @@ The title of the chart. You can also set the text directly for a title with defa
 The visibility of the title.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-title visible="visible">
+    </kendo:stockChart-title>
 
 
 

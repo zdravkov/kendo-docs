@@ -22,8 +22,8 @@ A JSP tag representing Kendo Messages.
 Defines text for upload button.
 
 #### Example
-    <kendo:editor uploadFile="uploadFile">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages uploadFile="uploadFile">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -32,8 +32,8 @@ Defines text for upload button.
 Defines text for order by label.
 
 #### Example
-    <kendo:editor orderBy="orderBy">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages orderBy="orderBy">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -42,8 +42,8 @@ Defines text for order by label.
 Defines text for Name item of order by drop down list.
 
 #### Example
-    <kendo:editor orderByName="orderByName">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages orderByName="orderByName">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -52,8 +52,8 @@ Defines text for Name item of order by drop down list.
 Defines text for Size item of order by drop down list.
 
 #### Example
-    <kendo:editor orderBySize="orderBySize">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages orderBySize="orderBySize">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -62,8 +62,8 @@ Defines text for Size item of order by drop down list.
 Defines text for dialog shown when the directory not found error occurs.
 
 #### Example
-    <kendo:editor directoryNotFound="directoryNotFound">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages directoryNotFound="directoryNotFound">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -72,8 +72,8 @@ Defines text for dialog shown when the directory not found error occurs.
 Defines text displayed when folder does not contain items.
 
 #### Example
-    <kendo:editor emptyFolder="emptyFolder">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages emptyFolder="emptyFolder">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -82,8 +82,8 @@ Defines text displayed when folder does not contain items.
 Defines text for dialog shown when the file or directory is deleted.
 
 #### Example
-    <kendo:editor deleteFile="deleteFile">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages deleteFile="deleteFile">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -92,8 +92,8 @@ Defines text for dialog shown when the file or directory is deleted.
 Defines text for dialog shown when an invalid file is set for upload.
 
 #### Example
-    <kendo:editor invalidFileType="invalidFileType">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages invalidFileType="invalidFileType">
+    </kendo:editor-imagebrowser-messages>
 
 
 
@@ -102,7 +102,7 @@ Defines text for dialog shown when an invalid file is set for upload.
 Defines text for dialog shown when an already existing file is set for upload.
 
 #### Example
-    <kendo:editor overwriteFile="overwriteFile">
-    </kendo:editor>
+    <kendo:editor-imagebrowser-messages overwriteFile="overwriteFile">
+    </kendo:editor-imagebrowser-messages>
 
 

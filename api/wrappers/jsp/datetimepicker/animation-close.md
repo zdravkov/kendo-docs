@@ -22,8 +22,8 @@ A JSP tag representing Kendo Close.
 Effect to be used for closing of the popup.
 
 #### Example
-    <kendo:dateTimePicker effects="effects">
-    </kendo:dateTimePicker>
+    <kendo:dateTimePicker-animation-close effects="effects">
+    </kendo:dateTimePicker-animation-close>
 
 
 
@@ -32,7 +32,7 @@ Effect to be used for closing of the popup.
 Difines the animation duration.
 
 #### Example
-    <kendo:dateTimePicker duration="duration">
-    </kendo:dateTimePicker>
+    <kendo:dateTimePicker-animation-close duration="duration">
+    </kendo:dateTimePicker-animation-close>
 
 

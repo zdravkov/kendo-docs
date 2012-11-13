@@ -22,8 +22,8 @@ A JSP tag representing Kendo MinorGridLines.
 The color of the lines.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem-minorGridLines color="color">
+    </kendo:stockChart-valueAxisItem-minorGridLines>
 
 
 
@@ -32,8 +32,8 @@ The color of the lines.
 The dash type of the minor grid lines.
 
 #### Example
-    <kendo:stockChart dashType="dashType">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem-minorGridLines dashType="dashType">
+    </kendo:stockChart-valueAxisItem-minorGridLines>
 
 
 
@@ -42,8 +42,8 @@ The dash type of the minor grid lines.
 The visibility of the lines.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem-minorGridLines visible="visible">
+    </kendo:stockChart-valueAxisItem-minorGridLines>
 
 
 
@@ -52,7 +52,7 @@ The visibility of the lines.
 The width of the lines.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-valueAxisItem-minorGridLines width="width">
+    </kendo:stockChart-valueAxisItem-minorGridLines>
 
 

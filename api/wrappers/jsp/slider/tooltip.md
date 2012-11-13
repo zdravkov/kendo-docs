@@ -22,8 +22,8 @@ A JSP tag representing Kendo Tooltip.
 Disables (
 
 #### Example
-    <kendo:slider enabled="enabled">
-    </kendo:slider>
+    <kendo:slider-tooltip enabled="enabled">
+    </kendo:slider-tooltip>
 
 
 
@@ -33,8 +33,8 @@ Format string for the text of the tooltip. Note: The applied
 format will also influence the appearance of the
 
 #### Example
-    <kendo:slider format="format">
-    </kendo:slider>
+    <kendo:slider-tooltip format="format">
+    </kendo:slider-tooltip>
 
 
 
@@ -43,7 +43,7 @@ format will also influence the appearance of the
 Template of the tooltip.
 
 #### Example
-    <kendo:slider template="template">
-    </kendo:slider>
+    <kendo:slider-tooltip template="template">
+    </kendo:slider-tooltip>
 
 

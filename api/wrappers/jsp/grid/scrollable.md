@@ -22,7 +22,7 @@ A JSP tag representing Kendo Scrollable.
 Enable/disable virtual scrolling. When enabled the grid will display only a single page of data (configured via
 
 #### Example
-    <kendo:grid virtual="virtual">
-    </kendo:grid>
+    <kendo:grid-scrollable virtual="virtual">
+    </kendo:grid-scrollable>
 
 

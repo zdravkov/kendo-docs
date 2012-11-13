@@ -22,8 +22,8 @@ A JSP tag representing Kendo Item.
 Specifies the text displayed by the item
 
 #### Example
-    <kendo:menu text="text">
-    </kendo:menu>
+    <kendo:menu-item text="text">
+    </kendo:menu-item>
 
 
 
@@ -32,8 +32,8 @@ Specifies the text displayed by the item
 Specifies the URL of the image displayed by the item
 
 #### Example
-    <kendo:menu imageUrl="imageUrl">
-    </kendo:menu>
+    <kendo:menu-item imageUrl="imageUrl">
+    </kendo:menu-item>
 
 
 
@@ -42,8 +42,8 @@ Specifies the URL of the image displayed by the item
 Specifies the class name for the sprite image displayed by the item
 
 #### Example
-    <kendo:menu spriteCssClass="spriteCssClass">
-    </kendo:menu>
+    <kendo:menu-item spriteCssClass="spriteCssClass">
+    </kendo:menu-item>
 
 
 
@@ -52,8 +52,8 @@ Specifies the class name for the sprite image displayed by the item
 Specifies whether the item is initially expanded
 
 #### Example
-    <kendo:menu expanded="expanded">
-    </kendo:menu>
+    <kendo:menu-item expanded="expanded">
+    </kendo:menu-item>
 
 
 
@@ -62,8 +62,8 @@ Specifies whether the item is initially expanded
 Specifies whether the item is initially enabled
 
 #### Example
-    <kendo:menu enabled="enabled">
-    </kendo:menu>
+    <kendo:menu-item enabled="enabled">
+    </kendo:menu-item>
 
 
 
@@ -72,7 +72,7 @@ Specifies whether the item is initially enabled
 Specifies whether the item is initially selected
 
 #### Example
-    <kendo:menu selected="selected">
-    </kendo:menu>
+    <kendo:menu-item selected="selected">
+    </kendo:menu-item>
 
 

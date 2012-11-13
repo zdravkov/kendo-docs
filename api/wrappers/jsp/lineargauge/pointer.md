@@ -22,8 +22,8 @@ A JSP tag representing Kendo Pointer.
 The color of the pointer.
 
 #### Example
-    <kendo:linearGauge color="color">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer color="color">
+    </kendo:linearGauge-pointer>
 
 
 
@@ -32,8 +32,8 @@ The color of the pointer.
 The margin of the pointer.
 
 #### Example
-    <kendo:linearGauge margin="margin">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer margin="margin">
+    </kendo:linearGauge-pointer>
 
 
 
@@ -43,8 +43,8 @@ The opacity of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:linearGauge opacity="opacity">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer opacity="opacity">
+    </kendo:linearGauge-pointer>
 
 
 
@@ -53,8 +53,8 @@ Any valid CSS color string will work here, including hex and rgb.
 The shape of the pointer.
 
 #### Example
-    <kendo:linearGauge shape="shape">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer shape="shape">
+    </kendo:linearGauge-pointer>
 
 
 
@@ -63,8 +63,8 @@ The shape of the pointer.
 The size of the pointer.
 
 #### Example
-    <kendo:linearGauge size="size">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer size="size">
+    </kendo:linearGauge-pointer>
 
 
 
@@ -73,8 +73,8 @@ The size of the pointer.
 The value of the gauge.
 
 #### Example
-    <kendo:linearGauge value="value">
-    </kendo:linearGauge>
+    <kendo:linearGauge-pointer value="value">
+    </kendo:linearGauge-pointer>
 
 
 

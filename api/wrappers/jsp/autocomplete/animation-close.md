@@ -22,8 +22,8 @@ A JSP tag representing Kendo Close.
 Effect to be used for closing of the popup.
 
 #### Example
-    <kendo:autoComplete effects="effects">
-    </kendo:autoComplete>
+    <kendo:autoComplete-animation-close effects="effects">
+    </kendo:autoComplete-animation-close>
 
 
 
@@ -32,7 +32,7 @@ Effect to be used for closing of the popup.
 Difines the animation duration.
 
 #### Example
-    <kendo:autoComplete duration="duration">
-    </kendo:autoComplete>
+    <kendo:autoComplete-animation-close duration="duration">
+    </kendo:autoComplete-animation-close>
 
 

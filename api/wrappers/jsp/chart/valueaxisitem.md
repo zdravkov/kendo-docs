@@ -23,8 +23,8 @@ Color to apply to all axis elements.
 Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem color="color">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -33,8 +33,8 @@ Individual color settings for line and labels take priority. Any valid CSS color
 The interval between major divisions.
 
 #### Example
-    <kendo:chart majorUnit="majorUnit">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem majorUnit="majorUnit">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -44,8 +44,8 @@ The maximum value of the axis.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart max="max">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem max="max">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -55,8 +55,8 @@ The minimum value of the axis.
 This is often used in combination with the
 
 #### Example
-    <kendo:chart min="min">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem min="min">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -66,8 +66,8 @@ The interval between minor divisions.
 It defaults to 1/5th of the majorUnit.
 
 #### Example
-    <kendo:chart minorUnit="minorUnit">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem minorUnit="minorUnit">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -76,8 +76,8 @@ It defaults to 1/5th of the majorUnit.
 The unique axis name.
 
 #### Example
-    <kendo:chart name="name">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem name="name">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -86,8 +86,8 @@ The unique axis name.
 Prevents the automatic axis range from snapping to 0.
 
 #### Example
-    <kendo:chart narrowRange="narrowRange">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem narrowRange="narrowRange">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -97,8 +97,8 @@ The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
 
 #### Example
-    <kendo:chart pane="pane">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem pane="pane">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -108,8 +108,8 @@ Reverses the axis direction -
 values increase from right to left and from top to bottom.
 
 #### Example
-    <kendo:chart reverse="reverse">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem reverse="reverse">
+    </kendo:chart-valueAxisItem>
 
 
 
@@ -118,8 +118,8 @@ values increase from right to left and from top to bottom.
 The visibility of the axis.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-valueAxisItem visible="visible">
+    </kendo:chart-valueAxisItem>
 
 
 

@@ -22,8 +22,8 @@ A JSP tag representing Kendo Sortable.
 Defines whether column can have unsorted state.
 
 #### Example
-    <kendo:grid allowUnsort="allowUnsort">
-    </kendo:grid>
+    <kendo:grid-sortable allowUnsort="allowUnsort">
+    </kendo:grid-sortable>
 
 
 
@@ -32,7 +32,7 @@ Defines whether column can have unsorted state.
 Defines sorting mode. Possible values:
 
 #### Example
-    <kendo:grid mode="mode">
-    </kendo:grid>
+    <kendo:grid-sortable mode="mode">
+    </kendo:grid-sortable>
 
 

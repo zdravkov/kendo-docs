@@ -22,8 +22,8 @@ A JSP tag representing Kendo MajorGridLines.
 The color of the lines.
 
 #### Example
-    <kendo:stockChart color="color">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-majorGridLines color="color">
+    </kendo:stockChart-yAxisItem-majorGridLines>
 
 
 
@@ -32,8 +32,8 @@ The color of the lines.
 The visibility of the lines.
 
 #### Example
-    <kendo:stockChart visible="visible">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-majorGridLines visible="visible">
+    </kendo:stockChart-yAxisItem-majorGridLines>
 
 
 
@@ -42,7 +42,7 @@ The visibility of the lines.
 The width of the lines.
 
 #### Example
-    <kendo:stockChart width="width">
-    </kendo:stockChart>
+    <kendo:stockChart-yAxisItem-majorGridLines width="width">
+    </kendo:stockChart-yAxisItem-majorGridLines>
 
 

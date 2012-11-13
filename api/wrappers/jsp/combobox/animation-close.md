@@ -22,8 +22,8 @@ A JSP tag representing Kendo Close.
 Effect to be used for closing of the popup.
 
 #### Example
-    <kendo:comboBox effects="effects">
-    </kendo:comboBox>
+    <kendo:comboBox-animation-close effects="effects">
+    </kendo:comboBox-animation-close>
 
 
 
@@ -32,7 +32,7 @@ Effect to be used for closing of the popup.
 Difines the animation duration.
 
 #### Example
-    <kendo:comboBox duration="duration">
-    </kendo:comboBox>
+    <kendo:comboBox-animation-close duration="duration">
+    </kendo:comboBox-animation-close>
 
 

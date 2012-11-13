@@ -23,8 +23,8 @@ The color of the lines. Any valid CSS color string will work here, including hex
 rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-minorGridLines color="color">
+    </kendo:chart-categoryAxisItem-minorGridLines>
 
 
 
@@ -33,8 +33,8 @@ rgb.
 The dash type of the grid lines.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-minorGridLines dashType="dashType">
+    </kendo:chart-categoryAxisItem-minorGridLines>
 
 
 
@@ -43,8 +43,8 @@ The dash type of the grid lines.
 The visibility of the lines.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-minorGridLines visible="visible">
+    </kendo:chart-categoryAxisItem-minorGridLines>
 
 
 
@@ -53,7 +53,7 @@ The visibility of the lines.
 The width of the lines.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
+    <kendo:chart-categoryAxisItem-minorGridLines width="width">
+    </kendo:chart-categoryAxisItem-minorGridLines>
 
 
