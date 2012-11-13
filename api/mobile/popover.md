@@ -64,15 +64,15 @@ Close the popover.
      }
     </script>
 
-### openFor
+### open
 
-Open the ActionSheet.
+Open the PopOver.
 
 #### Parameters
 
 ##### target `jQuery`
 
-The target of the Popover, to which the visual arrow will point to.
+The target of the Popover, to which the visual arrow will point to. This parameter is required for a tablet OS.
 
 ## Events
 
