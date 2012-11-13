@@ -23,11 +23,11 @@ The store.js file is included in the _Layout.cshtml page, and so is available in
 
 ## Load the Album Data
 
-The **viewAlbumDetails()** function makes a jQuery AJAX call to load the Album from the WebAPI controller:
+The **viewAlbumDetails()** function makes a jQuery AJAX call to load the Album from the WCF Data Service:
 
         viewAlbumDetails = function (albumId) {
             $.ajax({
-                url: config.albumsUrl + "/" + albumId,
+                url: config.albumsUrl + "(" + albumId + ")",
                 type: "GET",
                 dataType: "json",
                 success: function (data) {

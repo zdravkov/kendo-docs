@@ -69,8 +69,7 @@ This code is contained in **Scripts/App/store-browse.js**.
 
 Our viewModel contains 3 major pieces. The **albums** property is a Kendo DataSource that will read the Albums from the server.
 In the code, there is a lot of configuration information passed to the DataSource constructor that sets up
-server-side filtering and paging using OData. More information on the specifics of this code can be found in the
-Kendo Blog post [Using Kendo UI With MVC4, WebAPI, OData And EF](http://www.kendoui.com/blogs/teamblog/posts/12-10-25/using_kendo_ui_with_mvc4_webapi_odata_and_ef.aspx).
+server-side filtering and paging using OData.
 
 The **viewAlbumDetails** property contains a function that will be bound to the click on each Album.
 This is used to show the album details window.

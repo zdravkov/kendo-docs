@@ -38,23 +38,14 @@ Next we turn the input element into an AutoComplete widget with JavaScript:
             serverPaging: true,
             pageSize: store.config.searchMaxResults,
             transport: {
-                read: {
-                    url: store.config.albumsUrl,
-                    dataType: "json"
-                },
-                parameterMap: function (options, type) {
-                    var paramMap = kendo.data.transports.odata.parameterMap(options);
-                    delete paramMap.$inlinecount;
-                    delete paramMap.$format;
-                    return paramMap;
-                }
+                read: store.config.albumsWithArtistsUrl
             },
             schema: {
                 data: function (data) {
-                    return data;
+                    return data.value;
                 },
                 total: function (data) {
-                    return data.length;
+                    return data["odata.count"];
                 }
             }
         },
@@ -77,7 +68,7 @@ Let's look closer at what each part of this JavaScript is doing:
 
 **placeholder: 'Search music...'** - This is the text that is displayed in the text box as a placeholder until the user clicks into the input box.
 
-**dataSource: {}** - Here we configure the source for our autocomplete data. We have specified the URL of our Albums WebAPI as the source. There is a lot going on in this data source, but most of it is enabling server-side filtering using OData.
+**dataSource: {}** - Here we configure the source for our autocomplete data. We have specified the URL of our Albums service as the source. There is a lot going on in this data source, but most of it is enabling server-side filtering using OData.
 
 ## Customizing the Dropdown Items
 
@@ -165,37 +156,22 @@ to do this is:
             
             
             transport: {
-                // Set the URL to read data from to our WebAPI controller,
-                // and specify that we want JSON data.
-                read: {
-                    url: store.config.albumsUrl,
-                    dataType: "json"
-                },
-                
-                // This fixes some compatibility issues between Kendo and WebAPI OData
-                parameterMap: function (options, type) {
-                    var paramMap = kendo.data.transports.odata.parameterMap(options);
-                    delete paramMap.$inlinecount;
-                    delete paramMap.$format;
-                    return paramMap;
-                }
+                // Set the URL to read data from
+                read: store.config.albumsWithArtistsUrl
             },
             
-            // This fixes some compatibility issues between Kendo and WebAPI OData
+            // This fixes some compatibility issues between Kendo and WCF Data Service OData
             schema: {
                 data: function (data) {
-                    return data;
+                    return data.value;
                 },
                 total: function (data) {
-                    return data.length;
+                    return data["odata.count"];
                 }
             }
         }
 
-There are some compatibility issues that are being worked around in this code, because at the time of
-creating this project, WebAPI OData did not support some of the OData parameters that Kendo uses by default.
-This process is explained in much more detail in a separate Kendo Blog post:
-[Using Kendo UI With MVC4, WebAPI, OData And EF](http://www.kendoui.com/blogs/teamblog/posts/12-10-25/using_kendo_ui_with_mvc4_webapi_odata_and_ef.aspx).
+The **schema.data** and **schema.total** functions overcome a JSON formatting difference between Kendo and WCF Data Services OData.
 For more information on each field set on the DataSource, also see the [DataSource documentation](http://docs.kendoui.com/api/framework/datasource).
 
 ## Handling the selection of a search result

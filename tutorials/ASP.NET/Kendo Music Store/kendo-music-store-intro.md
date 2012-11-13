@@ -8,8 +8,7 @@ publish: true
 # Tutorial: Kendo Music Store: Introduction
 
 In this tutorial, we will review portions of the **Kendo Music Store** sample project,
-focusing on how Kendo UI was used and the ways in which it interacts with ASP.NET MVC
-and WebAPI.
+focusing on how Kendo UI was used and the ways in which it interacts with ASP.NET MVC, WebAPI and WCF Data Services.
 
 This sample project was based on Microsoft's [MVC Music Store](http://mvcmusicstore.codeplex.com/), so much of the
 server-side processing and the data structure are reused in this project. The UI of the

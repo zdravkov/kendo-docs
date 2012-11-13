@@ -27,20 +27,13 @@ This is largely because it is the only one to do full CRUD operations, and becau
 The basic settings for the DataSource are:
 
             dataSource: {
-                pageSize: store.config.manageAlbumsGridPageSize,
-                serverPaging: false,
+                pageSize: 50,
+                serverPaging: true,
             }
 
 **pageSize** simple sets the size of each page of data for the grid. In this sample, it is set to 50 records per page.
-The **serverPaging: false** property indicates that we will do client-side paging. This is important to note in this sample.
-We recommend doing paging on the server, not the client, when the server supports it.
-In the case of this sample, the WebAPI OData implementation even using a pre-release version of OData does not support the
-**$inlinecount** OData parameter that Kendo needs for server side paging to work properly.
-Because of this, paging is happening on the client instead. To do this the DataSource retrieves the entire set of albums
-from the server on page load.
-Fortunately this is a manageable number of albums for this sample project, but if this were a production application
-this behavior would not be acceptable. Instead we would have added support for $inlinecount to WebAPI through a custom extension
-or used a different OData implementation.
+The **serverPaging: true** property indicates that we will do server-side paging.
+We recommend doing paging on the server, not the client, when the server supports it to minimize the amount of data that needs to be returned to the client.
 
 ### Data Source Transport.
 
@@ -54,55 +47,40 @@ For the Create Update and Delete operations, we define:
                 transport: {
                     type: "odata",
                     read: {
-                        url: store.config.albumsUrl + "?noartist=true",
+                        url: store.config.albumsUrl,
                         type: "GET"
                     },
                     update: {
-                        url: store.config.albumsUrl,
-                        type: "PUT",
-                        contentType: "application/json",
+                        url: function (data) {
+                            return store.config.albumsUrl + "(" + data.AlbumId + ")"
+                        },
+                        type: "PUT"
                     },
                     destroy: {
                         url: function (data) {
-                            return store.config.albumsUrl + "/" + data.AlbumId;
+                            return store.config.albumsUrl + "(" + data.AlbumId + ")";
                         },
                         type: "DELETE"
                     },
                     create: {
                         url: store.config.albumsUrl,
-                        type: "POST",
-                        contentType: "application/json"
-                    },
-                    parameterMap: function (options, type) {
-                        if (type === "update" || type === "create") {
-                            return kendo.stringify(options);
-                        }
-                        return options;
+                        type: "POST"
                     }
                 },
+                schema: {
+                    data: store.config.wcfSchemaData,
+                    total: store.config.wcfSchemaTotal,
+                }
 
 Each of these sets the **url** and **type** for the action.
-In the case of **delete** we need to include the AlbumId in the URL itself, not as a parameter.
+In the case of **destroy** and **update** we need to include the AlbumId in the URL itself, not as a parameter.
 To do this we defined a function instead of a string to act as the URL.
 Kendo automatically calls this function and passes in the data item that is being deleted.
 This allowed us to get the AlbumID and append it to the base URL:
 
-                    destroy: {
                         url: function (data) {
-                            return store.config.albumsUrl + "/" + data.AlbumId;
+                            return store.config.albumsUrl + "(" + data.AlbumId + ")";
                         }
-
-The only other out-of-the-ordinary option here is the **parameterMap**.
-By default, the Kendo DataSource was including the properties of the object an key-value pairs much like Form data would be posted.
-To ensure that the data passed was JSON, we override the default parameterMap behavior to stringify the album being sent to the server.
-This only needed to be done for update and create actions, since read and delete do not send an album to the server.
-
-                    parameterMap: function (options, type) {
-                        if (type === "update" || type === "create") {
-                            return kendo.stringify(options);
-                        }
-                        return options;
-                    }
 
 ### Data Source Schema.
 
@@ -113,6 +91,8 @@ fields and data types, as well as some basic validation information.
 This data is used by the Grid widget to define what editors each column will have when the "Create" button is clicked.
 
                 schema: {
+                    data: store.config.wcfSchemaData,
+                    total: store.config.wcfSchemaTotal,
                     model:{
                         id: "AlbumId",
                         fields: {

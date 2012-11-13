@@ -84,10 +84,9 @@ This text string will be shown in our &lt;h3&gt; header element, due to the data
 
 The **featuredArtistAlbums** and **topSellingAlbums** properties of the view model are both set to
 [Kendo DataSources](http://demos.kendoui.com/web/datasource/index.html) that will pull remote data
-from our MVC4 WebAPI controllers.
+from our WCF Data Service.
 In the case of the featuredArtistAlbums data source, there is additional code specified that enabled
-server-side filtering by artist name. This is using OData, and is discussed in further detail in
-this post on the Kendo Blog: [Using Kendo UI With MVC4, WebAPI, OData And EF](http://www.kendoui.com/blogs/teamblog/posts/12-10-25/using_kendo_ui_with_mvc4_webapi_odata_and_ef.aspx)
+server-side filtering by artist name. This is using OData.
 
 ## Image Rotator (with a custom binding)
 
