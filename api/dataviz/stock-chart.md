@@ -2382,6 +2382,78 @@ Series are moved to the desired pane by associating them with an axis.
 
 The unique pane name.
 
+### panes.margin `Number|Object`
+
+The margin of the pane.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and left margin to 1px
+    margin: { top: 1, left: 1 }
+
+### panes.padding `Number|Object`
+
+The padding of the pane.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    padding: { top: 1, left: 1 }
+
+### panes.background `String`
+
+The background color of the pane.
+
+### panes.border `Object`
+
+The border of the pane.
+
+### panes.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### panes.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### panes.border.width `Number`*(default: 0)*
+
+The width of the border.
+
 ### panes.height `Number`
 
 The pane height in pixels.
