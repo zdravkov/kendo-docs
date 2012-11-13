@@ -75,7 +75,6 @@ copy **kendo.common.min.css**, the theme file (e.g. **kendo.default.min.css**), 
 *   Right-mouse click on WebContent folder
 *   Select New -> JSP file
 *   Enter file name and click Finish
-
 6.  Configure your page to include the Kendo UI Web JavaScript and CSS files to the page:
 
         <link href="resources/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
