@@ -7768,6 +7768,10 @@ It defaults to 1/5th of the majorUnit.
 
 The unique axis name.
 
+### valueAxis.narrowRange `Boolean`*(default: false)*
+
+Prevents the automatic axis range from snapping to 0.
+
 ### valueAxis.pane `String`
 
 The name of the pane that the axis should be rendered in.
@@ -8247,6 +8251,10 @@ The visibility of the major ticks.
 
 The unique axis name.
 
+### xAxis.narrowRange `Boolean`*(default: false)*
+
+Prevents the automatic axis range from snapping to 0.
+
 ### xAxis.pane `String`
 
 The name of the pane that the axis should be rendered in.
@@ -8725,6 +8733,10 @@ The visibility of the major ticks.
 ### yAxis.name `Object`*(default: primary)*
 
 The unique axis name.
+
+### yAxis.narrowRange `Boolean`*(default: false)*
+
+Prevents the automatic axis range from snapping to 0.
 
 ### yAxis.pane `String`
 
