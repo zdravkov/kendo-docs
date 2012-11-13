@@ -6,7 +6,7 @@ publish: true
 
 # Number Formatting
 
-The purpose of number formatting is to convert a Number object to a human readable string using culture's specific settings. [kendo.format](http://docs.kendoui.com/api/framework/kendo#format) and [kendo.toString](http://docs.kendoui.com/api/framework/kendo#toString) methods support standard and custom numeric formats:
+The purpose of number formatting is to convert a Number object to a human readable string using culture's specific settings. [kendo.format](http://docs.kendoui.com/api/framework/kendo#format) and [kendo.toString](http://docs.kendoui.com/api/framework/kendo#tostring) methods support standard and custom numeric formats:
 
 ## Standard numeric formats
 
@@ -66,15 +66,17 @@ Here is a list of the supported format specifiers:
 
 - "." - decimal placeholder
 
-    Determines the location of the decimal separator in the result string - `kendo.tostring(0.45678, "0.00")` -> 0.46 (en-us).
+    Determines the location of the decimal separator in the result string - `kendo.toString(0.45678, "0.00")` -> 0.46 (en-us).
 
 - "," - group separator placeholder
 
-    Insert localized group separator between each group - `kendo.tostring(12345678, "##,#")` -> 12,345,678(en-us).
+    Insert localized group separator between each group - `kendo.toString(12345678, "##,#")` -> 12,345,678(en-us).
 
 - "%" - percentage placeholder
 
     Multiplies a number by 100 and inserts a localized percentage symbol in the result string.
+
+> '%' symbol is interpreted as a format specifier in the format string. If you need to prevent this, you will need to precede the '%' symbol with a backslash - 'kendo.toString(12, "# \\%")' -> 12 % (en-us).
 
 - "e" - exponential notation
 
