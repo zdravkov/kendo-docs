@@ -86,9 +86,8 @@ copy **kendo.common.min.css**, the theme file (e.g. **kendo.default.min.css**), 
     can also create a custom JavaScript file using the [Custom Download Builder](http://www.kendoui.com/custom-download).
 
         <link href="resources/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
-        <link href="resources/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />
-        <link href="resources/styles/kendo.[theme].min.css" rel="stylesheet" type="text/css" />
-        <link href="resources/styles/kendo.dataviz.[theme].min.css" rel="stylesheet" type="text/css" />
+        <link href="resources/styles/kendo.dataviz.min.css" rel="stylesheet" type="text/css" />        
+        <link href="resources/styles/kendo.dataviz.default.min.css" rel="stylesheet" type="text/css" />
 
         <script src="resources/js/jquery.min.js"></script>
         <script src="resources/js/kendo.dataviz.min.js"></script>
