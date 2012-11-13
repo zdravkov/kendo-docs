@@ -63,3 +63,10 @@ If using ASP.NET bundles make sure the `Scripts.Render("~/bundles/jquery")` bloc
              </system.web.webPages.razor>
 2. Rebuild your solution.
 3. Close and open again the view you were editing. Intellisense should be working now.
+
+## Menu renders too slow in 'debug' mode
+
+Menu widget has a "security trimming" functionality, which is turned on by default. Under the hood, 
+we create an AuthorizationContext object for each Menu item with defined Action/Controller. In 'release' 
+mode those objects are cached. In 'debug' mode, we do not cache anything and that is why you can observe performance
+issues with the rendering of the Menu widget.
