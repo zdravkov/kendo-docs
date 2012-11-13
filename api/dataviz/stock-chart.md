@@ -47,6 +47,1233 @@ Omitting the array and specifying a single series is also acceptable.
     })
     </p>
 
+### navigator.series.type `String`
+
+The type of the series.
+
+### navigator.series.type="line" `Object`
+
+Available options for line series:
+
+### navigator.series.type="line".data `Array`
+
+Array of data points.
+
+### navigator.series.type="line".field `String`
+
+The data field containing the series value.
+
+### navigator.series.type="line".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### navigator.series.type="line".name `String`
+
+The series name visible in the legend.
+
+### navigator.series.type="line".aggregate `String`*(default: "max")*
+
+Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
+
+#### *"max"*
+
+The highest value for the date period.
+
+#### *"min"*
+
+The lowest value for the date period.
+
+#### *"sum"*
+
+The sum of all values for the date period.
+
+#### *"count"*
+
+The number of values for the date period.
+
+#### *"avg"*
+
+The average of all values for the date period.
+
+#### *function (values, series)*
+
+User-defined aggregate function.
+
+### navigator.series.type="line".axis `String`*(default: primary)*
+
+ The name of the value axis to use.
+
+### navigator.series.type="line".color `String`
+
+The series base color.
+
+### navigator.series.type="line".dashType `String`*(default: "solid")*
+
+ The dash type of the line.
+
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### navigator.series.type="line".labels `Object`
+
+Configures the series data labels.
+
+### navigator.series.type="line".labels.background `String`
+
+The background color of the labels.
+
+### navigator.series.type="line".labels.border `Object`
+
+The border of the labels.
+
+### navigator.series.type="line".labels.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="line".labels.border.dashType `String`*(default: "solid")*
+
+ The dash type of the border.
+
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### navigator.series.type="line".labels.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="line".labels.color `String`
+
+The text color of the labels.
+
+### navigator.series.type="line".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### navigator.series.type="line".labels.format `String`
+
+The format of the labels.
+
+#### Example
+
+    //sets format of the labels
+    format: "C"
+
+### navigator.series.type="line".labels.margin `Number|Object`*(default: { left: 5, right: 5})*
+
+The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and bottom margin to 1px
+    // margin left and right are with 5px (by default)
+    margin: { top: 1, bottom: 1 }
+
+### navigator.series.type="line".labels.padding `Number|Object`*(default: 0)*
+
+ The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
+
+### navigator.series.type="line".labels.position `String`*(default: "above")*
+
+Defines the position of the line labels.
+
+
+#### *"above"*
+
+The label is positioned at the top of the line chart marker.
+
+#### *"right"*
+
+The label is positioned at the right of the line chart marker.
+
+#### *"below"*
+
+The label is positioned at the bottom of the line chart marker.
+
+#### *"left"*
+
+The label is positioned at the left of the line chart marker.
+
+### navigator.series.type="line".labels.template `String | Function`
+
+The label template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "line",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 labels: {
+                     // label template
+                     template: "#= value #%",
+                     visible: true
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### navigator.series.type="line".labels.visible `Boolean`*(default: false)*
+
+ The visibility of the labels.
+
+### navigator.series.type="line".markers `Object`
+
+Configures the line markers.
+
+### navigator.series.type="line".markers.background `String`
+
+The background color of the current series markers.
+
+### navigator.series.type="line".markers.border `Object`
+
+The border of the markers.
+
+### navigator.series.type="line".markers.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="line".markers.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="line".markers.size `Number`*(default: 6)*
+
+ The marker size.
+
+### navigator.series.type="line".markers.type `String`*(default: "circle")*
+
+Configures the markers shape type.
+
+
+#### *"square"*
+
+The marker shape is square.
+
+#### *"triangle"*
+
+The marker shape is triangle.
+
+#### *"circle"*
+
+The marker shape is circle.
+
+### navigator.series.type="line".markers.visible `Boolean`*(default: true)*
+
+ The markers visibility.
+
+### navigator.series.type="line".missingValues `String`*(default: "gap")*
+
+Configures the behavior for handling missing values in line series.
+
+
+#### *"interpolate"*
+
+The value is interpolated from neighboring points.
+
+#### *"zero"*
+
+The value is assumed to be zero.
+
+#### *"gap"*
+
+The line stops before the missing point and continues after it.
+
+### navigator.series.type="line".name `String`
+
+The series name.
+
+### navigator.series.type="line".opacity `Number`*(default: 1)*
+
+ The series opacity.
+
+### navigator.series.type="line".stack `Boolean`*(default: false)*
+
+A value indicating if the series should be stacked.
+
+### navigator.series.type="line".tooltip `Object`
+
+The data point tooltip configuration options.
+
+### navigator.series.type="line".tooltip.background `String`
+
+The background color of the tooltip. The default is determined from the series color.
+
+### navigator.series.type="line".tooltip.border `Object`
+
+The border configuration options.
+
+### navigator.series.type="line".tooltip.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="line".tooltip.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="line".tooltip.color `String`
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### navigator.series.type="line".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+ The tooltip font.
+
+### navigator.series.type="line".tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### navigator.series.type="line".tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### navigator.series.type="line".tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "line",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 tooltip: {
+                     visible: true,
+                     template: "#= category # - #= value #"
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### navigator.series.type="line".tooltip.visible `Boolean`*(default: false)*
+
+ A value indicating if the tooltip should be displayed.
+
+### navigator.series.type="line".width `String`*(default: 4)*
+
+ The line width of the line chart.
+
+### navigator.series.type="area" `Object`
+
+Available options for area series:
+
+### navigator.series.type="area".data `Array`
+
+Array of data points.
+
+### navigator.series.type="area".field `String`
+
+The data field containing the series value.
+
+### navigator.series.type="area".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### navigator.series.type="area".name `String`
+
+The series name visible in the legend.
+
+### navigator.series.type="area".aggregate `String`*(default: "max")*
+
+ Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
+
+
+#### *"max"*
+
+The highest value for the date period.
+
+#### *"min"*
+
+The lowest value for the date period.
+
+#### *"sum"*
+
+The sum of all values for the date period.
+
+#### *"count"*
+
+The number of values for the date period.
+
+#### *"avg"*
+
+The average of all values for the date period.
+
+#### *function (values, series)*
+
+User-defined aggregate function.
+
+### navigator.series.type="area".color `String`
+
+The series base color.
+
+### navigator.series.type="area".labels `Object`
+
+Configures the series data labels.
+
+### navigator.series.type="area".labels.background `String`
+
+The background color of the labels.
+
+### navigator.series.type="area".labels.border `Object`
+
+The border of the labels.
+
+### navigator.series.type="area".labels.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="area".labels.border.dashType `String`*(default: "solid")*
+
+ The dash type of the border.
+
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### navigator.series.type="area".labels.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="area".labels.color `String`
+
+The text color of the labels.
+
+### navigator.series.type="area".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### navigator.series.type="area".labels.format `String`
+
+The format of the labels.
+
+#### Example
+
+    //sets format of the labels
+    format: "C"
+
+### navigator.series.type="area".labels.margin `Number|Object`*(default: { left: 5, right: 5})*
+
+The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and bottom margin to 1px
+    // margin left and right are with 5px (by default)
+    margin: { top: 1, bottom: 1 }
+
+### navigator.series.type="area".labels.padding `Number|Object`*(default: 0)*
+
+ The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 0px (by default)
+    padding: { top: 1, left: 1 }
+
+### navigator.series.type="area".labels.position `String`*(default: "above")*
+
+Defines the position of the area labels.
+
+
+#### *"above"*
+
+The label is positioned at the top of the area chart marker.
+
+#### *"right"*
+
+The label is positioned at the right of the area chart marker.
+
+#### *"below"*
+
+The label is positioned at the bottom of the area chart marker.
+
+#### *"left"*
+
+The label is positioned at the left of the area chart marker.
+
+### navigator.series.type="area".labels.template `String | Function`
+
+The label template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "area",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 labels: {
+                     // label template
+                     template: "#= value #%",
+                     visible: true
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### navigator.series.type="area".labels.visible `Boolean`*(default: false)*
+
+ The visibility of the labels.
+
+### navigator.series.type="area".line `String | Object`
+
+The line of the area chart.
+
+### navigator.series.type="area".line.color `String`
+
+The line color of the area chart.
+
+### navigator.series.type="area".line.opacity `Number`*(default: 1)*
+
+ The line opacity of the area chart.
+
+### navigator.series.type="area".line.width `String`*(default: 4)*
+
+ The line width of the area chart.
+
+### navigator.series.type="area".markers `Object`
+
+Configures the area markers.
+
+### navigator.series.type="area".markers.background `String`
+
+The background color of the current series markers.
+
+### navigator.series.type="area".markers.border `Object`
+
+The border of the markers.
+
+### navigator.series.type="area".markers.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="area".markers.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="area".markers.size `Number`*(default: 6)*
+
+ The marker size.
+
+### navigator.series.type="area".markers.type `String`*(default: "circle")*
+
+Configures the markers shape type.
+
+
+#### *"square"*
+
+The marker shape is square.
+
+#### *"triangle"*
+
+The marker shape is triangle.
+
+#### *"circle"*
+
+The marker shape is circle.
+
+### navigator.series.type="area".markers.visible `Boolean`*(default: false)*
+
+ The markers visibility.
+
+### navigator.series.type="area".missingValues `String`*(default: "gap")*
+
+Configures the behavior for handling missing values in area series.
+
+
+#### *"interpolate"*
+
+The value is interpolated from neighboring points.
+
+#### *"zero"*
+
+The value is assumed to be zero.
+
+#### *"gap"*
+
+The line stops before the missing point and continues after it.
+
+### navigator.series.type="area".name `String`
+
+The series name.
+
+### navigator.series.type="area".opacity `Number`*(default: 0.4)*
+
+ The series opacity.
+
+### navigator.series.type="area".stack `Boolean`*(default: false)*
+
+A value indicating if the series should be stacked.
+
+### navigator.series.type="area".tooltip `Object`
+
+The data point tooltip configuration options.
+
+### navigator.series.type="area".tooltip.background `String`
+
+The background color of the tooltip. The default is determined from the series color.
+
+### navigator.series.type="area".tooltip.border `Object`
+
+The border configuration options.
+
+### navigator.series.type="area".tooltip.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="area".tooltip.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="area".tooltip.color `String`
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### navigator.series.type="area".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+ The tooltip font.
+
+### navigator.series.type="area".tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### navigator.series.type="area".tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### navigator.series.type="area".tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "area",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 tooltip: {
+                     visible: true,
+                     template: "#= category # - #= value #"
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### navigator.series.type="area".tooltip.visible `Boolean`*(default: false)*
+
+ A value indicating if the tooltip should be displayed.
+
+### navigator.series.type="column" `Object`
+
+Available options for column series:
+
+### navigator.series.type="column".data `Array`
+
+Array of data points.
+
+### navigator.series.type="column".field `String`
+
+The data field containing the series value.
+
+### navigator.series.type="column".groupNameTemplate `String`
+
+Name template for auto-generated
+series when binding to grouped data.
+
+Template variables:
+
+*   **series** - the series options
+*   **group** - the data group
+*   **group.field** - the name of the field used for grouping
+*   **group.value** - the field value for this group.
+
+### navigator.series.type="column".name `String`
+
+The series name visible in the legend.
+
+### navigator.series.type="column".aggregate `String`*(default: "max")*
+
+ Aggregate function for date series.
+This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
+
+
+#### *"max"*
+
+The highest value for the date period.
+
+#### *"min"*
+
+The lowest value for the date period.
+
+#### *"sum"*
+
+The sum of all values for the date period.
+
+#### *"count"*
+
+The number of values for the date period.
+
+#### *"avg"*
+
+The average of all values for the date period.
+
+#### *function (values, series)*
+
+User-defined aggregate function.
+
+### navigator.series.type="column".axis `String`*(default: primary)*
+
+ The name of the value axis to use.
+
+### navigator.series.type="column".border `Object`
+
+The border of the series.
+
+### navigator.series.type="column".border.color `String`*(default: the color of the curren series)*
+
+The color of the border.
+
+### navigator.series.type="column".border.dashType `String`*(default: "solid")*
+
+ The dash type of the border.
+
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### navigator.series.type="column".border.width `Number`*(default: 1)*
+
+ The width of the border.
+
+### navigator.series.type="column".color `String`
+
+The series base color.
+
+### navigator.series.type="column".colorField `String`
+
+The data field containing the column color.
+
+### navigator.series.type="column".gap `Number`*(default: 1.5)*
+
+ The distance between category clusters.
+
+### navigator.series.type="column".labels `Object`
+
+Configures the series data labels.
+
+### navigator.series.type="column".labels.background `String`
+
+The background color of the labels.
+
+### navigator.series.type="column".labels.border `Object`
+
+The border of the labels.
+
+### navigator.series.type="column".labels.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="column".labels.border.dashType `String`*(default: "solid")*
+
+ The dash type of the border.
+
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### navigator.series.type="column".labels.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="column".labels.color `String`
+
+The text color of the labels.
+
+### navigator.series.type="column".labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### navigator.series.type="column".labels.format `String`
+
+The format of the labels.
+
+#### Example
+
+    //sets format of the labels
+    format: "C"
+
+### navigator.series.type="column".labels.margin `Number|Object`*(default: 2)*
+
+ The margin of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left margin to 3px.
+    margin: 3
+
+    // sets the top and left margin to 1px
+    // margin right and bottom are with 2px (by default)
+    margin: { top: 1, left: 1 }
+
+### navigator.series.type="column".labels.padding `Number|Object`*(default: 2)*
+
+ The padding of the labels.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // padding right and bottom are with 2px (by default)
+    padding: { top: 1, left: 1 }
+
+### navigator.series.type="column".labels.position `String`*(default: "outsideEnd")*
+
+Defines the position of the column labels.
+
+
+#### *"center"*
+
+The label is positioned at the column center.
+
+#### *"insideEnd"*
+
+The label is positioned inside, near the end of the column.
+
+#### *"insideBase"*
+
+The label is positioned inside, near the base of the column.
+
+#### *"outsideEnd"*
+
+The label is positioned outside, near the end of the column.
+             Not applicable for stacked column series.
+
+### navigator.series.type="column".labels.template `String | Function`
+
+The label template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "column",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 labels: {
+                     // label template
+                     template: "#= value #%",
+                     visible: true
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### navigator.series.type="column".labels.visible `Boolean`*(default: false)*
+
+ The visibility of the labels.
+
+### navigator.series.type="column".name `String`
+
+The series name.
+
+### navigator.series.type="column".opacity `Number`*(default: 1)*
+
+ The series opacity.
+
+### navigator.series.type="column".overlay `Object`
+
+The effects overlay.
+
+### navigator.series.type="column".overlay.gradient `String`*(default: "glass")*
+
+ The gradient name.
+
+
+#### *"glass"*
+
+The columns have glass effect overlay.
+
+#### *"none"*
+
+The columns have no effect overlay.
+
+### navigator.series.type="column".spacing `Number`*(default: 0.4)*
+
+ Space between columns.
+
+### navigator.series.type="column".stack `Boolean`*(default: false)*
+
+A value indicating if the series should be stacked.
+
+### navigator.series.type="column".stack `String`
+
+Indicates that the series should be stacked in a group with the specified name.
+
+### navigator.series.type="column".tooltip `Object`
+
+The data point tooltip configuration options.
+
+### navigator.series.type="column".tooltip.background `String`
+
+The background color of the tooltip. The default is determined from the series color.
+
+### navigator.series.type="column".tooltip.border `Object`
+
+The border configuration options.
+
+### navigator.series.type="column".tooltip.border.color `String`*(default: "black")*
+
+ The color of the border.
+
+### navigator.series.type="column".tooltip.border.width `Number`*(default: 0)*
+
+ The width of the border.
+
+### navigator.series.type="column".tooltip.color `String`
+
+The text color of the tooltip. The default is the same as the series labels color.
+
+### navigator.series.type="column".tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+ The tooltip font.
+
+### navigator.series.type="column".tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### navigator.series.type="column".tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### navigator.series.type="column".tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+
+*   **value** - the point value
+*   **category** - the category name
+*   **series** - the data series
+*   **dataItem** - the original data item used to construct the point.
+        Will be null if binding to array.
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [
+             {
+                 type: "column",
+                 name: "Series 1",
+                 data: [200, 450, 300, 125],
+                 tooltip: {
+                     visible: true,
+                 template: "#= category # - #= value #"
+                 }
+             }
+         ],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         }
+    });
+
+### navigator.series.type="column".tooltip.visible `Boolean`*(default: false)*
+
+ A value indicating if the tooltip should be displayed.
+
 ### navigator.select `Object`
 
 Specifies the initially selected range.
