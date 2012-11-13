@@ -25,3 +25,34 @@ Supported directions are `in` and `out`.
 
 The direction of the effect.
 
+## Methods
+
+### startValue
+
+Sets the zoom value for the element when it is zoomed in. By default the element zooms in to a scale of 1.
+
+#### Parameters
+
+##### value `Number`
+
+the zoom in value.
+
+#### Returns
+
+`Effect` The effect instance
+
+### endValue
+
+Sets the zoom value for the element when it is zoomed out. By default the element zooms in to a scale of 0.01.
+
+#### Parameters
+
+##### value `Number`
+
+the zoom out value.
+
+#### Returns
+
+`Effect` The effect instance
+
+

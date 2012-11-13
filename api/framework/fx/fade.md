@@ -24,3 +24,35 @@ Supported directions are `in` and `out`.
 ### Direction
 
 The direction of the effect.
+
+## Methods
+
+### startValue
+
+Sets the zoom value for the element when it is faded in. By default the element fades in to opacity value of 1.
+
+#### Parameters
+
+##### value `Number`
+
+the fade in value.
+
+#### Returns
+
+`Effect` The effect instance
+
+### endValue
+
+    Sets the fade value for the element when it is faded out. By default the element fades in to opacity value of 0.
+
+#### Parameters
+
+##### value `Number`
+
+the fade out value.
+
+#### Returns
+
+`Effect` The effect instance
+
+
