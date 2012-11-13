@@ -410,6 +410,11 @@ The visibility of the minor ticks.
 
 The unique axis name.
 
+### categoryAxis.pane `String`
+
+The name of the pane that the axis should be rendered in.
+The axis will be rendered in the first (default) pane if not set.
+
 ### categoryAxis.plotBands `Array`
 
 The plot bands of the category axis.
@@ -1065,6 +1070,115 @@ The legend is positioned using OffsetX and OffsetY.
         },
         ...
     });
+
+### panes `Array`
+
+The chart panes configuration.
+
+Panes are used to split the chart in two or more parts. The panes are ordered from top to bottom.
+
+Each axis can be associated with a pane by setting its `pane` option to the name of the desired pane.
+Axis that don't have specified pane are placed in the top (default) pane.
+
+Series are moved to the desired pane by associating them with an axis.
+
+### panes.name `String`
+
+The unique pane name.
+
+### panes.height `Number`
+
+The pane height in pixels.
+
+### panes.title `String|Object`
+
+The pane title text or configuration.
+
+### panes.title.background `String`
+
+The background color of the title. Any valid CSS color string will work here, including
+hex and rgb.
+
+### panes.title.border `Object`
+
+The border of the title.
+
+### panes.title.border.color `String`*(default: "black")*
+
+The color of the border. Any valid CSS color string will work here, including
+hex and rgb.
+
+### panes.title.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### panes.title.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### panes.title.color `String`
+
+The text color of the title. Any valid CSS color string will work here, including hex and rgb.
+
+### panes.title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
+
+The font style of the title.
+
+### panes.title.margin `Number|Object`*(default: 5)*
+
+The margin of the title.
+
+### panes.title.position `String`*(default: "center")*
+
+The position of the title.
+
+#### *"left"*
+
+The pane title is positioned on the left
+
+#### *"right"*
+
+The pane title is positioned on the right
+
+#### *"center"*
+
+The pane title is positioned in the center
+
+### panes.title.text `String`
+
+The text of the title.
+
+### panes.title.visible `Boolean`*(default: true)*
+
+The visibility of the title.
 
 ### plotArea `Object`
 
@@ -6358,6 +6472,11 @@ It defaults to 1/5th of the majorUnit.
 
 The unique axis name.
 
+### valueAxis.pane `String`
+
+The name of the pane that the axis should be rendered in.
+The axis will be rendered in the first (default) pane if not set.
+
 ### valueAxis.plotBands `Array`
 
 The plot bands of the value axis.
@@ -6832,6 +6951,11 @@ The visibility of the major ticks.
 
 The unique axis name.
 
+### xAxis.pane `String`
+
+The name of the pane that the axis should be rendered in.
+The axis will be rendered in the first (default) pane if not set.
+
 ### xAxis.plotBands `Array`
 
 The plot bands of the xAxis.
@@ -7305,6 +7429,11 @@ The visibility of the major ticks.
 ### yAxis.name `Object`*(default: primary)*
 
 The unique axis name.
+
+### yAxis.pane `String`
+
+The name of the pane that the axis should be rendered in.
+The axis will be rendered in the first (default) pane if not set.
 
 ### yAxis.plotBands `Array`
 
