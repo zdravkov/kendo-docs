@@ -22,7 +22,7 @@ The distribution files contain the following:
 *   Maven support for Eclipse - m2e
 *   Configured server (tested with Tomcat 7)
 
-![servers dialog](..\images\servers.png)
+![servers dialog](../images/servers.png)
 
 You can find a sample JSP Spring MVC application in the **\wrappers\jsp\spring-demos** folder.
 
@@ -38,15 +38,15 @@ You can find a sample JSP Spring MVC application in the **\wrappers\jsp\spring-d
 8.  Click "Convert to facetted form..."
 9.  From the "Project Facets" menu select "Dynamic Web Module".
 
-![facet dialog](..\images\facet.png)
+![facet dialog](../images/facet.png)
 
 10. Click the "Runtimes" tab. Pick a runtime (Tomcat 7 for example).
 
-![runtime dialog](..\images\runtime.png)
+![runtime dialog](../images/runtime.png)
 
 11. Click "Further configuration available...". Type "src/main/webapp" in "Content directory". Press "OK".
 
-![content dialog](..\images\content.png)
+![content dialog](../images/content.png)
 
 12. Press "OK" to close the "Properties" window.
 13. Right-click "spring-demos" in Eclipse Project Explorer. Pick "Properties" again.
@@ -54,7 +54,7 @@ You can find a sample JSP Spring MVC application in the **\wrappers\jsp\spring-d
 15. Pick "Java Build Path Entries". Press "Next".
 16. Select "Maven Dependencies". Click "Finish" and then "OK" to close the "Properties" dialog.
 
-![deploy dialog](..\images\deploy.png)
+![deploy dialog](../images/deploy.png)
 
 17. The demo application should be ready to run!
 
