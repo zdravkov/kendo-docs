@@ -84,6 +84,7 @@ Here is how to configure the Kendo ComboBox for ajax binding to the Northwind Pr
                 .Name("productComboBox") //The name of the combobox is mandatory. It specifies the "id" attribute of the widget.
                 .DataTextField("ProductName") //Specifies which property of the Product to be used by the combobox as a text.
                 .DataValueField("ProductID") //Specifies which property of the Product to be used by the combobox as a value.
+                .Filter(FilterType.Contains)
                 .DataSource(source =>
                 {
                     source.Read(read =>
@@ -100,6 +101,7 @@ Here is how to configure the Kendo ComboBox for ajax binding to the Northwind Pr
                 .Name("productComboBox") //The name of the combobox is mandatory. It specifies the "id" attribute of the widget.
                 .DataTextField("ProductName") //Specifies which property of the Product to be used by the combobox as a text.
                 .DataValueField("ProductID") //Specifies which property of the Product to be used by the combobox as a value.
+                .Filter(FilterType.Contains)
                 .DataSource(source =>
                 {
                    source.Read(read =>
@@ -121,6 +123,7 @@ Here is how to configure the Kendo ComboBox to send parameters to the server:
                 .Name("productComboBox") //The name of the combobox is mandatory. It specifies the "id" attribute of the widget.
                 .DataTextField("ProductName") //Specifies which property of the Product to be used by the combobox as a text.
                 .DataValueField("ProductID") //Specifies which property of the Product to be used by the combobox as a value.
+                .Filter(FilterType.Contains)
                 .DataSource(source =>
                 {
                         source.Read(read =>
@@ -145,6 +148,7 @@ Here is how to configure the Kendo ComboBox to send parameters to the server:
               .Name("productComboBox") //The name of the combobox is mandatory. It specifies the "id" attribute of the widget.
               .DataTextField("ProductName") //Specifies which property of the Product to be used by the combobox as a text.
               .DataValueField("ProductID") //Specifies which property of the Product to be used by the combobox as a value.
+              .Filter(FilterType.Contains)
               .DataSource(source =>
               {
                  source.Read(read =>
