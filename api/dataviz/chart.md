@@ -27,7 +27,7 @@ Category indicies at which the value axes cross the category axis. (Only for arr
 of categories to denote the far end of the axis.
 
 #### Example
-    <p>
+
     $("#chart").kendoChart({
          categoryAxis: {
              categories: ["A", "B"],
@@ -36,7 +36,6 @@ of categories to denote the far end of the axis.
          valueAxis: [{ }, { name: "secondary" }]
          ...
     })
-    </p>
 
 ### categoryAxis.categories `Array`
 
