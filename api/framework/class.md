@@ -87,8 +87,8 @@ A key/value pair of all methods that the new class will have.
 
     sylvester.move(); // outputs "Animal.move()" then "Sneak"
 
-    console.log(tweety instanceof Bird); // outputs "true"
+    console.log(tweety instanceof Bird); // outputs "true" because tweety is an instanfe of Bird
 
-    console.log(tweety instanceof Animal); // outputs "true"
+    console.log(tweety instanceof Animal); // outputs "true" because Animal is the base class of Bird
 
-    console.log(tweety instanceof Cat); // outputs "false"
+    console.log(tweety instanceof Cat); // outputs "false" because tweety is not an instance of Cat
