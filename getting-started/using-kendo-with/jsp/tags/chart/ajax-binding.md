@@ -29,7 +29,6 @@ To configure the Kendo Chart for ajax binding follow these steps (using Spring M
 
 3.  In the view configure the chart to use the action method created in the previous steps:
 
-		<c:url value="/dataviz/bar-charts/remote-data/read" var="readUrl" />
 		<kendo:chart name="chart">
 			 <kendo:dataSource>
 			 	 <kendo:dataSource-sort>
