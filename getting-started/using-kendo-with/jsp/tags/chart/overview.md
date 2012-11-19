@@ -10,12 +10,7 @@ The Chart tag is a server-side wrapper for the [Kendo UI Chart](http://docs.kend
 
 ## Getting Started
 
-There are two ways to bind a Kendo Chart for ASP.NET MVC:
-
-*   server - the chart will bind to a supplied model
-*   ajax - the chart will make ajax requests when binding
-
-Here is how to configure the Kendo Chart for server binding to the list of InternetUsers:
+Here is how to configure the Kendo Chart for binding to a data passed as model attribute in Spring MVC:
 
 1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/jsp/introduction) help topic.
 
