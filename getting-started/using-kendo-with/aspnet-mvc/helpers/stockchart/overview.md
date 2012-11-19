@@ -1,6 +1,6 @@
 ---
 title: Overview
-slug: mvc-stock-chart-overview
+slug: mvc-stockchart-overview
 publish: true
 ---
 
