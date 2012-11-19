@@ -16,7 +16,7 @@ Here is how to configure the Kendo Chart for binding to a data passed as model a
 
 2.  Create a new action method and pass the InternetUsers list as the model:
 
-	    @RequestMapping(value = "/local-data", method = RequestMethod.GET)
+    	@RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
 	    public String index(Model model) {
 	        model.addAttribute("viewModel", ChartDataRepository.InternetUsers());
 	     
