@@ -25,7 +25,7 @@ Instance of DataSource or the data that the mobile ListView will be bound to.
 
  If set to true, the listview gets the next page of data when the user scrolls near the bottom of the view.
 
-### endlessScrollParameters 'Function'
+### endlessScrollParameters `Function`
 
  A callback function used when the 'endlessScroll' option is enabled. The result of the function will be send as additional parameters to the DataSource's next method.
 
@@ -70,7 +70,7 @@ Last dataItem of the first loaded page of the ListView.
 
  The text of the rendered load-more button (applies only if loadMore is set to true).
 
-### loadMoreParameters 'Function'
+### loadMoreParameters `Function`
 
  Check the 'endlessScrollParameters' option.
 
@@ -82,7 +82,7 @@ Last dataItem of the first loaded page of the ListView.
 
  If set to true, the listview will reload its data when the user pulls the view over the top limit.
 
-### pullParameters 'Function'
+### pullParameters `Function`
 
  A callback function used when the 'pullToRefresh' option is enabled. The result of the function will be send as additional parameters to the DataSource's next method.
 
