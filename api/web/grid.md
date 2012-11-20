@@ -518,7 +518,7 @@ Indicates whether item should be switched to edit mode on click.
 
  Enable/Disable and set the text of filter operators for fields of type string.
 
-> **Important:** Ommitting an operator will exclude it from the list of available operators in the filter menu.
+> **Important:** Omitting an operator will exclude it from the list of available operators in the filter menu.
 
 ### filterable.operators.string.eq `String`
 
@@ -548,7 +548,7 @@ Indicates whether item should be switched to edit mode on click.
 
  Enable/Disable and set the text of filter operators for fields of type number.
 
-> **Important:** Ommitting an operator will exclude it from the list of available operators in the filter menu.
+> **Important:** Omitting an operator will exclude it from the list of available operators in the filter menu.
 
 ### filterable.operators.number.eq `String`
 
@@ -578,7 +578,7 @@ Indicates whether item should be switched to edit mode on click.
 
  Enable/Disable and set the text of filter operators for fields of type date.
 
-> **Important:** Ommitting an operator will exclude it from the list of available operators in the filter menu.
+> **Important:** Omitting an operator will exclude it from the list of available operators in the filter menu.
 
 ### filterable.operators.date.eq `String`
 
@@ -608,7 +608,7 @@ Indicates whether item should be switched to edit mode on click.
 
  Enable/Disable and set the text of filter operators for foreign key columns.
 
-> **Important:** Ommitting an operator will exclude it from the list of available operators in the filter menu.
+> **Important:** Omitting an operator will exclude it from the list of available operators in the filter menu.
 
 ### filterable.operators.enums.eq `String`
 
