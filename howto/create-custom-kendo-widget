@@ -111,7 +111,8 @@ Now what if you wanted to make this Widget DataSource or MVVM aware? There are s
 To make your widget aware of a DataSource, the first thing that we need to do is to use the create convenience method on the DataSource base object.
 
 ### Create Or Initialize DataSource
-	that.dataSource = kendo.data.DataSource.create(that.options.dataSource);
+
+    that.dataSource = kendo.data.DataSource.create(that.options.dataSource);
 
 What this line does is offer you quite a bit of flexibility in the way that you initialize the DataSource for your widget. Should you actually create a new DataSource either outside your widget initialization or inline, that DataSource will be returned. But you don't have to create a new DataSource to bind a widget. You could simply set it's DataSource to an array. Something like this.
 
@@ -120,7 +121,6 @@ What this line does is offer you quite a bit of flexibility in the way that you 
     $("#div").kendoRepeater({
         dataSource: ["Item 1", "Item 2", "Item 3"]
     });
-
 
 If you pass this simple array, the **kendo.data.DataSource.create** method
 will create a new DataSource for you based upon the data in this array and return it to **that.dataSource**. But you can also create a DataSource just by specifying it's configuration values inline.
@@ -143,9 +143,9 @@ Now you have provided the same flexibility that we do in our own widgets as
 far as the variety of ways that you can specify the **dataSource** for this
 repeater.
 
-## Handeling Events
+## Handling Events
 
-The next thing that you need to do is to bind to your DataSource **change* event and handle it. This is where you will mutate your DOM based on the Data read from the DataSource. We typically do this in a **refresh** method. We usually make the **refresh** method public, because there is a high probability that you or someone else may want to call that method on the widget at some point after initialization.
+The next thing that you need to do is to bind to your DataSource **change** event and handle it. This is where you will mutate your DOM based on the Data read from the DataSource. We typically do this in a **refresh** method. We usually make the **refresh** method public, because there is a high probability that you or someone else may want to call that method on the widget at some point after initialization.
 
 ### Binding To The Change Event
 
@@ -176,6 +176,7 @@ The widget code now looks like this.
                 name: "Repeater"
             },
             _dataSource: function() {
+                var that = this;
                 // returns the datasource OR creates one if using array or configuration
                 that.dataSource = kendo.data.DataSource.create(that.option.dataSource);
 				
@@ -249,8 +250,7 @@ user, or use a default template. In the case of this simple repeater, I'm just g
 
 ### Setting The Template Default
 
-    that.template = kendo.template(that.options.template || "<p><strong**#=
-data #</strong></p>**")
+    that.template = kendo.template(that.options.template || "<p><strong>#= data #</strong></p>")
 
 ## Implement A Refresh Function
 
@@ -294,7 +294,7 @@ And with that final touch, we officially have a fully DataBound widget. Here is 
                 var that = this;
                 
                 kendo.ui.Widget.fn.init.call(that, element, options);
-                that.template = kendo.template(that.options.template || "<p><strong>**#= data #</strong></p>**");
+                that.template = kendo.template(that.options.template || "<p><strong>#= data #</strong></p>");
 
                 that._dataSource();
             },
@@ -368,7 +368,7 @@ By exposing these as events for MVVM to listen to, we have loose coupling betwee
 
 ### Items
 
-MVVM will be expecting us to expose the DOM fragments from our widget which represent each row or each repeated data element. We should be returning the outermost element for MVVM to work with. While is varies, this is typically just this.element.children. Since each template item rendered is a DOM Fragment that is attached to the bound element, this is all we need. We can expose it for MVVM by making it available off of the items object.
+MVVM will be expecting us to expose the DOM fragments from our widget which represent each row or each repeated data element. We should be returning the outermost element for MVVM to work with. While it varies, this is typically just this.element.children. Since each template item rendered is a DOM Fragment that is attached to the bound element, this is all we need. We can expose it for MVVM by making it available off of the items object.
 
 ### Example
 
@@ -397,7 +397,7 @@ MVVM will be expecting us to expose the DOM fragments from our widget which repr
 	    ],
 
 	    // mvvm expects an array of dom elements that represent each item of the datasource.
-	    // should be the outermost element
+	    // should be the outermost element's children
 	    items: function() {
 	        return this.element.children();
 	    }
@@ -450,7 +450,7 @@ Since we have already bound the change event on the DataSource possibly once, we
 	    }
 	}
 
-This can be a bit confusing if haven’t used the [proxy](http://api.jquery.com/jQuery.proxy/) jQuery function before, but all it’s doing is saying that when the **_refreshHandler** is called, it should execute the public refresh widget function and inside that refresh function, this will be a reference to the widget itself, and not something else (like window for instance). Due to the fact that the the value of the keyword **this** is always changing in JavaScript, this is just a good way to ensure that the scope is correct when the **refresh** function executes.
+This can be a bit confusing if you haven’t used the [proxy](http://api.jquery.com/jQuery.proxy/) jQuery function before, but all it’s doing is saying that when the **_refreshHandler** is called, it should execute the public refresh widget function and inside that refresh function, this will be a reference to the widget itself, and not something else (like window for instance). Due to the fact that the the value of the keyword **this** is always changing in JavaScript, this is just a good way to ensure that the scope is correct when the **refresh** function executes.
 
 ## Trigger Bound/Binding Events
 
@@ -475,19 +475,18 @@ We do this in the public refresh and remember, dataBinding happens before we mut
 And with that, we have now fully enabled MVVM in our widget. This means we
 can now define the widget like so:
 
-<div data-role="repeater" data-bind="source: dataSource">
-<script>
-    var viewModel = kendo.observable({
-        dataSource:  new kendo.data.DataSource({
-            transport: {
-                read: "Customers/Orders",
-                dataType: "json"
-            }
-        })  
-    });
-
-    kendo.bind(document.body.children, viewModel);
-</script>
+    <div data-role="repeater" data-bind="source: dataSource">
+    <script>
+        var viewModel = kendo.observable({
+            dataSource:  new kendo.data.DataSource({
+                transport: {
+                    read: "Customers/Orders",
+                    dataType: "json"
+                }
+            })  
+        });
+        kendo.bind(document.body.children, viewModel);
+    </script>
 
 Notice that the widget is now bound to the **dataSource** variable inside of the ViewModel via **data-bind**. This means that if we add an item client side to the DataSource, our widget will reflect the change immediately, without us having to re-render anything.
 
