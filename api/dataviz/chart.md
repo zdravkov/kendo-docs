@@ -4993,7 +4993,7 @@ Template variables:
 
 The series name visible in the legend.
 
-### series.type="candlestick".aggregates `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
+### series.type="candlestick".aggregate `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
 
 Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
@@ -5277,7 +5277,7 @@ Template variables:
 
 The series name visible in the legend.
 
-### series.type="ohlc".aggregates `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
+### series.type="ohlc".aggregate `Object`*(default: { open: "max", high: "max", close: "min", low: "max" })*
 
 Aggregate function for date series.
 This function is used when a category (an year, month, etc.) contains two or more points.
