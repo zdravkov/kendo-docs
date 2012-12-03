@@ -372,7 +372,7 @@ Selects item, which starts with the provided parameter.
 
 #### Parameters
 
-##### word `string`
+##### word `String`
 
 The search value.
 

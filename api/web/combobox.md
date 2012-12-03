@@ -272,7 +272,7 @@ A local JavaScript object or instance of DataSource or the data that the ComboBo
         suggest: false
     });
 
-### template `string`
+### template `String`
 
 Template to be used for rendering the items in the list.
 
@@ -418,7 +418,7 @@ Filters dataSource using the provided parameter and rebinds drop-down list.
 
 #### Parameters
 
-##### word `string`
+##### word `String`
 
 The filter value.
 
@@ -467,7 +467,7 @@ Forces a suggestion onto the text of the ComboBox.
 
 #### Parameters
 
-##### value `string`
+##### value `String`
 
 Characters to force a suggestion.
 

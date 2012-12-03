@@ -346,7 +346,7 @@ Filters dataSource using the provided parameter and rebinds drop-down list.
 
 #### Parameters
 
-##### word `string`
+##### word `String`
 
 The filter value.
 
@@ -385,7 +385,7 @@ Forces a suggestion onto the text of the AutoComplete.
 
 #### Parameters
 
-##### value `string`
+##### value `String`
 
 Characters to force a suggestion.
 
