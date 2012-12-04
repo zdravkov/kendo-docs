@@ -1751,15 +1751,15 @@ Fires when an error occurs during data read or sync.
 
 #### Event Data
 
-##### e.xhr `Object`
+###### e.xhr `Object`
 
 The jqXHR object
 
-### e.status
+###### e.status
 
 String describing the type of the error
 
-### e.errorThrown
+###### e.errorThrown
 
 An optional exception object.
 
