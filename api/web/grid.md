@@ -498,11 +498,11 @@ Indicates whether item should be switched to edit mode on click.
             info: "Custom header text:", // sets the text on top of the filter menu
             filter: "CustomFilter", // sets the text for the "Filter" button
             clear: "CustomClear", // sets the text for the "Clear" button
-            
+
             // when filtering boolean numbers
             isTrue: "custom is true", // sets the text for "isTrue" radio button
             isFalse: "custom is false", // sets the text for "isFalse" radio button
-            
+
             //changes the text of the "And" and "Or" of the filter menu
             and: "CustomAnd",
             or: "CustomOr"
@@ -1561,6 +1561,36 @@ The jQuery element to be edited.
 ##### e.model `Object`
 
 The model to be edited.
+
+### filterMenuInit
+
+Fires when the grid column filter menu is initialized.
+
+#### Example
+
+     $("#grid").kendoGrid({
+         filterMenuInit: function(e) {
+             // handle event
+     });
+
+#### To set after initialization
+
+     // get a reference to the grid
+     var grid = $("#grid").data("kendoGrid");
+     // bind to the detailInit event
+     grid.bind("filterMenuInit", function(e) {
+         // handle event
+     });
+
+#### Event Data
+
+##### e.field `Object`
+
+The name of the field for which the menu is initialized.
+
+##### e.container `Object`
+
+The jQuery element representing filter menu form.
 
 ### remove
 
