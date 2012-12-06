@@ -1592,6 +1592,36 @@ The name of the field for which the menu is initialized.
 
 The jQuery element representing filter menu form.
 
+### columnMenuInit
+
+Fires when the grid column menu is initialized.
+
+#### Example
+
+     $("#grid").kendoGrid({
+         columnMenuInit: function(e) {
+             // handle event
+     });
+
+#### To set after initialization
+
+     // get a reference to the grid
+     var grid = $("#grid").data("kendoGrid");
+     // bind to the columnMenuInit event
+     grid.bind("columnMenuInit", function(e) {
+         // handle event
+     });
+
+#### Event Data
+
+##### e.field `Object`
+
+The name of the field for which the menu is initialized.
+
+##### e.container `Object`
+
+The jQuery element representing menu container.
+
 ### remove
 
 Fires before the grid item is removed.
