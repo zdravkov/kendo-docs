@@ -3253,7 +3253,7 @@ The padding around the donut chart (equal on all sides).
 
 The size of the series.
 
-### series.type="donut".startAngle `number`*(default: 90)*
+### series.type="donut".startAngle `Number`*(default: 90)*
 
  The start angle of the first donut segment.
 
