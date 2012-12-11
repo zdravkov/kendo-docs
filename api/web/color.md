@@ -31,7 +31,7 @@ selected color.
 
 ## Configuration
 
-### palette `String` or `Array` (default `null`)
+### palette `String` or `Array`*(default: null)*
 
 When a non-null `palette` argument is supplied, the drop-down will be
 a simple color picker.  The following are supported:
@@ -55,14 +55,14 @@ The number of columns to show in the simple color dropdown.  For the
 pass a custom palette then you can set this to some value that makes
 sense for your colors.
 
-### value `String` or `Color` (default `null`)
+### value `String | Color`*(default: null)*
 
 The initially selected color.  This can be a string supported by
 `Color.parse` or a `Color` object (see below).  Note that when
 initializing the widget from an `<input>` element, the initial color
 will be decided by the field instead.
 
-### toolIcon `String` (default `null`)
+### toolIcon `String`*(default: null)*
 
 A CSS class name to display an icon in the color picker button.  If
 specified, the HTML for the element will look like this:
@@ -71,19 +71,19 @@ specified, the HTML for the element will look like this:
       <span class="k-selected-color"></span>
     </span>
 
-### buttons `Boolean` (default `true`)
+### buttons `Boolean`*(default: true)*
 
 Applicable only for the HSV selector (that is, when `pallete` is
 null).  This specifies whether the "Apply" / "Cancel" buttons are to
 be displayed in the drop-down HSV picker.
 
-### preview `Boolean` (default `true`)
+### preview `Boolean`*(default: true)*
 
 Only for the HSV selector.  Displays the color preview element, along
 with an input field where the end user can paste a color in a
 CSS-supported notation.
 
-### opacity `Boolean` (default `false`)
+### opacity `Boolean`*(default: false)*
 
 Only for the HSV selector.  If `true`, the widget will display the
 opacity slider.  Note that currently in HTML5 the `<input
@@ -92,22 +92,6 @@ type="color">` does not support opacity.
 ### messages `Object`
 
 Allows customization of "Apply" / "Cancel" labels.
-
-## Events
-
-### select
-
-Fires as a new color is displayed in the drop-down picker.  This is
-not necessarily the "final" value; for example this event triggers
-when the sliders in the HSV selector are dragged, but then pressing
-ESC would cancel the selection and the color will revert to the
-original value.
-
-### change
-
-Fires when a color was selected, either by clicking on it (in the
-simple picker), by clicking ENTER or by pressing "Apply" in the HSV
-picker.
 
 ## Methods
 
@@ -183,4 +167,20 @@ You can use the following methods with `Color` objects:
 - `toDisplay()` - to some notation that the current browser is able to display.
 - `equals(other)` - return `true` if `this` is the same color as `other`.
 - `clone()` - clones the color; returns a new object which represents the same color.
+
+## Events
+
+### select
+
+Fires as a new color is displayed in the drop-down picker.  This is
+not necessarily the "final" value; for example this event triggers
+when the sliders in the HSV selector are dragged, but then pressing
+ESC would cancel the selection and the color will revert to the
+original value.
+
+### change
+
+Fires when a color was selected, either by clicking on it (in the
+simple picker), by clicking ENTER or by pressing "Apply" in the HSV
+picker.
 
