@@ -95,7 +95,7 @@ Allows customization of “Apply” / “Cancel” labels.
 
 ## Events
 
-### `select`
+### select
 
 Fires as a new color is displayed in the drop-down picker.  This is
 not necessarily the “final” value; for example this event triggers
@@ -103,7 +103,7 @@ when the sliders in the HSV selector are dragged, but then pressing
 ESC would cancel the selection and the color will revert to the
 original value.
 
-### `change`
+### change
 
 Fires when a color was selected, either by clicking on it (in the
 simple picker), by clicking ENTER or by pressing “Apply” in the HSV
@@ -111,31 +111,43 @@ picker.
 
 ## Methods
 
-### `open()`
+### open
 
 Opens the popup element with the color selector.
 
-### `close()`
+### close
 
 Closes the popup.
 
-### `toggle()`
+### toggle
 
 Toggles the popup.
 
-### `value(color?)`
+### value
 
-Get or set the selected color.  If no argument is given, this returns
-the currently selected color.  If one argument is given, it selects
-the new color and updates the UI.  The color should be either a
-`Color` object (see below) or a string that `Color.parse` can
-understand (the CSS hex, rgb or rgba notations).  This does not
-trigger the “change” event.
+Get or set the selected color. If no argument is given, this returns
+the currently selected color.
 
-### `select(color)`
+If one argument is given, it selects the new color and updates the UI.
+This does not trigger the “change” event.
+
+#### Parameters
+
+##### color `String`
+
+The color should be either a `Color` object (see below) or
+a string that `Color.parse` can understand (the CSS hex, rgb or rgba notations).
+
+### select
 
 Selects a new color by calling `value(color)` and triggers the
 “change” event.
+
+#### Parameters
+
+##### color `String`
+
+The color to select.
 
 # Color, ColorRGB, ColorHSV, ColorBytes
 
