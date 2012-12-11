@@ -10,7 +10,7 @@ publish: true
 A drop-down color picker widget.
 
 This widget can be used as a replacement for browser's built-in color
-picker widget — `<input type="color">` in HTML5.  It can be
+picker widget - `<input type="color">` in HTML5.  It can be
 instantiated from such an element and by default it will replace it in
 the DOM.  Two color selectors are provided: a simple picker that shows
 a limited number of colors from a palette and a HSV (hue / saturation
@@ -18,7 +18,7 @@ a limited number of colors from a palette and a HSV (hue / saturation
 
 ## Usage example
 
-Create a simple color picker displaying the “web-safe” color palette,
+Create a simple color picker displaying the "web-safe" color palette,
 liked to the `test` input field.  The `<input>` will be hidden but
 maintained in the DOM, and its `value` attribute will reflect the
 selected color.
@@ -74,7 +74,7 @@ specified, the HTML for the element will look like this:
 ### buttons `Boolean` (default `true`)
 
 Applicable only for the HSV selector (that is, when `pallete` is
-null).  This specifies whether the “Apply” / “Cancel” buttons are to
+null).  This specifies whether the "Apply" / "Cancel" buttons are to
 be displayed in the drop-down HSV picker.
 
 ### preview `Boolean` (default `true`)
@@ -91,14 +91,14 @@ type="color">` does not support opacity.
 
 ### messages `Object`
 
-Allows customization of “Apply” / “Cancel” labels.
+Allows customization of "Apply" / "Cancel" labels.
 
 ## Events
 
 ### select
 
 Fires as a new color is displayed in the drop-down picker.  This is
-not necessarily the “final” value; for example this event triggers
+not necessarily the "final" value; for example this event triggers
 when the sliders in the HSV selector are dragged, but then pressing
 ESC would cancel the selection and the color will revert to the
 original value.
@@ -106,7 +106,7 @@ original value.
 ### change
 
 Fires when a color was selected, either by clicking on it (in the
-simple picker), by clicking ENTER or by pressing “Apply” in the HSV
+simple picker), by clicking ENTER or by pressing "Apply" in the HSV
 picker.
 
 ## Methods
@@ -129,7 +129,7 @@ Get or set the selected color. If no argument is given, this returns
 the currently selected color.
 
 If one argument is given, it selects the new color and updates the UI.
-This does not trigger the “change” event.
+This does not trigger the "change" event.
 
 #### Parameters
 
@@ -141,7 +141,7 @@ a string that `Color.parse` can understand (the CSS hex, rgb or rgba notations).
 ### select
 
 Selects a new color by calling `value(color)` and triggers the
-“change” event.
+"change" event.
 
 #### Parameters
 
@@ -174,13 +174,13 @@ representations:
 
 You can use the following methods with `Color` objects:
 
-- `toHSV()` — converts to `ColorHSV`.
-- `toRGB()` — converts to `ColorRGB`.
-- `toBytes()` — converts to `ColorBytes`.
-- `toHex()` — converts to hex string (without the leading `#`).
-- `toCss()` — like `toHex()` but prepends the `#`.
-- `toCssRgba()` — to RGBA notation (includes the opacity).
-- `toDisplay()` — to some notation that the current browser is able to display.
-- `equals(other)` — return `true` if `this` is the same color as `other`.
-- `clone()` — clones the color; returns a new object which represents the same color.
+- `toHSV()` - converts to `ColorHSV`.
+- `toRGB()` - converts to `ColorRGB`.
+- `toBytes()` - converts to `ColorBytes`.
+- `toHex()` - converts to hex string (without the leading `#`).
+- `toCss()` - like `toHex()` but prepends the `#`.
+- `toCssRgba()` - to RGBA notation (includes the opacity).
+- `toDisplay()` - to some notation that the current browser is able to display.
+- `equals(other)` - return `true` if `this` is the same color as `other`.
+- `clone()` - clones the color; returns a new object which represents the same color.
 
