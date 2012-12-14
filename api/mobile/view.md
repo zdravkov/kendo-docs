@@ -11,8 +11,7 @@ publish: true
 
 ### model `String | ObservableObject`*(default: null)*
 
- The MVVM model to bind to. If a string is passed, The view
-will try to resolve a reference to the view model variable in the global scope.
+The MVVM model to bind to. If a string is passed, The view will try to resolve a reference to the view model variable in the global scope.
 
 #### Example
 
@@ -23,6 +22,7 @@ will try to resolve a reference to the view model variable in the global scope.
     <div data-role="view" data-model="foo">
        <span data-bind="text:bar"></span>
     </div>
+
 ### reload
 
 Applicable to remote views only. If set to true, the remote view contents will be reloaded from the server (using Ajax) each time the view is navigated to.
@@ -40,10 +40,6 @@ Applicable to remote views only. If set to true, the remote view contents will b
       <a href="#" id="link">Link</a>
     </div>
 
-### zoom `Boolean`*(default: false)*
-
-If set to true, the user can zoom in/out the contents of the view using the pinch/zoom gesture.
-
 ### stretch `Boolean`*(default: false)*
 
 If set to true, the view will stretch its child contents to occupy the entire view, while disabling kinetic scrolling.
@@ -52,6 +48,10 @@ Useful if the view contains an image or a map.
 ### title `String`
 
 The text to display in the navbar title (if present) and the browser title.
+
+### zoom `Boolean`*(default: false)*
+
+If set to true, the user can zoom in/out the contents of the view using the pinch/zoom gesture.
 
 ## Events
 
