@@ -131,7 +131,7 @@ the application considers the View to be remote, and issues an AJAX request to t
 The View content (the first element with `data-role="view"`) is extracted from the AJAX response and appended into the Application DOM element.
 Once the remote **View** is fetched, no additional round trips to the server occur when the **View** is displayed again.
 
-### Remote View
+### Remote view
 
     <!-- foo.html -->
     <div data-role="view">Foo <a href="bar.html" data-role="button">Go to Bar</a></div>
@@ -164,6 +164,24 @@ If the remote view needs an **additional scripting (widget initialization/bindin
           e.view.element.find("#link").kendoMobileButton();
       }
     </script>
+
+### Remote Views With Parameters
+
+Once a remote view is loaded, subsequent view displays for the same path with different query string parameters do not perform additional requests **by default**.
+In order to reload the remote view contents each time the view is shown, set the **reload** configuration option.
+
+### Remote view that is refreshed on every request
+
+    <!-- foo.html -->
+    <div data-role="view">
+    <a data-role="button" href="bar.html">Go to bar</a>
+    </div>
+
+    <!-- bar.html -->
+    <div data-role="view" data-reload="true">
+        I will be requested from the server every time I am displayed
+      <a href="#" id="link">Link</a>
+    </div>
 
 ##  Initial View
 

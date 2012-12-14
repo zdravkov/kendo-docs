@@ -23,6 +23,22 @@ will try to resolve a reference to the view model variable in the global scope.
     <div data-role="view" data-model="foo">
        <span data-bind="text:bar"></span>
     </div>
+### reload
+
+Applicable to remote views only. If set to true, the remote view contents will be reloaded from the server (using Ajax) each time the view is navigated to.
+
+### Example
+
+    <!-- foo.html -->
+    <div data-role="view">
+        <a data-role="button" href="bar.html">Go to bar</a>
+    </div>
+
+    <!-- bar.html -->
+    <div data-role="view" data-reload="true">
+        I will be requested from the server every time I am displayed
+      <a href="#" id="link">Link</a>
+    </div>
 
 ### zoom `Boolean`*(default: false)*
 
