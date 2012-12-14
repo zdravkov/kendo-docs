@@ -23,6 +23,7 @@ The ModalView element may contain optional header and/or footer. A mobile scroll
     <div data-role="modalview" id="foo">
         <div data-role="header">
             <div data-role="navbar">
+                <span data-role="view-title">Hello World!</span>
                 <a data-align="right" data-role="button">Close</a>
             </div>
         </div>
