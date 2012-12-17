@@ -31,6 +31,23 @@ selected color.
 
 ## Configuration
 
+### buttons `Boolean`*(default: true)*
+
+Applicable only for the HSV selector (that is, when `pallete` is
+null).  This specifies whether the "Apply" / "Cancel" buttons are to
+be displayed in the drop-down HSV picker.
+
+### columns `Number`
+
+The number of columns to show in the simple color dropdown.  For the
+"basic" and "web" palettes this is automatically initialized; if you
+pass a custom palette then you can set this to some value that makes
+sense for your colors.
+
+### messages `Object`
+
+Allows customization of "Apply" / "Cancel" labels.
+
 ### palette `String` or `Array`*(default: null)*
 
 When a non-null `palette` argument is supplied, the drop-down will be
@@ -48,19 +65,17 @@ a simple color picker.  The following are supported:
 If `palette` is missing or `null`, the widget will display the HSV
 selector.
 
-### columns `Number`
+### opacity `Boolean`*(default: false)*
 
-The number of columns to show in the simple color dropdown.  For the
-"basic" and "web" palettes this is automatically initialized; if you
-pass a custom palette then you can set this to some value that makes
-sense for your colors.
+Only for the HSV selector.  If `true`, the widget will display the
+opacity slider.  Note that currently in HTML5 the `<input
+type="color">` does not support opacity.
 
-### value `String | Color`*(default: null)*
+### preview `Boolean`*(default: true)*
 
-The initially selected color.  This can be a string supported by
-`Color.parse` or a `Color` object (see below).  Note that when
-initializing the widget from an `<input>` element, the initial color
-will be decided by the field instead.
+Only for the HSV selector.  Displays the color preview element, along
+with an input field where the end user can paste a color in a
+CSS-supported notation.
 
 ### toolIcon `String`*(default: null)*
 
@@ -71,37 +86,22 @@ specified, the HTML for the element will look like this:
       <span class="k-selected-color"></span>
     </span>
 
-### buttons `Boolean`*(default: true)*
+### value `String | Color`*(default: null)*
 
-Applicable only for the HSV selector (that is, when `pallete` is
-null).  This specifies whether the "Apply" / "Cancel" buttons are to
-be displayed in the drop-down HSV picker.
-
-### preview `Boolean`*(default: true)*
-
-Only for the HSV selector.  Displays the color preview element, along
-with an input field where the end user can paste a color in a
-CSS-supported notation.
-
-### opacity `Boolean`*(default: false)*
-
-Only for the HSV selector.  If `true`, the widget will display the
-opacity slider.  Note that currently in HTML5 the `<input
-type="color">` does not support opacity.
-
-### messages `Object`
-
-Allows customization of "Apply" / "Cancel" labels.
+The initially selected color.  This can be a string supported by
+`Color.parse` or a `Color` object (see below).  Note that when
+initializing the widget from an `<input>` element, the initial color
+will be decided by the field instead.
 
 ## Methods
-
-### open
-
-Opens the popup element with the color selector.
 
 ### close
 
 Closes the popup.
+
+### open
+
+Opens the popup element with the color selector.
 
 ### toggle
 
@@ -121,17 +121,6 @@ This does not trigger the "change" event.
 
 The color should be either a `Color` object (see below) or
 a string that `Color.parse` can understand (the CSS hex, rgb or rgba notations).
-
-### select
-
-Selects a new color by calling `value(color)` and triggers the
-"change" event.
-
-#### Parameters
-
-##### color `String`
-
-The color to select.
 
 # Color, ColorRGB, ColorHSV, ColorBytes
 
@@ -170,6 +159,12 @@ You can use the following methods with `Color` objects:
 
 ## Events
 
+### change
+
+Fires when a color was selected, either by clicking on it (in the
+simple picker), by clicking ENTER or by pressing "Apply" in the HSV
+picker.
+
 ### select
 
 Fires as a new color is displayed in the drop-down picker.  This is
@@ -177,10 +172,3 @@ not necessarily the "final" value; for example this event triggers
 when the sliders in the HSV selector are dragged, but then pressing
 ESC would cancel the selection and the color will revert to the
 original value.
-
-### change
-
-Fires when a color was selected, either by clicking on it (in the
-simple picker), by clicking ENTER or by pressing "Apply" in the HSV
-picker.
-
