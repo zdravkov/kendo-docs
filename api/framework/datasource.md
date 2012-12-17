@@ -1509,6 +1509,14 @@ Group(s) to be applied to the data.
 
 `Array` The current group descriptors.
 
+### hasChanges `Boolean`
+
+Get if DataSource has changes.
+
+#### Returns
+
+`Boolean` True if DataSource records are modified. Otherwise, false.
+
 ### insert
 
 Inserts a new data item in the DataSource.
