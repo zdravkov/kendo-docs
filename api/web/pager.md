@@ -17,7 +17,7 @@ Indicates whether the pager refresh method will be called within its initializat
 ### buttonCount `Number`*(default: 10)*
 Defines the number of buttons displayed in the numeric pager.
 
-### dataSource `kendo.data.DataSource`
+### dataSource `Object|kendo.data.DataSource`
 Instance of kendo DataSource. See the [**kendo.data.DataSource**](http://docs.kendoui.com/api/framework/datasource).
 
 This option is mandatory because the Pager is tightly connected with DataSource. The pager is UI widget for managing paging over the DataSource. The Pager gets values like page size or total count of items from DataSource.
