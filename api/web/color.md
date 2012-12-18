@@ -109,11 +109,17 @@ Toggles the popup.
 
 ### value
 
-Get or set the selected color. If no argument is given, this returns
-the currently selected color.
+Get or set the selected color. If no argument is given, this returns the
+currently selected color as a string in format #FFFFFF when the `opacity`
+option is off, or rgba(255, 255, 255, 1) when `opacity` is requested.
 
-If one argument is given, it selects the new color and updates the UI.
+If one argument is given, it selects the new color and updates the UI.  The
+argument can be a string in hex, rgb or rgba format, or a `Color` object.
 This does not trigger the "change" event.
+
+### color
+
+Like `value()`, but it returns a `Color` object.
 
 #### Parameters
 
