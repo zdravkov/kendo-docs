@@ -2014,14 +2014,9 @@ Space between points as proportion of the point width.
 
 ** Available for bar, column, candlestick and ohlc series. **
 
-### series.stack `Boolean`*(default: false)*
+### series.stack `Boolean|String`*(default: false)*
 
-A value indicating if the series should be stacked.
-
-### series.stack `String`
-
-Indicates that the series should be stacked in a group with the specified name.
-
+A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
 ** Available for bar and column series. **
 
 ### series.tooltip `Object`

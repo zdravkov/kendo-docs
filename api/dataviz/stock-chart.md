@@ -609,14 +609,9 @@ Space between points as proportion of the point width.
 
 Available for column, candlestick and ohlc series.
 
-### navigator.series.stack `Boolean`*(default: false)*
+### navigator.series.stack `Boolean|Boolean`*(default: false)*
 
-A value indicating if the series should be stacked.
-
-### navigator.series.stack `String`
-
-Indicates that the series should be stacked in a group with the specified name.
-
+A value indicating if the series should be stacked.  String value indicates that the series should be stacked in a group with the specified name.
 Available for column series.
 
 ### navigator.series.tooltip `Object`
@@ -2637,14 +2632,9 @@ Space between points as proportion of the point width.
 
 Available for column, candlestick and ohlc series.
 
-### series.stack `Boolean`*(default: false)*
+### series.stack `Boolean|String`*(default: false)*
 
-A value indicating if the series should be stacked.
-
-### series.stack `String`
-
-Indicates that the series should be stacked in a group with the specified name.
-
+A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
 Available for column series.
 
 ### series.tooltip `Object`
