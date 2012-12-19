@@ -3389,6 +3389,7 @@ axis maximum value to denote the far end of the axis.
          yAxis: [{ }, { name: "secondary" }],
          ...
     });
+
 ### xAxis.baseUnit `String`
 
 The base time interval for the axis labels.
