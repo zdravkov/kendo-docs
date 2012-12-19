@@ -23,7 +23,7 @@ Category index at which the first value axis crosses this axis. (Only for object
 
 Category indicies at which the value axes cross the category axis. (Only for array)
 
-**Note:&nbsp;** Specify an index greater than or equal to the number
+**Note:** Specify an index greater than or equal to the number
 of categories to denote the far end of the axis.
 
 #### Example
@@ -3376,6 +3376,19 @@ Value indicies at which the Y axes cross the value axis. (Only for array)
 
 Date at which the Y axis crosses this axis. (Only for date)
 
+**Note:** Specify a value greater than or equal to the
+axis maximum value to denote the far end of the axis.
+
+#### Example
+
+    $("#chart").kendoChart({
+         ...,
+         xAxis: {
+             axisCrossingValue: [0, 1000]
+         },
+         yAxis: [{ }, { name: "secondary" }],
+         ...
+    });
 ### xAxis.baseUnit `String`
 
 The base time interval for the axis labels.
@@ -3569,26 +3582,6 @@ This is often used in combination with the **max** configuration option.
 
 The interval between minor divisions in base units.
 It defaults to 1/5th of the majorUnit.
-
-### xAxis.axisCrossingValue `Object | Array`
-Value at which the first Y axis crosses this axis.
-
-Values at which the Y axes cross this X axis.
-<p>
-**Note:&nbsp;** Specify a value greater than or equal to the
-axis maximum value to denote the far end of the axis.
-
-#### Example
-
-    $("#chart").kendoChart({
-         ...,
-         xAxis: {
-             axisCrossingValue: [0, 1000]
-         },
-         yAxis: [{ }, { name: "secondary" }],
-         ...
-    });
-    </p>
 
 ### xAxis.line `Object`
 
@@ -3854,6 +3847,20 @@ Value indicies at which the Y axes cross the value axis. (Only for array)
 
 Date at which the Y axis crosses this axis. (Only for date)
 
+**Note:** Specify a value greater than or equal to the
+axis maximum value to denote the far end of the axis.
+
+#### Example
+
+    $("#chart").kendoChart({
+         ...,
+         yAxis: {
+             axisCrossingValue: [0, 1000]
+         },
+         xAxis: [{ }, { name: "secondary" }],
+         ...
+    });
+
 ### yAxis.baseUnit `String`
 
 The base time interval for the axis labels.
@@ -4052,26 +4059,6 @@ This is often used in combination with the **max** configuration option.
 
 The interval between minor divisions in base units.
 It defaults to 1/5th of the majorUnit.
-
-### yAxis.axisCrossingValue `Object | Array`
-Value at which the first Y axis crosses this axis.
-
-Values at which the Y axes cross this X axis.
-<p>
-**Note:&nbsp;** Specify a value greater than or equal to the
-axis maximum value to denote the far end of the axis.
-
-#### Example
-
-    $("#chart").kendoChart({
-         ...,
-         yAxis: {
-             axisCrossingValue: [0, 1000]
-         },
-         xAxis: [{ }, { name: "secondary" }],
-         ...
-    });
-    </p>
 
 ### yAxis.line `Object`
 
