@@ -1944,10 +1944,6 @@ The value is assumed to be zero.
 
 The plot stops before the missing point and continues after it.
 
-### series.name `String`
-
-The series name.
-
 ### series.negativeValues `Object`
 
 The settings for negative values.
