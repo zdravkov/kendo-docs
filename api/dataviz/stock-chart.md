@@ -580,10 +580,6 @@ The value is assumed to be zero.
 
 The plot stops before the missing point and continues after it.
 
-### navigator.series.name `String`
-
-The series name.
-
 ### navigator.series.opacity `Number`
 
 The series opacity.
@@ -2611,10 +2607,6 @@ The value is assumed to be zero.
 #### *"gap"*
 
 The plot stops before the missing point and continues after it.
-
-### series.name `String`
-
-The series name.
 
 ### series.opacity `Number`
 
