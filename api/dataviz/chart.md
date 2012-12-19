@@ -636,9 +636,6 @@ Specifiying "auto" will set the step to such value that the total number of cate
 
 This option is ignored if **baseUnit** is set to "fit".
 
-### categoryAxis.labels `Object`
-
-Label settings specific to the date axis.
 
 ### categoryAxis.labels.culture `String`*(default: global culture)*
 
