@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:upload-async\>
-A JSP tag representing Kendo Async.
+
+Configures the ability to upload a file(s) in an asynchronous manner. Please refer to the
 
 #### Example
     <kendo:upload>
         <kendo:upload-async></kendo:upload-async>
     </kendo:upload>
 
-
 ## Configuration Attributes
-
 
 ### autoUpload `boolean`
 
@@ -26,8 +25,6 @@ autoUpload to false.
     <kendo:upload-async autoUpload="autoUpload">
     </kendo:upload-async>
 
-
-
 ### batch `boolean`
 
 The selected files will be uploaded in separate requests, if this is supported by the browser.
@@ -37,8 +34,6 @@ You can change this behavior by setting batch to true.
     <kendo:upload-async batch="batch">
     </kendo:upload-async>
 
-
-
 ### removeField `String`
 
 The name of the form field submitted to the Remove URL.
@@ -46,8 +41,6 @@ The name of the form field submitted to the Remove URL.
 #### Example
     <kendo:upload-async removeField="removeField">
     </kendo:upload-async>
-
-
 
 ### removeUrl `String`
 
@@ -58,8 +51,6 @@ requests containing one or more "fileNames" fields specifying the files to be de
     <kendo:upload-async removeUrl="removeUrl">
     </kendo:upload-async>
 
-
-
 ### removeVerb `String`
 
 The HTTP verb to be used by the remove action.
@@ -67,8 +58,6 @@ The HTTP verb to be used by the remove action.
 #### Example
     <kendo:upload-async removeVerb="removeVerb">
     </kendo:upload-async>
-
-
 
 ### saveField `String`
 
@@ -78,8 +67,6 @@ The name of the form field submitted to the save URL. The default value is the i
     <kendo:upload-async saveField="saveField">
     </kendo:upload-async>
 
-
-
 ### saveUrl `String`
 
 The URL of the handler that will receive the submitted files. The handler must accept POST requests
@@ -88,5 +75,4 @@ containing one or more fields with the same name as the original input name.
 #### Example
     <kendo:upload-async saveUrl="saveUrl">
     </kendo:upload-async>
-
 

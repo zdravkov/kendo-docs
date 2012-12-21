@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:grid-groupable\>
-A JSP tag representing Kendo Groupable.
+
+Indicates whether grouping is enabled/disabled.
 
 #### Example
     <kendo:grid>
         <kendo:grid-groupable></kendo:grid-groupable>
     </kendo:grid>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:grid-groupable-messages
 
 Sets the messages displayed during grouping.
 
-More documentation is available at [kendo:grid-groupable-messages](/api/wrappers/jsp/grid/groupable-messages).
+More documentation is available at [kendo:grid-groupable-messages](grid/groupable-messages).
 
 #### Example
 
     <kendo:grid-groupable>
         <kendo:grid-groupable-messages></kendo:grid-groupable-messages>
     </kendo:grid-groupable>
- 
+

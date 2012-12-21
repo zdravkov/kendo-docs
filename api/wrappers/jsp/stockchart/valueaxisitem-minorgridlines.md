@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-valueAxisItem-minorGridLines\>
-A JSP tag representing Kendo MinorGridLines.
+
+Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through the
 
 #### Example
     <kendo:stockChart-valueAxisItem>
         <kendo:stockChart-valueAxisItem-minorGridLines></kendo:stockChart-valueAxisItem-minorGridLines>
     </kendo:stockChart-valueAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the lines.
     <kendo:stockChart-valueAxisItem-minorGridLines color="color">
     </kendo:stockChart-valueAxisItem-minorGridLines>
 
-
-
 ### dashType `String`
 
 The dash type of the minor grid lines.
@@ -34,8 +31,6 @@ The dash type of the minor grid lines.
 #### Example
     <kendo:stockChart-valueAxisItem-minorGridLines dashType="dashType">
     </kendo:stockChart-valueAxisItem-minorGridLines>
-
-
 
 ### visible `boolean`
 
@@ -45,8 +40,6 @@ The visibility of the lines.
     <kendo:stockChart-valueAxisItem-minorGridLines visible="visible">
     </kendo:stockChart-valueAxisItem-minorGridLines>
 
-
-
 ### width `float`
 
 The width of the lines.
@@ -54,5 +47,4 @@ The width of the lines.
 #### Example
     <kendo:stockChart-valueAxisItem-minorGridLines width="width">
     </kendo:stockChart-valueAxisItem-minorGridLines>
-
 

@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:linearGauge-gaugeArea-border\>
-A JSP tag representing Kendo Border.
+
+The border of the gauge area.
 
 #### Example
     <kendo:linearGauge-gaugeArea>
         <kendo:linearGauge-gaugeArea-border></kendo:linearGauge-gaugeArea-border>
     </kendo:linearGauge-gaugeArea>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the border. Any valid CSS color string will work here, including he
     <kendo:linearGauge-gaugeArea-border color="color">
     </kendo:linearGauge-gaugeArea-border>
 
-
-
 ### dashType `String`
 
 The dash type of the border.
@@ -35,8 +32,6 @@ The dash type of the border.
     <kendo:linearGauge-gaugeArea-border dashType="dashType">
     </kendo:linearGauge-gaugeArea-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -44,5 +39,4 @@ The width of the border.
 #### Example
     <kendo:linearGauge-gaugeArea-border width="width">
     </kendo:linearGauge-gaugeArea-border>
-
 

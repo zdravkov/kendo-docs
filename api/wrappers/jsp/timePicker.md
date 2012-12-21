@@ -8,9 +8,7 @@ publish: true
 # \<kendo:timePicker\>
 A JSP tag representing Kendo TimePicker.
 
-
 ## Configuration Attributes
-
 
 ### culture `String`
 
@@ -20,8 +18,6 @@ Specifies the culture info used by the widget.
     <kendo:timePicker culture="culture">
     </kendo:timePicker>
 
-
-
 ### dates `Object`
 
 Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
@@ -29,8 +25,6 @@ Specifies a list of dates, which are shown in the time drop-down list. If not se
 #### Example
     <kendo:timePicker dates="dates">
     </kendo:timePicker>
-
-
 
 ### format `String`
 
@@ -40,8 +34,6 @@ Specifies the format, which is used to format the value of the TimePicker displa
     <kendo:timePicker format="format">
     </kendo:timePicker>
 
-
-
 ### interval `float`
 
 Specifies the interval, between values in the popup list, in minutes.
@@ -49,8 +41,6 @@ Specifies the interval, between values in the popup list, in minutes.
 #### Example
     <kendo:timePicker interval="interval">
     </kendo:timePicker>
-
-
 
 ### max `java.util.Date`
 
@@ -60,8 +50,6 @@ Specifies the end value in the popup list.
     <kendo:timePicker max="max">
     </kendo:timePicker>
 
-
-
 ### min `java.util.Date`
 
 Specifies the start value in the popup list.
@@ -70,8 +58,6 @@ Specifies the start value in the popup list.
     <kendo:timePicker min="min">
     </kendo:timePicker>
 
-
-
 ### parseFormats `Object`
 
 Specifies the formats, which are used to parse the value set with the value method or by direct input. If not set the value of the options.format will be used. Note that value of the format option is always used.
@@ -79,8 +65,6 @@ Specifies the formats, which are used to parse the value set with the value meth
 #### Example
     <kendo:timePicker parseFormats="parseFormats">
     </kendo:timePicker>
-
-
 
 ### value `java.util.Date`
 
@@ -91,6 +75,22 @@ Specifies the selected time.
     </kendo:timePicker>
 
 
+##  Configuration JSP Tags
+
+### kendo:timePicker-animation
+
+Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+
+More documentation is available at [kendo:timePicker-animation](timepicker/animation).
+
+#### Example
+
+    <kendo:timePicker>
+        <kendo:timePicker-animation></kendo:timePicker-animation>
+    </kendo:timePicker>
+
+
+## Event Attributes
 
 ### change `String`
 
@@ -105,8 +105,6 @@ Triggered when the underlying value of a TimePicker is changed.
         }
     </script>
 
-
-
 ### close `String`
 
 Fires when the time drop-down list is closed
@@ -120,8 +118,6 @@ Fires when the time drop-down list is closed
         }
     </script>
 
-
-
 ### open `String`
 
 Fires when the time drop-down list is opened
@@ -134,58 +130,8 @@ Fires when the time drop-down list is opened
             // Code to handle the open event.
         }
     </script>
-
-
-
-### Event Attributes
-
-
-### change `String`
-
-Triggered when the underlying value of a TimePicker is changed.
-
-#### Example
-    <kendo:timePicker change="handle_change">
-    </kendo:timePicker>
-    <script>
-        function handle_change(e) {
-            // Code to handle the change event.
-        }
-    </script>
-
-
-
-### close `String`
-
-Fires when the time drop-down list is closed
-
-#### Example
-    <kendo:timePicker close="handle_close">
-    </kendo:timePicker>
-    <script>
-        function handle_close(e) {
-            // Code to handle the close event.
-        }
-    </script>
-
-
-
-### open `String`
-
-Fires when the time drop-down list is opened
-
-#### Example
-    <kendo:timePicker open="handle_open">
-    </kendo:timePicker>
-    <script>
-        function handle_open(e) {
-            // Code to handle the open event.
-        }
-    </script>
-
 
 ## Event Tags
- 
 
 ### kendo:timePicker-change
 
@@ -202,8 +148,6 @@ Triggered when the underlying value of a TimePicker is changed.
         </kendo:timePicker-change>
     </kendo:timePicker>
 
- 
-
 ### kendo:timePicker-close
 
 Fires when the time drop-down list is closed
@@ -218,8 +162,6 @@ Fires when the time drop-down list is closed
             </script>
         </kendo:timePicker-close>
     </kendo:timePicker>
-
- 
 
 ### kendo:timePicker-open
 
@@ -236,19 +178,3 @@ Fires when the time drop-down list is opened
         </kendo:timePicker-open>
     </kendo:timePicker>
 
- 
-
-## Child JSP Tags
-
-### kendo:timePicker-animation
-
-Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
-
-More documentation is available at [kendo:timePicker-animation](/api/wrappers/jsp/timepicker/animation).
-
-#### Example
-
-    <kendo:timePicker>
-        <kendo:timePicker-animation></kendo:timePicker-animation>
-    </kendo:timePicker>
-    

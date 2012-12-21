@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-categoryAxisItem-majorTicks\>
-A JSP tag representing Kendo MajorTicks.
+
+The major ticks of the axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem>
         <kendo:stockChart-categoryAxisItem-majorTicks></kendo:stockChart-categoryAxisItem-majorTicks>
     </kendo:stockChart-categoryAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### size `float`
 
@@ -26,8 +25,6 @@ on the chart.
     <kendo:stockChart-categoryAxisItem-majorTicks size="size">
     </kendo:stockChart-categoryAxisItem-majorTicks>
 
-
-
 ### visible `boolean`
 
 The visibility of the major ticks.
@@ -35,5 +32,4 @@ The visibility of the major ticks.
 #### Example
     <kendo:stockChart-categoryAxisItem-majorTicks visible="visible">
     </kendo:stockChart-categoryAxisItem-majorTicks>
-
 

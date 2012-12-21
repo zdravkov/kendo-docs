@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-xAxisItem-title-border\>
-A JSP tag representing Kendo Border.
+
+The border of the title.
 
 #### Example
     <kendo:chart-xAxisItem-title>
         <kendo:chart-xAxisItem-title-border></kendo:chart-xAxisItem-title-border>
     </kendo:chart-xAxisItem-title>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the border.
     <kendo:chart-xAxisItem-title-border color="color">
     </kendo:chart-xAxisItem-title-border>
 
-
-
 ### dashType `String`
 
 The dash type of the border.
@@ -35,8 +32,6 @@ The dash type of the border.
     <kendo:chart-xAxisItem-title-border dashType="dashType">
     </kendo:chart-xAxisItem-title-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -44,5 +39,4 @@ The width of the border.
 #### Example
     <kendo:chart-xAxisItem-title-border width="width">
     </kendo:chart-xAxisItem-title-border>
-
 

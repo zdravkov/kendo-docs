@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-pane-title\>
-A JSP tag representing Kendo Title.
+
+The pane title text or configuration.
 
 #### Example
     <kendo:stockChart-pane>
         <kendo:stockChart-pane-title></kendo:stockChart-pane-title>
     </kendo:stockChart-pane>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ hex and rgb.
     <kendo:stockChart-pane-title background="background">
     </kendo:stockChart-pane-title>
 
-
-
 ### color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
@@ -35,8 +32,6 @@ The text color of the title. Any valid CSS color string will work here, includin
 #### Example
     <kendo:stockChart-pane-title color="color">
     </kendo:stockChart-pane-title>
-
-
 
 ### font `String`
 
@@ -46,17 +41,13 @@ The font style of the title.
     <kendo:stockChart-pane-title font="font">
     </kendo:stockChart-pane-title>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the title.
 
 #### Example
     <kendo:stockChart-pane-title margin="margin">
     </kendo:stockChart-pane-title>
-
-
 
 ### position `String`
 
@@ -66,8 +57,6 @@ The position of the title.
     <kendo:stockChart-pane-title position="position">
     </kendo:stockChart-pane-title>
 
-
-
 ### text `String`
 
 The text of the title.
@@ -75,8 +64,6 @@ The text of the title.
 #### Example
     <kendo:stockChart-pane-title text="text">
     </kendo:stockChart-pane-title>
-
-
 
 ### visible `boolean`
 
@@ -87,18 +74,17 @@ The visibility of the title.
     </kendo:stockChart-pane-title>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:stockChart-pane-title-border
 
 The border of the title.
 
-More documentation is available at [kendo:stockChart-pane-title-border](/api/wrappers/jsp/stockchart/pane-title-border).
+More documentation is available at [kendo:stockChart-pane-title-border](stockchart/pane-title-border).
 
 #### Example
 
     <kendo:stockChart-pane-title>
         <kendo:stockChart-pane-title-border></kendo:stockChart-pane-title-border>
     </kendo:stockChart-pane-title>
- 
+

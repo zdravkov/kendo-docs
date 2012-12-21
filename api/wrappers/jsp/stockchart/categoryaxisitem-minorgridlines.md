@@ -6,16 +6,16 @@ publish: true
 ---
 
 # \<kendo:stockChart-categoryAxisItem-minorGridLines\>
-A JSP tag representing Kendo MinorGridLines.
+
+Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
+the body of the chart.
 
 #### Example
     <kendo:stockChart-categoryAxisItem>
         <kendo:stockChart-categoryAxisItem-minorGridLines></kendo:stockChart-categoryAxisItem-minorGridLines>
     </kendo:stockChart-categoryAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -26,8 +26,6 @@ rgb.
     <kendo:stockChart-categoryAxisItem-minorGridLines color="color">
     </kendo:stockChart-categoryAxisItem-minorGridLines>
 
-
-
 ### dashType `String`
 
 The dash type of the grid lines.
@@ -35,8 +33,6 @@ The dash type of the grid lines.
 #### Example
     <kendo:stockChart-categoryAxisItem-minorGridLines dashType="dashType">
     </kendo:stockChart-categoryAxisItem-minorGridLines>
-
-
 
 ### visible `boolean`
 
@@ -46,8 +42,6 @@ The visibility of the lines.
     <kendo:stockChart-categoryAxisItem-minorGridLines visible="visible">
     </kendo:stockChart-categoryAxisItem-minorGridLines>
 
-
-
 ### width `float`
 
 The width of the lines.
@@ -55,5 +49,4 @@ The width of the lines.
 #### Example
     <kendo:stockChart-categoryAxisItem-minorGridLines width="width">
     </kendo:stockChart-categoryAxisItem-minorGridLines>
-
 

@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:stockChart-yAxisItem-plotBands\>
-A JSP tag representing Kendo PlotBands.
+
+The plot bands of the yAxis.
 
 #### Example
     <kendo:stockChart-yAxisItem>
         <kendo:stockChart-yAxisItem-plotBands></kendo:stockChart-yAxisItem-plotBands>
     </kendo:stockChart-yAxisItem>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:stockChart-yAxisItem-plotBand
 
 The plot bands of the yAxis.
 
-More documentation is available at [kendo:stockChart-yAxisItem-plotBand](/api/wrappers/jsp/stockchart/yaxisitem-plotband).
+More documentation is available at [kendo:stockChart-yAxisItem-plotBand](stockchart/yaxisitem-plotband).
 
 #### Example
 
     <kendo:stockChart-yAxisItem-plotBands>
         <kendo:stockChart-yAxisItem-plotBand></kendo:stockChart-yAxisItem-plotBand>
     </kendo:stockChart-yAxisItem-plotBands>
- 
+

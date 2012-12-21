@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-xAxisItem-labels\>
-A JSP tag representing Kendo Labels.
+
+Configures the axis labels.
 
 #### Example
     <kendo:chart-xAxisItem>
         <kendo:chart-xAxisItem-labels></kendo:chart-xAxisItem-labels>
     </kendo:chart-xAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ hex and rgb
     <kendo:chart-xAxisItem-labels background="background">
     </kendo:chart-xAxisItem-labels>
 
-
-
 ### color `String`
 
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
@@ -36,7 +33,21 @@ The text color of the labels. Any valid CSS color string will work here, includi
     <kendo:chart-xAxisItem-labels color="color">
     </kendo:chart-xAxisItem-labels>
 
+### culture `String`
 
+Culture to use for formatting the dates. See
+
+#### Example
+    <kendo:chart-xAxisItem-labels culture="culture">
+    </kendo:chart-xAxisItem-labels>
+
+### dateFormats `Object`
+
+Date format strings
+
+#### Example
+    <kendo:chart-xAxisItem-labels dateFormats="dateFormats">
+    </kendo:chart-xAxisItem-labels>
 
 ### font `String`
 
@@ -46,8 +57,6 @@ The font style of the labels.
     <kendo:chart-xAxisItem-labels font="font">
     </kendo:chart-xAxisItem-labels>
 
-
-
 ### format `String`
 
 The format of the labels.
@@ -56,17 +65,13 @@ The format of the labels.
     <kendo:chart-xAxisItem-labels format="format">
     </kendo:chart-xAxisItem-labels>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the labels.
 
 #### Example
     <kendo:chart-xAxisItem-labels margin="margin">
     </kendo:chart-xAxisItem-labels>
-
-
 
 ### mirror `boolean`
 
@@ -78,17 +83,13 @@ mirroring the axis will render them to the right.
     <kendo:chart-xAxisItem-labels mirror="mirror">
     </kendo:chart-xAxisItem-labels>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the labels.
 
 #### Example
     <kendo:chart-xAxisItem-labels padding="padding">
     </kendo:chart-xAxisItem-labels>
-
-
 
 ### rotation `float`
 
@@ -97,8 +98,6 @@ The rotation angle of the labels.
 #### Example
     <kendo:chart-xAxisItem-labels rotation="rotation">
     </kendo:chart-xAxisItem-labels>
-
-
 
 ### skip `float`
 
@@ -109,8 +108,6 @@ Skips rendering the first n labels.
     <kendo:chart-xAxisItem-labels skip="skip">
     </kendo:chart-xAxisItem-labels>
 
-
-
 ### step `float`
 
 Label rendering step.
@@ -120,8 +117,6 @@ Every n-th label is rendered where n is the step
     <kendo:chart-xAxisItem-labels step="step">
     </kendo:chart-xAxisItem-labels>
 
-
-
 ### template `String`
 
 The label template.
@@ -129,8 +124,6 @@ The label template.
 #### Example
     <kendo:chart-xAxisItem-labels template="template">
     </kendo:chart-xAxisItem-labels>
-
-
 
 ### visible `boolean`
 
@@ -141,38 +134,50 @@ The visibility of the labels.
     </kendo:chart-xAxisItem-labels>
 
 
-
-### culture `String`
-
-Culture to use for formatting the dates. See
-
-#### Example
-    <kendo:chart-xAxisItem-labels culture="culture">
-    </kendo:chart-xAxisItem-labels>
-
-
-
-### dateFormats `Object`
-
-Date format strings
-
-#### Example
-    <kendo:chart-xAxisItem-labels dateFormats="dateFormats">
-    </kendo:chart-xAxisItem-labels>
-
-
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-xAxisItem-labels-border
 
 The border of the labels.
 
-More documentation is available at [kendo:chart-xAxisItem-labels-border](/api/wrappers/jsp/chart/xaxisitem-labels-border).
+More documentation is available at [kendo:chart-xAxisItem-labels-border](chart/xaxisitem-labels-border).
 
 #### Example
 
     <kendo:chart-xAxisItem-labels>
         <kendo:chart-xAxisItem-labels-border></kendo:chart-xAxisItem-labels-border>
     </kendo:chart-xAxisItem-labels>
- 
+
+
+## Event Attributes
+
+### template `String`
+
+The label template.
+
+#### Example
+    <kendo:chart-xAxisItem-labels template="handle_template">
+    </kendo:chart-xAxisItem-labels>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-xAxisItem-labels-template
+
+The label template.
+
+#### Example
+    <kendo:chart-xAxisItem-labels>
+        <kendo:chart-xAxisItem-labels-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:chart-xAxisItem-labels-template>
+    </kendo:chart-xAxisItem-labels>
+

@@ -6,36 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-categoryAxisItem-plotBand\>
-A JSP tag representing Kendo PlotBand.
+
+The plot bands of the category axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem-plotBands>
         <kendo:stockChart-categoryAxisItem-plotBand></kendo:stockChart-categoryAxisItem-plotBand>
     </kendo:stockChart-categoryAxisItem-plotBands>
 
-
 ## Configuration Attributes
-
-
-### from `float`
-
-The start position of the plot band in axis units.
-
-#### Example
-    <kendo:stockChart-categoryAxisItem-plotBand from="from">
-    </kendo:stockChart-categoryAxisItem-plotBand>
-
-
-
-### to `float`
-
-The end position of the plot band in axis units.
-
-#### Example
-    <kendo:stockChart-categoryAxisItem-plotBand to="to">
-    </kendo:stockChart-categoryAxisItem-plotBand>
-
-
 
 ### color `String`
 
@@ -45,7 +24,13 @@ The color of the plot band.
     <kendo:stockChart-categoryAxisItem-plotBand color="color">
     </kendo:stockChart-categoryAxisItem-plotBand>
 
+### from `float`
 
+The start position of the plot band in axis units.
+
+#### Example
+    <kendo:stockChart-categoryAxisItem-plotBand from="from">
+    </kendo:stockChart-categoryAxisItem-plotBand>
 
 ### opacity `float`
 
@@ -55,4 +40,11 @@ The opacity of the plot band.
     <kendo:stockChart-categoryAxisItem-plotBand opacity="opacity">
     </kendo:stockChart-categoryAxisItem-plotBand>
 
+### to `float`
+
+The end position of the plot band in axis units.
+
+#### Example
+    <kendo:stockChart-categoryAxisItem-plotBand to="to">
+    </kendo:stockChart-categoryAxisItem-plotBand>
 

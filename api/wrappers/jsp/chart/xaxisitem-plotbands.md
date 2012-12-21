@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:chart-xAxisItem-plotBands\>
-A JSP tag representing Kendo PlotBands.
+
+The plot bands of the xAxis.
 
 #### Example
     <kendo:chart-xAxisItem>
         <kendo:chart-xAxisItem-plotBands></kendo:chart-xAxisItem-plotBands>
     </kendo:chart-xAxisItem>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:chart-xAxisItem-plotBand
 
 The plot bands of the xAxis.
 
-More documentation is available at [kendo:chart-xAxisItem-plotBand](/api/wrappers/jsp/chart/xaxisitem-plotband).
+More documentation is available at [kendo:chart-xAxisItem-plotBand](chart/xaxisitem-plotband).
 
 #### Example
 
     <kendo:chart-xAxisItem-plotBands>
         <kendo:chart-xAxisItem-plotBand></kendo:chart-xAxisItem-plotBand>
     </kendo:chart-xAxisItem-plotBands>
- 
+

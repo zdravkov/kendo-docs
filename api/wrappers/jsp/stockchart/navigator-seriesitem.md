@@ -6,89 +6,23 @@ publish: true
 ---
 
 # \<kendo:stockChart-navigator-seriesItem\>
-A JSP tag representing Kendo SeriesItem.
+
+Array of series definitions.
 
 #### Example
     <kendo:stockChart-navigator-series>
         <kendo:stockChart-navigator-seriesItem></kendo:stockChart-navigator-seriesItem>
     </kendo:stockChart-navigator-series>
 
-
 ## Configuration Attributes
-
-
-### type `String`
-
-The type of the series.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem type="type">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-###  `Object`
-
-Available options for line series:
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem ="">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### data `Object`
-
-Array of data points.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem data="data">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### field `String`
-
-The data field containing the series value.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem field="field">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### groupNameTemplate `String`
-
-Name template for auto-generated
-series when binding to grouped data.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem groupNameTemplate="groupNameTemplate">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### name `String`
-
-The series name visible in the legend.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem name="name">
-    </kendo:stockChart-navigator-seriesItem>
-
-
 
 ### aggregate `String`
 
 Aggregate function for date series.
-This function is used when a category (an year, month, etc.) contains two or more points.
-The function return value is displayed instead of the individual points.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem aggregate="aggregate">
     </kendo:stockChart-navigator-seriesItem>
-
-
 
 ### axis `String`
 
@@ -98,7 +32,13 @@ The name of the value axis to use.
     <kendo:stockChart-navigator-seriesItem axis="axis">
     </kendo:stockChart-navigator-seriesItem>
 
+### closeField `String`
 
+The data field containing the close value.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem closeField="closeField">
+    </kendo:stockChart-navigator-seriesItem>
 
 ### color `String`
 
@@ -108,67 +48,53 @@ The series base color.
     <kendo:stockChart-navigator-seriesItem color="color">
     </kendo:stockChart-navigator-seriesItem>
 
-
-
-### dashType `String`
-
-The dash type of the line.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem dashType="dashType">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### missingValues `String`
-
-Configures the behavior for handling missing values in line series.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem missingValues="missingValues">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### opacity `float`
-
-The series opacity.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem opacity="opacity">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### width `String`
-
-The line width of the line chart.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem width="width">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
-### line `String`
-
-The line of the area chart. Further configuration is available via [kendo:stockChart-navigator-seriesItem-line](#kendo-stockChart-navigator-seriesItem-line). 
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem line="line">
-    </kendo:stockChart-navigator-seriesItem>
-
-
-
 ### colorField `String`
 
-The data field containing the column color.
+The data field containing the point color.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem colorField="colorField">
     </kendo:stockChart-navigator-seriesItem>
 
+### dashType `String`
 
+The series line dash type.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem dashType="dashType">
+    </kendo:stockChart-navigator-seriesItem>
+
+### data `Object`
+
+Array of data items. The data item type can be either a:
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem data="data">
+    </kendo:stockChart-navigator-seriesItem>
+
+### downColor `String`
+
+The series color when open value is smoller then close value.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem downColor="downColor">
+    </kendo:stockChart-navigator-seriesItem>
+
+### downColorField `String`
+
+The data field containing the body color.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem downColorField="downColorField">
+    </kendo:stockChart-navigator-seriesItem>
+
+### field `String`
+
+The data field containing the series value.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem field="field">
+    </kendo:stockChart-navigator-seriesItem>
 
 ### gap `float`
 
@@ -178,99 +104,187 @@ The distance between category clusters.
     <kendo:stockChart-navigator-seriesItem gap="gap">
     </kendo:stockChart-navigator-seriesItem>
 
+### groupNameTemplate `String`
 
+Name template for auto-generated series when binding to grouped data.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem groupNameTemplate="groupNameTemplate">
+    </kendo:stockChart-navigator-seriesItem>
+
+### highField `String`
+
+The data field containing the high value.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem highField="highField">
+    </kendo:stockChart-navigator-seriesItem>
+
+### line `String`
+
+Line options. Further configuration is available via [kendo:stockChart-navigator-seriesItem-line](#kendo-stockChart-navigator-seriesItem-line). 
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem line="line">
+    </kendo:stockChart-navigator-seriesItem>
+
+### lowField `String`
+
+The data field containing the low value.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem lowField="lowField">
+    </kendo:stockChart-navigator-seriesItem>
+
+### missingValues `String`
+
+Configures the behavior for handling missing values.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem missingValues="missingValues">
+    </kendo:stockChart-navigator-seriesItem>
+
+### name `String`
+
+The series name visible in the legend.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem name="name">
+    </kendo:stockChart-navigator-seriesItem>
+
+### opacity `float`
+
+The series opacity.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem opacity="opacity">
+    </kendo:stockChart-navigator-seriesItem>
+
+### openField `String`
+
+The data field containing the open value.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem openField="openField">
+    </kendo:stockChart-navigator-seriesItem>
 
 ### spacing `float`
 
-Space between columns.
+Space between points as proportion of the point width.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem spacing="spacing">
     </kendo:stockChart-navigator-seriesItem>
 
+### stack `Object`
 
-
-### stack `String`
-
-Indicates that the series should be stacked in a group with the specified name.
+A value indicating if the series should be stacked.  String value indicates that the series should be stacked in a group with the specified name.
+Available for column series.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem stack="stack">
     </kendo:stockChart-navigator-seriesItem>
 
+### type `String`
 
-
-## Child JSP Tags
-
-### kendo:stockChart-navigator-seriesItem-labels
-
-Configures the series data labels.
-
-More documentation is available at [kendo:stockChart-navigator-seriesItem-labels](/api/wrappers/jsp/stockchart/navigator-seriesitem-labels).
+The type of the series. Available types:
 
 #### Example
-
-    <kendo:stockChart-navigator-seriesItem>
-        <kendo:stockChart-navigator-seriesItem-labels></kendo:stockChart-navigator-seriesItem-labels>
+    <kendo:stockChart-navigator-seriesItem type="type">
     </kendo:stockChart-navigator-seriesItem>
- 
+
+### width `float`
+
+The line width.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem width="width">
+    </kendo:stockChart-navigator-seriesItem>
+
+
+##  Configuration JSP Tags
+
 ### kendo:stockChart-navigator-seriesItem-border
 
-The border of the labels.
+The border of the points.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-border](/api/wrappers/jsp/stockchart/navigator-seriesitem-border).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-border](stockchart/navigator-seriesitem-border).
 
 #### Example
 
     <kendo:stockChart-navigator-seriesItem>
         <kendo:stockChart-navigator-seriesItem-border></kendo:stockChart-navigator-seriesItem-border>
     </kendo:stockChart-navigator-seriesItem>
- 
-### kendo:stockChart-navigator-seriesItem-markers
 
-Configures the line markers.
+### kendo:stockChart-navigator-seriesItem-highlight
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-markers](/api/wrappers/jsp/stockchart/navigator-seriesitem-markers).
+Configures the appearance of highlighted points.
 
-#### Example
-
-    <kendo:stockChart-navigator-seriesItem>
-        <kendo:stockChart-navigator-seriesItem-markers></kendo:stockChart-navigator-seriesItem-markers>
-    </kendo:stockChart-navigator-seriesItem>
- 
-### kendo:stockChart-navigator-seriesItem-tooltip
-
-The data point tooltip configuration options.
-
-More documentation is available at [kendo:stockChart-navigator-seriesItem-tooltip](/api/wrappers/jsp/stockchart/navigator-seriesitem-tooltip).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-highlight](stockchart/navigator-seriesitem-highlight).
 
 #### Example
 
     <kendo:stockChart-navigator-seriesItem>
-        <kendo:stockChart-navigator-seriesItem-tooltip></kendo:stockChart-navigator-seriesItem-tooltip>
+        <kendo:stockChart-navigator-seriesItem-highlight></kendo:stockChart-navigator-seriesItem-highlight>
     </kendo:stockChart-navigator-seriesItem>
- 
+
+### kendo:stockChart-navigator-seriesItem-labels
+
+Configures the series data labels.
+
+More documentation is available at [kendo:stockChart-navigator-seriesItem-labels](stockchart/navigator-seriesitem-labels).
+
+#### Example
+
+    <kendo:stockChart-navigator-seriesItem>
+        <kendo:stockChart-navigator-seriesItem-labels></kendo:stockChart-navigator-seriesItem-labels>
+    </kendo:stockChart-navigator-seriesItem>
+
 ### kendo:stockChart-navigator-seriesItem-line
 
-The line of the area chart.
+Line options.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-line](/api/wrappers/jsp/stockchart/navigator-seriesitem-line).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-line](stockchart/navigator-seriesitem-line).
 
 #### Example
 
     <kendo:stockChart-navigator-seriesItem>
         <kendo:stockChart-navigator-seriesItem-line></kendo:stockChart-navigator-seriesItem-line>
     </kendo:stockChart-navigator-seriesItem>
- 
+
+### kendo:stockChart-navigator-seriesItem-markers
+
+Marker options.
+
+More documentation is available at [kendo:stockChart-navigator-seriesItem-markers](stockchart/navigator-seriesitem-markers).
+
+#### Example
+
+    <kendo:stockChart-navigator-seriesItem>
+        <kendo:stockChart-navigator-seriesItem-markers></kendo:stockChart-navigator-seriesItem-markers>
+    </kendo:stockChart-navigator-seriesItem>
+
 ### kendo:stockChart-navigator-seriesItem-overlay
 
 The effects overlay.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-overlay](/api/wrappers/jsp/stockchart/navigator-seriesitem-overlay).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-overlay](stockchart/navigator-seriesitem-overlay).
 
 #### Example
 
     <kendo:stockChart-navigator-seriesItem>
         <kendo:stockChart-navigator-seriesItem-overlay></kendo:stockChart-navigator-seriesItem-overlay>
     </kendo:stockChart-navigator-seriesItem>
- 
+
+### kendo:stockChart-navigator-seriesItem-tooltip
+
+The data point tooltip configuration options.
+
+More documentation is available at [kendo:stockChart-navigator-seriesItem-tooltip](stockchart/navigator-seriesitem-tooltip).
+
+#### Example
+
+    <kendo:stockChart-navigator-seriesItem>
+        <kendo:stockChart-navigator-seriesItem-tooltip></kendo:stockChart-navigator-seriesItem-tooltip>
+    </kendo:stockChart-navigator-seriesItem>
+

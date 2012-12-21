@@ -6,26 +6,30 @@ publish: true
 ---
 
 # \<kendo:editor-tools\>
-A JSP tag representing Kendo Tools.
+
+A collection of tools that should render a button, combobox, etc, to interact with the Editor. Custom tools are defined
+as a collection of required properties, while the insertHtml  tool requires a collection of text-value pairs
 
 #### Example
     <kendo:editor>
         <kendo:editor-tools></kendo:editor-tools>
     </kendo:editor>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:editor-tool
 
 A collection of tools that should render a button, combobox, etc, to interact with the Editor. Custom tools are defined
 as a collection of required properties, while the insertHtml  tool requires a collection of text-value pairs
 
-More documentation is available at [kendo:editor-tool](/api/wrappers/jsp/editor/tool).
+More documentation is available at [kendo:editor-tool](editor/tool).
 
 #### Example
 
     <kendo:editor-tools>
         <kendo:editor-tool></kendo:editor-tool>
     </kendo:editor-tools>
- 
+

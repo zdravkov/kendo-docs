@@ -6,37 +6,40 @@ publish: true
 ---
 
 # \<kendo:comboBox-animation\>
-A JSP tag representing Kendo Animation.
+
+Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
 
 #### Example
     <kendo:comboBox>
         <kendo:comboBox-animation></kendo:comboBox-animation>
     </kendo:comboBox>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:comboBox-animation-close
 
 Animation to be used for closing of the popup.
 
-More documentation is available at [kendo:comboBox-animation-close](/api/wrappers/jsp/combobox/animation-close).
+More documentation is available at [kendo:comboBox-animation-close](combobox/animation-close).
 
 #### Example
 
     <kendo:comboBox-animation>
         <kendo:comboBox-animation-close></kendo:comboBox-animation-close>
     </kendo:comboBox-animation>
- 
+
 ### kendo:comboBox-animation-open
 
 Animation to be used for opening of the popup.
 
-More documentation is available at [kendo:comboBox-animation-open](/api/wrappers/jsp/combobox/animation-open).
+More documentation is available at [kendo:comboBox-animation-open](combobox/animation-open).
 
 #### Example
 
     <kendo:comboBox-animation>
         <kendo:comboBox-animation-open></kendo:comboBox-animation-open>
     </kendo:comboBox-animation>
- 
+

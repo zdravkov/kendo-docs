@@ -6,16 +6,31 @@ publish: true
 ---
 
 # \<kendo:grid-column-commandItem\>
-A JSP tag representing Kendo CommandItem.
+
+Definition of command column. The supported built-in commands are: "create", "cancel", "save", "destroy".
 
 #### Example
     <kendo:grid-column-command>
         <kendo:grid-column-commandItem></kendo:grid-column-commandItem>
     </kendo:grid-column-command>
 
-
 ## Configuration Attributes
 
+### className `String`
+
+The CSS class of the command.
+
+#### Example
+    <kendo:grid-column-commandItem className="className">
+    </kendo:grid-column-commandItem>
+
+### click `String`
+
+The JavaScript function executed when the user clicks the command button.
+
+#### Example
+    <kendo:grid-column-commandItem click="click">
+    </kendo:grid-column-commandItem>
 
 ### name `String`
 
@@ -24,8 +39,6 @@ The unique name of the command. The supported built-in commands are: "create", "
 #### Example
     <kendo:grid-column-commandItem name="name">
     </kendo:grid-column-commandItem>
-
-
 
 ### text `String`
 
@@ -36,16 +49,7 @@ The text displayed by the command.
     </kendo:grid-column-commandItem>
 
 
-
-### className `String`
-
-The CSS class of the command.
-
-#### Example
-    <kendo:grid-column-commandItem className="className">
-    </kendo:grid-column-commandItem>
-
-
+## Event Attributes
 
 ### click `String`
 
@@ -60,7 +64,20 @@ The JavaScript function executed when the user clicks the command button.
         }
     </script>
 
+## Event Tags
 
+### kendo:grid-column-commandItem-click
 
-## Child JSP Tags
- 
+The JavaScript function executed when the user clicks the command button.
+
+#### Example
+    <kendo:grid-column-commandItem>
+        <kendo:grid-column-commandItem-click>
+            <script>
+                function(e) {
+                    // Code to handle the click event.
+                }
+            </script>
+        </kendo:grid-column-commandItem-click>
+    </kendo:grid-column-commandItem>
+

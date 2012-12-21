@@ -6,26 +6,15 @@ publish: true
 ---
 
 # \<kendo:menu-animation-open\>
-A JSP tag representing Kendo Open.
+
+The animation that will be used when opening sub menus.
 
 #### Example
     <kendo:menu-animation>
         <kendo:menu-animation-open></kendo:menu-animation-open>
     </kendo:menu-animation>
 
-
 ## Configuration Attributes
-
-
-### effects `String`
-
-Effect to be used for opening of the popup.
-
-#### Example
-    <kendo:menu-animation-open effects="effects">
-    </kendo:menu-animation-open>
-
-
 
 ### duration `float`
 
@@ -35,4 +24,11 @@ Difines the animation duration.
     <kendo:menu-animation-open duration="duration">
     </kendo:menu-animation-open>
 
+### effects `String`
+
+Effect to be used for opening of the popup.
+
+#### Example
+    <kendo:menu-animation-open effects="effects">
+    </kendo:menu-animation-open>
 

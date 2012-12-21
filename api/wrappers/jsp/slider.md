@@ -8,9 +8,7 @@ publish: true
 # \<kendo:slider\>
 A JSP tag representing Kendo Slider.
 
-
 ## Configuration Attributes
-
 
 ### decreaseButtonTitle `String`
 
@@ -20,8 +18,6 @@ The title of the decrease button of the
     <kendo:slider decreaseButtonTitle="decreaseButtonTitle">
     </kendo:slider>
 
-
-
 ### increaseButtonTitle `String`
 
 The title of the increase button of the
@@ -29,8 +25,6 @@ The title of the increase button of the
 #### Example
     <kendo:slider increaseButtonTitle="increaseButtonTitle">
     </kendo:slider>
-
-
 
 ### largeStep `float`
 
@@ -41,8 +35,6 @@ handle must be focused). Note: The allied largeStep will also set large tick for
     <kendo:slider largeStep="largeStep">
     </kendo:slider>
 
-
-
 ### max `float`
 
 The maximum value of the
@@ -50,8 +42,6 @@ The maximum value of the
 #### Example
     <kendo:slider max="max">
     </kendo:slider>
-
-
 
 ### min `float`
 
@@ -61,8 +51,6 @@ The minimum value of the
     <kendo:slider min="min">
     </kendo:slider>
 
-
-
 ### orientation `String`
 
 The orientation of a
@@ -70,8 +58,6 @@ The orientation of a
 #### Example
     <kendo:slider orientation="orientation">
     </kendo:slider>
-
-
 
 ### showButtons `boolean`
 
@@ -81,8 +67,6 @@ Can be used to show (
     <kendo:slider showButtons="showButtons">
     </kendo:slider>
 
-
-
 ### smallStep `float`
 
 The small step value of the
@@ -91,8 +75,6 @@ The small step value of the
     <kendo:slider smallStep="smallStep">
     </kendo:slider>
 
-
-
 ### tickPlacement `String`
 
 Denotes the location of the tick marks in the
@@ -100,8 +82,6 @@ Denotes the location of the tick marks in the
 #### Example
     <kendo:slider tickPlacement="tickPlacement">
     </kendo:slider>
-
-
 
 ### value `float`
 
@@ -112,6 +92,22 @@ The underlying value of the
     </kendo:slider>
 
 
+##  Configuration JSP Tags
+
+### kendo:slider-tooltip
+
+Configuration of the
+
+More documentation is available at [kendo:slider-tooltip](slider/tooltip).
+
+#### Example
+
+    <kendo:slider>
+        <kendo:slider-tooltip></kendo:slider-tooltip>
+    </kendo:slider>
+
+
+## Event Attributes
 
 ### change `String`
 
@@ -126,8 +122,6 @@ Fires when the slider value changes as a result of selecting a new value with th
         }
     </script>
 
-
-
 ### slide `String`
 
 Fires when the user drags the drag handle to a new position.
@@ -140,43 +134,8 @@ Fires when the user drags the drag handle to a new position.
             // Code to handle the slide event.
         }
     </script>
-
-
-
-### Event Attributes
-
-
-### change `String`
-
-Fires when the slider value changes as a result of selecting a new value with the drag handle, buttons or keyboard.
-
-#### Example
-    <kendo:slider change="handle_change">
-    </kendo:slider>
-    <script>
-        function handle_change(e) {
-            // Code to handle the change event.
-        }
-    </script>
-
-
-
-### slide `String`
-
-Fires when the user drags the drag handle to a new position.
-
-#### Example
-    <kendo:slider slide="handle_slide">
-    </kendo:slider>
-    <script>
-        function handle_slide(e) {
-            // Code to handle the slide event.
-        }
-    </script>
-
 
 ## Event Tags
- 
 
 ### kendo:slider-change
 
@@ -193,8 +152,6 @@ Fires when the slider value changes as a result of selecting a new value with th
         </kendo:slider-change>
     </kendo:slider>
 
- 
-
 ### kendo:slider-slide
 
 Fires when the user drags the drag handle to a new position.
@@ -210,19 +167,3 @@ Fires when the user drags the drag handle to a new position.
         </kendo:slider-slide>
     </kendo:slider>
 
- 
-
-## Child JSP Tags
-
-### kendo:slider-tooltip
-
-Configuration of the
-
-More documentation is available at [kendo:slider-tooltip](/api/wrappers/jsp/slider/tooltip).
-
-#### Example
-
-    <kendo:slider>
-        <kendo:slider-tooltip></kendo:slider-tooltip>
-    </kendo:slider>
-   

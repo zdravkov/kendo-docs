@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-pane-title-border\>
-A JSP tag representing Kendo Border.
+
+The border of the title.
 
 #### Example
     <kendo:chart-pane-title>
         <kendo:chart-pane-title-border></kendo:chart-pane-title-border>
     </kendo:chart-pane-title>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -26,8 +25,6 @@ hex and rgb.
     <kendo:chart-pane-title-border color="color">
     </kendo:chart-pane-title-border>
 
-
-
 ### dashType `String`
 
 The dash type of the border.
@@ -36,8 +33,6 @@ The dash type of the border.
     <kendo:chart-pane-title-border dashType="dashType">
     </kendo:chart-pane-title-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -45,5 +40,4 @@ The width of the border.
 #### Example
     <kendo:chart-pane-title-border width="width">
     </kendo:chart-pane-title-border>
-
 

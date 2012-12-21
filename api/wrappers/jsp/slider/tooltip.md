@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:slider-tooltip\>
-A JSP tag representing Kendo Tooltip.
+
+Configuration of the
 
 #### Example
     <kendo:slider>
         <kendo:slider-tooltip></kendo:slider-tooltip>
     </kendo:slider>
 
-
 ## Configuration Attributes
-
 
 ### enabled `boolean`
 
@@ -24,8 +23,6 @@ Disables (
 #### Example
     <kendo:slider-tooltip enabled="enabled">
     </kendo:slider-tooltip>
-
-
 
 ### format `String`
 
@@ -36,8 +33,6 @@ format will also influence the appearance of the
     <kendo:slider-tooltip format="format">
     </kendo:slider-tooltip>
 
-
-
 ### template `String`
 
 Template of the tooltip.
@@ -45,5 +40,4 @@ Template of the tooltip.
 #### Example
     <kendo:slider-tooltip template="template">
     </kendo:slider-tooltip>
-
 

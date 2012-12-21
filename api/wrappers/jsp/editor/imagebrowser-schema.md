@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:editor-imagebrowser-schema\>
-A JSP tag representing Kendo Schema.
+
+Set the object responsible for describing the image raw data format.
 
 #### Example
     <kendo:editor-imagebrowser>
         <kendo:editor-imagebrowser-schema></kendo:editor-imagebrowser-schema>
     </kendo:editor-imagebrowser>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:editor-imagebrowser-schema-model
 
 Set the object which describes the image/directory entry fields. Note that a name, type and size fields should be set.
 
-More documentation is available at [kendo:editor-imagebrowser-schema-model](/api/wrappers/jsp/editor/imagebrowser-schema-model).
+More documentation is available at [kendo:editor-imagebrowser-schema-model](editor/imagebrowser-schema-model).
 
 #### Example
 
     <kendo:editor-imagebrowser-schema>
         <kendo:editor-imagebrowser-schema-model></kendo:editor-imagebrowser-schema-model>
     </kendo:editor-imagebrowser-schema>
- 
+

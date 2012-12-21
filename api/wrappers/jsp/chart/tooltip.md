@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-tooltip\>
-A JSP tag representing Kendo Tooltip.
+
+The data point tooltip configuration options.
 
 #### Example
     <kendo:chart>
         <kendo:chart-tooltip></kendo:chart-tooltip>
     </kendo:chart>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -25,8 +24,6 @@ The background color of the tooltip. The default is determined from the series c
     <kendo:chart-tooltip background="background">
     </kendo:chart-tooltip>
 
-
-
 ### color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
@@ -34,8 +31,6 @@ The text color of the tooltip. The default is the same as the series labels colo
 #### Example
     <kendo:chart-tooltip color="color">
     </kendo:chart-tooltip>
-
-
 
 ### font `String`
 
@@ -45,8 +40,6 @@ The tooltip font.
     <kendo:chart-tooltip font="font">
     </kendo:chart-tooltip>
 
-
-
 ### format `String`
 
 The tooltip format.
@@ -55,17 +48,13 @@ The tooltip format.
     <kendo:chart-tooltip format="format">
     </kendo:chart-tooltip>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the tooltip.
 
 #### Example
     <kendo:chart-tooltip padding="padding">
     </kendo:chart-tooltip>
-
-
 
 ### template `String`
 
@@ -76,8 +65,6 @@ Template variables:
     <kendo:chart-tooltip template="template">
     </kendo:chart-tooltip>
 
-
-
 ### visible `boolean`
 
 A value indicating if the tooltip should be displayed.
@@ -87,18 +74,52 @@ A value indicating if the tooltip should be displayed.
     </kendo:chart-tooltip>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-tooltip-border
 
 The border configuration options.
 
-More documentation is available at [kendo:chart-tooltip-border](/api/wrappers/jsp/chart/tooltip-border).
+More documentation is available at [kendo:chart-tooltip-border](chart/tooltip-border).
 
 #### Example
 
     <kendo:chart-tooltip>
         <kendo:chart-tooltip-border></kendo:chart-tooltip-border>
     </kendo:chart-tooltip>
- 
+
+
+## Event Attributes
+
+### template `String`
+
+The tooltip template.
+Template variables:
+
+#### Example
+    <kendo:chart-tooltip template="handle_template">
+    </kendo:chart-tooltip>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-tooltip-template
+
+The tooltip template.
+Template variables:
+
+#### Example
+    <kendo:chart-tooltip>
+        <kendo:chart-tooltip-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:chart-tooltip-template>
+    </kendo:chart-tooltip>
+

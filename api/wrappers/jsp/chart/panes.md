@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:chart-panes\>
-A JSP tag representing Kendo Panes.
+
+The chart panes configuration.
 
 #### Example
     <kendo:chart>
         <kendo:chart-panes></kendo:chart-panes>
     </kendo:chart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:chart-pane
 
 The chart panes configuration.
 
-More documentation is available at [kendo:chart-pane](/api/wrappers/jsp/chart/pane).
+More documentation is available at [kendo:chart-pane](chart/pane).
 
 #### Example
 
     <kendo:chart-panes>
         <kendo:chart-pane></kendo:chart-pane>
     </kendo:chart-panes>
- 
+

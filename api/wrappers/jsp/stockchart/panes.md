@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:stockChart-panes\>
-A JSP tag representing Kendo Panes.
+
+The chart panes configuration.
 
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-panes></kendo:stockChart-panes>
     </kendo:stockChart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:stockChart-pane
 
 The chart panes configuration.
 
-More documentation is available at [kendo:stockChart-pane](/api/wrappers/jsp/stockchart/pane).
+More documentation is available at [kendo:stockChart-pane](stockchart/pane).
 
 #### Example
 
     <kendo:stockChart-panes>
         <kendo:stockChart-pane></kendo:stockChart-pane>
     </kendo:stockChart-panes>
- 
+

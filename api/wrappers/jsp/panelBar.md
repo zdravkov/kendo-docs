@@ -8,9 +8,7 @@ publish: true
 # \<kendo:panelBar\>
 A JSP tag representing Kendo PanelBar.
 
-
 ## Configuration Attributes
-
 
 ### animation `boolean`
 
@@ -19,8 +17,6 @@ A collection of visual animations used when Further configuration is available v
 #### Example
     <kendo:panelBar animation="animation">
     </kendo:panelBar>
-
-
 
 ### expandMode `String`
 
@@ -31,6 +27,34 @@ Specifies how the
     </kendo:panelBar>
 
 
+##  Configuration JSP Tags
+
+### kendo:panelBar-animation
+
+A collection of visual animations used when
+
+More documentation is available at [kendo:panelBar-animation](panelbar/animation).
+
+#### Example
+
+    <kendo:panelBar>
+        <kendo:panelBar-animation></kendo:panelBar-animation>
+    </kendo:panelBar>
+
+### kendo:panelBar-items
+
+Contains the items of the panelbar widget
+
+More documentation is available at [kendo:panelBar-items](panelbar/items).
+
+#### Example
+
+    <kendo:panelBar>
+        <kendo:panelBar-items></kendo:panelBar-items>
+    </kendo:panelBar>
+
+
+## Event Attributes
 
 ### activate `String`
 
@@ -45,8 +69,6 @@ Triggered when an item of a PanelBar is activated.
         }
     </script>
 
-
-
 ### collapse `String`
 
 Triggered when an item of a PanelBar is collapsed.
@@ -59,8 +81,6 @@ Triggered when an item of a PanelBar is collapsed.
             // Code to handle the collapse event.
         }
     </script>
-
-
 
 ### contentLoad `String`
 
@@ -75,8 +95,6 @@ Fires when content is fetched from an AJAX request.
         }
     </script>
 
-
-
 ### error `String`
 
 Fires when AJAX request results in an error.
@@ -89,8 +107,6 @@ Fires when AJAX request results in an error.
             // Code to handle the error event.
         }
     </script>
-
-
 
 ### expand `String`
 
@@ -105,8 +121,6 @@ Triggered when an item of a PanelBar is expanded.
         }
     </script>
 
-
-
 ### select `String`
 
 Triggered when an item of a PanelBar is selected.
@@ -119,103 +133,8 @@ Triggered when an item of a PanelBar is selected.
             // Code to handle the select event.
         }
     </script>
-
-
-
-### Event Attributes
-
-
-### activate `String`
-
-Triggered when an item of a PanelBar is activated.
-
-#### Example
-    <kendo:panelBar activate="handle_activate">
-    </kendo:panelBar>
-    <script>
-        function handle_activate(e) {
-            // Code to handle the activate event.
-        }
-    </script>
-
-
-
-### collapse `String`
-
-Triggered when an item of a PanelBar is collapsed.
-
-#### Example
-    <kendo:panelBar collapse="handle_collapse">
-    </kendo:panelBar>
-    <script>
-        function handle_collapse(e) {
-            // Code to handle the collapse event.
-        }
-    </script>
-
-
-
-### contentLoad `String`
-
-Fires when content is fetched from an AJAX request.
-
-#### Example
-    <kendo:panelBar contentLoad="handle_contentLoad">
-    </kendo:panelBar>
-    <script>
-        function handle_contentLoad(e) {
-            // Code to handle the contentLoad event.
-        }
-    </script>
-
-
-
-### error `String`
-
-Fires when AJAX request results in an error.
-
-#### Example
-    <kendo:panelBar error="handle_error">
-    </kendo:panelBar>
-    <script>
-        function handle_error(e) {
-            // Code to handle the error event.
-        }
-    </script>
-
-
-
-### expand `String`
-
-Triggered when an item of a PanelBar is expanded.
-
-#### Example
-    <kendo:panelBar expand="handle_expand">
-    </kendo:panelBar>
-    <script>
-        function handle_expand(e) {
-            // Code to handle the expand event.
-        }
-    </script>
-
-
-
-### select `String`
-
-Triggered when an item of a PanelBar is selected.
-
-#### Example
-    <kendo:panelBar select="handle_select">
-    </kendo:panelBar>
-    <script>
-        function handle_select(e) {
-            // Code to handle the select event.
-        }
-    </script>
-
 
 ## Event Tags
-  
 
 ### kendo:panelBar-activate
 
@@ -232,8 +151,6 @@ Triggered when an item of a PanelBar is activated.
         </kendo:panelBar-activate>
     </kendo:panelBar>
 
- 
-
 ### kendo:panelBar-collapse
 
 Triggered when an item of a PanelBar is collapsed.
@@ -248,8 +165,6 @@ Triggered when an item of a PanelBar is collapsed.
             </script>
         </kendo:panelBar-collapse>
     </kendo:panelBar>
-
- 
 
 ### kendo:panelBar-contentLoad
 
@@ -266,8 +181,6 @@ Fires when content is fetched from an AJAX request.
         </kendo:panelBar-contentLoad>
     </kendo:panelBar>
 
- 
-
 ### kendo:panelBar-error
 
 Fires when AJAX request results in an error.
@@ -282,8 +195,6 @@ Fires when AJAX request results in an error.
             </script>
         </kendo:panelBar-error>
     </kendo:panelBar>
-
- 
 
 ### kendo:panelBar-expand
 
@@ -300,8 +211,6 @@ Triggered when an item of a PanelBar is expanded.
         </kendo:panelBar-expand>
     </kendo:panelBar>
 
- 
-
 ### kendo:panelBar-select
 
 Triggered when an item of a PanelBar is selected.
@@ -317,31 +226,3 @@ Triggered when an item of a PanelBar is selected.
         </kendo:panelBar-select>
     </kendo:panelBar>
 
- 
-
-## Child JSP Tags
-
-### kendo:panelBar-animation
-
-A collection of visual animations used when
-
-More documentation is available at [kendo:panelBar-animation](/api/wrappers/jsp/panelbar/animation).
-
-#### Example
-
-    <kendo:panelBar>
-        <kendo:panelBar-animation></kendo:panelBar-animation>
-    </kendo:panelBar>
- 
-### kendo:panelBar-items
-
-Contains items of PanelBar
-
-More documentation is available at [kendo:panelBar-items](/api/wrappers/jsp/panelbar/items).
-
-#### Example
-
-    <kendo:panelBar>
-        <kendo:panelBar-items></kendo:panelBar-items>
-    </kendo:panelBar>
-       

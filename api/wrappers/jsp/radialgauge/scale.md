@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:radialGauge-scale\>
-A JSP tag representing Kendo Scale.
+
+Configures the scale.
 
 #### Example
     <kendo:radialGauge>
         <kendo:radialGauge-scale></kendo:radialGauge-scale>
     </kendo:radialGauge>
 
-
 ## Configuration Attributes
-
 
 ### endAngle `float`
 
@@ -26,8 +25,6 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
     <kendo:radialGauge-scale endAngle="endAngle">
     </kendo:radialGauge-scale>
 
-
-
 ### majorUnit `float`
 
 The interval between major divisions.
@@ -35,8 +32,6 @@ The interval between major divisions.
 #### Example
     <kendo:radialGauge-scale majorUnit="majorUnit">
     </kendo:radialGauge-scale>
-
-
 
 ### max `float`
 
@@ -46,8 +41,6 @@ The maximum value of the scale.
     <kendo:radialGauge-scale max="max">
     </kendo:radialGauge-scale>
 
-
-
 ### min `float`
 
 The minimum value of the scale.
@@ -55,8 +48,6 @@ The minimum value of the scale.
 #### Example
     <kendo:radialGauge-scale min="min">
     </kendo:radialGauge-scale>
-
-
 
 ### minorUnit `float`
 
@@ -66,8 +57,6 @@ The interval between minor divisions.
     <kendo:radialGauge-scale minorUnit="minorUnit">
     </kendo:radialGauge-scale>
 
-
-
 ### reverse `boolean`
 
 Reverses the scale direction - values are increase anticlockwise.
@@ -75,8 +64,6 @@ Reverses the scale direction - values are increase anticlockwise.
 #### Example
     <kendo:radialGauge-scale reverse="reverse">
     </kendo:radialGauge-scale>
-
-
 
 ### startAngle `float`
 
@@ -88,54 +75,53 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
     </kendo:radialGauge-scale>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:radialGauge-scale-labels
 
 Configures the scale labels.
 
-More documentation is available at [kendo:radialGauge-scale-labels](/api/wrappers/jsp/radialgauge/scale-labels).
+More documentation is available at [kendo:radialGauge-scale-labels](radialgauge/scale-labels).
 
 #### Example
 
     <kendo:radialGauge-scale>
         <kendo:radialGauge-scale-labels></kendo:radialGauge-scale-labels>
     </kendo:radialGauge-scale>
- 
+
 ### kendo:radialGauge-scale-majorTicks
 
 Configures the scale major ticks.
 
-More documentation is available at [kendo:radialGauge-scale-majorTicks](/api/wrappers/jsp/radialgauge/scale-majorticks).
+More documentation is available at [kendo:radialGauge-scale-majorTicks](radialgauge/scale-majorticks).
 
 #### Example
 
     <kendo:radialGauge-scale>
         <kendo:radialGauge-scale-majorTicks></kendo:radialGauge-scale-majorTicks>
     </kendo:radialGauge-scale>
- 
+
 ### kendo:radialGauge-scale-minorTicks
 
 Configures the scale minor ticks.
 
-More documentation is available at [kendo:radialGauge-scale-minorTicks](/api/wrappers/jsp/radialgauge/scale-minorticks).
+More documentation is available at [kendo:radialGauge-scale-minorTicks](radialgauge/scale-minorticks).
 
 #### Example
 
     <kendo:radialGauge-scale>
         <kendo:radialGauge-scale-minorTicks></kendo:radialGauge-scale-minorTicks>
     </kendo:radialGauge-scale>
- 
+
 ### kendo:radialGauge-scale-ranges
 
 The ranges of the scale.
 
-More documentation is available at [kendo:radialGauge-scale-ranges](/api/wrappers/jsp/radialgauge/scale-ranges).
+More documentation is available at [kendo:radialGauge-scale-ranges](radialgauge/scale-ranges).
 
 #### Example
 
     <kendo:radialGauge-scale>
         <kendo:radialGauge-scale-ranges></kendo:radialGauge-scale-ranges>
     </kendo:radialGauge-scale>
- 
+

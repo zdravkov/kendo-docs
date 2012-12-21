@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-valueAxisItem-line\>
-A JSP tag representing Kendo Line.
+
+Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
 
 #### Example
     <kendo:chart-valueAxisItem>
         <kendo:chart-valueAxisItem-line></kendo:chart-valueAxisItem-line>
     </kendo:chart-valueAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -26,8 +25,6 @@ not the grid lines.
     <kendo:chart-valueAxisItem-line color="color">
     </kendo:chart-valueAxisItem-line>
 
-
-
 ### dashType `String`
 
 The dash type of the line.
@@ -35,8 +32,6 @@ The dash type of the line.
 #### Example
     <kendo:chart-valueAxisItem-line dashType="dashType">
     </kendo:chart-valueAxisItem-line>
-
-
 
 ### visible `boolean`
 
@@ -46,8 +41,6 @@ The visibility of the line.
     <kendo:chart-valueAxisItem-line visible="visible">
     </kendo:chart-valueAxisItem-line>
 
-
-
 ### width `float`
 
 The width of the line. This will also effect the major and minor ticks, but
@@ -56,5 +49,4 @@ not the grid lines.
 #### Example
     <kendo:chart-valueAxisItem-line width="width">
     </kendo:chart-valueAxisItem-line>
-
 

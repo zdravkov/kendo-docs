@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:stockChart-valueAxis\>
-A JSP tag representing Kendo ValueAxis.
+
+The value axis configuration options.
 
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-valueAxis></kendo:stockChart-valueAxis>
     </kendo:stockChart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:stockChart-valueAxisItem
 
 The value axis configuration options.
 
-More documentation is available at [kendo:stockChart-valueAxisItem](/api/wrappers/jsp/stockchart/valueaxisitem).
+More documentation is available at [kendo:stockChart-valueAxisItem](stockchart/valueaxisitem).
 
 #### Example
 
     <kendo:stockChart-valueAxis>
         <kendo:stockChart-valueAxisItem></kendo:stockChart-valueAxisItem>
     </kendo:stockChart-valueAxis>
- 
+

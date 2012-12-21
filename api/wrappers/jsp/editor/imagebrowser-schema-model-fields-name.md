@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:editor-imagebrowser-schema-model-fields-name\>
-A JSP tag representing Kendo Name.
+
+The field which contains the name of the image/directory
 
 #### Example
     <kendo:editor-imagebrowser-schema-model-fields>
         <kendo:editor-imagebrowser-schema-model-fields-name></kendo:editor-imagebrowser-schema-model-fields-name>
     </kendo:editor-imagebrowser-schema-model-fields>
 
-
 ## Configuration Attributes
-
 
 ### field `String`
 
@@ -25,7 +24,16 @@ The name of the field.
     <kendo:editor-imagebrowser-schema-model-fields-name field="field">
     </kendo:editor-imagebrowser-schema-model-fields-name>
 
+### parse `String`
 
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+#### Example
+    <kendo:editor-imagebrowser-schema-model-fields-name parse="parse">
+    </kendo:editor-imagebrowser-schema-model-fields-name>
+
+
+## Event Attributes
 
 ### parse `String`
 
@@ -40,7 +48,20 @@ Specifies the function which will parse the field value. If not set default pars
         }
     </script>
 
+## Event Tags
 
+### kendo:editor-imagebrowser-schema-model-fields-name-parse
 
-## Child JSP Tags
- 
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+#### Example
+    <kendo:editor-imagebrowser-schema-model-fields-name>
+        <kendo:editor-imagebrowser-schema-model-fields-name-parse>
+            <script>
+                function(e) {
+                    // Code to handle the parse event.
+                }
+            </script>
+        </kendo:editor-imagebrowser-schema-model-fields-name-parse>
+    </kendo:editor-imagebrowser-schema-model-fields-name>
+

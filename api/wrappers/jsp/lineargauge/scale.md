@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:linearGauge-scale\>
-A JSP tag representing Kendo Scale.
+
+Configures the scale.
 
 #### Example
     <kendo:linearGauge>
         <kendo:linearGauge-scale></kendo:linearGauge-scale>
     </kendo:linearGauge>
 
-
 ## Configuration Attributes
-
 
 ### majorUnit `float`
 
@@ -25,8 +24,6 @@ The interval between major divisions.
     <kendo:linearGauge-scale majorUnit="majorUnit">
     </kendo:linearGauge-scale>
 
-
-
 ### max `float`
 
 The maximum value of the scale.
@@ -34,8 +31,6 @@ The maximum value of the scale.
 #### Example
     <kendo:linearGauge-scale max="max">
     </kendo:linearGauge-scale>
-
-
 
 ### min `float`
 
@@ -45,8 +40,6 @@ The minimum value of the scale.
     <kendo:linearGauge-scale min="min">
     </kendo:linearGauge-scale>
 
-
-
 ### minorUnit `float`
 
 The interval between minor divisions.
@@ -54,8 +47,6 @@ The interval between minor divisions.
 #### Example
     <kendo:linearGauge-scale minorUnit="minorUnit">
     </kendo:linearGauge-scale>
-
-
 
 ### mirror `boolean`
 
@@ -66,8 +57,6 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
     <kendo:linearGauge-scale mirror="mirror">
     </kendo:linearGauge-scale>
 
-
-
 ### reverse `boolean`
 
 Reverses the axis direction - values increase from right to left and from top to bottom.
@@ -75,8 +64,6 @@ Reverses the axis direction - values increase from right to left and from top to
 #### Example
     <kendo:linearGauge-scale reverse="reverse">
     </kendo:linearGauge-scale>
-
-
 
 ### vertical `boolean`
 
@@ -87,66 +74,65 @@ The position of the gauge.
     </kendo:linearGauge-scale>
 
 
+##  Configuration JSP Tags
 
-## Child JSP Tags
-
-### kendo:linearGauge-scale-line
-
-Configures the axis line.
-
-More documentation is available at [kendo:linearGauge-scale-line](/api/wrappers/jsp/lineargauge/scale-line).
-
-#### Example
-
-    <kendo:linearGauge-scale>
-        <kendo:linearGauge-scale-line></kendo:linearGauge-scale-line>
-    </kendo:linearGauge-scale>
- 
 ### kendo:linearGauge-scale-labels
 
 Configures the scale labels.
 
-More documentation is available at [kendo:linearGauge-scale-labels](/api/wrappers/jsp/lineargauge/scale-labels).
+More documentation is available at [kendo:linearGauge-scale-labels](lineargauge/scale-labels).
 
 #### Example
 
     <kendo:linearGauge-scale>
         <kendo:linearGauge-scale-labels></kendo:linearGauge-scale-labels>
     </kendo:linearGauge-scale>
- 
+
+### kendo:linearGauge-scale-line
+
+Configures the axis line.
+
+More documentation is available at [kendo:linearGauge-scale-line](lineargauge/scale-line).
+
+#### Example
+
+    <kendo:linearGauge-scale>
+        <kendo:linearGauge-scale-line></kendo:linearGauge-scale-line>
+    </kendo:linearGauge-scale>
+
 ### kendo:linearGauge-scale-majorTicks
 
 Configures the scale major ticks.
 
-More documentation is available at [kendo:linearGauge-scale-majorTicks](/api/wrappers/jsp/lineargauge/scale-majorticks).
+More documentation is available at [kendo:linearGauge-scale-majorTicks](lineargauge/scale-majorticks).
 
 #### Example
 
     <kendo:linearGauge-scale>
         <kendo:linearGauge-scale-majorTicks></kendo:linearGauge-scale-majorTicks>
     </kendo:linearGauge-scale>
- 
+
 ### kendo:linearGauge-scale-minorTicks
 
 Configures the scale minor ticks.
 
-More documentation is available at [kendo:linearGauge-scale-minorTicks](/api/wrappers/jsp/lineargauge/scale-minorticks).
+More documentation is available at [kendo:linearGauge-scale-minorTicks](lineargauge/scale-minorticks).
 
 #### Example
 
     <kendo:linearGauge-scale>
         <kendo:linearGauge-scale-minorTicks></kendo:linearGauge-scale-minorTicks>
     </kendo:linearGauge-scale>
- 
+
 ### kendo:linearGauge-scale-ranges
 
 The ranges of the scale.
 
-More documentation is available at [kendo:linearGauge-scale-ranges](/api/wrappers/jsp/lineargauge/scale-ranges).
+More documentation is available at [kendo:linearGauge-scale-ranges](lineargauge/scale-ranges).
 
 #### Example
 
     <kendo:linearGauge-scale>
         <kendo:linearGauge-scale-ranges></kendo:linearGauge-scale-ranges>
     </kendo:linearGauge-scale>
- 
+

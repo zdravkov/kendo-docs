@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-yAxisItem-labels-border\>
-A JSP tag representing Kendo Border.
+
+The border of the labels.
 
 #### Example
     <kendo:chart-yAxisItem-labels>
         <kendo:chart-yAxisItem-labels-border></kendo:chart-yAxisItem-labels-border>
     </kendo:chart-yAxisItem-labels>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -26,8 +25,6 @@ hex and rgb.
     <kendo:chart-yAxisItem-labels-border color="color">
     </kendo:chart-yAxisItem-labels-border>
 
-
-
 ### dashType `String`
 
 The dash type of the border.
@@ -36,8 +33,6 @@ The dash type of the border.
     <kendo:chart-yAxisItem-labels-border dashType="dashType">
     </kendo:chart-yAxisItem-labels-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -45,5 +40,4 @@ The width of the border.
 #### Example
     <kendo:chart-yAxisItem-labels-border width="width">
     </kendo:chart-yAxisItem-labels-border>
-
 

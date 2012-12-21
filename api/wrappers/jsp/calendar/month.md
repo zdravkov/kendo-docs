@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:calendar-month\>
-A JSP tag representing Kendo Month.
+
+Templates for the cells rendered in the "month" view.
 
 #### Example
     <kendo:calendar>
         <kendo:calendar-month></kendo:calendar-month>
     </kendo:calendar>
 
-
 ## Configuration Attributes
-
 
 ### content `String`
 
@@ -25,8 +24,6 @@ Template to be used for rendering the cells in the "month" view, which are in ra
     <kendo:calendar-month content="content">
     </kendo:calendar-month>
 
-
-
 ### empty `String`
 
 Template to be used for rendering the cells in the "month" view, which are not in the min/max range.
@@ -34,5 +31,4 @@ Template to be used for rendering the cells in the "month" view, which are not i
 #### Example
     <kendo:calendar-month empty="empty">
     </kendo:calendar-month>
-
 

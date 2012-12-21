@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:dataSource-filter\>
-A JSP tag representing Kendo Filter.
+
+Sets the initial filter.
 
 #### Example
     <kendo:dataSource>
         <kendo:dataSource-filter></kendo:dataSource-filter>
     </kendo:dataSource>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:dataSource-filterItem
 
 Sets the initial filter.
 
-More documentation is available at [kendo:dataSource-filterItem](/api/wrappers/jsp/datasource/filteritem).
+More documentation is available at [kendo:dataSource-filterItem](datasource/filteritem).
 
 #### Example
 
     <kendo:dataSource-filter>
         <kendo:dataSource-filterItem></kendo:dataSource-filterItem>
     </kendo:dataSource-filter>
- 
+

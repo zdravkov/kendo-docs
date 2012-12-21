@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:chart-categoryAxis\>
-A JSP tag representing Kendo CategoryAxis.
+
+The category axis configuration options.
 
 #### Example
     <kendo:chart>
         <kendo:chart-categoryAxis></kendo:chart-categoryAxis>
     </kendo:chart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:chart-categoryAxisItem
 
 The category axis configuration options.
 
-More documentation is available at [kendo:chart-categoryAxisItem](/api/wrappers/jsp/chart/categoryaxisitem).
+More documentation is available at [kendo:chart-categoryAxisItem](chart/categoryaxisitem).
 
 #### Example
 
     <kendo:chart-categoryAxis>
         <kendo:chart-categoryAxisItem></kendo:chart-categoryAxisItem>
     </kendo:chart-categoryAxis>
- 
+

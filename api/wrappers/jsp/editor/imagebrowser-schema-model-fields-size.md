@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:editor-imagebrowser-schema-model-fields-size\>
-A JSP tag representing Kendo Size.
+
+The field which contains the size of image.
 
 #### Example
     <kendo:editor-imagebrowser-schema-model-fields>
         <kendo:editor-imagebrowser-schema-model-fields-size></kendo:editor-imagebrowser-schema-model-fields-size>
     </kendo:editor-imagebrowser-schema-model-fields>
 
-
 ## Configuration Attributes
-
 
 ### field `String`
 
@@ -25,7 +24,16 @@ The name of the field.
     <kendo:editor-imagebrowser-schema-model-fields-size field="field">
     </kendo:editor-imagebrowser-schema-model-fields-size>
 
+### parse `String`
 
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+#### Example
+    <kendo:editor-imagebrowser-schema-model-fields-size parse="parse">
+    </kendo:editor-imagebrowser-schema-model-fields-size>
+
+
+## Event Attributes
 
 ### parse `String`
 
@@ -40,7 +48,20 @@ Specifies the function which will parse the field value. If not set default pars
         }
     </script>
 
+## Event Tags
 
+### kendo:editor-imagebrowser-schema-model-fields-size-parse
 
-## Child JSP Tags
- 
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+#### Example
+    <kendo:editor-imagebrowser-schema-model-fields-size>
+        <kendo:editor-imagebrowser-schema-model-fields-size-parse>
+            <script>
+                function(e) {
+                    // Code to handle the parse event.
+                }
+            </script>
+        </kendo:editor-imagebrowser-schema-model-fields-size-parse>
+    </kendo:editor-imagebrowser-schema-model-fields-size>
+

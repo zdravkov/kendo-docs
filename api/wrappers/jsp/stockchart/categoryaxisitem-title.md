@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-categoryAxisItem-title\>
-A JSP tag representing Kendo Title.
+
+The title of the category axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem>
         <kendo:stockChart-categoryAxisItem-title></kendo:stockChart-categoryAxisItem-title>
     </kendo:stockChart-categoryAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ hex and rgb.
     <kendo:stockChart-categoryAxisItem-title background="background">
     </kendo:stockChart-categoryAxisItem-title>
 
-
-
 ### color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
@@ -35,8 +32,6 @@ The text color of the title. Any valid CSS color string will work here, includin
 #### Example
     <kendo:stockChart-categoryAxisItem-title color="color">
     </kendo:stockChart-categoryAxisItem-title>
-
-
 
 ### font `String`
 
@@ -46,17 +41,13 @@ The font style of the title.
     <kendo:stockChart-categoryAxisItem-title font="font">
     </kendo:stockChart-categoryAxisItem-title>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the title.
 
 #### Example
     <kendo:stockChart-categoryAxisItem-title margin="margin">
     </kendo:stockChart-categoryAxisItem-title>
-
-
 
 ### position `String`
 
@@ -66,8 +57,6 @@ The position of the title.
     <kendo:stockChart-categoryAxisItem-title position="position">
     </kendo:stockChart-categoryAxisItem-title>
 
-
-
 ### rotation `float`
 
 The rotation angle of the title.
@@ -76,8 +65,6 @@ The rotation angle of the title.
     <kendo:stockChart-categoryAxisItem-title rotation="rotation">
     </kendo:stockChart-categoryAxisItem-title>
 
-
-
 ### text `String`
 
 The text of the title.
@@ -85,8 +72,6 @@ The text of the title.
 #### Example
     <kendo:stockChart-categoryAxisItem-title text="text">
     </kendo:stockChart-categoryAxisItem-title>
-
-
 
 ### visible `boolean`
 
@@ -97,18 +82,17 @@ The visibility of the title.
     </kendo:stockChart-categoryAxisItem-title>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:stockChart-categoryAxisItem-title-border
 
 The border of the title.
 
-More documentation is available at [kendo:stockChart-categoryAxisItem-title-border](/api/wrappers/jsp/stockchart/categoryaxisitem-title-border).
+More documentation is available at [kendo:stockChart-categoryAxisItem-title-border](stockchart/categoryaxisitem-title-border).
 
 #### Example
 
     <kendo:stockChart-categoryAxisItem-title>
         <kendo:stockChart-categoryAxisItem-title-border></kendo:stockChart-categoryAxisItem-title-border>
     </kendo:stockChart-categoryAxisItem-title>
- 
+

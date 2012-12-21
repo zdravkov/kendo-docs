@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-tooltip-border\>
-A JSP tag representing Kendo Border.
+
+The border configuration options.
 
 #### Example
     <kendo:chart-tooltip>
         <kendo:chart-tooltip-border></kendo:chart-tooltip-border>
     </kendo:chart-tooltip>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the border.
     <kendo:chart-tooltip-border color="color">
     </kendo:chart-tooltip-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -34,5 +31,4 @@ The width of the border.
 #### Example
     <kendo:chart-tooltip-border width="width">
     </kendo:chart-tooltip-border>
-
 

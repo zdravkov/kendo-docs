@@ -8,9 +8,7 @@ publish: true
 # \<kendo:splitter\>
 A JSP tag representing Kendo Splitter.
 
-
 ## Configuration Attributes
-
 
 ### orientation `String`
 
@@ -21,6 +19,22 @@ Specifies the orientation of the
     </kendo:splitter>
 
 
+##  Configuration JSP Tags
+
+### kendo:splitter-panes
+
+An array of pane definitions.
+
+More documentation is available at [kendo:splitter-panes](splitter/panes).
+
+#### Example
+
+    <kendo:splitter>
+        <kendo:splitter-panes></kendo:splitter-panes>
+    </kendo:splitter>
+
+
+## Event Attributes
 
 ### collapse `String`
 
@@ -35,8 +49,6 @@ Triggered when a pane of a Splitter is collapsed.
         }
     </script>
 
-
-
 ### contentLoad `String`
 
 Triggered when the content for a pane has finished loading.
@@ -49,8 +61,6 @@ Triggered when the content for a pane has finished loading.
             // Code to handle the contentLoad event.
         }
     </script>
-
-
 
 ### expand `String`
 
@@ -65,8 +75,6 @@ Triggered when a pane of a Splitter is expanded.
         }
     </script>
 
-
-
 ### layoutChange `String`
 
 Fires when the splitter layout has changed
@@ -80,8 +88,6 @@ Fires when the splitter layout has changed
         }
     </script>
 
-
-
 ### resize `String`
 
 Triggered when a pane is resized.
@@ -94,88 +100,8 @@ Triggered when a pane is resized.
             // Code to handle the resize event.
         }
     </script>
-
-
-
-### Event Attributes
-
-
-### collapse `String`
-
-Triggered when a pane of a Splitter is collapsed.
-
-#### Example
-    <kendo:splitter collapse="handle_collapse">
-    </kendo:splitter>
-    <script>
-        function handle_collapse(e) {
-            // Code to handle the collapse event.
-        }
-    </script>
-
-
-
-### contentLoad `String`
-
-Triggered when the content for a pane has finished loading.
-
-#### Example
-    <kendo:splitter contentLoad="handle_contentLoad">
-    </kendo:splitter>
-    <script>
-        function handle_contentLoad(e) {
-            // Code to handle the contentLoad event.
-        }
-    </script>
-
-
-
-### expand `String`
-
-Triggered when a pane of a Splitter is expanded.
-
-#### Example
-    <kendo:splitter expand="handle_expand">
-    </kendo:splitter>
-    <script>
-        function handle_expand(e) {
-            // Code to handle the expand event.
-        }
-    </script>
-
-
-
-### layoutChange `String`
-
-Fires when the splitter layout has changed
-
-#### Example
-    <kendo:splitter layoutChange="handle_layoutChange">
-    </kendo:splitter>
-    <script>
-        function handle_layoutChange(e) {
-            // Code to handle the layoutChange event.
-        }
-    </script>
-
-
-
-### resize `String`
-
-Triggered when a pane is resized.
-
-#### Example
-    <kendo:splitter resize="handle_resize">
-    </kendo:splitter>
-    <script>
-        function handle_resize(e) {
-            // Code to handle the resize event.
-        }
-    </script>
-
 
 ## Event Tags
- 
 
 ### kendo:splitter-collapse
 
@@ -192,8 +118,6 @@ Triggered when a pane of a Splitter is collapsed.
         </kendo:splitter-collapse>
     </kendo:splitter>
 
- 
-
 ### kendo:splitter-contentLoad
 
 Triggered when the content for a pane has finished loading.
@@ -208,8 +132,6 @@ Triggered when the content for a pane has finished loading.
             </script>
         </kendo:splitter-contentLoad>
     </kendo:splitter>
-
- 
 
 ### kendo:splitter-expand
 
@@ -226,8 +148,6 @@ Triggered when a pane of a Splitter is expanded.
         </kendo:splitter-expand>
     </kendo:splitter>
 
- 
-
 ### kendo:splitter-layoutChange
 
 Fires when the splitter layout has changed
@@ -242,8 +162,6 @@ Fires when the splitter layout has changed
             </script>
         </kendo:splitter-layoutChange>
     </kendo:splitter>
-
- 
 
 ### kendo:splitter-resize
 
@@ -260,19 +178,3 @@ Triggered when a pane is resized.
         </kendo:splitter-resize>
     </kendo:splitter>
 
- 
-
-## Child JSP Tags
-
-### kendo:splitter-panes
-
-An array of pane definitions.
-
-More documentation is available at [kendo:splitter-panes](/api/wrappers/jsp/splitter/panes).
-
-#### Example
-
-    <kendo:splitter>
-        <kendo:splitter-panes></kendo:splitter-panes>
-    </kendo:splitter>
-      

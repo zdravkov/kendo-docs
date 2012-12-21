@@ -6,37 +6,40 @@ publish: true
 ---
 
 # \<kendo:autoComplete-animation\>
-A JSP tag representing Kendo Animation.
+
+Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 
 #### Example
     <kendo:autoComplete>
         <kendo:autoComplete-animation></kendo:autoComplete-animation>
     </kendo:autoComplete>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:autoComplete-animation-close
 
 Animation to be used for closing of the popup.
 
-More documentation is available at [kendo:autoComplete-animation-close](/api/wrappers/jsp/autocomplete/animation-close).
+More documentation is available at [kendo:autoComplete-animation-close](autocomplete/animation-close).
 
 #### Example
 
     <kendo:autoComplete-animation>
         <kendo:autoComplete-animation-close></kendo:autoComplete-animation-close>
     </kendo:autoComplete-animation>
- 
+
 ### kendo:autoComplete-animation-open
 
 Animation to be used for opening of the popup.
 
-More documentation is available at [kendo:autoComplete-animation-open](/api/wrappers/jsp/autocomplete/animation-open).
+More documentation is available at [kendo:autoComplete-animation-open](autocomplete/animation-open).
 
 #### Example
 
     <kendo:autoComplete-animation>
         <kendo:autoComplete-animation-open></kendo:autoComplete-animation-open>
     </kendo:autoComplete-animation>
- 
+

@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:linearGauge-scale-line\>
-A JSP tag representing Kendo Line.
+
+Configures the axis line.
 
 #### Example
     <kendo:linearGauge-scale>
         <kendo:linearGauge-scale-line></kendo:linearGauge-scale-line>
     </kendo:linearGauge-scale>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the lines. Any valid CSS color string will work here, including hex
     <kendo:linearGauge-scale-line color="color">
     </kendo:linearGauge-scale-line>
 
-
-
 ### dashType `String`
 
 The dash type of the line.
@@ -34,8 +31,6 @@ The dash type of the line.
 #### Example
     <kendo:linearGauge-scale-line dashType="dashType">
     </kendo:linearGauge-scale-line>
-
-
 
 ### visible `boolean`
 
@@ -45,8 +40,6 @@ The visibility of the lines.
     <kendo:linearGauge-scale-line visible="visible">
     </kendo:linearGauge-scale-line>
 
-
-
 ### width `float`
 
 The width of the line..
@@ -54,5 +47,4 @@ The width of the line..
 #### Example
     <kendo:linearGauge-scale-line width="width">
     </kendo:linearGauge-scale-line>
-
 

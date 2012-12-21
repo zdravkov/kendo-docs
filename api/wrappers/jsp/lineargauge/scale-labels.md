@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:linearGauge-scale-labels\>
-A JSP tag representing Kendo Labels.
+
+Configures the scale labels.
 
 #### Example
     <kendo:linearGauge-scale>
         <kendo:linearGauge-scale-labels></kendo:linearGauge-scale-labels>
     </kendo:linearGauge-scale>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ Any valid CSS color string will work here, including hex and rgb
     <kendo:linearGauge-scale-labels background="background">
     </kendo:linearGauge-scale-labels>
 
-
-
 ### color `String`
 
 The text color of the labels.
@@ -37,8 +34,6 @@ Any valid CSS color string will work here, including hex and rgb.
     <kendo:linearGauge-scale-labels color="color">
     </kendo:linearGauge-scale-labels>
 
-
-
 ### font `String`
 
 The font style of the labels.
@@ -46,8 +41,6 @@ The font style of the labels.
 #### Example
     <kendo:linearGauge-scale-labels font="font">
     </kendo:linearGauge-scale-labels>
-
-
 
 ### format `String`
 
@@ -57,9 +50,7 @@ The format of the labels.
     <kendo:linearGauge-scale-labels format="format">
     </kendo:linearGauge-scale-labels>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the labels.
 
@@ -67,17 +58,13 @@ The margin of the labels.
     <kendo:linearGauge-scale-labels margin="margin">
     </kendo:linearGauge-scale-labels>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the labels.
 
 #### Example
     <kendo:linearGauge-scale-labels padding="padding">
     </kendo:linearGauge-scale-labels>
-
-
 
 ### template `String`
 
@@ -88,8 +75,6 @@ Template variables:
     <kendo:linearGauge-scale-labels template="template">
     </kendo:linearGauge-scale-labels>
 
-
-
 ### visible `boolean`
 
 The visibility of the labels.
@@ -99,18 +84,52 @@ The visibility of the labels.
     </kendo:linearGauge-scale-labels>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:linearGauge-scale-labels-border
 
 The border of the labels.
 
-More documentation is available at [kendo:linearGauge-scale-labels-border](/api/wrappers/jsp/lineargauge/scale-labels-border).
+More documentation is available at [kendo:linearGauge-scale-labels-border](lineargauge/scale-labels-border).
 
 #### Example
 
     <kendo:linearGauge-scale-labels>
         <kendo:linearGauge-scale-labels-border></kendo:linearGauge-scale-labels-border>
     </kendo:linearGauge-scale-labels>
- 
+
+
+## Event Attributes
+
+### template `String`
+
+The label template.
+Template variables:
+
+#### Example
+    <kendo:linearGauge-scale-labels template="handle_template">
+    </kendo:linearGauge-scale-labels>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:linearGauge-scale-labels-template
+
+The label template.
+Template variables:
+
+#### Example
+    <kendo:linearGauge-scale-labels>
+        <kendo:linearGauge-scale-labels-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:linearGauge-scale-labels-template>
+    </kendo:linearGauge-scale-labels>
+

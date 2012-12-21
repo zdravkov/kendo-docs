@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-yAxisItem-line\>
-A JSP tag representing Kendo Line.
+
+Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
 
 #### Example
     <kendo:stockChart-yAxisItem>
         <kendo:stockChart-yAxisItem-line></kendo:stockChart-yAxisItem-line>
     </kendo:stockChart-yAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -26,8 +25,6 @@ not the grid lines.
     <kendo:stockChart-yAxisItem-line color="color">
     </kendo:stockChart-yAxisItem-line>
 
-
-
 ### dashType `String`
 
 The dash type of the line.
@@ -35,8 +32,6 @@ The dash type of the line.
 #### Example
     <kendo:stockChart-yAxisItem-line dashType="dashType">
     </kendo:stockChart-yAxisItem-line>
-
-
 
 ### visible `boolean`
 
@@ -46,8 +41,6 @@ The visibility of the line.
     <kendo:stockChart-yAxisItem-line visible="visible">
     </kendo:stockChart-yAxisItem-line>
 
-
-
 ### width `float`
 
 The width of the line. This will also effect the major and minor ticks, but
@@ -56,5 +49,4 @@ not the grid lines.
 #### Example
     <kendo:stockChart-yAxisItem-line width="width">
     </kendo:stockChart-yAxisItem-line>
-
 

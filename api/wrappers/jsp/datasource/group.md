@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:dataSource-group\>
-A JSP tag representing Kendo Group.
+
+Sets initial grouping
 
 #### Example
     <kendo:dataSource>
         <kendo:dataSource-group></kendo:dataSource-group>
     </kendo:dataSource>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:dataSource-groupItem
 
 Sets initial grouping
 
-More documentation is available at [kendo:dataSource-groupItem](/api/wrappers/jsp/datasource/groupitem).
+More documentation is available at [kendo:dataSource-groupItem](datasource/groupitem).
 
 #### Example
 
     <kendo:dataSource-group>
         <kendo:dataSource-groupItem></kendo:dataSource-groupItem>
     </kendo:dataSource-group>
- 
+

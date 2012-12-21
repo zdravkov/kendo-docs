@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:editor-imagebrowser\>
-A JSP tag representing Kendo Imagebrowser.
+
+Configuration for image browser dialog.
 
 #### Example
     <kendo:editor>
         <kendo:editor-imagebrowser></kendo:editor-imagebrowser>
     </kendo:editor>
 
-
 ## Configuration Attributes
-
 
 ### fileTypes `String`
 
@@ -25,43 +24,50 @@ Defines the allowed file extensions.
     <kendo:editor-imagebrowser fileTypes="fileTypes">
     </kendo:editor-imagebrowser>
 
+### path `String`
 
-
-## Child JSP Tags
-
-### kendo:editor-imagebrowser-transport
-
-Specifies the settings for loading and saving data.
-
-More documentation is available at [kendo:editor-imagebrowser-transport](/api/wrappers/jsp/editor/imagebrowser-transport).
+Defines the initial folder to display, relative to the root.
 
 #### Example
-
-    <kendo:editor-imagebrowser>
-        <kendo:editor-imagebrowser-transport></kendo:editor-imagebrowser-transport>
+    <kendo:editor-imagebrowser path="path">
     </kendo:editor-imagebrowser>
- 
-### kendo:editor-imagebrowser-schema
 
-Set the object responsible for describing the image raw data format.
 
-More documentation is available at [kendo:editor-imagebrowser-schema](/api/wrappers/jsp/editor/imagebrowser-schema).
+##  Configuration JSP Tags
 
-#### Example
-
-    <kendo:editor-imagebrowser>
-        <kendo:editor-imagebrowser-schema></kendo:editor-imagebrowser-schema>
-    </kendo:editor-imagebrowser>
- 
 ### kendo:editor-imagebrowser-messages
 
 Defines texts shown within the pager.
 
-More documentation is available at [kendo:editor-imagebrowser-messages](/api/wrappers/jsp/editor/imagebrowser-messages).
+More documentation is available at [kendo:editor-imagebrowser-messages](editor/imagebrowser-messages).
 
 #### Example
 
     <kendo:editor-imagebrowser>
         <kendo:editor-imagebrowser-messages></kendo:editor-imagebrowser-messages>
     </kendo:editor-imagebrowser>
- 
+
+### kendo:editor-imagebrowser-schema
+
+Set the object responsible for describing the image raw data format.
+
+More documentation is available at [kendo:editor-imagebrowser-schema](editor/imagebrowser-schema).
+
+#### Example
+
+    <kendo:editor-imagebrowser>
+        <kendo:editor-imagebrowser-schema></kendo:editor-imagebrowser-schema>
+    </kendo:editor-imagebrowser>
+
+### kendo:editor-imagebrowser-transport
+
+Specifies the settings for loading and saving data.
+
+More documentation is available at [kendo:editor-imagebrowser-transport](editor/imagebrowser-transport).
+
+#### Example
+
+    <kendo:editor-imagebrowser>
+        <kendo:editor-imagebrowser-transport></kendo:editor-imagebrowser-transport>
+    </kendo:editor-imagebrowser>
+

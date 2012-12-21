@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-tooltip\>
-A JSP tag representing Kendo Tooltip.
+
+The data point tooltip configuration options.
 
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-tooltip></kendo:stockChart-tooltip>
     </kendo:stockChart>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -25,8 +24,6 @@ The background color of the tooltip. The default is determined from the series c
     <kendo:stockChart-tooltip background="background">
     </kendo:stockChart-tooltip>
 
-
-
 ### color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
@@ -34,8 +31,6 @@ The text color of the tooltip. The default is the same as the series labels colo
 #### Example
     <kendo:stockChart-tooltip color="color">
     </kendo:stockChart-tooltip>
-
-
 
 ### font `String`
 
@@ -45,8 +40,6 @@ The tooltip font.
     <kendo:stockChart-tooltip font="font">
     </kendo:stockChart-tooltip>
 
-
-
 ### format `String`
 
 The tooltip format.
@@ -55,17 +48,13 @@ The tooltip format.
     <kendo:stockChart-tooltip format="format">
     </kendo:stockChart-tooltip>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the tooltip.
 
 #### Example
     <kendo:stockChart-tooltip padding="padding">
     </kendo:stockChart-tooltip>
-
-
 
 ### template `String`
 
@@ -76,8 +65,6 @@ Template variables:
     <kendo:stockChart-tooltip template="template">
     </kendo:stockChart-tooltip>
 
-
-
 ### visible `boolean`
 
 A value indicating if the tooltip should be displayed.
@@ -87,18 +74,52 @@ A value indicating if the tooltip should be displayed.
     </kendo:stockChart-tooltip>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:stockChart-tooltip-border
 
 The border configuration options.
 
-More documentation is available at [kendo:stockChart-tooltip-border](/api/wrappers/jsp/stockchart/tooltip-border).
+More documentation is available at [kendo:stockChart-tooltip-border](stockchart/tooltip-border).
 
 #### Example
 
     <kendo:stockChart-tooltip>
         <kendo:stockChart-tooltip-border></kendo:stockChart-tooltip-border>
     </kendo:stockChart-tooltip>
- 
+
+
+## Event Attributes
+
+### template `String`
+
+The tooltip template.
+Template variables:
+
+#### Example
+    <kendo:stockChart-tooltip template="handle_template">
+    </kendo:stockChart-tooltip>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:stockChart-tooltip-template
+
+The tooltip template.
+Template variables:
+
+#### Example
+    <kendo:stockChart-tooltip>
+        <kendo:stockChart-tooltip-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:stockChart-tooltip-template>
+    </kendo:stockChart-tooltip>
+

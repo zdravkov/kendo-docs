@@ -6,43 +6,37 @@ publish: true
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-line\>
-A JSP tag representing Kendo Line.
+
+Line options.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem>
         <kendo:stockChart-navigator-seriesItem-line></kendo:stockChart-navigator-seriesItem-line>
     </kendo:stockChart-navigator-seriesItem>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
-The line color of the area chart.
+The line color.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem-line color="color">
     </kendo:stockChart-navigator-seriesItem-line>
 
-
-
 ### opacity `float`
 
-The line opacity of the area chart.
+The line opacity.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem-line opacity="opacity">
     </kendo:stockChart-navigator-seriesItem-line>
 
-
-
 ### width `String`
 
-The line width of the area chart.
+The line width.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem-line width="width">
     </kendo:stockChart-navigator-seriesItem-line>
-
 

@@ -6,26 +6,23 @@ publish: true
 ---
 
 # \<kendo:grid-editable\>
-A JSP tag representing Kendo Editable.
+
+Indicates whether editing is enabled/disabled.
 
 #### Example
     <kendo:grid>
         <kendo:grid-editable></kendo:grid-editable>
     </kendo:grid>
 
-
 ## Configuration Attributes
 
-
-### confirmation `boolean`
+### confirmation `Object`
 
 Defines the text that will be used in confirmation box when delete an item.
 
 #### Example
     <kendo:grid-editable confirmation="confirmation">
     </kendo:grid-editable>
-
-
 
 ### destroy `boolean`
 
@@ -35,8 +32,6 @@ Indicates whether item should be deleted when click on delete button.
     <kendo:grid-editable destroy="destroy">
     </kendo:grid-editable>
 
-
-
 ### mode `String`
 
 Indicates which of the available edit modes(incell(default)/inline/popup) will be used
@@ -44,8 +39,6 @@ Indicates which of the available edit modes(incell(default)/inline/popup) will b
 #### Example
     <kendo:grid-editable mode="mode">
     </kendo:grid-editable>
-
-
 
 ### template `String`
 
@@ -55,8 +48,6 @@ Template which will be use during popup editing
     <kendo:grid-editable template="template">
     </kendo:grid-editable>
 
-
-
 ### update `boolean`
 
 Indicates whether item should be switched to edit mode on click.
@@ -64,5 +55,4 @@ Indicates whether item should be switched to edit mode on click.
 #### Example
     <kendo:grid-editable update="update">
     </kendo:grid-editable>
-
 

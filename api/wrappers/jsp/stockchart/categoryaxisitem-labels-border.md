@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-categoryAxisItem-labels-border\>
-A JSP tag representing Kendo Border.
+
+The border of the labels.
 
 #### Example
     <kendo:stockChart-categoryAxisItem-labels>
         <kendo:stockChart-categoryAxisItem-labels-border></kendo:stockChart-categoryAxisItem-labels-border>
     </kendo:stockChart-categoryAxisItem-labels>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the border. Any valid CSS color string will work here, including he
     <kendo:stockChart-categoryAxisItem-labels-border color="color">
     </kendo:stockChart-categoryAxisItem-labels-border>
 
-
-
 ### dashType `String`
 
 The dash type of the border.
@@ -35,8 +32,6 @@ The dash type of the border.
     <kendo:stockChart-categoryAxisItem-labels-border dashType="dashType">
     </kendo:stockChart-categoryAxisItem-labels-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -44,5 +39,4 @@ The width of the border.
 #### Example
     <kendo:stockChart-categoryAxisItem-labels-border width="width">
     </kendo:stockChart-categoryAxisItem-labels-border>
-
 

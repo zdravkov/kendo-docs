@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-xAxisItem-labels\>
-A JSP tag representing Kendo Labels.
+
+Configures the axis labels.
 
 #### Example
     <kendo:stockChart-xAxisItem>
         <kendo:stockChart-xAxisItem-labels></kendo:stockChart-xAxisItem-labels>
     </kendo:stockChart-xAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ hex and rgb
     <kendo:stockChart-xAxisItem-labels background="background">
     </kendo:stockChart-xAxisItem-labels>
 
-
-
 ### color `String`
 
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
@@ -36,7 +33,21 @@ The text color of the labels. Any valid CSS color string will work here, includi
     <kendo:stockChart-xAxisItem-labels color="color">
     </kendo:stockChart-xAxisItem-labels>
 
+### culture `String`
 
+Culture to use for formatting the dates. See
+
+#### Example
+    <kendo:stockChart-xAxisItem-labels culture="culture">
+    </kendo:stockChart-xAxisItem-labels>
+
+### dateFormats `Object`
+
+Date format strings
+
+#### Example
+    <kendo:stockChart-xAxisItem-labels dateFormats="dateFormats">
+    </kendo:stockChart-xAxisItem-labels>
 
 ### font `String`
 
@@ -46,8 +57,6 @@ The font style of the labels.
     <kendo:stockChart-xAxisItem-labels font="font">
     </kendo:stockChart-xAxisItem-labels>
 
-
-
 ### format `String`
 
 The format of the labels.
@@ -56,17 +65,13 @@ The format of the labels.
     <kendo:stockChart-xAxisItem-labels format="format">
     </kendo:stockChart-xAxisItem-labels>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the labels.
 
 #### Example
     <kendo:stockChart-xAxisItem-labels margin="margin">
     </kendo:stockChart-xAxisItem-labels>
-
-
 
 ### mirror `boolean`
 
@@ -78,17 +83,13 @@ mirroring the axis will render them to the right.
     <kendo:stockChart-xAxisItem-labels mirror="mirror">
     </kendo:stockChart-xAxisItem-labels>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the labels.
 
 #### Example
     <kendo:stockChart-xAxisItem-labels padding="padding">
     </kendo:stockChart-xAxisItem-labels>
-
-
 
 ### rotation `float`
 
@@ -97,8 +98,6 @@ The rotation angle of the labels.
 #### Example
     <kendo:stockChart-xAxisItem-labels rotation="rotation">
     </kendo:stockChart-xAxisItem-labels>
-
-
 
 ### skip `float`
 
@@ -109,8 +108,6 @@ Skips rendering the first n labels.
     <kendo:stockChart-xAxisItem-labels skip="skip">
     </kendo:stockChart-xAxisItem-labels>
 
-
-
 ### step `float`
 
 Label rendering step.
@@ -120,8 +117,6 @@ Every n-th label is rendered where n is the step
     <kendo:stockChart-xAxisItem-labels step="step">
     </kendo:stockChart-xAxisItem-labels>
 
-
-
 ### template `String`
 
 The label template.
@@ -129,8 +124,6 @@ The label template.
 #### Example
     <kendo:stockChart-xAxisItem-labels template="template">
     </kendo:stockChart-xAxisItem-labels>
-
-
 
 ### visible `boolean`
 
@@ -141,38 +134,50 @@ The visibility of the labels.
     </kendo:stockChart-xAxisItem-labels>
 
 
-
-### culture `String`
-
-Culture to use for formatting the dates. See
-
-#### Example
-    <kendo:stockChart-xAxisItem-labels culture="culture">
-    </kendo:stockChart-xAxisItem-labels>
-
-
-
-### dateFormats `Object`
-
-Date format strings
-
-#### Example
-    <kendo:stockChart-xAxisItem-labels dateFormats="dateFormats">
-    </kendo:stockChart-xAxisItem-labels>
-
-
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:stockChart-xAxisItem-labels-border
 
 The border of the labels.
 
-More documentation is available at [kendo:stockChart-xAxisItem-labels-border](/api/wrappers/jsp/stockchart/xaxisitem-labels-border).
+More documentation is available at [kendo:stockChart-xAxisItem-labels-border](stockchart/xaxisitem-labels-border).
 
 #### Example
 
     <kendo:stockChart-xAxisItem-labels>
         <kendo:stockChart-xAxisItem-labels-border></kendo:stockChart-xAxisItem-labels-border>
     </kendo:stockChart-xAxisItem-labels>
- 
+
+
+## Event Attributes
+
+### template `String`
+
+The label template.
+
+#### Example
+    <kendo:stockChart-xAxisItem-labels template="handle_template">
+    </kendo:stockChart-xAxisItem-labels>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:stockChart-xAxisItem-labels-template
+
+The label template.
+
+#### Example
+    <kendo:stockChart-xAxisItem-labels>
+        <kendo:stockChart-xAxisItem-labels-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:stockChart-xAxisItem-labels-template>
+    </kendo:stockChart-xAxisItem-labels>
+

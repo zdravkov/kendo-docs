@@ -6,16 +6,16 @@ publish: true
 ---
 
 # \<kendo:radialGauge-gaugeArea\>
-A JSP tag representing Kendo GaugeArea.
+
+The gauge area configuration options.
+This is the entire visible area of the gauge.
 
 #### Example
     <kendo:radialGauge>
         <kendo:radialGauge-gaugeArea></kendo:radialGauge-gaugeArea>
     </kendo:radialGauge>
 
-
 ## Configuration Attributes
-
 
 ### background `Object`
 
@@ -26,8 +26,6 @@ Any valid CSS color string will work here, including hex and rgb.
     <kendo:radialGauge-gaugeArea background="background">
     </kendo:radialGauge-gaugeArea>
 
-
-
 ### height `float`
 
 The height of the gauge area.
@@ -36,17 +34,13 @@ The height of the gauge area.
     <kendo:radialGauge-gaugeArea height="height">
     </kendo:radialGauge-gaugeArea>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the gauge area.
 
 #### Example
     <kendo:radialGauge-gaugeArea margin="margin">
     </kendo:radialGauge-gaugeArea>
-
-
 
 ### width `float`
 
@@ -57,18 +51,17 @@ The width of the gauge area.
     </kendo:radialGauge-gaugeArea>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:radialGauge-gaugeArea-border
 
 The border of the gauge area.
 
-More documentation is available at [kendo:radialGauge-gaugeArea-border](/api/wrappers/jsp/radialgauge/gaugearea-border).
+More documentation is available at [kendo:radialGauge-gaugeArea-border](radialgauge/gaugearea-border).
 
 #### Example
 
     <kendo:radialGauge-gaugeArea>
         <kendo:radialGauge-gaugeArea-border></kendo:radialGauge-gaugeArea-border>
     </kendo:radialGauge-gaugeArea>
- 
+

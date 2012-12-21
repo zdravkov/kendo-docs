@@ -6,26 +6,15 @@ publish: true
 ---
 
 # \<kendo:dateTimePicker-animation-open\>
-A JSP tag representing Kendo Open.
+
+The animation(s) used for displaying of the pop-up.
 
 #### Example
     <kendo:dateTimePicker-animation>
         <kendo:dateTimePicker-animation-open></kendo:dateTimePicker-animation-open>
     </kendo:dateTimePicker-animation>
 
-
 ## Configuration Attributes
-
-
-### effects `String`
-
-Effect to be used for opening of the popup.
-
-#### Example
-    <kendo:dateTimePicker-animation-open effects="effects">
-    </kendo:dateTimePicker-animation-open>
-
-
 
 ### duration `float`
 
@@ -35,4 +24,11 @@ Difines the animation duration.
     <kendo:dateTimePicker-animation-open duration="duration">
     </kendo:dateTimePicker-animation-open>
 
+### effects `String`
+
+Effect to be used for opening of the popup.
+
+#### Example
+    <kendo:dateTimePicker-animation-open effects="effects">
+    </kendo:dateTimePicker-animation-open>
 

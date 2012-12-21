@@ -6,56 +6,15 @@ publish: true
 ---
 
 # \<kendo:treeView-item\>
-A JSP tag representing Kendo Item.
+
+Contains the items of the treeview widget
 
 #### Example
     <kendo:treeView-items>
         <kendo:treeView-item></kendo:treeView-item>
     </kendo:treeView-items>
 
-
 ## Configuration Attributes
-
-
-### text `String`
-
-Specifies the text displayed by the item
-
-#### Example
-    <kendo:treeView-item text="text">
-    </kendo:treeView-item>
-
-
-
-### imageUrl `String`
-
-Specifies the URL of the image displayed by the item
-
-#### Example
-    <kendo:treeView-item imageUrl="imageUrl">
-    </kendo:treeView-item>
-
-
-
-### spriteCssClass `String`
-
-Specifies the class name for the sprite image displayed by the item
-
-#### Example
-    <kendo:treeView-item spriteCssClass="spriteCssClass">
-    </kendo:treeView-item>
-
-
-
-### expanded `boolean`
-
-Specifies whether the item is initially expanded
-
-#### Example
-    <kendo:treeView-item expanded="expanded">
-    </kendo:treeView-item>
-
-
 
 ### enabled `boolean`
 
@@ -65,7 +24,21 @@ Specifies whether the item is initially enabled
     <kendo:treeView-item enabled="enabled">
     </kendo:treeView-item>
 
+### expanded `boolean`
 
+Specifies whether the item is initially expanded
+
+#### Example
+    <kendo:treeView-item expanded="expanded">
+    </kendo:treeView-item>
+
+### imageUrl `String`
+
+Specifies the URL of the image displayed by the item
+
+#### Example
+    <kendo:treeView-item imageUrl="imageUrl">
+    </kendo:treeView-item>
 
 ### selected `boolean`
 
@@ -75,4 +48,19 @@ Specifies whether the item is initially selected
     <kendo:treeView-item selected="selected">
     </kendo:treeView-item>
 
+### spriteCssClass `String`
+
+Specifies the class name for the sprite image displayed by the item
+
+#### Example
+    <kendo:treeView-item spriteCssClass="spriteCssClass">
+    </kendo:treeView-item>
+
+### text `String`
+
+Specifies the text displayed by the item
+
+#### Example
+    <kendo:treeView-item text="text">
+    </kendo:treeView-item>
 

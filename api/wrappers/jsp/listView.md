@@ -8,9 +8,15 @@ publish: true
 # \<kendo:listView\>
 A JSP tag representing Kendo ListView.
 
-
 ## Configuration Attributes
 
+### altTemplate `String`
+
+Template to be used for rendering the alternate items in the listview.
+
+#### Example
+    <kendo:listView altTemplate="altTemplate">
+    </kendo:listView>
 
 ### autoBind `boolean`
 
@@ -20,7 +26,13 @@ Indicates whether the list view will call read on the DataSource initially.
     <kendo:listView autoBind="autoBind">
     </kendo:listView>
 
+### editTemplate `String`
 
+Specifies ListView item template in edit mode.
+
+#### Example
+    <kendo:listView editTemplate="editTemplate">
+    </kendo:listView>
 
 ### navigatable `boolean`
 
@@ -30,7 +42,13 @@ Indicates whether keyboard navigation is enabled/disabled.
     <kendo:listView navigatable="navigatable">
     </kendo:listView>
 
+### pageable `boolean`
 
+Indicates whether paging is enabled/disabled.
+
+#### Example
+    <kendo:listView pageable="pageable">
+    </kendo:listView>
 
 ### selectable `String`
 
@@ -40,7 +58,13 @@ Indicates whether selection is enabled/disabled. Possible values:
     <kendo:listView selectable="selectable">
     </kendo:listView>
 
+### tagName `String`
 
+Specifies ListView wrapper element tag name.
+
+#### Example
+    <kendo:listView tagName="tagName">
+    </kendo:listView>
 
 ### template `String`
 
@@ -51,46 +75,7 @@ The id of the template used for rendering the items in the listview.
     </kendo:listView>
 
 
-
-### pageable `boolean`
-
-Indicates whether paging is enabled/disabled.
-
-#### Example
-    <kendo:listView pageable="pageable">
-    </kendo:listView>
-
-
-
-### editTemplate `String`
-
-Specifies ListView item template in edit mode.
-
-#### Example
-    <kendo:listView editTemplate="editTemplate">
-    </kendo:listView>
-
-
-
-### altTemplate `String`
-
-Template to be used for rendering the alternate items in the listview.
-
-#### Example
-    <kendo:listView altTemplate="altTemplate">
-    </kendo:listView>
-
-
-
-### tagName `String`
-
-Specifies ListView wrapper element tag name.
-
-#### Example
-    <kendo:listView tagName="tagName">
-    </kendo:listView>
-
-
+## Event Attributes
 
 ### change `String`
 
@@ -104,8 +89,6 @@ Fires when the list view selection has changed.
             // Code to handle the change event.
         }
     </script>
-
-
 
 ### dataBound `String`
 
@@ -121,7 +104,18 @@ and is about to render it.
         }
     </script>
 
+### dataBinding `String`
 
+Fires when the grid is about to be rendered.
+
+#### Example
+    <kendo:listView dataBinding="handle_dataBinding">
+    </kendo:listView>
+    <script>
+        function handle_dataBinding(e) {
+            // Code to handle the dataBinding event.
+        }
+    </script>
 
 ### edit `String`
 
@@ -136,8 +130,6 @@ Fires when the list view enters edit mode.
         }
     </script>
 
-
-
 ### remove `String`
 
 Fires before the list view item is removed.
@@ -150,74 +142,8 @@ Fires before the list view item is removed.
             // Code to handle the remove event.
         }
     </script>
-
-
-
-### Event Attributes
-
-
-### change `String`
-
-Fires when the list view selection has changed.
-
-#### Example
-    <kendo:listView change="handle_change">
-    </kendo:listView>
-    <script>
-        function handle_change(e) {
-            // Code to handle the change event.
-        }
-    </script>
-
-
-
-### dataBound `String`
-
-Fires when the list view has received data from the data source.
-and is about to render it.
-
-#### Example
-    <kendo:listView dataBound="handle_dataBound">
-    </kendo:listView>
-    <script>
-        function handle_dataBound(e) {
-            // Code to handle the dataBound event.
-        }
-    </script>
-
-
-
-### edit `String`
-
-Fires when the list view enters edit mode.
-
-#### Example
-    <kendo:listView edit="handle_edit">
-    </kendo:listView>
-    <script>
-        function handle_edit(e) {
-            // Code to handle the edit event.
-        }
-    </script>
-
-
-
-### remove `String`
-
-Fires before the list view item is removed.
-
-#### Example
-    <kendo:listView remove="handle_remove">
-    </kendo:listView>
-    <script>
-        function handle_remove(e) {
-            // Code to handle the remove event.
-        }
-    </script>
-
 
 ## Event Tags
-
 
 ### kendo:listView-change
 
@@ -233,8 +159,6 @@ Fires when the list view selection has changed.
             </script>
         </kendo:listView-change>
     </kendo:listView>
-
- 
 
 ### kendo:listView-dataBound
 
@@ -252,7 +176,20 @@ and is about to render it.
         </kendo:listView-dataBound>
     </kendo:listView>
 
- 
+### kendo:listView-dataBinding
+
+Fires when the grid is about to be rendered.
+
+#### Example
+    <kendo:listView>
+        <kendo:listView-dataBinding>
+            <script>
+                function(e) {
+                    // Code to handle the dataBinding event.
+                }
+            </script>
+        </kendo:listView-dataBinding>
+    </kendo:listView>
 
 ### kendo:listView-edit
 
@@ -269,8 +206,6 @@ Fires when the list view enters edit mode.
         </kendo:listView-edit>
     </kendo:listView>
 
- 
-
 ### kendo:listView-remove
 
 Fires before the list view item is removed.
@@ -286,7 +221,3 @@ Fires before the list view item is removed.
         </kendo:listView-remove>
     </kendo:listView>
 
- 
-
-## Child JSP Tags
-    

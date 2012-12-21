@@ -6,46 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-pane\>
-A JSP tag representing Kendo Pane.
+
+The chart panes configuration.
 
 #### Example
     <kendo:chart-panes>
         <kendo:chart-pane></kendo:chart-pane>
     </kendo:chart-panes>
 
-
 ## Configuration Attributes
-
-
-### name `String`
-
-The unique pane name.
-
-#### Example
-    <kendo:chart-pane name="name">
-    </kendo:chart-pane>
-
-
-
-### margin `float`
-
-The margin of the pane.
-
-#### Example
-    <kendo:chart-pane margin="margin">
-    </kendo:chart-pane>
-
-
-
-### padding `float`
-
-The padding of the pane.
-
-#### Example
-    <kendo:chart-pane padding="padding">
-    </kendo:chart-pane>
-
-
 
 ### background `String`
 
@@ -55,8 +24,6 @@ The background color of the pane.
     <kendo:chart-pane background="background">
     </kendo:chart-pane>
 
-
-
 ### height `float`
 
 The pane height in pixels.
@@ -65,7 +32,29 @@ The pane height in pixels.
     <kendo:chart-pane height="height">
     </kendo:chart-pane>
 
+### margin `Object`
 
+The margin of the pane.
+
+#### Example
+    <kendo:chart-pane margin="margin">
+    </kendo:chart-pane>
+
+### name `String`
+
+The unique pane name.
+
+#### Example
+    <kendo:chart-pane name="name">
+    </kendo:chart-pane>
+
+### padding `Object`
+
+The padding of the pane.
+
+#### Example
+    <kendo:chart-pane padding="padding">
+    </kendo:chart-pane>
 
 ### title `String`
 
@@ -76,30 +65,29 @@ The pane title text or configuration. Further configuration is available via [ke
     </kendo:chart-pane>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-pane-border
 
 The border of the pane.
 
-More documentation is available at [kendo:chart-pane-border](/api/wrappers/jsp/chart/pane-border).
+More documentation is available at [kendo:chart-pane-border](chart/pane-border).
 
 #### Example
 
     <kendo:chart-pane>
         <kendo:chart-pane-border></kendo:chart-pane-border>
     </kendo:chart-pane>
- 
+
 ### kendo:chart-pane-title
 
 The pane title text or configuration.
 
-More documentation is available at [kendo:chart-pane-title](/api/wrappers/jsp/chart/pane-title).
+More documentation is available at [kendo:chart-pane-title](chart/pane-title).
 
 #### Example
 
     <kendo:chart-pane>
         <kendo:chart-pane-title></kendo:chart-pane-title>
     </kendo:chart-pane>
- 
+

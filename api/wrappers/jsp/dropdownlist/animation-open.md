@@ -6,26 +6,15 @@ publish: true
 ---
 
 # \<kendo:dropDownList-animation-open\>
-A JSP tag representing Kendo Open.
+
+Animation to be used for opening of the popup.
 
 #### Example
     <kendo:dropDownList-animation>
         <kendo:dropDownList-animation-open></kendo:dropDownList-animation-open>
     </kendo:dropDownList-animation>
 
-
 ## Configuration Attributes
-
-
-### effects `String`
-
-Effect to be used for opening of the popup.
-
-#### Example
-    <kendo:dropDownList-animation-open effects="effects">
-    </kendo:dropDownList-animation-open>
-
-
 
 ### duration `float`
 
@@ -35,4 +24,11 @@ Difines the animation duration.
     <kendo:dropDownList-animation-open duration="duration">
     </kendo:dropDownList-animation-open>
 
+### effects `String`
+
+Effect to be used for opening of the popup.
+
+#### Example
+    <kendo:dropDownList-animation-open effects="effects">
+    </kendo:dropDownList-animation-open>
 

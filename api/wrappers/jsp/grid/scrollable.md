@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:grid-scrollable\>
-A JSP tag representing Kendo Scrollable.
+
+Enable/disable grid scrolling.
 
 #### Example
     <kendo:grid>
         <kendo:grid-scrollable></kendo:grid-scrollable>
     </kendo:grid>
 
-
 ## Configuration Attributes
-
 
 ### virtual `boolean`
 
@@ -24,5 +23,4 @@ Enable/disable virtual scrolling. When enabled the grid will display only a sing
 #### Example
     <kendo:grid-scrollable virtual="virtual">
     </kendo:grid-scrollable>
-
 

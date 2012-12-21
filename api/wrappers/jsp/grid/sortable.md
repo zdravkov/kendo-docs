@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:grid-sortable\>
-A JSP tag representing Kendo Sortable.
+
+Defines whether grid columns are sortable.
 
 #### Example
     <kendo:grid>
         <kendo:grid-sortable></kendo:grid-sortable>
     </kendo:grid>
 
-
 ## Configuration Attributes
-
 
 ### allowUnsort `boolean`
 
@@ -25,8 +24,6 @@ Defines whether column can have unsorted state.
     <kendo:grid-sortable allowUnsort="allowUnsort">
     </kendo:grid-sortable>
 
-
-
 ### mode `String`
 
 Defines sorting mode. Possible values:
@@ -34,5 +31,4 @@ Defines sorting mode. Possible values:
 #### Example
     <kendo:grid-sortable mode="mode">
     </kendo:grid-sortable>
-
 

@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:stockChart-navigator-series\>
-A JSP tag representing Kendo Series.
+
+Array of series definitions.
 
 #### Example
     <kendo:stockChart-navigator>
         <kendo:stockChart-navigator-series></kendo:stockChart-navigator-series>
     </kendo:stockChart-navigator>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:stockChart-navigator-seriesItem
 
 Array of series definitions.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem](/api/wrappers/jsp/stockchart/navigator-seriesitem).
+More documentation is available at [kendo:stockChart-navigator-seriesItem](stockchart/navigator-seriesitem).
 
 #### Example
 
     <kendo:stockChart-navigator-series>
         <kendo:stockChart-navigator-seriesItem></kendo:stockChart-navigator-seriesItem>
     </kendo:stockChart-navigator-series>
- 
+

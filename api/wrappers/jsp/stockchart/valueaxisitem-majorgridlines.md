@@ -6,16 +6,16 @@ publish: true
 ---
 
 # \<kendo:stockChart-valueAxisItem-majorGridLines\>
-A JSP tag representing Kendo MajorGridLines.
+
+Configures the major grid lines. These are the lines that are an extension of the major ticks through the
+body of the chart.
 
 #### Example
     <kendo:stockChart-valueAxisItem>
         <kendo:stockChart-valueAxisItem-majorGridLines></kendo:stockChart-valueAxisItem-majorGridLines>
     </kendo:stockChart-valueAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +25,6 @@ The color of the lines.
     <kendo:stockChart-valueAxisItem-majorGridLines color="color">
     </kendo:stockChart-valueAxisItem-majorGridLines>
 
-
-
 ### visible `boolean`
 
 The visibility of the lines.
@@ -35,8 +33,6 @@ The visibility of the lines.
     <kendo:stockChart-valueAxisItem-majorGridLines visible="visible">
     </kendo:stockChart-valueAxisItem-majorGridLines>
 
-
-
 ### width `float`
 
 The width of the lines.
@@ -44,5 +40,4 @@ The width of the lines.
 #### Example
     <kendo:stockChart-valueAxisItem-majorGridLines width="width">
     </kendo:stockChart-valueAxisItem-majorGridLines>
-
 

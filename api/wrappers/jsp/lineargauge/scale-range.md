@@ -6,46 +6,15 @@ publish: true
 ---
 
 # \<kendo:linearGauge-scale-range\>
-A JSP tag representing Kendo Range.
+
+The ranges of the scale.
 
 #### Example
     <kendo:linearGauge-scale-ranges>
         <kendo:linearGauge-scale-range></kendo:linearGauge-scale-range>
     </kendo:linearGauge-scale-ranges>
 
-
 ## Configuration Attributes
-
-
-### from `float`
-
-The start position of the range in scale units.
-
-#### Example
-    <kendo:linearGauge-scale-range from="from">
-    </kendo:linearGauge-scale-range>
-
-
-
-### to `float`
-
-The end position of the range in scale units.
-
-#### Example
-    <kendo:linearGauge-scale-range to="to">
-    </kendo:linearGauge-scale-range>
-
-
-
-### opacity `float`
-
-The opacity of the range.
-
-#### Example
-    <kendo:linearGauge-scale-range opacity="opacity">
-    </kendo:linearGauge-scale-range>
-
-
 
 ### color `String`
 
@@ -56,4 +25,27 @@ Any valid CSS color string will work here, including hex and rgb.
     <kendo:linearGauge-scale-range color="color">
     </kendo:linearGauge-scale-range>
 
+### from `float`
+
+The start position of the range in scale units.
+
+#### Example
+    <kendo:linearGauge-scale-range from="from">
+    </kendo:linearGauge-scale-range>
+
+### opacity `float`
+
+The opacity of the range.
+
+#### Example
+    <kendo:linearGauge-scale-range opacity="opacity">
+    </kendo:linearGauge-scale-range>
+
+### to `float`
+
+The end position of the range in scale units.
+
+#### Example
+    <kendo:linearGauge-scale-range to="to">
+    </kendo:linearGauge-scale-range>
 

@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:tabStrip-animation-open\>
-A JSP tag representing Kendo Open.
+
+The visual animation(s) that will be used when the new tab is shown.
 
 #### Example
     <kendo:tabStrip-animation>
         <kendo:tabStrip-animation-open></kendo:tabStrip-animation-open>
     </kendo:tabStrip-animation>
 
-
 ## Configuration Attributes
-
 
 ### duration `float`
 
@@ -25,8 +24,6 @@ The number of milliseconds used for the visual animation when a new tab is shown
     <kendo:tabStrip-animation-open duration="duration">
     </kendo:tabStrip-animation-open>
 
-
-
 ### effects `String`
 
 A whitespace-separated string of animation effects that are used when a new tab is shown. Options include
@@ -35,8 +32,6 @@ A whitespace-separated string of animation effects that are used when a new tab 
     <kendo:tabStrip-animation-open effects="effects">
     </kendo:tabStrip-animation-open>
 
-
-
 ### show `boolean`
 
 Specifies whether the TabStrip should be able to collapse completely when clicking an expanded tab.
@@ -44,5 +39,4 @@ Specifies whether the TabStrip should be able to collapse completely when clicki
 #### Example
     <kendo:tabStrip-animation-open show="show">
     </kendo:tabStrip-animation-open>
-
 

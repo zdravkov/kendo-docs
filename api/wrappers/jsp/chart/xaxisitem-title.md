@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-xAxisItem-title\>
-A JSP tag representing Kendo Title.
+
+The title of the value axis.
 
 #### Example
     <kendo:chart-xAxisItem>
         <kendo:chart-xAxisItem-title></kendo:chart-xAxisItem-title>
     </kendo:chart-xAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ hex and rgb.
     <kendo:chart-xAxisItem-title background="background">
     </kendo:chart-xAxisItem-title>
 
-
-
 ### color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
@@ -35,8 +32,6 @@ The text color of the title. Any valid CSS color string will work here, includin
 #### Example
     <kendo:chart-xAxisItem-title color="color">
     </kendo:chart-xAxisItem-title>
-
-
 
 ### font `String`
 
@@ -46,9 +41,7 @@ The font style of the title.
     <kendo:chart-xAxisItem-title font="font">
     </kendo:chart-xAxisItem-title>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the title.
 
@@ -56,17 +49,13 @@ The margin of the title.
     <kendo:chart-xAxisItem-title margin="margin">
     </kendo:chart-xAxisItem-title>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the title.
 
 #### Example
     <kendo:chart-xAxisItem-title padding="padding">
     </kendo:chart-xAxisItem-title>
-
-
 
 ### position `String`
 
@@ -76,8 +65,6 @@ The position of the title.
     <kendo:chart-xAxisItem-title position="position">
     </kendo:chart-xAxisItem-title>
 
-
-
 ### rotation `float`
 
 The rotation angle of the title.
@@ -86,8 +73,6 @@ The rotation angle of the title.
     <kendo:chart-xAxisItem-title rotation="rotation">
     </kendo:chart-xAxisItem-title>
 
-
-
 ### text `String`
 
 The text of the title.
@@ -95,8 +80,6 @@ The text of the title.
 #### Example
     <kendo:chart-xAxisItem-title text="text">
     </kendo:chart-xAxisItem-title>
-
-
 
 ### visible `boolean`
 
@@ -107,18 +90,17 @@ The visibility of the title.
     </kendo:chart-xAxisItem-title>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-xAxisItem-title-border
 
 The border of the title.
 
-More documentation is available at [kendo:chart-xAxisItem-title-border](/api/wrappers/jsp/chart/xaxisitem-title-border).
+More documentation is available at [kendo:chart-xAxisItem-title-border](chart/xaxisitem-title-border).
 
 #### Example
 
     <kendo:chart-xAxisItem-title>
         <kendo:chart-xAxisItem-title-border></kendo:chart-xAxisItem-title-border>
     </kendo:chart-xAxisItem-title>
- 
+

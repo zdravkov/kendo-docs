@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:editor-imagebrowser-schema-model\>
-A JSP tag representing Kendo Model.
+
+Set the object which describes the image/directory entry fields. Note that a name, type and size fields should be set.
 
 #### Example
     <kendo:editor-imagebrowser-schema>
         <kendo:editor-imagebrowser-schema-model></kendo:editor-imagebrowser-schema-model>
     </kendo:editor-imagebrowser-schema>
 
-
 ## Configuration Attributes
-
 
 ### id `String`
 
@@ -26,18 +25,17 @@ The name of the field which acts as an identifier.
     </kendo:editor-imagebrowser-schema-model>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:editor-imagebrowser-schema-model-fields
 
 The field which contains the name of the image/directory
 
-More documentation is available at [kendo:editor-imagebrowser-schema-model-fields](/api/wrappers/jsp/editor/imagebrowser-schema-model-fields).
+More documentation is available at [kendo:editor-imagebrowser-schema-model-fields](editor/imagebrowser-schema-model-fields).
 
 #### Example
 
     <kendo:editor-imagebrowser-schema-model>
         <kendo:editor-imagebrowser-schema-model-fields></kendo:editor-imagebrowser-schema-model-fields>
     </kendo:editor-imagebrowser-schema-model>
- 
+

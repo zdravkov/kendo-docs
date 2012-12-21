@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-valueAxisItem-title\>
-A JSP tag representing Kendo Title.
+
+The title of the value axis.
 
 #### Example
     <kendo:stockChart-valueAxisItem>
         <kendo:stockChart-valueAxisItem-title></kendo:stockChart-valueAxisItem-title>
     </kendo:stockChart-valueAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ hex and rgb.
     <kendo:stockChart-valueAxisItem-title background="background">
     </kendo:stockChart-valueAxisItem-title>
 
-
-
 ### color `String`
 
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
@@ -35,8 +32,6 @@ The text color of the title. Any valid CSS color string will work here, includin
 #### Example
     <kendo:stockChart-valueAxisItem-title color="color">
     </kendo:stockChart-valueAxisItem-title>
-
-
 
 ### font `String`
 
@@ -46,9 +41,7 @@ The font style of the title.
     <kendo:stockChart-valueAxisItem-title font="font">
     </kendo:stockChart-valueAxisItem-title>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the title.
 
@@ -56,17 +49,13 @@ The margin of the title.
     <kendo:stockChart-valueAxisItem-title margin="margin">
     </kendo:stockChart-valueAxisItem-title>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the title.
 
 #### Example
     <kendo:stockChart-valueAxisItem-title padding="padding">
     </kendo:stockChart-valueAxisItem-title>
-
-
 
 ### position `String`
 
@@ -76,8 +65,6 @@ The position of the title.
     <kendo:stockChart-valueAxisItem-title position="position">
     </kendo:stockChart-valueAxisItem-title>
 
-
-
 ### rotation `float`
 
 The rotation angle of the title.
@@ -86,8 +73,6 @@ The rotation angle of the title.
     <kendo:stockChart-valueAxisItem-title rotation="rotation">
     </kendo:stockChart-valueAxisItem-title>
 
-
-
 ### text `String`
 
 The text of the title.
@@ -95,8 +80,6 @@ The text of the title.
 #### Example
     <kendo:stockChart-valueAxisItem-title text="text">
     </kendo:stockChart-valueAxisItem-title>
-
-
 
 ### visible `boolean`
 
@@ -107,18 +90,17 @@ The visibility of the title.
     </kendo:stockChart-valueAxisItem-title>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:stockChart-valueAxisItem-title-border
 
 The border of the title.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-title-border](/api/wrappers/jsp/stockchart/valueaxisitem-title-border).
+More documentation is available at [kendo:stockChart-valueAxisItem-title-border](stockchart/valueaxisitem-title-border).
 
 #### Example
 
     <kendo:stockChart-valueAxisItem-title>
         <kendo:stockChart-valueAxisItem-title-border></kendo:stockChart-valueAxisItem-title-border>
     </kendo:stockChart-valueAxisItem-title>
- 
+

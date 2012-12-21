@@ -6,26 +6,15 @@ publish: true
 ---
 
 # \<kendo:timePicker-animation-open\>
-A JSP tag representing Kendo Open.
+
+Animation to be used for opening of the popup.
 
 #### Example
     <kendo:timePicker-animation>
         <kendo:timePicker-animation-open></kendo:timePicker-animation-open>
     </kendo:timePicker-animation>
 
-
 ## Configuration Attributes
-
-
-### effects `String`
-
-Effect to be used for opening of the popup.
-
-#### Example
-    <kendo:timePicker-animation-open effects="effects">
-    </kendo:timePicker-animation-open>
-
-
 
 ### duration `float`
 
@@ -35,4 +24,11 @@ Difines the animation duration.
     <kendo:timePicker-animation-open duration="duration">
     </kendo:timePicker-animation-open>
 
+### effects `String`
+
+Effect to be used for opening of the popup.
+
+#### Example
+    <kendo:timePicker-animation-open effects="effects">
+    </kendo:timePicker-animation-open>
 

@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-categoryAxisItem-minorTicks\>
-A JSP tag representing Kendo MinorTicks.
+
+The minor ticks of the axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem>
         <kendo:stockChart-categoryAxisItem-minorTicks></kendo:stockChart-categoryAxisItem-minorTicks>
     </kendo:stockChart-categoryAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### size `float`
 
@@ -26,8 +25,6 @@ on the chart.
     <kendo:stockChart-categoryAxisItem-minorTicks size="size">
     </kendo:stockChart-categoryAxisItem-minorTicks>
 
-
-
 ### visible `boolean`
 
 The visibility of the minor ticks.
@@ -35,5 +32,4 @@ The visibility of the minor ticks.
 #### Example
     <kendo:stockChart-categoryAxisItem-minorTicks visible="visible">
     </kendo:stockChart-categoryAxisItem-minorTicks>
-
 

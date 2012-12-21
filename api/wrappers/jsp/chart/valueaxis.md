@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:chart-valueAxis\>
-A JSP tag representing Kendo ValueAxis.
+
+The value axis configuration options.
 
 #### Example
     <kendo:chart>
         <kendo:chart-valueAxis></kendo:chart-valueAxis>
     </kendo:chart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:chart-valueAxisItem
 
 The value axis configuration options.
 
-More documentation is available at [kendo:chart-valueAxisItem](/api/wrappers/jsp/chart/valueaxisitem).
+More documentation is available at [kendo:chart-valueAxisItem](chart/valueaxisitem).
 
 #### Example
 
     <kendo:chart-valueAxis>
         <kendo:chart-valueAxisItem></kendo:chart-valueAxisItem>
     </kendo:chart-valueAxis>
- 
+

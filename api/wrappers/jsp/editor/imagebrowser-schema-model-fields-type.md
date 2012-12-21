@@ -6,16 +6,34 @@ publish: true
 ---
 
 # \<kendo:editor-imagebrowser-schema-model-fields-type\>
-A JSP tag representing Kendo Type.
+
+The field which contains the type of the entry. Either
 
 #### Example
     <kendo:editor-imagebrowser-schema-model-fields>
         <kendo:editor-imagebrowser-schema-model-fields-type></kendo:editor-imagebrowser-schema-model-fields-type>
     </kendo:editor-imagebrowser-schema-model-fields>
 
-
 ## Configuration Attributes
 
+### field `String`
+
+The name of the field.
+
+#### Example
+    <kendo:editor-imagebrowser-schema-model-fields-type field="field">
+    </kendo:editor-imagebrowser-schema-model-fields-type>
+
+### parse `String`
+
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+#### Example
+    <kendo:editor-imagebrowser-schema-model-fields-type parse="parse">
+    </kendo:editor-imagebrowser-schema-model-fields-type>
+
+
+## Event Attributes
 
 ### parse `String`
 
@@ -30,17 +48,20 @@ Specifies the function which will parse the field value. If not set default pars
         }
     </script>
 
+## Event Tags
 
+### kendo:editor-imagebrowser-schema-model-fields-type-parse
 
-### field `String`
-
-The name of the field.
+Specifies the function which will parse the field value. If not set default parsers will be used.
 
 #### Example
-    <kendo:editor-imagebrowser-schema-model-fields-type field="field">
+    <kendo:editor-imagebrowser-schema-model-fields-type>
+        <kendo:editor-imagebrowser-schema-model-fields-type-parse>
+            <script>
+                function(e) {
+                    // Code to handle the parse event.
+                }
+            </script>
+        </kendo:editor-imagebrowser-schema-model-fields-type-parse>
     </kendo:editor-imagebrowser-schema-model-fields-type>
 
-
-
-## Child JSP Tags
- 

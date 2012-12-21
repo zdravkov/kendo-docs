@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:chart-series\>
-A JSP tag representing Kendo Series.
+
+Array of series definitions.
 
 #### Example
     <kendo:chart>
         <kendo:chart-series></kendo:chart-series>
     </kendo:chart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:chart-seriesItem
 
 Array of series definitions.
 
-More documentation is available at [kendo:chart-seriesItem](/api/wrappers/jsp/chart/seriesitem).
+More documentation is available at [kendo:chart-seriesItem](chart/seriesitem).
 
 #### Example
 
     <kendo:chart-series>
         <kendo:chart-seriesItem></kendo:chart-seriesItem>
     </kendo:chart-series>
- 
+

@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:dataSource-groupItem-aggregates\>
-A JSP tag representing Kendo Aggregates.
+
+Specifies the aggregate function for this group.
 
 #### Example
     <kendo:dataSource-groupItem>
         <kendo:dataSource-groupItem-aggregates></kendo:dataSource-groupItem-aggregates>
     </kendo:dataSource-groupItem>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:dataSource-groupItem-aggregate
 
 Specifies the aggregate function for this group.
 
-More documentation is available at [kendo:dataSource-groupItem-aggregate](/api/wrappers/jsp/datasource/groupitem-aggregate).
+More documentation is available at [kendo:dataSource-groupItem-aggregate](datasource/groupitem-aggregate).
 
 #### Example
 
     <kendo:dataSource-groupItem-aggregates>
         <kendo:dataSource-groupItem-aggregate></kendo:dataSource-groupItem-aggregate>
     </kendo:dataSource-groupItem-aggregates>
- 
+

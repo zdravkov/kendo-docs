@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-tooltip\>
-A JSP tag representing Kendo Tooltip.
+
+The data point tooltip configuration options.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem>
         <kendo:stockChart-navigator-seriesItem-tooltip></kendo:stockChart-navigator-seriesItem-tooltip>
     </kendo:stockChart-navigator-seriesItem>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -25,8 +24,6 @@ The background color of the tooltip. The default is determined from the series c
     <kendo:stockChart-navigator-seriesItem-tooltip background="background">
     </kendo:stockChart-navigator-seriesItem-tooltip>
 
-
-
 ### color `String`
 
 The text color of the tooltip. The default is the same as the series labels color.
@@ -34,8 +31,6 @@ The text color of the tooltip. The default is the same as the series labels colo
 #### Example
     <kendo:stockChart-navigator-seriesItem-tooltip color="color">
     </kendo:stockChart-navigator-seriesItem-tooltip>
-
-
 
 ### font `String`
 
@@ -45,17 +40,30 @@ The tooltip font.
     <kendo:stockChart-navigator-seriesItem-tooltip font="font">
     </kendo:stockChart-navigator-seriesItem-tooltip>
 
-
-
 ### format `String`
 
-The tooltip format.
+The tooltip format. Format variables depend on the series type:
 
 #### Example
     <kendo:stockChart-navigator-seriesItem-tooltip format="format">
     </kendo:stockChart-navigator-seriesItem-tooltip>
 
+### padding `Object`
 
+The padding of the tooltip.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-tooltip padding="padding">
+    </kendo:stockChart-navigator-seriesItem-tooltip>
+
+### template `String`
+
+The tooltip template.
+Template variables:
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-tooltip template="template">
+    </kendo:stockChart-navigator-seriesItem-tooltip>
 
 ### visible `boolean`
 
@@ -66,39 +74,52 @@ A value indicating if the tooltip should be displayed.
     </kendo:stockChart-navigator-seriesItem-tooltip>
 
 
-
-### template `Object`
-
-The tooltip template.
-Template variables:
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem-tooltip template="template">
-    </kendo:stockChart-navigator-seriesItem-tooltip>
-
-
-
-### padding `Object`
-
-The padding of the tooltip.
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem-tooltip padding="padding">
-    </kendo:stockChart-navigator-seriesItem-tooltip>
-
-
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:stockChart-navigator-seriesItem-tooltip-border
 
 The border configuration options.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-tooltip-border](/api/wrappers/jsp/stockchart/navigator-seriesitem-tooltip-border).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-tooltip-border](stockchart/navigator-seriesitem-tooltip-border).
 
 #### Example
 
     <kendo:stockChart-navigator-seriesItem-tooltip>
         <kendo:stockChart-navigator-seriesItem-tooltip-border></kendo:stockChart-navigator-seriesItem-tooltip-border>
     </kendo:stockChart-navigator-seriesItem-tooltip>
- 
+
+
+## Event Attributes
+
+### template `String`
+
+The tooltip template.
+Template variables:
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-tooltip template="handle_template">
+    </kendo:stockChart-navigator-seriesItem-tooltip>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:stockChart-navigator-seriesItem-tooltip-template
+
+The tooltip template.
+Template variables:
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-tooltip>
+        <kendo:stockChart-navigator-seriesItem-tooltip-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:stockChart-navigator-seriesItem-tooltip-template>
+    </kendo:stockChart-navigator-seriesItem-tooltip>
+

@@ -6,26 +6,30 @@ publish: true
 ---
 
 # \<kendo:stockChart-xAxis\>
-A JSP tag representing Kendo XAxis.
+
+Scatter charts X-axis configuration options.
+Includes
 
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-xAxis></kendo:stockChart-xAxis>
     </kendo:stockChart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:stockChart-xAxisItem
 
 Scatter charts X-axis configuration options.
 Includes
 
-More documentation is available at [kendo:stockChart-xAxisItem](/api/wrappers/jsp/stockchart/xaxisitem).
+More documentation is available at [kendo:stockChart-xAxisItem](stockchart/xaxisitem).
 
 #### Example
 
     <kendo:stockChart-xAxis>
         <kendo:stockChart-xAxisItem></kendo:stockChart-xAxisItem>
     </kendo:stockChart-xAxis>
- 
+

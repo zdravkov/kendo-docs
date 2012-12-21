@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:rangeSlider-tooltip\>
-A JSP tag representing Kendo Tooltip.
+
+Configuration of the
 
 #### Example
     <kendo:rangeSlider>
         <kendo:rangeSlider-tooltip></kendo:rangeSlider-tooltip>
     </kendo:rangeSlider>
 
-
 ## Configuration Attributes
-
 
 ### enabled `boolean`
 
@@ -24,8 +23,6 @@ Disables (
 #### Example
     <kendo:rangeSlider-tooltip enabled="enabled">
     </kendo:rangeSlider-tooltip>
-
-
 
 ### format `String`
 
@@ -36,8 +33,6 @@ the
     <kendo:rangeSlider-tooltip format="format">
     </kendo:rangeSlider-tooltip>
 
-
-
 ### template `String`
 
 Template of the tooltip.
@@ -45,5 +40,4 @@ Template of the tooltip.
 #### Example
     <kendo:rangeSlider-tooltip template="template">
     </kendo:rangeSlider-tooltip>
-
 

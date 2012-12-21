@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:treeView-animation-expand\>
-A JSP tag representing Kendo Expand.
+
+The animation that will be used when expanding items.
 
 #### Example
     <kendo:treeView-animation>
         <kendo:treeView-animation-expand></kendo:treeView-animation-expand>
     </kendo:treeView-animation>
 
-
 ## Configuration Attributes
-
 
 ### duration `float`
 
@@ -26,8 +25,6 @@ node is expanded.
     <kendo:treeView-animation-expand duration="duration">
     </kendo:treeView-animation-expand>
 
-
-
 ### effects `String`
 
 A whitespace-delimited string of animation effects that are utilized when a
@@ -36,8 +33,6 @@ A whitespace-delimited string of animation effects that are utilized when a
     <kendo:treeView-animation-expand effects="effects">
     </kendo:treeView-animation-expand>
 
-
-
 ### show `boolean`
 
 If
@@ -45,5 +40,4 @@ If
 #### Example
     <kendo:treeView-animation-expand show="show">
     </kendo:treeView-animation-expand>
-
 

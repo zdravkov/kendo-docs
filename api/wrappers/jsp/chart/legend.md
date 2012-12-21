@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-legend\>
-A JSP tag representing Kendo Legend.
+
+The chart legend configuration options.
 
 #### Example
     <kendo:chart>
         <kendo:chart-legend></kendo:chart-legend>
     </kendo:chart>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -25,17 +24,13 @@ The background color of the legend. Any valid CSS color string will work here, i
     <kendo:chart-legend background="background">
     </kendo:chart-legend>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the legend.
 
 #### Example
     <kendo:chart-legend margin="margin">
     </kendo:chart-legend>
-
-
 
 ### offsetX `float`
 
@@ -47,8 +42,6 @@ to the left of the current position.
     <kendo:chart-legend offsetX="offsetX">
     </kendo:chart-legend>
 
-
-
 ### offsetY `float`
 
 The Y offset from its position.  The offset is relative to the current position of the legend.
@@ -59,17 +52,13 @@ upwards from the current position.
     <kendo:chart-legend offsetY="offsetY">
     </kendo:chart-legend>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the legend.
 
 #### Example
     <kendo:chart-legend padding="padding">
     </kendo:chart-legend>
-
-
 
 ### position `String`
 
@@ -78,8 +67,6 @@ The positions of the legend.
 #### Example
     <kendo:chart-legend position="position">
     </kendo:chart-legend>
-
-
 
 ### visible `boolean`
 
@@ -90,30 +77,29 @@ The visibility of the legend.
     </kendo:chart-legend>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-legend-border
 
 The border of the legend.
 
-More documentation is available at [kendo:chart-legend-border](/api/wrappers/jsp/chart/legend-border).
+More documentation is available at [kendo:chart-legend-border](chart/legend-border).
 
 #### Example
 
     <kendo:chart-legend>
         <kendo:chart-legend-border></kendo:chart-legend-border>
     </kendo:chart-legend>
- 
+
 ### kendo:chart-legend-labels
 
 Configures the legend labels.
 
-More documentation is available at [kendo:chart-legend-labels](/api/wrappers/jsp/chart/legend-labels).
+More documentation is available at [kendo:chart-legend-labels](chart/legend-labels).
 
 #### Example
 
     <kendo:chart-legend>
         <kendo:chart-legend-labels></kendo:chart-legend-labels>
     </kendo:chart-legend>
- 
+

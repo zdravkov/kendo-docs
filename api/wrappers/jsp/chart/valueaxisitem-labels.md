@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-valueAxisItem-labels\>
-A JSP tag representing Kendo Labels.
+
+Configures the axis labels.
 
 #### Example
     <kendo:chart-valueAxisItem>
         <kendo:chart-valueAxisItem-labels></kendo:chart-valueAxisItem-labels>
     </kendo:chart-valueAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -26,8 +25,6 @@ hex and rgb
     <kendo:chart-valueAxisItem-labels background="background">
     </kendo:chart-valueAxisItem-labels>
 
-
-
 ### color `String`
 
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
@@ -35,8 +32,6 @@ The text color of the labels. Any valid CSS color string will work here, includi
 #### Example
     <kendo:chart-valueAxisItem-labels color="color">
     </kendo:chart-valueAxisItem-labels>
-
-
 
 ### font `String`
 
@@ -46,8 +41,6 @@ The font style of the labels.
     <kendo:chart-valueAxisItem-labels font="font">
     </kendo:chart-valueAxisItem-labels>
 
-
-
 ### format `String`
 
 The format of the labels.
@@ -56,17 +49,13 @@ The format of the labels.
     <kendo:chart-valueAxisItem-labels format="format">
     </kendo:chart-valueAxisItem-labels>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the labels.
 
 #### Example
     <kendo:chart-valueAxisItem-labels margin="margin">
     </kendo:chart-valueAxisItem-labels>
-
-
 
 ### mirror `boolean`
 
@@ -78,17 +67,13 @@ mirroring the axis will render them to the right.
     <kendo:chart-valueAxisItem-labels mirror="mirror">
     </kendo:chart-valueAxisItem-labels>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the labels.
 
 #### Example
     <kendo:chart-valueAxisItem-labels padding="padding">
     </kendo:chart-valueAxisItem-labels>
-
-
 
 ### rotation `float`
 
@@ -97,8 +82,6 @@ The rotation angle of the labels.
 #### Example
     <kendo:chart-valueAxisItem-labels rotation="rotation">
     </kendo:chart-valueAxisItem-labels>
-
-
 
 ### skip `float`
 
@@ -109,8 +92,6 @@ Skips rendering the first n labels.
     <kendo:chart-valueAxisItem-labels skip="skip">
     </kendo:chart-valueAxisItem-labels>
 
-
-
 ### step `float`
 
 Label rendering step.
@@ -119,8 +100,6 @@ Every n-th label is rendered where n is the step
 #### Example
     <kendo:chart-valueAxisItem-labels step="step">
     </kendo:chart-valueAxisItem-labels>
-
-
 
 ### template `String`
 
@@ -131,8 +110,6 @@ Template variables:
     <kendo:chart-valueAxisItem-labels template="template">
     </kendo:chart-valueAxisItem-labels>
 
-
-
 ### visible `boolean`
 
 The visibility of the labels.
@@ -142,18 +119,52 @@ The visibility of the labels.
     </kendo:chart-valueAxisItem-labels>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-valueAxisItem-labels-border
 
 The border of the labels.
 
-More documentation is available at [kendo:chart-valueAxisItem-labels-border](/api/wrappers/jsp/chart/valueaxisitem-labels-border).
+More documentation is available at [kendo:chart-valueAxisItem-labels-border](chart/valueaxisitem-labels-border).
 
 #### Example
 
     <kendo:chart-valueAxisItem-labels>
         <kendo:chart-valueAxisItem-labels-border></kendo:chart-valueAxisItem-labels-border>
     </kendo:chart-valueAxisItem-labels>
- 
+
+
+## Event Attributes
+
+### template `String`
+
+The label template.
+Template variables:
+
+#### Example
+    <kendo:chart-valueAxisItem-labels template="handle_template">
+    </kendo:chart-valueAxisItem-labels>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-valueAxisItem-labels-template
+
+The label template.
+Template variables:
+
+#### Example
+    <kendo:chart-valueAxisItem-labels>
+        <kendo:chart-valueAxisItem-labels-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:chart-valueAxisItem-labels-template>
+    </kendo:chart-valueAxisItem-labels>
+

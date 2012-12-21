@@ -6,46 +6,15 @@ publish: true
 ---
 
 # \<kendo:radialGauge-scale-range\>
-A JSP tag representing Kendo Range.
+
+The ranges of the scale.
 
 #### Example
     <kendo:radialGauge-scale-ranges>
         <kendo:radialGauge-scale-range></kendo:radialGauge-scale-range>
     </kendo:radialGauge-scale-ranges>
 
-
 ## Configuration Attributes
-
-
-### from `float`
-
-The start position of the range in scale units.
-
-#### Example
-    <kendo:radialGauge-scale-range from="from">
-    </kendo:radialGauge-scale-range>
-
-
-
-### to `float`
-
-The end position of the range in scale units.
-
-#### Example
-    <kendo:radialGauge-scale-range to="to">
-    </kendo:radialGauge-scale-range>
-
-
-
-### opacity `float`
-
-The opacity of the range.
-
-#### Example
-    <kendo:radialGauge-scale-range opacity="opacity">
-    </kendo:radialGauge-scale-range>
-
-
 
 ### color `String`
 
@@ -56,4 +25,27 @@ Any valid CSS color string will work here, including hex and rgb.
     <kendo:radialGauge-scale-range color="color">
     </kendo:radialGauge-scale-range>
 
+### from `float`
+
+The start position of the range in scale units.
+
+#### Example
+    <kendo:radialGauge-scale-range from="from">
+    </kendo:radialGauge-scale-range>
+
+### opacity `float`
+
+The opacity of the range.
+
+#### Example
+    <kendo:radialGauge-scale-range opacity="opacity">
+    </kendo:radialGauge-scale-range>
+
+### to `float`
+
+The end position of the range in scale units.
+
+#### Example
+    <kendo:radialGauge-scale-range to="to">
+    </kendo:radialGauge-scale-range>
 

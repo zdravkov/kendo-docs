@@ -6,25 +6,28 @@ publish: true
 ---
 
 # \<kendo:stockChart-categoryAxisItem-plotBands\>
-A JSP tag representing Kendo PlotBands.
+
+The plot bands of the category axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem>
         <kendo:stockChart-categoryAxisItem-plotBands></kendo:stockChart-categoryAxisItem-plotBands>
     </kendo:stockChart-categoryAxisItem>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:stockChart-categoryAxisItem-plotBand
 
 The plot bands of the category axis.
 
-More documentation is available at [kendo:stockChart-categoryAxisItem-plotBand](/api/wrappers/jsp/stockchart/categoryaxisitem-plotband).
+More documentation is available at [kendo:stockChart-categoryAxisItem-plotBand](stockchart/categoryaxisitem-plotband).
 
 #### Example
 
     <kendo:stockChart-categoryAxisItem-plotBands>
         <kendo:stockChart-categoryAxisItem-plotBand></kendo:stockChart-categoryAxisItem-plotBand>
     </kendo:stockChart-categoryAxisItem-plotBands>
- 
+

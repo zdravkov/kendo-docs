@@ -6,16 +6,31 @@ publish: true
 ---
 
 # \<kendo:grid-columnMenu\>
-A JSP tag representing Kendo ColumnMenu.
+
+Enables column header menu
 
 #### Example
     <kendo:grid>
         <kendo:grid-columnMenu></kendo:grid-columnMenu>
     </kendo:grid>
 
-
 ## Configuration Attributes
 
+### columns `boolean`
+
+Enable/disable columns section in column header menu.
+
+#### Example
+    <kendo:grid-columnMenu columns="columns">
+    </kendo:grid-columnMenu>
+
+### filterable `boolean`
+
+Enable/disable filter section in column header menu.
+
+#### Example
+    <kendo:grid-columnMenu filterable="filterable">
+    </kendo:grid-columnMenu>
 
 ### sortable `boolean`
 
@@ -26,13 +41,17 @@ Enable/disable sorting section in column header menu.
     </kendo:grid-columnMenu>
 
 
+##  Configuration JSP Tags
 
-### filterable `boolean`
+### kendo:grid-columnMenu-messages
 
-Enable/disable filter section in column header menu.
+Sets the columnMenu messages.
+
+More documentation is available at [kendo:grid-columnMenu-messages](grid/columnmenu-messages).
 
 #### Example
-    <kendo:grid-columnMenu filterable="filterable">
-    </kendo:grid-columnMenu>
 
+    <kendo:grid-columnMenu>
+        <kendo:grid-columnMenu-messages></kendo:grid-columnMenu-messages>
+    </kendo:grid-columnMenu>
 

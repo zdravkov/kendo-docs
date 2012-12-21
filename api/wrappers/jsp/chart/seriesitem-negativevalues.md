@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-seriesItem-negativeValues\>
-A JSP tag representing Kendo NegativeValues.
+
+The settings for negative values.
 
 #### Example
     <kendo:chart-seriesItem>
         <kendo:chart-seriesItem-negativeValues></kendo:chart-seriesItem-negativeValues>
     </kendo:chart-seriesItem>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the negative values.
     <kendo:chart-seriesItem-negativeValues color="color">
     </kendo:chart-seriesItem-negativeValues>
 
-
-
 ### visible `boolean`
 
 The visibility of the negative values.
@@ -34,5 +31,4 @@ The visibility of the negative values.
 #### Example
     <kendo:chart-seriesItem-negativeValues visible="visible">
     </kendo:chart-seriesItem-negativeValues>
-
 

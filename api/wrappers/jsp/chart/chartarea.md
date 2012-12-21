@@ -6,16 +6,16 @@ publish: true
 ---
 
 # \<kendo:chart-chartArea\>
-A JSP tag representing Kendo ChartArea.
+
+The chart area configuration options.
+This is the entire visible area of the chart.
 
 #### Example
     <kendo:chart>
         <kendo:chart-chartArea></kendo:chart-chartArea>
     </kendo:chart>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -25,18 +25,6 @@ The background color of the chart area.
     <kendo:chart-chartArea background="background">
     </kendo:chart-chartArea>
 
-
-
-### opacity `float`
-
-The background opacity of the chart area.
-
-#### Example
-    <kendo:chart-chartArea opacity="opacity">
-    </kendo:chart-chartArea>
-
-
-
 ### height `float`
 
 The height of the chart area.
@@ -45,9 +33,7 @@ The height of the chart area.
     <kendo:chart-chartArea height="height">
     </kendo:chart-chartArea>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the chart area.
 
@@ -55,7 +41,13 @@ The margin of the chart area.
     <kendo:chart-chartArea margin="margin">
     </kendo:chart-chartArea>
 
+### opacity `float`
 
+The background opacity of the chart area.
+
+#### Example
+    <kendo:chart-chartArea opacity="opacity">
+    </kendo:chart-chartArea>
 
 ### width `float`
 
@@ -66,18 +58,17 @@ The width of the chart area.
     </kendo:chart-chartArea>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-chartArea-border
 
 The border of the chart area.
 
-More documentation is available at [kendo:chart-chartArea-border](/api/wrappers/jsp/chart/chartarea-border).
+More documentation is available at [kendo:chart-chartArea-border](chart/chartarea-border).
 
 #### Example
 
     <kendo:chart-chartArea>
         <kendo:chart-chartArea-border></kendo:chart-chartArea-border>
     </kendo:chart-chartArea>
- 
+

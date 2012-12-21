@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-overlay\>
-A JSP tag representing Kendo Overlay.
+
+The effects overlay.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem>
         <kendo:stockChart-navigator-seriesItem-overlay></kendo:stockChart-navigator-seriesItem-overlay>
     </kendo:stockChart-navigator-seriesItem>
 
-
 ## Configuration Attributes
-
 
 ### gradient `String`
 
@@ -24,5 +23,4 @@ The gradient name.
 #### Example
     <kendo:stockChart-navigator-seriesItem-overlay gradient="gradient">
     </kendo:stockChart-navigator-seriesItem-overlay>
-
 

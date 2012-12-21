@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-legend\>
-A JSP tag representing Kendo Legend.
+
+The chart legend configuration options.
 
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-legend></kendo:stockChart-legend>
     </kendo:stockChart>
 
-
 ## Configuration Attributes
-
 
 ### background `String`
 
@@ -25,17 +24,13 @@ The background color of the legend. Any valid CSS color string will work here, i
     <kendo:stockChart-legend background="background">
     </kendo:stockChart-legend>
 
-
-
-### margin `float`
+### margin `Object`
 
 The margin of the legend.
 
 #### Example
     <kendo:stockChart-legend margin="margin">
     </kendo:stockChart-legend>
-
-
 
 ### offsetX `float`
 
@@ -47,8 +42,6 @@ to the left of the current position.
     <kendo:stockChart-legend offsetX="offsetX">
     </kendo:stockChart-legend>
 
-
-
 ### offsetY `float`
 
 The Y offset from its position.  The offset is relative to the current position of the legend.
@@ -59,17 +52,13 @@ upwards from the current position.
     <kendo:stockChart-legend offsetY="offsetY">
     </kendo:stockChart-legend>
 
-
-
-### padding `float`
+### padding `Object`
 
 The padding of the legend.
 
 #### Example
     <kendo:stockChart-legend padding="padding">
     </kendo:stockChart-legend>
-
-
 
 ### position `String`
 
@@ -78,8 +67,6 @@ The positions of the legend.
 #### Example
     <kendo:stockChart-legend position="position">
     </kendo:stockChart-legend>
-
-
 
 ### visible `boolean`
 
@@ -90,30 +77,29 @@ The visibility of the legend.
     </kendo:stockChart-legend>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:stockChart-legend-border
 
 The border of the legend.
 
-More documentation is available at [kendo:stockChart-legend-border](/api/wrappers/jsp/stockchart/legend-border).
+More documentation is available at [kendo:stockChart-legend-border](stockchart/legend-border).
 
 #### Example
 
     <kendo:stockChart-legend>
         <kendo:stockChart-legend-border></kendo:stockChart-legend-border>
     </kendo:stockChart-legend>
- 
+
 ### kendo:stockChart-legend-labels
 
 Configures the legend labels.
 
-More documentation is available at [kendo:stockChart-legend-labels](/api/wrappers/jsp/stockchart/legend-labels).
+More documentation is available at [kendo:stockChart-legend-labels](stockchart/legend-labels).
 
 #### Example
 
     <kendo:stockChart-legend>
         <kendo:stockChart-legend-labels></kendo:stockChart-legend-labels>
     </kendo:stockChart-legend>
- 
+

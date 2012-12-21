@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-categoryAxisItem-majorTicks\>
-A JSP tag representing Kendo MajorTicks.
+
+The major ticks of the axis.
 
 #### Example
     <kendo:chart-categoryAxisItem>
         <kendo:chart-categoryAxisItem-majorTicks></kendo:chart-categoryAxisItem-majorTicks>
     </kendo:chart-categoryAxisItem>
 
-
 ## Configuration Attributes
-
 
 ### size `float`
 
@@ -26,8 +25,6 @@ on the chart.
     <kendo:chart-categoryAxisItem-majorTicks size="size">
     </kendo:chart-categoryAxisItem-majorTicks>
 
-
-
 ### visible `boolean`
 
 The visibility of the major ticks.
@@ -35,5 +32,4 @@ The visibility of the major ticks.
 #### Example
     <kendo:chart-categoryAxisItem-majorTicks visible="visible">
     </kendo:chart-categoryAxisItem-majorTicks>
-
 

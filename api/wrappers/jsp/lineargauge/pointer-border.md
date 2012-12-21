@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:linearGauge-pointer-border\>
-A JSP tag representing Kendo Border.
+
+The border of the pointer.
 
 #### Example
     <kendo:linearGauge-pointer>
         <kendo:linearGauge-pointer-border></kendo:linearGauge-pointer-border>
     </kendo:linearGauge-pointer>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -26,8 +25,6 @@ Any valid CSS color string will work here, including hex and rgb.
     <kendo:linearGauge-pointer-border color="color">
     </kendo:linearGauge-pointer-border>
 
-
-
 ### dashType `String`
 
 The dash type of the border.
@@ -36,8 +33,6 @@ The dash type of the border.
     <kendo:linearGauge-pointer-border dashType="dashType">
     </kendo:linearGauge-pointer-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -45,5 +40,4 @@ The width of the border.
 #### Example
     <kendo:linearGauge-pointer-border width="width">
     </kendo:linearGauge-pointer-border>
-
 

@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:chart-plotArea-border\>
-A JSP tag representing Kendo Border.
+
+The border of the plot area.
 
 #### Example
     <kendo:chart-plotArea>
         <kendo:chart-plotArea-border></kendo:chart-plotArea-border>
     </kendo:chart-plotArea>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -25,8 +24,6 @@ The color of the border.
     <kendo:chart-plotArea-border color="color">
     </kendo:chart-plotArea-border>
 
-
-
 ### dashType `String`
 
 The dash type of the border.
@@ -35,8 +32,6 @@ The dash type of the border.
     <kendo:chart-plotArea-border dashType="dashType">
     </kendo:chart-plotArea-border>
 
-
-
 ### width `float`
 
 The width of the border.
@@ -44,5 +39,4 @@ The width of the border.
 #### Example
     <kendo:chart-plotArea-border width="width">
     </kendo:chart-plotArea-border>
-
 

@@ -6,16 +6,15 @@ publish: true
 ---
 
 # \<kendo:stockChart-legend-labels\>
-A JSP tag representing Kendo Labels.
+
+Configures the legend labels.
 
 #### Example
     <kendo:stockChart-legend>
         <kendo:stockChart-legend-labels></kendo:stockChart-legend-labels>
     </kendo:stockChart-legend>
 
-
 ## Configuration Attributes
-
 
 ### color `String`
 
@@ -26,8 +25,6 @@ Any valid CSS color string will work here, including hex and rgb.
     <kendo:stockChart-legend-labels color="color">
     </kendo:stockChart-legend-labels>
 
-
-
 ### font `String`
 
 The font style of the labels.
@@ -35,8 +32,6 @@ The font style of the labels.
 #### Example
     <kendo:stockChart-legend-labels font="font">
     </kendo:stockChart-legend-labels>
-
-
 
 ### template `String`
 
@@ -47,5 +42,4 @@ Template variables:
 #### Example
     <kendo:stockChart-legend-labels template="template">
     </kendo:stockChart-legend-labels>
-
 

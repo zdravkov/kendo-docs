@@ -6,26 +6,30 @@ publish: true
 ---
 
 # \<kendo:stockChart-yAxis\>
-A JSP tag representing Kendo YAxis.
+
+Scatter charts Y-axis configuration options.
+Includes
 
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-yAxis></kendo:stockChart-yAxis>
     </kendo:stockChart>
 
+## Configuration Attributes
 
-## Child JSP Tags
+
+##  Configuration JSP Tags
 
 ### kendo:stockChart-yAxisItem
 
 Scatter charts Y-axis configuration options.
 Includes
 
-More documentation is available at [kendo:stockChart-yAxisItem](/api/wrappers/jsp/stockchart/yaxisitem).
+More documentation is available at [kendo:stockChart-yAxisItem](stockchart/yaxisitem).
 
 #### Example
 
     <kendo:stockChart-yAxis>
         <kendo:stockChart-yAxisItem></kendo:stockChart-yAxisItem>
     </kendo:stockChart-yAxis>
- 
+
