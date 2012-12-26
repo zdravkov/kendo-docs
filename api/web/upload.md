@@ -144,9 +144,9 @@ Enables the upload.
 
 #### Parameters
 
-##### enable ``
+##### enable `Boolean`
 
-
+The argument, which defines whether to enable/disable the upload.
 
 ### toggle
 

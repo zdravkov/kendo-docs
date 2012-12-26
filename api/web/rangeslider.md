@@ -136,7 +136,9 @@ selection values.
 
 #### Parameters
 
-##### value ``
+##### value `Number`
+
+The new value of the RangeSlider.
 
 ## Events
 
