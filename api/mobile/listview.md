@@ -154,9 +154,6 @@ repaints the listview (works only in databound mode).
     // refreshes the listview
     listview.refresh();
 
-#### Parameters
-
-##### e ``
 
 ### stopEndlessScrolling
 
