@@ -48,7 +48,7 @@ Will render a very simple picker containing 20 colors:
 ### Get the "web-safe" color palette
 
     $(document).ready(function(){
-        $("#myColorField").kendoColorPicker({ palette: "web" });
+        $("#myColorField").kendoColorPicker({ palette: "websafe" });
     });
 
 This will display the 216 colors "web-safe" palette that would look

@@ -26,7 +26,7 @@ selected color.
     <input id="test" name="test" type="color" />
 
     <script>
-      $("#test").kendoColorPicker({ palette: "web" });
+      $("#test").kendoColorPicker({ palette: "websafe" });
     </script>
 
 ## Configuration
@@ -40,9 +40,9 @@ be displayed in the drop-down HSV picker.
 ### columns `Number`
 
 The number of columns to show in the simple color dropdown.  For the
-"basic" and "web" palettes this is automatically initialized; if you
-pass a custom palette then you can set this to some value that makes
-sense for your colors.
+"basic" and "websafe" palettes this is automatically initialized; if
+you pass a custom palette then you can set this to some value that
+makes sense for your colors.
 
 ### messages `Object`
 
@@ -55,7 +55,7 @@ a simple color picker.  The following are supported:
 
 - "basic" -- displays 20 basic colors
 
-- "web" -- display the "web-safe" color palette
+- "websafe" -- display the "web-safe" color palette
 
 - otherwise, pass a string with colors in HEX representation separated
   with commas, or an array of colors, and it will display that palette
