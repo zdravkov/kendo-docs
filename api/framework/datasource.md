@@ -1353,7 +1353,7 @@ An `Array` of items to set as the current data of the `DataSource`. If omitted t
 
 #### Returns
 
-`ObservableArray` the items of the `DataSource`
+`kendo.data.ObservableArray` the items of the `DataSource`
 
 #### Example: Getting the Data of a DataSource
 
@@ -1714,7 +1714,7 @@ To ensure that data is available this method should be use from within `change` 
 
 #### Returns
 
-`kendo.data.ObservableArary` the data items.
+`kendo.data.ObservableArray` the data items.
 
 ## Events
 
