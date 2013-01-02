@@ -364,9 +364,9 @@ Selects drop-down list item and sets the text of the autocomplete.
 
 #### Parameters
 
-##### li `jQuery Object`
+##### li `jQuery`
 
-The LI element.
+A jQuery object which represents the item which should be selected.
 
 ### suggest
 
