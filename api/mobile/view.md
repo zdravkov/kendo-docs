@@ -53,6 +53,20 @@ The text to display in the navbar title (if present) and the browser title.
 
 If set to true, the user can zoom in/out the contents of the view using the pinch/zoom gesture.
 
+## Methods
+
+### destroy
+Prepares the **View** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
+
+> **Important:** This method does not remove the View element from DOM.
+
+#### Example
+
+    var view = $("#myView").data("kendoMobileView");
+
+    // detach events
+    view.destroy();
+
 ## Events
 
 ### beforeShow
