@@ -282,7 +282,7 @@ The index of the tab in the TabStrip.
 
 #### Returns
 
-`HTMLElement` The DOM element representing a tab by its index in the <strong>TabStrip</strong>.
+`Element` The DOM element representing a tab by its index in the <strong>TabStrip</strong>.
 
 ### deactivateTab
 
@@ -503,7 +503,7 @@ Triggered just after a tab is being made visible, but before the end of the anim
 
     // event handler for activate
     var onActivate = function(e) {
-        // access the activated item via e.item (HTMLElement)
+        // access the activated item via e.item (Element)
     };
 
     // attach activate event handler during initialization
@@ -518,7 +518,7 @@ Triggered just after a tab is being made visible, but before the end of the anim
 
     // event handler for activate
     var onActivate = function(e) {
-        // access the activated item via e.item (HTMLElement)
+        // access the activated item via e.item (Element)
     };
 
     // attach activate event handler via bind()
@@ -529,7 +529,7 @@ Triggered just after a tab is being made visible, but before the end of the anim
 
 #### Event Data
 
-##### e.item `HTMLElement`
+##### e.item `Element`
 
 The activated tab.
 
@@ -573,7 +573,7 @@ Triggered before a tab is selected.
 
     // event handler for select
     var onSelect = function(e) {
-        // access the selected item via e.item (HTMLElement)
+        // access the selected item via e.item (Element)
     };
 
     // attach select event handler during initialization
@@ -588,7 +588,7 @@ Triggered before a tab is selected.
 
     // event handler for select
     var onSelect = function(e) {
-        // access the selected item via e.item (HTMLElement)
+        // access the selected item via e.item (Element)
     };
 
     // attach select event handler via bind()
@@ -599,7 +599,7 @@ Triggered before a tab is selected.
 
 #### Event Data
 
-##### e.item `HTMLElement`
+##### e.item `Element`
 
 The selected item chosen by a user.
 
