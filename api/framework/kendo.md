@@ -172,6 +172,42 @@ The formatted string which should be parsed as number.
 ##### culture `String` *(optional)*
 The culture used to parse the number. The current culture is used by default.
 
+<a name="parseColor"></a>
+### parseColor
+
+Parse a color string into a <a href="#Color">Color</a> object.  If the input is not valid, it throws an Error, unless the `noerror` argument is given.
+
+#### Example
+
+    red = kendo.parseColor("#ff0000");
+    green = kendo.parseColor("#0f0");
+    // the sharp is optional:
+    blue = kendo.parseColor("0000ff"); // or 00f
+
+    red = kendo.parseColor("rgb(255, 0, 0)");
+    halfBlue = kendo.parseColor("rgba(0, 0, 255, 0.5)");
+
+#### Parameters
+
+##### color `String`
+
+A string in one of the following (case-insensitive) CSS notations:
+
+- `#F00` (optionally without the sharp: `F00`)
+- `#FF0000` (optionally without the sharp: `FF0000`)
+- `rgb(255, 0, 0)`
+- `rgba(255, 0, 0, 1)`
+
+Particularly if this argument is `null` or the string `"transparent"` then this function will return `null`.
+
+##### noerror `Boolean`*(default: false)*
+
+If you pass `true` then this function will return `undefined` rather than throwing an error on invalid input.
+
+#### Returns
+
+A <a href="#Color">Color</a> object.
+
 ### render
 
 Renders the specified template using the provided data.
@@ -533,3 +569,106 @@ Unbinds a tree of HTML elements from a View-Model.
 
 The root element(s) from which the unbinding starts. Can be a valid jQuery string selector, a DOM element or a jQuery object.
 All child elements are traversed.
+
+
+<a name="Color"></a>
+## Color objects
+
+These objects can be used to manipulate colors.  You cannot instantiate a
+`Color` object directly, instead you should use `kendo.parseColor` or one of
+the functions below:
+
+    var red = kendo.Color.fromRGB(1, 0, 0, 1);
+    var blue = kendo.Color.fromBytes(0, 0, 255, 1);
+    var green = kendo.Color.fromHSV(120, 1, 1, 1);
+
+We support three color representations: as RGB (where the values are float
+numbers between 0 and 1), as Bytes (where values are integers between 0 and
+255) or as [HSV](http://en.wikipedia.org/wiki/HSL_and_HSV).  They all
+support transparency via the last argument, a float between 0 and 1.  If
+missing it will default to 1 (fully opaque).
+
+If you are not certain which representation is used internally for a
+particular color object, you can convert it to the one you need using one of
+the methods below.
+
+### Methods
+
+#### toHSV
+
+Returns the color in HSV representation.  As HSV object, it has the
+following properties:
+
+- `h` -- hue, an integer between 0 and 360
+- `s` -- saturation, floating point between 0 and 1
+- `v` -- value, floating point between 0 and 1
+- `a` -- alpha, floating point between 0 and 1
+
+This does not modify the current object, it creates a new one instead.
+
+#### toRGB
+
+Returns the color in RGB representation.  The result has the following
+properties:
+
+- `r` -- red component as floating point between 0 and 1
+- `g` -- green component
+- `b` -- blue component
+- `a` -- alpha
+
+This does not modify the current object, it creates a new one instead.
+
+#### toBytes
+
+Returns the color in "Bytes" representation.  It has the same properties as
+RGB, but `r`, `g` and `b` are integers between 0 and 255 instead of floats.
+
+This does not modify the current object, it creates a new one instead.
+
+#### toHex
+
+Returns a string in `"FF0000"` form (without a leading `#`).
+
+#### toCss
+
+Like `toHex`, but includes a leading `#`.
+
+#### toCssRgba
+
+Returns the color in RGBA notation (includes the opacity).
+
+#### toDisplay
+
+Returns the color in the best notation supported by the current browser.  In
+IE < 9 this returns the `#FF0000` form; in all other browsers it returns the
+RGBA form.
+
+#### equals
+
+Returns `true` if two colors are identical.
+
+##### Parameters
+
+###### other `Color`
+
+This can also be a `String` parse-able with `kendo.parseColor`.
+
+### Examples
+
+    color = kendo.parseColor("rgba(255, 0, 0, 1)");
+
+    color = color.toHSV();
+    console.log(color.h, color.s, color.v, color.a);
+
+    color = color.toRGB(); // floating point values 0..1
+    console.log(color.r, color.g, color.b, color.a);
+
+    color = color.toBytes(); // bytes (0..255)
+    console.log(color.r, color.g, color.b, color.a);
+
+    console.log(color.equals("#f00")); // true
+    console.log(color.equals("rgb(255, 0, 0)")); // true
+    console.log(color.equals(kendo.Color.fromHSV(0, 1, 1)); // true
+
+    color.g = 255; // current representation is Bytes
+    console.log(color.equals("#ff0")); // true

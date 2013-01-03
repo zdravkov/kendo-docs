@@ -57,10 +57,10 @@ a simple color picker.  The following are supported:
 
 - "websafe" -- display the "web-safe" color palette
 
-- otherwise, pass a string with colors in HEX representation separated
-  with commas, or an array of colors, and it will display that palette
-  instead.  If you pass an array it can contain strings supported by
-  `Color.parse` or `Color` objects (see below).
+- otherwise, pass a string with colors in HEX representation separated with
+  commas, or an array of colors, and it will display that palette instead.
+  If you pass an array it can contain strings supported by [parseColor][] or
+  [Color][] objects.
 
 If `palette` is missing or `null`, the widget will display the HSV
 selector.
@@ -89,9 +89,9 @@ specified, the HTML for the element will look like this:
 ### value `String | Color`*(default: null)*
 
 The initially selected color.  This can be a string supported by
-`Color.parse` or a `Color` object (see below).  Note that when
-initializing the widget from an `<input>` element, the initial color
-will be decided by the field instead.
+[parseColor][] or a [Color][] object.  Note that when initializing the
+widget from an `<input>` element, the initial color will be decided by the
+field instead.
 
 ## Methods
 
@@ -114,7 +114,7 @@ currently selected color as a string in format #FFFFFF when the `opacity`
 option is off, or rgba(255, 255, 255, 1) when `opacity` is requested.
 
 If one argument is given, it selects the new color and updates the UI.  The
-argument can be a string in hex, rgb or rgba format, or a `Color` object.
+argument can be a string in hex, rgb or rgba format, or a [Color][] object.
 This does not trigger the "change" event.
 
 ### color
@@ -125,43 +125,8 @@ Like `value()`, but it returns a `Color` object.
 
 ##### color `String`
 
-The color should be either a `Color` object (see below) or
-a string that `Color.parse` can understand (the CSS hex, rgb or rgba notations).
-
-# Color, ColorRGB, ColorHSV, ColorBytes
-
-These objects can be used to manipulate colors.  `Color` is an
-abstract base class (it should not be instantiated directly).  Here
-are some examples on how to construct colors:
-
-    var red = new kendo.ColorRGB(1, 0, 0, 1);
-    var blue = new kendo.ColorBytes(0, 0, 255, 1);
-    var green = new kendo.ColorHSV(120, 1, 1, 1);
-
-The last argument is opacity (between 0 and 1).
-
-Here's also how you can parse colors from various CSS-supported
-representations:
-
-    red = kendo.Color.parse("#ff0000");
-    green = kendo.Color.parse("#0f0");
-    // the sharp is optional:
-    blue = kendo.Color.parse("0000ff"); // or 00f
-
-    red = kendo.Color.parse("rgb(255, 0, 0)");
-    halfBlue = kendo.Color.parse("rgba(0, 0, 255, 0.5)");
-
-You can use the following methods with `Color` objects:
-
-- `toHSV()` - converts to `ColorHSV`.
-- `toRGB()` - converts to `ColorRGB`.
-- `toBytes()` - converts to `ColorBytes`.
-- `toHex()` - converts to hex string (without the leading `#`).
-- `toCss()` - like `toHex()` but prepends the `#`.
-- `toCssRgba()` - to RGBA notation (includes the opacity).
-- `toDisplay()` - to some notation that the current browser is able to display.
-- `equals(other)` - return `true` if `this` is the same color as `other`.
-- `clone()` - clones the color; returns a new object which represents the same color.
+The color should be either a [Color][] object or a string that
+[parseColor][] can understand (the CSS hex, rgb or rgba notations).
 
 ## Events
 
@@ -178,3 +143,6 @@ not necessarily the "final" value; for example this event triggers
 when the sliders in the HSV selector are dragged, but then pressing
 ESC would cancel the selection and the color will revert to the
 original value.
+
+[parseColor]: ../framework/kendo#parseColor
+[Color]: ../framework/kendo#Color
