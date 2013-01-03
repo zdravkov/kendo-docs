@@ -177,7 +177,7 @@ A reference item to append the new item in.
 
 #### Returns
 
-`Menu` Returns the Menu object to support chaining.
+`kendo.ui.Menu` Returns the Menu object to support chaining.
 
 ### close
 
@@ -198,7 +198,7 @@ Target item selector.
 
 #### Returns
 
-`Menu` Returns the Menu object to support chaining.
+`kendo.ui.Menu` Returns the Menu object to support chaining.
 
 ### destroy
 Prepares the **Menu** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
@@ -236,7 +236,7 @@ Desired state
 
 #### Returns
 
-`Menu` Returns the Menu object to support chaining.
+`kendo.ui.Menu` Returns the Menu object to support chaining.
 
 ### insertAfter
 
@@ -286,7 +286,7 @@ A reference item to insert the new item after.
 
 #### Returns
 
-`Menu` Returns the Menu object to support chaining.
+`kendo.ui.Menu` Returns the Menu object to support chaining.
 
 ### insertBefore
 
@@ -336,7 +336,7 @@ A reference item to insert the new item before
 
 #### Returns
 
-`Menu` Returns the Menu object to support chaining.
+`kendo.ui.Menu` Returns the Menu object to support chaining.
 
 ### open
 
@@ -357,7 +357,7 @@ Target item selector.
 
 #### Returns
 
-`Menu` Returns the Menu object to support chaining.
+`kendo.ui.Menu` Returns the Menu object to support chaining.
 
 ### remove
 
@@ -378,7 +378,7 @@ Target item selector.
 
 #### Returns
 
-`Menu` Returns the Menu object to support chaining.
+`kendo.ui.Menu` Returns the Menu object to support chaining.
 
 ## Events
 
