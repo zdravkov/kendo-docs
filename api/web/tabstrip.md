@@ -264,7 +264,7 @@ HTML string or array of such strings or JSON.
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ### contentElement
 
@@ -323,7 +323,7 @@ The target tab(s), specified as a selector, to be disabled.
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ### enable
 
@@ -343,7 +343,7 @@ Desired state of the tab(s) specified by the selector; enabled (**true**) or dis
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ### insertAfter
 
@@ -389,7 +389,7 @@ A reference tab to insert the new item after.
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ### insertBefore
 
@@ -435,7 +435,7 @@ A reference tab to insert the new item before
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ### reload
 
@@ -449,7 +449,7 @@ The target tab(s), specified as a selector, to be reloaded via AJAX.
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ### remove
 
@@ -467,7 +467,7 @@ The target tab(s), specified as a selector, to be removed.
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ### select
 
@@ -491,7 +491,7 @@ The target tab(s), specified as a selector or index in the tab group.
 
 #### Returns
 
-`TabStrip` Returns the TabStrip object to support chaining.
+`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
 
 ## Events
 
