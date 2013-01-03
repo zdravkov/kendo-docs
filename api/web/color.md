@@ -107,6 +107,7 @@ Opens the popup element with the color selector.
 
 Toggles the popup.
 
+<a name="value"></a>
 ### value
 
 Get or set the selected color. If no argument is given, this returns the
@@ -143,6 +144,115 @@ not necessarily the "final" value; for example this event triggers
 when the sliders in the HSV selector are dragged, but then pressing
 ESC would cancel the selection and the color will revert to the
 original value.
+
+# kendo.ui.ColorPalette
+
+This is the widget used by the color picker to display the simple,
+web-safe, or a custom color palette.  You can use it independently if
+you need such a widget directly in the page somewhere, rather than in
+a drop-down.
+
+## Example
+
+    <div id="container"></div>
+
+    <script>
+      $("#container").kendoColorPalette();
+    </script>
+
+## Configuration
+
+### palette `String | Array` *(default: "basic")*
+
+Specifies the color palette to display.  It can be a string with
+comma-separated colors in hex representation, an array of [Color][]
+objects or of strings that [parseColor][] understands.  As a shortcut,
+you can pass "basic" to get the simple palette (this is the default)
+or "websafe" to get the Web-safe palette.
+
+### columns `Number` *(default: 10)*
+
+The number of columns to display.  When you pass "websafe" this will
+automatically default to 18.
+
+## Methods
+
+### value
+### color
+
+See [value and color](#value) methods in `ColorPicker`.
+
+## Events
+
+### cancel
+
+Triggers when the ESC key is pressed on the focused widget.
+
+### change
+
+Triggers when a new color has been changed.  This happens when ENTER
+is pressed on the focused widget, or when a color is clicked.
+
+### select
+
+Triggers when the color is changed with the arrow keys.  The widget's
+`value()` is not updated at this point, to retrieve the currently
+selected color use `event.value` (it will be a [Color][] object).
+
+# kendo.ui.ColorHSV
+
+This is the HSV color selector, which is used by default in the
+`ColorPicker`'s popup when there is no `palette`.
+
+## Configuration
+
+### opacity `Boolean` *(default: false)*
+
+Specifies whether we should display the opacity slider to allow
+selection of transparency.
+
+### buttons `Boolean` *(default: true)*
+
+Specifies whether we should display the Apply / Cancel buttons.
+
+### preview `Boolean` *(default: true)*
+
+Specifies whether we should display the preview bar which displays the
+current color and the input field.
+
+### messages `Object`
+
+Allows customization of "Apply" / "Cancel" labels.
+
+## Methods
+
+### focus
+
+Focuses the widget.
+
+### value
+### color
+
+See [value and color](#value) methods in `ColorPicker`.
+
+## Events
+
+### change
+
+Triggers when a new color is selected.  This happens when Apply is
+clicked, or when ENTER is pressed on the focused widget.
+
+### select
+
+Triggers when the color in the widget is modified by means of dragging
+the sliders.  The widget's `value()` is not updated at this point, to
+retrieve the selected color use `event.value` (it will be a [Color][]
+object).
+
+### cancel
+
+Triggers when selection is canceled by clicking the Cancel button or
+by pressing ESC on the focused widget.
 
 [parseColor]: ../framework/kendo#parseColor
 [Color]: ../framework/kendo#Color
