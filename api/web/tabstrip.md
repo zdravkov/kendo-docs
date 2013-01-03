@@ -276,7 +276,7 @@ Obtains the DOM element representing a tab by its index in the **TabStrip**.
 
 #### Parameters
 
-##### itemIndex `int`
+##### itemIndex `Number`
 
 The index of the tab in the TabStrip.
 
