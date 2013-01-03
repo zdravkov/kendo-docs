@@ -484,7 +484,7 @@ currently selected tab.
 
 #### Parameters
 
-##### element `Selector/Index`
+##### element `Selector|Number`
 
 or index
 The target tab(s), specified as a selector or index in the tab group.
