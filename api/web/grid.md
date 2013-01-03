@@ -1243,9 +1243,9 @@ Changes the position of the specified column.
 
 #### Parameters
 
-##### destIndex `number`
+##### destIndex `Number`
 
-##### column `grid column`
+##### column `Object`
 
 ### saveChanges
 
