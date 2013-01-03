@@ -193,7 +193,7 @@ A reference item to append the new item in
 
 #### Returns
 
-`PanelBar` Returns the PanelBar object to support chaining.
+`kendo.ui.PanelBar` Returns the PanelBar object to support chaining.
 
 ### collapse
 
@@ -226,7 +226,7 @@ when collapsing items.
 
 #### Returns
 
-`PanelBar` Returns the PanelBar object to support chaining.
+`kendo.ui.PanelBar` Returns the PanelBar object to support chaining.
 
 ### destroy
 Prepares the **PanelBar** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
@@ -299,7 +299,7 @@ Temporariliy enables (**true**) or disables (**false**) any visual animation(s) 
 
 #### Returns
 
-`PanelBar` Returns the PanelBar object to support chaining.
+`kendo.ui.PanelBar` Returns the PanelBar object to support chaining.
 
 ### insertAfter
 
@@ -400,7 +400,7 @@ A reference item to insert the new item before.
 
 #### Returns
 
-`PanelBar` Returns the PanelBar object to support chaining.
+`kendo.ui.PanelBar` Returns the PanelBar object to support chaining.
 
 ### reload
 
