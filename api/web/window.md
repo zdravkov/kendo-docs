@@ -128,7 +128,7 @@ Centers a **Window** within the viewport.
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### close
 
@@ -140,7 +140,7 @@ Closes a Window.
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### content
 
@@ -165,7 +165,7 @@ The content of the Window.
 
 #### Returns
 
-`Window` If content is provided, this method will return the (Kendo UI) Window object to support chaining. Otherwise,
+`kendo.ui.Window` If content is provided, this method will return the (Kendo UI) Window object to support chaining. Otherwise,
 it will return the current content of the (Kendo UI) Window.
 
 ### destroy
@@ -182,7 +182,7 @@ Maximizes a Window to the entire viewing area of the user agent. Triggers the re
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### minimize
 
@@ -194,7 +194,7 @@ Maximizes a Window to its title bar.
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### open
 
@@ -206,7 +206,7 @@ Opens a Window.
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### refresh
 
@@ -259,7 +259,7 @@ Indicates whether the content should be fetched within an iframe, or with AJAX a
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### restore
 
@@ -271,7 +271,7 @@ Restores a maximized or minimized Window to its previous state. Triggers the res
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### setOptions
 
@@ -309,7 +309,7 @@ The title of the Window.
 
 #### Returns
 
-`Window` If a title is provided, this method will return the (Kendo UI) Window object to support chaining. Otherwise,
+`kendo.ui.Window` If a title is provided, this method will return the (Kendo UI) Window object to support chaining. Otherwise,
 it will return the current title of the (Kendo UI) Window.
 
 ### toFront
@@ -322,7 +322,7 @@ Brings forward a Window to the top of the z-index.
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ### toggleMaximization
 
@@ -334,7 +334,7 @@ Toggles a Window between a maximized and restored state. Triggers the resize eve
 
 #### Returns
 
-`Window` Returns the (Kendo UI) Window object to support chaining.
+`kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
 ## Events
 
