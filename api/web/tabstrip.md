@@ -383,7 +383,7 @@ Inserts a newly-created tab after a specified tab.
 Target tab, specified as a JSON object. You can pass tab text, content or contentUrl here. Can handle an
 HTML string or array of such strings or JSON.
 
-##### referenceTab `Item`
+##### referenceTab `Selector`
 
 A reference tab to insert the new item after.
 
@@ -429,7 +429,7 @@ Inserts a newly-created tab before a specified tab.
 Target tab, specified as a JSON object. You can pass tab text, content or contentUrl here. Can handle an
 HTML string or array of such strings or JSON.
 
-##### referenceTab `Item`
+##### referenceTab `Selector`
 
 A reference tab to insert the new item before
 

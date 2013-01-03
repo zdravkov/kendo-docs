@@ -187,7 +187,7 @@ Appends an item to the PanelBar.
 Target item, specified as the JSON representation of an object. You can pass item text, content or
 contentUrl here. Can handle an HTML string or array of such strings or JSON.
 
-##### referenceItem `Item`
+##### referenceItem `Selector`
 
 A reference item to append the new item in
 
@@ -345,7 +345,7 @@ Inserts a PanelBar item after the specified referenceItem
 
 Target item, specified as a JSON object. You can pass item text, content or contentUrl here. Can handle an HTML string or array of such strings or JSON.
 
-##### referenceItem `Item`
+##### referenceItem `Selector`
 
 A reference item to insert the new item after
 
@@ -394,7 +394,7 @@ Inserts a PanelBar item before the specified referenceItem
 Target item, specified as a JSON object. You can pass item text, content or contentUrl here. Can handle an
 TML string or array of such strings or JSON.
 
-##### referenceItem `Item`
+##### referenceItem `Selector`
 
 A reference item to insert the new item before.
 

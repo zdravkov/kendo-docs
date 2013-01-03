@@ -171,7 +171,7 @@ Appends an item to a **Menu** in the specified referenceItem's sub menu.
 
 Target item, specified as a JSON object. Can also handle an array of such objects.
 
-##### referenceItem `Item`
+##### referenceItem `Selector`
 
 A reference item to append the new item in.
 
