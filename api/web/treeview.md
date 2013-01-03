@@ -262,7 +262,7 @@ TreeView.
 
 A JSON-formatted string or selector that specifies the node to be appended.
 
-##### parentNode `Node` *(optional)*
+##### parentNode `Element` *(optional)*
 
 The node that will contain the newly appended node. If not specified, the new node will be appended to the
 root group of the TreeView.
@@ -302,7 +302,7 @@ See also: [getting the node data in the select event handler](/getting-started/w
 
 #### Parameters
 
-##### node `jQueryObject | DomElement | Selector`
+##### node `jQuery | Element | Selector`
 
 The element or selector that specifies a node.
 
@@ -421,7 +421,7 @@ The text that is being searched for.
 
 #### Returns
 
-`jQueryObject` All nodes that have the text.
+`jQuery` All nodes that have the text.
 
 ### insertAfter
 
@@ -444,7 +444,7 @@ TreeView.
 
 A JSON-formatted string or selector that specifies the node to be inserted.
 
-##### referenceNode `Node`
+##### referenceNode `Element`
 
 The node that will be preceed the newly-appended node.
 
@@ -469,7 +469,7 @@ TreeView.
 
 A JSON-formatted string or selector that specifies the node to be inserted.
 
-##### referenceNode `Node`
+##### referenceNode `Element`
 
 The node that follows the inserted node.
 
@@ -525,7 +525,7 @@ If provided, the node of a TreeView that should be selected.
 
 #### Returns
 
-`Node` The selected node of a TreeView.
+`Element` The selected node of a TreeView.
 
 ### setDataSource
 
@@ -591,7 +591,7 @@ Triggered before a subgroup gets collapsed.
 
 #### Event Data
 
-##### e.node `Node`
+##### e.node `Element`
 
 The collapsed node
 
@@ -601,7 +601,7 @@ Triggered after the dataSource change event has been processed (adding/removing 
 
 #### Event Data
 
-##### e.node `jQueryObject`
+##### e.node `jQuery`
 
 The node whose children have been changed. If the changes have occured on the root level, this parameter is undefined.
 
@@ -619,7 +619,7 @@ Triggered while a node is being dragged.
 
 #### Event Data
 
-##### e.sourceNode `Node`
+##### e.sourceNode `Element`
 
 The node that is being dragged.
 
@@ -665,11 +665,11 @@ Triggered after a node has been dropped.
 
 #### Event Data
 
-##### e.sourceNode `Node`
+##### e.sourceNode `Element`
 
 The node that is being dropped.
 
-##### e.destinationNode `Node`
+##### e.destinationNode `Element`
 
 The node that the sourceNode is being dropped upon.
 
@@ -691,7 +691,7 @@ Triggered before the dragging of a node starts.
 
 #### Event Data
 
-##### e.sourceNode `Node`
+##### e.sourceNode `Element`
 
 The node that will be dragged.
 
@@ -701,11 +701,11 @@ Triggered when a node is being dropped.
 
 #### Event Data
 
-##### e.sourceNode `Node`
+##### e.sourceNode `Element`
 
 The node that is being dropped.
 
-##### e.destinationNode `Node`
+##### e.destinationNode `Element`
 
 The node that the sourceNode is being dropped upon.
 
@@ -738,7 +738,7 @@ Triggered before a subgroup gets expanded.
 
 #### Event Data
 
-##### e.node `Node`
+##### e.node `Element`
 
 The expanded node
 
@@ -748,7 +748,7 @@ Triggered when a node gets selected.
 
 #### Event Data
 
-##### e.node `Node`
+##### e.node `Element`
 
 The selected node
 
@@ -758,6 +758,6 @@ Triggered when the user moves the focus on another node
 
 #### Event Data
 
-##### e.node `Node`
+##### e.node `Element`
 
 The focused node
