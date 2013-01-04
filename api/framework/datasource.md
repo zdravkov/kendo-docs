@@ -1810,7 +1810,7 @@ Fires when data request is to be made.
 
 #### Event Data
 
-##### e.sender `DataSource`
+##### e.sender `kendo.data.DataSource`
 
 Reference to the dataSource object instance.
 
