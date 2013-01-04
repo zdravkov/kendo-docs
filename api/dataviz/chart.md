@@ -4659,3 +4659,54 @@ The axis name is used as a key.
 
 The original user event that triggered the zoom action.
 
+### selectStart
+
+Fires when the user start to dragging the drag handle.
+
+#### Event Data
+
+##### e.from `Object`
+
+The lower boundary of the selected range.
+
+##### e.to `Object`
+
+### select
+
+Fires when the user drags the drag handle to a new position.
+
+#### Event Data
+
+##### e.from `Object`
+
+The lower boundary of the selected range.
+
+##### e.to `Object`
+
+The upper boundary of the selected range.
+
+#### Example
+
+    $("#chart").kendoChart({
+        select: onSelect
+        ...
+    }
+
+    function onSelect(e) {
+        ...
+    }
+
+### selectEnd
+
+Fires when the user stops dragging the drag handle.
+
+#### Event Data
+
+##### e.from `Object`
+
+The lower boundary of the selected range.
+
+##### e.to `Object`
+
+The upper boundary of the selected range.
+
