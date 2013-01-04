@@ -364,7 +364,7 @@ Triggered when an AJAX request for content fails.
 
 #### Arguments
 
-##### xhr `XmlHttpRequest`
+##### xhr `jqXHR`
 
 The XHR request object, as returned from [jQuery.ajax](http://api.jquery.com/jQuery.ajax/)
 
