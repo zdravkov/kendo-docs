@@ -255,7 +255,7 @@ Triggered when a pane of a Splitter is collapsed.
 
     // event handler for expand
     var onCollapse = function(e) {
-        // access the collapsed item via e.pane (HTMLElement)
+        // access the collapsed item via e.pane (Element)
     };
 
     // attach collapse event handler during initialization
@@ -270,7 +270,7 @@ Triggered when a pane of a Splitter is collapsed.
 
     // event handler for collapse
     var onExpand = function(e) {
-        // access the collapsed item via e.pane (HTMLElement)
+        // access the collapsed item via e.pane (Element)
     };
 
     // attach collapse event handler via bind()
@@ -293,7 +293,7 @@ Triggered when the content for a pane has finished loading.
 
     // event handler for contentLoad
     var onContentLoad = function(e) {
-        // access the loaded pane via e.pane (HTMLElement)
+        // access the loaded pane via e.pane (Element)
     };
 
     // attach contentLoad event handler during initialization
@@ -308,7 +308,7 @@ Triggered when the content for a pane has finished loading.
 
     // event handler for contentLoad
     var onContentLoad = function(e) {
-        // access the loaded pane via e.pane (HTMLElement)
+        // access the loaded pane via e.pane (Element)
     };
 
     // attach contentLoad event handler via bind()
@@ -319,7 +319,7 @@ Triggered when the content for a pane has finished loading.
 
 #### Event Data
 
-##### e.pane `HTMLElement`
+##### e.pane `Element`
 
 The pane whose content has been loaded.
 
@@ -331,7 +331,7 @@ Triggered when a pane of a Splitter is expanded.
 
     // event handler for expand
     var onExpand = function(e) {
-        // access the expanded item via e.pane (HTMLElement)
+        // access the expanded item via e.pane (Element)
     };
 
     // attach expand event handler during initialization
@@ -346,7 +346,7 @@ Triggered when a pane of a Splitter is expanded.
 
     // event handler for expand
     var onExpand = function(e) {
-        // access the expanded item via e.pane (HTMLElement)
+        // access the expanded item via e.pane (Element)
     };
 
     // attach expand event handler via bind()
