@@ -11,6 +11,14 @@ publish: true
 
 See the [DataSource configuration](/api/framework/datasource#configuration) for all inherited configuration.
 
+### schema `Object
+
+The schema configuration of the HierarchicalDataSource.
+
+### schema.model `Object`
+
+The model configuration of the HierarchicalDataSource.
+
 ### schema.model.hasChildren `Boolean | String | Function` *(default: false)*
 
 Specifies whether the model might have children and might be loaded. Applicable when the rendering of a
@@ -69,7 +77,7 @@ DataSource.
 
 #### Event Data
 
-##### e.node `Node`
+##### e.node `kendo.data.Node`
 
 If the event was triggered by a child datasource, this field holds a reference to the parent node.
 
