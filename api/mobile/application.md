@@ -136,7 +136,7 @@ Get a reference to the current view's scroller widget instance.
 
 #### Returns
 
-`Scroller` the scroller widget instance.
+`kendo.mobile.ui.Scroller` the scroller widget instance.
 
 ### showLoading
 
@@ -155,4 +155,4 @@ Get a reference to the current view.
 
 #### Returns
 
-`View` the view instance.
+`kendo.mobile.ui.View` the view instance.

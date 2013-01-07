@@ -51,7 +51,7 @@ Navigate the local or remote view.
 
     <div data-role="pane" id="main-pane">
     </div>
-    
+
     <script>
     var pane = $("#main-pane").data("kendoMobilePane");
     pane.navigate("settings.html");
@@ -62,7 +62,7 @@ Navigate the local or remote view.
     <div data-role="pane" id="main-pane">
       <div data-role="view" id="foo"> ... </div>
     </div>
-    
+
     <script>
     var pane = $("#main-pane").data("kendoMobilePane");
     pane.navigate("#foo");
@@ -89,7 +89,7 @@ Get a reference to the current view.
 
 #### Returns
 
-`View` the view instance.
+`kendo.mobile.ui.View` the view instance.
 
 ## Events
 
@@ -109,6 +109,6 @@ Fires after the pane displays a view.
 
 #### Event Data
 
-##### e.view `View`
+##### e.view `kendo.mobile.ui.View`
 
 The displayed view
