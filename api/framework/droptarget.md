@@ -29,7 +29,7 @@ Fires when draggable moves over the drop target.
 
 #### Event Data
 
-##### e.draggable `jQuery`
+##### e.draggable `kendo.ui.Draggable`
 
 Reference to the draggable that enters the drop target.
 
@@ -39,7 +39,7 @@ Fires when draggable moves out of the drop target.
 
 #### Event Data
 
-##### e.draggable `jQuery`
+##### e.draggable `kendo.ui.Draggable`
 
 Reference to the draggable that leaves the drop target.
 
@@ -49,11 +49,7 @@ Fires when draggable is dropped over the drop target.
 
 #### Event Data
 
-##### e.draggable `jQuery`
+##### e.draggable `kendo.ui.Draggable`
 
 Reference to the draggable that is dropped over the drop target.
-
-##### e.draggable.currentTarget `jQuery`
-
-The element that the drag and drop operation started from.
 
