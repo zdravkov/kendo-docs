@@ -188,6 +188,11 @@ automatically default to 18.
 
 See [value and color](#value) methods in `ColorPicker`.
 
+### enable
+
+Enables or disables the widget.  It will enable it with no arguments
+or with a `true` argument, or disable with a `false` argument.
+
 ## Events
 
 ### cancel
@@ -240,6 +245,11 @@ Focuses the widget.
 ### color
 
 See [value and color](#value) methods in `ColorPicker`.
+
+### enable
+
+Enables or disables the widget.  It will enable it with no arguments
+or with a `true` argument, or disable with a `false` argument.
 
 ## Events
 
