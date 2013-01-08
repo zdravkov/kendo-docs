@@ -1593,7 +1593,7 @@ Otherwise operations are executed over the available data.
 
 #### Parameters
 
-##### options `Object`
+##### options `Object` *(optional)*
 
 Contains the settings for the operations.
 
@@ -1615,7 +1615,7 @@ Read data into the DataSource using the `transport.read` setting.
 
 #### Parameters
 
-##### data `Object`
+##### data `Object` *(optional)*
 
 Optional data to pass to the remote service configured via `transport.read`.
 
