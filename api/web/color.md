@@ -122,6 +122,12 @@ This does not trigger the "change" event.
 
 Like `value()`, but it returns a `Color` object.
 
+### enable
+
+Set the widget's `enabled` state.  Called with no arguments, this
+method will ensure that the widget gets enabled.  Pass a `false`
+argument to disable it.
+
 #### Parameters
 
 ##### color `String`
