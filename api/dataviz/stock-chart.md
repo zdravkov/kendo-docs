@@ -47,6 +47,10 @@ Omitting the array and specifying a single series is also acceptable.
     })
     </p>
 
+### navigator.visible `Boolean`*(default: true)*
+
+The visibility of the navigator.
+
 ### navigator.series.type `String`
 
 The type of the series. Available types:
@@ -746,6 +750,43 @@ The lower boundary of the selected range.
 ### navigator.select.to `Date`|`String`
 
 The upper boundary of the selected range.
+
+### navigator.hint `Object`
+
+Default options for the navigator hint.
+
+### navigator.hint.visible `Boolean`*(default: true)*
+
+The visibility of the hint.
+
+### navigator.hint.template `String | Function`
+
+The hint template.
+Template variables:
+
+*   **from** - the value
+
+#### Example
+
+    // chart intialization
+    $("#stock-chart").kendoStockChart({
+         navigator: {
+            hint: {
+                // hint template
+                template: "From: #= from # To: #= to #"
+            }
+         },
+         ...
+    });
+
+### navigator.hint.format `String`
+
+The format of the hint.
+
+#### Example
+
+    //sets format of the hint
+    format: "C"
 
 ### axisDefaults `Object`
 
