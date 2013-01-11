@@ -764,7 +764,8 @@ The visibility of the hint.
 The hint template.
 Template variables:
 
-*   **from** - the value
+*   **from** - The lower boundary of the selected range
+*   **to** - Theupper boundary of the selected range
 
 #### Example
 
@@ -786,7 +787,7 @@ The format of the hint.
 #### Example
 
     //sets format of the hint
-    format: "C"
+    format: "From: {0:d} To: {1:d}"
 
 ### axisDefaults `Object`
 
