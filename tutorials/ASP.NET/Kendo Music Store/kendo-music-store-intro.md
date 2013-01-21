@@ -22,10 +22,5 @@ The project is for use with Microsoft Visual Studio 2012, and requires MVC 4 and
 ## Explore the Tutorial
 
 Please use the tree navigation at the left to navigate the sections of this tutorial.
-It is split into two major applications.
-
-The "Web" application demonstrates Kendo UI Web and is intended for desktop browsers.
 
 ![kendo-music-store-intro-web-screenshot](images/kendo-music-store-intro-web-screenshot.png)
-
-The "Mobile" application demonstrates Kendo UI Mobile and is intended for phones and tablets.
