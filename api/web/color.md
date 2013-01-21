@@ -1,6 +1,6 @@
 ---
-title: kendo.ui.Color
-slug: web-kendo.ui.calendar
+title: kendo.ui.ColorPicker
+slug: web-kendo.ui.colorpicker
 tags: api,web
 publish: true
 ---
@@ -43,6 +43,10 @@ The number of columns to show in the simple color dropdown.  For the
 "basic" and "websafe" palettes this is automatically initialized; if
 you pass a custom palette then you can set this to some value that
 makes sense for your colors.
+
+### size `Number`*(default: 14)*
+
+The size (width and height) of a color cell for the Palette picker.
 
 ### messages `Object`
 
@@ -180,6 +184,10 @@ or "websafe" to get the Web-safe palette.
 
 The number of columns to display.  When you pass "websafe" this will
 automatically default to 18.
+
+### size `Number` *(default: 14)*
+
+The size of a color cell.
 
 ## Methods
 
