@@ -1316,7 +1316,7 @@ Switch the current edited row into dislay mode and save changes made to the data
 
 ### select
 
-Selects the specified Grid rows/cells. If called without arguments - returns the selected rows/cells.
+Gets/Sets the selected rows/cells.
 
 #### Example
 
@@ -1324,6 +1324,9 @@ Selects the specified Grid rows/cells. If called without arguments - returns the
     var grid = $("#grid").data("kendoGrid");
     // selects first grid item
     grid.select(grid.tbody.find(">tr:first"));
+
+#### Returns
+`jQuery` the selected rows or cells.
 
 #### Parameters
 
