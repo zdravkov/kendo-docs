@@ -95,7 +95,7 @@ The position relative to the target element, at which the tooltip will be shown.
 
 Specify the delay in milliseconds before the tooltip is shown. This option is ignored if showOn is set to "click" or "focus".
 
-### showOn `String`*(default: "mouseenter")*
+### showOn `String`*(default: mouseenter)*
 
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
 
@@ -105,7 +105,7 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
 
 Shows the tooltip for given target.
 
-#### Get the existing content of the Window
+#### Example
 
     var kendoTooltip = $("#content").data("kendoTooltip");
     kendoTooltip.show(targetElement);
@@ -146,12 +146,12 @@ Triggered when a Tooltip is hidden
 
 Triggered when an AJAX request for content fails.
 
-#### Arguments
+#### Event Data
 
-##### xhr `jqXHR`
+##### e.xhr `jqXHR`
 
 The XHR request object, as returned from [jQuery.ajax](http://api.jquery.com/jQuery.ajax/)
 
-##### status `String`
+##### e.status `String`
 
 The status of the request, as returned from [jQuery.ajax](http://api.jquery.com/jQuery.ajax/)
