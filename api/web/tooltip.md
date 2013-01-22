@@ -112,7 +112,7 @@ Shows the tooltip for given target.
 
 #### Parameters
 
-##### element `jQuery element`
+##### element `jQuery`
 
 The target element for which the tooltip should be shown.
 
