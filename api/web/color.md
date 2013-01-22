@@ -218,7 +218,7 @@ Triggers when the color is changed with the arrow keys.  The widget's
 `value()` is not updated at this point, to retrieve the currently
 selected color use `event.value` (it will be a [Color][] object).
 
-# kendo.ui.ColorHSV
+# kendo.ui.FlatColorPicker
 
 This is the HSV color selector, which is used by default in the
 `ColorPicker`'s popup when there is no `palette`.
