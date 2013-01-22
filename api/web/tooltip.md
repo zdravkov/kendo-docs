@@ -126,7 +126,7 @@ Gets the tooltip current target.
 
 #### Returns
 
-The target element or null.
+`jQuery` The target element or null.
 
 ## Events
 
