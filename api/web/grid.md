@@ -1334,6 +1334,18 @@ Gets/Sets the selected rows/cells.
 
 Items to select.
 
+### setDataSource
+
+Sets the dataSource of an existing Grid and rebinds it.
+
+### Example
+
+    var dataSource = new kendo.data.DataSource({
+        //dataSource configuration
+    });
+
+    $("#grid").data("kendoGrid").setDataSource(dataSource);
+
 ### showColumn
 
 Shows the specified column.
