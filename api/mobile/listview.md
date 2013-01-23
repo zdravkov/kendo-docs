@@ -166,6 +166,17 @@ repaints the listview (works only in databound mode).
     // refreshes the listview
     listview.refresh();
 
+### setDataSource
+
+Sets the dataSource of an existing ListView and rebinds it.
+
+### Example
+
+    var dataSource = new kendo.data.DataSource({
+        //dataSource configuration
+    });
+
+    $("#listview").data("kendoMobileListView").setDataSource(dataSource);
 
 ### stopEndlessScrolling
 
