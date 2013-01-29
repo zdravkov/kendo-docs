@@ -15,6 +15,13 @@ Represents the Kendo UI Mobile ButtonGroup widget. Inherits from [kendo.mobile.u
 
 Defines the initially selected Button.
 
+### selectOn `String` *(default "down")*
+
+Sets the DOM event used to select the button. Accepts `"up"` as an alias for `touchend`, `mouseup` and `MSPointerUp` vendor specific events.
+
+By default, buttons are selected immediately after the user presses the button (on `touchstart` or `mousedown` or `MSPointerDown`, depending on the mobile device).
+However, if the widget is placed in a scrollable view, the user may accidentally press the button when scrolling. In such cases, it is recommended to set this option to `"up"`.
+
 ## Methods
 
 ### current
