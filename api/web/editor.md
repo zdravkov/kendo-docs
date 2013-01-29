@@ -146,7 +146,7 @@ The text which will be displayed when the end-user hovers the tool button with t
 
 The JavaScript function which will be executed when the end-user clicks the tool button.
 
-### imagebrowser `Object`
+### imageBrowser `Object`
 
 Configuration for image browser dialog.
 
@@ -166,33 +166,33 @@ Configuration for image browser dialog.
          }
      });
 
-### imagebrowser.fileTypes `String` *(default: "*.png,*.gif,*.jpg,*.jpeg")*
+### imageBrowser.fileTypes `String` *(default: "*.png,*.gif,*.jpg,*.jpeg")*
 
 Defines the allowed file extensions.
 
-### imagebrowser.path `String` *(default: "/")*
+### imageBrowser.path `String` *(default: "/")*
 
 Defines the initial folder to display, relative to the root.
 
-### imagebrowser.transport `Object`
+### imageBrowser.transport `Object`
 
 Specifies the settings for loading and saving data.
 
-### imagebrowser.transport.read `Object|String`
+### imageBrowser.transport.read `Object|String`
 
 Options or URL for remote image retrieval.
 
 > **Important:** The value of `transport.remote` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
-### imagebrowser.transport.thumbnailUrl `String`
+### imageBrowser.transport.thumbnailUrl `String`
 
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
 
-### imagebrowser.transport.uploadUrl `String`
+### imageBrowser.transport.uploadUrl `String`
 
 The URL which will handle the upload of the new images. If not specified the Upload button will not be displayed.
 
-### imagebrowser.transport.imageUrl `String|Function`
+### imageBrowser.transport.imageUrl `String|Function`
 
 The URL responsible for serving the original image. A file name placeholder should be specifed.
 
@@ -206,105 +206,105 @@ The URL responsible for serving the original image. A file name placeholder shou
          }
      });
 
-### imagebrowser.transport.destroy `Object|String`
+### imageBrowser.transport.destroy `Object|String`
 
 Options or URL which will handle the file and directory deletion. If not specified the delete button will not be present.
 
 > **Important:** The value of `transport.destroy` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
-### imagebrowser.transport.create `Object|String`
+### imageBrowser.transport.create `Object|String`
 
 Options or URL which will handle the directory creation. If not specified that create new folder button will not be present.
 
 > **Important:** The value of `transport.create` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
-### imagebrowser.schema `Object`
+### imageBrowser.schema `Object`
 
 Set the object responsible for describing the image raw data format.
 
-### imagebrowser.schema.model `Object`
+### imageBrowser.schema.model `Object`
 
 Set the object which describes the image/directory entry fields. Note that a name, type and size fields should be set.
 
-### imagebrowser.schema.model.id `String`
+### imageBrowser.schema.model.id `String`
 
 The name of the field which acts as an identifier.
 
-### imagebrowser.schema.model.fields `Object`
+### imageBrowser.schema.model.fields `Object`
 
-### imagebrowser.schema.model.fields.name `Object|String`
+### imageBrowser.schema.model.fields.name `Object|String`
 
 The field which contains the name of the image/directory
 
-### imagebrowser.schema.model.fields.name.field `String`
+### imageBrowser.schema.model.fields.name.field `String`
 
 The name of the field.
 
-### imagebrowser.schema.model.fields.name.parse `Function`
+### imageBrowser.schema.model.fields.name.parse `Function`
 
 Specifies the function which will parse the field value. If not set default parsers will be used.
 
-### imagebrowser.schema.model.fields.type `Object|String`
+### imageBrowser.schema.model.fields.type `Object|String`
 
 The field which contains the type of the entry. Either *f* for image or *d* for directory.
 
-### imagebrowser.schema.model.fields.type.parse `Function`
+### imageBrowser.schema.model.fields.type.parse `Function`
 
 Specifies the function which will parse the field value. If not set default parsers will be used.
 
-### imagebrowser.schema.model.fields.type.field `String`
+### imageBrowser.schema.model.fields.type.field `String`
 
 The name of the field.
 
-### imagebrowser.schema.model.fields.size `Object|String`
+### imageBrowser.schema.model.fields.size `Object|String`
 
 The field which contains the size of image.
 
-### imagebrowser.schema.model.fields.size.field `String`
+### imageBrowser.schema.model.fields.size.field `String`
 
 The name of the field.
 
-### imagebrowser.schema.model.fields.size.parse `Function`
+### imageBrowser.schema.model.fields.size.parse `Function`
 
 Specifies the function which will parse the field value. If not set default parsers will be used.
 
-### imagebrowser.messages `Object`
+### imageBrowser.messages `Object`
 
 Defines texts shown within the pager.
 
-### imagebrowser.messages.uploadFile `String`*(default: "Upload")*
+### imageBrowser.messages.uploadFile `String`*(default: "Upload")*
 
 Defines text for upload button.
 
-### imagebrowser.messages.orderBy `String`*(default: "Arrange by")*
+### imageBrowser.messages.orderBy `String`*(default: "Arrange by")*
 
 Defines text for order by label.
 
-### imagebrowser.messages.orderByName `String`*(default: "Name")*
+### imageBrowser.messages.orderByName `String`*(default: "Name")*
 
 Defines text for Name item of order by drop down list.
 
-### imagebrowser.messages.orderBySize `String`*(default: "Size")*
+### imageBrowser.messages.orderBySize `String`*(default: "Size")*
 
 Defines text for Size item of order by drop down list.
 
-### imagebrowser.messages.directoryNotFound `String`*(default: "A directory with this name was not found.")*
+### imageBrowser.messages.directoryNotFound `String`*(default: "A directory with this name was not found.")*
 
 Defines text for dialog shown when the directory not found error occurs.
 
-### imagebrowser.messages.emptyFolder `String`*(default: "Empty Folder")*
+### imageBrowser.messages.emptyFolder `String`*(default: "Empty Folder")*
 
 Defines text displayed when folder does not contain items.
 
-### imagebrowser.messages.deleteFile `String`*(default: "Are you sure you want to delete {0}?")*
+### imageBrowser.messages.deleteFile `String`*(default: "Are you sure you want to delete {0}?")*
 
 Defines text for dialog shown when the file or directory is deleted.
 
-### imagebrowser.messages.invalidFileType `String`*(default: "The selected file '{0}' is not valid. Supported file types are {1}.")*
+### imageBrowser.messages.invalidFileType `String`*(default: "The selected file '{0}' is not valid. Supported file types are {1}.")*
 
 Defines text for dialog shown when an invalid file is set for upload.
 
-### imagebrowser.messages.overwriteFile `String`*(default: "A file with name '{0}' already exists in the current directory. Do you want to overwrite it?")*
+### imageBrowser.messages.overwriteFile `String`*(default: "A file with name '{0}' already exists in the current directory. Do you want to overwrite it?")*
 
 Defines text for dialog shown when an already existing file is set for upload.
 
