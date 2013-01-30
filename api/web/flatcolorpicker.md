@@ -59,20 +59,7 @@ or with a `true` argument, or disable with a `false` argument.
 
 ### change
 
-Triggers when a new color is selected.  This happens when Apply is
-clicked, or when ENTER is pressed on the focused widget.
-
-### select
-
-Triggers when the color in the widget is modified by means of dragging
-the sliders.  The widget's `value()` is not updated at this point, to
-retrieve the selected color use `event.value` (it will be a [Color][]
-object).
-
-### cancel
-
-Triggers when selection is canceled by clicking the Cancel button or
-by pressing ESC on the focused widget.
+Triggers when a new color has been selected.
 
 [parseColor]: ../framework/kendo#parseColor
 [Color]: ../framework/kendo#Color
