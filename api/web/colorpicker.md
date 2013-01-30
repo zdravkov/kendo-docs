@@ -44,9 +44,17 @@ The number of columns to show in the simple color dropdown.  For the
 you pass a custom palette then you can set this to some value that
 makes sense for your colors.
 
-### tileSize `Number`*(default: 14)*
+### tileSize `Number | Object` *(default: 14)*
 
-The size (width and height) of a color cell for the Palette picker.
+The size of a color cell.
+
+### tileSize.width `Number` *(default: 14)*
+
+The width of the color cell.
+
+### tileSize.height `Number` *(default: 14)*
+
+The height of the color cell.
 
 ### messages `Object`
 
@@ -153,6 +161,14 @@ not necessarily the "final" value; for example this event triggers
 when the sliders in the HSV selector are dragged, but then pressing
 ESC would cancel the selection and the color will revert to the
 original value.
+
+### open
+
+Fires when the picker popup is opening.
+
+### close
+
+Fires when the picker popup is closing.
 
 [parseColor]: ../framework/kendo#parseColor
 [Color]: ../framework/kendo#Color
