@@ -1,0 +1,68 @@
+---
+title: GridFilterableOperatorsString
+slug: php-GridFilterableOperatorsString
+tags: api, php
+publish: true
+---
+
+# \Kendo\UI\GridFilterableOperatorsString
+
+A PHP class representing the string setting of GridFilterableOperators.
+
+
+## Methods
+
+### contains `string`
+
+Enable/Disable and set the text of the "Contains" filter option for columns with string values.
+
+
+#### Example - using string
+    $string = new \Kendo\UI\GridFilterableOperatorsString();
+    $string->contains('value');
+
+### doesnotcontain `string`
+
+Enable/Disable and set the text of the "Does not contain" filter option for columns with string values.
+
+
+#### Example - using string
+    $string = new \Kendo\UI\GridFilterableOperatorsString();
+    $string->doesnotcontain('value');
+
+### endswith `string`
+
+Enable/Disable and set the text of the "Ends with" filter option for columns with string values.
+
+
+#### Example - using string
+    $string = new \Kendo\UI\GridFilterableOperatorsString();
+    $string->endswith('value');
+
+### eq `string`
+
+Enable/Disable and set the text of the "Is equal to" filter option for columns with string values.
+
+
+#### Example - using string
+    $string = new \Kendo\UI\GridFilterableOperatorsString();
+    $string->eq('value');
+
+### neq `string`
+
+Enable/Disable and set the text of the "Is not equal to" filter option for columns with string values.
+
+
+#### Example - using string
+    $string = new \Kendo\UI\GridFilterableOperatorsString();
+    $string->neq('value');
+
+### startswith `string`
+
+Enable/Disable and set the text of the "Starts with" filter option for columns with string values.
+
+
+#### Example - using string
+    $string = new \Kendo\UI\GridFilterableOperatorsString();
+    $string->startswith('value');
+

@@ -1,0 +1,112 @@
+---
+title: ChartPane
+slug: php-ChartPane
+tags: api, php
+publish: true
+---
+
+# \Kendo\Dataviz\UI\ChartPane
+
+A PHP class representing the pane setting of ChartPanes.
+
+
+## Methods
+
+### background `string`
+
+The background color of the pane.
+
+
+#### Example - using string
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $pane->background('value');
+
+### border
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartPaneBorder|array`
+
+The border of the pane.
+
+
+#### Example - using \Kendo\Dataviz\UI\ChartPaneBorder
+
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $border = new \Kendo\Dataviz\UI\ChartPaneBorder();
+    $color = 'value';
+    $border->color($color);
+    $pane->border($border);
+
+#### Example - using array
+
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $color = 'value';
+    $pane->border(array('color' => $color));
+
+### height `float`
+
+The pane height in pixels.
+
+
+#### Example - using float
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $pane->height(1);
+
+### margin `float|`
+
+The margin of the pane.
+
+
+#### Example - using float
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $pane->margin(1);
+
+### name `string`
+
+The unique pane name.
+
+
+#### Example - using string
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $pane->name('value');
+
+### padding `float|`
+
+The padding of the pane.
+
+
+#### Example - using float
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $pane->padding(1);
+
+### title
+
+#### Parameters
+
+##### $value `string|\Kendo\Dataviz\UI\ChartPaneTitle|array`
+
+The pane title text or configuration.
+
+
+
+
+#### Example - using string
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $pane->title('value');
+
+
+#### Example - using \Kendo\Dataviz\UI\ChartPaneTitle
+
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
+    $background = 'value';
+    $title->background($background);
+    $pane->title($title);
+
+#### Example - using array
+
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $background = 'value';
+    $pane->title(array('background' => $background));
+

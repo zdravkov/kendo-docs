@@ -1,0 +1,379 @@
+---
+title: StockChartCategoryAxisItem
+slug: php-StockChartCategoryAxisItem
+tags: api, php
+publish: true
+---
+
+# \Kendo\Dataviz\UI\StockChartCategoryAxisItem
+
+A PHP class representing the categoryAxisItem setting of StockChartCategoryAxis.
+
+
+## Methods
+
+### autoBaseUnitSteps ``
+
+Specifies the discrete baseUnitStep values when
+either baseUnit is set to "fit" or baseUnitStep is set to "auto".The default configuration is as follows:Each setting can be overriden individually.
+
+
+### axisCrossingValue `|date|array`
+
+Category index at which the first value axis crosses this axis. (Only for object)Category indicies at which the value axes cross the category axis. (Only for array)Note: Specify an index greater than or equal to the number
+of categories to denote the far end of the axis.
+
+
+#### Example - using 
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->axisCrossingValue(new ());
+
+#### Example - using date
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->axisCrossingValue(new date());
+
+#### Example - using array
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->axisCrossingValue(new array());
+
+### baseUnit `string`
+
+The base time interval for the axis.
+The default baseUnit is determined automatically from the minimum difference
+between subsequent categories. Available options:Setting baseUnit to "fit" will set such base unit and baseUnitStep
+that the total number of categories does not exceed maxDateGroups.Series data is aggregated for the specified base unit by using the
+series.aggregate function.
+
+
+#### Example - using string
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->baseUnit('value');
+
+### baseUnitStep ``
+
+Sets the step (interval) between categories in base units.
+Specifiying "auto" will set the step to such value that the total number of categories does not exceed maxDateGroups.This option is ignored if baseUnit is set to "fit".
+
+
+### categories `array`
+
+Array of category names.
+
+
+#### Example - using array
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->categories(new array());
+
+### color `string`
+
+Color to apply to all axis elements. Any valid CSS color string will work here, including hex and rgb.
+Individual color settings for line and labels take priority.
+
+
+#### Example - using string
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->color('value');
+
+### field `string`
+
+The data field containing the category name.
+
+
+#### Example - using string
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->field('value');
+
+### justified `boolean`
+
+Positions categories and series points on major ticks. This removes the empty space before and after the series.This option is ignored if either column, ohlc or candlestick series are plotted on the axis.
+
+
+#### Example - using boolean
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->justified(true);
+
+### labels
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemLabels|array`
+
+Configures the axis labels.
+
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemLabels
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $labels = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemLabels();
+    $background = 'value';
+    $labels->background($background);
+    $categoryAxisItem->labels($labels);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $background = 'value';
+    $categoryAxisItem->labels(array('background' => $background));
+
+### line
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemLine|array`
+
+Configures the axis line. This will also effect major and minor ticks, but not gridlines.
+
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemLine
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $line = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemLine();
+    $color = 'value';
+    $line->color($color);
+    $categoryAxisItem->line($line);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $color = 'value';
+    $categoryAxisItem->line(array('color' => $color));
+
+### majorGridLines
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorGridLines|array`
+
+Configures the major grid lines. These are the lines that are an extension of the major ticks through the
+body of the chart.
+
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorGridLines
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $majorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorGridLines();
+    $color = 'value';
+    $majorGridLines->color($color);
+    $categoryAxisItem->majorGridLines($majorGridLines);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $color = 'value';
+    $categoryAxisItem->majorGridLines(array('color' => $color));
+
+### majorTicks
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorTicks|array`
+
+The major ticks of the axis.
+
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorTicks
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $majorTicks = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorTicks();
+    $size = 1;
+    $majorTicks->size($size);
+    $categoryAxisItem->majorTicks($majorTicks);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $size = 1;
+    $categoryAxisItem->majorTicks(array('size' => $size));
+
+### max ``
+
+The last date displayed on the axis.
+By default, the minimum date is the same as the last category.
+This is often used in combination with the min and roundToBaseUnit configuration options to
+set up a fixed date range.
+
+
+### maxDateGroups `float`
+
+Specifies the maximum number of groups (categories) to produce when
+either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.
+
+
+#### Example - using float
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->maxDateGroups(1);
+
+### min ``
+
+The first date displayed on the axis.
+By default, the minimum date is the same as the first category.
+This is often used in combination with the max and roundToBaseUnit configuration options to
+set up a fixed date range.
+
+
+### minorGridLines
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines|array`
+
+Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
+the body of the chart.Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid lines visibility being set to true.
+
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $minorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines();
+    $color = 'value';
+    $minorGridLines->color($color);
+    $categoryAxisItem->minorGridLines($minorGridLines);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $color = 'value';
+    $categoryAxisItem->minorGridLines(array('color' => $color));
+
+### minorTicks
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorTicks|array`
+
+The minor ticks of the axis.
+
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorTicks
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $minorTicks = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorTicks();
+    $size = 1;
+    $minorTicks->size($size);
+    $categoryAxisItem->minorTicks($minorTicks);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $size = 1;
+    $categoryAxisItem->minorTicks(array('size' => $size));
+
+### name `string`
+
+The unique axis name.
+
+
+#### Example - using string
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->name('value');
+
+### pane `string`
+
+The name of the pane that the axis should be rendered in.
+The axis will be rendered in the first (default) pane if not set.
+
+
+#### Example - using string
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->pane('value');
+
+### addPlotBand
+
+Adds one or more StockChartCategoryAxisItemPlotBand to the StockChartCategoryAxisItem.
+
+#### Parameters
+
+##### $value[, $value2, ...] `\Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand|array`
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $plotBand = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand();
+    $color = 'value';
+    $plotBand->color($color);
+    $categoryAxisItem->addPlotBand($plotBand);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $color = 'value';
+    $categoryAxisItem->addPlotBand(array('color' => $color));
+
+#### Example - adding more than one StockChartCategoryAxisItemPlotBand
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $first  = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand();
+    $second = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand();
+    $categoryAxisItem->addPlotBand($first, $second);
+
+### reverse `boolean`
+
+Reverses the axis direction -
+categories are listed from right to left and from top to bottom.
+
+
+#### Example - using boolean
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->reverse(true);
+
+### roundToBaseUnit `boolean`
+
+By default, the first and last dates will be rounded off to the nearest base unit.
+Specifying false for this option will disable this behavior.This option is most useful in combination with explicit min and max dates.It will be ignored if either column, ohlc or candlestick series are plotted on the axis.
+
+
+#### Example - using boolean
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->roundToBaseUnit(true);
+
+### title
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle|array`
+
+The title of the category axis.
+
+
+#### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
+    $background = 'value';
+    $title->background($background);
+    $categoryAxisItem->title($title);
+
+#### Example - using array
+
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $background = 'value';
+    $categoryAxisItem->title(array('background' => $background));
+
+### type `string`
+
+The axis type.
+
+
+#### Example - using string
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->type('value');
+
+### visible `boolean`
+
+The visibility of the axis.
+
+
+#### Example - using boolean
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->visible(true);
+
+### weekStartDay `float`
+
+Specifies the week start day when baseUnit is set to "weeks".
+Use the kendo.days constants to specify the day by name.
+
+
+#### Example - using float
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->weekStartDay(1);
+
