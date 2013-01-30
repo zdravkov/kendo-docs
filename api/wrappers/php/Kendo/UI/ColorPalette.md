@@ -10,7 +10,7 @@ publish: true
 A PHP class representing Kendo [ColorPalette](/api/web/colorpalette).
 
 
-## Configuration
+## Usage
 
 To use ColorPalette in a PHP page instantiate a new instance, configure it via the available
 configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
@@ -105,6 +105,7 @@ or "websafe" to get the Web-safe palette.
     $colorPalette->palette(new array());
 
 ### tileSize
+
 The size of a color cell.
 
 #### Returns
@@ -112,11 +113,27 @@ The size of a color cell.
 
 #### Parameters
 
-##### $value `float`
+##### $value `float|\Kendo\UI\ColorPaletteTileSize|array`
 
 
 
-#### Example 
+
+#### Example  - using float
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $colorPalette->tileSize(1);
+
+
+#### Example - using [\Kendo\UI\ColorPaletteTileSize](/api/wrappers/php/kendo/ui/colorpalettetilesize)
+
+    $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
+    $tileSize = new \Kendo\UI\ColorPaletteTileSize();
+    $height = 1;
+    $tileSize->height($height);
+    $colorPalette->tileSize($tileSize);
+
+#### Example - using array
+
+    $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
+    $height = 1;
+    $colorPalette->tileSize(array('height' => $height));
 

@@ -10,7 +10,7 @@ publish: true
 A PHP class representing Kendo [Window](/api/web/window).
 
 
-## Configuration
+## Usage
 
 To use Window in a PHP page instantiate a new instance, configure it via the available
 configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.

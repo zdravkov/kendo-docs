@@ -10,7 +10,7 @@ publish: true
 A PHP class representing Kendo [PanelBar](/api/web/panelbar).
 
 
-## Configuration
+## Usage
 
 To use PanelBar in a PHP page instantiate a new instance, configure it via the available
 configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.

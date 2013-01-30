@@ -10,7 +10,7 @@ publish: true
 A PHP class representing a JavaScript function. The \Kendo\JavaScriptFunction is commonly used for specifying
 event handlers of Kendo UI events or configuration settings that need a JavaScript function.
 
-## Configuration
+## Usage
 
 To create a \Kendo\JavaScriptFunction use its constructor and provide a string value which represents the JavaScript function.
 You can specify a function name or inline definition.

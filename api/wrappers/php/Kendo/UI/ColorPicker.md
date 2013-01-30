@@ -10,7 +10,7 @@ publish: true
 A PHP class representing Kendo [ColorPicker](/api/web/colorpicker).
 
 
-## Configuration
+## Usage
 
 To use ColorPicker in a PHP page instantiate a new instance, configure it via the available
 configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
@@ -83,6 +83,37 @@ picker.
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
+### close
+Fires when the picker popup is closing.
+
+#### Returns
+`\Kendo\UI\ColorPicker`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $colorPicker->close('function(e) { }');
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onClose(e) {
+            // handle the close event.
+        }
+    </script>
+    <?php
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $colorPicker->close('onClose');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $colorPicker->close(new \Kendo\JavaScriptFunction('function(e) { }'));
+
 ### columns
 The number of columns to show in the simple color dropdown.  For the
 "basic" and "websafe" palettes this is automatically initialized; if
@@ -131,6 +162,37 @@ type="color"> does not support opacity.
 #### Example 
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->opacity(true);
+
+### open
+Fires when the picker popup is opening.
+
+#### Returns
+`\Kendo\UI\ColorPicker`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $colorPicker->open('function(e) { }');
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onOpen(e) {
+            // handle the open event.
+        }
+    </script>
+    <?php
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $colorPicker->open('onOpen');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $colorPicker->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### palette
 When a non-null palette argument is supplied, the drop-down will be
@@ -204,20 +266,37 @@ original value.
     $colorPicker->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### tileSize
-The size (width and height) of a color cell for the Palette picker.
+
+The size of a color cell.
 
 #### Returns
 `\Kendo\UI\ColorPicker`
 
 #### Parameters
 
-##### $value `float`
+##### $value `float|\Kendo\UI\ColorPickerTileSize|array`
 
 
 
-#### Example 
+
+#### Example  - using float
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->tileSize(1);
+
+
+#### Example - using [\Kendo\UI\ColorPickerTileSize](/api/wrappers/php/kendo/ui/colorpickertilesize)
+
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $tileSize = new \Kendo\UI\ColorPickerTileSize();
+    $height = 1;
+    $tileSize->height($height);
+    $colorPicker->tileSize($tileSize);
+
+#### Example - using array
+
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $height = 1;
+    $colorPicker->tileSize(array('height' => $height));
 
 ### toolIcon
 A CSS class name to display an icon in the color picker button.  If

@@ -10,7 +10,7 @@ publish: true
 A PHP class representing Kendo [RadialGauge](/api/web/radialgauge).
 
 
-## Configuration
+## Usage
 
 To use RadialGauge in a PHP page instantiate a new instance, configure it via the available
 configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
