@@ -44,7 +44,7 @@ The number of columns to show in the simple color dropdown.  For the
 you pass a custom palette then you can set this to some value that
 makes sense for your colors.
 
-### size `Number`*(default: 14)*
+### tileSize `Number`*(default: 14)*
 
 The size (width and height) of a color cell for the Palette picker.
 

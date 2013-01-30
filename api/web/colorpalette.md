@@ -35,7 +35,7 @@ or "websafe" to get the Web-safe palette.
 The number of columns to display.  When you pass "websafe" this will
 automatically default to 18.
 
-### size `Number` *(default: 14)*
+### tileSize `Number` *(default: 14)*
 
 The size of a color cell.
 
