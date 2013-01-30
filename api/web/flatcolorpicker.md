@@ -1,0 +1,78 @@
+---
+title: kendo.ui.FlatColorPicker
+slug: web-kendo.ui.flatcolorpicker
+tags: api,web
+publish: true
+---
+
+# kendo.ui.FlatColorPicker
+
+This is the HSV color selector, which is used by default in the
+`ColorPicker`'s popup when there is no `palette`.
+
+## Configuration
+
+### opacity `Boolean` *(default: false)*
+
+Specifies whether we should display the opacity slider to allow
+selection of transparency.
+
+### buttons `Boolean` *(default: true)*
+
+Specifies whether we should display the Apply / Cancel buttons.
+
+### preview `Boolean` *(default: true)*
+
+Specifies whether we should display the preview bar which displays the
+current color and the input field.
+
+### messages `Object`
+
+Allows customization of "Apply" / "Cancel" labels.
+
+## Methods
+
+### focus
+
+Focuses the widget.
+
+### value
+
+Get or set the selected color. If no argument is given, this returns the
+currently selected color as a string in format #FFFFFF when the `opacity`
+option is off, or rgba(255, 255, 255, 1) when `opacity` is requested.
+
+If one argument is given, it selects the new color and updates the UI.  The
+argument can be a string in hex, rgb or rgba format, or a [Color][] object.
+This does not trigger the "change" event.
+
+### color
+
+Like `value()`, but it returns a `Color` object.
+
+### enable
+
+Enables or disables the widget.  It will enable it with no arguments
+or with a `true` argument, or disable with a `false` argument.
+
+## Events
+
+### change
+
+Triggers when a new color is selected.  This happens when Apply is
+clicked, or when ENTER is pressed on the focused widget.
+
+### select
+
+Triggers when the color in the widget is modified by means of dragging
+the sliders.  The widget's `value()` is not updated at this point, to
+retrieve the selected color use `event.value` (it will be a [Color][]
+object).
+
+### cancel
+
+Triggers when selection is canceled by clicking the Cancel button or
+by pressing ESC on the focused widget.
+
+[parseColor]: ../framework/kendo#parseColor
+[Color]: ../framework/kendo#Color
