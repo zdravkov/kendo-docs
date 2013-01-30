@@ -12,39 +12,51 @@ A PHP class representing the commandItem setting of GridColumnCommand.
 
 ## Methods
 
-### className `string`
-
+### className
 The CSS class of the command.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->className('value');
 
-### click `\Kendo\JavaScriptFunction`
-
+### click
 The JavaScript function executed when the user clicks the command button.
+#### Parameters
+
+##### $value `\Kendo\JavaScriptFunction`
 
 
-#### Example - using \Kendo\JavaScriptFunction
+
+#### Example 
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->click(new \Kendo\JavaScriptFunction('function() { }'));
 
-### name `string`
-
+### name
 The unique name of the command. The supported built-in commands are: "create", "cancel", "save", "destroy".
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->name('value');
 
-### text `string`
-
+### text
 The text displayed by the command.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->text('value');
 

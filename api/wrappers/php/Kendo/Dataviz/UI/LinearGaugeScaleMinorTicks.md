@@ -12,41 +12,53 @@ A PHP class representing the minorTicks setting of LinearGaugeScale.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the minor ticks.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $minorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks();
     $minorTicks->color('value');
 
-### size `float`
-
+### size
 The minor tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $minorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks();
     $minorTicks->size(1);
 
-### visible `boolean`
-
+### visible
 The visibility of the minor ticks.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $minorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks();
     $minorTicks->visible(true);
 
-### width `float`
-
+### width
 The width of the minor ticks.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $minorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks();
     $minorTicks->width(1);
 

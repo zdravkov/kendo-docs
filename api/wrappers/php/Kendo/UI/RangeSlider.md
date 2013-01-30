@@ -39,60 +39,78 @@ Fires when the rangeSlider value changes as a result of selecting a new value wi
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### largeStep `float`
-
+### largeStep
 The delta with which the value will change when the user presses the Page Up or Page Down key (the drag
 handle must be focused). Note: The allied largeStep will also set large tick for every large step.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->largeStep(1);
 
-### max `float`
-
+### max
 The maximum value of the RangeSlider.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->max(1);
 
-### min `float`
-
+### min
 The minimum value of the RangeSlider.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->min(1);
 
-### orientation `string`
-
+### orientation
 F
 The orientation of a RangeSlider; "horizontal" or
 "vertical".
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->orientation('value');
 
-### selectionEnd `float`
-
+### selectionEnd
 The selection end value of the RangeSlider.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->selectionEnd(1);
 
-### selectionStart `float`
-
+### selectionStart
 The selection start value of the RangeSlider.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->selectionStart(1);
 
@@ -123,23 +141,29 @@ Fires when the user drags the drag handle to a new position.
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->slide(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### smallStep `float`
-
+### smallStep
 The small step value of the RangeSlider. The underlying value will be changed when the end
 user (1) clicks on the increase or decrease buttons of the RangeSlider, (2) presses the
 arrow keys (the drag handle must be focused), or (3) drags the drag handle.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->smallStep(1);
 
-### tickPlacement `string`
-
+### tickPlacement
 Denotes the location of the tick marks in the RangeSlider. The available options are:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $rangeSlider = new \Kendo\UI\RangeSlider();
     $rangeSlider->tickPlacement('value');
 

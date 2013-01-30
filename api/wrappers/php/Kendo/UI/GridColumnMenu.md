@@ -12,21 +12,27 @@ A PHP class representing the columnMenu setting of Grid.
 
 ## Methods
 
-### columns `boolean`
-
+### columns
 Enable/disable columns section in column header menu.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columnMenu->columns(true);
 
-### filterable `boolean`
-
+### filterable
 Enable/disable filter section in column header menu.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columnMenu->filterable(true);
 
@@ -53,12 +59,15 @@ Sets the columnMenu messages.
     $columns = 'value';
     $columnMenu->messages(array('columns' => $columns));
 
-### sortable `boolean`
-
+### sortable
 Enable/disable sorting section in column header menu.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columnMenu->sortable(true);
 

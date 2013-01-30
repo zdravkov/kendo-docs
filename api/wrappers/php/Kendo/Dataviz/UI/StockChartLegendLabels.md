@@ -12,34 +12,43 @@ A PHP class representing the labels setting of StockChartLegend.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();
     $labels->color('value');
 
-### font `string`
-
+### font
 The font style of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();
     $labels->font('value');
 
-### template `string`
-
+### template
 The template of the labels.
 Template variables:
 *   text - the text the legend item.
 *   series - the data series.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();
     $labels->template('value');
 

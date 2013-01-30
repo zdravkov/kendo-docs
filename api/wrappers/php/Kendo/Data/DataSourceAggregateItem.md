@@ -12,21 +12,27 @@ A PHP class representing the aggregateItem setting of DataSourceAggregate.
 
 ## Methods
 
-### aggregate `string`
-
+### aggregate
 Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average"
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $aggregateItem = new \Kendo\Data\DataSourceAggregateItem();
     $aggregateItem->aggregate('value');
 
-### field `string`
-
+### field
 Specifies the field on which the aggregate will be calculated.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $aggregateItem = new \Kendo\Data\DataSourceAggregateItem();
     $aggregateItem->field('value');
 

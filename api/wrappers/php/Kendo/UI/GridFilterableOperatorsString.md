@@ -12,57 +12,75 @@ A PHP class representing the string setting of GridFilterableOperators.
 
 ## Methods
 
-### contains `string`
-
+### contains
 Enable/Disable and set the text of the "Contains" filter option for columns with string values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $string->contains('value');
 
-### doesnotcontain `string`
-
+### doesnotcontain
 Enable/Disable and set the text of the "Does not contain" filter option for columns with string values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $string->doesnotcontain('value');
 
-### endswith `string`
-
+### endswith
 Enable/Disable and set the text of the "Ends with" filter option for columns with string values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $string->endswith('value');
 
-### eq `string`
-
+### eq
 Enable/Disable and set the text of the "Is equal to" filter option for columns with string values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $string->eq('value');
 
-### neq `string`
-
+### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for columns with string values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $string->neq('value');
 
-### startswith `string`
-
+### startswith
 Enable/Disable and set the text of the "Starts with" filter option for columns with string values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $string->startswith('value');
 

@@ -12,33 +12,42 @@ A PHP class representing the tooltip setting of Slider.
 
 ## Methods
 
-### enabled `boolean`
-
+### enabled
 Disables (false) or enables (true) the tooltip of
 the Slider.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $tooltip = new \Kendo\UI\SliderTooltip();
     $tooltip->enabled(true);
 
-### format `string`
-
+### format
 Format string for the text of the tooltip. Note: The applied
 format will also influence the appearance of the Slider
 tick labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tooltip = new \Kendo\UI\SliderTooltip();
     $tooltip->format('value');
 
-### template `string`
-
+### template
 Template of the tooltip.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tooltip = new \Kendo\UI\SliderTooltip();
     $tooltip->template('value');
 

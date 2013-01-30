@@ -63,12 +63,15 @@ user interactions. Setting this option to false will disable all animations.
     $close = new \Kendo\UI\TabStripAnimationClose();
     $tabStrip->animation(array('close' => $close));
 
-### collapsible `boolean`
-
+### collapsible
 Specifies whether the TabStrip should be able to collapse completely when clicking an expanded tab.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->collapsible(true);
 
@@ -99,62 +102,80 @@ Triggered when content is fetched from an AJAX request.
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->contentLoad(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### dataContentField `string`
-
+### dataContentField
 Sets the field of the data item that provides the text content of
 the tab content element.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->dataContentField('value');
 
-### dataContentUrlField `string`
-
+### dataContentUrlField
 Sets the field of the data item that provides the URL for
 the ajax loaded tab content.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->dataContentUrlField('value');
 
-### dataImageUrlField `string`
-
+### dataImageUrlField
 Sets the field of the data item that provides the image URL of
 the tab.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->dataImageUrlField('value');
 
-### dataSpriteCssClass `string`
-
+### dataSpriteCssClass
 Sets the field of the data item that provides the CSS class of
 the tab.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->dataSpriteCssClass('value');
 
-### dataTextField `string`
-
+### dataTextField
 Sets the field of the data item that provides the text name of the tab.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->dataTextField('value');
 
-### dataUrlField `string`
-
+### dataUrlField
 Sets the field of the data item that provides the link URL for the
 tab.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tabStrip = new \Kendo\UI\TabStrip();
     $tabStrip->dataUrlField('value');
 

@@ -41,21 +41,27 @@ Adds one or more DataSourceGroupItemAggregate to the DataSourceGroupItem.
     $second = new \Kendo\Data\DataSourceGroupItemAggregate();
     $groupItem->addAggregate($first, $second);
 
-### dir `string`
-
+### dir
 Specifies the order of the groupped items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $groupItem->dir('value');
 
-### field `string`
-
+### field
 Specifies the field to group by.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $groupItem->field('value');
 

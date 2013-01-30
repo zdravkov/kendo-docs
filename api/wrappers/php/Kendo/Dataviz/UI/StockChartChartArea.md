@@ -12,12 +12,15 @@ A PHP class representing the chartArea setting of StockChart.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the chart area.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
     $chartArea->background('value');
 
@@ -44,39 +47,51 @@ The border of the chart area.
     $color = 'value';
     $chartArea->border(array('color' => $color));
 
-### height `float`
-
+### height
 The height of the chart area.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
     $chartArea->height(1);
 
-### margin `float|`
-
+### margin
 The margin of the chart area.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
     $chartArea->margin(1);
 
-### opacity `float`
-
+### opacity
 The background opacity of the chart area.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
     $chartArea->opacity(1);
 
-### width `float`
-
+### width
 The width of the chart area.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
     $chartArea->width(1);
 

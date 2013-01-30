@@ -39,68 +39,89 @@ Fires when the slider value changes as a result of selecting a new value with th
     $slider = new \Kendo\UI\Slider();
     $slider->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### decreaseButtonTitle `string`
-
+### decreaseButtonTitle
 The title of the decrease button of the Slider.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->decreaseButtonTitle('value');
 
-### increaseButtonTitle `string`
-
+### increaseButtonTitle
 The title of the increase button of the Slider.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->increaseButtonTitle('value');
 
-### largeStep `float`
-
+### largeStep
 The delta with which the value will change when the user presses the Page Up or Page Down key (the drag
 handle must be focused). Note: The allied largeStep will also set large tick for every large step.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->largeStep(1);
 
-### max `float`
-
+### max
 The maximum value of the Slider.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->max(1);
 
-### min `float`
-
+### min
 The minimum value of the Slider.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->min(1);
 
-### orientation `string`
-
+### orientation
 The orientation of a Slider: "horizontal" or "vertical".
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->orientation('value');
 
-### showButtons `boolean`
-
+### showButtons
 Can be used to show (true) or hide (false) the
 increase and decrease buttons of a Slider.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->showButtons(true);
 
@@ -131,23 +152,29 @@ Fires when the user drags the drag handle to a new position.
     $slider = new \Kendo\UI\Slider();
     $slider->slide(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### smallStep `float`
-
+### smallStep
 The small step value of the Slider. The underlying value will be changed when the end user
 (1) clicks on the increase or decrease buttons of the Slider, (2) presses the arrow keys
 (the drag handle must be focused), or (3) drags the drag handle.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->smallStep(1);
 
-### tickPlacement `string`
-
+### tickPlacement
 Denotes the location of the tick marks in the Slider. The available options are:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->tickPlacement('value');
 
@@ -174,12 +201,15 @@ Configuration of the Slider tooltip.
     $enabled = true;
     $slider->tooltip(array('enabled' => $enabled));
 
-### value `float`
-
+### value
 The underlying value of the Slider.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $slider = new \Kendo\UI\Slider();
     $slider->value(1);
 

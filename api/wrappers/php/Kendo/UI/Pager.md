@@ -12,21 +12,27 @@ A PHP class representing Kendo Pager.
 
 ## Methods
 
-### autoBind `boolean`
-
+### autoBind
 Indicates whether the pager refresh method will be called within its initialization.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->autoBind(true);
 
-### buttonCount `float`
-
+### buttonCount
 Defines the number of buttons displayed in the numeric pager.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->buttonCount(1);
 
@@ -77,30 +83,39 @@ Sets the data source of the dataSource.
     $schema = new \Kendo\Data\DataSourceSchema();
     $pager->dataSource(array('schema' => $schema));
 
-### info `boolean`
-
+### info
 Defines if a label showing current paging information will be displayed.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->info(true);
 
-### input `boolean`
-
+### input
 Defines if an input element which allows the user to navigate to given page will be displayed.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->input(true);
 
-### linkTemplate `string`
-
+### linkTemplate
 The template for page number links.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->linkTemplate('value');
 
@@ -127,52 +142,67 @@ Defines texts shown within the pager.
     $display = 'value';
     $pager->messages(array('display' => $display));
 
-### numeric `boolean`
-
+### numeric
 Defines if numeric portion of the pager will be shown.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->numeric(true);
 
-### pageSizes `boolean|array`
-
+### pageSizes
 Displays a list with predefined page sizes. An array of values to be displayed can be provided. If pageSize option is provided for DataSource then this pageSize value will be automaticaly selected in created selectbox.
+#### Parameters
+
+##### $value `boolean|array`
 
 
-#### Example - using boolean
+
+#### Example  - using boolean
     $pager = new \Kendo\UI\Pager();
     $pager->pageSizes(true);
 
-#### Example - using array
+#### Example  - using array
     $pager = new \Kendo\UI\Pager();
     $pager->pageSizes(new array());
 
-### previousNext `boolean`
-
+### previousNext
 Defines if buttons for navigating to the first, last, previous and next pages will be shown.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->previousNext(true);
 
-### refresh `boolean`
-
+### refresh
 Defines if a refresh button will be displayed. Click on that button will call DataSource read() method to get actual data.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->refresh(true);
 
-### selectTemplate `string`
-
+### selectTemplate
 The template for selectbox with predefined page sizes.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $pager = new \Kendo\UI\Pager();
     $pager->selectTemplate('value');
 

@@ -12,31 +12,40 @@ A PHP class representing the open setting of TabStripAnimation.
 
 ## Methods
 
-### duration `float`
-
+### duration
 The number of milliseconds used for the visual animation when a new tab is shown.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $open = new \Kendo\UI\TabStripAnimationOpen();
     $open->duration(1);
 
-### effects `string`
-
+### effects
 A whitespace-separated string of animation effects that are used when a new tab is shown. Options include
 "expand:vertical" and "fadeIn".
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $open = new \Kendo\UI\TabStripAnimationOpen();
     $open->effects('value');
 
-### show `boolean`
+### show
+
+#### Parameters
+
+##### $value `boolean`
 
 
 
-
-#### Example - using boolean
+#### Example 
     $open = new \Kendo\UI\TabStripAnimationOpen();
     $open->show(true);
 

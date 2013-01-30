@@ -12,30 +12,39 @@ A PHP class representing the border setting of StockChartSeriesDefaultsLabels.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the border.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabelsBorder();
     $border->color('value');
 
-### dashType `string`
-
+### dashType
 The dash type of the border.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabelsBorder();
     $border->dashType('value');
 
-### width `float`
-
+### width
 The width of the border.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabelsBorder();
     $border->width(1);
 

@@ -12,10 +12,13 @@ A PHP class representing the gaugeArea setting of RadialGauge.
 
 ## Methods
 
-### background ``
-
+### background
 The background of the gauge area.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value ``
+
 
 
 ### border
@@ -41,30 +44,39 @@ The border of the gauge area.
     $color = 'value';
     $gaugeArea->border(array('color' => $color));
 
-### height `float`
-
+### height
 The height of the gauge area.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $gaugeArea->height(1);
 
-### margin `float|`
-
+### margin
 The margin of the gauge area.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $gaugeArea->margin(1);
 
-### width `float`
-
+### width
 The width of the gauge area.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $gaugeArea->width(1);
 

@@ -120,12 +120,15 @@ Fires when the splitter layout has changed
     $splitter = new \Kendo\UI\Splitter();
     $splitter->layoutChange(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### orientation `string`
-
+### orientation
 Specifies the orientation of the Splitter.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $splitter = new \Kendo\UI\Splitter();
     $splitter->orientation('value');
 

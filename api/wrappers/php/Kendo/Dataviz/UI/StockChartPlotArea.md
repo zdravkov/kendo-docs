@@ -12,12 +12,15 @@ A PHP class representing the plotArea setting of StockChart.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the plot area.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $plotArea->background('value');
 
@@ -44,21 +47,27 @@ The border of the plot area.
     $color = 'value';
     $plotArea->border(array('color' => $color));
 
-### margin `float|`
-
+### margin
 The margin of the plot area.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $plotArea->margin(1);
 
-### opacity `float`
-
+### opacity
 The background opacity of the plot area.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $plotArea->opacity(1);
 

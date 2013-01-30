@@ -12,12 +12,15 @@ A PHP class representing the imageBrowser setting of Editor.
 
 ## Methods
 
-### fileTypes `string`
-
+### fileTypes
 Defines the allowed file extensions.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $imageBrowser->fileTypes('value');
 
@@ -44,12 +47,15 @@ Defines texts shown within the pager.
     $deleteFile = 'value';
     $imageBrowser->messages(array('deleteFile' => $deleteFile));
 
-### path `string`
-
+### path
 Defines the initial folder to display, relative to the root.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $imageBrowser->path('value');
 

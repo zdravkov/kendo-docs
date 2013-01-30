@@ -12,21 +12,27 @@ A PHP class representing the sortItem setting of DataSourceSort.
 
 ## Methods
 
-### dir `string`
-
+### dir
 Sets the sort direction. Possible values are: "asc", "desc", null. If null is set, the sort expression is removed.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $sortItem = new \Kendo\Data\DataSourceSortItem();
     $sortItem->dir('value');
 
-### field `string`
-
+### field
 Sets the field to sort on.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $sortItem = new \Kendo\Data\DataSourceSortItem();
     $sortItem->field('value');
 

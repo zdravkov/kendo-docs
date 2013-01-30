@@ -12,13 +12,16 @@ A PHP class representing Kendo Window.
 
 ## Methods
 
-### actions `array`
-
+### actions
 The buttons for interacting with the window. Predefined array values are "Close", "Refresh", "Minimize",
 and "Maximize".
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->actions(new array());
 
@@ -73,17 +76,20 @@ will disable all animations in the widget.
     $close = new \Kendo\UI\WindowAnimationClose();
     $window->animation(array('close' => $close));
 
-### appendTo `|string`
-
+### appendTo
 The element that the Window will be appended to.
 Note that this does not constrain the window dragging within the given element.
+#### Parameters
+
+##### $value `|string`
 
 
-#### Example - using 
+
+#### Example  - using 
     $window = new \Kendo\UI\Window();
     $window->appendTo(new ());
 
-#### Example - using string
+#### Example  - using string
     $window = new \Kendo\UI\Window();
     $window->appendTo('value');
 
@@ -114,9 +120,12 @@ Triggered when a Window is closed (by a user or through the close() method).
     $window = new \Kendo\UI\Window();
     $window->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### content ``
-
+### content
 The content of the window
+#### Parameters
+
+##### $value ``
+
 
 
 ### deactivate
@@ -173,13 +182,16 @@ Triggered when a Window has been moved by a user.
     $window = new \Kendo\UI\Window();
     $window->dragend(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### draggable `boolean`
-
+### draggable
 Enables (true) or disables (false) the ability for users to move/drag a
 Window.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->draggable(true);
 
@@ -237,66 +249,87 @@ Triggered when an AJAX request for content fails.
     $window = new \Kendo\UI\Window();
     $window->error(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### height `float`
-
+### height
 Specifies height of the window.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->height(1);
 
-### iframe `boolean`
-
+### iframe
 Explicitly states whether content iframe should be created.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->iframe(true);
 
-### maxHeight `float`
-
+### maxHeight
 The maximum height (in pixels) that may be achieved by resizing the window.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->maxHeight(1);
 
-### maxWidth `float`
-
+### maxWidth
 The maximum width (in pixels) that may be achieved by resizing the window.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->maxWidth(1);
 
-### minHeight `float`
-
+### minHeight
 The minimum height (in pixels) that may be achieved by resizing the window.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->minHeight(1);
 
-### minWidth `float`
-
+### minWidth
 The minimum width (in pixels) that may be achieved by resizing the window.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->minWidth(1);
 
-### modal `boolean`
-
+### modal
 Specifies whether the window should show a modal overlay over the page.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->modal(true);
 
@@ -356,13 +389,16 @@ has been clicked on a window with static content.
     $window = new \Kendo\UI\Window();
     $window->refresh(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### resizable `boolean`
-
+### resizable
 Enables (true) or disables (false) the ability for users to resize a
 Window.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->resizable(true);
 
@@ -393,34 +429,43 @@ Triggered when a Window has been resized by a user.
     $window = new \Kendo\UI\Window();
     $window->resize(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### title `string|boolean`
-
+### title
 The text in the window title bar. If false, the window will be displayed without a title bar. Note that this will prevent the window from being dragged, and the window titlebar buttons will not be shown.
+#### Parameters
+
+##### $value `string|boolean`
 
 
-#### Example - using string
+
+#### Example  - using string
     $window = new \Kendo\UI\Window();
     $window->title('value');
 
-#### Example - using boolean
+#### Example  - using boolean
     $window = new \Kendo\UI\Window();
     $window->title(true);
 
-### visible `boolean`
-
+### visible
 Specifies whether the window will be initially visible.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->visible(true);
 
-### width `float`
-
+### width
 Specifies width of the window.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $window = new \Kendo\UI\Window();
     $window->width(1);
 

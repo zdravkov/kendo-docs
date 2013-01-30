@@ -12,30 +12,39 @@ A PHP class representing the majorGridLines setting of StockChartXAxisItem.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the lines.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $majorGridLines = new \Kendo\Dataviz\UI\StockChartXAxisItemMajorGridLines();
     $majorGridLines->color('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the lines.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $majorGridLines = new \Kendo\Dataviz\UI\StockChartXAxisItemMajorGridLines();
     $majorGridLines->visible(true);
 
-### width `float`
-
+### width
 The width of the lines.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $majorGridLines = new \Kendo\Dataviz\UI\StockChartXAxisItemMajorGridLines();
     $majorGridLines->width(1);
 

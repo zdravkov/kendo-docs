@@ -136,76 +136,100 @@ Sets the data source of the dataSource.
     $schema = new \Kendo\Data\DataSourceSchema();
     $autoComplete->dataSource(array('schema' => $schema));
 
-### dataTextField `string`
-
+### dataTextField
 Sets the field of the data item that provides the text content of the list items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->dataTextField('value');
 
-### delay `float`
-
+### delay
 Specifies the delay in ms after which the AutoComplete will start filtering the dataSource.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->delay(1);
 
-### enable `boolean`
-
+### enable
 Controls whether the AutoComplete should be initially enabled.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->enable(true);
 
-### filter `string`
-
+### filter
 Defines the type of filtration. This value is handled by the remote data source.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->filter('value');
 
-### height `float`
-
+### height
 Sets the height of the drop-down list in pixels.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->height(1);
 
-### highlightFirst `boolean`
-
+### highlightFirst
 Controls whether the first item will be automatically highlighted.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->highlightFirst(true);
 
-### ignoreCase `boolean`
-
+### ignoreCase
 Defines whether the filtration should be case sensitive.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->ignoreCase(true);
 
-### minLength `float`
-
+### minLength
 Specifies the minimum number of characters that should be typed before the AutoComplete queries
 the dataSource.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->minLength(1);
 
@@ -236,12 +260,15 @@ Fires when the drop-down list is opened
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### placeholder `string`
-
+### placeholder
 A string that appears in the textbox when it has no value.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->placeholder('value');
 
@@ -272,30 +299,39 @@ Triggered when a Li element is selected.
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### separator `string`
-
+### separator
 Sets the separator for completion. Empty by default, allowing for only one completion.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->separator('value');
 
-### suggest `boolean`
-
+### suggest
 Controls whether the AutoComplete should automatically auto-type the rest of text.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->suggest(true);
 
-### template `string`
-
+### template
 Template to be used for rendering the items in the list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $autoComplete = new \Kendo\UI\AutoComplete();
     $autoComplete->template('value');
 

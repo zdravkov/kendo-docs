@@ -90,76 +90,100 @@ Fires when the calendar or the time drop-down list is closed
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### culture `string`
-
+### culture
 Specifies the culture info used by the widget.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->culture('value');
 
-### dates `array`
-
+### dates
 Specifies a list of dates, which will be passed to the month template of the DateView. All dates, which match the date portion of the selected date will be used to re-bind the TimeView.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->dates(new array());
 
-### depth `string`
-
+### depth
 Specifies the navigation depth of the calendar. The following
 settings are available for the depth value:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->depth('value');
 
-### footer `string`
-
+### footer
 Template to be used for rendering the footer of the calendar.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->footer('value');
 
-### format `string`
-
+### format
 Specifies the format, which is used to format the value of the DateTimePicker displayed in the input. The format also will be used to parse the input.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->format('value');
 
-### interval `float`
-
+### interval
 Specifies the interval, between values in the popup list, in minutes.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->interval(1);
 
-### max `date`
-
+### max
 Specifies the maximum date, which the calendar can show.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->max(new date());
 
-### min `date`
-
+### min
 Specifies the minimum date that the calendar can show.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->min(new date());
 
@@ -213,40 +237,52 @@ Fires when the calendar or the time drop-down list is opened
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### parseFormats `array`
-
+### parseFormats
 Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the options.format and options.timeFormat will be used. Note that value of the format option is always used.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->parseFormats(new array());
 
-### start `string`
-
+### start
 Specifies the start view of the calendar.
 The following settings are available for the start value:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->start('value');
 
-### timeFormat `string`
-
+### timeFormat
 Specifies the format, which is used to format the values in the time drop-down list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->timeFormat('value');
 
-### value `date`
-
+### value
 Specifies the selected value.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $dateTimePicker = new \Kendo\UI\DateTimePicker();
     $dateTimePicker->value(new date());
 

@@ -12,12 +12,15 @@ A PHP class representing the scrollable setting of Grid.
 
 ## Methods
 
-### virtual `boolean`
-
+### virtual
 Enable/disable virtual scrolling. When enabled the grid will display only a single page of data (configured via dataSource.pageSize).
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $scrollable = new \Kendo\UI\GridScrollable();
     $scrollable->virtual(true);
 

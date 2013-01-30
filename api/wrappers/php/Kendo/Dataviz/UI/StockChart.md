@@ -12,18 +12,24 @@ A PHP class representing Kendo StockChart.
 
 ## Methods
 
-### autoBind `boolean`
-
+### autoBind
 Indicates whether the chart will call read on the data source initially.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $stockChart = new \Kendo\Dataviz\UI\StockChart();
     $stockChart->autoBind(true);
 
-### axisDefaults ``
-
+### axisDefaults
 Default options for all chart axes.
+#### Parameters
+
+##### $value ``
+
 
 
 ### axisLabelClick
@@ -154,13 +160,16 @@ Sets the data source of the dataSource.
     $schema = new \Kendo\Data\DataSourceSchema();
     $stockChart->dataSource(array('schema' => $schema));
 
-### dateField `string`
-
+### dateField
 The field containing the point date.
 It is used as a default field for all date axes, including the navigator pane.The data item field value must be either:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $stockChart = new \Kendo\Dataviz\UI\StockChart();
     $stockChart->dateField('value');
 
@@ -507,12 +516,15 @@ Fires when chart series are clicked.
     $stockChart = new \Kendo\Dataviz\UI\StockChart();
     $stockChart->seriesClick(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### seriesColors `array`
-
+### seriesColors
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $stockChart = new \Kendo\Dataviz\UI\StockChart();
     $stockChart->seriesColors(new array());
 
@@ -566,12 +578,15 @@ Fires when chart series are hovered.
     $stockChart = new \Kendo\Dataviz\UI\StockChart();
     $stockChart->seriesHover(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### theme `string`
-
+### theme
 Sets Chart theme. Available themes: default, blueOpal, black.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $stockChart = new \Kendo\Dataviz\UI\StockChart();
     $stockChart->theme('value');
 
@@ -621,12 +636,15 @@ The data point tooltip configuration options.
     $background = 'value';
     $stockChart->tooltip(array('background' => $background));
 
-### transitions `boolean`
-
+### transitions
 A value indicating if transition animations should be played.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $stockChart = new \Kendo\Dataviz\UI\StockChart();
     $stockChart->transitions(true);
 

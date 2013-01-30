@@ -12,42 +12,54 @@ A PHP class representing the minorGridLines setting of StockChartCategoryAxisIte
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the lines. Any valid CSS color string will work here, including hex and
 rgb.Note that this setting has no effect if the visibility of the minor
 grid lines is not set to true.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines();
     $minorGridLines->color('value');
 
-### dashType `string`
-
+### dashType
 The dash type of the grid lines.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines();
     $minorGridLines->dashType('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the lines.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines();
     $minorGridLines->visible(true);
 
-### width `float`
-
+### width
 The width of the lines.Note that this setting has no effect if the visibility of the minor
 grid lines is not set to true.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines();
     $minorGridLines->width(1);
 

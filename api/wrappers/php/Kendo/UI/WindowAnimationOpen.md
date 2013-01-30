@@ -12,21 +12,27 @@ A PHP class representing the open setting of WindowAnimation.
 
 ## Methods
 
-### duration `float`
-
+### duration
 Difines the animation duration.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $open = new \Kendo\UI\WindowAnimationOpen();
     $open->duration(1);
 
-### effects `string`
-
+### effects
 Effect to be used for opening of the popup.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $open = new \Kendo\UI\WindowAnimationOpen();
     $open->effects('value');
 

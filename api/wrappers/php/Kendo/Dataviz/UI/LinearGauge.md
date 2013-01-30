@@ -82,12 +82,15 @@ Configures the scale.
     $majorUnit = 1;
     $linearGauge->scale(array('majorUnit' => $majorUnit));
 
-### transitions `boolean`
-
+### transitions
 A value indicating if transition animations should be played.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge();
     $linearGauge->transitions(true);
 

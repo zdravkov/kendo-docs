@@ -12,12 +12,15 @@ A PHP class representing the tooltip setting of StockChart.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the tooltip. The default is determined from the series color.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->background('value');
 
@@ -44,62 +47,80 @@ The border configuration options.
     $color = 'value';
     $tooltip->border(array('color' => $color));
 
-### color `string`
-
+### color
 The text color of the tooltip. The default is the same as the series labels color.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->color('value');
 
-### font `string`
-
+### font
 The tooltip font.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->font('value');
 
-### format `string`
-
+### format
 The tooltip format.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->format('value');
 
-### padding `float|`
-
+### padding
 The padding of the tooltip.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->padding(1);
 
-### template `string|\Kendo\JavaScriptFunction`
-
+### template
 The tooltip template.
 Template variables:
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
-#### Example - using string
+
+#### Example  - using string
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->template('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->template(new \Kendo\JavaScriptFunction('function() { }'));
 
-### visible `boolean`
-
+### visible
 A value indicating if the tooltip should be displayed.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $tooltip->visible(true);
 

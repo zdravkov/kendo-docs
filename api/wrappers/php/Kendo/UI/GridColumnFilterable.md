@@ -12,16 +12,19 @@ A PHP class representing the filterable setting of GridColumn.
 
 ## Methods
 
-### ui `string|\Kendo\JavaScriptFunction`
-
+### ui
 Role of the widget shown as column filter menu input element.
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
-#### Example - using string
+
+#### Example  - using string
     $filterable = new \Kendo\UI\GridColumnFilterable();
     $filterable->ui('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $filterable = new \Kendo\UI\GridColumnFilterable();
     $filterable->ui(new \Kendo\JavaScriptFunction('function() { }'));
 

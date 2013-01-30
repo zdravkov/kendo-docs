@@ -35,12 +35,15 @@ A PHP class representing the model setting of EditorImageBrowserSchema.
     $name = 'value';
     $model->fields(array('name' => $name));
 
-### id `string`
-
+### id
 The name of the field which acts as an identifier.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $model = new \Kendo\UI\EditorImageBrowserSchemaModel();
     $model->id('value');
 

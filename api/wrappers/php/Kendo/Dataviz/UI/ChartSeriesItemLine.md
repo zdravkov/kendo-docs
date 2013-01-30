@@ -12,30 +12,39 @@ A PHP class representing the line setting of ChartSeriesItem.
 
 ## Methods
 
-### color `string`
-
+### color
 The line color.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemLine();
     $line->color('value');
 
-### opacity `float`
-
+### opacity
 The line opacity.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemLine();
     $line->opacity(1);
 
-### width `string`
-
+### width
 The line width.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemLine();
     $line->width('value');
 

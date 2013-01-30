@@ -39,12 +39,15 @@ Fires when Editor is blurred and its content has changed.
     $editor = new \Kendo\UI\Editor();
     $editor->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### encoded `boolean`
-
+### encoded
 Indicates whether the Editor should submit encoded HTML tags.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $editor = new \Kendo\UI\Editor();
     $editor->encoded(true);
 
@@ -152,9 +155,12 @@ Fires when the user releases a keyboard key.
     $editor = new \Kendo\UI\Editor();
     $editor->keyup(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### messages ``
-
+### messages
 Defines the text of the labels that are shown within the editor. Used primarily for localization.
+#### Parameters
+
+##### $value ``
+
 
 
 ### paste
@@ -211,12 +217,15 @@ Fires when the Editor selection has changed.
     $editor = new \Kendo\UI\Editor();
     $editor->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### stylesheets `array`
-
+### stylesheets
 Allows custom stylesheets to be included within the editing area.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $editor = new \Kendo\UI\Editor();
     $editor->stylesheets(new array());
 

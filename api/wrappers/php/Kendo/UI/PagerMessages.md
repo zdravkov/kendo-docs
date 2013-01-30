@@ -12,93 +12,123 @@ A PHP class representing the messages setting of Pager.
 
 ## Methods
 
-### display `string`
-
+### display
 Defines the info text.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->display('value');
 
-### _empty `string`
-
+### _empty
 Defines the info text shown when there are no records to be displayed.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->_empty('value');
 
-### first `string`
-
+### first
 Defines the text of the first page button tooltip.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->first('value');
 
-### itemsPerPage `string`
-
+### itemsPerPage
 Defines the text displayed after the select element of the pageSizes mode.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->itemsPerPage('value');
 
-### last `string`
-
+### last
 Defines the text of the last page button tooltip.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->last('value');
 
-### next `string`
-
+### next
 Defines the text of the next page button tooltip.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->next('value');
 
-### of `string`
-
+### of
 Defines the last part of the text of the input option.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->of('value');
 
-### page `string`
-
+### page
 Defines the first part of the text of the input option.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->page('value');
 
-### previous `string`
-
+### previous
 Defines the text of the previous page button tooltip.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->previous('value');
 
-### refresh `string`
-
+### refresh
 Defines the text of the refresh button tooltip.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\PagerMessages();
     $messages->refresh('value');
 

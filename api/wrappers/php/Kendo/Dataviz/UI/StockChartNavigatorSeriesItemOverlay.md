@@ -12,12 +12,15 @@ A PHP class representing the overlay setting of StockChartNavigatorSeriesItem.
 
 ## Methods
 
-### gradient `string`
-
+### gradient
 The gradient name.Available options:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $overlay = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemOverlay();
     $overlay->gradient('value');
 

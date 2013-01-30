@@ -12,32 +12,41 @@ A PHP class representing the labels setting of ChartLegend.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartLegendLabels();
     $labels->color('value');
 
-### font `string`
-
+### font
 The font style of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartLegendLabels();
     $labels->font('value');
 
-### template `string`
-
+### template
 The template of the labels.
 Template variables:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartLegendLabels();
     $labels->template('value');
 

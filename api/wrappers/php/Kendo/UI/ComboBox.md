@@ -35,12 +35,15 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
     $close = new \Kendo\UI\ComboBoxAnimationClose();
     $comboBox->animation(array('close' => $close));
 
-### autoBind `boolean`
-
+### autoBind
 Controls whether to bind the widget to the DataSource on initialization.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->autoBind(true);
 
@@ -71,12 +74,15 @@ Triggered when value of the widget is changed via API or user interaction.
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->cascade(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### cascadeFrom `string`
-
+### cascadeFrom
 Use it to set the Id of the parent DropDownList.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->cascadeFrom('value');
 
@@ -181,93 +187,123 @@ Sets the data source of the dataSource.
     $schema = new \Kendo\Data\DataSourceSchema();
     $comboBox->dataSource(array('schema' => $schema));
 
-### dataTextField `string`
-
+### dataTextField
 Sets the field of the data item that provides the text content of the list items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->dataTextField('value');
 
-### dataValueField `string`
-
+### dataValueField
 Sets the field of the data item that provides the value content of the list items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->dataValueField('value');
 
-### delay `float`
-
+### delay
 Specifies the delay in ms after which the ComboBox will start filtering dataSource.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->delay(1);
 
-### enable `boolean`
-
+### enable
 Controls whether the ComboBox should be initially enabled.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->enable(true);
 
-### filter `string`
-
+### filter
 Defines the type of filtration. If "none" the ComboBox will not filter the items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->filter('value');
 
-### height `float`
-
+### height
 Define the height of the drop-down list in pixels.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->height(1);
 
-### highlightFirst `boolean`
-
+### highlightFirst
 Controls whether the first item will be automatically highlighted.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->highlightFirst(true);
 
-### ignoreCase `string`
-
+### ignoreCase
 Defines whether the filtration should be case sensitive.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->ignoreCase('value');
 
-### index `float`
-
+### index
 Defines the initial selected item.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->index(1);
 
-### minLength `float`
-
+### minLength
 Specifies the minimum characters that should be typed before the ComboBox activates
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->minLength(1);
 
@@ -298,12 +334,15 @@ Fires when the drop-down list is opened
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### placeholder `string`
-
+### placeholder
 A string that appears in the textbox when the combobox has no value.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->placeholder('value');
 
@@ -334,39 +373,51 @@ Triggered when a Li element is selected.
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### suggest `boolean`
-
+### suggest
 Controls whether the ComboBox should automatically auto-type the rest of text.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->suggest(true);
 
-### template `string`
-
+### template
 Template to be used for rendering the items in the list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->template('value');
 
-### text `string`
-
+### text
 Define the text of the widget, when the autoBind is set to false.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->text('value');
 
-### value `string`
-
+### value
 Define the value of the widget
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $comboBox = new \Kendo\UI\ComboBox();
     $comboBox->value('value');
 

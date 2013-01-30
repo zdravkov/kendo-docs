@@ -12,21 +12,27 @@ A PHP class representing Kendo Grid.
 
 ## Methods
 
-### altRowTemplate `string`
-
+### altRowTemplate
 The id of the template used for rendering the alternate rows in the grid.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->altRowTemplate('value');
 
-### autoBind `boolean`
-
+### autoBind
 Indicates whether the grid will call read on the DataSource initially.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->autoBind(true);
 
@@ -95,7 +101,7 @@ Enables column header menu
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $grid = new \Kendo\UI\Grid();
     $grid->columnMenu(true);
 
@@ -406,12 +412,15 @@ Fires when the grid detail is initialized.
     $grid = new \Kendo\UI\Grid();
     $grid->detailInit(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### detailTemplate `string`
-
+### detailTemplate
 The id of the template used for rendering the detail rows in the grid.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->detailTemplate('value');
 
@@ -453,7 +462,7 @@ Indicates whether editing is enabled/disabled.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $grid = new \Kendo\UI\Grid();
     $grid->editable(true);
 
@@ -510,7 +519,7 @@ Indicates whether filtering is enabled/disabled.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $grid = new \Kendo\UI\Grid();
     $grid->filterable(true);
 
@@ -540,7 +549,7 @@ Indicates whether grouping is enabled/disabled.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $grid = new \Kendo\UI\Grid();
     $grid->groupable(true);
 
@@ -559,25 +568,31 @@ Indicates whether grouping is enabled/disabled.
     $messages = new \Kendo\UI\GridGroupableMessages();
     $grid->groupable(array('messages' => $messages));
 
-### height `float|string`
-
+### height
 Sets the height of the grid.
+#### Parameters
+
+##### $value `float|string`
 
 
-#### Example - using float
+
+#### Example  - using float
     $grid = new \Kendo\UI\Grid();
     $grid->height(1);
 
-#### Example - using string
+#### Example  - using string
     $grid = new \Kendo\UI\Grid();
     $grid->height('value');
 
-### navigatable `boolean`
-
+### navigatable
 Indicates whether keyboard navigation is enabled/disabled.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->navigatable(true);
 
@@ -592,7 +607,7 @@ Indicates whether paging is enabled/disabled.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $grid = new \Kendo\UI\Grid();
     $grid->pageable(true);
 
@@ -638,30 +653,39 @@ Fires before the grid item is removed.
     $grid = new \Kendo\UI\Grid();
     $grid->remove(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### reorderable `boolean`
-
+### reorderable
 Indicates whether column reordering is enabled/disable.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->reorderable(true);
 
-### resizable `boolean`
-
+### resizable
 Indicates whether column resizing is enabled/disable.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->resizable(true);
 
-### rowTemplate `string`
-
+### rowTemplate
 The id of the template used for rendering the rows in the grid.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->rowTemplate('value');
 
@@ -730,7 +754,7 @@ Enable/disable grid scrolling.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $grid = new \Kendo\UI\Grid();
     $grid->scrollable(true);
 
@@ -749,12 +773,15 @@ Enable/disable grid scrolling.
     $virtual = true;
     $grid->scrollable(array('virtual' => $virtual));
 
-### selectable `string`
-
+### selectable
 Indicates whether selection is enabled/disabled. Possible values:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $grid = new \Kendo\UI\Grid();
     $grid->selectable('value');
 
@@ -769,7 +796,7 @@ Defines whether grid columns are sortable.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $grid = new \Kendo\UI\Grid();
     $grid->sortable(true);
 

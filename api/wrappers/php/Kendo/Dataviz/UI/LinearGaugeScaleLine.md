@@ -12,39 +12,51 @@ A PHP class representing the line setting of LinearGaugeScale.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the lines. Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->color('value');
 
-### dashType `string`
-
+### dashType
 The dash type of the line.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->dashType('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the lines.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->visible(true);
 
-### width `float`
-
+### width
 The width of the line..
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->width(1);
 

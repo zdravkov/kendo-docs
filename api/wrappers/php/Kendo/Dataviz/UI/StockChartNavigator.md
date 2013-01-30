@@ -12,13 +12,16 @@ A PHP class representing the navigator setting of StockChart.
 
 ## Methods
 
-### autoBind `boolean`
-
+### autoBind
 Indicates whether the navigator will call read on the data source initially.
 Applicable only when using a dedicated navigator data source.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $navigator->autoBind(true);
 
@@ -42,13 +45,16 @@ Sets the data source of the dataSource.
     $schema = new \Kendo\Data\DataSourceSchema();
     $navigator->dataSource(array('schema' => $schema));
 
-### dateField `string`
-
+### dateField
 The field containing the point date.
 It is used as a default field for the navigator axis.The data item field value must be either:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $navigator->dateField('value');
 
@@ -127,12 +133,15 @@ Adds one or more StockChartNavigatorSeriesItem to the StockChartNavigator.
     $second = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItem();
     $navigator->addSeriesItem($first, $second);
 
-### visible `boolean`
-
+### visible
 The visibility of the navigator.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $navigator->visible(true);
 

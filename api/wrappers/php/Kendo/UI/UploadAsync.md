@@ -12,70 +12,91 @@ A PHP class representing the async setting of Upload.
 
 ## Methods
 
-### autoUpload `boolean`
-
+### autoUpload
 The selected files will be uploaded immediately by default. You can change this behavior by setting
 autoUpload to false.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $async = new \Kendo\UI\UploadAsync();
     $async->autoUpload(true);
 
-### batch `boolean`
-
+### batch
 The selected files will be uploaded in separate requests, if this is supported by the browser.
 You can change this behavior by setting batch to true.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $async = new \Kendo\UI\UploadAsync();
     $async->batch(true);
 
-### removeField `string`
-
+### removeField
 The name of the form field submitted to the Remove URL.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $async = new \Kendo\UI\UploadAsync();
     $async->removeField('value');
 
-### removeUrl `string`
-
+### removeUrl
 The URL of the handler responsible for removing uploaded files (if any). The handler must accept POST
 requests containing one or more "fileNames" fields specifying the files to be deleted.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $async = new \Kendo\UI\UploadAsync();
     $async->removeUrl('value');
 
-### removeVerb `string`
-
+### removeVerb
 The HTTP verb to be used by the remove action.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $async = new \Kendo\UI\UploadAsync();
     $async->removeVerb('value');
 
-### saveField `string`
-
+### saveField
 The name of the form field submitted to the save URL. The default value is the input name.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $async = new \Kendo\UI\UploadAsync();
     $async->saveField('value');
 
-### saveUrl `string`
-
+### saveUrl
 The URL of the handler that will receive the submitted files. The handler must accept POST requests
 containing one or more fields with the same name as the original input name.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $async = new \Kendo\UI\UploadAsync();
     $async->saveUrl('value');
 

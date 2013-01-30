@@ -12,21 +12,27 @@ A PHP class representing the title setting of StockChart.
 
 ## Methods
 
-### align `string`
-
+### align
 The alignment of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->align('value');
 
-### background `string`
-
+### background
 The background color of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->background('value');
 
@@ -53,57 +59,75 @@ The border of the title.
     $color = 'value';
     $title->border(array('color' => $color));
 
-### font `string`
-
+### font
 The font of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->font('value');
 
-### margin `float|`
-
+### margin
 The margin of the title.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->margin(1);
 
-### padding `float|`
-
+### padding
 The padding of the title.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->padding(1);
 
-### position `string`
-
+### position
 The position of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->position('value');
 
-### text `string`
-
+### text
 The title of the chart. You can also set the text directly for a title with default options.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->text('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the title.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $title->visible(true);
 

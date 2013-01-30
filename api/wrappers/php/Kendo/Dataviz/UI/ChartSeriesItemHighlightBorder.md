@@ -12,30 +12,39 @@ A PHP class representing the border setting of ChartSeriesItemHighlight.
 
 ## Methods
 
-### color `string`
-
+### color
 The border color.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder();
     $border->color('value');
 
-### opacity `float`
-
+### opacity
 The border opacity.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder();
     $border->opacity(1);
 
-### width `float`
-
+### width
 The width of the border.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder();
     $border->width(1);
 

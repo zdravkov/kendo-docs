@@ -39,66 +39,87 @@ Fires when the value is changed
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### culture `string`
-
+### culture
 Specifies the culture info used by the NumericTextBox widget.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->culture('value');
 
-### decimals `float`
-
+### decimals
 Specifies the number precision. If not set precision defined by current culture is used.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->decimals(1);
 
-### downArrowText `string`
-
+### downArrowText
 Specifies the text of the tooltip on the down arrow.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->downArrowText('value');
 
-### format `string`
-
+### format
 Specifies the format of the number. Any valid number format is allowed.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->format('value');
 
-### max `float`
-
+### max
 Specifies the largest value the user can enter.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->max(1);
 
-### min `float`
-
+### min
 Specifies the smallest value the user can enter.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->min(1);
 
-### placeholder `string`
-
+### placeholder
 Specifies the text displayed when the input is empty.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->placeholder('value');
 
@@ -129,39 +150,51 @@ Fires when the value is changed from the spin buttons
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->spin(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### spinners `boolean`
-
+### spinners
 Specifies whether the up/down spin buttons should be rendered
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->spinners(true);
 
-### step `float`
-
+### step
 Specifies the increment/decrement step.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->step(1);
 
-### upArrowText `string`
-
+### upArrowText
 Specifies the text of the tooltip on the up arrow.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->upArrowText('value');
 
-### value `float`
-
+### value
 Specifies the value of the NumericTextBox widget.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $numericTextBox = new \Kendo\UI\NumericTextBox();
     $numericTextBox->value(1);
 

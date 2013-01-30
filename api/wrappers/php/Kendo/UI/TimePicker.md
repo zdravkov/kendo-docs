@@ -89,57 +89,75 @@ Fires when the time drop-down list is closed
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### culture `string`
-
+### culture
 Specifies the culture info used by the widget.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->culture('value');
 
-### dates `array`
-
+### dates
 Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->dates(new array());
 
-### format `string`
-
+### format
 Specifies the format, which is used to format the value of the TimePicker displayed in the input. The format also will be used to parse the input.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->format('value');
 
-### interval `float`
-
+### interval
 Specifies the interval, between values in the popup list, in minutes.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->interval(1);
 
-### max `date`
-
+### max
 Specifies the end value in the popup list.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->max(new date());
 
-### min `date`
-
+### min
 Specifies the start value in the popup list.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->min(new date());
 
@@ -170,21 +188,27 @@ Fires when the time drop-down list is opened
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### parseFormats `array`
-
+### parseFormats
 Specifies the formats, which are used to parse the value set with the value method or by direct input. If not set the value of the options.format will be used. Note that value of the format option is always used.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->parseFormats(new array());
 
-### value `date`
-
+### value
 Specifies the selected time.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $timePicker = new \Kendo\UI\TimePicker();
     $timePicker->value(new date());
 

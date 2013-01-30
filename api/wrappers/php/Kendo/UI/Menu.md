@@ -63,32 +63,41 @@ Fires after a sub menu gets closed.
     $menu = new \Kendo\UI\Menu();
     $menu->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### closeOnClick `boolean`
-
+### closeOnClick
 Specifies that sub menus should close after item selection (provided they won't navigate).
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $menu = new \Kendo\UI\Menu();
     $menu->closeOnClick(true);
 
-### direction `string`
-
+### direction
 Specifies Menu opening direction. Can be "top", "bottom", "left", "right".
 You can also specify different direction for root and sub menu items, separating them with space. The example below will initialize the root menu to open upwards and
 its sub menus to the left.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $menu = new \Kendo\UI\Menu();
     $menu->direction('value');
 
-### hoverDelay `float`
-
+### hoverDelay
 Specifies the delay in ms before the menu is opened/closed - used to avoid accidental closure on leaving.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $menu = new \Kendo\UI\Menu();
     $menu->hoverDelay(1);
 
@@ -148,32 +157,41 @@ Fires before a sub menu gets opened.
     $menu = new \Kendo\UI\Menu();
     $menu->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### openOnClick `boolean`
-
+### openOnClick
 Specifies that the root sub menus will be opened on item click.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $menu = new \Kendo\UI\Menu();
     $menu->openOnClick(true);
 
-### orientation `string`
-
+### orientation
 Root menu orientation. Could be horizontal or vertical.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $menu = new \Kendo\UI\Menu();
     $menu->orientation('value');
 
-### popupCollision `string`
-
+### popupCollision
 Specifies how Menu should adjust to screen boundaries. By default the strategy is "fit" for a sub menu with a horizontal parent,
 meaning it will move to fit in screen boundaries in all directions, and "fit flip" for a sub menu with vertical parent, meaning it will fit vertically and flip over
 its parent horizontally. You can also switch off the screen boundary detection completely if you set the popupCollision to false.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $menu = new \Kendo\UI\Menu();
     $menu->popupCollision('value');
 

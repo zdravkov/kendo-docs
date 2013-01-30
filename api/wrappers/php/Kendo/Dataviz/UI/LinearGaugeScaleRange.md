@@ -12,40 +12,52 @@ A PHP class representing the range setting of LinearGaugeScaleRanges.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the range.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $range = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $range->color('value');
 
-### from `float`
-
+### from
 The start position of the range in scale units.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $range = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $range->from(1);
 
-### opacity `float`
-
+### opacity
 The opacity of the range.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $range = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $range->opacity(1);
 
-### to `float`
-
+### to
 The end position of the range in scale units.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $range = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $range->to(1);
 

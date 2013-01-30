@@ -12,12 +12,15 @@ A PHP class representing the filterable setting of Grid.
 
 ## Methods
 
-### extra `boolean`
-
+### extra
 Indicates whether second filter input is enabled/disabled.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $filterable = new \Kendo\UI\GridFilterable();
     $filterable->extra(true);
 

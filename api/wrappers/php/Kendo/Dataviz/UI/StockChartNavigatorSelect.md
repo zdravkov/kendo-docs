@@ -12,21 +12,27 @@ A PHP class representing the select setting of StockChartNavigator.
 
 ## Methods
 
-### from `date`
-
+### from
 The lower boundary of the selected range.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $select = new \Kendo\Dataviz\UI\StockChartNavigatorSelect();
     $select->from(new date());
 
-### to `date`
-
+### to
 The upper boundary of the selected range.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $select = new \Kendo\Dataviz\UI\StockChartNavigatorSelect();
     $select->to(new date());
 

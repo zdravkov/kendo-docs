@@ -12,21 +12,27 @@ A PHP class representing Kendo ListView.
 
 ## Methods
 
-### altTemplate `string`
-
+### altTemplate
 Template to be used for rendering the alternate items in the listview.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->altTemplate('value');
 
-### autoBind `boolean`
-
+### autoBind
 Indicates whether the list view will call read on the DataSource initially.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->autoBind(true);
 
@@ -159,30 +165,39 @@ Fires when the list view enters edit mode.
     $listView = new \Kendo\UI\ListView();
     $listView->edit(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### editTemplate `string`
-
+### editTemplate
 Specifies ListView item template in edit mode.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->editTemplate('value');
 
-### navigatable `boolean`
-
+### navigatable
 Indicates whether keyboard navigation is enabled/disabled.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->navigatable(true);
 
-### pageable `boolean`
-
+### pageable
 Indicates whether paging is enabled/disabled.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->pageable(true);
 
@@ -213,30 +228,39 @@ Fires before the list view item is removed.
     $listView = new \Kendo\UI\ListView();
     $listView->remove(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### selectable `string`
-
+### selectable
 Indicates whether selection is enabled/disabled. Possible values:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->selectable('value');
 
-### tagName `string`
-
+### tagName
 Specifies ListView wrapper element tag name.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->tagName('value');
 
-### template `string`
-
+### template
 The id of the template used for rendering the items in the listview.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $listView = new \Kendo\UI\ListView();
     $listView->template('value');
 

@@ -12,57 +12,75 @@ A PHP class representing the item setting of TabStripItems.
 
 ## Methods
 
-### contentUrl `string`
-
+### contentUrl
 Specifies the url from which the item content will be loaded
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $item = new \Kendo\UI\TabStripItem();
     $item->contentUrl('value');
 
-### enabled `boolean`
-
+### enabled
 Specifies whether the item is initially enabled
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $item = new \Kendo\UI\TabStripItem();
     $item->enabled(true);
 
-### imageUrl `string`
-
+### imageUrl
 Specifies the URL of the image displayed by the item
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $item = new \Kendo\UI\TabStripItem();
     $item->imageUrl('value');
 
-### selected `boolean`
-
+### selected
 Specifies whether the item is initially selected
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $item = new \Kendo\UI\TabStripItem();
     $item->selected(true);
 
-### spriteCssClass `string`
-
+### spriteCssClass
 Specifies the class name for the sprite image displayed by the item
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $item = new \Kendo\UI\TabStripItem();
     $item->spriteCssClass('value');
 
-### text `string`
-
+### text
 Specifies the text displayed by the item
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $item = new \Kendo\UI\TabStripItem();
     $item->text('value');
 

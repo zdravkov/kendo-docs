@@ -51,7 +51,7 @@ user interactions. Setting this option to false will disable all animations.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $panelBar = new \Kendo\UI\PanelBar();
     $panelBar->animation(true);
 
@@ -178,13 +178,16 @@ Triggered when an item of a PanelBar is expanded.
     $panelBar = new \Kendo\UI\PanelBar();
     $panelBar->expand(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### expandMode `string`
-
+### expandMode
 Specifies how the PanelBar items are displayed when opened and closed. The following values
 are available:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $panelBar = new \Kendo\UI\PanelBar();
     $panelBar->expandMode('value');
 

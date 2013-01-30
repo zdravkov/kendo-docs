@@ -35,22 +35,28 @@ The cap configuration options.
     $color = 'value';
     $pointer->cap(array('color' => $color));
 
-### color `string`
-
+### color
 The color of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $pointer->color('value');
 
-### value `float`
-
+### value
 The value of the gauge.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $pointer->value(1);
 

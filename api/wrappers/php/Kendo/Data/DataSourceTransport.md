@@ -23,11 +23,11 @@ Options for remote create data operation, or the URL of the remote service.
 
 
 
-#### Example - using string
+#### Example  - using string
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->create('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->create(new \Kendo\JavaScriptFunction('function() { }'));
 
@@ -57,11 +57,11 @@ Options for remote destroy data operation, or the URL of the remote service.
 
 
 
-#### Example - using string
+#### Example  - using string
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->destroy('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->destroy(new \Kendo\JavaScriptFunction('function() { }'));
 
@@ -80,12 +80,15 @@ Options for remote destroy data operation, or the URL of the remote service.
     $cache = true;
     $transport->destroy(array('cache' => $cache));
 
-### parameterMap `\Kendo\JavaScriptFunction`
-
+### parameterMap
 Converts the request parameters and data from the internal format to a format suitable for the remote service.
+#### Parameters
+
+##### $value `\Kendo\JavaScriptFunction`
 
 
-#### Example - using \Kendo\JavaScriptFunction
+
+#### Example 
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->parameterMap(new \Kendo\JavaScriptFunction('function() { }'));
 
@@ -100,11 +103,11 @@ Options for remote read data operation, or the URL of the remote service.
 
 
 
-#### Example - using string
+#### Example  - using string
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->read('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->read(new \Kendo\JavaScriptFunction('function() { }'));
 
@@ -134,11 +137,11 @@ Options for remote update data operation, or the URL of the remote service.
 
 
 
-#### Example - using string
+#### Example  - using string
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->update('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $transport = new \Kendo\Data\DataSourceTransport();
     $transport->update(new \Kendo\JavaScriptFunction('function() { }'));
 

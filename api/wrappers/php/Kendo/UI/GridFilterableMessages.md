@@ -12,75 +12,99 @@ A PHP class representing the messages setting of GridFilterable.
 
 ## Methods
 
-### _and `string`
-
+### _and
 Set the text of the "and" option from logic drop down list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->_and('value');
 
-### clear `string`
-
+### clear
 Set the text of the clear button of the filter menu.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->clear('value');
 
-### filter `string`
-
+### filter
 Set the text of the filter button of the filter menu.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->filter('value');
 
-### info `string`
-
+### info
 Set the text of the information message on top of the filter menu.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->info('value');
 
-### isFalse `string`
-
+### isFalse
 Set the text of the isFalse radio button of the filter menu for boolean values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->isFalse('value');
 
-### isTrue `string`
-
+### isTrue
 Set the text of the isTrue radio button of the filter menu for boolean values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->isTrue('value');
 
-### _or `string`
-
+### _or
 Set the text of the "or" option from logic drop down list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->_or('value');
 
-### selectValue `string`
-
+### selectValue
 Set the text of the option label for foreign key drop down list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->selectValue('value');
 

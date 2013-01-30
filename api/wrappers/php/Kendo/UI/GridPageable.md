@@ -12,30 +12,39 @@ A PHP class representing the pageable setting of Grid.
 
 ## Methods
 
-### buttonCount `float`
-
+### buttonCount
 Defines the number of buttons displayed in the numeric pager.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->buttonCount(1);
 
-### info `boolean`
-
+### info
 Defines if a label showing current paging information will be displayed.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->info(true);
 
-### input `boolean`
-
+### input
 Defines if an input element which allows the user to navigate to given page will be displayed.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->input(true);
 
@@ -62,52 +71,67 @@ Defines texts shown within the pager.
     $display = 'value';
     $pageable->messages(array('display' => $display));
 
-### numeric `boolean`
-
+### numeric
 Defines if numeric portion of the pager will be shown.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->numeric(true);
 
-### pageSize `float`
-
+### pageSize
 Defines the number of records which will be displyed.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->pageSize(1);
 
-### pageSizes `boolean|array`
-
+### pageSizes
 Displayes a list with predefined page sizes. An array of values to be displayed can be provided.
+#### Parameters
+
+##### $value `boolean|array`
 
 
-#### Example - using boolean
+
+#### Example  - using boolean
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->pageSizes(true);
 
-#### Example - using array
+#### Example  - using array
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->pageSizes(new array());
 
-### previousNext `boolean`
-
+### previousNext
 Defines if buttons for navigating to the first, last, previous and next pages will be shown.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->previousNext(true);
 
-### refresh `boolean`
-
+### refresh
 Defines if a refresh button will be displayed.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->refresh(true);
 

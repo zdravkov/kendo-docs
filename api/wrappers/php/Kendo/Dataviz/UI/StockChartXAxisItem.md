@@ -12,41 +12,50 @@ A PHP class representing the xAxisItem setting of StockChartXAxis.
 
 ## Methods
 
-### axisCrossingValue `|date|array`
-
+### axisCrossingValue
 Value at which the Y axis crosses this axis. (Only for object)Value indicies at which the Y axes cross the value axis. (Only for array)Date at which the Y axis crosses this axis. (Only for date)Note: Specify a value greater than or equal to the
 axis maximum value to denote the far end of the axis.
+#### Parameters
+
+##### $value `|date|array`
 
 
-#### Example - using 
+
+#### Example  - using 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->axisCrossingValue(new ());
 
-#### Example - using date
+#### Example  - using date
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->axisCrossingValue(new date());
 
-#### Example - using array
+#### Example  - using array
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->axisCrossingValue(new array());
 
-### baseUnit `string`
-
+### baseUnit
 The base time interval for the axis labels.
 The default baseUnit is determined automatically from the value range. Available options:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->baseUnit('value');
 
-### color `string`
-
+### color
 Color to apply to all axis elements.
 Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->color('value');
 
@@ -143,58 +152,79 @@ The major ticks of the axis.
     $size = 1;
     $xAxisItem->majorTicks(array('size' => $size));
 
-### majorUnit `float`
-
+### majorUnit
 The interval between major divisions in base units.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->majorUnit(1);
 
-### max ``
-
+### max
 The end date of the axis.
 This is often used in combination with the min configuration option.
+#### Parameters
+
+##### $value ``
 
 
-### min ``
 
+### min
 The maximum value of the axis.
 This is often used in combination with the max configuration option.
+#### Parameters
+
+##### $value ``
 
 
-### minorUnit `float`
 
+### minorUnit
 The interval between minor divisions in base units.
 It defaults to 1/5th of the majorUnit.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->minorUnit(1);
 
-### name ``
-
+### name
 The unique axis name.
+#### Parameters
+
+##### $value ``
 
 
-### narrowRange `boolean`
 
+### narrowRange
 Prevents the automatic axis range from snapping to 0.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->narrowRange(true);
 
-### pane `string`
-
+### pane
 The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->pane('value');
 
@@ -227,13 +257,16 @@ Adds one or more StockChartXAxisItemPlotBand to the StockChartXAxisItem.
     $second = new \Kendo\Dataviz\UI\StockChartXAxisItemPlotBand();
     $xAxisItem->addPlotBand($first, $second);
 
-### reverse `boolean`
-
+### reverse
 Reverses the axis direction -
 values increase from right to left and from top to bottom.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->reverse(true);
 
@@ -260,22 +293,28 @@ The title of the value axis.
     $background = 'value';
     $xAxisItem->title(array('background' => $background));
 
-### type `string`
-
+### type
 The axis type.Note: The Chart will automatically switch to a date axis if the series X value
 is of type Date. Specify type explicitly when such behavior is undesired.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->type('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the axis.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $xAxisItem->visible(true);
 

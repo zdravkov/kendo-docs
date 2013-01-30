@@ -12,21 +12,27 @@ A PHP class representing the border setting of StockChartSeriesItemTooltip.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the border.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemTooltipBorder();
     $border->color('value');
 
-### width `float`
-
+### width
 The width of the border.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemTooltipBorder();
     $border->width(1);
 

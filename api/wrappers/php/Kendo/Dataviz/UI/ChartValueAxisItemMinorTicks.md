@@ -12,21 +12,27 @@ A PHP class representing the minorTicks setting of ChartValueAxisItem.
 
 ## Methods
 
-### size `float`
-
+### size
 The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $minorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks();
     $minorTicks->size(1);
 
-### visible `boolean`
-
+### visible
 The visibility of the minor ticks.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $minorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks();
     $minorTicks->visible(true);
 

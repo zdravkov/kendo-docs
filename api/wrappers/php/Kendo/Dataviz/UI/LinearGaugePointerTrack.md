@@ -35,39 +35,51 @@ The border of the track.
     $color = 'value';
     $track->border(array('color' => $color));
 
-### color `string`
-
+### color
 The color of the track.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->color('value');
 
-### opacity `float`
-
+### opacity
 The opacity of the track.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->opacity(1);
 
-### size `float`
-
+### size
 The size of the track.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->size(1);
 
-### visible `boolean`
-
+### visible
 The visibility of the track.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->visible(true);
 

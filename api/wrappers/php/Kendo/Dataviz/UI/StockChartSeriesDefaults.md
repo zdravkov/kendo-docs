@@ -12,10 +12,13 @@ A PHP class representing the seriesDefaults setting of StockChart.
 
 ## Methods
 
-### area ``
-
+### area
 The area configuration options.
 The default options for all area series. For more details see the series options.
+#### Parameters
+
+##### $value ``
+
 
 
 ### border
@@ -41,24 +44,33 @@ The border of the series.
     $color = 'value';
     $seriesDefaults->border(array('color' => $color));
 
-### candlestick ``
-
+### candlestick
 The candlestick configuration options.
 The default options for all candlestick series. For more details see the series options.
+#### Parameters
+
+##### $value ``
 
 
-### column ``
 
+### column
 The column configuration options.
 The default options for all column series. For more details see the series options.
+#### Parameters
+
+##### $value ``
 
 
-### gap `float`
 
+### gap
 The distance between category clusters.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $seriesDefaults->gap(1);
 
@@ -85,44 +97,62 @@ Configures the series data labels.
     $background = 'value';
     $seriesDefaults->labels(array('background' => $background));
 
-### line ``
-
+### line
 The line configuration options.
 The default options for all line series. For more details see the series options.
+#### Parameters
+
+##### $value ``
 
 
-### ohlc ``
 
+### ohlc
 The ohlc configuration options.
 The default options for all ohlc series. For more details see the series options.
+#### Parameters
+
+##### $value ``
 
 
-### overlay ``
 
+### overlay
 The effects overlay.
+#### Parameters
+
+##### $value ``
 
 
-### pie ``
 
+### pie
 The pie configuration options.
 The default options for all pie series. For more details see the series options.
+#### Parameters
+
+##### $value ``
 
 
-### spacing `float`
 
+### spacing
 Space between bars.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $seriesDefaults->spacing(1);
 
-### stack `boolean`
-
+### stack
 A value indicating if the series should be stacked.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $seriesDefaults->stack(true);
 

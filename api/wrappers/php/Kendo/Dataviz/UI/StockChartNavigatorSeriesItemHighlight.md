@@ -35,12 +35,15 @@ The border of highlighted points. The color is computed automatically from the b
     $color = 'value';
     $highlight->border(array('color' => $color));
 
-### color `string`
-
+### color
 The highlight color.** Available only for pie series **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $highlight = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlight();
     $highlight->color('value');
 
@@ -67,12 +70,15 @@ Line options for highlighted points. The color is computed automatically from th
     $color = 'value';
     $highlight->line(array('color' => $color));
 
-### opacity `float`
-
+### opacity
 The opacity of the highlighted points.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $highlight = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlight();
     $highlight->opacity(1);
 

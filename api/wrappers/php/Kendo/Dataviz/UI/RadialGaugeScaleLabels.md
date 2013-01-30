@@ -12,13 +12,16 @@ A PHP class representing the labels setting of RadialGaugeScale.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the labels.
 Any valid CSS color string will work here, including hex and rgb
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->background('value');
 
@@ -45,81 +48,105 @@ The border of the labels.
     $color = 'value';
     $labels->border(array('color' => $color));
 
-### color `string`
-
+### color
 The text color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->color('value');
 
-### font `string`
-
+### font
 The font style of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->font('value');
 
-### format `string`
-
+### format
 The format of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->format('value');
 
-### margin `float|`
-
+### margin
 The margin of the labels.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->margin(1);
 
-### padding `float|`
-
+### padding
 The padding of the labels.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->padding(1);
 
-### position `string`
-
+### position
 The labels positions.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->position('value');
 
-### template `string|\Kendo\JavaScriptFunction`
-
+### template
 The label template.
 Template variables:
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
-#### Example - using string
+
+#### Example  - using string
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->template('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
 
-### visible `boolean`
-
+### visible
 The visibility of the labels.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $labels->visible(true);
 

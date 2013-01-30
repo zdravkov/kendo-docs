@@ -12,13 +12,16 @@ A PHP class representing the title setting of StockChartCategoryAxisItem.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the title. Any valid CSS color string will work here, including
 hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->background('value');
 
@@ -45,66 +48,87 @@ The border of the title.
     $color = 'value';
     $title->border(array('color' => $color));
 
-### color `string`
-
+### color
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->color('value');
 
-### font `string`
-
+### font
 The font style of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->font('value');
 
-### margin `float|`
-
+### margin
 The margin of the title.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->margin(1);
 
-### position `string`
-
+### position
 The position of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->position('value');
 
-### rotation `float`
-
+### rotation
 The rotation angle of the title.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->rotation(1);
 
-### text `string`
-
+### text
 The text of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->text('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the title.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->visible(true);
 

@@ -12,84 +12,111 @@ A PHP class representing the localization setting of Upload.
 
 ## Methods
 
-### cancel `string`
-
+### cancel
 Sets the text of the cancel button text.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->cancel('value');
 
-### dropFilesHere `string`
-
+### dropFilesHere
 Sets the drop zone hint.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->dropFilesHere('value');
 
-### remove `string`
-
+### remove
 Sets the text of the remove button text.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->remove('value');
 
-### retry `string`
-
+### retry
 Sets the text of the retry button text.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->retry('value');
 
-### select `string`
-
+### select
 Sets the "Select..." button text.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->select('value');
 
-### statusFailed `string`
-
+### statusFailed
 Sets the status message for failed uploads.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->statusFailed('value');
 
-### statusUploaded `string`
-
+### statusUploaded
 Sets the status message for uploaded files.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->statusUploaded('value');
 
-### statusUploading `string`
-
+### statusUploading
 Sets the status message for files that are being uploaded.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->statusUploading('value');
 
-### uploadSelectedFiles `string`
-
+### uploadSelectedFiles
 Sets the text of the "Upload files" button.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->uploadSelectedFiles('value');
 

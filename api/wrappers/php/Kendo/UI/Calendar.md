@@ -39,66 +39,87 @@ Fires when the selected date is changed
     $calendar = new \Kendo\UI\Calendar();
     $calendar->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### culture `string`
-
+### culture
 Specifies the culture info used by the widget.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->culture('value');
 
-### dates `array`
-
+### dates
 Specifies a list of dates, which will be passed to the month template.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->dates(new array());
 
-### depth `string`
-
+### depth
 Specifies the navigation depth.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->depth('value');
 
-### footer `string`
-
+### footer
 Template to be used for rendering the footer. If false, the footer will not be rendered.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->footer('value');
 
-### format `string`
-
+### format
 Specifies the format, which is used to parse value set with value() method.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->format('value');
 
-### max `date`
-
+### max
 Specifies the maximum date, which the calendar can show.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->max(new date());
 
-### min `date`
-
+### min
 Specifies the minimum date, which the calendar can show.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->min(new date());
 
@@ -152,21 +173,27 @@ Fires when navigate
     $calendar = new \Kendo\UI\Calendar();
     $calendar->navigate(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### start `string`
-
+### start
 Specifies the start view.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->start('value');
 
-### value `date`
-
+### value
 Specifies the selected date.
+#### Parameters
+
+##### $value `date`
 
 
-#### Example - using date
+
+#### Example 
     $calendar = new \Kendo\UI\Calendar();
     $calendar->value(new date());
 

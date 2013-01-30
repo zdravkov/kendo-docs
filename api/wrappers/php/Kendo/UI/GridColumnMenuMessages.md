@@ -12,39 +12,51 @@ A PHP class representing the messages setting of GridColumnMenu.
 
 ## Methods
 
-### columns `string`
-
+### columns
 Set the text of the columns section in column header menu.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridColumnMenuMessages();
     $messages->columns('value');
 
-### filter `string`
-
+### filter
 Set the text of the filter section in column header menu.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridColumnMenuMessages();
     $messages->filter('value');
 
-### sortAscending `string`
-
+### sortAscending
 Set the text of the sortAscending section in column header menu.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridColumnMenuMessages();
     $messages->sortAscending('value');
 
-### sortDescending `string`
-
+### sortDescending
 Set the text of the sortDescending section in column header menu.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\GridColumnMenuMessages();
     $messages->sortDescending('value');
 

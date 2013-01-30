@@ -12,57 +12,75 @@ A PHP class representing the item setting of TreeViewItems.
 
 ## Methods
 
-### enabled `boolean`
-
+### enabled
 Specifies whether the item is initially enabled
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->enabled(true);
 
-### expanded `boolean`
-
+### expanded
 Specifies whether the item is initially expanded
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->expanded(true);
 
-### imageUrl `string`
-
+### imageUrl
 Specifies the URL of the image displayed by the item
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->imageUrl('value');
 
-### selected `boolean`
-
+### selected
 Specifies whether the item is initially selected
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->selected(true);
 
-### spriteCssClass `string`
-
+### spriteCssClass
 Specifies the class name for the sprite image displayed by the item
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->spriteCssClass('value');
 
-### text `string`
-
+### text
 Specifies the text displayed by the item
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->text('value');
 

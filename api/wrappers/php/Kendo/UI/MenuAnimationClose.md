@@ -12,21 +12,27 @@ A PHP class representing the close setting of MenuAnimation.
 
 ## Methods
 
-### duration `float`
-
+### duration
 Difines the animation duration.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $close = new \Kendo\UI\MenuAnimationClose();
     $close->duration(1);
 
-### effects `string`
-
+### effects
 Effect to be used for closing of the popup.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $close = new \Kendo\UI\MenuAnimationClose();
     $close->effects('value');
 

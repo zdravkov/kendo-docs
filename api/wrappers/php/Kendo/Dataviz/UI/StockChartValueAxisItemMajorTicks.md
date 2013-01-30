@@ -12,21 +12,27 @@ A PHP class representing the majorTicks setting of StockChartValueAxisItem.
 
 ## Methods
 
-### size `float`
-
+### size
 The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $majorTicks = new \Kendo\Dataviz\UI\StockChartValueAxisItemMajorTicks();
     $majorTicks->size(1);
 
-### visible `boolean`
-
+### visible
 The visibility of the major ticks.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $majorTicks = new \Kendo\Dataviz\UI\StockChartValueAxisItemMajorTicks();
     $majorTicks->visible(true);
 

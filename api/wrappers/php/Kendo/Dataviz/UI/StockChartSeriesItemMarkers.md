@@ -12,12 +12,15 @@ A PHP class representing the markers setting of StockChartSeriesItem.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the current series markers.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->background('value');
 
@@ -44,30 +47,39 @@ The border of the markers.
     $color = 'value';
     $markers->border(array('color' => $color));
 
-### size `float`
-
+### size
 The marker size.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->size(1);
 
-### type `string`
-
+### type
 Configures the markers shape type.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->type('value');
 
-### visible `boolean`
-
+### visible
 The markers visibility.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->visible(true);
 

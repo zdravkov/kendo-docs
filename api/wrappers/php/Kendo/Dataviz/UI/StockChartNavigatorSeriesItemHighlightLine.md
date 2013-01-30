@@ -12,30 +12,39 @@ A PHP class representing the line setting of StockChartNavigatorSeriesItemHighli
 
 ## Methods
 
-### color `string`
-
+### color
 The line color.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightLine();
     $line->color('value');
 
-### opacity `float`
-
+### opacity
 The opacity of the line.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightLine();
     $line->opacity(1);
 
-### width `float`
-
+### width
 The width of the line.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightLine();
     $line->width(1);
 

@@ -12,21 +12,27 @@ A PHP class representing the labels setting of ChartSeriesItem.
 
 ## Methods
 
-### align `string`
-
+### align
 Defines the alignment of the labels.** Available for donut and pie series. **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->align('value');
 
-### background `string`
-
+### background
 The background color of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->background('value');
 
@@ -53,88 +59,115 @@ The border of the labels.
     $color = 'value';
     $labels->border(array('color' => $color));
 
-### color `string`
-
+### color
 The text color of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->color('value');
 
-### distance `float`
-
+### distance
 The distance of the labels.** Available for donut and pie series. **
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->distance(1);
 
-### font `string`
-
+### font
 The font style of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->font('value');
 
-### format `string`
-
+### format
 The format of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->format('value');
 
-### margin `float|`
-
+### margin
 The margin of the labels.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->margin(1);
 
-### padding `float|`
-
+### padding
 The padding of the labels.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->padding(1);
 
-### position `string`
-
+### position
 Defines the position of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->position('value');
 
-### template `string|\Kendo\JavaScriptFunction`
-
+### template
 The label template. Template variables:
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
-#### Example - using string
+
+#### Example  - using string
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->template('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
 
-### visible `boolean`
-
+### visible
 The visibility of the labels.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->visible(true);
 

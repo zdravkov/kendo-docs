@@ -12,22 +12,28 @@ A PHP class representing the seriesItem setting of StockChartSeries.
 
 ## Methods
 
-### aggregate `string`
-
+### aggregate
 Aggregate function for date series.This function is used when a category (an year, month, etc.) contains two or more points.
 The function return value is displayed instead of the individual points.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->aggregate('value');
 
-### axis `string`
-
+### axis
 The name of the value axis to use.** Applicable to area, column, line, ohlc and candlestick series **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->axis('value');
 
@@ -54,102 +60,135 @@ The border of the points.** Applicable to column, ohlc and candlestick series **
     $color = 'value';
     $seriesItem->border(array('color' => $color));
 
-### closeField `string`
-
+### closeField
 The data field containing the close value.** Available for candlestick and ohlc series only **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->closeField('value');
 
-### color `string`
-
+### color
 The series base color.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->color('value');
 
-### colorField `string`
-
+### colorField
 The data field containing the point color.** Applicable for column, candlestick and ohlc series. **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->colorField('value');
 
-### dashType `string`
-
+### dashType
 The series line dash type.** Applicable only to line series **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->dashType('value');
 
-### data `array`
-
+### data
 Array of data items. The data item type can be either a:
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->data(new array());
 
-### downColor `string`
-
+### downColor
 The series color when open value is smoller then close value.** Available for candlestick series only **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->downColor('value');
 
-### downColorField `string`
-
+### downColorField
 The data field containing the body color.** Available for candlestick series only **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->downColorField('value');
 
-### field `string`
-
+### field
 The data field containing the series value.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->field('value');
 
-### gap `float`
-
+### gap
 The distance between category clusters.** Applicable for column, candlestick and ohlc series. **
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->gap(1);
 
-### groupNameTemplate `string`
-
+### groupNameTemplate
 Name template for auto-generated series when binding to grouped data.Template variables:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->groupNameTemplate('value');
 
-### highField `string`
-
+### highField
 The data field containing the high value.** Available for candlestick and ohlc series only **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->highField('value');
 
@@ -210,7 +249,7 @@ Line options.** Applicable to area, candlestick and ohlc series. **
 
 
 
-#### Example - using string
+#### Example  - using string
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->line('value');
 
@@ -229,12 +268,15 @@ Line options.** Applicable to area, candlestick and ohlc series. **
     $color = 'value';
     $seriesItem->line(array('color' => $color));
 
-### lowField `string`
-
+### lowField
 The data field containing the low value.** Available for candlestick and ohlc series **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->lowField('value');
 
@@ -261,39 +303,51 @@ Marker options.** Applicable for area and line series. **
     $background = 'value';
     $seriesItem->markers(array('background' => $background));
 
-### missingValues `string`
-
+### missingValues
 Configures the behavior for handling missing values.** Applicable for area and line series. **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->missingValues('value');
 
-### name `string`
-
+### name
 The series name visible in the legend.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->name('value');
 
-### opacity `float`
-
+### opacity
 The series opacity.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->opacity(1);
 
-### openField `string`
-
+### openField
 The data field containing the open value.** Available for candlestick and ohlc series **
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->openField('value');
 
@@ -320,26 +374,32 @@ The effects overlay.
     $gradient = 'value';
     $seriesItem->overlay(array('gradient' => $gradient));
 
-### spacing `float`
-
+### spacing
 Space between points as proportion of the point width.Available for column, candlestick and ohlc series.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->spacing(1);
 
-### stack `boolean|string`
-
+### stack
 A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
 Available for column series.
+#### Parameters
+
+##### $value `boolean|string`
 
 
-#### Example - using boolean
+
+#### Example  - using boolean
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->stack(true);
 
-#### Example - using string
+#### Example  - using string
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->stack('value');
 
@@ -366,21 +426,27 @@ The data point tooltip configuration options.
     $background = 'value';
     $seriesItem->tooltip(array('background' => $background));
 
-### type `string`
-
+### type
 The type of the series. Available types:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->type('value');
 
-### width `float`
-
+### width
 The line width.** Applicable for area and line series. **
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->width(1);
 

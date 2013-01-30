@@ -12,12 +12,15 @@ A PHP class representing the legend setting of StockChart.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the legend. Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->background('value');
 
@@ -67,61 +70,79 @@ Configures the legend labels.
     $color = 'value';
     $legend->labels(array('color' => $color));
 
-### margin `float|`
-
+### margin
 The margin of the legend.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->margin(1);
 
-### offsetX `float`
-
+### offsetX
 The X offset from its position.  The offset is relative to the current position of the legend.
 For instance, a value of 20 will move the legend 20 pixels to the right of it's initial position.  A negative value will move the legend
 to the left of the current position.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->offsetX(1);
 
-### offsetY `float`
-
+### offsetY
 The Y offset from its position.  The offset is relative to the current position of the legend.
 For instance, a value of 20 will move the legend 20 pixels down from it's initial position.  A negative value will move the legend
 upwards from the current position.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->offsetY(1);
 
-### padding `float|`
-
+### padding
 The padding of the legend.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->padding(1);
 
-### position `string`
-
+### position
 The positions of the legend.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->position('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the legend.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->visible(true);
 

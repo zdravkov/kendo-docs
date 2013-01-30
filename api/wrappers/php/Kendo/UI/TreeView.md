@@ -47,7 +47,7 @@ If true or an object, renders checkboxes within each treeview item.
 
 
 
-#### Example - using boolean
+#### Example  - using boolean
     $treeView = new \Kendo\UI\TreeView();
     $treeView->checkboxes(true);
 
@@ -120,13 +120,16 @@ Triggered after the dataSource change event has been processed (adding/removing 
     $treeView = new \Kendo\UI\TreeView();
     $treeView->dataBound(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### dataImageUrlField `string`
-
+### dataImageUrlField
 Sets the field of the data item that provides
 the image URL of the treeview nodes.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $treeView = new \Kendo\UI\TreeView();
     $treeView->dataImageUrlField('value');
 
@@ -150,33 +153,42 @@ Sets the data source of the dataSource.
     $schema = new \Kendo\Data\DataSourceSchema();
     $treeView->dataSource(array('schema' => $schema));
 
-### dataSpriteCssClassField `string`
-
+### dataSpriteCssClassField
 Sets the field of the data item that provides
 the sprite CSS class of the treeview nodes.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $treeView = new \Kendo\UI\TreeView();
     $treeView->dataSpriteCssClassField('value');
 
-### dataTextField `string`
-
+### dataTextField
 Sets the field of the data item that provides
 the text content of the treeview nodes.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $treeView = new \Kendo\UI\TreeView();
     $treeView->dataTextField('value');
 
-### dataUrlField `string`
-
+### dataUrlField
 Sets the field of the data item that provides
 the link URL of the treeview nodes.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $treeView = new \Kendo\UI\TreeView();
     $treeView->dataUrlField('value');
 
@@ -207,13 +219,16 @@ Triggered while a node is being dragged.
     $treeView = new \Kendo\UI\TreeView();
     $treeView->drag(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### dragAndDrop `boolean`
-
+### dragAndDrop
 Disables (false) or enables (true) drag-and-drop on the nodes of a
 TreeView.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $treeView = new \Kendo\UI\TreeView();
     $treeView->dragAndDrop(true);
 
@@ -354,15 +369,18 @@ Adds one or more TreeViewItem to the TreeView.
     $second = new \Kendo\UI\TreeViewItem();
     $treeView->addItem($first, $second);
 
-### loadOnDemand `boolean`
-
+### loadOnDemand
 Indicates whether the child datasources should be fetched
 lazily, when parent groups get expanded. Setting this to false causes all child dataSources to
 be loaded at initialization time. Note: when initializing a TreeView from array (rather than from a
 HierarchicalDataSource instance), the default value of this option is false.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $treeView = new \Kendo\UI\TreeView();
     $treeView->loadOnDemand(true);
 
@@ -420,16 +438,19 @@ Triggered when a node gets selected.
     $treeView = new \Kendo\UI\TreeView();
     $treeView->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### template `string|\Kendo\JavaScriptFunction`
-
+### template
 Template for rendering of the nodes of the treeview.
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
-#### Example - using string
+
+#### Example  - using string
     $treeView = new \Kendo\UI\TreeView();
     $treeView->template('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $treeView = new \Kendo\UI\TreeView();
     $treeView->template(new \Kendo\JavaScriptFunction('function() { }'));
 

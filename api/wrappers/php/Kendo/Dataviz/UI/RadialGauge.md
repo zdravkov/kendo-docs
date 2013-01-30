@@ -59,21 +59,27 @@ The pointer configuration options.
     $color = 'value';
     $radialGauge->pointer(array('color' => $color));
 
-### rangeDistance `float`
-
+### rangeDistance
 The distance from the range indicators to the ticks.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
     $radialGauge->rangeDistance(1);
 
-### rangeSize `float`
-
+### rangeSize
 The width of the range indicators.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
     $radialGauge->rangeSize(1);
 
@@ -100,12 +106,15 @@ Configures the scale.
     $endAngle = 1;
     $radialGauge->scale(array('endAngle' => $endAngle));
 
-### transitions `boolean`
-
+### transitions
 A value indicating if transition animations should be played.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
     $radialGauge->transitions(true);
 

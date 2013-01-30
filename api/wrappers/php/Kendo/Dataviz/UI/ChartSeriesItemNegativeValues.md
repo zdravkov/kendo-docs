@@ -12,21 +12,27 @@ A PHP class representing the negativeValues setting of ChartSeriesItem.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the negative values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $negativeValues = new \Kendo\Dataviz\UI\ChartSeriesItemNegativeValues();
     $negativeValues->color('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the negative values.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $negativeValues = new \Kendo\Dataviz\UI\ChartSeriesItemNegativeValues();
     $negativeValues->visible(true);
 

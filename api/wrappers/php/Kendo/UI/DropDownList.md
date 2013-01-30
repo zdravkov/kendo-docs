@@ -35,12 +35,15 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
     $close = new \Kendo\UI\DropDownListAnimationClose();
     $dropDownList->animation(array('close' => $close));
 
-### autoBind `boolean`
-
+### autoBind
 Controls whether to bind the widget on initialization.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->autoBind(true);
 
@@ -71,12 +74,15 @@ Triggered when value of the widget is changed via API or user interaction.
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->cascade(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### cascadeFrom `string`
-
+### cascadeFrom
 Use it to set the Id of the parent DropDownList.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->cascadeFrom('value');
 
@@ -181,66 +187,87 @@ Sets the data source of the dataSource.
     $schema = new \Kendo\Data\DataSourceSchema();
     $dropDownList->dataSource(array('schema' => $schema));
 
-### dataTextField `string`
-
+### dataTextField
 Sets the field of the data item that provides the text content of the list items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->dataTextField('value');
 
-### dataValueField `string`
-
+### dataValueField
 Sets the field of the data item that provides the value content of the list items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->dataValueField('value');
 
-### delay `float`
-
+### delay
 Specifies the delay in ms before the search text typed by the end user is cleared.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->delay(1);
 
-### enable `boolean`
-
+### enable
 Controls whether the DropDownList should be initially enabled.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->enable(true);
 
-### height `float`
-
+### height
 Define the height of the drop-down list in pixels.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->height(1);
 
-### ignoreCase `string`
-
+### ignoreCase
 Controls whether the search should be case sensitive.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->ignoreCase('value');
 
-### index `float`
-
+### index
 Defines the initial selected item.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->index(1);
 
@@ -271,12 +298,15 @@ Fires when the drop-down list is opened
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### optionLabel `string|`
-
+### optionLabel
 Define the text of the default empty item. If the value is an object, then the widget will use it directly.
+#### Parameters
+
+##### $value `string|`
 
 
-#### Example - using string
+
+#### Example  - using string
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->optionLabel('value');
 
@@ -307,30 +337,39 @@ Triggered when a Li element is selected.
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### template `string`
-
+### template
 Template to be used for rendering the items in the list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->template('value');
 
-### text `string`
-
+### text
 Define the text of the widget, when the autoBind is set to false.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->text('value');
 
-### value `string`
-
+### value
 Define the value of the widget
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dropDownList = new \Kendo\UI\DropDownList();
     $dropDownList->value('value');
 

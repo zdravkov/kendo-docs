@@ -12,22 +12,28 @@ A PHP class representing the collapse setting of PanelBarAnimation.
 
 ## Methods
 
-### duration `float`
-
+### duration
 The number of milliseconds used for the visual animation when a PanelBar item is closed.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $collapse = new \Kendo\UI\PanelBarAnimationCollapse();
     $collapse->duration(1);
 
-### effects `string`
-
+### effects
 A whitespace-delimited string of animation effects that are utilized when a PanelBar item
 is closed. Options include "fadeOut".
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $collapse = new \Kendo\UI\PanelBarAnimationCollapse();
     $collapse->effects('value');
 

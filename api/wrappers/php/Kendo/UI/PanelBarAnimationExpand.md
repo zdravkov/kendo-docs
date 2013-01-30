@@ -12,31 +12,40 @@ A PHP class representing the expand setting of PanelBarAnimation.
 
 ## Methods
 
-### duration `float`
-
+### duration
 The number of milliseconds used for the visual animation when an item is opened.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $expand = new \Kendo\UI\PanelBarAnimationExpand();
     $expand->duration(1);
 
-### effects `string`
-
+### effects
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
 "expandVertical" and "fadeIn".
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $expand = new \Kendo\UI\PanelBarAnimationExpand();
     $expand->effects('value');
 
-### show `boolean`
+### show
+
+#### Parameters
+
+##### $value `boolean`
 
 
 
-
-#### Example - using boolean
+#### Example 
     $expand = new \Kendo\UI\PanelBarAnimationExpand();
     $expand->show(true);
 

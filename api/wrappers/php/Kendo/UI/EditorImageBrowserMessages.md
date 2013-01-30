@@ -12,84 +12,111 @@ A PHP class representing the messages setting of EditorImageBrowser.
 
 ## Methods
 
-### deleteFile `string`
-
+### deleteFile
 Defines text for dialog shown when the file or directory is deleted.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->deleteFile('value');
 
-### directoryNotFound `string`
-
+### directoryNotFound
 Defines text for dialog shown when the directory not found error occurs.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->directoryNotFound('value');
 
-### emptyFolder `string`
-
+### emptyFolder
 Defines text displayed when folder does not contain items.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->emptyFolder('value');
 
-### invalidFileType `string`
-
+### invalidFileType
 Defines text for dialog shown when an invalid file is set for upload.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->invalidFileType('value');
 
-### orderBy `string`
-
+### orderBy
 Defines text for order by label.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->orderBy('value');
 
-### orderByName `string`
-
+### orderByName
 Defines text for Name item of order by drop down list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->orderByName('value');
 
-### orderBySize `string`
-
+### orderBySize
 Defines text for Size item of order by drop down list.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->orderBySize('value');
 
-### overwriteFile `string`
-
+### overwriteFile
 Defines text for dialog shown when an already existing file is set for upload.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->overwriteFile('value');
 
-### uploadFile `string`
-
+### uploadFile
 Defines text for upload button.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->uploadFile('value');
 

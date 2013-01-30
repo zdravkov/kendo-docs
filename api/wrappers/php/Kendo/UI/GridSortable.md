@@ -12,21 +12,27 @@ A PHP class representing the sortable setting of Grid.
 
 ## Methods
 
-### allowUnsort `boolean`
-
+### allowUnsort
 Defines whether column can have unsorted state.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $sortable = new \Kendo\UI\GridSortable();
     $sortable->allowUnsort(true);
 
-### mode `string`
-
+### mode
 Defines sorting mode. Possible values:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $sortable = new \Kendo\UI\GridSortable();
     $sortable->mode('value');
 

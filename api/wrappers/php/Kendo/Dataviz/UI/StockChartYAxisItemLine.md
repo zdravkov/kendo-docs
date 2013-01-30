@@ -12,41 +12,53 @@ A PHP class representing the line setting of StockChartYAxisItem.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the line. This will also effect the major and minor ticks, but
 not the grid lines.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\StockChartYAxisItemLine();
     $line->color('value');
 
-### dashType `string`
-
+### dashType
 The dash type of the line.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\StockChartYAxisItemLine();
     $line->dashType('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the line.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\StockChartYAxisItemLine();
     $line->visible(true);
 
-### width `float`
-
+### width
 The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $line = new \Kendo\Dataviz\UI\StockChartYAxisItemLine();
     $line->width(1);
 

@@ -81,30 +81,39 @@ Configures the scale major ticks.
     $color = 'value';
     $scale->majorTicks(array('color' => $color));
 
-### majorUnit `float`
-
+### majorUnit
 The interval between major divisions.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->majorUnit(1);
 
-### max `float`
-
+### max
 The maximum value of the scale.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->max(1);
 
-### min `float`
-
+### min
 The minimum value of the scale.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->min(1);
 
@@ -131,22 +140,28 @@ Configures the scale minor ticks.
     $color = 'value';
     $scale->minorTicks(array('color' => $color));
 
-### minorUnit `float`
-
+### minorUnit
 The interval between minor divisions.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->minorUnit(1);
 
-### mirror `boolean`
-
+### mirror
 Mirrors the scale labels and ticks.
 If the labels are normally on the left side of the scale, mirroring the scale will render them to the right.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->mirror(true);
 
@@ -179,21 +194,27 @@ Adds one or more LinearGaugeScaleRange to the LinearGaugeScale.
     $second = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $scale->addRange($first, $second);
 
-### reverse `boolean`
-
+### reverse
 Reverses the axis direction - values increase from right to left and from top to bottom.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->reverse(true);
 
-### vertical `boolean`
-
+### vertical
 The position of the gauge.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->vertical(true);
 

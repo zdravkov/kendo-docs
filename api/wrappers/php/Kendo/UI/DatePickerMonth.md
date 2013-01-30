@@ -12,22 +12,28 @@ A PHP class representing the month setting of DatePicker.
 
 ## Methods
 
-### content `string`
-
+### content
 Template to be used for rendering the cells in the calendar "month" view, which are in range.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $month = new \Kendo\UI\DatePickerMonth();
     $month->content('value');
 
-### _empty `string`
-
+### _empty
 The template used for rendering the cells in the calendar "month" view, which are not in the range between
 the minimum and maximum values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $month = new \Kendo\UI\DatePickerMonth();
     $month->_empty('value');
 

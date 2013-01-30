@@ -12,13 +12,16 @@ A PHP class representing the scale setting of RadialGauge.
 
 ## Methods
 
-### endAngle `float`
-
+### endAngle
 The end angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->endAngle(1);
 
@@ -68,30 +71,39 @@ Configures the scale major ticks.
     $color = 'value';
     $scale->majorTicks(array('color' => $color));
 
-### majorUnit `float`
-
+### majorUnit
 The interval between major divisions.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->majorUnit(1);
 
-### max `float`
-
+### max
 The maximum value of the scale.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->max(1);
 
-### min `float`
-
+### min
 The minimum value of the scale.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->min(1);
 
@@ -118,12 +130,15 @@ Configures the scale minor ticks.
     $color = 'value';
     $scale->minorTicks(array('color' => $color));
 
-### minorUnit `float`
-
+### minorUnit
 The interval between minor divisions.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->minorUnit(1);
 
@@ -156,22 +171,28 @@ Adds one or more RadialGaugeScaleRange to the RadialGaugeScale.
     $second = new \Kendo\Dataviz\UI\RadialGaugeScaleRange();
     $scale->addRange($first, $second);
 
-### reverse `boolean`
-
+### reverse
 Reverses the scale direction - values are increase anticlockwise.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->reverse(true);
 
-### startAngle `float`
-
+### startAngle
 The start angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->startAngle(1);
 

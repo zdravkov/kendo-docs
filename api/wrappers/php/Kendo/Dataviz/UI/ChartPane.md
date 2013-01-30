@@ -12,12 +12,15 @@ A PHP class representing the pane setting of ChartPanes.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the pane.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $pane->background('value');
 
@@ -44,39 +47,51 @@ The border of the pane.
     $color = 'value';
     $pane->border(array('color' => $color));
 
-### height `float`
-
+### height
 The pane height in pixels.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $pane->height(1);
 
-### margin `float|`
-
+### margin
 The margin of the pane.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $pane->margin(1);
 
-### name `string`
-
+### name
 The unique pane name.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $pane->name('value');
 
-### padding `float|`
-
+### padding
 The padding of the pane.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $pane->padding(1);
 
@@ -91,7 +106,7 @@ The pane title text or configuration.
 
 
 
-#### Example - using string
+#### Example  - using string
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $pane->title('value');
 

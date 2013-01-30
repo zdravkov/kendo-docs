@@ -93,13 +93,16 @@ async mode.
     $upload = new \Kendo\UI\Upload();
     $upload->complete(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### enabled `boolean`
-
+### enabled
 Enables (true) or disables (false) an Upload. A disabled
 Upload may be re-enabled via enable().
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $upload = new \Kendo\UI\Upload();
     $upload->enabled(true);
 
@@ -154,14 +157,17 @@ Sets the strings rendered by the Upload.
     $cancel = 'value';
     $upload->localization(array('cancel' => $cancel));
 
-### multiple `boolean`
-
+### multiple
 Enables (true) or disables (false) the ability to select multiple files.
 If false, users will be able to select only one file at a time. Note: This option does not
 limit the total number of uploaded files in an asynchronous configuration.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $upload = new \Kendo\UI\Upload();
     $upload->multiple(true);
 
@@ -249,14 +255,17 @@ occurring.
     $upload = new \Kendo\UI\Upload();
     $upload->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### showFileList `boolean`
-
+### showFileList
 Enables (true) or disables (false) the ability to display a file listing
 for uploading a file(s). Disabling a file listing may be useful you wish to customize the UI; use the
 client-side events to build your own UI.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $upload = new \Kendo\UI\Upload();
     $upload->showFileList(true);
 

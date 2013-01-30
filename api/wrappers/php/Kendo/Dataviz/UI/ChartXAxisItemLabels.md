@@ -12,13 +12,16 @@ A PHP class representing the labels setting of ChartXAxisItem.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the labels. Any valid CSS color string will work here, including
 hex and rgb
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->background('value');
 
@@ -45,124 +48,163 @@ The border of the labels.
     $color = 'value';
     $labels->border(array('color' => $color));
 
-### color `string`
-
+### color
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->color('value');
 
-### culture `string`
-
+### culture
 Culture to use for formatting the dates. See Globalization for more information.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->culture('value');
 
-### dateFormats ``
-
+### dateFormats
 Date format strings
+#### Parameters
+
+##### $value ``
 
 
-### font `string`
 
+### font
 The font style of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->font('value');
 
-### format `string`
-
+### format
 The format of the labels.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->format('value');
 
-### margin `float|`
-
+### margin
 The margin of the labels.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->margin(1);
 
-### mirror `boolean`
-
+### mirror
 Mirrors the axis labels and ticks.
 If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->mirror(true);
 
-### padding `float|`
-
+### padding
 The padding of the labels.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->padding(1);
 
-### rotation `float`
-
+### rotation
 The rotation angle of the labels.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->rotation(1);
 
-### skip `float`
-
+### skip
 Number of labels to skip.
 Skips rendering the first n labels.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->skip(1);
 
-### step `float`
-
+### step
 Label rendering step.
 Every n-th label is rendered where n is the step
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->step(1);
 
-### template `string|\Kendo\JavaScriptFunction`
-
+### template
 The label template.
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
-#### Example - using string
+
+#### Example  - using string
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->template('value');
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example  - using \Kendo\JavaScriptFunction
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
 
-### visible `boolean`
-
+### visible
 The visibility of the labels.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $labels->visible(true);
 

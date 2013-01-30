@@ -12,22 +12,28 @@ A PHP class representing the cap setting of RadialGaugePointer.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the cap.
 Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $cap = new \Kendo\Dataviz\UI\RadialGaugePointerCap();
     $cap->color('value');
 
-### size `float`
-
+### size
 The size of the cap in percents. (from 0 to 1)
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $cap = new \Kendo\Dataviz\UI\RadialGaugePointerCap();
     $cap->size(1);
 

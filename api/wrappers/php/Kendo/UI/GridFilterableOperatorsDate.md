@@ -12,57 +12,75 @@ A PHP class representing the date setting of GridFilterableOperators.
 
 ## Methods
 
-### eq `string`
-
+### eq
 Enable/Disable and set the text of the "Is equal to" filter option for columns with date values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->eq('value');
 
-### gt `string`
-
+### gt
 Enable/Disable and set the text of the "Is after" filter option for columns with date values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->gt('value');
 
-### gte `string`
-
+### gte
 Enable/Disable and set the text of the "Is after or equal to" filter option for columns with date values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->gte('value');
 
-### lt `string`
-
+### lt
 Enable/Disable and set the text of the "Is before" filter option for columns with date values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->lt('value');
 
-### lte `string`
-
+### lte
 Enable/Disable and set the text of the "Is before or equal to" filter option for columns with date values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->lte('value');
 
-### neq `string`
-
+### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for columns with date values.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->neq('value');
 

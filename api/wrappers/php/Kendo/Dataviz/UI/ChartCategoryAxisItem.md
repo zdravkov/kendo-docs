@@ -12,83 +12,107 @@ A PHP class representing the categoryAxisItem setting of ChartCategoryAxis.
 
 ## Methods
 
-### autoBaseUnitSteps ``
-
+### autoBaseUnitSteps
 Specifies the discrete baseUnitStep values when
 either baseUnit is set to "fit" or baseUnitStep is set to "auto".The default configuration is as follows:Each setting can be overriden individually.
+#### Parameters
+
+##### $value ``
 
 
-### axisCrossingValue `|date|array`
 
+### axisCrossingValue
 Category index at which the first value axis crosses this axis. (Only for object)Category indicies at which the value axes cross the category axis. (Only for array)Note: Specify an index greater than or equal to the number
 of categories to denote the far end of the axis.
+#### Parameters
+
+##### $value `|date|array`
 
 
-#### Example - using 
+
+#### Example  - using 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->axisCrossingValue(new ());
 
-#### Example - using date
+#### Example  - using date
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->axisCrossingValue(new date());
 
-#### Example - using array
+#### Example  - using array
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->axisCrossingValue(new array());
 
-### baseUnit `string`
-
+### baseUnit
 The base time interval for the axis.
 The default baseUnit is determined automatically from the minimum difference
 between subsequent categories. Available options:Setting baseUnit to "fit" will set such base unit and baseUnitStep
 that the total number of categories does not exceed maxDateGroups.Series data is aggregated for the specified base unit by using the
 series.aggregate function.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->baseUnit('value');
 
-### baseUnitStep ``
-
+### baseUnitStep
 Sets the step (interval) between categories in base units.
 Specifiying "auto" will set the step to such value that the total number of categories does not exceed maxDateGroups.This option is ignored if baseUnit is set to "fit".
+#### Parameters
+
+##### $value ``
 
 
-### categories `array`
 
+### categories
 Array of category names.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->categories(new array());
 
-### color `string`
-
+### color
 Color to apply to all axis elements. Any valid CSS color string will work here, including hex and rgb.
 Individual color settings for line and labels take priority.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->color('value');
 
-### field `string`
-
+### field
 The data field containing the category name.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->field('value');
 
-### justified `boolean`
-
+### justified
 Positions categories and series points on major ticks. This removes the empty space before and after the series.This option is ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->justified(true);
 
@@ -185,30 +209,39 @@ The major ticks of the axis.
     $size = 1;
     $categoryAxisItem->majorTicks(array('size' => $size));
 
-### max ``
-
+### max
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
 This is often used in combination with the min and roundToBaseUnit configuration options to
 set up a fixed date range.
+#### Parameters
+
+##### $value ``
 
 
-### maxDateGroups `float`
 
+### maxDateGroups
 Specifies the maximum number of groups (categories) to produce when
 either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->maxDateGroups(1);
 
-### min ``
-
+### min
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
 This is often used in combination with the max and roundToBaseUnit configuration options to
 set up a fixed date range.
+#### Parameters
+
+##### $value ``
+
 
 
 ### minorGridLines
@@ -258,22 +291,28 @@ The minor ticks of the axis.
     $size = 1;
     $categoryAxisItem->minorTicks(array('size' => $size));
 
-### name `string`
-
+### name
 The unique axis name.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->name('value');
 
-### pane `string`
-
+### pane
 The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->pane('value');
 
@@ -306,23 +345,29 @@ Adds one or more ChartCategoryAxisItemPlotBand to the ChartCategoryAxisItem.
     $second = new \Kendo\Dataviz\UI\ChartCategoryAxisItemPlotBand();
     $categoryAxisItem->addPlotBand($first, $second);
 
-### reverse `boolean`
-
+### reverse
 Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->reverse(true);
 
-### roundToBaseUnit `boolean`
-
+### roundToBaseUnit
 By default, the first and last dates will be rounded off to the nearest base unit.
 Specifying false for this option will disable this behavior.This option is most useful in combination with explicit min and max dates.It will be ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->roundToBaseUnit(true);
 
@@ -349,31 +394,40 @@ The title of the category axis.
     $background = 'value';
     $categoryAxisItem->title(array('background' => $background));
 
-### type `string`
-
+### type
 The axis type.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->type('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the axis.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->visible(true);
 
-### weekStartDay `float`
-
+### weekStartDay
 Specifies the week start day when baseUnit is set to "weeks".
 Use the kendo.days constants to specify the day by name.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $categoryAxisItem->weekStartDay(1);
 

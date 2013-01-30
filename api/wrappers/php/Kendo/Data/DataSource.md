@@ -41,21 +41,27 @@ Adds one or more DataSourceAggregateItem to the DataSource.
     $second = new \Kendo\Data\DataSourceAggregateItem();
     $dataSource->addAggregateItem($first, $second);
 
-### autoSync `boolean`
-
+### autoSync
 Enables (true) or disables (false) the automatic invocation of the sync() method for each change made.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->autoSync(true);
 
-### batch `boolean`
-
+### batch
 Enables (true) or disables (false) batch mode.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->batch(true);
 
@@ -86,12 +92,15 @@ Fires when data is changed or read from the transport.
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### data `array`
-
+### data
 Specifies the local JavaScript object to use for the data source.
+#### Parameters
+
+##### $value `array`
 
 
-#### Example - using array
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->data(new array());
 
@@ -180,21 +189,27 @@ Adds one or more DataSourceGroupItem to the DataSource.
     $second = new \Kendo\Data\DataSourceGroupItem();
     $dataSource->addGroupItem($first, $second);
 
-### page `float`
-
+### page
 Sets the index of the displayed page of data.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->page(1);
 
-### pageSize `float`
-
+### pageSize
 Sets the number of records which contains a given page of data.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->pageSize(1);
 
@@ -275,49 +290,64 @@ Set the object responsible for describing the raw data format.
     $aggregates = new \Kendo\JavaScriptFunction('function() { }');
     $dataSource->schema(array('aggregates' => $aggregates));
 
-### serverAggregates `boolean`
-
+### serverAggregates
 Determines if aggregates are calculated on the server or not. By default aggregates are calculated client-side.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->serverAggregates(true);
 
-### serverFiltering `boolean`
-
+### serverFiltering
 Determines if filtering of the data is handled on the server. By default filtering is performed client-side.By default, a filter object is sent to the server with the query string in the following form:Possible values for operator include:
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->serverFiltering(true);
 
-### serverGrouping `boolean`
-
+### serverGrouping
 Determines if grouping of the data is handled on the server. By default grouping is performed client-side.By default, a group object is sent to the server with the query string in the following form:It is possible to modify these parameters by using the parameterMap function found on the transport.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->serverGrouping(true);
 
-### serverPaging `boolean`
-
+### serverPaging
 Determines if paging of the data is on the server. By default paging is performed client-side. If serverPaging is enabled the
 total number of data items should also be returned in the response. Use the schema.total setting to customize that.The following options are sent to the server as part of the query string by default:
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->serverPaging(true);
 
-### serverSorting `boolean`
-
+### serverSorting
 Determines if sorting of the data should is handled on the server. By default sorting is performed client-side.By default, a sort object is sent to the server with the query string in the following form:It is possible to modify these parameters by using the parameterMap function found on the transport.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->serverSorting(true);
 
@@ -400,12 +430,15 @@ Specifies the settings for loading and saving data. This can be a remote or loca
     $create = 'value';
     $dataSource->transport(array('create' => $create));
 
-### type `string`
-
+### type
 Loads transport with preconfigured settings. Currently supports only "odata" (Requires kendo.data.odata.js to be included).
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $dataSource = new \Kendo\Data\DataSource();
     $dataSource->type('value');
 

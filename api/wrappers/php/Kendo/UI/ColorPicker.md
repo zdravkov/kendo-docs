@@ -12,14 +12,17 @@ A PHP class representing Kendo ColorPicker.
 
 ## Methods
 
-### buttons `boolean`
-
+### buttons
 Applicable only for the HSV selector (that is, when pallete is
 null).  This specifies whether the "Apply" / "Cancel" buttons are to
 be displayed in the drop-down HSV picker.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->buttons(true);
 
@@ -52,53 +55,68 @@ picker.
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### columns `float`
-
+### columns
 The number of columns to show in the simple color dropdown.  For the
 "basic" and "websafe" palettes this is automatically initialized; if
 you pass a custom palette then you can set this to some value that
 makes sense for your colors.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->columns(1);
 
-### messages ``
-
+### messages
 Allows customization of "Apply" / "Cancel" labels.
+#### Parameters
+
+##### $value ``
 
 
-### opacity `boolean`
 
+### opacity
 Only for the HSV selector.  If true, the widget will display the
 opacity slider.  Note that currently in HTML5 the <input
 type="color"> does not support opacity.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->opacity(true);
 
-### palette `string`
-
+### palette
 When a non-null palette argument is supplied, the drop-down will be
 a simple color picker.  The following are supported:If palette is missing or null, the widget will display the HSV
 selector.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->palette('value');
 
-### preview `boolean`
-
+### preview
 Only for the HSV selector.  Displays the color preview element, along
 with an input field where the end user can paste a color in a
 CSS-supported notation.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->preview(true);
 
@@ -133,34 +151,43 @@ original value.
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
-### size `float`
-
+### tileSize
 The size (width and height) of a color cell for the Palette picker.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
-    $colorPicker->size(1);
+    $colorPicker->tileSize(1);
 
-### toolIcon `string`
-
+### toolIcon
 A CSS class name to display an icon in the color picker button.  If
 specified, the HTML for the element will look like this:
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->toolIcon('value');
 
-### value `string`
-
+### value
 The initially selected color.  This can be a string supported by
 parseColor or a Color object.  Note that when initializing the
 widget from an <input> element, the initial color will be decided by the
 field instead.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $colorPicker = new \Kendo\UI\ColorPicker();
     $colorPicker->value('value');
 

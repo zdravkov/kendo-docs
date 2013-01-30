@@ -12,30 +12,39 @@ A PHP class representing the connectors setting of ChartSeriesItem.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the connector line.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $connectors = new \Kendo\Dataviz\UI\ChartSeriesItemConnectors();
     $connectors->color('value');
 
-### padding `float`
-
+### padding
 The padding between the connector line and the label, and connector line and donut chart.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $connectors = new \Kendo\Dataviz\UI\ChartSeriesItemConnectors();
     $connectors->padding(1);
 
-### width `float`
-
+### width
 The width of the connector line.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $connectors = new \Kendo\Dataviz\UI\ChartSeriesItemConnectors();
     $connectors->width(1);
 

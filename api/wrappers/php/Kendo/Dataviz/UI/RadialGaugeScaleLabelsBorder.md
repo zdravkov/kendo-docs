@@ -12,30 +12,39 @@ A PHP class representing the border setting of RadialGaugeScaleLabels.
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder();
     $border->color('value');
 
-### dashType `string`
-
+### dashType
 The dash type of the border.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder();
     $border->dashType('value');
 
-### width `float`
-
+### width
 The width of the border.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $border = new \Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder();
     $border->width(1);
 

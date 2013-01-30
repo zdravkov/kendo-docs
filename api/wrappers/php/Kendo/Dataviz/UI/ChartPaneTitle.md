@@ -12,13 +12,16 @@ A PHP class representing the title setting of ChartPane.
 
 ## Methods
 
-### background `string`
-
+### background
 The background color of the title. Any valid CSS color string will work here, including
 hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $title->background('value');
 
@@ -45,57 +48,75 @@ The border of the title.
     $color = 'value';
     $title->border(array('color' => $color));
 
-### color `string`
-
+### color
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $title->color('value');
 
-### font `string`
-
+### font
 The font style of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $title->font('value');
 
-### margin `float|`
-
+### margin
 The margin of the title.
+#### Parameters
+
+##### $value `float|`
 
 
-#### Example - using float
+
+#### Example  - using float
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $title->margin(1);
 
-### position `string`
-
+### position
 The position of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $title->position('value');
 
-### text `string`
-
+### text
 The text of the title.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $title->text('value');
 
-### visible `boolean`
-
+### visible
 The visibility of the title.
+#### Parameters
+
+##### $value `boolean`
 
 
-#### Example - using boolean
+
+#### Example 
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $title->visible(true);
 

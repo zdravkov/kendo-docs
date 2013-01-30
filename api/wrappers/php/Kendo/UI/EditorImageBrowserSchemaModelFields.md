@@ -23,7 +23,7 @@ The field which contains the name of the image/directory
 
 
 
-#### Example - using string
+#### Example  - using string
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
     $fields->name('value');
 
@@ -53,7 +53,7 @@ The field which contains the size of image.
 
 
 
-#### Example - using string
+#### Example  - using string
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
     $fields->size('value');
 
@@ -83,7 +83,7 @@ The field which contains the type of the entry. Either f for image or d for dire
 
 
 
-#### Example - using string
+#### Example  - using string
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
     $fields->type('value');
 

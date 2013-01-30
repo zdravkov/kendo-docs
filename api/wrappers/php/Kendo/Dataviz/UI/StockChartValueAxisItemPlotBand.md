@@ -12,39 +12,51 @@ A PHP class representing the plotBand setting of StockChartValueAxisItemPlotBand
 
 ## Methods
 
-### color `string`
-
+### color
 The color of the plot band.
+#### Parameters
+
+##### $value `string`
 
 
-#### Example - using string
+
+#### Example 
     $plotBand = new \Kendo\Dataviz\UI\StockChartValueAxisItemPlotBand();
     $plotBand->color('value');
 
-### from `float`
-
+### from
 The start position of the plot band in axis units.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $plotBand = new \Kendo\Dataviz\UI\StockChartValueAxisItemPlotBand();
     $plotBand->from(1);
 
-### opacity `float`
-
+### opacity
 The opacity of the plot band.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $plotBand = new \Kendo\Dataviz\UI\StockChartValueAxisItemPlotBand();
     $plotBand->opacity(1);
 
-### to `float`
-
+### to
 The end position of the plot band in axis units.
+#### Parameters
+
+##### $value `float`
 
 
-#### Example - using float
+
+#### Example 
     $plotBand = new \Kendo\Dataviz\UI\StockChartValueAxisItemPlotBand();
     $plotBand->to(1);
 
