@@ -24,7 +24,7 @@ The animation that will be used when closing sub menus.
 ##### $value `\Kendo\UI\MenuAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\MenuAnimationClose](/api/wrappers/php/kendo/ui/menuanimationclose)
+#### Example - using [\Kendo\UI\MenuAnimationClose](/api/wrappers/php/Kendo/UI/MenuAnimationClose)
 
     $animation = new \Kendo\UI\MenuAnimation();
     $close = new \Kendo\UI\MenuAnimationClose();
@@ -50,7 +50,7 @@ The animation that will be used when opening sub menus.
 ##### $value `\Kendo\UI\MenuAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\MenuAnimationOpen](/api/wrappers/php/kendo/ui/menuanimationopen)
+#### Example - using [\Kendo\UI\MenuAnimationOpen](/api/wrappers/php/Kendo/UI/MenuAnimationOpen)
 
     $animation = new \Kendo\UI\MenuAnimation();
     $open = new \Kendo\UI\MenuAnimationOpen();

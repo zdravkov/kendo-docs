@@ -56,7 +56,7 @@ The border of the labels.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemlabelsborder)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemLabelsBorder)
 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder();

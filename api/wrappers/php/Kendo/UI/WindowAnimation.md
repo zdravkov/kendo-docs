@@ -24,7 +24,7 @@ The animation that will be used when a Window closes.
 ##### $value `\Kendo\UI\WindowAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\WindowAnimationClose](/api/wrappers/php/kendo/ui/windowanimationclose)
+#### Example - using [\Kendo\UI\WindowAnimationClose](/api/wrappers/php/Kendo/UI/WindowAnimationClose)
 
     $animation = new \Kendo\UI\WindowAnimation();
     $close = new \Kendo\UI\WindowAnimationClose();
@@ -50,7 +50,7 @@ The animation that will be used when a Window opens.
 ##### $value `\Kendo\UI\WindowAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\WindowAnimationOpen](/api/wrappers/php/kendo/ui/windowanimationopen)
+#### Example - using [\Kendo\UI\WindowAnimationOpen](/api/wrappers/php/Kendo/UI/WindowAnimationOpen)
 
     $animation = new \Kendo\UI\WindowAnimation();
     $open = new \Kendo\UI\WindowAnimationOpen();

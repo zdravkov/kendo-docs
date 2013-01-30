@@ -41,7 +41,7 @@ The border of the title.
 ##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemTitleBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemTitleBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartcategoryaxisitemtitleborder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemTitleBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemTitleBorder)
 
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $border = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitleBorder();

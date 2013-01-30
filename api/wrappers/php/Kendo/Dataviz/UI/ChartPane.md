@@ -40,7 +40,7 @@ The border of the pane.
 ##### $value `\Kendo\Dataviz\UI\ChartPaneBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartPaneBorder](/api/wrappers/php/kendo/dataviz/ui/chartpaneborder)
+#### Example - using [\Kendo\Dataviz\UI\ChartPaneBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartPaneBorder)
 
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $border = new \Kendo\Dataviz\UI\ChartPaneBorder();
@@ -137,7 +137,7 @@ The pane title text or configuration.
     $pane->title('value');
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartPaneTitle](/api/wrappers/php/kendo/dataviz/ui/chartpanetitle)
+#### Example - using [\Kendo\Dataviz\UI\ChartPaneTitle](/api/wrappers/php/Kendo/Dataviz/UI/ChartPaneTitle)
 
     $pane = new \Kendo\Dataviz\UI\ChartPane();
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();

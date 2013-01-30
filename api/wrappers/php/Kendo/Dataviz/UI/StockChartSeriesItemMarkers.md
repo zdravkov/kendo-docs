@@ -40,7 +40,7 @@ The border of the markers.
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemmarkersborder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemMarkersBorder)
 
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder();

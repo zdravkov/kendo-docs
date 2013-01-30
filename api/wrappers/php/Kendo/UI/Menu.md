@@ -45,7 +45,7 @@ by setting the close animation.  Each animation also has a direction which can b
 ##### $value `\Kendo\UI\MenuAnimation|array`
 
 
-#### Example - using [\Kendo\UI\MenuAnimation](/api/wrappers/php/kendo/ui/menuanimation)
+#### Example - using [\Kendo\UI\MenuAnimation](/api/wrappers/php/Kendo/UI/MenuAnimation)
 
     $menu = new \Kendo\UI\Menu('Menu');
     $animation = new \Kendo\UI\MenuAnimation();

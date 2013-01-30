@@ -145,7 +145,7 @@ Enables column header menu
     $grid->columnMenu(true);
 
 
-#### Example - using [\Kendo\UI\GridColumnMenu](/api/wrappers/php/kendo/ui/gridcolumnmenu)
+#### Example - using [\Kendo\UI\GridColumnMenu](/api/wrappers/php/Kendo/UI/GridColumnMenu)
 
     $grid = new \Kendo\UI\Grid('Grid');
     $columnMenu = new \Kendo\UI\GridColumnMenu();
@@ -559,7 +559,7 @@ Indicates whether editing is enabled/disabled.
     $grid->editable(true);
 
 
-#### Example - using [\Kendo\UI\GridEditable](/api/wrappers/php/kendo/ui/grideditable)
+#### Example - using [\Kendo\UI\GridEditable](/api/wrappers/php/Kendo/UI/GridEditable)
 
     $grid = new \Kendo\UI\Grid('Grid');
     $editable = new \Kendo\UI\GridEditable();
@@ -623,7 +623,7 @@ Indicates whether filtering is enabled/disabled.
     $grid->filterable(true);
 
 
-#### Example - using [\Kendo\UI\GridFilterable](/api/wrappers/php/kendo/ui/gridfilterable)
+#### Example - using [\Kendo\UI\GridFilterable](/api/wrappers/php/Kendo/UI/GridFilterable)
 
     $grid = new \Kendo\UI\Grid('Grid');
     $filterable = new \Kendo\UI\GridFilterable();
@@ -656,7 +656,7 @@ Indicates whether grouping is enabled/disabled.
     $grid->groupable(true);
 
 
-#### Example - using [\Kendo\UI\GridGroupable](/api/wrappers/php/kendo/ui/gridgroupable)
+#### Example - using [\Kendo\UI\GridGroupable](/api/wrappers/php/Kendo/UI/GridGroupable)
 
     $grid = new \Kendo\UI\Grid('Grid');
     $groupable = new \Kendo\UI\GridGroupable();
@@ -725,7 +725,7 @@ Indicates whether paging is enabled/disabled.
     $grid->pageable(true);
 
 
-#### Example - using [\Kendo\UI\GridPageable](/api/wrappers/php/kendo/ui/gridpageable)
+#### Example - using [\Kendo\UI\GridPageable](/api/wrappers/php/Kendo/UI/GridPageable)
 
     $grid = new \Kendo\UI\Grid('Grid');
     $pageable = new \Kendo\UI\GridPageable();
@@ -899,7 +899,7 @@ Enable/disable grid scrolling.
     $grid->scrollable(true);
 
 
-#### Example - using [\Kendo\UI\GridScrollable](/api/wrappers/php/kendo/ui/gridscrollable)
+#### Example - using [\Kendo\UI\GridScrollable](/api/wrappers/php/Kendo/UI/GridScrollable)
 
     $grid = new \Kendo\UI\Grid('Grid');
     $scrollable = new \Kendo\UI\GridScrollable();
@@ -948,7 +948,7 @@ Defines whether grid columns are sortable.
     $grid->sortable(true);
 
 
-#### Example - using [\Kendo\UI\GridSortable](/api/wrappers/php/kendo/ui/gridsortable)
+#### Example - using [\Kendo\UI\GridSortable](/api/wrappers/php/Kendo/UI/GridSortable)
 
     $grid = new \Kendo\UI\Grid('Grid');
     $sortable = new \Kendo\UI\GridSortable();

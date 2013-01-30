@@ -40,7 +40,7 @@ The border of the plot area.
 ##### $value `\Kendo\Dataviz\UI\StockChartPlotAreaBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartPlotAreaBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartplotareaborder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartPlotAreaBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartPlotAreaBorder)
 
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $border = new \Kendo\Dataviz\UI\StockChartPlotAreaBorder();

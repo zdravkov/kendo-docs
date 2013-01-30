@@ -40,7 +40,7 @@ The border of the legend.
 ##### $value `\Kendo\Dataviz\UI\ChartLegendBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartLegendBorder](/api/wrappers/php/kendo/dataviz/ui/chartlegendborder)
+#### Example - using [\Kendo\Dataviz\UI\ChartLegendBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartLegendBorder)
 
     $legend = new \Kendo\Dataviz\UI\ChartLegend();
     $border = new \Kendo\Dataviz\UI\ChartLegendBorder();
@@ -66,7 +66,7 @@ Configures the legend labels.
 ##### $value `\Kendo\Dataviz\UI\ChartLegendLabels|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartLegendLabels](/api/wrappers/php/kendo/dataviz/ui/chartlegendlabels)
+#### Example - using [\Kendo\Dataviz\UI\ChartLegendLabels](/api/wrappers/php/Kendo/Dataviz/UI/ChartLegendLabels)
 
     $legend = new \Kendo\Dataviz\UI\ChartLegend();
     $labels = new \Kendo\Dataviz\UI\ChartLegendLabels();

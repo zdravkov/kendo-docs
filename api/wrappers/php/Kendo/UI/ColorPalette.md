@@ -123,7 +123,7 @@ The size of a color cell.
     $colorPalette->tileSize(1);
 
 
-#### Example - using [\Kendo\UI\ColorPaletteTileSize](/api/wrappers/php/kendo/ui/colorpalettetilesize)
+#### Example - using [\Kendo\UI\ColorPaletteTileSize](/api/wrappers/php/Kendo/UI/ColorPaletteTileSize)
 
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $tileSize = new \Kendo\UI\ColorPaletteTileSize();

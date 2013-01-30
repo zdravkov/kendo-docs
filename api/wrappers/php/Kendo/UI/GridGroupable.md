@@ -24,7 +24,7 @@ Sets the messages displayed during grouping.
 ##### $value `\Kendo\UI\GridGroupableMessages|array`
 
 
-#### Example - using [\Kendo\UI\GridGroupableMessages](/api/wrappers/php/kendo/ui/gridgroupablemessages)
+#### Example - using [\Kendo\UI\GridGroupableMessages](/api/wrappers/php/Kendo/UI/GridGroupableMessages)
 
     $groupable = new \Kendo\UI\GridGroupable();
     $messages = new \Kendo\UI\GridGroupableMessages();

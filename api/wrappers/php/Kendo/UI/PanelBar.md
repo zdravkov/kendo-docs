@@ -83,7 +83,7 @@ user interactions. Setting this option to false will disable all animations.
     $panelBar->animation(true);
 
 
-#### Example - using [\Kendo\UI\PanelBarAnimation](/api/wrappers/php/kendo/ui/panelbaranimation)
+#### Example - using [\Kendo\UI\PanelBarAnimation](/api/wrappers/php/Kendo/UI/PanelBarAnimation)
 
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $animation = new \Kendo\UI\PanelBarAnimation();

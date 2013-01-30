@@ -45,7 +45,7 @@ Setting this option to false will disable all animations.
 ##### $value `\Kendo\UI\TreeViewAnimation|array`
 
 
-#### Example - using [\Kendo\UI\TreeViewAnimation](/api/wrappers/php/kendo/ui/treeviewanimation)
+#### Example - using [\Kendo\UI\TreeViewAnimation](/api/wrappers/php/Kendo/UI/TreeViewAnimation)
 
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $animation = new \Kendo\UI\TreeViewAnimation();
@@ -78,7 +78,7 @@ If true or an object, renders checkboxes within each treeview item.
     $treeView->checkboxes(true);
 
 
-#### Example - using [\Kendo\UI\TreeViewCheckboxes](/api/wrappers/php/kendo/ui/treeviewcheckboxes)
+#### Example - using [\Kendo\UI\TreeViewCheckboxes](/api/wrappers/php/Kendo/UI/TreeViewCheckboxes)
 
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $checkboxes = new \Kendo\UI\TreeViewCheckboxes();

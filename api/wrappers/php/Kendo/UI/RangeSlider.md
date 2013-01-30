@@ -239,7 +239,7 @@ Configuration of the RangeSlider tooltip.
 ##### $value `\Kendo\UI\RangeSliderTooltip|array`
 
 
-#### Example - using [\Kendo\UI\RangeSliderTooltip](/api/wrappers/php/kendo/ui/rangeslidertooltip)
+#### Example - using [\Kendo\UI\RangeSliderTooltip](/api/wrappers/php/Kendo/UI/RangeSliderTooltip)
 
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $tooltip = new \Kendo\UI\RangeSliderTooltip();

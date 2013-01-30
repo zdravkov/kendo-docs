@@ -24,7 +24,7 @@ Animation to be used for closing of the popup.
 ##### $value `\Kendo\UI\TimePickerAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\TimePickerAnimationClose](/api/wrappers/php/kendo/ui/timepickeranimationclose)
+#### Example - using [\Kendo\UI\TimePickerAnimationClose](/api/wrappers/php/Kendo/UI/TimePickerAnimationClose)
 
     $animation = new \Kendo\UI\TimePickerAnimation();
     $close = new \Kendo\UI\TimePickerAnimationClose();
@@ -50,7 +50,7 @@ Animation to be used for opening of the popup.
 ##### $value `\Kendo\UI\TimePickerAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\TimePickerAnimationOpen](/api/wrappers/php/kendo/ui/timepickeranimationopen)
+#### Example - using [\Kendo\UI\TimePickerAnimationOpen](/api/wrappers/php/Kendo/UI/TimePickerAnimationOpen)
 
     $animation = new \Kendo\UI\TimePickerAnimation();
     $open = new \Kendo\UI\TimePickerAnimationOpen();

@@ -187,7 +187,7 @@ Templates for the cells rendered in the "month" view.
 ##### $value `\Kendo\UI\CalendarMonth|array`
 
 
-#### Example - using [\Kendo\UI\CalendarMonth](/api/wrappers/php/kendo/ui/calendarmonth)
+#### Example - using [\Kendo\UI\CalendarMonth](/api/wrappers/php/Kendo/UI/CalendarMonth)
 
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $month = new \Kendo\UI\CalendarMonth();

@@ -24,7 +24,7 @@ The visual animation(s) that will be used when PanelBar items are closed.
 ##### $value `\Kendo\UI\PanelBarAnimationCollapse|array`
 
 
-#### Example - using [\Kendo\UI\PanelBarAnimationCollapse](/api/wrappers/php/kendo/ui/panelbaranimationcollapse)
+#### Example - using [\Kendo\UI\PanelBarAnimationCollapse](/api/wrappers/php/Kendo/UI/PanelBarAnimationCollapse)
 
     $animation = new \Kendo\UI\PanelBarAnimation();
     $collapse = new \Kendo\UI\PanelBarAnimationCollapse();
@@ -50,7 +50,7 @@ The visual animation(s) that will be used when opening items.
 ##### $value `\Kendo\UI\PanelBarAnimationExpand|array`
 
 
-#### Example - using [\Kendo\UI\PanelBarAnimationExpand](/api/wrappers/php/kendo/ui/panelbaranimationexpand)
+#### Example - using [\Kendo\UI\PanelBarAnimationExpand](/api/wrappers/php/Kendo/UI/PanelBarAnimationExpand)
 
     $animation = new \Kendo\UI\PanelBarAnimation();
     $expand = new \Kendo\UI\PanelBarAnimationExpand();

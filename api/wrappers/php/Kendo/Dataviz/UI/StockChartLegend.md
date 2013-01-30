@@ -40,7 +40,7 @@ The border of the legend.
 ##### $value `\Kendo\Dataviz\UI\StockChartLegendBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartLegendBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartlegendborder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartLegendBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartLegendBorder)
 
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $border = new \Kendo\Dataviz\UI\StockChartLegendBorder();
@@ -66,7 +66,7 @@ Configures the legend labels.
 ##### $value `\Kendo\Dataviz\UI\StockChartLegendLabels|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartLegendLabels](/api/wrappers/php/kendo/dataviz/ui/stockchartlegendlabels)
+#### Example - using [\Kendo\Dataviz\UI\StockChartLegendLabels](/api/wrappers/php/Kendo/Dataviz/UI/StockChartLegendLabels)
 
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();

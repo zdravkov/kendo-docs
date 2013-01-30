@@ -93,7 +93,7 @@ will disable all animations in the widget.
 ##### $value `\Kendo\UI\WindowAnimation|array`
 
 
-#### Example - using [\Kendo\UI\WindowAnimation](/api/wrappers/php/kendo/ui/windowanimation)
+#### Example - using [\Kendo\UI\WindowAnimation](/api/wrappers/php/Kendo/UI/WindowAnimation)
 
     $window = new \Kendo\UI\Window('Window');
     $animation = new \Kendo\UI\WindowAnimation();

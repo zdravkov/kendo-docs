@@ -254,7 +254,7 @@ Configuration of the Slider tooltip.
 ##### $value `\Kendo\UI\SliderTooltip|array`
 
 
-#### Example - using [\Kendo\UI\SliderTooltip](/api/wrappers/php/kendo/ui/slidertooltip)
+#### Example - using [\Kendo\UI\SliderTooltip](/api/wrappers/php/Kendo/UI/SliderTooltip)
 
     $slider = new \Kendo\UI\Slider('Slider');
     $tooltip = new \Kendo\UI\SliderTooltip();

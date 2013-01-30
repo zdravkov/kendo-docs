@@ -41,7 +41,7 @@ The border of the labels.
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemLabelsBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemlabelsborder)
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartXAxisItemLabelsBorder)
 
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
     $border = new \Kendo\Dataviz\UI\ChartXAxisItemLabelsBorder();

@@ -45,7 +45,7 @@ will disable the animation(s).
 ##### $value `\Kendo\UI\DatePickerAnimation|array`
 
 
-#### Example - using [\Kendo\UI\DatePickerAnimation](/api/wrappers/php/kendo/ui/datepickeranimation)
+#### Example - using [\Kendo\UI\DatePickerAnimation](/api/wrappers/php/Kendo/UI/DatePickerAnimation)
 
     $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $animation = new \Kendo\UI\DatePickerAnimation();
@@ -246,7 +246,7 @@ Templates for the cells rendered in the calendar "month" view.
 ##### $value `\Kendo\UI\DatePickerMonth|array`
 
 
-#### Example - using [\Kendo\UI\DatePickerMonth](/api/wrappers/php/kendo/ui/datepickermonth)
+#### Example - using [\Kendo\UI\DatePickerMonth](/api/wrappers/php/Kendo/UI/DatePickerMonth)
 
     $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $month = new \Kendo\UI\DatePickerMonth();

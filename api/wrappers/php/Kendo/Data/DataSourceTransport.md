@@ -35,7 +35,7 @@ Options for remote create data operation, or the URL of the remote service.
     $transport->create(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using [\Kendo\Data\DataSourceTransportCreate](/api/wrappers/php/kendo/data/datasourcetransportcreate)
+#### Example - using [\Kendo\Data\DataSourceTransportCreate](/api/wrappers/php/Kendo/Data/DataSourceTransportCreate)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $create = new \Kendo\Data\DataSourceTransportCreate();
@@ -72,7 +72,7 @@ Options for remote destroy data operation, or the URL of the remote service.
     $transport->destroy(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using [\Kendo\Data\DataSourceTransportDestroy](/api/wrappers/php/kendo/data/datasourcetransportdestroy)
+#### Example - using [\Kendo\Data\DataSourceTransportDestroy](/api/wrappers/php/Kendo/Data/DataSourceTransportDestroy)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $destroy = new \Kendo\Data\DataSourceTransportDestroy();
@@ -125,7 +125,7 @@ Options for remote read data operation, or the URL of the remote service.
     $transport->read(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using [\Kendo\Data\DataSourceTransportRead](/api/wrappers/php/kendo/data/datasourcetransportread)
+#### Example - using [\Kendo\Data\DataSourceTransportRead](/api/wrappers/php/Kendo/Data/DataSourceTransportRead)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $read = new \Kendo\Data\DataSourceTransportRead();
@@ -162,7 +162,7 @@ Options for remote update data operation, or the URL of the remote service.
     $transport->update(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using [\Kendo\Data\DataSourceTransportUpdate](/api/wrappers/php/kendo/data/datasourcetransportupdate)
+#### Example - using [\Kendo\Data\DataSourceTransportUpdate](/api/wrappers/php/Kendo/Data/DataSourceTransportUpdate)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $update = new \Kendo\Data\DataSourceTransportUpdate();

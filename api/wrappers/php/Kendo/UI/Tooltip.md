@@ -45,7 +45,7 @@ will disable all animations in the widget.
 ##### $value `\Kendo\UI\TooltipAnimation|array`
 
 
-#### Example - using [\Kendo\UI\TooltipAnimation](/api/wrappers/php/kendo/ui/tooltipanimation)
+#### Example - using [\Kendo\UI\TooltipAnimation](/api/wrappers/php/Kendo/UI/TooltipAnimation)
 
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $animation = new \Kendo\UI\TooltipAnimation();
@@ -115,7 +115,7 @@ By default the tooltip will display the target element title attribute content.
     $tooltip->content(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using [\Kendo\UI\TooltipContent](/api/wrappers/php/kendo/ui/tooltipcontent)
+#### Example - using [\Kendo\UI\TooltipContent](/api/wrappers/php/Kendo/UI/TooltipContent)
 
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $content = new \Kendo\UI\TooltipContent();

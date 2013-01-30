@@ -24,7 +24,7 @@ The border of the pointer.
 ##### $value `\Kendo\Dataviz\UI\LinearGaugePointerBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerBorder](/api/wrappers/php/kendo/dataviz/ui/lineargaugepointerborder)
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerBorder](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugePointerBorder)
 
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerBorder();
@@ -132,7 +132,7 @@ The element arround/under the pointer.
 ##### $value `\Kendo\Dataviz\UI\LinearGaugePointerTrack|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerTrack](/api/wrappers/php/kendo/dataviz/ui/lineargaugepointertrack)
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerTrack](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugePointerTrack)
 
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();

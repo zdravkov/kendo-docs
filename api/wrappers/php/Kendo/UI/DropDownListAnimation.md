@@ -24,7 +24,7 @@ Animation to be used for closing of the popup.
 ##### $value `\Kendo\UI\DropDownListAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\DropDownListAnimationClose](/api/wrappers/php/kendo/ui/dropdownlistanimationclose)
+#### Example - using [\Kendo\UI\DropDownListAnimationClose](/api/wrappers/php/Kendo/UI/DropDownListAnimationClose)
 
     $animation = new \Kendo\UI\DropDownListAnimation();
     $close = new \Kendo\UI\DropDownListAnimationClose();
@@ -50,7 +50,7 @@ Animation to be used for opening of the popup.
 ##### $value `\Kendo\UI\DropDownListAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\DropDownListAnimationOpen](/api/wrappers/php/kendo/ui/dropdownlistanimationopen)
+#### Example - using [\Kendo\UI\DropDownListAnimationOpen](/api/wrappers/php/Kendo/UI/DropDownListAnimationOpen)
 
     $animation = new \Kendo\UI\DropDownListAnimation();
     $open = new \Kendo\UI\DropDownListAnimationOpen();

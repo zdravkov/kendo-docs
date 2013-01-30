@@ -37,7 +37,7 @@ The border of the gauge area.
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder](/api/wrappers/php/kendo/dataviz/ui/radialgaugegaugeareaborder)
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeGaugeAreaBorder)
 
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $border = new \Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder();

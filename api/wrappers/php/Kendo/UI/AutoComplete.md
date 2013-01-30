@@ -44,7 +44,7 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
 ##### $value `\Kendo\UI\AutoCompleteAnimation|array`
 
 
-#### Example - using [\Kendo\UI\AutoCompleteAnimation](/api/wrappers/php/kendo/ui/autocompleteanimation)
+#### Example - using [\Kendo\UI\AutoCompleteAnimation](/api/wrappers/php/Kendo/UI/AutoCompleteAnimation)
 
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $animation = new \Kendo\UI\AutoCompleteAnimation();

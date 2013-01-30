@@ -41,7 +41,7 @@ The border of the title.
 ##### $value `\Kendo\Dataviz\UI\ChartPaneTitleBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartPaneTitleBorder](/api/wrappers/php/kendo/dataviz/ui/chartpanetitleborder)
+#### Example - using [\Kendo\Dataviz\UI\ChartPaneTitleBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartPaneTitleBorder)
 
     $title = new \Kendo\Dataviz\UI\ChartPaneTitle();
     $border = new \Kendo\Dataviz\UI\ChartPaneTitleBorder();

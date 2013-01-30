@@ -44,7 +44,7 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
 ##### $value `\Kendo\UI\DropDownListAnimation|array`
 
 
-#### Example - using [\Kendo\UI\DropDownListAnimation](/api/wrappers/php/kendo/ui/dropdownlistanimation)
+#### Example - using [\Kendo\UI\DropDownListAnimation](/api/wrappers/php/Kendo/UI/DropDownListAnimation)
 
     $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $animation = new \Kendo\UI\DropDownListAnimation();

@@ -81,7 +81,7 @@ Default options for the navigator hint.
 ##### $value `\Kendo\Dataviz\UI\StockChartNavigatorHint|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorHint](/api/wrappers/php/kendo/dataviz/ui/stockchartnavigatorhint)
+#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorHint](/api/wrappers/php/Kendo/Dataviz/UI/StockChartNavigatorHint)
 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $hint = new \Kendo\Dataviz\UI\StockChartNavigatorHint();
@@ -107,7 +107,7 @@ Specifies the initially selected range.The full range of values is shown if no r
 ##### $value `\Kendo\Dataviz\UI\StockChartNavigatorSelect|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorSelect](/api/wrappers/php/kendo/dataviz/ui/stockchartnavigatorselect)
+#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorSelect](/api/wrappers/php/Kendo/Dataviz/UI/StockChartNavigatorSelect)
 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $select = new \Kendo\Dataviz\UI\StockChartNavigatorSelect();

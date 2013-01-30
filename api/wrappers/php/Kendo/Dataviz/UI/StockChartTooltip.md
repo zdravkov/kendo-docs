@@ -40,7 +40,7 @@ The border configuration options.
 ##### $value `\Kendo\Dataviz\UI\StockChartTooltipBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartTooltipBorder](/api/wrappers/php/kendo/dataviz/ui/stockcharttooltipborder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartTooltipBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartTooltipBorder)
 
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $border = new \Kendo\Dataviz\UI\StockChartTooltipBorder();

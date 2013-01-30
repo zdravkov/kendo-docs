@@ -41,7 +41,7 @@ The border of the labels.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/chartseriesdefaultslabelsborder)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaultsLabelsBorder)
 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $border = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder();

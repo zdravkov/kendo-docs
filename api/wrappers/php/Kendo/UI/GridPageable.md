@@ -72,7 +72,7 @@ Defines texts shown within the pager.
 ##### $value `\Kendo\UI\GridPageableMessages|array`
 
 
-#### Example - using [\Kendo\UI\GridPageableMessages](/api/wrappers/php/kendo/ui/gridpageablemessages)
+#### Example - using [\Kendo\UI\GridPageableMessages](/api/wrappers/php/Kendo/UI/GridPageableMessages)
 
     $pageable = new \Kendo\UI\GridPageable();
     $messages = new \Kendo\UI\GridPageableMessages();

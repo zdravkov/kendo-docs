@@ -76,7 +76,7 @@ user interactions. Setting this option to false will disable all animations.
 ##### $value `\Kendo\UI\TabStripAnimation|array`
 
 
-#### Example - using [\Kendo\UI\TabStripAnimation](/api/wrappers/php/kendo/ui/tabstripanimation)
+#### Example - using [\Kendo\UI\TabStripAnimation](/api/wrappers/php/Kendo/UI/TabStripAnimation)
 
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $animation = new \Kendo\UI\TabStripAnimation();

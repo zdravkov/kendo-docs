@@ -122,7 +122,7 @@ Configuration for image browser dialog.
 ##### $value `\Kendo\UI\EditorImageBrowser|array`
 
 
-#### Example - using [\Kendo\UI\EditorImageBrowser](/api/wrappers/php/kendo/ui/editorimagebrowser)
+#### Example - using [\Kendo\UI\EditorImageBrowser](/api/wrappers/php/Kendo/UI/EditorImageBrowser)
 
     $editor = new \Kendo\UI\Editor('Editor');
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();

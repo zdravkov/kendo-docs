@@ -45,7 +45,7 @@ This is the entire visible area of the gauge.
 ##### $value `\Kendo\Dataviz\UI\LinearGaugeGaugeArea|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\LinearGaugeGaugeArea](/api/wrappers/php/kendo/dataviz/ui/lineargaugegaugearea)
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugeGaugeArea](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeGaugeArea)
 
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $gaugeArea = new \Kendo\Dataviz\UI\LinearGaugeGaugeArea();
@@ -71,7 +71,7 @@ The pointer configuration options.
 ##### $value `\Kendo\Dataviz\UI\LinearGaugePointer|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointer](/api/wrappers/php/kendo/dataviz/ui/lineargaugepointer)
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointer](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugePointer)
 
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
@@ -97,7 +97,7 @@ Configures the scale.
 ##### $value `\Kendo\Dataviz\UI\LinearGaugeScale|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\LinearGaugeScale](/api/wrappers/php/kendo/dataviz/ui/lineargaugescale)
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugeScale](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeScale)
 
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();

@@ -83,7 +83,7 @@ Configures the axis labels.
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemLabels|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLabels](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemlabels)
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLabels](/api/wrappers/php/Kendo/Dataviz/UI/ChartXAxisItemLabels)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
@@ -109,7 +109,7 @@ Configures the axis line. This will also affect the major and minor ticks, but n
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemLine|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLine](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemline)
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartXAxisItemLine)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $line = new \Kendo\Dataviz\UI\ChartXAxisItemLine();
@@ -136,7 +136,7 @@ body of the chart.
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemmajorgridlines)
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines](/api/wrappers/php/Kendo/Dataviz/UI/ChartXAxisItemMajorGridLines)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $majorGridLines = new \Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines();
@@ -162,7 +162,7 @@ The major ticks of the axis.
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemMajorTicks|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemMajorTicks](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemmajorticks)
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemMajorTicks](/api/wrappers/php/Kendo/Dataviz/UI/ChartXAxisItemMajorTicks)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $majorTicks = new \Kendo\Dataviz\UI\ChartXAxisItemMajorTicks();
@@ -341,7 +341,7 @@ The title of the value axis.
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemTitle|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemTitle](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemtitle)
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemTitle](/api/wrappers/php/Kendo/Dataviz/UI/ChartXAxisItemTitle)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $title = new \Kendo\Dataviz\UI\ChartXAxisItemTitle();

@@ -24,7 +24,7 @@ Animation to be used for closing of the popup.
 ##### $value `\Kendo\UI\ComboBoxAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\ComboBoxAnimationClose](/api/wrappers/php/kendo/ui/comboboxanimationclose)
+#### Example - using [\Kendo\UI\ComboBoxAnimationClose](/api/wrappers/php/Kendo/UI/ComboBoxAnimationClose)
 
     $animation = new \Kendo\UI\ComboBoxAnimation();
     $close = new \Kendo\UI\ComboBoxAnimationClose();
@@ -50,7 +50,7 @@ Animation to be used for opening of the popup.
 ##### $value `\Kendo\UI\ComboBoxAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\ComboBoxAnimationOpen](/api/wrappers/php/kendo/ui/comboboxanimationopen)
+#### Example - using [\Kendo\UI\ComboBoxAnimationOpen](/api/wrappers/php/Kendo/UI/ComboBoxAnimationOpen)
 
     $animation = new \Kendo\UI\ComboBoxAnimation();
     $open = new \Kendo\UI\ComboBoxAnimationOpen();

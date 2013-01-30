@@ -65,7 +65,7 @@ Configures the axis labels.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemLabels|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemLabels](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemlabels)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemLabels](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemLabels)
 
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
@@ -91,7 +91,7 @@ Configures the axis line. This will also affect the major and minor ticks, but n
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemLine|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemLine](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemline)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemLine)
 
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $line = new \Kendo\Dataviz\UI\ChartValueAxisItemLine();
@@ -118,7 +118,7 @@ body of the chart.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemmajorgridlines)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemMajorGridLines)
 
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $majorGridLines = new \Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines();
@@ -144,7 +144,7 @@ The major ticks of the axis.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemmajorticks)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemMajorTicks)
 
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $majorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks();
@@ -220,7 +220,7 @@ Configures the minor grid lines.  These are the lines that are an extension of t
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemminorgridlines)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemMinorGridLines)
 
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $minorGridLines = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines();
@@ -246,7 +246,7 @@ The minor ticks of the axis.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemminorticks)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemMinorTicks)
 
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $minorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks();
@@ -383,7 +383,7 @@ The title of the value axis.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemTitle|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemTitle](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemtitle)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemTitle](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemTitle)
 
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $title = new \Kendo\Dataviz\UI\ChartValueAxisItemTitle();

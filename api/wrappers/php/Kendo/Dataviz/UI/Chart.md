@@ -136,7 +136,7 @@ This is the entire visible area of the chart.
 ##### $value `\Kendo\Dataviz\UI\ChartArea|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartArea](/api/wrappers/php/kendo/dataviz/ui/chartarea)
+#### Example - using [\Kendo\Dataviz\UI\ChartArea](/api/wrappers/php/Kendo/Dataviz/UI/ChartArea)
 
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $chartArea = new \Kendo\Dataviz\UI\ChartArea();
@@ -310,7 +310,7 @@ The chart legend configuration options.
 ##### $value `\Kendo\Dataviz\UI\ChartLegend|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartLegend](/api/wrappers/php/kendo/dataviz/ui/chartlegend)
+#### Example - using [\Kendo\Dataviz\UI\ChartLegend](/api/wrappers/php/Kendo/Dataviz/UI/ChartLegend)
 
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $legend = new \Kendo\Dataviz\UI\ChartLegend();
@@ -368,7 +368,7 @@ The plot area configuration options. This is the area containing the plotted ser
 ##### $value `\Kendo\Dataviz\UI\ChartPlotArea|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartPlotArea](/api/wrappers/php/kendo/dataviz/ui/chartplotarea)
+#### Example - using [\Kendo\Dataviz\UI\ChartPlotArea](/api/wrappers/php/Kendo/Dataviz/UI/ChartPlotArea)
 
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $plotArea = new \Kendo\Dataviz\UI\ChartPlotArea();
@@ -597,7 +597,7 @@ Default values for each series.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesDefaults|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaults](/api/wrappers/php/kendo/dataviz/ui/chartseriesdefaults)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaults](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaults)
 
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
@@ -670,7 +670,7 @@ The chart title configuration options or text.
 ##### $value `\Kendo\Dataviz\UI\ChartTitle|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartTitle](/api/wrappers/php/kendo/dataviz/ui/charttitle)
+#### Example - using [\Kendo\Dataviz\UI\ChartTitle](/api/wrappers/php/Kendo/Dataviz/UI/ChartTitle)
 
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $title = new \Kendo\Dataviz\UI\ChartTitle();
@@ -696,7 +696,7 @@ The data point tooltip configuration options.
 ##### $value `\Kendo\Dataviz\UI\ChartTooltip|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartTooltip](/api/wrappers/php/kendo/dataviz/ui/charttooltip)
+#### Example - using [\Kendo\Dataviz\UI\ChartTooltip](/api/wrappers/php/Kendo/Dataviz/UI/ChartTooltip)
 
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();

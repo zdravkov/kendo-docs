@@ -41,7 +41,7 @@ The border of the labels.
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/radialgaugescalelabelsborder)
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeScaleLabelsBorder)
 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $border = new \Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder();

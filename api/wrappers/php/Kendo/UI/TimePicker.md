@@ -44,7 +44,7 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
 ##### $value `\Kendo\UI\TimePickerAnimation|array`
 
 
-#### Example - using [\Kendo\UI\TimePickerAnimation](/api/wrappers/php/kendo/ui/timepickeranimation)
+#### Example - using [\Kendo\UI\TimePickerAnimation](/api/wrappers/php/Kendo/UI/TimePickerAnimation)
 
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $animation = new \Kendo\UI\TimePickerAnimation();

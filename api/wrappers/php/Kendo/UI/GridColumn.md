@@ -139,7 +139,7 @@ Specifies whether given column is filterable.
     $column->filterable(true);
 
 
-#### Example - using [\Kendo\UI\GridColumnFilterable](/api/wrappers/php/kendo/ui/gridcolumnfilterable)
+#### Example - using [\Kendo\UI\GridColumnFilterable](/api/wrappers/php/Kendo/UI/GridColumnFilterable)
 
     $column = new \Kendo\UI\GridColumn();
     $filterable = new \Kendo\UI\GridColumnFilterable();

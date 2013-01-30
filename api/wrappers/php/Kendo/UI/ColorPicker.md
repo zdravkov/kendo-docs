@@ -284,7 +284,7 @@ The size of a color cell.
     $colorPicker->tileSize(1);
 
 
-#### Example - using [\Kendo\UI\ColorPickerTileSize](/api/wrappers/php/kendo/ui/colorpickertilesize)
+#### Example - using [\Kendo\UI\ColorPickerTileSize](/api/wrappers/php/Kendo/UI/ColorPickerTileSize)
 
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $tileSize = new \Kendo\UI\ColorPickerTileSize();

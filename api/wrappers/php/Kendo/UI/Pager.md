@@ -178,7 +178,7 @@ Defines texts shown within the pager.
 ##### $value `\Kendo\UI\PagerMessages|array`
 
 
-#### Example - using [\Kendo\UI\PagerMessages](/api/wrappers/php/kendo/ui/pagermessages)
+#### Example - using [\Kendo\UI\PagerMessages](/api/wrappers/php/Kendo/UI/PagerMessages)
 
     $pager = new \Kendo\UI\Pager('Pager');
     $messages = new \Kendo\UI\PagerMessages();

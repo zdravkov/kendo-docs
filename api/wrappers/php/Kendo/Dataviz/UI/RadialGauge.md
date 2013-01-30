@@ -45,7 +45,7 @@ This is the entire visible area of the gauge.
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeGaugeArea|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\RadialGaugeGaugeArea](/api/wrappers/php/kendo/dataviz/ui/radialgaugegaugearea)
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeGaugeArea](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeGaugeArea)
 
     $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
@@ -71,7 +71,7 @@ The pointer configuration options.
 ##### $value `\Kendo\Dataviz\UI\RadialGaugePointer|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\RadialGaugePointer](/api/wrappers/php/kendo/dataviz/ui/radialgaugepointer)
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugePointer](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugePointer)
 
     $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
@@ -129,7 +129,7 @@ Configures the scale.
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeScale|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScale](/api/wrappers/php/kendo/dataviz/ui/radialgaugescale)
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScale](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeScale)
 
     $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();

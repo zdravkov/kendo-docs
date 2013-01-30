@@ -56,7 +56,7 @@ Sets the columnMenu messages.
 ##### $value `\Kendo\UI\GridColumnMenuMessages|array`
 
 
-#### Example - using [\Kendo\UI\GridColumnMenuMessages](/api/wrappers/php/kendo/ui/gridcolumnmenumessages)
+#### Example - using [\Kendo\UI\GridColumnMenuMessages](/api/wrappers/php/Kendo/UI/GridColumnMenuMessages)
 
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $messages = new \Kendo\UI\GridColumnMenuMessages();

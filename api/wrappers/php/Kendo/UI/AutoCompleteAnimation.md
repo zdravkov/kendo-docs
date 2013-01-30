@@ -24,7 +24,7 @@ Animation to be used for closing of the popup.
 ##### $value `\Kendo\UI\AutoCompleteAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\AutoCompleteAnimationClose](/api/wrappers/php/kendo/ui/autocompleteanimationclose)
+#### Example - using [\Kendo\UI\AutoCompleteAnimationClose](/api/wrappers/php/Kendo/UI/AutoCompleteAnimationClose)
 
     $animation = new \Kendo\UI\AutoCompleteAnimation();
     $close = new \Kendo\UI\AutoCompleteAnimationClose();
@@ -50,7 +50,7 @@ Animation to be used for opening of the popup.
 ##### $value `\Kendo\UI\AutoCompleteAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\AutoCompleteAnimationOpen](/api/wrappers/php/kendo/ui/autocompleteanimationopen)
+#### Example - using [\Kendo\UI\AutoCompleteAnimationOpen](/api/wrappers/php/Kendo/UI/AutoCompleteAnimationOpen)
 
     $animation = new \Kendo\UI\AutoCompleteAnimation();
     $open = new \Kendo\UI\AutoCompleteAnimationOpen();

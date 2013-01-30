@@ -136,7 +136,7 @@ This is the entire visible area of the chart.
 ##### $value `\Kendo\Dataviz\UI\StockChartChartArea|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartChartArea](/api/wrappers/php/kendo/dataviz/ui/stockchartchartarea)
+#### Example - using [\Kendo\Dataviz\UI\StockChartChartArea](/api/wrappers/php/Kendo/Dataviz/UI/StockChartChartArea)
 
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
@@ -327,7 +327,7 @@ The chart legend configuration options.
 ##### $value `\Kendo\Dataviz\UI\StockChartLegend|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartLegend](/api/wrappers/php/kendo/dataviz/ui/stockchartlegend)
+#### Example - using [\Kendo\Dataviz\UI\StockChartLegend](/api/wrappers/php/Kendo/Dataviz/UI/StockChartLegend)
 
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
@@ -353,7 +353,7 @@ The data navigator configuration options.
 ##### $value `\Kendo\Dataviz\UI\StockChartNavigator|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartNavigator](/api/wrappers/php/kendo/dataviz/ui/stockchartnavigator)
+#### Example - using [\Kendo\Dataviz\UI\StockChartNavigator](/api/wrappers/php/Kendo/Dataviz/UI/StockChartNavigator)
 
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
@@ -411,7 +411,7 @@ The plot area configuration options. This is the area containing the plotted ser
 ##### $value `\Kendo\Dataviz\UI\StockChartPlotArea|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartPlotArea](/api/wrappers/php/kendo/dataviz/ui/stockchartplotarea)
+#### Example - using [\Kendo\Dataviz\UI\StockChartPlotArea](/api/wrappers/php/Kendo/Dataviz/UI/StockChartPlotArea)
 
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
@@ -640,7 +640,7 @@ Default values for each series.
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaults|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaults](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaults)
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaults](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaults)
 
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
@@ -713,7 +713,7 @@ The chart title configuration options or text.
 ##### $value `\Kendo\Dataviz\UI\StockChartTitle|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartTitle](/api/wrappers/php/kendo/dataviz/ui/stockcharttitle)
+#### Example - using [\Kendo\Dataviz\UI\StockChartTitle](/api/wrappers/php/Kendo/Dataviz/UI/StockChartTitle)
 
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
@@ -739,7 +739,7 @@ The data point tooltip configuration options.
 ##### $value `\Kendo\Dataviz\UI\StockChartTooltip|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartTooltip](/api/wrappers/php/kendo/dataviz/ui/stockcharttooltip)
+#### Example - using [\Kendo\Dataviz\UI\StockChartTooltip](/api/wrappers/php/Kendo/Dataviz/UI/StockChartTooltip)
 
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();

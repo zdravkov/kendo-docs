@@ -57,7 +57,7 @@ The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc 
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemBorder](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemborder)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemBorder)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemBorder();
@@ -147,7 +147,7 @@ The label connectors options.** Applicable to donut and pie series. **
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemConnectors|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemConnectors](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemconnectors)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemConnectors](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemConnectors)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $connectors = new \Kendo\Dataviz\UI\ChartSeriesItemConnectors();
@@ -317,7 +317,7 @@ Configures the appearance of highlighted points.** Applicable to bubble, pie, ca
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemHighlight|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemHighlight](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemhighlight)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemHighlight](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemHighlight)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
@@ -359,7 +359,7 @@ Configures the series data labels.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemLabels|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLabels](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemlabels)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLabels](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemLabels)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
@@ -392,7 +392,7 @@ Line options.** Applicable to area, candlestick and ohlc series. **
     $seriesItem->line('value');
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLine](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemline)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemLine)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemLine();
@@ -450,7 +450,7 @@ Marker options.** Applicable to area, line, scatter and scatterLine series **
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemMarkers|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemMarkers](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemmarkers)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemMarkers](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemMarkers)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $markers = new \Kendo\Dataviz\UI\ChartSeriesItemMarkers();
@@ -540,7 +540,7 @@ The settings for negative values.** Applicable only to bubble series. **
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemNegativeValues|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNegativeValues](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemnegativevalues)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNegativeValues](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNegativeValues)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $negativeValues = new \Kendo\Dataviz\UI\ChartSeriesItemNegativeValues();
@@ -598,7 +598,7 @@ The effects overlay.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemOverlay|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemOverlay](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemoverlay)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemOverlay](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemOverlay)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $overlay = new \Kendo\Dataviz\UI\ChartSeriesItemOverlay();
@@ -726,7 +726,7 @@ The data point tooltip configuration options.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemTooltip|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemTooltip](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemtooltip)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemTooltip](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemTooltip)
 
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $tooltip = new \Kendo\Dataviz\UI\ChartSeriesItemTooltip();

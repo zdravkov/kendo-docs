@@ -46,7 +46,7 @@ for more details.
 ##### $value `\Kendo\UI\UploadAsync|array`
 
 
-#### Example - using [\Kendo\UI\UploadAsync](/api/wrappers/php/kendo/ui/uploadasync)
+#### Example - using [\Kendo\UI\UploadAsync](/api/wrappers/php/Kendo/UI/UploadAsync)
 
     $upload = new \Kendo\UI\Upload('Upload');
     $async = new \Kendo\UI\UploadAsync();
@@ -185,7 +185,7 @@ Sets the strings rendered by the Upload.
 ##### $value `\Kendo\UI\UploadLocalization|array`
 
 
-#### Example - using [\Kendo\UI\UploadLocalization](/api/wrappers/php/kendo/ui/uploadlocalization)
+#### Example - using [\Kendo\UI\UploadLocalization](/api/wrappers/php/Kendo/UI/UploadLocalization)
 
     $upload = new \Kendo\UI\Upload('Upload');
     $localization = new \Kendo\UI\UploadLocalization();

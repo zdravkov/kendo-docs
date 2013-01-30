@@ -37,7 +37,7 @@ The border of the series.
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaultsborder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaultsBorder)
 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder();
@@ -105,7 +105,7 @@ Configures the series data labels.
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaultslabels)
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaultsLabels)
 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $labels = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels();
@@ -214,7 +214,7 @@ The data point tooltip configuration options.
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaultstooltip)
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaultsTooltip)
 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $tooltip = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip();

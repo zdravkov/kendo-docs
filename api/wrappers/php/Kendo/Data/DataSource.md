@@ -325,7 +325,7 @@ Set the object responsible for describing the raw data format.
 ##### $value `\Kendo\Data\DataSourceSchema|array`
 
 
-#### Example - using [\Kendo\Data\DataSourceSchema](/api/wrappers/php/kendo/data/datasourceschema)
+#### Example - using [\Kendo\Data\DataSourceSchema](/api/wrappers/php/Kendo/Data/DataSourceSchema)
 
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $schema = new \Kendo\Data\DataSourceSchema();
@@ -495,7 +495,7 @@ Specifies the settings for loading and saving data. This can be a remote or loca
 ##### $value `\Kendo\Data\DataSourceTransport|array`
 
 
-#### Example - using [\Kendo\Data\DataSourceTransport](/api/wrappers/php/kendo/data/datasourcetransport)
+#### Example - using [\Kendo\Data\DataSourceTransport](/api/wrappers/php/Kendo/Data/DataSourceTransport)
 
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $transport = new \Kendo\Data\DataSourceTransport();
