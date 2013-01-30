@@ -1,6 +1,6 @@
 ---
 title: StockChartValueAxisItemMinorGridLines
-slug: php-StockChartValueAxisItemMinorGridLines
+slug: php-dataviz-ui-stockchartvalueaxisitemminorgridlines
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the minorGridLines setting of StockChartValueAxisItem.
 
 ### color
 The color of the lines.Note that this has no effect if the visibility of the minor grid lines is not set to true.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the lines.Note that this has no effect if the visibility of the min
 
 ### dashType
 The dash type of the minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ The dash type of the minor grid lines.
 
 ### visible
 The visibility of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -50,6 +62,10 @@ The visibility of the lines.
 
 ### width
 The width of the lines.Note that this settings has no effect if the visibility of the minor grid lines is not set to true.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `float`

@@ -1,6 +1,6 @@
 ---
 title: DateTimePickerMonth
-slug: php-DateTimePickerMonth
+slug: php-ui-datetimepickermonth
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the month setting of DateTimePicker.
 
 ### content
 Template to be used for rendering the cells in the calendar "month" view, which are in range.
+
+#### Returns
+`\Kendo\UI\DateTimePickerMonth`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ Template to be used for rendering the cells in the calendar "month" view, which 
 ### _empty
 The template used for rendering the cells in the calendar "month" view, which are not in the range between
 the minimum and maximum values.
+
+#### Returns
+`\Kendo\UI\DateTimePickerMonth`
+
 #### Parameters
 
 ##### $value `string`

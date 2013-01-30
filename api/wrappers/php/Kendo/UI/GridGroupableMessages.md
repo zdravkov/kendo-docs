@@ -1,6 +1,6 @@
 ---
 title: GridGroupableMessages
-slug: php-GridGroupableMessages
+slug: php-ui-gridgroupablemessages
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the messages setting of GridGroupable.
 
 ### _empty
 Sets the text of the empty grouping area message
+
+#### Returns
+`\Kendo\UI\GridGroupableMessages`
+
 #### Parameters
 
 ##### $value `string`

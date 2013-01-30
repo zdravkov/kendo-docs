@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesItemLabels
-slug: php-ChartSeriesItemLabels
+slug: php-dataviz-ui-chartseriesitemlabels
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the labels setting of ChartSeriesItem.
 
 ### align
 Defines the alignment of the labels.** Available for donut and pie series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Defines the alignment of the labels.** Available for donut and pie series. **
 
 ### background
 The background color of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,14 +46,17 @@ The background color of the labels.
 
 ### border
 
+The border of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder|array`
 
-The border of the labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemlabelsborder)
 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemLabelsBorder();
@@ -61,6 +72,10 @@ The border of the labels.
 
 ### color
 The text color of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -73,6 +88,10 @@ The text color of the labels.
 
 ### distance
 The distance of the labels.** Available for donut and pie series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `float`
@@ -85,6 +104,10 @@ The distance of the labels.** Available for donut and pie series. **
 
 ### font
 The font style of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -97,6 +120,10 @@ The font style of the labels.
 
 ### format
 The format of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -109,6 +136,10 @@ The format of the labels.
 
 ### margin
 The margin of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -121,6 +152,10 @@ The margin of the labels.
 
 ### padding
 The padding of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -133,6 +168,10 @@ The padding of the labels.
 
 ### position
 Defines the position of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -145,6 +184,10 @@ Defines the position of the labels.
 
 ### template
 The label template. Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -161,6 +204,10 @@ The label template. Template variables:
 
 ### visible
 The visibility of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `boolean`

@@ -1,6 +1,6 @@
 ---
 title: DropDownListAnimationClose
-slug: php-DropDownListAnimationClose
+slug: php-ui-dropdownlistanimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of DropDownListAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\DropDownListAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\DropDownListAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

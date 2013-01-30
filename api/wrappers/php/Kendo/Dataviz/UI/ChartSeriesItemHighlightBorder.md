@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesItemHighlightBorder
-slug: php-ChartSeriesItemHighlightBorder
+slug: php-dataviz-ui-chartseriesitemhighlightborder
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the border setting of ChartSeriesItemHighlight.
 
 ### color
 The border color.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The border color.
 
 ### opacity
 The border opacity.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder`
+
 #### Parameters
 
 ##### $value `float`
@@ -38,6 +46,10 @@ The border opacity.
 
 ### width
 The width of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder`
+
 #### Parameters
 
 ##### $value `float`

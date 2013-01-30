@@ -1,6 +1,6 @@
 ---
 title: StockChartSeriesItem
-slug: php-StockChartSeriesItem
+slug: php-dataviz-ui-stockchartseriesitem
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the seriesItem setting of StockChartSeries.
 ### aggregate
 Aggregate function for date series.This function is used when a category (an year, month, etc.) contains two or more points.
 The function return value is displayed instead of the individual points.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ The function return value is displayed instead of the individual points.
 
 ### axis
 The name of the value axis to use.** Applicable to area, column, line, ohlc and candlestick series **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -39,14 +47,17 @@ The name of the value axis to use.** Applicable to area, column, line, ohlc and 
 
 ### border
 
+The border of the points.** Applicable to column, ohlc and candlestick series **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemBorder|array`
 
-The border of the points.** Applicable to column, ohlc and candlestick series **
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemborder)
 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
@@ -62,6 +73,10 @@ The border of the points.** Applicable to column, ohlc and candlestick series **
 
 ### closeField
 The data field containing the close value.** Available for candlestick and ohlc series only **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +89,10 @@ The data field containing the close value.** Available for candlestick and ohlc 
 
 ### color
 The series base color.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -86,6 +105,10 @@ The series base color.
 
 ### colorField
 The data field containing the point color.** Applicable for column, candlestick and ohlc series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -98,6 +121,10 @@ The data field containing the point color.** Applicable for column, candlestick 
 
 ### dashType
 The series line dash type.** Applicable only to line series **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -110,6 +137,10 @@ The series line dash type.** Applicable only to line series **
 
 ### data
 Array of data items. The data item type can be either a:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `array`
@@ -122,6 +153,10 @@ Array of data items. The data item type can be either a:
 
 ### downColor
 The series color when open value is smoller then close value.** Available for candlestick series only **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -134,6 +169,10 @@ The series color when open value is smoller then close value.** Available for ca
 
 ### downColorField
 The data field containing the body color.** Available for candlestick series only **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -146,6 +185,10 @@ The data field containing the body color.** Available for candlestick series onl
 
 ### field
 The data field containing the series value.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -158,6 +201,10 @@ The data field containing the series value.
 
 ### gap
 The distance between category clusters.** Applicable for column, candlestick and ohlc series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `float`
@@ -170,6 +217,10 @@ The distance between category clusters.** Applicable for column, candlestick and
 
 ### groupNameTemplate
 Name template for auto-generated series when binding to grouped data.Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -182,6 +233,10 @@ Name template for auto-generated series when binding to grouped data.Template va
 
 ### highField
 The data field containing the high value.** Available for candlestick and ohlc series only **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -194,14 +249,17 @@ The data field containing the high value.** Available for candlestick and ohlc s
 
 ### highlight
 
+Configures the appearance of highlighted points.** Applicable to candlestick and ohlc series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemHighlight|array`
 
-Configures the appearance of highlighted points.** Applicable to candlestick and ohlc series. **
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemHighlight
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemHighlight](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemhighlight)
 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $highlight = new \Kendo\Dataviz\UI\StockChartSeriesItemHighlight();
@@ -217,14 +275,17 @@ Configures the appearance of highlighted points.** Applicable to candlestick and
 
 ### labels
 
+Configures the series data labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemLabels|array`
 
-Configures the series data labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemLabels
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemLabels](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemlabels)
 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $labels = new \Kendo\Dataviz\UI\StockChartSeriesItemLabels();
@@ -240,11 +301,14 @@ Configures the series data labels.
 
 ### line
 
+Line options.** Applicable to area, candlestick and ohlc series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string|\Kendo\Dataviz\UI\StockChartSeriesItemLine|array`
-
-Line options.** Applicable to area, candlestick and ohlc series. **
 
 
 
@@ -254,7 +318,7 @@ Line options.** Applicable to area, candlestick and ohlc series. **
     $seriesItem->line('value');
 
 
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemLine
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemLine](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemline)
 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $line = new \Kendo\Dataviz\UI\StockChartSeriesItemLine();
@@ -270,6 +334,10 @@ Line options.** Applicable to area, candlestick and ohlc series. **
 
 ### lowField
 The data field containing the low value.** Available for candlestick and ohlc series **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -282,14 +350,17 @@ The data field containing the low value.** Available for candlestick and ohlc se
 
 ### markers
 
+Marker options.** Applicable for area and line series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemMarkers|array`
 
-Marker options.** Applicable for area and line series. **
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemMarkers
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemMarkers](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemmarkers)
 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
@@ -305,6 +376,10 @@ Marker options.** Applicable for area and line series. **
 
 ### missingValues
 Configures the behavior for handling missing values.** Applicable for area and line series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -317,6 +392,10 @@ Configures the behavior for handling missing values.** Applicable for area and l
 
 ### name
 The series name visible in the legend.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -329,6 +408,10 @@ The series name visible in the legend.
 
 ### opacity
 The series opacity.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `float`
@@ -341,6 +424,10 @@ The series opacity.
 
 ### openField
 The data field containing the open value.** Available for candlestick and ohlc series **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -353,14 +440,17 @@ The data field containing the open value.** Available for candlestick and ohlc s
 
 ### overlay
 
+The effects overlay.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemOverlay|array`
 
-The effects overlay.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemOverlay
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemOverlay](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemoverlay)
 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $overlay = new \Kendo\Dataviz\UI\StockChartSeriesItemOverlay();
@@ -376,6 +466,10 @@ The effects overlay.
 
 ### spacing
 Space between points as proportion of the point width.Available for column, candlestick and ohlc series.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `float`
@@ -389,6 +483,10 @@ Space between points as proportion of the point width.Available for column, cand
 ### stack
 A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
 Available for column series.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `boolean|string`
@@ -405,14 +503,17 @@ Available for column series.
 
 ### tooltip
 
+The data point tooltip configuration options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemTooltip|array`
 
-The data point tooltip configuration options.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemTooltip
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemTooltip](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemtooltip)
 
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $tooltip = new \Kendo\Dataviz\UI\StockChartSeriesItemTooltip();
@@ -428,6 +529,10 @@ The data point tooltip configuration options.
 
 ### type
 The type of the series. Available types:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -440,6 +545,10 @@ The type of the series. Available types:
 
 ### width
 The line width.** Applicable for area and line series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
 #### Parameters
 
 ##### $value `float`

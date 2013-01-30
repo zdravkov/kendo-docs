@@ -1,6 +1,6 @@
 ---
 title: ChartValueAxisItemMajorGridLines
-slug: php-ChartValueAxisItemMajorGridLines
+slug: php-dataviz-ui-chartvalueaxisitemmajorgridlines
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the majorGridLines setting of ChartValueAxisItem.
 
 ### color
 The color of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the lines.
 
 ### visible
 The visibility of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -38,6 +46,10 @@ The visibility of the lines.
 
 ### width
 The width of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `float`

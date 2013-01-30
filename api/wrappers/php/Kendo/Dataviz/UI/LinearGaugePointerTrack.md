@@ -1,6 +1,6 @@
 ---
 title: LinearGaugePointerTrack
-slug: php-LinearGaugePointerTrack
+slug: php-dataviz-ui-lineargaugepointertrack
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the track setting of LinearGaugePointer.
 
 ### border
 
+The border of the track.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointerTrack`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugePointerTrackBorder|array`
 
-The border of the track.
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugePointerTrackBorder
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerTrackBorder](/api/wrappers/php/kendo/dataviz/ui/lineargaugepointertrackborder)
 
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerTrackBorder();
@@ -37,6 +40,10 @@ The border of the track.
 
 ### color
 The color of the track.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointerTrack`
+
 #### Parameters
 
 ##### $value `string`
@@ -49,6 +56,10 @@ The color of the track.
 
 ### opacity
 The opacity of the track.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointerTrack`
+
 #### Parameters
 
 ##### $value `float`
@@ -61,6 +72,10 @@ The opacity of the track.
 
 ### size
 The size of the track.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointerTrack`
+
 #### Parameters
 
 ##### $value `float`
@@ -73,6 +88,10 @@ The size of the track.
 
 ### visible
 The visibility of the track.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointerTrack`
+
 #### Parameters
 
 ##### $value `boolean`

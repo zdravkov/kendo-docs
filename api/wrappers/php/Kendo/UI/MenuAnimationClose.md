@@ -1,6 +1,6 @@
 ---
 title: MenuAnimationClose
-slug: php-MenuAnimationClose
+slug: php-ui-menuanimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of MenuAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\MenuAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\MenuAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

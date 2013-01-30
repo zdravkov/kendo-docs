@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesDefaultsLabels
-slug: php-ChartSeriesDefaultsLabels
+slug: php-dataviz-ui-chartseriesdefaultslabels
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the labels setting of ChartSeriesDefaults.
 ### background
 The background color of the labels. Any valid CSS color string will work here,
 including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,14 +31,17 @@ including hex and rgb.
 
 ### border
 
+The border of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder|array`
 
-The border of the labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/chartseriesdefaultslabelsborder)
 
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $border = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder();
@@ -51,6 +58,10 @@ The border of the labels.
 ### color
 The text color of the labels. Any valid CSS color string will work here, inlcuding hex
 and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -64,6 +75,10 @@ and rgb.
 ### font
 The font style of the labels.
 labels
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -76,6 +91,10 @@ labels
 
 ### format
 The format of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -88,6 +107,10 @@ The format of the labels.
 
 ### margin
 The margin of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -100,6 +123,10 @@ The margin of the labels.
 
 ### padding
 The padding of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -113,6 +140,10 @@ The padding of the labels.
 ### template
 The label template.
 Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -129,6 +160,10 @@ Template variables:
 
 ### visible
 The visibility of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `boolean`

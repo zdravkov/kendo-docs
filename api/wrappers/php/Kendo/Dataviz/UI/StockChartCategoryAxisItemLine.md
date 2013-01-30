@@ -1,6 +1,6 @@
 ---
 title: StockChartCategoryAxisItemLine
-slug: php-StockChartCategoryAxisItemLine
+slug: php-dataviz-ui-stockchartcategoryaxisitemline
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the line setting of StockChartCategoryAxisItem.
 
 ### color
 The color of the lines. Any valid CSS color string will work here, including hex and rgb.Note: This will also effect the major and minor ticks, but not the grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItemLine`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the lines. Any valid CSS color string will work here, including hex
 
 ### dashType
 The dash type of the line.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItemLine`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ The dash type of the line.
 
 ### visible
 The visibility of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItemLine`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -51,6 +63,10 @@ The visibility of the lines.
 ### width
 The width of the line. This will also effect the major and minor ticks, but
 not the grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItemLine`
+
 #### Parameters
 
 ##### $value `float`

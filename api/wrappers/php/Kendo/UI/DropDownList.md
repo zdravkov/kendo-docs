@@ -1,29 +1,52 @@
 ---
 title: DropDownList
-slug: php-DropDownList
+slug: php-ui-dropdownlist
 tags: api, php
 publish: true
 ---
 
 # \Kendo\UI\DropDownList
 
-A PHP class representing Kendo DropDownList.
+A PHP class representing Kendo [DropDownList](/api/web/dropdownlist).
+
+
+## Configuration
+
+To use DropDownList in a PHP page instantiate a new instance, configure it via the available
+configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
+
+### Using Kendo DropDownList
+
+    <?php
+    // Create a new instance of DropDownList and specify its id
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+
+    // Configure it
+    $dropDownList->autoBind(true)
+
+    // Output it
+
+    echo $dropDownList->render();
+    ?>
 
 
 ## Methods
 
 ### animation
 
+Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\DropDownListAnimation|array`
 
-Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 
+#### Example - using [\Kendo\UI\DropDownListAnimation](/api/wrappers/php/kendo/ui/dropdownlistanimation)
 
-#### Example - using \Kendo\UI\DropDownListAnimation
-
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $animation = new \Kendo\UI\DropDownListAnimation();
     $close = new \Kendo\UI\DropDownListAnimationClose();
     $animation->close($close);
@@ -31,12 +54,16 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
 
 #### Example - using array
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $close = new \Kendo\UI\DropDownListAnimationClose();
     $dropDownList->animation(array('close' => $close));
 
 ### autoBind
 Controls whether to bind the widget on initialization.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -44,18 +71,22 @@ Controls whether to bind the widget on initialization.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->autoBind(true);
 
 ### cascade
 Triggered when value of the widget is changed via API or user interaction.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->cascade('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -65,17 +96,21 @@ Triggered when value of the widget is changed via API or user interaction.
         }
     </script>
     <?php
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->cascade('onCascade');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->cascade(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### cascadeFrom
 Use it to set the Id of the parent DropDownList.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string`
@@ -83,18 +118,22 @@ Use it to set the Id of the parent DropDownList.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->cascadeFrom('value');
 
 ### change
 Fires when the value has been changed.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->change('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -104,24 +143,28 @@ Fires when the value has been changed.
         }
     </script>
     <?php
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->change('onChange');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### close
 Fires when the drop-down list is closed
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->close('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -131,24 +174,28 @@ Fires when the drop-down list is closed
         }
     </script>
     <?php
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->close('onClose');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### dataBound
 Fires when the drop-down list has received data from the data source.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->dataBound('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -158,37 +205,44 @@ Fires when the drop-down list has received data from the data source.
         }
     </script>
     <?php
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->dataBound('onDataBound');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->dataBound(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### dataSource
 
 Sets the data source of the dataSource.
 
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `\Kendo\Data\DataSource|array`
 
-#### Example - using \Kendo\Data\DataSource
+#### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dataSource = new \Kendo\Data\DataSource();
     $dropDownList->dataSource($dataSource);
 
 #### Example - using array
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $schema = new \Kendo\Data\DataSourceSchema();
     $dropDownList->dataSource(array('schema' => $schema));
 
 ### dataTextField
 Sets the field of the data item that provides the text content of the list items.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string`
@@ -196,11 +250,15 @@ Sets the field of the data item that provides the text content of the list items
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->dataTextField('value');
 
 ### dataValueField
 Sets the field of the data item that provides the value content of the list items.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string`
@@ -208,11 +266,15 @@ Sets the field of the data item that provides the value content of the list item
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->dataValueField('value');
 
 ### delay
 Specifies the delay in ms before the search text typed by the end user is cleared.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `float`
@@ -220,11 +282,15 @@ Specifies the delay in ms before the search text typed by the end user is cleare
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->delay(1);
 
 ### enable
 Controls whether the DropDownList should be initially enabled.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -232,11 +298,15 @@ Controls whether the DropDownList should be initially enabled.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->enable(true);
 
 ### height
 Define the height of the drop-down list in pixels.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `float`
@@ -244,11 +314,15 @@ Define the height of the drop-down list in pixels.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->height(1);
 
 ### ignoreCase
 Controls whether the search should be case sensitive.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string`
@@ -256,11 +330,15 @@ Controls whether the search should be case sensitive.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->ignoreCase('value');
 
 ### index
 Defines the initial selected item.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `float`
@@ -268,18 +346,22 @@ Defines the initial selected item.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->index(1);
 
 ### open
 Fires when the drop-down list is opened
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->open('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -289,17 +371,21 @@ Fires when the drop-down list is opened
         }
     </script>
     <?php
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->open('onOpen');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### optionLabel
 Define the text of the default empty item. If the value is an object, then the widget will use it directly.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string|`
@@ -307,18 +393,22 @@ Define the text of the default empty item. If the value is an object, then the w
 
 
 #### Example  - using string
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->optionLabel('value');
 
 ### select
 Triggered when a Li element is selected.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->select('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -328,17 +418,21 @@ Triggered when a Li element is selected.
         }
     </script>
     <?php
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->select('onSelect');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### template
 Template to be used for rendering the items in the list.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string`
@@ -346,11 +440,15 @@ Template to be used for rendering the items in the list.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->template('value');
 
 ### text
 Define the text of the widget, when the autoBind is set to false.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string`
@@ -358,11 +456,15 @@ Define the text of the widget, when the autoBind is set to false.
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->text('value');
 
 ### value
 Define the value of the widget
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
 #### Parameters
 
 ##### $value `string`
@@ -370,6 +472,6 @@ Define the value of the widget
 
 
 #### Example 
-    $dropDownList = new \Kendo\UI\DropDownList();
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->value('value');
 

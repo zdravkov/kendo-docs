@@ -1,6 +1,6 @@
 ---
 title: RadialGaugeScaleLabelsBorder
-slug: php-RadialGaugeScaleLabelsBorder
+slug: php-dataviz-ui-radialgaugescalelabelsborder
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the border setting of RadialGaugeScaleLabels.
 
 ### color
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the border. Any valid CSS color string will work here, including he
 
 ### dashType
 The dash type of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ The dash type of the border.
 
 ### width
 The width of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder`
+
 #### Parameters
 
 ##### $value `float`

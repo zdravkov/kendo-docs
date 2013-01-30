@@ -1,6 +1,6 @@
 ---
 title: EditorImageBrowserSchemaModelFields
-slug: php-EditorImageBrowserSchemaModelFields
+slug: php-ui-editorimagebrowserschemamodelfields
 tags: api, php
 publish: true
 ---
@@ -14,11 +14,14 @@ A PHP class representing the fields setting of EditorImageBrowserSchemaModel.
 
 ### name
 
+The field which contains the name of the image/directory
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserSchemaModelFields`
+
 #### Parameters
 
 ##### $value `string|\Kendo\UI\EditorImageBrowserSchemaModelFieldsName|array`
-
-The field which contains the name of the image/directory
 
 
 
@@ -28,7 +31,7 @@ The field which contains the name of the image/directory
     $fields->name('value');
 
 
-#### Example - using \Kendo\UI\EditorImageBrowserSchemaModelFieldsName
+#### Example - using [\Kendo\UI\EditorImageBrowserSchemaModelFieldsName](/api/wrappers/php/kendo/ui/editorimagebrowserschemamodelfieldsname)
 
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
     $name = new \Kendo\UI\EditorImageBrowserSchemaModelFieldsName();
@@ -44,11 +47,14 @@ The field which contains the name of the image/directory
 
 ### size
 
+The field which contains the size of image.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserSchemaModelFields`
+
 #### Parameters
 
 ##### $value `string|\Kendo\UI\EditorImageBrowserSchemaModelFieldsSize|array`
-
-The field which contains the size of image.
 
 
 
@@ -58,7 +64,7 @@ The field which contains the size of image.
     $fields->size('value');
 
 
-#### Example - using \Kendo\UI\EditorImageBrowserSchemaModelFieldsSize
+#### Example - using [\Kendo\UI\EditorImageBrowserSchemaModelFieldsSize](/api/wrappers/php/kendo/ui/editorimagebrowserschemamodelfieldssize)
 
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
     $size = new \Kendo\UI\EditorImageBrowserSchemaModelFieldsSize();
@@ -74,11 +80,14 @@ The field which contains the size of image.
 
 ### type
 
+The field which contains the type of the entry. Either f for image or d for directory.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserSchemaModelFields`
+
 #### Parameters
 
 ##### $value `string|\Kendo\UI\EditorImageBrowserSchemaModelFieldsType|array`
-
-The field which contains the type of the entry. Either f for image or d for directory.
 
 
 
@@ -88,7 +97,7 @@ The field which contains the type of the entry. Either f for image or d for dire
     $fields->type('value');
 
 
-#### Example - using \Kendo\UI\EditorImageBrowserSchemaModelFieldsType
+#### Example - using [\Kendo\UI\EditorImageBrowserSchemaModelFieldsType](/api/wrappers/php/kendo/ui/editorimagebrowserschemamodelfieldstype)
 
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
     $type = new \Kendo\UI\EditorImageBrowserSchemaModelFieldsType();

@@ -1,6 +1,6 @@
 ---
 title: RadialGaugeScaleMajorTicks
-slug: php-RadialGaugeScaleMajorTicks
+slug: php-dataviz-ui-radialgaugescalemajorticks
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the majorTicks setting of RadialGaugeScale.
 
 ### color
 The color of the major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ The color of the major ticks.
 ### size
 The major tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks`
+
 #### Parameters
 
 ##### $value `float`
@@ -40,6 +48,10 @@ This is the length of the line in pixels that is drawn to indicate the tick on t
 ### visible
 The visibility of the major ticks.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -52,6 +64,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### width
 The width of the major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks`
+
 #### Parameters
 
 ##### $value `float`

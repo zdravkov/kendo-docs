@@ -1,6 +1,6 @@
 ---
 title: ChartCategoryAxisItemMinorGridLines
-slug: php-ChartCategoryAxisItemMinorGridLines
+slug: php-dataviz-ui-chartcategoryaxisitemminorgridlines
 tags: api, php
 publish: true
 ---
@@ -16,6 +16,10 @@ A PHP class representing the minorGridLines setting of ChartCategoryAxisItem.
 The color of the lines. Any valid CSS color string will work here, including hex and
 rgb.Note that this setting has no effect if the visibility of the minor
 grid lines is not set to true.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -28,6 +32,10 @@ grid lines is not set to true.
 
 ### dashType
 The dash type of the grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -40,6 +48,10 @@ The dash type of the grid lines.
 
 ### visible
 The visibility of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -53,6 +65,10 @@ The visibility of the lines.
 ### width
 The width of the lines.Note that this setting has no effect if the visibility of the minor
 grid lines is not set to true.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines`
+
 #### Parameters
 
 ##### $value `float`

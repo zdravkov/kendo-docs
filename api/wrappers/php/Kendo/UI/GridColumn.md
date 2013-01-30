@@ -1,6 +1,6 @@
 ---
 title: GridColumn
-slug: php-GridColumn
+slug: php-ui-gridcolumn
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the column setting of GridColumns.
 
 ### aggregates
 The aggregates to be used when grouping is applied
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `array`
@@ -26,6 +30,10 @@ The aggregates to be used when grouping is applied
 
 ### attributes
 Definition of column cells' HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value ``
@@ -35,6 +43,9 @@ Definition of column cells' HTML attributes. Reserved words in Javascript should
 ### addCommandItem
 
 Adds one or more GridColumnCommandItem to the GridColumn.
+
+#### Returns
+`\Kendo\UI\GridColumn`
 
 #### Parameters
 
@@ -63,6 +74,10 @@ Adds one or more GridColumnCommandItem to the GridColumn.
 
 ### editor
 Provides a way to specify custom editor for this column.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `\Kendo\JavaScriptFunction`
@@ -75,6 +90,10 @@ Provides a way to specify custom editor for this column.
 
 ### encoded
 Specified whether the column content is escaped. Disable encoding if the data contains HTML markup.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -87,6 +106,10 @@ Specified whether the column content is escaped. Disable encoding if the data co
 
 ### field
 The field from the datasource that will be displayed in the column.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -99,11 +122,14 @@ The field from the datasource that will be displayed in the column.
 
 ### filterable
 
+Specifies whether given column is filterable.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `boolean|\Kendo\UI\GridColumnFilterable|array`
-
-Specifies whether given column is filterable.
 
 
 
@@ -113,7 +139,7 @@ Specifies whether given column is filterable.
     $column->filterable(true);
 
 
-#### Example - using \Kendo\UI\GridColumnFilterable
+#### Example - using [\Kendo\UI\GridColumnFilterable](/api/wrappers/php/kendo/ui/gridcolumnfilterable)
 
     $column = new \Kendo\UI\GridColumn();
     $filterable = new \Kendo\UI\GridColumnFilterable();
@@ -129,6 +155,10 @@ Specifies whether given column is filterable.
 
 ### footerTemplate
 The template for column's cell in footer item.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -141,6 +171,10 @@ The template for column's cell in footer item.
 
 ### format
 The format that will be applied on the column cells.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -153,6 +187,10 @@ The format that will be applied on the column cells.
 
 ### groupFooterTemplate
 The template for column's cell in group footer item.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -165,6 +203,10 @@ The template for column's cell in group footer item.
 
 ### groupHeaderTemplate
 The template for group header item.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -177,6 +219,10 @@ The template for group header item.
 
 ### headerAttributes
 Definition of column header cell's HTML attributes. Reserved words in Javascript should be enclosed in quotation marks.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value ``
@@ -186,6 +232,10 @@ Definition of column header cell's HTML attributes. Reserved words in Javascript
 ### headerTemplate
 The template for column's header cell. If sorting is enabled, it will be wrapped in a <a class="k-link"> element, so the template should consist of only inline elements
 in order to have valid HTML markup in the Grid.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -198,6 +248,10 @@ in order to have valid HTML markup in the Grid.
 
 ### hidden
 Specifies whether given column is hidden.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -210,6 +264,10 @@ Specifies whether given column is hidden.
 
 ### menu
 Indicates whether the column should be visible in column menu.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -222,6 +280,10 @@ Indicates whether the column should be visible in column menu.
 
 ### sortable
 Specifies whether given column is sortable.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -234,6 +296,10 @@ Specifies whether given column is sortable.
 
 ### template
 The template for column's cells.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -246,6 +312,10 @@ The template for column's cells.
 
 ### title
 The text that will be displayed in the column header.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`
@@ -258,6 +328,10 @@ The text that will be displayed in the column header.
 
 ### width
 The width of the column.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
 #### Parameters
 
 ##### $value `string`

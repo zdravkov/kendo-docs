@@ -1,6 +1,6 @@
 ---
 title: GridColumnFilterable
-slug: php-GridColumnFilterable
+slug: php-ui-gridcolumnfilterable
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the filterable setting of GridColumn.
 
 ### ui
 Role of the widget shown as column filter menu input element.
+
+#### Returns
+`\Kendo\UI\GridColumnFilterable`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`

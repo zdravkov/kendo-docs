@@ -1,6 +1,6 @@
 ---
 title: DataSourceTransport
-slug: php-DataSourceTransport
+slug: php-data-datasourcetransport
 tags: api, php
 publish: true
 ---
@@ -14,11 +14,14 @@ A PHP class representing the transport setting of DataSource.
 
 ### create
 
+Options for remote create data operation, or the URL of the remote service.
+
+#### Returns
+`\Kendo\Data\DataSourceTransport`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction|\Kendo\Data\DataSourceTransportCreate|array`
-
-Options for remote create data operation, or the URL of the remote service.
 
 
 
@@ -32,7 +35,7 @@ Options for remote create data operation, or the URL of the remote service.
     $transport->create(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using \Kendo\Data\DataSourceTransportCreate
+#### Example - using [\Kendo\Data\DataSourceTransportCreate](/api/wrappers/php/kendo/data/datasourcetransportcreate)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $create = new \Kendo\Data\DataSourceTransportCreate();
@@ -48,11 +51,14 @@ Options for remote create data operation, or the URL of the remote service.
 
 ### destroy
 
+Options for remote destroy data operation, or the URL of the remote service.
+
+#### Returns
+`\Kendo\Data\DataSourceTransport`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction|\Kendo\Data\DataSourceTransportDestroy|array`
-
-Options for remote destroy data operation, or the URL of the remote service.
 
 
 
@@ -66,7 +72,7 @@ Options for remote destroy data operation, or the URL of the remote service.
     $transport->destroy(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using \Kendo\Data\DataSourceTransportDestroy
+#### Example - using [\Kendo\Data\DataSourceTransportDestroy](/api/wrappers/php/kendo/data/datasourcetransportdestroy)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $destroy = new \Kendo\Data\DataSourceTransportDestroy();
@@ -82,6 +88,10 @@ Options for remote destroy data operation, or the URL of the remote service.
 
 ### parameterMap
 Converts the request parameters and data from the internal format to a format suitable for the remote service.
+
+#### Returns
+`\Kendo\Data\DataSourceTransport`
+
 #### Parameters
 
 ##### $value `\Kendo\JavaScriptFunction`
@@ -94,11 +104,14 @@ Converts the request parameters and data from the internal format to a format su
 
 ### read
 
+Options for remote read data operation, or the URL of the remote service.
+
+#### Returns
+`\Kendo\Data\DataSourceTransport`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction|\Kendo\Data\DataSourceTransportRead|array`
-
-Options for remote read data operation, or the URL of the remote service.
 
 
 
@@ -112,7 +125,7 @@ Options for remote read data operation, or the URL of the remote service.
     $transport->read(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using \Kendo\Data\DataSourceTransportRead
+#### Example - using [\Kendo\Data\DataSourceTransportRead](/api/wrappers/php/kendo/data/datasourcetransportread)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $read = new \Kendo\Data\DataSourceTransportRead();
@@ -128,11 +141,14 @@ Options for remote read data operation, or the URL of the remote service.
 
 ### update
 
+Options for remote update data operation, or the URL of the remote service.
+
+#### Returns
+`\Kendo\Data\DataSourceTransport`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction|\Kendo\Data\DataSourceTransportUpdate|array`
-
-Options for remote update data operation, or the URL of the remote service.
 
 
 
@@ -146,7 +162,7 @@ Options for remote update data operation, or the URL of the remote service.
     $transport->update(new \Kendo\JavaScriptFunction('function() { }'));
 
 
-#### Example - using \Kendo\Data\DataSourceTransportUpdate
+#### Example - using [\Kendo\Data\DataSourceTransportUpdate](/api/wrappers/php/kendo/data/datasourcetransportupdate)
 
     $transport = new \Kendo\Data\DataSourceTransport();
     $update = new \Kendo\Data\DataSourceTransportUpdate();

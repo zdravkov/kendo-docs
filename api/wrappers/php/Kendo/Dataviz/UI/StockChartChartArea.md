@@ -1,6 +1,6 @@
 ---
 title: StockChartChartArea
-slug: php-StockChartChartArea
+slug: php-dataviz-ui-stockchartchartarea
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the chartArea setting of StockChart.
 
 ### background
 The background color of the chart area.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartChartArea`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,14 +30,17 @@ The background color of the chart area.
 
 ### border
 
+The border of the chart area.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartChartArea`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartChartAreaBorder|array`
 
-The border of the chart area.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartChartAreaBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartChartAreaBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartchartareaborder)
 
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
     $border = new \Kendo\Dataviz\UI\StockChartChartAreaBorder();
@@ -49,6 +56,10 @@ The border of the chart area.
 
 ### height
 The height of the chart area.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartChartArea`
+
 #### Parameters
 
 ##### $value `float`
@@ -61,6 +72,10 @@ The height of the chart area.
 
 ### margin
 The margin of the chart area.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartChartArea`
+
 #### Parameters
 
 ##### $value `float|`
@@ -73,6 +88,10 @@ The margin of the chart area.
 
 ### opacity
 The background opacity of the chart area.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartChartArea`
+
 #### Parameters
 
 ##### $value `float`
@@ -85,6 +104,10 @@ The background opacity of the chart area.
 
 ### width
 The width of the chart area.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartChartArea`
+
 #### Parameters
 
 ##### $value `float`

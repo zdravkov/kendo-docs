@@ -1,6 +1,6 @@
 ---
 title: TreeViewAnimationCollapse
-slug: php-TreeViewAnimationCollapse
+slug: php-ui-treeviewanimationcollapse
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the collapse setting of TreeViewAnimation.
 
 ### duration
 The number of milliseconds used for the animation when a node is expanded.
+
+#### Returns
+`\Kendo\UI\TreeViewAnimationCollapse`
+
 #### Parameters
 
 ##### $value `float`
@@ -27,6 +31,10 @@ The number of milliseconds used for the animation when a node is expanded.
 ### effects
 A whitespace-delimited string of animation effects that are utilized when a TreeView node
 is collapsed. Options include "fadeOut".
+
+#### Returns
+`\Kendo\UI\TreeViewAnimationCollapse`
+
 #### Parameters
 
 ##### $value `string`

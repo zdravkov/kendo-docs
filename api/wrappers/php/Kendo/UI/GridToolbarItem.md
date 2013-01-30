@@ -1,6 +1,6 @@
 ---
 title: GridToolbarItem
-slug: php-GridToolbarItem
+slug: php-ui-gridtoolbaritem
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the toolbarItem setting of GridToolbar.
 
 ### name
 The name of the command. One of the predefined or a custom.
+
+#### Returns
+`\Kendo\UI\GridToolbarItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The name of the command. One of the predefined or a custom.
 
 ### template
 The template for the command button.
+
+#### Returns
+`\Kendo\UI\GridToolbarItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ The template for the command button.
 
 ### text
 The text of the command that will be set on the button.
+
+#### Returns
+`\Kendo\UI\GridToolbarItem`
+
 #### Parameters
 
 ##### $value `string`

@@ -1,6 +1,6 @@
 ---
 title: StockChartSeriesDefaultsLabels
-slug: php-StockChartSeriesDefaultsLabels
+slug: php-dataviz-ui-stockchartseriesdefaultslabels
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the labels setting of StockChartSeriesDefaults.
 ### background
 The background color of the labels. Any valid CSS color string will work here,
 including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,14 +31,17 @@ including hex and rgb.
 
 ### border
 
+The border of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabelsBorder|array`
 
-The border of the labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabelsBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaultslabelsborder)
 
     $labels = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabelsBorder();
@@ -51,6 +58,10 @@ The border of the labels.
 ### color
 The text color of the labels. Any valid CSS color string will work here, inlcuding hex
 and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -64,6 +75,10 @@ and rgb.
 ### font
 The font style of the labels.
 labels
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -76,6 +91,10 @@ labels
 
 ### format
 The format of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -88,6 +107,10 @@ The format of the labels.
 
 ### margin
 The margin of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -100,6 +123,10 @@ The margin of the labels.
 
 ### padding
 The padding of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -113,6 +140,10 @@ The padding of the labels.
 ### template
 The label template.
 Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -129,6 +160,10 @@ Template variables:
 
 ### visible
 The visibility of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels`
+
 #### Parameters
 
 ##### $value `boolean`

@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesDefaultsTooltip
-slug: php-ChartSeriesDefaultsTooltip
+slug: php-dataviz-ui-chartseriesdefaultstooltip
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the tooltip setting of ChartSeriesDefaults.
 
 ### background
 The background color of the tooltip. The default is determined from the series color.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,14 +30,17 @@ The background color of the tooltip. The default is determined from the series c
 
 ### border
 
+The border configuration options.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipBorder|array`
 
-The border configuration options.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipBorder
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipBorder](/api/wrappers/php/kendo/dataviz/ui/chartseriesdefaultstooltipborder)
 
     $tooltip = new \Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip();
     $border = new \Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipBorder();
@@ -49,6 +56,10 @@ The border configuration options.
 
 ### color
 The text color of the tooltip. The default is the same as the series labels color.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `string`
@@ -61,6 +72,10 @@ The text color of the tooltip. The default is the same as the series labels colo
 
 ### font
 The tooltip font.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `string`
@@ -73,6 +88,10 @@ The tooltip font.
 
 ### format
 The tooltip format.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `string`
@@ -85,6 +104,10 @@ The tooltip format.
 
 ### padding
 The padding of the tooltip.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `float|`
@@ -98,6 +121,10 @@ The padding of the tooltip.
 ### template
 The tooltip template.
 Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -114,6 +141,10 @@ Template variables:
 
 ### visible
 A value indicating if the tooltip should be displayed.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip`
+
 #### Parameters
 
 ##### $value `boolean`

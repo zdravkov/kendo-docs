@@ -1,6 +1,6 @@
 ---
 title: CalendarMonth
-slug: php-CalendarMonth
+slug: php-ui-calendarmonth
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the month setting of Calendar.
 
 ### content
 Template to be used for rendering the cells in the "month" view, which are in range.
+
+#### Returns
+`\Kendo\UI\CalendarMonth`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Template to be used for rendering the cells in the "month" view, which are in ra
 
 ### _empty
 Template to be used for rendering the cells in the "month" view, which are not in the min/max range.
+
+#### Returns
+`\Kendo\UI\CalendarMonth`
+
 #### Parameters
 
 ##### $value `string`

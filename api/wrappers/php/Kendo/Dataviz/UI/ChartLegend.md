@@ -1,6 +1,6 @@
 ---
 title: ChartLegend
-slug: php-ChartLegend
+slug: php-dataviz-ui-chartlegend
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the legend setting of Chart.
 
 ### background
 The background color of the legend. Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,14 +30,17 @@ The background color of the legend. Any valid CSS color string will work here, i
 
 ### border
 
+The border of the legend.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartLegendBorder|array`
 
-The border of the legend.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartLegendBorder
+#### Example - using [\Kendo\Dataviz\UI\ChartLegendBorder](/api/wrappers/php/kendo/dataviz/ui/chartlegendborder)
 
     $legend = new \Kendo\Dataviz\UI\ChartLegend();
     $border = new \Kendo\Dataviz\UI\ChartLegendBorder();
@@ -49,14 +56,17 @@ The border of the legend.
 
 ### labels
 
+Configures the legend labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartLegendLabels|array`
 
-Configures the legend labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartLegendLabels
+#### Example - using [\Kendo\Dataviz\UI\ChartLegendLabels](/api/wrappers/php/kendo/dataviz/ui/chartlegendlabels)
 
     $legend = new \Kendo\Dataviz\UI\ChartLegend();
     $labels = new \Kendo\Dataviz\UI\ChartLegendLabels();
@@ -72,6 +82,10 @@ Configures the legend labels.
 
 ### margin
 The margin of the legend.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `float|`
@@ -86,6 +100,10 @@ The margin of the legend.
 The X offset from its position.  The offset is relative to the current position of the legend.
 For instance, a value of 20 will move the legend 20 pixels to the right of it's initial position.  A negative value will move the legend
 to the left of the current position.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `float`
@@ -100,6 +118,10 @@ to the left of the current position.
 The Y offset from its position.  The offset is relative to the current position of the legend.
 For instance, a value of 20 will move the legend 20 pixels down from it's initial position.  A negative value will move the legend
 upwards from the current position.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `float`
@@ -112,6 +134,10 @@ upwards from the current position.
 
 ### padding
 The padding of the legend.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `float|`
@@ -124,6 +150,10 @@ The padding of the legend.
 
 ### position
 The positions of the legend.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `string`
@@ -136,6 +166,10 @@ The positions of the legend.
 
 ### visible
 The visibility of the legend.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
 #### Parameters
 
 ##### $value `boolean`

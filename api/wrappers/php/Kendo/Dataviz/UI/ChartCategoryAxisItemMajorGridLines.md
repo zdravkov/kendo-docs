@@ -1,6 +1,6 @@
 ---
 title: ChartCategoryAxisItemMajorGridLines
-slug: php-ChartCategoryAxisItemMajorGridLines
+slug: php-dataviz-ui-chartcategoryaxisitemmajorgridlines
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the majorGridLines setting of ChartCategoryAxisItem.
 
 ### color
 The color of the lines. Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the lines. Any valid CSS color string will work here, including hex
 
 ### dashType
 The dash type of the grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ The dash type of the grid lines.
 
 ### visible
 The visibility of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -50,6 +62,10 @@ The visibility of the lines.
 
 ### width
 The width of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `float`

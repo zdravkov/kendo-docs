@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesItemNegativeValues
-slug: php-ChartSeriesItemNegativeValues
+slug: php-dataviz-ui-chartseriesitemnegativevalues
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the negativeValues setting of ChartSeriesItem.
 
 ### color
 The color of the negative values.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemNegativeValues`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the negative values.
 
 ### visible
 The visibility of the negative values.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemNegativeValues`
+
 #### Parameters
 
 ##### $value `boolean`

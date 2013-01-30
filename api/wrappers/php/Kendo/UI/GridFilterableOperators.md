@@ -1,6 +1,6 @@
 ---
 title: GridFilterableOperators
-slug: php-GridFilterableOperators
+slug: php-ui-gridfilterableoperators
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the operators setting of GridFilterable.
 
 ### date
 
+Enable/Disable and set the text of filter operators for fields of type date.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperators`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridFilterableOperatorsDate|array`
 
-Enable/Disable and set the text of filter operators for fields of type date.
 
-
-#### Example - using \Kendo\UI\GridFilterableOperatorsDate
+#### Example - using [\Kendo\UI\GridFilterableOperatorsDate](/api/wrappers/php/kendo/ui/gridfilterableoperatorsdate)
 
     $operators = new \Kendo\UI\GridFilterableOperators();
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
@@ -37,14 +40,17 @@ Enable/Disable and set the text of filter operators for fields of type date.
 
 ### enums
 
+Enable/Disable and set the text of filter operators for foreign key columns.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperators`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridFilterableOperatorsEnums|array`
 
-Enable/Disable and set the text of filter operators for foreign key columns.
 
-
-#### Example - using \Kendo\UI\GridFilterableOperatorsEnums
+#### Example - using [\Kendo\UI\GridFilterableOperatorsEnums](/api/wrappers/php/kendo/ui/gridfilterableoperatorsenums)
 
     $operators = new \Kendo\UI\GridFilterableOperators();
     $enums = new \Kendo\UI\GridFilterableOperatorsEnums();
@@ -60,14 +66,17 @@ Enable/Disable and set the text of filter operators for foreign key columns.
 
 ### number
 
+Enable/Disable and set the text of filter operators for fields of type number.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperators`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridFilterableOperatorsNumber|array`
 
-Enable/Disable and set the text of filter operators for fields of type number.
 
-
-#### Example - using \Kendo\UI\GridFilterableOperatorsNumber
+#### Example - using [\Kendo\UI\GridFilterableOperatorsNumber](/api/wrappers/php/kendo/ui/gridfilterableoperatorsnumber)
 
     $operators = new \Kendo\UI\GridFilterableOperators();
     $number = new \Kendo\UI\GridFilterableOperatorsNumber();
@@ -83,14 +92,17 @@ Enable/Disable and set the text of filter operators for fields of type number.
 
 ### string
 
+Enable/Disable and set the text of filter operators for fields of type string.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperators`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridFilterableOperatorsString|array`
 
-Enable/Disable and set the text of filter operators for fields of type string.
 
-
-#### Example - using \Kendo\UI\GridFilterableOperatorsString
+#### Example - using [\Kendo\UI\GridFilterableOperatorsString](/api/wrappers/php/kendo/ui/gridfilterableoperatorsstring)
 
     $operators = new \Kendo\UI\GridFilterableOperators();
     $string = new \Kendo\UI\GridFilterableOperatorsString();

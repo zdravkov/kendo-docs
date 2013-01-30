@@ -1,6 +1,6 @@
 ---
 title: EditorImageBrowserMessages
-slug: php-EditorImageBrowserMessages
+slug: php-ui-editorimagebrowsermessages
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the messages setting of EditorImageBrowser.
 
 ### deleteFile
 Defines text for dialog shown when the file or directory is deleted.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Defines text for dialog shown when the file or directory is deleted.
 
 ### directoryNotFound
 Defines text for dialog shown when the directory not found error occurs.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Defines text for dialog shown when the directory not found error occurs.
 
 ### emptyFolder
 Defines text displayed when folder does not contain items.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Defines text displayed when folder does not contain items.
 
 ### invalidFileType
 Defines text for dialog shown when an invalid file is set for upload.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +78,10 @@ Defines text for dialog shown when an invalid file is set for upload.
 
 ### orderBy
 Defines text for order by label.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Defines text for order by label.
 
 ### orderByName
 Defines text for Name item of order by drop down list.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -86,6 +110,10 @@ Defines text for Name item of order by drop down list.
 
 ### orderBySize
 Defines text for Size item of order by drop down list.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -98,6 +126,10 @@ Defines text for Size item of order by drop down list.
 
 ### overwriteFile
 Defines text for dialog shown when an already existing file is set for upload.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -110,6 +142,10 @@ Defines text for dialog shown when an already existing file is set for upload.
 
 ### uploadFile
 Defines text for upload button.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
 #### Parameters
 
 ##### $value `string`

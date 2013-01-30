@@ -1,6 +1,6 @@
 ---
 title: StockChartNavigatorSeriesItemHighlightLine
-slug: php-StockChartNavigatorSeriesItemHighlightLine
+slug: php-dataviz-ui-stockchartnavigatorseriesitemhighlightline
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the line setting of StockChartNavigatorSeriesItemHighli
 
 ### color
 The line color.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightLine`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The line color.
 
 ### opacity
 The opacity of the line.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightLine`
+
 #### Parameters
 
 ##### $value `float`
@@ -38,6 +46,10 @@ The opacity of the line.
 
 ### width
 The width of the line.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightLine`
+
 #### Parameters
 
 ##### $value `float`

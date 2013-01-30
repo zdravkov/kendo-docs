@@ -1,6 +1,6 @@
 ---
 title: ComboBoxAnimationClose
-slug: php-ComboBoxAnimationClose
+slug: php-ui-comboboxanimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of ComboBoxAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\ComboBoxAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\ComboBoxAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

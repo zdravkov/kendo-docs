@@ -1,6 +1,6 @@
 ---
 title: GridGroupable
-slug: php-GridGroupable
+slug: php-ui-gridgroupable
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the groupable setting of Grid.
 
 ### messages
 
+Sets the messages displayed during grouping.
+
+#### Returns
+`\Kendo\UI\GridGroupable`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridGroupableMessages|array`
 
-Sets the messages displayed during grouping.
 
-
-#### Example - using \Kendo\UI\GridGroupableMessages
+#### Example - using [\Kendo\UI\GridGroupableMessages](/api/wrappers/php/kendo/ui/gridgroupablemessages)
 
     $groupable = new \Kendo\UI\GridGroupable();
     $messages = new \Kendo\UI\GridGroupableMessages();

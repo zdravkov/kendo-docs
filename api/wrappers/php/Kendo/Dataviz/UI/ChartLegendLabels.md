@@ -1,6 +1,6 @@
 ---
 title: ChartLegendLabels
-slug: php-ChartLegendLabels
+slug: php-dataviz-ui-chartlegendlabels
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the labels setting of ChartLegend.
 ### color
 The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegendLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### font
 The font style of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegendLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -40,6 +48,10 @@ The font style of the labels.
 ### template
 The template of the labels.
 Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegendLabels`
+
 #### Parameters
 
 ##### $value `string`

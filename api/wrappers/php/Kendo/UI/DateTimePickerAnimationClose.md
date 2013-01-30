@@ -1,6 +1,6 @@
 ---
 title: DateTimePickerAnimationClose
-slug: php-DateTimePickerAnimationClose
+slug: php-ui-datetimepickeranimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of DateTimePickerAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\DateTimePickerAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\DateTimePickerAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

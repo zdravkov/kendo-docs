@@ -1,6 +1,6 @@
 ---
 title: EditorImageBrowserSchema
-slug: php-EditorImageBrowserSchema
+slug: php-ui-editorimagebrowserschema
 tags: api, php
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: WindowAnimationClose
-slug: php-WindowAnimationClose
+slug: php-ui-windowanimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of WindowAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\WindowAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\WindowAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

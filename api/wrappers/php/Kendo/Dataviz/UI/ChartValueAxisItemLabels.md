@@ -1,6 +1,6 @@
 ---
 title: ChartValueAxisItemLabels
-slug: php-ChartValueAxisItemLabels
+slug: php-dataviz-ui-chartvalueaxisitemlabels
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the labels setting of ChartValueAxisItem.
 ### background
 The background color of the labels. Any valid CSS color string will work here, including
 hex and rgb
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,14 +31,17 @@ hex and rgb
 
 ### border
 
+The border of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemLabelsBorder|array`
 
-The border of the labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartValueAxisItemLabelsBorder
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/chartvalueaxisitemlabelsborder)
 
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $border = new \Kendo\Dataviz\UI\ChartValueAxisItemLabelsBorder();
@@ -50,6 +57,10 @@ The border of the labels.
 
 ### color
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +73,10 @@ The text color of the labels. Any valid CSS color string will work here, includi
 
 ### font
 The font style of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +89,10 @@ The font style of the labels.
 
 ### format
 The format of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -86,6 +105,10 @@ The format of the labels.
 
 ### margin
 The margin of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -100,6 +123,10 @@ The margin of the labels.
 Mirrors the axis labels and ticks.
 If the labels are normally on the left side of the axis,
 mirroring the axis will render them to the right.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -112,6 +139,10 @@ mirroring the axis will render them to the right.
 
 ### padding
 The padding of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -124,6 +155,10 @@ The padding of the labels.
 
 ### rotation
 The rotation angle of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `float`
@@ -137,6 +172,10 @@ The rotation angle of the labels.
 ### skip
 Number of labels to skip.
 Skips rendering the first n labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `float`
@@ -150,6 +189,10 @@ Skips rendering the first n labels.
 ### step
 Label rendering step.
 Every n-th label is rendered where n is the step
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `float`
@@ -163,6 +206,10 @@ Every n-th label is rendered where n is the step
 ### template
 The label template.
 Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -179,6 +226,10 @@ Template variables:
 
 ### visible
 The visibility of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemLabels`
+
 #### Parameters
 
 ##### $value `boolean`

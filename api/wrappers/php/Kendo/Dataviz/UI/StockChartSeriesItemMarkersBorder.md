@@ -1,6 +1,6 @@
 ---
 title: StockChartSeriesItemMarkersBorder
-slug: php-StockChartSeriesItemMarkersBorder
+slug: php-dataviz-ui-stockchartseriesitemmarkersborder
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the border setting of StockChartSeriesItemMarkers.
 
 ### color
 The color of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the border.
 
 ### width
 The width of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder`
+
 #### Parameters
 
 ##### $value `float`

@@ -1,6 +1,6 @@
 ---
 title: GridColumnMenu
-slug: php-GridColumnMenu
+slug: php-ui-gridcolumnmenu
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the columnMenu setting of Grid.
 
 ### columns
 Enable/disable columns section in column header menu.
+
+#### Returns
+`\Kendo\UI\GridColumnMenu`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -26,6 +30,10 @@ Enable/disable columns section in column header menu.
 
 ### filterable
 Enable/disable filter section in column header menu.
+
+#### Returns
+`\Kendo\UI\GridColumnMenu`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -38,14 +46,17 @@ Enable/disable filter section in column header menu.
 
 ### messages
 
+Sets the columnMenu messages.
+
+#### Returns
+`\Kendo\UI\GridColumnMenu`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridColumnMenuMessages|array`
 
-Sets the columnMenu messages.
 
-
-#### Example - using \Kendo\UI\GridColumnMenuMessages
+#### Example - using [\Kendo\UI\GridColumnMenuMessages](/api/wrappers/php/kendo/ui/gridcolumnmenumessages)
 
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $messages = new \Kendo\UI\GridColumnMenuMessages();
@@ -61,6 +72,10 @@ Sets the columnMenu messages.
 
 ### sortable
 Enable/disable sorting section in column header menu.
+
+#### Returns
+`\Kendo\UI\GridColumnMenu`
+
 #### Parameters
 
 ##### $value `boolean`

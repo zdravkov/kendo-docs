@@ -1,6 +1,6 @@
 ---
 title: DataSourceAggregateItem
-slug: php-DataSourceAggregateItem
+slug: php-data-datasourceaggregateitem
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the aggregateItem setting of DataSourceAggregate.
 
 ### aggregate
 Specifies the aggregate function. Possible values are: "min", "max", "count", "sum", "average"
+
+#### Returns
+`\Kendo\Data\DataSourceAggregateItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Specifies the aggregate function. Possible values are: "min", "max", "count", "s
 
 ### field
 Specifies the field on which the aggregate will be calculated.
+
+#### Returns
+`\Kendo\Data\DataSourceAggregateItem`
+
 #### Parameters
 
 ##### $value `string`

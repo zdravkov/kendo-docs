@@ -1,6 +1,6 @@
 ---
 title: StockChartPane
-slug: php-StockChartPane
+slug: php-dataviz-ui-stockchartpane
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the pane setting of StockChartPanes.
 
 ### background
 The background color of the pane.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,14 +30,17 @@ The background color of the pane.
 
 ### border
 
+The border of the pane.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartPaneBorder|array`
 
-The border of the pane.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartPaneBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartPaneBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartpaneborder)
 
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $border = new \Kendo\Dataviz\UI\StockChartPaneBorder();
@@ -49,6 +56,10 @@ The border of the pane.
 
 ### height
 The pane height in pixels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
 #### Parameters
 
 ##### $value `float`
@@ -61,6 +72,10 @@ The pane height in pixels.
 
 ### margin
 The margin of the pane.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
 #### Parameters
 
 ##### $value `float|`
@@ -73,6 +88,10 @@ The margin of the pane.
 
 ### name
 The unique pane name.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
 #### Parameters
 
 ##### $value `string`
@@ -85,6 +104,10 @@ The unique pane name.
 
 ### padding
 The padding of the pane.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
 #### Parameters
 
 ##### $value `float|`
@@ -97,11 +120,14 @@ The padding of the pane.
 
 ### title
 
+The pane title text or configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
 #### Parameters
 
 ##### $value `string|\Kendo\Dataviz\UI\StockChartPaneTitle|array`
-
-The pane title text or configuration.
 
 
 
@@ -111,7 +137,7 @@ The pane title text or configuration.
     $pane->title('value');
 
 
-#### Example - using \Kendo\Dataviz\UI\StockChartPaneTitle
+#### Example - using [\Kendo\Dataviz\UI\StockChartPaneTitle](/api/wrappers/php/kendo/dataviz/ui/stockchartpanetitle)
 
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $title = new \Kendo\Dataviz\UI\StockChartPaneTitle();

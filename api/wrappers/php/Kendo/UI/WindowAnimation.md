@@ -1,6 +1,6 @@
 ---
 title: WindowAnimation
-slug: php-WindowAnimation
+slug: php-ui-windowanimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of Window.
 
 ### close
 
+The animation that will be used when a Window closes.
+
+#### Returns
+`\Kendo\UI\WindowAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\WindowAnimationClose|array`
 
-The animation that will be used when a Window closes.
 
-
-#### Example - using \Kendo\UI\WindowAnimationClose
+#### Example - using [\Kendo\UI\WindowAnimationClose](/api/wrappers/php/kendo/ui/windowanimationclose)
 
     $animation = new \Kendo\UI\WindowAnimation();
     $close = new \Kendo\UI\WindowAnimationClose();
@@ -37,14 +40,17 @@ The animation that will be used when a Window closes.
 
 ### open
 
+The animation that will be used when a Window opens.
+
+#### Returns
+`\Kendo\UI\WindowAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\WindowAnimationOpen|array`
 
-The animation that will be used when a Window opens.
 
-
-#### Example - using \Kendo\UI\WindowAnimationOpen
+#### Example - using [\Kendo\UI\WindowAnimationOpen](/api/wrappers/php/kendo/ui/windowanimationopen)
 
     $animation = new \Kendo\UI\WindowAnimation();
     $open = new \Kendo\UI\WindowAnimationOpen();

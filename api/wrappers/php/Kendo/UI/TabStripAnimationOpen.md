@@ -1,6 +1,6 @@
 ---
 title: TabStripAnimationOpen
-slug: php-TabStripAnimationOpen
+slug: php-ui-tabstripanimationopen
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the open setting of TabStripAnimation.
 
 ### duration
 The number of milliseconds used for the visual animation when a new tab is shown.
+
+#### Returns
+`\Kendo\UI\TabStripAnimationOpen`
+
 #### Parameters
 
 ##### $value `float`
@@ -27,6 +31,10 @@ The number of milliseconds used for the visual animation when a new tab is shown
 ### effects
 A whitespace-separated string of animation effects that are used when a new tab is shown. Options include
 "expand:vertical" and "fadeIn".
+
+#### Returns
+`\Kendo\UI\TabStripAnimationOpen`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ A whitespace-separated string of animation effects that are used when a new tab 
     $open->effects('value');
 
 ### show
+
+
+#### Returns
+`\Kendo\UI\TabStripAnimationOpen`
 
 #### Parameters
 

@@ -1,6 +1,6 @@
 ---
 title: ChartValueAxisItemMinorTicks
-slug: php-ChartValueAxisItemMinorTicks
+slug: php-dataviz-ui-chartvalueaxisitemminorticks
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the minorTicks setting of ChartValueAxisItem.
 
 ### size
 The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ The axis minor tick size. This is the length of the line in pixels that is drawn
 
 ### visible
 The visibility of the minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks`
+
 #### Parameters
 
 ##### $value `boolean`

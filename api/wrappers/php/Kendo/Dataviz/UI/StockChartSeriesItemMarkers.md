@@ -1,6 +1,6 @@
 ---
 title: StockChartSeriesItemMarkers
-slug: php-StockChartSeriesItemMarkers
+slug: php-dataviz-ui-stockchartseriesitemmarkers
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the markers setting of StockChartSeriesItem.
 
 ### background
 The background color of the current series markers.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkers`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,14 +30,17 @@ The background color of the current series markers.
 
 ### border
 
+The border of the markers.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkers`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder|array`
 
-The border of the markers.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemmarkersborder)
 
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder();
@@ -49,6 +56,10 @@ The border of the markers.
 
 ### size
 The marker size.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkers`
+
 #### Parameters
 
 ##### $value `float`
@@ -61,6 +72,10 @@ The marker size.
 
 ### type
 Configures the markers shape type.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkers`
+
 #### Parameters
 
 ##### $value `string`
@@ -73,6 +88,10 @@ Configures the markers shape type.
 
 ### visible
 The markers visibility.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkers`
+
 #### Parameters
 
 ##### $value `boolean`

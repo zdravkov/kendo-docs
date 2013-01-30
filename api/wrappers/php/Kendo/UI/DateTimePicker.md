@@ -1,30 +1,53 @@
 ---
 title: DateTimePicker
-slug: php-DateTimePicker
+slug: php-ui-datetimepicker
 tags: api, php
 publish: true
 ---
 
 # \Kendo\UI\DateTimePicker
 
-A PHP class representing Kendo DateTimePicker.
+A PHP class representing Kendo [DateTimePicker](/api/web/datetimepicker).
+
+
+## Configuration
+
+To use DateTimePicker in a PHP page instantiate a new instance, configure it via the available
+configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
+
+### Using Kendo DateTimePicker
+
+    <?php
+    // Create a new instance of DateTimePicker and specify its id
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
+
+    // Configure it
+    $dateTimePicker->culture('value')
+
+    // Output it
+
+    echo $dateTimePicker->render();
+    ?>
 
 
 ## Methods
 
 ### animation
 
+The animation(s) used for opening and/or closing the pop-ups. Setting this value to false
+will disable the animation(s).
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\DateTimePickerAnimation|array`
 
-The animation(s) used for opening and/or closing the pop-ups. Setting this value to false
-will disable the animation(s).
 
+#### Example - using [\Kendo\UI\DateTimePickerAnimation](/api/wrappers/php/kendo/ui/datetimepickeranimation)
 
-#### Example - using \Kendo\UI\DateTimePickerAnimation
-
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $animation = new \Kendo\UI\DateTimePickerAnimation();
     $close = new \Kendo\UI\DateTimePickerAnimationClose();
     $animation->close($close);
@@ -32,19 +55,23 @@ will disable the animation(s).
 
 #### Example - using array
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $close = new \Kendo\UI\DateTimePickerAnimationClose();
     $dateTimePicker->animation(array('close' => $close));
 
 ### change
 Triggered when the underlying value of a DateTimePicker is changed.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->change('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -54,24 +81,28 @@ Triggered when the underlying value of a DateTimePicker is changed.
         }
     </script>
     <?php
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->change('onChange');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### close
 Fires when the calendar or the time drop-down list is closed
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->close('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -81,17 +112,21 @@ Fires when the calendar or the time drop-down list is closed
         }
     </script>
     <?php
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->close('onClose');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### culture
 Specifies the culture info used by the widget.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -99,11 +134,15 @@ Specifies the culture info used by the widget.
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->culture('value');
 
 ### dates
 Specifies a list of dates, which will be passed to the month template of the DateView. All dates, which match the date portion of the selected date will be used to re-bind the TimeView.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `array`
@@ -111,12 +150,16 @@ Specifies a list of dates, which will be passed to the month template of the Dat
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->dates(new array());
 
 ### depth
 Specifies the navigation depth of the calendar. The following
 settings are available for the depth value:
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -124,11 +167,15 @@ settings are available for the depth value:
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->depth('value');
 
 ### footer
 Template to be used for rendering the footer of the calendar.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -136,11 +183,15 @@ Template to be used for rendering the footer of the calendar.
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->footer('value');
 
 ### format
 Specifies the format, which is used to format the value of the DateTimePicker displayed in the input. The format also will be used to parse the input.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -148,11 +199,15 @@ Specifies the format, which is used to format the value of the DateTimePicker di
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->format('value');
 
 ### interval
 Specifies the interval, between values in the popup list, in minutes.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `float`
@@ -160,11 +215,15 @@ Specifies the interval, between values in the popup list, in minutes.
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->interval(1);
 
 ### max
 Specifies the maximum date, which the calendar can show.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `date`
@@ -172,11 +231,15 @@ Specifies the maximum date, which the calendar can show.
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->max(new date());
 
 ### min
 Specifies the minimum date that the calendar can show.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `date`
@@ -184,21 +247,24 @@ Specifies the minimum date that the calendar can show.
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->min(new date());
 
 ### month
+
+Templates for the cells rendered in the calendar "month" view.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
 
 #### Parameters
 
 ##### $value `\Kendo\UI\DateTimePickerMonth|array`
 
-Templates for the cells rendered in the calendar "month" view.
 
+#### Example - using [\Kendo\UI\DateTimePickerMonth](/api/wrappers/php/kendo/ui/datetimepickermonth)
 
-#### Example - using \Kendo\UI\DateTimePickerMonth
-
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $month = new \Kendo\UI\DateTimePickerMonth();
     $content = 'value';
     $month->content($content);
@@ -206,19 +272,23 @@ Templates for the cells rendered in the calendar "month" view.
 
 #### Example - using array
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $content = 'value';
     $dateTimePicker->month(array('content' => $content));
 
 ### open
 Fires when the calendar or the time drop-down list is opened
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->open('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -228,17 +298,21 @@ Fires when the calendar or the time drop-down list is opened
         }
     </script>
     <?php
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->open('onOpen');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### parseFormats
 Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the options.format and options.timeFormat will be used. Note that value of the format option is always used.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `array`
@@ -246,12 +320,16 @@ Specifies the formats, which are used to parse the value set with value() method
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->parseFormats(new array());
 
 ### start
 Specifies the start view of the calendar.
 The following settings are available for the start value:
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -259,11 +337,15 @@ The following settings are available for the start value:
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->start('value');
 
 ### timeFormat
 Specifies the format, which is used to format the values in the time drop-down list.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -271,11 +353,15 @@ Specifies the format, which is used to format the values in the time drop-down l
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->timeFormat('value');
 
 ### value
 Specifies the selected value.
+
+#### Returns
+`\Kendo\UI\DateTimePicker`
+
 #### Parameters
 
 ##### $value `date`
@@ -283,6 +369,6 @@ Specifies the selected value.
 
 
 #### Example 
-    $dateTimePicker = new \Kendo\UI\DateTimePicker();
+    $dateTimePicker = new \Kendo\UI\DateTimePicker('DateTimePicker');
     $dateTimePicker->value(new date());
 

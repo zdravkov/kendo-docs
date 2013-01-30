@@ -1,6 +1,6 @@
 ---
 title: GridFilterableOperatorsEnums
-slug: php-GridFilterableOperatorsEnums
+slug: php-ui-gridfilterableoperatorsenums
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the enums setting of GridFilterableOperators.
 
 ### eq
 Enable/Disable and set the text of the "Is equal to" filter option for foreign key columns.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsEnums`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Enable/Disable and set the text of the "Is equal to" filter option for foreign k
 
 ### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for foreign key columns.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsEnums`
+
 #### Parameters
 
 ##### $value `string`

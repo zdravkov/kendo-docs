@@ -1,6 +1,6 @@
 ---
 title: TooltipAnimationOpen
-slug: php-TooltipAnimationOpen
+slug: php-ui-tooltipanimationopen
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the open setting of TooltipAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\TooltipAnimationOpen`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for opening of the Tooltip.
+
+#### Returns
+`\Kendo\UI\TooltipAnimationOpen`
+
 #### Parameters
 
 ##### $value `string`

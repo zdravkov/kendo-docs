@@ -1,6 +1,6 @@
 ---
 title: ChartYAxisItemLabelsBorder
-slug: php-ChartYAxisItemLabelsBorder
+slug: php-dataviz-ui-chartyaxisitemlabelsborder
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the border setting of ChartYAxisItemLabels.
 ### color
 The color of the border. Any valid CSS color string will work here, including
 hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartYAxisItemLabelsBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ hex and rgb.
 
 ### dashType
 The dash type of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartYAxisItemLabelsBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -39,6 +47,10 @@ The dash type of the border.
 
 ### width
 The width of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartYAxisItemLabelsBorder`
+
 #### Parameters
 
 ##### $value `float`

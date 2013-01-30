@@ -1,6 +1,6 @@
 ---
 title: UploadLocalization
-slug: php-UploadLocalization
+slug: php-ui-uploadlocalization
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the localization setting of Upload.
 
 ### cancel
 Sets the text of the cancel button text.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Sets the text of the cancel button text.
 
 ### dropFilesHere
 Sets the drop zone hint.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Sets the drop zone hint.
 
 ### remove
 Sets the text of the remove button text.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Sets the text of the remove button text.
 
 ### retry
 Sets the text of the retry button text.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +78,10 @@ Sets the text of the retry button text.
 
 ### select
 Sets the "Select..." button text.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Sets the "Select..." button text.
 
 ### statusFailed
 Sets the status message for failed uploads.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -86,6 +110,10 @@ Sets the status message for failed uploads.
 
 ### statusUploaded
 Sets the status message for uploaded files.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -98,6 +126,10 @@ Sets the status message for uploaded files.
 
 ### statusUploading
 Sets the status message for files that are being uploaded.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`
@@ -110,6 +142,10 @@ Sets the status message for files that are being uploaded.
 
 ### uploadSelectedFiles
 Sets the text of the "Upload files" button.
+
+#### Returns
+`\Kendo\UI\UploadLocalization`
+
 #### Parameters
 
 ##### $value `string`

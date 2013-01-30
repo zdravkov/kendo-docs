@@ -1,6 +1,6 @@
 ---
 title: StockChartNavigator
-slug: php-StockChartNavigator
+slug: php-dataviz-ui-stockchartnavigator
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the navigator setting of StockChart.
 ### autoBind
 Indicates whether the navigator will call read on the data source initially.
 Applicable only when using a dedicated navigator data source.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigator`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -29,11 +33,14 @@ Applicable only when using a dedicated navigator data source.
 
 Sets the data source of the dataSource.
 
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigator`
+
 #### Parameters
 
 ##### $value `\Kendo\Data\DataSource|array`
 
-#### Example - using \Kendo\Data\DataSource
+#### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $dataSource = new \Kendo\Data\DataSource();
@@ -48,6 +55,10 @@ Sets the data source of the dataSource.
 ### dateField
 The field containing the point date.
 It is used as a default field for the navigator axis.The data item field value must be either:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigator`
+
 #### Parameters
 
 ##### $value `string`
@@ -60,14 +71,17 @@ It is used as a default field for the navigator axis.The data item field value m
 
 ### hint
 
+Default options for the navigator hint.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigator`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartNavigatorHint|array`
 
-Default options for the navigator hint.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartNavigatorHint
+#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorHint](/api/wrappers/php/kendo/dataviz/ui/stockchartnavigatorhint)
 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $hint = new \Kendo\Dataviz\UI\StockChartNavigatorHint();
@@ -83,14 +97,17 @@ Default options for the navigator hint.
 
 ### select
 
+Specifies the initially selected range.The full range of values is shown if no range is specified.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigator`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartNavigatorSelect|array`
 
-Specifies the initially selected range.The full range of values is shown if no range is specified.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartNavigatorSelect
+#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorSelect](/api/wrappers/php/kendo/dataviz/ui/stockchartnavigatorselect)
 
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $select = new \Kendo\Dataviz\UI\StockChartNavigatorSelect();
@@ -107,6 +124,9 @@ Specifies the initially selected range.The full range of values is shown if no r
 ### addSeriesItem
 
 Adds one or more StockChartNavigatorSeriesItem to the StockChartNavigator.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigator`
 
 #### Parameters
 
@@ -135,6 +155,10 @@ Adds one or more StockChartNavigatorSeriesItem to the StockChartNavigator.
 
 ### visible
 The visibility of the navigator.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigator`
+
 #### Parameters
 
 ##### $value `boolean`

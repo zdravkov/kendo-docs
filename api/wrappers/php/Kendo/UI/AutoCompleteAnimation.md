@@ -1,6 +1,6 @@
 ---
 title: AutoCompleteAnimation
-slug: php-AutoCompleteAnimation
+slug: php-ui-autocompleteanimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of AutoComplete.
 
 ### close
 
+Animation to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\AutoCompleteAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\AutoCompleteAnimationClose|array`
 
-Animation to be used for closing of the popup.
 
-
-#### Example - using \Kendo\UI\AutoCompleteAnimationClose
+#### Example - using [\Kendo\UI\AutoCompleteAnimationClose](/api/wrappers/php/kendo/ui/autocompleteanimationclose)
 
     $animation = new \Kendo\UI\AutoCompleteAnimation();
     $close = new \Kendo\UI\AutoCompleteAnimationClose();
@@ -37,14 +40,17 @@ Animation to be used for closing of the popup.
 
 ### open
 
+Animation to be used for opening of the popup.
+
+#### Returns
+`\Kendo\UI\AutoCompleteAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\AutoCompleteAnimationOpen|array`
 
-Animation to be used for opening of the popup.
 
-
-#### Example - using \Kendo\UI\AutoCompleteAnimationOpen
+#### Example - using [\Kendo\UI\AutoCompleteAnimationOpen](/api/wrappers/php/kendo/ui/autocompleteanimationopen)
 
     $animation = new \Kendo\UI\AutoCompleteAnimation();
     $open = new \Kendo\UI\AutoCompleteAnimationOpen();

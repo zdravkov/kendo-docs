@@ -1,6 +1,6 @@
 ---
 title: StockChartTitle
-slug: php-StockChartTitle
+slug: php-dataviz-ui-stockcharttitle
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the title setting of StockChart.
 
 ### align
 The alignment of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The alignment of the title.
 
 ### background
 The background color of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,14 +46,17 @@ The background color of the title.
 
 ### border
 
+The border of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartTitleBorder|array`
 
-The border of the title.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartTitleBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartTitleBorder](/api/wrappers/php/kendo/dataviz/ui/stockcharttitleborder)
 
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $border = new \Kendo\Dataviz\UI\StockChartTitleBorder();
@@ -61,6 +72,10 @@ The border of the title.
 
 ### font
 The font of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -73,6 +88,10 @@ The font of the title.
 
 ### margin
 The margin of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `float|`
@@ -85,6 +104,10 @@ The margin of the title.
 
 ### padding
 The padding of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `float|`
@@ -97,6 +120,10 @@ The padding of the title.
 
 ### position
 The position of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -109,6 +136,10 @@ The position of the title.
 
 ### text
 The title of the chart. You can also set the text directly for a title with default options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -121,6 +152,10 @@ The title of the chart. You can also set the text directly for a title with defa
 
 ### visible
 The visibility of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartTitle`
+
 #### Parameters
 
 ##### $value `boolean`

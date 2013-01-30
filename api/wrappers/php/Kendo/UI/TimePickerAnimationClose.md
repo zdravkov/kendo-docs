@@ -1,6 +1,6 @@
 ---
 title: TimePickerAnimationClose
-slug: php-TimePickerAnimationClose
+slug: php-ui-timepickeranimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of TimePickerAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\TimePickerAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\TimePickerAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

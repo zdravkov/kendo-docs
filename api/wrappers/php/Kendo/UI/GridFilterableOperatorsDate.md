@@ -1,6 +1,6 @@
 ---
 title: GridFilterableOperatorsDate
-slug: php-GridFilterableOperatorsDate
+slug: php-ui-gridfilterableoperatorsdate
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the date setting of GridFilterableOperators.
 
 ### eq
 Enable/Disable and set the text of the "Is equal to" filter option for columns with date values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsDate`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Enable/Disable and set the text of the "Is equal to" filter option for columns w
 
 ### gt
 Enable/Disable and set the text of the "Is after" filter option for columns with date values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsDate`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Enable/Disable and set the text of the "Is after" filter option for columns with
 
 ### gte
 Enable/Disable and set the text of the "Is after or equal to" filter option for columns with date values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsDate`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Enable/Disable and set the text of the "Is after or equal to" filter option for 
 
 ### lt
 Enable/Disable and set the text of the "Is before" filter option for columns with date values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsDate`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +78,10 @@ Enable/Disable and set the text of the "Is before" filter option for columns wit
 
 ### lte
 Enable/Disable and set the text of the "Is before or equal to" filter option for columns with date values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsDate`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Enable/Disable and set the text of the "Is before or equal to" filter option for
 
 ### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for columns with date values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsDate`
+
 #### Parameters
 
 ##### $value `string`

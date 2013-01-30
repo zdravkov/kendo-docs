@@ -1,6 +1,6 @@
 ---
 title: EditorImageBrowserSchemaModelFieldsType
-slug: php-EditorImageBrowserSchemaModelFieldsType
+slug: php-ui-editorimagebrowserschemamodelfieldstype
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the type setting of EditorImageBrowserSchemaModelFields
 
 ### field
 The name of the field.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserSchemaModelFieldsType`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The name of the field.
 
 ### parse
 Specifies the function which will parse the field value. If not set default parsers will be used.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserSchemaModelFieldsType`
+
 #### Parameters
 
 ##### $value `\Kendo\JavaScriptFunction`

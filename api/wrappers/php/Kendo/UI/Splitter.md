@@ -1,26 +1,50 @@
 ---
 title: Splitter
-slug: php-Splitter
+slug: php-ui-splitter
 tags: api, php
 publish: true
 ---
 
 # \Kendo\UI\Splitter
 
-A PHP class representing Kendo Splitter.
+A PHP class representing Kendo [Splitter](/api/web/splitter).
+
+
+## Configuration
+
+To use Splitter in a PHP page instantiate a new instance, configure it via the available
+configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
+
+### Using Kendo Splitter
+
+    <?php
+    // Create a new instance of Splitter and specify its id
+    $splitter = new \Kendo\UI\Splitter('Splitter');
+
+    // Configure it
+    $splitter->orientation('value')
+
+    // Output it
+
+    echo $splitter->render();
+    ?>
 
 
 ## Methods
 
 ### collapse
 Triggered when a pane of a Splitter is collapsed.
+
+#### Returns
+`\Kendo\UI\Splitter`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->collapse('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -30,24 +54,28 @@ Triggered when a pane of a Splitter is collapsed.
         }
     </script>
     <?php
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->collapse('onCollapse');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->collapse(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### contentLoad
 Triggered when the content for a pane has finished loading.
+
+#### Returns
+`\Kendo\UI\Splitter`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->contentLoad('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -57,24 +85,28 @@ Triggered when the content for a pane has finished loading.
         }
     </script>
     <?php
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->contentLoad('onContentLoad');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->contentLoad(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### expand
 Triggered when a pane of a Splitter is expanded.
+
+#### Returns
+`\Kendo\UI\Splitter`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->expand('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -84,24 +116,28 @@ Triggered when a pane of a Splitter is expanded.
         }
     </script>
     <?php
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->expand('onExpand');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->expand(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### layoutChange
 Fires when the splitter layout has changed
+
+#### Returns
+`\Kendo\UI\Splitter`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->layoutChange('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -111,17 +147,21 @@ Fires when the splitter layout has changed
         }
     </script>
     <?php
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->layoutChange('onLayoutChange');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->layoutChange(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### orientation
 Specifies the orientation of the Splitter.
+
+#### Returns
+`\Kendo\UI\Splitter`
+
 #### Parameters
 
 ##### $value `string`
@@ -129,12 +169,15 @@ Specifies the orientation of the Splitter.
 
 
 #### Example 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->orientation('value');
 
 ### addPane
 
 Adds one or more SplitterPane to the Splitter.
+
+#### Returns
+`\Kendo\UI\Splitter`
 
 #### Parameters
 
@@ -142,7 +185,7 @@ Adds one or more SplitterPane to the Splitter.
 
 #### Example - using \Kendo\UI\SplitterPane
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $pane = new \Kendo\UI\SplitterPane();
     $collapsed = true;
     $pane->collapsed($collapsed);
@@ -150,26 +193,30 @@ Adds one or more SplitterPane to the Splitter.
 
 #### Example - using array
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $collapsed = true;
     $splitter->addPane(array('collapsed' => $collapsed));
 
 #### Example - adding more than one SplitterPane
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $first  = new \Kendo\UI\SplitterPane();
     $second = new \Kendo\UI\SplitterPane();
     $splitter->addPane($first, $second);
 
 ### resize
 Triggered when a pane is resized.
+
+#### Returns
+`\Kendo\UI\Splitter`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->resize('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -179,12 +226,12 @@ Triggered when a pane is resized.
         }
     </script>
     <?php
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->resize('onResize');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $splitter = new \Kendo\UI\Splitter();
+    $splitter = new \Kendo\UI\Splitter('Splitter');
     $splitter->resize(new \Kendo\JavaScriptFunction('function(e) { }'));
 

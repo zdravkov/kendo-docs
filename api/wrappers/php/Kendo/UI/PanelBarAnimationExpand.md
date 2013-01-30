@@ -1,6 +1,6 @@
 ---
 title: PanelBarAnimationExpand
-slug: php-PanelBarAnimationExpand
+slug: php-ui-panelbaranimationexpand
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the expand setting of PanelBarAnimation.
 
 ### duration
 The number of milliseconds used for the visual animation when an item is opened.
+
+#### Returns
+`\Kendo\UI\PanelBarAnimationExpand`
+
 #### Parameters
 
 ##### $value `float`
@@ -27,6 +31,10 @@ The number of milliseconds used for the visual animation when an item is opened.
 ### effects
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
 "expandVertical" and "fadeIn".
+
+#### Returns
+`\Kendo\UI\PanelBarAnimationExpand`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ A whitespace-delimited string of animation effects that are used when an item is
     $expand->effects('value');
 
 ### show
+
+
+#### Returns
+`\Kendo\UI\PanelBarAnimationExpand`
 
 #### Parameters
 

@@ -1,30 +1,53 @@
 ---
 title: DatePicker
-slug: php-DatePicker
+slug: php-ui-datepicker
 tags: api, php
 publish: true
 ---
 
 # \Kendo\UI\DatePicker
 
-A PHP class representing Kendo DatePicker.
+A PHP class representing Kendo [DatePicker](/api/web/datepicker).
+
+
+## Configuration
+
+To use DatePicker in a PHP page instantiate a new instance, configure it via the available
+configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
+
+### Using Kendo DatePicker
+
+    <?php
+    // Create a new instance of DatePicker and specify its id
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
+
+    // Configure it
+    $datePicker->culture('value')
+
+    // Output it
+
+    echo $datePicker->render();
+    ?>
 
 
 ## Methods
 
 ### animation
 
+The animation(s) used for opening and/or closing the pop-up. Setting this value to false
+will disable the animation(s).
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\DatePickerAnimation|array`
 
-The animation(s) used for opening and/or closing the pop-up. Setting this value to false
-will disable the animation(s).
 
+#### Example - using [\Kendo\UI\DatePickerAnimation](/api/wrappers/php/kendo/ui/datepickeranimation)
 
-#### Example - using \Kendo\UI\DatePickerAnimation
-
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $animation = new \Kendo\UI\DatePickerAnimation();
     $close = new \Kendo\UI\DatePickerAnimationClose();
     $animation->close($close);
@@ -32,19 +55,23 @@ will disable the animation(s).
 
 #### Example - using array
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $close = new \Kendo\UI\DatePickerAnimationClose();
     $datePicker->animation(array('close' => $close));
 
 ### change
 Fires when the selected date is changed
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->change('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -54,24 +81,28 @@ Fires when the selected date is changed
         }
     </script>
     <?php
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->change('onChange');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### close
 Fires when the calendar is closed
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->close('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -81,17 +112,21 @@ Fires when the calendar is closed
         }
     </script>
     <?php
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->close('onClose');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### culture
 Specifies the culture info used by the widget.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -99,11 +134,15 @@ Specifies the culture info used by the widget.
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->culture('value');
 
 ### dates
 Specifies a list of dates, which will be passed to the month template.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `array`
@@ -111,12 +150,16 @@ Specifies a list of dates, which will be passed to the month template.
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->dates(new array());
 
 ### depth
 Specifies the navigation depth. The following
 settings are available for the depth value:
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -124,11 +167,15 @@ settings are available for the depth value:
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->depth('value');
 
 ### footer
 Template to be used for rendering the footer of the calendar.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -136,11 +183,15 @@ Template to be used for rendering the footer of the calendar.
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->footer('value');
 
 ### format
 Specifies the format, which is used to format the value of the DatePicker displayed in the input. The format also will be used to parse the input.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -148,11 +199,15 @@ Specifies the format, which is used to format the value of the DatePicker displa
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->format('value');
 
 ### max
 Specifies the maximum date, which the calendar can show.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `date`
@@ -160,11 +215,15 @@ Specifies the maximum date, which the calendar can show.
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->max(new date());
 
 ### min
 Specifies the minimum date that the calendar can show.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `date`
@@ -172,21 +231,24 @@ Specifies the minimum date that the calendar can show.
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->min(new date());
 
 ### month
+
+Templates for the cells rendered in the calendar "month" view.
+
+#### Returns
+`\Kendo\UI\DatePicker`
 
 #### Parameters
 
 ##### $value `\Kendo\UI\DatePickerMonth|array`
 
-Templates for the cells rendered in the calendar "month" view.
 
+#### Example - using [\Kendo\UI\DatePickerMonth](/api/wrappers/php/kendo/ui/datepickermonth)
 
-#### Example - using \Kendo\UI\DatePickerMonth
-
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $month = new \Kendo\UI\DatePickerMonth();
     $content = 'value';
     $month->content($content);
@@ -194,19 +256,23 @@ Templates for the cells rendered in the calendar "month" view.
 
 #### Example - using array
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $content = 'value';
     $datePicker->month(array('content' => $content));
 
 ### open
 Fires when the calendar is opened
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->open('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -216,17 +282,21 @@ Fires when the calendar is opened
         }
     </script>
     <?php
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->open('onOpen');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->open(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### parseFormats
 Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the format will be used. Note that value of the format option is always used.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `array`
@@ -234,12 +304,16 @@ Specifies the formats, which are used to parse the value set with value() method
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->parseFormats(new array());
 
 ### start
 Specifies the start view.
 The following settings are available for the start value:
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `string`
@@ -247,11 +321,15 @@ The following settings are available for the start value:
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->start('value');
 
 ### value
 Specifies the selected date.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
 #### Parameters
 
 ##### $value `date`
@@ -259,6 +337,6 @@ Specifies the selected date.
 
 
 #### Example 
-    $datePicker = new \Kendo\UI\DatePicker();
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
     $datePicker->value(new date());
 

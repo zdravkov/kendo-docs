@@ -1,6 +1,6 @@
 ---
 title: LinearGaugeGaugeArea
-slug: php-LinearGaugeGaugeArea
+slug: php-dataviz-ui-lineargaugegaugearea
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the gaugeArea setting of LinearGauge.
 ### background
 The background of the gauge area.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value ``
@@ -23,14 +27,17 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### border
 
+The border of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugeGaugeAreaBorder|array`
 
-The border of the gauge area.
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugeGaugeAreaBorder
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugeGaugeAreaBorder](/api/wrappers/php/kendo/dataviz/ui/lineargaugegaugeareaborder)
 
     $gaugeArea = new \Kendo\Dataviz\UI\LinearGaugeGaugeArea();
     $border = new \Kendo\Dataviz\UI\LinearGaugeGaugeAreaBorder();
@@ -46,6 +53,10 @@ The border of the gauge area.
 
 ### height
 The height of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `float`
@@ -58,6 +69,10 @@ The height of the gauge area.
 
 ### margin
 The margin of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `float|`
@@ -70,6 +85,10 @@ The margin of the gauge area.
 
 ### width
 The width of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `float`

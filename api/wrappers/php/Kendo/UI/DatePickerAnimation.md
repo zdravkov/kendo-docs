@@ -1,6 +1,6 @@
 ---
 title: DatePickerAnimation
-slug: php-DatePickerAnimation
+slug: php-ui-datepickeranimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of DatePicker.
 
 ### close
 
+The animation(s) used for hiding of the pop-up.
+
+#### Returns
+`\Kendo\UI\DatePickerAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\DatePickerAnimationClose|array`
 
-The animation(s) used for hiding of the pop-up.
 
-
-#### Example - using \Kendo\UI\DatePickerAnimationClose
+#### Example - using [\Kendo\UI\DatePickerAnimationClose](/api/wrappers/php/kendo/ui/datepickeranimationclose)
 
     $animation = new \Kendo\UI\DatePickerAnimation();
     $close = new \Kendo\UI\DatePickerAnimationClose();
@@ -37,14 +40,17 @@ The animation(s) used for hiding of the pop-up.
 
 ### open
 
+The animation(s) used for displaying of the pop-up.
+
+#### Returns
+`\Kendo\UI\DatePickerAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\DatePickerAnimationOpen|array`
 
-The animation(s) used for displaying of the pop-up.
 
-
-#### Example - using \Kendo\UI\DatePickerAnimationOpen
+#### Example - using [\Kendo\UI\DatePickerAnimationOpen](/api/wrappers/php/kendo/ui/datepickeranimationopen)
 
     $animation = new \Kendo\UI\DatePickerAnimation();
     $open = new \Kendo\UI\DatePickerAnimationOpen();

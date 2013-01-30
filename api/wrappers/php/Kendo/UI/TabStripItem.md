@@ -1,6 +1,6 @@
 ---
 title: TabStripItem
-slug: php-TabStripItem
+slug: php-ui-tabstripitem
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the item setting of TabStripItems.
 
 ### contentUrl
 Specifies the url from which the item content will be loaded
+
+#### Returns
+`\Kendo\UI\TabStripItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Specifies the url from which the item content will be loaded
 
 ### enabled
 Specifies whether the item is initially enabled
+
+#### Returns
+`\Kendo\UI\TabStripItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -38,6 +46,10 @@ Specifies whether the item is initially enabled
 
 ### imageUrl
 Specifies the URL of the image displayed by the item
+
+#### Returns
+`\Kendo\UI\TabStripItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Specifies the URL of the image displayed by the item
 
 ### selected
 Specifies whether the item is initially selected
+
+#### Returns
+`\Kendo\UI\TabStripItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -62,6 +78,10 @@ Specifies whether the item is initially selected
 
 ### spriteCssClass
 Specifies the class name for the sprite image displayed by the item
+
+#### Returns
+`\Kendo\UI\TabStripItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Specifies the class name for the sprite image displayed by the item
 
 ### text
 Specifies the text displayed by the item
+
+#### Returns
+`\Kendo\UI\TabStripItem`
+
 #### Parameters
 
 ##### $value `string`

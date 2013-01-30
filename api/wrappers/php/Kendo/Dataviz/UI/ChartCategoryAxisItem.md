@@ -1,6 +1,6 @@
 ---
 title: ChartCategoryAxisItem
-slug: php-ChartCategoryAxisItem
+slug: php-dataviz-ui-chartcategoryaxisitem
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the categoryAxisItem setting of ChartCategoryAxis.
 ### autoBaseUnitSteps
 Specifies the discrete baseUnitStep values when
 either baseUnit is set to "fit" or baseUnitStep is set to "auto".The default configuration is as follows:Each setting can be overriden individually.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value ``
@@ -24,6 +28,10 @@ either baseUnit is set to "fit" or baseUnitStep is set to "auto".The default con
 ### axisCrossingValue
 Category index at which the first value axis crosses this axis. (Only for object)Category indicies at which the value axes cross the category axis. (Only for array)Note: Specify an index greater than or equal to the number
 of categories to denote the far end of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `|date|array`
@@ -48,6 +56,10 @@ The default baseUnit is determined automatically from the minimum difference
 between subsequent categories. Available options:Setting baseUnit to "fit" will set such base unit and baseUnitStep
 that the total number of categories does not exceed maxDateGroups.Series data is aggregated for the specified base unit by using the
 series.aggregate function.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -61,6 +73,10 @@ series.aggregate function.
 ### baseUnitStep
 Sets the step (interval) between categories in base units.
 Specifiying "auto" will set the step to such value that the total number of categories does not exceed maxDateGroups.This option is ignored if baseUnit is set to "fit".
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value ``
@@ -69,6 +85,10 @@ Specifiying "auto" will set the step to such value that the total number of cate
 
 ### categories
 Array of category names.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `array`
@@ -82,6 +102,10 @@ Array of category names.
 ### color
 Color to apply to all axis elements. Any valid CSS color string will work here, including hex and rgb.
 Individual color settings for line and labels take priority.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -94,6 +118,10 @@ Individual color settings for line and labels take priority.
 
 ### field
 The data field containing the category name.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -106,6 +134,10 @@ The data field containing the category name.
 
 ### justified
 Positions categories and series points on major ticks. This removes the empty space before and after the series.This option is ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -118,14 +150,17 @@ Positions categories and series points on major ticks. This removes the empty sp
 
 ### labels
 
+Configures the axis labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemLabels|array`
 
-Configures the axis labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartCategoryAxisItemLabels
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemLabels](/api/wrappers/php/kendo/dataviz/ui/chartcategoryaxisitemlabels)
 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $labels = new \Kendo\Dataviz\UI\ChartCategoryAxisItemLabels();
@@ -141,14 +176,17 @@ Configures the axis labels.
 
 ### line
 
+Configures the axis line. This will also effect major and minor ticks, but not gridlines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemLine|array`
 
-Configures the axis line. This will also effect major and minor ticks, but not gridlines.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartCategoryAxisItemLine
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemLine](/api/wrappers/php/kendo/dataviz/ui/chartcategoryaxisitemline)
 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $line = new \Kendo\Dataviz\UI\ChartCategoryAxisItemLine();
@@ -164,15 +202,18 @@ Configures the axis line. This will also effect major and minor ticks, but not g
 
 ### majorGridLines
 
+Configures the major grid lines. These are the lines that are an extension of the major ticks through the
+body of the chart.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines|array`
 
-Configures the major grid lines. These are the lines that are an extension of the major ticks through the
-body of the chart.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines](/api/wrappers/php/kendo/dataviz/ui/chartcategoryaxisitemmajorgridlines)
 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $majorGridLines = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines();
@@ -188,14 +229,17 @@ body of the chart.
 
 ### majorTicks
 
+The major ticks of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorTicks|array`
 
-The major ticks of the axis.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorTicks
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemMajorTicks](/api/wrappers/php/kendo/dataviz/ui/chartcategoryaxisitemmajorticks)
 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $majorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorTicks();
@@ -214,6 +258,10 @@ The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
 This is often used in combination with the min and roundToBaseUnit configuration options to
 set up a fixed date range.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value ``
@@ -223,6 +271,10 @@ set up a fixed date range.
 ### maxDateGroups
 Specifies the maximum number of groups (categories) to produce when
 either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `float`
@@ -238,6 +290,10 @@ The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
 This is often used in combination with the max and roundToBaseUnit configuration options to
 set up a fixed date range.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value ``
@@ -246,15 +302,18 @@ set up a fixed date range.
 
 ### minorGridLines
 
+Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
+the body of the chart.Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid lines visibility being set to true.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines|array`
 
-Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
-the body of the chart.Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid lines visibility being set to true.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines](/api/wrappers/php/kendo/dataviz/ui/chartcategoryaxisitemminorgridlines)
 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $minorGridLines = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorGridLines();
@@ -270,14 +329,17 @@ the body of the chart.Note that minor grid lines are not visible by default, the
 
 ### minorTicks
 
+The minor ticks of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks|array`
 
-The minor ticks of the axis.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks](/api/wrappers/php/kendo/dataviz/ui/chartcategoryaxisitemminorticks)
 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $minorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks();
@@ -293,6 +355,10 @@ The minor ticks of the axis.
 
 ### name
 The unique axis name.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -306,6 +372,10 @@ The unique axis name.
 ### pane
 The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -319,6 +389,9 @@ The axis will be rendered in the first (default) pane if not set.
 ### addPlotBand
 
 Adds one or more ChartCategoryAxisItemPlotBand to the ChartCategoryAxisItem.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
 
 #### Parameters
 
@@ -348,6 +421,10 @@ Adds one or more ChartCategoryAxisItemPlotBand to the ChartCategoryAxisItem.
 ### reverse
 Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -361,6 +438,10 @@ categories are listed from right to left and from top to bottom.
 ### roundToBaseUnit
 By default, the first and last dates will be rounded off to the nearest base unit.
 Specifying false for this option will disable this behavior.This option is most useful in combination with explicit min and max dates.It will be ignored if either bar, column, ohlc or candlestick series are plotted on the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -373,14 +454,17 @@ Specifying false for this option will disable this behavior.This option is most 
 
 ### title
 
+The title of the category axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemTitle|array`
 
-The title of the category axis.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartCategoryAxisItemTitle
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemTitle](/api/wrappers/php/kendo/dataviz/ui/chartcategoryaxisitemtitle)
 
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $title = new \Kendo\Dataviz\UI\ChartCategoryAxisItemTitle();
@@ -396,6 +480,10 @@ The title of the category axis.
 
 ### type
 The axis type.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -408,6 +496,10 @@ The axis type.
 
 ### visible
 The visibility of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -421,6 +513,10 @@ The visibility of the axis.
 ### weekStartDay
 Specifies the week start day when baseUnit is set to "weeks".
 Use the kendo.days constants to specify the day by name.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
 #### Parameters
 
 ##### $value `float`

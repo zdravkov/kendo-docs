@@ -1,6 +1,6 @@
 ---
 title: TreeViewAnimationExpand
-slug: php-TreeViewAnimationExpand
+slug: php-ui-treeviewanimationexpand
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the expand setting of TreeViewAnimation.
 ### duration
 The number of milliseconds used for the animation when a
 node is expanded.
+
+#### Returns
+`\Kendo\UI\TreeViewAnimationExpand`
+
 #### Parameters
 
 ##### $value `float`
@@ -28,6 +32,10 @@ node is expanded.
 ### effects
 A whitespace-delimited string of animation effects that are utilized when a TreeView node
 is expanded. Options include "expandVertical" and "fadeIn".
+
+#### Returns
+`\Kendo\UI\TreeViewAnimationExpand`
+
 #### Parameters
 
 ##### $value `string`
@@ -39,6 +47,10 @@ is expanded. Options include "expandVertical" and "fadeIn".
     $expand->effects('value');
 
 ### show
+
+
+#### Returns
+`\Kendo\UI\TreeViewAnimationExpand`
 
 #### Parameters
 

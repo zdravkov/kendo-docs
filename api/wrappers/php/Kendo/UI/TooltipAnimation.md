@@ -1,6 +1,6 @@
 ---
 title: TooltipAnimation
-slug: php-TooltipAnimation
+slug: php-ui-tooltipanimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of Tooltip.
 
 ### close
 
+The animation that will be used when a Tooltip closes.
+
+#### Returns
+`\Kendo\UI\TooltipAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\TooltipAnimationClose|array`
 
-The animation that will be used when a Tooltip closes.
 
-
-#### Example - using \Kendo\UI\TooltipAnimationClose
+#### Example - using [\Kendo\UI\TooltipAnimationClose](/api/wrappers/php/kendo/ui/tooltipanimationclose)
 
     $animation = new \Kendo\UI\TooltipAnimation();
     $close = new \Kendo\UI\TooltipAnimationClose();
@@ -37,14 +40,17 @@ The animation that will be used when a Tooltip closes.
 
 ### open
 
+The animation that will be used when a Tooltip opens.
+
+#### Returns
+`\Kendo\UI\TooltipAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\TooltipAnimationOpen|array`
 
-The animation that will be used when a Tooltip opens.
 
-
-#### Example - using \Kendo\UI\TooltipAnimationOpen
+#### Example - using [\Kendo\UI\TooltipAnimationOpen](/api/wrappers/php/kendo/ui/tooltipanimationopen)
 
     $animation = new \Kendo\UI\TooltipAnimation();
     $open = new \Kendo\UI\TooltipAnimationOpen();

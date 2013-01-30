@@ -1,6 +1,6 @@
 ---
 title: StockChartSeriesItemHighlight
-slug: php-StockChartSeriesItemHighlight
+slug: php-dataviz-ui-stockchartseriesitemhighlight
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the highlight setting of StockChartSeriesItem.
 
 ### border
 
+The border of highlighted points. The color is computed automatically from the base point color.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemHighlightBorder|array`
 
-The border of highlighted points. The color is computed automatically from the base point color.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemHighlightBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemHighlightBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemhighlightborder)
 
     $highlight = new \Kendo\Dataviz\UI\StockChartSeriesItemHighlight();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemHighlightBorder();
@@ -37,6 +40,10 @@ The border of highlighted points. The color is computed automatically from the b
 
 ### color
 The highlight color.** Available only for pie series **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `string`
@@ -49,14 +56,17 @@ The highlight color.** Available only for pie series **
 
 ### line
 
+Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemHighlightLine|array`
 
-Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesItemHighlightLine
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemHighlightLine](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesitemhighlightline)
 
     $highlight = new \Kendo\Dataviz\UI\StockChartSeriesItemHighlight();
     $line = new \Kendo\Dataviz\UI\StockChartSeriesItemHighlightLine();
@@ -72,6 +82,10 @@ Line options for highlighted points. The color is computed automatically from th
 
 ### opacity
 The opacity of the highlighted points.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `float`

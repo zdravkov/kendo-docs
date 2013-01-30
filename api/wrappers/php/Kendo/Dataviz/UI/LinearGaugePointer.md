@@ -1,6 +1,6 @@
 ---
 title: LinearGaugePointer
-slug: php-LinearGaugePointer
+slug: php-dataviz-ui-lineargaugepointer
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the pointer setting of LinearGauge.
 
 ### border
 
+The border of the pointer.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugePointerBorder|array`
 
-The border of the pointer.
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugePointerBorder
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerBorder](/api/wrappers/php/kendo/dataviz/ui/lineargaugepointerborder)
 
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerBorder();
@@ -37,6 +40,10 @@ The border of the pointer.
 
 ### color
 The color of the pointer.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `string`
@@ -49,6 +56,10 @@ The color of the pointer.
 
 ### margin
 The margin of the pointer.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `float|`
@@ -62,6 +73,10 @@ The margin of the pointer.
 ### opacity
 The opacity of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `float`
@@ -74,6 +89,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### shape
 The shape of the pointer.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `string`
@@ -86,6 +105,10 @@ The shape of the pointer.
 
 ### size
 The size of the pointer.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `float`
@@ -98,15 +121,18 @@ The size of the pointer.
 
 ### track
 
+The element arround/under the pointer.
+(available only for 'barIndicator' shape)
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugePointerTrack|array`
 
-The element arround/under the pointer.
-(available only for 'barIndicator' shape)
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugePointerTrack
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerTrack](/api/wrappers/php/kendo/dataviz/ui/lineargaugepointertrack)
 
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
@@ -122,6 +148,10 @@ The element arround/under the pointer.
 
 ### value
 The value of the gauge.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugePointer`
+
 #### Parameters
 
 ##### $value `float`

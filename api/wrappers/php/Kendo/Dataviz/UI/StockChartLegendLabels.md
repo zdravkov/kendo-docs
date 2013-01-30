@@ -1,6 +1,6 @@
 ---
 title: StockChartLegendLabels
-slug: php-StockChartLegendLabels
+slug: php-dataviz-ui-stockchartlegendlabels
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the labels setting of StockChartLegend.
 ### color
 The color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartLegendLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### font
 The font style of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartLegendLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -42,6 +50,10 @@ The template of the labels.
 Template variables:
 *   text - the text the legend item.
 *   series - the data series.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartLegendLabels`
+
 #### Parameters
 
 ##### $value `string`

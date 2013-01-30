@@ -1,6 +1,6 @@
 ---
 title: GridColumnMenuMessages
-slug: php-GridColumnMenuMessages
+slug: php-ui-gridcolumnmenumessages
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the messages setting of GridColumnMenu.
 
 ### columns
 Set the text of the columns section in column header menu.
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Set the text of the columns section in column header menu.
 
 ### filter
 Set the text of the filter section in column header menu.
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Set the text of the filter section in column header menu.
 
 ### sortAscending
 Set the text of the sortAscending section in column header menu.
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Set the text of the sortAscending section in column header menu.
 
 ### sortDescending
 Set the text of the sortDescending section in column header menu.
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
 #### Parameters
 
 ##### $value `string`

@@ -1,6 +1,6 @@
 ---
 title: DataSourceGroupItem
-slug: php-DataSourceGroupItem
+slug: php-data-datasourcegroupitem
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,9 @@ A PHP class representing the groupItem setting of DataSourceGroup.
 ### addAggregate
 
 Adds one or more DataSourceGroupItemAggregate to the DataSourceGroupItem.
+
+#### Returns
+`\Kendo\Data\DataSourceGroupItem`
 
 #### Parameters
 
@@ -43,6 +46,10 @@ Adds one or more DataSourceGroupItemAggregate to the DataSourceGroupItem.
 
 ### dir
 Specifies the order of the groupped items.
+
+#### Returns
+`\Kendo\Data\DataSourceGroupItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -55,6 +62,10 @@ Specifies the order of the groupped items.
 
 ### field
 Specifies the field to group by.
+
+#### Returns
+`\Kendo\Data\DataSourceGroupItem`
+
 #### Parameters
 
 ##### $value `string`

@@ -1,6 +1,6 @@
 ---
 title: StockChartSeriesDefaultsTooltipBorder
-slug: php-StockChartSeriesDefaultsTooltipBorder
+slug: php-dataviz-ui-stockchartseriesdefaultstooltipborder
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the border setting of StockChartSeriesDefaultsTooltip.
 
 ### color
 The color of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltipBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the border.
 
 ### width
 The width of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltipBorder`
+
 #### Parameters
 
 ##### $value `float`

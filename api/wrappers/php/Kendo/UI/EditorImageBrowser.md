@@ -1,6 +1,6 @@
 ---
 title: EditorImageBrowser
-slug: php-EditorImageBrowser
+slug: php-ui-editorimagebrowser
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the imageBrowser setting of Editor.
 
 ### fileTypes
 Defines the allowed file extensions.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowser`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,14 +30,17 @@ Defines the allowed file extensions.
 
 ### messages
 
+Defines texts shown within the pager.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowser`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\EditorImageBrowserMessages|array`
 
-Defines texts shown within the pager.
 
-
-#### Example - using \Kendo\UI\EditorImageBrowserMessages
+#### Example - using [\Kendo\UI\EditorImageBrowserMessages](/api/wrappers/php/kendo/ui/editorimagebrowsermessages)
 
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
@@ -49,6 +56,10 @@ Defines texts shown within the pager.
 
 ### path
 Defines the initial folder to display, relative to the root.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowser`
+
 #### Parameters
 
 ##### $value `string`
@@ -61,14 +72,17 @@ Defines the initial folder to display, relative to the root.
 
 ### schema
 
+Set the object responsible for describing the image raw data format.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowser`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\EditorImageBrowserSchema|array`
 
-Set the object responsible for describing the image raw data format.
 
-
-#### Example - using \Kendo\UI\EditorImageBrowserSchema
+#### Example - using [\Kendo\UI\EditorImageBrowserSchema](/api/wrappers/php/kendo/ui/editorimagebrowserschema)
 
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $schema = new \Kendo\UI\EditorImageBrowserSchema();
@@ -84,24 +98,27 @@ Set the object responsible for describing the image raw data format.
 
 ### transport
 
+Specifies the settings for loading and saving data.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowser`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\EditorImageBrowserTransport|array`
 
-Specifies the settings for loading and saving data.
 
-
-#### Example - using \Kendo\UI\EditorImageBrowserTransport
+#### Example - using [\Kendo\UI\EditorImageBrowserTransport](/api/wrappers/php/kendo/ui/editorimagebrowsertransport)
 
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $transport = new \Kendo\UI\EditorImageBrowserTransport();
-    $create = new ();
-    $transport->create($create);
+    $imageUrl = 'value';
+    $transport->imageUrl($imageUrl);
     $imageBrowser->transport($transport);
 
 #### Example - using array
 
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
-    $create = new ();
-    $imageBrowser->transport(array('create' => $create));
+    $imageUrl = 'value';
+    $imageBrowser->transport(array('imageUrl' => $imageUrl));
 

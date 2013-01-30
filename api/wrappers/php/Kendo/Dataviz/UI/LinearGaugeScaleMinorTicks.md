@@ -1,6 +1,6 @@
 ---
 title: LinearGaugeScaleMinorTicks
-slug: php-LinearGaugeScaleMinorTicks
+slug: php-dataviz-ui-lineargaugescaleminorticks
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the minorTicks setting of LinearGaugeScale.
 ### color
 The color of the minor ticks.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks`
+
 #### Parameters
 
 ##### $value `string`
@@ -28,6 +32,10 @@ Any valid CSS color string will work here, including hex and rgb.
 ### size
 The minor tick size.
 This is the length of the line in pixels that is drawn to indicate the tick on the scale.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks`
+
 #### Parameters
 
 ##### $value `float`
@@ -40,6 +48,10 @@ This is the length of the line in pixels that is drawn to indicate the tick on t
 
 ### visible
 The visibility of the minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -52,6 +64,10 @@ The visibility of the minor ticks.
 
 ### width
 The width of the minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks`
+
 #### Parameters
 
 ##### $value `float`

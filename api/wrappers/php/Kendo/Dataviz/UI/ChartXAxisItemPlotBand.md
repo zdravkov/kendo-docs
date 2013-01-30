@@ -1,6 +1,6 @@
 ---
 title: ChartXAxisItemPlotBand
-slug: php-ChartXAxisItemPlotBand
+slug: php-dataviz-ui-chartxaxisitemplotband
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the plotBand setting of ChartXAxisItemPlotBands.
 
 ### color
 The color of the plot band.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemPlotBand`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the plot band.
 
 ### from
 The start position of the plot band in axis units.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemPlotBand`
+
 #### Parameters
 
 ##### $value `float`
@@ -38,6 +46,10 @@ The start position of the plot band in axis units.
 
 ### opacity
 The opacity of the plot band.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemPlotBand`
+
 #### Parameters
 
 ##### $value `float`
@@ -50,6 +62,10 @@ The opacity of the plot band.
 
 ### to
 The end position of the plot band in axis units.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemPlotBand`
+
 #### Parameters
 
 ##### $value `float`

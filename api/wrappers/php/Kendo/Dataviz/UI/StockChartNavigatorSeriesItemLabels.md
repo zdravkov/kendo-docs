@@ -1,6 +1,6 @@
 ---
 title: StockChartNavigatorSeriesItemLabels
-slug: php-StockChartNavigatorSeriesItemLabels
+slug: php-dataviz-ui-stockchartnavigatorseriesitemlabels
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the labels setting of StockChartNavigatorSeriesItem.
 
 ### background
 The background color of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,14 +30,17 @@ The background color of the labels.
 
 ### border
 
+The border of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabelsBorder|array`
 
-The border of the labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabelsBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartnavigatorseriesitemlabelsborder)
 
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabelsBorder();
@@ -49,6 +56,10 @@ The border of the labels.
 
 ### color
 The text color of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -61,6 +72,10 @@ The text color of the labels.
 
 ### font
 The font style of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -73,6 +88,10 @@ The font style of the labels.
 
 ### format
 The format of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -85,6 +104,10 @@ The format of the labels.
 
 ### margin
 The margin of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -97,6 +120,10 @@ The margin of the labels.
 
 ### padding
 The padding of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -109,6 +136,10 @@ The padding of the labels.
 
 ### position
 Defines the position of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -121,6 +152,10 @@ Defines the position of the labels.
 
 ### template
 The label template. Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -137,6 +172,10 @@ The label template. Template variables:
 
 ### visible
 The visibility of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels`
+
 #### Parameters
 
 ##### $value `boolean`

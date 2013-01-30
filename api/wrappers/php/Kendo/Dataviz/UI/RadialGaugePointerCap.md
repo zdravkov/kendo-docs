@@ -1,6 +1,6 @@
 ---
 title: RadialGaugePointerCap
-slug: php-RadialGaugePointerCap
+slug: php-dataviz-ui-radialgaugepointercap
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the cap setting of RadialGaugePointer.
 ### color
 The color of the cap.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugePointerCap`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### size
 The size of the cap in percents. (from 0 to 1)
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugePointerCap`
+
 #### Parameters
 
 ##### $value `float`

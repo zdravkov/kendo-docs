@@ -1,6 +1,6 @@
 ---
 title: RadialGaugePointer
-slug: php-RadialGaugePointer
+slug: php-dataviz-ui-radialgaugepointer
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the pointer setting of RadialGauge.
 
 ### cap
 
+The cap configuration options.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugePointer`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugePointerCap|array`
 
-The cap configuration options.
 
-
-#### Example - using \Kendo\Dataviz\UI\RadialGaugePointerCap
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugePointerCap](/api/wrappers/php/kendo/dataviz/ui/radialgaugepointercap)
 
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $cap = new \Kendo\Dataviz\UI\RadialGaugePointerCap();
@@ -38,6 +41,10 @@ The cap configuration options.
 ### color
 The color of the pointer.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugePointer`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +57,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### value
 The value of the gauge.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugePointer`
+
 #### Parameters
 
 ##### $value `float`

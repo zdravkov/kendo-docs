@@ -1,6 +1,6 @@
 ---
 title: TimePickerAnimationOpen
-slug: php-TimePickerAnimationOpen
+slug: php-ui-timepickeranimationopen
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the open setting of TimePickerAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\TimePickerAnimationOpen`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for opening of the popup.
+
+#### Returns
+`\Kendo\UI\TimePickerAnimationOpen`
+
 #### Parameters
 
 ##### $value `string`

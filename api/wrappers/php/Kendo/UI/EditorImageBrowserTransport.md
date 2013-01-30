@@ -1,6 +1,6 @@
 ---
 title: EditorImageBrowserTransport
-slug: php-EditorImageBrowserTransport
+slug: php-ui-editorimagebrowsertransport
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the transport setting of EditorImageBrowser.
 
 ### create
 Options or URL which will handle the directory creation. If not specified that create new folder button will not be present.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserTransport`
+
 #### Parameters
 
 ##### $value `|string`
@@ -30,6 +34,10 @@ Options or URL which will handle the directory creation. If not specified that c
 
 ### destroy
 Options or URL which will handle the file and directory deletion. If not specified the delete button will not be present.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserTransport`
+
 #### Parameters
 
 ##### $value `|string`
@@ -46,6 +54,10 @@ Options or URL which will handle the file and directory deletion. If not specifi
 
 ### imageUrl
 The URL responsible for serving the original image. A file name placeholder should be specifed.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserTransport`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -62,6 +74,10 @@ The URL responsible for serving the original image. A file name placeholder shou
 
 ### read
 Options or URL for remote image retrieval.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserTransport`
+
 #### Parameters
 
 ##### $value `|string`
@@ -78,6 +94,10 @@ Options or URL for remote image retrieval.
 
 ### thumbnailUrl
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserTransport`
+
 #### Parameters
 
 ##### $value `string`
@@ -90,6 +110,10 @@ The URL for retrieving the thumbnail version of the image. If not specified a de
 
 ### uploadUrl
 The URL which will handle the upload of the new images. If not specified the Upload button will not be displayed.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserTransport`
+
 #### Parameters
 
 ##### $value `string`

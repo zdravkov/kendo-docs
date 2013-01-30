@@ -1,6 +1,6 @@
 ---
 title: RadialGaugeScale
-slug: php-RadialGaugeScale
+slug: php-dataviz-ui-radialgaugescale
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the scale setting of RadialGauge.
 ### endAngle
 The end angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -27,14 +31,17 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
 
 ### labels
 
+Configures the scale labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeScaleLabels|array`
 
-Configures the scale labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\RadialGaugeScaleLabels
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleLabels](/api/wrappers/php/kendo/dataviz/ui/radialgaugescalelabels)
 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
@@ -50,14 +57,17 @@ Configures the scale labels.
 
 ### majorTicks
 
+Configures the scale major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks|array`
 
-Configures the scale major ticks.
 
-
-#### Example - using \Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks](/api/wrappers/php/kendo/dataviz/ui/radialgaugescalemajorticks)
 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $majorTicks = new \Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks();
@@ -73,6 +83,10 @@ Configures the scale major ticks.
 
 ### majorUnit
 The interval between major divisions.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -85,6 +99,10 @@ The interval between major divisions.
 
 ### max
 The maximum value of the scale.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -97,6 +115,10 @@ The maximum value of the scale.
 
 ### min
 The minimum value of the scale.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -109,14 +131,17 @@ The minimum value of the scale.
 
 ### minorTicks
 
+Configures the scale minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeScaleMinorTicks|array`
 
-Configures the scale minor ticks.
 
-
-#### Example - using \Kendo\Dataviz\UI\RadialGaugeScaleMinorTicks
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleMinorTicks](/api/wrappers/php/kendo/dataviz/ui/radialgaugescaleminorticks)
 
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $minorTicks = new \Kendo\Dataviz\UI\RadialGaugeScaleMinorTicks();
@@ -132,6 +157,10 @@ Configures the scale minor ticks.
 
 ### minorUnit
 The interval between minor divisions.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -145,6 +174,9 @@ The interval between minor divisions.
 ### addRange
 
 Adds one or more RadialGaugeScaleRange to the RadialGaugeScale.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
 
 #### Parameters
 
@@ -173,6 +205,10 @@ Adds one or more RadialGaugeScaleRange to the RadialGaugeScale.
 
 ### reverse
 Reverses the scale direction - values are increase anticlockwise.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -186,6 +222,10 @@ Reverses the scale direction - values are increase anticlockwise.
 ### startAngle
 The start angle of the gauge.
 The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coordinat system)
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
 #### Parameters
 
 ##### $value `float`

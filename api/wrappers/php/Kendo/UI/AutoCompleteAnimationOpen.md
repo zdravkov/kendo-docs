@@ -1,6 +1,6 @@
 ---
 title: AutoCompleteAnimationOpen
-slug: php-AutoCompleteAnimationOpen
+slug: php-ui-autocompleteanimationopen
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the open setting of AutoCompleteAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\AutoCompleteAnimationOpen`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for opening of the popup.
+
+#### Returns
+`\Kendo\UI\AutoCompleteAnimationOpen`
+
 #### Parameters
 
 ##### $value `string`

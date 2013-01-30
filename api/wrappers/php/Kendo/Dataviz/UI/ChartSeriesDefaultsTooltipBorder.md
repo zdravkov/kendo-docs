@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesDefaultsTooltipBorder
-slug: php-ChartSeriesDefaultsTooltipBorder
+slug: php-dataviz-ui-chartseriesdefaultstooltipborder
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the border setting of ChartSeriesDefaultsTooltip.
 
 ### color
 The color of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the border.
 
 ### width
 The width of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipBorder`
+
 #### Parameters
 
 ##### $value `float`

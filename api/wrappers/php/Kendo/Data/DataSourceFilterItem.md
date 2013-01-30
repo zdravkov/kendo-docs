@@ -1,6 +1,6 @@
 ---
 title: DataSourceFilterItem
-slug: php-DataSourceFilterItem
+slug: php-data-datasourcefilteritem
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the filterItem setting of DataSourceFilter.
 
 ### field
 Specifies the field to filter by.
+
+#### Returns
+`\Kendo\Data\DataSourceFilterItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Specifies the field to filter by.
 
 ### operator
 Specifies the filter operator. One of the following values "eq", "neq", "lt", "lte", "gt", "gte", "startswith", "endswith", "contains".
+
+#### Returns
+`\Kendo\Data\DataSourceFilterItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Specifies the filter operator. One of the following values "eq", "neq", "lt", "l
 
 ### value
 Specifies the value to filter for.
+
+#### Returns
+`\Kendo\Data\DataSourceFilterItem`
+
 #### Parameters
 
 ##### $value ``

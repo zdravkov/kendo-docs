@@ -1,6 +1,6 @@
 ---
 title: WindowAnimationOpen
-slug: php-WindowAnimationOpen
+slug: php-ui-windowanimationopen
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the open setting of WindowAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\WindowAnimationOpen`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for opening of the popup.
+
+#### Returns
+`\Kendo\UI\WindowAnimationOpen`
+
 #### Parameters
 
 ##### $value `string`

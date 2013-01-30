@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesItemHighlight
-slug: php-ChartSeriesItemHighlight
+slug: php-dataviz-ui-chartseriesitemhighlight
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the highlight setting of ChartSeriesItem.
 
 ### border
 
+The border of highlighted points. The color is computed automatically from the base point color.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder|array`
 
-The border of highlighted points. The color is computed automatically from the base point color.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemhighlightborder)
 
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder();
@@ -37,6 +40,10 @@ The border of highlighted points. The color is computed automatically from the b
 
 ### color
 The highlight color.** Available only for pie series **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `string`
@@ -49,14 +56,17 @@ The highlight color.** Available only for pie series **
 
 ### line
 
+Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemHighlightLine|array`
 
-Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartSeriesItemHighlightLine
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemHighlightLine](/api/wrappers/php/kendo/dataviz/ui/chartseriesitemhighlightline)
 
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightLine();
@@ -72,6 +82,10 @@ Line options for highlighted points. The color is computed automatically from th
 
 ### opacity
 The opacity of the highlighted points.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemHighlight`
+
 #### Parameters
 
 ##### $value `float`

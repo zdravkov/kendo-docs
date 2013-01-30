@@ -1,6 +1,6 @@
 ---
 title: StockChartXAxisItemMajorGridLines
-slug: php-StockChartXAxisItemMajorGridLines
+slug: php-dataviz-ui-stockchartxaxisitemmajorgridlines
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the majorGridLines setting of StockChartXAxisItem.
 
 ### color
 The color of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartXAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the lines.
 
 ### visible
 The visibility of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartXAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -38,6 +46,10 @@ The visibility of the lines.
 
 ### width
 The width of the lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartXAxisItemMajorGridLines`
+
 #### Parameters
 
 ##### $value `float`

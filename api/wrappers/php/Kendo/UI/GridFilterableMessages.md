@@ -1,6 +1,6 @@
 ---
 title: GridFilterableMessages
-slug: php-GridFilterableMessages
+slug: php-ui-gridfilterablemessages
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the messages setting of GridFilterable.
 
 ### _and
 Set the text of the "and" option from logic drop down list.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Set the text of the "and" option from logic drop down list.
 
 ### clear
 Set the text of the clear button of the filter menu.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Set the text of the clear button of the filter menu.
 
 ### filter
 Set the text of the filter button of the filter menu.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Set the text of the filter button of the filter menu.
 
 ### info
 Set the text of the information message on top of the filter menu.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +78,10 @@ Set the text of the information message on top of the filter menu.
 
 ### isFalse
 Set the text of the isFalse radio button of the filter menu for boolean values.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Set the text of the isFalse radio button of the filter menu for boolean values.
 
 ### isTrue
 Set the text of the isTrue radio button of the filter menu for boolean values.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -86,6 +110,10 @@ Set the text of the isTrue radio button of the filter menu for boolean values.
 
 ### _or
 Set the text of the "or" option from logic drop down list.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -98,6 +126,10 @@ Set the text of the "or" option from logic drop down list.
 
 ### selectValue
 Set the text of the option label for foreign key drop down list.
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
 #### Parameters
 
 ##### $value `string`

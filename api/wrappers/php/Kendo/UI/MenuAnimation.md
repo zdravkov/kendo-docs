@@ -1,6 +1,6 @@
 ---
 title: MenuAnimation
-slug: php-MenuAnimation
+slug: php-ui-menuanimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of Menu.
 
 ### close
 
+The animation that will be used when closing sub menus.
+
+#### Returns
+`\Kendo\UI\MenuAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\MenuAnimationClose|array`
 
-The animation that will be used when closing sub menus.
 
-
-#### Example - using \Kendo\UI\MenuAnimationClose
+#### Example - using [\Kendo\UI\MenuAnimationClose](/api/wrappers/php/kendo/ui/menuanimationclose)
 
     $animation = new \Kendo\UI\MenuAnimation();
     $close = new \Kendo\UI\MenuAnimationClose();
@@ -37,14 +40,17 @@ The animation that will be used when closing sub menus.
 
 ### open
 
+The animation that will be used when opening sub menus.
+
+#### Returns
+`\Kendo\UI\MenuAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\MenuAnimationOpen|array`
 
-The animation that will be used when opening sub menus.
 
-
-#### Example - using \Kendo\UI\MenuAnimationOpen
+#### Example - using [\Kendo\UI\MenuAnimationOpen](/api/wrappers/php/kendo/ui/menuanimationopen)
 
     $animation = new \Kendo\UI\MenuAnimation();
     $open = new \Kendo\UI\MenuAnimationOpen();

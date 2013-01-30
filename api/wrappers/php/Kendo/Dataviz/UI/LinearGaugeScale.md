@@ -1,6 +1,6 @@
 ---
 title: LinearGaugeScale
-slug: php-LinearGaugeScale
+slug: php-dataviz-ui-lineargaugescale
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the scale setting of LinearGauge.
 
 ### labels
 
+Configures the scale labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugeScaleLabels|array`
 
-Configures the scale labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugeScaleLabels
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleLabels](/api/wrappers/php/kendo/dataviz/ui/lineargaugescalelabels)
 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $labels = new \Kendo\Dataviz\UI\LinearGaugeScaleLabels();
@@ -37,14 +40,17 @@ Configures the scale labels.
 
 ### line
 
+Configures the axis line.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugeScaleLine|array`
 
-Configures the axis line.
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugeScaleLine
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleLine](/api/wrappers/php/kendo/dataviz/ui/lineargaugescaleline)
 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
@@ -60,14 +66,17 @@ Configures the axis line.
 
 ### majorTicks
 
+Configures the scale major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks|array`
 
-Configures the scale major ticks.
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks](/api/wrappers/php/kendo/dataviz/ui/lineargaugescalemajorticks)
 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $majorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks();
@@ -83,6 +92,10 @@ Configures the scale major ticks.
 
 ### majorUnit
 The interval between major divisions.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -95,6 +108,10 @@ The interval between major divisions.
 
 ### max
 The maximum value of the scale.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -107,6 +124,10 @@ The maximum value of the scale.
 
 ### min
 The minimum value of the scale.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -119,14 +140,17 @@ The minimum value of the scale.
 
 ### minorTicks
 
+Configures the scale minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks|array`
 
-Configures the scale minor ticks.
 
-
-#### Example - using \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks
+#### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks](/api/wrappers/php/kendo/dataviz/ui/lineargaugescaleminorticks)
 
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $minorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks();
@@ -142,6 +166,10 @@ Configures the scale minor ticks.
 
 ### minorUnit
 The interval between minor divisions.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `float`
@@ -155,6 +183,10 @@ The interval between minor divisions.
 ### mirror
 Mirrors the scale labels and ticks.
 If the labels are normally on the left side of the scale, mirroring the scale will render them to the right.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -168,6 +200,9 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
 ### addRange
 
 Adds one or more LinearGaugeScaleRange to the LinearGaugeScale.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
 
 #### Parameters
 
@@ -196,6 +231,10 @@ Adds one or more LinearGaugeScaleRange to the LinearGaugeScale.
 
 ### reverse
 Reverses the axis direction - values increase from right to left and from top to bottom.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -208,6 +247,10 @@ Reverses the axis direction - values increase from right to left and from top to
 
 ### vertical
 The position of the gauge.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
 #### Parameters
 
 ##### $value `boolean`

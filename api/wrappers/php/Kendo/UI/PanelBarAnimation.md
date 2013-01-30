@@ -1,6 +1,6 @@
 ---
 title: PanelBarAnimation
-slug: php-PanelBarAnimation
+slug: php-ui-panelbaranimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of PanelBar.
 
 ### collapse
 
+The visual animation(s) that will be used when PanelBar items are closed.
+
+#### Returns
+`\Kendo\UI\PanelBarAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\PanelBarAnimationCollapse|array`
 
-The visual animation(s) that will be used when PanelBar items are closed.
 
-
-#### Example - using \Kendo\UI\PanelBarAnimationCollapse
+#### Example - using [\Kendo\UI\PanelBarAnimationCollapse](/api/wrappers/php/kendo/ui/panelbaranimationcollapse)
 
     $animation = new \Kendo\UI\PanelBarAnimation();
     $collapse = new \Kendo\UI\PanelBarAnimationCollapse();
@@ -37,14 +40,17 @@ The visual animation(s) that will be used when PanelBar items are closed.
 
 ### expand
 
+The visual animation(s) that will be used when opening items.
+
+#### Returns
+`\Kendo\UI\PanelBarAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\PanelBarAnimationExpand|array`
 
-The visual animation(s) that will be used when opening items.
 
-
-#### Example - using \Kendo\UI\PanelBarAnimationExpand
+#### Example - using [\Kendo\UI\PanelBarAnimationExpand](/api/wrappers/php/kendo/ui/panelbaranimationexpand)
 
     $animation = new \Kendo\UI\PanelBarAnimation();
     $expand = new \Kendo\UI\PanelBarAnimationExpand();

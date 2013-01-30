@@ -1,6 +1,6 @@
 ---
 title: GridFilterableOperatorsNumber
-slug: php-GridFilterableOperatorsNumber
+slug: php-ui-gridfilterableoperatorsnumber
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the number setting of GridFilterableOperators.
 
 ### eq
 Enable/Disable and set the text of the "Is equal to" filter option for columns with number values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsNumber`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Enable/Disable and set the text of the "Is equal to" filter option for columns w
 
 ### gt
 Enable/Disable and set the text of the "Is greater than" filter option for columns with number values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsNumber`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Enable/Disable and set the text of the "Is greater than" filter option for colum
 
 ### gte
 Enable/Disable and set the text of the "Is greater than or equal to" filter option for columns with number values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsNumber`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Enable/Disable and set the text of the "Is greater than or equal to" filter opti
 
 ### lt
 Enable/Disable and set the text of the "Is less than" filter option for columns with number values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsNumber`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +78,10 @@ Enable/Disable and set the text of the "Is less than" filter option for columns 
 
 ### lte
 Enable/Disable and set the text of the "Is less than or equal to" filter option for columns with number values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsNumber`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Enable/Disable and set the text of the "Is less than or equal to" filter option 
 
 ### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for columns with number values.
+
+#### Returns
+`\Kendo\UI\GridFilterableOperatorsNumber`
+
 #### Parameters
 
 ##### $value `string`

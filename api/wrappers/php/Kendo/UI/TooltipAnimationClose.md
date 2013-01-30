@@ -1,6 +1,6 @@
 ---
 title: TooltipAnimationClose
-slug: php-TooltipAnimationClose
+slug: php-ui-tooltipanimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of TooltipAnimation.
 
 ### duration
 Difines the animation duration.
+
+#### Returns
+`\Kendo\UI\TooltipAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Difines the animation duration.
 
 ### effects
 Effect to be used for closing of the tooltip.
+
+#### Returns
+`\Kendo\UI\TooltipAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

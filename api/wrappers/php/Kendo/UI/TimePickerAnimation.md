@@ -1,6 +1,6 @@
 ---
 title: TimePickerAnimation
-slug: php-TimePickerAnimation
+slug: php-ui-timepickeranimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of TimePicker.
 
 ### close
 
+Animation to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\TimePickerAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\TimePickerAnimationClose|array`
 
-Animation to be used for closing of the popup.
 
-
-#### Example - using \Kendo\UI\TimePickerAnimationClose
+#### Example - using [\Kendo\UI\TimePickerAnimationClose](/api/wrappers/php/kendo/ui/timepickeranimationclose)
 
     $animation = new \Kendo\UI\TimePickerAnimation();
     $close = new \Kendo\UI\TimePickerAnimationClose();
@@ -37,14 +40,17 @@ Animation to be used for closing of the popup.
 
 ### open
 
+Animation to be used for opening of the popup.
+
+#### Returns
+`\Kendo\UI\TimePickerAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\TimePickerAnimationOpen|array`
 
-Animation to be used for opening of the popup.
 
-
-#### Example - using \Kendo\UI\TimePickerAnimationOpen
+#### Example - using [\Kendo\UI\TimePickerAnimationOpen](/api/wrappers/php/kendo/ui/timepickeranimationopen)
 
     $animation = new \Kendo\UI\TimePickerAnimation();
     $open = new \Kendo\UI\TimePickerAnimationOpen();

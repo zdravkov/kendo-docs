@@ -1,6 +1,6 @@
 ---
 title: EditorTool
-slug: php-EditorTool
+slug: php-ui-editortool
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the tool setting of EditorTools.
 
 ### exec
 The JavaScript function which will be executed when the end-user clicks the tool button.
+
+#### Returns
+`\Kendo\UI\EditorTool`
+
 #### Parameters
 
 ##### $value `\Kendo\JavaScriptFunction`
@@ -26,6 +30,10 @@ The JavaScript function which will be executed when the end-user clicks the tool
 
 ### name
 The mandatory name of the tool. The built-in tools are "bold", "italic", "underline", "strikethrough", "fontName", "fontSize", "foreColor", "backColor", "justifyLeft", "justifyCenter", "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent", "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
+
+#### Returns
+`\Kendo\UI\EditorTool`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ The mandatory name of the tool. The built-in tools are "bold", "italic", "underl
 
 ### tooltip
 The text which will be displayed when the end-user hovers the tool button with the mouse.
+
+#### Returns
+`\Kendo\UI\EditorTool`
+
 #### Parameters
 
 ##### $value `string`

@@ -1,6 +1,6 @@
 ---
 title: GridEditable
-slug: php-GridEditable
+slug: php-ui-grideditable
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the editable setting of Grid.
 
 ### confirmation
 Defines the text that will be used in confirmation box when delete an item.
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
 #### Parameters
 
 ##### $value `boolean|string`
@@ -30,6 +34,10 @@ Defines the text that will be used in confirmation box when delete an item.
 
 ### createAt
 Indicates whether the created record should be inserted at the top or at the bottom of the current page. Available values are "top" and "bottom".
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
 #### Parameters
 
 ##### $value `string`
@@ -42,6 +50,10 @@ Indicates whether the created record should be inserted at the top or at the bot
 
 ### destroy
 Indicates whether item should be deleted when click on delete button.
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -54,6 +66,10 @@ Indicates whether item should be deleted when click on delete button.
 
 ### mode
 Indicates which of the available edit modes(incell(default)/inline/popup) will be used
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
 #### Parameters
 
 ##### $value `string`
@@ -66,6 +82,10 @@ Indicates which of the available edit modes(incell(default)/inline/popup) will b
 
 ### template
 Template which will be use during popup editing
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
 #### Parameters
 
 ##### $value `string`
@@ -78,6 +98,10 @@ Template which will be use during popup editing
 
 ### update
 Indicates whether item should be switched to edit mode on click.
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
 #### Parameters
 
 ##### $value `boolean`

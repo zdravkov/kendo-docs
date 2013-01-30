@@ -1,6 +1,6 @@
 ---
 title: TreeViewItem
-slug: php-TreeViewItem
+slug: php-ui-treeviewitem
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the item setting of TreeViewItems.
 
 ### enabled
 Specifies whether the item is initially enabled
+
+#### Returns
+`\Kendo\UI\TreeViewItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -26,6 +30,10 @@ Specifies whether the item is initially enabled
 
 ### expanded
 Specifies whether the item is initially expanded
+
+#### Returns
+`\Kendo\UI\TreeViewItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -38,6 +46,10 @@ Specifies whether the item is initially expanded
 
 ### imageUrl
 Specifies the URL of the image displayed by the item
+
+#### Returns
+`\Kendo\UI\TreeViewItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Specifies the URL of the image displayed by the item
 
 ### selected
 Specifies whether the item is initially selected
+
+#### Returns
+`\Kendo\UI\TreeViewItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -62,6 +78,10 @@ Specifies whether the item is initially selected
 
 ### spriteCssClass
 Specifies the class name for the sprite image displayed by the item
+
+#### Returns
+`\Kendo\UI\TreeViewItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Specifies the class name for the sprite image displayed by the item
 
 ### text
 Specifies the text displayed by the item
+
+#### Returns
+`\Kendo\UI\TreeViewItem`
+
 #### Parameters
 
 ##### $value `string`

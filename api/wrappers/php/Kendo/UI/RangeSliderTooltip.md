@@ -1,6 +1,6 @@
 ---
 title: RangeSliderTooltip
-slug: php-RangeSliderTooltip
+slug: php-ui-rangeslidertooltip
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the tooltip setting of RangeSlider.
 
 ### enabled
 Disables (false) or enables (true) the tooltip of the RangeSlider.
+
+#### Returns
+`\Kendo\UI\RangeSliderTooltip`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -27,6 +31,10 @@ Disables (false) or enables (true) the tooltip of the RangeSlider.
 ### format
 Format string for the text of the tooltip. Note: The applied format will also influence the appearance of
 the RangeSlider tick labels.
+
+#### Returns
+`\Kendo\UI\RangeSliderTooltip`
+
 #### Parameters
 
 ##### $value `string`
@@ -39,6 +47,10 @@ the RangeSlider tick labels.
 
 ### template
 Template of the tooltip.
+
+#### Returns
+`\Kendo\UI\RangeSliderTooltip`
+
 #### Parameters
 
 ##### $value `string`

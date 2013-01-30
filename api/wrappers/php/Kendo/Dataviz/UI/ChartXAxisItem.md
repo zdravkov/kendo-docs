@@ -1,6 +1,6 @@
 ---
 title: ChartXAxisItem
-slug: php-ChartXAxisItem
+slug: php-dataviz-ui-chartxaxisitem
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the xAxisItem setting of ChartXAxis.
 ### axisCrossingValue
 Value at which the Y axis crosses this axis. (Only for object)Value indicies at which the Y axes cross the value axis. (Only for array)Date at which the Y axis crosses this axis. (Only for date)Note: Specify a value greater than or equal to the
 axis maximum value to denote the far end of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `|date|array`
@@ -36,6 +40,10 @@ axis maximum value to denote the far end of the axis.
 ### baseUnit
 The base time interval for the axis labels.
 The default baseUnit is determined automatically from the value range. Available options:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -49,6 +57,10 @@ The default baseUnit is determined automatically from the value range. Available
 ### color
 Color to apply to all axis elements.
 Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -61,14 +73,17 @@ Individual color settings for line and labels take priority. Any valid CSS color
 
 ### labels
 
+Configures the axis labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemLabels|array`
 
-Configures the axis labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartXAxisItemLabels
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLabels](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemlabels)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $labels = new \Kendo\Dataviz\UI\ChartXAxisItemLabels();
@@ -84,14 +99,17 @@ Configures the axis labels.
 
 ### line
 
+Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemLine|array`
 
-Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartXAxisItemLine
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemLine](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemline)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $line = new \Kendo\Dataviz\UI\ChartXAxisItemLine();
@@ -107,15 +125,18 @@ Configures the axis line. This will also affect the major and minor ticks, but n
 
 ### majorGridLines
 
+Configures the major grid lines. These are the lines that are an extension of the major ticks through the
+body of the chart.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines|array`
 
-Configures the major grid lines. These are the lines that are an extension of the major ticks through the
-body of the chart.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemmajorgridlines)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $majorGridLines = new \Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines();
@@ -131,14 +152,17 @@ body of the chart.
 
 ### majorTicks
 
+The major ticks of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemMajorTicks|array`
 
-The major ticks of the axis.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartXAxisItemMajorTicks
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemMajorTicks](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemmajorticks)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $majorTicks = new \Kendo\Dataviz\UI\ChartXAxisItemMajorTicks();
@@ -154,6 +178,10 @@ The major ticks of the axis.
 
 ### majorUnit
 The interval between major divisions in base units.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `float`
@@ -167,6 +195,10 @@ The interval between major divisions in base units.
 ### max
 The end date of the axis.
 This is often used in combination with the min configuration option.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value ``
@@ -176,6 +208,10 @@ This is often used in combination with the min configuration option.
 ### min
 The maximum value of the axis.
 This is often used in combination with the max configuration option.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value ``
@@ -185,6 +221,10 @@ This is often used in combination with the max configuration option.
 ### minorUnit
 The interval between minor divisions in base units.
 It defaults to 1/5th of the majorUnit.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `float`
@@ -197,6 +237,10 @@ It defaults to 1/5th of the majorUnit.
 
 ### name
 The unique axis name.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value ``
@@ -205,6 +249,10 @@ The unique axis name.
 
 ### narrowRange
 Prevents the automatic axis range from snapping to 0.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -218,6 +266,10 @@ Prevents the automatic axis range from snapping to 0.
 ### pane
 The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -231,6 +283,9 @@ The axis will be rendered in the first (default) pane if not set.
 ### addPlotBand
 
 Adds one or more ChartXAxisItemPlotBand to the ChartXAxisItem.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
 
 #### Parameters
 
@@ -260,6 +315,10 @@ Adds one or more ChartXAxisItemPlotBand to the ChartXAxisItem.
 ### reverse
 Reverses the axis direction -
 values increase from right to left and from top to bottom.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -272,14 +331,17 @@ values increase from right to left and from top to bottom.
 
 ### title
 
+The title of the value axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemTitle|array`
 
-The title of the value axis.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartXAxisItemTitle
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemTitle](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemtitle)
 
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $title = new \Kendo\Dataviz\UI\ChartXAxisItemTitle();
@@ -296,6 +358,10 @@ The title of the value axis.
 ### type
 The axis type.Note: The Chart will automatically switch to a date axis if the series X value
 is of type Date. Specify type explicitly when such behavior is undesired.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `string`
@@ -308,6 +374,10 @@ is of type Date. Specify type explicitly when such behavior is undesired.
 
 ### visible
 The visibility of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
 #### Parameters
 
 ##### $value `boolean`

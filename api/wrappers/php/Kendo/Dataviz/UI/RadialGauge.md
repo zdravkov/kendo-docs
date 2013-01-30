@@ -1,53 +1,79 @@
 ---
 title: RadialGauge
-slug: php-RadialGauge
+slug: php-dataviz-ui-radialgauge
 tags: api, php
 publish: true
 ---
 
 # \Kendo\Dataviz\UI\RadialGauge
 
-A PHP class representing Kendo RadialGauge.
+A PHP class representing Kendo [RadialGauge](/api/web/radialgauge).
+
+
+## Configuration
+
+To use RadialGauge in a PHP page instantiate a new instance, configure it via the available
+configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
+
+### Using Kendo RadialGauge
+
+    <?php
+    // Create a new instance of RadialGauge and specify its id
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
+
+    // Configure it
+    $radialGauge->rangeDistance(1)
+
+    // Output it
+
+    echo $radialGauge->render();
+    ?>
 
 
 ## Methods
 
 ### gaugeArea
 
+The gauge area configuration options.
+This is the entire visible area of the gauge.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGauge`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeGaugeArea|array`
 
-The gauge area configuration options.
-This is the entire visible area of the gauge.
 
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeGaugeArea](/api/wrappers/php/kendo/dataviz/ui/radialgaugegaugearea)
 
-#### Example - using \Kendo\Dataviz\UI\RadialGaugeGaugeArea
-
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
-    $background = new ();
-    $gaugeArea->background($background);
+    $height = 1;
+    $gaugeArea->height($height);
     $radialGauge->gaugeArea($gaugeArea);
 
 #### Example - using array
 
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
-    $background = new ();
-    $radialGauge->gaugeArea(array('background' => $background));
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
+    $height = 1;
+    $radialGauge->gaugeArea(array('height' => $height));
 
 ### pointer
+
+The pointer configuration options.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGauge`
 
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugePointer|array`
 
-The pointer configuration options.
 
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugePointer](/api/wrappers/php/kendo/dataviz/ui/radialgaugepointer)
 
-#### Example - using \Kendo\Dataviz\UI\RadialGaugePointer
-
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $color = 'value';
     $pointer->color($color);
@@ -55,12 +81,16 @@ The pointer configuration options.
 
 #### Example - using array
 
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $color = 'value';
     $radialGauge->pointer(array('color' => $color));
 
 ### rangeDistance
 The distance from the range indicators to the ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGauge`
+
 #### Parameters
 
 ##### $value `float`
@@ -68,11 +98,15 @@ The distance from the range indicators to the ticks.
 
 
 #### Example 
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $radialGauge->rangeDistance(1);
 
 ### rangeSize
 The width of the range indicators.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGauge`
+
 #### Parameters
 
 ##### $value `float`
@@ -80,21 +114,24 @@ The width of the range indicators.
 
 
 #### Example 
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $radialGauge->rangeSize(1);
 
 ### scale
+
+Configures the scale.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGauge`
 
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeScale|array`
 
-Configures the scale.
 
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScale](/api/wrappers/php/kendo/dataviz/ui/radialgaugescale)
 
-#### Example - using \Kendo\Dataviz\UI\RadialGaugeScale
-
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $endAngle = 1;
     $scale->endAngle($endAngle);
@@ -102,12 +139,16 @@ Configures the scale.
 
 #### Example - using array
 
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $endAngle = 1;
     $radialGauge->scale(array('endAngle' => $endAngle));
 
 ### transitions
 A value indicating if transition animations should be played.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGauge`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -115,6 +156,6 @@ A value indicating if transition animations should be played.
 
 
 #### Example 
-    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge();
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
     $radialGauge->transitions(true);
 

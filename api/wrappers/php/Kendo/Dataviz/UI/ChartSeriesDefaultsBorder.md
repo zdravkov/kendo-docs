@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesDefaultsBorder
-slug: php-ChartSeriesDefaultsBorder
+slug: php-dataviz-ui-chartseriesdefaultsborder
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the border setting of ChartSeriesDefaults.
 
 ### color
 The color of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The color of the border.
 
 ### dashType
 The dash type of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsBorder`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ The dash type of the border.
 
 ### width
 The width of the border.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaultsBorder`
+
 #### Parameters
 
 ##### $value `float`

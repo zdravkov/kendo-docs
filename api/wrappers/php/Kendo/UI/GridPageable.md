@@ -1,6 +1,6 @@
 ---
 title: GridPageable
-slug: php-GridPageable
+slug: php-ui-gridpageable
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the pageable setting of Grid.
 
 ### buttonCount
 Defines the number of buttons displayed in the numeric pager.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `float`
@@ -26,6 +30,10 @@ Defines the number of buttons displayed in the numeric pager.
 
 ### info
 Defines if a label showing current paging information will be displayed.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -38,6 +46,10 @@ Defines if a label showing current paging information will be displayed.
 
 ### input
 Defines if an input element which allows the user to navigate to given page will be displayed.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -50,14 +62,17 @@ Defines if an input element which allows the user to navigate to given page will
 
 ### messages
 
+Defines texts shown within the pager.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridPageableMessages|array`
 
-Defines texts shown within the pager.
 
-
-#### Example - using \Kendo\UI\GridPageableMessages
+#### Example - using [\Kendo\UI\GridPageableMessages](/api/wrappers/php/kendo/ui/gridpageablemessages)
 
     $pageable = new \Kendo\UI\GridPageable();
     $messages = new \Kendo\UI\GridPageableMessages();
@@ -73,6 +88,10 @@ Defines texts shown within the pager.
 
 ### numeric
 Defines if numeric portion of the pager will be shown.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -85,6 +104,10 @@ Defines if numeric portion of the pager will be shown.
 
 ### pageSize
 Defines the number of records which will be displyed.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `float`
@@ -97,6 +120,10 @@ Defines the number of records which will be displyed.
 
 ### pageSizes
 Displayes a list with predefined page sizes. An array of values to be displayed can be provided.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `boolean|array`
@@ -113,6 +140,10 @@ Displayes a list with predefined page sizes. An array of values to be displayed 
 
 ### previousNext
 Defines if buttons for navigating to the first, last, previous and next pages will be shown.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -125,6 +156,10 @@ Defines if buttons for navigating to the first, last, previous and next pages wi
 
 ### refresh
 Defines if a refresh button will be displayed.
+
+#### Returns
+`\Kendo\UI\GridPageable`
+
 #### Parameters
 
 ##### $value `boolean`

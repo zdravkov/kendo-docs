@@ -1,6 +1,6 @@
 ---
 title: StockChartSeriesDefaults
-slug: php-StockChartSeriesDefaults
+slug: php-dataviz-ui-stockchartseriesdefaults
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the seriesDefaults setting of StockChart.
 ### area
 The area configuration options.
 The default options for all area series. For more details see the series options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value ``
@@ -23,14 +27,17 @@ The default options for all area series. For more details see the series options
 
 ### border
 
+The border of the series.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder|array`
 
-The border of the series.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaultsborder)
 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder();
@@ -47,6 +54,10 @@ The border of the series.
 ### candlestick
 The candlestick configuration options.
 The default options for all candlestick series. For more details see the series options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value ``
@@ -56,6 +67,10 @@ The default options for all candlestick series. For more details see the series 
 ### column
 The column configuration options.
 The default options for all column series. For more details see the series options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value ``
@@ -64,6 +79,10 @@ The default options for all column series. For more details see the series optio
 
 ### gap
 The distance between category clusters.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value `float`
@@ -76,14 +95,17 @@ The distance between category clusters.
 
 ### labels
 
+Configures the series data labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels|array`
 
-Configures the series data labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaultslabels)
 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $labels = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels();
@@ -100,6 +122,10 @@ Configures the series data labels.
 ### line
 The line configuration options.
 The default options for all line series. For more details see the series options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value ``
@@ -109,6 +135,10 @@ The default options for all line series. For more details see the series options
 ### ohlc
 The ohlc configuration options.
 The default options for all ohlc series. For more details see the series options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value ``
@@ -117,6 +147,10 @@ The default options for all ohlc series. For more details see the series options
 
 ### overlay
 The effects overlay.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value ``
@@ -126,6 +160,10 @@ The effects overlay.
 ### pie
 The pie configuration options.
 The default options for all pie series. For more details see the series options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value ``
@@ -134,6 +172,10 @@ The default options for all pie series. For more details see the series options.
 
 ### spacing
 Space between bars.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value `float`
@@ -146,6 +188,10 @@ Space between bars.
 
 ### stack
 A value indicating if the series should be stacked.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -158,14 +204,17 @@ A value indicating if the series should be stacked.
 
 ### tooltip
 
+The data point tooltip configuration options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip|array`
 
-The data point tooltip configuration options.
 
-
-#### Example - using \Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip](/api/wrappers/php/kendo/dataviz/ui/stockchartseriesdefaultstooltip)
 
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $tooltip = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip();

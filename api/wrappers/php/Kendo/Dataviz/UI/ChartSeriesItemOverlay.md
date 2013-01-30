@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesItemOverlay
-slug: php-ChartSeriesItemOverlay
+slug: php-dataviz-ui-chartseriesitemoverlay
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the overlay setting of ChartSeriesItem.
 
 ### gradient
 The gradient name.Available options:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemOverlay`
+
 #### Parameters
 
 ##### $value `string`

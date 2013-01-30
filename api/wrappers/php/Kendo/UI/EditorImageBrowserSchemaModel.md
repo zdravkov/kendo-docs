@@ -1,6 +1,6 @@
 ---
 title: EditorImageBrowserSchemaModel
-slug: php-EditorImageBrowserSchemaModel
+slug: php-ui-editorimagebrowserschemamodel
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the model setting of EditorImageBrowserSchema.
 
 ### fields
 
+
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserSchemaModel`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\EditorImageBrowserSchemaModelFields|array`
 
 
-
-
-#### Example - using \Kendo\UI\EditorImageBrowserSchemaModelFields
+#### Example - using [\Kendo\UI\EditorImageBrowserSchemaModelFields](/api/wrappers/php/kendo/ui/editorimagebrowserschemamodelfields)
 
     $model = new \Kendo\UI\EditorImageBrowserSchemaModel();
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
@@ -37,6 +40,10 @@ A PHP class representing the model setting of EditorImageBrowserSchema.
 
 ### id
 The name of the field which acts as an identifier.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserSchemaModel`
+
 #### Parameters
 
 ##### $value `string`

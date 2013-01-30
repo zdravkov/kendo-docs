@@ -1,6 +1,6 @@
 ---
 title: RadialGaugeGaugeArea
-slug: php-RadialGaugeGaugeArea
+slug: php-dataviz-ui-radialgaugegaugearea
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the gaugeArea setting of RadialGauge.
 ### background
 The background of the gauge area.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value ``
@@ -23,14 +27,17 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### border
 
+The border of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder|array`
 
-The border of the gauge area.
 
-
-#### Example - using \Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder](/api/wrappers/php/kendo/dataviz/ui/radialgaugegaugeareaborder)
 
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $border = new \Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder();
@@ -46,6 +53,10 @@ The border of the gauge area.
 
 ### height
 The height of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `float`
@@ -58,6 +69,10 @@ The height of the gauge area.
 
 ### margin
 The margin of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `float|`
@@ -70,6 +85,10 @@ The margin of the gauge area.
 
 ### width
 The width of the gauge area.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeGaugeArea`
+
 #### Parameters
 
 ##### $value `float`

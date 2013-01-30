@@ -1,26 +1,50 @@
 ---
 title: Editor
-slug: php-Editor
+slug: php-ui-editor
 tags: api, php
 publish: true
 ---
 
 # \Kendo\UI\Editor
 
-A PHP class representing Kendo Editor.
+A PHP class representing Kendo [Editor](/api/web/editor).
+
+
+## Configuration
+
+To use Editor in a PHP page instantiate a new instance, configure it via the available
+configuration [methods](#methods) and output it by `echo`-ing the result of the `render` method.
+
+### Using Kendo Editor
+
+    <?php
+    // Create a new instance of Editor and specify its id
+    $editor = new \Kendo\UI\Editor('Editor');
+
+    // Configure it
+    $editor->encoded(true)
+
+    // Output it
+
+    echo $editor->render();
+    ?>
 
 
 ## Methods
 
 ### change
 Fires when Editor is blurred and its content has changed.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->change('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -30,17 +54,21 @@ Fires when Editor is blurred and its content has changed.
         }
     </script>
     <?php
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->change('onChange');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->change(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### encoded
 Indicates whether the Editor should submit encoded HTML tags.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -48,18 +76,22 @@ Indicates whether the Editor should submit encoded HTML tags.
 
 
 #### Example 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->encoded(true);
 
 ### execute
 Fires when an Editor command is executed.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->execute('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -69,27 +101,30 @@ Fires when an Editor command is executed.
         }
     </script>
     <?php
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->execute('onExecute');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->execute(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### imageBrowser
+
+Configuration for image browser dialog.
+
+#### Returns
+`\Kendo\UI\Editor`
 
 #### Parameters
 
 ##### $value `\Kendo\UI\EditorImageBrowser|array`
 
-Configuration for image browser dialog.
 
+#### Example - using [\Kendo\UI\EditorImageBrowser](/api/wrappers/php/kendo/ui/editorimagebrowser)
 
-#### Example - using \Kendo\UI\EditorImageBrowser
-
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $fileTypes = 'value';
     $imageBrowser->fileTypes($fileTypes);
@@ -97,19 +132,23 @@ Configuration for image browser dialog.
 
 #### Example - using array
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $fileTypes = 'value';
     $editor->imageBrowser(array('fileTypes' => $fileTypes));
 
 ### keydown
 Fires when the user depresses a keyboard key. Triggered multiple times if the user holds the key down.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->keydown('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -119,24 +158,28 @@ Fires when the user depresses a keyboard key. Triggered multiple times if the us
         }
     </script>
     <?php
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->keydown('onKeydown');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->keydown(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### keyup
 Fires when the user releases a keyboard key.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->keyup('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -146,17 +189,21 @@ Fires when the user releases a keyboard key.
         }
     </script>
     <?php
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->keyup('onKeyup');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->keyup(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### messages
 Defines the text of the labels that are shown within the editor. Used primarily for localization.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value ``
@@ -165,13 +212,17 @@ Defines the text of the labels that are shown within the editor. Used primarily 
 
 ### paste
 Fires before when content is pasted in the Editor.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->paste('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -181,24 +232,28 @@ Fires before when content is pasted in the Editor.
         }
     </script>
     <?php
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->paste('onPaste');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->paste(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### select
 Fires when the Editor selection has changed.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
 
 #### Example - using string which defines a JavaScript function
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->select('function(e) { }');
 
 #### Example - using string which defines a JavaScript name
@@ -208,17 +263,21 @@ Fires when the Editor selection has changed.
         }
     </script>
     <?php
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->select('onSelect');
     ?>
 
-#### Example - using \Kendo\JavaScriptFunction
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->select(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### stylesheets
 Allows custom stylesheets to be included within the editing area.
+
+#### Returns
+`\Kendo\UI\Editor`
+
 #### Parameters
 
 ##### $value `array`
@@ -226,12 +285,15 @@ Allows custom stylesheets to be included within the editing area.
 
 
 #### Example 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $editor->stylesheets(new array());
 
 ### addTool
 
 Adds one or more EditorTool to the Editor.
+
+#### Returns
+`\Kendo\UI\Editor`
 
 #### Parameters
 
@@ -239,21 +301,21 @@ Adds one or more EditorTool to the Editor.
 
 #### Example - using \Kendo\UI\EditorTool
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $tool = new \Kendo\UI\EditorTool();
-    $exec = new \Kendo\JavaScriptFunction('function() { }');
-    $tool->exec($exec);
+    $name = 'value';
+    $tool->name($name);
     $editor->addTool($tool);
 
 #### Example - using array
 
-    $editor = new \Kendo\UI\Editor();
-    $exec = new \Kendo\JavaScriptFunction('function() { }');
-    $editor->addTool(array('exec' => $exec));
+    $editor = new \Kendo\UI\Editor('Editor');
+    $name = 'value';
+    $editor->addTool(array('name' => $name));
 
 #### Example - adding more than one EditorTool
 
-    $editor = new \Kendo\UI\Editor();
+    $editor = new \Kendo\UI\Editor('Editor');
     $first  = new \Kendo\UI\EditorTool();
     $second = new \Kendo\UI\EditorTool();
     $editor->addTool($first, $second);

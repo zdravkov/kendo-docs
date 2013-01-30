@@ -1,6 +1,6 @@
 ---
 title: SliderTooltip
-slug: php-SliderTooltip
+slug: php-ui-slidertooltip
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the tooltip setting of Slider.
 ### enabled
 Disables (false) or enables (true) the tooltip of
 the Slider.
+
+#### Returns
+`\Kendo\UI\SliderTooltip`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -29,6 +33,10 @@ the Slider.
 Format string for the text of the tooltip. Note: The applied
 format will also influence the appearance of the Slider
 tick labels.
+
+#### Returns
+`\Kendo\UI\SliderTooltip`
+
 #### Parameters
 
 ##### $value `string`
@@ -41,6 +49,10 @@ tick labels.
 
 ### template
 Template of the tooltip.
+
+#### Returns
+`\Kendo\UI\SliderTooltip`
+
 #### Parameters
 
 ##### $value `string`

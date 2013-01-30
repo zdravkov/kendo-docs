@@ -1,6 +1,6 @@
 ---
 title: GridFilterable
-slug: php-GridFilterable
+slug: php-ui-gridfilterable
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the filterable setting of Grid.
 
 ### extra
 Indicates whether second filter input is enabled/disabled.
+
+#### Returns
+`\Kendo\UI\GridFilterable`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -26,14 +30,17 @@ Indicates whether second filter input is enabled/disabled.
 
 ### messages
 
+Sets the filter menu messages.
+
+#### Returns
+`\Kendo\UI\GridFilterable`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridFilterableMessages|array`
 
-Sets the filter menu messages.
 
-
-#### Example - using \Kendo\UI\GridFilterableMessages
+#### Example - using [\Kendo\UI\GridFilterableMessages](/api/wrappers/php/kendo/ui/gridfilterablemessages)
 
     $filterable = new \Kendo\UI\GridFilterable();
     $messages = new \Kendo\UI\GridFilterableMessages();
@@ -49,14 +56,17 @@ Sets the filter menu messages.
 
 ### operators
 
+Enable/Disable and set the text of filter operators.
+
+#### Returns
+`\Kendo\UI\GridFilterable`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\GridFilterableOperators|array`
 
-Enable/Disable and set the text of filter operators.
 
-
-#### Example - using \Kendo\UI\GridFilterableOperators
+#### Example - using [\Kendo\UI\GridFilterableOperators](/api/wrappers/php/kendo/ui/gridfilterableoperators)
 
     $filterable = new \Kendo\UI\GridFilterable();
     $operators = new \Kendo\UI\GridFilterableOperators();

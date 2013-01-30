@@ -1,6 +1,6 @@
 ---
 title: LinearGaugeScaleRange
-slug: php-LinearGaugeScaleRange
+slug: php-dataviz-ui-lineargaugescalerange
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the range setting of LinearGaugeScaleRanges.
 ### color
 The color of the range.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleRange`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### from
 The start position of the range in scale units.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleRange`
+
 #### Parameters
 
 ##### $value `float`
@@ -39,6 +47,10 @@ The start position of the range in scale units.
 
 ### opacity
 The opacity of the range.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleRange`
+
 #### Parameters
 
 ##### $value `float`
@@ -51,6 +63,10 @@ The opacity of the range.
 
 ### to
 The end position of the range in scale units.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScaleRange`
+
 #### Parameters
 
 ##### $value `float`

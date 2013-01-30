@@ -1,6 +1,6 @@
 ---
 title: GridPageableMessages
-slug: php-GridPageableMessages
+slug: php-ui-gridpageablemessages
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the messages setting of GridPageable.
 
 ### display
 Defines the info text.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ Defines the info text.
 
 ### _empty
 Defines the info text shown when there are no records to be displayed.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -38,6 +46,10 @@ Defines the info text shown when there are no records to be displayed.
 
 ### first
 Defines the text of the first page button tooltip.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -50,6 +62,10 @@ Defines the text of the first page button tooltip.
 
 ### itemsPerPage
 Defines the text displayed after the select element of the pageSizes mode.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +78,10 @@ Defines the text displayed after the select element of the pageSizes mode.
 
 ### last
 Defines the text of the last page button tooltip.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +94,10 @@ Defines the text of the last page button tooltip.
 
 ### next
 Defines the text of the next page button tooltip.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -86,6 +110,10 @@ Defines the text of the next page button tooltip.
 
 ### of
 Defines the last part of the text of the input option.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -98,6 +126,10 @@ Defines the last part of the text of the input option.
 
 ### page
 Defines the first part of the text of the input option.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -110,6 +142,10 @@ Defines the first part of the text of the input option.
 
 ### previous
 Defines the text of the previous page button tooltip.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`
@@ -122,6 +158,10 @@ Defines the text of the previous page button tooltip.
 
 ### refresh
 Defines the text of the refresh button tooltip.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
 #### Parameters
 
 ##### $value `string`

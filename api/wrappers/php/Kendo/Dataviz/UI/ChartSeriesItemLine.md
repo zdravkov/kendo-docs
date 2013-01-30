@@ -1,6 +1,6 @@
 ---
 title: ChartSeriesItemLine
-slug: php-ChartSeriesItemLine
+slug: php-dataviz-ui-chartseriesitemline
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the line setting of ChartSeriesItem.
 
 ### color
 The line color.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLine`
+
 #### Parameters
 
 ##### $value `string`
@@ -26,6 +30,10 @@ The line color.
 
 ### opacity
 The line opacity.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLine`
+
 #### Parameters
 
 ##### $value `float`
@@ -38,6 +46,10 @@ The line opacity.
 
 ### width
 The line width.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLine`
+
 #### Parameters
 
 ##### $value `string`

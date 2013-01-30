@@ -1,6 +1,6 @@
 ---
 title: ComboBoxAnimation
-slug: php-ComboBoxAnimation
+slug: php-ui-comboboxanimation
 tags: api, php
 publish: true
 ---
@@ -14,14 +14,17 @@ A PHP class representing the animation setting of ComboBox.
 
 ### close
 
+Animation to be used for closing of the popup.
+
+#### Returns
+`\Kendo\UI\ComboBoxAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\ComboBoxAnimationClose|array`
 
-Animation to be used for closing of the popup.
 
-
-#### Example - using \Kendo\UI\ComboBoxAnimationClose
+#### Example - using [\Kendo\UI\ComboBoxAnimationClose](/api/wrappers/php/kendo/ui/comboboxanimationclose)
 
     $animation = new \Kendo\UI\ComboBoxAnimation();
     $close = new \Kendo\UI\ComboBoxAnimationClose();
@@ -37,14 +40,17 @@ Animation to be used for closing of the popup.
 
 ### open
 
+Animation to be used for opening of the popup.
+
+#### Returns
+`\Kendo\UI\ComboBoxAnimation`
+
 #### Parameters
 
 ##### $value `\Kendo\UI\ComboBoxAnimationOpen|array`
 
-Animation to be used for opening of the popup.
 
-
-#### Example - using \Kendo\UI\ComboBoxAnimationOpen
+#### Example - using [\Kendo\UI\ComboBoxAnimationOpen](/api/wrappers/php/kendo/ui/comboboxanimationopen)
 
     $animation = new \Kendo\UI\ComboBoxAnimation();
     $open = new \Kendo\UI\ComboBoxAnimationOpen();

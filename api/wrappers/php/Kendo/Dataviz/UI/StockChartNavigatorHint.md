@@ -1,6 +1,6 @@
 ---
 title: StockChartNavigatorHint
-slug: php-StockChartNavigatorHint
+slug: php-dataviz-ui-stockchartnavigatorhint
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the hint setting of StockChartNavigator.
 
 ### format
 The format of the hint.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorHint`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,6 +31,10 @@ The format of the hint.
 ### template
 The hint template.
 Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorHint`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -43,6 +51,10 @@ Template variables:
 
 ### visible
 The visibility of the hint.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorHint`
+
 #### Parameters
 
 ##### $value `boolean`

@@ -1,6 +1,6 @@
 ---
 title: ChartXAxisItemTitle
-slug: php-ChartXAxisItemTitle
+slug: php-dataviz-ui-chartxaxisitemtitle
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the title setting of ChartXAxisItem.
 ### background
 The background color of the title. Any valid CSS color string will work here, including
 hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,14 +31,17 @@ hex and rgb.
 
 ### border
 
+The border of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\ChartXAxisItemTitleBorder|array`
 
-The border of the title.
 
-
-#### Example - using \Kendo\Dataviz\UI\ChartXAxisItemTitleBorder
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemTitleBorder](/api/wrappers/php/kendo/dataviz/ui/chartxaxisitemtitleborder)
 
     $title = new \Kendo\Dataviz\UI\ChartXAxisItemTitle();
     $border = new \Kendo\Dataviz\UI\ChartXAxisItemTitleBorder();
@@ -50,6 +57,10 @@ The border of the title.
 
 ### color
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -62,6 +73,10 @@ The text color of the title. Any valid CSS color string will work here, includin
 
 ### font
 The font style of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -74,6 +89,10 @@ The font style of the title.
 
 ### margin
 The margin of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `float|`
@@ -86,6 +105,10 @@ The margin of the title.
 
 ### padding
 The padding of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `float|`
@@ -98,6 +121,10 @@ The padding of the title.
 
 ### position
 The position of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -110,6 +137,10 @@ The position of the title.
 
 ### rotation
 The rotation angle of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `float`
@@ -122,6 +153,10 @@ The rotation angle of the title.
 
 ### text
 The text of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `string`
@@ -134,6 +169,10 @@ The text of the title.
 
 ### visible
 The visibility of the title.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemTitle`
+
 #### Parameters
 
 ##### $value `boolean`

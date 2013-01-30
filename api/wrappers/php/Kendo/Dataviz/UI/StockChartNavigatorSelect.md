@@ -1,6 +1,6 @@
 ---
 title: StockChartNavigatorSelect
-slug: php-StockChartNavigatorSelect
+slug: php-dataviz-ui-stockchartnavigatorselect
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the select setting of StockChartNavigator.
 
 ### from
 The lower boundary of the selected range.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSelect`
+
 #### Parameters
 
 ##### $value `date`
@@ -26,6 +30,10 @@ The lower boundary of the selected range.
 
 ### to
 The upper boundary of the selected range.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSelect`
+
 #### Parameters
 
 ##### $value `date`

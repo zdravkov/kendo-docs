@@ -1,6 +1,6 @@
 ---
 title: TabStripAnimationClose
-slug: php-TabStripAnimationClose
+slug: php-ui-tabstripanimationclose
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the close setting of TabStripAnimation.
 
 ### duration
 The number of milliseconds used for the visual animation when the current tab is closed.
+
+#### Returns
+`\Kendo\UI\TabStripAnimationClose`
+
 #### Parameters
 
 ##### $value `float`
@@ -27,6 +31,10 @@ The number of milliseconds used for the visual animation when the current tab is
 ### effects
 A whitespace-delimited string of animation effects that are utilized when the current tab
 is closed. By default not specified - uses the opening animation with reverse.
+
+#### Returns
+`\Kendo\UI\TabStripAnimationClose`
+
 #### Parameters
 
 ##### $value `string`

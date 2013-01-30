@@ -1,6 +1,6 @@
 ---
 title: RadialGaugeScaleLabels
-slug: php-RadialGaugeScaleLabels
+slug: php-dataviz-ui-radialgaugescalelabels
 tags: api, php
 publish: true
 ---
@@ -15,6 +15,10 @@ A PHP class representing the labels setting of RadialGaugeScale.
 ### background
 The background color of the labels.
 Any valid CSS color string will work here, including hex and rgb
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -27,14 +31,17 @@ Any valid CSS color string will work here, including hex and rgb
 
 ### border
 
+The border of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder|array`
 
-The border of the labels.
 
-
-#### Example - using \Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder](/api/wrappers/php/kendo/dataviz/ui/radialgaugescalelabelsborder)
 
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $border = new \Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder();
@@ -51,6 +58,10 @@ The border of the labels.
 ### color
 The text color of the labels.
 Any valid CSS color string will work here, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -63,6 +74,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 ### font
 The font style of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -75,6 +90,10 @@ The font style of the labels.
 
 ### format
 The format of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -87,6 +106,10 @@ The format of the labels.
 
 ### margin
 The margin of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -99,6 +122,10 @@ The margin of the labels.
 
 ### padding
 The padding of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `float|`
@@ -111,6 +138,10 @@ The padding of the labels.
 
 ### position
 The labels positions.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `string`
@@ -124,6 +155,10 @@ The labels positions.
 ### template
 The label template.
 Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `string|\Kendo\JavaScriptFunction`
@@ -140,6 +175,10 @@ Template variables:
 
 ### visible
 The visibility of the labels.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScaleLabels`
+
 #### Parameters
 
 ##### $value `boolean`

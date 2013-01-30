@@ -1,6 +1,6 @@
 ---
 title: GridSortable
-slug: php-GridSortable
+slug: php-ui-gridsortable
 tags: api, php
 publish: true
 ---
@@ -14,6 +14,10 @@ A PHP class representing the sortable setting of Grid.
 
 ### allowUnsort
 Defines whether column can have unsorted state.
+
+#### Returns
+`\Kendo\UI\GridSortable`
+
 #### Parameters
 
 ##### $value `boolean`
@@ -26,6 +30,10 @@ Defines whether column can have unsorted state.
 
 ### mode
 Defines sorting mode. Possible values:
+
+#### Returns
+`\Kendo\UI\GridSortable`
+
 #### Parameters
 
 ##### $value `string`
