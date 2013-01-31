@@ -4368,6 +4368,10 @@ using tools like [Inkscape](http://inkscape.org/) and
 Both programs provide command-line interface
 suitable for backend processing.
 
+#### Returns
+
+`String` the SVG representation of the chart.
+
 #### Example
 
     var chart = $("#chart").data("kendoChart");
