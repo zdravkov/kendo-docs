@@ -184,6 +184,90 @@ Options or URL for remote image retrieval.
 
 > **Important:** The value of `transport.remote` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
+### imageBrowser.transport.read.contentType `String`
+
+The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        read: {
+            contentType: "application/json"
+        }
+    }
+
+### imageBrowser.transport.read.data `Object|String|Function`
+
+Data to be send to the server.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example: Specify Data As Object
+    transport: {
+        read: {
+            data: {
+                id: 42,
+                name: "John Doe"
+            }
+        }
+    }
+
+#### Example: Specify Data As Function
+    transport: {
+        read: {
+            data: function() {
+                return {
+                    id: 42,
+                    name: "John Doe"
+                };
+            }
+        }
+    }
+
+### imageBrowser.transport.read.dataType `String`
+
+The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        read: {
+            dataType: "json"
+        }
+    }
+
+### imageBrowser.transport.read.type `String`
+
+The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        read: {
+            type: "POST"
+        }
+    }
+
+### imageBrowser.transport.read.url `String|Function`
+
+The remote url to call when creating a new record.
+
+#### Example
+    transport: {
+        read: {
+            url: "/read"
+        }
+    }
+
+#### Example: Specify Read URL As Function
+    transport: {
+        read: {
+            url: function(params) {
+                //build url
+                return "url";
+            }
+        }
+    }
+
 ### imageBrowser.transport.thumbnailUrl `String`
 
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
@@ -212,11 +296,180 @@ Options or URL which will handle the file and directory deletion. If not specifi
 
 > **Important:** The value of `transport.destroy` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
 
+### imageBrowser.transport.destroy.contentType `String`
+
+The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        destroy: {
+            contentType: "application/json"
+        }
+    }
+
+### imageBrowser.transport.destroy.data `Object|String|Function`
+
+Data to be send to the server.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example: Specify Data As Object
+    transport: {
+        destroy: {
+            data: {
+                id: 42,
+                name: "John Doe"
+            }
+        }
+    }
+
+#### Example: Specify Data As Function
+    transport: {
+        destroy: {
+            data: function() {
+                return {
+                    id: 42,
+                    name: "John Doe"
+                };
+            }
+        }
+    }
+
+### imageBrowser.transport.destroy.dataType `String`
+
+The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        destroy: {
+            dataType: "json"
+        }
+    }
+
+### imageBrowser.transport.destroy.type `String`
+
+The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        destroy: {
+            type: "POST"
+        }
+    }
+
+### imageBrowser.transport.destroy.url `String|Function`
+
+The remote url to call when creating a new record.
+
+#### Example
+    transport: {
+        destroy: {
+            url: "/destroy"
+        }
+    }
+
+#### Example: Specify Destroy URL As Function
+    transport: {
+        destroy: {
+            url: function(params) {
+                //build url
+                return "url";
+            }
+        }
+    }
+
 ### imageBrowser.transport.create `Object|String`
 
 Options or URL which will handle the directory creation. If not specified that create new folder button will not be present.
 
 > **Important:** The value of `transport.create` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+
+### imageBrowser.transport.create.contentType `String`
+
+The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        create: {
+            contentType: "application/json"
+        }
+    }
+
+### imageBrowser.transport.create.data `Object|String|Function`
+
+Data to be send to the server.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example: Specify Data As Object
+    transport: {
+        create: {
+            data: {
+                id: 42,
+                name: "John Doe"
+            }
+        }
+    }
+
+#### Example: Specify Data As Function
+    transport: {
+        create: {
+            data: function() {
+                return {
+                    id: 42,
+                    name: "John Doe"
+                };
+            }
+        }
+    }
+
+### imageBrowser.transport.create.dataType `String`
+
+The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        create: {
+            dataType: "json"
+        }
+    }
+
+### imageBrowser.transport.create.type `String`
+
+The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+    transport: {
+        create: {
+            type: "POST"
+        }
+    }
+
+### imageBrowser.transport.create.url `String|Function`
+
+The remote url to call when creating a new record.
+
+#### Example
+    transport: {
+        create: {
+            url: "/create"
+        }
+    }
+
+#### Example: Specify Create URL As Function
+    transport: {
+        create: {
+            url: function(params) {
+                //build url
+                return "url";
+            }
+        }
+    }
+
 
 ### imageBrowser.schema `Object`
 
