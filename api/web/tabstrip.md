@@ -336,7 +336,7 @@ Disables (**false**) or enables (**true**) a tab(s) of a **TabStrip**.
 The target tab(s), specified as a selector, to be enabled (**true**) or disabled
 (**false**).
 
-##### enable `Boolean`
+##### enable `Boolean` *(optional)*
 
 Desired state of the tab(s) specified by the selector; enabled (**true**) or disabled
 (**false**).
@@ -471,7 +471,7 @@ The target tab(s), specified as a selector, to be removed.
 
 ### select
 
-Selects the specified tab(s) within a **TabStrip**. If called without arguments, it returns the
+Get/set the selected tab. If called without arguments, it returns the
 currently selected tab.
 
 #### Example
@@ -486,12 +486,11 @@ currently selected tab.
 
 ##### element `Selector|Number`
 
-or index
 The target tab(s), specified as a selector or index in the tab group.
 
 #### Returns
 
-`kendo.ui.TabStrip` Returns the TabStrip object to support chaining.
+`jQuery` the selected tab if called without arguments. `kendo.ui.TabStrip` if called with arguments.
 
 ## Events
 
