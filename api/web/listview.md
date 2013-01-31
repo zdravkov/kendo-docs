@@ -268,7 +268,11 @@ Items to select.
 
 Sets the dataSource of an existing ListView and rebinds it.
 
-### Example
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+#### Example
 
     var dataSource = new kendo.data.DataSource({
         //dataSource configuration

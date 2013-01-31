@@ -410,7 +410,11 @@ LI element or index of the item or predicate function, which defines the item th
 
 Sets the dataSource of an existing DropDownList and rebinds it.
 
-### Example
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+#### Example
 
     var dataSource = new kendo.data.DataSource({
         //dataSource configuration

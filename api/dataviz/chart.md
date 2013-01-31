@@ -4346,7 +4346,11 @@ Reloads the data and repaints the chart.
 
 Sets the dataSource of an existing Chart and rebinds it.
 
-### Example
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+#### Example
 
     var dataSource = new kendo.data.DataSource({
         //dataSource configuration

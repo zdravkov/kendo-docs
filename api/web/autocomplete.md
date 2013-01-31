@@ -229,7 +229,7 @@ the dataSource.
         suggest: true
     });
 
-### template `String`
+### template `String|Function`
 
 Template to be used for rendering the items in the list.
 
@@ -372,7 +372,11 @@ A jQuery object which represents the item which should be selected.
 
 Sets the dataSource of an existing AutoComplete and rebinds it.
 
-### Example
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+#### Example
 
     var dataSource = new kendo.data.DataSource({
         //dataSource configuration

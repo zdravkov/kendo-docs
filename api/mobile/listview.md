@@ -170,7 +170,11 @@ repaints the listview (works only in databound mode).
 
 Sets the dataSource of an existing ListView and rebinds it.
 
-### Example
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+#### Example
 
     var dataSource = new kendo.data.DataSource({
         //dataSource configuration

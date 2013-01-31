@@ -543,7 +543,11 @@ If provided, the node of a TreeView that should be selected.
 
 Sets the dataSource of an existing TreeView and rebinds it.
 
-#### Binding to a new HierarchicalDataSource
+#### Parameters
+
+##### dataSource `kendo.data.HierarchicalDataSource`
+
+#### Example
 
     var dataSource = new kendo.data.HierarchicalDataSource({
         data: [
