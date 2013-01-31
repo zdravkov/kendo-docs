@@ -121,6 +121,30 @@ The JavaScript function executed when the user clicks the command button.
 
 Provides a way to specify custom editor for this column.
 
+#### Parameters
+
+##### container `jQuery`
+
+The jQuery object representing the editor container element.
+
+##### options `Object`
+
+##### options.field `String`
+
+The name of the field which the column represents.
+
+##### options.format `String`
+
+The format string of the column specified via `columns.format`.
+
+##### options.model `kendo.data.Model`
+
+The model instance.
+
+##### options.values `Array`
+
+Array of values specified via `columns.values`.
+
 #### Example
 
     $(".k-grid").kendoGrid({
@@ -1171,7 +1195,7 @@ Puts the specified table cell in edit mode. It requires a jQuery object represen
 
 #### Parameters
 
-##### cell `Selector`
+##### cell `String|jQuery|Element`
 
 Cell to be edited.
 
@@ -1338,7 +1362,11 @@ Items to select.
 
 Sets the dataSource of an existing Grid and rebinds it.
 
-### Example
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+#### Example
 
     var dataSource = new kendo.data.DataSource({
         //dataSource configuration
