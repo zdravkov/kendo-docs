@@ -160,15 +160,35 @@ Triggered when a Window is closed (by a user or through the close() method).
     $window->close(new \Kendo\JavaScriptFunction('function(e) { }'));
 
 ### content
-The content of the window
+
+Sets the HTML content of the Window.
 
 #### Returns
-`\Kendo\UI\Window`
 
-#### Parameters
+`Window`
 
-##### $value ``
+#### $value `string`
 
+#### Example
+
+    $window = new \Kendo\UI\Window('Window');
+    $window->content('<strong>Content</strong>');
+
+
+### content
+
+Sets the HTML content of the Window.
+
+#### Returns
+
+`Window`
+
+#### $value `string`
+
+#### Example
+
+    $window = new \Kendo\UI\Window('Window');
+    $window->content('<strong>Content</strong>');
 
 
 ### deactivate
@@ -280,6 +300,21 @@ Triggered when the user starts to move the window.
 
     $window = new \Kendo\UI\Window('Window');
     $window->dragstart(new \Kendo\JavaScriptFunction('function(e) { }'));
+
+### endContent
+
+Stops output bufferring and sets the preceding markup as the content of the Window.
+
+#### Example
+
+    <?php
+    $window = new \Kendo\UI\Window('Window');
+    $window->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $window->endContent(); // content is set to <strong>Content</strong>
+    ?>
 
 ### error
 Triggered when an AJAX request for content fails.
@@ -535,6 +570,22 @@ Triggered when a Window has been resized by a user.
 
     $window = new \Kendo\UI\Window('Window');
     $window->resize(new \Kendo\JavaScriptFunction('function(e) { }'));
+
+### startContent
+
+Starts output bufferring. Any following markup will be set as the content of the Window.
+
+#### Example
+
+    <?php
+    $window = new \Kendo\UI\Window('Window');
+    $window->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $window->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 
 ### title
 The text in the window title bar. If false, the window will be displayed without a title bar. Note that this will prevent the window from being dragged, and the window titlebar buttons will not be shown.

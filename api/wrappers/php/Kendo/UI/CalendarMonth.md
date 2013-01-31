@@ -13,20 +13,20 @@ A PHP class representing the month setting of Calendar.
 ## Methods
 
 ### content
-Template to be used for rendering the cells in the "month" view, which are in range.
+
+Sets the HTML content of the CalendarMonth.
 
 #### Returns
-`\Kendo\UI\CalendarMonth`
 
-#### Parameters
+`CalendarMonth`
 
-##### $value `string`
+#### $value `string`
 
+#### Example
 
-
-#### Example 
     $month = new \Kendo\UI\CalendarMonth();
-    $month->content('value');
+    $month->content('<strong>Content</strong>');
+
 
 ### _empty
 Template to be used for rendering the cells in the "month" view, which are not in the min/max range.

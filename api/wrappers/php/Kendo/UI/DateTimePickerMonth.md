@@ -13,20 +13,20 @@ A PHP class representing the month setting of DateTimePicker.
 ## Methods
 
 ### content
-Template to be used for rendering the cells in the calendar "month" view, which are in range.
+
+Sets the HTML content of the DateTimePickerMonth.
 
 #### Returns
-`\Kendo\UI\DateTimePickerMonth`
 
-#### Parameters
+`DateTimePickerMonth`
 
-##### $value `string`
+#### $value `string`
 
+#### Example
 
-
-#### Example 
     $month = new \Kendo\UI\DateTimePickerMonth();
-    $month->content('value');
+    $month->content('<strong>Content</strong>');
+
 
 ### _empty
 The template used for rendering the cells in the calendar "month" view, which are not in the range between

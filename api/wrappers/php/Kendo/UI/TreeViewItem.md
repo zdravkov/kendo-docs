@@ -12,6 +12,22 @@ A PHP class representing the item setting of TreeViewItems.
 
 ## Methods
 
+### content
+
+Sets the HTML content of the TreeViewItem.
+
+#### Returns
+
+`TreeViewItem`
+
+#### $value `string`
+
+#### Example
+
+    $item = new \Kendo\UI\TreeViewItem();
+    $item->content('<strong>Content</strong>');
+
+
 ### enabled
 Specifies whether the item is initially enabled
 
@@ -27,6 +43,21 @@ Specifies whether the item is initially enabled
 #### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->enabled(true);
+
+### endContent
+
+Stops output bufferring and sets the preceding markup as the content of the TreeViewItem.
+
+#### Example
+
+    <?php
+    $item = new \Kendo\UI\TreeViewItem();
+    $item->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $item->endContent(); // content is set to <strong>Content</strong>
+    ?>
 
 ### expanded
 Specifies whether the item is initially expanded
@@ -91,6 +122,22 @@ Specifies the class name for the sprite image displayed by the item
 #### Example 
     $item = new \Kendo\UI\TreeViewItem();
     $item->spriteCssClass('value');
+
+### startContent
+
+Starts output bufferring. Any following markup will be set as the content of the TreeViewItem.
+
+#### Example
+
+    <?php
+    $item = new \Kendo\UI\TreeViewItem();
+    $item->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $item->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 
 ### text
 Specifies the text displayed by the item
