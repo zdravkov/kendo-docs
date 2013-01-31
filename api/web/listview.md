@@ -245,7 +245,7 @@ Saves edited ListView item. If validation succeeds will call DataSource sync met
 
 ### select
 
-Selects the specified ListView item. If called without arguments - returns the selected items.
+Get/set the selected listview item(s).
 
 #### Example
 
@@ -253,6 +253,10 @@ Selects the specified ListView item. If called without arguments - returns the s
     var listView = $("#listView").data("kendoListView");
     // selects first list view item
     listView.select(listView.element.children().first());
+
+#### Returns
+
+`jQuery` the selected items if called without arguments.
 
 #### Parameters
 
