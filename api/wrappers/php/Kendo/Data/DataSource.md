@@ -10,7 +10,6 @@ publish: true
 A PHP class representing Kendo [DataSource](/api/framework/datasource).
 
 
-
 ## Methods
 
 ### addAggregateItem
