@@ -1391,7 +1391,7 @@ otherwise operations are executed over the available data.
 
 #### Parameters
 
-##### callback `Function`
+##### callback `Function` *(optional)*
 
 Optional callback which will be executed when the data is ready.
 
@@ -1527,6 +1527,24 @@ Get if DataSource has changes.
 
 `Boolean` True if DataSource records are modified. Otherwise, false.
 
+### indexOf
+
+Get the index of the specified `kendo.data.ObservableObject` or `kendo.data.Model`.
+
+#### Returns
+
+`Number` the index of the specified value.
+
+#### Parameters
+
+##### value `kendo.data.ObservableObject`
+
+#### Example
+
+    var item = dataSource.at(0);
+
+    dataSource.indexOf(item); // returns 0
+
 ### insert
 
 Inserts a new data item in the DataSource.
@@ -1551,7 +1569,7 @@ Either a [kendo.data.Model](/api/framework/model) instance or JavaScript object 
 
 ### page
 
-Get current page index or request a page with specified index.
+Get/set the current page index.
 
 #### Example
 
@@ -1569,7 +1587,7 @@ The index of the page to be retrieved
 
 ### pageSize
 
-Get current pageSize or request a page with specified number of records.
+Get/set the current pageSize or request a page with specified number of records.
 
 #### Example
 
