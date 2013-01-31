@@ -537,7 +537,7 @@ If provided, the node of a TreeView that should be selected.
 
 #### Returns
 
-`Element` The selected node of a TreeView.
+`jQuery` The selected node of a TreeView.
 
 ### setDataSource
 
