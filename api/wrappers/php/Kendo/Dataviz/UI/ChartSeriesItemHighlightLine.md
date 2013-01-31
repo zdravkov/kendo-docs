@@ -25,8 +25,10 @@ The line color.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightLine();
     $line->color('value');
+    ?>
 
 ### opacity
 The opacity of the line.
@@ -41,8 +43,10 @@ The opacity of the line.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightLine();
     $line->opacity(1);
+    ?>
 
 ### width
 The width of the line.
@@ -57,6 +61,8 @@ The width of the line.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightLine();
     $line->width(1);
+    ?>
 

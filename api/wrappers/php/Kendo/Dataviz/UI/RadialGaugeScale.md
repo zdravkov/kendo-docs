@@ -26,8 +26,10 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->endAngle(1);
+    ?>
 
 ### labels
 
@@ -42,18 +44,21 @@ Configures the scale labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleLabels](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeScaleLabels)
-
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $labels = new \Kendo\Dataviz\UI\RadialGaugeScaleLabels();
     $background = 'value';
     $labels->background($background);
     $scale->labels($labels);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $background = 'value';
     $scale->labels(array('background' => $background));
+    ?>
 
 ### majorTicks
 
@@ -68,18 +73,21 @@ Configures the scale major ticks.
 
 
 #### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeScaleMajorTicks)
-
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $majorTicks = new \Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks();
     $color = 'value';
     $majorTicks->color($color);
     $scale->majorTicks($majorTicks);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $color = 'value';
     $scale->majorTicks(array('color' => $color));
+    ?>
 
 ### majorUnit
 The interval between major divisions.
@@ -94,8 +102,10 @@ The interval between major divisions.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->majorUnit(1);
+    ?>
 
 ### max
 The maximum value of the scale.
@@ -110,8 +120,10 @@ The maximum value of the scale.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->max(1);
+    ?>
 
 ### min
 The minimum value of the scale.
@@ -126,8 +138,10 @@ The minimum value of the scale.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->min(1);
+    ?>
 
 ### minorTicks
 
@@ -142,18 +156,21 @@ Configures the scale minor ticks.
 
 
 #### Example - using [\Kendo\Dataviz\UI\RadialGaugeScaleMinorTicks](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeScaleMinorTicks)
-
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $minorTicks = new \Kendo\Dataviz\UI\RadialGaugeScaleMinorTicks();
     $color = 'value';
     $minorTicks->color($color);
     $scale->minorTicks($minorTicks);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $color = 'value';
     $scale->minorTicks(array('color' => $color));
+    ?>
 
 ### minorUnit
 The interval between minor divisions.
@@ -168,8 +185,10 @@ The interval between minor divisions.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->minorUnit(1);
+    ?>
 
 ### addRange
 
@@ -184,24 +203,30 @@ Adds one or more RadialGaugeScaleRange to the RadialGaugeScale.
 
 #### Example - using \Kendo\Dataviz\UI\RadialGaugeScaleRange
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $range = new \Kendo\Dataviz\UI\RadialGaugeScaleRange();
     $color = 'value';
     $range->color($color);
     $scale->addRange($range);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $color = 'value';
     $scale->addRange(array('color' => $color));
+    ?>
 
 #### Example - adding more than one RadialGaugeScaleRange
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $first  = new \Kendo\Dataviz\UI\RadialGaugeScaleRange();
     $second = new \Kendo\Dataviz\UI\RadialGaugeScaleRange();
     $scale->addRange($first, $second);
+    ?>
 
 ### reverse
 Reverses the scale direction - values are increase anticlockwise.
@@ -216,8 +241,10 @@ Reverses the scale direction - values are increase anticlockwise.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->reverse(true);
+    ?>
 
 ### startAngle
 The start angle of the gauge.
@@ -233,6 +260,8 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
     $scale->startAngle(1);
+    ?>
 

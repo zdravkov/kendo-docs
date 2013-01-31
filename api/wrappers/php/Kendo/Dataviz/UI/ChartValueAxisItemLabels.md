@@ -26,8 +26,10 @@ hex and rgb
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->background('value');
+    ?>
 
 ### border
 
@@ -42,18 +44,21 @@ The border of the labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemLabelsBorder)
-
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $border = new \Kendo\Dataviz\UI\ChartValueAxisItemLabelsBorder();
     $color = 'value';
     $border->color($color);
     $labels->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $color = 'value';
     $labels->border(array('color' => $color));
+    ?>
 
 ### color
 The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
@@ -68,8 +73,10 @@ The text color of the labels. Any valid CSS color string will work here, includi
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->color('value');
+    ?>
 
 ### font
 The font style of the labels.
@@ -84,8 +91,10 @@ The font style of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->font('value');
+    ?>
 
 ### format
 The format of the labels.
@@ -100,8 +109,10 @@ The format of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->format('value');
+    ?>
 
 ### margin
 The margin of the labels.
@@ -116,8 +127,10 @@ The margin of the labels.
 
 
 #### Example  - using float
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->margin(1);
+    ?>
 
 ### mirror
 Mirrors the axis labels and ticks.
@@ -134,8 +147,10 @@ mirroring the axis will render them to the right.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->mirror(true);
+    ?>
 
 ### padding
 The padding of the labels.
@@ -150,8 +165,10 @@ The padding of the labels.
 
 
 #### Example  - using float
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->padding(1);
+    ?>
 
 ### rotation
 The rotation angle of the labels.
@@ -166,8 +183,10 @@ The rotation angle of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->rotation(1);
+    ?>
 
 ### skip
 Number of labels to skip.
@@ -183,8 +202,10 @@ Skips rendering the first n labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->skip(1);
+    ?>
 
 ### step
 Label rendering step.
@@ -200,8 +221,10 @@ Every n-th label is rendered where n is the step
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->step(1);
+    ?>
 
 ### template
 The label template.
@@ -217,12 +240,16 @@ Template variables:
 
 
 #### Example  - using string
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->template('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### visible
 The visibility of the labels.
@@ -237,6 +264,8 @@ The visibility of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartValueAxisItemLabels();
     $labels->visible(true);
+    ?>
 

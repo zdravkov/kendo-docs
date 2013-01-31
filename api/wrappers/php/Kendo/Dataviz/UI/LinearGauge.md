@@ -46,18 +46,21 @@ This is the entire visible area of the gauge.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugeGaugeArea](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeGaugeArea)
-
+    <?php
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $gaugeArea = new \Kendo\Dataviz\UI\LinearGaugeGaugeArea();
     $height = 1;
     $gaugeArea->height($height);
     $linearGauge->gaugeArea($gaugeArea);
+    ?>
 
 #### Example - using array
 
+    <?php
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $height = 1;
     $linearGauge->gaugeArea(array('height' => $height));
+    ?>
 
 ### pointer
 
@@ -72,18 +75,21 @@ The pointer configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugePointer](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugePointer)
-
+    <?php
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $color = 'value';
     $pointer->color($color);
     $linearGauge->pointer($pointer);
+    ?>
 
 #### Example - using array
 
+    <?php
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $color = 'value';
     $linearGauge->pointer(array('color' => $color));
+    ?>
 
 ### scale
 
@@ -98,18 +104,21 @@ Configures the scale.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugeScale](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeScale)
-
+    <?php
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $majorUnit = 1;
     $scale->majorUnit($majorUnit);
     $linearGauge->scale($scale);
+    ?>
 
 #### Example - using array
 
+    <?php
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $majorUnit = 1;
     $linearGauge->scale(array('majorUnit' => $majorUnit));
+    ?>
 
 ### transitions
 A value indicating if transition animations should be played.
@@ -124,6 +133,8 @@ A value indicating if transition animations should be played.
 
 
 #### Example 
+    <?php
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $linearGauge->transitions(true);
+    ?>
 

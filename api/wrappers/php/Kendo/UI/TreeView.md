@@ -46,18 +46,21 @@ Setting this option to false will disable all animations.
 
 
 #### Example - using [\Kendo\UI\TreeViewAnimation](/api/wrappers/php/Kendo/UI/TreeViewAnimation)
-
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $animation = new \Kendo\UI\TreeViewAnimation();
     $collapse = new \Kendo\UI\TreeViewAnimationCollapse();
     $animation->collapse($collapse);
     $treeView->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $collapse = new \Kendo\UI\TreeViewAnimationCollapse();
     $treeView->animation(array('collapse' => $collapse));
+    ?>
 
 ### checkboxes
 
@@ -74,23 +77,28 @@ If true or an object, renders checkboxes within each treeview item.
 
 
 #### Example  - using boolean
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->checkboxes(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\TreeViewCheckboxes](/api/wrappers/php/Kendo/UI/TreeViewCheckboxes)
-
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $checkboxes = new \Kendo\UI\TreeViewCheckboxes();
     $checkChildren = true;
     $checkboxes->checkChildren($checkChildren);
     $treeView->checkboxes($checkboxes);
+    ?>
 
 #### Example - using array
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $checkChildren = true;
     $treeView->checkboxes(array('checkChildren' => $checkChildren));
+    ?>
 
 ### collapse
 Triggered before a subgroup gets collapsed.
@@ -104,8 +112,10 @@ Triggered before a subgroup gets collapsed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->collapse('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -120,8 +130,10 @@ Triggered before a subgroup gets collapsed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->collapse(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataBound
 Triggered after the dataSource change event has been processed (adding/removing items);
@@ -135,8 +147,10 @@ Triggered after the dataSource change event has been processed (adding/removing 
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dataBound('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -151,8 +165,10 @@ Triggered after the dataSource change event has been processed (adding/removing 
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dataBound(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataImageUrlField
 Sets the field of the data item that provides
@@ -168,8 +184,10 @@ the image URL of the treeview nodes.
 
 
 #### Example 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dataImageUrlField('value');
+    ?>
 
 ### dataSource
 
@@ -184,15 +202,19 @@ Sets the data source of the dataSource.
 
 #### Example - using [\Kendo\Data\HierarchicalDataSource](/api/wrappers/php/kendo/data/hierarchicaldatasource)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $dataSource = new \Kendo\Data\HierarchicalDataSource();
     $treeView->dataSource($dataSource);
+    ?>
 
 #### Example - using array
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $schema = new \Kendo\Data\DataSourceSchema();
     $treeView->dataSource(array('schema' => $schema));
+    ?>
 
 ### dataSpriteCssClassField
 Sets the field of the data item that provides
@@ -208,8 +230,10 @@ the sprite CSS class of the treeview nodes.
 
 
 #### Example 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dataSpriteCssClassField('value');
+    ?>
 
 ### dataTextField
 Sets the field of the data item that provides
@@ -225,8 +249,10 @@ the text content of the treeview nodes.
 
 
 #### Example 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dataTextField('value');
+    ?>
 
 ### dataUrlField
 Sets the field of the data item that provides
@@ -242,8 +268,10 @@ the link URL of the treeview nodes.
 
 
 #### Example 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dataUrlField('value');
+    ?>
 
 ### drag
 Triggered while a node is being dragged.
@@ -257,8 +285,10 @@ Triggered while a node is being dragged.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->drag('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -273,8 +303,10 @@ Triggered while a node is being dragged.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->drag(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dragAndDrop
 Disables (false) or enables (true) drag-and-drop on the nodes of a
@@ -290,8 +322,10 @@ TreeView.
 
 
 #### Example 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dragAndDrop(true);
+    ?>
 
 ### dragend
 Triggered after a node has been dropped.
@@ -305,8 +339,10 @@ Triggered after a node has been dropped.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dragend('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -321,8 +357,10 @@ Triggered after a node has been dropped.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dragend(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dragstart
 Triggered before the dragging of a node starts.
@@ -336,8 +374,10 @@ Triggered before the dragging of a node starts.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dragstart('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -352,8 +392,10 @@ Triggered before the dragging of a node starts.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dragstart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### drop
 Triggered when a node is being dropped.
@@ -367,8 +409,10 @@ Triggered when a node is being dropped.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->drop('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -383,8 +427,10 @@ Triggered when a node is being dropped.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->drop(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### expand
 Triggered before a subgroup gets expanded.
@@ -398,8 +444,10 @@ Triggered before a subgroup gets expanded.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->expand('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -414,8 +462,10 @@ Triggered before a subgroup gets expanded.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->expand(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### addItem
 
@@ -430,24 +480,30 @@ Adds one or more TreeViewItem to the TreeView.
 
 #### Example - using \Kendo\UI\TreeViewItem
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $item = new \Kendo\UI\TreeViewItem();
     $enabled = true;
     $item->enabled($enabled);
     $treeView->addItem($item);
+    ?>
 
 #### Example - using array
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $enabled = true;
     $treeView->addItem(array('enabled' => $enabled));
+    ?>
 
 #### Example - adding more than one TreeViewItem
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $first  = new \Kendo\UI\TreeViewItem();
     $second = new \Kendo\UI\TreeViewItem();
     $treeView->addItem($first, $second);
+    ?>
 
 ### loadOnDemand
 Indicates whether the child datasources should be fetched
@@ -465,8 +521,10 @@ HierarchicalDataSource instance), the default value of this option is false.
 
 
 #### Example 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->loadOnDemand(true);
+    ?>
 
 ### navigate
 Triggered when the user moves the focus on another node
@@ -480,8 +538,10 @@ Triggered when the user moves the focus on another node
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->navigate('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -496,8 +556,10 @@ Triggered when the user moves the focus on another node
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->navigate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### select
 Triggered when a node gets selected.
@@ -511,8 +573,10 @@ Triggered when a node gets selected.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -527,8 +591,10 @@ Triggered when a node gets selected.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### template
 Template for rendering of the nodes of the treeview.
@@ -543,10 +609,14 @@ Template for rendering of the nodes of the treeview.
 
 
 #### Example  - using string
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->template('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 

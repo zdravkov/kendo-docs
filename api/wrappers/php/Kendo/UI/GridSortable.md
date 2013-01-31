@@ -25,8 +25,10 @@ Defines whether column can have unsorted state.
 
 
 #### Example 
+    <?php
     $sortable = new \Kendo\UI\GridSortable();
     $sortable->allowUnsort(true);
+    ?>
 
 ### mode
 Defines sorting mode. Possible values:
@@ -41,6 +43,8 @@ Defines sorting mode. Possible values:
 
 
 #### Example 
+    <?php
     $sortable = new \Kendo\UI\GridSortable();
     $sortable->mode('value');
+    ?>
 

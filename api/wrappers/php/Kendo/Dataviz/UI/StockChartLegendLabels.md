@@ -26,8 +26,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();
     $labels->color('value');
+    ?>
 
 ### font
 The font style of the labels.
@@ -42,8 +44,10 @@ The font style of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();
     $labels->font('value');
+    ?>
 
 ### template
 The template of the labels.
@@ -61,6 +65,8 @@ Template variables:
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();
     $labels->template('value');
+    ?>
 

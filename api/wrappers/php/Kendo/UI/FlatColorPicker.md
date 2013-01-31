@@ -45,8 +45,10 @@ Specifies whether we should display the Apply / Cancel buttons.
 
 
 #### Example 
+    <?php
     $flatColorPicker = new \Kendo\UI\FlatColorPicker('FlatColorPicker');
     $flatColorPicker->buttons(true);
+    ?>
 
 ### change
 Triggers when a new color has been selected.
@@ -60,8 +62,10 @@ Triggers when a new color has been selected.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $flatColorPicker = new \Kendo\UI\FlatColorPicker('FlatColorPicker');
     $flatColorPicker->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -76,8 +80,10 @@ Triggers when a new color has been selected.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $flatColorPicker = new \Kendo\UI\FlatColorPicker('FlatColorPicker');
     $flatColorPicker->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### messages
 Allows customization of "Apply" / "Cancel" labels.
@@ -105,8 +111,10 @@ selection of transparency.
 
 
 #### Example 
+    <?php
     $flatColorPicker = new \Kendo\UI\FlatColorPicker('FlatColorPicker');
     $flatColorPicker->opacity(true);
+    ?>
 
 ### preview
 Specifies whether we should display the preview bar which displays the
@@ -122,6 +130,8 @@ current color and the input field.
 
 
 #### Example 
+    <?php
     $flatColorPicker = new \Kendo\UI\FlatColorPicker('FlatColorPicker');
     $flatColorPicker->preview(true);
+    ?>
 

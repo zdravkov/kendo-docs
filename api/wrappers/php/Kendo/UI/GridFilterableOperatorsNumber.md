@@ -25,8 +25,10 @@ Enable/Disable and set the text of the "Is equal to" filter option for columns w
 
 
 #### Example 
+    <?php
     $number = new \Kendo\UI\GridFilterableOperatorsNumber();
     $number->eq('value');
+    ?>
 
 ### gt
 Enable/Disable and set the text of the "Is greater than" filter option for columns with number values.
@@ -41,8 +43,10 @@ Enable/Disable and set the text of the "Is greater than" filter option for colum
 
 
 #### Example 
+    <?php
     $number = new \Kendo\UI\GridFilterableOperatorsNumber();
     $number->gt('value');
+    ?>
 
 ### gte
 Enable/Disable and set the text of the "Is greater than or equal to" filter option for columns with number values.
@@ -57,8 +61,10 @@ Enable/Disable and set the text of the "Is greater than or equal to" filter opti
 
 
 #### Example 
+    <?php
     $number = new \Kendo\UI\GridFilterableOperatorsNumber();
     $number->gte('value');
+    ?>
 
 ### lt
 Enable/Disable and set the text of the "Is less than" filter option for columns with number values.
@@ -73,8 +79,10 @@ Enable/Disable and set the text of the "Is less than" filter option for columns 
 
 
 #### Example 
+    <?php
     $number = new \Kendo\UI\GridFilterableOperatorsNumber();
     $number->lt('value');
+    ?>
 
 ### lte
 Enable/Disable and set the text of the "Is less than or equal to" filter option for columns with number values.
@@ -89,8 +97,10 @@ Enable/Disable and set the text of the "Is less than or equal to" filter option 
 
 
 #### Example 
+    <?php
     $number = new \Kendo\UI\GridFilterableOperatorsNumber();
     $number->lte('value');
+    ?>
 
 ### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for columns with number values.
@@ -105,6 +115,8 @@ Enable/Disable and set the text of the "Is not equal to" filter option for colum
 
 
 #### Example 
+    <?php
     $number = new \Kendo\UI\GridFilterableOperatorsNumber();
     $number->neq('value');
+    ?>
 

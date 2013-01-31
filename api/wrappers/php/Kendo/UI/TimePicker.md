@@ -45,18 +45,21 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
 
 
 #### Example - using [\Kendo\UI\TimePickerAnimation](/api/wrappers/php/Kendo/UI/TimePickerAnimation)
-
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $animation = new \Kendo\UI\TimePickerAnimation();
     $close = new \Kendo\UI\TimePickerAnimationClose();
     $animation->close($close);
     $timePicker->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $close = new \Kendo\UI\TimePickerAnimationClose();
     $timePicker->animation(array('close' => $close));
+    ?>
 
 ### change
 Triggered when the underlying value of a TimePicker is changed.
@@ -70,8 +73,10 @@ Triggered when the underlying value of a TimePicker is changed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -86,8 +91,10 @@ Triggered when the underlying value of a TimePicker is changed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### close
 Fires when the time drop-down list is closed
@@ -101,8 +108,10 @@ Fires when the time drop-down list is closed
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->close('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -117,8 +126,10 @@ Fires when the time drop-down list is closed
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->close(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### culture
 Specifies the culture info used by the widget.
@@ -133,8 +144,10 @@ Specifies the culture info used by the widget.
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->culture('value');
+    ?>
 
 ### dates
 Specifies a list of dates, which are shown in the time drop-down list. If not set, the DateTimePicker will auto-generate the available times.
@@ -149,8 +162,10 @@ Specifies a list of dates, which are shown in the time drop-down list. If not se
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->dates(new array());
+    ?>
 
 ### format
 Specifies the format, which is used to format the value of the TimePicker displayed in the input. The format also will be used to parse the input.
@@ -165,8 +180,10 @@ Specifies the format, which is used to format the value of the TimePicker displa
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->format('value');
+    ?>
 
 ### interval
 Specifies the interval, between values in the popup list, in minutes.
@@ -181,8 +198,10 @@ Specifies the interval, between values in the popup list, in minutes.
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->interval(1);
+    ?>
 
 ### max
 Specifies the end value in the popup list.
@@ -197,8 +216,10 @@ Specifies the end value in the popup list.
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->max(new date());
+    ?>
 
 ### min
 Specifies the start value in the popup list.
@@ -213,8 +234,10 @@ Specifies the start value in the popup list.
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->min(new date());
+    ?>
 
 ### open
 Fires when the time drop-down list is opened
@@ -228,8 +251,10 @@ Fires when the time drop-down list is opened
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->open('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -244,8 +269,10 @@ Fires when the time drop-down list is opened
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->open(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### parseFormats
 Specifies the formats, which are used to parse the value set with the value method or by direct input. If not set the value of the options.format will be used. Note that value of the format option is always used.
@@ -260,8 +287,10 @@ Specifies the formats, which are used to parse the value set with the value meth
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->parseFormats(new array());
+    ?>
 
 ### value
 Specifies the selected time.
@@ -276,6 +305,8 @@ Specifies the selected time.
 
 
 #### Example 
+    <?php
     $timePicker = new \Kendo\UI\TimePicker('TimePicker');
     $timePicker->value(new date());
+    ?>
 

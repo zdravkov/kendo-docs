@@ -25,16 +25,19 @@ Sets the messages displayed during grouping.
 
 
 #### Example - using [\Kendo\UI\GridGroupableMessages](/api/wrappers/php/Kendo/UI/GridGroupableMessages)
-
+    <?php
     $groupable = new \Kendo\UI\GridGroupable();
     $messages = new \Kendo\UI\GridGroupableMessages();
     $empty = 'value';
     $messages->_empty($empty);
     $groupable->messages($messages);
+    ?>
 
 #### Example - using array
 
+    <?php
     $groupable = new \Kendo\UI\GridGroupable();
     $empty = 'value';
     $groupable->messages(array('empty' => $empty));
+    ?>
 

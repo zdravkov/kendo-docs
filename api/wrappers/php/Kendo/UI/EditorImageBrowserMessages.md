@@ -25,8 +25,10 @@ Defines text for dialog shown when the file or directory is deleted.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->deleteFile('value');
+    ?>
 
 ### directoryNotFound
 Defines text for dialog shown when the directory not found error occurs.
@@ -41,8 +43,10 @@ Defines text for dialog shown when the directory not found error occurs.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->directoryNotFound('value');
+    ?>
 
 ### emptyFolder
 Defines text displayed when folder does not contain items.
@@ -57,8 +61,10 @@ Defines text displayed when folder does not contain items.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->emptyFolder('value');
+    ?>
 
 ### invalidFileType
 Defines text for dialog shown when an invalid file is set for upload.
@@ -73,8 +79,10 @@ Defines text for dialog shown when an invalid file is set for upload.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->invalidFileType('value');
+    ?>
 
 ### orderBy
 Defines text for order by label.
@@ -89,8 +97,10 @@ Defines text for order by label.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->orderBy('value');
+    ?>
 
 ### orderByName
 Defines text for Name item of order by drop down list.
@@ -105,8 +115,10 @@ Defines text for Name item of order by drop down list.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->orderByName('value');
+    ?>
 
 ### orderBySize
 Defines text for Size item of order by drop down list.
@@ -121,8 +133,10 @@ Defines text for Size item of order by drop down list.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->orderBySize('value');
+    ?>
 
 ### overwriteFile
 Defines text for dialog shown when an already existing file is set for upload.
@@ -137,8 +151,10 @@ Defines text for dialog shown when an already existing file is set for upload.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->overwriteFile('value');
+    ?>
 
 ### uploadFile
 Defines text for upload button.
@@ -153,6 +169,8 @@ Defines text for upload button.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $messages->uploadFile('value');
+    ?>
 

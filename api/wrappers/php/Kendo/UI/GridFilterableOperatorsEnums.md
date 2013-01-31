@@ -25,8 +25,10 @@ Enable/Disable and set the text of the "Is equal to" filter option for foreign k
 
 
 #### Example 
+    <?php
     $enums = new \Kendo\UI\GridFilterableOperatorsEnums();
     $enums->eq('value');
+    ?>
 
 ### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for foreign key columns.
@@ -41,6 +43,8 @@ Enable/Disable and set the text of the "Is not equal to" filter option for forei
 
 
 #### Example 
+    <?php
     $enums = new \Kendo\UI\GridFilterableOperatorsEnums();
     $enums->neq('value');
+    ?>
 

@@ -44,8 +44,10 @@ Triggered just after a tab is being made visible, but before the end of the anim
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->activate('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -60,8 +62,10 @@ Triggered just after a tab is being made visible, but before the end of the anim
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->activate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### animation
 
@@ -77,18 +81,21 @@ user interactions. Setting this option to false will disable all animations.
 
 
 #### Example - using [\Kendo\UI\TabStripAnimation](/api/wrappers/php/Kendo/UI/TabStripAnimation)
-
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $animation = new \Kendo\UI\TabStripAnimation();
     $close = new \Kendo\UI\TabStripAnimationClose();
     $animation->close($close);
     $tabStrip->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $close = new \Kendo\UI\TabStripAnimationClose();
     $tabStrip->animation(array('close' => $close));
+    ?>
 
 ### collapsible
 Specifies whether the TabStrip should be able to collapse completely when clicking an expanded tab.
@@ -103,8 +110,10 @@ Specifies whether the TabStrip should be able to collapse completely when clicki
 
 
 #### Example 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->collapsible(true);
+    ?>
 
 ### contentLoad
 Triggered when content is fetched from an AJAX request.
@@ -118,8 +127,10 @@ Triggered when content is fetched from an AJAX request.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->contentLoad('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -134,8 +145,10 @@ Triggered when content is fetched from an AJAX request.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->contentLoad(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataContentField
 Sets the field of the data item that provides the text content of
@@ -151,8 +164,10 @@ the tab content element.
 
 
 #### Example 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->dataContentField('value');
+    ?>
 
 ### dataContentUrlField
 Sets the field of the data item that provides the URL for
@@ -168,8 +183,10 @@ the ajax loaded tab content.
 
 
 #### Example 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->dataContentUrlField('value');
+    ?>
 
 ### dataImageUrlField
 Sets the field of the data item that provides the image URL of
@@ -185,8 +202,10 @@ the tab.
 
 
 #### Example 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->dataImageUrlField('value');
+    ?>
 
 ### dataSpriteCssClass
 Sets the field of the data item that provides the CSS class of
@@ -202,8 +221,10 @@ the tab.
 
 
 #### Example 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->dataSpriteCssClass('value');
+    ?>
 
 ### dataTextField
 Sets the field of the data item that provides the text name of the tab.
@@ -218,8 +239,10 @@ Sets the field of the data item that provides the text name of the tab.
 
 
 #### Example 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->dataTextField('value');
+    ?>
 
 ### dataUrlField
 Sets the field of the data item that provides the link URL for the
@@ -235,8 +258,10 @@ tab.
 
 
 #### Example 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->dataUrlField('value');
+    ?>
 
 ### error
 Triggered when an AJAX request results in an error.
@@ -250,8 +275,10 @@ Triggered when an AJAX request results in an error.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->error('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -266,8 +293,10 @@ Triggered when an AJAX request results in an error.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->error(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### addItem
 
@@ -282,24 +311,30 @@ Adds one or more TabStripItem to the TabStrip.
 
 #### Example - using \Kendo\UI\TabStripItem
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $item = new \Kendo\UI\TabStripItem();
     $contentUrl = 'value';
     $item->contentUrl($contentUrl);
     $tabStrip->addItem($item);
+    ?>
 
 #### Example - using array
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $contentUrl = 'value';
     $tabStrip->addItem(array('contentUrl' => $contentUrl));
+    ?>
 
 #### Example - adding more than one TabStripItem
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $first  = new \Kendo\UI\TabStripItem();
     $second = new \Kendo\UI\TabStripItem();
     $tabStrip->addItem($first, $second);
+    ?>
 
 ### select
 Triggered before a tab is selected.
@@ -313,8 +348,10 @@ Triggered before a tab is selected.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -329,6 +366,8 @@ Triggered before a tab is selected.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
     $tabStrip->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 

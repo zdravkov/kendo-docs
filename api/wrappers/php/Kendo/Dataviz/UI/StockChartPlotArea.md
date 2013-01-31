@@ -25,8 +25,10 @@ The background color of the plot area.
 
 
 #### Example 
+    <?php
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $plotArea->background('value');
+    ?>
 
 ### border
 
@@ -41,18 +43,21 @@ The border of the plot area.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartPlotAreaBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartPlotAreaBorder)
-
+    <?php
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $border = new \Kendo\Dataviz\UI\StockChartPlotAreaBorder();
     $color = 'value';
     $border->color($color);
     $plotArea->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $color = 'value';
     $plotArea->border(array('color' => $color));
+    ?>
 
 ### margin
 The margin of the plot area.
@@ -67,8 +72,10 @@ The margin of the plot area.
 
 
 #### Example  - using float
+    <?php
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $plotArea->margin(1);
+    ?>
 
 ### opacity
 The background opacity of the plot area.
@@ -83,6 +90,8 @@ The background opacity of the plot area.
 
 
 #### Example 
+    <?php
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $plotArea->opacity(1);
+    ?>
 

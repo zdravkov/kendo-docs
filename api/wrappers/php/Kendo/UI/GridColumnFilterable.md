@@ -25,10 +25,14 @@ Role of the widget shown as column filter menu input element.
 
 
 #### Example  - using string
+    <?php
     $filterable = new \Kendo\UI\GridColumnFilterable();
     $filterable->ui('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $filterable = new \Kendo\UI\GridColumnFilterable();
     $filterable->ui(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 

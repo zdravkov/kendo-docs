@@ -25,8 +25,10 @@ The axis minor tick size. This is the length of the line in pixels that is drawn
 
 
 #### Example 
+    <?php
     $minorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks();
     $minorTicks->size(1);
+    ?>
 
 ### visible
 The visibility of the minor ticks.
@@ -41,6 +43,8 @@ The visibility of the minor ticks.
 
 
 #### Example 
+    <?php
     $minorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorTicks();
     $minorTicks->visible(true);
+    ?>
 

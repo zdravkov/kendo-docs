@@ -25,8 +25,10 @@ The background color of the pane.
 
 
 #### Example 
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $pane->background('value');
+    ?>
 
 ### border
 
@@ -41,18 +43,21 @@ The border of the pane.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartPaneBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartPaneBorder)
-
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $border = new \Kendo\Dataviz\UI\StockChartPaneBorder();
     $color = 'value';
     $border->color($color);
     $pane->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $color = 'value';
     $pane->border(array('color' => $color));
+    ?>
 
 ### height
 The pane height in pixels.
@@ -67,8 +72,10 @@ The pane height in pixels.
 
 
 #### Example 
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $pane->height(1);
+    ?>
 
 ### margin
 The margin of the pane.
@@ -83,8 +90,10 @@ The margin of the pane.
 
 
 #### Example  - using float
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $pane->margin(1);
+    ?>
 
 ### name
 The unique pane name.
@@ -99,8 +108,10 @@ The unique pane name.
 
 
 #### Example 
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $pane->name('value');
+    ?>
 
 ### padding
 The padding of the pane.
@@ -115,8 +126,10 @@ The padding of the pane.
 
 
 #### Example  - using float
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $pane->padding(1);
+    ?>
 
 ### title
 
@@ -133,21 +146,26 @@ The pane title text or configuration.
 
 
 #### Example  - using string
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $pane->title('value');
+    ?>
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartPaneTitle](/api/wrappers/php/Kendo/Dataviz/UI/StockChartPaneTitle)
-
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $title = new \Kendo\Dataviz\UI\StockChartPaneTitle();
     $background = 'value';
     $title->background($background);
     $pane->title($title);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $background = 'value';
     $pane->title(array('background' => $background));
+    ?>
 

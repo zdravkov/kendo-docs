@@ -25,18 +25,21 @@ The animation that will be used when a Tooltip closes.
 
 
 #### Example - using [\Kendo\UI\TooltipAnimationClose](/api/wrappers/php/Kendo/UI/TooltipAnimationClose)
-
+    <?php
     $animation = new \Kendo\UI\TooltipAnimation();
     $close = new \Kendo\UI\TooltipAnimationClose();
     $duration = 1;
     $close->duration($duration);
     $animation->close($close);
+    ?>
 
 #### Example - using array
 
+    <?php
     $animation = new \Kendo\UI\TooltipAnimation();
     $duration = 1;
     $animation->close(array('duration' => $duration));
+    ?>
 
 ### open
 
@@ -51,16 +54,19 @@ The animation that will be used when a Tooltip opens.
 
 
 #### Example - using [\Kendo\UI\TooltipAnimationOpen](/api/wrappers/php/Kendo/UI/TooltipAnimationOpen)
-
+    <?php
     $animation = new \Kendo\UI\TooltipAnimation();
     $open = new \Kendo\UI\TooltipAnimationOpen();
     $duration = 1;
     $open->duration($duration);
     $animation->open($open);
+    ?>
 
 #### Example - using array
 
+    <?php
     $animation = new \Kendo\UI\TooltipAnimation();
     $duration = 1;
     $animation->open(array('duration' => $duration));
+    ?>
 

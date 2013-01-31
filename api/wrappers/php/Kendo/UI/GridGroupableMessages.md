@@ -25,6 +25,8 @@ Sets the text of the empty grouping area message
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridGroupableMessages();
     $messages->_empty('value');
+    ?>
 

@@ -45,8 +45,10 @@ Indicates whether the pager refresh method will be called within its initializat
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->autoBind(true);
+    ?>
 
 ### buttonCount
 Defines the number of buttons displayed in the numeric pager.
@@ -61,8 +63,10 @@ Defines the number of buttons displayed in the numeric pager.
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->buttonCount(1);
+    ?>
 
 ### change
 Fires when the current page has changed.
@@ -76,8 +80,10 @@ Fires when the current page has changed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -92,8 +98,10 @@ Fires when the current page has changed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataSource
 
@@ -108,15 +116,19 @@ Sets the data source of the dataSource.
 
 #### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $dataSource = new \Kendo\Data\DataSource();
     $pager->dataSource($dataSource);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $schema = new \Kendo\Data\DataSourceSchema();
     $pager->dataSource(array('schema' => $schema));
+    ?>
 
 ### info
 Defines if a label showing current paging information will be displayed.
@@ -131,8 +143,10 @@ Defines if a label showing current paging information will be displayed.
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->info(true);
+    ?>
 
 ### input
 Defines if an input element which allows the user to navigate to given page will be displayed.
@@ -147,8 +161,10 @@ Defines if an input element which allows the user to navigate to given page will
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->input(true);
+    ?>
 
 ### linkTemplate
 The template for page number links.
@@ -163,8 +179,10 @@ The template for page number links.
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->linkTemplate('value');
+    ?>
 
 ### messages
 
@@ -179,18 +197,21 @@ Defines texts shown within the pager.
 
 
 #### Example - using [\Kendo\UI\PagerMessages](/api/wrappers/php/Kendo/UI/PagerMessages)
-
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $messages = new \Kendo\UI\PagerMessages();
     $display = 'value';
     $messages->display($display);
     $pager->messages($messages);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $display = 'value';
     $pager->messages(array('display' => $display));
+    ?>
 
 ### numeric
 Defines if numeric portion of the pager will be shown.
@@ -205,8 +226,10 @@ Defines if numeric portion of the pager will be shown.
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->numeric(true);
+    ?>
 
 ### pageSizes
 Displays a list with predefined page sizes. An array of values to be displayed can be provided. If pageSize option is provided for DataSource then this pageSize value will be automaticaly selected in created selectbox.
@@ -221,12 +244,16 @@ Displays a list with predefined page sizes. An array of values to be displayed c
 
 
 #### Example  - using boolean
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->pageSizes(true);
+    ?>
 
 #### Example  - using array
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->pageSizes(new array());
+    ?>
 
 ### previousNext
 Defines if buttons for navigating to the first, last, previous and next pages will be shown.
@@ -241,8 +268,10 @@ Defines if buttons for navigating to the first, last, previous and next pages wi
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->previousNext(true);
+    ?>
 
 ### refresh
 Defines if a refresh button will be displayed. Click on that button will call DataSource read() method to get actual data.
@@ -257,8 +286,10 @@ Defines if a refresh button will be displayed. Click on that button will call Da
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->refresh(true);
+    ?>
 
 ### selectTemplate
 The template for selectbox with predefined page sizes.
@@ -273,6 +304,8 @@ The template for selectbox with predefined page sizes.
 
 
 #### Example 
+    <?php
     $pager = new \Kendo\UI\Pager('Pager');
     $pager->selectTemplate('value');
+    ?>
 

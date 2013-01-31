@@ -26,8 +26,10 @@ hex and rgb.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->background('value');
+    ?>
 
 ### border
 
@@ -42,18 +44,21 @@ The border of the title.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemTitleBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemTitleBorder)
-
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $border = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitleBorder();
     $color = 'value';
     $border->color($color);
     $title->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $color = 'value';
     $title->border(array('color' => $color));
+    ?>
 
 ### color
 The text color of the title. Any valid CSS color string will work here, including hex and rgb.
@@ -68,8 +73,10 @@ The text color of the title. Any valid CSS color string will work here, includin
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->color('value');
+    ?>
 
 ### font
 The font style of the title.
@@ -84,8 +91,10 @@ The font style of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->font('value');
+    ?>
 
 ### margin
 The margin of the title.
@@ -100,8 +109,10 @@ The margin of the title.
 
 
 #### Example  - using float
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->margin(1);
+    ?>
 
 ### position
 The position of the title.
@@ -116,8 +127,10 @@ The position of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->position('value');
+    ?>
 
 ### rotation
 The rotation angle of the title.
@@ -132,8 +145,10 @@ The rotation angle of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->rotation(1);
+    ?>
 
 ### text
 The text of the title.
@@ -148,8 +163,10 @@ The text of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->text('value');
+    ?>
 
 ### visible
 The visibility of the title.
@@ -164,6 +181,8 @@ The visibility of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemTitle();
     $title->visible(true);
+    ?>
 

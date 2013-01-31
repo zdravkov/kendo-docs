@@ -25,8 +25,10 @@ Sets the text of the cancel button text.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->cancel('value');
+    ?>
 
 ### dropFilesHere
 Sets the drop zone hint.
@@ -41,8 +43,10 @@ Sets the drop zone hint.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->dropFilesHere('value');
+    ?>
 
 ### remove
 Sets the text of the remove button text.
@@ -57,8 +61,10 @@ Sets the text of the remove button text.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->remove('value');
+    ?>
 
 ### retry
 Sets the text of the retry button text.
@@ -73,8 +79,10 @@ Sets the text of the retry button text.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->retry('value');
+    ?>
 
 ### select
 Sets the "Select..." button text.
@@ -89,8 +97,10 @@ Sets the "Select..." button text.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->select('value');
+    ?>
 
 ### statusFailed
 Sets the status message for failed uploads.
@@ -105,8 +115,10 @@ Sets the status message for failed uploads.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->statusFailed('value');
+    ?>
 
 ### statusUploaded
 Sets the status message for uploaded files.
@@ -121,8 +133,10 @@ Sets the status message for uploaded files.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->statusUploaded('value');
+    ?>
 
 ### statusUploading
 Sets the status message for files that are being uploaded.
@@ -137,8 +151,10 @@ Sets the status message for files that are being uploaded.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->statusUploading('value');
+    ?>
 
 ### uploadSelectedFiles
 Sets the text of the "Upload files" button.
@@ -153,6 +169,8 @@ Sets the text of the "Upload files" button.
 
 
 #### Example 
+    <?php
     $localization = new \Kendo\UI\UploadLocalization();
     $localization->uploadSelectedFiles('value');
+    ?>
 

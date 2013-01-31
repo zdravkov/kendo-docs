@@ -26,8 +26,10 @@ the Slider.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\SliderTooltip();
     $tooltip->enabled(true);
+    ?>
 
 ### format
 Format string for the text of the tooltip. Note: The applied
@@ -44,8 +46,10 @@ tick labels.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\SliderTooltip();
     $tooltip->format('value');
+    ?>
 
 ### template
 Template of the tooltip.
@@ -60,6 +64,8 @@ Template of the tooltip.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\SliderTooltip();
     $tooltip->template('value');
+    ?>
 

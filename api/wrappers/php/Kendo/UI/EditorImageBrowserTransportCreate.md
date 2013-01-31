@@ -1,42 +1,23 @@
 ---
-title: DataSourceTransportCreate
-slug: php-data-datasourcetransportcreate
+title: EditorImageBrowserTransportCreate
+slug: php-ui-editorimagebrowsertransportcreate
 tags: api, php
 publish: true
 ---
 
-# \Kendo\Data\DataSourceTransportCreate
+# \Kendo\UI\EditorImageBrowserTransportCreate
 
-A PHP class representing the create setting of DataSourceTransport.
+A PHP class representing the create setting of EditorImageBrowserTransport.
 
 
 ## Methods
-
-### cache
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, "_=[TIMESTAMP]", to the URL.
-Refer to the jQuery.ajax documentation for further info.
-
-#### Returns
-`\Kendo\Data\DataSourceTransportCreate`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
-    $create->cache(true);
-    ?>
 
 ### contentType
 The content-type HTTP header sent to the server. Default is "application/x-www-form-urlencoded". Use "application/json" if the content is JSON.
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportCreate`
+`\Kendo\UI\EditorImageBrowserTransportCreate`
 
 #### Parameters
 
@@ -46,7 +27,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->contentType('value');
     ?>
 
@@ -55,7 +36,7 @@ Data to be send to the server.
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportCreate`
+`\Kendo\UI\EditorImageBrowserTransportCreate`
 
 #### Parameters
 
@@ -65,19 +46,19 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example  - using 
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->data(new ());
     ?>
 
 #### Example  - using string
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->data('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->data(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
@@ -86,7 +67,7 @@ The type of data that you're expecting back from the server. Commonly used value
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportCreate`
+`\Kendo\UI\EditorImageBrowserTransportCreate`
 
 #### Parameters
 
@@ -96,7 +77,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->dataType('value');
     ?>
 
@@ -105,7 +86,7 @@ The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET"
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportCreate`
+`\Kendo\UI\EditorImageBrowserTransportCreate`
 
 #### Parameters
 
@@ -115,7 +96,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->type('value');
     ?>
 
@@ -123,7 +104,7 @@ Refer to the jQuery.ajax documentation for further info.
 The remote url to call when creating a new record.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportCreate`
+`\Kendo\UI\EditorImageBrowserTransportCreate`
 
 #### Parameters
 
@@ -133,13 +114,13 @@ The remote url to call when creating a new record.
 
 #### Example  - using string
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->url('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
     <?php
-    $create = new \Kendo\Data\DataSourceTransportCreate();
+    $create = new \Kendo\UI\EditorImageBrowserTransportCreate();
     $create->url(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 

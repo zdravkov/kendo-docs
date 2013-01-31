@@ -25,24 +25,30 @@ Adds one or more DataSourceGroupItemAggregate to the DataSourceGroupItem.
 
 #### Example - using \Kendo\Data\DataSourceGroupItemAggregate
 
+    <?php
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $aggregate = new \Kendo\Data\DataSourceGroupItemAggregate();
     $aggregate = 'value';
     $aggregate->aggregate($aggregate);
     $groupItem->addAggregate($aggregate);
+    ?>
 
 #### Example - using array
 
+    <?php
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $aggregate = 'value';
     $groupItem->addAggregate(array('aggregate' => $aggregate));
+    ?>
 
 #### Example - adding more than one DataSourceGroupItemAggregate
 
+    <?php
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $first  = new \Kendo\Data\DataSourceGroupItemAggregate();
     $second = new \Kendo\Data\DataSourceGroupItemAggregate();
     $groupItem->addAggregate($first, $second);
+    ?>
 
 ### dir
 Specifies the order of the groupped items.
@@ -57,8 +63,10 @@ Specifies the order of the groupped items.
 
 
 #### Example 
+    <?php
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $groupItem->dir('value');
+    ?>
 
 ### field
 Specifies the field to group by.
@@ -73,6 +81,8 @@ Specifies the field to group by.
 
 
 #### Example 
+    <?php
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $groupItem->field('value');
+    ?>
 

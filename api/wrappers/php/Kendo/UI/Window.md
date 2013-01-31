@@ -46,8 +46,10 @@ and "Maximize".
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->actions(new array());
+    ?>
 
 ### activate
 Triggered when a Window has finished its opening animation.
@@ -61,8 +63,10 @@ Triggered when a Window has finished its opening animation.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->activate('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -77,8 +81,10 @@ Triggered when a Window has finished its opening animation.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->activate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### animation
 
@@ -94,18 +100,21 @@ will disable all animations in the widget.
 
 
 #### Example - using [\Kendo\UI\WindowAnimation](/api/wrappers/php/Kendo/UI/WindowAnimation)
-
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $animation = new \Kendo\UI\WindowAnimation();
     $close = new \Kendo\UI\WindowAnimationClose();
     $animation->close($close);
     $window->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $close = new \Kendo\UI\WindowAnimationClose();
     $window->animation(array('close' => $close));
+    ?>
 
 ### appendTo
 The element that the Window will be appended to.
@@ -121,12 +130,16 @@ Note that this does not constrain the window dragging within the given element.
 
 
 #### Example  - using 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->appendTo(new ());
+    ?>
 
 #### Example  - using string
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->appendTo('value');
+    ?>
 
 ### close
 Triggered when a Window is closed (by a user or through the close() method).
@@ -140,8 +153,10 @@ Triggered when a Window is closed (by a user or through the close() method).
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->close('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -156,8 +171,10 @@ Triggered when a Window is closed (by a user or through the close() method).
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->close(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### content
 
@@ -171,24 +188,10 @@ Sets the HTML content of the Window.
 
 #### Example
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->content('<strong>Content</strong>');
-
-
-### content
-
-Sets the HTML content of the Window.
-
-#### Returns
-
-`Window`
-
-#### $value `string`
-
-#### Example
-
-    $window = new \Kendo\UI\Window('Window');
-    $window->content('<strong>Content</strong>');
+    ?>
 
 
 ### deactivate
@@ -203,8 +206,10 @@ Triggered when a Window has finished its closing animation.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->deactivate('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -219,8 +224,10 @@ Triggered when a Window has finished its closing animation.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->deactivate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dragend
 Triggered when a Window has been moved by a user.
@@ -234,8 +241,10 @@ Triggered when a Window has been moved by a user.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->dragend('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -250,8 +259,10 @@ Triggered when a Window has been moved by a user.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->dragend(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### draggable
 Enables (true) or disables (false) the ability for users to move/drag a
@@ -267,8 +278,10 @@ Window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->draggable(true);
+    ?>
 
 ### dragstart
 Triggered when the user starts to move the window.
@@ -282,8 +295,10 @@ Triggered when the user starts to move the window.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->dragstart('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -298,8 +313,10 @@ Triggered when the user starts to move the window.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->dragstart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### endContent
 
@@ -328,8 +345,10 @@ Triggered when an AJAX request for content fails.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->error('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -344,8 +363,10 @@ Triggered when an AJAX request for content fails.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->error(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### height
 Specifies height of the window.
@@ -360,8 +381,10 @@ Specifies height of the window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->height(1);
+    ?>
 
 ### iframe
 Explicitly states whether content iframe should be created.
@@ -376,8 +399,10 @@ Explicitly states whether content iframe should be created.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->iframe(true);
+    ?>
 
 ### maxHeight
 The maximum height (in pixels) that may be achieved by resizing the window.
@@ -392,8 +417,10 @@ The maximum height (in pixels) that may be achieved by resizing the window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->maxHeight(1);
+    ?>
 
 ### maxWidth
 The maximum width (in pixels) that may be achieved by resizing the window.
@@ -408,8 +435,10 @@ The maximum width (in pixels) that may be achieved by resizing the window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->maxWidth(1);
+    ?>
 
 ### minHeight
 The minimum height (in pixels) that may be achieved by resizing the window.
@@ -424,8 +453,10 @@ The minimum height (in pixels) that may be achieved by resizing the window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->minHeight(1);
+    ?>
 
 ### minWidth
 The minimum width (in pixels) that may be achieved by resizing the window.
@@ -440,8 +471,10 @@ The minimum width (in pixels) that may be achieved by resizing the window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->minWidth(1);
+    ?>
 
 ### modal
 Specifies whether the window should show a modal overlay over the page.
@@ -456,8 +489,10 @@ Specifies whether the window should show a modal overlay over the page.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->modal(true);
+    ?>
 
 ### open
 Triggered when a Window is opened (i.e. the open() method is called).
@@ -471,8 +506,10 @@ Triggered when a Window is opened (i.e. the open() method is called).
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->open('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -487,8 +524,10 @@ Triggered when a Window is opened (i.e. the open() method is called).
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->open(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### refresh
 Triggered when the content of a Window has finished loading via AJAX,
@@ -504,8 +543,10 @@ has been clicked on a window with static content.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->refresh('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -520,8 +561,10 @@ has been clicked on a window with static content.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->refresh(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### resizable
 Enables (true) or disables (false) the ability for users to resize a
@@ -537,8 +580,10 @@ Window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->resizable(true);
+    ?>
 
 ### resize
 Triggered when a Window has been resized by a user.
@@ -552,8 +597,10 @@ Triggered when a Window has been resized by a user.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->resize('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -568,8 +615,10 @@ Triggered when a Window has been resized by a user.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->resize(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### startContent
 
@@ -600,12 +649,16 @@ The text in the window title bar. If false, the window will be displayed without
 
 
 #### Example  - using string
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->title('value');
+    ?>
 
 #### Example  - using boolean
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->title(true);
+    ?>
 
 ### visible
 Specifies whether the window will be initially visible.
@@ -620,8 +673,10 @@ Specifies whether the window will be initially visible.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->visible(true);
+    ?>
 
 ### width
 Specifies width of the window.
@@ -636,6 +691,8 @@ Specifies width of the window.
 
 
 #### Example 
+    <?php
     $window = new \Kendo\UI\Window('Window');
     $window->width(1);
+    ?>
 

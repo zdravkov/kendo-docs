@@ -25,18 +25,21 @@ A PHP class representing the model setting of EditorImageBrowserSchema.
 
 
 #### Example - using [\Kendo\UI\EditorImageBrowserSchemaModelFields](/api/wrappers/php/Kendo/UI/EditorImageBrowserSchemaModelFields)
-
+    <?php
     $model = new \Kendo\UI\EditorImageBrowserSchemaModel();
     $fields = new \Kendo\UI\EditorImageBrowserSchemaModelFields();
     $name = 'value';
     $fields->name($name);
     $model->fields($fields);
+    ?>
 
 #### Example - using array
 
+    <?php
     $model = new \Kendo\UI\EditorImageBrowserSchemaModel();
     $name = 'value';
     $model->fields(array('name' => $name));
+    ?>
 
 ### id
 The name of the field which acts as an identifier.
@@ -51,6 +54,8 @@ The name of the field which acts as an identifier.
 
 
 #### Example 
+    <?php
     $model = new \Kendo\UI\EditorImageBrowserSchemaModel();
     $model->id('value');
+    ?>
 

@@ -25,8 +25,10 @@ The alignment of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->align('value');
+    ?>
 
 ### background
 The background color of the title.
@@ -41,8 +43,10 @@ The background color of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->background('value');
+    ?>
 
 ### border
 
@@ -57,18 +61,21 @@ The border of the title.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartTitleBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartTitleBorder)
-
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $border = new \Kendo\Dataviz\UI\ChartTitleBorder();
     $color = 'value';
     $border->color($color);
     $title->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $color = 'value';
     $title->border(array('color' => $color));
+    ?>
 
 ### font
 The font of the title.
@@ -83,8 +90,10 @@ The font of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->font('value');
+    ?>
 
 ### margin
 The margin of the title.
@@ -99,8 +108,10 @@ The margin of the title.
 
 
 #### Example  - using float
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->margin(1);
+    ?>
 
 ### padding
 The padding of the title.
@@ -115,8 +126,10 @@ The padding of the title.
 
 
 #### Example  - using float
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->padding(1);
+    ?>
 
 ### position
 The position of the title.
@@ -131,8 +144,10 @@ The position of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->position('value');
+    ?>
 
 ### text
 The title of the chart. You can also set the text directly for a title with default options.
@@ -147,8 +162,10 @@ The title of the chart. You can also set the text directly for a title with defa
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->text('value');
+    ?>
 
 ### visible
 The visibility of the title.
@@ -163,6 +180,8 @@ The visibility of the title.
 
 
 #### Example 
+    <?php
     $title = new \Kendo\Dataviz\UI\ChartTitle();
     $title->visible(true);
+    ?>
 

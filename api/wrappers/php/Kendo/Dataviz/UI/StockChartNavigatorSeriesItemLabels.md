@@ -25,8 +25,10 @@ The background color of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->background('value');
+    ?>
 
 ### border
 
@@ -41,18 +43,21 @@ The border of the labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartNavigatorSeriesItemLabelsBorder)
-
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabelsBorder();
     $color = 'value';
     $border->color($color);
     $labels->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $color = 'value';
     $labels->border(array('color' => $color));
+    ?>
 
 ### color
 The text color of the labels.
@@ -67,8 +72,10 @@ The text color of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->color('value');
+    ?>
 
 ### font
 The font style of the labels.
@@ -83,8 +90,10 @@ The font style of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->font('value');
+    ?>
 
 ### format
 The format of the labels.
@@ -99,8 +108,10 @@ The format of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->format('value');
+    ?>
 
 ### margin
 The margin of the labels.
@@ -115,8 +126,10 @@ The margin of the labels.
 
 
 #### Example  - using float
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->margin(1);
+    ?>
 
 ### padding
 The padding of the labels.
@@ -131,8 +144,10 @@ The padding of the labels.
 
 
 #### Example  - using float
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->padding(1);
+    ?>
 
 ### position
 Defines the position of the labels.
@@ -147,8 +162,10 @@ Defines the position of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->position('value');
+    ?>
 
 ### template
 The label template. Template variables:
@@ -163,12 +180,16 @@ The label template. Template variables:
 
 
 #### Example  - using string
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->template('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### visible
 The visibility of the labels.
@@ -183,6 +204,8 @@ The visibility of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLabels();
     $labels->visible(true);
+    ?>
 

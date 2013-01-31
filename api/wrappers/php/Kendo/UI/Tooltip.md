@@ -46,18 +46,21 @@ will disable all animations in the widget.
 
 
 #### Example - using [\Kendo\UI\TooltipAnimation](/api/wrappers/php/Kendo/UI/TooltipAnimation)
-
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $animation = new \Kendo\UI\TooltipAnimation();
     $close = new \Kendo\UI\TooltipAnimationClose();
     $animation->close($close);
     $tooltip->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $close = new \Kendo\UI\TooltipAnimationClose();
     $tooltip->animation(array('close' => $close));
+    ?>
 
 ### autoHide
 Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip.
@@ -72,8 +75,10 @@ Specifies if the tooltip will be hidden when mouse leaves the target element. If
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->autoHide(true);
+    ?>
 
 ### callout
 Specifies if the tooltip callout will be displayed.
@@ -88,8 +93,10 @@ Specifies if the tooltip callout will be displayed.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->callout(true);
+    ?>
 
 ### content
 
@@ -107,27 +114,34 @@ By default the tooltip will display the target element title attribute content.
 
 
 #### Example  - using string
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->content('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->content(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 
 #### Example - using [\Kendo\UI\TooltipContent](/api/wrappers/php/Kendo/UI/TooltipContent)
-
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $content = new \Kendo\UI\TooltipContent();
     $url = 'value';
     $content->url($url);
     $tooltip->content($content);
+    ?>
 
 #### Example - using array
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $url = 'value';
     $tooltip->content(array('url' => $url));
+    ?>
 
 ### contentLoad
 Triggered when an AJAX request for content completes.
@@ -141,8 +155,10 @@ Triggered when an AJAX request for content completes.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->contentLoad('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -157,8 +173,10 @@ Triggered when an AJAX request for content completes.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->contentLoad(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### error
 Triggered when an AJAX request for content fails.
@@ -172,8 +190,10 @@ Triggered when an AJAX request for content fails.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->error('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -188,8 +208,10 @@ Triggered when an AJAX request for content fails.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->error(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### filter
 Specifies a selector for elements, within the container, for which the tooltip will be displayed.
@@ -204,8 +226,10 @@ Specifies a selector for elements, within the container, for which the tooltip w
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->filter('value');
+    ?>
 
 ### height
 The height (in pixels) of the tooltip.
@@ -220,8 +244,10 @@ The height (in pixels) of the tooltip.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->height(1);
+    ?>
 
 ### hide
 Triggered when a Tooltip is hidden
@@ -235,8 +261,10 @@ Triggered when a Tooltip is hidden
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->hide('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -251,8 +279,10 @@ Triggered when a Tooltip is hidden
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->hide(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### iframe
 Explicitly states whether content iframe should be created.
@@ -267,8 +297,10 @@ Explicitly states whether content iframe should be created.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->iframe(true);
+    ?>
 
 ### position
 The position relative to the target element, at which the tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
@@ -283,8 +315,10 @@ The position relative to the target element, at which the tooltip will be shown.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->position('value');
+    ?>
 
 ### show
 Triggered when a Tooltip is shown.
@@ -298,8 +332,10 @@ Triggered when a Tooltip is shown.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->show('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -314,8 +350,10 @@ Triggered when a Tooltip is shown.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->show(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### showAfter
 Specify the delay in milliseconds before the tooltip is shown. This option is ignored if showOn is set to "click" or "focus".
@@ -330,8 +368,10 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->showAfter(1);
+    ?>
 
 ### showOn
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
@@ -346,8 +386,10 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->showOn('value');
+    ?>
 
 ### width
 The width (in pixels) of the tooltip.
@@ -362,6 +404,8 @@ The width (in pixels) of the tooltip.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->width(1);
+    ?>
 

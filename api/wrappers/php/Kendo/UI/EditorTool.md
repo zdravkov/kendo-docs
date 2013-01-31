@@ -25,8 +25,10 @@ The JavaScript function which will be executed when the end-user clicks the tool
 
 
 #### Example 
+    <?php
     $tool = new \Kendo\UI\EditorTool();
     $tool->exec(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### name
 The mandatory name of the tool. The built-in tools are "bold", "italic", "underline", "strikethrough", "fontName", "fontSize", "foreColor", "backColor", "justifyLeft", "justifyCenter", "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent", "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
@@ -41,8 +43,10 @@ The mandatory name of the tool. The built-in tools are "bold", "italic", "underl
 
 
 #### Example 
+    <?php
     $tool = new \Kendo\UI\EditorTool();
     $tool->name('value');
+    ?>
 
 ### tooltip
 The text which will be displayed when the end-user hovers the tool button with the mouse.
@@ -57,6 +61,8 @@ The text which will be displayed when the end-user hovers the tool button with t
 
 
 #### Example 
+    <?php
     $tool = new \Kendo\UI\EditorTool();
     $tool->tooltip('value');
+    ?>
 

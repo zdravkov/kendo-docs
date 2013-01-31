@@ -25,8 +25,10 @@ The line color.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLine();
     $line->color('value');
+    ?>
 
 ### opacity
 The line opacity.
@@ -41,8 +43,10 @@ The line opacity.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLine();
     $line->opacity(1);
+    ?>
 
 ### width
 The line width.
@@ -57,6 +61,8 @@ The line width.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLine();
     $line->width('value');
+    ?>
 

@@ -38,18 +38,21 @@ The border of the gauge area.
 
 
 #### Example - using [\Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugeGaugeAreaBorder)
-
+    <?php
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $border = new \Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder();
     $color = 'value';
     $border->color($color);
     $gaugeArea->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $color = 'value';
     $gaugeArea->border(array('color' => $color));
+    ?>
 
 ### height
 The height of the gauge area.
@@ -64,8 +67,10 @@ The height of the gauge area.
 
 
 #### Example 
+    <?php
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $gaugeArea->height(1);
+    ?>
 
 ### margin
 The margin of the gauge area.
@@ -80,8 +85,10 @@ The margin of the gauge area.
 
 
 #### Example  - using float
+    <?php
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $gaugeArea->margin(1);
+    ?>
 
 ### width
 The width of the gauge area.
@@ -96,6 +103,8 @@ The width of the gauge area.
 
 
 #### Example 
+    <?php
     $gaugeArea = new \Kendo\Dataviz\UI\RadialGaugeGaugeArea();
     $gaugeArea->width(1);
+    ?>
 

@@ -25,8 +25,10 @@ The axis major tick size. This is the length of the line in pixels that is drawn
 
 
 #### Example 
+    <?php
     $majorTicks = new \Kendo\Dataviz\UI\StockChartXAxisItemMajorTicks();
     $majorTicks->size(1);
+    ?>
 
 ### visible
 The visibility of the major ticks.
@@ -41,6 +43,8 @@ The visibility of the major ticks.
 
 
 #### Example 
+    <?php
     $majorTicks = new \Kendo\Dataviz\UI\StockChartXAxisItemMajorTicks();
     $majorTicks->visible(true);
+    ?>
 

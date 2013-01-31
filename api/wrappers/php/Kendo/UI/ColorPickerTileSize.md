@@ -25,8 +25,10 @@ The height of the color cell.
 
 
 #### Example 
+    <?php
     $tileSize = new \Kendo\UI\ColorPickerTileSize();
     $tileSize->height(1);
+    ?>
 
 ### width
 The width of the color cell.
@@ -41,6 +43,8 @@ The width of the color cell.
 
 
 #### Example 
+    <?php
     $tileSize = new \Kendo\UI\ColorPickerTileSize();
     $tileSize->width(1);
+    ?>
 

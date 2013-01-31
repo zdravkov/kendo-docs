@@ -25,8 +25,10 @@ The color of the plot band.
 
 
 #### Example 
+    <?php
     $plotBand = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand();
     $plotBand->color('value');
+    ?>
 
 ### from
 The start position of the plot band in axis units.
@@ -41,8 +43,10 @@ The start position of the plot band in axis units.
 
 
 #### Example 
+    <?php
     $plotBand = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand();
     $plotBand->from(1);
+    ?>
 
 ### opacity
 The opacity of the plot band.
@@ -57,8 +61,10 @@ The opacity of the plot band.
 
 
 #### Example 
+    <?php
     $plotBand = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand();
     $plotBand->opacity(1);
+    ?>
 
 ### to
 The end position of the plot band in axis units.
@@ -73,6 +79,8 @@ The end position of the plot band in axis units.
 
 
 #### Example 
+    <?php
     $plotBand = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemPlotBand();
     $plotBand->to(1);
+    ?>
 

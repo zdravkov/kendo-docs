@@ -25,8 +25,10 @@ The name of the command. One of the predefined or a custom.
 
 
 #### Example 
+    <?php
     $toolbarItem = new \Kendo\UI\GridToolbarItem();
     $toolbarItem->name('value');
+    ?>
 
 ### template
 The template for the command button.
@@ -41,8 +43,10 @@ The template for the command button.
 
 
 #### Example 
+    <?php
     $toolbarItem = new \Kendo\UI\GridToolbarItem();
     $toolbarItem->template('value');
+    ?>
 
 ### text
 The text of the command that will be set on the button.
@@ -57,6 +61,8 @@ The text of the command that will be set on the button.
 
 
 #### Example 
+    <?php
     $toolbarItem = new \Kendo\UI\GridToolbarItem();
     $toolbarItem->text('value');
+    ?>
 

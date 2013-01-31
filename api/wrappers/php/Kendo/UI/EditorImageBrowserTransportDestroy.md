@@ -1,42 +1,23 @@
 ---
-title: DataSourceTransportDestroy
-slug: php-data-datasourcetransportdestroy
+title: EditorImageBrowserTransportDestroy
+slug: php-ui-editorimagebrowsertransportdestroy
 tags: api, php
 publish: true
 ---
 
-# \Kendo\Data\DataSourceTransportDestroy
+# \Kendo\UI\EditorImageBrowserTransportDestroy
 
-A PHP class representing the destroy setting of DataSourceTransport.
+A PHP class representing the destroy setting of EditorImageBrowserTransport.
 
 
 ## Methods
-
-### cache
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, "_=[TIMESTAMP]", to the URL.
-Refer to the jQuery.ajax documentation for further info.
-
-#### Returns
-`\Kendo\Data\DataSourceTransportDestroy`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
-    $destroy->cache(true);
-    ?>
 
 ### contentType
 The content-type HTTP header sent to the server. Default is "application/x-www-form-urlencoded". Use "application/json" if the content is JSON.
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportDestroy`
+`\Kendo\UI\EditorImageBrowserTransportDestroy`
 
 #### Parameters
 
@@ -46,7 +27,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->contentType('value');
     ?>
 
@@ -55,7 +36,7 @@ Data to be send to the server.
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportDestroy`
+`\Kendo\UI\EditorImageBrowserTransportDestroy`
 
 #### Parameters
 
@@ -65,19 +46,19 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example  - using 
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->data(new ());
     ?>
 
 #### Example  - using string
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->data('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->data(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
@@ -86,7 +67,7 @@ The type of data that you're expecting back from the server. Commonly used value
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportDestroy`
+`\Kendo\UI\EditorImageBrowserTransportDestroy`
 
 #### Parameters
 
@@ -96,7 +77,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->dataType('value');
     ?>
 
@@ -105,7 +86,7 @@ The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET"
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportDestroy`
+`\Kendo\UI\EditorImageBrowserTransportDestroy`
 
 #### Parameters
 
@@ -115,7 +96,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->type('value');
     ?>
 
@@ -123,7 +104,7 @@ Refer to the jQuery.ajax documentation for further info.
 The remote url to call when creating a new record.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportDestroy`
+`\Kendo\UI\EditorImageBrowserTransportDestroy`
 
 #### Parameters
 
@@ -133,13 +114,13 @@ The remote url to call when creating a new record.
 
 #### Example  - using string
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->url('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
     <?php
-    $destroy = new \Kendo\Data\DataSourceTransportDestroy();
+    $destroy = new \Kendo\UI\EditorImageBrowserTransportDestroy();
     $destroy->url(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 

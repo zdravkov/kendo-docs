@@ -47,8 +47,10 @@ be displayed in the drop-down HSV picker.
 
 
 #### Example 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->buttons(true);
+    ?>
 
 ### change
 Fires when a color was selected, either by clicking on it (in the
@@ -64,8 +66,10 @@ picker.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -80,8 +84,10 @@ picker.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### close
 Fires when the picker popup is closing.
@@ -95,8 +101,10 @@ Fires when the picker popup is closing.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->close('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -111,8 +119,10 @@ Fires when the picker popup is closing.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->close(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### columns
 The number of columns to show in the simple color dropdown.  For the
@@ -130,8 +140,10 @@ makes sense for your colors.
 
 
 #### Example 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->columns(1);
+    ?>
 
 ### messages
 Allows customization of "Apply" / "Cancel" labels.
@@ -160,8 +172,10 @@ type="color"> does not support opacity.
 
 
 #### Example 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->opacity(true);
+    ?>
 
 ### open
 Fires when the picker popup is opening.
@@ -175,8 +189,10 @@ Fires when the picker popup is opening.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->open('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -191,8 +207,10 @@ Fires when the picker popup is opening.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->open(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### palette
 When a non-null palette argument is supplied, the drop-down will be
@@ -209,8 +227,10 @@ selector.
 
 
 #### Example 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->palette('value');
+    ?>
 
 ### preview
 Only for the HSV selector.  Displays the color preview element, along
@@ -227,8 +247,10 @@ CSS-supported notation.
 
 
 #### Example 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->preview(true);
+    ?>
 
 ### select
 Fires as a new color is displayed in the drop-down picker.  This is
@@ -246,8 +268,10 @@ original value.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -262,8 +286,10 @@ original value.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### tileSize
 
@@ -280,23 +306,28 @@ The size of a color cell.
 
 
 #### Example  - using float
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->tileSize(1);
+    ?>
 
 
 #### Example - using [\Kendo\UI\ColorPickerTileSize](/api/wrappers/php/Kendo/UI/ColorPickerTileSize)
-
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $tileSize = new \Kendo\UI\ColorPickerTileSize();
     $height = 1;
     $tileSize->height($height);
     $colorPicker->tileSize($tileSize);
+    ?>
 
 #### Example - using array
 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $height = 1;
     $colorPicker->tileSize(array('height' => $height));
+    ?>
 
 ### toolIcon
 A CSS class name to display an icon in the color picker button.  If
@@ -312,8 +343,10 @@ specified, the HTML for the element will look like this:
 
 
 #### Example 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->toolIcon('value');
+    ?>
 
 ### value
 The initially selected color.  This can be a string supported by
@@ -331,6 +364,8 @@ field instead.
 
 
 #### Example 
+    <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->value('value');
+    ?>
 

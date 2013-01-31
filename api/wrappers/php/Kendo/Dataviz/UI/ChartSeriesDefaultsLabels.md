@@ -26,8 +26,10 @@ including hex and rgb.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->background('value');
+    ?>
 
 ### border
 
@@ -42,18 +44,21 @@ The border of the labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaultsLabelsBorder)
-
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $border = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsBorder();
     $color = 'value';
     $border->color($color);
     $labels->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $color = 'value';
     $labels->border(array('color' => $color));
+    ?>
 
 ### color
 The text color of the labels. Any valid CSS color string will work here, inlcuding hex
@@ -69,8 +74,10 @@ and rgb.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->color('value');
+    ?>
 
 ### font
 The font style of the labels.
@@ -86,8 +93,10 @@ labels
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->font('value');
+    ?>
 
 ### format
 The format of the labels.
@@ -102,8 +111,10 @@ The format of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->format('value');
+    ?>
 
 ### margin
 The margin of the labels.
@@ -118,8 +129,10 @@ The margin of the labels.
 
 
 #### Example  - using float
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->margin(1);
+    ?>
 
 ### padding
 The padding of the labels.
@@ -134,8 +147,10 @@ The padding of the labels.
 
 
 #### Example  - using float
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->padding(1);
+    ?>
 
 ### template
 The label template.
@@ -151,12 +166,16 @@ Template variables:
 
 
 #### Example  - using string
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->template('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### visible
 The visibility of the labels.
@@ -171,6 +190,8 @@ The visibility of the labels.
 
 
 #### Example 
+    <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $labels->visible(true);
+    ?>
 

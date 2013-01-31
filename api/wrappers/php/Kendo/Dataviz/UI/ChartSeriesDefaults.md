@@ -50,18 +50,21 @@ The border of the series.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaultsBorder)
-
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $border = new \Kendo\Dataviz\UI\ChartSeriesDefaultsBorder();
     $color = 'value';
     $border->color($color);
     $seriesDefaults->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $color = 'value';
     $seriesDefaults->border(array('color' => $color));
+    ?>
 
 ### bubble
 The bubble configuration options.
@@ -128,8 +131,10 @@ The distance between category clusters.
 
 
 #### Example 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $seriesDefaults->gap(1);
+    ?>
 
 ### labels
 
@@ -144,18 +149,21 @@ Configures the series data labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsLabels](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaultsLabels)
-
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $labels = new \Kendo\Dataviz\UI\ChartSeriesDefaultsLabels();
     $background = 'value';
     $labels->background($background);
     $seriesDefaults->labels($labels);
+    ?>
 
 #### Example - using array
 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $background = 'value';
     $seriesDefaults->labels(array('background' => $background));
+    ?>
 
 ### line
 The line configuration options.
@@ -247,8 +255,10 @@ Space between bars.
 
 
 #### Example 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $seriesDefaults->spacing(1);
+    ?>
 
 ### stack
 A value indicating if the series should be stacked.
@@ -263,8 +273,10 @@ A value indicating if the series should be stacked.
 
 
 #### Example 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $seriesDefaults->stack(true);
+    ?>
 
 ### tooltip
 
@@ -279,18 +291,21 @@ The data point tooltip configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaultsTooltip)
-
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $tooltip = new \Kendo\Dataviz\UI\ChartSeriesDefaultsTooltip();
     $background = 'value';
     $tooltip->background($background);
     $seriesDefaults->tooltip($tooltip);
+    ?>
 
 #### Example - using array
 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $background = 'value';
     $seriesDefaults->tooltip(array('background' => $background));
+    ?>
 
 ### verticalArea
 The vertical area configuration options.

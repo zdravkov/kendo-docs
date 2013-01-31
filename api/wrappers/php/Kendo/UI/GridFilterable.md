@@ -25,8 +25,10 @@ Indicates whether second filter input is enabled/disabled.
 
 
 #### Example 
+    <?php
     $filterable = new \Kendo\UI\GridFilterable();
     $filterable->extra(true);
+    ?>
 
 ### messages
 
@@ -41,18 +43,21 @@ Sets the filter menu messages.
 
 
 #### Example - using [\Kendo\UI\GridFilterableMessages](/api/wrappers/php/Kendo/UI/GridFilterableMessages)
-
+    <?php
     $filterable = new \Kendo\UI\GridFilterable();
     $messages = new \Kendo\UI\GridFilterableMessages();
     $and = 'value';
     $messages->_and($and);
     $filterable->messages($messages);
+    ?>
 
 #### Example - using array
 
+    <?php
     $filterable = new \Kendo\UI\GridFilterable();
     $and = 'value';
     $filterable->messages(array('and' => $and));
+    ?>
 
 ### operators
 
@@ -67,16 +72,19 @@ Enable/Disable and set the text of filter operators.
 
 
 #### Example - using [\Kendo\UI\GridFilterableOperators](/api/wrappers/php/Kendo/UI/GridFilterableOperators)
-
+    <?php
     $filterable = new \Kendo\UI\GridFilterable();
     $operators = new \Kendo\UI\GridFilterableOperators();
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $operators->string($string);
     $filterable->operators($operators);
+    ?>
 
 #### Example - using array
 
+    <?php
     $filterable = new \Kendo\UI\GridFilterable();
     $string = new \Kendo\UI\GridFilterableOperatorsString();
     $filterable->operators(array('string' => $string));
+    ?>
 

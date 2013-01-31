@@ -25,18 +25,21 @@ The border of the pointer.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerBorder](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugePointerBorder)
-
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerBorder();
     $color = 'value';
     $border->color($color);
     $pointer->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $color = 'value';
     $pointer->border(array('color' => $color));
+    ?>
 
 ### color
 The color of the pointer.
@@ -51,8 +54,10 @@ The color of the pointer.
 
 
 #### Example 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $pointer->color('value');
+    ?>
 
 ### margin
 The margin of the pointer.
@@ -67,8 +72,10 @@ The margin of the pointer.
 
 
 #### Example  - using float
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $pointer->margin(1);
+    ?>
 
 ### opacity
 The opacity of the pointer.
@@ -84,8 +91,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 
 #### Example 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $pointer->opacity(1);
+    ?>
 
 ### shape
 The shape of the pointer.
@@ -100,8 +109,10 @@ The shape of the pointer.
 
 
 #### Example 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $pointer->shape('value');
+    ?>
 
 ### size
 The size of the pointer.
@@ -116,8 +127,10 @@ The size of the pointer.
 
 
 #### Example 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $pointer->size(1);
+    ?>
 
 ### track
 
@@ -133,18 +146,21 @@ The element arround/under the pointer.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerTrack](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugePointerTrack)
-
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $color = 'value';
     $track->color($color);
     $pointer->track($track);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $color = 'value';
     $pointer->track(array('color' => $color));
+    ?>
 
 ### value
 The value of the gauge.
@@ -159,6 +175,8 @@ The value of the gauge.
 
 
 #### Example 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\LinearGaugePointer();
     $pointer->value(1);
+    ?>
 

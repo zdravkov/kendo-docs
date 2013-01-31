@@ -25,8 +25,10 @@ Specifies the field to filter by.
 
 
 #### Example 
+    <?php
     $filterItem = new \Kendo\Data\DataSourceFilterItem();
     $filterItem->field('value');
+    ?>
 
 ### operator
 Specifies the filter operator. One of the following values "eq", "neq", "lt", "lte", "gt", "gte", "startswith", "endswith", "contains".
@@ -41,8 +43,10 @@ Specifies the filter operator. One of the following values "eq", "neq", "lt", "l
 
 
 #### Example 
+    <?php
     $filterItem = new \Kendo\Data\DataSourceFilterItem();
     $filterItem->operator('value');
+    ?>
 
 ### value
 Specifies the value to filter for.

@@ -25,8 +25,10 @@ The CSS class of the command.
 
 
 #### Example 
+    <?php
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->className('value');
+    ?>
 
 ### click
 The JavaScript function executed when the user clicks the command button.
@@ -41,8 +43,10 @@ The JavaScript function executed when the user clicks the command button.
 
 
 #### Example 
+    <?php
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->click(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### name
 The unique name of the command. The supported built-in commands are: "create", "cancel", "save", "destroy".
@@ -57,8 +61,10 @@ The unique name of the command. The supported built-in commands are: "create", "
 
 
 #### Example 
+    <?php
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->name('value');
+    ?>
 
 ### text
 The text displayed by the command.
@@ -73,6 +79,8 @@ The text displayed by the command.
 
 
 #### Example 
+    <?php
     $commandItem = new \Kendo\UI\GridColumnCommandItem();
     $commandItem->text('value');
+    ?>
 

@@ -25,8 +25,10 @@ The background color of the legend. Any valid CSS color string will work here, i
 
 
 #### Example 
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->background('value');
+    ?>
 
 ### border
 
@@ -41,18 +43,21 @@ The border of the legend.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartLegendBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartLegendBorder)
-
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $border = new \Kendo\Dataviz\UI\StockChartLegendBorder();
     $color = 'value';
     $border->color($color);
     $legend->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $color = 'value';
     $legend->border(array('color' => $color));
+    ?>
 
 ### labels
 
@@ -67,18 +72,21 @@ Configures the legend labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartLegendLabels](/api/wrappers/php/Kendo/Dataviz/UI/StockChartLegendLabels)
-
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $labels = new \Kendo\Dataviz\UI\StockChartLegendLabels();
     $color = 'value';
     $labels->color($color);
     $legend->labels($labels);
+    ?>
 
 #### Example - using array
 
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $color = 'value';
     $legend->labels(array('color' => $color));
+    ?>
 
 ### margin
 The margin of the legend.
@@ -93,8 +101,10 @@ The margin of the legend.
 
 
 #### Example  - using float
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->margin(1);
+    ?>
 
 ### offsetX
 The X offset from its position.  The offset is relative to the current position of the legend.
@@ -111,8 +121,10 @@ to the left of the current position.
 
 
 #### Example 
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->offsetX(1);
+    ?>
 
 ### offsetY
 The Y offset from its position.  The offset is relative to the current position of the legend.
@@ -129,8 +141,10 @@ upwards from the current position.
 
 
 #### Example 
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->offsetY(1);
+    ?>
 
 ### padding
 The padding of the legend.
@@ -145,8 +159,10 @@ The padding of the legend.
 
 
 #### Example  - using float
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->padding(1);
+    ?>
 
 ### position
 The positions of the legend.
@@ -161,8 +177,10 @@ The positions of the legend.
 
 
 #### Example 
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->position('value');
+    ?>
 
 ### visible
 The visibility of the legend.
@@ -177,6 +195,8 @@ The visibility of the legend.
 
 
 #### Example 
+    <?php
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $legend->visible(true);
+    ?>
 

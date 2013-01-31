@@ -26,8 +26,10 @@ hex and rgb.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartYAxisItemLabelsBorder();
     $border->color('value');
+    ?>
 
 ### dashType
 The dash type of the border.
@@ -42,8 +44,10 @@ The dash type of the border.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartYAxisItemLabelsBorder();
     $border->dashType('value');
+    ?>
 
 ### width
 The width of the border.
@@ -58,6 +62,8 @@ The width of the border.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartYAxisItemLabelsBorder();
     $border->width(1);
+    ?>
 

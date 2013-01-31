@@ -25,8 +25,10 @@ The border color.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightBorder();
     $border->color('value');
+    ?>
 
 ### opacity
 The border opacity.
@@ -41,8 +43,10 @@ The border opacity.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightBorder();
     $border->opacity(1);
+    ?>
 
 ### width
 The width of the border.
@@ -57,6 +61,8 @@ The width of the border.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightBorder();
     $border->width(1);
+    ?>
 

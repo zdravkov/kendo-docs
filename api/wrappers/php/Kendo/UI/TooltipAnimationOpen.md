@@ -25,8 +25,10 @@ Difines the animation duration.
 
 
 #### Example 
+    <?php
     $open = new \Kendo\UI\TooltipAnimationOpen();
     $open->duration(1);
+    ?>
 
 ### effects
 Effect to be used for opening of the Tooltip.
@@ -41,6 +43,8 @@ Effect to be used for opening of the Tooltip.
 
 
 #### Example 
+    <?php
     $open = new \Kendo\UI\TooltipAnimationOpen();
     $open->effects('value');
+    ?>
 

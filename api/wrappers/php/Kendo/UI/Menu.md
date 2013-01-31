@@ -46,18 +46,21 @@ by setting the close animation.  Each animation also has a direction which can b
 
 
 #### Example - using [\Kendo\UI\MenuAnimation](/api/wrappers/php/Kendo/UI/MenuAnimation)
-
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $animation = new \Kendo\UI\MenuAnimation();
     $close = new \Kendo\UI\MenuAnimationClose();
     $animation->close($close);
     $menu->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $close = new \Kendo\UI\MenuAnimationClose();
     $menu->animation(array('close' => $close));
+    ?>
 
 ### close
 Fires after a sub menu gets closed.
@@ -71,8 +74,10 @@ Fires after a sub menu gets closed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->close('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -87,8 +92,10 @@ Fires after a sub menu gets closed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->close(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### closeOnClick
 Specifies that sub menus should close after item selection (provided they won't navigate).
@@ -103,8 +110,10 @@ Specifies that sub menus should close after item selection (provided they won't 
 
 
 #### Example 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->closeOnClick(true);
+    ?>
 
 ### direction
 Specifies Menu opening direction. Can be "top", "bottom", "left", "right".
@@ -121,8 +130,10 @@ its sub menus to the left.
 
 
 #### Example 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->direction('value');
+    ?>
 
 ### hoverDelay
 Specifies the delay in ms before the menu is opened/closed - used to avoid accidental closure on leaving.
@@ -137,8 +148,10 @@ Specifies the delay in ms before the menu is opened/closed - used to avoid accid
 
 
 #### Example 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->hoverDelay(1);
+    ?>
 
 ### addItem
 
@@ -153,24 +166,30 @@ Adds one or more MenuItem to the Menu.
 
 #### Example - using \Kendo\UI\MenuItem
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $item = new \Kendo\UI\MenuItem();
     $enabled = true;
     $item->enabled($enabled);
     $menu->addItem($item);
+    ?>
 
 #### Example - using array
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $enabled = true;
     $menu->addItem(array('enabled' => $enabled));
+    ?>
 
 #### Example - adding more than one MenuItem
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $first  = new \Kendo\UI\MenuItem();
     $second = new \Kendo\UI\MenuItem();
     $menu->addItem($first, $second);
+    ?>
 
 ### open
 Fires before a sub menu gets opened.
@@ -184,8 +203,10 @@ Fires before a sub menu gets opened.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->open('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -200,8 +221,10 @@ Fires before a sub menu gets opened.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->open(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### openOnClick
 Specifies that the root sub menus will be opened on item click.
@@ -216,8 +239,10 @@ Specifies that the root sub menus will be opened on item click.
 
 
 #### Example 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->openOnClick(true);
+    ?>
 
 ### orientation
 Root menu orientation. Could be horizontal or vertical.
@@ -232,8 +257,10 @@ Root menu orientation. Could be horizontal or vertical.
 
 
 #### Example 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->orientation('value');
+    ?>
 
 ### popupCollision
 Specifies how Menu should adjust to screen boundaries. By default the strategy is "fit" for a sub menu with a horizontal parent,
@@ -250,8 +277,10 @@ its parent horizontally. You can also switch off the screen boundary detection c
 
 
 #### Example 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->popupCollision('value');
+    ?>
 
 ### select
 Fires when a menu item gets selected.
@@ -265,8 +294,10 @@ Fires when a menu item gets selected.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -281,6 +312,8 @@ Fires when a menu item gets selected.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 

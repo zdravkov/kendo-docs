@@ -38,18 +38,21 @@ The border of the series.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaultsBorder)
-
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsBorder();
     $color = 'value';
     $border->color($color);
     $seriesDefaults->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $color = 'value';
     $seriesDefaults->border(array('color' => $color));
+    ?>
 
 ### candlestick
 The candlestick configuration options.
@@ -90,8 +93,10 @@ The distance between category clusters.
 
 
 #### Example 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $seriesDefaults->gap(1);
+    ?>
 
 ### labels
 
@@ -106,18 +111,21 @@ Configures the series data labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaultsLabels)
-
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $labels = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsLabels();
     $background = 'value';
     $labels->background($background);
     $seriesDefaults->labels($labels);
+    ?>
 
 #### Example - using array
 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $background = 'value';
     $seriesDefaults->labels(array('background' => $background));
+    ?>
 
 ### line
 The line configuration options.
@@ -183,8 +191,10 @@ Space between bars.
 
 
 #### Example 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $seriesDefaults->spacing(1);
+    ?>
 
 ### stack
 A value indicating if the series should be stacked.
@@ -199,8 +209,10 @@ A value indicating if the series should be stacked.
 
 
 #### Example 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $seriesDefaults->stack(true);
+    ?>
 
 ### tooltip
 
@@ -215,16 +227,19 @@ The data point tooltip configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaultsTooltip)
-
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $tooltip = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltip();
     $background = 'value';
     $tooltip->background($background);
     $seriesDefaults->tooltip($tooltip);
+    ?>
 
 #### Example - using array
 
+    <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $background = 'value';
     $seriesDefaults->tooltip(array('background' => $background));
+    ?>
 

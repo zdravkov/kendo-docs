@@ -25,8 +25,10 @@ Enable/disable columns section in column header menu.
 
 
 #### Example 
+    <?php
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columnMenu->columns(true);
+    ?>
 
 ### filterable
 Enable/disable filter section in column header menu.
@@ -41,8 +43,10 @@ Enable/disable filter section in column header menu.
 
 
 #### Example 
+    <?php
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columnMenu->filterable(true);
+    ?>
 
 ### messages
 
@@ -57,18 +61,21 @@ Sets the columnMenu messages.
 
 
 #### Example - using [\Kendo\UI\GridColumnMenuMessages](/api/wrappers/php/Kendo/UI/GridColumnMenuMessages)
-
+    <?php
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $messages = new \Kendo\UI\GridColumnMenuMessages();
     $columns = 'value';
     $messages->columns($columns);
     $columnMenu->messages($messages);
+    ?>
 
 #### Example - using array
 
+    <?php
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columns = 'value';
     $columnMenu->messages(array('columns' => $columns));
+    ?>
 
 ### sortable
 Enable/disable sorting section in column header menu.
@@ -83,6 +90,8 @@ Enable/disable sorting section in column header menu.
 
 
 #### Example 
+    <?php
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columnMenu->sortable(true);
+    ?>
 

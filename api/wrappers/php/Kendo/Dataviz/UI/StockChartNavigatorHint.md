@@ -25,8 +25,10 @@ The format of the hint.
 
 
 #### Example 
+    <?php
     $hint = new \Kendo\Dataviz\UI\StockChartNavigatorHint();
     $hint->format('value');
+    ?>
 
 ### template
 The hint template.
@@ -42,12 +44,16 @@ Template variables:
 
 
 #### Example  - using string
+    <?php
     $hint = new \Kendo\Dataviz\UI\StockChartNavigatorHint();
     $hint->template('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $hint = new \Kendo\Dataviz\UI\StockChartNavigatorHint();
     $hint->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### visible
 The visibility of the hint.
@@ -62,6 +68,8 @@ The visibility of the hint.
 
 
 #### Example 
+    <?php
     $hint = new \Kendo\Dataviz\UI\StockChartNavigatorHint();
     $hint->visible(true);
+    ?>
 

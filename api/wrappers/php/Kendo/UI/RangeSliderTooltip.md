@@ -25,8 +25,10 @@ Disables (false) or enables (true) the tooltip of the RangeSlider.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\RangeSliderTooltip();
     $tooltip->enabled(true);
+    ?>
 
 ### format
 Format string for the text of the tooltip. Note: The applied format will also influence the appearance of
@@ -42,8 +44,10 @@ the RangeSlider tick labels.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\RangeSliderTooltip();
     $tooltip->format('value');
+    ?>
 
 ### template
 Template of the tooltip.
@@ -58,6 +62,8 @@ Template of the tooltip.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\UI\RangeSliderTooltip();
     $tooltip->template('value');
+    ?>
 

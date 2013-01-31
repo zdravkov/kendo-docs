@@ -25,18 +25,21 @@ The border of highlighted points. The color is computed automatically from the b
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemHighlightBorder)
-
+    <?php
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightBorder();
     $color = 'value';
     $border->color($color);
     $highlight->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $color = 'value';
     $highlight->border(array('color' => $color));
+    ?>
 
 ### color
 The highlight color.** Available only for pie series **
@@ -51,8 +54,10 @@ The highlight color.** Available only for pie series **
 
 
 #### Example 
+    <?php
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $highlight->color('value');
+    ?>
 
 ### line
 
@@ -67,18 +72,21 @@ Line options for highlighted points. The color is computed automatically from th
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemHighlightLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemHighlightLine)
-
+    <?php
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemHighlightLine();
     $color = 'value';
     $line->color($color);
     $highlight->line($line);
+    ?>
 
 #### Example - using array
 
+    <?php
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $color = 'value';
     $highlight->line(array('color' => $color));
+    ?>
 
 ### opacity
 The opacity of the highlighted points.
@@ -93,6 +101,8 @@ The opacity of the highlighted points.
 
 
 #### Example 
+    <?php
     $highlight = new \Kendo\Dataviz\UI\ChartSeriesItemHighlight();
     $highlight->opacity(1);
+    ?>
 

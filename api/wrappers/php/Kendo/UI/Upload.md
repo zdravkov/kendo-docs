@@ -47,18 +47,21 @@ for more details.
 
 
 #### Example - using [\Kendo\UI\UploadAsync](/api/wrappers/php/Kendo/UI/UploadAsync)
-
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $async = new \Kendo\UI\UploadAsync();
     $autoUpload = true;
     $async->autoUpload($autoUpload);
     $upload->async($async);
+    ?>
 
 #### Example - using array
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $autoUpload = true;
     $upload->async(array('autoUpload' => $autoUpload));
+    ?>
 
 ### cancel
 Fires when the upload has been cancelled while in progress.Note: The cancel event fires only when the upload is in
@@ -73,8 +76,10 @@ async mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->cancel('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -89,8 +94,10 @@ async mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->cancel(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### complete
 Fires when all active uploads have completed either successfully or with errors.Note: The complete event fires only when the upload is in
@@ -105,8 +112,10 @@ async mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->complete('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -121,8 +130,10 @@ async mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->complete(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### enabled
 Enables (true) or disables (false) an Upload. A disabled
@@ -138,8 +149,10 @@ Upload may be re-enabled via enable().
 
 
 #### Example 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->enabled(true);
+    ?>
 
 ### error
 Fires when an upload / remove operation has failed.Note: The error event fires only when the upload is in
@@ -154,8 +167,10 @@ async mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->error('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -170,8 +185,10 @@ async mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->error(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### localization
 
@@ -186,18 +203,21 @@ Sets the strings rendered by the Upload.
 
 
 #### Example - using [\Kendo\UI\UploadLocalization](/api/wrappers/php/Kendo/UI/UploadLocalization)
-
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $localization = new \Kendo\UI\UploadLocalization();
     $cancel = 'value';
     $localization->cancel($cancel);
     $upload->localization($localization);
+    ?>
 
 #### Example - using array
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $cancel = 'value';
     $upload->localization(array('cancel' => $cancel));
+    ?>
 
 ### multiple
 Enables (true) or disables (false) the ability to select multiple files.
@@ -214,8 +234,10 @@ limit the total number of uploaded files in an asynchronous configuration.
 
 
 #### Example 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->multiple(true);
+    ?>
 
 ### progress
 Fires when upload progress data is available.Note: The progress event fires only when the upload is in
@@ -230,8 +252,10 @@ async mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->progress('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -246,8 +270,10 @@ async mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->progress(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### remove
 Fires when an uploaded file is about to be removed.
@@ -262,8 +288,10 @@ Cancelling the event will prevent the remove.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->remove('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -278,8 +306,10 @@ Cancelling the event will prevent the remove.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->remove(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### select
 Triggered when a file(s) is selected. Note: Cancelling this event will prevent the selection from
@@ -294,8 +324,10 @@ occurring.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -310,8 +342,10 @@ occurring.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### showFileList
 Enables (true) or disables (false) the ability to display a file listing
@@ -328,8 +362,10 @@ client-side events to build your own UI.
 
 
 #### Example 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->showFileList(true);
+    ?>
 
 ### success
 Fires when an upload / remove operation has been completed successfully.Note: The success event fires only when the upload is in
@@ -344,8 +380,10 @@ async mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->success('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -360,8 +398,10 @@ async mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->success(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### upload
 Fires when one or more files are about to be uploaded.
@@ -377,8 +417,10 @@ async mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->upload('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -393,6 +435,8 @@ async mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $upload = new \Kendo\UI\Upload('Upload');
     $upload->upload(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 

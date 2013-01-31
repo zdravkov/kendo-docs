@@ -44,8 +44,10 @@ Fires when the rangeSlider value changes as a result of selecting a new value wi
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -60,8 +62,10 @@ Fires when the rangeSlider value changes as a result of selecting a new value wi
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### largeStep
 The delta with which the value will change when the user presses the Page Up or Page Down key (the drag
@@ -77,8 +81,10 @@ handle must be focused). Note: The allied largeStep will also set large tick for
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->largeStep(1);
+    ?>
 
 ### max
 The maximum value of the RangeSlider.
@@ -93,8 +99,10 @@ The maximum value of the RangeSlider.
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->max(1);
+    ?>
 
 ### min
 The minimum value of the RangeSlider.
@@ -109,8 +117,10 @@ The minimum value of the RangeSlider.
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->min(1);
+    ?>
 
 ### orientation
 F
@@ -127,8 +137,10 @@ The orientation of a RangeSlider; "horizontal" or
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->orientation('value');
+    ?>
 
 ### selectionEnd
 The selection end value of the RangeSlider.
@@ -143,8 +155,10 @@ The selection end value of the RangeSlider.
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->selectionEnd(1);
+    ?>
 
 ### selectionStart
 The selection start value of the RangeSlider.
@@ -159,8 +173,10 @@ The selection start value of the RangeSlider.
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->selectionStart(1);
+    ?>
 
 ### slide
 Fires when the user drags the drag handle to a new position.
@@ -174,8 +190,10 @@ Fires when the user drags the drag handle to a new position.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->slide('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -190,8 +208,10 @@ Fires when the user drags the drag handle to a new position.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->slide(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### smallStep
 The small step value of the RangeSlider. The underlying value will be changed when the end
@@ -208,8 +228,10 @@ arrow keys (the drag handle must be focused), or (3) drags the drag handle.
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->smallStep(1);
+    ?>
 
 ### tickPlacement
 Denotes the location of the tick marks in the RangeSlider. The available options are:
@@ -224,8 +246,10 @@ Denotes the location of the tick marks in the RangeSlider. The available options
 
 
 #### Example 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $rangeSlider->tickPlacement('value');
+    ?>
 
 ### tooltip
 
@@ -240,16 +264,19 @@ Configuration of the RangeSlider tooltip.
 
 
 #### Example - using [\Kendo\UI\RangeSliderTooltip](/api/wrappers/php/Kendo/UI/RangeSliderTooltip)
-
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $tooltip = new \Kendo\UI\RangeSliderTooltip();
     $enabled = true;
     $tooltip->enabled($enabled);
     $rangeSlider->tooltip($tooltip);
+    ?>
 
 #### Example - using array
 
+    <?php
     $rangeSlider = new \Kendo\UI\RangeSlider('RangeSlider');
     $enabled = true;
     $rangeSlider->tooltip(array('enabled' => $enabled));
+    ?>
 

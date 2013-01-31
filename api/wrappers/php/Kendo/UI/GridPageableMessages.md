@@ -25,8 +25,10 @@ Defines the info text.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->display('value');
+    ?>
 
 ### _empty
 Defines the info text shown when there are no records to be displayed.
@@ -41,8 +43,10 @@ Defines the info text shown when there are no records to be displayed.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->_empty('value');
+    ?>
 
 ### first
 Defines the text of the first page button tooltip.
@@ -57,8 +61,10 @@ Defines the text of the first page button tooltip.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->first('value');
+    ?>
 
 ### itemsPerPage
 Defines the text displayed after the select element of the pageSizes mode.
@@ -73,8 +79,10 @@ Defines the text displayed after the select element of the pageSizes mode.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->itemsPerPage('value');
+    ?>
 
 ### last
 Defines the text of the last page button tooltip.
@@ -89,8 +97,10 @@ Defines the text of the last page button tooltip.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->last('value');
+    ?>
 
 ### next
 Defines the text of the next page button tooltip.
@@ -105,8 +115,10 @@ Defines the text of the next page button tooltip.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->next('value');
+    ?>
 
 ### of
 Defines the last part of the text of the input option.
@@ -121,8 +133,10 @@ Defines the last part of the text of the input option.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->of('value');
+    ?>
 
 ### page
 Defines the first part of the text of the input option.
@@ -137,8 +151,10 @@ Defines the first part of the text of the input option.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->page('value');
+    ?>
 
 ### previous
 Defines the text of the previous page button tooltip.
@@ -153,8 +169,10 @@ Defines the text of the previous page button tooltip.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->previous('value');
+    ?>
 
 ### refresh
 Defines the text of the refresh button tooltip.
@@ -169,6 +187,8 @@ Defines the text of the refresh button tooltip.
 
 
 #### Example 
+    <?php
     $messages = new \Kendo\UI\GridPageableMessages();
     $messages->refresh('value');
+    ?>
 

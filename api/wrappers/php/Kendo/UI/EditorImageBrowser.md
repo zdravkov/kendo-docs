@@ -25,8 +25,10 @@ Defines the allowed file extensions.
 
 
 #### Example 
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $imageBrowser->fileTypes('value');
+    ?>
 
 ### messages
 
@@ -41,18 +43,21 @@ Defines texts shown within the pager.
 
 
 #### Example - using [\Kendo\UI\EditorImageBrowserMessages](/api/wrappers/php/Kendo/UI/EditorImageBrowserMessages)
-
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $messages = new \Kendo\UI\EditorImageBrowserMessages();
     $deleteFile = 'value';
     $messages->deleteFile($deleteFile);
     $imageBrowser->messages($messages);
+    ?>
 
 #### Example - using array
 
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $deleteFile = 'value';
     $imageBrowser->messages(array('deleteFile' => $deleteFile));
+    ?>
 
 ### path
 Defines the initial folder to display, relative to the root.
@@ -67,8 +72,10 @@ Defines the initial folder to display, relative to the root.
 
 
 #### Example 
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $imageBrowser->path('value');
+    ?>
 
 ### schema
 
@@ -83,18 +90,21 @@ Set the object responsible for describing the image raw data format.
 
 
 #### Example - using [\Kendo\UI\EditorImageBrowserSchema](/api/wrappers/php/Kendo/UI/EditorImageBrowserSchema)
-
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $schema = new \Kendo\UI\EditorImageBrowserSchema();
     $model = new \Kendo\UI\EditorImageBrowserSchemaModel();
     $schema->model($model);
     $imageBrowser->schema($schema);
+    ?>
 
 #### Example - using array
 
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $model = new \Kendo\UI\EditorImageBrowserSchemaModel();
     $imageBrowser->schema(array('model' => $model));
+    ?>
 
 ### transport
 
@@ -109,16 +119,19 @@ Specifies the settings for loading and saving data.
 
 
 #### Example - using [\Kendo\UI\EditorImageBrowserTransport](/api/wrappers/php/Kendo/UI/EditorImageBrowserTransport)
-
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
     $transport = new \Kendo\UI\EditorImageBrowserTransport();
-    $imageUrl = 'value';
-    $transport->imageUrl($imageUrl);
+    $create = 'value';
+    $transport->create($create);
     $imageBrowser->transport($transport);
+    ?>
 
 #### Example - using array
 
+    <?php
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
-    $imageUrl = 'value';
-    $imageBrowser->transport(array('imageUrl' => $imageUrl));
+    $create = 'value';
+    $imageBrowser->transport(array('create' => $create));
+    ?>
 

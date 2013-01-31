@@ -25,8 +25,10 @@ The number of milliseconds used for the animation when a node is expanded.
 
 
 #### Example 
+    <?php
     $collapse = new \Kendo\UI\TreeViewAnimationCollapse();
     $collapse->duration(1);
+    ?>
 
 ### effects
 A whitespace-delimited string of animation effects that are utilized when a TreeView node
@@ -42,6 +44,8 @@ is collapsed. Options include "fadeOut".
 
 
 #### Example 
+    <?php
     $collapse = new \Kendo\UI\TreeViewAnimationCollapse();
     $collapse->effects('value');
+    ?>
 

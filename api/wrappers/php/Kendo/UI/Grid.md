@@ -45,8 +45,10 @@ The id of the template used for rendering the alternate rows in the grid.
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->altRowTemplate('value');
+    ?>
 
 ### autoBind
 Indicates whether the grid will call read on the DataSource initially.
@@ -61,8 +63,10 @@ Indicates whether the grid will call read on the DataSource initially.
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->autoBind(true);
+    ?>
 
 ### change
 Fires when the grid selection has changed.
@@ -76,8 +80,10 @@ Fires when the grid selection has changed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -92,8 +98,10 @@ Fires when the grid selection has changed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### columnHide
 Fires when the user hides a column.
@@ -107,8 +115,10 @@ Fires when the user hides a column.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnHide('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -123,8 +133,10 @@ Fires when the user hides a column.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnHide(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### columnMenu
 
@@ -141,23 +153,28 @@ Enables column header menu
 
 
 #### Example  - using boolean
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnMenu(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\GridColumnMenu](/api/wrappers/php/Kendo/UI/GridColumnMenu)
-
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $columnMenu = new \Kendo\UI\GridColumnMenu();
     $columns = true;
     $columnMenu->columns($columns);
     $grid->columnMenu($columnMenu);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $columns = true;
     $grid->columnMenu(array('columns' => $columns));
+    ?>
 
 ### columnMenuInit
 Fires when the grid column menu is initialized.
@@ -171,8 +188,10 @@ Fires when the grid column menu is initialized.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnMenuInit('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -187,8 +206,10 @@ Fires when the grid column menu is initialized.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnMenuInit(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### columnReorder
 Fires when the user changes the order of a column.
@@ -202,8 +223,10 @@ Fires when the user changes the order of a column.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnReorder('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -218,8 +241,10 @@ Fires when the user changes the order of a column.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnReorder(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### columnResize
 Fires when the user resizes a column.
@@ -233,8 +258,10 @@ Fires when the user resizes a column.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnResize('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -249,8 +276,10 @@ Fires when the user resizes a column.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnResize(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### columnShow
 Fires when a column is shown.
@@ -264,8 +293,10 @@ Fires when a column is shown.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnShow('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -280,8 +311,10 @@ Fires when a column is shown.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->columnShow(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### addColumn
 
@@ -296,24 +329,30 @@ Adds one or more GridColumn to the Grid.
 
 #### Example - using \Kendo\UI\GridColumn
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $column = new \Kendo\UI\GridColumn();
     $command = 'value';
     $column->command($command);
     $grid->addColumn($column);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $command = 'value';
     $grid->addColumn(array('command' => $command));
+    ?>
 
 #### Example - adding more than one GridColumn
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $first  = new \Kendo\UI\GridColumn();
     $second = new \Kendo\UI\GridColumn();
     $grid->addColumn($first, $second);
+    ?>
 
 ### dataBinding
 Fires when the grid is about to be rendered.
@@ -327,8 +366,10 @@ Fires when the grid is about to be rendered.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->dataBinding('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -343,8 +384,10 @@ Fires when the grid is about to be rendered.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->dataBinding(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataBound
 Fires when the grid has received data from the data source.
@@ -358,8 +401,10 @@ Fires when the grid has received data from the data source.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->dataBound('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -374,8 +419,10 @@ Fires when the grid has received data from the data source.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->dataBound(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataSource
 
@@ -390,15 +437,19 @@ Sets the data source of the dataSource.
 
 #### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $dataSource = new \Kendo\Data\DataSource();
     $grid->dataSource($dataSource);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $schema = new \Kendo\Data\DataSourceSchema();
     $grid->dataSource(array('schema' => $schema));
+    ?>
 
 ### detailCollapse
 Fires when the grid detail row is collapsed.
@@ -412,8 +463,10 @@ Fires when the grid detail row is collapsed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->detailCollapse('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -428,8 +481,10 @@ Fires when the grid detail row is collapsed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->detailCollapse(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### detailExpand
 Fires when the grid detail row is expanded.
@@ -443,8 +498,10 @@ Fires when the grid detail row is expanded.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->detailExpand('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -459,8 +516,10 @@ Fires when the grid detail row is expanded.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->detailExpand(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### detailInit
 Fires when the grid detail is initialized.
@@ -474,8 +533,10 @@ Fires when the grid detail is initialized.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->detailInit('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -490,8 +551,10 @@ Fires when the grid detail is initialized.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->detailInit(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### detailTemplate
 The id of the template used for rendering the detail rows in the grid.
@@ -506,8 +569,10 @@ The id of the template used for rendering the detail rows in the grid.
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->detailTemplate('value');
+    ?>
 
 ### edit
 Fires when the grid enters edit mode.
@@ -521,8 +586,10 @@ Fires when the grid enters edit mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->edit('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -537,8 +604,10 @@ Fires when the grid enters edit mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->edit(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### editable
 
@@ -555,23 +624,28 @@ Indicates whether editing is enabled/disabled.
 
 
 #### Example  - using boolean
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->editable(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\GridEditable](/api/wrappers/php/Kendo/UI/GridEditable)
-
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $editable = new \Kendo\UI\GridEditable();
     $confirmation = true;
     $editable->confirmation($confirmation);
     $grid->editable($editable);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $confirmation = true;
     $grid->editable(array('confirmation' => $confirmation));
+    ?>
 
 ### filterMenuInit
 Fires when the grid column filter menu is initialized.
@@ -585,8 +659,10 @@ Fires when the grid column filter menu is initialized.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->filterMenuInit('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -601,8 +677,10 @@ Fires when the grid column filter menu is initialized.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->filterMenuInit(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### filterable
 
@@ -619,23 +697,28 @@ Indicates whether filtering is enabled/disabled.
 
 
 #### Example  - using boolean
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->filterable(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\GridFilterable](/api/wrappers/php/Kendo/UI/GridFilterable)
-
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $filterable = new \Kendo\UI\GridFilterable();
     $extra = true;
     $filterable->extra($extra);
     $grid->filterable($filterable);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $extra = true;
     $grid->filterable(array('extra' => $extra));
+    ?>
 
 ### groupable
 
@@ -652,23 +735,28 @@ Indicates whether grouping is enabled/disabled.
 
 
 #### Example  - using boolean
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->groupable(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\GridGroupable](/api/wrappers/php/Kendo/UI/GridGroupable)
-
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $groupable = new \Kendo\UI\GridGroupable();
     $messages = new \Kendo\UI\GridGroupableMessages();
     $groupable->messages($messages);
     $grid->groupable($groupable);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $messages = new \Kendo\UI\GridGroupableMessages();
     $grid->groupable(array('messages' => $messages));
+    ?>
 
 ### height
 Sets the height of the grid.
@@ -683,12 +771,16 @@ Sets the height of the grid.
 
 
 #### Example  - using float
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->height(1);
+    ?>
 
 #### Example  - using string
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->height('value');
+    ?>
 
 ### navigatable
 Indicates whether keyboard navigation is enabled/disabled.
@@ -703,8 +795,10 @@ Indicates whether keyboard navigation is enabled/disabled.
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->navigatable(true);
+    ?>
 
 ### pageable
 
@@ -721,23 +815,28 @@ Indicates whether paging is enabled/disabled.
 
 
 #### Example  - using boolean
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->pageable(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\GridPageable](/api/wrappers/php/Kendo/UI/GridPageable)
-
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $pageable = new \Kendo\UI\GridPageable();
     $buttonCount = 1;
     $pageable->buttonCount($buttonCount);
     $grid->pageable($pageable);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $buttonCount = 1;
     $grid->pageable(array('buttonCount' => $buttonCount));
+    ?>
 
 ### remove
 Fires before the grid item is removed.
@@ -751,8 +850,10 @@ Fires before the grid item is removed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->remove('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -767,8 +868,10 @@ Fires before the grid item is removed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->remove(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### reorderable
 Indicates whether column reordering is enabled/disable.
@@ -783,8 +886,10 @@ Indicates whether column reordering is enabled/disable.
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->reorderable(true);
+    ?>
 
 ### resizable
 Indicates whether column resizing is enabled/disable.
@@ -799,8 +904,10 @@ Indicates whether column resizing is enabled/disable.
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->resizable(true);
+    ?>
 
 ### rowTemplate
 The id of the template used for rendering the rows in the grid.
@@ -815,8 +922,10 @@ The id of the template used for rendering the rows in the grid.
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->rowTemplate('value');
+    ?>
 
 ### save
 Fires before the grid item is changed.
@@ -830,8 +939,10 @@ Fires before the grid item is changed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->save('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -846,8 +957,10 @@ Fires before the grid item is changed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->save(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### saveChanges
 Fires before the grid calls DataSource sync.
@@ -861,8 +974,10 @@ Fires before the grid calls DataSource sync.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->saveChanges('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -877,8 +992,10 @@ Fires before the grid calls DataSource sync.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->saveChanges(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### scrollable
 
@@ -895,23 +1012,28 @@ Enable/disable grid scrolling.
 
 
 #### Example  - using boolean
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->scrollable(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\GridScrollable](/api/wrappers/php/Kendo/UI/GridScrollable)
-
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $scrollable = new \Kendo\UI\GridScrollable();
     $virtual = true;
     $scrollable->virtual($virtual);
     $grid->scrollable($scrollable);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $virtual = true;
     $grid->scrollable(array('virtual' => $virtual));
+    ?>
 
 ### selectable
 Indicates whether selection is enabled/disabled. Possible values:
@@ -926,8 +1048,10 @@ Indicates whether selection is enabled/disabled. Possible values:
 
 
 #### Example 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->selectable('value');
+    ?>
 
 ### sortable
 
@@ -944,23 +1068,28 @@ Defines whether grid columns are sortable.
 
 
 #### Example  - using boolean
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->sortable(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\GridSortable](/api/wrappers/php/Kendo/UI/GridSortable)
-
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $sortable = new \Kendo\UI\GridSortable();
     $allowUnsort = true;
     $sortable->allowUnsort($allowUnsort);
     $grid->sortable($sortable);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $allowUnsort = true;
     $grid->sortable(array('allowUnsort' => $allowUnsort));
+    ?>
 
 ### addToolbarItem
 
@@ -975,22 +1104,28 @@ Adds one or more GridToolbarItem to the Grid.
 
 #### Example - using \Kendo\UI\GridToolbarItem
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $toolbarItem = new \Kendo\UI\GridToolbarItem();
     $name = 'value';
     $toolbarItem->name($name);
     $grid->addToolbarItem($toolbarItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $name = 'value';
     $grid->addToolbarItem(array('name' => $name));
+    ?>
 
 #### Example - adding more than one GridToolbarItem
 
+    <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $first  = new \Kendo\UI\GridToolbarItem();
     $second = new \Kendo\UI\GridToolbarItem();
     $grid->addToolbarItem($first, $second);
+    ?>
 

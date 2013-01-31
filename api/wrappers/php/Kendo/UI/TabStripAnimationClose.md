@@ -25,8 +25,10 @@ The number of milliseconds used for the visual animation when the current tab is
 
 
 #### Example 
+    <?php
     $close = new \Kendo\UI\TabStripAnimationClose();
     $close->duration(1);
+    ?>
 
 ### effects
 A whitespace-delimited string of animation effects that are utilized when the current tab
@@ -42,6 +44,8 @@ is closed. By default not specified - uses the opening animation with reverse.
 
 
 #### Example 
+    <?php
     $close = new \Kendo\UI\TabStripAnimationClose();
     $close->effects('value');
+    ?>
 

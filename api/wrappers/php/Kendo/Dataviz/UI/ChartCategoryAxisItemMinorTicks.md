@@ -26,8 +26,10 @@ on the chart.
 
 
 #### Example 
+    <?php
     $minorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks();
     $minorTicks->size(1);
+    ?>
 
 ### visible
 The visibility of the minor ticks.
@@ -42,6 +44,8 @@ The visibility of the minor ticks.
 
 
 #### Example 
+    <?php
     $minorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks();
     $minorTicks->visible(true);
+    ?>
 

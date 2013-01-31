@@ -25,8 +25,10 @@ The color of the border.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkersBorder();
     $border->color('value');
+    ?>
 
 ### width
 The width of the border.
@@ -41,6 +43,8 @@ The width of the border.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkersBorder();
     $border->width(1);
+    ?>
 

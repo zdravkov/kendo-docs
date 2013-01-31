@@ -25,8 +25,10 @@ The background color of the tooltip. The default is determined from the series c
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->background('value');
+    ?>
 
 ### border
 
@@ -41,18 +43,21 @@ The border configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartTooltipBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartTooltipBorder)
-
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $border = new \Kendo\Dataviz\UI\ChartTooltipBorder();
     $color = 'value';
     $border->color($color);
     $tooltip->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $color = 'value';
     $tooltip->border(array('color' => $color));
+    ?>
 
 ### color
 The text color of the tooltip. The default is the same as the series labels color.
@@ -67,8 +72,10 @@ The text color of the tooltip. The default is the same as the series labels colo
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->color('value');
+    ?>
 
 ### font
 The tooltip font.
@@ -83,8 +90,10 @@ The tooltip font.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->font('value');
+    ?>
 
 ### format
 The tooltip format.
@@ -99,8 +108,10 @@ The tooltip format.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->format('value');
+    ?>
 
 ### padding
 The padding of the tooltip.
@@ -115,8 +126,10 @@ The padding of the tooltip.
 
 
 #### Example  - using float
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->padding(1);
+    ?>
 
 ### template
 The tooltip template.
@@ -132,12 +145,16 @@ Template variables:
 
 
 #### Example  - using string
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->template('value');
+    ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### visible
 A value indicating if the tooltip should be displayed.
@@ -152,6 +169,8 @@ A value indicating if the tooltip should be displayed.
 
 
 #### Example 
+    <?php
     $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
     $tooltip->visible(true);
+    ?>
 

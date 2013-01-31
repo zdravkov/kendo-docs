@@ -25,8 +25,10 @@ The number of milliseconds used for the visual animation when an item is opened.
 
 
 #### Example 
+    <?php
     $expand = new \Kendo\UI\PanelBarAnimationExpand();
     $expand->duration(1);
+    ?>
 
 ### effects
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
@@ -42,8 +44,10 @@ A whitespace-delimited string of animation effects that are used when an item is
 
 
 #### Example 
+    <?php
     $expand = new \Kendo\UI\PanelBarAnimationExpand();
     $expand->effects('value');
+    ?>
 
 ### show
 
@@ -58,6 +62,8 @@ A whitespace-delimited string of animation effects that are used when an item is
 
 
 #### Example 
+    <?php
     $expand = new \Kendo\UI\PanelBarAnimationExpand();
     $expand->show(true);
+    ?>
 

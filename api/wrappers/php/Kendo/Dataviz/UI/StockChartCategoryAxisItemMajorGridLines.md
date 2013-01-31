@@ -25,8 +25,10 @@ The color of the lines. Any valid CSS color string will work here, including hex
 
 
 #### Example 
+    <?php
     $majorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorGridLines();
     $majorGridLines->color('value');
+    ?>
 
 ### dashType
 The dash type of the grid lines.
@@ -41,8 +43,10 @@ The dash type of the grid lines.
 
 
 #### Example 
+    <?php
     $majorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorGridLines();
     $majorGridLines->dashType('value');
+    ?>
 
 ### visible
 The visibility of the lines.
@@ -57,8 +61,10 @@ The visibility of the lines.
 
 
 #### Example 
+    <?php
     $majorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorGridLines();
     $majorGridLines->visible(true);
+    ?>
 
 ### width
 The width of the lines.
@@ -73,6 +79,8 @@ The width of the lines.
 
 
 #### Example 
+    <?php
     $majorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorGridLines();
     $majorGridLines->width(1);
+    ?>
 

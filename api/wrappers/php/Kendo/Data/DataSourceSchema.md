@@ -26,12 +26,16 @@ return the aggregate results for the current response.Result should have the fol
 
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->aggregates(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 #### Example  - using string
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->aggregates('value');
+    ?>
 
 ### data
 Specifies the field from the response which contains the data items. If set to a function - the function will be called to
@@ -47,12 +51,16 @@ return the data items for the current response.
 
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->data(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 #### Example  - using string
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->data('value');
+    ?>
 
 ### errors
 Specifies the field from the response which contains any errors. If set to a function - the function will be called to
@@ -68,12 +76,16 @@ return the errors for the current response (if present). If there are any errors
 
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->errors(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 #### Example  - using string
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->errors('value');
+    ?>
 
 ### groups
 Specifies the field from the response which contains the groups. If set to a function - the function will be called to
@@ -89,12 +101,16 @@ return the groups for the current response.Used instead of the schema.data setti
 
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->groups(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 #### Example  - using string
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->groups('value');
+    ?>
 
 ### parse
 Executed before the server response is used. Appropriate for preprocessing or parsing of the server response.
@@ -109,8 +125,10 @@ Executed before the server response is used. Appropriate for preprocessing or pa
 
 
 #### Example 
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->parse(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 ### total
 Specifies the field from the response which contains the total number of data items. If set to a function - the function will be called to
@@ -126,12 +144,16 @@ return the total number of data items for the current response.
 
 
 #### Example  - using \Kendo\JavaScriptFunction
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->total(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 #### Example  - using string
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->total('value');
+    ?>
 
 ### type
 Specify the type of the response - XML or JSON. The only supported values are "xml" and "json".
@@ -146,6 +168,8 @@ Specify the type of the response - XML or JSON. The only supported values are "x
 
 
 #### Example 
+    <?php
     $schema = new \Kendo\Data\DataSourceSchema();
     $schema->type('value');
+    ?>
 

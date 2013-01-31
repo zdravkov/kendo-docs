@@ -25,8 +25,10 @@ The color of the border. Any valid CSS color string will work here, including he
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerTrackBorder();
     $border->color('value');
+    ?>
 
 ### dashType
 The dash type of the border.
@@ -41,8 +43,10 @@ The dash type of the border.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerTrackBorder();
     $border->dashType('value');
+    ?>
 
 ### width
 The width of the border.
@@ -57,6 +61,8 @@ The width of the border.
 
 
 #### Example 
+    <?php
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerTrackBorder();
     $border->width(1);
+    ?>
 

@@ -25,8 +25,10 @@ The background color of the current series markers.
 
 
 #### Example 
+    <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->background('value');
+    ?>
 
 ### border
 
@@ -41,18 +43,21 @@ The border of the markers.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemMarkersBorder)
-
+    <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder();
     $color = 'value';
     $border->color($color);
     $markers->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $color = 'value';
     $markers->border(array('color' => $color));
+    ?>
 
 ### size
 The marker size.
@@ -67,8 +72,10 @@ The marker size.
 
 
 #### Example 
+    <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->size(1);
+    ?>
 
 ### type
 Configures the markers shape type.
@@ -83,8 +90,10 @@ Configures the markers shape type.
 
 
 #### Example 
+    <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->type('value');
+    ?>
 
 ### visible
 The markers visibility.
@@ -99,6 +108,8 @@ The markers visibility.
 
 
 #### Example 
+    <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->visible(true);
+    ?>
 

@@ -25,8 +25,10 @@ The lower boundary of the selected range.
 
 
 #### Example 
+    <?php
     $select = new \Kendo\Dataviz\UI\StockChartNavigatorSelect();
     $select->from(new date());
+    ?>
 
 ### to
 The upper boundary of the selected range.
@@ -41,6 +43,8 @@ The upper boundary of the selected range.
 
 
 #### Example 
+    <?php
     $select = new \Kendo\Dataviz\UI\StockChartNavigatorSelect();
     $select->to(new date());
+    ?>
 

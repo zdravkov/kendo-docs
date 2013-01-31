@@ -1,42 +1,23 @@
 ---
-title: DataSourceTransportRead
-slug: php-data-datasourcetransportread
+title: EditorImageBrowserTransportRead
+slug: php-ui-editorimagebrowsertransportread
 tags: api, php
 publish: true
 ---
 
-# \Kendo\Data\DataSourceTransportRead
+# \Kendo\UI\EditorImageBrowserTransportRead
 
-A PHP class representing the read setting of DataSourceTransport.
+A PHP class representing the read setting of EditorImageBrowserTransport.
 
 
 ## Methods
-
-### cache
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, "_=[TIMESTAMP]", to the URL.
-Refer to the jQuery.ajax documentation for further info.
-
-#### Returns
-`\Kendo\Data\DataSourceTransportRead`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
-    $read->cache(true);
-    ?>
 
 ### contentType
 The content-type HTTP header sent to the server. Default is "application/x-www-form-urlencoded". Use "application/json" if the content is JSON.
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportRead`
+`\Kendo\UI\EditorImageBrowserTransportRead`
 
 #### Parameters
 
@@ -46,7 +27,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->contentType('value');
     ?>
 
@@ -55,7 +36,7 @@ Data to be send to the server.
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportRead`
+`\Kendo\UI\EditorImageBrowserTransportRead`
 
 #### Parameters
 
@@ -65,19 +46,19 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example  - using 
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->data(new ());
     ?>
 
 #### Example  - using string
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->data('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->data(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
@@ -86,7 +67,7 @@ The type of data that you're expecting back from the server. Commonly used value
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportRead`
+`\Kendo\UI\EditorImageBrowserTransportRead`
 
 #### Parameters
 
@@ -96,7 +77,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->dataType('value');
     ?>
 
@@ -105,7 +86,7 @@ The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET"
 Refer to the jQuery.ajax documentation for further info.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportRead`
+`\Kendo\UI\EditorImageBrowserTransportRead`
 
 #### Parameters
 
@@ -115,7 +96,7 @@ Refer to the jQuery.ajax documentation for further info.
 
 #### Example 
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->type('value');
     ?>
 
@@ -123,7 +104,7 @@ Refer to the jQuery.ajax documentation for further info.
 The remote url to call when creating a new record.
 
 #### Returns
-`\Kendo\Data\DataSourceTransportRead`
+`\Kendo\UI\EditorImageBrowserTransportRead`
 
 #### Parameters
 
@@ -133,13 +114,13 @@ The remote url to call when creating a new record.
 
 #### Example  - using string
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->url('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
     <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
+    $read = new \Kendo\UI\EditorImageBrowserTransportRead();
     $read->url(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 

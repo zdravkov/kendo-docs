@@ -26,24 +26,30 @@ Adds one or more DataSourceAggregateItem to the DataSource.
 
 #### Example - using \Kendo\Data\DataSourceAggregateItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $aggregateItem = new \Kendo\Data\DataSourceAggregateItem();
     $aggregate = 'value';
     $aggregateItem->aggregate($aggregate);
     $dataSource->addAggregateItem($aggregateItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $aggregate = 'value';
     $dataSource->addAggregateItem(array('aggregate' => $aggregate));
+    ?>
 
 #### Example - adding more than one DataSourceAggregateItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $first  = new \Kendo\Data\DataSourceAggregateItem();
     $second = new \Kendo\Data\DataSourceAggregateItem();
     $dataSource->addAggregateItem($first, $second);
+    ?>
 
 ### autoSync
 Enables (true) or disables (false) the automatic invocation of the sync() method for each change made.
@@ -58,8 +64,10 @@ Enables (true) or disables (false) the automatic invocation of the sync() method
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->autoSync(true);
+    ?>
 
 ### batch
 Enables (true) or disables (false) batch mode.
@@ -74,8 +82,10 @@ Enables (true) or disables (false) batch mode.
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->batch(true);
+    ?>
 
 ### change
 Fires when data is changed or read from the transport.
@@ -89,8 +99,10 @@ Fires when data is changed or read from the transport.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -105,8 +117,10 @@ Fires when data is changed or read from the transport.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### data
 Specifies the local JavaScript object to use for the data source.
@@ -121,8 +135,10 @@ Specifies the local JavaScript object to use for the data source.
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->data(new array());
+    ?>
 
 ### error
 Fires when an error occurs during data read or sync.
@@ -136,8 +152,10 @@ Fires when an error occurs during data read or sync.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->error('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -152,8 +170,10 @@ Fires when an error occurs during data read or sync.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->error(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### addFilterItem
 
@@ -168,24 +188,30 @@ Adds one or more DataSourceFilterItem to the DataSource.
 
 #### Example - using \Kendo\Data\DataSourceFilterItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $filterItem = new \Kendo\Data\DataSourceFilterItem();
     $field = 'value';
     $filterItem->field($field);
     $dataSource->addFilterItem($filterItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $field = 'value';
     $dataSource->addFilterItem(array('field' => $field));
+    ?>
 
 #### Example - adding more than one DataSourceFilterItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $first  = new \Kendo\Data\DataSourceFilterItem();
     $second = new \Kendo\Data\DataSourceFilterItem();
     $dataSource->addFilterItem($first, $second);
+    ?>
 
 ### addGroupItem
 
@@ -200,24 +226,30 @@ Adds one or more DataSourceGroupItem to the DataSource.
 
 #### Example - using \Kendo\Data\DataSourceGroupItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $groupItem = new \Kendo\Data\DataSourceGroupItem();
     $dir = 'value';
     $groupItem->dir($dir);
     $dataSource->addGroupItem($groupItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dir = 'value';
     $dataSource->addGroupItem(array('dir' => $dir));
+    ?>
 
 #### Example - adding more than one DataSourceGroupItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $first  = new \Kendo\Data\DataSourceGroupItem();
     $second = new \Kendo\Data\DataSourceGroupItem();
     $dataSource->addGroupItem($first, $second);
+    ?>
 
 ### page
 Sets the index of the displayed page of data.
@@ -232,8 +264,10 @@ Sets the index of the displayed page of data.
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->page(1);
+    ?>
 
 ### pageSize
 Sets the number of records which contains a given page of data.
@@ -248,8 +282,10 @@ Sets the number of records which contains a given page of data.
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->pageSize(1);
+    ?>
 
 ### requestEnd
 Fires when a data request is received. Raised after a Create, Read, Update or Destroy request is performed.
@@ -263,8 +299,10 @@ Fires when a data request is received. Raised after a Create, Read, Update or De
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->requestEnd('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -279,8 +317,10 @@ Fires when a data request is received. Raised after a Create, Read, Update or De
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->requestEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### requestStart
 Fires when data request is to be made.
@@ -294,8 +334,10 @@ Fires when data request is to be made.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->requestStart('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -310,8 +352,10 @@ Fires when data request is to be made.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->requestStart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### schema
 
@@ -326,18 +370,21 @@ Set the object responsible for describing the raw data format.
 
 
 #### Example - using [\Kendo\Data\DataSourceSchema](/api/wrappers/php/Kendo/Data/DataSourceSchema)
-
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $schema = new \Kendo\Data\DataSourceSchema();
     $type = 'value';
     $schema->type($type);
     $dataSource->schema($schema);
+    ?>
 
 #### Example - using array
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $type = 'value';
     $dataSource->schema(array('type' => $type));
+    ?>
 
 ### serverAggregates
 Determines if aggregates are calculated on the server or not. By default aggregates are calculated client-side.
@@ -352,8 +399,10 @@ Determines if aggregates are calculated on the server or not. By default aggrega
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->serverAggregates(true);
+    ?>
 
 ### serverFiltering
 Determines if filtering of the data is handled on the server. By default filtering is performed client-side.By default, a filter object is sent to the server with the query string in the following form:Possible values for operator include:
@@ -368,8 +417,10 @@ Determines if filtering of the data is handled on the server. By default filteri
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->serverFiltering(true);
+    ?>
 
 ### serverGrouping
 Determines if grouping of the data is handled on the server. By default grouping is performed client-side.By default, a group object is sent to the server with the query string in the following form:It is possible to modify these parameters by using the parameterMap function found on the transport.
@@ -384,8 +435,10 @@ Determines if grouping of the data is handled on the server. By default grouping
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->serverGrouping(true);
+    ?>
 
 ### serverPaging
 Determines if paging of the data is on the server. By default paging is performed client-side. If serverPaging is enabled the
@@ -401,8 +454,10 @@ total number of data items should also be returned in the response. Use the sche
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->serverPaging(true);
+    ?>
 
 ### serverSorting
 Determines if sorting of the data should is handled on the server. By default sorting is performed client-side.By default, a sort object is sent to the server with the query string in the following form:It is possible to modify these parameters by using the parameterMap function found on the transport.
@@ -417,8 +472,10 @@ Determines if sorting of the data should is handled on the server. By default so
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->serverSorting(true);
+    ?>
 
 ### addSortItem
 
@@ -433,24 +490,30 @@ Adds one or more DataSourceSortItem to the DataSource.
 
 #### Example - using \Kendo\Data\DataSourceSortItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $sortItem = new \Kendo\Data\DataSourceSortItem();
     $dir = 'value';
     $sortItem->dir($dir);
     $dataSource->addSortItem($sortItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dir = 'value';
     $dataSource->addSortItem(array('dir' => $dir));
+    ?>
 
 #### Example - adding more than one DataSourceSortItem
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $first  = new \Kendo\Data\DataSourceSortItem();
     $second = new \Kendo\Data\DataSourceSortItem();
     $dataSource->addSortItem($first, $second);
+    ?>
 
 ### sync
 Fires after changes are synced.
@@ -464,8 +527,10 @@ Fires after changes are synced.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->sync('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -480,8 +545,10 @@ Fires after changes are synced.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->sync(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### transport
 
@@ -496,18 +563,21 @@ Specifies the settings for loading and saving data. This can be a remote or loca
 
 
 #### Example - using [\Kendo\Data\DataSourceTransport](/api/wrappers/php/Kendo/Data/DataSourceTransport)
-
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $transport = new \Kendo\Data\DataSourceTransport();
     $create = 'value';
     $transport->create($create);
     $dataSource->transport($transport);
+    ?>
 
 #### Example - using array
 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $create = 'value';
     $dataSource->transport(array('create' => $create));
+    ?>
 
 ### type
 Loads transport with preconfigured settings. Currently supports only "odata" (Requires kendo.data.odata.js to be included).
@@ -522,6 +592,8 @@ Loads transport with preconfigured settings. Currently supports only "odata" (Re
 
 
 #### Example 
+    <?php
     $dataSource = new \Kendo\Data\DataSource('DataSource');
     $dataSource->type('value');
+    ?>
 

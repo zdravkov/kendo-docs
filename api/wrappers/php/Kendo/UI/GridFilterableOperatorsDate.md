@@ -25,8 +25,10 @@ Enable/Disable and set the text of the "Is equal to" filter option for columns w
 
 
 #### Example 
+    <?php
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->eq('value');
+    ?>
 
 ### gt
 Enable/Disable and set the text of the "Is after" filter option for columns with date values.
@@ -41,8 +43,10 @@ Enable/Disable and set the text of the "Is after" filter option for columns with
 
 
 #### Example 
+    <?php
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->gt('value');
+    ?>
 
 ### gte
 Enable/Disable and set the text of the "Is after or equal to" filter option for columns with date values.
@@ -57,8 +61,10 @@ Enable/Disable and set the text of the "Is after or equal to" filter option for 
 
 
 #### Example 
+    <?php
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->gte('value');
+    ?>
 
 ### lt
 Enable/Disable and set the text of the "Is before" filter option for columns with date values.
@@ -73,8 +79,10 @@ Enable/Disable and set the text of the "Is before" filter option for columns wit
 
 
 #### Example 
+    <?php
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->lt('value');
+    ?>
 
 ### lte
 Enable/Disable and set the text of the "Is before or equal to" filter option for columns with date values.
@@ -89,8 +97,10 @@ Enable/Disable and set the text of the "Is before or equal to" filter option for
 
 
 #### Example 
+    <?php
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->lte('value');
+    ?>
 
 ### neq
 Enable/Disable and set the text of the "Is not equal to" filter option for columns with date values.
@@ -105,6 +115,8 @@ Enable/Disable and set the text of the "Is not equal to" filter option for colum
 
 
 #### Example 
+    <?php
     $date = new \Kendo\UI\GridFilterableOperatorsDate();
     $date->neq('value');
+    ?>
 

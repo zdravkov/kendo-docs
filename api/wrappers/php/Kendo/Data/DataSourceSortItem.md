@@ -25,8 +25,10 @@ Sets the sort direction. Possible values are: "asc", "desc", null. If null is se
 
 
 #### Example 
+    <?php
     $sortItem = new \Kendo\Data\DataSourceSortItem();
     $sortItem->dir('value');
+    ?>
 
 ### field
 Sets the field to sort on.
@@ -41,6 +43,8 @@ Sets the field to sort on.
 
 
 #### Example 
+    <?php
     $sortItem = new \Kendo\Data\DataSourceSortItem();
     $sortItem->field('value');
+    ?>
 

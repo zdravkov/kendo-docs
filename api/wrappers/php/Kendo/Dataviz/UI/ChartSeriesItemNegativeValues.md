@@ -25,8 +25,10 @@ The color of the negative values.
 
 
 #### Example 
+    <?php
     $negativeValues = new \Kendo\Dataviz\UI\ChartSeriesItemNegativeValues();
     $negativeValues->color('value');
+    ?>
 
 ### visible
 The visibility of the negative values.
@@ -41,6 +43,8 @@ The visibility of the negative values.
 
 
 #### Example 
+    <?php
     $negativeValues = new \Kendo\Dataviz\UI\ChartSeriesItemNegativeValues();
     $negativeValues->visible(true);
+    ?>
 

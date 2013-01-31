@@ -25,8 +25,10 @@ The color of the lines. Any valid CSS color string will work here, including hex
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->color('value');
+    ?>
 
 ### dashType
 The dash type of the line.
@@ -41,8 +43,10 @@ The dash type of the line.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->dashType('value');
+    ?>
 
 ### visible
 The visibility of the lines.
@@ -57,8 +61,10 @@ The visibility of the lines.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->visible(true);
+    ?>
 
 ### width
 The width of the line..
@@ -73,6 +79,8 @@ The width of the line..
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $line->width(1);
+    ?>
 

@@ -25,6 +25,8 @@ Enable/disable virtual scrolling. When enabled the grid will display only a sing
 
 
 #### Example 
+    <?php
     $scrollable = new \Kendo\UI\GridScrollable();
     $scrollable->virtual(true);
+    ?>
 

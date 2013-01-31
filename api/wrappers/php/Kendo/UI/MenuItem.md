@@ -12,6 +12,24 @@ A PHP class representing the item setting of MenuItems.
 
 ## Methods
 
+### content
+
+Sets the HTML content of the MenuItem.
+
+#### Returns
+
+`MenuItem`
+
+#### $value `string`
+
+#### Example
+
+    <?php
+    $item = new \Kendo\UI\MenuItem();
+    $item->content('<strong>Content</strong>');
+    ?>
+
+
 ### enabled
 Specifies whether the item is initially enabled
 
@@ -25,8 +43,25 @@ Specifies whether the item is initially enabled
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\MenuItem();
     $item->enabled(true);
+    ?>
+
+### endContent
+
+Stops output bufferring and sets the preceding markup as the content of the MenuItem.
+
+#### Example
+
+    <?php
+    $item = new \Kendo\UI\MenuItem();
+    $item->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $item->endContent(); // content is set to <strong>Content</strong>
+    ?>
 
 ### imageUrl
 Specifies the URL of the image displayed by the item
@@ -41,8 +76,10 @@ Specifies the URL of the image displayed by the item
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\MenuItem();
     $item->imageUrl('value');
+    ?>
 
 ### selected
 Specifies whether the item is initially selected
@@ -57,8 +94,10 @@ Specifies whether the item is initially selected
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\MenuItem();
     $item->selected(true);
+    ?>
 
 ### spriteCssClass
 Specifies the class name for the sprite image displayed by the item
@@ -73,8 +112,26 @@ Specifies the class name for the sprite image displayed by the item
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\MenuItem();
     $item->spriteCssClass('value');
+    ?>
+
+### startContent
+
+Starts output bufferring. Any following markup will be set as the content of the MenuItem.
+
+#### Example
+
+    <?php
+    $item = new \Kendo\UI\MenuItem();
+    $item->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $item->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 
 ### text
 Specifies the text displayed by the item
@@ -89,6 +146,8 @@ Specifies the text displayed by the item
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\MenuItem();
     $item->text('value');
+    ?>
 

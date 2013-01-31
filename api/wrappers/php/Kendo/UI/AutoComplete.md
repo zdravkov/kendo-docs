@@ -45,18 +45,21 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
 
 
 #### Example - using [\Kendo\UI\AutoCompleteAnimation](/api/wrappers/php/Kendo/UI/AutoCompleteAnimation)
-
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $animation = new \Kendo\UI\AutoCompleteAnimation();
     $close = new \Kendo\UI\AutoCompleteAnimationClose();
     $animation->close($close);
     $autoComplete->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $close = new \Kendo\UI\AutoCompleteAnimationClose();
     $autoComplete->animation(array('close' => $close));
+    ?>
 
 ### change
 Fires when the value has been changed.
@@ -70,8 +73,10 @@ Fires when the value has been changed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -86,8 +91,10 @@ Fires when the value has been changed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### close
 Fires when the drop-down list is closed
@@ -101,8 +108,10 @@ Fires when the drop-down list is closed
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->close('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -117,8 +126,10 @@ Fires when the drop-down list is closed
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->close(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataBound
 Fires when the AutoComplete has received data from the data source.
@@ -132,8 +143,10 @@ Fires when the AutoComplete has received data from the data source.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->dataBound('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -148,8 +161,10 @@ Fires when the AutoComplete has received data from the data source.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->dataBound(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataSource
 
@@ -164,15 +179,19 @@ Sets the data source of the dataSource.
 
 #### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $dataSource = new \Kendo\Data\DataSource();
     $autoComplete->dataSource($dataSource);
+    ?>
 
 #### Example - using array
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $schema = new \Kendo\Data\DataSourceSchema();
     $autoComplete->dataSource(array('schema' => $schema));
+    ?>
 
 ### dataTextField
 Sets the field of the data item that provides the text content of the list items.
@@ -187,8 +206,10 @@ Sets the field of the data item that provides the text content of the list items
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->dataTextField('value');
+    ?>
 
 ### delay
 Specifies the delay in ms after which the AutoComplete will start filtering the dataSource.
@@ -203,8 +224,10 @@ Specifies the delay in ms after which the AutoComplete will start filtering the 
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->delay(1);
+    ?>
 
 ### enable
 Controls whether the AutoComplete should be initially enabled.
@@ -219,8 +242,10 @@ Controls whether the AutoComplete should be initially enabled.
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->enable(true);
+    ?>
 
 ### filter
 Defines the type of filtration. This value is handled by the remote data source.
@@ -235,8 +260,10 @@ Defines the type of filtration. This value is handled by the remote data source.
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->filter('value');
+    ?>
 
 ### height
 Sets the height of the drop-down list in pixels.
@@ -251,8 +278,10 @@ Sets the height of the drop-down list in pixels.
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->height(1);
+    ?>
 
 ### highlightFirst
 Controls whether the first item will be automatically highlighted.
@@ -267,8 +296,10 @@ Controls whether the first item will be automatically highlighted.
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->highlightFirst(true);
+    ?>
 
 ### ignoreCase
 Defines whether the filtration should be case sensitive.
@@ -283,8 +314,10 @@ Defines whether the filtration should be case sensitive.
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->ignoreCase(true);
+    ?>
 
 ### minLength
 Specifies the minimum number of characters that should be typed before the AutoComplete queries
@@ -300,8 +333,10 @@ the dataSource.
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->minLength(1);
+    ?>
 
 ### open
 Fires when the drop-down list is opened
@@ -315,8 +350,10 @@ Fires when the drop-down list is opened
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->open('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -331,8 +368,10 @@ Fires when the drop-down list is opened
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->open(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### placeholder
 A string that appears in the textbox when it has no value.
@@ -347,8 +386,10 @@ A string that appears in the textbox when it has no value.
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->placeholder('value');
+    ?>
 
 ### select
 Triggered when a Li element is selected.
@@ -362,8 +403,10 @@ Triggered when a Li element is selected.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -378,8 +421,10 @@ Triggered when a Li element is selected.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### separator
 Sets the separator for completion. Empty by default, allowing for only one completion.
@@ -394,8 +439,10 @@ Sets the separator for completion. Empty by default, allowing for only one compl
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->separator('value');
+    ?>
 
 ### suggest
 Controls whether the AutoComplete should automatically auto-type the rest of text.
@@ -410,8 +457,10 @@ Controls whether the AutoComplete should automatically auto-type the rest of tex
 
 
 #### Example 
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->suggest(true);
+    ?>
 
 ### template
 Template to be used for rendering the items in the list.
@@ -421,11 +470,19 @@ Template to be used for rendering the items in the list.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
+    <?php
     $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
     $autoComplete->template('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
+    $autoComplete->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 

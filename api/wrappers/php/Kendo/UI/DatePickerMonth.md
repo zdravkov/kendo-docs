@@ -24,8 +24,10 @@ Sets the HTML content of the DatePickerMonth.
 
 #### Example
 
+    <?php
     $month = new \Kendo\UI\DatePickerMonth();
     $month->content('<strong>Content</strong>');
+    ?>
 
 
 ### _empty
@@ -42,6 +44,8 @@ the minimum and maximum values.
 
 
 #### Example 
+    <?php
     $month = new \Kendo\UI\DatePickerMonth();
     $month->_empty('value');
+    ?>
 

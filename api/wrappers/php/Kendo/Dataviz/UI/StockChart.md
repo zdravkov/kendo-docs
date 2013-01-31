@@ -45,8 +45,10 @@ Indicates whether the chart will call read on the data source initially.
 
 
 #### Example 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->autoBind(true);
+    ?>
 
 ### axisDefaults
 Default options for all chart axes.
@@ -72,8 +74,10 @@ Fires when an axis label is clicked.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->axisLabelClick('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -88,8 +92,10 @@ Fires when an axis label is clicked.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->axisLabelClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### addCategoryAxisItem
 
@@ -104,24 +110,30 @@ Adds one or more StockChartCategoryAxisItem to the StockChart.
 
 #### Example - using \Kendo\Dataviz\UI\StockChartCategoryAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
     $baseUnit = 'value';
     $categoryAxisItem->baseUnit($baseUnit);
     $stockChart->addCategoryAxisItem($categoryAxisItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $baseUnit = 'value';
     $stockChart->addCategoryAxisItem(array('baseUnit' => $baseUnit));
+    ?>
 
 #### Example - adding more than one StockChartCategoryAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $first  = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
     $second = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
     $stockChart->addCategoryAxisItem($first, $second);
+    ?>
 
 ### chartArea
 
@@ -137,18 +149,21 @@ This is the entire visible area of the chart.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartChartArea](/api/wrappers/php/Kendo/Dataviz/UI/StockChartChartArea)
-
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $chartArea = new \Kendo\Dataviz\UI\StockChartChartArea();
     $background = 'value';
     $chartArea->background($background);
     $stockChart->chartArea($chartArea);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $background = 'value';
     $stockChart->chartArea(array('background' => $background));
+    ?>
 
 ### dataBound
 Fires when the chart has received data from the data source
@@ -163,8 +178,10 @@ and is about to render it.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->dataBound('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -179,8 +196,10 @@ and is about to render it.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->dataBound(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataSource
 
@@ -195,15 +214,19 @@ Sets the data source of the dataSource.
 
 #### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $dataSource = new \Kendo\Data\DataSource();
     $stockChart->dataSource($dataSource);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $schema = new \Kendo\Data\DataSourceSchema();
     $stockChart->dataSource(array('schema' => $schema));
+    ?>
 
 ### dateField
 The field containing the point date.
@@ -219,8 +242,10 @@ It is used as a default field for all date axes, including the navigator pane.Th
 
 
 #### Example 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->dateField('value');
+    ?>
 
 ### drag
 Fires as long as the user is dragging the chart using the mouse or swipe gestures.
@@ -234,8 +259,10 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->drag('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -250,8 +277,10 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->drag(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dragEnd
 Fires when the user stops dragging the chart.
@@ -265,8 +294,10 @@ Fires when the user stops dragging the chart.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->dragEnd('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -281,8 +312,10 @@ Fires when the user stops dragging the chart.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->dragEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dragStart
 Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
@@ -296,8 +329,10 @@ Fires when the user has used the mouse or a swipe gesture to drag the chart.The 
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->dragStart('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -312,8 +347,10 @@ Fires when the user has used the mouse or a swipe gesture to drag the chart.The 
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->dragStart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### legend
 
@@ -328,18 +365,21 @@ The chart legend configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartLegend](/api/wrappers/php/Kendo/Dataviz/UI/StockChartLegend)
-
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $legend = new \Kendo\Dataviz\UI\StockChartLegend();
     $background = 'value';
     $legend->background($background);
     $stockChart->legend($legend);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $background = 'value';
     $stockChart->legend(array('background' => $background));
+    ?>
 
 ### navigator
 
@@ -354,18 +394,21 @@ The data navigator configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartNavigator](/api/wrappers/php/Kendo/Dataviz/UI/StockChartNavigator)
-
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $autoBind = true;
     $navigator->autoBind($autoBind);
     $stockChart->navigator($navigator);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $autoBind = true;
     $stockChart->navigator(array('autoBind' => $autoBind));
+    ?>
 
 ### addPane
 
@@ -380,24 +423,30 @@ Adds one or more StockChartPane to the StockChart.
 
 #### Example - using \Kendo\Dataviz\UI\StockChartPane
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $pane = new \Kendo\Dataviz\UI\StockChartPane();
     $background = 'value';
     $pane->background($background);
     $stockChart->addPane($pane);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $background = 'value';
     $stockChart->addPane(array('background' => $background));
+    ?>
 
 #### Example - adding more than one StockChartPane
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $first  = new \Kendo\Dataviz\UI\StockChartPane();
     $second = new \Kendo\Dataviz\UI\StockChartPane();
     $stockChart->addPane($first, $second);
+    ?>
 
 ### plotArea
 
@@ -412,18 +461,21 @@ The plot area configuration options. This is the area containing the plotted ser
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartPlotArea](/api/wrappers/php/Kendo/Dataviz/UI/StockChartPlotArea)
-
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $plotArea = new \Kendo\Dataviz\UI\StockChartPlotArea();
     $background = 'value';
     $plotArea->background($background);
     $stockChart->plotArea($plotArea);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $background = 'value';
     $stockChart->plotArea(array('background' => $background));
+    ?>
 
 ### plotAreaClick
 Fires when plot area is clicked.
@@ -437,8 +489,10 @@ Fires when plot area is clicked.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->plotAreaClick('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -453,8 +507,10 @@ Fires when plot area is clicked.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->plotAreaClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### select
 Fires when the user drags the drag handle to a new position.
@@ -468,8 +524,10 @@ Fires when the user drags the drag handle to a new position.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -484,8 +542,10 @@ Fires when the user drags the drag handle to a new position.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### selectEnd
 Fires when the user stops dragging the drag handle.
@@ -499,8 +559,10 @@ Fires when the user stops dragging the drag handle.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->selectEnd('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -515,8 +577,10 @@ Fires when the user stops dragging the drag handle.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->selectEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### selectStart
 Fires when the user start to dragging the drag handle.
@@ -530,8 +594,10 @@ Fires when the user start to dragging the drag handle.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->selectStart('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -546,8 +612,10 @@ Fires when the user start to dragging the drag handle.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->selectStart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### addSeriesItem
 
@@ -562,24 +630,30 @@ Adds one or more StockChartSeriesItem to the StockChart.
 
 #### Example - using \Kendo\Dataviz\UI\StockChartSeriesItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $aggregate = 'value';
     $seriesItem->aggregate($aggregate);
     $stockChart->addSeriesItem($seriesItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $aggregate = 'value';
     $stockChart->addSeriesItem(array('aggregate' => $aggregate));
+    ?>
 
 #### Example - adding more than one StockChartSeriesItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $first  = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $second = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $stockChart->addSeriesItem($first, $second);
+    ?>
 
 ### seriesClick
 Fires when chart series are clicked.
@@ -593,8 +667,10 @@ Fires when chart series are clicked.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->seriesClick('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -609,8 +685,10 @@ Fires when chart series are clicked.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->seriesClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### seriesColors
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
@@ -625,8 +703,10 @@ The default colors for the chart's series. When all colors are used, new colors 
 
 
 #### Example 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->seriesColors(new array());
+    ?>
 
 ### seriesDefaults
 
@@ -641,18 +721,21 @@ Default values for each series.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaults](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaults)
-
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $gap = 1;
     $seriesDefaults->gap($gap);
     $stockChart->seriesDefaults($seriesDefaults);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $gap = 1;
     $stockChart->seriesDefaults(array('gap' => $gap));
+    ?>
 
 ### seriesHover
 Fires when chart series are hovered.
@@ -666,8 +749,10 @@ Fires when chart series are hovered.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->seriesHover('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -682,8 +767,10 @@ Fires when chart series are hovered.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->seriesHover(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### theme
 Sets Chart theme. Available themes: default, blueOpal, black.
@@ -698,8 +785,10 @@ Sets Chart theme. Available themes: default, blueOpal, black.
 
 
 #### Example 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->theme('value');
+    ?>
 
 ### title
 
@@ -714,18 +803,21 @@ The chart title configuration options or text.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartTitle](/api/wrappers/php/Kendo/Dataviz/UI/StockChartTitle)
-
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $title = new \Kendo\Dataviz\UI\StockChartTitle();
     $align = 'value';
     $title->align($align);
     $stockChart->title($title);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $align = 'value';
     $stockChart->title(array('align' => $align));
+    ?>
 
 ### tooltip
 
@@ -740,18 +832,21 @@ The data point tooltip configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartTooltip](/api/wrappers/php/Kendo/Dataviz/UI/StockChartTooltip)
-
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $tooltip = new \Kendo\Dataviz\UI\StockChartTooltip();
     $background = 'value';
     $tooltip->background($background);
     $stockChart->tooltip($tooltip);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $background = 'value';
     $stockChart->tooltip(array('background' => $background));
+    ?>
 
 ### transitions
 A value indicating if transition animations should be played.
@@ -766,8 +861,10 @@ A value indicating if transition animations should be played.
 
 
 #### Example 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->transitions(true);
+    ?>
 
 ### addValueAxisItem
 
@@ -782,24 +879,30 @@ Adds one or more StockChartValueAxisItem to the StockChart.
 
 #### Example - using \Kendo\Dataviz\UI\StockChartValueAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $valueAxisItem = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
     $color = 'value';
     $valueAxisItem->color($color);
     $stockChart->addValueAxisItem($valueAxisItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $color = 'value';
     $stockChart->addValueAxisItem(array('color' => $color));
+    ?>
 
 #### Example - adding more than one StockChartValueAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $first  = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
     $second = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
     $stockChart->addValueAxisItem($first, $second);
+    ?>
 
 ### addXAxisItem
 
@@ -814,24 +917,30 @@ Adds one or more StockChartXAxisItem to the StockChart.
 
 #### Example - using \Kendo\Dataviz\UI\StockChartXAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $baseUnit = 'value';
     $xAxisItem->baseUnit($baseUnit);
     $stockChart->addXAxisItem($xAxisItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $baseUnit = 'value';
     $stockChart->addXAxisItem(array('baseUnit' => $baseUnit));
+    ?>
 
 #### Example - adding more than one StockChartXAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $first  = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $second = new \Kendo\Dataviz\UI\StockChartXAxisItem();
     $stockChart->addXAxisItem($first, $second);
+    ?>
 
 ### addYAxisItem
 
@@ -846,24 +955,30 @@ Adds one or more StockChartYAxisItem to the StockChart.
 
 #### Example - using \Kendo\Dataviz\UI\StockChartYAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $yAxisItem = new \Kendo\Dataviz\UI\StockChartYAxisItem();
     $baseUnit = 'value';
     $yAxisItem->baseUnit($baseUnit);
     $stockChart->addYAxisItem($yAxisItem);
+    ?>
 
 #### Example - using array
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $baseUnit = 'value';
     $stockChart->addYAxisItem(array('baseUnit' => $baseUnit));
+    ?>
 
 #### Example - adding more than one StockChartYAxisItem
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $first  = new \Kendo\Dataviz\UI\StockChartYAxisItem();
     $second = new \Kendo\Dataviz\UI\StockChartYAxisItem();
     $stockChart->addYAxisItem($first, $second);
+    ?>
 
 ### zoom
 Fires as long as the user is zooming the chart using the mousewheel.
@@ -877,8 +992,10 @@ Fires as long as the user is zooming the chart using the mousewheel.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->zoom('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -893,8 +1010,10 @@ Fires as long as the user is zooming the chart using the mousewheel.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->zoom(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### zoomEnd
 Fires when the user stops zooming the chart.
@@ -908,8 +1027,10 @@ Fires when the user stops zooming the chart.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->zoomEnd('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -924,8 +1045,10 @@ Fires when the user stops zooming the chart.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->zoomEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### zoomStart
 Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
@@ -939,8 +1062,10 @@ Fires when the user has used the mousewheel to zoom the chart.The zoom operation
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->zoomStart('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -955,6 +1080,8 @@ Fires when the user has used the mousewheel to zoom the chart.The zoom operation
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $stockChart->zoomStart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 

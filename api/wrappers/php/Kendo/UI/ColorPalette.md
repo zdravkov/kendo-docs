@@ -44,8 +44,10 @@ Triggers when a new color has been changed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $colorPalette->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -60,8 +62,10 @@ Triggers when a new color has been changed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $colorPalette->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### columns
 The number of columns to display.  When you pass "websafe" this will
@@ -77,8 +81,10 @@ automatically default to 18.
 
 
 #### Example 
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $colorPalette->columns(1);
+    ?>
 
 ### palette
 Specifies the color palette to display.  It can be a string with
@@ -97,12 +103,16 @@ or "websafe" to get the Web-safe palette.
 
 
 #### Example  - using string
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $colorPalette->palette('value');
+    ?>
 
 #### Example  - using array
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $colorPalette->palette(new array());
+    ?>
 
 ### tileSize
 
@@ -119,21 +129,26 @@ The size of a color cell.
 
 
 #### Example  - using float
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $colorPalette->tileSize(1);
+    ?>
 
 
 #### Example - using [\Kendo\UI\ColorPaletteTileSize](/api/wrappers/php/Kendo/UI/ColorPaletteTileSize)
-
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $tileSize = new \Kendo\UI\ColorPaletteTileSize();
     $height = 1;
     $tileSize->height($height);
     $colorPalette->tileSize($tileSize);
+    ?>
 
 #### Example - using array
 
+    <?php
     $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
     $height = 1;
     $colorPalette->tileSize(array('height' => $height));
+    ?>
 

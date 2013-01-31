@@ -25,8 +25,10 @@ The color of the lines.Note that this has no effect if the visibility of the min
 
 
 #### Example 
+    <?php
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines();
     $minorGridLines->color('value');
+    ?>
 
 ### dashType
 The dash type of the minor grid lines.
@@ -41,8 +43,10 @@ The dash type of the minor grid lines.
 
 
 #### Example 
+    <?php
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines();
     $minorGridLines->dashType('value');
+    ?>
 
 ### visible
 The visibility of the lines.
@@ -57,8 +61,10 @@ The visibility of the lines.
 
 
 #### Example 
+    <?php
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines();
     $minorGridLines->visible(true);
+    ?>
 
 ### width
 The width of the lines.Note that this settings has no effect if the visibility of the minor grid lines is not set to true.
@@ -73,6 +79,8 @@ The width of the lines.Note that this settings has no effect if the visibility o
 
 
 #### Example 
+    <?php
     $minorGridLines = new \Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines();
     $minorGridLines->width(1);
+    ?>
 

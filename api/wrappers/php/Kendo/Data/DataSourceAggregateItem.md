@@ -25,8 +25,10 @@ Specifies the aggregate function. Possible values are: "min", "max", "count", "s
 
 
 #### Example 
+    <?php
     $aggregateItem = new \Kendo\Data\DataSourceAggregateItem();
     $aggregateItem->aggregate('value');
+    ?>
 
 ### field
 Specifies the field on which the aggregate will be calculated.
@@ -41,6 +43,8 @@ Specifies the field on which the aggregate will be calculated.
 
 
 #### Example 
+    <?php
     $aggregateItem = new \Kendo\Data\DataSourceAggregateItem();
     $aggregateItem->field('value');
+    ?>
 

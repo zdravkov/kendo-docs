@@ -25,8 +25,10 @@ The name of the field.
 
 
 #### Example 
+    <?php
     $name = new \Kendo\UI\EditorImageBrowserSchemaModelFieldsName();
     $name->field('value');
+    ?>
 
 ### parse
 Specifies the function which will parse the field value. If not set default parsers will be used.
@@ -41,6 +43,8 @@ Specifies the function which will parse the field value. If not set default pars
 
 
 #### Example 
+    <?php
     $name = new \Kendo\UI\EditorImageBrowserSchemaModelFieldsName();
     $name->parse(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 

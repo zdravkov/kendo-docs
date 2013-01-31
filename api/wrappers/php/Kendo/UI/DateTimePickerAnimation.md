@@ -25,18 +25,21 @@ The animation(s) used for hiding of the pop-up.
 
 
 #### Example - using [\Kendo\UI\DateTimePickerAnimationClose](/api/wrappers/php/Kendo/UI/DateTimePickerAnimationClose)
-
+    <?php
     $animation = new \Kendo\UI\DateTimePickerAnimation();
     $close = new \Kendo\UI\DateTimePickerAnimationClose();
     $duration = 1;
     $close->duration($duration);
     $animation->close($close);
+    ?>
 
 #### Example - using array
 
+    <?php
     $animation = new \Kendo\UI\DateTimePickerAnimation();
     $duration = 1;
     $animation->close(array('duration' => $duration));
+    ?>
 
 ### open
 
@@ -51,16 +54,19 @@ The animation(s) used for displaying of the pop-up.
 
 
 #### Example - using [\Kendo\UI\DateTimePickerAnimationOpen](/api/wrappers/php/Kendo/UI/DateTimePickerAnimationOpen)
-
+    <?php
     $animation = new \Kendo\UI\DateTimePickerAnimation();
     $open = new \Kendo\UI\DateTimePickerAnimationOpen();
     $duration = 1;
     $open->duration($duration);
     $animation->open($open);
+    ?>
 
 #### Example - using array
 
+    <?php
     $animation = new \Kendo\UI\DateTimePickerAnimation();
     $duration = 1;
     $animation->open(array('duration' => $duration));
+    ?>
 

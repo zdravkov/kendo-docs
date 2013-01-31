@@ -26,8 +26,10 @@ not the grid lines.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\StockChartXAxisItemLine();
     $line->color('value');
+    ?>
 
 ### dashType
 The dash type of the line.
@@ -42,8 +44,10 @@ The dash type of the line.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\StockChartXAxisItemLine();
     $line->dashType('value');
+    ?>
 
 ### visible
 The visibility of the line.
@@ -58,8 +62,10 @@ The visibility of the line.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\StockChartXAxisItemLine();
     $line->visible(true);
+    ?>
 
 ### width
 The width of the line. This will also effect the major and minor ticks, but
@@ -75,6 +81,8 @@ not the grid lines.
 
 
 #### Example 
+    <?php
     $line = new \Kendo\Dataviz\UI\StockChartXAxisItemLine();
     $line->width(1);
+    ?>
 

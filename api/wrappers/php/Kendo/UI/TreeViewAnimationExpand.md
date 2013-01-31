@@ -26,8 +26,10 @@ node is expanded.
 
 
 #### Example 
+    <?php
     $expand = new \Kendo\UI\TreeViewAnimationExpand();
     $expand->duration(1);
+    ?>
 
 ### effects
 A whitespace-delimited string of animation effects that are utilized when a TreeView node
@@ -43,8 +45,10 @@ is expanded. Options include "expandVertical" and "fadeIn".
 
 
 #### Example 
+    <?php
     $expand = new \Kendo\UI\TreeViewAnimationExpand();
     $expand->effects('value');
+    ?>
 
 ### show
 
@@ -59,6 +63,8 @@ is expanded. Options include "expandVertical" and "fadeIn".
 
 
 #### Example 
+    <?php
     $expand = new \Kendo\UI\TreeViewAnimationExpand();
     $expand->show(true);
+    ?>
 

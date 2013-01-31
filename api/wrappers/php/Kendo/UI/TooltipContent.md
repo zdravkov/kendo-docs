@@ -27,6 +27,8 @@ versions, so it is advisable to always use the iframe configuration option.
 
 
 #### Example 
+    <?php
     $content = new \Kendo\UI\TooltipContent();
     $content->url('value');
+    ?>
 

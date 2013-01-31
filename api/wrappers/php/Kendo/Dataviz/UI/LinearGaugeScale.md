@@ -25,18 +25,21 @@ Configures the scale labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleLabels](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeScaleLabels)
-
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $labels = new \Kendo\Dataviz\UI\LinearGaugeScaleLabels();
     $background = 'value';
     $labels->background($background);
     $scale->labels($labels);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $background = 'value';
     $scale->labels(array('background' => $background));
+    ?>
 
 ### line
 
@@ -51,18 +54,21 @@ Configures the axis line.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleLine](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeScaleLine)
-
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $line = new \Kendo\Dataviz\UI\LinearGaugeScaleLine();
     $color = 'value';
     $line->color($color);
     $scale->line($line);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $color = 'value';
     $scale->line(array('color' => $color));
+    ?>
 
 ### majorTicks
 
@@ -77,18 +83,21 @@ Configures the scale major ticks.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeScaleMajorTicks)
-
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $majorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks();
     $color = 'value';
     $majorTicks->color($color);
     $scale->majorTicks($majorTicks);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $color = 'value';
     $scale->majorTicks(array('color' => $color));
+    ?>
 
 ### majorUnit
 The interval between major divisions.
@@ -103,8 +112,10 @@ The interval between major divisions.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->majorUnit(1);
+    ?>
 
 ### max
 The maximum value of the scale.
@@ -119,8 +130,10 @@ The maximum value of the scale.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->max(1);
+    ?>
 
 ### min
 The minimum value of the scale.
@@ -135,8 +148,10 @@ The minimum value of the scale.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->min(1);
+    ?>
 
 ### minorTicks
 
@@ -151,18 +166,21 @@ Configures the scale minor ticks.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugeScaleMinorTicks)
-
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $minorTicks = new \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks();
     $color = 'value';
     $minorTicks->color($color);
     $scale->minorTicks($minorTicks);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $color = 'value';
     $scale->minorTicks(array('color' => $color));
+    ?>
 
 ### minorUnit
 The interval between minor divisions.
@@ -177,8 +195,10 @@ The interval between minor divisions.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->minorUnit(1);
+    ?>
 
 ### mirror
 Mirrors the scale labels and ticks.
@@ -194,8 +214,10 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->mirror(true);
+    ?>
 
 ### addRange
 
@@ -210,24 +232,30 @@ Adds one or more LinearGaugeScaleRange to the LinearGaugeScale.
 
 #### Example - using \Kendo\Dataviz\UI\LinearGaugeScaleRange
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $range = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $color = 'value';
     $range->color($color);
     $scale->addRange($range);
+    ?>
 
 #### Example - using array
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $color = 'value';
     $scale->addRange(array('color' => $color));
+    ?>
 
 #### Example - adding more than one LinearGaugeScaleRange
 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $first  = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $second = new \Kendo\Dataviz\UI\LinearGaugeScaleRange();
     $scale->addRange($first, $second);
+    ?>
 
 ### reverse
 Reverses the axis direction - values increase from right to left and from top to bottom.
@@ -242,8 +270,10 @@ Reverses the axis direction - values increase from right to left and from top to
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->reverse(true);
+    ?>
 
 ### vertical
 The position of the gauge.
@@ -258,6 +288,8 @@ The position of the gauge.
 
 
 #### Example 
+    <?php
     $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
     $scale->vertical(true);
+    ?>
 

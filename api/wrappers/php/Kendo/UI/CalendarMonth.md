@@ -24,8 +24,10 @@ Sets the HTML content of the CalendarMonth.
 
 #### Example
 
+    <?php
     $month = new \Kendo\UI\CalendarMonth();
     $month->content('<strong>Content</strong>');
+    ?>
 
 
 ### _empty
@@ -41,6 +43,8 @@ Template to be used for rendering the cells in the "month" view, which are not i
 
 
 #### Example 
+    <?php
     $month = new \Kendo\UI\CalendarMonth();
     $month->_empty('value');
+    ?>
 

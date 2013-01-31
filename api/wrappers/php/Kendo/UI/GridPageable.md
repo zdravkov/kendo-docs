@@ -25,8 +25,10 @@ Defines the number of buttons displayed in the numeric pager.
 
 
 #### Example 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->buttonCount(1);
+    ?>
 
 ### info
 Defines if a label showing current paging information will be displayed.
@@ -41,8 +43,10 @@ Defines if a label showing current paging information will be displayed.
 
 
 #### Example 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->info(true);
+    ?>
 
 ### input
 Defines if an input element which allows the user to navigate to given page will be displayed.
@@ -57,8 +61,10 @@ Defines if an input element which allows the user to navigate to given page will
 
 
 #### Example 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->input(true);
+    ?>
 
 ### messages
 
@@ -73,18 +79,21 @@ Defines texts shown within the pager.
 
 
 #### Example - using [\Kendo\UI\GridPageableMessages](/api/wrappers/php/Kendo/UI/GridPageableMessages)
-
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $messages = new \Kendo\UI\GridPageableMessages();
     $display = 'value';
     $messages->display($display);
     $pageable->messages($messages);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $display = 'value';
     $pageable->messages(array('display' => $display));
+    ?>
 
 ### numeric
 Defines if numeric portion of the pager will be shown.
@@ -99,8 +108,10 @@ Defines if numeric portion of the pager will be shown.
 
 
 #### Example 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->numeric(true);
+    ?>
 
 ### pageSize
 Defines the number of records which will be displyed.
@@ -115,8 +126,10 @@ Defines the number of records which will be displyed.
 
 
 #### Example 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->pageSize(1);
+    ?>
 
 ### pageSizes
 Displayes a list with predefined page sizes. An array of values to be displayed can be provided.
@@ -131,12 +144,16 @@ Displayes a list with predefined page sizes. An array of values to be displayed 
 
 
 #### Example  - using boolean
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->pageSizes(true);
+    ?>
 
 #### Example  - using array
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->pageSizes(new array());
+    ?>
 
 ### previousNext
 Defines if buttons for navigating to the first, last, previous and next pages will be shown.
@@ -151,8 +168,10 @@ Defines if buttons for navigating to the first, last, previous and next pages wi
 
 
 #### Example 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->previousNext(true);
+    ?>
 
 ### refresh
 Defines if a refresh button will be displayed.
@@ -167,6 +186,8 @@ Defines if a refresh button will be displayed.
 
 
 #### Example 
+    <?php
     $pageable = new \Kendo\UI\GridPageable();
     $pageable->refresh(true);
+    ?>
 

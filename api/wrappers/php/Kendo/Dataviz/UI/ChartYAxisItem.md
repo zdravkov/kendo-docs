@@ -26,16 +26,22 @@ axis maximum value to denote the far end of the axis.
 
 
 #### Example  - using 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->axisCrossingValue(new ());
+    ?>
 
 #### Example  - using date
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->axisCrossingValue(new date());
+    ?>
 
 #### Example  - using array
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->axisCrossingValue(new array());
+    ?>
 
 ### baseUnit
 The base time interval for the axis labels.
@@ -51,8 +57,10 @@ The default baseUnit is determined automatically from the value range. Available
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->baseUnit('value');
+    ?>
 
 ### color
 Color to apply to all axis elements.
@@ -68,8 +76,10 @@ Individual color settings for line and labels take priority. Any valid CSS color
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->color('value');
+    ?>
 
 ### labels
 
@@ -84,18 +94,21 @@ Configures the axis labels.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartYAxisItemLabels](/api/wrappers/php/Kendo/Dataviz/UI/ChartYAxisItemLabels)
-
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $labels = new \Kendo\Dataviz\UI\ChartYAxisItemLabels();
     $background = 'value';
     $labels->background($background);
     $yAxisItem->labels($labels);
+    ?>
 
 #### Example - using array
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $background = 'value';
     $yAxisItem->labels(array('background' => $background));
+    ?>
 
 ### line
 
@@ -110,18 +123,21 @@ Configures the axis line. This will also affect the major and minor ticks, but n
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartYAxisItemLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartYAxisItemLine)
-
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $line = new \Kendo\Dataviz\UI\ChartYAxisItemLine();
     $color = 'value';
     $line->color($color);
     $yAxisItem->line($line);
+    ?>
 
 #### Example - using array
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $color = 'value';
     $yAxisItem->line(array('color' => $color));
+    ?>
 
 ### majorGridLines
 
@@ -137,18 +153,21 @@ body of the chart.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartYAxisItemMajorGridLines](/api/wrappers/php/Kendo/Dataviz/UI/ChartYAxisItemMajorGridLines)
-
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $majorGridLines = new \Kendo\Dataviz\UI\ChartYAxisItemMajorGridLines();
     $color = 'value';
     $majorGridLines->color($color);
     $yAxisItem->majorGridLines($majorGridLines);
+    ?>
 
 #### Example - using array
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $color = 'value';
     $yAxisItem->majorGridLines(array('color' => $color));
+    ?>
 
 ### majorTicks
 
@@ -163,18 +182,21 @@ The major ticks of the axis.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartYAxisItemMajorTicks](/api/wrappers/php/Kendo/Dataviz/UI/ChartYAxisItemMajorTicks)
-
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $majorTicks = new \Kendo\Dataviz\UI\ChartYAxisItemMajorTicks();
     $size = 1;
     $majorTicks->size($size);
     $yAxisItem->majorTicks($majorTicks);
+    ?>
 
 #### Example - using array
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $size = 1;
     $yAxisItem->majorTicks(array('size' => $size));
+    ?>
 
 ### majorUnit
 The interval between major divisions in base units.
@@ -189,8 +211,10 @@ The interval between major divisions in base units.
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->majorUnit(1);
+    ?>
 
 ### max
 The end date of the axis.
@@ -232,8 +256,10 @@ It defaults to 1/5th of the majorUnit.
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->minorUnit(1);
+    ?>
 
 ### name
 The unique axis name.
@@ -260,8 +286,10 @@ Prevents the automatic axis range from snapping to 0.
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->narrowRange(true);
+    ?>
 
 ### pane
 The name of the pane that the axis should be rendered in.
@@ -277,8 +305,10 @@ The axis will be rendered in the first (default) pane if not set.
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->pane('value');
+    ?>
 
 ### addPlotBand
 
@@ -293,24 +323,30 @@ Adds one or more ChartYAxisItemPlotBand to the ChartYAxisItem.
 
 #### Example - using \Kendo\Dataviz\UI\ChartYAxisItemPlotBand
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $plotBand = new \Kendo\Dataviz\UI\ChartYAxisItemPlotBand();
     $color = 'value';
     $plotBand->color($color);
     $yAxisItem->addPlotBand($plotBand);
+    ?>
 
 #### Example - using array
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $color = 'value';
     $yAxisItem->addPlotBand(array('color' => $color));
+    ?>
 
 #### Example - adding more than one ChartYAxisItemPlotBand
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $first  = new \Kendo\Dataviz\UI\ChartYAxisItemPlotBand();
     $second = new \Kendo\Dataviz\UI\ChartYAxisItemPlotBand();
     $yAxisItem->addPlotBand($first, $second);
+    ?>
 
 ### reverse
 Reverses the axis direction -
@@ -326,8 +362,10 @@ values increase from right to left and from top to bottom.
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->reverse(true);
+    ?>
 
 ### title
 
@@ -342,18 +380,21 @@ The title of the value axis.
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartYAxisItemTitle](/api/wrappers/php/Kendo/Dataviz/UI/ChartYAxisItemTitle)
-
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $title = new \Kendo\Dataviz\UI\ChartYAxisItemTitle();
     $background = 'value';
     $title->background($background);
     $yAxisItem->title($title);
+    ?>
 
 #### Example - using array
 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $background = 'value';
     $yAxisItem->title(array('background' => $background));
+    ?>
 
 ### type
 The axis type.Note: The Chart will automatically switch to a date axis if the series X value
@@ -369,8 +410,10 @@ is of type Date. Specify type explicitly when such behavior is undesired.
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->type('value');
+    ?>
 
 ### visible
 The visibility of the axis.
@@ -385,6 +428,8 @@ The visibility of the axis.
 
 
 #### Example 
+    <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $yAxisItem->visible(true);
+    ?>
 

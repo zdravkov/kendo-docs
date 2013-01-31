@@ -25,18 +25,21 @@ The border of the track.
 
 
 #### Example - using [\Kendo\Dataviz\UI\LinearGaugePointerTrackBorder](/api/wrappers/php/Kendo/Dataviz/UI/LinearGaugePointerTrackBorder)
-
+    <?php
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $border = new \Kendo\Dataviz\UI\LinearGaugePointerTrackBorder();
     $color = 'value';
     $border->color($color);
     $track->border($border);
+    ?>
 
 #### Example - using array
 
+    <?php
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $color = 'value';
     $track->border(array('color' => $color));
+    ?>
 
 ### color
 The color of the track.
@@ -51,8 +54,10 @@ The color of the track.
 
 
 #### Example 
+    <?php
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->color('value');
+    ?>
 
 ### opacity
 The opacity of the track.
@@ -67,8 +72,10 @@ The opacity of the track.
 
 
 #### Example 
+    <?php
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->opacity(1);
+    ?>
 
 ### size
 The size of the track.
@@ -83,8 +90,10 @@ The size of the track.
 
 
 #### Example 
+    <?php
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->size(1);
+    ?>
 
 ### visible
 The visibility of the track.
@@ -99,6 +108,8 @@ The visibility of the track.
 
 
 #### Example 
+    <?php
     $track = new \Kendo\Dataviz\UI\LinearGaugePointerTrack();
     $track->visible(true);
+    ?>
 

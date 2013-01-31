@@ -25,8 +25,10 @@ The color of the lines.
 
 
 #### Example 
+    <?php
     $majorGridLines = new \Kendo\Dataviz\UI\ChartYAxisItemMajorGridLines();
     $majorGridLines->color('value');
+    ?>
 
 ### visible
 The visibility of the lines.
@@ -41,8 +43,10 @@ The visibility of the lines.
 
 
 #### Example 
+    <?php
     $majorGridLines = new \Kendo\Dataviz\UI\ChartYAxisItemMajorGridLines();
     $majorGridLines->visible(true);
+    ?>
 
 ### width
 The width of the lines.
@@ -57,6 +61,8 @@ The width of the lines.
 
 
 #### Example 
+    <?php
     $majorGridLines = new \Kendo\Dataviz\UI\ChartYAxisItemMajorGridLines();
     $majorGridLines->width(1);
+    ?>
 

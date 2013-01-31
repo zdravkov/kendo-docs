@@ -25,8 +25,10 @@ Difines the animation duration.
 
 
 #### Example 
+    <?php
     $close = new \Kendo\UI\DropDownListAnimationClose();
     $close->duration(1);
+    ?>
 
 ### effects
 Effect to be used for closing of the popup.
@@ -41,6 +43,8 @@ Effect to be used for closing of the popup.
 
 
 #### Example 
+    <?php
     $close = new \Kendo\UI\DropDownListAnimationClose();
     $close->effects('value');
+    ?>
 

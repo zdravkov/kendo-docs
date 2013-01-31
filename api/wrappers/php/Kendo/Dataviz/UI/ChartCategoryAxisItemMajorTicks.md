@@ -26,8 +26,10 @@ on the chart.
 
 
 #### Example 
+    <?php
     $majorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorTicks();
     $majorTicks->size(1);
+    ?>
 
 ### visible
 The visibility of the major ticks.
@@ -42,6 +44,8 @@ The visibility of the major ticks.
 
 
 #### Example 
+    <?php
     $majorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorTicks();
     $majorTicks->visible(true);
+    ?>
 

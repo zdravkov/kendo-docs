@@ -45,8 +45,10 @@ Template to be used for rendering the alternate items in the listview.
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->altTemplate('value');
+    ?>
 
 ### autoBind
 Indicates whether the list view will call read on the DataSource initially.
@@ -61,8 +63,10 @@ Indicates whether the list view will call read on the DataSource initially.
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->autoBind(true);
+    ?>
 
 ### change
 Fires when the list view selection has changed.
@@ -76,8 +80,10 @@ Fires when the list view selection has changed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -92,8 +98,10 @@ Fires when the list view selection has changed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataBinding
 Fires when the grid is about to be rendered.
@@ -107,8 +115,10 @@ Fires when the grid is about to be rendered.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->dataBinding('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -123,8 +133,10 @@ Fires when the grid is about to be rendered.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->dataBinding(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataBound
 Fires when the list view has received data from the data source.
@@ -139,8 +151,10 @@ and is about to render it.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->dataBound('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -155,8 +169,10 @@ and is about to render it.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->dataBound(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### dataSource
 
@@ -171,15 +187,19 @@ Sets the data source of the dataSource.
 
 #### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $dataSource = new \Kendo\Data\DataSource();
     $listView->dataSource($dataSource);
+    ?>
 
 #### Example - using array
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $schema = new \Kendo\Data\DataSourceSchema();
     $listView->dataSource(array('schema' => $schema));
+    ?>
 
 ### edit
 Fires when the list view enters edit mode.
@@ -193,8 +213,10 @@ Fires when the list view enters edit mode.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->edit('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -209,8 +231,10 @@ Fires when the list view enters edit mode.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->edit(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### editTemplate
 Specifies ListView item template in edit mode.
@@ -225,8 +249,10 @@ Specifies ListView item template in edit mode.
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->editTemplate('value');
+    ?>
 
 ### navigatable
 Indicates whether keyboard navigation is enabled/disabled.
@@ -241,8 +267,10 @@ Indicates whether keyboard navigation is enabled/disabled.
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->navigatable(true);
+    ?>
 
 ### pageable
 Indicates whether paging is enabled/disabled.
@@ -257,8 +285,10 @@ Indicates whether paging is enabled/disabled.
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->pageable(true);
+    ?>
 
 ### remove
 Fires before the list view item is removed.
@@ -272,8 +302,10 @@ Fires before the list view item is removed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->remove('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -288,8 +320,10 @@ Fires before the list view item is removed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->remove(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### selectable
 Indicates whether selection is enabled/disabled. Possible values:
@@ -304,8 +338,10 @@ Indicates whether selection is enabled/disabled. Possible values:
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->selectable('value');
+    ?>
 
 ### tagName
 Specifies ListView wrapper element tag name.
@@ -320,8 +356,10 @@ Specifies ListView wrapper element tag name.
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->tagName('value');
+    ?>
 
 ### template
 The id of the template used for rendering the items in the listview.
@@ -336,6 +374,8 @@ The id of the template used for rendering the items in the listview.
 
 
 #### Example 
+    <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->template('value');
+    ?>
 

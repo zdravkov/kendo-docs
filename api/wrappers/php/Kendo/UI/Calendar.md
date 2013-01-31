@@ -44,8 +44,10 @@ Fires when the selected date is changed
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->change('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -60,8 +62,10 @@ Fires when the selected date is changed
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### culture
 Specifies the culture info used by the widget.
@@ -76,8 +80,10 @@ Specifies the culture info used by the widget.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->culture('value');
+    ?>
 
 ### dates
 Specifies a list of dates, which will be passed to the month template.
@@ -92,8 +98,10 @@ Specifies a list of dates, which will be passed to the month template.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->dates(new array());
+    ?>
 
 ### depth
 Specifies the navigation depth.
@@ -108,8 +116,10 @@ Specifies the navigation depth.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->depth('value');
+    ?>
 
 ### footer
 Template to be used for rendering the footer. If false, the footer will not be rendered.
@@ -124,8 +134,10 @@ Template to be used for rendering the footer. If false, the footer will not be r
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->footer('value');
+    ?>
 
 ### format
 Specifies the format, which is used to parse value set with value() method.
@@ -140,8 +152,10 @@ Specifies the format, which is used to parse value set with value() method.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->format('value');
+    ?>
 
 ### max
 Specifies the maximum date, which the calendar can show.
@@ -156,8 +170,10 @@ Specifies the maximum date, which the calendar can show.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->max(new date());
+    ?>
 
 ### min
 Specifies the minimum date, which the calendar can show.
@@ -172,8 +188,10 @@ Specifies the minimum date, which the calendar can show.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->min(new date());
+    ?>
 
 ### month
 
@@ -188,18 +206,21 @@ Templates for the cells rendered in the "month" view.
 
 
 #### Example - using [\Kendo\UI\CalendarMonth](/api/wrappers/php/Kendo/UI/CalendarMonth)
-
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $month = new \Kendo\UI\CalendarMonth();
     $content = 'value';
     $month->content($content);
     $calendar->month($month);
+    ?>
 
 #### Example - using array
 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $content = 'value';
     $calendar->month(array('content' => $content));
+    ?>
 
 ### navigate
 Fires when navigate
@@ -213,8 +234,10 @@ Fires when navigate
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->navigate('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -229,8 +252,10 @@ Fires when navigate
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->navigate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### start
 Specifies the start view.
@@ -245,8 +270,10 @@ Specifies the start view.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->start('value');
+    ?>
 
 ### value
 Specifies the selected date.
@@ -261,6 +288,8 @@ Specifies the selected date.
 
 
 #### Example 
+    <?php
     $calendar = new \Kendo\UI\Calendar('Calendar');
     $calendar->value(new date());
+    ?>
 

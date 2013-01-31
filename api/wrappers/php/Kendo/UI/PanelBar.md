@@ -44,8 +44,10 @@ Triggered when an item of a PanelBar is activated.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->activate('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -60,8 +62,10 @@ Triggered when an item of a PanelBar is activated.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->activate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### animation
 
@@ -79,23 +83,28 @@ user interactions. Setting this option to false will disable all animations.
 
 
 #### Example  - using boolean
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->animation(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\PanelBarAnimation](/api/wrappers/php/Kendo/UI/PanelBarAnimation)
-
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $animation = new \Kendo\UI\PanelBarAnimation();
     $collapse = new \Kendo\UI\PanelBarAnimationCollapse();
     $animation->collapse($collapse);
     $panelBar->animation($animation);
+    ?>
 
 #### Example - using array
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $collapse = new \Kendo\UI\PanelBarAnimationCollapse();
     $panelBar->animation(array('collapse' => $collapse));
+    ?>
 
 ### collapse
 Triggered when an item of a PanelBar is collapsed.
@@ -109,8 +118,10 @@ Triggered when an item of a PanelBar is collapsed.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->collapse('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -125,8 +136,10 @@ Triggered when an item of a PanelBar is collapsed.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->collapse(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### contentLoad
 Fires when content is fetched from an AJAX request.
@@ -140,8 +153,10 @@ Fires when content is fetched from an AJAX request.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->contentLoad('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -156,8 +171,10 @@ Fires when content is fetched from an AJAX request.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->contentLoad(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### error
 Fires when AJAX request results in an error.
@@ -171,8 +188,10 @@ Fires when AJAX request results in an error.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->error('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -187,8 +206,10 @@ Fires when AJAX request results in an error.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->error(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### expand
 Triggered when an item of a PanelBar is expanded.
@@ -202,8 +223,10 @@ Triggered when an item of a PanelBar is expanded.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->expand('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -218,8 +241,10 @@ Triggered when an item of a PanelBar is expanded.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->expand(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 
 ### expandMode
 Specifies how the PanelBar items are displayed when opened and closed. The following values
@@ -235,8 +260,10 @@ are available:
 
 
 #### Example 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->expandMode('value');
+    ?>
 
 ### addItem
 
@@ -251,24 +278,30 @@ Adds one or more PanelBarItem to the PanelBar.
 
 #### Example - using \Kendo\UI\PanelBarItem
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $item = new \Kendo\UI\PanelBarItem();
     $contentUrl = 'value';
     $item->contentUrl($contentUrl);
     $panelBar->addItem($item);
+    ?>
 
 #### Example - using array
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $contentUrl = 'value';
     $panelBar->addItem(array('contentUrl' => $contentUrl));
+    ?>
 
 #### Example - adding more than one PanelBarItem
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $first  = new \Kendo\UI\PanelBarItem();
     $second = new \Kendo\UI\PanelBarItem();
     $panelBar->addItem($first, $second);
+    ?>
 
 ### select
 Triggered when an item of a PanelBar is selected.
@@ -282,8 +315,10 @@ Triggered when an item of a PanelBar is selected.
 
 #### Example - using string which defines a JavaScript function
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->select('function(e) { }');
+    ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
@@ -298,6 +333,8 @@ Triggered when an item of a PanelBar is selected.
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
+    <?php
     $panelBar = new \Kendo\UI\PanelBar('PanelBar');
     $panelBar->select(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
 

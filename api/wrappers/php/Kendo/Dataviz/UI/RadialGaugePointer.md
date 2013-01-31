@@ -25,18 +25,21 @@ The cap configuration options.
 
 
 #### Example - using [\Kendo\Dataviz\UI\RadialGaugePointerCap](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugePointerCap)
-
+    <?php
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $cap = new \Kendo\Dataviz\UI\RadialGaugePointerCap();
     $color = 'value';
     $cap->color($color);
     $pointer->cap($cap);
+    ?>
 
 #### Example - using array
 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $color = 'value';
     $pointer->cap(array('color' => $color));
+    ?>
 
 ### color
 The color of the pointer.
@@ -52,8 +55,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 
 #### Example 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $pointer->color('value');
+    ?>
 
 ### value
 The value of the gauge.
@@ -68,6 +73,8 @@ The value of the gauge.
 
 
 #### Example 
+    <?php
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $pointer->value(1);
+    ?>
 

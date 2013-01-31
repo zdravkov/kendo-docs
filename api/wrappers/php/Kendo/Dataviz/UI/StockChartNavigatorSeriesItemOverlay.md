@@ -25,6 +25,8 @@ The gradient name.Available options:
 
 
 #### Example 
+    <?php
     $overlay = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemOverlay();
     $overlay->gradient('value');
+    ?>
 

@@ -24,8 +24,10 @@ Sets the HTML content of the TreeViewItem.
 
 #### Example
 
+    <?php
     $item = new \Kendo\UI\TreeViewItem();
     $item->content('<strong>Content</strong>');
+    ?>
 
 
 ### enabled
@@ -41,8 +43,10 @@ Specifies whether the item is initially enabled
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\TreeViewItem();
     $item->enabled(true);
+    ?>
 
 ### endContent
 
@@ -72,8 +76,10 @@ Specifies whether the item is initially expanded
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\TreeViewItem();
     $item->expanded(true);
+    ?>
 
 ### imageUrl
 Specifies the URL of the image displayed by the item
@@ -88,8 +94,10 @@ Specifies the URL of the image displayed by the item
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\TreeViewItem();
     $item->imageUrl('value');
+    ?>
 
 ### selected
 Specifies whether the item is initially selected
@@ -104,8 +112,10 @@ Specifies whether the item is initially selected
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\TreeViewItem();
     $item->selected(true);
+    ?>
 
 ### spriteCssClass
 Specifies the class name for the sprite image displayed by the item
@@ -120,8 +130,10 @@ Specifies the class name for the sprite image displayed by the item
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\TreeViewItem();
     $item->spriteCssClass('value');
+    ?>
 
 ### startContent
 
@@ -152,6 +164,8 @@ Specifies the text displayed by the item
 
 
 #### Example 
+    <?php
     $item = new \Kendo\UI\TreeViewItem();
     $item->text('value');
+    ?>
 

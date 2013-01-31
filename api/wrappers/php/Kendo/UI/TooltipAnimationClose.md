@@ -25,8 +25,10 @@ Difines the animation duration.
 
 
 #### Example 
+    <?php
     $close = new \Kendo\UI\TooltipAnimationClose();
     $close->duration(1);
+    ?>
 
 ### effects
 Effect to be used for closing of the tooltip.
@@ -41,6 +43,8 @@ Effect to be used for closing of the tooltip.
 
 
 #### Example 
+    <?php
     $close = new \Kendo\UI\TooltipAnimationClose();
     $close->effects('value');
+    ?>
 

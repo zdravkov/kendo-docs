@@ -25,8 +25,10 @@ The color of the connector line.
 
 
 #### Example 
+    <?php
     $connectors = new \Kendo\Dataviz\UI\ChartSeriesItemConnectors();
     $connectors->color('value');
+    ?>
 
 ### padding
 The padding between the connector line and the label, and connector line and donut chart.
@@ -41,8 +43,10 @@ The padding between the connector line and the label, and connector line and don
 
 
 #### Example 
+    <?php
     $connectors = new \Kendo\Dataviz\UI\ChartSeriesItemConnectors();
     $connectors->padding(1);
+    ?>
 
 ### width
 The width of the connector line.
@@ -57,6 +61,8 @@ The width of the connector line.
 
 
 #### Example 
+    <?php
     $connectors = new \Kendo\Dataviz\UI\ChartSeriesItemConnectors();
     $connectors->width(1);
+    ?>
 

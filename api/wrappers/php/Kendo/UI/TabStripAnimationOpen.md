@@ -25,8 +25,10 @@ The number of milliseconds used for the visual animation when a new tab is shown
 
 
 #### Example 
+    <?php
     $open = new \Kendo\UI\TabStripAnimationOpen();
     $open->duration(1);
+    ?>
 
 ### effects
 A whitespace-separated string of animation effects that are used when a new tab is shown. Options include
@@ -42,8 +44,10 @@ A whitespace-separated string of animation effects that are used when a new tab 
 
 
 #### Example 
+    <?php
     $open = new \Kendo\UI\TabStripAnimationOpen();
     $open->effects('value');
+    ?>
 
 ### show
 
@@ -58,6 +62,8 @@ A whitespace-separated string of animation effects that are used when a new tab 
 
 
 #### Example 
+    <?php
     $open = new \Kendo\UI\TabStripAnimationOpen();
     $open->show(true);
+    ?>
 

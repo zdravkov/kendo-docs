@@ -26,8 +26,10 @@ Any valid CSS color string will work here, including hex and rgb.
 
 
 #### Example 
+    <?php
     $cap = new \Kendo\Dataviz\UI\RadialGaugePointerCap();
     $cap->color('value');
+    ?>
 
 ### size
 The size of the cap in percents. (from 0 to 1)
@@ -42,6 +44,8 @@ The size of the cap in percents. (from 0 to 1)
 
 
 #### Example 
+    <?php
     $cap = new \Kendo\Dataviz\UI\RadialGaugePointerCap();
     $cap->size(1);
+    ?>
 
