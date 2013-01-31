@@ -575,7 +575,7 @@ Creates a W3C-compatible **Range** object.
 
 #### Parameters
 
-##### document `Document`
+##### document `Document` *(optional)*
 
 The document that the range is associated with. If ommited, the document of the editor editing area will be used.
 
@@ -619,9 +619,11 @@ Executes an editor command on the currently selected text.
 
 The name of the command to be executed.
 
-##### params `String`
+##### params `String|Object` *(optional)*
 
 The parameters for the executed command.
+
+##### params.value `Object`
 
 ### focus
 
@@ -644,6 +646,10 @@ Gets a **Range** object form the editable area.
 ### getSelection
 
 Gets a W3C-compatible **Selection** object form the editable area.
+
+#### Returns
+
+`Selection` a W3C-compatible **Selection** object form the editable area.
 
 ### paste
 
@@ -695,7 +701,7 @@ This method should be called after modifying the editor content through the DOM.
 
 ### value
 
-Gets or sets the Editor value.
+Gets or sets the editor value.
 
 #### Example
 
