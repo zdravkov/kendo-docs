@@ -48,6 +48,24 @@ Specifies whether a pane is collapsible (true) or not collapsible (false).
     $pane->collapsible(true);
     ?>
 
+### content
+
+Sets the HTML content of the SplitterPane.
+
+#### Returns
+
+`SplitterPane`
+
+#### $value `string`
+
+#### Example
+
+    <?php
+    $pane = new \Kendo\UI\SplitterPane();
+    $pane->content('<strong>Content</strong>');
+    ?>
+
+
 ### contentUrl
 Specifies the URL from which to load the content of a pane.
 
@@ -66,9 +84,23 @@ Specifies the URL from which to load the content of a pane.
     $pane->contentUrl('value');
     ?>
 
+### endContent
+
+Stops output bufferring and sets the preceding markup as the content of the SplitterPane.
+
+#### Example
+
+    <?php
+    $pane = new \Kendo\UI\SplitterPane();
+    $pane->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $pane->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 ### max
-Specifies the maximum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The
-size of a resized pane cannot exceed the defined maximum size.
+Specifies the maximum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The size of a resized pane cannot exceed the defined maximum size.
 
 #### Returns
 `\Kendo\UI\SplitterPane`
@@ -86,8 +118,7 @@ size of a resized pane cannot exceed the defined maximum size.
     ?>
 
 ### min
-Specifies the minimum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The
-size of a resized pane cannot be less than the defined minimum size.
+Specifies the minimum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The size of a resized pane cannot be less than the defined minimum size.
 
 #### Returns
 `\Kendo\UI\SplitterPane`
@@ -141,8 +172,7 @@ Specifies whether a pane is scrollable (true) or not scrollable (false).
     ?>
 
 ### size
-Specifies the size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). Note: This
-value must not exceed panes.max or be less then panes.min.
+Specifies the size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). This value must not exceed panes.max or be less then panes.min.
 
 #### Returns
 `\Kendo\UI\SplitterPane`
@@ -158,4 +188,20 @@ value must not exceed panes.max or be less then panes.min.
     $pane = new \Kendo\UI\SplitterPane();
     $pane->size('value');
     ?>
+
+### startContent
+
+Starts output bufferring. Any following markup will be set as the content of the SplitterPane.
+
+#### Example
+
+    <?php
+    $pane = new \Kendo\UI\SplitterPane();
+    $pane->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $pane->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 
