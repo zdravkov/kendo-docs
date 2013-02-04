@@ -268,9 +268,11 @@ HTML string or array of such strings or JSON.
 
 ### contentElement
 
-Obtains the DOM element representing a tab by its index in the **TabStrip**.
+Obtains the DOM element that encloses tab content by its tab index in the **TabStrip**.
 
-#### Obtain the DOM element representing the first tab in a TabStrip
+> **Important:** To remove the tab contents safely, use contentHolder to get the element to empty.
+
+#### Obtain the content element representing the first tab in a TabStrip
 
     var tabContent = $("#tabStrip").data("kendoTabStrip").contentElement(0);
 
@@ -282,7 +284,28 @@ The index of the tab in the TabStrip.
 
 #### Returns
 
-`Element` The DOM element representing a tab by its index in the <strong>TabStrip</strong>.
+`Element` The DOM element enclosing tab content by its tab index in the **TabStrip**.
+
+### contentHolder
+
+Obtains the DOM element that holds tab content by its tab index in the **TabStrip**.
+The difference between contentElement and contentHolder is that contentHolder returns the DOM element that really holds the content, which on mobile is the scroll container.
+
+> **Important:** Use this method to get the element you want to empty when removing tab contents.
+
+#### Obtain the content holder representing the first tab in a TabStrip
+
+    var tabContent = $("#tabStrip").data("kendoTabStrip").contentHolder(0);
+
+#### Parameters
+
+##### itemIndex `Number`
+
+The index of the tab in the TabStrip.
+
+#### Returns
+
+`Element` The DOM element holding tab content by its tab index in the **TabStrip**.
 
 ### deactivateTab
 
