@@ -136,3 +136,21 @@ current color and the input field.
     $flatColorPicker->preview(true);
     ?>
 
+### value
+Specifies the initially selected color.
+
+#### Returns
+`\Kendo\UI\FlatColorPicker`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $flatColorPicker = new \Kendo\UI\FlatColorPicker('FlatColorPicker');
+    $flatColorPicker->value('value');
+    ?>
+
