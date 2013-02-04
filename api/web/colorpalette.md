@@ -47,9 +47,13 @@ The width of the color cell.
 
 The height of the color cell.
 
+### value `String | Color` *(default: null)*
+
+Specifies the initially selected color.
+
 ## Methods
 
-### value
+### value `String | Color`*(default: null)*
 
 Get or set the selected color. If no argument is given, this returns the
 currently selected color as a string in format #FFFFFF when the `opacity`

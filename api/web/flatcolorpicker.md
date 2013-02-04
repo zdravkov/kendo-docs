@@ -21,7 +21,7 @@ selection of transparency.
 
 Specifies whether we should display the Apply / Cancel buttons.
 
-### value `String`
+### value `String | Color` *(default: null)*
 
 Specifies the initially selected color.
 
@@ -40,7 +40,7 @@ Allows customization of "Apply" / "Cancel" labels.
 
 Focuses the widget.
 
-### value
+### value `String | Color`*(default: null)*
 
 Get or set the selected color. If no argument is given, this returns the
 currently selected color as a string in format #FFFFFF when the `opacity`

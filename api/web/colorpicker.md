@@ -98,7 +98,7 @@ specified, the HTML for the element will look like this:
       <span class="k-selected-color"></span>
     </span>
 
-### value `String | Color`*(default: null)*
+### value `String | Color` *(default: null)*
 
 The initially selected color.  This can be a string supported by
 [parseColor][] or a [Color][] object.  Note that when initializing the
@@ -119,7 +119,7 @@ Opens the popup element with the color selector.
 
 Toggles the popup.
 
-### value
+### value `String | Color` *(default: null)*
 
 Get or set the selected color. If no argument is given, this returns the
 currently selected color as a string in format #FFFFFF when the `opacity`

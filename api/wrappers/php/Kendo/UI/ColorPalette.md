@@ -153,3 +153,21 @@ The size of a color cell.
     $colorPalette->tileSize(array('height' => $height));
     ?>
 
+### value
+Specifies the initially selected color.
+
+#### Returns
+`\Kendo\UI\ColorPalette`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $colorPalette = new \Kendo\UI\ColorPalette('ColorPalette');
+    $colorPalette->value('value');
+    ?>
+
