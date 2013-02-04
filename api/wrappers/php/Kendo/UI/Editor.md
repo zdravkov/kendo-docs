@@ -68,6 +68,24 @@ Fires when Editor is blurred and its content has changed.
     $editor->change(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### content
+
+Sets the HTML content of the Editor.
+
+#### Returns
+
+`Editor`
+
+#### $value `string`
+
+#### Example
+
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $editor->content('<strong>Content</strong>');
+    ?>
+
+
 ### encoded
 Indicates whether the Editor should submit encoded HTML tags.
 
@@ -84,6 +102,21 @@ Indicates whether the Editor should submit encoded HTML tags.
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
     $editor->encoded(true);
+    ?>
+
+### endContent
+
+Stops output bufferring and sets the preceding markup as the content of the Editor.
+
+#### Example
+
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $editor->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $editor->endContent(); // content is set to <strong>Content</strong>
     ?>
 
 ### execute
@@ -301,6 +334,22 @@ Fires when the Editor selection has changed.
     $editor = new \Kendo\UI\Editor('Editor');
     $editor->select(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
+
+### startContent
+
+Starts output bufferring. Any following markup will be set as the content of the Editor.
+
+#### Example
+
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $editor->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $editor->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 
 ### stylesheets
 Allows custom stylesheets to be included within the editing area.
