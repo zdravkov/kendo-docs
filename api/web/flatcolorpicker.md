@@ -21,6 +21,10 @@ selection of transparency.
 
 Specifies whether we should display the Apply / Cancel buttons.
 
+### value `String`
+
+Specifies the initially selected color.
+
 ### preview `Boolean` *(default: true)*
 
 Specifies whether we should display the preview bar which displays the
