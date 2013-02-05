@@ -158,6 +158,10 @@ The string that the popup item will show.
 
 The value that will be applied by the tool when this item is selected.
 
+### tools.template `String`
+
+The kendo template that will be used for rendering the given tool.
+
 ### imageBrowser `Object`
 
 Configuration for image browser dialog.
