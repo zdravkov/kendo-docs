@@ -146,6 +146,18 @@ The text which will be displayed when the end-user hovers the tool button with t
 
 The JavaScript function which will be executed when the end-user clicks the tool button.
 
+### tools.items `Array`
+
+For tools that display a list of items (fontName, fontSize, formatBlock), this option specifies the items in the shown list.
+
+### tools.items.text `String`
+
+The string that the popup item will show.
+
+### tools.items.value `String`
+
+The value that will be applied by the tool when this item is selected.
+
 ### imageBrowser `Object`
 
 Configuration for image browser dialog.
