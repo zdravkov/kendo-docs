@@ -284,9 +284,10 @@ The remote url to call when creating a new record.
         }
     }
 
-### imageBrowser.transport.thumbnailUrl `String`
+### imageBrowser.transport.thumbnailUrl `String|Function`
 
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
+If function is assign, the current path and image name will be provided.
 
 ### imageBrowser.transport.uploadUrl `String`
 
