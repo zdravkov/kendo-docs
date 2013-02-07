@@ -152,20 +152,27 @@ Options or URL for remote image retrieval.
 
 ### thumbnailUrl
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
+If function is assign, the current path and image name will be provided.
 
 #### Returns
 `\Kendo\UI\EditorImageBrowserTransport`
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $transport = new \Kendo\UI\EditorImageBrowserTransport();
     $transport->thumbnailUrl('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $transport = new \Kendo\UI\EditorImageBrowserTransport();
+    $transport->thumbnailUrl(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### uploadUrl
