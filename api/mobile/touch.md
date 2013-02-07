@@ -117,6 +117,10 @@ Fires when the user presses the element.
 
 The touch event instance
 
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
+
 ### dragstart
 
 Fires when the user starts dragging the element.
@@ -126,6 +130,10 @@ Fires when the user starts dragging the element.
 ##### e.touch `TouchEvent`
 
 The touch event instance
+
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
 
 ### drag
 
@@ -137,6 +145,10 @@ Fires each time the user drags (within the element boundaries).
 
 The touch event instance
 
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
+
 ### dragend
 
 Fires when the user lifts his/hers finger, or drags outside of the element boundaries.
@@ -147,6 +159,10 @@ Fires when the user lifts his/hers finger, or drags outside of the element bound
 
 The touch event instance
 
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
+
 ### tap
 
 Fires when the user taps on the element. A touch sequence is considered a tap if the user does not perform dragging.
@@ -156,6 +172,10 @@ Fires when the user taps on the element. A touch sequence is considered a tap if
 ##### e.touch `TouchEvent`
 
 The touch event instance
+
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
 
 ### doubletap
 
@@ -169,6 +189,10 @@ Fires when the user quickly taps twice on the element.
 
 The touch event instance
 
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
+
 ### hold
 
 Fires when the user presses and holds  his/hers finger on the element for a minimum amount of time.
@@ -180,6 +204,10 @@ The minimum amount can be configured through the `minHold` configuration option.
 ##### e.touch `TouchEvent`
 
 The touch event instance
+
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
 
 ### swipe
 
@@ -195,6 +223,10 @@ The `minXDelta`, `maxYDelta` and `maxDuration` configuration options determine w
 
 The touch event instance
 
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
+
 #### e.direction `String`
 
 The swipe event direction. Can be either `left` or `right`.
@@ -208,6 +240,10 @@ Fires when the user presses the element with two fingers (or presses with a seco
 ##### e.touches `Array`
 
 An array containing the active touches
+
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
 
 ##### e.distance `Number`
 
@@ -227,6 +263,10 @@ Fires when the user moves a finger while multiple fingers are touching the eleme
 
 An array containing the active touches
 
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
+
 ##### e.distance `Number`
 
 The distance (in pixels) between the two touches
@@ -245,6 +285,10 @@ Fires when the user lifts the second finger from the element.
 ##### e.touches `Array`
 
 An array containing the active touches
+
+##### e.event `jQueryEvent`
+
+The jQuery event which triggered the touch event.
 
 ##### e.distance `Number`
 
