@@ -237,22 +237,28 @@ the sprite CSS class of the treeview nodes.
     ?>
 
 ### dataTextField
-Sets the field of the data item that provides
-the text content of the treeview nodes.
+Sets the field of the data item that provides the text content of the treeview nodes.
+If an array, each level uses the field that is at the same index in the array, or the last item in the array.
 
 #### Returns
 `\Kendo\UI\TreeView`
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|array`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $treeView->dataTextField('value');
+    ?>
+
+#### Example  - using array
+    <?php
+    $treeView = new \Kendo\UI\TreeView('TreeView');
+    $treeView->dataTextField(new array());
     ?>
 
 ### dataUrlField
