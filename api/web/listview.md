@@ -395,11 +395,11 @@ Fires when the list view enters edit mode.
 
 #### Event Data
 
-##### e.item `Object`
+##### e.item `jQuery`
 
 The jQuery element to be edited.
 
-##### e.model `Object`
+##### e.model `kendo.data.Model`
 
 The model to be edited.
 
@@ -426,10 +426,10 @@ Fires before the list view item is removed.
 
 #### Event Data
 
-##### e.item `Object`
+##### e.item `jQuery`
 
 The item element to be deleted.
 
-##### e.model `Object`
+##### e.model `kendo.data.Model`
 
 The model which to be deleted.
