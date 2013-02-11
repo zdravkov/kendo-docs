@@ -1684,11 +1684,11 @@ Fires when the grid detail row is collapsed.
 
 #### Event Data
 
-##### e.masterRow `Object`
+##### e.masterRow `jQuery`
 
 The jQuery element representing master row.
 
-##### e.detailRow `Object`
+##### e.detailRow `jQuery`
 
 The jQuery element representing detail row.
 
@@ -1715,11 +1715,11 @@ Fires when the grid detail row is expanded.
 
 #### Event Data
 
-##### e.masterRow `Object`
+##### e.masterRow `jQuery`
 
 The jQuery element representing master row.
 
-##### e.detailRow `Object`
+##### e.detailRow `jQuery`
 
 The jQuery element representing detail row.
 
@@ -1746,19 +1746,19 @@ Fires when the grid detail is initialized.
 
 #### Event Data
 
-##### e.masterRow `Object`
+##### e.masterRow `jQuery`
 
 The jQuery element representing master row.
 
-##### e.detailRow `Object`
+##### e.detailRow `jQuery`
 
 The jQuery element representing detail row.
 
-##### e.detailCell `Object`
+##### e.detailCell `jQuery`
 
 The jQuery element representing detail cell.
 
-##### e.data `Object`
+##### e.data `kendo.data.ObservableObject`
 
 The data for the master row.
 
@@ -1785,11 +1785,11 @@ Fires when the grid enters edit mode.
 
 #### Event Data
 
-##### e.container `Object`
+##### e.container `jQuery`
 
 The jQuery element to be edited.
 
-##### e.model `Object`
+##### e.model `kendo.data.Model`
 
 The model to be edited.
 
@@ -1820,7 +1820,7 @@ Fires when the grid column filter menu is initialized.
 
 The name of the field for which the menu is initialized.
 
-##### e.container `Object`
+##### e.container `jQuery`
 
 The jQuery element representing filter menu form.
 
@@ -1851,7 +1851,7 @@ Fires when the grid column menu is initialized.
 
 The name of the field for which the menu is initialized.
 
-##### e.container `Object`
+##### e.container `jQuery`
 
 The jQuery element representing menu container.
 
@@ -1878,11 +1878,11 @@ Fires before the grid item is removed.
 
 #### Event Data
 
-##### e.row `Object`
+##### e.row `jQuery`
 
 The row element to be deleted.
 
-##### e.model `Object`
+##### e.model `kendo.data.Model`
 
 The model which to be deleted.
 
@@ -1913,11 +1913,11 @@ Fires before the grid item is changed.
 
 The values entered by the user.
 
-##### e.container `Object`
+##### e.container `jQuery`
 
 The jQuery element which is in edit mode.
 
-##### e.model `Object`
+##### e.model `kendo.data.Model`
 
 The edited model.
 
