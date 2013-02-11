@@ -1397,6 +1397,41 @@ The index or the bound field of the column to show.
 
 ## Events
 
+### cancel
+
+Raised when the user clicks the "cancel" button (in inline or popup editing mode) or closes the popup window (popup editing mode).
+
+#### Example
+
+     $("#grid").kendoGrid({
+         cancel: function() {
+             // handle event
+         }
+     });
+
+#### To set after initialization
+
+     // get a reference to the grid
+     var grid = $("#grid").data("kendoGrid");
+     // bind to the cancel event
+     grid.bind("cancel", function() {
+         // handle event
+     });
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object that represents the edit form container element.
+
+##### e.model `kendo.data.Model`
+
+The model to which the current grid row is bound to.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the cancel action. The row remains in edit mode.
+
 ### change
 
 Fires when the grid selection has changed.
