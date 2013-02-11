@@ -336,7 +336,7 @@ Fires when the list view selection has changed.
      // bind to the change event
      listView.bind("change", function(e) {
          // handle event
-     }
+     });
 
 ### dataBound
 
@@ -381,6 +381,7 @@ Fires when the list view enters edit mode.
      $("#listView").kendoListView({
          edit: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -390,7 +391,7 @@ Fires when the list view enters edit mode.
      // bind to the edit event
      listView.bind("edit", function(e) {
          // handle event
-     }
+     });
 
 #### Event Data
 
@@ -411,6 +412,7 @@ Fires before the list view item is removed.
      $("#listView").kendoListView({
          remove: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -420,7 +422,7 @@ Fires before the list view item is removed.
      // bind to the remove event
      listView.bind("remove", function(e) {
          // handle event
-     }
+     });
 
 #### Event Data
 
