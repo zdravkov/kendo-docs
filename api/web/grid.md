@@ -1732,6 +1732,7 @@ Fires when the grid detail is initialized.
      $("#grid").kendoGrid({
          detailInit: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -1770,6 +1771,7 @@ Fires when the grid enters edit mode.
      $("#grid").kendoGrid({
          edit: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -1800,6 +1802,7 @@ Fires when the grid column filter menu is initialized.
      $("#grid").kendoGrid({
          filterMenuInit: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -1830,6 +1833,7 @@ Fires when the grid column menu is initialized.
      $("#grid").kendoGrid({
          columnMenuInit: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -1860,6 +1864,7 @@ Fires before the grid item is removed.
      $("#grid").kendoGrid({
          remove: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -1890,6 +1895,7 @@ Fires before the grid item is changed.
      $("#grid").kendoGrid({
          save: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
@@ -1924,6 +1930,7 @@ Fires before the grid calls DataSource sync.
      $("#grid").kendoGrid({
          saveChanges: function(e) {
              // handle event
+         }
      });
 
 #### To set after initialization
