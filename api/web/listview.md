@@ -282,6 +282,41 @@ Sets the dataSource of an existing ListView and rebinds it.
 
 ## Events
 
+### cancel
+
+Raised when the user clicks the "cancel" button.
+
+#### Example
+
+     $("#listView").kendoListView({
+         cancel: function() {
+             // handle event
+         }
+     });
+
+#### To set after initialization
+
+     // get a reference to the list view
+     var listView = $("#listView").data("kendoListView");
+     // bind to the cancel event
+     listView.bind("cancel", function(e) {
+         // handle event
+     });
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object that represents the edit form container element.
+
+##### e.model `kendo.data.Model`
+
+The model to which the current grid row is bound to.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the cancel action. The row remains in edit mode.
+
 ### change
 
 Fires when the list view selection has changed.
