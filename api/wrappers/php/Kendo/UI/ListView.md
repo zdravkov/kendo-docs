@@ -69,6 +69,41 @@ Indicates whether the list view will call read on the DataSource initially.
     $listView->autoBind(true);
     ?>
 
+### cancel
+Raised when the user clicks the "cancel" button.
+
+#### Returns
+`\Kendo\UI\ListView`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $listView = new \Kendo\UI\ListView('ListView');
+    $listView->cancel('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onCancel(e) {
+            // handle the cancel event.
+        }
+    </script>
+    <?php
+    $listView = new \Kendo\UI\ListView('ListView');
+    $listView->cancel('onCancel');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $listView = new \Kendo\UI\ListView('ListView');
+    $listView->cancel(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### change
 Fires when the list view selection has changed.
 
