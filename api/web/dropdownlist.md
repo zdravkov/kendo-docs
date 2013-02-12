@@ -206,6 +206,8 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
  Define the text of the default empty item. If the value is an object, then the widget will use it directly.
 
+> **Important:** Widget's value will be equal to the optionLabel if dataValueField/dataTextField are same or not defined
+
 #### Example
 
     $("#dropdownlist").kendoDropDownList({
