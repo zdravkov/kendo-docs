@@ -1553,6 +1553,114 @@ This option is ignored in all other cases.
 
 The visibility of the axis.
 
+### categoryAxis.crosshair `Object`
+
+The crosshair configuration options.
+
+### categoryAxis.crosshair.color `String`
+
+The color of the crosshair.
+
+### categoryAxis.crosshair.width `Number`
+
+The width of the crosshair.
+
+### categoryAxis.crosshair.opacity `Number`
+
+The opacity of the crosshair.
+
+### categoryAxis.crosshair.dashType `Number`
+
+The dash type of the crosshair.
+
+### categoryAxis.crosshair.visible `Boolean`*(default: false)*
+
+The dash type of the crosshair.
+
+### categoryAxis.crosshair.tooltip `Object`
+
+The crosshar tooltip configuration options.
+
+### categoryAxis.crosshair.tooltip.background `String`
+
+The background color of the tooltip.
+
+### categoryAxis.crosshair.tooltip.border `Object`
+
+The border configuration options.
+
+### categoryAxis.crosshair.tooltip.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### categoryAxis.crosshair.tooltip.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### categoryAxis.crosshair.tooltip.color `String`
+
+The text color of the tooltip.
+
+### categoryAxis.crosshair.tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The tooltip font.
+
+### categoryAxis.crosshair.tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### categoryAxis.crosshair.tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### categoryAxis.crosshair.tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+*   **value** - the point value (either a number or an object)
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [{
+             type: "area",
+             name: "Series 1",
+             data: [200, 450, 300, 125]
+         }],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003],
+             crosshair: {
+                 visible: true,
+                 tooltip: {
+                     visible: true,
+                     template: "|#= value #|"
+                 }
+             }
+         }
+    });
+
+### categoryAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be displayed.
+
 ### chartArea `Object`
 
 The chart area configuration options.
@@ -4009,6 +4117,116 @@ The visibility of the title.
 
 The visibility of the axis.
 
+### valueAxis.crosshair `Object`
+
+The crosshair configuration options.
+
+### valueAxis.crosshair.color `String`
+
+The color of the crosshair.
+
+### valueAxis.crosshair.width `Number`
+
+The width of the crosshair.
+
+### valueAxis.crosshair.opacity `Number`
+
+The opacity of the crosshair.
+
+### valueAxis.crosshair.dashType `Number`
+
+The dash type of the crosshair.
+
+### valueAxis.crosshair.visible `Boolean`*(default: false)*
+
+The dash type of the crosshair.
+
+### valueAxis.crosshair.tooltip `Object`
+
+The crosshar tooltip configuration options.
+
+### valueAxis.crosshair.tooltip.background `String`
+
+The background color of the tooltip.
+
+### valueAxis.crosshair.tooltip.border `Object`
+
+The border configuration options.
+
+### valueAxis.crosshair.tooltip.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### valueAxis.crosshair.tooltip.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### valueAxis.crosshair.tooltip.color `String`
+
+The text color of the tooltip.
+
+### valueAxis.crosshair.tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The tooltip font.
+
+### valueAxis.crosshair.tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### valueAxis.crosshair.tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### valueAxis.crosshair.tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+*   **value** - the point value (either a number or an object)
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [{
+                 name: "Series 1",
+                 data: [200, 450, 300, 125]
+         }],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         },
+         valueAxis: {
+             crosshair: {
+                 visible: true,
+                 tooltip: {
+                     visible: true,
+                     template: "value: #= value #"
+                 }
+             }
+         }
+    });
+
+### valueAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be displayed.
+
 ### xAxis `Array`
 
 Scatter charts X-axis configuration options.
@@ -4486,6 +4704,116 @@ The visibility of the title.
 
 The visibility of the axis.
 
+### xAxis.crosshair `Object`
+
+The crosshair configuration options.
+
+### xAxis.crosshair.color `String`
+
+The color of the crosshair.
+
+### xAxis.crosshair.width `Number`
+
+The width of the crosshair.
+
+### xAxis.crosshair.opacity `Number`
+
+The opacity of the crosshair.
+
+### xAxis.crosshair.dashType `Number`
+
+The dash type of the crosshair.
+
+### xAxis.crosshair.visible `Boolean`*(default: false)*
+
+The dash type of the crosshair.
+
+### xAxis.crosshair.tooltip `Object`
+
+The crosshar tooltip configuration options.
+
+### xAxis.crosshair.tooltip.background `String`
+
+The background color of the tooltip.
+
+### xAxis.crosshair.tooltip.border `Object`
+
+The border configuration options.
+
+### xAxis.crosshair.tooltip.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### xAxis.crosshair.tooltip.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### xAxis.crosshair.tooltip.color `String`
+
+The text color of the tooltip.
+
+### xAxis.crosshair.tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The tooltip font.
+
+### xAxis.crosshair.tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### xAxis.crosshair.tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### xAxis.crosshair.tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+*   **value** - the point value (either a number or an object)
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [{
+                 name: "Series 1",
+                 data: [200, 450, 300, 125]
+         }],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         },
+         xAxis: {
+             crosshair: {
+                 visible: true,
+                 tooltip: {
+                     visible: true,
+                     template: "value: #= value #"
+                 }
+             }
+         }
+    });
+
+### xAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be displayed.
+
 ### yAxis `Array`
 
 Scatter charts Y-axis configuration options.
@@ -4962,6 +5290,116 @@ The visibility of the title.
 ### yAxis.visible `Boolean`*(default: true)*
 
 The visibility of the axis.
+
+### yAxis.crosshair `Object`
+
+The crosshair configuration options.
+
+### yAxis.crosshair.color `String`
+
+The color of the crosshair.
+
+### yAxis.crosshair.width `Number`
+
+The width of the crosshair.
+
+### yAxis.crosshair.opacity `Number`
+
+The opacity of the crosshair.
+
+### yAxis.crosshair.dashType `Number`
+
+The dash type of the crosshair.
+
+### yAxis.crosshair.visible `Boolean`*(default: false)*
+
+The dash type of the crosshair.
+
+### yAxis.crosshair.tooltip `Object`
+
+The crosshar tooltip configuration options.
+
+### yAxis.crosshair.tooltip.background `String`
+
+The background color of the tooltip.
+
+### yAxis.crosshair.tooltip.border `Object`
+
+The border configuration options.
+
+### yAxis.crosshair.tooltip.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### yAxis.crosshair.tooltip.border.width `Number`*(default: 0)*
+
+The width of the border.
+
+### yAxis.crosshair.tooltip.color `String`
+
+The text color of the tooltip.
+
+### yAxis.crosshair.tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+
+The tooltip font.
+
+### yAxis.crosshair.tooltip.format `String`
+
+The tooltip format.
+
+#### Example
+
+    //sets format of the tooltip
+    format: "C"
+
+### yAxis.crosshair.tooltip.padding `Number|Object`
+
+The padding of the tooltip.
+
+#### Example
+
+    // sets the top, right, bottom and left padding to 3px.
+    padding: 3
+
+    // sets the top and left padding to 1px
+    // right and bottom padding are left at their default values
+    padding: { top: 1, left: 1 }
+
+### yAxis.crosshair.tooltip.template `String|Function`
+
+The tooltip template.
+Template variables:
+
+*   **value** - the point value (either a number or an object)
+
+#### Example
+
+    // chart intialization
+    $("#chart").kendoChart({
+         title: {
+             text: "My Chart Title"
+         },
+         series: [{
+                 name: "Series 1",
+                 data: [200, 450, 300, 125]
+         }],
+         categoryAxis: {
+             categories: [2000, 2001, 2002, 2003]
+         },
+         yAxis: {
+             crosshair: {
+                 visible: true,
+                 tooltip: {
+                     visible: true,
+                     template: "value: #= value #"
+                 }
+             }
+         }
+    });
+
+### yAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be displayed.
 
 ## Events
 
