@@ -90,6 +90,10 @@ Scroll to the given page. Pages are zero-based indexed.
 
 The page to scroll to.
 
+##### instant `Boolean` *(default: false)*
+
+If set to true, the scrollview will jump instantly to the given page without any animation effects.
+
 ## Events
 
 ### change
