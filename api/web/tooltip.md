@@ -53,7 +53,7 @@ By default the tooltip will display the target element title attribute content.
 
     $("#container").kendoTooltip({
         content: function(e) {
-            var target = e.element; // element for which the tooltip is shown
+            var target = e.target; // element for which the tooltip is shown
             return target.attr("src");
         }
     });
@@ -141,6 +141,20 @@ Triggered when a Tooltip is shown.
 ### hide
 
 Triggered when a Tooltip is hidden
+
+### requestStart
+
+Triggered before an AJAX request started.
+
+#### Event Data
+
+##### e.target `jQuery`
+
+The target element, for which the tooltip is shown.
+
+##### e.data `Object`
+
+The data which will be send via [jQuery.ajax](http://api.jquery.com/jQuery.ajax/)
 
 ### error
 
