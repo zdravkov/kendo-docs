@@ -532,6 +532,8 @@ Defines the whether to open/close the drop-down list.
 
 Gets/Sets the value of the combobox. If the value is undefined, text of the data item will be used.
 
+> **Important:** If no items, value method will pre-fetch the data before continue with the value setting.
+
 #### Example
 
     var combobox = $("#combobox").data("kendoComboBox");

@@ -468,6 +468,8 @@ Defines the whether to open/close the drop-down list.
 
 Gets/Sets the value of the dropdownlist. The value will not be set if there is no item with such value. If value is undefined, text of the data item is used.
 
+> **Important:** If no items, value method will pre-fetch the data before continue with the value setting.
+
 #### Example
 
     // get a reference to the dropdown list
