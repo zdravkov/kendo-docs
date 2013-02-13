@@ -22,7 +22,7 @@ Create a tooltip for a single target:
         Some Content
     </div>
 
-### Initialize the Window using a selector
+### Initialize the Tooltip
 
     $(document).ready(function() {
         $("#target").kendoTooltip({ content: "Tooltip content" });
@@ -37,7 +37,7 @@ Create a tooltip for multiple target within a container:
         Some <a href="#" title="Some other text">More</a> Content <br />
     </div>
 
-### Initialize the Window using a selector
+### Initialize the Tooltip using a selector and specify the filter to match the target elements
 
     $(document).ready(function() {
         $("#container").kendoTooltip({ filter: "a[title]" });
@@ -58,7 +58,7 @@ Among the properties that can be controlled:
 *   Auto hide behavior
 *   Height/Width
 
-### Create a modal Window with all user actions enabled
+### Create a Tooltip
 
     $("#container").kendoTooltip({
         position: "right",
@@ -71,7 +71,7 @@ Among the properties that can be controlled:
         width: "500px"
     });
 
-## Loading Window content via AJAX
+## Loading Tooltip content via AJAX
 
 A **Tooltip** provides built-in support for asynchronously loading content from a URL. This URL
 should return a HTML fragment that can be loaded in a Tooltip content area.
@@ -88,14 +88,14 @@ should return a HTML fragment that can be loaded in a Tooltip content area.
         });
     });
 
-## Accessing an Existing Window
+## Accessing an Existing Tooltip
 
 
 You can reference an existing **Tooltip** instance via
 [jQuery.data()](http://api.jquery.com/jQuery.data/). Once a reference has been established, you can
 use the API to control its behavior.
 
-### Accessing an existing Window instance
+### Accessing an existing Tooltip instance
 
     var tooltip = $("#target").data("kendoTooltip");
 
