@@ -207,6 +207,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 ### optionLabel `String | Object`*(default: "")*
 
  Define the text of the default empty item. If the value is an object, then the widget will use it directly.
+ Note that object should have atleast the dataValueField and dataTextField properties. Otherwise, widget will show `undefined`.
 
 > **Important:** Widget's value will be equal to the optionLabel if dataValueField/dataTextField are same or not defined
 
