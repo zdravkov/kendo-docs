@@ -309,6 +309,7 @@ Indicates whether keyboard navigation is enabled/disabled.
     ?>
 
 ### pageable
+
 Indicates whether paging is enabled/disabled.
 
 #### Returns
@@ -316,14 +317,33 @@ Indicates whether paging is enabled/disabled.
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\UI\ListViewPageable|array`
 
 
 
-#### Example 
+
+#### Example  - using boolean
     <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->pageable(true);
+    ?>
+
+
+#### Example - using [\Kendo\UI\ListViewPageable](/api/wrappers/php/Kendo/UI/ListViewPageable)
+    <?php
+    $listView = new \Kendo\UI\ListView('ListView');
+    $pageable = new \Kendo\UI\ListViewPageable();
+    $buttonCount = 1;
+    $pageable->buttonCount($buttonCount);
+    $listView->pageable($pageable);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $listView = new \Kendo\UI\ListView('ListView');
+    $buttonCount = 1;
+    $listView->pageable(array('buttonCount' => $buttonCount));
     ?>
 
 ### remove
