@@ -73,7 +73,7 @@ it creates an [AuthorizationContext](http://msdn.microsoft.com/en-us/library/sys
 with set Action/Controller. In 'debug' mode those context objects are not cached and as a result there may be delay in rendering the menu in
 case there are a lot of items. When your application is deployed and debug mode is disabled the authorization context objects are cached.
 
-More info about ASP.NET debug mode can be found in this Scott Guthrie blog post: [Don’t run production ASP.NET Applications with debug="true" enabled](http://weblogs.asp.net/scottgu/archive/2006/04/11/Don_1920_t-run-production-ASP.NET-Applications-with-debug_3D001D20_true_1D20_-enabled.aspx).
+More info about ASP.NET debug mode can be found in the Scott Guthrie's blog post: [Don’t run production ASP.NET Applications with debug="true" enabled](http://weblogs.asp.net/scottgu/archive/2006/04/11/Don_1920_t-run-production-ASP.NET-Applications-with-debug_3D001D20_true_1D20_-enabled.aspx).
 
 ### Solution
 
@@ -92,3 +92,12 @@ More info about ASP.NET debug mode can be found in this Scott Guthrie blog post:
 
     <compilation debug="false">
 
+## Widget's value is not bound to the Model's property
+
+If widget's name is different than the Model's property then the ModelBinder will not be able to update the model.
+
+### Solution
+
+Verify that the name of the widget is the same as the Model's property you want to update.
+
+> **Important:** If strongly-typed widget is used do not set Name manually, because name is generated automatically.
