@@ -79,3 +79,9 @@ The solution is to load a partial HTML fragment that doesn't contain any unneede
          // load partial page, without jQuery reference
         content: "/foo"
     });
+
+## Input Widgets do not raise change event when API is used
+
+Change event of an input widget is triggered only by user action. DOM elements work in the same way.
+
+If you need to trigger an event manually use the [trigger method](http://docs.kendoui.com/api/framework/widget#trigger).
