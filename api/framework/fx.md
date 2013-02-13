@@ -86,7 +86,7 @@ Whether to clear the animation effects queue and start anew.
 ##### gotoEnd `Boolean` *(default: false)*
 Whether to jump to the animation end position when stopping or just leave the element at its current position.
 
-### kendoAddClass (available since Q2 2012 SP1)
+### kendoAddClass
 
 Adds a CSS class to the element, while doing a transition to the new state. If the browser doesn't support transitions,
 the method falls back to jQuery addClass();
@@ -110,7 +110,7 @@ The property on which to apply the animation.
 ##### options.ease `String` *(default: "ease-out")*
 The animation easing.
 
-### kendoRemoveClass (available since Q2 2012 SP1)
+### kendoRemoveClass
 
 Removes a CSS class from the element, while doing a transition to the new state. If the browser doesn't support transitions,
 the method falls back to jQuery removeClass();
@@ -134,7 +134,7 @@ The property on which to apply the animation.
 ##### options.ease `String` *(default: "ease-out")*
 The animation easing.
 
-### kendoToggleClass (available since Q2 2012 SP1)
+### kendoToggleClass
 
 Toggle a CSS class on the element, based on a flag, while doing a transition to the new state. If the browser doesn't support transitions,
 the method falls back to jQuery toggleClass();
