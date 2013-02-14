@@ -197,11 +197,9 @@ Enables or disables automatic binding.
 #### Parameters
 
 ##### autoBind `System.Boolean`
-
-            Gets or sets a value indicating if the navigator
+Gets or sets a value indicating if the navigator
             should be data bound during initialization.
             The default value is true.
-            
 
 
 

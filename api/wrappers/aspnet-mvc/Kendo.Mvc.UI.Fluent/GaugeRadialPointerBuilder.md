@@ -55,10 +55,8 @@ Sets the pointer opacity.
 #### Parameters
 
 ##### opacity `System.Double`
-
-            The pointer opacity in the range from 0 (transparent) to 1 (opaque).
+The pointer opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
-            
 
 
 

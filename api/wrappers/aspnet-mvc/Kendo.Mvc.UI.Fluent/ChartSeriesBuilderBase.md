@@ -62,9 +62,7 @@ Sets the name template for auto-generated series when binding to grouped data.
 #### Parameters
 
 ##### groupNameTemplate `System.String`
-
-            The name template for auto-generated series when binding to grouped data.
-            
+The name template for auto-generated series when binding to grouped data.
 
 
 
@@ -87,10 +85,8 @@ Sets the series opacity.
 #### Parameters
 
 ##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
+The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
-            
 
 
 
@@ -165,10 +161,8 @@ Sets the data point tooltip visibility.
 #### Parameters
 
 ##### visible `System.Boolean`
-
-            A value indicating if the data point tooltip should be displayed.
+A value indicating if the data point tooltip should be displayed.
             The tooltip is not visible by default.
-            
 
 
 

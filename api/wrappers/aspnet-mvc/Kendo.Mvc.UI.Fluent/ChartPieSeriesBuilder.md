@@ -48,10 +48,8 @@ Sets the series opacity.
 #### Parameters
 
 ##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
+The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
-            
 
 
 
@@ -202,10 +200,8 @@ Sets the pie segments effects overlay
 #### Parameters
 
 ##### overlay [Kendo.Mvc.UI.ChartPieSeriesOverlay](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieSeriesOverlay)
-
-            The pie segment effects overlay.
+The pie segment effects overlay.
             The default value is set in the theme.
-            
 
 
 

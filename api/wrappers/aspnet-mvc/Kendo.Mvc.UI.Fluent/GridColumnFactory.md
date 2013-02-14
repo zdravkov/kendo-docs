@@ -19,7 +19,6 @@ Defines a bound column.
 
 ##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 
-            
 
 
 
@@ -125,7 +124,6 @@ Defines a template column.
 
 ##### templateAction `System.Action<T>`
 
-            
 
 
 
@@ -141,7 +139,6 @@ Defines a command column.
 
 ##### commandAction System.Action<[Kendo.Mvc.UI.Fluent.GridActionCommandFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridActionCommandFactory)<T>>
 
-            
 
 
 

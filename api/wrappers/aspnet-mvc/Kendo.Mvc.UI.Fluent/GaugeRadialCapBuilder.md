@@ -55,10 +55,8 @@ Sets the cap opacity.
 #### Parameters
 
 ##### opacity `System.Double`
-
-            The cap opacity in the range from 0 (transparent) to 1 (opaque).
+The cap opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
-            
 
 
 

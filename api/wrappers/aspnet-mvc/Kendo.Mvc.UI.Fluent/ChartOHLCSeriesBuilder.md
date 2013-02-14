@@ -80,10 +80,8 @@ Sets a value indicating the distance between points in the same category.
 #### Parameters
 
 ##### spacing `System.Double`
-
-            Value of 1 means that the distance between points in the same category.
+Value of 1 means that the distance between points in the same category.
             The default value is 0.3
-            
 
 
 

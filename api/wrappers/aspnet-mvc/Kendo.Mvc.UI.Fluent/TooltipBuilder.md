@@ -64,7 +64,6 @@ The inverval in milliseconds, after which the Tooltip will be shown
 
 ##### milliseconds `System.Int32`
 
-            
 
 
 
@@ -80,7 +79,6 @@ Determines if callout should be visible
 
 ##### show `System.Boolean`
 
-            
 
 
 
@@ -96,7 +94,6 @@ Determines if tooltip should be automatically hidden, or a close button should b
 
 ##### value `System.Boolean`
 
-            
 
 
 

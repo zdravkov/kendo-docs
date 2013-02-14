@@ -122,9 +122,7 @@ Enables or disabled animated transitions on initial load and refresh.
 #### Parameters
 
 ##### transitions `System.Boolean`
-
-            A value indicating if transition animations should be played.
-            
+A value indicating if transition animations should be played.
 
 
 

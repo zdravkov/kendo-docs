@@ -58,7 +58,6 @@ Configures the highlight border
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 
-            
 
 
 

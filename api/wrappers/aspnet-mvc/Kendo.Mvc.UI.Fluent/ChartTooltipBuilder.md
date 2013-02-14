@@ -83,8 +83,7 @@ Sets the tooltip background color
 #### Parameters
 
 ##### background `System.String`
-
-            The tooltip background color.
+The tooltip background color.
             The default is determined from the series color.
 
 
@@ -112,10 +111,8 @@ Sets the tooltip text color
 #### Parameters
 
 ##### color `System.String`
-
-            The tooltip text color.
+The tooltip text color.
             The default is the same as the series labels color.
-            
 
 
 
@@ -304,10 +301,8 @@ Sets the tooltip opacity.
 #### Parameters
 
 ##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
+The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
-            
 
 
 

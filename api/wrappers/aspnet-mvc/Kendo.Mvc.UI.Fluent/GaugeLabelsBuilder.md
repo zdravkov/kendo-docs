@@ -366,10 +366,8 @@ Sets the labels opacity.
 #### Parameters
 
 ##### opacity `System.Double`
-
-            The series opacity in the range from 0 (transparent) to 1 (opaque).
+The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
-            
 
 
 

@@ -434,11 +434,9 @@ Enables or disables automatic binding.
 #### Parameters
 
 ##### autoBind `System.Boolean`
-
-            Gets or sets a value indicating if the chart
+Gets or sets a value indicating if the chart
             should be data bound during initialization.
             The default value is true.
-            
 
 
 
@@ -533,10 +531,8 @@ Sets the data point tooltip visibility.
 #### Parameters
 
 ##### visible `System.Boolean`
-
-            A value indicating if the data point tooltip should be displayed.
+A value indicating if the data point tooltip should be displayed.
             The tooltip is not visible by default.
-            
 
 
 
@@ -559,9 +555,7 @@ Enables or disabled animated transitions on initial load and refresh.
 #### Parameters
 
 ##### transitions `System.Boolean`
-
-            A value indicating if transition animations should be played.
-            
+A value indicating if transition animations should be played.
 
 
 

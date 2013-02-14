@@ -23,9 +23,7 @@ Defines bound categories.
 #### Parameters
 
 ##### expression `System.Linq.Expressions.Expression<System.Func<T,System.DateTime>>`
-
-            The expression used to extract the categories value from the chart model
-            
+The expression used to extract the categories value from the chart model
 
 
 
@@ -40,9 +38,7 @@ Defines categories.
 #### Parameters
 
 ##### categories `System.Collections.Generic.IEnumerable<System.DateTime>`
-
-            The list of categories
-            
+The list of categories
 
 
 
@@ -57,9 +53,7 @@ Defines categories.
 #### Parameters
 
 ##### categories `System.DateTime[]`
-
-            The list of categories
-            
+The list of categories
 
 
 
@@ -74,9 +68,7 @@ Sets the date category axis base unit.
 #### Parameters
 
 ##### baseUnit [Kendo.Mvc.UI.ChartAxisBaseUnit](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAxisBaseUnit)
-
-            The date category axis base unit
-            
+The date category axis base unit
 
 
 
@@ -93,10 +85,8 @@ Sets the step (interval) between categories in base units.
 #### Parameters
 
 ##### baseUnitStep `System.Int32`
-
-            the step (interval) between categories in base units.
+the step (interval) between categories in base units.
             Set 0 for automatic step. The default value is 1.
-            
 
 
 
@@ -113,10 +103,8 @@ Specifies the maximum number of groups (categories) that the chart will attempt 
 #### Parameters
 
 ##### maxDateGroups `System.Int32`
-
-            the maximum number of groups (categories).
+the maximum number of groups (categories).
             The default value is 10.
-            
 
 
 
@@ -134,10 +122,8 @@ If set to false, the min and max dates will not be rounded off to
 #### Parameters
 
 ##### roundToBaseUnit `System.Boolean`
-
-            A boolean value that indicates if the axis range should be rounded to the nearest base unit.
+A boolean value that indicates if the axis range should be rounded to the nearest base unit.
             The default value is true.
-            
 
 
 
@@ -153,10 +139,8 @@ Positions categories and series points on major ticks. This removes the empty sp
 #### Parameters
 
 ##### justified `System.Boolean`
-
-            A boolean value that indicates if the empty space before and after the series should be removed.
+A boolean value that indicates if the empty space before and after the series should be removed.
             The default value is false.
-            
 
 
 
@@ -182,9 +166,7 @@ Specifies the discrete baseUnitStep values when
 #### Parameters
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisBaseUnitStepsBuilder)>
-
-            The configuration action.
-            
+The configuration action.
 
 
 
@@ -199,9 +181,7 @@ Sets the date category axis minimum (start) date.
 #### Parameters
 
 ##### min `System.DateTime`
-
-            The date category axis minimum (start) date
-            
+The date category axis minimum (start) date
 
 
 
@@ -216,9 +196,7 @@ Sets the date category axis maximum (end) date.
 #### Parameters
 
 ##### max `System.DateTime`
-
-            The date category axis maximum (end) date
-            
+The date category axis maximum (end) date
 
 
 

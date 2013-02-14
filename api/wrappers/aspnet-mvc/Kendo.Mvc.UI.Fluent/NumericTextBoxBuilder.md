@@ -64,7 +64,6 @@ Enables or disables the spin buttons.
 
 ##### allowSpinner `System.Boolean`
 
-            
 
 
 
@@ -105,7 +104,6 @@ Enables or disables the textbox.
 
 ##### allowSpinner `System.Boolean`
 
-            
 
 
 

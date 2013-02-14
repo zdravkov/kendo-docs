@@ -117,10 +117,8 @@ Sets a value indicating the distance between bars / categories.
 #### Parameters
 
 ##### spacing `System.Double`
-
-            Value of 1 means that the distance between bars is equal to their width.
+Value of 1 means that the distance between bars is equal to their width.
             The default value is 0
-            
 
 
 

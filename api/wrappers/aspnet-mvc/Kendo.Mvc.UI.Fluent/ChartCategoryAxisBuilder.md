@@ -23,9 +23,7 @@ Defines bound categories.
 #### Parameters
 
 ##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-
-            The expression used to extract the categories value from the chart model
-            
+The expression used to extract the categories value from the chart model
 
 
 
@@ -40,9 +38,7 @@ Defines categories.
 #### Parameters
 
 ##### categories `System.Collections.IEnumerable`
-
-            The list of categories
-            
+The list of categories
 
 
 
@@ -57,9 +53,7 @@ Defines categories.
 #### Parameters
 
 ##### categories `System.String[]`
-
-            The list of categories
-            
+The list of categories
 
 
 
@@ -150,10 +144,8 @@ Positions categories and series points on major ticks. This removes the empty sp
 #### Parameters
 
 ##### justified `System.Boolean`
-
-            A boolean value that indicates if the empty space before and after the series should be removed.
+A boolean value that indicates if the empty space before and after the series should be removed.
             The default value is false.
-            
 
 
 

@@ -58,10 +58,10 @@ Projects each element of a sequence into a new form.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
- A sequence of values to project. 
+A sequence of values to project.
 
 ##### selector `System.Linq.Expressions.LambdaExpression`
- A projection function to apply to each element. 
+A projection function to apply to each element.
 
 
 
@@ -77,10 +77,10 @@ Groups the elements of a sequence according to a specified key selector function
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
- An IQueryable whose elements to group.
+An IQueryable whose elements to group.
 
 ##### keySelector `System.Linq.Expressions.LambdaExpression`
- A function to extract the key for each element.
+A function to extract the key for each element.
 
 
 
@@ -96,14 +96,10 @@ Sorts the elements of a sequence in ascending order according to a key.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
-
-            A sequence of values to order.
-            
+A sequence of values to order.
 
 ##### keySelector `System.Linq.Expressions.LambdaExpression`
-
-            A function to extract a key from an element.
-            
+A function to extract a key from an element.
 
 
 
@@ -118,14 +114,10 @@ Sorts the elements of a sequence in descending order according to a key.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
-
-            A sequence of values to order.
-            
+A sequence of values to order.
 
 ##### keySelector `System.Linq.Expressions.LambdaExpression`
-
-            A function to extract a key from an element.
-            
+A function to extract a key from an element.
 
 
 
@@ -162,7 +154,7 @@ Groups the elements of a sequence according to a specified .
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
- An IQueryable whose elements to group. 
+An IQueryable whose elements to group.
 
 ##### groupDescriptors System.Collections.Generic.IEnumerable<[Kendo.Mvc.GroupDescriptor](/api/wrappers/aspnet-mvc/Kendo.Mvc/GroupDescriptor)>
 The group descriptors used for grouping.
@@ -181,7 +173,7 @@ Calculates the results of given aggregates functions on a sequence of elements.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
- An IQueryable whose elements will
+An IQueryable whose elements will
             be used for aggregate calculation.
 
 ##### aggregateFunctions System.Collections.Generic.IEnumerable<[Kendo.Mvc.AggregateFunction](/api/wrappers/aspnet-mvc/Kendo.Mvc/AggregateFunction)>
@@ -200,10 +192,10 @@ Filters a sequence of values based on a predicate.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
- An IQueryable to filter.
+An IQueryable to filter.
 
 ##### predicate `System.Linq.Expressions.Expression`
- A function to test each element for a condition.
+A function to test each element for a condition.
 
 
 
@@ -238,10 +230,10 @@ Returns a specified number of contiguous elements from the start of a sequence.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
- The sequence to return elements from.
+The sequence to return elements from.
 
 ##### count `System.Int32`
- The number of elements to return. 
+The number of elements to return.
 
 
 
@@ -258,14 +250,10 @@ Bypasses a specified number of elements in a sequence
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
-
-            An IQueryable to return elements from.
-            
+An IQueryable to return elements from.
 
 ##### count `System.Int32`
-
-            The number of elements to skip before returning the remaining elements.
-            
+The number of elements to skip before returning the remaining elements.
 
 
 
@@ -281,9 +269,7 @@ Returns the number of elements in a sequence.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
-
-            The IQueryable that contains the elements to be counted.
-            
+The IQueryable that contains the elements to be counted.
 
 
 
@@ -298,10 +284,10 @@ Returns the element at a specified index in a sequence.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
- An IQueryable to return an element from.
+An IQueryable to return an element from.
 
 ##### index `System.Int32`
- The zero-based index of the element to retrieve.
+The zero-based index of the element to retrieve.
 
 
 

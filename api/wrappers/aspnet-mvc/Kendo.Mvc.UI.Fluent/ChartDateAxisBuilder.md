@@ -18,9 +18,7 @@ Sets the date axis base unit.
 #### Parameters
 
 ##### baseUnit [Kendo.Mvc.UI.ChartAxisBaseUnit](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAxisBaseUnit)
-
-            The date axis base unit
-            
+The date axis base unit
 
 
 
