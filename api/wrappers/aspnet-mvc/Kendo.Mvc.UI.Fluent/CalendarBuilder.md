@@ -5,115 +5,249 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.CalendarBuilder
-
 Defines the fluent interface for configuring the Calendar.
 
+
+
 ## Methods
+
+### Culture(System.String)
+Specifies the culture info used by the Calendar widget.
+
+#### Example
+
+    <%= Html.Kendo().Calendar()
+        .Name("calendar")
+        .Culture("de-DE")
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.CalendarEventBuilder\>)
 Configures the client-side events.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .Events(events =>
         events.Select("onSelect")
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### clientEventsAction System.Action\<[Kendo.Mvc.UI.Fluent.CalendarEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/CalendarEventBuilder)\>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.CalendarEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/CalendarEventBuilder)>
 The client events action.
+
+
+
+#### Returns
+0
+
 
 ### Format(System.String)
 Sets the date format, which will be used to parse and format the machine date.
+
+
+
+#### Returns
+0
+
 
 ### FooterId(System.String)
 FooterId to be used for rendering the footer of the Calendar.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .FooterId("widgetFooterId")
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Footer(System.String)
 Footer template to be used for rendering the footer of the Calendar.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .Footer("#= kendo.toString(data, "G") #")
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Depth(Kendo.Mvc.UI.CalendarView)
 Specifies the navigation depth.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .Depth(CalendarView.Month)
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Start(Kendo.Mvc.UI.CalendarView)
 Specifies the start view.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .Start(CalendarView.Month)
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### MonthTemplateId(System.String)
 MonthTemplateId to be used for rendering the cells of the Calendar.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .MonthTemplateId("widgetMonthTemplateId")
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### MonthTemplate(System.String)
 Templates for the cells rendered in the "month" view.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .MonthTemplate("#= data.value #")
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### MonthTemplate(System.Action\<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder\>)
 Configures the content of cells of the Calendar.
 
 #### Example
+
     <%= Html.Kendo().Calendar()
         .Name("Calendar")
         .MonthTemplate(month => month.Content("#= data.value #"))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Min(System.String)
 Sets the minimal date, which can be selected in the calendar.
 
+
+
+#### Returns
+0
+
+
 ### Max(System.String)
 Sets the maximal date, which can be selected in the calendar.
+
+
+
+#### Returns
+0
+
 
 ### Min(System.DateTime)
 Sets the minimal date, which can be selected in the calendar
 
+
+
+#### Returns
+0
+
+
 ### Max(System.DateTime)
 Sets the maximal date, which can be selected in the calendar
+
+
+
+#### Returns
+0
+
 
 ### Value(System.Nullable\<System.DateTime\>)
 Sets the value of the calendar
 
+
+
+#### Returns
+0
+
+
 ### Value(System.String)
 Sets the value of the calendar
+
+
+
+#### Returns
+0
+
 
 ### Selection(System.Action\<Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder\>)
 Configures the selection settings of the calendar.
 
+
 #### Parameters
 
-##### selectionAction System.Action\<[Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/CalendarSelectionSettingsBuilder)\>
+##### selectionAction System.Action<[Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/CalendarSelectionSettingsBuilder)>
 SelectAction settings, which includes Action name and IEnumerable of DateTime objects.
+
+
+
+#### Returns
+
+
+
+

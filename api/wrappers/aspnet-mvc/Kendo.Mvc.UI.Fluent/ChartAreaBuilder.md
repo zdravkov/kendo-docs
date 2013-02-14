@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAreaBuilder
-
 Defines the fluent interface for configuring the ChartArea.
+
+
 
 ## Methods
 
@@ -14,26 +15,38 @@ Defines the fluent interface for configuring the ChartArea.
 Sets the chart area background color.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Background("Red"))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### background `System.String`
 The background color.
 
+
+
+#### Returns
+0
+
+
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the chart area margin.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Margin(0, 5, 5, 0))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -49,30 +62,48 @@ The chart area bottom margin.
 ##### left `System.Int32`
 The chart area left margin.
 
+
+
+#### Returns
+0
+
+
 ### Margin(System.Int32)
 Sets the chart area margin.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Margin(5))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### margin `System.Int32`
 The chart area margin.
 
+
+
+#### Returns
+0
+
+
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the chart area border.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Border(1, "#000", ChartDashType.Dot))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -84,3 +115,26 @@ The border color (CSS syntax).
 
 ##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The border dash type.
+
+
+
+#### Returns
+0
+
+
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+Configures the plot area border
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+The border configuration action
+
+
+
+#### Returns
+0
+
+
+

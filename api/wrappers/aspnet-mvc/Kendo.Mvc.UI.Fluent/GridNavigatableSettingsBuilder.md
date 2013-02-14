@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder
-
 Defines the fluent interface for configuring Navigatable
+
+
 
 ## Methods
 
@@ -14,7 +15,17 @@ Defines the fluent interface for configuring Navigatable
 Enables or disables keyboard navigation.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Navigatable(setting => setting.Enabled((bool)ViewData["enableKeyBoardNavigation"]))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
+
+

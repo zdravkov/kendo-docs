@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBarSeriesBuilder
-
 Defines the fluent interface for configuring bar series.
+
+
 
 ## Methods
 
@@ -14,44 +15,71 @@ Defines the fluent interface for configuring bar series.
 Sets a value indicating if the bars should be stacked.
 
 #### Example
+
     <%= Html.Kendo().Chart(Model)
         .Name("Chart")
         .Series(series => series.Bar(s => s.Sales).Stack(true))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### stacked `System.Boolean`
 A value indicating if the bars should be stacked.
 
+
+
+#### Returns
+0
+
+
 ### Stack(System.String)
 Sets the name of the stack that this series belongs to. Each unique name creates a new stack.
 
 #### Example
+
     <%= Html.Kendo().Chart(Model)
         .Name("Chart")
         .Series(series => series.Bar(s => s.Sales).Stack("Female"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### stacked `System.String`
+##### stackName `System.String`
 The name of the stack.
+
+
+
+#### Returns
+0
+
 
 ### Aggregate(Kendo.Mvc.UI.ChartSeriesAggregate)
 Sets the aggregate function for date series.
             This function is used when a category (an year, month, etc.) contains two or more points.
 
 #### Example
+
     <%= Html.Kendo().Chart(Model)
         .Name("Chart")
         .Series(series => series.Bar(s => s.Sales).Aggregate())
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### aggregate [Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)
 Aggregate function name.
+
+
+
+#### Returns
+0
+
 
 ### Gap(System.Double)
 Set distance between category clusters.
@@ -61,30 +89,50 @@ Set distance between category clusters.
             The default value is 1.5
 
 #### Example
+
     <%= Html.Kendo().Chart(Model)
         .Name("Chart")
         .Series(series => series.Bar(s => s.Sales).Gap(1))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Spacing(System.Double)
 Sets a value indicating the distance between bars / categories.
 
 #### Example
+
     <%= Html.Kendo().Chart(Model)
         .Name("Chart")
         .Series(series => series.Spacing(s => s.Sales).Spacing(1))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### spacing `System.Double`
-Value of 1 means that the distance between bars is equal to their width.
+
+            Value of 1 means that the distance between bars is equal to their width.
             The default value is 0
+            
+
+
+
+#### Returns
+0
+
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder\>)
 Configures the bar chart labels.
 
 #### Example
+
     <%= Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -94,39 +142,59 @@ Configures the bar chart labels.
         .Visible(true)
         );
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBarLabelsBuilder)\>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBarLabelsBuilder)>
 The configuration action.
+
+
+
+#### Returns
+0
+
 
 ### Labels(System.Boolean)
 Sets the visibility of bar chart labels.
 
 #### Example
+
     <%= Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
         .Bar(s => s.Sales)
         .Labels(true);
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### visible `System.Boolean`
 The visibility. The default value is false.
 
+
+
+#### Returns
+0
+
+
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the bars border
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series.Bar(s => s.Sales).Border("1", "#000", ChartDashType.Dot))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -139,17 +207,34 @@ The bars border color (CSS syntax).
 ##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The bars border dash type.
 
+
+
+#### Returns
+0
+
+
 ### Overlay(Kendo.Mvc.UI.ChartBarSeriesOverlay)
 Sets the bar effects overlay
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series.Bar(s => s.Sales).Overlay(ChartBarSeriesOverlay.None))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### overlay [Kendo.Mvc.UI.ChartBarSeriesOverlay](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarSeriesOverlay)
 The bar effects overlay. The default is ChartBarSeriesOverlay.Glass
+
+
+
+#### Returns
+0
+
+
+

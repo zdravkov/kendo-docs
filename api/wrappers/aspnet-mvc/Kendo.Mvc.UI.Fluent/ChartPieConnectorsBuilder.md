@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder
-
 Defines the fluent interface for configuring the chart connectors.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the chart connectors.
 Sets the connectors width
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -23,17 +25,26 @@ Sets the connectors width
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### width `System.Int32`
 The connectors width.
 
+
+
+#### Returns
+0
+
+
 ### Color(System.String)
 Sets the connectors color
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -43,17 +54,26 @@ Sets the connectors color
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The connectors color.
 
+
+
+#### Returns
+0
+
+
 ### Padding(System.Int32)
 Sets the connectors padding
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -63,9 +83,19 @@ Sets the connectors padding
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### padding `System.Int32`
 The connectors padding.
+
+
+
+#### Returns
+0
+
+
+

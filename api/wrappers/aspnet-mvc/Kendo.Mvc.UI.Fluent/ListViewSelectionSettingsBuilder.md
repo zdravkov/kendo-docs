@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder
-
 Defines the fluent interface for configuring Selectable
+
+
 
 ## Methods
 
@@ -14,16 +15,34 @@ Defines the fluent interface for configuring Selectable
 Enables or disables selection.
 
 #### Example
+
     <%= Html.Kendo().ListView(Model)
         .Name("ListView")
         .Selectable(selection => selection.Enabled((bool)ViewData["enableSelection"]))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Mode(Kendo.Mvc.UI.ListViewSelectionMode)
 Specifies whether multiple or single selection is allowed.
 
 #### Example
+
     <%= Html.Kendo().ListView(Model)
         .Name("ListView")
         .Selectable(selection => selection.Mode((bool)ViewData["selectionMode"]))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
+
+

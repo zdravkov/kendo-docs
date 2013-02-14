@@ -5,26 +5,49 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnFactory
-
 Creates columns for the !:Grid{TModel}.
+
+
 
 ## Methods
 
-### Bound\<T1\>(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+### BoundT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Defines a bound column.
+
 
 #### Parameters
 
 ##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
 
+            
+
+
+
+#### Returns
+
+
+
 ### Bound(System.String)
 Defines a bound column.
+
+
+
+#### Returns
+0
+
 
 ### Bound(System.Type,System.String)
 Defines a bound column.
 
-### ForeignKey\<T1\>(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Collections.IEnumerable,System.String,System.String)
+
+
+#### Returns
+0
+
+
+### ForeignKeyT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Collections.IEnumerable,System.String,System.String)
 Defines a foreign key column.
+
 
 #### Parameters
 
@@ -40,8 +63,15 @@ The data value field
 ##### dataFieldText `System.String`
 The data text field
 
-### ForeignKey\<T1\>(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Web.Mvc.SelectList)
+
+
+#### Returns
+
+
+
+### ForeignKeyT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Web.Mvc.SelectList)
 Defines a foreign key column.
+
 
 #### Parameters
 
@@ -51,32 +81,72 @@ The member which matches the selected item
 ##### data `System.Web.Mvc.SelectList`
 The foreign data
 
+
+
+#### Returns
+
+
+
 ### AutoGenerate(System.Boolean)
 Determines if columns should be automatically generated.
+
 
 #### Parameters
 
 ##### shouldGenerate `System.Boolean`
 If true columns should be generated, otherwise false.
 
+
+
+#### Returns
+0
+
+
 ### AutoGenerate(System.Action\<Kendo.Mvc.UI.GridColumnBase\<T\>\>)
 Determines if columns should be automatically generated.
 
+
 #### Parameters
 
-##### columnAction System.Action\<[Kendo.Mvc.UI.GridColumnBase](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridColumnBase)\<T\>\>
+##### columnAction System.Action<[Kendo.Mvc.UI.GridColumnBase](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridColumnBase)<T>>
 Action which will be executed for each generated column.
+
+
+
+#### Returns
+0
+
 
 ### Template(System.Action\<T\>)
 Defines a template column.
+
 
 #### Parameters
 
 ##### templateAction `System.Action<T>`
 
+            
+
+
+
+#### Returns
+
+
+
 ### Command(System.Action\<Kendo.Mvc.UI.Fluent.GridActionCommandFactory\<T\>\>)
 Defines a command column.
 
+
 #### Parameters
 
-##### commandAction System.Action\<[Kendo.Mvc.UI.Fluent.GridActionCommandFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridActionCommandFactory)\<T\>\>
+##### commandAction System.Action<[Kendo.Mvc.UI.Fluent.GridActionCommandFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridActionCommandFactory)<T>>
+
+            
+
+
+
+#### Returns
+
+
+
+

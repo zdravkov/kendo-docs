@@ -5,29 +5,45 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder
-
 Defines the fluent interface for configuring the SelectionSettings.
+
+
 
 ## Methods
 
 ### Dates(System.Collections.Generic.IList\<System.DateTime\>)
 Defines list of dates. This list determines which dates to be rendered with action link.
 
+
 #### Parameters
 
 ##### dates `System.Collections.Generic.IList<System.DateTime>`
 List of DateTime objects
 
+
+
+#### Returns
+0
+
+
 ### Action(System.Web.Routing.RouteValueDictionary)
 Sets the action to which the date should navigate
+
 
 #### Parameters
 
 ##### routeValues `System.Web.Routing.RouteValueDictionary`
 The route values of the Action method.
 
+
+
+#### Returns
+0
+
+
 ### Action(System.String,System.String,System.Object)
 Sets the action to which the item should navigate
+
 
 #### Parameters
 
@@ -39,3 +55,11 @@ Name of the controller.
 
 ##### values `System.Object`
 The route values.
+
+
+
+#### Returns
+0
+
+
+

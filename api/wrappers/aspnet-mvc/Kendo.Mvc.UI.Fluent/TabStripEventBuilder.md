@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.TabStripEventBuilder
-
 Defines the fluent interface for configuring the TabStrip events.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the TabStrip events.
 Defines the inline handler of the Activate client-side event
 
 #### Example
+
     <% Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.Activate(
@@ -24,31 +26,49 @@ Defines the inline handler of the Activate client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSelectAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Activate(System.String)
 Defines the name of the JavaScript function that will handle the the Activate client-side event.
 
 #### Example
+
     <%= Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.Activate("onActivate"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSelectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Select(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Select client-side event
 
 #### Example
+
     <% Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.Select(
@@ -59,31 +79,49 @@ Defines the inline handler of the Select client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSelectAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
 
 #### Example
+
     <%= Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.Select("onSelect"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSelectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### ContentLoad(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the ContentLoad client-side event
 
 #### Example
+
     <% Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.ContentLoad(
@@ -94,31 +132,49 @@ Defines the inline handler of the ContentLoad client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSelectAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### ContentLoad(System.String)
 Defines the name of the JavaScript function that will handle the the ContentLoad client-side event.
 
 #### Example
+
     <%= Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.ContentLoad("onContentLoad"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSelectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Error(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Error client-side event
 
 #### Example
+
     <% Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.Error(
@@ -129,23 +185,42 @@ Defines the inline handler of the Error client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onErrorAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Error(System.String)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
 
 #### Example
+
     <%= Html.Kendo().TabStrip()
         .Name("TabStrip")
         .Events(events => events.Error("onError"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onErrorHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+

@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.PanelBarItemBuilder
-
 Defines the fluent interface for configuring child panelbar items.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring child panelbar items.
 Configures the child items of a PanelBarItem.
 
 #### Example
+
     <%= Html.Kendo().PanelBar()
         .Name("PanelBar")
         .Items(items =>
@@ -24,17 +26,26 @@ Configures the child items of a PanelBarItem.
         firstItemChildren.Add().Text("Child Item 2");
         });
         })
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### addAction System.Action\<[Kendo.Mvc.UI.Fluent.PanelBarItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PanelBarItemFactory)\>
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.PanelBarItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PanelBarItemFactory)>
 The add action.
+
+
+
+#### Returns
+0
+
 
 ### Expanded(System.Boolean)
 Define when the item will be expanded on intial render.
 
 #### Example
+
     <%= Html.Kendo().PanelBar()
         .Name("PanelBar")
         .Items(items =>
@@ -46,9 +57,19 @@ Define when the item will be expanded on intial render.
         })
         .Expanded(true);
         })
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.Boolean`
 If true the item will be expanded.
+
+
+
+#### Returns
+0
+
+
+

@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBorderBuilder
-
 Defines the fluent interface for configuring ChartElementBorder.
+
+
 
 ## Methods
 
@@ -14,58 +15,96 @@ Defines the fluent interface for configuring ChartElementBorder.
 Sets the border color.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Border(border => border.Color("#f00")))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The border color (CSS format).
 
+
+
+#### Returns
+0
+
+
 ### Opacity(System.Double)
 Sets the border opacity
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Border(border => border.Opacity(0.2)))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### opacity `System.Double`
 The border opacity (CSS format).
 
+
+
+#### Returns
+0
+
+
 ### Width(System.Int32)
 Sets the border width.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Border(border => border.Width(2)))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### width `System.Int32`
 The border width.
 
+
+
+#### Returns
+0
+
+
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the border dashType.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .ChartArea(chartArea => chartArea.Border(border => border.DashType(ChartDashType.Dot)))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The border dashType.
+
+
+
+#### Returns
+0
+
+
+

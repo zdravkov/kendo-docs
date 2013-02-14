@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.DropDownListItemBuilder
-
 Defines the fluent interface for configuring child DropDonwList items.
+
+
 
 ## Methods
 
@@ -14,43 +15,72 @@ Defines the fluent interface for configuring child DropDonwList items.
 Sets the value for the item.
 
 #### Example
+
     <%= Html.Kendo().DropDownList()
         .Name("DropDownList")
         .Items(items => items.Add().Text("First item."))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.String`
 The value.
+
+
+
+#### Returns
+0
+
 
 ### Value(System.String)
 Sets the value for the item.
 
 #### Example
+
     <%= Html.Kendo().DropDownList()
         .Name("DropDownList")
         .Items(items => items.Add().Value("1"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.String`
 The value.
 
+
+
+#### Returns
+0
+
+
 ### Selected(System.Boolean)
 Define when the item will be expanded on intial render.
 
 #### Example
+
     <%= Html.Kendo().DropDownList()
         .Name("DropDownList")
         .Items(items =>
         {
         items.Add().Text("First Item").Selected(true);
         })
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.Boolean`
 If true the item will be selected.
+
+
+
+#### Returns
+0
+
+
+

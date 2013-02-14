@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder
-
 Defines the fluent interface for configuring the chart labels.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the chart labels.
 Renders the axis labels on the other side.
 
 #### Example
+
     <%= Html.Kendo().Chart()
         .Name("Chart")
         .ValueAxis(axis => axis
@@ -24,24 +26,35 @@ Renders the axis labels on the other side.
         // Move the value axis to the right side
         .AxisCrossingValue(5)
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### mirror `System.Boolean`
 A value indicating whether to render the axis labels on the other side.
 
+
+
+#### Returns
+0
+
+
 ### Step(System.Int32)
 Label rendering step.
 
 #### Example
+
     <%= Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
         .Categories(product => product.Name)
         .Labels(labels => labels.Step(2))
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -49,19 +62,36 @@ Label rendering step.
 A value indicating the step at which labels are rendered.
             Every n-th label is rendered where n is the step.
 
+
+
+#### Returns
+0
+
+
 ### Skip(System.Int32)
 Label rendering skip.
 
 #### Example
+
     <%= Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
         .Categories(product => product.Name)
         .Labels(labels => labels.Skip(2))
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### skip `System.Int32`
 Skips rendering the first n labels.
+
+
+
+#### Returns
+0
+
+
+

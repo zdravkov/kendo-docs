@@ -1,0 +1,222 @@
+---
+title:ColorPickerEventBuilder
+slug:aspnetmvc-kendo.mvc.ui.fluent.colorpickereventbuilder
+publish:true
+---
+
+# Kendo.Mvc.UI.Fluent.ColorPickerEventBuilder
+Defines the fluent interface for configuring ColorPicker client events.
+
+
+
+## Methods
+
+### Change(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Change client-side event
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Change(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### Change(System.String)
+Defines the name of the JavaScript function that will handle the the Change client-side event.
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Change("change"))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### Select(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Select client-side event
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Select(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### Select(System.String)
+Defines the name of the JavaScript function that will handle the the Select client-side event.
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Select("change"))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### Open(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Open client-side event
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Open(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### Open(System.String)
+Defines the name of the JavaScript function that will handle the the Open client-side event.
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Open("open"))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### Close(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Close client-side event
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Close(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### Close(System.String)
+Defines the name of the JavaScript function that will handle the the Close client-side event.
+
+#### Example
+
+    @(Html.Kendo().ColorPicker()
+        .Name("ColorPicker")
+        .Events(events => events.Close("close"))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+

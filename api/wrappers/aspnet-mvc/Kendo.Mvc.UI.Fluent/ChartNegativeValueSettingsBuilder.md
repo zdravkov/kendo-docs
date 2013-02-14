@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder
-
 Defines the fluent interface for configuring ChartNegativeValueSettings.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring ChartNegativeValueSettings.
 Sets the color for bubbles representing negative values
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -24,17 +26,26 @@ Sets the color for bubbles representing negative values
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The bubble color (CSS format).
 
+
+
+#### Returns
+0
+
+
 ### Visible(System.Boolean)
 Sets the visibility for bubbles representing negative values
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -44,9 +55,19 @@ Sets the visibility for bubbles representing negative values
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### visible `System.Boolean`
 The visibility for bubbles representing negative values.
+
+
+
+#### Returns
+0
+
+
+

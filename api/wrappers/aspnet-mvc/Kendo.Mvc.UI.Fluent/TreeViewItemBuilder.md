@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewItemBuilder
-
 Defines the fluent interface for configuring child TreeView items.
+
+
 
 ## Methods
 
@@ -14,7 +15,8 @@ Defines the fluent interface for configuring child TreeView items.
 Configures the child items of a TreeViewItem.
 
 #### Example
-    <%= Html.Kendo().TreeView()
+
+    <%= Html.Telerik().TreeView()
         .Name("TreeView")
         .Items(items =>
         {
@@ -24,32 +26,50 @@ Configures the child items of a TreeViewItem.
         firstItemChildren.Add().Text("Child Item 2");
         });
         })
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### addAction System.Action\<[Kendo.Mvc.UI.Fluent.TreeViewItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TreeViewItemFactory)\>
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.TreeViewItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TreeViewItemFactory)>
 The add action.
+
+
+
+#### Returns
+0
+
 
 ### Id(System.String)
 Sets the id of the item.
 
 #### Example
-    <%= Html.Kendo().TreeView()
+
+    <%= Html.Telerik().TreeView()
         .Name("TreeView")
         .Items(items => items.Add().Id("42"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.String`
 The id.
 
+
+
+#### Returns
+0
+
+
 ### Expanded(System.Boolean)
 Define when the item will be expanded on intial render.
 
 #### Example
-    <%= Html.Kendo().TreeView()
+
+    <%= Html.Telerik().TreeView()
         .Name("TreeView")
         .Items(items =>
         {
@@ -60,18 +80,54 @@ Define when the item will be expanded on intial render.
         })
         .Expanded(true);
         })
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.Boolean`
 If true the item will be expanded.
 
+
+
+#### Returns
+0
+
+
+### Checked(System.Boolean)
+Specify whether the item should be initially checked.
+
+#### Example
+
+    <%= Html.Telerik().TreeView()
+        .Name("TreeView")
+        .Checkboxes(true)
+        .Items(items =>
+        {
+        items.Add().Text("Item").Checked(true);
+        })
+    %>
+        
+
+
+#### Parameters
+
+##### value `System.Boolean`
+If true, the item will be checked.
+
+
+
+#### Returns
+0
+
+
 ### HasChildren(System.Boolean)
 Sets the expand mode of the treeview item.
 
 #### Example
-    <%= Html.Kendo().TreeView()
+
+    <%= Html.Telerik().TreeView()
         .Name("TreeView")
         .Items(items =>
         {
@@ -82,9 +138,19 @@ Sets the expand mode of the treeview item.
         })
         .HasChildren(true);
         })
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.Boolean`
 If true then item will be loaded on demand from client side, if the treeview DataSource is properly configured.
+
+
+
+#### Returns
+0
+
+
+

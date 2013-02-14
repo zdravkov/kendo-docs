@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder
+Defines the fluent interface for configuring the GaugeRadialCapBuilder.
 
-Defines the fluent interface for configuring the GaugeRadialCap.
+
 
 ## Methods
 
@@ -14,50 +15,81 @@ Defines the fluent interface for configuring the GaugeRadialCap.
 Sets the cap color.
 
 #### Example
+
     <% Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Pointer(pointer => pointer
         .Cap(cap => cap.Color("red"))
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The cap color.
 
+
+
+#### Returns
+0
+
+
 ### Opacity(System.Double)
 Sets the cap opacity.
 
 #### Example
+
     <% Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Pointer(pointer => pointer
         .Cap(cap => cap.Opacity(0.5))
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### opacity `System.Double`
-The cap opacity in the range from 0 (transparent) to 1 (opaque).
+
+            The cap opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
+            
+
+
+
+#### Returns
+0
+
 
 ### Size(System.Double)
 Sets the cap size in percents.
 
 #### Example
+
     <% Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Pointer(pointer => pointer
         .Cap(cap => cap.Size(8))
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### size `System.Double`
 The cap size in percents.
+
+
+
+#### Returns
+0
+
+
+

@@ -5,79 +5,181 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.NumericTextBoxBuilder
-
 Defines the fluent interface for configuring the !:NumericTextBox{T} component.
+
+
 
 ## Methods
 
 ### Value(System.Nullable\<T\>)
 Sets the initial value of the NumericTextBox.
 
-### Step(\<T\>)
+
+
+#### Returns
+0
+
+
+### Step(T)
 Sets the step, used ti increment/decrement the value of the textbox.
+
+
+
+#### Returns
+0
+
 
 ### Min(System.Nullable\<T\>)
 Sets the minimal possible value allowed to the user.
 
+
+
+#### Returns
+0
+
+
 ### Max(System.Nullable\<T\>)
 Sets the maximal possible value allowed to the user.
+
+
+
+#### Returns
+0
+
 
 ### Placeholder(System.String)
 Sets the text which will be displayed if the textbox is empty.
 
+
+
+#### Returns
+0
+
+
 ### Spinners(System.Boolean)
 Enables or disables the spin buttons.
+
 
 #### Parameters
 
 ##### allowSpinner `System.Boolean`
+
+            
+
+
+
+#### Returns
+
+
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder\>)
 Configures the client-side events.
 
 #### Example
+
     <%= Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
         .Events(events =>
         events.OnLoad("onLoad").OnChange("onChange")
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### EventsAction System.Action\<[Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/NumericTextBoxEventBuilder)\>
+##### EventsAction System.Action<[Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/NumericTextBoxEventBuilder)>
 The client events action.
+
+
+
+#### Returns
+0
+
 
 ### Enable(System.Boolean)
 Enables or disables the textbox.
+
 
 #### Parameters
 
 ##### allowSpinner `System.Boolean`
 
+            
+
+
+
+#### Returns
+
+
+
 ### Format(System.String)
 Stes the format of the NumericTextBox.
 
 #### Example
+
     <%= Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
         .Format("c3")
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Culture(System.String)
 Specifies the culture info used by the NumericTextBox widget.
 
 #### Example
+
     <%= Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
         .Culture("de-DE")
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Decimals(System.Int32)
 Specifies the number precision. If not set precision defined by current culture is used.
 
 #### Example
+
     <%= Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
         .Decimals(3)
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
+
+### IncreaseButtonTitle(System.String)
+Sets the title of the NumericTextBox increase button.
+
+
+
+#### Returns
+0
+
+
+### DecreaseButtonTitle(System.String)
+Sets the title of the NumericTextBox decrease button.
+
+
+
+#### Returns
+0
+
+
+

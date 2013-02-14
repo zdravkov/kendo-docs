@@ -5,13 +5,14 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartDonutSeriesBuilder
-
 Defines the fluent interface for configuring donut series.
 
-## Properties
 
+## Properties
 ### Series
 Gets or sets the series.
+
+
 
 ## Methods
 
@@ -19,28 +20,54 @@ Gets or sets the series.
 Sets the margin of the donut series.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series.Donut(s => s.Sales, s => s.DateString).Margin(10))
         .Render();
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### HoleSize(System.Int32)
 Sets the the size of the donut hole.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series.Donut(s => s.Sales, s => s.DateString).HoleSize(40))
         .Render();
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Size(System.Int32)
 Sets the size of the donut series.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series.Donut(s => s.Sales, s => s.DateString).Size(20))
         .Render();
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
+
+

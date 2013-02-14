@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder
-
 Defines the fluent interface for configuring the radial gauge labels.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the radial gauge labels.
 Sets the labels position
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -21,9 +23,19 @@ Sets the labels position
         .Position(GaugeRadialScaleLabelsPosition.Inside)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### position [Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GaugeRadialScaleLabelsPosition)
 The labels position.
+
+
+
+#### Returns
+0
+
+
+

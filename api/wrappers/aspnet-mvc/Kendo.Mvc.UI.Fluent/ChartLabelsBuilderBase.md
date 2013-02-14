@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartLabelsBuilderBase
-
 Defines the fluent interface for configuring the chart labels.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the chart labels.
 Sets the labels font
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -24,17 +26,26 @@ Sets the labels font
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### font `System.String`
 The labels font (CSS format).
 
+
+
+#### Returns
+0
+
+
 ### Visible(System.Boolean)
 Sets the labels visibility
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -44,17 +55,26 @@ Sets the labels visibility
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### visible `System.Boolean`
 The labels visibility.
 
+
+
+#### Returns
+0
+
+
 ### Background(System.String)
 Sets the labels background color
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -65,17 +85,26 @@ Sets the labels background color
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### background `System.String`
 The labels background color.
 
+
+
+#### Returns
+0
+
+
 ### Color(System.String)
 Sets the labels text color
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -86,17 +115,26 @@ Sets the labels text color
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The labels text color.
 
+
+
+#### Returns
+0
+
+
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the labels margin
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -107,7 +145,9 @@ Sets the labels margin
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -123,10 +163,17 @@ The labels bottom margin.
 ##### left `System.Int32`
 The labels left margin.
 
+
+
+#### Returns
+0
+
+
 ### Margin(System.Int32)
 Sets the labels margin
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -137,17 +184,26 @@ Sets the labels margin
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### margin `System.Int32`
 The labels margin.
 
+
+
+#### Returns
+0
+
+
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the labels padding
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -158,7 +214,9 @@ Sets the labels padding
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -174,10 +232,17 @@ The labels bottom padding.
 ##### left `System.Int32`
 The labels left padding.
 
+
+
+#### Returns
+0
+
+
 ### Padding(System.Int32)
 Sets the labels padding
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -188,17 +253,26 @@ Sets the labels padding
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### padding `System.Int32`
 The labels padding.
 
+
+
+#### Returns
+0
+
+
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the labels border
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -209,7 +283,9 @@ Sets the labels border
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -222,10 +298,32 @@ The labels border color (CSS syntax).
 ##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The labels border dash type.
 
+
+
+#### Returns
+0
+
+
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+Configures the labels border
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+The border configuration action
+
+
+
+#### Returns
+0
+
+
 ### Format(System.String)
 Sets the labels format.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -236,17 +334,26 @@ Sets the labels format.
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### format `System.String`
 The labels format.
 
+
+
+#### Returns
+0
+
+
 ### Template(System.String)
 Sets the labels template.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -256,18 +363,27 @@ Sets the labels template.
         .Visible(true);
         );
         )
-    .Render();
-        %>
+        .Render();
+    %>
+        
+
 
 #### Parameters
 
 ##### template `System.String`
 The labels template.
 
+
+
+#### Returns
+0
+
+
 ### Opacity(System.Double)
 Sets the labels opacity.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -278,18 +394,29 @@ Sets the labels opacity.
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### opacity `System.Double`
-The series opacity in the range from 0 (transparent) to 1 (opaque).
+
+            The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
+            
+
+
+
+#### Returns
+0
+
 
 ### Rotation(System.Int32)
 Sets the labels text rotation
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -300,9 +427,19 @@ Sets the labels text rotation
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### rotation `System.Int32`
 The labels text rotation.
+
+
+
+#### Returns
+0
+
+
+

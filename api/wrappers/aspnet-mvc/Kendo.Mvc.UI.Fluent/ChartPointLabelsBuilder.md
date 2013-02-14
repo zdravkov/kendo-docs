@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder
-
 Defines the fluent interface for configuring the chart data labels.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the chart data labels.
 Sets the labels position
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -24,9 +26,19 @@ Sets the labels position
         );
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### position [Kendo.Mvc.UI.ChartPointLabelsPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPointLabelsPosition)
 The labels position.
+
+
+
+#### Returns
+0
+
+
+

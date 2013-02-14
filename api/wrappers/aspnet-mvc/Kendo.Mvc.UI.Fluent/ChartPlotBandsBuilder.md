@@ -5,15 +5,17 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPlotBandsBuilder
-
 Defines the fluent interface for configuring plot band.
+
+
 
 ## Methods
 
-### From(\<T\>)
+### From(T)
 Sets the plot band start position.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
@@ -22,17 +24,26 @@ Sets the plot band start position.
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### from `<T>`
+##### from `T`
 The plot band start position.
 
-### To(\<T\>)
+
+
+#### Returns
+0
+
+
+### To(T)
 Sets the plot band end position.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
@@ -41,17 +52,26 @@ Sets the plot band end position.
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### to `<T>`
+##### to `T`
 The plot band end position.
+
+
+
+#### Returns
+0
+
 
 ### Color(System.String)
 Sets the plot band background color
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
@@ -60,17 +80,26 @@ Sets the plot band background color
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### background `System.String`
+##### color `System.String`
 The plot band background color.
+
+
+
+#### Returns
+0
+
 
 ### Opacity(System.Double)
 Sets the plot band opacity
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
@@ -79,9 +108,19 @@ Sets the plot band opacity
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### opacity `System.Double`
 The plot band opacity.
+
+
+
+#### Returns
+0
+
+
+

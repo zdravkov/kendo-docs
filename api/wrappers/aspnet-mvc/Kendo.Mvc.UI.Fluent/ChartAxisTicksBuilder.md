@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder
-
 Defines the fluent interface for configuring ChartAxisTicks.
+
+
 
 ## Methods
 
@@ -14,28 +15,48 @@ Defines the fluent interface for configuring ChartAxisTicks.
 Sets the ticks size
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("chart")
         .ValueAxis(axis => axis.MajorTicks(ticks => ticks.Size(2)))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### size `System.Int32`
 The ticks size.
 
+
+
+#### Returns
+0
+
+
 ### Visible(System.Boolean)
 Sets the ticks visibility
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("chart")
         .ValueAxis(axis => axis.MajorTicks(ticks => ticks.Visible(false)))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### visible `System.Boolean`
 The ticks visibility.
+
+
+
+#### Returns
+0
+
+
+

@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLabelsBuilder
-
 Defines the fluent interface for configuring the gauge labels.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the gauge labels.
 Sets the labels font
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -21,17 +23,26 @@ Sets the labels font
         .Font("14px Arial,Helvetica,sans-serif")
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### font `System.String`
 The labels font (CSS format).
 
+
+
+#### Returns
+0
+
+
 ### Visible(System.Boolean)
 Sets the labels visibility
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -39,17 +50,26 @@ Sets the labels visibility
         .Visible(false)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### visible `System.Boolean`
 The labels visibility.
 
+
+
+#### Returns
+0
+
+
 ### Background(System.String)
 Sets the labels background color
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -57,17 +77,26 @@ Sets the labels background color
         .Background("Red")
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### background `System.String`
 The labels background color.
 
+
+
+#### Returns
+0
+
+
 ### Color(System.String)
 Sets the labels text color
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -75,17 +104,26 @@ Sets the labels text color
         .Color("Red")
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The labels text color.
 
+
+
+#### Returns
+0
+
+
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the labels margin
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -93,7 +131,9 @@ Sets the labels margin
         .Margin(0, 5, 5, 0)
         )
         )
-        %>els
+    %>els
+        
+
 
 #### Parameters
 
@@ -109,10 +149,17 @@ The labels bottom margin.
 ##### left `System.Int32`
 The labels left margin.
 
+
+
+#### Returns
+0
+
+
 ### Margin(System.Int32)
 Sets the labels margin
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -120,17 +167,26 @@ Sets the labels margin
         .Margin(20)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### margin `System.Int32`
 The labels margin.
 
+
+
+#### Returns
+0
+
+
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the labels padding
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -138,7 +194,9 @@ Sets the labels padding
         .Padding(0, 5, 5, 0)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -154,10 +212,17 @@ The labels bottom padding.
 ##### left `System.Int32`
 The labels left padding.
 
+
+
+#### Returns
+0
+
+
 ### Padding(System.Int32)
 Sets the labels padding
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -165,17 +230,26 @@ Sets the labels padding
         .Padding(20)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### padding `System.Int32`
 The labels padding.
 
+
+
+#### Returns
+0
+
+
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the labels border
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -183,7 +257,9 @@ Sets the labels border
         .Border(1, "Red", ChartDashType.Dot)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
@@ -196,10 +272,32 @@ The labels border color (CSS syntax).
 ##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The labels border dash type.
 
+
+
+#### Returns
+0
+
+
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+Configures the label border
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+The border configuration action
+
+
+
+#### Returns
+0
+
+
 ### Format(System.String)
 Sets the labels format.
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -207,17 +305,26 @@ Sets the labels format.
         .Format("{0:C}")
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### format `System.String`
 The labels format.
 
+
+
+#### Returns
+0
+
+
 ### Template(System.String)
 Sets the labels template.
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -225,17 +332,26 @@ Sets the labels template.
         .Template("#= value #")
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### template `System.String`
 The labels template.
 
+
+
+#### Returns
+0
+
+
 ### Opacity(System.Double)
 Sets the labels opacity.
 
 #### Example
+
     <%= Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -243,10 +359,22 @@ Sets the labels opacity.
         .Opacity(0.5)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### opacity `System.Double`
-The series opacity in the range from 0 (transparent) to 1 (opaque).
+
+            The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
+            
+
+
+
+#### Returns
+0
+
+
+

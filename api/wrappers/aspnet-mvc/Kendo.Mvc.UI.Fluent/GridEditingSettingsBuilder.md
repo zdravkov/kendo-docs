@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder
-
 Defines the fluent interface for configuring grid editing.
+
+
 
 ## Methods
 
@@ -14,47 +15,89 @@ Defines the fluent interface for configuring grid editing.
 Enables or disables grid editing.
 
 #### Example
+
     <%= Html.Kendo().Grid<Order>()
         .Name("Orders")
         .Editable(settings => settings.Enabled(true))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### TemplateName(System.String)
 Specify an editor template which to be used for InForm or PopUp modes
+
 
 #### Parameters
 
 ##### templateName `System.String`
 name of the editor template
 
+
+
+#### Returns
+0
+
+
 ### AdditionalViewData(System.Object)
 Provides additional view data in the editor template.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Editable(editing => editing.AdditionalViewData(new { customers = Model.Customers }))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### additionalViewData `System.Object`
 An anonymous object which contains the additional data
 
+
+
+#### Returns
+0
+
+
 ### DisplayDeleteConfirmation(System.Boolean)
 Enables or disables delete confirmation.
 
 #### Example
+
     <%= Html.Kendo().Grid<Order>()
         .Name("Orders")
         .Editable(settings => settings.DisplayDeleteConfirmation(true))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### CreateAt(Kendo.Mvc.UI.GridInsertRowPosition)
 Sets insert row position.
 
 #### Example
+
     <%= Html.Kendo().Grid<Order>()
         .Name("Orders")
         .Editable(settings => settings.CreateAt(GridInsertRowPosition.Bottom))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
+
+

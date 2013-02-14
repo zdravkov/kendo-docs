@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeScaleRangesBuilder
-
 Defines the fluent interface for configuring ranges.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring ranges.
 Sets the ranges start position.
 
 #### Example
+
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -22,17 +24,26 @@ Sets the ranges start position.
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### from `System.Double`
 The ranges start position.
 
+
+
+#### Returns
+0
+
+
 ### To(System.Double)
 Sets the ranges end position.
 
 #### Example
+
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -41,17 +52,26 @@ Sets the ranges end position.
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### to `System.Double`
 The ranges end position.
 
+
+
+#### Returns
+0
+
+
 ### Color(System.String)
 Sets the ranges color
 
 #### Example
+
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -60,17 +80,26 @@ Sets the ranges color
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The ranges color.
 
+
+
+#### Returns
+0
+
+
 ### Opacity(System.Double)
 Sets the ranges opacity
 
 #### Example
+
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
@@ -79,9 +108,19 @@ Sets the ranges opacity
         )
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### opacity `System.Double`
 The ranges opacity.
+
+
+
+#### Returns
+0
+
+
+

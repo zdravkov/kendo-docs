@@ -5,50 +5,17 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewEventBuilder
+Defines the fluent API for configuring the events of the Kendo TreeView for ASP.NET MVC
 
-Defines the fluent API for configuring the Kendo TreeView for ASP.NET MVC events
+
 
 ## Methods
 
-### Expand(System.Func\<System.Object,System.Object\>)
-Defines the inline handler of the Expand client-side event
-
-#### Example
-    <% Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Events(events => events.Expand(
-        @<text>
-        function(e) {
-        // event handling code
-        }
-        </text>
-        ))
-        .Render();
-        %>
-
-#### Parameters
-
-##### onExpandAction `System.Func<System.Object,System.Object>`
-The handler code wrapped in a text tag (Razor syntax).
-
-### Expand(System.String)
-Defines the name of the JavaScript function that will handle the the Expand client-side event.
-
-#### Example
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Events(events => events.Expand("onExpand"))
-        %>
-
-#### Parameters
-
-##### onExpandHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
 ### Collapse(System.Func\<System.Object,System.Object\>)
-Defines the inline handler of the Collapse client-side event
+Defines the inline handler of the collapse client-side event
 
 #### Example
+
     <% Html.Kendo().TreeView()
         .Name("TreeView")
         .Events(events => events.Collapse(
@@ -59,34 +26,52 @@ Defines the inline handler of the Collapse client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onCollapseAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Collapse(System.String)
-Defines the name of the JavaScript function that will handle the the Collapse client-side event.
+Defines the name of the JavaScript function that will handle the the collapse client-side event.
 
 #### Example
+
     <%= Html.Kendo().TreeView()
         .Name("TreeView")
-        .Events(events => events.Collapse("onCollapse"))
-        %>
+        .Events(events => events.Collapse("onExpand"))
+    %>
+        
+
 
 #### Parameters
 
 ##### onCollapseHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### Select(System.Func\<System.Object,System.Object\>)
-Defines the inline handler of the Select client-side event
+
+
+#### Returns
+0
+
+
+### DataBound(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the dataBound client-side event
 
 #### Example
+
     <% Html.Kendo().TreeView()
         .Name("TreeView")
-        .Events(events => events.Select(
+        .Events(events => events.DataBound(
         @<text>
         function(e) {
         // event handling code
@@ -94,115 +79,49 @@ Defines the inline handler of the Select client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### onSelectAction `System.Func<System.Object,System.Object>`
+##### onDataBoundAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
-### Select(System.String)
-Defines the name of the JavaScript function that will handle the the Select client-side event.
+
+
+#### Returns
+0
+
+
+### DataBound(System.String)
+Defines the name of the JavaScript function that will handle the the dataBound client-side event.
 
 #### Example
+
     <%= Html.Kendo().TreeView()
         .Name("TreeView")
-        .Events(events => events.Select("onSelect"))
-        %>
+        .Events(events => events.DataBound("onExpand"))
+    %>
+        
+
 
 #### Parameters
 
-##### onSelectHandlerName `System.String`
+##### onDataBoundHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
-### DragStart(System.Func\<System.Object,System.Object\>)
-Defines the inline handler of the DragStart client-side event
 
-#### Example
-    <% Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Events(events => events.DragStart(
-        @<text>
-        function(e) {
-        // event handling code
-        }
-        </text>
-        ))
-        .Render();
-        %>
 
-#### Parameters
+#### Returns
+0
 
-##### onNodeDragAction `System.Func<System.Object,System.Object>`
-The handler code wrapped in a text tag (Razor syntax).
-
-### DragStart(System.String)
-Defines the name of the JavaScript function that will handle the the DragStart client-side event.
-
-#### Example
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Events(events => events.DragStart("onNodeDragStrat"))
-        %>
-
-#### Parameters
-
-##### onNodeDragHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-### Drop(System.String)
-Defines the name of the JavaScript function that will handle the the Drop client-side event.
-
-#### Example
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Events(events => events.Drop("Drop"))
-        %>
-
-#### Parameters
-
-##### DropHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-### DragEnd(System.Func\<System.Object,System.Object\>)
-Defines the inline handler of the DragEnd client-side event
-
-#### Example
-    <% Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Events(events => events.DragEnd(
-        @<text>
-        function(e) {
-        // event handling code
-        }
-        </text>
-        ))
-        .Render();
-        %>
-
-#### Parameters
-
-##### DragEndAction `System.Func<System.Object,System.Object>`
-The handler code wrapped in a text tag (Razor syntax).
-
-### DragEnd(System.String)
-Defines the name of the JavaScript function that will handle the the DragEnd client-side event.
-
-#### Example
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Events(events => events.DragEnd("DragEnd"))
-        %>
-
-#### Parameters
-
-##### DragEndHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
 
 ### Drag(System.Func\<System.Object,System.Object\>)
-Defines the inline handler of the Drag client-side event
+Defines the inline handler of the drag client-side event
 
 #### Example
+
     <% Html.Kendo().TreeView()
         .Name("TreeView")
         .Events(events => events.Drag(
@@ -213,23 +132,307 @@ Defines the inline handler of the Drag client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### onNodeDragging `System.Func<System.Object,System.Object>`
+##### onDragAction `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Drag(System.String)
-Defines the name of the JavaScript function that will handle the the Drag client-side event.
+Defines the name of the JavaScript function that will handle the the drag client-side event.
 
 #### Example
+
     <%= Html.Kendo().TreeView()
         .Name("TreeView")
-        .Events(events => events.Drag("Drag"))
-        %>
+        .Events(events => events.Drag("onExpand"))
+    %>
+        
+
 
 #### Parameters
 
-##### onNodeDragging `System.String`
+##### onDragHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### DragEnd(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the dragend client-side event
+
+#### Example
+
+    <% Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.DragEnd(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onDragEndAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### DragEnd(System.String)
+Defines the name of the JavaScript function that will handle the the dragend client-side event.
+
+#### Example
+
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.DragEnd("onExpand"))
+    %>
+        
+
+
+#### Parameters
+
+##### onDragEndHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### DragStart(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the dragstart client-side event
+
+#### Example
+
+    <% Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.DragStart(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onDragStartAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### DragStart(System.String)
+Defines the name of the JavaScript function that will handle the the dragstart client-side event.
+
+#### Example
+
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.DragStart("onExpand"))
+    %>
+        
+
+
+#### Parameters
+
+##### onDragStartHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### Drop(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the drop client-side event
+
+#### Example
+
+    <% Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Drop(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onDropAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### Drop(System.String)
+Defines the name of the JavaScript function that will handle the the drop client-side event.
+
+#### Example
+
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Drop("onExpand"))
+    %>
+        
+
+
+#### Parameters
+
+##### onDropHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### Expand(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the expand client-side event
+
+#### Example
+
+    <% Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Expand(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onExpandAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### Expand(System.String)
+Defines the name of the JavaScript function that will handle the the expand client-side event.
+
+#### Example
+
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Expand("onExpand"))
+    %>
+        
+
+
+#### Parameters
+
+##### onExpandHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+### Select(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the select client-side event
+
+#### Example
+
+    <% Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Select(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onSelectAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+#### Returns
+0
+
+
+### Select(System.String)
+Defines the name of the JavaScript function that will handle the the select client-side event.
+
+#### Example
+
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Select("onExpand"))
+    %>
+        
+
+
+#### Parameters
+
+##### onSelectHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+

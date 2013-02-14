@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder
-
 Defines the fluent interface for configuring ChartLine.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring ChartLine.
 Sets the line color
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -21,17 +23,26 @@ Sets the line color
         .Line(line => line.Color("#f00"))
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### color `System.String`
 The line color (CSS format).
 
+
+
+#### Returns
+0
+
+
 ### Width(System.Int32)
 Sets the line width
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -39,17 +50,26 @@ Sets the line width
         .Line(line => line.Width(6))
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### width `System.Int32`
 The line width.
 
+
+
+#### Returns
+0
+
+
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the line dashType.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -57,17 +77,26 @@ Sets the line dashType.
         .Line(line => line.DashType(ChartDashType.Dot))
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The line dashType.
 
+
+
+#### Returns
+0
+
+
 ### Opacity(System.Double)
 Sets the line opacity.
 
 #### Example
+
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
@@ -75,9 +104,19 @@ Sets the line opacity.
         .Line(line => line.Opacity(0.2))
         )
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### opacity `System.Double`
 The line opacity.
+
+
+
+#### Returns
+0
+
+
+

@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder
-
 Defines the fluent interface for configuring Scrollable
+
+
 
 ## Methods
 
@@ -14,35 +15,63 @@ Defines the fluent interface for configuring Scrollable
 Enables or disables scrolling.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Scrolling(scrolling => scrolling.Enabled((bool)ViewData["enableScrolling"]))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### Height(System.Int32)
 Sets the height of the scrollable area in pixels.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Scrolling(scrolling => scrolling.Height(400))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### pixelHeight `System.Int32`
 The height in pixels.
 
+
+
+#### Returns
+0
+
+
 ### Height(System.String)
 Sets the height of the scrollable.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Scrolling(scrolling => scrolling.Height("20em"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.String`
 The height in pixels.
+
+
+
+#### Returns
+0
+
+
+

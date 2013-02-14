@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.UploadEventBuilder
-
 Defines the fluent interface for configuring the Upload events.
+
+
 
 ## Methods
 
@@ -14,6 +15,7 @@ Defines the fluent interface for configuring the Upload events.
 Defines the inline handler of the Select client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Select(
@@ -24,31 +26,49 @@ Defines the inline handler of the Select client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Select("onSelect"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSelectHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Upload(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Upload client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Upload(
@@ -59,31 +79,49 @@ Defines the inline handler of the Upload client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Upload(System.String)
 Defines the name of the JavaScript function that will handle the the Upload client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Upload("onUpload"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onUploadHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Success(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Success client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Success(
@@ -94,31 +132,49 @@ Defines the inline handler of the Success client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Success(System.String)
 Defines the name of the JavaScript function that will handle the the Success client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Success("onSuccess"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onSuccessHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Error(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Error client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Error(
@@ -129,31 +185,49 @@ Defines the inline handler of the Error client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Error(System.String)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Error("onError"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onErrorHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Complete(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Complete client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Complete(
@@ -165,30 +239,48 @@ Defines the inline handler of the Complete client-side event
         ))
         .Render();
     %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Complete(System.String)
 Defines the name of the JavaScript function that will handle the the Complete client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Complete("onComplete"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onCompleteHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Cancel(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Cancel client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Cancel(
@@ -199,31 +291,49 @@ Defines the inline handler of the Cancel client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Cancel(System.String)
 Defines the name of the JavaScript function that will handle the the Cancel client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Cancel("onCancel"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onCancelHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Remove(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Remove client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Remove(
@@ -234,31 +344,49 @@ Defines the inline handler of the Remove client-side event
         </text>
         ))
         .Render();
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Remove(System.String)
 Defines the name of the JavaScript function that will handle the the Remove client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Remove("onRemove"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onRemoveHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
 
+
+
+#### Returns
+0
+
+
 ### Progress(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Progress client-side event
 
 #### Example
+
     <% Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Progress(
@@ -270,22 +398,41 @@ Defines the inline handler of the Progress client-side event
         ))
         .Render();
     %>
+        
+
 
 #### Parameters
 
 ##### inlineCodeBlock `System.Func<System.Object,System.Object>`
 The handler code wrapped in a text tag (Razor syntax).
 
+
+
+#### Returns
+0
+
+
 ### Progress(System.String)
 Defines the name of the JavaScript function that will handle the the Progress client-side event.
 
 #### Example
+
     <%= Html.Kendo().Upload()
         .Name("Upload")
         .Events(events => events.Progress("onProgress"))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### onProgressHandlerName `System.String`
 The name of the JavaScript function that will handle the event.
+
+
+
+#### Returns
+0
+
+
+

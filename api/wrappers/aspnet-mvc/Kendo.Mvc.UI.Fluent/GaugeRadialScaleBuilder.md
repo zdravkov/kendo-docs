@@ -5,13 +5,14 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder
-
 Defines the fluent interface for configuring the gauge scale.
 
-## Properties
 
+## Properties
 ### radialGauge
 The parent Guage
+
+
 
 ## Methods
 
@@ -19,38 +20,57 @@ The parent Guage
 Sets the end angle of the gauge
 
 #### Example
+
     <%= Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Scale(scale => scale
         .EndAngle(10)
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### endAngle `System.Double`
 The end angle.
 
+
+
+#### Returns
+0
+
+
 ### StartAngle(System.Double)
 Sets the start angle of the gauge
 
 #### Example
+
     <%= Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Scale(scale => scale
         .StartAngle(220)
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### startAngle `System.Double`
 The start Angle.
 
+
+
+#### Returns
+0
+
+
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder\>)
 Configures the labels.
 
 #### Example
+
     <%= Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Scale(scale => scale
@@ -58,9 +78,19 @@ Configures the labels.
         .Visible(false)
         )
         )
-        %>
+    %>
+        
+
 
 #### Parameters
 
-##### configurator System.Action\<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleLabelsBuilder)\>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleLabelsBuilder)>
 The configuration action.
+
+
+
+#### Returns
+0
+
+
+

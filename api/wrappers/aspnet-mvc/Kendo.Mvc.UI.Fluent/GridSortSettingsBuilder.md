@@ -5,8 +5,9 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder
-
 Defines the fluent interface for configuring the Sortable.
+
+
 
 ## Methods
 
@@ -14,35 +15,63 @@ Defines the fluent interface for configuring the Sortable.
 Enables or disables sorting.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Sorting(sorting => sorting.Enabled((bool)ViewData["enableSorting"]))
-        %>
+    %>
+        
+
+
+
+#### Returns
+0
+
 
 ### SortMode(Kendo.Mvc.UI.GridSortMode)
 Sets the sort mode of the grid.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Sorting(sorting => sorting.SortMode(GridSortMode.MultipleColumns))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value [Kendo.Mvc.UI.GridSortMode](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridSortMode)
 The value.
 
+
+
+#### Returns
+0
+
+
 ### AllowUnsort(System.Boolean)
 Enables or disables unsorted mode.
 
 #### Example
+
     <%= Html.Kendo().Grid(Model)
         .Name("Grid")
         .Sorting(sorting => sorting.AllowUnsort(true))
-        %>
+    %>
+        
+
 
 #### Parameters
 
 ##### value `System.Boolean`
 The value.
+
+
+
+#### Returns
+0
+
+
+
