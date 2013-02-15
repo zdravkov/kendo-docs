@@ -152,9 +152,9 @@ Triggered before an AJAX request started.
 
 The target element, for which the tooltip is shown.
 
-##### e.data `Object`
+##### e.options `Object`
 
-The data which will be send via [jQuery.ajax](http://api.jquery.com/jQuery.ajax/)
+The request options which will be set to [jQuery.ajax](http://api.jquery.com/jQuery.ajax/) or to the iframe
 
 ### error
 
