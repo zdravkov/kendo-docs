@@ -592,6 +592,24 @@ The series name visible in the legend.
     $seriesItem->name('value');
     ?>
 
+### negativeColor
+Color to use for bars with negative values.** Applicable only to bar and column series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->negativeColor('value');
+    ?>
+
 ### negativeValues
 
 The settings for negative values.** Applicable only to bubble series. **

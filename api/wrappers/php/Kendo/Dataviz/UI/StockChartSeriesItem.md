@@ -455,6 +455,24 @@ The series name visible in the legend.
     $seriesItem->name('value');
     ?>
 
+### negativeColor
+Color to use for bars with negative values.** Applicable only to column series. **The plot stops before the missing point and continues after it.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $seriesItem->negativeColor('value');
+    ?>
+
 ### opacity
 The series opacity.
 
