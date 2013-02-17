@@ -2067,6 +2067,12 @@ The value is assumed to be zero.
 
 The plot stops before the missing point and continues after it.
 
+### series.negativeColor `String`
+
+Color to use for bars with negative values.
+
+** Applicable only to bar and column series. **
+
 ### series.negativeValues `Object`
 
 The settings for negative values.

@@ -2821,6 +2821,12 @@ The value is assumed to be zero.
 
 #### *"gap"*
 
+### series.negativeColor `String`
+
+Color to use for bars with negative values.
+
+** Applicable only to column series. **
+
 The plot stops before the missing point and continues after it.
 
 ### series.opacity `Number`
