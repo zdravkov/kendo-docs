@@ -128,6 +128,35 @@ Individual color settings for line and labels take priority.
     $categoryAxisItem->color('value');
     ?>
 
+### crosshair
+
+The crosshair configuration options.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemCrosshair|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemCrosshair](/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemCrosshair)
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
+    $crosshair = new \Kendo\Dataviz\UI\ChartCategoryAxisItemCrosshair();
+    $color = 'value';
+    $crosshair->color($color);
+    $categoryAxisItem->crosshair($crosshair);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
+    $color = 'value';
+    $categoryAxisItem->crosshair(array('color' => $color));
+    ?>
+
 ### field
 The data field containing the category name.
 

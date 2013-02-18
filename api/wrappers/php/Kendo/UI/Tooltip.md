@@ -321,6 +321,41 @@ The position relative to the target element, at which the tooltip will be shown.
     $tooltip->position('value');
     ?>
 
+### requestStart
+Triggered before an AJAX request started.
+
+#### Returns
+`\Kendo\UI\Tooltip`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
+    $tooltip->requestStart('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onRequestStart(e) {
+            // handle the requestStart event.
+        }
+    </script>
+    <?php
+    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
+    $tooltip->requestStart('onRequestStart');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
+    $tooltip->requestStart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### show
 Triggered when a Tooltip is shown.
 

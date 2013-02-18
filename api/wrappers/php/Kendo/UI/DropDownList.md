@@ -428,6 +428,7 @@ Fires when the drop-down list is opened
 
 ### optionLabel
 Define the text of the default empty item. If the value is an object, then the widget will use it directly.
+ Note that object should have atleast the dataValueField and dataTextField properties. Otherwise, widget will show undefined.
 
 #### Returns
 `\Kendo\UI\DropDownList`

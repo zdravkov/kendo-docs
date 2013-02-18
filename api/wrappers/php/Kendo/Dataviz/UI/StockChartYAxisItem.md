@@ -81,6 +81,35 @@ Individual color settings for line and labels take priority. Any valid CSS color
     $yAxisItem->color('value');
     ?>
 
+### crosshair
+
+The crosshair configuration options.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartYAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartYAxisItemCrosshair|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartYAxisItemCrosshair](/api/wrappers/php/Kendo/Dataviz/UI/StockChartYAxisItemCrosshair)
+    <?php
+    $yAxisItem = new \Kendo\Dataviz\UI\StockChartYAxisItem();
+    $crosshair = new \Kendo\Dataviz\UI\StockChartYAxisItemCrosshair();
+    $color = 'value';
+    $crosshair->color($color);
+    $yAxisItem->crosshair($crosshair);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $yAxisItem = new \Kendo\Dataviz\UI\StockChartYAxisItem();
+    $color = 'value';
+    $yAxisItem->crosshair(array('color' => $color));
+    ?>
+
 ### labels
 
 Configures the axis labels.
