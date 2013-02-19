@@ -8,6 +8,14 @@ publish: true
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## KendoUI 2013 Q1
+
+### Changes from 2012 Q3 SP1 (2011.3.1315)
+
+#### Breaking changes
+
+* **Mobile:** Rename scrollTreshold option of the ListView to **scrollThreshold**.
+
 ## KendoUI 2012 Q3 SP1
 
 ### Changes from 2012 Q3 (2011.3.1114)
