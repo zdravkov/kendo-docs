@@ -45,7 +45,7 @@ and check the [JavaScript Dependencies](http://docs.kendoui.com/getting-started/
         <script src="js/jquery.min.js"></script>
         <script src="js/kendo.web.min.js"></script>
 
-> If you want to use Kendo UI Web and DataViz at the same time you should include **kendo.all.min.js** instead of **kendo.web.min.js** and
+    > If you want to use Kendo UI Web and DataViz at the same time you should include **kendo.all.min.js** instead of **kendo.web.min.js** and
 **kendo.dataviz.min.js**. You can also create a custom JavaScript file using the
 [Custom Download Builder](http://www.kendoui.com/custom-download).
 
