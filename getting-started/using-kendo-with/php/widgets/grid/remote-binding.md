@@ -27,58 +27,57 @@ First we will configure a Kendo Grid for PHP binding and then we will implement 
 1. Create a data source and configure it:
 
         <?php
-            $transport = new \Kendo\Data\DataSourceTransport();
+        $transport = new \Kendo\Data\DataSourceTransport();
 
-            $read = new \Kendo\Data\DataSourceTransportRead();
+        $read = new \Kendo\Data\DataSourceTransportRead();
 
-            // Specify the url of the PHP page which will act as the remote service
-            $read->url('products.php')
-                 ->contentType('application/json')
-                 ->type('POST');
+        // Specify the url of the PHP page which will act as the remote service
+        $read->url('products.php')
+             ->contentType('application/json')
+             ->type('POST');
 
-            // Configure the transport to send the data source parameters as JSON.
-            // This is required by the DataSourceResult helper.
-            $transport->read($read)
-                      ->parameterMap('function(data) {
-                          return kendo.stringify(data);
-                      }');
+        // Configure the transport to send the data source parameters as JSON.
+        // This is required by the DataSourceResult helper.
+        $transport->read($read)
+                  ->parameterMap('function(data) {
+                      return kendo.stringify(data);
+                  }');
 
-            // Configure the model
-            $model = new \Kendo\Data\DataSourceSchemaModel();
+        // Configure the model
+        $model = new \Kendo\Data\DataSourceSchemaModel();
 
-            $productNameField = new \Kendo\Data\DataSourceSchemaModelField('ProductName');
-            $productNameField->type('string');
+        $productNameField = new \Kendo\Data\DataSourceSchemaModelField('ProductName');
+        $productNameField->type('string');
 
-            $unitPriceField = new \Kendo\Data\DataSourceSchemaModelField('UnitPrice');
-            $unitPriceField->type('number');
+        $unitPriceField = new \Kendo\Data\DataSourceSchemaModelField('UnitPrice');
+        $unitPriceField->type('number');
 
-            $unitsInStockField = new \Kendo\Data\DataSourceSchemaModelField('UnitsInStock');
-            $unitsInStockField->type('number');
+        $unitsInStockField = new \Kendo\Data\DataSourceSchemaModelField('UnitsInStock');
+        $unitsInStockField->type('number');
 
-            $model->addField($productNameField)
-                  ->addField($unitPriceField)
-                  ->addField($unitsInStockField);
+        $model->addField($productNameField)
+              ->addField($unitPriceField)
+              ->addField($unitsInStockField);
 
-            $schema = new \Kendo\Data\DataSourceSchema();
-            // Configure the schema to accept the format returned by DataSourceResult
-            $schema->model($model)
-                   ->data('data')
-                   ->errors('errors')
-                   ->groups('groups')
-                   ->aggregates('aggregates')
-                   ->total('total');
+        $schema = new \Kendo\Data\DataSourceSchema();
+        // Configure the schema to accept the format returned by DataSourceResult
+        $schema->model($model)
+               ->data('data')
+               ->errors('errors')
+               ->groups('groups')
+               ->aggregates('aggregates')
+               ->total('total');
 
-            $dataSource = new \Kendo\Data\DataSource();
+        $dataSource = new \Kendo\Data\DataSource();
 
-            // Configure data source and enable server operations - paging, sorting etc.
-            $dataSource->transport($transport)
-                       ->pageSize(10)
-                       ->schema($schema)
-                       ->serverFiltering(true)
-                       ->serverSorting(true)
-                       ->serverGrouping(true)
-                       ->serverPaging(true);
-
+        // Configure data source and enable server operations - paging, sorting etc.
+        $dataSource->transport($transport)
+                   ->pageSize(10)
+                   ->schema($schema)
+                   ->serverFiltering(true)
+                   ->serverSorting(true)
+                   ->serverGrouping(true)
+                   ->serverPaging(true);
         ?>
 1. Create a grid, configure its columns and set its data source.
 
