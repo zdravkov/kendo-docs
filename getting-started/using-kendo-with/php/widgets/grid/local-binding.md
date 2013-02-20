@@ -15,7 +15,7 @@ will happen on the client-side.
 
 ## Binding to array returned by PDO
 
-PHP Data Objects (PDO) is an interface for accessing various databases in PHP. Here is how to bind Kendo Grid to array
+PHP Data Objects ([PDO](http://www.php.net/manual/en/intro.pdo.php)) is an interface for accessing various databases in PHP. Here is how to bind Kendo Grid to array
 returned by PDO.
 
 > The following demo is using the sample SQLite database shipped with the Kendo UI for PHP demos (**/wrappers/php/sample.db**).
