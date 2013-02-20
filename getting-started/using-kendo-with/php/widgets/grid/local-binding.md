@@ -36,35 +36,35 @@ returned by PDO.
 to specify the model fields. Those fields are required for filtering and editing.
 
         <?php
-            // Create the schema model
-            $model = new \Kendo\Data\DataSourceSchemaModel();
+        // Create the schema model
+        $model = new \Kendo\Data\DataSourceSchemaModel();
 
-            // Create a field for the 'ProductName' column of the 'Products' table
-            $productNameField = new \Kendo\Data\DataSourceSchemaModelField('ProductName');
-            $productNameField->type('string');
+        // Create a field for the 'ProductName' column of the 'Products' table
+        $productNameField = new \Kendo\Data\DataSourceSchemaModelField('ProductName');
+        $productNameField->type('string');
 
-            // Create a field for the 'UnitPrice' column of the 'Products' table
-            $unitPriceField = new \Kendo\Data\DataSourceSchemaModelField('UnitPrice');
-            $unitPriceField->type('number');
+        // Create a field for the 'UnitPrice' column of the 'Products' table
+        $unitPriceField = new \Kendo\Data\DataSourceSchemaModelField('UnitPrice');
+        $unitPriceField->type('number');
 
-            // Create a field for the 'Discontinued' column of the 'Products' table
-            $discontinuedField = new \Kendo\Data\DataSourceSchemaModelField('Discontinued');
-            $discontinuedField->type('boolean');
+        // Create a field for the 'Discontinued' column of the 'Products' table
+        $discontinuedField = new \Kendo\Data\DataSourceSchemaModelField('Discontinued');
+        $discontinuedField->type('boolean');
 
-            $model->addField($productNameField, $unitPriceField, $discontinuedField);
+        $model->addField($productNameField, $unitPriceField, $discontinuedField);
 
-            // Create the schema
-            $schema = new \Kendo\Data\DataSourceSchema();
+        // Create the schema
+        $schema = new \Kendo\Data\DataSourceSchema();
 
-            // Set its model
-            $schema->model($model)
+        // Set its model
+        $schema->model($model)
 
-            // Create the data source
-            $dataSource = new \Kendo\Data\DataSource();
+        // Create the data source
+        $dataSource = new \Kendo\Data\DataSource();
 
-            // Specify the schema and data
-            $dataSource->data($products)
-                       ->schema($schema);
+        // Specify the schema and data
+        $dataSource->data($products)
+                   ->schema($schema);
         ?>
 1. Create a [grid](/api/wrappers/php/Kendo/UI/Grid), configure its [columns](/api/wrappers/php/Kendo/UI/Grid#addcolumn) and set its [data source](/api/wrappers/php/Kendo/UI/Grid#datasource).
 
@@ -114,37 +114,39 @@ It is distributed with the Kendo UI for PHP demos and can be found in the **/wra
         ?>
 1. Configure a data source and schema.
 
-            // Create the schema model
-            $model = new \Kendo\Data\DataSourceSchemaModel();
+        <?php
+        // Create the schema model
+        $model = new \Kendo\Data\DataSourceSchemaModel();
 
-            // Create a field for the 'ProductName' column of the 'Products' table
-            $productNameField = new \Kendo\Data\DataSourceSchemaModelField('ProductName');
-            $productNameField->type('string');
+        // Create a field for the 'ProductName' column of the 'Products' table
+        $productNameField = new \Kendo\Data\DataSourceSchemaModelField('ProductName');
+        $productNameField->type('string');
 
-            // Create a field for the 'UnitPrice' column of the 'Products' table
-            $unitPriceField = new \Kendo\Data\DataSourceSchemaModelField('UnitPrice');
-            $unitPriceField->type('number');
+        // Create a field for the 'UnitPrice' column of the 'Products' table
+        $unitPriceField = new \Kendo\Data\DataSourceSchemaModelField('UnitPrice');
+        $unitPriceField->type('number');
 
-            // Create a field for the 'Discontinued' column of the 'Products' table
-            $discontinuedField = new \Kendo\Data\DataSourceSchemaModelField('Discontinued');
-            $discontinuedField->type('boolean');
+        // Create a field for the 'Discontinued' column of the 'Products' table
+        $discontinuedField = new \Kendo\Data\DataSourceSchemaModelField('Discontinued');
+        $discontinuedField->type('boolean');
 
-            $model->addField($productNameField, $unitPriceField, $discontinuedField);
+        $model->addField($productNameField, $unitPriceField, $discontinuedField);
 
-            // Create the schema
-            $schema = new \Kendo\Data\DataSourceSchema();
+        // Create the schema
+        $schema = new \Kendo\Data\DataSourceSchema();
 
-            // Set its model and describe the data format.
-            $schema->model($model)
-                   ->data('data')
-                   ->total('total');
+        // Set its model and describe the data format.
+        $schema->model($model)
+               ->data('data')
+               ->total('total');
 
-            // Create the data source
-            $dataSource = new \Kendo\Data\DataSource();
+        // Create the data source
+        $dataSource = new \Kendo\Data\DataSource();
 
-            // Specify the schema and data
-            $dataSource->data($data)
-                       ->schema($schema);
+        // Specify the schema and data
+        $dataSource->data($data)
+                   ->schema($schema);
+        ?>
 1. Create a grid, configure its columns and set its data source.
 
         <?php
