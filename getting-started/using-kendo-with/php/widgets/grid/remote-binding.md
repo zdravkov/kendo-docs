@@ -109,7 +109,7 @@ First we will configure a Kendo Grid for PHP binding and then we will implement 
 
 ## Create PHP file which returns JSON
 
-1. Create a new php file called **products.php**. This file will return data in JSON format.
+1. Create a new php file called **products.php**. This file will return data in JSON format. The data source is configured to request it via the [url](/api/wrappers/php/Kendo/Data/DataSourceTransportRead#url) setting.
 1. Copy **/wrappers/php/lib/DataSourceResult.php** to your web site root and include it.
 
         <?php require_once 'lib/DataSourceResult.php'; ?>
