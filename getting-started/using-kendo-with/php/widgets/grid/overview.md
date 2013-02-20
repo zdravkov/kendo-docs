@@ -20,7 +20,7 @@ There are two ways to bind Kendo Grid for PHP:
 
 Here is how to configure the grid for local binding:
 
-1. Make sure you have followed all the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) help topic.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 2. Create an array which to which the grid will be bound to
 
         <?php
