@@ -111,19 +111,20 @@ There are several ways to define items of the Kendo TabStrip for ASP.NET MVC
     - WebForms
 
             <%: Html.Kendo().TabStrip()
-                    .Name("tabstrip") //The name of the tabstrip is mandatory. It specifies the "id" attribute of the widget.
-                    .BindTo(item, Model =>
-                    {
-                        item.Text = category.CategoryName;
-                    })
+                .Name("tabstrip") //The name of the tabstrip is mandatory. It specifies the "id" attribute of the widget.
+                .BindTo(Model,(item,category)  =>
+                {
+                    item.Text = category.CategoryName;
+                })
             %>
     - Razor
 
             @(Html.Kendo().TabStrip()
-                  .BindTo(item, Model =>
-                  {
-                     item.Text = category.CategoryName;
-                  })
+                .Name("tabstrip") //The name of the tabstrip is mandatory. It specifies the "id" attribute of the widget.
+                .BindTo(Model,(item,category)  =>
+                {
+                    item.Text = category.CategoryName;
+                })
             )
 
 ## Accessing an Existing TabStrip
