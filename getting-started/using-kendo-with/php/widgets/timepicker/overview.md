@@ -27,7 +27,7 @@ Here is how to configure a simple Kendo Timepicker:
 1. Output the timepicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
-        echo $timepicker->render();
+        echo $timePicker->render();
         ?>
 
 ## Getting Client-side Reference

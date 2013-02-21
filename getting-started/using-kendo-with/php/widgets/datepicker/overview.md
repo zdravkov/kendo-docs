@@ -16,9 +16,7 @@ The Kendo DatePicker for PHP is a server-side wrapper for the [Kendo UI DatePick
 Here is how to configure a simple Kendo DatePicker:
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
-
-2. Create a [datepicker](/api/wrappers/php/Kendo/UI/DatePicker), configure its [min](/api/wrappers/php/Kendo/UI/DatePicker#min),
-[max](/api/wrappers/php/Kendo/UI/DatePicker#max) and [value](/api/wrappers/php/Kendo/UI/DatePicker#value) options.
+2. Create a [datepicker](/api/wrappers/php/Kendo/UI/DatePicker).
 
         <?php
         $datepicker = new \Kendo\UI\DatePicker('datepicker');
