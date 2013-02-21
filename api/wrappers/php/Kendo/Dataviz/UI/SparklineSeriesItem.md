@@ -593,6 +593,35 @@ The start angle of the first segment.Available for pie series.
     $seriesItem->startAngle(1);
     ?>
 
+### target
+
+The target of the bullet chart.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\SparklineSeriesItemTarget|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemTarget](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemTarget)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $target = new \Kendo\Dataviz\UI\SparklineSeriesItemTarget();
+    $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();
+    $target->line($line);
+    $seriesItem->target($target);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();
+    $seriesItem->target(array('line' => $line));
+    ?>
+
 ### tooltip
 
 The data point tooltip configuration options.

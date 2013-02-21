@@ -581,6 +581,35 @@ Available for column series.
     $seriesItem->stack('value');
     ?>
 
+### target
+
+The target of the bullet chart.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemTarget|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemTarget](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemTarget)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $target = new \Kendo\Dataviz\UI\StockChartSeriesItemTarget();
+    $line = new \Kendo\Dataviz\UI\StockChartSeriesItemTargetLine();
+    $target->line($line);
+    $seriesItem->target($target);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $line = new \Kendo\Dataviz\UI\StockChartSeriesItemTargetLine();
+    $seriesItem->target(array('line' => $line));
+    ?>
+
 ### tooltip
 
 The data point tooltip configuration options.

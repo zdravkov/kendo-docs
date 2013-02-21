@@ -131,6 +131,25 @@ The padding of the tooltip.
     $tooltip->padding(1);
     ?>
 
+### sharedTemplate
+The shared tooltip template.
+Template variables:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartTooltip`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $tooltip = new \Kendo\Dataviz\UI\ChartTooltip();
+    $tooltip->sharedTemplate('value');
+    ?>
+
 ### template
 The tooltip template.
 Template variables:

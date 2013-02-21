@@ -820,6 +820,35 @@ The start angle of the first segment.Available for donut and pie series.
     $seriesItem->startAngle(1);
     ?>
 
+### target
+
+The target of the bullet chart.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesItemTarget|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemTarget](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemTarget)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $target = new \Kendo\Dataviz\UI\ChartSeriesItemTarget();
+    $line = new \Kendo\Dataviz\UI\ChartSeriesItemTargetLine();
+    $target->line($line);
+    $seriesItem->target($target);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $line = new \Kendo\Dataviz\UI\ChartSeriesItemTargetLine();
+    $seriesItem->target(array('line' => $line));
+    ?>
+
 ### tooltip
 
 The data point tooltip configuration options.
