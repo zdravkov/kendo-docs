@@ -22,7 +22,7 @@ Here is how to configure a simple Kendo Tooltip:
         $tooltip = new \Kendo\UI\Tooltip('#container');
         $tooltip->filter("a[title]");
         ?>
-5. Output the tooltip by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the tooltip by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $tooltip->render();
@@ -30,7 +30,7 @@ Here is how to configure a simple Kendo Tooltip:
 
 ## Getting Client-side Reference
 
-You can reference the clien-side Kendo Tooltip instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
+You can reference the client-side Kendo Tooltip instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
 Once a reference has been established, you can use the [API](/api/web/tooltip#methods) to control its behavior.
 
 ### Example

@@ -16,7 +16,7 @@ The Kendo Window for PHP is a server-side wrapper for the [Kendo UI Window](http
 Here is how to configure a simple Kendo Window:
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
-2. Create a [tooltip](/api/wrappers/php/Kendo/UI/Window)
+2. Create a [window](/api/wrappers/php/Kendo/UI/Window)
 
         <?php
         $window = new \Kendo\UI\Window('window');
