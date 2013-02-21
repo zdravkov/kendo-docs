@@ -18,6 +18,9 @@ will happen on the client-side.
 PHP Data Objects ([PDO](http://www.php.net/manual/en/intro.pdo.php)) is an interface for accessing various databases in PHP. Here is how to bind Kendo Grid to array
 returned by PDO.
 
+First we will configure a Kendo Grid for PHP binding and then we will implement the remote service which will return JSON.
+
+
 > The following demo is using the sample SQLite database shipped with the Kendo UI for PHP demos (**/wrappers/php/sample.db**).
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
@@ -30,6 +33,7 @@ returned by PDO.
 
         <?php
         $statement = $db->prepare('SELECT * FROM Products');
+        $statement->execute();
         $products = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
 1. Create a [data source](/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/api/wrappers/php/Kendo/Data/DataSource#data) and [schema](/api/wrappers/php/Kendo/Data/DataSource#schema). Setting the schema is required
