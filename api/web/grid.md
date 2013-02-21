@@ -1512,7 +1512,7 @@ Fires when the user hides a column.
 
      // get a reference to the grid
      var grid = $("#grid").data("kendoGrid");
-     // bind to the columnReorder event
+     // bind to the columnHide event
      grid.bind("columnHide", function(e) {
          // handle event
      });
@@ -1609,7 +1609,7 @@ Fires when a column is shown.
 
      // get a reference to the grid
      var grid = $("#grid").data("kendoGrid");
-     // bind to the columnReorder event
+     // bind to the columnShow event
      grid.bind("columnShow", function(e) {
          // handle event
      });
