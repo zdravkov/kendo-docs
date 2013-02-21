@@ -16,13 +16,15 @@ The Kendo TimePicker for PHP is a server-side wrapper for the [Kendo UI TimePick
 Here is how to configure a simple Kendo Timepicker:
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
-2. Create a [timepicker](/api/wrappers/php/Kendo/UI/TimePicker).
+1. Create a [timepicker](/api/wrappers/php/Kendo/UI/TimePicker).
+
         <?php
         $timePicker = new \Kendo\UI\TimePicker('timepicker');
 
         $timePicker->value('10:00 AM');
         ?>
-3. Output the timepicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+
+1. Output the timepicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $timepicker->render();
