@@ -16,7 +16,7 @@ There are several ways to define content for the Kendo Tooltip for ASP.NET MVC:
 *   **function** - JavaScript function which to supply the content for the tooltip.
 *   **ajax** - content will be retrieved via ajax request
 
-### Configure the Kendo Tooltip for server binding
+### Configure the Kendo Tooltip
 
 Here is how to configure the Kendo AutoComplete:
 
