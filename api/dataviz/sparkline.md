@@ -1601,6 +1601,62 @@ The line width.
 
 ** Available for area and line series **
 
+### series.target `Object`
+
+The target of the bullet chart.
+
+### series.target.line `Object`
+
+The target line.
+
+### series.target.line.width `Object`
+
+The width of the line.
+
+### series.target.border `Object`
+
+The border of the target.
+
+### series.target.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### series.target.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### series.target.border.width `Number`*(default: 0)*
+
+The width of the border.
+
 ### seriesColors `Array`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
@@ -1955,6 +2011,45 @@ Template variables:
 ### tooltip.visible `Boolean`*(default: true)*
 
 A value indicating if the tooltip should be displayed.
+
+### tooltip.shared `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be shared.
+
+### tooltip.sharedTemplate `String`
+
+The shared tooltip template.
+Template variables:
+
+*   **points** - the category points
+*   **category** - the category name
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "Internet Users"
+         },
+         series: [{
+             name: "United States",
+             data: [67.96, 68.93, 75, 74, 78]
+         }, {
+             name: "World",
+             data: [15.7, 16.7, 20, 23.5, 26.6]
+         }],
+         categoryAxis: {
+             categories: [2005, 2006, 2007, 2008, 2009]
+         },
+         tooltip: {
+             visible: true,
+             shared: true,
+             sharedTemplate:
+                "#= category # </br>" +                                       
+                "# for (var i = 0; i < points.length; i++) { #" +             
+                    "#= points[i].series.name #: #= points[i].value # </br>" +
+                "# } #"
+         }
+    });
 
 ### transitions `Boolean`*(default: false)*
 

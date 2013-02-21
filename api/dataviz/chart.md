@@ -2250,7 +2250,7 @@ Template variables:
 
 ### series.tooltip.visible `Boolean`*(default: false)*
 
- A value indicating if the tooltip should be displayed.
+A value indicating if the tooltip should be displayed.
 
 ### series.visibleInLegendField `String`
 
@@ -2287,6 +2287,62 @@ The name of the Y axis to use.
 The data field containing the Y value.
 
 ** Available for bubble, scatter and scatterLine series. **
+
+### series.target `Object`
+
+The target of the bullet chart.
+
+### series.target.line `Object`
+
+The target line.
+
+### series.target.line.width `Object`
+
+The width of the line.
+
+### series.target.border `Object`
+
+The border of the target.
+
+### series.target.border.color `String`*(default: "black")*
+
+The color of the border.
+
+### series.target.border.dashType `String`*(default: "solid")*
+
+The dash type of the border.
+
+#### *"solid"*
+
+Specifies a solid line.
+
+#### *"dot"*
+
+Specifies a line consisting of dots.
+
+#### *"dash"*
+
+Specifies a line consisting of dashes.
+
+#### *"longDash"*
+
+Specifies a line consisting of a repeating pattern of long-dash.
+
+#### *"dashDot"*
+
+Specifies a line consisting of a repeating pattern of dash-dot.
+
+#### *"longDashDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot.
+
+#### *"longDashDotDot"*
+
+Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
+
+### series.target.border.width `Number`*(default: 0)*
+
+The width of the border.
 
 ### seriesColors `Array`
 
@@ -2969,6 +3025,41 @@ Template variables:
 ### tooltip.visible `Boolean`*(default: false)*
 
 A value indicating if the tooltip should be displayed.
+
+### tooltip.sharedTemplate `String`
+
+The shared tooltip template.
+Template variables:
+
+*   **points** - the category points
+*   **category** - the category name
+
+#### Example
+
+    $("#chart").kendoChart({
+         title: {
+             text: "Internet Users"
+         },
+         series: [{
+             name: "United States",
+             data: [67.96, 68.93, 75, 74, 78]
+         }, {
+             name: "World",
+             data: [15.7, 16.7, 20, 23.5, 26.6]
+         }],
+         categoryAxis: {
+             categories: [2005, 2006, 2007, 2008, 2009]
+         },
+         tooltip: {
+             visible: true,
+             shared: true,
+             sharedTemplate:
+                "#= category # </br>" +                                       
+                "# for (var i = 0; i < points.length; i++) { #" +             
+                    "#= points[i].series.name #: #= points[i].value # </br>" +
+                "# } #"
+         }
+    });
 
 ### transitions `Boolean`*(default: true)*
 
