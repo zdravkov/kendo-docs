@@ -16,11 +16,18 @@ The Kendo ColorPicker for PHP is a server-side wrapper for the [Kendo UI ColorPi
 Here is how to configure a simple Kendo ColorPicker:
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+
 2. Create a [colorpicker](/api/wrappers/php/Kendo/UI/ColorPicker).
 
         <?php
         $colorpicker = new \Kendo\UI\ColorPicker('colorpicker');
         $colorpicker->value('#ff0000');
+        ?>
+
+3. Output the colorpicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+
+        <?php
+        echo $colorpicker->render();
         ?>
 
 ## Getting Client-side Reference

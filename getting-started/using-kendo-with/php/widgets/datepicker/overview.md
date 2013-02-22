@@ -16,6 +16,7 @@ The Kendo DatePicker for PHP is a server-side wrapper for the [Kendo UI DatePick
 Here is how to configure a simple Kendo DatePicker:
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+
 2. Create a [datepicker](/api/wrappers/php/Kendo/UI/DatePicker).
 
         <?php
@@ -24,6 +25,13 @@ Here is how to configure a simple Kendo DatePicker:
                    ->max(new DateTime('2099-12-31'))
                    ->value(new DateTime('today', new DateTimeZone('UTC')));
         ?>
+
+3. Output the datepicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+
+        <?php
+        echo $datepicker->render();
+        ?>
+
 
 ## Getting Client-side Reference
 

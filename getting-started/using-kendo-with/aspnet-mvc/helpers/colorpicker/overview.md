@@ -32,8 +32,8 @@ Here is how to configure a simple Kendo ColorPicker:
     - Razor
 
             @(Html.Kendo().ColorPicker()
-                  .Name("colorpicker") //The name of the colorpicker is mandatory. It specifies the "id" attribute of the widget.
-                  .Value("#ff0000") //Set the value of the colorpicker
+                  .Name("colorpicker") // The name of the colorpicker is mandatory. It specifies the "id" attribute of the widget.
+                  .Value("#ff0000") // Set the value of the colorpicker
             )
 
 ## Accessing an Existing ColorPicker

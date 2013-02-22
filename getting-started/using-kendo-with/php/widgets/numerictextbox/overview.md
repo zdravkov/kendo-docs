@@ -16,6 +16,7 @@ The Kendo NumericTextBox for PHP is a server-side wrapper for the [Kendo UI Nume
 Here is how to configure a simple Kendo NumericTextBox:
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+
 2. Create a [numerictextbox](/api/wrappers/php/Kendo/UI/NumericTextBox).
 
         <?php
@@ -24,6 +25,13 @@ Here is how to configure a simple Kendo NumericTextBox:
                        ->max(100)
                        ->value(10));
         ?>
+
+3. Output the numerictextbox by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+
+        <?php
+        echo $numerictextbox->render();
+        ?>
+
 
 ## Getting Client-side Reference
 
