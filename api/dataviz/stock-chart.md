@@ -170,6 +170,18 @@ The data field containing the high value.
 
 The data field containing the series value.
 
+### series.currentField `String`
+
+The data field containing the current value.
+
+** Available for bullet and verticalBullet series. **
+
+### series.targetField `String`
+
+The data field containing the target value.
+
+** Available for bullet and verticalBullet series. **
+
 ### navigator.series.groupNameTemplate `String`
 
 Name template for auto-generated series when binding to grouped data.
@@ -2290,6 +2302,7 @@ The type of the series. Available types:
 * column
 * line
 * candlestick, ohlc
+* bullet
 
 ### series.dashType `String`*(default: "solid")*
 

@@ -1463,6 +1463,7 @@ The type of the series. Available types:
 * pie
 * donut
 * candlestick, ohlc
+* bullet, verticalBullet
 
 ### series.dashType `String`*(default: "solid")*
 
@@ -2287,6 +2288,18 @@ The name of the Y axis to use.
 The data field containing the Y value.
 
 ** Available for bubble, scatter and scatterLine series. **
+
+### series.currentField `String`
+
+The data field containing the current value.
+
+** Available for bullet and verticalBullet series. **
+
+### series.targetField `String`
+
+The data field containing the target value.
+
+** Available for bullet and verticalBullet series. **
 
 ### series.target `Object`
 

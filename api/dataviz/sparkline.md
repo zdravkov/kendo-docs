@@ -968,6 +968,7 @@ The type of the series. Available types:
 * column (synonym: bar)
 * line
 * pie
+* bullet
 
 ### series.dashType `String`*(default: "solid")*
 
@@ -1013,6 +1014,20 @@ Array of data items. The data item type can be either a:
 ### series.explodeField `String`
 
 The data field containing a boolean value that indicates if the sector is exploded.
+
+** Available for pie series **
+
+### series.currentField `String`
+
+The data field containing the current value.
+
+** Available for bullet and verticalBullet series. **
+
+### series.targetField `String`
+
+The data field containing the target value.
+
+** Available for bullet and verticalBullet series. **
 
 ** Available for pie series **
 
