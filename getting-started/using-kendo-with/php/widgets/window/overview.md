@@ -1,100 +1,113 @@
 ---
 title: Overview
-meta_title: How to use the TabStrip PHP class, server-side wrapper for Kendo UI TabStrip widget
-meta_description: Learn how to create Kendo UI TabStrip for PHP, handle Kendo UI TabStrip Events, access an existing tabstrip.
-slug: php-tabstrip-overview
+meta_title: How to use the Window PHP class, server-side wrapper for Kendo UI Window widget
+meta_description: Learn how to create Kendo UI Window for PHP, handle Kendo UI Window Events, access an existing window.
+slug: php-window-overview
 publish: true
-relatedDocs: php-ui-tabstrip
+relatedDocs: php-ui-window
 ---
 
-# TabStrip
+# Window
 
-The Kendo TabStrip for PHP is a server-side wrapper for the [Kendo UI TabStrip](http://docs.kendoui.com/api/web/tabstrip) widget.
+The Kendo Window for PHP is a server-side wrapper for the [Kendo UI Window](http://docs.kendoui.com/api/web/window) widget.
 
 ## Getting Started
 
-Here is how to configure a simple Kendo TabStrip:
+Here is how to configure a simple Kendo Window:
 
 1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
-1. Create a [tabstrip](/api/wrappers/php/Kendo/UI/TabStrip) and set its [items](/api/wrappers/php/Kendo/UI/TabStrip#addItem)
+2. Create a [window](/api/wrappers/php/Kendo/UI/Window)
 
         <?php
-        $tabstrip = new \Kendo\UI\TabStrip('tabstrip');
-
-        $item1 = new \Kendo\UI\TabStripItem();
-
-        $item1->text("Item 1")
-                ->startContent();
+        $window = new \Kendo\UI\Window('window');
+        $window->title("About Alvar Aalto")
+            ->draggable(true)
+            ->width(600)
+            ->resizable(true);
         ?>
 
-            First Item Static Content
+3. Place the content between startContent and endContent method calls
 
         <?php
-        $item1->endContent();
-
-        $item2 = new \Kendo\UI\TabStripItem();
-
-        $item2->text("Item 2")
-                ->startContent();
-        ?>
-            Second Item Static Content
-        <?php
-        $item2->endContent();
-
-        $tabstrip.addItem($item1, $item2);
+        $window = new \Kendo\UI\Window('window');
+        $window->title("About Alvar Aalto")
+            ->draggable(true)
+            ->width(600)
+            ->resizable(true)
+            ->startContent();
         ?>
 
-1. Output the tabstrip by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+            Static content of the Window
 
         <?php
-        echo $tabstrip->render();
+            $window->endContent();
+        ?>
+
+4. Output the window by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+
+        <?php
+        echo $window->render();
+        ?>
+
+### Loading the window contents through an asynchronous call
+
+You can load views asynchronously through the `content` method:
+
+        <?php
+        $window = new \Kendo\UI\Window('window');
+
+        $window->content(array(
+                "url" => "ajaxContent.html"
+            ));
+
+        echo $window->render();
         ?>
 
 ## Getting Client-side Reference
 
-You can reference the client-side Kendo TabStrip instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/api/web/tabstrip#methods) to control its behavior.
+You can reference the client-side Kendo Window instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
+Once a reference has been established, you can use the [API](/api/web/window#methods) to control its behavior.
 
 ### Example
 
     <?php
-    $tabstrip = new \Kendo\UI\TabStrip('tabstrip');
-    echo $tabstrip->render();
+    $window = new \Kendo\UI\Window('window');
+    echo $window->render();
     ?>
     <script>
     $(function() {
-        // The constructor parameter is used as the 'id' HTML attribute of the tabstrip
-        var tabstrip = $("#tabstrip").data("kendoTabStrip");
+        // The constructor parameter is used as the 'id' HTML attribute of the window
+        var window = $("#window").data("kendoWindow");
     });
     </script>
 
 ## Handling Events
 
-You can subscribe to all tabstrip [events](/api/web/tabstrip#events).
+You can subscribe to all window [events](/api/web/window#events).
 
 ### Example - subscribing by specifying JavaScript function name
 
     <?php
-    $tabstrip = new \Kendo\UI\TabStrip('tabstrip');
+    $window = new \Kendo\UI\Window('window');
 
-    // The 'tabstrip_select' JavaScript function will handle the 'tabstrip_select' event of the tabstrip
-    $tabstrip->select('tabstrip_select');
+    // The 'window_open' JavaScript function will handle the 'open' event of the window
+    $window->open('window_open');
 
-    echo $tabstrip->render();
+    echo $window->render();
     ?>
     <script>
-    function tabstrip_select() {
-        // Handle the select event
+    function window_open() {
+        // Handle the open event
     }
     </script>
 
 ### Example - providing inline JavaScript code
 
     <?php
-    $tabstrip = new \Kendo\UI\TabStrip('tabstrip');
+    $window = new \Kendo\UI\Window('window');
 
-    // Provide inline JavaScript code that will handle the 'select' event of the tabstrip
-    $tabstrip->select('function() { /* Handle the select event */ }');
+    // Provide inline JavaScript code that will handle the 'open' event of the window
+    $window->open('function() { /* Handle the open event */ }');
 
-    echo $tabstrip->render();
+    echo $window->render();
     ?>
