@@ -31,6 +31,7 @@ returned by PDO.
 
         <?php
         $statement = $db->prepare('SELECT * FROM Products');
+		$statement->execute();
         $products = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
 

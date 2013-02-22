@@ -92,6 +92,7 @@ will happen on the server-side.
 
         <?php
         $statement = $db->prepare('SELECT * FROM Products');
+		$statement->execute();
         $products = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
 4. Return the records as JSON
@@ -99,8 +100,8 @@ will happen on the server-side.
         <?php
         // Set response content type
         header('Content-Type: application/json');
-        // Return JSON
 
+        // Return JSON
         echo json_encode($products);
         ?>
 
