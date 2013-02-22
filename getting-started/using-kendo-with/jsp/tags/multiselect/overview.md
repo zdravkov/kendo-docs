@@ -1,6 +1,6 @@
 ---
 title: Overview
-slug: jsp-multiSelect-overview
+slug: jsp-multiselect-overview
 publish: true
 ---
 

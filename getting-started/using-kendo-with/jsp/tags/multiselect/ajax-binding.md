@@ -1,6 +1,6 @@
 ---
 title: Ajax Binding
-slug: jsp-multiSelect-ajax-binding
+slug: jsp-multiselect-ajax-binding
 publish: true
 ---
 
