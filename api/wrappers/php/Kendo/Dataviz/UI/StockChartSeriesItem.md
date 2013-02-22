@@ -132,6 +132,24 @@ The data field containing the point color.** Applicable for column, candlestick 
     $seriesItem->colorField('value');
     ?>
 
+### currentField
+The data field containing the current value.** Available for bullet and verticalBullet series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $seriesItem->currentField('value');
+    ?>
+
 ### dashType
 The series line dash type.** Applicable only to line series **
 
@@ -608,6 +626,24 @@ The target of the bullet chart.
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $line = new \Kendo\Dataviz\UI\StockChartSeriesItemTargetLine();
     $seriesItem->target(array('line' => $line));
+    ?>
+
+### targetField
+The data field containing the target value.** Available for bullet and verticalBullet series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $seriesItem->targetField('value');
     ?>
 
 ### tooltip
