@@ -418,6 +418,7 @@ First we will configure a Kendo Grid for PHP binding and then we will implement 
         $request = json_decode(file_get_contents('php://input'));
         ?>
 1. Create a new instance of the `DataSourceResult`.
+
         <?php
         $result = new DataSourceResult('sqlite:../sample.db');
         ?>
