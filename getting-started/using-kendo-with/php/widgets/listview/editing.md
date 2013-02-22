@@ -162,6 +162,8 @@ This demo shows how to use [PDO]() to perform create, update and destroy operati
                    ->schema($schema);
         ?>
 1. Create a listview, configure its templates and set its data source.
+
+		<!-- The following markup contains the `Add new record` button -->
 		<div class="k-toolbar k-grid-toolbar">
     		<a class="k-button k-button-icontext k-add-button" href="#"><span class="k-icon k-add"></span>Add new record</a>
 		</div>

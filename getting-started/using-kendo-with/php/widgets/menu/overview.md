@@ -26,7 +26,7 @@ Here is how to configure a simple Kendo Menu:
                 ->startContent();
         ?>
 
-            First Item Static Content
+        First Item Static Content
 
         <?php
         $item1->endContent();
