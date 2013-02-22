@@ -161,6 +161,24 @@ The label connectors options.** Applicable to pie series. **
     $seriesItem->connectors(array('color' => $color));
     ?>
 
+### currentField
+The data field containing the current value.** Available for bullet and verticalBullet series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $seriesItem->currentField('value');
+    ?>
+
 ### dashType
 The series line dash type.** Applicable only to line series **
 
@@ -620,6 +638,24 @@ The target of the bullet chart.
     $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
     $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();
     $seriesItem->target(array('line' => $line));
+    ?>
+
+### targetField
+The data field containing the target value.** Available for bullet and verticalBullet series. **** Available for pie series **
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $seriesItem->targetField('value');
     ?>
 
 ### tooltip

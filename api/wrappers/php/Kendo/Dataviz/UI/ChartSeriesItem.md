@@ -179,6 +179,24 @@ The label connectors options.** Applicable to donut and pie series. **
     $seriesItem->connectors(array('color' => $color));
     ?>
 
+### currentField
+The data field containing the current value.** Available for bullet and verticalBullet series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->currentField('value');
+    ?>
+
 ### dashType
 The series line dash type.** Applicable only to line and scatterLine series **
 
@@ -847,6 +865,24 @@ The target of the bullet chart.
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemTargetLine();
     $seriesItem->target(array('line' => $line));
+    ?>
+
+### targetField
+The data field containing the target value.** Available for bullet and verticalBullet series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->targetField('value');
     ?>
 
 ### tooltip

@@ -656,6 +656,42 @@ Adds one or more StockChartSeriesItem to the StockChart.
     $stockChart->addSeriesItem($first, $second);
     ?>
 
+### series.currentField
+The data field containing the current value.** Available for bullet and verticalBullet series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChart`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
+    $stockChart->series.currentField('value');
+    ?>
+
+### series.targetField
+The data field containing the target value.** Available for bullet and verticalBullet series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChart`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
+    $stockChart->series.targetField('value');
+    ?>
+
 ### seriesClick
 Fires when chart series are clicked.
 
