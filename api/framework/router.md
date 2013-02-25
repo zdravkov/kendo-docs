@@ -58,12 +58,54 @@ The callback to be executed when the route is matched.
 
 ### navigate
 
+Navigates to the given route.
+
+### Parameters
+
+#### route `String`
+
+The route to navigate to.
+
+#### silent `Boolean` **(default: false)**
+
+If set to true, the router callbacks will not be called.
+
 ### destroy
+
+Unbinds the router instance listeners from the URL fragment part changes.
 
 ## Events
 
 ### change
 
+Triggered when the frament part of the url changes.
+
+#### Event Data
+
+##### e.url `String`
+
+The fragment part of the URL
+
+> Calling the `pretentDefault` method of the event object will stop the change and restore the previous URL.
+
 ### routeMissing
 
+Triggered when the url does not match any of the provided routes.
 
+#### Example
+
+    <script>
+    var router = new kendo.Router({ routeMissing: function(e) { console.log(e.url) } });
+
+    $(function() {
+        router.start();
+        router.navigate("/foo");
+    });
+    </script>
+
+
+#### Event Data
+
+##### e.url `String`
+
+The fragment part of the URL

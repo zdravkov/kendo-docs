@@ -137,7 +137,7 @@ If no route match is found, the router will trigger a `routeMissing` event, pass
 
 Each time the url fragment changes, the router triggers a `change` event. calling the `preventDefault` method on the event object will revert the url to the previous state.
 
-### Missing Route Handling
+### Intercepting Navigation
 
     <script>
     var router = new kendo.Router({
