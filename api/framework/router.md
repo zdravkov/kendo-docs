@@ -28,17 +28,7 @@ Activates the router binding to the URL fragment part changes.
 Specifies a callback for the given route. The route definition can contain **bound parameters**, **optional segments**, and **route globbing**.
 The parsed parts of the URL are passed as parameters to the route callback.
 
-### Parameters
-
-#### route `String`
-
-The route definition.
-
-#### callback `Function`
-
-The callback to be executed when the route is matched.
-
-### Example
+#### Example
 
     <script>
         var router = new kendo.Router();
@@ -55,6 +45,16 @@ The callback to be executed when the route is matched.
             router.navigate("/items/books/59");
         });
     </script>
+
+### Parameters
+
+#### route `String`
+
+The route definition.
+
+#### callback `Function`
+
+The callback to be executed when the route is matched.
 
 ### navigate
 
