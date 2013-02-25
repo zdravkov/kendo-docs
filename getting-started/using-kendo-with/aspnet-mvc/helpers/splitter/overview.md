@@ -12,7 +12,7 @@ The Splitter HtmlHelper extension is a server-side wrapper for the [Kendo UI Spl
 
 ## Getting Started
 
-Here is how to configure a simple Kendo TreeView:
+Here is how to configure a simple Kendo Splitter:
 
 1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
