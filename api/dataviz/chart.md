@@ -2313,6 +2313,10 @@ The target line.
 
 The width of the line.
 
+### series.target.color `String`
+
+The target color.
+
 ### series.target.border `Object`
 
 The border of the target.
