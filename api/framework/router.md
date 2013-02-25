@@ -46,13 +46,13 @@ The parsed parts of the URL are passed as parameters to the route callback.
         });
     </script>
 
-### Parameters
+#### Parameters
 
-#### route `String`
+##### route `String`
 
 The route definition.
 
-#### callback `Function`
+##### callback `Function`
 
 The callback to be executed when the route is matched.
 
@@ -60,13 +60,13 @@ The callback to be executed when the route is matched.
 
 Navigates to the given route.
 
-### Parameters
+#### Parameters
 
-#### route `String`
+##### route `String`
 
 The route to navigate to.
 
-#### silent `Boolean` **(default: false)**
+##### silent `Boolean` **(default: false)**
 
 If set to true, the router callbacks will not be called.
 
