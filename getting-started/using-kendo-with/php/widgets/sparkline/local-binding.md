@@ -1,23 +1,23 @@
 ---
 title: Local binding
-meta_title: How to bind Kendo Chart for PHP to PHP array
-meta_description: Learn how to bind Kendo UI Chart for PHP to array of data
-slug: php-chart-local-binding
+meta_title: How to bind Kendo Sparkline for PHP to PHP array
+meta_description: Learn how to bind Kendo UI Sparkline for PHP to array of data
+slug: php-sparkline-local-binding
 publish: true
-relatedDocs: php-dataviz-ui-chart, php-chart-overview
+relatedDocs: php-dataviz-ui-sparkline, php-sparkline-overview
 ---
 
 # Local Binding to Array
 
-This help topic shows how to bind Kendo Chart for PHP to a PHP [array](http://php.net/manual/en/language.types.array.php). This array
+This help topic shows how to bind Kendo Sparkline for PHP to a PHP [array](http://php.net/manual/en/language.types.array.php). This array
 can be populated from a data base or declared inline (in the page).
 
 ## Binding to array returned by PDO
 
-PHP Data Objects ([PDO](http://www.php.net/manual/en/intro.pdo.php)) is an interface for accessing various databases in PHP. Here is how to bind Kendo Chart to array
+PHP Data Objects ([PDO](http://www.php.net/manual/en/intro.pdo.php)) is an interface for accessing various databases in PHP. Here is how to bind Kendo Sparkline to array
 returned by PDO.
 
-First we will configure a Kendo Chart for PHP binding and then we will implement the remote service which will return JSON.
+First we will configure a Kendo Sparkline for PHP binding and then we will implement the remote service which will return JSON.
 
 
 > The following demo is using the sample SQLite database shipped with the Kendo UI for PHP demos (**/wrappers/php/sample.db**).
@@ -31,7 +31,7 @@ First we will configure a Kendo Chart for PHP binding and then we will implement
 1. Retrieve all records from the `Weather` table
 
         <?php
-        $statement = $db->prepare('SELECT Date, TMax FROM Weather LIMIT 10');
+        $statement = $db->prepare('SELECT TMax FROM Weather LIMIT 10');
         $statement->execute();
         $weather = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
@@ -41,15 +41,11 @@ First we will configure a Kendo Chart for PHP binding and then we will implement
         // Create the schema model
         $model = new \Kendo\Data\DataSourceSchemaModel();
 
-        // Create a field for the 'Date' column of the 'Weather' table
-        $dateField = new \Kendo\Data\DataSourceSchemaModelField('Date');
-        $dateField->type('date');
-
         // Create a field for the 'TMax' column of the 'Weather' table
         $tmaxField = new \Kendo\Data\DataSourceSchemaModelField('TMax');
         $tmaxField->type('number');
 
-        $model->addField($dateField, $tmaxField);
+        $model->addField($tmaxField);
 
         // Create the schema
         $schema = new \Kendo\Data\DataSourceSchema();
@@ -64,24 +60,20 @@ First we will configure a Kendo Chart for PHP binding and then we will implement
         $dataSource->data($weather)
                    ->schema($schema);
         ?>
-1. Create a [chart](/api/wrappers/php/Kendo/Dataviz/UI/Chart), configure its [series](/api/wrappers/php/Kendo/Dataviz/UI/Chart#addSeriesItem), [categoryAxis](/api/wrappers/php/Kendo/Dataviz/UI/Chart#addCategoryAxisItem) and set its [data source](/api/wrappers/php/Kendo/Dataviz/UI/Chart#datasource).
+1. Create a [sparkline](/api/wrappers/php/Kendo/Dataviz/UI/Sparkline), configure its [series](/api/wrappers/php/Kendo/Dataviz/UI/Sparkline#addSeriesItem).
 
         <?php
-        $chart = new \Kendo\Dataviz\UI\Chart('chart');
+        $sparkline = new \Kendo\Dataviz\UI\Sparkline('sparkline');
 
-        $tmaxSeries = new \Kendo\Dataviz\UI\ChartSeriesItem();
+        $tmaxSeries = new \Kendo\Dataviz\UI\SparklineSeriesItem();
         $tmaxSeries->field('TMax');
 
-        $categoryAxis = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
-        $categoryAxis->field('Date');
-
-        $chart->addSeriesItem($tmaxSeries)
-              ->addCategoryAxisItem($categoryAxis)
+        $sparkline->addSeriesItem($tmaxSeries)
               ->dataSource($dataSource);
         ?>
-1. Output the chart by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+1. Output the sparkline by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
-        echo $chart->render();
+        echo $sparkline->render();
         ?>
 
