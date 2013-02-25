@@ -3043,6 +3043,10 @@ Template variables:
 
 A value indicating if the tooltip should be displayed.
 
+### tooltip.shared `Boolean`*(default: false)*
+
+A value indicating if the tooltip should be displayed.
+
 ### tooltip.sharedTemplate `String`
 
 The shared tooltip template.
