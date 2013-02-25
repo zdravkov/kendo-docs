@@ -29,23 +29,61 @@ First we will configure a Kendo TreeView for PHP binding and then we will implem
         $db = new PDO('sqlite:../sample.db');
         ?>
 
-1. Retrieve all records from the `Products` table
+1. Retrieve all records from the `Employees` table
 
         <?php
-        $statement = $db->prepare('SELECT * FROM Products');
+        $statement = $db->prepare('SELECT EmployeeID, FirstName, ReportsTo FROM Employees');
         $statement->execute();
-        $products = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
 
-1. Create a [data source](/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/api/wrappers/php/Kendo/Data/DataSource#data).
+1. Convert the table rows to hierarchical data
 
         <?php
+        function toHierarchy($rows, $idField = 'id', $foreignKey = 'parent') {
+            $hash = array();
 
-        // Create the data source
+            $result = array();
+
+            // hash to rows by id
+            foreach ($rows as $row) {
+                $hash[$row[$idField]] = $row;
+            }
+
+            foreach ($hash as &$row) {
+                $parentId = $row[$foreignKey];
+
+                if (!is_null($parentId)) {
+                    // add items field, if not available
+                    if (!in_array('items', $hash[$parentId])) {
+                        $hash[$parentId] = $hash[$parentId] + array('items' => array());
+                    }
+
+                    // add row to parent item
+                    $hash[$parentId]['items'][] =& $row;
+                }
+            }
+
+            foreach ($hash as &$row) {
+                $parentId = $row[$foreignKey];
+
+                if (is_null($parentId)) {
+                    $result[] =& $row;
+                }
+            }
+
+            return $result;
+        }
+
+        $data = toHierarchy($rows, 'EmployeeID', 'ReportsTo');
+        ?>
+
+1. Create a [data source](/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/api/wrappers/php/Kendo/Data/DataSource#data)
+
+        <?php
         $dataSource = new \Kendo\Data\DataSource();
 
-        // Specify the data
-        $dataSource->data($products);
+        $dataSource->data($data);
         ?>
 
 1. Create a [treeview](/api/wrappers/php/Kendo/UI/TreeView), configure its [dataTextField](/api/wrappers/php/Kendo/UI/TreeView#dataTextField) and set its [data source](/api/wrappers/php/Kendo/UI/TreeView#datasource).
@@ -53,10 +91,12 @@ First we will configure a Kendo TreeView for PHP binding and then we will implem
         <?php
         $treeview = new \Kendo\UI\TreeView('treeview');
 
-        $treeview->dataTextField('ProductName')
-                 ->dataSource($dataSource);
+        $treeview
+            ->dataTextField('FirstName')
+            ->dataSource($dataSource);
 
         ?>
+
 1. Output the treeview by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
