@@ -41,6 +41,24 @@ The border of the target.
     $target->border(array('color' => $color));
     ?>
 
+### color
+The target color.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemTarget`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $target = new \Kendo\Dataviz\UI\StockChartSeriesItemTarget();
+    $target->color('value');
+    ?>
+
 ### line
 
 The target line.

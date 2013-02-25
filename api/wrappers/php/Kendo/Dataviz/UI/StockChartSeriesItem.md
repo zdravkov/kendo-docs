@@ -615,8 +615,8 @@ The target of the bullet chart.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $target = new \Kendo\Dataviz\UI\StockChartSeriesItemTarget();
-    $line = new \Kendo\Dataviz\UI\StockChartSeriesItemTargetLine();
-    $target->line($line);
+    $color = 'value';
+    $target->color($color);
     $seriesItem->target($target);
     ?>
 
@@ -624,8 +624,8 @@ The target of the bullet chart.
 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
-    $line = new \Kendo\Dataviz\UI\StockChartSeriesItemTargetLine();
-    $seriesItem->target(array('line' => $line));
+    $color = 'value';
+    $seriesItem->target(array('color' => $color));
     ?>
 
 ### targetField

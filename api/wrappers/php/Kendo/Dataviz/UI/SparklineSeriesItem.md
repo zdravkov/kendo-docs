@@ -627,8 +627,8 @@ The target of the bullet chart.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
     $target = new \Kendo\Dataviz\UI\SparklineSeriesItemTarget();
-    $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();
-    $target->line($line);
+    $color = 'value';
+    $target->color($color);
     $seriesItem->target($target);
     ?>
 
@@ -636,8 +636,8 @@ The target of the bullet chart.
 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
-    $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();
-    $seriesItem->target(array('line' => $line));
+    $color = 'value';
+    $seriesItem->target(array('color' => $color));
     ?>
 
 ### targetField
