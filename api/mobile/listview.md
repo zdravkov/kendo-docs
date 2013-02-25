@@ -135,6 +135,30 @@ The style of the control. Can be either empty string(""), or inset.
 
 The type of the control. Can be either `flat` (default) or group. Determined automatically in databound mode.
 
+### filterable `Boolean | Object`*(default: false)*
+
+Indicates whether the filter input must be visible or not. 
+
+### filterable.placeholder `String`*(default: "Search...")*
+
+Placeholder text for search input.
+
+### filterable.autoFilter `Boolean`*(default: true)*
+
+Indicates whether filtering should be performed on every key up event or not.
+
+### filterable.field `String`
+
+Specifies the field which will be used in the filter expression.
+
+### filterable.ignoreCase `Boolean`*(default: false)*
+
+Specifies whether the filter expression must be case sensitive or not.
+
+### filterable.operator `String`*(default: "startsWith")*
+
+Specifies the comparison operator used in the filter expression.
+
 ## Methods
 
 ### destroy
