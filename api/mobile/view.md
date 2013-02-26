@@ -105,7 +105,7 @@ Fires after the mobile View becomes visible. If the view is displayed with trans
 
 #### Event Data
 
-##### e.view `View`
+##### e.view `kendo.mobile.ui.View`
 
 The mobile view instance
 
@@ -133,7 +133,7 @@ Fires before the mobile View becomes visible. The event can be prevented by call
 
 #### Event Data
 
-##### e.view `View`
+##### e.view `kendo.mobile.ui.View`
 
 The mobile view instance
 
@@ -143,7 +143,7 @@ Fires when the mobile View becomes hidden.
 
 #### Event Data
 
-##### e.view `View`
+##### e.view `kendo.mobile.ui.View`
 
 The mobile view instance
 
@@ -153,7 +153,7 @@ Fires after the mobile View and its child widgets are initialized.
 
 #### Event Data
 
-##### e.view `View`
+##### e.view `kendo.mobile.ui.View`
 
 The mobile view instance
 
@@ -163,6 +163,6 @@ Fires when the mobile View becomes visible.
 
 #### Event Data
 
-##### e.view `View`
+##### e.view `kendo.mobile.ui.View`
 
 The mobile view instance
