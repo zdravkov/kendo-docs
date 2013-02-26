@@ -66,6 +66,27 @@ The View-Model which the elements are bound to. Wraped as an instance of `kendo.
 Optional namespace too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
 `kendo.ui` will be used.
 
+### observableHierarchy
+
+Creates an ObservableArray instance that is bound to a HierarchicalDataSource. Required to bind a HierarchicalDataSource-enabled widget (such as the Kendo TreeView) to an observable array.
+
+#### Example
+
+    var viewModel = kendo.observable({
+        products: kendo.observableHierarchy([
+            { text: "foo", items: [
+                { text: "bar" }
+            ] },
+            { text: "baz" }
+        ])
+    });
+
+#### Parameters
+
+##### array `Array`
+
+The array that will be converted to an ObservableArray.
+
 ### culture
 Sets or gets the current culture. Uses the passed culture name to select a culture from the culture scripts that you have included and then sets the current culture.
 If there is no corresponding culture then the method will try to find culture which is equal to the country part of the culture name.
