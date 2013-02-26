@@ -82,6 +82,33 @@ Retrieves the current content holder of the View - this is the content element i
 
 ## Events
 
+### afterShow
+
+Fires after the mobile View becomes visible. If the view is displayed with transition, the event is triggered after the transition is complete.
+
+#### Example
+
+    <div data-role="view" id="foo">
+        <a href="#bar" data-role="button">Go to bar</a>
+    </div>
+
+    <div data-role="view" id="bar" data-after-show="afterShow">
+        Bar
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+        function afterShow(e) {
+            console.log(e.view);
+        }
+    </script>
+
+#### Event Data
+
+##### e.view `View`
+
+The mobile view instance
+
 ### beforeShow
 
 Fires before the mobile View becomes visible. The event can be prevented by calling the `preventDefault` method of the event parameter, in case a redirection should happen.
@@ -106,7 +133,7 @@ Fires before the mobile View becomes visible. The event can be prevented by call
 
 #### Event Data
 
-##### e.view `jQuery`
+##### e.view `View`
 
 The mobile view instance
 
@@ -116,7 +143,7 @@ Fires when the mobile View becomes hidden.
 
 #### Event Data
 
-##### e.view `jQuery`
+##### e.view `View`
 
 The mobile view instance
 
@@ -126,7 +153,7 @@ Fires after the mobile View and its child widgets are initialized.
 
 #### Event Data
 
-##### e.view `jQuery`
+##### e.view `View`
 
 The mobile view instance
 
@@ -136,6 +163,6 @@ Fires when the mobile View becomes visible.
 
 #### Event Data
 
-##### e.view `jQuery`
+##### e.view `View`
 
 The mobile view instance
