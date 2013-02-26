@@ -208,7 +208,7 @@ If you pass `true` then this function will return `undefined` rather than throwi
 
 #### Returns
 
-A <a href="#Color">Color</a> object.
+`Color` A <a href="#Color">Color</a> object.
 
 ### render
 
