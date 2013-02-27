@@ -3045,7 +3045,7 @@ A value indicating if the tooltip should be displayed.
 
 ### tooltip.shared `Boolean`*(default: false)*
 
-A value indicating if the tooltip should be displayed.
+A value indicating if the tooltip should be shared.
 
 ### tooltip.sharedTemplate `String`
 
@@ -3075,8 +3075,8 @@ Template variables:
              visible: true,
              shared: true,
              sharedTemplate:
-                "#= category # </br>" +                                       
-                "# for (var i = 0; i < points.length; i++) { #" +             
+                "#= category # </br>" +
+                "# for (var i = 0; i < points.length; i++) { #" +
                     "#= points[i].series.name #: #= points[i].value # </br>" +
                 "# } #"
          }
