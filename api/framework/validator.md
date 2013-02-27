@@ -118,6 +118,10 @@ Get the error messages if any.
 
 `Array` Messages for the failed validation rules.
 
+### hideMessages
+
+Hides the validation messages.
+
 ### validate
 
 Validates the input element(s) against the declared validation rules.
