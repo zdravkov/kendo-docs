@@ -132,7 +132,7 @@ The padding of the tooltip.
     ?>
 
 ### shared
-A value indicating if the tooltip should be displayed.
+A value indicating if the tooltip should be shared.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartTooltip`
