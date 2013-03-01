@@ -365,6 +365,24 @@ The text that will be displayed in the column header.
     $column->title('value');
     ?>
 
+### values
+An array of values that will be used in a foreign key column. Each item in the array should have a text and value field.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
+#### Parameters
+
+##### $value `array`
+
+
+
+#### Example 
+    <?php
+    $column = new \Kendo\UI\GridColumn();
+    $column->values(new array());
+    ?>
+
 ### width
 The width of the column.
 

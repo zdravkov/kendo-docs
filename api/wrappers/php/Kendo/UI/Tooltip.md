@@ -101,48 +101,21 @@ Specifies if the tooltip callout will be displayed.
 
 ### content
 
-The text or a function which result will be shown within the tooltip.
-By default the tooltip will display the target element title attribute content.
+Sets the HTML content of the Tooltip.
 
 #### Returns
-`\Kendo\UI\Tooltip`
 
-#### Parameters
+`Tooltip`
 
-##### $value `string|\Kendo\JavaScriptFunction|\Kendo\UI\TooltipContent|array`
+#### $value `string`
 
-
-
-
-#### Example  - using string
-    <?php
-    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
-    $tooltip->content('value');
-    ?>
-
-#### Example  - using \Kendo\JavaScriptFunction
-    <?php
-    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
-    $tooltip->content(new \Kendo\JavaScriptFunction('function() { }'));
-    ?>
-
-
-#### Example - using [\Kendo\UI\TooltipContent](/api/wrappers/php/Kendo/UI/TooltipContent)
-    <?php
-    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
-    $content = new \Kendo\UI\TooltipContent();
-    $url = 'value';
-    $content->url($url);
-    $tooltip->content($content);
-    ?>
-
-#### Example - using array
+#### Example
 
     <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
-    $url = 'value';
-    $tooltip->content(array('url' => $url));
+    $tooltip->content('<strong>Content</strong>');
     ?>
+
 
 ### contentLoad
 Triggered when an AJAX request for content completes.
@@ -177,6 +150,21 @@ Triggered when an AJAX request for content completes.
     <?php
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->contentLoad(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### endContent
+
+Stops output bufferring and sets the preceding markup as the content of the Tooltip.
+
+#### Example
+
+    <?php
+    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
+    $tooltip->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $tooltip->endContent(); // content is set to <strong>Content</strong>
     ?>
 
 ### error
@@ -426,6 +414,22 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
     $tooltip = new \Kendo\UI\Tooltip('Tooltip');
     $tooltip->showOn('value');
     ?>
+
+### startContent
+
+Starts output bufferring. Any following markup will be set as the content of the Tooltip.
+
+#### Example
+
+    <?php
+    $tooltip = new \Kendo\UI\Tooltip('Tooltip');
+    $tooltip->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $tooltip->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 
 ### width
 The width (in pixels) of the tooltip.
