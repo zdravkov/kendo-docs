@@ -12,7 +12,7 @@ Kendo MVVM provides the ability to create custom bindings.
 
 ## Registering a custom binding
 
-A custom binding is registered by extending the `kendo.data.Binder` object.
+A custom binding is registered by extending the [`kendo.data.Binder`](/api/framework/binder) object.
 
 #### Example: one-way binding (the HTML element will be updated when the view-model changes)
 
@@ -20,7 +20,7 @@ A custom binding is registered by extending the `kendo.data.Binder` object.
         kendo.data.binders.slide = kendo.data.Binder.extend({
             refresh: function() {
                 var value = this.bindings["slide"].get();
-            
+
                 if (value) {
                     $(this.element).slideDown();
                 } else {
@@ -28,11 +28,11 @@ A custom binding is registered by extending the `kendo.data.Binder` object.
                 }
             }
         });
-    
+
         var viewModel = kendo.observable({
             slideValue: true
         });
-        
+
         kendo.bind(document.body, viewModel);
     </script>
 
@@ -47,7 +47,7 @@ A custom binding is registered by extending the `kendo.data.Binder` object.
             init: function(element, bindings, options) {
                 //call the base constructor
                 kendo.data.Binder.fn.init.call(this, element, bindings, options);
-    
+
                 var that = this;
                 //listen for the change event of the element
                 $(that.element).on("change", function() {
@@ -68,12 +68,12 @@ A custom binding is registered by extending the `kendo.data.Binder` object.
                 }
             }
         });
-    
+
         //View-Model source
         var viewModel = kendo.observable({
             number: 10
         });
-    
+
         kendo.bind(document.body, viewModel);
     </script>
 
@@ -98,7 +98,7 @@ A custom binding is registered by extending the `kendo.data.Binder` object.
 
     <!-- View source -->
     <input data-role="numerictextbox" id="numeric" data-bind="value: value, max: max" />​
-    
+
 ### init
 
 This is the binding constructor. If this function is overriden the base Binder constructor should be called explicitly.
