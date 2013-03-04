@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-navigator-series\>
 
-Array of series definitions.
+Array of series definitions.Accepts the same options as the root series collection.Omitting the array and specifying a single series is also acceptable.
 
 #### Example
     <kendo:stockChart-navigator>
@@ -21,7 +21,7 @@ Array of series definitions.
 
 ### kendo:stockChart-navigator-seriesItem
 
-Array of series definitions.
+Array of series definitions.Accepts the same options as the root series collection.Omitting the array and specifying a single series is also acceptable.
 
 More documentation is available at [kendo:stockChart-navigator-seriesItem](stockchart/navigator-seriesitem).
 

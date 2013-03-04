@@ -33,9 +33,6 @@ The track color.
 
 
 
-#### Returns
-0
-
 
 ### Size(System.Double)
 Sets the track size.
@@ -59,9 +56,6 @@ The track size.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the track visibility.
@@ -84,9 +78,6 @@ Sets the track visibility.
 The track visibility.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -117,9 +108,6 @@ The pointer dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the track border
@@ -131,9 +119,6 @@ Configures the track border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 

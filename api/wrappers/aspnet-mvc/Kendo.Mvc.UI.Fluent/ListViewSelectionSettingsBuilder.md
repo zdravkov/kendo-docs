@@ -24,9 +24,6 @@ Enables or disables selection.
 
 
 
-#### Returns
-0
-
 
 ### Mode(Kendo.Mvc.UI.ListViewSelectionMode)
 Specifies whether multiple or single selection is allowed.
@@ -40,9 +37,6 @@ Specifies whether multiple or single selection is allowed.
         
 
 
-
-#### Returns
-0
 
 
 

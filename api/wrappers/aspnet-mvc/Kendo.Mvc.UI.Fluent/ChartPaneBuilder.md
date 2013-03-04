@@ -27,9 +27,6 @@ The pane title.
 
 
 
-#### Returns
-0
-
 
 ### Title(System.Action\<Kendo.Mvc.UI.Fluent.ChartTitleBuilder\>)
 Defines the title of the pane.
@@ -41,9 +38,6 @@ Defines the title of the pane.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### Height(System.Int32)
@@ -57,9 +51,6 @@ The pane height.
 
 
 
-#### Returns
-0
-
 
 ### Background(System.String)
 Sets the pane background color
@@ -71,9 +62,6 @@ Sets the pane background color
 The background color.
 
 
-
-#### Returns
-0
 
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -96,9 +84,6 @@ The pane left margin.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32)
 Sets the pane margin
@@ -110,9 +95,6 @@ Sets the pane margin
 The pane margin.
 
 
-
-#### Returns
-0
 
 
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -135,9 +117,6 @@ The pane left padding.
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the pane padding
@@ -149,9 +128,6 @@ Sets the pane padding
 The pane padding.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -171,9 +147,6 @@ The pane dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the pane border
@@ -185,9 +158,6 @@ Configures the pane border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 

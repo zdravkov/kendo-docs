@@ -22,9 +22,6 @@ Member access expression which describes the member
 
 
 
-#### Returns
-0
-
 
 ### Id(System.String)
 Specify the member used to identify an unique Model instance.
@@ -37,9 +34,6 @@ The member name.
 
 
 
-#### Returns
-0
-
 
 ### FieldT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Describes a Model field
@@ -51,9 +45,6 @@ Describes a Model field
 Member access expression which describes the field
 
 
-
-#### Returns
-0
 
 
 ### Field(System.String,System.Type)
@@ -70,9 +61,6 @@ Field type
 
 
 
-#### Returns
-0
-
 
 ### FieldT1(System.String)
 Describes a Model field
@@ -84,9 +72,6 @@ Describes a Model field
 Member name
 
 
-
-#### Returns
-0
 
 
 

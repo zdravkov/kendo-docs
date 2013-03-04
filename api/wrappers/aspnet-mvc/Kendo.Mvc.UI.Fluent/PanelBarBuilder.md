@@ -34,9 +34,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.PanelBarEventBuilder\>)
 Configures the client-side events.
@@ -58,9 +55,6 @@ Configures the client-side events.
 The client events action.
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.String,System.Action\<Kendo.Mvc.UI.PanelBarItem,Kendo.Mvc.SiteMapNode\>)
@@ -87,9 +81,6 @@ The action to configure the item.
 
 
 
-#### Returns
-0
-
 
 ### BindTo(System.String)
 Binds the panelbar to a sitemap.
@@ -109,9 +100,6 @@ Binds the panelbar to a sitemap.
 The view data key.
 
 
-
-#### Returns
-0
 
 
 ### BindToT1(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.PanelBarItem,T1\>)
@@ -138,9 +126,6 @@ The data source.
 The action executed for every data bound item.
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.Collections.IEnumerable,System.Action\<Kendo.Mvc.UI.Fluent.NavigationBindingFactory\<Kendo.Mvc.UI.PanelBarItem\>\>)
@@ -174,9 +159,6 @@ The action which will configure the mappings
 
 
 
-#### Returns
-0
-
 
 ### Animation(System.Boolean)
 Configures the animation effects of the panelbar.
@@ -196,9 +178,6 @@ Whether the component animation is enabled.
 
 
 
-#### Returns
-0
-
 
 ### Animation(System.Action\<Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder\>)
 Configures the animation effects of the panelbar.
@@ -217,9 +196,6 @@ Configures the animation effects of the panelbar.
 The action that configures the animation.
 
 
-
-#### Returns
-0
 
 
 ### ItemAction(System.Action\<Kendo.Mvc.UI.PanelBarItem\>)
@@ -246,9 +222,6 @@ Action, which will be executed for each item.
 
 
 
-#### Returns
-0
-
 
 ### HighlightPath(System.Boolean)
 Select item depending on the current URL.
@@ -268,9 +241,6 @@ Select item depending on the current URL.
 If true the item will be highlighted.
 
 
-
-#### Returns
-0
 
 
 ### ExpandAll(System.Boolean)
@@ -292,9 +262,6 @@ If true the panelbar will be expanded.
 
 
 
-#### Returns
-0
-
 
 ### ExpandMode(Kendo.Mvc.UI.PanelBarExpandMode)
 Sets the expand mode of the panelbar.
@@ -314,9 +281,6 @@ Sets the expand mode of the panelbar.
 The desired expand mode.
 
 
-
-#### Returns
-0
 
 
 ### SelectedIndex(System.Int32)
@@ -343,9 +307,6 @@ The index.
 
 
 
-#### Returns
-0
-
 
 ### SecurityTrimming(System.Boolean)
 Enable/disable security trimming functionality of the component.
@@ -365,9 +326,6 @@ Enable/disable security trimming functionality of the component.
 If true security trimming is enabled.
 
 
-
-#### Returns
-0
 
 
 ### SecurityTrimming(System.Action\<Kendo.Mvc.UI.SecurityTrimmingBuilder\>)
@@ -391,9 +349,6 @@ Defines the security trimming functionality of the component
 The securityTrimming action.
 
 
-
-#### Returns
-0
 
 
 

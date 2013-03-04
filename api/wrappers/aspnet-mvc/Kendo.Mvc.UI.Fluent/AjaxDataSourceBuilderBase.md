@@ -16,17 +16,11 @@ Configures the client-side events
 
 
 
-#### Returns
-0
-
 
 ### Read(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Read operation.
 
 
-
-#### Returns
-0
 
 
 ### Read(System.String,System.String,System.Object)
@@ -46,9 +40,6 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Read(System.String,System.String)
 Sets controller, action and routeValues for Read operation.
@@ -64,9 +55,6 @@ Controller Name
 
 
 
-#### Returns
-0
-
 
 ### Total(System.Int32)
 Sets the total number of records in the data source. Required during Custom binding.
@@ -79,9 +67,6 @@ Number of records
 
 
 
-#### Returns
-0
-
 
 ### PageSize(System.Int32)
 Sets the number of records displayed on a single page.
@@ -93,9 +78,6 @@ Sets the number of records displayed on a single page.
 
 
 
-
-#### Returns
-0
 
 
 ### ServerOperation(System.Boolean)
@@ -112,17 +94,11 @@ True(default) if server operation mode is enabled, otherwise false.
 
 
 
-#### Returns
-0
-
 
 ### Sort(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceSortDescriptorFactory\<T\>\>)
 Configures the initial sorting.
 
 
-
-#### Returns
-0
 
 
 ### Group(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceGroupDescriptorFactory\<T\>\>)
@@ -130,17 +106,11 @@ Configures the initial grouping.
 
 
 
-#### Returns
-0
-
 
 ### Aggregates(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory\<T\>\>)
 Configures the initial aggregates.
 
 
-
-#### Returns
-0
 
 
 ### Filter(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceFilterDescriptorFactory\<T\>\>)
@@ -148,17 +118,11 @@ Configures the initial filter.
 
 
 
-#### Returns
-0
-
 
 ### Model(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactory\<T\>\>)
 Configures Model properties
 
 
-
-#### Returns
-0
 
 
 

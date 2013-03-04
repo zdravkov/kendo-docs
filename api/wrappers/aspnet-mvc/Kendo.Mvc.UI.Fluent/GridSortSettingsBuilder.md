@@ -24,9 +24,6 @@ Enables or disables sorting.
 
 
 
-#### Returns
-0
-
 
 ### SortMode(Kendo.Mvc.UI.GridSortMode)
 Sets the sort mode of the grid.
@@ -47,9 +44,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### AllowUnsort(System.Boolean)
 Enables or disables unsorted mode.
@@ -69,9 +63,6 @@ Enables or disables unsorted mode.
 The value.
 
 
-
-#### Returns
-0
 
 
 

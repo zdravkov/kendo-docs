@@ -24,9 +24,6 @@ Enables or disables scrolling.
 
 
 
-#### Returns
-0
-
 
 ### Height(System.Int32)
 Sets the height of the scrollable area in pixels.
@@ -47,9 +44,6 @@ The height in pixels.
 
 
 
-#### Returns
-0
-
 
 ### Height(System.String)
 Sets the height of the scrollable.
@@ -69,9 +63,6 @@ Sets the height of the scrollable.
 The height in pixels.
 
 
-
-#### Returns
-0
 
 
 

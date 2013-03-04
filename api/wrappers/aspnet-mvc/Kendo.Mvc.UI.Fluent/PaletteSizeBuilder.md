@@ -22,9 +22,6 @@ The tile width.
 
 
 
-#### Returns
-0
-
 
 ### Height(System.Int32)
 Set the height of the tiles
@@ -36,9 +33,6 @@ Set the height of the tiles
 The tile height.
 
 
-
-#### Returns
-0
 
 
 

@@ -34,9 +34,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.MenuEventBuilder\>)
 Configures the client-side events.
@@ -59,9 +56,6 @@ The client events action.
 
 
 
-#### Returns
-0
-
 
 ### Direction(Kendo.Mvc.UI.MenuDirection)
 Specifies Menu opening direction.
@@ -81,9 +75,6 @@ Specifies Menu opening direction.
 The desired direction.
 
 
-
-#### Returns
-0
 
 
 ### Direction(System.String)
@@ -105,9 +96,6 @@ The desired direction.
 
 
 
-#### Returns
-0
-
 
 ### Orientation(Kendo.Mvc.UI.MenuOrientation)
 Sets the menu orientation.
@@ -128,9 +116,6 @@ The desired orientation.
 
 
 
-#### Returns
-0
-
 
 ### OpenOnClick(System.Boolean)
 Enables or disables the "open-on-click" feature.
@@ -144,9 +129,6 @@ Enables or disables the "open-on-click" feature.
         
 
 
-
-#### Returns
-0
 
 
 ### CloseOnClick(System.Boolean)
@@ -162,9 +144,6 @@ Specifies that sub menus should close after item selection (provided they won't 
 
 
 
-#### Returns
-0
-
 
 ### HoverDelay(System.Int32)
 Specifies the delay in ms before the menu is opened/closed - used to avoid accidental closure on leaving.
@@ -178,9 +157,6 @@ Specifies the delay in ms before the menu is opened/closed - used to avoid accid
         
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.String,System.Action\<Kendo.Mvc.UI.MenuItem,Kendo.Mvc.SiteMapNode\>)
@@ -207,9 +183,6 @@ The action to configure the item.
 
 
 
-#### Returns
-0
-
 
 ### BindTo(System.String)
 Binds the menu to a sitemap.
@@ -229,9 +202,6 @@ Binds the menu to a sitemap.
 The view data key.
 
 
-
-#### Returns
-0
 
 
 ### BindToT1(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.MenuItem,T1\>)
@@ -259,9 +229,6 @@ The data source.
 The action executed for every data bound item.
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.Collections.IEnumerable,System.Action\<Kendo.Mvc.UI.Fluent.NavigationBindingFactory\<Kendo.Mvc.UI.MenuItem\>\>)
@@ -295,9 +262,6 @@ The action which will configure the mappings
 
 
 
-#### Returns
-0
-
 
 ### ItemAction(System.Action\<Kendo.Mvc.UI.MenuItem\>)
 Callback for each item.
@@ -323,9 +287,6 @@ Action, which will be executed for each item.
 
 
 
-#### Returns
-0
-
 
 ### HighlightPath(System.Boolean)
 Select item depending on the current URL.
@@ -346,9 +307,6 @@ If true the item will be highlighted.
 
 
 
-#### Returns
-0
-
 
 ### SecurityTrimming(System.Boolean)
 Enable/disable security trimming functionality of the component.
@@ -368,9 +326,6 @@ Enable/disable security trimming functionality of the component.
 If true security trimming is enabled.
 
 
-
-#### Returns
-0
 
 
 ### SecurityTrimming(System.Action\<Kendo.Mvc.UI.SecurityTrimmingBuilder\>)
@@ -394,9 +349,6 @@ Defines the security trimming functionality of the component
 The securityTrimming action.
 
 
-
-#### Returns
-0
 
 
 

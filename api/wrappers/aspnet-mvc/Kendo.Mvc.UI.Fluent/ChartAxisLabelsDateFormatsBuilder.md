@@ -37,9 +37,6 @@ The date format.
 
 
 
-#### Returns
-0
-
 
 ### Days(System.String)
 Sets the date format when the base date unit is Days
@@ -66,9 +63,6 @@ Sets the date format when the base date unit is Days
 The date format.
 
 
-
-#### Returns
-0
 
 
 ### Minutes(System.String)
@@ -97,9 +91,6 @@ The date format.
 
 
 
-#### Returns
-0
-
 
 ### Months(System.String)
 Sets the date format when the base date unit is Months
@@ -126,9 +117,6 @@ Sets the date format when the base date unit is Months
 The date format.
 
 
-
-#### Returns
-0
 
 
 ### Weeks(System.String)
@@ -157,9 +145,6 @@ The date format.
 
 
 
-#### Returns
-0
-
 
 ### Years(System.String)
 Sets the date format when the base date unit is Years
@@ -186,9 +171,6 @@ Sets the date format when the base date unit is Years
 The date format.
 
 
-
-#### Returns
-0
 
 
 

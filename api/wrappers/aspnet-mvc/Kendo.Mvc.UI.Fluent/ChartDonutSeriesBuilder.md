@@ -30,9 +30,6 @@ Sets the margin of the donut series.
 
 
 
-#### Returns
-0
-
 
 ### HoleSize(System.Int32)
 Sets the the size of the donut hole.
@@ -48,9 +45,6 @@ Sets the the size of the donut hole.
 
 
 
-#### Returns
-0
-
 
 ### Size(System.Int32)
 Sets the size of the donut series.
@@ -65,9 +59,6 @@ Sets the size of the donut series.
         
 
 
-
-#### Returns
-0
 
 
 

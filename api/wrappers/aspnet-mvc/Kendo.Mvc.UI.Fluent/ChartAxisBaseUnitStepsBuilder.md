@@ -40,9 +40,6 @@ The discrete steps when BaseUnit is set to Minutes.
 
 
 
-#### Returns
-0
-
 
 ### Hours(System.Int32[])
 The discrete BaseUnitStep values when BaseUnit is set to Hours and
@@ -72,9 +69,6 @@ The discrete BaseUnitStep values when BaseUnit is set to Hours and
 The discrete steps when BaseUnit is set to Hours.
 
 
-
-#### Returns
-0
 
 
 ### Days(System.Int32[])
@@ -106,9 +100,6 @@ The discrete steps when BaseUnit is set to Days.
 
 
 
-#### Returns
-0
-
 
 ### Weeks(System.Int32[])
 The discrete BaseUnitStep values when BaseUnit is set to Weeks and
@@ -138,9 +129,6 @@ The discrete BaseUnitStep values when BaseUnit is set to Weeks and
 The discrete steps when BaseUnit is set to Weeks.
 
 
-
-#### Returns
-0
 
 
 ### Months(System.Int32[])
@@ -172,9 +160,6 @@ The discrete steps when BaseUnit is set to Months.
 
 
 
-#### Returns
-0
-
 
 ### Years(System.Int32[])
 The discrete BaseUnitStep values when BaseUnit is set to Years and
@@ -204,9 +189,6 @@ The discrete BaseUnitStep values when BaseUnit is set to Years and
 The discrete steps when BaseUnit is set to Years.
 
 
-
-#### Returns
-0
 
 
 

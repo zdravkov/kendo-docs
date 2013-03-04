@@ -85,6 +85,7 @@ Defines the initial selected item.
 ### optionLabel `Object`
 
 Define the text of the default empty item. If the value is an object, then the widget will use it directly.
+ Note that object should have atleast the dataValueField and dataTextField properties. Otherwise, widget will show undefined.
 
 #### Example
     <kendo:dropDownList optionLabel="optionLabel">

@@ -8,7 +8,7 @@ publish: true
 # \<kendo:treeView-animation\>
 
 A collection of visual animations used when items are expanded or collapsed through user interaction.
-Setting this option to
+Setting this option to false will disable all animations.
 
 #### Example
     <kendo:treeView>

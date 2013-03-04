@@ -7,7 +7,8 @@ publish: true
 
 # \<kendo:datePicker-animation\>
 
-The animation(s) used for opening and/or closing the pop-up. Setting this value to
+The animation(s) used for opening and/or closing the pop-up. Setting this value to false
+will disable the animation(s).
 
 #### Example
     <kendo:datePicker>

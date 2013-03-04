@@ -7,7 +7,8 @@ publish: true
 
 # \<kendo:panelBar-animation\>
 
-A collection of visual animations used when
+A collection of visual animations used when PanelBar items are exapnd or collapsed through
+user interactions. Setting this option to false will disable all animations.
 
 #### Example
     <kendo:panelBar>
@@ -21,7 +22,7 @@ A collection of visual animations used when
 
 ### kendo:panelBar-animation-collapse
 
-The visual animation(s) that will be used when
+The visual animation(s) that will be used when PanelBar items are closed.
 
 More documentation is available at [kendo:panelBar-animation-collapse](panelbar/animation-collapse).
 

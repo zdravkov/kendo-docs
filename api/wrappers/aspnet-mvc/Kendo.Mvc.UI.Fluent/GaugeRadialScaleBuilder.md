@@ -37,9 +37,6 @@ The end angle.
 
 
 
-#### Returns
-0
-
 
 ### StartAngle(System.Double)
 Sets the start angle of the gauge
@@ -61,9 +58,6 @@ Sets the start angle of the gauge
 The start Angle.
 
 
-
-#### Returns
-0
 
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder\>)
@@ -88,9 +82,6 @@ Configures the labels.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

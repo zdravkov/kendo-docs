@@ -30,9 +30,6 @@ The radial gauge theme.
 
 
 
-#### Returns
-0
-
 
 ### GaugeArea(System.Action\<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder\>)
 Sets the radial gauge area.
@@ -52,9 +49,6 @@ Sets the radial gauge area.
 The radial gauge area.
 
 
-
-#### Returns
-0
 
 
 ### Scale(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder\>)
@@ -78,9 +72,6 @@ The configurator
 
 
 
-#### Returns
-0
-
 
 ### Pointer(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder\>)
 Configures the pointer
@@ -103,9 +94,6 @@ The configurator
 
 
 
-#### Returns
-0
-
 
 ### Transitions(System.Boolean)
 Enables or disabled animated transitions on initial load and refresh.
@@ -125,9 +113,6 @@ Enables or disabled animated transitions on initial load and refresh.
 A value indicating if transition animations should be played.
 
 
-
-#### Returns
-0
 
 
 

@@ -37,9 +37,6 @@ The mirror.
 
 
 
-#### Returns
-0
-
 
 ### Vertical(System.Boolean)
 Sets the orientation of the gauge
@@ -61,9 +58,6 @@ Sets the orientation of the gauge
 The vertical.
 
 
-
-#### Returns
-0
 
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder\>)
@@ -88,9 +82,6 @@ Configures the labels.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

@@ -54,7 +54,9 @@ Root menu orientation. Could be horizontal or vertical.
 
 ### popupCollision `String`
 
-Specifies how Menu should adjust to screen boundaries. By default the strategy is
+Specifies how Menu should adjust to screen boundaries. By default the strategy is "fit" for a sub menu with a horizontal parent,
+meaning it will move to fit in screen boundaries in all directions, and "fit flip" for a sub menu with vertical parent, meaning it will fit vertically and flip over
+its parent horizontally. You can also switch off the screen boundary detection completely if you set the popupCollision to false.
 
 #### Example
     <kendo:menu popupCollision="popupCollision">
@@ -65,7 +67,8 @@ Specifies how Menu should adjust to screen boundaries. By default the strategy i
 
 ### kendo:menu-animation
 
-A collection of
+A collection of Animation objects, used to change default animations. A value of false will disable all animations in the widget.Available animations for the Menu are listed below.  Each animation has a reverse options which is used for the close effect by default, but can be over-ridden
+by setting the close animation.  Each animation also has a direction which can be set off the animation (i.e. slideIn:Down).
 
 More documentation is available at [kendo:menu-animation](menu/animation).
 

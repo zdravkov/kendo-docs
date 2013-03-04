@@ -8,7 +8,7 @@ publish: true
 # \<kendo:stockChart-xAxisItem\>
 
 Scatter charts X-axis configuration options.
-Includes
+Includes all valueAxis options in addition to:
 
 #### Example
     <kendo:stockChart-xAxis>
@@ -19,7 +19,8 @@ Includes
 
 ### axisCrossingValue `Object`
 
-Value at which the Y axis crosses this axis. (Only for object)
+Value at which the Y axis crosses this axis. (Only for object)Value indicies at which the Y axes cross the value axis. (Only for array)Date at which the Y axis crosses this axis. (Only for date)Note: Specify a value greater than or equal to the
+axis maximum value to denote the far end of the axis.
 
 #### Example
     <kendo:stockChart-xAxisItem axisCrossingValue="axisCrossingValue">
@@ -54,7 +55,7 @@ The interval between major divisions in base units.
 ### max `Object`
 
 The end date of the axis.
-This is often used in combination with the
+This is often used in combination with the min configuration option.
 
 #### Example
     <kendo:stockChart-xAxisItem max="max">
@@ -63,7 +64,7 @@ This is often used in combination with the
 ### min `Object`
 
 The maximum value of the axis.
-This is often used in combination with the
+This is often used in combination with the max configuration option.
 
 #### Example
     <kendo:stockChart-xAxisItem min="min">
@@ -114,7 +115,8 @@ values increase from right to left and from top to bottom.
 
 ### type `String`
 
-The axis type.
+The axis type.Note: The Chart will automatically switch to a date axis if the series X value
+is of type Date. Specify type explicitly when such behavior is undesired.
 
 #### Example
     <kendo:stockChart-xAxisItem type="type">
@@ -130,6 +132,18 @@ The visibility of the axis.
 
 
 ##  Configuration JSP Tags
+
+### kendo:stockChart-xAxisItem-crosshair
+
+The crosshair configuration options.
+
+More documentation is available at [kendo:stockChart-xAxisItem-crosshair](stockchart/xaxisitem-crosshair).
+
+#### Example
+
+    <kendo:stockChart-xAxisItem>
+        <kendo:stockChart-xAxisItem-crosshair></kendo:stockChart-xAxisItem-crosshair>
+    </kendo:stockChart-xAxisItem>
 
 ### kendo:stockChart-xAxisItem-labels
 

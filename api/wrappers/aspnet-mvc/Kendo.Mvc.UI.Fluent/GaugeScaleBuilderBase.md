@@ -39,9 +39,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### MajorTicks(System.Action\<Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder\>)
 Configures the major ticks.
@@ -65,9 +62,6 @@ Configures the major ticks.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### Ranges(System.Action\<Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory\<T\>\>)
@@ -93,9 +87,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### MajorUnit(System.Double)
 Sets the scale major unit.
@@ -115,9 +106,6 @@ Sets the scale major unit.
 The major unit.
 
 
-
-#### Returns
-0
 
 
 ### MinorUnit(System.Double)
@@ -139,9 +127,6 @@ The minor unit.
 
 
 
-#### Returns
-0
-
 
 ### Min(System.Double)
 Sets the scale min value.
@@ -161,9 +146,6 @@ Sets the scale min value.
 The min.
 
 
-
-#### Returns
-0
 
 
 ### Max(System.Double)
@@ -185,9 +167,6 @@ The max.
 
 
 
-#### Returns
-0
-
 
 ### Reverse(System.Boolean)
 Sets the scale reverse.
@@ -208,8 +187,29 @@ The scale reverse.
 
 
 
-#### Returns
-0
+
+### Line(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLineBuilder\>)
+Configures the major ticks.
+
+#### Example
+
+    <%= Html.Kendo().LinearGauge()
+        .Name("linearGauge")
+        .Scale(scale => scale
+        .Line(line => line
+        .Visible(false)
+        )
+        )
+    %>
+        
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLineBuilder)>
+The configuration action.
+
+
 
 
 

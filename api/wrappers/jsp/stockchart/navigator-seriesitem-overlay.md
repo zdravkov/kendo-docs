@@ -18,7 +18,7 @@ The effects overlay.
 
 ### gradient `String`
 
-The gradient name.
+The gradient name.Available options:
 
 #### Example
     <kendo:stockChart-navigator-seriesItem-overlay gradient="gradient">

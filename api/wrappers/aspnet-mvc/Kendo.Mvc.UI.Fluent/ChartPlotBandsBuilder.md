@@ -35,9 +35,6 @@ The plot band start position.
 
 
 
-#### Returns
-0
-
 
 ### To(T)
 Sets the plot band end position.
@@ -62,9 +59,6 @@ Sets the plot band end position.
 The plot band end position.
 
 
-
-#### Returns
-0
 
 
 ### Color(System.String)
@@ -91,9 +85,6 @@ The plot band background color.
 
 
 
-#### Returns
-0
-
 
 ### Opacity(System.Double)
 Sets the plot band opacity
@@ -118,9 +109,6 @@ Sets the plot band opacity
 The plot band opacity.
 
 
-
-#### Returns
-0
 
 
 

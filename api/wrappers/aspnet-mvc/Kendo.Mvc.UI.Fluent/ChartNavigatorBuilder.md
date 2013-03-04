@@ -33,9 +33,6 @@ The selection range end.
 
 
 
-#### Returns
-0
-
 
 ### Series(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesFactory\<T\>\>)
 Defines the navigator series. At least one series should be configured.
@@ -60,9 +57,6 @@ Defines the navigator series. At least one series should be configured.
 The add action.
 
 
-
-#### Returns
-0
 
 
 ### Visible(System.Boolean)
@@ -90,9 +84,6 @@ The navigator visibility.
 
 
 
-#### Returns
-0
-
 
 ### Hint(System.Action\<Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder\>)
 Defines the navigator hint.
@@ -117,9 +108,6 @@ Defines the navigator hint.
 The add action.
 
 
-
-#### Returns
-0
 
 
 ### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder\<T\>\>)
@@ -147,9 +135,6 @@ Use the configurator to set different data binding options.
 
 
 
-#### Returns
-0
-
 
 ### DateField(System.String)
 Sets the field used by the navigator date axes.
@@ -171,9 +156,6 @@ Sets the field used by the navigator date axes.
 The date field.
 
 
-
-#### Returns
-0
 
 
 ### AutoBind(System.Boolean)
@@ -202,9 +184,6 @@ Gets or sets a value indicating if the navigator
             The default value is true.
 
 
-
-#### Returns
-0
 
 
 

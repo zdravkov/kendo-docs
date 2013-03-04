@@ -18,7 +18,8 @@ The category axis configuration options.
 
 ### autoBaseUnitSteps `Object`
 
-Specifies the discrete
+Specifies the discrete baseUnitStep values when
+either baseUnit is set to "fit" or baseUnitStep is set to "auto".The default configuration is as follows:Each setting can be overriden individually.
 
 #### Example
     <kendo:stockChart-categoryAxisItem autoBaseUnitSteps="autoBaseUnitSteps">
@@ -26,7 +27,8 @@ Specifies the discrete
 
 ### axisCrossingValue `Object`
 
-Category index at which the first value axis crosses this axis. (Only for object)
+Category index at which the first value axis crosses this axis. (Only for object)Category indicies at which the value axes cross the category axis. (Only for array)Note: Specify an index greater than or equal to the number
+of categories to denote the far end of the axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem axisCrossingValue="axisCrossingValue">
@@ -36,7 +38,9 @@ Category index at which the first value axis crosses this axis. (Only for object
 
 The base time interval for the axis.
 The default baseUnit is determined automatically from the minimum difference
-between subsequent categories. Available options:
+between subsequent categories. Available options:Setting baseUnit to "fit" will set such base unit and baseUnitStep
+that the total number of categories does not exceed maxDateGroups.Series data is aggregated for the specified base unit by using the
+series.aggregate function.
 
 #### Example
     <kendo:stockChart-categoryAxisItem baseUnit="baseUnit">
@@ -45,7 +49,7 @@ between subsequent categories. Available options:
 ### baseUnitStep `Object`
 
 Sets the step (interval) between categories in base units.
-Specifiying "auto" will set the step to such value that the total number of categories does not exceed
+Specifiying "auto" will set the step to such value that the total number of categories does not exceed maxDateGroups.This option is ignored if baseUnit is set to "fit".
 
 #### Example
     <kendo:stockChart-categoryAxisItem baseUnitStep="baseUnitStep">
@@ -78,7 +82,7 @@ The data field containing the category name.
 
 ### justified `boolean`
 
-Positions categories and series points on major ticks. This removes the empty space before and after the series.
+Positions categories and series points on major ticks. This removes the empty space before and after the series.This option is ignored if either column, ohlc or candlestick series are plotted on the axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem justified="justified">
@@ -88,7 +92,8 @@ Positions categories and series points on major ticks. This removes the empty sp
 
 The last date displayed on the axis.
 By default, the minimum date is the same as the last category.
-This is often used in combination with the
+This is often used in combination with the min and roundToBaseUnit configuration options to
+set up a fixed date range.
 
 #### Example
     <kendo:stockChart-categoryAxisItem max="max">
@@ -97,7 +102,7 @@ This is often used in combination with the
 ### maxDateGroups `float`
 
 Specifies the maximum number of groups (categories) to produce when
-either
+either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.
 
 #### Example
     <kendo:stockChart-categoryAxisItem maxDateGroups="maxDateGroups">
@@ -107,7 +112,8 @@ either
 
 The first date displayed on the axis.
 By default, the minimum date is the same as the first category.
-This is often used in combination with the
+This is often used in combination with the max and roundToBaseUnit configuration options to
+set up a fixed date range.
 
 #### Example
     <kendo:stockChart-categoryAxisItem min="min">
@@ -142,7 +148,7 @@ categories are listed from right to left and from top to bottom.
 ### roundToBaseUnit `boolean`
 
 By default, the first and last dates will be rounded off to the nearest base unit.
-Specifying
+Specifying false for this option will disable this behavior.This option is most useful in combination with explicit min and max dates.It will be ignored if either column, ohlc or candlestick series are plotted on the axis.
 
 #### Example
     <kendo:stockChart-categoryAxisItem roundToBaseUnit="roundToBaseUnit">
@@ -166,7 +172,8 @@ The visibility of the axis.
 
 ### weekStartDay `float`
 
-Specifies the week start day when
+Specifies the week start day when baseUnit is set to "weeks".
+Use the kendo.days constants to specify the day by name.
 
 #### Example
     <kendo:stockChart-categoryAxisItem weekStartDay="weekStartDay">
@@ -174,6 +181,18 @@ Specifies the week start day when
 
 
 ##  Configuration JSP Tags
+
+### kendo:stockChart-categoryAxisItem-crosshair
+
+The crosshair configuration options.
+
+More documentation is available at [kendo:stockChart-categoryAxisItem-crosshair](stockchart/categoryaxisitem-crosshair).
+
+#### Example
+
+    <kendo:stockChart-categoryAxisItem>
+        <kendo:stockChart-categoryAxisItem-crosshair></kendo:stockChart-categoryAxisItem-crosshair>
+    </kendo:stockChart-categoryAxisItem>
 
 ### kendo:stockChart-categoryAxisItem-labels
 
@@ -227,7 +246,7 @@ More documentation is available at [kendo:stockChart-categoryAxisItem-majorTicks
 ### kendo:stockChart-categoryAxisItem-minorGridLines
 
 Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through
-the body of the chart.
+the body of the chart.Note that minor grid lines are not visible by default, therefore none of these settings will take effect with the minor grid lines visibility being set to true.
 
 More documentation is available at [kendo:stockChart-categoryAxisItem-minorGridLines](stockchart/categoryaxisitem-minorgridlines).
 

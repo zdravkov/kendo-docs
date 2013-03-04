@@ -22,8 +22,5 @@ The highlight color
 
 
 
-#### Returns
-0
-
 
 

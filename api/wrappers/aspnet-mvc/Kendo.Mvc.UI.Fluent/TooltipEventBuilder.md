@@ -36,9 +36,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Show(System.String)
 Defines the name of the JavaScript function that will handle the the Show client-side event.
@@ -58,9 +55,6 @@ Defines the name of the JavaScript function that will handle the the Show client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Hide(System.Func\<System.Object,System.Object\>)
@@ -88,9 +82,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Hide(System.String)
 Defines the name of the JavaScript function that will handle the the Hide client-side event.
@@ -110,9 +101,6 @@ Defines the name of the JavaScript function that will handle the the Hide client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ContentLoad(System.Func\<System.Object,System.Object\>)
@@ -140,9 +128,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ContentLoad(System.String)
 Defines the name of the JavaScript function that will handle the the ContentLoad client-side event.
@@ -162,9 +147,6 @@ Defines the name of the JavaScript function that will handle the the ContentLoad
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Error(System.Func\<System.Object,System.Object\>)
@@ -192,9 +174,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Error(System.String)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
@@ -214,9 +193,6 @@ Defines the name of the JavaScript function that will handle the the Error clien
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### RequestStart(System.Func\<System.Object,System.Object\>)
@@ -244,9 +220,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### RequestStart(System.String)
 Defines the name of the JavaScript function that will handle the the RequestStart client-side event.
@@ -266,9 +239,6 @@ Defines the name of the JavaScript function that will handle the the RequestStar
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

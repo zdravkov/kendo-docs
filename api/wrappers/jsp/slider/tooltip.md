@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:slider-tooltip\>
 
-Configuration of the
+Configuration of the Slider tooltip.
 
 #### Example
     <kendo:slider>
@@ -18,7 +18,8 @@ Configuration of the
 
 ### enabled `boolean`
 
-Disables (
+Disables (false) or enables (true) the tooltip of
+the Slider.
 
 #### Example
     <kendo:slider-tooltip enabled="enabled">
@@ -27,7 +28,8 @@ Disables (
 ### format `String`
 
 Format string for the text of the tooltip. Note: The applied
-format will also influence the appearance of the
+format will also influence the appearance of the Slider
+tick labels.
 
 #### Example
     <kendo:slider-tooltip format="format">

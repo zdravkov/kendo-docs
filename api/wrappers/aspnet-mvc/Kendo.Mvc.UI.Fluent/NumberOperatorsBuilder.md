@@ -16,9 +16,6 @@ Clears the options.
 
 
 
-#### Returns
-0
-
 
 ### IsEqualTo(System.String)
 Sets the text for IsEqualTo operator filter menu item.
@@ -30,9 +27,6 @@ Sets the text for IsEqualTo operator filter menu item.
 The message
 
 
-
-#### Returns
-0
 
 
 ### IsNotEqualTo(System.String)
@@ -46,9 +40,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### IsGreaterThanOrEqualTo(System.String)
 Sets the text for IsGreaterThanOrEqualTo operator filter menu item.
@@ -60,9 +51,6 @@ Sets the text for IsGreaterThanOrEqualTo operator filter menu item.
 The message
 
 
-
-#### Returns
-0
 
 
 ### IsGreaterThan(System.String)
@@ -76,9 +64,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### IsLessThanOrEqualTo(System.String)
 Sets the text for IsLessThanOrEqualTo operator filter menu item.
@@ -91,9 +76,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### IsLessThan(System.String)
 Sets the text for IsLessThan operator filter menu item.
@@ -105,9 +87,6 @@ Sets the text for IsLessThan operator filter menu item.
 The message
 
 
-
-#### Returns
-0
 
 
 

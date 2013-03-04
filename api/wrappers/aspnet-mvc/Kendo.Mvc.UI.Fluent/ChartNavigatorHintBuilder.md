@@ -38,9 +38,6 @@ The border color (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Template(System.String)
 Sets the border opacity
@@ -69,9 +66,6 @@ The border opacity (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the hint visibility.
@@ -99,9 +93,6 @@ Sets the hint visibility.
 The hint visibility.
 
 
-
-#### Returns
-0
 
 
 

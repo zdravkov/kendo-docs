@@ -56,6 +56,23 @@ The padding of the tooltip.
     <kendo:chart-tooltip padding="padding">
     </kendo:chart-tooltip>
 
+### shared `boolean`
+
+A value indicating if the tooltip should be shared.
+
+#### Example
+    <kendo:chart-tooltip shared="shared">
+    </kendo:chart-tooltip>
+
+### sharedTemplate `String`
+
+The shared tooltip template.
+Template variables:
+
+#### Example
+    <kendo:chart-tooltip sharedTemplate="sharedTemplate">
+    </kendo:chart-tooltip>
+
 ### template `String`
 
 The tooltip template.

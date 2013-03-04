@@ -27,7 +27,8 @@ node is expanded.
 
 ### effects `String`
 
-A whitespace-delimited string of animation effects that are utilized when a
+A whitespace-delimited string of animation effects that are utilized when a TreeView node
+is expanded. Options include "expandVertical" and "fadeIn".
 
 #### Example
     <kendo:treeView-animation-expand effects="effects">
@@ -35,7 +36,7 @@ A whitespace-delimited string of animation effects that are utilized when a
 
 ### show `boolean`
 
-If
+
 
 #### Example
     <kendo:treeView-animation-expand show="show">

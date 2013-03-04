@@ -37,9 +37,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
@@ -59,9 +56,6 @@ Defines the name of the JavaScript function that will handle the the Select clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Upload(System.Func\<System.Object,System.Object\>)
@@ -90,9 +84,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Upload(System.String)
 Defines the name of the JavaScript function that will handle the the Upload client-side event.
@@ -112,9 +103,6 @@ Defines the name of the JavaScript function that will handle the the Upload clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Success(System.Func\<System.Object,System.Object\>)
@@ -143,9 +131,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Success(System.String)
 Defines the name of the JavaScript function that will handle the the Success client-side event.
@@ -165,9 +150,6 @@ Defines the name of the JavaScript function that will handle the the Success cli
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Error(System.Func\<System.Object,System.Object\>)
@@ -196,9 +178,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Error(System.String)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
@@ -218,9 +197,6 @@ Defines the name of the JavaScript function that will handle the the Error clien
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Complete(System.Func\<System.Object,System.Object\>)
@@ -249,9 +225,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Complete(System.String)
 Defines the name of the JavaScript function that will handle the the Complete client-side event.
@@ -271,9 +244,6 @@ Defines the name of the JavaScript function that will handle the the Complete cl
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Cancel(System.Func\<System.Object,System.Object\>)
@@ -302,9 +272,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Cancel(System.String)
 Defines the name of the JavaScript function that will handle the the Cancel client-side event.
@@ -324,9 +291,6 @@ Defines the name of the JavaScript function that will handle the the Cancel clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Remove(System.Func\<System.Object,System.Object\>)
@@ -355,9 +319,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Remove(System.String)
 Defines the name of the JavaScript function that will handle the the Remove client-side event.
@@ -377,9 +338,6 @@ Defines the name of the JavaScript function that will handle the the Remove clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Progress(System.Func\<System.Object,System.Object\>)
@@ -408,9 +366,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Progress(System.String)
 Defines the name of the JavaScript function that will handle the the Progress client-side event.
@@ -430,9 +385,6 @@ Defines the name of the JavaScript function that will handle the the Progress cl
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

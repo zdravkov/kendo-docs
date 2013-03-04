@@ -32,9 +32,6 @@ The client events action.
 
 
 
-#### Returns
-0
-
 
 ### Value(System.String)
 Sets the value of the picker input
@@ -54,9 +51,6 @@ Sets the value of the picker input
 The initially selected color
 
 
-
-#### Returns
-0
 
 
 ### Columns(System.Int32)
@@ -78,9 +72,6 @@ The initially selected color
 
 
 
-#### Returns
-0
-
 
 ### TileSize(System.Int32)
 Sets the size of the palette tiles
@@ -100,9 +91,6 @@ Sets the size of the palette tiles
 The tile size (for square tiles)
 
 
-
-#### Returns
-0
 
 
 ### TileSize(System.Action\<Kendo.Mvc.UI.Fluent.PaletteSizeBuilder\>)
@@ -124,9 +112,6 @@ The tile size (for square tiles)
 
 
 
-#### Returns
-0
-
 
 ### Palette(System.Collections.Generic.IEnumerable\<System.String\>)
 Sets the range of colors that the user can pick from.
@@ -147,9 +132,6 @@ A list of colors.
 
 
 
-#### Returns
-0
-
 
 ### Palette(Kendo.Mvc.UI.ColorPickerPalette)
 Sets the range of colors that the user can pick from.
@@ -169,9 +151,6 @@ Sets the range of colors that the user can pick from.
 One of the preset palettes of colors
 
 
-
-#### Returns
-0
 
 
 

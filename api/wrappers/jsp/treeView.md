@@ -12,7 +12,7 @@ A JSP tag representing Kendo TreeView.
 
 ### checkboxes `boolean`
 
-If Further configuration is available via [kendo:treeView-checkboxes](#kendo-treeView-checkboxes). 
+If true or an object, renders checkboxes within each treeview item. Further configuration is available via [kendo:treeView-checkboxes](#kendo-treeView-checkboxes). 
 
 #### Example
     <kendo:treeView checkboxes="checkboxes">
@@ -36,10 +36,10 @@ the sprite CSS class of the treeview nodes.
     <kendo:treeView dataSpriteCssClassField="dataSpriteCssClassField">
     </kendo:treeView>
 
-### dataTextField `String`
+### dataTextField `Object`
 
-Sets the field of the data item that provides
-the text content of the treeview nodes.
+Sets the field of the data item that provides the text content of the treeview nodes.
+If an array, each level uses the field that is at the same index in the array, or the last item in the array.
 
 #### Example
     <kendo:treeView dataTextField="dataTextField">
@@ -56,7 +56,8 @@ the link URL of the treeview nodes.
 
 ### dragAndDrop `boolean`
 
-Disables (
+Disables (false) or enables (true) drag-and-drop on the nodes of a
+TreeView.
 
 #### Example
     <kendo:treeView dragAndDrop="dragAndDrop">
@@ -87,7 +88,7 @@ Template for rendering of the nodes of the treeview.
 ### kendo:treeView-animation
 
 A collection of visual animations used when items are expanded or collapsed through user interaction.
-Setting this option to
+Setting this option to false will disable all animations.
 
 More documentation is available at [kendo:treeView-animation](treeview/animation).
 
@@ -99,7 +100,7 @@ More documentation is available at [kendo:treeView-animation](treeview/animation
 
 ### kendo:treeView-checkboxes
 
-If
+If true or an object, renders checkboxes within each treeview item.
 
 More documentation is available at [kendo:treeView-checkboxes](treeview/checkboxes).
 

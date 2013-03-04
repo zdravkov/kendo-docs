@@ -37,9 +37,6 @@ The labels align.
 
 
 
-#### Returns
-0
-
 
 ### Distance(System.Int32)
 Sets the labels distance
@@ -67,9 +64,6 @@ The labels distance.
 
 
 
-#### Returns
-0
-
 
 ### Position(Kendo.Mvc.UI.ChartPieLabelsPosition)
 Sets the labels position
@@ -96,9 +90,6 @@ Sets the labels position
 The labels position.
 
 
-
-#### Returns
-0
 
 
 

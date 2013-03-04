@@ -31,9 +31,6 @@ The background color.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the Plot area margin
@@ -64,9 +61,6 @@ The plot area left margin.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32)
 Sets the Plot area margin
@@ -87,9 +81,6 @@ Sets the Plot area margin
 The plot area margin.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -118,9 +109,6 @@ The border dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the plot area border
@@ -132,9 +120,6 @@ Configures the plot area border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 

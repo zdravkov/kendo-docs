@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:splitter-pane\>
 
-An array of pane definitions.
+Defines the panes of the splitter
 
 #### Example
     <kendo:splitter-panes>
@@ -18,7 +18,7 @@ An array of pane definitions.
 
 ### collapsed `boolean`
 
-Specifies whether a pane is initially collapsed (
+Specifies whether a pane is initially collapsed (true) or expanded (true).
 
 #### Example
     <kendo:splitter-pane collapsed="collapsed">
@@ -26,7 +26,7 @@ Specifies whether a pane is initially collapsed (
 
 ### collapsible `boolean`
 
-Specifies whether a pane is collapsible (
+Specifies whether a pane is collapsible (true) or not collapsible (false).
 
 #### Example
     <kendo:splitter-pane collapsible="collapsible">
@@ -42,8 +42,7 @@ Specifies the URL from which to load the content of a pane.
 
 ### max `String`
 
-Specifies the maximum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The
-size of a resized pane cannot exceed the defined maximum size.
+Specifies the maximum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The size of a resized pane cannot exceed the defined maximum size.
 
 #### Example
     <kendo:splitter-pane max="max">
@@ -51,8 +50,7 @@ size of a resized pane cannot exceed the defined maximum size.
 
 ### min `String`
 
-Specifies the minimum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The
-size of a resized pane cannot be less than the defined minimum size.
+Specifies the minimum size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). The size of a resized pane cannot be less than the defined minimum size.
 
 #### Example
     <kendo:splitter-pane min="min">
@@ -60,7 +58,7 @@ size of a resized pane cannot be less than the defined minimum size.
 
 ### resizable `boolean`
 
-Specifies whether a pane is resizable (
+Specifies whether a pane is resizable (true) or not resizable (false).
 
 #### Example
     <kendo:splitter-pane resizable="resizable">
@@ -68,7 +66,7 @@ Specifies whether a pane is resizable (
 
 ### scrollable `boolean`
 
-Specifies whether a pane is scrollable (
+Specifies whether a pane is scrollable (true) or not scrollable (false).
 
 #### Example
     <kendo:splitter-pane scrollable="scrollable">
@@ -76,8 +74,7 @@ Specifies whether a pane is scrollable (
 
 ### size `String`
 
-Specifies the size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). Note: This
-value must not exceed
+Specifies the size of a pane defined as pixels (i.e. "200px") or as a percentage (i.e. "50%"). This value must not exceed panes.max or be less then panes.min.
 
 #### Example
     <kendo:splitter-pane size="size">

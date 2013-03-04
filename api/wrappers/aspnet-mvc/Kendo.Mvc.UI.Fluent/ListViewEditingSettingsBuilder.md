@@ -22,8 +22,5 @@ name of the editor template
 
 
 
-#### Returns
-0
-
 
 

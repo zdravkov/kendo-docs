@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:splitter-panes\>
 
-An array of pane definitions.
+Defines the panes of the splitter
 
 #### Example
     <kendo:splitter>
@@ -21,7 +21,7 @@ An array of pane definitions.
 
 ### kendo:splitter-pane
 
-An array of pane definitions.
+Defines the panes of the splitter
 
 More documentation is available at [kendo:splitter-pane](splitter/pane).
 

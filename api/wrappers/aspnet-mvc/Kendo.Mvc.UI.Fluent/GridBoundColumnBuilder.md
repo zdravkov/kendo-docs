@@ -30,9 +30,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### EditorViewData(System.Object)
 Provides additional view data in the editor template for that column (if any).
@@ -55,9 +52,6 @@ An anonymous object which contains the additional data
 
 
 
-#### Returns
-0
-
 
 ### EditorTemplateName(System.String)
 Specify which editor template should be used for the column
@@ -69,9 +63,6 @@ Specify which editor template should be used for the column
 name of the editor template
 
 
-
-#### Returns
-0
 
 
 ### Sortable(System.Boolean)
@@ -87,9 +78,6 @@ Enables or disables sorting the column. All bound columns are sortable by defaul
 
 
 
-#### Returns
-0
-
 
 ### Groupable(System.Boolean)
 Enables or disables grouping by that column. All bound columns are groupable by default.
@@ -103,9 +91,6 @@ Enables or disables grouping by that column. All bound columns are groupable by 
         
 
 
-
-#### Returns
-0
 
 
 ### Filterable(System.Boolean)
@@ -121,9 +106,6 @@ Enables or disables filtering the column. All bound columns are filterable by de
 
 
 
-#### Returns
-0
-
 
 ### Encoded(System.Boolean)
 Enables or disables HTML encoding the data of the column. All bound columns are encoded by default.
@@ -137,9 +119,6 @@ Enables or disables HTML encoding the data of the column. All bound columns are 
         
 
 
-
-#### Returns
-0
 
 
 ### Template(System.Action\<T\>)
@@ -171,9 +150,6 @@ Sets the template for the column.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 ### Template(System.Func\<T,System.Object\>)
@@ -247,9 +223,6 @@ The action defining the template.
 
 
 
-#### Returns
-0
-
 
 ### FooterTemplate(System.Func\<Kendo.Mvc.UI.GridAggregateResult,System.Object\>)
 Sets the footer template for the column.
@@ -261,9 +234,6 @@ Sets the footer template for the column.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 ### GroupFooterTemplate(System.Action\<Kendo.Mvc.UI.GridAggregateResult\>)
@@ -277,9 +247,6 @@ The action defining the template.
 
 
 
-#### Returns
-0
-
 
 ### GroupFooterTemplate(System.Func\<Kendo.Mvc.UI.GridAggregateResult,System.Object\>)
 Sets the group footer template for the column.
@@ -291,9 +258,6 @@ Sets the group footer template for the column.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 ### GroupHeaderTemplate(System.Action\<Kendo.Mvc.UI.GridGroupAggregateResult\>)
@@ -307,9 +271,6 @@ The action defining the template.
 
 
 
-#### Returns
-0
-
 
 ### GroupHeaderTemplate(System.Func\<Kendo.Mvc.UI.GridGroupAggregateResult,System.Object\>)
 Sets the group footer template for the column.
@@ -321,9 +282,6 @@ Sets the group footer template for the column.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 

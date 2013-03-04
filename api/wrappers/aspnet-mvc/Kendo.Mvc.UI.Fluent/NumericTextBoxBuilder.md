@@ -16,17 +16,11 @@ Sets the initial value of the NumericTextBox.
 
 
 
-#### Returns
-0
-
 
 ### Step(T)
 Sets the step, used ti increment/decrement the value of the textbox.
 
 
-
-#### Returns
-0
 
 
 ### Min(System.Nullable\<T\>)
@@ -34,26 +28,17 @@ Sets the minimal possible value allowed to the user.
 
 
 
-#### Returns
-0
-
 
 ### Max(System.Nullable\<T\>)
 Sets the maximal possible value allowed to the user.
 
 
 
-#### Returns
-0
-
 
 ### Placeholder(System.String)
 Sets the text which will be displayed if the textbox is empty.
 
 
-
-#### Returns
-0
 
 
 ### Spinners(System.Boolean)
@@ -92,9 +77,6 @@ The client events action.
 
 
 
-#### Returns
-0
-
 
 ### Enable(System.Boolean)
 Enables or disables the textbox.
@@ -124,9 +106,6 @@ Stes the format of the NumericTextBox.
 
 
 
-#### Returns
-0
-
 
 ### Culture(System.String)
 Specifies the culture info used by the NumericTextBox widget.
@@ -140,9 +119,6 @@ Specifies the culture info used by the NumericTextBox widget.
         
 
 
-
-#### Returns
-0
 
 
 ### Decimals(System.Int32)
@@ -158,26 +134,17 @@ Specifies the number precision. If not set precision defined by current culture 
 
 
 
-#### Returns
-0
-
 
 ### IncreaseButtonTitle(System.String)
 Sets the title of the NumericTextBox increase button.
 
 
 
-#### Returns
-0
-
 
 ### DecreaseButtonTitle(System.String)
 Sets the title of the NumericTextBox decrease button.
 
 
-
-#### Returns
-0
 
 
 

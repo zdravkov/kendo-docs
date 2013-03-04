@@ -24,9 +24,6 @@ Enables/disables header column menu.
 
 
 
-#### Returns
-0
-
 
 ### Sortable(System.Boolean)
 Enables/disables sort section in header column menu.
@@ -40,9 +37,6 @@ Enables/disables sort section in header column menu.
         
 
 
-
-#### Returns
-0
 
 
 ### Filterable(System.Boolean)
@@ -58,9 +52,6 @@ Enables/disables filter section in header column menu.
 
 
 
-#### Returns
-0
-
 
 ### Columns(System.Boolean)
 Enables/disables columns section in header column menu.
@@ -75,9 +66,6 @@ Enables/disables columns section in header column menu.
 
 
 
-#### Returns
-0
-
 
 ### Messages(System.Action\<Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder\>)
 Enables you to define custom messages in grid column menu.
@@ -91,9 +79,6 @@ Enables you to define custom messages in grid column menu.
         
 
 
-
-#### Returns
-0
 
 
 

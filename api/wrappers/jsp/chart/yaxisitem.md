@@ -8,7 +8,7 @@ publish: true
 # \<kendo:chart-yAxisItem\>
 
 Scatter charts Y-axis configuration options.
-Includes
+Includes all valueAxis options in addition to:
 
 #### Example
     <kendo:chart-yAxis>
@@ -19,7 +19,8 @@ Includes
 
 ### axisCrossingValue `Object`
 
-Value at which the Y axis crosses this axis. (Only for object)
+Value at which the Y axis crosses this axis. (Only for object)Value indicies at which the Y axes cross the value axis. (Only for array)Date at which the Y axis crosses this axis. (Only for date)Note: Specify a value greater than or equal to the
+axis maximum value to denote the far end of the axis.
 
 #### Example
     <kendo:chart-yAxisItem axisCrossingValue="axisCrossingValue">
@@ -54,7 +55,7 @@ The interval between major divisions in base units.
 ### max `Object`
 
 The end date of the axis.
-This is often used in combination with the
+This is often used in combination with the min configuration option.
 
 #### Example
     <kendo:chart-yAxisItem max="max">
@@ -63,7 +64,7 @@ This is often used in combination with the
 ### min `Object`
 
 The maximum value of the axis.
-This is often used in combination with the
+This is often used in combination with the max configuration option.
 
 #### Example
     <kendo:chart-yAxisItem min="min">
@@ -114,7 +115,8 @@ values increase from right to left and from top to bottom.
 
 ### type `String`
 
-The axis type.
+The axis type.Note: The Chart will automatically switch to a date axis if the series X value
+is of type Date. Specify type explicitly when such behavior is undesired.
 
 #### Example
     <kendo:chart-yAxisItem type="type">
@@ -130,6 +132,18 @@ The visibility of the axis.
 
 
 ##  Configuration JSP Tags
+
+### kendo:chart-yAxisItem-crosshair
+
+The crosshair configuration options.
+
+More documentation is available at [kendo:chart-yAxisItem-crosshair](chart/yaxisitem-crosshair).
+
+#### Example
+
+    <kendo:chart-yAxisItem>
+        <kendo:chart-yAxisItem-crosshair></kendo:chart-yAxisItem-crosshair>
+    </kendo:chart-yAxisItem>
 
 ### kendo:chart-yAxisItem-labels
 

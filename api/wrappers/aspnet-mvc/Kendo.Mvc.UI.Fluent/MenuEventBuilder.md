@@ -37,9 +37,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Open(System.String)
 Defines the name of the JavaScript function that will handle the the Open client-side event.
@@ -59,9 +56,6 @@ Defines the name of the JavaScript function that will handle the the Open client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Close(System.Func\<System.Object,System.Object\>)
@@ -90,9 +84,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Close(System.String)
 Defines the name of the JavaScript function that will handle the the Close client-side event.
@@ -112,9 +103,6 @@ Defines the name of the JavaScript function that will handle the the Close clien
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Select(System.Func\<System.Object,System.Object\>)
@@ -143,9 +131,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
@@ -165,9 +150,6 @@ Defines the name of the JavaScript function that will handle the the Select clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

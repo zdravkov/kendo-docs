@@ -16,17 +16,11 @@ Use it to configure Ajax binding.
 
 
 
-#### Returns
-0
-
 
 ### Server
 Use it to configure Server binding.
 
 
-
-#### Returns
-0
 
 
 

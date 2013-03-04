@@ -24,9 +24,6 @@ Controls whether to bind the widget to the DataSource on initialization.
 
 
 
-#### Returns
-0
-
 
 ### CheckboxTemplate(System.String)
 Template to be used for rendering the item checkboxes in the treeview.
@@ -40,9 +37,6 @@ Template to be used for rendering the item checkboxes in the treeview.
         
 
 
-
-#### Returns
-0
 
 
 ### CheckboxTemplateId(System.String)
@@ -58,9 +52,6 @@ Id of the template element to be used for rendering the item checkboxes in the t
 
 
 
-#### Returns
-0
-
 
 ### Template(System.String)
 Template to be used for rendering the items in the treeview.
@@ -75,9 +66,6 @@ Template to be used for rendering the items in the treeview.
 
 
 
-#### Returns
-0
-
 
 ### TemplateId(System.String)
 Id of the template element to be used for rendering the items in the treeview.
@@ -91,9 +79,6 @@ Id of the template element to be used for rendering the items in the treeview.
         
 
 
-
-#### Returns
-0
 
 
 ### Checkboxes(System.Boolean)
@@ -114,9 +99,6 @@ Enable/disable rendering of checkboxes in the treeview.
 Whether checkboxes should be rendered.
 
 
-
-#### Returns
-0
 
 
 ### Checkboxes(System.Action\<Kendo.Mvc.UI.Fluent.TreeViewCheckboxesBuilder\>)
@@ -139,9 +121,6 @@ Configures rendering of checkboxes in the treeview.
 Builder of the treeview checkboxes configuration.
 
 
-
-#### Returns
-0
 
 
 ### Items(System.Action\<Kendo.Mvc.UI.Fluent.TreeViewItemFactory\>)
@@ -167,9 +146,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.TreeViewEventBuilder\>)
 Configures the client-side events.
@@ -192,9 +168,6 @@ Configures the client-side events.
 The client events action.
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.String,System.Action\<Kendo.Mvc.UI.TreeViewItem,Kendo.Mvc.SiteMapNode\>)
@@ -221,9 +194,6 @@ The action to configure the item.
 
 
 
-#### Returns
-0
-
 
 ### BindTo(System.String)
 Binds the TreeView to a sitemap.
@@ -243,9 +213,6 @@ Binds the TreeView to a sitemap.
 The view data key.
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.Collections.Generic.IEnumerable\<Kendo.Mvc.UI.TreeViewItemModel\>)
@@ -267,9 +234,6 @@ Binds the TreeView to a list of items.
 The list of items
 
 
-
-#### Returns
-0
 
 
 ### BindToT1(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.TreeViewItem,T1\>)
@@ -297,9 +261,6 @@ The data source.
 The action executed for every data bound item.
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.Collections.IEnumerable,System.Action\<Kendo.Mvc.UI.Fluent.NavigationBindingFactory\<Kendo.Mvc.UI.TreeViewItem\>\>)
@@ -333,9 +294,6 @@ The action which will configure the mappings
 
 
 
-#### Returns
-0
-
 
 ### ItemAction(System.Action\<Kendo.Mvc.UI.TreeViewItem\>)
 Callback for each item.
@@ -361,9 +319,6 @@ Action, which will be executed for each item.
 
 
 
-#### Returns
-0
-
 
 ### HighlightPath(System.Boolean)
 Select item depending on the current URL.
@@ -384,9 +339,6 @@ If true the item will be highlighted.
 
 
 
-#### Returns
-0
-
 
 ### Animation(System.Boolean)
 Use to enable or disable animation of the TreeView.
@@ -406,9 +358,6 @@ Use to enable or disable animation of the TreeView.
 The boolean value.
 
 
-
-#### Returns
-0
 
 
 ### Animation(System.Action\<Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder\>)
@@ -436,9 +385,6 @@ The action which configures the animation effects.
 
 
 
-#### Returns
-0
-
 
 ### ExpandAll(System.Boolean)
 Expand all the items.
@@ -458,9 +404,6 @@ Expand all the items.
 If true all the items will be expanded.
 
 
-
-#### Returns
-0
 
 
 ### DragAndDrop(System.Boolean)
@@ -487,9 +430,6 @@ If true, drag & drop is enabled.
 
 
 
-#### Returns
-0
-
 
 ### SecurityTrimming(System.Boolean)
 Enable/disable security trimming functionality of the component.
@@ -509,9 +449,6 @@ Enable/disable security trimming functionality of the component.
 If true security trimming is enabled.
 
 
-
-#### Returns
-0
 
 
 ### SecurityTrimming(System.Action\<Kendo.Mvc.UI.SecurityTrimmingBuilder\>)
@@ -536,9 +473,6 @@ The securityTrimming action.
 
 
 
-#### Returns
-0
-
 
 ### DataTextField(System.String)
 Sets the name of the field that will supply the item text.
@@ -558,9 +492,6 @@ Sets the name of the field that will supply the item text.
 The field name.
 
 
-
-#### Returns
-0
 
 
 ### DataUrlField(System.String)
@@ -582,9 +513,6 @@ The field name.
 
 
 
-#### Returns
-0
-
 
 ### DataSpriteCssClassField(System.String)
 Sets the name of the field that will supply the CSS class for the item sprite image.
@@ -605,9 +533,6 @@ The field name.
 
 
 
-#### Returns
-0
-
 
 ### DataImageUrlField(System.String)
 Sets the name of the field that will supply the URL for the item image.
@@ -627,9 +552,6 @@ Sets the name of the field that will supply the URL for the item image.
 The field name.
 
 
-
-#### Returns
-0
 
 
 ### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder\>)
@@ -655,9 +577,6 @@ The action that configures the DataSource.
 
 
 
-#### Returns
-0
-
 
 ### LoadOnDemand(System.Boolean)
 Allows the treeview to fetch the entire datasource at initialization time.
@@ -677,9 +596,6 @@ Allows the treeview to fetch the entire datasource at initialization time.
 Whether the datasource should be loaded on demand.
 
 
-
-#### Returns
-0
 
 
 

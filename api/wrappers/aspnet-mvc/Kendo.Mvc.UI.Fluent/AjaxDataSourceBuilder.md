@@ -16,9 +16,6 @@ Configures the URL for Update operation.
 
 
 
-#### Returns
-0
-
 
 ### Update(System.String,System.String)
 Sets controller and action for Update operation.
@@ -33,9 +30,6 @@ Action name
 Controller Name
 
 
-
-#### Returns
-0
 
 
 ### Update(System.String,System.String,System.Object)
@@ -55,17 +49,11 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Create(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Create operation.
 
 
-
-#### Returns
-0
 
 
 ### Create(System.String,System.String)
@@ -81,9 +69,6 @@ Action name
 Controller Name
 
 
-
-#### Returns
-0
 
 
 ### Create(System.String,System.String,System.Object)
@@ -103,17 +88,11 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Destroy(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Destroy operation.
 
 
-
-#### Returns
-0
 
 
 ### Destroy(System.String,System.String)
@@ -129,9 +108,6 @@ Action name
 Controller Name
 
 
-
-#### Returns
-0
 
 
 ### Destroy(System.String,System.String,System.Object)
@@ -151,9 +127,6 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Batch(System.Boolean)
 Determines if modifications will be sent to the server in batches or as individually requests.
@@ -165,9 +138,6 @@ Determines if modifications will be sent to the server in batches or as individu
 If true changes will be batched, otherwise false.
 
 
-
-#### Returns
-0
 
 
 

@@ -31,9 +31,6 @@ The legend labels font (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Color(System.String)
 Sets the legend labels color
@@ -54,9 +51,6 @@ Sets the legend labels color
 The labels color (CSS format).
 
 
-
-#### Returns
-0
 
 
 ### Background(System.String)
@@ -79,9 +73,6 @@ The background color.
 
 
 
-#### Returns
-0
-
 
 ### Position(Kendo.Mvc.UI.ChartLegendPosition)
 Sets the legend position
@@ -103,9 +94,6 @@ The legend position.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the legend visibility
@@ -126,9 +114,6 @@ Sets the legend visibility
 The legend visibility.
 
 
-
-#### Returns
-0
 
 
 ### Offset(System.Int32,System.Int32)
@@ -153,9 +138,6 @@ The legend X offset from its position.
 The legend Y offset from its position.
 
 
-
-#### Returns
-0
 
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -187,9 +169,6 @@ The legend top margin.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32)
 Sets the legend margin
@@ -210,9 +189,6 @@ Sets the legend margin
 The legend margin.
 
 
-
-#### Returns
-0
 
 
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -244,9 +220,6 @@ The legend left padding.
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the legend padding
@@ -267,9 +240,6 @@ Sets the legend padding
 The legend padding.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -298,9 +268,6 @@ The legend border dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the legend border
@@ -312,9 +279,6 @@ Configures the legend border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 

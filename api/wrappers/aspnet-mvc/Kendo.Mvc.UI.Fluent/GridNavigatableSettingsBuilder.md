@@ -24,8 +24,5 @@ Enables or disables keyboard navigation.
 
 
 
-#### Returns
-0
-
 
 

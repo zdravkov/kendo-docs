@@ -36,9 +36,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Change(System.String)
 Defines the name of the JavaScript function that will handle the the Change client-side event.
@@ -58,9 +55,6 @@ Defines the name of the JavaScript function that will handle the the Change clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Cancel(System.Func\<System.Object,System.Object\>)
@@ -88,9 +82,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Cancel(System.String)
 Defines the name of the JavaScript function that will handle the the Cancel client-side event.
@@ -110,9 +101,6 @@ Defines the name of the JavaScript function that will handle the the Cancel clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Edit(System.Func\<System.Object,System.Object\>)
@@ -140,9 +128,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Edit(System.String)
 Defines the name of the JavaScript function that will handle the the Edit client-side event.
@@ -162,9 +147,6 @@ Defines the name of the JavaScript function that will handle the the Edit client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Save(System.Func\<System.Object,System.Object\>)
@@ -192,9 +174,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Save(System.String)
 Defines the name of the JavaScript function that will handle the the Save client-side event.
@@ -214,9 +193,6 @@ Defines the name of the JavaScript function that will handle the the Save client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### SaveChanges(System.Func\<System.Object,System.Object\>)
@@ -244,9 +220,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### SaveChanges(System.String)
 Defines the name of the JavaScript function that will handle the the SaveChanges client-side event.
@@ -266,9 +239,6 @@ Defines the name of the JavaScript function that will handle the the SaveChanges
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DetailExpand(System.Func\<System.Object,System.Object\>)
@@ -296,9 +266,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DetailExpand(System.String)
 Defines the name of the JavaScript function that will handle the the DetailExpand client-side event.
@@ -318,9 +285,6 @@ Defines the name of the JavaScript function that will handle the the DetailExpan
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DetailInit(System.Func\<System.Object,System.Object\>)
@@ -348,9 +312,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DetailInit(System.String)
 Defines the name of the JavaScript function that will handle the the DetailInit client-side event.
@@ -370,9 +331,6 @@ Defines the name of the JavaScript function that will handle the the DetailInit 
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DetailCollapse(System.Func\<System.Object,System.Object\>)
@@ -400,9 +358,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DetailCollapse(System.String)
 Defines the name of the JavaScript function that will handle the the DetailCollapse client-side event.
@@ -422,9 +377,6 @@ Defines the name of the JavaScript function that will handle the the DetailColla
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Remove(System.Func\<System.Object,System.Object\>)
@@ -452,9 +404,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Remove(System.String)
 Defines the name of the JavaScript function that will handle the the Remove client-side event.
@@ -474,9 +423,6 @@ Defines the name of the JavaScript function that will handle the the Remove clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DataBound(System.Func\<System.Object,System.Object\>)
@@ -504,9 +450,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DataBound(System.String)
 Defines the name of the JavaScript function that will handle the the DataBound client-side event.
@@ -527,8 +470,51 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
+
+### DataBinding(System.Func\<System.Object,System.Object\>)
+Defines the name of the JavaScript function that will handle the the DataBinding client-side event.
+
+#### Example
+
+    @(Html.Kendo().Grid()
+        .Name("Grid")
+        .Events(events => events.DataBinding(
+        @<text>
+        function(e) {
+        //event handling code
+        }
+        </text>
+        ))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+### DataBinding(System.String)
+Defines the name of the JavaScript function that will handle the the DataBinding client-side event.
+
+#### Example
+
+    @(Html.Kendo().Grid()
+        .Name("Grid")
+        .Events(events => events.DataBinding("gridDataBinding"))
+        )
+        
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
+
+
 
 
 ### ColumnResize(System.Func\<System.Object,System.Object\>)
@@ -556,9 +542,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ColumnResize(System.String)
 Defines the name of the JavaScript function that will handle the the ColumnResize client-side event.
@@ -578,9 +561,6 @@ Defines the name of the JavaScript function that will handle the the ColumnResiz
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ColumnReorder(System.Func\<System.Object,System.Object\>)
@@ -608,9 +588,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ColumnReorder(System.String)
 Defines the name of the JavaScript function that will handle the the ColumnReorder client-side event.
@@ -630,9 +607,6 @@ Defines the name of the JavaScript function that will handle the the ColumnReord
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ColumnHide(System.Func\<System.Object,System.Object\>)
@@ -660,9 +634,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ColumnHide(System.String)
 Defines the name of the JavaScript function that will handle the the ColumnHide client-side event.
@@ -682,9 +653,6 @@ Defines the name of the JavaScript function that will handle the the ColumnHide 
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ColumnShow(System.Func\<System.Object,System.Object\>)
@@ -712,9 +680,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ColumnShow(System.String)
 Defines the name of the JavaScript function that will handle the the ColumnShow client-side event.
@@ -734,9 +699,6 @@ Defines the name of the JavaScript function that will handle the the ColumnShow 
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ColumnMenuInit(System.Func\<System.Object,System.Object\>)
@@ -764,9 +726,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ColumnMenuInit(System.String)
 Defines the name of the JavaScript function that will handle the ColumnMenuInit client-side event.
@@ -786,9 +745,6 @@ Defines the name of the JavaScript function that will handle the ColumnMenuInit 
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### FilterMenuInit(System.Func\<System.Object,System.Object\>)
@@ -816,9 +772,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### FilterMenuInit(System.String)
 Defines the name of the JavaScript function that will handle the FilterMenuInit client-side event.
@@ -838,9 +791,6 @@ Defines the name of the JavaScript function that will handle the FilterMenuInit 
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

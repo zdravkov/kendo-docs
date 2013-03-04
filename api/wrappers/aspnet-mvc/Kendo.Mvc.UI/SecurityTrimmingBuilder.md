@@ -16,17 +16,11 @@ Enables or disables security trimming
 
 
 
-#### Returns
-0
-
 
 ### HideParent(System.Boolean)
 Enables or disables whether to hide parent item which does not have accessible childrens
 
 
-
-#### Returns
-0
 
 
 

@@ -120,9 +120,6 @@ The route values of the Action method.
 
 
 
-#### Returns
-0
-
 
 ### LoadContentFrom(System.String,System.String)
 Sets the Url, which will be requested to return the content.
@@ -145,9 +142,6 @@ The action name.
 The controller name.
 
 
-
-#### Returns
-0
 
 
 ### LoadContentFrom(System.String,System.String,System.Object)
@@ -175,9 +169,6 @@ Route values.
 
 
 
-#### Returns
-0
-
 
 ### LoadContentFrom(System.String)
 Sets the Url, which will be requested to return the content.
@@ -198,9 +189,6 @@ The url.
 
 
 
-#### Returns
-0
-
 
 ### Content(System.String)
 Sets the HTML content which the tooltip should display as a string.
@@ -213,17 +201,23 @@ The action which renders the content.
 
 
 
-#### Returns
-0
+
+### ContentTemplateId(System.String)
+Sets the id of kendo template which will be used as tooltip content.
+
+
+#### Parameters
+
+##### value `System.String`
+The id of the template
+
+
 
 
 ### ContentHandler(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return the content for the tooltip.
 
 
-
-#### Returns
-0
 
 
 ### ContentHandler(System.String)
@@ -236,9 +230,6 @@ Sets JavaScript function which to return the content for the tooltip.
 JavaScript function name
 
 
-
-#### Returns
-0
 
 
 ### Animation(System.Boolean)
@@ -259,9 +250,6 @@ Whether the component animation is enabled.
 
 
 
-#### Returns
-0
-
 
 ### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
 Configures the animation effects of the panelbar.
@@ -281,26 +269,17 @@ The action that configures the animation.
 
 
 
-#### Returns
-0
-
 
 ### Width(System.Int32)
 Sets the width of the tooltip.
 
 
 
-#### Returns
-0
-
 
 ### Height(System.Int32)
 Sets the height of the tooltip.
 
 
-
-#### Returns
-0
 
 
 ### Deferred
@@ -325,9 +304,6 @@ Returns the internal view component.
 Renders the component.
 
 
-
-#### Returns
-0
 
 
 

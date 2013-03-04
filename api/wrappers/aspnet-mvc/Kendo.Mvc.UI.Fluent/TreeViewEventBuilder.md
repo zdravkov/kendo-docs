@@ -37,9 +37,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Collapse(System.String)
 Defines the name of the JavaScript function that will handle the the collapse client-side event.
@@ -59,9 +56,6 @@ Defines the name of the JavaScript function that will handle the the collapse cl
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DataBound(System.Func\<System.Object,System.Object\>)
@@ -90,9 +84,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DataBound(System.String)
 Defines the name of the JavaScript function that will handle the the dataBound client-side event.
@@ -112,9 +103,6 @@ Defines the name of the JavaScript function that will handle the the dataBound c
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Drag(System.Func\<System.Object,System.Object\>)
@@ -143,9 +131,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Drag(System.String)
 Defines the name of the JavaScript function that will handle the the drag client-side event.
@@ -165,9 +150,6 @@ Defines the name of the JavaScript function that will handle the the drag client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DragEnd(System.Func\<System.Object,System.Object\>)
@@ -196,9 +178,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DragEnd(System.String)
 Defines the name of the JavaScript function that will handle the the dragend client-side event.
@@ -218,9 +197,6 @@ Defines the name of the JavaScript function that will handle the the dragend cli
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DragStart(System.Func\<System.Object,System.Object\>)
@@ -249,9 +225,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DragStart(System.String)
 Defines the name of the JavaScript function that will handle the the dragstart client-side event.
@@ -271,9 +244,6 @@ Defines the name of the JavaScript function that will handle the the dragstart c
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Drop(System.Func\<System.Object,System.Object\>)
@@ -302,9 +272,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Drop(System.String)
 Defines the name of the JavaScript function that will handle the the drop client-side event.
@@ -324,9 +291,6 @@ Defines the name of the JavaScript function that will handle the the drop client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Expand(System.Func\<System.Object,System.Object\>)
@@ -355,9 +319,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Expand(System.String)
 Defines the name of the JavaScript function that will handle the the expand client-side event.
@@ -377,9 +338,6 @@ Defines the name of the JavaScript function that will handle the the expand clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Select(System.Func\<System.Object,System.Object\>)
@@ -408,9 +366,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String)
 Defines the name of the JavaScript function that will handle the the select client-side event.
@@ -430,9 +385,6 @@ Defines the name of the JavaScript function that will handle the the select clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

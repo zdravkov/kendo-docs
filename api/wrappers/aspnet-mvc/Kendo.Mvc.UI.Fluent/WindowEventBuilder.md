@@ -30,9 +30,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### Open(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the Open client-side event.
@@ -52,9 +49,6 @@ Defines the name of the JavaScript function that will handle the the Open client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Activate(System.String)
@@ -76,9 +70,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### Activate(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the Activate client-side event.
@@ -98,9 +89,6 @@ Defines the name of the JavaScript function that will handle the the Activate cl
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Deactivate(System.String)
@@ -122,9 +110,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### Deactivate(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the Deactivate client-side event.
@@ -144,9 +129,6 @@ Defines the name of the JavaScript function that will handle the the Deactivate 
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Close(System.String)
@@ -168,9 +150,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### Close(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the Close client-side event.
@@ -190,9 +169,6 @@ Defines the name of the JavaScript function that will handle the the Close clien
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DragStart(System.String)
@@ -214,9 +190,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### DragStart(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the DragStart client-side event.
@@ -236,9 +209,6 @@ Defines the name of the JavaScript function that will handle the the DragStart c
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DragEnd(System.String)
@@ -260,9 +230,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### DragEnd(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the DragEnd client-side event.
@@ -282,9 +249,6 @@ Defines the name of the JavaScript function that will handle the the DragEnd cli
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Resize(System.String)
@@ -306,9 +270,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### Resize(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the Resize client-side event.
@@ -328,9 +289,6 @@ Defines the name of the JavaScript function that will handle the the Resize clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Refresh(System.String)
@@ -352,9 +310,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### Refresh(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the Refresh client-side event.
@@ -374,9 +329,6 @@ Defines the name of the JavaScript function that will handle the the Refresh cli
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Error(System.String)
@@ -398,9 +350,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### Error(System.Func\<System.Object,System.Object\>)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
@@ -420,9 +369,6 @@ Defines the name of the JavaScript function that will handle the the Error clien
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

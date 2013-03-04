@@ -32,17 +32,11 @@ The client events action.
 
 
 
-#### Returns
-0
-
 
 ### Value(System.String)
 Sets the value of the picker input
 
 
-
-#### Returns
-0
 
 
 ### Opacity(System.Boolean)
@@ -64,9 +58,6 @@ Whether the user is allowed to change the color opacity.
 
 
 
-#### Returns
-0
-
 
 ### Palette(System.Collections.Generic.IEnumerable\<System.String\>)
 Sets the range of colors that the user can pick from.
@@ -86,9 +77,6 @@ Sets the range of colors that the user can pick from.
 A list of colors.
 
 
-
-#### Returns
-0
 
 
 ### Palette(Kendo.Mvc.UI.ColorPickerPalette)
@@ -110,9 +98,6 @@ One of the preset palettes of colors
 
 
 
-#### Returns
-0
-
 
 ### Enable(System.Boolean)
 Enables or disables the picker.
@@ -132,9 +117,6 @@ Enables or disables the picker.
 Whether the picker is enabled
 
 
-
-#### Returns
-0
 
 
 ### Buttons(System.Boolean)
@@ -156,9 +138,6 @@ Whether the buttons should be shown
 
 
 
-#### Returns
-0
-
 
 ### ToolIcon(System.String)
 Shows a tool icon.
@@ -178,9 +157,6 @@ Shows a tool icon.
 The CSS class that will be used for styling
 
 
-
-#### Returns
-0
 
 
 ### TileSize(System.Int32)
@@ -202,9 +178,6 @@ The tile size (for square tiles)
 
 
 
-#### Returns
-0
-
 
 ### TileSize(System.Action\<Kendo.Mvc.UI.Fluent.PaletteSizeBuilder\>)
 Sets the size of the palette tiles
@@ -224,9 +197,6 @@ Sets the size of the palette tiles
 The tile size (for square tiles)
 
 
-
-#### Returns
-0
 
 
 

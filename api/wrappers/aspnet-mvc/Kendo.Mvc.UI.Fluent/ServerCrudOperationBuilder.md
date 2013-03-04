@@ -22,9 +22,6 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Action(System.String,System.String,System.Object)
 Sets the action, contoller and route values for the operation.
@@ -42,9 +39,6 @@ Controller name
 Route values
 
 
-
-#### Returns
-0
 
 
 ### Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
@@ -64,9 +58,6 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Action(System.String,System.String)
 Sets the action and contoller values for the operation.
@@ -81,9 +72,6 @@ Action name
 Controller name
 
 
-
-#### Returns
-0
 
 
 ### Route(System.String,System.Web.Routing.RouteValueDictionary)
@@ -100,9 +88,6 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Route(System.String,System.Object)
 Sets the route name and values for the operation.
@@ -118,9 +103,6 @@ Route values
 
 
 
-#### Returns
-0
-
 
 ### Route(System.String)
 Sets the route name for the operation.
@@ -132,9 +114,6 @@ Sets the route name for the operation.
 
 
 
-
-#### Returns
-0
 
 
 

@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:rangeSlider-tooltip\>
 
-Configuration of the
+Configuration of the RangeSlider tooltip.
 
 #### Example
     <kendo:rangeSlider>
@@ -18,7 +18,7 @@ Configuration of the
 
 ### enabled `boolean`
 
-Disables (
+Disables (false) or enables (true) the tooltip of the RangeSlider.
 
 #### Example
     <kendo:rangeSlider-tooltip enabled="enabled">
@@ -27,7 +27,7 @@ Disables (
 ### format `String`
 
 Format string for the text of the tooltip. Note: The applied format will also influence the appearance of
-the
+the RangeSlider tick labels.
 
 #### Example
     <kendo:rangeSlider-tooltip format="format">

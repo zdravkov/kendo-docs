@@ -36,9 +36,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Int32,System.String)
 Sets the bubble border
@@ -66,26 +63,17 @@ The bubble border color (CSS syntax).
 
 
 
-#### Returns
-0
-
 
 ### Markers(System.Action\<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder\>)
 Not applicable to bubble series
 
 
 
-#### Returns
-0
-
 
 ### Markers(System.Boolean)
 Not applicable to bubble series
 
 
-
-#### Returns
-0
 
 
 ### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartBubbleSeriesHighlightBuilder\>)
@@ -98,9 +86,6 @@ Configures the bubble highlight
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

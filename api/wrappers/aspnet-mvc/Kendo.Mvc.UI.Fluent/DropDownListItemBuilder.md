@@ -30,9 +30,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### Value(System.String)
 Sets the value for the item.
@@ -52,9 +49,6 @@ Sets the value for the item.
 The value.
 
 
-
-#### Returns
-0
 
 
 ### Selected(System.Boolean)
@@ -78,9 +72,6 @@ Define when the item will be expanded on intial render.
 If true the item will be selected.
 
 
-
-#### Returns
-0
 
 
 

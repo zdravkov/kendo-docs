@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-negativeValues\>
 
-The settings for negative values.
+The settings for negative values.** Applicable only to bubble series. **
 
 #### Example
     <kendo:chart-seriesItem>

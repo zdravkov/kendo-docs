@@ -37,8 +37,5 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 

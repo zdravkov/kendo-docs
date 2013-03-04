@@ -37,9 +37,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DataBound(System.String)
 Defines the name of the JavaScript function that will handle the the DataBound client-side event.
@@ -59,9 +56,6 @@ Defines the name of the JavaScript function that will handle the the DataBound c
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DataBinding(System.Func\<System.Object,System.Object\>)
@@ -90,9 +84,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DataBinding(System.String)
 Defines the name of the JavaScript function that will handle the the DataBinding client-side event.
@@ -112,9 +103,6 @@ Defines the name of the JavaScript function that will handle the the DataBinding
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### SeriesClick(System.Func\<System.Object,System.Object\>)
@@ -143,9 +131,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### SeriesClick(System.String)
 Defines the name of the JavaScript function that will handle the the SeriesClick client-side event.
@@ -165,9 +150,6 @@ Defines the name of the JavaScript function that will handle the the SeriesClick
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### SeriesHover(System.Func\<System.Object,System.Object\>)
@@ -196,9 +178,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### SeriesHover(System.String)
 Defines the name of the JavaScript function that will handle the the SeriesHover client-side event.
@@ -218,9 +197,6 @@ Defines the name of the JavaScript function that will handle the the SeriesHover
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### AxisLabelClick(System.Func\<System.Object,System.Object\>)
@@ -249,9 +225,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### AxisLabelClick(System.String)
 Defines the name of the JavaScript function that will handle the the AxisLabelClick client-side event.
@@ -272,9 +245,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### DragStart(System.String)
 Defines the name of the JavaScript function that will handle the the DragStart client-side event.
@@ -294,9 +264,6 @@ Defines the name of the JavaScript function that will handle the the DragStart c
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DragStart(System.Func\<System.Object,System.Object\>)
@@ -325,9 +292,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Drag(System.String)
 Defines the name of the JavaScript function that will handle the the Drag client-side event.
@@ -347,9 +311,6 @@ Defines the name of the JavaScript function that will handle the the Drag client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Drag(System.Func\<System.Object,System.Object\>)
@@ -378,9 +339,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### DragEnd(System.String)
 Defines the name of the JavaScript function that will handle the the DragEnd client-side event.
@@ -400,9 +358,6 @@ Defines the name of the JavaScript function that will handle the the DragEnd cli
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### DragEnd(System.Func\<System.Object,System.Object\>)
@@ -431,9 +386,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### PlotAreaClick(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the PlotAreaClick client-side event
@@ -461,9 +413,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### PlotAreaClick(System.String)
 Defines the name of the JavaScript function that will handle the the PlotAreaClick client-side event.
@@ -484,9 +433,6 @@ The name of the JavaScript function that will handle the event.
 
 
 
-#### Returns
-0
-
 
 ### ZoomStart(System.String)
 Defines the name of the JavaScript function that will handle the the ZoomStart client-side event.
@@ -506,9 +452,6 @@ Defines the name of the JavaScript function that will handle the the ZoomStart c
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ZoomStart(System.Func\<System.Object,System.Object\>)
@@ -537,9 +480,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Zoom(System.String)
 Defines the name of the JavaScript function that will handle the the Zoom client-side event.
@@ -559,9 +499,6 @@ Defines the name of the JavaScript function that will handle the the Zoom client
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Zoom(System.Func\<System.Object,System.Object\>)
@@ -590,9 +527,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ZoomEnd(System.String)
 Defines the name of the JavaScript function that will handle the the ZoomEnd client-side event.
@@ -612,9 +546,6 @@ Defines the name of the JavaScript function that will handle the the ZoomEnd cli
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ZoomEnd(System.Func\<System.Object,System.Object\>)
@@ -643,9 +574,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### SelectStart(System.String)
 Defines the name of the JavaScript function that will handle the the SelectStart client-side event.
@@ -665,9 +593,6 @@ Defines the name of the JavaScript function that will handle the the SelectStart
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### SelectStart(System.Func\<System.Object,System.Object\>)
@@ -696,9 +621,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
@@ -718,9 +640,6 @@ Defines the name of the JavaScript function that will handle the the Select clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Select(System.Func\<System.Object,System.Object\>)
@@ -749,9 +668,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### SelectEnd(System.String)
 Defines the name of the JavaScript function that will handle the the SelectEnd client-side event.
@@ -771,9 +687,6 @@ Defines the name of the JavaScript function that will handle the the SelectEnd c
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### SelectEnd(System.Func\<System.Object,System.Object\>)
@@ -801,9 +714,6 @@ Defines the inline handler of the SelectEnd client-side event
 The handler code wrapped in a text tag (Razor syntax).
 
 
-
-#### Returns
-0
 
 
 

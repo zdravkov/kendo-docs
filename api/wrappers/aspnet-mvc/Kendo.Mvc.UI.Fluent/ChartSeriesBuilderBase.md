@@ -35,9 +35,6 @@ The title.
 
 
 
-#### Returns
-0
-
 
 ### GroupNameTemplate(System.String)
 Sets the name template for auto-generated series when binding to grouped data.
@@ -66,9 +63,6 @@ The name template for auto-generated series when binding to grouped data.
 
 
 
-#### Returns
-0
-
 
 ### Opacity(System.Double)
 Sets the series opacity.
@@ -90,9 +84,6 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-#### Returns
-0
-
 
 ### Color(System.String)
 Sets the bar fill color
@@ -113,9 +104,6 @@ Sets the bar fill color
 The bar fill color (CSS syntax).
 
 
-
-#### Returns
-0
 
 
 ### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
@@ -142,9 +130,6 @@ Use the configurator to set data tooltip options.
 
 
 
-#### Returns
-0
-
 
 ### Tooltip(System.Boolean)
 Sets the data point tooltip visibility.
@@ -165,9 +150,6 @@ A value indicating if the data point tooltip should be displayed.
             The tooltip is not visible by default.
 
 
-
-#### Returns
-0
 
 
 ### Axis(System.String)
@@ -191,9 +173,6 @@ Sets the axis name to use for this series.
 The axis name for this series.
 
 
-
-#### Returns
-0
 
 
 

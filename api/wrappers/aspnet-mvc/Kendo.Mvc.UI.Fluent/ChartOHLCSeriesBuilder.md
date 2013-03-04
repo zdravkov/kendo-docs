@@ -40,9 +40,6 @@ Close aggregate name.
 
 
 
-#### Returns
-0
-
 
 ### Gap(System.Double)
 Set distance between category clusters.
@@ -60,9 +57,6 @@ Set distance between category clusters.
         
 
 
-
-#### Returns
-0
 
 
 ### Spacing(System.Double)
@@ -84,9 +78,6 @@ Value of 1 means that the distance between points in the same category.
             The default value is 0.3
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -114,9 +105,6 @@ The points border color (CSS syntax).
 The points border dash type.
 
 
-
-#### Returns
-0
 
 
 ### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -148,9 +136,6 @@ The lines dashType.
 
 
 
-#### Returns
-0
-
 
 ### Line(System.Int32)
 Configures the ohlc line width.
@@ -162,9 +147,6 @@ Configures the ohlc line width.
 The lines width.
 
 
-
-#### Returns
-0
 
 
 ### Line(System.Int32,System.String)
@@ -180,9 +162,6 @@ The lines width.
 The lines color.
 
 
-
-#### Returns
-0
 
 
 ### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
@@ -208,9 +187,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder\>)
 Configures the series highlight
@@ -222,9 +198,6 @@ Configures the series highlight
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

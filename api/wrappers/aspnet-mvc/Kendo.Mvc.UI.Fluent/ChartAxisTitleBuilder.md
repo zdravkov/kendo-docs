@@ -35,9 +35,6 @@ The text of the axis title.
 
 
 
-#### Returns
-0
-
 
 ### Font(System.String)
 Sets the axis title font.
@@ -62,9 +59,6 @@ Sets the axis title font.
 The axis title font (CSS format).
 
 
-
-#### Returns
-0
 
 
 ### Background(System.String)
@@ -91,9 +85,6 @@ The axis background color.
 
 
 
-#### Returns
-0
-
 
 ### Color(System.String)
 Sets the axis title text color.
@@ -119,9 +110,6 @@ The axis text color.
 
 
 
-#### Returns
-0
-
 
 ### Position(Kendo.Mvc.UI.ChartAxisTitlePosition)
 Sets the axis title position.
@@ -146,9 +134,6 @@ Sets the axis title position.
 The axis title position.
 
 
-
-#### Returns
-0
 
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -184,9 +169,6 @@ The axis title left margin.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32)
 Sets the axis title margin.
@@ -211,9 +193,6 @@ Sets the axis title margin.
 The axis title margin.
 
 
-
-#### Returns
-0
 
 
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -249,9 +228,6 @@ The axis title left padding.
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the axis title padding
@@ -276,9 +252,6 @@ Sets the axis title padding
 The axis title padding.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -311,9 +284,6 @@ The axis title dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the title border
@@ -325,9 +295,6 @@ Configures the title border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 ### Opacity(System.Double)
@@ -354,9 +321,6 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
 
 
-
-#### Returns
-0
 
 
 

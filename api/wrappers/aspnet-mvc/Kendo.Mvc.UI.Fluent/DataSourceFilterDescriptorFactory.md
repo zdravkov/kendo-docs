@@ -22,9 +22,6 @@ Member access expression which describes the member
 
 
 
-#### Returns
-0
-
 
 ### Add(System.Linq.Expressions.Expression\<System.Func\<T,System.Nullable\<System.Boolean\>\>\>)
 Specifies the member on which the filter should be applied.
@@ -36,9 +33,6 @@ Specifies the member on which the filter should be applied.
 Member access expression which describes the member
 
 
-
-#### Returns
-0
 
 
 ### AddT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
@@ -52,9 +46,6 @@ Member access expression which describes the member
 
 
 
-#### Returns
-0
-
 
 ### Add(System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
 Specifies the member on which the filter should be applied.
@@ -66,9 +57,6 @@ Specifies the member on which the filter should be applied.
 Member access expression which describes the member
 
 
-
-#### Returns
-0
 
 
 

@@ -22,9 +22,6 @@ The tooltip configuration action
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the crosshair visible
@@ -54,9 +51,6 @@ Sets the crosshair visible
 The crosshair visible.
 
 
-
-#### Returns
-0
 
 
 

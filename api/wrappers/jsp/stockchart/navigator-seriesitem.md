@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-navigator-seriesItem\>
 
-Array of series definitions.
+Array of series definitions.Accepts the same options as the root series collection.Omitting the array and specifying a single series is also acceptable.
 
 #### Example
     <kendo:stockChart-navigator-series>
@@ -18,7 +18,8 @@ Array of series definitions.
 
 ### aggregate `String`
 
-Aggregate function for date series.
+Aggregate function for date series.This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem aggregate="aggregate">
@@ -26,7 +27,7 @@ Aggregate function for date series.
 
 ### axis `String`
 
-The name of the value axis to use.
+The name of the value axis to use.** Applicable to area, column, line, ohlc and candlestick series **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem axis="axis">
@@ -34,7 +35,7 @@ The name of the value axis to use.
 
 ### closeField `String`
 
-The data field containing the close value.
+The data field containing the close value.** Available for candlestick and ohlc series only **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem closeField="closeField">
@@ -50,7 +51,7 @@ The series base color.
 
 ### colorField `String`
 
-The data field containing the point color.
+The data field containing the point color.** Applicable for column, candlestick and ohlc series. **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem colorField="colorField">
@@ -58,7 +59,7 @@ The data field containing the point color.
 
 ### dashType `String`
 
-The series line dash type.
+The series line dash type.** Applicable only to line series **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem dashType="dashType">
@@ -74,7 +75,7 @@ Array of data items. The data item type can be either a:
 
 ### downColor `String`
 
-The series color when open value is smoller then close value.
+The series color when open value is smoller then close value.** Available for candlestick series only **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem downColor="downColor">
@@ -82,7 +83,7 @@ The series color when open value is smoller then close value.
 
 ### downColorField `String`
 
-The data field containing the body color.
+The data field containing the body color.** Available for candlestick series only **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem downColorField="downColorField">
@@ -98,7 +99,7 @@ The data field containing the series value.
 
 ### gap `float`
 
-The distance between category clusters.
+The distance between category clusters.** Applicable for column, candlestick and ohlc series. **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem gap="gap">
@@ -106,7 +107,7 @@ The distance between category clusters.
 
 ### groupNameTemplate `String`
 
-Name template for auto-generated series when binding to grouped data.
+Name template for auto-generated series when binding to grouped data.Template variables:
 
 #### Example
     <kendo:stockChart-navigator-seriesItem groupNameTemplate="groupNameTemplate">
@@ -114,7 +115,7 @@ Name template for auto-generated series when binding to grouped data.
 
 ### highField `String`
 
-The data field containing the high value.
+The data field containing the high value.** Available for candlestick and ohlc series only **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem highField="highField">
@@ -122,7 +123,7 @@ The data field containing the high value.
 
 ### line `String`
 
-Line options. Further configuration is available via [kendo:stockChart-navigator-seriesItem-line](#kendo-stockChart-navigator-seriesItem-line). 
+Line options.** Applicable to area, candlestick and ohlc series. ** Further configuration is available via [kendo:stockChart-navigator-seriesItem-line](#kendo-stockChart-navigator-seriesItem-line). 
 
 #### Example
     <kendo:stockChart-navigator-seriesItem line="line">
@@ -130,7 +131,7 @@ Line options. Further configuration is available via [kendo:stockChart-navigator
 
 ### lowField `String`
 
-The data field containing the low value.
+The data field containing the low value.** Available for candlestick and ohlc series **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem lowField="lowField">
@@ -138,7 +139,7 @@ The data field containing the low value.
 
 ### missingValues `String`
 
-Configures the behavior for handling missing values.
+Configures the behavior for handling missing values.** Applicable for area and line series. **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem missingValues="missingValues">
@@ -162,7 +163,7 @@ The series opacity.
 
 ### openField `String`
 
-The data field containing the open value.
+The data field containing the open value.** Available for candlestick and ohlc series **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem openField="openField">
@@ -170,7 +171,7 @@ The data field containing the open value.
 
 ### spacing `float`
 
-Space between points as proportion of the point width.
+Space between points as proportion of the point width.Available for column, candlestick and ohlc series.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem spacing="spacing">
@@ -195,7 +196,7 @@ The type of the series. Available types:
 
 ### width `float`
 
-The line width.
+The line width.** Applicable for area and line series. **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem width="width">
@@ -206,7 +207,7 @@ The line width.
 
 ### kendo:stockChart-navigator-seriesItem-border
 
-The border of the points.
+The border of the points.** Applicable to column, ohlc and candlestick series **
 
 More documentation is available at [kendo:stockChart-navigator-seriesItem-border](stockchart/navigator-seriesitem-border).
 
@@ -218,7 +219,7 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-border
 
 ### kendo:stockChart-navigator-seriesItem-highlight
 
-Configures the appearance of highlighted points.
+Configures the appearance of highlighted points.** Applicable to candlestick and ohlc series. **
 
 More documentation is available at [kendo:stockChart-navigator-seriesItem-highlight](stockchart/navigator-seriesitem-highlight).
 
@@ -242,7 +243,7 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-labels
 
 ### kendo:stockChart-navigator-seriesItem-line
 
-Line options.
+Line options.** Applicable to area, candlestick and ohlc series. **
 
 More documentation is available at [kendo:stockChart-navigator-seriesItem-line](stockchart/navigator-seriesitem-line).
 
@@ -254,7 +255,7 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-line](
 
 ### kendo:stockChart-navigator-seriesItem-markers
 
-Marker options.
+Marker options.** Applicable for area and line series. **
 
 More documentation is available at [kendo:stockChart-navigator-seriesItem-markers](stockchart/navigator-seriesitem-markers).
 

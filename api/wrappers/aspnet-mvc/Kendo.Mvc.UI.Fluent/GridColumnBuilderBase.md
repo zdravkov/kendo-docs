@@ -35,9 +35,6 @@ The text.
 
 
 
-#### Returns
-0
-
 
 ### HeaderHtmlAttributes(System.Object)
 Sets the HTML attributes applied to the header cell of the column.
@@ -57,9 +54,6 @@ Sets the HTML attributes applied to the header cell of the column.
 The attributes.
 
 
-
-#### Returns
-0
 
 
 ### HeaderHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
@@ -81,9 +75,6 @@ The attributes.
 
 
 
-#### Returns
-0
-
 
 ### FooterHtmlAttributes(System.Object)
 Sets the HTML attributes applied to the footer cell of the column.
@@ -103,9 +94,6 @@ Sets the HTML attributes applied to the footer cell of the column.
 The attributes.
 
 
-
-#### Returns
-0
 
 
 ### FooterHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
@@ -127,9 +115,6 @@ The attributes.
 
 
 
-#### Returns
-0
-
 
 ### HtmlAttributes(System.Object)
 Sets the HTML attributes applied to the content cell of the column.
@@ -149,9 +134,6 @@ Sets the HTML attributes applied to the content cell of the column.
 The attributes.
 
 
-
-#### Returns
-0
 
 
 ### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
@@ -173,9 +155,6 @@ The attributes.
 
 
 
-#### Returns
-0
-
 
 ### Width(System.Int32)
 Sets the width of the column in pixels.
@@ -195,9 +174,6 @@ Sets the width of the column in pixels.
 The width in pixels.
 
 
-
-#### Returns
-0
 
 
 ### Width(System.String)
@@ -226,9 +202,6 @@ The width to set.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Makes the column visible or not. By default all columns are visible. Invisible columns are not rendered in the output HTML.
@@ -242,9 +215,6 @@ Makes the column visible or not. By default all columns are visible. Invisible c
         
 
 
-
-#### Returns
-0
 
 
 ### Hidden(System.Boolean)
@@ -260,9 +230,6 @@ Makes the column hidden or not. By default all columns are not hidden. Hidden co
 
 
 
-#### Returns
-0
-
 
 ### Hidden
 Hides a column. By default all columns are not hidden. Hidden columns are rendered in the output HTML but are hidden.
@@ -276,9 +243,6 @@ Hides a column. By default all columns are not hidden. Hidden columns are render
         
 
 
-
-#### Returns
-0
 
 
 ### IncludeInMenu(System.Boolean)
@@ -295,9 +259,6 @@ Specifys whether the columns should be included in column header menu. By defaul
 
 
 
-#### Returns
-0
-
 
 ### HeaderTemplate(System.Action)
 Sets the header template for the column.
@@ -309,9 +270,6 @@ Sets the header template for the column.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 ### HeaderTemplate(System.String)
@@ -325,9 +283,6 @@ The string defining the template.
 
 
 
-#### Returns
-0
-
 
 ### HeaderTemplate(System.Func\<System.Object,System.Object\>)
 Sets the header template for the column.
@@ -339,9 +294,6 @@ Sets the header template for the column.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 ### FooterTemplate(System.Action)
@@ -355,9 +307,6 @@ The action defining the template.
 
 
 
-#### Returns
-0
-
 
 ### FooterTemplate(System.String)
 Sets the footer template for the column.
@@ -370,9 +319,6 @@ The string defining the template.
 
 
 
-#### Returns
-0
-
 
 ### FooterTemplate(System.Func\<System.Object,System.Object\>)
 Sets the footer template for the column.
@@ -384,9 +330,6 @@ Sets the footer template for the column.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 

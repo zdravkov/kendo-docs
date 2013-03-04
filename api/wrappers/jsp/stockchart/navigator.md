@@ -16,12 +16,50 @@ The data navigator configuration options.
 
 ## Configuration Attributes
 
+### autoBind `boolean`
+
+Indicates whether the navigator will call read on the data source initially.
+Applicable only when using a dedicated navigator data source.
+
+#### Example
+    <kendo:stockChart-navigator autoBind="autoBind">
+    </kendo:stockChart-navigator>
+
+### dateField `String`
+
+The field containing the point date.
+It is used as a default field for the navigator axis.The data item field value must be either:
+
+#### Example
+    <kendo:stockChart-navigator dateField="dateField">
+    </kendo:stockChart-navigator>
+
+### visible `boolean`
+
+The visibility of the navigator.
+
+#### Example
+    <kendo:stockChart-navigator visible="visible">
+    </kendo:stockChart-navigator>
+
 
 ##  Configuration JSP Tags
 
+### kendo:stockChart-navigator-hint
+
+Default options for the navigator hint.
+
+More documentation is available at [kendo:stockChart-navigator-hint](stockchart/navigator-hint).
+
+#### Example
+
+    <kendo:stockChart-navigator>
+        <kendo:stockChart-navigator-hint></kendo:stockChart-navigator-hint>
+    </kendo:stockChart-navigator>
+
 ### kendo:stockChart-navigator-select
 
-Specifies the initially selected range.
+Specifies the initially selected range.The full range of values is shown if no range is specified.
 
 More documentation is available at [kendo:stockChart-navigator-select](stockchart/navigator-select).
 
@@ -33,7 +71,7 @@ More documentation is available at [kendo:stockChart-navigator-select](stockchar
 
 ### kendo:stockChart-navigator-series
 
-Array of series definitions.
+Array of series definitions.Accepts the same options as the root series collection.Omitting the array and specifying a single series is also acceptable.
 
 More documentation is available at [kendo:stockChart-navigator-series](stockchart/navigator-series).
 

@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-seriesItem-line\>
 
-Line options.
+Line options.** Applicable to area, candlestick and ohlc series. **
 
 #### Example
     <kendo:stockChart-seriesItem>

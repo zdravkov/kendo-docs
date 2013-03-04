@@ -37,7 +37,8 @@ The font style of the labels.
 
 The template of the labels.
 Template variables:
-*
+*   text - the text the legend item.
+*   series - the data series.
 
 #### Example
     <kendo:stockChart-legend-labels template="template">

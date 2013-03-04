@@ -22,9 +22,6 @@ The lines width.
 
 
 
-#### Returns
-0
-
 
 ### Line(System.Int32,System.String)
 Configures the candlestick highlight lines.
@@ -40,9 +37,6 @@ The lines color.
 
 
 
-#### Returns
-0
-
 
 ### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
 Configures the candlestick highlight chart lines.
@@ -54,9 +48,6 @@ Configures the candlestick highlight chart lines.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

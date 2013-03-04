@@ -36,9 +36,6 @@ The connectors width.
 
 
 
-#### Returns
-0
-
 
 ### Color(System.String)
 Sets the connectors color
@@ -65,9 +62,6 @@ The connectors color.
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the connectors padding
@@ -93,9 +87,6 @@ Sets the connectors padding
 The connectors padding.
 
 
-
-#### Returns
-0
 
 
 

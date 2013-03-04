@@ -16,17 +16,11 @@ Specifies member on which aggregates to be calculated.
 
 
 
-#### Returns
-0
-
 
 ### Add(System.String,System.Type)
 Specifies member on which aggregates to be calculated.
 
 
-
-#### Returns
-0
 
 
 

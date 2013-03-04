@@ -33,9 +33,6 @@ The client events configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Enable(System.Boolean)
 Enables or disables the component.
@@ -55,9 +52,6 @@ Enables or disables the component.
 true if the component should be enabled, false otherwise; the default is true.
 
 
-
-#### Returns
-0
 
 
 ### Multiple(System.Boolean)
@@ -79,9 +73,6 @@ true if multiple file selection should be enabled, false otherwise; the default 
 
 
 
-#### Returns
-0
-
 
 ### ShowFileList(System.Boolean)
 Sets a value indicating whether to show the list of uploaded files
@@ -93,9 +84,6 @@ Sets a value indicating whether to show the list of uploaded files
 true if the list of uploaded files should be visible, false otherwise; true by default
 
 
-
-#### Returns
-0
 
 
 ### Async(System.Action\<Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder\>)
@@ -120,9 +108,6 @@ Use builder to set different asynchronous uploading options.
 
 
 
-#### Returns
-0
-
 
 ### Messages(System.Action\<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder\>)
 Use it to configure asynchronous uploading.
@@ -145,9 +130,6 @@ Use it to configure asynchronous uploading.
 Use builder to set different asynchronous uploading options.
 
 
-
-#### Returns
-0
 
 
 

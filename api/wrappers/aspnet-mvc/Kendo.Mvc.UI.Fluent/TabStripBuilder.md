@@ -34,9 +34,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.TabStripEventBuilder\>)
 Configures the client-side events.
@@ -59,9 +56,6 @@ The client events action.
 
 
 
-#### Returns
-0
-
 
 ### Animation(System.Boolean)
 Configures the animation effects of the tabstrip.
@@ -81,9 +75,6 @@ Whether the component animation is enabled.
 
 
 
-#### Returns
-0
-
 
 ### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
 Configures the animation effects of the tabstrip.
@@ -102,9 +93,6 @@ Configures the animation effects of the tabstrip.
 The action that configures the animation.
 
 
-
-#### Returns
-0
 
 
 ### BindTo(System.String,System.Action\<Kendo.Mvc.UI.TabStripItem,Kendo.Mvc.SiteMapNode\>)
@@ -131,9 +119,6 @@ The action to configure the item.
 
 
 
-#### Returns
-0
-
 
 ### BindTo(System.String)
 Binds the tabstrip to a sitemap.
@@ -153,9 +138,6 @@ Binds the tabstrip to a sitemap.
 The view data key.
 
 
-
-#### Returns
-0
 
 
 ### BindToT1(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.TabStripItem,T1\>)
@@ -183,9 +165,6 @@ The action executed for every data bound item.
 
 
 
-#### Returns
-0
-
 
 ### SelectedIndex(System.Int32)
 Selects the item at the specified index.
@@ -210,9 +189,6 @@ Selects the item at the specified index.
 The index.
 
 
-
-#### Returns
-0
 
 
 ### ItemAction(System.Action\<Kendo.Mvc.UI.TabStripItem\>)
@@ -239,9 +215,6 @@ Action, which will be executed for each item.
 
 
 
-#### Returns
-0
-
 
 ### HighlightPath(System.Boolean)
 Select item depending on the current URL.
@@ -262,9 +235,6 @@ If true the item will be highlighted.
 
 
 
-#### Returns
-0
-
 
 ### SecurityTrimming(System.Boolean)
 Enable/disable security trimming functionality of the component.
@@ -284,9 +254,6 @@ Enable/disable security trimming functionality of the component.
 If true security trimming is enabled.
 
 
-
-#### Returns
-0
 
 
 

@@ -12,7 +12,8 @@ A JSP tag representing Kendo Upload.
 
 ### enabled `boolean`
 
-Enables (
+Enables (true) or disables (false) an Upload. A disabled
+Upload may be re-enabled via enable().
 
 #### Example
     <kendo:upload enabled="enabled">
@@ -20,7 +21,9 @@ Enables (
 
 ### multiple `boolean`
 
-Enables (
+Enables (true) or disables (false) the ability to select multiple files.
+If false, users will be able to select only one file at a time. Note: This option does not
+limit the total number of uploaded files in an asynchronous configuration.
 
 #### Example
     <kendo:upload multiple="multiple">
@@ -28,7 +31,9 @@ Enables (
 
 ### showFileList `boolean`
 
-Enables (
+Enables (true) or disables (false) the ability to display a file listing
+for uploading a file(s). Disabling a file listing may be useful you wish to customize the UI; use the
+client-side events to build your own UI.
 
 #### Example
     <kendo:upload showFileList="showFileList">
@@ -40,6 +45,8 @@ Enables (
 ### kendo:upload-async
 
 Configures the ability to upload a file(s) in an asynchronous manner. Please refer to the
+async mode help topic
+for more details.
 
 More documentation is available at [kendo:upload-async](upload/async).
 
@@ -66,7 +73,8 @@ More documentation is available at [kendo:upload-localization](upload/localizati
 
 ### cancel `String`
 
-Fires when the upload has been cancelled while in progress.
+Fires when the upload has been cancelled while in progress.Note: The cancel event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload cancel="handle_cancel">
@@ -79,7 +87,8 @@ Fires when the upload has been cancelled while in progress.
 
 ### complete `String`
 
-Fires when all active uploads have completed either successfully or with errors.
+Fires when all active uploads have completed either successfully or with errors.Note: The complete event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload complete="handle_complete">
@@ -92,7 +101,8 @@ Fires when all active uploads have completed either successfully or with errors.
 
 ### error `String`
 
-Fires when an upload / remove operation has failed.
+Fires when an upload / remove operation has failed.Note: The error event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload error="handle_error">
@@ -105,7 +115,8 @@ Fires when an upload / remove operation has failed.
 
 ### progress `String`
 
-Fires when upload progress data is available.
+Fires when upload progress data is available.Note: The progress event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload progress="handle_progress">
@@ -146,7 +157,8 @@ occurring.
 
 ### success `String`
 
-Fires when an upload / remove operation has been completed successfully.
+Fires when an upload / remove operation has been completed successfully.Note: The success event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload success="handle_success">
@@ -160,7 +172,8 @@ Fires when an upload / remove operation has been completed successfully.
 ### upload `String`
 
 Fires when one or more files are about to be uploaded.
-Cancelling the event will prevent the upload.
+Cancelling the event will prevent the upload.Note: The upload event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload upload="handle_upload">
@@ -175,7 +188,8 @@ Cancelling the event will prevent the upload.
 
 ### kendo:upload-cancel
 
-Fires when the upload has been cancelled while in progress.
+Fires when the upload has been cancelled while in progress.Note: The cancel event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload>
@@ -190,7 +204,8 @@ Fires when the upload has been cancelled while in progress.
 
 ### kendo:upload-complete
 
-Fires when all active uploads have completed either successfully or with errors.
+Fires when all active uploads have completed either successfully or with errors.Note: The complete event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload>
@@ -205,7 +220,8 @@ Fires when all active uploads have completed either successfully or with errors.
 
 ### kendo:upload-error
 
-Fires when an upload / remove operation has failed.
+Fires when an upload / remove operation has failed.Note: The error event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload>
@@ -220,7 +236,8 @@ Fires when an upload / remove operation has failed.
 
 ### kendo:upload-progress
 
-Fires when upload progress data is available.
+Fires when upload progress data is available.Note: The progress event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload>
@@ -267,7 +284,8 @@ occurring.
 
 ### kendo:upload-success
 
-Fires when an upload / remove operation has been completed successfully.
+Fires when an upload / remove operation has been completed successfully.Note: The success event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload>
@@ -283,7 +301,8 @@ Fires when an upload / remove operation has been completed successfully.
 ### kendo:upload-upload
 
 Fires when one or more files are about to be uploaded.
-Cancelling the event will prevent the upload.
+Cancelling the event will prevent the upload.Note: The upload event fires only when the upload is in
+async mode.
 
 #### Example
     <kendo:upload>

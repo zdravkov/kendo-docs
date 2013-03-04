@@ -30,9 +30,6 @@ The axis minimum value.
 
 
 
-#### Returns
-0
-
 
 ### Max(System.Double)
 Sets the axis maximum value.
@@ -53,9 +50,6 @@ The axis maximum value.
 
 
 
-#### Returns
-0
-
 
 ### MajorUnit(System.Double)
 Sets the interval between major divisions.
@@ -75,9 +69,6 @@ Sets the interval between major divisions.
 The interval between major divisions.
 
 
-
-#### Returns
-0
 
 
 ### MinorUnit(System.Double)
@@ -104,9 +95,6 @@ The interval between minor divisions.
 
 
 
-#### Returns
-0
-
 
 ### AxisCrossingValue(System.Double)
 Sets value at which the first perpendicular axis crosses this axis.
@@ -126,9 +114,6 @@ Sets value at which the first perpendicular axis crosses this axis.
 The value at which the first perpendicular axis crosses this axis.
 
 
-
-#### Returns
-0
 
 
 ### AxisCrossingValue(System.Double[])
@@ -152,9 +137,6 @@ The values at which perpendicular axes cross this axis.
 
 
 
-#### Returns
-0
-
 
 ### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
 Sets value at which perpendicular axes cross this axis.
@@ -176,9 +158,6 @@ Sets value at which perpendicular axes cross this axis.
 The values at which perpendicular axes cross this axis.
 
 
-
-#### Returns
-0
 
 
 

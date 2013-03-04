@@ -56,6 +56,23 @@ The padding of the tooltip.
     <kendo:stockChart-tooltip padding="padding">
     </kendo:stockChart-tooltip>
 
+### shared `boolean`
+
+A value indicating if the tooltip should be shared.
+
+#### Example
+    <kendo:stockChart-tooltip shared="shared">
+    </kendo:stockChart-tooltip>
+
+### sharedTemplate `String`
+
+The shared tooltip template.
+Template variables:
+
+#### Example
+    <kendo:stockChart-tooltip sharedTemplate="sharedTemplate">
+    </kendo:stockChart-tooltip>
+
 ### template `String`
 
 The tooltip template.

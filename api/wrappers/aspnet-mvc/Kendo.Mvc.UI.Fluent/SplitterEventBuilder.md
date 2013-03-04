@@ -37,9 +37,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Resize(System.String)
 Defines the name of the JavaScript function that will handle the the Resize client-side event.
@@ -59,9 +56,6 @@ Defines the name of the JavaScript function that will handle the the Resize clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Expand(System.Func\<System.Object,System.Object\>)
@@ -90,9 +84,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Expand(System.String)
 Defines the name of the JavaScript function that will handle the the Expand client-side event.
@@ -112,9 +103,6 @@ Defines the name of the JavaScript function that will handle the the Expand clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Collapse(System.Func\<System.Object,System.Object\>)
@@ -143,9 +131,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Collapse(System.String)
 Defines the name of the JavaScript function that will handle the the Collapse client-side event.
@@ -165,9 +150,6 @@ Defines the name of the JavaScript function that will handle the the Collapse cl
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### ContentLoad(System.Func\<System.Object,System.Object\>)
@@ -196,9 +178,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### ContentLoad(System.String)
 Defines the name of the JavaScript function that will handle the the ContentLoad client-side event.
@@ -218,9 +197,6 @@ Defines the name of the JavaScript function that will handle the the ContentLoad
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

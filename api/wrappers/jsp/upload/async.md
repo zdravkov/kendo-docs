@@ -8,6 +8,8 @@ publish: true
 # \<kendo:upload-async\>
 
 Configures the ability to upload a file(s) in an asynchronous manner. Please refer to the
+async mode help topic
+for more details.
 
 #### Example
     <kendo:upload>

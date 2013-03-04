@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:treeView-checkboxes\>
 
-If
+If true or an object, renders checkboxes within each treeview item.
 
 #### Example
     <kendo:treeView>

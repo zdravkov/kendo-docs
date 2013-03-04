@@ -38,9 +38,6 @@ The action defining the inline handler.
 
 
 
-#### Returns
-0
-
 
 ### Change(System.String)
 Defines the name of the JavaScript function that will handle the the Kendo client-side event.
@@ -60,9 +57,6 @@ Defines the name of the JavaScript function that will handle the the Kendo clien
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 ### Slide(System.Func\<System.Object,System.Object\>)
@@ -92,9 +86,6 @@ The action defining the inline handler.
 
 
 
-#### Returns
-0
-
 
 ### Slide(System.String)
 Defines the name of the JavaScript function that will handle the the Slide client-side event.
@@ -114,9 +105,6 @@ Defines the name of the JavaScript function that will handle the the Slide clien
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

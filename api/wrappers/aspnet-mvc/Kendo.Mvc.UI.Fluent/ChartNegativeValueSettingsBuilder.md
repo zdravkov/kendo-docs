@@ -37,9 +37,6 @@ The bubble color (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the visibility for bubbles representing negative values
@@ -65,9 +62,6 @@ Sets the visibility for bubbles representing negative values
 The visibility for bubbles representing negative values.
 
 
-
-#### Returns
-0
 
 
 

@@ -10,6 +10,14 @@ A JSP tag representing Kendo Editor.
 
 ## Configuration Attributes
 
+### content `Object`
+
+The content of the editor
+
+#### Example
+    <kendo:editor content="content">
+    </kendo:editor>
+
 ### encoded `boolean`
 
 Indicates whether the Editor should submit encoded HTML tags.
@@ -37,22 +45,22 @@ Allows custom stylesheets to be included within the editing area.
 
 ##  Configuration JSP Tags
 
-### kendo:editor-imagebrowser
+### kendo:editor-imageBrowser
 
 Configuration for image browser dialog.
 
-More documentation is available at [kendo:editor-imagebrowser](editor/imagebrowser).
+More documentation is available at [kendo:editor-imageBrowser](editor/imagebrowser).
 
 #### Example
 
     <kendo:editor>
-        <kendo:editor-imagebrowser></kendo:editor-imagebrowser>
+        <kendo:editor-imageBrowser></kendo:editor-imageBrowser>
     </kendo:editor>
 
 ### kendo:editor-tools
 
 A collection of tools that should render a button, combobox, etc, to interact with the Editor. Custom tools are defined
-as a collection of required properties, while the insertHtml  tool requires a collection of text-value pairs
+as a collection of required properties, while the insertHtml tool requires a collection of text-value pairs. A separator may be included multiple times.
 
 More documentation is available at [kendo:editor-tools](editor/tools).
 

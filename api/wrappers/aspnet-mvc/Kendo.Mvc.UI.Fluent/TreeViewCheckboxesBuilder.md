@@ -32,9 +32,6 @@ Whether checkboxes should be rendered.
 
 
 
-#### Returns
-0
-
 
 ### CheckChildren(System.Boolean)
 Enable/disable checking of child checkboxes in the treeview.
@@ -57,9 +54,6 @@ Whether checking of parent checkboxes should check child checkboxes.
 
 
 
-#### Returns
-0
-
 
 ### Template(System.String)
 Client-side template to be used for rendering the items in the treeview.
@@ -76,9 +70,6 @@ Client-side template to be used for rendering the items in the treeview.
 
 
 
-#### Returns
-0
-
 
 ### TemplateId(System.String)
 Id of the element that holds the client-side template to be used for rendering the items in the treeview.
@@ -94,9 +85,6 @@ Id of the element that holds the client-side template to be used for rendering t
         
 
 
-
-#### Returns
-0
 
 
 

@@ -27,9 +27,6 @@ Enables or disables binding.
 
 
 
-#### Returns
-0
-
 
 ### Select(System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values
@@ -52,9 +49,6 @@ Sets the action, controller and route values
 The route values of the Action method.
 
 
-
-#### Returns
-0
 
 
 ### Select(System.String,System.String,System.Web.Routing.RouteValueDictionary)
@@ -85,9 +79,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String,System.String,System.Object)
 Sets the action, controller and route values for the select operation
@@ -117,9 +108,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String,System.String)
 Sets the action, controller and route values for the select operation
@@ -145,9 +133,6 @@ Name of the action.
 Name of the controller.
 
 
-
-#### Returns
-0
 
 
 ### Select(System.String,System.Web.Routing.RouteValueDictionary)
@@ -175,9 +160,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String,System.Object)
 Sets the route and values for the select operation
@@ -204,9 +186,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Select(System.String)
 Sets the route name for the select operation
@@ -229,9 +208,6 @@ Sets the route name for the select operation
 Name of the route.
 
 
-
-#### Returns
-0
 
 
 

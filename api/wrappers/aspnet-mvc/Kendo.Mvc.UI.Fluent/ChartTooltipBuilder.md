@@ -34,9 +34,6 @@ The tooltip font (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the tooltip visibility
@@ -59,9 +56,6 @@ Sets the tooltip visibility
 The tooltip visibility. The tooltip is not visible by default.
 
 
-
-#### Returns
-0
 
 
 ### Background(System.String)
@@ -88,9 +82,6 @@ The tooltip background color.
 
 
 
-#### Returns
-0
-
 
 ### Color(System.String)
 Sets the tooltip text color
@@ -115,9 +106,6 @@ The tooltip text color.
             The default is the same as the series labels color.
 
 
-
-#### Returns
-0
 
 
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -152,9 +140,6 @@ The tooltip left padding.
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the tooltip padding
@@ -178,9 +163,6 @@ Sets the tooltip padding
 The tooltip padding.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String)
@@ -209,9 +191,6 @@ The tooltip border color (CSS syntax).
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the tooltip border
@@ -223,9 +202,6 @@ Configures the tooltip border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 ### Format(System.String)
@@ -251,9 +227,6 @@ The tooltip format.
 
 
 
-#### Returns
-0
-
 
 ### Template(System.String)
 Sets the tooltip template
@@ -277,9 +250,6 @@ Sets the tooltip template
 The tooltip template.
 
 
-
-#### Returns
-0
 
 
 ### Opacity(System.Double)
@@ -306,8 +276,29 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-#### Returns
-0
+
+### Shared(System.Boolean)
+Sets the tooltip shared
+
+#### Example
+
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Tooltip(tooltip => tooltip
+        .Visible(true)
+        .Shared(true)
+        )
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### shared `System.Boolean`
+The tooltip shared.
+
+
 
 
 

@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-seriesItem-border\>
 
-The border of the points.
+The border of the points.** Applicable to column, ohlc and candlestick series **
 
 #### Example
     <kendo:stockChart-seriesItem>

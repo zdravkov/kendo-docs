@@ -18,7 +18,7 @@ Enable/disable grid scrolling.
 
 ### virtual `boolean`
 
-Enable/disable virtual scrolling. When enabled the grid will display only a single page of data (configured via
+Enable/disable virtual scrolling. When enabled the grid will display only a single page of data (configured via dataSource.pageSize).
 
 #### Example
     <kendo:grid-scrollable virtual="virtual">

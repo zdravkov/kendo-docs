@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-highlight\>
 
-Configures the appearance of highlighted points.
+Configures the appearance of highlighted points.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 #### Example
     <kendo:chart-seriesItem>
@@ -18,7 +18,7 @@ Configures the appearance of highlighted points.
 
 ### color `String`
 
-The highlight color.
+The highlight color.** Available only for pie series **
 
 #### Example
     <kendo:chart-seriesItem-highlight color="color">
@@ -49,7 +49,7 @@ More documentation is available at [kendo:chart-seriesItem-highlight-border](cha
 
 ### kendo:chart-seriesItem-highlight-line
 
-Line options for highlighted points. The color is computed automatically from the base point color.
+Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
 
 More documentation is available at [kendo:chart-seriesItem-highlight-line](chart/seriesitem-highlight-line).
 

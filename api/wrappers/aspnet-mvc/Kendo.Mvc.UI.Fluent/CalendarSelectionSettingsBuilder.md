@@ -22,9 +22,6 @@ List of DateTime objects
 
 
 
-#### Returns
-0
-
 
 ### Action(System.Web.Routing.RouteValueDictionary)
 Sets the action to which the date should navigate
@@ -36,9 +33,6 @@ Sets the action to which the date should navigate
 The route values of the Action method.
 
 
-
-#### Returns
-0
 
 
 ### Action(System.String,System.String,System.Object)
@@ -57,9 +51,6 @@ Name of the controller.
 The route values.
 
 
-
-#### Returns
-0
 
 
 

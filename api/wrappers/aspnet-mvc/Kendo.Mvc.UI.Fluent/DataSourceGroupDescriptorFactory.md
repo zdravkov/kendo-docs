@@ -22,9 +22,6 @@ Member access expression which describes the member
 
 
 
-#### Returns
-0
-
 
 ### AddT1(System.String)
 Specifies the member by which the data should be grouped.
@@ -36,9 +33,6 @@ Specifies the member by which the data should be grouped.
 Member name
 
 
-
-#### Returns
-0
 
 
 ### Add(System.String,System.Type)
@@ -54,9 +48,6 @@ Member name
 Member type
 
 
-
-#### Returns
-0
 
 
 ### Add(System.String,System.Type,System.ComponentModel.ListSortDirection)
@@ -75,9 +66,6 @@ Member type
 Sort order
 
 
-
-#### Returns
-0
 
 
 ### AddT1(System.String,System.ComponentModel.ListSortDirection)
@@ -109,9 +97,6 @@ Member access expression which describes the member
 
 
 
-#### Returns
-0
-
 
 ### AddDescendingT1(System.String)
 Specifies the member by which the data should be sorted in descending order and grouped.
@@ -123,9 +108,6 @@ Specifies the member by which the data should be sorted in descending order and 
 Member name
 
 
-
-#### Returns
-0
 
 
 ### AddDescending(System.String,System.Type)
@@ -141,9 +123,6 @@ Member name
 Member type
 
 
-
-#### Returns
-0
 
 
 

@@ -22,9 +22,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### And(System.String)
 Sets the text for And option.
@@ -36,9 +33,6 @@ Sets the text for And option.
 The text
 
 
-
-#### Returns
-0
 
 
 ### Or(System.String)
@@ -52,9 +46,6 @@ The text
 
 
 
-#### Returns
-0
-
 
 ### IsTrue(System.String)
 Sets the text for Boolean IsTrue option value.
@@ -66,9 +57,6 @@ Sets the text for Boolean IsTrue option value.
 The message
 
 
-
-#### Returns
-0
 
 
 ### IsFalse(System.String)
@@ -82,9 +70,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### Filter(System.String)
 Sets the text for Filter button.
@@ -97,9 +82,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### SelectValue(System.String)
 Sets the text for SelectValue option.
@@ -111,9 +93,6 @@ Sets the text for SelectValue option.
 The message
 
 
-
-#### Returns
-0
 
 
 

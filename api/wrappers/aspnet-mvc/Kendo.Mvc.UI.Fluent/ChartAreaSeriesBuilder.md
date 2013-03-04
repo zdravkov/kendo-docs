@@ -30,9 +30,6 @@ A value indicating if the areas should be stacked.
 
 
 
-#### Returns
-0
-
 
 ### Aggregate(Kendo.Mvc.UI.ChartSeriesAggregate)
 Sets the aggregate function for date series.
@@ -53,9 +50,6 @@ Sets the aggregate function for date series.
 Aggregate function name.
 
 
-
-#### Returns
-0
 
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder\>)
@@ -83,9 +77,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Labels(System.Boolean)
 Sets the visibility of area chart labels.
@@ -108,9 +99,6 @@ Sets the visibility of area chart labels.
 The visibility. The default value is false.
 
 
-
-#### Returns
-0
 
 
 ### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -142,9 +130,6 @@ The line dashType.
 
 
 
-#### Returns
-0
-
 
 ### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
 Configures the area chart line.
@@ -168,9 +153,6 @@ Configures the area chart line.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### Markers(System.Action\<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder\>)
@@ -197,9 +179,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Markers(System.Boolean)
 Sets the visibility of area chart markers.
@@ -223,9 +202,6 @@ The visibility. The default value is true.
 
 
 
-#### Returns
-0
-
 
 ### MissingValues(Kendo.Mvc.UI.ChartAreaMissingValues)
 Configures the behavior for handling missing values in area series.
@@ -248,9 +224,6 @@ Configures the behavior for handling missing values in area series.
 The missing values behavior. The default is to leave gaps.
 
 
-
-#### Returns
-0
 
 
 

@@ -30,9 +30,6 @@ The date field.
 
 
 
-#### Returns
-0
-
 
 ### AutoBind(System.Boolean)
 Enables or disables automatic binding.
@@ -59,9 +56,6 @@ Gets or sets a value indicating if the chart
 
 
 
-#### Returns
-0
-
 
 ### Navigator(System.Action\<Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder\<T\>\>)
 Configures the stock chart navigator.
@@ -87,9 +81,6 @@ The navigator configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.ChartEventBuilder\>)
 Configures the client-side events.
@@ -112,9 +103,6 @@ The client events configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Theme(System.String)
 Sets the theme of the chart.
@@ -134,9 +122,6 @@ Sets the theme of the chart.
 The Chart theme.
 
 
-
-#### Returns
-0
 
 
 ### ChartArea(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaBuilder\>)
@@ -158,9 +143,6 @@ The Chart area.
 
 
 
-#### Returns
-0
-
 
 ### PlotArea(System.Action\<Kendo.Mvc.UI.Fluent.PlotAreaBuilder\>)
 Sets the Plot area.
@@ -180,9 +162,6 @@ Sets the Plot area.
 The Plot area.
 
 
-
-#### Returns
-0
 
 
 ### Title(System.String)
@@ -204,9 +183,6 @@ The Chart title.
 
 
 
-#### Returns
-0
-
 
 ### Title(System.Action\<Kendo.Mvc.UI.Fluent.ChartTitleBuilder\>)
 Defines the title of the chart.
@@ -226,9 +202,6 @@ Defines the title of the chart.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### Legend(System.Boolean)
@@ -250,9 +223,6 @@ A value indicating whether to show the legend.
 
 
 
-#### Returns
-0
-
 
 ### Legend(System.Action\<Kendo.Mvc.UI.Fluent.ChartLegendBuilder\>)
 Configures the legend.
@@ -272,9 +242,6 @@ Configures the legend.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### Series(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesFactory\<T\>\>)
@@ -299,9 +266,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### SeriesDefaults(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder\<T\>\>)
 Defines the options for all chart series of the specified type.
@@ -321,9 +285,6 @@ Defines the options for all chart series of the specified type.
 The configurator.
 
 
-
-#### Returns
-0
 
 
 ### Panes(System.Action\<Kendo.Mvc.UI.Fluent.ChartPanesFactory\>)
@@ -348,9 +309,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### AxisDefaults(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder\<T\>\>)
 Defines the options for all chart axes of the specified type.
@@ -370,9 +328,6 @@ Defines the options for all chart axes of the specified type.
 The configurator.
 
 
-
-#### Returns
-0
 
 
 ### CategoryAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder\<T\>\>)
@@ -396,9 +351,6 @@ The configurator
 
 
 
-#### Returns
-0
-
 
 ### ValueAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory\<T\>\>)
 Defines value axis options
@@ -418,9 +370,6 @@ Defines value axis options
 The configurator
 
 
-
-#### Returns
-0
 
 
 ### XAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory\<T\>\>)
@@ -442,9 +391,6 @@ The configurator
 
 
 
-#### Returns
-0
-
 
 ### YAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory\<T\>\>)
 Configures Y-axis options for scatter charts.
@@ -464,9 +410,6 @@ Configures Y-axis options for scatter charts.
 The configurator
 
 
-
-#### Returns
-0
 
 
 ### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder\<T\>\>)
@@ -491,9 +434,6 @@ Use the configurator to set different data binding options.
 
 
 
-#### Returns
-0
-
 
 ### SeriesColors(System.Collections.Generic.IEnumerable\<System.String\>)
 Sets the series colors.
@@ -514,9 +454,6 @@ A list of the series colors.
 
 
 
-#### Returns
-0
-
 
 ### SeriesColors(System.String[])
 Sets the series colors.
@@ -536,9 +473,6 @@ Sets the series colors.
 The series colors.
 
 
-
-#### Returns
-0
 
 
 ### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
@@ -563,9 +497,6 @@ Use the configurator to set data tooltip options.
 
 
 
-#### Returns
-0
-
 
 ### Tooltip(System.Boolean)
 Sets the data point tooltip visibility.
@@ -587,9 +518,6 @@ A value indicating if the data point tooltip should be displayed.
 
 
 
-#### Returns
-0
-
 
 ### Transitions(System.Boolean)
 Enables or disabled animated transitions on initial load and refresh.
@@ -609,9 +537,6 @@ Enables or disabled animated transitions on initial load and refresh.
 A value indicating if transition animations should be played.
 
 
-
-#### Returns
-0
 
 
 

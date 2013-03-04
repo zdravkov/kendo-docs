@@ -7,7 +7,8 @@ publish: true
 
 # \<kendo:window-animation\>
 
-A collection of {Animation} objects, used to change default animations. A value of
+A collection of {Animation} objects, used to change default animations. A value of false
+will disable all animations in the widget.
 
 #### Example
     <kendo:window>

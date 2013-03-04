@@ -28,9 +28,6 @@ The bubble highlight border width.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Int32,System.String)
 Sets the bubble highlight border width.
@@ -45,9 +42,6 @@ The border width.
 The border color
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
@@ -75,9 +69,6 @@ Sets the bubble highlight opacity.
 The bubble highlight opacity.
 
 
-
-#### Returns
-0
 
 
 

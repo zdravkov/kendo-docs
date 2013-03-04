@@ -76,7 +76,8 @@ tab.
 
 ### kendo:tabStrip-animation
 
-A collection of visual animations used when
+A collection of visual animations used when TabStrip tab are selected through
+user interactions. Setting this option to false will disable all animations.
 
 More documentation is available at [kendo:tabStrip-animation](tabstrip/animation).
 

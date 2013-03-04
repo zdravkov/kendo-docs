@@ -24,9 +24,6 @@ Sets the type of the input element of the filter menu
 
 
 
-#### Returns
-0
-
 
 ### UI(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return additional parameters which to be sent the server.
@@ -41,9 +38,6 @@ Sets JavaScript function which to return additional parameters which to be sent 
 
 
 
-#### Returns
-0
-
 
 ### UI(System.String)
 Sets JavaScript function which to return additional parameters which to be sent the server.
@@ -55,9 +49,6 @@ Sets JavaScript function which to return additional parameters which to be sent 
 JavaScript function name
 
 
-
-#### Returns
-0
 
 
 

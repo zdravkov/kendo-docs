@@ -27,6 +27,7 @@ The number of milliseconds used for the visual animation when an item is opened.
 ### effects `String`
 
 A whitespace-delimited string of animation effects that are used when an item is expanded. Options include
+"expandVertical" and "fadeIn".
 
 #### Example
     <kendo:panelBar-animation-expand effects="effects">
@@ -34,7 +35,7 @@ A whitespace-delimited string of animation effects that are used when an item is
 
 ### show `boolean`
 
-Specifies how the
+
 
 #### Example
     <kendo:panelBar-animation-expand show="show">

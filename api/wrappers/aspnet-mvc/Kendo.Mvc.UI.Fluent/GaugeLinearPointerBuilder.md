@@ -33,9 +33,6 @@ The pointer color.
 
 
 
-#### Returns
-0
-
 
 ### Shape(Kendo.Mvc.UI.GaugeLinearPointerShape)
 Sets the pointer shape.
@@ -58,9 +55,6 @@ Sets the pointer shape.
 The pointer shape.
 
 
-
-#### Returns
-0
 
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -94,9 +88,6 @@ The pointer left margin.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32)
 Sets the pointer margin.
@@ -119,9 +110,6 @@ Sets the pointer margin.
 The pointer margin.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -152,9 +140,6 @@ The pointer dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the pointer border
@@ -166,9 +151,6 @@ Configures the pointer border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 ### Opacity(System.Double)
@@ -194,9 +176,6 @@ The pointer opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-#### Returns
-0
-
 
 ### Size(System.Double)
 Sets the pointer size.
@@ -219,9 +198,6 @@ Sets the pointer size.
 The pointer size.
 
 
-
-#### Returns
-0
 
 
 ### Value(System.Double)
@@ -246,9 +222,6 @@ The pointer value.
 
 
 
-#### Returns
-0
-
 
 ### Track(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder\>)
 Configures the pointer track.
@@ -271,9 +244,6 @@ Configures the pointer track.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

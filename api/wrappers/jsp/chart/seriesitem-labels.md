@@ -18,7 +18,7 @@ Configures the series data labels.
 
 ### align `String`
 
-Defines the alignment of the labels.
+Defines the alignment of the labels.** Available for donut and pie series. **
 
 #### Example
     <kendo:chart-seriesItem-labels align="align">
@@ -42,7 +42,7 @@ The text color of the labels.
 
 ### distance `float`
 
-The distance of the labels.
+The distance of the labels.** Available for donut and pie series. **
 
 #### Example
     <kendo:chart-seriesItem-labels distance="distance">

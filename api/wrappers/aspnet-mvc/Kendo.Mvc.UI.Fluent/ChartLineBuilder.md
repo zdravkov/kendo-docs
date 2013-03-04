@@ -31,8 +31,5 @@ The line visibility.
 
 
 
-#### Returns
-0
-
 
 

@@ -24,9 +24,6 @@ Controls whether to bind the widget to the DataSource on initialization.
 
 
 
-#### Returns
-0
-
 
 ### DataValueField(System.String)
 Sets the field of the data item that provides the value content of the list items.
@@ -42,8 +39,27 @@ Sets the field of the data item that provides the value content of the list item
 
 
 
-#### Returns
-0
+
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.ComboBoxEventBuilder\>)
+Configures the client-side events.
+
+#### Example
+
+    <%= Html.Kendo().ComboBox()
+        .Name("ComboBox")
+        .Events(events =>
+        events.Change("change")
+        )
+    %>
+        
+
+
+#### Parameters
+
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.ComboBoxEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ComboBoxEventBuilder)>
+The client events action.
+
+
 
 
 ### Filter(System.String)
@@ -59,9 +75,6 @@ Use it to enable filtering of items.
 
 
 
-#### Returns
-0
-
 
 ### Filter(Kendo.Mvc.UI.FilterType)
 Use it to enable filtering of items.
@@ -75,9 +88,6 @@ Use it to enable filtering of items.
         
 
 
-
-#### Returns
-0
 
 
 ### Items(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListItemFactory\>)
@@ -103,9 +113,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### HighlightFirst(System.Boolean)
 Use it to enable highlighting of first matched item.
@@ -120,9 +127,6 @@ Use it to enable highlighting of first matched item.
 
 
 
-#### Returns
-0
-
 
 ### MinLength(System.Int32)
 Specifies the minimum number of characters that should be typed before the widget queries the dataSource.
@@ -136,9 +140,6 @@ Specifies the minimum number of characters that should be typed before the widge
         
 
 
-
-#### Returns
-0
 
 
 ### SelectedIndex(System.Int32)
@@ -160,9 +161,6 @@ Item index.
 
 
 
-#### Returns
-0
-
 
 ### Suggest(System.Boolean)
 Controls whether the ComboBox should automatically auto-type the rest of text.
@@ -176,9 +174,6 @@ Controls whether the ComboBox should automatically auto-type the rest of text.
         
 
 
-
-#### Returns
-0
 
 
 ### Placeholder(System.String)
@@ -194,9 +189,6 @@ A string that appears in the textbox when it has no value.
 
 
 
-#### Returns
-0
-
 
 ### CascadeFrom(System.String)
 Use it to set the Id of the parent ComboBox.
@@ -210,9 +202,6 @@ Use it to set the Id of the parent ComboBox.
         
 
 
-
-#### Returns
-0
 
 
 ### Text(System.String)
@@ -228,9 +217,6 @@ Define the text of the widget, when the autoBind is set to false.
         
 
 
-
-#### Returns
-0
 
 
 

@@ -44,7 +44,7 @@ Indicates whether keyboard navigation is enabled/disabled.
 
 ### pageable `boolean`
 
-Indicates whether paging is enabled/disabled.
+Indicates whether paging is enabled/disabled. Further configuration is available via [kendo:listView-pageable](#kendo-listView-pageable). 
 
 #### Example
     <kendo:listView pageable="pageable">
@@ -75,7 +75,35 @@ The id of the template used for rendering the items in the listview.
     </kendo:listView>
 
 
+##  Configuration JSP Tags
+
+### kendo:listView-pageable
+
+Indicates whether paging is enabled/disabled.
+
+More documentation is available at [kendo:listView-pageable](listview/pageable).
+
+#### Example
+
+    <kendo:listView>
+        <kendo:listView-pageable></kendo:listView-pageable>
+    </kendo:listView>
+
+
 ## Event Attributes
+
+### cancel `String`
+
+Raised when the user clicks the "cancel" button.
+
+#### Example
+    <kendo:listView cancel="handle_cancel">
+    </kendo:listView>
+    <script>
+        function handle_cancel(e) {
+            // Code to handle the cancel event.
+        }
+    </script>
 
 ### change `String`
 
@@ -144,6 +172,21 @@ Fires before the list view item is removed.
     </script>
 
 ## Event Tags
+
+### kendo:listView-cancel
+
+Raised when the user clicks the "cancel" button.
+
+#### Example
+    <kendo:listView>
+        <kendo:listView-cancel>
+            <script>
+                function(e) {
+                    // Code to handle the cancel event.
+                }
+            </script>
+        </kendo:listView-cancel>
+    </kendo:listView>
 
 ### kendo:listView-change
 

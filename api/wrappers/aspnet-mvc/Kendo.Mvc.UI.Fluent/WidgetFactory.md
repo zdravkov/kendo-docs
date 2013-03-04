@@ -24,9 +24,6 @@ Creates a Menu
 
 
 
-#### Returns
-0
-
 
 ### Editor
 Creates a Editor
@@ -39,9 +36,6 @@ Creates a Editor
         
 
 
-
-#### Returns
-0
 
 
 ### GridT1
@@ -56,9 +50,6 @@ Creates a new !:Kendo.Mvc.UI.Grid{T} bound to the specified data item type.
         
 
 
-
-#### Returns
-0
 
 
 ### GridT1(System.Collections.Generic.IEnumerable\<T1\>)
@@ -79,9 +70,6 @@ The data source.
 
 
 
-#### Returns
-0
-
 
 ### Grid(System.Data.DataTable)
 Creates a new !:Kendo.Mvc.UI.Grid{T} bound to a DataTable.
@@ -94,9 +82,6 @@ DataTable from which the grid instance will be bound
 
 
 
-#### Returns
-0
-
 
 ### Grid(System.Data.DataView)
 Creates a new !:Kendo.Mvc.UI.Grid{T} bound to a DataView.
@@ -108,9 +93,6 @@ Creates a new !:Kendo.Mvc.UI.Grid{T} bound to a DataView.
 DataView from which the grid instance will be bound
 
 
-
-#### Returns
-0
 
 
 ### GridT1(System.String)
@@ -131,9 +113,6 @@ The data source view data key.
 
 
 
-#### Returns
-0
-
 
 ### ListViewT1
 Creates a new !:UI.ListView{T} bound to the specified data item type.
@@ -147,9 +126,6 @@ Creates a new !:UI.ListView{T} bound to the specified data item type.
         
 
 
-
-#### Returns
-0
 
 
 ### ListViewT1(System.Collections.Generic.IEnumerable\<T1\>)
@@ -170,9 +146,6 @@ The data source.
 
 
 
-#### Returns
-0
-
 
 ### ListViewT1(System.String)
 Creates a new !:ListView{T} bound an item in ViewData.
@@ -192,9 +165,6 @@ The data source view data key.
 
 
 
-#### Returns
-0
-
 
 ### Splitter
 Creates a Splitter
@@ -207,9 +177,6 @@ Creates a Splitter
         
 
 
-
-#### Returns
-0
 
 
 ### TabStrip
@@ -229,9 +196,6 @@ Creates a new TabStrip.
 
 
 
-#### Returns
-0
-
 
 ### DateTimePicker
 Creates a new DateTimePicker.
@@ -244,9 +208,6 @@ Creates a new DateTimePicker.
         
 
 
-
-#### Returns
-0
 
 
 ### DatePicker
@@ -261,9 +222,6 @@ Creates a new DatePicker.
 
 
 
-#### Returns
-0
-
 
 ### TimePicker
 Creates a new TimePicker.
@@ -276,9 +234,6 @@ Creates a new TimePicker.
         
 
 
-
-#### Returns
-0
 
 
 ### Tooltip
@@ -293,9 +248,6 @@ Creates a new Tooltip.
 
 
 
-#### Returns
-0
-
 
 ### ColorPicker
 Creates a new ColorPicker.
@@ -308,9 +260,6 @@ Creates a new ColorPicker.
         
 
 
-
-#### Returns
-0
 
 
 ### ColorPalette
@@ -325,9 +274,6 @@ Creates a new ColorPalette.
 
 
 
-#### Returns
-0
-
 
 ### FlatColorPicker
 Creates a new FlatColorPicker.
@@ -341,9 +287,6 @@ Creates a new FlatColorPicker.
 
 
 
-#### Returns
-0
-
 
 ### Calendar
 Creates a new Calendar.
@@ -356,9 +299,6 @@ Creates a new Calendar.
         
 
 
-
-#### Returns
-0
 
 
 ### PanelBar
@@ -378,9 +318,6 @@ Creates a new PanelBar.
 
 
 
-#### Returns
-0
-
 
 ### TreeView
 Creates a TreeView
@@ -395,9 +332,6 @@ Creates a TreeView
 
 
 
-#### Returns
-0
-
 
 ### NumericTextBox
 Creates a new NumericTextBox.
@@ -410,9 +344,6 @@ Creates a new NumericTextBox.
         
 
 
-
-#### Returns
-0
 
 
 ### NumericTextBoxT1
@@ -427,9 +358,6 @@ Creates a new !:NumericTextBox{T}.
 
 
 
-#### Returns
-0
-
 
 ### CurrencyTextBox
 Creates a new CurrencyTextBox.
@@ -442,9 +370,6 @@ Creates a new CurrencyTextBox.
         
 
 
-
-#### Returns
-0
 
 
 ### PercentTextBox
@@ -459,9 +384,6 @@ Creates a new PercentTextBox.
 
 
 
-#### Returns
-0
-
 
 ### IntegerTextBox
 Creates a new IntegerTextBox.
@@ -474,9 +396,6 @@ Creates a new IntegerTextBox.
         
 
 
-
-#### Returns
-0
 
 
 ### Window
@@ -491,9 +410,6 @@ Creates a new Window.
 
 
 
-#### Returns
-0
-
 
 ### LinearGauge
 Creates a new LinearGauge.
@@ -507,9 +423,6 @@ Creates a new LinearGauge.
 
 
 
-#### Returns
-0
-
 
 ### RadialGauge
 Creates a new RadialGauge.
@@ -522,9 +435,6 @@ Creates a new RadialGauge.
         
 
 
-
-#### Returns
-0
 
 
 ### DropDownList
@@ -544,9 +454,6 @@ Creates a new DropDownList.
 
 
 
-#### Returns
-0
-
 
 ### ComboBox
 Creates a new ComboBox.
@@ -564,9 +471,6 @@ Creates a new ComboBox.
         
 
 
-
-#### Returns
-0
 
 
 ### AutoComplete
@@ -586,9 +490,6 @@ Creates a new AutoComplete.
 
 
 
-#### Returns
-0
-
 
 ### MultiSelect
 Creates a new MultiSelect.
@@ -607,9 +508,6 @@ Creates a new MultiSelect.
 
 
 
-#### Returns
-0
-
 
 ### SliderT1
 Creates a new Slider.
@@ -622,9 +520,6 @@ Creates a new Slider.
         
 
 
-
-#### Returns
-0
 
 
 ### Slider
@@ -639,9 +534,6 @@ Creates a new Slider.
 
 
 
-#### Returns
-0
-
 
 ### RangeSliderT1
 Creates a new RangeSlider.
@@ -655,9 +547,6 @@ Creates a new RangeSlider.
 
 
 
-#### Returns
-0
-
 
 ### RangeSlider
 Creates a new RangeSlider.
@@ -670,9 +559,6 @@ Creates a new RangeSlider.
         
 
 
-
-#### Returns
-0
 
 
 ### Upload
@@ -691,9 +577,6 @@ Creates a Upload
 
 
 
-#### Returns
-0
-
 
 ### ChartT1
 Creates a !:Kendo.Mvc.UI.Chart{T}
@@ -706,9 +589,6 @@ Creates a !:Kendo.Mvc.UI.Chart{T}
         
 
 
-
-#### Returns
-0
 
 
 ### ChartT1(System.Collections.Generic.IEnumerable\<T1\>)
@@ -729,9 +609,6 @@ The data source.
 
 
 
-#### Returns
-0
-
 
 ### ChartT1(System.String)
 Creates a new !:Kendo.Mvc.UI.Chart{T} bound an item in ViewData.
@@ -751,9 +628,6 @@ The data source view data key.
 
 
 
-#### Returns
-0
-
 
 ### Chart
 Creates a new unbound Chart.
@@ -770,9 +644,6 @@ Creates a new unbound Chart.
 
 
 
-#### Returns
-0
-
 
 ### StockChartT1
 Creates a !:Kendo.Mvc.UI.StockChart{T}
@@ -785,9 +656,6 @@ Creates a !:Kendo.Mvc.UI.StockChart{T}
         
 
 
-
-#### Returns
-0
 
 
 ### StockChartT1(System.Collections.Generic.IEnumerable\<T1\>)
@@ -808,9 +676,6 @@ The data source.
 
 
 
-#### Returns
-0
-
 
 ### StockChartT1(System.String)
 Creates a new !:Kendo.Mvc.UI.StockChart{T} bound an item in ViewData.
@@ -830,9 +695,6 @@ The data source view data key.
 
 
 
-#### Returns
-0
-
 
 ### StockChart
 Creates a new unbound StockChart.
@@ -849,8 +711,72 @@ Creates a new unbound StockChart.
 
 
 
-#### Returns
-0
+
+### SparklineT1
+Creates a !:Kendo.Mvc.UI.Sparkline{T}
+
+#### Example
+
+    <%= Html.Kendo().Sparkline()
+        .Name("Sparkline")
+    %>
+        
+
+
+
+
+### SparklineT1(System.Collections.Generic.IEnumerable\<T1\>)
+Creates a new !:Kendo.Mvc.UI.Sparkline{T} bound to the specified data source.
+
+#### Example
+
+    <%= Html.Kendo().Sparkline(Model)
+        .Name("Sparkline")
+    %>
+        
+
+
+#### Parameters
+
+##### data `System.Collections.Generic.IEnumerable<T1>`
+The data source.
+
+
+
+
+### SparklineT1(System.String)
+Creates a new !:Kendo.Mvc.UI.Sparkline{T} bound an item in ViewData.
+
+#### Example
+
+    <%= Html.Kendo().Sparkline<SalesData>("sales")
+        .Name("Sparkline")
+    %>
+        
+
+
+#### Parameters
+
+##### dataViewDataKey `System.String`
+The data source view data key.
+
+
+
+
+### Sparkline
+Creates a new unbound Sparkline.
+
+#### Example
+
+    <%= Html.Kendo().Sparkline()
+        .Name("Sparkline")
+        .Series(series => {
+        series.Bar(new int[] { 1, 2, 3 }).Name("Total Sales");
+        })
+    %>
+        
+
+
 
 
 ### DeferredScripts

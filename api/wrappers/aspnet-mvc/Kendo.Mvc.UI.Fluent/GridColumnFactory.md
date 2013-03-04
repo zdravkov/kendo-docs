@@ -31,17 +31,11 @@ Defines a bound column.
 
 
 
-#### Returns
-0
-
 
 ### Bound(System.Type,System.String)
 Defines a bound column.
 
 
-
-#### Returns
-0
 
 
 ### ForeignKeyT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Collections.IEnumerable,System.String,System.String)
@@ -97,9 +91,6 @@ If true columns should be generated, otherwise false.
 
 
 
-#### Returns
-0
-
 
 ### AutoGenerate(System.Action\<Kendo.Mvc.UI.GridColumnBase\<T\>\>)
 Determines if columns should be automatically generated.
@@ -111,9 +102,6 @@ Determines if columns should be automatically generated.
 Action which will be executed for each generated column.
 
 
-
-#### Returns
-0
 
 
 ### Template(System.Action\<T\>)

@@ -36,9 +36,6 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Change(System.String)
 Defines the name of the JavaScript function that will handle the the Change client-side event.
@@ -58,9 +55,6 @@ Defines the name of the JavaScript function that will handle the the Change clie
 The name of the JavaScript function that will handle the event.
 
 
-
-#### Returns
-0
 
 
 

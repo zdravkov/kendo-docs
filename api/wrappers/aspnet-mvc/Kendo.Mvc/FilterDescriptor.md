@@ -63,9 +63,6 @@ Determines whether the specified
 
 
 
-#### Returns
-0
-
 
 ### GetHashCode
 Serves as a hash function for a particular type.

@@ -7,7 +7,8 @@ publish: true
 
 # \<kendo:stockChart-seriesItem\>
 
-Array of series definitions.
+Array of series definitions.The series type is determined by the value of the type field.
+If a type value is missing, the type is assumed to be the one specified in seriesDefaults.Each series type has a different set of options.
 
 #### Example
     <kendo:stockChart-series>
@@ -18,7 +19,8 @@ Array of series definitions.
 
 ### aggregate `String`
 
-Aggregate function for date series.
+Aggregate function for date series.This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
 
 #### Example
     <kendo:stockChart-seriesItem aggregate="aggregate">
@@ -26,7 +28,7 @@ Aggregate function for date series.
 
 ### axis `String`
 
-The name of the value axis to use.
+The name of the value axis to use.** Applicable to area, column, line, ohlc and candlestick series **
 
 #### Example
     <kendo:stockChart-seriesItem axis="axis">
@@ -34,7 +36,7 @@ The name of the value axis to use.
 
 ### closeField `String`
 
-The data field containing the close value.
+The data field containing the close value.** Available for candlestick and ohlc series only **
 
 #### Example
     <kendo:stockChart-seriesItem closeField="closeField">
@@ -50,15 +52,23 @@ The series base color.
 
 ### colorField `String`
 
-The data field containing the point color.
+The data field containing the point color.** Applicable for column, candlestick and ohlc series. **
 
 #### Example
     <kendo:stockChart-seriesItem colorField="colorField">
     </kendo:stockChart-seriesItem>
 
+### currentField `String`
+
+The data field containing the current value.** Available for bullet and verticalBullet series. **
+
+#### Example
+    <kendo:stockChart-seriesItem currentField="currentField">
+    </kendo:stockChart-seriesItem>
+
 ### dashType `String`
 
-The series line dash type.
+The series line dash type.** Applicable only to line series **
 
 #### Example
     <kendo:stockChart-seriesItem dashType="dashType">
@@ -74,7 +84,7 @@ Array of data items. The data item type can be either a:
 
 ### downColor `String`
 
-The series color when open value is smoller then close value.
+The series color when open value is smoller then close value.** Available for candlestick series only **
 
 #### Example
     <kendo:stockChart-seriesItem downColor="downColor">
@@ -82,7 +92,7 @@ The series color when open value is smoller then close value.
 
 ### downColorField `String`
 
-The data field containing the body color.
+The data field containing the body color.** Available for candlestick series only **
 
 #### Example
     <kendo:stockChart-seriesItem downColorField="downColorField">
@@ -98,7 +108,7 @@ The data field containing the series value.
 
 ### gap `float`
 
-The distance between category clusters.
+The distance between category clusters.** Applicable for column, candlestick and ohlc series. **
 
 #### Example
     <kendo:stockChart-seriesItem gap="gap">
@@ -106,7 +116,7 @@ The distance between category clusters.
 
 ### groupNameTemplate `String`
 
-Name template for auto-generated series when binding to grouped data.
+Name template for auto-generated series when binding to grouped data.Template variables:
 
 #### Example
     <kendo:stockChart-seriesItem groupNameTemplate="groupNameTemplate">
@@ -114,7 +124,7 @@ Name template for auto-generated series when binding to grouped data.
 
 ### highField `String`
 
-The data field containing the high value.
+The data field containing the high value.** Available for candlestick and ohlc series only **
 
 #### Example
     <kendo:stockChart-seriesItem highField="highField">
@@ -122,7 +132,7 @@ The data field containing the high value.
 
 ### line `String`
 
-Line options. Further configuration is available via [kendo:stockChart-seriesItem-line](#kendo-stockChart-seriesItem-line). 
+Line options.** Applicable to area, candlestick and ohlc series. ** Further configuration is available via [kendo:stockChart-seriesItem-line](#kendo-stockChart-seriesItem-line). 
 
 #### Example
     <kendo:stockChart-seriesItem line="line">
@@ -130,7 +140,7 @@ Line options. Further configuration is available via [kendo:stockChart-seriesIte
 
 ### lowField `String`
 
-The data field containing the low value.
+The data field containing the low value.** Available for candlestick and ohlc series **
 
 #### Example
     <kendo:stockChart-seriesItem lowField="lowField">
@@ -138,7 +148,7 @@ The data field containing the low value.
 
 ### missingValues `String`
 
-Configures the behavior for handling missing values.
+Configures the behavior for handling missing values.** Applicable for area and line series. **
 
 #### Example
     <kendo:stockChart-seriesItem missingValues="missingValues">
@@ -152,6 +162,14 @@ The series name visible in the legend.
     <kendo:stockChart-seriesItem name="name">
     </kendo:stockChart-seriesItem>
 
+### negativeColor `String`
+
+Color to use for bars with negative values.** Applicable only to column series. **The plot stops before the missing point and continues after it.
+
+#### Example
+    <kendo:stockChart-seriesItem negativeColor="negativeColor">
+    </kendo:stockChart-seriesItem>
+
 ### opacity `float`
 
 The series opacity.
@@ -162,7 +180,7 @@ The series opacity.
 
 ### openField `String`
 
-The data field containing the open value.
+The data field containing the open value.** Available for candlestick and ohlc series **
 
 #### Example
     <kendo:stockChart-seriesItem openField="openField">
@@ -170,7 +188,7 @@ The data field containing the open value.
 
 ### spacing `float`
 
-Space between points as proportion of the point width.
+Space between points as proportion of the point width.Available for column, candlestick and ohlc series.
 
 #### Example
     <kendo:stockChart-seriesItem spacing="spacing">
@@ -185,6 +203,14 @@ Available for column series.
     <kendo:stockChart-seriesItem stack="stack">
     </kendo:stockChart-seriesItem>
 
+### targetField `String`
+
+The data field containing the target value.** Available for bullet and verticalBullet series. **
+
+#### Example
+    <kendo:stockChart-seriesItem targetField="targetField">
+    </kendo:stockChart-seriesItem>
+
 ### type `String`
 
 The type of the series. Available types:
@@ -195,7 +221,7 @@ The type of the series. Available types:
 
 ### width `float`
 
-The line width.
+The line width.** Applicable for area and line series. **
 
 #### Example
     <kendo:stockChart-seriesItem width="width">
@@ -206,7 +232,7 @@ The line width.
 
 ### kendo:stockChart-seriesItem-border
 
-The border of the points.
+The border of the points.** Applicable to column, ohlc and candlestick series **
 
 More documentation is available at [kendo:stockChart-seriesItem-border](stockchart/seriesitem-border).
 
@@ -218,7 +244,7 @@ More documentation is available at [kendo:stockChart-seriesItem-border](stockcha
 
 ### kendo:stockChart-seriesItem-highlight
 
-Configures the appearance of highlighted points.
+Configures the appearance of highlighted points.** Applicable to candlestick and ohlc series. **
 
 More documentation is available at [kendo:stockChart-seriesItem-highlight](stockchart/seriesitem-highlight).
 
@@ -242,7 +268,7 @@ More documentation is available at [kendo:stockChart-seriesItem-labels](stockcha
 
 ### kendo:stockChart-seriesItem-line
 
-Line options.
+Line options.** Applicable to area, candlestick and ohlc series. **
 
 More documentation is available at [kendo:stockChart-seriesItem-line](stockchart/seriesitem-line).
 
@@ -254,7 +280,7 @@ More documentation is available at [kendo:stockChart-seriesItem-line](stockchart
 
 ### kendo:stockChart-seriesItem-markers
 
-Marker options.
+Marker options.** Applicable for area and line series. **
 
 More documentation is available at [kendo:stockChart-seriesItem-markers](stockchart/seriesitem-markers).
 
@@ -274,6 +300,18 @@ More documentation is available at [kendo:stockChart-seriesItem-overlay](stockch
 
     <kendo:stockChart-seriesItem>
         <kendo:stockChart-seriesItem-overlay></kendo:stockChart-seriesItem-overlay>
+    </kendo:stockChart-seriesItem>
+
+### kendo:stockChart-seriesItem-target
+
+The target of the bullet chart.
+
+More documentation is available at [kendo:stockChart-seriesItem-target](stockchart/seriesitem-target).
+
+#### Example
+
+    <kendo:stockChart-seriesItem>
+        <kendo:stockChart-seriesItem-target></kendo:stockChart-seriesItem-target>
     </kendo:stockChart-seriesItem>
 
 ### kendo:stockChart-seriesItem-tooltip

@@ -33,9 +33,6 @@ The pointer color.
 
 
 
-#### Returns
-0
-
 
 ### Opacity(System.Double)
 Sets the pointer opacity.
@@ -60,9 +57,6 @@ The pointer opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-#### Returns
-0
-
 
 ### Value(System.Double)
 Sets the pointer value.
@@ -86,9 +80,6 @@ The pointer value.
 
 
 
-#### Returns
-0
-
 
 ### Cap(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder\>)
 Configures the pointer cap.
@@ -111,9 +102,6 @@ Configures the pointer cap.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

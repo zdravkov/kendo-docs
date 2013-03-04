@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:panelBar-animation-collapse\>
 
-The visual animation(s) that will be used when
+The visual animation(s) that will be used when PanelBar items are closed.
 
 #### Example
     <kendo:panelBar-animation>
@@ -18,7 +18,7 @@ The visual animation(s) that will be used when
 
 ### duration `float`
 
-The number of milliseconds used for the visual animation when a
+The number of milliseconds used for the visual animation when a PanelBar item is closed.
 
 #### Example
     <kendo:panelBar-animation-collapse duration="duration">
@@ -26,7 +26,8 @@ The number of milliseconds used for the visual animation when a
 
 ### effects `String`
 
-A whitespace-delimited string of animation effects that are utilized when a
+A whitespace-delimited string of animation effects that are utilized when a PanelBar item
+is closed. Options include "fadeOut".
 
 #### Example
     <kendo:panelBar-animation-collapse effects="effects">

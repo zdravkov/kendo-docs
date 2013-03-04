@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-navigator-seriesItem-markers\>
 
-Marker options.
+Marker options.** Applicable for area and line series. **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem>

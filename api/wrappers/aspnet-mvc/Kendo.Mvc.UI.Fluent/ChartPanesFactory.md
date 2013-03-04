@@ -21,9 +21,6 @@ Defines a chart pane.
 
 
 
-#### Returns
-0
-
 
 ### Add(System.String)
 Defines a named chart pane.
@@ -35,9 +32,6 @@ Defines a named chart pane.
 The unique pane name
 
 
-
-#### Returns
-0
 
 
 

@@ -25,8 +25,5 @@ Enables or disables filtering
 
 
 
-#### Returns
-0
-
 
 

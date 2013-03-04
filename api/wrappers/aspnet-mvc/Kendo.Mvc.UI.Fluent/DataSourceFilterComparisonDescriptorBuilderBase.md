@@ -22,9 +22,6 @@ The value which the result should be less then
 
 
 
-#### Returns
-0
-
 
 ### IsLessThanOrEqualTo(T)
 Includes only values which are less or equal to the given value.
@@ -36,9 +33,6 @@ Includes only values which are less or equal to the given value.
 The value which the result should be less or equal to
 
 
-
-#### Returns
-0
 
 
 ### IsGreaterThanOrEqualTo(T)
@@ -52,9 +46,6 @@ The value which the result should be greater then or equal to
 
 
 
-#### Returns
-0
-
 
 ### IsGreaterThan(T)
 Includes only values which are greater then the given value.
@@ -66,9 +57,6 @@ Includes only values which are greater then the given value.
 The value which the result should be greater then
 
 
-
-#### Returns
-0
 
 
 

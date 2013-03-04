@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-border\>
 
-The border of the points.
+The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc and candlestick series **
 
 #### Example
     <kendo:chart-seriesItem>

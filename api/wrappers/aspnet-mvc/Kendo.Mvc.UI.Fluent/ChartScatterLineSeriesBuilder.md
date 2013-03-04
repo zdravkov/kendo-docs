@@ -31,9 +31,6 @@ The line width.
 
 
 
-#### Returns
-0
-
 
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the chart line dash type.
@@ -54,9 +51,6 @@ Sets the chart line dash type.
 The line dash type.
 
 
-
-#### Returns
-0
 
 
 ### MissingValues(Kendo.Mvc.UI.ChartScatterLineMissingValues)
@@ -80,9 +74,6 @@ Configures the behavior for handling missing values in scatter line series.
 The missing values behavior. The default is to leave gaps.
 
 
-
-#### Returns
-0
 
 
 

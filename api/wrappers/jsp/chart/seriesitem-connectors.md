@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-connectors\>
 
-The label connectors options.
+The label connectors options.** Applicable to donut and pie series. **
 
 #### Example
     <kendo:chart-seriesItem>

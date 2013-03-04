@@ -12,7 +12,7 @@ A JSP tag representing Kendo Slider.
 
 ### decreaseButtonTitle `String`
 
-The title of the decrease button of the
+The title of the decrease button of the Slider.
 
 #### Example
     <kendo:slider decreaseButtonTitle="decreaseButtonTitle">
@@ -20,7 +20,7 @@ The title of the decrease button of the
 
 ### increaseButtonTitle `String`
 
-The title of the increase button of the
+The title of the increase button of the Slider.
 
 #### Example
     <kendo:slider increaseButtonTitle="increaseButtonTitle">
@@ -37,7 +37,7 @@ handle must be focused). Note: The allied largeStep will also set large tick for
 
 ### max `float`
 
-The maximum value of the
+The maximum value of the Slider.
 
 #### Example
     <kendo:slider max="max">
@@ -45,7 +45,7 @@ The maximum value of the
 
 ### min `float`
 
-The minimum value of the
+The minimum value of the Slider.
 
 #### Example
     <kendo:slider min="min">
@@ -53,7 +53,7 @@ The minimum value of the
 
 ### orientation `String`
 
-The orientation of a
+The orientation of a Slider: "horizontal" or "vertical".
 
 #### Example
     <kendo:slider orientation="orientation">
@@ -61,7 +61,8 @@ The orientation of a
 
 ### showButtons `boolean`
 
-Can be used to show (
+Can be used to show (true) or hide (false) the
+increase and decrease buttons of a Slider.
 
 #### Example
     <kendo:slider showButtons="showButtons">
@@ -69,7 +70,9 @@ Can be used to show (
 
 ### smallStep `float`
 
-The small step value of the
+The small step value of the Slider. The underlying value will be changed when the end user
+(1) clicks on the increase or decrease buttons of the Slider, (2) presses the arrow keys
+(the drag handle must be focused), or (3) drags the drag handle.
 
 #### Example
     <kendo:slider smallStep="smallStep">
@@ -77,7 +80,7 @@ The small step value of the
 
 ### tickPlacement `String`
 
-Denotes the location of the tick marks in the
+Denotes the location of the tick marks in the Slider. The available options are:
 
 #### Example
     <kendo:slider tickPlacement="tickPlacement">
@@ -85,7 +88,7 @@ Denotes the location of the tick marks in the
 
 ### value `float`
 
-The underlying value of the
+The underlying value of the Slider.
 
 #### Example
     <kendo:slider value="value">
@@ -96,7 +99,7 @@ The underlying value of the
 
 ### kendo:slider-tooltip
 
-Configuration of the
+Configuration of the Slider tooltip.
 
 More documentation is available at [kendo:slider-tooltip](slider/tooltip).
 

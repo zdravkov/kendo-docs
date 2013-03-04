@@ -22,9 +22,6 @@ true if the upload should start immediately after selecting a file, false otherw
 
 
 
-#### Returns
-0
-
 
 ### Batch(System.Boolean)
 Sets a value indicating whether to upload selected files in one batch (request)
@@ -36,9 +33,6 @@ Sets a value indicating whether to upload selected files in one batch (request)
 true if the files should be uploaded in a single request, false otherwise; false by default
 
 
-
-#### Returns
-0
 
 
 ### Save(System.String,System.String,System.Web.Routing.RouteValueDictionary)
@@ -68,9 +62,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Save(System.String,System.String,System.Object)
 Sets the action, controller and route values for the save operation
@@ -99,9 +90,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Save(System.String,System.String)
 Sets the action and controller for the save operation
@@ -127,9 +115,6 @@ Name of the controller.
 
 
 
-#### Returns
-0
-
 
 ### Save(System.String)
 Sets the route name for the save operation
@@ -152,9 +137,6 @@ Name of the route.
 
 
 
-#### Returns
-0
-
 
 ### Save(System.Web.Routing.RouteValueDictionary)
 Sets the route values for the save operation
@@ -176,9 +158,6 @@ Sets the route values for the save operation
 The route values of the action method.
 
 
-
-#### Returns
-0
 
 
 ### Save(System.String,System.Web.Routing.RouteValueDictionary)
@@ -205,9 +184,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Save(System.String,System.Object)
 Sets the route and values for the save operation
@@ -233,9 +209,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### SaveT1(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Sets the action for the save operation
@@ -257,9 +230,6 @@ Sets the action for the save operation
 The action.
 
 
-
-#### Returns
-0
 
 
 ### SaveField(System.String)
@@ -284,9 +254,6 @@ The form field name to use for submiting the files.
 
 
 
-#### Returns
-0
-
 
 ### SaveUrl(System.String)
 Sets an absolute or relative Save action URL.
@@ -309,9 +276,6 @@ Sets an absolute or relative Save action URL.
 The Save action URL.
 
 
-
-#### Returns
-0
 
 
 ### Remove(System.String,System.String,System.Web.Routing.RouteValueDictionary)
@@ -341,9 +305,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Remove(System.String,System.String,System.Object)
 Sets the action, controller and route values for the remove operation
@@ -372,9 +333,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Remove(System.String,System.String)
 Sets the action and controller for the remove operation
@@ -400,9 +358,6 @@ Name of the controller.
 
 
 
-#### Returns
-0
-
 
 ### Remove(System.String)
 Sets the route name for the remove operation
@@ -425,9 +380,6 @@ Name of the route.
 
 
 
-#### Returns
-0
-
 
 ### Remove(System.Web.Routing.RouteValueDictionary)
 Sets the route values for the remove operation
@@ -449,9 +401,6 @@ Sets the route values for the remove operation
 The route values of the action method.
 
 
-
-#### Returns
-0
 
 
 ### Remove(System.String,System.Web.Routing.RouteValueDictionary)
@@ -478,9 +427,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Remove(System.String,System.Object)
 Sets the route and values for the remove operation
@@ -506,9 +452,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### RemoveT1(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Sets the action for the remove operation
@@ -530,9 +473,6 @@ Sets the action for the remove operation
 The action.
 
 
-
-#### Returns
-0
 
 
 ### RemoveUrl(System.String)
@@ -557,9 +497,6 @@ The Remove action URL.
 
 
 
-#### Returns
-0
-
 
 ### RemoveField(System.String)
 Sets the field name for the remove operation
@@ -582,9 +519,6 @@ The form field name to use for submiting the files.
             "fileNames" is used if not set.
 
 
-
-#### Returns
-0
 
 
 

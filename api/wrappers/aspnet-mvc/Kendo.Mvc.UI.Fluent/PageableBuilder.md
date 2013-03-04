@@ -22,9 +22,6 @@ The values shown in the pageSize dropdown
 
 
 
-#### Returns
-0
-
 
 ### PageSizes(System.Boolean)
 Sets the page sizes of the grid.
@@ -37,9 +34,6 @@ A value indicating whether to enable the page sizes dropdown
 
 
 
-#### Returns
-0
-
 
 ### ButtonCount(System.Int32)
 Sets the number of buttons displayed in the numeric pager. Default is 10.
@@ -51,9 +45,6 @@ Sets the number of buttons displayed in the numeric pager. Default is 10.
 The value
 
 
-
-#### Returns
-0
 
 
 ### Enabled(System.Boolean)
@@ -68,9 +59,6 @@ Enables or disables paging.
         
 
 
-
-#### Returns
-0
 
 
 

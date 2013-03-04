@@ -24,9 +24,6 @@ Controls whether to bind the widget to the DataSource on initialization.
 
 
 
-#### Returns
-0
-
 
 ### DataValueField(System.String)
 Sets the field of the data item that provides the value content of the list items.
@@ -42,8 +39,27 @@ Sets the field of the data item that provides the value content of the list item
 
 
 
-#### Returns
-0
+
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MultiSelectEventBuilder\>)
+Configures the client-side events.
+
+#### Example
+
+    <%= Html.Kendo().MultiSelect()
+        .Name("MultiSelect")
+        .Events(events =>
+        events.Change("change")
+        )
+    %>
+        
+
+
+#### Parameters
+
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.MultiSelectEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MultiSelectEventBuilder)>
+The client events action.
+
+
 
 
 ### Filter(System.String)
@@ -59,9 +75,6 @@ Use it to enable filtering of items.
 
 
 
-#### Returns
-0
-
 
 ### Filter(Kendo.Mvc.UI.FilterType)
 Use it to enable filtering of items.
@@ -75,9 +88,6 @@ Use it to enable filtering of items.
         
 
 
-
-#### Returns
-0
 
 
 ### Items(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListItemFactory\>)
@@ -103,9 +113,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### HighlightFirst(System.Boolean)
 Use it to enable highlighting of first matched item.
@@ -119,9 +126,6 @@ Use it to enable highlighting of first matched item.
         
 
 
-
-#### Returns
-0
 
 
 ### MinLength(System.Int32)
@@ -137,9 +141,6 @@ Specifies the minimum number of characters that should be typed before the widge
 
 
 
-#### Returns
-0
-
 
 ### Placeholder(System.String)
 A string that appears in the textbox when it has no value.
@@ -153,9 +154,6 @@ A string that appears in the textbox when it has no value.
         
 
 
-
-#### Returns
-0
 
 
 ### ItemTemplate(System.String)
@@ -171,9 +169,6 @@ Template to be used for rendering the items in the list.
 
 
 
-#### Returns
-0
-
 
 ### ItemTemplateId(System.String)
 TemplateId to be used for rendering the items in the list.
@@ -187,9 +182,6 @@ TemplateId to be used for rendering the items in the list.
         
 
 
-
-#### Returns
-0
 
 
 ### TagTemplate(System.String)
@@ -205,9 +197,6 @@ Template to be used for rendering the tags of the selected items.
 
 
 
-#### Returns
-0
-
 
 ### TagTemplateId(System.String)
 TemplateId to be used for rendering the tags of the selected items.
@@ -222,9 +211,6 @@ TemplateId to be used for rendering the tags of the selected items.
 
 
 
-#### Returns
-0
-
 
 ### Value(System.Collections.Generic.IEnumerable\<System.String\>)
 Sets the value of the widget.
@@ -238,9 +224,6 @@ Sets the value of the widget.
         
 
 
-
-#### Returns
-0
 
 
 

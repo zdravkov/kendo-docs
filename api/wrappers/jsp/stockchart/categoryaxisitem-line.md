@@ -18,7 +18,7 @@ Configures the axis line. This will also effect major and minor ticks, but not g
 
 ### color `String`
 
-The color of the lines. Any valid CSS color string will work here, including hex and rgb.
+The color of the lines. Any valid CSS color string will work here, including hex and rgb.Note: This will also effect the major and minor ticks, but not the grid lines.
 
 #### Example
     <kendo:stockChart-categoryAxisItem-line color="color">

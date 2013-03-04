@@ -24,9 +24,6 @@ Enables or disables selection.
 
 
 
-#### Returns
-0
-
 
 ### Mode(Kendo.Mvc.UI.GridSelectionMode)
 Specifies whether multiple or single selection is allowed.
@@ -41,9 +38,6 @@ Specifies whether multiple or single selection is allowed.
 
 
 
-#### Returns
-0
-
 
 ### Type(Kendo.Mvc.UI.GridSelectionType)
 Specifies whether row or cell selection is allowed.
@@ -57,9 +51,6 @@ Specifies whether row or cell selection is allowed.
         
 
 
-
-#### Returns
-0
 
 
 

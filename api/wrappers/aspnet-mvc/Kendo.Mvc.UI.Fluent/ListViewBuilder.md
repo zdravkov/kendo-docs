@@ -30,9 +30,6 @@ The data source.
 
 
 
-#### Returns
-0
-
 
 ### BindTo(System.Collections.IEnumerable)
 Binds the ListView to a list of objects
@@ -52,9 +49,6 @@ Binds the ListView to a list of objects
 The data source.
 
 
-
-#### Returns
-0
 
 
 ### ClientTemplateId(System.String)
@@ -76,9 +70,6 @@ The Id of the element which contains the template.
 
 
 
-#### Returns
-0
-
 
 ### Pageable
 Allows paging of the data.
@@ -93,9 +84,6 @@ Allows paging of the data.
         
 
 
-
-#### Returns
-0
 
 
 ### Pageable(System.Action\<Kendo.Mvc.UI.Fluent.PageableBuilder\>)
@@ -118,9 +106,6 @@ Use builder to define paging settings.
 
 
 
-#### Returns
-0
-
 
 ### Navigatable
 Enables keyboard navigation.
@@ -136,9 +121,6 @@ Enables keyboard navigation.
 
 
 
-#### Returns
-0
-
 
 ### Selectable
 Enables single item selection.
@@ -152,9 +134,6 @@ Enables single item selection.
         
 
 
-
-#### Returns
-0
 
 
 ### Selectable(System.Action\<Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder\>)
@@ -179,9 +158,6 @@ Use builder to define the selection mode.
 
 
 
-#### Returns
-0
-
 
 ### AutoBind(System.Boolean)
 Specifies if the ListView should be automatically bound on initial load.
@@ -194,9 +170,6 @@ Specifies if the ListView should be automatically bound on initial load.
 If true ListView will be automatically data bound, otherwise false
 
 
-
-#### Returns
-0
 
 
 ### TagName(System.String)
@@ -212,9 +185,6 @@ Specifies ListView wrapper element tag name.
 
 
 
-#### Returns
-0
-
 
 ### Editable(System.Action\<Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder\<T\>\>)
 Configures the ListView editing settings.
@@ -229,9 +199,6 @@ Configures the ListView editing settings.
 
 
 
-#### Returns
-0
-
 
 ### Editable
 Enables ListView editing.
@@ -245,9 +212,6 @@ Enables ListView editing.
         
 
 
-
-#### Returns
-0
 
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.ListViewEventBuilder\>)
@@ -270,9 +234,6 @@ Configures the client-side events.
 The client events action.
 
 
-
-#### Returns
-0
 
 
 

@@ -12,7 +12,7 @@ A JSP tag representing Kendo Splitter.
 
 ### orientation `String`
 
-Specifies the orientation of the
+Specifies the orientation of the Splitter.
 
 #### Example
     <kendo:splitter orientation="orientation">
@@ -23,7 +23,7 @@ Specifies the orientation of the
 
 ### kendo:splitter-panes
 
-An array of pane definitions.
+Defines the panes of the splitter
 
 More documentation is available at [kendo:splitter-panes](splitter/panes).
 

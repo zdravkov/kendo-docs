@@ -27,9 +27,6 @@ The expression used to extract the categories value from the chart model
 
 
 
-#### Returns
-0
-
 
 ### Categories(System.Collections.Generic.IEnumerable\<System.DateTime\>)
 Defines categories.
@@ -41,9 +38,6 @@ Defines categories.
 The list of categories
 
 
-
-#### Returns
-0
 
 
 ### Categories(System.DateTime[])
@@ -57,9 +51,6 @@ The list of categories
 
 
 
-#### Returns
-0
-
 
 ### BaseUnit(Kendo.Mvc.UI.ChartAxisBaseUnit)
 Sets the date category axis base unit.
@@ -71,9 +62,6 @@ Sets the date category axis base unit.
 The date category axis base unit
 
 
-
-#### Returns
-0
 
 
 ### BaseUnitStep(System.Int32)
@@ -90,9 +78,6 @@ the step (interval) between categories in base units.
 
 
 
-#### Returns
-0
-
 
 ### MaxDateGroups(System.Int32)
 Specifies the maximum number of groups (categories) that the chart will attempt to
@@ -107,9 +92,6 @@ the maximum number of groups (categories).
             The default value is 10.
 
 
-
-#### Returns
-0
 
 
 ### RoundToBaseUnit(System.Boolean)
@@ -127,9 +109,6 @@ A boolean value that indicates if the axis range should be rounded to the neares
 
 
 
-#### Returns
-0
-
 
 ### Justify(System.Boolean)
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
@@ -144,18 +123,12 @@ A boolean value that indicates if the empty space before and after the series sh
 
 
 
-#### Returns
-0
-
 
 ### Justify
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
 
 
-
-#### Returns
-0
 
 
 ### AutoBaseUnitSteps(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder\>)
@@ -170,9 +143,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Min(System.DateTime)
 Sets the date category axis minimum (start) date.
@@ -185,9 +155,6 @@ The date category axis minimum (start) date
 
 
 
-#### Returns
-0
-
 
 ### Max(System.DateTime)
 Sets the date category axis maximum (end) date.
@@ -199,9 +166,6 @@ Sets the date category axis maximum (end) date.
 The date category axis maximum (end) date
 
 
-
-#### Returns
-0
 
 
 ### AxisCrossingValue(System.Double)
@@ -225,9 +189,6 @@ The value at which the first perpendicular axis crosses this axis.
 
 
 
-#### Returns
-0
-
 
 ### AxisCrossingValue(System.Double[])
 Sets value at which perpendicular axes cross this axis.
@@ -250,9 +211,6 @@ The values at which perpendicular axes cross this axis.
 
 
 
-#### Returns
-0
-
 
 ### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
 Sets value at which perpendicular axes cross this axis.
@@ -274,9 +232,6 @@ Sets value at which perpendicular axes cross this axis.
 The values at which perpendicular axes cross this axis.
 
 
-
-#### Returns
-0
 
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder\>)
@@ -303,9 +258,6 @@ Configures the axis labels.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

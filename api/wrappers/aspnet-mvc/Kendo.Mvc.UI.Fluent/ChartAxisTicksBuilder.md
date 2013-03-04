@@ -31,9 +31,6 @@ The ticks size.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the ticks visibility
@@ -54,9 +51,6 @@ Sets the ticks visibility
 The ticks visibility.
 
 
-
-#### Returns
-0
 
 
 

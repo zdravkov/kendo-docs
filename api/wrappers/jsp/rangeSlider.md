@@ -21,7 +21,7 @@ handle must be focused). Note: The allied largeStep will also set large tick for
 
 ### max `float`
 
-The maximum value of the
+The maximum value of the RangeSlider.
 
 #### Example
     <kendo:rangeSlider max="max">
@@ -29,7 +29,7 @@ The maximum value of the
 
 ### min `float`
 
-The minimum value of the
+The minimum value of the RangeSlider.
 
 #### Example
     <kendo:rangeSlider min="min">
@@ -38,7 +38,8 @@ The minimum value of the
 ### orientation `String`
 
 F
-The orientation of a
+The orientation of a RangeSlider; "horizontal" or
+"vertical".
 
 #### Example
     <kendo:rangeSlider orientation="orientation">
@@ -46,7 +47,7 @@ The orientation of a
 
 ### selectionEnd `float`
 
-The selection end value of the
+The selection end value of the RangeSlider.
 
 #### Example
     <kendo:rangeSlider selectionEnd="selectionEnd">
@@ -54,7 +55,7 @@ The selection end value of the
 
 ### selectionStart `float`
 
-The selection start value of the
+The selection start value of the RangeSlider.
 
 #### Example
     <kendo:rangeSlider selectionStart="selectionStart">
@@ -62,7 +63,9 @@ The selection start value of the
 
 ### smallStep `float`
 
-The small step value of the
+The small step value of the RangeSlider. The underlying value will be changed when the end
+user (1) clicks on the increase or decrease buttons of the RangeSlider, (2) presses the
+arrow keys (the drag handle must be focused), or (3) drags the drag handle.
 
 #### Example
     <kendo:rangeSlider smallStep="smallStep">
@@ -70,7 +73,7 @@ The small step value of the
 
 ### tickPlacement `String`
 
-Denotes the location of the tick marks in the
+Denotes the location of the tick marks in the RangeSlider. The available options are:
 
 #### Example
     <kendo:rangeSlider tickPlacement="tickPlacement">
@@ -81,7 +84,7 @@ Denotes the location of the tick marks in the
 
 ### kendo:rangeSlider-tooltip
 
-Configuration of the
+Configuration of the RangeSlider tooltip.
 
 More documentation is available at [kendo:rangeSlider-tooltip](rangeslider/tooltip).
 

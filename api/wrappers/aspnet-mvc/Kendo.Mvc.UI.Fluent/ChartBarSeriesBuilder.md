@@ -30,9 +30,6 @@ A value indicating if the bars should be stacked.
 
 
 
-#### Returns
-0
-
 
 ### Stack(System.String)
 Sets the name of the stack that this series belongs to. Each unique name creates a new stack.
@@ -52,9 +49,6 @@ Sets the name of the stack that this series belongs to. Each unique name creates
 The name of the stack.
 
 
-
-#### Returns
-0
 
 
 ### Aggregate(Kendo.Mvc.UI.ChartSeriesAggregate)
@@ -77,9 +71,6 @@ Aggregate function name.
 
 
 
-#### Returns
-0
-
 
 ### Gap(System.Double)
 Set distance between category clusters.
@@ -97,9 +88,6 @@ Set distance between category clusters.
         
 
 
-
-#### Returns
-0
 
 
 ### Spacing(System.Double)
@@ -121,9 +109,6 @@ Value of 1 means that the distance between bars is equal to their width.
             The default value is 0
 
 
-
-#### Returns
-0
 
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder\>)
@@ -151,9 +136,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Labels(System.Boolean)
 Sets the visibility of bar chart labels.
@@ -176,9 +158,6 @@ Sets the visibility of bar chart labels.
 The visibility. The default value is false.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -207,9 +186,6 @@ The bars border dash type.
 
 
 
-#### Returns
-0
-
 
 ### Overlay(Kendo.Mvc.UI.ChartBarSeriesOverlay)
 Sets the bar effects overlay
@@ -231,8 +207,26 @@ The bar effects overlay. The default is ChartBarSeriesOverlay.Glass
 
 
 
-#### Returns
-0
+
+### NegativeColor(System.String)
+Sets the bar color for negative values
+
+#### Example
+
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Bar(s => s.Sales).NegativeColor("Red"))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### color `System.String`
+The bar color for negative values(CSS syntax).
+
+
 
 
 

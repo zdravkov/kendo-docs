@@ -24,9 +24,6 @@ Specifies the culture info used by the Calendar widget.
 
 
 
-#### Returns
-0
-
 
 ### Events(System.Action\<Kendo.Mvc.UI.Fluent.CalendarEventBuilder\>)
 Configures the client-side events.
@@ -49,17 +46,11 @@ The client events action.
 
 
 
-#### Returns
-0
-
 
 ### Format(System.String)
 Sets the date format, which will be used to parse and format the machine date.
 
 
-
-#### Returns
-0
 
 
 ### FooterId(System.String)
@@ -75,9 +66,6 @@ FooterId to be used for rendering the footer of the Calendar.
 
 
 
-#### Returns
-0
-
 
 ### Footer(System.String)
 Footer template to be used for rendering the footer of the Calendar.
@@ -91,9 +79,6 @@ Footer template to be used for rendering the footer of the Calendar.
         
 
 
-
-#### Returns
-0
 
 
 ### Depth(Kendo.Mvc.UI.CalendarView)
@@ -109,9 +94,6 @@ Specifies the navigation depth.
 
 
 
-#### Returns
-0
-
 
 ### Start(Kendo.Mvc.UI.CalendarView)
 Specifies the start view.
@@ -125,9 +107,6 @@ Specifies the start view.
         
 
 
-
-#### Returns
-0
 
 
 ### MonthTemplateId(System.String)
@@ -143,9 +122,6 @@ MonthTemplateId to be used for rendering the cells of the Calendar.
 
 
 
-#### Returns
-0
-
 
 ### MonthTemplate(System.String)
 Templates for the cells rendered in the "month" view.
@@ -159,9 +135,6 @@ Templates for the cells rendered in the "month" view.
         
 
 
-
-#### Returns
-0
 
 
 ### MonthTemplate(System.Action\<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder\>)
@@ -177,17 +150,11 @@ Configures the content of cells of the Calendar.
 
 
 
-#### Returns
-0
-
 
 ### Min(System.String)
 Sets the minimal date, which can be selected in the calendar.
 
 
-
-#### Returns
-0
 
 
 ### Max(System.String)
@@ -195,17 +162,11 @@ Sets the maximal date, which can be selected in the calendar.
 
 
 
-#### Returns
-0
-
 
 ### Min(System.DateTime)
 Sets the minimal date, which can be selected in the calendar
 
 
-
-#### Returns
-0
 
 
 ### Max(System.DateTime)
@@ -213,26 +174,17 @@ Sets the maximal date, which can be selected in the calendar
 
 
 
-#### Returns
-0
-
 
 ### Value(System.Nullable\<System.DateTime\>)
 Sets the value of the calendar
 
 
 
-#### Returns
-0
-
 
 ### Value(System.String)
 Sets the value of the calendar
 
 
-
-#### Returns
-0
 
 
 ### Selection(System.Action\<Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder\>)

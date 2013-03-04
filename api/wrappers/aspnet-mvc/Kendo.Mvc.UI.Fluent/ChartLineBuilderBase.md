@@ -31,9 +31,6 @@ The line color (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Width(System.Int32)
 Sets the line width
@@ -55,9 +52,6 @@ The line width.
 
 
 
-#### Returns
-0
-
 
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the line dashType.
@@ -78,9 +72,6 @@ Sets the line dashType.
 The line dashType.
 
 
-
-#### Returns
-0
 
 
 

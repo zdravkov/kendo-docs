@@ -31,9 +31,6 @@ The text title.
 
 
 
-#### Returns
-0
-
 
 ### Font(System.String)
 Sets the title font
@@ -54,9 +51,6 @@ Sets the title font
 The title font (CSS format).
 
 
-
-#### Returns
-0
 
 
 ### Color(System.String)
@@ -79,9 +73,6 @@ The title color (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Background(System.String)
 Sets the title background color
@@ -102,9 +93,6 @@ Sets the title background color
 The background color.
 
 
-
-#### Returns
-0
 
 
 ### Position(Kendo.Mvc.UI.ChartTitlePosition)
@@ -127,9 +115,6 @@ The title position.
 
 
 
-#### Returns
-0
-
 
 ### Align(Kendo.Mvc.UI.ChartTextAlignment)
 Sets the title alignment
@@ -151,9 +136,6 @@ The title alignment.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the title visibility
@@ -174,9 +156,6 @@ Sets the title visibility
 The title visibility.
 
 
-
-#### Returns
-0
 
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -208,9 +187,6 @@ The title left margin.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32)
 Sets the title margin
@@ -231,9 +207,6 @@ Sets the title margin
 The title margin.
 
 
-
-#### Returns
-0
 
 
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -265,9 +238,6 @@ The title left padding.
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the title padding
@@ -288,9 +258,6 @@ Sets the title padding
 The title padding.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -319,9 +286,6 @@ The title dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the plot area border
@@ -333,9 +297,6 @@ Configures the plot area border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 

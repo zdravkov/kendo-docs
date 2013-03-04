@@ -29,9 +29,6 @@ Sets the name of the series.
 
 
 
-#### Returns
-0
-
 
 ### Opacity(System.Double)
 Sets the series opacity.
@@ -53,9 +50,6 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the padding of the chart.
@@ -70,9 +64,6 @@ Sets the padding of the chart.
         
 
 
-
-#### Returns
-0
 
 
 ### StartAngle(System.Int32)
@@ -94,9 +85,6 @@ Sets the start angle of the first pie segment.
 The pie start angle(in degrees).
 
 
-
-#### Returns
-0
 
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder\>)
@@ -124,9 +112,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Labels(System.Boolean)
 Sets the visibility of pie chart labels.
@@ -149,9 +134,6 @@ Sets the visibility of pie chart labels.
 The visibility. The default value is false.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -180,9 +162,6 @@ The pie segments border dash type.
 
 
 
-#### Returns
-0
-
 
 ### Overlay(Kendo.Mvc.UI.ChartPieSeriesOverlay)
 Sets the pie segments effects overlay
@@ -204,9 +183,6 @@ The pie segment effects overlay.
             The default value is set in the theme.
 
 
-
-#### Returns
-0
 
 
 ### Connectors(System.Action\<Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder\>)
@@ -233,9 +209,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder\>)
 Configures the pie highlight
@@ -247,9 +220,6 @@ Configures the pie highlight
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 

@@ -32,9 +32,6 @@ New cancel button text.
 
 
 
-#### Returns
-0
-
 
 ### DropFilesHere(System.String)
 Sets the Drag and Drop hint text
@@ -56,9 +53,6 @@ Sets the Drag and Drop hint text
 New Drag and Drop hint text.
 
 
-
-#### Returns
-0
 
 
 ### Remove(System.String)
@@ -82,9 +76,6 @@ New Remove button text.
 
 
 
-#### Returns
-0
-
 
 ### Retry(System.String)
 Sets the Retry button text
@@ -106,9 +97,6 @@ Sets the Retry button text
 New Retry button text.
 
 
-
-#### Returns
-0
 
 
 ### Select(System.String)
@@ -132,9 +120,6 @@ New Select button text.
 
 
 
-#### Returns
-0
-
 
 ### StatusFailed(System.String)
 Sets the "failed" status text accessible by screen readers
@@ -156,9 +141,6 @@ Sets the "failed" status text accessible by screen readers
 New "failed" status text accessible by screen readers.
 
 
-
-#### Returns
-0
 
 
 ### StatusUploaded(System.String)
@@ -182,9 +164,6 @@ New "uploaded" status text accessible by screen readers.
 
 
 
-#### Returns
-0
-
 
 ### StatusUploading(System.String)
 Sets the "uploading" status text accessible by screen readers
@@ -207,9 +186,6 @@ New "uploading" status text accessible by screen readers.
 
 
 
-#### Returns
-0
-
 
 ### UploadSelectedFiles(System.String)
 Sets Upload button (visible when AutoUpload is set to false) text
@@ -231,9 +207,6 @@ Sets Upload button (visible when AutoUpload is set to false) text
 New Upload button text.
 
 
-
-#### Returns
-0
 
 
 

@@ -12,7 +12,8 @@ A JSP tag representing Kendo PanelBar.
 
 ### animation `boolean`
 
-A collection of visual animations used when Further configuration is available via [kendo:panelBar-animation](#kendo-panelBar-animation). 
+A collection of visual animations used when PanelBar items are exapnd or collapsed through
+user interactions. Setting this option to false will disable all animations. Further configuration is available via [kendo:panelBar-animation](#kendo-panelBar-animation). 
 
 #### Example
     <kendo:panelBar animation="animation">
@@ -20,7 +21,8 @@ A collection of visual animations used when Further configuration is available v
 
 ### expandMode `String`
 
-Specifies how the
+Specifies how the PanelBar items are displayed when opened and closed. The following values
+are available:
 
 #### Example
     <kendo:panelBar expandMode="expandMode">
@@ -31,7 +33,8 @@ Specifies how the
 
 ### kendo:panelBar-animation
 
-A collection of visual animations used when
+A collection of visual animations used when PanelBar items are exapnd or collapsed through
+user interactions. Setting this option to false will disable all animations.
 
 More documentation is available at [kendo:panelBar-animation](panelbar/animation).
 

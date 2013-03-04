@@ -254,6 +254,19 @@ More documentation is available at [kendo:grid-toolbar](grid/toolbar).
 
 ## Event Attributes
 
+### cancel `String`
+
+Raised when the user clicks the "cancel" button (in inline or popup editing mode) or closes the popup window (popup editing mode).
+
+#### Example
+    <kendo:grid cancel="handle_cancel">
+    </kendo:grid>
+    <script>
+        function handle_cancel(e) {
+            // Code to handle the cancel event.
+        }
+    </script>
+
 ### change `String`
 
 Fires when the grid selection has changed.
@@ -267,6 +280,32 @@ Fires when the grid selection has changed.
         }
     </script>
 
+### columnHide `String`
+
+Fires when the user hides a column.
+
+#### Example
+    <kendo:grid columnHide="handle_columnHide">
+    </kendo:grid>
+    <script>
+        function handle_columnHide(e) {
+            // Code to handle the columnHide event.
+        }
+    </script>
+
+### columnReorder `String`
+
+Fires when the user changes the order of a column.
+
+#### Example
+    <kendo:grid columnReorder="handle_columnReorder">
+    </kendo:grid>
+    <script>
+        function handle_columnReorder(e) {
+            // Code to handle the columnReorder event.
+        }
+    </script>
+
 ### columnResize `String`
 
 Fires when the user resizes a column.
@@ -277,6 +316,19 @@ Fires when the user resizes a column.
     <script>
         function handle_columnResize(e) {
             // Code to handle the columnResize event.
+        }
+    </script>
+
+### columnShow `String`
+
+Fires when a column is shown.
+
+#### Example
+    <kendo:grid columnShow="handle_columnShow">
+    </kendo:grid>
+    <script>
+        function handle_columnShow(e) {
+            // Code to handle the columnShow event.
         }
     </script>
 
@@ -425,6 +477,21 @@ Fires before the grid calls DataSource sync.
 
 ## Event Tags
 
+### kendo:grid-cancel
+
+Raised when the user clicks the "cancel" button (in inline or popup editing mode) or closes the popup window (popup editing mode).
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-cancel>
+            <script>
+                function(e) {
+                    // Code to handle the cancel event.
+                }
+            </script>
+        </kendo:grid-cancel>
+    </kendo:grid>
+
 ### kendo:grid-change
 
 Fires when the grid selection has changed.
@@ -440,6 +507,36 @@ Fires when the grid selection has changed.
         </kendo:grid-change>
     </kendo:grid>
 
+### kendo:grid-columnHide
+
+Fires when the user hides a column.
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-columnHide>
+            <script>
+                function(e) {
+                    // Code to handle the columnHide event.
+                }
+            </script>
+        </kendo:grid-columnHide>
+    </kendo:grid>
+
+### kendo:grid-columnReorder
+
+Fires when the user changes the order of a column.
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-columnReorder>
+            <script>
+                function(e) {
+                    // Code to handle the columnReorder event.
+                }
+            </script>
+        </kendo:grid-columnReorder>
+    </kendo:grid>
+
 ### kendo:grid-columnResize
 
 Fires when the user resizes a column.
@@ -453,6 +550,21 @@ Fires when the user resizes a column.
                 }
             </script>
         </kendo:grid-columnResize>
+    </kendo:grid>
+
+### kendo:grid-columnShow
+
+Fires when a column is shown.
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-columnShow>
+            <script>
+                function(e) {
+                    // Code to handle the columnShow event.
+                }
+            </script>
+        </kendo:grid-columnShow>
     </kendo:grid>
 
 ### kendo:grid-dataBound

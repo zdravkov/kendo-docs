@@ -37,9 +37,6 @@ The labels font (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the labels visibility
@@ -65,9 +62,6 @@ Sets the labels visibility
 The labels visibility.
 
 
-
-#### Returns
-0
 
 
 ### Background(System.String)
@@ -96,9 +90,6 @@ The labels background color.
 
 
 
-#### Returns
-0
-
 
 ### Color(System.String)
 Sets the labels text color
@@ -125,9 +116,6 @@ Sets the labels text color
 The labels text color.
 
 
-
-#### Returns
-0
 
 
 ### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -165,9 +153,6 @@ The labels left margin.
 
 
 
-#### Returns
-0
-
 
 ### Margin(System.Int32)
 Sets the labels margin
@@ -194,9 +179,6 @@ Sets the labels margin
 The labels margin.
 
 
-
-#### Returns
-0
 
 
 ### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
@@ -234,9 +216,6 @@ The labels left padding.
 
 
 
-#### Returns
-0
-
 
 ### Padding(System.Int32)
 Sets the labels padding
@@ -263,9 +242,6 @@ Sets the labels padding
 The labels padding.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -300,9 +276,6 @@ The labels border dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the labels border
@@ -314,9 +287,6 @@ Configures the labels border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 ### Format(System.String)
@@ -345,9 +315,6 @@ The labels format.
 
 
 
-#### Returns
-0
-
 
 ### Template(System.String)
 Sets the labels template.
@@ -374,9 +341,6 @@ Sets the labels template.
 The labels template.
 
 
-
-#### Returns
-0
 
 
 ### Opacity(System.Double)
@@ -406,9 +370,6 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-#### Returns
-0
-
 
 ### Rotation(System.Int32)
 Sets the labels text rotation
@@ -435,9 +396,6 @@ Sets the labels text rotation
 The labels text rotation.
 
 
-
-#### Returns
-0
 
 
 

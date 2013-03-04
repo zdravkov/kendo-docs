@@ -37,9 +37,6 @@ A value indicating whether to render the axis labels on the other side.
 
 
 
-#### Returns
-0
-
 
 ### Step(System.Int32)
 Label rendering step.
@@ -64,9 +61,6 @@ A value indicating the step at which labels are rendered.
 
 
 
-#### Returns
-0
-
 
 ### Skip(System.Int32)
 Label rendering skip.
@@ -89,9 +83,6 @@ Label rendering skip.
 Skips rendering the first n labels.
 
 
-
-#### Returns
-0
 
 
 

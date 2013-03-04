@@ -33,9 +33,6 @@ The cap color.
 
 
 
-#### Returns
-0
-
 
 ### Opacity(System.Double)
 Sets the cap opacity.
@@ -60,9 +57,6 @@ The cap opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-#### Returns
-0
-
 
 ### Size(System.Double)
 Sets the cap size in percents.
@@ -85,9 +79,6 @@ Sets the cap size in percents.
 The cap size in percents.
 
 
-
-#### Returns
-0
 
 
 

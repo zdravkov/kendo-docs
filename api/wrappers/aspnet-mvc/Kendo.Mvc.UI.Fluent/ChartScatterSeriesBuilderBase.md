@@ -36,9 +36,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Labels(System.Boolean)
 Sets the visibility of scatter chart labels.
@@ -61,9 +58,6 @@ Sets the visibility of scatter chart labels.
 The visibility. The default value is false.
 
 
-
-#### Returns
-0
 
 
 ### Markers(System.Action\<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder\>)
@@ -90,9 +84,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Markers(System.Boolean)
 Sets the visibility of scatter chart markers.
@@ -116,9 +107,6 @@ The visibility. The default value is true.
 
 
 
-#### Returns
-0
-
 
 ### XAxis(System.String)
 Sets the axis name to use for this series.
@@ -140,9 +128,6 @@ Sets the axis name to use for this series.
 The axis name for this series.
 
 
-
-#### Returns
-0
 
 
 ### YAxis(System.String)
@@ -166,17 +151,11 @@ The axis name for this series.
 
 
 
-#### Returns
-0
-
 
 ### Axis(System.String)
 Not applicable to scatter series
 
 
-
-#### Returns
-0
 
 
 

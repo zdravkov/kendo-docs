@@ -66,7 +66,7 @@ The field from the datasource that will be displayed in the column.
 
 ### filterable `boolean`
 
-Specifies whether given column is filterable.
+Specifies whether given column is filterable. Further configuration is available via [kendo:grid-column-filterable](#kendo-grid-column-filterable). 
 
 #### Example
     <kendo:grid-column filterable="filterable">
@@ -114,7 +114,8 @@ Definition of column header cell's HTML attributes. Reserved words in Javascript
 
 ### headerTemplate `String`
 
-The template for column's header cell. If sorting is enabled, it will be wrapped in a
+The template for column's header cell. If sorting is enabled, it will be wrapped in a <a class="k-link"> element, so the template should consist of only inline elements
+in order to have valid HTML markup in the Grid.
 
 #### Example
     <kendo:grid-column headerTemplate="headerTemplate">
@@ -181,6 +182,18 @@ More documentation is available at [kendo:grid-column-command](grid/column-comma
 
     <kendo:grid-column>
         <kendo:grid-column-command></kendo:grid-column-command>
+    </kendo:grid-column>
+
+### kendo:grid-column-filterable
+
+Specifies whether given column is filterable.
+
+More documentation is available at [kendo:grid-column-filterable](grid/column-filterable).
+
+#### Example
+
+    <kendo:grid-column>
+        <kendo:grid-column-filterable></kendo:grid-column-filterable>
     </kendo:grid-column>
 
 

@@ -39,9 +39,6 @@ The attributes.
 
 
 
-#### Returns
-0
-
 
 ### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes applied to the outer HTML element rendered for the item
@@ -53,9 +50,6 @@ Sets the HTML attributes applied to the outer HTML element rendered for the item
 The attributes.
 
 
-
-#### Returns
-0
 
 
 ### Text(System.String)
@@ -77,9 +71,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Makes the item visible or not. Invisible items are not rendered in the output HTML.
@@ -100,9 +91,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### Enabled(System.Boolean)
 Enables or disables the item. Disabled item cannot be clicked, expanded or open (depending on the item type - menu, tabstrip, panelbar).
@@ -117,9 +105,6 @@ Enables or disables the item. Disabled item cannot be clicked, expanded or open 
 
 
 
-#### Returns
-0
-
 
 ### Selected(System.Boolean)
 Selects or unselects the item. By default items are not selected.
@@ -133,9 +118,6 @@ Selects or unselects the item. By default items are not selected.
         
 
 
-
-#### Returns
-0
 
 
 ### Route(System.String,System.Web.Routing.RouteValueDictionary)
@@ -160,9 +142,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Route(System.String,System.Object)
 Sets the route to which the item should navigate.
@@ -186,9 +165,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Route(System.String)
 Sets the route to which the item should navigate.
@@ -209,9 +185,6 @@ Name of the route.
 
 
 
-#### Returns
-0
-
 
 ### Action(System.Web.Routing.RouteValueDictionary)
 Sets the action to which the item should navigate
@@ -231,9 +204,6 @@ Sets the action to which the item should navigate
 The route values of the Action method.
 
 
-
-#### Returns
-0
 
 
 ### Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
@@ -261,9 +231,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Action(System.String,System.String,System.Object)
 Sets the action to which the item should navigate
@@ -290,9 +257,6 @@ The route values.
 
 
 
-#### Returns
-0
-
 
 ### Action(System.String,System.String)
 Sets the action to which the item should navigate
@@ -316,9 +280,6 @@ Name of the controller.
 
 
 
-#### Returns
-0
-
 
 ### Url(System.String)
 Sets the URL to which the item should navigate
@@ -339,9 +300,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### ImageUrl(System.String)
 Sets the URL of the image that should be displayed by the item.
@@ -361,9 +319,6 @@ Sets the URL of the image that should be displayed by the item.
 The value.
 
 
-
-#### Returns
-0
 
 
 ### ImageHtmlAttributes(System.Object)
@@ -388,9 +343,6 @@ The attributes.
 
 
 
-#### Returns
-0
-
 
 ### ImageHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes for the item image.
@@ -402,9 +354,6 @@ Sets the HTML attributes for the item image.
 The attributes.
 
 
-
-#### Returns
-0
 
 
 ### SpriteCssClasses(System.String[])
@@ -428,9 +377,6 @@ The CSS classes.
 
 
 
-#### Returns
-0
-
 
 ### Content(System.Action)
 Sets the HTML content which the item should display.
@@ -442,9 +388,6 @@ Sets the HTML content which the item should display.
 The action which renders the content.
 
 
-
-#### Returns
-0
 
 
 ### Content(System.Func\<System.Object,System.Object\>)
@@ -458,9 +401,6 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-#### Returns
-0
-
 
 ### Content(System.String)
 Sets the HTML content which the item should display as a string.
@@ -472,9 +412,6 @@ Sets the HTML content which the item should display as a string.
 The action which renders the content.
 
 
-
-#### Returns
-0
 
 
 ### ContentHtmlAttributes(System.Object)
@@ -499,9 +436,6 @@ The attributes.
 
 
 
-#### Returns
-0
-
 
 ### ContentHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes of the content element of the item.
@@ -513,9 +447,6 @@ Sets the HTML attributes of the content element of the item.
 The attributes.
 
 
-
-#### Returns
-0
 
 
 ### ActionT1(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
@@ -539,9 +470,6 @@ The action.
 
 
 
-#### Returns
-0
-
 
 ### Encoded(System.Boolean)
 Sets whether the Text property should be encoded when the item is rendered.
@@ -561,9 +489,6 @@ Sets whether the Text property should be encoded when the item is rendered.
 Whether the property should be encoded. Default: true.
 
 
-
-#### Returns
-0
 
 
 

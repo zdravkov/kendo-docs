@@ -37,9 +37,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### Expanded(System.Boolean)
 Define when the item will be expanded on intial render.
@@ -67,9 +64,6 @@ Define when the item will be expanded on intial render.
 If true the item will be expanded.
 
 
-
-#### Returns
-0
 
 
 

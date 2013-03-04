@@ -7,7 +7,8 @@ publish: true
 
 # \<kendo:chart-seriesItem\>
 
-Array of series definitions.
+Array of series definitions.The series type is determined by the value of the type field.
+If a type value is missing, the type is assumed to be the one specified in seriesDefaults.Each series type has a different set of options.
 
 #### Example
     <kendo:chart-series>
@@ -18,7 +19,8 @@ Array of series definitions.
 
 ### aggregate `String`
 
-Aggregate function for date series.
+Aggregate function for date series.This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.
 
 #### Example
     <kendo:chart-seriesItem aggregate="aggregate">
@@ -26,7 +28,7 @@ Aggregate function for date series.
 
 ### axis `String`
 
-The name of the value axis to use.
+The name of the value axis to use.** Applicable to area, bar, column, line, ohlc and candlestick series **
 
 #### Example
     <kendo:chart-seriesItem axis="axis">
@@ -34,7 +36,7 @@ The name of the value axis to use.
 
 ### categoryField `String`
 
-The data field containing the point category name.
+The data field containing the point category name.** Applicable to bubble, donut and pie series. **
 
 #### Example
     <kendo:chart-seriesItem categoryField="categoryField">
@@ -42,7 +44,7 @@ The data field containing the point category name.
 
 ### closeField `String`
 
-The data field containing the close value.
+The data field containing the close value.** Available for candlestick and ohlc series only **
 
 #### Example
     <kendo:chart-seriesItem closeField="closeField">
@@ -58,15 +60,23 @@ The series base color.
 
 ### colorField `String`
 
-The data field containing the point color.
+The data field containing the point color.** Applicable for bar, column, bubble, donut, pie, candlestick and ohlc series. **
 
 #### Example
     <kendo:chart-seriesItem colorField="colorField">
     </kendo:chart-seriesItem>
 
+### currentField `String`
+
+The data field containing the current value.** Available for bullet and verticalBullet series. **
+
+#### Example
+    <kendo:chart-seriesItem currentField="currentField">
+    </kendo:chart-seriesItem>
+
 ### dashType `String`
 
-The series line dash type.
+The series line dash type.** Applicable only to line and scatterLine series **
 
 #### Example
     <kendo:chart-seriesItem dashType="dashType">
@@ -82,7 +92,7 @@ Array of data items. The data item type can be either a:
 
 ### downColor `String`
 
-The series color when open value is smoller then close value.
+The series color when open value is smoller then close value.** Available for candlestick series only **
 
 #### Example
     <kendo:chart-seriesItem downColor="downColor">
@@ -90,7 +100,7 @@ The series color when open value is smoller then close value.
 
 ### downColorField `String`
 
-The data field containing the body color.
+The data field containing the body color.** Available for candlestick series only **
 
 #### Example
     <kendo:chart-seriesItem downColorField="downColorField">
@@ -98,7 +108,7 @@ The data field containing the body color.
 
 ### explodeField `String`
 
-The data field containing a boolean value that indicates if the sector is exploded.
+The data field containing a boolean value that indicates if the sector is exploded.** Available for donut and pie series **
 
 #### Example
     <kendo:chart-seriesItem explodeField="explodeField">
@@ -114,7 +124,7 @@ The data field containing the series value.
 
 ### gap `float`
 
-The distance between category clusters.
+The distance between category clusters.** Applicable for bar, column, candlestick and ohlc series. **
 
 #### Example
     <kendo:chart-seriesItem gap="gap">
@@ -122,7 +132,7 @@ The distance between category clusters.
 
 ### groupNameTemplate `String`
 
-Name template for auto-generated series when binding to grouped data.
+Name template for auto-generated series when binding to grouped data.Template variables:
 
 #### Example
     <kendo:chart-seriesItem groupNameTemplate="groupNameTemplate">
@@ -130,7 +140,7 @@ Name template for auto-generated series when binding to grouped data.
 
 ### highField `String`
 
-The data field containing the high value.
+The data field containing the high value.** Available for candlestick and ohlc series only **
 
 #### Example
     <kendo:chart-seriesItem highField="highField">
@@ -138,7 +148,7 @@ The data field containing the high value.
 
 ### holeSize `float`
 
-The the size of the donut hole.
+The the size of the donut hole.** Available for donut series only. **
 
 #### Example
     <kendo:chart-seriesItem holeSize="holeSize">
@@ -146,7 +156,7 @@ The the size of the donut hole.
 
 ### line `String`
 
-Line options. Further configuration is available via [kendo:chart-seriesItem-line](#kendo-chart-seriesItem-line). 
+Line options.** Applicable to area, candlestick and ohlc series. ** Further configuration is available via [kendo:chart-seriesItem-line](#kendo-chart-seriesItem-line). 
 
 #### Example
     <kendo:chart-seriesItem line="line">
@@ -154,7 +164,7 @@ Line options. Further configuration is available via [kendo:chart-seriesItem-lin
 
 ### lowField `String`
 
-The data field containing the low value.
+The data field containing the low value.** Available for candlestick and ohlc series **
 
 #### Example
     <kendo:chart-seriesItem lowField="lowField">
@@ -162,7 +172,7 @@ The data field containing the low value.
 
 ### margin `float`
 
-The margin around each donut series (ring)
+The margin around each donut series (ring)** Applicable only to donut series **
 
 #### Example
     <kendo:chart-seriesItem margin="margin">
@@ -170,7 +180,7 @@ The margin around each donut series (ring)
 
 ### maxSize `float`
 
-The max size of the marker.
+The max size of the marker.** Applicable only to bubble series. **
 
 #### Example
     <kendo:chart-seriesItem maxSize="maxSize">
@@ -178,7 +188,7 @@ The max size of the marker.
 
 ### minSize `float`
 
-The min size of the marker.
+The min size of the marker.** Applicable only to bubble series. **
 
 #### Example
     <kendo:chart-seriesItem minSize="minSize">
@@ -186,7 +196,7 @@ The min size of the marker.
 
 ### missingValues `String`
 
-Configures the behavior for handling missing values.
+Configures the behavior for handling missing values.** Available for area, line and scatterLine series **
 
 #### Example
     <kendo:chart-seriesItem missingValues="missingValues">
@@ -200,6 +210,14 @@ The series name visible in the legend.
     <kendo:chart-seriesItem name="name">
     </kendo:chart-seriesItem>
 
+### negativeColor `String`
+
+Color to use for bars with negative values.** Applicable only to bar and column series. **
+
+#### Example
+    <kendo:chart-seriesItem negativeColor="negativeColor">
+    </kendo:chart-seriesItem>
+
 ### opacity `float`
 
 The series opacity.
@@ -210,7 +228,7 @@ The series opacity.
 
 ### openField `String`
 
-The data field containing the open value.
+The data field containing the open value.** Available for candlestick and ohlc series **
 
 #### Example
     <kendo:chart-seriesItem openField="openField">
@@ -218,7 +236,7 @@ The data field containing the open value.
 
 ### padding `float`
 
-The padding around the chart (equal on all sides).
+The padding around the chart (equal on all sides).** Available for donut and pie series. **
 
 #### Example
     <kendo:chart-seriesItem padding="padding">
@@ -227,7 +245,7 @@ The padding around the chart (equal on all sides).
 ### size `float`
 
 The size (or radius) of the series in pixels.
-If not specified, the available space is split evenly between the series.
+If not specified, the available space is split evenly between the series.Available for donut series only.
 
 #### Example
     <kendo:chart-seriesItem size="size">
@@ -235,7 +253,7 @@ If not specified, the available space is split evenly between the series.
 
 ### sizeField `String`
 
-The data field containing the bubble size value.
+The data field containing the bubble size value.** Applicable only to bubble series. **
 
 #### Example
     <kendo:chart-seriesItem sizeField="sizeField">
@@ -243,7 +261,7 @@ The data field containing the bubble size value.
 
 ### spacing `float`
 
-Space between points as proportion of the point width.
+Space between points as proportion of the point width.** Available for bar, column, candlestick and ohlc series. **
 
 #### Example
     <kendo:chart-seriesItem spacing="spacing">
@@ -260,10 +278,18 @@ A value indicating if the series should be stacked. String value indicates that 
 
 ### startAngle `float`
 
-The start angle of the first segment.
+The start angle of the first segment.Available for donut and pie series.
 
 #### Example
     <kendo:chart-seriesItem startAngle="startAngle">
+    </kendo:chart-seriesItem>
+
+### targetField `String`
+
+The data field containing the target value.** Available for bullet and verticalBullet series. **
+
+#### Example
+    <kendo:chart-seriesItem targetField="targetField">
     </kendo:chart-seriesItem>
 
 ### type `String`
@@ -276,7 +302,7 @@ The type of the series. Available types:
 
 ### visibleInLegendField `String`
 
-A boolean value indicating whether to show the point category name in the legend.
+A boolean value indicating whether to show the point category name in the legend.** Available for bubble and pie series. **
 
 #### Example
     <kendo:chart-seriesItem visibleInLegendField="visibleInLegendField">
@@ -284,7 +310,7 @@ A boolean value indicating whether to show the point category name in the legend
 
 ### width `float`
 
-The line width.
+The line width.** Available for area, line and scatterLine series **
 
 #### Example
     <kendo:chart-seriesItem width="width">
@@ -292,7 +318,7 @@ The line width.
 
 ### xAxis `String`
 
-The name of the X axis to use.
+The name of the X axis to use.** Available for bubble, scatter and scatterLine series. **
 
 #### Example
     <kendo:chart-seriesItem xAxis="xAxis">
@@ -300,7 +326,7 @@ The name of the X axis to use.
 
 ### xField `String`
 
-The data field containing the X value.
+The data field containing the X value.** Available for bubble, scatter and scatterLine series. **
 
 #### Example
     <kendo:chart-seriesItem xField="xField">
@@ -308,7 +334,7 @@ The data field containing the X value.
 
 ### yAxis `String`
 
-The name of the Y axis to use.
+The name of the Y axis to use.** Available for bubble, scatter and scatterLine series. **
 
 #### Example
     <kendo:chart-seriesItem yAxis="yAxis">
@@ -316,7 +342,7 @@ The name of the Y axis to use.
 
 ### yField `String`
 
-The data field containing the Y value.
+The data field containing the Y value.** Available for bubble, scatter and scatterLine series. **
 
 #### Example
     <kendo:chart-seriesItem yField="yField">
@@ -327,7 +353,7 @@ The data field containing the Y value.
 
 ### kendo:chart-seriesItem-border
 
-The border of the points.
+The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc and candlestick series **
 
 More documentation is available at [kendo:chart-seriesItem-border](chart/seriesitem-border).
 
@@ -339,7 +365,7 @@ More documentation is available at [kendo:chart-seriesItem-border](chart/seriesi
 
 ### kendo:chart-seriesItem-connectors
 
-The label connectors options.
+The label connectors options.** Applicable to donut and pie series. **
 
 More documentation is available at [kendo:chart-seriesItem-connectors](chart/seriesitem-connectors).
 
@@ -351,7 +377,7 @@ More documentation is available at [kendo:chart-seriesItem-connectors](chart/ser
 
 ### kendo:chart-seriesItem-highlight
 
-Configures the appearance of highlighted points.
+Configures the appearance of highlighted points.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 More documentation is available at [kendo:chart-seriesItem-highlight](chart/seriesitem-highlight).
 
@@ -375,7 +401,7 @@ More documentation is available at [kendo:chart-seriesItem-labels](chart/seriesi
 
 ### kendo:chart-seriesItem-line
 
-Line options.
+Line options.** Applicable to area, candlestick and ohlc series. **
 
 More documentation is available at [kendo:chart-seriesItem-line](chart/seriesitem-line).
 
@@ -387,7 +413,7 @@ More documentation is available at [kendo:chart-seriesItem-line](chart/seriesite
 
 ### kendo:chart-seriesItem-markers
 
-Marker options.
+Marker options.** Applicable to area, line, scatter and scatterLine series **
 
 More documentation is available at [kendo:chart-seriesItem-markers](chart/seriesitem-markers).
 
@@ -399,7 +425,7 @@ More documentation is available at [kendo:chart-seriesItem-markers](chart/series
 
 ### kendo:chart-seriesItem-negativeValues
 
-The settings for negative values.
+The settings for negative values.** Applicable only to bubble series. **
 
 More documentation is available at [kendo:chart-seriesItem-negativeValues](chart/seriesitem-negativevalues).
 
@@ -419,6 +445,18 @@ More documentation is available at [kendo:chart-seriesItem-overlay](chart/series
 
     <kendo:chart-seriesItem>
         <kendo:chart-seriesItem-overlay></kendo:chart-seriesItem-overlay>
+    </kendo:chart-seriesItem>
+
+### kendo:chart-seriesItem-target
+
+The target of the bullet chart.
+
+More documentation is available at [kendo:chart-seriesItem-target](chart/seriesitem-target).
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-target></kendo:chart-seriesItem-target>
     </kendo:chart-seriesItem>
 
 ### kendo:chart-seriesItem-tooltip

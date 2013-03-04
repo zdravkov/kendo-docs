@@ -31,9 +31,6 @@ The border color (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Opacity(System.Double)
 Sets the border opacity
@@ -54,9 +51,6 @@ Sets the border opacity
 The border opacity (CSS format).
 
 
-
-#### Returns
-0
 
 
 ### Width(System.Int32)
@@ -79,9 +73,6 @@ The border width.
 
 
 
-#### Returns
-0
-
 
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the border dashType.
@@ -102,9 +93,6 @@ Sets the border dashType.
 The border dashType.
 
 
-
-#### Returns
-0
 
 
 

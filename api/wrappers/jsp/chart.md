@@ -10,6 +10,14 @@ A JSP tag representing Kendo Chart.
 
 ## Configuration Attributes
 
+### autoBind `boolean`
+
+Indicates whether the chart will call read on the data source initially.
+
+#### Example
+    <kendo:chart autoBind="autoBind">
+    </kendo:chart>
+
 ### seriesColors `Object`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
@@ -76,7 +84,8 @@ More documentation is available at [kendo:chart-legend](chart/legend).
 
 ### kendo:chart-panes
 
-The chart panes configuration.
+The chart panes configuration.Panes are used to split the chart in two or more parts. The panes are ordered from top to bottom.Each axis can be associated with a pane by setting its pane option to the name of the desired pane.
+Axis that don't have specified pane are placed in the top (default) pane.Series are moved to the desired pane by associating them with an axis.
 
 More documentation is available at [kendo:chart-panes](chart/panes).
 
@@ -100,7 +109,8 @@ More documentation is available at [kendo:chart-plotArea](chart/plotarea).
 
 ### kendo:chart-series
 
-Array of series definitions.
+Array of series definitions.The series type is determined by the value of the type field.
+If a type value is missing, the type is assumed to be the one specified in seriesDefaults.Each series type has a different set of options.
 
 More documentation is available at [kendo:chart-series](chart/series).
 
@@ -149,7 +159,7 @@ More documentation is available at [kendo:chart-valueAxis](chart/valueaxis).
 ### kendo:chart-xAxis
 
 Scatter charts X-axis configuration options.
-Includes
+Includes all valueAxis options in addition to:
 
 More documentation is available at [kendo:chart-xAxis](chart/xaxis).
 
@@ -162,7 +172,7 @@ More documentation is available at [kendo:chart-xAxis](chart/xaxis).
 ### kendo:chart-yAxis
 
 Scatter charts Y-axis configuration options.
-Includes
+Includes all valueAxis options in addition to:
 
 More documentation is available at [kendo:chart-yAxis](chart/yaxis).
 
@@ -204,7 +214,7 @@ and is about to render it.
 
 ### dragStart `String`
 
-Fires when the user has used the mouse or a swipe gesture to drag the chart.
+Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
 
 #### Example
     <kendo:chart dragStart="handle_dragStart">
@@ -282,7 +292,7 @@ Fires when chart series are hovered.
 
 ### zoomStart `String`
 
-Fires when the user has used the mousewheel to zoom the chart.
+Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
 
 #### Example
     <kendo:chart zoomStart="handle_zoomStart">
@@ -316,6 +326,45 @@ Fires when the user stops zooming the chart.
     <script>
         function handle_zoomEnd(e) {
             // Code to handle the zoomEnd event.
+        }
+    </script>
+
+### selectStart `String`
+
+Fires when the user start to dragging the drag handle.
+
+#### Example
+    <kendo:chart selectStart="handle_selectStart">
+    </kendo:chart>
+    <script>
+        function handle_selectStart(e) {
+            // Code to handle the selectStart event.
+        }
+    </script>
+
+### select `String`
+
+Fires when the user drags the drag handle to a new position.
+
+#### Example
+    <kendo:chart select="handle_select">
+    </kendo:chart>
+    <script>
+        function handle_select(e) {
+            // Code to handle the select event.
+        }
+    </script>
+
+### selectEnd `String`
+
+Fires when the user stops dragging the drag handle.
+
+#### Example
+    <kendo:chart selectEnd="handle_selectEnd">
+    </kendo:chart>
+    <script>
+        function handle_selectEnd(e) {
+            // Code to handle the selectEnd event.
         }
     </script>
 
@@ -354,7 +403,7 @@ and is about to render it.
 
 ### kendo:chart-dragStart
 
-Fires when the user has used the mouse or a swipe gesture to drag the chart.
+Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
 
 #### Example
     <kendo:chart>
@@ -444,7 +493,7 @@ Fires when chart series are hovered.
 
 ### kendo:chart-zoomStart
 
-Fires when the user has used the mousewheel to zoom the chart.
+Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
 
 #### Example
     <kendo:chart>
@@ -485,5 +534,50 @@ Fires when the user stops zooming the chart.
                 }
             </script>
         </kendo:chart-zoomEnd>
+    </kendo:chart>
+
+### kendo:chart-selectStart
+
+Fires when the user start to dragging the drag handle.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-selectStart>
+            <script>
+                function(e) {
+                    // Code to handle the selectStart event.
+                }
+            </script>
+        </kendo:chart-selectStart>
+    </kendo:chart>
+
+### kendo:chart-select
+
+Fires when the user drags the drag handle to a new position.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-select>
+            <script>
+                function(e) {
+                    // Code to handle the select event.
+                }
+            </script>
+        </kendo:chart-select>
+    </kendo:chart>
+
+### kendo:chart-selectEnd
+
+Fires when the user stops dragging the drag handle.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-selectEnd>
+            <script>
+                function(e) {
+                    // Code to handle the selectEnd event.
+                }
+            </script>
+        </kendo:chart-selectEnd>
     </kendo:chart>
 

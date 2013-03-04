@@ -29,7 +29,7 @@ Specifies a list of dates, which will be passed to the month template of the Dat
 ### depth `String`
 
 Specifies the navigation depth of the calendar. The following
-settings are available for the
+settings are available for the depth value:
 
 #### Example
     <kendo:dateTimePicker depth="depth">
@@ -86,7 +86,7 @@ Specifies the formats, which are used to parse the value set with value() method
 ### start `String`
 
 Specifies the start view of the calendar.
-The following settings are available for the
+The following settings are available for the start value:
 
 #### Example
     <kendo:dateTimePicker start="start">
@@ -113,7 +113,8 @@ Specifies the selected value.
 
 ### kendo:dateTimePicker-animation
 
-The animation(s) used for opening and/or closing the pop-ups. Setting this value to
+The animation(s) used for opening and/or closing the pop-ups. Setting this value to false
+will disable the animation(s).
 
 More documentation is available at [kendo:dateTimePicker-animation](datetimepicker/animation).
 

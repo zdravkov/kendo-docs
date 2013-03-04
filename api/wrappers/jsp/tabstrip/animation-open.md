@@ -27,6 +27,7 @@ The number of milliseconds used for the visual animation when a new tab is shown
 ### effects `String`
 
 A whitespace-separated string of animation effects that are used when a new tab is shown. Options include
+"expand:vertical" and "fadeIn".
 
 #### Example
     <kendo:tabStrip-animation-open effects="effects">
@@ -34,7 +35,7 @@ A whitespace-separated string of animation effects that are used when a new tab 
 
 ### show `boolean`
 
-Specifies whether the TabStrip should be able to collapse completely when clicking an expanded tab.
+
 
 #### Example
     <kendo:tabStrip-animation-open show="show">

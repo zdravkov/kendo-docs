@@ -24,6 +24,14 @@ Defines the text that will be used in confirmation box when delete an item.
     <kendo:grid-editable confirmation="confirmation">
     </kendo:grid-editable>
 
+### createAt `String`
+
+Indicates whether the created record should be inserted at the top or at the bottom of the current page. Available values are "top" and "bottom".
+
+#### Example
+    <kendo:grid-editable createAt="createAt">
+    </kendo:grid-editable>
+
 ### destroy `boolean`
 
 Indicates whether item should be deleted when click on delete button.

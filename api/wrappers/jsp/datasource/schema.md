@@ -19,7 +19,7 @@ Set the object responsible for describing the raw data format.
 ### aggregates `String`
 
 Specifies the field from the response which contains the aggregate results. If set to a function - the function will be called to
-return the aggregate results for the current response.
+return the aggregate results for the current response.Result should have the following format:i.e.
 
 #### Example
     <kendo:dataSource-schema aggregates="aggregates">
@@ -37,7 +37,7 @@ return the data items for the current response.
 ### errors `String`
 
 Specifies the field from the response which contains any errors. If set to a function - the function will be called to
-return the errors for the current response (if present). If there are any errors the
+return the errors for the current response (if present). If there are any errors the error event of the DataSource will be raised.
 
 #### Example
     <kendo:dataSource-schema errors="errors">
@@ -46,7 +46,7 @@ return the errors for the current response (if present). If there are any errors
 ### groups `String`
 
 Specifies the field from the response which contains the groups. If set to a function - the function will be called to
-return the groups for the current response.
+return the groups for the current response.Used instead of the schema.data setting if remote grouping operation is executed.The result should have the following format:
 
 #### Example
     <kendo:dataSource-schema groups="groups">
@@ -54,7 +54,8 @@ return the groups for the current response.
 
 ### model `Object`
 
-Describes the
+Describes the Model of the DataSource. If set to Object the Model.define method will be used to create the model. Check the documentation of
+ Model.define for the available configuration options.
 
 #### Example
     <kendo:dataSource-schema model="model">
@@ -79,7 +80,7 @@ return the total number of data items for the current response.
 
 ### type `String`
 
-Specify the type of the response - XML or JSON. The only supported values are
+Specify the type of the response - XML or JSON. The only supported values are "xml" and "json".
 
 #### Example
     <kendo:dataSource-schema type="type">
@@ -91,7 +92,7 @@ Specify the type of the response - XML or JSON. The only supported values are
 ### aggregates `String`
 
 Specifies the field from the response which contains the aggregate results. If set to a function - the function will be called to
-return the aggregate results for the current response.
+return the aggregate results for the current response.Result should have the following format:i.e.
 
 #### Example
     <kendo:dataSource-schema aggregates="handle_aggregates">
@@ -119,7 +120,7 @@ return the data items for the current response.
 ### errors `String`
 
 Specifies the field from the response which contains any errors. If set to a function - the function will be called to
-return the errors for the current response (if present). If there are any errors the
+return the errors for the current response (if present). If there are any errors the error event of the DataSource will be raised.
 
 #### Example
     <kendo:dataSource-schema errors="handle_errors">
@@ -133,7 +134,7 @@ return the errors for the current response (if present). If there are any errors
 ### groups `String`
 
 Specifies the field from the response which contains the groups. If set to a function - the function will be called to
-return the groups for the current response.
+return the groups for the current response.Used instead of the schema.data setting if remote grouping operation is executed.The result should have the following format:
 
 #### Example
     <kendo:dataSource-schema groups="handle_groups">
@@ -176,7 +177,7 @@ return the total number of data items for the current response.
 ### kendo:dataSource-schema-aggregates
 
 Specifies the field from the response which contains the aggregate results. If set to a function - the function will be called to
-return the aggregate results for the current response.
+return the aggregate results for the current response.Result should have the following format:i.e.
 
 #### Example
     <kendo:dataSource-schema>
@@ -208,7 +209,7 @@ return the data items for the current response.
 ### kendo:dataSource-schema-errors
 
 Specifies the field from the response which contains any errors. If set to a function - the function will be called to
-return the errors for the current response (if present). If there are any errors the
+return the errors for the current response (if present). If there are any errors the error event of the DataSource will be raised.
 
 #### Example
     <kendo:dataSource-schema>
@@ -224,7 +225,7 @@ return the errors for the current response (if present). If there are any errors
 ### kendo:dataSource-schema-groups
 
 Specifies the field from the response which contains the groups. If set to a function - the function will be called to
-return the groups for the current response.
+return the groups for the current response.Used instead of the schema.data setting if remote grouping operation is executed.The result should have the following format:
 
 #### Example
     <kendo:dataSource-schema>

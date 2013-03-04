@@ -24,9 +24,6 @@ Enables or disables grid editing.
 
 
 
-#### Returns
-0
-
 
 ### TemplateName(System.String)
 Specify an editor template which to be used for InForm or PopUp modes
@@ -38,9 +35,6 @@ Specify an editor template which to be used for InForm or PopUp modes
 name of the editor template
 
 
-
-#### Returns
-0
 
 
 ### AdditionalViewData(System.Object)
@@ -62,9 +56,6 @@ An anonymous object which contains the additional data
 
 
 
-#### Returns
-0
-
 
 ### DisplayDeleteConfirmation(System.Boolean)
 Enables or disables delete confirmation.
@@ -79,9 +70,6 @@ Enables or disables delete confirmation.
 
 
 
-#### Returns
-0
-
 
 ### CreateAt(Kendo.Mvc.UI.GridInsertRowPosition)
 Sets insert row position.
@@ -95,9 +83,6 @@ Sets insert row position.
         
 
 
-
-#### Returns
-0
 
 
 

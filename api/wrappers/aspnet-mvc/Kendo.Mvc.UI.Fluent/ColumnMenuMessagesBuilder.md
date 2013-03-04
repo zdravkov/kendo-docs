@@ -22,9 +22,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### Columns(System.String)
 Sets the text displayed for columns menu option.
@@ -36,9 +33,6 @@ Sets the text displayed for columns menu option.
 The message
 
 
-
-#### Returns
-0
 
 
 ### SortAscending(System.String)
@@ -52,9 +46,6 @@ The message
 
 
 
-#### Returns
-0
-
 
 ### SortDescending(System.String)
 Sets the text displayed for sort descending menu option.
@@ -66,9 +57,6 @@ Sets the text displayed for sort descending menu option.
 The message
 
 
-
-#### Returns
-0
 
 
 

@@ -31,9 +31,6 @@ The ticks color (CSS format).
 
 
 
-#### Returns
-0
-
 
 ### Width(System.Int32)
 Sets the ticks width
@@ -54,9 +51,6 @@ Sets the ticks width
 The ticks width.
 
 
-
-#### Returns
-0
 
 
 ### Size(System.Int32)
@@ -79,9 +73,6 @@ The ticks size.
 
 
 
-#### Returns
-0
-
 
 ### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the ticks dashType
@@ -103,9 +94,6 @@ The ticks dashType.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the ticks visibility
@@ -126,9 +114,6 @@ Sets the ticks visibility
 The ticks visibility.
 
 
-
-#### Returns
-0
 
 
 

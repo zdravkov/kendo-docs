@@ -18,7 +18,8 @@ Options for remote update data operation, or the URL of the remote service.
 
 ### cache `boolean`
 
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter,
+If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, "_=[TIMESTAMP]", to the URL.
+Refer to the jQuery.ajax documentation for further info.
 
 #### Example
     <kendo:dataSource-transport-update cache="cache">
@@ -26,7 +27,8 @@ If set to false, it will force requested pages not to be cached by the browser. 
 
 ### contentType `String`
 
-The content-type HTTP header sent to the server. Default is
+The content-type HTTP header sent to the server. Default is "application/x-www-form-urlencoded". Use "application/json" if the content is JSON.
+Refer to the jQuery.ajax documentation for further info.
 
 #### Example
     <kendo:dataSource-transport-update contentType="contentType">
@@ -35,7 +37,7 @@ The content-type HTTP header sent to the server. Default is
 ### data `Object`
 
 Data to be send to the server.
-Refer to the
+Refer to the jQuery.ajax documentation for further info.
 
 #### Example
     <kendo:dataSource-transport-update data="data">
@@ -43,7 +45,8 @@ Refer to the
 
 ### dataType `String`
 
-The type of data that you're expecting back from the server. Commonly used values are
+The type of data that you're expecting back from the server. Commonly used values are "json" and "jsonp".
+Refer to the jQuery.ajax documentation for further info.
 
 #### Example
     <kendo:dataSource-transport-update dataType="dataType">
@@ -51,7 +54,8 @@ The type of data that you're expecting back from the server. Commonly used value
 
 ### type `String`
 
-The type of request to make (
+The type of request to make ("POST", "GET", "PUT" or "DELETE"), default is "GET".
+Refer to the jQuery.ajax documentation for further info.
 
 #### Example
     <kendo:dataSource-transport-update type="type">
@@ -71,7 +75,7 @@ The remote url to call when creating a new record.
 ### data `String`
 
 Data to be send to the server.
-Refer to the
+Refer to the jQuery.ajax documentation for further info.
 
 #### Example
     <kendo:dataSource-transport-update data="handle_data">
@@ -100,7 +104,7 @@ The remote url to call when creating a new record.
 ### kendo:dataSource-transport-update-data
 
 Data to be send to the server.
-Refer to the
+Refer to the jQuery.ajax documentation for further info.
 
 #### Example
     <kendo:dataSource-transport-update>

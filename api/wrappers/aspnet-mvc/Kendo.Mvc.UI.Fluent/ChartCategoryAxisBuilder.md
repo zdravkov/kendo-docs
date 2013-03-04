@@ -27,9 +27,6 @@ The expression used to extract the categories value from the chart model
 
 
 
-#### Returns
-0
-
 
 ### Categories(System.Collections.IEnumerable)
 Defines categories.
@@ -42,9 +39,6 @@ The list of categories
 
 
 
-#### Returns
-0
-
 
 ### Categories(System.String[])
 Defines categories.
@@ -56,9 +50,6 @@ Defines categories.
 The list of categories
 
 
-
-#### Returns
-0
 
 
 ### AxisCrossingValue(System.Double)
@@ -82,9 +73,6 @@ The value at which the first perpendicular axis crosses this axis.
 
 
 
-#### Returns
-0
-
 
 ### AxisCrossingValue(System.Double[])
 Sets value at which perpendicular axes cross this axis.
@@ -106,9 +94,6 @@ Sets value at which perpendicular axes cross this axis.
 The values at which perpendicular axes cross this axis.
 
 
-
-#### Returns
-0
 
 
 ### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
@@ -132,9 +117,6 @@ The values at which perpendicular axes cross this axis.
 
 
 
-#### Returns
-0
-
 
 ### Justify(System.Boolean)
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
@@ -149,18 +131,12 @@ A boolean value that indicates if the empty space before and after the series sh
 
 
 
-#### Returns
-0
-
 
 ### Justify
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
 
 
-
-#### Returns
-0
 
 
 

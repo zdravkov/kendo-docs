@@ -22,8 +22,5 @@ True to enable column resizing, otherwise false
 
 
 
-#### Returns
-0
-
 
 

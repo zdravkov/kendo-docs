@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-navigator-select\>
 
-Specifies the initially selected range.
+Specifies the initially selected range.The full range of values is shown if no range is specified.
 
 #### Example
     <kendo:stockChart-navigator>

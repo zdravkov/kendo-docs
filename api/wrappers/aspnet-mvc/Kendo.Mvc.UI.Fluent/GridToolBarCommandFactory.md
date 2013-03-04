@@ -25,17 +25,11 @@ Defines a save command.
 
 
 
-#### Returns
-0
-
 
 ### Custom
 Defines a custom command.
 
 
-
-#### Returns
-0
 
 
 ### Template(System.Action)
@@ -49,9 +43,6 @@ The action defining the template.
 
 
 
-#### Returns
-0
-
 
 ### Template(System.String)
 Sets toolbar template.
@@ -63,9 +54,6 @@ Sets toolbar template.
 The template
 
 
-
-#### Returns
-0
 
 
 ### Template(System.Action\<Kendo.Mvc.UI.Grid\<T\>\>)
@@ -79,9 +67,6 @@ The action defining the template.
 
 
 
-#### Returns
-0
-
 
 ### Template(System.Func\<Kendo.Mvc.UI.Grid\<T\>,System.Object\>)
 Sets the toolbar template.
@@ -93,9 +78,6 @@ Sets the toolbar template.
 The action defining the template.
 
 
-
-#### Returns
-0
 
 
 

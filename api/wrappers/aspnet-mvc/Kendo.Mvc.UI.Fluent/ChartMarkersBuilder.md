@@ -36,9 +36,6 @@ The markers shape type.
 
 
 
-#### Returns
-0
-
 
 ### Size(System.Int32)
 Sets the markers size.
@@ -65,9 +62,6 @@ The markers size.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the markers visibility
@@ -93,9 +87,6 @@ Sets the markers visibility
 The markers visibility.
 
 
-
-#### Returns
-0
 
 
 ### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -129,9 +120,6 @@ The markers border dash type.
 
 
 
-#### Returns
-0
-
 
 ### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the markers border
@@ -143,9 +131,6 @@ Configures the markers border
 The border configuration action
 
 
-
-#### Returns
-0
 
 
 ### Background(System.String)
@@ -172,9 +157,6 @@ The background color of the current series markers.
 The background color of the current series markers. The background color is series color.
 
 
-
-#### Returns
-0
 
 
 

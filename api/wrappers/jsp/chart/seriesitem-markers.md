@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-markers\>
 
-Marker options.
+Marker options.** Applicable to area, line, scatter and scatterLine series **
 
 #### Example
     <kendo:chart-seriesItem>

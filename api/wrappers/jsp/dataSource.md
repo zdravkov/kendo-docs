@@ -12,7 +12,7 @@ A JSP tag representing Kendo DataSource.
 
 ### autoSync `boolean`
 
-Enables (
+Enables (true) or disables (false) the automatic invocation of the sync() method for each change made.
 
 #### Example
     <kendo:dataSource autoSync="autoSync">
@@ -20,7 +20,7 @@ Enables (
 
 ### batch `boolean`
 
-Enables (
+Enables (true) or disables (false) batch mode.
 
 #### Example
     <kendo:dataSource batch="batch">
@@ -32,14 +32,6 @@ Specifies the local JavaScript object to use for the data source.
 
 #### Example
     <kendo:dataSource data="data">
-    </kendo:dataSource>
-
-### hasChanges `boolean`
-
-Get if DataSource has changes.
-
-#### Example
-    <kendo:dataSource hasChanges="hasChanges">
     </kendo:dataSource>
 
 ### page `float`
@@ -68,7 +60,7 @@ Determines if aggregates are calculated on the server or not. By default aggrega
 
 ### serverFiltering `boolean`
 
-Determines if filtering of the data is handled on the server. By default filtering is performed client-side.
+Determines if filtering of the data is handled on the server. By default filtering is performed client-side.By default, a filter object is sent to the server with the query string in the following form:Possible values for operator include:
 
 #### Example
     <kendo:dataSource serverFiltering="serverFiltering">
@@ -76,7 +68,7 @@ Determines if filtering of the data is handled on the server. By default filteri
 
 ### serverGrouping `boolean`
 
-Determines if grouping of the data is handled on the server. By default grouping is performed client-side.
+Determines if grouping of the data is handled on the server. By default grouping is performed client-side.By default, a group object is sent to the server with the query string in the following form:It is possible to modify these parameters by using the parameterMap function found on the transport.
 
 #### Example
     <kendo:dataSource serverGrouping="serverGrouping">
@@ -84,7 +76,8 @@ Determines if grouping of the data is handled on the server. By default grouping
 
 ### serverPaging `boolean`
 
-Determines if paging of the data is on the server. By default paging is performed client-side. If
+Determines if paging of the data is on the server. By default paging is performed client-side. If serverPaging is enabled the
+total number of data items should also be returned in the response. Use the schema.total setting to customize that.The following options are sent to the server as part of the query string by default:
 
 #### Example
     <kendo:dataSource serverPaging="serverPaging">
@@ -92,7 +85,7 @@ Determines if paging of the data is on the server. By default paging is performe
 
 ### serverSorting `boolean`
 
-Determines if sorting of the data should is handled on the server. By default sorting is performed client-side.
+Determines if sorting of the data should is handled on the server. By default sorting is performed client-side.By default, a sort object is sent to the server with the query string in the following form:It is possible to modify these parameters by using the parameterMap function found on the transport.
 
 #### Example
     <kendo:dataSource serverSorting="serverSorting">

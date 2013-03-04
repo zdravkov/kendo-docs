@@ -18,7 +18,7 @@ The value axis configuration options.
 
 ### axisCrossingValue `Object`
 
-Value at which the category axis crosses this axis. (Only for object)
+Value at which the category axis crosses this axis. (Only for object)Value indicies at which the category axes cross the value axis. (Only for array)Date at which the category axis crosses this axis. (Only for date)
 
 #### Example
     <kendo:chart-valueAxisItem axisCrossingValue="axisCrossingValue">
@@ -44,7 +44,7 @@ The interval between major divisions.
 ### max `float`
 
 The maximum value of the axis.
-This is often used in combination with the
+This is often used in combination with the min configuration option.
 
 #### Example
     <kendo:chart-valueAxisItem max="max">
@@ -53,7 +53,7 @@ This is often used in combination with the
 ### min `float`
 
 The minimum value of the axis.
-This is often used in combination with the
+This is often used in combination with the max configuration option.
 
 #### Example
     <kendo:chart-valueAxisItem min="min">
@@ -112,6 +112,18 @@ The visibility of the axis.
 
 
 ##  Configuration JSP Tags
+
+### kendo:chart-valueAxisItem-crosshair
+
+The crosshair configuration options.
+
+More documentation is available at [kendo:chart-valueAxisItem-crosshair](chart/valueaxisitem-crosshair).
+
+#### Example
+
+    <kendo:chart-valueAxisItem>
+        <kendo:chart-valueAxisItem-crosshair></kendo:chart-valueAxisItem-crosshair>
+    </kendo:chart-valueAxisItem>
 
 ### kendo:chart-valueAxisItem-labels
 

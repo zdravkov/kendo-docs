@@ -39,9 +39,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Crosshair(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisCrosshairBuilder\>)
 Configures the major ticks.
@@ -66,9 +63,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Name(System.String)
 Sets the axis name.
@@ -90,9 +84,6 @@ Sets the axis name.
 The axis name.
 
 
-
-#### Returns
-0
 
 
 ### MinorTicks(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder\>)
@@ -118,9 +109,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### MajorGridLines(System.Action\<Kendo.Mvc.UI.Fluent.ChartLineBuilder\>)
 Configures the major grid lines.
@@ -143,9 +131,6 @@ Configures the major grid lines.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### MajorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -176,9 +161,6 @@ The major gridlines line dashType.
 
 
 
-#### Returns
-0
-
 
 ### MinorGridLines(System.Action\<Kendo.Mvc.UI.Fluent.ChartLineBuilder\>)
 Configures the minor grid lines.
@@ -201,9 +183,6 @@ Configures the minor grid lines.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### MinorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -234,9 +213,6 @@ The minor grid lines dash type
 
 
 
-#### Returns
-0
-
 
 ### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartLineBuilder\>)
 Configures the axis line.
@@ -259,9 +235,6 @@ Configures the axis line.
 The configuration action.
 
 
-
-#### Returns
-0
 
 
 ### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
@@ -292,9 +265,6 @@ The axis line dashType.
 
 
 
-#### Returns
-0
-
 
 ### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder\>)
 Configures the axis labels.
@@ -320,9 +290,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Labels(System.Boolean)
 Sets the visibility of numeric axis chart labels.
@@ -342,9 +309,6 @@ Sets the visibility of numeric axis chart labels.
 The visibility. The default value is false.
 
 
-
-#### Returns
-0
 
 
 ### PlotBands(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory\<T,T\>\>)
@@ -370,9 +334,6 @@ The add action.
 
 
 
-#### Returns
-0
-
 
 ### Title(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder\>)
 Configures the chart axis title.
@@ -396,9 +357,6 @@ The configuration action.
 
 
 
-#### Returns
-0
-
 
 ### Title(System.String)
 Sets the axis title.
@@ -421,9 +379,6 @@ Sets the axis title.
 The axis title.
 
 
-
-#### Returns
-0
 
 
 ### Pane(System.String)
@@ -452,9 +407,6 @@ The pane name.
 
 
 
-#### Returns
-0
-
 
 ### Color(System.String)
 Sets the color for all axis elements. Can be overriden by individual settings.
@@ -477,9 +429,6 @@ Sets the color for all axis elements. Can be overriden by individual settings.
 The axis color.
 
 
-
-#### Returns
-0
 
 
 ### Reverse(System.Boolean)
@@ -504,9 +453,6 @@ A value indicating if the axis labels should be rendered in reverse.
 
 
 
-#### Returns
-0
-
 
 ### Reverse
 Reverse the axis.
@@ -524,9 +470,6 @@ Reverse the axis.
 
 
 
-#### Returns
-0
-
 
 ### Visible(System.Boolean)
 Sets the axis visibility
@@ -539,9 +482,6 @@ The axis visibility.
 
 
 
-#### Returns
-0
-
 
 ### NarrowRange(System.Boolean)
 A value indicating if the automatic axis range should snap to 0.
@@ -553,9 +493,6 @@ A value indicating if the automatic axis range should snap to 0.
 The narrowRange value.
 
 
-
-#### Returns
-0
 
 
 

@@ -84,8 +84,5 @@ Renders the component.
 
 
 
-#### Returns
-0
-
 
 

@@ -1,18 +1,18 @@
 ---
-title: editor-imagebrowser-schema-model-fields-type
-slug: jsp-editor-imagebrowser-schema-model-fields-type
+title: editor-imageBrowser-schema-model-fields-type
+slug: jsp-editor-imageBrowser-schema-model-fields-type
 tags: api, java
 publish: true
 ---
 
-# \<kendo:editor-imagebrowser-schema-model-fields-type\>
+# \<kendo:editor-imageBrowser-schema-model-fields-type\>
 
-The field which contains the type of the entry. Either
+The field which contains the type of the entry. Either f for image or d for directory.
 
 #### Example
-    <kendo:editor-imagebrowser-schema-model-fields>
-        <kendo:editor-imagebrowser-schema-model-fields-type></kendo:editor-imagebrowser-schema-model-fields-type>
-    </kendo:editor-imagebrowser-schema-model-fields>
+    <kendo:editor-imageBrowser-schema-model-fields>
+        <kendo:editor-imageBrowser-schema-model-fields-type></kendo:editor-imageBrowser-schema-model-fields-type>
+    </kendo:editor-imageBrowser-schema-model-fields>
 
 ## Configuration Attributes
 
@@ -21,16 +21,16 @@ The field which contains the type of the entry. Either
 The name of the field.
 
 #### Example
-    <kendo:editor-imagebrowser-schema-model-fields-type field="field">
-    </kendo:editor-imagebrowser-schema-model-fields-type>
+    <kendo:editor-imageBrowser-schema-model-fields-type field="field">
+    </kendo:editor-imageBrowser-schema-model-fields-type>
 
 ### parse `String`
 
 Specifies the function which will parse the field value. If not set default parsers will be used.
 
 #### Example
-    <kendo:editor-imagebrowser-schema-model-fields-type parse="parse">
-    </kendo:editor-imagebrowser-schema-model-fields-type>
+    <kendo:editor-imageBrowser-schema-model-fields-type parse="parse">
+    </kendo:editor-imageBrowser-schema-model-fields-type>
 
 
 ## Event Attributes
@@ -40,8 +40,8 @@ Specifies the function which will parse the field value. If not set default pars
 Specifies the function which will parse the field value. If not set default parsers will be used.
 
 #### Example
-    <kendo:editor-imagebrowser-schema-model-fields-type parse="handle_parse">
-    </kendo:editor-imagebrowser-schema-model-fields-type>
+    <kendo:editor-imageBrowser-schema-model-fields-type parse="handle_parse">
+    </kendo:editor-imageBrowser-schema-model-fields-type>
     <script>
         function handle_parse(e) {
             // Code to handle the parse event.
@@ -50,18 +50,18 @@ Specifies the function which will parse the field value. If not set default pars
 
 ## Event Tags
 
-### kendo:editor-imagebrowser-schema-model-fields-type-parse
+### kendo:editor-imageBrowser-schema-model-fields-type-parse
 
 Specifies the function which will parse the field value. If not set default parsers will be used.
 
 #### Example
-    <kendo:editor-imagebrowser-schema-model-fields-type>
-        <kendo:editor-imagebrowser-schema-model-fields-type-parse>
+    <kendo:editor-imageBrowser-schema-model-fields-type>
+        <kendo:editor-imageBrowser-schema-model-fields-type-parse>
             <script>
                 function(e) {
                     // Code to handle the parse event.
                 }
             </script>
-        </kendo:editor-imagebrowser-schema-model-fields-type-parse>
-    </kendo:editor-imagebrowser-schema-model-fields-type>
+        </kendo:editor-imageBrowser-schema-model-fields-type-parse>
+    </kendo:editor-imageBrowser-schema-model-fields-type>
 

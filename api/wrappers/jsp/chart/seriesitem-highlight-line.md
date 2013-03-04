@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-highlight-line\>
 
-Line options for highlighted points. The color is computed automatically from the base point color.
+Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
 
 #### Example
     <kendo:chart-seriesItem-highlight>

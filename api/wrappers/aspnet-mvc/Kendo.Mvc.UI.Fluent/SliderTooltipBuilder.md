@@ -30,9 +30,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### Enabled(System.Boolean)
 Display tooltip while drag.
@@ -53,9 +50,6 @@ The value.
 
 
 
-#### Returns
-0
-
 
 ### Tempalte(System.String)
 Gets or sets the template for displaying the value in the tooltip.
@@ -75,9 +69,6 @@ Gets or sets the template for displaying the value in the tooltip.
 The template.
 
 
-
-#### Returns
-0
 
 
 

@@ -35,9 +35,6 @@ The ranges start position.
 
 
 
-#### Returns
-0
-
 
 ### To(System.Double)
 Sets the ranges end position.
@@ -62,9 +59,6 @@ Sets the ranges end position.
 The ranges end position.
 
 
-
-#### Returns
-0
 
 
 ### Color(System.String)
@@ -91,9 +85,6 @@ The ranges color.
 
 
 
-#### Returns
-0
-
 
 ### Opacity(System.Double)
 Sets the ranges opacity
@@ -118,9 +109,6 @@ Sets the ranges opacity
 The ranges opacity.
 
 
-
-#### Returns
-0
 
 
 

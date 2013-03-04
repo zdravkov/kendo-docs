@@ -22,7 +22,7 @@ and "Maximize".
 ### appendTo `Object`
 
 The element that the Window will be appended to.
-Note that this
+Note that this does not constrain the window dragging within the given element.
 
 #### Example
     <kendo:window appendTo="appendTo">
@@ -38,7 +38,8 @@ The content of the window
 
 ### draggable `boolean`
 
-Enables (
+Enables (true) or disables (false) the ability for users to move/drag a
+Window.
 
 #### Example
     <kendo:window draggable="draggable">
@@ -102,15 +103,16 @@ Specifies whether the window should show a modal overlay over the page.
 
 ### resizable `boolean`
 
-Enables (
+Enables (true) or disables (false) the ability for users to resize a
+Window.
 
 #### Example
     <kendo:window resizable="resizable">
     </kendo:window>
 
-### title `String`
+### title `Object`
 
-The text in the window title bar.
+The text in the window title bar. If false, the window will be displayed without a title bar. Note that this will prevent the window from being dragged, and the window titlebar buttons will not be shown.
 
 #### Example
     <kendo:window title="title">
@@ -137,7 +139,8 @@ Specifies width of the window.
 
 ### kendo:window-animation
 
-A collection of {Animation} objects, used to change default animations. A value of
+A collection of {Animation} objects, used to change default animations. A value of false
+will disable all animations in the widget.
 
 More documentation is available at [kendo:window-animation](window/animation).
 

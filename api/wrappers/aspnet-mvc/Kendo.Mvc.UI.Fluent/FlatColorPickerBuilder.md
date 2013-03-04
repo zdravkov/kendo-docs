@@ -32,9 +32,6 @@ The client events action.
 
 
 
-#### Returns
-0
-
 
 ### Value(System.String)
 Sets the value of the picker input
@@ -54,9 +51,6 @@ Sets the value of the picker input
 The initially selected color
 
 
-
-#### Returns
-0
 
 
 ### Opacity(System.Boolean)
@@ -78,9 +72,6 @@ Whether the user is allowed to change the color opacity.
 
 
 
-#### Returns
-0
-
 
 ### Input(System.Boolean)
 Indicates whether the picker will show an input for entering colors.
@@ -100,9 +91,6 @@ Indicates whether the picker will show an input for entering colors.
 Whether the input field should be shown.
 
 
-
-#### Returns
-0
 
 
 ### Preview(System.Boolean)
@@ -124,9 +112,6 @@ Whether the preview area should be shown.
 
 
 
-#### Returns
-0
-
 
 ### Buttons(System.Boolean)
 Indicates whether the picker will show apply / cancel buttons.
@@ -146,9 +131,6 @@ Indicates whether the picker will show apply / cancel buttons.
 Whether the buttons should be shown.
 
 
-
-#### Returns
-0
 
 
 
