@@ -103,7 +103,7 @@ The layout is your app's template. All content from views (that we'll create lat
 			<!--View content will render here-->
 			<footer data-role="footer">
 				<div data-role="tabstrip">
-					<a href="#">Home</a>		
+					<a href="#home">Home</a>		
 				</div> 
 			</footer>
 		</section>
@@ -134,8 +134,8 @@ Now that the app's layout is defined, we need at least one view that can be disp
 		<link href="css/kendo.mobile.all.min.css" rel="stylesheet" />
 	</head>
 	<body>
-		<div data-role="view" data-layout="default">
-		Hello Mobile World!
+		<div id="home" data-role="view" data-layout="default">
+		    Hello Mobile World!
 		</div>
 
 		<section data-role="layout" data-id="default">
@@ -145,7 +145,7 @@ Now that the app's layout is defined, we need at least one view that can be disp
 			<!--View content will render here-->
 			<footer data-role="footer">
 				<div data-role="tabstrip">
-					<a href="#">Home</a>		
+					<a href="#home">Home</a>		
 				</div> 
 			</footer>
 		</section>
@@ -188,8 +188,8 @@ To add a second view to your app, create a new page called "about.html" with the
 		<title>About</title>
 	</head>
 	<body>
-		<div data-role="view" data-layout="default">
-		All About My App
+		<div id="about" data-role="view" data-layout="default">
+		    All About My App
 		</div>
 	</body>
 	</html>
@@ -200,7 +200,7 @@ To enable our app to navigate to this page, let's update the **TabStrip** added 
 
 	<footer data-role="footer">
 		<div data-role="tabstrip">
-			<a href="#">Home</a>
+			<a href="#home">Home</a>
 			<a href="about.html">About</a>		
 		</div> 
 	</footer>
@@ -211,14 +211,16 @@ When Kendo UI Mobile encounters a link to an external view, it will automaticall
 
 If we did want to maintain multiple views in a single page, we would simply navigate the `id` of the view, like this:
 	
-	<div data-role="anotherView" id="view2">...</div>
-	<footer data-role="footer">
-		<div data-role="tabstrip">
-			<a href="#">Home</a>
-			<a href="about.html">About</a>
-			<a href="#view2">More</a>		
-		</div> 
-	</footer>
+	<div data-role="view" id="foo">
+        <span>foo</span>
+	    <footer data-role="footer">
+    		<div data-role="tabstrip">
+    			<a href="#home">Home</a>
+    			<a href="about.html">About</a>
+    			<a href="#foo">More</a>		
+    		</div> 
+    	</footer>
+    </div>
 
 Finally, as you've probably noticed if you're testing as we go, your navigation is now working, but the views all appear instantly with no animation transition. To really give your app that native mobile feeling, we can add a default transition for all views by modifying the Application initalization script:
 
