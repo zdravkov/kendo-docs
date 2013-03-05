@@ -106,3 +106,21 @@ The opacity of the highlighted points.
     $highlight->opacity(1);
     ?>
 
+### visible
+A value indicating if the series points should be highlighted.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlight`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $highlight = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlight();
+    $highlight->visible(true);
+    ?>
+

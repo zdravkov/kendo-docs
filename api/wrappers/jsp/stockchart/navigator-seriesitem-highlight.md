@@ -32,6 +32,14 @@ The opacity of the highlighted points.
     <kendo:stockChart-navigator-seriesItem-highlight opacity="opacity">
     </kendo:stockChart-navigator-seriesItem-highlight>
 
+### visible `boolean`
+
+A value indicating if the series points should be highlighted.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-highlight visible="visible">
+    </kendo:stockChart-navigator-seriesItem-highlight>
+
 
 ##  Configuration JSP Tags
 
