@@ -43,6 +43,9 @@ In most cases, the views should be rendered in the router `init` event handler, 
         index.render("#app");
     </script>
 
+Subsequent `render` calls **will not** re-instantiate the view element, but append it to the given container (if provided),
+or return a reference to the existing view element if no container is provided.
+
 ## Appending View Element
 
     <div id="app"></div>
@@ -53,8 +56,6 @@ In most cases, the views should be rendered in the router `init` event handler, 
         $("#app").append(index.render());
     </script>
 
-Subsequent `render` calls **will not** re-instantiate the view element, but append it to the given container (if provided),
-or return a reference to the existing view element if no container is provided.
 
 ## MVVM Integration
 
