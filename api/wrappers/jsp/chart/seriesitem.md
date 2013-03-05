@@ -377,7 +377,7 @@ More documentation is available at [kendo:chart-seriesItem-connectors](chart/ser
 
 ### kendo:chart-seriesItem-highlight
 
-Configures the appearance of highlighted points.** Applicable to bubble, pie, candlestick and ohlc series. **
+Configures the appearance of highlighted points.
 
 More documentation is available at [kendo:chart-seriesItem-highlight](chart/seriesitem-highlight).
 

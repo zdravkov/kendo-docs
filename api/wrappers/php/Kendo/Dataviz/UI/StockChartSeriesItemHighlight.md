@@ -14,7 +14,7 @@ A PHP class representing the highlight setting of StockChartSeriesItem.
 
 ### border
 
-The border of highlighted points. The color is computed automatically from the base point color.
+The border of highlighted points. The color is computed automatically from the base point color.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartSeriesItemHighlight`
@@ -89,7 +89,7 @@ Line options for highlighted points. The color is computed automatically from th
     ?>
 
 ### opacity
-The opacity of the highlighted points.
+The opacity of the highlighted points.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartSeriesItemHighlight`
@@ -104,5 +104,23 @@ The opacity of the highlighted points.
     <?php
     $highlight = new \Kendo\Dataviz\UI\StockChartSeriesItemHighlight();
     $highlight->opacity(1);
+    ?>
+
+### visible
+A value indicating if the series points should be highlighted.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemHighlight`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $highlight = new \Kendo\Dataviz\UI\StockChartSeriesItemHighlight();
+    $highlight->visible(true);
     ?>
 

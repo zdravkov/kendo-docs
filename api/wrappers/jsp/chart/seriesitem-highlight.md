@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-highlight\>
 
-Configures the appearance of highlighted points.** Applicable to bubble, pie, candlestick and ohlc series. **
+Configures the appearance of highlighted points.
 
 #### Example
     <kendo:chart-seriesItem>
@@ -26,10 +26,18 @@ The highlight color.** Available only for pie series **
 
 ### opacity `float`
 
-The opacity of the highlighted points.
+The opacity of the highlighted points.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 #### Example
     <kendo:chart-seriesItem-highlight opacity="opacity">
+    </kendo:chart-seriesItem-highlight>
+
+### visible `boolean`
+
+A value indicating if the series points should be highlighted.
+
+#### Example
+    <kendo:chart-seriesItem-highlight visible="visible">
     </kendo:chart-seriesItem-highlight>
 
 
@@ -37,7 +45,7 @@ The opacity of the highlighted points.
 
 ### kendo:chart-seriesItem-highlight-border
 
-The border of highlighted points. The color is computed automatically from the base point color.
+The border of highlighted points. The color is computed automatically from the base point color.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 More documentation is available at [kendo:chart-seriesItem-highlight-border](chart/seriesitem-highlight-border).
 

@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-seriesItem-highlight\>
 
-Configures the appearance of highlighted points.** Applicable to candlestick and ohlc series. **
+Configures the appearance of highlighted points.
 
 #### Example
     <kendo:stockChart-seriesItem>
@@ -26,10 +26,18 @@ The highlight color.** Available only for pie series **
 
 ### opacity `float`
 
-The opacity of the highlighted points.
+The opacity of the highlighted points.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 #### Example
     <kendo:stockChart-seriesItem-highlight opacity="opacity">
+    </kendo:stockChart-seriesItem-highlight>
+
+### visible `boolean`
+
+A value indicating if the series points should be highlighted.
+
+#### Example
+    <kendo:stockChart-seriesItem-highlight visible="visible">
     </kendo:stockChart-seriesItem-highlight>
 
 
@@ -37,7 +45,7 @@ The opacity of the highlighted points.
 
 ### kendo:stockChart-seriesItem-highlight-border
 
-The border of highlighted points. The color is computed automatically from the base point color.
+The border of highlighted points. The color is computed automatically from the base point color.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 More documentation is available at [kendo:stockChart-seriesItem-highlight-border](stockchart/seriesitem-highlight-border).
 

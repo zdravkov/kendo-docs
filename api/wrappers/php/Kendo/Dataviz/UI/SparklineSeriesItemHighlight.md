@@ -14,7 +14,7 @@ A PHP class representing the highlight setting of SparklineSeriesItem.
 
 ### border
 
-The border of highlighted points. The color is computed automatically from the base point color.
+The border of highlighted points. The color is computed automatically from the base point color.** Applicable to pie series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItemHighlight`
@@ -60,7 +60,7 @@ The highlight color.** Available only for pie series **
     ?>
 
 ### opacity
-The opacity of the highlighted points.
+The opacity of the highlighted points.** Applicable to pie series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItemHighlight`
@@ -75,5 +75,23 @@ The opacity of the highlighted points.
     <?php
     $highlight = new \Kendo\Dataviz\UI\SparklineSeriesItemHighlight();
     $highlight->opacity(1);
+    ?>
+
+### visible
+A value indicating if the series points should be highlighted.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesItemHighlight`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $highlight = new \Kendo\Dataviz\UI\SparklineSeriesItemHighlight();
+    $highlight->visible(true);
     ?>
 

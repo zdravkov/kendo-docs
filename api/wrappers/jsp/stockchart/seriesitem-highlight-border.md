@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:stockChart-seriesItem-highlight-border\>
 
-The border of highlighted points. The color is computed automatically from the base point color.
+The border of highlighted points. The color is computed automatically from the base point color.** Applicable to bubble, pie, candlestick and ohlc series. **
 
 #### Example
     <kendo:stockChart-seriesItem-highlight>

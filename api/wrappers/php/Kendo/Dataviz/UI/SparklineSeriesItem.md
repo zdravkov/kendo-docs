@@ -289,7 +289,7 @@ Name template for auto-generated series when binding to grouped data.Template va
 
 ### highlight
 
-Configures the appearance of highlighted points.** Applicable to pie series. **
+Configures the appearance of highlighted points.
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItem`

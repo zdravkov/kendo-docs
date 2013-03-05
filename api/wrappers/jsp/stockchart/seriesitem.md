@@ -244,7 +244,7 @@ More documentation is available at [kendo:stockChart-seriesItem-border](stockcha
 
 ### kendo:stockChart-seriesItem-highlight
 
-Configures the appearance of highlighted points.** Applicable to candlestick and ohlc series. **
+Configures the appearance of highlighted points.
 
 More documentation is available at [kendo:stockChart-seriesItem-highlight](stockchart/seriesitem-highlight).
 

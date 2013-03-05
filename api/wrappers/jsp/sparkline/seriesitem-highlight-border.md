@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:sparkline-seriesItem-highlight-border\>
 
-The border of highlighted points. The color is computed automatically from the base point color.
+The border of highlighted points. The color is computed automatically from the base point color.** Applicable to pie series. **
 
 #### Example
     <kendo:sparkline-seriesItem-highlight>

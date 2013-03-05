@@ -296,7 +296,7 @@ The data field containing the high value.** Available for candlestick and ohlc s
 
 ### highlight
 
-Configures the appearance of highlighted points.** Applicable to candlestick and ohlc series. **
+Configures the appearance of highlighted points.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartSeriesItem`

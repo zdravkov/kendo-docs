@@ -249,7 +249,7 @@ More documentation is available at [kendo:sparkline-seriesItem-connectors](spark
 
 ### kendo:sparkline-seriesItem-highlight
 
-Configures the appearance of highlighted points.** Applicable to pie series. **
+Configures the appearance of highlighted points.
 
 More documentation is available at [kendo:sparkline-seriesItem-highlight](sparkline/seriesitem-highlight).
 
