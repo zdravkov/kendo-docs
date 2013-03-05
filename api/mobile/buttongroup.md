@@ -46,10 +46,6 @@ Prepares the **ButtonGroup** for safe removal from DOM. Detaches all event handl
     // detach events
     buttonGroup.destroy();
 
-#### Returns
-
-`jQuery` the currently selected Button.
-
 ### select
 
 Select a Button.
