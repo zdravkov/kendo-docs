@@ -30,7 +30,7 @@ The **View** and **Layout** classes are used for the UI rendering. UI Event hand
         var router = new kendo.Router();
 
         router.route("/", function() {
-            view.render("#app");
+            index.render("#app");
         });
 
         $(function() {
