@@ -101,3 +101,36 @@ If widget's name is different than the Model's property then the ModelBinder wil
 Verify that the name of the widget is the same as the Model's property you want to update.
 
 > **Important:** If strongly-typed widget is used do not set Name manually, because name is generated automatically.
+
+## Loading icon of AutoComplete/ComboBox/DropDownList/MultiSelect continues spinning
+
+The most common cause of this issue is an [internal server error](http://www.checkupdown.com/status/E500.html).
+### Solution
+
+Verify that GET requests are allowed:
+
+        public JsonResult GetCascadeCategories()
+        {
+            var northwind = new NorthwindDataContext();
+
+            return Json(northwind.Categories, **JsonRequestBehavior.AllowGet**);
+        }
+
+or change HTTP verb of the DataSource:
+
+    * WebForms View Engine
+
+            <%: Html.Kendo().ComboBox()
+                    .Name("ComboBox")
+                    .DataSource(read => {
+                        read.Action("GetCascadeCategories", "ComboBox").Type(HttpVerbs.Post);
+                    })
+            %>
+    * Razor
+
+            @(Html.Kendo().ComboBox()
+                  .Name("ComboBox")
+                  .DataSource(read => {
+                      read.Action("GetCascadeCategories", "ComboBox").Type(HttpVerbs.Post);
+                  })
+            )
