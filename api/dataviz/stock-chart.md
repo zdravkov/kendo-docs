@@ -235,6 +235,10 @@ The opacity of the line.
 
 The opacity of the highlighted points.
 
+### navigator.series.highlight.visible `Boolean`*(default: true)*
+
+A value indicating if the series points should be highlighted.
+
 ### navigator.series.aggregate `String`*(default: "max")*
 
 Aggregate function for date series.
