@@ -13,7 +13,7 @@ publish: true
 
 ### initial `String`
 
- The id of the initial mobilie View to display.
+ The id of the initial mobile View to display.
 
 ### layout `String`
 
@@ -74,7 +74,7 @@ Navigate the local or remote view.
 
 ##### url `String`
 
-The id or url of the view.
+The id or URL of the view.
 
 ##### transition `String`
 
@@ -97,7 +97,7 @@ Get a reference to the current view.
 
 ### navigate
 
-Fires when pane navigates to a view.
+Triggered when pane navigates to a view.
 
 #### Event Data
 
@@ -107,7 +107,7 @@ The url of the view
 
 ### viewShow
 
-Fires after the pane displays a view.
+Triggered after the pane displays a view.
 
 #### Event Data
 
