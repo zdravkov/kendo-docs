@@ -1054,11 +1054,11 @@ The series name.
 
 Configures the appearance of highlighted points.
 
-** Applicable to pie series. **
-
 ### series.highlight.border `Object`
 
 The border of highlighted points. The color is computed automatically from the base point color.
+
+** Applicable to pie series. **
 
 ### series.highlight.border.width `Number`
 
@@ -1081,6 +1081,12 @@ The highlight color.
 ### series.highlight.opacity `Number`
 
 The opacity of the highlighted points.
+
+** Applicable to pie series. **
+
+### series.highlight.visible `Boolean`
+
+A value indicating if the series points should be highlighted.
 
 ### series.aggregate `String`*(default: "max")*
 

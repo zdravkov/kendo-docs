@@ -2376,11 +2376,15 @@ The series name visible in the legend.
 
 Configures the appearance of highlighted points.
 
-** Applicable to candlestick and ohlc series. **
+### series.highlight.visible `Boolean`*(default: true)*
+
+A value indicating if the series points should be highlighted.
 
 ### series.highlight.border `Object`
 
 The border of highlighted points. The color is computed automatically from the base point color.
+
+** Applicable to bubble, pie, candlestick and ohlc series. **
 
 ### series.highlight.border.width `Number`
 
@@ -2421,6 +2425,8 @@ The opacity of the line.
 ### series.highlight.opacity `Number`
 
 The opacity of the highlighted points.
+
+** Applicable to bubble, pie, candlestick and ohlc series. **
 
 ### series.aggregate `String`*(default: "max")*
 
