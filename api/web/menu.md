@@ -439,6 +439,60 @@ Fires before a sub menu gets opened.
 
 The opened item
 
+### activate
+
+Fires when a sub menu gets opened and its animation finished.
+
+#### Example
+
+     $("#menu").kendoMenu({
+         activate: function(e) {
+             // handle event
+         }
+     });
+
+#### To set after initialization
+
+     // get a reference to the menu widget
+     var menu = $("#menu").data("kendoMenu");
+     // bind to the activate event
+     menu.bind("activate", function(e) {
+         // handle event
+     });
+
+#### Event Data
+
+##### e.item `Element`
+
+The activated item
+
+### deactivate
+
+Fires when a sub menu gets closed and its animation finished.
+
+#### Example
+
+     $("#menu").kendoMenu({
+         deactivate: function(e) {
+             // handle event
+         }
+     });
+
+#### To set after initialization
+
+     // get a reference to the menu widget
+     var menu = $("#menu").data("kendoMenu");
+     // bind to the deactivate event
+     menu.bind("deactivate", function(e) {
+         // handle event
+     });
+
+#### Event Data
+
+##### e.item `Element`
+
+The deactivated item
+
 ### select
 
 Fires when a menu item gets selected.
