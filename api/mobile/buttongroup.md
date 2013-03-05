@@ -30,6 +30,10 @@ However, if the widget is placed in a scrollable view, the user may accidentally
 
 Get the currently selected Button.
 
+#### Returns
+
+`jQuery` the jQuery object representing the currently selected button.
+
 ### destroy
 Prepares the **ButtonGroup** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
