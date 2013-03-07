@@ -1697,6 +1697,10 @@ Specifies a line consisting of a repeating pattern of long-dash-dot.
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
+### series.border.border.opacity `Number`
+
+The border opacity.
+
 ### series.border.width `Number`*(default: 1)*
 
 The width of the border.
