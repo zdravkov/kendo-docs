@@ -16,6 +16,14 @@ The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc 
 
 ## Configuration Attributes
 
+### border.opacity `float`
+
+The border opacity.
+
+#### Example
+    <kendo:chart-seriesItem-border border.opacity="border.opacity">
+    </kendo:chart-seriesItem-border>
+
 ### color `String`
 
 The color of the border.
