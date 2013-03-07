@@ -25,6 +25,10 @@ Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui
 
  The initial page to display.
 
+### pageSize `Number`*(default: 1)*
+
+Multiplier applied to the snap amount of the ScrollView. By default, the widget scrolls to the next screen when swipe. If the `pageSize` property is set to `0.5`, the ScrollView will scroll by half of the widget width.
+
 ### velocityThreshold `Number`*(default: 0.8)*
 
  The velocity threshold after which a swipe will navigate to the next page (as opposed to snapping back to the current page).
