@@ -32,7 +32,7 @@ The code in `app.js` then performs the application setup and initialization and 
 
 Each view is given its own file that follows the naming of the view element in HTML. So for example, given the view:
 
-    &lt;div data-role="view" id="artists-view"&gt;...&lt;/div&gt;
+    <div data-role="view" id="artists-view">...</div>
 
 The JavaScript code that works with this view is placed in the file `scripts/artists-view.js`
 
@@ -62,10 +62,10 @@ All views and layouts are contained in `index.html`.
 Many of the views have different layouts between iOS and Android to demonstrate the ability to vary the items contained in a layout based on the platform.
 These views and layouts generally follow the structure:
 
-    &lt;div id="some-view" data-role="view" layout="some-layout"&gt;...&lt;/div&gt;
+    <div id="some-view" data-role="view" layout="some-layout">...</div>
     
-    &lt;div data-role="layout" data-id="some-layout"&gt;...&lt;/div&gt;
-    &lt;div data-role="layout" data-id="some-layout" data-platform="android"&gt;...&lt;/div&gt;
+    <div data-role="layout" data-id="some-layout">...</div>
+    <div data-role="layout" data-id="some-layout" data-platform="android">...</div>
 
 This splits Android to a different set of layout elements leaving iOS and others (Blackberry) on the first layout where no platform is specified.
 This is not neccecary for most projects but allowed the Mobile Music Store to better follow the Android 4.x style guide, placing an "Action Bar" at the top of the screen.
