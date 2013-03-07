@@ -31,7 +31,7 @@ Whether to update the document title.
 
 ### initial `String`
 
- The id of the initial mobilie View to display.
+ The id of the initial mobile View to display.
 
 #### Example
 
@@ -75,6 +75,12 @@ Whether to update the document title.
              platform: "android"
          });
     </script>
+
+### serverNavigation `Boolean` **(default: false)**
+
+If set to true, the application will not use ajax to load remote views.
+
+> Using this configuration option will affect the user experience, as blank screens will be visible between application states. As the page will be completely reloaded, the application state will not be transferred to the next view.
 
 ### transition `String`
 
