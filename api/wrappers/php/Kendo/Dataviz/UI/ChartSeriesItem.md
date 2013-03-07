@@ -65,8 +65,8 @@ The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemBorder();
-    $border.opacity = 1;
-    $border->border.opacity($border.opacity);
+    $color = 'value';
+    $border->color($color);
     $seriesItem->border($border);
     ?>
 
@@ -74,8 +74,8 @@ The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc 
 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
-    $border.opacity = 1;
-    $seriesItem->border(array('border.opacity' => $border.opacity));
+    $color = 'value';
+    $seriesItem->border(array('color' => $color));
     ?>
 
 ### categoryField

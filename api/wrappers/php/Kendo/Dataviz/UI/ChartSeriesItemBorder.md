@@ -12,24 +12,6 @@ A PHP class representing the border setting of ChartSeriesItem.
 
 ## Methods
 
-### border.opacity
-The border opacity.
-
-#### Returns
-`\Kendo\Dataviz\UI\ChartSeriesItemBorder`
-
-#### Parameters
-
-##### $value `float`
-
-
-
-#### Example 
-    <?php
-    $border = new \Kendo\Dataviz\UI\ChartSeriesItemBorder();
-    $border->border.opacity(1);
-    ?>
-
 ### color
 The color of the border.
 
@@ -64,6 +46,24 @@ The dash type of the border.
     <?php
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemBorder();
     $border->dashType('value');
+    ?>
+
+### opacity
+The border opacity.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemBorder`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $border = new \Kendo\Dataviz\UI\ChartSeriesItemBorder();
+    $border->opacity(1);
     ?>
 
 ### width
