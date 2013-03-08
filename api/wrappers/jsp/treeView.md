@@ -218,7 +218,7 @@ Triggered before a subgroup gets expanded.
 
 ### change `String`
 
-Triggered when the selection has changed (either by the user or through the select method.
+Triggered when the selection has changed (either by the user or through the select method).
 
 #### Example
     <kendo:treeView change="handle_change">
@@ -364,7 +364,7 @@ Triggered before a subgroup gets expanded.
 
 ### kendo:treeView-change
 
-Triggered when the selection has changed (either by the user or through the select method.
+Triggered when the selection has changed (either by the user or through the select method).
 
 #### Example
     <kendo:treeView>

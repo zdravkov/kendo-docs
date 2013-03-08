@@ -64,7 +64,7 @@ Setting this option to false will disable all animations.
     ?>
 
 ### change
-Triggered when the selection has changed (either by the user or through the select method.
+Triggered when the selection has changed (either by the user or through the select method).
 
 #### Returns
 `\Kendo\UI\TreeView`

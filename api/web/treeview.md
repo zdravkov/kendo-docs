@@ -779,7 +779,7 @@ The expanded node
 
 ### change
 
-Triggered when the selection has changed (either by the user or through the `select` method.
+Triggered when the selection has changed (either by the user or through the `select` method).
 
 ### select
 
