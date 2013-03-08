@@ -777,9 +777,13 @@ Triggered before a subgroup gets expanded.
 
 The expanded node
 
+### change
+
+Triggered when the selection has changed (either by the user or through the `select` method.
+
 ### select
 
-Triggered when a node gets selected.
+Triggered when a node is being selected by the user. Cancellable.
 
 #### Event Data
 
