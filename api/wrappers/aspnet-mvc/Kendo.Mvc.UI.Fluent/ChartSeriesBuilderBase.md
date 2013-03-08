@@ -175,4 +175,28 @@ The axis name for this series.
 
 
 
+### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilder\>)
+Configures the series highlight
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSeriesHighlightBuilder)>
+The configuration action.
+
+
+
+
+### Highlight(System.Boolean)
+Configures the highlight visibility
+
+
+#### Parameters
+
+##### configurator `System.Boolean`
+The highlight visibility.
+
+
+
+
 

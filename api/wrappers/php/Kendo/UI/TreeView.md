@@ -63,6 +63,41 @@ Setting this option to false will disable all animations.
     $treeView->animation(array('collapse' => $collapse));
     ?>
 
+### change
+Triggered when the selection has changed (either by the user or through the select method.
+
+#### Returns
+`\Kendo\UI\TreeView`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $treeView = new \Kendo\UI\TreeView('TreeView');
+    $treeView->change('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onChange(e) {
+            // handle the change event.
+        }
+    </script>
+    <?php
+    $treeView = new \Kendo\UI\TreeView('TreeView');
+    $treeView->change('onChange');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $treeView = new \Kendo\UI\TreeView('TreeView');
+    $treeView->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### checkboxes
 
 If true or an object, renders checkboxes within each treeview item.
@@ -569,7 +604,7 @@ Triggered when the user moves the focus on another node
     ?>
 
 ### select
-Triggered when a node gets selected.
+Triggered when a node is being selected by the user. Cancellable.
 
 #### Returns
 `\Kendo\UI\TreeView`

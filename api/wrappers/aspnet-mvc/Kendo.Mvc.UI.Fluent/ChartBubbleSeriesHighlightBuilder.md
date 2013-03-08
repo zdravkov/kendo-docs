@@ -1,11 +1,11 @@
 ---
-title:ChartPieSeriesHighlightBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartpieserieshighlightbuilder
+title:ChartBubbleSeriesHighlightBuilder
+slug:aspnetmvc-kendo.mvc.ui.fluent.chartbubbleserieshighlightbuilder
 publish:true
 ---
 
-# Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder
-Defines the fluent interface for configuring pie series highlight.
+# Kendo.Mvc.UI.Fluent.ChartBubbleSeriesHighlightBuilder
+Defines the fluent interface for configuring bubble series highlight.
 
 
 
@@ -62,18 +62,6 @@ Sets the bubble highlight opacity.
 
 ##### opacity `System.Double`
 The bubble highlight opacity.
-
-
-
-
-### Color(System.String)
-Sets the pie highlight color.
-
-
-#### Parameters
-
-##### color `System.String`
-The highlight color
 
 
 

@@ -105,6 +105,100 @@ The name of the JavaScript function that will handle the event.
 
 
 
+### Activate(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Activate client-side event
+
+#### Example
+
+    <% Html.Kendo().Menu()
+        .Name("Menu")
+        .Events(events => events.Activate(
+        @<text>
+        function(e) {
+        //event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onActivateAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+### Activate(System.String)
+Defines the name of the JavaScript function that will handle the the Activate client-side event.
+
+#### Example
+
+    <%= Html.Kendo().Menu()
+        .Name("Menu")
+        .Events(events => events.Activate("onActivate"))
+    %>
+        
+
+
+#### Parameters
+
+##### onActivateHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+
+### Deactivate(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Deactivate client-side event
+
+#### Example
+
+    <% Html.Kendo().Menu()
+        .Name("Menu")
+        .Events(events => events.Deactivate(
+        @<text>
+        function(e) {
+        //event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onDeactivateAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+### Deactivate(System.String)
+Defines the name of the JavaScript function that will handle the the Deactivate client-side event.
+
+#### Example
+
+    <%= Html.Kendo().Menu()
+        .Name("Menu")
+        .Events(events => events.Deactivate("onDeactivate"))
+    %>
+        
+
+
+#### Parameters
+
+##### onDeactivateHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+
 ### Select(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Select client-side event
 

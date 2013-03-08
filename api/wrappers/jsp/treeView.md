@@ -216,9 +216,22 @@ Triggered before a subgroup gets expanded.
         }
     </script>
 
+### change `String`
+
+Triggered when the selection has changed (either by the user or through the select method.
+
+#### Example
+    <kendo:treeView change="handle_change">
+    </kendo:treeView>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
 ### select `String`
 
-Triggered when a node gets selected.
+Triggered when a node is being selected by the user. Cancellable.
 
 #### Example
     <kendo:treeView select="handle_select">
@@ -349,9 +362,24 @@ Triggered before a subgroup gets expanded.
         </kendo:treeView-expand>
     </kendo:treeView>
 
+### kendo:treeView-change
+
+Triggered when the selection has changed (either by the user or through the select method.
+
+#### Example
+    <kendo:treeView>
+        <kendo:treeView-change>
+            <script>
+                function(e) {
+                    // Code to handle the change event.
+                }
+            </script>
+        </kendo:treeView-change>
+    </kendo:treeView>
+
 ### kendo:treeView-select
 
-Triggered when a node gets selected.
+Triggered when a node is being selected by the user. Cancellable.
 
 #### Example
     <kendo:treeView>

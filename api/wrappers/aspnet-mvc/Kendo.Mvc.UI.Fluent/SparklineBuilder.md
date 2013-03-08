@@ -31,6 +31,26 @@ The data for the default Sparkline series.
 
 
 
+### Data(System.Double)
+Sets the Sparkline data.
+
+#### Example
+
+    <%= Html.Kendo().Sparkline()
+        .Name("Sparkline")
+        .Data(new int[] { 1, 2 })
+    %>
+        
+
+
+#### Parameters
+
+##### data `System.Double`
+The data for the default Sparkline series.
+
+
+
+
 ### Type(Kendo.Mvc.UI.SparklineType)
 Sets the type of the sparkline.
 

@@ -33,6 +33,41 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 ## Methods
 
+### activate
+Fires when a sub menu gets opened and its animation finished.
+
+#### Returns
+`\Kendo\UI\Menu`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $menu->activate('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onActivate(e) {
+            // handle the activate event.
+        }
+    </script>
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $menu->activate('onActivate');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $menu->activate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### animation
 
 A collection of Animation objects, used to change default animations. A value of false will disable all animations in the widget.Available animations for the Menu are listed below.  Each animation has a reverse options which is used for the close effect by default, but can be over-ridden
@@ -114,6 +149,41 @@ Specifies that sub menus should close after item selection (provided they won't 
     <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $menu->closeOnClick(true);
+    ?>
+
+### deactivate
+Fires when a sub menu gets closed and its animation finished.
+
+#### Returns
+`\Kendo\UI\Menu`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $menu->deactivate('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onDeactivate(e) {
+            // handle the deactivate event.
+        }
+    </script>
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $menu->deactivate('onDeactivate');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $menu->deactivate(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### direction

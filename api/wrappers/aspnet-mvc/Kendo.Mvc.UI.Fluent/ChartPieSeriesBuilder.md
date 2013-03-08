@@ -163,6 +163,18 @@ The pie segments border dash type.
 
 
 
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+Configures the pie border
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+The border configuration action
+
+
+
+
 ### Overlay(Kendo.Mvc.UI.ChartPieSeriesOverlay)
 Sets the pie segments effects overlay
 

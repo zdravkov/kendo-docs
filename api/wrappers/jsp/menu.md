@@ -119,6 +119,32 @@ Fires before a sub menu gets opened.
         }
     </script>
 
+### activate `String`
+
+Fires when a sub menu gets opened and its animation finished.
+
+#### Example
+    <kendo:menu activate="handle_activate">
+    </kendo:menu>
+    <script>
+        function handle_activate(e) {
+            // Code to handle the activate event.
+        }
+    </script>
+
+### deactivate `String`
+
+Fires when a sub menu gets closed and its animation finished.
+
+#### Example
+    <kendo:menu deactivate="handle_deactivate">
+    </kendo:menu>
+    <script>
+        function handle_deactivate(e) {
+            // Code to handle the deactivate event.
+        }
+    </script>
+
 ### select `String`
 
 Fires when a menu item gets selected.
@@ -162,6 +188,36 @@ Fires before a sub menu gets opened.
                 }
             </script>
         </kendo:menu-open>
+    </kendo:menu>
+
+### kendo:menu-activate
+
+Fires when a sub menu gets opened and its animation finished.
+
+#### Example
+    <kendo:menu>
+        <kendo:menu-activate>
+            <script>
+                function(e) {
+                    // Code to handle the activate event.
+                }
+            </script>
+        </kendo:menu-activate>
+    </kendo:menu>
+
+### kendo:menu-deactivate
+
+Fires when a sub menu gets closed and its animation finished.
+
+#### Example
+    <kendo:menu>
+        <kendo:menu-deactivate>
+            <script>
+                function(e) {
+                    // Code to handle the deactivate event.
+                }
+            </script>
+        </kendo:menu-deactivate>
     </kendo:menu>
 
 ### kendo:menu-select
