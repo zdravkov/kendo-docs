@@ -386,6 +386,18 @@ Enables/disables the combobox widget
 
 Desired state
 
+### focus
+
+Focuses the widget.
+
+#### Example
+
+    // get a reference to instance of the Kendo UI ComboBox
+    var combobox = $("#comboBox").data("kendoComboBox");
+
+    // focus the widget
+    combobox.focus();
+
 ### open
 
 Opens the drop-down list.

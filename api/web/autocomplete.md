@@ -323,6 +323,18 @@ Enable/Disable the autocomplete widget.
 
 The argument, which defines whether to enable/disable the autocomplete.
 
+### focus
+
+Focuses the widget.
+
+#### Example
+
+    // get a reference to the autocomplete widget
+    var autocomplete = $("autocomplete").data("kendoAutoComplete");
+
+    // focus the widget
+    autocomplete.focus();
+
 ### refresh
 
 Re-render the items in drop-down list.

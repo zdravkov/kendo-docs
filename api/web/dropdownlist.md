@@ -341,6 +341,18 @@ Enables/disables the dropdownlist widget
 
 Desired state
 
+### focus
+
+Focuses the widget.
+
+#### Example
+
+    // get a reference to the dropdown list
+    var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
+
+    // focus the widget
+    dropdownlist.focus();
+
 ### open
 
 Opens the drop-down list.

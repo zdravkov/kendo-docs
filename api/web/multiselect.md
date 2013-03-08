@@ -359,6 +359,18 @@ Enables/disables the multiselect widget
 
 Desired state
 
+### focus
+
+Focuses the widget.
+
+#### Example
+
+    // get a reference to instance of the Kendo UI multiselect
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    // focus the widget
+    multiselect.focus();
+
 ### open
 
 Opens the drop-down list.
