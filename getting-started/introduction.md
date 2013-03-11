@@ -209,5 +209,6 @@ You are now ready to use Kendo UI. Check out our interactive tutorials in the [K
 
 1. [Using Kendo Widgets](/getting-started/using-kendo-widgets)
 1. [Data Attribute Initialization](/getting-started/data-attribute-initialization)
+1. [Requirements](/getting-started/technical-requirements)
 
 
