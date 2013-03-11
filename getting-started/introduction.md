@@ -1,5 +1,5 @@
 ---
-title: What is Kendo UI
+title: Introduction
 meta_title: HTML5, jQuery-based framework | Kendo UI
 meta_description: Kendo UI framework overview: UI components, rich data vizualization framework, auto-adaptive mobile widgets and all tools for building rich web apps.
 slug: gs-introduction
