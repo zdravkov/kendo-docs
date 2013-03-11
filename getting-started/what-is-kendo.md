@@ -5,7 +5,6 @@ meta_description: Kendo UI framework overview: UI components, rich data vizualiz
 slug: gs-what-is-kendo
 tags: 101, Getting Started, internals
 publish: true
-ordinal: 01
 relatedDocs: gs-downloading-kendo
 ---
 
@@ -27,7 +26,7 @@ There’s no need to manually assemble a full framework for HTML app development
 
 ## Built for Performance
 
-Every aspect of Kendo UI has been built to deliver performance before providing a laundry list of features. No shortcuts have been made to artificially inflate the Kendo UI feature set. 
+Every aspect of Kendo UI has been built to deliver performance before providing a laundry list of features. No shortcuts have been made to artificially inflate the Kendo UI feature set.
 
 ## Built for Real World Use
 
