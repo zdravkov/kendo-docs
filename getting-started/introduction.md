@@ -48,20 +48,16 @@ To use Kendo UI in your HTML page you need to include the required JavaScript an
 
         <!-- Common Kendo UI Web CSS -->
         <link href="styles/kendo.common.min.css" rel="stylesheet" />
-
         <!-- Default Kendo UI Web theme CSS -->
         <link href="styles/kendo.default.min.css" rel="stylesheet" />
-
         <!-- jQuery JavaScript -->
         <script src="js/jquery.min.js"></script>
-
         <!-- Kendo UI Web combined JavaScript -->
         <script src="js/kendo.web.min.js"></script>
 1. Initialize a Kendo UI Web Widget (the Kendo DatePicker in this example):
 
         <!-- HTML element from which the Kendo DatePicker would be initialized -->
         <input id="datepicker" />
-
         <script>
         $(function() {
             // Initialize the Kendo DatePicker by calling the kendoDatePicker jQuery plugin
@@ -97,17 +93,14 @@ Here is the complete example:
 
         <!-- Kendo UI DataViz CSS -->
         <link href="styles/kendo.dataviz.min.css" rel="stylesheet" />
-
         <!-- jQuery JavaScript -->
         <script src="js/jquery.min.js"></script>
-
         <!-- Kendo UI DataViz combined JavaScript -->
         <script src="js/kendo.dataviz.min.js"></script>
 1. Initialize a Kendo UI DataViz Widget (the Kendo Radial Gauge in this example):
 
         <!-- HTML element from which the Kendo Radial Gauge would be initialized -->
         <div id="gauge"></div>
-
         <script>
         $(function() {
             $("#gauge").kendoRadialGauge();
@@ -141,10 +134,8 @@ Here is the complete example:
 
         <!-- Kendo UI Mobile CSS -->
         <link href="styles/kendo.mobile.all.min.css" rel="stylesheet" />
-
         <!-- jQuery JavaScript -->
         <script src="js/jquery.min.js"></script>
-
         <!-- Kendo UI Mobile combined JavaScript -->
         <script src="js/kendo.mobile.min.js"></script>
 1. Initialize a Kendo Mobile Application
