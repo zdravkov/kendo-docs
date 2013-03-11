@@ -4910,6 +4910,10 @@ Reloads the data and repaints the chart.
     // refreshes the chart
     chart.refresh();
 
+### redraw
+
+Repaints the chart using currently loaded data.
+
 ### setDataSource
 
 Sets the dataSource of an existing Chart and rebinds it.
