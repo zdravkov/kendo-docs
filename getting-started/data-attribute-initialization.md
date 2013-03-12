@@ -3,100 +3,152 @@ title:  Data Attribute Initialization
 meta_title: Data Attribute Initialization and Configuration
 meta_description: Learn how to initialize and configure each Kendo UI widget by setting a data attribute.
 slug: gs-data-attribute-initialization
-tags:   101, Getting Started, widgets
-Publish:    true
-related:    gs-using-kendo-widgets, gs-data-attribute-initialization
+tags: 101, Getting Started, widgets
+Publish: true
+related: gs-widgets
 ---
 
 # Data Attribute Initialization
 
-In addition to the jQuery plugin initialization, each kendo widget can be initialized and configured by setting a `role` data attribute
-on the target element and calling `kendo.init` on its element or any of its containers.
+In addition to the jQuery plugin initialization, each kendo widget can be initialized and configured via data attributes. You need to set the `role` data attribute
+of the target element and call [kendo.init](/api/framework/kendo#init).
 
-### Initialize a kendo DropDownList using a role attribute
+Data attribute initialization is convenient when there are a lot of Kendo UI widgets in the page. First the widget configuration stays with the target element. Second
+there is no need to find all elements to invoke the Kendo jQuery plugins - you only need to call `kendo.init` once.
+
+Kendo UI Mobile applications work primarily with data attribute configuration.
+
+### Example - initialize a Kendo UI widget using a data attributes
 
     <div id="container">
-        <select data-role="dropdownlist"></select>
+        <input data-role="numerictextbox" />
     </div>
     <script>
-        kendo.init($("#container"));
+    kendo.init($("#container"));
     </script>
 
-The role attribute value is the name of the widget in lower case.
+The `kendo.init($("#container"))` statement finds all elements that have the `role` data attribute set and initializes Kendo UI widgets.
 
-By default, `kendo.init` initializes all **web**/**dataviz** widgets. Kendo mobile applicaiton initializes all **mobile**, **web**, and **dataviz** widgets, in that priority.
-This means that if an element with `data-role="listview" is found, a the mobile listview will be initialized, not the web one (which has the same role).
+> The value of the `role` data attribute is the name of the widget in lower case e.g. "autocomplete", "dropdownlist" etc.
+
+By default, `kendo.init` initializes only Kendo UI Web and Kendo UI DataViz widgets (in that order). The Kendo UI Mobile [Application](/getting-started/mobile/application)
+initializes first Kendo UI Mobile widgets, then Kendo UI Web widgets and finally Kendo UI DataViz widgets. This means that an element with `data-role="listview"` will be initialized as a Kendo UI Mobile ListView in a Kendo UI Mobile Application.
 This behaviour can be overriden by specifying the full widget class name (with its namespace) in the role attribute.
 
-    <div id="container">
+### Example - set role attribute to the full widget name
+    <div data-role="view">
+        <!-- specify the Kendo UI Web ListView widget -->
         <div data-role="kendo.ui.ListView"></div>
     </div>
     <script>
-        kendo.init($("#container"));
+    var app = new kendo.mobile.Application();
     </script>
 
+## Configuration
 
-### Configuration
+Each widget configuration option can be set via a data attribute of the target element. Just add the "data-" prefix to the name of the configuration option and specify its value e.g. `data-delay="100"`.
 
-Each widget configuration option can be specified via a data attribute on the respective element.
-**Camel-cased options are translated to dash separated attributes**. For instance, dataTextField option of the autocomplete widget can be specified with `data-text-field="foo"` attribute.
+Camel-cased options are set via dash-separated attributes. For example, the [ignoreCase](/api/web/autocomplete#ignorecase-booleandefault) option of the AutoComplete is set via `data-ignore-text`.
 
-> Options, which start with `data` do not require an additional "data" in the attribute name.
+Options, which start with `data` do not require an additional "data" in the attribute name e.g. the `dataTextField` option is set via the `data-text-field` attribute and `dataSource` is set via the
+`data-source` attribute.
 
-### Configure kendo DropDownList with data attributes
+Complex configuration options are set as JavaScript object literals: `data-source="{data: [{name: 'John Doe'},{name: 'Jane Doe']}"`.
 
-    <select data-role="dropdownlist" data-delay="1000">
-    </select>
+### Example - configure a Kendo UI Widget with data attributes
 
-### Events / DataSource
-
-A widget event can be bound using data attributes as well. The value of the data attribute will be resolved to a function, available in the global scope.
-
-#### Bind to dropDownList change event
-
-    <select data-role="dropdownlist" data-change="onChange">
-    </select>
+    <div id="container">
+        <input data-role="autocomplete"
+               data-ignore-case="true"
+               data-text-field="name"
+               data-source="{data: [{name: 'John Doe'},{name: 'Jane Doe']}" />
+    </div>
     <script>
-        function onChange(e) {
-            // ...
-        }
+    kendo.init($("#container"));
     </script>
 
-Event handlers also support member functions, using JavaScript syntax. An event handler can be specified using `foo.bar`, resolving to the member method `bar` of the object `foo`.
+## Events
 
-#### Bind to dropDownList change event to a member function
+You can also subscribe to Kendo UI widget events via data attributes. The value of the data attribute will be resolved as a JavaScript function, available in the global scope.
 
-    <select data-role="dropdownlist" data-change="foo.bar">
-    </select>
+### Example - subscribe to a Kendo UI widget event via data attribute
+
+    <div id="container">
+        <input data-role="numerictextbox" data-change="numerictextbox_change" />
+    </div>
     <script>
-    var foo = {
-        bar: function(e) {
-            // ...
-        }
+    function numerictextbox_change(e) {
+        // Handle the "change" event
     }
+    kendo.init($("#container"));
     </script>
 
-The declarative DataSource binding works in the same way, expecting a DataSource object or an array.
+Event handlers can also be set to member functions. For example an event data attribute can be set to `foo.bar` which is resolved as the `bar` method of the `foo` object which is available in the global scope.
 
+### Example - use member function as event handler
 
-#### Specify DropDownList DataSource
-
-    <select data-role="dropdownlist" data-source="source">
-    </select>
+    <div id="container">
+        <input data-role="numerictextbox" data-change="handler.numerictextbox_change" />
+    </div>
     <script>
-        var source = ["foo", "bar", "baz"];
+    var handler = {
+        numerictextbox_change: function (e) {
+            // Handle the "change" event
+        }
+    };
+    kendo.init($("#container"));
     </script>
 
-### Templates
+## DataSource
 
-For widgets that have template configuration options, the data attribute value will be resolved to an `id` of a `script`
-element, with the contents of the template.
+The data source of data-bound Kendo UI widgets can also be set via data attribute. The value can be a JavaScript object, array or a variable available in the global scope.
 
-#### Specify DropDownList Template
+### Example - set the data source of a Kendo UI widget to a JavaScript object
 
-    <select data-role="dropdownlist" data-template="foo"></select>
-
-    <script id="foo" type="script/x-kendo-template">
-        <span>#:data.Name</span>
+    <div id="container">
+        <input data-role="autocomplete" data-source="{data:['One', 'Two']}" />
+    </div>
+    <script>
+    kendo.init($("#container"));
     </script>
 
+### Example - set the data source of a Kendo UI widget to a JavaScript array
+
+    <div id="container">
+        <input data-role="autocomplete" data-source="['One', 'Two']" />
+    </div>
+    <script>
+    kendo.init($("#container"));
+    </script>
+
+### Example - set the data source of a Kendo UI widget to a variable available in the global scope
+
+    <div id="container">
+        <input data-role="autocomplete" data-source="dataSource" />
+    </div>
+    <script>
+    var dataSource = new kendo.data.DataSource( {
+        data: [ "One", "Two" ]
+    });
+    kendo.init($("#container"));
+    </script>
+
+## Templates
+
+Template configuration can be set via data attributes as well. The attribute value will be resolved as the `id` attribute of a `script` element which represents the
+template.
+
+### Example - set the template of a Kendo UI widget
+
+    <div id="container">
+        <input data-role="autocomplete"
+               data-source="[{firstName:'John', lastName: 'Doe'}, {firstName:'Jane', lastName: 'Doe'}]"
+               data-text-field="firstName"
+               data-template="template" />
+    </div>
+    <script id="template" type="text/x-kendo-template">
+        <span>#: firstName # #: lastName #</span>
+    </script>
+    <script>
+    kendo.init($("#container"));
+    </script>
