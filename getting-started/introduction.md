@@ -207,7 +207,7 @@ Here is the complete example:
 
 You are now ready to use Kendo UI. Check out our interactive tutorials in the [Kendo UI Dojo](http://www.kendoui.com/dojo.aspx) or continue with the following help topics:
 
-1. [Using Kendo Widgets](/getting-started/using-kendo-widgets)
+1. [Kendo UI Widgets](/getting-started/widgets)
 1. [Data Attribute Initialization](/getting-started/data-attribute-initialization)
 1. [Requirements](/getting-started/technical-requirements)
 
