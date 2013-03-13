@@ -221,7 +221,7 @@ the minimum and maximum values.
 
 #### Example
 
-    $("#datePicker").kendoDatePicker({
+    $("#datetimepicker").kendoDateTimePicker({
         format: "yyyy/MM/dd hh:mm tt",
         parseFormats: ["MMMM yyyy", "HH:mm"] //format also will be added to parseFormats
     });
@@ -340,6 +340,27 @@ Enables or disables a DateTimePicker.
 ##### enable `Boolean`
 
 Enables (**true** or undefined) or disables (**false**) a DateTimePicker.
+
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the datetimepicker widget
+    var datetimepicker = $("datetimepicker").data("kendoDateTimePicker");
+
+    // makes datetimepicker readonly
+    datetimepicker.readonly();
+
+    // makes datetimepicker editable
+    datetimepicker.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the datetimepicker should be readonly or editable.
 
 ### max
 

@@ -386,6 +386,27 @@ Enables/disables the combobox widget
 
 Desired state
 
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the combobox widget
+    var combobox = $("combobox").data("kendoComboBox");
+
+    // makes combobox readonly
+    combobox.readonly();
+
+    // makes combobox editable
+    combobox.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the combobox should be readonly or editable.
+
 ### focus
 
 Focuses the widget.

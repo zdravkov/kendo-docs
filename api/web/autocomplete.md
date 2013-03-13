@@ -323,6 +323,27 @@ Enable/Disable the autocomplete widget.
 
 The argument, which defines whether to enable/disable the autocomplete.
 
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the autocomplete widget
+    var autocomplete = $("autocomplete").data("kendoAutoComplete");
+
+    // makes autocomplete readonly
+    autocomplete.readonly();
+
+    // makes autocomplete editable
+    autocomplete.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the autocomplete should be readonly or editable.
+
 ### focus
 
 Focuses the widget.

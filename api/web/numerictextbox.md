@@ -204,6 +204,27 @@ Enable/Disable the numerictextbox widget.
 
 The argument, which defines whether to enable/disable tha numerictextbox.
 
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the numerictextbox widget
+    var numerictextbox = $("numerictextbox").data("kendoNumericTextBox");
+
+    // makes numerictextbox readonly
+    numerictextbox.readonly();
+
+    // makes numerictextbox editable
+    numerictextbox.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the numerictextbox should be readonly or editable.
+
 ### focus
 
 Focuses the numerictextbox widget.

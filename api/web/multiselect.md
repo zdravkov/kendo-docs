@@ -359,6 +359,27 @@ Enables/disables the multiselect widget
 
 Desired state
 
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the multiselect widget
+    var multiselect = $("multiselect").data("kendoMultiSelect");
+
+    // makes multiselect readonly
+    multiselect.readonly();
+
+    // makes multiselect editable
+    multiselect.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the multiselect should be readonly or editable.
+
 ### focus
 
 Focuses the widget.

@@ -163,6 +163,27 @@ Enables or disables a TimePicker.
 
 Enables (**true** or undefined) or disables (**false**) a TimePicker.
 
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the timepicker widget
+    var timepicker = $("timepicker").data("kendoTimePicker");
+
+    // makes timepicker readonly
+    timepicker.readonly();
+
+    // makes timepicker editable
+    timepicker.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the timepicker should be readonly or editable.
+
 ### max
 
 Gets or sets the maximum value of the TimePicker.

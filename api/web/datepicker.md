@@ -310,6 +310,27 @@ Enable/Disable the datePicker widget.
 
 The argument, which defines whether to enable/disable the datePicker.
 
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the datepicker widget
+    var datepicker = $("datepicker").data("kendoDatePicker");
+
+    // makes datepicker readonly
+    datepicker.readonly();
+
+    // makes datepicker editable
+    datepicker.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the datepicker should be readonly or editable.
+
 ### max
 
 Gets/Sets the max value of the datePicker.
