@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.Tooltip
-slug: web-kendo.ui.tooltip
+slug: api-web-tooltip
 tags: api,web
 publish: true
 ---

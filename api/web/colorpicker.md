@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.ColorPicker
-slug: web-kendo.ui.colorpicker
+slug: api-web-colorpicker
 tags: api,web
 publish: true
 ---

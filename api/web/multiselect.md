@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.MultiSelect
-slug: web-kendo.ui.multiselect
+slug: api-web-multiselect
 tags: api,web
 publish: true
 ---

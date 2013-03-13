@@ -2,7 +2,7 @@
 title: kendo.ui.Menu
 meta_title: Configuration, methods and events in Menu UI widget
 meta_description: How to configure all animations in Menu UI widget, enable and disable, remove specified items and use code examples for all methods and events supported.
-slug: web-kendo.ui.menu
+slug: api-web-menu
 tags: api,web
 publish: true
 ---

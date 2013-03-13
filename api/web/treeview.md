@@ -2,7 +2,7 @@
 title: kendo.ui.TreeView
 meta_title: Kendo UI TreeView widget configuration, methods, events
 meta_description: Documentation guide that helps the developer configure TreeView UI widget in a few quick steps, apply methdos and trigger events.
-slug: web-kendo.ui.treeview
+slug: api-web-treeview
 tags: api,web
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.ColorPalette
-slug: web-kendo.ui.colorpalette
+slug: api-web-colorpalette
 tags: api,web
 publish: true
 ---

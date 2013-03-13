@@ -2,7 +2,7 @@
 title: kendo.ui.Pager
 meta_title: Kendo UI Pager API reference
 meta_description: Configuration steps for the Pager widget and methods for different actions: return number of pages, page size, specified page, update all values.
-slug: web-kendo.ui.pager
+slug: api-web-pager
 tags: api,web
 publish: true
 ---
