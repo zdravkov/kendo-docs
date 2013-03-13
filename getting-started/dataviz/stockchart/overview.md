@@ -1,6 +1,7 @@
 ---
 title: Stock Chart Overview
 slug: gs-dataviz-stockchart-overview
+relatedDocs: api-dataviz-stockchart
 related: chart-overview
 publish: true
 ---

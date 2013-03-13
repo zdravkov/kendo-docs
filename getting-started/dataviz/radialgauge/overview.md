@@ -3,6 +3,7 @@ title: Radial Gauge Overview
 meta_title: Documentation Guide for Kendo UI Radial Gauge widget
 meta_description: How to create and set a Radial Gauge widget in Kendo UI DataViz.
 slug: gs-dataviz-radialgauge-overview
+relatedDocs: api-dataviz-radialgauge
 publish: true
 ---
 

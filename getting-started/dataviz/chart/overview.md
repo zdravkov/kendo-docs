@@ -3,6 +3,7 @@ title: Chart Overview
 meta_title: Documentation for Chart widget in Kendo UI DataViz
 meta_description: How to create a chart, enable the visualization of a series that displays inline data, explore the quick overview of Chart widget major features.
 slug: gs-dataviz-chart-overview
+relatedDocs: api-dataviz-chart
 publish: true
 ---
 
