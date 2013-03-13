@@ -3,6 +3,7 @@ title: kendo.mobile.ui.Pane
 meta_title: Kendo UI Mobile Pane API reference
 meta_description: See how to easily configure the id of the initial mobile View to display, the default Pane layout, loading popup text, default View transition and more.
 slug: api-mobile-pane
+relatedDocs: gs-mobile-pane
 tags: api,mobile
 publish: true
 ---

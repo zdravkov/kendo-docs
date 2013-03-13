@@ -3,6 +3,7 @@ title: Application
 meta_title: Documentation for Kendo UI Mobile Application
 meta_description: How to initiate Kendo UI Mobile Application and handle the navigation.
 slug: gs-mobile-application
+relatedDocs: api-mobile-application
 tags: getting-started, mobile
 publish: true
 ---

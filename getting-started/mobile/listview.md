@@ -3,6 +3,7 @@ title: ListView
 meta_title: User guide for Kendo UI Mobile ListView Widget
 meta_description: Documentation how to use capabilities of Kendo UI Mobile ListVeiw widget.
 slug: gs-mobile-listview
+relatedDocs: api-mobile-listview
 tags: api,mobile
 publish: true
 ---

@@ -1,6 +1,7 @@
 ---
 title: Touch
 slug: gs-mobile-touch
+relatedDocs: api-mobile-touch
 tags: getting-started,mobile
 publish: true
 ---

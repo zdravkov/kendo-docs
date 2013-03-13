@@ -3,6 +3,7 @@ title: kendo.mobile.ui.Switch
 meta_title: Mobile Switch widget configuration | Kendo UI Documentation
 meta_description: How to quickly configure the checked and unchecked state of Mobile Switch widget.
 slug: api-mobile-switch
+relatedDocs: gs-mobile-switch
 tags: api,mobile
 publish: true
 ---
