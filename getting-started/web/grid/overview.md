@@ -3,6 +3,7 @@ title: Grid Overview
 meta_title: Overview of Grid UI widget | Kendo UI Documentation
 meta_description: Quick steps to help you create Kendo UI Grid, initialization and enabling of Grid UI virtualization.
 slug: gs-web-grid-overview
+relatedDocs: api-web-grid
 tags: getting-started,web
 publish: true
 ---

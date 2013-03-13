@@ -3,6 +3,7 @@ title: TabStrip Overview
 meta_title: Overview of Tabstrip UI widget | Kendo UI Documentation
 meta_description: This documentation helps you get started with TabStrip, initialize the widget and how to load the content with AJAX.
 slug: gs-web-tabstrip-overview
+relatedDocs: api-web-tabstrip
 tags: getting-started,web
 publish: true
 ---

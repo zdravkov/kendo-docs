@@ -3,6 +3,7 @@ title: Window Overview
 meta_title: Overview of Kendo UI Window widget
 meta_description: Learn how to get started with Kendo UI Window widget, load content via Ajax, access an existing window.
 slug: gs-web-window-overview
+relatedDocs: api-web-window
 tags: getting-started,web
 publish: true
 ---

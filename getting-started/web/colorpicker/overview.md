@@ -1,6 +1,7 @@
 ---
 title: ColorPicker Overview
 slug: gs-web-colorpicker-overview
+relatedDocs: api-web-colorpicker
 tags: getting-started,web
 publish: true
 ---

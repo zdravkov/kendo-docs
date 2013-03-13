@@ -3,6 +3,7 @@ title: DatePicker Overview
 meta_title: Overview of DatePicker UI widget
 meta_description: Help guide for the basics of Kendo UI DatePicker widget.
 slug: gs-web-datepicker-overview
+relatedDocs: api-web-datepicker
 tags: getting-started,web
 publish: true
 ---

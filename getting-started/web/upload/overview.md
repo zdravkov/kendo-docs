@@ -3,6 +3,7 @@ title: Upload Overview
 meta_title: Overview of Kendo UI Upload widget
 meta_description: How to use File Upload UI widget, initialize Upload and access and existing Upload instance.
 slug: gs-web-upload-overview
+relatedDocs: api-web-upload
 tags: getting-started,web
 publish: true
 ---

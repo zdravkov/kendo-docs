@@ -3,6 +3,7 @@ title: NumericTextBox Overview
 meta_title: NumericTextBox UI widget - documentation overview
 meta_description: How to create NumericTextBox widget and deal with proper configuration of its behaviors.
 slug: gs-web-numerictextbox-overview
+relatedDocs: api-web-numerictextbox
 tags: getting-started,web
 publish: true
 ---
