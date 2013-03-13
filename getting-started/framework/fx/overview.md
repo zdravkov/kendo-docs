@@ -1,5 +1,5 @@
 ---
-title: FX overview
+title: Overview
 slug: fx-overview
 publish: true
 ---
