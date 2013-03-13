@@ -203,12 +203,29 @@ Here is the complete example:
     </html>
 
 
-# Next Steps
+## Next Steps
 
-You are now ready to use Kendo UI. Check out our interactive tutorials in the [Kendo UI Dojo](http://www.kendoui.com/dojo.aspx) or continue with the following help topics:
+You are now ready to use Kendo UI. Check out our interactive tutorials in the [Kendo UI Dojo](http://www.kendoui.com/dojo.aspx) or continue with the following help topics or examples:
+
+### Further reading
 
 1. [Kendo UI Widgets](/getting-started/widgets)
 1. [Data Attribute Initialization](/getting-started/data-attribute-initialization)
 1. [Requirements](/getting-started/technical-requirements)
+
+### Examples
+
+1. [Online demos](http://demos.kendoui.com)
+1. [Code library projects](http://www.kendoui.com/code-library.aspx)
+1. Examples available on github
+-   [ASP.NET MVC examples](https://github.com/telerik/kendo-examples-asp-net-mvc/)
+-   [ASP.NET MVC Kendo UI Music Store](https://github.com/telerik/kendo-music-store)
+-   [ASP.NET MVC Kendo UI Mobile Music Store](https://github.com/telerik/kendo-mobile-music-store)
+-   [ASP.NET WebForms examples](https://github.com/telerik/kendo-examples-asp-net/)
+-   [JSP examples](https://github.com/telerik/kendo-examples-java)
+-   [Kendo Mobile Sushi](https://github.com/telerik/kendo-mobile-sushi)
+-   [PHP examples](https://github.com/telerik/kendo-examples-php)
+-   [Ruby on Rails examples](https://github.com/telerik/kendo-examples-rails)
+
 
 
