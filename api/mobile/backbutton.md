@@ -2,7 +2,7 @@
 title: kendo.mobile.ui.BackButton
 meta_title: Kendo UI Mobile BackButton API reference
 meta_description: Examples how to initialize Kendo UI mobile BackButton based on role data attribute and using jQuery plugin syntax.
-slug: mobile-kendo.mobile.ui.backbutton
+slug: api-mobile-backbutton
 tags: api,mobile
 publish: true
 ---

@@ -2,7 +2,7 @@
 title: kendo.mobile.ui.ModalView
 meta_title: Kendo UI Mobile ModalView configuration
 meta_description: Set height and width of the Kendo UI Mobile ModalView container in pixels, use methods to open and close it.
-slug: mobile-kendo.mobile.ui.modalview
+slug: api-mobile-modalview
 tags: api,mobile
 publish: true
 ---
