@@ -1,6 +1,7 @@
 ---
 title: kendo.ui.MultiSelect
 slug: api-web-multiselect
+relatedDocs: gs-web-multiselect-overview
 tags: api,web
 publish: true
 ---

@@ -1,6 +1,7 @@
 ---
 title: kendo.ui.ColorPalette
 slug: api-web-colorpalette
+relatedDocs: gs-web-colorpalette-overview
 tags: api,web
 publish: true
 ---

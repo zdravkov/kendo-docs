@@ -3,6 +3,7 @@ title: kendo.ui.TabStrip
 meta_title: TabStrip UI widget configuration, methods, events
 meta_description: Easily disable all animations, set the parameters, used for the visual animation and the effects used in TabStrip UI widget.
 slug: api-web-tabstrip
+relatedDocs: gs-web-tabstrip-overview
 tags: api,web
 publish: true
 ---

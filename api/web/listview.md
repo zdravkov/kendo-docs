@@ -3,6 +3,7 @@ title: kendo.ui.ListView
 meta_title: ListView UI widget configuration | Kendo UI Documentation
 meta_description: Step-by-step instructions and samples for Kendo UI ListView widget configuration, methods and event handling.
 slug: api-web-listview
+relatedDocs: gs-web-listview-overview
 tags: api,web
 publish: true
 ---

@@ -1,6 +1,7 @@
 ---
 title: kendo.ui.FlatColorPicker
 slug: api-web-flatcolorpicker
+relatedDocs: gs-web-flatcolorpicker-overview
 tags: api,web
 publish: true
 ---

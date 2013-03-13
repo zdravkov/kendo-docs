@@ -3,6 +3,7 @@ title: kendo.ui.DateTimePicker
 meta_title: Kendo UI DateTimePicker documentation guide
 meta_description: Learn how to configure the UI DateTimePicker widget. Use methods to open, close, remove, enable, disable, set maximum or minimum values and more.
 slug: api-web-datetimepicker
+relatedDocs: gs-web-datetimepicker-overview
 tags: api,web
 publish: true
 ---

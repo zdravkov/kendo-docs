@@ -3,6 +3,7 @@ title: kendo.ui.Upload
 meta_title: Configuration of Kendo UI file Upload widget
 meta_description: How to configure the ability to upload files in an asynchronous manner in Upload UI widget.
 slug: api-web-upload
+relatedDocs: gs-web-upload-overview
 tags: api,web
 publish: true
 ---
