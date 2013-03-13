@@ -1,6 +1,6 @@
 ---
 title: kendo.dataviz.ui.StockChart
-slug: dataviz-kendo.dataviz.ui.stock-chart
+slug: api-dataviz-stockchart
 tags: api,dataviz
 publish: true
 ---
@@ -3728,8 +3728,8 @@ Template variables:
              visible: true,
              shared: true,
              sharedTemplate:
-                "#= category # </br>" +                                       
-                "# for (var i = 0; i < points.length; i++) { #" +             
+                "#= category # </br>" +
+                "# for (var i = 0; i < points.length; i++) { #" +
                     "#= points[i].series.name #: #= points[i].value # </br>" +
                 "# } #"
          }

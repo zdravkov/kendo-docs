@@ -38,7 +38,7 @@ There are two ways you can contribute to the public Kendo UI documentation: eith
 		
 		title: kendo.dataviz.ui.Chart
 		
-		slug: dataviz-kendo.dataviz.ui.chart
+		slug: api-dataviz-chart
 		
 		tags: api,dataviz
 
