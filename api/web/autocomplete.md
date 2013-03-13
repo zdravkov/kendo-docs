@@ -5,7 +5,6 @@ meta_description: How to configure and control methods in Autocomplete UI widget
 slug: api-web-autocomplete
 relatedDocs: gs-web-autocomplete-overview
 tags: api,web
-relatedDocs: gs-web-autocomplete-overview
 publish: true
 ---
 
