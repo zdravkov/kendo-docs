@@ -2,7 +2,7 @@
 title: kendo.data.ObservableObject
 meta_title: API Reference for ObservableObject, a building block of Kendo MVVM
 meta_description: The documentation contains examples for the configuration of a new ObservableObject, methods and different types of events.
-slug: fw-kendo.data.observableobject
+slug: api-framework-observableobject
 tags: api,framework
 publish: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: FX Zoom
-slug: fx-zoom
+slug: api-fx-zoom
 publish: true
 ---
 

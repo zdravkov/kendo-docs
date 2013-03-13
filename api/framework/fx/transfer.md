@@ -1,6 +1,6 @@
 ---
 title: FX Transfer
-slug: fx-transfer
+slug: api-fx-transfer
 publish: true
 ---
 

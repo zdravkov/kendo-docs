@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.DropTarget
-slug: framework-kendo.ui.droptarget
+slug: api-framework-droptarget
 tags: api,framework
 meta_title: Drop interaction with jQuery | Kendo UI DropTarget API Reference
 meta_description: Learn how to group sets of draggable and drop targets, destroy all DropTarget instances from a group and handle events, fired once draggable interacts with the drop target.

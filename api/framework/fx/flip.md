@@ -1,6 +1,6 @@
 ---
 title: FX Flip
-slug: fx-flip
+slug: api-fx-flip
 publish: true
 ---
 

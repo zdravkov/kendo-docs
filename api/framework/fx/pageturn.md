@@ -1,6 +1,6 @@
 ---
 title: FX PageTurn
-slug: fx-pageturn
+slug: api-fx-pageturn
 publish: true
 ---
 

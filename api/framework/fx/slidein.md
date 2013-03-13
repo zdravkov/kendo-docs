@@ -1,6 +1,6 @@
 ---
 title: FX SlideIn
-slug: fx-slidein
+slug: api-fx-slidein
 publish: true
 ---
 

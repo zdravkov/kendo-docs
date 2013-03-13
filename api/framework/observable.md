@@ -1,6 +1,6 @@
 ---
 title: kendo.Observable
-slug: fw-kendo.Observable
+slug: api-framework-Observable
 tags: api,framework
 publish: true
 ---

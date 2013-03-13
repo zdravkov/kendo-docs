@@ -1,6 +1,6 @@
 ---
 title: kendo.mobile.ui.Widget
-slug: fw-kendo.mobile.ui.Widget
+slug: api-framework-mobilewidget
 tags: api,framework
 publish: true
 ---

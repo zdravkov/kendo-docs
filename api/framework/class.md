@@ -1,6 +1,6 @@
 ---
 title: kendo.Class
-slug: fw-kendo.Class
+slug: api-framework-Class
 tags: api,framework
 publish: true
 ---

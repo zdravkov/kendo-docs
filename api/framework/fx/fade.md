@@ -1,6 +1,6 @@
 ---
 title: FX Fade
-slug: fx-fade
+slug: api-fx-fade
 publish: true
 ---
 

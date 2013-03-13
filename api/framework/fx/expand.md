@@ -1,6 +1,6 @@
 ---
 title: FX Expand
-slug: fx-expand
+slug: api-fx-expand
 publish: true
 ---
 

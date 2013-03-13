@@ -2,7 +2,7 @@
 title: kendo.ui.Validator
 meta_title: Validator configuration and methods | Kendo UI Framework
 meta_description: How to configure the Validator in Kendo UI Framework, get error messages and ensure the validation of the input elements in supported methods.
-slug: fw-kendo.ui.validator
+slug: api-framework-validator
 tags: api,web
 publish: true
 ---

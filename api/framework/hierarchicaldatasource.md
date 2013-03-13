@@ -2,7 +2,7 @@
 title: kendo.data.HierarchicalDataSource
 meta_title: API Reference for Kendo UI Hierarchical DataSource
 meta_description: Learn more about the configuration of Kendo UI DataSource, methods and events.
-slug: fw-kendo.data.hierachicaldatasource
+slug: api-framework-hierachicaldatasource
 tags: api,framework
 publish: true
 ---

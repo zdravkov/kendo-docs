@@ -1,6 +1,6 @@
 ---
 title: kendo.Layout
-slug: framework-kendo.layout
+slug: api-framework-layout
 tags: api,framework
 publish: true
 ---

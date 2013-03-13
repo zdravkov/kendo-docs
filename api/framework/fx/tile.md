@@ -1,6 +1,6 @@
 ---
 title: FX Tile
-slug: fx-tile
+slug: api-fx-tile
 publish: true
 ---
 

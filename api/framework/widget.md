@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.Widget
-slug: fw-kendo.ui.Widget
+slug: api-framework-Widget
 tags: api,framework
 publish: true
 ---

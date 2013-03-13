@@ -2,7 +2,7 @@
 title: fx
 meta_title: API reference for Kendo UI FX
 meta_description: Find examples of different animation effects for selected elements. The API Reference for Kendo UI FX includes an introduction to methods and animation effects.
-slug: fw-kendo.fx
+slug: api-framework-fx
 tags: api,framework
 publish: true
 ---

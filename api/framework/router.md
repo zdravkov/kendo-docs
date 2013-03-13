@@ -1,6 +1,6 @@
 ---
 title: kendo.Router
-slug: framework-kendo.router
+slug: api-framework-router
 tags: api,framework
 publish: true
 ---

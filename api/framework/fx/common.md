@@ -1,6 +1,6 @@
 ---
 title: FX Common API
-slug: fx-common-api
+slug: api-fx-common-api
 publish: true
 ---
 

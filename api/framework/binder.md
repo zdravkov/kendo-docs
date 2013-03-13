@@ -1,6 +1,6 @@
 ---
 title: kendo.data.Binder
-slug: fw-kendo.data.Binder
+slug: api-framework-binder
 tags: api,framework
 publish: true
 ---

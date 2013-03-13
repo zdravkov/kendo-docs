@@ -1,6 +1,6 @@
 ---
 title: kendo.View
-slug: framework-kendo.view
+slug: api-framework-view
 tags: api,framework
 publish: true
 ---
