@@ -1,6 +1,7 @@
 ---
 title: kendo.dataviz.ui.StockChart
 slug: api-dataviz-stockchart
+relatedDocs: gs-dataviz-stockchart-overview
 tags: api,dataviz
 publish: true
 ---

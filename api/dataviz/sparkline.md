@@ -3,6 +3,7 @@ title: kendo.dataviz.ui.Sparkline
 meta_title: Sparkline widget configuration, methods and events | Kendo UI DataViz
 meta_description: Learn how to configure Kendo UI Javascript sparkline widget in a few easy steps, use and change methods and events.
 slug: api-dataviz-sparkline
+relatedDocs: gs-dataviz-sparkline-overview
 tags: api,dataviz,sparklines
 publish: true
 ---
