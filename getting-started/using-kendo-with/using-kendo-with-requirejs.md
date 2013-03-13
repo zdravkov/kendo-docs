@@ -2,7 +2,6 @@
 title: Using Kendo With RequireJS
 slug: gs-using-kendo-with-requirejs
 tags: 101, Getting Started, RequireJS
-related: gs-what-is-kendo, gs-downloading-kendo
 publish: true
 ---
 
