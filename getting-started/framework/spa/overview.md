@@ -1,5 +1,5 @@
 ---
-title: Single-Page Application Overview
+title: Overview
 slug: spa-overview
 publish: true
 ---

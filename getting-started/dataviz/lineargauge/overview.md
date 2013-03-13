@@ -1,5 +1,5 @@
 ---
-title: Linear Gauge Overview
+title: Overview
 meta_title: User Guide for Linear Gauge widget
 meta_description: Step-by-step help guide how to initialize Kendo UI DataViz Linear Gauge.
 slug: gs-dataviz-lineargauge-overview

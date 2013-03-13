@@ -1,5 +1,5 @@
 ---
-title: Editor Overview
+title: Overview
 meta_title: Overview of Editor UI widget | Kendo UI Documentation
 meta_description: The documentation guide will help you initialize Kendo web editor and proceed with its configuration.
 slug: gs-web-editor-overview

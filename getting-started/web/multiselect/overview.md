@@ -1,5 +1,5 @@
 ---
-title: MultiSelect Overview
+title: Overview
 meta_title: Overview of jQuery UI multiselect | Kendo UI Documentation
 meta_description: Create MultiSelect UI widget, use Kendo UI templates, instructions how to use MultiSelect.
 slug: gs-web-multiselect-overview

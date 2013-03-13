@@ -1,5 +1,5 @@
 ---
-title: Tooltip Overview
+title: Overview
 slug: gs-web-tooltip-overview
 relatedDocs: api-web-tooltip
 tags: getting-started,web

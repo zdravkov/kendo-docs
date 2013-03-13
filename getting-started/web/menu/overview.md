@@ -1,5 +1,5 @@
 ---
-title: Menu Overview
+title: Overview
 meta_title: Overview of Menu UI widget | Kendo UI Documentation
 meta_description: Steps that help you initialize the Menu widget using JSON data object and customize animation.
 slug: gs-web-menu-overview

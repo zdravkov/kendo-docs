@@ -1,5 +1,5 @@
 ---
-title: ComboBox Overview
+title: Overview
 meta_title: Overview of jQuery UI combobox | Kendo UI Documentation
 meta_description: Create ComboBox UI widget, use Kendo UI templates, instructions how to use ComboBox.
 slug: gs-web-combobox-overview

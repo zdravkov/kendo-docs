@@ -1,5 +1,5 @@
 ---
-title: Calendar Overview
+title: Overview
 meta_title: Calendar UI widget for web app development | Kendo UI Documentation
 meta_description: Initialize Calendar UI widget, configure the behaviour of the control and use a custom template.
 slug: gs-web-calendar-overview
