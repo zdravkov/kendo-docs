@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.Window
-meta_title: Window UI widget configuration, methods and events guide
+meta_title: Configuration, methods and events of Kendo UI Window
 meta_description: How to initialize Window UI widget and configure its behaviors, center a window, set its content and toggle the state of the UI widget.
 slug: api-web-window
 relatedDocs: gs-web-window-overview

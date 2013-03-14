@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.TimePicker
-meta_title: Configuration documentation for TimePicker UI widget
+meta_title: Configuration, methods and events of Kendo UI TimePicker
 meta_description: What type of animations you can use in TimePicker UI widget, find supported methods and see which events are triggered once the value is changed.
 slug: api-web-timepicker
 relatedDocs: gs-web-timepicker-overview

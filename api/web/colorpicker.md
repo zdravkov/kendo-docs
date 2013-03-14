@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.ColorPicker
+meta_title: Configuration, methods and events of Kendo UI ColorPicker
 slug: api-web-colorpicker
 relatedDocs: gs-web-colorpicker-overview
 tags: api,web

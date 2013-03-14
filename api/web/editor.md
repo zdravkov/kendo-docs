@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.Editor
-meta_title: Editor widget configuration, methods and events | Kendo UI Web
+meta_title: Configuration, methods and events of Kendo UI Editor
 meta_description: Help guide for proper configuration of Editor UI widget, and how to use methods and events.
 slug: api-web-editor
 relatedDocs: gs-web-editor-overview

@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.MultiSelect
+meta_title: Configuration, methods and events of Kendo UI MultiSelect
 slug: api-web-multiselect
 relatedDocs: gs-web-multiselect-overview
 tags: api,web

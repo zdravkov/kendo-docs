@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.AutoComplete
-meta_title: Configuration, methods and events of Kendo UI AutoComplete widget
+meta_title: Configuration, methods and events of Kendo UI AutoComplete
 meta_description: How to configure and control methods in Autocomplete UI widget, which events to use to open, close, change, select.
 slug: api-web-autocomplete
 relatedDocs: gs-web-autocomplete-overview

@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.Slider
-meta_title: Slider control configuration, methods and events | Kendo UI Web
+meta_title: Configuration, methods and events of Kendo UI Slider
 meta_description: Configuration of Slider UI control, different methods, and events, triggered when the slider value changes upon specific conditions.
 slug: api-web-slider
 relatedDocs: gs-web-slider-overview

@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.Grid
-meta_title: Grid widget configuration guide, methods and events
+meta_title: Configuration, methods and events of Kendo UI Grid
 meta_description: Code examples for Grid UI widget configuration, learn how to use methods and which events to set once the grid UI widget detail is initialized and expanded.
 slug: api-web-grid
 relatedDocs: gs-web-grid-overview

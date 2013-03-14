@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.Tooltip
+meta_title: Configuration, methods and events of Kendo UI Tooltip
 slug: api-web-tooltip
 relatedDocs: gs-web-tooltip-overview
 tags: api,web

@@ -1,6 +1,6 @@
 ---
 title: kendo.ui.ComboBox
-meta_title: ComboBox UI widget configuration, methods and events documentation
+meta_title: Configuration, methods and events of Kendo UI ComboBox
 meta_description: Learn to configure Kendo UI ComboBox widget, use the documentation guide to operate different types of methods and get familiar with all events, used in ComboBox UI widget.
 slug: api-web-combobox
 relatedDocs: gs-web-combobox-overview

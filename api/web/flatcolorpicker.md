@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.FlatColorPicker
+meta_title: Configuration, methods and events of Kendo UI FlatColorPicker
 slug: api-web-flatcolorpicker
 relatedDocs: gs-web-flatcolorpicker-overview
 tags: api,web

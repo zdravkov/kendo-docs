@@ -1,5 +1,6 @@
 ---
 title: kendo.ui.ColorPalette
+meta_title: Configuration, methods and events of Kendo UI ColorPalette
 slug: api-web-colorpalette
 relatedDocs: gs-web-colorpalette-overview
 tags: api,web
