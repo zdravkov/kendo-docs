@@ -1,6 +1,6 @@
 ---
 title: kendo.mobile.ui.ButtonGroup
-meta_title: Kendo UI Mobile ButtonGroup API reference
+meta_title: Configuration, methods and events of Kendo UI Mobile ButtonGroup
 meta_description: Learn how to define the initially selected button, select a button and get the currently selected button.
 slug: api-mobile-buttongroup
 relatedDocs: gs-mobile-buttongroup

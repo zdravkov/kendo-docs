@@ -1,6 +1,6 @@
 ---
 title: kendo.mobile.ui.NavBar
-meta_title: Supported methods in Mobile NavBar widget
+meta_title: Configuration, methods and events of Kendo UI Mobile NavBar
 meta_description: How to use methods in Mobile NavBar widget.
 slug: api-mobile-navbar
 relatedDocs: gs-mobile-navbar

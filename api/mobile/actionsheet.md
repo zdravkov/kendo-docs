@@ -1,6 +1,6 @@
 ---
 title: kendo.mobile.ui.ActionSheet
-meta_title: Configuration, methods and events of mobile ActionSheet widget
+meta_title: Configuration, methods and events of Kendo UI Mobile ActionSheet
 meta_description: Quickly configure mobile ActionSheet widget, close and open it using methods, find which events to use.
 slug: api-mobile-actionsheet
 relatedDocs: gs-mobile-actionsheet

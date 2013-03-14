@@ -1,6 +1,6 @@
 ---
 title: kendo.mobile.ui.View
-meta_title: Configuration of mobile view widget, supported events
+meta_title: Configuration, methods and events of Kendo UI Mobile View
 meta_description: How to configure Kendo UI mobile view widget and use events to create highly interactive mobile applications.
 slug: api-mobile-view
 relatedDocs: gs-mobile-view
