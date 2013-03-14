@@ -1,5 +1,6 @@
 ---
 title: kendo.dataviz.ui.StockChart
+meta_title: Configuration, methods and events of Kendo UI DataViz StockChart
 slug: api-dataviz-stockchart
 relatedDocs: gs-dataviz-stockchart-overview
 tags: api,dataviz

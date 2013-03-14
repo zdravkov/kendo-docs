@@ -1,6 +1,6 @@
 ---
 title: kendo.dataviz.ui.Chart
-meta_title: Chart widget configuration, methods and events | Kendo UI DataViz
+meta_title: Configuration, methods and events of Kendo UI DataViz Chart
 meta_description: Learn how to configure Kendo UI Javascript chart widget in a few easy steps, use and change methods and events.
 slug: api-dataviz-chart
 relatedDocs: gs-dataviz-chart-overview
