@@ -15,7 +15,7 @@ The Layout class inherits from the View and provides the additional functionalit
     <script>
         var view = new kendo.View("<span>Foo</span>");
 
-        var layout = new kendo.Layout("<header>Header</header><section id="content"></section><footer></footer>");
+        var layout = new kendo.Layout("<header>Header</header><section id='content'></section><footer></footer>");
 
         layout.render($("#app"));
 
@@ -35,7 +35,7 @@ When a view is rendered in a location already used for the rendering of a view, 
         var foo = new kendo.View("<span>Foo</span>", { hide: function() { console.log("Foo is hidden now"); });
         var bar = new kendo.View("<span>Bar</span>");
 
-        var layout = new kendo.Layout("<header>Header</header><section id="content"></section><footer></footer>");
+        var layout = new kendo.Layout("<header>Header</header><section id='content'></section><footer></footer>");
 
         layout.render($("#app"));
 
