@@ -80,6 +80,14 @@ Defines text for dialog shown when an already existing file is set for upload.
     <kendo:editor-imageBrowser-messages overwriteFile="overwriteFile">
     </kendo:editor-imageBrowser-messages>
 
+### search `String`
+
+Defines text for search box pleaceholder.
+
+#### Example
+    <kendo:editor-imageBrowser-messages search="search">
+    </kendo:editor-imageBrowser-messages>
+
 ### uploadFile `String`
 
 Defines text for upload button.

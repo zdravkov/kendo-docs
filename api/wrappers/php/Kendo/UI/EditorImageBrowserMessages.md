@@ -156,6 +156,24 @@ Defines text for dialog shown when an already existing file is set for upload.
     $messages->overwriteFile('value');
     ?>
 
+### search
+Defines text for search box pleaceholder.
+
+#### Returns
+`\Kendo\UI\EditorImageBrowserMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\EditorImageBrowserMessages();
+    $messages->search('value');
+    ?>
+
 ### uploadFile
 Defines text for upload button.
 
