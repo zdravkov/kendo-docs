@@ -581,6 +581,10 @@ Defines text for dialog shown when an invalid file is set for upload.
 
 Defines text for dialog shown when an already existing file is set for upload.
 
+### imageBrowser.messages.search `String`*(default: "Search")*
+
+Defines text for search box pleaceholder.
+
 ## Methods
 
 ### createRange
