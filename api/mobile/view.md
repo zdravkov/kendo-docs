@@ -52,7 +52,7 @@ Useful if the view contains an image or a map.
 
 The text to display in the navbar title (if present) and the browser title.
 
-### useNativeScroller `Boolean`*(default: false)*
+### useNativeScrolling `Boolean`*(default: false)*
 
 If set to true, the view will use the native scrolling available in the current platform. This should help with form issues on some platforms (namely Android and WP8).
 Keep in mind that some platforms do not have native one finger scrolling (iOS < 5, Android < 3).
