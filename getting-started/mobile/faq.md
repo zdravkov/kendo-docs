@@ -33,7 +33,8 @@ through the Application [platform](./application#force-ios-5-look) option.
 
 ### Q: I defined a layout for each View, but it disappears after the user navigates, why is that?
 
-A: This can happen when Kendo UI Mobile application is initialized multiple times - usually in the _Layout.cshtml page of ASP.NET MVC project. Mobile application should be initialized only once in the index page.
+A: This can happen when Kendo UI Mobile application is initialized multiple times - like for instance when the initialization occurs
+in the _Layout.cshtml page of an ASP.NET MVC project. Mobile application should be initialized only once to be able to function properly.
 
 ## iOS
 
