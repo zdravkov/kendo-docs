@@ -31,6 +31,10 @@ A: Kendo UI Mobile strives to achieve native-like styling for the different plat
 styling automatically. If you want to have the same styling on all devices, choose the one you want and force it
 through the Application [platform](./application#force-ios-5-look) option.
 
+### Q: I defined a layout for each View, but it disappears after the user navigates, why is that?
+
+A: This can happen when Kendo UI Mobile application is initialized multiple times - usually in the _Layout.cshtml page of ASP.NET MVC project. Mobile application should be initialized only once in the index page.
+
 ## iOS
 
 ### Q: My TabStrip looks different on different versions of the OS or even between iPad and iPhone, why?
