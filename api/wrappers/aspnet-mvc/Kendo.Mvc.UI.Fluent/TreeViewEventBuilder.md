@@ -387,4 +387,51 @@ The name of the JavaScript function that will handle the event.
 
 
 
+### Change(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the change client-side event
+
+#### Example
+
+    <% Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Change(
+        @<text>
+        function(e) {
+        // event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### onChangeAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+### Change(System.String)
+Defines the name of the JavaScript function that will handle the the change client-side event.
+
+#### Example
+
+    <%= Html.Kendo().TreeView()
+        .Name("TreeView")
+        .Events(events => events.Change("onChange"))
+    %>
+        
+
+
+#### Parameters
+
+##### onChangeHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+
 
