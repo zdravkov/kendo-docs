@@ -304,7 +304,7 @@ Collapses nodes.
 
 #### Parameters
 
-##### nodes `Selector`
+##### nodes `jQuery | Element | Selector`
 
 The nodes that are to be collapsed.
 
@@ -325,6 +325,10 @@ See also: [getting the node data in the select event handler](/getting-started/w
 ##### node `jQuery | Element | Selector`
 
 The element or selector that specifies a node.
+
+#### Returns
+
+`kendo.data.Node` The model of the item that was passed as a parameter.
 
 ### destroy
 Prepares the **TreeView** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
@@ -400,9 +404,9 @@ Expands nodes.
 
 #### Parameters
 
-##### nodes `Selector`
+##### nodes `jQuery | Element | Selector`
 
-The nodes that are to be expanded.
+The nodes that are to be collapsed.
 
 ### findByText
 
