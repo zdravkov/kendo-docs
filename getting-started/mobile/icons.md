@@ -6,7 +6,11 @@ publish: true
 
 # Icons in Kendo UI Mobile
 
-Kendo UI Mobile includes 33 integrated icons, which can be used directly in a Kendo UI Mobile project by specifying a data-icon attribute with one of the following icon names (supported by all Button widgets and the ListView items):
+> **Important:** Current WP8 versions do not support web fonts loaded from a local CSS when used in PhoneGap or HTML5 applications!
+Unfortunately there are no known workarounds yet. Use images for icons when targeting WP8 applications.
+
+Kendo UI Mobile includes 33 integrated font icons, which can be used directly in a Kendo UI Mobile project by specifying a data-icon attribute with one of the following icon names
+(supported by all Button widgets and the ListView items):
 
 <ul class="icon-block">
     <li><span class="km-icon km-about"></span><br/>about</li>
@@ -91,7 +95,7 @@ As of Q3 2012, Kendo UI Mobile employs an icon font for its icon rendering. To b
 
 ## Configure IIS
 
-The two mime types can be specified either through the IIS managemenet console (inetmgr) or in the site Web.config, like this:
+The two mime types can be specified either through the IIS management console (inetmgr) or in the site Web.config, like this:
 
 ### Configure IIS Web.config
 
