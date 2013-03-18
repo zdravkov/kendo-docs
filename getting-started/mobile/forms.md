@@ -21,6 +21,20 @@ Select elements are also automatically styled for each platform and will use the
 
 ## Known browser issues and possible workarounds:
 
+> **Important:** To avoid many Android and WP8 form issues, please use native scroller in all Views that require text entry! Check the example below.
+
+    <div data-role="view" data-use-native-scroller="true">
+        <form action="./index.html">
+            <ul data-role="listview" data-style="inset">
+                <li>
+                    <label>Type text
+                        <input type="text" value="Text" />
+                    </label>
+                </li>
+            </ul>
+        </form>
+    </div>
+
 *   Select element touch target in Android 2.x remains in the same place when a transformation is applied on a parent.
 Select element text can't be right-aligned in WebKit, which is needed for iOS styling.
 A work around for both is to use the Kendo DropDownList widget.

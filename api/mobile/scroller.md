@@ -48,6 +48,11 @@ Has effect only when the pullToRefresh option is set to true.
 pullOffset, indicating that pullToRefresh will occur.
 Has effect only when the pullToRefresh option is set to true.
 
+### useNative `Boolean`*(default: false)*
+
+ If set to true, the scroller will use the native scrolling available in the current platform. This should help with form issues on some platforms (namely Android and WP8).
+Keep in mind that some platforms do not have native one finger scrolling (iOS < 5, Android < 3).
+
 ## Methods
 
 ### destroy
