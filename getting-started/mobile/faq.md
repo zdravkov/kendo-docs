@@ -22,14 +22,22 @@ You can attach your handler to the Button's own click event.
 
 A: Android has severe problems with input elements, especially when mixed with CSS3 transforms (which our mobile scroller uses for faster animation).
 WP8 on the other hand switches off transforms when an input element is focused, thus stopping any scrolling and resetting the scroller to top.
-Check the [Forms](./forms) article for more information about both. To avoid these issues, refer to View's [useNativeScroller](./view#usenativescrolling-booleandefault-false)
-config option or Scroller's [useNative](./scroller.md#usenative-booleandefault-false) option.
+Check the [Forms](./forms) article for more information about both. To avoid these issues, refer to View's [useNativeScroller](../../api/mobile/view#usenativescrolling-booleandefault-false)
+config option or Scroller's [useNative](../../api/mobile/scroller.md#usenative-booleandefault-false) option.
+
+### Q: My application looks different in all platforms, why is that?
+
+A: Kendo UI Mobile strives to achieve native-like styling for the different platforms, hence the styling is completely different and tries to match the current device
+styling automatically. If you want to have the same styling on all devices, choose the one you want and force it
+through the Application [platform](./application#force-ios-5-look) option.
 
 ## iOS
 
-### Q:
+### Q: My TabStrip looks different on different versions of the OS or even between iPad and iPhone, why?
 
-A:
+A: Kendo UI Mobile tries to match the native look of several iOS platform versions and devices. Thus some widgets look slightly different on iOS 5 versus iOS 6.
+Additionally tablet and phone styling is slightly different too. If you want to have the same styling on all iOS devices, choose the one you want and force it
+through the Application [platform](./application#force-ios-5-look) option.
 
 ## Android
 
