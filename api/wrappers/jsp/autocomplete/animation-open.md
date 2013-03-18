@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:autoComplete-animation-open\>
 
-Animation to be used for opening of the popup.
+The animation played when the suggestion popup is opened.
 
 #### Example
     <kendo:autoComplete-animation>
@@ -18,7 +18,7 @@ Animation to be used for opening of the popup.
 
 ### duration `float`
 
-Difines the animation duration.
+The duration of the open animation in milliseconds.
 
 #### Example
     <kendo:autoComplete-animation-open duration="duration">
@@ -26,7 +26,7 @@ Difines the animation duration.
 
 ### effects `String`
 
-Effect to be used for opening of the popup.
+The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
 #### Example
     <kendo:autoComplete-animation-open effects="effects">

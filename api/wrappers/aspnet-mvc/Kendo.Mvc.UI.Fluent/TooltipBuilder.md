@@ -283,7 +283,7 @@ Sets the height of the tooltip.
 
 
 ### Deferred
-Suppress initialization script rendering. Note that this options should be used in conjunction with DeferredScripts
+Suppress initialization script rendering. Note that this options should be used in conjunction with M:Kendo.Mvc.UI.Fluent.WidgetFactory.DeferredScripts(System.Boolean)
 
 
 

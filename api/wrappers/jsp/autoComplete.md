@@ -12,7 +12,7 @@ A JSP tag representing Kendo AutoComplete.
 
 ### dataTextField `String`
 
-Sets the field of the data item that provides the text content of the list items.
+The field of the data item used when searching for suggestions.
 
 #### Example
     <kendo:autoComplete dataTextField="dataTextField">
@@ -20,7 +20,7 @@ Sets the field of the data item that provides the text content of the list items
 
 ### delay `float`
 
-Specifies the delay in ms after which the AutoComplete will start filtering the dataSource.
+The delay in milliseconds between a keystroke and when the widget displays the suggestion popup.
 
 #### Example
     <kendo:autoComplete delay="delay">
@@ -28,7 +28,7 @@ Specifies the delay in ms after which the AutoComplete will start filtering the 
 
 ### enable `boolean`
 
-Controls whether the AutoComplete should be initially enabled.
+If set to false the widget will be disabled and will not allow user input. The widget is enabled by default and allows user input.
 
 #### Example
     <kendo:autoComplete enable="enable">
@@ -36,7 +36,8 @@ Controls whether the AutoComplete should be initially enabled.
 
 ### filter `String`
 
-Defines the type of filtration. This value is handled by the remote data source.
+The filtering method used to determine the suggestions for the current value. The default filter is "startswith" -
+all data items which begin with the current widget value are displayed in the suggestion popup. The supported filter values are startswith, endswith and contains.
 
 #### Example
     <kendo:autoComplete filter="filter">
@@ -44,7 +45,7 @@ Defines the type of filtration. This value is handled by the remote data source.
 
 ### height `float`
 
-Sets the height of the drop-down list in pixels.
+The height of the suggestion popup in pixels. The default value is 200 pixels.
 
 #### Example
     <kendo:autoComplete height="height">
@@ -52,7 +53,7 @@ Sets the height of the drop-down list in pixels.
 
 ### highlightFirst `boolean`
 
-Controls whether the first item will be automatically highlighted.
+If set to true the first suggestion will be automatically highlighted.
 
 #### Example
     <kendo:autoComplete highlightFirst="highlightFirst">
@@ -60,7 +61,7 @@ Controls whether the first item will be automatically highlighted.
 
 ### ignoreCase `boolean`
 
-Defines whether the filtration should be case sensitive.
+If set to false case-sensitive search will be performed to find suggestions. The widget performs case-insensitive searching by default.
 
 #### Example
     <kendo:autoComplete ignoreCase="ignoreCase">
@@ -68,8 +69,7 @@ Defines whether the filtration should be case sensitive.
 
 ### minLength `float`
 
-Specifies the minimum number of characters that should be typed before the AutoComplete queries
-the dataSource.
+The minimum number of characters the user must type before a search is performed. Set to higher value than 1 if the search could match a lot of items.
 
 #### Example
     <kendo:autoComplete minLength="minLength">
@@ -77,7 +77,7 @@ the dataSource.
 
 ### placeholder `String`
 
-A string that appears in the textbox when it has no value.
+The hint displayed by the widget when it is empty. Not set by default.
 
 #### Example
     <kendo:autoComplete placeholder="placeholder">
@@ -85,7 +85,7 @@ A string that appears in the textbox when it has no value.
 
 ### separator `String`
 
-Sets the separator for completion. Empty by default, allowing for only one completion.
+The character used to separate multiple values. Empty by default.
 
 #### Example
     <kendo:autoComplete separator="separator">
@@ -93,7 +93,7 @@ Sets the separator for completion. Empty by default, allowing for only one compl
 
 ### suggest `boolean`
 
-Controls whether the AutoComplete should automatically auto-type the rest of text.
+If set to true the widget will automatically use the first suggestion as its value.
 
 #### Example
     <kendo:autoComplete suggest="suggest">
@@ -101,7 +101,7 @@ Controls whether the AutoComplete should automatically auto-type the rest of tex
 
 ### template `String`
 
-Template to be used for rendering the items in the list.
+The template used to render the suggestions. By default the widget displays only the text of the suggestion (configured via dataTextField).
 
 #### Example
     <kendo:autoComplete template="template">
@@ -112,7 +112,8 @@ Template to be used for rendering the items in the list.
 
 ### kendo:autoComplete-animation
 
-Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+Configures the opening and closing animations of the suggestion popup. Setting the animation option to false will disable the opening and closing animations. As a result the
+suggestion popup will open and close instantly.
 
 More documentation is available at [kendo:autoComplete-animation](autocomplete/animation).
 
@@ -127,7 +128,7 @@ More documentation is available at [kendo:autoComplete-animation](autocomplete/a
 
 ### change `String`
 
-Fires when the value has been changed.
+Fired when the value of the widget is changed by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete change="handle_change">
@@ -140,7 +141,7 @@ Fires when the value has been changed.
 
 ### close `String`
 
-Fires when the drop-down list is closed
+Fired when the suggestion popup of the widget is closed by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete close="handle_close">
@@ -153,7 +154,7 @@ Fires when the drop-down list is closed
 
 ### dataBound `String`
 
-Fires when the AutoComplete has received data from the data source.
+Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete dataBound="handle_dataBound">
@@ -166,7 +167,7 @@ Fires when the AutoComplete has received data from the data source.
 
 ### open `String`
 
-Fires when the drop-down list is opened
+Fired when the suggestion popup of the widget is opened by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete open="handle_open">
@@ -179,7 +180,7 @@ Fires when the drop-down list is opened
 
 ### select `String`
 
-Triggered when a Li element is selected.
+Fired when an item from the suggestion popup is selected by the user.
 
 #### Example
     <kendo:autoComplete select="handle_select">
@@ -194,7 +195,7 @@ Triggered when a Li element is selected.
 
 ### kendo:autoComplete-change
 
-Fires when the value has been changed.
+Fired when the value of the widget is changed by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete>
@@ -209,7 +210,7 @@ Fires when the value has been changed.
 
 ### kendo:autoComplete-close
 
-Fires when the drop-down list is closed
+Fired when the suggestion popup of the widget is closed by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete>
@@ -224,7 +225,7 @@ Fires when the drop-down list is closed
 
 ### kendo:autoComplete-dataBound
 
-Fires when the AutoComplete has received data from the data source.
+Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete>
@@ -239,7 +240,7 @@ Fires when the AutoComplete has received data from the data source.
 
 ### kendo:autoComplete-open
 
-Fires when the drop-down list is opened
+Fired when the suggestion popup of the widget is opened by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:autoComplete>
@@ -254,7 +255,7 @@ Fires when the drop-down list is opened
 
 ### kendo:autoComplete-select
 
-Triggered when a Li element is selected.
+Fired when an item from the suggestion popup is selected by the user.
 
 #### Example
     <kendo:autoComplete>

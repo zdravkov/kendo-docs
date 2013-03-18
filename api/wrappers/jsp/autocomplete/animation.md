@@ -7,7 +7,8 @@ publish: true
 
 # \<kendo:autoComplete-animation\>
 
-Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+Configures the opening and closing animations of the suggestion popup. Setting the animation option to false will disable the opening and closing animations. As a result the
+suggestion popup will open and close instantly.
 
 #### Example
     <kendo:autoComplete>
@@ -21,7 +22,7 @@ Animations to be used for opening/closing the popup. Setting to false will turn 
 
 ### kendo:autoComplete-animation-close
 
-Animation to be used for closing of the popup.
+The animation played when the suggestion popup is closed.
 
 More documentation is available at [kendo:autoComplete-animation-close](autocomplete/animation-close).
 
@@ -33,7 +34,7 @@ More documentation is available at [kendo:autoComplete-animation-close](autocomp
 
 ### kendo:autoComplete-animation-open
 
-Animation to be used for opening of the popup.
+The animation played when the suggestion popup is opened.
 
 More documentation is available at [kendo:autoComplete-animation-open](autocomplete/animation-open).
 

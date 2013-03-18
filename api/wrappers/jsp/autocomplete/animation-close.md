@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:autoComplete-animation-close\>
 
-Animation to be used for closing of the popup.
+The animation played when the suggestion popup is closed.
 
 #### Example
     <kendo:autoComplete-animation>
@@ -18,7 +18,7 @@ Animation to be used for closing of the popup.
 
 ### duration `float`
 
-Difines the animation duration.
+The duration of the close animation in milliseconds.
 
 #### Example
     <kendo:autoComplete-animation-close duration="duration">
@@ -26,7 +26,7 @@ Difines the animation duration.
 
 ### effects `String`
 
-Effect to be used for closing of the popup.
+The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
 
 #### Example
     <kendo:autoComplete-animation-close effects="effects">

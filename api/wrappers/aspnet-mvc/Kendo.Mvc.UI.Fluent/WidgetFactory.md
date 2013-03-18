@@ -779,8 +779,14 @@ Creates a new unbound Sparkline.
 
 
 
-### DeferredScripts
+### DeferredScripts(System.Boolean)
 Returns the initialization scripts for widgets set as deferred
+
+
+#### Parameters
+
+##### renderScriptTags `System.Boolean`
+Determines if the script should be rendered within a script tag
 
 
 
