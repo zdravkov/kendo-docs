@@ -22,7 +22,8 @@ You can attach your handler to the Button's own click event.
 
 A: Android has severe problems with input elements, especially when mixed with CSS3 transforms (which our mobile scroller uses for faster animation).
 WP8 on the other hand switches off transforms when an input element is focused, thus stopping any scrolling and resetting the scroller to top.
-Check the [Forms](./forms) article for more information about both. To avoid these issues, refer to View's useNativeScroller config option or Scroller's useNative option.
+Check the [Forms](./forms) article for more information about both. To avoid these issues, refer to View's [useNativeScroller](./view#usenativescrolling-booleandefault-false)
+config option or Scroller's [useNative](./scroller.md#usenative-booleandefault-false) option.
 
 ## iOS
 
@@ -32,7 +33,15 @@ A:
 
 ## Android
 
+### Q: I have WebKit mask icons in my application and in some places Android renders them as colored squares?
+
+A: WebKit mask icons break in Android when mixed with CSS3 transforms which our Scroller uses and the TabStrip.
+
 ## BlackBerry
+
+### Q: I have webkit mask icons in my application and they are rendered as squares in BlackBerry OS 7.0?
+
+A: WebKit masks are completely broken in BlackBerry OS 7.0. Either use font icons or normal images.
 
 ## Windows Phone 8
 
