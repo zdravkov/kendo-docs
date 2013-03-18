@@ -331,7 +331,7 @@ Fires when the user stops zooming the chart.
 
 ### selectStart `String`
 
-Fires when the user start to dragging the drag handle.
+Fires when the user starts modifying the axis selection.The range units are:
 
 #### Example
     <kendo:chart selectStart="handle_selectStart">
@@ -344,7 +344,7 @@ Fires when the user start to dragging the drag handle.
 
 ### select `String`
 
-Fires when the user drags the drag handle to a new position.
+Fires when the user modifies the selection.The range units are:
 
 #### Example
     <kendo:chart select="handle_select">
@@ -357,7 +357,7 @@ Fires when the user drags the drag handle to a new position.
 
 ### selectEnd `String`
 
-Fires when the user stops dragging the drag handle.
+Fires when the user completes modifying the selection.
 
 #### Example
     <kendo:chart selectEnd="handle_selectEnd">
@@ -538,7 +538,7 @@ Fires when the user stops zooming the chart.
 
 ### kendo:chart-selectStart
 
-Fires when the user start to dragging the drag handle.
+Fires when the user starts modifying the axis selection.The range units are:
 
 #### Example
     <kendo:chart>
@@ -553,7 +553,7 @@ Fires when the user start to dragging the drag handle.
 
 ### kendo:chart-select
 
-Fires when the user drags the drag handle to a new position.
+Fires when the user modifies the selection.The range units are:
 
 #### Example
     <kendo:chart>
@@ -568,7 +568,7 @@ Fires when the user drags the drag handle to a new position.
 
 ### kendo:chart-selectEnd
 
-Fires when the user stops dragging the drag handle.
+Fires when the user completes modifying the selection.
 
 #### Example
     <kendo:chart>

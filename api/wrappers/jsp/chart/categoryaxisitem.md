@@ -280,6 +280,18 @@ More documentation is available at [kendo:chart-categoryAxisItem-plotBands](char
         <kendo:chart-categoryAxisItem-plotBands></kendo:chart-categoryAxisItem-plotBands>
     </kendo:chart-categoryAxisItem>
 
+### kendo:chart-categoryAxisItem-select
+
+The selected axis range. If configured, axis selection will be enabled.** Available only for vertical axes **The range units are:
+
+More documentation is available at [kendo:chart-categoryAxisItem-select](chart/categoryaxisitem-select).
+
+#### Example
+
+    <kendo:chart-categoryAxisItem>
+        <kendo:chart-categoryAxisItem-select></kendo:chart-categoryAxisItem-select>
+    </kendo:chart-categoryAxisItem>
+
 ### kendo:chart-categoryAxisItem-title
 
 The title of the category axis.
