@@ -39,7 +39,8 @@ linked with navigational widgets (Buttons, TabStrip, etc.).
 Each **immediate** child of the application element (`<body>` by default) with `data-role="view"`
 is considered a mobile view.
 
-When a mobile View is initialized (the first time the user visits it), it initializes all Mobile, Web, and DataViz Kendo widgets it contains. Please refer to the [Data Attribute Initialization section](/getting-started/data-attribute-initialization) for more details regarding declarative widget initialization.
+When a mobile View is initialized (the first time the user visits it), it initializes all Mobile, Web, and DataViz Kendo widgets it contains.
+Please refer to the [Data Attribute Initialization section](/getting-started/data-attribute-initialization) for more details regarding declarative widget initialization.
 
 ### Mobile View with Mobile Button widget
 
@@ -271,3 +272,12 @@ This allows fine-grained tuning of the application look and behavior. A sample o
             }
         });
     </script>
+
+## Stop link highlighting in Windows Phone 8
+
+By default Windows Phone 8 highlights all links when they are active (hold down). Stopping this behaviour requires manually adding a meta tag to your application/site -
+adding the tag through Javascript is ignored:
+
+### Stop link highlighting in WP8
+
+    <meta name="msapplication-tap-highlight" content="no" />
