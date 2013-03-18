@@ -45,11 +45,22 @@ through the Application [platform](./application#force-ios-5-look) option.
 
 A: WebKit mask icons break in Android when mixed with CSS3 transforms which our Scroller uses and the TabStrip.
 
+### Q: I have an Android 4.0 device and Kendo UI Mobile View transitions while very smooth seem to start much slower than on Android 2.x
+
+A: The rendering hardware acceleration that Android 4.0 has does indeed perform much better than Android 2.x for View transitions, but the preparation of the hardware accelerated
+layer that runs the animation takes considerable time. Your application will actually be much more responsive if you disable the hardware acceleration from the manifest file.
+Check the [Performance](./performance) article for more information about that.
+
 ## BlackBerry
 
 ### Q: I have webkit mask icons in my application and they are rendered as squares in BlackBerry OS 7.0?
 
 A: WebKit masks are completely broken in BlackBerry OS 7.0. Either use font icons or normal images.
+
+### Q: My trackball doesn't seem to work properly, how should I scroll?
+
+A: Kendo UI Mobile supports only touchscreen BlackBerry devices. The trackball/pad that can be found on the older phone models fires mouse events (which are handled), but
+doesn't support content dragging. This limitation is listed in Kendo UI Mobile requirements.
 
 ## Windows Phone 8
 
