@@ -55,7 +55,7 @@ Check the [Performance](./performance) article for more information about that.
 
 ### Q: I have webkit mask icons in my application and they are rendered as squares in BlackBerry OS 7.0?
 
-A: WebKit masks are completely broken in BlackBerry OS 7.0. Either use font icons or normal images.
+A: WebKit masks are completely broken in BlackBerry OS 7.0, though they work fine in 6.x and 7.1. Either use font icons or normal images.
 
 ### Q: My trackball doesn't seem to work properly, how should I scroll?
 
