@@ -60,7 +60,7 @@ included that list here as well.
   * [Attr](http://docs.kendoui.com/getting-started/framework/mvvm/bindings/attr)
 
   * [Checked](http://docs.kendoui.com/getting-started/framework/mvvm/bindings/checked)
-  
+
   * [Click](http://docs.kendoui.com/getting-started/framework/mvvm/bindings/click)
 
   * [Disabled](http://docs.kendoui.com/getting-started/framework/mvvm/bindings/disabled)
@@ -168,7 +168,7 @@ need to mitigate collisions with Kendo UI and some other JS library, you can
 provide a namespace for Kendo UI and then reference that namespace instead.
 
 
-    kendo.ns="kendo";
+    kendo.ns="kendo-";
 
     // then
     data-bind="value: someValue"
