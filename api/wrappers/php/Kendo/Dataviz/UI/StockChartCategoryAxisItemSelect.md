@@ -25,9 +25,9 @@ The lower boundary of the selected range.
 
 
 ### max
-The maximum value that is selectable by the user.Note: The specified index (date) is not included in the selected range
+The maximum value that is selectable by the user.Note: The category with the specified index (date) is not included in the selected range
 unless the axis is justified. In order to select all categories specify
-a value larger than the last index (date).
+a value larger than the last category index (date).
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartCategoryAxisItemSelect`
@@ -80,9 +80,9 @@ Mousewheel zoom settings for the selection.
     ?>
 
 ### to
-The upper boundary of the selected range.Note: The specified index (date) is not included in the selected range
+The upper boundary of the selected range.Note: The category with the specified index (date) is not included in the selected range
 unless the axis is justified. In order to select all categories specify
-a value larger than the last index (date).
+a value larger than the last category index (date).
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartCategoryAxisItemSelect`
