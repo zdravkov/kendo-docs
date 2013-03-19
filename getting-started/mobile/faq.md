@@ -27,7 +27,7 @@ You can attach your handler to the Button's own click event.
 A: Android has severe problems with input elements, especially when mixed with CSS3 transforms (which our mobile scroller uses for faster animation).
 WP8 on the other hand switches off transforms when an input element is focused, thus stopping any scrolling and resetting the scroller to top.
 Check the [Forms](./forms) article for more information about both. To avoid these issues, refer to View's [useNativeScroller](../../api/mobile/view#usenativescrolling-booleandefault-false)
-config option or Scroller's [useNative](../../api/mobile/scroller.md#usenative-booleandefault-false) option.
+config option or Scroller's [useNative](../../api/mobile/scroller.md#usenative-booleandefault-false) option (available since Q1 2013).
 
 ### Q: My application looks different in all platforms, why is that?
 
@@ -59,6 +59,13 @@ A: WebKit mask icons break in Android when mixed with CSS3 transforms which our 
 A: The rendering hardware acceleration that Android 4.0 has does indeed perform much better than Android 2.x for View transitions, but the preparation of the hardware accelerated
 layer that runs the animation takes considerable time. Your application will actually be much more responsive if you disable the hardware acceleration from the manifest file.
 Check the [Performance](./performance) article for more information about that.
+
+### Q: I have some inputs with type date and time. When I test on Jelly Bean, I can see date/time pickers in the browser, but they don't work in PhoneGap, why so?
+
+A: By default Kendo UI Mobile doesn't have integrated date/time pickers as many platforms already support them, excluding iOS 4.x, all Android versions and now WP8.
+
+The default browser on Nexus 7 is Chrome which supports native HTML5 date/time pickers. However PhoneGap still uses the old WebKit found on previous Android devices that
+doesn't support native pickers. To work around that you can use input validation or an external picker library.
 
 ## BlackBerry
 
