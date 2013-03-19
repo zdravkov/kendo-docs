@@ -12,6 +12,8 @@ publish: true
 
 Represents the Kendo UI AutoComplete widget. Inherits from [Widget](/api/framework/widget).
 
+> **Important:** The Kendo UI AutoComplete should be created from an *input* HTML element.
+
 ## Configuration
 
 ### animation `Object`
@@ -101,7 +103,7 @@ The effect(s) to use when playing the open animation. Multiple effects should be
 
 The duration of the open animation in milliseconds.
 
-### dataSource `Object | Array | [kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource)`
+### dataSource `Object | Array | kendo.data.DataSource`
 
 The data source of the widget which is used to display suggestions for the current value. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
@@ -131,7 +133,7 @@ If the `dataSource` option is an existing `[kendo.data.DataSource](http://docs.k
     });
     </script>
 
-#### Example - set dataSource as an existing [kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource) instance
+#### Example - set dataSource as an existing kendo.data.DataSource instance
 
     <input id="autocomplete" />
     <script>
@@ -307,7 +309,7 @@ If set to `true` the widget will automatically use the first suggestion as its v
 
 The [template](http://docs.kendoui.com/api/framework/kendo#methods-template) used to render the suggestions. By default the widget displays only the text of the suggestion (configured via `dataTextField`).
 
-#### Example - specify [template](http://docs.kendoui.com/api/framework/kendo#methods-template) as a function
+#### Example - specify template as a function
 
     <input id="autocomplete" />
     <script id="template" type="text/x-kendo-template">
@@ -324,7 +326,7 @@ The [template](http://docs.kendoui.com/api/framework/kendo#methods-template) use
     });
     </script>
 
-#### Example - specify [template](http://docs.kendoui.com/api/framework/kendo#methods-template) as a string
+#### Example - specify template as a string
 
     <input id="autocomplete" />
     <script>
@@ -524,7 +526,7 @@ Sets the data source of the widget.
 
 #### Parameters
 
-##### dataSource `[kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource)`
+##### dataSource `kendo.data.DataSource`
 
 #### Example
 
@@ -625,7 +627,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
+##### e.sender `kendo.ui.AutoComplete`
 
 The widget instance which fired the event.
 
@@ -660,7 +662,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
+##### e.sender `kendo.ui.AutoComplete`
 
 The widget instance which fired the event.
 
@@ -697,7 +699,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
+##### e.sender `kendo.ui.AutoComplete`
 
 The widget instance which fired the event.
 
@@ -732,7 +734,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
+##### e.sender `kendo.ui.AutoComplete`
 
 The widget instance which fired the event.
 
@@ -773,6 +775,6 @@ Fired when an item from the suggestion popup is selected by the user.
 
 The jQuery object which represents the selected item.
 
-##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
+##### e.sender `kendo.ui.AutoComplete`
 
 The widget instance which fired the event.
