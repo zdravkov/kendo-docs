@@ -14,73 +14,96 @@ Represents the Kendo UI Grid widget. Inherits from [Widget](/api/framework/widge
 
 ## Configuration
 
-### altRowTemplate `Function`
+### altRowTemplate `String|Function`
 
-Template to be used for rendering the alternate rows in the grid.
+The template used to render alternating rows. Be default renders a table row (`<tr>`) for every data source item.
 
-#### Example
+> **Important:** The outermost HTML element in the template must be a table row (`<tr>`). That table row must have the `uid` data attribute set to `#= uid #`. The grid uses the `uid` data attribute to determine the data to which a table row is bound to.
 
-    //template
-    <script id="altRowTemplate" type="text/x-kendo-tmpl">
-        <tr class="k-alt">
-            <td>
-                <img src="${ BoxArt.SmallUrl }" alt="${ Name }" />
-            </td>
-            <td>
-                ${ Name }
-            </td>
-            <td>
-                ${ AverageRating }
+> **Info:** Set the `class` of the table row to `k-alt` to get the default alternating look and feel.
+
+#### Example - specify alternating template as a function
+
+    <div id="grid"></div>
+    <script id="alt-template" type="text/x-kendo-template">
+        <tr data-uid="#= uid #">
+            <td colspan="2">
+                <strong>#: name #</strong>
+                <strong>#: age #</strong>
             </td>
         </tr>
     </script>
-
-    //grid intialization
-    <script>PO details informaiton
-        $("#grid").kendoGrid({
-            dataSource: dataSource,
-            altRowTemplate: kendo.template($("#altRowTemplate").html()),
-            height: 200
-        });
+    <script>
+    $("#grid").kendoGrid({
+        dataSource: [ { name: "Jane Doe", age: 30 }, { name: "John Doe", age: 33 } ],
+        altRowTemplate: kendo.template($("#alt-template").html())
+    });
     </script>
 
-### autoBind `Boolean`*(default: true)*
+#### Example - specify alternating template as a string
 
- Indicates whether the grid will call read on the DataSource initially.
-
-#### Example
-
+    <div id="grid"></div>
+    <script>
     $("#grid").kendoGrid({
-         dataSource: sharedDataSource,
-         columns: [
-             {
-                 field: "Name"
-             },
-             {
-                 field: "BirthDate",
-                 title: "Birth Date",
-                 template: '#= kendo.toString(BirthDate,"dd MMMM yyyy") #'
-            }
-         ],
-         autoBind: false // the grid will not be populated with data until read() is called on the sharedDataSource
-     });
+        dataSource: [ { name: "Jane Doe", age: 30 }, { name: "John Doe", age: 33 } ],
+        altRowTemplate: '<tr data-uid="#= uid #"><td colspan="2"><strong>#: name #</strong><strong>#: age #</strong></td></tr>'
+    });
+    </script>
+
+### autoBind `Boolean` *(default: true)*
+
+If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
+data source is fired.
+
+By default this option is set to `true` which means that the widget will bind to the data source specified in the configuration.
+
+> **Info:** Setting the `autoBind` option to `false` is useful in scenarios where multiple widgets are bound to the same data source. Disabling automatic binding would ensure that the shared data source doesn't make more than one request to the remote service.
+
+#### Example - disable automatic binding
+
+    <div id="grid"></div>
+    <script>
+    var dataSource = new kendo.data.DataSource({
+        data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+    });
+    $("#grid").kendoGrid({
+        autoBind: false,
+        dataSource: dataSource
+    });
+    dataSource.read(); // "read()" will fire the "change" event of the dataSource and the widget will be bound
+    </script>
 
 ### columns `Array`
 
-A collection of column objects or collection of strings that represents the name of the fields.
+The configuration of the grid columns. Set to array of JavaScript objects or strings. A JavaScript object is interpreted as column configuration. A string is interpreted as the field to which the column is bound to. The grid will create a column for every item of the array.
 
-#### Example
+> If this setting is **not** specified the grid will create a column for every field of the data item.
 
-    var sharedDataSource = new kendo.data.DataSource({
-         data: [{title: "Star Wars: A New Hope", year: 1977}, {title: "Star Wars: The Empire Strikes Back", year: 1980}],
-         pageSize: 1
-    });
+#### Example - specify grid columns as array of strings
+
+    <div id="grid"></div>
+    <script>
     $("#grid").kendoGrid({
-        dataSource: sharedDataSource,
-        columns: [ { title: "Action", command: "destroy" }, // creates a column with delete buttons
-                   { title: "Title", field: "title", width: 200, template: "<div id='title'>${ title }</div>" },
-                   { title: "Year", field: "year", filterable: false, sortable: true, format: "{0:dd/MMMM/yyyy}" } ]
+      columns: ["name", "age"], // create two columns: bound to "name" and "age"
+      dataSource: [ { name: "Jane", age: 30 }, { name:"John", age: 33 }]
     });
+    </script>
+
+#### Example - specify grid columns as array of objects
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [{
+          field: "name",// create a column bound to the "name" field
+          title: "Name" // set its title to "Name"
+      }, {
+          field: "age",// create a column bound to the "age" field
+          title: "Age" // set its title to "Age"
+      }],
+      dataSource: [ { name: "Jane", age: 30 }, { name:"John", age: 33 }]
+    });
+    </script>
 
 ### columns.attributes `Object`
 
