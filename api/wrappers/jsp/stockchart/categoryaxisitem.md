@@ -280,6 +280,18 @@ More documentation is available at [kendo:stockChart-categoryAxisItem-plotBands]
         <kendo:stockChart-categoryAxisItem-plotBands></kendo:stockChart-categoryAxisItem-plotBands>
     </kendo:stockChart-categoryAxisItem>
 
+### kendo:stockChart-categoryAxisItem-select
+
+The selected axis range. If configured, axis selection will be enabled.** Available only for vertical axes **The range units are:
+
+More documentation is available at [kendo:stockChart-categoryAxisItem-select](stockchart/categoryaxisitem-select).
+
+#### Example
+
+    <kendo:stockChart-categoryAxisItem>
+        <kendo:stockChart-categoryAxisItem-select></kendo:stockChart-categoryAxisItem-select>
+    </kendo:stockChart-categoryAxisItem>
+
 ### kendo:stockChart-categoryAxisItem-title
 
 The title of the category axis.

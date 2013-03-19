@@ -1283,6 +1283,44 @@ The opacity of the plot band.
 Reverses the axis direction -
 categories are listed from right to left and from top to bottom.
 
+### categoryAxis.select `Object`
+
+The selected axis range. If configured, axis selection will be enabled.
+
+** Available only for vertical axes **
+
+The range units are:
+
+#### *Generic axis*
+Category index (0-based)
+
+#### *Date axis*
+Date instance or date string (yyyy/MM/dd HH:mm:ss)
+
+### categoryAxis.select.from `Object`
+
+The lower boundary of the selected range.
+
+### categoryAxis.select.to `Object`
+
+The upper boundary of the selected range.
+
+*Note*: The specified index (date) is not included in the selected range
+unless the axis is justified. In order to select all categories specify
+a value larger than the last index (date).
+
+### categoryAxis.select.min `Object`
+
+The minimum value that is selectable by the user.
+
+### categoryAxis.select.max `Object`
+
+The maximum value that is selectable by the user.
+
+*Note*: The specified index (date) is not included in the selected range
+unless the axis is justified. In order to select all categories specify
+a value larger than the last index (date).
+
 ### categoryAxis.title `Object`
 
 The title of the category axis.
@@ -5848,7 +5886,15 @@ The original user event that triggered the zoom action.
 
 ### selectStart
 
-Fires when the user start to dragging the drag handle.
+Fires when the user starts modifying the axis selection.
+
+The range units are:
+
+#### *Generic axis*
+Category index (0-based)
+
+#### *Date axis*
+Date instance
 
 #### Event Data
 
@@ -5857,10 +5903,23 @@ Fires when the user start to dragging the drag handle.
 The lower boundary of the selected range.
 
 ##### e.to `Object`
+
+The upper boundary of the selected range.
+
+*Note*: The last selected category is at index [to - 1] unless
+the axis is justified. In this case it is at index [to].
 
 ### select
 
-Fires when the user drags the drag handle to a new position.
+Fires when the user modifies the selection.
+
+The range units are:
+
+#### *Generic axis*
+Category index (0-based)
+
+#### *Date axis*
+Date instance
 
 #### Event Data
 
@@ -5872,20 +5931,18 @@ The lower boundary of the selected range.
 
 The upper boundary of the selected range.
 
-#### Example
-
-    $("#chart").kendoChart({
-        select: onSelect
-        ...
-    }
-
-    function onSelect(e) {
-        ...
-    }
+*Note*: The last selected category is at index [to - 1] unless
+the axis is justified. In this case it is at index [to].
 
 ### selectEnd
 
-Fires when the user stops dragging the drag handle.
+Fires when the user completes modifying the selection.
+
+#### *Generic axis*
+Category index (0-based)
+
+#### *Date axis*
+Date instance
 
 #### Event Data
 
@@ -5896,3 +5953,7 @@ The lower boundary of the selected range.
 ##### e.to `Object`
 
 The upper boundary of the selected range.
+
+*Note*: The last selected category is at index [to - 1] unless
+the axis is justified. In this case it is at index [to].
+
