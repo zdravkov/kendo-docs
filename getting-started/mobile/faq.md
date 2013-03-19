@@ -13,6 +13,10 @@ This is a collection of frequently asked questions about how Kendo UI Mobile wor
 
 ## All platforms
 
+### Q: My icons are missing, replaced with strange symbols and my iOS back button doesn't look okay. What am I missing?
+
+A: Kendo UI Mobile stylesheets need the **images** subfolder to load the icon font and the back button mask. Please copy them over with your stylesheet(s).
+
 ### Q: I have a button with an onclick event attached, but the event doesn't fire every time?
 
 A: Due to issues with simultaneous handling of mouse and touch events on hybrid devices, Kendo UI Mobile has strict requirements for events.
