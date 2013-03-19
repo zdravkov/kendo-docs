@@ -190,6 +190,24 @@ The interval between minor divisions.
     $scale->minorUnit(1);
     ?>
 
+### rangePlaceholderColor
+The default color for the ranges.
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGaugeScale`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $scale = new \Kendo\Dataviz\UI\RadialGaugeScale();
+    $scale->rangePlaceholderColor('value');
+    ?>
+
 ### addRange
 
 Adds one or more RadialGaugeScaleRange to the RadialGaugeScale.

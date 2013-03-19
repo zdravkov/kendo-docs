@@ -219,6 +219,24 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
     $scale->mirror(true);
     ?>
 
+### rangePlaceholderColor
+The default color for the ranges.
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGaugeScale`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $scale = new \Kendo\Dataviz\UI\LinearGaugeScale();
+    $scale->rangePlaceholderColor('value');
+    ?>
+
 ### addRange
 
 Adds one or more LinearGaugeScaleRange to the LinearGaugeScale.

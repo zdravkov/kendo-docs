@@ -951,7 +951,7 @@ A boolean value indicating whether to show the point category name in the legend
     ?>
 
 ### width
-The line width.** Available for area, line and scatterLine series **
+The line width.** Available for line and scatterLine series **
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`

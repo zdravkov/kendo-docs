@@ -706,7 +706,7 @@ The type of the series. Available types:
     ?>
 
 ### width
-The line width.** Available for area and line series **
+The line width.** Available for line series **
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItem`

@@ -57,6 +57,14 @@ The interval between minor divisions.
     <kendo:radialGauge-scale minorUnit="minorUnit">
     </kendo:radialGauge-scale>
 
+### rangePlaceholderColor `String`
+
+The default color for the ranges.
+
+#### Example
+    <kendo:radialGauge-scale rangePlaceholderColor="rangePlaceholderColor">
+    </kendo:radialGauge-scale>
+
 ### reverse `boolean`
 
 Reverses the scale direction - values are increase anticlockwise.

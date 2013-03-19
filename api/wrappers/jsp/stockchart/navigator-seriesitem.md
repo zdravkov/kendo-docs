@@ -196,7 +196,7 @@ The type of the series. Available types:
 
 ### width `float`
 
-The line width.** Applicable for area and line series. **
+The line width.** Applicable for line series. **
 
 #### Example
     <kendo:stockChart-navigator-seriesItem width="width">

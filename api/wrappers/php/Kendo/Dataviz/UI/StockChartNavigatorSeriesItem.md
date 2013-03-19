@@ -611,7 +611,7 @@ The type of the series. Available types:
     ?>
 
 ### width
-The line width.** Applicable for area and line series. **
+The line width.** Applicable for line series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartNavigatorSeriesItem`

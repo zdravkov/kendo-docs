@@ -310,7 +310,7 @@ A boolean value indicating whether to show the point category name in the legend
 
 ### width `float`
 
-The line width.** Available for area, line and scatterLine series **
+The line width.** Available for line and scatterLine series **
 
 #### Example
     <kendo:chart-seriesItem width="width">

@@ -57,6 +57,14 @@ If the labels are normally on the left side of the scale, mirroring the scale wi
     <kendo:linearGauge-scale mirror="mirror">
     </kendo:linearGauge-scale>
 
+### rangePlaceholderColor `String`
+
+The default color for the ranges.
+
+#### Example
+    <kendo:linearGauge-scale rangePlaceholderColor="rangePlaceholderColor">
+    </kendo:linearGauge-scale>
+
 ### reverse `boolean`
 
 Reverses the axis direction - values increase from right to left and from top to bottom.
