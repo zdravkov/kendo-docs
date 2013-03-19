@@ -52,3 +52,18 @@ a value larger than the last index (date).
     <kendo:chart-categoryAxisItem-select to="to">
     </kendo:chart-categoryAxisItem-select>
 
+
+##  Configuration JSP Tags
+
+### kendo:chart-categoryAxisItem-select-mousewheel
+
+Mousewheel zoom settings for the selection.
+
+More documentation is available at [kendo:chart-categoryAxisItem-select-mousewheel](chart/categoryaxisitem-select-mousewheel).
+
+#### Example
+
+    <kendo:chart-categoryAxisItem-select>
+        <kendo:chart-categoryAxisItem-select-mousewheel></kendo:chart-categoryAxisItem-select-mousewheel>
+    </kendo:chart-categoryAxisItem-select>
+
