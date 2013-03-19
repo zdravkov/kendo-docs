@@ -347,6 +347,10 @@ The opacity of the range.
 The color of the range.
 Any valid CSS color string will work here, including hex and rgb.
 
+### scale.rangePlaceholderColor `String`
+
+The default color for the ranges.
+
 ### scale.reverse `Boolean`*(default: false)*
 
 Reverses the scale direction - values are increase anticlockwise.

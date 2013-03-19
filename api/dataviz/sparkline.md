@@ -1621,7 +1621,7 @@ Template variables:
 
 The line width.
 
-** Available for area and line series **
+** Available for line series **
 
 ### series.target `Object`
 

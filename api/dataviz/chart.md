@@ -2366,7 +2366,7 @@ A boolean value indicating whether to show the point category name in the legend
 
 The line width.
 
-** Available for area, line and scatterLine series **
+** Available for line and scatterLine series **
 
 ### series.xAxis `String`*(default: primary)*
 

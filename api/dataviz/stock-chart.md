@@ -781,7 +781,7 @@ A value indicating if the tooltip should be displayed.
 
 The line width.
 
-** Applicable for area and line series. **
+** Applicable for line series. **
 
 ### navigator.select `Object`
 
