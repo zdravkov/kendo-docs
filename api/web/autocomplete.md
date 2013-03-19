@@ -16,8 +16,7 @@ Represents the Kendo UI AutoComplete widget. Inherits from [Widget](/api/framewo
 
 ### animation `Object`
 
-Configures the opening and closing animations of the suggestion popup. Setting the `animation` option to `false` will disable the opening and closing animations. As a result the
-suggestion popup will open and close instantly.
+Configures the opening and closing animations of the suggestion popup. Setting the `animation` option to `false` will disable the opening and closing animations. As a result the suggestion popup will open and close instantly.
 
 #### Example - disable open and close animations
 
@@ -66,7 +65,9 @@ The animation played when the suggestion popup is closed.
 
 ### animation.close.effects `String`
 
-The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
+The effect(s) to use when playing the close animation. Multiple effects should be separated with a space. 
+
+[Complete list of available animations](http://docs.kendoui.com/api/framework/fx#effects)
 
 ### animation.close.duration `Number` *(default: 100)*
 
@@ -94,18 +95,20 @@ The animation played when the suggestion popup is opened.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
+[Complete list of available animations](http://docs.kendoui.com/api/framework/fx#effects)
+
 ### animation.open.duration `Number` *(default: 200)*
 
 The duration of the open animation in milliseconds.
 
-### dataSource `Object|Array|kendo.data.DataSource`
+### dataSource `Object | Array | [kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource)`
 
 The data source of the widget which is used to display suggestions for the current value. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
 
-If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new `kendo.data.DataSource` instance using that value as data source configuration.
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new `[kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource)` instance using that value as data source configuration.
 
-If the `dataSource` option is an existing `kendo.data.DataSource` instance the widget will use that instance and will **not** initialize a new one.
+If the `dataSource` option is an existing `[kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource)` instance the widget will use that instance and will **not** initialize a new one.
 
 #### Example - set dataSource as a JavaScript object
 
@@ -128,7 +131,7 @@ If the `dataSource` option is an existing `kendo.data.DataSource` instance the w
     });
     </script>
 
-#### Example - set dataSource as an existing kendo.data.DataSource instance
+#### Example - set dataSource as an existing [kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource) instance
 
     <input id="autocomplete" />
     <script>
@@ -147,7 +150,7 @@ If the `dataSource` option is an existing `kendo.data.DataSource` instance the w
 
 ### dataTextField `String` *(default: null)*
 
-The field of the data item used when searching for suggestions.
+The field of the data item used when searching for suggestions.  This is the text that will be displayed in the list of matched results.
 
 #### Example - set the dataTextField
 
@@ -274,7 +277,7 @@ The Kendo UI AutoComplete widget could also use the value of the `placeholder` H
     $("#autocomplete").kendoAutoComplete();
     </script>
 
-### separator `String`*(default: "")*
+### separator `String` *(default: "")*
 
 The character used to separate multiple values. Empty by default.
 
@@ -300,11 +303,11 @@ If set to `true` the widget will automatically use the first suggestion as its v
     });
     </script>
 
-### template `String|Function`
+### template `String | Function`
 
-The template used to render the suggestions. By default the widget displays only the text of the suggestion (configured via `dataTextField`).
+The [template](http://docs.kendoui.com/api/framework/kendo#methods-template) used to render the suggestions. By default the widget displays only the text of the suggestion (configured via `dataTextField`).
 
-#### Example - specify template as a function
+#### Example - specify [template](http://docs.kendoui.com/api/framework/kendo#methods-template) as a function
 
     <input id="autocomplete" />
     <script id="template" type="text/x-kendo-template">
@@ -321,7 +324,7 @@ The template used to render the suggestions. By default the widget displays only
     });
     </script>
 
-#### Example - specify template as a string
+#### Example - specify [template](http://docs.kendoui.com/api/framework/kendo#methods-template) as a string
 
     <input id="autocomplete" />
     <script>
@@ -511,7 +514,7 @@ Selects the item provided as an argument and updates the value of the widget.
 
 #### Parameters
 
-##### item `String|Element|jQuery`
+##### item `String | Element | jQuery`
 
 A string, DOM element or jQuery object which represents the item to be selected. A string is provided it would be treated as a jQuery selector.
 
@@ -521,7 +524,7 @@ Sets the data source of the widget.
 
 #### Parameters
 
-##### dataSource `kendo.data.DataSource`
+##### dataSource `[kendo.data.DataSource](http://docs.kendoui.com/api/framework/datasource)`
 
 #### Example
 
@@ -622,7 +625,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `kendo.ui.AutoComplete`
+##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
 
 The widget instance which fired the event.
 
@@ -657,7 +660,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `kendo.ui.AutoComplete`
+##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
 
 The widget instance which fired the event.
 
@@ -694,7 +697,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `kendo.ui.AutoComplete`
+##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
 
 The widget instance which fired the event.
 
@@ -729,7 +732,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.sender `kendo.ui.AutoComplete`
+##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
 
 The widget instance which fired the event.
 
@@ -770,6 +773,6 @@ Fired when an item from the suggestion popup is selected by the user.
 
 The jQuery object which represents the selected item.
 
-##### e.sender `kendo.ui.AutoComplete`
+##### e.sender `[kendo.ui.AutoComplete](http://docs.kendoui.com/api/web/autocomplete)`
 
 The widget instance which fired the event.
