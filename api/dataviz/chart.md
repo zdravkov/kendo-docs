@@ -512,6 +512,28 @@ The maximum value that is selectable by the user.
 unless the axis is justified. In order to select all categories specify
 a value larger than the last index (date).
 
+### categoryAxis.select.mousewheel `Object`
+
+Mousewheel zoom settings for the selection.
+
+### categoryAxis.select.mousewheel.reverse `Boolean`*(default: true)*
+
+Reverses the mousewheel zoom direction.
+Normal direction is down for "zoom out", up for "zoom in".
+
+### categoryAxis.select.mousewheel.zoom `String`*(default: "both")*
+
+The zoom direction. Possible values:
+
+#### *"both"*
+Zooming expands and contracts the selection both sides.
+
+#### *"left"*
+Zooming expands and contracts the selection left side only.
+
+#### *"right"*
+Zooming expands and contracts the selection right side only.
+
 ### categoryAxis.title `Object`
 
 The title of the category axis.
