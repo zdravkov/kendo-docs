@@ -514,7 +514,7 @@ Fires when plot area is clicked.
     ?>
 
 ### select
-Fires when the user drags the drag handle to a new position.
+Fires when the user modifies the selection.The range units are:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -549,7 +549,7 @@ Fires when the user drags the drag handle to a new position.
     ?>
 
 ### selectEnd
-Fires when the user stops dragging the drag handle.
+Fires when the user completes modifying the selection.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -584,7 +584,7 @@ Fires when the user stops dragging the drag handle.
     ?>
 
 ### selectStart
-Fires when the user start to dragging the drag handle.
+Fires when the user starts modifying the axis selection.The range units are:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`

@@ -531,6 +531,35 @@ Specifying false for this option will disable this behavior.This option is most 
     $categoryAxisItem->roundToBaseUnit(true);
     ?>
 
+### select
+
+The selected axis range. If configured, axis selection will be enabled.** Available only for vertical axes **The range units are:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemSelect|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemSelect](/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemSelect)
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
+    $select = new \Kendo\Dataviz\UI\ChartCategoryAxisItemSelect();
+    $from = new ();
+    $select->from($from);
+    $categoryAxisItem->select($select);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
+    $from = new ();
+    $categoryAxisItem->select(array('from' => $from));
+    ?>
+
 ### title
 
 The title of the category axis.
