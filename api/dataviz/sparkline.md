@@ -2754,6 +2754,32 @@ The original data item used to generate the label.
 
 The DOM element of the label.
 
+### legendLabelClick
+
+Fires when an legend label is clicked.
+
+#### Example
+
+    function onLegendLabelClick(e) {
+        alert("Clicked " + e.text + " series with color: " + e.color);
+    }
+
+#### Event Data
+
+##### e.text `Object`
+
+The name of the series.
+
+##### e.color `Object`
+
+The color of the series.
+
+##### e.series `Object`
+
+The series options.
+
+##### e.index `Object`
+
 ### dataBound
 
 Fires when the chart has received data from the data source
