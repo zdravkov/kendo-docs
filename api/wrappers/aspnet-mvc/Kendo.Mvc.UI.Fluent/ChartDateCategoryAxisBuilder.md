@@ -260,4 +260,52 @@ The configuration action.
 
 
 
+### Select(System.Nullable\<System.DateTime\>,System.Nullable\<System.DateTime\>)
+Sets the selection range
+
+#### Example
+
+    <%= Html.Kendo().StockChart(Model)
+        .Name("StockChart")
+        .CategoryAxis(axis => axis.Select(DateTime.Today.AddMonths(-1), DateTime.Today))
+    %>
+        
+
+
+#### Parameters
+
+##### from `System.Nullable<System.DateTime>`
+The selection range start.
+
+##### to `System.Nullable<System.DateTime>`
+The selection range end.
+            *Note*: The specified date is not included in the selected range
+            unless the axis is justified. In order to select all categories specify
+            a value larger than the last date.
+
+
+
+
+### Select(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder\>)
+Configures the selection
+
+#### Example
+
+    <%= Html.Kendo().StockChart(Model)
+        .Name("StockChart")
+        .CategoryAxis(axis => axis.Select(select =>
+        select.Mousewheel(mw => mw.Reverse())
+        )
+    %>
+        
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisSelectionBuilder)>
+The configuration action.
+
+
+
+
 

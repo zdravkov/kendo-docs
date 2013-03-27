@@ -363,6 +363,41 @@ The chart legend configuration options.
     $chart->legend(array('background' => $background));
     ?>
 
+### legendLabelClick
+Fires when an legend label is clicked.
+
+#### Returns
+`\Kendo\Dataviz\UI\Chart`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->legendLabelClick('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onLegendLabelClick(e) {
+            // handle the legendLabelClick event.
+        }
+    </script>
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->legendLabelClick('onLegendLabelClick');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->legendLabelClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### addPane
 
 Adds one or more ChartPane to the Chart.

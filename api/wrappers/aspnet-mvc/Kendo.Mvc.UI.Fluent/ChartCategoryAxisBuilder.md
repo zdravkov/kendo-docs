@@ -139,4 +139,52 @@ Positions categories and series points on major ticks. This removes the empty sp
 
 
 
+### Select(System.Double,System.Double)
+Sets the selection range
+
+#### Example
+
+    <%= Html.Kendo().StockChart(Model)
+        .Name("StockChart")
+        .CategoryAxis(axis => axis.Select(0, 3))
+    %>
+        
+
+
+#### Parameters
+
+##### from `System.Double`
+The selection range start.
+
+##### to `System.Double`
+The selection range end.
+            *Note*: The category with the specified index is not included in the selected range
+            unless the axis is justified. In order to select all categories specify
+            a value larger than the last category index.
+
+
+
+
+### Select(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder\>)
+Configures the selection
+
+#### Example
+
+    <%= Html.Kendo().StockChart(Model)
+        .Name("StockChart")
+        .CategoryAxis(axis => axis.Select(select =>
+        select.Mousewheel(mw => mw.Reverse())
+        )
+    %>
+        
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisSelectionBuilder)>
+The configuration action.
+
+
+
+
 

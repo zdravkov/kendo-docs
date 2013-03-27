@@ -198,6 +198,19 @@ Fires when an axis label is clicked.
         }
     </script>
 
+### legendLabelClick `String`
+
+Fires when an legend label is clicked.
+
+#### Example
+    <kendo:chart legendLabelClick="handle_legendLabelClick">
+    </kendo:chart>
+    <script>
+        function handle_legendLabelClick(e) {
+            // Code to handle the legendLabelClick event.
+        }
+    </script>
+
 ### dataBound `String`
 
 Fires when the chart has received data from the data source
@@ -383,6 +396,21 @@ Fires when an axis label is clicked.
                 }
             </script>
         </kendo:chart-axisLabelClick>
+    </kendo:chart>
+
+### kendo:chart-legendLabelClick
+
+Fires when an legend label is clicked.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-legendLabelClick>
+            <script>
+                function(e) {
+                    // Code to handle the legendLabelClick event.
+                }
+            </script>
+        </kendo:chart-legendLabelClick>
     </kendo:chart>
 
 ### kendo:chart-dataBound

@@ -179,6 +179,19 @@ Fires when an axis label is clicked.
         }
     </script>
 
+### legendLabelClick `String`
+
+Fires when an legend label is clicked.
+
+#### Example
+    <kendo:sparkline legendLabelClick="handle_legendLabelClick">
+    </kendo:sparkline>
+    <script>
+        function handle_legendLabelClick(e) {
+            // Code to handle the legendLabelClick event.
+        }
+    </script>
+
 ### dataBound `String`
 
 Fires when the chart has received data from the data source
@@ -325,6 +338,21 @@ Fires when an axis label is clicked.
                 }
             </script>
         </kendo:sparkline-axisLabelClick>
+    </kendo:sparkline>
+
+### kendo:sparkline-legendLabelClick
+
+Fires when an legend label is clicked.
+
+#### Example
+    <kendo:sparkline>
+        <kendo:sparkline-legendLabelClick>
+            <script>
+                function(e) {
+                    // Code to handle the legendLabelClick event.
+                }
+            </script>
+        </kendo:sparkline-legendLabelClick>
     </kendo:sparkline>
 
 ### kendo:sparkline-dataBound
