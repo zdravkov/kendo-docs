@@ -350,7 +350,7 @@ If set to `true` the column value will be HTML-encoded before it is displayed. I
 
 ### columns.field `String`
 
-The field which the column will display.
+The field to which the column is bound. The value of this field is displayed by the column during data binding.
 
 #### Example - specify the column field
 
@@ -448,7 +448,7 @@ The format that is applied to the value before it is displayed. Must be in the f
 
 ### columns.headerAttributes `Object`
 
-HTML attributes of the table header cell (`<th>`) rendered for the column.
+HTML attributes of the column header. The grid renders a table header cell (`<th>`) for every column. The `headerAttributes` option can be used to set the HTML attributes of that `th`.
 
 > HTML attributes which are also JavaScript keywords (such as *class*) should be quoted.
 
