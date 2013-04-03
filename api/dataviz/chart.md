@@ -1819,32 +1819,28 @@ The series base color. Accepts CSS color syntax, including hex and rgb.
 #### Example
 
     $("#chart").kendoChart({
-         series: [
-             {
-                 type: "bar",
-                 data: [200, 450, 300, 125],
-                 color: "#ff0000"
-             }
-         ]
+         series: [{
+             type: "bar",
+             data: [200, 450, 300, 125],
+             color: "#ff0000"
+         }]
     });
 
 #### Example
 
     $("#chart").kendoChart({
-         series: [
-             {
-                 type: "bar",
-                 data: [200, 450, 300, 125],
-                 color: function(point) {
-                    if (point.value > 300) {
-                        // Colorize matching points
-                        return "#f00";
-                    }
+         series: [{
+             type: "bar",
+             data: [200, 450, 300, 125],
+             color: function(point) {
+                if (point.value > 300) {
+                    // Colorize matching points
+                    return "#f00";
+                }
 
-                    // Use default theme color
-                 }
+                // Use default theme color
              }
-         ]
+         }]
     });
 
 ### series.colorField `String`
@@ -2177,47 +2173,6 @@ The markers visibility.
 ### series.markers.rotation `Number|Function`
 
 The rotation angle of the markers.
-
-#### Example
-
-    $("#chart").kendoChart({
-         series: [
-             {
-                 type: "line",
-                 data: [200, 450, 300, 125],
-                 markers: {
-                    type: "square",
-                    rotation: 45
-                 }
-             }
-         ]
-    });
-
-#### Example
-
-    $("#chart").kendoChart({
-        dataSource: {
-            data: [{
-                speed: 2,
-                dir: 45
-            }, {
-                speed: 4.6,
-                dir: 180
-            }]
-        },
-        series: [{
-             type: "line",
-             field: "speed",
-             markers: {
-                type: "triangle",
-                size: 20,
-                rotation: function(point) {
-                    // "Bind" rotation to dataItem field
-                    return point.dataItem.dir;
-                }
-             }
-        }]
-    });
 
 ### series.maxSize `Number`*(default: 100)*
 
