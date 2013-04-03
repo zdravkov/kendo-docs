@@ -159,4 +159,31 @@ The background color of the current series markers. The background color is seri
 
 
 
+### Rotation(System.Int32)
+Sets the markers rotation angle.
+
+#### Example
+
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+        .Line(s => s.Sales)
+        .Markers(markers => markers
+        .Type(ChartMarkerShape.Triangle)
+        .Rotation(10)
+        );
+        )
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### size `System.Int32`
+The markers rotation angle.
+
+
+
+
 

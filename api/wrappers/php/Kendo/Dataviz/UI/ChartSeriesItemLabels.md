@@ -38,14 +38,20 @@ The background color of the labels.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->background('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $labels->background(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### border
@@ -85,14 +91,20 @@ The text color of the labels.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $labels->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### distance
@@ -121,14 +133,20 @@ The font style of the labels.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->font('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $labels->font(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### format
@@ -139,14 +157,20 @@ The format of the labels.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->format('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $labels->format(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### margin
@@ -193,14 +217,20 @@ Defines the position of the labels.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->position('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $labels->position(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### template
@@ -235,13 +265,19 @@ The visibility of the labels.
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using boolean
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->visible(true);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $labels->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 

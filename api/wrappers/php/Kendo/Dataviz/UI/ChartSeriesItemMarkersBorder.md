@@ -20,14 +20,20 @@ The color of the border.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemMarkersBorder();
     $border->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\ChartSeriesItemMarkersBorder();
+    $border->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### width
@@ -38,13 +44,19 @@ The width of the border.
 
 #### Parameters
 
-##### $value `float`
+##### $value `float|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using float
     <?php
     $border = new \Kendo\Dataviz\UI\ChartSeriesItemMarkersBorder();
     $border->width(1);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\ChartSeriesItemMarkersBorder();
+    $border->width(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 

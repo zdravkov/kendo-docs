@@ -52,7 +52,7 @@ The data field containing the close value.** Available for candlestick and ohlc 
 
 ### color `String`
 
-The series base color.
+The series base color. Accepts CSS color syntax, including hex and rgb.
 
 #### Example
     <kendo:chart-seriesItem color="color">
@@ -469,5 +469,66 @@ More documentation is available at [kendo:chart-seriesItem-tooltip](chart/series
 
     <kendo:chart-seriesItem>
         <kendo:chart-seriesItem-tooltip></kendo:chart-seriesItem-tooltip>
+    </kendo:chart-seriesItem>
+
+
+## Event Attributes
+
+### color `String`
+
+The series base color. Accepts CSS color syntax, including hex and rgb.
+
+#### Example
+    <kendo:chart-seriesItem color="handle_color">
+    </kendo:chart-seriesItem>
+    <script>
+        function handle_color(e) {
+            // Code to handle the color event.
+        }
+    </script>
+
+### downColor `String`
+
+The series color when open value is smoller then close value.** Available for candlestick series only **
+
+#### Example
+    <kendo:chart-seriesItem downColor="handle_downColor">
+    </kendo:chart-seriesItem>
+    <script>
+        function handle_downColor(e) {
+            // Code to handle the downColor event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-seriesItem-color
+
+The series base color. Accepts CSS color syntax, including hex and rgb.
+
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-color>
+            <script>
+                function(e) {
+                    // Code to handle the color event.
+                }
+            </script>
+        </kendo:chart-seriesItem-color>
+    </kendo:chart-seriesItem>
+
+### kendo:chart-seriesItem-downColor
+
+The series color when open value is smoller then close value.** Available for candlestick series only **
+
+#### Example
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-downColor>
+            <script>
+                function(e) {
+                    // Code to handle the downColor event.
+                }
+            </script>
+        </kendo:chart-seriesItem-downColor>
     </kendo:chart-seriesItem>
 

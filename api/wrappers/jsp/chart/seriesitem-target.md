@@ -16,6 +16,14 @@ The target of the bullet chart.
 
 ## Configuration Attributes
 
+### border `String`
+
+The border of the target. Further configuration is available via [kendo:chart-seriesItem-target-border](#kendo-chart-seriesItem-target-border). 
+
+#### Example
+    <kendo:chart-seriesItem-target border="border">
+    </kendo:chart-seriesItem-target>
+
 ### color `String`
 
 The target color.
@@ -49,5 +57,38 @@ More documentation is available at [kendo:chart-seriesItem-target-line](chart/se
 
     <kendo:chart-seriesItem-target>
         <kendo:chart-seriesItem-target-line></kendo:chart-seriesItem-target-line>
+    </kendo:chart-seriesItem-target>
+
+
+## Event Attributes
+
+### color `String`
+
+The target color.
+
+#### Example
+    <kendo:chart-seriesItem-target color="handle_color">
+    </kendo:chart-seriesItem-target>
+    <script>
+        function handle_color(e) {
+            // Code to handle the color event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-seriesItem-target-color
+
+The target color.
+
+#### Example
+    <kendo:chart-seriesItem-target>
+        <kendo:chart-seriesItem-target-color>
+            <script>
+                function(e) {
+                    // Code to handle the color event.
+                }
+            </script>
+        </kendo:chart-seriesItem-target-color>
     </kendo:chart-seriesItem-target>
 

@@ -24,3 +24,36 @@ The width of the line.
     <kendo:chart-seriesItem-target-line width="width">
     </kendo:chart-seriesItem-target-line>
 
+
+## Event Attributes
+
+### width `String`
+
+The width of the line.
+
+#### Example
+    <kendo:chart-seriesItem-target-line width="handle_width">
+    </kendo:chart-seriesItem-target-line>
+    <script>
+        function handle_width(e) {
+            // Code to handle the width event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-seriesItem-target-line-width
+
+The width of the line.
+
+#### Example
+    <kendo:chart-seriesItem-target-line>
+        <kendo:chart-seriesItem-target-line-width>
+            <script>
+                function(e) {
+                    // Code to handle the width event.
+                }
+            </script>
+        </kendo:chart-seriesItem-target-line-width>
+    </kendo:chart-seriesItem-target-line>
+

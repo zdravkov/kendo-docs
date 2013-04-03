@@ -115,21 +115,27 @@ The data field containing the close value.** Available for candlestick and ohlc 
     ?>
 
 ### color
-The series base color.
+The series base color. Accepts CSS color syntax, including hex and rgb.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### colorField
@@ -241,14 +247,20 @@ The series color when open value is smoller then close value.** Available for ca
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->downColor('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->downColor(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### downColorField
