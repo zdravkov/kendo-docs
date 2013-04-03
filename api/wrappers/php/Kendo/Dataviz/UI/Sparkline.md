@@ -352,8 +352,8 @@ Fires when the user has used the mouse or a swipe gesture to drag the chart.The 
     $sparkline->dragStart(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
-### legendLabelClick
-Fires when an legend label is clicked.
+### legendItemClick
+Fires when an legend item is clicked.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -366,25 +366,25 @@ Fires when an legend label is clicked.
 
     <?php
     $sparkline = new \Kendo\Dataviz\UI\Sparkline('Sparkline');
-    $sparkline->legendLabelClick('function(e) { }');
+    $sparkline->legendItemClick('function(e) { }');
     ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
-        function onLegendLabelClick(e) {
-            // handle the legendLabelClick event.
+        function onLegendItemClick(e) {
+            // handle the legendItemClick event.
         }
     </script>
     <?php
     $sparkline = new \Kendo\Dataviz\UI\Sparkline('Sparkline');
-    $sparkline->legendLabelClick('onLegendLabelClick');
+    $sparkline->legendItemClick('onLegendItemClick');
     ?>
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $sparkline = new \Kendo\Dataviz\UI\Sparkline('Sparkline');
-    $sparkline->legendLabelClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    $sparkline->legendItemClick(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### plotArea

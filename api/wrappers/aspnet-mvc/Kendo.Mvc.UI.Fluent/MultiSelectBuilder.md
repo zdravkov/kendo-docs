@@ -212,7 +212,7 @@ TemplateId to be used for rendering the tags of the selected items.
 
 
 
-### Value(System.Collections.Generic.IEnumerable\<System.String\>)
+### Value(System.Collections.IEnumerable)
 Sets the value of the widget.
 
 #### Example

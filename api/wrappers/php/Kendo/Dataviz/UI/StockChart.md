@@ -382,8 +382,8 @@ The chart legend configuration options.
     $stockChart->legend(array('background' => $background));
     ?>
 
-### legendLabelClick
-Fires when an legend label is clicked.
+### legendItemClick
+Fires when an legend item is clicked.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -396,25 +396,25 @@ Fires when an legend label is clicked.
 
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $stockChart->legendLabelClick('function(e) { }');
+    $stockChart->legendItemClick('function(e) { }');
     ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
-        function onLegendLabelClick(e) {
-            // handle the legendLabelClick event.
+        function onLegendItemClick(e) {
+            // handle the legendItemClick event.
         }
     </script>
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $stockChart->legendLabelClick('onLegendLabelClick');
+    $stockChart->legendItemClick('onLegendItemClick');
     ?>
 
 #### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $stockChart->legendLabelClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    $stockChart->legendItemClick(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### navigator

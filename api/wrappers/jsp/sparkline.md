@@ -179,16 +179,16 @@ Fires when an axis label is clicked.
         }
     </script>
 
-### legendLabelClick `String`
+### legendItemClick `String`
 
-Fires when an legend label is clicked.
+Fires when an legend item is clicked.
 
 #### Example
-    <kendo:sparkline legendLabelClick="handle_legendLabelClick">
+    <kendo:sparkline legendItemClick="handle_legendItemClick">
     </kendo:sparkline>
     <script>
-        function handle_legendLabelClick(e) {
-            // Code to handle the legendLabelClick event.
+        function handle_legendItemClick(e) {
+            // Code to handle the legendItemClick event.
         }
     </script>
 
@@ -340,19 +340,19 @@ Fires when an axis label is clicked.
         </kendo:sparkline-axisLabelClick>
     </kendo:sparkline>
 
-### kendo:sparkline-legendLabelClick
+### kendo:sparkline-legendItemClick
 
-Fires when an legend label is clicked.
+Fires when an legend item is clicked.
 
 #### Example
     <kendo:sparkline>
-        <kendo:sparkline-legendLabelClick>
+        <kendo:sparkline-legendItemClick>
             <script>
                 function(e) {
-                    // Code to handle the legendLabelClick event.
+                    // Code to handle the legendItemClick event.
                 }
             </script>
-        </kendo:sparkline-legendLabelClick>
+        </kendo:sparkline-legendItemClick>
     </kendo:sparkline>
 
 ### kendo:sparkline-dataBound

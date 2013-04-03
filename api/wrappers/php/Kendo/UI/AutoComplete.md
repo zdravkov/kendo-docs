@@ -35,8 +35,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 ### animation
 
-Configures the opening and closing animations of the suggestion popup. Setting the animation option to false will disable the opening and closing animations. As a result the
-suggestion popup will open and close instantly.
+Configures the opening and closing animations of the suggestion popup. Setting the animation option to false will disable the opening and closing animations. As a result the suggestion popup will open and close instantly.
 
 #### Returns
 `\Kendo\UI\AutoComplete`
@@ -196,7 +195,7 @@ Sets the data source of the dataSource.
     ?>
 
 ### dataTextField
-The field of the data item used when searching for suggestions.
+The field of the data item used when searching for suggestions.  This is the text that will be displayed in the list of matched results.
 
 #### Returns
 `\Kendo\UI\AutoComplete`

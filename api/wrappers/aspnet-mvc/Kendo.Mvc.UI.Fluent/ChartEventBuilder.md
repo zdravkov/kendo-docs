@@ -246,14 +246,14 @@ The name of the JavaScript function that will handle the event.
 
 
 
-### LegendLabelClick(System.Func\<System.Object,System.Object\>)
-Defines the inline handler of the AxisLabelClick client-side event
+### LegendItemClick(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the LegendItemClick client-side event
 
 #### Example
 
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Events(events => events.LegendLabelClick(
+        .Events(events => events.LegendItemClick(
         @<text>
         function(e) {
         //event handling code
@@ -273,14 +273,14 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-### LegendLabelClick(System.String)
-Defines the name of the JavaScript function that will handle the the LegendLabelClick client-side event.
+### LegendItemClick(System.String)
+Defines the name of the JavaScript function that will handle the the LegendItemClick client-side event.
 
 #### Example
 
     <%= Html.Kendo().Chart()
         .Name("Chart")
-        .Events(events => events.LegendLabelClick("onLegendLabelClick"))
+        .Events(events => events.LegendItemClick("onLegendItemClick"))
     %>
         
 
