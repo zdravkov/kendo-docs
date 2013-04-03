@@ -1544,6 +1544,8 @@ If a type value is missing, the type is assumed to be the one specified in serie
 
 Each series type has a different set of options.
 
+> **Info:** Some options accept function as argument. They will be evaluated for each point (supplied as parameter). The theme/seriesDefaults value will be used if no value is returned.
+
 ### series.type `String`
 
 The type of the series. Available types:
@@ -1754,11 +1756,11 @@ The border of the points.
 
 ** Applicable to bar, column, bubble, donut, pie, ohlc and candlestick series **
 
-### series.border.color `String`*(default: the color of the curren series)*
+### series.border.color `String|Function`*(default: the color of the curren series)*
 
 The color of the border.
 
-### series.border.dashType `String`*(default: "solid")*
+### series.border.dashType `String|Function`*(default: "solid")*
 
 The dash type of the border.
 
@@ -1790,11 +1792,11 @@ Specifies a line consisting of a repeating pattern of long-dash-dot.
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
-### series.border.opacity `Number`
+### series.border.opacity `Number|Function`
 
 The border opacity.
 
-### series.border.width `Number`*(default: 1)*
+### series.border.width `Number|Function`*(default: 1)*
 
 The width of the border.
 
@@ -1810,9 +1812,40 @@ The data field containing the close value.
 
 ** Available for candlestick and ohlc series only **
 
-### series.color `String`
+### series.color `String|Function`
 
-The series base color.
+The series base color. Accepts CSS color syntax, including hex and rgb.
+
+#### Example
+
+    $("#chart").kendoChart({
+         series: [
+             {
+                 type: "bar",
+                 data: [200, 450, 300, 125],
+                 color: "#ff0000"
+             }
+         ]
+    });
+
+#### Example
+
+    $("#chart").kendoChart({
+         series: [
+             {
+                 type: "bar",
+                 data: [200, 450, 300, 125],
+                 color: function(point) {
+                    if (point.value > 300) {
+                        // Colorize matching points
+                        return "#f00";
+                    }
+
+                    // Use default theme color
+                 }
+             }
+         ]
+    });
 
 ### series.colorField `String`
 
@@ -1838,7 +1871,7 @@ The padding between the connector line and the label, and connector line and don
 
 The width of the connector line.
 
-### series.downColor `String`
+### series.downColor `String|Function`
 
 The series color when open value is smoller then close value.
 
@@ -1874,7 +1907,7 @@ The labels are positioned in circle around the chart.
 
 The labels are positioned in columns to the left and right of the chart.
 
-### series.labels.background `String`
+### series.labels.background `String|Function`
 
 The background color of the labels.
 
@@ -1882,11 +1915,11 @@ The background color of the labels.
 
 The border of the labels.
 
-### series.labels.border.color `String`*(default: "black")*
+### series.labels.border.color `String|Function`*(default: "black")*
 
  The color of the border.
 
-### series.labels.border.dashType `String`*(default: "solid")*
+### series.labels.border.dashType `String|Function`*(default: "solid")*
 
  The dash type of the border.
 
@@ -1918,11 +1951,11 @@ Specifies a line consisting of a repeating pattern of long-dash-dot.
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
-### series.labels.border.width `Number`*(default: 0)*
+### series.labels.border.width `Number|Function`*(default: 0)*
 
  The width of the border.
 
-### series.labels.color `String`
+### series.labels.color `String|Function`
 
 The text color of the labels.
 
@@ -1932,11 +1965,11 @@ The distance of the labels.
 
 ** Available for donut and pie series. **
 
-### series.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
+### series.labels.font `String|Function`*(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
-### series.labels.format `String`
+### series.labels.format `String|Function`
 
 The format of the labels.
 
@@ -1971,7 +2004,7 @@ The margin of the labels.
     // padding right and bottom are with 0px (by default)
     padding: { top: 1, left: 1 }
 
-### series.labels.position `String`*(default: "above")*
+### series.labels.position `String|Function`*(default: "above")*
 
 Defines the position of the labels.
 
@@ -2061,7 +2094,7 @@ The label template. Template variables:
          }
     });
 
-### series.labels.visible `Boolean`*(default: false)*
+### series.labels.visible `Boolean|Function`*(default: false)*
 
  The visibility of the labels.
 
@@ -2101,27 +2134,27 @@ Marker options.
 
 ** Applicable to area, line, scatter and scatterLine series **
 
-### series.markers.background `String`
+### series.markers.background `String|Function`
 
 The background color of the current series markers.
 
-### series.markers.border `Object`
+### series.markers.border `Object|Function`
 
 The border of the markers.
 
-### series.markers.border.color `String`*(default: "black")*
+### series.markers.border.color `String|Function`*(default: "black")*
 
  The color of the border.
 
-### series.markers.border.width `Number`*(default: 0)*
+### series.markers.border.width `Number|Function`*(default: 0)*
 
  The width of the border.
 
-### series.markers.size `Number`*(default: 6)*
+### series.markers.size `Number|Function`*(default: 6)*
 
  The marker size.
 
-### series.markers.type `String`*(default: "circle")*
+### series.markers.type `String|Function`*(default: "circle")*
 
 Configures the markers shape type.
 
@@ -2137,9 +2170,54 @@ The marker shape is triangle.
 
 The marker shape is circle.
 
-### series.markers.visible `Boolean`*(default: false)*
+### series.markers.visible `Boolean|Function`*(default: false)*
 
 The markers visibility.
+
+### series.markers.rotation `Number|Function`
+
+The rotation angle of the markers.
+
+#### Example
+
+    $("#chart").kendoChart({
+         series: [
+             {
+                 type: "line",
+                 data: [200, 450, 300, 125],
+                 markers: {
+                    type: "square",
+                    rotation: 45
+                 }
+             }
+         ]
+    });
+
+#### Example
+
+    $("#chart").kendoChart({
+        dataSource: {
+            data: [{
+                speed: 2,
+                dir: 45
+            }, {
+                speed: 4.6,
+                dir: 180
+            }]
+        },
+        series: [{
+             type: "line",
+             field: "speed",
+             markers: {
+                type: "triangle",
+                size: 20,
+                rotation: function(point) {
+                    // "Bind" rotation to dataItem field
+                    return point.dataItem.dir;
+                }
+             }
+        }]
+    });
 
 ### series.maxSize `Number`*(default: 100)*
 
@@ -2412,23 +2490,23 @@ The target of the bullet chart.
 
 The target line.
 
-### series.target.line.width `Object`
+### series.target.line.width `Object|Function`
 
 The width of the line.
 
-### series.target.color `String`
+### series.target.color `String|Function`
 
 The target color.
 
-### series.target.border `Object`
+### series.target.border `Object|Function`
 
 The border of the target.
 
-### series.target.border.color `String`*(default: "black")*
+### series.target.border.color `String|Function`*(default: "black")*
 
 The color of the border.
 
-### series.target.border.dashType `String`*(default: "solid")*
+### series.target.border.dashType `String|Function`*(default: "solid")*
 
 The dash type of the border.
 
@@ -2460,7 +2538,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot.
 
 Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
-### series.target.border.width `Number`*(default: 0)*
+### series.target.border.width `Number|Function`*(default: 0)*
 
 The width of the border.
 
