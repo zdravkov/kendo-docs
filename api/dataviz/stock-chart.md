@@ -5630,13 +5630,13 @@ The original data item used to generate the label.
 
 The DOM element of the label.
 
-### legendLabelClick
+### legendItemClick
 
-Fires when an legend label is clicked.
+Fires when an legend item is clicked.
 
 #### Example
 
-    function onLegendLabelClick(e) {
+    function onLegendItemClick(e) {
         alert("Clicked " + e.text + " series with color: " + e.color);
     }
 
