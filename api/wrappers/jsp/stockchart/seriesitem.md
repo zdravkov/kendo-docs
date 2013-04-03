@@ -326,3 +326,64 @@ More documentation is available at [kendo:stockChart-seriesItem-tooltip](stockch
         <kendo:stockChart-seriesItem-tooltip></kendo:stockChart-seriesItem-tooltip>
     </kendo:stockChart-seriesItem>
 
+
+## Event Attributes
+
+### color `String`
+
+The series base color.
+
+#### Example
+    <kendo:stockChart-seriesItem color="handle_color">
+    </kendo:stockChart-seriesItem>
+    <script>
+        function handle_color(e) {
+            // Code to handle the color event.
+        }
+    </script>
+
+### downColor `String`
+
+The series color when open value is smoller then close value.** Available for candlestick series only **
+
+#### Example
+    <kendo:stockChart-seriesItem downColor="handle_downColor">
+    </kendo:stockChart-seriesItem>
+    <script>
+        function handle_downColor(e) {
+            // Code to handle the downColor event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:stockChart-seriesItem-color
+
+The series base color.
+
+#### Example
+    <kendo:stockChart-seriesItem>
+        <kendo:stockChart-seriesItem-color>
+            <script>
+                function(e) {
+                    // Code to handle the color event.
+                }
+            </script>
+        </kendo:stockChart-seriesItem-color>
+    </kendo:stockChart-seriesItem>
+
+### kendo:stockChart-seriesItem-downColor
+
+The series color when open value is smoller then close value.** Available for candlestick series only **
+
+#### Example
+    <kendo:stockChart-seriesItem>
+        <kendo:stockChart-seriesItem-downColor>
+            <script>
+                function(e) {
+                    // Code to handle the downColor event.
+                }
+            </script>
+        </kendo:stockChart-seriesItem-downColor>
+    </kendo:stockChart-seriesItem>
+

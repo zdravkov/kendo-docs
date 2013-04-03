@@ -20,14 +20,20 @@ The color of the border.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
     $border->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
+    $border->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### dashType
@@ -38,14 +44,44 @@ The dash type of the border.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
     $border->dashType('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
+    $border->dashType(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
+### opacity
+The border opacity.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemBorder`
+
+#### Parameters
+
+##### $value `float|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using float
+    <?php
+    $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
+    $border->opacity(1);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
+    $border->opacity(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### width
@@ -56,13 +92,19 @@ The width of the border.
 
 #### Parameters
 
-##### $value `float`
+##### $value `float|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using float
     <?php
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
     $border->width(1);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\StockChartSeriesItemBorder();
+    $border->width(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 

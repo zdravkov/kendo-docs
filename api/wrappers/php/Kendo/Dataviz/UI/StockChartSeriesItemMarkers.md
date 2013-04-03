@@ -20,14 +20,20 @@ The background color of the current series markers.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->background('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
+    $markers->background(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### border
@@ -39,7 +45,16 @@ The border of the markers.
 
 #### Parameters
 
-##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder|array`
+##### $value `\Kendo\JavaScriptFunction|\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder|array`
+
+
+
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
+    $markers->border(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemMarkersBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemMarkersBorder)
@@ -59,6 +74,30 @@ The border of the markers.
     $markers->border(array('color' => $color));
     ?>
 
+### rotation
+The rotation angle of the markers.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemMarkers`
+
+#### Parameters
+
+##### $value `float|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using float
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
+    $markers->rotation(1);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
+    $markers->rotation(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### size
 The marker size.
 
@@ -67,14 +106,20 @@ The marker size.
 
 #### Parameters
 
-##### $value `float`
+##### $value `float|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using float
     <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->size(1);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
+    $markers->size(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### type
@@ -85,14 +130,20 @@ Configures the markers shape type.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->type('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
+    $markers->type(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### visible
@@ -103,13 +154,19 @@ The markers visibility.
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using boolean
     <?php
     $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
     $markers->visible(true);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
+    $markers->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 

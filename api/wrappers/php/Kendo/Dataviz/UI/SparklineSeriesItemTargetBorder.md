@@ -20,14 +20,20 @@ The color of the border.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $border = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder();
     $border->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder();
+    $border->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### dashType
@@ -38,14 +44,20 @@ The dash type of the border.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $border = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder();
     $border->dashType('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $border = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder();
+    $border->dashType(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### width

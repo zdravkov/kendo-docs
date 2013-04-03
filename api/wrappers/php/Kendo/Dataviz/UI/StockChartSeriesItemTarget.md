@@ -21,7 +21,16 @@ The border of the target.
 
 #### Parameters
 
-##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemTargetBorder|array`
+##### $value `\Kendo\JavaScriptFunction|\Kendo\Dataviz\UI\StockChartSeriesItemTargetBorder|array`
+
+
+
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $target = new \Kendo\Dataviz\UI\StockChartSeriesItemTarget();
+    $target->border(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 
 #### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemTargetBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemTargetBorder)
@@ -49,14 +58,20 @@ The target color.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $target = new \Kendo\Dataviz\UI\StockChartSeriesItemTarget();
     $target->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $target = new \Kendo\Dataviz\UI\StockChartSeriesItemTarget();
+    $target->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### line

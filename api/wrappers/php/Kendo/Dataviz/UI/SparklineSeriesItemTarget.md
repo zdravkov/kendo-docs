@@ -21,7 +21,16 @@ The border of the target.
 
 #### Parameters
 
-##### $value `\Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder|array`
+##### $value `\Kendo\JavaScriptFunction|\Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder|array`
+
+
+
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $target = new \Kendo\Dataviz\UI\SparklineSeriesItemTarget();
+    $target->border(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 
 
 #### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemTargetBorder)
@@ -49,14 +58,20 @@ The target color.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $target = new \Kendo\Dataviz\UI\SparklineSeriesItemTarget();
     $target->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $target = new \Kendo\Dataviz\UI\SparklineSeriesItemTarget();
+    $target->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### line

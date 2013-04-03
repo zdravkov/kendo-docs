@@ -20,7 +20,19 @@ The width of the line.
 
 #### Parameters
 
-##### $value ``
+##### $value `|\Kendo\JavaScriptFunction`
 
 
+
+#### Example  - using 
+    <?php
+    $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();
+    $line->width(new ());
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();
+    $line->width(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
 

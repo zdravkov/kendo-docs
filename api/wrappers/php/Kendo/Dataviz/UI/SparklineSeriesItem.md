@@ -104,14 +104,20 @@ The series base color.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
     $seriesItem->color('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $seriesItem->color(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### colorField

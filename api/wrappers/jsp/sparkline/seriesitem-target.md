@@ -16,6 +16,14 @@ The target of the bullet chart.
 
 ## Configuration Attributes
 
+### border `String`
+
+The border of the target. Further configuration is available via [kendo:sparkline-seriesItem-target-border](#kendo-sparkline-seriesItem-target-border). 
+
+#### Example
+    <kendo:sparkline-seriesItem-target border="border">
+    </kendo:sparkline-seriesItem-target>
+
 ### color `String`
 
 The target color.
@@ -49,5 +57,38 @@ More documentation is available at [kendo:sparkline-seriesItem-target-line](spar
 
     <kendo:sparkline-seriesItem-target>
         <kendo:sparkline-seriesItem-target-line></kendo:sparkline-seriesItem-target-line>
+    </kendo:sparkline-seriesItem-target>
+
+
+## Event Attributes
+
+### color `String`
+
+The target color.
+
+#### Example
+    <kendo:sparkline-seriesItem-target color="handle_color">
+    </kendo:sparkline-seriesItem-target>
+    <script>
+        function handle_color(e) {
+            // Code to handle the color event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:sparkline-seriesItem-target-color
+
+The target color.
+
+#### Example
+    <kendo:sparkline-seriesItem-target>
+        <kendo:sparkline-seriesItem-target-color>
+            <script>
+                function(e) {
+                    // Code to handle the color event.
+                }
+            </script>
+        </kendo:sparkline-seriesItem-target-color>
     </kendo:sparkline-seriesItem-target>
 

@@ -331,3 +331,36 @@ More documentation is available at [kendo:sparkline-seriesItem-tooltip](sparklin
         <kendo:sparkline-seriesItem-tooltip></kendo:sparkline-seriesItem-tooltip>
     </kendo:sparkline-seriesItem>
 
+
+## Event Attributes
+
+### color `String`
+
+The series base color.
+
+#### Example
+    <kendo:sparkline-seriesItem color="handle_color">
+    </kendo:sparkline-seriesItem>
+    <script>
+        function handle_color(e) {
+            // Code to handle the color event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:sparkline-seriesItem-color
+
+The series base color.
+
+#### Example
+    <kendo:sparkline-seriesItem>
+        <kendo:sparkline-seriesItem-color>
+            <script>
+                function(e) {
+                    // Code to handle the color event.
+                }
+            </script>
+        </kendo:sparkline-seriesItem-color>
+    </kendo:sparkline-seriesItem>
+
