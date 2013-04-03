@@ -5081,7 +5081,7 @@ The original data item used to generate the label.
 
 The DOM element of the label.
 
-### legenItemClick
+### legendItemClick
 
 Fires when an legend item is clicked.
 
