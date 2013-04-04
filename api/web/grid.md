@@ -667,8 +667,8 @@ be disabled for this column. By default all columns are sortable.
 
 ### columns.template `String|Function`
 
-The [template](/api/framework/kendo#methods-template) which is used to render the column content. The Kendo UI Grid widget renders table rows (`&lt;tr&gt;`) which represent the data source items.
-Each table row consists of table cells (`$lt;td$gt;`) which represent the grid columns. By default the HTML-encoded value of the [field](#configuration-columns.field) is displayed in the column.
+The [template](/api/framework/kendo#methods-template) which is used to render the column content. The Kendo UI Grid widget renders table rows (`<tr>`) which represent the data source items.
+Each table row consists of table cells (`<td>`) which represent the grid columns. By default the HTML-encoded value of the [field](#configuration-columns.field) is displayed in the column.
 
 Use the `template` to customize the way the column displays its value.
 
