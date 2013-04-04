@@ -295,6 +295,19 @@ Fired when the user hides a column.The event handler function context (available
         }
     </script>
 
+### columnMenuInit `String`
+
+Fired when the column menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Example
+    <kendo:grid columnMenuInit="handle_columnMenuInit">
+    </kendo:grid>
+    <script>
+        function handle_columnMenuInit(e) {
+            // Code to handle the columnMenuInit event.
+        }
+    </script>
+
 ### columnReorder `String`
 
 Fired when the user changes the order of a column.The event handler function context (available via the this keyword) will be set to the widget instance.
@@ -414,7 +427,7 @@ Fired when the user edits or creates a data item.The event handler function cont
 
 ### filterMenuInit `String`
 
-Fires when the grid column filter menu is initialized.
+Fired when the grid filter menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid filterMenuInit="handle_filterMenuInit">
@@ -425,22 +438,9 @@ Fires when the grid column filter menu is initialized.
         }
     </script>
 
-### columnMenuInit `String`
-
-Fires when the grid column menu is initialized.
-
-#### Example
-    <kendo:grid columnMenuInit="handle_columnMenuInit">
-    </kendo:grid>
-    <script>
-        function handle_columnMenuInit(e) {
-            // Code to handle the columnMenuInit event.
-        }
-    </script>
-
 ### remove `String`
 
-Fires before the grid item is removed.
+Fired when the user clicks the "destroy" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid remove="handle_remove">
@@ -453,7 +453,7 @@ Fires before the grid item is removed.
 
 ### save `String`
 
-Fires before the grid item is changed.
+Fired when a data item is saved.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid save="handle_save">
@@ -466,7 +466,7 @@ Fires before the grid item is changed.
 
 ### saveChanges `String`
 
-Fires before the grid calls DataSource sync.
+Fired when the user clicks the "save" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid saveChanges="handle_saveChanges">
@@ -522,6 +522,21 @@ Fired when the user hides a column.The event handler function context (available
                 }
             </script>
         </kendo:grid-columnHide>
+    </kendo:grid>
+
+### kendo:grid-columnMenuInit
+
+Fired when the column menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Example
+    <kendo:grid>
+        <kendo:grid-columnMenuInit>
+            <script>
+                function(e) {
+                    // Code to handle the columnMenuInit event.
+                }
+            </script>
+        </kendo:grid-columnMenuInit>
     </kendo:grid>
 
 ### kendo:grid-columnReorder
@@ -661,7 +676,7 @@ Fired when the user edits or creates a data item.The event handler function cont
 
 ### kendo:grid-filterMenuInit
 
-Fires when the grid column filter menu is initialized.
+Fired when the grid filter menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid>
@@ -674,24 +689,9 @@ Fires when the grid column filter menu is initialized.
         </kendo:grid-filterMenuInit>
     </kendo:grid>
 
-### kendo:grid-columnMenuInit
-
-Fires when the grid column menu is initialized.
-
-#### Example
-    <kendo:grid>
-        <kendo:grid-columnMenuInit>
-            <script>
-                function(e) {
-                    // Code to handle the columnMenuInit event.
-                }
-            </script>
-        </kendo:grid-columnMenuInit>
-    </kendo:grid>
-
 ### kendo:grid-remove
 
-Fires before the grid item is removed.
+Fired when the user clicks the "destroy" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid>
@@ -706,7 +706,7 @@ Fires before the grid item is removed.
 
 ### kendo:grid-save
 
-Fires before the grid item is changed.
+Fired when a data item is saved.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid>
@@ -721,7 +721,7 @@ Fires before the grid item is changed.
 
 ### kendo:grid-saveChanges
 
-Fires before the grid calls DataSource sync.
+Fired when the user clicks the "save" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Example
     <kendo:grid>
