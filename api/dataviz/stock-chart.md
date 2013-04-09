@@ -3107,6 +3107,10 @@ Template variables:
 
 A value indicating if the tooltip should be displayed.
 
+### series.visibleInLegend `Boolean`*(default: true)*
+
+A value indicating whether to show the series name in the legend.
+
 ### series.width `Number`
 
 The line width.
