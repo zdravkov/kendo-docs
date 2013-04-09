@@ -1,4 +1,5 @@
 ---
+Contains the settings for the operations.
 title: kendo.data.DataSource
 meta_title: Configuration, methods and events of the Kendo DataSource component.
 meta_description: Easy to follow steps for DataSource component configuration, examples of supported methods and executed events.
@@ -91,11 +92,11 @@ If set to `true` the data source would automatically [sync](#methods-sync) any c
       transport: {
         read:  {
           url: "http://demos.kendoui.com/service/products",
-          dataType: "jsonp" // JSONP is required for cross-domain requests
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
         },
         update: {
           url: "http://demos.kendoui.com/service/products/update",
-          dataType: "jsonp" // JSONP is required for cross-domain requests
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
         }
       },
       schema: {
@@ -122,11 +123,11 @@ makes a HTTP request for every CRUD operation.
       transport: {
         read:  {
           url: "http://demos.kendoui.com/service/products",
-          dataType: "jsonp" //JSONP is required for cross-domain requests
+          dataType: "jsonp" //"jsonp" is required for cross-domain requests; use "json" for same-domain requests
         },
         update: {
           url: "http://demos.kendoui.com/service/products/update",
-          dataType: "jsonp" //JSONP is required for cross-domain requests
+          dataType: "jsonp" //"jsonp" is required for cross-domain requests; use "json" for same-domain requests
         }
       },
       schema: {
@@ -579,7 +580,7 @@ The description of the response returned by the remote service.
       transport: {
         read: {
           url: "http://demos.kendoui.com/service/twitter/search",
-          dataType: "jsonp", // JSONP is required for cross-domain requests
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
           data: { q: "html5" } // search for tweets that contain "html5"
         }
       },
@@ -689,7 +690,7 @@ return the data items for the response.
       transport: {
         read: {
           url: "http://demos.kendoui.com/service/twitter/search",
-          dataType: "jsonp", // JSONP is required for cross-domain requests
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
           data: { q: "html5" } // search for tweets that contain "html5"
         }
       },
@@ -710,7 +711,7 @@ return the data items for the response.
       transport: {
         read: {
           url: "http://demos.kendoui.com/service/twitter/search",
-          dataType: "jsonp", // JSONP is required for cross-domain requests
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
           data: { q: "html5" } // search for tweets that contain "html5"
         }
       },
@@ -737,7 +738,7 @@ return the errors for response. If there are any errors the [error](#events-erro
       transport: {
         read: {
           url: "http://demos.kendoui.com/service/twitter/search",
-          dataType: "jsonp", // JSONP is required for cross-domain requests
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
           data: { q: "#" }
         }
       },
@@ -757,7 +758,7 @@ return the errors for response. If there are any errors the [error](#events-erro
       transport: {
         read: {
           url: "http://demos.kendoui.com/service/twitter/search",
-          dataType: "jsonp", // JSONP is required for cross-domain requests
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
           data: { q: "#" }
         }
       },
@@ -1238,708 +1239,1305 @@ The sort order (direction). The supported values are "asc" (ascending order) and
 
 ### transport `Object`
 
-Specifies the settings for loading and saving data. This can be a remote or local/in-memory data.
+The configuration used to load and save the data items. Based on the way of data retrieval the data source is remote or local. Remote data sources load/save data from/to a remote end-point (a.k.a. remote service or server).
+The `transport` option describes the remote service configuration - URL, HTTP verb, HTTP headers etc. The `transport` option can also be used to implement custom data loading and saving.
+
+Local data sources are bound to a JavaScript array via the [data](#configuration-data) option.
+
+#### Example - configure remote service
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        }
+      }
+    });
+    dataSource.fetch(function() {
+      var products = dataSource.data();
+      console.log(products[0].ProductName); // displays "Chai"
+    });
+    </script>
 
 ### transport.create `Object|String|Function`
 
-Options for remote create data operation, or the URL of the remote service.
+The configuration used when the data source saves newly created data items. Those are items added to the data source via the [add](#methods-add) or [insert](#methods-insert) methods.
 
-> **Important:** The value of `transport.create` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+> The data source uses [jQuery.ajax](http://api.jquery.com/jQuery.ajax) to make a HTTP request to the remote service. The value configured via `transport.create` is passed to `jQuery.ajax`. This means that you can set
+all options supported by `jQuery.ajax` via `transport.create`.
 
-#### Example: Specify Create Options
+If the value of `transport.create` is a function, the data source invokes that function instead of `jQuery.ajax`.
 
+If the value of `transport.create` is a string the data source uses this string as the URL of the remote service.
+
+#### Example - set the create remote service
+
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            create: {
-                url: "/orders/create",
-                data: {
-                    orderId: $("#input").val() // sends the value of the input as the orderId
-                }
-            }
+      transport: {
+        // make JSONP request to http://demos.kendoui.com/service/products/create
+        create: {
+          url: "http://demos.kendoui.com/service/products/create",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "create") {
+            // send the created data items as the "models" service parameter encoded in JSON
+            return { models: kendo.stringify(data.models) };
+          }
         }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
     });
+    // create a new data item
+    dataSource.add( { ProductName: "New Product" });
+    // save the created data item
+    dataSource.sync();
+    </script>
 
-#### Example: Specify Create As Function *(Note: transport methods should be consistent - read, update and destroy should be specified as functions too)*
+#### Example - set create as a function
 
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            create: function(options) {
-                // make AJAX request to the remote service
-
-                $.ajax( {
-                    url: "/orders/create",
-                    data: options.data, // the "data" field contains paging, sorting, filtering and grouping data
-                    success: function(result) {
-                        // notify the DataSource that the operation is complete
-
-                        options.success(result);
-                    }
-                });
+      transport: {
+        read: function(options) {
+          /* implementation omitted for brevity */
+        },
+        create: function(options) {
+          // make JSONP request to http://demos.kendoui.com/service/products/create
+          $.ajax({
+            url: "http://demos.kendoui.com/service/products/create",
+            dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+            // send the created data items as the "models" service parameter encoded in JSON
+            data: {
+              models: kendo.stringify(options.data.models)
+            },
+            success: function(result) {
+              // notify the data source that the request succeeded
+              options.success(result);
+            },
+            error: function(result) {
+              // notify the data source that the request failed
+              options.error(result);
             }
+          });
         }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
     });
+    dataSource.add( { ProductName: "New Product" });
+    dataSource.sync();
+    </script>
 
 ### transport.create.cache `Boolean`
 
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, `"_=[TIMESTAMP]"`, to the URL.
+If set to `false` the request result will not be cached by the browser. Setting cache to `false` will only work correctly with HEAD and GET requests. It works by appending *"_={timestamp}"* to the GET parameters.
+By default "jsonp" requests are not cached.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - enable request caching
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         create: {
-            cache: false
+          /* omitted for brevity */
+          cache: true
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.create.contentType `String`
 
 The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set content type
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         create: {
-            contentType: "application/json"
+          /* omitted for brevity */
+          contentType: "application/json"
         }
-    }
+      }
+    });
+    </script>
 
-### transport.create.data `Object|String|Function`
+### transport.create.data `Object|Function`
 
-Data to be send to the server.
+Additional parameters which are sent to the remote service.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example: Specify Data As Object
-    transport: {
+#### Example - send additional parameters as an object
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         create: {
-            data: {
-                id: 42,
-                name: "John Doe"
-            }
+          /* omitted for brevity */
+          data: {
+            name: "Jane Doe",
+            age: 30
+          }
         }
-    }
+      }
+    });
+    </script>
 
-#### Example: Specify Data As Function
-    transport: {
+#### Example - send additional parameters by returning them from a function
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         create: {
-            data: function() {
-                return {
-                    id: 42,
-                    name: "John Doe"
-                };
+          /* omitted for brevity */
+          data: function() {
+            return {
+              name: "Jane Doe",
+              age: 30
             }
+          }
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.create.dataType `String`
 
-The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+The type of result expected from the server. Commonly used values are "json" and "jsonp".
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set the data type to JSON
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         create: {
-            dataType: "json"
+          /* omitted for brevity */
+          dataType: "json"
         }
-    }
+      }
+    });
+    </script>
 
-### transport.create.type `String`
+### transport.create.type `String` *(default: "GET")*
 
-The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+The type of request to make ("POST", "GET", "PUT" or `"DELETE"`), default is "GET".
+
+> The `type` option is ignored if `dataType` is set to "jsonp". JSONP always uses GET requests.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set the HTTP verb of the request
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         create: {
-            type: "POST"
+          /* omitted for brevity */
+          type: "POST"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.create.url `String|Function`
 
-The remote url to call when creating a new record.
+The URL to which the request is sent.
 
-#### Example
-    transport: {
-        create: {
-            url: "/create"
-        }
-    }
+If set to function the data source will invoke it and use the result as the URL.
 
-#### Example: Specify Create URL As Function
-    transport: {
+#### Example - specify URL as a string
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         create: {
-            url: function(params) {
-                //build url
-                return "url";
-            }
+          url: "http://demos.kendoui.com/service/products/create",
+          cache: true,
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "create") {
+            return { models: kendo.stringify(data.models) }
+          }
         }
-    }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.add( { ProductName: "New Product" });
+    dataSource.sync();
+    </script>
+
+#### Example - specify URL as a function
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        create: {
+          url: function(options) {
+            return "http://demos.kendoui.com/service/products/create"
+          },
+          cache: true,
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "create") {
+            return { models: kendo.stringify(data.models) }
+          }
+        }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.add( { ProductName: "New Product" });
+    dataSource.sync();
+    </script>
 
 ### transport.destroy `Object|String|Function`
 
-Options for remote destroy data operation, or the URL of the remote service.
+The configuration used when the data source destroys data items. Those are items removed from the data source via the [remove](#methods-remove) method.
 
-> **Important:** The value of `transport.destroy` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+> The data source uses [jQuery.ajax](http://api.jquery.com/jQuery.ajax) to make a HTTP request to the remote service. The value configured via `transport.destroy` is passed to `jQuery.ajax`. This means that you can set
+all options supported by `jQuery.ajax` via `transport.destroy`.
 
-#### Example: Specify Destroy Options
+If the value of `transport.destroy` is a function, the data source invokes that function instead of `jQuery.ajax`.
 
+If the value of `transport.destroy` is a string the data source uses this string as the URL of the remote service.
+
+#### Example - set the destroy remote service
+
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            destroy: {
-                url: "/orders/destroy",
-                data: {
-                    orderId: $("#input").val() // sends the value of the input as the orderId
-                }
-            }
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp"
+        },
+        // make JSONP request to http://demos.kendoui.com/service/products/destroy
+        destroy: {
+          url: "http://demos.kendoui.com/service/products/destroy",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "destroy") {
+            // send the destroyed data items as the "models" service parameter encoded in JSON
+            return { models: kendo.stringify(data.models) }
+          }
         }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
     });
+    dataSource.fetch(function() {
+      var products = dataSource.data();
+      // remove the first data item
+      dataSource.remove(products[0]);
+      // send the destroyed data item to the remote service
+      dataSource.sync();
+    });
+    </script>
 
-#### Example: Specify Destroy As Function *(Note: transport methods should be consistent - read, create and update should be specified as functions too)*
+#### Example - set destroy as a function
 
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            destroy: function(options) {
-                // make AJAX request to the remote service
-
-                $.ajax( {
-                    url: "/orders/destroy",
-                    data: options.data, // the "data" field contains paging, sorting, filtering and grouping data
-                    success: function(result) {
-                        // notify the DataSource that the operation is complete
-
-                        options.success(result);
-                    }
-                });
+      transport: {
+        read: function(options) {
+          $.ajax({
+            url: "http://demos.kendoui.com/service/products",
+            dataType: "jsonp",
+            success: function(result) {
+              options.success(result);
             }
+          });
+        },
+        destroy: function (options) {
+          // make JSONP request to http://demos.kendoui.com/service/products/destroy
+          $.ajax({
+            url: "http://demos.kendoui.com/service/products/destroy",
+            dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+            // send the destroyed data items as the "models" service parameter encoded in JSON
+            data: {
+              models: kendo.stringify(options.data.models)
+            },
+            success: function(result) {
+              // notify the data source that the request succeeded
+              options.success(result);
+            },
+            error: function(result) {
+              // notify the data source that the request failed
+              options.error(result);
+            }
+          });
         }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
     });
+    dataSource.fetch(function() {
+      var products = dataSource.data();
+      dataSource.remove(products[0]);
+      dataSource.sync();
+    });
+    </script>
 
 ### transport.destroy.cache `Boolean`
 
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, `"_=[TIMESTAMP]"`, to the URL.
+If set to `false` the request result will not be cached by the browser. Setting cache to `false` will only work correctly with HEAD and GET requests. It works by appending *"_={timestamp}"* to the GET parameters.
+By default "jsonp" requests are not cached.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - enable request caching
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         destroy: {
-            cache: false
+          /* omitted for brevity */
+          cache: true
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.destroy.contentType `String`
 
 The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set content type
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         destroy: {
-            contentType: "application/json"
+          /* omitted for brevity */
+          contentType: "application/json"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.destroy.data `Object|String|Function`
 
-Data to be send to the server.
+Additional parameters which are sent to the remote service.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example: Specify Data As Object
-    transport: {
+#### Example - send additional parameters as an object
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         destroy: {
-            data: {
-                id: 42,
-                name: "John Doe"
-            }
+          /* omitted for brevity */
+          data: {
+            name: "Jane Doe",
+            age: 30
+          }
         }
-    }
+      }
+    });
+    </script>
 
-#### Example: Specify Data As Function
-    transport: {
+#### Example - send additional parameters by returning them from a function
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         destroy: {
-            data: function() {
-                return {
-                    id: 42,
-                    name: "John Doe"
-                };
+          /* omitted for brevity */
+          data: function() {
+            return {
+              name: "Jane Doe",
+              age: 30
             }
+          }
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.destroy.dataType `String`
 
-The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+The type of result expected from the server. Commonly used values are "json" and "jsonp".
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set the data type to JSON
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         destroy: {
-            dataType: "json"
+          /* omitted for brevity */
+          dataType: "json"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.destroy.type `String`
 
-The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+The type of request to make ("POST", "GET", "PUT" or `"DELETE"`), default is "GET".
+
+> The `type` option is ignored if `dataType` is set to "jsonp". JSONP always uses GET requests.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
 #### Example
-    transport: {
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         destroy: {
-            type: "POST"
+          /* omitted for brevity */
+          type: "POST"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.destroy.url `String|Function`
 
-The remote url to call when creating a new record.
+The URL to which the request is sent.
 
-#### Example
-    transport: {
-        destroy: {
-            url: "/destroy"
-        }
-    }
+If set to function the data source will invoke it and use the result as the URL.
 
-#### Example: Specify Destroy URL As Function
-    transport: {
+#### Example - specify URL as a string
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp"
+        },
         destroy: {
-            url: function(params) {
-                //build url
-                return "url";
-            }
+          url: "http://demos.kendoui.com/service/products/destroy",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "destroy") {
+            return { models: kendo.stringify(data.models) }
+          }
         }
-    }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.fetch(function() {
+      var products = dataSource.data();
+      dataSource.remove(products[0]);
+      dataSource.sync();
+    });
+    </script>
+
+#### Example - specify URL as a function
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp"
+        },
+        destroy: {
+          url: function (options) {
+            return "http://demos.kendoui.com/service/products/destroy",
+          },
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "destroy") {
+            return { models: kendo.stringify(data.models) }
+          }
+        }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.fetch(function() {
+      var products = dataSource.data();
+      dataSource.remove(products[0]);
+      dataSource.sync();
+    });
+    </script>
 
 ### transport.parameterMap `Function`
 
-Converts the request parameters and data from the internal format to a format suitable for the remote service.
+The function which converts the request parameters to a format suitable for the remote service. By default
+the data source sends the parameters using jQuery's [conventions](http://api.jquery.com/jQuery.param/).
 
 #### Parameters
 
 ##### data `Object`
 
-Contains key/value pairs that represent the request.
-
-All key/value pairs specified in the `data` field of the transport settings (create, read, update or destroy) will be included as well.
-
-If [batch](#batch-boolean-default) is set to `false` the fields of the changed model will be included.
-
-One ore more of the following keys will be present (depending on the configuration and current request type):
-
-- aggregate
-
-    An object containing the current aggregate info. Present if there are any aggregates, [serverAggregates](#serverAggregates-booleandefault) is set to `true` and the type of the request is "read".
-
-- group
-
-    An object containing the current filter info. Present if the data source is grouped, [serverGrouping](#serverGrouping-booleandefault) is set to `true` and the type of request is "read".
-
-- filter
-
-    An object containing the current filter info. Present if the data source is filtered, [serverFiltering](#serverFiltering-booleandefault) is set to `true` and the type of request is "read".
-
-- models
-
-    An array of all changed models. Present if there are any changes and [batch](#batch-boolean-default) is set to `true`.
-
-- page
-
-    The current page. Present if [serverPaging](#serverpaging-booleandefault) is set to `true` and the type of request is "read".
-
-- pageSize
-
-    The current page size specified via [pageSize](#pagesize-numberdefault). Present if [serverPaging](#serverpaging-booleandefault) is set to `true` and the type of request is "read".
-
-- skip
-
-    A number indicating how many records to skip from the beginning (related to the current page). Present if [serverPaging](#serverpaging-booleandefault) is set to `true` and the type of request is "read".
-
-- sort
-
-    An array containing the current sorting info. Present if the data source is sorted, [serverSorting](#serverSorting-booleandefault) is set to `true` and the type of request is "read".
-
-- take
-
-    The same as `pageSize`. Present if [serverPaging](#serverpaging-booleandefault) is set to `true` the and the type of request is "read".
-
-
-##### type `String`
-
-The type of the request being made. One of the following values: "create", "read", "update", "destroy".
-
-#### Example
-
-    var dataSource = new kendo.data.DataSource({
-         serverPaging: true,
-         serverSorting: true,
-         transport: {
-           read: "Catalog/Titles",
-           parameterMap: function(data, type) {
-              return {
-                 pageIndex: data.page,
-                 size: data.pageSize,
-                 orderBy: data.sort[0].field
-              };
-           }
-         }
-     });
+The parameters which will be sent to the remote service. The value specified in the `data` field of the transport settings (create, read, update or destroy) is included as well.
+If [batch](#batch-boolean-default) is set to `false` the fields of the changed data items are also included.
 
 > The `parameterMap` method is often used to encode the parameters in JSON format.
 
-#### Example - sending the data source request as JSON
+##### data.aggregate `Array`
 
+The current aggregate configuration as set via the [aggregate](#configuration-aggregate) option.
+Available  if the [serverAggregates](#configuration-serverAggregates) option is set to `true` and the data source makes a "read" request.
+
+##### data.group `Array`
+
+The current grouping configuration as set via the [group](#configuration-group) option.
+Available  if the [serverGrouping](#configuration-serverGrouping) option is set to `true` and the data source makes a "read" request.
+
+##### data.filter `Object`
+
+The current filter configuration as set via the [filter](#configuration-filter) option.
+Available  if the [serverFiltering](#configuration-serverFiltering) option is set to `true` and the data source makes a "read" request.
+
+##### data.models `Array`
+
+All changed data items. Available  if there are any data item changes and the [batch](#configuration-batch) option is set to `true`.
+
+##### data.page `Number`
+
+The current page. Available if the [serverPaging](#configuration-serverPaging) option is set to `true` and the data source makes a "read" request.
+
+##### data.pageSize `Number`
+
+The current page size as set via the [pageSize](#configuration-pageSize) option. Available if the [serverPaging](#configuration-serverPaging) option is set to `true` and the data source makes a "read" request.
+
+##### data.skip `Number`
+
+The number of data items to skip. Available if the [serverPaging](#configuration-serverPaging) option is set to `true` and the data source makes a "read" request.
+
+##### data.sort `Array`
+
+The current sort configuration as set via the [sort](#configuration-sort) option. Available if the [serverSorting](#configuration-serverSorting) option is set to `true` and the data source makes a "read" request.
+
+##### data.take `Number`
+
+The number of data items to return (the same as `data.pageSize`). Available if the [serverPaging](#configuration-serverPaging) option is set to `true` and the data source makes a "read" request.
+
+##### type `String`
+
+The type of the request which the data source makes. The supported values are "create", "read", "update" and "destroy".
+
+#### Returns
+
+`Object` the request parameters converted to a format required by the remote service.
+
+#### Example - convert data source request parameters
+
+    <script>
     var dataSource = new kendo.data.DataSource({
-         transport: {
-           read: "Catalog/Titles",
-           parameterMap: function(data, type) {
-              return kendo.stringify(data);
-           }
-         }
-     });
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/Northwind.svc/Orders?$format=json",
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+          jsonp: "$callback",
+          cache: true
+        },
+        parameterMap: function(data, type) {
+          if (type == "read") {
+            // send take as "$top" and skip as "$skip"
+            return {
+              $top: data.take,
+              $skip: data.skip
+            }
+          }
+        }
+      },
+      schema: {
+        data: "d"
+      },
+      pageSize: 20,
+      serverPaging: true // enable serverPaging so take and skip are sent as request parameters
+    });
+    dataSource.fetch(function() {
+      console.log(dataSource.view().length); // displays "20"
+    });
+    </script>
+
+
+#### Example - send request parameters as JSON
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        create: {
+          url: "http://demos.kendoui.com/service/products/create",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "create") {
+            // send the created data items as the "models" service parameter encoded in JSON
+            return { models: kendo.stringify(data.models) };
+          }
+        }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.add( { ProductName: "New Product" });
+    dataSource.sync();
+    </script>
 
 ### transport.read `Object|String|Function`
 
-Options for remote read data operation, or the URL of the remote service.
+The configuration used when the data source loads data items from a remote service.
 
-> **Important:** The value of `transport.read` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+> The data source uses [jQuery.ajax](http://api.jquery.com/jQuery.ajax) to make a HTTP request to the remote service. The value configured via `transport.read` is passed to `jQuery.ajax`. This means that you can set
+all options supported by `jQuery.ajax` via `transport.read`.
 
-#### Example: Specify Read Options
+If the value of `transport.read` is a function, the data source invokes that function instead of `jQuery.ajax`.
 
+If the value of `transport.read` is a string the data source uses this string as the URL of the remote service.
+
+#### Example - set the read remote service
+
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            read: {
-                url: "/orders/read",
-                data: {
-                    orderId: $("#input").val() // sends the value of the input as the orderId
-                }
-            }
+      transport: {
+        // make JSONP request to http://demos.kendoui.com/service/products
+        read: {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
         }
+      }
     });
+    dataSource.fetch(function() {
+      console.log(dataSource.view().length); // displays "77"
+    });
+    </script>
 
-#### Example: Specify Read As Function *(Note: transport methods should be consistent - create, update and destroy should be specified as functions too)*
-
+#### Example - send additional parameters to the remote service
+    <input value="html5" id="search" />
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            read: function(options) {
-                // make AJAX request to the remote service
-
-                $.ajax( {
-                    url: "/orders/read",
-                    data: options.data, // the "data" field contains paging, sorting, filtering and grouping data
-                    success: function(result) {
-                        // notify the DataSource that the operation is complete
-
-                        options.success(result);
-                    }
-                });
-            }
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/twitter/search",
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+          data: {
+            q: $("#search").val() // send the value of the #search input to the remote service
+          }
         }
+      }
     });
+    dataSource.fetch();
+    </script>
+
+#### Example - set read as a function
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: function(options) {
+          // make JSONP request to http://demos.kendoui.com/service/products
+          $.ajax({
+            url: "http://demos.kendoui.com/service/products",
+            dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+            success: function(result) {
+              // notify the data source that the request succeeded
+              options.success(result);
+            },
+            error: function(result) {
+              // notify the data source that the request failed
+              options.error(result);
+            }
+          });
+        }
+      }
+    });
+    dataSource.fetch(function() {
+      console.log(dataSource.view().length); // displays "77"
+    });
+    </script>
 
 ### transport.read.cache `Boolean`
 
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, `"_=[TIMESTAMP]"`, to the URL.
+If set to `false` the request result will not be cached by the browser. Setting cache to `false` will only work correctly with HEAD and GET requests. It works by appending *"_={timestamp}"* to the GET parameters.
+By default "jsonp" requests are not cached.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - enable request caching
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         read: {
-            cache: false
+          /* omitted for brevity */
+          cache: true
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.read.contentType `String`
 
 The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
-        read: {
-            contentType: "application/json"
+#### Example - set content type
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        create: {
+          /* omitted for brevity */
+          contentType: "application/json"
         }
-    }
+      }
+    });
+    </script>
+
 
 ### transport.read.data `Object|String|Function`
 
-Data to be send to the server.
+Additional parameters which are sent to the remote service.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example: Specify Data As Object
-    transport: {
-        read: {
-            data: {
-                id: 42,
-                name: "John Doe"
-            }
-        }
-    }
+#### Example - send additional parameters as an object
 
-#### Example: Specify Data As Function
-    transport: {
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         read: {
-            data: function() {
-                return {
-                    id: 42,
-                    name: "John Doe"
-                };
-            }
+          url: "http://demos.kendoui.com/service/twitter/search",
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+          data: {
+            q: "html5" // send "html5" as the "q" parameter
+          }
         }
-    }
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+#### Example - send additional parameters by returning them from a function
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/twitter/search",
+          dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+          data: function() {
+            return {
+              q: "html5" // send "html5" as the "q" parameter
+            };
+          }
+        }
+      }
+    });
+    dataSource.fetch();
+    </script>
 
 ### transport.read.dataType `String`
 
-The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+The type of result expected from the server. Commonly used values are "json" and "jsonp".
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set the data type to JSON
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         read: {
-            dataType: "json"
+          /* omitted for brevity */
+          dataType: "json"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.read.type `String`
 
-The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+The type of request to make ("POST", "GET", "PUT" or `"DELETE"`), default is "GET".
+
+> The `type` option is ignored if `dataType` is set to "jsonp". JSONP always uses GET requests.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set the HTTP verb of the request
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         read: {
-            type: "POST"
+          /* omitted for brevity */
+          type: "POST"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.read.url `String|Function`
 
-The remote url to call when creating a new record.
+The URL to which the request is sent.
 
-#### Example
-    transport: {
-        read: {
-            url: "/read"
-        }
-    }
+If set to function the data source will invoke it and use the result as the URL.
 
-#### Example: Specify Read URL As Function
-    transport: {
+#### Example - specify URL as a string
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         read: {
-            url: function(params) {
-                //build url
-                return "url";
-            }
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
         }
-    }
+      }
+    });
+    dataSource.fetch(function() {
+      console.log(dataSource.view().length); // displays "77"
+    });
+    </script>
+
+#### Example - specify URL as a function
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: function(options) {
+            return "http://demos.kendoui.com/service/products",
+          }
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        }
+      }
+    });
+    dataSource.fetch(function() {
+      console.log(dataSource.view().length); // displays "77"
+    });
+    </script>
 
 ### transport.update `Object|String|Function`
 
-Options for remote update data operation, or the URL of the remote service.
+The configuration used when the data source saves updated data items. Those are data items whose fields have been updated.
 
-> **Important:** The value of `transport.update` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+> The data source uses [jQuery.ajax](http://api.jquery.com/jQuery.ajax) to make a HTTP request to the remote service. The value configured via `transport.update` is passed to `jQuery.ajax`. This means that you can set
+all options supported by `jQuery.ajax` via `transport.update`.
 
-#### Example: Specify Update Options
+If the value of `transport.update` is a function, the data source invokes that function instead of `jQuery.ajax`.
 
+If the value of `transport.update` is a string the data source uses this string as the URL of the remote service.
+
+#### Example - specify update as a string
+
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            update: {
-                url: "/orders/update",
-                data: {
-                    orderId: $("#input").val() // sends the value of the input as the orderId
-                }
-            }
+      transport: {
+        read:  {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        update: {
+          url: "http://demos.kendoui.com/service/products/update",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
         }
+      },
+      schema: {
+        model: { id: "ProductID" }
+      }
     });
+    dataSource.fetch(function() {
+      var product = dataSource.at(0);
+      product.set("UnitPrice", 20);
+      dataSource.sync(); makes request to http://demos.kendoui.com/service/products/update
+    });
+    </script>
 
-#### Example: Specify Update As Function *(Note: transport methods should be consistent - read, create and destroy should be specified as functions too)*
+#### Example - specify update as a function
 
+    <script>
     var dataSource = new kendo.data.DataSource({
-        transport: {
-            update: function(options) {
-                // make AJAX request to the remote service
-
-                $.ajax( {
-                    url: "/orders/update",
-                    data: options.data, // the "data" field contains paging, sorting, filtering and grouping data
-                    success: function(result) {
-                        // notify the DataSource that the operation is complete
-
-                        options.success(result);
-                    }
-                });
+      transport: {
+        read: function(options) {
+          /* implementation omitted for brevity */
+        },
+        update: function(options) {
+          // make JSONP request to http://demos.kendoui.com/service/products/update
+          $.ajax({
+            url: "http://demos.kendoui.com/service/products/update",
+            dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+            // send the updated data items as the "models" service parameter encoded in JSON
+            data: {
+              models: kendo.stringify(options.data.models)
+            },
+            success: function(result) {
+              // notify the data source that the request succeeded
+              options.success(result);
+            },
+            error: function(result) {
+              // notify the data source that the request failed
+              options.error(result);
             }
+          });
         }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
     });
-
+    dataSource.fetch(function() {
+      var product = dataSource.at(0);
+      product.set("UnitPrice", 20);
+      dataSource.sync(); makes request to http://demos.kendoui.com/service/products/update
+    });
+    </script>
 
 ### transport.update.cache `Boolean`
 
-If set to false, it will force requested pages not to be cached by the browser. Setting cache to false also appends a query string parameter, `"_=[TIMESTAMP]"`, to the URL.
+If set to `false` the request result will not be cached by the browser. Setting cache to `false` will only work correctly with HEAD and GET requests. It works by appending *"_={timestamp}"* to the GET parameters.
+By default "jsonp" requests are not cached.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - enable request caching
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         update: {
-            cache: false
+          /* omitted for brevity */
+          cache: true
         }
-    }
+      }
+    });
+    </script>
+
 
 ### transport.update.contentType `String`
 
 The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set content type
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         update: {
-            contentType: "application/json"
+          /* omitted for brevity */
+          contentType: "application/json"
         }
-    }
+      }
+    });
+    </script>
 
-### transport.update.data `Object|String|Function`
+### transport.update.data `Object|Function`
 
-Data to be send to the server.
+Additional parameters which are sent to the remote service.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example: Specify Data As Object
-    transport: {
+#### Example - send additional parameters as an object
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         update: {
-            data: {
-                id: 42,
-                name: "John Doe"
-            }
+          /* omitted for brevity */
+          data: {
+            name: "Jane Doe",
+            age: 30
+          }
         }
-    }
+      }
+    });
+    </script>
 
-#### Example: Specify Data As Function
-    transport: {
+#### Example - send additional parameters by returning them from a function
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         update: {
-            data: function() {
-                return {
-                    id: 42,
-                    name: "John Doe"
-                };
+          /* omitted for brevity */
+          data: function() {
+            return {
+              name: "Jane Doe",
+              age: 30
             }
+          }
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.update.dataType `String`
 
-The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+The type of result expected from the server. Commonly used values are "json" and "jsonp".
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set the data type to JSON
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         update: {
-            dataType: "json"
+          /* omitted for brevity */
+          dataType: "json"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.update.type `String`
 
-The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+The type of request to make ("POST", "GET", "PUT" or `"DELETE"`), default is "GET".
+
+> The `type` option is ignored if `dataType` is set to "jsonp". JSONP always uses GET requests.
+
 Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
 
-#### Example
-    transport: {
+#### Example - set the HTTP verb of the request
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
         update: {
-            type: "POST"
+          /* omitted for brevity */
+          type: "POST"
         }
-    }
+      }
+    });
+    </script>
 
 ### transport.update.url `String|Function`
 
-The remote url to call when creating a new record.
+The URL to which the request is sent.
 
-#### Example
-    transport: {
-        update: {
-            url: "/update"
-        }
-    }
+If set to function the data source will invoke it and use the result as the URL.
 
-#### Example: Specify Update URL As Function
-    transport: {
+#### Example - specify URL as a string
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read:  {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
         update: {
-            url: function(params) {
-                //build url
-                return "url";
-            }
+          url: "http://demos.kendoui.com/service/products/update",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
         }
-    }
+      },
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.fetch(function() {
+      var product = dataSource.at(0);
+      product.set("UnitPrice", 20);
+      dataSource.sync();
+    });
+    </script>
+
+#### Example - specify URL as a function
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read:  {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        update: {
+          url: function(options) {
+            return "http://demos.kendoui.com/service/products/update",
+          },
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        }
+      },
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.fetch(function() {
+      var product = dataSource.at(0);
+      product.set("UnitPrice", 20);
+      dataSource.sync();
+    });
+    </script>
 
 ### type `String`
 
-Loads transport with preconfigured settings. Currently supports only "odata" (Requires kendo.data.odata.js to be included).
+If set the data source will use a predefined [transport](#configuration-transport) and/or [schema](#configuration-schema). The only supported value is "odata" which supports the [OData](http://www.odata.org) v.2 protocol.
+
+#### Example - enable OData support
+
+    <script>
+    var dataSource= new kendo.data.DataSource({
+      type: "odata",
+      transport: {
+        read: "http://demos.kendoui.com/service/Northwind.svc/Orders"
+      },
+      pageSize: 20,
+      serverPaging: true
+    });
+    dataSource.fetch(function() {
+      console.log(dataSource.view().length); // displays "20"
+    });
+    </script>
 
 ## Methods
 
 ### add
 
-Adds a new data item to the DataSource.
-
-#### Example
-
-    var model = kendo.data.Model.extend({
-        id: "orderId",
-        fields: {
-            name: "customerName",
-            description: "orderDescription",
-            address: "customerAddress"
-        }
-    });
-    // add a new model item to the data source.  If a model has not been declared as above, a new
-    // model instance will be created for you.
-    dataSource.add({ name: "John Smith", description: "Product Description", address: "123 1st Street" });
+Adds a data item to the data source.
 
 #### Parameters
 
 ##### model `Object|kendo.data.Model`
 
-Either a [kendo.data.Model](/api/framework/model) instance or JavaScript object containing the field values.
+Either a [kendo.data.Model](/api/framework/model) instance or JavaScript object containing the data item field values.
 
 #### Returns
 
-`kendo.data.Model` The instance which has been added.
+`kendo.data.Model` the data item which is inserted.
+
+#### Example - add a data item to a local data source
+
+    <script>
+    var dataSource= new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 }
+      ]
+    });
+    dataSource.add({ name: "John Doe", age: 33 });
+    var data = dataSource.data();
+    var lastItem = data[data.length - 1];
+    console.log(lastItem.name); // displays "John Doe"
+    console.log(lastItem.age); // displays "33"
+    </script>
+
+#### Example - add a data item to a remote data source
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        // make JSONP request to http://demos.kendoui.com/service/products/create
+        create: {
+          url: "http://demos.kendoui.com/service/products/create",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        parameterMap: function(data, type) {
+          if (type == "create") {
+            // send the created data items as the "models" service parameter encoded in JSON
+            return { models: kendo.stringify(data.models) };
+          }
+        }
+      },
+      batch: true,
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    // add a new data item
+    dataSource.add( { ProductName: "New Product" });
+    // save the created data item
+    dataSource.sync();
+    </script>
 
 ### aggregate
 
-Get current aggregate descriptors or applies aggregates to the data.
-
-#### Example
-
-    dataSource.aggregate({ field: "orderId", aggregate: "sum" });
+Gets or sets the aggregate configuration.
 
 #### Parameters
 
-##### val `Object|Array`
+##### value `Object|Array`
 
-Aggregate(s) to be applied to the data.
+The aggregate configuration. Accepts the same values as the [aggregate](#configuration-aggregate) option.
 
 #### Returns
 
-`Array` Current aggregate descriptors
+`Array` the current aggregate configuration.
+
+#### Example - set the data source aggregates
+    <script>
+    var dataSource= new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    // calculate the minimum and maximum age
+    dataSource.aggregate([
+      { field: "age", aggregate: "min" },
+      { field: "age", aggregate: "max" }
+    ]);
+    var ageAggregates = dataSource.aggregates().age;
+    console.log(ageAggregates.min); // displays "30"
+    console.log(ageAggregates.max); // displays "33"
+    </script>
+
+#### Example - get the data source aggregates
+    <script>
+    var dataSource= new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      aggregate: [
+        { field: "age", aggregate: "min" },
+        { field: "age", aggregate: "max" }
+      ]
+    });
+    var aggregates = dataSource.aggregate();
+    console.log(kendo.stringify(aggregates[0])); // displays {"aggregate": "min", "field": "age"}
+    </script>
 
 ### aggregates
 
-Get result of aggregates calculation
-
-#### Example
-
-    var aggr = dataSource.aggregates();
+Returns the aggregate results.
 
 #### Returns
 
-`Array` Aggregates result
+`Object` the aggregate results. There is a key for every aggregated field.
+
+#### Example - get aggregate results
+
+    <script>
+    var dataSource= new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      aggregate: [
+        { field: "age", aggregate: "min" },
+        { field: "name", aggregate: "max" }
+      ]
+    });
+    var ageAggregates = dataSource.aggregates().age;
+    console.log(ageAggregates.min); // displays "30"
+    console.log(ageAggregates.max); // displays "33"
+    </script>
 
 ### at
 
-Returns the data item at the specified index.
-
-#### Example
-
-    // returns the 4th item in the collection
-    var order = dataSource.at(3);
+Returns the data item at the specified index. The index is zero-based.
 
 #### Parameters
 
@@ -1949,386 +2547,739 @@ The zero-based index of the data item.
 
 #### Returns
 
-`kendo.data.ObservableObject|kendo.data.Model` The type depends on the schema.
+`kendo.data.ObservableObject` the data item at the specified index. Returns `undefined` if a data item is not found at the specified index.
+Returns a `kendo.data.Model` instance if the [schema.model](#configuration-schema.model) option is set.
+
+#### Example - get a data item
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ]
+    });
+    dataSource.fetch(function(){
+      var dataItem = dataSource.at(0);
+      console.log(dataItem.name); // displays "Jane Doe"
+      var dataItemWhichDoesNotExist = dataSource.at(3);
+      console.log(dataItemWhichDoesNotExist); // displays "undefined"
+    });
+    </script>
 
 ### cancelChanges
 
-Cancel the changes made to the DataSource after the last sync. Any changes currently existing in the model
-will be discarded.
-
-#### Example: Cancel All Changes
-
-    // we have updated 2 items and deleted 1. All of those changes will be discarded.
-    dataSource.cancelChanges();
-
-#### Example: Cancel Model Changes
-
-    var model = dataSource.at(0);
-
-    dataSource.cancelChanges(model);
+Cancels any pending changes in the data source. Deleted data items are restored, new data items are removed and updated data items are restored to their initial state.
 
 #### Parameters
 
 ##### model `kendo.data.Model`
 
-Optional model instance. If specified only the changes of this model will be discarded. If omitted all changes will be discarded.
+The optional data item (model). If specified only the changes of this data item will be discarded. If omitted all changes will be discarded.
+
+#### Example - cancel all changes
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { id: 1, name: "Jane Doe" }
+      ],
+      schema: {
+        model: { id: "id" }
+      }
+    });
+    dataSource.fetch(function(){
+      // add a new data item
+      dataSource.add({ name: "John Doe" });
+      // update existing data item
+      var dataItem = dataSource.at(0);
+      dataItem.set("name", "Jane Doe 2");
+      // cancel all changes
+      dataSource.cancelChanges();
+      dataItem = dataSource.at(0);
+      console.log(dataItem.name); // displays "Jane Doe"
+      console.log(dataSource.data().length); // displays "1"
+    });
+    </script>
+
+#### Example - cancel changes of only one data item
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { id: 1, name: "Jane Doe" }
+      ],
+      schema: {
+        model: { id: "id" }
+      }
+    });
+    dataSource.fetch(function(){
+      // add a new data item
+      dataSource.add({ name: "John Doe" });
+      // update existing data item
+      var dataItem = dataSource.at(0);
+      dataItem.set("name", "Jane Doe 2");
+      // cancel the changes of the dataItem
+      dataSource.cancelChanges(dataItem);
+      console.log(dataItem.name); // displays "Jane Doe"
+      console.log(dataSource.data().length); // displays "2"
+    });
+    </script>
 
 ### data
 
-Gets or sets the data of the `DataSource`.
+Gets or sets the data items of the data source.
+
+If the data source is bound to a remote service (via the [transport](#configuration-transport) option) the `data` method will return the service response.
+Every item from the response is wrapped in a [kendo.data.ObservableObject](/api/framework/observableobject) or [kendo.data.Model](/api/framework/model)(if the [schema.model](#configuration-schema.model) option is set).
+
+If the data source is bound to a JavaScript array (via the [data](#configuration-data) option) the `data` method will return the items of that array.
+Every item from the array is wrapped in a [kendo.data.ObservableObject](/api/framework/observableobject) or [kendo.data.Model](/api/framework/model)(if the [schema.model](#configuration-schema.model) option is set).
+
+If the data source is grouped (via the [group](#configuration-group) option or the [group](#methods-group) method) and the [serverGrouping](#configuration-serverGrouping) is set to `true`
+the `data` method will return the group items.
 
 #### Parameters
 
-##### value `Array`
+##### value `Array|kendo.data.ObservableArray`
 
-An `Array` of items to set as the current data of the `DataSource`. If omitted the current data will be returned.
+The data items which will replace the current ones in the data source. If omitted the current data items will be returned.
 
 #### Returns
 
-`kendo.data.ObservableArray` the items of the `DataSource`
+`kendo.data.ObservableArray` the data items of the data source. Returns empty array if the data source hasn't been populated with data items via the [read](#methods-read), [fetch](#methods-read) or [query](#methods-query) methods.
 
-#### Example: Getting the Data of a DataSource
+#### Example - get the data items when bound to array
 
-    var data = dataSource.data();
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ]
+    });
+    dataSource.fetch(function(){
+      var data = dataSource.data();
+      console.log(data.length);  // displays "2"
+      console.log(data[0].name); // displays "Jane Doe"
+      console.log(data[1].name); // displays "John Doe"
+    });
+    </script>
 
-    for (var i = 0; i < data.length; i++) {
-        var dataItem = data[i];
-        // use the dataItem
-    }
+#### Example - get the data items when bound to a remote service
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read:  {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        }
+      }
+    });
+    dataSource.fetch(function(){
+      var data = dataSource.data();
+      console.log(data.length);  // displays "77"
+      console.log(data[0].ProductName); // displays "Chai"
+    });
+    </script>
 
-#### Example: Setting the Data of a DataSource
-
-    var data = [ { name: "John Doe" } ];
-    dataSource.data(data);
+#### Example - set the data items
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" }
+      ]
+    });
+    dataSource.fetch(function(){
+      dataSource.data([ { name: "John Doe" } ]);
+      var data = dataSource.data();
+      console.log(data[0].name); // displays "John Doe"
+    });
+    </script>
 
 ### fetch
 
-Fetches data using the current filter/sort/group/paging information.
-If data is not available and remote operations are enabled data is requested through the transport,
-otherwise operations are executed over the available data.
+Reads the data items from a remote service (if the [transport](#configuration-transport) option is set) or from a JavaScript array (if the [data](#configuration-data) option is set).
 
-#### Example
-
-    dataSource.fetch();
+> The `fetch` method makes a request to the remote service only the first time it is called.
 
 #### Parameters
 
 ##### callback `Function` *(optional)*
 
-Optional callback which will be executed when the data is ready.
+The optional function which is executed when the remote request is finished.  The function context (available via the `this` keyword) will be set to the data source instance.
+
+#### Example - read data from a remote data source
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read:  {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        }
+      }
+    });
+    // read the data items from http://demos.kendoui.com/service/products
+    dataSource.fetch(function(){
+      var data = this.data();
+      console.log(data.length);  // displays "77"
+      console.log(data[0].ProductName); // displays "Chai"
+    });
+    </script>
 
 ### filter
 
-Get current filters or filter the data.
-
-_Supported filter operators/aliases are_:
-
-
-#### *Equal To*
-
-"eq", "==", "isequalto", "equals", "equalto", "equal"
-
-#### *Not Equal To*
-
-"neq", "!=", "isnotequalto", "notequals", "notequalto", "notequal", "ne"
-
-#### *Less Then*
-
-"lt", "<", "islessthan", "lessthan", "less"
-
-#### *Less Then or Equal To*
-
-"lte", "<=", "islessthanorequalto", "lessthanequal", "le"
-
-#### *Greater Then*
-
-"gt", ">", "isgreaterthan", "greaterthan", "greater"
-
-#### *Greater Then or Equal To*
-
-"gte", ">=", "isgreaterthanorequalto", "greaterthanequal", "ge"
-
-#### *Starts With*
-
-"startswith"
-
-#### *Ends With*
-
-"endswith"
-
-#### *Contains*
-
-"contains", "substringof"
-
-#### Example
-
-    dataSource.filter({ field: "orderId", operator: "eq", value: 10428 });
-    dataSource.filter([
-         { field: "orderId", operator: "neq", value: 42 },
-         { field: "unitPrice", operator: "ge", value: 3.14 }
-    ]);
-
-    // returns data where orderId is equal to 10248 or customerName starts with Paul
-    dataSource.filter({
-        logic: "or",
-        filters: [
-          { field: "orderId", operator: "eq", value: 10248 },
-          { field: "customerName", operator: "startswith", value: "Paul" }
-        ]
-    });
+Gets or sets the filter configuration.
 
 #### Parameters
 
-##### filters `Object|Array`
+##### value `Object` *(optional)*
 
-Filter(s) to be applied to the data.
+The filter configuration. Accepts the same values as the [filter](#configuration-filter) option.
 
 #### Returns
 
-`Array` The current filter descriptors.
+`Object` the current filter configuration.
+
+#### Example - set the data source filter
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ]
+    });
+    dataSource.filter( { field: "name", operator: "startswith", value: "Jane" });
+    var view = dataSource.view();
+    console.log(view.length);
+    console.log(view[0].name); // displays "Jane Doe"
+    </script>
+
+#### Example - get the data source filter
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ],
+      filter: { field: "name", operator: "startswith", value: "Jane" }
+    });
+    var filter = dataSource.filter();
+    console.log(filter.logic);  // displays "and"
+    console.log(filter.filters[0]); displays '{field: "name", operator: "startswith", value: "Jane"}'
+    </script>
 
 ### get
 
-Retrieves a model instance by given id.
+Gets the data item (model) with the specified [id](/api/framework/model#fields-id).
 
-#### Example
-
-    var order = dataSource.get(1); // retrieves the "order" model item with an id of 1
+> The `get` method requires the [schema.model](#configuration-schema.model) option to be set and the `id` of the model to be specified.
 
 #### Parameters
 
 ##### id `Number|String`
 
-The id of the model to be retrieved. The id of the model is defined via `schema.model.id`.
+The id of the model to look for.
 
 #### Returns
 
-`kendo.data.Model` the model instance. If not found `undefined` is returned.
+`kendo.data.Model` the model instance. Returns `undefined` if a model with the specified id is not found.
+
+#### Example - find a model by id
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        {id: 1, name: "Jane Doe" },
+        {id: 2, name: "John Doe" }
+      ],
+      schema: {
+        model: { id: "id" }
+      }
+    });
+    dataSource.fetch(function() {
+      var dataItem = dataSource.get(1);
+      console.log(dataItem.name); // displays "Jane Doe"
+    });
+    </script>
 
 ### getByUid
 
-Retrieves a data item by its [uid](/api/framework/observableobject#uid) field.
+Gets the data item (model) with the specified [uid](/api/framework/model#fields-uid).
 
-#### Example
-    var uid = $("tr").data("uid");
-
-    var order = dataSource.getByUid(uid);
 #### Parameters
 
 ##### uid `String`
 
-The uid of the item to be retrieved
+The uid of the model to look for.
 
 #### Returns
 
-`kendo.data.ObservableObject` or `kendo.data.Model` (if `schema.model` is set). If not found `undefined` is returned.
+`kendo.data.ObservableObject` the model instance. Returns `undefined` if a model with the specified uid is not found.
 
 ### group
 
-Get current group descriptors or group the data.
-
-#### Example
-
-    dataSource.group({ field: "orderId" });
+Gets or sets the grouping configuration.
 
 #### Parameters
 
-##### groups `Object|Array`
+##### value `Object|Array`
 
-Group(s) to be applied to the data.
+The grouping configuration. Accepts the same values as the [group](#configuration-group) option.
 
 #### Returns
 
-`Array` The current group descriptors.
+`Array` the current grouping configuration.
+
+#### Example - group the data items
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Tea", category: "Beverages" },
+        { name: "Coffee", category: "Beverages" },
+        { name: "Ham", category: "Food" }
+      ]
+    });
+    dataSource.group({ field: "category" });
+    var view = dataSource.view();
+    console.log(view.length); // displays "2"
+    var beverages = view[0];
+    console.log(beverages.value); // displays "Beverages"
+    console.log(beverages.items[0].name); // displays "Tea"
+    console.log(beverages.items[1].name); // displays "Coffee"
+    var food = view[1];
+    console.log(food.value); // displays "Food"
+    console.log(food.items[0].name); // displays "Ham"
+    </script>
+
+#### Example - get the data source grouping configuration
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Tea", category: "Beverages" },
+        { name: "Coffee", category: "Beverages" },
+        { name: "Ham", category: "Food" }
+      ],
+      group: { field: "category" }
+    });
+    var groups = dataSource.group();
+    console.log(groups.length); // displays "1"
+    console.log(groups[0].field); // displays "category"
+    </script>
 
 ### hasChanges `Boolean`
 
-Get if DataSource has changes.
+Returns `true` if the data source has changes.
 
 #### Returns
 
-`Boolean` True if DataSource records are modified. Otherwise, false.
+`Boolean` `true` if the data items are modified. Otherwise, `false`.
+
+#### Example - check if the data source has changes
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { id: 1, name: "Jane Doe" }
+      ],
+      schema: {
+        model: { id: "id" }
+      }
+    });
+    dataSource.fetch(function() {
+      console.log(dataSource.hasChanges()); // displays "false"
+      dataSource.add({ name: "John Doe" });
+      console.log(dataSource.hasChanges()); // displays "true"
+    });
+    </script>
 
 ### indexOf
 
-Get the index of the specified `kendo.data.ObservableObject` or `kendo.data.Model`.
-
-#### Returns
-
-`Number` the index of the specified value.
+Gets the index of the specified data item.
 
 #### Parameters
 
-##### value `kendo.data.ObservableObject`
+##### model `kendo.data.ObservableObject`
 
-#### Example
+The target data item.
 
-    var item = dataSource.at(0);
+#### Returns
 
-    dataSource.indexOf(item); // returns 0
+`Number` the index of the specified data item. Returns `-1` if the data item is not found.
+
+#### Example - get the index of a data item
+
+    <script>
+    var dataSource= new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    dataSource.fetch(function() {
+      var dataItem = dataSource.at(0);
+      var index = dataSource.indexOf(dataItem);
+      console.log(index); // displays "0"
+    });
+    </script>
 
 ### insert
 
-Inserts a new data item in the DataSource.
-
-#### Example
-
-    dataSource.insert(0, { name: "John Smith", age: 42 });
+Inserts a data item in the data source at the specified index.
 
 #### Parameters
 
 ##### index `Number`
 
-The zer-based index at which the data item will be inserted
+The zero-based index at which the data item will be inserted.
 
-##### model `Object|kendo.data.Model`
+##### model `Object|kendo.data.ObservableObject|kendo.data.Model`
 
 Either a [kendo.data.Model](/api/framework/model) instance or JavaScript object containing the field values.
 
 #### Returns
 
-`kendo.data.Model` The instance which has been inserted.
+`kendo.data.Model` the data item which is inserted.
+
+#### Example - insert a data item
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { id: 1, name: "Jane Doe" }
+      ],
+      schema: {
+        model: { id: "id" }
+      }
+    });
+    dataSource.fetch(function() {
+      var dataItem = dataSource.insert(0, { name: "John Doe" });
+      var index = dataSource.indexOf(dataItem);
+      console.log(index); // displays "0"
+    });
+    </script>
 
 ### page
 
-Get/set the current page index.
-
-#### Example
-
-    dataSource.page(2);
+Gets or sets the current page.
 
 #### Parameters
 
 ##### page `Number`
 
-The index of the page to be retrieved
+The new page.
 
 #### Returns
 
-`Number` Current page index
+`Number` the current page.
+
+#### Example - set the current page
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ],
+      pageSize: 1
+    });
+    dataSource.fetch(function() {
+      dataSource.page(2);
+      var view = dataSource.view();
+      console.log(view[0].name); // displays "John Doe"
+    });
+    </script>
+
+#### Example - get the current page
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ],
+      pageSize: 1,
+      page: 2
+    });
+    console.log(dataSource.page()); // displays "2"
 
 ### pageSize
 
-Get/set the current pageSize or request a page with specified number of records.
-
-#### Example
-
-    dataSource.pageSize(25);
+Gets or sets the current page size.
 
 #### Parameters
 
 ##### size `Number`
 
-The of number of records to be retrieved.
+The new page size.
 
 #### Returns
 
-`Number` Current page size
+`Number` the current page size.
+
+#### Example - set the page size
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ]
+    });
+    dataSource.pageSize(1);
+    dataSource.fetch(function() {
+      dataSource.page(2);
+      var view = dataSource.view();
+      console.log(view[0].name); // displays "John Doe"
+    });
+    </script>
+
+#### Example - get the page size
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe" },
+        { name: "John Doe" }
+      ],
+      pageSize: 1
+    });
+    console.log(dataSource.pageSize()); // displays "1"
+    </script>
 
 ### query
 
-Executes a query over the data. Available operations are paging, sorting, filtering, grouping.
-If data is not available or remote operations are enabled, data is requested through the transport.
-Otherwise operations are executed over the available data.
-
-#### Example
-
-    // create a view containing at most 20 records, taken from the
-    // 5th page and sorted ascending by orderId field.
-    dataSource.query({ page: 5, pageSize: 20, sort: { field: "orderId", dir: "asc" } });
-
-    // moves the view to the first page returning at most 20 records
-    // but without particular ordering.
-    dataSource.query({ page: 1, pageSize: 20 });
+Executes the specified query over the data items. Makes a HTTP request if bound to a remote service.
 
 #### Parameters
 
 ##### options `Object` *(optional)*
 
-Contains the settings for the operations.
+The query options which should be applied.
+
+##### options.aggregate `Array` *(optional)*
+
+The aggregate configuration. Accepts the same values as the [aggregate](#configuration-aggregate) option.
+The `query` method will request the remote service if the [serverAggregates](#configuration-serverAggregates)
+option is set to `true`.
+
+##### options.filter `Object|Array` *(optional)*
+
+The filter configuration. Accepts the same values as the [filter](#configuration-filter) option.
+The `query` method will request the remote service if the [serverFiltering](#configuration-serverFiltering)
+option is set to `true`.
+
+##### options.group `Object|Array` *(optional)*
+
+The grouping configuration. Accepts the same values as the [filter](#configuration-filter) option.
+The `query` method will request the remote service if the [serverGrouping](#configuration-serverGrouping)
+option is set to `true`.
+
+##### options.page `Number` *(optional)*
+
+The page of data to return.
+The `query` method will request the remote service if the [serverPaging](#configuration-serverPaging)
+option is set to `true`.
+
+##### options.pageSize `Number` *(optional)*
+
+The number of data items to return.
+The `query` method will request the remote service if the [serverPaging](#configuration-serverPaging)
+option is set to `true`.
+
+##### options.sort `Object|Array` *(optional)*
+
+The sort configuration. Accepts the same values as the [sort](#configuration-sort) option.
+The `query` method will request the remote service if the [serverSorting](#configuration-serverSorting)
+option is set to `true`.
+
+#### Example - query the data source
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        }
+      },
+      change: function(e) {
+        var view = this.view();
+        console.log(view[0].ProductName); // displays "Manjimup Dried Apples"
+      }
+    });
+    // sort by "ProductName" and get the third page with page size set to 20
+    dataSource.query({
+      sort: { field: "ProductName", dir: "desc" },
+      page: 3,
+      pageSize: 20
+    });
+    </script>
 
 ### read
 
-Read data into the DataSource using the `transport.read` setting.
+Reads the data items from a remote service (if the [transport](#configuration-transport) option is set) or from a JavaScript array (if the [data](#configuration-data) option is set).
 
-#### Example
-
-    var dataSource = new kendo.data.DataSource({
-        transport: {
-            read: "orders.json";
-        }
-    });
-
-    // the datasource will not contain any data until read is called
-
-    dataSource.read();
+> The `read` method always makes a request to the remote service.
 
 #### Parameters
 
 ##### data `Object` *(optional)*
 
-Optional data to pass to the remote service configured via `transport.read`.
+Optional data to pass to the remote service.
+
+#### Example - read data from a remote service
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp"
+        }
+      },
+      change: function(e) {
+        var view = this.view();
+        console.log(view[0].ProductName); // displays "Chai"
+      }
+    });
+    dataSource.read();
+    </script>
 
 ### remove
 
-Remove a given `kendo.data.Model` instance from the DataSource.
-
-#### Example
-
-    var first = dataSource.get(1);
-
-    dataSource.remove(first);
+Removes the specified data item from the data source.
 
 #### Parameters
 
-##### model `Object`
+##### model `kendo.data.Model`
 
-The [kendo.data.Model](/api/framework/model) instance to be removed.
+The data item which should be removed.
+
+#### Example - remove a data item
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { id: 1, name: "Jane Doe" },
+        { id: 2, name: "John Doe" }
+      ],
+      schema: {
+        model: { id: "id" }
+      }
+    });
+    dataSource.fetch(function() {
+      var dataItem = dataSource.at(0);
+      dataSource.remove(dataItem);
+      var data = dataSource.data();
+      console.log(data.length);  // displays "1"
+      console.log(data[0].name); // displays "John Doe"
+    });
+    </script>
 
 ### sort
 
-Get current sort descriptors or sorts the data.
-
-#### Example
-
-    dataSource.sort({ field: "orderId", dir: "desc" });
-    dataSource.sort([
-         { field: "orderId", dir: "desc" },
-         { field: "unitPrice", dir: "asc" }
-    ]);
+Gets or sets the sort order which will be applied over the data items.
 
 #### Parameters
 
-##### sort `Object|Array`
+##### value `Object|Array`
 
-Sort options to be applied to the data
+The sort configuration. Accepts the same values as the [sort](#configuration-sort) option.
 
 #### Returns
 
-`Array` the current sort descriptors.
+`Array` the current sort configuration.
+
+#### Example - sort the data items
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    dataSource.sort({ field: "age", dir: "desc" });
+    var view = dataSource.view();
+    console.log(view[0].name); // displays "John Doe"
+    </script>
+
+#### Example - get the sort configuration
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      sort: { field: "age", dir: "desc" }
+    });
+    var sort = dataSource.sort();
+    console.log(sort.length);   // displays "1"
+    console.log(sort[0].field); // displays "age"
+    </script>
 
 ### sync
 
-Synchronizes changes through the transport. Any pending CRUD operations will be sent to the server.
-If the DataSource is in **batch** mode, only one call will be made for each type of operation (Create, Update, Destroy).
-Otherwise, the DataSource will send one request per item change and change type.
+Saves any data item changes.
 
-#### Example
+The `sync` method will request the remote service if:
+ - the [transport.create](#configuration-transport.create) option is set and the data source contains new data items
+ - the [transport.destroy](#configuration-transport.destroy) option is set and data items have been removed from the data source
+ - the [transport.update](#configuration-transport.update) option is set and the data source contains updated data items
 
-    // we have deleted 2 items and updated 1. If not in batch mode, this will send three commands to the server - two Destroy and one Update.
-    dataSource.sync();
+#### Example - save the changes
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      batch: true,
+      transport: {
+        read:  {
+          url: "http://demos.kendoui.com/service/products",
+          dataType: "jsonp" //"jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        update: {
+          url: "http://demos.kendoui.com/service/products/update",
+          dataType: "jsonp" //"jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        },
+        destroy: {
+          url: "http://demos.kendoui.com/service/products/destroy",
+          dataType: "jsonp" //"jsonp" is required for cross-domain requests; use "json" for same-domain requests
+        }
+      },
+      schema: {
+        model: { id: "ProductID" }
+      }
+    });
+    dataSource.fetch(function() {
+      var product = dataSource.at(0);
+      product.set("UnitPrice", 20);
+      var anotherProduct = dataSource.at(1);
+      anotherProduct.set("UnitPrice", 20);
+      var yetAnotherProduct = dataSource.at(2);
+      dataSource.remove(yetAnotherProduct);
+      dataSource.sync(); // makes a request to http://demos.kendoui.com/service/products/update" and http://demos.kendoui.com/service/products/destroy
+    });
+    </script>
 
 ### total
 
-Get the total number of data items.
-
-#### Example
-
-    var total = dataSource.total();
+Gets the total number of data items. Uses [schema.total](#configuration-schema.total) if the [transport.read](#configuration-transport.read) option is set.
 
 #### Returns
 
-`Number` the number of data items.
+`Number` the total number of data items. Returns the `length` of the array returned by the [data](#methods-data) method if `schema.total` or `transport.read` are not set.
+Returns `0` if the data source hasn't been populated with data items via the [read](#methods-read), [fetch](#methods-read) or [query](#methods-query) methods.
+
+#### Example - get the total number of data items
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    dataSource.fetch(function() {
+      console.log(dataSource.total()); // displays "2"
+    });
+    </script>
 
 ### totalPages
 
