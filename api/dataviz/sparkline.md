@@ -333,7 +333,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 The visibility of the lines.
 
-### categoryAxis.minorGridLines.width `Number`*(default: 1> The width of the lines. <p)*
+### categoryAxis.minorGridLines.width `Number`
 
 The width of the lines.
 
@@ -557,9 +557,10 @@ Specifiying "auto" will set the step to such value that the total number of cate
 This option is ignored if **baseUnit** is set to "fit".
 
 
-### categoryAxis.labels.culture `String`*(default: global culture)*
+### categoryAxis.labels.culture `String`
 
 Culture to use for formatting the dates. See [Globalization](http://www.kendoui.com/documentation/framework/globalization/overview.aspx) for more information.
+It uses the global culture by default.
 
 ### categoryAxis.labels.dateFormats `Object`
 
@@ -1134,9 +1135,9 @@ The border of the points.
 
 ** Applicable to bar, column and pie series **
 
-### series.border.color `String|Function`*(default: the color of the curren series)*
+### series.border.color `String|Function`
 
-The color of the border.
+The color of the border.  It defaults to the color of the current series.
 
 ### series.border.dashType `String|Function`*(default: "solid")*
 
@@ -2107,8 +2108,8 @@ Template variables:
              visible: true,
              shared: true,
              sharedTemplate:
-                "#= category # </br>" +                                       
-                "# for (var i = 0; i < points.length; i++) { #" +             
+                "#= category # </br>" +
+                "# for (var i = 0; i < points.length; i++) { #" +
                     "#= points[i].series.name #: #= points[i].value # </br>" +
                 "# } #"
          }
