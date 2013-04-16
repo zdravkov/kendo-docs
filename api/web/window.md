@@ -100,6 +100,22 @@ The minimum width (in pixels) that may be achieved by resizing the window.
 
 Specifies whether the window should show a modal overlay over the page.
 
+### pinned `Boolean`*(default: false)*
+
+Specifies whether the window should be pinned, i.e. it will not move together with the page content during scrolling.
+
+### position `Object`
+
+A collection of one or two members, which define the initial Window's top and/or left position on the page.
+
+### position.top `Number`
+
+Specifies the initial top position of the window.
+
+### position.left `Number`
+
+Specifies the initial left position of the window.
+
 ### resizable `Boolean`*(default: true)*
 
 Enables (**true**) or disables (**false**) the ability for users to resize a

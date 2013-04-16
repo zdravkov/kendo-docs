@@ -44,17 +44,24 @@ Among the properties that can be controlled:
 
 
 *   Minimum height/width
-*   Available user actions (close/refresh/maximize/minimize) and ability to define custom ones
+*   Available user actions (close/refresh/maximize/minimize/pin) and ability to define custom ones
 *   Title
 *   Draggable and resizable behaviors
+*	Initial position in pixels, with regard to the page top-left corner
+*	Pinned state - whether the Window moves together with the rest of the page content during scrolling
 
-### Create a modal Window with all user actions enabled
+### Create a modal Window with all user actions enabled and a predefined position
 
     $("#window").kendoWindow({
-        actions: ["Custom", "Refresh", "Maximize", "Minimize", "Close"],
+        actions: ["Custom", "Pin", "Refresh", "Maximize", "Minimize", "Close"],
         draggable: false,
         height: "300px",
         modal: true,
+		pinned: false,
+		position: {
+			top: 100,
+			left: 100
+		},
         resizable: false,
         title: "Modal Window",
         width: "500px"
