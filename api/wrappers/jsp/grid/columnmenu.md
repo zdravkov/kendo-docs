@@ -27,7 +27,7 @@ If set to true the column menu would allow the user to select (show and hide) gr
 
 ### filterable `boolean`
 
-If set to true the column menu would allow the user to filter the grid. By default the column menu allows the user to filter if grid filtering is enabled.
+If set to true the column menu would allow the user to filter the grid. By default the column menu allows the user to filter if filtering is enabled via the filterable.
 
 #### Example
     <kendo:grid-columnMenu filterable="filterable">
@@ -35,7 +35,7 @@ If set to true the column menu would allow the user to filter the grid. By defau
 
 ### sortable `boolean`
 
-If set to true the column menu would allow the user to sort the grid by the column field. By default the column menu allows the user to sort if grid sorting is enabled.
+If set to true the column menu would allow the user to sort the grid by the column field. By default the column menu allows the user to sort if sorting is enabled via the sortable option.
 
 #### Example
     <kendo:grid-columnMenu sortable="sortable">

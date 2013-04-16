@@ -31,7 +31,7 @@ If set to true the column menu would allow the user to select (show and hide) gr
     ?>
 
 ### filterable
-If set to true the column menu would allow the user to filter the grid. By default the column menu allows the user to filter if grid filtering is enabled.
+If set to true the column menu would allow the user to filter the grid. By default the column menu allows the user to filter if filtering is enabled via the filterable.
 
 #### Returns
 `\Kendo\UI\GridColumnMenu`
@@ -78,7 +78,7 @@ The text messages displayed in the column menu. Use it to customize or localize 
     ?>
 
 ### sortable
-If set to true the column menu would allow the user to sort the grid by the column field. By default the column menu allows the user to sort if grid sorting is enabled.
+If set to true the column menu would allow the user to sort the grid by the column field. By default the column menu allows the user to sort if sorting is enabled via the sortable option.
 
 #### Returns
 `\Kendo\UI\GridColumnMenu`

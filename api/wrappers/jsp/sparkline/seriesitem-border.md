@@ -18,7 +18,7 @@ The border of the points.** Applicable to bar, column and pie series **
 
 ### color `String`
 
-The color of the border.
+The color of the border.  It defaults to the color of the current series.
 
 #### Example
     <kendo:sparkline-seriesItem-border color="color">
@@ -53,7 +53,7 @@ The width of the border.
 
 ### color `String`
 
-The color of the border.
+The color of the border.  It defaults to the color of the current series.
 
 #### Example
     <kendo:sparkline-seriesItem-border color="handle_color">
@@ -107,7 +107,7 @@ The width of the border.
 
 ### kendo:sparkline-seriesItem-border-color
 
-The color of the border.
+The color of the border.  It defaults to the color of the current series.
 
 #### Example
     <kendo:sparkline-seriesItem-border>

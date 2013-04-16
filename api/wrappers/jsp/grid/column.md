@@ -7,8 +7,8 @@ publish: true
 
 # \<kendo:grid-column\>
 
-The configuration of the grid columns. Set to array of JavaScript objects or strings. A JavaScript object is interpreted as column configuration. A string is interpreted as the
-field to which the column is bound to. The grid will create a column for every item of the array.
+The configuration of the grid columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
+field to which the column is bound. The grid will create a column for every item of the array.
 
 #### Example
     <kendo:grid-columns>
@@ -19,7 +19,7 @@ field to which the column is bound to. The grid will create a column for every i
 
 ### aggregates `Object`
 
-The aggregate(s) to be calculated for this column when the grid is grouped by its field.
+The aggregate(s) which are calculated when the grid is grouped by the columns field.
 The supported aggregates are "average", "count", "max", "min" and "sum".
 
 #### Example
@@ -36,7 +36,7 @@ HTML attributes of the table cell (<td>) rendered for the column.
 
 ### command `String`
 
-The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit" or "destroy").The "edit" built-in command will put the current row in edit mode.The "destroy" built-in command will delete the current row.Custom commands are supported via the click option. Further configuration is available via [kendo:grid-column-command](#kendo-grid-column-command). 
+The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit" or "destroy").The "edit" built-in command switches the current table row in edit mode.The "destroy" built-in command removes the data item to which the current table row is bound.Custom commands are supported by specifying the click option. Further configuration is available via [kendo:grid-column-command](#kendo-grid-column-command). 
 
 #### Example
     <kendo:grid-column command="command">
@@ -68,7 +68,7 @@ The field to which the column is bound. The value of this field is displayed by 
 
 ### filterable `boolean`
 
-If set to true a filter menu will be displayed for this column when filtering is enabled for the grid. If set to false the filter menu will not be displayed. By default a filter menu is displayed
+If set to true a filter menu will be displayed for this column when filtering is enabled. If set to false the filter menu will not be displayed. By default a filter menu is displayed
 for all columns when filtering is enabled via the filterable option.Can be set to a JavaScript object which represents the filter menu configuration. Further configuration is available via [kendo:grid-column-filterable](#kendo-grid-column-filterable). 
 
 #### Example
@@ -77,7 +77,7 @@ for all columns when filtering is enabled via the filterable option.Can be set t
 
 ### footerTemplate `String`
 
-The template which is used to render the footer table cell for the column.The fields which can be used in the template are:
+The template which renders the footer table cell for the column.The fields which can be used in the template are:
 
 #### Example
     <kendo:grid-column footerTemplate="footerTemplate">
@@ -85,7 +85,7 @@ The template which is used to render the footer table cell for the column.The fi
 
 ### format `String`
 
-The format that is applied to the value before it is displayed. Must be in the form "{0:format}" where "format" is a standard number format,
+The format that is applied to the value before it is displayed. Takes the form "{0:format}" where "format" is a standard number format,
 custom number format, standard date format or a custom date format.
 
 #### Example
@@ -94,7 +94,7 @@ custom number format, standard date format or a custom date format.
 
 ### groupFooterTemplate `String`
 
-The template which is used to render the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
+The template which renders the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
 
 #### Example
     <kendo:grid-column groupFooterTemplate="groupFooterTemplate">
@@ -102,7 +102,7 @@ The template which is used to render the group footer when the grid is grouped b
 
 ### groupHeaderTemplate `String`
 
-The template which is used to render the group header when the grid is grouped by the column field. By default the name of the field
+The template which renders the group header when the grid is grouped by the column field. By default the name of the field
 and the current group value is displayed.The fields which can be used in the template are:
 
 #### Example
@@ -119,7 +119,7 @@ HTML attributes of the column header. The grid renders a table header cell (<th>
 
 ### headerTemplate `String`
 
-The template which is used to render the column header content. By default the value of the title column option
+The template which renders the column header content. By default the value of the title column option
 is displayed in the column header cell.
 
 #### Example
@@ -128,7 +128,7 @@ is displayed in the column header cell.
 
 ### hidden `boolean`
 
-If set to true the column will not be displayed in the grid. By default all columns are displayed in the grid.
+If set to true the column will not be displayed in the grid. By default all columns are displayed.
 
 #### Example
     <kendo:grid-column hidden="hidden">
@@ -144,8 +144,8 @@ If set to true the column will be visible in the grid column menu. By default th
 
 ### sortable `boolean`
 
-If set to true the user can click the column header and sort the grid by the column field (when sorting is enabled for the grid). If set to false sorting will
-be disabled for this column. By default all columns are sortable.
+If set to true the user can click the column header and sort the grid by the column field when sorting is enabled. If set to false sorting will
+be disabled for this column. By default all columns are sortable if sorting is enabled via the sortable option.
 
 #### Example
     <kendo:grid-column sortable="sortable">
@@ -153,8 +153,8 @@ be disabled for this column. By default all columns are sortable.
 
 ### template `String`
 
-The template which is used to render the column content. The Kendo UI Grid widget renders table rows (<tr>) which represent the data source items.
-Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.Use the template to customize the way the column displays its value.
+The template which renders the column content. The grid renders table rows (<tr>) which represent the data source items.
+Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.
 
 #### Example
     <kendo:grid-column template="template">
@@ -162,7 +162,7 @@ Each table row consists of table cells (<td>) which represent the grid columns. 
 
 ### title `String`
 
-The text that is displayed in the column header cell. If not set the field will be used.
+The text that is displayed in the column header cell. If not set the field is used.
 
 #### Example
     <kendo:grid-column title="title">
@@ -181,7 +181,7 @@ The width of the column. Numeric values are treated as pixels.
 
 ### kendo:grid-column-command
 
-The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit" or "destroy").The "edit" built-in command will put the current row in edit mode.The "destroy" built-in command will delete the current row.Custom commands are supported via the click option.
+The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit" or "destroy").The "edit" built-in command switches the current table row in edit mode.The "destroy" built-in command removes the data item to which the current table row is bound.Custom commands are supported by specifying the click option.
 
 More documentation is available at [kendo:grid-column-command](grid/column-command).
 
@@ -193,7 +193,7 @@ More documentation is available at [kendo:grid-column-command](grid/column-comma
 
 ### kendo:grid-column-filterable
 
-If set to true a filter menu will be displayed for this column when filtering is enabled for the grid. If set to false the filter menu will not be displayed. By default a filter menu is displayed
+If set to true a filter menu will be displayed for this column when filtering is enabled. If set to false the filter menu will not be displayed. By default a filter menu is displayed
 for all columns when filtering is enabled via the filterable option.Can be set to a JavaScript object which represents the filter menu configuration.
 
 More documentation is available at [kendo:grid-column-filterable](grid/column-filterable).
@@ -222,7 +222,7 @@ Provides a way to specify a custom editing UI for the column. Use the container 
 
 ### footerTemplate `String`
 
-The template which is used to render the footer table cell for the column.The fields which can be used in the template are:
+The template which renders the footer table cell for the column.The fields which can be used in the template are:
 
 #### Example
     <kendo:grid-column footerTemplate="handle_footerTemplate">
@@ -235,7 +235,7 @@ The template which is used to render the footer table cell for the column.The fi
 
 ### groupHeaderTemplate `String`
 
-The template which is used to render the group header when the grid is grouped by the column field. By default the name of the field
+The template which renders the group header when the grid is grouped by the column field. By default the name of the field
 and the current group value is displayed.The fields which can be used in the template are:
 
 #### Example
@@ -249,7 +249,7 @@ and the current group value is displayed.The fields which can be used in the tem
 
 ### groupFooterTemplate `String`
 
-The template which is used to render the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
+The template which renders the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
 
 #### Example
     <kendo:grid-column groupFooterTemplate="handle_groupFooterTemplate">
@@ -262,7 +262,7 @@ The template which is used to render the group footer when the grid is grouped b
 
 ### headerTemplate `String`
 
-The template which is used to render the column header content. By default the value of the title column option
+The template which renders the column header content. By default the value of the title column option
 is displayed in the column header cell.
 
 #### Example
@@ -276,8 +276,8 @@ is displayed in the column header cell.
 
 ### template `String`
 
-The template which is used to render the column content. The Kendo UI Grid widget renders table rows (<tr>) which represent the data source items.
-Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.Use the template to customize the way the column displays its value.
+The template which renders the column content. The grid renders table rows (<tr>) which represent the data source items.
+Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.
 
 #### Example
     <kendo:grid-column template="handle_template">
@@ -307,7 +307,7 @@ Provides a way to specify a custom editing UI for the column. Use the container 
 
 ### kendo:grid-column-footerTemplate
 
-The template which is used to render the footer table cell for the column.The fields which can be used in the template are:
+The template which renders the footer table cell for the column.The fields which can be used in the template are:
 
 #### Example
     <kendo:grid-column>
@@ -322,7 +322,7 @@ The template which is used to render the footer table cell for the column.The fi
 
 ### kendo:grid-column-groupHeaderTemplate
 
-The template which is used to render the group header when the grid is grouped by the column field. By default the name of the field
+The template which renders the group header when the grid is grouped by the column field. By default the name of the field
 and the current group value is displayed.The fields which can be used in the template are:
 
 #### Example
@@ -338,7 +338,7 @@ and the current group value is displayed.The fields which can be used in the tem
 
 ### kendo:grid-column-groupFooterTemplate
 
-The template which is used to render the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
+The template which renders the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
 
 #### Example
     <kendo:grid-column>
@@ -353,7 +353,7 @@ The template which is used to render the group footer when the grid is grouped b
 
 ### kendo:grid-column-headerTemplate
 
-The template which is used to render the column header content. By default the value of the title column option
+The template which renders the column header content. By default the value of the title column option
 is displayed in the column header cell.
 
 #### Example
@@ -369,8 +369,8 @@ is displayed in the column header cell.
 
 ### kendo:grid-column-template
 
-The template which is used to render the column content. The Kendo UI Grid widget renders table rows (<tr>) which represent the data source items.
-Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.Use the template to customize the way the column displays its value.
+The template which renders the column content. The grid renders table rows (<tr>) which represent the data source items.
+Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.
 
 #### Example
     <kendo:grid-column>

@@ -35,6 +35,7 @@ The text color of the labels. Any valid CSS color string will work here, includi
 ### culture `String`
 
 Culture to use for formatting the dates. See Globalization for more information.
+It uses the global culture by default.
 
 #### Example
     <kendo:sparkline-categoryAxisItem-labels culture="culture">

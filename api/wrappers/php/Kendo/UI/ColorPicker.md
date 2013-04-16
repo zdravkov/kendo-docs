@@ -223,14 +223,20 @@ selector.
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|array`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
     $colorPicker->palette('value');
+    ?>
+
+#### Example  - using array
+    <?php
+    $colorPicker = new \Kendo\UI\ColorPicker('ColorPicker');
+    $colorPicker->palette(new array());
     ?>
 
 ### preview

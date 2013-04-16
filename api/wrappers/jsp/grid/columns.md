@@ -7,8 +7,8 @@ publish: true
 
 # \<kendo:grid-columns\>
 
-The configuration of the grid columns. Set to array of JavaScript objects or strings. A JavaScript object is interpreted as column configuration. A string is interpreted as the
-field to which the column is bound to. The grid will create a column for every item of the array.
+The configuration of the grid columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
+field to which the column is bound. The grid will create a column for every item of the array.
 
 #### Example
     <kendo:grid>
@@ -22,8 +22,8 @@ field to which the column is bound to. The grid will create a column for every i
 
 ### kendo:grid-column
 
-The configuration of the grid columns. Set to array of JavaScript objects or strings. A JavaScript object is interpreted as column configuration. A string is interpreted as the
-field to which the column is bound to. The grid will create a column for every item of the array.
+The configuration of the grid columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
+field to which the column is bound. The grid will create a column for every item of the array.
 
 More documentation is available at [kendo:grid-column](grid/column).
 

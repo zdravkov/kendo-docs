@@ -101,6 +101,14 @@ Specifies whether the window should show a modal overlay over the page.
     <kendo:window modal="modal">
     </kendo:window>
 
+### pinned `boolean`
+
+Specifies whether the window should be pinned, i.e. it will not move together with the page content during scrolling.
+
+#### Example
+    <kendo:window pinned="pinned">
+    </kendo:window>
+
 ### resizable `boolean`
 
 Enables (true) or disables (false) the ability for users to resize a
@@ -148,6 +156,18 @@ More documentation is available at [kendo:window-animation](window/animation).
 
     <kendo:window>
         <kendo:window-animation></kendo:window-animation>
+    </kendo:window>
+
+### kendo:window-position
+
+A collection of one or two members, which define the initial Window's top and/or left position on the page.
+
+More documentation is available at [kendo:window-position](window/position).
+
+#### Example
+
+    <kendo:window>
+        <kendo:window-position></kendo:window-position>
     </kendo:window>
 
 

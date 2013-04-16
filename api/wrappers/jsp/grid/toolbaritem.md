@@ -26,7 +26,7 @@ The name of the toolbar command. Either a built-in ("cancel", "create" and "save
 
 ### template `String`
 
-The template which is used to render the command. Be default renders a button.
+The template which renders the command. Be default renders a button.
 
 #### Example
     <kendo:grid-toolbarItem template="template">
@@ -45,7 +45,7 @@ The text displayed by the command button. If not set the name` option would be u
 
 ### template `String`
 
-The template which is used to render the command. Be default renders a button.
+The template which renders the command. Be default renders a button.
 
 #### Example
     <kendo:grid-toolbarItem template="handle_template">
@@ -60,7 +60,7 @@ The template which is used to render the command. Be default renders a button.
 
 ### kendo:grid-toolbarItem-template
 
-The template which is used to render the command. Be default renders a button.
+The template which renders the command. Be default renders a button.
 
 #### Example
     <kendo:grid-toolbarItem>

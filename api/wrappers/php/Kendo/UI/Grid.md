@@ -53,7 +53,7 @@ The id of the template used for rendering the alternate rows in the grid.
 
 ### autoBind
 If set to false the widget will not bind to the data source during initialization. In this case data binding will occur when the change event of the
-data source is fired.By default this option is set to true which means that the widget will bind to the data source specified in the configuration.
+data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -215,7 +215,7 @@ By default the column menu is not enabled.Can be set to a JavaScript object whic
     ?>
 
 ### columnMenuInit
-Fires when the grid column menu is initialized.
+Fired when the column menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -686,7 +686,7 @@ If set to true the user would be able to edit the data to which the grid is boun
     ?>
 
 ### filterMenuInit
-Fires when the grid column filter menu is initialized.
+Fired when the grid filter menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -877,7 +877,7 @@ If set to true the grid will display a pager. By default paging is disabled.Can 
     ?>
 
 ### remove
-Fires before the grid item is removed.
+Fired when the user clicks the "destroy" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -966,7 +966,7 @@ The id of the template used for rendering the rows in the grid.
     ?>
 
 ### save
-Fires before the grid item is changed.
+Fired when a data item is saved.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -1001,7 +1001,7 @@ Fires before the grid item is changed.
     ?>
 
 ### saveChanges
-Fires before the grid calls DataSource sync.
+Fired when the user clicks the "save" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 #### Returns
 `\Kendo\UI\Grid`

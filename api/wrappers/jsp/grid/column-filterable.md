@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:grid-column-filterable\>
 
-If set to true a filter menu will be displayed for this column when filtering is enabled for the grid. If set to false the filter menu will not be displayed. By default a filter menu is displayed
+If set to true a filter menu will be displayed for this column when filtering is enabled. If set to false the filter menu will not be displayed. By default a filter menu is displayed
 for all columns when filtering is enabled via the filterable option.Can be set to a JavaScript object which represents the filter menu configuration.
 
 #### Example

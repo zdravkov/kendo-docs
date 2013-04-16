@@ -49,7 +49,7 @@ type="color"> does not support opacity.
     <kendo:colorPicker opacity="opacity">
     </kendo:colorPicker>
 
-### palette `String`
+### palette `Object`
 
 When a non-null palette argument is supplied, the drop-down will be
 a simple color picker.  The following are supported:If palette is missing or null, the widget will display the HSV

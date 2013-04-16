@@ -389,11 +389,17 @@ Indicates whether selection is enabled/disabled. Possible values:
 
 #### Parameters
 
-##### $value `string`
+##### $value `boolean|string`
 
 
 
-#### Example 
+#### Example  - using boolean
+    <?php
+    $listView = new \Kendo\UI\ListView('ListView');
+    $listView->selectable(true);
+    ?>
+
+#### Example  - using string
     <?php
     $listView = new \Kendo\UI\ListView('ListView');
     $listView->selectable('value');

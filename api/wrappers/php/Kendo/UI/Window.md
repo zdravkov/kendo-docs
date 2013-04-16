@@ -530,6 +530,53 @@ Triggered when a Window is opened (i.e. the open() method is called).
     $window->open(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### pinned
+Specifies whether the window should be pinned, i.e. it will not move together with the page content during scrolling.
+
+#### Returns
+`\Kendo\UI\Window`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $window = new \Kendo\UI\Window('Window');
+    $window->pinned(true);
+    ?>
+
+### position
+
+A collection of one or two members, which define the initial Window's top and/or left position on the page.
+
+#### Returns
+`\Kendo\UI\Window`
+
+#### Parameters
+
+##### $value `\Kendo\UI\WindowPosition|array`
+
+
+#### Example - using [\Kendo\UI\WindowPosition](/api/wrappers/php/Kendo/UI/WindowPosition)
+    <?php
+    $window = new \Kendo\UI\Window('Window');
+    $position = new \Kendo\UI\WindowPosition();
+    $left = 1;
+    $position->left($left);
+    $window->position($position);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $window = new \Kendo\UI\Window('Window');
+    $left = 1;
+    $window->position(array('left' => $left));
+    ?>
+
 ### refresh
 Triggered when the content of a Window has finished loading via AJAX,
 when the window iframe has finished loading, or when the refresh button

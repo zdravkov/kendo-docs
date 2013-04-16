@@ -140,4 +140,16 @@ If true changes will be batched, otherwise false.
 
 
 
+### AutoSync(System.Boolean)
+Determines if data source would automatically sync any changes to its data items. By default changes are not automatically sync-ed.
+
+
+#### Parameters
+
+##### enabled `System.Boolean`
+If true changes will be automatically synced, otherwise false.
+
+
+
+
 

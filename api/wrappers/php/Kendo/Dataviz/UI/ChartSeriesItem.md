@@ -944,8 +944,26 @@ The type of the series. Available types:
     $seriesItem->type('value');
     ?>
 
+### visibleInLegend
+A value indicating whether to show the point category name (for bubble, donut and pie series) and series name (for other available series types) in the legend.** Available for all series. **
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->visibleInLegend(true);
+    ?>
+
 ### visibleInLegendField
-A boolean value indicating whether to show the point category name in the legend.** Available for bubble and pie series. **
+A data field containing a boolean value which indicates whether to show the point category name in the legend.** Available for bubble, donut and pie series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`

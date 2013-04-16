@@ -300,9 +300,17 @@ The type of the series. Available types:
     <kendo:chart-seriesItem type="type">
     </kendo:chart-seriesItem>
 
+### visibleInLegend `boolean`
+
+A value indicating whether to show the point category name (for bubble, donut and pie series) and series name (for other available series types) in the legend.** Available for all series. **
+
+#### Example
+    <kendo:chart-seriesItem visibleInLegend="visibleInLegend">
+    </kendo:chart-seriesItem>
+
 ### visibleInLegendField `String`
 
-A boolean value indicating whether to show the point category name in the legend.** Available for bubble and pie series. **
+A data field containing a boolean value which indicates whether to show the point category name in the legend.** Available for bubble, donut and pie series. **
 
 #### Example
     <kendo:chart-seriesItem visibleInLegendField="visibleInLegendField">

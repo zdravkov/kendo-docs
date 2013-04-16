@@ -18,7 +18,7 @@ The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc 
 
 ### color `String`
 
-The color of the border.
+The color of the border.  It defaults to the color of the current series.
 
 #### Example
     <kendo:chart-seriesItem-border color="color">
@@ -53,7 +53,7 @@ The width of the border.
 
 ### color `String`
 
-The color of the border.
+The color of the border.  It defaults to the color of the current series.
 
 #### Example
     <kendo:chart-seriesItem-border color="handle_color">
@@ -107,7 +107,7 @@ The width of the border.
 
 ### kendo:chart-seriesItem-border-color
 
-The color of the border.
+The color of the border.  It defaults to the color of the current series.
 
 #### Example
     <kendo:chart-seriesItem-border>

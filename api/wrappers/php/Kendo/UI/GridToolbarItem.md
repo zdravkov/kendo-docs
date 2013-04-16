@@ -31,7 +31,7 @@ The name of the toolbar command. Either a built-in ("cancel", "create" and "save
     ?>
 
 ### template
-The template which is used to render the command. Be default renders a button.
+The template which renders the command. Be default renders a button.
 
 #### Returns
 `\Kendo\UI\GridToolbarItem`

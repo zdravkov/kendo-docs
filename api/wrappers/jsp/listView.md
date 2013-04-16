@@ -50,7 +50,7 @@ Indicates whether paging is enabled/disabled. Further configuration is available
     <kendo:listView pageable="pageable">
     </kendo:listView>
 
-### selectable `String`
+### selectable `Object`
 
 Indicates whether selection is enabled/disabled. Possible values:
 

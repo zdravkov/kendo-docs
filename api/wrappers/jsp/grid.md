@@ -21,7 +21,7 @@ The id of the template used for rendering the alternate rows in the grid.
 ### autoBind `boolean`
 
 If set to false the widget will not bind to the data source during initialization. In this case data binding will occur when the change event of the
-data source is fired.By default this option is set to true which means that the widget will bind to the data source specified in the configuration.
+data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 #### Example
     <kendo:grid autoBind="autoBind">
@@ -158,8 +158,8 @@ More documentation is available at [kendo:grid-columnMenu](grid/columnmenu).
 
 ### kendo:grid-columns
 
-The configuration of the grid columns. Set to array of JavaScript objects or strings. A JavaScript object is interpreted as column configuration. A string is interpreted as the
-field to which the column is bound to. The grid will create a column for every item of the array.
+The configuration of the grid columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
+field to which the column is bound. The grid will create a column for every item of the array.
 
 More documentation is available at [kendo:grid-columns](grid/columns).
 

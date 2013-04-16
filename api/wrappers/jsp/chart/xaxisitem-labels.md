@@ -36,6 +36,7 @@ The text color of the labels. Any valid CSS color string will work here, includi
 ### culture `String`
 
 Culture to use for formatting the dates. See Globalization for more information.
+Uses the global culture by default.
 
 #### Example
     <kendo:chart-xAxisItem-labels culture="culture">
