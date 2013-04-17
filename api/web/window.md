@@ -230,6 +230,11 @@ Opens a Window.
 
 `kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
 
+### pin
+
+Pins the Window at its current position with a position:fixed style, i.e. the widget stops moving together with the other page content when the page is scrolled.
+The user will still be able to move the Window with the mouse or keyboard.
+
 ### refresh
 
 Refreshes the content of a Window from a remote URL.
@@ -357,6 +362,10 @@ Toggles a Window between a maximized and restored state. Triggers the resize eve
 #### Returns
 
 `kendo.ui.Window` Returns the (Kendo UI) Window object to support chaining.
+
+### unpin
+
+Disables the Window's pinned state, so that the widget will move together with the other page content when the page is scrolled.
 
 ## Events
 
