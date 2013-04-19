@@ -293,6 +293,53 @@ The name of the JavaScript function that will handle the event.
 
 
 
+### LegendItemHover(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the LegendItemHover client-side event
+
+#### Example
+
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Events(events => events.LegendItemHover(
+        @<text>
+        function(e) {
+        //event handling code
+        }
+        </text>
+        ))
+        .Render();
+    %>
+        
+
+
+#### Parameters
+
+##### inlineCodeBlock `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+### LegendItemHover(System.String)
+Defines the name of the JavaScript function that will handle the the LegendItemHover client-side event.
+
+#### Example
+
+    <%= Html.Kendo().Chart()
+        .Name("Chart")
+        .Events(events => events.LegendItemHover("onLegendItemHover"))
+    %>
+        
+
+
+#### Parameters
+
+##### onLegendItemHoverHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+
 ### DragStart(System.String)
 Defines the name of the JavaScript function that will handle the the DragStart client-side event.
 
