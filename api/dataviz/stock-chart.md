@@ -2089,6 +2089,39 @@ The legend is positioned using OffsetX and OffsetY.
         ...
     });
 
+### legend.inactiveItems.labels `Object`
+
+Configures the legend labels.
+
+### legend.inactiveItems.labels.color `String` *(default: "black")*
+
+The color of the labels.
+Any valid CSS color string will work here, including hex and rgb.
+
+### legend.inactiveItems.labels.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the labels.
+
+### legend.inactiveItems.labels.template `String`
+
+The template of the labels.
+Template variables:
+
+*   **text** - the text the legend item.
+*   **series** - the data series.
+*   **value** - the point value. (only for donut and pie charts)
+*   **percentage** - the point value represented as a percentage value. (only for donut and pie charts)
+*   **dataItem** - the original data item used to construct the point. (only for donut and pie charts)
+
+### legend.inactiveItems.markers `Object`
+
+Configures the legend markers.
+
+### legend.inactiveItems.markers.color `String`
+
+The color of the markers.
+Any valid CSS color string will work here, including hex and rgb.
+
 ### panes `Array`
 
 The chart panes configuration.
