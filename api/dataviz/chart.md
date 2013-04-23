@@ -3724,6 +3724,10 @@ Template variables:
 *   **percentage** - the point value represented as a percentage value. (only for donut and pie charts)
 *   **dataItem** - the original data item used to construct the point. (only for donut and pie charts)
 
+### legend.inactiveItems `Object`
+
+Configures the legend inactive items.
+
 ### legend.inactiveItems.labels `Object`
 
 Configures the legend labels.

@@ -2089,6 +2089,10 @@ The legend is positioned using OffsetX and OffsetY.
         ...
     });
 
+### legend.inactiveItems `Object`
+
+Configures the legend inactive items.
+
 ### legend.inactiveItems.labels `Object`
 
 Configures the legend labels.
