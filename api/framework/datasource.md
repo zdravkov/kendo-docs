@@ -1643,7 +1643,7 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
     });
     </script>
 
-### transport.destroy.data `Object|String|Function`
+### transport.destroy.data `Object|Function`
 
 Additional parameters which are sent to the remote service.
 
@@ -2018,7 +2018,7 @@ Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for 
     });
     </script>
 
-### transport.read.data `Object|String|Function`
+### transport.read.data `Object|Function`
 
 Additional parameters which are sent to the remote service.
 
