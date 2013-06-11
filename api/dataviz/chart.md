@@ -2892,6 +2892,26 @@ a value larger than the last category index (date).
     });
     </script>
 
+### categoryAxis.startAngle `Number` *(default: 90)*
+
+The angle (degrees) of the first category on the axis.
+
+Zero degrees points left, value increases in clockwise direction. Negative values are acceptable.
+
+#### Example - set the donut chart series start angle
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [ {
+        type: "radarLine",
+        data: [ 1, 2, 3 ]
+      }],
+      categoryAxis: {
+        startAngle: 180
+      }
+    });
+    </script>
+
 ### categoryAxis.title `Object`
 
 The title configuration of the category axis.
@@ -8450,7 +8470,9 @@ A value indicating if the series should be stacked. String value indicates that 
 
 ### series.startAngle `Number` *(default: 90)*
 
-The start angle of the first donut or pie segment.
+The start angle (degrees) of the first donut or pie segment.
+
+Zero degrees points left, value increases in clockwise direction. Negative values are acceptable.
 
 #### Example - set the donut chart series start angle
     <div id="chart"></div>
@@ -9073,6 +9095,12 @@ The supported values are:
 * line
 * ohlc
 * pie
+* polarArea
+* polarLine
+* polarScatter
+* radarArea
+* radarColumn
+* radarLine
 * scatterLine
 * verticalArea
 * verticalBullet
@@ -12637,7 +12665,9 @@ The top padding of the labels.
 
 ### valueAxis.labels.rotation `Number` *(default: 0)*
 
-The rotation angle of the labels. By default the labels are not rotated.
+The rotation angle (in degrees) of the labels. By default the labels are not rotated.
+
+Zero degrees points left, value increases in clockwise direction. Negative values are acceptable.
 
 #### Example - rotate the value axis labels
 
