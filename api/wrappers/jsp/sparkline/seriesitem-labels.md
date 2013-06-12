@@ -126,6 +126,7 @@ More documentation is available at [kendo:sparkline-seriesItem-labels-border](sp
 
 The background color of the labels.
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels background="handle_background">
     </kendo:sparkline-seriesItem-labels>
@@ -138,6 +139,7 @@ The background color of the labels.
 ### color `String`
 
 The text color of the labels.
+
 
 #### Example
     <kendo:sparkline-seriesItem-labels color="handle_color">
@@ -152,6 +154,7 @@ The text color of the labels.
 
 The font style of the labels.
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels font="handle_font">
     </kendo:sparkline-seriesItem-labels>
@@ -164,6 +167,7 @@ The font style of the labels.
 ### format `String`
 
 The format of the labels.
+
 
 #### Example
     <kendo:sparkline-seriesItem-labels format="handle_format">
@@ -178,6 +182,7 @@ The format of the labels.
 
 Defines the position of the labels.
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels position="handle_position">
     </kendo:sparkline-seriesItem-labels>
@@ -191,6 +196,7 @@ Defines the position of the labels.
 
 The label template. Template variables:
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels template="handle_template">
     </kendo:sparkline-seriesItem-labels>
@@ -203,6 +209,7 @@ The label template. Template variables:
 ### visible `String`
 
 The visibility of the labels.
+
 
 #### Example
     <kendo:sparkline-seriesItem-labels visible="handle_visible">
@@ -219,6 +226,7 @@ The visibility of the labels.
 
 The background color of the labels.
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels>
         <kendo:sparkline-seriesItem-labels-background>
@@ -233,6 +241,7 @@ The background color of the labels.
 ### kendo:sparkline-seriesItem-labels-color
 
 The text color of the labels.
+
 
 #### Example
     <kendo:sparkline-seriesItem-labels>
@@ -249,6 +258,7 @@ The text color of the labels.
 
 The font style of the labels.
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels>
         <kendo:sparkline-seriesItem-labels-font>
@@ -263,6 +273,7 @@ The font style of the labels.
 ### kendo:sparkline-seriesItem-labels-format
 
 The format of the labels.
+
 
 #### Example
     <kendo:sparkline-seriesItem-labels>
@@ -279,6 +290,7 @@ The format of the labels.
 
 Defines the position of the labels.
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels>
         <kendo:sparkline-seriesItem-labels-position>
@@ -294,6 +306,7 @@ Defines the position of the labels.
 
 The label template. Template variables:
 
+
 #### Example
     <kendo:sparkline-seriesItem-labels>
         <kendo:sparkline-seriesItem-labels-template>
@@ -308,6 +321,7 @@ The label template. Template variables:
 ### kendo:sparkline-seriesItem-labels-visible
 
 The visibility of the labels.
+
 
 #### Example
     <kendo:sparkline-seriesItem-labels>

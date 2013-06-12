@@ -16,18 +16,8 @@ The parent Guage
 
 ## Methods
 
-### EndAngle(System.Double)
+### EndAngle(`System.Double`)
 Sets the end angle of the gauge
-
-#### Example
-
-    <%= Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .Scale(scale => scale
-        .EndAngle(10)
-        )
-    %>
-        
 
 
 #### Parameters
@@ -38,18 +28,17 @@ The end angle.
 
 
 
-### StartAngle(System.Double)
-Sets the start angle of the gauge
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .Scale(scale => scale
-        .StartAngle(220)
-        )
+    .Name("radialGauge")
+    .Scale(scale => scale
+        .EndAngle(10)
+    )
     %>
-        
+
+
+### StartAngle(`System.Double`)
+Sets the start angle of the gauge
 
 
 #### Parameters
@@ -60,20 +49,17 @@ The start Angle.
 
 
 
-### Labels(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder\>)
-Configures the labels.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .Scale(scale => scale
-        .Labels(labels => labels
-        .Visible(false)
-        )
-        )
+    .Name("radialGauge")
+    .Scale(scale => scale
+        .StartAngle(220)
+    )
     %>
-        
+
+
+### Labels(`System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder>`)
+Configures the labels.
 
 
 #### Parameters
@@ -82,6 +68,17 @@ Configures the labels.
 The configuration action.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().RadialGauge()
+    .Name("radialGauge")
+    .Scale(scale => scale
+        .Labels(labels => labels
+            .Visible(false)
+        )
+    )
+    %>
 
 
 

@@ -11,17 +11,8 @@ Defines the fluent interface for configuring scatter line series.
 
 ## Methods
 
-### Width(System.Double)
+### Width(`System.Double`)
 Sets the chart line width.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.ScatterLine(s => s.x, s => s.y).Width(2))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -32,17 +23,16 @@ The line width.
 
 
 
-### DashType(Kendo.Mvc.UI.ChartDashType)
-Sets the chart line dash type.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series.ScatterLine(s => s.x, s => s.y).DashType(ChartDashType.Dot))
+        .Series(series => series.ScatterLine(s => s.x, s => s.y).Width(2))
         .Render();
     %>
-        
+
+
+### DashType(`Kendo.Mvc.UI.ChartDashType`)
+Sets the chart line dash type.
 
 
 #### Parameters
@@ -53,19 +43,16 @@ The line dash type.
 
 
 
-### MissingValues(Kendo.Mvc.UI.ChartScatterLineMissingValues)
-Configures the behavior for handling missing values in scatter line series.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series
-        .ScatterLine(s => s.x, s => s.y)
-        .MissingValues(ChartScatterLineMissingValues.Interpolate);
-        )
+        .Series(series => series.ScatterLine(s => s.x, s => s.y).DashType(ChartDashType.Dot))
+        .Render();
     %>
-        
+
+
+### MissingValues(`Kendo.Mvc.UI.ChartScatterLineMissingValues`)
+Configures the behavior for handling missing values in scatter line series.
 
 
 #### Parameters
@@ -74,6 +61,16 @@ Configures the behavior for handling missing values in scatter line series.
 The missing values behavior. The default is to leave gaps.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
+        .ScatterLine(s => s.x, s => s.y)
+        .MissingValues(ChartScatterLineMissingValues.Interpolate);
+    )
+    %>
 
 
 

@@ -11,7 +11,7 @@ Defines the fluent interface for configuring bubble series highlight.
 
 ## Methods
 
-### Border(System.Int32)
+### Border(`System.Int32`)
 Sets the bubble highlight border width.
             The color is computed automatically from the base point color.
 
@@ -24,7 +24,8 @@ The bubble highlight border width.
 
 
 
-### Border(System.Int32,System.String)
+
+### Border(`System.Int32,System.String`)
 Sets the bubble highlight border width.
 
 
@@ -39,7 +40,8 @@ The border color
 
 
 
-### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+
+### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
 Configures the highlight border
 
 
@@ -54,7 +56,8 @@ Configures the highlight border
 
 
 
-### Opacity(System.Double)
+
+### Opacity(`System.Double`)
 Sets the bubble highlight opacity.
 
 
@@ -62,6 +65,7 @@ Sets the bubble highlight opacity.
 
 ##### opacity `System.Double`
 The bubble highlight opacity.
+
 
 
 

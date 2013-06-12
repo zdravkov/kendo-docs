@@ -15,35 +15,22 @@ Defines the fluent interface for configuring the ChartSelectionMousewheelBuilder
 Reverses the mousewheel direction.
             Rotating the wheel down will shrink the selection, rotating up will expand it.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis.Select(select => select
-        .From(fromDate).To(toDate)
-        .Mousewheel(mw => mw.Reverse())
-        )
-        .Render();
-    %>
-        
+            .From(fromDate).To(toDate)
+            .Mousewheel(mw => mw.Reverse())
+            ))
+            .Render();
+            %>
 
 
-
-
-### Reverse(System.Boolean)
+### Reverse(`System.Boolean`)
 Sets a value indicating if the mousewheel should be reversed.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis.Select(select => select
-        .From(fromDate).To(toDate)
-        .Mousewheel(mw => mw.Reverse(true))
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -55,20 +42,19 @@ true: scrolling up shrinks the selection.
 
 
 
-### Zoom(Kendo.Mvc.UI.ChartZoomDirection)
-Sets the mousehweel zoom type
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .CategoryAxis(axis => axis.Select(select =>
-        select.From(from).To(to)
-        .Mousewheel(mw => mw.Zoom(ChartZoomDirection.Left))
-        )
-        .Render();
-    %>
-        
+        .CategoryAxis(axis => axis.Select(select => select
+            .From(fromDate).To(toDate)
+            .Mousewheel(mw => mw.Reverse(true))
+            ))
+            .Render();
+            %>
+
+
+### Zoom(`Kendo.Mvc.UI.ChartZoomDirection`)
+Sets the mousehweel zoom type
 
 
 #### Parameters
@@ -77,6 +63,17 @@ Sets the mousehweel zoom type
 The mousehweel zoom type. Default value is ChartZoomDirection.Both
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .CategoryAxis(axis => axis.Select(select =>
+            select.From(from).To(to)
+            .Mousewheel(mw => mw.Zoom(ChartZoomDirection.Left))
+            ))
+            .Render();
+            %>
 
 
 

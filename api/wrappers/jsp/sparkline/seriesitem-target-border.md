@@ -47,6 +47,7 @@ The width of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:sparkline-seriesItem-target-border color="handle_color">
     </kendo:sparkline-seriesItem-target-border>
@@ -59,6 +60,7 @@ The color of the border.
 ### dashType `String`
 
 The dash type of the border.
+
 
 #### Example
     <kendo:sparkline-seriesItem-target-border dashType="handle_dashType">
@@ -75,6 +77,7 @@ The dash type of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:sparkline-seriesItem-target-border>
         <kendo:sparkline-seriesItem-target-border-color>
@@ -89,6 +92,7 @@ The color of the border.
 ### kendo:sparkline-seriesItem-target-border-dashType
 
 The dash type of the border.
+
 
 #### Example
     <kendo:sparkline-seriesItem-target-border>

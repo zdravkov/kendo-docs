@@ -11,23 +11,8 @@ Defines the fluent interface for configuring the chart data labels.
 
 ## Methods
 
-### Position(Kendo.Mvc.UI.ChartPointLabelsPosition)
+### Position(`Kendo.Mvc.UI.ChartPointLabelsPosition`)
 Sets the labels position
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
-        .Line(s => s.Sales)
-        .Labels(labels => labels
-        .Position(ChartPointLabelsPosition.Above)
-        .Visible(true)
-        );
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -36,6 +21,20 @@ Sets the labels position
 The labels position.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Line(s => s.Sales)
+            .Labels(labels => labels
+                .Position(ChartPointLabelsPosition.Above)
+                .Visible(true)
+                );
+            )
+            .Render();
+            %>
 
 
 

@@ -11,24 +11,8 @@ Defines the fluent interface for configuring ChartNavigatorhintBuilder.
 
 ## Methods
 
-### Format(System.String)
+### Format(`System.String`)
 Sets the border color.
-
-#### Example
-
-    <%= Html.Kendo().StockChart(Model)
-        .Name("Chart")
-        .Navigator(nav => nav
-        .Series(series =>
-        {
-        series.Bar(s => s.SalesAmount);
-        })
-        .Hint(hint => hint
-        .Format("{0:d} | {1:d}")
-        )
-        )
-    %>
-        
 
 
 #### Parameters
@@ -39,24 +23,23 @@ The border color (CSS format).
 
 
 
-### Template(System.String)
-Sets the border opacity
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().StockChart(Model)
-        .Name("Chart")
-        .Navigator(nav => nav
+    .Name("Chart")
+    .Navigator(nav => nav
         .Series(series =>
         {
-        series.Bar(s => s.SalesAmount);
+            series.Bar(s => s.SalesAmount);
         })
         .Hint(hint => hint
-        .Template("From: #= from # To: #= to #")
+            .Format("{0:d} | {1:d}")
         )
-        )
+    )
     %>
-        
+
+
+### Template(`System.String`)
+Sets the border opacity
 
 
 #### Parameters
@@ -67,24 +50,23 @@ The border opacity (CSS format).
 
 
 
-### Visible(System.Boolean)
-Sets the hint visibility.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().StockChart(Model)
-        .Name("Chart")
-        .Navigator(nav => nav
+    .Name("Chart")
+    .Navigator(nav => nav
         .Series(series =>
         {
-        series.Bar(s => s.SalesAmount);
+            series.Bar(s => s.SalesAmount);
         })
         .Hint(hint => hint
-        .Visible(false)
+            .Template("From: #= from # To: #= to #")
         )
-        )
+    )
     %>
-        
+
+
+### Visible(`System.Boolean`)
+Sets the hint visibility.
 
 
 #### Parameters
@@ -93,6 +75,21 @@ Sets the hint visibility.
 The hint visibility.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().StockChart(Model)
+    .Name("Chart")
+    .Navigator(nav => nav
+        .Series(series =>
+        {
+            series.Bar(s => s.SalesAmount);
+        })
+        .Hint(hint => hint
+            .Visible(false)
+        )
+    )
+    %>
 
 
 

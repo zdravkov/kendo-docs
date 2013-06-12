@@ -59,6 +59,35 @@ The border of the legend.
     $legend->border(array('color' => $color));
     ?>
 
+### inactiveItems
+
+Configures the legend inactive items.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartLegend`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartLegendInactiveItems|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartLegendInactiveItems](/api/wrappers/php/Kendo/Dataviz/UI/StockChartLegendInactiveItems)
+    <?php
+    $legend = new \Kendo\Dataviz\UI\StockChartLegend();
+    $inactiveItems = new \Kendo\Dataviz\UI\StockChartLegendInactiveItems();
+    $labels = new \Kendo\Dataviz\UI\StockChartLegendInactiveItemsLabels();
+    $inactiveItems->labels($labels);
+    $legend->inactiveItems($inactiveItems);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $legend = new \Kendo\Dataviz\UI\StockChartLegend();
+    $labels = new \Kendo\Dataviz\UI\StockChartLegendInactiveItemsLabels();
+    $legend->inactiveItems(array('labels' => $labels));
+    ?>
+
 ### labels
 
 Configures the legend labels.

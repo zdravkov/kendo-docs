@@ -55,6 +55,7 @@ The width of the border.
 
 The color of the border.  It defaults to the color of the current series.
 
+
 #### Example
     <kendo:stockChart-seriesItem-border color="handle_color">
     </kendo:stockChart-seriesItem-border>
@@ -67,6 +68,7 @@ The color of the border.  It defaults to the color of the current series.
 ### dashType `String`
 
 The dash type of the border.
+
 
 #### Example
     <kendo:stockChart-seriesItem-border dashType="handle_dashType">
@@ -81,6 +83,7 @@ The dash type of the border.
 
 The border opacity.
 
+
 #### Example
     <kendo:stockChart-seriesItem-border opacity="handle_opacity">
     </kendo:stockChart-seriesItem-border>
@@ -93,6 +96,7 @@ The border opacity.
 ### width `String`
 
 The width of the border.
+
 
 #### Example
     <kendo:stockChart-seriesItem-border width="handle_width">
@@ -109,6 +113,7 @@ The width of the border.
 
 The color of the border.  It defaults to the color of the current series.
 
+
 #### Example
     <kendo:stockChart-seriesItem-border>
         <kendo:stockChart-seriesItem-border-color>
@@ -123,6 +128,7 @@ The color of the border.  It defaults to the color of the current series.
 ### kendo:stockChart-seriesItem-border-dashType
 
 The dash type of the border.
+
 
 #### Example
     <kendo:stockChart-seriesItem-border>
@@ -139,6 +145,7 @@ The dash type of the border.
 
 The border opacity.
 
+
 #### Example
     <kendo:stockChart-seriesItem-border>
         <kendo:stockChart-seriesItem-border-opacity>
@@ -153,6 +160,7 @@ The border opacity.
 ### kendo:stockChart-seriesItem-border-width
 
 The width of the border.
+
 
 #### Example
     <kendo:stockChart-seriesItem-border>

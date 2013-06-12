@@ -66,6 +66,7 @@ More documentation is available at [kendo:sparkline-seriesItem-target-line](spar
 
 The target color.
 
+
 #### Example
     <kendo:sparkline-seriesItem-target color="handle_color">
     </kendo:sparkline-seriesItem-target>
@@ -80,6 +81,7 @@ The target color.
 ### kendo:sparkline-seriesItem-target-color
 
 The target color.
+
 
 #### Example
     <kendo:sparkline-seriesItem-target>

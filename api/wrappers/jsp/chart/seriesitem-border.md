@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-border\>
 
-The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc and candlestick series **
+The border of the chart series.
 
 #### Example
     <kendo:chart-seriesItem>
@@ -18,7 +18,7 @@ The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc 
 
 ### color `String`
 
-The color of the border.  It defaults to the color of the current series.
+The color of the border. Accepts a valid CSS color string, including hex and rgb. By default it is set to color of the current series.
 
 #### Example
     <kendo:chart-seriesItem-border color="color">
@@ -26,7 +26,7 @@ The color of the border.  It defaults to the color of the current series.
 
 ### dashType `String`
 
-The dash type of the border.
+The dash type of the border.The following dash types are supported:
 
 #### Example
     <kendo:chart-seriesItem-border dashType="dashType">
@@ -34,7 +34,7 @@ The dash type of the border.
 
 ### opacity `float`
 
-The border opacity.
+The opacity of the border. By default the border is opaque.
 
 #### Example
     <kendo:chart-seriesItem-border opacity="opacity">
@@ -42,7 +42,7 @@ The border opacity.
 
 ### width `float`
 
-The width of the border.
+The width of the border in pixels.
 
 #### Example
     <kendo:chart-seriesItem-border width="width">
@@ -53,7 +53,8 @@ The width of the border.
 
 ### color `String`
 
-The color of the border.  It defaults to the color of the current series.
+The color of the border. Accepts a valid CSS color string, including hex and rgb. By default it is set to color of the current series.
+
 
 #### Example
     <kendo:chart-seriesItem-border color="handle_color">
@@ -66,7 +67,8 @@ The color of the border.  It defaults to the color of the current series.
 
 ### dashType `String`
 
-The dash type of the border.
+The dash type of the border.The following dash types are supported:
+
 
 #### Example
     <kendo:chart-seriesItem-border dashType="handle_dashType">
@@ -79,7 +81,8 @@ The dash type of the border.
 
 ### opacity `String`
 
-The border opacity.
+The opacity of the border. By default the border is opaque.
+
 
 #### Example
     <kendo:chart-seriesItem-border opacity="handle_opacity">
@@ -92,7 +95,8 @@ The border opacity.
 
 ### width `String`
 
-The width of the border.
+The width of the border in pixels.
+
 
 #### Example
     <kendo:chart-seriesItem-border width="handle_width">
@@ -107,7 +111,8 @@ The width of the border.
 
 ### kendo:chart-seriesItem-border-color
 
-The color of the border.  It defaults to the color of the current series.
+The color of the border. Accepts a valid CSS color string, including hex and rgb. By default it is set to color of the current series.
+
 
 #### Example
     <kendo:chart-seriesItem-border>
@@ -122,7 +127,8 @@ The color of the border.  It defaults to the color of the current series.
 
 ### kendo:chart-seriesItem-border-dashType
 
-The dash type of the border.
+The dash type of the border.The following dash types are supported:
+
 
 #### Example
     <kendo:chart-seriesItem-border>
@@ -137,7 +143,8 @@ The dash type of the border.
 
 ### kendo:chart-seriesItem-border-opacity
 
-The border opacity.
+The opacity of the border. By default the border is opaque.
+
 
 #### Example
     <kendo:chart-seriesItem-border>
@@ -152,7 +159,8 @@ The border opacity.
 
 ### kendo:chart-seriesItem-border-width
 
-The width of the border.
+The width of the border in pixels.
+
 
 #### Example
     <kendo:chart-seriesItem-border>

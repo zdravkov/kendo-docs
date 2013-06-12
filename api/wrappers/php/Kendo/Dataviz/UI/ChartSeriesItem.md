@@ -13,8 +13,8 @@ A PHP class representing the seriesItem setting of ChartSeries.
 ## Methods
 
 ### aggregate
-Aggregate function for date series.This function is used when a category (an year, month, etc.) contains two or more points.
-The function return value is displayed instead of the individual points.
+The aggregate function to apply for date series.This function is used when a category (an year, month, etc.) contains two or more points.
+The function return value is displayed instead of the individual points.The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -32,7 +32,7 @@ The function return value is displayed instead of the individual points.
     ?>
 
 ### axis
-The name of the value axis to use.** Applicable to area, bar, column, line, ohlc and candlestick series **
+The name of the value axis to use.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -51,7 +51,7 @@ The name of the value axis to use.** Applicable to area, bar, column, line, ohlc
 
 ### border
 
-The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc and candlestick series **
+The border of the chart series.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -79,7 +79,7 @@ The border of the points.** Applicable to bar, column, bubble, donut, pie, ohlc 
     ?>
 
 ### categoryField
-The data field containing the point category name.** Applicable to bubble, donut and pie series. **
+The data item field which contains category name.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -97,7 +97,7 @@ The data field containing the point category name.** Applicable to bubble, donut
     ?>
 
 ### closeField
-The data field containing the close value.** Available for candlestick and ohlc series only **
+The data field containing the close value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -115,7 +115,7 @@ The data field containing the close value.** Available for candlestick and ohlc 
     ?>
 
 ### color
-The series base color. Accepts CSS color syntax, including hex and rgb.
+The series base color. Accepts a valid CSS color string, including hex and rgb.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -139,7 +139,7 @@ The series base color. Accepts CSS color syntax, including hex and rgb.
     ?>
 
 ### colorField
-The data field containing the point color.** Applicable for bar, column, bubble, donut, pie, candlestick and ohlc series. **
+The data item field which contains the series color.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -158,7 +158,7 @@ The data field containing the point color.** Applicable for bar, column, bubble,
 
 ### connectors
 
-The label connectors options.** Applicable to donut and pie series. **
+The label connectors options.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -186,7 +186,7 @@ The label connectors options.** Applicable to donut and pie series. **
     ?>
 
 ### currentField
-The data field containing the current value.** Available for bullet and verticalBullet series. **
+The data item field containing the current value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -204,7 +204,7 @@ The data field containing the current value.** Available for bullet and vertical
     ?>
 
 ### dashType
-The series line dash type.** Applicable only to line and scatterLine series **
+The dash type of line chart.The following dash types are supported:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -222,7 +222,7 @@ The series line dash type.** Applicable only to line and scatterLine series **
     ?>
 
 ### data
-Array of data items. The data item type can be either a:
+The array of data items which represent the series data.Can be set to :
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -240,7 +240,7 @@ Array of data items. The data item type can be either a:
     ?>
 
 ### downColor
-The series color when open value is smoller then close value.** Available for candlestick series only **
+The series color when the open value is greater than the close value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -264,7 +264,7 @@ The series color when open value is smoller then close value.** Available for ca
     ?>
 
 ### downColorField
-The data field containing the body color.** Available for candlestick series only **
+The data field containing the color applied when the open value is greater than the close value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -282,7 +282,7 @@ The data field containing the body color.** Available for candlestick series onl
     ?>
 
 ### explodeField
-The data field containing a boolean value that indicates if the sector is exploded.** Available for donut and pie series **
+The data item field which contains a boolean value indicating whether the sector is exploded.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -300,7 +300,7 @@ The data field containing a boolean value that indicates if the sector is explod
     ?>
 
 ### field
-The data field containing the series value.
+The data item field which contains the series value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -318,7 +318,7 @@ The data field containing the series value.
     ?>
 
 ### gap
-The distance between category clusters.** Applicable for bar, column, candlestick and ohlc series. **
+The distance between the category clusters.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -336,7 +336,7 @@ The distance between category clusters.** Applicable for bar, column, candlestic
     ?>
 
 ### groupNameTemplate
-Name template for auto-generated series when binding to grouped data.Template variables:
+The template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -354,7 +354,7 @@ Name template for auto-generated series when binding to grouped data.Template va
     ?>
 
 ### highField
-The data field containing the high value.** Available for candlestick and ohlc series only **
+The data field containing the high value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -373,7 +373,7 @@ The data field containing the high value.** Available for candlestick and ohlc s
 
 ### highlight
 
-Configures the appearance of highlighted points.
+The chart series highlighting configuration options.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -401,7 +401,7 @@ Configures the appearance of highlighted points.
     ?>
 
 ### holeSize
-The the size of the donut hole.** Available for donut series only. **
+The diameter of the donut hole in pixels.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -420,7 +420,7 @@ The the size of the donut hole.** Available for donut series only. **
 
 ### labels
 
-Configures the series data labels.
+The chart series label configuration.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -449,7 +449,7 @@ Configures the series data labels.
 
 ### line
 
-Line options.** Applicable to area, candlestick and ohlc series. **
+The chart line configuration options.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -486,7 +486,7 @@ Line options.** Applicable to area, candlestick and ohlc series. **
     ?>
 
 ### lowField
-The data field containing the low value.** Available for candlestick and ohlc series **
+The data field containing the low value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -504,26 +504,46 @@ The data field containing the low value.** Available for candlestick and ohlc se
     ?>
 
 ### margin
-The margin around each donut series (ring)** Applicable only to donut series **
+
+The margin around each donut series (ring). A numeric value will set all margins.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
 
 #### Parameters
 
-##### $value `float`
+##### $value `float|\Kendo\Dataviz\UI\ChartSeriesItemMargin|array`
 
 
 
-#### Example 
+
+#### Example  - using float
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->margin(1);
     ?>
 
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemMargin](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemMargin)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $margin = new \Kendo\Dataviz\UI\ChartSeriesItemMargin();
+    $bottom = 1;
+    $margin->bottom($bottom);
+    $seriesItem->margin($margin);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $bottom = 1;
+    $seriesItem->margin(array('bottom' => $bottom));
+    ?>
+
 ### markers
 
-Marker options.** Applicable to area, line, scatter and scatterLine series **
+The chart series marker configuration.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -551,7 +571,7 @@ Marker options.** Applicable to area, line, scatter and scatterLine series **
     ?>
 
 ### maxSize
-The max size of the marker.** Applicable only to bubble series. **
+The maximum size of the chart bubble series marker.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -569,7 +589,7 @@ The max size of the marker.** Applicable only to bubble series. **
     ?>
 
 ### minSize
-The min size of the marker.** Applicable only to bubble series. **
+The minimum size of the chart bubble series marker.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -587,7 +607,7 @@ The min size of the marker.** Applicable only to bubble series. **
     ?>
 
 ### missingValues
-Configures the behavior for handling missing values.** Available for area, line and scatterLine series **
+The behavior for handling missing values.The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -605,7 +625,7 @@ Configures the behavior for handling missing values.** Available for area, line 
     ?>
 
 ### name
-The series name visible in the legend.
+The name of the chart series which is visible in the legend.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -623,7 +643,7 @@ The series name visible in the legend.
     ?>
 
 ### negativeColor
-Color to use for bars with negative values.** Applicable only to bar and column series. **
+The color to use for bar or column series with negative values. Accepts a valid CSS color string, including hex and rgb.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -642,7 +662,7 @@ Color to use for bars with negative values.** Applicable only to bar and column 
 
 ### negativeValues
 
-The settings for negative values.** Applicable only to bubble series. **
+The options for displaying the chart negative bubble values.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -670,7 +690,7 @@ The settings for negative values.** Applicable only to bubble series. **
     ?>
 
 ### opacity
-The series opacity.
+The series opacity. By default the series are opaque.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -688,7 +708,7 @@ The series opacity.
     ?>
 
 ### openField
-The data field containing the open value.** Available for candlestick and ohlc series **
+The data field containing the open value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -707,7 +727,7 @@ The data field containing the open value.** Available for candlestick and ohlc s
 
 ### overlay
 
-The effects overlay.
+The chart series overlay options.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -735,7 +755,7 @@ The effects overlay.
     ?>
 
 ### padding
-The padding around the chart (equal on all sides).** Available for donut and pie series. **
+The padding around the chart (equal on all sides).
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -753,8 +773,7 @@ The padding around the chart (equal on all sides).** Available for donut and pie
     ?>
 
 ### size
-The size (or radius) of the series in pixels.
-If not specified, the available space is split evenly between the series.Available for donut series only.
+The or radius of the chart donut series in pixels. If not set, the available space is split evenly between the series.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -772,7 +791,7 @@ If not specified, the available space is split evenly between the series.Availab
     ?>
 
 ### sizeField
-The data field containing the bubble size value.** Applicable only to bubble series. **
+The data field containing the bubble size value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -790,7 +809,7 @@ The data field containing the bubble size value.** Applicable only to bubble ser
     ?>
 
 ### spacing
-Space between points as proportion of the point width.** Available for bar, column, candlestick and ohlc series. **
+The space between the chart series as proportion of the series width.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -809,7 +828,6 @@ Space between points as proportion of the point width.** Available for bar, colu
 
 ### stack
 A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
-** Available for bar and column series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -833,7 +851,7 @@ A value indicating if the series should be stacked. String value indicates that 
     ?>
 
 ### startAngle
-The start angle of the first segment.Available for donut and pie series.
+The start angle (degrees) of the first donut or pie segment.Angles increase clockwise and zero is to the left. Negative values are acceptable.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -852,7 +870,7 @@ The start angle of the first segment.Available for donut and pie series.
 
 ### target
 
-The target of the bullet chart.
+The configuration options of the target
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -880,7 +898,7 @@ The target of the bullet chart.
     ?>
 
 ### targetField
-The data field containing the target value.** Available for bullet and verticalBullet series. **
+The data item field containing the target value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -899,7 +917,7 @@ The data field containing the target value.** Available for bullet and verticalB
 
 ### tooltip
 
-The data point tooltip configuration options.
+The chart series tooltip configuration options.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -927,7 +945,7 @@ The data point tooltip configuration options.
     ?>
 
 ### type
-The type of the series. Available types:
+The type of the series.The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -945,7 +963,8 @@ The type of the series. Available types:
     ?>
 
 ### visibleInLegend
-A value indicating whether to show the point category name (for bubble, donut and pie series) and series name (for other available series types) in the legend.** Available for all series. **
+A value indicating whether to show the point category name (for bubble, donut and pie series)
+or series name (for other available series types) in the legend.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -963,7 +982,7 @@ A value indicating whether to show the point category name (for bubble, donut an
     ?>
 
 ### visibleInLegendField
-A data field containing a boolean value which indicates whether to show the point category name in the legend.** Available for bubble, donut and pie series. **
+The data item field which indicates whether to show the point category name in the legend.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -981,7 +1000,7 @@ A data field containing a boolean value which indicates whether to show the poin
     ?>
 
 ### width
-The line width.** Available for line and scatterLine series **
+The line width.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -999,7 +1018,7 @@ The line width.** Available for line and scatterLine series **
     ?>
 
 ### xAxis
-The name of the X axis to use.** Available for bubble, scatter and scatterLine series. **
+The name of the X axis to use.For polar series the xAxis range is expressed in degrees.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -1017,7 +1036,7 @@ The name of the X axis to use.** Available for bubble, scatter and scatterLine s
     ?>
 
 ### xField
-The data field containing the X value.** Available for bubble, scatter and scatterLine series. **
+The data item field containing the X value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -1035,7 +1054,7 @@ The data field containing the X value.** Available for bubble, scatter and scatt
     ?>
 
 ### yAxis
-The name of the Y axis to use.** Available for bubble, scatter and scatterLine series. **
+The name of the Y axis to use.** Available for bubble, scatter, scatterLine and polar series. **
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -1053,7 +1072,7 @@ The name of the Y axis to use.** Available for bubble, scatter and scatterLine s
     ?>
 
 ### yField
-The data field containing the Y value.** Available for bubble, scatter and scatterLine series. **
+The data item field containing the Y value.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`

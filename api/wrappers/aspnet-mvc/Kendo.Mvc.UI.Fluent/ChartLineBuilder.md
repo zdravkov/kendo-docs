@@ -11,17 +11,8 @@ Defines the fluent interface for configuring ChartLine.
 
 ## Methods
 
-### Visible(System.Boolean)
+### Visible(`System.Boolean`)
 Sets the line visibility
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis.MajorGridLines(lines => lines.Visible(true)))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -30,6 +21,14 @@ Sets the line visibility
 The line visibility.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .CategoryAxis(axis => axis.MajorGridLines(lines => lines.Visible(true)))
+        .Render();
+    %>
 
 
 

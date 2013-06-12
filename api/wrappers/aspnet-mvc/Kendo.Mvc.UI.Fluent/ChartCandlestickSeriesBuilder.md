@@ -16,17 +16,8 @@ Gets or sets the series.
 
 ## Methods
 
-### Overlay(Kendo.Mvc.UI.ChartBarSeriesOverlay)
+### Overlay(`Kendo.Mvc.UI.ChartBarSeriesOverlay`)
 Sets the bar effects overlay
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Candlestick(s => s.Sales).Overlay(ChartBarSeriesOverlay.None))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -37,7 +28,15 @@ The candlestick effects overlay. The default is ChartBarSeriesOverlay.Glass
 
 
 
-### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Candlestick(s => s.Sales).Overlay(ChartBarSeriesOverlay.None))
+        .Render();
+    %>
+
+
+### Highlight(`System.Action<Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder>`)
 Configures the series highlight
 
 
@@ -45,6 +44,7 @@ Configures the series highlight
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartCandlestickSeriesHighlightBuilder)>
 The configuration action.
+
 
 
 

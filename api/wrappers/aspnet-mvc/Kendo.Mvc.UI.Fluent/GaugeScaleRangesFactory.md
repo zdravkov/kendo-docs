@@ -25,12 +25,14 @@ Defines a item.
 
 
 
-### Add(System.Double,System.Double,System.String)
+
+### Add(`System.Double,System.Double,System.String`)
 Defines a item.
 
 
 
 #### Returns
+
 
 
 

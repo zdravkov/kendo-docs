@@ -11,17 +11,8 @@ Defines the fluent interface for configuring ChartAxisTicks.
 
 ## Methods
 
-### Size(System.Int32)
+### Size(`System.Int32`)
 Sets the ticks size
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("chart")
-        .ValueAxis(axis => axis.MajorTicks(ticks => ticks.Size(2)))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -32,17 +23,16 @@ The ticks size.
 
 
 
-### Visible(System.Boolean)
-Sets the ticks visibility
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("chart")
-        .ValueAxis(axis => axis.MajorTicks(ticks => ticks.Visible(false)))
+        .ValueAxis(axis => axis.MajorTicks(ticks => ticks.Size(2)))
         .Render();
     %>
-        
+
+
+### Visible(`System.Boolean`)
+Sets the ticks visibility
 
 
 #### Parameters
@@ -51,6 +41,14 @@ Sets the ticks visibility
 The ticks visibility.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("chart")
+        .ValueAxis(axis => axis.MajorTicks(ticks => ticks.Visible(false)))
+        .Render();
+    %>
 
 
 

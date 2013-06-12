@@ -157,6 +157,7 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-labels-bord
 The label template.
 Template variables:
 
+
 #### Example
     <kendo:sparkline-categoryAxisItem-labels template="handle_template">
     </kendo:sparkline-categoryAxisItem-labels>
@@ -172,6 +173,7 @@ Template variables:
 
 The label template.
 Template variables:
+
 
 #### Example
     <kendo:sparkline-categoryAxisItem-labels>

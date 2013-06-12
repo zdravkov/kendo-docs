@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-target-line\>
 
-The target line.
+The target line options.
 
 #### Example
     <kendo:chart-seriesItem-target>
@@ -31,6 +31,7 @@ The width of the line.
 
 The width of the line.
 
+
 #### Example
     <kendo:chart-seriesItem-target-line width="handle_width">
     </kendo:chart-seriesItem-target-line>
@@ -45,6 +46,7 @@ The width of the line.
 ### kendo:chart-seriesItem-target-line-width
 
 The width of the line.
+
 
 #### Example
     <kendo:chart-seriesItem-target-line>

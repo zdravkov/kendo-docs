@@ -47,6 +47,7 @@ The width of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels-border color="handle_color">
     </kendo:stockChart-seriesItem-labels-border>
@@ -60,6 +61,7 @@ The color of the border.
 
 The dash type of the border.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels-border dashType="handle_dashType">
     </kendo:stockChart-seriesItem-labels-border>
@@ -72,6 +74,7 @@ The dash type of the border.
 ### width `String`
 
 The width of the border.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels-border width="handle_width">
@@ -88,6 +91,7 @@ The width of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels-border>
         <kendo:stockChart-seriesItem-labels-border-color>
@@ -103,6 +107,7 @@ The color of the border.
 
 The dash type of the border.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels-border>
         <kendo:stockChart-seriesItem-labels-border-dashType>
@@ -117,6 +122,7 @@ The dash type of the border.
 ### kendo:stockChart-seriesItem-labels-border-width
 
 The width of the border.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels-border>

@@ -6,7 +6,7 @@ publish: true
 ---
 
 # \<kendo:sparkline\>
-A JSP tag representing Kendo Sparkline.
+A JSP wrapper for Kendo UI [Sparkline](/api/dataviz/sparkline).
 
 ## Configuration Attributes
 
@@ -170,6 +170,9 @@ More documentation is available at [kendo:sparkline-valueAxis](sparkline/valueax
 
 Fires when an axis label is clicked.
 
+
+For additional information check the [axisLabelClick](/api/web/sparkline#events-axisLabelClick) event documentation.
+
 #### Example
     <kendo:sparkline axisLabelClick="handle_axisLabelClick">
     </kendo:sparkline>
@@ -179,23 +182,13 @@ Fires when an axis label is clicked.
         }
     </script>
 
-### legendItemClick `String`
-
-Fires when an legend item is clicked.
-
-#### Example
-    <kendo:sparkline legendItemClick="handle_legendItemClick">
-    </kendo:sparkline>
-    <script>
-        function handle_legendItemClick(e) {
-            // Code to handle the legendItemClick event.
-        }
-    </script>
-
 ### dataBound `String`
 
 Fires when the chart has received data from the data source
 and is about to render it.
+
+
+For additional information check the [dataBound](/api/web/sparkline#events-dataBound) event documentation.
 
 #### Example
     <kendo:sparkline dataBound="handle_dataBound">
@@ -210,6 +203,9 @@ and is about to render it.
 
 Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [dragStart](/api/web/sparkline#events-dragStart) event documentation.
+
 #### Example
     <kendo:sparkline dragStart="handle_dragStart">
     </kendo:sparkline>
@@ -222,6 +218,9 @@ Fires when the user has used the mouse or a swipe gesture to drag the chart.The 
 ### drag `String`
 
 Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+
+For additional information check the [drag](/api/web/sparkline#events-drag) event documentation.
 
 #### Example
     <kendo:sparkline drag="handle_drag">
@@ -236,6 +235,9 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
 
 Fires when the user stops dragging the chart.
 
+
+For additional information check the [dragEnd](/api/web/sparkline#events-dragEnd) event documentation.
+
 #### Example
     <kendo:sparkline dragEnd="handle_dragEnd">
     </kendo:sparkline>
@@ -248,6 +250,9 @@ Fires when the user stops dragging the chart.
 ### plotAreaClick `String`
 
 Fires when plot area is clicked.
+
+
+For additional information check the [plotAreaClick](/api/web/sparkline#events-plotAreaClick) event documentation.
 
 #### Example
     <kendo:sparkline plotAreaClick="handle_plotAreaClick">
@@ -262,6 +267,9 @@ Fires when plot area is clicked.
 
 Fires when chart series are clicked.
 
+
+For additional information check the [seriesClick](/api/web/sparkline#events-seriesClick) event documentation.
+
 #### Example
     <kendo:sparkline seriesClick="handle_seriesClick">
     </kendo:sparkline>
@@ -274,6 +282,9 @@ Fires when chart series are clicked.
 ### seriesHover `String`
 
 Fires when chart series are hovered.
+
+
+For additional information check the [seriesHover](/api/web/sparkline#events-seriesHover) event documentation.
 
 #### Example
     <kendo:sparkline seriesHover="handle_seriesHover">
@@ -288,6 +299,9 @@ Fires when chart series are hovered.
 
 Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [zoomStart](/api/web/sparkline#events-zoomStart) event documentation.
+
 #### Example
     <kendo:sparkline zoomStart="handle_zoomStart">
     </kendo:sparkline>
@@ -301,6 +315,9 @@ Fires when the user has used the mousewheel to zoom the chart.The zoom operation
 
 Fires as long as the user is zooming the chart using the mousewheel.
 
+
+For additional information check the [zoom](/api/web/sparkline#events-zoom) event documentation.
+
 #### Example
     <kendo:sparkline zoom="handle_zoom">
     </kendo:sparkline>
@@ -313,6 +330,9 @@ Fires as long as the user is zooming the chart using the mousewheel.
 ### zoomEnd `String`
 
 Fires when the user stops zooming the chart.
+
+
+For additional information check the [zoomEnd](/api/web/sparkline#events-zoomEnd) event documentation.
 
 #### Example
     <kendo:sparkline zoomEnd="handle_zoomEnd">
@@ -329,6 +349,9 @@ Fires when the user stops zooming the chart.
 
 Fires when an axis label is clicked.
 
+
+For additional information check the [axisLabelClick](/api/web/sparkline#events-axisLabelClick) event documentation.
+
 #### Example
     <kendo:sparkline>
         <kendo:sparkline-axisLabelClick>
@@ -340,25 +363,13 @@ Fires when an axis label is clicked.
         </kendo:sparkline-axisLabelClick>
     </kendo:sparkline>
 
-### kendo:sparkline-legendItemClick
-
-Fires when an legend item is clicked.
-
-#### Example
-    <kendo:sparkline>
-        <kendo:sparkline-legendItemClick>
-            <script>
-                function(e) {
-                    // Code to handle the legendItemClick event.
-                }
-            </script>
-        </kendo:sparkline-legendItemClick>
-    </kendo:sparkline>
-
 ### kendo:sparkline-dataBound
 
 Fires when the chart has received data from the data source
 and is about to render it.
+
+
+For additional information check the [dataBound](/api/web/sparkline#events-dataBound) event documentation.
 
 #### Example
     <kendo:sparkline>
@@ -375,6 +386,9 @@ and is about to render it.
 
 Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [dragStart](/api/web/sparkline#events-dragStart) event documentation.
+
 #### Example
     <kendo:sparkline>
         <kendo:sparkline-dragStart>
@@ -389,6 +403,9 @@ Fires when the user has used the mouse or a swipe gesture to drag the chart.The 
 ### kendo:sparkline-drag
 
 Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+
+For additional information check the [drag](/api/web/sparkline#events-drag) event documentation.
 
 #### Example
     <kendo:sparkline>
@@ -405,6 +422,9 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
 
 Fires when the user stops dragging the chart.
 
+
+For additional information check the [dragEnd](/api/web/sparkline#events-dragEnd) event documentation.
+
 #### Example
     <kendo:sparkline>
         <kendo:sparkline-dragEnd>
@@ -419,6 +439,9 @@ Fires when the user stops dragging the chart.
 ### kendo:sparkline-plotAreaClick
 
 Fires when plot area is clicked.
+
+
+For additional information check the [plotAreaClick](/api/web/sparkline#events-plotAreaClick) event documentation.
 
 #### Example
     <kendo:sparkline>
@@ -435,6 +458,9 @@ Fires when plot area is clicked.
 
 Fires when chart series are clicked.
 
+
+For additional information check the [seriesClick](/api/web/sparkline#events-seriesClick) event documentation.
+
 #### Example
     <kendo:sparkline>
         <kendo:sparkline-seriesClick>
@@ -449,6 +475,9 @@ Fires when chart series are clicked.
 ### kendo:sparkline-seriesHover
 
 Fires when chart series are hovered.
+
+
+For additional information check the [seriesHover](/api/web/sparkline#events-seriesHover) event documentation.
 
 #### Example
     <kendo:sparkline>
@@ -465,6 +494,9 @@ Fires when chart series are hovered.
 
 Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [zoomStart](/api/web/sparkline#events-zoomStart) event documentation.
+
 #### Example
     <kendo:sparkline>
         <kendo:sparkline-zoomStart>
@@ -480,6 +512,9 @@ Fires when the user has used the mousewheel to zoom the chart.The zoom operation
 
 Fires as long as the user is zooming the chart using the mousewheel.
 
+
+For additional information check the [zoom](/api/web/sparkline#events-zoom) event documentation.
+
 #### Example
     <kendo:sparkline>
         <kendo:sparkline-zoom>
@@ -494,6 +529,9 @@ Fires as long as the user is zooming the chart using the mousewheel.
 ### kendo:sparkline-zoomEnd
 
 Fires when the user stops zooming the chart.
+
+
+For additional information check the [zoomEnd](/api/web/sparkline#events-zoomEnd) event documentation.
 
 #### Example
     <kendo:sparkline>

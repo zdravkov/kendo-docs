@@ -66,6 +66,7 @@ More documentation is available at [kendo:stockChart-seriesItem-target-line](sto
 
 The target color.
 
+
 #### Example
     <kendo:stockChart-seriesItem-target color="handle_color">
     </kendo:stockChart-seriesItem-target>
@@ -80,6 +81,7 @@ The target color.
 ### kendo:stockChart-seriesItem-target-color
 
 The target color.
+
 
 #### Example
     <kendo:stockChart-seriesItem-target>

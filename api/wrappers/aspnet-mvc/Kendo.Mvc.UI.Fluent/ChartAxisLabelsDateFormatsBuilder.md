@@ -11,24 +11,9 @@ Defines the fluent interface for configuring ChartLine.
 
 ## Methods
 
-### Hours(System.String)
+### Hours(`System.String`)
 Sets the date format when the base date unit is Hours
 
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-        .DateFormats(formats => formats
-        .Hours("HH:mm")
-        )
-        )
-        );
-    %>
-        
-
 
 #### Parameters
 
@@ -38,24 +23,23 @@ The date format.
 
 
 
-### Days(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Hours("HH:mm")
+            )
+        )
+        );
+    %>
+
+
+### Days(`System.String`)
 Sets the date format when the base date unit is Days
 
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-        .DateFormats(formats => formats
-        .Days("dddd dd")
-        )
-        )
-        );
-    %>
-        
-
 
 #### Parameters
 
@@ -65,24 +49,23 @@ The date format.
 
 
 
-### Minutes(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Days("dddd dd")
+            )
+        )
+        );
+    %>
+
+
+### Minutes(`System.String`)
 Sets the date format when the base date unit is Minutes
 
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-        .DateFormats(formats => formats
-        .Minutes("ss")
-        )
-        )
-        );
-    %>
-        
-
 
 #### Parameters
 
@@ -92,24 +75,23 @@ The date format.
 
 
 
-### Months(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Minutes("ss")
+            )
+        )
+        );
+    %>
+
+
+### Months(`System.String`)
 Sets the date format when the base date unit is Months
 
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-        .DateFormats(formats => formats
-        .Months("MMMM MM")
-        )
-        )
-        );
-    %>
-        
-
 
 #### Parameters
 
@@ -119,24 +101,23 @@ The date format.
 
 
 
-### Weeks(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Months("MMMM MM")
+            )
+        )
+        );
+    %>
+
+
+### Weeks(`System.String`)
 Sets the date format when the base date unit is Months
 
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-        .DateFormats(formats => formats
-        .Months("dddd")
-        )
-        )
-        );
-    %>
-        
-
 
 #### Parameters
 
@@ -146,24 +127,23 @@ The date format.
 
 
 
-### Years(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Months("dddd")
+            )
+        )
+        );
+    %>
+
+
+### Years(`System.String`)
 Sets the date format when the base date unit is Years
 
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-        .DateFormats(formats => formats
-        .Years("yyyy")
-        )
-        )
-        );
-    %>
-        
-
 
 #### Parameters
 
@@ -171,6 +151,20 @@ Sets the date format when the base date unit is Years
 The date format.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Years("yyyy")
+            )
+        )
+        );
+    %>
 
 
 

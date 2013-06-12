@@ -16,20 +16,8 @@ Gets or sets the axis.
 
 ## Methods
 
-### MajorTicks(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder\>)
+### MajorTicks(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>`)
 Configures the major ticks.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .ValueAxis(axis => axis
-        .MajorTicks(ticks => ticks
-        .Visible(false)
-        )
-        )
-    %>
-        
 
 
 #### Parameters
@@ -40,20 +28,19 @@ The configuration action.
 
 
 
-### Crosshair(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisCrosshairBuilder\>)
-Configures the major ticks.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .ValueAxis(axis => axis
-        .Crosshair(crosshair => crosshair
-        .Visible(false)
+    .Name("Chart")
+    .ValueAxis(axis => axis
+        .MajorTicks(ticks => ticks
+            .Visible(false)
         )
-        )
+    )
     %>
-        
+
+
+### Crosshair(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisCrosshairBuilder>`)
+Configures the major ticks.
 
 
 #### Parameters
@@ -64,18 +51,19 @@ The configuration action.
 
 
 
-### Name(System.String)
-Sets the axis name.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .ValueAxis(axis => axis
-        .Name("axisName")
+    .Name("Chart")
+    .ValueAxis(axis => axis
+        .Crosshair(crosshair => crosshair
+            .Visible(false)
         )
+    )
     %>
-        
+
+
+### Name(`System.String`)
+Sets the axis name.
 
 
 #### Parameters
@@ -86,20 +74,17 @@ The axis name.
 
 
 
-### MinorTicks(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder\>)
-Configures the minor ticks.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .ValueAxis(axis => axis
-        .MinorTicks(ticks => ticks
-        .Visible(false)
-        )
-        )
+    .Name("Chart")
+    .ValueAxis(axis => axis
+        .Name("axisName")
+    )
     %>
-        
+
+
+### MinorTicks(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTicksBuilder>`)
+Configures the minor ticks.
 
 
 #### Parameters
@@ -110,19 +95,19 @@ The configuration action.
 
 
 
-### MajorGridLines(System.Action\<Kendo.Mvc.UI.Fluent.ChartLineBuilder\>)
-Configures the major grid lines.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Categories(s => s.DateString)
-        .MajorGridLines(lines => lines.Visible(true))
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .ValueAxis(axis => axis
+        .MinorTicks(ticks => ticks
+            .Visible(false)
         )
+    )
     %>
-        
+
+
+### MajorGridLines(`System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`)
+Configures the major grid lines.
 
 
 #### Parameters
@@ -133,19 +118,18 @@ The configuration action.
 
 
 
-### MajorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets color and width of the major grid lines and enables them.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .MajorGridLines(2, "red", ChartDashType.Dot)
-        )
+        .MajorGridLines(lines => lines.Visible(true))
+    )
     %>
-        
+
+
+### MajorGridLines(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets color and width of the major grid lines and enables them.
 
 
 #### Parameters
@@ -162,19 +146,18 @@ The major gridlines line dashType.
 
 
 
-### MinorGridLines(System.Action\<Kendo.Mvc.UI.Fluent.ChartLineBuilder\>)
-Configures the minor grid lines.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .MinorGridLines(lines => lines.Visible(true))
-        )
+        .MajorGridLines(2, "red", ChartDashType.Dot)
+    )
     %>
-        
+
+
+### MinorGridLines(`System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`)
+Configures the minor grid lines.
 
 
 #### Parameters
@@ -185,19 +168,18 @@ The configuration action.
 
 
 
-### MinorGridLines(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets color and width of the minor grid lines and enables them.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .MinorGridLines(2, "red", ChartDashType.Dot)
-        )
+        .MinorGridLines(lines => lines.Visible(true))
+    )
     %>
-        
+
+
+### MinorGridLines(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets color and width of the minor grid lines and enables them.
 
 
 #### Parameters
@@ -214,19 +196,18 @@ The minor grid lines dash type
 
 
 
-### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartLineBuilder\>)
-Configures the axis line.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .Line(line => line.Color("#f00"))
-        )
+        .MinorGridLines(2, "red", ChartDashType.Dot)
+    )
     %>
-        
+
+
+### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`)
+Configures the axis line.
 
 
 #### Parameters
@@ -237,19 +218,18 @@ The configuration action.
 
 
 
-### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets color and width of the lines and enables them.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .Line(2, "#f00", ChartDashType.Dot)
-        )
+        .Line(line => line.Color("#f00"))
+    )
     %>
-        
+
+
+### Line(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets color and width of the lines and enables them.
 
 
 #### Parameters
@@ -266,21 +246,18 @@ The axis line dashType.
 
 
 
-### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder\>)
-Configures the axis labels.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Labels(labels => labels
-        .Color("Red")
-        .Visible(true)
-        );
-        )
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Categories(s => s.DateString)
+        .Line(2, "#f00", ChartDashType.Dot)
+    )
     %>
-        
+
+
+### Labels(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder>`)
+Configures the axis labels.
 
 
 #### Parameters
@@ -291,16 +268,20 @@ The configuration action.
 
 
 
-### Labels(System.Boolean)
-Sets the visibility of numeric axis chart labels.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis.Labels(true))
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Labels(labels => labels
+            .Color("Red")
+            .Visible(true)
+            );
+        )
     %>
-        
+
+
+### Labels(`System.Boolean`)
+Sets the visibility of numeric axis chart labels.
 
 
 #### Parameters
@@ -311,20 +292,15 @@ The visibility. The default value is false.
 
 
 
-### PlotBands(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory\<T,T\>\>)
-Defines the plot bands items.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .PlotBands.Add()
-        .From(1)
-        .To(2)
-        )
+    .Name("Chart")
+    .CategoryAxis(axis => axis.Labels(true))
     %>
-        
+
+
+### PlotBands(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory<T,T>>`)
+Defines the plot bands items.
 
 
 #### Parameters
@@ -335,19 +311,19 @@ The add action.
 
 
 
-### Title(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder\>)
-Configures the chart axis title.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Categories(s => s.DateString)
-        .Title(title => title.Text("Axis"))
-        )
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .PlotBands.Add()
+        .From(1)
+        .To(2)
+    )
     %>
-        
+
+
+### Title(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisTitleBuilder>`)
+Configures the chart axis title.
 
 
 #### Parameters
@@ -358,19 +334,18 @@ The configuration action.
 
 
 
-### Title(System.String)
-Sets the axis title.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .Title("Axis")
-        )
+        .Title(title => title.Text("Axis"))
+    )
     %>
-        
+
+
+### Title(`System.String`)
+Sets the axis title.
 
 
 #### Parameters
@@ -381,23 +356,18 @@ The axis title.
 
 
 
-### Pane(System.String)
-Renders the axis in the pane with the specified name.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Panes(panes => {
-        panes.Add().Title("Value");
-        panes.Add("volumePane").Title("Volume");
-        })
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .Pane("volumePane")
-        )
+        .Title("Axis")
+    )
     %>
-        
+
+
+### Pane(`System.String`)
+Renders the axis in the pane with the specified name.
 
 
 #### Parameters
@@ -408,19 +378,22 @@ The pane name.
 
 
 
-### Color(System.String)
-Sets the color for all axis elements. Can be overriden by individual settings.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .Panes(panes => {
+        panes.Add().Title("Value");
+        panes.Add("volumePane").Title("Volume");
+    })
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .Color("#ff0000")
-        )
+        .Pane("volumePane")
+    )
     %>
-        
+
+
+### Color(`System.String`)
+Sets the color for all axis elements. Can be overriden by individual settings.
 
 
 #### Parameters
@@ -431,19 +404,18 @@ The axis color.
 
 
 
-### Reverse(System.Boolean)
-Sets the axis reverse option.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
-        .Reverse(true)
-        )
+        .Color("#ff0000")
+    )
     %>
-        
+
+
+### Reverse(`System.Boolean`)
+Sets the axis reverse option.
 
 
 #### Parameters
@@ -454,24 +426,33 @@ A value indicating if the axis labels should be rendered in reverse.
 
 
 
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Categories(s => s.DateString)
+        .Reverse(true)
+    )
+    %>
+
+
 ### Reverse
 Reverse the axis.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(s => s.DateString)
         .Reverse()
-        )
+    )
     %>
-        
 
 
-
-
-### Visible(System.Boolean)
+### Visible(`System.Boolean`)
 Sets the axis visibility
 
 
@@ -483,7 +464,8 @@ The axis visibility.
 
 
 
-### NarrowRange(System.Boolean)
+
+### NarrowRange(`System.Boolean`)
 A value indicating if the automatic axis range should snap to 0.
 
 
@@ -491,6 +473,7 @@ A value indicating if the automatic axis range should snap to 0.
 
 ##### narrowRange `System.Boolean`
 The narrowRange value.
+
 
 
 

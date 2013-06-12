@@ -16,7 +16,7 @@ The parent Chart
 
 ## Methods
 
-### CategoriesT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+### Categories(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound categories.
 
 
@@ -28,7 +28,8 @@ The expression used to extract the categories value from the chart model
 
 
 
-### Categories(System.Collections.IEnumerable)
+
+### Categories(`System.Collections.IEnumerable`)
 Defines categories.
 
 
@@ -40,7 +41,8 @@ The list of categories
 
 
 
-### Categories(System.String[])
+
+### Categories(`System.String[]`)
 Defines categories.
 
 
@@ -52,18 +54,9 @@ The list of categories
 
 
 
-### AxisCrossingValue(System.Double)
+
+### AxisCrossingValue(`System.Double`)
 Sets value at which the first perpendicular axis crosses this axis.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .CategoryAxis(axis => axis.AxisCrossingValue(4))
-        .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
-        .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
-    %>
-        
 
 
 #### Parameters
@@ -74,18 +67,17 @@ The value at which the first perpendicular axis crosses this axis.
 
 
 
-### AxisCrossingValue(System.Double[])
-Sets value at which perpendicular axes cross this axis.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .CategoryAxis(axis => axis.AxisCrossingValue(0, 10))
-        .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
-        .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
+    .Name("Chart")
+    .CategoryAxis(axis => axis.AxisCrossingValue(4))
+    .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
+    .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
     %>
-        
+
+
+### AxisCrossingValue(`System.Double[]`)
+Sets value at which perpendicular axes cross this axis.
 
 
 #### Parameters
@@ -96,18 +88,17 @@ The values at which perpendicular axes cross this axis.
 
 
 
-### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
-Sets value at which perpendicular axes cross this axis.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .CategoryAxis(axis => axis.AxisCrossingValue(new double[] { 0, 10 }))
-        .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
-        .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
+    .Name("Chart")
+    .CategoryAxis(axis => axis.AxisCrossingValue(0, 10))
+    .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
+    .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
     %>
-        
+
+
+### AxisCrossingValue(`System.Collections.Generic.IEnumerable<System.Double>`)
+Sets value at which perpendicular axes cross this axis.
 
 
 #### Parameters
@@ -118,7 +109,16 @@ The values at which perpendicular axes cross this axis.
 
 
 
-### Justify(System.Boolean)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .CategoryAxis(axis => axis.AxisCrossingValue(new double[] { 0, 10 }))
+    .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
+    .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
+    %>
+
+
+### Justify(`System.Boolean`)
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
 
@@ -132,6 +132,7 @@ A boolean value that indicates if the empty space before and after the series sh
 
 
 
+
 ### Justify
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
@@ -139,16 +140,9 @@ Positions categories and series points on major ticks. This removes the empty sp
 
 
 
-### Select(System.Double,System.Double)
+
+### Select(`System.Double,System.Double`)
 Sets the selection range
-
-#### Example
-
-    <%= Html.Kendo().StockChart(Model)
-        .Name("StockChart")
-        .CategoryAxis(axis => axis.Select(0, 3))
-    %>
-        
 
 
 #### Parameters
@@ -165,18 +159,15 @@ The selection range end.
 
 
 
-### Select(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder\>)
-Configures the selection
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().StockChart(Model)
-        .Name("StockChart")
-        .CategoryAxis(axis => axis.Select(select =>
-        select.Mousewheel(mw => mw.Reverse())
-        )
+    .Name("StockChart")
+    .CategoryAxis(axis => axis.Select(0, 3))
     %>
-        
+
+
+### Select(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder>`)
+Configures the selection
 
 
 #### Parameters
@@ -185,6 +176,15 @@ Configures the selection
 The configuration action.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().StockChart(Model)
+    .Name("StockChart")
+    .CategoryAxis(axis => axis.Select(select =>
+        select.Mousewheel(mw => mw.Reverse())
+        ))
+    %>
 
 
 

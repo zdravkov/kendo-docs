@@ -11,30 +11,8 @@ Defines the fluent interface for configuring ChartAxisCrosshairTooltipBuilder.
 
 ## Methods
 
-### Font(System.String)
+### Font(`System.String`)
 Sets the tooltip font
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
-        })
-        .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Font("14px Arial,Helvetica,sans-serif")
-        .Visible(true)
-        )
-        )
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -45,29 +23,29 @@ The tooltip font (CSS format).
 
 
 
-### Visible(System.Boolean)
-Sets the tooltip visible
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Visible(true)
-        )
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Font("14px Arial,Helvetica,sans-serif")
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Visible(`System.Boolean`)
+Sets the tooltip visible
 
 
 #### Parameters
@@ -78,30 +56,28 @@ The tooltip visible.
 
 
 
-### Background(System.String)
-Sets the tooltip background
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Background("red")
-        .Visible(true)
-        )
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Background(`System.String`)
+Sets the tooltip background
 
 
 #### Parameters
@@ -112,29 +88,29 @@ The tooltip background.
 
 
 
-### Color(System.String)
-Sets the tooltip text color
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .color("red")
-        .Visible(true)
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Background("red")
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Color(`System.String`)
+Sets the tooltip text color
 
 
 #### Parameters
@@ -146,30 +122,29 @@ The tooltip text color.
 
 
 
-### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
-Sets the tooltip padding
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Padding(0, 5, 5, 0)
-        .Visible(true)
-        )
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .color("red")
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Padding(`System.Int32,System.Int32,System.Int32,System.Int32`)
+Sets the tooltip padding
 
 
 #### Parameters
@@ -189,30 +164,29 @@ The tooltip left padding.
 
 
 
-### Padding(System.Int32)
-Sets the tooltip padding
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Padding(20)
-        .Visible(true)
-        )
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Padding(0, 5, 5, 0)
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Padding(`System.Int32`)
+Sets the tooltip padding
 
 
 #### Parameters
@@ -223,30 +197,29 @@ The tooltip padding.
 
 
 
-### Border(System.Int32,System.String)
-Sets the tooltip border
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Border(1, "Red")
-        .Visible(true)
-        )
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Padding(20)
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Border(`System.Int32,System.String`)
+Sets the tooltip border
 
 
 #### Parameters
@@ -260,7 +233,28 @@ The tooltip border color (CSS syntax).
 
 
 
-### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => {
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+        })
+        .CategoryAxis(axis => axis
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Border(1, "Red")
+                    .Visible(true)
+                )
+            )
+        )
+        .Render();
+    %>
+
+
+### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
 Configures the tooltip border
 
 
@@ -272,30 +266,9 @@ The border configuration action
 
 
 
-### Format(System.String)
+
+### Format(`System.String`)
 Sets the tooltip format
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
-        })
-        .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Format("{0:C}")
-        .Visible(true)
-        )
-        )
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -306,30 +279,29 @@ The tooltip format.
 
 
 
-### Template(System.String)
-Sets the tooltip template
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Template("|<#= value #|>")
-        .Visible(true)
-        )
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Format("{0:C}")
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Template(`System.String`)
+Sets the tooltip template
 
 
 #### Parameters
@@ -340,30 +312,29 @@ The tooltip template.
 
 
 
-### Opacity(System.Double)
-Sets the tooltip opacity.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => {
-        .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
-        .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
         })
         .CategoryAxis(axis => axis
-        .Categories("2005", "2006", "2007", "2008", "2009")
-        .Crosshair(crosshair => crosshair
-        .Visible(true)
-        .Tooltip(tooltip => tooltip
-        .Opacity(0.5)
-        .Visible(true)
-        )
-        )
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Template("|<#= value #|>")
+                    .Visible(true)
+                )
+            )
         )
         .Render();
     %>
-        
+
+
+### Opacity(`System.Double`)
+Sets the tooltip opacity.
 
 
 #### Parameters
@@ -373,6 +344,27 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => {
+            .series.Bar(new double[] { 15.7, 16.7, 20, 23.5, 26.6 }).Name("World");
+            .series.Bar(new double[] { 67.96, 68.93, 75, 74, 78 }).Name("United States");
+        })
+        .CategoryAxis(axis => axis
+            .Categories("2005", "2006", "2007", "2008", "2009")
+            .Crosshair(crosshair => crosshair
+                .Visible(true)
+                .Tooltip(tooltip => tooltip
+                    .Opacity(0.5)
+                    .Visible(true)
+                )
+            )
+        )
+        .Render();
+    %>
 
 
 

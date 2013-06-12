@@ -13,17 +13,35 @@ A PHP class representing the categoryAxisItem setting of StockChartCategoryAxis.
 ## Methods
 
 ### autoBaseUnitSteps
-Specifies the discrete baseUnitStep values when
-either baseUnit is set to "fit" or baseUnitStep is set to "auto".The default configuration is as follows:Each setting can be overriden individually.
+
+The discrete categoryAxis.baseUnitStep values when
+either categoryAxis.baseUnit is set to "fit" or
+categoryAxis.baseUnitStep is set to "auto".
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartCategoryAxisItem`
 
 #### Parameters
 
-##### $value ``
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemAutoBaseUnitSteps|array`
 
 
+#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemAutoBaseUnitSteps](/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemAutoBaseUnitSteps)
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $autoBaseUnitSteps = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemAutoBaseUnitSteps();
+    $days = new array();
+    $autoBaseUnitSteps->days($days);
+    $categoryAxisItem->autoBaseUnitSteps($autoBaseUnitSteps);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $days = new array();
+    $categoryAxisItem->autoBaseUnitSteps(array('days' => $days));
+    ?>
 
 ### axisCrossingValue
 Category index at which the first value axis crosses this axis. (Only for object)Category indicies at which the value axes cross the category axis. (Only for array)Note: Specify an index greater than or equal to the number
@@ -57,11 +75,9 @@ of categories to denote the far end of the axis.
     ?>
 
 ### baseUnit
-The base time interval for the axis.
-The default baseUnit is determined automatically from the minimum difference
-between subsequent categories. Available options:Setting baseUnit to "fit" will set such base unit and baseUnitStep
-that the total number of categories does not exceed maxDateGroups.Series data is aggregated for the specified base unit by using the
-series.aggregate function.
+The base time interval for the date axis. The default base unit is determined automatically from the minimum difference
+between subsequent categories.The supported values are:Setting baseUnit to "fit" will set such base unit and categoryAxis.baseUnitStep
+that the total number of categories does not exceed categoryAxis.maxDateGroups.Series data is aggregated for the specified base unit using the series.aggregate function.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartCategoryAxisItem`
@@ -79,8 +95,8 @@ series.aggregate function.
     ?>
 
 ### baseUnitStep
-Sets the step (interval) between categories in base units.
-Specifiying "auto" will set the step to such value that the total number of categories does not exceed maxDateGroups.This option is ignored if baseUnit is set to "fit".
+The step (interval) between categories in base units. Setting it to "auto" will set the step to such value
+that the total number of categories does not exceed categoryAxis.maxDateGroups.This option is ignored if categoryAxis.baseUnit is set to "fit".
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartCategoryAxisItem`
@@ -327,7 +343,7 @@ set up a fixed date range.
 
 ### maxDateGroups
 Specifies the maximum number of groups (categories) to produce when
-either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.
+either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.The default value is approximately equal to [widget width, px] / 30
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartCategoryAxisItem`

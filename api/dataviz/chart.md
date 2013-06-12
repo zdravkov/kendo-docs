@@ -1524,7 +1524,7 @@ If set to `true` the chart will mirror the axis labels and ticks. If the labels 
     });
     </script>
 
-### categoryAxis.labels.padding `Number|Object` *(default: 0)*
+### categoryAxis.labels.padding `Object|Number` *(default: 0)*
 
 The padding of the labels. A numeric value will set all paddings.
 
@@ -6408,7 +6408,7 @@ The border of the chart series.
     });
     </script>
 
-### series.border.color `String`
+### series.border.color `String|Function`
 
 The color of the border. Accepts a valid CSS color string, including hex and rgb. By default it is set to color of the current series.
 
@@ -6429,7 +6429,7 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
     });
     </script>
 
-### series.border.dashType `String` *(default: "solid")*
+### series.border.dashType `String|Function` *(default: "solid")*
 
 The dash type of the border.
 
@@ -6461,7 +6461,7 @@ The following dash types are supported:
     });
     </script>
 
-### series.border.opacity `Number` *(default: 1)*
+### series.border.opacity `Number|Function` *(default: 1)*
 
 The opacity of the border. By default the border is opaque.
 
@@ -6483,7 +6483,7 @@ The opacity of the border. By default the border is opaque.
     });
     </script>
 
-### series.border.width `Number` *(default: 1)*
+### series.border.width `Number|Function` *(default: 1)*
 
 The width of the border in pixels.
 
@@ -6549,7 +6549,7 @@ The data field containing the close value.
     });
     </script>
 
-### series.color `String`
+### series.color `String|Function`
 
 The series base color. Accepts a valid CSS color string, including hex and rgb.
 
@@ -6834,7 +6834,7 @@ Can be set to :
     });
     </script>
 
-### series.downColor `String`
+### series.downColor `String|Function`
 
 The series color when the open value is greater than the close value.
 
@@ -7344,7 +7344,7 @@ The supported values are:
     });
     </script>
 
-### series.labels.background `String`
+### series.labels.background `String|Function`
 
 The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
 
@@ -7387,7 +7387,7 @@ The border of the labels.
     });
     </script>
 
-### series.labels.border.color `String` *(default: "black")*
+### series.labels.border.color `String|Function` *(default: "black")*
 
 The color of the border. Accepts a valid CSS color string, including hex and rgb.
 
@@ -7411,7 +7411,7 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
     });
     </script>
 
-### series.labels.border.dashType `String` *(default: "solid")*
+### series.labels.border.dashType `String|Function` *(default: "solid")*
 
 The dash type of the border.
 
@@ -7445,7 +7445,7 @@ The following dash types are supported:
     });
     </script>
 
-### series.labels.border.width `Number` *(default: 0)*
+### series.labels.border.width `Number|Function` *(default: 0)*
 
 The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
 
@@ -7468,7 +7468,7 @@ The width of the border in pixels. By default the border width is set to zero wh
     });
     </script>
 
-### series.labels.color `String`
+### series.labels.color `String|Function`
 
 The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
 
@@ -7542,7 +7542,7 @@ The distance of the labels when [series.type](#configuration-series.type) is set
     });
     </script>
 
-### series.labels.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+### series.labels.font `String|Function` *(default: "12px Arial,Helvetica,sans-serif")*
 
 The font style of the labels.
 
@@ -7560,7 +7560,7 @@ The font style of the labels.
     });
     </script>
 
-### series.labels.format `String` *(default: "{0}")*
+### series.labels.format `String|Function` *(default: "{0}")*
 
 The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-format).
 
@@ -7775,7 +7775,7 @@ The top padding of the labels.
     });
     </script>
 
-### series.labels.position `String` *(default: "above")*
+### series.labels.position `String|Function` *(default: "above")*
 
 The position of the labels.
 
@@ -7830,7 +7830,7 @@ The fields which can be used in the template are:
     });
     </script>
 
-### series.labels.visible `Boolean` *(default: false)*
+### series.labels.visible `Boolean|Function` *(default: false)*
 
 If set to `true` the chart will display the series labels. By default chart series labels are not displayed.
 
@@ -8086,7 +8086,7 @@ The chart series marker configuration.
     });
     </script>
 
-### series.markers.background `String`
+### series.markers.background `String|Function`
 
 The background color of the series markers.
 
@@ -8106,7 +8106,7 @@ The background color of the series markers.
     });
     </script>
 
-### series.markers.border `Object`
+### series.markers.border `Object|Function`
 
 The border of the markers.
 
@@ -8129,7 +8129,7 @@ The border of the markers.
     });
     </script>
 
-### series.markers.border.color `String` *(default: "black")*
+### series.markers.border.color `String|Function` *(default: "black")*
 
 The color of the border. Accepts a valid CSS color string, including hex and rgb.
 
@@ -8152,7 +8152,7 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
     });
     </script>
 
-### series.markers.border.width `Number` *(default: 0)*
+### series.markers.border.width `Number|Function` *(default: 0)*
 
 The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
 
@@ -8174,7 +8174,7 @@ The width of the border in pixels. By default the border width is set to zero wh
     });
     </script>
 
-### series.markers.size `Number` *(default: 6)*
+### series.markers.size `Number|Function` *(default: 6)*
 
 The marker size in pixels.
 
@@ -8194,7 +8194,7 @@ The marker size in pixels.
     });
     </script>
 
-### series.markers.type `String` *(default: "circle")*
+### series.markers.type `String|Function` *(default: "circle")*
 
 The markers shape.
 
@@ -8219,7 +8219,7 @@ The supported values are:
     });
     </script>
 
-### series.markers.visible `Boolean` *(default: false)*
+### series.markers.visible `Boolean|Function` *(default: false)*
 
 If set to `true` the chart will display the series markers. By default chart series markers are not displayed.
 
@@ -8237,6 +8237,52 @@ If set to `true` the chart will display the series markers. By default chart ser
       }]
     });
     </script>
+
+### series.markers.rotation `Number|Function`
+
+The rotation angle of the markers.
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "line",
+        data: [200, 450, 300, 125],
+        markers: {
+          type: "square",
+          rotation: 45
+        }
+      }]
+    });
+    </script>
+
+#### Example
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          speed: 2,
+          dir: 45
+        }, {
+          speed: 4.6,
+          dir: 180
+        }]
+      },
+      series: [{
+         type: "line",
+         field: "speed",
+         markers: {
+          type: "triangle",
+          size: 20,
+          rotation: function(point) {
+              // "Bind" rotation to dataItem field
+              return point.dataItem.dir;
+          }
+         }
+      }]
+    });
 
 ### series.maxSize `Number` *(default: 100)*
 
@@ -8619,7 +8665,7 @@ The configuration options of the target
     });
     </script>
 
-### series.target.border `Object`
+### series.target.border `Object|Function`
 
 The border of the target.
 
@@ -8645,7 +8691,7 @@ The border of the target.
     });
     </script>
 
-### series.target.border.color `String` *(default: "black")*
+### series.target.border.color `String|Function` *(default: "black")*
 
 The color of the border.
 
@@ -8671,7 +8717,7 @@ The color of the border.
     });
     </script>
 
-### series.target.border.dashType `String` *(default: "solid")*
+### series.target.border.dashType `String|Function` *(default: "solid")*
 
 The following dash types are supported:
 
@@ -8705,7 +8751,7 @@ The following dash types are supported:
     });
     </script>
 
-### series.target.border.width `Number` *(default: 0)*
+### series.target.border.width `Number|Function` *(default: 0)*
 
 The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
 
@@ -8730,7 +8776,7 @@ The width of the border in pixels. By default the border width is set to zero wh
     });
     </script>
 
-### series.target.color `String`
+### series.target.color `String|Function`
 
 The target color.
 
@@ -8777,7 +8823,7 @@ The target line options.
       ]
     });
 
-### series.target.line.width `Object`
+### series.target.line.width `Object|Function`
 
 The width of the line.
 
@@ -12811,6 +12857,27 @@ The number of labels to skip. By default no labels are skipped.
     });
     </script>
 
+### valueAxis.labels.step `Number`*(default: 1)*
+
+Label rendering step.
+Every n-th label is rendered where n is the step
+
+#### Example - render each 2nd label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: [{
+        labels: {
+          step: 2
+        }
+      }],
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
 ### valueAxis.labels.template `String|Function`
 
 The [template](/api/framework/kendo#methods-template) which renders the labels.
@@ -13346,6 +13413,104 @@ The following dash types are supported:
     });
     </script>
 
+### valueAxis.majorTicks `Object`
+
+The configuration of the value axis major ticks.
+
+#### Example - configure the value axis major ticks
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: [{
+        majorTicks: {
+          size: 6,
+          color: "green",
+          width: 5
+        }
+      }],
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### valueAxis.majorTicks.color `String` *(default: "black")*
+
+The color of the value axis major ticks lines. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the value axis major ticks color as a hex string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: {
+        majorTicks {
+          color: "#aa00bb"
+        }
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+#### Example - set the value axis major ticks color as a RGB value
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: {
+        majorTicks {
+          color: "rgb(128, 0, 255)"
+        }
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+#### Example - set the value axis major ticks color by name
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: {
+        majorTicks {
+          color: "green"
+        }
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### valueAxis.majorTicks.size `Number` *(default: 4)*
+
+The length of the tick line in pixels.
+
+#### Example - set the value axis major ticks size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: [{
+        majorTicks: {
+          size: 6
+        }
+      }],
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### valueAxis.majorTicks.visible `Boolean` *(default: true)*
+
+If set to `true` the chart will display the value axis major ticks. By default the value axis major ticks are visible.
+
 ### valueAxis.minorGridLines.type `String`
 
 The type of grid lines to draw for radar charts:
@@ -13431,7 +13596,8 @@ The configuration of the value axis minor ticks.
         minorTicks: {
           size: 6,
           color: "green",
-          width: 5
+          width: 5,
+          visible: true
         }
       }],
       series: [
@@ -13451,7 +13617,8 @@ The color of the value axis minor ticks lines. Accepts a valid CSS color string,
     $("#chart").kendoChart({
       valueAxis: {
         minorTicks {
-          color: "#aa00bb"
+          color: "#aa00bb",
+          visible: true
         }
       },
       series: [
@@ -13467,7 +13634,8 @@ The color of the value axis minor ticks lines. Accepts a valid CSS color string,
     $("#chart").kendoChart({
       valueAxis: {
         minorTicks {
-          color: "rgb(128, 0, 255)"
+          color: "rgb(128, 0, 255)",
+          visible: true
         }
       },
       series: [
@@ -13483,7 +13651,8 @@ The color of the value axis minor ticks lines. Accepts a valid CSS color string,
     $("#chart").kendoChart({
       valueAxis: {
         minorTicks {
-          color: "green"
+          color: "green",
+          visible: true
         }
       },
       series: [
@@ -13503,7 +13672,8 @@ The length of the tick line in pixels.
     $("#chart").kendoChart({
       valueAxis: [{
         minorTicks: {
-          size: 6
+          size: 6,
+          visible: true
         }
       }],
       series: [
@@ -13512,9 +13682,9 @@ The length of the tick line in pixels.
     });
     </script>
 
-### valueAxis.minorTicks.visible `Boolean` *(default: true)*
+### valueAxis.minorTicks.visible `Boolean` *(default: false)*
 
-If set to `true` the chart will display the value axis minor ticks. By default the value axis minor ticks are visible.
+If set to `true` the chart will display the value axis minor ticks. By default the value axis minor ticks are not visible.
 
 #### Example - hide the value axis minor ticks
 
@@ -20207,6 +20377,70 @@ The label value or category name.
     var chart = $("#chart").data("kendoChart");
     chart.bind("axisLabelClick", chart_axisLabelClick);
     </script>
+
+### legendItemClick
+
+Fires when an legend item is clicked.
+
+#### Example
+
+    function onLegendItemClick(e) {
+        alert("Clicked " + e.text + " series");
+    }
+
+#### Event Data
+
+##### e.text `String`
+
+The name of the series.
+
+##### e.series `Object`
+
+The series options.
+
+##### e.seriesIndex `Number`
+
+The series index.
+
+##### e.pointIndex `Number`
+
+The point index.
+
+##### e.element `Object`
+
+The DOM element of the plot area.
+
+### legendItemHover
+
+Fires when an legend item is hovered.
+
+#### Example
+
+    function onLegendItemHover(e) {
+        alert("Hovered " + e.text + " series");
+    }
+
+#### Event Data
+
+##### e.text `String`
+
+The name of the series.
+
+##### e.series `Object`
+
+The series options.
+
+##### e.seriesIndex `Number`
+
+The series index.
+
+##### e.pointIndex `Number`
+
+The point index.
+
+##### e.element `Object`
+
+The DOM element of the plot area.
 
 ### dataBound
 

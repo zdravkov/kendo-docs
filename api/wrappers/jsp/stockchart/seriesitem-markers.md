@@ -86,6 +86,7 @@ More documentation is available at [kendo:stockChart-seriesItem-markers-border](
 
 The background color of the current series markers.
 
+
 #### Example
     <kendo:stockChart-seriesItem-markers background="handle_background">
     </kendo:stockChart-seriesItem-markers>
@@ -98,6 +99,7 @@ The background color of the current series markers.
 ### size `String`
 
 The marker size.
+
 
 #### Example
     <kendo:stockChart-seriesItem-markers size="handle_size">
@@ -112,6 +114,7 @@ The marker size.
 
 Configures the markers shape type.
 
+
 #### Example
     <kendo:stockChart-seriesItem-markers type="handle_type">
     </kendo:stockChart-seriesItem-markers>
@@ -125,6 +128,7 @@ Configures the markers shape type.
 
 The markers visibility.
 
+
 #### Example
     <kendo:stockChart-seriesItem-markers visible="handle_visible">
     </kendo:stockChart-seriesItem-markers>
@@ -137,6 +141,7 @@ The markers visibility.
 ### rotation `String`
 
 The rotation angle of the markers.
+
 
 #### Example
     <kendo:stockChart-seriesItem-markers rotation="handle_rotation">
@@ -153,6 +158,7 @@ The rotation angle of the markers.
 
 The background color of the current series markers.
 
+
 #### Example
     <kendo:stockChart-seriesItem-markers>
         <kendo:stockChart-seriesItem-markers-background>
@@ -167,6 +173,7 @@ The background color of the current series markers.
 ### kendo:stockChart-seriesItem-markers-size
 
 The marker size.
+
 
 #### Example
     <kendo:stockChart-seriesItem-markers>
@@ -183,6 +190,7 @@ The marker size.
 
 Configures the markers shape type.
 
+
 #### Example
     <kendo:stockChart-seriesItem-markers>
         <kendo:stockChart-seriesItem-markers-type>
@@ -198,6 +206,7 @@ Configures the markers shape type.
 
 The markers visibility.
 
+
 #### Example
     <kendo:stockChart-seriesItem-markers>
         <kendo:stockChart-seriesItem-markers-visible>
@@ -212,6 +221,7 @@ The markers visibility.
 ### kendo:stockChart-seriesItem-markers-rotation
 
 The rotation angle of the markers.
+
 
 #### Example
     <kendo:stockChart-seriesItem-markers>

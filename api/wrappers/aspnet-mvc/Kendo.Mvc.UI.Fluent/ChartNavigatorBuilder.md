@@ -11,16 +11,8 @@ Defines the fluent interface for configuring the !:ChartNavigator{T}.
 
 ## Methods
 
-### Select(System.Nullable\<System.DateTime\>,System.Nullable\<System.DateTime\>)
+### Select(`System.Nullable<System.DateTime>,System.Nullable<System.DateTime>`)
 Sets the selection range
-
-#### Example
-
-    <%= Html.Kendo().StockChart(Model)
-        .Name("StockChart")
-        .Navigator(nav => nav.Select(DateTime.Today.AddMonths(-1), DateTime.Today))
-    %>
-        
 
 
 #### Parameters
@@ -34,21 +26,15 @@ The selection range end.
 
 
 
-### Series(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesFactory\<T\>\>)
-Defines the navigator series. At least one series should be configured.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().StockChart(Model)
-        .Name("Chart")
-        .Navigator(nav =>
-        nav.Series(series =>
-        {
-        series.Bar(s => s.SalesAmount);
-        })
-        )
+    .Name("StockChart")
+    .Navigator(nav => nav.Select(DateTime.Today.AddMonths(-1), DateTime.Today))
     %>
-        
+
+
+### Series(`System.Action<Kendo.Mvc.UI.Fluent.ChartSeriesFactory<T>>`)
+Defines the navigator series. At least one series should be configured.
 
 
 #### Parameters
@@ -59,22 +45,20 @@ The add action.
 
 
 
-### Visible(System.Boolean)
-Sets the navigator visibility
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().StockChart(Model)
-        .Name("Chart")
-        .Navigator(nav => nav
-        .Series(series =>
+    .Name("Chart")
+    .Navigator(nav =>
+        nav.Series(series =>
         {
-        series.Bar(s => s.SalesAmount);
+            series.Bar(s => s.SalesAmount);
         })
-        .Visible(false)
-        )
+    )
     %>
-        
+
+
+### Visible(`System.Boolean`)
+Sets the navigator visibility
 
 
 #### Parameters
@@ -85,21 +69,21 @@ The navigator visibility.
 
 
 
-### Hint(System.Action\<Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder\>)
-Defines the navigator hint.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().StockChart(Model)
-        .Name("Chart")
-        .Navigator(nav =>
-        nav.Series(series =>
+    .Name("Chart")
+    .Navigator(nav => nav
+        .Series(series =>
         {
-        series.Bar(s => s.SalesAmount);
+            series.Bar(s => s.SalesAmount);
         })
-        )
+        .Visible(false)
+    )
     %>
-        
+
+
+### Hint(`System.Action<Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder>`)
+Defines the navigator hint.
 
 
 #### Parameters
@@ -110,22 +94,21 @@ The add action.
 
 
 
-### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder\<T\>\>)
+#### Example (ASPX)
+    <%= Html.Kendo().StockChart(Model)
+    .Name("Chart")
+    .Navigator(nav =>
+        nav.Series(series =>
+        {
+            series.Bar(s => s.SalesAmount);
+        })
+    )
+    %>
+
+
+### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder<T>>`)
 Data Source configuration for the Navigator.
             When configured, the Navigator will filter the main StockChart data source to the selected range.
-
-#### Example
-
-    <%= Html.Kendo().StockChart()
-        .Name("Chart")
-        .Navigator(navi => navi
-        .DataSource(ds =>
-        {
-        ds.Ajax().Read(r => r.Action("SalesData", "Chart"));
-        })
-        )
-    %>
-        
 
 
 #### Parameters
@@ -136,18 +119,20 @@ Use the configurator to set different data binding options.
 
 
 
-### DateField(System.String)
-Sets the field used by the navigator date axes.
-
-#### Example
-
-    <%= Html.Kendo().StockChart(Model)
-        .Name("Chart")
-        .Navigator(navi => navi
-        .DateField("Date")
-        )
+#### Example (ASPX)
+    <%= Html.Kendo().StockChart()
+    .Name("Chart")
+    .Navigator(navi => navi
+        .DataSource(ds =>
+        {
+            ds.Ajax().Read(r => r.Action("SalesData", "Chart"));
+        })
+    )
     %>
-        
+
+
+### DateField(`System.String`)
+Sets the field used by the navigator date axes.
 
 
 #### Parameters
@@ -158,22 +143,17 @@ The date field.
 
 
 
-### AutoBind(System.Boolean)
-Enables or disables automatic binding.
-
-#### Example
-
-    <%= Html.Kendo().StockChart()
-        .Name("Chart")
-        .Navigator(navi => navi
-        .DataSource(ds =>
-        {
-        ds.Ajax().Read(r => r.Action("SalesData", "Chart"));
-        })
-        .AutoBind(false)
-        )
+#### Example (ASPX)
+    <%= Html.Kendo().StockChart(Model)
+    .Name("Chart")
+    .Navigator(navi => navi
+        .DateField("Date")
+    )
     %>
-        
+
+
+### AutoBind(`System.Boolean`)
+Enables or disables automatic binding.
 
 
 #### Parameters
@@ -184,6 +164,19 @@ Gets or sets a value indicating if the navigator
             The default value is true.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().StockChart()
+    .Name("Chart")
+    .Navigator(navi => navi
+        .DataSource(ds =>
+        {
+            ds.Ajax().Read(r => r.Action("SalesData", "Chart"));
+        })
+        .AutoBind(false)
+    )
+    %>
 
 
 

@@ -157,6 +157,7 @@ More documentation is available at [kendo:stockChart-categoryAxisItem-labels-bor
 The label template.
 Template variables:
 
+
 #### Example
     <kendo:stockChart-categoryAxisItem-labels template="handle_template">
     </kendo:stockChart-categoryAxisItem-labels>
@@ -172,6 +173,7 @@ Template variables:
 
 The label template.
 Template variables:
+
 
 #### Example
     <kendo:stockChart-categoryAxisItem-labels>

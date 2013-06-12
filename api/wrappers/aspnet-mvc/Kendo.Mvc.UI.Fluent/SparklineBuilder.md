@@ -11,16 +11,8 @@ Defines the fluent interface for configuring the !:Sparkline{T} component.
 
 ## Methods
 
-### Data(System.Collections.IEnumerable)
+### Data(`System.Collections.IEnumerable`)
 Sets the Sparkline data.
-
-#### Example
-
-    <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Data(new int[] { 1, 2 })
-    %>
-        
 
 
 #### Parameters
@@ -31,16 +23,15 @@ The data for the default Sparkline series.
 
 
 
-### Data(System.Double)
-Sets the Sparkline data.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Data(new int[] { 1, 2 })
+    .Name("Sparkline")
+    .Data(new int[] { 1, 2 })
     %>
-        
+
+
+### Data(`System.Double`)
+Sets the Sparkline data.
 
 
 #### Parameters
@@ -51,16 +42,15 @@ The data for the default Sparkline series.
 
 
 
-### Type(Kendo.Mvc.UI.SparklineType)
-Sets the type of the sparkline.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Type(SparklineType.Area)
+    .Name("Sparkline")
+    .Data(new int[] { 1, 2 })
     %>
-        
+
+
+### Type(`Kendo.Mvc.UI.SparklineType`)
+Sets the type of the sparkline.
 
 
 #### Parameters
@@ -71,16 +61,15 @@ The Sparkline type.
 
 
 
-### PointWidth(System.Double)
-Sets the per-point width of the sparkline.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .PointWidth(2)
+    .Name("Sparkline")
+    .Type(SparklineType.Area)
     %>
-        
+
+
+### PointWidth(`System.Double`)
+Sets the per-point width of the sparkline.
 
 
 #### Parameters
@@ -91,18 +80,15 @@ The Sparkline per-point width.
 
 
 
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.ChartEventBuilder\>)
-Configures the client-side events.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Events(events => events
-        .OnLoad("onLoad")
-        )
+    .Name("Sparkline")
+    .PointWidth(2)
     %>
-        
+
+
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.ChartEventBuilder>`)
+Configures the client-side events.
 
 
 #### Parameters
@@ -113,16 +99,17 @@ The client events configuration action.
 
 
 
-### Theme(System.String)
-Sets the theme of the chart.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Theme("Telerik")
+    .Name("Sparkline")
+    .Events(events => events
+        .OnLoad("onLoad")
+    )
     %>
-        
+
+
+### Theme(`System.String`)
+Sets the theme of the chart.
 
 
 #### Parameters
@@ -133,16 +120,15 @@ The Sparkline theme.
 
 
 
-### ChartArea(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaBuilder\>)
-Sets the Chart area.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .ChartArea(chartArea => chartArea.margin(20))
+    .Name("Sparkline")
+    .Theme("Telerik")
     %>
-        
+
+
+### ChartArea(`System.Action<Kendo.Mvc.UI.Fluent.ChartAreaBuilder>`)
+Sets the Chart area.
 
 
 #### Parameters
@@ -153,16 +139,15 @@ The Chart area.
 
 
 
-### PlotArea(System.Action\<Kendo.Mvc.UI.Fluent.PlotAreaBuilder\>)
-Sets the Plot area.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .PlotArea(plotArea => plotArea.margin(20))
+    .Name("Sparkline")
+    .ChartArea(chartArea => chartArea.margin(20))
     %>
-        
+
+
+### PlotArea(`System.Action<Kendo.Mvc.UI.Fluent.PlotAreaBuilder>`)
+Sets the Plot area.
 
 
 #### Parameters
@@ -173,19 +158,15 @@ The Plot area.
 
 
 
-### Series(System.Action\<Kendo.Mvc.UI.Fluent.SparklineSeriesFactory\<T\>\>)
-Defines the chart series.
-
-#### Example
-
-    <%= Html.Kendo().Sparkline(Model)
-        .Name("Sparkline")
-        .Series(series =>
-        {
-        series.Bar(s => s.SalesAmount);
-        })
+#### Example (ASPX)
+    <%= Html.Kendo().Sparkline()
+    .Name("Sparkline")
+    .PlotArea(plotArea => plotArea.margin(20))
     %>
-        
+
+
+### Series(`System.Action<Kendo.Mvc.UI.Fluent.SparklineSeriesFactory<T>>`)
+Defines the chart series.
 
 
 #### Parameters
@@ -196,16 +177,18 @@ The add action.
 
 
 
-### SeriesDefaults(System.Action\<Kendo.Mvc.UI.Fluent.SparklineSeriesDefaultsBuilder\<T\>\>)
-Defines the options for all chart series of the specified type.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline(Model)
-        .Name("Sparkline")
-        .SeriesDefaults(series => series.Bar().Stack(true))
+    .Name("Sparkline")
+    .Series(series =>
+    {
+        series.Bar(s => s.SalesAmount);
+    })
     %>
-        
+
+
+### SeriesDefaults(`System.Action<Kendo.Mvc.UI.Fluent.SparklineSeriesDefaultsBuilder<T>>`)
+Defines the options for all chart series of the specified type.
 
 
 #### Parameters
@@ -216,16 +199,15 @@ The configurator.
 
 
 
-### AxisDefaults(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder\<T\>\>)
-Defines the options for all chart axes of the specified type.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline(Model)
-        .Name("Sparkline")
-        .AxisDefaults(axisDefaults => axisDefaults.MinorTickSize(5))
+    .Name("Sparkline")
+    .SeriesDefaults(series => series.Bar().Stack(true))
     %>
-        
+
+
+### AxisDefaults(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder<T>>`)
+Defines the options for all chart axes of the specified type.
 
 
 #### Parameters
@@ -236,18 +218,15 @@ The configurator.
 
 
 
-### CategoryAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder\<T\>\>)
-Configures the category axis
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline(Model)
-        .Name("Sparkline")
-        .CategoryAxis(axis => axis
-        .Categories(s => s.DateString)
-        )
+    .Name("Sparkline")
+    .AxisDefaults(axisDefaults => axisDefaults.MinorTickSize(5))
     %>
-        
+
+
+### CategoryAxis(`System.Action<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder<T>>`)
+Configures the category axis
 
 
 #### Parameters
@@ -258,16 +237,17 @@ The configurator
 
 
 
-### ValueAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory\<T\>\>)
-Defines value axis options
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline(Model)
-        .Name("Sparkline")
-        .ValueAxis(a => a.Numeric().TickSize(4))
+    .Name("Sparkline")
+    .CategoryAxis(axis => axis
+        .Categories(s => s.DateString)
+    )
     %>
-        
+
+
+### ValueAxis(`System.Action<Kendo.Mvc.UI.Fluent.ChartValueAxisFactory<T>>`)
+Defines value axis options
 
 
 #### Parameters
@@ -278,19 +258,15 @@ The configurator
 
 
 
-### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder\<T\>\>)
-Data Source configuration
-
-#### Example
-
-    <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .DataSource(ds =>
-        {
-        ds.Ajax().Read(r => r.Action("SalesData", "Sparkline"));
-        })
+#### Example (ASPX)
+    <%= Html.Kendo().Sparkline(Model)
+    .Name("Sparkline")
+    .ValueAxis(a => a.Numeric().TickSize(4))
     %>
-        
+
+
+### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder<T>>`)
+Data Source configuration
 
 
 #### Parameters
@@ -301,20 +277,18 @@ Use the configurator to set different data binding options.
 
 
 
-### AutoBind(System.Boolean)
-Enables or disables automatic binding.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .DataSource(ds =>
-        {
+    .Name("Sparkline")
+    .DataSource(ds =>
+    {
         ds.Ajax().Read(r => r.Action("SalesData", "Sparkline"));
-        })
-        .AutoBind(false)
+    })
     %>
-        
+
+
+### AutoBind(`System.Boolean`)
+Enables or disables automatic binding.
 
 
 #### Parameters
@@ -327,16 +301,19 @@ Gets or sets a value indicating if the chart
 
 
 
-### SeriesColors(System.Collections.Generic.IEnumerable\<System.String\>)
-Sets the series colors.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .SeriesColors(new string[] { "#f00", "#0f0", "#00f" })
+    .Name("Sparkline")
+    .DataSource(ds =>
+    {
+        ds.Ajax().Read(r => r.Action("SalesData", "Sparkline"));
+    })
+    .AutoBind(false)
     %>
-        
+
+
+### SeriesColors(`System.Collections.Generic.IEnumerable<System.String>`)
+Sets the series colors.
 
 
 #### Parameters
@@ -347,16 +324,15 @@ A list of the series colors.
 
 
 
-### SeriesColors(System.String[])
-Sets the series colors.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .SeriesColors("#f00", "#0f0", "#00f")
+    .Name("Sparkline")
+    .SeriesColors(new string[] { "#f00", "#0f0", "#00f" })
     %>
-        
+
+
+### SeriesColors(`System.String[]`)
+Sets the series colors.
 
 
 #### Parameters
@@ -367,19 +343,15 @@ The series colors.
 
 
 
-### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
-Use it to configure the data point tooltip.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Tooltip(tooltip =>
-        {
-        tooltip.Visible(true).Format("{0:C}");
-        })
+    .Name("Sparkline")
+    .SeriesColors("#f00", "#0f0", "#00f")
     %>
-        
+
+
+### Tooltip(`System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>`)
+Use it to configure the data point tooltip.
 
 
 #### Parameters
@@ -390,16 +362,18 @@ Use the configurator to set data tooltip options.
 
 
 
-### Tooltip(System.Boolean)
-Sets the data point tooltip visibility.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Tooltip(true)
+    .Name("Sparkline")
+    .Tooltip(tooltip =>
+    {
+        tooltip.Visible(true).Format("{0:C}");
+    })
     %>
-        
+
+
+### Tooltip(`System.Boolean`)
+Sets the data point tooltip visibility.
 
 
 #### Parameters
@@ -411,16 +385,15 @@ A value indicating if the data point tooltip should be displayed.
 
 
 
-### Transitions(System.Boolean)
-Enables or disabled animated transitions on initial load and refresh.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Sparkline()
-        .Name("Sparkline")
-        .Transitions(false)
+    .Name("Sparkline")
+    .Tooltip(true)
     %>
-        
+
+
+### Transitions(`System.Boolean`)
+Enables or disabled animated transitions on initial load and refresh.
 
 
 #### Parameters
@@ -429,6 +402,13 @@ Enables or disabled animated transitions on initial load and refresh.
 A value indicating if transition animations should be played.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Sparkline()
+    .Name("Sparkline")
+    .Transitions(false)
+    %>
 
 
 

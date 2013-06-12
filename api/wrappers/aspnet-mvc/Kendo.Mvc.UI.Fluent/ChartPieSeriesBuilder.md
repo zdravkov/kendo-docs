@@ -16,30 +16,21 @@ Gets or sets the series.
 
 ## Methods
 
-### Name(System.String)
+### Name(`System.String`)
 Sets the name of the series.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Pie(s => s.Sales, s => s.DateString).Name("Sales"))
+    .Name("Chart")
+    .Series(series => series.Pie(s => s.Sales, s => s.DateString).Name("Sales"))
     %>
-        
 
 
-
-
-### Opacity(System.Double)
+### Opacity(`System.Double`)
 Sets the series opacity.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Pie(s => s.Sales, s => s.DateString).Opacity(0.5))
-    %>
-        
 
 
 #### Parameters
@@ -51,32 +42,29 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-### Padding(System.Int32)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.Pie(s => s.Sales, s => s.DateString).Opacity(0.5))
+    %>
+
+
+### Padding(`System.Int32`)
 Sets the padding of the chart.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series.Pie(s => s.Sales, s => s.DateString).Padding(100))
         .Render();
     %>
-        
 
 
-
-
-### StartAngle(System.Int32)
+### StartAngle(`System.Int32`)
 Sets the start angle of the first pie segment.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Pie(s => s.Sales, s => s.DateString).StartAngle(100))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -87,22 +75,16 @@ The pie start angle(in degrees).
 
 
 
-### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder\>)
-Configures the pie chart labels.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series
-        .Pie(s => s.Sales, s => s.DateString)
-        .Labels(labels => labels
-        .Color("red")
-        .Visible(true)
-        );
-        )
+        .Series(series => series.Pie(s => s.Sales, s => s.DateString).StartAngle(100))
+        .Render();
     %>
-        
+
+
+### Labels(`System.Action<Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder>`)
+Configures the pie chart labels.
 
 
 #### Parameters
@@ -113,19 +95,21 @@ The configuration action.
 
 
 
-### Labels(System.Boolean)
-Sets the visibility of pie chart labels.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
+    .Name("Chart")
+    .Series(series => series
         .Pie(s => s.Sales, s => s.DateString)
-        .Labels(true);
+        .Labels(labels => labels
+            .Color("red")
+            .Visible(true)
+            );
         )
     %>
-        
+
+
+### Labels(`System.Boolean`)
+Sets the visibility of pie chart labels.
 
 
 #### Parameters
@@ -136,17 +120,18 @@ The visibility. The default value is false.
 
 
 
-### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets the pie segments border
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Pie(s => s.Sales, s => s.DateString).Border(1, "#000", ChartDashType.Dot))
-        .Render();
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
+        .Pie(s => s.Sales, s => s.DateString)
+        .Labels(true);
+    )
     %>
-        
+
+
+### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets the pie segments border
 
 
 #### Parameters
@@ -163,7 +148,15 @@ The pie segments border dash type.
 
 
 
-### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Pie(s => s.Sales, s => s.DateString).Border(1, "#000", ChartDashType.Dot))
+        .Render();
+    %>
+
+
+### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
 Configures the pie border
 
 
@@ -175,17 +168,9 @@ The border configuration action
 
 
 
-### Overlay(Kendo.Mvc.UI.ChartPieSeriesOverlay)
+
+### Overlay(`Kendo.Mvc.UI.ChartPieSeriesOverlay`)
 Sets the pie segments effects overlay
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Pie(s => s.Sales, s => s.DateString).Overlay(ChartPieSeriesOverlay.None))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -197,21 +182,16 @@ The pie segment effects overlay.
 
 
 
-### Connectors(System.Action\<Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder\>)
-Configures the pie chart connectors.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series
-        .Pie(s => s.Sales, s => s.DateString)
-        .Connectors(c => c
-        .Color("red")
-        );
-        )
+        .Series(series => series.Pie(s => s.Sales, s => s.DateString).Overlay(ChartPieSeriesOverlay.None))
+        .Render();
     %>
-        
+
+
+### Connectors(`System.Action<Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder>`)
+Configures the pie chart connectors.
 
 
 #### Parameters
@@ -222,7 +202,19 @@ The configuration action.
 
 
 
-### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder\>)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
+        .Pie(s => s.Sales, s => s.DateString)
+        .Connectors(c => c
+            .Color("red")
+            );
+        )
+    %>
+
+
+### Highlight(`System.Action<Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder>`)
 Configures the pie highlight
 
 
@@ -230,6 +222,7 @@ Configures the pie highlight
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartPieSeriesHighlightBuilder)>
 The configuration action.
+
 
 
 
