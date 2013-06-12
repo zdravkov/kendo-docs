@@ -7779,14 +7779,14 @@ The top padding of the labels.
 
 The position of the labels.
 
-* "above" - the label is positioned at the top of the marker. ** Applicable for area, bubble, line, scatter and scatterLine series. **
-* "below" - the label is positioned at the bottom of the marker. ** Applicable for area, bubble, line, scatter and scatterLine series. **
-* "center" - the label is positioned at the point center. ** Applicable for bar, column, donut and pie series. **
+* "above" - the label is positioned at the top of the marker. ** Applicable for series that render points, incl. bubble. **
+* "below" - the label is positioned at the bottom of the marker. ** Applicable for series that render points, incl. bubble. **
+* "center" - the label is positioned at the point center. ** Applicable for bar, column, donut, pie and radarColumn series. **
 * "insideBase" - the label is positioned inside, near the base of the bar. ** Applicable for bar and column series. **
-* "insideEnd" - the label is positioned inside, near the end of the point. ** Applicable for bar, column, donut and pie series. **
-* "left" - the label is positioned to the left of the marker. ** Applicable for area, bubble, line, scatter and scatterLine series. **
-* "outsideEnd" - the label is positioned outside, near the end of the bar. ** Applicable for bar, column, donut and pie series. Not applicable for stacked series. **
-* "right" - the label is positioned to the right of the marker. ** Applicable for area, bubble, line, scatter and scatterLine series. **
+* "insideEnd" - the label is positioned inside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. **
+* "left" - the label is positioned to the left of the marker. ** Applicable for series that render points, incl. bubble. **
+* "outsideEnd" - the label is positioned outside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. Not applicable for stacked series. **
+* "right" - the label is positioned to the right of the marker. ** Applicable for series that render points, incl. bubble. **
 
 #### Example - set the chart series label position
 
