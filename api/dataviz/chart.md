@@ -925,7 +925,7 @@ The data item field which contains the category name. Requires the [dataSource](
 
 If set to `true` the chart will position categories and series points on major ticks. This removes the empty space before and after the series.
 
-The default value is `true` except for "area" and "verticalArea".
+The default value is `false` except for "area" and "verticalArea".
 
 > This option is ignored if the [series.type](#configuration-series.type) option is set to "bar", "column", "ohlc" or "candlestick".
 
