@@ -6783,7 +6783,7 @@ Can be set to :
 
 * Array of objects. Each point is bound to the field specified via the [series.field](#configuration-series.field) option.
 * Array of numbers. Supported when the [series.type](#configuration-series.type) option is set to "area", "bar", "column", "donut", "pie" or "line".
-* Array of arrays of numbers. Supported when the [series.type](#configuration-series.type) option is set to "bubble", "scatter", "scatterLine" or "ohlc".
+* Array of arrays of numbers. Supported when the [series.type](#configuration-series.type) option is set to "bubble", "scatter", "scatterLine", "ohlc" or polar series.
     * Bubble series need arrays of three values - X value, Y value and Size value e.g. `[1, 1, 10]`
     * Scatter and scatter line series need arrays of two values - X value and Y value
     * OHLC and candlestick series need arrays of four values - open, high, low and close
@@ -8067,7 +8067,7 @@ The top margin of the labels.
 The chart series marker configuration.
 
 > The chart displays the series labels when the [series.markers.visible](#configuration-series.markers.visible) option is set to `true`.
-> The `markers` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatter" or "scatterLine".
+> The `markers` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatter", "scatterLine", "radarLine", "radarArea", "polarLine", "polarScatter" or "polarArea".
 
 #### Example - set the chart series markers
 
@@ -8280,7 +8280,7 @@ The minimum size of the chart bubble series marker.
 
 The behavior for handling missing values.
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line" or "scatterLine".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
 
 The supported values are:
 
@@ -8983,15 +8983,18 @@ The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-forma
 
 Format placeholders:
 
-* Area, bar, column, line and pie
+* Area, bar, column, line, pie, radarArea, radarColumn and radarLine
     *   {0} - value
 * Bubble
     *   {0} - x value
     *   {1} - y value
     *   {2} - size value
     *   {3} - category name
-* Scatter and scatterLine
+* Scatter, scatterLine
     *   {0} - x value
+    *   {1} - y value
+* PolarArea, polarLine and polarScatter
+    *   {0} - x value (degrees)
     *   {1} - y value
 * Candlestick and OHLC
     *   {0} - open value
@@ -9269,7 +9272,7 @@ The data item field which indicates whether to show the point category name in t
 
 The line width.
 
-> The `width` option is supported when [series.type](#configuration-series.type) is set to "line" or "scatterLine".
+> The `width` option is supported when [series.type](#configuration-series.type) is set to "line", "scatterLine", "radarLine" or "polarLine".
 
 #### Example - set the chart line width
     <div id="chart"></div>
@@ -9289,13 +9292,15 @@ The line width.
 
 The name of the X axis to use.
 
-> The `xAxis` option is supported when [series.type](#configuration-series.type) is set to "bubble", "scatter" or "scatterLine".
+> The `xAxis` option is supported when [series.type](#configuration-series.type) is set to "bubble", "scatter", "scatterLine" or polar series.
+
+For polar series the xAxis range is expressed in degrees.
 
 ### series.xField `String` *(default: "x")*
 
 The data item field containing the X value.
 
-> The `xField` option is supported when [series.type](#configuration-series.type) is set to "bubble", "scatter" or "scatterLine".
+> The `xField` option is supported when [series.type](#configuration-series.type) is set to "bubble", "scatter", "scatterLine" or polar series.
 
 #### Example - set the chart series x field
 
@@ -9316,7 +9321,7 @@ The data item field containing the X value.
 
 The name of the Y axis to use.
 
-** Available for bubble, scatter and scatterLine series. **
+** Available for bubble, scatter, scatterLine and polar series. **
 
 ### series.yField `String` *(default: "y")*
 
@@ -16531,6 +16536,12 @@ If set to `true` the value axis direction will be reversed. By default values in
       }
     });
     </script>
+
+### xAxis.startAngle `Number` *(default: 0)*
+
+The angle (degrees) where the 0 value is placed.
+
+Angles increase counterclockwise and zero is to the right. Negative values are acceptable.
 
 ### xAxis.title `Object`
 
