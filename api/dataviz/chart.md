@@ -921,9 +921,11 @@ The data item field which contains the category name. Requires the [dataSource](
     });
     </script>
 
-### categoryAxis.justified `Boolean` *(default: false)*
+### categoryAxis.justified `Boolean`
 
 If set to `true` the chart will position categories and series points on major ticks. This removes the empty space before and after the series.
+
+The default value is `true` except for "area" and "verticalArea".
 
 > This option is ignored if the [series.type](#configuration-series.type) option is set to "bar", "column", "ohlc" or "candlestick".
 
@@ -2896,7 +2898,7 @@ a value larger than the last category index (date).
 
 The angle (degrees) of the first category on the axis.
 
-Zero degrees points left, value increases in clockwise direction. Negative values are acceptable.
+Angles increase clockwise and zero is to the left. Negative values are acceptable.
 
 #### Example - set the donut chart series start angle
     <div id="chart"></div>
@@ -6203,6 +6205,105 @@ The background opacity of the chart plot area. By default the background is opaq
     });
     </script>
 
+### plotArea.padding `Number|Object`
+
+The padding of the chart plot area. A numeric value will set all paddings.
+
+The default padding for pie, donut, radar and polar charts is proportional of the chart size.
+
+#### Example - set the chart plot area padding
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      plotArea: {
+        padding: 10
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### plotArea.padding.bottom `Number` *(default: 5)*
+
+The bottom padding of the chart plot area.
+
+#### Example - set the chart plot area bottom padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      plotArea: {
+        padding: {
+          bottom: 10
+        }
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### plotArea.padding.left `Number` *(default: 5)*
+
+The left padding of the chart plot area.
+
+#### Example - set the chart plot area left padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      plotArea: {
+        padding: {
+          left: 10
+        }
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### plotArea.padding.right `Number` *(default: 5)*
+
+The right padding of the chart plot area.
+
+#### Example - set the chart plot area right padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      plotArea: {
+        padding: {
+          right: 10
+        }
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### plotArea.padding.top `Number` *(default: 5)*
+
+The top padding of the chart plot area.
+
+#### Example - set the chart plot area top padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      plotArea: {
+        padding: {
+          top: 10
+        }
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
 ### series `Array`
 
 The configuration of the chart series.
@@ -6831,7 +6932,7 @@ The data item field which contains the series value.
 
 The distance between the category clusters.
 
-> The `gap` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick" or "ohlc".
+> The `gap` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick", "ohlc" or "radarColumn".
 
 #### Example - set the chart series gap
 
@@ -8436,7 +8537,7 @@ The data field containing the bubble size value.
 
 The space between the chart series as proportion of the series width.
 
-> The `spacing` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick" or "ohlc".
+> The `spacing` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick", "ohlc" or "radarColumn".
 
 #### Example - set the chart series spacing
 
@@ -8472,7 +8573,7 @@ A value indicating if the series should be stacked. String value indicates that 
 
 The start angle (degrees) of the first donut or pie segment.
 
-Zero degrees points left, value increases in clockwise direction. Negative values are acceptable.
+Angles increase clockwise and zero is to the left. Negative values are acceptable.
 
 #### Example - set the donut chart series start angle
     <div id="chart"></div>
@@ -12667,7 +12768,7 @@ The top padding of the labels.
 
 The rotation angle (in degrees) of the labels. By default the labels are not rotated.
 
-Zero degrees points left, value increases in clockwise direction. Negative values are acceptable.
+Angles increase clockwise and zero is to the left. Negative values are acceptable.
 
 #### Example - rotate the value axis labels
 
@@ -13014,6 +13115,34 @@ The following dash types are supported:
     });
     </script>
 
+### valueAxis.majorGridLines.type `String`
+
+The type of grid lines to draw for radar charts:
+
+* "line" - draws straight lines.
+* "arc" - draws arcs.
+
+The default type is "line" except for "radarColumn" charts.
+
+#### Example - use arcs for radarLine chart
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: [{
+        majorGridLines: {
+          type: "arc"
+        }
+      }],
+      series: [
+        {
+          type: "radarLine",
+          data: [1, 2, 3]
+        }
+      ]
+    });
+    </script>
+
 ### valueAxis.majorGridLines.visible `Boolean` *(default: false)*
 
 If set to `true` the chart will display the major grid lines. By default the major grid lines are visible.
@@ -13208,6 +13337,38 @@ The following dash types are supported:
       }],
       series: [
         { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+### valueAxis.minorGridLines.type `String`
+
+The type of grid lines to draw for radar charts:
+
+* "line" - draws straight lines.
+* "arc" - draws arcs.
+
+The default type is "line" except for "radarColumn" charts.
+
+#### Example - show arcs for both major and minor gridlines
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: [{
+        minorGridLines: {
+          type: "arc",
+          visible: true
+        }
+        majorGridLines: {
+          type: "arc"
+        },
+      }],
+      series: [
+        {
+          type: "radarLine",
+          data: [1, 2, 3]
+        }
       ]
     });
     </script>
@@ -15326,7 +15487,7 @@ The format used to display the labels. Uses [kendo.format](/api/framework/kendo#
     });
     </script>
 
-### xAxis.labels.margin `Number|Object` *(default: 0)*
+### xAxis.labels.margin `Number|Object`
 
 The margin of the labels. A numeric value will set all margins.
 
@@ -15346,7 +15507,7 @@ The margin of the labels. A numeric value will set all margins.
     });
     </script>
 
-### xAxis.labels.margin.bottom `Number` *(default: 0)*
+### xAxis.labels.margin.bottom `Number`
 
 The bottom margin of the labels.
 
@@ -15368,7 +15529,7 @@ The bottom margin of the labels.
     });
     </script>
 
-### xAxis.labels.margin.left `Number` *(default: 0)*
+### xAxis.labels.margin.left `Number`
 
 The left margin of the labels.
 
@@ -15390,7 +15551,7 @@ The left margin of the labels.
     });
     </script>
 
-### xAxis.labels.margin.right `Number` *(default: 0)*
+### xAxis.labels.margin.right `Number`
 
 The right margin of the labels.
 
@@ -15412,7 +15573,7 @@ The right margin of the labels.
     });
     </script>
 
-### xAxis.labels.margin.top `Number` *(default: 0)*
+### xAxis.labels.margin.top `Number`
 
 The top margin of the labels.
 
