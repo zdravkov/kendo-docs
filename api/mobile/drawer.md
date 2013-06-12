@@ -14,6 +14,10 @@ Represents the Kendo UI Mobile Drawer widget. Inherits from [kendo.mobile.ui.Vie
 
 ## Configuration
 
+### position `String` *(default: 'left')*
+
+The position of the drawer. Can be `left` (default) or `right`.
+
 ### title `String`
 
 The text to display in the navbar title (if present).
