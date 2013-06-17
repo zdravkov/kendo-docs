@@ -21,6 +21,10 @@ server-side components that the Kendo UI MVC extensions provide.
 
 This sample is not feature-complete and is only meant to be used as a reference for how to use the Kendo UI MVC extensions.
 
+## View the live site
+
+The live SalesHub demo can be viewed at [www.kendouisaleshub.com](http://kendouisaleshub.com).
+
 # Getting Started
 
 This sample project is for Microsoft Visual Studio 2012, and requires MVC4, NuGet, Kendo UI MVC extensions, and SQLExpress in order to run.
