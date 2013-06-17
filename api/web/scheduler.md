@@ -514,6 +514,27 @@ The fields which can be used in the template are:
     });
     </script>
 
+### height `Number|String`
+
+The height of the widget. Numeric values are treated as pixels.
+
+#### Example - set the height of the scheduler
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      height: 500,
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### majorTick `Number` *(default: 60)*
 
 The number of minutes represented by a major tick.
@@ -1119,6 +1140,39 @@ The fields which can be used in the template are:
     });
     </script>
 
+### views.dayTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) used to render the day slots in month view.
+
+The fields which can be used in the template are:
+
+* date `Date` - represents the current day
+
+> The `dayTemplate` option is supported when [views.type](#configuration-views.type) is set to "month".
+
+#### Example - set the day template in month view
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        {
+          type: "month",
+          dayTemplate: kendo.template("<strong>#= kendo.toString(date, 'ddd') #</strong>")
+        }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### views.editable `Boolean|Object` *(default: true)*
 
 If set to `true` the user would be able to create new scheduler events and modify or delete existing ones.
@@ -1290,6 +1344,36 @@ The fields which can be used in the template are:
           title: "Interview"
         }
       ]
+    });
+    </script>
+
+### views.eventHeight `Number` *(default: 25)*
+
+The height of the scheduler event rendered in month view.
+
+> The `eventHeight` option is supported when [views.type](#configuration-views.type) is set to "month".
+
+#### Example - set the event height in month view
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        {
+          type: "month",
+          eventHeight: 40
+        }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ],
+      height: 1000
     });
     </script>
 
@@ -1600,69 +1684,6 @@ The user-friendly title of the view displayed by the scheduler.
     });
     </script>
 
-### views.eventHeight `Number` *(default: 25)*
-
-The height of the scheduler event rendered in month view.
-
-> The `eventHeight` option is supported when [views.type](#configuration-views.type) is set to "month".
-
-#### Example - set the event height in month view
-
-    <div id="scheduler"></div>
-    <script>
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [
-        {
-          type: "month",
-          eventHeight: 40
-        }
-      ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ],
-      height: 1000
-    });
-    </script>
-
-### views.dayTemplate `String|Function`
-
-The [template](/api/framework/kendo#methods-template) used to render the day slots in month view.
-
-The fields which can be used in the template are:
-
-* date `Date` - represents the current day
-
-> The `dayTemplate` option is supported when [views.type](#configuration-views.type) is set to "month".
-
-#### Example - set the day template in month view
-
-    <div id="scheduler"></div>
-    <script>
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [
-        {
-          type: "month",
-          dayTemplate: kendo.template("<strong>#= kendo.toString(date, 'ddd') #</strong>")
-        }
-      ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ]
-    });
-    </script>
-
 ### views.type `String`
 
 The type of the view. The built-in views are: "day", "week", "month" and "agenda".
@@ -1676,27 +1697,6 @@ The type of the view. The built-in views are: "day", "week", "month" and "agenda
       views: [
         { type: "day" }
       ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ]
-    });
-    </script>
-
-### height `Number|String`
-
-The height of the widget. Numeric values are treated as pixels.
-
-#### Example - set the height of the scheduler
-    <div id="scheduler"></div>
-    <script>
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      height: 500,
       dataSource: [
         {
           id: 1,
@@ -1727,5 +1727,298 @@ The width of the widget. Numeric values are treated as pixels.
         }
       ]
     });
+    </script>
+
+## Fields
+
+### dataSource `kendo.data.SchedulerDataSource`
+
+The [data source](/api/framework/schedulerdatasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
+
+> Changes of the data source will be reflected in the widget.
+
+> Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
+
+#### Example - add a data item to the data source
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6")
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.dataSource.add( {
+      start: new Date("2013/6/6 08:00 AM"),
+      end: new Date("2013/6/6 09:00 AM"),
+      title: "Interview"
+    });
+    </script>
+
+#### Example - update a data item in the data source
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var event = scheduler.dataSource.at(0);
+    event.set("end", new Date("2013/6/6 10:00 AM"));
+    </script>
+
+#### Example - remove a data item from the data source
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var event = scheduler.dataSource.at(0);
+    scheduler.dataSource.remove(event);
+    </script>
+
+## Methods
+
+### addEvent
+
+Adds a new scheduler event and opens the edit form.
+
+#### Parameters
+
+##### data `Object`
+
+The object containing the scheduler event fields.
+
+#### Example - add a new event
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6")
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.addEvent({ title: "(No title)" });
+    </script>
+
+### cancelEvent
+
+Cancels the scheduler event editing. Closes the edit form.
+
+#### Example - cancel editing
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6")
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.addEvent({ title: "(No title)" });
+    scheduler.cancelEvent();
+    </script>
+
+### date
+
+Gets or sets the current scheduler date.
+
+#### Parameters
+
+##### value `Date` *(optional)*
+
+The new date to set.
+
+#### Returns
+
+`Date` the current date.
+
+#### Example - set the current date
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.date(new Date("2013/6/6"));
+    </script>
+
+### destroy
+
+Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
+
+> This method does not remove the widget element from DOM.
+
+#### Example
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.destroy();
+    </script>
+
+### editEvent
+
+Opens the specified scheduler event in the edit form.
+
+#### Parameters
+
+##### event `String|kendo.data.SchedulerEvent`
+
+The event which should be put in edit mode. Also accepts a string which is the `uid` of the event which should be edited.
+
+#### Example - edit an event
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var event = scheduler.dataSource.at(0);
+    scheduler.editEvent(event);
+    </script>
+
+### removeEvent
+
+Removes the specified scheduler event.
+
+#### Parameters
+
+##### event `String|kendo.data.SchedulerEvent`
+
+The event which should be removed. Also accepts a string which is the `uid` of the event which should be removed.
+
+#### Example - remove an event
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var event = scheduler.dataSource.at(0);
+    scheduler.removeEvent(event);
+    </script>
+
+### saveEvent
+
+Saves the scheduler event which is open in the edit form and closes it.
+
+#### Example - save an new event
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6")
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.addEvent({ title: "(No title)" });
+    scheduler.saveEvent();
+    </script>
+
+### setDataSource
+
+Sets the data source of the widget.
+
+#### Parameters
+
+##### dataSource `kendo.data.SchedulerDataSource`
+
+The data source to which the widget should be bound.
+
+#### Example - set the data source
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6")
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var dataSource = new kendo.data.SchedulerDataSource({
+      data: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    scheduler.setDataSource(dataSource);
+    </script>
+
+### view
+
+Gets or sets the current scheduler view.
+
+#### Parameters
+
+##### type `String` *(optional)*
+
+The view type to select.
+
+#### Returns
+
+`kendo.ui.SchedulerView` the current scheduler view.
+
+#### Example - set the current view
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.view("month");
     </script>
 
