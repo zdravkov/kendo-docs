@@ -254,7 +254,7 @@ The user will still be able to move the Window with the mouse or keyboard.
 
 ### refresh
 
-Refreshes the content of a Window from a remote URL or the initially defined (content template)[#configuration-content.template].
+Refreshes the content of a Window from a remote URL or the initially defined (content template)[http://docs.kendoui.com/api/web/window#configuration-content.template].
 
 #### Example
 
