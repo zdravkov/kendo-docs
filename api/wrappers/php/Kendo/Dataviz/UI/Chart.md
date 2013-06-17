@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\Dataviz\UI\Chart
 
-A PHP class representing Kendo [Chart](/api/web/chart).
+A PHP wrapper for Kendo UI [Chart](/api/dataviz/chart).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -34,7 +34,8 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 ## Methods
 
 ### autoBind
-Indicates whether the chart will call read on the data source initially.
+If set to false the widget will not bind to the data source during initialization. In this case data binding will occur when the change event of the
+data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -52,7 +53,7 @@ Indicates whether the chart will call read on the data source initially.
     ?>
 
 ### axisDefaults
-Default options for all chart axes.
+The default options for all chart axes. Accepts the options supported by categoryAxis, valueAxis, xAxis and yAxis.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -64,7 +65,8 @@ Default options for all chart axes.
 
 
 ### axisLabelClick
-Fires when an axis label is clicked.
+Fired when the user clicks an axis label.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [axisLabelClick](/api/web/chart#events-axisLabelClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -138,8 +140,7 @@ Adds one or more ChartCategoryAxisItem to the Chart.
 
 ### chartArea
 
-The chart area configuration options.
-This is the entire visible area of the chart.
+The chart area configuration options. Represents the entire visible area of the chart.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -167,8 +168,8 @@ This is the entire visible area of the chart.
     ?>
 
 ### dataBound
-Fires when the chart has received data from the data source
-and is about to render it.
+Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [dataBound](/api/web/chart#events-dataBound) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -230,7 +231,8 @@ Sets the data source of the dataSource.
     ?>
 
 ### drag
-Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+Fired as long as the user is dragging the chart using the mouse or swipe gestures.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [drag](/api/web/chart#events-drag) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -265,7 +267,8 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
     ?>
 
 ### dragEnd
-Fires when the user stops dragging the chart.
+Fired when the user stops dragging the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [dragEnd](/api/web/chart#events-dragEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -300,7 +303,8 @@ Fires when the user stops dragging the chart.
     ?>
 
 ### dragStart
-Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
+Fired when the user starts dragging the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [dragStart](/api/web/chart#events-dragStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -365,6 +369,7 @@ The chart legend configuration options.
 
 ### legendItemClick
 Fires when an legend item is clicked.
+For additional information check the [legendItemClick](/api/web/chart#events-legendItemClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -396,6 +401,42 @@ Fires when an legend item is clicked.
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $chart->legendItemClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### legendItemHover
+Fires when an legend item is hovered.
+For additional information check the [legendItemHover](/api/web/chart#events-legendItemHover) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Chart`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->legendItemHover('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onLegendItemHover(e) {
+            // handle the legendItemHover event.
+        }
+    </script>
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->legendItemHover('onLegendItemHover');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->legendItemHover(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### addPane
@@ -438,7 +479,7 @@ Adds one or more ChartPane to the Chart.
 
 ### plotArea
 
-The plot area configuration options. This is the area containing the plotted series.
+The plot area configuration options. The plot area is the area which displays the series.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -466,7 +507,8 @@ The plot area configuration options. This is the area containing the plotted ser
     ?>
 
 ### plotAreaClick
-Fires when plot area is clicked.
+Fired when the user clicks the plot area.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [plotAreaClick](/api/web/chart#events-plotAreaClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -501,7 +543,8 @@ Fires when plot area is clicked.
     ?>
 
 ### select
-Fires when the user modifies the selection.The range units are:
+Fired when the user modifies the selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [select](/api/web/chart#events-select) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -536,7 +579,8 @@ Fires when the user modifies the selection.The range units are:
     ?>
 
 ### selectEnd
-Fires when the user completes modifying the selection.
+Fired when the user completes modifying the selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [selectEnd](/api/web/chart#events-selectEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -571,7 +615,8 @@ Fires when the user completes modifying the selection.
     ?>
 
 ### selectStart
-Fires when the user starts modifying the axis selection.The range units are:
+Fired when the user starts modifying the axis selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [selectStart](/api/web/chart#events-selectStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -644,7 +689,8 @@ Adds one or more ChartSeriesItem to the Chart.
     ?>
 
 ### seriesClick
-Fires when chart series are clicked.
+Fired when the user clicks the chart series.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [seriesClick](/api/web/chart#events-seriesClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -698,7 +744,7 @@ The default colors for the chart's series. When all colors are used, new colors 
 
 ### seriesDefaults
 
-Default values for each series.
+The default options for all series.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -726,7 +772,8 @@ Default values for each series.
     ?>
 
 ### seriesHover
-Fires when chart series are hovered.
+Fired when the user hovers the chart series.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [seriesHover](/api/web/chart#events-seriesHover) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -761,7 +808,7 @@ Fires when chart series are hovered.
     ?>
 
 ### theme
-Sets Chart theme. Available themes: default, blueOpal, black.
+The chart theme.The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -787,7 +834,16 @@ The chart title configuration options or text.
 
 #### Parameters
 
-##### $value `\Kendo\Dataviz\UI\ChartTitle|array`
+##### $value `string|\Kendo\Dataviz\UI\ChartTitle|array`
+
+
+
+
+#### Example  - using string
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->title('value');
+    ?>
 
 
 #### Example - using [\Kendo\Dataviz\UI\ChartTitle](/api/wrappers/php/Kendo/Dataviz/UI/ChartTitle)
@@ -809,7 +865,7 @@ The chart title configuration options or text.
 
 ### tooltip
 
-The data point tooltip configuration options.
+The chart series tooltip configuration options.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -837,7 +893,7 @@ The data point tooltip configuration options.
     ?>
 
 ### transitions
-A value indicating if transition animations should be played.
+If set to true the chart will play animations when displaying the series. By default animations are enabled.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -969,7 +1025,8 @@ Adds one or more ChartYAxisItem to the Chart.
     ?>
 
 ### zoom
-Fires as long as the user is zooming the chart using the mousewheel.
+Fired as long as the user is zooming the chart using the mousewheel.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [zoom](/api/web/chart#events-zoom) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -1004,7 +1061,8 @@ Fires as long as the user is zooming the chart using the mousewheel.
     ?>
 
 ### zoomEnd
-Fires when the user stops zooming the chart.
+Fired when the user stops zooming the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [zoomEnd](/api/web/chart#events-zoomEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`
@@ -1039,7 +1097,8 @@ Fires when the user stops zooming the chart.
     ?>
 
 ### zoomStart
-Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
+Fired when the user uses the mousewheel to zoom the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [zoomStart](/api/web/chart#events-zoomStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Chart`

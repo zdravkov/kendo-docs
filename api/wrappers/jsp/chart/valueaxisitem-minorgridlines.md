@@ -7,7 +7,8 @@ publish: true
 
 # \<kendo:chart-valueAxisItem-minorGridLines\>
 
-Configures the minor grid lines.  These are the lines that are an extension of the minor ticks through the
+The configuration of the minor grid lines. These are the lines that are an extension of the minor ticks through the
+body of the chart.
 
 #### Example
     <kendo:chart-valueAxisItem>
@@ -18,7 +19,7 @@ Configures the minor grid lines.  These are the lines that are an extension of t
 
 ### color `String`
 
-The color of the lines.Note that this has no effect if the visibility of the minor grid lines is not set to true.
+The color of the minor grid lines. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
     <kendo:chart-valueAxisItem-minorGridLines color="color">
@@ -26,15 +27,23 @@ The color of the lines.Note that this has no effect if the visibility of the min
 
 ### dashType `String`
 
-The dash type of the minor grid lines.
+The dash type of the minor grid lines.The following dash types are supported:
 
 #### Example
     <kendo:chart-valueAxisItem-minorGridLines dashType="dashType">
     </kendo:chart-valueAxisItem-minorGridLines>
 
+### type `String`
+
+The type of grid lines to draw for radar charts:The default type is "line" except for "radarColumn" charts.
+
+#### Example
+    <kendo:chart-valueAxisItem-minorGridLines type="type">
+    </kendo:chart-valueAxisItem-minorGridLines>
+
 ### visible `boolean`
 
-The visibility of the lines.
+If set to true the chart will display the minor grid lines. By default the minor grid lines are visible.
 
 #### Example
     <kendo:chart-valueAxisItem-minorGridLines visible="visible">
@@ -42,7 +51,7 @@ The visibility of the lines.
 
 ### width `float`
 
-The width of the lines.Note that this settings has no effect if the visibility of the minor grid lines is not set to true.
+The width of the value axis minor grid lines in pixels.
 
 #### Example
     <kendo:chart-valueAxisItem-minorGridLines width="width">

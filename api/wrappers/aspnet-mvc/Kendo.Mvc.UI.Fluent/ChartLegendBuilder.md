@@ -11,17 +11,8 @@ Defines the fluent interface for configuring the ChartLegend.
 
 ## Methods
 
-### Font(System.String)
+### Font(`System.String`)
 Sets the legend labels font
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Legend(legend => legend.Font("16px Arial,Helvetica,sans-serif"))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -32,17 +23,16 @@ The legend labels font (CSS format).
 
 
 
-### Color(System.String)
-Sets the legend labels color
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Color("red"))
+        .Legend(legend => legend.Font("16px Arial,Helvetica,sans-serif"))
         .Render();
     %>
-        
+
+
+### Color(`System.String`)
+Sets the legend labels color
 
 
 #### Parameters
@@ -53,17 +43,16 @@ The labels color (CSS format).
 
 
 
-### Background(System.String)
-Sets the legend background color
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Background("red"))
+        .Legend(legend => legend.Color("red"))
         .Render();
     %>
-        
+
+
+### Background(`System.String`)
+Sets the legend background color
 
 
 #### Parameters
@@ -74,17 +63,16 @@ The background color.
 
 
 
-### Position(Kendo.Mvc.UI.ChartLegendPosition)
-Sets the legend position
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Position(ChartLegendPosition.Bottom))
+        .Legend(legend => legend.Background("red"))
         .Render();
     %>
-        
+
+
+### Position(`Kendo.Mvc.UI.ChartLegendPosition`)
+Sets the legend position
 
 
 #### Parameters
@@ -95,17 +83,16 @@ The legend position.
 
 
 
-### Visible(System.Boolean)
-Sets the legend visibility
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Visible(false))
+        .Legend(legend => legend.Position(ChartLegendPosition.Bottom))
         .Render();
     %>
-        
+
+
+### Visible(`System.Boolean`)
+Sets the legend visibility
 
 
 #### Parameters
@@ -116,17 +103,16 @@ The legend visibility.
 
 
 
-### Offset(System.Int32,System.Int32)
-Sets the legend X and Y offset from its position
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Offset(10, 50))
+        .Legend(legend => legend.Visible(false))
         .Render();
     %>
-        
+
+
+### Offset(`System.Int32,System.Int32`)
+Sets the legend X and Y offset from its position
 
 
 #### Parameters
@@ -140,17 +126,16 @@ The legend Y offset from its position.
 
 
 
-### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
-Sets the legend margin
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Margin(0, 5, 5, 0))
+        .Legend(legend => legend.Offset(10, 50))
         .Render();
     %>
-        
+
+
+### Margin(`System.Int32,System.Int32,System.Int32,System.Int32`)
+Sets the legend margin
 
 
 #### Parameters
@@ -170,17 +155,16 @@ The legend top margin.
 
 
 
-### Margin(System.Int32)
-Sets the legend margin
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Margin(20))
+        .Legend(legend => legend.Margin(0, 5, 5, 0))
         .Render();
     %>
-        
+
+
+### Margin(`System.Int32`)
+Sets the legend margin
 
 
 #### Parameters
@@ -191,17 +175,16 @@ The legend margin.
 
 
 
-### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
-Sets the legend padding
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Padding(0, 5, 5, 0))
+        .Legend(legend => legend.Margin(20))
         .Render();
     %>
-        
+
+
+### Padding(`System.Int32,System.Int32,System.Int32,System.Int32`)
+Sets the legend padding
 
 
 #### Parameters
@@ -221,17 +204,16 @@ The legend left padding.
 
 
 
-### Padding(System.Int32)
-Sets the legend padding
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Padding(20))
+        .Legend(legend => legend.Padding(0, 5, 5, 0))
         .Render();
     %>
-        
+
+
+### Padding(`System.Int32`)
+Sets the legend padding
 
 
 #### Parameters
@@ -242,17 +224,16 @@ The legend padding.
 
 
 
-### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets the legend border
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Legend(legend => legend.Border(1, "#000", ChartDashType.Dot))
+        .Legend(legend => legend.Padding(20))
         .Render();
     %>
-        
+
+
+### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets the legend border
 
 
 #### Parameters
@@ -269,7 +250,15 @@ The legend border dash type.
 
 
 
-### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Legend(legend => legend.Border(1, "#000", ChartDashType.Dot))
+        .Render();
+    %>
+
+
+### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
 Configures the legend border
 
 
@@ -277,6 +266,20 @@ Configures the legend border
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 The border configuration action
+
+
+
+
+
+### Labels(`System.Action<Kendo.Mvc.UI.Fluent.ChartLegendLabelsBuilder>`)
+Configures the legend labels
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLegendLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLegendLabelsBuilder)>
+The labels configuration action
+
 
 
 

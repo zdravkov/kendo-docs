@@ -11,17 +11,9 @@ Defines the fluent interface for configuring bar series.
 
 ## Methods
 
-### Aggregate(System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>,System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>,System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>,System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>)
+### Aggregate(`System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>,System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>,System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>,System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>`)
 Sets the aggregate function for date series.
             This function is used when a category (an year, month, etc.) contains two or more points.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.OHLC(s => s.Sales).Aggregate(ChartSeriesAggregate.Avg))
-    %>
-        
 
 
 #### Parameters
@@ -41,34 +33,32 @@ Close aggregate name.
 
 
 
-### Gap(System.Double)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.OHLC(s => s.Sales).Aggregate(ChartSeriesAggregate.Avg))
+    %>
+
+
+### Gap(`System.Double`)
 Set distance between category clusters.
             
             A value of 1 means that there is a total of 1 point width between categories.
             The distance is distributed evenly on each side.
             The default value is 1
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.OHLC(s => s.Sales).Gap(1.5))
+    .Name("Chart")
+    .Series(series => series.OHLC(s => s.Sales).Gap(1.5))
     %>
-        
 
 
-
-
-### Spacing(System.Double)
+### Spacing(`System.Double`)
 Sets a value indicating the distance between points in the same category.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Spacing(s => s.Sales).Spacing(1))
-    %>
-        
 
 
 #### Parameters
@@ -80,17 +70,15 @@ Value of 1 means that the distance between points in the same category.
 
 
 
-### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets the points border
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.OHLC(s => s.Sales).Border("1", "#000", ChartDashType.Dot))
-        .Render();
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.Spacing(s => s.Sales).Spacing(1))
     %>
-        
+
+
+### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets the points border
 
 
 #### Parameters
@@ -107,20 +95,16 @@ The points border dash type.
 
 
 
-### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Configures the ohlc chart lines.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series
-        .OHLC(s => s.Sales)
-        .Line(2, "red", ChartDashType.Dot)
-        )
+        .Series(series => series.OHLC(s => s.Sales).Border("1", "#000", ChartDashType.Dot))
         .Render();
     %>
-        
+
+
+### Line(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Configures the ohlc chart lines.
 
 
 #### Parameters
@@ -137,7 +121,18 @@ The lines dashType.
 
 
 
-### Line(System.Int32)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .OHLC(s => s.Sales)
+            .Line(2, "red", ChartDashType.Dot)
+        )
+        .Render();
+    %>
+
+
+### Line(`System.Int32`)
 Configures the ohlc line width.
 
 
@@ -149,7 +144,8 @@ The lines width.
 
 
 
-### Line(System.Int32,System.String)
+
+### Line(`System.Int32,System.String`)
 Configures the ohlc lines.
 
 
@@ -164,20 +160,9 @@ The lines color.
 
 
 
-### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
+
+### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>`)
 Configures the ohlc chart lines.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
-        .Area(s => s.Sales)
-        .Line(line => line.Opacity(0.2))
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -188,7 +173,18 @@ The configuration action.
 
 
 
-### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Area(s => s.Sales)
+            .Line(line => line.Opacity(0.2))
+        )
+        .Render();
+    %>
+
+
+### Highlight(`System.Action<Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder>`)
 Configures the series highlight
 
 
@@ -196,6 +192,7 @@ Configures the series highlight
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartOHLCSeriesHighlightBuilder)>
 The configuration action.
+
 
 
 

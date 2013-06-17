@@ -16,7 +16,7 @@ The parent Chart
 
 ## Methods
 
-### BarT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+### Bar(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound bar series.
 
 
@@ -31,7 +31,8 @@ The expression used to extract the point color from the chart model
 
 
 
-### Bar(System.String,System.String)
+
+### Bar(`System.String,System.String`)
 Defines bound bar series.
 
 
@@ -46,7 +47,8 @@ The name of the color member.
 
 
 
-### Bar(System.Type,System.String,System.String)
+
+### Bar(`System.Type,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -64,7 +66,8 @@ The name of the color member.
 
 
 
-### Bar(System.Collections.IEnumerable)
+
+### Bar(`System.Collections.IEnumerable`)
 Defines bar series bound to inline data.
 
 
@@ -76,7 +79,8 @@ The data to bind to.
 
 
 
-### ColumnT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+
+### Column(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound column series.
 
 
@@ -91,7 +95,8 @@ The expression used to extract the point color from the chart model
 
 
 
-### Column(System.String,System.String)
+
+### Column(`System.String,System.String`)
 Defines bound bar series.
 
 
@@ -106,7 +111,8 @@ The name of the color member.
 
 
 
-### Column(System.Type,System.String,System.String)
+
+### Column(`System.Type,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -124,7 +130,8 @@ The name of the color member.
 
 
 
-### Column(System.Collections.IEnumerable)
+
+### Column(`System.Collections.IEnumerable`)
 Defines bar series bound to inline data.
 
 
@@ -136,7 +143,8 @@ The data to bind to
 
 
 
-### LineT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+
+### Line(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound line series.
 
 
@@ -148,7 +156,8 @@ The expression used to extract the series value from the chart model
 
 
 
-### Line(System.String)
+
+### Line(`System.String`)
 Defines bound line series.
 
 
@@ -160,7 +169,8 @@ The name of the value member.
 
 
 
-### Line(System.Type,System.String)
+
+### Line(`System.Type,System.String`)
 Defines bound line series.
 
 
@@ -175,7 +185,8 @@ The name of the value member.
 
 
 
-### Line(System.Collections.IEnumerable)
+
+### Line(`System.Collections.IEnumerable`)
 Defines line series bound to inline data.
 
 
@@ -187,7 +198,8 @@ The data to bind to
 
 
 
-### VerticalLineT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+
+### VerticalLine(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound vertical line series.
 
 
@@ -199,7 +211,8 @@ The expression used to extract the series value from the chart model
 
 
 
-### VerticalLine(System.String)
+
+### VerticalLine(`System.String`)
 Defines bound vertical line series.
 
 
@@ -211,7 +224,8 @@ The name of the value member.
 
 
 
-### VerticalLine(System.Type,System.String)
+
+### VerticalLine(`System.Type,System.String`)
 Defines bound vertical line series.
 
 
@@ -226,7 +240,8 @@ The name of the value member.
 
 
 
-### VerticalLine(System.Collections.IEnumerable)
+
+### VerticalLine(`System.Collections.IEnumerable`)
 Defines vertical line series bound to inline data.
 
 
@@ -238,7 +253,8 @@ The data to bind to
 
 
 
-### AreaT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+
+### Area(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound area series.
 
 
@@ -250,7 +266,8 @@ The expression used to extract the series value from the chart model.
 
 
 
-### Area(System.String)
+
+### Area(`System.String`)
 Defines bound area series.
 
 
@@ -262,7 +279,8 @@ The name of the value member.
 
 
 
-### Area(System.Type,System.String)
+
+### Area(`System.Type,System.String`)
 Defines bound area series.
 
 
@@ -277,7 +295,8 @@ The name of the value member.
 
 
 
-### Area(System.Collections.IEnumerable)
+
+### Area(`System.Collections.IEnumerable`)
 Defines area series bound to inline data.
 
 
@@ -289,7 +308,8 @@ The data to bind to
 
 
 
-### VerticalAreaT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+
+### VerticalArea(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound vertical area series.
 
 
@@ -301,7 +321,8 @@ The expression used to extract the series value from the chart model.
 
 
 
-### VerticalArea(System.String)
+
+### VerticalArea(`System.String`)
 Defines bound vertical area series.
 
 
@@ -313,7 +334,8 @@ The name of the value member.
 
 
 
-### VerticalArea(System.Type,System.String)
+
+### VerticalArea(`System.Type,System.String`)
 Defines bound vertical area series.
 
 
@@ -328,7 +350,8 @@ The name of the value member.
 
 
 
-### VerticalArea(System.Collections.IEnumerable)
+
+### VerticalArea(`System.Collections.IEnumerable`)
 Defines vertical area series bound to inline data.
 
 
@@ -340,7 +363,8 @@ The data to bind to
 
 
 
-### ScatterT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+
+### Scatter(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound scatter series.
 
 
@@ -355,7 +379,8 @@ The expression used to extract the Y value from the chart model
 
 
 
-### Scatter(System.String,System.String)
+
+### Scatter(`System.String,System.String`)
 Defines bound scatter series.
 
 
@@ -370,7 +395,8 @@ The name of the Y value member.
 
 
 
-### Scatter(System.Type,System.String,System.String)
+
+### Scatter(`System.Type,System.String,System.String`)
 Defines bound scatter series.
 
 
@@ -388,7 +414,8 @@ The name of the Y value member.
 
 
 
-### Scatter(System.Collections.IEnumerable)
+
+### Scatter(`System.Collections.IEnumerable`)
 Defines scatter series bound to inline data.
 
 
@@ -400,7 +427,8 @@ The data to bind to
 
 
 
-### ScatterLineT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+
+### ScatterLine(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound scatter line series.
 
 
@@ -415,7 +443,8 @@ The expression used to extract the Y value from the chart model
 
 
 
-### ScatterLine(System.String,System.String)
+
+### ScatterLine(`System.String,System.String`)
 Defines bound scatter line series.
 
 
@@ -430,7 +459,8 @@ The name of the Y value member.
 
 
 
-### ScatterLine(System.Type,System.String,System.String)
+
+### ScatterLine(`System.Type,System.String,System.String`)
 Defines bound scatter line series.
 
 
@@ -448,7 +478,8 @@ The name of the Y value member.
 
 
 
-### ScatterLine(System.Collections.IEnumerable)
+
+### ScatterLine(`System.Collections.IEnumerable`)
 Defines scatter line series bound to inline data.
 
 
@@ -460,25 +491,29 @@ The data to bind to
 
 
 
-### BubbleT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.Boolean\>\>)
+
+### Bubble(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.Boolean>>`)
 Defines bound bubble series.
 
 
 
 
-### Bubble(System.String,System.String,System.String,System.String,System.String,System.String)
+
+### Bubble(`System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound bubble series.
 
 
 
 
-### Bubble(System.Type,System.String,System.String,System.String,System.String,System.String,System.String)
+
+### Bubble(`System.Type,System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound bubble series.
 
 
 
 
-### Bubble(System.Collections.IEnumerable)
+
+### Bubble(`System.Collections.IEnumerable`)
 Defines bubble series bound to inline data.
 
 
@@ -490,25 +525,29 @@ The data to bind to
 
 
 
-### PieT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.Boolean\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.Boolean\>\>)
+
+### Pie(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.Boolean>>,System.Linq.Expressions.Expression<System.Func<T,System.Boolean>>`)
 Defines bound pie series.
 
 
 
 
-### Pie(System.String,System.String,System.String,System.String,System.String)
+
+### Pie(`System.String,System.String,System.String,System.String,System.String`)
 Defines bound pie series.
 
 
 
 
-### Pie(System.Type,System.String,System.String,System.String,System.String,System.String)
+
+### Pie(`System.Type,System.String,System.String,System.String,System.String,System.String`)
 Defines bound pie series.
 
 
 
 
-### Pie(System.Collections.IEnumerable)
+
+### Pie(`System.Collections.IEnumerable`)
 Defines pie series bound to inline data.
 
 
@@ -520,25 +559,29 @@ The data to bind to
 
 
 
-### DonutT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.Boolean\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.Boolean\>\>)
+
+### Donut(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.Boolean>>,System.Linq.Expressions.Expression<System.Func<T,System.Boolean>>`)
 Defines bound pie series.
 
 
 
 
-### Donut(System.String,System.String,System.String,System.String,System.String)
+
+### Donut(`System.String,System.String,System.String,System.String,System.String`)
 Defines bound donut series.
 
 
 
 
-### Donut(System.Type,System.String,System.String,System.String,System.String,System.String)
+
+### Donut(`System.Type,System.String,System.String,System.String,System.String,System.String`)
 Defines bound donut series.
 
 
 
 
-### Donut(System.Collections.IEnumerable)
+
+### Donut(`System.Collections.IEnumerable`)
 Defines donut series bound to inline data.
 
 
@@ -550,25 +593,29 @@ The data to bind to
 
 
 
-### OHLCT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+
+### OHLC(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound ohlc series.
 
 
 
 
-### OHLCT1(System.String,System.String,System.String,System.String,System.String)
+
+### OHLC(`System.String,System.String,System.String,System.String,System.String`)
 Defines bound ohlc series.
 
 
 
 
-### OHLCT1(System.Type,System.String,System.String,System.String,System.String,System.String)
+
+### OHLC(`System.Type,System.String,System.String,System.String,System.String,System.String`)
 Defines bound ohlc series.
 
 
 
 
-### OHLCT1(System.Collections.IEnumerable)
+
+### OHLC(`System.Collections.IEnumerable`)
 Defines ohlc series bound to inline data.
 
 
@@ -580,25 +627,29 @@ The data to bind to
 
 
 
-### CandlestickT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+
+### Candlestick(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound candlestick series.
 
 
 
 
-### CandlestickT1(System.String,System.String,System.String,System.String,System.String,System.String)
+
+### Candlestick(`System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound candlestick series.
 
 
 
 
-### CandlestickT1(System.Type,System.String,System.String,System.String,System.String,System.String,System.String)
+
+### Candlestick(`System.Type,System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound candlestick series.
 
 
 
 
-### CandlestickT1(System.Collections.IEnumerable)
+
+### Candlestick(`System.Collections.IEnumerable`)
 Defines candlestick series bound to inline data.
 
 
@@ -610,7 +661,8 @@ The data to bind to
 
 
 
-### BulletT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+
+### Bullet(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound bullet series.
 
 
@@ -628,7 +680,8 @@ The expression used to extract the point color from the chart model
 
 
 
-### Bullet(System.String,System.String,System.String)
+
+### Bullet(`System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -646,7 +699,8 @@ The name of the color member.
 
 
 
-### Bullet(System.Type,System.String,System.String,System.String)
+
+### Bullet(`System.Type,System.String,System.String,System.String`)
 Defines bound bullet series.
 
 
@@ -664,7 +718,8 @@ The name of the color member.
 
 
 
-### Bullet(System.Collections.IEnumerable)
+
+### Bullet(`System.Collections.IEnumerable`)
 Defines bar series bound to inline data.
 
 
@@ -676,7 +731,8 @@ The data to bind to.
 
 
 
-### VerticalBulletT1(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+
+### VerticalBullet(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound verticalBullet series.
 
 
@@ -694,7 +750,8 @@ The expression used to extract the point color from the chart model
 
 
 
-### VerticalBullet(System.String,System.String,System.String)
+
+### VerticalBullet(`System.String,System.String,System.String`)
 Defines bound verticalBullet series.
 
 
@@ -712,7 +769,8 @@ The name of the color member.
 
 
 
-### VerticalBullet(System.Type,System.String,System.String,System.String)
+
+### VerticalBullet(`System.Type,System.String,System.String,System.String`)
 Defines bound verticalBullet series.
 
 
@@ -730,7 +788,8 @@ The name of the color member.
 
 
 
-### VerticalBullet(System.Collections.IEnumerable)
+
+### VerticalBullet(`System.Collections.IEnumerable`)
 Defines bar series bound to inline data.
 
 
@@ -738,6 +797,7 @@ Defines bar series bound to inline data.
 
 ##### data `System.Collections.IEnumerable`
 The data to bind to
+
 
 
 

@@ -110,6 +110,7 @@ More documentation is available at [kendo:stockChart-seriesItem-labels-border](s
 
 The background color of the labels.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels background="handle_background">
     </kendo:stockChart-seriesItem-labels>
@@ -122,6 +123,7 @@ The background color of the labels.
 ### color `String`
 
 The text color of the labels.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels color="handle_color">
@@ -136,6 +138,7 @@ The text color of the labels.
 
 The font style of the labels.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels font="handle_font">
     </kendo:stockChart-seriesItem-labels>
@@ -148,6 +151,7 @@ The font style of the labels.
 ### format `String`
 
 The format of the labels.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels format="handle_format">
@@ -162,6 +166,7 @@ The format of the labels.
 
 Defines the position of the labels.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels position="handle_position">
     </kendo:stockChart-seriesItem-labels>
@@ -175,6 +180,7 @@ Defines the position of the labels.
 
 The label template. Template variables:
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels template="handle_template">
     </kendo:stockChart-seriesItem-labels>
@@ -187,6 +193,7 @@ The label template. Template variables:
 ### visible `String`
 
 The visibility of the labels.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels visible="handle_visible">
@@ -203,6 +210,7 @@ The visibility of the labels.
 
 The background color of the labels.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels>
         <kendo:stockChart-seriesItem-labels-background>
@@ -217,6 +225,7 @@ The background color of the labels.
 ### kendo:stockChart-seriesItem-labels-color
 
 The text color of the labels.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels>
@@ -233,6 +242,7 @@ The text color of the labels.
 
 The font style of the labels.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels>
         <kendo:stockChart-seriesItem-labels-font>
@@ -247,6 +257,7 @@ The font style of the labels.
 ### kendo:stockChart-seriesItem-labels-format
 
 The format of the labels.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels>
@@ -263,6 +274,7 @@ The format of the labels.
 
 Defines the position of the labels.
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels>
         <kendo:stockChart-seriesItem-labels-position>
@@ -278,6 +290,7 @@ Defines the position of the labels.
 
 The label template. Template variables:
 
+
 #### Example
     <kendo:stockChart-seriesItem-labels>
         <kendo:stockChart-seriesItem-labels-template>
@@ -292,6 +305,7 @@ The label template. Template variables:
 ### kendo:stockChart-seriesItem-labels-visible
 
 The visibility of the labels.
+
 
 #### Example
     <kendo:stockChart-seriesItem-labels>

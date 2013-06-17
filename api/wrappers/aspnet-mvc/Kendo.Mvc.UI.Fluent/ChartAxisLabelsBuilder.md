@@ -11,23 +11,8 @@ Defines the fluent interface for configuring the chart labels.
 
 ## Methods
 
-### Mirror(System.Boolean)
+### Mirror(`System.Boolean`)
 Renders the axis labels on the other side.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .ValueAxis(axis => axis
-        .Numeric().Labels(labels => labels.Mirror(true))
-        )
-        .CategoryAxis(axis => axis
-        .Categories(s => s.DateString)
-        // Move the value axis to the right side
-        .AxisCrossingValue(5)
-        )
-    %>
-        
 
 
 #### Parameters
@@ -38,19 +23,22 @@ A value indicating whether to render the axis labels on the other side.
 
 
 
-### Step(System.Int32)
-Label rendering step.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Categories(product => product.Name)
-        .Labels(labels => labels.Step(2))
-        )
+    .Name("Chart")
+    .ValueAxis(axis => axis
+        .Numeric().Labels(labels => labels.Mirror(true))
+    )
+    .CategoryAxis(axis => axis
+        .Categories(s => s.DateString)
+        // Move the value axis to the right side
+        .AxisCrossingValue(5)
+    )
     %>
-        
+
+
+### Step(`System.Int32`)
+Label rendering step.
 
 
 #### Parameters
@@ -62,19 +50,18 @@ A value indicating the step at which labels are rendered.
 
 
 
-### Skip(System.Int32)
-Label rendering skip.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
+    .Name("Chart")
+    .CategoryAxis(axis => axis
         .Categories(product => product.Name)
-        .Labels(labels => labels.Skip(2))
-        )
+        .Labels(labels => labels.Step(2))
+    )
     %>
-        
+
+
+### Skip(`System.Int32`)
+Label rendering skip.
 
 
 #### Parameters
@@ -83,6 +70,16 @@ Label rendering skip.
 Skips rendering the first n labels.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Categories(product => product.Name)
+        .Labels(labels => labels.Skip(2))
+    )
+    %>
 
 
 

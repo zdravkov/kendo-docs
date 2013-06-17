@@ -11,21 +11,8 @@ Defines the fluent interface for configuring plot band.
 
 ## Methods
 
-### From(T)
+### From(`T`)
 Sets the plot band start position.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .PlotBands(plotBands => plotBands
-        .Add().From(1).Color("Red");
-        )
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -36,21 +23,20 @@ The plot band start position.
 
 
 
-### To(T)
-Sets the plot band end position.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .PlotBands(plotBands => plotBands
-        .Add().To(2).Color("Red");
-        )
+            .PlotBands(plotBands => plotBands
+                .Add().From(1).Color("Red");
+            )
         )
         .Render();
     %>
-        
+
+
+### To(`T`)
+Sets the plot band end position.
 
 
 #### Parameters
@@ -61,21 +47,20 @@ The plot band end position.
 
 
 
-### Color(System.String)
-Sets the plot band background color
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .PlotBands(plotBands => plotBands
-        .Add().Color("Red");
-        )
+            .PlotBands(plotBands => plotBands
+                .Add().To(2).Color("Red");
+            )
         )
         .Render();
     %>
-        
+
+
+### Color(`System.String`)
+Sets the plot band background color
 
 
 #### Parameters
@@ -86,21 +71,20 @@ The plot band background color.
 
 
 
-### Opacity(System.Double)
-Sets the plot band opacity
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .PlotBands(plotBands => plotBands
-        .Add().Opacity(0.5);
-        )
+            .PlotBands(plotBands => plotBands
+                .Add().Color("Red");
+            )
         )
         .Render();
     %>
-        
+
+
+### Opacity(`System.Double`)
+Sets the plot band opacity
 
 
 #### Parameters
@@ -109,6 +93,18 @@ Sets the plot band opacity
 The plot band opacity.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .CategoryAxis(axis => axis
+            .PlotBands(plotBands => plotBands
+                .Add().Opacity(0.5);
+            )
+        )
+        .Render();
+    %>
 
 
 

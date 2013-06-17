@@ -16,7 +16,7 @@ Gets or sets the highlight
 
 ## Methods
 
-### Line(System.Int32)
+### Line(`System.Int32`)
 Configures the candlestick highlight line width.
 
 
@@ -28,7 +28,8 @@ The lines width.
 
 
 
-### Line(System.Int32,System.String)
+
+### Line(`System.Int32,System.String`)
 Configures the candlestick highlight lines.
 
 
@@ -43,7 +44,8 @@ The lines color.
 
 
 
-### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
+
+### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>`)
 Configures the OHLC highlight chart lines.
 
 
@@ -51,6 +53,7 @@ Configures the OHLC highlight chart lines.
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAreaLineBuilder)>
 The configuration action.
+
 
 
 

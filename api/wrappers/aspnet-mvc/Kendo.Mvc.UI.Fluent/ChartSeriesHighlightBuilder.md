@@ -16,7 +16,7 @@ Gets or sets the highlight
 
 ## Methods
 
-### Visible(System.Boolean)
+### Visible(`System.Boolean`)
 Sets the highlight visibility
 
 
@@ -24,6 +24,7 @@ Sets the highlight visibility
 
 ##### visible `System.Boolean`
 The highlight visibility.
+
 
 
 

@@ -91,6 +91,18 @@ More documentation is available at [kendo:stockChart-legend-border](stockchart/l
         <kendo:stockChart-legend-border></kendo:stockChart-legend-border>
     </kendo:stockChart-legend>
 
+### kendo:stockChart-legend-inactiveItems
+
+Configures the legend inactive items.
+
+More documentation is available at [kendo:stockChart-legend-inactiveItems](stockchart/legend-inactiveitems).
+
+#### Example
+
+    <kendo:stockChart-legend>
+        <kendo:stockChart-legend-inactiveItems></kendo:stockChart-legend-inactiveItems>
+    </kendo:stockChart-legend>
+
 ### kendo:stockChart-legend-labels
 
 Configures the legend labels.

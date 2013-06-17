@@ -39,6 +39,7 @@ The width of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:sparkline-seriesItem-markers-border color="handle_color">
     </kendo:sparkline-seriesItem-markers-border>
@@ -51,6 +52,7 @@ The color of the border.
 ### width `String`
 
 The width of the border.
+
 
 #### Example
     <kendo:sparkline-seriesItem-markers-border width="handle_width">
@@ -67,6 +69,7 @@ The width of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:sparkline-seriesItem-markers-border>
         <kendo:sparkline-seriesItem-markers-border-color>
@@ -81,6 +84,7 @@ The color of the border.
 ### kendo:sparkline-seriesItem-markers-border-width
 
 The width of the border.
+
 
 #### Example
     <kendo:sparkline-seriesItem-markers-border>

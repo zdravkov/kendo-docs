@@ -11,19 +11,8 @@ Defines the fluent interface for configuring the ChartAxisSelectionBuilder.
 
 ## Methods
 
-### From(System.DateTime)
+### From(`System.DateTime`)
 Sets the selection lower boundary
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis.Select(select =>
-        select.From(fromDate).To(toDate)
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -34,19 +23,18 @@ The selection lower boundary.
 
 
 
-### From(System.Double)
-Sets the selection lower boundary
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .CategoryAxis(axis => axis.Select(select =>
-        select.From(from).To(to)
+        .CategoryAxis(axis =>
+            axis.Select(select => select.From(from))
         )
         .Render();
     %>
-        
+
+
+### From(`System.Double`)
+Sets the selection lower boundary
 
 
 #### Parameters
@@ -57,19 +45,18 @@ The selection lower boundary.
 
 
 
-### To(System.DateTime)
-Sets the selection upper boundary
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis.Select(select =>
-        select.To(toDate).To(toDate)
-        )
-        .Render();
-    %>
-        
+            select.From(from).To(to)
+            ))
+            .Render();
+            %>
+
+
+### To(`System.DateTime`)
+Sets the selection upper boundary
 
 
 #### Parameters
@@ -80,19 +67,18 @@ The selection upper boundary.
 
 
 
-### To(System.Double)
-Sets the selection upper boundary
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis.Select(select =>
-        select.To(to).To(to)
-        )
-        .Render();
-    %>
-        
+            select.To(toDate).To(toDate)
+            ))
+            .Render();
+            %>
+
+
+### To(`System.Double`)
+Sets the selection upper boundary
 
 
 #### Parameters
@@ -103,7 +89,16 @@ The selection upper boundary.
 
 
 
-### Mousewheel(System.Action\<Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .CategoryAxis(axis => axis.Select(select => select.To(to).To(to)
+            ))
+            .Render();
+            %>
+
+
+### Mousewheel(`System.Action<Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder>`)
 Configures the mousewheel zoom options
 
 
@@ -111,6 +106,7 @@ Configures the mousewheel zoom options
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSelectionMousewheelBuilder)>
 The mousewheel zoom options
+
 
 
 

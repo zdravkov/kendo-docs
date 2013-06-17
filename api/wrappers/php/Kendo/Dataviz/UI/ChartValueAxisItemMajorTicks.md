@@ -12,8 +12,26 @@ A PHP class representing the majorTicks setting of ChartValueAxisItem.
 
 ## Methods
 
+### color
+The color of the value axis major ticks lines. Accepts a valid CSS color string, including hex and rgb.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $majorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks();
+    $majorTicks->color('value');
+    ?>
+
 ### size
-The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
+The length of the tick line in pixels.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks`
@@ -31,7 +49,7 @@ The axis major tick size. This is the length of the line in pixels that is drawn
     ?>
 
 ### visible
-The visibility of the major ticks.
+If set to true the chart will display the value axis major ticks. By default the value axis major ticks are visible.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks`

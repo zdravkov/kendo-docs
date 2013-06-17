@@ -49,7 +49,7 @@ To do so, the navigational widget should have `data-rel="modalview"` and `href` 
 
 ### Button which opens a ModalView
 
-    <div data-role="view" data-role="button">
+    <div data-role="view">
         <a href="#foo" data-rel="modalview" data-role="button">Foo</a>
     </div>
 

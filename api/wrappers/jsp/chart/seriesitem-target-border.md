@@ -26,7 +26,7 @@ The color of the border.
 
 ### dashType `String`
 
-The dash type of the border.
+The following dash types are supported:
 
 #### Example
     <kendo:chart-seriesItem-target-border dashType="dashType">
@@ -34,7 +34,7 @@ The dash type of the border.
 
 ### width `float`
 
-The width of the border.
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
 
 #### Example
     <kendo:chart-seriesItem-target-border width="width">
@@ -47,6 +47,7 @@ The width of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:chart-seriesItem-target-border color="handle_color">
     </kendo:chart-seriesItem-target-border>
@@ -58,7 +59,8 @@ The color of the border.
 
 ### dashType `String`
 
-The dash type of the border.
+The following dash types are supported:
+
 
 #### Example
     <kendo:chart-seriesItem-target-border dashType="handle_dashType">
@@ -71,7 +73,8 @@ The dash type of the border.
 
 ### width `String`
 
-The width of the border.
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
 
 #### Example
     <kendo:chart-seriesItem-target-border width="handle_width">
@@ -88,6 +91,7 @@ The width of the border.
 
 The color of the border.
 
+
 #### Example
     <kendo:chart-seriesItem-target-border>
         <kendo:chart-seriesItem-target-border-color>
@@ -101,7 +105,8 @@ The color of the border.
 
 ### kendo:chart-seriesItem-target-border-dashType
 
-The dash type of the border.
+The following dash types are supported:
+
 
 #### Example
     <kendo:chart-seriesItem-target-border>
@@ -116,7 +121,8 @@ The dash type of the border.
 
 ### kendo:chart-seriesItem-target-border-width
 
-The width of the border.
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
 
 #### Example
     <kendo:chart-seriesItem-target-border>

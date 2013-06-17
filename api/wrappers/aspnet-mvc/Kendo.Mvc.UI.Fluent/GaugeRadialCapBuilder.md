@@ -11,19 +11,8 @@ Defines the fluent interface for configuring the GaugeRadialCapBuilder.
 
 ## Methods
 
-### Color(System.String)
+### Color(`System.String`)
 Sets the cap color.
-
-#### Example
-
-    <% Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .Pointer(pointer => pointer
-        .Cap(cap => cap.Color("red"))
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -34,19 +23,18 @@ The cap color.
 
 
 
-### Opacity(System.Double)
-Sets the cap opacity.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Pointer(pointer => pointer
-        .Cap(cap => cap.Opacity(0.5))
+            .Cap(cap => cap.Color("red"))
         )
         .Render();
     %>
-        
+
+
+### Opacity(`System.Double`)
+Sets the cap opacity.
 
 
 #### Parameters
@@ -58,19 +46,18 @@ The cap opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-### Size(System.Double)
-Sets the cap size in percents.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().RadialGauge()
         .Name("radialGauge")
         .Pointer(pointer => pointer
-        .Cap(cap => cap.Size(8))
+            .Cap(cap => cap.Opacity(0.5))
         )
         .Render();
     %>
-        
+
+
+### Size(`System.Double`)
+Sets the cap size in percents.
 
 
 #### Parameters
@@ -79,6 +66,16 @@ Sets the cap size in percents.
 The cap size in percents.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().RadialGauge()
+        .Name("radialGauge")
+        .Pointer(pointer => pointer
+            .Cap(cap => cap.Size(8))
+        )
+        .Render();
+    %>
 
 
 

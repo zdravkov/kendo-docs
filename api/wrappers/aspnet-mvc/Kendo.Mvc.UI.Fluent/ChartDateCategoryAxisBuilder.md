@@ -16,7 +16,7 @@ The parent Chart
 
 ## Methods
 
-### Categories(System.Linq.Expressions.Expression\<System.Func\<T,System.DateTime\>\>)
+### Categories(`System.Linq.Expressions.Expression<System.Func<T,System.DateTime>>`)
 Defines bound categories.
 
 
@@ -28,7 +28,8 @@ The expression used to extract the categories value from the chart model
 
 
 
-### Categories(System.Collections.Generic.IEnumerable\<System.DateTime\>)
+
+### Categories(`System.Collections.Generic.IEnumerable<System.DateTime>`)
 Defines categories.
 
 
@@ -40,7 +41,8 @@ The list of categories
 
 
 
-### Categories(System.DateTime[])
+
+### Categories(`System.DateTime[]`)
 Defines categories.
 
 
@@ -52,7 +54,8 @@ The list of categories
 
 
 
-### BaseUnit(Kendo.Mvc.UI.ChartAxisBaseUnit)
+
+### BaseUnit(`Kendo.Mvc.UI.ChartAxisBaseUnit`)
 Sets the date category axis base unit.
 
 
@@ -64,7 +67,8 @@ The date category axis base unit
 
 
 
-### BaseUnitStep(System.Int32)
+
+### BaseUnitStep(`System.Int32`)
 Sets the step (interval) between categories in base units.
             Specifiying 0 (auto) will set the step to such value that the total
             number of categories does not exceed MaxDateGroups.
@@ -79,7 +83,8 @@ the step (interval) between categories in base units.
 
 
 
-### MaxDateGroups(System.Int32)
+
+### MaxDateGroups(`System.Int32`)
 Specifies the maximum number of groups (categories) that the chart will attempt to
             produce when either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
             This option is ignored in all other cases.
@@ -94,7 +99,8 @@ the maximum number of groups (categories).
 
 
 
-### RoundToBaseUnit(System.Boolean)
+
+### RoundToBaseUnit(`System.Boolean`)
 If set to false, the min and max dates will not be rounded off to
             the nearest baseUnit.
             This option is most useful in combination with explicit min and max dates.
@@ -110,7 +116,8 @@ A boolean value that indicates if the axis range should be rounded to the neares
 
 
 
-### Justify(System.Boolean)
+
+### Justify(`System.Boolean`)
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
 
@@ -124,6 +131,7 @@ A boolean value that indicates if the empty space before and after the series sh
 
 
 
+
 ### Justify
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
@@ -131,7 +139,8 @@ Positions categories and series points on major ticks. This removes the empty sp
 
 
 
-### AutoBaseUnitSteps(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder\>)
+
+### AutoBaseUnitSteps(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder>`)
 Specifies the discrete baseUnitStep values when
             either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
 
@@ -144,7 +153,8 @@ The configuration action.
 
 
 
-### Min(System.DateTime)
+
+### Min(`System.DateTime`)
 Sets the date category axis minimum (start) date.
 
 
@@ -156,7 +166,8 @@ The date category axis minimum (start) date
 
 
 
-### Max(System.DateTime)
+
+### Max(`System.DateTime`)
 Sets the date category axis maximum (end) date.
 
 
@@ -168,18 +179,9 @@ The date category axis maximum (end) date
 
 
 
-### AxisCrossingValue(System.Double)
+
+### AxisCrossingValue(`System.Double`)
 Sets value at which the first perpendicular axis crosses this axis.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .CategoryAxis(axis => axis.Date().AxisCrossingValue(4))
-        .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
-        .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
-    %>
-        
 
 
 #### Parameters
@@ -190,18 +192,17 @@ The value at which the first perpendicular axis crosses this axis.
 
 
 
-### AxisCrossingValue(System.Double[])
-Sets value at which perpendicular axes cross this axis.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .CategoryAxis(axis => axis.Date().AxisCrossingValue(0, 10))
-        .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
-        .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
+    .Name("Chart")
+    .CategoryAxis(axis => axis.Date().AxisCrossingValue(4))
+    .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
+    .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
     %>
-        
+
+
+### AxisCrossingValue(`System.Double[]`)
+Sets value at which perpendicular axes cross this axis.
 
 
 #### Parameters
@@ -212,18 +213,17 @@ The values at which perpendicular axes cross this axis.
 
 
 
-### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
-Sets value at which perpendicular axes cross this axis.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .CategoryAxis(axis => axis.Date().AxisCrossingValue(new double[] { 0, 10 }))
-        .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
-        .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
+    .Name("Chart")
+    .CategoryAxis(axis => axis.Date().AxisCrossingValue(0, 10))
+    .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
+    .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
     %>
-        
+
+
+### AxisCrossingValue(`System.Collections.Generic.IEnumerable<System.Double>`)
+Sets value at which perpendicular axes cross this axis.
 
 
 #### Parameters
@@ -234,22 +234,17 @@ The values at which perpendicular axes cross this axis.
 
 
 
-### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder\>)
-Configures the axis labels.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-        .Culture(new CultureInfo("es-ES")
-        .Visible(true)
-        );
-        )
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .CategoryAxis(axis => axis.Date().AxisCrossingValue(new double[] { 0, 10 }))
+    .ValueAxis(axis => axis.Numeric().Title("Axis 1"))
+    .ValueAxis(axis => axis.Numeric("secondary").Title("Axis 2"))
     %>
-        
+
+
+### Labels(`System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>`)
+Configures the axis labels.
 
 
 #### Parameters
@@ -260,16 +255,21 @@ The configuration action.
 
 
 
-### Select(System.Nullable\<System.DateTime\>,System.Nullable\<System.DateTime\>)
-Sets the selection range
-
-#### Example
-
-    <%= Html.Kendo().StockChart(Model)
-        .Name("StockChart")
-        .CategoryAxis(axis => axis.Select(DateTime.Today.AddMonths(-1), DateTime.Today))
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .Culture(new CultureInfo("es-ES")
+            .Visible(true)
+        )
+        ))
     %>
-        
+
+
+### Select(`System.Nullable<System.DateTime>,System.Nullable<System.DateTime>`)
+Sets the selection range
 
 
 #### Parameters
@@ -286,18 +286,15 @@ The selection range end.
 
 
 
-### Select(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder\>)
-Configures the selection
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().StockChart(Model)
-        .Name("StockChart")
-        .CategoryAxis(axis => axis.Select(select =>
-        select.Mousewheel(mw => mw.Reverse())
-        )
+    .Name("StockChart")
+    .CategoryAxis(axis => axis.Select(DateTime.Today.AddMonths(-1), DateTime.Today))
     %>
-        
+
+
+### Select(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder>`)
+Configures the selection
 
 
 #### Parameters
@@ -306,6 +303,15 @@ Configures the selection
 The configuration action.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().StockChart(Model)
+    .Name("StockChart")
+    .CategoryAxis(axis => axis.Select(select =>
+        select.Mousewheel(mw => mw.Reverse())
+        ))
+    %>
 
 
 

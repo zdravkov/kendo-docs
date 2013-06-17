@@ -11,21 +11,8 @@ Defines the fluent interface for configuring the ChartAxisTitle.
 
 ## Methods
 
-### Text(System.String)
+### Text(`System.String`)
 Sets the axis title text.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Title(title => title
-        .Text("Axis")
-        );
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -36,21 +23,20 @@ The text of the axis title.
 
 
 
-### Font(System.String)
-Sets the axis title font.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Font("16px Arial,Helvetica,sans-serif")
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Text("Axis")
+                );
+            )
+            .Render();
+            %>
+
+
+### Font(`System.String`)
+Sets the axis title font.
 
 
 #### Parameters
@@ -61,21 +47,20 @@ The axis title font (CSS format).
 
 
 
-### Background(System.String)
-Sets the axis title background color.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Background("red")
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Font("16px Arial,Helvetica,sans-serif")
+                );
+            )
+            .Render();
+            %>
+
+
+### Background(`System.String`)
+Sets the axis title background color.
 
 
 #### Parameters
@@ -86,21 +71,20 @@ The axis background color.
 
 
 
-### Color(System.String)
-Sets the axis title text color.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Color("red")
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Background("red")
+                );
+            )
+            .Render();
+            %>
+
+
+### Color(`System.String`)
+Sets the axis title text color.
 
 
 #### Parameters
@@ -111,21 +95,20 @@ The axis text color.
 
 
 
-### Position(Kendo.Mvc.UI.ChartAxisTitlePosition)
-Sets the axis title position.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Position(ChartTitlePosition.Center)
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Color("red")
+                );
+            )
+            .Render();
+            %>
+
+
+### Position(`Kendo.Mvc.UI.ChartAxisTitlePosition`)
+Sets the axis title position.
 
 
 #### Parameters
@@ -136,21 +119,20 @@ The axis title position.
 
 
 
-### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
-Sets the axis title margin.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Margin(20, 20, 20, 20)
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Position(ChartTitlePosition.Center)
+                );
+            )
+            .Render();
+            %>
+
+
+### Margin(`System.Int32,System.Int32,System.Int32,System.Int32`)
+Sets the axis title margin.
 
 
 #### Parameters
@@ -170,21 +152,20 @@ The axis title left margin.
 
 
 
-### Margin(System.Int32)
-Sets the axis title margin.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Margin(20)
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Margin(20, 20, 20, 20)
+                );
+            )
+            .Render();
+            %>
+
+
+### Margin(`System.Int32`)
+Sets the axis title margin.
 
 
 #### Parameters
@@ -195,21 +176,20 @@ The axis title margin.
 
 
 
-### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
-Sets the axis title padding.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Padding(20, 20, 20, 20)
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Margin(20)
+                );
+            )
+            .Render();
+            %>
+
+
+### Padding(`System.Int32,System.Int32,System.Int32,System.Int32`)
+Sets the axis title padding.
 
 
 #### Parameters
@@ -229,21 +209,20 @@ The axis title left padding.
 
 
 
-### Padding(System.Int32)
-Sets the axis title padding
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Padding(20)
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Padding(20, 20, 20, 20)
+                );
+            )
+            .Render();
+            %>
+
+
+### Padding(`System.Int32`)
+Sets the axis title padding
 
 
 #### Parameters
@@ -254,21 +233,20 @@ The axis title padding.
 
 
 
-### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets the axis title border
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .CategoryAxis(axis => axis
-        .Title(title => title
-        .Border(1, "#000", ChartDashType.Dot)
-        );
-        )
-        .Render();
-    %>
-        
+            .Title(title => title
+                .Padding(20)
+                );
+            )
+            .Render();
+            %>
+
+
+### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets the axis title border
 
 
 #### Parameters
@@ -285,7 +263,19 @@ The axis title dash type.
 
 
 
-### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .CategoryAxis(axis => axis
+            .Title(title => title
+                .Border(1, "#000", ChartDashType.Dot)
+                );
+            )
+            .Render();
+            %>
+
+
+### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
 Configures the title border
 
 
@@ -297,21 +287,9 @@ The border configuration action
 
 
 
-### Opacity(System.Double)
+
+### Opacity(`System.Double`)
 Sets the axis title opacity.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .CategoryAxis(axis => axis
-        .Title(title => title
-        .Opacity(0.5)
-        );
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -321,6 +299,18 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
             The default value is 1.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .CategoryAxis(axis => axis
+            .Title(title => title
+                .Opacity(0.5)
+                );
+            )
+            .Render();
+            %>
 
 
 

@@ -11,16 +11,8 @@ Defines the fluent interface for configuring area series.
 
 ## Methods
 
-### Stack(System.Boolean)
+### Stack(`System.Boolean`)
 Sets a value indicating if the areas should be stacked.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Area(s => s.Sales).Stack(true))
-    %>
-        
 
 
 #### Parameters
@@ -31,17 +23,16 @@ A value indicating if the areas should be stacked.
 
 
 
-### Aggregate(Kendo.Mvc.UI.ChartSeriesAggregate)
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.Area(s => s.Sales).Stack(true))
+    %>
+
+
+### Aggregate(`Kendo.Mvc.UI.ChartSeriesAggregate`)
 Sets the aggregate function for date series.
             This function is used when a category (an year, month, etc.) contains two or more points.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Area(s => s.Sales).Aggregate())
-    %>
-        
 
 
 #### Parameters
@@ -52,22 +43,15 @@ Aggregate function name.
 
 
 
-### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder\>)
-Configures the area chart labels.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
-        .Area(s => s.Sales)
-        .Labels(labels => labels
-        .Position(ChartBarLabelsPosition.Above)
-        .Visible(true)
-        );
-        )
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.Area(s => s.Sales).Aggregate())
     %>
-        
+
+
+### Labels(`System.Action<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>`)
+Configures the area chart labels.
 
 
 #### Parameters
@@ -78,19 +62,21 @@ The configuration action.
 
 
 
-### Labels(System.Boolean)
-Sets the visibility of area chart labels.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
+    .Name("Chart")
+    .Series(series => series
         .Area(s => s.Sales)
-        .Labels(true);
+        .Labels(labels => labels
+            .Position(ChartBarLabelsPosition.Above)
+            .Visible(true)
+            );
         )
     %>
-        
+
+
+### Labels(`System.Boolean`)
+Sets the visibility of area chart labels.
 
 
 #### Parameters
@@ -101,20 +87,18 @@ The visibility. The default value is false.
 
 
 
-### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Configures the area chart line.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
         .Area(s => s.Sales)
-        .Line(2, "red", ChartDashType.Dot)
-        )
-        .Render();
+        .Labels(true);
+    )
     %>
-        
+
+
+### Line(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Configures the area chart line.
 
 
 #### Parameters
@@ -131,20 +115,19 @@ The line dashType.
 
 
 
-### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
-Configures the area chart line.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
-        .Area(s => s.Sales)
-        .Line(line => line.Opacity(0.2))
+            .Area(s => s.Sales)
+            .Line(2, "red", ChartDashType.Dot)
         )
         .Render();
     %>
-        
+
+
+### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>`)
+Configures the area chart line.
 
 
 #### Parameters
@@ -155,21 +138,19 @@ The configuration action.
 
 
 
-### Markers(System.Action\<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder\>)
-Configures the area chart markers.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
-        .Area(s => s.Sales)
-        .Markers(markers => markers
-        .Type(ChartMarkerShape.Triangle)
-        );
+            .Area(s => s.Sales)
+            .Line(line => line.Opacity(0.2))
         )
+        .Render();
     %>
-        
+
+
+### Markers(`System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>`)
+Configures the area chart markers.
 
 
 #### Parameters
@@ -180,19 +161,20 @@ The configuration action.
 
 
 
-### Markers(System.Boolean)
-Sets the visibility of area chart markers.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
+    .Name("Chart")
+    .Series(series => series
         .Area(s => s.Sales)
-        .Markers(true);
+        .Markers(markers => markers
+            .Type(ChartMarkerShape.Triangle)
+            );
         )
     %>
-        
+
+
+### Markers(`System.Boolean`)
+Sets the visibility of area chart markers.
 
 
 #### Parameters
@@ -203,19 +185,18 @@ The visibility. The default value is true.
 
 
 
-### MissingValues(Kendo.Mvc.UI.ChartAreaMissingValues)
-Configures the behavior for handling missing values in area series.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
+    .Name("Chart")
+    .Series(series => series
         .Area(s => s.Sales)
-        .MissingValues(ChartAreaMissingValues.Interpolate);
-        )
+        .Markers(true);
+    )
     %>
-        
+
+
+### MissingValues(`Kendo.Mvc.UI.ChartAreaMissingValues`)
+Configures the behavior for handling missing values in area series.
 
 
 #### Parameters
@@ -224,6 +205,16 @@ Configures the behavior for handling missing values in area series.
 The missing values behavior. The default is to leave gaps.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
+        .Area(s => s.Sales)
+        .MissingValues(ChartAreaMissingValues.Interpolate);
+    )
+    %>
 
 
 

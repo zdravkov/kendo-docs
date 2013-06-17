@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-seriesItem-markers\>
 
-Marker options.** Applicable to area, line, scatter and scatterLine series **
+The chart series marker configuration.
 
 #### Example
     <kendo:chart-seriesItem>
@@ -18,7 +18,7 @@ Marker options.** Applicable to area, line, scatter and scatterLine series **
 
 ### background `String`
 
-The background color of the current series markers.
+The background color of the series markers.
 
 #### Example
     <kendo:chart-seriesItem-markers background="background">
@@ -42,7 +42,7 @@ The rotation angle of the markers.
 
 ### size `float`
 
-The marker size.
+The marker size in pixels.
 
 #### Example
     <kendo:chart-seriesItem-markers size="size">
@@ -50,7 +50,10 @@ The marker size.
 
 ### type `String`
 
-Configures the markers shape type.
+The markers shape.The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
 
 #### Example
     <kendo:chart-seriesItem-markers type="type">
@@ -58,7 +61,7 @@ Configures the markers shape type.
 
 ### visible `boolean`
 
-The markers visibility.
+If set to true the chart will display the series markers. By default chart series markers are not displayed.
 
 #### Example
     <kendo:chart-seriesItem-markers visible="visible">
@@ -84,7 +87,8 @@ More documentation is available at [kendo:chart-seriesItem-markers-border](chart
 
 ### background `String`
 
-The background color of the current series markers.
+The background color of the series markers.
+
 
 #### Example
     <kendo:chart-seriesItem-markers background="handle_background">
@@ -97,7 +101,8 @@ The background color of the current series markers.
 
 ### size `String`
 
-The marker size.
+The marker size in pixels.
+
 
 #### Example
     <kendo:chart-seriesItem-markers size="handle_size">
@@ -110,7 +115,11 @@ The marker size.
 
 ### type `String`
 
-Configures the markers shape type.
+The markers shape.The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
 
 #### Example
     <kendo:chart-seriesItem-markers type="handle_type">
@@ -123,7 +132,8 @@ Configures the markers shape type.
 
 ### visible `String`
 
-The markers visibility.
+If set to true the chart will display the series markers. By default chart series markers are not displayed.
+
 
 #### Example
     <kendo:chart-seriesItem-markers visible="handle_visible">
@@ -138,6 +148,7 @@ The markers visibility.
 
 The rotation angle of the markers.
 
+
 #### Example
     <kendo:chart-seriesItem-markers rotation="handle_rotation">
     </kendo:chart-seriesItem-markers>
@@ -151,7 +162,8 @@ The rotation angle of the markers.
 
 ### kendo:chart-seriesItem-markers-background
 
-The background color of the current series markers.
+The background color of the series markers.
+
 
 #### Example
     <kendo:chart-seriesItem-markers>
@@ -166,7 +178,8 @@ The background color of the current series markers.
 
 ### kendo:chart-seriesItem-markers-size
 
-The marker size.
+The marker size in pixels.
+
 
 #### Example
     <kendo:chart-seriesItem-markers>
@@ -181,7 +194,11 @@ The marker size.
 
 ### kendo:chart-seriesItem-markers-type
 
-Configures the markers shape type.
+The markers shape.The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
 
 #### Example
     <kendo:chart-seriesItem-markers>
@@ -196,7 +213,8 @@ Configures the markers shape type.
 
 ### kendo:chart-seriesItem-markers-visible
 
-The markers visibility.
+If set to true the chart will display the series markers. By default chart series markers are not displayed.
+
 
 #### Example
     <kendo:chart-seriesItem-markers>
@@ -212,6 +230,7 @@ The markers visibility.
 ### kendo:chart-seriesItem-markers-rotation
 
 The rotation angle of the markers.
+
 
 #### Example
     <kendo:chart-seriesItem-markers>

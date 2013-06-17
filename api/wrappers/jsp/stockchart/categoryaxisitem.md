@@ -16,15 +16,6 @@ The category axis configuration options.
 
 ## Configuration Attributes
 
-### autoBaseUnitSteps `Object`
-
-Specifies the discrete baseUnitStep values when
-either baseUnit is set to "fit" or baseUnitStep is set to "auto".The default configuration is as follows:Each setting can be overriden individually.
-
-#### Example
-    <kendo:stockChart-categoryAxisItem autoBaseUnitSteps="autoBaseUnitSteps">
-    </kendo:stockChart-categoryAxisItem>
-
 ### axisCrossingValue `Object`
 
 Category index at which the first value axis crosses this axis. (Only for object)Category indicies at which the value axes cross the category axis. (Only for array)Note: Specify an index greater than or equal to the number
@@ -36,11 +27,9 @@ of categories to denote the far end of the axis.
 
 ### baseUnit `String`
 
-The base time interval for the axis.
-The default baseUnit is determined automatically from the minimum difference
-between subsequent categories. Available options:Setting baseUnit to "fit" will set such base unit and baseUnitStep
-that the total number of categories does not exceed maxDateGroups.Series data is aggregated for the specified base unit by using the
-series.aggregate function.
+The base time interval for the date axis. The default base unit is determined automatically from the minimum difference
+between subsequent categories.The supported values are:Setting baseUnit to "fit" will set such base unit and categoryAxis.baseUnitStep
+that the total number of categories does not exceed categoryAxis.maxDateGroups.Series data is aggregated for the specified base unit using the series.aggregate function.
 
 #### Example
     <kendo:stockChart-categoryAxisItem baseUnit="baseUnit">
@@ -48,8 +37,8 @@ series.aggregate function.
 
 ### baseUnitStep `Object`
 
-Sets the step (interval) between categories in base units.
-Specifiying "auto" will set the step to such value that the total number of categories does not exceed maxDateGroups.This option is ignored if baseUnit is set to "fit".
+The step (interval) between categories in base units. Setting it to "auto" will set the step to such value
+that the total number of categories does not exceed categoryAxis.maxDateGroups.This option is ignored if categoryAxis.baseUnit is set to "fit".
 
 #### Example
     <kendo:stockChart-categoryAxisItem baseUnitStep="baseUnitStep">
@@ -102,7 +91,7 @@ set up a fixed date range.
 ### maxDateGroups `float`
 
 Specifies the maximum number of groups (categories) to produce when
-either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.
+either baseUnit is set to "fit" or baseUnitStep is set to "auto".This option is ignored in all other cases.The default value is approximately equal to [widget width, px] / 30
 
 #### Example
     <kendo:stockChart-categoryAxisItem maxDateGroups="maxDateGroups">
@@ -181,6 +170,20 @@ Use the kendo.days constants to specify the day by name.
 
 
 ##  Configuration JSP Tags
+
+### kendo:stockChart-categoryAxisItem-autoBaseUnitSteps
+
+The discrete categoryAxis.baseUnitStep values when
+either categoryAxis.baseUnit is set to "fit" or
+categoryAxis.baseUnitStep is set to "auto".
+
+More documentation is available at [kendo:stockChart-categoryAxisItem-autoBaseUnitSteps](stockchart/categoryaxisitem-autobaseunitsteps).
+
+#### Example
+
+    <kendo:stockChart-categoryAxisItem>
+        <kendo:stockChart-categoryAxisItem-autoBaseUnitSteps></kendo:stockChart-categoryAxisItem-autoBaseUnitSteps>
+    </kendo:stockChart-categoryAxisItem>
 
 ### kendo:stockChart-categoryAxisItem-crosshair
 

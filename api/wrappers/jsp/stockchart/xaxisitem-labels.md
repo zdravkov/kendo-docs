@@ -156,6 +156,7 @@ More documentation is available at [kendo:stockChart-xAxisItem-labels-border](st
 
 The label template.
 
+
 #### Example
     <kendo:stockChart-xAxisItem-labels template="handle_template">
     </kendo:stockChart-xAxisItem-labels>
@@ -170,6 +171,7 @@ The label template.
 ### kendo:stockChart-xAxisItem-labels-template
 
 The label template.
+
 
 #### Example
     <kendo:stockChart-xAxisItem-labels>

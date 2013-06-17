@@ -13,7 +13,7 @@ A PHP class representing the border setting of ChartSeriesItem.
 ## Methods
 
 ### color
-The color of the border.  It defaults to the color of the current series.
+The color of the border. Accepts a valid CSS color string, including hex and rgb. By default it is set to color of the current series.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItemBorder`
@@ -37,7 +37,7 @@ The color of the border.  It defaults to the color of the current series.
     ?>
 
 ### dashType
-The dash type of the border.
+The dash type of the border.The following dash types are supported:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItemBorder`
@@ -61,7 +61,7 @@ The dash type of the border.
     ?>
 
 ### opacity
-The border opacity.
+The opacity of the border. By default the border is opaque.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItemBorder`
@@ -85,7 +85,7 @@ The border opacity.
     ?>
 
 ### width
-The width of the border.
+The width of the border in pixels.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItemBorder`

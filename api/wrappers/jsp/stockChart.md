@@ -6,7 +6,7 @@ publish: true
 ---
 
 # \<kendo:stockChart\>
-A JSP tag representing Kendo StockChart.
+A JSP wrapper for Kendo UI [StockChart](/api/dataviz/stockchart).
 
 ## Configuration Attributes
 
@@ -210,6 +210,9 @@ More documentation is available at [kendo:stockChart-yAxis](stockchart/yaxis).
 
 Fires when an axis label is clicked.
 
+
+For additional information check the [axisLabelClick](/api/web/stockchart#events-axisLabelClick) event documentation.
+
 #### Example
     <kendo:stockChart axisLabelClick="handle_axisLabelClick">
     </kendo:stockChart>
@@ -223,6 +226,9 @@ Fires when an axis label is clicked.
 
 Fires when an legend item is clicked.
 
+
+For additional information check the [legendItemClick](/api/web/stockchart#events-legendItemClick) event documentation.
+
 #### Example
     <kendo:stockChart legendItemClick="handle_legendItemClick">
     </kendo:stockChart>
@@ -232,10 +238,29 @@ Fires when an legend item is clicked.
         }
     </script>
 
+### legendItemHover `String`
+
+Fires when an legend item is hovered.
+
+
+For additional information check the [legendItemHover](/api/web/stockchart#events-legendItemHover) event documentation.
+
+#### Example
+    <kendo:stockChart legendItemHover="handle_legendItemHover">
+    </kendo:stockChart>
+    <script>
+        function handle_legendItemHover(e) {
+            // Code to handle the legendItemHover event.
+        }
+    </script>
+
 ### dataBound `String`
 
 Fires when the chart has received data from the data source
 and is about to render it.
+
+
+For additional information check the [dataBound](/api/web/stockchart#events-dataBound) event documentation.
 
 #### Example
     <kendo:stockChart dataBound="handle_dataBound">
@@ -250,6 +275,9 @@ and is about to render it.
 
 Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [dragStart](/api/web/stockchart#events-dragStart) event documentation.
+
 #### Example
     <kendo:stockChart dragStart="handle_dragStart">
     </kendo:stockChart>
@@ -262,6 +290,9 @@ Fires when the user has used the mouse or a swipe gesture to drag the chart.The 
 ### drag `String`
 
 Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+
+For additional information check the [drag](/api/web/stockchart#events-drag) event documentation.
 
 #### Example
     <kendo:stockChart drag="handle_drag">
@@ -276,6 +307,9 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
 
 Fires when the user stops dragging the chart.
 
+
+For additional information check the [dragEnd](/api/web/stockchart#events-dragEnd) event documentation.
+
 #### Example
     <kendo:stockChart dragEnd="handle_dragEnd">
     </kendo:stockChart>
@@ -288,6 +322,9 @@ Fires when the user stops dragging the chart.
 ### plotAreaClick `String`
 
 Fires when plot area is clicked.
+
+
+For additional information check the [plotAreaClick](/api/web/stockchart#events-plotAreaClick) event documentation.
 
 #### Example
     <kendo:stockChart plotAreaClick="handle_plotAreaClick">
@@ -302,6 +339,9 @@ Fires when plot area is clicked.
 
 Fires when chart series are clicked.
 
+
+For additional information check the [seriesClick](/api/web/stockchart#events-seriesClick) event documentation.
+
 #### Example
     <kendo:stockChart seriesClick="handle_seriesClick">
     </kendo:stockChart>
@@ -314,6 +354,9 @@ Fires when chart series are clicked.
 ### seriesHover `String`
 
 Fires when chart series are hovered.
+
+
+For additional information check the [seriesHover](/api/web/stockchart#events-seriesHover) event documentation.
 
 #### Example
     <kendo:stockChart seriesHover="handle_seriesHover">
@@ -328,6 +371,9 @@ Fires when chart series are hovered.
 
 Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [zoomStart](/api/web/stockchart#events-zoomStart) event documentation.
+
 #### Example
     <kendo:stockChart zoomStart="handle_zoomStart">
     </kendo:stockChart>
@@ -340,6 +386,9 @@ Fires when the user has used the mousewheel to zoom the chart.The zoom operation
 ### zoom `String`
 
 Fires as long as the user is zooming the chart using the mousewheel.
+
+
+For additional information check the [zoom](/api/web/stockchart#events-zoom) event documentation.
 
 #### Example
     <kendo:stockChart zoom="handle_zoom">
@@ -354,6 +403,9 @@ Fires as long as the user is zooming the chart using the mousewheel.
 
 Fires when the user stops zooming the chart.
 
+
+For additional information check the [zoomEnd](/api/web/stockchart#events-zoomEnd) event documentation.
+
 #### Example
     <kendo:stockChart zoomEnd="handle_zoomEnd">
     </kendo:stockChart>
@@ -366,6 +418,9 @@ Fires when the user stops zooming the chart.
 ### selectStart `String`
 
 Fires when the user starts modifying the axis selection.The range units are:
+
+
+For additional information check the [selectStart](/api/web/stockchart#events-selectStart) event documentation.
 
 #### Example
     <kendo:stockChart selectStart="handle_selectStart">
@@ -380,6 +435,9 @@ Fires when the user starts modifying the axis selection.The range units are:
 
 Fires when the user modifies the selection.The range units are:
 
+
+For additional information check the [select](/api/web/stockchart#events-select) event documentation.
+
 #### Example
     <kendo:stockChart select="handle_select">
     </kendo:stockChart>
@@ -392,6 +450,9 @@ Fires when the user modifies the selection.The range units are:
 ### selectEnd `String`
 
 Fires when the user completes modifying the selection.
+
+
+For additional information check the [selectEnd](/api/web/stockchart#events-selectEnd) event documentation.
 
 #### Example
     <kendo:stockChart selectEnd="handle_selectEnd">
@@ -408,6 +469,9 @@ Fires when the user completes modifying the selection.
 
 Fires when an axis label is clicked.
 
+
+For additional information check the [axisLabelClick](/api/web/stockchart#events-axisLabelClick) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-axisLabelClick>
@@ -423,6 +487,9 @@ Fires when an axis label is clicked.
 
 Fires when an legend item is clicked.
 
+
+For additional information check the [legendItemClick](/api/web/stockchart#events-legendItemClick) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-legendItemClick>
@@ -434,10 +501,31 @@ Fires when an legend item is clicked.
         </kendo:stockChart-legendItemClick>
     </kendo:stockChart>
 
+### kendo:stockChart-legendItemHover
+
+Fires when an legend item is hovered.
+
+
+For additional information check the [legendItemHover](/api/web/stockchart#events-legendItemHover) event documentation.
+
+#### Example
+    <kendo:stockChart>
+        <kendo:stockChart-legendItemHover>
+            <script>
+                function(e) {
+                    // Code to handle the legendItemHover event.
+                }
+            </script>
+        </kendo:stockChart-legendItemHover>
+    </kendo:stockChart>
+
 ### kendo:stockChart-dataBound
 
 Fires when the chart has received data from the data source
 and is about to render it.
+
+
+For additional information check the [dataBound](/api/web/stockchart#events-dataBound) event documentation.
 
 #### Example
     <kendo:stockChart>
@@ -454,6 +542,9 @@ and is about to render it.
 
 Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [dragStart](/api/web/stockchart#events-dragStart) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-dragStart>
@@ -468,6 +559,9 @@ Fires when the user has used the mouse or a swipe gesture to drag the chart.The 
 ### kendo:stockChart-drag
 
 Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+
+
+For additional information check the [drag](/api/web/stockchart#events-drag) event documentation.
 
 #### Example
     <kendo:stockChart>
@@ -484,6 +578,9 @@ Fires as long as the user is dragging the chart using the mouse or swipe gesture
 
 Fires when the user stops dragging the chart.
 
+
+For additional information check the [dragEnd](/api/web/stockchart#events-dragEnd) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-dragEnd>
@@ -498,6 +595,9 @@ Fires when the user stops dragging the chart.
 ### kendo:stockChart-plotAreaClick
 
 Fires when plot area is clicked.
+
+
+For additional information check the [plotAreaClick](/api/web/stockchart#events-plotAreaClick) event documentation.
 
 #### Example
     <kendo:stockChart>
@@ -514,6 +614,9 @@ Fires when plot area is clicked.
 
 Fires when chart series are clicked.
 
+
+For additional information check the [seriesClick](/api/web/stockchart#events-seriesClick) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-seriesClick>
@@ -528,6 +631,9 @@ Fires when chart series are clicked.
 ### kendo:stockChart-seriesHover
 
 Fires when chart series are hovered.
+
+
+For additional information check the [seriesHover](/api/web/stockchart#events-seriesHover) event documentation.
 
 #### Example
     <kendo:stockChart>
@@ -544,6 +650,9 @@ Fires when chart series are hovered.
 
 Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
 
+
+For additional information check the [zoomStart](/api/web/stockchart#events-zoomStart) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-zoomStart>
@@ -558,6 +667,9 @@ Fires when the user has used the mousewheel to zoom the chart.The zoom operation
 ### kendo:stockChart-zoom
 
 Fires as long as the user is zooming the chart using the mousewheel.
+
+
+For additional information check the [zoom](/api/web/stockchart#events-zoom) event documentation.
 
 #### Example
     <kendo:stockChart>
@@ -574,6 +686,9 @@ Fires as long as the user is zooming the chart using the mousewheel.
 
 Fires when the user stops zooming the chart.
 
+
+For additional information check the [zoomEnd](/api/web/stockchart#events-zoomEnd) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-zoomEnd>
@@ -588,6 +703,9 @@ Fires when the user stops zooming the chart.
 ### kendo:stockChart-selectStart
 
 Fires when the user starts modifying the axis selection.The range units are:
+
+
+For additional information check the [selectStart](/api/web/stockchart#events-selectStart) event documentation.
 
 #### Example
     <kendo:stockChart>
@@ -604,6 +722,9 @@ Fires when the user starts modifying the axis selection.The range units are:
 
 Fires when the user modifies the selection.The range units are:
 
+
+For additional information check the [select](/api/web/stockchart#events-select) event documentation.
+
 #### Example
     <kendo:stockChart>
         <kendo:stockChart-select>
@@ -618,6 +739,9 @@ Fires when the user modifies the selection.The range units are:
 ### kendo:stockChart-selectEnd
 
 Fires when the user completes modifying the selection.
+
+
+For additional information check the [selectEnd](/api/web/stockchart#events-selectEnd) event documentation.
 
 #### Example
     <kendo:stockChart>

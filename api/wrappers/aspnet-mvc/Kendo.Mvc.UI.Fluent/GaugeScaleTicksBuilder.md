@@ -11,17 +11,8 @@ Defines the fluent interface for configuring GaugeScaleTicks.
 
 ## Methods
 
-### Color(System.String)
+### Color(`System.String`)
 Sets the ticks color
-
-#### Example
-
-    <% Html.Kendo().LinearGauge()
-        .Name("linearGauge")
-        .Scale(scale => scale.MajorTicks(ticks => ticks.Color("#f00")))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -32,17 +23,16 @@ The ticks color (CSS format).
 
 
 
-### Width(System.Int32)
-Sets the ticks width
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
-        .Scale(scale => scale.MajorTicks(ticks => ticks.Width(2)))
+        .Scale(scale => scale.MajorTicks(ticks => ticks.Color("#f00")))
         .Render();
     %>
-        
+
+
+### Width(`System.Int32`)
+Sets the ticks width
 
 
 #### Parameters
@@ -53,17 +43,16 @@ The ticks width.
 
 
 
-### Size(System.Int32)
-Sets the ticks size
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
-        .Scale(scale => scale.MajorTicks(ticks => ticks.Size(2)))
+        .Scale(scale => scale.MajorTicks(ticks => ticks.Width(2)))
         .Render();
     %>
-        
+
+
+### Size(`System.Int32`)
+Sets the ticks size
 
 
 #### Parameters
@@ -74,17 +63,16 @@ The ticks size.
 
 
 
-### DashType(Kendo.Mvc.UI.ChartDashType)
-Sets the ticks dashType
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
-        .Scale(scale => scale.MajorTicks(ticks => ticks.DashType(ChartDashType.Dot)))
+        .Scale(scale => scale.MajorTicks(ticks => ticks.Size(2)))
         .Render();
     %>
-        
+
+
+### DashType(`Kendo.Mvc.UI.ChartDashType`)
+Sets the ticks dashType
 
 
 #### Parameters
@@ -95,17 +83,16 @@ The ticks dashType.
 
 
 
-### Visible(System.Boolean)
-Sets the ticks visibility
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
-        .Scale(scale => scale.MajorTicks(ticks => ticks.Visible(false)))
+        .Scale(scale => scale.MajorTicks(ticks => ticks.DashType(ChartDashType.Dot)))
         .Render();
     %>
-        
+
+
+### Visible(`System.Boolean`)
+Sets the ticks visibility
 
 
 #### Parameters
@@ -114,6 +101,14 @@ Sets the ticks visibility
 The ticks visibility.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().LinearGauge()
+        .Name("linearGauge")
+        .Scale(scale => scale.MajorTicks(ticks => ticks.Visible(false)))
+        .Render();
+    %>
 
 
 

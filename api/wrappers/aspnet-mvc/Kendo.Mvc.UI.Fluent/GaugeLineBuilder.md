@@ -11,17 +11,8 @@ Defines the fluent interface for configuring GaugeLine.
 
 ## Methods
 
-### Visible(System.Boolean)
+### Visible(`System.Boolean`)
 Sets the line visibility
-
-#### Example
-
-    <% Html.Kendo().LinearGauge()
-        .Name("linearGauge")
-        .Scale(scale => scale.Line(line => line.Color("#f00")))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -30,6 +21,14 @@ Sets the line visibility
 The line visibility.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().LinearGauge()
+        .Name("linearGauge")
+        .Scale(scale => scale.Line(line => line.Color("#f00")))
+        .Render();
+    %>
 
 
 

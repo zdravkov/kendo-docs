@@ -341,6 +341,7 @@ More documentation is available at [kendo:stockChart-seriesItem-tooltip](stockch
 
 The series base color.
 
+
 #### Example
     <kendo:stockChart-seriesItem color="handle_color">
     </kendo:stockChart-seriesItem>
@@ -353,6 +354,7 @@ The series base color.
 ### downColor `String`
 
 The series color when open value is smoller then close value.** Available for candlestick series only **
+
 
 #### Example
     <kendo:stockChart-seriesItem downColor="handle_downColor">
@@ -369,6 +371,7 @@ The series color when open value is smoller then close value.** Available for ca
 
 The series base color.
 
+
 #### Example
     <kendo:stockChart-seriesItem>
         <kendo:stockChart-seriesItem-color>
@@ -383,6 +386,7 @@ The series base color.
 ### kendo:stockChart-seriesItem-downColor
 
 The series color when open value is smoller then close value.** Available for candlestick series only **
+
 
 #### Example
     <kendo:stockChart-seriesItem>

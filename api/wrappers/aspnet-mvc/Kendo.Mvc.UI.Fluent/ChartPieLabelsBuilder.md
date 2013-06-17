@@ -11,23 +11,8 @@ Defines the fluent interface for configuring the chart data labels.
 
 ## Methods
 
-### Align(Kendo.Mvc.UI.ChartPieLabelsAlign)
+### Align(`Kendo.Mvc.UI.ChartPieLabelsAlign`)
 Sets the labels align
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
-        .Pie(p => p.Sales)
-        .Labels(labels => labels
-        .Align(ChartPieLabelsAlign.Column)
-        .Visible(true)
-        );
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -38,23 +23,22 @@ The labels align.
 
 
 
-### Distance(System.Int32)
-Sets the labels distance
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
-        .Pie(p => p.Sales)
-        .Labels(labels => labels
-        .Distance(20)
-        .Visible(true)
-        );
-        )
-        .Render();
-    %>
-        
+            .Pie(p => p.Sales)
+            .Labels(labels => labels
+                .Align(ChartPieLabelsAlign.Column)
+                .Visible(true)
+                );
+            )
+            .Render();
+            %>
+
+
+### Distance(`System.Int32`)
+Sets the labels distance
 
 
 #### Parameters
@@ -65,23 +49,22 @@ The labels distance.
 
 
 
-### Position(Kendo.Mvc.UI.ChartPieLabelsPosition)
-Sets the labels position
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
-        .Pie(p => p.Sales)
-        .Labels(labels => labels
-        .Position(ChartPieLabelsPosition.Center)
-        .Visible(true)
-        );
-        )
-        .Render();
-    %>
-        
+            .Pie(p => p.Sales)
+            .Labels(labels => labels
+                .Distance(20)
+                .Visible(true)
+                );
+            )
+            .Render();
+            %>
+
+
+### Position(`Kendo.Mvc.UI.ChartPieLabelsPosition`)
+Sets the labels position
 
 
 #### Parameters
@@ -90,6 +73,20 @@ Sets the labels position
 The labels position.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Pie(p => p.Sales)
+            .Labels(labels => labels
+                .Position(ChartPieLabelsPosition.Center)
+                .Visible(true)
+                );
+            )
+            .Render();
+            %>
 
 
 

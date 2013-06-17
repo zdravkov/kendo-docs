@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:chart-valueAxisItem-majorTicks\>
 
-The major ticks of the axis.
+The configuration of the value axis major ticks.
 
 #### Example
     <kendo:chart-valueAxisItem>
@@ -16,9 +16,17 @@ The major ticks of the axis.
 
 ## Configuration Attributes
 
+### color `String`
+
+The color of the value axis major ticks lines. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example
+    <kendo:chart-valueAxisItem-majorTicks color="color">
+    </kendo:chart-valueAxisItem-majorTicks>
+
 ### size `float`
 
-The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
+The length of the tick line in pixels.
 
 #### Example
     <kendo:chart-valueAxisItem-majorTicks size="size">
@@ -26,7 +34,7 @@ The axis major tick size. This is the length of the line in pixels that is drawn
 
 ### visible `boolean`
 
-The visibility of the major ticks.
+If set to true the chart will display the value axis major ticks. By default the value axis major ticks are visible.
 
 #### Example
     <kendo:chart-valueAxisItem-majorTicks visible="visible">

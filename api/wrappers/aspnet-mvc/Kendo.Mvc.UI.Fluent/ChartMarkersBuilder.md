@@ -11,22 +11,8 @@ Defines the fluent interface for configuring the chart data labels.
 
 ## Methods
 
-### Type(Kendo.Mvc.UI.ChartMarkerShape)
+### Type(`Kendo.Mvc.UI.ChartMarkerShape`)
 Sets the markers shape type.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
-        .Line(s => s.Sales)
-        .Markers(markers => markers
-        .Type(ChartMarkerShape.Triangle)
-        );
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -37,22 +23,21 @@ The markers shape type.
 
 
 
-### Size(System.Int32)
-Sets the markers size.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
-        .Line(s => s.Sales)
-        .Markers(markers => markers
-        .Size(10)
-        );
-        )
-        .Render();
-    %>
-        
+            .Line(s => s.Sales)
+            .Markers(markers => markers
+                .Type(ChartMarkerShape.Triangle)
+                );
+            )
+            .Render();
+            %>
+
+
+### Size(`System.Int32`)
+Sets the markers size.
 
 
 #### Parameters
@@ -63,22 +48,21 @@ The markers size.
 
 
 
-### Visible(System.Boolean)
-Sets the markers visibility
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
-        .Line(s => s.Sales)
-        .Markers(markers => markers
-        .Visible(true)
-        );
-        )
-        .Render();
-    %>
-        
+            .Line(s => s.Sales)
+            .Markers(markers => markers
+                .Size(10)
+                );
+            )
+            .Render();
+            %>
+
+
+### Visible(`System.Boolean`)
+Sets the markers visibility
 
 
 #### Parameters
@@ -89,22 +73,21 @@ The markers visibility.
 
 
 
-### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets the markers border
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
         .Series(series => series
-        .Line(s => s.Sales)
-        .Markers(markers => markers
-        .Border(1, "Red", ChartDashType.Dot)
-        );
-        )
-        .Render();
-    %>
-        
+            .Line(s => s.Sales)
+            .Markers(markers => markers
+                .Visible(true)
+                );
+            )
+            .Render();
+            %>
+
+
+### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets the markers border
 
 
 #### Parameters
@@ -121,7 +104,20 @@ The markers border dash type.
 
 
 
-### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Line(s => s.Sales)
+            .Markers(markers => markers
+                .Border(1, "Red", ChartDashType.Dot)
+                );
+            )
+            .Render();
+            %>
+
+
+### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
 Configures the markers border
 
 
@@ -133,22 +129,9 @@ The border configuration action
 
 
 
-### Background(System.String)
+
+### Background(`System.String`)
 The background color of the current series markers.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
-        .Line(s => s.Sales)
-        .Markers(markers => markers
-        .Background("Red");
-        );
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -159,23 +142,21 @@ The background color of the current series markers. The background color is seri
 
 
 
-### Rotation(System.Int32)
-Sets the markers rotation angle.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
         .Line(s => s.Sales)
         .Markers(markers => markers
-        .Type(ChartMarkerShape.Triangle)
-        .Rotation(10)
-        );
+            .Background("Red");
+            );
         )
         .Render();
     %>
-        
+
+
+### Rotation(`System.Int32`)
+Sets the markers rotation angle.
 
 
 #### Parameters
@@ -184,6 +165,20 @@ Sets the markers rotation angle.
 The markers rotation angle.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Line(s => s.Sales)
+            .Markers(markers => markers
+                .Type(ChartMarkerShape.Triangle)
+                .Rotation(10)
+                );
+            )
+            .Render();
+            %>
 
 
 

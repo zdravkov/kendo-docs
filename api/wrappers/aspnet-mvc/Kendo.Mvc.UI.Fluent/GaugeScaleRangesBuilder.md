@@ -11,21 +11,8 @@ Defines the fluent interface for configuring ranges.
 
 ## Methods
 
-### From(System.Double)
+### From(`System.Double`)
 Sets the ranges start position.
-
-#### Example
-
-    <% Html.Kendo().LinearGauge()
-        .Name("linearGauge")
-        .Scale(scale => scale
-        .Ranges(ranges => ranges
-        .Add().From(1).Color("Red");
-        )
-        )
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -36,21 +23,20 @@ The ranges start position.
 
 
 
-### To(System.Double)
-Sets the ranges end position.
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
-        .Ranges(ranges => ranges
-        .Add().To(2).Color("Red");
-        )
+            .Ranges(ranges => ranges
+                .Add().From(1).Color("Red");
+            )
         )
         .Render();
     %>
-        
+
+
+### To(`System.Double`)
+Sets the ranges end position.
 
 
 #### Parameters
@@ -61,21 +47,20 @@ The ranges end position.
 
 
 
-### Color(System.String)
-Sets the ranges color
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
-        .Ranges(ranges => ranges
-        .Add().Color("Red");
-        )
+            .Ranges(ranges => ranges
+                .Add().To(2).Color("Red");
+            )
         )
         .Render();
     %>
-        
+
+
+### Color(`System.String`)
+Sets the ranges color
 
 
 #### Parameters
@@ -86,21 +71,20 @@ The ranges color.
 
 
 
-### Opacity(System.Double)
-Sets the ranges opacity
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().LinearGauge()
         .Name("linearGauge")
         .Scale(scale => scale
-        .Ranges(ranges => ranges
-        .Add().Opacity(0.5);
-        )
+            .Ranges(ranges => ranges
+                .Add().Color("Red");
+            )
         )
         .Render();
     %>
-        
+
+
+### Opacity(`System.Double`)
+Sets the ranges opacity
 
 
 #### Parameters
@@ -109,6 +93,18 @@ Sets the ranges opacity
 The ranges opacity.
 
 
+
+
+#### Example (ASPX)
+    <% Html.Kendo().LinearGauge()
+        .Name("linearGauge")
+        .Scale(scale => scale
+            .Ranges(ranges => ranges
+                .Add().Opacity(0.5);
+            )
+        )
+        .Render();
+    %>
 
 
 

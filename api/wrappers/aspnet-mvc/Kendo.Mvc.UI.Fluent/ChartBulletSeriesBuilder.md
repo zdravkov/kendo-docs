@@ -16,34 +16,25 @@ Gets or sets the series.
 
 ## Methods
 
-### Gap(System.Double)
+### Gap(`System.Double`)
 Set distance between category clusters.
             
             A value of 1 means that there is a total of 1 bullet width / vertical bullet height between categories.
             The distance is distributed evenly on each side.
             The default value is 1.5
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Gap(1))
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target).Gap(1))
     %>
-        
 
 
-
-
-### Spacing(System.Double)
+### Spacing(`System.Double`)
 Sets a value indicating the distance between bullets / categories.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Spacing(1))
-    %>
-        
 
 
 #### Parameters
@@ -55,17 +46,15 @@ Value of 1 means that the distance between bullets is equal to their width.
 
 
 
-### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets the bullets border.
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Border("1", "#000", ChartDashType.Dot))
-        .Render();
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target).Spacing(1))
     %>
-        
+
+
+### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets the bullets border.
 
 
 #### Parameters
@@ -82,17 +71,16 @@ The bullets border dash type.
 
 
 
-### Overlay(Kendo.Mvc.UI.ChartBarSeriesOverlay)
-Sets the bullet effects overlay
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Overlay(ChartBarSeriesOverlay.None))
+        .Series(series => series.Bullet(s => s.Current, s => s.Target).Border("1", "#000", ChartDashType.Dot))
         .Render();
     %>
-        
+
+
+### Overlay(`Kendo.Mvc.UI.ChartBarSeriesOverlay`)
+Sets the bullet effects overlay
 
 
 #### Parameters
@@ -103,16 +91,16 @@ The bullet effects overlay. The default is ChartBarSeriesOverlay.Glass
 
 
 
-### Name(System.String)
-Sets the series title displayed in the legend.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Name("Sales"))
+        .Series(series => series.Bullet(s => s.Current, s => s.Target).Overlay(ChartBarSeriesOverlay.None))
+        .Render();
     %>
-        
+
+
+### Name(`System.String`)
+Sets the series title displayed in the legend.
 
 
 #### Parameters
@@ -123,16 +111,15 @@ The title.
 
 
 
-### Opacity(System.Double)
-Sets the series opacity.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Opacity(0.5))
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target).Name("Sales"))
     %>
-        
+
+
+### Opacity(`System.Double`)
+Sets the series opacity.
 
 
 #### Parameters
@@ -144,17 +131,15 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
 
 
 
-### Color(System.String)
-Sets the bullet fill color
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Color("Red"))
-        .Render();
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target).Opacity(0.5))
     %>
-        
+
+
+### Color(`System.String`)
+Sets the bullet fill color
 
 
 #### Parameters
@@ -165,21 +150,16 @@ The bar bullet color (CSS syntax).
 
 
 
-### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
-Configure the data point tooltip for the series.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
         .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target)
-        .Tooltip(tooltip =>
-        {
-        tooltip.Visible(true).Format("{0:C}");
-        })
-        )
+        .Series(series => series.Bullet(s => s.Current, s => s.Target).Color("Red"))
+        .Render();
     %>
-        
+
+
+### Tooltip(`System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>`)
+Configure the data point tooltip for the series.
 
 
 #### Parameters
@@ -190,16 +170,20 @@ Use the configurator to set data tooltip options.
 
 
 
-### Tooltip(System.Boolean)
-Sets the data point tooltip visibility.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Tooltip(true))
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target)
+        .Tooltip(tooltip =>
+        {
+            tooltip.Visible(true).Format("{0:C}");
+        })
+    )
     %>
-        
+
+
+### Tooltip(`System.Boolean`)
+Sets the data point tooltip visibility.
 
 
 #### Parameters
@@ -211,19 +195,15 @@ A value indicating if the data point tooltip should be displayed.
 
 
 
-### Axis(System.String)
-Sets the axis name to use for this series.
-
-#### Example
-
-    <%= Html.Kendo().Chart(Model)
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target).Name("Sales").Axis("secondary"))
-        .ValueAxis(axis => axis.Numeric())
-        .ValueAxis(axis => axis.Numeric("secondary"))
-        .CategoryAxis(axis => axis.AxisCrossingValue(0, 10))
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target).Tooltip(true))
     %>
-        
+
+
+### Axis(`System.String`)
+Sets the axis name to use for this series.
 
 
 #### Parameters
@@ -234,21 +214,18 @@ The axis name for this series.
 
 
 
-### Target(System.Action\<Kendo.Mvc.UI.Fluent.ChartBulletTargetBuilder\>)
-Configure the data point tooltip for the series.
-
-#### Example
-
-    <%= Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.Bullet(s => s.Current, s => s.Target)
-        .Tooltip(tooltip =>
-        {
-        tooltip.Visible(true).Format("{0:C}");
-        })
-        )
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target).Name("Sales").Axis("secondary"))
+    .ValueAxis(axis => axis.Numeric())
+    .ValueAxis(axis => axis.Numeric("secondary"))
+    .CategoryAxis(axis => axis.AxisCrossingValue(0, 10))
     %>
-        
+
+
+### Target(`System.Action<Kendo.Mvc.UI.Fluent.ChartBulletTargetBuilder>`)
+Configure the data point tooltip for the series.
 
 
 #### Parameters
@@ -257,6 +234,18 @@ Configure the data point tooltip for the series.
 Use the configurator to set data tooltip options.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series.Bullet(s => s.Current, s => s.Target)
+        .Tooltip(tooltip =>
+        {
+            tooltip.Visible(true).Format("{0:C}");
+        })
+    )
+    %>
 
 
 

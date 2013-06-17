@@ -338,6 +338,7 @@ More documentation is available at [kendo:sparkline-seriesItem-tooltip](sparklin
 
 The series base color.
 
+
 #### Example
     <kendo:sparkline-seriesItem color="handle_color">
     </kendo:sparkline-seriesItem>
@@ -352,6 +353,7 @@ The series base color.
 ### kendo:sparkline-seriesItem-color
 
 The series base color.
+
 
 #### Example
     <kendo:sparkline-seriesItem>

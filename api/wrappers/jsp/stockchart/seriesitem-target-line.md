@@ -31,6 +31,7 @@ The width of the line.
 
 The width of the line.
 
+
 #### Example
     <kendo:stockChart-seriesItem-target-line width="handle_width">
     </kendo:stockChart-seriesItem-target-line>
@@ -45,6 +46,7 @@ The width of the line.
 ### kendo:stockChart-seriesItem-target-line-width
 
 The width of the line.
+
 
 #### Example
     <kendo:stockChart-seriesItem-target-line>
