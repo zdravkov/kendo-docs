@@ -26,7 +26,7 @@ The purpose of number formatting is to convert a Number object to a human readab
 - *c* for currency
 
 	kendo.culture("en-US");
-    kendo.toString(1234.567, "c"); //$1,234.57
+    kendo.toString(1234.567, "c0"); //$1,234.57
 
 	kendo.culture("en-US");
 	kendo.toString(1234.567, "c"); //$1,235
