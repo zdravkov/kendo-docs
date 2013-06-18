@@ -1602,6 +1602,33 @@ The fields which can be used in the template are:
     });
     </script>
 
+### views.selected `Boolean` *(default: false)*
+
+If set to `true` the view will be initially selected by the scheduler widget.
+
+> If more than one view is selected then last of them will prevail.
+
+#### Example - select a view
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        { type: "day" },
+        { type: "month", selected: true }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### views.selectedDateFormat `String`
 
 The format used to display the selected date. Uses [kendo.format](/api/framework/kendo#methods-format).
@@ -2024,132 +2051,6 @@ The view type to select.
 
 ## Events
 
-### remove
-
-Fired when the user clicks the "destroy" button.
-
-The event handler function context (available via the `this` keyword) will be set to the widget instance.
-
-#### Event Data
-
-##### e.event `kendo.data.SchedulerEvent`
-
-The event which is being removed.
-
-##### e.preventDefault `Function`
-
-If invoked prevents the remove action.
-
-##### e.sender `kendo.ui.Scheduler`
-
-The widget instance which fired the event.
-
-#### Example - subscribe to the "remove" event during initialization
-    <div id="scheduler"></div>
-    <script>
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [ "day", "month" ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ],
-      remove: function(e) {
-        console.log("Removing", e.event.title);
-      }
-    });
-    </script>
-
-#### Example - subscribe to the "remove" event after initialization
-
-    <div id="scheduler"></div>
-    <script>
-    function scheduler_remove(e) {
-      console.log("Removing", e.event.title);
-    }
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [ "day", "month" ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ]
-    });
-    var scheduler = $("#scheduler").data("kendoScheduler");
-    scheduler.bind("remove", scheduler_remove);
-    </script>
-
-### edit
-
-Fired when the user opens a scheduler event in edit mode by or creates a new event.
-
-The event handler function context (available via the `this` keyword) will be set to the widget instance.
-
-#### Event Data
-
-##### e.container `jQuery`
-
-The jQuery object representing the container element. That element contains the editing UI.
-
-##### e.event `kendo.data.SchedulerEvent`
-
-The event which is being edited.
-
-##### e.sender `kendo.ui.Scheduler`
-
-The widget instance which fired the event.
-
-#### Example - subscribe to the "edit" event during initialization
-    <div id="scheduler"></div>
-    <script>
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [ "day", "month" ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ],
-      edit: function(e) {
-        console.log("Editing", e.event.title);
-      }
-    });
-    </script>
-
-#### Example - subscribe to the "edit" event after initialization
-
-    <div id="scheduler"></div>
-    <script>
-    function scheduler_edit(e) {
-      console.log("Editing", e.event.title);
-    }
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [ "day", "month" ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ]
-    });
-    var scheduler = $("#scheduler").data("kendoScheduler");
-    scheduler.bind("edit", scheduler_edit);
-    </script>
-
 ### cancel
 
 Fired when the user cancels editing by clicking the "cancel" button.
@@ -2215,73 +2116,6 @@ The widget instance which fired the event.
     });
     var scheduler = $("#scheduler").data("kendoScheduler");
     scheduler.bind("cancel", scheduler_cancel);
-    </script>
-
-### save
-
-Fired when the user saves a scheduler event by clicking the "save" button.
-
-The event handler function context (available via the `this` keyword) will be set to the widget instance.
-
-#### Event Data
-
-##### e.container `jQuery`
-
-The jQuery object representing the container element. That element contains the editing UI.
-
-##### e.event `kendo.data.SchedulerEvent`
-
-The event which is saved.
-
-##### e.preventDefault `Function`
-
-If invoked prevents the save action.
-
-##### e.sender `kendo.ui.Scheduler`
-
-The widget instance which fired the event.
-
-#### Example - subscribe to the "save" event during initialization
-    <div id="scheduler"></div>
-    <script>
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [ "day", "month" ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ],
-      save: function(e) {
-        console.log("Saving", e.event.title);
-      }
-    });
-    </script>
-
-#### Example - subscribe to the "save" event after initialization
-
-    <div id="scheduler"></div>
-    <script>
-    function scheduler_save(e) {
-      console.log("Saving", e.event.title);
-    }
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      views: [ "day", "month" ],
-      dataSource: [
-        {
-          id: 1,
-          start: new Date("2013/6/6 08:00 AM"),
-          end: new Date("2013/6/6 09:00 AM"),
-          title: "Interview"
-        }
-      ]
-    });
-    var scheduler = $("#scheduler").data("kendoScheduler");
-    scheduler.bind("save", scheduler_save);
     </script>
 
 ### dataBinding
@@ -2392,5 +2226,198 @@ The widget instance which fired the event.
     });
     var scheduler = $("#scheduler").data("kendoScheduler");
     scheduler.bind("dataBound", scheduler_dataBound);
+    </script>
+
+### edit
+
+Fired when the user opens a scheduler event in edit mode by or creates a new event.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.event `kendo.data.SchedulerEvent`
+
+The event which is being edited.
+
+##### e.sender `kendo.ui.Scheduler`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "edit" event during initialization
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ],
+      edit: function(e) {
+        console.log("Editing", e.event.title);
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "edit" event after initialization
+
+    <div id="scheduler"></div>
+    <script>
+    function scheduler_edit(e) {
+      console.log("Editing", e.event.title);
+    }
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.bind("edit", scheduler_edit);
+    </script>
+
+### remove
+
+Fired when the user clicks the "destroy" button.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.event `kendo.data.SchedulerEvent`
+
+The event which is being removed.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the remove action.
+
+##### e.sender `kendo.ui.Scheduler`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "remove" event during initialization
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ],
+      remove: function(e) {
+        console.log("Removing", e.event.title);
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "remove" event after initialization
+
+    <div id="scheduler"></div>
+    <script>
+    function scheduler_remove(e) {
+      console.log("Removing", e.event.title);
+    }
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.bind("remove", scheduler_remove);
+    </script>
+
+### save
+
+Fired when the user saves a scheduler event by clicking the "save" button.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.event `kendo.data.SchedulerEvent`
+
+The event which is saved.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the save action.
+
+##### e.sender `kendo.ui.Scheduler`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "save" event during initialization
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ],
+      save: function(e) {
+        console.log("Saving", e.event.title);
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "save" event after initialization
+
+    <div id="scheduler"></div>
+    <script>
+    function scheduler_save(e) {
+      console.log("Saving", e.event.title);
+    }
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.bind("save", scheduler_save);
     </script>
 
