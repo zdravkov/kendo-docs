@@ -37,10 +37,6 @@ To generate the Customer TreeView we use the following Razor code:
             {
                 attributes.Add("data-customer-id", item.CustomerId.Value.ToString());
             }
-            if (!String.IsNullOrEmpty(item.Path))
-            {
-                attributes.Add("data-path", item.Path);
-            }
             return attributes;
         }
     }

@@ -143,7 +143,6 @@ The following code snippets can be found in **Scripts/home.js**.
         var dataItem = e.sender.dataItem(e.node);
 
         if (!dataItem.hasChildren) {
-            window.SalesHub.setCustomerPath(node.data("path"));
             updateGridCustomerFilter(node.data("customer-id"));
         }
     };
