@@ -2036,6 +2036,10 @@ The event handler function context (available via the `this` keyword) will be se
 
 The event which is being removed.
 
+##### e.preventDefault `Function`
+
+If invoked prevents the remove action.
+
 ##### e.sender `kendo.ui.Scheduler`
 
 The widget instance which fired the event.
@@ -2162,6 +2166,10 @@ The jQuery object representing the container element. That element contains the 
 
 The event which is no longer in edit mode.
 
+##### e.preventDefault `Function`
+
+If invoked prevents the cancel action. The scheduler event remains in edit mode.
+
 ##### e.sender `kendo.ui.Scheduler`
 
 The widget instance which fired the event.
@@ -2224,6 +2232,10 @@ The jQuery object representing the container element. That element contains the 
 ##### e.event `kendo.data.SchedulerEvent`
 
 The event which is saved.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the save action.
 
 ##### e.sender `kendo.ui.Scheduler`
 
