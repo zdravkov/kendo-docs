@@ -966,6 +966,66 @@ By default the scheduler expects that field to contain a primitive value (string
     });
     </script>
 
+### timezone `String`
+
+The timezone which the scheduler will use to display the scheduler appointment dates. By default the current system timezone is used. This is an acceptable default when the
+scheduler widget is bound to local array of events. It is advisable to specify a timezone if the scheduler is bound to a remote service.
+That way all users would see the same dates and times no matter their configured system timezone.
+
+The complete list of the supported timezones is available in the [List of IANA time zones](http://en.wikipedia.org/wiki/List_of_IANA_time_zones) Wikipedia page.
+
+> The **kendo.timezones.min.js** file must be included in order to use timezones other than "Etc/UTC".
+
+#### Example - set the timezone
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+        date: new Date("2013/6/13"),
+        timezone: "Europe/London", // Use the London timezone
+        dataSource: {
+            batch: true,
+            transport: {
+                read: {
+                    url: "http://demos.kendoui.com/service/tasks",
+                    dataType: "jsonp"
+                },
+                update: {
+                    url: "http://demos.kendoui.com/service/tasks/update",
+                    dataType: "jsonp"
+                },
+                create: {
+                    url: "http://demos.kendoui.com/service/tasks/create",
+                    dataType: "jsonp"
+                },
+                destroy: {
+                    url: "http://demos.kendoui.com/service/tasks/destroy",
+                    dataType: "jsonp"
+                },
+                parameterMap: function(options, operation) {
+                    if (operation !== "read" && options.models) {
+                        return {models: kendo.stringify(options.models)};
+                    }
+                }
+            },
+            schema: {
+                model: {
+                    id: "ID",
+                    fields: {
+                        ID: { type: "number" },
+                        title: { from: "Title", defaultValue: "No title", validation: { required: true } },
+                        start: { type: "date", from: "Start" },
+                        end: { type: "date", from: "End" },
+                        description: { from: "Description" },
+                        recurrence: { from: "Recurrence" },
+                        ownerId: { from: "OwnerID", defaultValue: 1 },
+                        isAllDay: { type: "boolean", from: "IsAllDay" }
+                    }
+                }
+            }
+        }
+    });
+    </script>
+
 ### views `Array`
 
 The views displayed by the scheduler and their configuration. The array items can be either objects specifying the view configuration or strings representing the view types (assuming default configuration).
