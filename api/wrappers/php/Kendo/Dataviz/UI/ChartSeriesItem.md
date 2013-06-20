@@ -79,7 +79,7 @@ The border of the chart series.
     ?>
 
 ### categoryField
-The data item field which contains category name.
+The data item field which contains the category name or date.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`

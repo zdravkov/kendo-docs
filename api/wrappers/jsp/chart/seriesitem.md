@@ -36,7 +36,7 @@ The name of the value axis to use.
 
 ### categoryField `String`
 
-The data item field which contains category name.
+The data item field which contains the category name or date.
 
 #### Example
     <kendo:chart-seriesItem categoryField="categoryField">
