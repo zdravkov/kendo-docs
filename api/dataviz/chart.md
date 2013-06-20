@@ -6505,11 +6505,11 @@ The width of the border in pixels.
 
 ### series.categoryField `String` *(default: "category")*
 
-The data item field which contains category name.
+The data item field which contains the category name or date.
 
-> The `categoryField` option is supported when [series.type](#configuration-series.type) is set to "bubble", "donut" or "pie".
+> The points will be rendered in chronological order if the category is a date.
 
-#### Example - set the chart series category field
+#### Example - set pie series category name
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
@@ -6520,6 +6520,23 @@ The data item field which contains category name.
           data: [
             { value: 1, type: "Category 1" },
             { value: 2, type: "Category 2" },
+          ]
+        }
+      ]
+    });
+    </script>
+
+#### Example - set series date category field
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        {
+          type: "line",
+          categoryField: "date",
+          data: [
+            { value: 1, date: new Date(2012, 1, 1) },
+            { value: 2, date: new Date(2012, 1, 2) },
           ]
         }
       ]
