@@ -94,7 +94,11 @@ Specifies the function which will parse the field value. If not set default pars
 
 ##### options.fields.fieldName.type `String`
 
-Specifies the the type of the field. The available options are `"string"`, `"number"`, `"boolean"`, `"date`". The default is `"string"`.
+Specifies the type of the field. The available options are `"string"`, `"number"`, `"boolean"`, `"date`". The default is `"string"`.
+
+##### options.fields.fieldName.from `String`
+
+Specifies the field of the original record which value to be used for population of the Model field.
 
 ##### options.fields.fieldName.validation `Object`
 
