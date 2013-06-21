@@ -137,7 +137,9 @@ If the `dataSource` option is an existing [kendo.data.SchedulerDataSource](/api/
                start: { type: "date", field: "Start" },
                end: { type: "date", field: "End" },
                description: { field: "Description" },
-               recurrence: { field: "Recurrence" },
+               recurrenceId: { from: "RecurrenceID" },
+               recurrenceRule: { from: "RecurrenceRule" },
+               recurrenceException: { from: "RecurrenceException" },
                ownerId: { field: "OwnerID", defaultValue: 1 },
                isAllDay: { type: "boolean", field: "IsAllDay" }
              }
@@ -1016,7 +1018,9 @@ The complete list of the supported timezones is available in the [List of IANA t
                         start: { type: "date", from: "Start" },
                         end: { type: "date", from: "End" },
                         description: { from: "Description" },
-                        recurrence: { from: "Recurrence" },
+                        recurrenceId: { from: "RecurrenceID" },
+                        recurrenceRule: { from: "RecurrenceRule" },
+                        recurrenceException: { from: "RecurrenceException" },
                         ownerId: { from: "OwnerID", defaultValue: 1 },
                         isAllDay: { type: "boolean", from: "IsAllDay" }
                     }
