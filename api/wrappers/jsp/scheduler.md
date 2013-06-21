@@ -224,6 +224,22 @@ For additional information check the [edit](/api/web/scheduler#events-edit) even
         }
     </script>
 
+### endTime `String`
+
+The end time of the week and day views. The scheduler will display events ending before the endTime.
+
+
+For additional information check the [endTime](/api/web/scheduler#events-endTime) event documentation.
+
+#### Example
+    <kendo:scheduler endTime="handle_endTime">
+    </kendo:scheduler>
+    <script>
+        function handle_endTime(e) {
+            // Code to handle the endTime event.
+        }
+    </script>
+
 ### remove `String`
 
 Fired when the user clicks the "destroy" button.The event handler function context (available via the this keyword) will be set to the widget instance.
@@ -253,6 +269,22 @@ For additional information check the [save](/api/web/scheduler#events-save) even
     <script>
         function handle_save(e) {
             // Code to handle the save event.
+        }
+    </script>
+
+### startTime `String`
+
+The start time of the week and day views. The scheduler will display events starting after the startTime.
+
+
+For additional information check the [startTime](/api/web/scheduler#events-startTime) event documentation.
+
+#### Example
+    <kendo:scheduler startTime="handle_startTime">
+    </kendo:scheduler>
+    <script>
+        function handle_startTime(e) {
+            // Code to handle the startTime event.
         }
     </script>
 
@@ -330,6 +362,24 @@ For additional information check the [edit](/api/web/scheduler#events-edit) even
         </kendo:scheduler-edit>
     </kendo:scheduler>
 
+### kendo:scheduler-endTime
+
+The end time of the week and day views. The scheduler will display events ending before the endTime.
+
+
+For additional information check the [endTime](/api/web/scheduler#events-endTime) event documentation.
+
+#### Example
+    <kendo:scheduler>
+        <kendo:scheduler-endTime>
+            <script>
+                function(e) {
+                    // Code to handle the endTime event.
+                }
+            </script>
+        </kendo:scheduler-endTime>
+    </kendo:scheduler>
+
 ### kendo:scheduler-remove
 
 Fired when the user clicks the "destroy" button.The event handler function context (available via the this keyword) will be set to the widget instance.
@@ -364,5 +414,23 @@ For additional information check the [save](/api/web/scheduler#events-save) even
                 }
             </script>
         </kendo:scheduler-save>
+    </kendo:scheduler>
+
+### kendo:scheduler-startTime
+
+The start time of the week and day views. The scheduler will display events starting after the startTime.
+
+
+For additional information check the [startTime](/api/web/scheduler#events-startTime) event documentation.
+
+#### Example
+    <kendo:scheduler>
+        <kendo:scheduler-startTime>
+            <script>
+                function(e) {
+                    // Code to handle the startTime event.
+                }
+            </script>
+        </kendo:scheduler-startTime>
     </kendo:scheduler>
 
