@@ -278,6 +278,67 @@ The data item field to which the filter operator is applied.
     });
     </script>
 
+### filter.filters `Array`
+
+The nested filter expressions. Suppor the same options as [filter](#configuration-filter). Filters can be nested indefinitely.
+
+### Example - nested filters
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Tea", category: "Beverages" },
+        { name: "Coffee", category: "Beverages" },
+        { name: "Ham", category: "Food" }
+      ],
+      filter: {
+        // leave data items which are "Food" or "Tea"
+        logic: "or",
+        filters: [
+          { field: "category", operator: "eq", value: "Food" },
+          { field: "name", operator: "eq", value: "Tea" }
+        ]
+      }
+    });
+    dataSource.fetch(function(){
+      var view = dataSource.view();
+      console.log(view.length); // displays "2"
+      console.log(view[0].name); // displays "Tea"
+      console.log(view[1].name); // displays "Ham"
+    });
+    </script>
+
+
+### filter.logic `String`
+
+The logical operation to use when the `filter.filters` option is set. The supported values are "and" and "or".
+
+### Example - set the filter logic
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      data: [
+        { name: "Tea", category: "Beverages" },
+        { name: "Coffee", category: "Beverages" },
+        { name: "Ham", category: "Food" }
+      ],
+      filter: {
+        // leave data items which are "Food" or "Tea"
+        logic: "or",
+        filters: [
+          { field: "category", operator: "eq", value: "Food" },
+          { field: "name", operator: "eq", value: "Tea" }
+        ]
+      }
+    });
+    dataSource.fetch(function(){
+      var view = dataSource.view();
+      console.log(view.length); // displays "2"
+      console.log(view[0].name); // displays "Tea"
+      console.log(view[1].name); // displays "Ham"
+    });
+    </script>
+
 ### filter.operator `String`
 
 The filter operator (comparison). The supported operators are: "eq" (equal to), "neq" (not equal to), "lt" (less than), "lte" (less than or equal to), "gt" (greater than), "gte" (greater than or equal to),
