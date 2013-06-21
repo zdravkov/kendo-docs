@@ -47,6 +47,7 @@ The text displayed by the command button. If not set the name` option would be u
 
 The template which renders the command. Be default renders a button.
 
+
 #### Example
     <kendo:grid-toolbarItem template="handle_template">
     </kendo:grid-toolbarItem>
@@ -61,6 +62,7 @@ The template which renders the command. Be default renders a button.
 ### kendo:grid-toolbarItem-template
 
 The template which renders the command. Be default renders a button.
+
 
 #### Example
     <kendo:grid-toolbarItem>

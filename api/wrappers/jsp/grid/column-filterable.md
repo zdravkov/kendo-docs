@@ -32,6 +32,7 @@ The role data attribute of the widget used in the filter menu or a JavaScript fu
 
 The role data attribute of the widget used in the filter menu or a JavaScript function which initializes that widget.
 
+
 #### Example
     <kendo:grid-column-filterable ui="handle_ui">
     </kendo:grid-column-filterable>
@@ -46,6 +47,7 @@ The role data attribute of the widget used in the filter menu or a JavaScript fu
 ### kendo:grid-column-filterable-ui
 
 The role data attribute of the widget used in the filter menu or a JavaScript function which initializes that widget.
+
 
 #### Example
     <kendo:grid-column-filterable>

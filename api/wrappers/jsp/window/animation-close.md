@@ -32,3 +32,11 @@ Effect to be used for closing of the popup.
     <kendo:window-animation-close effects="effects">
     </kendo:window-animation-close>
 
+### reverse `boolean`
+
+Whether the effect should play backwards, useful when doing the same animation but with the opposite direction, like opening and closing.
+
+#### Example
+    <kendo:window-animation-close reverse="reverse">
+    </kendo:window-animation-close>
+

@@ -73,6 +73,7 @@ The URL to which the request is sent.If set to function the data source will inv
 
 Additional parameters which are sent to the remote service.Refer to the jQuery.ajax documentation for further info.
 
+
 #### Example
     <kendo:dataSource-transport-read data="handle_data">
     </kendo:dataSource-transport-read>
@@ -85,6 +86,7 @@ Additional parameters which are sent to the remote service.Refer to the jQuery.a
 ### url `String`
 
 The URL to which the request is sent.If set to function the data source will invoke it and use the result as the URL.
+
 
 #### Example
     <kendo:dataSource-transport-read url="handle_url">
@@ -101,6 +103,7 @@ The URL to which the request is sent.If set to function the data source will inv
 
 Additional parameters which are sent to the remote service.Refer to the jQuery.ajax documentation for further info.
 
+
 #### Example
     <kendo:dataSource-transport-read>
         <kendo:dataSource-transport-read-data>
@@ -115,6 +118,7 @@ Additional parameters which are sent to the remote service.Refer to the jQuery.a
 ### kendo:dataSource-transport-read-url
 
 The URL to which the request is sent.If set to function the data source will invoke it and use the result as the URL.
+
 
 #### Example
     <kendo:dataSource-transport-read>

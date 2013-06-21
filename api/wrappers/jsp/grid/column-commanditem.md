@@ -55,6 +55,7 @@ The text displayed by the command button. If not set the name option is used as 
 
 The JavaScript function executed when the user clicks the command button. The function receives a jQuery Event as an argument.The function context (available via the this keyword) will be set to the grid instance.
 
+
 #### Example
     <kendo:grid-column-commandItem click="handle_click">
     </kendo:grid-column-commandItem>
@@ -69,6 +70,7 @@ The JavaScript function executed when the user clicks the command button. The fu
 ### kendo:grid-column-commandItem-click
 
 The JavaScript function executed when the user clicks the command button. The function receives a jQuery Event as an argument.The function context (available via the this keyword) will be set to the grid instance.
+
 
 #### Example
     <kendo:grid-column-commandItem>

@@ -6,7 +6,7 @@ publish: true
 ---
 
 # \<kendo:dataSource\>
-A JSP tag representing Kendo DataSource.
+A JSP wrapper for Kendo UI [DataSource](/api/framework/datasource).
 
 ## Configuration Attributes
 
@@ -182,6 +182,9 @@ More documentation is available at [kendo:dataSource-transport](datasource/trans
 
 Fired when the data source is populated from a JavaScript array or a remote service, a data item is inserted, updated or removed, the data items are paged, sorted, filtered or grouped.The event handler function context (available via the this keyword) will be set to the data source instance.
 
+
+For additional information check the [change](/api/framework/datasource#events-change) event documentation.
+
 #### Example
     <kendo:dataSource change="handle_change">
     </kendo:dataSource>
@@ -194,6 +197,9 @@ Fired when the data source is populated from a JavaScript array or a remote serv
 ### error `String`
 
 Fired when a request to the remote service fails.The event handler function context (available via the this keyword) will be set to the data source instance.
+
+
+For additional information check the [error](/api/framework/datasource#events-error) event documentation.
 
 #### Example
     <kendo:dataSource error="handle_error">
@@ -208,6 +214,9 @@ Fired when a request to the remote service fails.The event handler function cont
 
 Fired when a remote service request is finished.The event handler function context (available via the this keyword) will be set to the data source instance.
 
+
+For additional information check the [requestEnd](/api/framework/datasource#events-requestEnd) event documentation.
+
 #### Example
     <kendo:dataSource requestEnd="handle_requestEnd">
     </kendo:dataSource>
@@ -221,6 +230,9 @@ Fired when a remote service request is finished.The event handler function conte
 
 Fired when the data source makes a remote service request.The event handler function context (available via the this keyword) will be set to the data source instance.
 
+
+For additional information check the [requestStart](/api/framework/datasource#events-requestStart) event documentation.
+
 #### Example
     <kendo:dataSource requestStart="handle_requestStart">
     </kendo:dataSource>
@@ -233,6 +245,9 @@ Fired when the data source makes a remote service request.The event handler func
 ### sync `String`
 
 Fired after the data source saves data item changes. The data source saves the data item changes when the sync method is called.The event handler function context (available via the this keyword) will be set to the data source instance.
+
+
+For additional information check the [sync](/api/framework/datasource#events-sync) event documentation.
 
 #### Example
     <kendo:dataSource sync="handle_sync">
@@ -249,6 +264,9 @@ Fired after the data source saves data item changes. The data source saves the d
 
 Fired when the data source is populated from a JavaScript array or a remote service, a data item is inserted, updated or removed, the data items are paged, sorted, filtered or grouped.The event handler function context (available via the this keyword) will be set to the data source instance.
 
+
+For additional information check the [change](/api/framework/datasource#events-change) event documentation.
+
 #### Example
     <kendo:dataSource>
         <kendo:dataSource-change>
@@ -263,6 +281,9 @@ Fired when the data source is populated from a JavaScript array or a remote serv
 ### kendo:dataSource-error
 
 Fired when a request to the remote service fails.The event handler function context (available via the this keyword) will be set to the data source instance.
+
+
+For additional information check the [error](/api/framework/datasource#events-error) event documentation.
 
 #### Example
     <kendo:dataSource>
@@ -279,6 +300,9 @@ Fired when a request to the remote service fails.The event handler function cont
 
 Fired when a remote service request is finished.The event handler function context (available via the this keyword) will be set to the data source instance.
 
+
+For additional information check the [requestEnd](/api/framework/datasource#events-requestEnd) event documentation.
+
 #### Example
     <kendo:dataSource>
         <kendo:dataSource-requestEnd>
@@ -294,6 +318,9 @@ Fired when a remote service request is finished.The event handler function conte
 
 Fired when the data source makes a remote service request.The event handler function context (available via the this keyword) will be set to the data source instance.
 
+
+For additional information check the [requestStart](/api/framework/datasource#events-requestStart) event documentation.
+
 #### Example
     <kendo:dataSource>
         <kendo:dataSource-requestStart>
@@ -308,6 +335,9 @@ Fired when the data source makes a remote service request.The event handler func
 ### kendo:dataSource-sync
 
 Fired after the data source saves data item changes. The data source saves the data item changes when the sync method is called.The event handler function context (available via the this keyword) will be set to the data source instance.
+
+
+For additional information check the [sync](/api/framework/datasource#events-sync) event documentation.
 
 #### Example
     <kendo:dataSource>

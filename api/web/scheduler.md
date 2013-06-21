@@ -2355,6 +2355,30 @@ The widget instance which fired the event.
     scheduler.bind("edit", scheduler_edit);
     </script>
 
+### endTime `Date`
+
+The end time of the week and day views. The scheduler will display events ending before the `endTime`.
+
+#### Example - set the end time
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      startTime: new Date("2013/6/6 08:00"),
+      endTime: new Date("2013/6/6 18:00")
+      views: ["day", "week"],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### remove
 
 Fired when the user clicks the "destroy" button.
@@ -2483,5 +2507,29 @@ The widget instance which fired the event.
     });
     var scheduler = $("#scheduler").data("kendoScheduler");
     scheduler.bind("save", scheduler_save);
+    </script>
+
+### startTime `Date`
+
+The start time of the week and day views. The scheduler will display events starting after the `startTime`.
+
+#### Example - set the start time
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      startTime: new Date("2013/6/6 08:00"),
+      endTime: new Date("2013/6/6 18:00")
+      views: ["day", "week"],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
     </script>
 

@@ -170,7 +170,7 @@ The text that is displayed in the column header cell. If not set the field is us
 
 ### width `Object`
 
-The width of the column. Numeric values are treated as pixels.
+The width of the column. Numeric values are treated as pixels. Also refer to Column Widths.
 
 #### Example
     <kendo:grid-column width="width">
@@ -211,6 +211,7 @@ More documentation is available at [kendo:grid-column-filterable](grid/column-fi
 
 Provides a way to specify a custom editing UI for the column. Use the container parameter to create the editing UI.
 
+
 #### Example
     <kendo:grid-column editor="handle_editor">
     </kendo:grid-column>
@@ -223,6 +224,7 @@ Provides a way to specify a custom editing UI for the column. Use the container 
 ### footerTemplate `String`
 
 The template which renders the footer table cell for the column.The fields which can be used in the template are:
+
 
 #### Example
     <kendo:grid-column footerTemplate="handle_footerTemplate">
@@ -238,6 +240,7 @@ The template which renders the footer table cell for the column.The fields which
 The template which renders the group header when the grid is grouped by the column field. By default the name of the field
 and the current group value is displayed.The fields which can be used in the template are:
 
+
 #### Example
     <kendo:grid-column groupHeaderTemplate="handle_groupHeaderTemplate">
     </kendo:grid-column>
@@ -250,6 +253,7 @@ and the current group value is displayed.The fields which can be used in the tem
 ### groupFooterTemplate `String`
 
 The template which renders the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
+
 
 #### Example
     <kendo:grid-column groupFooterTemplate="handle_groupFooterTemplate">
@@ -265,6 +269,7 @@ The template which renders the group footer when the grid is grouped by the colu
 The template which renders the column header content. By default the value of the title column option
 is displayed in the column header cell.
 
+
 #### Example
     <kendo:grid-column headerTemplate="handle_headerTemplate">
     </kendo:grid-column>
@@ -278,6 +283,7 @@ is displayed in the column header cell.
 
 The template which renders the column content. The grid renders table rows (<tr>) which represent the data source items.
 Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.
+
 
 #### Example
     <kendo:grid-column template="handle_template">
@@ -294,6 +300,7 @@ Each table row consists of table cells (<td>) which represent the grid columns. 
 
 Provides a way to specify a custom editing UI for the column. Use the container parameter to create the editing UI.
 
+
 #### Example
     <kendo:grid-column>
         <kendo:grid-column-editor>
@@ -308,6 +315,7 @@ Provides a way to specify a custom editing UI for the column. Use the container 
 ### kendo:grid-column-footerTemplate
 
 The template which renders the footer table cell for the column.The fields which can be used in the template are:
+
 
 #### Example
     <kendo:grid-column>
@@ -325,6 +333,7 @@ The template which renders the footer table cell for the column.The fields which
 The template which renders the group header when the grid is grouped by the column field. By default the name of the field
 and the current group value is displayed.The fields which can be used in the template are:
 
+
 #### Example
     <kendo:grid-column>
         <kendo:grid-column-groupHeaderTemplate>
@@ -339,6 +348,7 @@ and the current group value is displayed.The fields which can be used in the tem
 ### kendo:grid-column-groupFooterTemplate
 
 The template which renders the group footer when the grid is grouped by the column field. By default the group footer is not displayed.The fields which can be used in the template are:
+
 
 #### Example
     <kendo:grid-column>
@@ -356,6 +366,7 @@ The template which renders the group footer when the grid is grouped by the colu
 The template which renders the column header content. By default the value of the title column option
 is displayed in the column header cell.
 
+
 #### Example
     <kendo:grid-column>
         <kendo:grid-column-headerTemplate>
@@ -371,6 +382,7 @@ is displayed in the column header cell.
 
 The template which renders the column content. The grid renders table rows (<tr>) which represent the data source items.
 Each table row consists of table cells (<td>) which represent the grid columns. By default the HTML-encoded value of the field is displayed in the column.
+
 
 #### Example
     <kendo:grid-column>

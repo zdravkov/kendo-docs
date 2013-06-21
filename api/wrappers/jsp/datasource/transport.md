@@ -117,6 +117,7 @@ More documentation is available at [kendo:dataSource-transport-update](datasourc
 The function which converts the request parameters to a format suitable for the remote service. By default
 the data source sends the parameters using jQuery's conventions.
 
+
 #### Example
     <kendo:dataSource-transport parameterMap="handle_parameterMap">
     </kendo:dataSource-transport>
@@ -132,6 +133,7 @@ the data source sends the parameters using jQuery's conventions.
 
 The function which converts the request parameters to a format suitable for the remote service. By default
 the data source sends the parameters using jQuery's conventions.
+
 
 #### Example
     <kendo:dataSource-transport>

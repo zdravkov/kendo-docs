@@ -27,7 +27,7 @@ return the aggregate results from the response.The result of the function should
 
 ### data `String`
 
-The field from the server response which contains the data items. Can be set to a functin which is called to
+The field from the server response which contains the data items. Can be set to a function which is called to
 return the data items for the response.
 
 #### Example
@@ -93,6 +93,7 @@ The type of the response. The supported values are "xml" and "json". By default 
 The field from the response which contains the aggregate results. Can be set to a function which is called to
 return the aggregate results from the response.The result of the function should be a JavaScript object which contains the aggregate results for every fields in the following format:For example if the data source is configured like this:The aggregate results should have the following format:
 
+
 #### Example
     <kendo:dataSource-schema aggregates="handle_aggregates">
     </kendo:dataSource-schema>
@@ -104,8 +105,9 @@ return the aggregate results from the response.The result of the function should
 
 ### data `String`
 
-The field from the server response which contains the data items. Can be set to a functin which is called to
+The field from the server response which contains the data items. Can be set to a function which is called to
 return the data items for the response.
+
 
 #### Example
     <kendo:dataSource-schema data="handle_data">
@@ -121,6 +123,7 @@ return the data items for the response.
 The field from the server response which contains server-side errors. Can be set to a function which is called to
 return the errors for response. If there are any errors the error event will be fired.
 
+
 #### Example
     <kendo:dataSource-schema errors="handle_errors">
     </kendo:dataSource-schema>
@@ -135,6 +138,7 @@ return the errors for response. If there are any errors the error event will be 
 The field from the server response which contains the groups. Can be set to a function which is called to
 return the groups from the response.The result should have the following format:
 
+
 #### Example
     <kendo:dataSource-schema groups="handle_groups">
     </kendo:dataSource-schema>
@@ -147,6 +151,7 @@ return the groups from the response.The result should have the following format:
 ### parse `String`
 
 Executed before the server response is used. Use it to preprocess or parse the server response.
+
 
 #### Example
     <kendo:dataSource-schema parse="handle_parse">
@@ -161,6 +166,7 @@ Executed before the server response is used. Use it to preprocess or parse the s
 
 The field from the server response which contains the total number of data items. Can be set to a function which is called to
 return the total number of data items for the response.
+
 
 #### Example
     <kendo:dataSource-schema total="handle_total">
@@ -178,6 +184,7 @@ return the total number of data items for the response.
 The field from the response which contains the aggregate results. Can be set to a function which is called to
 return the aggregate results from the response.The result of the function should be a JavaScript object which contains the aggregate results for every fields in the following format:For example if the data source is configured like this:The aggregate results should have the following format:
 
+
 #### Example
     <kendo:dataSource-schema>
         <kendo:dataSource-schema-aggregates>
@@ -191,8 +198,9 @@ return the aggregate results from the response.The result of the function should
 
 ### kendo:dataSource-schema-data
 
-The field from the server response which contains the data items. Can be set to a functin which is called to
+The field from the server response which contains the data items. Can be set to a function which is called to
 return the data items for the response.
+
 
 #### Example
     <kendo:dataSource-schema>
@@ -210,6 +218,7 @@ return the data items for the response.
 The field from the server response which contains server-side errors. Can be set to a function which is called to
 return the errors for response. If there are any errors the error event will be fired.
 
+
 #### Example
     <kendo:dataSource-schema>
         <kendo:dataSource-schema-errors>
@@ -226,6 +235,7 @@ return the errors for response. If there are any errors the error event will be 
 The field from the server response which contains the groups. Can be set to a function which is called to
 return the groups from the response.The result should have the following format:
 
+
 #### Example
     <kendo:dataSource-schema>
         <kendo:dataSource-schema-groups>
@@ -240,6 +250,7 @@ return the groups from the response.The result should have the following format:
 ### kendo:dataSource-schema-parse
 
 Executed before the server response is used. Use it to preprocess or parse the server response.
+
 
 #### Example
     <kendo:dataSource-schema>
@@ -256,6 +267,7 @@ Executed before the server response is used. Use it to preprocess or parse the s
 
 The field from the server response which contains the total number of data items. Can be set to a function which is called to
 return the total number of data items for the response.
+
 
 #### Example
     <kendo:dataSource-schema>

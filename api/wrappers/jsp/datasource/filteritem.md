@@ -24,6 +24,14 @@ The data item field to which the filter operator is applied.
     <kendo:dataSource-filterItem field="field">
     </kendo:dataSource-filterItem>
 
+### logic `String`
+
+The logical operation to use when the filter.filters option is set. The supported values are "and" and "or".
+
+#### Example
+    <kendo:dataSource-filterItem logic="logic">
+    </kendo:dataSource-filterItem>
+
 ### operator `String`
 
 The filter operator (comparison). The supported operators are: "eq" (equal to), "neq" (not equal to), "lt" (less than), "lte" (less than or equal to), "gt" (greater than), "gte" (greater than or equal to),

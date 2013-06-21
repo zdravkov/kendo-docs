@@ -6,7 +6,7 @@ publish: true
 ---
 
 # \<kendo:grid\>
-A JSP tag representing Kendo Grid.
+A JSP wrapper for Kendo UI [Grid](/api/web/grid).
 
 ## Configuration Attributes
 
@@ -260,6 +260,9 @@ More documentation is available at [kendo:grid-toolbar](grid/toolbar).
 
 Fired when the user clicks the "cancel" button (in inline or popup editing mode) or closes the popup window.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [cancel](/api/web/grid#events-cancel) event documentation.
+
 #### Example
     <kendo:grid cancel="handle_cancel">
     </kendo:grid>
@@ -272,6 +275,9 @@ Fired when the user clicks the "cancel" button (in inline or popup editing mode)
 ### change `String`
 
 Fired when the user selects a table row or cell in the grid.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [change](/api/web/grid#events-change) event documentation.
 
 #### Example
     <kendo:grid change="handle_change">
@@ -286,6 +292,9 @@ Fired when the user selects a table row or cell in the grid.The event handler fu
 
 Fired when the user hides a column.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [columnHide](/api/web/grid#events-columnHide) event documentation.
+
 #### Example
     <kendo:grid columnHide="handle_columnHide">
     </kendo:grid>
@@ -298,6 +307,9 @@ Fired when the user hides a column.The event handler function context (available
 ### columnMenuInit `String`
 
 Fired when the column menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnMenuInit](/api/web/grid#events-columnMenuInit) event documentation.
 
 #### Example
     <kendo:grid columnMenuInit="handle_columnMenuInit">
@@ -312,6 +324,9 @@ Fired when the column menu is initialized.The event handler function context (av
 
 Fired when the user changes the order of a column.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [columnReorder](/api/web/grid#events-columnReorder) event documentation.
+
 #### Example
     <kendo:grid columnReorder="handle_columnReorder">
     </kendo:grid>
@@ -324,6 +339,9 @@ Fired when the user changes the order of a column.The event handler function con
 ### columnResize `String`
 
 Fired when the user resizes a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnResize](/api/web/grid#events-columnResize) event documentation.
 
 #### Example
     <kendo:grid columnResize="handle_columnResize">
@@ -338,6 +356,9 @@ Fired when the user resizes a column.The event handler function context (availab
 
 Fired when the user shows a column.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [columnShow](/api/web/grid#events-columnShow) event documentation.
+
 #### Example
     <kendo:grid columnShow="handle_columnShow">
     </kendo:grid>
@@ -350,6 +371,9 @@ Fired when the user shows a column.The event handler function context (available
 ### dataBinding `String`
 
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [dataBinding](/api/web/grid#events-dataBinding) event documentation.
 
 #### Example
     <kendo:grid dataBinding="handle_dataBinding">
@@ -364,6 +388,9 @@ Fired before the widget binds to its data source.The event handler function cont
 
 Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [dataBound](/api/web/grid#events-dataBound) event documentation.
+
 #### Example
     <kendo:grid dataBound="handle_dataBound">
     </kendo:grid>
@@ -376,6 +403,9 @@ Fired when the widget is bound to data from its data source.The event handler fu
 ### detailCollapse `String`
 
 Fired when the user collapses a detail table row.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [detailCollapse](/api/web/grid#events-detailCollapse) event documentation.
 
 #### Example
     <kendo:grid detailCollapse="handle_detailCollapse">
@@ -390,6 +420,9 @@ Fired when the user collapses a detail table row.The event handler function cont
 
 Fired when the user expands a detail table row.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [detailExpand](/api/web/grid#events-detailExpand) event documentation.
+
 #### Example
     <kendo:grid detailExpand="handle_detailExpand">
     </kendo:grid>
@@ -402,6 +435,9 @@ Fired when the user expands a detail table row.The event handler function contex
 ### detailInit `String`
 
 Fired when a detail table row is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [detailInit](/api/web/grid#events-detailInit) event documentation.
 
 #### Example
     <kendo:grid detailInit="handle_detailInit">
@@ -416,6 +452,9 @@ Fired when a detail table row is initialized.The event handler function context 
 
 Fired when the user edits or creates a data item.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [edit](/api/web/grid#events-edit) event documentation.
+
 #### Example
     <kendo:grid edit="handle_edit">
     </kendo:grid>
@@ -428,6 +467,9 @@ Fired when the user edits or creates a data item.The event handler function cont
 ### filterMenuInit `String`
 
 Fired when the grid filter menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [filterMenuInit](/api/web/grid#events-filterMenuInit) event documentation.
 
 #### Example
     <kendo:grid filterMenuInit="handle_filterMenuInit">
@@ -442,6 +484,9 @@ Fired when the grid filter menu is initialized.The event handler function contex
 
 Fired when the user clicks the "destroy" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [remove](/api/web/grid#events-remove) event documentation.
+
 #### Example
     <kendo:grid remove="handle_remove">
     </kendo:grid>
@@ -455,6 +500,9 @@ Fired when the user clicks the "destroy" command button.The event handler functi
 
 Fired when a data item is saved.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [save](/api/web/grid#events-save) event documentation.
+
 #### Example
     <kendo:grid save="handle_save">
     </kendo:grid>
@@ -467,6 +515,9 @@ Fired when a data item is saved.The event handler function context (available vi
 ### saveChanges `String`
 
 Fired when the user clicks the "save" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [saveChanges](/api/web/grid#events-saveChanges) event documentation.
 
 #### Example
     <kendo:grid saveChanges="handle_saveChanges">
@@ -483,6 +534,9 @@ Fired when the user clicks the "save" command button.The event handler function 
 
 Fired when the user clicks the "cancel" button (in inline or popup editing mode) or closes the popup window.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [cancel](/api/web/grid#events-cancel) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-cancel>
@@ -497,6 +551,9 @@ Fired when the user clicks the "cancel" button (in inline or popup editing mode)
 ### kendo:grid-change
 
 Fired when the user selects a table row or cell in the grid.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [change](/api/web/grid#events-change) event documentation.
 
 #### Example
     <kendo:grid>
@@ -513,6 +570,9 @@ Fired when the user selects a table row or cell in the grid.The event handler fu
 
 Fired when the user hides a column.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [columnHide](/api/web/grid#events-columnHide) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-columnHide>
@@ -527,6 +587,9 @@ Fired when the user hides a column.The event handler function context (available
 ### kendo:grid-columnMenuInit
 
 Fired when the column menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnMenuInit](/api/web/grid#events-columnMenuInit) event documentation.
 
 #### Example
     <kendo:grid>
@@ -543,6 +606,9 @@ Fired when the column menu is initialized.The event handler function context (av
 
 Fired when the user changes the order of a column.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [columnReorder](/api/web/grid#events-columnReorder) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-columnReorder>
@@ -557,6 +623,9 @@ Fired when the user changes the order of a column.The event handler function con
 ### kendo:grid-columnResize
 
 Fired when the user resizes a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [columnResize](/api/web/grid#events-columnResize) event documentation.
 
 #### Example
     <kendo:grid>
@@ -573,6 +642,9 @@ Fired when the user resizes a column.The event handler function context (availab
 
 Fired when the user shows a column.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [columnShow](/api/web/grid#events-columnShow) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-columnShow>
@@ -587,6 +659,9 @@ Fired when the user shows a column.The event handler function context (available
 ### kendo:grid-dataBinding
 
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [dataBinding](/api/web/grid#events-dataBinding) event documentation.
 
 #### Example
     <kendo:grid>
@@ -603,6 +678,9 @@ Fired before the widget binds to its data source.The event handler function cont
 
 Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [dataBound](/api/web/grid#events-dataBound) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-dataBound>
@@ -617,6 +695,9 @@ Fired when the widget is bound to data from its data source.The event handler fu
 ### kendo:grid-detailCollapse
 
 Fired when the user collapses a detail table row.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [detailCollapse](/api/web/grid#events-detailCollapse) event documentation.
 
 #### Example
     <kendo:grid>
@@ -633,6 +714,9 @@ Fired when the user collapses a detail table row.The event handler function cont
 
 Fired when the user expands a detail table row.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [detailExpand](/api/web/grid#events-detailExpand) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-detailExpand>
@@ -647,6 +731,9 @@ Fired when the user expands a detail table row.The event handler function contex
 ### kendo:grid-detailInit
 
 Fired when a detail table row is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [detailInit](/api/web/grid#events-detailInit) event documentation.
 
 #### Example
     <kendo:grid>
@@ -663,6 +750,9 @@ Fired when a detail table row is initialized.The event handler function context 
 
 Fired when the user edits or creates a data item.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [edit](/api/web/grid#events-edit) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-edit>
@@ -677,6 +767,9 @@ Fired when the user edits or creates a data item.The event handler function cont
 ### kendo:grid-filterMenuInit
 
 Fired when the grid filter menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [filterMenuInit](/api/web/grid#events-filterMenuInit) event documentation.
 
 #### Example
     <kendo:grid>
@@ -693,6 +786,9 @@ Fired when the grid filter menu is initialized.The event handler function contex
 
 Fired when the user clicks the "destroy" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [remove](/api/web/grid#events-remove) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-remove>
@@ -708,6 +804,9 @@ Fired when the user clicks the "destroy" command button.The event handler functi
 
 Fired when a data item is saved.The event handler function context (available via the this keyword) will be set to the widget instance.
 
+
+For additional information check the [save](/api/web/grid#events-save) event documentation.
+
 #### Example
     <kendo:grid>
         <kendo:grid-save>
@@ -722,6 +821,9 @@ Fired when a data item is saved.The event handler function context (available vi
 ### kendo:grid-saveChanges
 
 Fired when the user clicks the "save" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [saveChanges](/api/web/grid#events-saveChanges) event documentation.
 
 #### Example
     <kendo:grid>
