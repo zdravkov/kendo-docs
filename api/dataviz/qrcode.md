@@ -22,10 +22,10 @@ The background color of the QR code. Accepts a valid CSS color string, including
 
     <div id="qrCode"></div>      
     <script>             
-        $("#qrCode").kendoQRCode({
-            value: "http://demos.kendoui.com/dataviz/overview/index.html",
-            background: "red"
-        });
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      background: "red"
+    });
     </script>
 
 ### border `Object`
@@ -40,13 +40,13 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
 
     <div id="qrCode"></div>      
     <script>             
-        $("#qrCode").kendoQRCode({
-            value: "http://demos.kendoui.com/dataviz/overview/index.html",
-            border: {
-                color: "#FF321C",
-                width: 2
-            }
-        });
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      border: {
+        color: "#FF321C",
+        width: 2
+      }
+    });
     </script>
 
 ### border.width `Number`
@@ -58,11 +58,11 @@ The width of the border in pixels. By default the border width is set to zero wh
     <div id="qrCode"></div>      
     <script>             
     $("#qrCode").kendoQRCode({
-        value: "http://demos.kendoui.com/dataviz/overview/index.html",
-        border: {
-            width: 5,
-            color: "#FF7D05"
-        }
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      border: {
+        width: 5,
+        color: "#FF7D05"
+      }
     });
     </script>
 
@@ -74,10 +74,10 @@ The dark module color of the QR code. Accepts a valid CSS color string, includin
 
     <div id="qrCode"></div>      
     <script>             
-        $("#qrCode").kendoQRCode({
-            value: "http://demos.kendoui.com/dataviz/overview/index.html",
-            darkModuleColor: "#aa00bb"
-        });
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      darkModuleColor: "#aa00bb"
+    });
     </script>
 
 ### errorCorrectionLevel `String` *(default: "L")*
@@ -95,10 +95,10 @@ The possible values are:
 
     <div id="qrCode"></div>      
     <script>             
-        $("#qrCode").kendoQRCode({
-            value: "http://demos.kendoui.com/dataviz/overview/index.html",
-            errorCorrectionLevel: "H"
-        });
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      errorCorrectionLevel: "H"
+    });
     </script>
 
 ### size `Number|String`
@@ -109,20 +109,20 @@ Specifies the size of a QR code in pixels (i.e. "200px"). Numeric values are tre
 
     <div id="qrCode"></div>      
     <script>             
-        $("#qrCode").kendoQRCode({
-            value: "http://demos.kendoui.com/dataviz/overview/index.html",
-            size: 300
-        });
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      size: 300
+    });
     </script>
 
 #### Example
 
     <div id="qrCode"></div>      
     <script>             
-        $("#qrCode").kendoQRCode({
-            value: "http://demos.kendoui.com/dataviz/overview/index.html",
-            size: "300px"
-        });
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      size: "300px"
+    });
     </script>
 
 ### value `Number|String`
@@ -133,9 +133,9 @@ The value of the QRCode.
 
     <div id="qrCode"></div>      
     <script>             
-        $("#qrCode").kendoQRCode({
-            value: "http://demos.kendoui.com/dataviz/overview/index.html"
-        });
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html"
+    });
     </script>
 
 ## Methods
@@ -169,13 +169,13 @@ Allows the QRCode to be configured with new options.
     var qrCode = $("#qrCode").data("kendoQRCode");
 
     qrCode.setOptions({
-        errorCorrectionLevel: "H",
-        size: 300,
-        background: "#FFB821",
-        border: {
-            width: 5,
-            color: "#FF7D05"
-        }
+      errorCorrectionLevel: "H",
+      size: 300,
+      background: "#FFB821",
+      border: {
+        width: 5,
+        color: "#FF7D05"
+      }
     });
     
     qrCode.redraw();
