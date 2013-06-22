@@ -57,6 +57,7 @@ Native scrolling is only enabled on platforms that support it: iOS > 4, Android 
 ## Methods
 
 ### destroy
+
 Prepares the **Scroller** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > **Important:** This method does not remove the Scroller element from DOM.
@@ -67,6 +68,22 @@ Prepares the **Scroller** for safe removal from DOM. Detaches all event handlers
 
     // detach events
     scroller.destroy();
+
+### disable
+
+Disables the scrolling of the element.
+
+### enable
+
+Enables the scrolling of the element after it has been disabled by calling `disable`.
+
+### height
+
+Returns the viewport height of the scrollable element.
+
+#### Returns
+
+`Number` the viewport height in pixels.
 
 ### pullHandled
 
