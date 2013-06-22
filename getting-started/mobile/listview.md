@@ -122,7 +122,7 @@ please review the [Kendo UI Templates](http://www.kendoui.com/documentation/fram
     <script id="tmp" type="text/x-kendo-template">
         <p>#: name # <span>Age: #: age #</span></p>
     </script>
-    
+
     <script>
         var app = new kendo.mobile.Application();
         var dataSource = new kendo.data.DataSource({
@@ -217,12 +217,8 @@ Kendo mobile ships with several ready to use icons:
 *   <span class="km-icon km-stop"></span>stop
 *   <span class="km-icon km-trash"></span>trash
 
-
-
 Additional icons may be added by defining the respective CSS class.
 If the `icon` data attribute is set to `custom`, the tab will receive `km-custom` CSS class.
-
-
 
 ### Creating Custom Icons
 
