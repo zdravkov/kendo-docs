@@ -16,11 +16,11 @@ Represents the Kendo UI Mobile ListView widget. Inherits from [kendo.mobile.ui.W
 
 ### appendOnRefresh `Boolean`*(default: false)*
 
- Used in combination with pullToRefresh. If set to true, newly loaded data will be appended on top when refershing.
+Used in combination with pullToRefresh. If set to true, newly loaded data will be appended on top when refershing. **Notice:** not applicable if ListView is in a virtual mode.
 
 ### autoBind `Boolean`*(default: true)*
 
- Indicates whether the listview will call read on the DataSource initially.
+Indicates whether the listview will call read on the DataSource initially.
 
 ### dataSource `kendo.data.DataSource | Object`
 
@@ -28,68 +28,41 @@ Instance of DataSource or the data that the mobile ListView will be bound to.
 
 ### endlessScroll `Boolean`*(default: false)*
 
- If set to true, the listview gets the next page of data when the user scrolls near the bottom of the view.
-
-### endlessScrollParameters `Function`
-
- A callback function used when the 'endlessScroll' option is enabled. The result of the function will be send as additional parameters to the DataSource's next method.
-
-#### Example
-
-    $("#pull-with-endless").kendoMobileListView({
-        dataSource: dataSource,
-        endlessScroll: true,
-        endlessScrollParameters: function(firstItem, lastItem) {
-            if (firstItem) {
-                //additional parameters
-                return {
-                    max_id: firstItem.id_str
-                };
-            }
-        }
-    });
-
-#### Parameters
-
-##### firstItem `Object`
-
-First dataItem of the first loaded page of the ListView. It will not change, even if 'pull-to-refresh' is used.
-
-##### lastItem  `Object`
-
-Last dataItem of the first loaded page of the ListView.
+If set to true, the listview gets the next page of data when the user scrolls near the bottom of the view.
 
 ### fixedHeaders `Boolean`*(default: false)*
 
- If set to true, the group headers will persist their position when the user scrolls through the listview. Applicable only when the type is set to group, or when binding to grouped datasource.
+If set to true, the group headers will persist their position when the user scrolls through the listview.
+Applicable only when the type is set to group, or when binding to grouped datasource.
+
+**Notice:** this feature is not available in virtual mode
 
 ### headerTemplate `String|Function`*(default: "#:value#")*
 
- The header item template (applicable when the type is set to group).
+The header item template (applicable when the type is set to group).
 
 ### loadMore `Boolean`*(default: false)*
 
- If set to true, a button is rendered at the bottom of the listview, which fetch the next page of data when tapped.
+If set to true, a button is rendered at the bottom of the listview. Tapping it fetches and displayes the items from the next page of the datasource.
 
 ### loadMoreText `String`*(default: "Press to load more")*
 
  The text of the rendered load-more button (applies only if loadMore is set to true).
 
-### loadMoreParameters `Function`
-
- Check the 'endlessScrollParameters' option.
-
 ### pullTemplate `String|Function`*(default: "Pull to refresh")*
 
- The message template displayed when the user pulls the listView. Applicable only when pullToRefresh is set to true.
+The message template displayed when the user pulls the listView. Applicable only when pullToRefresh is set to true.
 
 ### pullToRefresh `Boolean`*(default: false)*
 
- If set to true, the listview will reload its data when the user pulls the view over the top limit.
+If set to true, the listview will reload its data when the user pulls the view over the top limit.
 
 ### pullParameters `Function`
 
- A callback function used when the 'pullToRefresh' option is enabled. The result of the function will be send as additional parameters to the DataSource's next method.
+A callback function used when the 'pullToRefresh' option is enabled. The result of the function will be send as additional parameters to the DataSource's next method.
+
+**Notice:** When the listview is in a *virtual mode*, the pull to refresh action **removes** the previously loaded items in the listview (instead of appending new records at the top).
+Previously loaded pages in the datasource are also discarded.
 
 #### Example
 
@@ -114,15 +87,11 @@ First dataItem of the ListView // => listView.dataSource.get(0);
 
 ### refreshTemplate `String|Function`*(default: "Refreshing")*
 
- The message template displayed during the refresh. Applicable only when pullToRefresh is set to true.
+The message template displayed during the refresh. Applicable only when pullToRefresh is set to `true`.
 
 ### releaseTemplate `String|Function`*(default: "Release to refresh")*
 
- The message template indicating that pullToRefresh will occur. Applicable only when pullToRefresh is set to true.
-
-### scrollThreshold `String`*(default: 30)*
-
- The distance to the bottom in pixels, after which the listview will start fetching the next page. Applicable only when endlessScroll is set to true.
+The message template indicating that pullToRefresh will occur. Applicable only when pullToRefresh is set to `true`.
 
 ### style `String`
 
@@ -231,28 +200,6 @@ Sets the dataSource of an existing ListView and rebinds it.
 
     $("#listview").data("kendoMobileListView").setDataSource(dataSource);
 
-### stopEndlessScrolling
-
-Stops the 'endless scroll' of the ListView.
-
-#### example
-
-    // get a reference to the mobile listview widget
-    var listview = $("#listview").data("kendomobilelistview");
-    // stop endless scroll
-    listview.stopEndlessScrolling();
-
-### stopLoadMore
-
-Stops the 'load more' functionality of the ListView.
-
-#### example
-
-    // get a reference to the mobile listview widget
-    var listview = $("#listview").data("kendomobilelistview");
-    // stop endless scroll
-    listview.stopLoadMore();
-
 ## Events
 
 ### click
@@ -321,8 +268,9 @@ Fires when the ListView has received data from the data source.
 
 #### To set after initialization
 
-     // get a reference to the grid
+     // get a reference to the ListView widget
      var listview = $("#listview").data("kendoMobileListView");
+
      // bind to the dataBound event
      listview.bind("dataBound", function(e) {
          // handle event
@@ -342,13 +290,10 @@ Fires when the ListView is about to be rendered.
 
 #### To set after initialization
 
-     // get a reference to the ListView
+     // get a reference to the ListView widget
      var listview = $("#listview").data("kendoMobileListView");
      // bind to the dataBound event
      listview.bind("dataBinding", function(e) {
          // handle event
      });
 
-### lastPageReached
-
-Fires when the last page of the ListView is reached. Event will be raised only if the 'endless scroll' or 'load more' option is enabled.
