@@ -70,6 +70,14 @@ The symbology (encoding) the barcode will use.The supported values are:*EAN8
     <kendo:barcode type="type">
     </kendo:barcode>
 
+### value `String`
+
+The initial value of the Barcode
+
+#### Example
+    <kendo:barcode value="value">
+    </kendo:barcode>
+
 ### width `float`
 
 The width of the barcode in pixels.  By default the width is 300.

@@ -230,6 +230,24 @@ The symbology (encoding) the barcode will use.The supported values are:*EAN8
     $barcode->type('value');
     ?>
 
+### value
+The initial value of the Barcode
+
+#### Returns
+`\Kendo\Dataviz\UI\Barcode`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $barcode = new \Kendo\Dataviz\UI\Barcode('Barcode');
+    $barcode->value('value');
+    ?>
+
 ### width
 The width of the barcode in pixels.  By default the width is 300.
 
