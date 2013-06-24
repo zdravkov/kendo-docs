@@ -164,6 +164,12 @@ Redraws the QR code using the current value and options.
 
 Allows the QRCode to be configured with new options.
 
+#### Parameters 
+
+##### options `Object`
+
+An object with the new options. All [configuration](qrcode#configuration) options can be set.
+
 #### Example
 
     var qrCode = $("#qrCode").data("kendoQRCode");
@@ -183,6 +189,12 @@ Allows the QRCode to be configured with new options.
 ### value
 
 Change the value of the QR code.
+
+#### Parameters
+
+##### options `String|Number`
+
+The new value to be set.
 
 #### Example
 
