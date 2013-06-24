@@ -12,7 +12,7 @@ publish: true
 
 ## Configuration
 
-### background `String`*(default: "white")*
+### background `String` *(default: "white")*
 
 The background of the barcode area.
 Any valid CSS color string will work here, including hex and rgb.
@@ -21,19 +21,19 @@ Any valid CSS color string will work here, including hex and rgb.
 
 The border of the barcode area.
 
-### border.color `String`*(default: "black")*
+### border.color `String` *(default: "black")*
 
 The color of the border. Any valid CSS color string will work here, including hex and rgb.
 
-### border.dashType `String`*(default: "solid")*
+### border.dashType `String` *(default: "solid")*
 
 The dash type of the border.
 
-### border.width `Number`*(default: 0)*
+### border.width `Number` *(default: 0)*
 
  The width of the border.
 
-### color `String`*(default: "black")*
+### color `String` *(default: "black")*
 
 The color of the bar elements.
 Any valid CSS color string will work here, including hex and rgb.
@@ -101,9 +101,9 @@ The supported values are:
 *Code128
 *Code93
 *Code93Extended
-*Code128A                     
+*Code128A
 *Code128B
-*Code128C                        
+*Code128C
 *MSImod10
 *MSImod11
 *MSImod1010
@@ -127,7 +127,7 @@ The font of the text.
 
 The color of the text. Any valid CSS color string will work here, including hex and rgb.
 
-### text.margin `Object` 
+### text.margin `Object`
 
 The margin of the text
 
@@ -147,7 +147,7 @@ The margin of the text
         }
     });
     </script>
-    
+
 ### text.margin.bottom `Number` *(default: 0)*
 
 The bottom margin of the text.
@@ -179,7 +179,7 @@ Gets/Sets the value of the barcode.
     var value = barcode.value();
 
     // sets the value of the barcode and redraws it.
-    barcode.value("1234567"); 
+    barcode.value("1234567");
 
 #### Parameters
 
