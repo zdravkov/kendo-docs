@@ -47,9 +47,9 @@ The dash type of the border.
 
 The width of the border.
 
-### checksum `Boolean` *(default: true)*
+### checksum `Boolean` *(default: false)*
 
-If set to `false` the barcode will not display the checksum digit next to the value in the text area.
+If set to `true` the barcode will not display the checksum digit next to the value in the text area.
 
 ### color `String` *(default: "black")*
 
