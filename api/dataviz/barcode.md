@@ -174,6 +174,10 @@ The supported values are:
 *GS1-128
 *POSTNET
 
+### value `String`
+
+The initial value of the Barcode
+
 ### width `Number` *(default: 300)*
 
 The width of the barcode in pixels.  By default the width is 300.
