@@ -50,6 +50,14 @@ The months unit steps.
     <kendo:chart-categoryAxisItem-autoBaseUnitSteps months="months">
     </kendo:chart-categoryAxisItem-autoBaseUnitSteps>
 
+### seconds `Object`
+
+The seconds unit steps.
+
+#### Example
+    <kendo:chart-categoryAxisItem-autoBaseUnitSteps seconds="seconds">
+    </kendo:chart-categoryAxisItem-autoBaseUnitSteps>
+
 ### weeks `Object`
 
 The weeks unit steps.

@@ -84,6 +84,24 @@ The months unit steps.
     $autoBaseUnitSteps->months(new array());
     ?>
 
+### seconds
+The seconds unit steps.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemAutoBaseUnitSteps`
+
+#### Parameters
+
+##### $value `array`
+
+
+
+#### Example 
+    <?php
+    $autoBaseUnitSteps = new \Kendo\Dataviz\UI\ChartCategoryAxisItemAutoBaseUnitSteps();
+    $autoBaseUnitSteps->seconds(new array());
+    ?>
+
 ### weeks
 The weeks unit steps.
 
