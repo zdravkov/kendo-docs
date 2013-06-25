@@ -103,25 +103,29 @@ either [categoryAxis.baseUnit](#configuration-categoryAxis.baseUnit) is set to "
     });
     </script>
 
-### categoryAxis.autoBaseUnitSteps.days `Array` *(default: [1, 2, 3])*
+### categoryAxis.autoBaseUnitSteps.seconds `Array` *(default: [1, 2, 5, 15, 30])*
 
-The days unit steps.
-
-### categoryAxis.autoBaseUnitSteps.hours `Array` *(default: [1, 2, 3])*
-
-The hours unit steps.
+The seconds unit steps.
 
 ### categoryAxis.autoBaseUnitSteps.minutes `Array` *(default: [1, 2, 5, 15, 30])*
 
 The minutes unit steps.
 
-### categoryAxis.autoBaseUnitSteps.months `Array` *(default: [1, 2, 3, 6])*
+### categoryAxis.autoBaseUnitSteps.hours `Array` *(default: [1, 2, 3])*
 
-The months unit steps.
+The hours unit steps.
+
+### categoryAxis.autoBaseUnitSteps.days `Array` *(default: [1, 2, 3])*
+
+The days unit steps.
 
 ### categoryAxis.autoBaseUnitSteps.weeks `Array` *(default: [1, 2])*
 
 The weeks unit steps.
+
+### categoryAxis.autoBaseUnitSteps.months `Array` *(default: [1, 2, 3, 6])*
+
+The months unit steps.
 
 ### categoryAxis.autoBaseUnitSteps.years `Array` *(default: [1, 2, 3, 5, 10, 25, 50])*
 
@@ -160,12 +164,13 @@ between subsequent categories.
 
 The supported values are:
 
-* "days"
 * "fit"
-* "hours"
+* "seconds"
 * "minutes"
-* "months"
+* "hours"
+* "days"
 * "weeks"
+* "months"
 * "years"
 
 Setting `baseUnit` to "fit" will set such base unit and [categoryAxis.baseUnitStep](#configuration-categoryAxis.baseUnitStep)
@@ -14558,11 +14563,12 @@ Date at which the Y axis crosses this axis. (Only for date)
 
 The base time interval for the axis labels. The default baseUnit is determined automatically from the value range. Available options:
 
-* days
-* hours
+* seconds
 * minutes
-* months
+* hours
+* days
 * weeks
+* months
 * years
 
 #### Example - set the scatter chart x axis base unit
@@ -17373,11 +17379,12 @@ Date at which the Y axis crosses this axis. (Only for date)
 
 The base time interval for the axis labels. The default baseUnit is determined automatically from the value range. Available options:
 
-* days
-* hours
+* seconds
 * minutes
-* months
+* hours
+* days
 * weeks
+* months
 * years
 
 #### Example - set the scatter chart y axis base unit
