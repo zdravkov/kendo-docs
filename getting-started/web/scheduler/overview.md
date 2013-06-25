@@ -114,7 +114,7 @@ about cross-domain requests can be found [here](http://docs.kendoui.com/howto/us
 
 It is important to note how the fields of the scheduler event are configured (in the `schema.model` section) and mapped to the fields returned by the remote service using the `from` option.
 
-> When binding to a remote service the following are recommended (but not mandatory):
+When binding to a remote service the following are recommended (but not mandatory):
 1. Set the [timezone](/api/web/scheduler#configuration-timezone) option of the scheduler. It is used to tell the scheduler in what timezone the scheduler events are created and stored on the server. If the timezone is not
 set the scheduler will use the current timezone. This means that users with different timezone settings will see different start and end timezones. Setting the timezone of the scheduler would make it display the same
 start and end times regardless of the current user timezone.
@@ -131,7 +131,7 @@ start and end times regardless of the current user timezone.
 
 The `kendo.data.SchedulerEvent` object has the following fields:
 
-* description `String` - the free test description of the scheduler event.
+* description `String` - the text description of the scheduler event.
 * end `Date` - the date at which the event ends.
 * id `Number` - the unique identifier of the scheduler event. Events whose `id` is not set are considered as "new".
 * isAllDay `Boolean` - if the event is "all day" or not.
