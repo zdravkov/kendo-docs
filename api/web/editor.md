@@ -55,6 +55,7 @@ Defines the text of the labels that are shown within the editor. Used primarily 
             fontSize: "Select font size",
             fontSizeInherit: "(inherited size)",
             formatBlock: "Format",
+            fomatting: "Format",
             style: "Styles",
             emptyFolder: "Empty Folder",
             uploadFile: "Upload",
@@ -72,7 +73,7 @@ Defines the text of the labels that are shown within the editor. Used primarily 
             linkToolTip: "ToolTip",
             linkOpenInNewWindow: "Open link in new window",
             dialogInsert: "Insert",
-			dialogUpdate: "Update",
+            dialogUpdate: "Update",
             dialogButtonSeparator: "or",
             dialogCancel: "Cancel"
         }
@@ -100,30 +101,19 @@ as a collection of required properties, while the insertHtml tool requires a col
 
     $("#editor").kendoEditor({
          tools: [
-             "bold",
-             "italic",
-             "underline",
-             "separator",
-             "strikethrough",
-             "fontName",
-             "fontSize",
-             "foreColor",
-             "backColor",
-             "justifyLeft",
-             "justifyCenter",
-             "justifyRight",
-             "justifyFull",
-             "insertUnorderedList",
-             "insertOrderedList",
-             "indent",
-             "outdent",
-             "formatBlock",
-             "createLink",
-             "unlink",
+             "bold", "italic", "underline", "strikethrough",
+             "fontName", "fontSize",
+             "foreColor", "backColor",
+             "justifyLeft", "justifyCenter", "justifyRight", "justifyFull",
+             "insertUnorderedList", "insertOrderedList",
+             "indent", "outdent",
+             "fomatting",
+             "createLink", "unlink",
              "insertImage",
              "insertHtml",
-			 "subscript",
-			 "superscript",
+             "subscript",
+             "superscript",
+             "createTable", "addColumnLeft", "addColumnRight", "addRowAbove", "addRowBelow", "deleteRow", "deleteColumn"
              "viewHtml",
              {
                  name: "customTool",
@@ -142,7 +132,7 @@ as a collection of required properties, while the insertHtml tool requires a col
 
 ### tools.name `String`
 
-The mandatory name of the tool. The built-in tools are "bold", "italic", "underline", "strikethrough", "fontName", "fontSize", "foreColor", "backColor", "justifyLeft", "justifyCenter", "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent", "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
+The mandatory name of the tool.
 
 ### tools.tooltip `String`
 
@@ -154,7 +144,7 @@ The JavaScript function which will be executed when the end-user clicks the tool
 
 ### tools.items `Array`
 
-For tools that display a list of items (fontName, fontSize, formatBlock), this option specifies the items in the shown list.
+For tools that display a list of items (fontName, fontSize, formatting), this option specifies the items in the shown list.
 
 ### tools.items.text `String`
 
@@ -163,6 +153,10 @@ The string that the popup item will show.
 ### tools.items.value `String`
 
 The value that will be applied by the tool when this item is selected.
+
+### tools.items.context `String`
+
+Only applicable for the formatting tool. Specifies the context in which the option will be available.
 
 ### tools.template `String`
 
