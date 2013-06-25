@@ -59,4 +59,263 @@ a demo remote service which returns sample scheduler events. That service uses [
 > The demo service uses JSONP in order to be accessible cross-domain. If your own service lives in the same domain as the web site you don't need to use JSONP - you can use JSON instead. More information
 about cross-domain requests can be found [here](http://docs.kendoui.com/howto/use-cors-with-all-modern-browsers).
 
-###
+### Example - binding to remote service
+
+    $("#scheduler").kendoScheduler({
+        date: new Date("2013/6/13"),
+        timezone: "Etc/UTC", // Setting the timezone is recommended when binding to a remote service.
+        dataSource: {
+            batch: true, // Enable batch updates
+            transport: {
+                read: {
+                    url: "http://demos.kendoui.com/service/tasks",
+                    dataType: "jsonp"
+                },
+                update: {
+                    url: "http://demos.kendoui.com/service/tasks/update",
+                    dataType: "jsonp"
+                },
+                create: {
+                    url: "http://demos.kendoui.com/service/tasks/create",
+                    dataType: "jsonp"
+                },
+                destroy: {
+                    url: "http://demos.kendoui.com/service/tasks/destroy",
+                    dataType: "jsonp"
+                },
+                parameterMap: function(options, operation) {
+                    if (operation !== "read" && options.models) {
+                        return {models: kendo.stringify(options.models)};
+                    }
+                }
+            },
+            schema: {
+                model: {
+                    id: "taskId", // The "id" of the event is the "taskId" field
+                    fields: {
+                        // Describe the scheduler event fields and map them to the fields returned by the remote service
+                        taskId: {
+                            from: "TaskID", // The 'TaskID' server-side field is mapped to the 'taskId' client-side field
+                            type: "number"
+                        },
+                        title: { from: "Title", defaultValue: "No title", validation: { required: true } },
+                        start: { type: "date", from: "Start" },
+                        end: { type: "date", from: "End" },
+                        description: { from: "Description" },
+                        recurrenceId: { from: "RecurrenceID" },
+                        recurrenceRule: { from: "RecurrenceRule" },
+                        recurrenceException: { from: "RecurrenceException" },
+                        isAllDay: { type: "boolean", from: "IsAllDay" }
+                    }
+                }
+            }
+        }
+    });
+
+It is important to note how the fields of the scheduler event are configured (in the `schema.model` section) and mapped to the fields returned by the remote service using the `from` option.
+
+> When binding to a remote service the following are recommended (but not mandatory):
+1. Set the [timezone](/api/web/scheduler#configuration-timezone) option of the scheduler. It is used to tell the scheduler in what timezone the scheduler events are created and stored on the server. If the timezone is not
+set the scheduler will use the current timezone. This means that users with different timezone settings will see different start and end timezones. Setting the timezone of the scheduler would make it display the same
+start and end times regardless of the current user timezone.
+1. Send the scheduler event date fields (start and end) in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) to the remote service. The `parameterMap` option from the previous example does the same:
+
+        parameterMap: function(options, operation) {
+            if (operation !== "read" && options.models) {
+                return {models: kendo.stringify(options.models)};
+            }
+        }
+1. Store the scheduler event date fields (start and end) in UTC format as well. This would allow easier migration of your data between servers in different timezone.
+
+## The fields of kendo.data.SchedulerEvent
+
+The `kendo.data.SchedulerEvent` object has the following fields:
+
+* description `String` - the free test description of the scheduler event.
+* end `Date` - the date at which the event ends.
+* id `Number` - the unique identifier of the scheduler event. Events whose `id` is not set are considered as "new".
+* isAllDay `Boolean` - if the event is "all day" or not.
+* recurrenceException `String` - the recurrence exceptions.
+* recurrenceId `String|Number|Object` - the `id` of the recurrence parent. If set the current event is a recurrence exception.
+* recurrenceRule `String` - the recurrence rule which describes the repetition pattern of the event. Follows the [rfc5545](http://tools.ietf.org/html/rfc5545) specification.
+* start `Date` - the date at which the event starts.
+* title `String` - the title of the event which is displayed in the scheduler views.
+
+If your remote service stores and returns the scheduler events in a different format use the `schema.model.fields` and `schema.model.id` options of the data source to describe them.
+The "remote service binding" example shown above shows how to map remote service fields to client-side scheduler event fields:
+
+        schema: {
+            model: {
+                id: "taskId", // The "id" of the event is the "taskId" field. Mandatory.
+                fields: {
+                    // Describe the scheduler event fields and map them to the fields returned by the remote service
+                    taskId: {
+                        from: "TaskID", // The 'TaskID' server-side field is mapped to the 'taskId' client-side field
+                        type: "number"
+                    },
+                    title: {
+                        from: "Title", // The 'Title' server-side field is mapped to the 'title' client-side field
+                        defaultValue: "No title",
+                        validation: { required: true }
+                    },
+                    start: {
+                        type: "date",
+                        from: "Start" // The 'Start' server-side field is mapped to the 'start' client-side field
+                    },
+                    end: {
+                        type: "date",
+                        from: "End" // The 'End' server-side field is mapped to the 'end' client-side field
+                    },
+                    description: {
+                        from: "Description"
+                    },
+                    recurrenceId: { from: "RecurrenceID" },
+                    recurrenceRule: { from: "RecurrenceRule" },
+                    recurrenceException: { from: "RecurrenceException" },
+                    isAllDay: { type: "boolean", from: "IsAllDay" }
+                }
+            }
+        }
+
+> All `kendo.data.SchedulerEvent` fields must be listed when using `schema.model.fields`. The fields which represents the `id` of the event must also be set via `schema.model.id`.
+
+## Views
+
+Kendo UI Scheduler can display its events in different "views". The following views are supported:
+
+- day - displays the events in single day.
+- week - displays the events in a whole week.
+- month - display the events in single month.
+- agenda - display the events from the current date till next week (7 days).
+
+The "day" and "week" views are enabled by default. To enable other views or configure them use the [views](/api/web/scheduler#configuration-views) option:
+
+### Example - enable all scheduler views
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        "day", // a view configuration can be a string (the view type) or an object (the view configuration)
+        { type: "week", selected: true }, // the "week" view will appear as initially selected
+        "month",
+        "agenda"
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        },
+        {
+          id: 2,
+          start: new Date("2013/6/6 10:15 AM"),
+          end: new Date("2013/6/6 12:30 PM"),
+          title: "Job Interview"
+        }
+      ]
+    });
+    </script>
+
+## Getting reference to a Kendo UI Scheduler
+
+To get a reference to a Kendo UI Scheduler instance, use the jQuery `data` and pass "kendoScheduler" as argument:
+
+### Example - get reference to a Kendo UI Scheduler
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        }
+      ]
+    });
+    // Get reference to the kendo.ui.Scheduler instance
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    </script>
+
+## Using the API of Kendo UI Scheduler
+
+The scheduler widget exposes a set of [methods](/api/web/scheduler#methods) and [fields](/api/web/scheduler#fields) which the developer can use.
+
+### Example - using the API of Kendo UI Scheduler
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        }
+      ]
+    });
+    // Get reference to the kendo.ui.Scheduler instance
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.view("week"); // Go to week view
+    </script>
+
+## Subscribing to the events of Kendo UI Scheduler
+
+The scheduler widget supports a set of [events](/api/web/scheduler#events) which the developer can subscribe to. There are two ways to handle events:
+
+* Specify the JavaScript function which will handle the event during widget initialization.
+* Use the `bind` method of the widget.
+
+The event handler is the JavaScript function invoked when the event is fired. The argument of the event handler is a JavaScript object which contains event specific data.
+You can get a reference of the widget which fired the event via the `sender` field of the event argument.
+The function context of the event handler (available via the `this` keyword) is set to the instance of the widget which fired the event.
+
+### Example - subscribe to a scheduler event during initialization
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        }
+      ],
+      edit: function(e) {
+        console.log("edit");
+      }
+    });
+    </script>
+
+### Example - subscribe to a scheduler event using the bind method
+
+    <div id="scheduler"></div>
+    <script>
+    function scheduler_edit(e) {
+        console.log("edit");
+    }
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.bind("edit", scheduler_edit);
+    </script>
+
