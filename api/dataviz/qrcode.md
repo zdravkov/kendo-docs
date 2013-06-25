@@ -162,7 +162,7 @@ Redraws the QR code using the current value and options.
 
 ### setOptions
 
-Allows the QRCode to be configured with new options.
+Sets new options to the QRCode and redraws it.
 
 #### Parameters 
 
@@ -182,9 +182,7 @@ An object with the new options. All [configuration](qrcode#configuration) option
         width: 5,
         color: "#FF7D05"
       }
-    });
-    
-    qrCode.redraw();
+    });    
 
 ### value
 
