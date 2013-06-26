@@ -15,11 +15,11 @@ Gets or sets the QRCode value.
 Gets the border configuration.
 ### Size
 Gets or sets the QRCode size.
-### DarkModuleColor
-Gets or sets the QRCode dark module color.
+### Color
+Gets or sets the QRCode color.
 ### Background
 Gets or sets the QRCode background.
-### ErrorCorrectionLevel
+### ErrorCorrection
 Gets or sets the QRCode error correction level.
 
 

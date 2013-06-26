@@ -98,7 +98,7 @@ The color of the QR code. Accepts a valid CSS color string, including hex and rg
     $qRCode->color('value');
     ?>
 
-### errorCorrectionLevel
+### errorCorrection
 The error correction level used to encode the value.The possible values are:
 
 #### Returns
@@ -113,7 +113,7 @@ The error correction level used to encode the value.The possible values are:
 #### Example 
     <?php
     $qRCode = new \Kendo\Dataviz\UI\QRCode('QRCode');
-    $qRCode->errorCorrectionLevel('value');
+    $qRCode->errorCorrection('value');
     ?>
 
 ### size

@@ -99,14 +99,14 @@ The lambda which configures the border.
     %>
 
 
-### DarkModuleColor(`System.String`)
-Sets the dark module color of the QR code.
+### Color(`System.String`)
+Sets the color of the QR code.
 
 
 #### Parameters
 
 ##### color `System.String`
-The QR code dark module color.
+The QR code color.
 
 
 
@@ -114,23 +114,23 @@ The QR code dark module color.
 #### Example (Razor)
     @(Html.Kendo().QRCode()
         .Name("qrCode")
-        .DarkModuleColor("blue")
+        .Color("blue")
     )
 
 #### Example (ASPX)
     <%:Html.Kendo().QRCode()
         .Name("qrCode")
-        .DarkModuleColor("blue")
+        .Color("blue")
     %>
 
 
-### ErrorCorrectionLevel(`Kendo.Mvc.UI.QRErrorCorrectionLevel`)
+### ErrorCorrection(`Kendo.Mvc.UI.QRErrorCorrectionLevel`)
 Sets the error correction level of the QR code.
 
 
 #### Parameters
 
-##### errorCorrectionLevel [Kendo.Mvc.UI.QRErrorCorrectionLevel](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/QRErrorCorrectionLevel)
+##### errorCorrection [Kendo.Mvc.UI.QRErrorCorrectionLevel](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/QRErrorCorrectionLevel)
 The QR code error correction level.
 
 
@@ -139,13 +139,13 @@ The QR code error correction level.
 #### Example (Razor)
     @(Html.Kendo().QRCode()
         .Name("qrCode")
-        .ErrorCorrectionLevel(QRErrorCorrectionLevel.Q)
+        .ErrorCorrection(QRErrorCorrectionLevel.Q)
     )
 
 #### Example (ASPX)
     <%:Html.Kendo().QRCode()
         .Name("qrCode")
-        .ErrorCorrectionLevel(QRErrorCorrectionLevel.Q)
+        .ErrorCorrection(QRErrorCorrectionLevel.Q)
     %>
 
 

@@ -26,12 +26,12 @@ The color of the QR code. Accepts a valid CSS color string, including hex and rg
     <kendo:qRCode color="color">
     </kendo:qRCode>
 
-### errorCorrectionLevel `String`
+### errorCorrection `String`
 
 The error correction level used to encode the value.The possible values are:
 
 #### Example
-    <kendo:qRCode errorCorrectionLevel="errorCorrectionLevel">
+    <kendo:qRCode errorCorrection="errorCorrection">
     </kendo:qRCode>
 
 ### size `Object`
