@@ -18,17 +18,17 @@ The background color of the QR code. Accepts a valid CSS color string, including
     <kendo:qRCode background="background">
     </kendo:qRCode>
 
-### darkModuleColor `String`
+### color `String`
 
-The dark module color of the QR code. Accepts a valid CSS color string, including hex and rgb.
+The color of the QR code. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
-    <kendo:qRCode darkModuleColor="darkModuleColor">
+    <kendo:qRCode color="color">
     </kendo:qRCode>
 
 ### errorCorrectionLevel `String`
 
-The error correction level used to encode the value. The possible values are:
+The error correction level used to encode the value.The possible values are:
 
 #### Example
     <kendo:qRCode errorCorrectionLevel="errorCorrectionLevel">

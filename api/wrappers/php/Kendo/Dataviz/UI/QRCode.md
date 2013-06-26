@@ -80,8 +80,8 @@ The border of the QR code.
     $qRCode->border(array('color' => $color));
     ?>
 
-### darkModuleColor
-The dark module color of the QR code. Accepts a valid CSS color string, including hex and rgb.
+### color
+The color of the QR code. Accepts a valid CSS color string, including hex and rgb.
 
 #### Returns
 `\Kendo\Dataviz\UI\QRCode`
@@ -95,11 +95,11 @@ The dark module color of the QR code. Accepts a valid CSS color string, includin
 #### Example 
     <?php
     $qRCode = new \Kendo\Dataviz\UI\QRCode('QRCode');
-    $qRCode->darkModuleColor('value');
+    $qRCode->color('value');
     ?>
 
 ### errorCorrectionLevel
-The error correction level used to encode the value. The possible values are:
+The error correction level used to encode the value.The possible values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\QRCode`

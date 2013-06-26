@@ -20,8 +20,8 @@ The background color of the QR code. Accepts a valid CSS color string, including
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
       background: "red"
@@ -38,8 +38,8 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
       border: {
@@ -55,8 +55,8 @@ The width of the border in pixels. By default the border width is set to zero wh
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
       border: {
@@ -66,23 +66,23 @@ The width of the border in pixels. By default the border width is set to zero wh
     });
     </script>
 
-### darkModuleColor `String` *(default: "#000")*
+### color `String` *(default: "#000")*
 
-The dark module color of the QR code. Accepts a valid CSS color string, including hex and rgb.
+The color of the QR code. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
-      darkModuleColor: "#aa00bb"
+      color: "#aa00bb"
     });
     </script>
 
 ### errorCorrectionLevel `String` *(default: "L")*
 
-The error correction level used to encode the value. 
+The error correction level used to encode the value.
 
 The possible values are:
 
@@ -93,8 +93,8 @@ The possible values are:
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
       errorCorrectionLevel: "H"
@@ -107,8 +107,8 @@ Specifies the size of a QR code in pixels (i.e. "200px"). Numeric values are tre
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
       size: 300
@@ -117,8 +117,8 @@ Specifies the size of a QR code in pixels (i.e. "200px"). Numeric values are tre
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
       size: "300px"
@@ -131,8 +131,8 @@ The value of the QRCode.
 
 #### Example
 
-    <div id="qrCode"></div>      
-    <script>             
+    <div id="qrCode"></div>
+    <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html"
     });
@@ -164,7 +164,7 @@ Redraws the QR code using the current value and options.
 
 Sets new options to the QRCode and redraws it.
 
-#### Parameters 
+#### Parameters
 
 ##### options `Object`
 
@@ -182,7 +182,7 @@ An object with the new options. All [configuration](qrcode#configuration) option
         width: 5,
         color: "#FF7D05"
       }
-    });    
+    });
 
 ### value
 

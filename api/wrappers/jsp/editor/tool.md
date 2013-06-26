@@ -27,7 +27,7 @@ The JavaScript function which will be executed when the end-user clicks the tool
 
 ### name `String`
 
-The mandatory name of the tool. The built-in tools are "bold", "italic", "underline", "strikethrough", "fontName", "fontSize", "foreColor", "backColor", "justifyLeft", "justifyCenter", "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent", "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
+The mandatory name of the tool.
 
 #### Example
     <kendo:editor-tool name="name">
@@ -54,7 +54,7 @@ The text which will be displayed when the end-user hovers the tool button with t
 
 ### kendo:editor-tool-items
 
-For tools that display a list of items (fontName, fontSize, formatBlock), this option specifies the items in the shown list.
+For tools that display a list of items (fontName, fontSize, formatting), this option specifies the items in the shown list.
 
 More documentation is available at [kendo:editor-tool-items](editor/tool-items).
 

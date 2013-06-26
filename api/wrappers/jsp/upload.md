@@ -39,6 +39,14 @@ client-side events to build your own UI.
     <kendo:upload showFileList="showFileList">
     </kendo:upload>
 
+### template `String`
+
+The template used to render the files in the list
+
+#### Example
+    <kendo:upload template="template">
+    </kendo:upload>
+
 
 ##  Configuration JSP Tags
 

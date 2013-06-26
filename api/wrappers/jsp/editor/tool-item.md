@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:editor-tool-item\>
 
-For tools that display a list of items (fontName, fontSize, formatBlock), this option specifies the items in the shown list.
+For tools that display a list of items (fontName, fontSize, formatting), this option specifies the items in the shown list.
 
 #### Example
     <kendo:editor-tool-items>
@@ -15,6 +15,14 @@ For tools that display a list of items (fontName, fontSize, formatBlock), this o
     </kendo:editor-tool-items>
 
 ## Configuration Attributes
+
+### context `String`
+
+Only applicable for the formatting tool. Specifies the context in which the option will be available.
+
+#### Example
+    <kendo:editor-tool-item context="context">
+    </kendo:editor-tool-item>
 
 ### text `String`
 

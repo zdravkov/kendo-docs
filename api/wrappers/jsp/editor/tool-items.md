@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:editor-tool-items\>
 
-For tools that display a list of items (fontName, fontSize, formatBlock), this option specifies the items in the shown list.
+For tools that display a list of items (fontName, fontSize, formatting), this option specifies the items in the shown list.
 
 #### Example
     <kendo:editor-tool>
@@ -21,7 +21,7 @@ For tools that display a list of items (fontName, fontSize, formatBlock), this o
 
 ### kendo:editor-tool-item
 
-For tools that display a list of items (fontName, fontSize, formatBlock), this option specifies the items in the shown list.
+For tools that display a list of items (fontName, fontSize, formatting), this option specifies the items in the shown list.
 
 More documentation is available at [kendo:editor-tool-item](editor/tool-item).
 
