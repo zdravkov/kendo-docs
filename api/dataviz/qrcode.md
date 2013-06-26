@@ -80,7 +80,7 @@ The color of the QR code. Accepts a valid CSS color string, including hex and rg
     });
     </script>
 
-### errorCorrectionLevel `String` *(default: "L")*
+### errorCorrection `String` *(default: "L")*
 
 The error correction level used to encode the value.
 
@@ -97,7 +97,7 @@ The possible values are:
     <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.kendoui.com/dataviz/overview/index.html",
-      errorCorrectionLevel: "H"
+      errorCorrection: "H"
     });
     </script>
 
@@ -175,7 +175,7 @@ An object with the new options. All [configuration](qrcode#configuration) option
     var qrCode = $("#qrCode").data("kendoQRCode");
 
     qrCode.setOptions({
-      errorCorrectionLevel: "H",
+      errorCorrection: "H",
       size: 300,
       background: "#FFB821",
       border: {
