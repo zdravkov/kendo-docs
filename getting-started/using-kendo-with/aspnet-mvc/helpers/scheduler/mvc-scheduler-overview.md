@@ -22,8 +22,6 @@ Here is how to configure a simple Kendo Scheduler:
         public class Projection : ISchedulerEvent
 		{
 	        public string Title { get; set; }
-	        public string Image { get; set; }
-	        public string Imdb { get; set; }
 	        public DateTime Start { get; set; }
 	        public DateTime End { get; set; }
 	        public string Description { get; set; }
@@ -42,22 +40,16 @@ Here is how to configure a simple Kendo Scheduler:
             List<Projection> cinemaSchedule = new List<Projection> { 
                 new Projection {
                     Title = "Fast and furious 6",
-                    Image = "fast-and-furious.jpg",
-                    Imdb = "http://www.Imdb.com/Title/tt1905041/",
                     Start = new DateTime(2013,6,13,17,00,00),
                     End= new DateTime(2013,6,13,18,30,00)
                 },
                 new Projection {
                     Title= "The Internship",
-                    Image= "the-internship.jpg",
-                    Imdb= "http://www.Imdb.com/Title/tt2234155/",
                     Start= new DateTime(2013,6,13,14,00,00),
                     End= new DateTime(2013,6,13,15,30,00)
                 },
                 new Projection {
                     Title = "The Perks of Being a Wallflower",
-                    Image =  "wallflower.jpg",
-                    Imdb =  "http://www.Imdb.com/Title/tt1659337/",
                     Start =  new DateTime(2013,6,13,16,00,00),
                     End =  new DateTime(2013,6,13,17,30,00)
                 }};
