@@ -222,6 +222,32 @@ The data field containing the high value.
 
 The data field containing the series value.
 
+### navigator.series.categoryField `String` *(default: "category")*
+
+The data item field which contains the category name or date.
+
+> The points will be rendered in chronological order if the category is a date.
+
+> If specified, the [dateField](#configuration-dateField) option is used as a default.
+
+#### Example - set series date category field
+
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+        series: [{
+          type: "line",
+          field: "value",
+          categoryField: "date",
+          missingValues: "interpolate",
+          data: [
+            { value: 1, date: new Date(2012, 1, 1) },
+            { value: 2, date: new Date(2012, 1, 2) }
+          ]
+        }]
+    });
+    </script>
+
 ### navigator.series.groupNameTemplate `String`
 
 The [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
@@ -680,6 +706,33 @@ The border of the markers.
 ### navigator.series.markers.border.width `Number`*(default: 0)*
 
  The width of the border.
+
+### navigator.series.markers.rotation `Number|Function`
+
+The rotation angle of the markers.
+
+#### Example
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+        navigator: {
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            missingValues: "interpolate",
+            markers: {
+              type: "square",
+              rotation: 45
+            },
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+        }
+    });
+    </script>
 
 ### navigator.series.markers.size `Number`*(default: 6)*
 
@@ -2545,6 +2598,34 @@ The data field containing the high value.
 
 The data field containing the series value.
 
+### series.categoryField `String` *(default: "category")*
+
+The data item field which contains the category name or date.
+
+> The points will be rendered in chronological order if the category is a date.
+
+> If specified, the [dateField](#configuration-dateField) option is used as a default.
+
+#### Example - set series date category field
+
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+        series: [{
+          type: "line",
+          field: "value",
+          categoryField: "date",
+          data: [
+            { value: 1, date: new Date(2012, 1, 1) },
+            { value: 2, date: new Date(2012, 1, 2) }
+          ]
+        }],
+        categoryAxis: {
+          baseUnit: "days"
+        }
+    });
+    </script>
+
 ### series.currentField `String`
 
 The data field containing the current value.
@@ -3060,6 +3141,31 @@ The border of the markers.
 ### series.markers.size `Number|Function`*(default: 6)*
 
  The marker size.
+
+### series.markers.rotation `Number|Function`
+
+The rotation angle of the markers.
+
+#### Example
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+        series: [{
+          type: "line",
+          field: "value",
+          categoryField: "date",
+          missingValues: "interpolate",
+          markers: {
+            type: "square",
+            rotation: 45
+          },
+          data: [
+            { value: 1, date: new Date(2012, 1, 1) },
+            { value: 2, date: new Date(2012, 1, 2) }
+          ]
+        }]
+    });
+    </script>
 
 ### series.markers.type `String|Function`*(default: "circle")*
 
