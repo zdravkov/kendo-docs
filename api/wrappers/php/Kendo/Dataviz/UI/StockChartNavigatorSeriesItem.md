@@ -133,7 +133,7 @@ The data field containing the point color.** Applicable for column, candlestick 
     ?>
 
 ### dashType
-The series line dash type.** Applicable only to line series **
+The dash type of line chart.The following dash types are supported:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartNavigatorSeriesItem`
@@ -241,7 +241,7 @@ The distance between category clusters.** Applicable for column, candlestick and
     ?>
 
 ### groupNameTemplate
-Name template for auto-generated series when binding to grouped data.Template variables:
+The template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartNavigatorSeriesItem`

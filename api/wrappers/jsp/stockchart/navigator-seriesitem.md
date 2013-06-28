@@ -59,7 +59,7 @@ The data field containing the point color.** Applicable for column, candlestick 
 
 ### dashType `String`
 
-The series line dash type.** Applicable only to line series **
+The dash type of line chart.The following dash types are supported:
 
 #### Example
     <kendo:stockChart-navigator-seriesItem dashType="dashType">
@@ -107,7 +107,7 @@ The distance between category clusters.** Applicable for column, candlestick and
 
 ### groupNameTemplate `String`
 
-Name template for auto-generated series when binding to grouped data.Template variables:
+The template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
 
 #### Example
     <kendo:stockChart-navigator-seriesItem groupNameTemplate="groupNameTemplate">

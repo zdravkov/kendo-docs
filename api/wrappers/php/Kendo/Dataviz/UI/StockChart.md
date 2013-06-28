@@ -233,7 +233,7 @@ Sets the data source of the dataSource.
 
 ### dateField
 The field containing the point date.
-It is used as a default field for all date axes, including the navigator pane.The data item field value must be either:
+It is used as a default categoryField for all series.The data item field value must be either:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -986,82 +986,6 @@ Adds one or more StockChartValueAxisItem to the StockChart.
     $first  = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
     $second = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
     $stockChart->addValueAxisItem($first, $second);
-    ?>
-
-### addXAxisItem
-
-Adds one or more StockChartXAxisItem to the StockChart.
-
-#### Returns
-`\Kendo\Dataviz\UI\StockChart`
-
-#### Parameters
-
-##### $value[, $value2, ...] `\Kendo\Dataviz\UI\StockChartXAxisItem|array`
-
-#### Example - using \Kendo\Dataviz\UI\StockChartXAxisItem
-
-    <?php
-    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $xAxisItem = new \Kendo\Dataviz\UI\StockChartXAxisItem();
-    $baseUnit = 'value';
-    $xAxisItem->baseUnit($baseUnit);
-    $stockChart->addXAxisItem($xAxisItem);
-    ?>
-
-#### Example - using array
-
-    <?php
-    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $baseUnit = 'value';
-    $stockChart->addXAxisItem(array('baseUnit' => $baseUnit));
-    ?>
-
-#### Example - adding more than one StockChartXAxisItem
-
-    <?php
-    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $first  = new \Kendo\Dataviz\UI\StockChartXAxisItem();
-    $second = new \Kendo\Dataviz\UI\StockChartXAxisItem();
-    $stockChart->addXAxisItem($first, $second);
-    ?>
-
-### addYAxisItem
-
-Adds one or more StockChartYAxisItem to the StockChart.
-
-#### Returns
-`\Kendo\Dataviz\UI\StockChart`
-
-#### Parameters
-
-##### $value[, $value2, ...] `\Kendo\Dataviz\UI\StockChartYAxisItem|array`
-
-#### Example - using \Kendo\Dataviz\UI\StockChartYAxisItem
-
-    <?php
-    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $yAxisItem = new \Kendo\Dataviz\UI\StockChartYAxisItem();
-    $baseUnit = 'value';
-    $yAxisItem->baseUnit($baseUnit);
-    $stockChart->addYAxisItem($yAxisItem);
-    ?>
-
-#### Example - using array
-
-    <?php
-    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $baseUnit = 'value';
-    $stockChart->addYAxisItem(array('baseUnit' => $baseUnit));
-    ?>
-
-#### Example - adding more than one StockChartYAxisItem
-
-    <?php
-    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $first  = new \Kendo\Dataviz\UI\StockChartYAxisItem();
-    $second = new \Kendo\Dataviz\UI\StockChartYAxisItem();
-    $stockChart->addYAxisItem($first, $second);
     ?>
 
 ### zoom

@@ -21,7 +21,7 @@ Indicates whether the chart will call read on the data source initially.
 ### dateField `String`
 
 The field containing the point date.
-It is used as a default field for all date axes, including the navigator pane.The data item field value must be either:
+It is used as a default categoryField for all series.The data item field value must be either:
 
 #### Example
     <kendo:stockChart dateField="dateField">
@@ -175,32 +175,6 @@ More documentation is available at [kendo:stockChart-valueAxis](stockchart/value
 
     <kendo:stockChart>
         <kendo:stockChart-valueAxis></kendo:stockChart-valueAxis>
-    </kendo:stockChart>
-
-### kendo:stockChart-xAxis
-
-Scatter charts X-axis configuration options.
-Includes all valueAxis options in addition to:
-
-More documentation is available at [kendo:stockChart-xAxis](stockchart/xaxis).
-
-#### Example
-
-    <kendo:stockChart>
-        <kendo:stockChart-xAxis></kendo:stockChart-xAxis>
-    </kendo:stockChart>
-
-### kendo:stockChart-yAxis
-
-Scatter charts Y-axis configuration options.
-Includes all valueAxis options in addition to:
-
-More documentation is available at [kendo:stockChart-yAxis](stockchart/yaxis).
-
-#### Example
-
-    <kendo:stockChart>
-        <kendo:stockChart-yAxis></kendo:stockChart-yAxis>
     </kendo:stockChart>
 
 

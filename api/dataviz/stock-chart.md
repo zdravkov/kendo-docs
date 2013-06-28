@@ -14,7 +14,7 @@ publish: true
 ### dateField `String`*(default: "date")*
 
 The field containing the point date.
-It is used as a default `field` for all date axes, including the navigator pane.
+It is used as a default `categoryField` for all series.
 
 The data item field value must be either:
 
@@ -114,44 +114,51 @@ The visibility of the navigator.
 
 The type of the series. Available types:
 
-* area
-* column
-* line
 * candlestick, ohlc
+* column
+* bullet
+* area
+* line
 
 ### navigator.series.dashType `String`*(default: "solid")*
 
-The series line dash type.
+The dash type of line chart.
 
-** Applicable only to line series **
+> The `dashType` option is taken into consideration only if the [series.type](#configuration-series.type) option is set to "line".
 
-#### *"solid"*
+The following dash types are supported:
 
-Specifies a solid line.
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
 
-#### *"dot"*
+#### Example - set the chart legend border dash type
 
-Specifies a line consisting of dots.
+  <div id="stock-chart"></div>
+  <script>
+  $("#stock-chart").kendoStockChart({
+    series: [
+      {
+        dashType: "dashDot",
+        type: "line",
+        data: [1, 2, 3]
+      }
+    ],
+    categoryAxis: {
+      baseUnit: "days",
+      categories: [
+        new Date(2012, 1, 1),
+        new Date(2012, 1, 2),
+        new Date(2012, 1, 3)
+      ]
+    }
+  });
+  </script>
 
-#### *"dash"*
-
-Specifies a line consisting of dashes.
-
-#### *"longDash"*
-
-Specifies a line consisting of a repeating pattern of long-dash.
-
-#### *"dashDot"*
-
-Specifies a line consisting of a repeating pattern of dash-dot.
-
-#### *"longDashDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot.
-
-#### *"longDashDotDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### navigator.series.data `Array`
 
@@ -161,6 +168,49 @@ Array of data items. The data item type can be either a:
 * Array of numbers. Available for area, column and line series.
 * Array of arrays of numbers. Available for:
     * OHLC and candlestick series (open, high, low, close)
+
+#### Example - set the chart series data as array of objects
+
+  <div id="stock-chart"></div>
+  <script>
+  $("#stock-chart").kendoStockChart({
+    series: [
+      {
+        type: "candlestick",
+        data: [{
+          open: 2,
+          high: 4,
+          low: 1,
+          close: 3
+        }]
+      }
+    ],
+    categoryAxis: {
+      categories: [
+        new Date(2012, 1, 1)
+      ]
+    }
+  });
+  </script>
+
+#### Example - set the chart series data as array of arrays
+
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+    series: [
+      {
+        type: "candlestick",
+        data: [2, 4, 1, 3]
+      }
+    ],
+    categoryAxis: {
+      categories: [
+        new Date(2012, 1, 1)
+      ]
+    }
+    });
+    </script>
 
 ### navigator.series.highField `String`
 
@@ -174,14 +224,40 @@ The data field containing the series value.
 
 ### navigator.series.groupNameTemplate `String`
 
-Name template for auto-generated series when binding to grouped data.
+The [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
 
-Template variables:
+The fields which can be used in the template are:
 
-*   **series** - the series options
-*   **group** - the data group
-*   **group.field** - the name of the field used for grouping
-*   **group.value** - the field value for this group.
+*   series - the series options
+*   group - the data group
+*   group.field - the name of the field used for grouping
+*   group.value - the field value for this group.
+
+#### Example - set the chart series group name template
+
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+      dataSource: {
+        data: [
+          { value: 1, category: "One", date: new Date(2012, 1, 1)},
+          { value: 2, category: "Two", date: new Date(2012, 1, 2)}
+        ],
+        group: { field: "category" }
+      },
+      dateField: "date",
+      series: [
+        {
+          field: "value",
+          groupNameTemplate: "Category: #: group.value #"
+        }
+      ],
+      legend: {
+        visible: true,
+        position: "bottom"
+      }
+    });
+    </script>
 
 ### navigator.series.name `String`
 
@@ -4537,1182 +4613,6 @@ Template variables:
     });
 
 ### valueAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
-
-A value indicating if the tooltip should be displayed.
-
-### xAxis `Array`
-
-Scatter charts X-axis configuration options.
-Includes **all valueAxis options** in addition to:
-
-### xAxis.color `String`
-
-Color to apply to all axis elements.
-Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
-
-### xAxis.type `String` *(default: "numeric")*
-
-The axis type.
-
-Note: The Chart will automatically switch to a date axis if the series X value
-is of type Date. Specify type explicitly when such behavior is undesired.
-
-### xAxis.axisCrossingValue `Object | Date | Array`
-
-Value at which the Y axis crosses this axis. (Only for object)
-
-Value indicies at which the Y axes cross the value axis. (Only for array)
-
-Date at which the Y axis crosses this axis. (Only for date)
-
-**Note:** Specify a value greater than or equal to the
-axis maximum value to denote the far end of the axis.
-
-#### Example
-
-    $("#chart").kendoChart({
-         ...,
-         xAxis: {
-             axisCrossingValue: [0, 1000]
-         },
-         yAxis: [{ }, { name: "secondary" }],
-         ...
-    });
-
-### xAxis.baseUnit `String`
-
-The base time interval for the axis labels.
-The default baseUnit is determined automatically from the value range. Available options:
-
-* minutes
-* hours
-* days
-* weeks
-* months
-* years
-
-### xAxis.labels `Object`
-
-Configures the axis labels.
-
-### xAxis.labels.background `String`
-
-The background color of the labels. Any valid CSS color string will work here, including
-hex and rgb
-
-### xAxis.labels.border `Object`
-
-The border of the labels.
-
-### xAxis.labels.border.color `String`*(default: "black")*
-
-The color of the border. Any valid CSS color string will work here, including
-hex and rgb.
-
-### xAxis.labels.border.dashType `String`*(default: "solid")*
-
-The dash type of the border.
-
-#### *"solid"*
-
-Specifies a solid line.
-
-#### *"dot"*
-
-Specifies a line consisting of dots.
-
-#### *"dash"*
-
-Specifies a line consisting of dashes.
-
-#### *"longDash"*
-
-Specifies a line consisting of a repeating pattern of long-dash.
-
-#### *"dashDot"*
-
-Specifies a line consisting of a repeating pattern of dash-dot.
-
-#### *"longDashDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot.
-
-#### *"longDashDotDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-
-### xAxis.labels.border.width `Number`*(default: 0)*
-
-The width of the border.
-
-### xAxis.labels.color `String`
-
-The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
-
-### xAxis.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
-
-The font style of the labels.
-
-### xAxis.labels.format `String`
-
-The format of the labels.
-
-#### Example
-
-    $("#chart").kendoChart({
-        xAxis: {
-           labels: {
-               // set the format to currency
-               format: "C"
-           }
-        },
-        ...
-    });
-
-### xAxis.labels.margin `Number|Object`*(default: 0)*
-
-The margin of the labels.
-
-#### Example
-
-    // sets the top, right, bottom and left margin to 3px.
-    margin: 3
-
-    // sets the top and left margin to 1px
-    // margin right and bottom are with 0px (by default)
-    margin: { top: 1, left: 1 }
-
-### xAxis.labels.mirror `Boolean`
-
-Mirrors the axis labels and ticks.
-If the labels are normally on the left side of the axis,
-mirroring the axis will render them to the right.
-
-### xAxis.labels.padding `Number | Object`*(default: 0)*
-
-The padding of the labels.
-
-#### Example
-
-    // sets the top, right, bottom and left padding to 3px.
-    padding: 3
-
-    // sets the top and left padding to 1px
-    // padding right and bottom are with 0px (by default)
-    padding: { top: 1, left: 1 }
-
-### xAxis.labels.rotation `Number`*(default: 0)*
-
-The rotation angle of the labels.
-
-### xAxis.labels.skip `Number`*(default: 1)*
-
-Number of labels to skip.
-Skips rendering the first n labels.
-
-### xAxis.labels.step `Number`*(default: 1)*
-
-Label rendering step.
-Every n-th label is rendered where n is the step
-
-### xAxis.labels.template `String | Function`
-
-The label template.
-
-### xAxis.labels.visible `Boolean`*(default: true)*
-
-The visibility of the labels.
-
-### xAxis.labels.culture `String`
-
-Culture to use for formatting the dates. See [Globalization](/getting-started/framework/globalization/overview) for more information.
-By default it uses the global culture.
-
-### xAxis.labels.dateFormats `Object`
-
-Date format strings
-
-#### *"hours"*
-
-"HH:mm"
-
-#### *"days"*
-
-"M/d"
-
-#### *"weeks"*
-
-"M/d"
-
-#### *"months"*
-
-"MMM 'yy"
-
-#### *"years"*
-
-"yyyy"
-
-The Chart will choose the appropriate format for the current `baseUnit`.
-Setting the labels **format** option will override these defaults.
-
-### xAxis.majorUnit `Number`
-
-The interval between major divisions in base units.
-
-### xAxis.max `Object`
-
-The end date of the axis.
-This is often used in combination with the **min** configuration option.
-
-### xAxis.min `Object`
-
-The maximum value of the axis.
-This is often used in combination with the **max** configuration option.
-
-### xAxis.minorUnit `Number`
-
-The interval between minor divisions in base units.
-It defaults to 1/5th of the majorUnit.
-
-### xAxis.line `Object`
-
-Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
-
-### xAxis.line.color `String`*(default: "black")*
-
-The color of the line. This will also effect the major and minor ticks, but
-not the grid lines.
-
-### xAxis.line.dashType `String`*(default: "solid")*
-
-The dash type of the line.
-
-#### *"solid"*
-
-Specifies a solid line.
-
-#### *"dot"*
-
-Specifies a line consisting of dots.
-
-#### *"dash"*
-
-Specifies a line consisting of dashes.
-
-#### *"longDash"*
-
-Specifies a line consisting of a repeating pattern of long-dash.
-
-#### *"dashDot"*
-
-Specifies a line consisting of a repeating pattern of dash-dot.
-
-#### *"longDashDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot.
-
-#### *"longDashDotDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-
-### xAxis.line.visible `Boolean`*(default: true)*
-
-The visibility of the line.
-
-### xAxis.line.width `Number`*(default: 1)*
-
-The width of the line. This will also effect the major and minor ticks, but
-not the grid lines.
-
-### xAxis.majorGridLines `Object`
-
-Configures the major grid lines. These are the lines that are an extension of the major ticks through the
-body of the chart.
-
-### xAxis.majorGridLines.color `String`*(default: "black")*
-
-The color of the lines.
-
-### xAxis.majorGridLines.visible `Boolean`*(default: true)*
-
-The visibility of the lines.
-
-### xAxis.majorGridLines.width `Number`*(default: 1)*
-
-The width of the lines.
-
-### xAxis.majorTicks `Object`
-
-The major ticks of the axis.
-
-### xAxis.majorTicks.size `Number`*(default: 4)*
-
-The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
-
-### xAxis.majorTicks.visible `Boolean`*(default: true)*
-
-The visibility of the major ticks.
-
-### xAxis.name `Object`*(default: "primary")*
-
-The unique axis name.
-
-### xAxis.narrowRange `Boolean`*(default: false)*
-
-Prevents the automatic axis range from snapping to 0.
-
-### xAxis.pane `String`
-
-The name of the pane that the axis should be rendered in.
-The axis will be rendered in the first (default) pane if not set.
-
-### xAxis.plotBands `Array`
-
-The plot bands of the xAxis.
-
-### xAxis.plotBands.from `Number`
-
-The start position of the plot band in axis units.
-
-### xAxis.plotBands.to `Number`
-
-The end position of the plot band in axis units.
-
-### xAxis.plotBands.color `String`
-
-The color of the plot band.
-
-### xAxis.plotBands.opacity `Number`
-
-The opacity of the plot band.
-
-### xAxis.reverse `Boolean`*(default: false)*
-
-Reverses the axis direction -
-values increase from right to left and from top to bottom.
-
-### xAxis.title `Object`
-
-The title of the value axis.
-
-### xAxis.title.background `String`
-
-The background color of the title. Any valid CSS color string will work here, including
-hex and rgb.
-
-### xAxis.title.border `Object`
-
-The border of the title.
-
-### xAxis.title.border.color `String`*(default: "black")*
-
-The color of the border.
-
-### xAxis.title.border.dashType `String`*(default: "solid")*
-
-The dash type of the border.
-
-#### *"solid"*
-
-Specifies a solid line.
-
-#### *"dot"*
-
-Specifies a line consisting of dots.
-
-#### *"dash"*
-
-Specifies a line consisting of dashes.
-
-#### *"longDash"*
-
-Specifies a line consisting of a repeating pattern of long-dash.
-
-#### *"dashDot"*
-
-Specifies a line consisting of a repeating pattern of dash-dot.
-
-#### *"longDashDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot.
-
-#### *"longDashDotDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-
-### xAxis.title.border.width `Number`*(default: 0)*
-
-The width of the border.
-
-### xAxis.title.color `String`
-
-The text color of the title. Any valid CSS color string will work here, including hex and rgb.
-
-### xAxis.title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
-
-The font style of the title.
-
-### xAxis.title.margin `Number | Object`*(default: 5)*
-
-The margin of the title.
-
-#### Example
-
-    // sets the top, right, bottom and left margin to 3px.
-    margin: 3
-
-    // sets the top and left margin to 1px
-    // margin right and bottom are with 0px (by default)
-    margin: { top: 1, left: 1 }
-
-### xAxis.title.padding `Number | Object`*(default: 0)*
-
-The padding of the title.
-
-#### Example
-
-    // sets the top, right, bottom and left padding to 3px.
-    padding: 3
-
-    // sets the top and left padding to 1px
-    // padding right and bottom are with 0px (by default)
-    padding: { top: 1, left: 1 }
-
-### xAxis.title.position `String`*(default: "center")*
-
-The position of the title.
-
-#### *"top"*
-
-The axis title is positioned on the top (applicable to vertical axis).
-
-#### *"bottom"*
-
-The axis title is positioned on the bottom (applicable to vertical axis).
-
-#### *"left"*
-
-The axis title is positioned on the left (applicable to horizontal axis).
-
-#### *"right"*
-
-"The axis title is positioned on the right (applicable to horizontal axis).
-
-#### *"center"*
-
-"The axis title is positioned in the center.
-
-### xAxis.title.rotation `Number`*(default: 0)*
-
-The rotation angle of the title.
-
-### xAxis.title.text `String`
-
-The text of the title.
-
-### xAxis.title.visible `Boolean`*(default: true)*
-
-The visibility of the title.
-
-### xAxis.visible `Boolean`*(default: true)*
-
-The visibility of the axis.
-
-### xAxis.crosshair `Object`
-
-The crosshair configuration options.
-
-### xAxis.crosshair.color `String`
-
-The color of the crosshair.
-
-### xAxis.crosshair.width `Number`
-
-The width of the crosshair.
-
-### xAxis.crosshair.opacity `Number`
-
-The opacity of the crosshair.
-
-### xAxis.crosshair.dashType `Number`
-
-The dash type of the crosshair.
-
-### xAxis.crosshair.visible `Boolean`*(default: false)*
-
-The dash type of the crosshair.
-
-### xAxis.crosshair.tooltip `Object`
-
-The crosshar tooltip configuration options.
-
-### xAxis.crosshair.tooltip.background `String`
-
-The background color of the tooltip.
-
-### xAxis.crosshair.tooltip.border `Object`
-
-The border configuration options.
-
-### xAxis.crosshair.tooltip.border.color `String`*(default: "black")*
-
-The color of the border.
-
-### xAxis.crosshair.tooltip.border.width `Number`*(default: 0)*
-
-The width of the border.
-
-### xAxis.crosshair.tooltip.color `String`
-
-The text color of the tooltip.
-
-### xAxis.crosshair.tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
-
-The tooltip font.
-
-### xAxis.crosshair.tooltip.format `String`
-
-The tooltip format.
-
-#### Example
-
-    //sets format of the tooltip
-    format: "C"
-
-### xAxis.crosshair.tooltip.padding `Number|Object`
-
-The padding of the tooltip.
-
-#### Example
-
-    // sets the top, right, bottom and left padding to 3px.
-    padding: 3
-
-    // sets the top and left padding to 1px
-    // right and bottom padding are left at their default values
-    padding: { top: 1, left: 1 }
-
-### xAxis.crosshair.tooltip.template `String|Function`
-
-The tooltip template.
-Template variables:
-
-*   **value** - the point value (either a number or an object)
-
-#### Example
-
-    // chart intialization
-    $("#chart").kendoChart({
-         title: {
-             text: "My Chart Title"
-         },
-         series: [{
-                 name: "Series 1",
-                 data: [200, 450, 300, 125]
-         }],
-         categoryAxis: {
-             categories: [2000, 2001, 2002, 2003]
-         },
-         xAxis: {
-             crosshair: {
-                 visible: true,
-                 tooltip: {
-                     visible: true,
-                     template: "value: #= value #"
-                 }
-             }
-         }
-    });
-
-### xAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
-
-A value indicating if the tooltip should be displayed.
-
-### yAxis `Array`
-
-Scatter charts Y-axis configuration options.
-Includes **all valueAxis options** in addition to:
-
-### yAxis.type `String`*(default: "numeric")*
-
-The axis type.
-
-Note: The Chart will automatically switch to a date axis if the series X value
-is of type Date. Specify type explicitly when such behavior is undesired.
-
-### yAxis.axisCrossingValue `Object | Date | Array`
-
-Value at which the Y axis crosses this axis. (Only for object)
-
-Value indicies at which the Y axes cross the value axis. (Only for array)
-
-Date at which the Y axis crosses this axis. (Only for date)
-
-**Note:** Specify a value greater than or equal to the
-axis maximum value to denote the far end of the axis.
-
-#### Example
-
-    $("#chart").kendoChart({
-         ...,
-         yAxis: {
-             axisCrossingValue: [0, 1000]
-         },
-         xAxis: [{ }, { name: "secondary" }],
-         ...
-    });
-
-### yAxis.baseUnit `String`
-
-The base time interval for the axis labels.
-The default baseUnit is determined automatically from the value range. Available options:
-
-* minutes
-* hours
-* days
-* weeks
-* months
-* years
-
-### yAxis.color `String`
-
-Color to apply to all axis elements.
-Individual color settings for line and labels take priority. Any valid CSS color string will work here, including hex and rgb.
-
-### yAxis.labels `Object`
-
-Configures the axis labels.
-
-### yAxis.labels.background `String`
-
-The background color of the labels. Any valid CSS color string will work here, including
-hex and rgb
-
-### yAxis.labels.border `Object`
-
-The border of the labels.
-
-### yAxis.labels.border.color `String`*(default: "black")*
-
-The color of the border. Any valid CSS color string will work here, including
-hex and rgb.
-
-### yAxis.labels.border.dashType `String`*(default: "solid")*
-
-The dash type of the border.
-
-#### *"solid"*
-
-Specifies a solid line.
-
-#### *"dot"*
-
-Specifies a line consisting of dots.
-
-#### *"dash"*
-
-Specifies a line consisting of dashes.
-
-#### *"longDash"*
-
-Specifies a line consisting of a repeating pattern of long-dash.
-
-#### *"dashDot"*
-
-Specifies a line consisting of a repeating pattern of dash-dot.
-
-#### *"longDashDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot.
-
-#### *"longDashDotDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-
-### yAxis.labels.border.width `Number`*(default: 0)*
-
-The width of the border.
-
-### yAxis.labels.color `String`
-
-The text color of the labels. Any valid CSS color string will work here, including hex and rgb.
-
-### yAxis.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
-
-The font style of the labels.
-
-### yAxis.labels.format `String`
-
-The format of the labels.
-
-#### Example
-
-    $("#chart").kendoChart({
-        yAxis: {
-           labels: {
-               // set the format to currency
-               format: "C"
-           }
-        },
-        ...
-    });
-
-### yAxis.labels.margin `Number|Object`*(default: 0)*
-
-The margin of the labels.
-
-#### Example
-
-    // sets the top, right, bottom and left margin to 3px.
-    margin: 3
-
-    // sets the top and left margin to 1px
-    // margin right and bottom are with 0px (by default)
-    margin: { top: 1, left: 1 }
-
-### yAxis.labels.mirror `Boolean`
-
-Mirrors the axis labels and ticks.
-If the labels are normally on the left side of the axis,
-mirroring the axis will render them to the right.
-
-### yAxis.labels.padding `Number | Object`*(default: 0)*
-
-The padding of the labels.
-
-#### Example
-
-    // sets the top, right, bottom and left padding to 3px.
-    padding: 3
-
-    // sets the top and left padding to 1px
-    // padding right and bottom are with 0px (by default)
-    padding: { top: 1, left: 1 }
-
-### yAxis.labels.rotation `Number`*(default: 0)*
-
-The rotation angle of the labels.
-
-### yAxis.labels.skip `Number`*(default: 1)*
-
-Number of labels to skip.
-Skips rendering the first n labels.
-
-### yAxis.labels.step `Number`*(default: 1)*
-
-Label rendering step.
-Every n-th label is rendered where n is the step
-
-### yAxis.labels.template `String | Function`
-
-The label template.
-
-### yAxis.labels.visible `Boolean`*(default: true)*
-
-The visibility of the labels.
-
-### yAxis.labels.culture `String`
-
-Culture to use for formatting the dates. See [Globalization](/getting-started/framework/globalization/overview) for more information.
-It defaults to the global culture.
-
-### yAxis.labels.dateFormats `Object`
-
-Date format strings
-
-#### *"hours"*
-
-"HH:mm"
-
-#### *"days"*
-
-"M/d"
-
-#### *"weeks"*
-
-"M/d"
-
-#### *"months"*
-
-"MMM 'yy"
-
-#### *"years"*
-
-"yyyy"
-
-The Chart will choose the appropriate format for the current `baseUnit`.
-Setting the labels **format** option will override these defaults.
-
-### yAxis.majorUnit `Number`
-
-The interval between major divisions in base units.
-
-### yAxis.max `Object`
-
-The end date of the axis.
-This is often used in combination with the **min** configuration option.
-
-### yAxis.min `Object`
-
-The maximum value of the axis.
-This is often used in combination with the **max** configuration option.
-
-### yAxis.minorUnit `Number`
-
-The interval between minor divisions in base units.
-It defaults to 1/5th of the majorUnit.
-
-### yAxis.line `Object`
-
-Configures the axis line. This will also affect the major and minor ticks, but not the grid lines.
-
-### yAxis.line.color `String`*(default: "black")*
-
-The color of the line. This will also effect the major and minor ticks, but
-not the grid lines.
-
-### yAxis.line.dashType `String`*(default: "solid")*
-
-The dash type of the line.
-
-#### *"solid"*
-
-Specifies a solid line.
-
-#### *"dot"*
-
-Specifies a line consisting of dots.
-
-#### *"dash"*
-
-Specifies a line consisting of dashes.
-
-#### *"longDash"*
-
-Specifies a line consisting of a repeating pattern of long-dash.
-
-#### *"dashDot"*
-
-Specifies a line consisting of a repeating pattern of dash-dot.
-
-#### *"longDashDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot.
-
-#### *"longDashDotDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-
-### yAxis.line.visible `Boolean`*(default: true)*
-
-The visibility of the line.
-
-### yAxis.line.width `Number`*(default: 1)*
-
-The width of the line. This will also effect the major and minor ticks, but
-not the grid lines.
-
-### yAxis.majorGridLines `Object`
-
-Configures the major grid lines. These are the lines that are an extension of the major ticks through the
-body of the chart.
-
-### yAxis.majorGridLines.color `String`*(default: "black")*
-
-The color of the lines.
-
-### yAxis.majorGridLines.visible `Boolean`*(default: true)*
-
-The visibility of the lines.
-
-### yAxis.majorGridLines.width `Number`*(default: 1)*
-
-The width of the lines.
-
-### yAxis.majorTicks `Object`
-
-The major ticks of the axis.
-
-### yAxis.majorTicks.size `Number`*(default: 4)*
-
-The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
-
-### yAxis.majorTicks.visible `Boolean`*(default: true)*
-
-The visibility of the major ticks.
-
-### yAxis.name `Object`*(default: "primary")*
-
-The unique axis name.
-
-### yAxis.narrowRange `Boolean`*(default: false)*
-
-Prevents the automatic axis range from snapping to 0.
-
-### yAxis.pane `String`
-
-The name of the pane that the axis should be rendered in.
-The axis will be rendered in the first (default) pane if not set.
-
-### yAxis.plotBands `Array`
-
-The plot bands of the yAxis.
-
-### yAxis.plotBands.from `Number`
-
-The start position of the plot band in axis units.
-
-### yAxis.plotBands.to `Number`
-
-The end position of the plot band in axis units.
-
-### yAxis.plotBands.color `String`
-
-The color of the plot band.
-
-### yAxis.plotBands.opacity `Number`
-
-The opacity of the plot band.
-
-### yAxis.reverse `Boolean`*(default: false)*
-
-Reverses the axis direction -
-values increase from right to left and from top to bottom.
-
-### yAxis.title `Object`
-
-The title of the value axis.
-
-### yAxis.title.background `String`
-
-The background color of the title. Any valid CSS color string will work here, including
-hex and rgb.
-
-### yAxis.title.border `Object`
-
-The border of the title.
-
-### yAxis.title.border.color `String`*(default: "black")*
-
-The color of the border.
-
-### yAxis.title.border.dashType `String`*(default: "solid")*
-
-The dash type of the border.
-
-#### *"solid"*
-
-Specifies a solid line.
-
-#### *"dot"*
-
-Specifies a line consisting of dots.
-
-#### *"dash"*
-
-Specifies a line consisting of dashes.
-
-#### *"longDash"*
-
-Specifies a line consisting of a repeating pattern of long-dash.
-
-#### *"dashDot"*
-
-Specifies a line consisting of a repeating pattern of dash-dot.
-
-#### *"longDashDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot.
-
-#### *"longDashDotDot"*
-
-Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
-
-### yAxis.title.border.width `Number`*(default: 0)*
-
-The width of the border.
-
-### yAxis.title.color `String`
-
-The text color of the title. Any valid CSS color string will work here, including hex and rgb.
-
-### yAxis.title.font `String`*(default: "16px Arial,Helvetica,sans-serif")*
-
-The font style of the title.
-
-### yAxis.title.margin `Number | Object`*(default: 5)*
-
-The margin of the title.
-
-#### Example
-
-    // sets the top, right, bottom and left margin to 3px.
-    margin: 3
-
-    // sets the top and left margin to 1px
-    // margin right and bottom are with 0px (by default)
-    margin: { top: 1, left: 1 }
-
-### yAxis.title.padding `Number | Object`*(default: 0)*
-
-The padding of the title.
-
-#### Example
-
-    // sets the top, right, bottom and left padding to 3px.
-    padding: 3
-
-    // sets the top and left padding to 1px
-    // padding right and bottom are with 0px (by default)
-    padding: { top: 1, left: 1 }
-
-### yAxis.title.position `String`*(default: "center")*
-
-The position of the title.
-
-#### *"top"*
-
-The axis title is positioned on the top (applicable to vertical axis).
-
-#### *"bottom"*
-
-The axis title is positioned on the bottom (applicable to vertical axis).
-
-#### *"left"*
-
-The axis title is positioned on the left (applicable to horizontal axis).
-
-#### *"right"*
-
-"The axis title is positioned on the right (applicable to horizontal axis).
-
-#### *"center"*
-
-"The axis title is positioned in the center.
-
-### yAxis.title.rotation `Number`*(default: 0)*
-
-The rotation angle of the title.
-
-### yAxis.title.text `String`
-
-The text of the title.
-
-### yAxis.title.visible `Boolean`*(default: true)*
-
-The visibility of the title.
-
-### yAxis.visible `Boolean`*(default: true)*
-
-The visibility of the axis.
-
-### yAxis.crosshair `Object`
-
-The crosshair configuration options.
-
-### yAxis.crosshair.color `String`
-
-The color of the crosshair.
-
-### yAxis.crosshair.width `Number`
-
-The width of the crosshair.
-
-### yAxis.crosshair.opacity `Number`
-
-The opacity of the crosshair.
-
-### yAxis.crosshair.dashType `Number`
-
-The dash type of the crosshair.
-
-### yAxis.crosshair.visible `Boolean`*(default: false)*
-
-The dash type of the crosshair.
-
-### yAxis.crosshair.tooltip `Object`
-
-The crosshar tooltip configuration options.
-
-### yAxis.crosshair.tooltip.background `String`
-
-The background color of the tooltip.
-
-### yAxis.crosshair.tooltip.border `Object`
-
-The border configuration options.
-
-### yAxis.crosshair.tooltip.border.color `String`*(default: "black")*
-
-The color of the border.
-
-### yAxis.crosshair.tooltip.border.width `Number`*(default: 0)*
-
-The width of the border.
-
-### yAxis.crosshair.tooltip.color `String`
-
-The text color of the tooltip.
-
-### yAxis.crosshair.tooltip.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
-
-The tooltip font.
-
-### yAxis.crosshair.tooltip.format `String`
-
-The tooltip format.
-
-#### Example
-
-    //sets format of the tooltip
-    format: "C"
-
-### yAxis.crosshair.tooltip.padding `Number|Object`
-
-The padding of the tooltip.
-
-#### Example
-
-    // sets the top, right, bottom and left padding to 3px.
-    padding: 3
-
-    // sets the top and left padding to 1px
-    // right and bottom padding are left at their default values
-    padding: { top: 1, left: 1 }
-
-### yAxis.crosshair.tooltip.template `String|Function`
-
-The tooltip template.
-Template variables:
-
-*   **value** - the point value (either a number or an object)
-
-#### Example
-
-    // chart intialization
-    $("#chart").kendoChart({
-         title: {
-             text: "My Chart Title"
-         },
-         series: [{
-                 name: "Series 1",
-                 data: [200, 450, 300, 125]
-         }],
-         categoryAxis: {
-             categories: [2000, 2001, 2002, 2003]
-         },
-         yAxis: {
-             crosshair: {
-                 visible: true,
-                 tooltip: {
-                     visible: true,
-                     template: "value: #= value #"
-                 }
-             }
-         }
-    });
-
-### yAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
 
 A value indicating if the tooltip should be displayed.
 
