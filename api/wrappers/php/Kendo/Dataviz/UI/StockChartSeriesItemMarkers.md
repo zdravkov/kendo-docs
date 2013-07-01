@@ -98,30 +98,6 @@ The rotation angle of the markers.
     $markers->rotation(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
-### rotation
-The rotation angle of the markers.
-
-#### Returns
-`\Kendo\Dataviz\UI\StockChartSeriesItemMarkers`
-
-#### Parameters
-
-##### $value `float|\Kendo\JavaScriptFunction`
-
-
-
-#### Example  - using float
-    <?php
-    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
-    $markers->rotation(1);
-    ?>
-
-#### Example  - using \Kendo\JavaScriptFunction
-    <?php
-    $markers = new \Kendo\Dataviz\UI\StockChartSeriesItemMarkers();
-    $markers->rotation(new \Kendo\JavaScriptFunction('function() { }'));
-    ?>
-
 ### size
 The marker size.
 
