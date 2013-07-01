@@ -56,7 +56,7 @@ Whether to update the document title.
 ### loading `String`*(default: "&lt;h1&gt;Loading...&lt;/h1&gt;")*
 
  The text displayed in the loading popup. Setting this value to false will disable the loading popup.
- 
+
  *Note*: The text should be wrapped inside `<h1>` tag.
 
 #### Example
@@ -166,3 +166,17 @@ Get a reference to the current view.
 #### Returns
 
 `kendo.mobile.ui.View` the view instance.
+
+## Events
+
+### init
+
+Fires after the mobile application is instantiated.
+
+#### Example
+
+    var app = new kendo.mobile.Application(document.body, {
+        init: function() {
+            console.log("Kendo UI Mobile application is ready");
+        }
+    });
