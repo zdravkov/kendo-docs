@@ -3187,10 +3187,6 @@ The marker shape is circle.
 
 The markers visibility.
 
-### series.markers.rotation `Number|Function`
-
-The rotation angle of the markers.
-
 ### series.missingValues `String`*(default: "gap")*
 
 Configures the behavior for handling missing values.
