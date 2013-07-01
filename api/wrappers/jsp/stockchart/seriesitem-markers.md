@@ -40,6 +40,14 @@ The rotation angle of the markers.
     <kendo:stockChart-seriesItem-markers rotation="rotation">
     </kendo:stockChart-seriesItem-markers>
 
+### rotation `float`
+
+The rotation angle of the markers.
+
+#### Example
+    <kendo:stockChart-seriesItem-markers rotation="rotation">
+    </kendo:stockChart-seriesItem-markers>
+
 ### size `float`
 
 The marker size.
@@ -107,6 +115,20 @@ The marker size.
     <script>
         function handle_size(e) {
             // Code to handle the size event.
+        }
+    </script>
+
+### rotation `String`
+
+The rotation angle of the markers.
+
+
+#### Example
+    <kendo:stockChart-seriesItem-markers rotation="handle_rotation">
+    </kendo:stockChart-seriesItem-markers>
+    <script>
+        function handle_rotation(e) {
+            // Code to handle the rotation event.
         }
     </script>
 
@@ -184,6 +206,22 @@ The marker size.
                 }
             </script>
         </kendo:stockChart-seriesItem-markers-size>
+    </kendo:stockChart-seriesItem-markers>
+
+### kendo:stockChart-seriesItem-markers-rotation
+
+The rotation angle of the markers.
+
+
+#### Example
+    <kendo:stockChart-seriesItem-markers>
+        <kendo:stockChart-seriesItem-markers-rotation>
+            <script>
+                function(e) {
+                    // Code to handle the rotation event.
+                }
+            </script>
+        </kendo:stockChart-seriesItem-markers-rotation>
     </kendo:stockChart-seriesItem-markers>
 
 ### kendo:stockChart-seriesItem-markers-type

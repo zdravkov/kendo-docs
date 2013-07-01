@@ -88,4 +88,39 @@ Defines the default settings for ohlc series.
 
 
 
+### Bullet
+Defines the default settings for bullet series.
+
+
+
+
+
+### VerticalBullet
+Defines the default settings for vertical bullet series.
+
+
+
+
+
+### RadarArea
+Defines the default settings for radar area series.
+
+
+
+
+
+### RadarColumn
+Defines the default settings for radar column series.
+
+
+
+
+
+### RadarLine
+Defines the default settings for radar line series.
+
+
+
+
+
 

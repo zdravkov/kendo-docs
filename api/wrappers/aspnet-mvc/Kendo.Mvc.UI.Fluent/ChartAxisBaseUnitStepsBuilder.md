@@ -11,6 +11,35 @@ Defines the fluent interface for configuring ChartAxisBaseUnitStepsBuilder.
 
 ## Methods
 
+### Seconds(`System.Int32[]`)
+The discrete BaseUnitStep values when BaseUnit is set to Seconds and
+            BaseUnitStep is set to 0 (auto).
+
+
+#### Parameters
+
+##### steps `System.Int32[]`
+The discrete steps when BaseUnit is set to Seconds.
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("chart")
+        .Title("Units sold")
+        .Series(series => {
+            series
+            .Column(new int[] { 20, 40, 45, 30, 50 });
+        })
+        .CategoryAxis(axis => axis
+            .Date()
+            .BaseUnit(ChartAxisBaseUnit.Fit)
+            .AutoBaseUnitSteps(steps => steps.Seconds(1, 2))
+        )
+    %>
+
+
 ### Minutes(`System.Int32[]`)
 The discrete BaseUnitStep values when BaseUnit is set to Minutes and
             BaseUnitStep is set to 0 (auto).

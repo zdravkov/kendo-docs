@@ -8,18 +8,20 @@ publish:true
 The base time interval for the axis.
 
 ## Fields
-### Hours
-Hours.
-### Days
-Days.
+### Seconds
+Seconds
 ### Minutes
-Minutes.
+Minutes
+### Hours
+Hours
+### Days
+Days
 ### Months
-Months.
+Months
 ### Weeks
-Weeks.
+Weeks
 ### Years
-Years.
+Years
 ### Fit
 Automatic base unit based on limit set from MaxDataGroups.
             Note that the BaseUnitStep setting will be disregarded.

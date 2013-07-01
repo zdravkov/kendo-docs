@@ -33,6 +33,14 @@ The name of the value axis to use.** Applicable to area, column, line, ohlc and 
     <kendo:stockChart-navigator-seriesItem axis="axis">
     </kendo:stockChart-navigator-seriesItem>
 
+### categoryField `String`
+
+The data item field which contains the category name or date.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem categoryField="categoryField">
+    </kendo:stockChart-navigator-seriesItem>
+
 ### closeField `String`
 
 The data field containing the close value.** Available for candlestick and ohlc series only **

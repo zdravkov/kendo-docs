@@ -59,6 +59,30 @@ The border of the markers.
     $markers->border(array('color' => $color));
     ?>
 
+### rotation
+The rotation angle of the markers.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkers`
+
+#### Parameters
+
+##### $value `float|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using float
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkers();
+    $markers->rotation(1);
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $markers = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkers();
+    $markers->rotation(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### size
 The marker size.
 

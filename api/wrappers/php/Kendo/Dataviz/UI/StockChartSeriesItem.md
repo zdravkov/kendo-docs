@@ -78,6 +78,24 @@ The border of the points.** Applicable to column, ohlc and candlestick series **
     $seriesItem->border(array('color' => $color));
     ?>
 
+### categoryField
+The data item field which contains the category name or date.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $seriesItem->categoryField('value');
+    ?>
+
 ### closeField
 The data field containing the close value.** Available for candlestick and ohlc series only **
 

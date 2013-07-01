@@ -24,6 +24,14 @@ The background color of the current series markers.
     <kendo:stockChart-navigator-seriesItem-markers background="background">
     </kendo:stockChart-navigator-seriesItem-markers>
 
+### rotation `float`
+
+The rotation angle of the markers.
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-markers rotation="rotation">
+    </kendo:stockChart-navigator-seriesItem-markers>
+
 ### size `float`
 
 The marker size.
@@ -61,5 +69,40 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-marker
 
     <kendo:stockChart-navigator-seriesItem-markers>
         <kendo:stockChart-navigator-seriesItem-markers-border></kendo:stockChart-navigator-seriesItem-markers-border>
+    </kendo:stockChart-navigator-seriesItem-markers>
+
+
+## Event Attributes
+
+### rotation `String`
+
+The rotation angle of the markers.
+
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-markers rotation="handle_rotation">
+    </kendo:stockChart-navigator-seriesItem-markers>
+    <script>
+        function handle_rotation(e) {
+            // Code to handle the rotation event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:stockChart-navigator-seriesItem-markers-rotation
+
+The rotation angle of the markers.
+
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem-markers>
+        <kendo:stockChart-navigator-seriesItem-markers-rotation>
+            <script>
+                function(e) {
+                    // Code to handle the rotation event.
+                }
+            </script>
+        </kendo:stockChart-navigator-seriesItem-markers-rotation>
     </kendo:stockChart-navigator-seriesItem-markers>
 

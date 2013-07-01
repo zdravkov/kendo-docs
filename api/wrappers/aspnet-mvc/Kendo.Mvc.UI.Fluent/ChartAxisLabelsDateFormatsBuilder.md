@@ -5,11 +5,63 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder
-Defines the fluent interface for configuring ChartLine.
+Defines the fluent interface for configuring ChartAxisLabelsDateFormatsBuilder.
 
 
 
 ## Methods
+
+### Seconds(`System.String`)
+Sets the date format when the base date unit is Seconds
+
+
+#### Parameters
+
+##### format `System.String`
+The date format.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Seconds("HH:mm:ss")
+            )
+        )
+        );
+    %>
+
+
+### Minutes(`System.String`)
+Sets the date format when the base date unit is Minutes
+
+
+#### Parameters
+
+##### format `System.String`
+The date format.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .CategoryAxis(axis => axis
+        .Date()
+        .Labels(labels => labels
+            .DateFormats(formats => formats
+                .Minutes("ss")
+            )
+        )
+        );
+    %>
+
 
 ### Hours(`System.String`)
 Sets the date format when the base date unit is Hours
@@ -57,32 +109,6 @@ The date format.
         .Labels(labels => labels
             .DateFormats(formats => formats
                 .Days("dddd dd")
-            )
-        )
-        );
-    %>
-
-
-### Minutes(`System.String`)
-Sets the date format when the base date unit is Minutes
-
-
-#### Parameters
-
-##### format `System.String`
-The date format.
-
-
-
-
-#### Example (ASPX)
-    <%= Html.Kendo().Chart()
-    .Name("Chart")
-    .CategoryAxis(axis => axis
-        .Date()
-        .Labels(labels => labels
-            .DateFormats(formats => formats
-                .Minutes("ss")
             )
         )
         );
