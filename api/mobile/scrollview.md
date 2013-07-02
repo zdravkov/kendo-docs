@@ -20,12 +20,6 @@ Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui
 
  **Applicable only in data bound mode.**
 
-### batchSize `Number`*(default: 1)*
-
- The size of the buffer. Determines how many data items will be displayed on a single page.
-
- **Applicable only in data bound mode.**
-
 ### bounceVelocityThreshold `Number`*(default: 1.6)*
 
  The velocity threshold after which a swipe will result in a bounce effect.
@@ -51,6 +45,12 @@ Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui
 ### enablePager `Boolean`*(default: true)*
 
  If set to true the ScrollView will display a pager. By default pager is enabled.
+
+### itemsPerPage `Number`*(default: 1)*
+
+ Determines how many data items will be passed to the page template.
+
+ **Applicable only in data bound mode.**
 
 ### page `Number`*(default: 0)*
 
