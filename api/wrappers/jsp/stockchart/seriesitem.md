@@ -156,7 +156,7 @@ The data field containing the low value.** Available for candlestick and ohlc se
 
 ### missingValues `String`
 
-Configures the behavior for handling missing values.** Applicable for area and line series. **
+The behavior for handling missing values. The supported values are:
 
 #### Example
     <kendo:stockChart-seriesItem missingValues="missingValues">

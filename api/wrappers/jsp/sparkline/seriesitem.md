@@ -124,7 +124,7 @@ Line options.** Applicable to area series. ** Further configuration is available
 
 ### missingValues `String`
 
-Configures the behavior for handling missing values.** Available for area and line series **
+The behavior for handling missing values. The supported values are:
 
 #### Example
     <kendo:sparkline-seriesItem missingValues="missingValues">

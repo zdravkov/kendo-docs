@@ -239,7 +239,6 @@ The data item field which contains the category name or date.
           type: "line",
           field: "value",
           categoryField: "date",
-          missingValues: "interpolate",
           data: [
             { value: 1, date: new Date(2012, 1, 1) },
             { value: 2, date: new Date(2012, 1, 2) }
@@ -720,7 +719,6 @@ The rotation angle of the markers.
             type: "line",
             field: "value",
             categoryField: "date",
-            missingValues: "interpolate",
             markers: {
               type: "square",
               rotation: 45
@@ -758,23 +756,17 @@ The marker shape is circle.
 
 The markers visibility.
 
-### navigator.series.missingValues `String`*(default: "gap")*
+### navigator.series.missingValues `String`
 
-Configures the behavior for handling missing values.
+The behavior for handling missing values. The supported values are:
 
-** Applicable for area and line series. **
+* "gap" - the plot stops before the missing point and continues after it.
+* "interpolate" - the value is interpolated from neighboring points.
+* "zero" - the value is assumed to be zero.
 
-#### *"interpolate"*
+> The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-The value is interpolated from neighboring points.
-
-#### *"zero"*
-
-The value is assumed to be zero.
-
-#### *"gap"*
-
-The plot stops before the missing point and continues after it.
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
 
 ### navigator.series.opacity `Number`
 
@@ -3154,7 +3146,6 @@ The rotation angle of the markers.
           type: "line",
           field: "value",
           categoryField: "date",
-          missingValues: "interpolate",
           markers: {
             type: "square",
             rotation: 45
@@ -3187,21 +3178,17 @@ The marker shape is circle.
 
 The markers visibility.
 
-### series.missingValues `String`*(default: "gap")*
+### series.missingValues `String`
 
-Configures the behavior for handling missing values.
+The behavior for handling missing values. The supported values are:
 
-** Applicable for area and line series. **
+* "gap" - the plot stops before the missing point and continues after it.
+* "interpolate" - the value is interpolated from neighboring points.
+* "zero" - the value is assumed to be zero.
 
-#### *"interpolate"*
+> The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-The value is interpolated from neighboring points.
-
-#### *"zero"*
-
-The value is assumed to be zero.
-
-#### *"gap"*
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
 
 ### series.negativeColor `String`
 

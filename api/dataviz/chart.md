@@ -8344,17 +8344,17 @@ The minimum size of the chart bubble series marker.
     });
     </script>
 
-### series.missingValues `String` *(default: "gap")*
+### series.missingValues `String`
 
-The behavior for handling missing values.
-
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
-
-The supported values are:
+The behavior for handling missing values. The supported values are:
 
 * "gap" - the plot stops before the missing point and continues after it.
 * "interpolate" - the value is interpolated from neighboring points.
 * "zero" - the value is assumed to be zero.
+
+> The default value is "interpolate", except for "area" and stacked series which default to "zero".
+
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
 
 #### Example - set the missing values behavior
     <div id="chart"></div>
@@ -8362,7 +8362,7 @@ The supported values are:
     $("#chart").kendoChart({
       series: [ {
         type: "line",
-        missingValues: "interpolate",
+        missingValues: "gap",
         data: [1, 3, null, 4, 5]
       }]
     });

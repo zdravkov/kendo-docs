@@ -438,7 +438,7 @@ Marker options.** Applicable for area and line series. **
     ?>
 
 ### missingValues
-Configures the behavior for handling missing values.** Applicable for area and line series. **
+The behavior for handling missing values. The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartNavigatorSeriesItem`

@@ -607,7 +607,7 @@ The minimum size of the chart bubble series marker.
     ?>
 
 ### missingValues
-The behavior for handling missing values.The supported values are:
+The behavior for handling missing values. The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`

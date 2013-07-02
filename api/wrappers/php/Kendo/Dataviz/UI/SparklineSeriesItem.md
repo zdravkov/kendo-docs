@@ -419,7 +419,7 @@ Marker options.** Applicable to area and line series **
     ?>
 
 ### missingValues
-Configures the behavior for handling missing values.** Available for area and line series **
+The behavior for handling missing values. The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItem`

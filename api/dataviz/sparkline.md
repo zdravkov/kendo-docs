@@ -1499,23 +1499,29 @@ The markers visibility.
 
 The rotation angle of the markers.
 
-### series.missingValues `String`*(default: "gap")*
+### series.missingValues `String`
 
-Configures the behavior for handling missing values.
+The behavior for handling missing values. The supported values are:
 
-** Available for area and line series **
+* "gap" - the plot stops before the missing point and continues after it.
+* "interpolate" - the value is interpolated from neighboring points.
+* "zero" - the value is assumed to be zero.
 
-#### *"interpolate"*
+> The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-The value is interpolated from neighboring points.
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
 
-#### *"zero"*
-
-The value is assumed to be zero.
-
-#### *"gap"*
-
-The plot stops before the missing point and continues after it.
+#### Example - set the missing values behavior
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [ {
+        type: "line",
+        missingValues: "gap",
+        data: [1, 3, null, 4, 5]
+      }]
+    });
+    </script>
 
 ### series.negativeColor `String`
 

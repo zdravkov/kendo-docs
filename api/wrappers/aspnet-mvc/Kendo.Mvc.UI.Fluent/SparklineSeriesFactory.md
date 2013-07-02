@@ -16,6 +16,25 @@ The parent Sparkline
 
 ## Methods
 
+### Bar(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+Defines bound bar series.
+
+
+#### Parameters
+
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point value from the chart model
+
+##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point color from the chart model
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point category from the chart model
+
+
+
+
+
 ### Bar(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound bar series.
 
@@ -32,7 +51,7 @@ The expression used to extract the point color from the chart model
 
 
 
-### Bar(`System.String,System.String`)
+### Bar(`System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -44,11 +63,14 @@ The name of the value member.
 ##### colorMemberName `System.String`
 The name of the color member.
 
+##### categoryMemberName `System.String`
+The name of the category member.
 
 
 
 
-### Bar(`System.Type,System.String,System.String`)
+
+### Bar(`System.Type,System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -63,6 +85,9 @@ The name of the value member.
 ##### colorMemberName `System.String`
 The name of the color member.
 
+##### categoryMemberName `System.String`
+The name of the category member.
+
 
 
 
@@ -75,6 +100,25 @@ Defines bar series bound to inline data.
 
 ##### data `System.Collections.IEnumerable`
 The data to bind to.
+
+
+
+
+
+### Column(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+Defines bound column series.
+
+
+#### Parameters
+
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point value from the chart model
+
+##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point color from the chart model
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point category from the chart model
 
 
 
@@ -96,7 +140,7 @@ The expression used to extract the point color from the chart model
 
 
 
-### Column(`System.String,System.String`)
+### Column(`System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -108,11 +152,14 @@ The name of the value member.
 ##### colorMemberName `System.String`
 The name of the color member.
 
+##### categoryMemberName `System.String`
+The name of the category member.
 
 
 
 
-### Column(`System.Type,System.String,System.String`)
+
+### Column(`System.Type,System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -126,6 +173,9 @@ The name of the value member.
 
 ##### colorMemberName `System.String`
 The name of the color member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
 
 
 
@@ -144,6 +194,22 @@ The data to bind to
 
 
 
+### Line(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+Defines bound line series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the category from the chart model.
+
+
+
+
+
 ### Line(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
 Defines bound line series.
 
@@ -157,7 +223,7 @@ The expression used to extract the series value from the chart model
 
 
 
-### Line(`System.String`)
+### Line(`System.String,System.String`)
 Defines bound line series.
 
 
@@ -166,11 +232,14 @@ Defines bound line series.
 ##### memberName `System.String`
 The name of the value member.
 
+##### categoryMemberName `System.String`
+The name of the category member.
 
 
 
 
-### Line(`System.Type,System.String`)
+
+### Line(`System.Type,System.String,System.String`)
 Defines bound line series.
 
 
@@ -181,6 +250,9 @@ The type of the value member.
 
 ##### memberName `System.String`
 The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
 
 
 
@@ -206,13 +278,29 @@ Defines bound area series.
 #### Parameters
 
 ##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the series value from the chart model.
+The expression used to extract the value from the chart model.
 
 
 
 
 
-### Area(`System.String`)
+### Area(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+Defines bound area series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the category from the chart model.
+
+
+
+
+
+### Area(`System.String,System.String`)
 Defines bound area series.
 
 
@@ -221,11 +309,14 @@ Defines bound area series.
 ##### memberName `System.String`
 The name of the value member.
 
+##### categoryMemberName `System.String`
+The name of the category member.
 
 
 
 
-### Area(`System.Type,System.String`)
+
+### Area(`System.Type,System.String,System.String`)
 Defines bound area series.
 
 
@@ -236,6 +327,9 @@ The type of the value member.
 
 ##### memberName `System.String`
 The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
 
 
 
