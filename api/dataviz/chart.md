@@ -3711,7 +3711,7 @@ The supported values are:
     });
     </script>
 
-### categoryAxis.notes.icon.type `Boolean` *(default: "true")*
+### categoryAxis.notes.icon.visible `Boolean` *(default: "true")*
 
 The icon visibility.
 
@@ -4104,7 +4104,7 @@ The items of the notes.
 
 The value of the note.
 
-### categoryAxis.notes.data.icon 'Object'
+### categoryAxis.notes.data.icon `Object`
 
 The icon of the note.
 
@@ -4272,7 +4272,7 @@ The supported values are:
     });
     </script>
 
-### categoryAxis.notes.data.icon.type `Boolean` *(default: "true")*
+### categoryAxis.notes.data.icon.visible `Boolean` *(default: "true")*
 
 The icon visibility.
 
