@@ -3553,7 +3553,7 @@ The supported values are:
 
 ### categoryAxis.notes `Object`
 
-The chart notes configuration.
+The category axis notes configuration.
 
 ### categoryAxis.notes.icon `Object`
 
@@ -3563,7 +3563,7 @@ The icon of the notes.
 
 The background color of the notes icon.
 
-#### Example - set the chart notes icon background
+#### Example - set the category axis notes icon background
 
     <div id="chart"></div>
     <script>
@@ -3586,7 +3586,7 @@ The background color of the notes icon.
 
 The border of the icon.
 
-#### Example - set the chart notes icon border
+#### Example - set the category axis notes icon border
 
     <div id="chart"></div>
     <script>
@@ -3599,7 +3599,7 @@ The border of the icon.
           icon: {
             border: {
               width: 2,
-              color: "red" 
+              color: "red"
             }
           },
           data: [{ value: 1 }]
@@ -3612,7 +3612,7 @@ The border of the icon.
 
 The border color of the icon.
 
-#### Example - set the chart notes icon border color
+#### Example - set the category axis notes icon border color
 
     <div id="chart"></div>
     <script>
@@ -3625,7 +3625,7 @@ The border color of the icon.
           icon: {
             border: {
               width: 2,
-              color: "red" 
+              color: "red"
             }
           },
           data: [{ value: 1 }]
@@ -3638,7 +3638,7 @@ The border color of the icon.
 
 The border width of the icon.
 
-#### Example - set the chart notes icon border width
+#### Example - set the category axis notes icon border width
 
     <div id="chart"></div>
     <script>
@@ -3651,7 +3651,7 @@ The border width of the icon.
           icon: {
             border: {
               width: 2,
-              color: "red" 
+              color: "red"
             }
           },
           data: [{ value: 1 }]
@@ -3664,7 +3664,7 @@ The border width of the icon.
 
 The size of the icon.
 
-#### Example - set the chart notes icon size
+#### Example - set the category axis notes icon size
 
     <div id="chart"></div>
     <script>
@@ -3692,7 +3692,7 @@ The supported values are:
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
 
-#### Example - set the chart notes icon shape
+#### Example - set the category axis notes icon shape
 
     <div id="chart"></div>
     <script>
@@ -3715,7 +3715,7 @@ The supported values are:
 
 The icon visibility.
 
-#### Example - set the chart notes icon visibility
+#### Example - set the category axis notes icon visibility
 
     <div id="chart"></div>
     <script>
@@ -3740,9 +3740,9 @@ The label of the notes.
 
 ### categoryAxis.notes.label.background `String`
 
-The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
 
-#### Example - set the chart series label background
+#### Example - set the category axis label background
 
     <div id="chart"></div>
     <script>
@@ -3763,9 +3763,9 @@ The background color of the labels. Accepts a valid CSS color string, including 
 
 ### categoryAxis.notes.label.border `Object`
 
-The border of the labels.
+The border of the label.
 
-#### Example - set the chart series label border
+#### Example - set the category axis label border
 
     <div id="chart"></div>
     <script>
@@ -3792,7 +3792,7 @@ The border of the labels.
 
 The color of the border. Accepts a valid CSS color string, including hex and rgb.
 
-#### Example - set the chart series label border color
+#### Example - set the category axis label border color
 
     <div id="chart"></div>
     <script>
@@ -3827,7 +3827,7 @@ The following dash types are supported:
 * "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
 * "solid" - a solid line
 
-#### Example - set the chart series label border dash type
+#### Example - set the category axis label border dash type
 
     <div id="chart"></div>
     <script>
@@ -3853,7 +3853,7 @@ The following dash types are supported:
 
 The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
 
-#### Example - set the chart series label border width
+#### Example - set the category axis label border width
 
     <div id="chart"></div>
     <script>
@@ -3876,9 +3876,9 @@ The width of the border in pixels. By default the border width is set to zero wh
 
 ### categoryAxis.notes.label.color `String`
 
-The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
+The text color of the label. Accepts a valid CSS color string, including hex and rgb.
 
-#### Example - set the chart series label color as a hex string
+#### Example - set the category axis label color as a hex string
 
     <div id="chart"></div>
     <script>
@@ -3899,7 +3899,7 @@ The text color of the labels. Accepts a valid CSS color string, including hex an
 
 ### categoryAxis.notes.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
 
-The font style of the labels.
+The font style of the label.
 
 #### Example - set the chart series label font
 
@@ -4096,15 +4096,23 @@ The line length of the notes.
     });
     </script>
 
-### categoryAxis.notes.data `array`
+### categoryAxis.notes.data `Array`
 
 The items of the notes.
 
+### categoryAxis.notes.data.value `Number`
+
+The value of the note.
+
+### categoryAxis.notes.data.icon 'Object'
+
+The icon of the note.
+
 ### categoryAxis.notes.data.icon.background `String`
 
-The background color of the notes icon.
+The background color of the note icon.
 
-#### Example - set the chart notes icon background
+#### Example - set the category axis note icon background
 
     <div id="chart"></div>
     <script>
@@ -4129,7 +4137,7 @@ The background color of the notes icon.
 
 The border of the icon.
 
-#### Example - set the chart notes icon border
+#### Example - set the category axis note icon border
 
     <div id="chart"></div>
     <script>
@@ -4144,7 +4152,7 @@ The border of the icon.
             icon: {
               border: {
                 width: 2,
-                color: "red" 
+                color: "red"
               }
             }
           }]
@@ -4157,7 +4165,7 @@ The border of the icon.
 
 The border color of the icon.
 
-#### Example - set the chart notes icon border color
+#### Example - set the category axis note icon border color
 
     <div id="chart"></div>
     <script>
@@ -4172,7 +4180,7 @@ The border color of the icon.
             icon: {
               border: {
                 width: 2,
-                color: "red" 
+                color: "red"
               }
             }
           }]
@@ -4185,7 +4193,7 @@ The border color of the icon.
 
 The border width of the icon.
 
-#### Example - set the chart notes icon border width
+#### Example - set the category axis note icon border width
 
     <div id="chart"></div>
     <script>
@@ -4200,7 +4208,7 @@ The border width of the icon.
             icon: {
               border: {
                 width: 2,
-                color: "red" 
+                color: "red"
               }
             }
           }]
@@ -4213,7 +4221,7 @@ The border width of the icon.
 
 The size of the icon.
 
-#### Example - set the chart notes icon size
+#### Example - set the category axis note icon size
 
     <div id="chart"></div>
     <script>
@@ -4243,7 +4251,7 @@ The supported values are:
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
 
-#### Example - set the chart notes icon shape
+#### Example - set the category axis note icon shape
 
     <div id="chart"></div>
     <script>
@@ -4268,7 +4276,7 @@ The supported values are:
 
 The icon visibility.
 
-#### Example - set the chart notes icon visibility
+#### Example - set the category axis note icon visibility
 
     <div id="chart"></div>
     <script>
@@ -4291,13 +4299,13 @@ The icon visibility.
 
 ### categoryAxis.notes.data.label `Object`
 
-The label of the notes.
+The label of the note.
 
 ### categoryAxis.notes.data.label.background `String`
 
-The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
 
-#### Example - set the chart series label background
+#### Example - set the category axis note label background
 
     <div id="chart"></div>
     <script>
@@ -4320,9 +4328,9 @@ The background color of the labels. Accepts a valid CSS color string, including 
 
 ### categoryAxis.notes.data.label.border `Object`
 
-The border of the labels.
+The border of the label.
 
-#### Example - set the chart series label border
+#### Example - set the category axis note label border
 
     <div id="chart"></div>
     <script>
@@ -4351,7 +4359,7 @@ The border of the labels.
 
 The color of the border. Accepts a valid CSS color string, including hex and rgb.
 
-#### Example - set the chart series label border color
+#### Example - set the category axis note label border color
 
     <div id="chart"></div>
     <script>
@@ -4388,7 +4396,7 @@ The following dash types are supported:
 * "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
 * "solid" - a solid line
 
-#### Example - set the chart series label border dash type
+#### Example - set the category axis note label border dash type
 
     <div id="chart"></div>
     <script>
@@ -4416,7 +4424,7 @@ The following dash types are supported:
 
 The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
 
-#### Example - set the chart series label border width
+#### Example - set the category axis note label border width
 
     <div id="chart"></div>
     <script>
@@ -4441,9 +4449,9 @@ The width of the border in pixels. By default the border width is set to zero wh
 
 ### categoryAxis.notes.data.label.color `String`
 
-The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
+The text color of the note label. Accepts a valid CSS color string, including hex and rgb.
 
-#### Example - set the chart series label color as a hex string
+#### Example - set the category axis note label color as a hex string
 
     <div id="chart"></div>
     <script>
@@ -4466,9 +4474,9 @@ The text color of the labels. Accepts a valid CSS color string, including hex an
 
 ### categoryAxis.notes.data.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
 
-The font style of the labels.
+The font style of the note label.
 
-#### Example - set the chart series label font
+#### Example - set the category axis note label font
 
     <div id="chart"></div>
     <script>
@@ -4497,7 +4505,7 @@ The fields which can be used in the template are:
 
 * value - the category value
 
-#### Example - set the category axis notes label template as a string
+#### Example - set the category axis note label template as a string
 
     <div id="chart"></div>
     <script>
@@ -4522,7 +4530,7 @@ The fields which can be used in the template are:
 
 If set to `true` the chart will display the category notes label. By default the category notes label are visible.
 
-#### Example - hide the category axis notes label
+#### Example - hide the category axis note label
 
     <div id="chart"></div>
     <script>
@@ -4547,7 +4555,7 @@ If set to `true` the chart will display the category notes label. By default the
 
 The rotation angle of the label. By default the label are not rotated.
 
-#### Example - rotate the category axis notes label
+#### Example - rotate the category axis note label
 
     <div id="chart"></div>
     <script>
@@ -4570,9 +4578,9 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### categoryAxis.notes.data.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
-#### Example - set the category axis notes label format
+#### Example - set the category axis note label format
 
     <div id="chart"></div>
     <script>
@@ -4620,20 +4628,20 @@ The label note text.
 
 ### categoryAxis.notes.data.label.position `String` *(default: "inside")*
 
-The position of the labels.
+The position of the category axis note label.
 
 * "inside" - the label is positioned inside of the icon.
 * "outside" - the label is positioned outside of the icon.
 
 ### categoryAxis.notes.data.line `Object`
 
-The line of the notes.
+The line of the note.
 
 ### categoryAxis.notes.data.line.width `Number`
 
-The line width of the notes.
+The line width of the note.
 
-#### Example - set the category axis notes line width
+#### Example - set the category axis note line width
 
     <div id="chart"></div>
     <script>
@@ -4656,9 +4664,9 @@ The line width of the notes.
 
 ### categoryAxis.notes.data.line.color `String`
 
-The line color of the notes.
+The line color of the note.
 
-#### Example - set the category axis notes color width
+#### Example - set the category axis note color width
 
     <div id="chart"></div>
     <script>
@@ -4681,9 +4689,9 @@ The line color of the notes.
 
 ### categoryAxis.notes.data.line.length `Number`
 
-The line length of the notes.
+The line length of the note.
 
-#### Example - set the category axis notes color width
+#### Example - set the category axis note color width
 
     <div id="chart"></div>
     <script>
