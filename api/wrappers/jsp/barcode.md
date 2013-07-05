@@ -44,6 +44,15 @@ The height of the barcode in pixels.  By default the height is 100.
     <kendo:barcode height="height">
     </kendo:barcode>
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the BarCode will switch to the first available mode.The supported values are:
+
+#### Example
+    <kendo:barcode renderAs="renderAs">
+    </kendo:barcode>
+
 ### type `String`
 
 The symbology (encoding) the barcode will use.The supported values are:*EAN8

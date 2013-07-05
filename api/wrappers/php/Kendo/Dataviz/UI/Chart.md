@@ -542,6 +542,25 @@ For additional information check the [plotAreaClick](/api/web/chart#events-plotA
     $chart->plotAreaClick(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### renderAs
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Chart will switch to the first available mode.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\Chart`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->renderAs('value');
+    ?>
+
 ### select
 Fired when the user modifies the selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [select](/api/web/chart#events-select) event documentation.

@@ -2516,6 +2516,37 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
     // margin right and bottom are with 5px (by default)
     margin: { top: 1, left: 1 }
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Chart will switch to the first available mode.
+
+The supported values are:
+
+* "svg" - renders the widget as inline SVG document, if available
+* "vml" - renders the widget as VML, if available
+* "canvas" - renders the widget as a Canvas element, if available.
+
+> Using Canvas rendering disables most interactive features.
+
+### Example - Render as Canvas, if supported
+
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+        renderAs: "canvas",
+        series: [{
+          type: "line",
+          field: "value",
+          categoryField: "date",
+          data: [
+            { value: 1, date: new Date(2012, 1, 1) },
+            { value: 2, date: new Date(2012, 1, 2) }
+          ]
+        }]
+    });
+    </script>
+
 ### series `Array`
 
 Array of series definitions.

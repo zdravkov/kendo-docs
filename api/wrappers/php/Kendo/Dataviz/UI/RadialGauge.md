@@ -128,6 +128,25 @@ The width of the range indicators.
     $radialGauge->rangeSize(1);
     ?>
 
+### renderAs
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Gauge will switch to the first available mode.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\RadialGauge`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $radialGauge = new \Kendo\Dataviz\UI\RadialGauge('RadialGauge');
+    $radialGauge->renderAs('value');
+    ?>
+
 ### scale
 
 Configures the scale.

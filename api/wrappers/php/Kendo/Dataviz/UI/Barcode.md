@@ -165,6 +165,25 @@ The padding of the barcode.
     $barcode->padding(array('bottom' => $bottom));
     ?>
 
+### renderAs
+Sets the preferred rendering engine.
+If it is not supported by the browser, the BarCode will switch to the first available mode.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\Barcode`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $barcode = new \Kendo\Dataviz\UI\Barcode('Barcode');
+    $barcode->renderAs('value');
+    ?>
+
 ### text
 
 Can be set to a JavaScript object which represents the text configuration.

@@ -101,6 +101,29 @@ The possible values are:
     });
     </script>
 
+### renderAs `String` *(default: "canvas")*
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the QRCode will switch to the first available mode.
+
+The supported values are:
+
+* "canvas" - renders the widget as a Canvas element, if available.
+* "svg" - renders the widget as inline SVG document, if available
+* "vml" - renders the widget as VML, if available
+
+> Using Canvas rendering disables most interactive features.
+
+### Example - Render as SVG, if supported
+
+    <div id="qrCode"></div>
+    <script>
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      renderAs: "svg"
+    });
+    </script>
+
 ### size `Number|String`
 
 Specifies the size of a QR code in pixels (i.e. "200px"). Numeric values are treated as pixels. If no size is specified, it will be determined from the element width and height. In case the element does not have width or height bigger than zero, a default value of 200 pixels will be used.

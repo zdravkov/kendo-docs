@@ -249,6 +249,35 @@ The size of the track.
 
 The value of the gauge.
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Gauge will switch to the first available mode.
+
+The supported values are:
+
+* "svg" - renders the widget as inline SVG document, if available
+* "vml" - renders the widget as VML, if available
+* "canvas" - renders the widget as a Canvas element, if available.
+
+> Using Canvas rendering disables most interactive features.
+
+### Example - Render as Canvas, if supported
+
+    <div id="gauge"></div>
+    <script>
+    $("#gauge").kendoLinearGauge({
+        renderAs: "canvas",
+        pointer: {
+            value: 50
+        },
+        scale: {
+            min: 0,
+            max: 100
+        }
+    });
+    </script>
+
 ### scale `Object`
 
 Configures the scale.

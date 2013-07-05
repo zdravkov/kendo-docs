@@ -23,7 +23,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
 
     // Configure it
-    $linearGauge->transitions(true)
+    $linearGauge->renderAs('value')
 
     // Output it
 
@@ -90,6 +90,25 @@ The pointer configuration options.
     $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
     $color = 'value';
     $linearGauge->pointer(array('color' => $color));
+    ?>
+
+### renderAs
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Gauge will switch to the first available mode.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\LinearGauge`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $linearGauge = new \Kendo\Dataviz\UI\LinearGauge('LinearGauge');
+    $linearGauge->renderAs('value');
     ?>
 
 ### scale

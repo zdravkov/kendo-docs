@@ -591,6 +591,25 @@ For additional information check the [plotAreaClick](/api/web/stockchart#events-
     $stockChart->plotAreaClick(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### renderAs
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Chart will switch to the first available mode.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChart`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
+    $stockChart->renderAs('value');
+    ?>
+
 ### select
 Fires when the user modifies the selection.The range units are:
 For additional information check the [select](/api/web/stockchart#events-select) event documentation.

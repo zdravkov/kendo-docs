@@ -19,6 +19,15 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:chart autoBind="autoBind">
     </kendo:chart>
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Chart will switch to the first available mode.The supported values are:
+
+#### Example
+    <kendo:chart renderAs="renderAs">
+    </kendo:chart>
+
 ### seriesColors `Object`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.

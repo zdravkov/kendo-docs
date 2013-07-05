@@ -27,6 +27,15 @@ It is used as a default categoryField for all series.The data item field value m
     <kendo:stockChart dateField="dateField">
     </kendo:stockChart>
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Chart will switch to the first available mode.The supported values are:
+
+#### Example
+    <kendo:stockChart renderAs="renderAs">
+    </kendo:stockChart>
+
 ### seriesColors `Object`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.

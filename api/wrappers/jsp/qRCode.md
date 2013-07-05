@@ -34,6 +34,15 @@ The error correction level used to encode the value.The possible values are:
     <kendo:qRCode errorCorrection="errorCorrection">
     </kendo:qRCode>
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the QRCode will switch to the first available mode.The supported values are:
+
+#### Example
+    <kendo:qRCode renderAs="renderAs">
+    </kendo:qRCode>
+
 ### size `Object`
 
 Specifies the size of a QR code in pixels (i.e. "200px"). Numeric values are treated as pixels. If no size is specified, it will be determined from the element width and height. In case the element does not have width or height bigger than zero, a default value of 200 pixels will be used.

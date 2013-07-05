@@ -7470,6 +7470,35 @@ The top padding of the chart plot area.
     });
     </script>
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Chart will switch to the first available mode.
+
+The supported values are:
+
+* "svg" - renders the widget as inline SVG document, if available
+* "vml" - renders the widget as VML, if available
+* "canvas" - renders the widget as a Canvas element, if available.
+
+> Using Canvas rendering disables most interactive features.
+
+### Example - Render as Canvas, if supported
+
+    <div id="chart"></div>
+    <script>
+        $("#chart").kendoChart({
+            renderAs: "canvas",
+            series: [{
+                type: "pie",
+                data: [1, 2]
+            }],
+            categoryAxis: {
+                categories: ["Foo", "Bar"]
+            }
+        });
+    <script>
+
 ### series `Array`
 
 The configuration of the chart series.

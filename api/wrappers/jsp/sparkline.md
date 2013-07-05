@@ -42,6 +42,15 @@ The width to allocate for each data point.
     <kendo:sparkline pointWidth="pointWidth">
     </kendo:sparkline>
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Sparkline will switch to the first available mode.The supported values are:
+
+#### Example
+    <kendo:sparkline renderAs="renderAs">
+    </kendo:sparkline>
+
 ### seriesColors `Object`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.

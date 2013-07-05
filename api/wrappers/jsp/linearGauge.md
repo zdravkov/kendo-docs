@@ -10,6 +10,15 @@ A JSP wrapper for Kendo UI [LinearGauge](/api/dataviz/lineargauge).
 
 ## Configuration Attributes
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Gauge will switch to the first available mode.The supported values are:
+
+#### Example
+    <kendo:linearGauge renderAs="renderAs">
+    </kendo:linearGauge>
+
 ### transitions `boolean`
 
 A value indicating if transition animations should be played.

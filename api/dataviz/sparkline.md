@@ -953,6 +953,30 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 The width to allocate for each data point.
 
+### renderAs `String`
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Sparkline will switch to the first available mode.
+
+The supported values are:
+
+* "svg" - renders the widget as inline SVG document, if available
+* "vml" - renders the widget as VML, if available
+* "canvas" - renders the widget as a Canvas element, if available.
+
+> Using Canvas rendering disables most interactive features.
+
+### Example - Render as Canvas, if supported
+
+    <span id="sparkline"></div>
+    <script>
+    $("#sparkline").kendoSparkline({
+        renderAs: "canvas",
+        type: "column",
+        data: [1, 2, 3, 4]
+    });
+    </script>
+
 ### series `Array`
 
 Array of series definitions.

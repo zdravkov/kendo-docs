@@ -95,6 +95,29 @@ The right padding of the barcode.
 
 The top padding of the barcode.
 
+### renderAs `String` *(default: "canvas")*
+
+Sets the preferred rendering engine.
+If it is not supported by the browser, the BarCode will switch to the first available mode.
+
+The supported values are:
+
+* "canvas" - renders the widget as a Canvas element, if available.
+* "svg" - renders the widget as inline SVG document, if available
+* "vml" - renders the widget as VML, if available
+
+> Using Canvas rendering disables most interactive features.
+
+### Example - Render as SVG, if supported
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+        value:"123456",
+      renderAs: "svg"
+    });
+    </script>
+
 ### text `Object`
 
 Can be set to a JavaScript object which represents the text configuration.

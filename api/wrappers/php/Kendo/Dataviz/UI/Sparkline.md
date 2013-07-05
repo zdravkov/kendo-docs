@@ -440,6 +440,25 @@ The width to allocate for each data point.
     $sparkline->pointWidth(1);
     ?>
 
+### renderAs
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Sparkline will switch to the first available mode.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\Sparkline`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $sparkline = new \Kendo\Dataviz\UI\Sparkline('Sparkline');
+    $sparkline->renderAs('value');
+    ?>
+
 ### addSeriesItem
 
 Adds one or more SparklineSeriesItem to the Sparkline.
