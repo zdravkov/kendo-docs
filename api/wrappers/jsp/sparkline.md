@@ -184,7 +184,7 @@ For additional information check the [axisLabelClick](/api/web/sparkline#events-
 
 ### dataBound `String`
 
-Fires when the chart has received data from the data source
+Fires when the sparkline has received data from the data source
 and is about to render it.
 
 
@@ -201,7 +201,7 @@ For additional information check the [dataBound](/api/web/sparkline#events-dataB
 
 ### dragStart `String`
 
-Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
+Fires when the user has used the mouse or a swipe gesture to drag the sparkline.The drag operation can be aborted by calling e.preventDefault().
 
 
 For additional information check the [dragStart](/api/web/sparkline#events-dragStart) event documentation.
@@ -217,7 +217,7 @@ For additional information check the [dragStart](/api/web/sparkline#events-dragS
 
 ### drag `String`
 
-Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+Fires as long as the user is dragging the sparkline using the mouse or swipe gestures.
 
 
 For additional information check the [drag](/api/web/sparkline#events-drag) event documentation.
@@ -233,7 +233,7 @@ For additional information check the [drag](/api/web/sparkline#events-drag) even
 
 ### dragEnd `String`
 
-Fires when the user stops dragging the chart.
+Fires when the user stops dragging the sparkline.
 
 
 For additional information check the [dragEnd](/api/web/sparkline#events-dragEnd) event documentation.
@@ -365,7 +365,7 @@ For additional information check the [axisLabelClick](/api/web/sparkline#events-
 
 ### kendo:sparkline-dataBound
 
-Fires when the chart has received data from the data source
+Fires when the sparkline has received data from the data source
 and is about to render it.
 
 
@@ -384,7 +384,7 @@ For additional information check the [dataBound](/api/web/sparkline#events-dataB
 
 ### kendo:sparkline-dragStart
 
-Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
+Fires when the user has used the mouse or a swipe gesture to drag the sparkline.The drag operation can be aborted by calling e.preventDefault().
 
 
 For additional information check the [dragStart](/api/web/sparkline#events-dragStart) event documentation.
@@ -402,7 +402,7 @@ For additional information check the [dragStart](/api/web/sparkline#events-dragS
 
 ### kendo:sparkline-drag
 
-Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+Fires as long as the user is dragging the sparkline using the mouse or swipe gestures.
 
 
 For additional information check the [drag](/api/web/sparkline#events-drag) event documentation.
@@ -420,7 +420,7 @@ For additional information check the [drag](/api/web/sparkline#events-drag) even
 
 ### kendo:sparkline-dragEnd
 
-Fires when the user stops dragging the chart.
+Fires when the user stops dragging the sparkline.
 
 
 For additional information check the [dragEnd](/api/web/sparkline#events-dragEnd) event documentation.

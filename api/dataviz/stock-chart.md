@@ -2611,10 +2611,7 @@ The data item field which contains the category name or date.
             { value: 1, date: new Date(2012, 1, 1) },
             { value: 2, date: new Date(2012, 1, 2) }
           ]
-        }],
-        categoryAxis: {
-          baseUnit: "days"
-        }
+        }]
     });
     </script>
 
@@ -4704,6 +4701,97 @@ Template variables:
 ### valueAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
 
 A value indicating if the tooltip should be displayed.
+
+## Methods
+
+### destroy
+
+Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
+
+> This method does not remove the widget element from DOM.
+
+### redraw
+
+Repaints the chart using the currently loaded data.
+
+### refresh
+
+Reloads the data and renders the chart.
+
+### setDataSource
+
+Sets the data source of the widget.
+
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+The data source to which the widget should be bound.
+
+### svg
+
+Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the chart.
+The returned string is a self-contained SVG document that can be used as is or
+converted to other formats using tools like [Inkscape](http://inkscape.org/) and
+[ImageMagick](http://www.imagemagick.org/).
+Both programs provide command-line interface suitable for server-side processing.
+
+#### Returns
+
+`String` the SVG representation of the chart.
+
+#### Example - get the SVG representation of the chart
+
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+        series: [{
+          type: "line",
+          field: "value",
+          categoryField: "date",
+          data: [
+            { value: 1, date: new Date(2012, 1, 1) },
+            { value: 2, date: new Date(2012, 1, 2) }
+          ]
+        }]
+    });
+
+    var chart = $("#stock-chart").data("kendoStockChart");
+    var svg = chart.svg();
+    console.log(svg); // displays the SVG string
+    </script>
+
+### imageDataURL
+
+Returns a PNG image of the chart encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Returns
+
+`String` A data URL with `image/png` MIME type.
+`null` if the browser does not support the `canvas` element.
+
+#### Example - show a snapshot of the Chart
+
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+        series: [{
+          type: "line",
+          field: "value",
+          categoryField: "date",
+          data: [
+            { value: 1, date: new Date(2012, 1, 1) },
+            { value: 2, date: new Date(2012, 1, 2) }
+          ]
+        }]
+    });
+
+    var chart = $("#stock-chart").data("kendoStockChart");
+    var image = chart.imageDataURL();
+    if (!window.open(image)) {
+        document.location.href = image;
+    }
+    </script>
 
 ## Events
 

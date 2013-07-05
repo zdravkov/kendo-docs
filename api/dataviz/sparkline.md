@@ -2710,19 +2710,9 @@ Prepares the Sparkline for safe removal from the DOM.
 
 Detaches event handlers and removes data entries in order to avoid memory leaks.
 
-#### Example
-
-    kendo.destroy($("#sparkline"));
-    $("#sparkline").remove();
-
 ### refresh
 
 Reloads the data and repaints the chart.
-
-#### Example
-
-    var sparkline = $("#sparkline").data("kendoSparkline");
-    sparkline.refresh();
 
 ### setDataSource
 
@@ -2732,23 +2722,13 @@ Sets the dataSource of an existing Chart and rebinds it.
 
 ##### dataSource `kendo.data.DataSource`
 
-#### Example
-
-    var dataSource = new kendo.data.DataSource({
-        //dataSource configuration
-    });
-
-    $("#sparkline").data("kendoSparkline").setDataSource(dataSource);
-
 ### svg
 
-Returns the SVG representation of the current chart.
-The returned string is a self-contained SVG document
-that can be used as is or converted to other formats
-using tools like [Inkscape](http://inkscape.org/) and
+Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the chart.
+The returned string is a self-contained SVG document that can be used as is or
+converted to other formats using tools like [Inkscape](http://inkscape.org/) and
 [ImageMagick](http://www.imagemagick.org/).
-Both programs provide command-line interface
-suitable for backend processing.
+Both programs provide command-line interface suitable for server-side processing.
 
 #### Returns
 
@@ -2756,8 +2736,40 @@ suitable for backend processing.
 
 #### Example
 
+    <span id="sparkline"></div>
+    <script>
+    $("#sparkline").kendoSparkline({
+        type: "column",
+        data: [1, 2, 3, 4]
+    });
     var sparkline = $("#sparkline").data("kendoSparkline");
-    var svgText = sparkline.svg();
+    var svg = sparkline.svg();
+    console.log(svg); // displays the SVG string
+    </script>
+
+### imageDataURL
+
+Returns a PNG image of the sparkline encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Returns
+
+`String` A data URL with `image/png` MIME type.
+`null` if the browser does not support the `canvas` element.
+
+#### Example - show a snapshot of the Sparkline
+
+    <span id="sparkline"></div>
+    <script>
+    $("#sparkline").kendoSparkline({
+        type: "column",
+        data: [1, 2, 3, 4]
+    });
+    var sparkline = $("#sparkline").data("kendoSparkline");
+    var image = sparkline.imageDataURL();
+    if (!window.open(image)) {
+        document.location.href = image;
+    }
+    </script>
 
 ## Events
 
@@ -2800,7 +2812,7 @@ The DOM element of the label.
 
 ### dataBound
 
-Fires when the chart has received data from the data source
+Fires when the sparkline has received data from the data source
 and is about to render it.
 
 #### Example
@@ -2811,7 +2823,7 @@ and is about to render it.
 
 ### dragStart
 
-Fires when the user has used the mouse or a swipe gesture to drag the chart.
+Fires when the user has used the mouse or a swipe gesture to drag the sparkline.
 
 The drag operation can be aborted by calling `e.preventDefault()`.
 
@@ -2828,7 +2840,7 @@ The original user event that triggered the drag action.
 
 ### drag
 
-Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+Fires as long as the user is dragging the sparkline using the mouse or swipe gestures.
 
 #### Event Data
 
@@ -2860,7 +2872,7 @@ The original user event that triggered the drag action.
 
 ### dragEnd
 
-Fires when the user stops dragging the chart.
+Fires when the user stops dragging the sparkline.
 
 #### Event Data
 

@@ -369,7 +369,7 @@ The format of the labels.
 
 #### Example
 
-    $("#radial-gauge").kendoLinearGauge({
+    $("#linear-gauge").kendoLinearGauge({
         scale: {
            labels: {
                // set the format to currency
@@ -406,7 +406,7 @@ Template variables:
 #### Example
 
     // chart intialization
-    $("#radial-gauge").kendoLinearGauge({
+    $("#linear-gauge").kendoLinearGauge({
          scale: {
              labels: {
                  // labels template
@@ -490,7 +490,7 @@ The ranges of the scale.
 
 #### Example
 
-    $("#radial-gauge").kendoRadialGauge({
+    $("#linear-gauge").kendoLinearGauge({
         scale: {
             ranges: [{
                 from: 10,
@@ -557,18 +557,58 @@ Redraws the gauge.
 
 ### svg
 
-Returns the SVG representation of the current gauge.
-The returned string is a self-contained SVG document
-that can be used as is or converted to other formats
-using tools like [Inkscape](http://inkscape.org/) and
+Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the gauge.
+The returned string is a self-contained SVG document that can be used as is or
+converted to other formats using tools like [Inkscape](http://inkscape.org/) and
 [ImageMagick](http://www.imagemagick.org/).
-Both programs provide command-line interface
-suitable for backend processing.
+Both programs provide command-line interface suitable for server-side processing.
 
 #### Example
 
-    var gauge = $("#linear-gauge").data("kendoLinearGauge");
-    var svgText = gauge.svg();
+    <div id="gauge"></div>
+    <script>
+    $("#gauge").kendoLinearGauge({
+        pointer: {
+            value: 50
+        },
+        scale: {
+            min: 0,
+            max: 100
+        }
+    });
+    var gauge = $("#gauge").data("kendoLinearGauge");
+    var svg = gauge.svg();
+    console.log(svg); // displays the SVG string
+    </script>
+
+### imageDataURL
+
+Returns a PNG image of the gauge encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Returns
+
+`String` A data URL with `image/png` MIME type.
+`null` if the browser does not support the `canvas` element.
+
+#### Example - show a snapshot of the gauge
+
+    <div id="gauge"></div>
+    <script>
+    $("#gauge").kendoLinearGauge({
+        pointer: {
+            value: 50
+        },
+        scale: {
+            min: 0,
+            max: 100
+        }
+    });
+    var gauge = $("#gauge").data("kendoLinearGauge");
+    var image = gauge.imageDataURL();
+    if (!window.open(image)) {
+        document.location.href = image;
+    }
+    </script>
 
 ### value
 

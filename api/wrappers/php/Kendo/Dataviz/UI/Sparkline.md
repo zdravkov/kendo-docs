@@ -186,7 +186,7 @@ The data for the default sparkline series.Will be discareded if series are suppl
     ?>
 
 ### dataBound
-Fires when the chart has received data from the data source
+Fires when the sparkline has received data from the data source
 and is about to render it.
 For additional information check the [dataBound](/api/web/sparkline#events-dataBound) event documentation.
 
@@ -250,7 +250,7 @@ Sets the data source of the dataSource.
     ?>
 
 ### drag
-Fires as long as the user is dragging the chart using the mouse or swipe gestures.
+Fires as long as the user is dragging the sparkline using the mouse or swipe gestures.
 For additional information check the [drag](/api/web/sparkline#events-drag) event documentation.
 
 #### Returns
@@ -286,7 +286,7 @@ For additional information check the [drag](/api/web/sparkline#events-drag) even
     ?>
 
 ### dragEnd
-Fires when the user stops dragging the chart.
+Fires when the user stops dragging the sparkline.
 For additional information check the [dragEnd](/api/web/sparkline#events-dragEnd) event documentation.
 
 #### Returns
@@ -322,7 +322,7 @@ For additional information check the [dragEnd](/api/web/sparkline#events-dragEnd
     ?>
 
 ### dragStart
-Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
+Fires when the user has used the mouse or a swipe gesture to drag the sparkline.The drag operation can be aborted by calling e.preventDefault().
 For additional information check the [dragStart](/api/web/sparkline#events-dragStart) event documentation.
 
 #### Returns

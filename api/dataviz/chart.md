@@ -21470,8 +21470,11 @@ The data source to which the widget should be bound.
 
 ### svg
 
-Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the chart. The returned string is a self-contained SVG document that can be used as is or converted to other formats using tools like [Inkscape](http://inkscape.org/) and
-[ImageMagick](http://www.imagemagick.org/). Both programs provide command-line interface suitable for server-side processing.
+Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the chart.
+The returned string is a self-contained SVG document that can be used as is or
+converted to other formats using tools like [Inkscape](http://inkscape.org/) and
+[ImageMagick](http://www.imagemagick.org/).
+Both programs provide command-line interface suitable for server-side processing.
 
 #### Returns
 
@@ -21489,6 +21492,31 @@ Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the chart. 
     var chart = $("#chart").data("kendoChart");
     var svg = chart.svg();
     console.log(svg); // displays the SVG string
+    </script>
+
+### imageDataURL
+
+Returns a PNG image of the chart encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Returns
+
+`String` A data URL with `image/png` MIME type.
+`null` if the browser does not support the `canvas` element.
+
+#### Example - show a snapshot of the Chart
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        { data: [1] }
+      ]
+    });
+    var chart = $("#chart").data("kendoChart");
+    var image = chart.imageDataURL();
+    if (!window.open(image)) {
+        document.location.href = image;
+    }
     </script>
 
 ## Events
