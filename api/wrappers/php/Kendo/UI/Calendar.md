@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\UI\Calendar
 
-A PHP class representing Kendo [Calendar](/api/web/calendar).
+A PHP wrapper for Kendo UI [Calendar](/api/web/calendar).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -35,6 +35,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 ### change
 Fires when the selected date is changed
+For additional information check the [change](/api/web/calendar#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\Calendar`
@@ -225,6 +226,7 @@ Templates for the cells rendered in the "month" view.
 
 ### navigate
 Fires when navigate
+For additional information check the [navigate](/api/web/calendar#events-navigate) event documentation.
 
 #### Returns
 `\Kendo\UI\Calendar`

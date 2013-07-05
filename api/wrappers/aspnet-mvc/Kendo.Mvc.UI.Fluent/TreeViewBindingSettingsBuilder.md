@@ -11,36 +11,24 @@ Defines the fluent interface for building TreeViewBindingSettingsBuilder
 
 ## Methods
 
-### Enabled(System.Boolean)
+### Enabled(`System.Boolean`)
 Enables or disables binding.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .DataBinding(dataBinding =>
-        {
+    .Name("TreeView")
+    .DataBinding(dataBinding =>
+    {
         dataBinding.Ajax().Select("Index", "Home").Enabled((bool)ViewData["ajax"]);
-        })
+    })
     %>
-        
 
 
-
-
-### Select(System.Web.Routing.RouteValueDictionary)
+### Select(`System.Web.Routing.RouteValueDictionary`)
 Sets the action, controller and route values
-
-#### Example
-
-    <%= Html.Kendo().Grid(Model)
-        .Name("Grid")
-        .DataBinding(dataBinding =>
-        {
-        dataBinding.Ajax().Select(MVC.Home.Index(1).GetRouteValueDictionary());
-        })
-    %>
-        
 
 
 #### Parameters
@@ -51,19 +39,46 @@ The route values of the Action method.
 
 
 
-### Select(System.String,System.String,System.Web.Routing.RouteValueDictionary)
+#### Example (ASPX)
+    <%= Html.Kendo().Grid(Model)
+    .Name("Grid")
+    .DataBinding(dataBinding =>
+    {
+        dataBinding.Ajax().Select(MVC.Home.Index(1).GetRouteValueDictionary());
+    })
+    %>
+
+
+### Select(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
 Sets the action, controller and route values for the select operation
 
-#### Example
 
+#### Parameters
+
+##### actionName `System.String`
+Name of the action.
+
+##### controllerName `System.String`
+Name of the controller.
+
+##### routeValues `System.Web.Routing.RouteValueDictionary`
+The route values.
+
+
+
+
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .DataBinding(dataBinding =>
-        {
+    .Name("TreeView")
+    .DataBinding(dataBinding =>
+    {
         dataBinding.Ajax().Select("Index", "Home", new RouteValueDictionary{ {"id", 1} });
-        })
+    })
     %>
-        
+
+
+### Select(`System.String,System.String,System.Object`)
+Sets the action, controller and route values for the select operation
 
 
 #### Parameters
@@ -74,55 +89,25 @@ Name of the action.
 ##### controllerName `System.String`
 Name of the controller.
 
-##### routeValues `System.Web.Routing.RouteValueDictionary`
+##### routeValues `System.Object`
 The route values.
 
 
 
 
-### Select(System.String,System.String,System.Object)
-Sets the action, controller and route values for the select operation
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .DataBinding(dataBinding =>
-        {
+    .Name("TreeView")
+    .DataBinding(dataBinding =>
+    {
         dataBinding.Ajax().Select("Index", "Home", new { {"id", 1} });
-        })
+    })
     %>
-        
 
 
-#### Parameters
-
-##### actionName `System.String`
-Name of the action.
-
-##### controllerName `System.String`
-Name of the controller.
-
-##### routeValues `System.Object`
-The route values.
-
-
-
-
-### Select(System.String,System.String)
+### Select(`System.String,System.String`)
 Sets the action, controller and route values for the select operation
 
-#### Example
-
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .DataBinding(dataBinding =>
-        {
-        dataBinding.Ajax().Select("Index", "Home");
-        })
-    %>
-        
-
 
 #### Parameters
 
@@ -135,19 +120,18 @@ Name of the controller.
 
 
 
-### Select(System.String,System.Web.Routing.RouteValueDictionary)
-Sets the route and values for the select operation
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .DataBinding(dataBinding =>
-        {
-        dataBinding.Ajax().Select("Default", "Home", new RouteValueDictionary{ {"id", 1} });
-        })
+    .Name("TreeView")
+    .DataBinding(dataBinding =>
+    {
+        dataBinding.Ajax().Select("Index", "Home");
+    })
     %>
-        
+
+
+### Select(`System.String,System.Web.Routing.RouteValueDictionary`)
+Sets the route and values for the select operation
 
 
 #### Parameters
@@ -161,19 +145,18 @@ The route values.
 
 
 
-### Select(System.String,System.Object)
-Sets the route and values for the select operation
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .DataBinding(dataBinding =>
-        {
-        dataBinding.Ajax().Select("Default", new {id=1});
-        })
+    .Name("TreeView")
+    .DataBinding(dataBinding =>
+    {
+        dataBinding.Ajax().Select("Default", "Home", new RouteValueDictionary{ {"id", 1} });
+    })
     %>
-        
+
+
+### Select(`System.String,System.Object`)
+Sets the route and values for the select operation
 
 
 #### Parameters
@@ -187,20 +170,19 @@ The route values.
 
 
 
-### Select(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().TreeView()
+    .Name("TreeView")
+    .DataBinding(dataBinding =>
+    {
+        dataBinding.Ajax().Select("Default", new {id=1});
+    })
+    %>
+
+
+### Select(`System.String`)
 Sets the route name for the select operation
 
-#### Example
-
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .DataBinding(dataBinding =>
-        {
-        dataBinding.Ajax().Select("Default");
-        })
-    %>
-        
-
 
 #### Parameters
 
@@ -208,6 +190,16 @@ Sets the route name for the select operation
 Name of the route.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TreeView()
+    .Name("TreeView")
+    .DataBinding(dataBinding =>
+    {
+        dataBinding.Ajax().Select("Default");
+    })
+    %>
 
 
 

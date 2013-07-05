@@ -11,112 +11,139 @@ Defines the fluent interface for configuring the DatePicker component.
 
 ## Methods
 
-### FooterId(System.String)
+### ARIATemplate(`System.String`)
+Specifies a template used to populate aria-label attribute.
+
+
+#### Parameters
+
+##### template `System.String`
+The string template.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DatePicker()
+    .Name("DatePicker")
+    .ARIATemplate("Date: #=kendo.toString(data.current, 'd')#")
+    %>
+
+
+### FooterId(`System.String`)
 FooterId to be used for rendering the footer of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().DatePicker()
-        .Name("DatePicker")
-        .FooterId("widgetFooterId")
+    .Name("DatePicker")
+    .FooterId("widgetFooterId")
     %>
-        
 
 
-
-
-### Footer(System.String)
+### Footer(`System.String`)
 Footer template to be used for rendering the footer of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().DatePicker()
-        .Name("DatePicker")
-        .Footer("#= kendo.toString(data, "G") #")
+    .Name("DatePicker")
+    .Footer("#= kendo.toString(data, "G") #")
     %>
-        
+
+
+### Footer(`System.Boolean`)
+Enables/disables footer of the calendar popup.
 
 
 
 
-### Depth(Kendo.Mvc.UI.CalendarView)
+#### Example (ASPX)
+    <%= Html.Kendo().DatePicker()
+    .Name("DatePicker")
+    .Footer(false)
+    %>
+
+
+### Depth(`Kendo.Mvc.UI.CalendarView`)
 Specifies the navigation depth.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().DatePicker()
-        .Name("DatePicker")
-        .Depth(CalendarView.Month)
+    .Name("DatePicker")
+    .Depth(CalendarView.Month)
     %>
-        
 
 
-
-
-### Start(Kendo.Mvc.UI.CalendarView)
+### Start(`Kendo.Mvc.UI.CalendarView`)
 Specifies the start view.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().DatePicker()
-        .Name("DatePicker")
-        .Start(CalendarView.Month)
+    .Name("DatePicker")
+    .Start(CalendarView.Month)
     %>
-        
 
 
-
-
-### MonthTemplateId(System.String)
+### MonthTemplateId(`System.String`)
 MonthTemplateId to be used for rendering the cells of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().DatePicker()
-        .Name("DatePicker")
-        .MonthTemplateId("widgetMonthTemplateId")
+    .Name("DatePicker")
+    .MonthTemplateId("widgetMonthTemplateId")
     %>
-        
 
 
-
-
-### MonthTemplate(System.String)
+### MonthTemplate(`System.String`)
 Templates for the cells rendered in the "month" view.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().DatePicker()
-        .Name("DatePicker")
-        .MonthTemplate("#= data.value #")
+    .Name("DatePicker")
+    .MonthTemplate("#= data.value #")
     %>
-        
 
 
-
-
-### MonthTemplate(System.Action\<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder\>)
+### MonthTemplate(`System.Action<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder>`)
 Configures the content of cells of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().DatePicker()
-        .Name("DatePicker")
-        .MonthTemplate(month => month.Content("#= data.value #"))
+    .Name("DatePicker")
+    .MonthTemplate(month => month.Content("#= data.value #"))
     %>
-        
 
 
-
-
-### Min(System.String)
+### Min(`System.String`)
 Sets the minimal date, which can be selected in DatePicker.
 
 
 
 
-### Max(System.String)
+
+### Max(`System.String`)
 Sets the maximal date, which can be selected in DatePicker.
+
 
 
 

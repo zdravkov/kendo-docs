@@ -450,6 +450,35 @@ The unique axis name. Used to associate a series with a category axis using the 
     $categoryAxisItem->name('value');
     ?>
 
+### notes
+
+The category axis notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemNotes)
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
+    $notes = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotes();
+    $icon = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesIcon();
+    $notes->icon($icon);
+    $categoryAxisItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
+    $icon = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesIcon();
+    $categoryAxisItem->notes(array('icon' => $icon));
+    ?>
+
 ### pane
 The name of the pane that the category axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.

@@ -11,7 +11,7 @@ Defines the fluent interface for configuring filter string operator.
 
 ## Methods
 
-### StartsWith(System.String)
+### StartsWith(`System.String`)
 Includes only values which are starting with the given string.
 
 
@@ -23,7 +23,8 @@ The string with which the result should start
 
 
 
-### EndsWith(System.String)
+
+### EndsWith(`System.String`)
 Includes only values which end with the given string.
 
 
@@ -35,7 +36,8 @@ The string with which the result should end
 
 
 
-### Contains(System.String)
+
+### Contains(`System.String`)
 Includes only values which contain the given string.
 
 
@@ -47,7 +49,8 @@ The string which the result should contain
 
 
 
-### DoesNotContain(System.String)
+
+### DoesNotContain(`System.String`)
 Includes only values which does not contain the given string.
 
 
@@ -55,6 +58,7 @@ Includes only values which does not contain the given string.
 
 ##### value `System.String`
 The string which the result should not contain
+
 
 
 

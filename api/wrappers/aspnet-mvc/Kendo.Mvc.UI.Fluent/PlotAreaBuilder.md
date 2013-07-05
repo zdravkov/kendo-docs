@@ -11,17 +11,8 @@ Defines the fluent interface for configuring the PlotArea.
 
 ## Methods
 
-### Background(System.String)
+### Background(`System.String`)
 Sets the Plot area background color
-
-#### Example
-
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .PlotArea(plotArea => plotArea.Background("Red"))
-        .Render();
-    %>
-        
 
 
 #### Parameters
@@ -32,17 +23,16 @@ The background color.
 
 
 
-### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
-Sets the Plot area margin
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .PlotArea(plotArea => plotArea.Margin(0, 5, 5, 0))
+        .PlotArea(plotArea => plotArea.Background("Red"))
         .Render();
     %>
-        
+
+
+### Margin(`System.Int32,System.Int32,System.Int32,System.Int32`)
+Sets the Plot area margin
 
 
 #### Parameters
@@ -62,17 +52,16 @@ The plot area left margin.
 
 
 
-### Margin(System.Int32)
-Sets the Plot area margin
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .PlotArea(plotArea => plotArea.Margin(5))
+        .PlotArea(plotArea => plotArea.Margin(0, 5, 5, 0))
         .Render();
     %>
-        
+
+
+### Margin(`System.Int32`)
+Sets the Plot area margin
 
 
 #### Parameters
@@ -83,17 +72,16 @@ The plot area margin.
 
 
 
-### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
-Sets the Plot area border
-
-#### Example
-
+#### Example (ASPX)
     <% Html.Kendo().Chart()
         .Name("Chart")
-        .PlotArea(plotArea => plotArea.Border(1, "#000", ChartDashType.Dot))
+        .PlotArea(plotArea => plotArea.Margin(5))
         .Render();
     %>
-        
+
+
+### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+Sets the Plot area border
 
 
 #### Parameters
@@ -110,7 +98,15 @@ The border dash type.
 
 
 
-### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .PlotArea(plotArea => plotArea.Border(1, "#000", ChartDashType.Dot))
+        .Render();
+    %>
+
+
+### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
 Configures the plot area border
 
 
@@ -118,6 +114,7 @@ Configures the plot area border
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 The border configuration action
+
 
 
 

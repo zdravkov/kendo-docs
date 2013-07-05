@@ -11,47 +11,35 @@ Defines the fluent interface for configuring the MultiSelect component.
 
 ## Methods
 
-### AutoBind(System.Boolean)
+### AutoBind(`System.Boolean`)
 Controls whether to bind the widget to the DataSource on initialization.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .AutoBind(false)
+    .Name("MultiSelect")
+    .AutoBind(false)
     %>
-        
 
 
-
-
-### DataValueField(System.String)
+### DataValueField(`System.String`)
 Sets the field of the data item that provides the value content of the list items.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .DataTextField("Text")
-        .DataValueField("Value")
+    .Name("MultiSelect")
+    .DataTextField("Text")
+    .DataValueField("Value")
     %>
-        
 
 
-
-
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.MultiSelectEventBuilder\>)
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.MultiSelectEventBuilder>`)
 Configures the client-side events.
-
-#### Example
-
-    <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .Events(events =>
-        events.Change("change")
-        )
-    %>
-        
 
 
 #### Parameters
@@ -62,48 +50,43 @@ The client events action.
 
 
 
-### Filter(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().MultiSelect()
+    .Name("MultiSelect")
+    .Events(events =>
+        events.Change("change")
+    )
+    %>
+
+
+### Filter(`System.String`)
 Use it to enable filtering of items.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .Filter("startswith");
+    .Name("MultiSelect")
+    .Filter("startswith");
     %>
-        
 
 
-
-
-### Filter(Kendo.Mvc.UI.FilterType)
+### Filter(`Kendo.Mvc.UI.FilterType`)
 Use it to enable filtering of items.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .Filter(FilterType.Contains);
+    .Name("MultiSelect")
+    .Filter(FilterType.Contains);
     %>
-        
 
 
-
-
-### Items(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListItemFactory\>)
+### Items(`System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>`)
 Defines the items in the MultiSelect
-
-#### Example
-
-    <%= Html.Telerik().MultiSelect()
-        .Name("MultiSelect")
-        .Items(items =>
-        {
-        items.Add().Text("First Item");
-        items.Add().Text("Second Item");
-        })
-    %>
-        
 
 
 #### Parameters
@@ -114,116 +97,132 @@ The add action.
 
 
 
-### HighlightFirst(System.Boolean)
+#### Example (ASPX)
+    <%= Html.Telerik().MultiSelect()
+    .Name("MultiSelect")
+    .Items(items =>
+    {
+        items.Add().Text("First Item");
+        items.Add().Text("Second Item");
+    })
+    %>
+
+
+### HighlightFirst(`System.Boolean`)
 Use it to enable highlighting of first matched item.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .HighlightFirst(true)
+    .Name("MultiSelect")
+    .HighlightFirst(true)
     %>
-        
+
+
+### MaxSelectedItems(`System.Int32`)
+Specifies the limit of the selected items. If set to null widget will not limit number of the selected items.
 
 
 
 
-### MinLength(System.Int32)
+#### Example (ASPX)
+    <%= Html.Kendo().MultiSelect()
+    .Name("MultiSelect")
+    .MinLength(3)
+    %>
+
+
+### MinLength(`System.Int32`)
 Specifies the minimum number of characters that should be typed before the widget queries the dataSource.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .MinLength(3)
+    .Name("MultiSelect")
+    .MinLength(3)
     %>
-        
 
 
-
-
-### Placeholder(System.String)
+### Placeholder(`System.String`)
 A string that appears in the textbox when it has no value.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .Placeholder("Select country...")
+    .Name("MultiSelect")
+    .Placeholder("Select country...")
     %>
-        
 
 
-
-
-### ItemTemplate(System.String)
+### ItemTemplate(`System.String`)
 Template to be used for rendering the items in the list.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .ItemTemplate("#= data #")
+    .Name("MultiSelect")
+    .ItemTemplate("#= data #")
     %>
-        
 
 
-
-
-### ItemTemplateId(System.String)
+### ItemTemplateId(`System.String`)
 TemplateId to be used for rendering the items in the list.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .ItemTemplateId("widgetTemplateId")
+    .Name("MultiSelect")
+    .ItemTemplateId("widgetTemplateId")
     %>
-        
 
 
-
-
-### TagTemplate(System.String)
+### TagTemplate(`System.String`)
 Template to be used for rendering the tags of the selected items.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .TagTemplate("#= data #")
+    .Name("MultiSelect")
+    .TagTemplate("#= data #")
     %>
-        
 
 
-
-
-### TagTemplateId(System.String)
+### TagTemplateId(`System.String`)
 TemplateId to be used for rendering the tags of the selected items.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .TagTemplateId("widgetTemplateId")
+    .Name("MultiSelect")
+    .TagTemplateId("widgetTemplateId")
     %>
-        
 
 
-
-
-### Value(System.Collections.IEnumerable)
+### Value(`System.Collections.IEnumerable`)
 Sets the value of the widget.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().MultiSelect()
-        .Name("MultiSelect")
-        .Value(new string[] { "1" })
+    .Name("MultiSelect")
+    .Value(new string[] { "1" })
     %>
-        
-
-
 
 
 

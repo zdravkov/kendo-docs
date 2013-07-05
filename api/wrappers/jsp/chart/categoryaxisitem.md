@@ -274,6 +274,18 @@ More documentation is available at [kendo:chart-categoryAxisItem-minorTicks](cha
         <kendo:chart-categoryAxisItem-minorTicks></kendo:chart-categoryAxisItem-minorTicks>
     </kendo:chart-categoryAxisItem>
 
+### kendo:chart-categoryAxisItem-notes
+
+The category axis notes configuration.
+
+More documentation is available at [kendo:chart-categoryAxisItem-notes](chart/categoryaxisitem-notes).
+
+#### Example
+
+    <kendo:chart-categoryAxisItem>
+        <kendo:chart-categoryAxisItem-notes></kendo:chart-categoryAxisItem-notes>
+    </kendo:chart-categoryAxisItem>
+
 ### kendo:chart-categoryAxisItem-plotBands
 
 The plot bands of the category axis.

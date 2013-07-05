@@ -11,7 +11,7 @@ Defines the fluent interface for configuring command.
 
 ## Methods
 
-### Text(System.String)
+### Text(`System.String`)
 Sets the text displayed by the command. If not set a default value is used.
 
 
@@ -26,7 +26,8 @@ The text which should be displayed
 
 
 
-### HtmlAttributes(System.Object)
+
+### HtmlAttributes(`System.Object`)
 Sets the HTML attributes.
 
 
@@ -41,7 +42,8 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
+
+### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
 Sets the HTML attributes.
 
 
@@ -53,6 +55,7 @@ The HTML attributes.
 
 
 #### Returns
+
 
 
 

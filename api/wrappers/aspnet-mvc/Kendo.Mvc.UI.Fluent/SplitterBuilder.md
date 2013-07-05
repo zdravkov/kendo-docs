@@ -11,16 +11,8 @@ Defines the fluent interface for configuring the Splitter component.
 
 ## Methods
 
-### Orientation(Kendo.Mvc.UI.SplitterOrientation)
+### Orientation(`Kendo.Mvc.UI.SplitterOrientation`)
 Sets the splitter orientation.
-
-#### Example
-
-    <%= Html.Kendo().Splitter()
-        .Name("Splitter")
-        .Orientation(SplitterOrientation.Vertical)
-    %>
-        
 
 
 #### Parameters
@@ -31,19 +23,15 @@ The desired orientation.
 
 
 
-### Panes(System.Action\<Kendo.Mvc.UI.Fluent.SplitterPaneFactory\>)
-Defines the panes in the splitter.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Splitter()
-        .Name("Splitter")
-        .Panes(panes => {
-        panes.Add().LoadContentFrom("Navigation", "Shared");
-        panes.Add().LoadContentFrom("Index", "Home");
-        })
+    .Name("Splitter")
+    .Orientation(SplitterOrientation.Vertical)
     %>
-        
+
+
+### Panes(`System.Action<Kendo.Mvc.UI.Fluent.SplitterPaneFactory>`)
+Defines the panes in the splitter.
 
 
 #### Parameters
@@ -54,26 +42,35 @@ The action that configures the panes.
 
 
 
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.SplitterEventBuilder\>)
-Configures the client events for the splitter.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Splitter()
-        .Name("Splitter")
-        .Events(events => events
-        .OnLoad("onLoad")
-        )
+    .Name("Splitter")
+    .Panes(panes => {
+        panes.Add().LoadContentFrom("Navigation", "Shared");
+        panes.Add().LoadContentFrom("Index", "Home");
+    })
     %>
-        
+
+
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.SplitterEventBuilder>`)
+Configures the client events for the splitter.
 
 
 #### Parameters
 
-##### configureClientEvents System.Action<[Kendo.Mvc.UI.Fluent.SplitterEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SplitterEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SplitterEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SplitterEventBuilder)>
 The action that configures the client events.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Splitter()
+    .Name("Splitter")
+    .Events(events => events
+        .OnLoad("onLoad")
+    )
+    %>
 
 
 

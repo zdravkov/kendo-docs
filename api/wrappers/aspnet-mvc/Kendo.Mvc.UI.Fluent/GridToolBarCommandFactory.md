@@ -20,8 +20,10 @@ Defines a create command.
 
 
 
+
 ### Save
 Defines a save command.
+
 
 
 
@@ -32,7 +34,8 @@ Defines a custom command.
 
 
 
-### Template(System.Action)
+
+### Template(`System.Action`)
 Sets toolbar template.
 
 
@@ -44,7 +47,8 @@ The action defining the template.
 
 
 
-### Template(System.String)
+
+### Template(`System.String`)
 Sets toolbar template.
 
 
@@ -56,7 +60,8 @@ The template
 
 
 
-### Template(System.Action\<Kendo.Mvc.UI.Grid\<T\>\>)
+
+### Template(`System.Action<Kendo.Mvc.UI.Grid<T>>`)
 Sets the toolbar template.
 
 
@@ -68,7 +73,8 @@ The action defining the template.
 
 
 
-### Template(System.Func\<Kendo.Mvc.UI.Grid\<T\>,System.Object\>)
+
+### Template(`System.Func<Kendo.Mvc.UI.Grid<T>,System.Object>`)
 Sets the toolbar template.
 
 
@@ -76,6 +82,7 @@ Sets the toolbar template.
 
 ##### template System.Func<[Kendo.Mvc.UI.Grid](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/Grid)<T>,System.Object>
 The action defining the template.
+
 
 
 

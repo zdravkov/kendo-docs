@@ -244,4 +244,17 @@ The labels visibility.
     %>
 
 
+### Notes(`System.Action<Kendo.Mvc.UI.Fluent.ChartNoteBuilder>`)
+Configures the series notes
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartNoteBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartNoteBuilder)>
+The configuration action.
+
+
+
+
+
 

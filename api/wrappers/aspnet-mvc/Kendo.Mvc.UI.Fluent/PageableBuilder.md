@@ -11,7 +11,7 @@ Defines the fluent interface for configuring Pageable
 
 ## Methods
 
-### PageSizes(System.Int32[])
+### PageSizes(`System.Int32[]`)
 Sets the page sizes of the grid.
 
 
@@ -23,7 +23,8 @@ The values shown in the pageSize dropdown
 
 
 
-### PageSizes(System.Boolean)
+
+### PageSizes(`System.Boolean`)
 Sets the page sizes of the grid.
 
 
@@ -35,7 +36,8 @@ A value indicating whether to enable the page sizes dropdown
 
 
 
-### ButtonCount(System.Int32)
+
+### ButtonCount(`System.Int32`)
 Sets the number of buttons displayed in the numeric pager. Default is 10.
 
 
@@ -47,18 +49,18 @@ The value
 
 
 
-### Enabled(System.Boolean)
+
+### Enabled(`System.Boolean`)
 Enables or disables paging.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Grid(Model)
-        .Name("Grid")
-        .Pageable(paging => paging.Enabled((bool)ViewData["enablePaging"]))
+    .Name("Grid")
+    .Pageable(paging => paging.Enabled((bool)ViewData["enablePaging"]))
     %>
-        
-
-
 
 
 

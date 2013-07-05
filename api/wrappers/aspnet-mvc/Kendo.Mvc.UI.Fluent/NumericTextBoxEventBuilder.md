@@ -11,68 +11,58 @@ Defines the fluent interface for configuring the NumericTextBox events.
 
 ## Methods
 
-### Change(System.Func\<System.Object,System.Object\>)
+### Change(`System.Func<System.Object,System.Object>`)
 Defines the inline handler of the Change client-side event
 
-#### Example
+For additional information check the [change](/api/web/numerictextbox#events-change) event documentation.
 
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+#### Example (ASPX)
     @(Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
         .Events(events => events.Change(
-        @<text>
-        function(e) {
-        //event handling code
-        }
-        </text>
-        ))
-        )
-        
+                @<text>
+                    function(e) {
+                    //event handling code
+                    }
+                    </text>
+                    ))
+                )
+
+
+### Change(`System.String`)
+Defines the name of the JavaScript function that will handle the the Change client-side event.
+
+For additional information check the [change](/api/web/numerictextbox#events-change) event documentation.
 
 
 #### Parameters
 
-##### handler `System.Func<System.Object,System.Object>`
-The handler code wrapped in a text tag (Razor syntax).
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
 
 
 
 
-### Change(System.String)
-Defines the name of the JavaScript function that will handle the the Change client-side event.
-
-#### Example
-
+#### Example (ASPX)
     @(Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
         .Events(events => events.Change("change"))
-        )
-        
+    )
 
 
-#### Parameters
-
-##### handler `System.String`
-The name of the JavaScript function that will handle the event.
-
-
-
-
-### Spin(System.Func\<System.Object,System.Object\>)
+### Spin(`System.Func<System.Object,System.Object>`)
 Defines the inline handler of the Spin client-side event
 
-#### Example
-
-    @(Html.Kendo().NumericTextBox()
-        .Name("NumericTextBox")
-        .Events(events => events.Spin(
-        @<text>
-        function(e) {
-        //event handling code
-        }
-        </text>
-        ))
-        )
-        
+For additional information check the [spin](/api/web/numerictextbox#events-spin) event documentation.
 
 
 #### Parameters
@@ -83,16 +73,23 @@ The handler code wrapped in a text tag (Razor syntax).
 
 
 
-### Spin(System.String)
-Defines the name of the JavaScript function that will handle the the Spin client-side event.
-
-#### Example
-
+#### Example (ASPX)
     @(Html.Kendo().NumericTextBox()
         .Name("NumericTextBox")
-        .Events(events => events.Spin("spin"))
-        )
-        
+        .Events(events => events.Spin(
+                @<text>
+                    function(e) {
+                    //event handling code
+                    }
+                    </text>
+                    ))
+                )
+
+
+### Spin(`System.String`)
+Defines the name of the JavaScript function that will handle the the Spin client-side event.
+
+For additional information check the [spin](/api/web/numerictextbox#events-spin) event documentation.
 
 
 #### Parameters
@@ -101,6 +98,13 @@ Defines the name of the JavaScript function that will handle the the Spin client
 The name of the JavaScript function that will handle the event.
 
 
+
+
+#### Example (ASPX)
+    @(Html.Kendo().NumericTextBox()
+        .Name("NumericTextBox")
+        .Events(events => events.Spin("spin"))
+    )
 
 
 

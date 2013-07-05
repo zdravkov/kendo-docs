@@ -18,7 +18,7 @@ Gets or sets the filter descriptors that will be used for composition.
 
 ## Methods
 
-### CreateFilterExpression(System.Linq.Expressions.ParameterExpression)
+### CreateFilterExpression(`System.Linq.Expressions.ParameterExpression`)
 Creates a predicate filter expression combining FilterDescriptors
             expressions with LogicalOperator.
 
@@ -32,6 +32,7 @@ The parameter expression, which will be used for filtering.
 
 #### Returns
 A predicate filter expression.
+
 
 
 

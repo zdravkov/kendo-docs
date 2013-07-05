@@ -11,13 +11,14 @@ Defines the fluent interface for configuring the DataSource AJAX create/update/d
 
 ## Methods
 
-### Update(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
+### Update(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
 Configures the URL for Update operation.
 
 
 
 
-### Update(System.String,System.String)
+
+### Update(`System.String,System.String`)
 Sets controller and action for Update operation.
 
 
@@ -32,7 +33,8 @@ Controller Name
 
 
 
-### Update(System.String,System.String,System.Object)
+
+### Update(`System.String,System.String,System.Object`)
 Sets controller, action and routeValues for Update operation.
 
 
@@ -50,13 +52,15 @@ Route values
 
 
 
-### Create(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
+
+### Create(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
 Configures the URL for Create operation.
 
 
 
 
-### Create(System.String,System.String)
+
+### Create(`System.String,System.String`)
 Sets controller and action for Create operation.
 
 
@@ -71,7 +75,8 @@ Controller Name
 
 
 
-### Create(System.String,System.String,System.Object)
+
+### Create(`System.String,System.String,System.Object`)
 Sets controller, action and routeValues for Create operation.
 
 
@@ -89,13 +94,15 @@ Route values
 
 
 
-### Destroy(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
+
+### Destroy(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
 Configures the URL for Destroy operation.
 
 
 
 
-### Destroy(System.String,System.String)
+
+### Destroy(`System.String,System.String`)
 Sets controller and action for Destroy operation.
 
 
@@ -110,7 +117,8 @@ Controller Name
 
 
 
-### Destroy(System.String,System.String,System.Object)
+
+### Destroy(`System.String,System.String,System.Object`)
 Sets controller, action and routeValues for Destroy operation.
 
 
@@ -128,7 +136,8 @@ Route values
 
 
 
-### Batch(System.Boolean)
+
+### Batch(`System.Boolean`)
 Determines if modifications will be sent to the server in batches or as individually requests.
 
 
@@ -140,7 +149,8 @@ If true changes will be batched, otherwise false.
 
 
 
-### AutoSync(System.Boolean)
+
+### AutoSync(`System.Boolean`)
 Determines if data source would automatically sync any changes to its data items. By default changes are not automatically sync-ed.
 
 
@@ -148,6 +158,7 @@ Determines if data source would automatically sync any changes to its data items
 
 ##### enabled `System.Boolean`
 If true changes will be automatically synced, otherwise false.
+
 
 
 

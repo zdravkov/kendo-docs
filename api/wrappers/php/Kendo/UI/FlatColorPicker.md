@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\UI\FlatColorPicker
 
-A PHP class representing Kendo [FlatColorPicker](/api/web/flatcolorpicker).
+A PHP wrapper for Kendo UI [FlatColorPicker](/api/web/flatcolorpicker).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -53,6 +53,7 @@ Specifies whether we should display the Apply / Cancel buttons.
 
 ### change
 Triggers when a new color has been selected.
+For additional information check the [change](/api/web/flatcolorpicker#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\FlatColorPicker`

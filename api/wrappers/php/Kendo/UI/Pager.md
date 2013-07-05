@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\UI\Pager
 
-A PHP class representing Kendo [Pager](/api/web/pager).
+A PHP wrapper for Kendo UI [Pager](/api/web/pager).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -71,6 +71,7 @@ Defines the number of buttons displayed in the numeric pager.
 
 ### change
 Fires when the current page has changed.
+For additional information check the [change](/api/web/pager#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\Pager`

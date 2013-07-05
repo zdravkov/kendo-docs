@@ -11,7 +11,7 @@ Defines the fluent interface for configuring the CrudOperation options.
 
 ## Methods
 
-### Route(System.Web.Routing.RouteValueDictionary)
+### Route(`System.Web.Routing.RouteValueDictionary`)
 Sets the route values for the operation.
 
 
@@ -23,7 +23,8 @@ Route values
 
 
 
-### Action(System.String,System.String,System.Object)
+
+### Action(`System.String,System.String,System.Object`)
 Sets the action, contoller and route values for the operation.
 
 
@@ -41,7 +42,8 @@ Route values
 
 
 
-### Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
+
+### Action(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
 Sets the action, contoller and route values for the operation.
 
 
@@ -59,7 +61,8 @@ Route values
 
 
 
-### Action(System.String,System.String)
+
+### Action(`System.String,System.String`)
 Sets the action and contoller values for the operation.
 
 
@@ -74,7 +77,8 @@ Controller name
 
 
 
-### Route(System.String,System.Web.Routing.RouteValueDictionary)
+
+### Route(`System.String,System.Web.Routing.RouteValueDictionary`)
 Sets the route name and values for the operation.
 
 
@@ -89,7 +93,8 @@ Route values
 
 
 
-### Route(System.String,System.Object)
+
+### Route(`System.String,System.Object`)
 Sets the route name and values for the operation.
 
 
@@ -104,7 +109,8 @@ Route values
 
 
 
-### Route(System.String)
+
+### Route(`System.String`)
 Sets the route name for the operation.
 
 
@@ -116,13 +122,15 @@ Sets the route name for the operation.
 
 
 
-### Data(System.Func\<System.Object,System.Object\>)
+
+### Data(`System.Func<System.Object,System.Object>`)
 Sets JavaScript function which to return additional parameters which to be sent the server.
 
 
 
 
-### Data(System.String)
+
+### Data(`System.String`)
 Sets JavaScript function which to return additional parameters which to be sent the server.
 
 
@@ -134,7 +142,8 @@ JavaScript function name
 
 
 
-### Url(System.String)
+
+### Url(`System.String`)
 Specifies an absolute or relative URL for the operation.
 
 
@@ -146,7 +155,8 @@ Absolute or relative URL for the operation
 
 
 
-### Type(System.Web.Mvc.HttpVerbs)
+
+### Type(`System.Web.Mvc.HttpVerbs`)
 Specifies the HTTP verb of the request.
 
 
@@ -154,6 +164,7 @@ Specifies the HTTP verb of the request.
 
 ##### verb `System.Web.Mvc.HttpVerbs`
 The HTTP verb
+
 
 
 

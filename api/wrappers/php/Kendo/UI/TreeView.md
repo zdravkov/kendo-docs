@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\UI\TreeView
 
-A PHP class representing Kendo [TreeView](/api/web/treeview).
+A PHP wrapper for Kendo UI [TreeView](/api/web/treeview).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -23,7 +23,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
     $treeView = new \Kendo\UI\TreeView('TreeView');
 
     // Configure it
-    $treeView->checkboxes(true)
+    $treeView->autoBind(true)
 
     // Output it
 
@@ -63,8 +63,28 @@ Setting this option to false will disable all animations.
     $treeView->animation(array('collapse' => $collapse));
     ?>
 
+### autoBind
+If set to false the widget will not bind to the data source during initialization. In this case data binding will occur when the change event of the
+data source is fired. By default the widget will bind to the data source specified in the configuration.
+
+#### Returns
+`\Kendo\UI\TreeView`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $treeView = new \Kendo\UI\TreeView('TreeView');
+    $treeView->autoBind(true);
+    ?>
+
 ### change
 Triggered when the selection has changed (either by the user or through the select method).
+For additional information check the [change](/api/web/treeview#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -138,6 +158,7 @@ If true or an object, renders checkboxes within each treeview item.
 
 ### collapse
 Triggered before a subgroup gets collapsed.
+For additional information check the [collapse](/api/web/treeview#events-collapse) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -173,6 +194,7 @@ Triggered before a subgroup gets collapsed.
 
 ### dataBound
 Triggered after the dataSource change event has been processed (adding/removing items);
+For additional information check the [dataBound](/api/web/treeview#events-dataBound) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -317,6 +339,7 @@ the link URL of the treeview nodes.
 
 ### drag
 Triggered while a node is being dragged.
+For additional information check the [drag](/api/web/treeview#events-drag) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -371,6 +394,7 @@ TreeView.
 
 ### dragend
 Triggered after a node has been dropped.
+For additional information check the [dragend](/api/web/treeview#events-dragend) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -406,6 +430,7 @@ Triggered after a node has been dropped.
 
 ### dragstart
 Triggered before the dragging of a node starts.
+For additional information check the [dragstart](/api/web/treeview#events-dragstart) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -441,6 +466,7 @@ Triggered before the dragging of a node starts.
 
 ### drop
 Triggered when a node is being dropped.
+For additional information check the [drop](/api/web/treeview#events-drop) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -476,6 +502,7 @@ Triggered when a node is being dropped.
 
 ### expand
 Triggered before a subgroup gets expanded.
+For additional information check the [expand](/api/web/treeview#events-expand) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -570,6 +597,7 @@ HierarchicalDataSource instance), the default value of this option is false.
 
 ### navigate
 Triggered when the user moves the focus on another node
+For additional information check the [navigate](/api/web/treeview#events-navigate) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`
@@ -605,6 +633,7 @@ Triggered when the user moves the focus on another node
 
 ### select
 Triggered when a node is being selected by the user. Cancellable.
+For additional information check the [select](/api/web/treeview#events-select) event documentation.
 
 #### Returns
 `\Kendo\UI\TreeView`

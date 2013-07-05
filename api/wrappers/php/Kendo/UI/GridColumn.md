@@ -420,7 +420,7 @@ An array of values that will be displayed instead of the bound value. Each item 
     ?>
 
 ### width
-The width of the column. Numeric values are treated as pixels.
+The width of the column. Numeric values are treated as pixels. Also refer to Column Widths.
 
 #### Returns
 `\Kendo\UI\GridColumn`

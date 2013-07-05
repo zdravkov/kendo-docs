@@ -11,16 +11,8 @@ Defines the fluent interface for configuring the LinearGauge component.
 
 ## Methods
 
-### Theme(System.String)
+### Theme(`System.String`)
 Sets the theme of the linear gauge.
-
-#### Example
-
-    <%= Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .Theme("Black")
-    %>
-        
 
 
 #### Parameters
@@ -31,16 +23,15 @@ The linear gauge theme.
 
 
 
-### GaugeArea(System.Action\<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder\>)
-Sets the linear gauge area.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .ChartArea(chartArea => chartArea.margin(20))
+    .Name("radialGauge")
+    .Theme("Black")
     %>
-        
+
+
+### GaugeArea(`System.Action<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder>`)
+Sets the linear gauge area.
 
 
 #### Parameters
@@ -51,18 +42,15 @@ The linear gauge area.
 
 
 
-### Scale(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder\>)
-Configures the scale
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .Scale(scale => scale
-        .Min(10)
-        )
+    .Name("radialGauge")
+    .ChartArea(chartArea => chartArea.margin(20))
     %>
-        
+
+
+### Scale(`System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder>`)
+Configures the scale
 
 
 #### Parameters
@@ -73,18 +61,17 @@ The configurator
 
 
 
-### Pointer(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder\>)
-Configures the pointer
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().RadialGauge()
-        .Name("radialGauge")
-        .Pointer(pointer => pointer
-        .Value(10)
-        )
+    .Name("radialGauge")
+    .Scale(scale => scale
+        .Min(10)
+    )
     %>
-        
+
+
+### Pointer(`System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder>`)
+Configures the pointer
 
 
 #### Parameters
@@ -95,16 +82,17 @@ The configurator
 
 
 
-### Transitions(System.Boolean)
-Enables or disabled animated transitions on initial load and refresh.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().RadialGauge()
-        .Name("radialScale")
-        .Transitions(false)
+    .Name("radialGauge")
+    .Pointer(pointer => pointer
+        .Value(10)
+    )
     %>
-        
+
+
+### Transitions(`System.Boolean`)
+Enables or disabled animated transitions on initial load and refresh.
 
 
 #### Parameters
@@ -113,6 +101,13 @@ Enables or disabled animated transitions on initial load and refresh.
 A value indicating if transition animations should be played.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().RadialGauge()
+    .Name("radialScale")
+    .Transitions(false)
+    %>
 
 
 

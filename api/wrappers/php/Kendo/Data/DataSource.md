@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\Data\DataSource
 
-A PHP class representing Kendo [DataSource](/api/framework/datasource).
+A PHP wrapper for Kendo UI [DataSource](/api/framework/datasource).
 
 
 ## Methods
@@ -89,6 +89,7 @@ makes a HTTP request for every CRUD operation.
 
 ### change
 Fired when the data source is populated from a JavaScript array or a remote service, a data item is inserted, updated or removed, the data items are paged, sorted, filtered or grouped.The event handler function context (available via the this keyword) will be set to the data source instance.
+For additional information check the [change](/api/framework/datasource#events-change) event documentation.
 
 #### Returns
 `\Kendo\Data\DataSource`
@@ -148,6 +149,7 @@ The array of data items which the data source contains. The data source will wra
 
 ### error
 Fired when a request to the remote service fails.The event handler function context (available via the this keyword) will be set to the data source instance.
+For additional information check the [error](/api/framework/datasource#events-error) event documentation.
 
 #### Returns
 `\Kendo\Data\DataSource`
@@ -295,6 +297,7 @@ The number of data items per page.
 
 ### requestEnd
 Fired when a remote service request is finished.The event handler function context (available via the this keyword) will be set to the data source instance.
+For additional information check the [requestEnd](/api/framework/datasource#events-requestEnd) event documentation.
 
 #### Returns
 `\Kendo\Data\DataSource`
@@ -330,6 +333,7 @@ Fired when a remote service request is finished.The event handler function conte
 
 ### requestStart
 Fired when the data source makes a remote service request.The event handler function context (available via the this keyword) will be set to the data source instance.
+For additional information check the [requestStart](/api/framework/datasource#events-requestStart) event documentation.
 
 #### Returns
 `\Kendo\Data\DataSource`
@@ -522,6 +526,7 @@ Adds one or more DataSourceSortItem to the DataSource.
 
 ### sync
 Fired after the data source saves data item changes. The data source saves the data item changes when the sync method is called.The event handler function context (available via the this keyword) will be set to the data source instance.
+For additional information check the [sync](/api/framework/datasource#events-sync) event documentation.
 
 #### Returns
 `\Kendo\Data\DataSource`

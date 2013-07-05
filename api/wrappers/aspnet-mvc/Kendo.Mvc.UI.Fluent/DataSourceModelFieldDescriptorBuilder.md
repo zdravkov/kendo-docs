@@ -11,7 +11,7 @@ Defines the fluent interface for configuring the ModelFieldDescriptor.
 
 ## Methods
 
-### DefaultValue(T)
+### DefaultValue(`T`)
 Sets the value which will be used to populate the field when new non-existing model is created.
 
 
@@ -23,7 +23,8 @@ The value
 
 
 
-### DefaultValue(System.Object)
+
+### DefaultValue(`System.Object`)
 Sets the value which will be used to populate the field when new non-existing model is created.
 
 
@@ -35,13 +36,15 @@ The value
 
 
 
+
 ### Editable
 Specifies if the field should be editable.
 
 
 
 
-### Editable(System.Boolean)
+
+### Editable(`System.Boolean`)
 Specifies if the field should be editable.
 
 
@@ -49,6 +52,7 @@ Specifies if the field should be editable.
 
 ##### enabled `System.Boolean`
 True is the field should be editable, otherwise false
+
 
 
 

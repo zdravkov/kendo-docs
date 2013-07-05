@@ -11,30 +11,21 @@ Defines the fluent interface for configuring Scrollable
 
 ## Methods
 
-### Enabled(System.Boolean)
+### Enabled(`System.Boolean`)
 Enables or disables scrolling.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Grid(Model)
-        .Name("Grid")
-        .Scrolling(scrolling => scrolling.Enabled((bool)ViewData["enableScrolling"]))
+    .Name("Grid")
+    .Scrolling(scrolling => scrolling.Enabled((bool)ViewData["enableScrolling"]))
     %>
-        
 
 
-
-
-### Height(System.Int32)
+### Height(`System.Int32`)
 Sets the height of the scrollable area in pixels.
-
-#### Example
-
-    <%= Html.Kendo().Grid(Model)
-        .Name("Grid")
-        .Scrolling(scrolling => scrolling.Height(400))
-    %>
-        
 
 
 #### Parameters
@@ -45,16 +36,15 @@ The height in pixels.
 
 
 
-### Height(System.String)
-Sets the height of the scrollable.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Grid(Model)
-        .Name("Grid")
-        .Scrolling(scrolling => scrolling.Height("20em"))
+    .Name("Grid")
+    .Scrolling(scrolling => scrolling.Height(400))
     %>
-        
+
+
+### Height(`System.String`)
+Sets the height of the scrollable.
 
 
 #### Parameters
@@ -63,6 +53,13 @@ Sets the height of the scrollable.
 The height in pixels.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Grid(Model)
+    .Name("Grid")
+    .Scrolling(scrolling => scrolling.Height("20em"))
+    %>
 
 
 

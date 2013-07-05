@@ -11,7 +11,7 @@ Defines the fluent interface for configuring ListView editing.
 
 ## Methods
 
-### TemplateName(System.String)
+### TemplateName(`System.String`)
 Specify an editor template which to be used.
 
 
@@ -19,6 +19,7 @@ Specify an editor template which to be used.
 
 ##### templateName `System.String`
 name of the editor template
+
 
 
 

@@ -11,23 +11,8 @@ Defines the fluent interface for configuring child TreeView items.
 
 ## Methods
 
-### Items(System.Action\<Kendo.Mvc.UI.Fluent.TreeViewItemFactory\>)
+### Items(`System.Action<Kendo.Mvc.UI.Fluent.TreeViewItemFactory>`)
 Configures the child items of a TreeViewItem.
-
-#### Example
-
-    <%= Html.Telerik().TreeView()
-        .Name("TreeView")
-        .Items(items =>
-        {
-        items.Add().Text("First Item").Items(firstItemChildren =>
-        {
-        firstItemChildren.Add().Text("Child Item 1");
-        firstItemChildren.Add().Text("Child Item 2");
-        });
-        })
-    %>
-        
 
 
 #### Parameters
@@ -38,16 +23,22 @@ The add action.
 
 
 
-### Id(System.String)
-Sets the id of the item.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Telerik().TreeView()
-        .Name("TreeView")
-        .Items(items => items.Add().Id("42"))
+    .Name("TreeView")
+    .Items(items =>
+    {
+        items.Add().Text("First Item").Items(firstItemChildren =>
+        {
+            firstItemChildren.Add().Text("Child Item 1");
+            firstItemChildren.Add().Text("Child Item 2");
+            });
+        })
     %>
-        
+
+
+### Id(`System.String`)
+Sets the id of the item.
 
 
 #### Parameters
@@ -58,24 +49,15 @@ The id.
 
 
 
-### Expanded(System.Boolean)
-Define when the item will be expanded on intial render.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Telerik().TreeView()
-        .Name("TreeView")
-        .Items(items =>
-        {
-        items.Add().Text("First Item").Items(firstItemChildren =>
-        {
-        firstItemChildren.Add().Text("Child Item 1");
-        firstItemChildren.Add().Text("Child Item 2");
-        })
-        .Expanded(true);
-        })
+    .Name("TreeView")
+    .Items(items => items.Add().Id("42"))
     %>
-        
+
+
+### Expanded(`System.Boolean`)
+Define when the item will be expanded on intial render.
 
 
 #### Parameters
@@ -86,20 +68,23 @@ If true the item will be expanded.
 
 
 
-### Checked(System.Boolean)
-Specify whether the item should be initially checked.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Telerik().TreeView()
-        .Name("TreeView")
-        .Checkboxes(true)
-        .Items(items =>
+    .Name("TreeView")
+    .Items(items =>
+    {
+        items.Add().Text("First Item").Items(firstItemChildren =>
         {
-        items.Add().Text("Item").Checked(true);
+            firstItemChildren.Add().Text("Child Item 1");
+            firstItemChildren.Add().Text("Child Item 2");
         })
+        .Expanded(true);
+    })
     %>
-        
+
+
+### Checked(`System.Boolean`)
+Specify whether the item should be initially checked.
 
 
 #### Parameters
@@ -110,24 +95,19 @@ If true, the item will be checked.
 
 
 
-### HasChildren(System.Boolean)
-Sets the expand mode of the treeview item.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Telerik().TreeView()
-        .Name("TreeView")
-        .Items(items =>
-        {
-        items.Add().Text("First Item").Items(firstItemChildren =>
-        {
-        firstItemChildren.Add().Text("Child Item 1");
-        firstItemChildren.Add().Text("Child Item 2");
-        })
-        .HasChildren(true);
-        })
+    .Name("TreeView")
+    .Checkboxes(true)
+    .Items(items =>
+    {
+        items.Add().Text("Item").Checked(true);
+    })
     %>
-        
+
+
+### HasChildren(`System.Boolean`)
+Sets the expand mode of the treeview item.
 
 
 #### Parameters
@@ -136,6 +116,21 @@ Sets the expand mode of the treeview item.
 If true then item will be loaded on demand from client side, if the treeview DataSource is properly configured.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Telerik().TreeView()
+    .Name("TreeView")
+    .Items(items =>
+    {
+        items.Add().Text("First Item").Items(firstItemChildren =>
+        {
+            firstItemChildren.Add().Text("Child Item 1");
+            firstItemChildren.Add().Text("Child Item 2");
+        })
+        .HasChildren(true);
+    })
+    %>
 
 
 

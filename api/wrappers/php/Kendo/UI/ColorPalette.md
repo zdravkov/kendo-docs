@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\UI\ColorPalette
 
-A PHP class representing Kendo [ColorPalette](/api/web/colorpalette).
+A PHP wrapper for Kendo UI [ColorPalette](/api/web/colorpalette).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -35,6 +35,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 ### change
 Triggers when a new color has been changed.
+For additional information check the [change](/api/web/colorpalette#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\ColorPalette`

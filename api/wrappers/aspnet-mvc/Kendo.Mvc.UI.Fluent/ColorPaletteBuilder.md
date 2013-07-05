@@ -11,18 +11,8 @@ Defines the fluent interface for configuring the DatePickerBase component.
 
 ## Methods
 
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.SimpleColorPickerEventBuilder\>)
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.SimpleColorPickerEventBuilder>`)
 Configures the client-side events.
-
-#### Example
-
-    <%= Html.Kendo().ColorPalette()
-        .Name("ColorPalette")
-        .Events(events =>
-        events.Select("select").Change("change")
-        )
-    %>
-        
 
 
 #### Parameters
@@ -33,16 +23,17 @@ The client events action.
 
 
 
-### Value(System.String)
-Sets the value of the picker input
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().ColorPalette()
-        .Name("ColorPalette")
-        .Value("#ff0000")
+    .Name("ColorPalette")
+    .Events(events =>
+        events.Select("select").Change("change")
+    )
     %>
-        
+
+
+### Value(`System.String`)
+Sets the value of the picker input
 
 
 #### Parameters
@@ -53,16 +44,15 @@ The initially selected color
 
 
 
-### Columns(System.Int32)
-Sets the amount of columns that should be shown
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().ColorPalette()
-        .Name("ColorPalette")
-        .Columns(5)
+    .Name("ColorPalette")
+    .Value("#ff0000")
     %>
-        
+
+
+### Columns(`System.Int32`)
+Sets the amount of columns that should be shown
 
 
 #### Parameters
@@ -73,16 +63,15 @@ The initially selected color
 
 
 
-### TileSize(System.Int32)
-Sets the size of the palette tiles
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().ColorPalette()
-        .Name("ColorPalette")
-        .TileSize(32)
+    .Name("ColorPalette")
+    .Columns(5)
     %>
-        
+
+
+### TileSize(`System.Int32`)
+Sets the size of the palette tiles
 
 
 #### Parameters
@@ -93,16 +82,15 @@ The tile size (for square tiles)
 
 
 
-### TileSize(System.Action\<Kendo.Mvc.UI.Fluent.PaletteSizeBuilder\>)
-Sets the size of the palette tiles
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().ColorPalette()
-        .Name("ColorPalette")
-        .TileSize(s => s.Width(20).Height(10))
+    .Name("ColorPalette")
+    .TileSize(32)
     %>
-        
+
+
+### TileSize(`System.Action<Kendo.Mvc.UI.Fluent.PaletteSizeBuilder>`)
+Sets the size of the palette tiles
 
 
 #### Parameters
@@ -113,16 +101,15 @@ The tile size (for square tiles)
 
 
 
-### Palette(System.Collections.Generic.IEnumerable\<System.String\>)
-Sets the range of colors that the user can pick from.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().ColorPalette()
-        .Name("ColorPalette")
-        .Palette(new List<string> { "#ff0000", "#00ff00", "#0000ff" })
+    .Name("ColorPalette")
+    .TileSize(s => s.Width(20).Height(10))
     %>
-        
+
+
+### Palette(`System.Collections.Generic.IEnumerable<System.String>`)
+Sets the range of colors that the user can pick from.
 
 
 #### Parameters
@@ -133,16 +120,15 @@ A list of colors.
 
 
 
-### Palette(Kendo.Mvc.UI.ColorPickerPalette)
-Sets the range of colors that the user can pick from.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().ColorPalette()
-        .Name("ColorPalette")
-        .Palette(ColorPickerPalette.WebSafe)
+    .Name("ColorPalette")
+    .Palette(new List<string> { "#ff0000", "#00ff00", "#0000ff" })
     %>
-        
+
+
+### Palette(`Kendo.Mvc.UI.ColorPickerPalette`)
+Sets the range of colors that the user can pick from.
 
 
 #### Parameters
@@ -151,6 +137,13 @@ Sets the range of colors that the user can pick from.
 One of the preset palettes of colors
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().ColorPalette()
+    .Name("ColorPalette")
+    .Palette(ColorPickerPalette.WebSafe)
+    %>
 
 
 

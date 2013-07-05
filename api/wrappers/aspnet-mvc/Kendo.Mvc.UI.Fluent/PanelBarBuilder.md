@@ -11,20 +11,8 @@ Defines the fluent interface for configuring the PanelBar component.
 
 ## Methods
 
-### Items(System.Action\<Kendo.Mvc.UI.Fluent.PanelBarItemFactory\>)
+### Items(`System.Action<Kendo.Mvc.UI.Fluent.PanelBarItemFactory>`)
 Defines the items in the panelbar
-
-#### Example
-
-    <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .Items(items =>
-        {
-        items.Add().Text("First Item");
-        items.Add().Text("Second Item");
-        })
-    %>
-        
 
 
 #### Parameters
@@ -35,18 +23,19 @@ The add action.
 
 
 
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.PanelBarEventBuilder\>)
-Configures the client-side events.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .Events(events =>
-        events.Expand("expand").Collapse("collapse")
-        )
+    .Name("PanelBar")
+    .Items(items =>
+    {
+        items.Add().Text("First Item");
+        items.Add().Text("Second Item");
+    })
     %>
-        
+
+
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.PanelBarEventBuilder>`)
+Configures the client-side events.
 
 
 #### Parameters
@@ -57,18 +46,17 @@ The client events action.
 
 
 
-### BindTo(System.String,System.Action\<Kendo.Mvc.UI.PanelBarItem,Kendo.Mvc.SiteMapNode\>)
-Binds the panelbar to a sitemap
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .BindTo("examples", (item, siteMapNode) =>
-        {
-        })
+    .Name("PanelBar")
+    .Events(events =>
+        events.Expand("expand").Collapse("collapse")
+    )
     %>
-        
+
+
+### BindTo(`System.String,System.Action<Kendo.Mvc.UI.PanelBarItem,Kendo.Mvc.SiteMapNode>`)
+Binds the panelbar to a sitemap
 
 
 #### Parameters
@@ -82,16 +70,17 @@ The action to configure the item.
 
 
 
-### BindTo(System.String)
-Binds the panelbar to a sitemap.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .BindTo("examples")
+    .Name("PanelBar")
+    .BindTo("examples", (item, siteMapNode) =>
+    {
+    })
     %>
-        
+
+
+### BindTo(`System.String`)
+Binds the panelbar to a sitemap.
 
 
 #### Parameters
@@ -102,19 +91,15 @@ The view data key.
 
 
 
-### BindToT1(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.PanelBarItem,T1\>)
-Binds the panelbar to a list of objects
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .BindTo(new []{"First", "Second"}, (item, value)
-        {
-        item.Text = value;
-        })
+    .Name("PanelBar")
+    .BindTo("examples")
     %>
-        
+
+
+### BindTo(`System.Collections.Generic.IEnumerable<T1>,System.Action<Kendo.Mvc.UI.PanelBarItem,T1>`)
+Binds the panelbar to a list of objects
 
 
 #### Parameters
@@ -128,25 +113,18 @@ The action executed for every data bound item.
 
 
 
-### BindTo(System.Collections.IEnumerable,System.Action\<Kendo.Mvc.UI.Fluent.NavigationBindingFactory\<Kendo.Mvc.UI.PanelBarItem\>\>)
-Binds the panelbar to a list of objects. The panelbar will create a hierarchy of items using the specified mappings.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .BindTo(Model, mapping => mapping
-        .For<Customer>(binding => binding
-        .Children(c => c.Orders) // The "child" items will be bound to the the "Orders" property
-        .ItemDataBound((item, c) => item.Text = c.ContactName) // Map "Customer" properties to PanelBarItem properties
-        )
-        .For<Order<(binding => binding
-        .Children(o => null) // "Orders" do not have child objects so return "null"
-        .ItemDataBound((item, o) => item.Text = o.OrderID.ToString()) // Map "Order" properties to PanelBarItem properties
-        )
-        )
+    .Name("PanelBar")
+    .BindTo(new []{"First", "Second"}, (item, value) =>
+    {
+        item.Text = value;
+    })
     %>
-        
+
+
+### BindTo(`System.Collections.IEnumerable,System.Action<Kendo.Mvc.UI.Fluent.NavigationBindingFactory<Kendo.Mvc.UI.PanelBarItem>>`)
+Binds the panelbar to a list of objects. The panelbar will create a hierarchy of items using the specified mappings.
 
 
 #### Parameters
@@ -160,15 +138,24 @@ The action which will configure the mappings
 
 
 
-### Animation(System.Boolean)
-Configures the animation effects of the panelbar.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .Animation(false)
-        
+    .Name("PanelBar")
+    .BindTo(Model, mapping => mapping
+        .For<Customer>(binding => binding
+            .Children(c => c.Orders) // The "child" items will be bound to the the "Orders" property
+            .ItemDataBound((item, c) => item.Text = c.ContactName) // Map "Customer" properties to PanelBarItem properties
+        )
+        .For<Order<(binding => binding
+            .Children(o => null) // "Orders" do not have child objects so return "null"
+            .ItemDataBound((item, o) => item.Text = o.OrderID.ToString()) // Map "Order" properties to PanelBarItem properties
+        )
+    )
+    %>
+
+
+### Animation(`System.Boolean`)
+Configures the animation effects of the panelbar.
 
 
 #### Parameters
@@ -179,15 +166,14 @@ Whether the component animation is enabled.
 
 
 
-### Animation(System.Action\<Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder\>)
-Configures the animation effects of the panelbar.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .Animation(animation => animation.Expand(config => config.Fade(FadeDirection.In)))
-        
+    .Name("PanelBar")
+    .Animation(false)
+
+
+### Animation(`System.Action<Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder>`)
+Configures the animation effects of the panelbar.
 
 
 #### Parameters
@@ -198,21 +184,14 @@ The action that configures the animation.
 
 
 
-### ItemAction(System.Action\<Kendo.Mvc.UI.PanelBarItem\>)
-Callback for each item.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .ItemAction(item =>
-        {
-        item
-        .Text(...)
-        .HtmlAttributes(...);
-        })
-    %>
-        
+    .Name("PanelBar")
+    .Animation(animation => animation.Expand(config => config.Fade(FadeDirection.In)))
+
+
+### ItemAction(`System.Action<Kendo.Mvc.UI.PanelBarItem>`)
+Callback for each item.
 
 
 #### Parameters
@@ -223,16 +202,20 @@ Action, which will be executed for each item.
 
 
 
-### HighlightPath(System.Boolean)
-Select item depending on the current URL.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .HighlightPath(true)
+    .Name("PanelBar")
+    .ItemAction(item =>
+    {
+        item
+        .Text(...)
+        .HtmlAttributes(...);
+    })
     %>
-        
+
+
+### HighlightPath(`System.Boolean`)
+Select item depending on the current URL.
 
 
 #### Parameters
@@ -243,16 +226,15 @@ If true the item will be highlighted.
 
 
 
-### ExpandAll(System.Boolean)
-Renders the panelbar with expanded items.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .ExpandAll(true)
+    .Name("PanelBar")
+    .HighlightPath(true)
     %>
-        
+
+
+### ExpandAll(`System.Boolean`)
+Renders the panelbar with expanded items.
 
 
 #### Parameters
@@ -263,16 +245,15 @@ If true the panelbar will be expanded.
 
 
 
-### ExpandMode(Kendo.Mvc.UI.PanelBarExpandMode)
-Sets the expand mode of the panelbar.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .ExpandMode(PanelBarExpandMode.Multiple)
+    .Name("PanelBar")
+    .ExpandAll(true)
     %>
-        
+
+
+### ExpandMode(`Kendo.Mvc.UI.PanelBarExpandMode`)
+Sets the expand mode of the panelbar.
 
 
 #### Parameters
@@ -283,21 +264,15 @@ The desired expand mode.
 
 
 
-### SelectedIndex(System.Int32)
-Selects the item at the specified index.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .Items(items =>
-        {
-        items.Add().Text("First Item");
-        items.Add().Text("Second Item");
-        })
-        .SelectedIndex(1)
+    .Name("PanelBar")
+    .ExpandMode(PanelBarExpandMode.Multiple)
     %>
-        
+
+
+### SelectedIndex(`System.Int32`)
+Selects the item at the specified index.
 
 
 #### Parameters
@@ -308,16 +283,20 @@ The index.
 
 
 
-### SecurityTrimming(System.Boolean)
-Enable/disable security trimming functionality of the component.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .SecurityTrimming(false)
+    .Name("PanelBar")
+    .Items(items =>
+    {
+        items.Add().Text("First Item");
+        items.Add().Text("Second Item");
+    })
+    .SelectedIndex(1)
     %>
-        
+
+
+### SecurityTrimming(`System.Boolean`)
+Enable/disable security trimming functionality of the component.
 
 
 #### Parameters
@@ -328,19 +307,15 @@ If true security trimming is enabled.
 
 
 
-### SecurityTrimming(System.Action\<Kendo.Mvc.UI.SecurityTrimmingBuilder\>)
-Defines the security trimming functionality of the component
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().PanelBar()
-        .Name("PanelBar")
-        .SecurityTrimming(builder =>
-        {
-        builder.Enabled(true).HideParent(true);
-        })
+    .Name("PanelBar")
+    .SecurityTrimming(false)
     %>
-        
+
+
+### SecurityTrimming(`System.Action<Kendo.Mvc.UI.SecurityTrimmingBuilder>`)
+Defines the security trimming functionality of the component
 
 
 #### Parameters
@@ -349,6 +324,16 @@ Defines the security trimming functionality of the component
 The securityTrimming action.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().PanelBar()
+    .Name("PanelBar")
+    .SecurityTrimming(builder =>
+    {
+        builder.Enabled(true).HideParent(true);
+    })
+    %>
 
 
 

@@ -58,7 +58,7 @@ Additional parameters which are sent to the remote service.Refer to the jQuery.a
 
 #### Parameters
 
-##### $value `|string|\Kendo\JavaScriptFunction`
+##### $value `|\Kendo\JavaScriptFunction`
 
 
 
@@ -66,12 +66,6 @@ Additional parameters which are sent to the remote service.Refer to the jQuery.a
     <?php
     $read = new \Kendo\Data\DataSourceTransportRead();
     $read->data(new ());
-    ?>
-
-#### Example  - using string
-    <?php
-    $read = new \Kendo\Data\DataSourceTransportRead();
-    $read->data('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction

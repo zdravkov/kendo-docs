@@ -11,19 +11,8 @@ Defines the fluent interface for configuring the Upload component.
 
 ## Methods
 
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.UploadEventBuilder\>)
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.UploadEventBuilder>`)
 Configures the client-side events.
-
-#### Example
-
-    <%= Html.Kendo().Upload()
-        .Name("Upload")
-        .Events(events => events
-        .OnLoad("onLoad")
-        .OnUpload("onUpload")
-        )
-    %>
-        
 
 
 #### Parameters
@@ -34,16 +23,18 @@ The client events configuration action.
 
 
 
-### Enable(System.Boolean)
-Enables or disables the component.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Upload()
-        .Name("Upload")
-        .Enable(false)
+    .Name("Upload")
+    .Events(events => events
+        .OnLoad("onLoad")
+        .OnUpload("onUpload")
+    )
     %>
-        
+
+
+### Enable(`System.Boolean`)
+Enables or disables the component.
 
 
 #### Parameters
@@ -54,16 +45,15 @@ true if the component should be enabled, false otherwise; the default is true.
 
 
 
-### Multiple(System.Boolean)
-Enables or disables multiple file selection.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Upload()
-        .Name("Upload")
-        .Multiple(false)
+    .Name("Upload")
+    .Enable(false)
     %>
-        
+
+
+### Multiple(`System.Boolean`)
+Enables or disables multiple file selection.
 
 
 #### Parameters
@@ -74,7 +64,14 @@ true if multiple file selection should be enabled, false otherwise; the default 
 
 
 
-### ShowFileList(System.Boolean)
+#### Example (ASPX)
+    <%= Html.Kendo().Upload()
+    .Name("Upload")
+    .Multiple(false)
+    %>
+
+
+### ShowFileList(`System.Boolean`)
 Sets a value indicating whether to show the list of uploaded files
 
 
@@ -86,19 +83,9 @@ true if the list of uploaded files should be visible, false otherwise; true by d
 
 
 
-### Async(System.Action\<Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder\>)
+
+### Async(`System.Action<Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder>`)
 Use it to configure asynchronous uploading.
-
-#### Example
-
-    <%= Html.Kendo().Upload()
-        .Name("Upload")
-        .Async(async => async
-        .Save("Save", "Compose")
-        .Remove("Remove", "Compose")
-        );
-    %>
-        
 
 
 #### Parameters
@@ -109,19 +96,18 @@ Use builder to set different asynchronous uploading options.
 
 
 
-### Messages(System.Action\<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder\>)
-Use it to configure asynchronous uploading.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Upload()
-        .Name("Upload")
-        .Async(async => async
+    .Name("Upload")
+    .Async(async => async
         .Save("Save", "Compose")
         .Remove("Remove", "Compose")
         );
     %>
-        
+
+
+### Messages(`System.Action<Kendo.Mvc.UI.Fluent.UploadMessagesBuilder>`)
+Use it to configure asynchronous uploading.
 
 
 #### Parameters
@@ -130,6 +116,16 @@ Use it to configure asynchronous uploading.
 Use builder to set different asynchronous uploading options.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Upload()
+    .Name("Upload")
+    .Async(async => async
+        .Save("Save", "Compose")
+        .Remove("Remove", "Compose")
+        );
+    %>
 
 
 

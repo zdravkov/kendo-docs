@@ -48,3 +48,21 @@ Effect to be used for closing of the popup.
     $close->effects('value');
     ?>
 
+### reverse
+Whether the effect should play backwards, useful when doing the same animation but with the opposite direction, like opening and closing.
+
+#### Returns
+`\Kendo\UI\WindowAnimationClose`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $close = new \Kendo\UI\WindowAnimationClose();
+    $close->reverse(true);
+    ?>
+

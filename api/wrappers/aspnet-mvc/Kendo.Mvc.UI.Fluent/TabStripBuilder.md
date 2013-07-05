@@ -11,20 +11,8 @@ Defines the fluent interface for configuring the TabStrip component.
 
 ## Methods
 
-### Items(System.Action\<Kendo.Mvc.UI.Fluent.TabStripItemFactory\>)
+### Items(`System.Action<Kendo.Mvc.UI.Fluent.TabStripItemFactory>`)
 Defines the items in the tabstrip
-
-#### Example
-
-    <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .Items(items =>
-        {
-        items.Add().Text("First Item");
-        items.Add().Text("Second Item");
-        })
-    %>
-        
 
 
 #### Parameters
@@ -35,18 +23,19 @@ The add action.
 
 
 
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.TabStripEventBuilder\>)
-Configures the client-side events.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .Events(events =>
-        events.Select("onSelect").OnLoad("onLoad")
-        )
+    .Name("TabStrip")
+    .Items(items =>
+    {
+        items.Add().Text("First Item");
+        items.Add().Text("Second Item");
+    })
     %>
-        
+
+
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.TabStripEventBuilder>`)
+Configures the client-side events.
 
 
 #### Parameters
@@ -57,15 +46,17 @@ The client events action.
 
 
 
-### Animation(System.Boolean)
-Configures the animation effects of the tabstrip.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("PanelBar")
-        .Animation(false)
-        
+    .Name("TabStrip")
+    .Events(events =>
+        events.Select("onSelect").OnLoad("onLoad")
+    )
+    %>
+
+
+### Animation(`System.Boolean`)
+Configures the animation effects of the tabstrip.
 
 
 #### Parameters
@@ -76,15 +67,14 @@ Whether the component animation is enabled.
 
 
 
-### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
-Configures the animation effects of the tabstrip.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("PanelBar")
-        .Animation(animation => animation.Open(config => config.Fade(FadeDirection.In)))
-        
+    .Name("PanelBar")
+    .Animation(false)
+
+
+### Animation(`System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`)
+Configures the animation effects of the tabstrip.
 
 
 #### Parameters
@@ -95,18 +85,14 @@ The action that configures the animation.
 
 
 
-### BindTo(System.String,System.Action\<Kendo.Mvc.UI.TabStripItem,Kendo.Mvc.SiteMapNode\>)
-Binds the tabstrip to a sitemap
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .BindTo("examples", (item, siteMapNode) =>
-        {
-        })
-    %>
-        
+    .Name("PanelBar")
+    .Animation(animation => animation.Open(config => config.Fade(FadeDirection.In)))
+
+
+### BindTo(`System.String,System.Action<Kendo.Mvc.UI.TabStripItem,Kendo.Mvc.SiteMapNode>`)
+Binds the tabstrip to a sitemap
 
 
 #### Parameters
@@ -120,16 +106,17 @@ The action to configure the item.
 
 
 
-### BindTo(System.String)
-Binds the tabstrip to a sitemap.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .BindTo("examples")
+    .Name("TabStrip")
+    .BindTo("examples", (item, siteMapNode) =>
+    {
+    })
     %>
-        
+
+
+### BindTo(`System.String`)
+Binds the tabstrip to a sitemap.
 
 
 #### Parameters
@@ -140,19 +127,15 @@ The view data key.
 
 
 
-### BindToT1(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.TabStripItem,T1\>)
-Binds the tabstrip to a list of objects
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .BindTo(new []{"First", "Second"}, (item, value)
-        {
-        item.Text = value;
-        })
+    .Name("TabStrip")
+    .BindTo("examples")
     %>
-        
+
+
+### BindTo(`System.Collections.Generic.IEnumerable<T1>,System.Action<Kendo.Mvc.UI.TabStripItem,T1>`)
+Binds the tabstrip to a list of objects
 
 
 #### Parameters
@@ -166,21 +149,18 @@ The action executed for every data bound item.
 
 
 
-### SelectedIndex(System.Int32)
-Selects the item at the specified index.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .Items(items =>
-        {
-        items.Add().Text("First Item");
-        items.Add().Text("Second Item");
-        })
-        .SelectedIndex(1)
+    .Name("TabStrip")
+    .BindTo(new []{"First", "Second"}, (item, value) =>
+    {
+        item.Text = value;
+    })
     %>
-        
+
+
+### SelectedIndex(`System.Int32`)
+Selects the item at the specified index.
 
 
 #### Parameters
@@ -191,21 +171,20 @@ The index.
 
 
 
-### ItemAction(System.Action\<Kendo.Mvc.UI.TabStripItem\>)
-Callback for each item.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .ItemAction(item =>
-        {
-        item
-        .Text(...)
-        .HtmlAttributes(...);
-        })
+    .Name("TabStrip")
+    .Items(items =>
+    {
+        items.Add().Text("First Item");
+        items.Add().Text("Second Item");
+    })
+    .SelectedIndex(1)
     %>
-        
+
+
+### ItemAction(`System.Action<Kendo.Mvc.UI.TabStripItem>`)
+Callback for each item.
 
 
 #### Parameters
@@ -216,16 +195,20 @@ Action, which will be executed for each item.
 
 
 
-### HighlightPath(System.Boolean)
-Select item depending on the current URL.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .HighlightPath(true)
+    .Name("TabStrip")
+    .ItemAction(item =>
+    {
+        item
+        .Text(...)
+        .HtmlAttributes(...);
+    })
     %>
-        
+
+
+### HighlightPath(`System.Boolean`)
+Select item depending on the current URL.
 
 
 #### Parameters
@@ -236,16 +219,15 @@ If true the item will be highlighted.
 
 
 
-### SecurityTrimming(System.Boolean)
-Enable/disable security trimming functionality of the component.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TabStrip()
-        .Name("TabStrip")
-        .SecurityTrimming(false)
+    .Name("TabStrip")
+    .HighlightPath(true)
     %>
-        
+
+
+### SecurityTrimming(`System.Boolean`)
+Enable/disable security trimming functionality of the component.
 
 
 #### Parameters
@@ -254,6 +236,13 @@ Enable/disable security trimming functionality of the component.
 If true security trimming is enabled.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TabStrip()
+    .Name("TabStrip")
+    .SecurityTrimming(false)
+    %>
 
 
 

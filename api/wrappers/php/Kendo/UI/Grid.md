@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\UI\Grid
 
-A PHP class representing Kendo [Grid](/api/web/grid).
+A PHP wrapper for Kendo UI [Grid](/api/web/grid).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -72,6 +72,7 @@ data source is fired. By default the widget will bind to the data source specifi
 
 ### cancel
 Fired when the user clicks the "cancel" button (in inline or popup editing mode) or closes the popup window.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [cancel](/api/web/grid#events-cancel) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -107,6 +108,7 @@ Fired when the user clicks the "cancel" button (in inline or popup editing mode)
 
 ### change
 Fired when the user selects a table row or cell in the grid.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [change](/api/web/grid#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -142,6 +144,7 @@ Fired when the user selects a table row or cell in the grid.The event handler fu
 
 ### columnHide
 Fired when the user hides a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [columnHide](/api/web/grid#events-columnHide) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -216,6 +219,7 @@ By default the column menu is not enabled.Can be set to a JavaScript object whic
 
 ### columnMenuInit
 Fired when the column menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [columnMenuInit](/api/web/grid#events-columnMenuInit) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -251,6 +255,7 @@ Fired when the column menu is initialized.The event handler function context (av
 
 ### columnReorder
 Fired when the user changes the order of a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [columnReorder](/api/web/grid#events-columnReorder) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -286,6 +291,7 @@ Fired when the user changes the order of a column.The event handler function con
 
 ### columnResize
 Fired when the user resizes a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [columnResize](/api/web/grid#events-columnResize) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -321,6 +327,7 @@ Fired when the user resizes a column.The event handler function context (availab
 
 ### columnShow
 Fired when the user shows a column.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [columnShow](/api/web/grid#events-columnShow) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -394,6 +401,7 @@ Adds one or more GridColumn to the Grid.
 
 ### dataBinding
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [dataBinding](/api/web/grid#events-dataBinding) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -429,6 +437,7 @@ Fired before the widget binds to its data source.The event handler function cont
 
 ### dataBound
 Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [dataBound](/api/web/grid#events-dataBound) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -491,6 +500,7 @@ Sets the data source of the dataSource.
 
 ### detailCollapse
 Fired when the user collapses a detail table row.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [detailCollapse](/api/web/grid#events-detailCollapse) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -526,6 +536,7 @@ Fired when the user collapses a detail table row.The event handler function cont
 
 ### detailExpand
 Fired when the user expands a detail table row.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [detailExpand](/api/web/grid#events-detailExpand) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -561,6 +572,7 @@ Fired when the user expands a detail table row.The event handler function contex
 
 ### detailInit
 Fired when a detail table row is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [detailInit](/api/web/grid#events-detailInit) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -614,6 +626,7 @@ The id of the template used for rendering the detail rows in the grid.
 
 ### edit
 Fired when the user edits or creates a data item.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [edit](/api/web/grid#events-edit) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -687,6 +700,7 @@ If set to true the user would be able to edit the data to which the grid is boun
 
 ### filterMenuInit
 Fired when the grid filter menu is initialized.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [filterMenuInit](/api/web/grid#events-filterMenuInit) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -878,6 +892,7 @@ If set to true the grid will display a pager. By default paging is disabled.Can 
 
 ### remove
 Fired when the user clicks the "destroy" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [remove](/api/web/grid#events-remove) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -967,6 +982,7 @@ The id of the template used for rendering the rows in the grid.
 
 ### save
 Fired when a data item is saved.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [save](/api/web/grid#events-save) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`
@@ -1002,6 +1018,7 @@ Fired when a data item is saved.The event handler function context (available vi
 
 ### saveChanges
 Fired when the user clicks the "save" command button.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [saveChanges](/api/web/grid#events-saveChanges) event documentation.
 
 #### Returns
 `\Kendo\UI\Grid`

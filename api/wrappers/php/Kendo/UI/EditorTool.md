@@ -46,8 +46,8 @@ Adds one or more EditorToolItem to the EditorTool.
     <?php
     $tool = new \Kendo\UI\EditorTool();
     $item = new \Kendo\UI\EditorToolItem();
-    $text = 'value';
-    $item->text($text);
+    $context = 'value';
+    $item->context($context);
     $tool->addItem($item);
     ?>
 
@@ -55,8 +55,8 @@ Adds one or more EditorToolItem to the EditorTool.
 
     <?php
     $tool = new \Kendo\UI\EditorTool();
-    $text = 'value';
-    $tool->addItem(array('text' => $text));
+    $context = 'value';
+    $tool->addItem(array('context' => $context));
     ?>
 
 #### Example - adding more than one EditorToolItem
@@ -69,7 +69,7 @@ Adds one or more EditorToolItem to the EditorTool.
     ?>
 
 ### name
-The mandatory name of the tool. The built-in tools are "bold", "italic", "underline", "strikethrough", "fontName", "fontSize", "foreColor", "backColor", "justifyLeft", "justifyCenter", "justifyRight", "justifyFull", "insertUnorderedList", "insertOrderedList", "indent", "outdent", "formatBlock", "createLink", "unlink", "insertImage", "insertHtml", "viewHtml".
+The mandatory name of the tool.
 
 #### Returns
 `\Kendo\UI\EditorTool`

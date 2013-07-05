@@ -11,32 +11,21 @@ Defines the fluent interface for configuring the Calendar.
 
 ## Methods
 
-### Culture(System.String)
+### Culture(`System.String`)
 Specifies the culture info used by the Calendar widget.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("calendar")
-        .Culture("de-DE")
+    .Name("calendar")
+    .Culture("de-DE")
     %>
-        
 
 
-
-
-### Events(System.Action\<Kendo.Mvc.UI.Fluent.CalendarEventBuilder\>)
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.CalendarEventBuilder>`)
 Configures the client-side events.
-
-#### Example
-
-    <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .Events(events =>
-        events.Select("onSelect")
-        )
-    %>
-        
 
 
 #### Parameters
@@ -47,147 +36,169 @@ The client events action.
 
 
 
-### Format(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Calendar()
+    .Name("Calendar")
+    .Events(events =>
+        events.Select("onSelect")
+    )
+    %>
+
+
+### Format(`System.String`)
 Sets the date format, which will be used to parse and format the machine date.
 
 
 
 
-### FooterId(System.String)
+
+### FooterId(`System.String`)
 FooterId to be used for rendering the footer of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .FooterId("widgetFooterId")
+    .Name("Calendar")
+    .FooterId("widgetFooterId")
     %>
-        
 
 
-
-
-### Footer(System.String)
+### Footer(`System.String`)
 Footer template to be used for rendering the footer of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .Footer("#= kendo.toString(data, "G") #")
+    .Name("Calendar")
+    .Footer("#= kendo.toString(data, "G") #")
     %>
-        
+
+
+### Footer(`System.Boolean`)
+Enable/disable footer.
 
 
 
 
-### Depth(Kendo.Mvc.UI.CalendarView)
+#### Example (ASPX)
+    <%= Html.Kendo().Calendar()
+    .Name("Calendar")
+    .Footer(false)
+    %>
+
+
+### Depth(`Kendo.Mvc.UI.CalendarView`)
 Specifies the navigation depth.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .Depth(CalendarView.Month)
+    .Name("Calendar")
+    .Depth(CalendarView.Month)
     %>
-        
 
 
-
-
-### Start(Kendo.Mvc.UI.CalendarView)
+### Start(`Kendo.Mvc.UI.CalendarView`)
 Specifies the start view.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .Start(CalendarView.Month)
+    .Name("Calendar")
+    .Start(CalendarView.Month)
     %>
-        
 
 
-
-
-### MonthTemplateId(System.String)
+### MonthTemplateId(`System.String`)
 MonthTemplateId to be used for rendering the cells of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .MonthTemplateId("widgetMonthTemplateId")
+    .Name("Calendar")
+    .MonthTemplateId("widgetMonthTemplateId")
     %>
-        
 
 
-
-
-### MonthTemplate(System.String)
+### MonthTemplate(`System.String`)
 Templates for the cells rendered in the "month" view.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .MonthTemplate("#= data.value #")
+    .Name("Calendar")
+    .MonthTemplate("#= data.value #")
     %>
-        
 
 
-
-
-### MonthTemplate(System.Action\<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder\>)
+### MonthTemplate(`System.Action<Kendo.Mvc.UI.Fluent.MonthTemplateBuilder>`)
 Configures the content of cells of the Calendar.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Calendar()
-        .Name("Calendar")
-        .MonthTemplate(month => month.Content("#= data.value #"))
+    .Name("Calendar")
+    .MonthTemplate(month => month.Content("#= data.value #"))
     %>
-        
 
 
-
-
-### Min(System.String)
+### Min(`System.String`)
 Sets the minimal date, which can be selected in the calendar.
 
 
 
 
-### Max(System.String)
+
+### Max(`System.String`)
 Sets the maximal date, which can be selected in the calendar.
 
 
 
 
-### Min(System.DateTime)
+
+### Min(`System.DateTime`)
 Sets the minimal date, which can be selected in the calendar
 
 
 
 
-### Max(System.DateTime)
+
+### Max(`System.DateTime`)
 Sets the maximal date, which can be selected in the calendar
 
 
 
 
-### Value(System.Nullable\<System.DateTime\>)
+
+### Value(`System.Nullable<System.DateTime>`)
 Sets the value of the calendar
 
 
 
 
-### Value(System.String)
+
+### Value(`System.String`)
 Sets the value of the calendar
 
 
 
 
-### Selection(System.Action\<Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder\>)
+
+### Selection(`System.Action<Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder>`)
 Configures the selection settings of the calendar.
 
 
@@ -199,6 +210,7 @@ SelectAction settings, which includes Action name and IEnumerable of DateTime ob
 
 
 #### Returns
+
 
 
 

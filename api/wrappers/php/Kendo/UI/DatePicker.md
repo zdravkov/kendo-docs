@@ -7,7 +7,7 @@ publish: true
 
 # \Kendo\UI\DatePicker
 
-A PHP class representing Kendo [DatePicker](/api/web/datepicker).
+A PHP wrapper for Kendo UI [DatePicker](/api/web/datepicker).
 
 Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
@@ -32,6 +32,24 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 
 ## Methods
+
+### ARIATemplate
+Specifies a template used to populate value of the aria-label attribute.
+
+#### Returns
+`\Kendo\UI\DatePicker`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $datePicker = new \Kendo\UI\DatePicker('DatePicker');
+    $datePicker->ARIATemplate('value');
+    ?>
 
 ### animation
 
@@ -65,6 +83,7 @@ will disable the animation(s).
 
 ### change
 Fires when the selected date is changed
+For additional information check the [change](/api/web/datepicker#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\DatePicker`
@@ -100,6 +119,7 @@ Fires when the selected date is changed
 
 ### close
 Fires when the calendar is closed
+For additional information check the [close](/api/web/datepicker#events-close) event documentation.
 
 #### Returns
 `\Kendo\UI\DatePicker`
@@ -291,6 +311,7 @@ Templates for the cells rendered in the calendar "month" view.
 
 ### open
 Fires when the calendar is opened
+For additional information check the [open](/api/web/datepicker#events-open) event documentation.
 
 #### Returns
 `\Kendo\UI\DatePicker`

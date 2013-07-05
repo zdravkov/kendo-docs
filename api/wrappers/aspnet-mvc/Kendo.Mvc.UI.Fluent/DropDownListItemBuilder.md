@@ -11,16 +11,8 @@ Defines the fluent interface for configuring child DropDonwList items.
 
 ## Methods
 
-### Text(System.String)
+### Text(`System.String`)
 Sets the value for the item.
-
-#### Example
-
-    <%= Html.Kendo().DropDownList()
-        .Name("DropDownList")
-        .Items(items => items.Add().Text("First item."))
-    %>
-        
 
 
 #### Parameters
@@ -31,16 +23,15 @@ The value.
 
 
 
-### Value(System.String)
-Sets the value for the item.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().DropDownList()
-        .Name("DropDownList")
-        .Items(items => items.Add().Value("1"))
+    .Name("DropDownList")
+    .Items(items => items.Add().Text("First item."))
     %>
-        
+
+
+### Value(`System.String`)
+Sets the value for the item.
 
 
 #### Parameters
@@ -51,19 +42,15 @@ The value.
 
 
 
-### Selected(System.Boolean)
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .Items(items => items.Add().Value("1"))
+    %>
+
+
+### Selected(`System.Boolean`)
 Define when the item will be expanded on intial render.
-
-#### Example
-
-    <%= Html.Kendo().DropDownList()
-        .Name("DropDownList")
-        .Items(items =>
-        {
-        items.Add().Text("First Item").Selected(true);
-        })
-    %>
-        
 
 
 #### Parameters
@@ -72,6 +59,16 @@ Define when the item will be expanded on intial render.
 If true the item will be selected.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .Items(items =>
+    {
+        items.Add().Text("First Item").Selected(true);
+    })
+    %>
 
 
 

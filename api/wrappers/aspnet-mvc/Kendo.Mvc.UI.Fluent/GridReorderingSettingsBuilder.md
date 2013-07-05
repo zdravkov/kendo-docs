@@ -11,7 +11,7 @@ Defines the fluent interface for configuring Reorderable
 
 ## Methods
 
-### Columns(System.Boolean)
+### Columns(`System.Boolean`)
 Enables or disables column reordering.
 
 
@@ -19,6 +19,7 @@ Enables or disables column reordering.
 
 ##### value `System.Boolean`
 True to enable column reordering, otherwise false
+
 
 
 

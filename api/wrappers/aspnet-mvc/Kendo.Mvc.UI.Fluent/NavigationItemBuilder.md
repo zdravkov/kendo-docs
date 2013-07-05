@@ -20,16 +20,9 @@ Returns the inner navigation item
 
 
 
-### HtmlAttributes(System.Object)
+
+### HtmlAttributes(`System.Object`)
 Sets the HTML attributes applied to the outer HTML element rendered for the item
-
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Attributes(new {@class="first-item"}))
-    %>
-        
 
 
 #### Parameters
@@ -40,7 +33,14 @@ The attributes.
 
 
 
-### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items.Add().Attributes(new {@class="first-item"}))
+    %>
+
+
+### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
 Sets the HTML attributes applied to the outer HTML element rendered for the item
 
 
@@ -52,16 +52,9 @@ The attributes.
 
 
 
-### Text(System.String)
+
+### Text(`System.String`)
 Sets the text displayed by the item.
-
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item"))
-    %>
-        
 
 
 #### Parameters
@@ -72,16 +65,15 @@ The value.
 
 
 
-### Visible(System.Boolean)
-Makes the item visible or not. Invisible items are not rendered in the output HTML.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item").Visible((bool)ViewData["visible"])
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item"))
     %>
-        
+
+
+### Visible(`System.Boolean`)
+Makes the item visible or not. Invisible items are not rendered in the output HTML.
 
 
 #### Parameters
@@ -92,44 +84,41 @@ The value.
 
 
 
-### Enabled(System.Boolean)
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item").Visible((bool)ViewData["visible"]))
+    %>
+
+
+### Enabled(`System.Boolean`)
 Enables or disables the item. Disabled item cannot be clicked, expanded or open (depending on the item type - menu, tabstrip, panelbar).
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item").Enabled((bool)ViewData["enabled"])
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item").Enabled((bool)ViewData["enabled"]))
     %>
-        
 
 
-
-
-### Selected(System.Boolean)
+### Selected(`System.Boolean`)
 Selects or unselects the item. By default items are not selected.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item").Selected(true))
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item").Selected(true))
     %>
-        
 
 
-
-
-### Route(System.String,System.Web.Routing.RouteValueDictionary)
+### Route(`System.String,System.Web.Routing.RouteValueDictionary`)
 Sets the route to which the item should navigate.
-
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item").Route("Default", new RouteValueDictionary{{"id", 1}}))
-    %>
-        
 
 
 #### Parameters
@@ -143,16 +132,15 @@ The route values.
 
 
 
-### Route(System.String,System.Object)
-Sets the route to which the item should navigate.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item").Route("Default", new {id, 1}))
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item").Route("Default", new RouteValueDictionary{{"id", 1}}))
     %>
-        
+
+
+### Route(`System.String,System.Object`)
+Sets the route to which the item should navigate.
 
 
 #### Parameters
@@ -166,16 +154,15 @@ The route values.
 
 
 
-### Route(System.String)
-Sets the route to which the item should navigate.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item").Route("Default"))
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item").Route("Default", new {id, 1}))
     %>
-        
+
+
+### Route(`System.String`)
+Sets the route to which the item should navigate.
 
 
 #### Parameters
@@ -186,16 +173,15 @@ Name of the route.
 
 
 
-### Action(System.Web.Routing.RouteValueDictionary)
-Sets the action to which the item should navigate
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("Index").Action(MVC.Home.Index(3).GetRouteValueDictionary()))
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item").Route("Default"))
     %>
-        
+
+
+### Action(`System.Web.Routing.RouteValueDictionary`)
+Sets the action to which the item should navigate
 
 
 #### Parameters
@@ -206,16 +192,15 @@ The route values of the Action method.
 
 
 
-### Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
-Sets the action to which the item should navigate
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("Index").Action("Index", "Home", new RouteValueDictionary{{"id", 1}}))
+    .Name("Menu")
+    .Items(items => items.Add().Text("Index").Action(MVC.Home.Index(3).GetRouteValueDictionary()))
     %>
-        
+
+
+### Action(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
+Sets the action to which the item should navigate
 
 
 #### Parameters
@@ -232,16 +217,15 @@ The route values.
 
 
 
-### Action(System.String,System.String,System.Object)
-Sets the action to which the item should navigate
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("Index").Action("Index", "Home", new {id, 1}))
+    .Name("Menu")
+    .Items(items => items.Add().Text("Index").Action("Index", "Home", new RouteValueDictionary{{"id", 1}}))
     %>
-        
+
+
+### Action(`System.String,System.String,System.Object`)
+Sets the action to which the item should navigate
 
 
 #### Parameters
@@ -258,16 +242,15 @@ The route values.
 
 
 
-### Action(System.String,System.String)
-Sets the action to which the item should navigate
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("Index").Action("Index", "Home"))
+    .Name("Menu")
+    .Items(items => items.Add().Text("Index").Action("Index", "Home", new {id, 1}))
     %>
-        
+
+
+### Action(`System.String,System.String`)
+Sets the action to which the item should navigate
 
 
 #### Parameters
@@ -281,17 +264,16 @@ Name of the controller.
 
 
 
-### Url(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items.Add().Text("Index").Action("Index", "Home"))
+    %>
+
+
+### Url(`System.String`)
 Sets the URL to which the item should navigate
 
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("www.example.com").Url("http://www.example.com"))
-    %>
-        
-
 
 #### Parameters
 
@@ -301,17 +283,16 @@ The value.
 
 
 
-### ImageUrl(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items.Add().Text("www.example.com").Url("http://www.example.com"))
+    %>
+
+
+### ImageUrl(`System.String`)
 Sets the URL of the image that should be displayed by the item.
 
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("First Item").ImageUrl("~/Content/first.png"))
-    %>
-        
-
 
 #### Parameters
 
@@ -321,19 +302,15 @@ The value.
 
 
 
-### ImageHtmlAttributes(System.Object)
-Sets the HTML attributes for the item image.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items
-        .Add().Text("First Item")
-        .ImageUrl("~/Content/first.png")
-        .ImageHtmlAttributes(new {@class="first-item-image"}))
+    .Name("Menu")
+    .Items(items => items.Add().Text("First Item").ImageUrl("~/Content/first.png"))
     %>
-        
+
+
+### ImageHtmlAttributes(`System.Object`)
+Sets the HTML attributes for the item image.
 
 
 #### Parameters
@@ -344,7 +321,17 @@ The attributes.
 
 
 
-### ImageHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items
+        .Add().Text("First Item")
+        .ImageUrl("~/Content/first.png")
+        .ImageHtmlAttributes(new {@class="first-item-image"}))
+    %>
+
+
+### ImageHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
 Sets the HTML attributes for the item image.
 
 
@@ -356,18 +343,9 @@ The attributes.
 
 
 
-### SpriteCssClasses(System.String[])
+
+### SpriteCssClasses(`System.String[]`)
 Sets the sprite CSS class names.
-
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items
-        .Add().Text("First Item")
-        .SpriteCssClasses("icon", "first-item")
-    %>
-        
 
 
 #### Parameters
@@ -378,7 +356,16 @@ The CSS classes.
 
 
 
-### Content(System.Action)
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items
+        .Add().Text("First Item")
+        .SpriteCssClasses("icon", "first-item"))
+    %>
+
+
+### Content(`System.Action`)
 Sets the HTML content which the item should display.
 
 
@@ -390,7 +377,8 @@ The action which renders the content.
 
 
 
-### Content(System.Func\<System.Object,System.Object\>)
+
+### Content(`System.Func<System.Object,System.Object>`)
 Sets the HTML content which the item should display.
 
 
@@ -402,7 +390,8 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Content(System.String)
+
+### Content(`System.String`)
 Sets the HTML content which the item should display as a string.
 
 
@@ -414,19 +403,9 @@ The action which renders the content.
 
 
 
-### ContentHtmlAttributes(System.Object)
+
+### ContentHtmlAttributes(`System.Object`)
 Sets the HTML attributes of the content element of the item.
-
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items
-        .Add().Text("First Item")
-        .Content(() => { %> <strong>First Item Content</strong> <% })
-        .ContentHtmlAttributes(new {@class="first-item-content"})
-    %>
-        
 
 
 #### Parameters
@@ -437,7 +416,18 @@ The attributes.
 
 
 
-### ContentHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items
+        .Add().Text("First Item")
+        .Content(() => { %> <strong>First Item Content</strong> <% })
+        .ContentHtmlAttributes(new {@class="first-item-content"})
+    )
+    %>
+
+
+### ContentHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
 Sets the HTML attributes of the content element of the item.
 
 
@@ -449,18 +439,9 @@ The attributes.
 
 
 
-### ActionT1(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
+
+### Action(`System.Linq.Expressions.Expression<System.Action<T1>>`)
 Makes the item navigate to the specified controllerAction method.
-
-#### Example
-
-    <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items
-        .Add().Text("First Item")
-        .Action<HomeController>(controller => controller.Index()))
-    %>
-        
 
 
 #### Parameters
@@ -471,16 +452,17 @@ The action.
 
 
 
-### Encoded(System.Boolean)
-Sets whether the Text property should be encoded when the item is rendered.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().Menu()
-        .Name("Menu")
-        .Items(items => items.Add().Text("<strong>First Item</strong>").Encoded(false))
+    .Name("Menu")
+    .Items(items => items
+        .Add().Text("First Item")
+        .Action<HomeController>(controller => controller.Index()))
     %>
-        
+
+
+### Encoded(`System.Boolean`)
+Sets whether the Text property should be encoded when the item is rendered.
 
 
 #### Parameters
@@ -489,6 +471,13 @@ Sets whether the Text property should be encoded when the item is rendered.
 Whether the property should be encoded. Default: true.
 
 
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => items.Add().Text("<strong>First Item</strong>").Encoded(false))
+    %>
 
 
 

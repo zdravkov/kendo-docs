@@ -11,7 +11,7 @@ Represents a filtering abstraction that knows how to create predicate filtering 
 
 ## Methods
 
-### CreateFilterExpression(System.Linq.Expressions.Expression)
+### CreateFilterExpression(`System.Linq.Expressions.Expression`)
 Creates a predicate filter expression used for collection filtering.
 
 
@@ -24,6 +24,7 @@ The instance expression, which will be used for filtering.
 
 #### Returns
 A predicate filter expression.
+
 
 
 

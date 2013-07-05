@@ -11,18 +11,8 @@ Defines the fluent interface for configuring child TreeView items.
 
 ## Methods
 
-### Enabled(System.Boolean)
+### Enabled(`System.Boolean`)
 Enable/disable rendering of checkboxes in the treeview.
-
-#### Example
-
-    <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Checkboxes(config => config
-        .Enabled(true)
-        )
-    %>
-        
 
 
 #### Parameters
@@ -33,18 +23,17 @@ Whether checkboxes should be rendered.
 
 
 
-### CheckChildren(System.Boolean)
-Enable/disable checking of child checkboxes in the treeview.
-
-#### Example
-
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Checkboxes(config => config
-        .CheckChildren(true)
-        )
+    .Name("TreeView")
+    .Checkboxes(config => config
+        .Enabled(true)
+    )
     %>
-        
+
+
+### CheckChildren(`System.Boolean`)
+Enable/disable checking of child checkboxes in the treeview.
 
 
 #### Parameters
@@ -55,36 +44,43 @@ Whether checking of parent checkboxes should check child checkboxes.
 
 
 
-### Template(System.String)
+#### Example (ASPX)
+    <%= Html.Kendo().TreeView()
+    .Name("TreeView")
+    .Checkboxes(config => config
+        .CheckChildren(true)
+    )
+    %>
+
+
+### Template(`System.String`)
 Client-side template to be used for rendering the items in the treeview.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Checkboxes(config => config
+    .Name("TreeView")
+    .Checkboxes(config => config
         .Template("#= data #")
-        )
+    )
     %>
-        
 
 
-
-
-### TemplateId(System.String)
+### TemplateId(`System.String`)
 Id of the element that holds the client-side template to be used for rendering the items in the treeview.
 
-#### Example
 
+
+
+#### Example (ASPX)
     <%= Html.Kendo().TreeView()
-        .Name("TreeView")
-        .Checkboxes(config => config
+    .Name("TreeView")
+    .Checkboxes(config => config
         .TemplateId("widgetTemplateId")
-        )
+    )
     %>
-        
-
-
 
 
 
