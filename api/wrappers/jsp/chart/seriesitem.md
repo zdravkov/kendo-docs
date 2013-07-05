@@ -454,6 +454,18 @@ More documentation is available at [kendo:chart-seriesItem-negativeValues](chart
         <kendo:chart-seriesItem-negativeValues></kendo:chart-seriesItem-negativeValues>
     </kendo:chart-seriesItem>
 
+### kendo:chart-seriesItem-notes
+
+The series notes configuration.
+
+More documentation is available at [kendo:chart-seriesItem-notes](chart/seriesitem-notes).
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-notes></kendo:chart-seriesItem-notes>
+    </kendo:chart-seriesItem>
+
 ### kendo:chart-seriesItem-overlay
 
 The chart series overlay options.

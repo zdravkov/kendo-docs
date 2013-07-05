@@ -689,6 +689,35 @@ The options for displaying the chart negative bubble values.
     $seriesItem->negativeValues(array('color' => $color));
     ?>
 
+### notes
+
+The series notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNotes)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $notes = new \Kendo\Dataviz\UI\ChartSeriesItemNotes();
+    $icon = new \Kendo\Dataviz\UI\ChartSeriesItemNotesIcon();
+    $notes->icon($icon);
+    $seriesItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $icon = new \Kendo\Dataviz\UI\ChartSeriesItemNotesIcon();
+    $seriesItem->notes(array('icon' => $icon));
+    ?>
+
 ### opacity
 The series opacity. By default the series are opaque.
 
