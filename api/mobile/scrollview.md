@@ -32,6 +32,8 @@ Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui
 
  Instance of DataSource that the mobile ScrollView will be bound to. *If DataSource is set, the widget will operate in data bound mode.*
 
+ > **Important:** In case the total amount of displayed data is large, it is recommended to turn off the pager by setting `enablePager: false` in the configuration options or via `data-enable-pager="false"` data attribute.
+
 ### duration `Number`*(default: 300)*
 
  The milliseconds that take the ScrollView to snap to the current page after released.
@@ -50,6 +52,8 @@ Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui
 
  Determines how many data items will be passed to the page template.
 
+ > **Important:** In order ensure smooth scrolling the **pageSize of the DataSource should be 6 times itemsPerPage amount** or higher. For example, if itemsPerPage is set to 4, then the pageSize must be 24 (4*6) or higher.
+
  **Applicable only in data bound mode.**
 
 ### page `Number`*(default: 0)*
@@ -67,6 +71,50 @@ Multiplier applied to the snap amount of the ScrollView. By default, the widget 
  The template which is used to render the content of pages. By default the ScrollView renders a div element for every page.
 
  **Applicable only in data bound mode.**
+
+#### Example: single item template
+
+    <script id="scrollview-template" type="text/x-kendo-template">
+        <p>#= ProductName #</p>
+    </script>
+
+#### Example: multiple items template (data is accessed via `data[index].fieldName`)
+
+    <script id="scrollview-template" type="text/x-kendo-template">
+        <div>
+            <p>#= data[0].ProductName #</p>
+        </div>
+        <div>
+            <p>#= data[1].ProductName #</p>
+        </div>
+    </script>
+
+    <div data-role="view" data-stretch="true" data-init="onInit">
+        <div id="scrollview"></div>
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+
+        function onInit() {
+            $("#scrollview").kendoMobileScrollView({
+                dataSource: {
+                    type: "odata",
+                    transport: {
+                        read: {
+                            url: "http://demos.kendoui.com/service/Northwind.svc/Products"
+                        }
+                    },
+                    serverPaging: true,
+                    pageSize: 30
+                },
+                itemsPerPage: 2,
+                template: $("#scrollview-template").html(),
+                contentHeight: 120,
+                enablePager: false
+            });
+        }
+    </script>
 
 ### velocityThreshold `Number`*(default: 0.8)*
 
