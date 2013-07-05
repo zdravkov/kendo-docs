@@ -185,6 +185,18 @@ More documentation is available at [kendo:chart-yAxisItem-majorTicks](chart/yaxi
         <kendo:chart-yAxisItem-majorTicks></kendo:chart-yAxisItem-majorTicks>
     </kendo:chart-yAxisItem>
 
+### kendo:chart-yAxisItem-notes
+
+The y axis notes configuration.
+
+More documentation is available at [kendo:chart-yAxisItem-notes](chart/yaxisitem-notes).
+
+#### Example
+
+    <kendo:chart-yAxisItem>
+        <kendo:chart-yAxisItem-notes></kendo:chart-yAxisItem-notes>
+    </kendo:chart-yAxisItem>
+
 ### kendo:chart-yAxisItem-plotBands
 
 The plot bands of the y axis.

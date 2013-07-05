@@ -194,6 +194,18 @@ More documentation is available at [kendo:chart-valueAxisItem-minorTicks](chart/
         <kendo:chart-valueAxisItem-minorTicks></kendo:chart-valueAxisItem-minorTicks>
     </kendo:chart-valueAxisItem>
 
+### kendo:chart-valueAxisItem-notes
+
+The value axis notes configuration.
+
+More documentation is available at [kendo:chart-valueAxisItem-notes](chart/valueaxisitem-notes).
+
+#### Example
+
+    <kendo:chart-valueAxisItem>
+        <kendo:chart-valueAxisItem-notes></kendo:chart-valueAxisItem-notes>
+    </kendo:chart-valueAxisItem>
+
 ### kendo:chart-valueAxisItem-plotBands
 
 The plot bands of the value axis.

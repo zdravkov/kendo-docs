@@ -367,6 +367,35 @@ If set to true the chart will prevent the automatic axis range from snapping to 
     $valueAxisItem->narrowRange(true);
     ?>
 
+### notes
+
+The value axis notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemNotes)
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
+    $notes = new \Kendo\Dataviz\UI\ChartValueAxisItemNotes();
+    $icon = new \Kendo\Dataviz\UI\ChartValueAxisItemNotesIcon();
+    $notes->icon($icon);
+    $valueAxisItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
+    $icon = new \Kendo\Dataviz\UI\ChartValueAxisItemNotesIcon();
+    $valueAxisItem->notes(array('icon' => $icon));
+    ?>
+
 ### pane
 The name of the pane that the value axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.

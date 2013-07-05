@@ -314,6 +314,35 @@ If set to true the chart will prevent the automatic axis range from snapping to 
     $xAxisItem->narrowRange(true);
     ?>
 
+### notes
+
+The x axis notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartXAxisItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartXAxisItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/ChartXAxisItemNotes)
+    <?php
+    $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
+    $notes = new \Kendo\Dataviz\UI\ChartXAxisItemNotes();
+    $icon = new \Kendo\Dataviz\UI\ChartXAxisItemNotesIcon();
+    $notes->icon($icon);
+    $xAxisItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
+    $icon = new \Kendo\Dataviz\UI\ChartXAxisItemNotesIcon();
+    $xAxisItem->notes(array('icon' => $icon));
+    ?>
+
 ### pane
 The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.

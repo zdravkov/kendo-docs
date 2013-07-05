@@ -193,6 +193,18 @@ More documentation is available at [kendo:chart-xAxisItem-majorTicks](chart/xaxi
         <kendo:chart-xAxisItem-majorTicks></kendo:chart-xAxisItem-majorTicks>
     </kendo:chart-xAxisItem>
 
+### kendo:chart-xAxisItem-notes
+
+The x axis notes configuration.
+
+More documentation is available at [kendo:chart-xAxisItem-notes](chart/xaxisitem-notes).
+
+#### Example
+
+    <kendo:chart-xAxisItem>
+        <kendo:chart-xAxisItem-notes></kendo:chart-xAxisItem-notes>
+    </kendo:chart-xAxisItem>
+
 ### kendo:chart-xAxisItem-plotBands
 
 The plot bands of the x axis.
