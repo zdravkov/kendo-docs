@@ -21529,8 +21529,7 @@ Returns a PNG image of the chart encoded as a [Data URL](https://developer.mozil
 
 #### Returns
 
-`String` A data URL with `image/png` MIME type.
-`null` if the browser does not support the `canvas` element.
+`String` A data URL with `image/png` MIME type. Will be `null` if the browser does not support the `canvas` element.
 
 #### Example - show a snapshot of the Chart
 
