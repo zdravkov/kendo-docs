@@ -17,6 +17,16 @@ publish: true
 The background of the barcode area.
 Any valid CSS color string will work here, including hex and rgb.
 
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value: "HELLO WORLD",
+      background: "#2eb3a6"
+    });
+    </script>
+
 ### border `Object`
 
 The border of the barcode area.
@@ -26,12 +36,12 @@ The border of the barcode area.
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-        value:"123456",
-        border: {
-            width: 2,
-            dashType: "solid",
-            color: "black"
-        }
+      value:"123456",
+      border: {
+        width: 2,
+        dashType: "solid",
+        color: "black"
+      }
     });
     </script>
 
@@ -51,14 +61,48 @@ The width of the border.
 
 If set to `true` the barcode will not display the checksum digit next to the value in the text area.
 
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      type: "ean8",
+      value: "1234567",
+      checksum: true
+    });
+    </script>
+
 ### color `String` *(default: "black")*
 
 The color of the bar elements.
 Any valid CSS color string will work here, including hex and rgb.
 
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      type: "ean13",
+      value: "123456789987",
+      color: "#10c4b2"
+    });
+    </script>
+
 ### height `Number` *(default: 100)*
 
 The height of the barcode in pixels.  By default the height is 100.
+
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      type: "ean13",
+      value: "123456789987",
+      color: "#10c4b2",
+      height: 200
+    });
+    </script>
 
 ### padding `Object`
 
@@ -69,13 +113,13 @@ The padding of the barcode.
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-        value:"123456",
-        padding: {
-            top:25,
-            left: 25,
-            right: 25,
-            bottom: 25
-        }
+      value:"123456",
+      padding: {
+        top: 20,
+        left: 5,
+        right: 5,
+        bottom: 5
+      }
     });
     </script>
 
@@ -98,7 +142,7 @@ The top padding of the barcode.
 ### renderAs `String` *(default: "canvas")*
 
 Sets the preferred rendering engine.
-If it is not supported by the browser, the BarCode will switch to the first available mode.
+If it is not supported by the browser, the Barcode will switch to the first available mode.
 
 The supported values are:
 
@@ -113,7 +157,7 @@ The supported values are:
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-        value:"123456",
+      value:"123456",
       renderAs: "svg"
     });
     </script>
@@ -121,6 +165,19 @@ The supported values are:
 ### text `Object`
 
 Can be set to a JavaScript object which represents the text configuration.
+
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value:"123456",
+      text:{
+        color: "red",
+        font: "20px sans-serif"
+      }
+    });
+    </script>
 
 ### text.color `String` *(default: "black")*
 
@@ -139,15 +196,12 @@ The margin of the text
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-        value:"123456",
-        text:{
-            margin : {
-                top:5,
-                left: 10,
-                right: 15,
-                bottom: 20
-            }
+      value:"123456",
+      text:{
+        margin : {
+          top: 3
         }
+      }
     });
     </script>
 
@@ -171,39 +225,82 @@ The top margin of the text.
 
 If set to false the barcode will not display the value as a text below the barcode lines.
 
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value:"123456",
+      text:{
+        visible: false
+      }
+    });
+    </script>
+
 ### type `String` *(default: "code39")*
 
 The symbology (encoding) the barcode will use.
 
 The supported values are:
 
-*EAN8
-*EAN13
-*UPCE
-*UPCA
-*Code11
-*Code39
-*Code39Extended
-*Code128
-*Code93
-*Code93Extended
-*Code128A
-*Code128B
-*Code128C
-*MSImod10
-*MSImod11
-*MSImod1010
-*MSImod1110
-*GS1-128
-*POSTNET
+* EAN8
+* EAN13
+* UPCE
+* UPCA
+* Code11
+* Code39
+* Code39Extended
+* Code93
+* Code93Extended
+* Code128
+* Code128A
+* Code128B
+* Code128C
+* GS1-128
+* MSImod10
+* MSImod11
+* MSImod1010
+* MSImod1110
+* POSTNET
+
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      type: "code128",      
+      value:"Hello World",
+      width: 400
+    });
+    </script>
 
 ### value `String`
 
 The initial value of the Barcode
 
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({   
+      value:"12345"      
+    });
+    </script>
+
 ### width `Number` *(default: 300)*
 
 The width of the barcode in pixels.  By default the width is 300.
+
+####Example
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      type: "code128",      
+      value:"Hi",
+      width: 200
+    });
+    </script>
 
 ## Methods
 
