@@ -218,6 +218,14 @@ The color to use for bar or column series with negative values. Accepts a valid 
     <kendo:chart-seriesItem negativeColor="negativeColor">
     </kendo:chart-seriesItem>
 
+### noteTextField `String`
+
+The data item field which contains the series note text.
+
+#### Example
+    <kendo:chart-seriesItem noteTextField="noteTextField">
+    </kendo:chart-seriesItem>
+
 ### opacity `float`
 
 The series opacity. By default the series are opaque.

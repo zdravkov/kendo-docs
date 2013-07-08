@@ -689,6 +689,24 @@ The options for displaying the chart negative bubble values.
     $seriesItem->negativeValues(array('color' => $color));
     ?>
 
+### noteTextField
+The data item field which contains the series note text.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->noteTextField('value');
+    ?>
+
 ### notes
 
 The series notes configuration.

@@ -40,6 +40,14 @@ If set to true the user can delete events from the view by clicking the "destroy
     <kendo:scheduler-editable destroy="destroy">
     </kendo:scheduler-editable>
 
+### resize `boolean`
+
+If set to true the scheduler allows event resizing. Dragging the resize handles changes the start or end time of the event.
+
+#### Example
+    <kendo:scheduler-editable resize="resize">
+    </kendo:scheduler-editable>
+
 ### template `String`
 
 The template which renders the editor.The template should contain elements whose name HTML attributes are set as the editable fields. This is how the grid will know

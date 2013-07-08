@@ -172,6 +172,35 @@ The line chart series options. Accepts all values supported by the series option
 
 
 
+### notes
+
+The seriesDefaults notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaults`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesDefaultsNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsNotes](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaultsNotes)
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
+    $notes = new \Kendo\Dataviz\UI\ChartSeriesDefaultsNotes();
+    $icon = new \Kendo\Dataviz\UI\ChartSeriesDefaultsNotesIcon();
+    $notes->icon($icon);
+    $seriesDefaults->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
+    $icon = new \Kendo\Dataviz\UI\ChartSeriesDefaultsNotesIcon();
+    $seriesDefaults->notes(array('icon' => $icon));
+    ?>
+
 ### ohlc
 The ohlc chart series options. Accepts all values supported by the series option.
 

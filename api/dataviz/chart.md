@@ -8126,17 +8126,39 @@ The data item field which contains the series value.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          type: "pie",
-          field: "price",
-          data: [
-            { price: 1 },
-            { price: 2 },
-            { price: 3 }
-          ]
-        }
-      ]
+      dataSource: {
+        data: [
+          { price: 1 },
+          { price: 2 },
+          { price: 3 }
+        ]
+      },
+      series: [{
+        field: "price"
+      }]
+    });
+    </script>
+
+### series.noteTextField `String` *(default: "value")*
+
+The data item field which contains the series note text.
+
+#### Example - set the chart series field
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [
+          { price: 1, noteText: "A" },
+          { price: 2 },
+          { price: 3 }
+        ]
+      },
+      series: [{
+        field: "price",
+        noteTextField: "noteText"
+      }]
     });
     </script>
 
@@ -10863,10 +10885,12 @@ The border of the label.
         field: "value",
         noteTextField: "noteText",
         notes: {
-          border: {
-            color: "green",
-            dashType: "dashDot",
-            width: 1
+          label: {
+            border: {
+              color: "green",
+              dashType: "dashDot",
+              width: 1
+            }
           }
         }
       }]
@@ -10892,8 +10916,10 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
         field: "value",
         noteTextField: "noteText",
         notes: {
-          border: {
-            color: "green"
+          label: {
+            border: {
+              color: "green"
+            }
           }
         }
       }]
@@ -10929,9 +10955,11 @@ The following dash types are supported:
         field: "value",
         noteTextField: "noteText",
         notes: {
-          border: {
-            dashType: "dashDot",
-            width: 1
+          label: {
+            border: {
+              dashType: "dashDot",
+              width: 1
+            }
           }
         }
       }]
@@ -10957,8 +10985,10 @@ The width of the border in pixels. By default the border width is set to zero wh
         field: "value",
         noteTextField: "noteText",
         notes: {
-          border: {
-            width: 1
+          label: {
+            border: {
+              width: 1
+            }
           }
         }
       }]
@@ -10984,7 +11014,9 @@ The text color of the label. Accepts a valid CSS color string, including hex and
         field: "value",
         noteTextField: "noteText",
         notes: {
-          color: "#aa00bb"
+          label: {
+            color: "#aa00bb"
+          }
         }
       }]
     });
@@ -11009,7 +11041,9 @@ The font style of the label.
         field: "value",
         noteTextField: "noteText",
         notes: {
-          font: "20px sans-serif"
+          label: {
+            font: "20px sans-serif"
+          }
         }
       }]
     });
@@ -11038,7 +11072,9 @@ The fields which can be used in the template are:
         field: "value",
         noteTextField: "noteText",
         notes: {
-          template: "Year: #: value #"
+          label: {
+            template: "Year: #: value #"
+          }
         }
       }]
     });
@@ -12574,6 +12610,677 @@ The verticalLine chart series options. Accepts all values supported by the [seri
       series: [
         { type: "verticalLine", data: [1, 2] }
       ]
+    });
+    </script>
+
+### seriesDefaults.notes `Object`
+
+The seriesDefaults notes configuration.
+
+### seriesDefaults.notes.icon `Object`
+
+The icon of the notes.
+
+### seriesDefaults.notes.icon.background `String`
+
+The background color of the notes icon.
+
+#### Example - set the seriesDefaults notes icon background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          icon: {
+            background: "red"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.icon.border `Object`
+
+The border of the icon.
+
+#### Example - set the seriesDefaults notes icon border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.icon.border.color `String`
+
+The border color of the icon.
+
+#### Example - set the seriesDefaults notes icon border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.icon.border.width `Number`
+
+The border width of the icon.
+
+#### Example - set the seriesDefaults notes icon border width
+
+   <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.icon.size `Number`
+
+The size of the icon.
+
+#### Example - set the seriesDefaults notes icon size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          icon: {
+            size: 30
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.icon.type `String` *(default: "circle")*
+
+The icon shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
+#### Example - set the seriesDefaults notes icon shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          icon: {
+            shape: "triangle"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.icon.visible `Boolean` *(default: "true")*
+
+The icon visibility.
+
+#### Example - set the seriesDefaults notes icon visibility
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          icon: {
+            visible: false
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label `Object`
+
+The label of the notes.
+
+### seriesDefaults.notes.label.background `String`
+
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the seriesDefaults label background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+            background: "red"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.border `Object`
+
+The border of the label.
+
+#### Example - set the seriesDefaults label border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+            border: {
+              color: "green",
+              dashType: "dashDot",
+              width: 1
+            }
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the seriesDefaults label border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+            border: {
+              color: "green"
+            }
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - set the seriesDefaults label border dash type
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+            border: {
+              dashType: "dashDot",
+              width: 1
+            }
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the seriesDefaults label border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+            border: {
+              width: 1
+            }
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.color `String`
+
+The text color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the seriesDefaults label color as a hex string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+            color: "#aa00bb"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the label.
+
+#### Example - set the chart seriesDefaults notes label font
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+             font: "20px sans-serif"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* value - the point value
+
+#### Example - set the seriesDefaults notes label template as a string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+             template: "Year: #: value #"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.visible `Boolean` *(default: true)*
+
+If set to `true` the chart will display the seriesDefaults notes label. By default the seriesDefaults notes label are visible.
+
+#### Example - hide the seriesDefaults notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+             visible: false
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.rotation `Number` *(default: 0)*
+
+The rotation angle of the label. By default the label are not rotated.
+
+#### Example - rotate the seriesDefaults notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+            rotation: 90
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.format `String` *(default: "{0}")*
+
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+
+#### Example - set the seriesDefaults notes label format
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          label: {
+             format: "value slot: {0}"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.label.position `String` *(default: "inside")*
+
+The position of the labels.
+
+* "inside" - the label is positioned inside of the icon.
+* "outside" - the label is positioned outside of the icon.
+
+### seriesDefaults.notes.line `Object`
+
+The line of the notes.
+
+### seriesDefaults.notes.line.width `Number`
+
+The line width of the notes.
+
+#### Example - set the value axis notes line width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          line: {
+            width: 4
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.line.color `String`
+
+The line color of the notes.
+
+#### Example - set the seriesDefaults notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          line: {
+            color: "#aa00bb"
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
+    });
+    </script>
+
+### seriesDefaults.notes.line.length `Number`
+
+The line length of the notes.
+
+#### Example - set the seriesDefaults notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      seriesDefaults: {
+        notes: {
+          line: {
+            length: 20
+          }
+        }
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText"
+      }]
     });
     </script>
 
