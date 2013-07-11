@@ -14,6 +14,16 @@ Represents the Kendo UI QRCode widget. Inherits from [Widget](/api/framework/wid
 
 ## Configuration
 
+### Example - Render as SVG, if supported
+
+<div id="qrCode"></div>
+    <script>
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      renderAs: "svg"
+    });
+    </script>
+
 ### background `String` *(default: "#fff")*
 
 The background color of the QR code. Accepts a valid CSS color string, including hex and rgb.
@@ -114,16 +124,6 @@ The supported values are:
 
 > Using Canvas rendering disables most interactive features.
 
-### Example - Render as SVG, if supported
-
-    <div id="qrCode"></div>
-    <script>
-    $("#qrCode").kendoQRCode({
-      value: "http://demos.kendoui.com/dataviz/overview/index.html",
-      renderAs: "svg"
-    });
-    </script>
-
 ### size `Number|String`
 
 Specifies the size of a QR code in pixels (i.e. "200px"). Numeric values are treated as pixels. If no size is specified, it will be determined from the element width and height. In case the element does not have width or height bigger than zero, a default value of 200 pixels will be used.
@@ -174,6 +174,28 @@ Removes data entries in order to avoid memory leaks.
     var qrCode = $("#qrCode").data("kendoQRCode");
     qrCode.destroy();
 
+### imageDataURL
+
+Returns a PNG image of the qrcode encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Returns
+
+`String` A data URL with `image/png` MIME type. Will be `null` if the browser does not support the `canvas` element.
+
+#### Example - show a snapshot of the QRCode
+
+    <div id="qrcode"></div>
+    <script>
+    $("#qrcode").kendoQRCode({
+      value: "Some text"
+    });
+    var qrcode = $("#qrcode").data("kendoQRCode");
+    var image = qrcode.imageDataURL();
+    if (!window.open(image)) {
+        document.location.href = image;
+    }
+    </script>
+
 ### redraw
 
 Redraws the QR code using the current value and options.
@@ -206,6 +228,27 @@ An object with the new options. All [configuration](qrcode#configuration) option
         color: "#FF7D05"
       }
     });
+
+### svg
+
+Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the qrcode. The returned string is a self-contained SVG document that can be used as is or converted to other formats using tools like [Inkscape](http://inkscape.org/) and
+[ImageMagick](http://www.imagemagick.org/). Both programs provide command-line interface suitable for server-side processing.
+
+#### Returns
+
+`String` the SVG representation of the qrcode.
+
+#### Example - get the SVG representation of the qrcode
+
+    <div id="qrcode"></div>
+    <script>
+    $("#qrcode").kendoQRCode({
+      value:"Some value"
+    });
+    var qrcode = $("#qrcode").data("kendoQRCode");
+    var svg = qrcode.svg();
+    console.log(svg); // displays the SVG string
+    </script>
 
 ### value
 

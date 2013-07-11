@@ -12,6 +12,16 @@ publish: true
 
 ## Configuration
 
+### Example - Render as SVG, if supported
+
+<div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value:"123456",
+      renderAs: "svg"
+    });
+    </script>
+
 ### background `String` *(default: "white")*
 
 The background of the barcode area.
@@ -151,16 +161,6 @@ The supported values are:
 * "vml" - renders the widget as VML, if available
 
 > Using Canvas rendering disables most interactive features.
-
-### Example - Render as SVG, if supported
-
-    <div id="barcode"></div>
-    <script>
-    $("#barcode").kendoBarcode({
-      value:"123456",
-      renderAs: "svg"
-    });
-    </script>
 
 ### text `Object`
 
@@ -304,6 +304,28 @@ The width of the barcode in pixels.  By default the width is 300.
 
 ## Methods
 
+### imageDataURL
+
+Returns a PNG image of the barcode encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Returns
+
+`String` A data URL with `image/png` MIME type. Will be `null` if the browser does not support the `canvas` element.
+
+#### Example - show a snapshot of the Barcode
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value: "FOO"
+    });
+    var barcode = $("#barcode").data("kendoBarcode");
+    var image = barcode.imageDataURL();
+    if (!window.open(image)) {
+        document.location.href = image;
+    }
+    </script>
+
 ### redraw
 
 Redraws the barcode.
@@ -312,6 +334,27 @@ Redraws the barcode.
 
     var barcode = $("#barcode").data("kendoBarcode");
     barcode.redraw();
+
+### svg
+
+Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the barcode. The returned string is a self-contained SVG document that can be used as is or converted to other formats using tools like [Inkscape](http://inkscape.org/) and
+[ImageMagick](http://www.imagemagick.org/). Both programs provide command-line interface suitable for server-side processing.
+
+#### Returns
+
+`String` the SVG representation of the barcode.
+
+#### Example - get the SVG representation of the barcode
+
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value:"FOO"
+    });
+    var barcode = $("#barcode").data("kendoBarcode");
+    var svg = barcode.svg();
+    console.log(svg); // displays the SVG string
+    </script>
 
 ### value
 
