@@ -648,6 +648,22 @@ Toggles the node of a TreeView between its expanded and collapsed states.
 
 The node that should be toggled.
 
+### updateIndeterminate
+
+Updates the indeterminate state of the treeview checkboxes. Should be used for better performance when checking multiple checkboxes through code.
+
+    // check many checkboxes through JS
+    $(":checkbox").filter(function() {}).prop("checked", true);
+
+    // update indeterminate state of all nodes
+    treeview.updateIndeterminate();
+
+#### Parameters
+
+##### node `jQuery`
+
+Optional. The root of the hierarchy that will be looped through. Allows only a subtree to be processed. The default value is the treeview root.
+
 ## Events
 
 ### collapse
