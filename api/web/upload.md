@@ -57,6 +57,39 @@ containing one or more fields with the same name as the original input name.
 Enables (**true**) or disables (**false**) an **Upload**. A disabled
 **Upload** may be re-enabled via enable().
 
+### files `Array`
+
+List of files to be initially rendered in the Upload widget files list.
+
+#### Each file object in the array should contain the following properties
+
+*   name
+*   size
+*   extension
+
+> **Important:** This option could be used only when the Upload widget is in [async mode](/getting-started/web/upload/modes#asynchronous-mode). The files will be rendered as successfully uploaded.
+
+#### Example - passing an array of initial files
+
+	<input type="file" name="files" id="upload" />
+	<script>
+        var files = [
+		    { name: "file1.doc", size: 525, extension: ".doc" },
+		    { name: "file2.jpg", size: 600, extension: ".jpg" },
+		    { name: "file3.xls", size: 720, extension: ".xls" },
+	    ];
+
+    	$("#upload").kendoUpload({
+    	    async: {
+		        saveUrl: "Home/Save",
+		        removeUrl: "Home/Remove",
+		        autoUpload: true
+		    },
+		    files: files
+    	});
+	</script>
+
+
 ### localization `Object`
 
 Sets the strings rendered by the Upload.
@@ -132,7 +165,7 @@ The [template](http://docs.kendoui.com/api/framework/kendo#methods-template) use
         	<button type='button' class='k-upload-action' style='position: absolute; top: 0; right: 0;'></button>
     	</div>
 	</script>
-	script>
+	<script>
     	$("#upload").kendoUpload({
     	    template: kendo.template($('#fileTemplate').html())
     	});
