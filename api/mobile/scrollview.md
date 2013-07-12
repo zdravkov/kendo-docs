@@ -219,6 +219,10 @@ The current page (zero based index)
 
 The page element. **Available only in data bound mode.** Parameter will be undefined in standard mode.
 
+##### e.data `Array`
+
+The data collection. **Available only in data bound mode.** Parameter will be undefined in standard mode.
+
 ### refresh
 
 Fires when widget refreshes
