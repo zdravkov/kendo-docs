@@ -128,4 +128,73 @@ Use builder to set different asynchronous uploading options.
     %>
 
 
+### TemplateId(`System.String`)
+The template element to be used for rendering the files in the list
+
+
+#### Parameters
+
+##### templateId `System.String`
+The id of the template
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Upload()
+        .Name("files")
+        .TemplateId("fileTemplate")
+        .Async(a => a
+            .Save("Save", "Compose")
+            .Remove("Remove", "Compose")
+            .AutoUpload(true)
+        )
+    )
+
+#### Example (ASPX)
+    <%= Html.Kendo().Upload()
+    .Name("Upload")
+    .TemplateId("fileTemplate")
+    .Async(async => async
+        .Save("Save", "Compose")
+        .Remove("Remove", "Compose")
+    )
+    %>
+
+
+### Files(`System.Action<Kendo.Mvc.UI.Fluent.UploadFileFactory>`)
+Sets the initially rendered files
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.UploadFileFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/UploadFileFactory)>
+The lambda which configures initial files
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Upload()
+    .Name("files")
+    .Files(files => files.Add().Name("file.txt").Size(500).Extension(".txt"))
+    .Async(a => a
+        .Save("Save", "Compose")
+        .Remove("Remove", "Compose")
+        .AutoUpload(true)
+    )
+    %>
+
+#### Example (Razor)
+    @(Html.Kendo().Upload()
+        .Name("files")
+        .Files(files => files.Add().Name("file.txt").Size(500).Extension(".txt"))
+        .Async(a => a
+            .Save("Save", "Compose")
+            .Remove("Remove", "Compose")
+            .AutoUpload(true)
+        )
+    )
+
+
 

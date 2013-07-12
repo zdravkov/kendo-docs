@@ -194,6 +194,24 @@ For additional information check the [error](/api/web/upload#events-error) event
     $upload->error(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### files
+List of files to be initially rendered in the Upload widget files list.
+
+#### Returns
+`\Kendo\UI\Upload`
+
+#### Parameters
+
+##### $value `array`
+
+
+
+#### Example 
+    <?php
+    $upload = new \Kendo\UI\Upload('Upload');
+    $upload->files(new array());
+    ?>
+
 ### localization
 
 Sets the strings rendered by the Upload.

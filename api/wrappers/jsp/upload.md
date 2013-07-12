@@ -19,6 +19,14 @@ Upload may be re-enabled via enable().
     <kendo:upload enabled="enabled">
     </kendo:upload>
 
+### files `Object`
+
+List of files to be initially rendered in the Upload widget files list.
+
+#### Example
+    <kendo:upload files="files">
+    </kendo:upload>
+
 ### multiple `boolean`
 
 Enables (true) or disables (false) the ability to select multiple files.
