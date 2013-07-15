@@ -90,6 +90,27 @@ The color of the QR code. Accepts a valid CSS color string, including hex and rg
     });
     </script>
 
+### encoding `String` *(default: "ISO_8859_1")*
+
+The encoding mode used to encode the value.
+
+The possible values are:
+
+* "ISO\_8859\_1" - supports all characters from the [ISO/IEC 8859-1](http://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
+* "UTF_8" - supports all [Unicode](http://en.wikipedia.org/wiki/List_of_Unicode_characters) characters.
+
+> *Important:* The UTF-8 encoding is not included in the specifications and is not supported by all readers.
+
+#### Example
+
+    <div id="qrCode"></div>
+    <script>
+    $("#qrCode").kendoQRCode({
+      value: "丠",
+      encoding: "UTF_8"
+    });
+    </script>
+
 ### errorCorrection `String` *(default: "L")*
 
 The error correction level used to encode the value.
