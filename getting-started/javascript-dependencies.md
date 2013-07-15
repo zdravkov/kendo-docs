@@ -209,13 +209,13 @@ can be included on a per-widget basis.
 1.  kendo.core.js
 1.  kendo.data.js
 1.  kendo.userevents.js
+1.  kendo.popup.js
+1.  kendo.list.js
+1.  kendo.dropdownlist.js
 1.  kendo.upload.js (if imagebrowser is used)
 1.  kendo.selectable.js (if imagebrowser is used)
 1.  kendo.listview.js (if imagebrowser is used)
 1.  kendo.imagebrowser.js (if imagebrowser is used)
-1.  kendo.popup.js
-1.  kendo.list.js
-1.  kendo.dropdownlist.js
 1.  kendo.combobox.js
 1.  kendo.fx.js (optional for animation)
 1.  kendo.draganddrop.js (if popups are draggable and/or resizable)
