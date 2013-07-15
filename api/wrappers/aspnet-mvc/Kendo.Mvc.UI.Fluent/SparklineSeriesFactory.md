@@ -254,7 +254,7 @@ The name of the category member.
 
 
 
-### Line(`System.Type,System.String,System.String`)
+### Line(`System.Type,System.String,System.String,System.String`)
 Defines bound line series.
 
 
@@ -334,7 +334,7 @@ The name of the category member.
 
 
 
-### Area(`System.Type,System.String,System.String`)
+### Area(`System.Type,System.String,System.String,System.String`)
 Defines bound area series.
 
 
@@ -400,6 +400,28 @@ The data to bind to
 
 
 
+### Bullet(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound bullet series.
+
+
+#### Parameters
+
+##### currentExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point current value from the chart model
+
+##### targetExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point target value from the chart model
+
+##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point color from the chart model
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point note text from the chart model
+
+
+
+
+
 ### Bullet(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound bullet series.
 
@@ -415,11 +437,14 @@ The expression used to extract the point target value from the chart model
 ##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
 The expression used to extract the point color from the chart model
 
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point note text from the chart model
 
 
 
 
-### Bullet(`System.String,System.String,System.String`)
+
+### Bullet(`System.String,System.String,System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -434,11 +459,14 @@ The name of the target value member.
 ##### colorMemberName `System.String`
 The name of the color member.
 
+##### noteTextExpression `System.String`
+The name of the note text member.
 
 
 
 
-### Bullet(`System.Type,System.String,System.String,System.String`)
+
+### Bullet(`System.Type,System.String,System.String,System.String,System.String,System.String`)
 Defines bound bullet series.
 
 
@@ -453,18 +481,8 @@ The name of the target value member.
 ##### colorMemberName `System.String`
 The name of the color member.
 
-
-
-
-
-### Bullet(`System.Collections.IEnumerable`)
-Defines bar series bound to inline data.
-
-
-#### Parameters
-
-##### data `System.Collections.IEnumerable`
-The data to bind to.
+##### noteTextExpression `System.String`
+The name of the note text member.
 
 
 

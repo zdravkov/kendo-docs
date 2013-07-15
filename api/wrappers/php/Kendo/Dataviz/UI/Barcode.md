@@ -167,7 +167,7 @@ The padding of the barcode.
 
 ### renderAs
 Sets the preferred rendering engine.
-If it is not supported by the browser, the BarCode will switch to the first available mode.The supported values are:
+If it is not supported by the browser, the Barcode will switch to the first available mode.The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\Barcode`
@@ -214,25 +214,7 @@ Can be set to a JavaScript object which represents the text configuration.
     ?>
 
 ### type
-The symbology (encoding) the barcode will use.The supported values are:*EAN8
-*EAN13
-*UPCE
-*UPCA
-*Code11
-*Code39
-*Code39Extended
-*Code128
-*Code93
-*Code93Extended
-*Code128A
-*Code128B
-*Code128C
-*MSImod10
-*MSImod11
-*MSImod1010
-*MSImod1110
-*GS1-128
-*POSTNET
+The symbology (encoding) the barcode will use.The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\Barcode`

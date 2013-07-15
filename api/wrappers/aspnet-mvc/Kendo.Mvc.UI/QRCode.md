@@ -11,6 +11,8 @@ The server side wrapper for the Kendo UI QRCode.
 ## Properties
 ### Value
 Gets or sets the QRCode value.
+### RenderAs
+Gets or sets the render type.
 ### Border
 Gets the border configuration.
 ### Size
