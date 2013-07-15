@@ -2564,6 +2564,10 @@ The jQuery object representing the container element. That element contains the 
 
 The event which is being edited.
 
+##### e.preventDefault `Function`
+
+If invoked prevents the edit action.
+
 ##### e.sender `kendo.ui.Scheduler`
 
 The widget instance which fired the event.
