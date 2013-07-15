@@ -8180,38 +8180,6 @@ The distance between the category clusters.
     });
     </script>
 
-### series.groupNameTemplate `String`
-
-The [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
-
-The fields which can be used in the template are:
-
-*   series - the series options
-*   group - the data group
-*   group.field - the name of the field used for grouping
-*   group.value - the field value for this group.
-
-#### Example - set the chart series group name template
-
-    <div id="chart"></div>
-    <script>
-    $("#chart").kendoChart({
-      dataSource: {
-        data: [
-          { value: 1, category: "One"},
-          { value: 2, category: "Two"}
-        ],
-        group: { field: "category" }
-      },
-      series: [
-        {
-          field: "value",
-          groupNameTemplate: "Category: #: group.value #"
-        }
-      ]
-    });
-    </script>
-
 ### series.highField `String` *(default: "high")*
 
 The data field containing the high value.
@@ -9591,6 +9559,35 @@ The name of the chart series which is visible in the legend.
       series: [
         { name: "Series 1", data: [1, 2] },
         { name: "Series 2", data: [2, 3] }
+      ]
+    });
+    </script>
+
+The name can also be a [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
+
+The fields which can be used in the template are:
+
+*   series - the series options
+*   group - the data group
+*   group.field - the name of the field used for grouping
+*   group.value - the field value for this group.
+
+#### Example - set the chart series group name template
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [
+          { value: 1, category: "One"},
+          { value: 2, category: "Two"}
+        ],
+        group: { field: "category" }
+      },
+      series: [
+        {
+          field: "value",
+          name: "Category: #: group.value #"
+        }
       ]
     });
     </script>

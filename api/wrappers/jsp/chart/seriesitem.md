@@ -130,14 +130,6 @@ The distance between the category clusters.
     <kendo:chart-seriesItem gap="gap">
     </kendo:chart-seriesItem>
 
-### groupNameTemplate `String`
-
-The template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
-
-#### Example
-    <kendo:chart-seriesItem groupNameTemplate="groupNameTemplate">
-    </kendo:chart-seriesItem>
-
 ### highField `String`
 
 The data field containing the high value.

@@ -106,14 +106,6 @@ The distance between category clusters.** Applicable for bar and column series. 
     <kendo:sparkline-seriesItem gap="gap">
     </kendo:sparkline-seriesItem>
 
-### groupNameTemplate `String`
-
-Name template for auto-generated series when binding to grouped data.Template variables:
-
-#### Example
-    <kendo:sparkline-seriesItem groupNameTemplate="groupNameTemplate">
-    </kendo:sparkline-seriesItem>
-
 ### line `String`
 
 Line options.** Applicable to area series. ** Further configuration is available via [kendo:sparkline-seriesItem-line](#kendo-sparkline-seriesItem-line). 
@@ -132,7 +124,7 @@ The behavior for handling missing values. The supported values are:
 
 ### name `String`
 
-The series name.
+The series name.The name can also be a template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
 
 #### Example
     <kendo:sparkline-seriesItem name="name">

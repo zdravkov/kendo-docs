@@ -275,24 +275,6 @@ The distance between category clusters.** Applicable for bar and column series. 
     $seriesItem->gap(1);
     ?>
 
-### groupNameTemplate
-Name template for auto-generated series when binding to grouped data.Template variables:
-
-#### Returns
-`\Kendo\Dataviz\UI\SparklineSeriesItem`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
-    $seriesItem->groupNameTemplate('value');
-    ?>
-
 ### highlight
 
 Configures the appearance of highlighted points.
@@ -437,7 +419,7 @@ The behavior for handling missing values. The supported values are:
     ?>
 
 ### name
-The series name.
+The series name.The name can also be a template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItem`

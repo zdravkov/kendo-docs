@@ -152,7 +152,7 @@ Options or URL for remote image retrieval.
 
 ### thumbnailUrl
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
-If function is assign, the current path and image name will be provided.
+If function is assigned, the current path and image name will be provided.
 
 #### Returns
 `\Kendo\UI\EditorImageBrowserTransport`

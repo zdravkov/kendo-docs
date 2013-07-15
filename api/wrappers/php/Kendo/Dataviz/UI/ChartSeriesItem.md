@@ -335,24 +335,6 @@ The distance between the category clusters.
     $seriesItem->gap(1);
     ?>
 
-### groupNameTemplate
-The template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
-
-#### Returns
-`\Kendo\Dataviz\UI\ChartSeriesItem`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
-    $seriesItem->groupNameTemplate('value');
-    ?>
-
 ### highField
 The data field containing the high value.
 

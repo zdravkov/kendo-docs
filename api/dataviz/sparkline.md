@@ -1063,20 +1063,18 @@ The data field containing the target value.
 
 The data field containing the series value.
 
-### series.groupNameTemplate `String`
-
-Name template for auto-generated series when binding to grouped data.
-
-Template variables:
-
-*   **series** - the series options
-*   **group** - the data group
-*   **group.field** - the name of the field used for grouping
-*   **group.value** - the field value for this group.
-
 ### series.name `String`
 
 The series name.
+
+The name can also be a [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
+
+The fields which can be used in the template are:
+
+*   series - the series options
+*   group - the data group
+*   group.field - the name of the field used for grouping
+*   group.value - the field value for this group.
 
 ### series.highlight `Object`
 

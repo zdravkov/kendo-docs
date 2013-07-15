@@ -247,9 +247,38 @@ The data item field which contains the category name or date.
     });
     </script>
 
-### navigator.series.groupNameTemplate `String`
+### navigator.series.name `String`
 
-The [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
+The navigator series name.
+
+#### Example - set the navigator series name
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+      dataSource: {
+        data: [
+          { value: 1, category: "One", date: new Date(2012, 1, 1)},
+          { value: 2, category: "Two", date: new Date(2012, 1, 2)}
+        ]
+      },
+      dateField: "date",
+      navigator: {
+          series: [
+            {
+              field: "value",
+              name: "Value",
+              visibleInLegend: true
+            }
+          ]
+      },
+      legend: {
+        visible: true,
+        position: "bottom"
+      }
+    });
+    </script>
+
+The name can also be a [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
 
 The fields which can be used in the template are:
 
@@ -271,22 +300,21 @@ The fields which can be used in the template are:
         group: { field: "category" }
       },
       dateField: "date",
-      series: [
-        {
-          field: "value",
-          groupNameTemplate: "Category: #: group.value #"
-        }
-      ],
+      navigator: {
+          series: [
+            {
+              field: "value",
+              name: "Value: #: group.value #",
+              visibleInLegend: true
+            }
+          ]
+      },
       legend: {
         visible: true,
         position: "bottom"
       }
     });
     </script>
-
-### navigator.series.name `String`
-
-The series name visible in the legend.
 
 ### navigator.series.highlight `Object`
 
@@ -2658,20 +2686,67 @@ The data field containing the target value.
 
 ** Available for bullet and verticalBullet series. **
 
-### series.groupNameTemplate `String`
-
-Name template for auto-generated series when binding to grouped data.
-
-Template variables:
-
-*   **series** - the series options
-*   **group** - the data group
-*   **group.field** - the name of the field used for grouping
-*   **group.value** - the field value for this group.
-
 ### series.name `String`
 
 The series name visible in the legend.
+
+#### Example - set the series name
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+      dataSource: {
+        data: [
+          { value: 1, category: "One", date: new Date(2012, 1, 1)},
+          { value: 2, category: "Two", date: new Date(2012, 1, 2)}
+        ]
+      },
+      dateField: "date",
+      series: [
+        {
+          field: "value",
+          name: "Value"
+        }
+      ],
+      legend: {
+        visible: true,
+        position: "bottom"
+      }
+    });
+    </script>
+
+The name can also be a [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
+
+The fields which can be used in the template are:
+
+*   series - the series options
+*   group - the data group
+*   group.field - the name of the field used for grouping
+*   group.value - the field value for this group.
+
+#### Example - set the chart series group name template
+    <div id="stock-chart"></div>
+    <script>
+    $("#stock-chart").kendoStockChart({
+      dataSource: {
+        data: [
+          { value: 1, category: "One", date: new Date(2012, 1, 1)},
+          { value: 2, category: "Two", date: new Date(2012, 1, 2)}
+        ],
+        group: { field: "category" }
+      },
+      dateField: "date",
+      series: [
+        {
+          field: "value",
+          name: "Category: #: group.value #"
+        }
+      ],
+      legend: {
+        visible: true,
+        position: "bottom"
+      }
+    });
+    </script>
 
 ### series.highlight `Object`
 

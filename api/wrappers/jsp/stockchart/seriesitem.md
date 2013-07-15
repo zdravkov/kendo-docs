@@ -122,14 +122,6 @@ The distance between category clusters.** Applicable for column, candlestick and
     <kendo:stockChart-seriesItem gap="gap">
     </kendo:stockChart-seriesItem>
 
-### groupNameTemplate `String`
-
-Name template for auto-generated series when binding to grouped data.Template variables:
-
-#### Example
-    <kendo:stockChart-seriesItem groupNameTemplate="groupNameTemplate">
-    </kendo:stockChart-seriesItem>
-
 ### highField `String`
 
 The data field containing the high value.** Available for candlestick and ohlc series only **

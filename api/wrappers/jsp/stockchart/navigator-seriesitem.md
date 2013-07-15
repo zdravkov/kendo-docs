@@ -113,14 +113,6 @@ The distance between category clusters.** Applicable for column, candlestick and
     <kendo:stockChart-navigator-seriesItem gap="gap">
     </kendo:stockChart-navigator-seriesItem>
 
-### groupNameTemplate `String`
-
-The template which sets the name of the series when bound to grouped data source.The fields which can be used in the template are:
-
-#### Example
-    <kendo:stockChart-navigator-seriesItem groupNameTemplate="groupNameTemplate">
-    </kendo:stockChart-navigator-seriesItem>
-
 ### highField `String`
 
 The data field containing the high value.** Available for candlestick and ohlc series only **
@@ -155,7 +147,7 @@ The behavior for handling missing values. The supported values are:
 
 ### name `String`
 
-The series name visible in the legend.
+The navigator series name.
 
 #### Example
     <kendo:stockChart-navigator-seriesItem name="name">

@@ -288,24 +288,6 @@ The distance between category clusters.** Applicable for column, candlestick and
     $seriesItem->gap(1);
     ?>
 
-### groupNameTemplate
-Name template for auto-generated series when binding to grouped data.Template variables:
-
-#### Returns
-`\Kendo\Dataviz\UI\StockChartSeriesItem`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
-    $seriesItem->groupNameTemplate('value');
-    ?>
-
 ### highField
 The data field containing the high value.** Available for candlestick and ohlc series only **
 
