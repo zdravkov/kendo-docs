@@ -23,6 +23,12 @@ The optional event description.
 
 The date at which the scheduler event ends.
 
+### endTimezone `String` *(default: undefined)*
+
+The timezone of the `end` date. If not specified the [timezone](/api/web/scheduler#configuration-timezone) will be used.
+
+The complete list of the supported timezones is available in the [List of IANA time zones](http://en.wikipedia.org/wiki/List_of_IANA_time_zones) Wikipedia page.
+
 ### id `String|Number|Object`
 
 The unique identifier of the event.
@@ -47,6 +53,12 @@ The recurrence rule describing the recurring pattern of the event.
 
 The date at which the scheduler event starts.
 
+### startTimezone `String` *(default: undefined)*
+
+The timezone of the `start` date. If not specified the [timezone](/api/web/scheduler#configuration-timezone) will be used.
+
+The complete list of the supported timezones is available in the [List of IANA time zones](http://en.wikipedia.org/wiki/List_of_IANA_time_zones) Wikipedia page.
+
 ### title `String` *(default: "")*
 
 The title of the event which is displayed by the scheduler widget.
@@ -60,6 +72,10 @@ The optional event description.
 ### end `Date`
 
 The date at which the scheduler event ends.
+
+### endTimezone `String`
+
+The timezone of the `end` date.
 
 ### id `String|Number|Object`
 
@@ -84,6 +100,10 @@ The recurrence rule describing the recurring pattern of the event.
 ### start `Date`
 
 The date at which the scheduler event starts.
+
+### startTimezone `String`
+
+The timezone of the `start` date.
 
 ### title `String`
 
