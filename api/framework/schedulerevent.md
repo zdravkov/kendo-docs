@@ -15,7 +15,7 @@ Inherits from [kendo.data.Model](/api/framework/model).
 
 ## Configuration
 
-### description `String`*(default: "")*
+### description `String` *(default: "")*
 
 The optional event description.
 
@@ -23,9 +23,25 @@ The optional event description.
 
 The date at which the scheduler event ends.
 
-### isAllDay `Boolean`
+### id `String|Number|Object`
+
+The unique identifier of the event.
+
+### isAllDay `Boolean` *(default: false)*
 
 If set to `true` the event is "all day".
+
+### recurrenceException `String` *(default: undefined)*
+
+The recurrence exceptions. A list of colon separated dates formatted using the `yyyyMMddTHHmmssZ` format string.
+
+### recurrenceId `String|Number|Object` *(default: undefined)*
+
+The `id` of the recurrence parent event.
+
+### recurrenceRule `String` *(default: undefined)*
+
+The recurrence rule describing the recurring pattern of the event.
 
 ### start `Date`
 
@@ -45,9 +61,25 @@ The optional event description.
 
 The date at which the scheduler event ends.
 
+### id `String|Number|Object`
+
+The unique identifier of the event.
+
 ### isAllDay `Boolean`
 
 If set to `true` the event is "all day".
+
+### recurrenceException `String`
+
+The recurrence exceptions. A list of colon separated dates formatted using the `yyyyMMddTHHmmssZ` format string.
+
+### recurrenceId `String|Number|Object`
+
+The `id` of the recurrence parent event.
+
+### recurrenceRule `String`
+
+The recurrence rule describing the recurring pattern of the event.
 
 ### start `Date`
 
