@@ -26,6 +26,14 @@ The color of the QR code. Accepts a valid CSS color string, including hex and rg
     <kendo:qRCode color="color">
     </kendo:qRCode>
 
+### encoding `String`
+
+The encoding mode used to encode the value.The possible values are:
+
+#### Example
+    <kendo:qRCode encoding="encoding">
+    </kendo:qRCode>
+
 ### errorCorrection `String`
 
 The error correction level used to encode the value.The possible values are:

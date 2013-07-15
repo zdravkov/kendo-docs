@@ -23,6 +23,8 @@ Gets or sets the QRCode color.
 Gets or sets the QRCode background.
 ### ErrorCorrection
 Gets or sets the QRCode error correction level.
+### Encoding
+Gets or sets the QRCode encoding.
 
 
 

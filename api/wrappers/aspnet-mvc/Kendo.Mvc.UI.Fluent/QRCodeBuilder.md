@@ -124,6 +124,31 @@ The QR code color.
     %>
 
 
+### Encoding(`Kendo.Mvc.UI.QREncoding`)
+Sets the encoding of the QR code.
+
+
+#### Parameters
+
+##### encoding [Kendo.Mvc.UI.QREncoding](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/QREncoding)
+The QR code encoding.
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().QRCode()
+        .Name("qrCode")
+        .Encoding(QREncoding.UTF_8)
+    )
+
+#### Example (ASPX)
+    <%:Html.Kendo().QRCode()
+        .Name("qrCode")
+        .Encoding(QREncoding.UTF_8)
+    %>
+
+
 ### ErrorCorrection(`Kendo.Mvc.UI.QRErrorCorrectionLevel`)
 Sets the error correction level of the QR code.
 

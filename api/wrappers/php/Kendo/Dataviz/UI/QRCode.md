@@ -98,6 +98,24 @@ The color of the QR code. Accepts a valid CSS color string, including hex and rg
     $qRCode->color('value');
     ?>
 
+### encoding
+The encoding mode used to encode the value.The possible values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\QRCode`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $qRCode = new \Kendo\Dataviz\UI\QRCode('QRCode');
+    $qRCode->encoding('value');
+    ?>
+
 ### errorCorrection
 The error correction level used to encode the value.The possible values are:
 
