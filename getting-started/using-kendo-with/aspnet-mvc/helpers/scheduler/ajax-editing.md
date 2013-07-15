@@ -10,6 +10,8 @@ publish: true
 
 ## Getting started
 
+> Warning! The Kendo UI Scheduler is currently released as a beta. The final API and behavior of the widget may change.
+
 The following tutorial shows how to configure Kendo UI Scheduler for ASP.NET MVC to do ajax editing of the Sample  database (the Tasks table) included in the offline demos.
 
 1.  Create a new ASP.NET MVC 4 application (or Kendo UI ASP.NET MVC application if you have installed the [Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
@@ -26,42 +28,42 @@ Name the model "Sample.edmx" and click "Next". This will start the "Entity Data 
 
         public class TaskViewModel : ISchedulerEvent
         {
-	        public int TaskID { get; set; }
-	        public string Title { get; set; }
-	        public string Description { get; set; }
-	
-	        private DateTime start;
-	        public DateTime Start
-	        {
-	            get
-	            {
-	                return start;
-	            }
-	            set
-	            {
-	                start = value.ToUniversalTime();
-	            }
-	        }
-	
-	        private DateTime end;
-	        public DateTime End
-	        {
-	            get
-	            {
-	                return end;
-	            }
-	            set
-	            {
-	                end = value.ToUniversalTime();
-	            }
-	        }
-	
-	        public string RecurrenceRule { get; set; }
-	        public int? RecurrenceID { get; set; }
-	        public string RecurrenceException { get; set; }
-	        public bool IsAllDay { get; set; }
-	        public int? OwnerID { get; set; }
-	    }
+            public int TaskID { get; set; }
+            public string Title { get; set; }
+            public string Description { get; set; }
+
+            private DateTime start;
+            public DateTime Start
+            {
+                get
+                {
+                    return start;
+                }
+                set
+                {
+                    start = value.ToUniversalTime();
+                }
+            }
+
+            private DateTime end;
+            public DateTime End
+            {
+                get
+                {
+                    return end;
+                }
+                set
+                {
+                    end = value.ToUniversalTime();
+                }
+            }
+
+            public string RecurrenceRule { get; set; }
+            public int? RecurrenceID { get; set; }
+            public string RecurrenceException { get; set; }
+            public bool IsAllDay { get; set; }
+            public int? OwnerID { get; set; }
+        }
 
 1.  Open HomeController.cs and add a new action method which will return the Tasks as JSON. The scheduler will make ajax requests to this action.
 
@@ -90,8 +92,8 @@ Name the model "Sample.edmx" and click "Next". This will start the "Entity Data 
 1.  Add new action method to HomeController.cs. It will be responsible for saving new data items. Name the method "Tasks_Create".
 
         public ActionResult Tasks_Create([DataSourceRequest]DataSourceRequest request, TaskViewModel task)
-        { 
-        
+        {
+
             if (ModelState.IsValid)
             {
                 using (var sampleDB = new SampleEntities())
@@ -197,54 +199,54 @@ Name the model "Sample.edmx" and click "Next". This will start the "Entity Data 
     - Index.aspx (ASPX)
 
             <%= Html.Kendo().Scheduler<KendoSchedulerAjaxEditing.Models.TaskViewModel>()
-			    .Name("scheduler")
-			    .Date(new DateTime(2013, 6, 13))
-			    .StartTime(new DateTime(2013, 6, 13, 7, 00, 00))
-			    .Height(600)
-			    .Views(views =>
-			    {
-			        views.DayView();
-			        views.WeekView(weekView => weekView.Selected(true));
-			        views.MonthView();
-			        views.AgendaView();
-			    })
-			    .Timezone("Etc/UTC")
-			    .DataSource(d => d
-			        .Model(m => {
-			            m.Id(f => f.TaskID);
-			            m.Field(f => f.OwnerID).DefaultValue(1);
-			        })
-			        .Read("Tasks_Read", "Home")
-			        .Create("Tasks_Create", "Home")
-			        .Destroy("Tasks_Destroy", "Home")
-			        .Update("Tasks_Update", "Home")
-			    )
-			%>
+                .Name("scheduler")
+                .Date(new DateTime(2013, 6, 13))
+                .StartTime(new DateTime(2013, 6, 13, 7, 00, 00))
+                .Height(600)
+                .Views(views =>
+                {
+                    views.DayView();
+                    views.WeekView(weekView => weekView.Selected(true));
+                    views.MonthView();
+                    views.AgendaView();
+                })
+                .Timezone("Etc/UTC")
+                .DataSource(d => d
+                    .Model(m => {
+                        m.Id(f => f.TaskID);
+                        m.Field(f => f.OwnerID).DefaultValue(1);
+                    })
+                    .Read("Tasks_Read", "Home")
+                    .Create("Tasks_Create", "Home")
+                    .Destroy("Tasks_Destroy", "Home")
+                    .Update("Tasks_Update", "Home")
+                )
+            %>
     - Index.cshtml (Razor)
 
             @(Html.Kendo().Scheduler<KendoSchedulerAjaxEditing.Models.TaskViewModel>()
-			    .Name("scheduler")
-			    .Date(new DateTime(2013, 6, 13))
-			    .StartTime(new DateTime(2013, 6, 13, 7, 00, 00))
-			    .Height(600)
-			    .Views(views =>
-			    {
-			        views.DayView();
-			        views.WeekView(weekView => weekView.Selected(true));
-			        views.MonthView();
-			        views.AgendaView();
-			    })
-			    .Timezone("Etc/UTC")
-			    .DataSource(d => d
-			        .Model(m => {
-			            m.Id(f => f.TaskID);
-			            m.Field(f => f.OwnerID).DefaultValue(1);
-			        })
-			        .Read("Tasks_Read", "Home")
-			        .Create("Tasks_Create", "Home")
-			        .Destroy("Tasks_Destroy", "Home")
-			        .Update("Tasks_Update", "Home")
-			    )
-			)
+                .Name("scheduler")
+                .Date(new DateTime(2013, 6, 13))
+                .StartTime(new DateTime(2013, 6, 13, 7, 00, 00))
+                .Height(600)
+                .Views(views =>
+                {
+                    views.DayView();
+                    views.WeekView(weekView => weekView.Selected(true));
+                    views.MonthView();
+                    views.AgendaView();
+                })
+                .Timezone("Etc/UTC")
+                .DataSource(d => d
+                    .Model(m => {
+                        m.Id(f => f.TaskID);
+                        m.Field(f => f.OwnerID).DefaultValue(1);
+                    })
+                    .Read("Tasks_Read", "Home")
+                    .Create("Tasks_Create", "Home")
+                    .Destroy("Tasks_Destroy", "Home")
+                    .Update("Tasks_Update", "Home")
+                )
+            )
 1. Build and run the application
 ![Final result](images/scheduler.png)

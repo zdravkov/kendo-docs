@@ -13,6 +13,8 @@ The data source used by the [kendo.ui.Scheduler](/api/web/scheduler) widget.
 Inherits from [kendo.data.DataSource](/api/framework/datasource). The SchedulerDataSource contains instances of the
 [kendo.data.SchedulerEvent](/api/framework/schedulerevent) class.
 
+> Warning! The Kendo UI Scheduler is currently released as a beta. The final API and behavior of the widget may change.
+
 ## Configuration
 
 See the [DataSource configuration](/api/framework/datasource#configuration) for all inherited configuration options.

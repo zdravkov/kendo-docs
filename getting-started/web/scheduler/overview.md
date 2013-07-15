@@ -12,6 +12,8 @@ publish: true
 
 The Kendo UI Scheduler widget displays a set of events (a.k.a. appointments or tasks). It can display the scheduler events in different views - a single day, a whole week or month and as a list of tasks which need to be accomplished.
 
+> Warning! The Kendo UI Scheduler is currently released as a beta. The final API and behavior of the widget may change.
+
 ## Getting Started
 
 The first steps are to include the Kendo UI JavaScript and CSS files. Those steps are described in detail in the [introduction](/getting-started/introduction#kendo-ui-web) help topic so we won't repeat them here.

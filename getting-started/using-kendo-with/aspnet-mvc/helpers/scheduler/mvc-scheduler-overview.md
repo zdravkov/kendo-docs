@@ -10,6 +10,8 @@ publish: true
 
 The Scheduler HtmlHelper extension is a server-side wrapper for the [Kendo UI Scheduler](http://docs.kendoui.com/api/web/scheduler) widget.
 
+> Warning! The Kendo UI Scheduler is currently released as a beta. The final API and behavior of the widget may change.
+
 ## Getting Started
 
 Here is how to configure a simple Kendo Scheduler:
@@ -20,16 +22,16 @@ Here is how to configure a simple Kendo Scheduler:
 
 
         public class Projection : ISchedulerEvent
-		{
-	        public string Title { get; set; }
-	        public DateTime Start { get; set; }
-	        public DateTime End { get; set; }
-	        public string Description { get; set; }
-	        public bool IsAllDay { get; set; }
-	        public string Recurrence { get; set; }
-	        public string RecurrenceRule { get; set; }
-	        public string RecurrenceException { get; set; }
-    	}
+        {
+            public string Title { get; set; }
+            public DateTime Start { get; set; }
+            public DateTime End { get; set; }
+            public string Description { get; set; }
+            public bool IsAllDay { get; set; }
+            public string Recurrence { get; set; }
+            public string RecurrenceRule { get; set; }
+            public string RecurrenceException { get; set; }
+        }
 
 
 
@@ -37,7 +39,7 @@ Here is how to configure a simple Kendo Scheduler:
 
         public ActionResult Index()
         {
-            List<Projection> cinemaSchedule = new List<Projection> { 
+            List<Projection> cinemaSchedule = new List<Projection> {
                 new Projection {
                     Title = "Fast and furious 6",
                     Start = new DateTime(2013,6,13,17,00,00),
@@ -60,25 +62,25 @@ Here is how to configure a simple Kendo Scheduler:
     - WebForms
 
             <%= Html.Kendo().Scheduler<KendoUISchedulerDemo.Models.Projection>()
-			        .Name("scheduler")
-			        .Date(new DateTime(2013, 6, 13))
-			        .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
-			        .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
-			        .Editable(false)
-			        .Height(600)
-			        .BindTo(Model)
-			 %>
+                    .Name("scheduler")
+                    .Date(new DateTime(2013, 6, 13))
+                    .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
+                    .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
+                    .Editable(false)
+                    .Height(600)
+                    .BindTo(Model)
+             %>
     - Razor
 
             @(Html.Kendo().Scheduler<KendoUISchedulerDemo.Models.Projection>()
-			        .Name("scheduler")
-			        .Date(new DateTime(2013, 6, 13))
-			        .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
-			        .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
-			        .Editable(false)
-			        .Height(600)
-			        .BindTo(Model)
-			)
+                    .Name("scheduler")
+                    .Date(new DateTime(2013, 6, 13))
+                    .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
+                    .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
+                    .Editable(false)
+                    .Height(600)
+                    .BindTo(Model)
+            )
 
 ## Accessing an Existing Scheduler
 
@@ -88,13 +90,13 @@ Once a reference has been established, you can use the [API](http://docs.kendoui
 
 ### Accessing an existing Scheduler instance
 
-	//Put this after your Kendo Scheduler for ASP.NET MVC declaration
-	<script>
-	    $(function () {
-	        // Notice that the Name() of the scheduler is used to get its client-side instance
-	        var scheduler = $("#scheduler").data("kendoScheduler");
-	    });
-	</script>
+    //Put this after your Kendo Scheduler for ASP.NET MVC declaration
+    <script>
+        $(function () {
+            // Notice that the Name() of the scheduler is used to get its client-side instance
+            var scheduler = $("#scheduler").data("kendoScheduler");
+        });
+    </script>
 
 
 ### Handling Kendo UI Scheduler events
@@ -105,79 +107,79 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/scheduler#even
 
 ### WebForms - subscribe by handler name
 
-	<%=Html.Kendo().Scheduler<KendoUISchedulerDemo.Models.Projection>()
-	        .Name("scheduler")
-	        .Date(new DateTime(2013, 6, 13))
-	        .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
-	        .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
-	        .Editable(false)
-	        .Height(600)
-	        .BindTo(Model)
-	        .Events(e =>
-	        {
-	            e.DataBound("scheduler_dataBound");
-	            e.DataBinding("scheduler_dataBinding");
-	        })
-	 %>
-	
-	 <script>
-	     function scheduler_dataBound(e) {
-	         //Handle the dataBound event
-	     }
-	
-	     function scheduler_dataBinding(e) {
-	         //Handle the dataBinding event
-	     }
-	</script>
+    <%=Html.Kendo().Scheduler<KendoUISchedulerDemo.Models.Projection>()
+            .Name("scheduler")
+            .Date(new DateTime(2013, 6, 13))
+            .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
+            .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
+            .Editable(false)
+            .Height(600)
+            .BindTo(Model)
+            .Events(e =>
+            {
+                e.DataBound("scheduler_dataBound");
+                e.DataBinding("scheduler_dataBinding");
+            })
+     %>
+
+     <script>
+         function scheduler_dataBound(e) {
+             //Handle the dataBound event
+         }
+
+         function scheduler_dataBinding(e) {
+             //Handle the dataBinding event
+         }
+    </script>
 
 
 ### Razor - subscribe by handler name
 
-	@(Html.Kendo().Scheduler<KendoUISchedulerDemo.Models.Projection>()
-	        .Name("scheduler")
-	        .Date(new DateTime(2013, 6, 13))
-	        .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
-	        .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
-	        .Editable(false)
-	        .Height(600)
-	        .BindTo(Model)
-	        .Events(e => {
-	            e.DataBound("scheduler_dataBound");
-	            e.DataBinding("scheduler_dataBinding");
-	        })
-	)
-	
-	<script>
-	    function scheduler_dataBound(e) {
-	        //Handle the dataBound event
-	    }
-	
-	    function scheduler_dataBinding(e) {
-	        //Handle the dataBinding event
-	    }
-	</script>
+    @(Html.Kendo().Scheduler<KendoUISchedulerDemo.Models.Projection>()
+            .Name("scheduler")
+            .Date(new DateTime(2013, 6, 13))
+            .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
+            .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
+            .Editable(false)
+            .Height(600)
+            .BindTo(Model)
+            .Events(e => {
+                e.DataBound("scheduler_dataBound");
+                e.DataBinding("scheduler_dataBinding");
+            })
+    )
+
+    <script>
+        function scheduler_dataBound(e) {
+            //Handle the dataBound event
+        }
+
+        function scheduler_dataBinding(e) {
+            //Handle the dataBinding event
+        }
+    </script>
 
 
 ### Razor - subscribe by template delegate
 
-	@(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Projection>()
-	        .Name("scheduler")
-	        .Date(new DateTime(2013, 6, 13))
-	        .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
-	        .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
-	        .Editable(false)
-	        .Height(600)
-	        .BindTo(Model)
-	        .Events(e => {
-	            e.DataBound(@<text>
-	                function (e) {
-	                    //Handle the dataBound event
-	                }
-	            </text>);
-	            e.DataBinding(@<text>
-	                function (e) {
-	                    //Handle the dataBinding event
-	                }
-	            </text>);
-	        })
-	)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Projection>()
+            .Name("scheduler")
+            .Date(new DateTime(2013, 6, 13))
+            .StartTime(new DateTime(2013, 6, 13, 10, 00, 00))
+            .EndTime(new DateTime(2013, 6, 13, 23, 00, 00))
+            .Editable(false)
+            .Height(600)
+            .BindTo(Model)
+            .Events(e => {
+                e.DataBound(@<text>
+                    function (e) {
+                        //Handle the dataBound event
+                    }
+                </text>);
+                e.DataBinding(@<text>
+                    function (e) {
+                        //Handle the dataBinding event
+                    }
+                </text>);
+            })
+    )

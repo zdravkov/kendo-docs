@@ -8,6 +8,8 @@ publish: true
 
 The Scheduler tag is a server-side wrapper for the [Kendo UI Scheduler](/getting-started/web/scheduler) widget.
 
+> Warning! The Kendo UI Scheduler is currently released as a beta. The final API and behavior of the widget may change.
+
 ## Getting Started
 
 Here is how to configure the Kendo UI Scheduler for displaying and editing scheduler events.

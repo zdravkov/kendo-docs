@@ -15,6 +15,8 @@ can be assigned to a scheduler event.
 
 The scheduler widget allows the user to assign resources via the scheduler event edit form.
 
+> Warning! The Kendo UI Scheduler is currently released as a beta. The final API and behavior of the widget may change.
+
 ## Single instance resource
 
 A single instance resource is a resource of which only one instance can be assigned to a scheduler event. A typical example is a scheduler displaying a list of meetings (scheduler events) which are held in two rooms (resources).
