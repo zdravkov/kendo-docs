@@ -562,6 +562,96 @@ The fields which can be used in the template are:
     });
     </script>
 
+### group `Object`
+
+The configuration of the scheduler resource(s) grouping.
+
+### group.resources `Array`
+
+An array of resource names by which the scheduler events will be grouped.
+
+#### Example - disable delete confirmation
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      group: {
+        resources: ["Rooms"]
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview",
+          roomId: 1 // the event is held in "Small meeting room" whose value is 1
+        },
+        {
+          id: 2,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Meeting",
+          roomId: 2 // the event is held in "Big meeting room" whose value is 2
+        }
+      ],
+      resources: [
+        {
+          field: "roomId",
+          name: "Rooms",
+          dataColorField: "key",
+          dataSource: [
+            { text: "Small meeting room", value: 1, key: "#aabbcc" },
+            { text: "Big meeting room", value: 2, key: "green" }
+          ]
+        }
+      ]
+    });
+    </script>
+
+### group.orientation `String` *(default: "horizontal")*
+
+The orientation of the group headers. Supported values are *horizontal* or *vertical*. Note that the agenda view is always in vertical orientation.
+
+#### Example - disable delete confirmation
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      group: {
+        resources: ["Rooms"],
+        orientation: "vertical"
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview",
+          roomId: 1 // the event is held in "Small meeting room" whose value is 1
+        },
+        {
+          id: 2,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Meeting",
+          roomId: 2 // the event is held in "Big meeting room" whose value is 2
+        }
+      ],
+      resources: [
+        {
+          field: "roomId",
+          name: "Rooms",
+          dataColorField: "key",
+          dataSource: [
+            { text: "Small meeting room", value: 1, key: "#aabbcc" },
+            { text: "Big meeting room", value: 2, key: "green" }
+          ]
+        }
+      ]
+    });
+    </script>
+
+
 ### height `Number|String`
 
 The height of the widget. Numeric values are treated as pixels.
@@ -934,6 +1024,47 @@ By default only one resource instance can be assigned to an event.
       ]
     });
     </script>
+
+### resources.name `String`
+
+Tha name of the resource used to distinguish resource. If not set the value of the [field](#configuration-resources.field) option is used.
+
+#### Example - set the resource title
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview",
+          roomId: 1 // the event is held in "Small meeting room" whose value is 1
+        },
+        {
+          id: 2,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Meeting",
+          roomId: 2 // the event is held in "Big meeting room" whose value is 2
+        }
+      ],
+      resources: [
+        {
+          field: "roomId",
+          title: "Room",
+          name: "Room",
+          dataSource: [
+            { text: "Small meeting room", value: 1 },
+            { text: "Big meeting room", value: 2 }
+          ]
+        }
+      ]
+    });
+    </script>
+
 
 ### resources.title `String`
 
@@ -1608,6 +1739,61 @@ The fields which can be used in the template are:
       ]
     });
     </script>
+
+### view.group `Object`
+
+The configuration of the view resource(s) grouping.
+
+### view.group.orientation `String` *(default: "horizontal")*
+
+The orientation of the group headers. Supported values are *horizontal* or *vertical*. Note that the agenda view is always in vertical orientation.
+
+#### Example - disable delete confirmation
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        {
+            type: "month",
+            group: {
+                orientation: "vertical"
+            }
+        }
+      ],
+      group: {
+        resources: ["Rooms"]
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview",
+          roomId: 1 // the event is held in "Small meeting room" whose value is 1
+        },
+        {
+          id: 2,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Meeting",
+          roomId: 2 // the event is held in "Big meeting room" whose value is 2
+        }
+      ],
+      resources: [
+        {
+          field: "roomId",
+          name: "Rooms",
+          dataColorField: "key",
+          dataSource: [
+            { text: "Small meeting room", value: 1, key: "#aabbcc" },
+            { text: "Big meeting room", value: 2, key: "green" }
+          ]
+        }
+      ]
+    });
+    </script>
+
 
 ### views.majorTick `Number` *(default: 60)*
 
