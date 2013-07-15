@@ -1740,11 +1740,11 @@ The fields which can be used in the template are:
     });
     </script>
 
-### view.group `Object`
+### views.group `Object`
 
 The configuration of the view resource(s) grouping.
 
-### view.group.orientation `String` *(default: "horizontal")*
+### views.group.orientation `String` *(default: "horizontal")*
 
 The orientation of the group headers. Supported values are *horizontal* or *vertical*. Note that the agenda view is always in vertical orientation.
 
