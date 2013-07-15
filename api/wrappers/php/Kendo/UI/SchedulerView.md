@@ -224,6 +224,35 @@ The template used by the agenda view to render the time of the scheduler events.
     $view->eventTimeTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### group
+
+The configuration of the view resource(s) grouping.
+
+#### Returns
+`\Kendo\UI\SchedulerView`
+
+#### Parameters
+
+##### $value `\Kendo\UI\SchedulerViewGroup|array`
+
+
+#### Example - using [\Kendo\UI\SchedulerViewGroup](/api/wrappers/php/Kendo/UI/SchedulerViewGroup)
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $group = new \Kendo\UI\SchedulerViewGroup();
+    $orientation = 'value';
+    $group->orientation($orientation);
+    $view->group($group);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $orientation = 'value';
+    $view->group(array('orientation' => $orientation));
+    ?>
+
 ### majorTick
 The number of minutes represented by a major tick.
 

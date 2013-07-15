@@ -368,6 +368,35 @@ The template used to render the scheduler events.The fields which can be used in
     $scheduler->eventTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### group
+
+The configuration of the scheduler resource(s) grouping.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `\Kendo\UI\SchedulerGroup|array`
+
+
+#### Example - using [\Kendo\UI\SchedulerGroup](/api/wrappers/php/Kendo/UI/SchedulerGroup)
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $group = new \Kendo\UI\SchedulerGroup();
+    $orientation = 'value';
+    $group->orientation($orientation);
+    $scheduler->group($group);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $orientation = 'value';
+    $scheduler->group(array('orientation' => $orientation));
+    ?>
+
 ### height
 The height of the widget. Numeric values are treated as pixels.
 

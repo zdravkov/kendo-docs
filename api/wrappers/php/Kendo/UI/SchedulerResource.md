@@ -130,6 +130,24 @@ By default only one resource instance can be assigned to an event.
     $resource->multiple(true);
     ?>
 
+### name
+Tha name of the resource used to distinguish resource. If not set the value of the field option is used.
+
+#### Returns
+`\Kendo\UI\SchedulerResource`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $resource = new \Kendo\UI\SchedulerResource();
+    $resource->name('value');
+    ?>
+
 ### title
 The user friendly title of the resource displayed in the scheduler edit form. If not set the value of the field option is used.
 
