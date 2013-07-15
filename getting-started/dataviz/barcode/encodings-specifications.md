@@ -87,13 +87,13 @@ Currently the Kendo Barcode widget supports symbologies with the following speci
 		<tr>
            <td><a href="http://en.wikipedia.org/wiki/Universal_Product_Code">UPC-A</a></td>
            <td>numeric [0..9]</td>
-           <td>12 usable digits</td>
+           <td>11 usable digits (first is always 0)</td>
            <td>1 check digit</td>
         </tr>
 		<tr>
            <td><a href="http://en.wikipedia.org/wiki/Universal_Product_Code">UPC-E</a></td>
            <td>numeric [0..9]</td>
-           <td>7 usable digits</td>
+           <td>6 usable digits (first is always 0)</td>
            <td>1 check digit</td>
         </tr>
 		<tr>
