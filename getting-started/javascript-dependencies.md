@@ -90,8 +90,9 @@ can be included on a per-widget basis.
 1.  jquery-1.9.1.js
 1.  kendo.core.js
 1.  kendo.dataviz.core.js
-1.  kendo.dataviz.vml.js
 1.  kendo.dataviz.svg.js
+1.  kendo.dataviz.vml.js
+1.  kendo.dataviz.canvas.js
 1.  kendo.dataviz.barcode.js
 
 ### Calendar
@@ -112,6 +113,7 @@ can be included on a per-widget basis.
 1.  kendo.dataviz.core.js
 1.  kendo.dataviz.vml.js
 1.  kendo.dataviz.svg.js
+1.  kendo.dataviz.canvas.js
 1.  kendo.dataviz.themes.js
 1.  kendo.dataviz.chart.js
 1.  kendo.dataviz.chart.polar.js
@@ -244,6 +246,7 @@ can be included on a per-widget basis.
 1.  kendo.dataviz.core.js
 1.  kendo.dataviz.vml.js
 1.  kendo.dataviz.svg.js
+1.  kendo.dataviz.canvas.js
 1.  kendo.dataviz.gauge.js
 
 
@@ -335,6 +338,7 @@ can be included on a per-widget basis.
 1.  kendo.dataviz.core.js
 1.  kendo.dataviz.vml.js
 1.  kendo.dataviz.svg.js
+1.  kendo.dataviz.canvas.js
 1.  kendo.dataviz.qrcode.js
 
 ### Slider and RangeSlider
@@ -367,6 +371,7 @@ can be included on a per-widget basis.
 1.  kendo.dataviz.core.js
 1.  kendo.dataviz.vml.js
 1.  kendo.dataviz.svg.js
+1.  kendo.dataviz.canvas.js
 1.  kendo.dataviz.themes.js
 1.  kendo.dataviz.chart.js
 1.  kendo.dataviz.sparkline.js
@@ -383,6 +388,7 @@ can be included on a per-widget basis.
 1.  kendo.dataviz.core.js
 1.  kendo.dataviz.vml.js
 1.  kendo.dataviz.svg.js
+1.  kendo.dataviz.canvas.js
 1.  kendo.dataviz.themes.js
 1.  kendo.dataviz.chart.js
 1.  kendo.dataviz.stock.js
