@@ -12,10 +12,12 @@ This page provides solutions for common problems you may encounter while working
 
 ## JavaScript error that jQuery is unavailable or undefined
 
-If jQuery is not included (or is included after the Kendo JavaScript files) the Kendo UI widgets will not function as expected.
+If jQuery is not included, or is included after the Kendo UI JavaScript files, or is included after Kendo UI widget declarations, the Kendo UI widgets will not function as expected.
 Check the [Kendo UI troubleshooting help topic](/getting-started/troubleshooting#javascript-error-that-jquery-is-unavailable-or-undefined) for more symptoms.
 
-Make sure that jQuery is included **before** the Kendo JavaScript files. If using ASP.NET bundles move the `Scripts.Render("~/bundles/jquery")` block **before** the Kendo JavaScript files.
+Make sure that jQuery is included **before** the Kendo UI JavaScript files, and before any Kendo UI widget declarations,
+unless [deferred initialization](/getting-started/using-kendo-with/aspnet-mvc/introduction#deferring-kendo-ui-initialization-scripts) is used.
+If using ASP.NET bundles move the `Scripts.Render("~/bundles/jquery")` block **before** the Kendo JavaScript files.
 
 ## JavaScript error that Kendo widgets are unavailable or undefined
 

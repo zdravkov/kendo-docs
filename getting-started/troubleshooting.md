@@ -21,14 +21,14 @@ Fortunately there are [browser developer tools](http://javascript.info/tutorial/
 
 ### JavaScript error that jQuery is unavailable or undefined
 
-If jQuery is not included (or is included after the Kendo JavaScript files) the Kendo UI widgets will not function as expected.
+If jQuery is not included, or is included after the Kendo UI JavaScript files, or is included after Kendo UI widget initialization statements, the Kendo UI widgets will not function as expected.
 The following JavaScript errors will be thrown (depending on the browser):
 
 * ReferenceError: jQuery is not defined (in Google Chrome and FireFox)
 * 'jQuery' is undefined (in Internet Explorer)
 
 #### Solution
-Make sure that jQuery is included **before** the Kendo JavaScript files.
+Make sure that jQuery is included **before** the Kendo UI JavaScript files and before any Javascript statements that depend on it.
 
 ### JavaScript error that Kendo widgets are unavailable or undefined
 
