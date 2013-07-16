@@ -17,7 +17,7 @@ the needed CSS stylesheet.
 
 ## Changing Flat skin active color
 
-The Flat skin shipped with Kendo UI Mobile Q2 2013, was created to be look good and to provide maximum performance. The active color of the skin is also easily changed with several CSS rules.
+The Flat skin shipped with Kendo UI Mobile Q2 2013, was created to provide maximum performance. Also the active color of the skin can be easily changed with several CSS rules.
 
 ### Change the Flat skin active background to blue
 
