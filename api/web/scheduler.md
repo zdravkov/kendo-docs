@@ -1147,6 +1147,10 @@ By default the scheduler expects that field to contain a primitive value (string
     });
     </script>
 
+### selectable `Boolean` *(default: false)*
+
+If set to true the user would be able to select scheduler cells and events. By default selection is disabled.
+
 ### startTime `Date`
 
 The start time of the week and day views. The scheduler will display events starting after the `startTime`.
