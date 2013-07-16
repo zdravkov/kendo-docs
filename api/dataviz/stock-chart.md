@@ -1899,6 +1899,15 @@ A value indicating if the tooltip should be displayed.
 
 The category axis notes configuration.
 
+### categoryAxis.notes.position `String`
+
+The position of the category axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### categoryAxis.notes.icon `Object`
 
 The icon of the notes.
@@ -2444,9 +2453,18 @@ The line length of the notes.
 
 The items of the notes.
 
-### categoryAxis.notes.data.value `Number`
+### categoryAxis.notes.data.value `Object`
 
 The value of the note.
+
+### categoryAxis.notes.data.position `String`
+
+The position of the category axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
 
 ### categoryAxis.notes.data.icon `Object`
 
@@ -4670,6 +4688,15 @@ The series notes configuration.
 
 The icon of the notes.
 
+### series.notes.position `String`
+
+The position of the series note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### series.notes.icon.background `String`
 
 The background color of the notes icon.
@@ -6602,6 +6629,15 @@ A value indicating if the tooltip should be displayed.
 
 The value axis notes configuration.
 
+### valueAxis.notes.position `String`
+
+The position of the value axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### valueAxis.notes.icon `Object`
 
 The icon of the notes.
@@ -7147,9 +7183,18 @@ The line length of the notes.
 
 The items of the notes.
 
-### valueAxis.notes.data.value `Number`
+### valueAxis.notes.data.value `Object`
 
 The value of the note.
+
+### valueAxis.notes.data.position `String`
+
+The position of the value axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
 
 ### valueAxis.notes.data.icon `Object`
 

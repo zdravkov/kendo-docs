@@ -3559,6 +3559,15 @@ The category axis notes configuration.
 
 The icon of the notes.
 
+### categoryAxis.notes.position `String`
+
+The position of the category axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### categoryAxis.notes.icon.background `String`
 
 The background color of the notes icon.
@@ -4100,9 +4109,18 @@ The line length of the notes.
 
 The items of the notes.
 
-### categoryAxis.notes.data.value `Number`
+### categoryAxis.notes.data.value `Object`
 
 The value of the note.
+
+### categoryAxis.notes.data.position `String` *(default: "inside")*
+
+The position of the category axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
 
 ### categoryAxis.notes.data.icon `Object`
 
@@ -10625,6 +10643,15 @@ The data item field containing the Y value.
 
 The series notes configuration.
 
+### series.notes.position `String`
+
+The position of the series note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### series.notes.icon `Object`
 
 The icon of the notes.
@@ -17026,6 +17053,15 @@ If set to `true` the chart will display the value axis. By default the value axi
 
 The value axis notes configuration.
 
+### valueAxis.notes.position `String`
+
+The position of the value axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### valueAxis.notes.icon `Object`
 
 The icon of the notes.
@@ -17571,9 +17607,18 @@ The line length of the notes.
 
 The items of the notes.
 
-### valueAxis.notes.data.value `Number`
+### valueAxis.notes.data.value `Object`
 
 The value of the note.
+
+### valueAxis.notes.data.position `String`
+
+The position of the value axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
 
 ### valueAxis.notes.data.icon `Object`
 
@@ -21003,6 +21048,15 @@ If set to `true` the chart will display the x axis. By default the x axis is vis
 
 The x axis notes configuration.
 
+### xAxis.notes.position `String`
+
+The position of the x axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### xAxis.notes.icon `Object`
 
 The icon of the notes.
@@ -21548,9 +21602,18 @@ The line length of the notes.
 
 The items of the notes.
 
-### xAxis.notes.data.value `Number`
+### xAxis.notes.data.value `Object`
 
 The value of the note.
+
+### xAxis.notes.data.position `String`
+
+The position of the x axis note.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
 
 ### xAxis.notes.data.icon `Object`
 
@@ -24974,6 +25037,15 @@ If set to `true` the chart will display the y axis. By default the y axis is vis
 
 The y axis notes configuration.
 
+### yAxis.notes.position `String`
+
+The position of the y axis notes.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
+
 ### yAxis.notes.icon `Object`
 
 The icon of the notes.
@@ -25519,9 +25591,18 @@ The line length of the notes.
 
 The items of the notes.
 
-### yAxis.notes.data.value `Number`
+### yAxis.notes.data.value `Object`
 
 The value of the note.
+
+### yAxis.notes.data.position `String`
+
+The position of the y axis notes.
+
+* "top" - The note is positioned on the top.
+* "bottom" - The note is positioned on the bottom.
+* "left" - The note is positioned on the left.
+* "right" - The note is positioned on the right.
 
 ### yAxis.notes.data.icon `Object`
 
