@@ -615,6 +615,24 @@ For additional information check the [save](/api/web/scheduler#events-save) even
     $scheduler->save(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### selectable
+If set to true the user would be able to select scheduler cells and events. By default selection is disabled.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->selectable(true);
+    ?>
+
 ### startTime
 The start time of the week and day views. The scheduler will display events starting after the startTime.
 
