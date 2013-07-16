@@ -1,16 +1,20 @@
 ---
-title: Encoding Specifications
+title: Encodings
 meta_title: Specific characteristics of the different symbologies of the Barcode widget
 meta_description: Check information about the character set, length and check digit of the Barcode symbologies.
-slug: encodings-specifications
+slug: encodings
 publish: true
+ordinal:2
 ---
 
 ## What is Encoding/Symbology?
 
-The mapping between messages and barcodes is called a symbology (encoding). The specification of a symbology includes the encoding of the single digits/characters of the message as well as the start and stop markers into bars and space, the size of the quiet zone required to be before and after the barcode as well as the computation of a checksum.
+The mapping between messages and barcodes is called a symbology (encoding). 
+The specification of a symbology includes the encoding of the single digits/characters of the message 
+as well as the start and stop markers into bars and space, 
+the size of the quiet zone required to be before and after the barcode as well as the computation of a checksum.
 
-Currently the Kendo Barcode widget supports symbologies with the following specifications:
+Currently the Kendo Barcode widget supports the following symbologies with the their specifications:
 
 <style scoped>
     .stripes
@@ -38,7 +42,7 @@ Currently the Kendo Barcode widget supports symbologies with the following speci
     }
 </style>
 
-## Encodings Specifications
+> Error will be thrown if the value provided for a particular encoding does not meet the expected length or character set.
 
 <table class="stripes" style="margin-top: 1.2em;">
    <tbody>
@@ -116,19 +120,19 @@ Currently the Kendo Barcode widget supports symbologies with the following speci
         </tr>			
 		<tr>
            <td><a href="https://en.wikipedia.org/wiki/Code_128">Code128A</a></td>
-           <td>ASCII 00 to 95 (0-9, A-Z and control codes), special characters, and FNC 1-4</td>
+           <td>ASCII 00 to 95 (0-9, A-Z and control codes), special characters</td>
            <td>variable</td>
            <td>1 check digit</td>
         </tr>
 		<tr>
            <td><a href="https://en.wikipedia.org/wiki/Code_128">Code128B</a></td>
-           <td>ASCII 32 to 127 (0-9, A-Z, a-z), special characters, and FNC 1-4</td>
+           <td>ASCII 32 to 127 (0-9, A-Z, a-z), special characters</td>
            <td>variable</td>
            <td>1 check digit</td>
         </tr>
 		<tr>
            <td><a href="https://en.wikipedia.org/wiki/Code_128">Code128C</a></td>
-           <td>ASCII 00-99 (encodes each two digits with one code) and FNC1</td>
+           <td>ASCII 00-99 (encodes each two digits with one code)</td>
            <td>variable</td>
            <td>1 check digit</td>
         </tr>
@@ -163,6 +167,4 @@ Currently the Kendo Barcode widget supports symbologies with the following speci
            <td>1 check digit</td>
         </tr>
     </tbody>
-</table>
-
-
+</table> 
