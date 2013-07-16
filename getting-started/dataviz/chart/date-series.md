@@ -15,10 +15,10 @@ publish: true
 
     * [Category binding](#category-binding)
     * [Date grouping](#date-grouping)
+    * [Aggregates](#aggregates)
     * [Base units](#base-units)
 
-* [Scatter date series](#binding-to-a-data-source)
-    * [Base units](#base-units)
+* [Scatter date series](#scatter-date-series)
 
 ## Categorical date series
 
@@ -29,8 +29,9 @@ Categorical series have built-in support for displaying dates. This includes:
 * Grouping of categories into base units and series aggregates
 
 Specifying categories of type Date will switch the axis to date mode.
+
 The automatic mode selection can be overriden by setting
-[categoryAxis.type](/api/dataviz/chart#categoryAxis.type) to "Date".
+[categoryAxis.type](/api/dataviz/chart#configuration-categoryAxis.type) to "Date".
 
 ### Category binding
 
@@ -77,13 +78,30 @@ then they'll be aggregated to display a single value.
     });
     </script>
 
-Produces the following chart. Note that values are displayed as-is:
+Note that the dates match the source:
 
 ![Chart with date category axis](chart-category-date-axis.png)
 
-Now change the base unit to "years":
-
 #### Example: Date series with grouping by year
+
+    <div id="chart" style="width: 350px; height: 250px;"></div>
+    <script>
+    var seriesData = [{
+        date: new Date("2011/12/30"),
+        value: 20
+    }, {
+        date: new Date("2011/12/31"),
+        value: 40
+    }, {
+        date: new Date("2012/01/01"),
+        value: 45
+    }, {
+        date: new Date("2012/01/02"),
+        value: 30
+    }, {
+        date: new Date("2012/01/03"),
+        value: 50
+    }];
 
     $("#chart").kendoChart({
         dataSource: {
@@ -98,14 +116,44 @@ Now change the base unit to "years":
             baseUnit: "years"
         }
     });
+    </script>
 
 Notice how the chart now displayes the maximum value for each year:
 
 ![Chart with grouped date category axis](chart-category-date-axis-grouped.png)
 
-The aggregate function can be changed for each series:
+### Aggregates
 
-#### Example: Date series with "sum" aggregate
+The aggregate type can be set for each series. Available options are:
+
+* min
+* max (default)
+* count
+* sum
+* avg
+* first
+* function (values, series) (Custom aggregate)
+
+#### Example: Date grouping with "sum" aggregate
+
+    <div id="chart" style="width: 350px; height: 250px;"></div>
+    <script>
+    var seriesData = [{
+        date: new Date("2011/12/30"),
+        value: 20
+    }, {
+        date: new Date("2011/12/31"),
+        value: 40
+    }, {
+        date: new Date("2012/01/01"),
+        value: 45
+    }, {
+        date: new Date("2012/01/02"),
+        value: 30
+    }, {
+        date: new Date("2012/01/03"),
+        value: 50
+    }];
 
     $("#chart").kendoChart({
         dataSource: {
@@ -121,16 +169,7 @@ The aggregate function can be changed for each series:
             baseUnit: "years"
         }
     });
-
-Available options are:
-
-* min
-* max (default)
-* count
-* sum
-* avg
-* first
-* function (values, series) (Custom aggregate)
+    </script>
 
 ### Base units
 
@@ -157,7 +196,7 @@ Valid options are:
 * weeks
 * months
 * years
-* fit (see below)
+* fit (see [Automatic fitting](#automatic-fitting))
 
 You can also choose to show every n-th base unit by setting the
 [baseUnitStep](/api/dataviz/chart#configuration-categoryAxis.baseUnitStep)
