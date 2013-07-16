@@ -12,7 +12,7 @@ A JSP wrapper for Kendo UI [Tooltip](/api/web/tooltip).
 
 ### autoHide `boolean`
 
-Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip.
+Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
 
 #### Example
     <kendo:tooltip autoHide="autoHide">

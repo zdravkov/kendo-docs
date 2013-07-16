@@ -51,7 +51,7 @@ Options or URL for remote image retrieval. Further configuration is available vi
 ### thumbnailUrl `String`
 
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
-If function is assign, the current path and image name will be provided.
+If function is assigned, the current path and image name will be provided.
 
 #### Example
     <kendo:editor-imageBrowser-transport thumbnailUrl="thumbnailUrl">
@@ -110,7 +110,7 @@ More documentation is available at [kendo:editor-imageBrowser-transport-read](ed
 ### thumbnailUrl `String`
 
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
-If function is assign, the current path and image name will be provided.
+If function is assigned, the current path and image name will be provided.
 
 
 #### Example
@@ -141,7 +141,7 @@ The URL responsible for serving the original image. A file name placeholder shou
 ### kendo:editor-imageBrowser-transport-thumbnailUrl
 
 The URL for retrieving the thumbnail version of the image. If not specified a default image icon will be shown.
-If function is assign, the current path and image name will be provided.
+If function is assigned, the current path and image name will be provided.
 
 
 #### Example

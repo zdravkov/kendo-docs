@@ -147,6 +147,18 @@ More documentation is available at [kendo:scheduler-editable](scheduler/editable
         <kendo:scheduler-editable></kendo:scheduler-editable>
     </kendo:scheduler>
 
+### kendo:scheduler-group
+
+The configuration of the scheduler resource(s) grouping.
+
+More documentation is available at [kendo:scheduler-group](scheduler/group).
+
+#### Example
+
+    <kendo:scheduler>
+        <kendo:scheduler-group></kendo:scheduler-group>
+    </kendo:scheduler>
+
 ### kendo:scheduler-resources
 
 The configuration of the scheduler resource(s). A scheduler resource is optional metadata that can be associated

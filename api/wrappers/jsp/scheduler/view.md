@@ -176,6 +176,18 @@ More documentation is available at [kendo:scheduler-view-editable](scheduler/vie
         <kendo:scheduler-view-editable></kendo:scheduler-view-editable>
     </kendo:scheduler-view>
 
+### kendo:scheduler-view-group
+
+The configuration of the view resource(s) grouping.
+
+More documentation is available at [kendo:scheduler-view-group](scheduler/view-group).
+
+#### Example
+
+    <kendo:scheduler-view>
+        <kendo:scheduler-view-group></kendo:scheduler-view-group>
+    </kendo:scheduler-view>
+
 
 ## Event Attributes
 

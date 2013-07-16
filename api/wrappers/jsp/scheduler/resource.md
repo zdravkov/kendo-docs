@@ -58,6 +58,14 @@ By default only one resource instance can be assigned to an event.
     <kendo:scheduler-resource multiple="multiple">
     </kendo:scheduler-resource>
 
+### name `String`
+
+Tha name of the resource used to distinguish resource. If not set the value of the field option is used.
+
+#### Example
+    <kendo:scheduler-resource name="name">
+    </kendo:scheduler-resource>
+
 ### title `String`
 
 The user friendly title of the resource displayed in the scheduler edit form. If not set the value of the field option is used.
