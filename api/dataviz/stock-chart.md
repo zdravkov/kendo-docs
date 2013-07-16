@@ -1895,6 +1895,1167 @@ Template variables:
 
 A value indicating if the tooltip should be displayed.
 
+### categoryAxis.notes `Object`
+
+The category axis notes configuration.
+
+### categoryAxis.notes.icon `Object`
+
+The icon of the notes.
+
+### categoryAxis.notes.icon.background `String`
+
+The background color of the notes icon.
+
+#### Example - set the category axis notes icon background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          icon: {
+            background: "red"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.icon.border `Object`
+
+The border of the icon.
+
+#### Example - set the category axis notes icon border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.icon.border.color `String`
+
+The border color of the icon.
+
+#### Example - set the category axis notes icon border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.icon.border.width `Number`
+
+The border width of the icon.
+
+#### Example - set the category axis notes icon border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.icon.size `Number`
+
+The size of the icon.
+
+#### Example - set the category axis notes icon size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          icon: {
+            size: 30
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.icon.type `String` *(default: "circle")*
+
+The icon shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
+#### Example - set the category axis notes icon shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          icon: {
+            shape: "triangle"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.icon.visible `Boolean` *(default: "true")*
+
+The icon visibility.
+
+#### Example - set the category axis notes icon visibility
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          icon: {
+            visible: false
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label `Object`
+
+The label of the notes.
+
+### categoryAxis.notes.label.background `String`
+
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the category axis label background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            background: "red"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.border `Object`
+
+The border of the label.
+
+#### Example - set the category axis label border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            border: {
+              color: "green",
+              dashType: "dashDot",
+              width: 1
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the category axis label border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            border: {
+              color: "green"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - set the category axis label border dash type
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            border: {
+              dashType: "dashDot",
+              width: 1
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the category axis label border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            border: {
+              width: 1
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.color `String`
+
+The text color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the category axis label color as a hex string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            color: "#aa00bb"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the label.
+
+#### Example - set the chart series label font
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            font: "20px sans-serif"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* value - the category value
+
+#### Example - set the category axis notes label template as a string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            template: "Year: #: value #"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.visible `Boolean` *(default: true)*
+
+If set to `true` the chart will display the category notes label. By default the category notes label are visible.
+
+#### Example - hide the category axis notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            visible: false
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.rotation `Number` *(default: 0)*
+
+The rotation angle of the label. By default the label are not rotated.
+
+#### Example - rotate the category axis notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            rotation: 90
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.format `String` *(default: "{0}")*
+
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+
+#### Example - set the category axis notes label format
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          label: {
+            format: "Category slot: {0}"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.label.position `String` *(default: "inside")*
+
+The position of the labels.
+
+* "inside" - the label is positioned inside of the icon.
+* "outside" - the label is positioned outside of the icon.
+
+### categoryAxis.notes.line `Object`
+
+The line of the notes.
+
+### categoryAxis.notes.line.width `Number`
+
+The line width of the notes.
+
+#### Example - set the category axis notes line width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          line: {
+            width: 4
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.line.color `String`
+
+The line color of the notes.
+
+#### Example - set the category axis notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          line: {
+            color: "#aa00bb"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.line.length `Number`
+
+The line length of the notes.
+
+#### Example - set the category axis notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          line: {
+            length: 20
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data `Array`
+
+The items of the notes.
+
+### categoryAxis.notes.data.value `Number`
+
+The value of the note.
+
+### categoryAxis.notes.data.icon `Object`
+
+The icon of the note.
+
+### categoryAxis.notes.data.icon.background `String`
+
+The background color of the note icon.
+
+#### Example - set the category axis note icon background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              background: "red"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.icon.border `Object`
+
+The border of the icon.
+
+#### Example - set the category axis note icon border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              border: {
+                width: 2,
+                color: "red"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.icon.border.color `String`
+
+The border color of the icon.
+
+#### Example - set the category axis note icon border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              border: {
+                width: 2,
+                color: "red"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.icon.border.width `Number`
+
+The border width of the icon.
+
+#### Example - set the category axis note icon border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              border: {
+                width: 2,
+                color: "red"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.icon.size `Number`
+
+The size of the icon.
+
+#### Example - set the category axis note icon size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              size: 30
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.icon.type `String` *(default: "circle")*
+
+The icon shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
+#### Example - set the category axis note icon shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              shape: "triangle"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.icon.visible `Boolean` *(default: "true")*
+
+The icon visibility.
+
+#### Example - set the category axis note icon visibility
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              visible: false
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label `Object`
+
+The label of the note.
+
+### categoryAxis.notes.data.label.background `String`
+
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the category axis note label background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notesdata {
+          data: [{
+            value: 1,
+            label: {
+              background: "red"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.border `Object`
+
+The border of the label.
+
+#### Example - set the category axis note label border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                color: "green",
+                dashType: "dashDot",
+                width: 1
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the category axis note label border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                color: "green"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - set the category axis note label border dash type
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                dashType: "dashDot",
+                width: 1
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the category axis note label border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                width: 1
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.color `String`
+
+The text color of the note label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the category axis note label color as a hex string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              color: "#aa00bb"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the note label.
+
+#### Example - set the category axis note label font
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              font: "20px sans-serif"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* value - the category value
+
+#### Example - set the category axis note label template as a string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              template: "Year: #: value #"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.visible `Boolean` *(default: true)*
+
+If set to `true` the chart will display the category notes label. By default the category notes label are visible.
+
+#### Example - hide the category axis note label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              visible: false
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.rotation `Number` *(default: 0)*
+
+The rotation angle of the label. By default the label are not rotated.
+
+#### Example - rotate the category axis note label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              rotation: 90
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.format `String` *(default: "{0}")*
+
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+
+#### Example - set the category axis note label format
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              format: "Category slot: {0}"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.text `String`
+
+The label note text.
+
+#### Example - set the category axis label note text
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              text: "A"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.label.position `String` *(default: "inside")*
+
+The position of the category axis note label.
+
+* "inside" - the label is positioned inside of the icon.
+* "outside" - the label is positioned outside of the icon.
+
+### categoryAxis.notes.data.line `Object`
+
+The line of the note.
+
+### categoryAxis.notes.data.line.width `Number`
+
+The line width of the note.
+
+#### Example - set the category axis note line width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            line: {
+              width: 4
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.line.color `String`
+
+The line color of the note.
+
+#### Example - set the category axis note color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            line: {
+              color: "#aa00bb"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### categoryAxis.notes.data.line.length `Number`
+
+The line length of the note.
+
+#### Example - set the category axis note color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      categoryAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            line: {
+              length: 20
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
 ### chartArea `Object`
 
 The chart area configuration options.
@@ -3501,6 +4662,635 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 The width of the border.
 
+### series.notes `Object`
+
+The series notes configuration.
+
+### series.notes.icon `Object`
+
+The icon of the notes.
+
+### series.notes.icon.background `String`
+
+The background color of the notes icon.
+
+#### Example - set the series notes icon background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          icon: {
+            background: "red"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.icon.border `Object`
+
+The border of the icon.
+
+#### Example - set the series notes icon border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.icon.border.color `String`
+
+The border color of the icon.
+
+#### Example - set the series notes icon border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.icon.border.width `Number`
+
+The border width of the icon.
+
+#### Example - set the series notes icon border width
+
+   <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.icon.size `Number`
+
+The size of the icon.
+
+#### Example - set the series notes icon size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          icon: {
+            size: 30
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.icon.type `String` *(default: "circle")*
+
+The icon shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
+#### Example - set the series notes icon shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          icon: {
+            shape: "triangle"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.icon.visible `Boolean` *(default: "true")*
+
+The icon visibility.
+
+#### Example - set the series notes icon visibility
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          icon: {
+            visible: false
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label `Object`
+
+The label of the notes.
+
+### series.notes.label.background `String`
+
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the series label background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            background: "red"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.border `Object`
+
+The border of the label.
+
+#### Example - set the series label border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            border: {
+              color: "green",
+              dashType: "dashDot",
+              width: 1
+            }
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the series label border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            border: {
+              color: "green"
+            }
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - set the series label border dash type
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            border: {
+              dashType: "dashDot",
+              width: 1
+            }
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the series label border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            border: {
+              width: 1
+            }
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.color `String`
+
+The text color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the series label color as a hex string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            color: "#aa00bb"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the label.
+
+#### Example - set the chart series notes label font
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            font: "20px sans-serif"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* value - the point value
+
+#### Example - set the series notes label template as a string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            template: "Year: #: value #"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.visible `Boolean` *(default: true)*
+
+If set to `true` the chart will display the series notes label. By default the series notes label are visible.
+
+#### Example - hide the series notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            visible: false
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.rotation `Number` *(default: 0)*
+
+The rotation angle of the label. By default the label are not rotated.
+
+#### Example - rotate the series notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            rotation: 90
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.format `String` *(default: "{0}")*
+
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+
+#### Example - set the series notes label format
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          label: {
+            format: "value slot: {0}"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.label.position `String` *(default: "inside")*
+
+The position of the labels.
+
+* "inside" - the label is positioned inside of the icon.
+* "outside" - the label is positioned outside of the icon.
+
+### series.notes.line `Object`
+
+The line of the notes.
+
+### series.notes.line.width `Number`
+
+The line width of the notes.
+
+#### Example - set the value axis notes line width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          line: {
+            width: 4
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.line.color `String`
+
+The line color of the notes.
+
+#### Example - set the series notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          line: {
+            color: "#aa00bb"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.notes.line.length `Number`
+
+The line length of the notes.
+
+#### Example - set the series notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          value: 1,
+          noteText: "A"
+        }]
+      },
+      series: [{
+        field: "value",
+        noteTextField: "noteText",
+        notes: {
+          line: {
+            length: 20
+          }
+        }
+      }]
+    });
+    </script>
+
 ### seriesColors `Array`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
@@ -4807,6 +6597,1167 @@ Template variables:
 ### valueAxis.crosshair.tooltip.visible `Boolean`*(default: false)*
 
 A value indicating if the tooltip should be displayed.
+
+### valueAxis.notes `Object`
+
+The value axis notes configuration.
+
+### valueAxis.notes.icon `Object`
+
+The icon of the notes.
+
+### valueAxis.notes.icon.background `String`
+
+The background color of the notes icon.
+
+#### Example - set the value axis notes icon background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          icon: {
+            background: "red"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.icon.border `Object`
+
+The border of the icon.
+
+#### Example - set the value axis notes icon border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.icon.border.color `String`
+
+The border color of the icon.
+
+#### Example - set the value axis notes icon border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.icon.border.width `Number`
+
+The border width of the icon.
+
+#### Example - set the value axis notes icon border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          icon: {
+            border: {
+              width: 2,
+              color: "red"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.icon.size `Number`
+
+The size of the icon.
+
+#### Example - set the value axis notes icon size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          icon: {
+            size: 30
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.icon.type `String` *(default: "circle")*
+
+The icon shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
+#### Example - set the value axis notes icon shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          icon: {
+            shape: "triangle"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.icon.visible `Boolean` *(default: "true")*
+
+The icon visibility.
+
+#### Example - set the value axis notes icon visibility
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          icon: {
+            visible: false
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label `Object`
+
+The label of the notes.
+
+### valueAxis.notes.label.background `String`
+
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the value axis label background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            background: "red"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.border `Object`
+
+The border of the label.
+
+#### Example - set the value axis label border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            border: {
+              color: "green",
+              dashType: "dashDot",
+              width: 1
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the value axis label border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            border: {
+              color: "green"
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - set the value axis label border dash type
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            border: {
+              dashType: "dashDot",
+              width: 1
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the value axis label border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            border: {
+              width: 1
+            }
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.color `String`
+
+The text color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the value axis label color as a hex string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            color: "#aa00bb"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the label.
+
+#### Example - set the chart series label font
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            font: "20px sans-serif"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* value - the value value
+
+#### Example - set the value axis notes label template as a string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            template: "Year: #: value #"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.visible `Boolean` *(default: true)*
+
+If set to `true` the chart will display the value axis notes label. By default the value axis notes label are visible.
+
+#### Example - hide the value axis notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            visible: false
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.rotation `Number` *(default: 0)*
+
+The rotation angle of the label. By default the label are not rotated.
+
+#### Example - rotate the value axis notes label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            rotation: 90
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.format `String` *(default: "{0}")*
+
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+
+#### Example - set the value axis notes label format
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          label: {
+            format: "value slot: {0}"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.label.position `String` *(default: "inside")*
+
+The position of the labels.
+
+* "inside" - the label is positioned inside of the icon.
+* "outside" - the label is positioned outside of the icon.
+
+### valueAxis.notes.line `Object`
+
+The line of the notes.
+
+### valueAxis.notes.line.width `Number`
+
+The line width of the notes.
+
+#### Example - set the value axis notes line width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          line: {
+            width: 4
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.line.color `String`
+
+The line color of the notes.
+
+#### Example - set the value axis notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          line: {
+            color: "#aa00bb"
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.line.length `Number`
+
+The line length of the notes.
+
+#### Example - set the value axis notes color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          line: {
+            length: 20
+          },
+          data: [{ value: 1 }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data `Array`
+
+The items of the notes.
+
+### valueAxis.notes.data.value `Number`
+
+The value of the note.
+
+### valueAxis.notes.data.icon `Object`
+
+The icon of the note.
+
+### valueAxis.notes.data.icon.background `String`
+
+The background color of the note icon.
+
+#### Example - set the value axis note icon background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              background: "red"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.icon.border `Object`
+
+The border of the icon.
+
+#### Example - set the value axis note icon border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              border: {
+                width: 2,
+                color: "red"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.icon.border.color `String`
+
+The border color of the icon.
+
+#### Example - set the value axis note icon border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              border: {
+                width: 2,
+                color: "red"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.icon.border.width `Number`
+
+The border width of the icon.
+
+#### Example - set the value axis note icon border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              border: {
+                width: 2,
+                color: "red"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.icon.size `Number`
+
+The size of the icon.
+
+#### Example - set the value axis note icon size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              size: 30
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.icon.type `String` *(default: "circle")*
+
+The icon shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+
+#### Example - set the value axis note icon shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              shape: "triangle"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.icon.visible `Boolean` *(default: "true")*
+
+The icon visibility.
+
+#### Example - set the value axis note icon visibility
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            icon: {
+              visible: false
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label `Object`
+
+The label of the note.
+
+### valueAxis.notes.data.label.background `String`
+
+The background color of the label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the value axis note label background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notesdata {
+          data: [{
+            value: 1,
+            label: {
+              background: "red"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.border `Object`
+
+The border of the label.
+
+#### Example - set the value axis note label border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                color: "green",
+                dashType: "dashDot",
+                width: 1
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the value axis note label border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                color: "green"
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - set the value axis note label border dash type
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                dashType: "dashDot",
+                width: 1
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the value axis note label border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              border: {
+                width: 1
+              }
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.color `String`
+
+The text color of the note label. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the value axis note label color as a hex string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              color: "#aa00bb"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the note label.
+
+#### Example - set the value axis note label font
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              font: "20px sans-serif"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* value - the axis value
+
+#### Example - set the value axis note label template as a string
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              template: "Year: #: value #"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.visible `Boolean` *(default: true)*
+
+If set to `true` the chart will display the value axis notes label. By default the value axis notes label are visible.
+
+#### Example - hide the value axis note label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              visible: false
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.rotation `Number` *(default: 0)*
+
+The rotation angle of the label. By default the label are not rotated.
+
+#### Example - rotate the value axis note label
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              rotation: 90
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.format `String` *(default: "{0}")*
+
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+
+#### Example - set the value axis note label format
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              format: "value slot: {0}"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.text `String`
+
+The label note text.
+
+#### Example - set the value axis label note text
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            label: {
+              text: "A"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.label.position `String` *(default: "inside")*
+
+The position of the value axis note label.
+
+* "inside" - the label is positioned inside of the icon.
+* "outside" - the label is positioned outside of the icon.
+
+### valueAxis.notes.data.line `Object`
+
+The line of the note.
+
+### valueAxis.notes.data.line.width `Number`
+
+The line width of the note.
+
+#### Example - set the value axis note line width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            line: {
+              width: 4
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.line.color `String`
+
+The line color of the note.
+
+#### Example - set the value axis note color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            line: {
+              color: "#aa00bb"
+            }
+          }]
+        }
+      }
+    });
+    </script>
+
+### valueAxis.notes.data.line.length `Number`
+
+The line length of the note.
+
+#### Example - set the value axis note color width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [1, 2, 3]
+      }],
+      valueAxis: {
+        notes: {
+          data: [{
+            value: 1,
+            line: {
+              length: 20
+            }
+          }]
+        }
+      }
+    });
+    </script>
 
 ## Methods
 
