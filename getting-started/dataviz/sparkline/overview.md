@@ -101,6 +101,8 @@ While category names are not visible (by default), they will be displayed in too
 
 Use the categoryAxis object to set the category names:
 
+    <span id="sparkline"></span>
+    <script>
     $("#sparkline").kendoSparkline({
         series: [{
             name: "World",
@@ -110,9 +112,12 @@ Use the categoryAxis object to set the category names:
             categories: [2005, 2006, 2007, 2008, 2009]
         }
     });
+    <script>
 
 The category name can also be bound to a field of the data item:
 
+    <span id="sparkline"></span>
+    <script>
     var internetUsers = [ {
         "country": "United States",
         "year": "2005",
@@ -135,6 +140,7 @@ The category name can also be bound to a field of the data item:
             field: "year"
         }
     });
+    </script>
 
 #### Displaying Dates
 
@@ -177,6 +183,8 @@ values are aggregated to display a single point.
 
 For example:
 
+    <span id="sparkline"></span>
+    <script>
     $("#sparkline").kendoSparkline({
         series: [{
             type: "column",
@@ -192,6 +200,7 @@ For example:
             ]
         }
     });
+    </script>
 
 Produces the following sparkline. Note that values are displayed as-is:
 
@@ -200,7 +209,14 @@ Produces the following sparkline. Note that values are displayed as-is:
 Now change the base unit to "years":
 
     categoryAxis: {
-        baseUnit: "years"
+        baseUnit: "years",
+        categories: [
+            new Date("2011/12/30"),
+            new Date("2011/12/31"),
+            new Date("2012/01/01"),
+            new Date("2012/01/02"),
+            new Date("2012/01/03")
+        ]
     }
 
 Notice how the sparkline now displayes the maximum value for each year:
@@ -210,7 +226,9 @@ Notice how the sparkline now displayes the maximum value for each year:
 The aggregate function can be changed for each series:
 
     series: [{
-        aggregate: "sum"
+        aggregate: "sum",
+        type: "column",
+        data: [20, 40, 45, 30, 50]
     }]
 
 Available options are:
@@ -228,6 +246,8 @@ The Sparkline currently supports only Numeric value axes.
 
 Configuration options are accessible through the [`valueAxis` object](/api/dataviz/sparkline#valueaxis-object):
 
+    <span id="sparkline"></span>
+    <script>
     $("#sparkline").kendoSparkline({
         series: [{
             name: "World",
@@ -241,6 +261,7 @@ Configuration options are accessible through the [`valueAxis` object](/api/datav
             categories: [2005, 2006, 2007, 2008, 2009]
         }
     });
+    </script>
 
 
 Here we have configured a Numeric axis with a minimum value of 0 and a maximum value of 100.
@@ -253,6 +274,8 @@ The category index (zero based) is used as a value for the category axis.
 
 For example:
 
+    <span id="sparkline"></span>
+    <script>
     $("#sparkline").kendoSparkline({
         data: [15.7, 16.7, 20, 23.5, 26.6],
         valueAxis: {
@@ -263,4 +286,5 @@ For example:
             }]
         }
     });
+    </script>
 
