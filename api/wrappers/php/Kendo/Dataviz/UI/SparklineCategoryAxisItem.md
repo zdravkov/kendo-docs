@@ -452,8 +452,8 @@ The category axis notes configuration.
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\SparklineCategoryAxisItem();
     $notes = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotes();
-    $icon = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $categoryAxisItem->notes($notes);
     ?>
 
@@ -461,8 +461,8 @@ The category axis notes configuration.
 
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\SparklineCategoryAxisItem();
-    $icon = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIcon();
-    $categoryAxisItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $categoryAxisItem->notes(array('position' => $position));
     ?>
 
 ### addPlotBand

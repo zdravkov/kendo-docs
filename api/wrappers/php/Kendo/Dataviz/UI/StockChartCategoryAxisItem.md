@@ -468,8 +468,8 @@ The category axis notes configuration.
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
     $notes = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes();
-    $icon = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $categoryAxisItem->notes($notes);
     ?>
 
@@ -477,8 +477,8 @@ The category axis notes configuration.
 
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
-    $icon = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesIcon();
-    $categoryAxisItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $categoryAxisItem->notes(array('position' => $position));
     ?>
 
 ### pane

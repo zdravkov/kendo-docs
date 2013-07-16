@@ -99,6 +99,24 @@ The line of the note.
     $dataItem->line(array('color' => $color));
     ?>
 
+### position
+The position of the category axis note.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $dataItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem();
+    $dataItem->position('value');
+    ?>
+
 ### value
 The value of the note.
 
@@ -107,13 +125,7 @@ The value of the note.
 
 #### Parameters
 
-##### $value `float`
+##### $value ``
 
 
-
-#### Example 
-    <?php
-    $dataItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem();
-    $dataItem->value(1);
-    ?>
 

@@ -705,8 +705,8 @@ The series notes configuration.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $notes = new \Kendo\Dataviz\UI\ChartSeriesItemNotes();
-    $icon = new \Kendo\Dataviz\UI\ChartSeriesItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $seriesItem->notes($notes);
     ?>
 
@@ -714,8 +714,8 @@ The series notes configuration.
 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
-    $icon = new \Kendo\Dataviz\UI\ChartSeriesItemNotesIcon();
-    $seriesItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $seriesItem->notes(array('position' => $position));
     ?>
 
 ### opacity

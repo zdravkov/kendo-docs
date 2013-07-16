@@ -330,8 +330,8 @@ The y axis notes configuration.
     <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
     $notes = new \Kendo\Dataviz\UI\ChartYAxisItemNotes();
-    $icon = new \Kendo\Dataviz\UI\ChartYAxisItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $yAxisItem->notes($notes);
     ?>
 
@@ -339,8 +339,8 @@ The y axis notes configuration.
 
     <?php
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
-    $icon = new \Kendo\Dataviz\UI\ChartYAxisItemNotesIcon();
-    $yAxisItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $yAxisItem->notes(array('position' => $position));
     ?>
 
 ### pane

@@ -386,8 +386,8 @@ The value axis notes configuration.
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
     $notes = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotes();
-    $icon = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $valueAxisItem->notes($notes);
     ?>
 
@@ -395,8 +395,8 @@ The value axis notes configuration.
 
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
-    $icon = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotesIcon();
-    $valueAxisItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $valueAxisItem->notes(array('position' => $position));
     ?>
 
 ### addPlotBand

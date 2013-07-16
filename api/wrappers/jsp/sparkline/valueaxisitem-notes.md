@@ -16,6 +16,14 @@ The value axis notes configuration.
 
 ## Configuration Attributes
 
+### position `String`
+
+The position of the value axis note.
+
+#### Example
+    <kendo:sparkline-valueAxisItem-notes position="position">
+    </kendo:sparkline-valueAxisItem-notes>
+
 
 ##  Configuration JSP Tags
 

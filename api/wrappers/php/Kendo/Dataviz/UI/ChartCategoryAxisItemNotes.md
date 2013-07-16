@@ -28,8 +28,8 @@ Adds one or more ChartCategoryAxisItemNotesDataItem to the ChartCategoryAxisItem
     <?php
     $notes = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotes();
     $dataItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem();
-    $value = 1;
-    $dataItem->value($value);
+    $position = 'value';
+    $dataItem->position($position);
     $notes->addDataItem($dataItem);
     ?>
 
@@ -37,8 +37,8 @@ Adds one or more ChartCategoryAxisItemNotesDataItem to the ChartCategoryAxisItem
 
     <?php
     $notes = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotes();
-    $value = 1;
-    $notes->addDataItem(array('value' => $value));
+    $position = 'value';
+    $notes->addDataItem(array('position' => $position));
     ?>
 
 #### Example - adding more than one ChartCategoryAxisItemNotesDataItem
@@ -135,5 +135,23 @@ The line of the notes.
     $notes = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotes();
     $color = 'value';
     $notes->line(array('color' => $color));
+    ?>
+
+### position
+The position of the category axis note.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemNotes`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $notes = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotes();
+    $notes->position('value');
     ?>
 

@@ -16,7 +16,15 @@ The items of the notes.
 
 ## Configuration Attributes
 
-### value `float`
+### position `String`
+
+The position of the category axis note.
+
+#### Example
+    <kendo:chart-categoryAxisItem-notes-dataItem position="position">
+    </kendo:chart-categoryAxisItem-notes-dataItem>
+
+### value `Object`
 
 The value of the note.
 

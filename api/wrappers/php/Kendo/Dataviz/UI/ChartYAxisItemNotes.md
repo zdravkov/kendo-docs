@@ -28,8 +28,8 @@ Adds one or more ChartYAxisItemNotesDataItem to the ChartYAxisItemNotes.
     <?php
     $notes = new \Kendo\Dataviz\UI\ChartYAxisItemNotes();
     $dataItem = new \Kendo\Dataviz\UI\ChartYAxisItemNotesDataItem();
-    $value = 1;
-    $dataItem->value($value);
+    $position = 'value';
+    $dataItem->position($position);
     $notes->addDataItem($dataItem);
     ?>
 
@@ -37,8 +37,8 @@ Adds one or more ChartYAxisItemNotesDataItem to the ChartYAxisItemNotes.
 
     <?php
     $notes = new \Kendo\Dataviz\UI\ChartYAxisItemNotes();
-    $value = 1;
-    $notes->addDataItem(array('value' => $value));
+    $position = 'value';
+    $notes->addDataItem(array('position' => $position));
     ?>
 
 #### Example - adding more than one ChartYAxisItemNotesDataItem
@@ -135,5 +135,23 @@ The line of the notes.
     $notes = new \Kendo\Dataviz\UI\ChartYAxisItemNotes();
     $color = 'value';
     $notes->line(array('color' => $color));
+    ?>
+
+### position
+The position of the y axis notes.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartYAxisItemNotes`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $notes = new \Kendo\Dataviz\UI\ChartYAxisItemNotes();
+    $notes->position('value');
     ?>
 

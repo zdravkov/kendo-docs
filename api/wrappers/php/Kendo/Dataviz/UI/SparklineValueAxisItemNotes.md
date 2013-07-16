@@ -28,8 +28,8 @@ Adds one or more SparklineValueAxisItemNotesDataItem to the SparklineValueAxisIt
     <?php
     $notes = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotes();
     $dataItem = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotesDataItem();
-    $value = 1;
-    $dataItem->value($value);
+    $position = 'value';
+    $dataItem->position($position);
     $notes->addDataItem($dataItem);
     ?>
 
@@ -37,8 +37,8 @@ Adds one or more SparklineValueAxisItemNotesDataItem to the SparklineValueAxisIt
 
     <?php
     $notes = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotes();
-    $value = 1;
-    $notes->addDataItem(array('value' => $value));
+    $position = 'value';
+    $notes->addDataItem(array('position' => $position));
     ?>
 
 #### Example - adding more than one SparklineValueAxisItemNotesDataItem
@@ -135,5 +135,23 @@ The line of the notes.
     $notes = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotes();
     $color = 'value';
     $notes->line(array('color' => $color));
+    ?>
+
+### position
+The position of the value axis note.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineValueAxisItemNotes`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $notes = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotes();
+    $notes->position('value');
     ?>
 

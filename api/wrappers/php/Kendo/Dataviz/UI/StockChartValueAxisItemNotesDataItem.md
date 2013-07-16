@@ -99,6 +99,24 @@ The line of the note.
     $dataItem->line(array('color' => $color));
     ?>
 
+### position
+The position of the value axis note.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemNotesDataItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $dataItem = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotesDataItem();
+    $dataItem->position('value');
+    ?>
+
 ### value
 The value of the note.
 
@@ -107,13 +125,7 @@ The value of the note.
 
 #### Parameters
 
-##### $value `float`
+##### $value ``
 
 
-
-#### Example 
-    <?php
-    $dataItem = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotesDataItem();
-    $dataItem->value(1);
-    ?>
 

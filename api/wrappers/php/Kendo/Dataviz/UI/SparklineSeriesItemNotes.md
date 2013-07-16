@@ -99,3 +99,21 @@ The line of the notes.
     $notes->line(array('color' => $color));
     ?>
 
+### position
+The position of the series note.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesItemNotes`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $notes = new \Kendo\Dataviz\UI\SparklineSeriesItemNotes();
+    $notes->position('value');
+    ?>
+

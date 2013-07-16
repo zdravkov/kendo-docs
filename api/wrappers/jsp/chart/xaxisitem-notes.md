@@ -16,6 +16,14 @@ The x axis notes configuration.
 
 ## Configuration Attributes
 
+### position `String`
+
+The position of the x axis note.
+
+#### Example
+    <kendo:chart-xAxisItem-notes position="position">
+    </kendo:chart-xAxisItem-notes>
+
 
 ##  Configuration JSP Tags
 

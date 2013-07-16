@@ -330,8 +330,8 @@ The x axis notes configuration.
     <?php
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
     $notes = new \Kendo\Dataviz\UI\ChartXAxisItemNotes();
-    $icon = new \Kendo\Dataviz\UI\ChartXAxisItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $xAxisItem->notes($notes);
     ?>
 
@@ -339,8 +339,8 @@ The x axis notes configuration.
 
     <?php
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
-    $icon = new \Kendo\Dataviz\UI\ChartXAxisItemNotesIcon();
-    $xAxisItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $xAxisItem->notes(array('position' => $position));
     ?>
 
 ### pane

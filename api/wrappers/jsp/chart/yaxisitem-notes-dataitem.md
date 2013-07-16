@@ -16,7 +16,15 @@ The items of the notes.
 
 ## Configuration Attributes
 
-### value `float`
+### position `String`
+
+The position of the y axis notes.
+
+#### Example
+    <kendo:chart-yAxisItem-notes-dataItem position="position">
+    </kendo:chart-yAxisItem-notes-dataItem>
+
+### value `Object`
 
 The value of the note.
 

@@ -16,6 +16,14 @@ The series notes configuration.
 
 ## Configuration Attributes
 
+### position `String`
+
+The position of the series note.
+
+#### Example
+    <kendo:stockChart-seriesItem-notes position="position">
+    </kendo:stockChart-seriesItem-notes>
+
 
 ##  Configuration JSP Tags
 

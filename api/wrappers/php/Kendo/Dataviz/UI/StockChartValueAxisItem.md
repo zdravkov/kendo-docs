@@ -386,8 +386,8 @@ The value axis notes configuration.
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
     $notes = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotes();
-    $icon = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $valueAxisItem->notes($notes);
     ?>
 
@@ -395,8 +395,8 @@ The value axis notes configuration.
 
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
-    $icon = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotesIcon();
-    $valueAxisItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $valueAxisItem->notes(array('position' => $position));
     ?>
 
 ### pane

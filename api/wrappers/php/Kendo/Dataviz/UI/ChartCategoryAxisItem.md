@@ -466,8 +466,8 @@ The category axis notes configuration.
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
     $notes = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotes();
-    $icon = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $categoryAxisItem->notes($notes);
     ?>
 
@@ -475,8 +475,8 @@ The category axis notes configuration.
 
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
-    $icon = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesIcon();
-    $categoryAxisItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $categoryAxisItem->notes(array('position' => $position));
     ?>
 
 ### pane

@@ -16,6 +16,14 @@ The category axis notes configuration.
 
 ## Configuration Attributes
 
+### position `String`
+
+The position of the category axis note.
+
+#### Example
+    <kendo:chart-categoryAxisItem-notes position="position">
+    </kendo:chart-categoryAxisItem-notes>
+
 
 ##  Configuration JSP Tags
 

@@ -16,6 +16,14 @@ The y axis notes configuration.
 
 ## Configuration Attributes
 
+### position `String`
+
+The position of the y axis notes.
+
+#### Example
+    <kendo:chart-yAxisItem-notes position="position">
+    </kendo:chart-yAxisItem-notes>
+
 
 ##  Configuration JSP Tags
 

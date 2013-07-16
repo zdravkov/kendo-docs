@@ -16,7 +16,15 @@ The items of the notes.
 
 ## Configuration Attributes
 
-### value `float`
+### position `String`
+
+The position of the value axis note.
+
+#### Example
+    <kendo:sparkline-valueAxisItem-notes-dataItem position="position">
+    </kendo:sparkline-valueAxisItem-notes-dataItem>
+
+### value `Object`
 
 The value of the note.
 

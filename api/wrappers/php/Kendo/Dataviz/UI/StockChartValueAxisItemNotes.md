@@ -28,8 +28,8 @@ Adds one or more StockChartValueAxisItemNotesDataItem to the StockChartValueAxis
     <?php
     $notes = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotes();
     $dataItem = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotesDataItem();
-    $value = 1;
-    $dataItem->value($value);
+    $position = 'value';
+    $dataItem->position($position);
     $notes->addDataItem($dataItem);
     ?>
 
@@ -37,8 +37,8 @@ Adds one or more StockChartValueAxisItemNotesDataItem to the StockChartValueAxis
 
     <?php
     $notes = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotes();
-    $value = 1;
-    $notes->addDataItem(array('value' => $value));
+    $position = 'value';
+    $notes->addDataItem(array('position' => $position));
     ?>
 
 #### Example - adding more than one StockChartValueAxisItemNotesDataItem
@@ -135,5 +135,23 @@ The line of the notes.
     $notes = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotes();
     $color = 'value';
     $notes->line(array('color' => $color));
+    ?>
+
+### position
+The position of the value axis note.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemNotes`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $notes = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotes();
+    $notes->position('value');
     ?>
 

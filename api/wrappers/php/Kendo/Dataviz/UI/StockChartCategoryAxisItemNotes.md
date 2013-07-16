@@ -28,8 +28,8 @@ Adds one or more StockChartCategoryAxisItemNotesDataItem to the StockChartCatego
     <?php
     $notes = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes();
     $dataItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItem();
-    $value = 1;
-    $dataItem->value($value);
+    $position = 'value';
+    $dataItem->position($position);
     $notes->addDataItem($dataItem);
     ?>
 
@@ -37,8 +37,8 @@ Adds one or more StockChartCategoryAxisItemNotesDataItem to the StockChartCatego
 
     <?php
     $notes = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes();
-    $value = 1;
-    $notes->addDataItem(array('value' => $value));
+    $position = 'value';
+    $notes->addDataItem(array('position' => $position));
     ?>
 
 #### Example - adding more than one StockChartCategoryAxisItemNotesDataItem
@@ -135,5 +135,23 @@ The line of the notes.
     $notes = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes();
     $color = 'value';
     $notes->line(array('color' => $color));
+    ?>
+
+### position
+The position of the category axis note.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $notes = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes();
+    $notes->position('value');
     ?>
 

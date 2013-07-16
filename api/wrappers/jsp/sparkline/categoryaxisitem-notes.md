@@ -16,6 +16,14 @@ The category axis notes configuration.
 
 ## Configuration Attributes
 
+### position `String`
+
+The position of the category axis note.
+
+#### Example
+    <kendo:sparkline-categoryAxisItem-notes position="position">
+    </kendo:sparkline-categoryAxisItem-notes>
+
 
 ##  Configuration JSP Tags
 

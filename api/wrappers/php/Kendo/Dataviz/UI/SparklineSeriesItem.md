@@ -470,8 +470,8 @@ The series notes configuration.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
     $notes = new \Kendo\Dataviz\UI\SparklineSeriesItemNotes();
-    $icon = new \Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon();
-    $notes->icon($icon);
+    $position = 'value';
+    $notes->position($position);
     $seriesItem->notes($notes);
     ?>
 
@@ -479,8 +479,8 @@ The series notes configuration.
 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
-    $icon = new \Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon();
-    $seriesItem->notes(array('icon' => $icon));
+    $position = 'value';
+    $seriesItem->notes(array('position' => $position));
     ?>
 
 ### opacity

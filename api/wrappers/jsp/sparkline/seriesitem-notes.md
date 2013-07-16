@@ -16,6 +16,14 @@ The series notes configuration.
 
 ## Configuration Attributes
 
+### position `String`
+
+The position of the series note.
+
+#### Example
+    <kendo:sparkline-seriesItem-notes position="position">
+    </kendo:sparkline-seriesItem-notes>
+
 
 ##  Configuration JSP Tags
 
