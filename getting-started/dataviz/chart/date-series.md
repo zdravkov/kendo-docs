@@ -9,8 +9,6 @@ publish: true
 
 # Date Series
 
-## Contents
-
 * [Categorical date series](#categorical-date-series)
 
     * [Category binding](#category-binding)
