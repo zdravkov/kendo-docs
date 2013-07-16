@@ -16,13 +16,11 @@ publish: true
 
 * [Categorical charts](#categorical-charts)
     * [Category axis](#category-axis)
-        * [Displaying Dates](#category-date-axis)
     * [Value axis](#value-axis)
     * [Multiple value axes](#multiple-value-axes)
     * [Axis crossing value(s)](#axis-crossing-values)
 
 * [Scatter charts](#scatter-charts)
-    * [Displaying Dates](#xy-date-axis)
     * [Multiple X/Y axes](#multiple-xy-axes)
     * [Axis crossing value(s)](#axis-crossing-values)
 
@@ -35,16 +33,19 @@ publish: true
 ## Getting started
 
 The Chart widget uses modern browser technologies to render high-quality data visualizations.
-All graphics are rendered on the client using SVG with a fallback to VML for legacy browsers.
+All graphics are rendered on the client using SVG with a fallback to Canvas and VML.
 
 Kendo UI Chart supports the following series types:
 
-*   Bar / Column
-*   Line / Vertical Line
-*   Area / Vertical Area
-*   Pie
-*   Scatter
-*   Scatter Line
+* Bar and Column
+* Line and Vertical Line
+* Area and Vertical Area
+* Bullet
+* Pie and Donut
+* Scatter
+* Scatter Line
+* Bubble
+* Radar and Polar
 
 Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about
 new Chart types and features.
@@ -71,7 +72,7 @@ The chart is rendered by selecting the div with a jQuery selector and calling th
 
 This will render the chart shown below:
 
-![Empty Chart](http://www.kendoui.com/Libraries/Documentation/chart-empty.sflb.ashx)</img>
+![Empty Chart](chart-empty.png)</img>
 
 The chart can then be given a title by specifying the "text" property of the "title" object in the Kendo Chart.
 
@@ -102,7 +103,7 @@ Start by creating a series that displays inline data.
 
 This will render a column chart by default.
 
-![Column Chart without categories](http://www.kendoui.com/Libraries/Documentation/chart-column-no-categories.sflb.ashx)</img>
+![Column Chart without categories](chart-column-no-categories.png)</img>
 
 You will notice that the columns have no label across the category axis.
 You specify the labeling for the series in the [`categoryAxis` property](/api/dataviz/chart#categoryAxis).
@@ -121,7 +122,7 @@ You specify the labeling for the series in the [`categoryAxis` property](/api/da
         }
     });
 
-![Column Chart with categories](http://www.kendoui.com/Libraries/Documentation/chart-column-categories.sflb.ashx)</img>
+![Column Chart with categories](chart-column-categories.png)</img>
 
 ## Categorical charts
 
@@ -165,109 +166,6 @@ The category name can also be bound to a field of the data item:
             field: "year"
         }
     });
-
-#### Displaying Dates
-
-The category axis provides built-in support for displaying dates. This includes:
-
-* Automatic selection of granularity/base unit (minutes, hours, days, etc.)
-* Label formatting matched to the granularity
-* Grouping of categories into base units and series aggregates
-
-Specifying categories of type Date will switch the axis to date mode.
-The automatic mode selection can be overriden by specifying `type: "Date"`
-
-##### Base Unit
-
-The default base unit is determined from the smallest duration between categories.
-For example:
-
-    categoryAxis: {
-        categories: [new Date(2005, 0, 1), new Date(2006, 0, 1)]
-        // baseUnit is set to "years"
-    }
-
-    categoryAxis: {
-        categories: [new Date(2005, 1, 1), new Date(2005, 1, 2)]
-        // baseUnit is set to "days"
-    }
-
-The base unit can also be specified manually. Valid options are:
-
-* minutes
-* hours
-* days
-* months
-* years
-
-##### Labels format
-
-The date category axis supports specifying one format per base unit.
-
-    categoryAxis: {
-        labels: {
-            dateFormats: {
-                days: "M/d"
-            }
-        }
-    }
-
-The [`labels.format` property](/api/dataviz/chart#categoryaxis.labels.format-string) takes priority, if specified.
-
-The global KendoUI culture is used for formatting the dates.
-It can be overriden by setting `labels.culture`.
-
-##### Series Aggregates
-
-If more than one category falls within a base unit, then its
-values are aggregated to display a single point.
-
-For example:
-
-    $("#chart").kendoChart({
-        series: [{
-            type: "column",
-            data: [20, 40, 45, 30, 50]
-        }],
-        categoryAxis: {
-            categories: [
-                new Date("2011/12/30"),
-                new Date("2011/12/31"),
-                new Date("2012/01/01"),
-                new Date("2012/01/02"),
-                new Date("2012/01/03")
-            ]
-        }
-    });
-
-Produces the following chart. Note that values are displayed as-is:
-
-![Chart with date category axis](chart-category-date-axis.png)
-
-Now change the base unit to "years":
-
-    categoryAxis: {
-        baseUnit: "years"
-    }
-
-Notice how the chart now displayes the maximum value for each year:
-
-![Chart with grouped date category axis](chart-category-date-axis-grouped.png)
-
-The aggregate function can be changed for each series:
-
-    series: [{
-        aggregate: "sum"
-    }]
-
-Available options are:
-
-* min
-* max
-* count
-* sum
-* avg
-* function (values, series) (Custom aggregate)
 
 ### Value axis
 
@@ -365,70 +263,6 @@ XY charts such as Scatter and Scatter Line use one or more X and Y axes. These a
             min: 80
         }
     });
-
-### Displaying Dates
-
-The X/Y axis has built-in support for displaying dates.
-This includes:
-
-* Automatic selection of granularity/base unit (minutes, hours, days, etc.)
-* Label formatting matched to the granularity
-
-The axis will switch to date mode if the series values are of type Date.
-The automatic mode selection can be overriden by specifying `type: "Date"`
-
-The following options accept dates:
-
-* min
-* max
-* axisCrossingValue
-
-The following options are expressed in base units:
-
-* minorUnit
-* majorUnit
-
-##### Base Unit
-
-The default base unit is determined from the axis (or series) range.
-For example:
-
-    xAxis: {
-        min: new Date(2005, 0, 1),
-        max: new Date(2006, 0, 1)
-        // baseUnit is set to "years"
-    }
-
-    xAxis: {
-        min: new Date(2005, 1, 1),
-        max: new Date(2005, 1, 2)
-        // baseUnit is set to "days"
-    }
-
-The base unit can also be specified manually. Valid options are:
-
-* minutes
-* hours
-* days
-* months
-* years
-
-##### Labels format
-
-The date axis supports specifying one format per base unit.
-
-    xAxis: {
-        labels: {
-            dateFormats: {
-                days: "M/d"
-            }
-        }
-    }
-
-The `labels.format` property takes priority, if specified.
-
-The global KendoUI culture is used for formatting the dates.
-It can be overriden by setting `labels.culture`.
 
 
 ### Multiple X/Y axes
