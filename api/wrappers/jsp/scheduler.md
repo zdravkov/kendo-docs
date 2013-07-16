@@ -106,6 +106,14 @@ The template used to render the minor ticks.By default the scheduler renders a "
     <kendo:scheduler minorTimeHeaderTemplate="minorTimeHeaderTemplate">
     </kendo:scheduler>
 
+### selectable `boolean`
+
+If set to true the user would be able to select scheduler cells and events. By default selection is disabled.
+
+#### Example
+    <kendo:scheduler selectable="selectable">
+    </kendo:scheduler>
+
 ### startTime `java.util.Date`
 
 The start time of the week and day views. The scheduler will display events starting after the startTime.
