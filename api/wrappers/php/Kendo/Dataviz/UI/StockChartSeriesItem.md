@@ -503,6 +503,35 @@ Color to use for bars with negative values.** Applicable only to column series. 
     $seriesItem->negativeColor('value');
     ?>
 
+### notes
+
+The series notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemNotes)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $notes = new \Kendo\Dataviz\UI\StockChartSeriesItemNotes();
+    $icon = new \Kendo\Dataviz\UI\StockChartSeriesItemNotesIcon();
+    $notes->icon($icon);
+    $seriesItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $icon = new \Kendo\Dataviz\UI\StockChartSeriesItemNotesIcon();
+    $seriesItem->notes(array('icon' => $icon));
+    ?>
+
 ### opacity
 The series opacity.
 

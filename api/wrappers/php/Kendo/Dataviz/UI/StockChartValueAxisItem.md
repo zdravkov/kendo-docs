@@ -370,6 +370,35 @@ Prevents the automatic axis range from snapping to 0.
     $valueAxisItem->narrowRange(true);
     ?>
 
+### notes
+
+The value axis notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartValueAxisItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartValueAxisItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/StockChartValueAxisItemNotes)
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
+    $notes = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotes();
+    $icon = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotesIcon();
+    $notes->icon($icon);
+    $valueAxisItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
+    $icon = new \Kendo\Dataviz\UI\StockChartValueAxisItemNotesIcon();
+    $valueAxisItem->notes(array('icon' => $icon));
+    ?>
+
 ### pane
 The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.

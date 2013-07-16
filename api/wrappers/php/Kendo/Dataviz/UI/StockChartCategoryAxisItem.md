@@ -452,6 +452,35 @@ The unique axis name.
     $categoryAxisItem->name('value');
     ?>
 
+### notes
+
+The category axis notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemNotes)
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $notes = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotes();
+    $icon = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesIcon();
+    $notes->icon($icon);
+    $categoryAxisItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $icon = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesIcon();
+    $categoryAxisItem->notes(array('icon' => $icon));
+    ?>
+
 ### pane
 The name of the pane that the axis should be rendered in.
 The axis will be rendered in the first (default) pane if not set.

@@ -298,6 +298,18 @@ More documentation is available at [kendo:stockChart-seriesItem-markers](stockch
         <kendo:stockChart-seriesItem-markers></kendo:stockChart-seriesItem-markers>
     </kendo:stockChart-seriesItem>
 
+### kendo:stockChart-seriesItem-notes
+
+The series notes configuration.
+
+More documentation is available at [kendo:stockChart-seriesItem-notes](stockchart/seriesitem-notes).
+
+#### Example
+
+    <kendo:stockChart-seriesItem>
+        <kendo:stockChart-seriesItem-notes></kendo:stockChart-seriesItem-notes>
+    </kendo:stockChart-seriesItem>
+
 ### kendo:stockChart-seriesItem-overlay
 
 The effects overlay.

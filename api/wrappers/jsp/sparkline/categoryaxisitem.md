@@ -259,6 +259,18 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-minorTicks]
         <kendo:sparkline-categoryAxisItem-minorTicks></kendo:sparkline-categoryAxisItem-minorTicks>
     </kendo:sparkline-categoryAxisItem>
 
+### kendo:sparkline-categoryAxisItem-notes
+
+The category axis notes configuration.
+
+More documentation is available at [kendo:sparkline-categoryAxisItem-notes](sparkline/categoryaxisitem-notes).
+
+#### Example
+
+    <kendo:sparkline-categoryAxisItem>
+        <kendo:sparkline-categoryAxisItem-notes></kendo:sparkline-categoryAxisItem-notes>
+    </kendo:sparkline-categoryAxisItem>
+
 ### kendo:sparkline-categoryAxisItem-plotBands
 
 The plot bands of the category axis.

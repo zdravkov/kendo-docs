@@ -370,6 +370,35 @@ Prevents the automatic axis range from snapping to 0.
     $valueAxisItem->narrowRange(true);
     ?>
 
+### notes
+
+The value axis notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineValueAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\SparklineValueAxisItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\SparklineValueAxisItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/SparklineValueAxisItemNotes)
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
+    $notes = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotes();
+    $icon = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotesIcon();
+    $notes->icon($icon);
+    $valueAxisItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
+    $icon = new \Kendo\Dataviz\UI\SparklineValueAxisItemNotesIcon();
+    $valueAxisItem->notes(array('icon' => $icon));
+    ?>
+
 ### addPlotBand
 
 Adds one or more SparklineValueAxisItemPlotBand to the SparklineValueAxisItem.

@@ -271,6 +271,18 @@ More documentation is available at [kendo:stockChart-categoryAxisItem-minorTicks
         <kendo:stockChart-categoryAxisItem-minorTicks></kendo:stockChart-categoryAxisItem-minorTicks>
     </kendo:stockChart-categoryAxisItem>
 
+### kendo:stockChart-categoryAxisItem-notes
+
+The category axis notes configuration.
+
+More documentation is available at [kendo:stockChart-categoryAxisItem-notes](stockchart/categoryaxisitem-notes).
+
+#### Example
+
+    <kendo:stockChart-categoryAxisItem>
+        <kendo:stockChart-categoryAxisItem-notes></kendo:stockChart-categoryAxisItem-notes>
+    </kendo:stockChart-categoryAxisItem>
+
 ### kendo:stockChart-categoryAxisItem-plotBands
 
 The plot bands of the category axis.

@@ -189,6 +189,18 @@ More documentation is available at [kendo:sparkline-valueAxisItem-minorTicks](sp
         <kendo:sparkline-valueAxisItem-minorTicks></kendo:sparkline-valueAxisItem-minorTicks>
     </kendo:sparkline-valueAxisItem>
 
+### kendo:sparkline-valueAxisItem-notes
+
+The value axis notes configuration.
+
+More documentation is available at [kendo:sparkline-valueAxisItem-notes](sparkline/valueaxisitem-notes).
+
+#### Example
+
+    <kendo:sparkline-valueAxisItem>
+        <kendo:sparkline-valueAxisItem-notes></kendo:sparkline-valueAxisItem-notes>
+    </kendo:sparkline-valueAxisItem>
+
 ### kendo:sparkline-valueAxisItem-plotBands
 
 The plot bands of the value axis.

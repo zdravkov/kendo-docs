@@ -287,6 +287,18 @@ More documentation is available at [kendo:sparkline-seriesItem-markers](sparklin
         <kendo:sparkline-seriesItem-markers></kendo:sparkline-seriesItem-markers>
     </kendo:sparkline-seriesItem>
 
+### kendo:sparkline-seriesItem-notes
+
+The series notes configuration.
+
+More documentation is available at [kendo:sparkline-seriesItem-notes](sparkline/seriesitem-notes).
+
+#### Example
+
+    <kendo:sparkline-seriesItem>
+        <kendo:sparkline-seriesItem-notes></kendo:sparkline-seriesItem-notes>
+    </kendo:sparkline-seriesItem>
+
 ### kendo:sparkline-seriesItem-overlay
 
 The effects overlay.

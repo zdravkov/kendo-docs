@@ -57,23 +57,7 @@ The expression used to extract the point note text from the chart model
 
 
 
-### Bar(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
-Defines bound bar series.
-
-
-#### Parameters
-
-##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the point value from the chart model
-
-##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
-The expression used to extract the point color from the chart model
-
-
-
-
-
-### Bar(`System.String,System.String,System.String`)
+### Bar(`System.String,System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -166,22 +150,6 @@ The expression used to extract the point color from the chart model
 
 ##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
 The expression used to extract the point note text from the chart model
-
-
-
-
-
-### Column(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
-Defines bound column series.
-
-
-#### Parameters
-
-##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the point value from the chart model
-
-##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
-The expression used to extract the point color from the chart model
 
 
 
@@ -282,19 +250,6 @@ The expression used to extract the note text from the chart model.
 
 
 
-### Line(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
-Defines bound line series.
-
-
-#### Parameters
-
-##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the series value from the chart model
-
-
-
-
-
 ### Line(`System.String,System.String,System.String`)
 Defines bound line series.
 
@@ -384,19 +339,6 @@ The expression used to extract the note text from the chart model.
 
 
 
-### VerticalLine(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
-Defines bound vertical line series.
-
-
-#### Parameters
-
-##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the series value from the chart model
-
-
-
-
-
 ### VerticalLine(`System.String,System.String,System.String`)
 Defines bound vertical line series.
 
@@ -446,19 +388,6 @@ Defines vertical line series bound to inline data.
 
 ##### data `System.Collections.IEnumerable`
 The data to bind to
-
-
-
-
-
-### Area(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
-Defines bound area series.
-
-
-#### Parameters
-
-##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the value from the chart model.
 
 
 
@@ -548,19 +477,6 @@ Defines area series bound to inline data.
 
 ##### data `System.Collections.IEnumerable`
 The data to bind to
-
-
-
-
-
-### VerticalArea(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
-Defines bound vertical area series.
-
-
-#### Parameters
-
-##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the value from the chart model.
 
 
 
@@ -903,6 +819,13 @@ The data to bind to
 
 
 
+### OHLC(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound ohlc series.
+
+
+
+
+
 ### OHLC(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound ohlc series.
 
@@ -910,14 +833,14 @@ Defines bound ohlc series.
 
 
 
-### OHLC(`System.String,System.String,System.String,System.String,System.String,System.String`)
+### OHLC(`System.String,System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound ohlc series.
 
 
 
 
 
-### OHLC(`System.Type,System.String,System.String,System.String,System.String,System.String,System.String`)
+### OHLC(`System.Type,System.String,System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound ohlc series.
 
 
@@ -937,6 +860,13 @@ The data to bind to
 
 
 
+### Candlestick(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound candlestick series.
+
+
+
+
+
 ### Candlestick(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound candlestick series.
 
@@ -944,14 +874,14 @@ Defines bound candlestick series.
 
 
 
-### Candlestick(`System.String,System.String,System.String,System.String,System.String,System.String,System.String`)
+### Candlestick(`System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound candlestick series.
 
 
 
 
 
-### Candlestick(`System.Type,System.String,System.String,System.String,System.String,System.String,System.String,System.String`)
+### Candlestick(`System.Type,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String`)
 Defines bound candlestick series.
 
 
@@ -966,6 +896,31 @@ Defines candlestick series bound to inline data.
 
 ##### data `System.Collections.IEnumerable`
 The data to bind to
+
+
+
+
+
+### Bullet(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound bullet series.
+
+
+#### Parameters
+
+##### currentExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point current value from the chart model
+
+##### targetExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point target value from the chart model
+
+##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point color from the chart model
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point category from the chart model
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point note text from the chart model
 
 
 
@@ -993,7 +948,7 @@ The expression used to extract the point note text from the chart model
 
 
 
-### Bullet(`System.String,System.String,System.String,System.String`)
+### Bullet(`System.String,System.String,System.String,System.String,System.String`)
 Defines bound bar series.
 
 
@@ -1008,14 +963,14 @@ The name of the target value member.
 ##### colorMemberName `System.String`
 The name of the color member.
 
-##### noteTextExpression `System.String`
+##### noteTextMemberName `System.String`
 The name of the note text member.
 
 
 
 
 
-### Bullet(`System.Type,System.String,System.String,System.String,System.String`)
+### Bullet(`System.Type,System.String,System.String,System.String,System.String,System.String`)
 Defines bound bullet series.
 
 
@@ -1050,6 +1005,28 @@ The data to bind to.
 
 
 
+### VerticalBullet(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound verticalBullet series.
+
+
+#### Parameters
+
+##### currentExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point current value from the chart model
+
+##### targetExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point target value from the chart model
+
+##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point color from the chart model
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point note text from the chart model
+
+
+
+
+
 ### VerticalBullet(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound verticalBullet series.
 
@@ -1072,7 +1049,7 @@ The expression used to extract the point note text from the chart model
 
 
 
-### VerticalBullet(`System.String,System.String,System.String,System.String`)
+### VerticalBullet(`System.String,System.String,System.String,System.String,System.String`)
 Defines bound verticalBullet series.
 
 
@@ -1094,7 +1071,7 @@ The name of the color member.
 
 
 
-### VerticalBullet(`System.Type,System.String,System.String,System.String,System.String`)
+### VerticalBullet(`System.Type,System.String,System.String,System.String,System.String,System.String`)
 Defines bound verticalBullet series.
 
 
@@ -1251,22 +1228,6 @@ The expression used to extract the point color from the chart model
 
 ##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
 The expression used to extract the point note text from the chart model
-
-
-
-
-
-### RadarColumn(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
-Defines bound radar column series.
-
-
-#### Parameters
-
-##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
-The expression used to extract the point value from the chart model
-
-##### colorExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
-The expression used to extract the point color from the chart model
 
 
 

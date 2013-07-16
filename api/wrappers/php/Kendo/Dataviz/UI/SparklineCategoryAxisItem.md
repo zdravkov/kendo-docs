@@ -436,6 +436,35 @@ The unique axis name.
     $categoryAxisItem->name('value');
     ?>
 
+### notes
+
+The category axis notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineCategoryAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemNotes)
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\SparklineCategoryAxisItem();
+    $notes = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotes();
+    $icon = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIcon();
+    $notes->icon($icon);
+    $categoryAxisItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\SparklineCategoryAxisItem();
+    $icon = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIcon();
+    $categoryAxisItem->notes(array('icon' => $icon));
+    ?>
+
 ### addPlotBand
 
 Adds one or more SparklineCategoryAxisItemPlotBand to the SparklineCategoryAxisItem.

@@ -198,6 +198,18 @@ More documentation is available at [kendo:stockChart-valueAxisItem-minorTicks](s
         <kendo:stockChart-valueAxisItem-minorTicks></kendo:stockChart-valueAxisItem-minorTicks>
     </kendo:stockChart-valueAxisItem>
 
+### kendo:stockChart-valueAxisItem-notes
+
+The value axis notes configuration.
+
+More documentation is available at [kendo:stockChart-valueAxisItem-notes](stockchart/valueaxisitem-notes).
+
+#### Example
+
+    <kendo:stockChart-valueAxisItem>
+        <kendo:stockChart-valueAxisItem-notes></kendo:stockChart-valueAxisItem-notes>
+    </kendo:stockChart-valueAxisItem>
+
 ### kendo:stockChart-valueAxisItem-plotBands
 
 The plot bands of the value axis.

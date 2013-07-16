@@ -454,6 +454,35 @@ Color to use for bars with negative values.** Applicable only to bar and column 
     $seriesItem->negativeColor('value');
     ?>
 
+### notes
+
+The series notes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\SparklineSeriesItemNotes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemNotes](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemNotes)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $notes = new \Kendo\Dataviz\UI\SparklineSeriesItemNotes();
+    $icon = new \Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon();
+    $notes->icon($icon);
+    $seriesItem->notes($notes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $icon = new \Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon();
+    $seriesItem->notes(array('icon' => $icon));
+    ?>
+
 ### opacity
 The series opacity.
 
