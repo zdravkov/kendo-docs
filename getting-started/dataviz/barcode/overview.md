@@ -5,6 +5,7 @@ meta_description: How to create and set a Barcode widget in Kendo UI DataViz.
 slug: gs-dataviz-barcode-overview
 relatedDocs: api-dataviz-barcode
 publish: true
+ordinal:1
 ---
 
 # Barcode Overview
