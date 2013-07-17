@@ -9,6 +9,7 @@ publish: true
 # Notes on rendering
 
 The **Kendo UI** DataViz widgets supports the following rendering targets:
+
 * SVG
 * VML
 * Canvas
@@ -39,15 +40,17 @@ You can set the preferred rendering mode in the
 ## Including only what you need
 
 The rendering modules are available as separate files:
+
 * kendo.dataviz.svg(.min).js
 * kendo.dataviz.vml(.min).js
 * kendo.dataviz.canvas(.min).js
 
-You must include at least one, but the rest are optional.
+You must include at least one, the rest are optional.
 
 > The Canvas and SVG modules are required by the [imageDataURL](/api/dataviz/chart#methods-imageDataURL) and [svg](/api/dataviz/chart#methods-svg) methods.
 
 See also:
+
 * [JavaScript dependencies](/getting-started/javascript-dependencies)
 * [Custom Download Builder](http://www.kendoui.com/custom-download) (requires login)
 
@@ -67,6 +70,6 @@ This is a short list of the known issues:
 
 ### Canvas
 
-* Interactive features are not available. Shared tooltips are a notable exception.
+* Interactive features are not available with the exception of shared tooltips.
 * Dashed lines are not supported in IE.
 

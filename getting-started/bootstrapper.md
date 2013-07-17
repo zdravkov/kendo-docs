@@ -7,6 +7,8 @@ tags: 101, Getting Started, bootstrapper, tools
 publish: false
 ---
 
+# Getting Started with the Kendo UI Bootstrapper
+
 ## What Is The Kendo UI Bootstrapper
 
 The Kendo UI Bootstrapper is a free and open source tool designed to enhance your development workflow with Kendo UI by taking care of code linting, static analysis, minification, bundling and easy access to documentation.  It is not an IDE.  It is not intended for you to use to edit code.  It exists to augment your current IDE by taking care of many of the more advanced and manual tasks of application development that your IDE may not handle out of the box.
@@ -19,7 +21,7 @@ The Kendo UI Bootstrapper is a free and open source tool designed to enhance you
 
 ### Bootstrapper Prerequisites
 
-* [NodeJS](http://nodejs.org/)
+* [NodeJS v0.10+](http://nodejs.org/)
 * [Google Chrome](https://www.google.com/intl/en/chrome/browser/)
 
 ### Download
@@ -73,7 +75,7 @@ You can preview the simple application that the Bootstrapper provided you with b
 
 ![Application Preview](images/bootstrapper5.jpeg)
 
-Don't close the preview window!
+The Bootstrapper will automatically refresh changes to your app in the preview window, so you're free to keep it open as you work on your app.
 
 The application is simple and contains just a [Kendo UI Window](http://demos.kendoui.com/web/window/index.html) widget as part of the scaffold. It's time to start editing this application.
 
