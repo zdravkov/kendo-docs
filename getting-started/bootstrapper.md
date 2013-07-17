@@ -73,7 +73,7 @@ You can preview the simple application that the Bootstrapper provided you with b
 
 ![Application Preview](images/bootstrapper5.jpeg)
 
-Don't close the preview window!
+The Bootstrapper will automatically refresh changes to your app in the preview window, so you're free to keep it open as you work on your app.
 
 The application is simple and contains just a Kendo UI Window widget as part of the scaffold. It's time to start editing this application.
 
