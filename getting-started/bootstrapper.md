@@ -13,14 +13,14 @@ The Kendo UI Bootstrapper is a free and open source tool designed to enhance you
 
 ### Video Overview
 
-<iframe height="360" src="http://www.youtube.com/embed/6BS-dZMHyKg?rel=0" frameborder="0" width="640"></iframe>
+<iframe height="360" src="//www.youtube.com/embed/MumyCDUYfQk?rel=0" frameborder="0" width="640"></iframe>
 
 ## Installation
 
 ### Bootstrapper Prerequisites
 
-* NodeJS
-* Google Chrome
+* [NodeJS](http://nodejs.org/)
+* [Google Chrome](https://www.google.com/intl/en/chrome/browser/)
 
 ### Download
 
@@ -36,10 +36,12 @@ You can also install the Bootstrapper directly from GitHub by cloning the repo t
 
 ### Setup
 
-The Bootstrapper depends on some NodeJS modules that you will need to install.  Change to the directory where you unpacked or cloned the Bootstrapper to and install the necessary Npm modules.
+The Bootstrapper depends on some NodeJS libraries that you will need to install.  Change to the directory where you unpacked or cloned the Bootstrapper, and install the necessary dependencies using Npm. 
 
     cd kendo-bootstrapper
     npm install
+
+Depending on your setup, you may have to install the packages as sudo `sudo npm install`.
 
 ### Running
 
@@ -59,13 +61,13 @@ Create a new project by clicking on the `+` icon in the "Projects" sidebar menu,
 
 ![Create A New Project](images/bootstrapper2.jpeg)
 
-By default, the Bootstrapper puts all of your projects into a `PROJECTS` folder in the root of the Bootstrapper install location.  You also have the option to specify a RequireJS project configuration if you want.  For now, leave that box unchecked.
+By default, the Bootstrapper puts all of your projects into a `PROJECTS` folder in the root of the Bootstrapper install location.  You also have the option to specify a [RequireJS](http://www.kendoui.com/blogs/teamblog/posts/13-05-08/requirejs-fundamentals.aspx) project configuration if you want.  For now, leave that box unchecked.
 
-The Bootstrapper will now scaffold you a simple project.  You can see the different project files in the main area of the Bootstrapper.  The files in your project are devided up into two types, **Project Files** and **Library Files**.  The **Project Files** are those which comprise the code that you are writing.  The **Library Files** are those third party libraries that you are using with your project.  Even if you don't have the files included in your project, the Bootstrapper will detect them and show them here.
+The Bootstrapper will now scaffold you a simple project.  You can see the different project files in the main area of the Bootstrapper.  The files in your project are devided up into two types, **Project Files** and **Library Files**.  The **Project Files** are those which comprise the code that you are writing.  The **Library Files** are those third party libraries that you are using with your project.  Even if you don't have the library  files included in your HTML pages, the Bootstrapper will detect them and show them here if they exist in your project.
 
 ![Project Files vs Library Files](images/bootstrapper3.jpeg)
 
-You can preview the simple application that the Bootstrapper provided you with by clicking on the `Preview` button.  This will launch your application in a new Chrome Window
+You can preview the simple application that the Bootstrapper provided you with by clicking on the `Preview` button.  This will launch your application in a new Chrome window.
 
 ![Preview Button](images/bootstrapper4.jpeg)
 
@@ -73,7 +75,7 @@ You can preview the simple application that the Bootstrapper provided you with b
 
 Don't close the preview window!
 
-The application is simple and contains just a Kendo UI Window widget as part of the scaffold. It's time to start editing this application.
+The application is simple and contains just a [Kendo UI Window](http://demos.kendoui.com/web/window/index.html) widget as part of the scaffold. It's time to start editing this application.
 
 ### Editing
 
@@ -117,7 +119,7 @@ Go ahead and remove all the code in the `app.js` file.  Also remove everything i
         <img class="thumbnail" src="#: images.thumbnail.url #" alt="">
     </script>
 
-Last, open up the `app.js` file and replace all the JavaScript with this snippet.
+Open up the `app.js` file and replace all the JavaScript with this snippet.
 
     $(function() {
       $("#listview").kendoListView({
@@ -142,13 +144,13 @@ If you go back to your preview window now, you will see that it's empty.  The pr
 
 ### Bootstrapper Code Tools
 
-The Bootstrapper will lint your JavaScript for you using JSHint.  If you lint the code that you just copied, you will get one error.
+The Bootstrapper will lint your JavaScript for you using [JSHint](http://www.kendoui.com/blogs/teamblog/posts/13-07-09/protecting-your-mellow-with-javascript-linters.aspx).  If you lint the code that you just copied, you will get one error.
 
 ![JSHint Button](images/bootstrapper6.jpeg)
 
 ![JSHint Output](images/bootstrapper7.jpeg)
 
-Oops.  That's not a deal breaker, but lets correct it.  
+Oops.  That's not a deal breaker, but lets correct it.
 
 ![Bootstrapper Console Output](images/bootstrapper9.jpeg)
 
@@ -156,7 +158,7 @@ The Bootstrapper tells you the file and row where the error is.  If you dismiss 
 
 ![Bootstrapper Console Output](images/bootstrapper8.jpeg)
 
-The preview window is still empty.  There is still a problem with the code, but now it's not a JavaScript error, it's a Kendo UI configuration error.  The Bootstrapper also ships with the Kendo Linter.  This tool is much like JSHint, but it is specific to Kendo UI.  It's job is to inspect and warn you about invalid widget configuration.  From the Bootstrapper, click the Kendo Lint button.
+The preview window is still empty.  There is still a problem with the code, but now it's not a JavaScript error, it's a Kendo UI configuration error.  The Bootstrapper also ships with the [Kendo Linter](https://github.com/kendo-labs/kendo-lint).  This tool is much like JSHint, but it is specific to Kendo UI.  It's job is to inspect and warn you about invalid widget configuration.  From the Bootstrapper, click the Kendo Lint button.
 
 ![Kendo Linter Button](images/bootstrapper10.jpeg)
 
@@ -195,13 +197,15 @@ Right now, the Bootstrapper is serving up the LESS file and letting the browser 
 
 ![Compile LESS And CoffeeScript Files](images/bootstrapper15.jpeg)
 
+The LESS file is compiled to CSS.  The Bootstrapper is additionally capable of compiling JavaScript files.
+
 ### Build Kendo
 
 You may notice that you are currently using the entire `kendo.web.js` file.  That file contains all the widgets and it's quite large.
 
 ![Kendo UI Web Is Large](images/bootstrapper16.jpeg)
 
-It's entirely uncessary to have all of that in an application that in only using one widget.  Really you just want the ListView and any other files it depends on.  The problem is that you don't know what files the ListView depends on, and it's kind of a pain to go hunt all of them down and copy and paste them in, hoping to get them in the right order.
+It's entirely uncessary to have all of Kendo UI in an application that is only using one widget.  Really you just want the ListView and any other files it depends on.  The problem is that you don't know what files the ListView depends on, and it's kind of a pain to go hunt all of them down and copy and paste them in, hoping to get them in the right order.
 
 The Bootstrapper now takes care of all of this for you.  Simply click the Build Kendo button.
 
