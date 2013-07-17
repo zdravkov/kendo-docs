@@ -272,9 +272,10 @@ The crosshair configuration options.
           visible: true
         }
       },
-      series: [
-        { type: "line", data: [1, 2, 3] }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -326,12 +327,10 @@ The following dash types are supported:
           visible: true
         }
       },
-      series: [
-        {
-          type: "line",
-          data: [1, 2, 3]
-        }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -351,9 +350,10 @@ The opacity of the crosshair. By default the crosshair is opaque.
           visible: true
         }
       },
-      series: [
-        { type: "line", data: [1, 2, 3] }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -7705,14 +7705,12 @@ The width of the border in pixels.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          border: {
-            width: 2
-          },
-          data: [1, 2]
-        }
-      ]
+      series: [{
+        border: {
+          width: 2
+        },
+        data: [1, 2]
+      }]
     });
     </script>
 
@@ -7726,16 +7724,14 @@ The data item field which contains the category name or date.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          type: "pie",
-          categoryField: "type",
-          data: [
-            { value: 1, type: "Category 1" },
-            { value: 2, type: "Category 2" },
-          ]
-        }
-      ]
+      series: [{
+        type: "pie",
+        categoryField: "type",
+        data: [
+          { value: 1, type: "Category 1" },
+          { value: 2, type: "Category 2" },
+        ]
+      }]
     });
     </script>
 
@@ -7743,16 +7739,14 @@ The data item field which contains the category name or date.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          type: "line",
-          categoryField: "date",
-          data: [
-            { value: 1, date: new Date(2012, 1, 1) },
-            { value: 2, date: new Date(2012, 1, 2) },
-          ]
-        }
-      ]
+      series: [{
+        type: "line",
+        categoryField: "date",
+        data: [
+          { value: 1, date: new Date(2012, 1, 1) },
+          { value: 2, date: new Date(2012, 1, 2) },
+        ]
+      }]
     });
     </script>
 
@@ -7766,16 +7760,14 @@ The data field containing the close value.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          type: "candlestick",
-          closeField: "closePrice",
-          data: [
-            { open: 1, high: 2, low: 0.5, closePrice: 1.5},
-            { open: 2, high: 3, low: 1, closePrice: 1.5}
-          ]
-        }
-      ]
+      series: [{
+        type: "candlestick",
+        closeField: "closePrice",
+        data: [
+          { open: 1, high: 2, low: 0.5, closePrice: 1.5 },
+          { open: 2, high: 3, low: 1, closePrice: 1.5 }
+        ]
+      }]
     });
     </script>
 
@@ -7787,12 +7779,10 @@ The series base color. Accepts a valid CSS color string, including hex and rgb.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          data: [1, 2],
-          color: "#a0b0c0"
-        }
-      ]
+      series: [{
+        data: [1, 2],
+        color: "#a0b0c0"
+      }]
     });
     </script>
 
@@ -7801,12 +7791,10 @@ The series base color. Accepts a valid CSS color string, including hex and rgb.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          data: [1, 2],
-          color: "rgb(128, 0, 255)"
-        }
-      ]
+      series: [{
+        data: [1, 2],
+        color: "rgb(128, 0, 255)"
+      }]
     });
     </script>
 
@@ -7815,12 +7803,10 @@ The series base color. Accepts a valid CSS color string, including hex and rgb.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          data: [1, 2],
-          color: "red"
-        }
-      ]
+      series: [{
+        data: [1, 2],
+        color: "red"
+      }]
     });
     </script>
 
@@ -7829,18 +7815,16 @@ The series base color. Accepts a valid CSS color string, including hex and rgb.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          data: [1, 2],
-          color: function(point) {
-            if (point.value > 1) {
-              return "red";
-            }
-
-            // use the default series theme color
+      series: [{
+        data: [1, 2],
+        color: function(point) {
+          if (point.value > 1) {
+            return "red";
           }
+
+          // use the default series theme color
         }
-      ]
+      }]
     });
     </script>
 
@@ -7855,7 +7839,7 @@ The data item field which contains the series color.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         colorField: "valueColor",
         data: [
          { value: 1, valueColor: "red" },
@@ -7876,7 +7860,7 @@ The label connectors options.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "pie",
         labels: {
           visible: true
@@ -7898,7 +7882,7 @@ The color of the connector. Accepts a valid CSS color string, including hex and 
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "pie",
         labels: {
           visible: true
@@ -7919,7 +7903,7 @@ The padding between the connector line and the label, and connector line and don
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "pie",
         labels: {
           visible: true
@@ -7940,7 +7924,7 @@ The width of the connector line.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "pie",
         labels: {
           visible: true
@@ -7963,15 +7947,13 @@ The data item field containing the current value.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
+      series: [{
           type: "bullet",
           currentField: "price",
           data: [
             { price: 1, target: 2 }
           ]
-        }
-      ]
+      }]
     });
     </script>
 
@@ -7995,13 +7977,11 @@ The following dash types are supported:
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
+      series: [{
           dashType: "dashDot",
           type: "line",
           data: [1, 2, 3]
-        }
-      ]
+      }]
     });
     </script>
 
@@ -8012,7 +7992,7 @@ The array of data items which represent the series data.
 Can be set to :
 
 * Array of objects. Each point is bound to the field specified via the [series.field](#configuration-series.field) option.
-* Array of numbers. Supported when the [series.type](#configuration-series.type) option is set to "area", "bar", "column", "donut", "pie" or "line".
+* Array of numbers. Supported when the [series.type](#configuration-series.type) option is set to "area", "bar", "column", "donut", "pie", "stepLine" or "line".
 * Array of arrays of numbers. Supported when the [series.type](#configuration-series.type) option is set to "bubble", "scatter", "scatterLine", "ohlc" or polar series.
     * Bubble series need arrays of three values - X value, Y value and Size value e.g. `[1, 1, 10]`
     * Scatter and scatter line series need arrays of two values - X value and Y value
@@ -9269,7 +9249,7 @@ The top margin of the labels.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "donut",
         margin: {
           top: 30
@@ -9287,14 +9267,14 @@ The top margin of the labels.
 The chart series marker configuration.
 
 > The chart displays the series labels when the [series.markers.visible](#configuration-series.markers.visible) option is set to `true`.
-> The `markers` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatter", "scatterLine", "radarLine", "radarArea", "polarLine", "polarScatter" or "polarArea".
+> The `markers` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "stepLine", "scatter", "scatterLine", "radarLine", "radarArea", "polarLine", "polarScatter" or "polarArea".
 
 #### Example - set the chart series markers
 
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "line",
         markers: {
           visible: true,
@@ -9315,7 +9295,7 @@ The background color of the series markers.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "line",
         markers: {
           visible: true,
@@ -9335,7 +9315,7 @@ The border of the markers.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "line",
         markers: {
           visible: true,
@@ -9358,7 +9338,7 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "line",
         markers: {
           visible: true,
@@ -9381,7 +9361,7 @@ The width of the border in pixels. By default the border width is set to zero wh
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "line",
         markers: {
           visible: true,
@@ -9552,7 +9532,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "stepLine", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
 
 #### Example - set the missing values behavior
     <div id="chart"></div>
@@ -10497,12 +10477,14 @@ The supported values are:
 * polarArea
 * polarLine
 * polarScatter
+* stepLine
 * radarArea
 * radarColumn
 * radarLine
 * scatterLine
 * verticalArea
 * verticalBullet
+* verticalStepLine
 * verticalLine
 
 #### Example - set the chart series type
@@ -10510,9 +10492,10 @@ The supported values are:
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        { type: "line", data: [1, 2, 3] }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -10553,13 +10536,11 @@ The data item field which indicates whether to show the point category name in t
           { value: 2, category: "secondValue", visible: true }
         ]
       },
-      series: [
-        {
-          type: "pie",
-          field: "value",
-          visibleInLegendField: "visible"
-        }
-      ]
+      series: [{
+        type: "pie",
+        field: "value",
+        visibleInLegendField: "visible"
+      }]
     });
     </script>
 
@@ -10567,19 +10548,17 @@ The data item field which indicates whether to show the point category name in t
 
 The line width.
 
-> The `width` option is supported when [series.type](#configuration-series.type) is set to "line", "scatterLine", "radarLine" or "polarLine".
+> The `width` option is supported when [series.type](#configuration-series.type) is set to "line", "stepLine", "scatterLine", "radarLine" or "polarLine".
 
 #### Example - set the chart line width
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        {
-          type: "line",
-          width: 6,
-          data: [1, 2, 3]
-        }
-      ]
+      series: [{
+        type: "line",
+        width: 6,
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -12036,9 +12015,9 @@ If set to `true` the chart will display the series labels. By default chart seri
           visible: true
         }
       },
-      series: [
-        { data: [1, 2, 3] }
-      ]
+      series: [{
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -12056,9 +12035,10 @@ The line chart series options. Accepts all values supported by the [series](#con
           opacity: 0.1
         }
       },
-      series: [
-        { type: "line", data: [1, 2] }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2]
+      }]
     });
     </script>
 
@@ -12076,9 +12056,10 @@ The ohlc chart series options. Accepts all values supported by the [series](#con
           opacity: 0.3
         }
       },
-      series: [
-        { type: "ohlc", data: [ [1, 2, 0.5, 1.5] ] }
-      ]
+      series: [{
+        type: "ohlc",
+        data: [ [1, 2, 0.5, 1.5] ]
+      }]
     });
     </script>
 
@@ -14239,9 +14220,9 @@ The color of the value axis. Accepts a valid CSS color string, including hex and
       valueAxis: {
         color: "green"
       },
-      series: [
-        { data: [1, 2] }
-      ]
+      series: [{
+        data: [1, 2]
+      }]
     });
     </script>
 
@@ -14263,9 +14244,10 @@ The crosshair configuration options.
           visible: true
         }
       },
-      series: [
-        { type: "line", data: [1, 2, 3] }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -14284,9 +14266,10 @@ The color of the crosshair. Accepts a valid CSS color string, including hex and 
           visible: true
         }
       },
-      series: [
-        { type: "line", data: [1, 2, 3] }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -14315,12 +14298,10 @@ The following dash types are supported:
           visible: true
         }
       },
-      series: [
-        {
-          type: "line",
-          data: [1, 2, 3]
-        }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -14339,9 +14320,10 @@ The opacity of the crosshair. By default the crosshair is opaque.
           visible: true
         }
       },
-      series: [
-        { type: "line", data: [1, 2, 3] }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
@@ -14369,12 +14351,10 @@ The crosshar tooltip options.
           visible: true
         }
       },
-      series: [
-        {
-          type: "line",
-          data: [1, 2, 3]
-        }
-      ]
+      series: [{
+        type: "line",
+        data: [1, 2, 3]
+      }]
     });
     </script>
 

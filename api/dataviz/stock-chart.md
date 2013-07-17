@@ -119,12 +119,13 @@ The type of the series. Available types:
 * bullet
 * area
 * line
+* stepLine
 
 ### navigator.series.dashType `String`*(default: "solid")*
 
 The dash type of line chart.
 
-> The `dashType` option is taken into consideration only if the [series.type](#configuration-series.type) option is set to "line".
+> The `dashType` option is taken into consideration only if the [series.type](#configuration-series.type) option is set to "line" or "stepLine".
 
 The following dash types are supported:
 
@@ -794,7 +795,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepLine" and "line".
 
 ### navigator.series.opacity `Number`
 
@@ -3772,6 +3773,7 @@ The type of the series. Available types:
 * area
 * column
 * line
+* stepLine
 * candlestick, ohlc
 * bullet
 
@@ -4470,7 +4472,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepLine" and "line".
 
 ### series.negativeColor `String`
 
