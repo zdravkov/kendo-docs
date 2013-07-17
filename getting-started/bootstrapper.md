@@ -21,7 +21,7 @@ The Kendo UI Bootstrapper is a free and open source tool designed to enhance you
 
 ### Bootstrapper Prerequisites
 
-* NodeJS
+* NodeJS (v0.10+)
 * Google Chrome
 
 ### Download
