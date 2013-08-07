@@ -649,6 +649,114 @@ For additional information check the [remove](/api/web/scheduler#events-remove) 
     $scheduler->remove(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### resize
+Fired when the user is resizing an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [resize](/api/web/scheduler#events-resize) event documentation.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resize('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onResize(e) {
+            // handle the resize event.
+        }
+    </script>
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resize('onResize');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resize(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### resizeEnd
+Fired when the user releases the mouse after resizing an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [resizeEnd](/api/web/scheduler#events-resizeEnd) event documentation.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resizeEnd('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onResizeEnd(e) {
+            // handle the resizeEnd event.
+        }
+    </script>
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resizeEnd('onResizeEnd');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resizeEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### resizeStart
+Fired when the user starts to resize an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [resizeStart](/api/web/scheduler#events-resizeStart) event documentation.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resizeStart('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onResizeStart(e) {
+            // handle the resizeStart event.
+        }
+    </script>
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resizeStart('onResizeStart');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->resizeStart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### addResource
 
 Adds one or more SchedulerResource to the Scheduler.
