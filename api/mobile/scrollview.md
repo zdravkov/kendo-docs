@@ -16,13 +16,13 @@ Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui
 
 ### autoBind `Boolean`*(default: true)*
 
- If set to false the widget will not bind to the data source during initialization. In this case data binding will occur when the change event of the data source is fired. By default the widget will bind to the data source specified in the configuration.
+If set to false the widget will not bind to the data source during initialization. In this case data binding will occur when the change event of the data source is fired. By default the widget will bind to the data source specified in the configuration.
 
- **Applicable only in data bound mode.**
+**Applicable only in data bound mode.**
 
 ### bounceVelocityThreshold `Number`*(default: 1.6)*
 
- The velocity threshold after which a swipe will result in a bounce effect.
+The velocity threshold after which a swipe will result in a bounce effect.
 
 ### contentHeight `Number|String`*(default: "auto")*
 
@@ -40,47 +40,47 @@ The height of the ScrollView content. Supports `100%` if the scrollview is embed
 
 ### dataSource `kendo.data.DataSource | Object`
 
- Instance of DataSource that the mobile ScrollView will be bound to. *If DataSource is set, the widget will operate in data bound mode.*
+Instance of DataSource that the mobile ScrollView will be bound to. *If DataSource is set, the widget will operate in data bound mode.*
 
- > **Important:** In case the total amount of displayed data is large, it is recommended to turn off the pager by setting `enablePager: false` in the configuration options or via `data-enable-pager="false"` data attribute.
+> **Important:** In case the total amount of displayed data is large, it is recommended to turn off the pager by setting `enablePager: false` in the configuration options or via `data-enable-pager="false"` data attribute.
 
 ### duration `Number`*(default: 300)*
 
- The milliseconds that take the ScrollView to snap to the current page after released.
+The milliseconds that take the ScrollView to snap to the current page after released.
 
 ### emptyTemplate `String`*(default: "")*
 
- The template which is used to render the pages without content. By default the ScrollView renders a blank page.
+The template which is used to render the pages without content. By default the ScrollView renders a blank page.
 
- **Applicable only in data bound mode.**
+**Applicable only in data bound mode.**
 
 ### enablePager `Boolean`*(default: true)*
 
- If set to true the ScrollView will display a pager. By default pager is enabled.
+If set to true the ScrollView will display a pager. By default pager is enabled.
 
 ### itemsPerPage `Number`*(default: 1)*
 
- Determines how many data items will be passed to the page template.
+Determines how many data items will be passed to the page template.
 
- > **Important:** In order ensure smooth scrolling the **pageSize of the DataSource should be 6 times itemsPerPage amount** or higher. For example, if itemsPerPage is set to 4, then the pageSize must be 24 (4*6) or higher.
+> **Important:** In order ensure smooth scrolling the **pageSize of the DataSource should be 6 times itemsPerPage amount** or higher. For example, if itemsPerPage is set to 4, then the pageSize must be 24 (4*6) or higher.
 
- **Applicable only in data bound mode.**
+**Applicable only in data bound mode.**
 
 ### page `Number`*(default: 0)*
 
- The initial page to display.
+The initial page to display.
 
 ### pageSize `Number`*(default: 1)*
 
 Multiplier applied to the snap amount of the ScrollView. By default, the widget scrolls to the next screen when swipe. If the `pageSize` property is set to `0.5`, the ScrollView will scroll by half of the widget width.
 
- **Not applicable in data bound mode.**
+**Not applicable in data bound mode.**
 
 ### template `String`*(default: "#:data#")*
 
- The template which is used to render the content of pages. By default the ScrollView renders a div element for every page.
+The template which is used to render the content of pages. By default the ScrollView renders a div element for every page.
 
- **Applicable only in data bound mode.**
+**Applicable only in data bound mode.**
 
 #### Example: single item template
 
@@ -128,7 +128,7 @@ Multiplier applied to the snap amount of the ScrollView. By default, the widget 
 
 ### velocityThreshold `Number`*(default: 0.8)*
 
- The velocity threshold after which a swipe will navigate to the next page (as opposed to snapping back to the current page).
+The velocity threshold after which a swipe will navigate to the next page (as opposed to snapping back to the current page).
 
 ## Methods
 
