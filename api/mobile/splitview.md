@@ -14,11 +14,12 @@ publish: true
 
 ### style `String`*(default: "horizontal")*
 
- Defines the SplitView style - horizontal or vertical.
+Defines the SplitView style - horizontal or vertical.
 
 ## Methods
 
 ### destroy
+
 Prepares the **SplitView** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > **Important:** This method does not remove the SplitView element from DOM.
@@ -29,6 +30,14 @@ Prepares the **SplitView** for safe removal from DOM. Detaches all event handler
 
     // detach events
     splitView.destroy();
+
+### expandPanes
+
+Displays the collapsible panes; has effect only when the device is in portrait orientation.
+
+### collapsePanes
+
+Collapses back the collapsible panes (displayed previously with `expandPanes`); has effect only when the device is in portrait orientation.
 
 ## Events
 

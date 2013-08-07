@@ -48,12 +48,69 @@ in a view, but should be put as an immediate child of the mobile application ele
 
     </div>
 
-# Customizing appearance
+
+## Collapsible panes
+
+Collapsible panes are automatically hidden when the device is in portrait orientation. The `expandPanes` method can be wired to a button in order to display the collapsed pane(s) overlayed on top of the main pane. Tapping on the main pane will collapse the overlayed pane(s).
+The expanded panes can also be collapsed when a navigation happens in the mane pane.
+
+### Collapsible pane with button which expands it
+    <style scoped>
+        /* do not show side pane activation button in landscape mode */
+        .km-horizontal #side-pane-button {
+            display: none;
+        }
+    </style>
+
+    <div data-role="splitview" id="my-splitview">
+        <div data-role="pane" data-collapsible="true" data-portrait-width="200">
+            <div data-role="view" data-title="Side Pane">
+                <a data-role="button" data-target="main-pane" href="#main-bar">Bar (Main pane)</a>
+           </div>
+        </div>
+
+        <div data-role="pane" style="-webkit-box-flex: 4" id="main-pane" data-layout="main">
+            <div data-role="layout" data-id="main">
+                <div data-role="header">
+                    <div data-role="navbar">
+                        <a id="side-pane-button" data-role="button" data-align="left" data-click="expandSidePane">Side</a>
+                        <span data-role="view-title"></span>
+                        <a data-role="button" data-align="right" href="#bar">Bar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-role="view" data-title="Main Pane">
+                Main pane Initial view
+            </div>
+
+            <div data-role="view" data-title="Main Pane Bar View" id="main-bar" data-show="collapseSidePane">
+                Main pane Bar view
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            new kendo.mobile.Application();
+        });
+
+        function expandSidePane() {
+            $("#my-splitview").data('kendoMobileSplitView').expandPanes();
+        }
+
+        /* called when the bar view is displayed */
+        function collapseSidePane() {
+            $("#my-splitview").data("kendoMobileSplitView").collapsePanes();
+        }
+    </script>
+
+## Customizing appearance
 
 By default Kendo UI Mobile is configured to show a horizontal SplitView with smaller left and bigger right pane in 1:2 proportion.
 In order to resize one of the panes, use CSS to set its width or adjust the flexibility of the flex boxes (if the width is set, the other pane flexibility should be set to a high number, like 1000).
 
-## Set pane width to 300px or change the proportions to 1:3
+### Set pane width to 300px or change the proportions to 1:3
 
     <div data-role="splitview" id="main">
       <div data-role="pane" id="side-pane">
