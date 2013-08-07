@@ -12,25 +12,38 @@ publish: true
 
 ## Configuration
 
+### collapsible `Boolean` *(default: false)*
+
+Applicable when the pane is inside a SplitView. If set to `true`, the pane will be hidden when the device is in portrait position. The [expandPanes](/api/mobile/splitview#methods-expandPanes) SplitView method displays the hidden panes.
+
+> In order for the collapsible to size itself correctly, the portraitWidth configuration option should be set too.
+
+The id of the initial mobile View to display.
+
 ### initial `String`
 
- The id of the initial mobile View to display.
+The id of the initial mobile View to display.
 
 ### layout `String`
 
- The id of the default Pane Layout.
+The id of the default Pane Layout.
 
-### loading `String`*(default: "Loading...")*
+### loading `String` *(default: "Loading...")*
 
- The text displayed in the loading popup. Setting this value to false will disable the loading popup.
+The text displayed in the loading popup. Setting this value to false will disable the loading popup.
+
+### portraitWidth `Number`
+
+Sets the pane width in pixels when the device is in portrait position.
 
 ### transition `String`
 
- The default View transition.
+The default View transition.
 
 ## Methods
 
 ### destroy
+
 Prepares the **Pane** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > **Important:** This method does not remove the Pane element from DOM.
