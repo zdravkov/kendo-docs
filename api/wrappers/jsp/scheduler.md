@@ -340,6 +340,54 @@ For additional information check the [remove](/api/web/scheduler#events-remove) 
         }
     </script>
 
+### resizeStart `String`
+
+Fired when the user starts to resize an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [resizeStart](/api/web/scheduler#events-resizeStart) event documentation.
+
+#### Example
+    <kendo:scheduler resizeStart="handle_resizeStart">
+    </kendo:scheduler>
+    <script>
+        function handle_resizeStart(e) {
+            // Code to handle the resizeStart event.
+        }
+    </script>
+
+### resize `String`
+
+Fired when the user is resizing an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [resize](/api/web/scheduler#events-resize) event documentation.
+
+#### Example
+    <kendo:scheduler resize="handle_resize">
+    </kendo:scheduler>
+    <script>
+        function handle_resize(e) {
+            // Code to handle the resize event.
+        }
+    </script>
+
+### resizeEnd `String`
+
+Fired when the user releases the mouse after resizing an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [resizeEnd](/api/web/scheduler#events-resizeEnd) event documentation.
+
+#### Example
+    <kendo:scheduler resizeEnd="handle_resizeEnd">
+    </kendo:scheduler>
+    <script>
+        function handle_resizeEnd(e) {
+            // Code to handle the resizeEnd event.
+        }
+    </script>
+
 ### save `String`
 
 Fired when the user saves a scheduler event by clicking the "save" button.The event handler function context (available via the this keyword) will be set to the widget instance.
@@ -518,6 +566,60 @@ For additional information check the [remove](/api/web/scheduler#events-remove) 
                 }
             </script>
         </kendo:scheduler-remove>
+    </kendo:scheduler>
+
+### kendo:scheduler-resizeStart
+
+Fired when the user starts to resize an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [resizeStart](/api/web/scheduler#events-resizeStart) event documentation.
+
+#### Example
+    <kendo:scheduler>
+        <kendo:scheduler-resizeStart>
+            <script>
+                function(e) {
+                    // Code to handle the resizeStart event.
+                }
+            </script>
+        </kendo:scheduler-resizeStart>
+    </kendo:scheduler>
+
+### kendo:scheduler-resize
+
+Fired when the user is resizing an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [resize](/api/web/scheduler#events-resize) event documentation.
+
+#### Example
+    <kendo:scheduler>
+        <kendo:scheduler-resize>
+            <script>
+                function(e) {
+                    // Code to handle the resize event.
+                }
+            </script>
+        </kendo:scheduler-resize>
+    </kendo:scheduler>
+
+### kendo:scheduler-resizeEnd
+
+Fired when the user releases the mouse after resizing an event.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [resizeEnd](/api/web/scheduler#events-resizeEnd) event documentation.
+
+#### Example
+    <kendo:scheduler>
+        <kendo:scheduler-resizeEnd>
+            <script>
+                function(e) {
+                    // Code to handle the resizeEnd event.
+                }
+            </script>
+        </kendo:scheduler-resizeEnd>
     </kendo:scheduler>
 
 ### kendo:scheduler-save
