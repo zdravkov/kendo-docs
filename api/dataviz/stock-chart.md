@@ -119,6 +119,7 @@ The type of the series. Available types:
 * bullet
 * area
 * line
+* stepArea
 * stepLine
 
 ### navigator.series.dashType `String`*(default: "solid")*
@@ -776,7 +777,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepLine" and "line".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepArea", "stepLine" and "line".
 
 ### navigator.series.opacity `Number`
 
@@ -844,7 +845,7 @@ The tooltip font.
 
 The tooltip format. Format variables depend on the series type:
 
-* Area, column, line and pie
+* Area, column, stepArea, stepLine, line and pie
     *   **0** - value
 * Candlestick and OHLC
     *   **0** - open value
@@ -4434,7 +4435,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepLine" and "line".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepArea", "stepLine" and "line".
 
 ### series.negativeColor `String`
 
@@ -4510,7 +4511,7 @@ The tooltip font.
 
 The tooltip format. Format variables depend on the series type:
 
-* Area, column, line and pie
+* Area, column, stepArea, stepLine, line and pie
     *   **0** - value
 * Candlestick and OHLC
     *   **0** - open value
