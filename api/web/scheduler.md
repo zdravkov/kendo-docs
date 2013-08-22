@@ -2909,6 +2909,83 @@ The widget instance which fired the event.
     scheduler.bind("moveEnd", scheduler_moveEnd);
     </script>
 
+### navigate
+
+Fired when the user changes selected date, view or of the scheduler
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.action `String`
+
+Name of the action. Possible values are:
+
+* changeView - navigate to diffrent view
+* next - navigate to next time period
+* previous - navigate to previous time period
+* today - select today's date
+* changeDate - a date is selected via the Calendar
+
+##### e.date `Date`
+
+Selected date
+
+##### e.view `String`
+
+Name of the view
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Scheduler`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "navigate" event during initialization
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ],
+      navigate: function(e) {
+        console.log("navigate", e.date);
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "navigate" event after initialization
+
+    <div id="scheduler"></div>
+    <script>
+    function scheduler_navigate(e) {
+      console.log("navigate", e.date);
+    }
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.bind("navigate", scheduler_navigate);
+    </script>
+
 ### remove
 
 Fired when the user clicks the "destroy" button.
