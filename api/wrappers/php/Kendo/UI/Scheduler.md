@@ -613,6 +613,42 @@ For additional information check the [moveStart](/api/web/scheduler#events-moveS
     $scheduler->moveStart(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### navigate
+Fired when the user changes selected date, view or of the schedulerThe event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [navigate](/api/web/scheduler#events-navigate) event documentation.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->navigate('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onNavigate(e) {
+            // handle the navigate event.
+        }
+    </script>
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->navigate('onNavigate');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->navigate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### remove
 Fired when the user clicks the "destroy" button.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [remove](/api/web/scheduler#events-remove) event documentation.
