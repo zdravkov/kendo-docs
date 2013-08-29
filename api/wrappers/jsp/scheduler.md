@@ -324,6 +324,22 @@ For additional information check the [moveEnd](/api/web/scheduler#events-moveEnd
         }
     </script>
 
+### navigate `String`
+
+Fired when the user changes selected date, view or of the schedulerThe event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [navigate](/api/web/scheduler#events-navigate) event documentation.
+
+#### Example
+    <kendo:scheduler navigate="handle_navigate">
+    </kendo:scheduler>
+    <script>
+        function handle_navigate(e) {
+            // Code to handle the navigate event.
+        }
+    </script>
+
 ### remove `String`
 
 Fired when the user clicks the "destroy" button.The event handler function context (available via the this keyword) will be set to the widget instance.
@@ -548,6 +564,24 @@ For additional information check the [moveEnd](/api/web/scheduler#events-moveEnd
                 }
             </script>
         </kendo:scheduler-moveEnd>
+    </kendo:scheduler>
+
+### kendo:scheduler-navigate
+
+Fired when the user changes selected date, view or of the schedulerThe event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [navigate](/api/web/scheduler#events-navigate) event documentation.
+
+#### Example
+    <kendo:scheduler>
+        <kendo:scheduler-navigate>
+            <script>
+                function(e) {
+                    // Code to handle the navigate event.
+                }
+            </script>
+        </kendo:scheduler-navigate>
     </kendo:scheduler>
 
 ### kendo:scheduler-remove
