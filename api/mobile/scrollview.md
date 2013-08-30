@@ -243,6 +243,8 @@ Determines how many data items will be passed to the page template.
 
 **Applicable only in data bound mode.**
 
+#### Example
+
     <div data-role="view" data-stretch="true">
       <div data-role="scrollview" 
         data-source="dataSource" 
