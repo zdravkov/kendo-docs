@@ -321,7 +321,25 @@ Scrolls the container to the top.
 
     <script>
     function reset() {
-        $("#scroller").data("kendoMobileScroller").reset()
+        $("#scroller").data("kendoMobileScroller").reset();
+    }
+
+    new kendo.mobile.Application();
+    </script>
+
+#### Example
+
+     <div data-role="view">
+
+         <div style="height: 1500px">
+            Content
+         </div>
+         <a data-role="button" data-click="reset">Reset</a>
+     </div>
+
+    <script>
+    function reset() {
+       kendo.mobile.application.scroller().reset();
     }
 
     new kendo.mobile.Application();
