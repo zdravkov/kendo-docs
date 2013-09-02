@@ -321,7 +321,7 @@ Scrolls the container to the top.
 
     <script>
     function reset() {
-      console.log($("#scroller").data("kendoMobileScroller").reset());
+        $("#scroller").data("kendoMobileScroller").reset()
     }
 
     new kendo.mobile.Application();
