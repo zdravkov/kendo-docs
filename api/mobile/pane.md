@@ -16,7 +16,7 @@ publish: true
 
 Applicable when the pane is inside a SplitView. If set to `true`, the pane will be hidden when the device is in portrait position. The [expandPanes](/api/mobile/splitview#methods-expandPanes) SplitView method displays the hidden panes.
 
-> In order for the collapsible to size itself correctly, the portraitWidth configuration option should be set too.
+> In order for the collapsible to size itself correctly, the `portraitWidth` configuration option should be set too.
 
 The id of the initial mobile View to display.
 
@@ -60,8 +60,8 @@ The id of the default Pane Layout.
         <div data-role="layout" data-id="my">
           <div data-role="header">Layout Header</div>
         </div>
-        </div>
-     </div>
+      </div>
+    </div>
 
     <script>
     new kendo.mobile.Application();
@@ -85,14 +85,13 @@ The text displayed in the loading popup. Setting this value to false will disabl
     new kendo.mobile.Application();
 
     function showLoading(e) {
-     $("#my-pane").data("kendoMobilePane").showLoading();
+      $("#my-pane").data("kendoMobilePane").showLoading();
     }
     </script>
 
 ### portraitWidth `Number`
 
 Sets the pane width in pixels when the device is in portrait position.
-
 
 ### transition `String`
 
@@ -108,7 +107,7 @@ The default View transition.
      </div>
 
     <script>
-        new kendo.mobile.Application();
+    new kendo.mobile.Application();
     </script>
 
 ## Methods
@@ -137,11 +136,11 @@ Hide the loading animation.
     new kendo.mobile.Application();
 
     function showLoading(e) {
-     $("#my-pane").data("kendoMobilePane").showLoading();
+      $("#my-pane").data("kendoMobilePane").showLoading();
 
-     setTimeout(function() {
-         $("#my-pane").data("kendoMobilePane").hideLoading();
-     }, 1000);
+      setTimeout(function() {
+          $("#my-pane").data("kendoMobilePane").hideLoading();
+      }, 1000);
     }
     </script>
 
@@ -194,7 +193,7 @@ The id or URL of the view.
 
 ##### transition `String`
 
-The transition to apply when navigating. See [View Transitions](getting-started/mobile/application#view-transitions) for more information.
+The transition to apply when navigating. See [View Transitions](/getting-started/mobile/application#view-transitions) for more information.
 
 ### showLoading
 
@@ -214,11 +213,11 @@ Show the loading animation.
     new kendo.mobile.Application();
 
     function showLoading(e) {
-     $("#my-pane").data("kendoMobilePane").showLoading();
+      $("#my-pane").data("kendoMobilePane").showLoading();
 
-     setTimeout(function() {
-         $("#my-pane").data("kendoMobilePane").hideLoading();
-     }, 1000);
+      setTimeout(function() {
+          $("#my-pane").data("kendoMobilePane").hideLoading();
+      }, 1000);
     }
     </script>
 
@@ -264,17 +263,18 @@ Triggered when pane navigates to a view.
      </div>
 
     <script>
-        function onNavigate(e) {
-            console.log(e);
-        }
-        new kendo.mobile.Application();
+    function onNavigate(e) {
+        console.log(e);
+    }
+
+    new kendo.mobile.Application();
     </script>
 
 #### Event Data
 
 ##### e.url `jQuery`
 
-The url of the view
+The URL of the view
 
 ### viewShow
 
@@ -290,10 +290,10 @@ Triggered after the pane displays a view.
      </div>
 
     <script>
-        function viewShown(e) {
-            console.log(e);
-        }
-        new kendo.mobile.Application();
+    function viewShown(e) {
+        console.log(e);
+    }
+    new kendo.mobile.Application();
     </script>
 
 #### Event Data

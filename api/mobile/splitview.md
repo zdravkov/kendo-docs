@@ -28,8 +28,7 @@ Defines the SplitView style - horizontal or vertical.
      </div>
 
     <script>
-
-        new kendo.mobile.Application();
+    new kendo.mobile.Application();
     </script>
 
 ## Methods
@@ -67,10 +66,10 @@ Fires after the mobile SplitView and its child widgets are initialized.
      </div>
 
     <script>
-        function onInit(e) {
-          console.log(e);
-        }
-        new kendo.mobile.Application();
+    function onInit(e) {
+      console.log(e);
+    }
+    new kendo.mobile.Application();
     </script>
 
 #### Event Data
@@ -95,10 +94,10 @@ Fires when the mobile SplitView becomes visible.
      </div>
 
     <script>
-        function onShow(e) {
-          console.log(e);
-        }
-        new kendo.mobile.Application();
+    function onShow(e) {
+      console.log(e);
+    }
+    new kendo.mobile.Application();
     </script>
 
 #### Event Data
