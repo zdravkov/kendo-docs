@@ -16,11 +16,11 @@ Represents the Kendo UI DropDownList widget. Inherits from [Widget](/api/framewo
 
 ### animation `Object`
 
- Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
+Animations to be used for opening/closing the popup. Setting to false will turn of the animation.
 
 ### animation.close `Object`
 
- Animation to be used for closing of the popup.
+Animation to be used for closing of the popup.
 
 #### Example
 
@@ -39,17 +39,17 @@ Represents the Kendo UI DropDownList widget. Inherits from [Widget](/api/framewo
          });
      </script>
 
-### animation.close.effects `String`
-
-Effect to be used for closing of the popup.
-
 ### animation.close.duration `Number`
 
 Difines the animation duration.
 
+### animation.close.effects `String`
+
+Effect to be used for closing of the popup.
+
 ### animation.open `Object`
 
- Animation to be used for opening of the popup.
+Animation to be used for opening of the popup.
 
 #### Example
 
@@ -67,17 +67,17 @@ Difines the animation duration.
          });
      </script>
 
-### animation.open.effects `String`
-
-Effect to be used for opening of the popup.
-
 ### animation.open.duration `Number`
 
 Difines the animation duration.
 
+### animation.open.effects `String`
+
+Effect to be used for opening of the popup.
+
 ### autoBind `Boolean`*(default: true)*
 
- Controls whether to bind the widget on initialization.
+Controls whether to bind the widget on initialization.
 
 #### Example
 
@@ -124,7 +124,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### dataTextField `String`*(default: "")*
 
- Sets the field of the data item that provides the text content of the list items.
+Sets the field of the data item that provides the text content of the list items.
 
 #### Example
 
@@ -137,7 +137,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### dataValueField `String`*(default: "")*
 
- Sets the field of the data item that provides the value content of the list items.
+Sets the field of the data item that provides the value content of the list items.
 
 #### Example
 
@@ -150,7 +150,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### delay `Number`*(default: 500)*
 
- Specifies the delay in ms before the search text typed by the end user is cleared.
+Specifies the delay in ms before the search text typed by the end user is cleared.
 
 #### Example
 
@@ -160,7 +160,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### enable `Boolean`*(default: true)*
 
- Controls whether the DropDownList should be initially enabled.
+Controls whether the DropDownList should be initially enabled.
 
 #### Example
 
@@ -177,7 +177,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### height `Number`*(default: 200)*
 
- Define the height of the drop-down list in pixels.
+Define the height of the drop-down list in pixels.
 
 #### Example
 
@@ -187,7 +187,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### ignoreCase `String`*(default: true)*
 
- Controls whether the search should be case sensitive.
+Controls whether the search should be case sensitive.
 
 #### Example
 
@@ -197,7 +197,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### index `Number`*(default: 0)*
 
- Defines the initial selected item.
+Defines the initial selected item.
 
 #### Example
 
@@ -207,7 +207,7 @@ Instance of DataSource or the data that the DropDownList will be bound to.
 
 ### optionLabel `String | Object`*(default: "")*
 
- Define the text of the default empty item. If the value is an object, then the widget will use it directly.
+Define the text of the default empty item. If the value is an object, then the widget will use it directly.
  Note that object should have atleast the dataValueField and dataTextField properties. Otherwise, widget will show `undefined`.
 
 > **Important:** Widget's value will be equal to the optionLabel if dataValueField/dataTextField are same or not defined
@@ -256,7 +256,7 @@ Template to be used for rendering the items in the list.
 
 ### text `String`*(default: "")*
 
- Define the text of the widget, when the autoBind is set to false.
+Define the text of the widget, when the autoBind is set to false.
 
 #### Example
 
@@ -267,7 +267,7 @@ Template to be used for rendering the items in the list.
 
 ### value `String`*(default: "")*
 
- Define the value of the widget
+Define the value of the widget
 
 #### Example
 
@@ -275,6 +275,34 @@ Template to be used for rendering the items in the list.
          dataSource: ["Item1", "Item2"],
          value: "Item1"
     });
+
+### valuePrimitive `Boolean`*(default: false)*
+
+Spcifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+
+#### Example - specify that the View-Model field should be updated with the selected item value
+
+    <select id="dropdown" data-bind="value: selectedProductId, source: products" >
+    </select>
+  
+    <script>
+    $("#dropdown").kendoDropDownList({
+      valuePrimitive: true,
+      dataTextField: "name",
+      dataValueField: "id",
+      optionLabel: "Select product..."        
+    });
+    var viewModel = kendo.observable({
+      selectedProductId: null,
+      products: [
+        { id: 1, name: "Coffee" },
+        { id: 2, name: "Tea" },
+        { id: 3, name: "Juice" }
+      ]
+    });
+      
+    kendo.bind($("#dropdown"), viewModel);
+    </script>
 
 ## Fields
 
@@ -324,6 +352,7 @@ The zero-based index of the data record
 `Object` The raw data record. Returns <i>undefined</i> if no data.
 
 ### destroy
+
 Prepares the **DropDownList** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > **Important:** This method does not remove the DropDownList element from DOM.
@@ -352,27 +381,6 @@ Enables/disables the dropdownlist widget
 
 Desired state
 
-### readonly
-
-Controls whether the widget is editable or readonly.
-
-#### Example
-
-    // get a reference to the timepicker widget
-    var timepicker = $("timepicker").data("kendoTimePicker");
-
-    // makes timepicker readonly
-    timepicker.readonly();
-
-    // makes timepicker editable
-    timepicker.readonly(false);
-
-#### Parameters
-
-##### readonly `Boolean`
-
-The argument, which defines whether the timepicker should be readonly or editable.
-
 ### focus
 
 Focuses the widget.
@@ -395,6 +403,27 @@ Opens the drop-down list.
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
     // open the drop down
     dropdownlist.open();
+
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the timepicker widget
+    var timepicker = $("timepicker").data("kendoTimePicker");
+
+    // makes timepicker readonly
+    timepicker.readonly();
+
+    // makes timepicker editable
+    timepicker.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the timepicker should be readonly or editable.
 
 ### refresh
 
@@ -546,6 +575,38 @@ The value to set.
 
 ## Events
 
+### cascade
+
+Triggered when value of the widget is changed via API or user interaction.
+
+#### Attach cascade event handler during initialization; detach via unbind()
+
+    // event handler for cascade
+    var onCascade = function() {
+        //cascade event
+    };
+
+    // attach select event handler during initialization
+    var dropdownlist = $("#dropdownlist").kendoDropDownList({
+        cascade: onCascade
+    });
+
+    // detach cascade event handler via unbind()
+    dropdownlist.data("kendoDropDownList").unbind("cascade", onCascade);
+
+#### Attach cascade event handler via bind(); detach via unbind()
+
+    // event handler for cascade
+    var onCascade = function(e) {
+        //cascade event
+    };
+
+    // attach cascade event handler via bind()
+    $("#dropdownlist").data("kendoDropDownList").bind("cascade", onCascade);
+
+    // detach cascade event handler via unbind()
+    $("#dropdownlist").data("kendoDropDownList").unbind("cascade", onCascade);
+
 ### change
 
 Fires when the value has been changed.
@@ -668,60 +729,37 @@ Triggered when a Li element is selected.
 
 The selected item chosen by a user.
 
-### cascade
-
-Triggered when value of the widget is changed via API or user interaction.
-
-#### Attach cascade event handler during initialization; detach via unbind()
-
-    // event handler for cascade
-    var onCascade = function() {
-        //cascade event
-    };
-
-    // attach select event handler during initialization
-    var dropdownlist = $("#dropdownlist").kendoDropDownList({
-        cascade: onCascade
-    });
-
-    // detach cascade event handler via unbind()
-    dropdownlist.data("kendoDropDownList").unbind("cascade", onCascade);
-
-#### Attach cascade event handler via bind(); detach via unbind()
-
-    // event handler for cascade
-    var onCascade = function(e) {
-        //cascade event
-    };
-
-    // attach cascade event handler via bind()
-    $("#dropdownlist").data("kendoDropDownList").bind("cascade", onCascade);
-
-    // detach cascade event handler via unbind()
-    $("#dropdownlist").data("kendoDropDownList").unbind("cascade", onCascade);
-
 ## Field
 
-### element
-A jQuery object of the original input element.
-
-### options
-An object, which holds the options of the widget.
-
-### wrapper
-A jQuery object of the span element which wraps the input.
-
-### span
-A jQuery object of the span element which holds the selected text.
-
-### list
-A jQuery object of the drop-down list element.
-
-### ul
-A jQuery object of the ul element, which holds the available options.
-
 ### dataSource
+
 The DataSource instance used by the widget.
 
+### element
+
+A jQuery object of the original input element.
+
+### list
+
+A jQuery object of the drop-down list element.
+
+### options
+
+An object, which holds the options of the widget.
+
 ### popup
+
 The Popup instace used by the widget.
+
+### span
+
+A jQuery object of the span element which holds the selected text.
+
+### ul
+
+A jQuery object of the ul element, which holds the available options.
+
+### wrapper
+
+A jQuery object of the span element which wraps the input.
+

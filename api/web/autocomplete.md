@@ -65,15 +65,15 @@ The animation played when the suggestion popup is closed.
     });
     </script>
 
+### animation.close.duration `Number` *(default: 100)*
+
+The duration of the close animation in milliseconds.
+
 ### animation.close.effects `String`
 
 The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
 
 [Complete list of available animations](/api/framework/fx#effects)
-
-### animation.close.duration `Number` *(default: 100)*
-
-The duration of the close animation in milliseconds.
 
 ### animation.open `Object`
 
@@ -93,15 +93,15 @@ The animation played when the suggestion popup is opened.
     });
     </script>
 
+### animation.open.duration `Number` *(default: 200)*
+
+The duration of the open animation in milliseconds.
+
 ### animation.open.effects `String`
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
 [Complete list of available animations](/api/framework/fx#effects)
-
-### animation.open.duration `Number` *(default: 200)*
-
-The duration of the open animation in milliseconds.
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
@@ -347,6 +347,31 @@ The [template](/api/framework/kendo#methods-template) used to render the suggest
     });
     </script>
 
+### valuePrimitive `Boolean`*(default: false)*
+
+Spcifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item text field. If set to false, the View-Model field will be updated with the selected item.
+
+#### Example - specify that the View-Model field should be updated with the selected item text
+
+    <input id="autocomplete" data-bind="value: productName, source: products" />    
+  
+    <script>
+    $("#autocomplete").kendoAutoComplete({
+      valuePrimitive: true,
+      dataTextField: "name"                
+    });
+    var viewModel = kendo.observable({
+      productName: null,
+      products: [
+        { id: 1, name: "Coffee" },
+        { id: 2, name: "Tea" },
+        { id: 3, name: "Juice" }
+      ]
+    });
+
+    kendo.bind($("#autocomplete"), viewModel);
+    </script>
+
 ## Fields
 
 ### dataSource `kendo.data.DataSource`
@@ -465,6 +490,19 @@ If set to `true` the widget will be enabled. If set to `false` the widget will b
     autocomplete.enable(false);
     </script>
 
+### focus
+
+Focuses the widget.
+
+#### Example - focus the widget
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete();
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+    autocomplete.focus();
+    </script>
+
 ### readonly
 
 Toggles the readonly state of the widget. When the widget is readonly it doesn't allow user input.
@@ -484,19 +522,6 @@ If set to `true` the widget will not allow user input. If set to `false` the wid
     $("#autocomplete").kendoAutoComplete();
     var autocomplete = $("#autocomplete").data("kendoAutoComplete");
     autocomplete.readonly(true);
-    </script>
-
-### focus
-
-Focuses the widget.
-
-#### Example - focus the widget
-
-    <input id="autocomplete" />
-    <script>
-    $("#autocomplete").kendoAutoComplete();
-    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
-    autocomplete.focus();
     </script>
 
 ### refresh
@@ -816,23 +841,31 @@ The widget instance which fired the event.
 
 ## Field
 
-### element
-A jQuery object of the original input element.
-
-### options
-An object, which holds the options of the widget.
-
-### wrapper
-A jQuery object of the span element which wraps the input.
-
-### list
-A jQuery object of the drop-down list element.
-
-### ul
-A jQuery object of the ul element, which holds the available options.
-
 ### dataSource
+
 The DataSource instance used by the widget.
 
+### element
+
+A jQuery object of the original input element.
+
+### list
+
+A jQuery object of the drop-down list element.
+
+### options
+
+An object, which holds the options of the widget.
+
 ### popup
+
 The Popup instace used by the widget.
+
+### ul
+
+A jQuery object of the ul element, which holds the available options.
+
+### wrapper
+
+A jQuery object of the span element which wraps the input.
+

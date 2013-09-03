@@ -15,7 +15,7 @@ Represents the Kendo UI MultiSelect widget. Inherits from [Widget](/api/framewor
 
 ### animation `Object`
 
- Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
+Animations to be used for opening/closing the popup. Setting to false will turn off the animation.
 
 #### Example
 
@@ -25,7 +25,7 @@ Represents the Kendo UI MultiSelect widget. Inherits from [Widget](/api/framewor
 
 ### animation.close `Object`
 
- Animation to be used for closing of the popup.
+Animation to be used for closing of the popup.
 
 #### Example
 
@@ -42,17 +42,17 @@ Represents the Kendo UI MultiSelect widget. Inherits from [Widget](/api/framewor
          });
      </script>
 
-### animation.close.effects `String`
-
-Effect to be used for closing of the popup.
-
 ### animation.close.duration `Number`
 
 Difines the animation duration.
 
+### animation.close.effects `String`
+
+Effect to be used for closing of the popup.
+
 ### animation.open `Object`
 
- Animation to be used for opening of the popup.
+Animation to be used for opening of the popup.
 
 #### Example
 
@@ -70,17 +70,17 @@ Difines the animation duration.
          });
      </script>
 
-### animation.open.effects `String`
-
-Effect to be used for opening of the popup.
-
 ### animation.open.duration `Number`
 
 Difines the animation duration.
 
+### animation.open.effects `String`
+
+Effect to be used for opening of the popup.
+
 ### autoBind `Boolean`*(default: true)*
 
- Controls whether to bind the widget to the DataSource on initialization.
+Controls whether to bind the widget to the DataSource on initialization.
 
 #### Example
 
@@ -115,7 +115,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### dataTextField `String`*(default: "")*
 
- Sets the field of the data item that provides the text content of the list items.
+Sets the field of the data item that provides the text content of the list items.
 
 #### Example
 
@@ -126,7 +126,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### dataValueField `String`*(default: "")*
 
- Sets the field of the data item that provides the value content of the list items.
+Sets the field of the data item that provides the value content of the list items.
 
 #### Example
 
@@ -137,7 +137,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### delay `Number`*(default: 200)*
 
- Specifies the delay in ms after which the multiselect will start filtering dataSource.
+Specifies the delay in ms after which the multiselect will start filtering dataSource.
 
 #### Example
 
@@ -147,7 +147,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### enable `Boolean`*(default: true)*
 
- Controls whether the multiselect should be initially enabled.
+Controls whether the multiselect should be initially enabled.
 
 #### Example
 
@@ -163,7 +163,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### filter `String`*(default: "none")*
 
- Defines the type of filtration.
+Defines the type of filtration.
 
 #### Example
 
@@ -173,7 +173,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### height `Number`*(default: 200)*
 
- Define the height of the drop-down list in pixels.
+Define the height of the drop-down list in pixels.
 
 #### Example
 
@@ -183,7 +183,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### highlightFirst `Boolean`*(default: true)*
 
- Controls whether the first item will be automatically highlighted.
+Controls whether the first item will be automatically highlighted.
 
 #### Example
 
@@ -193,7 +193,7 @@ A local JavaScript object or instance of DataSource or the data that the multise
 
 ### ignoreCase `String`*(default: true)*
 
- Defines whether the filtration should be case sensitive.
+Defines whether the filtration should be case sensitive.
 
 #### Example
 
@@ -201,52 +201,6 @@ A local JavaScript object or instance of DataSource or the data that the multise
         filter: 'contains',
         ignoreCase: false //now filtration will be case sensitive
     });
-
-### minLength `Number`*(default: 1)*
-
- Specifies the minimum characters that should be typed before the multiselect activates
-
-#### Example
-
-    $("#multiselect").kendoMultiSelect({
-        minLength: 3
-    });
-
-### maxSelectedItems `Number`*(default: null)*
-
- Defines the limit of the selected items. If set to null widget will not limit number of the selected items.
-
-#### Example
-
-    $("#multiselect").kendoMultiSelect({
-        maxSelectedItems: 3 //only three or less items chould be selected
-    });
-
-### placeholder `String`*(default: "")*
-
- A string that appears in the textbox when the multiselect has no value.
-
-
-#### Example
-
-    //multiselect initialization
-     <script>
-         $("#multiselect").kendoMultiSelect({
-             dataSource: dataSource,
-             placeholder: "Select..."
-         });
-     </script>
-
-#### Example
-
-    <select id="multiselect" data-placeholder="Select..."></select>
-
-     //multiselect initialization
-     <script>
-         $("#multiselect").kendoMultiSelect({
-             dataSource: dataSource
-         });
-     </script>
 
 ### itemTemplate `String`
 
@@ -273,6 +227,52 @@ Template to be used for rendering the items in the list.
          });
      </script>
 
+### maxSelectedItems `Number`*(default: null)*
+
+Defines the limit of the selected items. If set to null widget will not limit number of the selected items.
+
+#### Example
+
+    $("#multiselect").kendoMultiSelect({
+        maxSelectedItems: 3 //only three or less items chould be selected
+    });
+
+### minLength `Number`*(default: 1)*
+
+Specifies the minimum characters that should be typed before the multiselect activates
+
+#### Example
+
+    $("#multiselect").kendoMultiSelect({
+        minLength: 3
+    });
+
+### placeholder `String`*(default: "")*
+
+A string that appears in the textbox when the multiselect has no value.
+
+
+#### Example
+
+    //multiselect initialization
+     <script>
+         $("#multiselect").kendoMultiSelect({
+             dataSource: dataSource,
+             placeholder: "Select..."
+         });
+     </script>
+
+#### Example
+
+    <select id="multiselect" data-placeholder="Select..."></select>
+
+     //multiselect initialization
+     <script>
+         $("#multiselect").kendoMultiSelect({
+             dataSource: dataSource
+         });
+     </script>
+
 ### tagTemplate `String`
 
 Template to be used for rendering the tags of the selected items.
@@ -296,7 +296,7 @@ Template to be used for rendering the tags of the selected items.
 
 ### value `Array`*(default: [])*
 
- Define the value of the widget
+Define the value of the widget
 
 #### Example
 
@@ -315,6 +315,34 @@ Template to be used for rendering the tags of the selected items.
         dataValueField: "value",
         value: [{ text: "Item 1", value: "1" }, { text: "Item 2", value: "2" }]
     });
+
+### valuePrimitive `Boolean`*(default: false)*
+
+Spcifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+
+#### Example - specify that the View-Model field should be updated with the selected item value
+
+    <select id="multiselect" type="multiple" data-bind="value: selectedProductIds, source: products" >
+    </select>
+  
+    <script>
+    $("#multiselect").kendoMultiSelect({
+      valuePrimitive: true,
+      dataTextField: "name",
+      dataValueField: "id",
+      optionLabel: "Select products..."        
+    });
+    var viewModel = kendo.observable({
+      selectedProductIds: null,
+      products: [
+        { id: 1, name: "Coffee" },
+        { id: 2, name: "Tea" },
+        { id: 3, name: "Juice" }
+      ]
+    });
+
+    kendo.bind($("#multiselect"), viewModel);
+    </script>
 
 ## Methods
 
@@ -344,6 +372,7 @@ Returns list of raw data records corresponding to the selected items.
 `Array` The raw data records. Returns empty array ([]) if no selected options
 
 ### destroy
+
 Prepares the **multiselect** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > **Important:** This method does not remove the multiselect element from DOM.
@@ -372,27 +401,6 @@ Enables/disables the multiselect widget
 
 Desired state
 
-### readonly
-
-Controls whether the widget is editable or readonly.
-
-#### Example
-
-    // get a reference to the multiselect widget
-    var multiselect = $("multiselect").data("kendoMultiSelect");
-
-    // makes multiselect readonly
-    multiselect.readonly();
-
-    // makes multiselect editable
-    multiselect.readonly(false);
-
-#### Parameters
-
-##### readonly `Boolean`
-
-The argument, which defines whether the multiselect should be readonly or editable.
-
 ### focus
 
 Focuses the widget.
@@ -416,6 +424,27 @@ Opens the drop-down list.
     // get a reference to instance of the Kendo UI multiselect
     var multiselect = $("#multiselect").data("kendoMultiSelect");
     multiselect.open();
+
+### readonly
+
+Controls whether the widget is editable or readonly.
+
+#### Example
+
+    // get a reference to the multiselect widget
+    var multiselect = $("multiselect").data("kendoMultiSelect");
+
+    // makes multiselect readonly
+    multiselect.readonly();
+
+    // makes multiselect editable
+    multiselect.readonly(false);
+
+#### Parameters
+
+##### readonly `Boolean`
+
+The argument, which defines whether the multiselect should be readonly or editable.
 
 ### refresh
 
@@ -640,29 +669,39 @@ The selected item chosen by a user.
 
 ## Field
 
-### element
-A jQuery object of the original input element.
-
-### options
-An object, which holds the options of the widget.
-
-### wrapper
-A jQuery object of the span element which wraps the input.
-
-### input
-A jQuery object of the visible input element, used to filter the available options.
-
-### tagList
-A jQuery object of the ul element, which holds the selected tags.
-
-### list
-A jQuery object of the drop-down list element.
-
-### ul
-A jQuery object of the ul element, which holds the available options.
-
 ### dataSource
+
 The DataSource instance used by the widget.
 
+### element
+
+A jQuery object of the original input element.
+
+### input
+
+A jQuery object of the visible input element, used to filter the available options.
+
+### list
+
+A jQuery object of the drop-down list element.
+
+### options
+
+An object, which holds the options of the widget.
+
 ### popup
+
 The Popup instace used by the widget.
+
+### tagList
+
+A jQuery object of the ul element, which holds the selected tags.
+
+### ul
+
+A jQuery object of the ul element, which holds the available options.
+
+### wrapper
+
+A jQuery object of the span element which wraps the input.
+
