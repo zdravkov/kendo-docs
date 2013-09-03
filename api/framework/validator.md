@@ -226,3 +226,49 @@ Input element to be validated.
 #### Returns
 
 `Boolean` `true` if all validation rules passed successfully.
+
+## Events
+
+### validate
+
+Fired when validation completes.
+
+The event handler function context (available via the `this` keyword) will be set to the data source instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Validator`
+
+The validator instance which fired the event.
+
+#### Example - subscribe to the "validate" event during initialization
+
+      <form>
+        <input name="username" required /> <br />
+        <button id="save">Save</button>
+      </form>
+
+      <script>
+        // attach a validator to the container
+        $("form").kendoValidator({
+            validate: function(e) {
+                console.log("valid" + e.valid);
+            }
+        });
+      </script>
+
+#### Example - subscribe to the "validate" event after initialization
+
+      <form>
+        <input name="username" required /> <br />
+        <button id="save">Save</button>
+      </form>
+
+      <script>
+        // attach a validator to the container and get a reference
+        var validatable = $("form").kendoValidator().data("kendoValidator");
+
+        validatable.bind("validate", function(e) {
+            console.log("valid" + e.valid);
+        });
+      </script>
