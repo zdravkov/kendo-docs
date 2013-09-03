@@ -353,12 +353,12 @@ Spcifies the [value binding](/getting-started/framework/mvvm/bindings/value) beh
 
 #### Example - specify that the View-Model field should be updated with the selected item text
 
-    <input id="autocomplete" data-bind="value: productName, source: products" />    
-  
+    <input id="autocomplete" data-bind="value: productName, source: products" />
+
     <script>
     $("#autocomplete").kendoAutoComplete({
       valuePrimitive: true,
-      dataTextField: "name"                
+      dataTextField: "name"
     });
     var viewModel = kendo.observable({
       productName: null,
@@ -397,6 +397,96 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
     autocomplete.dataSource.add({ name: "Appricot" });
     autocomplete.search("A");
     </script>
+
+### element
+A jQuery object of the original input element.
+
+#### Example - modify input element
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete();
+
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+
+    var element = autocomplete.element;
+
+    element.css("background-color", "red");
+    <script>
+
+### options
+An object, which holds the options of the widget.
+
+#### Example - get options of the widget
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete();
+
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+
+    var element = autocomplete.element;
+
+    var options = autocomplete.options;
+    <script>
+
+### wrapper
+A jQuery object of the span element which wraps the input.
+
+#### Example - get wrapper element
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete();
+
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+
+    var wrapper = autocomplete.wrapper;
+    <script>
+
+### list
+A jQuery object of the drop-down list element.
+
+#### Example - get list element
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete();
+
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+
+    var list = autocomplete.list;
+    <script>
+
+### ul
+A jQuery object of the ul element, which holds the available options.
+
+#### Example - get ul element
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete();
+
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+
+    var ul = autocomplete.ul;
+    <script>
+
+### popup
+The Popup instace used by the widget.
+
+#### Example - get widget popup
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete();
+
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+
+    var popup = autocomplete.popup;
+
+    console.log(popup.visible());
+    <script>
 
 ## Methods
 
@@ -838,34 +928,3 @@ The widget instance which fired the event.
     var autocomplete = $("#autocomplete").data("kendoAutoComplete");
     autocomplete.bind("select", autocomplete_select);
     </script>
-
-## Field
-
-### dataSource
-
-The DataSource instance used by the widget.
-
-### element
-
-A jQuery object of the original input element.
-
-### list
-
-A jQuery object of the drop-down list element.
-
-### options
-
-An object, which holds the options of the widget.
-
-### popup
-
-The Popup instace used by the widget.
-
-### ul
-
-A jQuery object of the ul element, which holds the available options.
-
-### wrapper
-
-A jQuery object of the span element which wraps the input.
-
