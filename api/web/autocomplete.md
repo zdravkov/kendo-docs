@@ -473,7 +473,7 @@ A jQuery object of the ul element, which holds the available options.
     <script>
 
 ### popup
-The Popup instace used by the widget.
+The Popup instance used by the widget.
 
 #### Example - get widget popup
 
