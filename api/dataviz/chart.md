@@ -20339,6 +20339,7 @@ The width of the major ticks in pixels.
 ### xAxis.majorUnit `Number`
 
 The interval between major divisions.
+If this is a date axis the value represents the number of [xAxis.baseUnits](#configuration-xAxis.baseUnit) between major divisions.
 
 #### Example - set the scatter chart x axis major unit
     <div id="chart"></div>
@@ -20350,6 +20351,21 @@ The interval between major divisions.
       }],
       xAxis: {
         majorUnit: 1
+      }
+    });
+    </script>
+
+#### Example - set both the baseUnit and major unit for a date axis
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatterLine",
+        data: [[new Date(2012, 0, 1), 1],[new Date(2012, 0, 10), 2]]
+      }],
+      xAxis: {
+        baseUnit: "days",
+        majorUnit: 5
       }
     });
     </script>
@@ -24484,6 +24500,7 @@ The width of the major ticks in pixels.
 ### yAxis.majorUnit `Number`
 
 The interval between major divisions.
+If this is a date axis the value represents the number of [xAxis.baseUnits](#configuration-xAxis.baseUnit) between major divisions.
 
 #### Example - set the scatter chart y axis major unit
     <div id="chart"></div>
@@ -24495,6 +24512,21 @@ The interval between major divisions.
       }],
       yAxis: {
         majorUnit: 1
+      }
+    });
+    </script>
+
+#### Example - set both the baseUnit and major unit for a date axis
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatterLine",
+        data: [[1, new Date(2012, 0, 1)],[2, new Date(2012, 0, 10)]]
+      }],
+      yAxis: {
+        baseUnit: "days",
+        majorUnit: 5
       }
     });
     </script>
