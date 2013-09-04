@@ -19,7 +19,7 @@ Configures the opening and closing animations of the suggestion popup. Setting t
 
 #### Example - disable open and close animations
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -31,7 +31,7 @@ Configures the opening and closing animations of the suggestion popup. Setting t
 
 #### Example - configure the animation
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -54,7 +54,7 @@ Configures the opening and closing animations of the suggestion popup. Setting t
 
 #### Example - configure the close animation
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -85,7 +85,7 @@ The animation played when the suggestion popup is opened.
 
 #### Example - configure the open animation
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -116,7 +116,7 @@ Controls whether to bind the widget to the data source on initialization.
 
 #### Example
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -137,7 +137,7 @@ If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework
 
 #### Example - set dataSource as a JavaScript object
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
       dataSource: {
@@ -148,7 +148,7 @@ If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework
 
 #### Example - set dataSource as a JavaScript array
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     var data = ["One", "Two"];
     $("#multiselect").kendoMultiSelect({
@@ -158,7 +158,7 @@ If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework
 
 #### Example - set dataSource as an existing kendo.data.DataSource instance
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     var dataSource = new kendo.data.DataSource({
       transport: {
@@ -183,7 +183,7 @@ The field of the data item that provides the text content of the list items. The
 
 #### Example - set the dataTextField
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -206,7 +206,7 @@ The field of the data item that provides the value of the widget.
 
 #### Example - set the dataValueField
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -227,7 +227,7 @@ The field of the data item that provides the value of the widget.
 
 #### Example - set the delay
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -243,7 +243,7 @@ If set to `false` the widget will be disabled and will not allow user input. The
 
 #### Example - disable the widget
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -260,7 +260,7 @@ The supported filter values are `startswith`, `endswith` and `contains`.
 
 #### Example - set the filter
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -276,7 +276,7 @@ The height of the suggestion popup in pixels. The default value is 200 pixels.
 
 #### Example - set the height
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -292,7 +292,7 @@ If set to `true` the first suggestion will be automatically highlighted.
 
 #### Example - set highlightFirst
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -308,7 +308,7 @@ If set to `false` case-sensitive search will be performed to find suggestions. T
 
 #### Example - disable case-insensitive suggestions
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -324,7 +324,7 @@ The minimum number of characters the user must type before a search is performed
 
 #### Example - set minLength
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -340,9 +340,11 @@ The minimum number of characters the user must type before a search is performed
 
 #### Example
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
+        <option>Item3</option>
+        <option>Item4</option>
     </select>
     <script>
     $("#multiselect").kendoMultiSelect({
@@ -356,7 +358,7 @@ The hint displayed by the widget when it is empty. Not set by default.
 
 #### Example - specify placeholder option
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -368,7 +370,7 @@ The hint displayed by the widget when it is empty. Not set by default.
 
 #### Example - specify data-placeholder as HTML attribute
 
-    <select id="multiselect data-placeholder="Select...">
+    <select id="multiselect data-placeholder="Select..." multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -383,7 +385,7 @@ The [template](/api/framework/kendo#methods-template) used to render the items i
 
 #### Example - specify template as a function
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script id="itemTemplate" type="text/x-kendo-template">
       <span>
         <img src="/img/#: id #.png" alt="#: name #" />
@@ -404,7 +406,7 @@ The [template](/api/framework/kendo#methods-template) used to render the items i
 
 #### Example - specify template as a string
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
       dataSource: [
@@ -423,7 +425,7 @@ The [template](/api/framework/kendo#methods-template) used to render the tags.
 
 #### Example - specify template as a function
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script id="tagTemplate" type="text/x-kendo-template">
       <span>
         <img src="/img/#: id #.png" alt="#: name #" />
@@ -444,7 +446,7 @@ The [template](/api/framework/kendo#methods-template) used to render the tags.
 
 #### Example - specify template as a string
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
       dataSource: [
@@ -464,7 +466,7 @@ The [template](/api/framework/kendo#methods-template) used to render the tags.
 #### Example
 
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
          dataSource: ["Item1", "Item2", "Item3", "Item4"],
@@ -476,7 +478,7 @@ The [template](/api/framework/kendo#methods-template) used to render the tags.
 
 #### Example
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
         autoBind: false,
@@ -498,7 +500,7 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
 
 #### Example - add a data item to the data source
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
       dataSource: [
@@ -506,10 +508,9 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
         { name: "Oranges" }
       ],
       dataTextField: "name",
-      dataValueField: "name",
+      dataValueField: "name"
     });
     var multiselect = $("#multiselect").data("kendoMultiSelect");
-    multiselect.dataSource.read();
     multiselect.dataSource.add({ name: "Appricot" });
     multiselect.search("A");
     </script>
@@ -519,7 +520,7 @@ A jQuery object of the original input element.
 
 #### Example - modify input element
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
@@ -535,7 +536,7 @@ A jQuery object of the visible input element, where the user types.
 
 #### Example - get input element
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
@@ -549,13 +550,11 @@ An object, which holds the options of the widget.
 
 #### Example - get options of the widget
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
     var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var element = multiselect.element;
 
     var options = multiselect.options;
     <script>
@@ -565,7 +564,7 @@ A jQuery object of the span element which wraps the input.
 
 #### Example - get wrapper element
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
@@ -579,7 +578,7 @@ A jQuery object of the drop-down list element.
 
 #### Example - get list element
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
@@ -593,7 +592,7 @@ A jQuery object of the ul element, which holds the available options.
 
 #### Example - get ul element
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
@@ -607,7 +606,7 @@ The Popup instace used by the widget.
 
 #### Example - get widget popup
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
@@ -623,7 +622,7 @@ A jQuery object of the ul element, which holds the selected tags.
 
 #### Example - get tagList element
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect();
 
@@ -640,9 +639,9 @@ Closes the widget popup.
 
 #### Example - close the suggestion popup
 
-    <select id="multiselect">
-        <option>Item1</option>
-        <option>Item2</option>
+    <select id="multiselect" multiple="multiple">
+        <option>Apples</option>
+        <option>Oranges</option>
     </select>
     <script>
     $("#multiselect").kendoMultiSelect();
@@ -663,7 +662,7 @@ Returns list of raw data records corresponding to the selected items.
 
 #### Example
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -683,7 +682,7 @@ Prepares the **MultiSelect** for safe removal from DOM. Detaches all event handl
 
 #### Example
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -705,7 +704,7 @@ If set to `true` the widget will be enabled. If set to `false` the widget will b
 
 #### Example - enable the widget
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -731,7 +730,7 @@ If set to `true` the widget will not allow user input. If set to `false` the wid
 
 #### Example - make the widget readonly
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -747,7 +746,7 @@ Focuses the widget.
 
 #### Example - focus the widget
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -763,7 +762,7 @@ Opens the popup.
 
 #### Example
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -780,7 +779,7 @@ Refresh the popup by rendering all items again.
 
 #### Example - refresh the popup items
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -804,7 +803,7 @@ The filter value.
 
 #### Example - search the widget
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -826,7 +825,7 @@ Sets the dataSource of an existing DropDownList and rebinds it.
 
 #### Example
 
-    <select id="multiselect"></select>
+    <select id="multiselect" multiple="multiple"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
       dataSource: [ "Apples", "Oranges" ]
@@ -850,7 +849,7 @@ Defines the whether to open/close the drop-down list.
 
 #### Example - set text of the widget
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -880,7 +879,7 @@ The value to set.
 
 #### Example - set value
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option value="1">Item1</option>
         <option value="2">Item2</option>
     </select>
@@ -900,7 +899,7 @@ The value to set.
 
 #### Example - remove applied filter before set the value
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option value="1">Item1</option>
         <option value="2">Item2</option>
     </select>
@@ -934,7 +933,7 @@ The widget instance which fired the event.
 
 
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -949,7 +948,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "change" event after initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -977,7 +976,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "close" event during initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -991,7 +990,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "close" event after initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -1018,7 +1017,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "dataBound" event during initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -1032,7 +1031,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "dataBound" event after initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -1059,7 +1058,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "open" event during initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -1073,7 +1072,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "open" event after initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -1102,7 +1101,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "select" event during initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>
@@ -1118,7 +1117,7 @@ The widget instance which fired the event.
 
 #### Example - subscribe to the "select" event after initialization
 
-    <select id="multiselect">
+    <select id="multiselect" multiple="multiple">
         <option>Item1</option>
         <option>Item2</option>
     </select>

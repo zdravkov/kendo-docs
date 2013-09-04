@@ -130,22 +130,26 @@ Use it to set the Id of the parent dropdownlist widget.
     <input id="parent" />
     <input id="child" />
     <script>
-    $("#parent").kendoDropDownList({
-        dataSource: [{
+    $("#parent").kendoComboBox({
+        dataTextField: "parentName",
+        dataValueField: "parentId",
+        dataSource: [
             { parentName: "Parent1", parentId: 1 },
             { parentName: "Parent2", parentId: 2 }
-        }]
+        ]
     });
 
-    $("#child").kendoDropDownList({
-        dataSource: [{
+    $("#child").kendoComboBox({
+        cascadeFrom: "parent",
+        dataTextField: "childName",
+        dataValueField: "childId",
+        dataSource: [
             { childName: "Child1", childId: 1, parentId: 1 },
             { childName: "Child2", childId: 2, parentId: 2 },
             { childName: "Child3", childId: 3, parentId: 1 },
             { childName: "Child4", childId: 4, parentId: 2 }
-        }]
+        ]
     });
-
     </script>
 
 ### dataSource `Object|Array|kendo.data.DataSource`
@@ -457,10 +461,10 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
         { name: "Apples" },
         { name: "Oranges" }
       ],
-      dataTextField: "name"
+      dataTextField: "name",
+      dataValueField: "name"
     });
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-    dropdownlist.dataSource.read();
     dropdownlist.dataSource.add({ name: "Appricot" });
     dropdownlist.search("A");
     </script>
@@ -507,8 +511,6 @@ An object, which holds the options of the widget.
     $("#dropdownlist").kendoDropDownList();
 
     var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
-
-    var element = dropdownlist.element;
 
     var options = dropdownlist.options;
     <script>
@@ -1133,6 +1135,12 @@ The widget instance which fired the event.
 ### cascade
 
 Fired when the value of the widget is changed via API or user interactionTriggered.
+
+#### Event Data
+
+##### e.sender `kendo.ui.DropDownList`
+
+The widget instance which fired the event.
 
 #### Example - subscribe to the "select" event during initialization
 

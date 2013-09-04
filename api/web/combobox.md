@@ -127,21 +127,25 @@ Use it to set the Id of the parent ComboBox widget.
     <input id="child" />
     <script>
     $("#parent").kendoComboBox({
-        dataSource: [{
+        dataTextField: "parentName",
+        dataValueField: "parentId",
+        dataSource: [
             { parentName: "Parent1", parentId: 1 },
             { parentName: "Parent2", parentId: 2 }
-        }]
+        ]
     });
 
     $("#child").kendoComboBox({
-        dataSource: [{
+        cascadeFrom: "parent",
+        dataTextField: "childName",
+        dataValueField: "childId",
+        dataSource: [
             { childName: "Child1", childId: 1, parentId: 1 },
             { childName: "Child2", childId: 2, parentId: 2 },
             { childName: "Child3", childId: 3, parentId: 1 },
             { childName: "Child4", childId: 4, parentId: 2 }
-        }]
+        ]
     });
-
     </script>
 
 ### dataSource `Object|Array|kendo.data.DataSource`
@@ -448,7 +452,7 @@ The value of the widget.
 
 ### valuePrimitive `Boolean`*(default: false)*
 
-Spcifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+Specifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
 
 #### Example - specify that the View-Model field should be updated with the selected item value
 
@@ -490,11 +494,10 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
         { name: "Apples" },
         { name: "Oranges" }
       ],
-      dataTextField: "name"
+      dataTextField: "name",
       dataValueField: "name"
     });
     var combobox = $("#combobox").data("kendoComboBox");
-    combobox.dataSource.read();
     combobox.dataSource.add({ name: "Appricot" });
     combobox.search("A");
     </script>
@@ -539,8 +542,6 @@ An object, which holds the options of the widget.
     $("#combobox").kendoComboBox();
 
     var combobox = $("#combobox").data("kendoComboBox");
-
-    var element = combobox.element;
 
     var options = combobox.options;
     <script>
@@ -588,7 +589,7 @@ A jQuery object of the ul element, which holds the available options.
     <script>
 
 ### popup
-The Popup instace used by the widget.
+The Popup instance used by the widget.
 
 #### Example - get widget popup
 
@@ -1230,7 +1231,13 @@ The widget instance which fired the event.
 
 ### cascade
 
-Fired when the value of the widget is changed via API or user interactionTriggered.
+Fired when the value of the widget is changed via API or user interaction.
+
+#### Event Data
+
+##### e.sender `kendo.ui.ComboBox`
+
+The widget instance which fired the event.
 
 #### Example - subscribe to the "cascade" event during initialization
 
