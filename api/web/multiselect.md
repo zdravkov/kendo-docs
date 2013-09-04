@@ -79,10 +79,6 @@ The effect(s) to use when playing the close animation. Multiple effects should b
 
 The duration of the close animation in milliseconds.
 
-### animation.close.effects `String`
-
-Effect to be used for closing of the popup.
-
 ### animation.open `Object`
 
 The animation played when the suggestion popup is opened.
@@ -113,10 +109,6 @@ The effect(s) to use when playing the open animation. Multiple effects should be
 ### animation.open.duration `Number` *(default: 200)*
 
 The duration of the open animation in milliseconds.
-
-### animation.open.effects `String`
-
-Effect to be used for opening of the popup.
 
 ### autoBind `Boolean`*(default: true)*
 
@@ -344,7 +336,7 @@ The minimum number of characters the user must type before a search is performed
 
 ### maxSelectedItems `Number`*(default: null)*
 
-Defines the limit of the selected items. If set to null widget will not limit number of the selected items.
+ Defines the limit of the selected items. If set to null widget will not limit number of the selected items.
 
 #### Example
 
@@ -467,7 +459,7 @@ The [template](/api/framework/kendo#methods-template) used to render the tags.
 
 ### value `Array`*(default: [])*
 
-Define the value of the widget
+ Define the value of the widget
 
 #### Example
 
@@ -494,32 +486,151 @@ Define the value of the widget
     });
     </script>
 
-### valuePrimitive `Boolean`*(default: false)*
+## Fields
 
-Spcifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+### dataSource `kendo.data.DataSource`
 
-#### Example - specify that the View-Model field should be updated with the selected item value
+The [data source](/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
 
-    <select id="multiselect" type="multiple" data-bind="value: selectedProductIds, source: products" >
-    </select>
+> Changes of the data source will be reflected in the widget.
 
+> **Important:** Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
+
+#### Example - add a data item to the data source
+
+    <select id="multiselect"></select>
     <script>
     $("#multiselect").kendoMultiSelect({
-      valuePrimitive: true,
+      dataSource: [
+        { name: "Apples" },
+        { name: "Oranges" }
+      ],
       dataTextField: "name",
-      dataValueField: "id"
+      dataValueField: "name",
     });
-    var viewModel = kendo.observable({
-      selectedProductIds: null,
-      products: [
-        { id: 1, name: "Coffee" },
-        { id: 2, name: "Tea" },
-        { id: 3, name: "Juice" }
-      ]
-    });
-
-    kendo.bind($("#multiselect"), viewModel);
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+    multiselect.dataSource.read();
+    multiselect.dataSource.add({ name: "Appricot" });
+    multiselect.search("A");
     </script>
+
+### element
+A jQuery object of the original input element.
+
+#### Example - modify input element
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var element = multiselect.element;
+
+    element.css("background-color", "red");
+    <script>
+
+### input
+A jQuery object of the visible input element, where the user types.
+
+#### Example - get input element
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var input = multiselect.input;
+    <script>
+
+### options
+An object, which holds the options of the widget.
+
+#### Example - get options of the widget
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var element = multiselect.element;
+
+    var options = multiselect.options;
+    <script>
+
+### wrapper
+A jQuery object of the span element which wraps the input.
+
+#### Example - get wrapper element
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var wrapper = multiselect.wrapper;
+    <script>
+
+### list
+A jQuery object of the drop-down list element.
+
+#### Example - get list element
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var list = multiselect.list;
+    <script>
+
+### ul
+A jQuery object of the ul element, which holds the available options.
+
+#### Example - get ul element
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var ul = multiselect.ul;
+    <script>
+
+### popup
+The Popup instace used by the widget.
+
+#### Example - get widget popup
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var popup = multiselect.popup;
+
+    console.log(popup.visible());
+    <script>
+
+### tagList
+A jQuery object of the ul element, which holds the selected tags.
+
+#### Example - get tagList element
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect();
+
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+
+    var tagList = multiselect.tagList;
+    <script>
 
 ## Methods
 
@@ -566,7 +677,6 @@ Returns list of raw data records corresponding to the selected items.
     </script>
 
 ### destroy
-
 Prepares the **MultiSelect** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > **Important:** This method does not remove the MultiSelect element from DOM.
@@ -663,27 +773,6 @@ Opens the popup.
     var multiselect = $("#multiselect").data("kendoMultiSelect");
     multiselect.focus();
     </script>
-
-### readonly
-
-Controls whether the widget is editable or readonly.
-
-#### Example
-
-    // get a reference to the multiselect widget
-    var multiselect = $("multiselect").data("kendoMultiSelect");
-
-    // makes multiselect readonly
-    multiselect.readonly();
-
-    // makes multiselect editable
-    multiselect.readonly(false);
-
-#### Parameters
-
-##### readonly `Boolean`
-
-The argument, which defines whether the multiselect should be readonly or editable.
 
 ### refresh
 
@@ -1043,155 +1132,3 @@ The widget instance which fired the event.
     var multiselect = $("#multiselect").data("kendoMultiSelect");
     multiselect.bind("select", multiselect_select);
     </script>
-
-## Fields
-
-### dataSource `kendo.data.DataSource`
-
-The [data source](/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
-
-> Changes of the data source will be reflected in the widget.
-
-> **Important:** Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
-
-#### Example - add a data item to the data source
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect({
-      dataSource: [
-        { name: "Apples" },
-        { name: "Oranges" }
-      ],
-      dataTextField: "name",
-      dataValueField: "name",
-    });
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-    multiselect.dataSource.read();
-    multiselect.dataSource.add({ name: "Appricot" });
-    multiselect.search("A");
-    </script>
-
-### dataSource
-
-The DataSource instance used by the widget.
-
-### element
-
-A jQuery object of the original input element.
-
-#### Example - modify input element
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var element = multiselect.element;
-
-    element.css("background-color", "red");
-    <script>
-
-### input
-A jQuery object of the visible input element, where the user types.
-
-#### Example - get input element
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var input = multiselect.input;
-    <script>
-
-### options
-
-An object, which holds the options of the widget.
-
-#### Example - get options of the widget
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var element = multiselect.element;
-
-    var options = multiselect.options;
-    <script>
-
-### wrapper
-A jQuery object of the span element which wraps the input.
-
-#### Example - get wrapper element
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var wrapper = multiselect.wrapper;
-    <script>
-
-A jQuery object of the ul element, which holds the selected tags.
-
-#### Example - get list element
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var list = multiselect.list;
-    <script>
-
-### ul
-
-A jQuery object of the ul element, which holds the available options.
-
-#### Example - get ul element
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var ul = multiselect.ul;
-    <script>
-
-### popup
-The Popup instace used by the widget.
-
-#### Example - get widget popup
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var popup = multiselect.popup;
-
-    console.log(popup.visible());
-    <script>
-
-### tagList
-A jQuery object of the ul element, which holds the selected tags.
-
-#### Example - get tagList element
-
-    <select id="multiselect"></select>
-    <script>
-    $("#multiselect").kendoMultiSelect();
-
-    var multiselect = $("#multiselect").data("kendoMultiSelect");
-
-    var tagList = multiselect.tagList;
-    <script>
