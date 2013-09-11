@@ -914,6 +914,24 @@ If set to true the user would be able to select scheduler cells and events. By d
     $scheduler->selectable(true);
     ?>
 
+### snap
+If set to true the scheduler will snap events to the nearest slot during dragging (resizing or moving). Set it to false to allow free moving and resizing of events.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->snap(true);
+    ?>
+
 ### startTime
 The start time of the week and day views. The scheduler will display events starting after the startTime.
 
