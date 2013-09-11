@@ -114,6 +114,14 @@ If set to true the user would be able to select scheduler cells and events. By d
     <kendo:scheduler selectable="selectable">
     </kendo:scheduler>
 
+### snap `boolean`
+
+If set to true the scheduler will snap events to the nearest slot during dragging (resizing or moving). Set it to false to allow free moving and resizing of events.
+
+#### Example
+    <kendo:scheduler snap="snap">
+    </kendo:scheduler>
+
 ### startTime `java.util.Date`
 
 The start time of the week and day views. The scheduler will display events starting after the startTime.
