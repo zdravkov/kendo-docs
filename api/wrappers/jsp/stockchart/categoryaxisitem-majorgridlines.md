@@ -33,6 +33,22 @@ The dash type of the grid lines.
     <kendo:stockChart-categoryAxisItem-majorGridLines dashType="dashType">
     </kendo:stockChart-categoryAxisItem-majorGridLines>
 
+### skip `float`
+
+The skip of the category axis major grid lines.
+
+#### Example
+    <kendo:stockChart-categoryAxisItem-majorGridLines skip="skip">
+    </kendo:stockChart-categoryAxisItem-majorGridLines>
+
+### step `float`
+
+The step of the category axis major grid lines.
+
+#### Example
+    <kendo:stockChart-categoryAxisItem-majorGridLines step="step">
+    </kendo:stockChart-categoryAxisItem-majorGridLines>
+
 ### visible `boolean`
 
 The visibility of the lines.

@@ -33,6 +33,22 @@ The dash type of the line.The following dash types are supported:
     <kendo:chart-xAxisItem-majorGridLines dashType="dashType">
     </kendo:chart-xAxisItem-majorGridLines>
 
+### skip `float`
+
+The skip of the x axis major grid lines.
+
+#### Example
+    <kendo:chart-xAxisItem-majorGridLines skip="skip">
+    </kendo:chart-xAxisItem-majorGridLines>
+
+### step `float`
+
+The step of the x axis major grid lines.
+
+#### Example
+    <kendo:chart-xAxisItem-majorGridLines step="step">
+    </kendo:chart-xAxisItem-majorGridLines>
+
 ### visible `boolean`
 
 If set to true the chart will display the x major grid liness. By default the x major grid liness are visible.

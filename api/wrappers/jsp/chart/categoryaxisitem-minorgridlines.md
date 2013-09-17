@@ -33,6 +33,22 @@ The dash type of the minor grid lines.The following dash types are supported:
     <kendo:chart-categoryAxisItem-minorGridLines dashType="dashType">
     </kendo:chart-categoryAxisItem-minorGridLines>
 
+### skip `float`
+
+The skip of the category axis minor grid lines.
+
+#### Example
+    <kendo:chart-categoryAxisItem-minorGridLines skip="skip">
+    </kendo:chart-categoryAxisItem-minorGridLines>
+
+### step `float`
+
+The step of the category axis minor grid lines.
+
+#### Example
+    <kendo:chart-categoryAxisItem-minorGridLines step="step">
+    </kendo:chart-categoryAxisItem-minorGridLines>
+
 ### visible `boolean`
 
 If set to true the chart will display the minor grid lines. By default the minor grid lines are visible.

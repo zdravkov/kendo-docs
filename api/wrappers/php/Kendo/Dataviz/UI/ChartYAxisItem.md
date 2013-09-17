@@ -297,6 +297,35 @@ body of the chart.
     $yAxisItem->minorGridLines(array('color' => $color));
     ?>
 
+### minorTicks
+
+The configuration of the y axis minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartYAxisItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartYAxisItemMinorTicks|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartYAxisItemMinorTicks](/api/wrappers/php/Kendo/Dataviz/UI/ChartYAxisItemMinorTicks)
+    <?php
+    $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
+    $minorTicks = new \Kendo\Dataviz\UI\ChartYAxisItemMinorTicks();
+    $color = 'value';
+    $minorTicks->color($color);
+    $yAxisItem->minorTicks($minorTicks);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
+    $color = 'value';
+    $yAxisItem->minorTicks(array('color' => $color));
+    ?>
+
 ### minorUnit
 The interval between minor divisions. It defaults to 1/5th of the yAxis.majorUnit.
 

@@ -194,8 +194,8 @@ The major ticks of the axis.
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
     $majorTicks = new \Kendo\Dataviz\UI\SparklineValueAxisItemMajorTicks();
-    $size = 1;
-    $majorTicks->size($size);
+    $color = 'value';
+    $majorTicks->color($color);
     $valueAxisItem->majorTicks($majorTicks);
     ?>
 
@@ -203,8 +203,8 @@ The major ticks of the axis.
 
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
-    $size = 1;
-    $valueAxisItem->majorTicks(array('size' => $size));
+    $color = 'value';
+    $valueAxisItem->majorTicks(array('color' => $color));
     ?>
 
 ### majorUnit
@@ -308,8 +308,8 @@ The minor ticks of the axis.
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
     $minorTicks = new \Kendo\Dataviz\UI\SparklineValueAxisItemMinorTicks();
-    $size = 1;
-    $minorTicks->size($size);
+    $color = 'value';
+    $minorTicks->color($color);
     $valueAxisItem->minorTicks($minorTicks);
     ?>
 
@@ -317,8 +317,8 @@ The minor ticks of the axis.
 
     <?php
     $valueAxisItem = new \Kendo\Dataviz\UI\SparklineValueAxisItem();
-    $size = 1;
-    $valueAxisItem->minorTicks(array('size' => $size));
+    $color = 'value';
+    $valueAxisItem->minorTicks(array('color' => $color));
     ?>
 
 ### minorUnit

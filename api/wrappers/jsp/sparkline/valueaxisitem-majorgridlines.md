@@ -25,6 +25,22 @@ The color of the lines.
     <kendo:sparkline-valueAxisItem-majorGridLines color="color">
     </kendo:sparkline-valueAxisItem-majorGridLines>
 
+### skip `float`
+
+The skip of the value axis major grid lines.
+
+#### Example
+    <kendo:sparkline-valueAxisItem-majorGridLines skip="skip">
+    </kendo:sparkline-valueAxisItem-majorGridLines>
+
+### step `float`
+
+The step of the value axis major grid lines.
+
+#### Example
+    <kendo:sparkline-valueAxisItem-majorGridLines step="step">
+    </kendo:sparkline-valueAxisItem-majorGridLines>
+
 ### visible `boolean`
 
 The visibility of the lines.

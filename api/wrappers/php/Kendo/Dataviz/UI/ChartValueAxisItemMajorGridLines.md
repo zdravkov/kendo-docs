@@ -48,6 +48,42 @@ The dash type of the major grid lines.The following dash types are supported:
     $majorGridLines->dashType('value');
     ?>
 
+### skip
+The skip of the value axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines();
+    $majorGridLines->skip(1);
+    ?>
+
+### step
+The step of the value axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines();
+    $majorGridLines->step(1);
+    ?>
+
 ### type
 The type of grid lines to draw for radar charts:The default type is "line" except for "radarColumn" charts.
 

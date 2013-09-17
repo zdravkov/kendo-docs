@@ -32,6 +32,22 @@ The length of the tick line in pixels.
     <kendo:stockChart-navigator-categoryAxisItem-majorTicks size="size">
     </kendo:stockChart-navigator-categoryAxisItem-majorTicks>
 
+### skip `float`
+
+The skip of the category axis major ticks.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-majorTicks skip="skip">
+    </kendo:stockChart-navigator-categoryAxisItem-majorTicks>
+
+### step `float`
+
+The step of the category axis major ticks.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-majorTicks step="step">
+    </kendo:stockChart-navigator-categoryAxisItem-majorTicks>
+
 ### visible `boolean`
 
 If set to true the chart will display the category axis major ticks. By default the category axis major ticks are visible.

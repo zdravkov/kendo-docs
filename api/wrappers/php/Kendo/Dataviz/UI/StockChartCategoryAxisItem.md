@@ -313,8 +313,8 @@ The major ticks of the axis.
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
     $majorTicks = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorTicks();
-    $size = 1;
-    $majorTicks->size($size);
+    $color = 'value';
+    $majorTicks->color($color);
     $categoryAxisItem->majorTicks($majorTicks);
     ?>
 
@@ -322,8 +322,8 @@ The major ticks of the axis.
 
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
-    $size = 1;
-    $categoryAxisItem->majorTicks(array('size' => $size));
+    $color = 'value';
+    $categoryAxisItem->majorTicks(array('color' => $color));
     ?>
 
 ### max
@@ -421,8 +421,8 @@ The minor ticks of the axis.
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
     $minorTicks = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorTicks();
-    $size = 1;
-    $minorTicks->size($size);
+    $color = 'value';
+    $minorTicks->color($color);
     $categoryAxisItem->minorTicks($minorTicks);
     ?>
 
@@ -430,8 +430,8 @@ The minor ticks of the axis.
 
     <?php
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
-    $size = 1;
-    $categoryAxisItem->minorTicks(array('size' => $size));
+    $color = 'value';
+    $categoryAxisItem->minorTicks(array('color' => $color));
     ?>
 
 ### name

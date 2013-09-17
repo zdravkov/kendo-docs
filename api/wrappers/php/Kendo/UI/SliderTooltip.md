@@ -52,7 +52,7 @@ tick labels.
     ?>
 
 ### template
-Template of the tooltip.
+Template of the tooltip. The following variables are passed by the Slider and are ready to be used inside the template:
 
 #### Returns
 `\Kendo\UI\SliderTooltip`

@@ -48,6 +48,42 @@ The dash type of the minor grid lines.The following dash types are supported:
     $minorGridLines->dashType('value');
     ?>
 
+### skip
+The skip of the category axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMinorGridLines();
+    $minorGridLines->skip(1);
+    ?>
+
+### step
+The step of the category axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMinorGridLines();
+    $minorGridLines->step(1);
+    ?>
+
 ### visible
 If set to true the chart will display the minor grid lines. By default the minor grid lines are visible.
 

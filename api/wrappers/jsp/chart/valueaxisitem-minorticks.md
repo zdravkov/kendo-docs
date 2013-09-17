@@ -32,6 +32,22 @@ The length of the tick line in pixels.
     <kendo:chart-valueAxisItem-minorTicks size="size">
     </kendo:chart-valueAxisItem-minorTicks>
 
+### skip `float`
+
+The skip of the value axis minor ticks.
+
+#### Example
+    <kendo:chart-valueAxisItem-minorTicks skip="skip">
+    </kendo:chart-valueAxisItem-minorTicks>
+
+### step `float`
+
+The step of the value axis minor ticks.
+
+#### Example
+    <kendo:chart-valueAxisItem-minorTicks step="step">
+    </kendo:chart-valueAxisItem-minorTicks>
+
 ### visible `boolean`
 
 If set to true the chart will display the value axis minor ticks. By default the value axis minor ticks are not visible.

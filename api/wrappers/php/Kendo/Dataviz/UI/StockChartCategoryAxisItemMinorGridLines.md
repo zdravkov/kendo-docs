@@ -50,6 +50,42 @@ The dash type of the grid lines.
     $minorGridLines->dashType('value');
     ?>
 
+### skip
+The skip of the category axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines();
+    $minorGridLines->skip(1);
+    ?>
+
+### step
+The step of the category axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemMinorGridLines();
+    $minorGridLines->step(1);
+    ?>
+
 ### visible
 The visibility of the lines.
 

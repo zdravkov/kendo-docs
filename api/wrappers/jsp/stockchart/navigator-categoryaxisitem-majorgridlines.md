@@ -33,6 +33,22 @@ The dash type of the major grid lines.The following dash types are supported:
     <kendo:stockChart-navigator-categoryAxisItem-majorGridLines dashType="dashType">
     </kendo:stockChart-navigator-categoryAxisItem-majorGridLines>
 
+### skip `float`
+
+The skip of the category axis major grid lines.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-majorGridLines skip="skip">
+    </kendo:stockChart-navigator-categoryAxisItem-majorGridLines>
+
+### step `float`
+
+The step of the category axis major grid lines.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-majorGridLines step="step">
+    </kendo:stockChart-navigator-categoryAxisItem-majorGridLines>
+
 ### visible `boolean`
 
 If set to true the chart will display the major grid lines. By default the major grid lines are visible.

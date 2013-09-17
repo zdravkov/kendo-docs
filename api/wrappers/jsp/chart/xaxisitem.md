@@ -207,6 +207,18 @@ More documentation is available at [kendo:chart-xAxisItem-minorGridLines](chart/
         <kendo:chart-xAxisItem-minorGridLines></kendo:chart-xAxisItem-minorGridLines>
     </kendo:chart-xAxisItem>
 
+### kendo:chart-xAxisItem-minorTicks
+
+The configuration of the x axis minor ticks.
+
+More documentation is available at [kendo:chart-xAxisItem-minorTicks](chart/xaxisitem-minorticks).
+
+#### Example
+
+    <kendo:chart-xAxisItem>
+        <kendo:chart-xAxisItem-minorTicks></kendo:chart-xAxisItem-minorTicks>
+    </kendo:chart-xAxisItem>
+
 ### kendo:chart-xAxisItem-notes
 
 The x axis notes configuration.

@@ -32,6 +32,22 @@ The length of the tick line in pixels.
     <kendo:stockChart-navigator-categoryAxisItem-minorTicks size="size">
     </kendo:stockChart-navigator-categoryAxisItem-minorTicks>
 
+### skip `float`
+
+The skip of the category axis minor ticks.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-minorTicks skip="skip">
+    </kendo:stockChart-navigator-categoryAxisItem-minorTicks>
+
+### step `float`
+
+The step of the category axis minor ticks.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-minorTicks step="step">
+    </kendo:stockChart-navigator-categoryAxisItem-minorTicks>
+
 ### visible `boolean`
 
 If set to true the chart will display the category axis minor ticks. By default the category axis minor ticks are visible.

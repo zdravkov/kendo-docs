@@ -48,6 +48,42 @@ The dash type of the minor grid lines.The following dash types are supported:
     $minorGridLines->dashType('value');
     ?>
 
+### skip
+The skip of the x axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\ChartXAxisItemMinorGridLines();
+    $minorGridLines->skip(1);
+    ?>
+
+### step
+The step of the x axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\ChartXAxisItemMinorGridLines();
+    $minorGridLines->step(1);
+    ?>
+
 ### visible
 If set to true the chart will display the minor grid lines. By default the minor grid lines are visible.
 

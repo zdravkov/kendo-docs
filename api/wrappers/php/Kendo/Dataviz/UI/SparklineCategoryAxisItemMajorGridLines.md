@@ -48,6 +48,42 @@ The dash type of the grid lines.
     $majorGridLines->dashType('value');
     ?>
 
+### skip
+The skip of the category axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineCategoryAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemMajorGridLines();
+    $majorGridLines->skip(1);
+    ?>
+
+### step
+The step of the category axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineCategoryAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemMajorGridLines();
+    $majorGridLines->step(1);
+    ?>
+
 ### visible
 The visibility of the lines.
 

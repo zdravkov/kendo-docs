@@ -48,6 +48,42 @@ The length of the tick line in pixels.
     $minorTicks->size(1);
     ?>
 
+### skip
+The skip of the category axis minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks();
+    $minorTicks->skip(1);
+    ?>
+
+### step
+The step of the category axis minor ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorTicks = new \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks();
+    $minorTicks->step(1);
+    ?>
+
 ### visible
 If set to true the chart will display the category axis minor ticks. By default the category axis minor ticks are visible.
 

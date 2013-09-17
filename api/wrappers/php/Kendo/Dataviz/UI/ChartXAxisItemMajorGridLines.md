@@ -48,6 +48,42 @@ The dash type of the line.The following dash types are supported:
     $majorGridLines->dashType('value');
     ?>
 
+### skip
+The skip of the x axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines();
+    $majorGridLines->skip(1);
+    ?>
+
+### step
+The step of the x axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\ChartXAxisItemMajorGridLines();
+    $majorGridLines->step(1);
+    ?>
+
 ### visible
 If set to true the chart will display the x major grid liness. By default the x major grid liness are visible.
 

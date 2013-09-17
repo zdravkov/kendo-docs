@@ -32,6 +32,22 @@ The dash type of the minor grid lines.
     <kendo:stockChart-valueAxisItem-minorGridLines dashType="dashType">
     </kendo:stockChart-valueAxisItem-minorGridLines>
 
+### skip `float`
+
+The skip of the value axis minor grid lines.
+
+#### Example
+    <kendo:stockChart-valueAxisItem-minorGridLines skip="skip">
+    </kendo:stockChart-valueAxisItem-minorGridLines>
+
+### step `float`
+
+The step of the value axis minor grid lines.
+
+#### Example
+    <kendo:stockChart-valueAxisItem-minorGridLines step="step">
+    </kendo:stockChart-valueAxisItem-minorGridLines>
+
 ### visible `boolean`
 
 The visibility of the lines.

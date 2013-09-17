@@ -35,6 +35,22 @@ The dash type of the grid lines.
     <kendo:sparkline-categoryAxisItem-minorGridLines dashType="dashType">
     </kendo:sparkline-categoryAxisItem-minorGridLines>
 
+### skip `float`
+
+The skip of the category axis minor grid lines.
+
+#### Example
+    <kendo:sparkline-categoryAxisItem-minorGridLines skip="skip">
+    </kendo:sparkline-categoryAxisItem-minorGridLines>
+
+### step `float`
+
+The step of the category axis minor grid lines.
+
+#### Example
+    <kendo:sparkline-categoryAxisItem-minorGridLines step="step">
+    </kendo:sparkline-categoryAxisItem-minorGridLines>
+
 ### visible `boolean`
 
 The visibility of the lines.

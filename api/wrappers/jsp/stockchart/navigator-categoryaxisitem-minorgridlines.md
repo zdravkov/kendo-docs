@@ -33,6 +33,22 @@ The dash type of the minor grid lines.The following dash types are supported:
     <kendo:stockChart-navigator-categoryAxisItem-minorGridLines dashType="dashType">
     </kendo:stockChart-navigator-categoryAxisItem-minorGridLines>
 
+### skip `float`
+
+The skip of the category axis minor grid lines.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-minorGridLines skip="skip">
+    </kendo:stockChart-navigator-categoryAxisItem-minorGridLines>
+
+### step `float`
+
+The step of the category axis minor grid lines.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem-minorGridLines step="step">
+    </kendo:stockChart-navigator-categoryAxisItem-minorGridLines>
+
 ### visible `boolean`
 
 If set to true the chart will display the minor grid lines. By default the minor grid lines are visible.

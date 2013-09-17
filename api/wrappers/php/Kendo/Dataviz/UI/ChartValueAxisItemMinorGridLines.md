@@ -48,6 +48,42 @@ The dash type of the minor grid lines.The following dash types are supported:
     $minorGridLines->dashType('value');
     ?>
 
+### skip
+The skip of the value axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines();
+    $minorGridLines->skip(1);
+    ?>
+
+### step
+The step of the value axis minor grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $minorGridLines = new \Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines();
+    $minorGridLines->step(1);
+    ?>
+
 ### type
 The type of grid lines to draw for radar charts:The default type is "line" except for "radarColumn" charts.
 

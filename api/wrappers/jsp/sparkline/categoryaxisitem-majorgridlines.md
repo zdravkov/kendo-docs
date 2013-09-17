@@ -33,6 +33,22 @@ The dash type of the grid lines.
     <kendo:sparkline-categoryAxisItem-majorGridLines dashType="dashType">
     </kendo:sparkline-categoryAxisItem-majorGridLines>
 
+### skip `float`
+
+The skip of the category axis major grid lines.
+
+#### Example
+    <kendo:sparkline-categoryAxisItem-majorGridLines skip="skip">
+    </kendo:sparkline-categoryAxisItem-majorGridLines>
+
+### step `float`
+
+The step of the category axis major grid lines.
+
+#### Example
+    <kendo:sparkline-categoryAxisItem-majorGridLines step="step">
+    </kendo:sparkline-categoryAxisItem-majorGridLines>
+
 ### visible `boolean`
 
 The visibility of the lines.

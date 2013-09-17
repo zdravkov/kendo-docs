@@ -33,6 +33,22 @@ The dash type of the major grid lines.The following dash types are supported:
     <kendo:chart-valueAxisItem-majorGridLines dashType="dashType">
     </kendo:chart-valueAxisItem-majorGridLines>
 
+### skip `float`
+
+The skip of the value axis major grid lines.
+
+#### Example
+    <kendo:chart-valueAxisItem-majorGridLines skip="skip">
+    </kendo:chart-valueAxisItem-majorGridLines>
+
+### step `float`
+
+The step of the value axis major grid lines.
+
+#### Example
+    <kendo:chart-valueAxisItem-majorGridLines step="step">
+    </kendo:chart-valueAxisItem-majorGridLines>
+
 ### type `java.lang.String`
 
 The type of grid lines to draw for radar charts:The default type is "line" except for "radarColumn" charts.

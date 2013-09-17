@@ -48,6 +48,42 @@ The length of the tick line in pixels.
     $majorTicks->size(1);
     ?>
 
+### skip
+The skip of the value axis major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks();
+    $majorTicks->skip(1);
+    ?>
+
+### step
+The step of the value axis major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorTicks = new \Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks();
+    $majorTicks->step(1);
+    ?>
+
 ### visible
 If set to true the chart will display the value axis major ticks. By default the value axis major ticks are visible.
 

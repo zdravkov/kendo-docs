@@ -199,6 +199,18 @@ More documentation is available at [kendo:chart-yAxisItem-minorGridLines](chart/
         <kendo:chart-yAxisItem-minorGridLines></kendo:chart-yAxisItem-minorGridLines>
     </kendo:chart-yAxisItem>
 
+### kendo:chart-yAxisItem-minorTicks
+
+The configuration of the y axis minor ticks.
+
+More documentation is available at [kendo:chart-yAxisItem-minorTicks](chart/yaxisitem-minorticks).
+
+#### Example
+
+    <kendo:chart-yAxisItem>
+        <kendo:chart-yAxisItem-minorTicks></kendo:chart-yAxisItem-minorTicks>
+    </kendo:chart-yAxisItem>
+
 ### kendo:chart-yAxisItem-notes
 
 The y axis notes configuration.

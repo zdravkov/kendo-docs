@@ -48,6 +48,42 @@ The length of the tick line in pixels.
     $majorTicks->size(1);
     ?>
 
+### skip
+The skip of the y axis major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartYAxisItemMajorTicks`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorTicks = new \Kendo\Dataviz\UI\ChartYAxisItemMajorTicks();
+    $majorTicks->skip(1);
+    ?>
+
+### step
+The step of the y axis major ticks.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartYAxisItemMajorTicks`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorTicks = new \Kendo\Dataviz\UI\ChartYAxisItemMajorTicks();
+    $majorTicks->step(1);
+    ?>
+
 ### visible
 If set to true the chart will display the scatter chart y axis major ticks. By default the category axis major ticks are visible.
 

@@ -32,6 +32,22 @@ The length of the tick line in pixels.
     <kendo:chart-categoryAxisItem-minorTicks size="size">
     </kendo:chart-categoryAxisItem-minorTicks>
 
+### skip `float`
+
+The skip of the category axis minor ticks.
+
+#### Example
+    <kendo:chart-categoryAxisItem-minorTicks skip="skip">
+    </kendo:chart-categoryAxisItem-minorTicks>
+
+### step `float`
+
+The step of the category axis minor ticks.
+
+#### Example
+    <kendo:chart-categoryAxisItem-minorTicks step="step">
+    </kendo:chart-categoryAxisItem-minorTicks>
+
 ### visible `boolean`
 
 If set to true the chart will display the category axis minor ticks. By default the category axis minor ticks are visible.

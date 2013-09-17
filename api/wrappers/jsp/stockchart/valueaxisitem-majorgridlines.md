@@ -25,6 +25,22 @@ The color of the lines.
     <kendo:stockChart-valueAxisItem-majorGridLines color="color">
     </kendo:stockChart-valueAxisItem-majorGridLines>
 
+### skip `float`
+
+The skip of the value axis major grid lines.
+
+#### Example
+    <kendo:stockChart-valueAxisItem-majorGridLines skip="skip">
+    </kendo:stockChart-valueAxisItem-majorGridLines>
+
+### step `float`
+
+The step of the value axis major grid lines.
+
+#### Example
+    <kendo:stockChart-valueAxisItem-majorGridLines step="step">
+    </kendo:stockChart-valueAxisItem-majorGridLines>
+
 ### visible `boolean`
 
 The visibility of the lines.

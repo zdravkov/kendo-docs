@@ -32,6 +32,22 @@ The length of the tick line in pixels.
     <kendo:chart-xAxisItem-majorTicks size="size">
     </kendo:chart-xAxisItem-majorTicks>
 
+### skip `float`
+
+The skip of the x axis major ticks.
+
+#### Example
+    <kendo:chart-xAxisItem-majorTicks skip="skip">
+    </kendo:chart-xAxisItem-majorTicks>
+
+### step `float`
+
+The step of the x axis major ticks.
+
+#### Example
+    <kendo:chart-xAxisItem-majorTicks step="step">
+    </kendo:chart-xAxisItem-majorTicks>
+
 ### visible `boolean`
 
 If set to true the chart will display the scatter chart x axis major ticks. By default the category axis major ticks are visible.

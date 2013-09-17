@@ -30,6 +30,42 @@ The color of the lines.
     $majorGridLines->color('value');
     ?>
 
+### skip
+The skip of the value axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\StockChartValueAxisItemMajorGridLines();
+    $majorGridLines->skip(1);
+    ?>
+
+### step
+The step of the value axis major grid lines.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartValueAxisItemMajorGridLines`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $majorGridLines = new \Kendo\Dataviz\UI\StockChartValueAxisItemMajorGridLines();
+    $majorGridLines->step(1);
+    ?>
+
 ### visible
 The visibility of the lines.
 
