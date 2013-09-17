@@ -446,6 +446,14 @@ If set to `true` the chart will display the major grid lines. By default the maj
 
 The width of the category axis major grid lines in pixels.
 
+### navigator.categoryAxis.majorGridLines.step `Number` *(default: 1)*
+
+The step of the category axis major grid lines.
+
+### navigator.categoryAxis.majorGridLines.skip `Number` *(default: 0)*
+
+The skip of the category axis major grid lines.
+
 ### navigator.categoryAxis.majorTicks `Object`
 
 The configuration of the category axis major ticks.
@@ -465,6 +473,14 @@ If set to `true` the chart will display the category axis major ticks. By defaul
 ### navigator.categoryAxis.majorTicks.width `Number` *(default: 1)*
 
 The width of the major ticks in pixels.
+
+### navigator.categoryAxis.majorTicks.step `Number` *(default: 1)*
+
+The step of the category axis major ticks.
+
+### navigator.categoryAxis.majorTicks.skip `Number` *(default: 0)*
+
+The skip of the category axis major ticks.
 
 ### navigator.categoryAxis.max `Object`
 
@@ -515,6 +531,14 @@ If set to `true` the chart will display the minor grid lines. By default the min
 
 The width of the category axis minor grid lines in pixels.
 
+### navigator.categoryAxis.minorGridLines.step `Number` *(default: 1)*
+
+The step of the category axis minor grid lines.
+
+### navigator.categoryAxis.minorGridLines.skip `Number` *(default: 0)*
+
+The skip of the category axis minor grid lines.
+
 ### navigator.categoryAxis.minorTicks `Object`
 
 The configuration of the category axis minor ticks.
@@ -534,6 +558,14 @@ If set to `true` the chart will display the category axis minor ticks. By defaul
 ### navigator.categoryAxis.minorTicks.width `Number` *(default: 1)*
 
 The width of the minor ticks in pixels.
+
+### navigator.categoryAxis.minorTicks.step `Number` *(default: 1)*
+
+The step of the category axis minor ticks.
+
+### navigator.categoryAxis.minorTicks.skip `Number` *(default: 0)*
+
+The skip of the category axis minor ticks.
 
 ### navigator.categoryAxis.plotBands `Array`
 
@@ -2403,18 +2435,42 @@ The visibility of the lines.
 
 The width of the lines.
 
+### categoryAxis.majorGridLines.step `Number` *(default: 1)*
+
+The step of the category axis major grid lines.
+
+### categoryAxis.majorGridLines.skip `Number` *(default: 0)*
+
+The skip of the category axis major grid lines.
+
 ### categoryAxis.majorTicks `Object`
 
 The major ticks of the axis.
+
+### categoryAxis.majorTicks.color `String` *(default: "black")*
+
+The color of the category axis major ticks lines. Accepts a valid CSS color string, including hex and rgb.
 
 ### categoryAxis.majorTicks.size `Number`*(default: 4)*
 
 The axis major tick size. This is the length of the line in pixels that is drawn to indicate the tick
 on the chart.
 
+### categoryAxis.majorTicks.width `Number` *(default: 1)*
+
+The width of the major ticks in pixels.
+
 ### categoryAxis.majorTicks.visible `Boolean`*(default: true)*
 
 The visibility of the major ticks.
+
+### categoryAxis.majorTicks.step `Number` *(default: 1)*
+
+The step of the category axis major ticks.
+
+### categoryAxis.majorTicks.skip `Number` *(default: 0)*
+
+The skip of the category axis major ticks.
 
 ### categoryAxis.minorGridLines `Object`
 
@@ -2474,6 +2530,14 @@ The width of the lines.
 Note that this setting has no effect if the visibility of the minor
 grid lines is not set to **true**.
 
+### categoryAxis.minorGridLines.step `Number` *(default: 1)*
+
+The step of the category axis minor grid lines.
+
+### categoryAxis.minorGridLines.skip `Number` *(default: 0)*
+
+The skip of the category axis minor grid lines.
+
 ### categoryAxis.minorTicks `Object`
 
 The minor ticks of the axis.
@@ -2486,6 +2550,22 @@ on the chart.
 ### categoryAxis.minorTicks.visible `Boolean`*(default: false)*
 
 The visibility of the minor ticks.
+
+### categoryAxis.minorTicks.color `String` *(default: "black")*
+
+The color of the category axis minor ticks lines. Accepts a valid CSS color string, including hex and rgb.
+
+### categoryAxis.minorTicks.width `Number` *(default: 1)*
+
+The width of the minor ticks in pixels.
+
+### categoryAxis.minorTicks.step `Number` *(default: 1)*
+
+The step of the category axis minor ticks.
+
+### categoryAxis.minorTicks.skip `Number` *(default: 0)*
+
+The skip of the category axis minor ticks.
 
 ### categoryAxis.name `String`*(default: "primary")*
 
@@ -7323,6 +7403,14 @@ The visibility of the lines.
 
 The width of the lines.
 
+### valueAxis.majorGridLines.step `Number` *(default: 1)*
+
+The step of the value axis major grid lines.
+
+### valueAxis.majorGridLines.skip `Number` *(default: 0)*
+
+The skip of the value axis major grid lines.
+
 ### valueAxis.majorTicks `Object`
 
 The major ticks of the axis.
@@ -7334,6 +7422,22 @@ The axis major tick size. This is the length of the line in pixels that is drawn
 ### valueAxis.majorTicks.visible `Boolean`*(default: true)*
 
 The visibility of the major ticks.
+
+### valueAxis.majorTicks.color `String` *(default: "black")*
+
+The color of the value axis major ticks lines. Accepts a valid CSS color string, including hex and rgb.
+
+### valueAxis.majorTicks.width `Number` *(default: 1)*
+
+The width of the major ticks in pixels.
+
+### valueAxis.majorTicks.step `Number` *(default: 1)*
+
+The step of the value axis major ticks.
+
+### valueAxis.majorTicks.skip `Number` *(default: 0)*
+
+The skip of the value axis major ticks.
 
 ### valueAxis.majorUnit `Number`
 
@@ -7404,6 +7508,14 @@ The width of the lines.
 
 Note that this settings has no effect if the visibility of the minor grid lines is not set to **true**.
 
+### valueAxis.minorGridLines.step `Number` *(default: 1)*
+
+The step of the value axis minor grid lines.
+
+### valueAxis.minorGridLines.skip `Number` *(default: 0)*
+
+The skip of the value axis minor grid lines.
+
 ### valueAxis.minorTicks `Object`
 
 The minor ticks of the axis.
@@ -7412,9 +7524,25 @@ The minor ticks of the axis.
 
 The axis minor tick size. This is the length of the line in pixels that is drawn to indicate the tick on the chart.
 
+### valueAxis.minorTicks.color `String` *(default: "black")*
+
+The color of the value axis minor ticks lines. Accepts a valid CSS color string, including hex and rgb.
+
+### valueAxis.minorTicks.width `Number` *(default: 1)*
+
+The width of the minor ticks in pixels.
+
 ### valueAxis.minorTicks.visible `Boolean`*(default: false)*
 
 The visibility of the minor ticks.
+
+### valueAxis.minorTicks.step `Number` *(default: 1)*
+
+The step of the value axis minor ticks.
+
+### valueAxis.minorTicks.skip `Number` *(default: 0)*
+
+The skip of the value axis minor ticks.
 
 ### valueAxis.minorUnit `Number`
 
