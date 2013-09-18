@@ -64,6 +64,10 @@ For more information, please refer to [Data Attribute Initialization](/getting-s
 	
 	<script>
 	$(function(){
+		function myClickHandler(e) {
+			// Add Button click handler
+		}
+	
 		kendo.init("#buttonsContainer");
 	});
 	</script>
