@@ -13,6 +13,8 @@ publish: true
 The **Kendo UI Button** provides a styled clickable UI widget with arbitrary content.
 Apart from consistent Kendo UI styling, the **Button** provides keyboard operability for elements, which natively don't have it (e.g. `span`).
 
+It is assumed that the reader of this page is familiar with the [/getting-started/widgets](fundamental Kendo UI widget concepts).
+
 ## Getting Started
 
 The **Button** widget can be initialized from any element with any content. However, using `button` or `a` elements is more reasonable.
@@ -52,9 +54,10 @@ There are two ways to do this - one is to use a jQuery selector, which returns m
 ### Multiple Buttons initialization with kendo.init
 
 	<div id="buttonsContainer">
-    <button type="button" data-role="button" id="editButton">Edit</button>
-    <button type="button" data-role="button" id="deleteButton">Delete</button>
-	<button type="button" data-role="button" id="addButton">Add</button>
+		<button type="button" data-role="button" id="editButton">Edit</button>
+		<button type="button" data-role="button" id="deleteButton">Delete</button>
+		<button type="button" data-role="button" id="addButton">Add</button>
+	</div>
 	
 	<script>
 	$(function(){
@@ -160,4 +163,46 @@ The **Button** can also be disabled or enabled at any time with Javascript by us
 	
 	</script>
 
-For more information, please refer to the [Button API](/api/web/button/).
+For more information on the **Button** [`enable` property](/api/web/button#configuration-enable) and the [`enable` method](/api/web/button#methods-enable), please refer to the [Button API](/api/web/button/).
+
+## Accessing the Button instance
+
+Similar to all other Kendo UI widgets, an existing Button instance is accessed via the `.data()` jQuery method, executed by the jQuery object of the originating element.
+
+### Example
+
+	<button type="button" id="editButton">Edit</button>
+	
+	<script>
+	
+	$(function(){
+		$("#editButton").kendoButton();
+		
+		var editButton = $("#editButton").data("kendoButton");
+	});
+	
+	</script>
+
+The `kendoButton()` method returns the same jQuery object that has been used to execute it.
+That's why, if the **Button** will be accessed afterwards, it is a good idea to save it at the time of initialization.
+
+### Example
+
+	<button type="button" id="editButton">Edit</button>
+	<button type="button" id="deleteButton">Delete</button>
+	
+	<script>
+	
+	$(function(){
+		// save button element and then the button widget object
+		var editButtonElement = $("#editButton").kendoButton();
+		var editButton = editButtonElement.data("kendoButton");
+		
+		// save the button widget object and then retrieve the DOM element as a jQuery object
+		var deleteButton = $("#editButton").kendoButton().data("kendoButton");
+		var deleteButtonElement = deleteButton.element;
+	});
+	
+	</script>
+
+For further reading and related information, please refer to the [Button API](/api/web/button/).
