@@ -13,7 +13,7 @@ publish: true
 The **Kendo UI Button** provides a styled clickable UI widget with arbitrary content.
 Apart from consistent Kendo UI styling, the **Button** provides keyboard operability for elements, which natively don't have it (e.g. `span`).
 
-It is assumed that the reader of this page is familiar with the [/getting-started/widgets](fundamental Kendo UI widget concepts).
+It is assumed that the reader of this page is familiar with the [fundamental Kendo UI widget concepts](/getting-started/widgets).
 
 ## Getting Started
 
