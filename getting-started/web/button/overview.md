@@ -37,7 +37,7 @@ Placing clickable elements with their own special behavior inside the **Button**
 ## Initializing multiple buttons
 
 Although each **Button** represents a separate widget instance on the page, multiple Buttons can be initialized simultaneously.
-There are two ways to do this - one is to use a jQuery selector, which returns multiple elements, or via [`kendo.init()`](/api/framework/kendo#methods-init).
+There are two ways to do this - one is to use a jQuery selector, which returns multiple elements, or via `kendo.init()`.
 
 ### Multiple Buttons initialization with a jQuery selector
 
@@ -53,9 +53,12 @@ There are two ways to do this - one is to use a jQuery selector, which returns m
 
 ### Multiple Buttons initialization with kendo.init
 
+This approach allows you to initialize multiple **Buttons** at once, but with different configuration options.
+For more information, please refer to [Data Attribute Initialization](/getting-started/data-attribute-initialization) and [`kendo.init()` method description](/api/framework/kendo#methods-init).
+
 	<div id="buttonsContainer">
-		<button type="button" data-role="button" id="editButton">Edit</button>
-		<button type="button" data-role="button" id="deleteButton">Delete</button>
+		<button type="button" data-role="button" data-sprite-css-class="myEditIcon" id="editButton">Edit</button>
+		<button type="button" data-role="button" data-enable="false" id="deleteButton">Delete</button>
 		<button type="button" data-role="button" id="addButton">Add</button>
 	</div>
 	
