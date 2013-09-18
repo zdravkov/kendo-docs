@@ -167,7 +167,7 @@ For more information on the **Button** [`enable` property](/api/web/button#confi
 
 ## Accessing the Button instance
 
-Similar to all other Kendo UI widgets, an existing Button instance is accessed via the `.data()` jQuery method, executed by the jQuery object of the originating element.
+Similar to all other Kendo UI widgets, an existing **Button** instance is accessed via the `.data()` jQuery method, executed by the jQuery object of the originating element.
 
 ### Example
 
