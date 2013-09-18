@@ -41,9 +41,9 @@ There are two ways to do this - one is to use a jQuery selector, which returns m
 
 ### Multiple Buttons initialization with a jQuery selector
 
-    <button type="button" class="myButton" id="editButton">Edit</button>
-    <button type="button" class="myButton" id="deleteButton">Delete</button>
-	<button type="button" class="myButton" id="addButton">Add</button>
+    <button type="button" class="myButton">Edit</button>
+    <button type="button" class="myButton">Delete</button>
+	<button type="button" class="myButton">Add</button>
 	
 	<script>
 	$(function(){
@@ -57,9 +57,9 @@ This approach allows you to initialize multiple **Buttons** at once, but with di
 For more information, please refer to [Data Attribute Initialization](/getting-started/data-attribute-initialization) and [`kendo.init()` method description](/api/framework/kendo#methods-init).
 
 	<div id="buttonsContainer">
-		<button type="button" data-role="button" data-sprite-css-class="myEditIcon" id="editButton">Edit</button>
-		<button type="button" data-role="button" data-enable="false" id="deleteButton">Delete</button>
-		<button type="button" data-role="button" id="addButton">Add</button>
+		<span data-role="button" data-sprite-css-class="myEditIcon">Edit</span>
+		<span data-role="button" data-enable="false">Delete</span>
+		<span data-role="button" data-click="myClickHandler">Add</span>
 	</div>
 	
 	<script>
