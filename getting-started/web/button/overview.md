@@ -10,16 +10,16 @@ publish: true
 
 # Button Overview
 
-The **Button** provides a styled clickable UI widget with arbitrary content.
-Apart from consistent Kendo UI styling, the Button provides keyboard operability for elements, which natively don't have it (e.g. `span`).
+The **Kendo UI Button** provides a styled clickable UI widget with arbitrary content.
+Apart from consistent Kendo UI styling, the **Button** provides keyboard operability for elements, which natively don't have it (e.g. `span`).
 
 ## Getting Started
 
-The Kendo UI Button widget can be initialized from any element with any content. However, using `button` or `a` elements is more reasonable.
+The **Button** widget can be initialized from any element with any content. However, using `button` or `a` elements is more reasonable.
 
-The Button can include both inline and block elements, but one should take into account web standards, which prohibit placing block elements (e.g. `div`, `p`) inside inline elements (e.g. `a`, `span`).
+The **Button** can include both inline and block elements, but one should take into account web standards, which prohibit placing block elements (e.g. `div`, `p`) inside inline elements (e.g. `a`, `span`).
 
-Placing clickable elements with their own special behavior inside the Button (e.g. hyperlinks, textboxes, etc) may cause undesired side efects.
+Placing clickable elements with their own special behavior inside the **Button** (e.g. hyperlinks, textboxes, etc) may cause undesired side efects.
 
 ### Button initialization example
 
@@ -34,7 +34,7 @@ Placing clickable elements with their own special behavior inside the Button (e.
 
 ## Initializing multiple buttons
 
-Although each Kendo UI Button represents a separate widget instance on the page, multiple Buttons can be initialized simultaneously.
+Although each **Button** represents a separate widget instance on the page, multiple Buttons can be initialized simultaneously.
 There are two ways to do this - one is to use a jQuery selector, which returns multiple elements, or via [`kendo.init()`](/api/framework/kendo#methods-init).
 
 ### Multiple Buttons initialization with a jQuery selector
@@ -64,14 +64,14 @@ There are two ways to do this - one is to use a jQuery selector, which returns m
 
 ## Using Icons
 
-The Kendo UI Button can accommodate an icon, which enhances the meaning of the text content.
+The **Button** can accommodate an icon, which enhances the meaning of the text content.
 The widget provides two ways to add an icon - with a classic `img` element or with a background image (usually a sprite).
 From web standarts' point of view, using background images is better, because the icon does not represent structural content, but it's simply a decoration.
 
 ### Background icons
 
 Background icons are applied via the `spriteCssClass` property and are displayed as a background of a `span` element.
-This element can be rendered by the Button automatically, or an existing `span` element can be used, if it has a `k-sprite` CSS class.
+This element can be rendered by the **Button** automatically, or an existing `span` element can be used, if it has a `k-sprite` CSS class.
 
 #### Example
 
@@ -92,8 +92,8 @@ This element can be rendered by the Button automatically, or an existing `span` 
 	
 	</script>
 
-In some cases you may want to use a Button with no text and only an icon inside.
-In order to increase the accessibility of the Button in this case, a text label can be included inside the sprite `span`.
+In some cases you may want to use a **Button** with no text and only an icon inside.
+In order to increase the accessibility of the **Button** in this case, a text label can be included inside the sprite `span`.
 
 #### Example
 
@@ -112,7 +112,7 @@ In order to increase the accessibility of the Button in this case, a text label 
 ### Image icons
 
 Image icons are applied via the `imageUrl` property and are displayed as a `img` element.
-This element can be rendered by the Button automatically, or an existing `img` element can be used, if it has a `k-image` CSS class.
+This element can be rendered by the **Button** automatically, or an existing `img` element can be used, if it has a `k-image` CSS class.
 
 #### Example
 
@@ -133,13 +133,13 @@ This element can be rendered by the Button automatically, or an existing `img` e
 	
 	</script>
 
-In order to increase the accessibility of the Button when adding an `img` element manually, an `alt` attribute is required.
+In order to increase the accessibility of the **Button** when adding an `img` element manually, an `alt` attribute is required.
 
 ## Enabled and Disabled buttons
 
 The business logic of an application often requires a certain button to be temporarily disabled or enabled.
-The Kendo UI Button can be configured to be initially disabled via its `enable` property or by initializing it from an element, which has a `disabled="disabled"` HTML attribute.
-The Button can also be disabled or enabled at any time with Javascript by using its `enable()` method with a boolean argument.
+The **Button** can be configured to be initially disabled via its `enable` property or by initializing it from an element, which has a `disabled="disabled"` HTML attribute.
+The **Button** can also be disabled or enabled at any time with Javascript by using its `enable()` method with a boolean argument.
 
 ### Example
 
