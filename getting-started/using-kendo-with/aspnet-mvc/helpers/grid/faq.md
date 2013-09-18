@@ -156,11 +156,20 @@ The scripts must be evaluated manually in the [Grid's dataBound event](/api/web/
 	@(Html.Kendo().Grid<ModelType>()
 		.Name("GridID")
 		.Columns(columns => {
-			columns.Template().HtmlAttributes(new { @class = "templateCell"}).ClientTemplate(
-				Html.Kendo().Menu()
-					.Name("menu_#=OrderID#")
-					.ToClientTemplate().ToHtmlString()
-				);    
+			columns.Template(@<text></text>).HtmlAttributes(new { @class = "templateCell" }).ClientTemplate(
+	                Html.Kendo().Menu()
+	                    .Name("menu_#=OrderID#")
+	                    .Items(its =>
+	                    {
+	                        its.Add().Text("foo").Items(nested =>
+	                        {
+	                            nested.Add().Text("bar");
+	                            nested.Add().Text("baz");
+	                        });
+	
+	                    })
+	                    .ToClientTemplate().ToHtmlString()
+	                );    
 		})
 		.Events(ev => ev.DataBound("initMenus"))
 	)
