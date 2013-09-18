@@ -13,7 +13,7 @@ publish: true
 
 ### enable `Boolean` *(default: true)*
 
-Indicates whether the Button should be enabled or disabled. By default, it is enabled, unless a `disabled="disabled"` attribute is detected.
+Indicates whether the **Button** should be enabled or disabled. By default, it is enabled, unless a `disabled="disabled"` attribute is detected.
 
 #### Example
 
@@ -52,7 +52,7 @@ The `img` element can be added automatically by the widget, or an existing eleme
 
 ### spriteCssClass `String`
 
-Defines a CSS class (or multiple classes separated by spaces), which will be used for a `span` element inside the Button with a background image.
+Defines a CSS class (or multiple classes separated by spaces), which will be used for a `span` element inside the **Button** with a background image.
 In case you want to use an icon from the Kendo UI theme sprite background image, you need to define two classes - `k-icon` and the respective icon CSS class.
 
 The `span` element can be added automatically by the widget, or an existing element can be used, if it has a `k-sprite` CSS class applied.
@@ -87,7 +87,7 @@ Enables or disables the Button.
 
 ##### toggle `Boolean`
 
-Indicates whether the Button should be enabled or disabled. Truthy and falsy arguments are accepted. If no argument is supplied, the Button will assume `true` and will be enabled.
+Indicates whether the **Button** should be enabled or disabled. Truthy and falsy arguments are accepted. If no argument is supplied, the **Button** will assume `true` and will be enabled.
 
 #### Example
 
@@ -105,7 +105,7 @@ Indicates whether the Button should be enabled or disabled. Truthy and falsy arg
 
 ### click
 
-Fires when the button is clicked with the mouse, touched on a touch device, or ENTER (or SPACE) is pressed while the button is focused.
+Fires when the **Button** is clicked with the mouse, touched on a touch device, or ENTER (or SPACE) is pressed while the **Button** is focused.
 
 #### Example - subscribe to the "click" event during initialization
 
