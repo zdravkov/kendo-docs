@@ -107,13 +107,20 @@ Indicates whether the **Button** should be enabled or disabled. Truthy and falsy
 
 Fires when the **Button** is clicked with the mouse, touched on a touch device, or ENTER (or SPACE) is pressed while the **Button** is focused.
 
+#### Event Data
+
+##### e.event `Object`
+
+The original DOM event.
+
+
 #### Example - subscribe to the "click" event during initialization
 
 	<button id="button" type="button">Edit</button>
 	<script>
 	$("#button").kendoButton({
-		click: function() {
-			alert("button clicked");
+		click: function(e) {
+			alert(e.event.target.tagName);
 		}
 	});
 	</script>
@@ -124,7 +131,7 @@ Fires when the **Button** is clicked with the mouse, touched on a touch device, 
 	<script>
 	$("#button").kendoButton();
 	var button = $("#button").data("kendoButton");
-	button.bind("click", function() {
-		alert("button clicked");
+	button.bind("click", function(e) {
+		alert(e.event.target.tagName);
 	});	
 	</script>
