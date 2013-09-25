@@ -1783,7 +1783,7 @@ The label template. Template variables:
 
 #### Example
 
-    // chart intialization
+    // chart initialization
     $("#chart").kendoChart({
          title: {
              text: "My Chart Title"
@@ -2102,7 +2102,7 @@ Template variables:
 
 #### Example
 
-    // chart intialization
+    // chart initialization
     $("#stock-chart").kendoStockChart({
          navigator: {
             hint: {
@@ -2313,7 +2313,7 @@ Template variables:
 
 #### Example
 
-    // chart intialization
+    // chart initialization
     $("#chart").kendoChart({
          title: {
              text: "My Chart Title"
@@ -5491,7 +5491,7 @@ The label template. Template variables:
 
 #### Example
 
-    // chart intialization
+    // chart initialization
     $("#chart").kendoChart({
          title: {
              text: "My Chart Title"
@@ -6616,7 +6616,7 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 
 ### seriesDefaults.labels.color `String`
 
-The text color of the labels. Any valid CSS color string will work here, inlcuding hex
+The text color of the labels. Any valid CSS color string will work here, including hex
 and rgb.
 
 ### seriesDefaults.labels.font `String`*(default: "12px Arial,Helvetica,sans-serif")*
@@ -6696,7 +6696,7 @@ Template variables:
 
 #### Example
 
-    // chart intialization
+    // chart initialization
     $("#chart").kendoChart({
          title: {
              text: "My Chart Title"
@@ -7310,7 +7310,7 @@ Template variables:
 
 #### Example
 
-    // chart intialization
+    // chart initialization
     $("#chart").kendoChart({
          title: {
              text: "My Chart Title"
@@ -7797,7 +7797,7 @@ Template variables:
 
 #### Example
 
-    // chart intialization
+    // chart initialization
     $("#chart").kendoChart({
          title: {
              text: "My Chart Title"
