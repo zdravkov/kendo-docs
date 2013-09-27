@@ -234,6 +234,86 @@ Provides a way for customization of the drag indicator. If a function is supplie
       }
     </style>
 
+### holdToDrag `Boolean` *(default: false)*
+
+Suitable for touch oriented user interface, in order to avoid collision with the touch scrolling gesture. When set to `true`, the widget will be activated after the user taps and holds the finger on the element for a short amount of time.
+
+The *draggable* will also be activated by pressing, holding and lifting the finger without any movement. Dragging it afterwards will initiate the drag immediately. The activated mode can be canceled by calling `cancelHold`.
+
+#### Example - hold to drag
+
+    <div id="draggable"></div>
+
+    <script>
+      $("#draggable").kendoDraggable({
+        holdToDrag: true,
+        hold: function(e) {
+            $("draggable").css("background", "red");
+        },
+        hint: function(element) {
+          var hintElement = $("<div id='hint'></div>");
+          hintElement.css({
+            "background-image": "url('http://www.kendoui.com/image/kendo-logo.png')",
+            "width": "230px",
+            "height": "80px"
+          });
+          return hintElement;
+        }
+      });
+    </script>
+
+    <style>
+      #draggable {
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        border: 2px solid green;
+      }
+    </style>
+
+## Methods
+
+### cancelHold
+
+Has effect only when `holdToDrag` is set to `true`. Cancels the activated state of the widget, caused by pressing and holding.
+
+#### Example - cancel activated draggable
+
+    <div id="draggable"></div>
+
+    <a id="cancel">Cancel Draggable activated state</a>
+
+    <script>
+      $("#cancel").click(function() {
+          $("#draggable").data("kendoDraggable").cancelHold();
+      });
+
+      $("#draggable").kendoDraggable({
+        holdToDrag: true,
+        hold: function(e) {
+            $("draggable").css("background", "red");
+        },
+        hint: function(element) {
+          var hintElement = $("<div id='hint'></div>");
+          hintElement.css({
+            "background-image": "url('http://www.kendoui.com/image/kendo-logo.png')",
+            "width": "230px",
+            "height": "80px"
+          });
+          return hintElement;
+        }
+      });
+    </script>
+
+    <style>
+      #draggable {
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        border: 2px solid green;
+      }
+    </style>
+
 ## Events
 
 ### drag
@@ -365,6 +445,41 @@ Fires when item drag starts.
         }
       });
     </script>
+    <style>
+      #draggable {
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        border: 2px solid green;
+      }
+    </style>
+
+### hold
+
+Triggered only when `holdToDrag` is set to `true`. Fires before the `dragStart` event.
+
+#### Example - hold to drag
+
+    <div id="draggable"></div>
+
+    <script>
+      $("#draggable").kendoDraggable({
+        holdToDrag: true,
+        hold: function(e) {
+            $("draggable").css("background", "red");
+        },
+        hint: function(element) {
+          var hintElement = $("<div id='hint'></div>");
+          hintElement.css({
+            "background-image": "url('http://www.kendoui.com/image/kendo-logo.png')",
+            "width": "230px",
+            "height": "80px"
+          });
+          return hintElement;
+        }
+      });
+    </script>
+
     <style>
       #draggable {
         width: 50px;
