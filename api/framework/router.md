@@ -95,6 +95,22 @@ Unbinds the router instance listeners from the URL fragment part changes.
 
 ### change
 
+Triggered when the user navigates back to the previous URL.
+
+#### Event Data
+
+##### e.url `String`
+
+The current part of the URL
+
+##### e.to `String`
+
+The fragment part of the previous URL
+
+> Calling the `preventDefault` method of the event object will stop the change and restore the previous URL.
+
+### change
+
 Triggered when the fragment part of the URL changes.
 
 #### Event Data
