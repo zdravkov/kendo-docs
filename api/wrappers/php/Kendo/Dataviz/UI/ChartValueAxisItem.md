@@ -42,6 +42,24 @@ Value at which the category axis crosses this axis. (Only for object)Value indic
     $valueAxisItem->axisCrossingValue(new array());
     ?>
 
+### background
+The background color of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
+    $valueAxisItem->background('value');
+    ?>
+
 ### color
 The color of the value axis. Accepts a valid CSS color string, including hex and rgb.
 

@@ -73,6 +73,24 @@ Category index at which the first value axis crosses this axis (when set as an o
     $categoryAxisItem->axisCrossingValue(new array());
     ?>
 
+### background
+The background color of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItem();
+    $categoryAxisItem->background('value');
+    ?>
+
 ### baseUnit
 The base time interval for the date axis. The default base unit is determined automatically from the minimum difference
 between subsequent categories.The supported values are:Setting baseUnit to "fit" will set such base unit and categoryAxis.baseUnitStep

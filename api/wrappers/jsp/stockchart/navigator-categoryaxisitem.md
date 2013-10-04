@@ -24,6 +24,14 @@ Category index at which the first value axis crosses this axis (when set as an o
     <kendo:stockChart-navigator-categoryAxisItem axisCrossingValue="axisCrossingValue">
     </kendo:stockChart-navigator-categoryAxisItem>
 
+### background `java.lang.String`
+
+The background color of the axis.
+
+#### Example
+    <kendo:stockChart-navigator-categoryAxisItem background="background">
+    </kendo:stockChart-navigator-categoryAxisItem>
+
 ### baseUnit `java.lang.String`
 
 The base time interval for the date axis. The default base unit is determined automatically from the minimum difference

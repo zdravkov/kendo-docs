@@ -47,8 +47,8 @@ Adds one or more StockChartNavigatorCategoryAxisItem to the StockChartNavigator.
     <?php
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItem();
-    $baseUnit = 'value';
-    $categoryAxisItem->baseUnit($baseUnit);
+    $background = 'value';
+    $categoryAxisItem->background($background);
     $navigator->addCategoryAxisItem($categoryAxisItem);
     ?>
 
@@ -56,8 +56,8 @@ Adds one or more StockChartNavigatorCategoryAxisItem to the StockChartNavigator.
 
     <?php
     $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
-    $baseUnit = 'value';
-    $navigator->addCategoryAxisItem(array('baseUnit' => $baseUnit));
+    $background = 'value';
+    $navigator->addCategoryAxisItem(array('background' => $background));
     ?>
 
 #### Example - adding more than one StockChartNavigatorCategoryAxisItem

@@ -26,7 +26,7 @@ The line color of the note.
 
 ### length `float`
 
-The line length of the note.
+The length of the connecting lines in pixels.
 
 #### Example
     <kendo:chart-xAxisItem-notes-dataItem-line length="length">

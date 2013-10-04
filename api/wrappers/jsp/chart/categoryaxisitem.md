@@ -24,6 +24,14 @@ Category index at which the first value axis crosses this axis (when set as an o
     <kendo:chart-categoryAxisItem axisCrossingValue="axisCrossingValue">
     </kendo:chart-categoryAxisItem>
 
+### background `java.lang.String`
+
+The background color of the axis.
+
+#### Example
+    <kendo:chart-categoryAxisItem background="background">
+    </kendo:chart-categoryAxisItem>
+
 ### baseUnit `java.lang.String`
 
 The base time interval for the date axis. The default base unit is determined automatically from the minimum difference

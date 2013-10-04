@@ -31,7 +31,7 @@ The line color of the note.
     ?>
 
 ### length
-The line length of the note.
+The length of the connecting lines in pixels.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartValueAxisItemNotesDataItemLine`

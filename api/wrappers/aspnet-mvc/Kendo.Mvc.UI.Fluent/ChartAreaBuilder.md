@@ -119,4 +119,30 @@ The border configuration action
 
 
 
+### Height(`System.Int32`)
+Sets the height of the chart area.
+
+
+#### Parameters
+
+##### height `System.Int32`
+The chart area height.
+
+
+
+
+
+### Width(`System.Int32`)
+Sets the width of the chart area.
+
+
+#### Parameters
+
+##### height `System.Int32`
+The chart area width.
+
+
+
+
+
 

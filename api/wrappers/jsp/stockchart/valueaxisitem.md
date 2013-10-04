@@ -24,6 +24,14 @@ Value at which the category axis crosses this axis. (Only for object)Value indic
     <kendo:stockChart-valueAxisItem axisCrossingValue="axisCrossingValue">
     </kendo:stockChart-valueAxisItem>
 
+### background `java.lang.String`
+
+The background color of the axis.
+
+#### Example
+    <kendo:stockChart-valueAxisItem background="background">
+    </kendo:stockChart-valueAxisItem>
+
 ### color `java.lang.String`
 
 Color to apply to all axis elements.

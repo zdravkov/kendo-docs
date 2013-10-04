@@ -42,6 +42,24 @@ Value at which the Y axis crosses this axis. (Only for object)Value indices at w
     $xAxisItem->axisCrossingValue(new array());
     ?>
 
+### background
+The background color of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartXAxisItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
+    $xAxisItem->background('value');
+    ?>
+
 ### baseUnit
 The base time interval for the axis labels. The default baseUnit is determined automatically from the value range. Available options:
 

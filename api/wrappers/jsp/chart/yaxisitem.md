@@ -24,6 +24,14 @@ Value at which the Y axis crosses this axis. (Only for object)Value indices at w
     <kendo:chart-yAxisItem axisCrossingValue="axisCrossingValue">
     </kendo:chart-yAxisItem>
 
+### background `java.lang.String`
+
+The background color of the axis.
+
+#### Example
+    <kendo:chart-yAxisItem background="background">
+    </kendo:chart-yAxisItem>
+
 ### baseUnit `java.lang.String`
 
 The base time interval for the axis labels. The default baseUnit is determined automatically from the value range. Available options:

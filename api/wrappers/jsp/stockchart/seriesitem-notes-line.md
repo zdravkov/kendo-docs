@@ -26,7 +26,7 @@ The line color of the notes.
 
 ### length `float`
 
-The line length of the notes.
+The length of the connecting lines in pixels.
 
 #### Example
     <kendo:stockChart-seriesItem-notes-line length="length">

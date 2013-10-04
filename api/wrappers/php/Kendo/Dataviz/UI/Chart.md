@@ -116,8 +116,8 @@ Adds one or more ChartCategoryAxisItem to the Chart.
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $categoryAxisItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItem();
-    $baseUnit = 'value';
-    $categoryAxisItem->baseUnit($baseUnit);
+    $background = 'value';
+    $categoryAxisItem->background($background);
     $chart->addCategoryAxisItem($categoryAxisItem);
     ?>
 
@@ -125,8 +125,8 @@ Adds one or more ChartCategoryAxisItem to the Chart.
 
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
-    $baseUnit = 'value';
-    $chart->addCategoryAxisItem(array('baseUnit' => $baseUnit));
+    $background = 'value';
+    $chart->addCategoryAxisItem(array('background' => $background));
     ?>
 
 #### Example - adding more than one ChartCategoryAxisItem
@@ -945,8 +945,8 @@ Adds one or more ChartValueAxisItem to the Chart.
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
-    $color = 'value';
-    $valueAxisItem->color($color);
+    $background = 'value';
+    $valueAxisItem->background($background);
     $chart->addValueAxisItem($valueAxisItem);
     ?>
 
@@ -954,8 +954,8 @@ Adds one or more ChartValueAxisItem to the Chart.
 
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
-    $color = 'value';
-    $chart->addValueAxisItem(array('color' => $color));
+    $background = 'value';
+    $chart->addValueAxisItem(array('background' => $background));
     ?>
 
 #### Example - adding more than one ChartValueAxisItem
@@ -983,8 +983,8 @@ Adds one or more ChartXAxisItem to the Chart.
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $xAxisItem = new \Kendo\Dataviz\UI\ChartXAxisItem();
-    $baseUnit = 'value';
-    $xAxisItem->baseUnit($baseUnit);
+    $background = 'value';
+    $xAxisItem->background($background);
     $chart->addXAxisItem($xAxisItem);
     ?>
 
@@ -992,8 +992,8 @@ Adds one or more ChartXAxisItem to the Chart.
 
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
-    $baseUnit = 'value';
-    $chart->addXAxisItem(array('baseUnit' => $baseUnit));
+    $background = 'value';
+    $chart->addXAxisItem(array('background' => $background));
     ?>
 
 #### Example - adding more than one ChartXAxisItem
@@ -1021,8 +1021,8 @@ Adds one or more ChartYAxisItem to the Chart.
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
     $yAxisItem = new \Kendo\Dataviz\UI\ChartYAxisItem();
-    $baseUnit = 'value';
-    $yAxisItem->baseUnit($baseUnit);
+    $background = 'value';
+    $yAxisItem->background($background);
     $chart->addYAxisItem($yAxisItem);
     ?>
 
@@ -1030,8 +1030,8 @@ Adds one or more ChartYAxisItem to the Chart.
 
     <?php
     $chart = new \Kendo\Dataviz\UI\Chart('Chart');
-    $baseUnit = 'value';
-    $chart->addYAxisItem(array('baseUnit' => $baseUnit));
+    $background = 'value';
+    $chart->addYAxisItem(array('background' => $background));
     ?>
 
 #### Example - adding more than one ChartYAxisItem

@@ -25,6 +25,14 @@ of categories to denote the far end of the axis.
     <kendo:stockChart-categoryAxisItem axisCrossingValue="axisCrossingValue">
     </kendo:stockChart-categoryAxisItem>
 
+### background `java.lang.String`
+
+The background color of the axis.
+
+#### Example
+    <kendo:stockChart-categoryAxisItem background="background">
+    </kendo:stockChart-categoryAxisItem>
+
 ### baseUnit `java.lang.String`
 
 The base time interval for the date axis. The default base unit is determined automatically from the minimum difference

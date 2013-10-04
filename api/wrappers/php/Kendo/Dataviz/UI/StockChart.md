@@ -115,8 +115,8 @@ Adds one or more StockChartCategoryAxisItem to the StockChart.
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
-    $baseUnit = 'value';
-    $categoryAxisItem->baseUnit($baseUnit);
+    $background = 'value';
+    $categoryAxisItem->background($background);
     $stockChart->addCategoryAxisItem($categoryAxisItem);
     ?>
 
@@ -124,8 +124,8 @@ Adds one or more StockChartCategoryAxisItem to the StockChart.
 
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $baseUnit = 'value';
-    $stockChart->addCategoryAxisItem(array('baseUnit' => $baseUnit));
+    $background = 'value';
+    $stockChart->addCategoryAxisItem(array('background' => $background));
     ?>
 
 #### Example - adding more than one StockChartCategoryAxisItem
@@ -985,8 +985,8 @@ Adds one or more StockChartValueAxisItem to the StockChart.
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
     $valueAxisItem = new \Kendo\Dataviz\UI\StockChartValueAxisItem();
-    $color = 'value';
-    $valueAxisItem->color($color);
+    $background = 'value';
+    $valueAxisItem->background($background);
     $stockChart->addValueAxisItem($valueAxisItem);
     ?>
 
@@ -994,8 +994,8 @@ Adds one or more StockChartValueAxisItem to the StockChart.
 
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
-    $color = 'value';
-    $stockChart->addValueAxisItem(array('color' => $color));
+    $background = 'value';
+    $stockChart->addValueAxisItem(array('background' => $background));
     ?>
 
 #### Example - adding more than one StockChartValueAxisItem

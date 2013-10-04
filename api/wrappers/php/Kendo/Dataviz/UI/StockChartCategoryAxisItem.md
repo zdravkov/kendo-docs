@@ -74,6 +74,24 @@ of categories to denote the far end of the axis.
     $categoryAxisItem->axisCrossingValue(new array());
     ?>
 
+### background
+The background color of the axis.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartCategoryAxisItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $categoryAxisItem = new \Kendo\Dataviz\UI\StockChartCategoryAxisItem();
+    $categoryAxisItem->background('value');
+    ?>
+
 ### baseUnit
 The base time interval for the date axis. The default base unit is determined automatically from the minimum difference
 between subsequent categories.The supported values are:Setting baseUnit to "fit" will set such base unit and categoryAxis.baseUnitStep
