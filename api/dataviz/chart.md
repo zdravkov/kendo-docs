@@ -157,6 +157,25 @@ Category indices at which the value axes cross the category axis (when set as an
     });
     </script>
 
+### categoryAxis.background `String`
+
+The background color of the axis.
+
+#### Example - set the category axis crossing values
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      categoryAxis: {
+        categories: [ "2012", "2013"],
+        background: "#ff0000"
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
 ### categoryAxis.baseUnit `String`
 
 The base time interval for the date axis. The default base unit is determined automatically from the minimum difference
@@ -14383,6 +14402,24 @@ Date at which the category axis crosses this axis. (Only for date)
     });
     </script>
 
+### valueAxis.background `String`
+
+The background color of the axis.
+
+#### Example - set the category axis crossing values
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: {
+        background: "#ff0000"
+      },
+      series: [
+        { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
 ### valueAxis.color `String`
 
 The color of the value axis. Accepts a valid CSS color string, including hex and rgb.
@@ -18592,6 +18629,24 @@ Date at which the Y axis crosses this axis. (Only for date)
       ],
       xAxis: {
         axisCrossingValue: [1, 2]
+      }
+    });
+    </script>
+
+### xAxis.background `String`
+
+The background color of the axis.
+
+#### Example - set the category axis crossing values
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        { type: "scatter", data: [[1, 2]] }
+      ],
+      xAxis: {
+        background: "#ff0000"
       }
     });
     </script>
@@ -23056,6 +23111,24 @@ Date at which the Y axis crosses this axis. (Only for date)
       ],
       yAxis: {
         axisCrossingValue: [1, 2]
+      }
+    });
+    </script>
+
+### yAxis.background `String`
+
+The background color of the axis.
+
+#### Example - set the category axis crossing values
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        { type: "scatter", data: [[1, 2]] }
+      ],
+      yAxis: {
+        background: "#ff0000"
       }
     });
     </script>
