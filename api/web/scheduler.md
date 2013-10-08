@@ -87,6 +87,31 @@ If set to `true` the scheduler will display a slot for "all day" events.
     });
     </script>
 
+### autoBind `Boolean` *(default: true)*
+
+If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
+data source is fired. By default the widget will bind to the data source specified in the configuration.
+
+> Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
+
+#### Example - disable automatic binding
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      autoBind: false,
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### dataSource `Object|Array|kendo.data.SchedulerDataSource`
 
 The data source of the widget which contains the scheduler events. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.SchedulerDataSource](/api/framework/schedulerdatasource)
