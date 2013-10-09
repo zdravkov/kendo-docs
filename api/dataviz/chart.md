@@ -7771,7 +7771,7 @@ The supported values are:
 
 The name of the value axis to use.
 
-> The `axis` option is supported when [series.type](#configuration-series.type) is set to "area", "bar", "column", "line", "stepArea", "stepLine", "candlestick" or "ohlc".
+> The `axis` option is supported when [series.type](#configuration-series.type) is set to "area", "bar", "column", "line", "candlestick" or "ohlc".
 
 #### Example - set the chart series value axis
 
@@ -8184,7 +8184,7 @@ The array of data items which represent the series data.
 Can be set to :
 
 * Array of objects. Each point is bound to the field specified via the [series.field](#configuration-series.field) option.
-* Array of numbers. Supported when the [series.type](#configuration-series.type) option is set to "area", "bar", "column", "donut", "pie", "stepLine", "stepArea" or "line".
+* Array of numbers. Supported when the [series.type](#configuration-series.type) option is set to "area", "bar", "column", "donut", "pie" or "line".
 * Array of arrays of numbers. Supported when the [series.type](#configuration-series.type) option is set to "bubble", "scatter", "scatterLine", "ohlc" or polar series.
     * Bubble series need arrays of three values - X value, Y value and Size value e.g. `[1, 1, 10]`
     * Scatter and scatter line series need arrays of two values - X value and Y value
@@ -9459,7 +9459,7 @@ The top margin of the labels.
 The chart series marker configuration.
 
 > The chart displays the series labels when the [series.markers.visible](#configuration-series.markers.visible) option is set to `true`.
-> The `markers` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "stepArea", "stepLine", "scatter", "scatterLine", "radarLine", "radarArea", "polarLine", "polarScatter" or "polarArea".
+> The `markers` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatter", "scatterLine", "radarLine", "radarArea", "polarLine", "polarScatter" or "polarArea".
 
 #### Example - set the chart series markers
 
@@ -9724,7 +9724,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "stepLine", "stepArea", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
 
 #### Example - set the missing values behavior
     <div id="chart"></div>
@@ -10669,16 +10669,12 @@ The supported values are:
 * polarArea
 * polarLine
 * polarScatter
-* stepArea
-* stepLine
 * radarArea
 * radarColumn
 * radarLine
 * scatterLine
 * verticalArea
 * verticalBullet
-* verticalStepArea
-* verticalStepLine
 * verticalLine
 
 #### Example - set the chart series type
@@ -10742,7 +10738,7 @@ The data item field which indicates whether to show the point category name in t
 
 The line width.
 
-> The `width` option is supported when [series.type](#configuration-series.type) is set to "line", "stepLine", "stepArea", "scatterLine", "radarLine" or "polarLine".
+> The `width` option is supported when [series.type](#configuration-series.type) is set to "line", "scatterLine", "radarLine" or "polarLine".
 
 #### Example - set the chart line width
     <div id="chart"></div>

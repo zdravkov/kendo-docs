@@ -1261,14 +1261,12 @@ The type of the series. Available types:
 * bullet
 * area
 * line
-* stepArea
-* stepLine
 
 ### navigator.series.dashType `String`*(default: "solid")*
 
 The dash type of line chart.
 
-> The `dashType` option is taken into consideration only if the [series.type](#configuration-series.type) option is set to "line" or "stepLine".
+> The `dashType` option is taken into consideration only if the [series.type](#configuration-series.type) option is set to "line".
 
 The following dash types are supported:
 
@@ -1919,7 +1917,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepArea", "stepLine" and "line".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
 
 ### navigator.series.opacity `Number`
 
@@ -1987,7 +1985,7 @@ The tooltip font.
 
 The tooltip format. Format variables depend on the series type:
 
-* Area, column, stepArea, stepLine, line and pie
+* Area, column, line and pie
     *   **0** - value
 * Candlestick and OHLC
     *   **0** - open value
@@ -4949,7 +4947,6 @@ The type of the series. Available types:
 * area
 * column
 * line
-* stepLine
 * candlestick, ohlc
 * bullet
 
@@ -5629,7 +5626,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "stepArea", "stepLine" and "line".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
 
 ### series.negativeColor `String`
 
@@ -5705,7 +5702,7 @@ The tooltip font.
 
 The tooltip format. Format variables depend on the series type:
 
-* Area, column, stepArea, stepLine, line and pie
+* Area, column, line and pie
     *   **0** - value
 * Candlestick and OHLC
     *   **0** - open value

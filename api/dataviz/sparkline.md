@@ -2222,8 +2222,6 @@ The type of the series. Available types:
 * area
 * column (synonym: bar)
 * line
-* stepArea
-* stepLine
 * pie
 * bullet
 
@@ -2747,7 +2745,7 @@ The behavior for handling missing values. The supported values are:
 
 > The default value is "interpolate", except for "area" and "stepArea" and stacked series which default to "zero".
 
-> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "stepArea", "stepLine", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
+> The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
 
 #### Example - set the missing values behavior
     <div id="chart"></div>
