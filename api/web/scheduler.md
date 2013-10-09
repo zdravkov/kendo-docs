@@ -3191,6 +3191,38 @@ If set to `true` the scheduler will display a slot for "all day" events.
     });
     </script>
 
+### views.allDaySlotTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) used to render the all day slot cell.
+
+The fields which can be used in the template are:
+
+* date - represents the slot date.
+
+> The `allDaySlotTemplate` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+
+#### Example - set the date header template
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        {
+          type: "day",
+          allDaySlotTemplate: kendo.template("<strong>#=kendo.toString(date)#</strong>")
+        }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### views.dateHeaderTemplate `String|Function`
 
 The [template](/api/framework/kendo#methods-template) used to render the date header cells.
@@ -3785,6 +3817,38 @@ Contains two placeholders - "{0}" and "{1}" which represent the start and end da
           type: "day",
           selectedDateFormat: "{0:dd-MM-yyyy}"
         },
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### views.slotTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) used to render the time slot cells.
+
+The fields which can be used in the template are:
+
+* date - represents the slot date and time.
+
+> The `slotTemplate` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+
+#### Example - set the date header template
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        {
+          type: "day",
+          slotTemplate: kendo.template("<strong>#=kendo.toString(date)#</strong>")
+        }
       ],
       dataSource: [
         {
