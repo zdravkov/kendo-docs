@@ -76,6 +76,19 @@ The templateId
 
 
 
+### TemplateName(`System.String`)
+The EditorTemplate which to be rendered as editor.
+
+
+#### Parameters
+
+##### template `System.String`
+The name of the EditorTemplate
+
+
+
+
+
 ### Confirmation(`System.String`)
 The text which the scheduler will display in a confirmation dialog when the user clicks the "destroy" button.
 
@@ -89,6 +102,19 @@ The message
 
 
 
+### Resize(`System.Boolean`)
+If set to false the resizing of the events will be disabled. Resizing is enabled by default.
+
+
+#### Parameters
+
+##### enable `System.Boolean`
+The resize option
+
+
+
+
+
 ### Confirmation(`System.Boolean`)
 If set to true the scheduler will display a confirmation dialog when the user clicks the "destroy" button. Confirmation dialog is enabled by default.
 
@@ -96,7 +122,7 @@ If set to true the scheduler will display a confirmation dialog when the user cl
 #### Parameters
 
 ##### enable `System.Boolean`
-The confirmation.
+The confirmation
 
 
 

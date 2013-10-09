@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartSeriesFactory
-Creates series for the !:Chart{TModel}.
+Creates series for the 1.
 
 
 ## Properties
@@ -393,6 +393,184 @@ The data to bind to
 
 
 
+### StepLine(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound step line series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### StepLine(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound step line series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the category from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### StepLine(`System.String,System.String,System.String`)
+Defines bound step line series.
+
+
+#### Parameters
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### StepLine(`System.Type,System.String,System.String,System.String`)
+Defines bound step line series.
+
+
+#### Parameters
+
+##### memberType `System.Type`
+The type of the value member.
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### StepLine(`System.Collections.IEnumerable`)
+Defines step line series bound to inline data.
+
+
+#### Parameters
+
+##### data `System.Collections.IEnumerable`
+The data to bind to
+
+
+
+
+
+### VerticalStepLine(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound vertical step line series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the category from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### VerticalStepLine(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound vertical step line series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### VerticalStepLine(`System.String,System.String,System.String`)
+Defines bound vertical step line series.
+
+
+#### Parameters
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### VerticalStepLine(`System.Type,System.String,System.String,System.String`)
+Defines bound vertical step line series.
+
+
+#### Parameters
+
+##### memberType `System.Type`
+The type of the value member.
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### VerticalStepLine(`System.Collections.IEnumerable`)
+Defines vertical line series bound to inline data.
+
+
+#### Parameters
+
+##### data `System.Collections.IEnumerable`
+The data to bind to
+
+
+
+
+
 ### Area(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
 Defines bound area series.
 
@@ -559,6 +737,184 @@ The name of the note text member.
 
 
 ### VerticalArea(`System.Collections.IEnumerable`)
+Defines vertical area series bound to inline data.
+
+
+#### Parameters
+
+##### data `System.Collections.IEnumerable`
+The data to bind to
+
+
+
+
+
+### StepArea(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound step area series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### StepArea(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound step area series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the category from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### StepArea(`System.String,System.String,System.String`)
+Defines bound step area series.
+
+
+#### Parameters
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### StepArea(`System.Type,System.String,System.String,System.String`)
+Defines bound step area series.
+
+
+#### Parameters
+
+##### memberType `System.Type`
+The type of the value member.
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### StepArea(`System.Collections.IEnumerable`)
+Defines step area series bound to inline data.
+
+
+#### Parameters
+
+##### data `System.Collections.IEnumerable`
+The data to bind to
+
+
+
+
+
+### VerticalStepArea(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound vertical step area series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the category from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### VerticalStepArea(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+Defines bound vertical step area series.
+
+
+#### Parameters
+
+##### expression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the value from the chart model.
+
+##### noteTextExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the note text from the chart model.
+
+
+
+
+
+### VerticalStepArea(`System.String,System.String,System.String`)
+Defines bound vertical step area series.
+
+
+#### Parameters
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### VerticalStepArea(`System.Type,System.String,System.String,System.String`)
+Defines bound vertical step area series.
+
+
+#### Parameters
+
+##### memberType `System.Type`
+The type of the value member.
+
+##### memberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### noteTextMemberName `System.String`
+The name of the note text member.
+
+
+
+
+
+### VerticalStepArea(`System.Collections.IEnumerable`)
 Defines vertical area series bound to inline data.
 
 

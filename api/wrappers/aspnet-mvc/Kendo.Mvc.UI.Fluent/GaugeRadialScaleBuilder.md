@@ -81,4 +81,46 @@ The configuration action.
     %>
 
 
+### RangeSize(`System.Double`)
+Sets the width of the range indicators.
+
+
+#### Parameters
+
+##### theme `System.Double`
+The width of the range indicators.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().RadialGauge()
+    .Name("radialGauge")
+    .Scale(scale => scale
+        .RangeSize(4)
+    )
+    %>
+
+
+### RangeDistance(`System.Double`)
+Sets the distance from the range indicators to the ticks.
+
+
+#### Parameters
+
+##### theme `System.Double`
+The distance from the range indicators to the ticks.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().RadialGauge()
+    .Name("radialGauge")
+    .Scale(scale => scale
+        .RangeDistance(4)
+    )
+    %>
+
+
 

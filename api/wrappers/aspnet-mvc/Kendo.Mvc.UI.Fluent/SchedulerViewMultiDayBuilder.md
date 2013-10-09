@@ -302,4 +302,94 @@ The seconds
         )
 
 
+### WorkDayStart(`System.DateTime`)
+The start time of the business hours. The scheduler will display events after the workDayStart if "WorkDayCommand" button is clicked.
+
+
+#### Parameters
+
+##### workDayStart `System.DateTime`
+The WorkDayStart
+
+
+
+
+
+### WorkDayStart(`System.Int32,System.Int32,System.Int32`)
+The start time of the business hours. The scheduler will display events after the workDayStart if "WorkDayCommand" button is clicked.
+
+
+#### Parameters
+
+##### hours `System.Int32`
+The hours
+
+##### minutes `System.Int32`
+The minutes
+
+##### seconds `System.Int32`
+The seconds
+
+
+
+
+
+### WorkDayEnd(`System.DateTime`)
+The end time of the business hours. The scheduler will display events before the workDayEnd if "WorkDayCommand" button is clicked.
+
+
+#### Parameters
+
+##### workDayEnd `System.DateTime`
+The WorkDayEnd
+
+
+
+
+
+### WorkDayEnd(`System.Int32,System.Int32,System.Int32`)
+The end time of the business hours. The scheduler will display events before the workDayEnd if "WorkDayCommand" button is clicked.
+
+
+#### Parameters
+
+##### hours `System.Int32`
+The hours
+
+##### minutes `System.Int32`
+The minutes
+
+##### seconds `System.Int32`
+The seconds
+
+
+
+
+
+### WorkDayCommand(`System.Boolean`)
+If set to false the scheduler will not display the "WorkDayCommand" button. Default value is true.
+
+
+#### Parameters
+
+##### showWorkDayCommand `System.Boolean`
+The showWorkDayCommand
+
+
+
+
+
+### Footer(`System.Boolean`)
+If set to false the scheduler will not display the "footer" area. Default value is true.
+
+
+#### Parameters
+
+##### footer `System.Boolean`
+The footer
+
+
+
+
+
 

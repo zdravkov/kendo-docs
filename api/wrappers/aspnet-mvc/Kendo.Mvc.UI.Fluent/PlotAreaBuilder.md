@@ -119,4 +119,24 @@ The border configuration action
 
 
 
+### Opacity(`System.Double`)
+Sets the plot area opacity.
+
+
+#### Parameters
+
+##### opacity `System.Double`
+The plot area opacity in the range from 0 (transparent) to 1 (opaque).
+            The default value is 1.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart(Model)
+    .Name("Chart")
+    .PlotArea(p => p.Background("green").Opacity(0.5))
+    %>
+
+
 

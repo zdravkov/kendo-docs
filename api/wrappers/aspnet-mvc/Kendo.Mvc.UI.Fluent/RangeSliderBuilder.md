@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.RangeSliderBuilder
-Defines the fluent interface for configuring the !:RangeSlider{T}component.
+Defines the fluent interface for configuring the 1component.
 
 
 

@@ -39,6 +39,20 @@ Defines the default settings for vertical line series.
 
 
 
+### StepLine
+Defines the default settings for step line series.
+
+
+
+
+
+### VerticalStepLine
+Defines the default settings for vertical step line series.
+
+
+
+
+
 ### Area
 Defines the default settings for area series.
 
@@ -48,6 +62,20 @@ Defines the default settings for area series.
 
 ### VerticalArea
 Defines the default settings for vertical area series.
+
+
+
+
+
+### StepArea
+Defines the default settings for area step series.
+
+
+
+
+
+### VerticalStepArea
+Defines the default settings for vertical step area series.
 
 
 

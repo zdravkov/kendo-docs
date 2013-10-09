@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerResourceBuilder
-Defines the fluent interface for configuring the !:SchedulerResource{TModel}.
+Defines the fluent interface for configuring the 1.
 
 
 

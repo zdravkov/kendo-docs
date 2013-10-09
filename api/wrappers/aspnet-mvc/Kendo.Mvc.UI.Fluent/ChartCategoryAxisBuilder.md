@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder
-Configures the category axis for the !:Chart{TModel}.
+Configures the category axis for the 1.
 
 
 ## Properties

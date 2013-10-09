@@ -37,7 +37,7 @@ Creates a Editor
 
 
 ### GridT1
-Creates a new !:Kendo.Mvc.UI.Grid{T} bound to the specified data item type.
+Creates a new 1 bound to the specified data item type.
 
 
 
@@ -50,7 +50,7 @@ Creates a new !:Kendo.Mvc.UI.Grid{T} bound to the specified data item type.
 
 
 ### Grid(`System.Collections.Generic.IEnumerable<T1>`)
-Creates a new !:Kendo.Mvc.UI.Grid{T} bound to the specified data source.
+Creates a new 1 bound to the specified data source.
 
 
 #### Parameters
@@ -68,7 +68,7 @@ The data source.
 
 
 ### Grid(`System.Data.DataTable`)
-Creates a new !:Kendo.Mvc.UI.Grid{T} bound to a DataTable.
+Creates a new 1 bound to a DataTable.
 
 
 #### Parameters
@@ -81,7 +81,7 @@ DataTable from which the grid instance will be bound
 
 
 ### Grid(`System.Data.DataView`)
-Creates a new !:Kendo.Mvc.UI.Grid{T} bound to a DataView.
+Creates a new 1 bound to a DataView.
 
 
 #### Parameters
@@ -94,7 +94,7 @@ DataView from which the grid instance will be bound
 
 
 ### Grid(`System.String`)
-Creates a new !:Kendo.Mvc.UI.Grid{T} bound an item in ViewData.
+Creates a new 1 bound an item in ViewData.
 
 
 #### Parameters
@@ -112,7 +112,7 @@ The data source view data key.
 
 
 ### ListViewT1
-Creates a new !:Kendo.Mvc.UI.ListView{T} bound to the specified data item type.
+Creates a new 1 bound to the specified data item type.
 
 
 
@@ -125,7 +125,7 @@ Creates a new !:Kendo.Mvc.UI.ListView{T} bound to the specified data item type.
 
 
 ### ListView(`System.Collections.Generic.IEnumerable<T1>`)
-Creates a new !:Kendo.Mvc.UI.ListView{T} bound to the specified data source.
+Creates a new 1 bound to the specified data source.
 
 
 #### Parameters
@@ -143,7 +143,7 @@ The data source.
 
 
 ### ListView(`System.String`)
-Creates a new !:Kendo.Mvc.UI.ListView{T} bound an item in ViewData.
+Creates a new 1 bound an item in ViewData.
 
 
 #### Parameters
@@ -161,7 +161,7 @@ The data source view data key.
 
 
 ### MobileListViewT1
-Creates a new !:Kendo.Mvc.UI.MobileListView{T} bound to the specified data item type.
+Creates a new 1 bound to the specified data item type.
 
 
 
@@ -191,7 +191,7 @@ Creates a new MobileListView.
 
 
 ### MobileListView(`System.Collections.Generic.IEnumerable<T1>`)
-Creates a new !:Kendo.Mvc.UI.MobileListView{T} bound to the specified data source.
+Creates a new 1 bound to the specified data source.
 
 
 #### Parameters
@@ -209,7 +209,7 @@ The data source.
 
 
 ### MobileListView(`System.String`)
-Creates a new !:Kendo.Mvc.UI.MobileListView{T} bound an item in ViewData.
+Creates a new 1 bound an item in ViewData.
 
 
 #### Parameters
@@ -381,7 +381,7 @@ Creates a new PanelBar.
 
 
 ### SchedulerT1
-Creates a new !:Scheduler{T}.
+Creates a new 1.
 
 
 
@@ -418,7 +418,7 @@ Creates a new NumericTextBox.
 
 
 ### NumericTextBoxT1
-Creates a new !:NumericTextBox{T}.
+Creates a new 1.
 
 
 
@@ -633,8 +633,20 @@ Creates a Upload
     %>
 
 
+### Button
+Creates a Button
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Button()
+    .Name("Button1");
+    %>
+
+
 ### ChartT1
-Creates a !:Kendo.Mvc.UI.Chart{T}
+Creates a 1
 
 
 
@@ -646,7 +658,7 @@ Creates a !:Kendo.Mvc.UI.Chart{T}
 
 
 ### Chart(`System.Collections.Generic.IEnumerable<T1>`)
-Creates a new !:Kendo.Mvc.UI.Chart{T} bound to the specified data source.
+Creates a new 1 bound to the specified data source.
 
 
 #### Parameters
@@ -664,7 +676,7 @@ The data source.
 
 
 ### Chart(`System.String`)
-Creates a new !:Kendo.Mvc.UI.Chart{T} bound an item in ViewData.
+Creates a new 1 bound an item in ViewData.
 
 
 #### Parameters
@@ -697,7 +709,7 @@ Creates a new unbound Chart.
 
 
 ### StockChartT1
-Creates a !:Kendo.Mvc.UI.StockChart{T}
+Creates a 1
 
 
 
@@ -709,7 +721,7 @@ Creates a !:Kendo.Mvc.UI.StockChart{T}
 
 
 ### StockChart(`System.Collections.Generic.IEnumerable<T1>`)
-Creates a new !:Kendo.Mvc.UI.StockChart{T} bound to the specified data source.
+Creates a new 1 bound to the specified data source.
 
 
 #### Parameters
@@ -727,7 +739,7 @@ The data source.
 
 
 ### StockChart(`System.String`)
-Creates a new !:Kendo.Mvc.UI.StockChart{T} bound an item in ViewData.
+Creates a new 1 bound an item in ViewData.
 
 
 #### Parameters
@@ -760,7 +772,7 @@ Creates a new unbound StockChart.
 
 
 ### SparklineT1
-Creates a !:Kendo.Mvc.UI.Sparkline{T}
+Creates a 1
 
 
 
@@ -772,7 +784,7 @@ Creates a !:Kendo.Mvc.UI.Sparkline{T}
 
 
 ### Sparkline(`System.Collections.Generic.IEnumerable<T1>`)
-Creates a new !:Kendo.Mvc.UI.Sparkline{T} bound to the specified data source.
+Creates a new 1 bound to the specified data source.
 
 
 #### Parameters
@@ -790,7 +802,7 @@ The data source.
 
 
 ### Sparkline(`System.String`)
-Creates a new !:Kendo.Mvc.UI.Sparkline{T} bound an item in ViewData.
+Creates a new 1 bound an item in ViewData.
 
 
 #### Parameters

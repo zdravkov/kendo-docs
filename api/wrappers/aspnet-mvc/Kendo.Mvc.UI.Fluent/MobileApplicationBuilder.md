@@ -51,7 +51,7 @@ The value that configures the initial.
 
 
 ### Layout(`System.String`)
-The id of the default Application Layout.
+The id of the default Application layout.
 
 
 #### Parameters
@@ -77,7 +77,7 @@ The value that configures the loading.
 
 
 ### Platform(`System.String`)
-Which platform look to force on the application. Can be one of "ios", "android", "blackberry".
+Which platform look to force on the application. Supported values are "ios", "android", "blackberry" and "wp8".
 
 
 #### Parameters
@@ -90,7 +90,7 @@ The value that configures the platform.
 
 
 ### ServerNavigation(`System.Boolean`)
-If set to true, the application will not use ajax to load remote views.
+If set to true, the application will not use AJAX to load remote views.
 
 
 #### Parameters
@@ -110,6 +110,19 @@ The skin to apply to the application. Currently, Kendo UI Mobile ships with a fl
 
 ##### value `System.String`
 The value that configures the skin.
+
+
+
+
+
+### StatusBarStyle(`System.String`)
+Set the status bar style meta tag in iOS used to control the styling of the status bar in a pinned to the Home Screen app. Available as of Q2 2013 SP.
+
+
+#### Parameters
+
+##### value `System.String`
+The value that configures the statusbarstyle.
 
 
 

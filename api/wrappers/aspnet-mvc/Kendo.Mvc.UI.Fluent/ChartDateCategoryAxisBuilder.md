@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder
-Configures date category axis for the !:Chart{TModel}.
+Configures date category axis for the 1.
 
 
 ## Properties

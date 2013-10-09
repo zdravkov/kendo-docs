@@ -535,7 +535,7 @@ Configure the DataSource of the component
 #### Parameters
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyDataSourceBuilder)>
-The action that configures the DataSource.
+The action that configures the M:Kendo.Mvc.UI.Fluent.TreeViewBuilder.DataSource(System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder}).
 
 
 

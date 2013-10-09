@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerResourceFactory
-Creates resources for the !:Scheduler{TModel} class.
+Creates resources for the 1 class.
 
 
 

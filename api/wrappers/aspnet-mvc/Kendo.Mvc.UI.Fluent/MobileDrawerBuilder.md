@@ -12,7 +12,7 @@ Defines the fluent API for configuring the Kendo MobileDrawer for ASP.NET MVC.
 ## Methods
 
 ### Title(`System.String`)
-The text to display in the navbar title (if present).
+The text to display in the Navbar title (if present).
 
 
 #### Parameters

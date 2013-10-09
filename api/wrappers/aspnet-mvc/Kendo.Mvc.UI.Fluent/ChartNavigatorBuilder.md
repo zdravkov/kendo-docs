@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder
-Defines the fluent interface for configuring the !:ChartNavigator{T}.
+Defines the fluent interface for configuring the 1.
 
 
 
@@ -177,6 +177,26 @@ Gets or sets a value indicating if the navigator
         .AutoBind(false)
     )
     %>
+
+
+### CategoryAxis(`System.Action<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder<T>>`)
+Configures the navigator category axis
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartCategoryAxisBuilder)<T>>
+The configurator
+
+
+
+
+
+### Pane(`System.Action<Kendo.Mvc.UI.Fluent.ChartPaneBuilder>`)
+Configures the a navigator pane.
+
+
+
 
 
 

@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridActionCommandFactory
-Creates command for the !:Grid{T}.
+Creates command for the 1.
 
 
 

@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SparklineSeriesFactory
-Creates series for the !:Sparkline{TModel}.
+Creates series for the 1.
 
 
 ## Properties

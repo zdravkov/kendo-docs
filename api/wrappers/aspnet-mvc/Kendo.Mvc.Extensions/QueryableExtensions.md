@@ -31,7 +31,7 @@ An IQueryable whose elements are sorted according to a .
 
 
 ### Page(`System.Linq.IQueryable,System.Int32,System.Int32`)
-Pages through the elements of a sequence until the specified
+Pages through the elements of a sequence until the specified 
              using .
 
 
@@ -68,7 +68,7 @@ A projection function to apply to each element.
 
 
 #### Returns
-An IQueryable whose elements are the result of invoking a
+An IQueryable whose elements are the result of invoking a 
             projection selector on each element of .
 
 
@@ -88,7 +88,7 @@ A function to extract the key for each element.
 
 
 #### Returns
-An IQueryable with !:IGrouping{TKey,TElement} items,
+An IQueryable with 2 items, 
             whose elements contains a sequence of objects and a key.
 
 
@@ -132,7 +132,7 @@ An IQueryable whose elements are sorted in descending order according to a key.
 
 
 ### OrderBy(`System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression,System.Nullable<System.ComponentModel.ListSortDirection>`)
-Calls M:Kendo.Mvc.Extensions.QueryableExtensions.OrderBy(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression)
+Calls M:Kendo.Mvc.Extensions.QueryableExtensions.OrderBy(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression) 
             or M:Kendo.Mvc.Extensions.QueryableExtensions.OrderByDescending(System.Linq.IQueryable,System.Linq.Expressions.LambdaExpression) depending on the .
 
 
@@ -169,7 +169,7 @@ The group descriptors used for grouping.
 
 
 #### Returns
-An IQueryable with IGroup items,
+An IQueryable with IGroup items, 
             whose elements contains a sequence of objects and a key.
 
 
@@ -181,7 +181,7 @@ Calculates the results of given aggregates functions on a sequence of elements.
 #### Parameters
 
 ##### source `System.Linq.IQueryable`
-An IQueryable whose elements will
+An IQueryable whose elements will 
             be used for aggregate calculation.
 
 ##### aggregateFunctions System.Collections.Generic.IEnumerable<[Kendo.Mvc.AggregateFunction](/api/wrappers/aspnet-mvc/Kendo.Mvc/AggregateFunction)>
@@ -209,7 +209,7 @@ A function to test each element for a condition.
 
 
 #### Returns
-An IQueryable that contains elements from the input sequence
+An IQueryable that contains elements from the input sequence 
             that satisfy the condition specified by .
 
 
@@ -229,7 +229,7 @@ The filter descriptors.
 
 
 #### Returns
-An IQueryable that contains elements from the input sequence
+An IQueryable that contains elements from the input sequence 
             that satisfy the conditions specified by each filter descriptor in .
 
 
@@ -249,13 +249,13 @@ The number of elements to return.
 
 
 #### Returns
-An IQueryable that contains the specified number
+An IQueryable that contains the specified number 
             of elements from the start of .
 
 
 
 ### Skip(`System.Linq.IQueryable,System.Int32`)
-Bypasses a specified number of elements in a sequence
+Bypasses a specified number of elements in a sequence 
             and then returns the remaining elements.
 
 
@@ -270,7 +270,7 @@ The number of elements to skip before returning the remaining elements.
 
 
 #### Returns
-An IQueryable that contains elements that occur
+An IQueryable that contains elements that occur 
             after the specified index in the input sequence.
 
 

@@ -70,7 +70,7 @@ Aggregate function name.
 
 
 ### Gap(`System.Double`)
-Set distance between category clusters.
+Set distance between category clusters. 
             
             A value of 1 means that there is a total of 1 column width / bar height between categories.
             The distance is distributed evenly on each side.

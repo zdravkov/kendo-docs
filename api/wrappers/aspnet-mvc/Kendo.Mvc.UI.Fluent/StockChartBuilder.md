@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.StockChartBuilder
-Defines the fluent interface for configuring the !:Chart{T} component.
+Defines the fluent interface for configuring the 1 component.
 
 
 

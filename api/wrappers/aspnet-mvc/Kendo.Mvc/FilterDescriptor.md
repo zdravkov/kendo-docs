@@ -42,7 +42,7 @@ A predicate filter expression.
 
 
 ### Equals(`Kendo.Mvc.FilterDescriptor`)
-Determines whether the specified  descriptor
+Determines whether the specified  descriptor 
             is equal to the current one.
 
 
@@ -54,7 +54,7 @@ The other filter descriptor.
 
 
 #### Returns
-True if all members of the current descriptor are
+True if all members of the current descriptor are 
             equal to the ones of , otherwise false.
 
 

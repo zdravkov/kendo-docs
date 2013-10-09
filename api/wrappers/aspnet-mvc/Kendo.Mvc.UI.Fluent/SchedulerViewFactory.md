@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewFactory
-Creates views for the !:Scheduler{TModel} class.
+Creates views for the 1 class.
 
 
 
@@ -27,6 +27,32 @@ Enables a Scheduler day view.
 
 
 #### Returns
+
+
+
+
+### CustomView(`System.String`)
+Defines a custom view
+
+
+#### Parameters
+
+##### type `System.String`
+The JavaScript type name
+
+
+
+
+
+### CustomView(`System.String,System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewBaseBuilder<Kendo.Mvc.UI.SchedulerCustomView>>`)
+Defines a custom view
+
+
+#### Parameters
+
+##### type `System.String`
+The JavaScript type name
+
 
 
 

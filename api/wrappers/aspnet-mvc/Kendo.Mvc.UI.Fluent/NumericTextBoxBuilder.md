@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.NumericTextBoxBuilder
-Defines the fluent interface for configuring the !:NumericTextBox{T} component.
+Defines the fluent interface for configuring the 1 component.
 
 
 

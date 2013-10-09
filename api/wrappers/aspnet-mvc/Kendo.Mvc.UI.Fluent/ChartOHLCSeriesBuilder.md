@@ -41,9 +41,9 @@ Close aggregate name.
 
 
 ### Gap(`System.Double`)
-Set distance between category clusters.
+Set distance between category clusters. 
             
-            A value of 1 means that there is a total of 1 point width between categories.
+            A value of 1 means that there is a total of 1 point width between categories. 
             The distance is distributed evenly on each side.
             The default value is 1
 

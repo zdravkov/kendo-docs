@@ -75,6 +75,25 @@ If set to true the scheduler will display a slot for "all day" events.
     $scheduler->allDaySlot(true);
     ?>
 
+### autoBind
+If set to false the widget will not bind to the data source during initialization. In this case data binding will occur when the change event of the
+data source is fired. By default the widget will bind to the data source specified in the configuration.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->autoBind(true);
+    ?>
+
 ### cancel
 Fired when the user cancels editing by clicking the "cancel" button.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [cancel](/api/web/scheduler#events-cancel) event documentation.

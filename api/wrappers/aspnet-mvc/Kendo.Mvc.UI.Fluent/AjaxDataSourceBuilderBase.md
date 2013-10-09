@@ -87,9 +87,9 @@ Sets the number of records displayed on a single page.
 
 
 ### ServerOperation(`System.Boolean`)
-Sets the operation mode of the DataSource.
-            By default the DataSource will make a request to the server when data for paging, sorting,
-            filtering or grouping is needed. If set to false all data will be requested through single request.
+Sets the operation mode of the DataSource. 
+            By default the DataSource will make a request to the server when data for paging, sorting, 
+            filtering or grouping is needed. If set to false all data will be requested through single request. 
             Any other paging, sorting, filtering or grouping will be performed client-side.
 
 

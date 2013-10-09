@@ -133,3 +133,15 @@ If set to true the user can edit data items when editing is enabled.
     $editable->update(true);
     ?>
 
+### window
+Configures the Kendo UI Window instance, which is used when the Grid edit mode is "popup". The configuration is optional.For more information, please refer to the Window configuration API.
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
+#### Parameters
+
+##### $value ``
+
+
+

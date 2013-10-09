@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridDataKeyFactory
-Creates data key for the !:Grid{T}.
+Creates data key for the 1.
 
 
 

@@ -106,13 +106,13 @@ The configuration action.
     %>
 
 
-### MajorGridLines(`System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`)
+### MajorGridLines(`System.Action<Kendo.Mvc.UI.Fluent.ChartMajorGridLinesBuilder>`)
 Configures the major grid lines.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartMajorGridLinesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartMajorGridLinesBuilder)>
 The configuration action.
 
 
@@ -156,13 +156,13 @@ The major gridlines line dashType.
     %>
 
 
-### MinorGridLines(`System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`)
+### MinorGridLines(`System.Action<Kendo.Mvc.UI.Fluent.ChartMinorGridLinesBuilder>`)
 Configures the minor grid lines.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartMinorGridLinesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartMinorGridLinesBuilder)>
 The configuration action.
 
 
@@ -487,6 +487,19 @@ A value indicating if the automatic axis range should snap to 0.
 
 ##### narrowRange `System.Boolean`
 The narrowRange value.
+
+
+
+
+
+### Background(`System.String`)
+Sets the axis background color
+
+
+#### Parameters
+
+##### visible `System.String`
+The axis visibility.
 
 
 

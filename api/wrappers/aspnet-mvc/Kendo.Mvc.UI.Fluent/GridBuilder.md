@@ -458,6 +458,43 @@ The lambda which configures the resizing
     %>
 
 
+### ColumnResizeHandleWidth(`System.Int32`)
+Sets the width of the column resize handle. Apply a larger value for easier grasping.
+
+
+#### Parameters
+
+##### width `System.Int32`
+width in pixels
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Grid<Product>()
+        .Name("Grid")
+        .DataSource(dataSource =>
+            // configure the data source
+            dataSource
+            .Ajax()
+            .Read(read => read.Action("Products_Read", "Home"))
+        )
+        .ColumnResizeHandleWidth(8)
+    )
+
+#### Example (ASPX)
+    <%= Html.Kendo().Grid<Product>()
+    .Name("Grid")
+    .DataSource(dataSource =>
+        // configure the data source
+        dataSource
+        .Ajax()
+        .Read(read => read.Action("Products_Read", "Home"))
+    )
+    .ColumnResizeHandleWidth(8)
+    %>
+
+
 ### Reorderable(`System.Action<Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder>`)
 Sets the reordering configuration of the grid.
 

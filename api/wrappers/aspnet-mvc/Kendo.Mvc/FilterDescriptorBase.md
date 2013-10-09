@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.FilterDescriptorBase
-Base class for all IFilterDescriptor used for
+Base class for all IFilterDescriptor used for 
             handling the logic for property changed notifications.
 
 
@@ -13,8 +13,8 @@ Base class for all IFilterDescriptor used for
 ## Methods
 
 ### CreateFilterExpression(`System.Linq.Expressions.Expression`)
-Creates a filter expression by delegating its creation to
-            M:Kendo.Mvc.FilterDescriptorBase.CreateFilterExpression(System.Linq.Expressions.Expression), if
+Creates a filter expression by delegating its creation to 
+            M:Kendo.Mvc.FilterDescriptorBase.CreateFilterExpression(System.Linq.Expressions.ParameterExpression), if 
              is ParameterExpression, otherwise throws ArgumentException
 
 

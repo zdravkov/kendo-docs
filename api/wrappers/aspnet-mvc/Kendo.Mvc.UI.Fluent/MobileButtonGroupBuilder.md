@@ -12,7 +12,7 @@ Defines the fluent API for configuring the Kendo MobileButtonGroup for ASP.NET M
 ## Methods
 
 ### Index(`System.Int32`)
-Defines the initially selected Button.
+Defines the initially selected Button (zero based index).
 
 
 #### Parameters

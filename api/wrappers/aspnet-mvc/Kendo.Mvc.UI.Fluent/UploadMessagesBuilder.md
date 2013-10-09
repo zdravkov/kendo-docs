@@ -179,6 +179,48 @@ New "uploading" status text accessible by screen readers.
     %>
 
 
+### HeaderStatusUploading(`System.String`)
+Sets the "uploading" header status text accessible by screen readers
+
+
+#### Parameters
+
+##### headerStatusUploadingMessage `System.String`
+New "header uploading" status text accessible by screen readers.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Upload()
+    .Name("Upload")
+    .Messages(msgs => msgs
+        .HeaderStatusUploading("header uploading")
+    )
+    %>
+
+
+### HeaderStatusUploaded(`System.String`)
+Sets the "uploaded" header status text accessible by screen readers
+
+
+#### Parameters
+
+##### headerStatusUploadedMessage `System.String`
+New "header uploaded" status text accessible by screen readers.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Upload()
+    .Name("Upload")
+    .Messages(msgs => msgs
+        .HeaderStatusUploaded("header uploaded")
+    )
+    %>
+
+
 ### UploadSelectedFiles(`System.String`)
 Sets Upload button (visible when AutoUpload is set to false) text
 

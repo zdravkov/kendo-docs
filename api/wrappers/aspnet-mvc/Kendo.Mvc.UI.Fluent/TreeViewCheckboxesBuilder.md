@@ -83,4 +83,25 @@ Id of the element that holds the client-side template to be used for rendering t
     %>
 
 
+### Name(`System.String`)
+The name attribute of the checkbox fields. This will correlate to the name of the action method parameter that the nodes are posted to.
+
+
+#### Parameters
+
+##### name `System.String`
+The string that will be used in the name attribute.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TreeView()
+    .Name("TreeView")
+    .Checkboxes(config => config
+        .Name("checkedNodes")
+    )
+    %>
+
+
 

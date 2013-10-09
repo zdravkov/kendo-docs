@@ -110,7 +110,7 @@ Sets the function used to retrieve point color.
 
 ##### colorFunction `System.Func<System.Object,System.Object>`
 The JavaScript function that will be executed
-            to retrieve the color of each point.
+                to retrieve the color of each point.
 
 
 

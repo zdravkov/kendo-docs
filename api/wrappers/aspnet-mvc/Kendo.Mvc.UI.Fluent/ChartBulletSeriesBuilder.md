@@ -17,7 +17,7 @@ Gets or sets the series.
 ## Methods
 
 ### Gap(`System.Double`)
-Set distance between category clusters.
+Set distance between category clusters. 
             
             A value of 1 means that there is a total of 1 bullet width / vertical bullet height between categories.
             The distance is distributed evenly on each side.

@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewBuilder
-Defines the fluent interface for configuring the !:ListView{T}.
+Defines the fluent interface for configuring the 1.
 
 
 
@@ -152,7 +152,7 @@ Use builder to define the selection mode.
 
 
 ### AutoBind(`System.Boolean`)
-Specifies if the ListView should be automatically bound on initial load.
+Specifies if the ListView should be automatically bound on initial load. 
             This is only possible if AJAX binding is used, and widget is not initialy populated on the server.
 
 

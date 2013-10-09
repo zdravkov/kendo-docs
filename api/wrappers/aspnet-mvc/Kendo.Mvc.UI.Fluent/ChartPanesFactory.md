@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPanesFactory
-Creates panes for the !:Chart{TModel}.
+Creates panes for the 1.
 
 
 ## Properties

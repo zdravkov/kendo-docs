@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder
-Creates resources grouping for the !:Scheduler{TModel} class.
+Creates resources grouping for the 1 class.
 
 
 

@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerBuilder
-Defines the fluent interface for configuring the !:Scheduler{TModel}.
+Defines the fluent interface for configuring the 1.
 
 
 
@@ -461,13 +461,64 @@ The width
     )
 
 
-### Editable(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder>`)
+### Snap(`System.Boolean`)
+If set to false the events would not snap events to the nearest slot during dragging (resizing or moving). Set it to false to allow free moving and resizing of events.
+
+
+#### Parameters
+
+##### isSnapable `System.Boolean`
+The isSnapable
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Task>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .Snap(false)
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+            .Create("Create", "Scheduler")
+            .Destroy("Destroy", "Scheduler")
+            .Update("Update", "Scheduler")
+        )
+    )
+
+
+### AutoBind(`System.Boolean`)
+If set to false the initial binding will be prevented.
+
+
+#### Parameters
+
+##### autoBind `System.Boolean`
+The autoBind
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Task>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .AutoBind(false)
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+        )
+    )
+
+
+### Editable(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder<T>>`)
 Sets the editing configuration of the scheduler.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerEditableSettingsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerEditableSettingsBuilder)<T>>
 The lambda which configures the editing
 
 
@@ -665,13 +716,13 @@ The data source.
             ))
 
 
-### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilder<T>>`)
+### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.AjaxSchedulerDataSourceBuilder<T>>`)
 Configures the DataSource options.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/AjaxDataSourceBuilder)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.AjaxSchedulerDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/AjaxSchedulerDataSourceBuilder)<T>>
 The DataSource configurator action.
 
 

@@ -39,7 +39,7 @@ The value that configures the stretch.
 
 
 ### Title(`System.String`)
-The text to display in the navbar title (if present) and the browser title.
+The text to display in the NavBar title (if present) and the browser title.
 
 
 #### Parameters
@@ -52,9 +52,8 @@ The value that configures the title.
 
 
 ### UseNativeScrolling(`System.Boolean`)
-(available since Q1 2013)
-            If set to true, the view will use the native scrolling available in the current platform. This should help with form issues on some platforms (namely Android and WP8).
-            Native scrolling is only enabled on platforms that support it: iOS > 4, Android > 2, WP8. BlackBerry devices do support it, but the native scroller is flaky.
+If set to true, the view will use the native scrolling available in the current platform. This should help with form issues on some platforms (namely Android and WP8).
+            Native scrolling is only enabled on platforms that support it: iOS > 5+, Android > 3+, WP8. BlackBerry devices do support it, but the native scroller is flaky.
 
 
 #### Parameters

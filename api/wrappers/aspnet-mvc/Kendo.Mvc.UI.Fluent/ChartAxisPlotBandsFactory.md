@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory
-Creates plot bands for the !:ChartAxisPlotBandsFactory{TAxis, TValue}.
+Creates plot bands for the 2.
 
 
 ## Properties

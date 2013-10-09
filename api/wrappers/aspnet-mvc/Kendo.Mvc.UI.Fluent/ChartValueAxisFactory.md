@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartValueAxisFactory
-Creates value axis for the !:Chart{TModel}.
+Creates value axis for the 1.
 
 
 

@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewBaseBuilder
-Defines the fluent interface for configuring the !:SchedulerViewBaseBuilder{T}.
+Defines the fluent interface for configuring the 1.
 
 
 

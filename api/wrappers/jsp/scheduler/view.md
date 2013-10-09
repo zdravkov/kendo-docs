@@ -33,6 +33,14 @@ If set to true the scheduler will display a slot for "all day" events.
     <kendo:scheduler-view allDaySlot="allDaySlot">
     </kendo:scheduler-view>
 
+### allDaySlotTemplate `java.lang.String`
+
+The template used to render the all day slot cell.The fields which can be used in the template are:
+
+#### Example
+    <kendo:scheduler-view allDaySlotTemplate="allDaySlotTemplate">
+    </kendo:scheduler-view>
+
 ### dateHeaderTemplate `java.lang.String`
 
 The template used to render the date header cells.By default the scheduler renders the date using the current culture date format.The fields which can be used in the template are:
@@ -137,6 +145,14 @@ The format used to display the selected date. Uses kendo.format.Contains two pla
     <kendo:scheduler-view selectedDateFormat="selectedDateFormat">
     </kendo:scheduler-view>
 
+### slotTemplate `java.lang.String`
+
+The template used to render the time slot cells.The fields which can be used in the template are:
+
+#### Example
+    <kendo:scheduler-view slotTemplate="slotTemplate">
+    </kendo:scheduler-view>
+
 ### startTime `java.util.Date`
 
 The start time of the view. The scheduler will display events starting after the startTime.
@@ -202,6 +218,20 @@ The template used to render the "all day" scheduler events.The fields which can 
     <script>
         function handle_allDayEventTemplate(e) {
             // Code to handle the allDayEventTemplate event.
+        }
+    </script>
+
+### allDaySlotTemplate `String`
+
+The template used to render the all day slot cell.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:scheduler-view allDaySlotTemplate="handle_allDaySlotTemplate">
+    </kendo:scheduler-view>
+    <script>
+        function handle_allDaySlotTemplate(e) {
+            // Code to handle the allDaySlotTemplate event.
         }
     </script>
 
@@ -289,6 +319,20 @@ The template used to render the minor ticks.By default the scheduler renders a "
         }
     </script>
 
+### slotTemplate `String`
+
+The template used to render the time slot cells.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:scheduler-view slotTemplate="handle_slotTemplate">
+    </kendo:scheduler-view>
+    <script>
+        function handle_slotTemplate(e) {
+            // Code to handle the slotTemplate event.
+        }
+    </script>
+
 ## Event Tags
 
 ### kendo:scheduler-view-allDayEventTemplate
@@ -305,6 +349,22 @@ The template used to render the "all day" scheduler events.The fields which can 
                 }
             </script>
         </kendo:scheduler-view-allDayEventTemplate>
+    </kendo:scheduler-view>
+
+### kendo:scheduler-view-allDaySlotTemplate
+
+The template used to render the all day slot cell.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:scheduler-view>
+        <kendo:scheduler-view-allDaySlotTemplate>
+            <script>
+                function(e) {
+                    // Code to handle the allDaySlotTemplate event.
+                }
+            </script>
+        </kendo:scheduler-view-allDaySlotTemplate>
     </kendo:scheduler-view>
 
 ### kendo:scheduler-view-dateHeaderTemplate
@@ -401,5 +461,21 @@ The template used to render the minor ticks.By default the scheduler renders a "
                 }
             </script>
         </kendo:scheduler-view-minorTimeHeaderTemplate>
+    </kendo:scheduler-view>
+
+### kendo:scheduler-view-slotTemplate
+
+The template used to render the time slot cells.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:scheduler-view>
+        <kendo:scheduler-view-slotTemplate>
+            <script>
+                function(e) {
+                    // Code to handle the slotTemplate event.
+                }
+            </script>
+        </kendo:scheduler-view-slotTemplate>
     </kendo:scheduler-view>
 

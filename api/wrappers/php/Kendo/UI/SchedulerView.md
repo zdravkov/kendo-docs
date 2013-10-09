@@ -54,6 +54,30 @@ If set to true the scheduler will display a slot for "all day" events.
     $view->allDaySlot(true);
     ?>
 
+### allDaySlotTemplate
+The template used to render the all day slot cell.The fields which can be used in the template are:
+
+#### Returns
+`\Kendo\UI\SchedulerView`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $view->allDaySlotTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $view->allDaySlotTemplate(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### dateHeaderTemplate
 The template used to render the date header cells.By default the scheduler renders the date using the current culture date format.The fields which can be used in the template are:
 
@@ -371,6 +395,30 @@ The format used to display the selected date. Uses kendo.format.Contains two pla
     <?php
     $view = new \Kendo\UI\SchedulerView();
     $view->selectedDateFormat('value');
+    ?>
+
+### slotTemplate
+The template used to render the time slot cells.The fields which can be used in the template are:
+
+#### Returns
+`\Kendo\UI\SchedulerView`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $view->slotTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $view->slotTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### startTime

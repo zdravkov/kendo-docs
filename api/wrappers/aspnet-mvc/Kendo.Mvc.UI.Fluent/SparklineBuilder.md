@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SparklineBuilder
-Defines the fluent interface for configuring the !:Sparkline{T} component.
+Defines the fluent interface for configuring the 1 component.
 
 
 

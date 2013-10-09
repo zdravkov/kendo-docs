@@ -376,6 +376,13 @@ Sets whether the window is pinned.
 
 
 
+### AutoFocus(`System.Boolean`)
+Sets whether the window automatically gains focus when opened.
+
+
+
+
+
 ### Pinned(`System.Boolean`)
 Sets whether the window is pinned.
 

@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnFactory
-Creates columns for the !:Grid{TModel}.
+Creates columns for the 1.
 
 
 

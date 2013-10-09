@@ -26,6 +26,21 @@ The name of the JavaScript function that will handle the afterShow event.
 
 
 
+### BeforeHide(`System.String`)
+Fires before the mobile View becomes hidden.
+
+For additional information check the [beforeHide](/api/web/mobileview#events-beforeHide) event documentation.
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the beforeHide event.
+
+
+
+
+
 ### BeforeShow(`System.String`)
 Fires before the mobile View becomes visible. The event can be prevented by calling the preventDefault method of the event parameter, in case a redirection should happen.
 

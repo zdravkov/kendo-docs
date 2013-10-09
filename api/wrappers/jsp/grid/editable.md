@@ -65,6 +65,14 @@ If set to true the user can edit data items when editing is enabled.
     <kendo:grid-editable update="update">
     </kendo:grid-editable>
 
+### window `java.lang.Object`
+
+Configures the Kendo UI Window instance, which is used when the Grid edit mode is "popup". The configuration is optional.For more information, please refer to the Window configuration API.
+
+#### Example
+    <kendo:grid-editable window="window">
+    </kendo:grid-editable>
+
 
 ## Event Attributes
 

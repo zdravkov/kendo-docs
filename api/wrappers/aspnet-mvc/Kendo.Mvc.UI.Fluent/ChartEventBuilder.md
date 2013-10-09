@@ -60,55 +60,6 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### DataBinding(`System.Func<System.Object,System.Object>`)
-Defines the inline handler of the DataBinding client-side event
-
-For additional information check the [dataBinding](/api/dataviz/chart#events-dataBinding) event documentation.
-
-
-#### Parameters
-
-##### inlineCodeBlock `System.Func<System.Object,System.Object>`
-The handler code wrapped in a text tag (Razor syntax).
-
-
-
-
-#### Example (ASPX)
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Events(events => events.DataBinding(
-                @<text>
-                    function(e) {
-                    //event handling code
-                    }
-                    </text>
-                    ))
-                    .Render();
-                    %>
-
-
-### DataBinding(`System.String`)
-Defines the name of the JavaScript function that will handle the the DataBinding client-side event.
-
-For additional information check the [dataBinding](/api/dataviz/chart#events-dataBinding) event documentation.
-
-
-#### Parameters
-
-##### onDataBindingHandlerName `System.String`
-The name of the JavaScript function that will handle the event.
-
-
-
-
-#### Example (ASPX)
-    <%= Html.Kendo().Chart()
-    .Name("Chart")
-    .Events(events => events.DataBinding("onDataBinding"))
-    %>
-
-
 ### SeriesClick(`System.Func<System.Object,System.Object>`)
 Defines the inline handler of the SeriesClick client-side event
 

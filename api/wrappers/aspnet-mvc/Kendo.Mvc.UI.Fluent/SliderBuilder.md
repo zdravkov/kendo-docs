@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SliderBuilder
-Defines the fluent interface for configuring the !:Slider{T}component.
+Defines the fluent interface for configuring the 1component.
 
 
 
