@@ -169,6 +169,32 @@ Disables the default behavior of Kendo UI Mobile apps to be web app capable (ope
 
 ## Methods
 
+### changeLoadingMessage
+
+Changes the loading message.
+
+#### Example
+
+    <div data-role="view">
+        <a data-role="button" data-click="showLoading">Show loading</a>
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+        function showLoading() {
+            app.showLoading();
+            setTimeout(function() {
+                app.changeLoadingMessage("Please wait...");
+            }, 1000);
+        }
+    </script>
+
+#### Parameters
+
+##### text `String`
+
+New text of the loading animation.
+
 ### hideLoading
 
 Hide the loading animation.
