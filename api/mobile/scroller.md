@@ -183,6 +183,36 @@ Native scrolling is only enabled on platforms that support it: iOS > 4, Android 
 
 ## Methods
 
+### animatedScrollTo
+
+Scrolls the scroll container to the specified location with animation. The arguments should be negative numbers.
+
+#### Example
+    <div data-role="view">
+        <a data-role="button" data-click="scrollTo">Scroll To</a>
+        <div data-role="scroller" style="width: 200px; height: 200px" id="scroller">
+             <div style="height: 500px; width: 500px"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollTo() {
+            $("#scroller").data("kendoMobileScroller").animatedScrollTo(-100, -100);
+        }
+
+        new kendo.mobile.Application();
+    </script>
+
+#### Parameters
+
+##### x `Number`
+
+The horizontal offset in pixels to scroll to.
+
+##### y `Number`
+
+The vertical offset in pixels to scroll to.
+
 ### destroy
 
 Prepares the **Scroller** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
