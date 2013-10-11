@@ -42,6 +42,24 @@ Represents the Kendo UI Mobile Button widget. Inherits from [kendo.mobile.ui.Wid
     }
     </script>
 
+### enable `Boolean`*(default: true)*
+
+If set to `false` the widget will be disabled and will not allow the user to click it. The widget is enabled by default.
+
+
+#### Example - initialize disabled button.
+
+    <div data-role="view">
+        <a data-role="button" data-enable="false" data-click="onClick">Button</a>
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+        function onClick() {
+            console.log("click");
+        }
+    </script>
+
 ### icon `String`
 
  The icon of the button. It can be either one of the built-in icons, or a custom one.
@@ -122,6 +140,33 @@ Prepares the **Button** for safe removal from DOM. Detaches all event handlers a
         $("#btn").data("kendoMobileButton").destroy(); //detach events
         $("#btn").remove();
       }
+    </script>
+
+### enable
+
+Changes the enabled state of the widget.
+
+#### Parameters
+
+##### enable `Boolean`
+
+Whether to enable or disable the widget.
+
+#### Example
+
+    <div data-role="view">
+        <a id="foo" data-role="button" data-click="onClick">Button</a>
+        <input type="checkbox" data-role="switch" data-change="onChange" />
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+        function change() {
+            $("#foo").data("kendoMobileButton").enable(this.check());
+        }
+        function onClick() {
+            console.log("click");
+        }
     </script>
 
 ## Events
