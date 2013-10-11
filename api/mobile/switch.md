@@ -29,6 +29,21 @@ The checked state of the widget.
     var app = new kendo.mobile.Application();
     </script>
 
+### enable `Boolean`*(default: true)*
+
+If set to `false` the widget will be disabled and will not allow the user to change its checked state. The widget is enabled by default.
+
+
+#### Example - initialize disabled switch.
+
+    <div data-role="view">
+        <input type="checkbox" data-role="switch" data-enable="false" />
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+    </script>
+
 ### offLabel `String`*(default: "OFF")*
 
 The OFF label.
@@ -115,6 +130,30 @@ Prepares the **Switch** for safe removal from DOM. Detaches all event handlers a
       switchInstance.destroy();
       switchInstance.wrapper.remove();
     }
+    </script>
+
+### enable
+
+Changes the enabled state of the widget.
+
+#### Parameters
+
+##### enable `Boolean`
+
+Whether to enable or disable the widget.
+
+#### Example
+
+    <div data-role="view">
+        <input id="foo" type="checkbox" data-role="switch" />
+        <a data-role="button" data-click="disable">Disable</a>
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+        function disable() {
+            $("#foo").data("kendoMobileSwitch").enable(false);
+        }
     </script>
 
 ### toggle
