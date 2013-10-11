@@ -588,6 +588,48 @@ The fields which can be used in the template are:
     });
     </script>
 
+### footer `Boolean|Object`
+
+If set to `false` the footer of the scheduler would not be displayed.
+
+#### Example - disable footer
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        }
+      ],
+      footer: false
+    });
+    </script>
+
+### footer.command `String|Boolean` *(default: "workDay")*
+
+Sets the command which will be displayed in the scheduler footer. Currently only "workDay" option is supported. If the option is set  to false, the "workDay" button will be removed from the footer.
+
+#### Example - disable workDay command in the footer
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        }
+      ],
+      footer: {
+        command: false
+      }
+    });
+    </script>
+
 ### group `Object`
 
 The configuration of the scheduler resource(s) grouping.
@@ -3949,6 +3991,48 @@ The width of the widget. Numeric values are treated as pixels.
     $("#scheduler").kendoScheduler({
       date: new Date("2013/6/6"),
       width: 500,
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### workDayStart `Date`
+
+Sets the start of the work day when the  "Show business hours" button is clicked. 
+
+#### Example - set the workDayStart of the scheduler
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      workDayStart: new Date("2013/1/1 09:00 AM"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### workDayEnd `Date`
+
+Sets the end of the work day when the  "Show business hours" button is clicked. 
+
+#### Example - set the workDayEnd of the scheduler
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      workDayEnd: new Date("2013/1/1 5:00 PM"),
       dataSource: [
         {
           id: 1,
