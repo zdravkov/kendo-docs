@@ -201,6 +201,28 @@ Open the ActionSheet.
 
 ## Events
 
+### close
+
+Fires when the ActionSheet is closed.
+
+#### Example
+
+    <div data-role="view">
+      <a data-role="button" data-rel="actionsheet" href="#actionsheet">Open</a>
+      <ul id="actionsheet" data-role="actionsheet" data-close="onClose">
+        <li><a>Foo</a></li>
+        <li><a>Bar</a></li>
+      </ul>
+    </div>
+
+    <script>
+      var app = new kendo.mobile.Application();
+
+      function onClose() {
+        console.log("closed");
+      }
+    </script>
+
 ### open
 
 Fires when the ActionSheet is opened.
@@ -216,11 +238,11 @@ Fires when the ActionSheet is opened.
     </div>
 
     <script>
-    var app = new kendo.mobile.Application();
+      var app = new kendo.mobile.Application();
 
-    function onOpen() {
-      console.log("opened");
-    }
+      function onOpen() {
+        console.log("opened");
+      }
     </script>
 
 #### Event Data
