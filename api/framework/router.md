@@ -93,7 +93,7 @@ Unbinds the router instance listeners from the URL fragment part changes.
 
 ## Events
 
-### change
+### back
 
 Triggered when the user navigates back to the previous URL.
 
