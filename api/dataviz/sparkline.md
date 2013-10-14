@@ -2685,7 +2685,7 @@ The line opacity.
 
 The line width.
 
-### series.line.style `String` *(default: "normal")*
+### series.line.style `String`*(default: "normal")*
 
 The supported values are:
 

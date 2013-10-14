@@ -32,6 +32,14 @@ The line opacity. By default the line is opaque.
     <kendo:chart-seriesItem-line opacity="opacity">
     </kendo:chart-seriesItem-line>
 
+### style `java.lang.String`
+
+The supported values are:
+
+#### Example
+    <kendo:chart-seriesItem-line style="style">
+    </kendo:chart-seriesItem-line>
+
 ### width `java.lang.String`
 
 The line width in pixels.

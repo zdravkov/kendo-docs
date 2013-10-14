@@ -203,6 +203,14 @@ Available for column series.
     <kendo:stockChart-seriesItem stack="stack">
     </kendo:stockChart-seriesItem>
 
+### style `java.lang.String`
+
+The supported values are:
+
+#### Example
+    <kendo:stockChart-seriesItem style="style">
+    </kendo:stockChart-seriesItem>
+
 ### targetField `java.lang.String`
 
 The data field containing the target value.** Available for bullet and verticalBullet series. **

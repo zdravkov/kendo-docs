@@ -186,6 +186,14 @@ Available for column series.
     <kendo:stockChart-navigator-seriesItem stack="stack">
     </kendo:stockChart-navigator-seriesItem>
 
+### style `java.lang.String`
+
+The supported values are:
+
+#### Example
+    <kendo:stockChart-navigator-seriesItem style="style">
+    </kendo:stockChart-navigator-seriesItem>
+
 ### type `java.lang.String`
 
 The type of the series. Available types:

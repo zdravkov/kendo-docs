@@ -188,6 +188,14 @@ The start angle of the first segment.Available for pie series.
     <kendo:sparkline-seriesItem startAngle="startAngle">
     </kendo:sparkline-seriesItem>
 
+### style `java.lang.String`
+
+The supported values are:
+
+#### Example
+    <kendo:sparkline-seriesItem style="style">
+    </kendo:sparkline-seriesItem>
+
 ### targetField `java.lang.String`
 
 The data field containing the target value.** Available for bullet and verticalBullet series. **** Available for pie series **

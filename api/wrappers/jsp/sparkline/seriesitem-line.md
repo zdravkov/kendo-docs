@@ -32,6 +32,14 @@ The line opacity.
     <kendo:sparkline-seriesItem-line opacity="opacity">
     </kendo:sparkline-seriesItem-line>
 
+### style `java.lang.String`
+
+The supported values are:
+
+#### Example
+    <kendo:sparkline-seriesItem-line style="style">
+    </kendo:sparkline-seriesItem-line>
+
 ### width `java.lang.String`
 
 The line width.

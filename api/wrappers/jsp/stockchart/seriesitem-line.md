@@ -32,6 +32,14 @@ The line opacity.
     <kendo:stockChart-seriesItem-line opacity="opacity">
     </kendo:stockChart-seriesItem-line>
 
+### style `java.lang.String`
+
+The supported values are:
+
+#### Example
+    <kendo:stockChart-seriesItem-line style="style">
+    </kendo:stockChart-seriesItem-line>
+
 ### width `java.lang.String`
 
 The line width.

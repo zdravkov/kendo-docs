@@ -282,6 +282,14 @@ The start angle (degrees) of the first donut or pie segment.Angles increase cloc
     <kendo:chart-seriesItem startAngle="startAngle">
     </kendo:chart-seriesItem>
 
+### style `java.lang.String`
+
+The supported values are:
+
+#### Example
+    <kendo:chart-seriesItem style="style">
+    </kendo:chart-seriesItem>
+
 ### targetField `java.lang.String`
 
 The data item field containing the target value.

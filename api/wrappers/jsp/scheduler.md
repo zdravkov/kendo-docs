@@ -75,6 +75,14 @@ The template used to render the scheduler events.The fields which can be used in
     <kendo:scheduler eventTemplate="eventTemplate">
     </kendo:scheduler>
 
+### footer `boolean`
+
+If set to false the footer of the scheduler would not be displayed. Further configuration is available via [kendo:scheduler-footer](#kendo-scheduler-footer). 
+
+#### Example
+    <kendo:scheduler footer="footer">
+    </kendo:scheduler>
+
 ### height `java.lang.Object`
 
 The height of the widget. Numeric values are treated as pixels.
@@ -157,6 +165,22 @@ The width of the widget. Numeric values are treated as pixels.
     <kendo:scheduler width="width">
     </kendo:scheduler>
 
+### workDayEnd `java.util.Date`
+
+Sets the end of the work day when the  "Show business hours" button is clicked.
+
+#### Example
+    <kendo:scheduler workDayEnd="workDayEnd">
+    </kendo:scheduler>
+
+### workDayStart `java.util.Date`
+
+Sets the start of the work day when the  "Show business hours" button is clicked.
+
+#### Example
+    <kendo:scheduler workDayStart="workDayStart">
+    </kendo:scheduler>
+
 
 ##  Configuration JSP Tags
 
@@ -170,6 +194,18 @@ More documentation is available at [kendo:scheduler-editable](scheduler/editable
 
     <kendo:scheduler>
         <kendo:scheduler-editable></kendo:scheduler-editable>
+    </kendo:scheduler>
+
+### kendo:scheduler-footer
+
+If set to false the footer of the scheduler would not be displayed.
+
+More documentation is available at [kendo:scheduler-footer](scheduler/footer).
+
+#### Example
+
+    <kendo:scheduler>
+        <kendo:scheduler-footer></kendo:scheduler-footer>
     </kendo:scheduler>
 
 ### kendo:scheduler-group
