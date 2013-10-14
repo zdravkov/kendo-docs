@@ -9730,10 +9730,33 @@ The behavior for handling missing values. The supported values are:
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "line",
         missingValues: "gap",
         data: [1, 3, null, 4, 5]
+      }]
+    });
+    </script>
+
+### series.style `String` *(default: "normal")*
+
+The supported values are:
+
+* "normal" - The values will be connected with straight line.
+* "step" - The values will be connected with a line at right.
+
+> The default value is "normal".
+
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "area", "line".
+
+#### Example - set the style behavior
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "line",
+        style: "step",
+        data: [1, 2, 3, 4, 5]
       }]
     });
     </script>

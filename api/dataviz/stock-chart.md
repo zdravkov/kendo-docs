@@ -1919,6 +1919,17 @@ The behavior for handling missing values. The supported values are:
 
 > The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
 
+### navigator.series.style `String` *(default: "normal")*
+
+The supported values are:
+
+* "normal" - The values will be connected with straight line.
+* "step" - The values will be connected with a line at right.
+
+> The default value is "normal".
+
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "area", "line".
+
 ### navigator.series.opacity `Number`
 
 The series opacity.
@@ -5627,6 +5638,17 @@ The behavior for handling missing values. The supported values are:
 > The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
 > The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area" and "line".
+
+### series.style `String` *(default: "normal")*
+
+The supported values are:
+
+* "normal" - The values will be connected with straight line.
+* "step" - The values will be connected with a line at right.
+
+> The default value is "normal".
+
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "area", "line".
 
 ### series.negativeColor `String`
 
