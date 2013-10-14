@@ -24,6 +24,32 @@ Indicates whether the **Button** should be enabled or disabled. By default, it i
 	});
 	</script>
 
+### icon `String`
+
+Defines a name of an existing icon in the Kendo UI theme sprite. The icon will be applied as background image of a `span` element inside the **Button**.
+The `span` element can be added automatically by the widget, or an existing element can be used, if it has a `k-icon` CSS class applied.
+For a list of available icon names, please refer to the [Icons demo](http://demos.kendoui.com/web/styling/icons.html).
+
+#### Example
+
+	<button id="button" type="button">Cancel</button>
+	<script>
+	$("#button").kendoButton({
+		icon: "cancel"
+	});
+	</script>
+
+#### Example with an existing span element
+
+	<button id="button" type="button">
+		<span class="k-icon"></span> Cancel
+	</button>
+	<script>
+	$("#button").kendoButton({
+		icon: "cancel"
+	});
+	</script>
+
 ### imageUrl `String`
 
 Defines a URL, which will be used for an `img` element inside the Button. The URL can be relative or absolute. In case it is relative, it will be evaluated with relation to the web page URL.
@@ -52,8 +78,8 @@ The `img` element can be added automatically by the widget, or an existing eleme
 
 ### spriteCssClass `String`
 
-Defines a CSS class (or multiple classes separated by spaces), which will be used for a `span` element inside the **Button** with a background image.
-In case you want to use an icon from the Kendo UI theme sprite background image, you need to define two classes - `k-icon` and the respective icon CSS class.
+Defines a CSS class (or multiple classes separated by spaces), which will be used for applying a background image to a `span` element inside the **Button**.
+In case you want to use an icon from the Kendo UI theme sprite background image, it is easier to use the [`icon` property](#configuration-icon).
 
 The `span` element can be added automatically by the widget, or an existing element can be used, if it has a `k-sprite` CSS class applied.
 
@@ -62,7 +88,7 @@ The `span` element can be added automatically by the widget, or an existing elem
 	<button id="button" type="button">Edit</button>
 	<script>
 	$("#button").kendoButton({
-		spriteCssClass: "k-icon k-edit"
+		spriteCssClass: "myEditIcon"
 	});
 	</script>
 
@@ -73,7 +99,7 @@ The `span` element can be added automatically by the widget, or an existing elem
 	</button>
 	<script>
 	$("#button").kendoButton({
-		spriteCssClass: "k-icon k-edit"
+		spriteCssClass: "myEditIcon"
 	});
 	</script>
 
@@ -112,7 +138,6 @@ Fires when the **Button** is clicked with the mouse, touched on a touch device, 
 ##### e.event `Object`
 
 The original DOM event.
-
 
 #### Example - subscribe to the "click" event during initialization
 

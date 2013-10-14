@@ -75,15 +75,45 @@ For more information, please refer to [Data Attribute Initialization](/getting-s
 ## Using Icons
 
 The **Button** can accommodate an icon, which enhances the meaning of the text content.
-The widget provides two ways to add an icon - with a classic `img` element or with a background image (usually a sprite).
+The widget provides three ways to add an icon with a classic `img` element or with a background image (usually a sprite).
 From web standarts' point of view, using background images is better, because the icon does not represent structural content, but it's simply a decoration.
+
+There are three properties, which the **Button** provides with regard to configuring icons - `icon`, `spriteCssClass` and `imageUrl`.
+Only one should be used with a particular **Button** instance. If multiple properties are defined, only one will be obeyed, in the order above.
 
 ### Background icons
 
-Background icons are applied via the `spriteCssClass` property and are displayed as a background of a `span` element.
-This element can be rendered by the **Button** automatically, or an existing `span` element can be used, if it has a `k-sprite` CSS class.
+Background icons are applied via the `icon` or `spriteCssClass` property and are displayed as a background of a `span` element.
+The `span` element can be rendered by the **Button** automatically, or an existing `span` element can be used, if it has a `k-sprite` CSS class (or `k-icon` if the `icon` property is used).
 
-#### Example
+The difference between the two properties is that `icon` is intended to be used for built-in Kendo UI icons, which are part of the theme sprite.
+For a list of available icon names, please refer to the [Icons demo](http://demos.kendoui.com/web/styling/icons.html).
+
+#### Example - using icon
+
+	<button type="button" id="editButton">Edit</button>
+	<button type="button" id="deleteButton"><span class="k-icon"></span>Delete</button>
+	
+	<script>
+	
+	$(function(){
+		$("#editButton").kendoButton({
+			icon: "edit"
+		});
+		
+		$("#deleteButton").kendoButton({
+			icon: "delete"
+		});
+	});
+	
+	</script>	
+
+The above `icon` configuration will produce the following HTML output:
+
+	<button type="button" id="editButton" class="k-button k-button-icontext"><span class="k-icon k-edit"></span>Edit</button>
+	<button type="button" id="deleteButton" class="k-button k-button-icontext"><span class="k-icon k-delete"></span>Delete</button>
+
+#### Example - using spriteCssClass
 
 	<button type="button" id="editButton">Edit</button>
 	<button type="button" id="deleteButton"><span class="k-sprite"></span>Delete</button>
@@ -102,10 +132,23 @@ This element can be rendered by the **Button** automatically, or an existing `sp
 	
 	</script>
 
+Technically, `spriteCssClass` can be used to achieve the same result as `icon`, but `icon` will spare you the need to set two CSS classes at the same time and provides a certain level of abstraction.
+For example, the following two configurations are practically identical. `#button2` will also apply a `k-sprite` CSS class to the `span` element, but it will not change the button appearance.
+
+	$(function(){
+		$("#button1").kendoButton({
+			icon: "foo"
+		});
+		
+		$("#button2").kendoButton({
+			spriteCssClass: "k-icon k-foo"
+		});
+	});
+	
 In some cases you may want to use a **Button** with no text and only an icon inside.
 In order to increase the accessibility of the **Button** in this case, a text label can be included inside the sprite `span`.
 
-#### Example
+#### Example - using a Button with no text
 
 	<button type="button" id="deleteButton"><span class="k-sprite">Delete</span></button>
 	
@@ -124,7 +167,7 @@ In order to increase the accessibility of the **Button** in this case, a text la
 Image icons are applied via the `imageUrl` property and are displayed as a `img` element.
 This element can be rendered by the **Button** automatically, or an existing `img` element can be used, if it has a `k-image` CSS class.
 
-#### Example
+#### Example - using imageUrl
 
 	<button type="button" id="editButton">Edit</button>
 	<button type="button" id="deleteButton"><img class="k-image" alt="Delete" />Delete</button>
@@ -151,7 +194,7 @@ The business logic of an application often requires a certain button to be tempo
 The **Button** can be configured to be initially disabled via its `enable` property or by initializing it from an element, which has a `disabled="disabled"` HTML attribute.
 The **Button** can also be disabled or enabled at any time with Javascript by using its `enable()` method with a boolean argument.
 
-### Example
+### Example - enable and disable the Button
 
 	<button type="button" id="editButton">Edit</button>
 	
@@ -176,7 +219,7 @@ For more information on the **Button** [`enable` property](/api/web/button#confi
 
 Similar to all other Kendo UI widgets, an existing **Button** instance is accessed via the `.data()` jQuery method, executed by the jQuery object of the originating element.
 
-### Example
+### Example - accessing a Button instance
 
 	<button type="button" id="editButton">Edit</button>
 	
@@ -193,7 +236,7 @@ Similar to all other Kendo UI widgets, an existing **Button** instance is access
 The `kendoButton()` method returns the same jQuery object that has been used to execute it.
 That's why, if the **Button** will be accessed afterwards, it is a good idea to save it at the time of initialization.
 
-### Example
+### Example - saving and accessing a reference to a Button instance
 
 	<button type="button" id="editButton">Edit</button>
 	<button type="button" id="deleteButton">Delete</button>
