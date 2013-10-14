@@ -32,13 +32,45 @@ The position of the drawer. Can be `left` (default) or `right`.
     new kendo.mobile.Application();
     </script>
 
+### swipeToOpen `Boolean` *(default: true)*
+
+If set to `false`, swiping the view will not activate the drawer. In this case, the drawer will only be open by a designated button
+
+#### drawer with button
+
+    <div data-role="view">
+        <a href="#foo" data-rel="drawer" data-role="button">Drawer</a>
+    </div>
+
+    <div data-role="drawer" id="foo" data-swipe-to-open="false">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title">Hello World!</span>
+            </div>
+        </div>
+
+        <ul data-role="listview">
+            <li>Foo</li>
+        </ul>
+
+        <div data-role="footer">
+           <div data-role="navbar">
+               <a data-align="right" data-role="button">Details</a>
+           </div>
+        </div>
+    </div>
+
+    <script>
+    new kendo.mobile.Application();
+    </script>
+
 ### title `String`
 
 The text to display in the Navbar title (if present).
 
 ### views `Array`
 
-A list of the view ids on which the drawer will appear. If omitted, the drawer can be revealed on any view in the application.
+A list of the view ids on which the drawer will appear. If omitted, the drawer will work on any view in the application.
 
 #### Example
 
