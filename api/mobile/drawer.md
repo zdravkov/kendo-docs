@@ -36,7 +36,7 @@ The position of the drawer. Can be `left` (default) or `right`.
 
 If set to `false`, swiping the view will not activate the drawer. In this case, the drawer will only be open by a designated button
 
-#### drawer with button
+#### Drawer with swipe to open set to false
 
     <div data-role="view">
         <a href="#foo" data-rel="drawer" data-role="button">Drawer</a>
