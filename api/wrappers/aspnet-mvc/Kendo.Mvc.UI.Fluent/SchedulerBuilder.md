@@ -127,6 +127,102 @@ The seconds
     )
 
 
+### WorkDayStart(`System.DateTime`)
+The start time of the business day. The scheduler will display events starting after the workDayStart when the "Show Business Hours" button is pressed.
+
+
+#### Parameters
+
+##### workDayStart `System.DateTime`
+The workDayStart.
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Screening>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .WorkDayStart(new DateTime(2013, 6, 13, 10, 00, 00))
+        .BindTo(Model)
+    )
+
+
+### WorkDayStart(`System.Int32,System.Int32,System.Int32`)
+The start time of the business day. The scheduler will display events starting after the workDayStart when the "Show Business Hours" button is pressed.
+
+
+#### Parameters
+
+##### hours `System.Int32`
+The hours
+
+##### minutes `System.Int32`
+The minutes
+
+##### seconds `System.Int32`
+The seconds
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Screening>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .WorkDayStart(10, 0, 0)
+        .BindTo(Model)
+    )
+
+
+### WorkDayEnd(`System.DateTime`)
+The end time of the business day. The scheduler will display events ending before the workDayEnd when the "Show Business Hours" button is pressed.
+
+
+#### Parameters
+
+##### workDayEnd `System.DateTime`
+The workDayEnd.
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Screening>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .WorkDayEnd(new DateTime(2013, 6, 13, 10, 00, 00))
+        .BindTo(Model)
+    )
+
+
+### WorkDayEnd(`System.Int32,System.Int32,System.Int32`)
+The end time of the business day. The scheduler will display events ending before the workDayEnd when the "Show Business Hours" button is pressed.
+
+
+#### Parameters
+
+##### hours `System.Int32`
+The hours
+
+##### minutes `System.Int32`
+The minutes
+
+##### seconds `System.Int32`
+The seconds
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Screening>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .WorkDayEnd(16,0,0)
+        .BindTo(Model)
+    )
+
+
 ### Height(`System.Int32`)
 The height of the widget.
 

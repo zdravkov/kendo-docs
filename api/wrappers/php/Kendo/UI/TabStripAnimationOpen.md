@@ -49,21 +49,3 @@ A whitespace-separated string of animation effects that are used when a new tab 
     $open->effects('value');
     ?>
 
-### show
-
-
-#### Returns
-`\Kendo\UI\TabStripAnimationOpen`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $open = new \Kendo\UI\TabStripAnimationOpen();
-    $open->show(true);
-    ?>
-

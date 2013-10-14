@@ -161,13 +161,13 @@ The lines color.
 
 
 
-### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>`)
+### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`)
 Configures the ohlc chart lines.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAreaLineBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder)>
 The configuration action.
 
 

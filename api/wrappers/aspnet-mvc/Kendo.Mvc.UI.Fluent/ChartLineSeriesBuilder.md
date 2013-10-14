@@ -205,4 +205,26 @@ The missing values behavior. The default is to leave gaps.
     %>
 
 
+### Style(`Kendo.Mvc.UI.ChartLineStyle`)
+Configures the style for line series.
+
+
+#### Parameters
+
+##### style [Kendo.Mvc.UI.ChartLineStyle](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartLineStyle)
+The style. The default is normal.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
+        .Line(s => s.Sales)
+        .Style(ChartLineStyle.Step);
+    )
+    %>
+
+
 

@@ -11,6 +11,19 @@ Defines the fluent API for configuring the Kendo MobileDrawer for ASP.NET MVC.
 
 ## Methods
 
+### SwipeToOpen(`System.Boolean`)
+If set to false, swiping the view will not activate the drawer. In this case, the drawer will only be open by a designated button
+
+
+#### Parameters
+
+##### value `System.Boolean`
+The value that configures the swipetoopen.
+
+
+
+
+
 ### Title(`System.String`)
 The text to display in the Navbar title (if present).
 

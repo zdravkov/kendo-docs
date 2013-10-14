@@ -11,6 +11,19 @@ Defines the fluent API for configuring the Kendo MobileButton for ASP.NET MVC.
 
 ## Methods
 
+### Enable(`System.Boolean`)
+If set to false the widget will be disabled and will not allow the user to click it. The widget is enabled by default.
+
+
+#### Parameters
+
+##### value `System.Boolean`
+The value that configures the enable.
+
+
+
+
+
 ### Icon(`System.String`)
 The icon of the button. It can be either one of the built-in icons, or a custom one.
 

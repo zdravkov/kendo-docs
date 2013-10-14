@@ -89,6 +89,58 @@ The majorTick
 
 
 
+### AllDaySlotTemplate(`System.String`)
+The template used to render the all day slot content
+
+
+#### Parameters
+
+##### slotTemplate `System.String`
+The slotTemplate
+
+
+
+
+
+### AllDaySlotTemplateId(`System.String`)
+The Id of the template used to render the all day slot content.
+
+
+#### Parameters
+
+##### slotTemplateId `System.String`
+The id of template
+
+
+
+
+
+### SlotTemplate(`System.String`)
+The template used to render the slot content
+
+
+#### Parameters
+
+##### slotTemplate `System.String`
+The slotTemplate
+
+
+
+
+
+### SlotTemplateId(`System.String`)
+The Id of the template used to render the slot content.
+
+
+#### Parameters
+
+##### slotTemplateId `System.String`
+The id of template
+
+
+
+
+
 ### MajorTimeHeaderTemplate(`System.String`)
 The template used to render the major ticks.
 

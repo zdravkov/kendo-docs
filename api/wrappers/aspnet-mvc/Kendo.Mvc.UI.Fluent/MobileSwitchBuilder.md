@@ -24,6 +24,19 @@ The value that configures the checked.
 
 
 
+### Enable(`System.Boolean`)
+If set to false the widget will be disabled and will not allow the user to change its checked state. The widget is enabled by default.
+
+
+#### Parameters
+
+##### value `System.Boolean`
+The value that configures the enable.
+
+
+
+
+
 ### OffLabel(`System.String`)
 The OFF label.
 

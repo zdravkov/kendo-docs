@@ -27,8 +27,7 @@ The client events configuration action.
     <%= Html.Kendo().Upload()
     .Name("Upload")
     .Events(events => events
-        .OnLoad("onLoad")
-        .OnUpload("onUpload")
+        .Upload("onUpload")
     )
     %>
 

@@ -380,6 +380,20 @@ Creates a new PanelBar.
     %>
 
 
+### RecurrenceEditor
+Creates a new RecurrenceEditor.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().RecurrenceEditor()
+    .Name("recurrenceEditor")
+    .FirstWeekDay(0)
+    .Timezone("Etc/UTC")
+    %>
+
+
 ### SchedulerT1
 Creates a new 1.
 
@@ -614,6 +628,18 @@ Creates a new RangeSlider.
 #### Example (ASPX)
     <%= Html.Kendo().RangeSlider()
     .Name("RangeSlider")
+    %>
+
+
+### ProgressBar
+Creates a new ProgressBar
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().ProgressBar()
+    .Name("progressBar")
     %>
 
 

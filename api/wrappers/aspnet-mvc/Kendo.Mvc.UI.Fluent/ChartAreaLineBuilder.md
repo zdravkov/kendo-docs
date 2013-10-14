@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder
-Defines the fluent interface for configuring ChartLine.
+Defines the fluent interface for configuring ChartAreaLineBuilder.
 
 
 
@@ -100,6 +100,28 @@ The line opacity.
             .Line(line => line.Opacity(0.2))
         )
         .Render();
+    %>
+
+
+### Style(`Kendo.Mvc.UI.ChartAreaStyle`)
+Configures the style for line series.
+
+
+#### Parameters
+
+##### style [Kendo.Mvc.UI.ChartAreaStyle](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAreaStyle)
+The style. The default is normal.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
+        .Area(s => s.Sales)
+        .Line(line => line.Style(ChartAreaStyle.Step))
+    )
     %>
 
 

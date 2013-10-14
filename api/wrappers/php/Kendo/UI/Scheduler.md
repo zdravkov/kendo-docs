@@ -387,6 +387,44 @@ The template used to render the scheduler events.The fields which can be used in
     $scheduler->eventTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### footer
+
+If set to false the footer of the scheduler would not be displayed.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `boolean|\Kendo\UI\SchedulerFooter|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->footer(true);
+    ?>
+
+
+#### Example - using [\Kendo\UI\SchedulerFooter](/api/wrappers/php/Kendo/UI/SchedulerFooter)
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $footer = new \Kendo\UI\SchedulerFooter();
+    $command = 'value';
+    $footer->command($command);
+    $scheduler->footer($footer);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $command = 'value';
+    $scheduler->footer(array('command' => $command));
+    ?>
+
 ### group
 
 The configuration of the scheduler resource(s) grouping.
@@ -1049,5 +1087,41 @@ The width of the widget. Numeric values are treated as pixels.
     <?php
     $scheduler = new \Kendo\UI\Scheduler('Scheduler');
     $scheduler->width('value');
+    ?>
+
+### workDayEnd
+Sets the end of the work day when the  "Show business hours" button is clicked.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `date`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->workDayEnd(new date());
+    ?>
+
+### workDayStart
+Sets the start of the work day when the  "Show business hours" button is clicked.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `date`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->workDayStart(new date());
     ?>
 
