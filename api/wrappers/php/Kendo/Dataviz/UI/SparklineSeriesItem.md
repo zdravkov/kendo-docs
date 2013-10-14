@@ -628,6 +628,24 @@ The start angle of the first segment.Available for pie series.
     $seriesItem->startAngle(1);
     ?>
 
+### style
+The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $seriesItem->style('value');
+    ?>
+
 ### target
 
 The target of the bullet chart.

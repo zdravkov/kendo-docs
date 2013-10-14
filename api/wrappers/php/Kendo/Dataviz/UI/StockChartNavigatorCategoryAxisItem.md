@@ -209,7 +209,7 @@ The data item field which contains the category name. Requires the dataSource op
     ?>
 
 ### justified
-If set to true the chart will position categories and series points on major ticks. This removes the empty space before and after the series.The default value is false except for "area", "verticalArea", "stepArea" and "verticalStepArea".
+If set to true the chart will position categories and series points on major ticks. This removes the empty space before and after the series.The default value is false except for "area" and "verticalArea".
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItem`

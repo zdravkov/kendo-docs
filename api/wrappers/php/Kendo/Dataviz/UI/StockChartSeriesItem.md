@@ -640,6 +640,24 @@ Available for column series.
     $seriesItem->stack('value');
     ?>
 
+### style
+The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $seriesItem->style('value');
+    ?>
+
 ### target
 
 The target of the bullet chart.

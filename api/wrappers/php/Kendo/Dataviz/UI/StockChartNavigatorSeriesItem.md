@@ -563,6 +563,24 @@ Available for column series.
     $seriesItem->stack(true);
     ?>
 
+### style
+The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartNavigatorSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItem();
+    $seriesItem->style('value');
+    ?>
+
 ### tooltip
 
 The data point tooltip configuration options.

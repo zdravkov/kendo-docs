@@ -48,6 +48,24 @@ The line opacity.
     $line->opacity(1);
     ?>
 
+### style
+The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesItemLine`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $line = new \Kendo\Dataviz\UI\StockChartSeriesItemLine();
+    $line->style('value');
+    ?>
+
 ### width
 The line width.
 

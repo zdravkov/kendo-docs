@@ -48,6 +48,24 @@ The line opacity. By default the line is opaque.
     $line->opacity(1);
     ?>
 
+### style
+The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLine`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $line = new \Kendo\Dataviz\UI\ChartSeriesItemLine();
+    $line->style('value');
+    ?>
+
 ### width
 The line width in pixels.
 

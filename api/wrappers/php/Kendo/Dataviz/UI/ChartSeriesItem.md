@@ -897,6 +897,24 @@ The start angle (degrees) of the first donut or pie segment.Angles increase cloc
     $seriesItem->startAngle(1);
     ?>
 
+### style
+The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->style('value');
+    ?>
+
 ### target
 
 The configuration options of the target
