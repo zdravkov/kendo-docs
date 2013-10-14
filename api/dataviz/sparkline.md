@@ -2685,6 +2685,17 @@ The line opacity.
 
 The line width.
 
+### series.line.style `String` *(default: "normal")*
+
+The supported values are:
+
+* "normal" - The values will be connected with straight line.
+* "step" - The values will be connected with a line with right angle.
+
+> The default value is "normal".
+
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "area".
+
 ### series.markers `Object`
 
 Marker options.
@@ -2726,7 +2737,7 @@ The marker shape is triangle.
 #### *"circle"*
 
 The marker shape is circle.
-type
+
 ### series.markers.visible `Boolean|Function`*(default: false)*
 
 The markers visibility.
@@ -2743,7 +2754,7 @@ The behavior for handling missing values. The supported values are:
 * "interpolate" - the value is interpolated from neighboring points.
 * "zero" - the value is assumed to be zero.
 
-> The default value is "interpolate", except for "area" and "stepArea" and stacked series which default to "zero".
+> The default value is "interpolate", except for "area" and stacked series which default to "zero".
 
 > The `missingValues` option is supported when [series.type](#configuration-series.type) is set to "area", "line", "scatterLine", "radarLine", "radarArea", "polarLine" or "polarArea".
 
@@ -2764,11 +2775,11 @@ The behavior for handling missing values. The supported values are:
 The supported values are:
 
 * "normal" - The values will be connected with straight line.
-* "step" - The values will be connected with a line at right.
+* "step" - The values will be connected with a line with right angle.
 
 > The default value is "normal".
 
-> The `style` option is supported when [series.type](#configuration-series.type) is set to "area", "line".
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "line".
 
 ### series.negativeColor `String`
 

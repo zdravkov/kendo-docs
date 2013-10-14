@@ -239,7 +239,7 @@ The data item field which contains the category name. Requires the [dataSource](
 
 If set to `true` the chart will position categories and series points on major ticks. This removes the empty space before and after the series.
 
-The default value is `false` except for "area", "verticalArea", "stepArea" and "verticalStepArea".
+The default value is `false` except for "area" and "verticalArea".
 
 > This option is ignored if the [series.type](#configuration-series.type) option is set to "bar", "column", "ohlc" or "candlestick".
 
@@ -1924,7 +1924,7 @@ The behavior for handling missing values. The supported values are:
 The supported values are:
 
 * "normal" - The values will be connected with straight line.
-* "step" - The values will be connected with a line at right.
+* "step" - The values will be connected with a line with right angle.
 
 > The default value is "normal".
 
@@ -5551,6 +5551,17 @@ The line opacity.
 
 The line width.
 
+### series.line.style `String` *(default: "normal")*
+
+The supported values are:
+
+* "normal" - The values will be connected with straight line.
+* "step" - The values will be connected with a line with right angle.
+
+> The default value is "normal".
+
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "area".
+
 ### series.lowField `String`
 
 The data field containing the low value.
@@ -5648,7 +5659,7 @@ The supported values are:
 
 > The default value is "normal".
 
-> The `style` option is supported when [series.type](#configuration-series.type) is set to "area", "line".
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "line".
 
 ### series.negativeColor `String`
 

@@ -9311,12 +9311,41 @@ The line width in pixels.
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [ {
+      series: [{
         type: "area",
         line: {
           color: "green",
           opacity: 0.5,
           width: 5
+        },
+        data: [1, 2, 3]
+      }]
+    });
+    </script>
+
+### series.line.style `String` *(default: "normal")*
+
+The supported values are:
+
+* "normal" - The values will be connected with straight line.
+* "step" - The values will be connected with a line with right angle.
+
+> The default value is "normal".
+
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "area".
+
+#### Example - set the chart line width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "area",
+        line: {
+          color: "green",
+          opacity: 0.5,
+          width: 5,
+          style: "step"
         },
         data: [1, 2, 3]
       }]
@@ -9743,11 +9772,11 @@ The behavior for handling missing values. The supported values are:
 The supported values are:
 
 * "normal" - The values will be connected with straight line.
-* "step" - The values will be connected with a line at right.
+* "step" - The values will be connected with a line with right angle.
 
 > The default value is "normal".
 
-> The `style` option is supported when [series.type](#configuration-series.type) is set to "area", "line".
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "line".
 
 #### Example - set the style behavior
     <div id="chart"></div>
