@@ -10,6 +10,14 @@ A JSP wrapper for Kendo UI [Button](/api/web/button).
 
 ## Configuration Attributes
 
+### content `java.lang.Object`
+
+The content of the Button
+
+#### Example
+    <kendo:button content="content">
+    </kendo:button>
+
 ### enable `boolean`
 
 Indicates whether the Button should be enabled or disabled. By default, it is enabled, unless a disabled="disabled" attribute is detected.

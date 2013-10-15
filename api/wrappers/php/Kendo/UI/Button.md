@@ -69,6 +69,42 @@ For additional information check the [click](/api/web/button#events-click) event
     $button->click(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### content
+
+Sets the HTML content of the Button.
+
+#### Returns
+
+`Button`
+
+#### $value `string`
+
+#### Example
+
+    <?php
+    $button = new \Kendo\UI\Button('Button');
+    $button->content('<strong>Content</strong>');
+    ?>
+
+
+### content
+
+Sets the HTML content of the Button.
+
+#### Returns
+
+`Button`
+
+#### $value `string`
+
+#### Example
+
+    <?php
+    $button = new \Kendo\UI\Button('Button');
+    $button->content('<strong>Content</strong>');
+    ?>
+
+
 ### enable
 Indicates whether the Button should be enabled or disabled. By default, it is enabled, unless a disabled="disabled" attribute is detected.
 
@@ -85,6 +121,21 @@ Indicates whether the Button should be enabled or disabled. By default, it is en
     <?php
     $button = new \Kendo\UI\Button('Button');
     $button->enable(true);
+    ?>
+
+### endContent
+
+Stops output bufferring and sets the preceding markup as the content of the Button.
+
+#### Example
+
+    <?php
+    $button = new \Kendo\UI\Button('Button');
+    $button->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $button->endContent(); // content is set to <strong>Content</strong>
     ?>
 
 ### icon
@@ -143,4 +194,20 @@ In case you want to use an icon from the Kendo UI theme sprite background image,
     $button = new \Kendo\UI\Button('Button');
     $button->spriteCssClass('value');
     ?>
+
+### startContent
+
+Starts output bufferring. Any following markup will be set as the content of the Button.
+
+#### Example
+
+    <?php
+    $button = new \Kendo\UI\Button('Button');
+    $button->startContent();
+    ?>
+    <strong>Content</strong>
+    <?php
+    $button->endContent(); // content is set to <strong>Content</strong>
+    ?>
+
 
