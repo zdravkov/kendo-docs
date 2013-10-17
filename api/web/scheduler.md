@@ -3981,6 +3981,32 @@ The type of the view. The built-in views are: "day", "week", "month" and "agenda
     });
     </script>
 
+### views.workWeekDays `Array` *(default: ["MO","TU","WE","TH","FR"])*
+
+List of working week days.
+
+> The `workWeekDays` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+
+#### Example - set the view type
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        { type: "week", workWeekDays: ["MO", "TU", "WE"] }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### width `Number|String`
 
 The width of the widget. Numeric values are treated as pixels.
@@ -4004,7 +4030,7 @@ The width of the widget. Numeric values are treated as pixels.
 
 ### workDayStart `Date`
 
-Sets the start of the work day when the  "Show business hours" button is clicked. 
+Sets the start of the work day when the  "Show business hours" button is clicked.
 
 #### Example - set the workDayStart of the scheduler
     <div id="scheduler"></div>
@@ -4025,7 +4051,7 @@ Sets the start of the work day when the  "Show business hours" button is clicked
 
 ### workDayEnd `Date`
 
-Sets the end of the work day when the  "Show business hours" button is clicked. 
+Sets the end of the work day when the  "Show business hours" button is clicked.
 
 #### Example - set the workDayEnd of the scheduler
     <div id="scheduler"></div>
