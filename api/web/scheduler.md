@@ -4070,6 +4070,30 @@ Sets the end of the work day when the  "Show business hours" button is clicked.
     });
     </script>
 
+### workWeekDays `Array` *(default: ["MO","TU","WE","TH","FR"])*
+
+List of working week days.
+
+> The `workWeekDays` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+
+#### Example - set the view type
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      workWeekDays: ["MO", "TU", "WE"],
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ## Fields
 
 ### dataSource `kendo.data.SchedulerDataSource`
