@@ -177,6 +177,14 @@ The type of the view. The built-in views are: "day", "week", "month" and "agenda
     <kendo:scheduler-view type="type">
     </kendo:scheduler-view>
 
+### workWeekDays `java.lang.Object`
+
+List of working week days.
+
+#### Example
+    <kendo:scheduler-view workWeekDays="workWeekDays">
+    </kendo:scheduler-view>
+
 
 ##  Configuration JSP Tags
 
