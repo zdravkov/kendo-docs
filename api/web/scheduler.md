@@ -4353,6 +4353,63 @@ The data source to which the widget should be bound.
     scheduler.setDataSource(dataSource);
     </script>
 
+### slotByPosition
+
+Get the time slot from given horizontal (x) and vertical (y) position.
+
+#### Parameters
+
+##### xPosition `Number`
+
+The horizontal position.
+
+##### yPosition `Number`
+
+The vertical position.
+
+#### Returns
+
+`Object` The time slot.
+
+#### Example - get slot and it's startDate and endDate
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6")
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var slot = scheduler.slotByPosition(100,100);
+
+    console.log("slot startDate: " + slot.startDate);
+    console.log("slot endDate: " + slot.endDate);
+    </script>
+
+### slotByElement
+
+Get the time slot from given element.
+
+#### Parameters
+
+##### element `Element|jQuery`
+
+#### Returns
+
+`Object` The time slot.
+
+#### Example - save an new event
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6")
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var element = scheduler.view().content.find("tr:first td:first");
+    var slot = scheduler.slotByElement(element);
+
+    console.log("slot startDate: " + slot.startDate);
+    console.log("slot endDate: " + slot.endDate);
+    </script>
+
 ### view
 
 Gets or sets the current scheduler view.
