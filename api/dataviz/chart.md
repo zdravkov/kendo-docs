@@ -8284,6 +8284,109 @@ The data field containing the color applied when the open value is greater than 
     });
     </script>
 
+### series.segmentSpacing `Number` *(default: 0)*
+
+The space in pixels between the different segments of the funnel chart.
+
+> The `segmentSpacing` option is supported when [series.type](#configuration-series.type) is set to "funnel".
+
+#### Example - set the chart series segmentSpacing field
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        {
+          type: "funnel",
+          segmentSpacing: 20,
+          data: [
+            { value: 1 },
+            { value: 2 },
+            { value: 3 }
+          ]
+        }
+      ]
+    });
+    </script>
+
+
+### series.neckRatio `Number` *(default: 0.3)*
+
+`neckRatio` specifies the ratio top-base/bottom-base of the whole chart. neckRatio set to three means the top base is three times smaller than the bottom base.
+
+> The `neckRatio` option is supported when [series.type](#configuration-series.type) is set to "funnel" and dynamicSlope set to `false`.
+
+#### Example - set the chart series neckRatio field
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        {
+          type: "funnel",
+          neckRatio: 0.1, //bottom base becomes 10 times smaller than the bottom one
+          data: [
+            { value: 1 },
+            { value: 2 },
+            { value: 3 }
+          ]
+        }
+      ]
+    });
+    </script>
+
+### series.dynamicSlope `Boolean` *(default: false)*
+
+> The `dynamicSlope` option is supported when [series.type](#configuration-series.type) is set to "funnel".
+
+When set to true the ratio of the bases of each segment is calculated based on the ratio of currentDataItem.value/nextDataItem.value
+The last element is always created like a rectangle since there is no following element.
+
+
+#### Example - set the chart series dynamicSlope field
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        {
+          type: "funnel",
+          dynamicSlope: true,
+          data: [
+            { value: 1 },
+            { value: 2 },
+            { value: 3 }
+          ]
+        }
+      ]
+    });
+    </script>
+
+### series.dynamicHeight `Boolean` *(default: true)*
+
+> The `dynamicHeight` option is supported when [series.type](#configuration-series.type) is set to "funnel".
+
+When set to `false` all segments become with the same height, otherwise the height of each segment is based on its value.
+
+#### Example - set the chart series dynamicHeight field
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        {
+          type: "funnel",
+          dynamicWidth: true,
+          data: [
+            { value: 2 }, //height of this segment is 10% of the whole chart
+            { value: 4 }, //height of this segment is 20% of the whole chart
+            { value: 14 } //height of this segment is 70% of the whole chart
+          ]
+        }
+      ]
+    });
+    </script>
+
 ### series.explodeField `String` *(default: "explode")*
 
 The data item field which contains a boolean value indicating whether the sector is exploded.
