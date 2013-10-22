@@ -3981,20 +3981,46 @@ The type of the view. The built-in views are: "day", "week", "month" and "agenda
     });
     </script>
 
-### views.workWeekDays `Array` *(default: ["MO","TU","WE","TH","FR"])*
+### views.workWeekStart `Number` *(default: 1)*
 
-List of working week days.
+The start of working week (index based).
 
-> The `workWeekDays` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+> The `workWeekStart` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
 
-#### Example - set the view type
+#### Example - set the start day of the work week to Tuesday
 
     <div id="scheduler"></div>
     <script>
     $("#scheduler").kendoScheduler({
       date: new Date("2013/6/6"),
       views: [
-        { type: "week", workWeekDays: ["MO", "TU", "WE"] }
+        { type: "week", workWeekStart: 2 }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### views.workWeekEnd `Number` *(default: 5)*
+
+The end of working week (index based).
+
+> The `workWeekEnd` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+
+#### Example - set the end day of the work week to Saturday
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        { type: "week", workWeekEnd: 6 }
       ],
       dataSource: [
         {
@@ -4070,19 +4096,43 @@ Sets the end of the work day when the  "Show business hours" button is clicked.
     });
     </script>
 
-### workWeekDays `Array` *(default: ["MO","TU","WE","TH","FR"])*
+### workWeekStart `Number` *(default: 1)*
 
-List of working week days.
+The start of working week (index based).
 
-> The `workWeekDays` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+> The `workWeekStart` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
 
-#### Example - set the view type
+#### Example - set the start day of the work week to Tuesday
 
     <div id="scheduler"></div>
     <script>
     $("#scheduler").kendoScheduler({
-      workWeekDays: ["MO", "TU", "WE"],
       date: new Date("2013/6/6"),
+      workWeekStart: 2,
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### workWeekEnd `Number` *(default: 5)*
+
+The end of working week (index based).
+
+> The `workWeekEnd` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+
+#### Example - set the end day of the work week to Saturday
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      workWeekEnd: 6,
       dataSource: [
         {
           id: 1,
