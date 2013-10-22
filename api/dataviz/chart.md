@@ -9938,6 +9938,7 @@ The rotation angle of the outliers.
          }
       }]
     });
+
 ### series.extremes `Object`
 
 The chart series extremes configuration.
