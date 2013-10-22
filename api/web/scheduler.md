@@ -1410,11 +1410,11 @@ The configuration of the scheduler recurrence editor messages. Use this option t
 
 The configuration of the scheduler recurrence editor daily messages. Use this option to customize or localize the scheduler recurrence editor daily messages.
 
-### messages.recurrenceEditor.daily.days `String`
+### messages.recurrenceEditor.daily.interval `String`
 
 The text similar to " day(s)" displayed in the scheduler recurrence editor.
 
-#### Example - set the "days" scheduler recurrence editor message
+#### Example - set the "interval" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -1423,7 +1423,7 @@ The text similar to " day(s)" displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             daily: {
-                days: " days(s)"
+                interval: " days(s)"
             }
         }
       },
@@ -1470,11 +1470,11 @@ The text similar to "Repeat every: " displayed in the scheduler recurrence edito
 
 The configuration of the scheduler recurrence editor end messages. Use this option to customize or localize the scheduler recurrence editor end messages.
 
-### messages.recurrenceEditor.end.endCountAfter `String`
+### messages.recurrenceEditor.end.after `String`
 
 The text similar to "After " displayed in the scheduler recurrence editor.
 
-#### Example - set the "endCountAfter" scheduler recurrence editor message
+#### Example - set the "after" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -1483,7 +1483,7 @@ The text similar to "After " displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             end: {
-                endCountAfter: "after "
+                after: "after "
             }
         }
       },
@@ -1498,11 +1498,11 @@ The text similar to "After " displayed in the scheduler recurrence editor.
     });
     </script>
 
-### messages.recurrenceEditor.end.endCountOccurrence `String`
+### messages.recurrenceEditor.end.occurrence `String`
 
 The text similar to " occurrence(s)" displayed in the scheduler recurrence editor.
 
-#### Example - set the "endCountOccurrence" scheduler recurrence editor message
+#### Example - set the "occurrence" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -1511,7 +1511,7 @@ The text similar to " occurrence(s)" displayed in the scheduler recurrence edito
       messages: {
         recurrenceEditor: {
             end: {
-                endCountOccurrence: " occurrence(s)."
+                occurrence: " occurrence(s)."
             }
         }
       },
@@ -1526,11 +1526,11 @@ The text similar to " occurrence(s)" displayed in the scheduler recurrence edito
     });
     </script>
 
-### messages.recurrenceEditor.end.endLabel `String`
+### messages.recurrenceEditor.end.label `String`
 
 The text similar to "End:" displayed in the scheduler recurrence editor.
 
-#### Example - set the "endLabel" scheduler recurrence editor message
+#### Example - set the "label" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -1539,7 +1539,7 @@ The text similar to "End:" displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             end: {
-                endLabel: "end: "
+                label: "end: "
             }
         }
       },
@@ -1554,11 +1554,11 @@ The text similar to "End:" displayed in the scheduler recurrence editor.
     });
     </script>
 
-### messages.recurrenceEditor.end.endNever `String`
+### messages.recurrenceEditor.end.never `String`
 
 The text similar to "Never" displayed in the scheduler recurrence editor.
 
-#### Example - set the "endNever" scheduler recurrence editor message
+#### Example - set the "never" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -1567,7 +1567,7 @@ The text similar to "Never" displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             end: {
-                endNever: "never"
+                never: "never"
             }
         }
       },
@@ -1582,11 +1582,11 @@ The text similar to "Never" displayed in the scheduler recurrence editor.
     });
     </script>
 
-### messages.recurrenceEditor.end.endUntilOn `String`
+### messages.recurrenceEditor.end.on `String`
 
 The text similar to "On " displayed in the scheduler recurrence editor.
 
-#### Example - set the "endUntilOn" scheduler recurrence editor message
+#### Example - set the "on" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -1595,7 +1595,7 @@ The text similar to "On " displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             end: {
-                endUntilOn: "on "
+                on: "on "
             }
         }
       },
@@ -1786,11 +1786,11 @@ The text similar to "Day " displayed in the scheduler recurrence editor.
     });
     </script>
 
-### messages.recurrenceEditor.monthly.months `String`
+### messages.recurrenceEditor.monthly.interval `String`
 
 The text similar to " month(s)" displayed in the scheduler recurrence editor.
 
-#### Example - set the "months" scheduler recurrence editor message
+#### Example - set the "interval" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -1799,7 +1799,7 @@ The text similar to " month(s)" displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             monthly: {
-                months: " month(s)."
+                interval: " month(s)."
             }
         }
       },
@@ -2018,11 +2018,11 @@ The text similar to "last" displayed in the scheduler recurrence editor.
 
 The configuration of the scheduler recurrence editor weekly messages. Use this option to customize or localize the scheduler recurrence editor weekly messages.
 
-### messages.recurrenceEditor.weekly.weeks `String`
+### messages.recurrenceEditor.weekly.interval `String`
 
 The text similar to " week(s)" displayed in the scheduler recurrence editor.
 
-#### Example - set the "weeks" scheduler recurrence editor message
+#### Example - set the "interval" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -2031,7 +2031,7 @@ The text similar to " week(s)" displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             weekly: {
-                weeks: " week(s)."
+                interval: " week(s)."
             }
         }
       },
@@ -2088,6 +2088,94 @@ The text similar to "Repeat on: " displayed in the scheduler recurrence editor.
         recurrenceEditor: {
             weekly: {
                 repeatOn: "repeat on: "
+            }
+        }
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### messages.recurrenceEditor.weekdays `Object`
+
+The configuration of the scheduler recurrence editor week days messages. Use these options to customize or localize the scheduler recurrence editor weekdays messages.
+
+### messages.recurrenceEditor.weekdays.day `String`
+
+The text similar to "day" displayed in the repeat by section of the monthly recurrence pattern.
+
+#### Example - set the "day" scheduler recurrence editor message
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      messages: {
+        recurrenceEditor: {
+            weekdays: {
+                day: "Day"
+            }
+        }
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### messages.recurrenceEditor.weekdays.weekday `String`
+
+The text similar to "weekday" displayed in the repeat by section of the monthly recurrence pattern.
+
+#### Example - set the "weekday" scheduler recurrence editor message
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      messages: {
+        recurrenceEditor: {
+            weekdays: {
+                weekday: "Week day"
+            }
+        }
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### messages.recurrenceEditor.weekdays.weekend `String`
+
+The text similar to "weekend" displayed in the repeat by section of the monthly recurrence pattern.
+
+#### Example - set the "weekend" scheduler recurrence editor message
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      messages: {
+        recurrenceEditor: {
+            weekdays: {
+                weekend: "Week day"
             }
         }
       },
@@ -2190,11 +2278,11 @@ The text similar to "Repeat on: " displayed in the scheduler recurrence editor.
     });
     </script>
 
-### messages.recurrenceEditor.yearly.years `String`
+### messages.recurrenceEditor.yearly.interval `String`
 
 The text similar to " year(s)" displayed in the scheduler recurrence editor.
 
-#### Example - set the "years" scheduler recurrence editor message
+#### Example - set the "interval" scheduler recurrence editor message
 
     <div id="scheduler"></div>
     <script>
@@ -2203,7 +2291,7 @@ The text similar to " year(s)" displayed in the scheduler recurrence editor.
       messages: {
         recurrenceEditor: {
             yearly: {
-                years: " year(s)."
+                interval: " year(s)."
             }
         }
       },
