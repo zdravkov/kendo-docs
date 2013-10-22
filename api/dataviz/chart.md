@@ -951,7 +951,7 @@ If set to `true` the chart will position categories and series points on major t
 
 The default value is `false` except for "area" and "verticalArea".
 
-> This option is ignored if the [series.type](#configuration-series.type) option is set to "bar", "column", "ohlc" or "candlestick".
+> This option is ignored if the [series.type](#configuration-series.type) option is set to "bar", "column", "boxPlot", "ohlc" or "candlestick".
 
 #### Example - justify categories and series
 
@@ -2886,7 +2886,7 @@ If set to `true` the category axis direction will be reversed. By default catego
 
 If set to `true` the chart will round the first and last date to the nearest base unit.
 
-The `roundToBaseUnit` option will be ignored if [series.type](#configuration-series.type) is set to "bar", "column", "ohlc" or "candlestick".
+The `roundToBaseUnit` option will be ignored if [series.type](#configuration-series.type) is set to "bar", "column", "boxPlot", "ohlc" or "candlestick".
 
 ### categoryAxis.select `Object`
 
@@ -3891,6 +3891,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the category axis notes icon shape
 
@@ -4459,6 +4460,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the category axis note icon shape
 
@@ -7745,7 +7747,7 @@ The supported values are:
 * "sum" - the sum of all values for the date period.
 * "first" - the first value
 * function(values, series, dataItems, category) - user-defined aggregate function. Returns single value or data item.
-* object  - (compound aggregate) **Applicable to "candlestick" and ohlc "series"**. Specifies the aggregate for each data item field.
+* object  - (compound aggregate) **Applicable to "candlestick", "boxPlot"  and ohlc "series"**. Specifies the aggregate for each data item field.
 
 ##### Example - set the chart series aggregate
 
@@ -7771,7 +7773,7 @@ The supported values are:
 
 The name of the value axis to use.
 
-> The `axis` option is supported when [series.type](#configuration-series.type) is set to "area", "bar", "column", "line", "candlestick" or "ohlc".
+> The `axis` option is supported when [series.type](#configuration-series.type) is set to "area", "bar", "column", "line", "boxPlot", "candlestick" or "ohlc".
 
 #### Example - set the chart series value axis
 
@@ -7793,7 +7795,7 @@ The name of the value axis to use.
 
 The border of the chart series.
 
-> The `border` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "donut", "pie", "bubble", "candlestick" or "ohlc".
+> The `border` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "donut", "pie", "bubble", "boxPlot", "candlestick" or "ohlc".
 
 #### Example - set the chart series border
 
@@ -9623,6 +9625,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the chart series marker shape
 
@@ -9695,6 +9698,467 @@ The rotation angle of the markers.
          type: "line",
          field: "speed",
          markers: {
+          type: "triangle",
+          size: 20,
+          rotation: function(point) {
+              // "Bind" rotation to dataItem field
+              return point.dataItem.dir;
+          }
+         }
+      }]
+    });
+
+### series.outliers `Object`
+
+The chart series outliers configuration.
+
+> The chart displays the series labels when the [series.outliers.visible](#configuration-series.outliers.visible) option is set to `true`.
+> The `outliers` option is supported when [series.type](#configuration-series.type) is set to "boxPlot".
+
+#### Example - set the chart series outliers
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true,
+          background: "green",
+          size: 30
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.background `String|Function`
+
+The background color of the series outliers.
+
+#### Example - set the chart series outliers background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true,
+          background: "green"
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.border `Object|Function`
+
+The border of the outliers.
+
+#### Example - set the chart series outliers border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true,
+          border: {
+            width: 2,
+            color: "green"
+          }
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.border.color `String|Function` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the chart series outliers border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true,
+          border: {
+            width: 2,
+            color: "green"
+          }
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.border.width `Number|Function` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the chart series outliers border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true,
+          border: {
+            width: 2
+          }
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.size `Number|Function` *(default: 6)*
+
+The marker size in pixels.
+
+#### Example - set the chart outliers size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true,
+          size: 30
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.type `String|Function` *(default: "circle")*
+
+The outliers shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
+
+#### Example - set the chart series marker shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true,
+          type: "triangle",
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.visible `Boolean|Function` *(default: false)*
+
+If set to `true` the chart will display the series outliers. By default chart series outliers are not displayed.
+
+#### Example - display the chart series outliers
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        outliers: {
+          visible: true
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.rotation `Number|Function`
+
+The rotation angle of the outliers.
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]],
+        outliers: {
+          type: "square",
+          rotation: 45
+        }
+      }]
+    });
+    </script>
+
+#### Example
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+		  median: 3,
+		  q3: 4,
+		  upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers",
+         outliers: {
+          type: "triangle",
+          size: 20,
+          rotation: function(point) {
+              // "Bind" rotation to dataItem field
+              return point.dataItem.dir;
+          }
+         }
+      }]
+    });
+### series.extremes `Object`
+
+The chart series extremes configuration.
+
+> The chart displays the series labels when the [series.extremes.visible](#configuration-series.extremes.visible) option is set to `true`.
+> The `outliers` option is supported when [series.type](#configuration-series.type) is set to "boxPlot".
+
+#### Example - set the chart series extremes
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true,
+          background: "green",
+          size: 30
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.outliers.background `String|Function`
+
+The background color of the series outliers.
+
+#### Example - set the chart series outliers background
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true,
+          background: "green"
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.extremes.border `Object|Function`
+
+The border of the extremes.
+
+#### Example - set the chart series extremes border
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true,
+          border: {
+            width: 2,
+            color: "green"
+          }
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.extremes.border.color `String|Function` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the chart series extremes border color
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true,
+          border: {
+            width: 2,
+            color: "green"
+          }
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.extremes.border.width `Number|Function` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+#### Example - set the chart series extremes border width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true,
+          border: {
+            width: 2
+          }
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.extremes.size `Number|Function` *(default: 6)*
+
+The extremes size in pixels.
+
+#### Example - set the chart extremes size
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true,
+          size: 30
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.extremes.type `String|Function` *(default: "circle")*
+
+The extremes shape.
+
+The supported values are:
+* "circle" - the marker shape is circle.
+* "square" - the marker shape is square.
+* "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
+
+#### Example - set the chart series extremes shape
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true,
+          type: "triangle",
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.extremes.visible `Boolean|Function` *(default: false)*
+
+If set to `true` the chart will display the series extremes. By default chart series extremes are not displayed.
+
+#### Example - display the chart series extremes
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        extremes: {
+          visible: true
+        },
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
+      }]
+    });
+    </script>
+
+### series.extremes.rotation `Number|Function`
+
+The rotation angle of the extremes.
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "boxPlot",
+        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]],
+        extremes: {
+          type: "square",
+          rotation: 45
+        }
+      }]
+    });
+    </script>
+
+#### Example
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+		  median: 3,
+		  q3: 4,
+		  upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers",
+         extremes: {
           type: "triangle",
           size: 20,
           rotation: function(point) {
@@ -11029,6 +11493,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the series notes icon shape
 
@@ -13030,6 +13495,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the seriesDefaults notes icon shape
 
@@ -17605,6 +18071,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the value axis notes icon shape
 
@@ -18173,6 +18640,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the value axis note icon shape
 
@@ -22087,6 +22555,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the x axis notes icon shape
 
@@ -22655,6 +23124,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the x axis note icon shape
 
@@ -26563,6 +27033,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the y axis notes icon shape
 
@@ -27131,6 +27602,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the y axis note icon shape
 

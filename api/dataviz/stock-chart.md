@@ -773,6 +773,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 ### navigator.categoryAxis.notes.icon.visible `Boolean` *(default: "true")*
 
@@ -912,6 +913,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 ### navigator.categoryAxis.notes.data.icon.visible `Boolean` *(default: "true")*
 
@@ -1902,6 +1904,10 @@ The marker shape is triangle.
 #### *"circle"*
 
 The marker shape is circle.
+
+#### *"cross"*
+
+The marker shape is cross.
 
 ### navigator.series.markers.visible `Boolean`*(default: false)*
 
@@ -3230,6 +3236,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the category axis notes icon shape
 
@@ -3798,6 +3805,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the category axis note icon shape
 
@@ -5634,6 +5642,10 @@ The marker shape is triangle.
 
 The marker shape is circle.
 
+#### *"cross"*
+
+The marker shape is cross.
+
 ### series.markers.visible `Boolean|Function`*(default: false)*
 
 The markers visibility.
@@ -6038,6 +6050,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the series notes icon shape
 
@@ -8015,6 +8028,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the value axis notes icon shape
 
@@ -8583,6 +8597,7 @@ The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example - set the value axis note icon shape
 
