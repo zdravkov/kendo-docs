@@ -475,21 +475,39 @@ The type of the view. The built-in views are: "day", "week", "month" and "agenda
     $view->type('value');
     ?>
 
-### workWeekDays
-List of working week days.
+### workWeekEnd
+The end of working week (index based).
 
 #### Returns
 `\Kendo\UI\SchedulerView`
 
 #### Parameters
 
-##### $value `array`
+##### $value `float`
 
 
 
 #### Example 
     <?php
     $view = new \Kendo\UI\SchedulerView();
-    $view->workWeekDays(new array());
+    $view->workWeekEnd(1);
+    ?>
+
+### workWeekStart
+The start of working week (index based).
+
+#### Returns
+`\Kendo\UI\SchedulerView`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $view->workWeekStart(1);
     ?>
 

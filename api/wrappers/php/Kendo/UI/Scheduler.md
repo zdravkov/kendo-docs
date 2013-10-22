@@ -1125,3 +1125,39 @@ Sets the start of the work day when the  "Show business hours" button is clicked
     $scheduler->workDayStart(new date());
     ?>
 
+### workWeekEnd
+The end of working week (index based).
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->workWeekEnd(1);
+    ?>
+
+### workWeekStart
+The start of working week (index based).
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->workWeekStart(1);
+    ?>
+

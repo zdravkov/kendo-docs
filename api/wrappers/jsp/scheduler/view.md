@@ -177,12 +177,20 @@ The type of the view. The built-in views are: "day", "week", "month" and "agenda
     <kendo:scheduler-view type="type">
     </kendo:scheduler-view>
 
-### workWeekDays `java.lang.Object`
+### workWeekEnd `float`
 
-List of working week days.
+The end of working week (index based).
 
 #### Example
-    <kendo:scheduler-view workWeekDays="workWeekDays">
+    <kendo:scheduler-view workWeekEnd="workWeekEnd">
+    </kendo:scheduler-view>
+
+### workWeekStart `float`
+
+The start of working week (index based).
+
+#### Example
+    <kendo:scheduler-view workWeekStart="workWeekStart">
     </kendo:scheduler-view>
 
 

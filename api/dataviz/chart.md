@@ -9963,7 +9963,7 @@ The chart series extremes configuration.
     });
     </script>
 
-### series.outliers.background `String|Function`
+### series.extremes.background `String|Function`
 
 The background color of the series outliers.
 

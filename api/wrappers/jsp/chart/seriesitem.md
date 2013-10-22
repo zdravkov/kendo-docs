@@ -390,6 +390,18 @@ More documentation is available at [kendo:chart-seriesItem-connectors](chart/ser
         <kendo:chart-seriesItem-connectors></kendo:chart-seriesItem-connectors>
     </kendo:chart-seriesItem>
 
+### kendo:chart-seriesItem-extremes
+
+The chart series extremes configuration.
+
+More documentation is available at [kendo:chart-seriesItem-extremes](chart/seriesitem-extremes).
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-extremes></kendo:chart-seriesItem-extremes>
+    </kendo:chart-seriesItem>
+
 ### kendo:chart-seriesItem-highlight
 
 The chart series highlighting configuration options.
@@ -472,6 +484,18 @@ More documentation is available at [kendo:chart-seriesItem-notes](chart/seriesit
 
     <kendo:chart-seriesItem>
         <kendo:chart-seriesItem-notes></kendo:chart-seriesItem-notes>
+    </kendo:chart-seriesItem>
+
+### kendo:chart-seriesItem-outliers
+
+The chart series outliers configuration.
+
+More documentation is available at [kendo:chart-seriesItem-outliers](chart/seriesitem-outliers).
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-outliers></kendo:chart-seriesItem-outliers>
     </kendo:chart-seriesItem>
 
 ### kendo:chart-seriesItem-overlay

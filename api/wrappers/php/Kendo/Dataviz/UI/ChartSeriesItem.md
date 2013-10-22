@@ -299,6 +299,35 @@ The data item field which contains a boolean value indicating whether the sector
     $seriesItem->explodeField('value');
     ?>
 
+### extremes
+
+The chart series extremes configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesItemExtremes|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemExtremes](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemExtremes)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $extremes = new \Kendo\Dataviz\UI\ChartSeriesItemExtremes();
+    $background = 'value';
+    $extremes->background($background);
+    $seriesItem->extremes($extremes);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $background = 'value';
+    $seriesItem->extremes(array('background' => $background));
+    ?>
+
 ### field
 The data item field which contains the series value.
 
@@ -752,6 +781,35 @@ The data field containing the open value.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->openField('value');
+    ?>
+
+### outliers
+
+The chart series outliers configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesItemOutliers|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemOutliers](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemOutliers)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $outliers = new \Kendo\Dataviz\UI\ChartSeriesItemOutliers();
+    $background = 'value';
+    $outliers->background($background);
+    $seriesItem->outliers($outliers);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $background = 'value';
+    $seriesItem->outliers(array('background' => $background));
     ?>
 
 ### overlay

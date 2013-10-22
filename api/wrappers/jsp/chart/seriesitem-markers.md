@@ -54,6 +54,7 @@ The markers shape.The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example
     <kendo:chart-seriesItem-markers type="type">
@@ -119,6 +120,7 @@ The markers shape.The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 
 #### Example
@@ -198,6 +200,7 @@ The markers shape.The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 
 #### Example

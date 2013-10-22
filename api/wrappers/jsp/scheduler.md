@@ -181,12 +181,20 @@ Sets the start of the work day when the  "Show business hours" button is clicked
     <kendo:scheduler workDayStart="workDayStart">
     </kendo:scheduler>
 
-### workWeekDays `java.lang.Object`
+### workWeekEnd `float`
 
-List of working week days.
+The end of working week (index based).
 
 #### Example
-    <kendo:scheduler workWeekDays="workWeekDays">
+    <kendo:scheduler workWeekEnd="workWeekEnd">
+    </kendo:scheduler>
+
+### workWeekStart `float`
+
+The start of working week (index based).
+
+#### Example
+    <kendo:scheduler workWeekStart="workWeekStart">
     </kendo:scheduler>
 
 

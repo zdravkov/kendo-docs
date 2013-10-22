@@ -38,6 +38,7 @@ The icon shape.The supported values are:
 * "circle" - the marker shape is circle.
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
+* "cross" - the marker shape is cross.
 
 #### Example
     <kendo:stockChart-valueAxisItem-notes-icon type="type">
