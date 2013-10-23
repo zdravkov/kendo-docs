@@ -16,6 +16,14 @@ Contains the items of the treeview widget
 
 ## Configuration Attributes
 
+### checked `boolean`
+
+Specifies whether the item is initially checked. True by default.
+
+#### Example
+    <kendo:treeView-item checked="checked">
+    </kendo:treeView-item>
+
 ### enabled `boolean`
 
 Specifies whether the item is initially enabled. True by default.
