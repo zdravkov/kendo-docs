@@ -12,7 +12,7 @@ A PHP class representing the end setting of SchedulerMessagesRecurrenceEditor.
 
 ## Methods
 
-### endCountAfter
+### after
 The text similar to "After " displayed in the scheduler recurrence editor.
 
 #### Returns
@@ -27,28 +27,10 @@ The text similar to "After " displayed in the scheduler recurrence editor.
 #### Example 
     <?php
     $end = new \Kendo\UI\SchedulerMessagesRecurrenceEditorEnd();
-    $end->endCountAfter('value');
+    $end->after('value');
     ?>
 
-### endCountOccurrence
-The text similar to " occurrence(s)" displayed in the scheduler recurrence editor.
-
-#### Returns
-`\Kendo\UI\SchedulerMessagesRecurrenceEditorEnd`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $end = new \Kendo\UI\SchedulerMessagesRecurrenceEditorEnd();
-    $end->endCountOccurrence('value');
-    ?>
-
-### endLabel
+### label
 The text similar to "End:" displayed in the scheduler recurrence editor.
 
 #### Returns
@@ -63,10 +45,10 @@ The text similar to "End:" displayed in the scheduler recurrence editor.
 #### Example 
     <?php
     $end = new \Kendo\UI\SchedulerMessagesRecurrenceEditorEnd();
-    $end->endLabel('value');
+    $end->label('value');
     ?>
 
-### endNever
+### never
 The text similar to "Never" displayed in the scheduler recurrence editor.
 
 #### Returns
@@ -81,10 +63,28 @@ The text similar to "Never" displayed in the scheduler recurrence editor.
 #### Example 
     <?php
     $end = new \Kendo\UI\SchedulerMessagesRecurrenceEditorEnd();
-    $end->endNever('value');
+    $end->never('value');
     ?>
 
-### endUntilOn
+### occurrence
+The text similar to " occurrence(s)" displayed in the scheduler recurrence editor.
+
+#### Returns
+`\Kendo\UI\SchedulerMessagesRecurrenceEditorEnd`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $end = new \Kendo\UI\SchedulerMessagesRecurrenceEditorEnd();
+    $end->occurrence('value');
+    ?>
+
+### on
 The text similar to "On " displayed in the scheduler recurrence editor.
 
 #### Returns
@@ -99,6 +99,6 @@ The text similar to "On " displayed in the scheduler recurrence editor.
 #### Example 
     <?php
     $end = new \Kendo\UI\SchedulerMessagesRecurrenceEditorEnd();
-    $end->endUntilOn('value');
+    $end->on('value');
     ?>
 

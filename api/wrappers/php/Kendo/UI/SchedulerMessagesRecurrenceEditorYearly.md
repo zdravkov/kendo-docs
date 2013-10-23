@@ -12,6 +12,24 @@ A PHP class representing the yearly setting of SchedulerMessagesRecurrenceEditor
 
 ## Methods
 
+### interval
+The text similar to " year(s)" displayed in the scheduler recurrence editor.
+
+#### Returns
+`\Kendo\UI\SchedulerMessagesRecurrenceEditorYearly`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $yearly = new \Kendo\UI\SchedulerMessagesRecurrenceEditorYearly();
+    $yearly->interval('value');
+    ?>
+
 ### of
 The text similar to " of " displayed in the scheduler recurrence editor.
 
@@ -64,23 +82,5 @@ The text similar to "Repeat on: " displayed in the scheduler recurrence editor.
     <?php
     $yearly = new \Kendo\UI\SchedulerMessagesRecurrenceEditorYearly();
     $yearly->repeatOn('value');
-    ?>
-
-### years
-The text similar to " year(s)" displayed in the scheduler recurrence editor.
-
-#### Returns
-`\Kendo\UI\SchedulerMessagesRecurrenceEditorYearly`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $yearly = new \Kendo\UI\SchedulerMessagesRecurrenceEditorYearly();
-    $yearly->years('value');
     ?>
 

@@ -30,7 +30,7 @@ The text similar to "Day " displayed in the scheduler recurrence editor.
     $monthly->day('value');
     ?>
 
-### months
+### interval
 The text similar to " month(s)" displayed in the scheduler recurrence editor.
 
 #### Returns
@@ -45,7 +45,7 @@ The text similar to " month(s)" displayed in the scheduler recurrence editor.
 #### Example 
     <?php
     $monthly = new \Kendo\UI\SchedulerMessagesRecurrenceEditorMonthly();
-    $monthly->months('value');
+    $monthly->interval('value');
     ?>
 
 ### repeatEvery

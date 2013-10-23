@@ -169,3 +169,21 @@ Specifies the text displayed by the item
     $item->text('value');
     ?>
 
+### url
+Specifies the URL that the item links to
+
+#### Returns
+`\Kendo\UI\TabStripItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $item = new \Kendo\UI\TabStripItem();
+    $item->url('value');
+    ?>
+

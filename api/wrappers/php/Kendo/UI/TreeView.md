@@ -558,8 +558,8 @@ Adds one or more TreeViewItem to the TreeView.
     <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
     $item = new \Kendo\UI\TreeViewItem();
-    $enabled = true;
-    $item->enabled($enabled);
+    $checked = true;
+    $item->checked($checked);
     $treeView->addItem($item);
     ?>
 
@@ -567,8 +567,8 @@ Adds one or more TreeViewItem to the TreeView.
 
     <?php
     $treeView = new \Kendo\UI\TreeView('TreeView');
-    $enabled = true;
-    $treeView->addItem(array('enabled' => $enabled));
+    $checked = true;
+    $treeView->addItem(array('checked' => $checked));
     ?>
 
 #### Example - adding more than one TreeViewItem

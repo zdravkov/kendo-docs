@@ -12,7 +12,7 @@ A PHP class representing the daily setting of SchedulerMessagesRecurrenceEditor.
 
 ## Methods
 
-### days
+### interval
 The text similar to " day(s)" displayed in the scheduler recurrence editor.
 
 #### Returns
@@ -27,7 +27,7 @@ The text similar to " day(s)" displayed in the scheduler recurrence editor.
 #### Example 
     <?php
     $daily = new \Kendo\UI\SchedulerMessagesRecurrenceEditorDaily();
-    $daily->days('value');
+    $daily->interval('value');
     ?>
 
 ### repeatEvery

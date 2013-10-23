@@ -12,6 +12,24 @@ A PHP class representing the item setting of TreeViewItems.
 
 ## Methods
 
+### checked
+Specifies whether the item is initially checked. True by default.
+
+#### Returns
+`\Kendo\UI\TreeViewItem`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $item = new \Kendo\UI\TreeViewItem();
+    $item->checked(true);
+    ?>
+
 ### content
 
 Sets the HTML content of the TreeViewItem.

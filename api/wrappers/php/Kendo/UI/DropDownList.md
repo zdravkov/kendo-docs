@@ -135,6 +135,25 @@ Help topic showing how cascading functionality works
     $dropDownList->cascadeFrom('value');
     ?>
 
+### cascadeFromField
+Defines the field to be used to filter the data source. If not defiend the parent's dataValueField option will be used.
+Help topic showing how cascading functionality works
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+    $dropDownList->cascadeFromField('value');
+    ?>
+
 ### change
 Fired when the value of the widget is changed by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [change](/api/web/dropdownlist#events-change) event documentation.
