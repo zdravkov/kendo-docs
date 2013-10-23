@@ -27,6 +27,15 @@ Help topic showing how cascading functionality works
     <kendo:comboBox cascadeFrom="cascadeFrom">
     </kendo:comboBox>
 
+### cascadeFromField `java.lang.String`
+
+Defines the field to be used to filter the data source. If not defiend the parent's dataValueField option will be used.
+Help topic showing how cascading functionality works
+
+#### Example
+    <kendo:comboBox cascadeFromField="cascadeFromField">
+    </kendo:comboBox>
+
 ### dataTextField `java.lang.String`
 
 The field of the data item that provides the text content of the list items. The widget will filter the data source based on this field.
