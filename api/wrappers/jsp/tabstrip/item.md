@@ -64,3 +64,11 @@ Specifies the text displayed by the item
     <kendo:tabStrip-item text="text">
     </kendo:tabStrip-item>
 
+### url `java.lang.String`
+
+Specifies the URL that the item links to
+
+#### Example
+    <kendo:tabStrip-item url="url">
+    </kendo:tabStrip-item>
+

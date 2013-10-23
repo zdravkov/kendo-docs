@@ -72,3 +72,11 @@ Specifies the text displayed by the item
     <kendo:panelBar-item text="text">
     </kendo:panelBar-item>
 
+### url `java.lang.String`
+
+Specifies the URL that the item links to
+
+#### Example
+    <kendo:panelBar-item url="url">
+    </kendo:panelBar-item>
+
