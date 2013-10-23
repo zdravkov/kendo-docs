@@ -24,12 +24,12 @@ The text similar to "Day " displayed in the scheduler recurrence editor.
     <kendo:scheduler-messages-recurrenceEditor-monthly day="day">
     </kendo:scheduler-messages-recurrenceEditor-monthly>
 
-### months `java.lang.String`
+### interval `java.lang.String`
 
 The text similar to " month(s)" displayed in the scheduler recurrence editor.
 
 #### Example
-    <kendo:scheduler-messages-recurrenceEditor-monthly months="months">
+    <kendo:scheduler-messages-recurrenceEditor-monthly interval="interval">
     </kendo:scheduler-messages-recurrenceEditor-monthly>
 
 ### repeatEvery `java.lang.String`

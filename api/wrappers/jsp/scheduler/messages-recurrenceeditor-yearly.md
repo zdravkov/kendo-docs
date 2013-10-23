@@ -16,6 +16,14 @@ The configuration of the scheduler recurrence editor yearly messages. Use this o
 
 ## Configuration Attributes
 
+### interval `java.lang.String`
+
+The text similar to " year(s)" displayed in the scheduler recurrence editor.
+
+#### Example
+    <kendo:scheduler-messages-recurrenceEditor-yearly interval="interval">
+    </kendo:scheduler-messages-recurrenceEditor-yearly>
+
 ### of `java.lang.String`
 
 The text similar to " of " displayed in the scheduler recurrence editor.
@@ -38,13 +46,5 @@ The text similar to "Repeat on: " displayed in the scheduler recurrence editor.
 
 #### Example
     <kendo:scheduler-messages-recurrenceEditor-yearly repeatOn="repeatOn">
-    </kendo:scheduler-messages-recurrenceEditor-yearly>
-
-### years `java.lang.String`
-
-The text similar to " year(s)" displayed in the scheduler recurrence editor.
-
-#### Example
-    <kendo:scheduler-messages-recurrenceEditor-yearly years="years">
     </kendo:scheduler-messages-recurrenceEditor-yearly>
 

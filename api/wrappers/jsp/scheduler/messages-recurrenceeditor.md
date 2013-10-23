@@ -79,6 +79,18 @@ More documentation is available at [kendo:scheduler-messages-recurrenceEditor-of
         <kendo:scheduler-messages-recurrenceEditor-offsetPositions></kendo:scheduler-messages-recurrenceEditor-offsetPositions>
     </kendo:scheduler-messages-recurrenceEditor>
 
+### kendo:scheduler-messages-recurrenceEditor-weekdays
+
+The configuration of the scheduler recurrence editor week days messages. Use these options to customize or localize the scheduler recurrence editor weekdays messages.
+
+More documentation is available at [kendo:scheduler-messages-recurrenceEditor-weekdays](scheduler/messages-recurrenceeditor-weekdays).
+
+#### Example
+
+    <kendo:scheduler-messages-recurrenceEditor>
+        <kendo:scheduler-messages-recurrenceEditor-weekdays></kendo:scheduler-messages-recurrenceEditor-weekdays>
+    </kendo:scheduler-messages-recurrenceEditor>
+
 ### kendo:scheduler-messages-recurrenceEditor-weekly
 
 The configuration of the scheduler recurrence editor weekly messages. Use this option to customize or localize the scheduler recurrence editor weekly messages.

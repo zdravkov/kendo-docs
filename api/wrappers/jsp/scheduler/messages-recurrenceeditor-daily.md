@@ -16,12 +16,12 @@ The configuration of the scheduler recurrence editor daily messages. Use this op
 
 ## Configuration Attributes
 
-### days `java.lang.String`
+### interval `java.lang.String`
 
 The text similar to " day(s)" displayed in the scheduler recurrence editor.
 
 #### Example
-    <kendo:scheduler-messages-recurrenceEditor-daily days="days">
+    <kendo:scheduler-messages-recurrenceEditor-daily interval="interval">
     </kendo:scheduler-messages-recurrenceEditor-daily>
 
 ### repeatEvery `java.lang.String`
