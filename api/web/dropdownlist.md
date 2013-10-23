@@ -122,7 +122,7 @@ Use it to set the Id of the parent dropdownlist widget.
     <input id="parent" />
     <input id="child" />
     <script>
-    $("#parent").kendoComboBox({
+    $("#parent").kendoDropDownList({
         dataTextField: "parentName",
         dataValueField: "parentId",
         dataSource: [
@@ -131,7 +131,7 @@ Use it to set the Id of the parent dropdownlist widget.
         ]
     });
 
-    $("#child").kendoComboBox({
+    $("#child").kendoDropDownList({
         cascadeFrom: "parent",
         dataTextField: "childName",
         dataValueField: "childId",
@@ -140,6 +140,39 @@ Use it to set the Id of the parent dropdownlist widget.
             { childName: "Child2", childId: 2, parentId: 2 },
             { childName: "Child3", childId: 3, parentId: 1 },
             { childName: "Child4", childId: 4, parentId: 2 }
+        ]
+    });
+    </script>
+
+### cascadeFromField `String`
+
+Defines the field to be used to filter the data source. If not defiend the [parent's dataValueField option will be used](/api/web/dropdownlist#configuration-dataValueField).
+[Help topic showing how cascading functionality works](/web/dropdownlist/cascading)
+
+#### Example
+
+    <input id="parent" />
+    <input id="child" />
+    <script>
+    $("#parent").kendoDropDownList({
+        dataTextField: "name",
+        dataValueField: "id",
+        dataSource: [
+            { name: "Parent1", id: 1 },
+            { name: "Parent2", id: 2 }
+        ]
+    });
+
+    $("#child").kendoDropDownList({
+        cascadeFrom: "parent",
+        cascadeFromField: "parentId",
+        dataTextField: "name",
+        dataValueField: "id",
+        dataSource: [
+            { name: "Child1", id: 1, parentId: 1 },
+            { name: "Child2", id: 2, parentId: 2 },
+            { name: "Child3", id: 3, parentId: 1 },
+            { name: "Child4", id: 4, parentId: 2 }
         ]
     });
     </script>

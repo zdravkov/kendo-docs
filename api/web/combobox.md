@@ -144,6 +144,39 @@ Use it to set the Id of the parent ComboBox widget.
     });
     </script>
 
+### cascadeFromField `String`
+
+Defines the field to be used to filter the data source. If not defiend the [parent's dataValueField option will be used](/api/web/combobox#configuration-dataValueField).
+[Help topic showing how cascading functionality works](/web/combobox/cascading)
+
+#### Example
+
+    <input id="parent" />
+    <input id="child" />
+    <script>
+    $("#parent").kendoComboBox({
+        dataTextField: "name",
+        dataValueField: "id",
+        dataSource: [
+            { name: "Parent1", id: 1 },
+            { name: "Parent2", id: 2 }
+        ]
+    });
+
+    $("#child").kendoComboBox({
+        cascadeFrom: "parent",
+        cascadeFromField: "parentId",
+        dataTextField: "name",
+        dataValueField: "id",
+        dataSource: [
+            { name: "Child1", id: 1, parentId: 1 },
+            { name: "Child2", id: 2, parentId: 2 },
+            { name: "Child3", id: 3, parentId: 1 },
+            { name: "Child4", id: 4, parentId: 2 }
+        ]
+    });
+    </script>
+
 ### dataSource `Object|Array|kendo.data.DataSource`
 
 The data source of the widget which is used to display a list of values. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
