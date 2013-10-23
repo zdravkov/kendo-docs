@@ -147,3 +147,9 @@ We need to make sure that Kendo's JavaScript files come after jQuery. For stylin
 Typical practice is to include as much JavaScript at the bottom of the **&lt;body&gt;** element as possible.
 In the Music Store project, we are actually including jQuery in the **&lt;head&gt;**.
 This will be discussed later in the tutorial, but it is because we later use some of the [Kendo UI ASP.NET MVC Helpers](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction#using-kendo-ui-in-aspnet-mvc-4-application) which insert **&lt;script&gt;** tags into the **&lt;body&gt;** of the page, and require that jQuery already be defined.
+
+## Database
+
+The Kendo UI Music Store demo application uses a SQL Server database with sample data for artists, albums, genres, etc. In order to populate the sample database, the application uses Entity Framework Code First migrations to create the database and seed the sample data. The migrations are configured to only run in DEBUG mode. If you run in RELEASE mode, the code will assume that the database has already been created and will not try to create or seed the data.
+
+The connection string configured in the web.config file is set to use LocalDB and will connect to a local database file in the App_Data folder. LocalDB requires a SQL Server 2012 or later instance. To run the Kendo UI Music Store demo, please ensure that your system meets these requirements or simply change the connection string to use a SQL Server instance available on your computer.
