@@ -281,6 +281,43 @@ The data field containing the color applied when the open value is greater than 
     $seriesItem->downColorField('value');
     ?>
 
+### dynamicHeight
+When set to false all segments become with the same height, otherwise the height of each segment is based on its value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->dynamicHeight(true);
+    ?>
+
+### dynamicSlope
+When set to true the ratio of the bases of each segment is calculated based on the ratio of currentDataItem.value/nextDataItem.value
+The last element is always created like a rectangle since there is no following element.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->dynamicSlope(true);
+    ?>
+
 ### explodeField
 The data item field which contains a boolean value indicating whether the sector is exploded.
 
@@ -445,8 +482,8 @@ The chart series label configuration.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
-    $align = 'value';
-    $labels->align($align);
+    $background = 'value';
+    $labels->background($background);
     $seriesItem->labels($labels);
     ?>
 
@@ -454,8 +491,8 @@ The chart series label configuration.
 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
-    $align = 'value';
-    $seriesItem->labels(array('align' => $align));
+    $background = 'value';
+    $seriesItem->labels(array('background' => $background));
     ?>
 
 ### line
@@ -651,6 +688,24 @@ The name of the chart series which is visible in the legend.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->name('value');
+    ?>
+
+### neckRatio
+specifies the ratio top-base/bottom-base of the whole chart. neckRatio set to three means the top base is three times smaller than the bottom base.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->neckRatio(1);
     ?>
 
 ### negativeColor
@@ -857,6 +912,24 @@ The padding around the chart (equal on all sides).
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->padding(1);
+    ?>
+
+### segmentSpacing
+The space in pixels between the different segments of the funnel chart.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->segmentSpacing(1);
     ?>
 
 ### size
