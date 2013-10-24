@@ -8817,14 +8817,21 @@ The chart series label configuration.
     });
     </script>
 
-### series.labels.align `String` *(default: "circle")*
+### series.labels.align
 
-The label alignment when [series.type](#configuration-series.type) is set to "donut" or "pie".
+The label alignment when [series.type](#configuration-series.type) is set to "donut", "funnel" or "pie".
 
-The supported values are:
+The supported values  for "donut" and "pie" are:
 
 * "circle" - the labels are positioned in circle around the chart.
 * "column" - the labels are positioned in columns to the left and right of the chart.
+
+The supported values for "funnel" are:
+
+* "center" - the labels are positioned in the center over the funnel segment.
+* "right" - the labels are positioned on the right side of the chart and do not (if there is enough space) overlap the funnel segment(s).
+* "left" - the labels are positioned on the left side of the chart and do not (if there is enough space) overlap the funnel segment(s).
+
 
 #### Example - set the chart series label alignment
     <div id="chart"></div>
@@ -9272,18 +9279,21 @@ The top padding of the labels.
     });
     </script>
 
-### series.labels.position `String|Function` *(default: "above")*
+### series.labels.position `String|Function`
 
 The position of the labels.
 
 * "above" - the label is positioned at the top of the marker. ** Applicable for series that render points, incl. bubble. **
 * "below" - the label is positioned at the bottom of the marker. ** Applicable for series that render points, incl. bubble. **
-* "center" - the label is positioned at the point center. ** Applicable for bar, column, donut, pie and radarColumn series. **
+* "center" - the label is positioned at the point center. ** Applicable for bar, column, donut, pie, funnel and radarColumn series. **
 * "insideBase" - the label is positioned inside, near the base of the bar. ** Applicable for bar and column series. **
 * "insideEnd" - the label is positioned inside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. **
 * "left" - the label is positioned to the left of the marker. ** Applicable for series that render points, incl. bubble. **
-* "outsideEnd" - the label is positioned outside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. Not applicable for stacked series. **
+* "outsideEnd" - the label is positioned outside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. Not applicable for stacke
 * "right" - the label is positioned to the right of the marker. ** Applicable for series that render points, incl. bubble. **
+* "top" - the label is positioned at the top of the segment. ** Applicable for funnel series **
+* "bottom" - the label is positioned at the bottom of the segment. ** Applicable for funnel series **
+
 
 #### Example - set the chart series label position
 
@@ -11283,6 +11293,7 @@ The supported values are:
 * candlestick
 * column
 * donut
+* funnel
 * line
 * ohlc
 * pie
@@ -12789,9 +12800,9 @@ The [template](/api/framework/kendo#methods-template) which renders the chart se
 
 The fields which can be used in the template are:
 
-*   category - the category name. Available for area, bar, column, bubble, donut, line and pie series.
+*   category - the category name. Available for area, bar, column, bubble, donut, funnel, line and pie series.
 *   dataItem - the original data item used to construct the point. Will be null if binding to array.
-*   percentage - the point value represented as a percentage value. Available for donut and pie series.
+*   percentage - the point value represented as a percentage value. Available for donut, funnel and pie series.
 *   series - the data series
 *   value - the point value. Can be a number or object containing each bound field.
 
@@ -13186,7 +13197,7 @@ The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-forma
 
 Format placeholders:
 
-* Area, bar, column, line and pie
+* Area, bar, column, funnel, line and pie
     *   {0} - value
 * Bubble
     *   {0} - x value
@@ -14715,7 +14726,7 @@ The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-forma
 
 Format placeholders:
 
-* Area, bar, column, line and pie
+* Area, bar, column, funnel, line and pie
     *   {0} - value
 * Bubble
     *   {0} - x value
