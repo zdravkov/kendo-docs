@@ -12,6 +12,44 @@ A PHP class representing the editable setting of Grid.
 
 ## Methods
 
+### cancelDelete
+If confirmation is enabled the grid will display a confirmation dialog when the user clicks the "destroy" command button.
+If the grid is in mobile mode this text will be used for the cancel button.
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $editable = new \Kendo\UI\GridEditable();
+    $editable->cancelDelete('value');
+    ?>
+
+### confirmDelete
+If confirmation is enabled the grid will display a confirmation dialog when the user clicks the "destroy" command button.
+If the grid is in mobile mode this text will be used for the confirm button.
+
+#### Returns
+`\Kendo\UI\GridEditable`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $editable = new \Kendo\UI\GridEditable();
+    $editable->confirmDelete('value');
+    ?>
+
 ### confirmation
 If set to true the grid will display a confirmation dialog when the user clicks the "destroy" command button.Can be set to a string which will be used as the confirmation text.
 

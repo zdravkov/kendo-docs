@@ -703,8 +703,8 @@ If set to true the user would be able to edit the data to which the grid is boun
     <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $editable = new \Kendo\UI\GridEditable();
-    $confirmation = true;
-    $editable->confirmation($confirmation);
+    $cancelDelete = 'value';
+    $editable->cancelDelete($cancelDelete);
     $grid->editable($editable);
     ?>
 
@@ -712,8 +712,8 @@ If set to true the user would be able to edit the data to which the grid is boun
 
     <?php
     $grid = new \Kendo\UI\Grid('Grid');
-    $confirmation = true;
-    $grid->editable(array('confirmation' => $confirmation));
+    $cancelDelete = 'value';
+    $grid->editable(array('cancelDelete' => $cancelDelete));
     ?>
 
 ### filterMenuInit
@@ -850,6 +850,31 @@ The height of the grid. Numeric values are treated as pixels.
     <?php
     $grid = new \Kendo\UI\Grid('Grid');
     $grid->height('value');
+    ?>
+
+### mobile
+If set to true and the grid is viewed on mobile browser it will use adaptive rendering.Can be set to a string phone or tablet which will force the widget to use adaptive rendering regardless of browser type.
+The grid uses same layout for both phone and tablet.
+
+#### Returns
+`\Kendo\UI\Grid`
+
+#### Parameters
+
+##### $value `boolean|string`
+
+
+
+#### Example  - using boolean
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->mobile(true);
+    ?>
+
+#### Example  - using string
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $grid->mobile('value');
     ?>
 
 ### navigatable

@@ -30,6 +30,24 @@ The text message displayed for the column selection menu item.
     $messages->columns('value');
     ?>
 
+### done
+The text message displayed in the menu header button (available in mobile mode only).
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridColumnMenuMessages();
+    $messages->done('value');
+    ?>
+
 ### filter
 The text message displayed for the filter menu item.
 
@@ -46,6 +64,24 @@ The text message displayed for the filter menu item.
     <?php
     $messages = new \Kendo\UI\GridColumnMenuMessages();
     $messages->filter('value');
+    ?>
+
+### settings
+The text message displayed in the menu header (available in mobile mode only).
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridColumnMenuMessages();
+    $messages->settings('value');
     ?>
 
 ### sortAscending

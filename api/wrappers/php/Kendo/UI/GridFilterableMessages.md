@@ -30,6 +30,24 @@ The text of the option which represents the "and" logical operation.
     $messages->_and('value');
     ?>
 
+### cancel
+The text of the cancel button in the filter menu header (available in mobile mode only).
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridFilterableMessages();
+    $messages->cancel('value');
+    ?>
+
 ### clear
 The text of the button which clears the filter.
 
@@ -120,6 +138,24 @@ The text of the radio button for true values. Displayed when filtering Boolean f
     $messages->isTrue('value');
     ?>
 
+### operator
+The text of the operator item in filter menu (available in mobile mode only).
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridFilterableMessages();
+    $messages->operator('value');
+    ?>
+
 ### _or
 The text of the option which represents the "or" logical operation.
 
@@ -154,5 +190,23 @@ The text of the dropdownlist displayed in the filter menu for columns whose valu
     <?php
     $messages = new \Kendo\UI\GridFilterableMessages();
     $messages->selectValue('value');
+    ?>
+
+### value
+The text of the value item in filter menu (available in mobile mode only).
+
+#### Returns
+`\Kendo\UI\GridFilterableMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridFilterableMessages();
+    $messages->value('value');
     ?>
 
