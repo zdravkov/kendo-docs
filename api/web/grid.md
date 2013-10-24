@@ -83,7 +83,7 @@ Defines the width of the column resize handle in pixels. Apply a larger value fo
 		columnResizeHandleWidth: 6
     });
     </script>
-	
+
 ### columns `Array`
 
 The configuration of the grid columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
@@ -1088,6 +1088,60 @@ The text message displayed for the menu item which performs descending sort.
     });
     </script>
 
+### columnMenu.messages.settings `String` *(default: "Column Settings")*
+
+The text message displayed in the menu header (available in mobile mode only).
+
+#### Example - mobile column menu header
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      columnMenu: {
+        messages: {
+          settings: "Column Options",
+        }
+      },
+      mobile: "phone",
+      sortable: true,
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    </script>
+
+### columnMenu.messages.done `String` *(default: "Done")*
+
+The text message displayed in the menu header button (available in mobile mode only).
+
+#### Example - mobile column menu header button text
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      columnMenu: {
+        messages: {
+          done: "Ok",
+        }
+      },
+      mobile: "phone",
+      sortable: true,
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    </script>
+
 ### dataSource `Object|Array|kendo.data.DataSource`
 
 The data source of the widget which is used render table rows. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
@@ -1289,6 +1343,58 @@ Can be set to a string which will be used as the confirmation text.
     });
     </script>
 
+### editable.cancelDelete `String` *(default: "Cancel")*
+
+If confirmation is enabled the grid will display a confirmation dialog when the user clicks the "destroy" command button.
+If the grid is in mobile mode this text will be used for the cancel button.
+
+#### Example - change the cancel delete button text
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+       columns: [
+         { field: "name" },
+         { field: "age" },
+         { command: "destroy" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ],
+       mobile: "phone",
+       editable: {
+         confirmation: true,
+         cancelDelete: "No"
+       }
+    });
+    </script>
+
+### editable.confirmDelete `String` *(default: "Delete")*
+
+If confirmation is enabled the grid will display a confirmation dialog when the user clicks the "destroy" command button.
+If the grid is in mobile mode this text will be used for the confirm button.
+
+#### Example - change the cofirm delete button text
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+       columns: [
+         { field: "name" },
+         { field: "age" },
+         { command: "destroy" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ],
+       mobile: "phone",
+       editable: {
+         confirmation: true,
+         confirmDelete: "Yes"
+       }
+    });
+    </script>
+
 ### editable.createAt `String` *(default: "top")*
 
 The position at which new data items are inserted in the grid. Must be set to either "top" or "bottom". By default new data items are inserted at the top.
@@ -1482,11 +1588,11 @@ For more information, please refer to the [Window configuration API](/api/web/wi
 
     <div id="grid"></div>
     <script>
-	
+
 	function myOpenEventHandler(e) {
 		// ...
 	}
-	
+
     $("#grid").kendoGrid({
       editable: {
         mode: "popup",
@@ -1785,6 +1891,96 @@ The text of the dropdownlist displayed in the filter menu for columns whose [val
       filterable: {
         messages: {
           selectValue: "Select category"
+        }
+      }
+    });
+    </script>
+
+### filterable.messages.cancel `String` *(default: "Cancel")*
+
+The text of the cancel button in the filter menu header (available in mobile mode only).
+
+#### Example - set the cancel button text
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "productName" },
+        { field: "category", values: [
+            { text: "Beverages", value: 1 },
+            { text: "Food", value: 2 },
+          ]
+        }
+      ],
+      dataSource: [
+        { productName: "Tea", category: 1 },
+        { productName: "Ham", category: 2 }
+      ],
+      mobile: "phone",
+      filterable: {
+        messages: {
+          cancel: "Reject"
+        }
+      }
+    });
+    </script>
+
+### filterable.messages.operator `String` *(default: "Operator")*
+
+The text of the operator item in filter menu (available in mobile mode only).
+
+#### Example - set the text of operator item
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "productName" },
+        { field: "category", values: [
+            { text: "Beverages", value: 1 },
+            { text: "Food", value: 2 },
+          ]
+        }
+      ],
+      dataSource: [
+        { productName: "Tea", category: 1 },
+        { productName: "Ham", category: 2 }
+      ],
+      mobile: "phone",
+      filterable: {
+        messages: {
+          operator: "Choose operator"
+        }
+      }
+    });
+    </script>
+
+### filterable.messages.value `String` *(default: "Value")*
+
+The text of the value item in filter menu (available in mobile mode only).
+
+#### Example - set the text of value item
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "productName" },
+        { field: "category", values: [
+            { text: "Beverages", value: 1 },
+            { text: "Food", value: 2 },
+          ]
+        }
+      ],
+      dataSource: [
+        { productName: "Tea", category: 1 },
+        { productName: "Ham", category: 2 }
+      ],
+      mobile: "phone",
+      filterable: {
+        messages: {
+          value: "Choose value"
         }
       }
     });
@@ -3627,6 +3823,51 @@ The text displayed by the command button. If not set the [name](#configuration-t
     });
     </script>
 
+### mobile `Boolean|String` *(default: false)*
+
+If set to `true` and the grid is viewed on mobile browser it will use adaptive rendering.
+
+Can be set to a string `phone` or `tablet` which will force the widget to use adaptive rendering regardless of browser type.
+The grid uses same layout for both `phone` and `tablet`.
+
+#### Example - enable adaptive rendering auto detect
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+       columns: [
+         { field: "name" },
+         { field: "age" },
+         { command: "destroy" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ],
+       filterable: true,
+       columnMenu: true,
+       mobile: true
+    });
+    </script>
+
+#### Example - force adaptive rendering
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+       columns: [
+         { field: "name" },
+         { field: "age" },
+         { command: "destroy" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ],
+       filterable: true,
+       columnMenu: true,
+       mobile: "phone"
+    });
+    </script>
+
 ## Fields
 
 ### columns `Array`
@@ -4033,7 +4274,7 @@ DOM element or jQuery object which represents the navigatable cell.
     var lastCell = grid.tbody.find("tr:last td:last");
     //select the cell for navigation
     grid.current(lastCell);
-    //optional: focus the grid table 
+    //optional: focus the grid table
     grid.table.focus();
     </script>
 
