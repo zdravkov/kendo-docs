@@ -106,6 +106,23 @@ The data field containing the color applied when the open value is greater than 
     <kendo:chart-seriesItem downColorField="downColorField">
     </kendo:chart-seriesItem>
 
+### dynamicHeight `boolean`
+
+When set to false all segments become with the same height, otherwise the height of each segment is based on its value.
+
+#### Example
+    <kendo:chart-seriesItem dynamicHeight="dynamicHeight">
+    </kendo:chart-seriesItem>
+
+### dynamicSlope `boolean`
+
+When set to true the ratio of the bases of each segment is calculated based on the ratio of currentDataItem.value/nextDataItem.value
+The last element is always created like a rectangle since there is no following element.
+
+#### Example
+    <kendo:chart-seriesItem dynamicSlope="dynamicSlope">
+    </kendo:chart-seriesItem>
+
 ### explodeField `java.lang.String`
 
 The data item field which contains a boolean value indicating whether the sector is exploded.
@@ -202,6 +219,14 @@ The name of the chart series which is visible in the legend.
     <kendo:chart-seriesItem name="name">
     </kendo:chart-seriesItem>
 
+### neckRatio `float`
+
+specifies the ratio top-base/bottom-base of the whole chart. neckRatio set to three means the top base is three times smaller than the bottom base.
+
+#### Example
+    <kendo:chart-seriesItem neckRatio="neckRatio">
+    </kendo:chart-seriesItem>
+
 ### negativeColor `java.lang.String`
 
 The color to use for bar or column series with negative values. Accepts a valid CSS color string, including hex and rgb.
@@ -240,6 +265,14 @@ The padding around the chart (equal on all sides).
 
 #### Example
     <kendo:chart-seriesItem padding="padding">
+    </kendo:chart-seriesItem>
+
+### segmentSpacing `float`
+
+The space in pixels between the different segments of the funnel chart.
+
+#### Example
+    <kendo:chart-seriesItem segmentSpacing="segmentSpacing">
     </kendo:chart-seriesItem>
 
 ### size `float`
