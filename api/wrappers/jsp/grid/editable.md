@@ -16,6 +16,24 @@ If set to true the user would be able to edit the data to which the grid is boun
 
 ## Configuration Attributes
 
+### cancelDelete `java.lang.String`
+
+If confirmation is enabled the grid will display a confirmation dialog when the user clicks the "destroy" command button.
+If the grid is in mobile mode this text will be used for the cancel button.
+
+#### Example
+    <kendo:grid-editable cancelDelete="cancelDelete">
+    </kendo:grid-editable>
+
+### confirmDelete `java.lang.String`
+
+If confirmation is enabled the grid will display a confirmation dialog when the user clicks the "destroy" command button.
+If the grid is in mobile mode this text will be used for the confirm button.
+
+#### Example
+    <kendo:grid-editable confirmDelete="confirmDelete">
+    </kendo:grid-editable>
+
 ### confirmation `java.lang.Object`
 
 If set to true the grid will display a confirmation dialog when the user clicks the "destroy" command button.Can be set to a string which will be used as the confirmation text.

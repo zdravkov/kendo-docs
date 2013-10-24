@@ -24,12 +24,28 @@ The text message displayed for the column selection menu item.
     <kendo:grid-columnMenu-messages columns="columns">
     </kendo:grid-columnMenu-messages>
 
+### done `java.lang.String`
+
+The text message displayed in the menu header button (available in mobile mode only).
+
+#### Example
+    <kendo:grid-columnMenu-messages done="done">
+    </kendo:grid-columnMenu-messages>
+
 ### filter `java.lang.String`
 
 The text message displayed for the filter menu item.
 
 #### Example
     <kendo:grid-columnMenu-messages filter="filter">
+    </kendo:grid-columnMenu-messages>
+
+### settings `java.lang.String`
+
+The text message displayed in the menu header (available in mobile mode only).
+
+#### Example
+    <kendo:grid-columnMenu-messages settings="settings">
     </kendo:grid-columnMenu-messages>
 
 ### sortAscending `java.lang.String`

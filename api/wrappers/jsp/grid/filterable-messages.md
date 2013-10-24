@@ -24,6 +24,14 @@ The text of the option which represents the "and" logical operation.
     <kendo:grid-filterable-messages and="and">
     </kendo:grid-filterable-messages>
 
+### cancel `java.lang.String`
+
+The text of the cancel button in the filter menu header (available in mobile mode only).
+
+#### Example
+    <kendo:grid-filterable-messages cancel="cancel">
+    </kendo:grid-filterable-messages>
+
 ### clear `java.lang.String`
 
 The text of the button which clears the filter.
@@ -64,6 +72,14 @@ The text of the radio button for true values. Displayed when filtering Boolean f
     <kendo:grid-filterable-messages isTrue="isTrue">
     </kendo:grid-filterable-messages>
 
+### operator `java.lang.String`
+
+The text of the operator item in filter menu (available in mobile mode only).
+
+#### Example
+    <kendo:grid-filterable-messages operator="operator">
+    </kendo:grid-filterable-messages>
+
 ### or `java.lang.String`
 
 The text of the option which represents the "or" logical operation.
@@ -78,5 +94,13 @@ The text of the dropdownlist displayed in the filter menu for columns whose valu
 
 #### Example
     <kendo:grid-filterable-messages selectValue="selectValue">
+    </kendo:grid-filterable-messages>
+
+### value `java.lang.String`
+
+The text of the value item in filter menu (available in mobile mode only).
+
+#### Example
+    <kendo:grid-filterable-messages value="value">
     </kendo:grid-filterable-messages>
 

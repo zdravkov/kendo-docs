@@ -84,6 +84,15 @@ The height of the grid. Numeric values are treated as pixels.
     <kendo:grid height="height">
     </kendo:grid>
 
+### mobile `java.lang.Object`
+
+If set to true and the grid is viewed on mobile browser it will use adaptive rendering.Can be set to a string phone or tablet which will force the widget to use adaptive rendering regardless of browser type.
+The grid uses same layout for both phone and tablet.
+
+#### Example
+    <kendo:grid mobile="mobile">
+    </kendo:grid>
+
 ### navigatable `boolean`
 
 If set to true the use could navigate the widget using the keyboard navigation. By default keyboard navigation is disabled.
