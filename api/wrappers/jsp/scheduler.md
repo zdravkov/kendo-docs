@@ -123,6 +123,14 @@ The template used to render the minor ticks.By default the scheduler renders a "
     <kendo:scheduler minorTimeHeaderTemplate="minorTimeHeaderTemplate">
     </kendo:scheduler>
 
+### mobile `java.lang.Object`
+
+If set to true and the scheduler is viewed on mobile browser it will use adaptive rendering.Can be set to a string phone or tablet which will force the widget to use adaptive rendering regardless of browser type.
+
+#### Example
+    <kendo:scheduler mobile="mobile">
+    </kendo:scheduler>
+
 ### selectable `boolean`
 
 If set to true the user would be able to select scheduler cells and events. By default selection is disabled.
