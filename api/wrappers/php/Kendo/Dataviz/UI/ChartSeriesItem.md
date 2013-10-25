@@ -318,6 +318,71 @@ The last element is always created like a rectangle since there is no following 
     $seriesItem->dynamicSlope(true);
     ?>
 
+### errorBars
+
+The error bars of the chart series.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesItemErrorBars|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemErrorBars](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemErrorBars)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $errorBars = new \Kendo\Dataviz\UI\ChartSeriesItemErrorBars();
+    $color = 'value';
+    $errorBars->color($color);
+    $seriesItem->errorBars($errorBars);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $color = 'value';
+    $seriesItem->errorBars(array('color' => $color));
+    ?>
+
+### errorHighField
+The data item field which contains the series.errorBars high value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->errorHighField('value');
+    ?>
+
+### errorLowField
+The data item field which contains the series.errorBars low value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->errorLowField('value');
+    ?>
+
 ### explodeField
 The data item field which contains a boolean value indicating whether the sector is exploded.
 
@@ -1213,6 +1278,42 @@ The name of the X axis to use.For polar series the xAxis range is expressed in d
     $seriesItem->xAxis('value');
     ?>
 
+### xErrorHighField
+The data item field which contains the series.errorBars xAxis high value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->xErrorHighField('value');
+    ?>
+
+### xErrorLowField
+The data item field which contains the series.errorBars xAxis low value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->xErrorLowField('value');
+    ?>
+
 ### xField
 The data item field containing the X value.
 
@@ -1247,6 +1348,42 @@ The name of the Y axis to use.** Available for bubble, scatter, scatterLine and 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->yAxis('value');
+    ?>
+
+### yErrorHighField
+The data item field which contains the series.errorBars yAxis high value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->yErrorHighField('value');
+    ?>
+
+### yErrorLowField
+The data item field which contains the series.errorBars yAxis low value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->yErrorLowField('value');
     ?>
 
 ### yField

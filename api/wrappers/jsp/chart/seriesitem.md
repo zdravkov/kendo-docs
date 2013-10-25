@@ -123,6 +123,22 @@ The last element is always created like a rectangle since there is no following 
     <kendo:chart-seriesItem dynamicSlope="dynamicSlope">
     </kendo:chart-seriesItem>
 
+### errorHighField `java.lang.String`
+
+The data item field which contains the series.errorBars high value.
+
+#### Example
+    <kendo:chart-seriesItem errorHighField="errorHighField">
+    </kendo:chart-seriesItem>
+
+### errorLowField `java.lang.String`
+
+The data item field which contains the series.errorBars low value.
+
+#### Example
+    <kendo:chart-seriesItem errorLowField="errorLowField">
+    </kendo:chart-seriesItem>
+
 ### explodeField `java.lang.String`
 
 The data item field which contains a boolean value indicating whether the sector is exploded.
@@ -372,6 +388,22 @@ The name of the X axis to use.For polar series the xAxis range is expressed in d
     <kendo:chart-seriesItem xAxis="xAxis">
     </kendo:chart-seriesItem>
 
+### xErrorHighField `java.lang.String`
+
+The data item field which contains the series.errorBars xAxis high value.
+
+#### Example
+    <kendo:chart-seriesItem xErrorHighField="xErrorHighField">
+    </kendo:chart-seriesItem>
+
+### xErrorLowField `java.lang.String`
+
+The data item field which contains the series.errorBars xAxis low value.
+
+#### Example
+    <kendo:chart-seriesItem xErrorLowField="xErrorLowField">
+    </kendo:chart-seriesItem>
+
 ### xField `java.lang.String`
 
 The data item field containing the X value.
@@ -386,6 +418,22 @@ The name of the Y axis to use.** Available for bubble, scatter, scatterLine and 
 
 #### Example
     <kendo:chart-seriesItem yAxis="yAxis">
+    </kendo:chart-seriesItem>
+
+### yErrorHighField `java.lang.String`
+
+The data item field which contains the series.errorBars yAxis high value.
+
+#### Example
+    <kendo:chart-seriesItem yErrorHighField="yErrorHighField">
+    </kendo:chart-seriesItem>
+
+### yErrorLowField `java.lang.String`
+
+The data item field which contains the series.errorBars yAxis low value.
+
+#### Example
+    <kendo:chart-seriesItem yErrorLowField="yErrorLowField">
     </kendo:chart-seriesItem>
 
 ### yField `java.lang.String`
@@ -421,6 +469,18 @@ More documentation is available at [kendo:chart-seriesItem-connectors](chart/ser
 
     <kendo:chart-seriesItem>
         <kendo:chart-seriesItem-connectors></kendo:chart-seriesItem-connectors>
+    </kendo:chart-seriesItem>
+
+### kendo:chart-seriesItem-errorBars
+
+The error bars of the chart series.
+
+More documentation is available at [kendo:chart-seriesItem-errorBars](chart/seriesitem-errorbars).
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-errorBars></kendo:chart-seriesItem-errorBars>
     </kendo:chart-seriesItem>
 
 ### kendo:chart-seriesItem-extremes
