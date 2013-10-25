@@ -380,6 +380,30 @@ The supported filter values are startswith, endswith and contains.
     $comboBox->filter('value');
     ?>
 
+### headerTemplate
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Returns
+`\Kendo\UI\ComboBox`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $comboBox = new \Kendo\UI\ComboBox('ComboBox');
+    $comboBox->headerTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $comboBox = new \Kendo\UI\ComboBox('ComboBox');
+    $comboBox->headerTemplate(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### height
 The height of the suggestion popup in pixels. The default value is 200 pixels.
 

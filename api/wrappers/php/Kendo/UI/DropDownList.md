@@ -361,6 +361,30 @@ If set to false the widget will be disabled and will not allow user input. The w
     $dropDownList->enable(true);
     ?>
 
+### headerTemplate
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+    $dropDownList->headerTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+    $dropDownList->headerTemplate(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### height
 The height of the suggestion popup in pixels. The default value is 200 pixels.
 

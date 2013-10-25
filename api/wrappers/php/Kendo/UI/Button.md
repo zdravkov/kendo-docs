@@ -87,24 +87,6 @@ Sets the HTML content of the Button.
     ?>
 
 
-### content
-
-Sets the HTML content of the Button.
-
-#### Returns
-
-`Button`
-
-#### $value `string`
-
-#### Example
-
-    <?php
-    $button = new \Kendo\UI\Button('Button');
-    $button->content('<strong>Content</strong>');
-    ?>
-
-
 ### enable
 Indicates whether the Button should be enabled or disabled. By default, it is enabled, unless a disabled="disabled" attribute is detected.
 

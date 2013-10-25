@@ -306,6 +306,30 @@ The supported filter values are startswith, endswith and contains.
     $multiSelect->filter('value');
     ?>
 
+### headerTemplate
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Returns
+`\Kendo\UI\MultiSelect`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $multiSelect = new \Kendo\UI\MultiSelect('MultiSelect');
+    $multiSelect->headerTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $multiSelect = new \Kendo\UI\MultiSelect('MultiSelect');
+    $multiSelect->headerTemplate(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### height
 The height of the suggestion popup in pixels. The default value is 200 pixels.
 

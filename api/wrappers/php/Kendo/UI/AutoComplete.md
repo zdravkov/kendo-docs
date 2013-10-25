@@ -270,6 +270,30 @@ all data items which begin with the current widget value are displayed in the su
     $autoComplete->filter('value');
     ?>
 
+### headerTemplate
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Returns
+`\Kendo\UI\AutoComplete`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
+    $autoComplete->headerTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $autoComplete = new \Kendo\UI\AutoComplete('AutoComplete');
+    $autoComplete->headerTemplate(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### height
 The height of the suggestion popup in pixels. The default value is 200 pixels.
 
