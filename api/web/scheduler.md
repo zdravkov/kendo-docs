@@ -2675,6 +2675,46 @@ The fields which can be used in the template are:
     });
     </script>
 
+### mobile `Boolean|String` *(default: false)*
+
+If set to `true` and the scheduler is viewed on mobile browser it will use adaptive rendering.
+
+Can be set to a string `phone` or `tablet` which will force the widget to use adaptive rendering regardless of browser type.
+
+#### Example - enable adaptive rendering auto detect
+    <div id="scheduler"></div>
+    <script>
+        $("#scheduler").kendoScheduler({
+          date: new Date("2013/6/6"),
+          mobile: true,
+          dataSource: [
+            {
+              id: 1,
+              start: new Date("2013/6/6 08:00 AM"),
+              end: new Date("2013/6/6 09:00 AM"),
+              title: "Interview"
+            }
+          ]
+        });
+    </script>
+
+#### Example - force adaptive rendering
+    <div id="scheduler"></div>
+    <script>
+        $("#scheduler").kendoScheduler({
+          date: new Date("2013/6/6"),
+          mobile: "phone",
+          dataSource: [
+            {
+              id: 1,
+              start: new Date("2013/6/6 08:00 AM"),
+              end: new Date("2013/6/6 09:00 AM"),
+              title: "Interview"
+            }
+          ]
+        });
+    </script>
+
 ### resources `Array`
 
 The configuration of the scheduler resource(s). A scheduler resource is optional metadata that can be associated
