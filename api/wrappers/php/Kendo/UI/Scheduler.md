@@ -591,6 +591,30 @@ The template used to render the minor ticks.By default the scheduler renders a "
     $scheduler->minorTimeHeaderTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### mobile
+If set to true and the scheduler is viewed on mobile browser it will use adaptive rendering.Can be set to a string phone or tablet which will force the widget to use adaptive rendering regardless of browser type.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `boolean|string`
+
+
+
+#### Example  - using boolean
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->mobile(true);
+    ?>
+
+#### Example  - using string
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->mobile('value');
+    ?>
+
 ### move
 Fired when the user is moving an event.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [move](/api/web/scheduler#events-move) event documentation.
