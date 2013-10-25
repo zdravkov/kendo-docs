@@ -8386,6 +8386,351 @@ When set to `false` all segments become with the same height, otherwise the heig
       ]
     });
     </script>
+    
+### series.errorBars `Object`
+
+The error bars of the chart series.
+
+> The `errorBars` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "scatter", "scatterLine" or "bubble".
+
+#### Example - set the chart series error bars
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: "stderr"
+        }
+      }]
+    });
+    </script>  
+
+### series.errorBars.value `String|Number|Array|Function`     
+
+The error bars value.
+
+> The `value` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line" or "area".
+
+The following value types are supported:
+
+* "stderr" - the [standard error](http://en.wikipedia.org/wiki/Standard_error) of the series values will be used to calculate the point low and high value
+* "stddev(n)" - the [standard deviation](http://en.wikipedia.org/wiki/Standard_deviation) of the series values will be used to calculate the point low and high value. A number can be specified between the parentheses, that will be multiplied by the calculated standard deviation.
+* "percentage(n)" - a percentage of the point value 
+* A number that will be subtracted/added to the point value
+* An array that holds the low and high difference from the point value
+* A function that returns the errorBars point value
+
+#### Example - set the error bars value to a percentage of the point value
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: "percentage(20)"
+        }
+      }]
+    });
+    </script>
+    
+#### Example - set the error bars value to a half of the series standard deviation
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: "stddev(0.5)"
+        }
+      }]
+    });
+    </script>    
+
+### series.errorBars.xValue `String|Number|Array|Function`
+
+The xAxis error bars value. See the [series.errorBars.value option](#configuration-series.errorBars.value) for a list of the supported value types.
+
+> The `xValue` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
+
+#### Example - set the error bars xAxis value
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatter",
+        data:  [[16.4, 5.4], [13.7, 2], [25.4, 3], [19, 2], [10.9, 1], [13.6, 3.2]],
+        errorBars: {
+          xValue: "stderr"
+        }
+      }]
+    });
+    </script>
+    
+### series.errorBars.yValue `String|Number|Array|Function`
+
+The yAxis error bars value. See the [series.errorBars.value option](#configuration-series.errorBars.value) for a list of the supported value types.
+
+> The `yValue` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
+
+#### Example - set the error bars yAxis value
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatter",
+        data:  [[16.4, 5.4], [13.7, 2], [25.4, 3], [19, 2], [10.9, 1], [13.6, 3.2]],
+        errorBars: {
+          yValue: "stderr"
+        }
+      }]
+    });
+    </script>    
+    
+### series.errorBars.endCaps `Boolean` *(default: true)*   
+
+If set to `false`, the error bars caps will not be displayed. By default the caps are visible.
+
+#### Example - hide the error bars caps
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: [0.5, 1],
+          endCaps: false
+        }
+      }]
+    });
+    </script>
+
+### series.errorBars.color `String`
+
+The color of the error bars. Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - set the error bars color to red
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: 2,
+          color: "red"
+        }
+      }]
+    });
+    </script> 
+    
+### series.errorBars.line `Object`
+
+The error bars line options.
+
+#### Example 
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: "stddev",
+          line: {
+            width: 3,
+            dashType: "dash"
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.errorBars.line.width `Number` *(default: 1)*
+
+The width of the line.
+
+#### Example - set the error bars line width 
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: "stddev",
+          line: {
+            width: 5
+          }
+        }
+      }]
+    });
+    </script>
+
+### series.errorBars.line.dashType `String` *(default: "solid")*
+
+The dash type of the error bars line.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - set the error bars line dash type 
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        data: [4.743, 7.295, 7.175, 6.376],
+        errorBars: {
+          value: "stddev",
+          line: {
+            dashType: "dash"
+          }
+        }
+      }]
+    });
+    </script>  
+
+### series.errorLowField `String` *(default: "errorLow")* 
+
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) low value. 
+
+> The `errorLowField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line" or "area". 
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        errorLowField: "low",
+        errorHighField: "high",
+        data: [{value: 4.743, low: 4.5, high: 5}, {value: 7.295, low: 7, high: 8}, {value: 6.376, low: 5, high: 6.5}]
+      }]
+    });
+    </script>
+
+### series.errorHighField `String` *(default: "errorHigh")* 
+
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) high value. 
+
+> The `errorHighField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line" or "area". 
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "column",
+        errorLowField: "low",
+        errorHighField: "high",
+        data: [{value: 4.743, low: 4.5, high: 5}, {value: 7.295, low: 7, high: 8}, {value: 6.376, low: 5, high: 6.5}]
+      }]
+    });
+    </script>
+
+### series.xErrorLowField `String` *(default: "xErrorLow")* 
+
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) xAxis low value. 
+
+> The `xErrorLowField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatter",
+        xErrorLowField: "low",
+        xErrorHighField: "high",
+        data: [{x: 6.4, y: 13.4, low: 5, high: 7}, {x: 1.7, y: 11, low: 1, high: 3}, {x: 5.4, y: 8, low: 3, high: 6}]
+      }]
+    });
+    </script>
+
+### series.xErrorHighField `String` *(default: "xErrorHigh")* 
+
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) xAxis high value. 
+
+> The `xErrorHighField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatter",
+        xErrorLowField: "low",
+        xErrorHighField: "high",
+        data: [{x: 6.4, y: 13.4, low: 5, high: 7}, {x: 1.7, y: 11, low: 1, high: 3}, {x: 5.4, y: 8, low: 3, high: 6}]
+      }]
+    });
+    </script>
+
+### series.yErrorLowField `String` *(default: "yErrorLow")* 
+
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) yAxis low value. 
+
+> The `yErrorLowField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatter",
+        yErrorLowField: "low",
+        yErrorHighField: "high",
+        data: [{x: 6.4, y: 13.4, low: 12, high: 14}, {x: 1.7, y: 11, low: 11, high: 14}, {x: 5.4, y: 8, low: 5, high: 8}]
+      }]
+    });
+    </script>
+
+### series.yErrorHighField `String` *(default: "yErrorHigh")* 
+
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) yAxis high value. 
+
+> The `yErrorHighField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatter",
+        yErrorLowField: "low",
+        yErrorHighField: "high",
+        data: [{x: 6.4, y: 13.4, low: 12, high: 14}, {x: 1.7, y: 11, low: 11, high: 14}, {x: 5.4, y: 8, low: 5, high: 8}]
+      }]
+    });
+    </script>    
 
 ### series.explodeField `String` *(default: "explode")*
 
@@ -9444,10 +9789,13 @@ The supported values are:
 
 * "normal" - The values will be connected with straight line.
 * "step" - The values will be connected with a line with right angle.
+* "smooth" - The values will be connected with a smooth line.
 
 > The default value is "normal".
 
-> The `style` option is supported when [series.type](#configuration-series.type) is set to "area".
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "area", "polarArea" or "radarArea".
+
+> The `step` value is supported only when [series.type](#configuration-series.type) is set to "area".
 
 #### Example - set the chart line width
 
@@ -10351,10 +10699,13 @@ The supported values are:
 
 * "normal" - The values will be connected with straight line.
 * "step" - The values will be connected with a line with right angle.
+* "smooth" - The values will be connected with a smooth line.
 
 > The default value is "normal".
 
-> The `style` option is supported when [series.type](#configuration-series.type) is set to "line".
+> The `style` option is supported when [series.type](#configuration-series.type) is set to "line", "scatterLine", "radarLine" or "polarLine".
+
+> The `step` value is only supported when [series.type](#configuration-series.type) is set to "line".
 
 #### Example - set the style behavior
     <div id="chart"></div>
