@@ -68,6 +68,14 @@ If set to false the widget will be disabled and will not allow user input. The w
     <kendo:dropDownList enable="enable">
     </kendo:dropDownList>
 
+### headerTemplate `java.lang.String`
+
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Example
+    <kendo:dropDownList headerTemplate="headerTemplate">
+    </kendo:dropDownList>
+
 ### height `float`
 
 The height of the suggestion popup in pixels. The default value is 200 pixels.

@@ -43,6 +43,14 @@ all data items which begin with the current widget value are displayed in the su
     <kendo:autoComplete filter="filter">
     </kendo:autoComplete>
 
+### headerTemplate `java.lang.String`
+
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Example
+    <kendo:autoComplete headerTemplate="headerTemplate">
+    </kendo:autoComplete>
+
 ### height `float`
 
 The height of the suggestion popup in pixels. The default value is 200 pixels.

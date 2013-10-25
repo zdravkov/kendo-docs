@@ -59,6 +59,14 @@ The supported filter values are startswith, endswith and contains.
     <kendo:multiSelect filter="filter">
     </kendo:multiSelect>
 
+### headerTemplate `java.lang.String`
+
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Example
+    <kendo:multiSelect headerTemplate="headerTemplate">
+    </kendo:multiSelect>
+
 ### height `float`
 
 The height of the suggestion popup in pixels. The default value is 200 pixels.

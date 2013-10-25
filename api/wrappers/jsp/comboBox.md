@@ -77,6 +77,14 @@ The supported filter values are startswith, endswith and contains.
     <kendo:comboBox filter="filter">
     </kendo:comboBox>
 
+### headerTemplate `java.lang.String`
+
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Example
+    <kendo:comboBox headerTemplate="headerTemplate">
+    </kendo:comboBox>
+
 ### height `float`
 
 The height of the suggestion popup in pixels. The default value is 200 pixels.
