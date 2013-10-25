@@ -379,6 +379,25 @@ The hint displayed by the widget when it is empty. Not set by default.
     $("#multiselect").kendoMultiSelect();
     </script>
 
+### headerTemplate `String|Function`
+
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Example - specify headerTemplate as a string
+
+    <select id="multiselect"></select>
+    <script>
+    $("#multiselect").kendoMultiSelect({
+      dataSource: [
+        { id: 1, name: "Apples" },
+        { id: 2, name: "Oranges" }
+      ],
+      dataTextField: "name",
+      dataValueField: "id",
+      headerTemplate: '<div><h2>Fruits</h2></div>'
+    });
+    </script>
+
 ### itemTemplate `String|Function`
 
 The [template](/api/framework/kendo#methods-template) used to render the items in the popup list.

@@ -372,6 +372,25 @@ The index of the initially selected item. The index is `0` based.
     });
     </script>
 
+### headerTemplate `String|Function`
+
+Specifies a static HTML content, which will be rendered as a header of the popup element.
+
+#### Example - specify headerTemplate as a string
+
+    <input id="dropdownlist" />
+    <script>
+    $("#dropdownlist").kendoDropDownList({
+      dataSource: [
+        { id: 1, name: "Apples" },
+        { id: 2, name: "Oranges" }
+      ],
+      dataTextField: "name",
+      dataValueField: "id",
+      headerTemplate: '<div><h2>Fruits</h2></div>'
+    });
+    </script>
+
 ### template `String|Function`
 
 The [template](/api/framework/kendo#methods-template) used to render the items. By default the widget displays only the text of the data item (configured via `dataTextField`).
