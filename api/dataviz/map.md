@@ -78,14 +78,31 @@ The default fill opacity (0 to 1) for layer shapes.
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-#### layerDefaults.shape.stroke.color `String`
+### layerDefaults.shape.stroke.color `String`
 
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-#### layerDefaults.shape.stroke.opacity `Number`
+### layerDefaults.shape.style.stroke.dashType `Number` *(default: 1)*
+
+The default dash type for layer shapes.
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### layerDefaults.shape.style.stroke.opacity `Number`
 
 The default stroke opacity (0 to 1) for layer shapes.
+
+### layerDefaults.shape.style.stroke.width `Number` *(default: 1)*
+
+The default stroke width for layer shapes.
 
 ### layerDefaults.tile `Object`
 
@@ -155,9 +172,26 @@ Accepts a valid CSS color string or object with detailed configuration.
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-### layers.stroke.opacity `Number`
+### layers.style.stroke.dashType `Number` *(default: 1)*
+
+The default dash type for layer shapes.
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### layers.style.stroke.opacity `Number`
 
 The default stroke opacity (0 to 1) for layer shapes.
+
+### layers.style.stroke.width `Number` *(default: 1)*
+
+The default stroke width for layer shapes.
 
 ### layers.urlTemplate `String`
 
