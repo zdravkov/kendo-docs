@@ -8802,6 +8802,216 @@ The data item field which contains the series note text.
     });
     </script>
 
+### series.lowerField `String` *(default: "lower")*
+
+The data item field which contains the series lower value.
+
+#### Example - set the chart series lower field
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+          median: 3,
+          q3: 4,
+          upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers"
+      }]
+    });
+
+### series.q1Field `String` *(default: "q1")*
+
+The data item field which contains the series q1 value.
+
+#### Example - set the chart series q1 field
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+          median: 3,
+          q3: 4,
+          upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers"
+      }]
+    });
+
+### series.medianField `String` *(default: "median")*
+
+The data item field which contains the series median value.
+
+#### Example - set the chart series median field
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+          median: 3,
+          q3: 4,
+          upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers"
+      }]
+    });
+
+### series.q3Field `String` *(default: "q3")*
+
+The data item field which contains the series q3 value.
+
+#### Example - set the chart series q3 field
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+          median: 3,
+          q3: 4,
+          upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers"
+      }]
+    });
+
+### series.upperField `String` *(default: "upper")*
+
+The data item field which contains the series upper value.
+
+#### Example - set the chart series upper field
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+          median: 3,
+          q3: 4,
+          upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers"
+      }]
+    });
+
+### series.meanField `String` *(default: "mean")*
+
+The data item field which contains the series mean value.
+
+#### Example - set the chart series mean field
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+          median: 3,
+          q3: 4,
+          upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers"
+      }]
+    });
+
+### series.outliresField `String` *(default: "outliers")*
+
+The data item field which contains the series outliers value.
+
+#### Example - set the chart series outliers field
+
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [{
+          lower: 1,
+          q1: 2,
+          median: 3,
+          q3: 4,
+          upper: 5,
+          mean: 3.5,
+          outliers: [0,0,0.5,6,7,11]
+        }]
+      },
+      series: [{
+         type: "boxPlot",
+         lowerField: "lower",
+         q1Field: "q1",
+         medianField: "median",
+         q3Field: "q3",
+         upperField: "upper",
+         meanField: "mean",
+         outliersField: "outliers"
+      }]
+    });
+
 ### series.gap `Number` *(default: 1.5)*
 
 The distance between the category clusters.
@@ -10373,9 +10583,9 @@ The rotation angle of the outliers.
         data: [{
           lower: 1,
           q1: 2,
-		  median: 3,
-		  q3: 4,
-		  upper: 5,
+          median: 3,
+          q3: 4,
+          upper: 5,
           mean: 3.5,
           outliers: [0,0,0.5,6,7,11]
         }]
