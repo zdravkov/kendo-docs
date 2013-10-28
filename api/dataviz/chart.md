@@ -8386,7 +8386,7 @@ When set to `false` all segments become with the same height, otherwise the heig
       ]
     });
     </script>
-    
+
 ### series.errorBars `Object`
 
 The error bars of the chart series.
@@ -8406,9 +8406,9 @@ The error bars of the chart series.
         }
       }]
     });
-    </script>  
+    </script>
 
-### series.errorBars.value `String|Number|Array|Function`     
+### series.errorBars.value `String|Number|Array|Function`
 
 The error bars value.
 
@@ -8418,7 +8418,7 @@ The following value types are supported:
 
 * "stderr" - the [standard error](http://en.wikipedia.org/wiki/Standard_error) of the series values will be used to calculate the point low and high value
 * "stddev(n)" - the [standard deviation](http://en.wikipedia.org/wiki/Standard_deviation) of the series values will be used to calculate the point low and high value. A number can be specified between the parentheses, that will be multiplied by the calculated standard deviation.
-* "percentage(n)" - a percentage of the point value 
+* "percentage(n)" - a percentage of the point value
 * A number that will be subtracted/added to the point value
 * An array that holds the low and high difference from the point value
 * A function that returns the errorBars point value
@@ -8437,7 +8437,7 @@ The following value types are supported:
       }]
     });
     </script>
-    
+
 #### Example - set the error bars value to a half of the series standard deviation
 
     <div id="chart"></div>
@@ -8451,7 +8451,7 @@ The following value types are supported:
         }
       }]
     });
-    </script>    
+    </script>
 
 ### series.errorBars.xValue `String|Number|Array|Function`
 
@@ -8473,7 +8473,7 @@ The xAxis error bars value. See the [series.errorBars.value option](#configurati
       }]
     });
     </script>
-    
+
 ### series.errorBars.yValue `String|Number|Array|Function`
 
 The yAxis error bars value. See the [series.errorBars.value option](#configuration-series.errorBars.value) for a list of the supported value types.
@@ -8493,9 +8493,9 @@ The yAxis error bars value. See the [series.errorBars.value option](#configurati
         }
       }]
     });
-    </script>    
-    
-### series.errorBars.endCaps `Boolean` *(default: true)*   
+    </script>
+
+### series.errorBars.endCaps `Boolean` *(default: true)*
 
 If set to `false`, the error bars caps will not be displayed. By default the caps are visible.
 
@@ -8533,13 +8533,13 @@ The color of the error bars. Accepts a valid CSS color string, including hex and
         }
       }]
     });
-    </script> 
-    
+    </script>
+
 ### series.errorBars.line `Object`
 
 The error bars line options.
 
-#### Example 
+#### Example
 
     <div id="chart"></div>
     <script>
@@ -8562,7 +8562,7 @@ The error bars line options.
 
 The width of the line.
 
-#### Example - set the error bars line width 
+#### Example - set the error bars line width
 
     <div id="chart"></div>
     <script>
@@ -8594,7 +8594,7 @@ The following dash types are supported:
 * "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
 * "solid" - a solid line
 
-#### Example - set the error bars line dash type 
+#### Example - set the error bars line dash type
 
     <div id="chart"></div>
     <script>
@@ -8610,13 +8610,13 @@ The following dash types are supported:
         }
       }]
     });
-    </script>  
+    </script>
 
-### series.errorLowField `String` *(default: "errorLow")* 
+### series.errorLowField `String` *(default: "errorLow")*
 
-The data item field which contains the [series.errorBars](#configuration-series.errorBars) low value. 
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) low value.
 
-> The `errorLowField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line" or "area". 
+> The `errorLowField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line" or "area".
 
 #### Example
 
@@ -8632,11 +8632,11 @@ The data item field which contains the [series.errorBars](#configuration-series.
     });
     </script>
 
-### series.errorHighField `String` *(default: "errorHigh")* 
+### series.errorHighField `String` *(default: "errorHigh")*
 
-The data item field which contains the [series.errorBars](#configuration-series.errorBars) high value. 
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) high value.
 
-> The `errorHighField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line" or "area". 
+> The `errorHighField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line" or "area".
 
 #### Example
 
@@ -8652,9 +8652,9 @@ The data item field which contains the [series.errorBars](#configuration-series.
     });
     </script>
 
-### series.xErrorLowField `String` *(default: "xErrorLow")* 
+### series.xErrorLowField `String` *(default: "xErrorLow")*
 
-The data item field which contains the [series.errorBars](#configuration-series.errorBars) xAxis low value. 
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) xAxis low value.
 
 > The `xErrorLowField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
 
@@ -8672,9 +8672,9 @@ The data item field which contains the [series.errorBars](#configuration-series.
     });
     </script>
 
-### series.xErrorHighField `String` *(default: "xErrorHigh")* 
+### series.xErrorHighField `String` *(default: "xErrorHigh")*
 
-The data item field which contains the [series.errorBars](#configuration-series.errorBars) xAxis high value. 
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) xAxis high value.
 
 > The `xErrorHighField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
 
@@ -8692,9 +8692,9 @@ The data item field which contains the [series.errorBars](#configuration-series.
     });
     </script>
 
-### series.yErrorLowField `String` *(default: "yErrorLow")* 
+### series.yErrorLowField `String` *(default: "yErrorLow")*
 
-The data item field which contains the [series.errorBars](#configuration-series.errorBars) yAxis low value. 
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) yAxis low value.
 
 > The `yErrorLowField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
 
@@ -8712,9 +8712,9 @@ The data item field which contains the [series.errorBars](#configuration-series.
     });
     </script>
 
-### series.yErrorHighField `String` *(default: "yErrorHigh")* 
+### series.yErrorHighField `String` *(default: "yErrorHigh")*
 
-The data item field which contains the [series.errorBars](#configuration-series.errorBars) yAxis high value. 
+The data item field which contains the [series.errorBars](#configuration-series.errorBars) yAxis high value.
 
 > The `yErrorHighField` option is supported when [series.type](#configuration-series.type) is set to "scatter", "scatterLine" or "bubble".
 
@@ -8730,7 +8730,7 @@ The data item field which contains the [series.errorBars](#configuration-series.
         data: [{x: 6.4, y: 13.4, low: 12, high: 14}, {x: 1.7, y: 11, low: 11, high: 14}, {x: 5.4, y: 8, low: 5, high: 8}]
       }]
     });
-    </script>    
+    </script>
 
 ### series.explodeField `String` *(default: "explode")*
 
@@ -8779,7 +8779,7 @@ The data item field which contains the series value.
     });
     </script>
 
-### series.noteTextField `String` *(default: "value")*
+### series.noteTextField `String` *(default: "noteText")*
 
 The data item field which contains the series note text.
 
