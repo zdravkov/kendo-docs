@@ -16,6 +16,14 @@ The chart series label configuration.
 
 ## Configuration Attributes
 
+### align `java.lang.String`
+
+The label alignment when series.type is set to "donut", "funnel" or "pie".The supported values  for "donut" and "pie" are:The supported values for "funnel" are:
+
+#### Example
+    <kendo:chart-seriesItem-labels align="align">
+    </kendo:chart-seriesItem-labels>
+
 ### background `java.lang.String`
 
 The background color of the labels. Accepts a valid CSS color string, including hex and rgb.

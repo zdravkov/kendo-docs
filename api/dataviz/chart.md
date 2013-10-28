@@ -9162,7 +9162,7 @@ The chart series label configuration.
     });
     </script>
 
-### series.labels.align
+### series.labels.align `String`
 
 The label alignment when [series.type](#configuration-series.type) is set to "donut", "funnel" or "pie".
 
