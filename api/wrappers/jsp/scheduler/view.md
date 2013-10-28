@@ -145,6 +145,14 @@ The format used to display the selected date. Uses kendo.format.Contains two pla
     <kendo:scheduler-view selectedDateFormat="selectedDateFormat">
     </kendo:scheduler-view>
 
+### showWorkHours `boolean`
+
+If set to true the view will be initially shown in business hours mode. By default view is displyed in full day mode.
+
+#### Example
+    <kendo:scheduler-view showWorkHours="showWorkHours">
+    </kendo:scheduler-view>
+
 ### slotTemplate `java.lang.String`
 
 The template used to render the time slot cells.The fields which can be used in the template are:

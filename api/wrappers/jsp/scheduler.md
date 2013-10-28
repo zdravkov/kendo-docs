@@ -139,6 +139,14 @@ If set to true the user would be able to select scheduler cells and events. By d
     <kendo:scheduler selectable="selectable">
     </kendo:scheduler>
 
+### showWorkHours `boolean`
+
+If set to true the view will be initially shown in business hours mode. By default view is displyed in full day mode.
+
+#### Example
+    <kendo:scheduler showWorkHours="showWorkHours">
+    </kendo:scheduler>
+
 ### snap `boolean`
 
 If set to true the scheduler will snap events to the nearest slot during dragging (resizing or moving). Set it to false to allow free moving and resizing of events.
