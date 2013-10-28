@@ -4024,6 +4024,31 @@ Contains two placeholders - "{0}" and "{1}" which represent the start and end da
     });
     </script>
 
+### views.showWorkHours `Boolean` *(default: false)*
+
+If set to true the view will be initially shown in business hours mode. By default view is displyed in full day mode.
+
+> The `showWorkHours` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
+
+#### Example - enable selection
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ { type: "day", showWorkHours: true }, "week"]
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+
 ### views.slotTemplate `String|Function`
 
 The [template](/api/framework/kendo#methods-template) used to render the time slot cells.
