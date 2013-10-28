@@ -21,11 +21,11 @@ You can also use a `kendo.dataviz.map.Location` instance.
 
 The configuration of built-in map controls.
 
-#### controls.navigator `Boolean|Object` *(default: true)*
+### controls.navigator `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in navigator control (directional pad).
 
-#### controls.navigator.position `String` *(default: "topLeft")*
+### controls.navigator.position `String` *(default: "topLeft")*
 
 The position of the navigator control. Possible values include:
 
@@ -34,11 +34,11 @@ The position of the navigator control. Possible values include:
 * "bottomRight"
 * "bottomLeft"
 
-#### controls.zoom `Boolean|Object` *(default: true)*
+### controls.zoom `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in zoom control (+/- button).
 
-#### controls.zoom.position `String` *(default: "topLeft")*
+### controls.zoom.position `String` *(default: "topLeft")*
 
 The position of the zoom control. Possible values include:
 
@@ -51,47 +51,47 @@ The position of the zoom control. Possible values include:
 
 The default configuration for map layers by type.
 
-#### layerDefaults.shape `Object`
+### layerDefaults.shape `Object`
 
 The default configuration for shape layers.
 
-##### layerDefaults.shape.copyright `String`
+### layerDefaults.shape.copyright `String`
 
 The copyright message for all shape layers.
 
-##### layerDefaults.shape.fill `String|Object`
+### layerDefaults.shape.fill `String|Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-###### layerDefaults.shape.fill.color `String`
+#### layerDefaults.shape.fill.color `String`
 
 The default fill color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-###### layerDefaults.shape.fill.opacity `Number`
+#### layerDefaults.shape.fill.opacity `Number`
 
 The default fill opacity (0 to 1) for layer shapes.
 
-##### layerDefaults.shape.stroke `String|Object`
+### layerDefaults.shape.stroke `String|Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-###### layerDefaults.shape.stroke.color `String`
+#### layerDefaults.shape.stroke.color `String`
 
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-###### layerDefaults.shape.stroke.opacity `Number`
+#### layerDefaults.shape.stroke.opacity `Number`
 
 The default stroke opacity (0 to 1) for layer shapes.
 
-#### layerDefaults.tile `Object`
+### layerDefaults.tile `Object`
 
 The default configuration for tile layers.
 
-##### layerDefaults.tile.urlTemplate `String`
+### layerDefaults.tile.urlTemplate `String`
 
 The URL template for tile layers. Template variables:
 
@@ -99,7 +99,7 @@ The URL template for tile layers. Template variables:
 * y - Y coordinate of the tile
 * zoom - zoom level
 
-##### layerDefaults.tile.copyright `String`
+### layerDefaults.tile.copyright `String`
 
 The copyright message for all tile layers.
 
@@ -108,58 +108,58 @@ The copyright message for all tile layers.
 The configuration of the map layers.
 The layer type is determined by the value of the type field.
 
-#### layers.autoBind `Boolean` *(default: true)*
+### layers.autoBind `Boolean` *(default: true)*
 
 If set to `false` the layer will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 > Setting `autoBind` to `false` is useful when multiple layers (widgets) are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
 
-#### layers.type `String`
+### layers.type `String`
 
 The layer type. Supported types are:
 
 * "tile" - a generic "slippy map" tile layer
 * "shape" - a vector shape layer, e.g. bound to GeoJSON data
 
-#### layers.dataSource `Object|Array|kendo.data.DataSource`
+### layers.dataSource `Object|Array|kendo.data.DataSource`
 
 The data source of the layer. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
 
-#### layers.copyright `String`
+### layers.copyright `String`
 
 The copyright message for the layer.
 
-#### layers.fill `String|Object`
+### layers.fill `String|Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-##### layers.fill.color `String`
+### layers.fill.color `String`
 
 The default fill color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-##### layers.fill.opacity `Number`
+### layers.fill.opacity `Number`
 
 The default fill opacity (0 to 1) for layer shapes.
 
-#### layers.stroke `String|Object`
+### layers.stroke `String|Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-##### layers.stroke.color `String`
+### layers.stroke.color `String`
 
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-##### layers.stroke.opacity `Number`
+### layers.stroke.opacity `Number`
 
 The default stroke opacity (0 to 1) for layer shapes.
 
-##### layers.urlTemplate `String`
+### layers.urlTemplate `String`
 
 The URL template for tile layers. Template variables:
 
@@ -171,15 +171,15 @@ The URL template for tile layers. Template variables:
 
 The default options for all markers.
 
-#### markerDefaults.color `String`
+### markerDefaults.color `String`
 
 The default marker color. Accepts a valid CSS color string, including hex and rgb.
 
-#### markerDefaults.size `Number`
+### markerDefaults.size `Number`
 
 The default marker size in pixels.
 
-#### markerDefaults.shape `String`
+### markerDefaults.shape `String`
 
 The default marker shape. Supported shapes:
 
@@ -190,20 +190,20 @@ The default marker shape. Supported shapes:
 
 The initial markers to display on the map.
 
-#### markers.color `String`
+### markers.color `String`
 
 The marker color. Accepts a valid CSS color string, including hex and rgb.
 
-#### markers.position `Array`
+### markers.position `Array`
 
 The marker position. Coordinates are listed as `[Latitude, Longitude]`.
 You can also use a `kendo.dataviz.map.Location` instance.
 
-#### markers.size `Number`
+### markers.size `Number`
 
 The marker size in pixels.
 
-#### markers.shape `String`
+### markers.shape `String`
 
 The marker shape. Supported shapes:
 
