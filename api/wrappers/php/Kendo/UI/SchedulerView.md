@@ -397,6 +397,24 @@ The format used to display the selected date. Uses kendo.format.Contains two pla
     $view->selectedDateFormat('value');
     ?>
 
+### showWorkHours
+If set to true the view will be initially shown in business hours mode. By default view is displyed in full day mode.
+
+#### Returns
+`\Kendo\UI\SchedulerView`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $view = new \Kendo\UI\SchedulerView();
+    $view->showWorkHours(true);
+    ?>
+
 ### slotTemplate
 The template used to render the time slot cells.The fields which can be used in the template are:
 

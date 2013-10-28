@@ -995,6 +995,24 @@ If set to true the user would be able to select scheduler cells and events. By d
     $scheduler->selectable(true);
     ?>
 
+### showWorkHours
+If set to true the view will be initially shown in business hours mode. By default view is displyed in full day mode.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->showWorkHours(true);
+    ?>
+
 ### snap
 If set to true the scheduler will snap events to the nearest slot during dragging (resizing or moving). Set it to false to allow free moving and resizing of events.
 
