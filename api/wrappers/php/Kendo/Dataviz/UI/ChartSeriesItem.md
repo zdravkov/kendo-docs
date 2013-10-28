@@ -547,8 +547,8 @@ The chart series label configuration.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
-    $background = 'value';
-    $labels->background($background);
+    $align = 'value';
+    $labels->align($align);
     $seriesItem->labels($labels);
     ?>
 
@@ -556,8 +556,8 @@ The chart series label configuration.
 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
-    $background = 'value';
-    $seriesItem->labels(array('background' => $background));
+    $align = 'value';
+    $seriesItem->labels(array('align' => $align));
     ?>
 
 ### line
@@ -614,6 +614,24 @@ The data field containing the low value.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->lowField('value');
+    ?>
+
+### lowerField
+The data item field which contains the series lower value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->lowerField('value');
     ?>
 
 ### margin
@@ -699,6 +717,42 @@ The maximum size of the chart bubble series marker.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->maxSize(1);
+    ?>
+
+### meanField
+The data item field which contains the series mean value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->meanField('value');
+    ?>
+
+### medianField
+The data item field which contains the series median value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->medianField('value');
     ?>
 
 ### minSize
@@ -932,6 +986,24 @@ The chart series outliers configuration.
     $seriesItem->outliers(array('background' => $background));
     ?>
 
+### outliresField
+The data item field which contains the series outliers value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->outliresField('value');
+    ?>
+
 ### overlay
 
 The chart series overlay options.
@@ -977,6 +1049,42 @@ The padding around the chart (equal on all sides).
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->padding(1);
+    ?>
+
+### q1Field
+The data item field which contains the series q1 value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->q1Field('value');
+    ?>
+
+### q3Field
+The data item field which contains the series q3 value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->q3Field('value');
     ?>
 
 ### segmentSpacing
@@ -1203,6 +1311,24 @@ The type of the series.The supported values are:
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->type('value');
+    ?>
+
+### upperField
+The data item field which contains the series upper value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->upperField('value');
     ?>
 
 ### visibleInLegend

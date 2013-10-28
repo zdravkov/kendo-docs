@@ -195,6 +195,14 @@ The data field containing the low value.
     <kendo:chart-seriesItem lowField="lowField">
     </kendo:chart-seriesItem>
 
+### lowerField `java.lang.String`
+
+The data item field which contains the series lower value.
+
+#### Example
+    <kendo:chart-seriesItem lowerField="lowerField">
+    </kendo:chart-seriesItem>
+
 ### margin `float`
 
 The margin around each donut series (ring). A numeric value will set all margins. Further configuration is available via [kendo:chart-seriesItem-margin](#kendo-chart-seriesItem-margin). 
@@ -209,6 +217,22 @@ The maximum size of the chart bubble series marker.
 
 #### Example
     <kendo:chart-seriesItem maxSize="maxSize">
+    </kendo:chart-seriesItem>
+
+### meanField `java.lang.String`
+
+The data item field which contains the series mean value.
+
+#### Example
+    <kendo:chart-seriesItem meanField="meanField">
+    </kendo:chart-seriesItem>
+
+### medianField `java.lang.String`
+
+The data item field which contains the series median value.
+
+#### Example
+    <kendo:chart-seriesItem medianField="medianField">
     </kendo:chart-seriesItem>
 
 ### minSize `float`
@@ -275,12 +299,36 @@ The data field containing the open value.
     <kendo:chart-seriesItem openField="openField">
     </kendo:chart-seriesItem>
 
+### outliresField `java.lang.String`
+
+The data item field which contains the series outliers value.
+
+#### Example
+    <kendo:chart-seriesItem outliresField="outliresField">
+    </kendo:chart-seriesItem>
+
 ### padding `float`
 
 The padding around the chart (equal on all sides).
 
 #### Example
     <kendo:chart-seriesItem padding="padding">
+    </kendo:chart-seriesItem>
+
+### q1Field `java.lang.String`
+
+The data item field which contains the series q1 value.
+
+#### Example
+    <kendo:chart-seriesItem q1Field="q1Field">
+    </kendo:chart-seriesItem>
+
+### q3Field `java.lang.String`
+
+The data item field which contains the series q3 value.
+
+#### Example
+    <kendo:chart-seriesItem q3Field="q3Field">
     </kendo:chart-seriesItem>
 
 ### segmentSpacing `float`
@@ -353,6 +401,14 @@ The type of the series.The supported values are:
 
 #### Example
     <kendo:chart-seriesItem type="type">
+    </kendo:chart-seriesItem>
+
+### upperField `java.lang.String`
+
+The data item field which contains the series upper value.
+
+#### Example
+    <kendo:chart-seriesItem upperField="upperField">
     </kendo:chart-seriesItem>
 
 ### visibleInLegend `boolean`

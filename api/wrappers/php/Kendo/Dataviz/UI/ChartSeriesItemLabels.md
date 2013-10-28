@@ -12,6 +12,24 @@ A PHP class representing the labels setting of ChartSeriesItem.
 
 ## Methods
 
+### align
+The label alignment when series.type is set to "donut", "funnel" or "pie".The supported values  for "donut" and "pie" are:The supported values for "funnel" are:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $labels->align('value');
+    ?>
+
 ### background
 The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
 
