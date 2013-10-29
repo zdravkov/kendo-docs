@@ -4804,6 +4804,97 @@ The widget instance which fired the event.
     scheduler.bind("cancel", scheduler_cancel);
     </script>
 
+### change
+
+Fired when the user selects a cell or event in the scheduler.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.event `kendo.data.SchedulerEvent`
+
+The event which is no longer in edit mode.
+
+##### e.sender `kendo.ui.Scheduler`
+
+The widget instance which fired the event.
+
+##### e.selection `Object`
+
+The state of the current selection. It contains:
+
+*   **e.selection.start**
+        - Start date and time of the current selection.
+
+*   **e.selection.end**
+        - End date and time of the current selection.
+
+*   **e.selection.isAllDay**
+        - Indicates whether the selected cell/event is 24 hours or more.
+
+*   **e.selection.element**
+        - jQuery object containing the selected element/s.
+
+*   **e.selection.resources**
+        - Resources list where each list item contains information about the resource and its value
+        used to group the view. When a cell or an event, part of grouped view, is selected this property
+        will contains a list of resources which corresponds to the group hierarchy.
+
+#### Example - subscribe to the "change" event during initialization
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ],
+      change: function(e) {
+        var start = e.selection.start;
+        var end = e.selection.end;
+
+        console.log(kendo.format("Selection between {0:g} and {1:g}", start, end));
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "change" event after initialization
+
+    <div id="scheduler"></div>
+    <script>
+    function scheduler_change(e) {
+        var start = e.selection.start;
+        var end = e.selection.end;
+
+        console.log(kendo.format("Selection between {0:g} and {1:g}", start, end));
+    }
+
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [ "day", "month" ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.bind("change", scheduler_change);
+    </script>
+
 ### dataBinding
 
 Fired before the widget binds to its data source.
