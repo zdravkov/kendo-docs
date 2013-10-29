@@ -130,6 +130,42 @@ For additional information check the [cancel](/api/web/scheduler#events-cancel) 
     $scheduler->cancel(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### change
+Fired when the user selects a cell or event in the scheduler.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [change](/api/web/scheduler#events-change) event documentation.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->change('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onChange(e) {
+            // handle the change event.
+        }
+    </script>
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->change('onChange');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### dataBinding
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [dataBinding](/api/web/scheduler#events-dataBinding) event documentation.
