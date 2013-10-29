@@ -80,6 +80,24 @@ Controls whether to bind the widget to the data source on initialization.
     $multiSelect->autoBind(true);
     ?>
 
+### autoClose
+Controls whether to close the widget suggestion list on item selection.
+
+#### Returns
+`\Kendo\UI\MultiSelect`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $multiSelect = new \Kendo\UI\MultiSelect('MultiSelect');
+    $multiSelect->autoClose(true);
+    ?>
+
 ### change
 Fired when the value of the widget is changed by the user.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [change](/api/web/multiselect#events-change) event documentation.
