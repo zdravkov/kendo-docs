@@ -59,33 +59,50 @@ The default configuration for shape layers.
 
 The copyright message for all shape layers.
 
-### layerDefaults.shape.fill `String|Object`
+### layerDefaults.shape.fill `Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-#### layerDefaults.shape.fill.color `String`
+### layerDefaults.shape.fill.color `String`
 
 The default fill color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-#### layerDefaults.shape.fill.opacity `Number`
+### layerDefaults.shape.fill.opacity `Number`
 
 The default fill opacity (0 to 1) for layer shapes.
 
-### layerDefaults.shape.stroke `String|Object`
+### layerDefaults.shape.stroke `Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-#### layerDefaults.shape.stroke.color `String`
+### layerDefaults.shape.stroke.color `String`
 
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-#### layerDefaults.shape.stroke.opacity `Number`
+### layerDefaults.shape.style.stroke.dashType `Number` *(default: 1)*
+
+The default dash type for layer shapes.
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### layerDefaults.shape.style.stroke.opacity `Number`
 
 The default stroke opacity (0 to 1) for layer shapes.
+
+### layerDefaults.shape.style.stroke.width `Number` *(default: 1)*
+
+The default stroke width for layer shapes.
 
 ### layerDefaults.tile `Object`
 
@@ -131,7 +148,7 @@ instance.
 
 The copyright message for the layer.
 
-### layers.fill `String|Object`
+### layers.fill `Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
@@ -145,7 +162,7 @@ Accepts a valid CSS color string, including hex and rgb.
 
 The default fill opacity (0 to 1) for layer shapes.
 
-### layers.stroke `String|Object`
+### layers.stroke `Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
@@ -155,9 +172,26 @@ Accepts a valid CSS color string or object with detailed configuration.
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-### layers.stroke.opacity `Number`
+### layers.style.stroke.dashType `Number` *(default: 1)*
+
+The default dash type for layer shapes.
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### layers.style.stroke.opacity `Number`
 
 The default stroke opacity (0 to 1) for layer shapes.
+
+### layers.style.stroke.width `Number` *(default: 1)*
+
+The default stroke width for layer shapes.
 
 ### layers.urlTemplate `String`
 
@@ -262,19 +296,39 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
 
 Fired when the user clicks on the map.
 
-### markerCreated
+### reset
 
-Fired when a marker is created, but is not rendered yet.
+Fired when the map is reset, e.g. on initial load or during zoom.
 
-### markerHover
+### pan
 
-Fired when a marker is hovered.
+Fired while the map viewport is being moved.
+
+### panEnd
+
+Fires after the map viewport has been moved.
+
+### shapeClick
+
+Fired when a shape is clicked or tapped.
 
 ### shapeCreated
 
 Fired when a shape is created, but is not rendered yet.
 
-### shapeHover
+### shapeMouseEnter
 
-Fired when a shape is hovered.
+Fired when the mouse enters a shape.
+
+### shapeMouseLeave
+
+Fired when the mouse leaves a shape.
+
+### zoom
+
+Fired when the map zoom level is about to change.
+
+### zoomEnd
+
+Fired when the map zoom level has changed.
 
