@@ -18,6 +18,14 @@ Controls whether to bind the widget to the data source on initialization.
     <kendo:multiSelect autoBind="autoBind">
     </kendo:multiSelect>
 
+### autoClose `boolean`
+
+Controls whether to close the widget suggestion list on item selection.
+
+#### Example
+    <kendo:multiSelect autoClose="autoClose">
+    </kendo:multiSelect>
+
 ### dataTextField `java.lang.String`
 
 The field of the data item that provides the text content of the list items. The widget will filter the data source based on this field.
