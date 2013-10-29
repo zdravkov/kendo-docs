@@ -59,21 +59,21 @@ The default configuration for shape layers.
 
 The copyright message for all shape layers.
 
-### layerDefaults.shape.fill `String|Object`
+### layerDefaults.shape.fill `Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-#### layerDefaults.shape.fill.color `String`
+### layerDefaults.shape.fill.color `String`
 
 The default fill color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-#### layerDefaults.shape.fill.opacity `Number`
+### layerDefaults.shape.fill.opacity `Number`
 
 The default fill opacity (0 to 1) for layer shapes.
 
-### layerDefaults.shape.stroke `String|Object`
+### layerDefaults.shape.stroke `Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
@@ -148,7 +148,7 @@ instance.
 
 The copyright message for the layer.
 
-### layers.fill `String|Object`
+### layers.fill `Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
@@ -162,7 +162,7 @@ Accepts a valid CSS color string, including hex and rgb.
 
 The default fill opacity (0 to 1) for layer shapes.
 
-### layers.stroke `String|Object`
+### layers.stroke `Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
