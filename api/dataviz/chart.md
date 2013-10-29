@@ -8982,7 +8982,7 @@ The data item field which contains the series mean value.
       }]
     });
 
-### series.outliresField `String` *(default: "outliers")*
+### series.outliersField `String` *(default: "outliers")*
 
 The data item field which contains the series outliers value.
 
