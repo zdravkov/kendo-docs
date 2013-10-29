@@ -324,7 +324,7 @@ Fired when the mouse enters a shape.
 
 Fired when the mouse leaves a shape.
 
-### zoom
+### zoomStart
 
 Fired when the map zoom level is about to change.
 
