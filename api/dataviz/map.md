@@ -59,31 +59,35 @@ The default configuration for shape layers.
 
 The copyright message for all shape layers.
 
-### layerDefaults.shape.fill `Object`
+### layerDefaults.shape.style `Object`
+
+The default style for shapes.
+
+### layerDefaults.shape.style.fill `Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-### layerDefaults.shape.fill.color `String`
+### layerDefaults.shape.style.fill.color `String`
 
 The default fill color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-### layerDefaults.shape.fill.opacity `Number`
+### layerDefaults.shape.style.fill.opacity `Number`
 
 The default fill opacity (0 to 1) for layer shapes.
 
-### layerDefaults.shape.stroke `Object`
+### layerDefaults.shape.style.stroke `Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-### layerDefaults.shape.stroke.color `String`
+### layerDefaults.shape.style.stroke.color `String`
 
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-### layerDefaults.shape.style.stroke.dashType `Number` *(default: 1)*
+### layerDefaults.shape.style.stroke.dashType `String` *(default: "solid")*
 
 The default dash type for layer shapes.
 The following dash types are supported:
@@ -148,26 +152,30 @@ instance.
 
 The copyright message for the layer.
 
-### layers.fill `Object`
+### layers.style `Object`
+
+The default style for shapes.
+
+### layers.style.fill `Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-### layers.fill.color `String`
+### layers.style.fill.color `String`
 
 The default fill color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
-### layers.fill.opacity `Number`
+### layers.style.fill.opacity `Number`
 
 The default fill opacity (0 to 1) for layer shapes.
 
-### layers.stroke `Object`
+### layers.style.stroke `Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
-### layers.stroke.color `String`
+### layers.style.stroke.color `String`
 
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
