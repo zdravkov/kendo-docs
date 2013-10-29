@@ -19,47 +19,6 @@ You can also use a kendo.dataviz.map.Location instance.
     <kendo:map center="center">
     </kendo:map>
 
-### controls `java.lang.Object`
-
-The configuration of built-in map controls.
-
-#### Example
-    <kendo:map controls="controls">
-    </kendo:map>
-
-### layerDefaults `java.lang.Object`
-
-The default configuration for map layers by type.
-
-#### Example
-    <kendo:map layerDefaults="layerDefaults">
-    </kendo:map>
-
-### layers `java.lang.Object`
-
-The configuration of the map layers.
-The layer type is determined by the value of the type field.
-
-#### Example
-    <kendo:map layers="layers">
-    </kendo:map>
-
-### markerDefaults `java.lang.Object`
-
-The default options for all markers.
-
-#### Example
-    <kendo:map markerDefaults="markerDefaults">
-    </kendo:map>
-
-### markers `java.lang.Object`
-
-The initial markers to display on the map.
-
-#### Example
-    <kendo:map markers="markers">
-    </kendo:map>
-
 ### maxZoom `float`
 
 The maximum zoom level.
@@ -101,6 +60,70 @@ The initial zoom level.Typical web maps use zoom levels from 0 (whole world) to 
     </kendo:map>
 
 
+##  Configuration JSP Tags
+
+### kendo:map-controls
+
+The configuration of built-in map controls.
+
+More documentation is available at [kendo:map-controls](map/controls).
+
+#### Example
+
+    <kendo:map>
+        <kendo:map-controls></kendo:map-controls>
+    </kendo:map>
+
+### kendo:map-layerDefaults
+
+The default configuration for map layers by type.
+
+More documentation is available at [kendo:map-layerDefaults](map/layerdefaults).
+
+#### Example
+
+    <kendo:map>
+        <kendo:map-layerDefaults></kendo:map-layerDefaults>
+    </kendo:map>
+
+### kendo:map-layers
+
+The configuration of the map layers.
+The layer type is determined by the value of the type field.
+
+More documentation is available at [kendo:map-layers](map/layers).
+
+#### Example
+
+    <kendo:map>
+        <kendo:map-layers></kendo:map-layers>
+    </kendo:map>
+
+### kendo:map-markerDefaults
+
+The default options for all markers.
+
+More documentation is available at [kendo:map-markerDefaults](map/markerdefaults).
+
+#### Example
+
+    <kendo:map>
+        <kendo:map-markerDefaults></kendo:map-markerDefaults>
+    </kendo:map>
+
+### kendo:map-markers
+
+The initial markers to display on the map.
+
+More documentation is available at [kendo:map-markers](map/markers).
+
+#### Example
+
+    <kendo:map>
+        <kendo:map-markers></kendo:map-markers>
+    </kendo:map>
+
+
 ## Event Attributes
 
 ### click `String`
@@ -119,35 +142,67 @@ For additional information check the [click](/api/web/map#events-click) event do
         }
     </script>
 
-### markerCreated `String`
+### reset `String`
 
-Fired when a marker is created, but is not rendered yet.
+Fired when the map is reset, e.g. on initial load or during zoom.
 
 
-For additional information check the [markerCreated](/api/web/map#events-markerCreated) event documentation.
+For additional information check the [reset](/api/web/map#events-reset) event documentation.
 
 #### Example
-    <kendo:map markerCreated="handle_markerCreated">
+    <kendo:map reset="handle_reset">
     </kendo:map>
     <script>
-        function handle_markerCreated(e) {
-            // Code to handle the markerCreated event.
+        function handle_reset(e) {
+            // Code to handle the reset event.
         }
     </script>
 
-### markerHover `String`
+### pan `String`
 
-Fired when a marker is hovered.
+Fired while the map viewport is being moved.
 
 
-For additional information check the [markerHover](/api/web/map#events-markerHover) event documentation.
+For additional information check the [pan](/api/web/map#events-pan) event documentation.
 
 #### Example
-    <kendo:map markerHover="handle_markerHover">
+    <kendo:map pan="handle_pan">
     </kendo:map>
     <script>
-        function handle_markerHover(e) {
-            // Code to handle the markerHover event.
+        function handle_pan(e) {
+            // Code to handle the pan event.
+        }
+    </script>
+
+### panEnd `String`
+
+Fires after the map viewport has been moved.
+
+
+For additional information check the [panEnd](/api/web/map#events-panEnd) event documentation.
+
+#### Example
+    <kendo:map panEnd="handle_panEnd">
+    </kendo:map>
+    <script>
+        function handle_panEnd(e) {
+            // Code to handle the panEnd event.
+        }
+    </script>
+
+### shapeClick `String`
+
+Fired when a shape is clicked or tapped.
+
+
+For additional information check the [shapeClick](/api/web/map#events-shapeClick) event documentation.
+
+#### Example
+    <kendo:map shapeClick="handle_shapeClick">
+    </kendo:map>
+    <script>
+        function handle_shapeClick(e) {
+            // Code to handle the shapeClick event.
         }
     </script>
 
@@ -167,19 +222,67 @@ For additional information check the [shapeCreated](/api/web/map#events-shapeCre
         }
     </script>
 
-### shapeHover `String`
+### shapeMouseEnter `String`
 
-Fired when a shape is hovered.
+Fired when the mouse enters a shape.
 
 
-For additional information check the [shapeHover](/api/web/map#events-shapeHover) event documentation.
+For additional information check the [shapeMouseEnter](/api/web/map#events-shapeMouseEnter) event documentation.
 
 #### Example
-    <kendo:map shapeHover="handle_shapeHover">
+    <kendo:map shapeMouseEnter="handle_shapeMouseEnter">
     </kendo:map>
     <script>
-        function handle_shapeHover(e) {
-            // Code to handle the shapeHover event.
+        function handle_shapeMouseEnter(e) {
+            // Code to handle the shapeMouseEnter event.
+        }
+    </script>
+
+### shapeMouseLeave `String`
+
+Fired when the mouse leaves a shape.
+
+
+For additional information check the [shapeMouseLeave](/api/web/map#events-shapeMouseLeave) event documentation.
+
+#### Example
+    <kendo:map shapeMouseLeave="handle_shapeMouseLeave">
+    </kendo:map>
+    <script>
+        function handle_shapeMouseLeave(e) {
+            // Code to handle the shapeMouseLeave event.
+        }
+    </script>
+
+### zoomStart `String`
+
+Fired when the map zoom level is about to change.
+
+
+For additional information check the [zoomStart](/api/web/map#events-zoomStart) event documentation.
+
+#### Example
+    <kendo:map zoomStart="handle_zoomStart">
+    </kendo:map>
+    <script>
+        function handle_zoomStart(e) {
+            // Code to handle the zoomStart event.
+        }
+    </script>
+
+### zoomEnd `String`
+
+Fired when the map zoom level has changed.
+
+
+For additional information check the [zoomEnd](/api/web/map#events-zoomEnd) event documentation.
+
+#### Example
+    <kendo:map zoomEnd="handle_zoomEnd">
+    </kendo:map>
+    <script>
+        function handle_zoomEnd(e) {
+            // Code to handle the zoomEnd event.
         }
     </script>
 
@@ -203,40 +306,76 @@ For additional information check the [click](/api/web/map#events-click) event do
         </kendo:map-click>
     </kendo:map>
 
-### kendo:map-markerCreated
+### kendo:map-reset
 
-Fired when a marker is created, but is not rendered yet.
+Fired when the map is reset, e.g. on initial load or during zoom.
 
 
-For additional information check the [markerCreated](/api/web/map#events-markerCreated) event documentation.
+For additional information check the [reset](/api/web/map#events-reset) event documentation.
 
 #### Example
     <kendo:map>
-        <kendo:map-markerCreated>
+        <kendo:map-reset>
             <script>
                 function(e) {
-                    // Code to handle the markerCreated event.
+                    // Code to handle the reset event.
                 }
             </script>
-        </kendo:map-markerCreated>
+        </kendo:map-reset>
     </kendo:map>
 
-### kendo:map-markerHover
+### kendo:map-pan
 
-Fired when a marker is hovered.
+Fired while the map viewport is being moved.
 
 
-For additional information check the [markerHover](/api/web/map#events-markerHover) event documentation.
+For additional information check the [pan](/api/web/map#events-pan) event documentation.
 
 #### Example
     <kendo:map>
-        <kendo:map-markerHover>
+        <kendo:map-pan>
             <script>
                 function(e) {
-                    // Code to handle the markerHover event.
+                    // Code to handle the pan event.
                 }
             </script>
-        </kendo:map-markerHover>
+        </kendo:map-pan>
+    </kendo:map>
+
+### kendo:map-panEnd
+
+Fires after the map viewport has been moved.
+
+
+For additional information check the [panEnd](/api/web/map#events-panEnd) event documentation.
+
+#### Example
+    <kendo:map>
+        <kendo:map-panEnd>
+            <script>
+                function(e) {
+                    // Code to handle the panEnd event.
+                }
+            </script>
+        </kendo:map-panEnd>
+    </kendo:map>
+
+### kendo:map-shapeClick
+
+Fired when a shape is clicked or tapped.
+
+
+For additional information check the [shapeClick](/api/web/map#events-shapeClick) event documentation.
+
+#### Example
+    <kendo:map>
+        <kendo:map-shapeClick>
+            <script>
+                function(e) {
+                    // Code to handle the shapeClick event.
+                }
+            </script>
+        </kendo:map-shapeClick>
     </kendo:map>
 
 ### kendo:map-shapeCreated
@@ -257,21 +396,75 @@ For additional information check the [shapeCreated](/api/web/map#events-shapeCre
         </kendo:map-shapeCreated>
     </kendo:map>
 
-### kendo:map-shapeHover
+### kendo:map-shapeMouseEnter
 
-Fired when a shape is hovered.
+Fired when the mouse enters a shape.
 
 
-For additional information check the [shapeHover](/api/web/map#events-shapeHover) event documentation.
+For additional information check the [shapeMouseEnter](/api/web/map#events-shapeMouseEnter) event documentation.
 
 #### Example
     <kendo:map>
-        <kendo:map-shapeHover>
+        <kendo:map-shapeMouseEnter>
             <script>
                 function(e) {
-                    // Code to handle the shapeHover event.
+                    // Code to handle the shapeMouseEnter event.
                 }
             </script>
-        </kendo:map-shapeHover>
+        </kendo:map-shapeMouseEnter>
+    </kendo:map>
+
+### kendo:map-shapeMouseLeave
+
+Fired when the mouse leaves a shape.
+
+
+For additional information check the [shapeMouseLeave](/api/web/map#events-shapeMouseLeave) event documentation.
+
+#### Example
+    <kendo:map>
+        <kendo:map-shapeMouseLeave>
+            <script>
+                function(e) {
+                    // Code to handle the shapeMouseLeave event.
+                }
+            </script>
+        </kendo:map-shapeMouseLeave>
+    </kendo:map>
+
+### kendo:map-zoomStart
+
+Fired when the map zoom level is about to change.
+
+
+For additional information check the [zoomStart](/api/web/map#events-zoomStart) event documentation.
+
+#### Example
+    <kendo:map>
+        <kendo:map-zoomStart>
+            <script>
+                function(e) {
+                    // Code to handle the zoomStart event.
+                }
+            </script>
+        </kendo:map-zoomStart>
+    </kendo:map>
+
+### kendo:map-zoomEnd
+
+Fired when the map zoom level has changed.
+
+
+For additional information check the [zoomEnd](/api/web/map#events-zoomEnd) event documentation.
+
+#### Example
+    <kendo:map>
+        <kendo:map-zoomEnd>
+            <script>
+                function(e) {
+                    // Code to handle the zoomEnd event.
+                }
+            </script>
+        </kendo:map-zoomEnd>
     </kendo:map>
 

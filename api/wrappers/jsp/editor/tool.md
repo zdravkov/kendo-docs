@@ -28,7 +28,7 @@ The JavaScript function which will be executed when the end-user clicks the tool
 
 ### name `java.lang.String`
 
-When specifying a tool as an object, a tool name is required.
+When specifying a tool as an object, a tool name is required. Please note that "undo" and "redo" are reserved tool names.
 
 #### Example
     <kendo:editor-tool name="name">
