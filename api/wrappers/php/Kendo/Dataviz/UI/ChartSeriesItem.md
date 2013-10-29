@@ -986,7 +986,7 @@ The chart series outliers configuration.
     $seriesItem->outliers(array('background' => $background));
     ?>
 
-### outliresField
+### outliersField
 The data item field which contains the series outliers value.
 
 #### Returns
@@ -1001,7 +1001,7 @@ The data item field which contains the series outliers value.
 #### Example 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
-    $seriesItem->outliresField('value');
+    $seriesItem->outliersField('value');
     ?>
 
 ### overlay

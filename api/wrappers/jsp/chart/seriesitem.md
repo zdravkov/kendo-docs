@@ -299,12 +299,12 @@ The data field containing the open value.
     <kendo:chart-seriesItem openField="openField">
     </kendo:chart-seriesItem>
 
-### outliresField `java.lang.String`
+### outliersField `java.lang.String`
 
 The data item field which contains the series outliers value.
 
 #### Example
-    <kendo:chart-seriesItem outliresField="outliresField">
+    <kendo:chart-seriesItem outliersField="outliersField">
     </kendo:chart-seriesItem>
 
 ### padding `float`
