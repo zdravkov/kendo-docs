@@ -325,6 +325,22 @@ For additional information check the [cancel](/api/web/scheduler#events-cancel) 
         }
     </script>
 
+### change `String`
+
+Fired when the user selects a cell or event in the scheduler.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [change](/api/web/scheduler#events-change) event documentation.
+
+#### Example
+    <kendo:scheduler change="handle_change">
+    </kendo:scheduler>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
 ### dataBinding `String`
 
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
@@ -553,6 +569,24 @@ For additional information check the [cancel](/api/web/scheduler#events-cancel) 
                 }
             </script>
         </kendo:scheduler-cancel>
+    </kendo:scheduler>
+
+### kendo:scheduler-change
+
+Fired when the user selects a cell or event in the scheduler.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [change](/api/web/scheduler#events-change) event documentation.
+
+#### Example
+    <kendo:scheduler>
+        <kendo:scheduler-change>
+            <script>
+                function(e) {
+                    // Code to handle the change event.
+                }
+            </script>
+        </kendo:scheduler-change>
     </kendo:scheduler>
 
 ### kendo:scheduler-dataBinding
