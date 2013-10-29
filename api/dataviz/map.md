@@ -296,19 +296,39 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
 
 Fired when the user clicks on the map.
 
-### markerCreated
+### reset
 
-Fired when a marker is created, but is not rendered yet.
+Fired when the map is reset, e.g. on initial load or during zoom.
 
-### markerHover
+### pan
 
-Fired when a marker is hovered.
+Fired while the map viewport is being moved.
+
+### panEnd
+
+Fires after the map viewport has been moved.
+
+### shapeClick
+
+Fired when a shape is clicked or tapped.
 
 ### shapeCreated
 
 Fired when a shape is created, but is not rendered yet.
 
-### shapeHover
+### shapeMouseEnter
 
-Fired when a shape is hovered.
+Fired when the mouse enters a shape.
+
+### shapeMouseLeave
+
+Fired when the mouse leaves a shape.
+
+### zoom
+
+Fired when the map zoom level is about to change.
+
+### zoomEnd
+
+Fired when the map zoom level has changed.
 
