@@ -69,7 +69,7 @@ Adds one or more EditorToolItem to the EditorTool.
     ?>
 
 ### name
-When specifying a tool as an object, a tool name is required.
+When specifying a tool as an object, a tool name is required. Please note that "undo" and "redo" are reserved tool names.
 
 #### Returns
 `\Kendo\UI\EditorTool`
