@@ -36,7 +36,7 @@ The copyright message for the layer.
 
 ### type `java.lang.String`
 
-The layer type. Supported types are:
+The layer type. Supported types are "tile" and "shape".
 
 #### Example
     <kendo:map-layer type="type">

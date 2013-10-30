@@ -35,7 +35,7 @@ You can also use a kendo.dataviz.map.Location instance.
 
 ### shape `java.lang.String`
 
-The marker shape. Supported shapes:
+The marker shape. Supported shapes are "pin" and "circle".
 
 #### Example
     <kendo:map-marker shape="shape">

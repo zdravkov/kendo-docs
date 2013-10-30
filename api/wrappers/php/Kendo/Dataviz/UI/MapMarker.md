@@ -50,7 +50,7 @@ You can also use a kendo.dataviz.map.Location instance.
     ?>
 
 ### shape
-The marker shape. Supported shapes:
+The marker shape. Supported shapes are "pin" and "circle".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarker`

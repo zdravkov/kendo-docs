@@ -106,7 +106,7 @@ The default style for shapes.
     ?>
 
 ### type
-The layer type. Supported types are:
+The layer type. Supported types are "tile" and "shape".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayer`
