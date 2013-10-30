@@ -4812,38 +4812,38 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-##### e.container `jQuery`
+##### e.start `Date`
 
-The jQuery object representing the container element. That element contains the editing UI.
+The selection start date.
 
-##### e.event `kendo.data.SchedulerEvent`
+##### e.end `Date`
 
-The event which is no longer in edit mode.
+The selection end date.
+
+##### e.events `Array`
+
+A list of the selected [scheduler events](/api/framework/schedulerevent).
+
+##### e.slots `Array`
+
+A list of the selected slots. Each slot has the following properties:
+
+*   **slot.start**
+        - The slot's start date.
+
+*   **slot.end**
+        - The slot's end date.
+
+*   **slot.element**
+        - The slot's element.
+
+##### e.resources `Object`
+
+The resources for the slot if resource grouping is enabled.
 
 ##### e.sender `kendo.ui.Scheduler`
 
 The widget instance which fired the event.
-
-##### e.selection `Object`
-
-The state of the current selection. It contains:
-
-*   **e.selection.start**
-        - Start date and time of the current selection.
-
-*   **e.selection.end**
-        - End date and time of the current selection.
-
-*   **e.selection.isAllDay**
-        - Indicates whether the selected cell/event is 24 hours or more.
-
-*   **e.selection.element**
-        - jQuery object containing the selected element/s.
-
-*   **e.selection.resources**
-        - Resources list where each list item contains information about the resource and its value
-        used to group the view. When a cell or an event, part of grouped view, is selected this property
-        will contains a list of resources which corresponds to the group hierarchy.
 
 #### Example - subscribe to the "change" event during initialization
     <div id="scheduler"></div>
@@ -4860,8 +4860,8 @@ The state of the current selection. It contains:
         }
       ],
       change: function(e) {
-        var start = e.selection.start;
-        var end = e.selection.end;
+        var start = e.start;
+        var end = e.end;
 
         console.log(kendo.format("Selection between {0:g} and {1:g}", start, end));
       }
@@ -4873,8 +4873,8 @@ The state of the current selection. It contains:
     <div id="scheduler"></div>
     <script>
     function scheduler_change(e) {
-        var start = e.selection.start;
-        var end = e.selection.end;
+        var start = e.start;
+        var end = e.end;
 
         console.log(kendo.format("Selection between {0:g} and {1:g}", start, end));
     }
