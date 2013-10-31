@@ -107,6 +107,22 @@ The template used to render the major ticks.By default the scheduler renders the
     <kendo:scheduler majorTimeHeaderTemplate="majorTimeHeaderTemplate">
     </kendo:scheduler>
 
+### max `java.util.Date`
+
+Constraints the maximum date which can be selected via the scheduler navigation.
+
+#### Example
+    <kendo:scheduler max="max">
+    </kendo:scheduler>
+
+### min `java.util.Date`
+
+Constraints the minimum date which can be selected via the scheduler navigation.
+
+#### Example
+    <kendo:scheduler min="min">
+    </kendo:scheduler>
+
 ### minorTickCount `float`
 
 The number of time slots to display per major tick.
