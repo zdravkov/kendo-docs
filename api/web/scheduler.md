@@ -791,6 +791,28 @@ The fields which can be used in the template are:
     });
     </script>
 
+### max `Date` *(default: 31/12/2099)*
+
+Constraints the maximum date which can be selected via the scheduler navigation buttons.
+
+#### Example - set the number of time slots
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      max: new Date("2013/7/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### messages `Object`
 
 The configuration of the scheduler messages. Use this option to customize or localize the scheduler messages.
@@ -2615,6 +2637,28 @@ The text similar to "Agenda" displayed as scheduler "agenda" view title.
             agenda: "Events list"
         }
       },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### min `Date` *(default: 1/1/1900)*
+
+Constraints the minimum date which can be selected via the scheduler navigation buttons.
+
+#### Example - set the number of time slots
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      min: new Date("1980/6/6"),
       dataSource: [
         {
           id: 1,
