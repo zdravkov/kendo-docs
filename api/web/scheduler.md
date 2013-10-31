@@ -793,7 +793,7 @@ The fields which can be used in the template are:
 
 ### max `Date` *(default: 31/12/2099)*
 
-Constraints the maximum date which can be selected via the scheduler navigation buttons.
+Constraints the maximum date which can be selected via the scheduler navigation.
 
 #### Example - set the number of time slots
 
@@ -2650,7 +2650,7 @@ The text similar to "Agenda" displayed as scheduler "agenda" view title.
 
 ### min `Date` *(default: 1/1/1900)*
 
-Constraints the minimum date which can be selected via the scheduler navigation buttons.
+Constraints the minimum date which can be selected via the scheduler navigation.
 
 #### Example - set the number of time slots
 

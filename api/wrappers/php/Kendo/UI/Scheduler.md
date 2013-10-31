@@ -556,6 +556,24 @@ The template used to render the major ticks.By default the scheduler renders the
     $scheduler->majorTimeHeaderTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### max
+Constraints the maximum date which can be selected via the scheduler navigation.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `date`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->max(new date());
+    ?>
+
 ### messages
 
 The configuration of the scheduler messages. Use this option to customize or localize the scheduler messages.
@@ -583,6 +601,24 @@ The configuration of the scheduler messages. Use this option to customize or loc
     $scheduler = new \Kendo\UI\Scheduler('Scheduler');
     $allDay = 'value';
     $scheduler->messages(array('allDay' => $allDay));
+    ?>
+
+### min
+Constraints the minimum date which can be selected via the scheduler navigation.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `date`
+
+
+
+#### Example 
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->min(new date());
     ?>
 
 ### minorTickCount
