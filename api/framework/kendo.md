@@ -378,6 +378,62 @@ The value to convert to a JSON string.
     console.log(json); // displays {"foo":"bar"}
     </script>
 
+### resize
+
+Finds all Kendo widgets that are children of the specified element and calls their `resize` method.
+
+#### Example
+
+    <div class="chart-wrapper">
+       <div id="chart" style="width:100%"></div>
+    </div>
+    <script>
+        $(function() {
+            $("#chart").kendoChart({
+                title: {
+                    text: "Gross domestic product growth /GDP annual %/"
+                },
+                legend: {
+                    position: "bottom"
+                },
+                seriesDefaults: {
+                    type: "area"
+                },
+                series: [{
+                    name: "India",
+                    data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.801, 3.890, 8.238, 9.552, 6.855]
+                }],
+                valueAxis: {
+                    labels: {
+                        format: "{0}%"
+                    },
+                    line: {
+                        visible: false
+                    },
+                    axisCrossingValue: -10
+                },
+                categoryAxis: {
+                    categories: [2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011],
+                    majorGridLines: {
+                        visible: false
+                    }
+                },
+                tooltip: {
+                    visible: true,
+                    format: "{0}%",
+                    template: "#= series.name #: #= value #"
+                }
+            });
+        });
+
+        $(window).on("resize", function() {
+          kendo.resize($(".chart-wrapper"));
+        });
+    </script>
+
+#### Parameters
+
+##### element `String|jQuery|Node`
 
 ### template
 
