@@ -211,3 +211,44 @@ By default the widget displays one data record per page. There is an opportunity
             return "url(http://demos.kendoui.com/content/web/foods/" + id +".jpg)";
         }
     </script>
+
+## Displaying incomplete pages
+
+When the ScrollView is configured to display multiple items per page, in some cases the last data view may not be complete. For example, if `itemsPerPage: 3` and there are total 7 records in the DataSource, the widget should render 3 pages in total. First two will contain 3 items, while the last one will have only 1 remaining item to display. **In such case, the developer is responsible to configure the widget's template so it will be able to handle the missing records, else a JavaScript error will occur.**
+
+One possible approach is to use JavaScript logic (for loop) inside the template.
+
+### Example: template with JavaScript for loop
+
+    <div id="home" data-role="view" data-model="viewModel">
+        <div id="scrollview" data-role="scrollview" 
+            data-source="ds" 
+            data-template="tmpl"
+            data-items-per-page="3">
+        </div>
+    </div>
+
+    <script type="text/x-kendo-template" id="tmpl">
+        <div>
+            # for (var i = 0; i < data.length; i++) { #
+                # var item = data[i]; #
+                <div>#= item.title #</div>
+            # } #
+        </div>
+    </script>
+
+    <script>
+        var ds = new kendo.data.DataSource({
+            data: [
+                {title:"Item 1", desc:"Description 1"},
+                {title:"Item 2", desc:"Description 2"},
+                {title:"Item 3", desc:"Description 3"},
+                {title:"Item 4", desc:"Description 4"},
+                {title:"Item 5", desc:"Description 5"},
+                {title:"Item 6", desc:"Description 6"},
+                {title:"Item 7", desc:"Description 7"}
+            ]
+        });
+
+        var app = new kendo.mobile.Application();
+    </script>
