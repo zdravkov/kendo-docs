@@ -141,6 +141,14 @@ Spcifies the value binding behavior for the widget when the initial model value 
     <kendo:dropDownList valuePrimitive="valuePrimitive">
     </kendo:dropDownList>
 
+### valueTemplate `java.lang.String`
+
+The valueTemplate used to render the selected value. By default the widget displays only the text of the data item (configured via dataTextField).
+
+#### Example
+    <kendo:dropDownList valueTemplate="valueTemplate">
+    </kendo:dropDownList>
+
 
 ##  Configuration JSP Tags
 
