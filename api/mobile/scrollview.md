@@ -500,6 +500,39 @@ If set to true, the ScrollView will jump instantly to the given page without any
     }
     </script>
 
+### setDataSource
+
+Sets the DataSource of an existing ScrollView and rebinds it.
+
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+#### Example
+
+    <div id="home" data-role="view" data-model="viewModel">
+        <div id="scrollview" data-role="scrollview" data-source="ds" data-template="tmp"></div>
+        <a data-role="button" data-click="onClick">Button</a>
+    </div>
+
+    <script id="tmp" type="text/x-kendo-template">
+        <div>#: foo #</div>
+    </script>
+
+    <script>
+        var ds = new kendo.data.DataSource({
+            data: [{foo: 1}, {foo: 2}]
+        });
+
+        function onClick() {
+            //change dataSource
+            $("#scrollview").data("kendoMobileScrollView")
+                .setDataSource([{foo: 3}, {foo: 4}, {foo: 5}]);
+        }
+
+        var app = new kendo.mobile.Application();
+    </script>
+
 ## Events
 
 ### changing
