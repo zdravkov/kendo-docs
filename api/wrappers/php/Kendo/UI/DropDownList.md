@@ -608,3 +608,27 @@ Spcifies the value binding behavior for the widget when the initial model value 
     $dropDownList->valuePrimitive(true);
     ?>
 
+### valueTemplate
+The valueTemplate used to render the selected value. By default the widget displays only the text of the data item (configured via dataTextField).
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+    $dropDownList->valueTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+    $dropDownList->valueTemplate(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
