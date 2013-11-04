@@ -431,6 +431,44 @@ The [template](/api/framework/kendo#methods-template) used to render the items. 
     });
     </script>
 
+### valueTemplate `String|Function`
+
+The [valueTemplate](/api/framework/kendo#methods-template) used to render the selected value. By default the widget displays only the text of the data item (configured via `dataTextField`).
+
+#### Example - specify valueTemplate as a function
+
+    <input id="dropdownlist" />
+    <script id="valueTemplate" type="text/x-kendo-template">
+        <img src="/img/#: id #.png" alt="#: name #" />
+        #: name #
+    </script>
+    <script>
+    $("#dropdownlist").kendoDropDownList({
+      dataSource: [
+        { id: 1, name: "Apples" },
+        { id: 2, name: "Oranges" }
+      ],
+      dataTextField: "name",
+      dataValueField: "id",
+      valueTemplate: kendo.template($("#valueTemplate").html())
+    });
+    </script>
+
+#### Example - specify template as a string
+
+    <input id="dropdownlist" />
+    <script>
+    $("#dropdownlist").kendoDropDownList({
+      dataSource: [
+        { id: 1, name: "Apples" },
+        { id: 2, name: "Oranges" }
+      ],
+      dataTextField: "name",
+      dataValueField: "id",
+      valueTemplate: '<img src="/img/#: id #.png" alt="#: name #" />#: name #'
+    });
+    </script>
+
 ### text `String`*(default: "")*
 
 The text of the widget used when the `autoBind` is set to `false`.
