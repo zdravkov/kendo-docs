@@ -18,6 +18,7 @@ Most Kendo UI Widgets work and auto-resize when used in responsive web pages out
 * Mobile ScrollView
 * MobileSwitch
 * Scheduler
+* Slider
 * Splitter
 * Window
 
