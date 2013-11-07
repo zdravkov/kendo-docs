@@ -131,7 +131,7 @@ Instance of DataSource that the mobile ScrollView will be bound to. *If DataSour
     }
     </script>
 
-### duration `Number`*(default: 300)*
+### duration `Number`*(default: 400)*
 
 The milliseconds that take the ScrollView to snap to the current page after released.
 
