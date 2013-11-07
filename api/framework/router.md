@@ -26,21 +26,21 @@ Activates the router binding to the URL fragment part changes.
 ### route
 
 Specifies a callback for the given route. The route definition can contain **bound parameters**, **optional segments**, and **route globbing**.
-The parsed parts of the URL are passed as parameters to the route callback.
+The parsed parts of the URL are passed as parameters to the route callback. Query string parameters are parsed and passed as last argument of the callback function.
 
 #### Example
 
     <script>
     var router = new kendo.Router();
 
-    router.route("/items/:category/:id", function(category, id) {
-        console.log(category, "item with", id, " was requested");
+    router.route("/items/:category/:id", function(category, id, params) {
+        console.log(category, "item with id", id, "was requested by", params.user);
     });
 
     $(function() {
         router.start();
         // ...
-        router.navigate("/items/books/59");
+        router.navigate("/items/books/59?user=John");
     });
     </script>
 
@@ -119,6 +119,10 @@ Triggered when the fragment part of the URL changes.
 
 The fragment part of the URL
 
+##### e.params `Object`
+
+The parsed query string parameters of the URL
+
 > Calling the `preventDefault` method of the event object will stop the change and restore the previous URL.
 
 
@@ -127,8 +131,8 @@ The fragment part of the URL
     <script>
     var router = new kendo.Router();
 
-    router.route("/items/:category/:id", function(category, id) {
-      console.log(category, "item with", id, " was requested");
+    router.route("/items/:category/:id", function(category, id, params) {
+      console.log(category, "item with", id, " was requested by", params.user);
     });
 
     router.bind("change", function(e) {
@@ -138,7 +142,7 @@ The fragment part of the URL
     $(function() {
       router.start();
       $("#link").click(function() {
-        router.navigate("/items/books/59");
+        router.navigate("/items/books/59?user=John");
         return false;
       });
 
@@ -152,11 +156,11 @@ Triggered when the URL does not match any of the provided routes.
 #### Example
 
     <script>
-    var router = new kendo.Router({ routeMissing: function(e) { console.log(e.url) } });
+    var router = new kendo.Router({ routeMissing: function(e) { console.log(e.url, e.params) } });
 
     $(function() {
         router.start();
-        router.navigate("/foo");
+        router.navigate("/foo?bar=baz");
     });
     </script>
 
@@ -166,5 +170,9 @@ Triggered when the URL does not match any of the provided routes.
 ##### e.url `String`
 
 The fragment part of the URL
+
+##### e.params `Object`
+
+The parsed query string parameters of the URL
 
 > Calling the `preventDefault` method of the event object will stop the change and restore the previous URL.
