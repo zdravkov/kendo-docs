@@ -13,7 +13,7 @@ publish: true
 
 Activates the router binding to the URL fragment part changes.
 
-### Example
+#### Example
 
     <script>
     var router = new kendo.Router();
