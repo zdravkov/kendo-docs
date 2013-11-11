@@ -578,6 +578,39 @@ The format string which should be used to format the value.
 
 The name of the culture which should be used to format the value. [The culture should be registered on the page](http://docs.kendoui.com/getting-started/framework/globalization/overview#add culture scripts to the page).
 
+### unbind
+
+Unbinds a tree of HTML elements from a View-Model.
+
+#### Example
+     <div id="view">
+       <label>First Name:<input data-bind="value: firstName" /></label>
+       <label>Last Name:<input data-bind="value: lastName" /></label>
+       <button data-bind="click: displayGreeting">Display Greeting</button>
+     </div>
+     <script>
+     var viewModel = kendo.observable({
+        firstName: "John",
+        lastName: "Doe",
+        displayGreeting: function() {
+            // Get the current values of "firstName" and "lastName"
+            var firstName = this.get("firstName");
+            var lastName = this.get("lastName");
+            alert("Hello, " + firstName + " " + lastName + "!!!");
+        }
+     });
+     kendo.bind($("#view"), viewModel);
+     // unbind the view model
+     kendo.unbind($("#view"));
+     </script>
+
+#### Parameters
+
+##### element `String|jQuery|Node`
+
+The root element(s) from which the unbinding starts. Can be a valid jQuery string selector, a DOM element or a jQuery object.
+All child elements are traversed.
+
 ### widgetInstance
 
 Returns a Kendo UI widget instance, attached to the provided element.
@@ -1089,39 +1122,6 @@ The AM/PM designator.
     <script>
     console.log(kendo.toString(new Date(2013, 5, 6, 13, 0), "HH tt")); // outputs "13 PM"
     </script>
-
-### unbind
-
-Unbinds a tree of HTML elements from a View-Model.
-
-#### Example
-     <div id="view">
-       <label>First Name:<input data-bind="value: firstName" /></label>
-       <label>Last Name:<input data-bind="value: lastName" /></label>
-       <button data-bind="click: displayGreeting">Display Greeting</button>
-     </div>
-     <script>
-     var viewModel = kendo.observable({
-        firstName: "John",
-        lastName: "Doe",
-        displayGreeting: function() {
-            // Get the current values of "firstName" and "lastName"
-            var firstName = this.get("firstName");
-            var lastName = this.get("lastName");
-            alert("Hello, " + firstName + " " + lastName + "!!!");
-        }
-     });
-     kendo.bind($("#view"), viewModel);
-     // unbind the view model
-     kendo.unbind($("#view"));
-     </script>
-
-#### Parameters
-
-##### element `String|jQuery|Node`
-
-The root element(s) from which the unbinding starts. Can be a valid jQuery string selector, a DOM element or a jQuery object.
-All child elements are traversed.
 
 <a name="Color"></a>
 ## Color objects
