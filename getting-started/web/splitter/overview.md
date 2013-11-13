@@ -214,12 +214,16 @@ cannot have borders, margins or paddings. In a nested Splitters scenario, the in
 
 ## Resizing a Splitter manually
 
-The Splitter `div` can be resized manually by applying new width or height style with Javascript. Afterwards, a resize event should be triggered, so that the widget readjusts its layout and pane sizes.
+The Splitter `div` can be resized manually by applying new width or height style with Javascript. Afterwards, the [`resize()`]((/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages)) method
+should be executed, so that the widget readjusts its layout and pane sizes.
 
     var splitterElement = $("#SplitterID"),
 	    splitterObject = splitterElement.data("kendoSplitter");
 		
     splitterElement.css({width: "800px", height: "600px" });
-	splitterObject.trigger("resize");
+    splitterElement.resize();
+    
+    // for versions Q2 2013 SP1 and older use this instead:
+	//splitterObject.trigger("resize");
 
 Changing the the pane sizes manually is not recommended. Only the Splitter should control them.

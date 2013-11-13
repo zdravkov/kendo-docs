@@ -8,6 +8,16 @@ publish: true
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## KendoUI 2013 Q3
+
+### Changes from 2013 Q2 SP1 (2013.2.918)
+
+#### Breaking changes
+
+* **Splitter**: the internal method `trigger("resize")`, which has been provided as a workaround in certain scenarios, no longer works.
+It has been replaced with a [public API method `resize()`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages), which now all Kendo UI widgets have.
+Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
+
 ## KendoUI 2013 Q2
 
 ### Changes from 2013 Q1 SP1 (2013.1.514)

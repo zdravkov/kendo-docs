@@ -357,27 +357,6 @@ The Kendo UI template which should be rendered. Create one via the [template](#m
 
 The array of objects which contains the data that the template will render.
 
-### stringify
-
-Converts a JavaScript object to [JSON](http://en.wikipedia.org/wiki/JSON). Uses [JSON.stringify](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/stringify) in browsers that support it.
-
-#### Parameters
-
-##### value `Object`
-
-The value to convert to a JSON string.
-
-#### Returns
-
-`String` The JSON representation of the value.
-
-#### Example
-
-    <script>
-    var json = kendo.stringify({ foo: "bar" });
-    console.log(json); // displays {"foo":"bar"}
-    </script>
-
 ### resize
 
 Finds all Kendo widgets that are children of the specified element and calls their `resize` method.
@@ -434,6 +413,27 @@ Finds all Kendo widgets that are children of the specified element and calls the
 #### Parameters
 
 ##### element `String|jQuery|Node`
+
+### stringify
+
+Converts a JavaScript object to [JSON](http://en.wikipedia.org/wiki/JSON). Uses [JSON.stringify](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/stringify) in browsers that support it.
+
+#### Parameters
+
+##### value `Object`
+
+The value to convert to a JSON string.
+
+#### Returns
+
+`String` The JSON representation of the value.
+
+#### Example
+
+    <script>
+    var json = kendo.stringify({ foo: "bar" });
+    console.log(json); // displays {"foo":"bar"}
+    </script>
 
 ### template
 
