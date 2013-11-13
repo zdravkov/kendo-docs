@@ -206,7 +206,7 @@ Any data that is necessary to be sent to the server.
 ### append
 
 Appends a new pane. The method returns the pane element, so it can be populated with arbitrary content, if `contentUrl` is not set.
-Invoking this method will force the widget to redraw and it will trigger `layoutChange` and `resize` events.
+Invoking this method will force the widget to redraw and it will trigger the `resize` event.
 
 #### Parameters
 
@@ -236,7 +236,7 @@ The new pane configuration
 
 ### collapse
 
-Collapses a specified pane. Invoking this method will force the widget to redraw and it will trigger `layoutChange` and `resize` events.
+Collapses a specified pane. Invoking this method will force the widget to redraw and it will trigger the `resize` event.
 Note: Invoking the method will not trigger a collapse event.
 
 #### Parameters
@@ -279,7 +279,7 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
 
 ### expand
 
-Expands a specified pane. Invoking this method will force the widget to redraw and it will trigger `layoutChange` and `resize` events.
+Expands a specified pane. Invoking this method will force the widget to redraw and it will trigger the `resize` event.
 Note: Invoking the method will not trigger an expand event.
 
 #### Parameters
@@ -305,7 +305,7 @@ The pane to be expanded.
 ### insertAfter
 
 Inserts a new pane after the specified one. The method returns the pane element, so it can be populated with arbitrary content, if `contentUrl` is not set.
-Invoking this method will force the widget to redraw and it will trigger `layoutChange` and `resize` events.
+Invoking this method will force the widget to redraw and it will trigger the `resize` event.
 
 #### Parameters
 
@@ -337,7 +337,7 @@ The existing pane after which the new one will be inserted.
 ### insertBefore
 
 Inserts a new pane before the specified one. The method returns the pane element, so it can be populated with arbitrary content, if `contentUrl` is not set.
-Invoking this method will force the widget to redraw and it will trigger `layoutChange` and `resize` events.
+Invoking this method will force the widget to redraw and it will trigger the `resize` event.
 
 #### Parameters
 
@@ -421,7 +421,7 @@ The minimum size value of the pane defined as pixels (i.e. "200px") or as a perc
 ### remove
 
 Removes one or more panes. The method returns the Splitter instance.
-Invoking this method will force the widget to redraw and it will trigger `layoutChange` and `resize` events.
+Invoking this method will force the widget to redraw and it will trigger the `resize` event.
 
 #### Parameters
 
@@ -443,8 +443,7 @@ The pane(s) to be removed.
 
 ### size
 
-Set the size of the pane. Setting this value will cause the widget to redraw and it will
-trigger layoutChange and resize events.
+Set the size of the pane. Setting this value will cause the widget to redraw and it will trigger the `resize` event.
 
 #### Parameters
 
@@ -472,7 +471,7 @@ Note: This value must not exceed **panes.max** or be less then **panes.min**.
 ### toggle
 
 Toggles the state of a specified pane (i.e. collapsed or expanded).
-Invoking this method will force the widget to redraw and it will trigger layoutChange and resize events.
+Invoking this method will force the widget to redraw and it will trigger the `resize` event.
 Note: Invoking the method will not trigger collapse or expand events.
 
 #### Parameters
@@ -687,6 +686,8 @@ The expanding pane of the Splitter.
     </script>
 
 ### layoutChange
+
+**This event is now obsolete and will be removed in the future. Please use the [`resize`](#events-resize) event instead.**
 
 Fires when the splitter layout has changed
 

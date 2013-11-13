@@ -17,6 +17,7 @@ publish: true
 * **Splitter**: the internal method `trigger("resize")`, which has been provided as a workaround in certain scenarios, no longer works.
 It has been replaced with a [public API method `resize()`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages), which now all Kendo UI widgets have.
 Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
+* **Splitter**: the `layoutChange` event is now obsolete and will be removed in the future. Please use the `resize` event instead.
 
 ## KendoUI 2013 Q2
 
