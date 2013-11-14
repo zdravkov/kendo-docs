@@ -722,14 +722,14 @@ Controls whether the widget is editable or readonly.
 
 #### Example
 
-    // get a reference to the timepicker widget
-    var timepicker = $("timepicker").data("kendoTimePicker");
+    // get a reference to the dropdownlist widget
+    var dropdownlist = $("dropdownlist").data("kendoDropDownList");
 
-    // makes timepicker readonly
-    timepicker.readonly();
+    // makes dropdownlist readonly
+    dropdownlist.readonly();
 
-    // makes timepicker editable
-    timepicker.readonly(false);
+    // makes dropdownlist editable
+    dropdownlist.readonly(false);
 
 #### Parameters
 
