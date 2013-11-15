@@ -34,7 +34,8 @@ Each column object has the following properties:
 
 ### Grid Creation From An HTML Table
 
-Add an HTML table. Specify the table header. Each of `th` elements you specify will become a column and the text will become the column header. Column widths can be set via `col` elements.
+Add an HTML table. Specify the table header. Each of the `th` elements you specify, will become a column and the text will become the column header. Column widths can be set via `col` elements.
+Fields and templates are defined via data attributes:
 
     <table id="grid">
 		<colgroup>
@@ -46,7 +47,7 @@ Add an HTML table. Specify the table header. Each of `th` elements you specify w
 			<tr>
 				<th data-field="firstName">First Name</th>
 				<th data-field="lastName">Last Name</th>
-				<th data-field="email">Email</th>
+				<th data-field="email" data-template="<a href='mailto:#= email #'>#= email #</a>">Email</th>
 			</tr>
 		</thead>
 		<tbody>
