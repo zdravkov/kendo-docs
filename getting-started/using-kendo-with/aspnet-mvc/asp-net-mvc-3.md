@@ -9,15 +9,10 @@ This tutorial shows how to use Kendo UI Complete for ASP.NET MVC in ASP.NET MVC 
 To create a new ASP.NET MVC 3 Application follow these steps.
 
 1. Open **Visual Studio 2010**.
-
 2. Press **CTRL+SHIFT+N** to create a new project.
-
 3. Select the **Visual C#** node and then **Web** to show all available web project templates for C#.
-
 4. Select ASP.NET MVC 3 Web Application and click **OK**. This will start the New ASP.NET MVC 3 Project wizard.
-
 5. Select **Internet Application** from the available templates and click **OK**. Alternatively you can select other templates - the remaining steps are the same.
-
 6. Press **CTRL+F5** to build and run the application.
 
 ![New ASP.NET MVC 3 Application](images/mvc3-new-app.png)
@@ -28,26 +23,21 @@ To use Kendo UI Complete for ASP.NET MVC you need to include the required JavaSc
 
 ### Include the JavaScript and CSS files
 
-Kendo UI requires certain JavaScript and CSS files to be included in the page. There are two options - either to include a local copy of those files** or** to use Kendo UI CDN (Content Delivery Network).
+Kendo UI requires certain JavaScript and CSS files to be included in the page. There are two options - either to include a local copy of those files **or** to use Kendo UI CDN (Content Delivery Network).
 
 Using local JavaScript and CSS
 
 To copy the Kendo UI JavaScript and CSS files in the Visual Studio Solution of the application follow these steps.
 
 1. Navigate to the install location of Kendo UI Complete for ASP.NET MVC. By default it is in **C:\Program Files (x86)\Telerik\**.
-
 2. Copy the **js** directory from the install location and paste it in the **Scripts** folder of the application.
-
 3. Copy the **styles** directory from the install location and paste it in the **Content** folder of the application.
-
 4. Rename the **Scripts/js** directory to **Scripts/kendo**. Rename **Content/styles** to **Content/kendo**.
-
 ![Kendo directories in Solution Explorer](images/mvc3-solution.png)
 
 After the Kendo UI JavaScript and CSS files are added in the application you can include them.
 
 1. Open the layout of the application. By default it is **Views/Shared/_Layout.cshtml** (or **Site.master** if using ASPX).
-
 2. Include **Content/kendo/kendo.common.min.css** and **Content/kendo/kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
 
     - Razor
@@ -58,8 +48,8 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
             <link rel="stylesheet" href="<%: Url.Content("~/Content/kendo/kendo.common.min.css") %>" />
             <link rel="stylesheet" href="<%: Url.Content("~/Content/kendo/kendo.default.min.css") %>" />
-3. Delete any existing ** script** tags that include older versions of jQuery.
 
+3. Delete any existing **script** tags that include older versions of jQuery.
 4. Include the jQuery JavaScript file distributed with Kendo UI or a compatible version from other location. Add a **script** tag in within the **head** tag of the layout.
 
     - Razor
@@ -68,6 +58,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
     - ASPX
 
             <script src="<%: Url.Content("~/Scripts/kendo/jquery.min.js") %>"></script>
+
 5. Include **Scripts/kendo/kendo.all.min.js** and **Scripts/kendo/kendo.aspnetmvc.min.js** after jQuery.
 
     - Razor
@@ -87,13 +78,12 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Important! Dont’t forget to replace "kendo ui version" from the code snippets below with the current version of Kendo UI e.g. “2013.2.918”.
 
 1. Open the layout of the application. By default it is **Views/Shared/_Layout.cshtml** (or **Site.master** if using ASPX).
-
 2. Include **Content/kendo/kendo.common.min.css** and **Content/kendo/kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
 
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.common.min.css" />
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.default.min.css" />
-3. Delete any existing **script** tags that include older versions of jQuery.
 
+3. Delete any existing **script** tags that include older versions of jQuery.
 4. Include the jQuery JavaScript file from Kendo CDN or a compatible version from other location. Add a **script** tag in within the **head** tag.
 
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/jquery.min.js”></script>
@@ -105,14 +95,11 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
 
 ### Add reference to Kendo.Mvc.dll
 
-The next step is to add a reference to ** Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.
+The next step is to add a reference to **Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.
 
 1. Right-click the **References** node in Solution Explorer and click **Add Reference**.
-
 2. Select the **Browse** tab of the **Add Reference** dialog and navigate to the install location of Kendo UI Complete for ASP.NET MVC.
-
 3. Navigate to **wrappers/aspnetmvc/Binaries/MVC3**. This directory contains the ASP.NET MVC 3 version of Kendo UI Complete for ASP.NET MVC.
-
 4. Select **Kendo.Mvc.dll** and click **OK**.
 
 ### Update the web.config
@@ -120,9 +107,7 @@ The next step is to add a reference to ** Kendo.Mvc.dll** which is the assembly 
 The next step is to let ASP.NET MVC know of the Kendo.Mvc.UI namespace where the server-side wrappers are. To do this update the web.config file of the web application.
 
 1. Open **Views/Web.config** (or root **Web.config** if using **ASPX**).
-
 2. Locate the **namespaces** tag.
-
 3. Append an **add** tag to the **namespaces** tag.
 
         <namespaces>
@@ -138,8 +123,7 @@ The next step is to let ASP.NET MVC know of the Kendo.Mvc.UI namespace where the
 
 Finally lets use a Kendo UI widget.
 
-1. Open the **Views/Home/Index.cshtml** view (or **Index.aspx** if using** ASPX**).
-
+1. Open the **Views/Home/Index.cshtml** view (or **Index.aspx** if using **ASPX**).
 2. Add a Kendo UI DatePicker widget.
 
     - Razor
@@ -148,7 +132,8 @@ Finally lets use a Kendo UI widget.
     - ASPX
 
             <%: Html.Kendo().DatePicker().Name("datepicker") %>
-3. Press ** CTRL+F5** to build and run the application.
+
+3. Press **CTRL+F5** to build and run the application.
 
 ![Final result](images/mvc3-final.png)
 
