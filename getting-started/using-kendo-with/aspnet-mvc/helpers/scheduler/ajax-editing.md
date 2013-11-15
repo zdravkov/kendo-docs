@@ -215,6 +215,8 @@ Name the model "Sample.edmx" and click "Next". This will start the "Entity Data 
                     .Model(m => {
                         m.Id(f => f.TaskID);
                         m.Field(f => f.OwnerID).DefaultValue(1);
+                        //Set the recurrence ID field from the model:
+                        m.RecurrenceId(f => f.RecurrenceID);
                     })
                     .Read("Tasks_Read", "Home")
                     .Create("Tasks_Create", "Home")
@@ -241,6 +243,8 @@ Name the model "Sample.edmx" and click "Next". This will start the "Entity Data 
                     .Model(m => {
                         m.Id(f => f.TaskID);
                         m.Field(f => f.OwnerID).DefaultValue(1);
+                        //Set the recurrence ID field from the model:
+                        m.RecurrenceId(f => f.RecurrenceID);
                     })
                     .Read("Tasks_Read", "Home")
                     .Create("Tasks_Create", "Home")
