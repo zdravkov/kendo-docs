@@ -67,11 +67,13 @@ For a list of available icon names, please refer to the [Icons demo](http://demo
 #### Using `.Icon()`
 
 * Razor
-        @(Html.Kendo().Button()
-            .Name("cancelButton")
-            .Icon("cancel")
-            .Content("Cancel"))
+
+    @(Html.Kendo().Button()
+        .Name("cancelButton")
+        .Icon("cancel")
+        .Content("Cancel"))
 * WebForms
+
         <%= Html.Kendo().Button()
             .Name("cancelButton")
             .Icon("cancel")
