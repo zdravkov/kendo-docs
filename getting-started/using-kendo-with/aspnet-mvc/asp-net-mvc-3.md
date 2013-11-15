@@ -39,7 +39,6 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
 1. Open the layout of the application. By default it is **Views/Shared/_Layout.cshtml** (or **Site.master** if using ASPX).
 2. Include **Content/kendo/kendo.common.min.css** and **Content/kendo/kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
-
     - Razor
 
             <link rel="stylesheet" href="@Url.Content("~/Content/kendo/kendo.common.min.css")" />
@@ -51,7 +50,6 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
 3. Delete any existing **script** tags that include older versions of jQuery.
 4. Include the jQuery JavaScript file distributed with Kendo UI or a compatible version from other location. Add a **script** tag in within the **head** tag of the layout.
-
     - Razor
 
             <script src="@Url.Content("~/Scripts/kendo/jquery.min.js")"></script>
@@ -60,7 +58,6 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
             <script src="<%: Url.Content("~/Scripts/kendo/jquery.min.js") %>"></script>
 
 5. Include **Scripts/kendo/kendo.all.min.js** and **Scripts/kendo/kendo.aspnetmvc.min.js** after jQuery.
-
     - Razor
 
             <script src="@Url.Content("~/Scripts/kendo/jquery.min.js")"></script>
@@ -125,7 +122,6 @@ Finally lets use a Kendo UI widget.
 
 1. Open the **Views/Home/Index.cshtml** view (or **Index.aspx** if using **ASPX**).
 2. Add a Kendo UI DatePicker widget.
-
     - Razor
 
             @(Html.Kendo().DatePicker().Name("datepicker"))
