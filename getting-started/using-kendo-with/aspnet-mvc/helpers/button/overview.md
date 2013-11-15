@@ -26,28 +26,32 @@ Placing clickable elements with their own special behavior inside the **Button**
 #### Using the default `button` tag
 
 * Razor
-    @(Html.Kendo().Button()
-        .Name("textButton")
-        .HtmlAttributes( new {type = "button"} )
-        .Content("Text button"))
+
+        @(Html.Kendo().Button()
+            .Name("textButton")
+            .HtmlAttributes( new {type = "button"} )
+            .Content("Text button"))
 * WebForms
-    <%= Html.Kendo().Button()
-        .Name("textButton")
-        .HtmlAttributes( new {type = "button"} )
-        .Content("Text button") %>
+
+        <%= Html.Kendo().Button()
+            .Name("textButton")
+            .HtmlAttributes( new {type = "button"} )
+            .Content("Text button") %>
 
 #### Using an `anchor` tag
 
 * Razor
-    @(Html.Kendo().Button()
-        .Name("textButton")
-        .Tag("a")
-        .Content("Text button"))
+
+        @(Html.Kendo().Button()
+            .Name("textButton")
+            .Tag("a")
+            .Content("Text button"))
 * WebForms
-    <%= Html.Kendo().Button()
-        .Name("textButton")
-        .Tag("a")
-        .Content("Text button") %>
+
+        <%= Html.Kendo().Button()
+            .Name("textButton")
+            .Tag("a")
+            .Content("Text button") %>
 
 ## Using Icons
 
@@ -68,10 +72,10 @@ For a list of available icon names, please refer to the [Icons demo](http://demo
 
 * Razor
 
-    @(Html.Kendo().Button()
-        .Name("cancelButton")
-        .Icon("cancel")
-        .Content("Cancel"))
+        @(Html.Kendo().Button()
+            .Name("cancelButton")
+            .Icon("cancel")
+            .Content("Cancel"))
 * WebForms
 
         <%= Html.Kendo().Button()
@@ -86,15 +90,17 @@ The above configuration will produce the following HTML output:
 #### Using `.SpriteCssClass()`
 
 * Razor
-    @(Html.Kendo().Button()
-        .Name("iconButton")
-        .SpriteCssClass("myIconClass")
-        .Content("Icon button"))
+
+        @(Html.Kendo().Button()
+            .Name("iconButton")
+            .SpriteCssClass("myIconClass")
+            .Content("Icon button"))
 * WebForms
-    <%= Html.Kendo().Button()
-        .Name("iconButton")
-        .SpriteCssClass("myIconClass")
-        .Content("Icon button") %>
+
+        <%= Html.Kendo().Button()
+            .Name("iconButton")
+            .SpriteCssClass("myIconClass")
+            .Content("Icon button") %>
 
 The above configuration will produce the following HTML output:
 
@@ -108,15 +114,17 @@ but `.Icon()` will spare you the need to set two CSS classes at the same time an
 The Button will use an existing `span` element if it is supplied as `.Content()`, e.g. if the goal is to have a Button with no text.
 
 * Razor
-    @(Html.Kendo().Button()
-        .Name("deleteButton")
-        .SpriteCssClass("myDeleteClass")
-        .Content("<span class='k-sprite'>Delete</span>"))
+
+        @(Html.Kendo().Button()
+            .Name("deleteButton")
+            .SpriteCssClass("myDeleteClass")
+            .Content("<span class='k-sprite'>Delete</span>"))
 * WebForms
-    <%= Html.Kendo().Button()
-        .Name("deleteButton")
-        .SpriteCssClass("myDeleteClass")
-        .Content("<span class='k-sprite'>Delete</span>") %>
+
+        <%= Html.Kendo().Button()
+            .Name("deleteButton")
+            .SpriteCssClass("myDeleteClass")
+            .Content("<span class='k-sprite'>Delete</span>") %>
 
 ### Image icons
 
@@ -125,15 +133,17 @@ Image icons are applied via the `.ImageUrl()` property and are displayed as a `i
 #### Using `.ImageUrl()`
 
 * Razor
-    @(Html.Kendo().Button()
-        .Name("iconButton")
-        .ImageUrl("/images/myIcon.gif")
-        .Content("Icon button"))
+
+        @(Html.Kendo().Button()
+            .Name("iconButton")
+            .ImageUrl("/images/myIcon.gif")
+            .Content("Icon button"))
 * WebForms
-    <%= Html.Kendo().Button()
-        .Name("iconButton")
-        .ImageUrl("/images/myIcon.gif")
-        .Content("Icon button") %>
+
+        <%= Html.Kendo().Button()
+            .Name("iconButton")
+            .ImageUrl("/images/myIcon.gif")
+            .Content("Icon button") %>
 
 The above configuration will produce the following HTML output:
 
@@ -142,15 +152,17 @@ The above configuration will produce the following HTML output:
 #### Using `.ImageUrl()` with no text
 
 * Razor
-    @(Html.Kendo().Button()
-        .Name("iconButton")
-        .ImageUrl("/images/myIcon.gif")
-        .Content("<img class='k-image' alt='my icon' />"))
+
+        @(Html.Kendo().Button()
+            .Name("iconButton")
+            .ImageUrl("/images/myIcon.gif")
+            .Content("<img class='k-image' alt='my icon' />"))
 * WebForms
-    <%= Html.Kendo().Button()
-        .Name("iconButton")
-        .ImageUrl("/images/myIcon.gif")
-        .Content("<img class='k-image' alt='my icon' />") %>
+
+        <%= Html.Kendo().Button()
+            .Name("iconButton")
+            .ImageUrl("/images/myIcon.gif")
+            .Content("<img class='k-image' alt='my icon' />") %>
 
 ## Enabled and Disabled buttons
 
@@ -161,15 +173,17 @@ The widget can also be disabled or enabled at any time with Javascript by using 
 ### Using `.Enable()`
 
 * Razor
-    @(Html.Kendo().Button()
-        .Name("textButton")
-        .Enable(false)
-        .Content("my button"))
+
+        @(Html.Kendo().Button()
+            .Name("textButton")
+            .Enable(false)
+            .Content("my button"))
 * WebForms
-    <%= Html.Kendo().Button()
-        .Name("textButton")
-        .Enable(false)
-        .Content("my button") %>
+
+        <%= Html.Kendo().Button()
+            .Name("textButton")
+            .Enable(false)
+            .Content("my button") %>
 
 For more information on the **Button** [`enable` method](/api/web/button#methods-enable), please refer to the [Button API](/api/web/button/).
 
