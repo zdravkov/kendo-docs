@@ -716,6 +716,30 @@ Opens the popup.
     dropdownlist.focus();
     </script>
 
+### enable
+
+Enables or disables the widget.
+
+#### Parameters
+
+##### enable `Boolean`
+
+If set to `true` the widget will be enabled. If set to `false` the widget will be disabled.
+
+#### Example - enable the widget
+
+    <select id="dropdownlist">
+        <option>Item1</option>
+        <option>Item2</option>
+    </select>
+    <script>
+    $("#dropdownlist").kendoDropDownList({
+      enable: false
+    });
+    var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
+    dropdownlist.enable(true);
+    </script>
+
 ### readonly
 
 Controls whether the widget is editable or readonly.
