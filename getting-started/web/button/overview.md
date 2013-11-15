@@ -78,7 +78,7 @@ The **Button** can accommodate an icon, which enhances the meaning of the text c
 The widget provides three ways to add an icon with a classic `img` element or with a background image (usually a sprite).
 From web standarts' point of view, using background images is better, because the icon does not represent structural content, but it's simply a decoration.
 
-There are three properties, which the **Button** provides with regard to configuring icons - `icon`, `spriteCssClass` and `imageUrl`.
+There are three properties, which the **Button** provides for configuring icons - `icon`, `spriteCssClass` and `imageUrl`.
 Only one should be used with a particular **Button** instance. If multiple properties are defined, only one will be obeyed, in the order above.
 
 ### Background icons
