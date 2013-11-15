@@ -759,7 +759,7 @@ Controls whether the widget is editable or readonly.
 
 ##### readonly `Boolean`
 
-The argument, which defines whether the timepicker should be readonly or editable.
+The argument, which defines whether the datepicker should be readonly or editable.
 
 ### refresh
 
