@@ -25,7 +25,7 @@ There are various reasons which may cause this. Follow the troubleshooting instr
 ### Ajax Binding Troubleshooting
 
 1. Use your browser's developer console to check for any JavaScript errors. In most browsers pressing **F12** will pop up the developer console. Address all JavaScript errors.
-More info can be found in the [troubleshooting help topic](/getting-started/using-kendo-with/aspnetmvc/troubleshooting).
+More info can be found in the [troubleshooting help topic](/getting-started/using-kendo-with/aspnet-mvc/troubleshooting).
 2. Check the "Network" (or "Net" in Firebug) tab of the browser developer console. Look for a failed HTTP request for the action method configured via the `DataSource` grid setting.
     - HTTP status code [401](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#401) indicates that authentication is required and has failed or not yet been provided.
     - HTTP status code [403](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#403) indicates that request is not authorized. Perhaps the current user does not have
