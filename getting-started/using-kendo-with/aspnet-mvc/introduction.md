@@ -1,397 +1,101 @@
 ---
-title: Introduction
-meta_title: Documentation guide for Kendo UI for ASP.NET MVC
-meta_description: How to download, install Kendo UI Complete for ASP.NET MVC and run a sample application.
+title: Introduction to Kendo UI Complete for ASP.NET MVC
+meta_title: Introduction to Kendo UI Complete for ASP.NET MVC
+meta_description: How to download, install Kendo UI Complete for ASP.NET MVC and run the sample application.
 slug: mvc-introduction
 publish: true
 ---
 
-## What is ASP.NET MVC
+# Kendo UI Complete for ASP.NET MVC
 
- [ASP.NET MVC](http://www.asp.net/mvc/) is a free and fully supported Microsoft framework for building web applications that use the model-view-controller pattern.
-ASP.NET MVC is built on top of the [ASP.NET](http://www.asp.net/) framework.
+**Kendo UI Complete for ASP.NET MVC** is a set of server-side wrappers that allow using the Kendo UI widgets from C# or VB.NET code.
+This article shows how to download **Kendo UI Complete for ASP.NET MVC**, install it and then run the sample ASP.NET MVC application.
 
-## What is Kendo UI Complete for ASP.NET MVC
+## Requirements
 
-Kendo UI Complete for ASP.NET MVC is a set of HTML helpers which help you configure Kendo UI widgets by using server-side code in ASP.NET MVC applications.
+Kendo UI Complete for ASP.NET MVC requires ASP.NET MVC. It supports ASP.NET MVC  3, 4, and 5.
 
-Kendo UI Complete for ASP.NET MVC provides the following benefits:
+The sample application requires:
 
-*   Built on top of the Kendo UI HTML5 framework and jQuery
-*   Built-in support for server-side paging, sorting, filtering, grouping and aggregates
-*   Leverages ASP.NET MVC features - data annotation, editor and display templates, validation, authorization
-*   Supports the WebForms and Razor view engines
+* ASP.NET MVC 4 or ASP.NET MVC 5
+* Visual Studio 2012 or Visual Studio 2013
+* LocalDB
 
-## Downloading and Installing Kendo UI Complete for ASP.NET MVC
+The Kendo UI Visual Studio Extension supports Visual Studio 2010 and Visual Studio 2012.
 
-You can choose to download either the MSI installer or the ZIP file. If you choose the former just run the MSI file to install it. If you choose to
-download the ZIP file simply extract it to your preferred location.
+## Download
 
-The distribution files include the following directories:
+To download **Kendo UI Complete for ASP.NET MVC **follow these steps.
 
-*   **\js** - Kendo UI minified JavaScript files.
-*   **\styles** - Kendo UI minified CSS files and images used by the themes.
-*   **\src** - Complete JavaScript, CSS and C# source code. The source code is available **only** in the commercial distribution of Kendo UI Complete for ASP.NET MVC.
-*   **\wrappers\aspnetmvc\Binaries** - Kendo UI Complete for ASP.NET MVC assemblies.
-*   **\wrappers\aspnetmvc\Examples** - a sample ASP.NET MVC application.
-*   **\wrappers\aspnetmvc\EditorTemplates** - ready-to-use editor templates based on various Kendo UI widgets.
-*   **\wrappers\aspnermvc\LegacyThemes** - Kendo UI themes ported from [Telerik Extensions for ASP.NET MVC](http://www.telerik.com/products/aspnet-mvc.aspx) themes.
+1. Log in to your [Telerik account](http://www.telerik.com/account.aspx).
+2. Click **Products & Subscriptions** in the top navigation.
+3. Click **Kendo UI Complete for ASP.NET MVC**. If this option is not available click one of the following: **DevCraft UI Edition**, **DevCraft Complete** or** DevCraft Ultimate**.
+4. Click **Download Installer and other resources**.
+5. Find the **Kendo UI Complete for ASP.NET MVC**  item and click **Download** next to it. This will download the product installer. Alternatively you may click **Browse all product files ** and download the zip file.
 
-## Running the sample application
+## Installation
 
-You can find a sample ASP.NET MVC application in the **\wrappers\aspnetmvc\Examples** folder.
-It contains the following:
+Run the **Kendo UI Complete for ASP.NET MVC** installer. The automatic setup will guide you through the rest of the installation. If you chose to download the zip file - extract it to a location of your preference.
 
-*   **Areas/aspx** - WebForm views
-*   **Areas/razor** - Razor views
-*   **Controllers** - controller classes
-*   **Models** - model classes
+### Install Location
 
-> The sample ASP.NET MVC application is built with ASP.NET MVC 3.
+The setup will install Kendo UI Complete for ASP.NET MVC in **C:\Program Files (x86)\Telerik\Kendo UI for ASP.NET MVC <version>**.
 
-## Kendo UI for ASP.NET MVC Visual Studio Extensions
+### Distribution contents
 
-You can download the [Kendo UI for ASP.NET MVC Visual Studio Extensions package](http://visualstudiogallery.msdn.microsoft.com/65b78c2c-951e-43a8-bae7-f9039f59fb9b). It adds a
-few project templates and wizards that allow the following:
+The **Kendo UI Complete for ASP.NET MVC** contains the following directories.
 
-* Create a new Kendo UI ASP.NET MVC 3 or ASP.NET MVC 4 application
-* Add Kendo UI to an existing application
-* Configure a Kendo UI ASP.NET MVC application
-* Automatically check and update Kendo UI Complete for ASP.NET MVC
+* **js** - Kendo UI minified JavaScript files.
+* **styles** - Kendo UI minified CSS files and images used by the themes.
+* **src** - complete JavaScript, CSS and C# source code. **N/A** in the trial version.
+* **wrappers\aspnetmvc\Binaries\MVC3** - Kendo UI assemblies for ASP.NET MVC 3 applications.
+* **wrappers\aspnetmvc\Binaries\MVC4**- Kendo UI assemblies for ASP.NET MVC 4 applications.
+* **wrappers\aspnetmvc\Binaries\MVC5**- Kendo UI assemblies for ASP.NET MVC 5 applications.
+* **wrappers\aspnetmvc\Examples\VS2012**- ASP.NET MVC 4 sample application built with Visual Studio 2012.
+* **wrappers\aspnetmvc\Examples\VS2013**- ASP.NET MVC 5 sample application built with Visual Studio 2013.
+* **wrappers\aspnetmvc\EditorTemplates**- ready-to-use editor templates based on the Kendo UI widgets.
+* **wrappers\aspnetmvc\LegacyThemes** - Kendo UI themes ported from Telerik Extensions for ASP.NET MVC.
 
-## Manually add Kendo UI to ASP.NET MVC applications
+## Sample application
 
-> **Only one** combined script file (kendo.all.js, kendo.web.js, kendo.dataviz.js and kendo.mobile.js) can be registered on the page.
-For more information, please refer to the [Javascript Dependencies page](/getting-started/javascript-dependencies).
+Kendo UI Complete for ASP.NET MVC comes with a sample ASP.NET MVC application available in two versions.
 
-### Using Kendo UI in ASP.NET MVC 3 application
+* ASP.NET MVC 4 application built with Visual Studio 2012
+* ASP.NET MVC 5 application built with Visual Studio 2013
 
-1.  Create a new ASP.NET MVC 3 application from Visual Studio or open an existing one.
+### Running the sample application
 
-2.  Add a reference to **\wrappers\aspnetmvc\Binaries\Mvc3\Kendo.Mvc.dll**.
+To run the sample application follow these steps.
 
-3.  Copy the Kendo UI JavaScript files from the **\js** folder of the installation to the **Scripts** folder of your application.
-If you want to use CDN skip steps 3, 4 and 5 and check the [Using CDN](#using-cdn) section.
+1. Navigate to the installation directory of Kendo UI Complete for ASP.NET MVC.
+2. Open the sample Visual Studio Solution
 
-4.  Copy the Kendo UI CSS files and folders from the **\styles** folder of the installation to the **Content** folder of your application. If you want to use only one theme
-copy **kendo.common.min.css**, the theme file (e.g. **kendo.default.min.css**), the theme folder (e.g. **Default**) and the **textures** folder.
-
-5.  Configure your ASP.NET MVC layout page to include the Kendo UI Web JavaScript and CSS files:
-    * WebForms:
+    - to run the ASP.NET MVC 4 version open **wrappers\aspnetmvc\Examples\VS2012\Kendo.Mvc.Examples.sln** with **Visual Studio 2012**.
 
-             <link href="<%= Url.Content("~/Content/kendo.common.min.css") %>" rel="stylesheet" type="text/css" />
-             <link href="<%= Url.Content("~/Content/kendo.default.min.css") %>" rel="stylesheet" type="text/css" />
-             <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
-             <script src="<%= Url.Content("~/Scripts/kendo.web.min.js") %>"></script>
-             <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
-    * Razor:
+    - to run the ASP.NET MVC 5 version open** wrappers\aspnetmvc\Examples\VS2013\Kendo.Mvc.Examples.sln** with **Visual Studio 2013**.
 
-             <link rel="stylesheet" href="@Url.Content("~/Content/kendo.common.min.css")">
-             <link rel="stylesheet" href="@Url.Content("~/Content/kendo.default.min.css")">
-             <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
-             <script src="@Url.Content("~/Scripts/kendo.web.min.js")"></script>
-             <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
-
-6.  Configure your ASP.NET MVC layout page to include the Kendo UI DataViz JavaScript and CSS files. **Important**: If you want to use Kendo UI Web and DataViz at the same time you should include **kendo.all.min.js** instead of **kendo.web.min.js** and **kendo.dataviz.min.js**. You
-    can also create a custom JavaScript file using the [Custom Download Builder](http://www.kendoui.com/custom-download).
-    * WebForms:
-
-             <link href="<%= Url.Content("~/Content/kendo.dataviz.min.css") %>" rel="stylesheet" type="text/css" />
-             <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
-             <script src="<%= Url.Content("~/Scripts/kendo.dataviz.min.js") %>"></script>
-             <script src="<%= Url.Content("~/Scripts/kendo.aspnetmvc.min.js") %>"></script>
-    * Razor:
-
-             <link href="@Url.Content("~/Content/kendo.dataviz.min.css")" rel="stylesheet" type="text/css" />
-             <script src="@Url.Content("~/Scripts/jquery.min.js")"></script>
-             <script src="@Url.Content("~/Scripts/kendo.dataviz.min.js")"></script>
-             <script src="@Url.Content("~/Scripts/kendo.aspnetmvc.min.js")"></script>
+3. Press **CTRL+F5** to build and run the application.
 
-7. Add a reference to the **Kendo.Mvc.UI** namespace to your **web.config**. Then the `Kendo` HtmlHelper extension would
-be availble in your views. Rebuild your project after adding the namespace to the web.config (required for Visual Studio to show intellisense for Kendo.Mvc.UI).
-    * If you are using the WebForms view engine open the **web.config** file in the root folder of your application. Add
-     `<add namespace="Kendo.Mvc.UI" />` before the closing `namespaces` tag:
-
-             <namespaces>
-                 <add namespace="System.Web.Mvc" />
-                 <add namespace="System.Web.Mvc.Ajax" />
-                 <add namespace="System.Web.Mvc.Html" />
-                 <add namespace="System.Web.Routing" />
-                 <add namespace="System.Linq" />
-                 <add namespace="System.Collections.Generic" />
-                 <add namespace="Kendo.Mvc.UI" />
-             </namespaces>
-    * If you are using the Razor view engine open the **web.config** file which is in the **Views** folder
-     of your application.Add `<add namespace="Kendo.Mvc.UI" />` before the closing `namespaces` tag:
-
-             <system.web.webPages.razor>
-                 <pages pageBaseType="System.Web.Mvc.WebViewPage">
-                     <namespaces>
-                         <add namespace="System.Web.Mvc" />
-                         <add namespace="System.Web.Mvc.Ajax" />
-                         <add namespace="System.Web.Mvc.Html" />
-                         <add namespace="System.Web.Routing" />
-                         <add namespace="Kendo.Mvc.UI" />
-                     </namespaces>
-                 </pages>
-             </system.web.webPages.razor>
-
-8.  Use any Kendo UI HtmlHelper extension:
-    * WebForms
-
-            <%: Html.Kendo().DatePicker().Name("Birthday") %>
-    * Razor
-
-            @(Html.Kendo().DatePicker().Name("Birthday"))
-
-### Using Kendo UI in ASP.NET MVC 4 application
-
-> This section includes information about ASP.NET MVC bundling. The information is not related to Kendo UI, but we provide it for greater convenience.
-
-> For more details, please refer to the [official ASP.NET MVC documentation](http://www.asp.net/mvc/tutorials/mvc-4/bundling-and-minification).
-
-1. Create a new ASP.NET MVC 4 application from Visual Studio or open an existing one.
-
-1. Add a reference to **\wrappers\aspnetmvc\Binaries\Mvc3\Kendo.Mvc.dll**.
-> **Important:** Kendo UI Complete for ASP.NET MVC currently ships a single assembly which works in both ASP.NET MVC 3 and 4 applications.
-
-1. Make sure the following section is present in your **web.config**. Add if not present:
-
-        <configuration>
-            <!--... elements deleted for clarity ...-->
-            <runtime>
-                <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-                    <dependentAssembly>
-                        <assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35" />
-                        <bindingRedirect oldVersion="1.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
-                    </dependentAssembly>
-                    <dependentAssembly>
-                        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
-                        <bindingRedirect oldVersion="1.0.0.0-4.0.0.0" newVersion="4.0.0.0" />
-                    </dependentAssembly>
-                    <dependentAssembly>
-                        <assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" />
-                        <bindingRedirect oldVersion="1.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
-                    </dependentAssembly>
-                </assemblyBinding>
-            </runtime>
-        </configuration>
-
-1.  Copy the Kendo UI JavaScript files from the **\js** folder of the installation to the **Scripts** folder of your application.
-If you want to use CDN skip steps 4 and 5 and check the [Using CDN](#using-cdn) section.
-
-1.  Copy the Kendo UI CSS files and folders from the **\styles** folder of the installation to the **Content** folder of your application. If you want to use only one theme,
-then copy **kendo.common.min.css**, the theme file (e.g. **kendo.default.min.css**), the theme folder (e.g. **Default**) and the **textures** folder.
-
-1.  Create bundles for the CSS and JavaScript files of Kendo UI by defining them in a static method of a class, e.g. in **~/BundlesConfig.cs**.
-The files can be defined with their full names or by using wildcards. **Pay special attention when using wildcards (see below).**
-    * If the Kendo UI JavaScript files are in **~/Scripts** and the CSS files are in **~/Content** :
-
-            public static void RegisterBundles(BundleCollection bundles)
-            {
-                // The jQuery bundle
-                bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                                "~/Scripts/jquery-1.*"));
-
-                // The Kendo JavaScript bundle
-                bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
-                        "~/Scripts/kendo.web.*", // or kendo.all.* if you want to use Kendo UI Web and Kendo UI DataViz
-                        "~/Scripts/kendo.aspnetmvc.*"));
-
-                // The Kendo CSS bundle
-                bundles.Add(new StyleBundle("~/Content/kendo").Include(
-                        "~/Content/kendo.common.*",
-                        "~/Content/kendo.default.*"));
-
-                // Clear all items from the ignore list to allow minified CSS and JavaScript files in debug mode
-                bundles.IgnoreList.Clear();
-
-                // Add back the default ignore list rules sans the ones which affect minified files and debug mode
-                bundles.IgnoreList.Ignore("*.intellisense.js");
-                bundles.IgnoreList.Ignore("*-vsdoc.js");
-                bundles.IgnoreList.Ignore("*.debug.js", OptimizationMode.WhenEnabled);
-				
-				// enforce bundling and usage of *.min.* files even in debug mode
-				// BundleTable.EnableOptimizations = true;
-            }
-    * If the Kendo UI JavaScript files are in **~/Scripts/kendo/{version}** and the CSS files are in **~/Content/kendo/{version}** where **{version}** is the current Kendo UI version (e.g. 2012.3.1315):
-
-            public static void RegisterBundles(BundleCollection bundles)
-            {
-                // The jQuery bundle
-                bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                                "~/Scripts/jquery-1.*"));
-
-                // The Kendo JavaScript bundle - replace "2012.3.1315" with the Kendo UI version that you are using
-                bundles.Add(new ScriptBundle("~/bundles/kendo")
-                     .Include("~/Scripts/kendo/2012.3.1315/kendo.web.*") // or kendo.all.min.js
-                     .Include("~/Scripts/kendo/2012.3.1315/kendo.aspnetmvc.*")
-                );
-
-                // The Kendo CSS bundle - replace "2012.3.1315" with the Kendo UI version that you are using
-                bundles.Add(new StyleBundle("~/Content/kendo/2012.3.1315/css")
-                      .Include("~/Content/kendo/2012.3.1315/kendo.common.*")
-                      .Include("~/Content/kendo/2012.3.1315/kendo.default.*")
-                );
-
-                // Clear all items from the ignore list to allow minified CSS and JavaScript files in debug mode
-                bundles.IgnoreList.Clear();
-
-                // Add back the default ignore list rules sans the ones which affect minified files and debug mode
-                bundles.IgnoreList.Ignore("*.intellisense.js");
-                bundles.IgnoreList.Ignore("*-vsdoc.js");
-                bundles.IgnoreList.Ignore("*.debug.js", OptimizationMode.WhenEnabled);
-				
-				// enforce bundling even in debug mode
-				// BundleTable.EnableOptimizations = true;
-            }
-    > ASP.NET bundling makes the following assumptions when wildcards are used:
-    If `kendo.web.*` is included, the framework will check whether a `kendo.web.min.js` file exists.
-    If yes, then this file will be used in **release mode only**.
-    The framework will search for a `kendo.web.js` file for **debug** mode. If such a file is not found, the Kendo UI scripts will not be registered and you will experience Javascript errors.
-    If a `kendo.web.min.js` file does not exist, but a `kendo.web.js` file exists, then it will be used in **both** release and debug mode. The same logic applies for CSS files.
-    If you want to enforce minified files in both debug and release mode, you can do so by setting `BundleTable.EnableOptimizations` to `true`, as shown above,
-    or by registering files using their full names instead of using wildcards.
-    
-1.  Register the bundles by executing the static method from the previous point in the `Application_Start()` method in **~/Global.asax.cs**:
-
-        protected void Application_Start()
-        {
-            // ...
-
-            BundlesConfig.RegisterBundles(BundleTable.Bundles);
-        }
-
-1.  Load the bundles in your layout page at the end of the `head` element. **Remove any existing jQuery bundle registration at end of the `body` element of the page.** **Note:** If you don't want to use ASP.NET bundles perform steps 5 and 6 from the [Using Kendo UI in ASP.NET MVC 3 application](#using-kendo-ui-in-asp.net-mvc-3-application) section.
-    * If the Kendo UI JavaScript files are in **~/Scripts** and the CSS files are in **~/Content** :
-        * WebForms:
-
-                <head>
-                    <!-- other content -->
-                    <%: Styles.Render("~/Content/kendo") %>
-                    <%: Scripts.Render("~/bundles/jquery") %>
-                    <%: Scripts.Render("~/bundles/kendo") %>
-                </head>
-        * Razor:
-
-                <head>
-                    <!-- other content -->
-                    @Styles.Render("~/Content/kendo")
-                    @Scripts.Render("~/bundles/jquery")
-                    @Scripts.Render("~/bundles/kendo")
-                </head>
-    * If the Kendo UI JavaScript files are in **~/Scripts/kendo/{version}** and the CSS files are in **~/Content/kendo/{version}** where **{version}** is the current Kendo UI version (e.g. 2012.3.1315):
-        * WebForms:
-
-                <head>
-                    <!-- other content -->
-                    <%: Styles.Render("~/Content/kendo/2012.3.1315/css") %>
-                    <%: Scripts.Render("~/bundles/jquery") %>
-                    <%: Scripts.Render("~/bundles/kendo") %>
-                </head>
-        * Razor:
-
-                <head>
-                    <!-- other content -->
-                    @Styles.Render("~/Content/kendo/2012.3.1315/css")
-                    @Scripts.Render("~/bundles/jquery")
-                    @Scripts.Render("~/bundles/kendo")
-                </head>
-    > The Kendo UI theme stylesheets use relative paths to the theme images. This requires the theme images to be located in accordance with the relative paths in the CSS code.
-The easiest way to achieve this is to match the virtual bundle URL with the physical location of the CSS files, as demonstrated above.
-Otherwise, the theme images must be placed in a folder with a name that matches the used theme name and this subfolder should be a child folder of the bundle path.
-
-1. Add a reference to the **Kendo.Mvc.UI** namespace to your **web.config**. Then the `Kendo` HtmlHelper extension would
-be availble in your views. Rebuild your project after adding the namespace to the web.config (required for Visual Studio to show intellisense for Kendo.Mvc.UI).
-    * If you are using the WebForms view engine open the **web.config** file in the root folder of your application. Add
-     `<add namespace="Kendo.Mvc.UI" />` before the closing `namespaces` tag:
-
-             <namespaces>
-                 <add namespace="System.Web.Mvc" />
-                 <add namespace="System.Web.Mvc.Ajax" />
-                 <add namespace="System.Web.Mvc.Html" />
-                 <add namespace="System.Web.Routing" />
-                 <add namespace="System.Linq" />
-                 <add namespace="System.Collections.Generic" />
-                 <add namespace="Kendo.Mvc.UI" />
-             </namespaces>
-    * If you are using the Razor view engine open the **web.config** file which is in the **Views** folder
-     of your application.Add `<add namespace="Kendo.Mvc.UI" />` before the closing `namespaces` tag:
-
-             <system.web.webPages.razor>
-                 <pages pageBaseType="System.Web.Mvc.WebViewPage">
-                     <namespaces>
-                         <add namespace="System.Web.Mvc" />
-                         <add namespace="System.Web.Mvc.Ajax" />
-                         <add namespace="System.Web.Mvc.Html" />
-                         <add namespace="System.Web.Routing" />
-                         <add namespace="Kendo.Mvc.UI" />
-                     </namespaces>
-                 </pages>
-             </system.web.webPages.razor>
-
-1.  Use any Kendo UI HtmlHelper extension:
-    * WebForms
-
-            <%: Html.Kendo().DatePicker().Name("Birthday") %>
-    * Razor
-
-            @(Html.Kendo().DatePicker().Name("Birthday"))
-
-### Using CDN
-
-You can include the JavaScript and CSS files from CDN. Don't forget to specify the version (e.g. 2012.2.710)
-
-    <link href="http://cdn.kendostatic.com/<version>/styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://cdn.kendostatic.com/<version>/styles/kendo.default.min.css" rel="stylesheet" type="text/css" />
-    <!-- jQuery is not hosted on Kendo CDN - include from another location -->
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="http://cdn.kendostatic.com/<version>/js/kendo.web.min.js"></script>
-    <script src="http://cdn.kendostatic.com/<version>/js/kendo.aspnetmvc.min.js"></script>
-
-## Deferring Kendo UI Initialization Scripts
-
-When using server-side wrappers, the Kendo UI widget initialization scripts are rendered right after the widget's HTML markup.
-This may not be always desired, e.g. if the script files are registered at the bottom of the page, or when nesting Kendo UI widgets.
-In order to move initialization statements, one can use the following approach:
-
-    @(Html.Kendo().TabStrip()
-        .Name("tabstrip")
-        .Deferred()
-    )
-
-    ...some other page content here...
-
-    @Html.Kendo().DeferredScripts()
-
-The `Deferred()` fluent method will suppress immediate script statement rendering, while the `DeferredScripts()` method will output all previously deferred initialization statements.
-
-`DeferredScripts()` accepts a boolean parameter, which determines whether `&lt;script&gt;` tags should be rendered automatically, for example
-
-    @Html.Kendo().DeferredScripts(false)
-
-The default value is `true`. Setting false will allow you to include the initialization scripts in an existing `script` element.
-
-## Using Kendo UI MVC wrappers inside client templates with ToClientTemplate()
-
-By default, a Kendo UI wrapper will render some HTML tags and a `script` tag with an initialization statement.
-If the wrapper declaration is placed inside a Kendo UI client template `script` tag, this will produce nested `script` tags.
-The `ToClientTemplate()` fluent method instructs the widget wrapper to escape its own script tag, so that it can be nested.
-
-	<script id="numericTemplate" type="text/x-kendo-template">
-	 
-		@(Html.Kendo().NumericTextBox().Name("num1").ToClientTemplate())
-	 
-	</script>
-	 
-	<div id="container"></div>
-	 
-	<script>
-		$(document).ready(function () {
-	 
-			var tpl = kendo.template($("#numericTemplate").html());
-	 
-			$("#container").append( tpl({}) );
-	 
-		});
-	</script>
+4. A browser will load the start page of the sample application. Use the links to explore the available demos.
+
+![Kendo UI Complete for ASP.NET MVC Sample Application](images/demos.png)
+
+### Contents
+
+The sample application Visual Studio solution contains the following.
+
+* **Areas/aspx/Views** - WebForm views.
+* **Areas/razor/Views**- Razor views.
+* **Controllers** - Controller classes.
+* **Models** - Model classes.
+* **App_Data**- LocalDB sample database.
+
+## Next Steps
+
+After you run the sample application you can continue with the following articles.
+
+* [Kendo UI in ASP.NET MVC 3 application](/getting-started/using-kendo-with/aspnet-mvc/asp-net-mvc-3)
+* [Kendo UI in ASP.NET MVC 4 application](/getting-started/using-kendo-with/aspnet-mvc/asp-net-mvc-4)
+* [Kendo UI in ASP.NET MVC 5 application](/getting-started/using-kendo-with/aspnet-mvc/asp-net-mvc-5)
+* [Kendo UI for ASP.NET MVC fundamentals](/getting-started/using-kendo-with/aspnet-mvc/fundamentals)
+* [Using the Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
