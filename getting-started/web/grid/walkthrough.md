@@ -115,7 +115,9 @@ This can be disabled by setting the `autoBind` option of the grid to `false`.
 
 ## Grid Size
 
-By default, the grid will expand to fit the width and height of its container and contents.  You can control the height of the grid by specifying a static pixel value.
+By default, the Grid has no height and expands vertically to fit its contents (for backwards compatibility, a scrollable MVC wrapper of the Grid has a 200px height for its scrollable data area).
+You can control the height of the grid by specifying a static pixel value.
+
     $("#grid").kendoGrid({
         height: 100,
         // other configuration
@@ -124,7 +126,7 @@ By default, the grid will expand to fit the width and height of its container an
 
 ![Grid With Fixed Height And Scrolling](grid3_1.png)
 
-Setting CSS width properties for the grid itself, or the parent container of the grid controls the width of the grid.
+As all block elements, the Grid expands to 100% width. Setting CSS width properties for the Grid itself, or some of its ancestors can control the width of the Grid.
 
 When using hierarchy, the detail template content cannot be wider than the total width of all master columns, unless the detail template is scrollable.
 
