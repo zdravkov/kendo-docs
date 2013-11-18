@@ -243,6 +243,7 @@ As of Q2 2013, you can disable the app mode and open the home screen web clip li
 
 iOS7 introduced application status bars that merge with your application, creating a more unified look. This can be achieved in a native application by setting UIStatusBarStyleLightContent style.
 However Apple didn't update the web clip status bar meta tag to support similar functionality, except that now black-translucent makes the status bar completely transparent with white icons.
+On the contrary, in Icenium/PhoneGap, the status bar has black icons - their color can be only controlled with the [official Cordova Status Bar Plugin](https://github.com/apache/cordova-labs/tree/plugins/statusbar).
 Knowing this, you can achieve the seamless status bar in Kendo UI Mobile starting from Q2 2013 SP, but only with darker backgrounds. For instance, this complete example will make a pink NavBar
 with seamless status bar on top of it:
 
