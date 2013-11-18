@@ -4,6 +4,7 @@ meta_title: Explains how to bind the Kendo UI TreeView to a flat data table that
 meta_description: Documentation for the Kendo UI TreeView widget.
 slug: gs-web-treeview-binding-to-flat-table
 relatedDocs: api-web-treeview
+ordinal: 2
 tags: getting-started,web
 publish: true
 ---
