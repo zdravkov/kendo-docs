@@ -1,3 +1,10 @@
+---
+title: Kendo UI in ASP.NET MVC 3
+meta_title: Using Kendo UI with ASP.NET MVC 3
+meta_description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 3 applications
+slug: mvc-3
+publish: true
+---
 # Kendo UI Complete for ASP.NET MVC in ASP.NET MVC 3
 
 This tutorial shows how to use Kendo UI Complete for ASP.NET MVC in ASP.NET MVC 3 applications. The tutorial uses Visual Studio 2010 but will work with all Visual Studio versions that support ASP.NET MVC 3. The tutorial also creates a new ASP.NET MVC 3 application but the steps to use Kendo UI in exsiting ASP.NET MVC 3 application are the same.
@@ -75,7 +82,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Important! Dont’t forget to replace "kendo ui version" from the code snippets below with the current version of Kendo UI e.g. “2013.2.918”.
 
 1. Open the layout of the application. By default it is **Views/Shared/_Layout.cshtml** (or **Site.master** if using ASPX).
-2. Include **Content/kendo/kendo.common.min.css** and **Content/kendo/kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
+2. Include **kendo.common.min.css** and **kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
 
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.common.min.css" />
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.default.min.css" />
