@@ -142,4 +142,4 @@ Finally lets use a Kendo UI widget.
 * Kendo UI for ASP.NET MVC fundamentals
 
 * [Using the Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
-
+* [Troubleshooting](/getting-started/using-kendo-with/aspnet-mvc/troubleshooting)
