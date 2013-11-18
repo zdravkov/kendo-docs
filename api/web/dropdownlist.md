@@ -115,7 +115,7 @@ Controls whether to bind the widget to the data source on initialization.
 ### cascadeFrom `String`
 
 Use it to set the Id of the parent dropdownlist widget.
-[Help topic showing how cascading functionality works](/web/dropdownlist/cascading)
+[Help topic showing how cascading functionality works](/getting-started/web/dropdownlist/cascading)
 
 #### Example
 

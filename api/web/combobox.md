@@ -115,7 +115,7 @@ Controls whether to bind the widget to the data source on initialization.
 ### cascadeFrom `String`
 
 Use it to set the Id of the parent ComboBox widget.
-[Help topic showing how cascading functionality works](/web/combobox/cascading)
+[Help topic showing how cascading functionality works](/getting-started/web/combobox/cascading)
 
 #### Example
 
