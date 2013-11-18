@@ -18,7 +18,7 @@ To create a new ASP.NET MVC 4 Application follow these steps.
 
 1. Open **Visual Studio 2012**.
 2. Press **CTRL+SHIFT+N** to create a new project.
-3. Select the **Visual C#** node and then**Web* to show all available web project templates for C#.
+3. Select the **Visual C#** node and then **Web* to show all available web project templates for C#.
 4. Select **ASP.NET MVC 4 Web Application** and click **OK**. This will start the **New ASP.NET MVC 4 Project** wizard.
 5. Select **Internet Application** from the available templates and click **OK**. Alternatively you can select other templates - the remaining steps are the same.
 6. Press **CTRL+F5** to build and run the application.
@@ -82,10 +82,10 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
 #### Using Kendo UI CDN
 
-To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Important! Dont’t forget to replace "kendo ui version" from the code snippets below with the current version of Kendo UI e.g. "2013.2.918".
+To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Important! Don't forget to replace "kendo ui version" from the code snippets below with the current version of Kendo UI e.g. "2013.2.918".
 
 1. Open the layout of the application. By default it is **Views/Shared/_Layout.cshtml** (or **Site.master** if using ASPX).
-2. Include **kendo.common.min.css** and **kendo.default.min.css**. Add a **link** tag within the **head **tag of the layout.
+2. Include **kendo.common.min.css** and **kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
 
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.common.min.css" />
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.default.min.css" />
