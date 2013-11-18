@@ -28,8 +28,8 @@ The default configuration for shape layers.
     <?php
     $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
     $shape = new \Kendo\Dataviz\UI\MapLayerDefaultsShape();
-    $copyright = 'value';
-    $shape->copyright($copyright);
+    $attribution = 'value';
+    $shape->attribution($attribution);
     $layerDefaults->shape($shape);
     ?>
 
@@ -37,8 +37,8 @@ The default configuration for shape layers.
 
     <?php
     $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
-    $copyright = 'value';
-    $layerDefaults->shape(array('copyright' => $copyright));
+    $attribution = 'value';
+    $layerDefaults->shape(array('attribution' => $attribution));
     ?>
 
 ### tile
@@ -57,8 +57,8 @@ The default configuration for tile layers.
     <?php
     $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
     $tile = new \Kendo\Dataviz\UI\MapLayerDefaultsTile();
-    $copyright = 'value';
-    $tile->copyright($copyright);
+    $attribution = 'value';
+    $tile->attribution($attribution);
     $layerDefaults->tile($tile);
     ?>
 
@@ -66,7 +66,7 @@ The default configuration for tile layers.
 
     <?php
     $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
-    $copyright = 'value';
-    $layerDefaults->tile(array('copyright' => $copyright));
+    $attribution = 'value';
+    $layerDefaults->tile(array('attribution' => $attribution));
     ?>
 

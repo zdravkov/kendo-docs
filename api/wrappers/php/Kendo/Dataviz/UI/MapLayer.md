@@ -12,6 +12,24 @@ A PHP class representing the layer setting of MapLayers.
 
 ## Methods
 
+### attribution
+The attribution for the layer.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->attribution('value');
+    ?>
+
 ### autoBind
 If set to false the layer will not bind to the data source during initialization. In this case data binding will occur when the change event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
@@ -29,24 +47,6 @@ data source is fired. By default the widget will bind to the data source specifi
     <?php
     $layer = new \Kendo\Dataviz\UI\MapLayer();
     $layer->autoBind(true);
-    ?>
-
-### copyright
-The copyright message for the layer.
-
-#### Returns
-`\Kendo\Dataviz\UI\MapLayer`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $layer->copyright('value');
     ?>
 
 ### dataSource
@@ -76,6 +76,24 @@ Sets the data source of the dataSource.
     $layer->dataSource(array('schema' => $schema));
     ?>
 
+### opacity
+The the opacity of all tile layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->opacity('value');
+    ?>
+
 ### style
 
 The default style for shapes.
@@ -103,6 +121,24 @@ The default style for shapes.
     $layer = new \Kendo\Dataviz\UI\MapLayer();
     $fill = new \Kendo\Dataviz\UI\MapLayerStyleFill();
     $layer->style(array('fill' => $fill));
+    ?>
+
+### subdomains
+The subdomains for the all tile layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `array`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->subdomains(new array());
     ?>
 
 ### type

@@ -16,12 +16,12 @@ The default configuration for shape layers.
 
 ## Configuration Attributes
 
-### copyright `java.lang.String`
+### attribution `java.lang.String`
 
-The copyright message for all shape layers.
+The attribution for all shape layers.
 
 #### Example
-    <kendo:map-layerDefaults-shape copyright="copyright">
+    <kendo:map-layerDefaults-shape attribution="attribution">
     </kendo:map-layerDefaults-shape>
 
 

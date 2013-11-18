@@ -12,6 +12,24 @@ A PHP class representing the controls setting of Map.
 
 ## Methods
 
+### attribution
+Enables or disables the built-in attribution control.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapControls`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $controls = new \Kendo\Dataviz\UI\MapControls();
+    $controls->attribution(true);
+    ?>
+
 ### navigator
 
 Enables or disables the built-in navigator control (directional pad).

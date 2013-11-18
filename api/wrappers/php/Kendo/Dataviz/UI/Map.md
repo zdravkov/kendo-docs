@@ -104,8 +104,8 @@ The configuration of built-in map controls.
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $controls = new \Kendo\Dataviz\UI\MapControls();
-    $navigator = true;
-    $controls->navigator($navigator);
+    $attribution = true;
+    $controls->attribution($attribution);
     $map->controls($controls);
     ?>
 
@@ -113,8 +113,8 @@ The configuration of built-in map controls.
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
-    $navigator = true;
-    $map->controls(array('navigator' => $navigator));
+    $attribution = true;
+    $map->controls(array('attribution' => $attribution));
     ?>
 
 ### layerDefaults
@@ -162,8 +162,8 @@ Adds one or more MapLayer to the Map.
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $autoBind = true;
-    $layer->autoBind($autoBind);
+    $attribution = 'value';
+    $layer->attribution($attribution);
     $map->addLayer($layer);
     ?>
 
@@ -171,8 +171,8 @@ Adds one or more MapLayer to the Map.
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
-    $autoBind = true;
-    $map->addLayer(array('autoBind' => $autoBind));
+    $attribution = 'value';
+    $map->addLayer(array('attribution' => $attribution));
     ?>
 
 #### Example - adding more than one MapLayer

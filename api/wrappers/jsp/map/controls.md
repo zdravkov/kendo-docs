@@ -16,6 +16,14 @@ The configuration of built-in map controls.
 
 ## Configuration Attributes
 
+### attribution `boolean`
+
+Enables or disables the built-in attribution control.
+
+#### Example
+    <kendo:map-controls attribution="attribution">
+    </kendo:map-controls>
+
 ### navigator `boolean`
 
 Enables or disables the built-in navigator control (directional pad). Further configuration is available via [kendo:map-controls-navigator](#kendo-map-controls-navigator). 

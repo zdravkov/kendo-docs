@@ -17,6 +17,14 @@ The layer type is determined by the value of the type field.
 
 ## Configuration Attributes
 
+### attribution `java.lang.String`
+
+The attribution for the layer.
+
+#### Example
+    <kendo:map-layer attribution="attribution">
+    </kendo:map-layer>
+
 ### autoBind `boolean`
 
 If set to false the layer will not bind to the data source during initialization. In this case data binding will occur when the change event of the
@@ -26,12 +34,20 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:map-layer autoBind="autoBind">
     </kendo:map-layer>
 
-### copyright `java.lang.String`
+### opacity `java.lang.String`
 
-The copyright message for the layer.
+The the opacity of all tile layers.
 
 #### Example
-    <kendo:map-layer copyright="copyright">
+    <kendo:map-layer opacity="opacity">
+    </kendo:map-layer>
+
+### subdomains `java.lang.Object`
+
+The subdomains for the all tile layers.
+
+#### Example
+    <kendo:map-layer subdomains="subdomains">
     </kendo:map-layer>
 
 ### type `java.lang.String`

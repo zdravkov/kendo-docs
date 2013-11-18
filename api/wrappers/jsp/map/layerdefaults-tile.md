@@ -16,12 +16,28 @@ The default configuration for tile layers.
 
 ## Configuration Attributes
 
-### copyright `java.lang.String`
+### attribution `java.lang.String`
 
-The copyright message for all tile layers.
+The attribution for all tile layers.
 
 #### Example
-    <kendo:map-layerDefaults-tile copyright="copyright">
+    <kendo:map-layerDefaults-tile attribution="attribution">
+    </kendo:map-layerDefaults-tile>
+
+### opacity `java.lang.String`
+
+The the opacity of all tile layers.
+
+#### Example
+    <kendo:map-layerDefaults-tile opacity="opacity">
+    </kendo:map-layerDefaults-tile>
+
+### subdomains `java.lang.Object`
+
+The subdomains for the all tile layers.
+
+#### Example
+    <kendo:map-layerDefaults-tile subdomains="subdomains">
     </kendo:map-layerDefaults-tile>
 
 ### urlTemplate `java.lang.String`

@@ -12,8 +12,8 @@ A PHP class representing the tile setting of MapLayerDefaults.
 
 ## Methods
 
-### copyright
-The copyright message for all tile layers.
+### attribution
+The attribution for all tile layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayerDefaultsTile`
@@ -27,7 +27,43 @@ The copyright message for all tile layers.
 #### Example 
     <?php
     $tile = new \Kendo\Dataviz\UI\MapLayerDefaultsTile();
-    $tile->copyright('value');
+    $tile->attribution('value');
+    ?>
+
+### opacity
+The the opacity of all tile layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayerDefaultsTile`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $tile = new \Kendo\Dataviz\UI\MapLayerDefaultsTile();
+    $tile->opacity('value');
+    ?>
+
+### subdomains
+The subdomains for the all tile layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayerDefaultsTile`
+
+#### Parameters
+
+##### $value `array`
+
+
+
+#### Example 
+    <?php
+    $tile = new \Kendo\Dataviz\UI\MapLayerDefaultsTile();
+    $tile->subdomains(new array());
     ?>
 
 ### urlTemplate

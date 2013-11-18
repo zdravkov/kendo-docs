@@ -12,8 +12,8 @@ A PHP class representing the shape setting of MapLayerDefaults.
 
 ## Methods
 
-### copyright
-The copyright message for all shape layers.
+### attribution
+The attribution for all shape layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayerDefaultsShape`
@@ -27,7 +27,7 @@ The copyright message for all shape layers.
 #### Example 
     <?php
     $shape = new \Kendo\Dataviz\UI\MapLayerDefaultsShape();
-    $shape->copyright('value');
+    $shape->attribution('value');
     ?>
 
 ### style
