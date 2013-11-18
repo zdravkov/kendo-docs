@@ -18,8 +18,8 @@ To create a new ASP.NET MVC 4 Application follow these steps.
 
 1. Open **Visual Studio 2012**.
 2. Press **CTRL+SHIFT+N** to create a new project.
-3. Select the **Visual C#** node and then**Web** to show all available web project templates for C#.
-4. Select**ASP.NET MVC 4 Web Application** and click **OK**. This will start the **New ASP.NET MVC 4 Project** wizard.
+3. Select the **Visual C#** node and then**Web* to show all available web project templates for C#.
+4. Select **ASP.NET MVC 4 Web Application** and click **OK**. This will start the **New ASP.NET MVC 4 Project** wizard.
 5. Select **Internet Application** from the available templates and click **OK**. Alternatively you can select other templates - the remaining steps are the same.
 6. Press **CTRL+F5** to build and run the application.
 ![New ASP.NET MVC 4 Application](images/mvc4-new-app.png)
@@ -36,7 +36,7 @@ To copy the Kendo UI JavaScript and CSS files in the Visual Studio Solution of t
 1. Navigate to the install location of Kendo UI Complete for ASP.NET MVC. By default it is in **C:\Program Files (x86)\Telerik\**.
 2. Copy the **js** directory from the install location and paste it in the **Script** folder of the application.
 3. Copy the **styles** directory from the install location and paste it in the **Content** folder of the application.
-4. Rename the **Scripts/js **directory to **Scripts/kendo**. Rename **Content/styles** to **Content/kendo**.
+4. Rename the **Scripts/js** directory to **Scripts/kendo**. Rename **Content/styles** to **Content/kendo**.
 
 ![Kendo directories in Solution Explorer](images/mvc4-solution.png)
 
@@ -91,14 +91,14 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.default.min.css" />
 
 3. Move the jQuery bundle in the **head** tag of the page. It is at the end of the page by default.
-4. Include **kendo.all.min.js** and **kendo.aspnetmvc.min.js**  **after** jQuery.
+4. Include **kendo.all.min.js** and **kendo.aspnetmvc.min.js** **after** jQuery.
 
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js"></script>
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js"></script>
 
 ### Add reference to Kendo.Mvc.dll
 
-The next step is to add a reference to** Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.
+The next step is to add a reference to **Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.
 
 1. Right-click the **References** node in Solution Explorer and click **Add Reference**.
 2. Select the **Browse** tab of the **Add Reference** dialog and navigate to the install location of Kendo UI Complete for ASP.NET MVC.
@@ -131,12 +131,12 @@ Finally lets use a Kendo UI widget.
     - Razor
 
             @(Html.Kendo().DatePicker().Name("datepicker"))
-
     - ASPX
 
             <%: Html.Kendo().DatePicker().Name("datepicker") %>
 
 3. Press **CTRL+F5** to build and run the application.
+
 
 ![Final result](images/mvc4-final.png)
 
