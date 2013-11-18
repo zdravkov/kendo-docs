@@ -28,10 +28,10 @@ The Kendo UI Visual Studio Extension supports Visual Studio 2010 and Visual Stud
 To download **Kendo UI Complete for ASP.NET MVC **follow these steps.
 
 1. Log in to your [Telerik account](http://www.telerik.com/account.aspx).
-2. Click **Products & Subscriptions** in the top navigation.
-3. Click **Kendo UI Complete for ASP.NET MVC**. If this option is not available click one of the following: **DevCraft UI Edition**, **DevCraft Complete** or** DevCraft Ultimate**.
+2. Click **Products & Subscriptions**  in the top navigation.
+3. Click **Kendo UI Complete for ASP.NET MVC**. If this option is not available click one of the following: **DevCraft UI Edition**, **DevCraft Complete**  or ** DevCraft Ultimate**.
 4. Click **Download Installer and other resources**.
-5. Find the **Kendo UI Complete for ASP.NET MVC**  item and click **Download** next to it. This will download the product installer. Alternatively you may click **Browse all product files ** and download the zip file.
+5. Find the **Kendo UI Complete for ASP.NET MVC**  item and click **Download** next to it. This will download the product installer. Alternatively you may click **Browse all product files** and download the zip file.
 
 ## Installation
 
@@ -71,13 +71,9 @@ To run the sample application follow these steps.
 2. Open the sample Visual Studio Solution
 
     - to run the ASP.NET MVC 4 version open **wrappers\aspnetmvc\Examples\VS2012\Kendo.Mvc.Examples.sln** with **Visual Studio 2012**.
-
     - to run the ASP.NET MVC 5 version open** wrappers\aspnetmvc\Examples\VS2013\Kendo.Mvc.Examples.sln** with **Visual Studio 2013**.
-
 3. Press **CTRL+F5** to build and run the application.
-
 4. A browser will load the start page of the sample application. Use the links to explore the available demos.
-
 ![Kendo UI Complete for ASP.NET MVC Sample Application](images/demos.png)
 
 ### Contents
