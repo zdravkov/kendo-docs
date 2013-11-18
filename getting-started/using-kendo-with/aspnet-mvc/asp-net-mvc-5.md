@@ -6,7 +6,7 @@ slug: mvc-5
 publish: true
 ---
 
-#Kendo UI Complete for ASP.NET MVC in ASP.NET MVC 5
+# Kendo UI in ASP.NET MVC 5 applications
 
 This tutorial shows how to use Kendo UI Complete for ASP.NET MVC in ASP.NET MVC 5 applications. The tutorial uses Visual Studio 2013 but will work with all Visual Studio versions that support ASP.NET MVC 5. The tutorial also creates a new ASP.NET MVC 5 application but the steps to use Kendo UI in exsiting ASP.NET MVC 5 application are the same.
 
