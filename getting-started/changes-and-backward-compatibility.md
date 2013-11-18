@@ -18,6 +18,17 @@ publish: true
 It has been replaced with a [public API method `resize()`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages), which now all Kendo UI widgets have.
 Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
 * **Splitter**: the `layoutChange` event is now obsolete and will be removed in the future. Please use the `resize` event instead.
+* **Kendo UI Scheduler for ASP.NET MVC**: "ISchedulerEvent" interface now includes two additional fields - "StartTimezone" and "EndTimezone" which stores the timezone information of the event.
+* **Scheduler**: Changes in `recurrenceEditor` messages:
+ -  `daily.days` becomes `daily.interval`
+ -  `weekly.weeks` becomes `weekly.interval`
+ -  `monthly.months` becomes `monthly.interval`
+ -  `yearly.years` becomes `yearly.interval`
+ -  `end.endLabel` becomes `end.label`
+ -  `end.endNever` becomes `end.never`
+ -  `end.endCountAfter` becomes `end.after`
+ -  `end.endCountOccurrence` becomes `end.occurrence`
+ -  `end.endUntilOn` becomes `end.on`
 
 ## KendoUI 2013 Q2
 
