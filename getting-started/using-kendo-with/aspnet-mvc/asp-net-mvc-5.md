@@ -124,7 +124,6 @@ The next step is to let ASP.NET MVC know of the Kendo.Mvc.UI namespace where the
             <add namespace="System.Web.Mvc.Ajax" />
             <add namespace="System.Web.Mvc.Html" />
             <add namespace="System.Web.Routing" />
-
             <add namespace="Kendo.Mvc.UI" />
         </namespaces>
 
@@ -150,4 +149,4 @@ Finally lets use a Kendo UI widget.
 
 * Kendo UI for ASP.NET MVC fundamentals
 
-* Using the Kendo UI Visual Studio Extensions
+* [Using the Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
