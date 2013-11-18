@@ -158,7 +158,7 @@ Both approaches produce the same result.
 
     $(document).ready(function(){
         var tabstrip = $("#tabstrip").kendoTabStrip().data("kendoTabStrip");
-        tabstrip.select(1);
+        tabstrip.select(0);
     });
 
 ## Accessing an Existing TabStrip
