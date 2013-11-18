@@ -18,7 +18,7 @@ To create a new ASP.NET MVC 4 Application follow these steps.
 
 1. Open **Visual Studio 2012**.
 2. Press **CTRL+SHIFT+N** to create a new project.
-3. Select the **Visual C#** node and then **Web* to show all available web project templates for C#.
+3. Select the **Visual C#** node and then **Web** to show all available web project templates for C#.
 4. Select **ASP.NET MVC 4 Web Application** and click **OK**. This will start the **New ASP.NET MVC 4 Project** wizard.
 5. Select **Internet Application** from the available templates and click **OK**. Alternatively you can select other templates - the remaining steps are the same.
 6. Press **CTRL+F5** to build and run the application.

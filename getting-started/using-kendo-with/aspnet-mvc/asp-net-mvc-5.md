@@ -18,8 +18,8 @@ To create a new ASP.NET MVC 5 Application follow these steps.
 
 1. Open **Visual Studio 2013**.
 2. Press **CTRL+SHIFT+N** to create a new project.
-3. Select the **Visual C#** node and then**Web** to show all available web project templates for C#.
-4. Select**ASP.NET Web Application** and click **OK**. This will start the **New ASP.NET  Project** wizard.
+3. Select the **Visual C#** node and then **Web** to show all available web project templates for C#.
+4. Select **ASP.NET Web Application** and click **OK**. This will start the **New ASP.NET  Project** wizard.
 5. Select **MVC** from the available templates and click **OK**.
 6. Press **CTRL+F5** to build and run the application.
 ![New ASP.NET MVC 5 Application](images/mvc5-new-app.png)
@@ -71,7 +71,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
     - ASPX
 
-        <%: Styles.Render("~/Content/kendo") %>
+            <%: Styles.Render("~/Content/kendo") %>
 
 7. Move the jQuery bundle in the **head** tag of the page. It is at the end of the page by default.
 8. Render the Kendo UI script bundle **after** jQuery.
@@ -104,12 +104,12 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
 
 ### Add reference to Kendo.Mvc.dll
 
-The next step is to add a reference to** Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.
+The next step is to add a reference to **Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.
 
 1. Right-click the **References** node in Solution Explorer and click **Add Reference**.
 2. Select the **Browse** tab of the **Add Reference** dialog and navigate to the install location of Kendo UI Complete for ASP.NET MVC.
 3. Navigate to **wrappers/aspnetmvc/Binaries/MVC5**. This directory contains the ASP.NET MVC 5 version of Kendo UI Complete for ASP.NET MVC.
-4. Select **Kendo.Mvc.dll**and click **OK**.
+4. Select **Kendo.Mvc.dll** and click **OK**.
 
 ### Update the web.config
 
