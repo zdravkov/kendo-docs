@@ -21,6 +21,10 @@ You can also use a `kendo.dataviz.map.Location` instance.
 
 The configuration of built-in map controls.
 
+### controls.attribution `Boolean` *(default: true)*
+
+Enables or disables the built-in attribution control.
+
 ### controls.navigator `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in navigator control (directional pad).
