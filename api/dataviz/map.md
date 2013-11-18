@@ -55,9 +55,9 @@ The default configuration for map layers by type.
 
 The default configuration for shape layers.
 
-### layerDefaults.shape.copyright `String`
+### layerDefaults.shape.attribution `String`
 
-The copyright message for all shape layers.
+The attribution for all shape layers.
 
 ### layerDefaults.shape.style `Object`
 
@@ -119,10 +119,19 @@ The URL template for tile layers. Template variables:
 * x - X coordinate of the tile
 * y - Y coordinate of the tile
 * zoom - zoom level
+* subdomain - the subdomain of the tile
 
-### layerDefaults.tile.copyright `String`
+### layerDefaults.tile.attribution `String`
 
-The copyright message for all tile layers.
+The attribution for all tile layers.
+
+### layerDefaults.tile.opacity `String` *(default: 1)*
+
+The the opacity of all tile layers.
+
+### layerDefaults.tile.subdomains `Array` *(default: ["a", "b", "c"])*
+
+The subdomains for the all tile layers.
 
 ### layers `Array`
 
@@ -148,9 +157,17 @@ The layer type. Supported types are:
 The data source of the layer. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
 
-### layers.copyright `String`
+### layers.attribution `String`
 
-The copyright message for the layer.
+The attribution for the layer.
+
+### layers.opacity `String` *(default: 1)*
+
+The the opacity of all tile layers.
+
+### layers.subdomains `Array` *(default: ["a", "b", "c"])*
+
+The subdomains for the all tile layers.
 
 ### layers.style `Object`
 
@@ -208,6 +225,7 @@ The URL template for tile layers. Template variables:
 * x - X coordinate of the tile
 * y - Y coordinate of the tile
 * zoom - zoom level
+* subdomain - the subdomain of the tile
 
 ### markerDefaults `Object`
 
