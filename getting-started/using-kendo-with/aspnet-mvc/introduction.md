@@ -25,7 +25,7 @@ The Kendo UI Visual Studio Extension supports Visual Studio 2010 and Visual Stud
 
 ## Download
 
-To download **Kendo UI Complete for ASP.NET MVC **follow these steps.
+To download **Kendo UI Complete for ASP.NET MVC** follow these steps.
 
 1. Log in to your [Telerik account](http://www.telerik.com/account.aspx).
 2. Click **Products & Subscriptions**  in the top navigation.
@@ -71,7 +71,8 @@ To run the sample application follow these steps.
 2. Open the sample Visual Studio Solution
 
     - to run the ASP.NET MVC 4 version open **wrappers\aspnetmvc\Examples\VS2012\Kendo.Mvc.Examples.sln** with **Visual Studio 2012**.
-    - to run the ASP.NET MVC 5 version open** wrappers\aspnetmvc\Examples\VS2013\Kendo.Mvc.Examples.sln** with **Visual Studio 2013**.
+    - to run the ASP.NET MVC 5 version open **wrappers\aspnetmvc\Examples\VS2013\Kendo.Mvc.Examples.sln** with **Visual Studio 2013**.
+
 3. Press **CTRL+F5** to build and run the application.
 4. A browser will load the start page of the sample application. Use the links to explore the available demos.
 ![Kendo UI Complete for ASP.NET MVC Sample Application](images/demos.png)
