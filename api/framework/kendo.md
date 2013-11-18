@@ -670,7 +670,7 @@ Return true if the browser supports 3D transitions and transforms.
 Returns true if the browser supports overflow-scrolling CSS property (currently only iOS 5+).
 
 ##### devicePixelRatio `Number` *(default: 1)*
-Returns the current device Device to Pixel Ratio - works only in Android.
+Returns the current device's Device to Pixel Ratio. Doesn't work in Windows Phone 8, where IE10 doesn't support it.
 
 ##### placeHolder `Boolean`
 Retruns true if the browser supports input placeholders.
