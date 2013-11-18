@@ -1,8 +1,8 @@
- — -
+---
 title: Kendo UI Documentation Repo
 slug: root-readme
 publish: false
- — -
+---
 
 # Kendo UI Public Documentation
 
