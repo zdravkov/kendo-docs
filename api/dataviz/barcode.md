@@ -12,9 +12,22 @@ publish: true
 
 ## Configuration
 
-### Example - Render as SVG, if supported
+### renderAs `String` *(default: "canvas")*
 
-<div id="barcode"></div>
+Sets the preferred rendering engine.
+If it is not supported by the browser, the Barcode will switch to the first available mode.
+
+The supported values are:
+
+* "canvas" - renders the widget as a Canvas element, if available.
+* "svg" - renders the widget as inline SVG document, if available
+* "vml" - renders the widget as VML, if available
+
+> Using Canvas rendering disables most interactive features.
+
+#### Example - Render as SVG, if supported
+
+    <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
       value:"123456",
@@ -27,7 +40,7 @@ publish: true
 The background of the barcode area.
 Any valid CSS color string will work here, including hex and rgb.
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
@@ -71,7 +84,7 @@ The width of the border.
 
 If set to `true` the barcode will not display the checksum digit next to the value in the text area.
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
@@ -87,7 +100,7 @@ If set to `true` the barcode will not display the checksum digit next to the val
 The color of the bar elements.
 Any valid CSS color string will work here, including hex and rgb.
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
@@ -102,7 +115,7 @@ Any valid CSS color string will work here, including hex and rgb.
 
 The height of the barcode in pixels.  By default the height is 100.
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
@@ -149,24 +162,11 @@ The right padding of the barcode.
 
 The top padding of the barcode.
 
-### renderAs `String` *(default: "canvas")*
-
-Sets the preferred rendering engine.
-If it is not supported by the browser, the Barcode will switch to the first available mode.
-
-The supported values are:
-
-* "canvas" - renders the widget as a Canvas element, if available.
-* "svg" - renders the widget as inline SVG document, if available
-* "vml" - renders the widget as VML, if available
-
-> Using Canvas rendering disables most interactive features.
-
 ### text `Object`
 
 Can be set to a JavaScript object which represents the text configuration.
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
@@ -225,7 +225,7 @@ The top margin of the text.
 
 If set to false the barcode will not display the value as a text below the barcode lines.
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
@@ -263,12 +263,12 @@ The supported values are:
 * MSImod1110
 * POSTNET
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-      type: "code128",      
+      type: "code128",
       value:"Hello World",
       width: 400
     });
@@ -278,12 +278,12 @@ The supported values are:
 
 The initial value of the Barcode
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
-    $("#barcode").kendoBarcode({   
-      value:"12345"      
+    $("#barcode").kendoBarcode({
+      value:"12345"
     });
     </script>
 
@@ -291,12 +291,12 @@ The initial value of the Barcode
 
 The width of the barcode in pixels.  By default the width is 300.
 
-####Example
+#### Example
 
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-      type: "code128",      
+      type: "code128",
       value:"Hi",
       width: 200
     });
