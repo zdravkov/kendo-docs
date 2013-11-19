@@ -43,15 +43,15 @@ Placing clickable elements with their own special behavior inside the **Button**
 * Razor
 
         @(Html.Kendo().Button()
-            .Name("textButton")
+            .Name("linkButton")
             .Tag("a")
-            .Content("Text button"))
+            .Content("Link button"))
 * WebForms
 
         <%= Html.Kendo().Button()
-            .Name("textButton")
+            .Name("linkButton")
             .Tag("a")
-            .Content("Text button") %>
+            .Content("Link button") %>
 
 ## Using Icons
 
@@ -92,26 +92,26 @@ The above configuration will produce the following HTML output:
 * Razor
 
         @(Html.Kendo().Button()
-            .Name("iconButton")
+            .Name("spriteButton")
             .SpriteCssClass("myIconClass")
-            .Content("Icon button"))
+            .Content("Sprite button"))
 * WebForms
 
         <%= Html.Kendo().Button()
-            .Name("iconButton")
+            .Name("spriteButton")
             .SpriteCssClass("myIconClass")
-            .Content("Icon button") %>
+            .Content("Sprite button") %>
 
 The above configuration will produce the following HTML output:
 
-    <button type="button" id="iconButton" class="k-button k-button-icontext"><span class="k-sprite myIconClass"></span>Icon button</button>
+    <button type="button" id="spriteButton" class="k-button k-button-icontext"><span class="k-sprite myIconClass"></span>Sprite button</button>
         
 Technically, `.SpriteCssClass("k-icon k-cancel")` can be used to achieve the same result as `.Icon("cancel")`,
 but `.Icon()` will spare you the need to set two CSS classes at the same time and will provides a certain level of abstraction.
 
 #### Using a Button with no text
 
-The Button will use an existing `span` element if it is supplied as `.Content()`, e.g. if the goal is to have a Button with no text.
+The Button will use an existing `span` element if it is supplied as `.Content()`, e.g. if the goal is to have a Button with no text. The `span` element must have a `k-sprite` CSS class.
 
 * Razor
 
@@ -135,21 +135,23 @@ Image icons are applied via the `.ImageUrl()` property and are displayed as a `i
 * Razor
 
         @(Html.Kendo().Button()
-            .Name("iconButton")
+            .Name("imageButton")
             .ImageUrl("/images/myIcon.gif")
-            .Content("Icon button"))
+            .Content("Image button"))
 * WebForms
 
         <%= Html.Kendo().Button()
-            .Name("iconButton")
+            .Name("imageButton")
             .ImageUrl("/images/myIcon.gif")
-            .Content("Icon button") %>
+            .Content("Image button") %>
 
 The above configuration will produce the following HTML output:
 
-    <button type="button" id="iconButton" class="k-button k-button-icontext"><img class="k-image" src="/images/myIcon.gif" alt="icon" />Icon button</button>
+    <button type="button" id="imageButton" class="k-button k-button-icontext"><img class="k-image" src="/images/myIcon.gif" alt="icon" />Image button</button>
 
 #### Using `.ImageUrl()` with no text
+
+An `img` tag should be placed inside the **Button** content. The image should have a `k-image` CSS class.
 
 * Razor
 

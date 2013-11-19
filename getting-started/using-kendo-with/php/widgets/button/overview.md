@@ -33,11 +33,11 @@ Placing clickable elements with their own special behavior inside the **Button**
 
 #### Using an `anchor` tag
 
-    $textButton = new \Kendo\UI\Button('textButton');
-    $textButton->tag('a')
-               ->content('Text button');
+    $linkButton = new \Kendo\UI\Button('linkButton');
+    $linkButton->tag('a')
+               ->content('Link button');
 
-    echo $textButton->render();
+    echo $linkButton->render();
 
 ## Using Icons
 
@@ -72,7 +72,7 @@ The above configuration will produce the following HTML output:
     $spriteButton = new \Kendo\UI\Button('spriteButton');
     $spriteButton->attr('type', 'button')
                ->spriteCssClass('myIconClass')
-               ->content('Sprite Button');
+               ->content('Sprite button');
 
     echo $iconButton->render();
 
@@ -85,7 +85,7 @@ but `icon` will spare you the need to set two CSS classes at the same time and w
 
 #### Using a Button with no text
 
-The Button will use an existing `span` element if it is supplied as `content`, e.g. if the goal is to have a Button with no text.
+The Button will use an existing `span` element if it is supplied as `content`, e.g. if the goal is to have a Button with no text. The `span` element must have a `k-sprite` CSS class.
 
     $deleteButton = new \Kendo\UI\Button('deleteButton');
     $deleteButton->attr('type', 'button')
@@ -103,15 +103,17 @@ Image icons are applied via the `imageUrl` property and are displayed as a `img`
     $imageButton = new \Kendo\UI\Button('imageButton');
     $imageButton->attr('type', 'button')
                 ->imageUrl('/images/myIcon.gif')
-                ->content('Image Button');
+                ->content('Image button');
 
     echo $imageButton->render();
 
 The above configuration will produce the following HTML output:
 
-    <button type="button" id="imageButton" class="k-button k-button-icontext"><img class="k-image" src="/images/myIcon.gif" alt="icon" />Image Button</button>
+    <button type="button" id="imageButton" class="k-button k-button-icontext"><img class="k-image" src="/images/myIcon.gif" alt="icon" />Image button</button>
 
 #### Using `imageUrl` with no text
+
+An `img` tag should be placed inside the **Button** content. The image should have a `k-image` CSS class.
 
     $imageButton = new \Kendo\UI\Button('imageButton');
     $imageButton->attr('type', 'button')

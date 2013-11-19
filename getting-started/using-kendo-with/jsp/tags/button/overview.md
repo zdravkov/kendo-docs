@@ -59,19 +59,19 @@ The above configuration will produce the following HTML output:
 
 #### Using `spriteCssClass`
 
-    <kendo:button name="iconButton" type="button" spriteCssClass="myIconClass" content="Icon icon">
+    <kendo:button name="spriteButton" type="button" spriteCssClass="myIconClass" content="Sprite icon">
     </kendo:button>
 
 The above configuration will produce the following HTML output:
 
-    <button type="button" id="iconButton" class="k-button k-button-icontext"><span class="k-sprite myIconClass"></span>Icon button</button>
+    <button type="button" id="spriteButton" class="k-button k-button-icontext"><span class="k-sprite myIconClass"></span>Sprite button</button>
         
 Technically, `spriteCssClass="k-icon k-cancel"` can be used to achieve the same result as `icon="cancel"`,
 but `icon` will spare you the need to set two CSS classes at the same time and will provides a certain level of abstraction.
 
 #### Using a Button with no text
 
-The Button will use an existing `span` element if it is supplied as `content`, e.g. if the goal is to have a Button with no text.
+The Button will use an existing `span` element if it is supplied as `content`, e.g. if the goal is to have a Button with no text. The `span` element must have a `k-sprite` CSS class.
 
     <kendo:button name="deleteButton" type="button" spriteCssClass="myDeleteClass" content="<span class='k-sprite'>Delete</span>">
     </kendo:button>
@@ -82,16 +82,18 @@ Image icons are applied via the `imageUrl` property and are displayed as a `img`
 
 #### Using `imageUrl`
 
-    <kendo:button name="iconButton" type="button" imageUrl="${myIcon}" content="Icon button">
+    <kendo:button name="imageButton" type="button" imageUrl="${myIcon}" content="Image button">
     </kendo:button>
 
 The above configuration will produce the following HTML output:
 
-    <button type="button" id="iconButton" class="k-button k-button-icontext"><img class="k-image" src="/images/myIcon.gif" alt="icon" />Icon button</button>
+    <button type="button" id="imageButton" class="k-button k-button-icontext"><img class="k-image" src="/images/myIcon.gif" alt="icon" />Image button</button>
 
 #### Using `imageUrl` with no text
 
-    <kendo:button name="iconButton" type="button" imageUrl="${myIcon}" content="<img class='k-image' alt='my icon' />">
+An `img` tag should be placed inside the **Button** content. The image should have a `k-image` CSS class.
+
+    <kendo:button name="imageButton" type="button" imageUrl="${myIcon}" content="<img class='k-image' alt='my icon' />">
     </kendo:button>
 
 ## Enabled and Disabled buttons
