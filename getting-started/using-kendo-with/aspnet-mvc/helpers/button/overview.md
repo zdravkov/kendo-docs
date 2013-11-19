@@ -177,15 +177,15 @@ The widget can also be disabled or enabled at any time with Javascript by using 
 * Razor
 
         @(Html.Kendo().Button()
-            .Name("textButton")
+            .Name("disabledButton")
             .Enable(false)
-            .Content("my button"))
+            .Content("Disabled button"))
 * WebForms
 
         <%= Html.Kendo().Button()
-            .Name("textButton")
+            .Name("disabledButton")
             .Enable(false)
-            .Content("my button") %>
+            .Content("Disabled button") %>
 
 For more information on the **Button** [`enable` method](/api/web/button#methods-enable), please refer to the [Button API](/api/web/button/).
 

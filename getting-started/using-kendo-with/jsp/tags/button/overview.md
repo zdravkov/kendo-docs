@@ -104,7 +104,7 @@ The widget can also be disabled or enabled at any time with Javascript by using 
 
 ### Using `enable`
 
-    <kendo:button name="textButton" type="button" enable="false" content="Text button">
+    <kendo:button name="disabledButton" type="button" enable="false" content="Disabled button">
     </kendo:button>
 
 For more information on the **Button** [`enable` method](/api/web/button#methods-enable), please refer to the [Button API](/api/web/button/).

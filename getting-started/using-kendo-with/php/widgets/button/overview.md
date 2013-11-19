@@ -130,12 +130,12 @@ The widget can also be disabled or enabled at any time with Javascript by using 
 
 ### Using `enable`
 
-    $textButton = new \Kendo\UI\Button('textButton');
-    $textButton->attr('type', 'button')
+    $disabledButton = new \Kendo\UI\Button('disabledButton');
+    $disabledButton->attr('type', 'button')
                ->enable(false)
-               ->content('Text button');
+               ->content('Disabled button');
 
-    echo $textButton->render();
+    echo $disabledButton->render();
 
 For more information on the **Button** [`enable` method](/api/web/button#methods-enable), please refer to the [Button API](/api/web/button/).
 
