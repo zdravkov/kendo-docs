@@ -133,10 +133,6 @@ The attribution for all tile layers.
 
 The the opacity of all tile layers.
 
-### layerDefaults.tile.subdomains `Array` *(default: ["a", "b", "c"])*
-
-The subdomains for the all tile layers.
-
 ### layers `Array`
 
 The configuration of the map layers.
@@ -168,10 +164,6 @@ The attribution for the layer.
 ### layers.opacity `String` *(default: 1)*
 
 The the opacity of all tile layers.
-
-### layers.subdomains `Array` *(default: ["a", "b", "c"])*
-
-The subdomains for the all tile layers.
 
 ### layers.style `Object`
 
