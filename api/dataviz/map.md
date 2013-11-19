@@ -127,7 +127,11 @@ The URL template for tile layers. Template variables:
 
 ### layerDefaults.tile.attribution `String`
 
-The attribution for all tile layers.
+The attribution of all tile layers.
+
+### layerDefaults.tile.subdomains `Array`
+
+The subdomain of all tile layers.
 
 ### layerDefaults.tile.opacity `String` *(default: 1)*
 
@@ -161,9 +165,13 @@ instance.
 
 The attribution for the layer.
 
+### layers.subdomains `Array`
+
+The subdomains for the layer.
+
 ### layers.opacity `String` *(default: 1)*
 
-The the opacity of all tile layers.
+The the opacity for the layer.
 
 ### layers.style `Object`
 
