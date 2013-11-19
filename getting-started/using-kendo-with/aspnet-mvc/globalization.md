@@ -85,54 +85,6 @@ to the **~/Scripts/cultures/** directory of your application.
                 kendo.culture("@culture");
             </script>
 
-## Number model binding
-
-Currently the Kendo UI widgets send numbers with "." as a decimal separator. This requires a custom model binder when the `CurrentCulture` uses a different decimal separator.
-
-1. Create a new file named **InvariantNumericBinder.cs**.
-1. Paste the following code
-
-        public class InvariantNumericBinder<T> : IModelBinder
-            where T : struct
-        {
-            public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
-            {
-                ValueProviderResult valueResult = bindingContext.ValueProvider
-                    .GetValue(bindingContext.ModelName);
-
-                ModelState modelState = new ModelState { Value = valueResult };
-                object actualValue = null;
-
-                if (valueResult != null)
-                {
-                    try
-                    {
-                        actualValue = Convert.ChangeType(valueResult.AttemptedValue, typeof(T), System.Globalization.CultureInfo.InvariantCulture);
-                    }
-                    catch (FormatException e)
-                    {
-                        modelState.Errors.Add(e);
-                    }
-
-                    bindingContext.ModelState.Add(bindingContext.ModelName, modelState);
-                }
-
-                return actualValue;
-            }
-        }
-1. Register the model binder in **Global.asax.cs**
-
-        protected void Application_Start()
-        {
-            // -- snip --
-            ModelBinders.Binders.Add(typeof(decimal?), new InvariantNumericBinder<decimal>());
-            ModelBinders.Binders.Add(typeof(decimal), new InvariantNumericBinder<decimal>());
-            ModelBinders.Binders.Add(typeof(float?), new InvariantNumericBinder<float>());
-            ModelBinders.Binders.Add(typeof(float), new InvariantNumericBinder<float>());
-            ModelBinders.Binders.Add(typeof(double?), new InvariantNumericBinder<double>());
-            ModelBinders.Binders.Add(typeof(double), new InvariantNumericBinder<double>());
-        }
-
 ## Localized user interface
 
 If the `CurrentUICulture` is set (from code or **web.config**) Kendo UI Complete for ASP.NET MVC will use localized user interface messages.

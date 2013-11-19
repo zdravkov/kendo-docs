@@ -30,6 +30,8 @@ Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
  -  `end.endCountOccurrence` becomes `end.occurrence`
  -  `end.endUntilOn` becomes `end.on`
 
+* **MVC DataSource**: The MVC DataSource transport now serializes numbers based on the used Kendo culture. As a result, if you are using an invariant culture number model binder, the numbers will not be parsed correctly. You should either use the the same culture to parse the numbers in the model binder or remove the model binder in order for numbers with a decimal separator to be parsed correctly. 
+
 ## KendoUI 2013 Q2
 
 ### Changes from 2013 Q1 SP1 (2013.1.514)
