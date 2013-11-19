@@ -253,6 +253,23 @@ The feature relies on calculating average row height, based on already loaded da
 In certain scenarios the Grid may be invisible when initialized - for example when placed inside an initially inactive TabStrip tab or in another widget. In such cases there are generally two options -
 initialize the Grid first, while its element is still visible, or initialize the Grid in a suitable event of the parent Widget (e.g. TabStrip `activate`).
 
+#### Remove horizontal scrollbar
+
+When Grid scrolling is enabled, its vertical scrollbar is always visible even when not needed. This simplifies the implementation and improves performance. In cases when it is certain that a vertical scrollbar will not be
+needed, it can be removed with CSS like this:
+
+    #GridID .k-grid-header
+    {
+       padding: 0 !important;
+    }
+     
+    #GridID .k-grid-content
+    {
+       overflow-y: visible;
+    }
+
+Using the `#GridID` will allow the styles to be applied to a particular Grid instance only. In order to apply the above styles to all Grid instances, you can replace the ID with the `.k-grid` CSS class.
+
 ### Selection
 
 Selection can be enabled in the grid simply by setting the `selectable` option to `true`.
