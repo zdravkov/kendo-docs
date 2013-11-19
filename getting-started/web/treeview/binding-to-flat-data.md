@@ -36,7 +36,7 @@ This requires more time and memory, and the resulting tree is fully rendered.
       { id: 12, parent: 5, text: "Item 1.1.3" }
     ];
 
-    function processTable(data, idField, foreignKey) {
+    function processTable(data, idField, foreignKey, rootLevel) {
       var hash = {};
 
       for (var i = 0; i < data.length; i++) {
@@ -51,14 +51,14 @@ This requires more time and memory, and the resulting tree is fully rendered.
         hash[parentId].push(item);
       }
 
-      return hash[0];
+      return hash[rootLevel];
     }
 
     // tree for visualizing data
     $("#tree").kendoTreeView({
-      dataSource: processTable(flatData, "id", "parent"),
+      dataSource: processTable(flatData, "id", "parent", 0),
       loadOnDemand: false
-    })
+    });
     </script>
 
 ## Method 2: Incremental data filtering
