@@ -4239,13 +4239,17 @@ A string, DOM element or jQuery object which represents the master table row. A 
 
 ### current
 
-Selects cell for keyboard navigation. This set the current position of the keyboard navigation.
+Gets or sets the current cell for keyboard navigation.
 
 #### Parameters
 
-##### cell `Element|jQuery`
+##### cell `jQuery`
 
 DOM element or jQuery object which represents the navigatable cell.
+
+#### Returns
+
+`jQuery` the current cell.
 
 #### Example - select last cell for keyboard navigation
 
