@@ -11,8 +11,6 @@ relatedDocs: php-ui-progressbar
 
 The Kendo ProgressBar for PHP is a server-side wrapper for the [Kendo UI ProgressBar](http://docs.kendoui.com/api/web/progressbar) widget.
 
-> Warning! The Kendo UI ProgressBar is currently released as a beta. The final API and behavior of the widget may change.
-
 ## Getting Started
 
 Here is how to configure a simple Kendo ProgressBar:
