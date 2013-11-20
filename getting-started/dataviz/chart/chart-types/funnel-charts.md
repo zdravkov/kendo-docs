@@ -17,7 +17,7 @@ Funnel charts are a type of chart, often used to represent stages in a sales pro
 
 ### Understanding dynamicHeight, dynamicSlope and neckRatio
 
-Dynamic Height specifies wheather the different elements should have equal height (when dynamicHeight is equal to false) or the height of each element should be based on its value.
+Dynamic Height specifies whether the different elements should have equal height (when dynamicHeight is equal to false) or the height of each element should be based on its value.
 
 If dynamicSlope is disabled then the neckRatio option is taken into account which specifies the ratio between the top and the bottom bases of the whole funnel series.
 For example if neckRatio is set to ten then the top base will be ten times smaller than the bottom base.
