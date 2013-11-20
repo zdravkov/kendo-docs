@@ -143,7 +143,7 @@ The position of the zoom control. Possible values include:
 * "bottomRight"
 * "bottomLeft"
 
-#### Example - position the navigator control
+#### Example - position the zoom control
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -164,11 +164,28 @@ The position of the zoom control. Possible values include:
 
 The default configuration for map layers by type.
 
+#### Example - set tile layer defaults
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                tile: {
+                    opacity: 0.5
+                }
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape `Object`
 
 The default configuration for shape layers.
 
-#### Example - set default options for all shape layers
+#### Example
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -183,7 +200,16 @@ The default configuration for shape layers.
                 }
             },
             layers: [{
-                type: "shape"
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
             }]
         });
     </script>
@@ -192,33 +218,237 @@ The default configuration for shape layers.
 
 The attribution for all shape layers.
 
+#### Example - set default attribution for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    attribution: "&copy; Company Inc."
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape.style `Object`
 
 The default style for shapes.
+
+#### Example - Set default style for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        fill: {
+                            color: "red",
+                            opacity: 1
+                        },
+                        stroke: {
+                            color: "green",
+                            width: 4,
+                            dashType: "longDashDot",
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
 
 ### layerDefaults.shape.style.fill `Object`
 
 The default fill for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
+#### Example - Set default fill for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        fill: {
+                            color: "red",
+                            opacity: 1
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape.style.fill.color `String`
 
 The default fill color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
 
+#### Example - Set default fill color for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        fill: {
+                            color: "red"
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape.style.fill.opacity `Number`
 
 The default fill opacity (0 to 1) for layer shapes.
+
+#### Example - Set default fill with opacity for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        fill: {
+                            color: "red",
+                            opacity: 1
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
 
 ### layerDefaults.shape.style.stroke `Object`
 
 The default stroke for layer shapes.
 Accepts a valid CSS color string or object with detailed configuration.
 
+#### Example - Set default stroke for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        stroke: {
+                            color: "green",
+                            width: 4,
+                            dashType: "longDashDot",
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape.style.stroke.color `String`
 
 The default stroke color for layer shapes.
 Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - Set default stroke color for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        stroke: {
+                            color: "green"
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
 
 ### layerDefaults.shape.style.stroke.dashType `String` *(default: "solid")*
 
@@ -233,13 +463,99 @@ The following dash types are supported:
 * "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
 * "solid" - a solid line
 
+#### Example - Set default dashed stroke for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        stroke: {
+                            width: 4,
+                            dashType: "longDashDot"
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape.style.stroke.opacity `Number`
 
 The default stroke opacity (0 to 1) for layer shapes.
 
+#### Example - Set default stroke with opacity for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        stroke: {
+                            width: 4,
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape.style.stroke.width `Number` *(default: 1)*
 
 The default stroke width for layer shapes.
+
+#### Example - Set default stroke width for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    style: {
+                        stroke: {
+                            width: 4
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
 
 ### layerDefaults.tile `Object`
 
@@ -265,6 +581,23 @@ The subdomain of all tile layers.
 ### layerDefaults.tile.opacity `String` *(default: 1)*
 
 The the opacity of all tile layers.
+
+#### Example - set tile layer default opacity
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                tile: {
+                    opacity: 0.5
+                }
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
 
 ### layers `Array`
 
