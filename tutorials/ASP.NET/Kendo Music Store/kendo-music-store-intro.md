@@ -23,7 +23,7 @@ It focuses on [Kendo UI Web](http://www.kendoui.com/web.aspx), how it was used a
 
 ## View the Live Site
 
-The live Kendo Music Store site is located at [www.kendouimusicstore.com](http://www.kendouimusicstore.com/).
+The live Kendo Music Store site is located at [www.kendouimusicstore.com](http://demos.kendoui.com/musicstore).
 
 ## Get the Source Code
 
@@ -43,7 +43,7 @@ It focuses on [Kendo UI DataViz](http://www.kendoui.com/dataviz.aspx) and how Ke
 
 ## View the Live Site
 
-The live Kendo Music Store Dashboard is located at [dashboard.kendouimusicstore.com](http://dashboard.kendouimusicstore.com/).
+The live Kendo Music Store Dashboard is located at [dashboard.kendouimusicstore.com](http://demos.kendoui.com/musicstoredashboard).
 
 ## Get the Source Code
 
@@ -60,7 +60,7 @@ Please use the navigation tree at the left to navigate the sections of this tuto
 
 The mobile music store presents a consumer-focused mobile version of the web Music Store.
 This sample project was built using [Telerik Icenium](http://www.icenium.com/) and interacts
-with the [Kendo Music Store](http://www.kendouimusicstore.com) sample project's web services.
+with the [Kendo Music Store](http://demos.kendoui.com/musicstore) sample project's web services.
 
 ## Get the Source Code
 
