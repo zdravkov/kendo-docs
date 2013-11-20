@@ -12,22 +12,153 @@ publish: true
 
 ## Configuration
 
-### center `Array`
+### center `Array|kendo.dataviz.map.Location`
 
 The map center. Coordinates are listed as `[Latitude, Longitude]`.
 You can also use a `kendo.dataviz.map.Location` instance.
+
+#### Example - setting the map center
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 3,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
 
 ### controls `Object`
 
 The configuration of built-in map controls.
 
+#### Example - hide all controls
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                attribution: false,
+                navigator: false
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
 ### controls.attribution `Boolean` *(default: true)*
 
 Enables or disables the built-in attribution control.
 
+#### Example - hide the attribution control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                attribution: false
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
 ### controls.navigator `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in navigator control (directional pad).
+
+#### Example - hide the navigator control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                navigator: false
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### controls.navigator.position `String` *(default: "topLeft")*
+
+The position of the navigator control. Possible values include:
+
+* "topLeft"
+* "topRight"
+* "bottomRight"
+* "bottomLeft"
+
+#### Example - position the navigator control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                navigator: {
+                    position: "topRight"
+                }
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### controls.zoom `Boolean|Object` *(default: true)*
+
+Enables or disables the built-in zoom control (+/- button).
+
+#### Example - hide the zoom control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                zoom: false
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### controls.zoom.position `String` *(default: "topLeft")*
+
+The position of the zoom control. Possible values include:
+
+* "topLeft"
+* "topRight"
+* "bottomRight"
+* "bottomLeft"
+
+#### Example - position the navigator control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                zoom: {
+                    position: "topRight"
+                }
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
 
 ### layerDefaults `Object`
 
@@ -36,6 +167,26 @@ The default configuration for map layers by type.
 ### layerDefaults.shape `Object`
 
 The default configuration for shape layers.
+
+#### Example - set default options for all shape layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                navigator: {
+                    position: "topRight"
+                }
+            },
+            layerDefaults: {
+                shape: {
+                    attribution: "&copy; Company Inc."
+                }
+            },
+            layers: [{
+                type: "shape"
+            }]
+        });
+    </script>
 
 ### layerDefaults.shape.attribution `String`
 
