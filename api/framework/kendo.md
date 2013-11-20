@@ -739,6 +739,14 @@ A convenience property to allow easier version checks, for instance:
 ##### appMode `Boolean`
 Returns true if running in application mode - pinned to desktop in iOS or running in PhoneGap/WebView.
 
+### version `String`
+
+Returns the Kendo UI version as a string, for example `"2013.3.1119"` or `"2013.2.918"`, etc. In general, Kendo UI version identifiers provide the following information:
+
+* the year (2013, 2012, etc)
+* major release (Q3, Q2, etc)
+* month and date of the release (November 19, September 18, etc)
+
 ## Standard number formats
 
 ### *n*
