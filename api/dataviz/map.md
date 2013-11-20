@@ -29,28 +29,6 @@ Enables or disables the built-in attribution control.
 
 Enables or disables the built-in navigator control (directional pad).
 
-### controls.navigator.position `String` *(default: "topLeft")*
-
-The position of the navigator control. Possible values include:
-
-* "topLeft"
-* "topRight"
-* "bottomRight"
-* "bottomLeft"
-
-### controls.zoom `Boolean|Object` *(default: true)*
-
-Enables or disables the built-in zoom control (+/- button).
-
-### controls.zoom.position `String` *(default: "topLeft")*
-
-The position of the zoom control. Possible values include:
-
-* "topLeft"
-* "topRight"
-* "bottomRight"
-* "bottomLeft"
-
 ### layerDefaults `Object`
 
 The default configuration for map layers by type.
