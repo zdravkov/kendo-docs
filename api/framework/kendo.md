@@ -743,9 +743,11 @@ Returns true if running in application mode - pinned to desktop in iOS or runnin
 
 Returns the Kendo UI version as a string, for example `"2013.3.1119"` or `"2013.2.918"`, etc. In general, Kendo UI version identifiers provide the following information:
 
-* the year (2013, 2012, etc)
-* major release (Q3, Q2, etc)
-* month and date of the release (November 19, September 18, etc)
+* year (2013, 2012, etc);
+* major release (Q3, Q2, etc). All service packs and internal builds, which come after a given major release, share the same major release number;
+* month and day of the release (November 19, September 18, etc);
+
+The returned value does not give clues whether the given Kendo UI version represents a major release, service pack, or the so-called internal (nightly) build.
 
 ## Standard number formats
 
