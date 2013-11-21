@@ -32,4 +32,3 @@ The width of the color cell.
     <kendo:colorPalette-tileSize width="width">
     </kendo:colorPalette-tileSize>
 
- 

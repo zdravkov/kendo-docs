@@ -48,4 +48,3 @@ The top padding of the chart plot area.
     <kendo:chart-plotArea-padding top="top">
     </kendo:chart-plotArea-padding>
 
- 

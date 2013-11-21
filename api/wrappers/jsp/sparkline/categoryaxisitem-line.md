@@ -49,4 +49,3 @@ not the grid lines.
     <kendo:sparkline-categoryAxisItem-line width="width">
     </kendo:sparkline-categoryAxisItem-line>
 
- 

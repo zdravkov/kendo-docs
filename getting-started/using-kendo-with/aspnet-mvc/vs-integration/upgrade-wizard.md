@@ -52,4 +52,3 @@ The **Create Backup** page allows you to:
 - **Create a backup before converting** - backup your projects before upgrading it
 - **Backup location** - specify the backup folder
 - **Show upgrade log when the Upgrade Wizard finishes the update** - display the upgrade log after the Upgrade Wizard finishes
- 

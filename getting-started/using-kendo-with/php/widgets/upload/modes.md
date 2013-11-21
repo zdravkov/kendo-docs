@@ -133,4 +133,3 @@ The selected files will be uploaded immediately by default. You can change this 
         ));
         ?>
 
- 

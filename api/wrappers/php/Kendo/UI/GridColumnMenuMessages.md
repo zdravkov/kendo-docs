@@ -120,4 +120,3 @@ The text message displayed for the menu item which performs descending sort.
     $messages->sortDescending('value');
     ?>
 
- 

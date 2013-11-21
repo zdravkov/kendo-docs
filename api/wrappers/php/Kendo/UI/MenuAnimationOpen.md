@@ -48,4 +48,3 @@ Effect to be used for opening of the popup.
     $open->effects('value');
     ?>
 
- 

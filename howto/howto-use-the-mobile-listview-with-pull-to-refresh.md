@@ -116,4 +116,3 @@ Now we can use this additional parameter in the parameterMap function of the Dat
 Here's the live example of the above example:
 
 <a class="jsbin-embed" href="http://jsbin.com/iloqid/1/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
- 

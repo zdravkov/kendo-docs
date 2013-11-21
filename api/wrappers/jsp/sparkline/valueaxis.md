@@ -31,4 +31,3 @@ More documentation is available at [kendo:sparkline-valueAxisItem](sparkline/val
         <kendo:sparkline-valueAxisItem></kendo:sparkline-valueAxisItem>
     </kendo:sparkline-valueAxis>
 
- 

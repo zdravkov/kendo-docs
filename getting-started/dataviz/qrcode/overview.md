@@ -75,4 +75,3 @@ A reader might open a local mapping application like Google Maps to this locatio
 ### Configure the border, color, background, encoding.
 
 Refer to the complete [API reference](http://docs.kendoui.com/api/dataviz/qrcode) for examples and complete list of settings/methods that the QRCode provides.
- 

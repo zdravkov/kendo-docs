@@ -71,4 +71,3 @@ More documentation is available at [kendo:chart-valueAxisItem-notes-dataItem-lin
         <kendo:chart-valueAxisItem-notes-dataItem-line></kendo:chart-valueAxisItem-notes-dataItem-line>
     </kendo:chart-valueAxisItem-notes-dataItem>
 
- 

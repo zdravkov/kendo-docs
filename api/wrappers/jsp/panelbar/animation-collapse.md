@@ -33,4 +33,3 @@ is closed. Options include "fadeOut".
     <kendo:panelBar-animation-collapse effects="effects">
     </kendo:panelBar-animation-collapse>
 
- 

@@ -240,4 +240,3 @@ For additional information check the [select](/api/web/tabstrip#events-select) e
         </kendo:tabStrip-select>
     </kendo:tabStrip>
 
- 

@@ -94,4 +94,3 @@ You can subscribe to all panelbar [events](/api/web/panelbar#events).
 
     echo $panelbar->render();
     ?>
- 

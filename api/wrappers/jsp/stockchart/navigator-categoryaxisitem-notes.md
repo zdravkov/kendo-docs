@@ -75,4 +75,3 @@ More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-
         <kendo:stockChart-navigator-categoryAxisItem-notes-line></kendo:stockChart-navigator-categoryAxisItem-notes-line>
     </kendo:stockChart-navigator-categoryAxisItem-notes>
 
- 

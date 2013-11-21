@@ -44,4 +44,3 @@ More documentation is available at [kendo:tabStrip-animation-open](tabstrip/anim
         <kendo:tabStrip-animation-open></kendo:tabStrip-animation-open>
     </kendo:tabStrip-animation>
 
- 

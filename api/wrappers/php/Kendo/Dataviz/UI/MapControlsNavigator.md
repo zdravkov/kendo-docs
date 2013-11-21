@@ -30,4 +30,3 @@ The position of the navigator control. Possible values include:
     $navigator->position('value');
     ?>
 
- 

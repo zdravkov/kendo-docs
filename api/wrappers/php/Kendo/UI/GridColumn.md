@@ -444,4 +444,3 @@ The width of the column. Numeric values are treated as pixels. Also refer to Col
     $column->width(1);
     ?>
 
- 

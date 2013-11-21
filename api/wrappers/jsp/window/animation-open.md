@@ -32,4 +32,3 @@ Effect to be used for opening of the popup.
     <kendo:window-animation-open effects="effects">
     </kendo:window-animation-open>
 
- 

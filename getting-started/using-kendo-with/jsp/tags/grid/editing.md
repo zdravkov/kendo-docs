@@ -201,4 +201,3 @@ To configure Kendo Grid for JSP for editing follow these steps (using Spring MVC
 
 	        return target;
 	    }
- 

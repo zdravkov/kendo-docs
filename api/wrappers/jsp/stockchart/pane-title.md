@@ -88,4 +88,3 @@ More documentation is available at [kendo:stockChart-pane-title-border](stockcha
         <kendo:stockChart-pane-title-border></kendo:stockChart-pane-title-border>
     </kendo:stockChart-pane-title>
 
- 

@@ -121,4 +121,3 @@ The width of the line in pixels. Also affects the major and minor ticks, but not
     $majorGridLines->width(1);
     ?>
 
- 

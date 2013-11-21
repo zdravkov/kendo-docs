@@ -63,4 +63,3 @@ use the API to control its behavior.
 
     var rangeSlider = $("#rangeSlider").data("kendoRangeSlider");
 
- 

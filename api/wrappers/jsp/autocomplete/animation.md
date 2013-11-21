@@ -43,4 +43,3 @@ More documentation is available at [kendo:autoComplete-animation-open](autocompl
         <kendo:autoComplete-animation-open></kendo:autoComplete-animation-open>
     </kendo:autoComplete-animation>
 
- 

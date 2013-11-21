@@ -756,4 +756,3 @@ The XHR request object, as returned from [jQuery.ajax](http://api.jquery.com/jQu
 ##### e.status `String`
 
 The status of the request, as returned from [jQuery.ajax](http://api.jquery.com/jQuery.ajax/)
- 

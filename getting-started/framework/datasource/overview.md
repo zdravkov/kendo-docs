@@ -132,4 +132,3 @@ to enable multiple UI widgets to bind to the same, observable data collection.
                 template: '#= kendo.toString(sales, "N0") #'
         }]
     });
- 

@@ -31,4 +31,3 @@ More documentation is available at [kendo:chart-xAxisItem-notes-dataItem](chart/
         <kendo:chart-xAxisItem-notes-dataItem></kendo:chart-xAxisItem-notes-dataItem>
     </kendo:chart-xAxisItem-notes-data>
 
- 

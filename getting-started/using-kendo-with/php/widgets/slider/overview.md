@@ -77,4 +77,3 @@ You can subscribe to all slider [events](/api/web/slider#events).
 
     echo $slider->render();
     ?>
- 

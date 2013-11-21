@@ -46,4 +46,3 @@ The width of the border.
     </kendo:chart>
 
 
- 

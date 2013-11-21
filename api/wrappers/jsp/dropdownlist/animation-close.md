@@ -32,4 +32,3 @@ The effect(s) to use when playing the close animation. Multiple effects should b
     <kendo:dropDownList-animation-close effects="effects">
     </kendo:dropDownList-animation-close>
 
- 

@@ -38,4 +38,3 @@ If the editor is within a `<form>` element, a good moment to post-process its co
       comments.val(value);
     });
     </script>
- 

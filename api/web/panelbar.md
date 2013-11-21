@@ -1209,4 +1209,3 @@ Triggered when an item of a PanelBar is selected.
 ##### e.item `Element`
 
 The selected item of the PanelBar.
- 

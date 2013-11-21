@@ -20,4 +20,4 @@ All changes described in the [ComboBox](combobox) are applicable to the AutoComp
  
 #### New
 
-	Html.Kendo ().AutoComplete().Name(“AutoComplete”).Separator(“, “) 
+	Html.Kendo ().AutoComplete().Name(“AutoComplete”).Separator(“, “)

@@ -33,4 +33,3 @@ More documentation is available at [kendo:stockChart-seriesItem](stockchart/seri
         <kendo:stockChart-seriesItem></kendo:stockChart-seriesItem>
     </kendo:stockChart-series>
 
- 

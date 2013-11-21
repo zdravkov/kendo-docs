@@ -120,4 +120,3 @@ The width of the category axis minor grid lines in pixels.
     $minorGridLines->width(1);
     ?>
 
- 

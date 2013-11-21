@@ -6016,4 +6016,3 @@ The widget instance which fired the event.
     var grid = $("#grid").data("kendoGrid");
     grid.bind("saveChanges", grid_saveChanges);
     </script>
- 

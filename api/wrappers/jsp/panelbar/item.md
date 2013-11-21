@@ -80,4 +80,3 @@ Specifies the URL that the item links to
     <kendo:panelBar-item url="url">
     </kendo:panelBar-item>
 
- 

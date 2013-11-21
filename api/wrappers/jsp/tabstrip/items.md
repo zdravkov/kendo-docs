@@ -31,4 +31,3 @@ More documentation is available at [kendo:tabStrip-item](tabstrip/item).
         <kendo:tabStrip-item></kendo:tabStrip-item>
     </kendo:tabStrip-items>
 
- 

@@ -75,4 +75,3 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/grid#events) e
         //Handle the change event
     }
     </script>
- 

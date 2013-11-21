@@ -99,4 +99,3 @@ The tooltip of the refresh button.
     <kendo:grid-pageable-messages refresh="refresh">
     </kendo:grid-pageable-messages>
 
- 

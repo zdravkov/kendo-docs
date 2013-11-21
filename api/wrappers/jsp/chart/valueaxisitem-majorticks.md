@@ -56,4 +56,3 @@ If set to true the chart will display the value axis major ticks. By default the
     <kendo:chart-valueAxisItem-majorTicks visible="visible">
     </kendo:chart-valueAxisItem-majorTicks>
 
- 

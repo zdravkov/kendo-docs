@@ -265,4 +265,3 @@ For additional information check the [select](/api/web/panelbar#events-select) e
         </kendo:panelBar-select>
     </kendo:panelBar>
 
- 

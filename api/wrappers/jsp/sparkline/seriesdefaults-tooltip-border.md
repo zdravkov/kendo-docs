@@ -32,4 +32,3 @@ The width of the border.
     <kendo:sparkline-seriesDefaults-tooltip-border width="width">
     </kendo:sparkline-seriesDefaults-tooltip-border>
 
- 

@@ -240,4 +240,4 @@ the template uses.
 Using the rendered result of the template we find the `<ul class="errors">` which is in the editor dialog and
 append the result to it using jQuery. An easy way of finding the editor dialog in the DOM is use the **editable**
 property on the grid. The **editable** object has a property called **element** which is a jQuery object that
-points the dialog in the DOM. 
+points the dialog in the DOM.

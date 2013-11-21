@@ -1048,4 +1048,3 @@ Fires when a new item is added to the listview (usually in virtual mode).
     new kendo.mobile.Application();
     </script>
 
- 

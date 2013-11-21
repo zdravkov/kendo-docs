@@ -65,4 +65,3 @@ The width of the category axis major grid lines in pixels.
     <kendo:chart-categoryAxisItem-majorGridLines width="width">
     </kendo:chart-categoryAxisItem-majorGridLines>
 
- 

@@ -35,4 +35,3 @@ All widgets no longer have the OnLoad event. Please use $(document).ready() inst
 
 ### New
     .DataSource(ds => ds.Events(events => events.Error("error")))
- 

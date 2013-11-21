@@ -64,4 +64,3 @@ The width of the lines.Note that this settings has no effect if the visibility o
     <kendo:stockChart-valueAxisItem-minorGridLines width="width">
     </kendo:stockChart-valueAxisItem-minorGridLines>
 
- 

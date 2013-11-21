@@ -55,4 +55,3 @@ More documentation is available at [kendo:sparkline-seriesItem-highlight-border]
         <kendo:sparkline-seriesItem-highlight-border></kendo:sparkline-seriesItem-highlight-border>
     </kendo:sparkline-seriesItem-highlight>
 
- 

@@ -29,4 +29,3 @@ Kendo exposes methods which converts the specified string to a [Date](https://de
 
     kendo.parseDate("2012.07.16", "yyyy/MM/dd", "de-DE");
 	kendo.parseDate("2012.07.16", ["MM/dd/yyyy", "yyyy/MM/dd"], "de-DE");
- 

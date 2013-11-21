@@ -209,4 +209,3 @@ To enable this mode follow these steps (using Spring MVC framework):
 
 	        return products;
 	    }
- 

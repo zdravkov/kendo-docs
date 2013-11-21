@@ -125,4 +125,3 @@ Template variables:
         </kendo:stockChart-xAxisItem-crosshair-tooltip-template>
     </kendo:stockChart-xAxisItem-crosshair-tooltip>
 
- 

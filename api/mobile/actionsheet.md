@@ -254,4 +254,3 @@ The invocation target of the ActionSheet.
 ##### e.context `jQuery`
 
 The defined ActionSheet context.
- 

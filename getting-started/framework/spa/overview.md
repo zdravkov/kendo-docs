@@ -38,4 +38,3 @@ The **View** and **Layout** classes are used for the UI rendering. UI Event hand
             router.start();
         });
     </script>
- 

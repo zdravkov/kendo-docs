@@ -31,4 +31,3 @@ More documentation is available at [kendo:grid-toolbarItem](grid/toolbaritem).
         <kendo:grid-toolbarItem></kendo:grid-toolbarItem>
     </kendo:grid-toolbar>
 
- 

@@ -32,4 +32,3 @@ An array of resource names by which the scheduler events will be grouped.
     <kendo:scheduler-group resources="resources">
     </kendo:scheduler-group>
 
- 

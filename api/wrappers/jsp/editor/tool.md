@@ -100,4 +100,3 @@ The JavaScript function which will be executed when the end-user clicks the tool
         </kendo:editor-tool-exec>
     </kendo:editor-tool>
 
- 

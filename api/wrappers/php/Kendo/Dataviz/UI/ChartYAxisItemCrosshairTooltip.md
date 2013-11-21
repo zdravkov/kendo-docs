@@ -193,4 +193,3 @@ If set to true the chart will display the scatter chart y axis crosshair tooltip
     $tooltip->visible(true);
     ?>
 
- 

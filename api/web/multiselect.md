@@ -1120,4 +1120,3 @@ The widget instance which fired the event.
     var multiselect = $("#multiselect").data("kendoMultiSelect");
     multiselect.bind("select", multiselect_select);
     </script>
- 

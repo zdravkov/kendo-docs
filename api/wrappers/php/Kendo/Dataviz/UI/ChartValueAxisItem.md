@@ -536,4 +536,3 @@ If set to true the chart will display the value axis. By default the value axis 
     $valueAxisItem->visible(true);
     ?>
 
- 

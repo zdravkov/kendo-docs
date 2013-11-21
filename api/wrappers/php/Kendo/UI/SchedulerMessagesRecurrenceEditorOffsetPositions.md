@@ -102,4 +102,3 @@ The text similar to "third" displayed in the scheduler recurrence editor.
     $offsetPositions->third('value');
     ?>
 
- 

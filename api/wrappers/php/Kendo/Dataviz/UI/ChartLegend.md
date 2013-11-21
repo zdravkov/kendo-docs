@@ -231,4 +231,3 @@ If set to true the chart will display the legend. By default the chart legend is
     $legend->visible(true);
     ?>
 
- 

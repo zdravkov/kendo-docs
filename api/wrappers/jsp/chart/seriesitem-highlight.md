@@ -68,4 +68,3 @@ More documentation is available at [kendo:chart-seriesItem-highlight-line](chart
         <kendo:chart-seriesItem-highlight-line></kendo:chart-seriesItem-highlight-line>
     </kendo:chart-seriesItem-highlight>
 
- 

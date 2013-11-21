@@ -143,4 +143,4 @@ Looking at the CSS for this page in **home-view.css**, the background image is d
  	  	background-repeat: no-repeat;
   	  	background-position-y: 15px;
   	  	width: 225px;
-	} 
+	}

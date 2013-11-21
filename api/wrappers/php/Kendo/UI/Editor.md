@@ -413,4 +413,3 @@ Adds one or more EditorTool to the Editor.
     $editor->addTool($first, $second);
     ?>
 
- 

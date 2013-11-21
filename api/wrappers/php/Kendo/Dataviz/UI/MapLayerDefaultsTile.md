@@ -84,4 +84,3 @@ The URL template for tile layers. Template variables:
     $tile->urlTemplate('value');
     ?>
 
- 

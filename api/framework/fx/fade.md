@@ -93,4 +93,3 @@ the final opacity value.
 #### Returns
 
 `Effect` The effect instance
- 

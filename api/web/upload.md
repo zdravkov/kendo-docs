@@ -993,4 +993,3 @@ Note: Will be *undefined* if the browser does not support File API.
 The XMLHttpRequest instance that will be used to carry out the upload.
 The request will be in UNSENT state.
 
- 

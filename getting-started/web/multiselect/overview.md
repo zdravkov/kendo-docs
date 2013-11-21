@@ -226,4 +226,3 @@ can use the API to control its behavior.
 ### Accessing an existing MultiSelect instance
 
     var multiselect = $("#multiselect").data("kendoMultiSelect");
- 

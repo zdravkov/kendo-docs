@@ -48,4 +48,3 @@ The field by which the data items are sorted.
     $sortItem->field('value');
     ?>
 
- 

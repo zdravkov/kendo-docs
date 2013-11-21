@@ -102,4 +102,3 @@ which field to update. The other option is to use MVVM bindings in order to bind
         </kendo:scheduler-editable-template>
     </kendo:scheduler-editable>
 
- 

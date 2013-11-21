@@ -25,4 +25,3 @@ Any valid CSS color string will work here, including hex and rgb.
     <kendo:stockChart-legend-inactiveItems-markers color="color">
     </kendo:stockChart-legend-inactiveItems-markers>
 
- 

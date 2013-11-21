@@ -86,4 +86,3 @@ The data item field to group by.
     $groupItem->field('value');
     ?>
 
- 

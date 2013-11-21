@@ -166,4 +166,3 @@ The yAxis error bars value. See the series.errorBars.value option for a list of 
         </kendo:chart-seriesItem-errorBars-yValue>
     </kendo:chart-seriesItem-errorBars>
 
- 

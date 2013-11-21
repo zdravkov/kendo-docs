@@ -350,4 +350,3 @@ The name of the field of an item that changed. Available only when `e.action` is
     });
     people[0].set("name", "Jane Doe"); // outputs "itemchange", "name", "Jane Doe"
     </script>
- 

@@ -244,4 +244,3 @@ adding a span with data-for attribute set to the validated input name and a clas
 
 The Kendo UI Validator is a powerful framework component and essential for any application that collects user input. [Review the API Docs](/api/framework/validator) for more configuration details and options.
 
- 

@@ -21,4 +21,3 @@ The label is positioned outside, near the end of the bar.
 
 
 
- 

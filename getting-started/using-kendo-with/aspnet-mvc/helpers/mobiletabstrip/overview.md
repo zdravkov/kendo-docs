@@ -160,4 +160,3 @@ You can subscribe to all [events](/api/mobile/tabstrip#events) exposed by the wi
         //Handle the select event
     }
     </script>
- 

@@ -184,4 +184,4 @@ The above remarks only apply to the case when the Window is *not* using an `ifra
 ## Destroying a Kendo UI Window
 
 Unlike most other widgets, the Kendo UI Window is **completely removed from the DOM** when [destroyed](/getting-started/widgets#destroying-kendo-ui-widgets).
-This means that the element, from which it was initialized, no longer exists on the page, so a new Window instance can be created only from another element. 
+This means that the element, from which it was initialized, no longer exists on the page, so a new Window instance can be created only from another element.

@@ -84,4 +84,3 @@ The top margin of the navigator pane.
     $margin->top(1);
     ?>
 
- 

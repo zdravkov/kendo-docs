@@ -67,4 +67,3 @@ More documentation is available at [kendo:grid-filterable-operators-string](grid
         <kendo:grid-filterable-operators-string></kendo:grid-filterable-operators-string>
     </kendo:grid-filterable-operators>
 
- 

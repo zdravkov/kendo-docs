@@ -173,4 +173,3 @@ The width of the border in pixels.
         </kendo:chart-seriesItem-border-width>
     </kendo:chart-seriesItem-border>
 
- 

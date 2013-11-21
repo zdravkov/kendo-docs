@@ -110,4 +110,3 @@ horizontal gauge is 200px.
     $gaugeArea->width(1);
     ?>
 
- 

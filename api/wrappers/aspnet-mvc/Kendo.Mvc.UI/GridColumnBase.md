@@ -36,4 +36,3 @@ Gets the HTML attributes of the cell rendered for the column
 
 
 
- 

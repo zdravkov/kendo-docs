@@ -40,4 +40,3 @@ The Download buttons of the Upgrade Wizard and the New Project Wizard launch the
 >**Note:**
 The Latest Version Acquirer tool downloads the zip files, containing the latest Kendo UI for ASP.NET MVC binaries and any resources vital for a Kendo UI for ASP.NET MVC Application. These get unpacked to the **%APPDATA%\Telerik\Updates** folder by default.
 If you find the list of packages offered too long and you don't need the older versions, you can close Visual Studio and use Windows Explorer to delete these distributions.
- 

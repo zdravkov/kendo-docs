@@ -185,4 +185,3 @@ and can’t do.  Instead, refer to the docs for the MVVM framework bindings
 doing initialization of widgets using configuration attributes in the
 declarative bindings, simply look up the configuration values so you know what
 you can and can’t use to configure the widget.
- 

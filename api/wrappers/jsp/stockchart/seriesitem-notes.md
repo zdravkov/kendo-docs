@@ -63,4 +63,3 @@ More documentation is available at [kendo:stockChart-seriesItem-notes-line](stoc
         <kendo:stockChart-seriesItem-notes-line></kendo:stockChart-seriesItem-notes-line>
     </kendo:stockChart-seriesItem-notes>
 
- 

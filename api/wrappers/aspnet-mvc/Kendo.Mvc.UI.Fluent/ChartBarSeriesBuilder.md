@@ -233,4 +233,3 @@ The bar color for negative values(CSS syntax).
 
 
 
- 

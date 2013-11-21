@@ -164,4 +164,3 @@ Fires when the user drags the drag handle to a new position.
 ##### e.value `Number`
 
 Represents an array of values of the current positions of the first and second drag handle.
- 

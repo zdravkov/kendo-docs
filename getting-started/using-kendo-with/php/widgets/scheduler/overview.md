@@ -110,4 +110,3 @@ You can subscribe to all scheduler [events](/api/web/scheduler#events).
 
     echo $scheduler->render();
     ?>
- 

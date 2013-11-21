@@ -48,4 +48,3 @@ If set to true the chart will display the negative bubbles. By default the negat
     $negativeValues->visible(true);
     ?>
 
- 

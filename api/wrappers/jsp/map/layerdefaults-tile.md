@@ -48,4 +48,3 @@ The URL template for tile layers. Template variables:
     <kendo:map-layerDefaults-tile urlTemplate="urlTemplate">
     </kendo:map-layerDefaults-tile>
 
- 

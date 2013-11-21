@@ -41,4 +41,3 @@ The width of the border.
     <kendo:sparkline-valueAxisItem-labels-border width="width">
     </kendo:sparkline-valueAxisItem-labels-border>
 
- 

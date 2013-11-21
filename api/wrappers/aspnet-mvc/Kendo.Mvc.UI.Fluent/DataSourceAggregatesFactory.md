@@ -47,4 +47,3 @@ Applies the Sum aggregate function.
 
 
 
- 

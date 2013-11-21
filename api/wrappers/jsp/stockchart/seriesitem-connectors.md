@@ -46,4 +46,3 @@ The width of the connector line.
     </kendo:stockChart-seriesItem-connectors>
 
 
- 

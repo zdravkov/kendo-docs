@@ -378,4 +378,3 @@ The series base color.
         </kendo:sparkline-seriesItem-color>
     </kendo:sparkline-seriesItem>
 
- 

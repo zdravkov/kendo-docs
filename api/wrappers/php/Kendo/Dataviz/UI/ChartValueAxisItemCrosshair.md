@@ -113,4 +113,3 @@ The width of the crosshair in pixels.
     $crosshair->width(1);
     ?>
 
- 

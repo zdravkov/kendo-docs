@@ -32,4 +32,3 @@ The data item field which will be used to calculate the aggregates.
     <kendo:dataSource-groupItem-aggregate field="field">
     </kendo:dataSource-groupItem-aggregate>
 
- 

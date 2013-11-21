@@ -114,4 +114,3 @@ You can subscribe to all listview [events](/api/web/listview#events).
 
     echo $listview->render();
     ?>
- 

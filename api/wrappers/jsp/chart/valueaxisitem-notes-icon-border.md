@@ -32,4 +32,3 @@ The border width of the icon.
     <kendo:chart-valueAxisItem-notes-icon-border width="width">
     </kendo:chart-valueAxisItem-notes-icon-border>
 
- 

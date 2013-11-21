@@ -286,4 +286,3 @@ The new value to be set.
     var qrCode = $("#qrCode").data("kendoQRCode");
     qrCode.value("Hello");
 
- 

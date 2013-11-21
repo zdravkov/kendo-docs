@@ -99,4 +99,3 @@ and if older than Q3 2012, this rule instead:
         -webkit-transform: none;
         -moz-transform: none;
     }
- 

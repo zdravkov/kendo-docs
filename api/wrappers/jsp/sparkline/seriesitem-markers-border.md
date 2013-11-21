@@ -97,4 +97,3 @@ The width of the border.
         </kendo:sparkline-seriesItem-markers-border-width>
     </kendo:sparkline-seriesItem-markers-border>
 
- 

@@ -138,4 +138,3 @@ The width of the value axis major grid lines in pixels.
     $majorGridLines->width(1);
     ?>
 
- 

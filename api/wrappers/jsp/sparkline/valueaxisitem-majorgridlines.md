@@ -57,4 +57,3 @@ The width of the lines.
     <kendo:sparkline-valueAxisItem-majorGridLines width="width">
     </kendo:sparkline-valueAxisItem-majorGridLines>
 
- 

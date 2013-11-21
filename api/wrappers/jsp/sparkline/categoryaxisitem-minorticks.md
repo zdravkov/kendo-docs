@@ -65,4 +65,3 @@ The width of the minor ticks in pixels.
     <kendo:sparkline-categoryAxisItem-minorTicks width="width">
     </kendo:sparkline-categoryAxisItem-minorTicks>
 
- 

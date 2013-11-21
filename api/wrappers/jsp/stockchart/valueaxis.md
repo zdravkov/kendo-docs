@@ -31,4 +31,3 @@ More documentation is available at [kendo:stockChart-valueAxisItem](stockchart/v
         <kendo:stockChart-valueAxisItem></kendo:stockChart-valueAxisItem>
     </kendo:stockChart-valueAxis>
 
- 

@@ -44,4 +44,3 @@ More documentation is available at [kendo:window-animation-open](window/animatio
         <kendo:window-animation-open></kendo:window-animation-open>
     </kendo:window-animation>
 
- 

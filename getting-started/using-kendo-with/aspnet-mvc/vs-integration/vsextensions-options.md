@@ -51,4 +51,3 @@ All settings under the KendoUI category affect only the Kendo UI for ASP.NET MVC
 ###Notifications
 
 - **Show me message when a newer version is available on www.telerik.com** - When enabled, you will receive notifications if a new version of Kendo UI for ASP.NET MVC is available on the Telerik website.
- 

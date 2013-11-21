@@ -283,4 +283,3 @@ Configuration of the RangeSlider tooltip.
     $rangeSlider->tooltip(array('enabled' => $enabled));
     ?>
 
- 

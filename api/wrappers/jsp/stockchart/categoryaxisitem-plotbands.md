@@ -31,4 +31,3 @@ More documentation is available at [kendo:stockChart-categoryAxisItem-plotBand](
         <kendo:stockChart-categoryAxisItem-plotBand></kendo:stockChart-categoryAxisItem-plotBand>
     </kendo:stockChart-categoryAxisItem-plotBands>
 
- 

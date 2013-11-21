@@ -106,4 +106,3 @@ or
             }],
          editable: true
      });
- 

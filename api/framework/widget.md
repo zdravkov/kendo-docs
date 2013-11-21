@@ -34,4 +34,3 @@ Executes all handlers attached to the given event. More info can be found in the
 Remove a previously attached event handler. More info can be found in the [unbind](/api/framework/observable#unbind) section of the
 `kendo.Observable` API reference.
 
- 

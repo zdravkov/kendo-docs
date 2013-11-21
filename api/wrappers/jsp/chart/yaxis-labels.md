@@ -36,4 +36,3 @@ Date format strings
     </kendo:chart>
 
 
- 

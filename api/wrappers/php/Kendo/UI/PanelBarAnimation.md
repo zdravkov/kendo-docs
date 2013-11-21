@@ -70,4 +70,3 @@ The visual animation(s) that will be used when opening items.
     $animation->expand(array('duration' => $duration));
     ?>
 
- 

@@ -75,4 +75,3 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-notes-line]
         <kendo:sparkline-categoryAxisItem-notes-line></kendo:sparkline-categoryAxisItem-notes-line>
     </kendo:sparkline-categoryAxisItem-notes>
 
- 

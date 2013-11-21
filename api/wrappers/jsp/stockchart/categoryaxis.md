@@ -31,4 +31,3 @@ More documentation is available at [kendo:stockChart-categoryAxisItem](stockchar
         <kendo:stockChart-categoryAxisItem></kendo:stockChart-categoryAxisItem>
     </kendo:stockChart-categoryAxis>
 
- 

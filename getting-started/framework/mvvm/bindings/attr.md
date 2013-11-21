@@ -54,4 +54,3 @@ You can also set HTML5 data attributes via the `attr` binding:
 ## Widget support
 
 The `attr` binding is **not** support by Kendo Widgets.
- 

@@ -32,4 +32,3 @@ Use a jQuery selector to enable DOM elements within an area to be targets for dr
 ## **DropTargetArea** initialization
 
     var dropTargetArea = $("#dropTargetArea").kendoDropTargetArea({ filter: ".dropTargets" });
- 

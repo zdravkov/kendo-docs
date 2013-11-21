@@ -40,4 +40,3 @@ The width of the border.
     <kendo:linearGauge-scale-labels-border width="width">
     </kendo:linearGauge-scale-labels-border>
 
- 

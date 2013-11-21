@@ -119,4 +119,3 @@ The handler which should no longer be executed. If not specified all handlers li
     obj.trigger("myevent"); // fire the event
     console.log(numberOfCalls); // outputs "1"
     </script>
- 

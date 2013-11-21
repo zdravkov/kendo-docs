@@ -84,4 +84,3 @@ The top margin of the chart plot area.
     $margin->top(1);
     ?>
 
- 

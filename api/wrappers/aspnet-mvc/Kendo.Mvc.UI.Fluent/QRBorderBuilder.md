@@ -62,4 +62,3 @@ The border color.
 
 
 
- 

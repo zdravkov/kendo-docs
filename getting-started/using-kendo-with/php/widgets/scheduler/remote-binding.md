@@ -508,4 +508,3 @@ First we will configure a Kendo Grid for PHP binding and then we will implement 
 
         echo json_encode($data);
         ?>
- 

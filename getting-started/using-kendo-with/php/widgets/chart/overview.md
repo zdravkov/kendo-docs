@@ -104,4 +104,3 @@ You can subscribe to all Chart [events](/api/dataviz/chart#events).
 
     echo $chart->render();
     ?>
- 

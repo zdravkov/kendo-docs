@@ -116,4 +116,3 @@ More documentation is available at [kendo:chart-pane-title](chart/pane-title).
         <kendo:chart-pane-title></kendo:chart-pane-title>
     </kendo:chart-pane>
 
- 

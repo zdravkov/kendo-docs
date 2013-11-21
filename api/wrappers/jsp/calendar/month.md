@@ -34,4 +34,3 @@ The template to be used for rendering the cells in the "month" view, which are n
     <kendo:calendar-month empty="empty">
     </kendo:calendar-month>
 
- 

@@ -187,4 +187,3 @@ You can subscribe to all [events](/api/mobile/layout#events) exposed by the widg
         //Handle the show event
     }
     </script>
- 

@@ -186,4 +186,3 @@ First we will configure a Kendo MultiSelect for PHP binding and then we will imp
 
         echo json_encode($data);
         ?>
- 

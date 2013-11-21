@@ -254,4 +254,4 @@ Kendo UI widgets are destroyed automatically when the web page is unloaded.
 	</script>
 
 In addition to destroying a particular Kendo UI widget, the Kendo UI framework provides a [`kendo.destroy()` method](/api/framework/kendo#methods-destroy),
-which can destroy multiple widgets, which are placed inside a given container. 
+which can destroy multiple widgets, which are placed inside a given container.

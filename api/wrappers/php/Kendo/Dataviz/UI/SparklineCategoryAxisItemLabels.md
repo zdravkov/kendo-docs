@@ -299,4 +299,3 @@ The visibility of the labels.
     $labels->visible(true);
     ?>
 
- 

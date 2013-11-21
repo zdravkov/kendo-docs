@@ -31,4 +31,3 @@ More documentation is available at [kendo:editor-imageBrowser-schema-model](edit
         <kendo:editor-imageBrowser-schema-model></kendo:editor-imageBrowser-schema-model>
     </kendo:editor-imageBrowser-schema>
 
- 

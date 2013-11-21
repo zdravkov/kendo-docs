@@ -192,4 +192,3 @@ Defines the text of the refresh button tooltip.
     $messages->refresh('value');
     ?>
 
- 

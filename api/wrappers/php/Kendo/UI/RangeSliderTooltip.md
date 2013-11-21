@@ -67,4 +67,3 @@ Template of the tooltip.
     $tooltip->template('value');
     ?>
 
- 

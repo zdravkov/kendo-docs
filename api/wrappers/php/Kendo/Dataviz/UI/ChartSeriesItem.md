@@ -1530,4 +1530,3 @@ The data item field containing the Y value.
     $seriesItem->yField('value');
     ?>
 
- 

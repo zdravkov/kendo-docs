@@ -172,4 +172,3 @@ You can subscribe to all [events](/api/mobile/scrollview#events) exposed by the 
         //Handle the change event
     }
     </script>
- 

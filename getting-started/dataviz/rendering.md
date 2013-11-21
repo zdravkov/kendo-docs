@@ -73,4 +73,3 @@ This is a short list of the known issues:
 * Interactive features are not available with the exception of shared tooltips.
 * Dashed lines are not supported in IE.
 
- 

@@ -88,4 +88,3 @@ The animation that will be used when expanding items.
     $animation->expand(array('duration' => $duration));
     ?>
 
- 

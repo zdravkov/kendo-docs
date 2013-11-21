@@ -364,4 +364,3 @@ The current value of the **ProgressBar**.
 	  progressbar.bind("complete", onComplete);
 	</script>
 
- 

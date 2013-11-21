@@ -707,4 +707,3 @@ Use the kendo.days constants to specify the day by name.
     $categoryAxisItem->weekStartDay(1);
     ?>
 
- 

@@ -90,4 +90,3 @@ The header for each order history group is controlled by the template:
 
 This template prints the order number, the date of the order, and calls `app.accountView.calcOrderTotal()` to get the total price for the order.
 Note that in the context of this template, `data.items` is an array that countains all the data items that belong to this grouping.
- 

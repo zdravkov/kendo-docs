@@ -173,4 +173,3 @@ You can subscribe to all [events](/api/mobile/actionsheet#events) exposed by the
         //Will execute when item with `Reply` title is clicked
     }
     </script>
- 

@@ -51,4 +51,4 @@ To configure the Kendo StockChart for ajax binding follow these steps (using Spr
 		    		<kendo:stockChart-navigator-seriesItem type="line" field="close" />
 		    	</kendo:stockChart-navigator-series>
 		    </kendo:stockChart-navigator>
-	         </kendo:stockChart> 
+	         </kendo:stockChart>

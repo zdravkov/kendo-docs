@@ -304,4 +304,3 @@ If set to true the chart will display the value axis labels. By default the cate
     $labels->visible(true);
     ?>
 
- 

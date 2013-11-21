@@ -33,4 +33,3 @@ The supported effects are fadeOut and collapseVertical.
     <kendo:treeView-animation-collapse effects="effects">
     </kendo:treeView-animation-collapse>
 
- 

@@ -193,4 +193,3 @@ The URL which will handle the upload of the new images. If not specified the Upl
     $transport->uploadUrl('value');
     ?>
 
- 

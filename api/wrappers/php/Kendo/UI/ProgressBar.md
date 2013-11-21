@@ -296,4 +296,3 @@ The underlying value of the ProgressBar.
     $progressBar->value(1);
     ?>
 
- 

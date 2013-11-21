@@ -67,4 +67,3 @@ More documentation is available at [kendo:stockChart-seriesItem-notes-icon-borde
         <kendo:stockChart-seriesItem-notes-icon-border></kendo:stockChart-seriesItem-notes-icon-border>
     </kendo:stockChart-seriesItem-notes-icon>
 
- 

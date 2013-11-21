@@ -243,4 +243,3 @@ If set to true the chart will display the scatter chart y axis title. By default
     $title->visible(true);
     ?>
 
- 

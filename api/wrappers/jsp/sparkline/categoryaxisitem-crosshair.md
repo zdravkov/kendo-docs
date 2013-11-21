@@ -71,4 +71,3 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-crosshair-t
         <kendo:sparkline-categoryAxisItem-crosshair-tooltip></kendo:sparkline-categoryAxisItem-crosshair-tooltip>
     </kendo:sparkline-categoryAxisItem-crosshair>
 
- 

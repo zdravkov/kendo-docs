@@ -313,4 +313,3 @@ For additional information check the [select](/api/web/autocomplete#events-selec
         </kendo:autoComplete-select>
     </kendo:autoComplete>
 
- 

@@ -178,4 +178,4 @@ This then calls the **updateQty()** function on the view model, which simply set
                 }
 
 Since the **total** function previously used the MVVM method **.get("quantity")**, view elements that are bound to **total** are notified
-that they need to update. This causes the total being displayed to the user to update. 
+that they need to update. This causes the total being displayed to the user to update.

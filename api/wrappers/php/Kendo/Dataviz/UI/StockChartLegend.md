@@ -229,4 +229,3 @@ The visibility of the legend.
     $legend->visible(true);
     ?>
 
- 

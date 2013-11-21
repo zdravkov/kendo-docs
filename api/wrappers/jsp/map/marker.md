@@ -49,4 +49,3 @@ The marker size in pixels.
     <kendo:map-marker size="size">
     </kendo:map-marker>
 
- 

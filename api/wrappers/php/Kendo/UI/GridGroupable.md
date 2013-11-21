@@ -41,4 +41,3 @@ The text messages displayed during grouping.
     $groupable->messages(array('empty' => $empty));
     ?>
 
- 

@@ -230,4 +230,3 @@ The resulting output is a zip file containing your project, ready for deployment
 ## Other Features
 
 The Kendo UI Bootstrapper also has other features like the ability to open your IDE of choice by clicking the edit icon next to a file.  You can simply preview any file by clicking on it.  You can even open the Bootstrapper on an existing project.  The Bootstrapper also has support for RequireJS and RequireJS builds which it will handle for you automatically.
- 

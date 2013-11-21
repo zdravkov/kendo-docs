@@ -86,4 +86,3 @@ The width of the minor ticks.
     $minorTicks->width(1);
     ?>
 
- 

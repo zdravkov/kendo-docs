@@ -84,4 +84,3 @@ The top margin of the title.
     $margin->top(1);
     ?>
 
- 

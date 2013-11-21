@@ -157,4 +157,3 @@ More documentation is available at [kendo:chart-valueAxis-labels-border](/api/wr
         <kendo:chart-valueAxis-labels-border></kendo:chart-valueAxis-labels-border>
     </kendo:chart-valueAxis-labels>
  
- 

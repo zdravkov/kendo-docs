@@ -48,4 +48,3 @@ The top padding of the title.
     <kendo:chart-title-padding top="top">
     </kendo:chart-title-padding>
 
- 

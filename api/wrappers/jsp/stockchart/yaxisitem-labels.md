@@ -184,4 +184,3 @@ The label template.
         </kendo:stockChart-yAxisItem-labels-template>
     </kendo:stockChart-yAxisItem-labels>
 
- 

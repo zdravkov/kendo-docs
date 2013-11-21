@@ -381,4 +381,3 @@ Fires after the mobile application is instantiated.
             }
         });
     </script>
- 

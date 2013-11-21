@@ -56,4 +56,3 @@ You can see how the widths of the bases for each segment are based on the ratio 
     </script>
 
 ![Funnel Chart](funnel-dynamicSlope.png)
- 

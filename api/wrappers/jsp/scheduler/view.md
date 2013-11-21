@@ -503,4 +503,3 @@ The template used to render the time slot cells.The fields which can be used in 
         </kendo:scheduler-view-slotTemplate>
     </kendo:scheduler-view>
 
- 

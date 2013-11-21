@@ -350,4 +350,3 @@ For additional information check the [sync](/api/framework/datasource#events-syn
         </kendo:dataSource-sync>
     </kendo:dataSource>
 
- 

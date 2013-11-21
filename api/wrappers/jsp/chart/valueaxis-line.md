@@ -58,4 +58,3 @@ not the grid lines.
     </kendo:chart>
 
 
- 

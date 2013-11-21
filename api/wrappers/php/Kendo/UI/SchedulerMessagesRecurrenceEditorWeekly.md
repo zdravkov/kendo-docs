@@ -66,4 +66,3 @@ The text similar to "Repeat on: " displayed in the scheduler recurrence editor.
     $weekly->repeatOn('value');
     ?>
 
- 

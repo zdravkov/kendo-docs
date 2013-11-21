@@ -48,4 +48,3 @@ Specifies the initial top position of the window.
     $position->top(1);
     ?>
 
- 

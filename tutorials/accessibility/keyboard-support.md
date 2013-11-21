@@ -41,4 +41,4 @@ In addition to accessKey support, every Kendo UI Web widget also supports a seri
 - [TabStrip](http://demos.kendoui.com/web/tabstrip/navigation.html)
 - [TimePicker](http://demos.kendoui.com/web/timepicker/navigation.html)
 - [TreeView](http://demos.kendoui.com/web/treeview/navigation.html)
-- [Window](http://demos.kendoui.com/web/window/navigation.html) 
+- [Window](http://demos.kendoui.com/web/window/navigation.html)

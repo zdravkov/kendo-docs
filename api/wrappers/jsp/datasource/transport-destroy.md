@@ -131,4 +131,3 @@ The URL to which the request is sent.If set to function the data source will inv
         </kendo:dataSource-transport-destroy-url>
     </kendo:dataSource-transport-destroy>
 
- 

@@ -99,4 +99,3 @@ More documentation is available at [kendo:chart-pane-title-margin](chart/pane-ti
         <kendo:chart-pane-title-margin></kendo:chart-pane-title-margin>
     </kendo:chart-pane-title>
 
- 

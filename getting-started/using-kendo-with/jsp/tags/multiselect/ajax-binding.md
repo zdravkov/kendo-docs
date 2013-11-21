@@ -88,4 +88,3 @@ can be changed by DataSource server operaion options to false:
                <kendo:dataSource-transport-read url="${readUrl}"/>
            </kendo:dataSource-transport>
        </kendo:dataSource>
- 

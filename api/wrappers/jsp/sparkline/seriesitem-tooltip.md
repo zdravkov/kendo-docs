@@ -125,4 +125,3 @@ Template variables:
         </kendo:sparkline-seriesItem-tooltip-template>
     </kendo:sparkline-seriesItem-tooltip>
 
- 

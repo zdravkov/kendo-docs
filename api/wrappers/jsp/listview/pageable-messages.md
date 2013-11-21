@@ -96,4 +96,3 @@ Defines the text of the refresh button tooltip.
     <kendo:listView-pageable-messages refresh="refresh">
     </kendo:listView-pageable-messages>
 
- 

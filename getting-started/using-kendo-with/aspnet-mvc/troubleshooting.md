@@ -265,4 +265,4 @@ In such scenarios the inner widget can be included via a custom helper. For exam
 					<p>some text after</p>
 				</text>);
 		})
-	) 
+	)

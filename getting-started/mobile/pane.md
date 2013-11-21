@@ -49,4 +49,3 @@ application, use `data-target="_top"`.
         <a data-role="button" href="#main">Go back to splitview</a>
      </div>
 
- 

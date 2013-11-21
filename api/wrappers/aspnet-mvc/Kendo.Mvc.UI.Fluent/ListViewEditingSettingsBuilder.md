@@ -25,4 +25,3 @@ name of the editor template
 
 
 
- 

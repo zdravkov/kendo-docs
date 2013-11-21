@@ -78,4 +78,3 @@ The following gradient options are available:
 
 ![Pie Chart with no overlay](chart-pie-overlay-none.png)
 
- 

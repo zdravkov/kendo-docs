@@ -30,4 +30,3 @@ The position of the zoom control. Possible values include:
     $zoom->position('value');
     ?>
 
- 

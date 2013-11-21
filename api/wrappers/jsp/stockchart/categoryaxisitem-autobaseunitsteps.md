@@ -66,4 +66,3 @@ The years unit steps.
     <kendo:stockChart-categoryAxisItem-autoBaseUnitSteps years="years">
     </kendo:stockChart-categoryAxisItem-autoBaseUnitSteps>
 
- 

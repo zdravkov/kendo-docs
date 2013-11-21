@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.GridAggregateResult
 
-Represents an aggregate result. 
+Represents an aggregate result.

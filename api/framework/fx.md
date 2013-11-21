@@ -188,4 +188,3 @@ Expands the targets to their size in the specified direction. Directions support
 
 #### Example
     element.kendoAnimate("expand:vertical");
- 

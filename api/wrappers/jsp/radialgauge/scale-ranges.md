@@ -31,4 +31,3 @@ More documentation is available at [kendo:radialGauge-scale-range](radialgauge/s
         <kendo:radialGauge-scale-range></kendo:radialGauge-scale-range>
     </kendo:radialGauge-scale-ranges>
 
- 

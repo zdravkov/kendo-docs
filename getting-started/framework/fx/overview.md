@@ -104,4 +104,3 @@ The Kendo UI FX library currently supports the following effects:
 
 When possible, effects are hardware accelerated via CSS transitions, making them ideal for desktop and mobile devices. Unlike CPU intensive JavaScript animations, animations done with CSS can provide better framerates and battery life.
 
- 

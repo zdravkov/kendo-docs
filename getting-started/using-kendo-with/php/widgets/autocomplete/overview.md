@@ -100,4 +100,3 @@ You can subscribe to all autocomplete [events](/api/web/autocomplete#events).
 
     echo $autoComplete->render();
     ?>
- 

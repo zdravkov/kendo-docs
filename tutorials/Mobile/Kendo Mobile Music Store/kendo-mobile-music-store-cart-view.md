@@ -144,4 +144,3 @@ This is done in the `_scrollToTopIfTooFewItemsInCart()` function.
             utils.scrollViewToTop(_view.element);
         }
     };
- 

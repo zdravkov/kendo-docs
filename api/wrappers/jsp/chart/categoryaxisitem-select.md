@@ -63,4 +63,3 @@ More documentation is available at [kendo:chart-categoryAxisItem-select-mousewhe
         <kendo:chart-categoryAxisItem-select-mousewheel></kendo:chart-categoryAxisItem-select-mousewheel>
     </kendo:chart-categoryAxisItem-select>
 
- 

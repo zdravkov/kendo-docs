@@ -48,4 +48,3 @@ The data item field which will be used to calculate the aggregates.
     $aggregate->field('value');
     ?>
 
- 

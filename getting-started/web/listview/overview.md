@@ -89,4 +89,3 @@ To enable paging, the developer should initiaze separate pager control and bind 
         });
     </script>
 
- 

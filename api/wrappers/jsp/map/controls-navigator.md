@@ -24,4 +24,3 @@ The position of the navigator control. Possible values include:
     <kendo:map-controls-navigator position="position">
     </kendo:map-controls-navigator>
 
- 

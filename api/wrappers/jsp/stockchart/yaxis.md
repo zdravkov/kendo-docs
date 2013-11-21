@@ -33,4 +33,3 @@ More documentation is available at [kendo:stockChart-yAxisItem](stockchart/yaxis
         <kendo:stockChart-yAxisItem></kendo:stockChart-yAxisItem>
     </kendo:stockChart-yAxis>
 
- 

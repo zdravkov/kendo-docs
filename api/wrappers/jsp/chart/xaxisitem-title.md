@@ -127,4 +127,3 @@ More documentation is available at [kendo:chart-xAxisItem-title-padding](chart/x
         <kendo:chart-xAxisItem-title-padding></kendo:chart-xAxisItem-title-padding>
     </kendo:chart-xAxisItem-title>
 
- 

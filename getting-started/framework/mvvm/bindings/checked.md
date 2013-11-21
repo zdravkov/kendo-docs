@@ -90,4 +90,3 @@ In this example the second radio button would be checked after calling `kendo.bi
 ### Important: a group of radio buttons should have the same name attribute
 
 All radio buttons acting as a group should have the same `name` attribute. Only then checking a radio button from the group will uncheck the previously checked one.
- 

@@ -63,4 +63,3 @@ The height in pixels.
 
 
 
- 

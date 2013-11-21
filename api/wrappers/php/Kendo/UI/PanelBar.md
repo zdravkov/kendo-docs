@@ -345,4 +345,3 @@ For additional information check the [select](/api/web/panelbar#events-select) e
     $panelBar->select(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
- 

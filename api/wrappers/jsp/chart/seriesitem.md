@@ -748,4 +748,3 @@ The series color when the open value is greater than the close value.
         </kendo:chart-seriesItem-downColor>
     </kendo:chart-seriesItem>
 
- 

@@ -96,4 +96,3 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-title-borde
         <kendo:sparkline-categoryAxisItem-title-border></kendo:sparkline-categoryAxisItem-title-border>
     </kendo:sparkline-categoryAxisItem-title>
 
- 

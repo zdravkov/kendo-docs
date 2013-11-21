@@ -102,4 +102,3 @@ More documentation is available at [kendo:chart-seriesDefaults-tooltip-border](/
         <kendo:chart-seriesDefaults-tooltip-border></kendo:chart-seriesDefaults-tooltip-border>
     </kendo:chart-seriesDefaults-tooltip>
  
- 

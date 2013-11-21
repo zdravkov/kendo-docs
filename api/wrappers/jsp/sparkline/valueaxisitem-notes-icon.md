@@ -66,4 +66,3 @@ More documentation is available at [kendo:sparkline-valueAxisItem-notes-icon-bor
         <kendo:sparkline-valueAxisItem-notes-icon-border></kendo:sparkline-valueAxisItem-notes-icon-border>
     </kendo:sparkline-valueAxisItem-notes-icon>
 
- 

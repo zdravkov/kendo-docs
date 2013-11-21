@@ -534,4 +534,3 @@ Spcifies the value binding behavior for the widget when the initial model value 
     $autoComplete->valuePrimitive(true);
     ?>
 
- 

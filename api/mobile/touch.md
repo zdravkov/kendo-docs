@@ -536,4 +536,3 @@ The change from the previous event location
 
 The pixels per millisecond speed of the current move. For instance, the mobile ScrollView widget considers a swipe with velocity below 0.8 a slow one, while velocity above 1.6 is a fast one.
 
- 

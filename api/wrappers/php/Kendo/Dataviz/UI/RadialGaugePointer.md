@@ -78,4 +78,3 @@ The value of the gauge.
     $pointer->value(1);
     ?>
 
- 

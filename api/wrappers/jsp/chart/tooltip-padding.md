@@ -48,4 +48,3 @@ The top padding of the tooltip.
     <kendo:chart-tooltip-padding top="top">
     </kendo:chart-tooltip-padding>
 
- 

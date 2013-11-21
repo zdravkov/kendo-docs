@@ -272,4 +272,3 @@ The validator instance which fired the event.
             console.log("valid" + e.valid);
         });
       </script>
- 

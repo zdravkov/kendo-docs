@@ -210,4 +210,3 @@ Sets the text of the "Upload files" button.
     $localization->uploadSelectedFiles('value');
     ?>
 
- 

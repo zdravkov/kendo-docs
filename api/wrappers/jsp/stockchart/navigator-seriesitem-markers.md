@@ -106,4 +106,3 @@ The rotation angle of the markers.
         </kendo:stockChart-navigator-seriesItem-markers-rotation>
     </kendo:stockChart-navigator-seriesItem-markers>
 
- 

@@ -318,4 +318,3 @@ Action for declaratively building MobileListView items.
 
 
 
- 

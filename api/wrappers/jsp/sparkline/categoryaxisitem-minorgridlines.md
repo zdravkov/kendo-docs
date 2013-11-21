@@ -68,4 +68,3 @@ grid lines is not set to true.
     <kendo:sparkline-categoryAxisItem-minorGridLines width="width">
     </kendo:sparkline-categoryAxisItem-minorGridLines>
 
- 

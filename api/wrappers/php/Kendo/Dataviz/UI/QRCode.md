@@ -201,4 +201,3 @@ The value of the QRCode.
     $qRCode->value('value');
     ?>
 
- 

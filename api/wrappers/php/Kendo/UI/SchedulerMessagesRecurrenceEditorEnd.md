@@ -102,4 +102,3 @@ The text similar to "On " displayed in the scheduler recurrence editor.
     $end->on('value');
     ?>
 
- 

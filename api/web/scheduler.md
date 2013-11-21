@@ -5769,4 +5769,3 @@ The widget instance which fired the event.
     scheduler.bind("save", scheduler_save);
     </script>
 
- 

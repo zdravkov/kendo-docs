@@ -93,4 +93,3 @@ The element to slide out of the view.
     <script>
         kendo.fx($("#bar")).tile("up", $("#foo")).play();
     </script>
- 

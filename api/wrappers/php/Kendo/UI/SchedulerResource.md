@@ -185,4 +185,3 @@ By default the scheduler expects that field to contain a primitive value (string
     $resource->valuePrimitive(true);
     ?>
 
- 

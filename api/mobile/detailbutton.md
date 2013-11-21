@@ -92,4 +92,3 @@ The button DOM element
     item.css("background", "yellow"); //change its background
     }
     </script>
- 

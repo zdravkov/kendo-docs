@@ -120,4 +120,3 @@ The text similar to "Title of the event" displayed in the scheduler event editor
     <kendo:scheduler-messages-editor title="title">
     </kendo:scheduler-messages-editor>
 
- 

@@ -48,4 +48,3 @@ The top margin of the chart panes.
     <kendo:chart-pane-margin top="top">
     </kendo:chart-pane-margin>
 
- 

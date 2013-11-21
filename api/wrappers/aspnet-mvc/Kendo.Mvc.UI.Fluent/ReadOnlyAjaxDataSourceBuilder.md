@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder
 
-Defines the fluent API for configuring a readon-only AJAX data source. 
+Defines the fluent API for configuring a readon-only AJAX data source.

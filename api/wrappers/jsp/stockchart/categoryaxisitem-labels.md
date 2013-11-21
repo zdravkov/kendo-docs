@@ -186,4 +186,3 @@ Template variables:
         </kendo:stockChart-categoryAxisItem-labels-template>
     </kendo:stockChart-categoryAxisItem-labels>
 
- 

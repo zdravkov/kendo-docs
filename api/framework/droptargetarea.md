@@ -334,4 +334,3 @@ The current drop target in the area that initiated the event.
         vertical-align: middle;
       }
     </style>
- 

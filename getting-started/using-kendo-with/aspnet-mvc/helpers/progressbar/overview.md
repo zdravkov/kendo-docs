@@ -106,4 +106,3 @@ You can subscribe to all ProgressBar [events](/api/web/progressbar#events).
 		  )
     )
 
- 

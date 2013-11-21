@@ -226,4 +226,4 @@ should be executed, so that the widget readjusts its layout and pane sizes.
     // for versions Q2 2013 SP1 and older use this instead:
 	//splitterObject.trigger("resize");
 
-Changing the the pane sizes manually is not recommended. Only the Splitter should control them. 
+Changing the the pane sizes manually is not recommended. Only the Splitter should control them.

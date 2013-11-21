@@ -48,4 +48,3 @@ The top margin of the text.
     <kendo:barcode-text-margin top="top">
     </kendo:barcode-text-margin>
 
- 

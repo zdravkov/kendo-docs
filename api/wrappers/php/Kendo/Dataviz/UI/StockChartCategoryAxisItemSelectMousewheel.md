@@ -49,4 +49,3 @@ The zoom direction. Possible values:
     $mousewheel->zoom('value');
     ?>
 
- 

@@ -67,4 +67,3 @@ More documentation is available at [kendo:linearGauge-scale](lineargauge/scale).
         <kendo:linearGauge-scale></kendo:linearGauge-scale>
     </kendo:linearGauge>
 
- 

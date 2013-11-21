@@ -173,4 +173,3 @@ The width of the border.
         </kendo:stockChart-seriesItem-border-width>
     </kendo:stockChart-seriesItem-border>
 
- 

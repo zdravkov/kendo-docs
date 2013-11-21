@@ -175,4 +175,3 @@ The Upload requires the response to be in JSON format with Content-Type set to "
             )
 
 The same approach is applicable for the remove handler as well.
- 

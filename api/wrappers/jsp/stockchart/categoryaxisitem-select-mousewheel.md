@@ -33,4 +33,3 @@ The zoom direction. Possible values:
     <kendo:stockChart-categoryAxisItem-select-mousewheel zoom="zoom">
     </kendo:stockChart-categoryAxisItem-select-mousewheel>
 
- 

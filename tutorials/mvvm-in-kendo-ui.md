@@ -144,4 +144,3 @@ Here is the finished product. Kendo UI bindings are keeping the UI and the model
 Not only does MVVM keep you from having to worry about many of the manual details, it also dramatically simplifies your code so that in your JavaScript you are only working with model objects. The DOM simply reflects the changes that you make to the model.
 
 To explore Kendo UI MVVM Features more, visit the [MVVM Overview Page](/getting-started/framework/mvvm/overview) and related docs.
- 

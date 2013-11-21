@@ -62,4 +62,3 @@ use the API to control its behavior.
 
     var upload = $("#upload").data("kendoUpload");
 
- 

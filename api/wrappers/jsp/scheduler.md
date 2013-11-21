@@ -821,4 +821,3 @@ For additional information check the [save](/api/web/scheduler#events-save) even
         </kendo:scheduler-save>
     </kendo:scheduler>
 
- 

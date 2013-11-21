@@ -84,4 +84,3 @@ The end position of the plot band in axis units.
     $plotBand->to(1);
     ?>
 
- 

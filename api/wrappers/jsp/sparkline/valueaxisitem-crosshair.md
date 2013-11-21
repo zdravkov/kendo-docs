@@ -71,4 +71,3 @@ More documentation is available at [kendo:sparkline-valueAxisItem-crosshair-tool
         <kendo:sparkline-valueAxisItem-crosshair-tooltip></kendo:sparkline-valueAxisItem-crosshair-tooltip>
     </kendo:sparkline-valueAxisItem-crosshair>
 
- 

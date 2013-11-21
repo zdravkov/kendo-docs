@@ -238,4 +238,3 @@ Legacy themes can also be referenced from the Kendo UI CDN. Don't forget to spec
 
     <link href="http://cdn.kendostatic.com/<VERSION>/styles/telerik/telerik.common.min.css" rel="stylesheet" type="text/css" />
     <link href="http://cdn.kendostatic.com/<VERSION>/styles/telerik/telerik.black.min.css" rel="stylesheet" type="text/css" />
- 

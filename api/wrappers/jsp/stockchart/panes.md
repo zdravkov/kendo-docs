@@ -33,4 +33,3 @@ More documentation is available at [kendo:stockChart-pane](stockchart/pane).
         <kendo:stockChart-pane></kendo:stockChart-pane>
     </kendo:stockChart-panes>
 
- 

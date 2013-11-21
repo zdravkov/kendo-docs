@@ -49,4 +49,3 @@ The template to be used for rendering the cells in the "month" view, which are n
     $month->_empty('value');
     ?>
 
- 

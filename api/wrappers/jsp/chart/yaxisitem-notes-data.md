@@ -31,4 +31,3 @@ More documentation is available at [kendo:chart-yAxisItem-notes-dataItem](chart/
         <kendo:chart-yAxisItem-notes-dataItem></kendo:chart-yAxisItem-notes-dataItem>
     </kendo:chart-yAxisItem-notes-data>
 
- 

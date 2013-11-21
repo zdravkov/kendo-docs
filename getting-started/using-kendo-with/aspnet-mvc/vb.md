@@ -80,4 +80,4 @@ The following example shows the correct Visual Basic (VB) syntax when using [lam
 			Return Json(result.ToDataSourceResult(request))
 		End Function
 
-	End Class 
+	End Class

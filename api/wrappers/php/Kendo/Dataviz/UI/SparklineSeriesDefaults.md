@@ -229,4 +229,3 @@ The data point tooltip configuration options.
     $seriesDefaults->tooltip(array('background' => $background));
     ?>
 
- 

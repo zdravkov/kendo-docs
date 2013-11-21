@@ -41,4 +41,3 @@ enable you to create gauges that align with your design goals.
 For a real-world example for this functionality, see the [car dashboard demo](http://demos.kendoui.com/dataviz/dashboards/car-dashboard.html).
 
 To see all available configuration options, see the [radial gauge API section](/api/dataviz/radialgauge).
- 

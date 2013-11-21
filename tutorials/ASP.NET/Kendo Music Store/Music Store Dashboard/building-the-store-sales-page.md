@@ -137,4 +137,4 @@ The **genre-sales-tab** class' click event handler is then defined in the Javasc
 
 This function is set to only update the data if a different set of data has been selected, then updates the selection in the UI.
 
-It retrieves the desired time period from the **data-period** attribute, then adjusts the data source that provides the chart its data. This results in a different API call, and therefore new data. The data source's **read()** function is then called to update the data in the chart, which makes the chart redraw, presenting the new data to the user. 
+It retrieves the desired time period from the **data-period** attribute, then adjusts the data source that provides the chart its data. This results in a different API call, and therefore new data. The data source's **read()** function is then called to update the data in the chart, which makes the chart redraw, presenting the new data to the user.

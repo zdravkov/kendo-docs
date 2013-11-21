@@ -111,4 +111,3 @@ its behavior.
 ### Accessing an existing DateTimePicker instance
 
     var dateTimePicker = $("#dateTimePicker").data("kendoDateTimePicker");
- 

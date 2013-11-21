@@ -99,4 +99,3 @@ The line of the notes.
     $notes->line(array('color' => $color));
     ?>
 
- 

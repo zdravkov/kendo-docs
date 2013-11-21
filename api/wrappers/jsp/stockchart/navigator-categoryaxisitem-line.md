@@ -48,4 +48,3 @@ The width of the line in pixels. Also affects the major and minor ticks, but not
     <kendo:stockChart-navigator-categoryAxisItem-line width="width">
     </kendo:stockChart-navigator-categoryAxisItem-line>
 
- 

@@ -32,4 +32,3 @@ Effect to be used for opening of the Tooltip.
     <kendo:tooltip-animation-open effects="effects">
     </kendo:tooltip-animation-open>
 
- 

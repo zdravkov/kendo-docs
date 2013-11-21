@@ -44,4 +44,3 @@ Template variables:
     <kendo:stockChart-legend-labels template="template">
     </kendo:stockChart-legend-labels>
 
- 

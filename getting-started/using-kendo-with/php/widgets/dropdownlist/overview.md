@@ -102,4 +102,3 @@ You can subscribe to all dropdownlist [events](/api/web/dropdownlist#events).
 
     echo $dropdownlist->render();
     ?>
- 

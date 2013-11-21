@@ -44,4 +44,3 @@ Show the loading animation.
       app.pane.loader.show(); //show loading animation
     }
     </script>
- 

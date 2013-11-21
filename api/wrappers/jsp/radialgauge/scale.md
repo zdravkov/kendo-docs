@@ -149,4 +149,3 @@ More documentation is available at [kendo:radialGauge-scale-ranges](radialgauge/
         <kendo:radialGauge-scale-ranges></kendo:radialGauge-scale-ranges>
     </kendo:radialGauge-scale>
 
- 

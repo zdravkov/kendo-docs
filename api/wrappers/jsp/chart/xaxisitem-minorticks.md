@@ -64,4 +64,3 @@ The width of the minor ticks in pixels.
     <kendo:chart-xAxisItem-minorTicks width="width">
     </kendo:chart-xAxisItem-minorTicks>
 
- 

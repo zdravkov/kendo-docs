@@ -75,4 +75,3 @@ More documentation is available at [kendo:chart-categoryAxisItem-notes-line](cha
         <kendo:chart-categoryAxisItem-notes-line></kendo:chart-categoryAxisItem-notes-line>
     </kendo:chart-categoryAxisItem-notes>
 
- 

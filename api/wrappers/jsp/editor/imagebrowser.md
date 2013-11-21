@@ -71,4 +71,3 @@ More documentation is available at [kendo:editor-imageBrowser-transport](editor/
         <kendo:editor-imageBrowser-transport></kendo:editor-imageBrowser-transport>
     </kendo:editor-imageBrowser>
 
- 

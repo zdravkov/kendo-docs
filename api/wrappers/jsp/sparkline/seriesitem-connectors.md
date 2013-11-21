@@ -40,4 +40,3 @@ The width of the connector line.
     <kendo:sparkline-seriesItem-connectors width="width">
     </kendo:sparkline-seriesItem-connectors>
 
- 

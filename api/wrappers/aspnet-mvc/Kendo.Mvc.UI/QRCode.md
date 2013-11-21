@@ -28,4 +28,3 @@ Gets or sets the QRCode encoding.
 
 
 
- 

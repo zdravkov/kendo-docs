@@ -53,4 +53,3 @@ Using the native scroller enables this behavior.
 - The tablet specific widgets (popover, splitview) are not supported.
 - in iOS7 the bottom toolbar is shown (when hidden) whenever the user taps closely to the bottom of the screen. If you have a TabStrip there, it will require 2 taps to activate a button -
 the first will bring up the toolbar and move the TabStrip upwards and the second will do the actual button activation.
- 

@@ -419,4 +419,3 @@ The series color when open value is smoller then close value.** Available for ca
         </kendo:stockChart-seriesItem-downColor>
     </kendo:stockChart-seriesItem>
 
- 

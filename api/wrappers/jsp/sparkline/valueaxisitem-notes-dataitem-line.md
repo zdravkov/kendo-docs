@@ -40,4 +40,3 @@ The line width of the note.
     <kendo:sparkline-valueAxisItem-notes-dataItem-line width="width">
     </kendo:sparkline-valueAxisItem-notes-dataItem-line>
 
- 

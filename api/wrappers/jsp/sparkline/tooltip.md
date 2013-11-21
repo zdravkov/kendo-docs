@@ -142,4 +142,3 @@ Template variables:
         </kendo:sparkline-tooltip-template>
     </kendo:sparkline-tooltip>
 
- 

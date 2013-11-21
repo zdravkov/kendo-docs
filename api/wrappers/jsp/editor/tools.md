@@ -35,4 +35,3 @@ More documentation is available at [kendo:editor-tool](editor/tool).
         <kendo:editor-tool></kendo:editor-tool>
     </kendo:editor-tools>
 
- 

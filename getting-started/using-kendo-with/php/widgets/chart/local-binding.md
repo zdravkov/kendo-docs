@@ -85,4 +85,3 @@ First we will configure a Kendo Chart for PHP binding and then we will implement
         echo $chart->render();
         ?>
 
- 

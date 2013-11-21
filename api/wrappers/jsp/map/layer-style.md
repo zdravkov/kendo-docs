@@ -45,4 +45,3 @@ More documentation is available at [kendo:map-layer-style-stroke](map/layer-styl
         <kendo:map-layer-style-stroke></kendo:map-layer-style-stroke>
     </kendo:map-layer-style>
 
- 

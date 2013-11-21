@@ -193,4 +193,3 @@ You can capture when items are selected through the change event that is trigger
 Updating the example that I created before, here's the live representation of that with item selection enabled:
 
 <iframe style="width: 700px; height: 450px" src="http://jsfiddle.net/3w7ru/95/embedded/result" frameborder="0"></iframe>
- 

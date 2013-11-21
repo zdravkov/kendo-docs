@@ -71,4 +71,3 @@ More documentation is available at [kendo:stockChart-valueAxisItem-notes-dataIte
         <kendo:stockChart-valueAxisItem-notes-dataItem-line></kendo:stockChart-valueAxisItem-notes-dataItem-line>
     </kendo:stockChart-valueAxisItem-notes-dataItem>
 
- 

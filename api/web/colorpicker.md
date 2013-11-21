@@ -442,4 +442,3 @@ Fires when the picker popup is closing.
 
 [parseColor]: ../framework/kendo#parseColor
 [Color]: ../framework/kendo#Color
- 

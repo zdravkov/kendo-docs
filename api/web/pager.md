@@ -841,4 +841,3 @@ The widget instance which fired the event.
 
         pager.bind("change", pager_change);
     </script>
- 

@@ -66,4 +66,3 @@ The width of the connector line.
     $connectors->width(1);
     ?>
 
- 

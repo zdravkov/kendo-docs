@@ -43,4 +43,3 @@ Template of the tooltip. The following variables are passed by the Slider and ar
     <kendo:slider-tooltip template="template">
     </kendo:slider-tooltip>
 
- 

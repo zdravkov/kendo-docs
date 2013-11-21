@@ -85,4 +85,3 @@ The end position of the range in scale units.
     $range->to(1);
     ?>
 
- 

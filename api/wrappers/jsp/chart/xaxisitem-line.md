@@ -49,4 +49,3 @@ The width of the line in pixels. Also affects the major and minor ticks, but not
     <kendo:chart-xAxisItem-line width="width">
     </kendo:chart-xAxisItem-line>
 
- 

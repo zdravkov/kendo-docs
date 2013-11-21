@@ -24,4 +24,3 @@ The gradient name.Available options:
     <kendo:sparkline-seriesItem-overlay gradient="gradient">
     </kendo:sparkline-seriesItem-overlay>
 
- 

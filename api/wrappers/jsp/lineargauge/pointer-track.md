@@ -64,4 +64,3 @@ More documentation is available at [kendo:linearGauge-pointer-track-border](line
         <kendo:linearGauge-pointer-track-border></kendo:linearGauge-pointer-track-border>
     </kendo:linearGauge-pointer-track>
 
- 

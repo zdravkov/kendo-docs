@@ -43,4 +43,3 @@ More documentation is available at [kendo:comboBox-animation-open](combobox/anim
         <kendo:comboBox-animation-open></kendo:comboBox-animation-open>
     </kendo:comboBox-animation>
 
- 

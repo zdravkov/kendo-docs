@@ -67,4 +67,3 @@ Specifies the function which will parse the field value. If not set default pars
         </kendo:editor-imageBrowser-schema-model-fields-size-parse>
     </kendo:editor-imageBrowser-schema-model-fields-size>
 
- 

@@ -86,4 +86,3 @@ The default stroke width for layer shapes.
     $stroke->width(1);
     ?>
 
- 

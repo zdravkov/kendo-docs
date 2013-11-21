@@ -191,4 +191,3 @@ If set to true the chart will display the series notes label. By default the ser
     $label->visible(true);
     ?>
 
- 

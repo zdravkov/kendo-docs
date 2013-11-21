@@ -16,4 +16,3 @@ The series are vertical (column chart, vertical line chart, etc.)
 
 
 
- 

@@ -131,4 +131,3 @@ More documentation is available at [kendo:sparkline-seriesDefaults-tooltip](spar
         <kendo:sparkline-seriesDefaults-tooltip></kendo:sparkline-seriesDefaults-tooltip>
     </kendo:sparkline-seriesDefaults>
 
- 

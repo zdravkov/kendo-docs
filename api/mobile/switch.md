@@ -202,4 +202,3 @@ The checked state of the widget.
       console.log(e.checked);//true of false
     }
     </script>
- 

@@ -73,4 +73,3 @@ There are three main projects in this sample application. They are:
 3. **SalesHub.Core**:
 
 	This project contains the data models and the repository interfaces used by SalesHub.Data.
- 

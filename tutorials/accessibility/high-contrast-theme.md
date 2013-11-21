@@ -34,4 +34,4 @@ Sections [1.4.3](http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast) an
 2. Selected Text Color / Background = 8.59 
 3. Hover Text Color (Large Text) / Background = 5.94
 
-Items #1 and #2 well-exceed the enhanced minimum ratio of 7 specified in WCAG 2.0, while #3 exceeds the enhanced minimum ratio of 4.5 for large-scale text. As such, the Kendo UI high-contrast theme is WCAG 2.0 AAA Compliant. 
+Items #1 and #2 well-exceed the enhanced minimum ratio of 7 specified in WCAG 2.0, while #3 exceeds the enhanced minimum ratio of 4.5 for large-scale text. As such, the Kendo UI high-contrast theme is WCAG 2.0 AAA Compliant.

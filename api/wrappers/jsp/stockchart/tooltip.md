@@ -142,4 +142,3 @@ Template variables:
         </kendo:stockChart-tooltip-template>
     </kendo:stockChart-tooltip>
 
- 

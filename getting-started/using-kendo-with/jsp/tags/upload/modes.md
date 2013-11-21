@@ -104,4 +104,3 @@ You can change this behavior by setting AutoUpload to false.
             <kendo:upload-async autoUpload="false" saveUrl="${saveUrl}" removeUrl="${removeUrl}"/>
         </kendo:upload>
 
- 

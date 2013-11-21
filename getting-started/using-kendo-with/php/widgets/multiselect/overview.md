@@ -121,4 +121,3 @@ You can subscribe to all multiselect [events](/api/web/multiselect#events).
 
     echo $multiSelect->render();
     ?>
- 

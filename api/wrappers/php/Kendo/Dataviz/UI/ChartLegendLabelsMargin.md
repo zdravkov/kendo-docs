@@ -84,4 +84,3 @@ The top margin of the labels.
     $margin->top(1);
     ?>
 
- 

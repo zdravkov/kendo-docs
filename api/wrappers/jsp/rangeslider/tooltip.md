@@ -41,4 +41,3 @@ Template of the tooltip.
     <kendo:rangeSlider-tooltip template="template">
     </kendo:rangeSlider-tooltip>
 
- 

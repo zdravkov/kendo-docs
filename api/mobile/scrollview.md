@@ -660,4 +660,3 @@ The current page number (zero based index)
       //handle event
     }
     </script>
- 

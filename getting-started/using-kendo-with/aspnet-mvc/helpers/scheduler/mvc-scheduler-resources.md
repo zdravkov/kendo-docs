@@ -93,4 +93,3 @@ The Scheduler HtmlHelper extension supports unlimited resource types. For exampl
         .Editable(false)
         .BindTo(Model)
     )
- 

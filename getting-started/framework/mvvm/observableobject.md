@@ -168,4 +168,3 @@ or `lastName` via the `set` method would **not** cause the change of `fullName`.
 This means that  **no** binding referring to `fullName` is going to be updated.
 
 Avoid using direct field access when implementing dependent methods. Always use the `get` method to obtain the field values.
- 

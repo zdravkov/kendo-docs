@@ -250,4 +250,3 @@ For additional information check the [open](/api/web/datetimepicker#events-open)
         </kendo:dateTimePicker-open>
     </kendo:dateTimePicker>
 
- 

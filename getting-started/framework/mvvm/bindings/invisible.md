@@ -37,4 +37,3 @@ When the user clicks the button the `div` will be shown because the value of the
 
 Non-boolean values such as `0`, `null`, `undefined` and `""` are treated as `false` by the `invisible` binding.
 All other values are treated as `true`.
- 

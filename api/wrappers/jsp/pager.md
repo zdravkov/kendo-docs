@@ -144,4 +144,3 @@ For additional information check the [change](/api/web/pager#events-change) even
         </kendo:pager-change>
     </kendo:pager>
 
- 

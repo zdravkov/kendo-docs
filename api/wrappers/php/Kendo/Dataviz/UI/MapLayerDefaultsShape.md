@@ -59,4 +59,3 @@ The default style for shapes.
     $shape->style(array('fill' => $fill));
     ?>
 
- 

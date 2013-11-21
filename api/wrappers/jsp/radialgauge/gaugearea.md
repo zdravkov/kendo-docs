@@ -67,4 +67,3 @@ More documentation is available at [kendo:radialGauge-gaugeArea-border](radialga
         <kendo:radialGauge-gaugeArea-border></kendo:radialGauge-gaugeArea-border>
     </kendo:radialGauge-gaugeArea>
 
- 

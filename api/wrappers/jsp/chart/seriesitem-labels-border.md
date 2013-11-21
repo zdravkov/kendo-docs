@@ -135,4 +135,3 @@ The width of the border in pixels. By default the border width is set to zero wh
         </kendo:chart-seriesItem-labels-border-width>
     </kendo:chart-seriesItem-labels-border>
 
- 

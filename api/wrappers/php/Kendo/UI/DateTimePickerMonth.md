@@ -49,4 +49,3 @@ the minimum and maximum values.
     $month->_empty('value');
     ?>
 
- 

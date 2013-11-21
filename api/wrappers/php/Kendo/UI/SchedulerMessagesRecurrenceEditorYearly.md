@@ -84,4 +84,3 @@ The text similar to "Repeat on: " displayed in the scheduler recurrence editor.
     $yearly->repeatOn('value');
     ?>
 
- 

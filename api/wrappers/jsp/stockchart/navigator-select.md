@@ -32,4 +32,3 @@ The upper boundary of the selected range.
     <kendo:stockChart-navigator-select to="to">
     </kendo:stockChart-navigator-select>
 
- 

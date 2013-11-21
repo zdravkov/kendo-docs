@@ -30,4 +30,3 @@ If set to true the grid will always display a single page of data. Scrolling wou
     $scrollable->virtual(true);
     ?>
 
- 

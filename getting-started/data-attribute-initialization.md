@@ -163,4 +163,3 @@ template.
     <script>
     kendo.init($("#container"));
     </script>
- 

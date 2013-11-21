@@ -32,4 +32,3 @@ Effect to be used for closing of the tooltip.
     <kendo:tooltip-animation-close effects="effects">
     </kendo:tooltip-animation-close>
 
- 

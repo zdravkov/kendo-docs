@@ -209,4 +209,3 @@ If set to true the chart will display the x axis notes label. By default the x a
     $label->visible(true);
     ?>
 
- 

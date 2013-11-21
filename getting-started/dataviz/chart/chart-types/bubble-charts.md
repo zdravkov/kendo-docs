@@ -57,4 +57,3 @@ For example, let's visualize the following data points:
 This produces the following chart:
 
  ![Bubble Chart](chart-bubble.png)
- 

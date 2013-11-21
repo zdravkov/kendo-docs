@@ -393,4 +393,3 @@ For additional information check the [select](/api/web/menu#events-select) event
     $menu->select(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
- 

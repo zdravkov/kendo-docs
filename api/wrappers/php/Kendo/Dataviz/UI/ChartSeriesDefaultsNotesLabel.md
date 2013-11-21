@@ -191,4 +191,3 @@ If set to true the chart will display the seriesDefaults notes label. By default
     $label->visible(true);
     ?>
 
- 

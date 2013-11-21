@@ -56,4 +56,3 @@ The text similar to "Yearly" displayed in the scheduler recurrence editor.
     <kendo:scheduler-messages-recurrenceEditor-frequencies yearly="yearly">
     </kendo:scheduler-messages-recurrenceEditor-frequencies>
 
- 

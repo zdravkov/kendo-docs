@@ -138,4 +138,3 @@ The template which renders the labels.The fields which can be used in the templa
         </kendo:stockChart-categoryAxisItem-notes-dataItem-label-template>
     </kendo:stockChart-categoryAxisItem-notes-dataItem-label>
 
- 

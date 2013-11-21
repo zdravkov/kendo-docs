@@ -105,4 +105,3 @@ The dash type of the border.
         </kendo:sparkline-seriesItem-target-border-dashType>
     </kendo:sparkline-seriesItem-target-border>
 
- 

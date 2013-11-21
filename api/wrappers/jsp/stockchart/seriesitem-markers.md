@@ -234,4 +234,3 @@ The markers visibility.
         </kendo:stockChart-seriesItem-markers-visible>
     </kendo:stockChart-seriesItem-markers>
 
- 

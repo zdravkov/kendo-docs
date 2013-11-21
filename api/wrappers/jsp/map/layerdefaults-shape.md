@@ -39,4 +39,3 @@ More documentation is available at [kendo:map-layerDefaults-shape-style](map/lay
         <kendo:map-layerDefaults-shape-style></kendo:map-layerDefaults-shape-style>
     </kendo:map-layerDefaults-shape>
 
- 

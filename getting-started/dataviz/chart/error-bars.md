@@ -226,4 +226,4 @@ and should return a valid error bar value.
         data: [{value: 4.743}, {value: 7.295}, {value: 6.376}]
       }]
     });
-    </script>  
+    </script> 

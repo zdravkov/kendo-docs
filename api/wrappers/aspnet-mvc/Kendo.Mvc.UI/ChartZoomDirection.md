@@ -18,4 +18,3 @@ The right selection edge is moved during zoom.
 
 
 
- 

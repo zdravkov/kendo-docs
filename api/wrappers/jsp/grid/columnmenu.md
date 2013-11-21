@@ -56,4 +56,3 @@ More documentation is available at [kendo:grid-columnMenu-messages](grid/columnm
         <kendo:grid-columnMenu-messages></kendo:grid-columnMenu-messages>
     </kendo:grid-columnMenu>
 
- 

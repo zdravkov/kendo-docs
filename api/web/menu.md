@@ -1090,4 +1090,3 @@ Fires when a menu item gets selected.
 ##### e.item `Element`
 
 The selected item
- 

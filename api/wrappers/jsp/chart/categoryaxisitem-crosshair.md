@@ -63,4 +63,3 @@ More documentation is available at [kendo:chart-categoryAxisItem-crosshair-toolt
         <kendo:chart-categoryAxisItem-crosshair-tooltip></kendo:chart-categoryAxisItem-crosshair-tooltip>
     </kendo:chart-categoryAxisItem-crosshair>
 
- 

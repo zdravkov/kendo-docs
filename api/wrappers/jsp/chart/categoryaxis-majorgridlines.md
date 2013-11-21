@@ -56,4 +56,3 @@ The width of the lines.
     </kendo:chart>
 
 
- 

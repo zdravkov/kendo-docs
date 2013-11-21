@@ -185,4 +185,3 @@ The yAxis error bars value. See the series.errorBars.value option for a list of 
     $errorBars->yValue(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

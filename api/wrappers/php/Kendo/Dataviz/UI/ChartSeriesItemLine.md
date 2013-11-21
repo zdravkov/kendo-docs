@@ -84,4 +84,3 @@ The line width in pixels.
     $line->width('value');
     ?>
 
- 

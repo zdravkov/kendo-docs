@@ -176,4 +176,3 @@ To configure Kendo ListView for ASP.NET MVC for editing follow these steps:
             return Json(ModelState.ToDataSourceResult());
         }
 
- 

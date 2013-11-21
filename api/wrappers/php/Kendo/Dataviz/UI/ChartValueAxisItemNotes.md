@@ -155,4 +155,3 @@ The position of the value axis note.
     $notes->position('value');
     ?>
 
- 

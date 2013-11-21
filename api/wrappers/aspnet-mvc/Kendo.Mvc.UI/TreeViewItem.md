@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.TreeViewItem
 
-Represents an item from Kendo TreeView for ASP.NET MVC 
+Represents an item from Kendo TreeView for ASP.NET MVC

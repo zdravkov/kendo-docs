@@ -163,4 +163,3 @@ Functions were specified as delegates for each of the desired touch events.
         _prevIndex = undefined;
         _indexList.removeClass("km-ontouch");
     };
- 

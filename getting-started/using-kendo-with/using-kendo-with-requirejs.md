@@ -72,4 +72,3 @@ If you plan on using the bundles you should not use RequireJS because the bundle
               "cultures/kendo.culture.fr.min.js" ], initApp);
 
 The culture files depend on `kendo.core.min.js`.  The contents of this one is already bundled in `kendo.web.min.js` but RequireJS has no way of knowing about that, and will make a request to load `kendo.core`. If it can find it, the only downside is that it'll be loaded twice (which is definitely a bad idea) but if the file is not there it will complain with an error and won't execute your `initApp` function.
- 

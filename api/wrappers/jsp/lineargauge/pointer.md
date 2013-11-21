@@ -93,4 +93,3 @@ More documentation is available at [kendo:linearGauge-pointer-track](lineargauge
         <kendo:linearGauge-pointer-track></kendo:linearGauge-pointer-track>
     </kendo:linearGauge-pointer>
 
- 

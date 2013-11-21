@@ -135,4 +135,3 @@ The width of the border.
         </kendo:sparkline-seriesItem-labels-border-width>
     </kendo:sparkline-seriesItem-labels-border>
 
- 

@@ -326,4 +326,3 @@ The configuration of the scheduler views messages. Use this option to customize 
     $messages->views(array('agenda' => $agenda));
     ?>
 
- 

@@ -84,4 +84,3 @@ The top padding of the barcode.
     $padding->top(1);
     ?>
 
- 

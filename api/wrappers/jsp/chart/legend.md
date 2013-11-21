@@ -119,4 +119,3 @@ More documentation is available at [kendo:chart-legend-margin](chart/legend-marg
         <kendo:chart-legend-margin></kendo:chart-legend-margin>
     </kendo:chart-legend>
 
- 

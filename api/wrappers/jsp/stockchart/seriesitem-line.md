@@ -48,4 +48,3 @@ The line width.
     <kendo:stockChart-seriesItem-line width="width">
     </kendo:stockChart-seriesItem-line>
 
- 

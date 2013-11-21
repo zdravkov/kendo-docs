@@ -30,4 +30,3 @@ The orientation of the group headers. Supported values are horizontal or vertica
     $group->orientation('value');
     ?>
 
- 

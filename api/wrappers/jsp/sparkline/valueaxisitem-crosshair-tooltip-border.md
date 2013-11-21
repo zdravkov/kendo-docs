@@ -32,4 +32,3 @@ The width of the border.
     <kendo:sparkline-valueAxisItem-crosshair-tooltip-border width="width">
     </kendo:sparkline-valueAxisItem-crosshair-tooltip-border>
 
- 

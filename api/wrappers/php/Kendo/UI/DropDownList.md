@@ -632,4 +632,3 @@ The valueTemplate used to render the selected value. By default the widget displ
     $dropDownList->valueTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

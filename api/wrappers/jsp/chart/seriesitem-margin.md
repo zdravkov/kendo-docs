@@ -48,4 +48,3 @@ The top margin of the labels.
     <kendo:chart-seriesItem-margin top="top">
     </kendo:chart-seriesItem-margin>
 
- 

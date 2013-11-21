@@ -137,4 +137,3 @@ Once a reference has been established, you can use the [Grid API](/api/web/grid)
 
     var grid = $("#grid").data("kendoGrid");
 
- 

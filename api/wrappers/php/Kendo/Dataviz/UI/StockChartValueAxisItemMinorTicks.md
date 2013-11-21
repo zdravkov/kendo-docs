@@ -120,4 +120,3 @@ The width of the minor ticks in pixels.
     $minorTicks->width(1);
     ?>
 
- 

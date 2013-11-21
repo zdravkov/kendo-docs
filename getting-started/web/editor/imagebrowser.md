@@ -71,4 +71,3 @@ The default requests and responses for the create / read / destroy / upload  ope
         { "name": "foo.png", "type": "f", "size": 12345 }
 
 All of these can be changed through the [`imagebrowser` configuration](/api/web/editor#configuration-imageBrowser).
- 

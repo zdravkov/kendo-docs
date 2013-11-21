@@ -511,4 +511,3 @@ The widget instance which fired the event.
         console.log(value); //value is the selected date in the numerictextbox
     });
     </script>
- 

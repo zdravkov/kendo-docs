@@ -115,4 +115,3 @@ This help topic shows how to bind Kendo TreeView for PHP to JSON response. Remot
         echo json_encode($employees);
         ?>
 
- 

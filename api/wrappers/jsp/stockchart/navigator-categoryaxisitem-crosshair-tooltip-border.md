@@ -40,4 +40,3 @@ The width of the border in pixels. By default the border width is set to zero wh
     <kendo:stockChart-navigator-categoryAxisItem-crosshair-tooltip-border width="width">
     </kendo:stockChart-navigator-categoryAxisItem-crosshair-tooltip-border>
 
- 

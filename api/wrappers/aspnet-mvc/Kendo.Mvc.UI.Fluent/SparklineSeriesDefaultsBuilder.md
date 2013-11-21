@@ -47,4 +47,3 @@ Defines the default settings for pie series.
 
 
 
- 

@@ -90,4 +90,3 @@ You could find examples of both approaches in the [api reference](http://docs.ke
 
 	var progressbar = $("#progressbar").data("kendoProgressBar");
 
- 

@@ -218,4 +218,3 @@ More documentation is available at [kendo:stockChart-yAxisItem-title](stockchart
         <kendo:stockChart-yAxisItem-title></kendo:stockChart-yAxisItem-title>
     </kendo:stockChart-yAxisItem>
 
- 

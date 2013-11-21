@@ -335,4 +335,3 @@ The [`labels.format` property](/api/dataviz/chart#xAxis.labels.format) property 
 The global KendoUI culture is used for formatting the dates.
 It can be overriden by setting [`labels.culture` property](/api/dataviz/chart#xAxis.labels.culture).
 
- 

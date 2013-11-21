@@ -105,4 +105,3 @@ More documentation is available at [kendo:stockChart-navigator-series](stockchar
         <kendo:stockChart-navigator-series></kendo:stockChart-navigator-series>
     </kendo:stockChart-navigator>
 
- 

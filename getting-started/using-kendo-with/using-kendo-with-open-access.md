@@ -212,4 +212,4 @@ Run the application one more time, and this time, you should be greeted by a gre
 
 The OpenAccess ORM Visual Designer and Service Layer Generator make it extremely easy to get started working with KendoUI.  In fact, we only had to write 1 line of server side code thanks to these great tools!
 
-You can see complete code sample in this [gist](https://gist.github.com/1755775). 
+You can see complete code sample in this [gist](https://gist.github.com/1755775).

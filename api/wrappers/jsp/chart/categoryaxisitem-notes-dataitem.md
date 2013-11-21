@@ -71,4 +71,3 @@ More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-
         <kendo:chart-categoryAxisItem-notes-dataItem-line></kendo:chart-categoryAxisItem-notes-dataItem-line>
     </kendo:chart-categoryAxisItem-notes-dataItem>
 
- 

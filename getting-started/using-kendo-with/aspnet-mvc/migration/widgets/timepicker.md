@@ -49,4 +49,3 @@ All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** 
 
     var datePicker = $("#datepicker").data("kendoTimePicker");
     datePicker.enable(false);
- 

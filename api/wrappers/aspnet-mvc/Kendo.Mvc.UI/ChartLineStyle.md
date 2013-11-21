@@ -16,4 +16,3 @@ The values will be connected with a line at right.
 
 
 
- 

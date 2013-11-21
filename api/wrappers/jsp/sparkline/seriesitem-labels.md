@@ -334,4 +334,3 @@ The visibility of the labels.
         </kendo:sparkline-seriesItem-labels-visible>
     </kendo:sparkline-seriesItem-labels>
 
- 

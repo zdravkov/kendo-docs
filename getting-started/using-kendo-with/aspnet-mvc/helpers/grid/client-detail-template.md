@@ -290,4 +290,3 @@ contains another grid which is bound to the `Products_Read` action.
             )
 1. Build and run.
 ![Client hierarchy](images/grid-hierarchy.png)
- 

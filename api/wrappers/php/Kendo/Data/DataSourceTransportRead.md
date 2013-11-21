@@ -134,4 +134,3 @@ The URL to which the request is sent.If set to function the data source will inv
     $read->url(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

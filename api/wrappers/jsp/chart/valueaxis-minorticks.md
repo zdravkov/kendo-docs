@@ -36,4 +36,3 @@ The visibility of the minor ticks.
     </kendo:chart>
 
 
- 

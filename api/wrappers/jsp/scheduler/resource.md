@@ -83,4 +83,3 @@ By default the scheduler expects that field to contain a primitive value (string
     <kendo:scheduler-resource valuePrimitive="valuePrimitive">
     </kendo:scheduler-resource>
 
- 

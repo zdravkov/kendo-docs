@@ -75,4 +75,3 @@ More documentation is available at [kendo:sparkline-valueAxisItem-notes-line](sp
         <kendo:sparkline-valueAxisItem-notes-line></kendo:sparkline-valueAxisItem-notes-line>
     </kendo:sparkline-valueAxisItem-notes>
 
- 

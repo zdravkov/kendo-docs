@@ -94,4 +94,3 @@ The target color.
         </kendo:sparkline-seriesItem-target-color>
     </kendo:sparkline-seriesItem-target>
 
- 

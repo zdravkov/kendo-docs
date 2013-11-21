@@ -1115,4 +1115,3 @@ For additional information check the [zoomStart](/api/web/stockchart#events-zoom
     $stockChart->zoomStart(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
- 

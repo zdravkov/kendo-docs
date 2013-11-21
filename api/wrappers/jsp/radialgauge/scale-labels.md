@@ -143,4 +143,3 @@ Template variables:
         </kendo:radialGauge-scale-labels-template>
     </kendo:radialGauge-scale-labels>
 
- 

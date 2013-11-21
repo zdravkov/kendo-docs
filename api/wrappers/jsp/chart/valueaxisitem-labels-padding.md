@@ -48,4 +48,3 @@ The top padding of the labels.
     <kendo:chart-valueAxisItem-labels-padding top="top">
     </kendo:chart-valueAxisItem-labels-padding>
 
- 

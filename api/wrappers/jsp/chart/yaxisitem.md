@@ -255,4 +255,3 @@ More documentation is available at [kendo:chart-yAxisItem-title](chart/yaxisitem
         <kendo:chart-yAxisItem-title></kendo:chart-yAxisItem-title>
     </kendo:chart-yAxisItem>
 
- 

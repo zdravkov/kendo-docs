@@ -304,4 +304,3 @@ Specifies the selected date.
     $calendar->value(new date());
     ?>
 
- 

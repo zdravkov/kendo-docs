@@ -337,4 +337,3 @@ For additional information check the [select](/api/web/multiselect#events-select
         </kendo:multiSelect-select>
     </kendo:multiSelect>
 
- 

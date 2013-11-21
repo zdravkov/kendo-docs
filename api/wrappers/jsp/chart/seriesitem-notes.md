@@ -63,4 +63,3 @@ More documentation is available at [kendo:chart-seriesItem-notes-line](chart/ser
         <kendo:chart-seriesItem-notes-line></kendo:chart-seriesItem-notes-line>
     </kendo:chart-seriesItem-notes>
 
- 

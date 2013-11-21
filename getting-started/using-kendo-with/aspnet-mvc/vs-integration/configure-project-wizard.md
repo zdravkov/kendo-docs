@@ -16,4 +16,4 @@ You can modify the following project-wide settings:
 
 - **Theme** - Choose the visual theme for your Kendo UI for ASP.NET MVC Application
 - **Use CDN Support** - Enable or disable [CDN](http://docs.kendoui.com/getting-started/javascript-dependencies#cdn) support.
-- **Copy Global Resources** - Copy the localization files to ~/Scripts/kendo/{version}/cultures 
+- **Copy Global Resources** - Copy the localization files to ~/Scripts/kendo/{version}/cultures

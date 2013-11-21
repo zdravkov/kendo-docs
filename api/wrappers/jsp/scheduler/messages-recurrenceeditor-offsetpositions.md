@@ -56,4 +56,3 @@ The text similar to "third" displayed in the scheduler recurrence editor.
     <kendo:scheduler-messages-recurrenceEditor-offsetPositions third="third">
     </kendo:scheduler-messages-recurrenceEditor-offsetPositions>
 
- 

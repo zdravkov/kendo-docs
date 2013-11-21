@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.PopupAnimationBuilder
 
-Defines the fluent API for configuring the PopupAnimation object. 
+Defines the fluent API for configuring the PopupAnimation object.

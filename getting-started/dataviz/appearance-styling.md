@@ -41,4 +41,3 @@ look correct and function properly. The theme stylesheets apply theme-specific s
 ## Customizing Appearance
 
 Refer to the API Reference section of each widget for detailed list of appearance settings.
- 

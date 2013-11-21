@@ -40,4 +40,3 @@ Gets or sets the action executed when rendering a cell.
 
 
 
- 

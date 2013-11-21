@@ -32,4 +32,3 @@ The effect(s) to use when playing the open animation. Multiple effects should be
     <kendo:autoComplete-animation-open effects="effects">
     </kendo:autoComplete-animation-open>
 
- 

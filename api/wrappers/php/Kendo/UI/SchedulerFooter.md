@@ -36,4 +36,3 @@ Sets the command which will be displayed in the scheduler footer. Currently only
     $footer->command(true);
     ?>
 
- 

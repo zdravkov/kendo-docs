@@ -254,4 +254,3 @@ Name the model "Sample.edmx" and click "Next". This will start the "Entity Data 
             )
 1. Build and run the application
 ![Final result](images/scheduler.png)
- 

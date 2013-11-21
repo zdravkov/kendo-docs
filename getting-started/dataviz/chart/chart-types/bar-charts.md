@@ -44,4 +44,3 @@ Setting the "type" property on the "series" object to "bar" renders horizontal b
         }
     });
 ![Bar Chart](chart-bar.png)
- 

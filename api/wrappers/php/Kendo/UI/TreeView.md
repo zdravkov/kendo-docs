@@ -696,4 +696,3 @@ Template for rendering each node.
     $treeView->template(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

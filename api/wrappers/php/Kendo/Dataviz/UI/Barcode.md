@@ -267,4 +267,3 @@ The width of the barcode in pixels.  By default the width is 300.
     $barcode->width(1);
     ?>
 
- 

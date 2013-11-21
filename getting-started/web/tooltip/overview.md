@@ -101,4 +101,3 @@ use the API to control its behavior.
     var tooltip = $("#target").data("kendoTooltip");
 
 
- 

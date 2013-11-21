@@ -206,4 +206,3 @@ The template which renders the labels.The fields which can be used in the templa
         </kendo:chart-xAxisItem-labels-template>
     </kendo:chart-xAxisItem-labels>
 
- 

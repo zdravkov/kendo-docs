@@ -104,4 +104,3 @@ More documentation is available at [kendo:stockChart-yAxisItem-title-border](sto
         <kendo:stockChart-yAxisItem-title-border></kendo:stockChart-yAxisItem-title-border>
     </kendo:stockChart-yAxisItem-title>
 
- 

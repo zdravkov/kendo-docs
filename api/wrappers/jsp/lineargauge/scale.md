@@ -144,4 +144,3 @@ More documentation is available at [kendo:linearGauge-scale-ranges](lineargauge/
         <kendo:linearGauge-scale-ranges></kendo:linearGauge-scale-ranges>
     </kendo:linearGauge-scale>
 
- 

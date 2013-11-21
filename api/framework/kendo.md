@@ -1237,4 +1237,3 @@ This can also be a `String` parse-able with `kendo.parseColor`.
 
     color.g = 255; // current representation is Bytes
     console.log(color.equals("#ff0")); // true
- 

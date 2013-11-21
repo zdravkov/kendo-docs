@@ -65,4 +65,3 @@ The width of the category axis minor grid lines in pixels.
     <kendo:chart-xAxisItem-minorGridLines width="width">
     </kendo:chart-xAxisItem-minorGridLines>
 
- 

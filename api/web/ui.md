@@ -69,4 +69,3 @@ The flag, which indicates whether to show or hide the loading overlay.
 		kendo.ui.progress(ajaxContainer, false);
 
 	</script>
- 

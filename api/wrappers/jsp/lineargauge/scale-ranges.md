@@ -31,4 +31,3 @@ More documentation is available at [kendo:linearGauge-scale-range](lineargauge/s
         <kendo:linearGauge-scale-range></kendo:linearGauge-scale-range>
     </kendo:linearGauge-scale-ranges>
 
- 

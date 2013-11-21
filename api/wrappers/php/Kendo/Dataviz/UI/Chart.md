@@ -1151,4 +1151,3 @@ For additional information check the [zoomStart](/api/web/chart#events-zoomStart
     $chart->zoomStart(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
- 

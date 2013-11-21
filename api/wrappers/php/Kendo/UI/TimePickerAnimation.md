@@ -70,4 +70,3 @@ The animation played when the calendar popup is opened.
     $animation->open(array('duration' => $duration));
     ?>
 
- 

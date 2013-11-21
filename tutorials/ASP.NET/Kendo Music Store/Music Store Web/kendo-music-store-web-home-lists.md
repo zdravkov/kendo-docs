@@ -207,4 +207,3 @@ Now we can make our HTML that uses our custom binding:
 We have indicated that this &lt;img&gt; element will be bound to our custom "rotateImages" binding, using the "bannerImages"
 property of the view model as its data. Through use of the additional **data-** attribute, we have also indicated that our
 image will update every 5000 milliseconds (5 seconds).
- 

@@ -50,4 +50,3 @@ The width of the major ticks.
     <kendo:linearGauge-scale-majorTicks width="width">
     </kendo:linearGauge-scale-majorTicks>
 
- 

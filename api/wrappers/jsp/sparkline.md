@@ -553,4 +553,3 @@ For additional information check the [zoomEnd](/api/web/sparkline#events-zoomEnd
         </kendo:sparkline-zoomEnd>
     </kendo:sparkline>
 
- 

@@ -31,4 +31,3 @@ More documentation is available at [kendo:sparkline-categoryAxisItem](sparkline/
         <kendo:sparkline-categoryAxisItem></kendo:sparkline-categoryAxisItem>
     </kendo:sparkline-categoryAxis>
 
- 

@@ -76,4 +76,4 @@ Disable and enable:
 #### New
     
     var datePicker = $("#datepicker").data("kendoNumericTextBox");
-    datePicker.enable(false); 
+    datePicker.enable(false);

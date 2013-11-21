@@ -46,4 +46,3 @@ If the View-Model value contains HTML tags those will be output verbatim. For ex
 
 
 will output visible HTML tags.
- 

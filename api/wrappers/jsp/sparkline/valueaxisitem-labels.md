@@ -170,4 +170,3 @@ Template variables:
         </kendo:sparkline-valueAxisItem-labels-template>
     </kendo:sparkline-valueAxisItem-labels>
 
- 

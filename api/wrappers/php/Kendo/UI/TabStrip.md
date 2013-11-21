@@ -376,4 +376,3 @@ For additional information check the [select](/api/web/tabstrip#events-select) e
     $tabStrip->select(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
- 

@@ -39,4 +39,3 @@ All graphics are rendered on the client using SVG with a fallback to VML for leg
 
 To see all available configuration options, see the [linear gauge API section](/api/dataviz/lineargauge).
 
- 

@@ -48,4 +48,3 @@ The top margin of the chart area.
     <kendo:chart-chartArea-margin top="top">
     </kendo:chart-chartArea-margin>
 
- 

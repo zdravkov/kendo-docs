@@ -35,4 +35,3 @@ In this case we are passing `field` `operator` and `value` parameters to the alb
 
 There was a desire to display an index along the right edge of the ListView to allow the user to fast-scroll through the list.
 This was done with a custom widget named the `IndexedListView`. More information on this widget can be found on the `Indexed ListView` page.
- 

@@ -67,4 +67,3 @@ More documentation is available at [kendo:stockChart-categoryAxisItem-select-mou
         <kendo:stockChart-categoryAxisItem-select-mousewheel></kendo:stockChart-categoryAxisItem-select-mousewheel>
     </kendo:stockChart-categoryAxisItem-select>
 
- 

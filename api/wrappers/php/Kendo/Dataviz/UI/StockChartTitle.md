@@ -185,4 +185,3 @@ The visibility of the title.
     $title->visible(true);
     ?>
 
- 

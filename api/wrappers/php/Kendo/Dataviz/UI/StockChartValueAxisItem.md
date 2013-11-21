@@ -540,4 +540,3 @@ The visibility of the axis.
     $valueAxisItem->visible(true);
     ?>
 
- 

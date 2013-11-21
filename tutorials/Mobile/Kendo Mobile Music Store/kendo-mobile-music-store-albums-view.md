@@ -106,4 +106,3 @@ This property is defined in the view model as a function:
 
 The album is first found in the cart, then `.get("qty")` is called to bind the element to the cart item's quantity.
 Now when the quantity is changed on the cart item, the "Add to Cart" button will automatically be updated by the MVVM binding.
- 

@@ -49,4 +49,3 @@ A whitespace-separated string of animation effects that are used when a new tab 
     $open->effects('value');
     ?>
 
- 

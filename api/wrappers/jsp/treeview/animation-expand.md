@@ -34,4 +34,3 @@ The supported effects are "expandVertical" and "fadeIn".
     <kendo:treeView-animation-expand effects="effects">
     </kendo:treeView-animation-expand>
 
- 

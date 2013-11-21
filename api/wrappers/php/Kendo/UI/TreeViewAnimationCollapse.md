@@ -49,4 +49,3 @@ The supported effects are fadeOut and collapseVertical.
     $collapse->effects('value');
     ?>
 
- 

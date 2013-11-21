@@ -174,4 +174,3 @@ A value indicating if the tooltip should be displayed.
     $tooltip->visible(true);
     ?>
 
- 

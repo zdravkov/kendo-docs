@@ -66,4 +66,3 @@ The line width.
     $line->width('value');
     ?>
 
- 

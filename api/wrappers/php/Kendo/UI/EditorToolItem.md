@@ -66,4 +66,3 @@ The value that will be applied by the tool when this item is selected.
     $item->value('value');
     ?>
 
- 

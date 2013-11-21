@@ -381,4 +381,3 @@ For additional information check the [upload](/api/web/upload#events-upload) eve
         </kendo:upload-upload>
     </kendo:upload>
 
- 

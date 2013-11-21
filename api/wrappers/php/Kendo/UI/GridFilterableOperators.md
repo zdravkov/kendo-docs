@@ -128,4 +128,3 @@ The texts of the filter operators displayed for columns bound to string fields.
     $operators->string(array('contains' => $contains));
     ?>
 
- 

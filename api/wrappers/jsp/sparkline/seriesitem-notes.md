@@ -63,4 +63,3 @@ More documentation is available at [kendo:sparkline-seriesItem-notes-line](spark
         <kendo:sparkline-seriesItem-notes-line></kendo:sparkline-seriesItem-notes-line>
     </kendo:sparkline-seriesItem-notes>
 
- 

@@ -48,4 +48,3 @@ The top padding of the navigator pane.
     <kendo:stockChart-navigator-pane-padding top="top">
     </kendo:stockChart-navigator-pane-padding>
 
- 

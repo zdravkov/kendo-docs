@@ -282,4 +282,3 @@ The second &lt;span&gt; element represents the remove button, and has the follow
 Within a ListView widget, elements of this special class *automatically* become a button that deletes the item from the bound DataSource.
 Note that we do not define any click event handler for this element in the widget.
 The removal from the DataSource is wired up automatically by the ListView widget.
- 

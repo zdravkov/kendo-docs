@@ -93,4 +93,3 @@ By default the NavBar View Title is visible only in iOS and hidden in the rest o
     {
         visibility: visible;
     }
- 

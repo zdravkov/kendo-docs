@@ -35,4 +35,4 @@ Specify if the extra input fields should be visible within the filter menu. Defa
 #### Parameters
 
 ##### value `System.Boolean`
-True to show the extra inputs, otherwise false 
+True to show the extra inputs, otherwise false

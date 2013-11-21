@@ -48,4 +48,3 @@ Specifies the function which will parse the field value. If not set default pars
     $size->parse(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

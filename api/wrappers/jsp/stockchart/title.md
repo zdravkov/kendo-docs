@@ -95,4 +95,3 @@ More documentation is available at [kendo:stockChart-title-border](stockchart/ti
         <kendo:stockChart-title-border></kendo:stockChart-title-border>
     </kendo:stockChart-title>
 
- 

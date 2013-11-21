@@ -86,4 +86,4 @@ To configure the Kendo StockChart for ajax binding follow these steps:
 		                series.Line(s => s.Volume);
 		            })
 		        )
-            ) 
+            )

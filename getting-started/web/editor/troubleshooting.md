@@ -48,4 +48,3 @@ Since the inline editor is initialized from a non-form element, it is not posted
         });
       });
     </script>
- 

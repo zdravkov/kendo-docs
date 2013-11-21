@@ -76,4 +76,3 @@ The text of title
       navbar.title("changed");
     }
     </script>
- 

@@ -172,4 +172,3 @@ For additional information check the [navigate](/api/web/calendar#events-navigat
         </kendo:calendar-navigate>
     </kendo:calendar>
 
- 

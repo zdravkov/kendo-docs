@@ -1064,4 +1064,3 @@ already defined and in use, but only in the iOS7 platform theme (and available s
     <li><span class="button k-ios7-wifi-fill"></span>\e325</li>
     <li><span class="button k-ios7-phone-fill"></span>\e326</li>
 </ul>
- 

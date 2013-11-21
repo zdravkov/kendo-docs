@@ -114,4 +114,3 @@ If the ajax call is successful the app clears the form for later reuse and navig
             utils.showError("There was an error submitting your order.", error);
         });
     }
- 

@@ -48,4 +48,3 @@ The end position of the plot band in axis units.
     <kendo:chart-categoryAxisItem-plotBand to="to">
     </kendo:chart-categoryAxisItem-plotBand>
 
- 

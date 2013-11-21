@@ -49,4 +49,3 @@ The end position of the range in scale units.
     <kendo:radialGauge-scale-range to="to">
     </kendo:radialGauge-scale-range>
 
- 

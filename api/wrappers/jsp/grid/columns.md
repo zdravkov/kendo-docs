@@ -33,4 +33,3 @@ More documentation is available at [kendo:grid-column](grid/column).
         <kendo:grid-column></kendo:grid-column>
     </kendo:grid-columns>
 
- 

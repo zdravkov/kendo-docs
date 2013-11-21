@@ -95,4 +95,3 @@ If set to true the column menu would allow the user to sort the grid by the colu
     $columnMenu->sortable(true);
     ?>
 
- 

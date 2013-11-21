@@ -492,4 +492,3 @@ For additional information check the [upload](/api/web/upload#events-upload) eve
     $upload->upload(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
- 

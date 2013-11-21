@@ -87,4 +87,3 @@ You can subscribe to all Sparkline [events](/api/dataviz/sparkline#events).
 
     echo $sparkline->render();
     ?>
- 

@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.TabStripItem
 
-Represents an item from Kendo TabStrip for ASP.NET MVC 
+Represents an item from Kendo TabStrip for ASP.NET MVC

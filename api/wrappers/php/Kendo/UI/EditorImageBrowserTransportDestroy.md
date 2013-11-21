@@ -124,4 +124,3 @@ The remote url to call when creating a new record.
     $destroy->url(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

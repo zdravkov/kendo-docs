@@ -95,4 +95,3 @@ If set to false the barcode will not display the value as a text below the barco
     $text->visible(true);
     ?>
 
- 

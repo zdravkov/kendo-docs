@@ -49,4 +49,3 @@ The value to which the field is compared. The value must be from the same type a
     <kendo:dataSource-filterItem value="value">
     </kendo:dataSource-filterItem>
 
- 

@@ -55,4 +55,3 @@ More documentation is available at [kendo:stockChart-plotArea-border](stockchart
         <kendo:stockChart-plotArea-border></kendo:stockChart-plotArea-border>
     </kendo:stockChart-plotArea>
 
- 

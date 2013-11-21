@@ -32,4 +32,3 @@ The width of the border.
     <kendo:stockChart-navigator-seriesItem-markers-border width="width">
     </kendo:stockChart-navigator-seriesItem-markers-border>
 
- 

@@ -546,4 +546,3 @@ Fires when calendar navigates.
             console.log(current); //currently focused date
         });
     </script>
- 

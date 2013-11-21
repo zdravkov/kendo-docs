@@ -174,4 +174,3 @@ If set to true the chart will display the series markers. By default chart serie
     $markers->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

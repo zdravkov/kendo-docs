@@ -118,4 +118,3 @@ its behavior.
 
     var calendar = $("#calendar").data("kendoCalendar");
 
- 

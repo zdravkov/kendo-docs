@@ -32,4 +32,3 @@ The width of the border.
     <kendo:stockChart-categoryAxisItem-crosshair-tooltip-border width="width">
     </kendo:stockChart-categoryAxisItem-crosshair-tooltip-border>
 
- 

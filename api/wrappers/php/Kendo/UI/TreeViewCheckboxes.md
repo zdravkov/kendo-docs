@@ -74,4 +74,3 @@ additional information along the treeview checkboxes.The fields which can be use
     $checkboxes->template(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

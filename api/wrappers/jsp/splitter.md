@@ -242,4 +242,3 @@ For additional information check the [resize](/api/web/splitter#events-resize) e
         </kendo:splitter-resize>
     </kendo:splitter>
 
- 

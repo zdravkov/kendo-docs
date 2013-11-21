@@ -330,4 +330,3 @@ More documentation is available at [kendo:chart-categoryAxisItem-title](chart/ca
         <kendo:chart-categoryAxisItem-title></kendo:chart-categoryAxisItem-title>
     </kendo:chart-categoryAxisItem>
 
- 

@@ -48,4 +48,3 @@ The zoom direction.The supported values are:
     $mousewheel->zoom('value');
     ?>
 
- 

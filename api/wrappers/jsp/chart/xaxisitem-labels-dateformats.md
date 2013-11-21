@@ -56,4 +56,3 @@ The format used when xAxis.baseUnit is set to "years".
     <kendo:chart-xAxisItem-labels-dateFormats years="years">
     </kendo:chart-xAxisItem-labels-dateFormats>
 
- 

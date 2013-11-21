@@ -187,4 +187,3 @@ The mobile view instance
       console.log("show");
     }
     </script>
- 

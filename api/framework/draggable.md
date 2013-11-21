@@ -488,4 +488,3 @@ Triggered only when `holdToDrag` is set to `true`. Fires before the `dragStart` 
         border: 2px solid green;
       }
     </style>
- 

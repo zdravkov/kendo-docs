@@ -67,4 +67,3 @@ More documentation is available at [kendo:stockChart-categoryAxisItem-notes-icon
         <kendo:stockChart-categoryAxisItem-notes-icon-border></kendo:stockChart-categoryAxisItem-notes-icon-border>
     </kendo:stockChart-categoryAxisItem-notes-icon>
 
- 

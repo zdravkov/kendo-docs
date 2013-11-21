@@ -67,4 +67,3 @@ More documentation is available at [kendo:chart-categoryAxisItem-notes-icon-bord
         <kendo:chart-categoryAxisItem-notes-icon-border></kendo:chart-categoryAxisItem-notes-icon-border>
     </kendo:chart-categoryAxisItem-notes-icon>
 
- 

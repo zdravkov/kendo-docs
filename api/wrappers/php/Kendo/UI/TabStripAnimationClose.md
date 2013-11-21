@@ -49,4 +49,3 @@ is closed. By default not specified - uses the opening animation with reverse.
     $close->effects('value');
     ?>
 
- 

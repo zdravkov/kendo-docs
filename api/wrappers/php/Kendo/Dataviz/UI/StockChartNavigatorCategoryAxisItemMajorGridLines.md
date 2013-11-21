@@ -120,4 +120,3 @@ The width of the category axis major grid lines in pixels.
     $majorGridLines->width(1);
     ?>
 
- 

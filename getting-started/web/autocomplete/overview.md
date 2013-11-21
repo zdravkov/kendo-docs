@@ -159,4 +159,3 @@ its behavior.
 ### Accessing an existing AutoComplete instance
 
     var autoComplete = $("#autoComplete").data("kendoAutoComplete");
- 

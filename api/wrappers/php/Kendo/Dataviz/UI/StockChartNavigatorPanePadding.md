@@ -84,4 +84,3 @@ The top padding of the navigator pane.
     $padding->top(1);
     ?>
 
- 

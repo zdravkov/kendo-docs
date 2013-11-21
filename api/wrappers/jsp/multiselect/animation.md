@@ -43,4 +43,3 @@ More documentation is available at [kendo:multiSelect-animation-open](multiselec
         <kendo:multiSelect-animation-open></kendo:multiSelect-animation-open>
     </kendo:multiSelect-animation>
 
- 

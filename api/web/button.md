@@ -160,4 +160,3 @@ The original DOM event.
 		alert(e.event.target.tagName);
 	});	
 	</script>
- 

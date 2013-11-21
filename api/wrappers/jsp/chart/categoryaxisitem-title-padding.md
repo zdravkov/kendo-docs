@@ -48,4 +48,3 @@ The top padding of the title.
     <kendo:chart-categoryAxisItem-title-padding top="top">
     </kendo:chart-categoryAxisItem-title-padding>
 
- 

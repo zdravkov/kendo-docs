@@ -69,4 +69,3 @@ Template of the tooltip. The following variables are passed by the Slider and ar
     $tooltip->template('value');
     ?>
 
- 

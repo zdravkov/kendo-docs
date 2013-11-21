@@ -31,4 +31,3 @@ More documentation is available at [kendo:chart-valueAxisItem](chart/valueaxisit
         <kendo:chart-valueAxisItem></kendo:chart-valueAxisItem>
     </kendo:chart-valueAxis>
 
- 

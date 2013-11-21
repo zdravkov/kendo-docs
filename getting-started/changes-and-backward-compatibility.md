@@ -284,4 +284,3 @@ if using the Default skin, should be updated to:
                     {text: "Item 2", value: "item2"}
                 ]
             });
- 

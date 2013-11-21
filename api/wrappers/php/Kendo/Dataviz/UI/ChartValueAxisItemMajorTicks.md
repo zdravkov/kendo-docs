@@ -102,4 +102,3 @@ If set to true the chart will display the value axis major ticks. By default the
     $majorTicks->visible(true);
     ?>
 
- 

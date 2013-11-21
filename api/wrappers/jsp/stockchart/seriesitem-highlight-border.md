@@ -40,4 +40,3 @@ The width of the border.
     <kendo:stockChart-seriesItem-highlight-border width="width">
     </kendo:stockChart-seriesItem-highlight-border>
 
- 

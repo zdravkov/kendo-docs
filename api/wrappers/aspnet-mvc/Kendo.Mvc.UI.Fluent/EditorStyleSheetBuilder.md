@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.EditorStyleSheetBuilder
 
-Defines the fluent interface for configuring the Editor stylesheets. 
+Defines the fluent interface for configuring the Editor stylesheets.

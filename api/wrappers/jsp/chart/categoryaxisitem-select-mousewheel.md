@@ -32,4 +32,3 @@ The zoom direction.The supported values are:
     <kendo:chart-categoryAxisItem-select-mousewheel zoom="zoom">
     </kendo:chart-categoryAxisItem-select-mousewheel>
 
- 

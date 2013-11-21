@@ -108,4 +108,3 @@ adding the tag through Javascript is ignored:
 
 A: Kendo UI Mobile adapts to the current theme in Windows Phone 8 and changes the background and highlight colors of your application. In the browser this is
 semi-automatic when you click inside the application to focus it, but in PhoneGap it happens automatically on app resume after you change the theme.
- 

@@ -107,4 +107,3 @@ Here's the live example of the representation (above):
 
 <a class="jsbin-embed" href="http://jsbin.com/eHocUTI/2/embed?live">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
 
- 

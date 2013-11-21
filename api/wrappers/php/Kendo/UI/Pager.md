@@ -311,4 +311,3 @@ The template for selected page number link.
     $pager->selectTemplate('value');
     ?>
 
- 

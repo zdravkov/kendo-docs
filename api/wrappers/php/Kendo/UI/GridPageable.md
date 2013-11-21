@@ -191,4 +191,3 @@ If set to true the pager will display the refresh button. Clicking the refresh b
     $pageable->refresh(true);
     ?>
 
- 

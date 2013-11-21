@@ -49,4 +49,3 @@ The end position of the range in scale units.
     <kendo:linearGauge-scale-range to="to">
     </kendo:linearGauge-scale-range>
 
- 

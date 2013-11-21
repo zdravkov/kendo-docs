@@ -79,4 +79,3 @@ You can subscribe to all colorpicker [events](/api/web/colorpicker#events).
 
     echo $colorpicker->render();
     ?>
- 

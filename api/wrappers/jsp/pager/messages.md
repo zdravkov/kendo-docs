@@ -99,4 +99,3 @@ The tooltip of the refresh button.
     <kendo:pager-messages refresh="refresh">
     </kendo:pager-messages>
 
- 

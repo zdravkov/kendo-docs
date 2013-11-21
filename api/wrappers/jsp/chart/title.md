@@ -119,4 +119,3 @@ More documentation is available at [kendo:chart-title-padding](chart/title-paddi
         <kendo:chart-title-padding></kendo:chart-title-padding>
     </kendo:chart-title>
 
- 

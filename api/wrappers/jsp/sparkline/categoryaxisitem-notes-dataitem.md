@@ -71,4 +71,3 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-notes-dataI
         <kendo:sparkline-categoryAxisItem-notes-dataItem-line></kendo:sparkline-categoryAxisItem-notes-dataItem-line>
     </kendo:sparkline-categoryAxisItem-notes-dataItem>
 
- 

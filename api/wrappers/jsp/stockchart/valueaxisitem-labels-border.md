@@ -41,4 +41,3 @@ The width of the border.
     <kendo:stockChart-valueAxisItem-labels-border width="width">
     </kendo:stockChart-valueAxisItem-labels-border>
 
- 

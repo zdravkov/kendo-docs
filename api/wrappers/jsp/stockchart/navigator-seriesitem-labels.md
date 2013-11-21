@@ -138,4 +138,3 @@ The label template. Template variables:
         </kendo:stockChart-navigator-seriesItem-labels-template>
     </kendo:stockChart-navigator-seriesItem-labels>
 
- 

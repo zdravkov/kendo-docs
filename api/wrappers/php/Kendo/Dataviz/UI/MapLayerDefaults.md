@@ -70,4 +70,3 @@ The default configuration for tile layers.
     $layerDefaults->tile(array('attribution' => $attribution));
     ?>
 
- 

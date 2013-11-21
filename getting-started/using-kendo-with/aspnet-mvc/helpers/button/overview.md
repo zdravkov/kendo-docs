@@ -191,4 +191,4 @@ For more information on the **Button** [`enable` method](/api/web/button#methods
 
 ## Accessing the Button instance
 
-Please refer to the **Button**'s [Getting Started](/getting-started/web/button/overview/#accessing-the-button-instance) documentation page. 
+Please refer to the **Button**'s [Getting Started](/getting-started/web/button/overview/#accessing-the-button-instance) documentation page.

@@ -48,4 +48,3 @@ The text similar to "Repeat every: " displayed in the scheduler recurrence edito
     $daily->repeatEvery('value');
     ?>
 
- 

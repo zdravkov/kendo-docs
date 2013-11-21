@@ -67,4 +67,3 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-highli
         <kendo:stockChart-navigator-seriesItem-highlight-line></kendo:stockChart-navigator-seriesItem-highlight-line>
     </kendo:stockChart-navigator-seriesItem-highlight>
 
- 

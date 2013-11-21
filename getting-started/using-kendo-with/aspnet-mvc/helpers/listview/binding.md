@@ -154,4 +154,3 @@ can be changed by disabling `ServerOperation`:
         .ServerOperation(false) // paging will be applied client-side
         .Read(read => read.Action("Products_Read", "Home"))
     )
- 

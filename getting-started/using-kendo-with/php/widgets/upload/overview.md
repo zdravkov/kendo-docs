@@ -96,4 +96,3 @@ You can subscribe to all upload [events](/api/web/upload#events).
 
     echo $upload->render();
     ?>
- 

@@ -254,4 +254,3 @@ Scatter series are bound to the fields specified as "xField" and "yField".
     });
     </script>
 
- 

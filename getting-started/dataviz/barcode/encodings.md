@@ -167,4 +167,4 @@ Currently the Kendo Barcode widget supports the following symbologies with the t
            <td>1 check digit</td>
         </tr>
     </tbody>
-</table>  
+</table> 

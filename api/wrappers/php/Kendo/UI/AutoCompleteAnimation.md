@@ -70,4 +70,3 @@ The animation played when the suggestion popup is opened.
     $animation->open(array('duration' => $duration));
     ?>
 
- 

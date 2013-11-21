@@ -31,4 +31,3 @@ More documentation is available at [kendo:sparkline-valueAxisItem-plotBand](spar
         <kendo:sparkline-valueAxisItem-plotBand></kendo:sparkline-valueAxisItem-plotBand>
     </kendo:sparkline-valueAxisItem-plotBands>
 
- 

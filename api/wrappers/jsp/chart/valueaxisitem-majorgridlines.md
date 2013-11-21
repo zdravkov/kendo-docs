@@ -73,4 +73,3 @@ The width of the value axis major grid lines in pixels.
     <kendo:chart-valueAxisItem-majorGridLines width="width">
     </kendo:chart-valueAxisItem-majorGridLines>
 
- 

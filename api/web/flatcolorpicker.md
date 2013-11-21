@@ -217,4 +217,3 @@ The value of the colorpicker.
 
 [parseColor]: ../framework/kendo#parseColor
 [Color]: ../framework/kendo#Color
- 

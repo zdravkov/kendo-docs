@@ -168,4 +168,3 @@ Specifies the initially selected color.
     $colorPalette->value('value');
     ?>
 
- 

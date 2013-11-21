@@ -339,4 +339,4 @@ The following CSS code will ensure that the widget expands and displays all even
 	   {
 		  overflow-y: scroll !important;
 	   }
-	} 
+	}

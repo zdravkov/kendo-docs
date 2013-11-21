@@ -358,4 +358,3 @@ If set to true the chart will display the series labels. By default chart series
         </kendo:chart-seriesItem-labels-visible>
     </kendo:chart-seriesItem-labels>
 
- 

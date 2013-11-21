@@ -81,4 +81,3 @@ The `EndlessScrollDataSource` overrides the `_observe` private function. Its new
 For pages of data other than the first, the newly loaded data is pushed onto the existing data array instead of replacing it.
 
 Again, this workaround was only needed beacuse of the use of MVVM bindings in a ListView with endless scrolling and server paging enabled. It would not have been neccecary under other conditions.
- 

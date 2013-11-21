@@ -30,4 +30,3 @@ The duration of each progress animation in milliseconds.
     $animation->duration(1);
     ?>
 
- 

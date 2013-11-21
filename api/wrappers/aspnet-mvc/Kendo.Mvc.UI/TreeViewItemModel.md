@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.TreeViewItemModel
 
-Used for serializing TreeViewItem objects. 
+Used for serializing TreeViewItem objects.

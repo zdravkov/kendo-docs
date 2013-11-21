@@ -24,4 +24,3 @@ The orientation of the group headers. Supported values are horizontal or vertica
     <kendo:scheduler-view-group orientation="orientation">
     </kendo:scheduler-view-group>
 
- 

@@ -79,4 +79,3 @@ More documentation is available at [kendo:editor-imageBrowser-schema-model-field
         <kendo:editor-imageBrowser-schema-model-fields-type></kendo:editor-imageBrowser-schema-model-fields-type>
     </kendo:editor-imageBrowser-schema-model-fields>
 
- 

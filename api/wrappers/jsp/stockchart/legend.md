@@ -115,4 +115,3 @@ More documentation is available at [kendo:stockChart-legend-labels](stockchart/l
         <kendo:stockChart-legend-labels></kendo:stockChart-legend-labels>
     </kendo:stockChart-legend>
 
- 

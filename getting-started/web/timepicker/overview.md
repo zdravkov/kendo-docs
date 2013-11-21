@@ -77,4 +77,3 @@ use the API to control its behavior.
 ### Accessing an existing TimePicker instance
 
     var timePicker = $("#timePicker").data("kendoTimePicker");
- 

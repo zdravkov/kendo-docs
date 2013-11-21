@@ -22,4 +22,3 @@ The average of all values for the date period
 
 
 
- 

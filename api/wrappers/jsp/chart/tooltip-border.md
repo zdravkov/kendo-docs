@@ -32,4 +32,3 @@ The width of the border in pixels. By default the border width is set to zero wh
     <kendo:chart-tooltip-border width="width">
     </kendo:chart-tooltip-border>
 
- 

@@ -43,4 +43,3 @@ More documentation is available at [kendo:stockChart-legend-inactiveItems-marker
         <kendo:stockChart-legend-inactiveItems-markers></kendo:stockChart-legend-inactiveItems-markers>
     </kendo:stockChart-legend-inactiveItems>
 
- 

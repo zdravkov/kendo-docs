@@ -534,4 +534,3 @@ First we will configure a Kendo ListView for PHP binding and then we will implem
 
         echo json_encode($data);
         ?>
- 

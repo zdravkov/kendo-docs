@@ -157,4 +157,3 @@ You can subscribe to all [events](/api/mobile/buttongroup#events) exposed by the
         //Handle the select event
     }
     </script>
- 

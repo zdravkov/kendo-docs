@@ -32,4 +32,4 @@ All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** 
 
 #### New
 
-    Html.Kendo().TabStrip().Name("SampleTabStrip").Events(events => events.Change(“change”)) 
+    Html.Kendo().TabStrip().Name("SampleTabStrip").Events(events => events.Change(“change”))

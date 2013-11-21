@@ -245,4 +245,3 @@ The visibility of the labels.
     $labels->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
- 

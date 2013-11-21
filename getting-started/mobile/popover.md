@@ -36,4 +36,3 @@ The Mobile PopOver widget implicitly instantiates a pane widget for its contents
 other. The pane widget behavior (including default transition, layout, etc.) may be configured from the `pane` configuration option.
 
 The popover dimensions and direction can be configured from the `popup` configuration option.
- 

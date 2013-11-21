@@ -75,4 +75,3 @@ More documentation is available at [kendo:chart-yAxisItem-notes-line](chart/yaxi
         <kendo:chart-yAxisItem-notes-line></kendo:chart-yAxisItem-notes-line>
     </kendo:chart-yAxisItem-notes>
 
- 

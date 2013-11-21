@@ -454,4 +454,3 @@ The width (in pixels) of the tooltip.
     $tooltip->width(1);
     ?>
 
- 

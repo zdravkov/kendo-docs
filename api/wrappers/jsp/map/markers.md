@@ -31,4 +31,3 @@ More documentation is available at [kendo:map-marker](map/marker).
         <kendo:map-marker></kendo:map-marker>
     </kendo:map-markers>
 
- 

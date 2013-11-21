@@ -69,4 +69,3 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/slider#events)
     	    kendoConsole.log("Change :: new value is: " + e.value);
     	}
     </script>
- 

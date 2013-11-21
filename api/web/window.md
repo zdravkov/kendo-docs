@@ -1024,4 +1024,3 @@ Triggered when a window has been resized by a user.
     dialog.bind("resize", window_resize);
     </script>
 
- 

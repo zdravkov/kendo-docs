@@ -101,4 +101,3 @@ and when the JavaScript is run the element is bound to the viewModel.genre prope
 If the jQuery AJAX request has not finished, this will still be null. Once the AJAX request finishes
 it calls the **.set()** method on the viewModel to set the genre.
 This in turn notifies the &lt;h3&gt; tag that the genre property has changed, and it updates to get the loaded genre's name.
- 

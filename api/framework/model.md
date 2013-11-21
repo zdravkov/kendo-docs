@@ -235,4 +235,3 @@ ObservableObject API reference.
 
 Raised when the `set` method is invoked. Inherited from `kendo.data.ObservableObject`. Examples and more info can be found in the [set](/api/framework/observableobject#events-set) section of the
 ObservableObject API reference.
- 

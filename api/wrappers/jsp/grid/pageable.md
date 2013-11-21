@@ -95,4 +95,3 @@ More documentation is available at [kendo:grid-pageable-messages](grid/pageable-
         <kendo:grid-pageable-messages></kendo:grid-pageable-messages>
     </kendo:grid-pageable>
 
- 

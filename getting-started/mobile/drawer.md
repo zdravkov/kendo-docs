@@ -108,4 +108,3 @@ To do so, the navigational widget should have `data-rel="drawer"` and `href` att
     <div data-role="drawer" id="foo">
         ...
     </div>
- 

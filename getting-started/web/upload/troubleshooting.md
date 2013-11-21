@@ -46,4 +46,3 @@ The console is accessible in a manner specific for each browser:
 *   Safari - Enable the Develop menu from the Preferences / Advanced dialog. Open the error console from the Develop menu.
 *   Opera - No usable error console available because of a bug in Opera Dragonfly.
 *   Any browser - Use a debugging proxy like [Fiddler](http://www.fiddler2.com/fiddler2/) or [Charles](http://www.charlesproxy.com/) to obtain the server response.
- 

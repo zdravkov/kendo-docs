@@ -72,4 +72,3 @@ Specifies the URL that the item links to
     <kendo:tabStrip-item url="url">
     </kendo:tabStrip-item>
 
- 

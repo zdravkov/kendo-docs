@@ -55,4 +55,4 @@ The DataSource may query a remote endpoint that provides data stored in a remote
 
 In this example, the DataSource is initialized to represent an in-memory cache of tweets from the search service for Twitter. Setting the `dataType` configuration property is required to instruct the DataSource to access the endpoint.
 
-> Refer to the how-to article entitled, [How To: Use CORS with All (Modern) Browsers](http://docs.kendoui.com/howto/use-cors-with-all-modern-browsers) for more information about Cross-Origin Resource Sharing (CORS). 
+> Refer to the how-to article entitled, [How To: Use CORS with All (Modern) Browsers](http://docs.kendoui.com/howto/use-cors-with-all-modern-browsers) for more information about Cross-Origin Resource Sharing (CORS).

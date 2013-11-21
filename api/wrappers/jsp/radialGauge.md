@@ -67,4 +67,3 @@ More documentation is available at [kendo:radialGauge-scale](radialgauge/scale).
         <kendo:radialGauge-scale></kendo:radialGauge-scale>
     </kendo:radialGauge>
 
- 

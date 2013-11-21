@@ -169,4 +169,3 @@ The pane title text or configuration.
     $pane->title(array('background' => $background));
     ?>
 
- 

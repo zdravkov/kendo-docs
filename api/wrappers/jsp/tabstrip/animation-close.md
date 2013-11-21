@@ -33,4 +33,3 @@ is closed. By default not specified - uses the opening animation with reverse.
     <kendo:tabStrip-animation-close effects="effects">
     </kendo:tabStrip-animation-close>
 
- 

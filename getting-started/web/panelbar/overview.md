@@ -185,4 +185,3 @@ use the API to control its behavior.
 
     var panelBar = $("#panelBar").data("kendoPanelBar");
 
- 

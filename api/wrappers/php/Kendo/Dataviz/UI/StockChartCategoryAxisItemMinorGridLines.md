@@ -123,4 +123,3 @@ grid lines is not set to true.
     $minorGridLines->width(1);
     ?>
 
- 

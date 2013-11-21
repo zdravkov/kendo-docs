@@ -44,4 +44,3 @@ More documentation is available at [kendo:panelBar-animation-expand](panelbar/an
         <kendo:panelBar-animation-expand></kendo:panelBar-animation-expand>
     </kendo:panelBar-animation>
 
- 

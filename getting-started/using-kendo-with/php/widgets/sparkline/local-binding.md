@@ -77,4 +77,3 @@ First we will configure a Kendo Sparkline for PHP binding and then we will imple
         echo $sparkline->render();
         ?>
 
- 

@@ -75,4 +75,3 @@ More documentation is available at [kendo:chart-valueAxisItem-notes-line](chart/
         <kendo:chart-valueAxisItem-notes-line></kendo:chart-valueAxisItem-notes-line>
     </kendo:chart-valueAxisItem-notes>
 
- 

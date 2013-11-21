@@ -43,4 +43,3 @@ More documentation is available at [kendo:datePicker-animation-open](datepicker/
         <kendo:datePicker-animation-open></kendo:datePicker-animation-open>
     </kendo:datePicker-animation>
 
- 

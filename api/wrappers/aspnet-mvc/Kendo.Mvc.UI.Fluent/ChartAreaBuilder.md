@@ -146,4 +146,3 @@ The chart area width.
 
 
 
- 

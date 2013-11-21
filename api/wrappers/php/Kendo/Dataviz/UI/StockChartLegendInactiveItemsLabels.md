@@ -68,4 +68,3 @@ Template variables:
     $labels->template('value');
     ?>
 
- 

@@ -19,4 +19,3 @@ Renders the widget as inline SVG document, if available.
 
 
 
- 

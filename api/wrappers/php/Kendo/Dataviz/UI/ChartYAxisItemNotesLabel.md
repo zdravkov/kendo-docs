@@ -191,4 +191,3 @@ If set to true the chart will display the y axis notes label. By default the y a
     $label->visible(true);
     ?>
 
- 

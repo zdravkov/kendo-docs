@@ -198,4 +198,3 @@ The clicked DOM element
 ##### e.button `jQuery`
 
 The button DOM element
- 

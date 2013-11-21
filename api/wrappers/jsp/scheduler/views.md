@@ -33,4 +33,3 @@ More documentation is available at [kendo:scheduler-view](scheduler/view).
         <kendo:scheduler-view></kendo:scheduler-view>
     </kendo:scheduler-views>
 
- 

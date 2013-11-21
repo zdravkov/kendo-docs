@@ -115,4 +115,3 @@ More documentation is available at [kendo:scheduler-messages-recurrenceEditor-ye
         <kendo:scheduler-messages-recurrenceEditor-yearly></kendo:scheduler-messages-recurrenceEditor-yearly>
     </kendo:scheduler-messages-recurrenceEditor>
 
- 

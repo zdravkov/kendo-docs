@@ -209,4 +209,3 @@ The title configuration of the chart pane.
     $pane->title(array('background' => $background));
     ?>
 
- 

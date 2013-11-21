@@ -96,4 +96,3 @@ A key/value pair of all methods that the new class will have.
 
     console.log(tweety instanceof Cat); // outputs "false" because tweety is not an instance of Cat
     </script>
- 

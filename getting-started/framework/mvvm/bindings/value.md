@@ -225,4 +225,3 @@ The third `option` will be displayed as selected. Selecting another `option` wil
 
 The second `option` will be displayed as selected. Selecting another `option` will append the corresponding item from the `products` array to the
 `selectedProducts` array. Unselecting an `option` will remove its corresponding item from the `selectedProducts` array.
- 

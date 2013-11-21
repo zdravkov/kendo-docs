@@ -32,4 +32,3 @@ The effect(s) to use when playing the open animation. Multiple effects should be
     <kendo:timePicker-animation-close effects="effects">
     </kendo:timePicker-animation-close>
 
- 

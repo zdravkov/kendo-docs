@@ -33,4 +33,3 @@ All Widgets No Longer Have the OnLoad Event. Please Use **$(Document).Ready()** 
 #### New
 
     Html.Kendo().Menu().Name("Menu").Events(events => events.Change(“change”))
- 

@@ -48,4 +48,3 @@ The top padding of the labels.
     <kendo:chart-yAxisItem-labels-padding top="top">
     </kendo:chart-yAxisItem-labels-padding>
 
- 

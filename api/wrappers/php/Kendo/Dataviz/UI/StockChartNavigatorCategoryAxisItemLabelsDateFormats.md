@@ -102,4 +102,3 @@ The format used when categoryAxis.baseUnit is set to "years".
     $dateFormats->years('value');
     ?>
 
- 

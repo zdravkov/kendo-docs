@@ -63,4 +63,3 @@ More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-
         <kendo:stockChart-navigator-categoryAxisItem-crosshair-tooltip></kendo:stockChart-navigator-categoryAxisItem-crosshair-tooltip>
     </kendo:stockChart-navigator-categoryAxisItem-crosshair>
 
- 

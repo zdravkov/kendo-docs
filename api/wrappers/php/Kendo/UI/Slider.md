@@ -318,4 +318,3 @@ The underlying value of the Slider.
     $slider->value(1);
     ?>
 
- 

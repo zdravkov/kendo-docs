@@ -32,4 +32,3 @@ versions, so it is advisable to always use the iframe configuration option.
     $content->url('value');
     ?>
 
- 

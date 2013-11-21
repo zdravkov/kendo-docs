@@ -239,4 +239,3 @@ It will contain the current grid request information - page, sort, group and fil
             // Return the result as JSON
             return Json(result);
         }
- 

@@ -48,4 +48,3 @@ The effect(s) to use when playing the close animation. Multiple effects should b
     $close->effects('value');
     ?>
 
- 

@@ -127,4 +127,3 @@ More documentation is available at [kendo:chart-yAxisItem-title-padding](chart/y
         <kendo:chart-yAxisItem-title-padding></kendo:chart-yAxisItem-title-padding>
     </kendo:chart-yAxisItem-title>
 
- 

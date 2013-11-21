@@ -42,4 +42,3 @@ Template variables:
     <kendo:stockChart-legend-inactiveItems-labels template="template">
     </kendo:stockChart-legend-inactiveItems-labels>
 
- 

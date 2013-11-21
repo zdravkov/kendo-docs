@@ -195,4 +195,3 @@ The following events are supported in server binding mode:
 - DetailExpand
 
 The other client-side events will **not** be raised when the grid is configured for server binding.
- 

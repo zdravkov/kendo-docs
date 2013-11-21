@@ -50,4 +50,3 @@ The width of the major ticks.
     <kendo:radialGauge-scale-majorTicks width="width">
     </kendo:radialGauge-scale-majorTicks>
 
- 

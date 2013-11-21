@@ -193,4 +193,3 @@ If set to true the chart will display the value axis crosshair tooltip. By defau
     $tooltip->visible(true);
     ?>
 
- 

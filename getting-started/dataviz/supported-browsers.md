@@ -25,4 +25,3 @@ Please note that Quirks mode is not supported. Always specify [DOCTYPE](http://r
 *   Opera Mobile on Android 2.0+
 *   BlackBerry OS 6.0+
 *   webOS 2.2+
- 

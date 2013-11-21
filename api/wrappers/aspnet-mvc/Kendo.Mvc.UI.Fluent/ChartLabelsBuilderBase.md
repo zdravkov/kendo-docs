@@ -387,4 +387,3 @@ The labels text rotation.
 
 
 
- 

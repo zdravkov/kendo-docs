@@ -49,4 +49,3 @@ is closed. Options include "fadeOut".
     $collapse->effects('value');
     ?>
 
- 

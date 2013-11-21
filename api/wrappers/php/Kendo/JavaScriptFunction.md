@@ -34,4 +34,3 @@ You can specify a function name or inline definition.
         // Specify the JavaScript function name which is 'onSave'
         $onSaveFunction = new \Kendo\JavaScriptFunction('function() { alert("onSave"); }');
     ?>
- 

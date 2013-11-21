@@ -32,4 +32,3 @@ The border width of the icon.
     <kendo:stockChart-navigator-categoryAxisItem-notes-icon-border width="width">
     </kendo:stockChart-navigator-categoryAxisItem-notes-icon-border>
 
- 

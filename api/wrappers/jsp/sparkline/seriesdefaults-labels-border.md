@@ -40,4 +40,3 @@ The width of the border.
     <kendo:sparkline-seriesDefaults-labels-border width="width">
     </kendo:sparkline-seriesDefaults-labels-border>
 
- 

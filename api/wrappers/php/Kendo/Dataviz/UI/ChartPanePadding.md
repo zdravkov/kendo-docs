@@ -84,4 +84,3 @@ The top padding of the chart panes.
     $padding->top(1);
     ?>
 
- 

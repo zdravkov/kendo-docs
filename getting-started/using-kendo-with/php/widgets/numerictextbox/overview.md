@@ -82,4 +82,3 @@ You can subscribe to all numerictextbox [events](/api/web/numerictextbox#events)
 
     echo $numerictextbox->render();
     ?>
- 

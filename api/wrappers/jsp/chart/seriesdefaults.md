@@ -237,4 +237,3 @@ More documentation is available at [kendo:chart-seriesDefaults-tooltip](/api/wra
         <kendo:chart-seriesDefaults-tooltip></kendo:chart-seriesDefaults-tooltip>
     </kendo:chart-seriesDefaults>
  
- 

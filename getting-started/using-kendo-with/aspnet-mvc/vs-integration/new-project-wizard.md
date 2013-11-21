@@ -54,4 +54,3 @@ When you click 'Finish', the creation of new Kendo UI web application will begin
 - Create test project (optional)
 
 
- 

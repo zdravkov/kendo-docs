@@ -64,4 +64,3 @@ Specifies the URL that the item links to
     <kendo:menu-item url="url">
     </kendo:menu-item>
 
- 

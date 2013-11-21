@@ -258,4 +258,3 @@ The visibility of the navigator.
     $navigator->visible(true);
     ?>
 
- 

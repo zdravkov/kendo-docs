@@ -31,4 +31,3 @@ More documentation is available at [kendo:chart-legend-inactiveItems-labels](cha
         <kendo:chart-legend-inactiveItems-labels></kendo:chart-legend-inactiveItems-labels>
     </kendo:chart-legend-inactiveItems>
 
- 

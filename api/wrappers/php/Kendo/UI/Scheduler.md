@@ -1275,4 +1275,3 @@ The start of working week (index based).
     $scheduler->workWeekStart(1);
     ?>
 
- 

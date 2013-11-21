@@ -483,4 +483,3 @@ For additional information check the [resize](/api/web/window#events-resize) eve
         </kendo:window-resize>
     </kendo:window>
 
- 

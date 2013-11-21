@@ -212,4 +212,4 @@ the grid's properties through the `this` variable. To get the selected item in t
 `select` function returns an array of selected elements, but since our grid only supports single item selection we just get the
 first element in the array. We then pass the selected element to the `dataItem` function of the grid, which returns the corresponding
 **OrderSearchResult** which we use to get the id of the order. Once we have the **id** of the order we can redirect the user to
-the edit page for that order. 
+the edit page for that order.

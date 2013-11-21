@@ -116,4 +116,3 @@ More documentation is available at [kendo:barcode-text](barcode/text).
         <kendo:barcode-text></kendo:barcode-text>
     </kendo:barcode>
 
- 

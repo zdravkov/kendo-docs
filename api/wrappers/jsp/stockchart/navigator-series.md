@@ -31,4 +31,3 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem](stock
         <kendo:stockChart-navigator-seriesItem></kendo:stockChart-navigator-seriesItem>
     </kendo:stockChart-navigator-series>
 
- 

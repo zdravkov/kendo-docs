@@ -86,4 +86,3 @@ You can subscribe to all treeview [events](/api/web/treeview#events).
 
         echo $treeview->render();
         ?>
- 
