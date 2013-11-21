@@ -36,3 +36,4 @@ The role data attribute of the widget used in the filter menu or a JavaScript fu
     $filterable->ui(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

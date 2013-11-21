@@ -257,3 +257,4 @@ For additional information check the [close](/api/web/colorpicker#events-close) 
         </kendo:colorPicker-close>
     </kendo:colorPicker>
 
+ 

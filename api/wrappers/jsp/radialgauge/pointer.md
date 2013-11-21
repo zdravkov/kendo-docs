@@ -48,3 +48,4 @@ More documentation is available at [kendo:radialGauge-pointer-cap](radialgauge/p
         <kendo:radialGauge-pointer-cap></kendo:radialGauge-pointer-cap>
     </kendo:radialGauge-pointer>
 
+ 

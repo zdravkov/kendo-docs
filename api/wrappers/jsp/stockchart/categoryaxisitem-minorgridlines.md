@@ -68,3 +68,4 @@ grid lines is not set to true.
     <kendo:stockChart-categoryAxisItem-minorGridLines width="width">
     </kendo:stockChart-categoryAxisItem-minorGridLines>
 
+ 

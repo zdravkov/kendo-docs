@@ -32,3 +32,4 @@ The visibility of the major ticks.
     <kendo:stockChart-xAxisItem-majorTicks visible="visible">
     </kendo:stockChart-xAxisItem-majorTicks>
 
+ 

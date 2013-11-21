@@ -72,3 +72,4 @@ More documentation is available at [kendo:sparkline-chartArea-border](sparkline/
         <kendo:sparkline-chartArea-border></kendo:sparkline-chartArea-border>
     </kendo:sparkline-chartArea>
 
+ 

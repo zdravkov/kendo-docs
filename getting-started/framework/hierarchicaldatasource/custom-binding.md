@@ -74,3 +74,4 @@ Because the HierarchicalDataSource loads data on demand, loading all available d
       console.log(rootItems[0].children.data().length); // logs 2
     }, 1000);
     </script>
+ 

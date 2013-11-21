@@ -246,3 +246,4 @@ The rotation angle of the outliers.
         </kendo:chart-seriesItem-outliers-rotation>
     </kendo:chart-seriesItem-outliers>
 
+ 

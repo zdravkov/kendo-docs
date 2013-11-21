@@ -251,4 +251,4 @@ One possible approach is to use JavaScript logic (for loop) inside the template.
         });
 
         var app = new kendo.mobile.Application();
-    </script>
+    </script> 

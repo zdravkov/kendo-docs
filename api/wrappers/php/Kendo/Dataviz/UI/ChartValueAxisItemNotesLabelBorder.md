@@ -66,3 +66,4 @@ The width of the border in pixels. By default the border width is set to zero wh
     $border->width(1);
     ?>
 
+ 

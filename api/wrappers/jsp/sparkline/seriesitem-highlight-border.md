@@ -40,3 +40,4 @@ The width of the border.
     <kendo:sparkline-seriesItem-highlight-border width="width">
     </kendo:sparkline-seriesItem-highlight-border>
 
+ 

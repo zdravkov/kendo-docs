@@ -40,3 +40,4 @@ The width of the border.
     <kendo:sparkline-plotArea-border width="width">
     </kendo:sparkline-plotArea-border>
 
+ 

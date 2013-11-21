@@ -182,3 +182,4 @@ For additional information check the [slide](/api/web/slider#events-slide) event
         </kendo:slider-slide>
     </kendo:slider>
 
+ 

@@ -48,3 +48,4 @@ The text similar to "Week" displayed as scheduler "week" view title.
     <kendo:scheduler-messages-views week="week">
     </kendo:scheduler-messages-views>
 
+ 

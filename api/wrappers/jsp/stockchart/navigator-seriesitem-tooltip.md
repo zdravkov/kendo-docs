@@ -125,3 +125,4 @@ Template variables:
         </kendo:stockChart-navigator-seriesItem-tooltip-template>
     </kendo:stockChart-navigator-seriesItem-tooltip>
 
+ 

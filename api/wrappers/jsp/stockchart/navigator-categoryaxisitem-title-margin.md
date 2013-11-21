@@ -48,3 +48,4 @@ The top margin of the title.
     <kendo:stockChart-navigator-categoryAxisItem-title-margin top="top">
     </kendo:stockChart-navigator-categoryAxisItem-title-margin>
 
+ 

@@ -240,4 +240,4 @@ Then the chart data is redrawn by updating its underlying data source, by callin
 The **baseUnit** for the chart is also changed based on the date range.
 For Day, Week and Month, the scale is set to a single day.
 For Year, the scale is set to one month.
-This is done by setting the **options.categoryAxis.baseUnit** property on the chart before it is redrawn.
+This is done by setting the **options.categoryAxis.baseUnit** property on the chart before it is redrawn. 

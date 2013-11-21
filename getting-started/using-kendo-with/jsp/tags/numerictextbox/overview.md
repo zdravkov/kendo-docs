@@ -59,3 +59,4 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/numerictextbox
             //Handle the change event
         }
     </script>
+ 

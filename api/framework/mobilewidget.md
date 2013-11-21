@@ -27,3 +27,4 @@ Returns the [kendo.mobile.ui.View](/api/mobile/view) which contains the widget. 
             console.log($("#button").data("kendoMobileButton").view()); // the foo mobile view instance
         }
     </script>
+ 

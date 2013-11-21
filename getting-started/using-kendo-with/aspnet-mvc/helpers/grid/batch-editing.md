@@ -231,3 +231,4 @@ Name the model "Northwind.edmx" and click "Next". This will start the "Entity Da
             )
 1. Build and run the application
 
+ 

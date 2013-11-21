@@ -110,3 +110,4 @@ Sets the width of the barcode area
 
 
 
+ 

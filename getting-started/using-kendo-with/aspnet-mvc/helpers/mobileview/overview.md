@@ -117,3 +117,4 @@ You can subscribe to all [events](/api/mobile/view#events) exposed by the widget
         //Handle the show event
     }
     </script>
+ 

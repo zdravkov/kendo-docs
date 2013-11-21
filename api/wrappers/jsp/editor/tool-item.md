@@ -40,3 +40,4 @@ The value that will be applied by the tool when this item is selected.
     <kendo:editor-tool-item value="value">
     </kendo:editor-tool-item>
 
+ 

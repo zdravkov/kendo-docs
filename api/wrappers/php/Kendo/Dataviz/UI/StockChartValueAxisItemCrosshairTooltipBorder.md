@@ -48,3 +48,4 @@ The width of the border.
     $border->width(1);
     ?>
 
+ 

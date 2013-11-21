@@ -48,3 +48,4 @@ The top margin of the title.
     <kendo:stockChart-navigator-pane-title-margin top="top">
     </kendo:stockChart-navigator-pane-title-margin>
 
+ 

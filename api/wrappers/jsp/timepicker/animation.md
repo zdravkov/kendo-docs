@@ -43,3 +43,4 @@ More documentation is available at [kendo:timePicker-animation-open](timepicker/
         <kendo:timePicker-animation-open></kendo:timePicker-animation-open>
     </kendo:timePicker-animation>
 
+ 

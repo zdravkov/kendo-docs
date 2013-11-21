@@ -33,3 +33,4 @@ More documentation is available at [kendo:scheduler-resource](scheduler/resource
         <kendo:scheduler-resource></kendo:scheduler-resource>
     </kendo:scheduler-resources>
 
+ 

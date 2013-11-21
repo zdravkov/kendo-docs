@@ -48,3 +48,4 @@ The width of the color cell.
     $tileSize->width(1);
     ?>
 
+ 

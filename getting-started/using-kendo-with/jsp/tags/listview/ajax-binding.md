@@ -94,3 +94,4 @@ In this configuration, Kendo ListView for JSP will request data from the server 
                <kendo:dataSource-transport-read url="${transportReadUrl}"/>
            </kendo:dataSource-transport>
        </kendo:dataSource>
+ 

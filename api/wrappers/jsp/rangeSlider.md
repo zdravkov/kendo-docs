@@ -167,3 +167,4 @@ For additional information check the [slide](/api/web/rangeslider#events-slide) 
         </kendo:rangeSlider-slide>
     </kendo:rangeSlider>
 
+ 

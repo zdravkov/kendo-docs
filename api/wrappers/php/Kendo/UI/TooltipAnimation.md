@@ -70,3 +70,4 @@ The animation that will be used when a Tooltip opens.
     $animation->open(array('duration' => $duration));
     ?>
 
+ 

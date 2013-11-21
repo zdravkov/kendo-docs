@@ -31,3 +31,4 @@ More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-
         <kendo:stockChart-navigator-categoryAxisItem-plotBand></kendo:stockChart-navigator-categoryAxisItem-plotBand>
     </kendo:stockChart-navigator-categoryAxisItem-plotBands>
 
+ 

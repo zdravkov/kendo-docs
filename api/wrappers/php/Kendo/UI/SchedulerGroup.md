@@ -48,3 +48,4 @@ An array of resource names by which the scheduler events will be grouped.
     $group->resources(new array());
     ?>
 
+ 

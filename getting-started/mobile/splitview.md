@@ -160,3 +160,4 @@ by setting data-style="vertical" on your SplitView.
       </div>
     </div>
 
+ 

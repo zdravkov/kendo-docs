@@ -69,3 +69,4 @@ Each mobile Layout instance exposes the following fields:
 *   **header** - the header DOM element;
 *   **footer** - the footer DOM element;
 
+ 

@@ -135,3 +135,4 @@ Template variables:
         </kendo:linearGauge-scale-labels-template>
     </kendo:linearGauge-scale-labels>
 
+ 

@@ -845,3 +845,4 @@ For additional information check the [zoomStart](/api/web/sparkline#events-zoomS
     $sparkline->zoomStart(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+ 

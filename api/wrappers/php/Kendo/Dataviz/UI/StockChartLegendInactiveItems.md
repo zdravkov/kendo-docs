@@ -70,3 +70,4 @@ Configures the legend markers.
     $inactiveItems->markers(array('color' => $color));
     ?>
 
+ 

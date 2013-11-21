@@ -32,3 +32,4 @@ The width of the border.
     <kendo:stockChart-seriesItem-tooltip-border width="width">
     </kendo:stockChart-seriesItem-tooltip-border>
 
+ 

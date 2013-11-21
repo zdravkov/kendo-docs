@@ -579,3 +579,4 @@ If set to true the chart will display the x axis. By default the x axis is visib
     $xAxisItem->visible(true);
     ?>
 
+ 

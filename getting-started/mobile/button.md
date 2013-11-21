@@ -95,3 +95,4 @@ Additional icons may be added by defining the respective CSS class.
 If the `icon` data attribute is set to `custom`, the button will receive `km-custom` CSS class.
 
 > **Important:** Check the [Icons](./icons) article for more information and how you can use custom icons in Kendo UI Mobile.
+ 

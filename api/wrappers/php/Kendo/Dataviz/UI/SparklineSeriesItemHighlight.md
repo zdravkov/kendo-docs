@@ -95,3 +95,4 @@ A value indicating if the series points should be highlighted.
     $highlight->visible(true);
     ?>
 
+ 

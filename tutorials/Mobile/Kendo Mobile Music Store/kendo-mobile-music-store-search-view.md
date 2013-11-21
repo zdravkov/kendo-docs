@@ -73,3 +73,4 @@ This is handled by using an "or" filter on the DataSource:
     }
 
 When the search terms are sent to the server, WCF OData will automatically know to perform the search against both fields.
+ 

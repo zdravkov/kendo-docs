@@ -116,3 +116,4 @@ Stops the effect in its current state
         }, 1000);
     </script>
 
+ 

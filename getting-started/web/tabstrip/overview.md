@@ -172,3 +172,4 @@ use the API to control its behavior.
 
     var tabStrip = $("#tabStrip").data("kendoTabStrip");
 
+ 

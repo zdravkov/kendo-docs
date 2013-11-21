@@ -307,4 +307,4 @@ The next steps you will take in your app building journey may include things lik
 - Handling view events to initalize your data and load data
 - Packaging your app with Cordova to access device APIs
 
-See the related docs to learn more about these advanced topics. Otherwise, have fun building awesome cross-plaform mobile apps with HTML, JavaScript, and Kendo UI Mobile!
+See the related docs to learn more about these advanced topics. Otherwise, have fun building awesome cross-plaform mobile apps with HTML, JavaScript, and Kendo UI Mobile! 

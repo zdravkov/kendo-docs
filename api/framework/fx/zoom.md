@@ -97,3 +97,4 @@ the final scale value.
 
 `Effect` The effect instance
 
+ 

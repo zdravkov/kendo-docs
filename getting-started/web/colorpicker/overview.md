@@ -75,3 +75,4 @@ digits) hex notation.  The `#` signs can be missing.
 ### More options
 
 For more options please see the [API page](../../../api/web/color).
+ 

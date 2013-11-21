@@ -64,3 +64,4 @@ The width of the minor ticks in pixels.
     <kendo:stockChart-valueAxisItem-minorTicks width="width">
     </kendo:stockChart-valueAxisItem-minorTicks>
 
+ 

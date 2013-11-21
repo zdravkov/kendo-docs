@@ -49,3 +49,4 @@ The default fill opacity (0 to 1) for layer shapes.
     $fill->opacity(1);
     ?>
 
+ 

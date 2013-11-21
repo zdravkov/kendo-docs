@@ -127,3 +127,4 @@ The remote url to call when creating a new record.
         </kendo:editor-imageBrowser-transport-destroy-url>
     </kendo:editor-imageBrowser-transport-destroy>
 
+ 

@@ -170,3 +170,4 @@ Template variables:
         </kendo:stockChart-valueAxisItem-labels-template>
     </kendo:stockChart-valueAxisItem-labels>
 
+ 

@@ -154,3 +154,4 @@ use the API to control its behavior.
 ### Accessing an existing DropDownList instance
 
     var dropDownList = $("#dropDownList").data("kendoDropDownList");
+ 

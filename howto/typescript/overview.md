@@ -37,3 +37,4 @@ You can optionally include the latest jQuery TypeScript definition file as well:
 
 ![Initialize a Kendo DataSource](datasource.png)
 
+ 

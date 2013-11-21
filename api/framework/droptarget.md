@@ -266,3 +266,4 @@ Reference to the draggable that is dropped over the drop target.
       .orange { background-color: orange; }
       .purple { background-color: purple; }
     </style>
+ 

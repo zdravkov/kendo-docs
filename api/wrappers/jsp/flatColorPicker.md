@@ -101,3 +101,4 @@ For additional information check the [change](/api/web/flatcolorpicker#events-ch
         </kendo:flatColorPicker-change>
     </kendo:flatColorPicker>
 
+ 

@@ -173,3 +173,4 @@ The type of the response. The supported values are "xml" and "json". By default 
     $schema->type('value');
     ?>
 
+ 

@@ -243,3 +243,4 @@ The output will look like this:
 
 If `data-text-field` and `data-value-field` are not set and the `select` is bound to array of non-primitive objects the `option`
 elements' content will be set to `[object Object]`.
+ 

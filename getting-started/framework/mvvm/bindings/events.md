@@ -71,3 +71,4 @@ To prevent the default action use the [preventDefault](http://api.jquery.com/eve
 
         kendo.bind($("a"), viewModel);
     </script>
+ 

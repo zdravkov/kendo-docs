@@ -246,3 +246,4 @@ The rotation angle of the extremes.
         </kendo:chart-seriesItem-extremes-rotation>
     </kendo:chart-seriesItem-extremes>
 
+ 

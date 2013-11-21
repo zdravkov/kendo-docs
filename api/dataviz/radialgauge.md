@@ -478,3 +478,4 @@ Change the value of the gauge.
 #### Example
 
     $("#radial-gauge").data("kendoRadialGauge").value(20);
+ 

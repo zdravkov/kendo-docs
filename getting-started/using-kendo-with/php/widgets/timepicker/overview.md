@@ -78,3 +78,4 @@ You can subscribe to all timepicker [events](/api/web/timepicker#events).
 
     echo $timepicker->render();
     ?>
+ 

@@ -173,3 +173,4 @@ Gets the parent node.
 ## Events
 
 See the [Model events](/api/framework/model#events) for all inherited events.
+ 

@@ -125,4 +125,4 @@ Here's an example for a pair of [AutoComplete](http://docs.kendoui.com/api/web/a
 
 Here's how the page looks in the browser:
 
-![Area Chart](images/autocomplete-example.png)
+![Area Chart](images/autocomplete-example.png) 

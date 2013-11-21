@@ -48,3 +48,4 @@ The top padding of the barcode.
     <kendo:barcode-padding top="top">
     </kendo:barcode-padding>
 
+ 

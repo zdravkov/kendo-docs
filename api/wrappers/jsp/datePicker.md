@@ -235,3 +235,4 @@ For additional information check the [open](/api/web/datepicker#events-open) eve
         </kendo:datePicker-open>
     </kendo:datePicker>
 
+ 

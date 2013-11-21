@@ -65,3 +65,4 @@ The width of the category axis major grid lines in pixels.
     <kendo:stockChart-navigator-categoryAxisItem-majorGridLines width="width">
     </kendo:stockChart-navigator-categoryAxisItem-majorGridLines>
 
+ 

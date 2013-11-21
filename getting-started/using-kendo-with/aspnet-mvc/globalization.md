@@ -163,3 +163,4 @@ To add a localization for a new language a custom version of Kendo.Mvc.dll must 
 1. Update the Kendo.Mvc.dll assembly reference to the newly copied one.
 
 
+ 

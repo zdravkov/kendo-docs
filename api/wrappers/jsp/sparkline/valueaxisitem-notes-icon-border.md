@@ -32,3 +32,4 @@ The border width of the icon.
     <kendo:sparkline-valueAxisItem-notes-icon-border width="width">
     </kendo:sparkline-valueAxisItem-notes-icon-border>
 
+ 

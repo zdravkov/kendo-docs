@@ -67,3 +67,4 @@ More documentation is available at [kendo:chart-xAxisItem-notes-icon-border](cha
         <kendo:chart-xAxisItem-notes-icon-border></kendo:chart-xAxisItem-notes-icon-border>
     </kendo:chart-xAxisItem-notes-icon>
 
+ 

@@ -59,3 +59,4 @@ The width of the line.
         </kendo:sparkline-seriesItem-target-line-width>
     </kendo:sparkline-seriesItem-target-line>
 
+ 

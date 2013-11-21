@@ -746,3 +746,4 @@ For additional information check the [zoomStart](/api/web/chart#events-zoomStart
         </kendo:chart-zoomStart>
     </kendo:chart>
 
+ 

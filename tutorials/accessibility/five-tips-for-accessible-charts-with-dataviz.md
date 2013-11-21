@@ -249,3 +249,4 @@ In the next section, we'll look at five steps you can take to improve the access
 - [WCAG 2.0](http://www.w3.org/TR/WCAG20/)
 - [W3C SVG Accessibility Guidelines](http://www.w3.org/TR/SVG-access/)
 - [HTML5 Accessibility: SVG Text (Paciello Group Blog Post)](http://www.paciellogroup.com/blog/2011/08/html5-accessibility-chops-interactive-image-example/)
+ 

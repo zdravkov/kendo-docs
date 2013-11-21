@@ -37,3 +37,4 @@ The direction to which the sliding will occur.  Supported directions are `left`,
         kendo.fx($("#foo")).slideIn("up").play();
     </script>
 
+ 

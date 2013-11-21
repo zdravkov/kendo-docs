@@ -66,3 +66,4 @@ The width of the line in pixels. Also affects the major and minor ticks, but not
     <kendo:chart-xAxisItem-majorGridLines width="width">
     </kendo:chart-xAxisItem-majorGridLines>
 
+ 

@@ -117,3 +117,4 @@ The icon visibility.
     $icon->visible(true);
     ?>
 
+ 

@@ -24,3 +24,4 @@ Sets the command which will be displayed in the scheduler footer. Currently only
     <kendo:scheduler-footer command="command">
     </kendo:scheduler-footer>
 
+ 

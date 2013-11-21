@@ -191,3 +191,4 @@ Fires when the user drags the drag handle to a new position.
 ##### e.value `Number`
 
 Represents the value from the current position of the drag handle.
+ 

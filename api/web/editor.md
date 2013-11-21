@@ -1607,3 +1607,4 @@ An array of tool definitions that are used for initializing the default tools. N
 
     $("#editor").kendoEditor();
     </script>
+ 

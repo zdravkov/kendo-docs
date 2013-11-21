@@ -693,3 +693,4 @@ The widget instance which fired the event.
         e.preventDefault(); //prevent popup opening
     });
     </script>
+ 

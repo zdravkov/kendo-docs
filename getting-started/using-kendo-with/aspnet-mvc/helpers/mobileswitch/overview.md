@@ -131,3 +131,4 @@ You can subscribe to all [events](/api/mobile/switch#events) exposed by the widg
         //Handle the change event
     }
     </script>
+ 

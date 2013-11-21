@@ -48,3 +48,4 @@ The border width of the icon.
     $border->width(1);
     ?>
 
+ 

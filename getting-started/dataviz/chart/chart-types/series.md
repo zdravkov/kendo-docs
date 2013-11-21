@@ -80,3 +80,4 @@ Series of different types can be shown in a single chart. Please note the follow
 *   A chart can contain Bar or Column series, but not both.
 *   A Pie series can't be used with other series, including other Pie series.
 *   Scatter / Scatter Line series can't be used together with other series.
+ 

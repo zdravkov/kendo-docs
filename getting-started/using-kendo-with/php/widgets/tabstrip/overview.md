@@ -98,3 +98,4 @@ You can subscribe to all tabstrip [events](/api/web/tabstrip#events).
 
     echo $tabstrip->render();
     ?>
+ 

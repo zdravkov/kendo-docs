@@ -70,3 +70,4 @@ The visual animation(s) that will be used when the new tab is shown.
     $animation->open(array('duration' => $duration));
     ?>
 
+ 

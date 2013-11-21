@@ -139,4 +139,4 @@ jQuery does the heavy-lifting of locating the data and facilitating the actions,
 		return series;
 	}
 
-Combined, these functions make the data presentation of the chart dynamic, and allow for the user to select multiple views while remaining robust and clear to develop.
+Combined, these functions make the data presentation of the chart dynamic, and allow for the user to select multiple views while remaining robust and clear to develop. 

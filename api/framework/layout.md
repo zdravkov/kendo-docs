@@ -38,3 +38,4 @@ The selector of the container in which the view element will be appended.
 ##### view `kendo.View`
 
 The view instance that will be rendered.
+ 

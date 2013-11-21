@@ -41,3 +41,4 @@ A whitespace-delimited string of animation effects that are used when an item is
     <kendo:panelBar-animation-expand show="show">
     </kendo:panelBar-animation-expand>
 
+ 

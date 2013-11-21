@@ -82,3 +82,4 @@ You can subscribe to all datepicker [events](/api/web/datepicker#events).
 
     echo $datepicker->render();
     ?>
+ 

@@ -48,3 +48,4 @@ The width of the line..
     <kendo:linearGauge-scale-line width="width">
     </kendo:linearGauge-scale-line>
 
+ 

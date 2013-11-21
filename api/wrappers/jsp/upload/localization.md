@@ -104,3 +104,4 @@ Sets the text of the "Upload files" button.
     <kendo:upload-localization uploadSelectedFiles="uploadSelectedFiles">
     </kendo:upload-localization>
 
+ 

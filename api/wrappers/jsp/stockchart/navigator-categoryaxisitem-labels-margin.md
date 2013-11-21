@@ -48,3 +48,4 @@ The top margin of the labels.
     <kendo:stockChart-navigator-categoryAxisItem-labels-margin top="top">
     </kendo:stockChart-navigator-categoryAxisItem-labels-margin>
 
+ 

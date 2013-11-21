@@ -99,3 +99,4 @@ More documentation is available at [kendo:stockChart-navigator-pane-title-margin
         <kendo:stockChart-navigator-pane-title-margin></kendo:stockChart-navigator-pane-title-margin>
     </kendo:stockChart-navigator-pane-title>
 
+ 

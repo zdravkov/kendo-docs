@@ -106,3 +106,4 @@ Enables or disables the built-in zoom control (+/- button).
     $controls->zoom(array('position' => $position));
     ?>
 
+ 

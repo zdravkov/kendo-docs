@@ -104,3 +104,4 @@ The text of the value item in filter menu (available in mobile mode only).
     <kendo:grid-filterable-messages value="value">
     </kendo:grid-filterable-messages>
 
+ 

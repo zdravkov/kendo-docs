@@ -40,3 +40,4 @@ The width of the border.
     <kendo:linearGauge-pointer-track-border width="width">
     </kendo:linearGauge-pointer-track-border>
 
+ 

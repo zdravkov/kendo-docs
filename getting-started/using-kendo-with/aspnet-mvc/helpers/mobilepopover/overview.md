@@ -168,3 +168,4 @@ You can subscribe to all [events](/api/mobile/popover#events) exposed by the wid
         //Handle the close event
     }
     </script>
+ 

@@ -48,3 +48,4 @@ The top padding of the crosshair tooltip.
     <kendo:chart-xAxisItem-crosshair-tooltip-padding top="top">
     </kendo:chart-xAxisItem-crosshair-tooltip-padding>
 
+ 

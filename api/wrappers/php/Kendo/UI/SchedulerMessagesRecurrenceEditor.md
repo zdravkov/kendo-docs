@@ -244,3 +244,4 @@ The configuration of the scheduler recurrence editor yearly messages. Use this o
     $recurrenceEditor->yearly(array('interval' => $interval));
     ?>
 
+ 

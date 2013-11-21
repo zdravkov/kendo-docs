@@ -125,3 +125,4 @@ By default chart series highlighting is enabled.
     $highlight->visible(true);
     ?>
 
+ 

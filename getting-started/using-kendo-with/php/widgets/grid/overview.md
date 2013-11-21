@@ -103,3 +103,4 @@ You can subscribe to all grid [events](/api/web/grid#events).
 
     echo $grid->render();
     ?>
+ 

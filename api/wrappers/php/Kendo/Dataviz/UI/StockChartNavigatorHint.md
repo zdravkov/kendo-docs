@@ -73,3 +73,4 @@ The visibility of the hint.
     $hint->visible(true);
     ?>
 
+ 

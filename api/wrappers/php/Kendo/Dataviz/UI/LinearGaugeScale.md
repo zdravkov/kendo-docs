@@ -311,3 +311,4 @@ The position of the gauge.
     $scale->vertical(true);
     ?>
 
+ 

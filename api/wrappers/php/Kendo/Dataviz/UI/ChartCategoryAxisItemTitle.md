@@ -243,3 +243,4 @@ If set to true the chart will display the category axis title. By default the ca
     $title->visible(true);
     ?>
 
+ 

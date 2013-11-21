@@ -48,3 +48,4 @@ The line width in pixels.
     <kendo:chart-seriesItem-line width="width">
     </kendo:chart-seriesItem-line>
 
+ 

@@ -21,4 +21,4 @@ This project is designed to be cloned into Icenium Graphite.
 
 ## Explore the Tutorial
 
-Please use the tree navigation at the left to navigate the sections of this tutorial.
+Please use the tree navigation at the left to navigate the sections of this tutorial. 

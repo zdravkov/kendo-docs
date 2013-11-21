@@ -186,3 +186,4 @@ Template variables:
         </kendo:sparkline-categoryAxisItem-labels-template>
     </kendo:sparkline-categoryAxisItem-labels>
 
+ 

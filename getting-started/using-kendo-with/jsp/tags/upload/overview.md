@@ -75,3 +75,4 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/upload#events)
         // Handle the success event
     }
     </script>
+ 

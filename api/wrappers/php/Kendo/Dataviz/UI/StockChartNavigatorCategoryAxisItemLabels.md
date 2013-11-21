@@ -350,3 +350,4 @@ If set to true the chart will display the category axis labels. By default the c
     $labels->visible(true);
     ?>
 
+ 

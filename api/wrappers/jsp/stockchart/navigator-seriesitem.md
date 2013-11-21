@@ -297,3 +297,4 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-toolti
         <kendo:stockChart-navigator-seriesItem-tooltip></kendo:stockChart-navigator-seriesItem-tooltip>
     </kendo:stockChart-navigator-seriesItem>
 
+ 

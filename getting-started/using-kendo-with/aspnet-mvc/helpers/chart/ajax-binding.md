@@ -59,3 +59,4 @@ To configure the Kendo Chart for ajax binding follow these steps:
                   )
             )
 
+ 

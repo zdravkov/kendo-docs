@@ -39,3 +39,4 @@ Playing the effect in reverse will collapse the element to zero size and hide it
 ### direction `String`
 
 The direction in which the element will be expanded. Either `horizontal` or `vertical`.
+ 

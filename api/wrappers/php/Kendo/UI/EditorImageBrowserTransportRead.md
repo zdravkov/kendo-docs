@@ -124,3 +124,4 @@ The remote url to call when fetching list of items.
     $read->url(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

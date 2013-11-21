@@ -122,3 +122,4 @@ The text which will be displayed when the end-user hovers the tool button with t
     $tool->tooltip('value');
     ?>
 
+ 

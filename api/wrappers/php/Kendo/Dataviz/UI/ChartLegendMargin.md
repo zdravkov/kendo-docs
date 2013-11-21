@@ -84,3 +84,4 @@ The top margin of the chart legend.
     $margin->top(1);
     ?>
 
+ 

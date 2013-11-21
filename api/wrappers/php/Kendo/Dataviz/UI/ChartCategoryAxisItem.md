@@ -720,3 +720,4 @@ The week start day when categoryAxis.baseUnit is set to "weeks".The supported va
     $categoryAxisItem->weekStartDay(1);
     ?>
 
+ 

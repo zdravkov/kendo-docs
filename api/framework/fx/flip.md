@@ -58,3 +58,4 @@ The initially visible element in the container.
 ### back `jQuery`
 
 The finally visible element in the container.
+ 

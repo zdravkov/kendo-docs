@@ -32,3 +32,4 @@ The text similar to "Repeat every: " displayed in the scheduler recurrence edito
     <kendo:scheduler-messages-recurrenceEditor-daily repeatEvery="repeatEvery">
     </kendo:scheduler-messages-recurrenceEditor-daily>
 
+ 

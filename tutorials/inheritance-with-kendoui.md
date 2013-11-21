@@ -197,4 +197,4 @@ Use the Fiddle below to experiment with Inheritance In Kendo UI.
 
 <iframe style="width: 100%; height: 750px;" src="http://jsfiddle.net/burkeholland/FgShb/embedded/js,result" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-   [21]: http://twitter.com/johnbristowe
+   [21]: http://twitter.com/johnbristowe 

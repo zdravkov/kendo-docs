@@ -205,3 +205,4 @@ Triggers when a new color has been changed.
     </script>
 
 [Color]: ../framework/kendo#Color
+ 

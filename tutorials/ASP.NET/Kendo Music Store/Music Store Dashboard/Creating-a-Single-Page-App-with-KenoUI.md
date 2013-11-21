@@ -218,4 +218,4 @@ The **class** attributes in the **&lt;span&gt;** tags are defined in **Site.css*
 ## Clicks and Routing
 
 Because the routes are defined using the Kendo Router there is no real need to define click or touch event handlers to drive navigation.
-Instead simple anchors <a href=""> are defined for each menu item that change the URL # value.
+Instead simple anchors <a href=""> are defined for each menu item that change the URL # value. 

@@ -32,3 +32,4 @@ The effect(s) to use when playing the close animation. Multiple effects should b
     <kendo:datePicker-animation-close effects="effects">
     </kendo:datePicker-animation-close>
 
+ 

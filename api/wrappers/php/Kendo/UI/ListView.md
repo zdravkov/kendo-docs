@@ -483,3 +483,4 @@ The id of the template used for rendering the items in the listview.
     $listView->template('value');
     ?>
 
+ 

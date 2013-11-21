@@ -234,3 +234,4 @@ The rotation angle of the markers.
         </kendo:sparkline-seriesItem-markers-rotation>
     </kendo:sparkline-seriesItem-markers>
 
+ 

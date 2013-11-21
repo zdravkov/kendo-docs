@@ -178,3 +178,4 @@ You can subscribe to all [events](/api/mobile/drawer#events) exposed by the widg
         //Handle the show event
     }
     </script>
+ 

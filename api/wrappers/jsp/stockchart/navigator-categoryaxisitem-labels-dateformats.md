@@ -56,3 +56,4 @@ The format used when categoryAxis.baseUnit is set to "years".
     <kendo:stockChart-navigator-categoryAxisItem-labels-dateFormats years="years">
     </kendo:stockChart-navigator-categoryAxisItem-labels-dateFormats>
 
+ 

@@ -36,3 +36,4 @@ The width of the line.
     $line->width(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

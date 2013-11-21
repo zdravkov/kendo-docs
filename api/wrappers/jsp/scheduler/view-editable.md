@@ -40,3 +40,4 @@ If set to true the user can update events. Updating is enabled by default.
     <kendo:scheduler-view-editable update="update">
     </kendo:scheduler-view-editable>
 
+ 

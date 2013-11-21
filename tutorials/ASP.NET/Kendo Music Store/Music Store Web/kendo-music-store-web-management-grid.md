@@ -317,3 +317,4 @@ When this button is clicked the user will be presented with a file selection dia
 Because the **async.autoUpload** is set to **true** the image will be uploaded as soon as it is selected.
 On the server, after the file is uploaded a response is sent to the client that contains the url to the newly saved image.
 The upload widget in the editor uses the **success** event to read the returned URL from the server and display the image.
+ 

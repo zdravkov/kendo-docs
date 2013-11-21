@@ -130,3 +130,4 @@ The template which renders the labels.The fields which can be used in the templa
         </kendo:chart-valueAxisItem-notes-label-template>
     </kendo:chart-valueAxisItem-notes-label>
 
+ 

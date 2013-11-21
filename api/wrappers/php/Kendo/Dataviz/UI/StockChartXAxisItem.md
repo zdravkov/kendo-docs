@@ -462,3 +462,4 @@ The visibility of the axis.
     $xAxisItem->visible(true);
     ?>
 
+ 

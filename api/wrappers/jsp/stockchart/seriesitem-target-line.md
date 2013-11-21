@@ -59,3 +59,4 @@ The width of the line.
         </kendo:stockChart-seriesItem-target-line-width>
     </kendo:stockChart-seriesItem-target-line>
 
+ 

@@ -32,3 +32,4 @@ Effect to be used for closing of the popup.
     <kendo:menu-animation-close effects="effects">
     </kendo:menu-animation-close>
 
+ 

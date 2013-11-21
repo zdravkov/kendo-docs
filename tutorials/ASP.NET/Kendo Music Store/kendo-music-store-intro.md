@@ -70,4 +70,4 @@ If you are not an Icenium customer you may clone the repository to your local dr
 
 ## Explore the Tutorial
 
-Please use the tree navigation at the left to navigate the sections of this tutorial. The Mobile Music Store pages are listed under "Tutorials\Mobile".
+Please use the tree navigation at the left to navigate the sections of this tutorial. The Mobile Music Store pages are listed under "Tutorials\Mobile". 

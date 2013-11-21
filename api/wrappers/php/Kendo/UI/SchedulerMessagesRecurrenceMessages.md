@@ -156,3 +156,4 @@ The text similar to "Edit Recurring Item" displayed in the scheduler event edito
     $recurrenceMessages->editWindowTitle('value');
     ?>
 
+ 

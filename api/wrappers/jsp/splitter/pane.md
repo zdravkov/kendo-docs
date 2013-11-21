@@ -80,3 +80,4 @@ Specifies the size of a pane defined as pixels (i.e. "200px") or as a percentage
     <kendo:splitter-pane size="size">
     </kendo:splitter-pane>
 
+ 

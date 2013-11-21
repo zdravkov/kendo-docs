@@ -101,4 +101,4 @@ is clicked.
 
 Here we use jQuery to find the button we created earlier in the toolbar and register a click
 event handler to it. When the button is clicked we access the URL that we stored earlier and
-concatenate the id of the currently selected Customer and set the result to the window's location.
+concatenate the id of the currently selected Customer and set the result to the window's location. 

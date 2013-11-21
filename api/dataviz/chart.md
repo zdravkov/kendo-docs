@@ -29880,3 +29880,4 @@ The widget instance which fired the event.
     chart.bind("zoomStart", chart_zoomStart);
     </script>
 
+ 

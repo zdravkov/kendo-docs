@@ -74,3 +74,4 @@ You can subscribe to all datetimepicker [events](/api/web/datetimepicker#events)
 
     echo $datetimepicker->render();
     ?>
+ 

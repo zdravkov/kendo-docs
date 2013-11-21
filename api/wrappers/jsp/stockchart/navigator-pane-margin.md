@@ -48,3 +48,4 @@ The top margin of the navigator pane.
     <kendo:stockChart-navigator-pane-margin top="top">
     </kendo:stockChart-navigator-pane-margin>
 
+ 

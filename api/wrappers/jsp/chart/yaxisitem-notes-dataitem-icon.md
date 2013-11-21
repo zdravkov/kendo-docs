@@ -67,3 +67,4 @@ More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-icon-bo
         <kendo:chart-yAxisItem-notes-dataItem-icon-border></kendo:chart-yAxisItem-notes-dataItem-icon-border>
     </kendo:chart-yAxisItem-notes-dataItem-icon>
 
+ 

@@ -126,3 +126,4 @@ The field which contains the type of the entry. Either f for image or d for dire
     $fields->type(array('field' => $field));
     ?>
 
+ 

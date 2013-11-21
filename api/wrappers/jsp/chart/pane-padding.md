@@ -48,3 +48,4 @@ The top padding of the chart panes.
     <kendo:chart-pane-padding top="top">
     </kendo:chart-pane-padding>
 
+ 

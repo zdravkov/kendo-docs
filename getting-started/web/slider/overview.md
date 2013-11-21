@@ -69,3 +69,4 @@ and the following keys and behaviors are supported:
 *	Page Up and Page Down increment/decrement by a largeStep amount
 *	Home and End place the focused draghandle at the minimum or maximum value
 *	In right-to-left (RTL) mode the behavior of the left and right arrow keys is reversed.
+ 

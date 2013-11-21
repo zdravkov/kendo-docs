@@ -317,3 +317,4 @@ The scheduler widget supports a set of [events](/api/web/scheduler#events) which
             </script>
         </kendo:scheduler-dataBound>
     </kendo:scheduler>
+ 

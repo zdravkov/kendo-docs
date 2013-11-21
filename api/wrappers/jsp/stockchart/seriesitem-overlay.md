@@ -24,3 +24,4 @@ The gradient name.Available options:
     <kendo:stockChart-seriesItem-overlay gradient="gradient">
     </kendo:stockChart-seriesItem-overlay>
 
+ 

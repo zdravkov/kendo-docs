@@ -79,3 +79,4 @@ You can subscribe to all colorpalette [events](/api/web/colorpalette#events).
 
     echo $colorpalette->render();
     ?>
+ 

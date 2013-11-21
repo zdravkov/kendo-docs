@@ -124,3 +124,4 @@ The remote url to call when creating a new record.
     $create->url(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

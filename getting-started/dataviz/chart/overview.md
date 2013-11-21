@@ -410,3 +410,4 @@ Sometimes you need to apply settings to all axes. In this case it is convenient 
             }
         }
     });
+ 

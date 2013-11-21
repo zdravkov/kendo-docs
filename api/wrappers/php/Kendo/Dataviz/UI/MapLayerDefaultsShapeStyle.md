@@ -72,3 +72,4 @@ Accepts a valid CSS color string or object with detailed configuration.
     $style->stroke(array('color' => $color));
     ?>
 
+ 

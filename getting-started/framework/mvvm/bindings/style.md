@@ -54,3 +54,4 @@ next letter (`fontWeight, fontSize, backgroundColor`).
 ## Resetting style attributes to their original value
 
 To reset the value of a style attribute set it to empty string: `""`.
+ 

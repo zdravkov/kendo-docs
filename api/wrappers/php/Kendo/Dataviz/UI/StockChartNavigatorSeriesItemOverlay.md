@@ -30,3 +30,4 @@ The gradient name.Available options:
     $overlay->gradient('value');
     ?>
 
+ 

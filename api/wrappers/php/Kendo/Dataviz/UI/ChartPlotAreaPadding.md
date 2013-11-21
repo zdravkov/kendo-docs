@@ -84,3 +84,4 @@ The top padding of the chart plot area.
     $padding->top(1);
     ?>
 
+ 

@@ -48,3 +48,4 @@ Effect to be used for closing of the tooltip.
     $close->effects('value');
     ?>
 
+ 

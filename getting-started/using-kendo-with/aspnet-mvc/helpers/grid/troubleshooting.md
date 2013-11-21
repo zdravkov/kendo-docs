@@ -137,3 +137,4 @@ Not all settings of the DataSource are exposed via the `DataSource` fluent API. 
 
 Kendo Grid for ASP.NET MVC will not raise all client-side events when configured for server bound mode.
 Check the [server binding](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/server-binding#client-side-events-and-server-binding) help topic for further details.
+ 

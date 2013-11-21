@@ -155,3 +155,4 @@ More documentation is available at [kendo:scheduler-messages-views](scheduler/me
         <kendo:scheduler-messages-views></kendo:scheduler-messages-views>
     </kendo:scheduler-messages>
 
+ 

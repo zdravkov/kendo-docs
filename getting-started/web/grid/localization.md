@@ -138,3 +138,4 @@ More info can be found in the [columnMenu.messages](/api/web/grid#columnmenumess
     }
 
 More info can be found in the [messages](/api/web/pager#messages-object) section of the Pager API reference.
+ 

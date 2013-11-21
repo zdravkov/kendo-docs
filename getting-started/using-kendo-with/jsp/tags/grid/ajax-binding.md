@@ -100,3 +100,4 @@ can be changed by DataSource server operaion options to false:
                <kendo:dataSource-transport-read url="${transportReadUrl}"/>
            </kendo:dataSource-transport>
        </kendo:dataSource>
+ 

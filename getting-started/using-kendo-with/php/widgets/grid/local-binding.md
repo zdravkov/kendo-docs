@@ -172,3 +172,4 @@ It is distributed with the Kendo UI for PHP demos and can be found in the **/wra
         <?php
         echo $grid->render();
         ?>
+ 

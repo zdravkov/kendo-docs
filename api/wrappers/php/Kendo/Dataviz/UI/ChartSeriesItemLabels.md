@@ -321,3 +321,4 @@ If set to true the chart will display the series labels. By default chart series
     $labels->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

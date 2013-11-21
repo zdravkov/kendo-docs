@@ -153,3 +153,4 @@ The padding of the chart plot area. A numeric value will set all paddings.The de
     $plotArea->padding(array('bottom' => $bottom));
     ?>
 
+ 

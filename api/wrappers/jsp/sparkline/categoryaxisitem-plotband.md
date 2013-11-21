@@ -48,3 +48,4 @@ The end position of the plot band in axis units.
     <kendo:sparkline-categoryAxisItem-plotBand to="to">
     </kendo:sparkline-categoryAxisItem-plotBand>
 
+ 

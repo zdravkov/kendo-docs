@@ -170,3 +170,4 @@ The markers visibility.
     $markers->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

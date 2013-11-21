@@ -120,3 +120,4 @@ The end date of the period.
         //returns list of expanded occurrences
         var occurrences = dataSource.expand(new Date("2013/4/1"), new Date("2013/5/1"));
     </script>
+ 

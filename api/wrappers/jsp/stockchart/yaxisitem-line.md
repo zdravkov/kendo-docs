@@ -50,3 +50,4 @@ not the grid lines.
     <kendo:stockChart-yAxisItem-line width="width">
     </kendo:stockChart-yAxisItem-line>
 
+ 

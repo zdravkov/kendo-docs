@@ -95,4 +95,4 @@ This will happen if two or more widgets are initialized from elements that have 
 	<script>
 		$('#editor').kendoEditor();
 		$('#editor').kendoEditor(); // problem
-	</script>
+	</script> 

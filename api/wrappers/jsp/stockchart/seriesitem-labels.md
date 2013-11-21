@@ -318,3 +318,4 @@ The visibility of the labels.
         </kendo:stockChart-seriesItem-labels-visible>
     </kendo:stockChart-seriesItem-labels>
 
+ 

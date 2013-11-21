@@ -82,3 +82,4 @@ You can subscribe to all [events](http://docs.kendoui.com/api/dataviz/chart#even
         }
     </script>
 
+ 

@@ -33,3 +33,4 @@ A whitespace-separated string of animation effects that are used when a new tab 
     <kendo:tabStrip-animation-open effects="effects">
     </kendo:tabStrip-animation-open>
 
+ 

@@ -153,3 +153,4 @@ Each time the url fragment changes, the router triggers a `change` event. callin
         router.navigate("/foo");
     });
     </script>
+ 

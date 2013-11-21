@@ -63,3 +63,4 @@ Each mobile View instance exposes the following fields:
 *   **content** - the view content DOM element;
 *   **scrollerContent** - the view mobile scroller container DOM element. Recommended if the mobile View contents need to be manipulated or **replaced**.
 
+ 

@@ -92,3 +92,4 @@ After you run the sample application you can continue with the following article
 * [Kendo UI in ASP.NET MVC 5 application](/getting-started/using-kendo-with/aspnet-mvc/asp-net-mvc-5)
 * [Kendo UI for ASP.NET MVC fundamentals](/getting-started/using-kendo-with/aspnet-mvc/fundamentals)
 * [Using the Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
+ 

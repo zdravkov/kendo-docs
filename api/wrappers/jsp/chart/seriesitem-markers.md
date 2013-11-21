@@ -246,3 +246,4 @@ The rotation angle of the markers.
         </kendo:chart-seriesItem-markers-rotation>
     </kendo:chart-seriesItem-markers>
 
+ 

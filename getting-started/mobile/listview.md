@@ -331,3 +331,4 @@ Again if only several icons should be overridden, specify them with their classe
         visibility: hidden;
     }
 
+ 

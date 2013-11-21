@@ -59,4 +59,4 @@ You can subscribe to all ProgressBar [events](/api/web/progressbar#events).
       function onComplete(e) {
         // Handle the complete event
       }
-    </script>
+    </script> 

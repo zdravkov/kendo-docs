@@ -48,3 +48,4 @@ The line width.
     <kendo:sparkline-seriesItem-line width="width">
     </kendo:sparkline-seriesItem-line>
 
+ 

@@ -124,4 +124,4 @@ More information about this behavior related to ASP.NET MVC is available at
 There are two alternative options to tackle this scenario:
 
 * Clear the ModelState in the controller's action method after the POST
-* Set `Encode(false)` for the Editor and set an `[AllowHtml]` attribute to the model property, so that the Editor's value is submitted non-encoded.
+* Set `Encode(false)` for the Editor and set an `[AllowHtml]` attribute to the model property, so that the Editor's value is submitted non-encoded. 

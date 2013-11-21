@@ -133,3 +133,4 @@ You can subscribe to all [events](/api/mobile/button#events) exposed by the widg
         //Handle the click event
     }
     </script>
+ 

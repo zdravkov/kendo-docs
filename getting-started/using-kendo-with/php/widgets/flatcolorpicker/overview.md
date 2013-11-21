@@ -79,3 +79,4 @@ You can subscribe to all flatcolorpicker [events](/api/web/flatcolorpicker#event
 
     echo $flatcolorpicker->render();
     ?>
+ 

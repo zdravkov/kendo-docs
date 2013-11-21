@@ -32,4 +32,4 @@ All Widgets No Longer Have The OnLoad Event. Please Use **$(document).ready()** 
 
 #### New
 
-    Html.Kendo().PanelBar().Name("SamplePanelBar").Events(events => events.Change(“change”))
+    Html.Kendo().PanelBar().Name("SamplePanelBar").Events(events => events.Change(“change”)) 

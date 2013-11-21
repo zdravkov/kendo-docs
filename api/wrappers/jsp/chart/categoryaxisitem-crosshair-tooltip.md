@@ -134,3 +134,4 @@ The template which renders the tooltip.The fields which can be used in the templ
         </kendo:chart-categoryAxisItem-crosshair-tooltip-template>
     </kendo:chart-categoryAxisItem-crosshair-tooltip>
 
+ 

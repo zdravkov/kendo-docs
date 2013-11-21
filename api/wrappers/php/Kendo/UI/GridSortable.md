@@ -48,3 +48,4 @@ The sorting mode. If set to "single" the user can sort by one column. If set to 
     $sortable->mode('value');
     ?>
 
+ 

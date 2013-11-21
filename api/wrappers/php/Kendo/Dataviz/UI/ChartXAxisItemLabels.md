@@ -350,3 +350,4 @@ If set to true the chart will display the x axis labels. By default the x axis l
     $labels->visible(true);
     ?>
 
+ 

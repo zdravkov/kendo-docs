@@ -71,3 +71,4 @@ More documentation is available at [kendo:stockChart-yAxisItem-crosshair-tooltip
         <kendo:stockChart-yAxisItem-crosshair-tooltip></kendo:stockChart-yAxisItem-crosshair-tooltip>
     </kendo:stockChart-yAxisItem-crosshair>
 
+ 

@@ -95,3 +95,4 @@ The background opacity of the plot area.
     $plotArea->opacity(1);
     ?>
 
+ 

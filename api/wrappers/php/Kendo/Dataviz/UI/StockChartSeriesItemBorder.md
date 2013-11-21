@@ -108,3 +108,4 @@ The width of the border.
     $border->width(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

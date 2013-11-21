@@ -32,3 +32,4 @@ The border width of the icon.
     <kendo:stockChart-seriesItem-notes-icon-border width="width">
     </kendo:stockChart-seriesItem-notes-icon-border>
 
+ 

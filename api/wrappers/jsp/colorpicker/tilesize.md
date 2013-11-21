@@ -32,3 +32,4 @@ The width of the color cell.
     <kendo:colorPicker-tileSize width="width">
     </kendo:colorPicker-tileSize>
 
+ 

@@ -72,3 +72,4 @@ If the "Total" aggregate does not exist, we default to 0 since the cart is empty
 
 This gives us a convenient way of retrieving the total price for all items in the cart from anywhere in the Music Store
 by calling the **store.cart.getTotal()** function.
+ 

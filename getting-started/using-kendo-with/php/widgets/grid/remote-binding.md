@@ -230,3 +230,4 @@ First we will configure a Kendo Grid for PHP binding and then we will implement 
         // Return JSON
         echo json_encode($data);
         ?>
+ 

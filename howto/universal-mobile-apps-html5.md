@@ -137,4 +137,4 @@ With this technique applied, app loading is polished:
 ##Responsive Design
 What about responsive design, you ask?
 
-Responsive design is great for creating mobile sites, but it’s not as useful for creating mobile apps. Responsive design can help you hide, show, resize, and reformat UI for screens of varying size, but it is less suited for presenting completely different modes of usability on different form factors (such as phones and tablets).
+Responsive design is great for creating mobile sites, but it’s not as useful for creating mobile apps. Responsive design can help you hide, show, resize, and reformat UI for screens of varying size, but it is less suited for presenting completely different modes of usability on different form factors (such as phones and tablets). 

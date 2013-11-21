@@ -110,3 +110,4 @@ The template which renders the labels.The fields which can be used in the templa
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

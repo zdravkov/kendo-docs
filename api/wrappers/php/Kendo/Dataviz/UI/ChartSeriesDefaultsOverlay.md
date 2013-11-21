@@ -30,3 +30,4 @@ The chart series gradient.The supported values are:
     $overlay->gradient('value');
     ?>
 
+ 

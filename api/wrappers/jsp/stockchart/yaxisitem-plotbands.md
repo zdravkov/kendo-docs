@@ -31,3 +31,4 @@ More documentation is available at [kendo:stockChart-yAxisItem-plotBand](stockch
         <kendo:stockChart-yAxisItem-plotBand></kendo:stockChart-yAxisItem-plotBand>
     </kendo:stockChart-yAxisItem-plotBands>
 
+ 

@@ -32,3 +32,4 @@ The width of the line.
     <kendo:chart-seriesItem-errorBars-line width="width">
     </kendo:chart-seriesItem-errorBars-line>
 
+ 

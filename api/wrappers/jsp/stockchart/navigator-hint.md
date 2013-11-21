@@ -78,3 +78,4 @@ Template variables:
         </kendo:stockChart-navigator-hint-template>
     </kendo:stockChart-navigator-hint>
 
+ 

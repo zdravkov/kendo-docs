@@ -24,3 +24,4 @@ The text displayed in the grouping drop area.
     <kendo:grid-groupable-messages empty="empty">
     </kendo:grid-groupable-messages>
 
+ 

@@ -66,3 +66,4 @@ The text similar to "weekend" displayed in the repeat by section of the monthly 
     $weekdays->weekend('value');
     ?>
 
+ 

@@ -138,3 +138,4 @@ The width of the value axis minor grid lines in pixels.
     $minorGridLines->width(1);
     ?>
 
+ 

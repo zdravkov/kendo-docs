@@ -166,4 +166,4 @@ Shrinking the horizontal Menu will make the last root item's border touch the Me
 	.k-menu-horizontal > .k-last /* for all horizontal menus */
 	{
 	   border-width: 0;
-	}
+	} 

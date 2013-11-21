@@ -64,3 +64,4 @@ The text of the "starts with" filter operator.
     <kendo:grid-filterable-operators-string startswith="startswith">
     </kendo:grid-filterable-operators-string>
 
+ 

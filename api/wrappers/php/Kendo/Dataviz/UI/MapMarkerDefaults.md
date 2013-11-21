@@ -66,3 +66,4 @@ The default marker size in pixels.
     $markerDefaults->size(1);
     ?>
 
+ 

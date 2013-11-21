@@ -72,3 +72,4 @@ More documentation is available at [kendo:stockChart-chartArea-border](stockchar
         <kendo:stockChart-chartArea-border></kendo:stockChart-chartArea-border>
     </kendo:stockChart-chartArea>
 
+ 

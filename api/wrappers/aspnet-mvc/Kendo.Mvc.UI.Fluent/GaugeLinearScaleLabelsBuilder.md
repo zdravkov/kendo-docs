@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder
 
-Defines the fluent interface for configuring the linear gauge labels.
+Defines the fluent interface for configuring the linear gauge labels. 

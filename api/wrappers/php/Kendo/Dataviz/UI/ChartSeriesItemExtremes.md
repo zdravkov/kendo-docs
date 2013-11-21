@@ -174,3 +174,4 @@ If set to true the chart will display the series extremes. By default chart seri
     $extremes->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

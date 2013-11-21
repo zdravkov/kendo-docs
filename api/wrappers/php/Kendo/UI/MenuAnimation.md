@@ -70,3 +70,4 @@ The animation that will be used when opening sub menus.
     $animation->open(array('duration' => $duration));
     ?>
 
+ 

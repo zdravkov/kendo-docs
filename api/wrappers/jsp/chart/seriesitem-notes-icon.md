@@ -67,3 +67,4 @@ More documentation is available at [kendo:chart-seriesItem-notes-icon-border](ch
         <kendo:chart-seriesItem-notes-icon-border></kendo:chart-seriesItem-notes-icon-border>
     </kendo:chart-seriesItem-notes-icon>
 
+ 

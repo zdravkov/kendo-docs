@@ -131,3 +131,4 @@ The width of the crosshair.
     $crosshair->width(1);
     ?>
 
+ 

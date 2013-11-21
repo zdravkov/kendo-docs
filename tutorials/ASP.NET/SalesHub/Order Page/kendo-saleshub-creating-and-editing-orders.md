@@ -444,4 +444,4 @@ setting the value, we find the suggested values window, using jQuery, and close 
         </div>
     </div>
 
-The comments section is small and simple and contains four standard HTML textareas.
+The comments section is small and simple and contains four standard HTML textareas. 

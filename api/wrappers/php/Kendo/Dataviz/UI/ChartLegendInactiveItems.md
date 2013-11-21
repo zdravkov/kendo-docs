@@ -41,3 +41,4 @@ The chart legend label configuration.
     $inactiveItems->labels(array('color' => $color));
     ?>
 
+ 

@@ -6,4 +6,4 @@ publish: false
 relatedDocs: gs-using-kendo-widgets, gs-downloading-kendo
 ---
 
-# How Kendo UI Works
+# How Kendo UI Works 

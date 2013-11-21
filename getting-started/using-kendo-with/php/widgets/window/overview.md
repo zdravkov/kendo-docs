@@ -111,3 +111,4 @@ You can subscribe to all window [events](/api/web/window#events).
 
     echo $window->render();
     ?>
+ 

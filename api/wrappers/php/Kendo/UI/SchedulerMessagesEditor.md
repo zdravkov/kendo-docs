@@ -246,3 +246,4 @@ The text similar to "Title of the event" displayed in the scheduler event editor
     $editor->title('value');
     ?>
 
+ 

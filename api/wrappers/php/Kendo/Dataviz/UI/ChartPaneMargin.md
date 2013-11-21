@@ -84,3 +84,4 @@ The top margin of the chart panes.
     $margin->top(1);
     ?>
 
+ 

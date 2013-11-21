@@ -60,3 +60,4 @@ The role data attribute of the widget used in the filter menu or a JavaScript fu
         </kendo:grid-column-filterable-ui>
     </kendo:grid-column-filterable>
 
+ 

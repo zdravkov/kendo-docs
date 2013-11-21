@@ -49,3 +49,4 @@ The size of the cap in percents. (from 0 to 1)
     $cap->size(1);
     ?>
 
+ 

@@ -396,3 +396,4 @@ Each table row consists of table cells (<td>) which represent the grid columns. 
         </kendo:grid-column-template>
     </kendo:grid-column>
 
+ 

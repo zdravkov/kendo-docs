@@ -183,3 +183,4 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/scheduler#even
                 </text>);
             })
     )
+ 

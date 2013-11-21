@@ -64,3 +64,4 @@ The text of the "not equal" filter operator.
     <kendo:grid-filterable-operators-date neq="neq">
     </kendo:grid-filterable-operators-date>
 
+ 

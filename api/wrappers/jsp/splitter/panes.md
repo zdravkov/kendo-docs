@@ -31,3 +31,4 @@ More documentation is available at [kendo:splitter-pane](splitter/pane).
         <kendo:splitter-pane></kendo:splitter-pane>
     </kendo:splitter-panes>
 
+ 

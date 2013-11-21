@@ -174,3 +174,4 @@ If set to true the chart will display the series outliers. By default chart seri
     $outliers->visible(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

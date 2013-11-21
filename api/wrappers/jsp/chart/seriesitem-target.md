@@ -94,3 +94,4 @@ The target color.
         </kendo:chart-seriesItem-target-color>
     </kendo:chart-seriesItem-target>
 
+ 

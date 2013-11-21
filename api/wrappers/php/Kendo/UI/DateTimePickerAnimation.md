@@ -70,3 +70,4 @@ The animation played when the popup is opened.
     $animation->open(array('duration' => $duration));
     ?>
 
+ 

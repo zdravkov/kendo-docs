@@ -102,3 +102,4 @@ The text similar to "Yearly" displayed in the scheduler recurrence editor.
     $frequencies->yearly('value');
     ?>
 
+ 

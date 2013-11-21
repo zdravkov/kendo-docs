@@ -406,3 +406,4 @@ Specifies the selected date.
     $datePicker->value(new date());
     ?>
 
+ 

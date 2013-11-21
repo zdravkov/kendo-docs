@@ -79,3 +79,4 @@ The handler should return either:
 The Upload has a fallback mechanism when it is placed inside a form and is configured for asynchronous operation. Any files that were not fully uploaded will be sent as part of the form when the user submits it. This ensures that no files will be lost, even if you do not take any special measures to block the submit button during upload.
 
 You have to handle the uploaded files both in the save handler and in the form submit action, as in synchronous mode.
+ 

@@ -120,3 +120,4 @@ The width of the major ticks in pixels.
     $majorTicks->width(1);
     ?>
 
+ 

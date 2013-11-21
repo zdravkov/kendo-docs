@@ -48,3 +48,4 @@ The end position of the plot band in axis units.
     <kendo:stockChart-navigator-categoryAxisItem-plotBand to="to">
     </kendo:stockChart-navigator-categoryAxisItem-plotBand>
 
+ 

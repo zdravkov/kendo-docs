@@ -175,3 +175,4 @@ Specifies the initially selected color.
     $flatColorPicker->value('value');
     ?>
 
+ 

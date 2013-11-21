@@ -172,3 +172,4 @@ You can subscribe to all [events](/api/mobile/modalview#events) exposed by the w
         //Handle the close event
     }
     </script>
+ 

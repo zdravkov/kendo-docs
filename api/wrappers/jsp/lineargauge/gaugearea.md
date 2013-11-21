@@ -67,3 +67,4 @@ More documentation is available at [kendo:linearGauge-gaugeArea-border](linearga
         <kendo:linearGauge-gaugeArea-border></kendo:linearGauge-gaugeArea-border>
     </kendo:linearGauge-gaugeArea>
 
+ 

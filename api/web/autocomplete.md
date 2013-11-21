@@ -900,3 +900,4 @@ The widget instance which fired the event.
     var autocomplete = $("#autocomplete").data("kendoAutoComplete");
     autocomplete.bind("select", autocomplete_select);
     </script>
+ 

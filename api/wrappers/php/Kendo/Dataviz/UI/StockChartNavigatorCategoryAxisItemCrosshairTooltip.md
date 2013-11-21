@@ -193,3 +193,4 @@ If set to true the chart will display the category axis crosshair tooltip. By de
     $tooltip->visible(true);
     ?>
 
+ 

@@ -256,4 +256,4 @@ Then you can use you can use the JavaScript [API](/api/mobile/application#method
         // Notice that the casing is important
         var application = kendo.mobile.application;
     });
-    </script>
+    </script> 

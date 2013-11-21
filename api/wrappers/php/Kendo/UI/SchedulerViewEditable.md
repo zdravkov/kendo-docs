@@ -66,3 +66,4 @@ If set to true the user can update events. Updating is enabled by default.
     $editable->update(true);
     ?>
 
+ 

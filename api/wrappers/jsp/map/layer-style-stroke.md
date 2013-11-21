@@ -51,3 +51,4 @@ The default stroke width for layer shapes.
     <kendo:map-layer-style-stroke width="width">
     </kendo:map-layer-style-stroke>
 
+ 

@@ -526,3 +526,4 @@ When the datasource does not return any data (e.g. as a result of filtering) a t
 			e.sender.tbody.parent().width(e.sender.thead.width()).end().html(emptyRow);
 		}
 	}
+ 

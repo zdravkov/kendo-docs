@@ -265,3 +265,4 @@ For additional information check the [select](/api/web/menu#events-select) event
         </kendo:menu-select>
     </kendo:menu>
 
+ 

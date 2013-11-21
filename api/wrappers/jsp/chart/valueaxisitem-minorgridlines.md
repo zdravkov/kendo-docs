@@ -73,3 +73,4 @@ The width of the value axis minor grid lines in pixels.
     <kendo:chart-valueAxisItem-minorGridLines width="width">
     </kendo:chart-valueAxisItem-minorGridLines>
 
+ 

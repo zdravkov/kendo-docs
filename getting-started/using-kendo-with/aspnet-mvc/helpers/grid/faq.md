@@ -434,3 +434,4 @@ Custom editor templates should be used. ASP.NET MVC will look for a partial view
 ready-to-use editor templates. They are located in the **\wrappers\aspnetmvc\EditorTemplates** folder. The editor templates are available in two flavors - the **ascx** folder
 contains the WebForms view engine version whereas the **razor** folder contains the Razor view egine version. To use those editor templates in your application copy all files from
 the corresponding folder ("ascx" or "razor") to `~/Views/Shared/EditorTemplates` (you may need to create that folder if it does not exist).
+ 

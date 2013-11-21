@@ -1026,3 +1026,4 @@ The selected item chosen by a user.
 ##### e.contentElement `Element`
 
 The content element of the tab going to be selected.
+ 

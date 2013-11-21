@@ -195,3 +195,4 @@ The tooltip of the refresh button.
     $messages->refresh('value');
     ?>
 
+ 

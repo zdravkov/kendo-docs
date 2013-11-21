@@ -24,3 +24,4 @@ The duration of each progress animation in milliseconds.
     <kendo:progressBar-animation duration="duration">
     </kendo:progressBar-animation>
 
+ 

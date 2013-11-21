@@ -191,3 +191,4 @@ If set to true the chart will display the category notes label. By default the c
     $label->visible(true);
     ?>
 
+ 

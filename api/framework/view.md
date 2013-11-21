@@ -152,3 +152,4 @@ Fires when after the mobile View is rendered (either by calling `render`, or by 
 
 The element of the **View**. Gets instantiated after the `render` method is called.
 
+ 

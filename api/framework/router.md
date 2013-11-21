@@ -176,3 +176,4 @@ The fragment part of the URL
 The parsed query string parameters of the URL
 
 > Calling the `preventDefault` method of the event object will stop the change and restore the previous URL.
+ 

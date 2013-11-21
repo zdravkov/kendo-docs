@@ -186,3 +186,4 @@ First we will configure a Kendo DropDownList for PHP binding and then we will im
 
         echo json_encode($data);
         ?>
+ 

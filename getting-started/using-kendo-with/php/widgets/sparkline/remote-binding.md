@@ -91,3 +91,4 @@ This help topic shows how to bind Kendo Sparkline for PHP to JSON response.
         echo json_encode($weather);
         ?>
 
+ 

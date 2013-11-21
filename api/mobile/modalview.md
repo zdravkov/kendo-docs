@@ -229,3 +229,4 @@ Fires when the ModalView is shown.
 ##### e.target `jQuery`
 
 The invocation target of the ModalView.
+ 

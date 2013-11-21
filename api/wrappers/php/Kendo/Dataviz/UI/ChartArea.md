@@ -151,3 +151,4 @@ The width of the chart area.
     $chartArea->width(1);
     ?>
 
+ 

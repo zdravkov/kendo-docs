@@ -271,3 +271,4 @@ Fires when the Drawer is shown.
 ##### e.sender `kendo.mobile.ui.Drawer`
 
 The widget instance which fired the event.
+ 

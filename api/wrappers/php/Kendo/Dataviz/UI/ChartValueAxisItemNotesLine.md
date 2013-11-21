@@ -66,3 +66,4 @@ The line width of the notes.
     $line->width(1);
     ?>
 
+ 

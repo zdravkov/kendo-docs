@@ -606,4 +606,4 @@ It is highly recommended that you use some sort of MVC framework with your PHP.
 [Zend](http://www.zend.com/en/) is popular and [CodeIgniter](http://codeigniter.com/) looks promising. It really takes some of the headache out of the manual things
 that we did here.
 
-   [4]: http://php.net/manual/en/pdo.prepared-statements.php(http://php.net/manual/en/pdo.prepared-statements.php)
+   [4]: http://php.net/manual/en/pdo.prepared-statements.php(http://php.net/manual/en/pdo.prepared-statements.php) 

@@ -33,3 +33,4 @@ More documentation is available at [kendo:chart-pane](chart/pane).
         <kendo:chart-pane></kendo:chart-pane>
     </kendo:chart-panes>
 
+ 

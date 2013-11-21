@@ -40,3 +40,4 @@ The width of the border.
     <kendo:stockChart-navigator-seriesItem-border width="width">
     </kendo:stockChart-navigator-seriesItem-border>
 
+ 

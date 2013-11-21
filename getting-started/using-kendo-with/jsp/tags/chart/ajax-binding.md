@@ -47,3 +47,4 @@ To configure the Kendo Chart for ajax binding follow these steps (using Spring M
 		 	 	<kendo:chart-categoryAxisItem field="year" />
 		 	 </kendo:chart-categoryAxis>
 		</kendo:chart>
+ 

@@ -34,3 +34,4 @@ The default fill opacity (0 to 1) for layer shapes.
     <kendo:map-layer-style-fill opacity="opacity">
     </kendo:map-layer-style-fill>
 
+ 

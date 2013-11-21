@@ -209,3 +209,4 @@ The title configuration of the navigator pane.
     $pane->title(array('background' => $background));
     ?>
 
+ 

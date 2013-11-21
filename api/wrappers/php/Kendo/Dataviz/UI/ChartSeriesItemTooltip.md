@@ -193,3 +193,4 @@ If set to true the chart will display the series tooltip. By default the series 
     $tooltip->visible(true);
     ?>
 
+ 

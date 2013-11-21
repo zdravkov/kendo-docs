@@ -250,3 +250,4 @@ You can subscribe to all [events](/api/mobile/listview#events) exposed by the wi
         //Handle the click event
     }
     </script>
+ 

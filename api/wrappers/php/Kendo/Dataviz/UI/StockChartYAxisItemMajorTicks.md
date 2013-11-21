@@ -48,3 +48,4 @@ The visibility of the major ticks.
     $majorTicks->visible(true);
     ?>
 
+ 

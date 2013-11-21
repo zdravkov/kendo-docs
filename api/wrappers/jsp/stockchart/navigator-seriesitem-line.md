@@ -40,3 +40,4 @@ The line width.
     <kendo:stockChart-navigator-seriesItem-line width="width">
     </kendo:stockChart-navigator-seriesItem-line>
 
+ 

@@ -225,3 +225,4 @@ If set to true the chart will display the title. By default the title is not dis
     $title->visible(true);
     ?>
 
+ 

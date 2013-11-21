@@ -97,3 +97,4 @@ For additional information check the [change](/api/web/colorpalette#events-chang
         </kendo:colorPalette-change>
     </kendo:colorPalette>
 
+ 

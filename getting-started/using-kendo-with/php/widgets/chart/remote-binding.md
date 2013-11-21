@@ -99,3 +99,4 @@ This help topic shows how to bind Kendo Chart for PHP to JSON response.
         echo json_encode($weather);
         ?>
 
+ 

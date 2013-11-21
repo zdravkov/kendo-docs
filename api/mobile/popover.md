@@ -345,3 +345,4 @@ The widget instance which fired the event.
       //handle event
     }
     </script>
+ 

@@ -84,3 +84,4 @@ The text similar to "Week" displayed as scheduler "week" view title.
     $views->week('value');
     ?>
 
+ 

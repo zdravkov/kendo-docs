@@ -40,3 +40,4 @@ The width of the border in pixels. By default the border width is set to zero wh
     <kendo:stockChart-valueAxisItem-notes-dataItem-label-border width="width">
     </kendo:stockChart-valueAxisItem-notes-dataItem-label-border>
 
+ 

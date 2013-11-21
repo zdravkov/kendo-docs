@@ -40,3 +40,4 @@ The width of the border.
     <kendo:radialGauge-scale-labels-border width="width">
     </kendo:radialGauge-scale-labels-border>
 
+ 

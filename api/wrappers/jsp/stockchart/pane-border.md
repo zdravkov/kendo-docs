@@ -40,3 +40,4 @@ The width of the border.
     <kendo:stockChart-pane-border width="width">
     </kendo:stockChart-pane-border>
 
+ 

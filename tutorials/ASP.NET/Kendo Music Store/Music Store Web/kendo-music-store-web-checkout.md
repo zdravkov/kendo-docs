@@ -117,4 +117,4 @@ When the checkout page was loaded we included a **calcTotal()** function and bou
 For any item in the cart, if the quantity changes or it is removed, the **calcTotal()** function is called.
 This then calls **viewModel.set("total", store.cart.getTotalPrice());** which updates the **total** property on
 the view model to the sum of all the items.
-The MVVM framework then updates the element's text to show the total amount.
+The MVVM framework then updates the element's text to show the total amount. 

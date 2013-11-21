@@ -80,3 +80,4 @@ The text similar to "Edit Recurring Item" displayed in the scheduler event edito
     <kendo:scheduler-messages-recurrenceMessages editWindowTitle="editWindowTitle">
     </kendo:scheduler-messages-recurrenceMessages>
 
+ 

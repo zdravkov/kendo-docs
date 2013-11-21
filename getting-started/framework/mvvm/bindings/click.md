@@ -79,3 +79,4 @@ For some DOM elements the `click` event has a default action - for example navig
     kendo.bind($("a"), viewModel);
     </script>
 
+ 

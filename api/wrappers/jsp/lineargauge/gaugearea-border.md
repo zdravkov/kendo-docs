@@ -40,3 +40,4 @@ The width of the border.
     <kendo:linearGauge-gaugeArea-border width="width">
     </kendo:linearGauge-gaugeArea-border>
 
+ 

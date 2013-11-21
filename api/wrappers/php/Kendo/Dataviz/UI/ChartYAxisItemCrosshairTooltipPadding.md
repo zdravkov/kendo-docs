@@ -84,3 +84,4 @@ The top padding of the crosshair tooltip.
     $padding->top(1);
     ?>
 
+ 

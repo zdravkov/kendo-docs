@@ -646,3 +646,4 @@ The line width.** Applicable for line series. **
     $seriesItem->width(1);
     ?>
 
+ 

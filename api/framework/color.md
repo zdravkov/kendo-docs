@@ -163,3 +163,4 @@ The alpha channel of the color, in the range from 0 to 1. Defaults to 1 when omi
     color = kendo.Color.fromBytes(255,255,0,.5);
     console.log(color.toCssRgba()); // logs "rgba(255, 255, 0, 0.5)"
     </script>
+ 

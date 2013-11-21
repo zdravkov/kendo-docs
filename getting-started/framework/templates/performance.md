@@ -98,3 +98,4 @@ We recognized from the outset that even though our templating implementation is 
 Kendo UI is designed to support this behavior. For anything in Kendo UI that has an out-of-the-box implementation (like Templating), we provide "escape hatches" that make it easy to use any JavaScript library you love. We don't _require BYO*_, but we do _allow and embrace BYO*_ for developers that have strong preferences.
 
 So if you love Underscore or Mustache or whatever, great! You can use that with Kendo UI, too.
+ 

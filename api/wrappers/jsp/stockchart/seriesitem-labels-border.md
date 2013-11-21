@@ -135,3 +135,4 @@ The width of the border.
         </kendo:stockChart-seriesItem-labels-border-width>
     </kendo:stockChart-seriesItem-labels-border>
 
+ 

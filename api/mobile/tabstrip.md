@@ -251,3 +251,4 @@ The selected tab
       e.preventDefault(); //prevent the tab selection
     }
     </script>
+ 

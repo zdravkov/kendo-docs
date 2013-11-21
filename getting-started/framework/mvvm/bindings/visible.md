@@ -37,3 +37,4 @@ When the user clicks the button the `div` will be hidden because the value of th
 
 Non-boolean values such as `0`, `null`, `undefined` and `""` are treated as `false` by the `visible` binding.
 All other values are treated as `true`.
+ 

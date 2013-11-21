@@ -99,3 +99,4 @@ KendoUI Mobile ships with several ready to use icons:
 </ul>
 
 > **Important:** Check the [Icons](./icons) article for more information and how you can use custom icons in Kendo UI Mobile.
+ 

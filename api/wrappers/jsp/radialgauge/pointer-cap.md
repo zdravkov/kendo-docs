@@ -33,3 +33,4 @@ The size of the cap in percents. (from 0 to 1)
     <kendo:radialGauge-pointer-cap size="size">
     </kendo:radialGauge-pointer-cap>
 
+ 

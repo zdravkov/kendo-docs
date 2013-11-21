@@ -40,3 +40,4 @@ The text similar to "Repeat on: " displayed in the scheduler recurrence editor.
     <kendo:scheduler-messages-recurrenceEditor-weekly repeatOn="repeatOn">
     </kendo:scheduler-messages-recurrenceEditor-weekly>
 
+ 

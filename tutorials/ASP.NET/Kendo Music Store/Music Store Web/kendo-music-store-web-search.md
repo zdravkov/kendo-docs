@@ -211,3 +211,4 @@ Then we can use a jQuery selector to get the &lt;div&gt; element within the &lt;
 
 Once we have the album ID, we can show our album details by calling **store.viewAlbumDetails(albumId);**, which
 will be discussed in more detail later in this tutorial.
+ 

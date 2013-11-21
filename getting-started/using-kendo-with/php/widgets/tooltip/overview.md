@@ -76,3 +76,4 @@ You can subscribe to all tooltip [events](/api/web/tooltip#events).
 
     echo $tooltip->render();
     ?>
+ 

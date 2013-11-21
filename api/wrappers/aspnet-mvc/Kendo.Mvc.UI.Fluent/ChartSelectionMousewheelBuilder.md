@@ -77,3 +77,4 @@ The mousehweel zoom type. Default value is ChartZoomDirection.Both
 
 
 
+ 

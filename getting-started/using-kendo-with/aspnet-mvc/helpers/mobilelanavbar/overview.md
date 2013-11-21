@@ -121,3 +121,4 @@ Then you can use you can use the JavaScript [API](/api/mobile/navbar#methods) of
         var navbar = $("#MobileNavBar").data("kendoMobileNavBar");
     });
     </script>
+ 

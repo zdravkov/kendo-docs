@@ -37,3 +37,4 @@ The visibility of the major ticks.
     </kendo:chart>
 
 
+ 

@@ -43,3 +43,4 @@ Axes are configured through "categoryAxis" and "valueAxis". Multiple value axes 
 This configuration produces the following area chart:
 
 ![Area Chart](chart-area.png)
+ 

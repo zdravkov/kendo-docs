@@ -137,3 +137,4 @@ The markers visibility.
     $markers->visible(true);
     ?>
 
+ 

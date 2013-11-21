@@ -32,3 +32,4 @@ The border width of the icon.
     <kendo:sparkline-seriesItem-notes-icon-border width="width">
     </kendo:sparkline-seriesItem-notes-icon-border>
 
+ 

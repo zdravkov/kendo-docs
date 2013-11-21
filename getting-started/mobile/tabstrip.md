@@ -88,3 +88,4 @@ Kendo mobile TabStrip ships with several ready to use icons:
 Additional icons may be added by defining the respective CSS tab class.
 
 > **Important:** Check the [Icons](./icons) article for more information and how you can use custom icons in Kendo UI Mobile.
+ 

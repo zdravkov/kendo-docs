@@ -157,4 +157,4 @@ You can see everything in action by [visiting the updated Feed Reader demo](http
 ## Bottom Line on CORS
 Hopefully this post helps highlight the value of CORS and how it can be used with most modern browsers. As more app code moves to the client, the need for CORS will only grow. Start playing with it today and help push web standards to the next level.
 
-*[This article was [original published on the Kendo UI Blogs](http://www.kendoui.com/blogs/teamblog/posts/11-10-03/using_cors_with_all_modern_browsers.aspx) on October 3rd, 2011. Updated July 2012.]*
+*[This article was [original published on the Kendo UI Blogs](http://www.kendoui.com/blogs/teamblog/posts/11-10-03/using_cors_with_all_modern_browsers.aspx) on October 3rd, 2011. Updated July 2012.]* 

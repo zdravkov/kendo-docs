@@ -42,3 +42,4 @@ When initialized, the mobile View will call [kendo.bind](/framework/mvvm/overvie
 This means that if an element with `data-role="listview"` is present, a mobile (and not web) listview will be initialized.
 This behaviour can be overriden by specifying the full widget class name (with its namespace) in the role attribute.
 
+ 

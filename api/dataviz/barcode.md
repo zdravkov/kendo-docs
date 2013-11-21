@@ -381,3 +381,4 @@ The value to set.
 
 `String` The value of the barcode.
 
+ 

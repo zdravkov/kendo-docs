@@ -140,3 +140,4 @@ Custom bindings are set via `data-bind` attribute.
     <div id="target" data-bind="slide: slideValue">
         One Big Orange Square.
     </div>
+ 

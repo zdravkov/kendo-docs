@@ -48,3 +48,4 @@ The effect(s) to use when playing the open animation. Multiple effects should be
     $close->effects('value');
     ?>
 
+ 

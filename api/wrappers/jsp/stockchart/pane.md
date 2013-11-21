@@ -92,3 +92,4 @@ More documentation is available at [kendo:stockChart-pane-title](stockchart/pane
         <kendo:stockChart-pane-title></kendo:stockChart-pane-title>
     </kendo:stockChart-pane>
 
+ 

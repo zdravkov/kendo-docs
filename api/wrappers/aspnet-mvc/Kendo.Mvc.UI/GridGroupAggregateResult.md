@@ -6,4 +6,4 @@ publish:true
 
 # Kendo.Mvc.UI.GridGroupAggregateResult
 
-Represents the aggregate result when grouping is enabled
+Represents the aggregate result when grouping is enabled 

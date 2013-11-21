@@ -40,3 +40,4 @@ The line width of the note.
     <kendo:stockChart-valueAxisItem-notes-dataItem-line width="width">
     </kendo:stockChart-valueAxisItem-notes-dataItem-line>
 
+ 

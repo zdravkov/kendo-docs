@@ -40,3 +40,4 @@ The text similar to "weekend" displayed in the repeat by section of the monthly 
     <kendo:scheduler-messages-recurrenceEditor-weekdays weekend="weekend">
     </kendo:scheduler-messages-recurrenceEditor-weekdays>
 
+ 

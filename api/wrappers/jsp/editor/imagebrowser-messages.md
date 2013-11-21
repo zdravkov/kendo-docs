@@ -96,3 +96,4 @@ Defines text for upload button.
     <kendo:editor-imageBrowser-messages uploadFile="uploadFile">
     </kendo:editor-imageBrowser-messages>
 
+ 

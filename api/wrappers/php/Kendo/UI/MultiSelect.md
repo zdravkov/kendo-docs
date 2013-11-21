@@ -588,3 +588,4 @@ Define the value of the widget
     $multiSelect->value(new array());
     ?>
 
+ 

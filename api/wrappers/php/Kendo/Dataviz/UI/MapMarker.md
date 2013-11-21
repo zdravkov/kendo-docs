@@ -85,3 +85,4 @@ The marker size in pixels.
     $marker->size(1);
     ?>
 
+ 

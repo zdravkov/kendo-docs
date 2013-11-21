@@ -220,3 +220,4 @@ The Flat skin shipped with Kendo UI Mobile Q2 2013, was created to provide maxim
         border-color: #ff6363;
     }
 
+ 

@@ -120,3 +120,4 @@ The text of the "starts with" filter operator.
     $string->startswith('value');
     ?>
 
+ 

@@ -758,3 +758,4 @@ Triggered when a pane is resized.
     var splitter = $("#splitter").data("kendoSplitter");
     splitter.bind("resize", splitter_resize);
     </script>
+ 

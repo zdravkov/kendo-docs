@@ -125,3 +125,4 @@ Template variables:
         </kendo:sparkline-categoryAxisItem-crosshair-tooltip-template>
     </kendo:sparkline-categoryAxisItem-crosshair-tooltip>
 
+ 

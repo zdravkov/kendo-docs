@@ -6227,3 +6227,4 @@ The axis name is used as a key.
 ##### e.originalEvent `Object`
 
 The original user event that triggered the zoom action.
+ 

@@ -80,3 +80,4 @@ In certain scenarios, A view may be destroyed in order to free browser resources
 
 > If a certain view is used to display different data in the same format (for instance - item details from a list),
 > it is recommended to reuse a view instance and change its contents through MVVM bindings instead of re-creating a new instance each time such detail is displayed.
+ 

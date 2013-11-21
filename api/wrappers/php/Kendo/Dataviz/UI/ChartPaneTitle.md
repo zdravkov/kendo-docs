@@ -187,3 +187,4 @@ If set to true the chart will display the pane title. By default the pane title 
     $title->visible(true);
     ?>
 
+ 

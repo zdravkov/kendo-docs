@@ -71,3 +71,4 @@ Most Kendo UI Widgets work and auto-resize when used in responsive web pages out
           kendo.resize($(".chart-wrapper"));
         });
     </script>
+ 

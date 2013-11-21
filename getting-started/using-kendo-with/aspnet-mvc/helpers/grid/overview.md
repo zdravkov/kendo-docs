@@ -183,3 +183,4 @@ You can subscribe to all [events](/api/web/grid#events) exposed by the widget:
 1. [Ajax Binding](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/ajax-binding)
 1. [Server Binding](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/server-binding)
 1. [Troubleshooting](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/troubleshooting)
+ 

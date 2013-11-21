@@ -40,3 +40,4 @@ The width of the border.
     <kendo:barcode-border width="width">
     </kendo:barcode-border>
 
+ 

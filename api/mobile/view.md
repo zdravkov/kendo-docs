@@ -348,3 +348,4 @@ The View mobile scroller container DOM element. Recommended if scrollable mobile
 
     new kendo.mobile.Application();
     </script>
+ 

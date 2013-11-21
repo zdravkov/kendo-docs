@@ -31,3 +31,4 @@ Each genre is rendered into the ListView from the `genre-list-template` template
 
 Each genre is an anchor tag that will navigate to the `albums-view` and demonstrates some parameter passing.
 In this case we are passing `field` `operator` and `value` parameters to the albums-view that will later be used as a DataSource filter to narrow the results to only this genre.
+ 

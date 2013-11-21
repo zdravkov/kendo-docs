@@ -48,3 +48,4 @@ Specifies the function which will parse the field value. If not set default pars
     $name->parse(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+ 

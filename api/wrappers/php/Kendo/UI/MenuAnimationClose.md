@@ -48,3 +48,4 @@ Effect to be used for closing of the popup.
     $close->effects('value');
     ?>
 
+ 

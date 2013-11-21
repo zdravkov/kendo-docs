@@ -120,3 +120,4 @@ The width of the lines.
     $majorGridLines->width(1);
     ?>
 
+ 

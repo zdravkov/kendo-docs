@@ -77,3 +77,4 @@ If the `textarea` has width and height applied via external CSS styles, a simila
 
 Textarea `cols` and `rows` attributes are required and they also can incluence the dimensions of a `textarea` element, however, these attributes are not applied in a consistent manner by browsers,
 so the Editor ignores them when determining its size.
+ 

@@ -48,3 +48,4 @@ The top margin of the chart legend.
     <kendo:chart-legend-margin top="top">
     </kendo:chart-legend-margin>
 
+ 

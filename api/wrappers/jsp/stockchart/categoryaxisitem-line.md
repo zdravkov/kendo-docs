@@ -49,3 +49,4 @@ not the grid lines.
     <kendo:stockChart-categoryAxisItem-line width="width">
     </kendo:stockChart-categoryAxisItem-line>
 
+ 

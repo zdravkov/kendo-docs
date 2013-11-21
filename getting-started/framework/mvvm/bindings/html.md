@@ -55,3 +55,4 @@ To display any HTML tags contained in the View-Model value use the [text](text) 
 
 The `html` binding relies on the `innerHTML` DOM element property. The latter is not fully supported in older versions of Internet Explorer for all
 DOM elements. For example setting the `innerHTML` of a `table` is not supported.
+ 

@@ -163,3 +163,4 @@ can use the API to control its behavior.
 ### Accessing an existing ComboBox instance
 
     var comboBox = $("#comboBox").data("kendoComboBox");
+ 

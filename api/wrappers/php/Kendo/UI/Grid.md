@@ -1233,3 +1233,4 @@ Adds one or more GridToolbarItem to the Grid.
     $grid->addToolbarItem($first, $second);
     ?>
 
+ 

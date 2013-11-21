@@ -50,3 +50,4 @@ The supported effects are "expandVertical" and "fadeIn".
     $expand->effects('value');
     ?>
 
+ 

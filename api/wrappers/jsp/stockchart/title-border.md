@@ -40,3 +40,4 @@ The width of the border.
     <kendo:stockChart-title-border width="width">
     </kendo:stockChart-title-border>
 
+ 

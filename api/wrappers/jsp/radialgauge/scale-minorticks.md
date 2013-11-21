@@ -50,3 +50,4 @@ The width of the minor ticks.
     <kendo:radialGauge-scale-minorTicks width="width">
     </kendo:radialGauge-scale-minorTicks>
 
+ 

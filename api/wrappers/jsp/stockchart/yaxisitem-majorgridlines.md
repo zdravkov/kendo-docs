@@ -41,3 +41,4 @@ The width of the lines.
     <kendo:stockChart-yAxisItem-majorGridLines width="width">
     </kendo:stockChart-yAxisItem-majorGridLines>
 
+ 

@@ -56,3 +56,4 @@ The text similar to "On " displayed in the scheduler recurrence editor.
     <kendo:scheduler-messages-recurrenceEditor-end on="on">
     </kendo:scheduler-messages-recurrenceEditor-end>
 
+ 

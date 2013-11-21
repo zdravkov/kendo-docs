@@ -40,3 +40,4 @@ The width of the connector line.
     <kendo:chart-seriesItem-connectors width="width">
     </kendo:chart-seriesItem-connectors>
 
+ 

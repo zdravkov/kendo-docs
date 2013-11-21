@@ -67,3 +67,4 @@ More documentation is available at [kendo:stockChart-valueAxisItem-notes-dataIte
         <kendo:stockChart-valueAxisItem-notes-dataItem-icon-border></kendo:stockChart-valueAxisItem-notes-dataItem-icon-border>
     </kendo:stockChart-valueAxisItem-notes-dataItem-icon>
 
+ 

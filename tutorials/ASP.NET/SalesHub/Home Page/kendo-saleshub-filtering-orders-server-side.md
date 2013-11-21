@@ -206,4 +206,4 @@ to it.
 The filter that we add to the DataSource says that we want the DataSource to only have items
 which have a `CustomerId` equal to the customerId that we got as a parameter to the function.
 Adding this filter causes the DataSource to send a request to the server asking for only Orders
-that belong to the specified Customer.
+that belong to the specified Customer. 

@@ -38,3 +38,4 @@ The browser must support SVG. The following mobile browsers are supported:
 1.  iOS Safari 3.2 and up
 2.  Opera Mobile 10.0 and up
 3.  Android 3.0 and up
+ 

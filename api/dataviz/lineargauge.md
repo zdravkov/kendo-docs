@@ -645,3 +645,4 @@ Change the value of the gauge.
 #### Example
 
     $("#linear-gauge").data("kendoLinearGauge").value(20);
+ 

@@ -70,3 +70,4 @@ The animation that will be used when a Window opens.
     $animation->open(array('duration' => $duration));
     ?>
 
+ 

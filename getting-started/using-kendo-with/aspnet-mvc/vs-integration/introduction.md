@@ -44,3 +44,4 @@ These are available in the language specific nodes of the dialog as well:
 -   The Add New Project dialog contains Kendo UI for ASP.NET MVC Web Application under both CSharp\Web and Visual Basic\Web nodes.
 
 
+ 

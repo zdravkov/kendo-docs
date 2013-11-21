@@ -64,3 +64,4 @@ The width of the major ticks in pixels.
     <kendo:sparkline-valueAxisItem-majorTicks width="width">
     </kendo:sparkline-valueAxisItem-majorTicks>
 
+ 

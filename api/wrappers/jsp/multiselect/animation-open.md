@@ -32,3 +32,4 @@ The effect(s) to use when playing the open animation. Multiple effects should be
     <kendo:multiSelect-animation-open effects="effects">
     </kendo:multiSelect-animation-open>
 
+ 

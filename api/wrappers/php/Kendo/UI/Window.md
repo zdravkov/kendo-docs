@@ -763,3 +763,4 @@ Specifies width of the window.
     $window->width('value');
     ?>
 
+ 

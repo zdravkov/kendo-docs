@@ -76,3 +76,4 @@ You can subscribe to all calendar [events](/api/web/calendar#events).
 
     echo $calendar->render();
     ?>
+ 

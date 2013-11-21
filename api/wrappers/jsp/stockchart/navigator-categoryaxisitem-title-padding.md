@@ -48,3 +48,4 @@ The top padding of the title.
     <kendo:stockChart-navigator-categoryAxisItem-title-padding top="top">
     </kendo:stockChart-navigator-categoryAxisItem-title-padding>
 
+ 

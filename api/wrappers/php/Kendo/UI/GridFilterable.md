@@ -88,3 +88,4 @@ The text of the filter operators displayed in the filter menu.
     $filterable->operators(array('string' => $string));
     ?>
 
+ 

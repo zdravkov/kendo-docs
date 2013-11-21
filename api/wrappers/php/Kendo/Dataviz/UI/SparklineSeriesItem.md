@@ -758,3 +758,4 @@ The line width.** Available for line series **
     $seriesItem->width(1);
     ?>
 
+ 

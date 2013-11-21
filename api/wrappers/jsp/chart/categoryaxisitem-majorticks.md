@@ -64,3 +64,4 @@ The width of the major ticks in pixels.
     <kendo:chart-categoryAxisItem-majorTicks width="width">
     </kendo:chart-categoryAxisItem-majorTicks>
 
+ 

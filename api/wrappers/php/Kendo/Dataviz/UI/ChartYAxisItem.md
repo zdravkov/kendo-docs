@@ -561,3 +561,4 @@ If set to true the chart will display the y axis. By default the y axis is visib
     $yAxisItem->visible(true);
     ?>
 
+ 

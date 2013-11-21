@@ -40,3 +40,4 @@ The width of the line.
     <kendo:chart-seriesItem-highlight-line width="width">
     </kendo:chart-seriesItem-highlight-line>
 
+ 

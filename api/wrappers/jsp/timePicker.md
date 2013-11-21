@@ -196,3 +196,4 @@ For additional information check the [open](/api/web/timepicker#events-open) eve
         </kendo:timePicker-open>
     </kendo:timePicker>
 
+ 

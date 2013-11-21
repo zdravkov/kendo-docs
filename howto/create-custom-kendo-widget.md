@@ -493,3 +493,4 @@ Notice that the widget is now bound to the **dataSource** variable inside of the
 Here is the complete example.  Notice that when you add an item to the DataSource, it is immediately reflected in the Repeater widget.
 
 <iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/burkeholland/5FYhx/embedded/result,js,html,css" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+ 

@@ -170,3 +170,4 @@ For additional information check the [complete](/api/web/progressbar#events-comp
         </kendo:progressBar-complete>
     </kendo:progressBar>
 
+ 

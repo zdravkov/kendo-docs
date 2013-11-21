@@ -34,3 +34,4 @@ Kendo exposes methods which converts the specified string to a [Number](https://
 
     //assumes that current culture defines decimal separator as ",", group separator as "." and currency symbol as "€"
     kendo.parseFloat("1.212,22 €"); //1212.22
+ 

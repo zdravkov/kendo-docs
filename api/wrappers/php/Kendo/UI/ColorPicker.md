@@ -372,3 +372,4 @@ Note that when initializing the widget from an <input> element, the initial colo
     $colorPicker->value('value');
     ?>
 
+ 

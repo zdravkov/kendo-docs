@@ -301,3 +301,4 @@ Triggered after the pane displays a view.
 ##### e.view `kendo.mobile.ui.View`
 
 The displayed view
+ 

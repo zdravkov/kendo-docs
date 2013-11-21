@@ -57,3 +57,4 @@ The width of the lines.
     <kendo:stockChart-valueAxisItem-majorGridLines width="width">
     </kendo:stockChart-valueAxisItem-majorGridLines>
 
+ 

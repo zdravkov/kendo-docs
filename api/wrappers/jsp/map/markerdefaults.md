@@ -40,3 +40,4 @@ The default marker size in pixels.
     <kendo:map-markerDefaults size="size">
     </kendo:map-markerDefaults>
 
+ 

@@ -150,3 +150,4 @@ Invoked by the Kendo UI MVVM framework when the bound view model value is change
     });
     kendo.bind(document.body, viewModel);
     </script>
+ 

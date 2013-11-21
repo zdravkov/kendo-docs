@@ -66,3 +66,4 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-notes-icon-
         <kendo:sparkline-categoryAxisItem-notes-icon-border></kendo:sparkline-categoryAxisItem-notes-icon-border>
     </kendo:sparkline-categoryAxisItem-notes-icon>
 
+ 

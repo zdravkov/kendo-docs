@@ -367,3 +367,4 @@ In order to use Kendo UI Mobile in ASP.NET WebForms project you should:
     </style>
 
 > Note that KendoUI Mobile application is a type of [single page application](http://en.wikipedia.org/wiki/Single-page_application). This type of web applications fit on a single page with the goal of providing a more fluid user experience and native-like responsiveness. Forms post-backs which cause page reloading are in conflict with that approach. That said forms post-backs that the .NET framework makes automatically should be avoided - in the mobile application all the dynamic content should be sent or retrieved via Ajax requests.
+ 

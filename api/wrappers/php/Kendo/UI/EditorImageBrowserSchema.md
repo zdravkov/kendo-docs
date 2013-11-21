@@ -12,3 +12,4 @@ A PHP class representing the schema setting of EditorImageBrowser.
 
 ## Methods
 
+ 

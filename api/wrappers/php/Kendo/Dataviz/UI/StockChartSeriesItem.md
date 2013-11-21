@@ -788,3 +788,4 @@ The line width.** Applicable for area and line series. **
     $seriesItem->width(1);
     ?>
 
+ 

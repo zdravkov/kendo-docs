@@ -24,3 +24,4 @@ The chart series gradient.The supported values are:
     <kendo:chart-seriesItem-overlay gradient="gradient">
     </kendo:chart-seriesItem-overlay>
 
+ 

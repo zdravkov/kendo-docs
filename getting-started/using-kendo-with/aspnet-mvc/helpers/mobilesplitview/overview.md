@@ -191,3 +191,4 @@ You can subscribe to all [events](/api/mobile/splitview#events) exposed by the w
         //Handle the init event
     }
     </script>
+ 

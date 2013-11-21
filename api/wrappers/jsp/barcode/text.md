@@ -55,3 +55,4 @@ More documentation is available at [kendo:barcode-text-margin](barcode/text-marg
         <kendo:barcode-text-margin></kendo:barcode-text-margin>
     </kendo:barcode-text>
 
+ 

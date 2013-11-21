@@ -529,3 +529,4 @@ The start of working week (index based).
     $view->workWeekStart(1);
     ?>
 
+ 

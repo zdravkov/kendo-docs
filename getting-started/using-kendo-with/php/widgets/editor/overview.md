@@ -85,3 +85,4 @@ You can subscribe to all editor [events](/api/web/editor#events).
 
     echo $editor->render();
     ?>
+ 

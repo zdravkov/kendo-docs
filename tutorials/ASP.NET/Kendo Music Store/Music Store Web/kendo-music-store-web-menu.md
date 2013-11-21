@@ -94,4 +94,4 @@ For example, let's add this content for out "About" menu item:
 
 This creates the **&lt;div&gt;** content displayed in a drop-down menu item:
 
-![kendo-menu-pulldown-content](images/kendo-menu-pulldown-content.png)
+![kendo-menu-pulldown-content](images/kendo-menu-pulldown-content.png) 

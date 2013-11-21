@@ -737,3 +737,4 @@ For additional information check the [selectEnd](/api/web/stockchart#events-sele
         </kendo:stockChart-selectEnd>
     </kendo:stockChart>
 
+ 

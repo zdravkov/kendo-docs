@@ -243,3 +243,4 @@ If set to true the chart will display the value axis title. By default the value
     $title->visible(true);
     ?>
 
+ 

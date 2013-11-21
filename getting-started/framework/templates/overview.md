@@ -195,3 +195,4 @@ Example:
 
 > Why doesn't Kendo UI provide helper syntax for things like loops? Other templating libraries include shorthand like {{ each }}. Kendo UI opts to use normal JavaScript instead of custom syntax sugar because it's much faster and it's easy for anyone familiar with JavaScript to use. If you know JavaScript, you know Kendo UI templates!
 
+ 

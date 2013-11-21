@@ -105,3 +105,4 @@ Fires when the mobile SplitView becomes visible.
 ##### e.view `jQuery`
 
 The mobile SplitView instance
+ 

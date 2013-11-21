@@ -144,3 +144,4 @@ For best performance:
 
 * 'Disable script debugging' in the browser's config options must be checked
 * Caching on Internet Explorer must be activated
+ 

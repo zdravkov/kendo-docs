@@ -640,4 +640,4 @@ Framework and Widgets for Mobile Applications
 1. jquery.js
 1. kendo.core.js
 1. kendo.userevents.js
-1. kendo.touch.js
+1. kendo.touch.js 

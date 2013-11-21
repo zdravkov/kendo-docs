@@ -1662,3 +1662,4 @@ The focused node
     var treeview = $("#treeview").data("kendoTreeView");
     treeview.bind("navigate", tree_navigate);
     </script>
+ 

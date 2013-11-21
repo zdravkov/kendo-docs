@@ -79,3 +79,4 @@ For example:
 Specifying "scatter" instead of "scatterLine" will remove the connecting lines
 
 ![Scatter Chart](chart-scatter.png)
+ 

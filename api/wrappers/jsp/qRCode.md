@@ -82,3 +82,4 @@ More documentation is available at [kendo:qRCode-border](qrcode/border).
         <kendo:qRCode-border></kendo:qRCode-border>
     </kendo:qRCode>
 
+ 

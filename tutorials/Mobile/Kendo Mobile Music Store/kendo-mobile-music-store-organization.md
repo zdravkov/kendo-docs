@@ -74,3 +74,4 @@ This is not neccecary for most projects but allowed the Mobile Music Store to be
 
 To keep propper separation of concerns, the code used to set up the Kendo DataSources was separated from the view code.
 In this case, all DataSources are contained in `scripts/data.js`.
+ 

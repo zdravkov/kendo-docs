@@ -305,3 +305,4 @@ For additional information check the [resize](/api/web/splitter#events-resize) e
     $splitter->resize(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+ 

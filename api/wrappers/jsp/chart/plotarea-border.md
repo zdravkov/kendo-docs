@@ -40,3 +40,4 @@ The width of the border in pixels. By default the border width is set to zero wh
     <kendo:chart-plotArea-border width="width">
     </kendo:chart-plotArea-border>
 
+ 

@@ -40,3 +40,4 @@ The width of the border in pixels. By default the border width is set to zero wh
     <kendo:chart-yAxisItem-notes-dataItem-label-border width="width">
     </kendo:chart-yAxisItem-notes-dataItem-label-border>
 
+ 

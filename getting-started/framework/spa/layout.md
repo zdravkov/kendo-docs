@@ -43,3 +43,4 @@ When a view is rendered in a location already used for the rendering of a view, 
         layout.showIn("#content", foo);
         layout.showIn("#content", bar);
     </script>
+ 

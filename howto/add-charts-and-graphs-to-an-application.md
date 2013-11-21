@@ -121,4 +121,4 @@ The next step is to declare a target element for a chart. This will be represent
 
 Here's how the page looks in the browser:
 
-![Area Chart](images/area-chart-example.png)
+![Area Chart](images/area-chart-example.png) 

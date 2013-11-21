@@ -91,3 +91,4 @@ its behavior.
 ### Accessing an existing DatePicker instance
 
     var datePicker = $("#datePicker").data("kendoDatePicker");
+ 

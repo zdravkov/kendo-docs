@@ -665,3 +665,4 @@ For additional information check the [zoomStart](/api/web/map#events-zoomStart) 
     $map->zoomStart(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+ 

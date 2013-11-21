@@ -115,3 +115,4 @@ More documentation is available at [kendo:stockChart-navigator-pane-title](stock
         <kendo:stockChart-navigator-pane-title></kendo:stockChart-navigator-pane-title>
     </kendo:stockChart-navigator-pane>
 
+ 
