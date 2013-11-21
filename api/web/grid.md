@@ -345,7 +345,9 @@ The function context (available via the `this` keyword) will be set to the grid 
 
 Provides a way to specify a custom editing UI for the column. Use the `container` parameter to create the editing UI.
 
-> The editing UI should contain an element whose `name` HTML attribute is set as the column [field](#configuration-columns.field).
+> The editing UI should contain an element whose `name` HTML attribute is set as the column [field](#configuration-columns.field). 
+
+> Validation settings defined in the `model.fields` configuration will **not** be applied automatically. In order the validation to work, **the developer is responsible for attaching the corresponding validation attributes to the editor input**. In case the custom editor is a widget, the developer should [customize the validation warning tooltip position](http://docs.kendoui.com/getting-started/framework/validator/overview#customizing-the-tooltip-position) in order to avoid visual issues.
 
 #### Parameters
 
@@ -397,6 +399,42 @@ Array of values specified via the [values](#configuration-columns.values) option
       } ],
       editable: true,
       dataSource: [ { name: "Jane Doe" }, { name: "John Doe" } ]
+    });
+    </script>
+
+#### Example - create a custom column editor with validation
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [ {
+        field: "num",
+        editor: function(container, options) {
+         //create input element and add the validation attribute
+         var input = $('<input name="' + options.field + '" required="required" />');
+         //append the editor
+         input.appendTo(container);
+         //enhance the input into NumericTextBox
+         input.kendoNumericTextBox();
+
+         //create tooltipElement element, NOTE: data-for attribute should match editor's name attribute
+         var tooltipElement = $('<span class="k-invalid-msg" data-for="' + options.field + '"></span>');
+         //append the tooltip element
+         tooltipElement.appendTo(container);
+       }
+      } ],
+      editable: true,
+      scrollable: false,
+      dataSource: {
+        data: [ { num: 1 }, { num: 2 } ],
+        schema: {
+          model: {
+            fields: {
+              num: { type: "number", validation: { required: true } }
+            }
+          }
+        }
+      }
     });
     </script>
 
