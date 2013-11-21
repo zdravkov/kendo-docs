@@ -18,7 +18,7 @@ The default configuration for tile layers.
 
 ### attribution `java.lang.String`
 
-The attribution for all tile layers.
+The attribution of all tile layers.
 
 #### Example
     <kendo:map-layerDefaults-tile attribution="attribution">
@@ -34,7 +34,7 @@ The the opacity of all tile layers.
 
 ### subdomains `java.lang.Object`
 
-The subdomains for the all tile layers.
+The subdomain of all tile layers.
 
 #### Example
     <kendo:map-layerDefaults-tile subdomains="subdomains">

@@ -16,27 +16,27 @@ The default options for all markers.
 
 ## Configuration Attributes
 
-### color `java.lang.String`
-
-The default marker color. Accepts a valid CSS color string, including hex and rgb.
-
-#### Example
-    <kendo:map-markerDefaults color="color">
-    </kendo:map-markerDefaults>
-
 ### shape `java.lang.String`
 
-The default marker shape. Supported shapes:
+The default marker shape. The following pre-defined marker shapes are available:Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
+For example "pinTarget" is rendered as "k-marker-pin-target".
 
 #### Example
     <kendo:map-markerDefaults shape="shape">
     </kendo:map-markerDefaults>
 
-### size `float`
 
-The default marker size in pixels.
+##  Configuration JSP Tags
+
+### kendo:map-markerDefaults-tooltip
+
+Default Kendo UI Tooltip options for this marker.
+
+More documentation is available at [kendo:map-markerDefaults-tooltip](map/markerdefaults-tooltip).
 
 #### Example
-    <kendo:map-markerDefaults size="size">
+
+    <kendo:map-markerDefaults>
+        <kendo:map-markerDefaults-tooltip></kendo:map-markerDefaults-tooltip>
     </kendo:map-markerDefaults>
 

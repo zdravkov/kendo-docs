@@ -33,11 +33,3 @@ A whitespace-delimited string of animation effects that are used when an item is
     <kendo:panelBar-animation-expand effects="effects">
     </kendo:panelBar-animation-expand>
 
-### show `boolean`
-
-
-
-#### Example
-    <kendo:panelBar-animation-expand show="show">
-    </kendo:panelBar-animation-expand>
-

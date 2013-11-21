@@ -12,27 +12,8 @@ A PHP class representing the marker setting of MapMarkers.
 
 ## Methods
 
-### color
-The marker color. Accepts a valid CSS color string, including hex and rgb.
-
-#### Returns
-`\Kendo\Dataviz\UI\MapMarker`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $marker = new \Kendo\Dataviz\UI\MapMarker();
-    $marker->color('value');
-    ?>
-
-### position
-The marker position. Coordinates are listed as [Latitude, Longitude].
-You can also use a kendo.dataviz.map.Location instance.
+### location
+The marker location on the map. Coordinates are listed as [Latitude, Longitude].
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarker`
@@ -46,7 +27,7 @@ You can also use a kendo.dataviz.map.Location instance.
 #### Example 
     <?php
     $marker = new \Kendo\Dataviz\UI\MapMarker();
-    $marker->position(new array());
+    $marker->location(new array());
     ?>
 
 ### shape
@@ -67,21 +48,32 @@ The marker shape. Supported shapes are "pin" and "circle".
     $marker->shape('value');
     ?>
 
-### size
-The marker size in pixels.
+### tooltip
+
+Kendo UI Tooltip options for this marker.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarker`
 
 #### Parameters
 
-##### $value `float`
+##### $value `\Kendo\Dataviz\UI\MapMarkerTooltip|array`
 
 
-
-#### Example 
+#### Example - using [\Kendo\Dataviz\UI\MapMarkerTooltip](/api/wrappers/php/Kendo/Dataviz/UI/MapMarkerTooltip)
     <?php
     $marker = new \Kendo\Dataviz\UI\MapMarker();
-    $marker->size(1);
+    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $autoHide = true;
+    $tooltip->autoHide($autoHide);
+    $marker->tooltip($tooltip);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $marker = new \Kendo\Dataviz\UI\MapMarker();
+    $autoHide = true;
+    $marker->tooltip(array('autoHide' => $autoHide));
     ?>
 

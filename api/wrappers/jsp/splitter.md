@@ -102,7 +102,7 @@ For additional information check the [expand](/api/web/splitter#events-expand) e
 
 ### layoutChange `String`
 
-Fires when the splitter layout has changed
+This event is now obsolete and will be removed in the future. Please use the resize event instead.Fires when the splitter layout has changed
 
 
 For additional information check the [layoutChange](/api/web/splitter#events-layoutChange) event documentation.
@@ -208,7 +208,7 @@ For additional information check the [expand](/api/web/splitter#events-expand) e
 
 ### kendo:splitter-layoutChange
 
-Fires when the splitter layout has changed
+This event is now obsolete and will be removed in the future. Please use the resize event instead.Fires when the splitter layout has changed
 
 
 For additional information check the [layoutChange](/api/web/splitter#events-layoutChange) event documentation.

@@ -171,7 +171,7 @@ The text that is displayed in the column header cell. If not set the field is us
 
 ### width `java.lang.Object`
 
-The width of the column. Numeric values are treated as pixels. Also refer to Column Widths.
+The width of the column. Numeric values are treated as pixels. For more important information, please refer to Column Widths.
 
 #### Example
     <kendo:grid-column width="width">

@@ -13,7 +13,7 @@ A PHP class representing the open setting of MenuAnimation.
 ## Methods
 
 ### duration
-Defines the animation duration.
+Defines the animation duration in milliseconds.
 
 #### Returns
 `\Kendo\UI\MenuAnimationOpen`

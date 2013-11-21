@@ -49,21 +49,3 @@ A whitespace-delimited string of animation effects that are used when an item is
     $expand->effects('value');
     ?>
 
-### show
-
-
-#### Returns
-`\Kendo\UI\PanelBarAnimationExpand`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $expand = new \Kendo\UI\PanelBarAnimationExpand();
-    $expand->show(true);
-    ?>
-

@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:map-markers\>
 
-The initial markers to display on the map.
+Static markers to display on the map.
 
 #### Example
     <kendo:map>
@@ -21,7 +21,7 @@ The initial markers to display on the map.
 
 ### kendo:map-marker
 
-The initial markers to display on the map.
+Static markers to display on the map.
 
 More documentation is available at [kendo:map-marker](map/marker).
 

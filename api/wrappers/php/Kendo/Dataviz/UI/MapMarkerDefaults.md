@@ -12,26 +12,9 @@ A PHP class representing the markerDefaults setting of Map.
 
 ## Methods
 
-### color
-The default marker color. Accepts a valid CSS color string, including hex and rgb.
-
-#### Returns
-`\Kendo\Dataviz\UI\MapMarkerDefaults`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $markerDefaults = new \Kendo\Dataviz\UI\MapMarkerDefaults();
-    $markerDefaults->color('value');
-    ?>
-
 ### shape
-The default marker shape. Supported shapes:
+The default marker shape. The following pre-defined marker shapes are available:Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
+For example "pinTarget" is rendered as "k-marker-pin-target".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarkerDefaults`
@@ -48,21 +31,32 @@ The default marker shape. Supported shapes:
     $markerDefaults->shape('value');
     ?>
 
-### size
-The default marker size in pixels.
+### tooltip
+
+Default Kendo UI Tooltip options for this marker.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarkerDefaults`
 
 #### Parameters
 
-##### $value `float`
+##### $value `\Kendo\Dataviz\UI\MapMarkerDefaultsTooltip|array`
 
 
-
-#### Example 
+#### Example - using [\Kendo\Dataviz\UI\MapMarkerDefaultsTooltip](/api/wrappers/php/Kendo/Dataviz/UI/MapMarkerDefaultsTooltip)
     <?php
     $markerDefaults = new \Kendo\Dataviz\UI\MapMarkerDefaults();
-    $markerDefaults->size(1);
+    $tooltip = new \Kendo\Dataviz\UI\MapMarkerDefaultsTooltip();
+    $autoHide = true;
+    $tooltip->autoHide($autoHide);
+    $markerDefaults->tooltip($tooltip);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $markerDefaults = new \Kendo\Dataviz\UI\MapMarkerDefaults();
+    $autoHide = true;
+    $markerDefaults->tooltip(array('autoHide' => $autoHide));
     ?>
 
