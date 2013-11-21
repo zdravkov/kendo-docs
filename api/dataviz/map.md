@@ -2358,6 +2358,23 @@ The maximum zoom level.
 
 The size of the map in pixels at zoom level 0.
 
+### wraparound `Boolean` *(default: true)*
+
+Specifies whether the map should wrap around the east-west edges.
+
+#### Example - disable map wrap-around
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            wraparound: false
+        });
+    </script>
+
 ### zoom `Number` *(default: 3)*
 
 The initial zoom level.
