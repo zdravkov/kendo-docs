@@ -7,12 +7,10 @@ publish: true
 ---
 
 # Kendo UI Complete for ASP.NET MVC
-
 **Kendo UI Complete for ASP.NET MVC** is a set of server-side wrappers that allow using the Kendo UI widgets from C# or VB.NET code.
 This article shows how to download **Kendo UI Complete for ASP.NET MVC**, install it and then run the sample ASP.NET MVC application.
 
 ## Requirements
-
 Kendo UI Complete for ASP.NET MVC requires ASP.NET MVC. It supports ASP.NET MVC  3, 4, and 5.
 
 The sample application requires:
