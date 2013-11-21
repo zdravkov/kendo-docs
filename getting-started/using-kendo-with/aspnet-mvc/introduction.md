@@ -1,5 +1,5 @@
 ---
-title: Introduction to Kendo UI Complete for ASP.NET MVC
+title: Introduction
 meta_title: Introduction to Kendo UI Complete for ASP.NET MVC
 meta_description: How to download, install Kendo UI Complete for ASP.NET MVC and run the sample application.
 slug: mvc-introduction

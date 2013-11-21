@@ -1,5 +1,5 @@
 ---
-title: Kendo UI in ASP.NET MVC 5
+title: ASP.NET MVC 5
 meta_title: Using Kendo UI with ASP.NET MVC 5
 meta_description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 5 applications
 slug: mvc-5

@@ -1,5 +1,5 @@
 ---
-title: Kendo UI in ASP.NET MVC 3
+title: ASP.NET MVC 3
 meta_title: Using Kendo UI with ASP.NET MVC 3
 meta_description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 3 applications
 slug: mvc-3
