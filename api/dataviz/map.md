@@ -15,7 +15,6 @@ publish: true
 ### center `Array|kendo.dataviz.map.Location`
 
 The map center. Coordinates are listed as `[Latitude, Longitude]`.
-You can also use a `kendo.dataviz.map.Location` instance.
 
 #### Example - setting the map center
     <div id="map"></div>
@@ -1146,44 +1145,124 @@ The URL template for tile layers. Template variables:
 
 The default options for all markers.
 
-### markerDefaults.color `String`
+#### Example - setting default shape for all markers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markerDefaults: {
+                shape: "pin"
+            },
+            markers: [{
+                location: [42, 27]
+            }, {
+                location: [40, 20]
+            }]
+        });
+    </script>
 
-The default marker color. Accepts a valid CSS color string, including hex and rgb.
+### markerDefaults.shape `String` *(default: "pinTarget")*
 
-### markerDefaults.size `Number`
+The default marker shape. The following pre-defined marker shapes are available:
 
-The default marker size in pixels.
+* pinTarget
+* pin
 
-### markerDefaults.shape `String`
+Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
+For example "pinTarget" is rendered as "k-marker-pin-target".
 
-The default marker shape. Supported shapes:
-
-* "pin"
-* "circle"
+#### Example - setting default shape for all markers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markerDefaults: {
+                shape: "pin"
+            },
+            markers: [{
+                location: [42, 27]
+            }, {
+                location: [40, 20]
+            }]
+        });
+    </script>
 
 ### markers `Array`
 
-The initial markers to display on the map.
+Static markers to display on the map.
 
-### markers.color `String`
+#### Example - setting default shape for all markers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27]
+            }, {
+                location: [40, 20]
+            }]
+        });
+    </script>
 
-The marker color. Accepts a valid CSS color string, including hex and rgb.
+### markers.location `Array|kendo.dataviz.map.Location`
 
-### markers.position `Array`
+The marker location on the map. Coordinates are listed as `[Latitude, Longitude]`.
 
-The marker position. Coordinates are listed as `[Latitude, Longitude]`.
-You can also use a `kendo.dataviz.map.Location` instance.
+#### Example - setting marker location
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markerDefaults: {
+                shape: "pin"
+            },
+            markers: [{
+                location: [42, 27]
+            }]
+        });
+    </script>
 
-### markers.size `Number`
+### markers.shape `String` *(default: "pinTarget")*
 
-The marker size in pixels.
+The marker shape. The following pre-defined marker shapes are available:
 
-### markers.shape `String`
+* pinTarget
+* pin
 
-The marker shape. Supported shapes:
+Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
+For example "pinTarget" is rendered as "k-marker-pin-target".
 
-* "pin"
-* "circle"
+#### Example - setting marker shape
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                shape: "pin",
+                location: [42, 27]
+            }]
+        });
+    </script>
 
 ### minZoom `Number` *(default: 2)*
 
@@ -1196,24 +1275,6 @@ The maximum zoom level.
 ### minSize `Number` *(default: 256)*
 
 The size of the map in pixels at zoom level 0.
-
-### theme `String` *(default: "default")*
-
-The map theme name.
-
-The built-in themes are:
-
-* "black"
-* "blueopal"
-* "bootstrap"
-* "default"
-* "flat"
-* "highcontrast"
-* "metro"
-* "metroblack"
-* "moonlight"
-* "silver"
-* "uniform"
 
 ### zoom `Number` *(default: 3)*
 
