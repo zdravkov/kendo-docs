@@ -13,7 +13,7 @@ A PHP class representing the tile setting of MapLayerDefaults.
 ## Methods
 
 ### attribution
-The attribution for all tile layers.
+The attribution of all tile layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayerDefaultsTile`
@@ -49,7 +49,7 @@ The the opacity of all tile layers.
     ?>
 
 ### subdomains
-The subdomains for the all tile layers.
+The subdomain of all tile layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayerDefaultsTile`

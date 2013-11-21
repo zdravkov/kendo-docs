@@ -42,6 +42,14 @@ Allows custom stylesheets to be included within the editing area.
     <kendo:editor stylesheets="stylesheets">
     </kendo:editor>
 
+### tag `java.lang.String`
+
+The tag that will be rendered. Defaults to "textarea". Triggers the inline edit mode if different.
+
+#### Example
+    <kendo:editor tag="tag">
+    </kendo:editor>
+
 
 ##  Configuration JSP Tags
 

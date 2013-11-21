@@ -13,7 +13,6 @@ A JSP wrapper for Kendo UI [Map](/api/dataviz/map).
 ### center `java.lang.Object`
 
 The map center. Coordinates are listed as [Latitude, Longitude].
-You can also use a kendo.dataviz.map.Location instance.
 
 #### Example
     <kendo:map center="center">
@@ -43,12 +42,12 @@ The minimum zoom level.
     <kendo:map minZoom="minZoom">
     </kendo:map>
 
-### theme `java.lang.String`
+### wraparound `boolean`
 
-The map theme name.The built-in themes are:
+Specifies whether the map should wrap around the east-west edges.
 
 #### Example
-    <kendo:map theme="theme">
+    <kendo:map wraparound="wraparound">
     </kendo:map>
 
 ### zoom `float`
@@ -113,7 +112,7 @@ More documentation is available at [kendo:map-markerDefaults](map/markerdefaults
 
 ### kendo:map-markers
 
-The initial markers to display on the map.
+Static markers to display on the map.
 
 More documentation is available at [kendo:map-markers](map/markers).
 

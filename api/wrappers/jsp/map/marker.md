@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:map-marker\>
 
-The initial markers to display on the map.
+Static markers to display on the map.
 
 #### Example
     <kendo:map-markers>
@@ -16,21 +16,12 @@ The initial markers to display on the map.
 
 ## Configuration Attributes
 
-### color `java.lang.String`
+### location `java.lang.Object`
 
-The marker color. Accepts a valid CSS color string, including hex and rgb.
-
-#### Example
-    <kendo:map-marker color="color">
-    </kendo:map-marker>
-
-### position `java.lang.Object`
-
-The marker position. Coordinates are listed as [Latitude, Longitude].
-You can also use a kendo.dataviz.map.Location instance.
+The marker location on the map. Coordinates are listed as [Latitude, Longitude].
 
 #### Example
-    <kendo:map-marker position="position">
+    <kendo:map-marker location="location">
     </kendo:map-marker>
 
 ### shape `java.lang.String`
@@ -41,11 +32,18 @@ The marker shape. Supported shapes are "pin" and "circle".
     <kendo:map-marker shape="shape">
     </kendo:map-marker>
 
-### size `float`
 
-The marker size in pixels.
+##  Configuration JSP Tags
+
+### kendo:map-marker-tooltip
+
+Kendo UI Tooltip options for this marker.
+
+More documentation is available at [kendo:map-marker-tooltip](map/marker-tooltip).
 
 #### Example
-    <kendo:map-marker size="size">
+
+    <kendo:map-marker>
+        <kendo:map-marker-tooltip></kendo:map-marker-tooltip>
     </kendo:map-marker>
 

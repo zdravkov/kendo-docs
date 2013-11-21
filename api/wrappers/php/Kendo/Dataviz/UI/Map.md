@@ -35,7 +35,6 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 ### center
 The map center. Coordinates are listed as [Latitude, Longitude].
-You can also use a kendo.dataviz.map.Location instance.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -200,8 +199,8 @@ The default options for all markers.
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $markerDefaults = new \Kendo\Dataviz\UI\MapMarkerDefaults();
-    $color = 'value';
-    $markerDefaults->color($color);
+    $shape = 'value';
+    $markerDefaults->shape($shape);
     $map->markerDefaults($markerDefaults);
     ?>
 
@@ -209,8 +208,8 @@ The default options for all markers.
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
-    $color = 'value';
-    $map->markerDefaults(array('color' => $color));
+    $shape = 'value';
+    $map->markerDefaults(array('shape' => $shape));
     ?>
 
 ### addMarker
@@ -229,8 +228,8 @@ Adds one or more MapMarker to the Map.
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $marker = new \Kendo\Dataviz\UI\MapMarker();
-    $color = 'value';
-    $marker->color($color);
+    $shape = 'value';
+    $marker->shape($shape);
     $map->addMarker($marker);
     ?>
 
@@ -238,8 +237,8 @@ Adds one or more MapMarker to the Map.
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
-    $color = 'value';
-    $map->addMarker(array('color' => $color));
+    $shape = 'value';
+    $map->addMarker(array('shape' => $shape));
     ?>
 
 #### Example - adding more than one MapMarker
@@ -557,22 +556,22 @@ For additional information check the [shapeMouseLeave](/api/web/map#events-shape
     $map->shapeMouseLeave(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
-### theme
-The map theme name.The built-in themes are:
+### wraparound
+Specifies whether the map should wrap around the east-west edges.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
 
 #### Parameters
 
-##### $value `string`
+##### $value `boolean`
 
 
 
 #### Example 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
-    $map->theme('value');
+    $map->wraparound(true);
     ?>
 
 ### zoom

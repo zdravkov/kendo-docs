@@ -13,7 +13,7 @@ A PHP class representing the layer setting of MapLayers.
 ## Methods
 
 ### attribution
-The attribution for the layer.
+The attribution for the layer. Accepts valid HTML.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayer`
@@ -77,7 +77,7 @@ Sets the data source of the dataSource.
     ?>
 
 ### opacity
-The the opacity of all tile layers.
+The the opacity for the layer.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayer`
@@ -124,7 +124,8 @@ The default style for shapes.
     ?>
 
 ### subdomains
-The subdomains for the all tile layers.
+A list of subdomains to use for loading tiles.
+Alternating between different subdomains allows more requests to be executed in parallel.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayer`

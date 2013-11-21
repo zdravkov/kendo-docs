@@ -375,6 +375,24 @@ Allows custom stylesheets to be included within the editing area.
     $editor->stylesheets(new array());
     ?>
 
+### tag
+The tag that will be rendered. Defaults to "textarea". Triggers the inline edit mode if different.
+
+#### Returns
+`\Kendo\UI\Editor`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $editor->tag('value');
+    ?>
+
 ### addTool
 
 Adds one or more EditorTool to the Editor.

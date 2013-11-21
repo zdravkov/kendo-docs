@@ -19,7 +19,7 @@ The layer type is determined by the value of the type field.
 
 ### attribution `java.lang.String`
 
-The attribution for the layer.
+The attribution for the layer. Accepts valid HTML.
 
 #### Example
     <kendo:map-layer attribution="attribution">
@@ -36,7 +36,7 @@ data source is fired. By default the widget will bind to the data source specifi
 
 ### opacity `java.lang.String`
 
-The the opacity of all tile layers.
+The the opacity for the layer.
 
 #### Example
     <kendo:map-layer opacity="opacity">
@@ -44,7 +44,8 @@ The the opacity of all tile layers.
 
 ### subdomains `java.lang.Object`
 
-The subdomains for the all tile layers.
+A list of subdomains to use for loading tiles.
+Alternating between different subdomains allows more requests to be executed in parallel.
 
 #### Example
     <kendo:map-layer subdomains="subdomains">
