@@ -5,7 +5,6 @@ meta_description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 3 appl
 slug: mvc-3
 publish: true
 ---
-
 # Kendo UI in ASP.NET MVC 3 applications
 
 This tutorial shows how to use Kendo UI Complete for ASP.NET MVC in ASP.NET MVC 3 applications. The tutorial uses Visual Studio 2010 but will work with all Visual Studio versions that support ASP.NET MVC 3. The tutorial also creates a new ASP.NET MVC 3 application but the steps to use Kendo UI in exsiting ASP.NET MVC 3 application are the same.
