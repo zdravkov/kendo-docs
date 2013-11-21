@@ -51,7 +51,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
 3. Add a style bundle for Kendo UI.
 
-        bundles.Add(new StyleBundle("~/Content/kendo").Include(
+        bundles.Add(new StyleBundle("~/Content/kendo/css").Include(
                     "~/Content/kendo/kendo.common-bootstrap.min.css",
                     "~/Content/kendo/kendo.bootstrap.min.css"));
 
@@ -64,11 +64,11 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
     - Razor
 
-            @Styles.Render("~/Content/kendo")
+            @Styles.Render("~/Content/kendo/css")
 
     - ASPX
 
-            <%: Styles.Render("~/Content/kendo") %>
+            <%: Styles.Render("~/Content/kendo/css") %>
 
 7. Move the jQuery bundle in the **head** tag of the page. It is at the end of the page by default.
 8. Render the Kendo UI script bundle **after** jQuery.
