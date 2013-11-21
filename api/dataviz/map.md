@@ -1264,6 +1264,484 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
         });
     </script>
 
+### markers.tooltip `Object`
+
+Kendo UI Tooltip options for this marker.
+
+### markers.tooltip.autoHide `Boolean`*(default: false)*
+
+Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
+
+#### Example - hide tooltip on mouse leave
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    autoHide: true,
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.animation `Object`
+
+A collection of {Animation} objects, used to change default animations. A value of **false**
+will disable all animations in the widget.
+
+#### Example - disable animations
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    animation: false,
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.animation.close `Object`
+
+The animation that will be used when a Tooltip closes.
+
+#### Example - set close animation
+
+    <span id="target" title="Tooltip content">
+        Some Content
+    </span>
+
+    <script>
+        $(document).ready(function() {
+          $("#target").kendoTooltip({
+            animation: {
+              close: {
+                effects: "fade:out"
+              }
+            }
+          });
+        });
+    </script>
+
+### markers.tooltip.animation.close.effects `String`
+
+Effect to be used for closing of the tooltip.
+
+#### Example - set close animation effect
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    animation: {
+                        close: {
+                            effects: "fade:out"
+                        }
+                    },
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.animation.close.duration `Number`
+
+Defines the animation duration.
+
+#### Example - set close animation duration
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    animation: {
+                        close: {
+                            duration: 1000
+                        }
+                    },
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.animation.open `Object`
+
+The animation that will be used when a Tooltip opens.
+
+#### Example - set open animation
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    animation: {
+                        open: {
+                            effects: "fade:in",
+                            duration: 1000
+                        }
+                    },
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.animation.open.effects `String`
+
+Effect to be used for opening of the Tooltip.
+
+#### Example - set open animation effect
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    animation: {
+                        open: {
+                            effects: "fade:in"
+                        }
+                    },
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.animation.open.duration `Number`
+
+Defines the animation duration.
+
+#### Example - set open animation duration
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    animation: {
+                        open: {
+                            duration: "1000"
+                        }
+                    },
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.content `Object|String|Function`
+
+The text or a function which result will be shown within the tooltip.
+By default the tooltip will display the target element title attribute content.
+
+#### Example - extract the content from target marker
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    content: function(e) {
+                        var marker = e.sender.marker;
+                        return marker.options.location.toString();
+                    }
+                }
+            }]
+        });
+    </script>
+
+#### Example - content as static text
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.content.url `String`
+
+Specifies a URL or request options that the tooltip should load its content from.
+
+>Note: For URLs starting with a protocol (e.g. http://),
+a container iframe element is automatically created. This behavior may change in future
+versions, so it is advisable to always use the [iframe configuration option](#iframe).
+
+#### Example - load content from remote URL
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                      content: {
+                        url: "http://demos.kendoui.com/content/web/tooltip/ajax/ajaxContent3.html"
+                      },
+                      width: 220,
+                      height: 280
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.template `String|Template`
+
+The [template](/api/framework/kendo#methods-template) which renders the tooltip content.
+
+The fields which can be used in the template are:
+
+* location - the marker location (kendo.dataviz.map.Location instance)
+* marker - the marker instance
+
+> Setting a template disables the content option.
+
+#### Example - set tooltip template
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    template: "Lon:#= location.lng #, Lat:#= location.lat #"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.callout `Boolean`*(default:true)*
+
+Specifies if the tooltip callout will be displayed.
+
+#### Example - hide the tooltip callout
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    callout: false,
+                    template: "Lon:#= location.lng #, Lat:#= location.lat #"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.iframe `Boolean`
+
+Explicitly states whether content iframe should be created.
+
+#### Example - load content from remote URL
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                      iframe: true,
+                      content: {
+                        url: "http://demos.kendoui.com/content/web/tooltip/ajax/ajaxContent3.html"
+                      },
+                      width: 220,
+                      height: 280
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.height `Number`*(default: Infinity)*
+
+The height (in pixels) of the tooltip.
+
+#### Example - set the height of the tooltip
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    height: 80,
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.width `Number`*(default: Infinity)*
+
+The width (in pixels) of the tooltip.
+
+#### Example - set the width of the tooltip
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    width: 80,
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.position `String`*(default: "top")*
+
+The position relative to the target element, at which the tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
+
+#### Example - set tooltip position
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    position: "left",
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.showAfter `Number`*(default: 100)*
+
+Specify the delay in milliseconds before the tooltip is shown. This option is ignored if showOn is set to "click" or "focus".
+
+#### Example - set show delay
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    showOn: "mouseenter",
+                    showAfter: 1000,
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
+### markers.tooltip.showOn `String`*(default: "click")*
+
+The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
+
+#### Example - show tooltip on mouse enter
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                location: [42, 27],
+                tooltip: {
+                    showOn: "mouseenter",
+                    content: "Foo"
+                }
+            }]
+        });
+    </script>
+
 ### minZoom `Number` *(default: 2)*
 
 The minimum zoom level.
