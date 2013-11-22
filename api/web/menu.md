@@ -435,11 +435,11 @@ Appends an item to a **Menu** in the specified referenceItem's sub menu.
 
 #### Parameters
 
-##### item `Selector`
+##### item `Object|Array`
 
-Target item, specified as a JSON object. Can also handle an array of such objects.
+Item to be appended, specified as a JSON object. An array of objects can also be passed.
 
-##### referenceItem `Selector`
+##### referenceItem `String|jQuery`
 
 A reference item to append the new item in.
 
