@@ -2459,11 +2459,161 @@ The map size is derived from the zoom level and minScale options: `size = (2 ^ z
 
 ## Methods
 
+### center
+
+Gets or sets the map center.
+The setter is chainable, i.e. returns the map instance.
+
+#### Example - set the map zoom level
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            center: [32.7758, -96.7966]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.center([32.7758, -96.7966]).zoom(10);
+    </script>
+
 ### destroy
 
 Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > This method does not remove the widget element from DOM.
+
+#### Example - destroy the map and remove it from the DOM
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.destroy();
+
+        $("#map").remove();
+    </script>
+
+### extent
+
+Gets the map [extent](/api/dataviz/map/extent).
+
+#### Example - set the map zoom level
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var extent = map.extent();
+
+        alert("North West corner: " + extent.nw.toString());
+    </script>
+
+### eventToLayer
+
+Retrieves projected (layer) coordinates that correspond to this mouse event.
+Layer coordinates are absolute and change only when the zoom level is changed.
+
+### eventToLocation
+
+Retrieves map location that correspond to this mouse event.
+
+### eventToView
+
+Retrieves view (element) coordinates that correspond to this mouse event.
+View coordinates are relative and change whenever the mouse is scrolled or zoomed.
+
+### extent
+
+Gets the map [extent](/api/dataviz/map/extent).
+
+#### Example - set the map zoom level
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var extent = map.extent();
+
+        alert("North West corner: " + extent.nw.toString());
+    </script>
+
+### layerToLocation
+
+### layerToView
+
+### locationToLayer
+
+### locationToView
+
+### setOptions
+
+Resets the map and applies new options over the current state.
+
+#### Example - set map zoom & center simultaneously
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.setOptions({
+            zoom: 10,
+            center: [32.7758, -96.7966]
+        });
+    </script>
+
+### viewSize
+
+### zoom
+
+Gets or sets the map zoom level.
+The setter is chainable, i.e. returns the map instance.
+
+> The map [zoom](#configuration-zoom) is clamped to the [minZoom, maxZoom] interval.
+
+#### Example - zoom in
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            center: [32.7758, -96.7966]
+        });
+
+        var map = $("#map").data("kendoMap");
+        zoom = map.zoom();
+        map.zoom(zoom + 2);
+    </script>
 
 ## Events
 
