@@ -163,6 +163,10 @@ for more information about ASP.NET MVC Authorization. The Menu will hide the men
 [HttpUnauthorizedResult](http://msdn.microsoft.com/en-us/library/system.web.mvc.httpunauthorizedresult.aspx). If you need to use custom AuthorizeAttribute check this
 [link](https://github.com/telerik/kendo-examples-asp-net-mvc/tree/master/kendo-menu-with-custom-authorization-attribute), which shows how to achieve your goal.
 
+When Menu items are removed as a result of missing permissions, a parent item can be left without any children. For such cases the Menu provides an option to remove the "orphaned" parent items.
+
+        .SecurityTrimming(s => s.HideParent(true))
+
 ## Accessing an Existing Menu
 
 You can reference an existing Menu instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
