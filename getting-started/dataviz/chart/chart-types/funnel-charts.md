@@ -23,7 +23,7 @@ If dynamicSlope is disabled then the neckRatio option is taken into account whic
 For example if neckRatio is set to ten then the top base will be ten times smaller than the bottom base.
 The following example shows a funnel chart with neckRatio set to 10.
 
-![Funnel Chart](funnel-neckRatio.png)
+![Funnel Chart](funnel-charts-neckRatio.png)
 
 When dynamicSlope is enabled then the neckRatio is neglected and each segment creates its form based on the ratio between the current value and the next value.
 
@@ -55,4 +55,4 @@ You can see how the widths of the bases for each segment are based on the ratio 
         });
     </script>
 
-![Funnel Chart](funnel-dynamicSlope.png)
+![Funnel Chart](funnel-charts-dynamicSlope.png)
