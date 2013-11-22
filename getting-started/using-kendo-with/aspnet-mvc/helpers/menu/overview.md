@@ -165,6 +165,8 @@ for more information about ASP.NET MVC Authorization. The Menu will hide the men
 
 When Menu items are removed as a result of missing permissions, a parent item can be left without any children. For such cases the Menu provides an option to remove the "orphaned" parent items.
 
+    Html.Kendo().Menu()
+        .Name("MainMenu")
         .SecurityTrimming(s => s.HideParent(true))
 
 ## Accessing an Existing Menu
