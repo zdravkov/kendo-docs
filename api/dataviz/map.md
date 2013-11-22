@@ -69,6 +69,32 @@ Enables or disables the built-in attribution control.
         });
     </script>
 
+### controls.attribution.position `String` *(default: "bottomRight")*
+
+The position of the attribution control. Possible values include:
+
+* "topLeft"
+* "topRight"
+* "bottomRight"
+* "bottomLeft"
+
+#### Example - position the attribution control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                attribution: {
+                    position: "topRight"
+                }
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
 ### controls.navigator `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in navigator control (directional pad).
@@ -2346,13 +2372,47 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
         });
     </script>
 
-### minZoom `Number` *(default: 2)*
+### minZoom `Number` *(default: 1)*
 
 The minimum zoom level.
+Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features).
+
+> The map [zoom](#configuration-zoom) is clamped to the [minZoom, maxZoom] interval.
+
+#### Example - limit zoom out to level 3
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            minZoom: 3,
+            zoom: 5
+        });
+    </script>
 
 ### maxZoom `Number` *(default: 19)*
 
 The maximum zoom level.
+Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features).
+
+> The map [zoom](#configuration-zoom) is clamped to the [minZoom, maxZoom] interval.
+
+#### Example - limit zoom in to level 10
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            maxZoom: 10,
+            zoom: 5
+        });
+    </script>
 
 ### minSize `Number` *(default: 256)*
 
@@ -2382,6 +2442,20 @@ The initial zoom level.
 Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features).
 
 The map size is derived from the zoom level and minScale options: `size = (2 ^ zoom) * minSize`
+
+#### Example - setting initial zoom level
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            center: [32.7758, -96.7966],
+            zoom: 9
+        });
+    </script>
 
 ## Methods
 
