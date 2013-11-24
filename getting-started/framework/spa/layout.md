@@ -25,7 +25,7 @@ The Layout class inherits from the View and provides the additional functionalit
 
 As the layout itself is a view, a layout instance can also be passed to the `showIn` method, allowing multiple nesting of layouts.
 
-When a view is rendered in a location already used for the rendering of a view, the previous view is hidden (its element is detached from the DOM), and the previous view `hide` event is hidden.
+When a view is rendered in a location already used for the rendering of a view, the previous view is hidden (its element is detached from the DOM), and the previous view `hide` event is triggered.
 
 
 ## Layout Switching Views
