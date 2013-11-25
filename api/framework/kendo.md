@@ -702,7 +702,7 @@ Returns the JavaScript prefix of the current browser proprietary transition prop
 Returns the transition end event name in the current browser. E.g. "webkitTransitionEnd", "transitionend", "oTransitionEnd"
 
 ### support.mobileOS `Object`
-Returns a number of properties that identify the current mobile browser. Parses navigator.userAgent to do it. Undefined on desktop.
+Returns a number of properties that identify the current mobile browser. Parses navigator.userAgent to do it. False on desktop.
 
 #### support.mobileOS
 ##### device `String`
