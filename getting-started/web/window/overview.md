@@ -72,10 +72,9 @@ in the title of a **Window**. The maximize action serves both as a button for ex
 **Window** to fill the screen and as a button to restore a **Window** to its previous
 size. The minimize action collapses a **Window** to its title.
 
-
-If a non-recognized action name is supplied, it is treated as a custom action - **k-icon** and **k-i-actionname**
-CSS classes are rendered for it and no click event handler is attached automatically. The Kendo stylesheets have a supplied icon for
-actions with the name "Custom", but any name can be used. Click events can be captured and handled in a standard way:
+If a non-recognized action name is supplied, it is treated as a custom action and the following CSS classes are rendered for it - **k-icon** and **k-i-actionname** (all letters lowercase).
+No click event handler is attached automatically either. The Kendo stylesheets have a supplied icon for actions with the name "custom", but any name can be used.
+Click events can be captured and handled in a standard way:
 
 ### Custom actions
 
