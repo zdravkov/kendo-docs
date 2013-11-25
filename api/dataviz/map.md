@@ -1599,7 +1599,7 @@ The [template](/api/framework/kendo#methods-template) which renders the tooltip 
 
 The fields which can be used in the template are:
 
-* location - the marker location (kendo.dataviz.map.Location instance)
+* location - the marker location (`kendo.dataviz.map.Location` instance)
 * marker - the marker instance
 
 > Setting a template disables the content option.
@@ -2183,7 +2183,7 @@ The [template](/api/framework/kendo#methods-template) which renders the tooltip 
 
 The fields which can be used in the template are:
 
-* location - the marker location (kendo.dataviz.map.Location instance)
+* location - the marker location (`kendo.dataviz.map.Location` instance)
 * marker - the marker instance
 
 > Setting a template disables the content option.
@@ -2813,40 +2813,445 @@ The setter is chainable, i.e. returns the map instance.
 
 Fired when the user clicks on the map.
 
+Event fields include:
+* location - `kendo.dataviz.map.Location` instance that corresponds to the click point
+* originalEvent - the jQuery event instance
+
+#### Example - place marker on clicked location
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            click: function(e) {
+                e.sender.markers.add({
+                    location: e.location,
+                    tooltip: {
+                        content: "Foo"
+                    }
+                });
+            }
+        });
+    </script>
+
+#### Example - subscribe to the click event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("click", function(e) {
+            console.log("You clicked at " + e.location.toString());
+        });
+    </script>
+
 ### reset
 
 Fired when the map is reset.
 This typically occurs on initial load and after a zoom/center change.
 
+#### Example - bind to the map reset event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            reset: function() {
+                console.log("map reset");
+            }
+        });
+    </script>
+
+#### Example - bind to the map reset event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("reset", function(e) {
+            console.log("map reset");
+        });
+    </script>
+
 ### pan
 
 Fired while the map viewport is being moved.
+
+Event fields include:
+* origin - `kendo.dataviz.map.Location` of the map origin (top left or NW corner)
+* originalEvent - the jQuery event instance
+* center - `kendo.dataviz.map.Location` of the current map center
+
+#### Example - bind to the map pan event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            pan: function(e) {
+                console.log("pan to " + e.center.toString());
+            }
+        });
+    </script>
+
+#### Example - bind to the map pan event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("pan", function(e) {
+            console.log("pan to " + e.center.toString());
+        });
+    </script>
 
 ### panEnd
 
 Fires after the map viewport has been moved.
 
+Event fields include:
+* origin - `kendo.dataviz.map.Location` of the map origin (top left or NW corner)
+* originalEvent - the jQuery event instance
+* center - `kendo.dataviz.map.Location` of the map center
+
+#### Example - bind to the map panEnd event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            panEnd: function(e) {
+                console.log("pan ended at " + e.center.toString());
+            }
+        });
+    </script>
+
+#### Example - bind to the map panEnd event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("panEnd", function(e) {
+            console.log("pan ended at " + e.center.toString());
+        });
+    </script>
+
 ### shapeClick
 
 Fired when a shape is clicked or tapped.
+
+Event fields include:
+* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
+* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
+* originalEvent - the jQuery event instance
+
+#### Example - bind to the map shapeClick event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            shapeClick: function() {
+                console.log("shape clicked");
+            }
+        });
+    </script>
+
+#### Example - bind to the map shapeClick event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("shapeClick", function(e) {
+            console.log("shape clicked");
+        });
+    </script>
 
 ### shapeCreated
 
 Fired when a shape is created, but is not rendered yet.
 
+Event fields include:
+* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
+* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
+* originalEvent - the jQuery event instance
+
+#### Example - bind to the map shapeCreated event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            shapeCreated: function() {
+                console.log("shape created");
+            }
+        });
+    </script>
+
+#### Example - bind to the map shapeCreated event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("shapeCreated", function(e) {
+            console.log("shape created");
+        });
+    </script>
+
 ### shapeMouseEnter
 
 Fired when the mouse enters a shape.
+
+Event fields include:
+* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
+* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
+* originalEvent - the jQuery event instance
+
+#### Example - bind to the map shapeMouseEnter event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            shapeMouseEnter: function() {
+                console.log("shape mouseenter");
+            }
+        });
+    </script>
+
+#### Example - bind to the map shapeMouseEnter event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("shapeMouseEnter", function(e) {
+            console.log("shape mouseenter");
+        });
+    </script>
 
 ### shapeMouseLeave
 
 Fired when the mouse leaves a shape.
 
+Event fields include:
+* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
+* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
+* originalEvent - the jQuery event instance
+
+#### Example - bind to the map shapeMouseLeave event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            shapeMouseLeave: function() {
+                console.log("shape mouseleave");
+            }
+        });
+    </script>
+
+#### Example - bind to the map shapeMouseLeave event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("shapeMouseLeave", function(e) {
+            console.log("shape mouseleave");
+        });
+    </script>
+
 ### zoomStart
 
 Fired when the map zoom level is about to change.
 
+Event fields include:
+* originalEvent - the jQuery event instance
+
+#### Example - bind to the map zoomStart event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            zoomStart: function() {
+                console.log("zoom start");
+            }
+        });
+    </script>
+
+#### Example - bind to the map zoomStart event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("zoomStart", function(e) {
+            console.log("zoom start");
+        });
+    </script>
+
 ### zoomEnd
 
 Fired when the map zoom level has changed.
+
+Event fields include:
+* originalEvent - the jQuery event instance
+
+#### Example - bind to the map zoomEnd event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            zoomEnd: function(e) {
+                console.log("zoom end @ " + e.sender.zoom());
+            }
+        });
+    </script>
+
+#### Example - bind to the map zoomEnd event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("zoomEnd", function(e) {
+            console.log("zoom end @ " + e.sender.zoom());
+        });
+    </script>
 
