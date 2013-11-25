@@ -214,11 +214,6 @@ The default configuration for shape layers.
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
-            controls: {
-                navigator: {
-                    position: "topRight"
-                }
-            },
             layerDefaults: {
                 shape: {
                     attribution: "&copy; Company Inc."
