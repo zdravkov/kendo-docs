@@ -283,6 +283,8 @@ Determines how many data items will be passed to the page template.
 
 The initial page to display.
 
+>If the widget is bound to a DataSource, the initial item to display must be within the records from the first data page. For example if the DataSource has `pageSize: 32` the page configuration option of the ScrollView should not exceed 30. 
+
 #### Example
 
     <div data-role="view">
