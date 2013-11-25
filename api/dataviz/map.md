@@ -2503,11 +2503,22 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
         $("#map").remove();
     </script>
 
-### extent
+### eventOffset
 
-Gets the map [extent](/api/dataviz/map/extent).
+Returns the event coordinates relative to the map element.
+Offset coordinates are not synchronized to a particular location on the map.
 
-#### Example - set the map zoom level
+#### Example - position elements over widget on click
+    <style>
+        .box {
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin: -5px 0 0 -5px;
+            background: red;
+        }
+    </style>
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -2519,9 +2530,12 @@ Gets the map [extent](/api/dataviz/map/extent).
         });
 
         var map = $("#map").data("kendoMap");
-        var extent = map.extent();
-
-        alert("North West corner: " + extent.nw.toString());
+        $("#map").click(function(e) {
+            var offset = map.eventOffset(e);
+            $("<span class='box'></span>")
+            .css({ top: offset.y, left: offset.x })
+            .appendTo(map.element);
+        });
     </script>
 
 ### eventToLayer
@@ -2529,20 +2543,93 @@ Gets the map [extent](/api/dataviz/map/extent).
 Retrieves projected (layer) coordinates that correspond to this mouse event.
 Layer coordinates are absolute and change only when the zoom level is changed.
 
+#### Example - retrieve projected coordinates
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        $("#map").click(function(e) {
+            var proj = map.eventToLayer(e);
+            console.log("Projected coordinates: ", proj.toString());
+        });
+    </script>
+
 ### eventToLocation
 
-Retrieves map location that correspond to this mouse event.
+Retrieves the geographic location that correspond to this mouse event.
+
+#### Example - place marker on clicked location
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        $("#map").click(function(e) {
+            var loc = map.eventToLocation(e);
+            map.markers.add({
+                location: loc,
+                tooltip: {
+                    content: "Foo"
+                }
+            });
+        });
+    </script>
 
 ### eventToView
 
-Retrieves view (element) coordinates that correspond to this mouse event.
-View coordinates are relative and change whenever the mouse is scrolled or zoomed.
+Retrieves relative (view) coordinates that correspond to this mouse event.
+Layer elements positioned on these coordinates will appear under the mouse cursor.
+
+View coordinates are no longer valid after a map [reset](#events-reset).
+
+#### Example - position elements over map on click
+    <style>
+        .box {
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin: -5px 0 0 -5px;
+            background: red;
+        }
+    </style>
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        $("#map").click(function(e) {
+            var view = map.eventToView(e);
+            $("<span class='box'></span>")
+            .css({ top: view.y, left: view.x })
+            .appendTo(map.scrollElement);
+        });
+    </script>
 
 ### extent
 
 Gets the map [extent](/api/dataviz/map/extent).
 
-#### Example - set the map zoom level
+#### Example - get the map extent
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -2623,7 +2710,8 @@ Fired when the user clicks on the map.
 
 ### reset
 
-Fired when the map is reset, e.g. on initial load or during zoom.
+Fired when the map is reset.
+This typically occurs on initial load and after a zoom/center change.
 
 ### pan
 
