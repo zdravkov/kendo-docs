@@ -50,7 +50,7 @@ The configuration of built-in map controls.
         });
     </script>
 
-### controls.attribution `Boolean` *(default: true)*
+### controls.attribution `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in attribution control.
 
