@@ -4326,7 +4326,7 @@ A string, DOM element or jQuery object which represents the table row. A string 
 
 #### Returns
 
-[`kendo.data.ObservableObject`](/api/framework/observableobject) - the data item to which the specified table row is bound.
+`kendo.data.ObservableObject` the data item to which the specified table row is bound. [More information about the ObservableObject type...](/api/framework/observableobject)
 
 #### Example - get the data item to which the first table row is bound
 
