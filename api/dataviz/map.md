@@ -2648,11 +2648,73 @@ Gets the map [extent](/api/dataviz/map/extent).
 
 ### layerToLocation
 
-### layerToView
+Transforms layer (projected) coordinates to geographical location.
+
+#### Example - retrieve location of NW corner
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 1,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var point = new kendo.dataviz.geometry.Point(0, 0);
+        var loc = map.layerToLocation(point).round();
+        console.log(loc.toString());
+        // -180.000000,85.000000
+    </script>
 
 ### locationToLayer
 
+Returns the layer (projected) coordinates that correspond to a geographical location.
+
+#### Example - retrieve the projected coordinates of a location
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 1,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var loc = new kendo.dataviz.map.Location(0, 0);
+        var point = map.locationToLayer(loc).round();
+        console.log(point.toString());
+        // 256,256
+    </script>
+
 ### locationToView
+
+Returns the view (relative) coordinates that correspond to a geographical location.
+
+#### Retrieves the view coordinates of the map center
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var loc = new kendo.dataviz.map.Location(0, 0);
+        var view = map.locationToView(loc).round();
+        console.log(view.toString());
+        // 512,512
+    </script>
 
 ### setOptions
 
@@ -2677,6 +2739,49 @@ Resets the map and applies new options over the current state.
     </script>
 
 ### viewSize
+
+Retrieves the size of the visible portion of the map.
+
+#### Example - retrieve view size
+    <script>
+        $("#map").kendoMap({
+            zoom: 1, // Layer size is 512px (2^1 * 256)
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var viewSize = map.viewSize();
+        console.log(viewSize);
+        // { width: 1024, height: 512 }
+    </script>
+
+### viewToLocation
+
+Returns the view (relative) coordinates that correspond to a geographical location.
+
+#### Example - retrieve location corresponding to view center
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var view = new kendo.dataviz.geometry.Point(512, 512);
+        var loc = map.viewToLocation(view).round();
+        console.log(loc.toString());
+        // 0.000000,0.000000
+    </script>
 
 ### zoom
 
