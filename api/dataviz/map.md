@@ -2945,7 +2945,7 @@ The location of the clicked point.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3055,7 +3055,7 @@ The current map center.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3113,7 +3113,7 @@ The map center.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3171,7 +3171,7 @@ The the shape instance.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3229,7 +3229,7 @@ The the shape instance.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3287,7 +3287,7 @@ The the shape instance.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3345,7 +3345,7 @@ The the shape instance.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3395,7 +3395,7 @@ Fired when the map zoom level is about to change.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
@@ -3445,7 +3445,7 @@ Fired when the map zoom level has changed.
 
 The source widget instance.
 
-##### e.originalEvent `jQuery.Event`
+##### e.originalEvent `Object`
 
 The source jQuery event instance
 
