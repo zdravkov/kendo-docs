@@ -2935,9 +2935,19 @@ The new zoom level. The value is clamped to the
 
 Fired when the user clicks on the map.
 
-Event fields include:
-* location - `kendo.dataviz.map.Location` instance that corresponds to the click point
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.location `kendo.dataviz.map.Location`
+
+The location of the clicked point.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - place marker on clicked location
     <div id="map"></div>
@@ -2985,6 +2995,12 @@ Event fields include:
 Fired when the map is reset.
 This typically occurs on initial load and after a zoom/center change.
 
+#### Event Data
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
 #### Example - bind to the map reset event on initialization
     <div id="map"></div>
     <script>
@@ -3025,10 +3041,23 @@ This typically occurs on initial load and after a zoom/center change.
 
 Fired while the map viewport is being moved.
 
-Event fields include:
-* origin - `kendo.dataviz.map.Location` of the map origin (top left or NW corner)
-* originalEvent - the jQuery event instance
-* center - `kendo.dataviz.map.Location` of the current map center
+#### Event Data
+
+##### e.origin `kendo.dataviz.map.Location`
+
+The map origin (top left or NW corner).
+
+##### e.center `kendo.dataviz.map.Location`
+
+The current map center.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map pan event on initialization
     <div id="map"></div>
@@ -3070,10 +3099,23 @@ Event fields include:
 
 Fires after the map viewport has been moved.
 
-Event fields include:
-* origin - `kendo.dataviz.map.Location` of the map origin (top left or NW corner)
-* originalEvent - the jQuery event instance
-* center - `kendo.dataviz.map.Location` of the map center
+#### Event Data
+
+##### e.origin `kendo.dataviz.map.Location`
+
+The map origin (top left or NW corner).
+
+##### e.center `kendo.dataviz.map.Location`
+
+The map center.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map panEnd event on initialization
     <div id="map"></div>
@@ -3115,10 +3157,23 @@ Event fields include:
 
 Fired when a shape is clicked or tapped.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeClick event on initialization
     <div id="map"></div>
@@ -3160,10 +3215,23 @@ Event fields include:
 
 Fired when a shape is created, but is not rendered yet.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeCreated event on initialization
     <div id="map"></div>
@@ -3205,10 +3273,23 @@ Event fields include:
 
 Fired when the mouse enters a shape.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeMouseEnter event on initialization
     <div id="map"></div>
@@ -3250,10 +3331,23 @@ Event fields include:
 
 Fired when the mouse leaves a shape.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeMouseLeave event on initialization
     <div id="map"></div>
@@ -3295,8 +3389,15 @@ Event fields include:
 
 Fired when the map zoom level is about to change.
 
-Event fields include:
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map zoomStart event on initialization
     <div id="map"></div>
@@ -3338,8 +3439,15 @@ Event fields include:
 
 Fired when the map zoom level has changed.
 
-Event fields include:
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map zoomEnd event on initialization
     <div id="map"></div>
