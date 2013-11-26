@@ -121,7 +121,7 @@ class **EmployeesController.cs**.
 
 ![Employees Controller](images/hello-services-employees-controller.png)
 
-In order to designate the **EmployeesControllers.cs** class that was just
+In order to designate the **EmployeesController.cs** class that was just
 added as a WebAPI controller that will respond to requests, inherit from the
 **ApiController **class. If **ApiController **is not recognized for you, hover
 over the word until you get the context menu. This will give you the option to
