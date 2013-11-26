@@ -2459,6 +2459,16 @@ The map size is derived from the zoom level and minScale options: `size = (2 ^ z
 Gets or sets the map center.
 The setter is chainable, i.e. returns the map instance.
 
+#### Parameters
+
+##### center `Array|kendo.dataviz.map.Location`
+
+The location of the new map center.
+
+#### Returns
+
+`kendo.dataviz.map.Location` The current map center.
+
 #### Example - set the map zoom level
     <div id="map"></div>
     <script>
@@ -2503,6 +2513,16 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
 Returns the event coordinates relative to the map element.
 Offset coordinates are not synchronized to a particular location on the map.
 
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The event coordinates relative to the map element.
+
 #### Example - position elements over widget on click
     <style>
         .box {
@@ -2538,6 +2558,16 @@ Offset coordinates are not synchronized to a particular location on the map.
 Retrieves projected (layer) coordinates that correspond to this mouse event.
 Layer coordinates are absolute and change only when the zoom level is changed.
 
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The projected (layer) coordinates that correspond to this mouse event.
+
 #### Example - retrieve projected coordinates
     <div id="map"></div>
     <script>
@@ -2559,6 +2589,16 @@ Layer coordinates are absolute and change only when the zoom level is changed.
 ### eventToLocation
 
 Retrieves the geographic location that correspond to this mouse event.
+
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The geographic location that correspond to this mouse event.
 
 #### Example - place marker on clicked location
     <div id="map"></div>
@@ -2589,6 +2629,16 @@ Retrieves relative (view) coordinates that correspond to this mouse event.
 Layer elements positioned on these coordinates will appear under the mouse cursor.
 
 View coordinates are no longer valid after a map [reset](#events-reset).
+
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The relative (view) coordinates that correspond to this mouse event.
 
 #### Example - position elements over map on click
     <style>
@@ -2622,7 +2672,13 @@ View coordinates are no longer valid after a map [reset](#events-reset).
 
 ### extent
 
-Gets the map [extent](/api/dataviz/map/extent).
+Gets the map current [map extent](/api/dataviz/map/extent).
+
+#### Parameters
+
+#### Returns
+
+`kendo.dataviz.map.Extent` The current map extent.
 
 #### Example - get the map extent
     <div id="map"></div>
@@ -2644,6 +2700,20 @@ Gets the map [extent](/api/dataviz/map/extent).
 ### layerToLocation
 
 Transforms layer (projected) coordinates to geographical location.
+
+#### Parameters
+
+##### point `kendo.dataviz.geometry.Point`
+
+The layer (projected) coordinates.
+
+##### zoom `Number`
+
+Optional. Assumed zoom level. Defaults to the current zoom level.
+
+#### Returns
+
+`kendo.dataviz.map.Location` The geographic location that corresponds to the layer coordinates.
 
 #### Example - retrieve location of NW corner
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -2668,6 +2738,20 @@ Transforms layer (projected) coordinates to geographical location.
 
 Returns the layer (projected) coordinates that correspond to a geographical location.
 
+#### Parameters
+
+##### location `kendo.dataviz.map.Location`
+
+The geographic location.
+
+##### zoom `Number`
+
+Optional. Assumed zoom level. Defaults to the current zoom level.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The layer (projected) coordinates.
+
 #### Example - retrieve the projected coordinates of a location
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
@@ -2690,6 +2774,16 @@ Returns the layer (projected) coordinates that correspond to a geographical loca
 ### locationToView
 
 Returns the view (relative) coordinates that correspond to a geographical location.
+
+#### Parameters
+
+##### location `kendo.dataviz.map.Location`
+
+The geographic location.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The view coordinates that correspond to a geographical location.
 
 #### Retrieves the view coordinates of the map center
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -2715,6 +2809,12 @@ Returns the view (relative) coordinates that correspond to a geographical locati
 
 Resets the map and applies new options over the current state.
 
+#### Parameters
+
+##### options `Object`
+
+The new options to be applied.
+
 #### Example - set map zoom & center simultaneously
     <div id="map"></div>
     <script>
@@ -2737,6 +2837,10 @@ Resets the map and applies new options over the current state.
 
 Retrieves the size of the visible portion of the map.
 
+#### Returns
+
+`Object` The size (width and height) of the visible portion of the map.
+
 #### Example - retrieve view size
     <script>
         $("#map").kendoMap({
@@ -2756,7 +2860,21 @@ Retrieves the size of the visible portion of the map.
 
 ### viewToLocation
 
-Returns the view (relative) coordinates that correspond to a geographical location.
+Returns the geographical location that correspond to the view (relative) coordinates.
+
+#### Parameters
+
+##### point `kendo.dataviz.geometry.Point`
+
+The view coordinates.
+
+##### zoom `Number`
+
+Optional. Assumed zoom level. Defaults to the current zoom level.
+
+#### Returns
+
+`kendo.dataviz.map.Location` The geographic location that corresponds to the view coordinates.
 
 #### Example - retrieve location corresponding to view center
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -2783,7 +2901,16 @@ Returns the view (relative) coordinates that correspond to a geographical locati
 Gets or sets the map zoom level.
 The setter is chainable, i.e. returns the map instance.
 
-> The map [zoom](#configuration-zoom) is clamped to the [minZoom, maxZoom] interval.
+#### Parameters
+
+##### level `Number`
+
+The new zoom level. The value is clamped to the
+ [[minZoom](#configuration-minZoom), [maxZoom](#configuration-maxZoom)] interval.
+
+#### Returns
+
+`Number` The current zoom level.
 
 #### Example - zoom in
     <div id="map"></div>
