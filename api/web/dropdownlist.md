@@ -376,6 +376,8 @@ The index of the initially selected item. The index is `0` based.
 
 Specifies a static HTML content, which will be rendered as a header of the popup element.
 
+> **Important** Widget does not pass a model data to the header template. It is designed for static HTML content only.
+
 #### Example - specify headerTemplate as a string
 
     <input id="dropdownlist" />
