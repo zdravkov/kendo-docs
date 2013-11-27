@@ -3030,53 +3030,6 @@ The source widget instance.
         });
     </script>
 
-### reset
-
-Fired when the map is reset.
-This typically occurs on initial load and after a zoom/center change.
-
-#### Event Data
-
-##### e.sender `kendo.dataviz.ui.Map`
-
-The source widget instance.
-
-#### Example - bind to the map reset event on initialization
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            zoom: 3,
-            center: [0, 0],
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            reset: function() {
-                console.log("map reset");
-            }
-        });
-    </script>
-
-#### Example - bind to the map reset event after initialization
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            zoom: 3,
-            center: [0, 0],
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-
-        var map = $("#map").data("kendoMap");
-        map.bind("reset", function(e) {
-            console.log("map reset");
-        });
-    </script>
-
 ### pan
 
 Fired while the map viewport is being moved.
@@ -3190,6 +3143,53 @@ The source jQuery event instance
         var map = $("#map").data("kendoMap");
         map.bind("panEnd", function(e) {
             console.log("pan ended at " + e.center.toString());
+        });
+    </script>
+
+### reset
+
+Fired when the map is reset.
+This typically occurs on initial load and after a zoom/center change.
+
+#### Event Data
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+#### Example - bind to the map reset event on initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            reset: function() {
+                console.log("map reset");
+            }
+        });
+    </script>
+
+#### Example - bind to the map reset event after initialization
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        map.bind("reset", function(e) {
+            console.log("map reset");
         });
     </script>
 
