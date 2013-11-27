@@ -2990,6 +2990,46 @@ The source jQuery event instance
         });
     </script>
 
+### markerCreated
+
+Fired when a marker has been created and is about to be displayed.
+Cancelling the event will prevent the marker from being shown.
+
+> Markers are automatically created for GeoJSON Point geometries. If the markerCreated event is cancelled a regular shape (circle) will be created instead.
+
+#### Event Data
+
+##### e.marker `kendo.dataviz.map.Marker`
+
+The marker instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+#### Example - Draw a shape (circle) instead of a marker
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Point",
+                        "coordinates": [
+                            [30, 10]
+                        ]
+                    }]
+                }
+            }],
+            markerCreated: function(e) {
+                // Draw a shape (circle) instead of a marker
+                e.preventDefault();
+            }
+        });
+    </script>
+
 ### reset
 
 Fired when the map is reset.
