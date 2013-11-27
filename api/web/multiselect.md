@@ -399,7 +399,7 @@ The hint displayed by the widget when it is empty. Not set by default.
 
 Specifies a static HTML content, which will be rendered as a header of the popup element.
 
-> **Important** Widget does not pass a model data to the header template. It is designed for static HTML content only.
+> **Important** Widget does not pass a model data to the header template. Use this option only with static HTML.
 
 #### Example - specify headerTemplate as a string
 
