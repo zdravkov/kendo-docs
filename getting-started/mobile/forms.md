@@ -48,7 +48,7 @@ To do so, include **kendo.dropdownlist.js** and its requirements
 
 *   Input with type search shows **reset icon** in Chrome and Safari, which is not present on a mobile device.
 
-*   All input and select elements in Android 4.x default browser render a fake input when focused.
+*   All input elements in Android 4.x default browser render a fake input when focused.
 This focused input can't be styled and is not part of the page flow so it won't scroll
 resulting in 2 identical but differently styled input elements at some point.
 **There is a workaround for this issue integrated in Kendo UI Mobile since Q2 2012, which unfortunately has the following negative effects:**
