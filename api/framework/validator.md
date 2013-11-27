@@ -11,6 +11,23 @@ publish: true
 
 ## Configuration
 
+### errorTemplate `String`
+
+The [template](/api/framework/kendo#methods-template) which renders the validation message.
+
+### Defining custom error template
+    <form id="myform">
+        <input name="username" required /> <br />
+        <button>Validate</button>
+    </form>
+
+    <script>
+        $("#myform").kendoValidator({
+            errorTemplate: "<span>#=message#</span>"
+        });
+    </script>
+
+
 ### messages `Object`
 
 Set of messages (either strings or functions) which will be shown when given validation rule fails.
