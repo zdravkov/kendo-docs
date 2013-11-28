@@ -183,6 +183,43 @@ Adds one or more MapLayer to the Map.
     $map->addLayer($first, $second);
     ?>
 
+### markerCreated
+Fired when a marker has been created and is about to be displayed.
+Cancelling the event will prevent the marker from being shown.
+For additional information check the [markerCreated](/api/web/map#events-markerCreated) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Map`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $map = new \Kendo\Dataviz\UI\Map('Map');
+    $map->markerCreated('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onMarkerCreated(e) {
+            // handle the markerCreated event.
+        }
+    </script>
+    <?php
+    $map = new \Kendo\Dataviz\UI\Map('Map');
+    $map->markerCreated('onMarkerCreated');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $map = new \Kendo\Dataviz\UI\Map('Map');
+    $map->markerCreated(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### markerDefaults
 
 The default options for all markers.
@@ -252,6 +289,7 @@ Adds one or more MapMarker to the Map.
 
 ### maxZoom
 The maximum zoom level.
+Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features).
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -288,6 +326,7 @@ The size of the map in pixels at zoom level 0.
 
 ### minZoom
 The minimum zoom level.
+Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features).
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -377,7 +416,8 @@ For additional information check the [panEnd](/api/web/map#events-panEnd) event 
     ?>
 
 ### reset
-Fired when the map is reset, e.g. on initial load or during zoom.
+Fired when the map is reset.
+This typically occurs on initial load and after a zoom/center change.
 For additional information check the [reset](/api/web/map#events-reset) event documentation.
 
 #### Returns

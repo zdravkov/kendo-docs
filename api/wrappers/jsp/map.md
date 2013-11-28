@@ -21,6 +21,7 @@ The map center. Coordinates are listed as [Latitude, Longitude].
 ### maxZoom `float`
 
 The maximum zoom level.
+Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features).
 
 #### Example
     <kendo:map maxZoom="maxZoom">
@@ -37,6 +38,7 @@ The size of the map in pixels at zoom level 0.
 ### minZoom `float`
 
 The minimum zoom level.
+Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features).
 
 #### Example
     <kendo:map minZoom="minZoom">
@@ -141,19 +143,20 @@ For additional information check the [click](/api/web/map#events-click) event do
         }
     </script>
 
-### reset `String`
+### markerCreated `String`
 
-Fired when the map is reset, e.g. on initial load or during zoom.
+Fired when a marker has been created and is about to be displayed.
+Cancelling the event will prevent the marker from being shown.
 
 
-For additional information check the [reset](/api/web/map#events-reset) event documentation.
+For additional information check the [markerCreated](/api/web/map#events-markerCreated) event documentation.
 
 #### Example
-    <kendo:map reset="handle_reset">
+    <kendo:map markerCreated="handle_markerCreated">
     </kendo:map>
     <script>
-        function handle_reset(e) {
-            // Code to handle the reset event.
+        function handle_markerCreated(e) {
+            // Code to handle the markerCreated event.
         }
     </script>
 
@@ -186,6 +189,23 @@ For additional information check the [panEnd](/api/web/map#events-panEnd) event 
     <script>
         function handle_panEnd(e) {
             // Code to handle the panEnd event.
+        }
+    </script>
+
+### reset `String`
+
+Fired when the map is reset.
+This typically occurs on initial load and after a zoom/center change.
+
+
+For additional information check the [reset](/api/web/map#events-reset) event documentation.
+
+#### Example
+    <kendo:map reset="handle_reset">
+    </kendo:map>
+    <script>
+        function handle_reset(e) {
+            // Code to handle the reset event.
         }
     </script>
 
@@ -305,22 +325,23 @@ For additional information check the [click](/api/web/map#events-click) event do
         </kendo:map-click>
     </kendo:map>
 
-### kendo:map-reset
+### kendo:map-markerCreated
 
-Fired when the map is reset, e.g. on initial load or during zoom.
+Fired when a marker has been created and is about to be displayed.
+Cancelling the event will prevent the marker from being shown.
 
 
-For additional information check the [reset](/api/web/map#events-reset) event documentation.
+For additional information check the [markerCreated](/api/web/map#events-markerCreated) event documentation.
 
 #### Example
     <kendo:map>
-        <kendo:map-reset>
+        <kendo:map-markerCreated>
             <script>
                 function(e) {
-                    // Code to handle the reset event.
+                    // Code to handle the markerCreated event.
                 }
             </script>
-        </kendo:map-reset>
+        </kendo:map-markerCreated>
     </kendo:map>
 
 ### kendo:map-pan
@@ -357,6 +378,25 @@ For additional information check the [panEnd](/api/web/map#events-panEnd) event 
                 }
             </script>
         </kendo:map-panEnd>
+    </kendo:map>
+
+### kendo:map-reset
+
+Fired when the map is reset.
+This typically occurs on initial load and after a zoom/center change.
+
+
+For additional information check the [reset](/api/web/map#events-reset) event documentation.
+
+#### Example
+    <kendo:map>
+        <kendo:map-reset>
+            <script>
+                function(e) {
+                    // Code to handle the reset event.
+                }
+            </script>
+        </kendo:map-reset>
     </kendo:map>
 
 ### kendo:map-shapeClick
