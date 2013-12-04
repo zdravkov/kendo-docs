@@ -48,7 +48,7 @@ The name of the diagram is an option which you are free to choose. It's being se
 
 ### zoomRate `Number` *(default: 1.1)*
 
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
+The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If zoomRate is less than 1, zooming will be reverted. If zoomRate=1, then zooming will appear disabled.
 
 ### dataSource `kendo.data.DataSource`
 
