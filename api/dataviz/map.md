@@ -2413,6 +2413,25 @@ Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features)
 
 The size of the map in pixels at zoom level 0.
 
+### pannable `Boolean` *(default: true)*
+
+Controls whether the user can pan the map.
+
+#### Example - make the map non-pannable
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            center: [32.7758, -96.7966],
+            zoom: 9,
+            pannable: false
+        });
+    </script>
+
 ### wraparound `Boolean` *(default: true)*
 
 Specifies whether the map should wrap around the east-west edges.
@@ -2449,6 +2468,25 @@ The map size is derived from the zoom level and minScale options: `size = (2 ^ z
             }],
             center: [32.7758, -96.7966],
             zoom: 9
+        });
+    </script>
+
+### zoomable `Boolean` *(default: true)*
+
+Controls whether the map zoom level can be changed by the user.
+
+#### Example - make the map non-zoomable
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            center: [32.7758, -96.7966],
+            zoom: 9,
+            zoomable: false
         });
     </script>
 
@@ -3428,6 +3466,7 @@ The source jQuery event instance
 ### zoomStart
 
 Fired when the map zoom level is about to change.
+Cancelling the event will prevent the user action.
 
 #### Event Data
 
@@ -3472,6 +3511,23 @@ The source jQuery event instance
         var map = $("#map").data("kendoMap");
         map.bind("zoomStart", function(e) {
             console.log("zoom start");
+        });
+    </script>
+
+#### Example - cancel zoom
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            zoomStart: function(e) {
+                e.preventDefault();
+            }
         });
     </script>
 

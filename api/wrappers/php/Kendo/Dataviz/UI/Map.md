@@ -415,6 +415,24 @@ For additional information check the [panEnd](/api/web/map#events-panEnd) event 
     $map->panEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### pannable
+Controls whether the user can pan the map.
+
+#### Returns
+`\Kendo\Dataviz\UI\Map`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $map = new \Kendo\Dataviz\UI\Map('Map');
+    $map->pannable(true);
+    ?>
+
 ### reset
 Fired when the map is reset.
 This typically occurs on initial load and after a zoom/center change.
@@ -670,6 +688,7 @@ For additional information check the [zoomEnd](/api/web/map#events-zoomEnd) even
 
 ### zoomStart
 Fired when the map zoom level is about to change.
+Cancelling the event will prevent the user action.
 For additional information check the [zoomStart](/api/web/map#events-zoomStart) event documentation.
 
 #### Returns
@@ -702,5 +721,23 @@ For additional information check the [zoomStart](/api/web/map#events-zoomStart) 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $map->zoomStart(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### zoomable
+Controls whether the map zoom level can be changed by the user.
+
+#### Returns
+`\Kendo\Dataviz\UI\Map`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $map = new \Kendo\Dataviz\UI\Map('Map');
+    $map->zoomable(true);
     ?>
 

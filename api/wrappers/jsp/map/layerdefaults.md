@@ -23,7 +23,7 @@ The default configuration for map layers by type.
 
 The default configuration for shape layers.
 
-More documentation is available at [kendo:map-layerDefaults-shape](map/layerdefaults-shape).
+More documentation is available at [kendo:map-layerDefaults-shape](/api/wrappers/jsp/map/layerdefaults-shape).
 
 #### Example
 
@@ -35,7 +35,7 @@ More documentation is available at [kendo:map-layerDefaults-shape](map/layerdefa
 
 The default configuration for tile layers.
 
-More documentation is available at [kendo:map-layerDefaults-tile](map/layerdefaults-tile).
+More documentation is available at [kendo:map-layerDefaults-tile](/api/wrappers/jsp/map/layerdefaults-tile).
 
 #### Example
 

@@ -44,6 +44,14 @@ Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features)
     <kendo:map minZoom="minZoom">
     </kendo:map>
 
+### pannable `boolean`
+
+Controls whether the user can pan the map.
+
+#### Example
+    <kendo:map pannable="pannable">
+    </kendo:map>
+
 ### wraparound `boolean`
 
 Specifies whether the map should wrap around the east-west edges.
@@ -60,6 +68,14 @@ The initial zoom level.Typical web maps use zoom levels from 0 (whole world) to 
     <kendo:map zoom="zoom">
     </kendo:map>
 
+### zoomable `boolean`
+
+Controls whether the map zoom level can be changed by the user.
+
+#### Example
+    <kendo:map zoomable="zoomable">
+    </kendo:map>
+
 
 ##  Configuration JSP Tags
 
@@ -67,7 +83,7 @@ The initial zoom level.Typical web maps use zoom levels from 0 (whole world) to 
 
 The configuration of built-in map controls.
 
-More documentation is available at [kendo:map-controls](map/controls).
+More documentation is available at [kendo:map-controls](/api/wrappers/jsp/map/controls).
 
 #### Example
 
@@ -79,7 +95,7 @@ More documentation is available at [kendo:map-controls](map/controls).
 
 The default configuration for map layers by type.
 
-More documentation is available at [kendo:map-layerDefaults](map/layerdefaults).
+More documentation is available at [kendo:map-layerDefaults](/api/wrappers/jsp/map/layerdefaults).
 
 #### Example
 
@@ -92,7 +108,7 @@ More documentation is available at [kendo:map-layerDefaults](map/layerdefaults).
 The configuration of the map layers.
 The layer type is determined by the value of the type field.
 
-More documentation is available at [kendo:map-layers](map/layers).
+More documentation is available at [kendo:map-layers](/api/wrappers/jsp/map/layers).
 
 #### Example
 
@@ -104,7 +120,7 @@ More documentation is available at [kendo:map-layers](map/layers).
 
 The default options for all markers.
 
-More documentation is available at [kendo:map-markerDefaults](map/markerdefaults).
+More documentation is available at [kendo:map-markerDefaults](/api/wrappers/jsp/map/markerdefaults).
 
 #### Example
 
@@ -116,7 +132,7 @@ More documentation is available at [kendo:map-markerDefaults](map/markerdefaults
 
 Static markers to display on the map.
 
-More documentation is available at [kendo:map-markers](map/markers).
+More documentation is available at [kendo:map-markers](/api/wrappers/jsp/map/markers).
 
 #### Example
 
@@ -276,6 +292,7 @@ For additional information check the [shapeMouseLeave](/api/web/map#events-shape
 ### zoomStart `String`
 
 Fired when the map zoom level is about to change.
+Cancelling the event will prevent the user action.
 
 
 For additional information check the [zoomStart](/api/web/map#events-zoomStart) event documentation.
@@ -474,6 +491,7 @@ For additional information check the [shapeMouseLeave](/api/web/map#events-shape
 ### kendo:map-zoomStart
 
 Fired when the map zoom level is about to change.
+Cancelling the event will prevent the user action.
 
 
 For additional information check the [zoomStart](/api/web/map#events-zoomStart) event documentation.
