@@ -249,6 +249,27 @@ A whitespace-delimited string of animation effects that are used when an item is
         });
     </script>
 
+### contentUrls `Array`
+
+Sets an array with the URLs from which the **PanelBar** items content to be loaded from. If only specific items should be loaded via Ajax, then you should set the URLs to the corresponding positions in the array and set the other elements to null.   
+
+#### Example - specify that the second item should be loaded remotely
+
+    <ul id="panelbar">
+        <li>Item 1
+        </li>
+        <li>
+            Ajax Item
+            <div></div>
+        </li>
+    </ul>
+
+    <script>
+        $("#panelbar").kendoPanelBar({
+            contentUrls: [null, "ajaxContent.html"]
+        });
+    </script>
+
 ### expandMode `String`*(default: "multiple")*
 
 Specifies how the **PanelBar** items are displayed when opened and closed. The following values

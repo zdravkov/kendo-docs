@@ -223,6 +223,27 @@ Specifies whether the TabStrip should be able to collapse completely when clicki
         });
     </script>
 
+### contentUrls `Array`
+
+Sets an array with the URLs from which the tabs content to be loaded from. If only specific tabs should be loaded via Ajax, then you should set the URLs to the corresponding positions in the array and set the other elements to null.   
+
+#### Example - specify that the second tab should be loaded remotely
+
+    <div id="tabstrip">
+        <ul>
+            <li>Tab 1</li>
+            <li>Ajax Tab</li>
+        </ul>
+        <div>Content 1</div>
+        <div></div>
+    </div>
+
+    <script>
+        $("#tabstrip").kendoTabStrip({
+            contentUrls: [null, "ajaxContent.html"]
+        });
+    </script>
+
 ### dataContentField `String`*(default: "")*
 
  Sets the field of the data item that provides the text content of
