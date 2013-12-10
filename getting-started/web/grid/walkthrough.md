@@ -350,6 +350,35 @@ Once grouping is enabled, a new area will be exposed in the header informing you
 
 You can additionally sort the grouping by clicking on the grouping tab.  In this example, clicking on “lastName” will sort the grouping descending.  Clicking it again will toggle to ascending.  Each of the individual groups themselves can be toggled from expanded to collapsed by clicking on the arrow next to the respective header grouping.
 
+#### Grouping with row templates
+
+By definition, the row template defines the row markup explicitly, while grouping requires changing the row markup. As a result, the two features can be used at the same time only if the row template includes a script,
+which adds additional cells, depending on the number of existing groups.
+
+    $(document).ready(function () {
+        // "window." can be omitted if the function is defined outside the document.ready closure
+        window.getGridGroupCells = function(id) {
+            var cnt = $("#" + id).data("kendoGrid").dataSource.group().length,
+                result = "";
+
+            for (var j = 0; j < cnt; j++) {
+                result += "<td class='k-group-cell'>&nbsp;</td>";
+            }
+
+            return result;
+        }
+
+        $("#GridID").kendoGrid({
+            groupable: true,
+            rowTemplate: "<tr>" +
+                "#= getGridGroupCells('GridID') #" +
+                "<td>...</td><td>...</td><td>...</td></tr>",
+            altRowTemplate: "<tr class='k-alt'>" +
+                "#= getGridGroupCells('GridID') #" +
+                "<td>...</td><td>...</td><td>...</td></tr>"
+        });
+    });
+
 ### Sorting
 
 Sorting is supported in two formats: either single-column sorting, or multi-column sorting.  To enable single column sorting, set the `sortable` option of the grid to `true`. This will enable the default single column sorting.
