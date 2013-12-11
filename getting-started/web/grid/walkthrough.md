@@ -170,7 +170,7 @@ may readjust (expand) some columns, depending on their content.
 
 When creating the Grid from an HTML `table`, column widths can be set via `col` elements.
 
-If all columns have widths and their sum exceeds the width of the grid, a horizontal scrollbar will appear (if scrolling is enabled). If that sum is less than the width of the grid,
+If all columns have pixel widths and their sum exceeds the width of the grid, a horizontal scrollbar will appear (if scrolling is enabled). If that sum is less than the width of the grid,
 the column widths will be ignored and all columns will expand. This will lead to undesired side effects, e.g. when resizing columns. In old IE versions the column widths will be obeyed, but misalignment will occur.
 That's why it is recommended to have at least one column without specified width. Explicit widths for all columns should be set only if they are set in percent,
 or if their sum exceeds the Grid width and the goal is to have horizontal scrolling.
