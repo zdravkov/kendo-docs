@@ -29316,6 +29316,126 @@ The widget instance which fired the event.
     chart.bind("dragStart", chart_dragStart);
     </script>
 
+### noteClick
+
+Fired when the user clicks one of the notes.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.category `Object`
+
+The data point category. Available only for categorical charts (bar, line, area and similar).
+
+##### e.element `Object`
+
+The DOM element of the plot area.
+
+##### e.sender `kendo.ui.Chart`
+
+The widget instance which fired the event.
+
+##### e.value `Object`
+
+The data point value.
+
+##### e.series `Object`
+
+The series of the note.
+
+##### e.dataItem `Object`
+
+The data item of the point's note.
+
+#### Example - subscribe to the "noteClick" event during initialization
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [{ value: 1, noteText: "a" }]
+      }],
+      noteClick: function(e) {
+        console.log(e.text);
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "noteClick" event after initialization
+    <div id="chart"></div>
+    <script>
+    function chart_noteClick(e) {
+      console.log(e.text);
+    }
+    $("#chart").kendoChart({
+      series: [{
+        data: [{ value: 1, noteText: "a" }]
+      }]
+    });
+    var chart = $("#chart").data("kendoChart");
+    chart.bind("noteClick", chart_noteClick);
+    </script>
+
+### noteHover
+
+Fired when the user hovers one of the notes.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.category `Object`
+
+The data point category. Available only for categorical charts (bar, line, area and similar).
+
+##### e.element `Object`
+
+The DOM element of the plot area.
+
+##### e.sender `kendo.ui.Chart`
+
+The widget instance which fired the event.
+
+##### e.value `Object`
+
+The data point value.
+
+##### e.series `Object`
+
+The series of the note.
+
+##### e.dataItem `Object`
+
+The data item of the point's note.
+
+#### Example - subscribe to the "noteHover" event during initialization
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        data: [{ value: 1, noteText: "a" }]
+      }],
+      noteHover: function(e) {
+        console.log(e.text);
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "noteHover" event after initialization
+    <div id="chart"></div>
+    <script>
+    function chart_noteHover(e) {
+      console.log(e.text);
+    }
+    $("#chart").kendoChart({
+      series: [{
+        data: [{ value: 1, noteText: "a" }]
+      }]
+    });
+    var chart = $("#chart").data("kendoChart");
+    chart.bind("noteHover", chart_noteHover);
+    </script>
+
 ### plotAreaClick
 
 Fired when the user clicks the plot area.

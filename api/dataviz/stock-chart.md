@@ -9328,6 +9328,70 @@ The axis name is used as a key.
 
 The original user event that triggered the drag action.
 
+### noteClick
+
+Fired when the user clicks one of the notes.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.category `Object`
+
+The data point category. Available only for categorical charts (bar, line, area and similar).
+
+##### e.element `Object`
+
+The DOM element of the plot area.
+
+##### e.sender `kendo.ui.Chart`
+
+The widget instance which fired the event.
+
+##### e.value `Object`
+
+The data point value.
+
+##### e.series `Object`
+
+The series of the note.
+
+##### e.dataItem `Object`
+
+The data item of the point's note.
+
+### noteHover
+
+Fired when the user hovers one of the notes.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.category `Object`
+
+The data point category. Available only for categorical charts (bar, line, area and similar).
+
+##### e.element `Object`
+
+The DOM element of the plot area.
+
+##### e.sender `kendo.ui.Chart`
+
+The widget instance which fired the event.
+
+##### e.value `Object`
+
+The data point value.
+
+##### e.series `Object`
+
+The series of the note.
+
+##### e.dataItem `Object`
+
+The data item of the point's note.
+
 ### plotAreaClick
 
 Fires when plot area is clicked.
