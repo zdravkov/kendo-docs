@@ -471,6 +471,108 @@ Note: when initializing the widget from an array (rather than from a Hierarchica
     });
     </script>
 
+### messages `Object`
+
+The text messages displayed in the widget. Use it to customize or localize the messages.
+
+#### Example - customize treeview messages
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: {
+        transport: {
+          read: function(options) {
+            // request always fails after 1s
+            setTimeout(function() {
+              options.error({});
+            }, 1000);
+          }
+        }
+      },
+      messages: {
+        retry: "Wiederholen",
+        requestFailed: "Anforderung fehlgeschlagen.",
+        loading: "Laden..."
+      }
+    });
+    </script>
+
+### messages.loading `String` *(default: "Loading...")*
+
+The text message shown while the root level items are loading.
+
+#### Example - customize loading message
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: {
+        transport: {
+          read: function(options) {
+            // request always fails after 1s
+            setTimeout(function() {
+              options.error({});
+            }, 1000);
+          }
+        }
+      },
+      messages: {
+        loading: "Laden..."
+      }
+    });
+    </script>
+
+### messages.retry `String` *(default: "Retry")*
+
+The text message shown in the retry button.
+
+#### Example - customize retry message
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: {
+        transport: {
+          read: function(options) {
+            // request always fails after 1s
+            setTimeout(function() {
+              options.error({});
+            }, 1000);
+          }
+        }
+      },
+      messages: {
+        retry: "Wiederholen"
+      }
+    });
+    </script>
+
+### messages.requestFailed `String` *(default: "Request failed.")*
+
+The text message shown when an error occurs while fetching the content.
+
+#### Example - customize requestFailed message
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: {
+        transport: {
+          read: function(options) {
+            // request always fails after 1s
+            setTimeout(function() {
+              options.error({});
+            }, 1000);
+          }
+        }
+      },
+      messages: {
+        requestFailed: "Anforderung fehlgeschlagen."
+      }
+    });
+    </script>
+
 ### template `String|Function`
 
 Template for rendering each node.
