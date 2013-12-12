@@ -193,6 +193,15 @@ Always use unique widget names. For example you can append an index to make the 
 
 This happens because there is more than one Kendo UI widget with the same `Name()`. Check the solution of the previous problem.
 
+## Using Html.Kendo().SomeKendoWidgetFor() helper does not update the bound property on the server
+
+Most probably this is happening because you have specified Name() for the widget which is different than the property name. Since the Name() controlls not only the "id" attribute of the input element but the "name" attribute as well,
+the MVC model binder will fail to bind the value.
+
+### Solution
+
+Omit specifying Name() or use the same Name() as the name of the property.
+
 ## Kendo UI wrappers do not work inside client templates
 
 This can happen if the wrapper is declared without ToClientTemplate(). For more information please refer to
