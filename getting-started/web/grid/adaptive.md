@@ -17,7 +17,7 @@ In order to see those features in action please check the [agaptive rendering de
 
 To enable the adaptive rendering feature the developer should set [mobile](http://docs.kendoui.com/api/web/grid#configuration-mobile) propery to `true`, `phone` or `tablet`.
 
-### Example
+#### Example
     <div id="grid"></div>
     <script>
     $("#grid").kendoGrid({
@@ -42,7 +42,7 @@ Each adaptive grid is rendered inside a separate mobile Pane. Since the pane's a
 The solution in this case is to wrap each grid inside a `<div>` container that is **relatively positioned** and **have a set height**.
 As a general information, the absolute position is required in order transitions between main and edit views to work correctly.
 
-### Example - adding multiple adaptive Grids on the same page
+#### Example - adding multiple adaptive Grids on the same page
     <div class="adaptive-grid-wrapper">
         <div id="grid1"></div>
     </div>
@@ -80,7 +80,7 @@ As a general information, the absolute position is required in order transitions
 
 The mobile pane in which adaptive Grid is placed will **not** expand in height automatically. The developer should set the `stretch` configuration of the respective View to true or to define explicitly the widget's height.
 
-### Example - using the stretch option
+#### Example - using the stretch option
     <div id="foo" data-role="view" data-init="onInit" data-stretch="true">
         <div id="grid"></div>
     </div>
@@ -108,7 +108,7 @@ The mobile pane in which adaptive Grid is placed will **not** expand in height a
         var app = new kendo.mobile.Application();
     </script>
 
-### Example - using the height option
+#### Example - using the height option
     <div id="foo" data-role="view" data-init="onInit">
         <div id="grid"></div>
     </div>
