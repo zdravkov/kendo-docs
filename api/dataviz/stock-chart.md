@@ -5565,6 +5565,7 @@ The supported values are:
 
 * "normal" - The values will be connected with straight line.
 * "step" - The values will be connected with a line with right angle.
+* "smooth" - The values will be connected with a smooth line.
 
 > The default value is "normal".
 
@@ -5668,6 +5669,7 @@ The supported values are:
 
 * "normal" - The values will be connected with straight line.
 * "step" - The values will be connected with a line at right.
+* "smooth" - The values will be connected with a smooth line.
 
 > The default value is "normal".
 
