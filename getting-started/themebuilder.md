@@ -19,6 +19,8 @@ Because the ThemeBuilder is a browser bookmarklet, using it on your own pages is
 
 Since the ThemeBuilder can output LESS or CSS text, you need to perform a few steps to use the newly created theme on your pages.
 
+> When deploying your themed application to an internal network, please keep in mind that the images in the ThemeBuilder output are inferred from the page. If you are using the ThemeBuilder through the Kendo UI page, this means the images will be located on the Kendo UI CDN, and may be blocked if your customers are within an internal network without an access to the CDN. In such circumstances, copy the image resources locally and change the references in the CSS/ LESS output.
+
 #### Using the CSS output
 
 Just copy the CSS output to a .css file and include it in your page.
