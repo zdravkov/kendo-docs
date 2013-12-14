@@ -2169,7 +2169,7 @@ The color of the category axis major ticks lines. Accepts a valid CSS color stri
     $("#chart").kendoChart({
       categoryAxis: {
         categories: [ "2012", "2013"],
-        majorTicks {
+        majorTicks: {
           color: "#aa00bb"
         }
       },
@@ -2186,7 +2186,7 @@ The color of the category axis major ticks lines. Accepts a valid CSS color stri
     $("#chart").kendoChart({
       categoryAxis: {
         categories: [ "2012", "2013"],
-        majorTicks {
+        majorTicks: {
           color: "rgb(128, 0, 255)"
         }
       },
@@ -2203,7 +2203,7 @@ The color of the category axis major ticks lines. Accepts a valid CSS color stri
     $("#chart").kendoChart({
       categoryAxis: {
         categories: [ "2012", "2013"],
-        majorTicks {
+        majorTicks: {
           color: "green"
         }
       },
@@ -17541,7 +17541,7 @@ The color of the value axis major ticks lines. Accepts a valid CSS color string,
     <script>
     $("#chart").kendoChart({
       valueAxis: {
-        majorTicks {
+        majorTicks: {
           color: "#aa00bb"
         }
       },
@@ -17557,7 +17557,7 @@ The color of the value axis major ticks lines. Accepts a valid CSS color string,
     <script>
     $("#chart").kendoChart({
       valueAxis: {
-        majorTicks {
+        majorTicks: {
           color: "rgb(128, 0, 255)"
         }
       },
@@ -17573,7 +17573,7 @@ The color of the value axis major ticks lines. Accepts a valid CSS color string,
     <script>
     $("#chart").kendoChart({
       valueAxis: {
-        majorTicks {
+        majorTicks: {
           color: "green"
         }
       },
