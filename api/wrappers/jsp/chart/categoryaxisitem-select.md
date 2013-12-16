@@ -55,7 +55,7 @@ The upper boundary of the selected range.
 
 The mouse wheel configuration of the selection.
 
-More documentation is available at [kendo:chart-categoryAxisItem-select-mousewheel](chart/categoryaxisitem-select-mousewheel).
+More documentation is available at [kendo:chart-categoryAxisItem-select-mousewheel](/api/wrappers/jsp/chart/categoryaxisitem-select-mousewheel).
 
 #### Example
 

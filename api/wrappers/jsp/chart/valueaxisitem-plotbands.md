@@ -23,7 +23,7 @@ The plot bands of the value axis.
 
 The plot bands of the value axis.
 
-More documentation is available at [kendo:chart-valueAxisItem-plotBand](chart/valueaxisitem-plotband).
+More documentation is available at [kendo:chart-valueAxisItem-plotBand](/api/wrappers/jsp/chart/valueaxisitem-plotband).
 
 #### Example
 

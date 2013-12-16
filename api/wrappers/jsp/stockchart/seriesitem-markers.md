@@ -71,7 +71,7 @@ The markers visibility.
 
 The border of the markers.
 
-More documentation is available at [kendo:stockChart-seriesItem-markers-border](stockchart/seriesitem-markers-border).
+More documentation is available at [kendo:stockChart-seriesItem-markers-border](/api/wrappers/jsp/stockchart/seriesitem-markers-border).
 
 #### Example
 

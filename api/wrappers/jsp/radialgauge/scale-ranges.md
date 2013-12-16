@@ -23,7 +23,7 @@ The ranges of the scale.
 
 The ranges of the scale.
 
-More documentation is available at [kendo:radialGauge-scale-range](radialgauge/scale-range).
+More documentation is available at [kendo:radialGauge-scale-range](/api/wrappers/jsp/radialgauge/scale-range).
 
 #### Example
 

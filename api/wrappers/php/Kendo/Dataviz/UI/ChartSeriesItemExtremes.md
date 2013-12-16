@@ -150,27 +150,3 @@ The extremes shape.The supported values are:
     $extremes->type(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
-### visible
-If set to true the chart will display the series extremes. By default chart series extremes are not displayed.
-
-#### Returns
-`\Kendo\Dataviz\UI\ChartSeriesItemExtremes`
-
-#### Parameters
-
-##### $value `boolean|\Kendo\JavaScriptFunction`
-
-
-
-#### Example  - using boolean
-    <?php
-    $extremes = new \Kendo\Dataviz\UI\ChartSeriesItemExtremes();
-    $extremes->visible(true);
-    ?>
-
-#### Example  - using \Kendo\JavaScriptFunction
-    <?php
-    $extremes = new \Kendo\Dataviz\UI\ChartSeriesItemExtremes();
-    $extremes->visible(new \Kendo\JavaScriptFunction('function() { }'));
-    ?>
-

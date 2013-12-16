@@ -86,7 +86,7 @@ Denotes the location of the tick marks in the RangeSlider. The available options
 
 Configuration of the RangeSlider tooltip.
 
-More documentation is available at [kendo:rangeSlider-tooltip](rangeslider/tooltip).
+More documentation is available at [kendo:rangeSlider-tooltip](/api/wrappers/jsp/rangeslider/tooltip).
 
 #### Example
 

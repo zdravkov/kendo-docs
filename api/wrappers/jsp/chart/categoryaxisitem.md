@@ -188,7 +188,7 @@ The discrete categoryAxis.baseUnitStep values when
 either categoryAxis.baseUnit is set to "fit" or
 categoryAxis.baseUnitStep is set to "auto".
 
-More documentation is available at [kendo:chart-categoryAxisItem-autoBaseUnitSteps](chart/categoryaxisitem-autobaseunitsteps).
+More documentation is available at [kendo:chart-categoryAxisItem-autoBaseUnitSteps](/api/wrappers/jsp/chart/categoryaxisitem-autobaseunitsteps).
 
 #### Example
 
@@ -200,7 +200,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-autoBaseUnitSte
 
 The crosshair configuration options.
 
-More documentation is available at [kendo:chart-categoryAxisItem-crosshair](chart/categoryaxisitem-crosshair).
+More documentation is available at [kendo:chart-categoryAxisItem-crosshair](/api/wrappers/jsp/chart/categoryaxisitem-crosshair).
 
 #### Example
 
@@ -212,7 +212,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-crosshair](char
 
 The axis labels configuration.
 
-More documentation is available at [kendo:chart-categoryAxisItem-labels](chart/categoryaxisitem-labels).
+More documentation is available at [kendo:chart-categoryAxisItem-labels](/api/wrappers/jsp/chart/categoryaxisitem-labels).
 
 #### Example
 
@@ -224,7 +224,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-labels](chart/c
 
 The configuration of the axis lines. Also affects the major and minor ticks, but not the grid lines.
 
-More documentation is available at [kendo:chart-categoryAxisItem-line](chart/categoryaxisitem-line).
+More documentation is available at [kendo:chart-categoryAxisItem-line](/api/wrappers/jsp/chart/categoryaxisitem-line).
 
 #### Example
 
@@ -237,7 +237,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-line](chart/cat
 The configuration of the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
 
-More documentation is available at [kendo:chart-categoryAxisItem-majorGridLines](chart/categoryaxisitem-majorgridlines).
+More documentation is available at [kendo:chart-categoryAxisItem-majorGridLines](/api/wrappers/jsp/chart/categoryaxisitem-majorgridlines).
 
 #### Example
 
@@ -249,7 +249,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-majorGridLines]
 
 The configuration of the category axis major ticks.
 
-More documentation is available at [kendo:chart-categoryAxisItem-majorTicks](chart/categoryaxisitem-majorticks).
+More documentation is available at [kendo:chart-categoryAxisItem-majorTicks](/api/wrappers/jsp/chart/categoryaxisitem-majorticks).
 
 #### Example
 
@@ -262,7 +262,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-majorTicks](cha
 The configuration of the minor grid lines. These are the lines that are an extension of the minor ticks through the
 body of the chart.
 
-More documentation is available at [kendo:chart-categoryAxisItem-minorGridLines](chart/categoryaxisitem-minorgridlines).
+More documentation is available at [kendo:chart-categoryAxisItem-minorGridLines](/api/wrappers/jsp/chart/categoryaxisitem-minorgridlines).
 
 #### Example
 
@@ -274,7 +274,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-minorGridLines]
 
 The configuration of the category axis minor ticks.
 
-More documentation is available at [kendo:chart-categoryAxisItem-minorTicks](chart/categoryaxisitem-minorticks).
+More documentation is available at [kendo:chart-categoryAxisItem-minorTicks](/api/wrappers/jsp/chart/categoryaxisitem-minorticks).
 
 #### Example
 
@@ -286,7 +286,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-minorTicks](cha
 
 The category axis notes configuration.
 
-More documentation is available at [kendo:chart-categoryAxisItem-notes](chart/categoryaxisitem-notes).
+More documentation is available at [kendo:chart-categoryAxisItem-notes](/api/wrappers/jsp/chart/categoryaxisitem-notes).
 
 #### Example
 
@@ -298,7 +298,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-notes](chart/ca
 
 The plot bands of the category axis.
 
-More documentation is available at [kendo:chart-categoryAxisItem-plotBands](chart/categoryaxisitem-plotbands).
+More documentation is available at [kendo:chart-categoryAxisItem-plotBands](/api/wrappers/jsp/chart/categoryaxisitem-plotbands).
 
 #### Example
 
@@ -310,7 +310,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-plotBands](char
 
 The selected axis range. If set, axis selection will be enabled.The range units are:
 
-More documentation is available at [kendo:chart-categoryAxisItem-select](chart/categoryaxisitem-select).
+More documentation is available at [kendo:chart-categoryAxisItem-select](/api/wrappers/jsp/chart/categoryaxisitem-select).
 
 #### Example
 
@@ -322,7 +322,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-select](chart/c
 
 The title configuration of the category axis.
 
-More documentation is available at [kendo:chart-categoryAxisItem-title](chart/categoryaxisitem-title).
+More documentation is available at [kendo:chart-categoryAxisItem-title](/api/wrappers/jsp/chart/categoryaxisitem-title).
 
 #### Example
 

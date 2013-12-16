@@ -88,7 +88,7 @@ The position of the gauge.
 
 Configures the scale labels.
 
-More documentation is available at [kendo:linearGauge-scale-labels](lineargauge/scale-labels).
+More documentation is available at [kendo:linearGauge-scale-labels](/api/wrappers/jsp/lineargauge/scale-labels).
 
 #### Example
 
@@ -100,7 +100,7 @@ More documentation is available at [kendo:linearGauge-scale-labels](lineargauge/
 
 Configures the axis line.
 
-More documentation is available at [kendo:linearGauge-scale-line](lineargauge/scale-line).
+More documentation is available at [kendo:linearGauge-scale-line](/api/wrappers/jsp/lineargauge/scale-line).
 
 #### Example
 
@@ -112,7 +112,7 @@ More documentation is available at [kendo:linearGauge-scale-line](lineargauge/sc
 
 Configures the scale major ticks.
 
-More documentation is available at [kendo:linearGauge-scale-majorTicks](lineargauge/scale-majorticks).
+More documentation is available at [kendo:linearGauge-scale-majorTicks](/api/wrappers/jsp/lineargauge/scale-majorticks).
 
 #### Example
 
@@ -124,7 +124,7 @@ More documentation is available at [kendo:linearGauge-scale-majorTicks](linearga
 
 Configures the scale minor ticks.
 
-More documentation is available at [kendo:linearGauge-scale-minorTicks](lineargauge/scale-minorticks).
+More documentation is available at [kendo:linearGauge-scale-minorTicks](/api/wrappers/jsp/lineargauge/scale-minorticks).
 
 #### Example
 
@@ -136,7 +136,7 @@ More documentation is available at [kendo:linearGauge-scale-minorTicks](linearga
 
 The ranges of the scale.
 
-More documentation is available at [kendo:linearGauge-scale-ranges](lineargauge/scale-ranges).
+More documentation is available at [kendo:linearGauge-scale-ranges](/api/wrappers/jsp/lineargauge/scale-ranges).
 
 #### Example
 

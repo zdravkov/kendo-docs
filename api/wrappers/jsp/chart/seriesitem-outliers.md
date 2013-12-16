@@ -60,14 +60,6 @@ The outliers shape.The supported values are:
     <kendo:chart-seriesItem-outliers type="type">
     </kendo:chart-seriesItem-outliers>
 
-### visible `boolean`
-
-If set to true the chart will display the series outliers. By default chart series outliers are not displayed.
-
-#### Example
-    <kendo:chart-seriesItem-outliers visible="visible">
-    </kendo:chart-seriesItem-outliers>
-
 
 ##  Configuration JSP Tags
 
@@ -75,7 +67,7 @@ If set to true the chart will display the series outliers. By default chart seri
 
 The border of the outliers.
 
-More documentation is available at [kendo:chart-seriesItem-outliers-border](chart/seriesitem-outliers-border).
+More documentation is available at [kendo:chart-seriesItem-outliers-border](/api/wrappers/jsp/chart/seriesitem-outliers-border).
 
 #### Example
 
@@ -129,20 +121,6 @@ The outliers shape.The supported values are:
     <script>
         function handle_type(e) {
             // Code to handle the type event.
-        }
-    </script>
-
-### visible `String`
-
-If set to true the chart will display the series outliers. By default chart series outliers are not displayed.
-
-
-#### Example
-    <kendo:chart-seriesItem-outliers visible="handle_visible">
-    </kendo:chart-seriesItem-outliers>
-    <script>
-        function handle_visible(e) {
-            // Code to handle the visible event.
         }
     </script>
 
@@ -212,22 +190,6 @@ The outliers shape.The supported values are:
                 }
             </script>
         </kendo:chart-seriesItem-outliers-type>
-    </kendo:chart-seriesItem-outliers>
-
-### kendo:chart-seriesItem-outliers-visible
-
-If set to true the chart will display the series outliers. By default chart series outliers are not displayed.
-
-
-#### Example
-    <kendo:chart-seriesItem-outliers>
-        <kendo:chart-seriesItem-outliers-visible>
-            <script>
-                function(e) {
-                    // Code to handle the visible event.
-                }
-            </script>
-        </kendo:chart-seriesItem-outliers-visible>
     </kendo:chart-seriesItem-outliers>
 
 ### kendo:chart-seriesItem-outliers-rotation

@@ -75,7 +75,7 @@ If set to true the chart will display the legend. By default the chart legend is
 
 The border of the legend.
 
-More documentation is available at [kendo:chart-legend-border](chart/legend-border).
+More documentation is available at [kendo:chart-legend-border](/api/wrappers/jsp/chart/legend-border).
 
 #### Example
 
@@ -87,7 +87,7 @@ More documentation is available at [kendo:chart-legend-border](chart/legend-bord
 
 The chart inactive legend items configuration.
 
-More documentation is available at [kendo:chart-legend-inactiveItems](chart/legend-inactiveitems).
+More documentation is available at [kendo:chart-legend-inactiveItems](/api/wrappers/jsp/chart/legend-inactiveitems).
 
 #### Example
 
@@ -99,7 +99,7 @@ More documentation is available at [kendo:chart-legend-inactiveItems](chart/lege
 
 The chart legend label configuration.
 
-More documentation is available at [kendo:chart-legend-labels](chart/legend-labels).
+More documentation is available at [kendo:chart-legend-labels](/api/wrappers/jsp/chart/legend-labels).
 
 #### Example
 
@@ -111,7 +111,7 @@ More documentation is available at [kendo:chart-legend-labels](chart/legend-labe
 
 The margin of the chart legend. A numeric value will set all paddings.
 
-More documentation is available at [kendo:chart-legend-margin](chart/legend-margin).
+More documentation is available at [kendo:chart-legend-margin](/api/wrappers/jsp/chart/legend-margin).
 
 #### Example
 

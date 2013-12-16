@@ -49,7 +49,7 @@ The visibility of the navigator.
 
 The category axis configuration options.
 
-More documentation is available at [kendo:stockChart-navigator-categoryAxis](stockchart/navigator-categoryaxis).
+More documentation is available at [kendo:stockChart-navigator-categoryAxis](/api/wrappers/jsp/stockchart/navigator-categoryaxis).
 
 #### Example
 
@@ -61,7 +61,7 @@ More documentation is available at [kendo:stockChart-navigator-categoryAxis](sto
 
 Default options for the navigator hint.
 
-More documentation is available at [kendo:stockChart-navigator-hint](stockchart/navigator-hint).
+More documentation is available at [kendo:stockChart-navigator-hint](/api/wrappers/jsp/stockchart/navigator-hint).
 
 #### Example
 
@@ -73,7 +73,7 @@ More documentation is available at [kendo:stockChart-navigator-hint](stockchart/
 
 The navigator pane configuration.
 
-More documentation is available at [kendo:stockChart-navigator-pane](stockchart/navigator-pane).
+More documentation is available at [kendo:stockChart-navigator-pane](/api/wrappers/jsp/stockchart/navigator-pane).
 
 #### Example
 
@@ -85,7 +85,7 @@ More documentation is available at [kendo:stockChart-navigator-pane](stockchart/
 
 Specifies the initially selected range.The full range of values is shown if no range is specified.
 
-More documentation is available at [kendo:stockChart-navigator-select](stockchart/navigator-select).
+More documentation is available at [kendo:stockChart-navigator-select](/api/wrappers/jsp/stockchart/navigator-select).
 
 #### Example
 
@@ -97,7 +97,7 @@ More documentation is available at [kendo:stockChart-navigator-select](stockchar
 
 Array of series definitions.Accepts the same options as the root series collection.Omitting the array and specifying a single series is also acceptable.
 
-More documentation is available at [kendo:stockChart-navigator-series](stockchart/navigator-series).
+More documentation is available at [kendo:stockChart-navigator-series](/api/wrappers/jsp/stockchart/navigator-series).
 
 #### Example
 

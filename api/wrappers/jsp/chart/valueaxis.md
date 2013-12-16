@@ -23,7 +23,7 @@ The value axis configuration options.
 
 The value axis configuration options.
 
-More documentation is available at [kendo:chart-valueAxisItem](chart/valueaxisitem).
+More documentation is available at [kendo:chart-valueAxisItem](/api/wrappers/jsp/chart/valueaxisitem).
 
 #### Example
 

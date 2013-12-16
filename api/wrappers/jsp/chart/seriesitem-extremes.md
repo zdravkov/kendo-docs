@@ -60,14 +60,6 @@ The extremes shape.The supported values are:
     <kendo:chart-seriesItem-extremes type="type">
     </kendo:chart-seriesItem-extremes>
 
-### visible `boolean`
-
-If set to true the chart will display the series extremes. By default chart series extremes are not displayed.
-
-#### Example
-    <kendo:chart-seriesItem-extremes visible="visible">
-    </kendo:chart-seriesItem-extremes>
-
 
 ##  Configuration JSP Tags
 
@@ -75,7 +67,7 @@ If set to true the chart will display the series extremes. By default chart seri
 
 The border of the extremes.
 
-More documentation is available at [kendo:chart-seriesItem-extremes-border](chart/seriesitem-extremes-border).
+More documentation is available at [kendo:chart-seriesItem-extremes-border](/api/wrappers/jsp/chart/seriesitem-extremes-border).
 
 #### Example
 
@@ -129,20 +121,6 @@ The extremes shape.The supported values are:
     <script>
         function handle_type(e) {
             // Code to handle the type event.
-        }
-    </script>
-
-### visible `String`
-
-If set to true the chart will display the series extremes. By default chart series extremes are not displayed.
-
-
-#### Example
-    <kendo:chart-seriesItem-extremes visible="handle_visible">
-    </kendo:chart-seriesItem-extremes>
-    <script>
-        function handle_visible(e) {
-            // Code to handle the visible event.
         }
     </script>
 
@@ -212,22 +190,6 @@ The extremes shape.The supported values are:
                 }
             </script>
         </kendo:chart-seriesItem-extremes-type>
-    </kendo:chart-seriesItem-extremes>
-
-### kendo:chart-seriesItem-extremes-visible
-
-If set to true the chart will display the series extremes. By default chart series extremes are not displayed.
-
-
-#### Example
-    <kendo:chart-seriesItem-extremes>
-        <kendo:chart-seriesItem-extremes-visible>
-            <script>
-                function(e) {
-                    // Code to handle the visible event.
-                }
-            </script>
-        </kendo:chart-seriesItem-extremes-visible>
     </kendo:chart-seriesItem-extremes>
 
 ### kendo:chart-seriesItem-extremes-rotation

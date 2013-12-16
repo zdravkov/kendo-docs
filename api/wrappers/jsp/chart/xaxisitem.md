@@ -145,7 +145,7 @@ If set to true the chart will display the x axis. By default the x axis is visib
 
 The crosshair configuration options.
 
-More documentation is available at [kendo:chart-xAxisItem-crosshair](chart/xaxisitem-crosshair).
+More documentation is available at [kendo:chart-xAxisItem-crosshair](/api/wrappers/jsp/chart/xaxisitem-crosshair).
 
 #### Example
 
@@ -157,7 +157,7 @@ More documentation is available at [kendo:chart-xAxisItem-crosshair](chart/xaxis
 
 The axis labels configuration.
 
-More documentation is available at [kendo:chart-xAxisItem-labels](chart/xaxisitem-labels).
+More documentation is available at [kendo:chart-xAxisItem-labels](/api/wrappers/jsp/chart/xaxisitem-labels).
 
 #### Example
 
@@ -169,7 +169,7 @@ More documentation is available at [kendo:chart-xAxisItem-labels](chart/xaxisite
 
 The configuration of the axis lines. Also affects the major and minor ticks, but not the grid lines.
 
-More documentation is available at [kendo:chart-xAxisItem-line](chart/xaxisitem-line).
+More documentation is available at [kendo:chart-xAxisItem-line](/api/wrappers/jsp/chart/xaxisitem-line).
 
 #### Example
 
@@ -182,7 +182,7 @@ More documentation is available at [kendo:chart-xAxisItem-line](chart/xaxisitem-
 The configuration of the major grid lines. These are the lines that are an extension of the major ticks through the
 body of the chart.
 
-More documentation is available at [kendo:chart-xAxisItem-majorGridLines](chart/xaxisitem-majorgridlines).
+More documentation is available at [kendo:chart-xAxisItem-majorGridLines](/api/wrappers/jsp/chart/xaxisitem-majorgridlines).
 
 #### Example
 
@@ -194,7 +194,7 @@ More documentation is available at [kendo:chart-xAxisItem-majorGridLines](chart/
 
 The configuration of the scatter chart x axis major ticks.
 
-More documentation is available at [kendo:chart-xAxisItem-majorTicks](chart/xaxisitem-majorticks).
+More documentation is available at [kendo:chart-xAxisItem-majorTicks](/api/wrappers/jsp/chart/xaxisitem-majorticks).
 
 #### Example
 
@@ -207,7 +207,7 @@ More documentation is available at [kendo:chart-xAxisItem-majorTicks](chart/xaxi
 The configuration of the minor grid lines. These are the lines that are an extension of the minor ticks through the
 body of the chart.
 
-More documentation is available at [kendo:chart-xAxisItem-minorGridLines](chart/xaxisitem-minorgridlines).
+More documentation is available at [kendo:chart-xAxisItem-minorGridLines](/api/wrappers/jsp/chart/xaxisitem-minorgridlines).
 
 #### Example
 
@@ -219,7 +219,7 @@ More documentation is available at [kendo:chart-xAxisItem-minorGridLines](chart/
 
 The configuration of the x axis minor ticks.
 
-More documentation is available at [kendo:chart-xAxisItem-minorTicks](chart/xaxisitem-minorticks).
+More documentation is available at [kendo:chart-xAxisItem-minorTicks](/api/wrappers/jsp/chart/xaxisitem-minorticks).
 
 #### Example
 
@@ -231,7 +231,7 @@ More documentation is available at [kendo:chart-xAxisItem-minorTicks](chart/xaxi
 
 The x axis notes configuration.
 
-More documentation is available at [kendo:chart-xAxisItem-notes](chart/xaxisitem-notes).
+More documentation is available at [kendo:chart-xAxisItem-notes](/api/wrappers/jsp/chart/xaxisitem-notes).
 
 #### Example
 
@@ -243,7 +243,7 @@ More documentation is available at [kendo:chart-xAxisItem-notes](chart/xaxisitem
 
 The plot bands of the x axis.
 
-More documentation is available at [kendo:chart-xAxisItem-plotBands](chart/xaxisitem-plotbands).
+More documentation is available at [kendo:chart-xAxisItem-plotBands](/api/wrappers/jsp/chart/xaxisitem-plotbands).
 
 #### Example
 
@@ -255,7 +255,7 @@ More documentation is available at [kendo:chart-xAxisItem-plotBands](chart/xaxis
 
 The title configuration of the scatter chart x axis.
 
-More documentation is available at [kendo:chart-xAxisItem-title](chart/xaxisitem-title).
+More documentation is available at [kendo:chart-xAxisItem-title](/api/wrappers/jsp/chart/xaxisitem-title).
 
 #### Example
 

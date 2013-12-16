@@ -55,7 +55,7 @@ The padding of the chart plot area. A numeric value will set all paddings.The de
 
 The border of the chart plot area.
 
-More documentation is available at [kendo:chart-plotArea-border](chart/plotarea-border).
+More documentation is available at [kendo:chart-plotArea-border](/api/wrappers/jsp/chart/plotarea-border).
 
 #### Example
 
@@ -67,7 +67,7 @@ More documentation is available at [kendo:chart-plotArea-border](chart/plotarea-
 
 The margin of the chart plot area. A numeric value will set all margins.
 
-More documentation is available at [kendo:chart-plotArea-margin](chart/plotarea-margin).
+More documentation is available at [kendo:chart-plotArea-margin](/api/wrappers/jsp/chart/plotarea-margin).
 
 #### Example
 
@@ -79,7 +79,7 @@ More documentation is available at [kendo:chart-plotArea-margin](chart/plotarea-
 
 The padding of the chart plot area. A numeric value will set all paddings.The default padding for pie, donut, radar and polar charts is proportional of the chart size.
 
-More documentation is available at [kendo:chart-plotArea-padding](chart/plotarea-padding).
+More documentation is available at [kendo:chart-plotArea-padding](/api/wrappers/jsp/chart/plotarea-padding).
 
 #### Example
 

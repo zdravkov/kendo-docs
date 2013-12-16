@@ -31,7 +31,7 @@ The position of the series note.
 
 The icon of the notes.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-icon](sparkline/seriesitem-notes-icon).
+More documentation is available at [kendo:sparkline-seriesItem-notes-icon](/api/wrappers/jsp/sparkline/seriesitem-notes-icon).
 
 #### Example
 
@@ -43,7 +43,7 @@ More documentation is available at [kendo:sparkline-seriesItem-notes-icon](spark
 
 The label of the notes.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-label](sparkline/seriesitem-notes-label).
+More documentation is available at [kendo:sparkline-seriesItem-notes-label](/api/wrappers/jsp/sparkline/seriesitem-notes-label).
 
 #### Example
 
@@ -55,7 +55,7 @@ More documentation is available at [kendo:sparkline-seriesItem-notes-label](spar
 
 The line of the notes.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-line](sparkline/seriesitem-notes-line).
+More documentation is available at [kendo:sparkline-seriesItem-notes-line](/api/wrappers/jsp/sparkline/seriesitem-notes-line).
 
 #### Example
 

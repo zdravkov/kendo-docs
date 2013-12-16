@@ -150,27 +150,3 @@ The outliers shape.The supported values are:
     $outliers->type(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
-### visible
-If set to true the chart will display the series outliers. By default chart series outliers are not displayed.
-
-#### Returns
-`\Kendo\Dataviz\UI\ChartSeriesItemOutliers`
-
-#### Parameters
-
-##### $value `boolean|\Kendo\JavaScriptFunction`
-
-
-
-#### Example  - using boolean
-    <?php
-    $outliers = new \Kendo\Dataviz\UI\ChartSeriesItemOutliers();
-    $outliers->visible(true);
-    ?>
-
-#### Example  - using \Kendo\JavaScriptFunction
-    <?php
-    $outliers = new \Kendo\Dataviz\UI\ChartSeriesItemOutliers();
-    $outliers->visible(new \Kendo\JavaScriptFunction('function() { }'));
-    ?>
-

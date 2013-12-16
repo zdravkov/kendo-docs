@@ -31,7 +31,7 @@ The position of the value axis note.
 
 The items of the notes.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-notes-data](stockchart/valueaxisitem-notes-data).
+More documentation is available at [kendo:stockChart-valueAxisItem-notes-data](/api/wrappers/jsp/stockchart/valueaxisitem-notes-data).
 
 #### Example
 
@@ -43,7 +43,7 @@ More documentation is available at [kendo:stockChart-valueAxisItem-notes-data](s
 
 The icon of the notes.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-notes-icon](stockchart/valueaxisitem-notes-icon).
+More documentation is available at [kendo:stockChart-valueAxisItem-notes-icon](/api/wrappers/jsp/stockchart/valueaxisitem-notes-icon).
 
 #### Example
 
@@ -55,7 +55,7 @@ More documentation is available at [kendo:stockChart-valueAxisItem-notes-icon](s
 
 The label of the notes.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-notes-label](stockchart/valueaxisitem-notes-label).
+More documentation is available at [kendo:stockChart-valueAxisItem-notes-label](/api/wrappers/jsp/stockchart/valueaxisitem-notes-label).
 
 #### Example
 
@@ -67,7 +67,7 @@ More documentation is available at [kendo:stockChart-valueAxisItem-notes-label](
 
 The line of the notes.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-notes-line](stockchart/valueaxisitem-notes-line).
+More documentation is available at [kendo:stockChart-valueAxisItem-notes-line](/api/wrappers/jsp/stockchart/valueaxisitem-notes-line).
 
 #### Example
 

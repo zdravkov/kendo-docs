@@ -79,7 +79,7 @@ If set to true the chart will display the pane title. By default the pane title 
 
 The border of the title.
 
-More documentation is available at [kendo:chart-pane-title-border](chart/pane-title-border).
+More documentation is available at [kendo:chart-pane-title-border](/api/wrappers/jsp/chart/pane-title-border).
 
 #### Example
 
@@ -91,7 +91,7 @@ More documentation is available at [kendo:chart-pane-title-border](chart/pane-ti
 
 The margin of the title. A numeric value will set all margins.
 
-More documentation is available at [kendo:chart-pane-title-margin](chart/pane-title-margin).
+More documentation is available at [kendo:chart-pane-title-margin](/api/wrappers/jsp/chart/pane-title-margin).
 
 #### Example
 

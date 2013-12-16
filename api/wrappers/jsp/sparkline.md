@@ -90,7 +90,7 @@ The default series type.
 
 The category axis configuration options.
 
-More documentation is available at [kendo:sparkline-categoryAxis](sparkline/categoryaxis).
+More documentation is available at [kendo:sparkline-categoryAxis](/api/wrappers/jsp/sparkline/categoryaxis).
 
 #### Example
 
@@ -103,7 +103,7 @@ More documentation is available at [kendo:sparkline-categoryAxis](sparkline/cate
 The chart area configuration options.
 This is the entire visible area of the chart.
 
-More documentation is available at [kendo:sparkline-chartArea](sparkline/chartarea).
+More documentation is available at [kendo:sparkline-chartArea](/api/wrappers/jsp/sparkline/chartarea).
 
 #### Example
 
@@ -115,7 +115,7 @@ More documentation is available at [kendo:sparkline-chartArea](sparkline/chartar
 
 The plot area configuration options. This is the area containing the plotted series.
 
-More documentation is available at [kendo:sparkline-plotArea](sparkline/plotarea).
+More documentation is available at [kendo:sparkline-plotArea](/api/wrappers/jsp/sparkline/plotarea).
 
 #### Example
 
@@ -128,7 +128,7 @@ More documentation is available at [kendo:sparkline-plotArea](sparkline/plotarea
 Array of series definitions.The series type is determined by the value of the type field.
 If a type value is missing, the type is assumed to be the one specified in seriesDefaults.Each series type has a different set of options.
 
-More documentation is available at [kendo:sparkline-series](sparkline/series).
+More documentation is available at [kendo:sparkline-series](/api/wrappers/jsp/sparkline/series).
 
 #### Example
 
@@ -140,7 +140,7 @@ More documentation is available at [kendo:sparkline-series](sparkline/series).
 
 Default values for each series.
 
-More documentation is available at [kendo:sparkline-seriesDefaults](sparkline/seriesdefaults).
+More documentation is available at [kendo:sparkline-seriesDefaults](/api/wrappers/jsp/sparkline/seriesdefaults).
 
 #### Example
 
@@ -152,7 +152,7 @@ More documentation is available at [kendo:sparkline-seriesDefaults](sparkline/se
 
 The data point tooltip configuration options.
 
-More documentation is available at [kendo:sparkline-tooltip](sparkline/tooltip).
+More documentation is available at [kendo:sparkline-tooltip](/api/wrappers/jsp/sparkline/tooltip).
 
 #### Example
 
@@ -164,7 +164,7 @@ More documentation is available at [kendo:sparkline-tooltip](sparkline/tooltip).
 
 The value axis configuration options.
 
-More documentation is available at [kendo:sparkline-valueAxis](sparkline/valueaxis).
+More documentation is available at [kendo:sparkline-valueAxis](/api/wrappers/jsp/sparkline/valueaxis).
 
 #### Example
 

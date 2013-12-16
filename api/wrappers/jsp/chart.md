@@ -67,7 +67,7 @@ If set to true the chart will play animations when displaying the series. By def
 
 The category axis configuration options.
 
-More documentation is available at [kendo:chart-categoryAxis](chart/categoryaxis).
+More documentation is available at [kendo:chart-categoryAxis](/api/wrappers/jsp/chart/categoryaxis).
 
 #### Example
 
@@ -79,7 +79,7 @@ More documentation is available at [kendo:chart-categoryAxis](chart/categoryaxis
 
 The chart area configuration options. Represents the entire visible area of the chart.
 
-More documentation is available at [kendo:chart-chartArea](chart/chartarea).
+More documentation is available at [kendo:chart-chartArea](/api/wrappers/jsp/chart/chartarea).
 
 #### Example
 
@@ -91,7 +91,7 @@ More documentation is available at [kendo:chart-chartArea](chart/chartarea).
 
 The chart legend configuration options.
 
-More documentation is available at [kendo:chart-legend](chart/legend).
+More documentation is available at [kendo:chart-legend](/api/wrappers/jsp/chart/legend).
 
 #### Example
 
@@ -104,7 +104,7 @@ More documentation is available at [kendo:chart-legend](chart/legend).
 The chart panes configuration.Panes are used to split the chart in two or more parts. The panes are ordered from top to bottom.Each axis can be associated with a pane by setting its pane option to the name of the desired pane.
 Axis that don't have specified pane are placed in the top (default) pane.Series are moved to the desired pane by associating them with an axis.
 
-More documentation is available at [kendo:chart-panes](chart/panes).
+More documentation is available at [kendo:chart-panes](/api/wrappers/jsp/chart/panes).
 
 #### Example
 
@@ -116,7 +116,7 @@ More documentation is available at [kendo:chart-panes](chart/panes).
 
 The plot area configuration options. The plot area is the area which displays the series.
 
-More documentation is available at [kendo:chart-plotArea](chart/plotarea).
+More documentation is available at [kendo:chart-plotArea](/api/wrappers/jsp/chart/plotarea).
 
 #### Example
 
@@ -129,7 +129,7 @@ More documentation is available at [kendo:chart-plotArea](chart/plotarea).
 The configuration of the chart series.The series type is determined by the value of the type field.
 If a type value is missing, the type is assumed to be the one specified in seriesDefaults.
 
-More documentation is available at [kendo:chart-series](chart/series).
+More documentation is available at [kendo:chart-series](/api/wrappers/jsp/chart/series).
 
 #### Example
 
@@ -141,7 +141,7 @@ More documentation is available at [kendo:chart-series](chart/series).
 
 The chart title configuration options or text.
 
-More documentation is available at [kendo:chart-title](chart/title).
+More documentation is available at [kendo:chart-title](/api/wrappers/jsp/chart/title).
 
 #### Example
 
@@ -153,7 +153,7 @@ More documentation is available at [kendo:chart-title](chart/title).
 
 The chart series tooltip configuration options.
 
-More documentation is available at [kendo:chart-tooltip](chart/tooltip).
+More documentation is available at [kendo:chart-tooltip](/api/wrappers/jsp/chart/tooltip).
 
 #### Example
 
@@ -165,7 +165,7 @@ More documentation is available at [kendo:chart-tooltip](chart/tooltip).
 
 The value axis configuration options.
 
-More documentation is available at [kendo:chart-valueAxis](chart/valueaxis).
+More documentation is available at [kendo:chart-valueAxis](/api/wrappers/jsp/chart/valueaxis).
 
 #### Example
 
@@ -177,7 +177,7 @@ More documentation is available at [kendo:chart-valueAxis](chart/valueaxis).
 
 The X-axis configuration options of the scatter chart X-axis. Supports all valueAxis options.
 
-More documentation is available at [kendo:chart-xAxis](chart/xaxis).
+More documentation is available at [kendo:chart-xAxis](/api/wrappers/jsp/chart/xaxis).
 
 #### Example
 
@@ -189,7 +189,7 @@ More documentation is available at [kendo:chart-xAxis](chart/xaxis).
 
 The y axis configuration options of the scatter chart. Supports all valueAxis options.
 
-More documentation is available at [kendo:chart-yAxis](chart/yaxis).
+More documentation is available at [kendo:chart-yAxis](/api/wrappers/jsp/chart/yaxis).
 
 #### Example
 
@@ -309,6 +309,38 @@ For additional information check the [dragStart](/api/web/chart#events-dragStart
     <script>
         function handle_dragStart(e) {
             // Code to handle the dragStart event.
+        }
+    </script>
+
+### noteClick `String`
+
+Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteClick](/api/web/chart#events-noteClick) event documentation.
+
+#### Example
+    <kendo:chart noteClick="handle_noteClick">
+    </kendo:chart>
+    <script>
+        function handle_noteClick(e) {
+            // Code to handle the noteClick event.
+        }
+    </script>
+
+### noteHover `String`
+
+Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteHover](/api/web/chart#events-noteHover) event documentation.
+
+#### Example
+    <kendo:chart noteHover="handle_noteHover">
+    </kendo:chart>
+    <script>
+        function handle_noteHover(e) {
+            // Code to handle the noteHover event.
         }
     </script>
 
@@ -582,6 +614,42 @@ For additional information check the [dragStart](/api/web/chart#events-dragStart
                 }
             </script>
         </kendo:chart-dragStart>
+    </kendo:chart>
+
+### kendo:chart-noteClick
+
+Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteClick](/api/web/chart#events-noteClick) event documentation.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-noteClick>
+            <script>
+                function(e) {
+                    // Code to handle the noteClick event.
+                }
+            </script>
+        </kendo:chart-noteClick>
+    </kendo:chart>
+
+### kendo:chart-noteHover
+
+Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteHover](/api/web/chart#events-noteHover) event documentation.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-noteHover>
+            <script>
+                function(e) {
+                    // Code to handle the noteHover event.
+                }
+            </script>
+        </kendo:chart-noteHover>
     </kendo:chart>
 
 ### kendo:chart-plotAreaClick

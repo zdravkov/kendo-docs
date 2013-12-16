@@ -67,7 +67,7 @@ A value indicating if transition animations should be played.
 
 The category axis configuration options.
 
-More documentation is available at [kendo:stockChart-categoryAxis](stockchart/categoryaxis).
+More documentation is available at [kendo:stockChart-categoryAxis](/api/wrappers/jsp/stockchart/categoryaxis).
 
 #### Example
 
@@ -80,7 +80,7 @@ More documentation is available at [kendo:stockChart-categoryAxis](stockchart/ca
 The chart area configuration options.
 This is the entire visible area of the chart.
 
-More documentation is available at [kendo:stockChart-chartArea](stockchart/chartarea).
+More documentation is available at [kendo:stockChart-chartArea](/api/wrappers/jsp/stockchart/chartarea).
 
 #### Example
 
@@ -92,7 +92,7 @@ More documentation is available at [kendo:stockChart-chartArea](stockchart/chart
 
 The chart legend configuration options.
 
-More documentation is available at [kendo:stockChart-legend](stockchart/legend).
+More documentation is available at [kendo:stockChart-legend](/api/wrappers/jsp/stockchart/legend).
 
 #### Example
 
@@ -104,7 +104,7 @@ More documentation is available at [kendo:stockChart-legend](stockchart/legend).
 
 The data navigator configuration options.
 
-More documentation is available at [kendo:stockChart-navigator](stockchart/navigator).
+More documentation is available at [kendo:stockChart-navigator](/api/wrappers/jsp/stockchart/navigator).
 
 #### Example
 
@@ -117,7 +117,7 @@ More documentation is available at [kendo:stockChart-navigator](stockchart/navig
 The chart panes configuration.Panes are used to split the chart in two or more parts. The panes are ordered from top to bottom.Each axis can be associated with a pane by setting its pane option to the name of the desired pane.
 Axis that don't have specified pane are placed in the top (default) pane.Series are moved to the desired pane by associating them with an axis.
 
-More documentation is available at [kendo:stockChart-panes](stockchart/panes).
+More documentation is available at [kendo:stockChart-panes](/api/wrappers/jsp/stockchart/panes).
 
 #### Example
 
@@ -129,7 +129,7 @@ More documentation is available at [kendo:stockChart-panes](stockchart/panes).
 
 The plot area configuration options. This is the area containing the plotted series.
 
-More documentation is available at [kendo:stockChart-plotArea](stockchart/plotarea).
+More documentation is available at [kendo:stockChart-plotArea](/api/wrappers/jsp/stockchart/plotarea).
 
 #### Example
 
@@ -142,7 +142,7 @@ More documentation is available at [kendo:stockChart-plotArea](stockchart/plotar
 Array of series definitions.The series type is determined by the value of the type field.
 If a type value is missing, the type is assumed to be the one specified in seriesDefaults.Each series type has a different set of options.
 
-More documentation is available at [kendo:stockChart-series](stockchart/series).
+More documentation is available at [kendo:stockChart-series](/api/wrappers/jsp/stockchart/series).
 
 #### Example
 
@@ -154,7 +154,7 @@ More documentation is available at [kendo:stockChart-series](stockchart/series).
 
 The chart title configuration options or text.
 
-More documentation is available at [kendo:stockChart-title](stockchart/title).
+More documentation is available at [kendo:stockChart-title](/api/wrappers/jsp/stockchart/title).
 
 #### Example
 
@@ -166,7 +166,7 @@ More documentation is available at [kendo:stockChart-title](stockchart/title).
 
 The data point tooltip configuration options.
 
-More documentation is available at [kendo:stockChart-tooltip](stockchart/tooltip).
+More documentation is available at [kendo:stockChart-tooltip](/api/wrappers/jsp/stockchart/tooltip).
 
 #### Example
 
@@ -178,7 +178,7 @@ More documentation is available at [kendo:stockChart-tooltip](stockchart/tooltip
 
 The value axis configuration options.
 
-More documentation is available at [kendo:stockChart-valueAxis](stockchart/valueaxis).
+More documentation is available at [kendo:stockChart-valueAxis](/api/wrappers/jsp/stockchart/valueaxis).
 
 #### Example
 
@@ -299,6 +299,38 @@ For additional information check the [dragEnd](/api/web/stockchart#events-dragEn
     <script>
         function handle_dragEnd(e) {
             // Code to handle the dragEnd event.
+        }
+    </script>
+
+### noteClick `String`
+
+Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteClick](/api/web/stockchart#events-noteClick) event documentation.
+
+#### Example
+    <kendo:stockChart noteClick="handle_noteClick">
+    </kendo:stockChart>
+    <script>
+        function handle_noteClick(e) {
+            // Code to handle the noteClick event.
+        }
+    </script>
+
+### noteHover `String`
+
+Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteHover](/api/web/stockchart#events-noteHover) event documentation.
+
+#### Example
+    <kendo:stockChart noteHover="handle_noteHover">
+    </kendo:stockChart>
+    <script>
+        function handle_noteHover(e) {
+            // Code to handle the noteHover event.
         }
     </script>
 
@@ -573,6 +605,42 @@ For additional information check the [dragEnd](/api/web/stockchart#events-dragEn
                 }
             </script>
         </kendo:stockChart-dragEnd>
+    </kendo:stockChart>
+
+### kendo:stockChart-noteClick
+
+Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteClick](/api/web/stockchart#events-noteClick) event documentation.
+
+#### Example
+    <kendo:stockChart>
+        <kendo:stockChart-noteClick>
+            <script>
+                function(e) {
+                    // Code to handle the noteClick event.
+                }
+            </script>
+        </kendo:stockChart-noteClick>
+    </kendo:stockChart>
+
+### kendo:stockChart-noteHover
+
+Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteHover](/api/web/stockchart#events-noteHover) event documentation.
+
+#### Example
+    <kendo:stockChart>
+        <kendo:stockChart-noteHover>
+            <script>
+                function(e) {
+                    // Code to handle the noteHover event.
+                }
+            </script>
+        </kendo:stockChart-noteHover>
     </kendo:stockChart>
 
 ### kendo:stockChart-plotAreaClick

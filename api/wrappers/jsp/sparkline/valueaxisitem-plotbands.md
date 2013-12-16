@@ -23,7 +23,7 @@ The plot bands of the value axis.
 
 The plot bands of the value axis.
 
-More documentation is available at [kendo:sparkline-valueAxisItem-plotBand](sparkline/valueaxisitem-plotband).
+More documentation is available at [kendo:sparkline-valueAxisItem-plotBand](/api/wrappers/jsp/sparkline/valueaxisitem-plotband).
 
 #### Example
 

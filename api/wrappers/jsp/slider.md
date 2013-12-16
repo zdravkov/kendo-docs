@@ -101,7 +101,7 @@ The underlying value of the Slider.
 
 Configuration of the Slider tooltip.
 
-More documentation is available at [kendo:slider-tooltip](slider/tooltip).
+More documentation is available at [kendo:slider-tooltip](/api/wrappers/jsp/slider/tooltip).
 
 #### Example
 

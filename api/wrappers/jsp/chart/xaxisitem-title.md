@@ -95,7 +95,7 @@ If set to true the chart will display the scatter chart x axis title. By default
 
 The border of the title.
 
-More documentation is available at [kendo:chart-xAxisItem-title-border](chart/xaxisitem-title-border).
+More documentation is available at [kendo:chart-xAxisItem-title-border](/api/wrappers/jsp/chart/xaxisitem-title-border).
 
 #### Example
 
@@ -107,7 +107,7 @@ More documentation is available at [kendo:chart-xAxisItem-title-border](chart/xa
 
 The margin of the title. A numeric value will set all margins.
 
-More documentation is available at [kendo:chart-xAxisItem-title-margin](chart/xaxisitem-title-margin).
+More documentation is available at [kendo:chart-xAxisItem-title-margin](/api/wrappers/jsp/chart/xaxisitem-title-margin).
 
 #### Example
 
@@ -119,7 +119,7 @@ More documentation is available at [kendo:chart-xAxisItem-title-margin](chart/xa
 
 The padding of the title. A numeric value will set all paddings.
 
-More documentation is available at [kendo:chart-xAxisItem-title-padding](chart/xaxisitem-title-padding).
+More documentation is available at [kendo:chart-xAxisItem-title-padding](/api/wrappers/jsp/chart/xaxisitem-title-padding).
 
 #### Example
 

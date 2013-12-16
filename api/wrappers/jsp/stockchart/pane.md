@@ -72,7 +72,7 @@ The pane title text or configuration. Further configuration is available via [ke
 
 The border of the pane.
 
-More documentation is available at [kendo:stockChart-pane-border](stockchart/pane-border).
+More documentation is available at [kendo:stockChart-pane-border](/api/wrappers/jsp/stockchart/pane-border).
 
 #### Example
 
@@ -84,7 +84,7 @@ More documentation is available at [kendo:stockChart-pane-border](stockchart/pan
 
 The pane title text or configuration.
 
-More documentation is available at [kendo:stockChart-pane-title](stockchart/pane-title).
+More documentation is available at [kendo:stockChart-pane-title](/api/wrappers/jsp/stockchart/pane-title).
 
 #### Example
 

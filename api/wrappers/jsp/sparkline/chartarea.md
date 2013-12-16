@@ -64,7 +64,7 @@ The width of the chart area.
 
 The border of the chart area.
 
-More documentation is available at [kendo:sparkline-chartArea-border](sparkline/chartarea-border).
+More documentation is available at [kendo:sparkline-chartArea-border](/api/wrappers/jsp/sparkline/chartarea-border).
 
 #### Example
 

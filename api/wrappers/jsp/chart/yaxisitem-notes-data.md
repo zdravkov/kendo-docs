@@ -23,7 +23,7 @@ The items of the notes.
 
 The items of the notes.
 
-More documentation is available at [kendo:chart-yAxisItem-notes-dataItem](chart/yaxisitem-notes-dataitem).
+More documentation is available at [kendo:chart-yAxisItem-notes-dataItem](/api/wrappers/jsp/chart/yaxisitem-notes-dataitem).
 
 #### Example
 

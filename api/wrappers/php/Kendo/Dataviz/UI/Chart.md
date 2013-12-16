@@ -439,6 +439,78 @@ For additional information check the [legendItemHover](/api/web/chart#events-leg
     $chart->legendItemHover(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### noteClick
+Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [noteClick](/api/web/chart#events-noteClick) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Chart`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->noteClick('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onNoteClick(e) {
+            // handle the noteClick event.
+        }
+    </script>
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->noteClick('onNoteClick');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->noteClick(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### noteHover
+Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+For additional information check the [noteHover](/api/web/chart#events-noteHover) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Chart`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->noteHover('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onNoteHover(e) {
+            // handle the noteHover event.
+        }
+    </script>
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->noteHover('onNoteHover');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $chart = new \Kendo\Dataviz\UI\Chart('Chart');
+    $chart->noteHover(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### addPane
 
 Adds one or more ChartPane to the Chart.

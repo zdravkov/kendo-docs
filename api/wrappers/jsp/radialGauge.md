@@ -35,7 +35,7 @@ A value indicating if transition animations should be played.
 The gauge area configuration options.
 This is the entire visible area of the gauge.
 
-More documentation is available at [kendo:radialGauge-gaugeArea](radialgauge/gaugearea).
+More documentation is available at [kendo:radialGauge-gaugeArea](/api/wrappers/jsp/radialgauge/gaugearea).
 
 #### Example
 
@@ -47,7 +47,7 @@ More documentation is available at [kendo:radialGauge-gaugeArea](radialgauge/gau
 
 The pointer configuration options.
 
-More documentation is available at [kendo:radialGauge-pointer](radialgauge/pointer).
+More documentation is available at [kendo:radialGauge-pointer](/api/wrappers/jsp/radialgauge/pointer).
 
 #### Example
 
@@ -59,7 +59,7 @@ More documentation is available at [kendo:radialGauge-pointer](radialgauge/point
 
 Configures the scale.
 
-More documentation is available at [kendo:radialGauge-scale](radialgauge/scale).
+More documentation is available at [kendo:radialGauge-scale](/api/wrappers/jsp/radialgauge/scale).
 
 #### Example
 

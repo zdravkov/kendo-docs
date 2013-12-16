@@ -39,7 +39,7 @@ The value of the note.
 
 The icon of the note.
 
-More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-icon](chart/xaxisitem-notes-dataitem-icon).
+More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-icon](/api/wrappers/jsp/chart/xaxisitem-notes-dataitem-icon).
 
 #### Example
 
@@ -51,7 +51,7 @@ More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-icon](c
 
 The label of the note.
 
-More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-label](chart/xaxisitem-notes-dataitem-label).
+More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-label](/api/wrappers/jsp/chart/xaxisitem-notes-dataitem-label).
 
 #### Example
 
@@ -63,7 +63,7 @@ More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-label](
 
 The line of the note.
 
-More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-line](chart/xaxisitem-notes-dataitem-line).
+More documentation is available at [kendo:chart-xAxisItem-notes-dataItem-line](/api/wrappers/jsp/chart/xaxisitem-notes-dataitem-line).
 
 #### Example
 

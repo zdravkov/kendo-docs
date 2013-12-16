@@ -31,7 +31,7 @@ The position of the series note.
 
 The icon of the notes.
 
-More documentation is available at [kendo:stockChart-seriesItem-notes-icon](stockchart/seriesitem-notes-icon).
+More documentation is available at [kendo:stockChart-seriesItem-notes-icon](/api/wrappers/jsp/stockchart/seriesitem-notes-icon).
 
 #### Example
 
@@ -43,7 +43,7 @@ More documentation is available at [kendo:stockChart-seriesItem-notes-icon](stoc
 
 The label of the notes.
 
-More documentation is available at [kendo:stockChart-seriesItem-notes-label](stockchart/seriesitem-notes-label).
+More documentation is available at [kendo:stockChart-seriesItem-notes-label](/api/wrappers/jsp/stockchart/seriesitem-notes-label).
 
 #### Example
 
@@ -55,7 +55,7 @@ More documentation is available at [kendo:stockChart-seriesItem-notes-label](sto
 
 The line of the notes.
 
-More documentation is available at [kendo:stockChart-seriesItem-notes-line](stockchart/seriesitem-notes-line).
+More documentation is available at [kendo:stockChart-seriesItem-notes-line](/api/wrappers/jsp/stockchart/seriesitem-notes-line).
 
 #### Example
 

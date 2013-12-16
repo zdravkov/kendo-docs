@@ -227,7 +227,7 @@ The line width.** Available for line series **
 
 The border of the points.** Applicable to bar, column and pie series **
 
-More documentation is available at [kendo:sparkline-seriesItem-border](sparkline/seriesitem-border).
+More documentation is available at [kendo:sparkline-seriesItem-border](/api/wrappers/jsp/sparkline/seriesitem-border).
 
 #### Example
 
@@ -239,7 +239,7 @@ More documentation is available at [kendo:sparkline-seriesItem-border](sparkline
 
 The label connectors options.** Applicable to pie series. **
 
-More documentation is available at [kendo:sparkline-seriesItem-connectors](sparkline/seriesitem-connectors).
+More documentation is available at [kendo:sparkline-seriesItem-connectors](/api/wrappers/jsp/sparkline/seriesitem-connectors).
 
 #### Example
 
@@ -251,7 +251,7 @@ More documentation is available at [kendo:sparkline-seriesItem-connectors](spark
 
 Configures the appearance of highlighted points.
 
-More documentation is available at [kendo:sparkline-seriesItem-highlight](sparkline/seriesitem-highlight).
+More documentation is available at [kendo:sparkline-seriesItem-highlight](/api/wrappers/jsp/sparkline/seriesitem-highlight).
 
 #### Example
 
@@ -263,7 +263,7 @@ More documentation is available at [kendo:sparkline-seriesItem-highlight](sparkl
 
 Configures the series data labels.
 
-More documentation is available at [kendo:sparkline-seriesItem-labels](sparkline/seriesitem-labels).
+More documentation is available at [kendo:sparkline-seriesItem-labels](/api/wrappers/jsp/sparkline/seriesitem-labels).
 
 #### Example
 
@@ -275,7 +275,7 @@ More documentation is available at [kendo:sparkline-seriesItem-labels](sparkline
 
 Line options.** Applicable to area series. **
 
-More documentation is available at [kendo:sparkline-seriesItem-line](sparkline/seriesitem-line).
+More documentation is available at [kendo:sparkline-seriesItem-line](/api/wrappers/jsp/sparkline/seriesitem-line).
 
 #### Example
 
@@ -287,7 +287,7 @@ More documentation is available at [kendo:sparkline-seriesItem-line](sparkline/s
 
 Marker options.** Applicable to area and line series **
 
-More documentation is available at [kendo:sparkline-seriesItem-markers](sparkline/seriesitem-markers).
+More documentation is available at [kendo:sparkline-seriesItem-markers](/api/wrappers/jsp/sparkline/seriesitem-markers).
 
 #### Example
 
@@ -299,7 +299,7 @@ More documentation is available at [kendo:sparkline-seriesItem-markers](sparklin
 
 The series notes configuration.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes](sparkline/seriesitem-notes).
+More documentation is available at [kendo:sparkline-seriesItem-notes](/api/wrappers/jsp/sparkline/seriesitem-notes).
 
 #### Example
 
@@ -311,7 +311,7 @@ More documentation is available at [kendo:sparkline-seriesItem-notes](sparkline/
 
 The effects overlay.
 
-More documentation is available at [kendo:sparkline-seriesItem-overlay](sparkline/seriesitem-overlay).
+More documentation is available at [kendo:sparkline-seriesItem-overlay](/api/wrappers/jsp/sparkline/seriesitem-overlay).
 
 #### Example
 
@@ -323,7 +323,7 @@ More documentation is available at [kendo:sparkline-seriesItem-overlay](sparklin
 
 The target of the bullet chart.
 
-More documentation is available at [kendo:sparkline-seriesItem-target](sparkline/seriesitem-target).
+More documentation is available at [kendo:sparkline-seriesItem-target](/api/wrappers/jsp/sparkline/seriesitem-target).
 
 #### Example
 
@@ -335,7 +335,7 @@ More documentation is available at [kendo:sparkline-seriesItem-target](sparkline
 
 The data point tooltip configuration options.
 
-More documentation is available at [kendo:sparkline-seriesItem-tooltip](sparkline/seriesitem-tooltip).
+More documentation is available at [kendo:sparkline-seriesItem-tooltip](/api/wrappers/jsp/sparkline/seriesitem-tooltip).
 
 #### Example
 
