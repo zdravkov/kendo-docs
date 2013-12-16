@@ -10383,9 +10383,6 @@ The rotation angle of the markers.
 
 The chart series outliers configuration.
 
-> The chart displays the series labels when the [series.outliers.visible](#configuration-series.outliers.visible) option is set to `true`.
-> The `outliers` option is supported when [series.type](#configuration-series.type) is set to "boxPlot".
-
 #### Example - set the chart series outliers
 
     <div id="chart"></div>
@@ -10394,7 +10391,6 @@ The chart series outliers configuration.
       series: [{
         type: "boxPlot",
         outliers: {
-          visible: true,
           background: "green",
           size: 30
         },
@@ -10415,7 +10411,6 @@ The background color of the series outliers.
       series: [{
         type: "boxPlot",
         outliers: {
-          visible: true,
           background: "green"
         },
         data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
@@ -10435,7 +10430,6 @@ The border of the outliers.
       series: [{
         type: "boxPlot",
         outliers: {
-          visible: true,
           border: {
             width: 2,
             color: "green"
@@ -10458,7 +10452,6 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
       series: [{
         type: "boxPlot",
         outliers: {
-          visible: true,
           border: {
             width: 2,
             color: "green"
@@ -10481,7 +10474,6 @@ The width of the border in pixels. By default the border width is set to zero wh
       series: [{
         type: "boxPlot",
         outliers: {
-          visible: true,
           border: {
             width: 2
           }
@@ -10503,7 +10495,6 @@ The marker size in pixels.
       series: [{
         type: "boxPlot",
         outliers: {
-          visible: true,
           size: 30
         },
         data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
@@ -10529,27 +10520,7 @@ The supported values are:
       series: [{
         type: "boxPlot",
         outliers: {
-          visible: true,
           type: "triangle",
-        },
-        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
-      }]
-    });
-    </script>
-
-### series.outliers.visible `Boolean|Function` *(default: false)*
-
-If set to `true` the chart will display the series outliers. By default chart series outliers are not displayed.
-
-#### Example - display the chart series outliers
-
-    <div id="chart"></div>
-    <script>
-    $("#chart").kendoChart({
-      series: [{
-        type: "boxPlot",
-        outliers: {
-          visible: true
         },
         data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
       }]
@@ -10614,9 +10585,6 @@ The rotation angle of the outliers.
 
 The chart series extremes configuration.
 
-> The chart displays the series labels when the [series.extremes.visible](#configuration-series.extremes.visible) option is set to `true`.
-> The `outliers` option is supported when [series.type](#configuration-series.type) is set to "boxPlot".
-
 #### Example - set the chart series extremes
 
     <div id="chart"></div>
@@ -10625,7 +10593,6 @@ The chart series extremes configuration.
       series: [{
         type: "boxPlot",
         extremes: {
-          visible: true,
           background: "green",
           size: 30
         },
@@ -10646,7 +10613,6 @@ The background color of the series outliers.
       series: [{
         type: "boxPlot",
         extremes: {
-          visible: true,
           background: "green"
         },
         data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
@@ -10666,7 +10632,6 @@ The border of the extremes.
       series: [{
         type: "boxPlot",
         extremes: {
-          visible: true,
           border: {
             width: 2,
             color: "green"
@@ -10689,7 +10654,6 @@ The color of the border. Accepts a valid CSS color string, including hex and rgb
       series: [{
         type: "boxPlot",
         extremes: {
-          visible: true,
           border: {
             width: 2,
             color: "green"
@@ -10712,7 +10676,6 @@ The width of the border in pixels. By default the border width is set to zero wh
       series: [{
         type: "boxPlot",
         extremes: {
-          visible: true,
           border: {
             width: 2
           }
@@ -10734,7 +10697,6 @@ The extremes size in pixels.
       series: [{
         type: "boxPlot",
         extremes: {
-          visible: true,
           size: 30
         },
         data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
@@ -10760,27 +10722,7 @@ The supported values are:
       series: [{
         type: "boxPlot",
         extremes: {
-          visible: true,
           type: "triangle",
-        },
-        data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
-      }]
-    });
-    </script>
-
-### series.extremes.visible `Boolean|Function` *(default: false)*
-
-If set to `true` the chart will display the series extremes. By default chart series extremes are not displayed.
-
-#### Example - display the chart series extremes
-
-    <div id="chart"></div>
-    <script>
-    $("#chart").kendoChart({
-      series: [{
-        type: "boxPlot",
-        extremes: {
-          visible: true
         },
         data: [1,2,3,4,5,3.5,[0,0,0.5,6,7,11]]
       }]
