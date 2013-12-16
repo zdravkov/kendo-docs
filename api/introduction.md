@@ -24,6 +24,28 @@ API guides include Configuration, Fields, Methods and Events.  Code samples are 
 
 Filtering an API reference page for a specific configuration, field, method or event can be done by typing into the "filter doc..." box in the menu bar.  As characters are typed, any sections with headers containing the matched characters will be highlighted, and unmatched sections will be removed from the page.
 
+#### API Reference
+
+##### [DataViz](http://docs.kendoui.com/api/dataviz)
+
+The API Reference For Kendo UI DataViz
+
+##### [Framework](http://docs.kendoui.com/api/framework)
+
+The API Reference For Kendo UI Core Framework (i.e. MVVM, Globalization, SPA)
+
+##### [Mobile](http://docs.kendoui.com/api/mobile)
+
+The API Reference For Kendo UI Mobile
+
+##### [Web](http://docs.kendoui.com/api/web)
+
+(i.e. Grid, Treeview, Scheduler)
+
+##### [Wrappers](http://docs.kendoui.com/api/wrappers)
+
+The API Reference For Kendo UI Server Wrappers (ASP.NET MVC, Java, PHP)
+
 
 
 
