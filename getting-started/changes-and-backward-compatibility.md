@@ -14,6 +14,7 @@ publish: true
 
 #### Breaking changes
 
+* **Core**: kendo.support.pointers now only shows support for IE11 pointer events - kendo.support.msPointers was added to indicate that IE10 pointer events are supported too.
 * **Splitter**: the internal method `trigger("resize")`, which has been provided as a workaround in certain scenarios, no longer works.
 It has been replaced with a [public API method `resize()`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages), which now all Kendo UI widgets have.
 Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
