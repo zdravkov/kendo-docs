@@ -23,7 +23,7 @@ While these files will ensure that Kendo UI looks a lot like Bootstrap, it is no
 
 ## Using the responsive features of Bootstrap
 
-Using the responsive features of Bootstrap does not differ from other responsive sites; refer to the help topic on [how to use Kendo UI in responsive web pages](#).
+Using the responsive features of Bootstrap does not differ from other responsive sites; refer to the help topic on [how to use Kendo UI in responsive web pages](./using-kendo-in-responsive-web-pages).
 
 ## Using a customized version of Bootstrap
 
