@@ -71,3 +71,16 @@ Most Kendo UI Widgets work and auto-resize when used in responsive web pages out
           kendo.resize($(".chart-wrapper"));
         });
     </script>
+
+## Individual widget resizing
+
+Each Kendo UI widget has a `resize()` method, which can be used to trigger a layout readjustment, instead of using `kendo.resize`.
+The widget `resize` method accepts a single boolean parameter, which defines whether the widget should execute its layout adjustment algorithm even if the widget's dimensions have not changed ("force" mode).
+
+### Example: using widget `resize()`
+
+    var gridWidget = $("#GridID").data("kendoGrid");
+    // trigger layout readjustment
+    gridWidget.resize();
+    // force layout readjustment
+    gridWidget.resize(true);
