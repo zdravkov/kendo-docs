@@ -80,7 +80,7 @@ Defines the width of the column resize handle in pixels. Apply a larger value fo
     <div id="grid"></div>
     <script>
     $("#grid").kendoGrid({
-		columnResizeHandleWidth: 6
+        columnResizeHandleWidth: 6
     });
     </script>
 
@@ -267,29 +267,29 @@ The text displayed by the command button. If not set the [name](#configuration-c
     </script>
 
 #### Example - customize the "edit", "cancel" and "update" text of the edit command
-	<div id="grid"></div>
-	<script>
-	$("#grid").kendoGrid({
-	  columns: [
-	    { field: "name" },
-	    { field: "age" },
-	    { command: [{ name: "edit",
-	                  text: { edit: "Custom edit", cancel: "Custom cancel", update: "Custom update" } }]  }
-	  ],
-	  dataSource: {
-	    data: [
-	      { id: 1, name: "Jane Doe", age: 30 },
-	      { id: 2, name: "John Doe", age: 33 }
-	    ],
-	    schema: {
-	      model: { id: "id" }
-	    }
-	  },
-	  editable: {
-	    mode: "inline"
-	  }
-	});
-	</script>
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: [{ name: "edit",
+                      text: { edit: "Custom edit", cancel: "Custom cancel", update: "Custom update" } }]  }
+      ],
+      dataSource: {
+        data: [
+          { id: 1, name: "Jane Doe", age: 30 },
+          { id: 2, name: "John Doe", age: 33 }
+        ],
+        schema: {
+          model: { id: "id" }
+        }
+      },
+      editable: {
+        mode: "inline"
+      }
+    });
+    </script>
 
 ### columns.command.className `String`
 
@@ -345,7 +345,7 @@ The function context (available via the `this` keyword) will be set to the grid 
 
 Provides a way to specify a custom editing UI for the column. Use the `container` parameter to create the editing UI.
 
-> The editing UI should contain an element whose `name` HTML attribute is set as the column [field](#configuration-columns.field). 
+> The editing UI should contain an element whose `name` HTML attribute is set as the column [field](#configuration-columns.field).
 
 > Validation settings defined in the `model.fields` configuration will **not** be applied automatically. In order the validation to work, **the developer is responsible for attaching the corresponding validation attributes to the editor input**. In case the custom editor is a widget, the developer should [customize the validation warning tooltip position](http://docs.kendoui.com/getting-started/framework/validator/overview#customizing-the-tooltip-position) in order to avoid visual issues.
 
@@ -1621,18 +1621,18 @@ For more information, please refer to the [Window configuration API](/api/web/wi
     <div id="grid"></div>
     <script>
 
-	function myOpenEventHandler(e) {
-		// ...
-	}
+    function myOpenEventHandler(e) {
+        // ...
+    }
 
     $("#grid").kendoGrid({
       editable: {
         mode: "popup",
         window: {
-			title: "My Custom Title",
-			animation: false,
-			open: myOpenEventHandler
-		}
+            title: "My Custom Title",
+            animation: false,
+            open: myOpenEventHandler
+        }
       }
     });
     </script>
@@ -4189,6 +4189,12 @@ Clears the currently selected table rows or cells (depending on the current sele
 ### closeCell
 
 Stops editing the table cell which is in edit mode. Requires "incell" [edit mode](#configuration-editable.mode).
+
+#### Parameters
+
+##### isCancel `Boolean` *optional*
+
+A flag specifying whether to fire the `cancel` event. By default the event is not fired.
 
 #### Example - cancel cell editing
 
