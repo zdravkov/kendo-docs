@@ -1859,6 +1859,8 @@ the data source sends the parameters using jQuery's [conventions](http://api.jqu
 
 > The `parameterMap` method is often used to encode the parameters in JSON format.
 
+> **Important:** The `parameterMap` function will not be called when using custom functions for the read, update, create and destroy operations. 
+
 #### Parameters
 
 ##### data `Object`
