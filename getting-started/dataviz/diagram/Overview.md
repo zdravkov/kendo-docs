@@ -41,7 +41,7 @@ which will render a rectangle in the upper-left corner of the diagram surface. T
 
 Additional properties can be specified via the options parameter. For instance, you can set the background color of the shape like so;
 
-	diagram.addShape(new Point(100,220), {background: "red});
+	diagram.addShape(new Point(100,220), {background: "red"});
 
 A more complete overview of the options can be found in the API documentation.
 
