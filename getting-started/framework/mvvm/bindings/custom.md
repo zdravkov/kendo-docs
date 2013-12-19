@@ -8,7 +8,7 @@ publish: true
 
 Kendo MVVM provides the ability to create custom bindings.
 
-> **Important:** The custom binding should be registered **before** `kendo.bind` is called.
+> **Important:** The custom binding should be registered **before**  `kendo.bind` is called.
 
 ## Registering a custom binding
 
