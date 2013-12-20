@@ -11153,9 +11153,13 @@ The space between the chart series as proportion of the series width.
 
 ### series.stack `Boolean|String` *(default: false)*
 
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
+A value indicating if the series should be stacked.
 
-> The `stack` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine" and "verticalArea".
+
+String value indicates that the series should be stacked in a group with the specified name.
+
+> The named `stack` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
 
 #### Example - enable chart series stacking
 
@@ -13522,9 +13526,13 @@ The space between the chart series as proportion of the series width.
 
 ### seriesDefaults.stack `Boolean` *(default: false)*
 
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
+A value indicating if the series should be stacked.
 
-> The `stack` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine" and "verticalArea".
+
+String value indicates that the series should be stacked in a group with the specified name.
+
+> The named `stack` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
 
 #### Example - enable chart series stacking
 
