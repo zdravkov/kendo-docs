@@ -171,3 +171,31 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/window#events)
           )
     )
 
+## Using a Form inside the Window
+
+When a complete form should be inserted inside a Window, the correct approach is to end the Window declaration with `.Render();` and wrap it in a **non-rendering** code block.
+This requirement does not apply if the form is defined via plain HTML tags (`&lt;form&gt;...&lt;/form&gt;`).
+
+### WebForms - inserting a complete form inside the Window
+
+    <% Html.Kendo().Window()
+        .Content(() => 
+        {
+            using (Html.BeginForm(...)) { %>
+                .........
+            <% }
+        })
+        .Render();
+    %>
+    
+### Razor - inserting a complete form inside the Window
+
+    @{Html.Kendo().Window()
+        .Content(@<text>
+            @using (Html.BeginForm(...))
+            {
+               .........
+            }
+        </text>)
+        .Render();
+    }
