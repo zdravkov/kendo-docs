@@ -13,6 +13,28 @@ The kendo Touch widget exposes a cross-platform compatible API for handling user
 
 ## Configuration
 
+### filter `String`
+
+jQuery selector that specifies child elements that are touchable if a widget is attached to a container.
+
+#### Example
+
+    <ul id="list">
+        <li class="touch">Foo</li>
+        <li>Not selected</li>
+        <li class="touch">Foo</li>
+        <li>Not selected</li>
+    </ul>
+
+    <script>
+    $("#list").kendoTouch({
+        filter: ".touch",
+        drag: function(e) {
+            console.log("you dragged a list item");
+        }
+    });
+    </script>
+
 ### surface `jQuery` *(default: null)*
 
 If specified, the user drags will be tracked within the surface boundaries.
