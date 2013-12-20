@@ -171,10 +171,12 @@ You can subscribe to all [events](http://docs.kendoui.com/api/web/window#events)
           )
     )
 
-## Using a Form inside the Window
+## Using Html.BeginForm inside a Window
 
 When a complete form should be inserted inside a Window, the correct approach is to end the Window declaration with `.Render();` and wrap it in a **non-rendering** code block.
 This requirement does not apply if the form is defined via plain HTML tags (`&lt;form&gt;...&lt;/form&gt;`).
+
+See also [Using Kendo UI Window with a form](/getting-started/web/window/overview#using-kendo-ui-window-with-a-form).
 
 ### WebForms - inserting a complete form inside the Window
 
