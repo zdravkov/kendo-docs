@@ -617,6 +617,32 @@ Available views are "time" and "date".
     });
     </script>
 
+### setOptions
+
+#### Parameters
+
+##### options `Object`
+
+The new configuration options.
+
+Changes the initial DateTimePicker configuration. **Will be included in Q3 2013 SP1. Currently available in Q3 2013 internal builds only.**
+
+#### Example
+
+    <input id="datetimepicker" />
+    <script>
+    $("#datetimepicker").kendoDateTimePicker({
+        min: new Date(2001, 0, 1),
+        max: new Date()
+    });
+
+    var datetimepicker = $("#datetimepicker").data("kendoDateTimePicker");
+
+    datetimepicker.setOptions({
+        min: new Date(2010, 5, 6)
+    });
+    </script>
+
 ### toggle
 
 Toggles the calendar or the time drop-down list.

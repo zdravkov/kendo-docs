@@ -423,6 +423,33 @@ Opens the drop-down list of a TimePicker.
     });
     </script>
 
+### setOptions
+
+#### Parameters
+
+##### options `Object`
+
+The new configuration options.
+
+Changes the initial TimePicker configuration. **Will be included in Q3 2013 SP1. Currently available in Q3 2013 internal builds only.**
+
+#### Example
+
+    <input id="timepicker" />
+    <script>
+    $("#timepicker").kendoTimePicker({
+        min: new Date(2001, 0, 1, 8, 0, 0),
+        max: new Date(2013, 0, 1, 18, 0 0)
+    });
+
+    var timepicker = $("#timepicker").data("kendoTimePicker");
+
+    timepicker.setOptions({
+        min: new Date(2013, 0, 1, 11, 30, 0),
+        max: new Date(2013, 0, 1, 16, 30, 0)
+    });
+    </script>    
+    
 ### value
 
 Gets or sets the value of the TimePicker.
