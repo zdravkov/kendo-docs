@@ -547,6 +547,26 @@ Opens the calendar.
     });
     </script>
 
+### setOptions
+
+Changes the initial DatePicker configuration. **Will be included in Q3 2013 SP1. Currently available in Q3 2013 internal builds only.**
+
+#### Example
+
+    <input id="datepicker" />
+    <script>
+    $("#datepicker").kendoDatePicker({
+        min: new Date(2001, 0, 1),
+        max: new Date()
+    });
+
+    var datepicker = $("#datepicker").data("kendoDatePicker");
+
+    datepicker.setOptions({
+        min: new Date(2010, 5, 6)
+    });
+    </script>
+    
 ### value
 
 Gets/Sets the value of the DatePicker.
