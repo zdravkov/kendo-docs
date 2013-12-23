@@ -621,11 +621,11 @@ Available views are "time" and "date".
 
 #### Parameters
 
+Changes the initial DateTimePicker configuration. **Will be included in Q3 2013 SP1. Currently available in Q3 2013 internal builds only.**
+
 ##### options `Object`
 
 The new configuration options.
-
-Changes the initial DateTimePicker configuration. **Will be included in Q3 2013 SP1. Currently available in Q3 2013 internal builds only.**
 
 #### Example
 

@@ -549,13 +549,13 @@ Opens the calendar.
 
 ### setOptions
 
+Changes the initial DatePicker configuration. **Will be included in Q3 2013 SP1. Currently available in Q3 2013 internal builds only.**
+
 #### Parameters
 
 ##### options `Object`
 
 The new configuration options.
-
-Changes the initial DatePicker configuration. **Will be included in Q3 2013 SP1. Currently available in Q3 2013 internal builds only.**
 
 #### Example
 
