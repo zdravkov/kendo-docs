@@ -68,6 +68,9 @@ within the defined range.
         format: "MM/dd/yyyy hh:mm tt" //format is used to format the value of the widget and to parse the input.
     });
 
+> The DateTimePicker textbox content is always parsed from scratch when the user changes it via typing. This means that if, for example, the format contains only a time portion, the date will be reset to today.
+To support such a DateTimePicker format, you should make the widget textbox readonly, but **after the widget is initialized** (otherwise the Date and Time popups will be disabled).
+
 ### Define the time format
 
     $("#dateTimePicker").kendoDateTimePicker({
