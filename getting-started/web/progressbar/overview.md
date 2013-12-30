@@ -90,3 +90,28 @@ You could find examples of both approaches in the [api reference](http://docs.ke
 
 	var progressbar = $("#progressbar").data("kendoProgressBar");
 
+## Making the ProgressBar 100% wide and automatically resizable
+
+By default, the ProgressBar is `27em` wide inline-block element. The easiest cross-browser technique to make it expand and resize automatically is to apply a couple of CSS styles to the originating element.
+
+### Example
+
+    <style>
+    
+    #progressbar
+    {
+        width: auto;
+        display: block;
+    }
+    
+    </style>
+    
+    <div id="progressbar"></div>
+    
+    <script>
+    
+    $(function(){
+        $("#progressbar").kendoProgressBar();
+    });
+    
+    </script>
