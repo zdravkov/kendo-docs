@@ -92,7 +92,7 @@ You could find examples of both approaches in the [api reference](http://docs.ke
 
 ## Making the ProgressBar 100% wide and automatically resizable
 
-By default, the ProgressBar is `27em` wide inline-block element. The easiest cross-browser technique to make it expand and resize automatically is to apply a couple of CSS styles to the originating element.
+By default, the ProgressBar is `27em` wide `inline-block` element. The easiest cross-browser technique to make it expand and resize automatically is to apply a couple of CSS styles to the originating element.
 
 ### Example
 
