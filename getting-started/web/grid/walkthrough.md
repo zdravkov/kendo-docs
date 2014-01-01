@@ -154,11 +154,11 @@ or until the `html` element is reached. 100% high elements cannot have margins, 
 ### Initializing the Grid inside a hidden container
 
 If a scrollable Grid with a set height is initialized while inside a hidden container, the Grid will not be able to adjust its vertical layout correctly,
-because Javascript size calculations do not work for elements with a `display:none` style. In such cases there are several options:
+because Javascript size calculations do not work for elements with a `display:none` style. The widget will appear smaller than expected. In such cases there are several options:
 
-1. Grid should be initialized when it becomes visible;
-1. The Grid's layout must be adjusted manually, using code from the above example.
-1. Instead of setting an overall height for the Grid in its configuration, you can define height for the scrollable data area only. In this case no height calculations will be made.
+* Grid should be initialized when it becomes visible;
+* The Grid's layout must be adjusted manually, using code from the above example.
+* Instead of setting an overall height for the Grid in its configuration, you can define height for the scrollable data area only. In this case no height calculations will be made.
 
     \#GridID .k-grid-content
     {
