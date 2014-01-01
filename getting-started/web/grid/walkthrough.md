@@ -160,7 +160,7 @@ because Javascript size calculations do not work for elements with a `display:no
 1. The Grid's layout must be adjusted manually, using code from the above example.
 1. Instead of setting an overall height for the Grid in its configuration, you can define height for the scrollable data area only. In this case no height calculations will be made.
 
-    #GridID .k-grid-content
+    \#GridID .k-grid-content
     {
         height: 270px;
     }
