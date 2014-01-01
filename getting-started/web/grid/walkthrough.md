@@ -160,10 +160,10 @@ because Javascript size calculations do not work for elements with a `display:no
 * The Grid's layout must be adjusted manually, using code from the above example.
 * Instead of setting an overall height for the Grid in its configuration, you can define height for the scrollable data area only. In this case no height calculations will be made.
 
-    \#GridID .k-grid-content
-    {
-        height: 270px;
-    }
+        \#GridID .k-grid-content
+        {
+            height: 270px;
+        }
 
 If virtual scrolling is used and the Grid is initialized while hidden, its dataSource should be refetched when the widget becomes visible. This will also readjust the scrollable data area's height and no other coding is required.
 
