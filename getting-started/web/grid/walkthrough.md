@@ -154,7 +154,8 @@ or until the `html` element is reached. 100% high elements cannot have margins, 
 ### Initializing the Grid inside a hidden container
 
 If a scrollable Grid with a set height is initialized while inside a hidden container, the Grid will not be able to adjust its vertical layout correctly,
-because Javascript size calculations do not work for elements with a `display:none` style. The widget will appear smaller than expected. In such cases there are several options:
+because Javascript size calculations do not work for elements with a `display:none` style. The widget will appear smaller than expected. If virtual scrolling is used, the vertical scrollbar will not appear.
+In such cases there are several options (if virtual scrolling is **not** used):
 
 * The Grid should be initialized when its element becomes visible;
 * The Grid's layout must be adjusted manually, using code from the above example (no need to attach a window resize handler);
@@ -165,7 +166,7 @@ because Javascript size calculations do not work for elements with a `display:no
             height: 270px;
         }
 
-If virtual scrolling is used and the Grid is initialized while hidden, its dataSource should be refetched when the widget becomes visible. This will also readjust the scrollable data area's height and no other coding is required.
+If **virtual scrolling** is used and the Grid is initialized while hidden, its dataSource should be refetched when the widget becomes visible. This will also readjust the scrollable data area's height and no other coding is required.
 
 	$("#GridID").data("kendoGrid").dataSource.fetch();
 
