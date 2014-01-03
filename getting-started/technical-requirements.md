@@ -85,7 +85,9 @@ Below are the system requirements for the Kendo UI Framework.
 `HTML4 Transitional` triggers quirks mode, so it should not be used.
 * Internet Explorer compatibility modes are not supported. These modes can exhibit different behavior and rendering bugs, compared to the browser versions they emulate.
 It is highly recommended to use IE's [Edge mode](http://blogs.msdn.com/b/ie/archive/2010/06/16/ie-s-compatibility-features-for-site-developers.aspx) via META tag or HTTP header.
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
 * Kendo UI uses progressive enhancement for its CSS styling. As a result, old and obsolete browsers may ignore CSS3 styles, such as rounded corners and linear gradients.
 
 ### Kendo UI Platform support
