@@ -967,3 +967,20 @@ The `Refresh` method enables or disables the refresh pager button. Clicking that
             .Read(read => read.Action("Products_Read", "Home"))
         )
      )
+
+## Scrolling
+ 
+By default, the Kendo UI MVC Grid is not scrollable. If scrolling is enabled, the widget will apply a default height of 200px to its data area.
+That can be changed or removed by setting an optional height style in the Grid's `Scrollable` settings:
+
+    @(Html.Kendo().Grid(Model)
+        .Name("grid")
+        .Scrollable(s => s.Height(400)) // set 400px height style
+     )
+     
+     // or
+     
+    @(Html.Kendo().Grid(Model)
+        .Name("grid")
+        .Scrollable(s => s.Height("auto")) // remove default height
+     )
