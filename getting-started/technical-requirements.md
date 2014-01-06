@@ -65,9 +65,9 @@ Below are the system requirements for the Kendo UI Framework.
         </tr>
         <tr>
             <td><span class="opera"></span>Opera</td>
-            <td>11.0 +</td>
-            <td>11.0 +</td>
-            <td>11.0 +</td>
+            <td>15.0 +</td>
+            <td>15.0 +</td>
+            <td>15.0 +</td>
         </tr>
         <tr>
             <td><span class="safari"></span>Safari</td>
@@ -107,11 +107,11 @@ It is highly recommended to use IE's [Edge mode](http://blogs.msdn.com/b/ie/arch
     </tr>
     <tr>
         <td><span class="android"></span> Android</td>
-        <td>2.2 +</td>
+        <td>2.3 +</td>
     </tr>
     <tr>
         <td><span class="ios"></span> iOS</td>
-        <td>4.0 +</td>
+        <td>6.0 +</td>
     </tr>
     <tr>
         <td><span class="blackberry"></span>BlackBerry</td>
@@ -125,14 +125,14 @@ It is highly recommended to use IE's [Edge mode](http://blogs.msdn.com/b/ie/arch
 
 **NOTES:**
 
-* Kendo UI DataViz is not supported on Android 2.x.
+* In Android 2.3 Kendo UI DataViz only supports Canvas rendering mode.
 * Hybrid mouse and touch devices are supported (for instance IE10, Chrome and Firefox on Windows 8).
 
 ### Kendo UI Mobile Device Compatibility
 <p style="margin-top: 1.2em;">Kendo UI Mobile currently supports the default browsers on</p>
 
-* iOS 4.0+
-* Android 2.2+
+* iOS 6.0+
+* Android 2.3+
 * Windows Phone 8+ 
 * BlackBerry 7.0+ touchscreen devices.
 
