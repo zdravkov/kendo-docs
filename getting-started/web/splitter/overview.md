@@ -221,9 +221,13 @@ should be executed, so that the widget readjusts its layout and pane sizes.
 	    splitterObject = splitterElement.data("kendoSplitter");
 		
     splitterElement.css({width: "800px", height: "600px" });
-    splitterElement.resize();
+    splitterObject.resize();
     
     // for versions Q2 2013 SP1 and older use this instead:
 	//splitterObject.trigger("resize");
 
+If the Splitter layout needs readjusting, but the dimensions of the Splitter wrapper `<div>` has not changed, the resize method must be executed with a parameter in order to take effect:
+
+    splitterObject.resize(true);
+    
 Changing the the pane sizes manually is not recommended. Only the Splitter should control them.
