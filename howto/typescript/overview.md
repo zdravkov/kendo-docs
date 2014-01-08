@@ -31,9 +31,55 @@ You can optionally include the latest jQuery TypeScript definition file as well:
 
 ![All Kendo UI widgets](init.png)
 
-![Configure a Kendo UI widget](configure.png)
-
 ### Initialize a Kendo DataSource
 
 ![Initialize a Kendo DataSource](datasource.png)
 
+## Create Kendo UI widget via TypeScript inheritance
+
+The following code example shows how to inherit from an existing Kendo UI Widget.
+
+    /// <reference path="jquery.d.ts" />
+    /// <reference path="kendo.all.d.ts" />
+
+    module KendoWidgets {
+        // Extend the default widget options (optional)
+        export interface MyDatePickerOptions extends kendo.ui.DatePickerOptions {
+        }
+
+        // Create a class which inherits from the Kendo UI widget
+        export class MyDatePicker extends kendo.ui.DatePicker {
+            constructor(element: Element, options?: MyDatePickerOptions) {
+                super(element, options);
+            }
+            //Override a widget method (optional)
+            open() {
+                // Log to the console (optional)
+                console.log("open");
+
+                // Invoke a base widget method
+
+                super.open();
+            }
+        }
+        // Create an alias of the prototype (required by kendo.ui.plugin)
+        MyDatePicker.fn = MyDatePicker.prototype;
+        // Deep clone the widget default options
+        MyDatePicker.fn.options = $.extend(true, {}, kendo.ui.DatePicker.fn.options);
+        // Specify the name of your Kendo UI widget. Used to create the corresponding jQuery plugin.
+        MyDatePicker.fn.options.name = "MyDatePicker";
+        // Create a jQuery plugin.
+        kendo.ui.plugin(MyDatePicker);
+    }
+    // Expose the newly created jQuery plugin to TypeScript
+    interface JQuery {
+        kendoMyDatePicker(options?: kendo.ui.DatePickerOptions): JQuery;
+    }
+    $(function () {
+        // Initialize your custom widget
+        $("#datepicker").kendoMyDatePicker();
+        // Get a reference to the widget instance.
+        var myDatePicker = <KendoWidgets.MyDatePicker>$("#datepicker").data("kendoMyDatePicker");
+        // Call a widget method
+        myDatePicker.open();
+    });
