@@ -10,6 +10,12 @@ publish: true
 
 ## KendoUI 2013 Q3
 
+### Changes from 2013 Q3 (2013.3.1119)
+
+#### Breaking changes
+
+* **Supporting libs**: Kendo UI LESS fork is now updated to LESS 1.6.0. Kendo UI CSS files are built with it (no breaking changes in the LESS files themselves).
+
 ### Changes from 2013 Q2 SP1 (2013.2.918)
 
 #### Breaking changes
