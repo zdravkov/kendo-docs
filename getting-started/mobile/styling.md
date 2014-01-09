@@ -81,7 +81,7 @@ Additionally a single View tint color can be changed by simply adding a CSS clas
       <footer data-role="footer">
         <div data-role="tabstrip">
           <a data-role="button" data-icon="favorites" href="#view1">Favorites</a>
-          <a data-role="button" data-icon="home" href="#view2">Favorites</a>
+          <a data-role="button" data-icon="home" href="#view2">Home</a>
         </div>
       </footer>
     </div>
@@ -94,7 +94,7 @@ Additionally a single View tint color can be changed by simply adding a CSS clas
       <footer data-role="footer">
         <div data-role="tabstrip">
           <a data-role="button" data-icon="favorites" href="#view1">Favorites</a>
-          <a data-role="button" data-icon="home" href="#view2">Favorites</a>
+          <a data-role="button" data-icon="home" href="#view2">Home</a>
         </div>
       </footer>
     </div>
