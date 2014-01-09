@@ -211,6 +211,21 @@ The function context of the event handler (available via the `this` keyword) is 
     });
     </script>
 
+Some events can be prevented (cancelled), so that the user action, which has triggered them, is ignored.
+
+    <div id="grid"></div>
+    <script>
+    function onSaveChanges(e) {
+        var condition = true;
+        if (condition) {
+            e.preventDefault();
+        }
+    }
+    $("#grid").kendoGrid({
+        saveChanges: onSaveChanges
+    });
+    </script>
+
 ## Accessing Kendo UI widget elements
 
 Each Kendo UI widget instance keeps references to two elements - `element` and `wrapper`.
