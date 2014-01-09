@@ -3986,6 +3986,10 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
     grid.dataSource.remove(data);
     </script>
 
+### pager `kendo.ui.Pager`
+
+The [Pager widget](/api/web/pager) attached to the Grid.
+
 ### table `jQuery`
 
 The jQuery object which represents the grid table element.
