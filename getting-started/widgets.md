@@ -213,6 +213,8 @@ The function context of the event handler (available via the `this` keyword) is 
 
 Some events can be prevented (cancelled), so that the user action, which has triggered them, is ignored.
 
+#### Example - preventing events
+
     <div id="grid"></div>
     <script>
     function onSaveChanges(e) {
