@@ -5344,6 +5344,10 @@ The event handler function context (available via the `this` keyword) will be se
 
 The widget instance which fired the event.
 
+##### e.preventDefault `Function`
+
+If invoked prevents the data bind action. The table rows will remain unchanged and `dataBound` event will not fire.
+
 #### Example - subscribe to the "dataBinding" event before initialization
 
     <div id="grid"></div>
