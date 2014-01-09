@@ -31,7 +31,10 @@ The supported aggregates are "average", "count", "max", "min" and "sum".
 HTML attributes of the table cell (<td>) rendered for the column.
 
 #### Example
-    <kendo:grid-column attributes="attributes">
+
+    <%@page import="java.util.HashMap"%>
+
+    <kendo:grid-column attributes="<%=new HashMap<String, String>() {{ put(\"style\", \"text-align:right;\");}} %>">
     </kendo:grid-column>
 
 ### command `java.lang.String`
