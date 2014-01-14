@@ -53,21 +53,3 @@ The project is for use with Microsoft Visual Studio 2012, and requires MVC 4 and
 ## Explore the Tutorial
 
 Please use the navigation tree at the left to navigate the sections of this tutorial.
-
-# Kendo Mobile Music Store
-
-![kendo-music-store-intro-mobile-screenshot](images/kendo-music-store-intro-mobile-screenshot.png)
-
-The mobile music store presents a consumer-focused mobile version of the web Music Store.
-This sample project was built using [Telerik Icenium](http://www.icenium.com/) and interacts
-with the [Kendo Music Store](http://demos.kendoui.com/musicstore) sample project's web services.
-
-## Get the Source Code
-
-Start by getting the source code for the [Kendo Mobile Music Store from GitHub](https://www.github.com/telerik/kendo-mobile-music-store).
-This project is designed to be cloned into Icenium Graphite.
-If you are not an Icenium customer you may clone the repository to your local drive and browse it with your favorite text editor.
-
-## Explore the Tutorial
-
-Please use the tree navigation at the left to navigate the sections of this tutorial. The Mobile Music Store pages are listed under "Tutorials\Mobile".

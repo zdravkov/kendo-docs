@@ -237,7 +237,6 @@ A lot of interactive tutorials are available in the [Kendo UI Dojo](http://www.k
 1. Examples available on github
 -   [ASP.NET MVC examples](https://github.com/telerik/kendo-examples-asp-net-mvc/)
 -   [ASP.NET MVC Kendo UI Music Store](https://github.com/telerik/kendo-music-store)
--   [ASP.NET MVC Kendo UI Mobile Music Store](https://github.com/telerik/kendo-mobile-music-store)
 -   [ASP.NET WebForms examples](https://github.com/telerik/kendo-examples-asp-net/)
 -   [JSP examples](https://github.com/telerik/kendo-examples-java)
 -   [Kendo Mobile Sushi](https://github.com/telerik/kendo-mobile-sushi)
