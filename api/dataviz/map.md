@@ -695,8 +695,7 @@ The default configuration for bing layers.
         $("#map").kendoMap({
             layerDefaults: {
                 bing: {
-                    opacity: 0.8,
-					attribution: "&copy; BingMap"
+                    opacity: 0.8
                 }
             },
             layers: [{
@@ -715,7 +714,7 @@ The attribution of all bing layers.
     <script>
         $("#map").kendoMap({
             layerDefaults: {
-                tile: {
+                bing: {
                     attribution: "&copy; BingMap"
                 }
             },
@@ -735,7 +734,7 @@ The the opacity of all bing layers.
     <script>
         $("#map").kendoMap({
             layerDefaults: {
-                tile: {
+                bing: {
                     opacity: 0.5
                 }
             },
@@ -755,8 +754,8 @@ The key of all bing layers.
     <script>
         $("#map").kendoMap({
             layerDefaults: {
-                tile: {
-					key: "Your bing map key"
+                bing: {
+		    key: "Your bing map key"
                 }
             },
             layers: [{
@@ -844,7 +843,7 @@ The layer type. Supported types are:
         });
     </script>
 	
-### layerDefaults.bing.key `String`
+### layers.key `String`
 
 The key of the bing layer.
 
@@ -854,7 +853,7 @@ The key of the bing layer.
         $("#map").kendoMap({
             layers: [{
                 type: "bing",
-				key: "Your bing map key"
+		key: "Your bing map key"
             }]
         });
     </script>
