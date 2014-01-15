@@ -134,6 +134,24 @@ The error correction level used to encode the value.The possible values are:
     $qRCode->errorCorrection('value');
     ?>
 
+### padding
+Sets the minimum distance in pixels that should be left between the border and the QR modules.
+
+#### Returns
+`\Kendo\Dataviz\UI\QRCode`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $qRCode = new \Kendo\Dataviz\UI\QRCode('QRCode');
+    $qRCode->padding(1);
+    ?>
+
 ### renderAs
 Sets the preferred rendering engine.
 If it is not supported by the browser, the QRCode will switch to the first available mode.The supported values are:

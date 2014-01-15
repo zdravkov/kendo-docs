@@ -42,6 +42,14 @@ The error correction level used to encode the value.The possible values are:
     <kendo:qRCode errorCorrection="errorCorrection">
     </kendo:qRCode>
 
+### padding `float`
+
+Sets the minimum distance in pixels that should be left between the border and the QR modules.
+
+#### Example
+    <kendo:qRCode padding="padding">
+    </kendo:qRCode>
+
 ### renderAs `java.lang.String`
 
 Sets the preferred rendering engine.
@@ -74,7 +82,7 @@ The value of the QRCode.
 
 The border of the QR code.
 
-More documentation is available at [kendo:qRCode-border](qrcode/border).
+More documentation is available at [kendo:qRCode-border](/api/wrappers/jsp/qrcode/border).
 
 #### Example
 
