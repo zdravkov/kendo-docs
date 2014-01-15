@@ -132,6 +132,21 @@ The possible values are:
     });
     </script>
 
+### padding `Number` *(default: 0)*
+
+Sets the minimum distance in pixels that should be left between the border and the QR modules.
+
+#### Example
+
+    <div id="qrCode"></div>
+    <script>
+    $("#qrCode").kendoQRCode({
+      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      size: 240,
+      padding: 10
+    });
+    </script>
+
 ### renderAs `String` *(default: "canvas")*
 
 Sets the preferred rendering engine.
