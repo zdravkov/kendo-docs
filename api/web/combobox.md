@@ -146,7 +146,7 @@ Use it to set the Id of the parent ComboBox widget.
 
 ### cascadeFromField `String`
 
-Defines the field to be used to filter the data source. If not defiend the [parent's dataValueField option will be used](/api/web/combobox#configuration-dataValueField).
+Defines the field to be used to filter the data source. If not defined the [parent's dataValueField option will be used](/api/web/combobox#configuration-dataValueField).
 [Help topic showing how cascading functionality works](/web/combobox/cascading)
 
 #### Example

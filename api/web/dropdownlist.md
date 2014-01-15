@@ -146,7 +146,7 @@ Use it to set the Id of the parent dropdownlist widget.
 
 ### cascadeFromField `String`
 
-Defines the field to be used to filter the data source. If not defiend the [parent's dataValueField option will be used](/api/web/dropdownlist#configuration-dataValueField).
+Defines the field to be used to filter the data source. If not defined the [parent's dataValueField option will be used](/api/web/dropdownlist#configuration-dataValueField).
 [Help topic showing how cascading functionality works](/getting-started/web/dropdownlist/cascading)
 
 #### Example
