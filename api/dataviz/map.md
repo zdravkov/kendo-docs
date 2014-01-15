@@ -745,6 +745,25 @@ The the opacity of all bing layers.
             }]
         });
     </script>
+	
+### layerDefaults.bing.key `String`
+
+The key of all bing layers.
+
+#### Example - set bing layer default key
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                tile: {
+					key: "Your bing map key"
+                }
+            },
+            layers: [{
+                type: "bing"
+            }]
+        });
+    </script>
 
 ### layers `Array`
 
@@ -821,6 +840,21 @@ The layer type. Supported types are:
                 type: "tile",
                 urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
                 attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+	
+### layerDefaults.bing.key `String`
+
+The key of the bing layer.
+
+#### Example - set bing layer key
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "bing",
+				key: "Your bing map key"
             }]
         });
     </script>
