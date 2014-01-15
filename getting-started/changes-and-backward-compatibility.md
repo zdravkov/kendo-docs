@@ -45,7 +45,11 @@ Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
 
 #### Breaking changes
 
-* **Editor**: default tools are now changed to enable table editing; as toolbar tools are now grouped, their dimensions have been increased by 2px. If you need to use the old configuration, use the following
+* **Editor**: The default tool set now includes the newly introduced table editing. Toolbar tools are now grouped, so their dimensions have been increased by 2px. On the other hand,
+the "Font name" and "Font size" tools no longer appear by default. The idea is to encourage developers (and users respectively) to use the formatting dropdown, which provides a predefined (and customizable) set of options.
+This will ultimately lead to better structured, formatted and consistent rich text documents, compared to the case when the user has the ability to apply arbitrary font styles.
+
+If you need the old tool set, use the configuration below.
 
         $("#editor").kendoEditor({
             tools: [
@@ -59,7 +63,8 @@ Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
             ]
         });
 
-* **Editor**: Initializing the editor from a `div` element triggers the [inline editing mode](http://demos.kendoui.com/web/editor/inline-editing.html). If you need to revert to the old behavior, initialize it from a `<textarea>` element.
+* **Editor**: Initializing the editor from a `div` element triggers the [inline editing mode](http://demos.kendoui.com/web/editor/inline-editing.html).
+If you need the old behavior, initialize the Editor from a `<textarea>` element.
 
 * **Mobile ListView**:
 
