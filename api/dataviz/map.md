@@ -685,6 +685,67 @@ The the opacity of all tile layers.
         });
     </script>
 
+### layerDefaults.bing `Object`
+
+The default configuration for bing layers.
+
+#### Example - set default options for all bing layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bing: {
+                    opacity: 0.8,
+					attribution: "&copy; BingMap"
+                }
+            },
+            layers: [{
+                type: "bing",
+                key: "Your bing map key"
+            }]
+        });
+    </script>
+
+### layerDefaults.bing.attribution `String`
+
+The attribution of all bing layers.
+
+#### Example - set default attribution for all bing layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                tile: {
+                    attribution: "&copy; BingMap"
+                }
+            },
+            layers: [{
+                type: "bing",
+                key: "Your bing map key"
+            }]
+        });
+    </script>
+
+### layerDefaults.bing.opacity `String` *(default: 1)*
+
+The the opacity of all bing layers.
+
+#### Example - set bing layer default opacity
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                tile: {
+                    opacity: 0.5
+                }
+            },
+            layers: [{
+                type: "bing",
+                key: "Your bing map key"
+            }]
+        });
+    </script>
+
 ### layers `Array`
 
 The configuration of the map layers.
@@ -748,6 +809,7 @@ data source is fired. By default the widget will bind to the data source specifi
 
 The layer type. Supported types are:
 
+* "bing" - a generic a bing layer
 * "tile" - a generic "slippy map" tile layer
 * "shape" - a vector shape layer, e.g. bound to GeoJSON data
 
