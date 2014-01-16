@@ -2597,12 +2597,13 @@ The setter is chainable, i.e. returns the map instance.
 ##### center `Array|kendo.dataviz.map.Location`
 
 The location of the new map center.
+An array argument is assumed to be in [Latitude, Lonigude] order.
 
 #### Returns
 
 `kendo.dataviz.map.Location` The current map center.
 
-#### Example - set the map zoom level
+#### Example - set the map center and zoom level
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -2610,8 +2611,7 @@ The location of the new map center.
                 type: "tile",
                 urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
                 attribution: "&copy; OpenStreetMap"
-            }],
-            center: [32.7758, -96.7966]
+            }]
         });
 
         var map = $("#map").data("kendoMap");
@@ -2836,9 +2836,10 @@ Transforms layer (projected) coordinates to geographical location.
 
 #### Parameters
 
-##### point `kendo.dataviz.geometry.Point`
+##### point `Array.kendo.dataviz.geometry.Point`
 
 The layer (projected) coordinates.
+An array argument is assumed to be in x, y order.
 
 ##### zoom `Number`
 
@@ -2848,7 +2849,25 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
 
 `kendo.dataviz.map.Location` The geographic location that corresponds to the layer coordinates.
 
-#### Example - retrieve location of NW corner
+#### Example - retrieve location of NW corner (Array)
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 1,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var loc = map.layerToLocation([0, 0]).round();
+        console.log(loc.toString());
+        // -180.000000,85.000000
+    </script>
+
+#### Example - retrieve location of NW corner (kendo.dataviz.geometry.Point)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
         $("#map").kendoMap({
@@ -2873,9 +2892,10 @@ Returns the layer (projected) coordinates that correspond to a geographical loca
 
 #### Parameters
 
-##### location `kendo.dataviz.map.Location`
+##### location `Array|kendo.dataviz.map.Location`
 
 The geographic location.
+An array argument is assumed to be in [Latitude, Lonigude] order.
 
 ##### zoom `Number`
 
@@ -2885,7 +2905,25 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
 
 `kendo.dataviz.geometry.Point` The layer (projected) coordinates.
 
-#### Example - retrieve the projected coordinates of a location
+#### Example - retrieve the projected coordinates of a location (Array)
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 1,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var point = map.locationToLayer([0, 0]).round();
+        console.log(point.toString());
+        // 256,256
+    </script>
+
+#### Example - retrieve the projected coordinates of a location (kendo.dataviz.map.Location)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
         $("#map").kendoMap({
@@ -2910,15 +2948,35 @@ Returns the view (relative) coordinates that correspond to a geographical locati
 
 #### Parameters
 
-##### location `kendo.dataviz.map.Location`
+##### location `Array|kendo.dataviz.map.Location`
 
 The geographic location.
+An array argument is assumed to be in [Latitude, Lonigude] order.
 
 #### Returns
 
 `kendo.dataviz.geometry.Point` The view coordinates that correspond to a geographical location.
 
-#### Retrieves the view coordinates of the map center
+#### Retrieves the view coordinates of the map center (Array)
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var view = map.locationToView([0, 0]).round();
+        console.log(view.toString());
+        // 512,512
+    </script>
+
+#### Retrieves the view coordinates of the map center (kendo.dataviz.map.Location)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
         $("#map").kendoMap({
@@ -2997,9 +3055,10 @@ Returns the geographical location that correspond to the view (relative) coordin
 
 #### Parameters
 
-##### point `kendo.dataviz.geometry.Point`
+##### point `Array|kendo.dataviz.geometry.Point`
 
 The view coordinates.
+An array argument is assumed to be in x, y order.
 
 ##### zoom `Number`
 
@@ -3009,7 +3068,26 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
 
 `kendo.dataviz.map.Location` The geographic location that corresponds to the view coordinates.
 
-#### Example - retrieve location corresponding to view center
+#### Example - retrieve location corresponding to view center (Array)
+    <div id="map" style="width: 1024px; height: 1024px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        var loc = map.viewToLocation([512, 512]).round();
+        console.log(loc.toString());
+        // 0.000000,0.000000
+    </script>
+
+#### Example - retrieve location corresponding to view center (kendo.dataviz.geometry.Point)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
         $("#map").kendoMap({
