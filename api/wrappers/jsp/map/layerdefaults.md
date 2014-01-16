@@ -19,6 +19,18 @@ The default configuration for map layers by type.
 
 ##  Configuration JSP Tags
 
+### kendo:map-layerDefaults-bing
+
+The default configuration for bing layers.
+
+More documentation is available at [kendo:map-layerDefaults-bing](/api/wrappers/jsp/map/layerdefaults-bing).
+
+#### Example
+
+    <kendo:map-layerDefaults>
+        <kendo:map-layerDefaults-bing></kendo:map-layerDefaults-bing>
+    </kendo:map-layerDefaults>
+
 ### kendo:map-layerDefaults-shape
 
 The default configuration for shape layers.

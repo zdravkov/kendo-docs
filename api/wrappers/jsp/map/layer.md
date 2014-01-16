@@ -34,6 +34,14 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:map-layer autoBind="autoBind">
     </kendo:map-layer>
 
+### key `java.lang.String`
+
+The key of the bing layer.
+
+#### Example
+    <kendo:map-layer key="key">
+    </kendo:map-layer>
+
 ### opacity `java.lang.String`
 
 The the opacity for the layer.
