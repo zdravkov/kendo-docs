@@ -2836,7 +2836,7 @@ Transforms layer (projected) coordinates to geographical location.
 
 #### Parameters
 
-##### point `Array.kendo.dataviz.geometry.Point`
+##### point `Array|kendo.dataviz.geometry.Point`
 
 The layer (projected) coordinates.
 An array argument is assumed to be in x, y order.
