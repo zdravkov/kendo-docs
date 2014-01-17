@@ -100,6 +100,13 @@ Sets the intermediate points (in global coordinates) of the connection. It's imp
         }
 	);
 
+### points.x `Number` *(default: 0)*
+
+Sets the X coordinate of the point.
+
+### points.y `Number` *(default: 0)*
+
+Sets the Y coordinate of the point.
 
 ### cssClass `String` *(default: "k-connection")*
 
