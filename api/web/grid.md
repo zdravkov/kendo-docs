@@ -3480,6 +3480,36 @@ The tooltip of the refresh button.
     });
     </script>
 
+### pageable.messages.morePages `String` *(default: "More pages")*,
+
+The tooltip of the ellipsis ("...") button, which appears when the number of pages is greater than the buttonCount.
+
+#### Example - set the tooltip of the ellipsis button
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "productName" },
+        { field: "category" }
+      ],
+      dataSource: [
+        { productName: "Tea", category: "Beverages" },
+        { productName: "Coffee", category: "Beverages" },
+        { productName: "Ham", category: "Food" },
+        { productName: "Bread", category: "Food" }
+      ],
+      pageable: {
+        pageSize: 1,
+        buttonCount: 2,
+        refresh: true,
+        messages: {
+          morePages: "More pages"
+        }
+      }
+    });
+    </script>
+
 ### reorderable `Boolean` *(default:false)*
 
 If set to `true` the user could reorder the columns by dragging their header cells. By default reordering is disabled.
