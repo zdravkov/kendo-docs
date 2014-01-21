@@ -27,19 +27,116 @@ The generic way to apply a layout is by calling the **layout()** method on the d
 
 ##Configuration
 
-###type `String` *(default: "Tree")*
+###type `String` *(default: "tree")*
 
 The type of the layout algorythm to use. Predefined values are:
 
-* "tree" - The tree layout needs little introduction; it organizes a diagram in a hierarchical way and is typically used in organizational representations.
-* "force" - The force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node.
-* "layered" - Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
+* **tree** - The tree layout needs little introduction; it organizes a diagram in a hierarchical way and is typically used in organizational representations. This type includes the radial tree layout, mindmapping and the classic tree diagrams.
+* **force** - The force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node. This force-directed layout is **non-deterministic**; each layout pass will result in an unpredictable (and hence not reproducible) layout. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
+![Force-directed parameter](ForceDirectedParameters.png)
+* **layered** - Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
+
+###subtype `String` *(default: "down")*
+
+The subtype further defines the layout type by specifying in greater detail the behaviour expected by the layout algorithm. Possible predefined values are:
+
+- **down** - *tree layout* specific subtype. The tree is arranged with the root at the top and its children downwards. This is the default subtype.
+- **up** - *tree layout* specific subtype. The tree is arranged with the root at the bottom and its children upwards.
+- **left** - *tree layout* specific subtype. The tree is arranged with the root at the left and its children sideways to the right.
+- **right** - *tree layout* specific subtype. The tree is arranged with the root at the right and its children sideways to the left.
+- **MindmapHorizontal** - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
+- **MindmapVertical** -*tree layout* specific subtype. The root sits at the center and its children are spread equally above and below. ![Mindmap parameters](MindmapParameters.png)
+    
+    diagram.layout({
+        type: "tree",
+        subtype: "mindmapVertical",
+        horizontalSeparation: 60,
+        verticalSeparation: 10                        
+    });
+
+- **radial** - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
+![Radial tree parameters](RadialTreeParameters.png) ![Radial layout angles.](RadialAngles.png)
+- **TipOver** - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example. ![Tip-over parameters](TipOverParameters.png)
+    
+    diagram.layout({
+        type: "tree",
+        subtype: "tipOver",
+        horizontalSeparation: 50,
+        nderneathVerticalTopOffset: 20,
+        underneathHorizontalOffset: 50,
+        underneathVerticalSeparation: 20                        
+    });
+    
+###horizontalSeparation `Number` *(default: 90)*
+
+Either the distance between the siblings if the tree is up/down or between levels if the tree is left/right. In *tipOver tree layout* this setting is used only for the direct children of the root
+
+###verticalSeparation `Number` *(default: 50)*
+
+Either the distance between levels if the tree is up/down or between siblings if the tree is left/right. This property is **not used** in *tipOver tree layout* but rather replaced with three additional ones - **underneathVerticalTopOffset**, **underneathVerticalSeparation** and **underneathHorizontalOffset**
+
+###radialFirstLevelSeparation `Number` *(default: 200)*
+
+Controls the distance between the root and the immediate children of the root. *This setting is specific to the radial tree layout.*
+
+###radialSeparation `Number` *(default: 150)*
+
+Defines the radial separation between the levels (except the first one which is defined by the aforementioned radialFirstLevelSeparation). *This setting is specific to the radial tree layout.*
+
+###startRadialAngle `Number` *(default: 0)*
+
+Defines where the circle/arc starts. The positive direction is **clockwise** and the angle is in **radians**. *This setting is specific to the radial tree layout.*
+
+###endRadialAngle `Number` *(default: 6.28)*
+
+Defines where the circle/arc ends. The positive direction is **clockwise** and the angle is in **radians**. Default is 2\*Math.PI. *This setting is specific to the radial tree layout.*
+
+###underneathVerticalTopOffset `Number` *(default: 15)*
+
+Defines the vertical separation between a parent and its first child. This offsets the whole set of children with respect to its parent. *This setting is specific to the tipOver tree layout.*
+
+###underneathVerticalSeparation `Number` *(default: 15)*
+
+Defines the vertical separation between siblings and sub-branches. *This setting is specific to the tipOver tree layout.*
+
+###underneathHorizontalOffset `Number` *(default: 15)*
+
+Defines the horizontal offset from a child with respect to its parent. *This setting is specific to the tipOver tree layout.* 
+
+###iterations `Number` *(default: 300)*
+
+The number of times that all the forces in the diagram are being calculated and balanced. The default is set at 300, which should be enough for diagrams up to a hundred nodes. By increasing this parameter you increase the correctness of the simulation but it does not always lead to a more stable topology. In some situations a diagram simply does not have a stable minimum energy state and oscillates (globally or locally) between the minima. In such a situation increasing the iterations will not result in a better topology. *This setting is specific to the force-directed layout*
+
+###nodeDistance `Number` *(default: 50)*
+
+The optimal length between 2 nodes, which directly correlates to the state of the link between them. If a link is longer than there will be a force pulling the nodes together, if the link is shorter the force will push the nodes apart. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations. *This setting is specific to the force-directed layout*
 
 ###componentsGridWidth `Number` *(default: 800)*
 
 defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
 
 ###grid `Object`
+
+Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
+![Diagram component](ComponentExample.png)
+
+A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components. 
+
+When you apply a certain layout an analysis will first split the diagram in components, arrange each component individually and thereafter organize the components in a grid. The common parameters referred above deal with this grid layout, they define the width, margin and padding of the (invisible) grid used to organize the components.
+
+![Component parameters](ComponentParameters.png)
+
+    diagram.layout(kendo.diagram.LayoutTypes.TreeLayout,
+                    {
+                        TreeLayoutType: kendo.diagram.TreeLayoutType.TreeDown,
+                        horizontalSeparation: 15,
+                        verticalSeparation: 80,
+                        componentsGridWidth: 5000, 
+                        totalMargin: new Size(50, 50),
+                        componentMargin: new Size(20, 20)                       
+                    }
+            )
+
 
 ###grid.offsetX `Number` *(default: 50)*
 
@@ -57,6 +154,10 @@ defines the horizontal spacing between each component. The default is 50.
 
 defines the vertical spacing between each component. The default is 50.
 
+
+
+################################
+
 ## Tree layout algorithm
 
 The tree layout needs little introduction; it organizes a diagram in a hierarchical way and is typically used in organizational representations. The tree layout has multiple sub-types:
@@ -68,7 +169,7 @@ The tree layout needs little introduction; it organizes a diagram in a hierarchi
 - **Mindmapping horizontal:** the root sits at the center and its children are spread equally to the left and right
 - **Mindmapping vertical:** the root sits at the center and its children are spread equally above and below 
 - **Radial:** the root sits at the center and its children are spread radially around
-- **Tip-over:** a special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example.
+- **Tip-over:** a special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example. 
 
 The default tree sub-type is the TreeDown option and you can specify a particular sub-type by means of the options in the layout call like so:
 
