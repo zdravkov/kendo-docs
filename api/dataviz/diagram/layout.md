@@ -40,23 +40,25 @@ The type of the layout algorythm to use. Predefined values are:
 
 The subtype further defines the layout type by specifying in greater detail the behaviour expected by the layout algorithm. Possible predefined values are:
 
-- **down** - *tree layout* specific subtype. The tree is arranged with the root at the top and its children downwards. This is the default subtype.
-- **up** - *tree layout* specific subtype. The tree is arranged with the root at the bottom and its children upwards.
-- **left** - *tree layout* specific subtype. The tree is arranged with the root at the left and its children sideways to the right.
-- **right** - *tree layout* specific subtype. The tree is arranged with the root at the right and its children sideways to the left.
-- **MindmapHorizontal** - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
-- **MindmapVertical** -*tree layout* specific subtype. The root sits at the center and its children are spread equally above and below. ![Mindmap parameters](MindmapParameters.png)
+- **down** - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the top and its children downwards. For the layered layout the links are directed downwards. This is the default subtype.
+- **up** - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the bottom and its children upwards. For the layered layout the links are directed upwards.
+- **left** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the left and its children sideways to the right. For the layered layout the links are directed to the left.
+- **right** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the right and its children sideways to the left. For the layered layout the links are directed downwards.
+- **mindmapHorizontal** - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
+- **mindmapVertical** -*tree layout* specific subtype. The root sits at the center and its children are spread equally above and below. ![Mindmap parameters](MindmapParameters.png)
+    
     
     diagram.layout({
         type: "tree",
         subtype: "mindmapVertical",
         horizontalSeparation: 60,
-        verticalSeparation: 10                        
+        verticalSeparation: 10
     });
 
 - **radial** - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
 ![Radial tree parameters](RadialTreeParameters.png) ![Radial layout angles.](RadialAngles.png)
-- **TipOver** - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example. ![Tip-over parameters](TipOverParameters.png)
+- **tipOver** - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example. ![Tip-over parameters](TipOverParameters.png)
+    
     
     diagram.layout({
         type: "tree",
@@ -66,7 +68,10 @@ The subtype further defines the layout type by specifying in greater detail the 
         underneathHorizontalOffset: 50,
         underneathVerticalSeparation: 20                        
     });
-    
+
+- **horizontal** - *layered layout* specific subtype. The preferred direction of the links is horizontal.
+- **vertical** - *layered layout* specific subtype. The preferred direction of the links is vertical.
+
 ###horizontalSeparation `Number` *(default: 90)*
 
 Either the distance between the siblings if the tree is up/down or between levels if the tree is left/right. In *tipOver tree layout* this setting is used only for the direct children of the root
@@ -109,7 +114,11 @@ The number of times that all the forces in the diagram are being calculated and 
 
 ###nodeDistance `Number` *(default: 50)*
 
-The optimal length between 2 nodes, which directly correlates to the state of the link between them. If a link is longer than there will be a force pulling the nodes together, if the link is shorter the force will push the nodes apart. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations. *This setting is specific to the force-directed layout*
+In the **force-directed layout** this setting defines the optimal length between 2 nodes, which directly correlates to the state of the link between them. If a link is longer than there will be a force pulling the nodes together, if the link is shorter the force will push the nodes apart. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
+
+In the **layered layout** it defines the minimum distance between nodes on the same level. Due to the nature of the algorithm this distance will only be respected if the the whole crossing of links and optimimzation does not induce a shift of the siblings.
+
+*This setting is specific to the force-directed layout and layered layout*
 
 ###componentsGridWidth `Number` *(default: 800)*
 
@@ -153,6 +162,10 @@ defines the horizontal spacing between each component. The default is 50.
 ###grid.componentSpacingY `Number` *(default: 50)*
 
 defines the vertical spacing between each component. The default is 50.
+
+###layerSeparation `Number` *(default: 50)*
+
+the height (in a vertical layout) or width (in a horizontal layout) between the layers.
 
 
 
