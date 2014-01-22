@@ -27,7 +27,7 @@ The schema configuration of the SchedulerDataSource.
 
 The model configuration of the SchedulerDataSource. See [SchedulerEvent](/api/framework/schedulerevent#configuration) for more info.
 
-#### Example - configure the data source model model
+#### Example - configure the data source model schema
 
     <script>
     var dataSource = new kendo.data.SchedulerDataSource({
@@ -75,6 +75,61 @@ The model configuration of the SchedulerDataSource. See [SchedulerEvent](/api/fr
     });
     </script>
 
+### schema.timezone `String`
+
+The timezone which the data source will use to convert the scheduler event dates. By default the current system timezone is used.
+If the data source is initialized by the scheduler, its [timezone](/api/web/scheduler#configuration-timezone) option will be used.
+
+The complete list of the supported timezones is available in the [List of IANA time zones](http://en.wikipedia.org/wiki/List_of_IANA_time_zones) Wikipedia page.
+
+#### Example - configure the data source model model
+
+    <script>
+    var dataSource = new kendo.data.SchedulerDataSource({
+        transport: {
+            read: {
+                url: "http://demos.kendoui.com/service/tasks",
+                dataType: "jsonp"
+            },
+            update: {
+                url: "http://demos.kendoui.com/service/tasks/update",
+                dataType: "jsonp"
+            },
+            create: {
+                url: "http://demos.kendoui.com/service/tasks/create",
+                dataType: "jsonp"
+            },
+            destroy: {
+                url: "http://demos.kendoui.com/service/tasks/destroy",
+                dataType: "jsonp"
+            }
+        },
+        schema: {
+            timezone: "Europe/London", // Use the London timezone
+            model: {
+                id: "taskId",
+                fields: {
+                    taskId: { from: "TaskID", type: "number" },
+                    title: { from: "Title", defaultValue: "No title", validation: { required: true } },
+                    start: { type: "date", from: "Start" },
+                    end: { type: "date", from: "End" },
+                    startTimezone: { from: "StartTimezone" },
+                    endTimezone: { from: "EndTimezone" },
+                    description: { from: "Description" },
+                    recurrenceId: { from: "RecurrenceID" },
+                    recurrenceRule: { from: "RecurrenceRule" },
+                    recurrenceException: { from: "RecurrenceException" },
+                    ownerId: { from: "OwnerID", defaultValue: 1 },
+                    isAllDay: { type: "boolean", from: "IsAllDay" }
+                }
+            }
+        }
+    });
+    dataSource.fetch(function() {
+        var event = this.at(0);
+        console.log(event.start); // outputs converted date based on defined timezone
+    });
+    </script>
 
 ## Methods
 
@@ -104,18 +159,22 @@ The end date of the period.
         var dataSource = new kendo.data.SchedulerDataSource({
             data: [
                 new kendo.data.SchedulerEvent({
+                    id: 1,
                     title: "Event1",
                     start: new Date("2013/4/4 12:00"),
-                    start: new Date("2013/4/4 14:00")
+                    end: new Date("2013/4/4 14:00")
                 }),
                 new kendo.data.SchedulerEvent({
+                    id: 2,
                     title: "Recurring event",
                     start: new Date("2013/4/4 15:00"),
-                    start: new Date("2013/4/4 17:00"),
+                    end: new Date("2013/4/4 17:00"),
                     recurrenceRule: "FREQ=DAILY"
                 })
             ]
         });
+
+        dataSource.fetch();
 
         //returns list of expanded occurrences
         var occurrences = dataSource.expand(new Date("2013/4/1"), new Date("2013/5/1"));
