@@ -82,7 +82,7 @@ The start cap (arrow, head or decoration) of the connection:
 Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
 
 
-### points `Array` *(default: [])*
+### points `Array` *(default: null)*
 
 Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
 
@@ -100,11 +100,13 @@ Sets the intermediate points (in global coordinates) of the connection. It's imp
         }
 	);
 
-### points.x `Number` *(default: 0)*
+### points.point `Object` *(default: null)*
+
+### points.point.x `Number` *(default: 0)*
 
 Sets the X coordinate of the point.
 
-### points.y `Number` *(default: 0)*
+### points.point.y `Number` *(default: 0)*
 
 Sets the Y coordinate of the point.
 
