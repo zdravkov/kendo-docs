@@ -66,7 +66,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
             <%: Styles.Render("~/Content/kendo/css") %>
 
-7. Move the jQuery bundle in the **head** tag of the page. It is at the end of the page by default.
+7. Move the jQuery bundle to the **head** tag of the page. It is at the end of the page by default.
 8. Render the Kendo UI script bundle **after** jQuery.
     - Razor
 
@@ -88,8 +88,8 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.common.min.css" />
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.default.min.css" />
 
-3. Move the jQuery bundle in the **head** tag of the page. It is at the end of the page by default.
-4. Include **kendo.all.min.js** and **kendo.aspnetmvc.min.js** **after** jQuery.
+3. Move the jQuery bundle to the **head** tag of the page. It is at the end of the page by default.
+4. Include **kendo.all.min.js** and **kendo.aspnetmvc.min.js** _after_ jQuery.
 
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js"></script>
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js"></script>
