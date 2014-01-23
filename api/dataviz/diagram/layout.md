@@ -14,16 +14,9 @@ and various ad-hoc calculations which depend on the type of layout. The criteria
 * an orderly organization of the shapes in such a way that siblings are close to another, i.e. a tight packing of shapes which belong together (parent of child relationship)
 * a minimum of connection crossings
 
-Kendo diagram includes three of the most used layout algorithms which should cover most of your layout needs:
+Kendo diagram includes three of the most used layout algorithms which should cover most of your layout needs - **tree layout**, **force-directed layout** and **layered layout**. Please, check the type property for more details regarding each type.
 
-* **tree layout**: organizes the diagram in an hierarchical fashion and articulating the well-know organizational charts. This type includes the radial tree layout, mindmapping and the classic tree diagrams.
-* **force-directed layout**: organizes the diagram in a non-predictable, organic fashion on the basis of physical principles. The strength of this layout resides in the fact that it applies to arbitrary diagram where certain assumption are not known to be valid a priori, like e.g. whether it's connected or hierarchical.
-* **layered layout**: organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream).
-
-The generic way to apply a layout is by calling the **layout()** method on the diagram. The method has two parameters:
-
-- the **layout type**: one of the three layout types enumerated above. If none is specified the TreeLayout will be applied.
-- the **options**: this can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.
+The generic way to apply a layout is by calling the **layout()** method on the diagram. The method has a single parameter **options**. It is an object, which can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.
 
 ##Configuration
 
@@ -33,21 +26,36 @@ The type of the layout algorythm to use. Predefined values are:
 
 * **tree** - The tree layout needs little introduction; it organizes a diagram in a hierarchical way and is typically used in organizational representations. This type includes the radial tree layout, mindmapping and the classic tree diagrams.
 * **force** - The force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node. This force-directed layout is **non-deterministic**; each layout pass will result in an unpredictable (and hence not reproducible) layout. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
+
 ![Force-directed parameter](ForceDirectedParameters.png)
-* **layered** - Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
+
+* **layered** - Organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream). Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
+
+![Layered layout parameters.](LayeredParameters.png)
 
 ###subtype `String` *(default: "down")*
 
 The subtype further defines the layout type by specifying in greater detail the behaviour expected by the layout algorithm. Possible predefined values are:
 
 - **down** - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the top and its children downwards. For the layered layout the links are directed downwards. This is the default subtype.
+![Tree down parameters](treeDownParameters.png)
+
 - **up** - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the bottom and its children upwards. For the layered layout the links are directed upwards.
 - **left** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the left and its children sideways to the right. For the layered layout the links are directed to the left.
 - **right** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the right and its children sideways to the left. For the layered layout the links are directed downwards.
+![Tree right parameters](treeRightParameters.png)
+
 - **mindmapHorizontal** - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
 - **mindmapVertical** -*tree layout* specific subtype. The root sits at the center and its children are spread equally above and below. ![Mindmap parameters](MindmapParameters.png)
-    
-    
+- **radial** - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
+![Radial tree parameters](RadialTreeParameters.png) ![Radial layout angles.](RadialAngles.png)
+- **tipOver** - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example. ![Tip-over parameters](TipOverParameters.png)
+- **horizontal** - *layered layout* specific subtype. The preferred direction of the links is horizontal.
+- **vertical** - *layered layout* specific subtype. The preferred direction of the links is vertical.
+
+
+Example of *vertical mindmap tree layout*:
+
     diagram.layout({
         type: "tree",
         subtype: "mindmapVertical",
@@ -55,10 +63,7 @@ The subtype further defines the layout type by specifying in greater detail the 
         verticalSeparation: 10
     });
 
-- **radial** - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
-![Radial tree parameters](RadialTreeParameters.png) ![Radial layout angles.](RadialAngles.png)
-- **tipOver** - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example. ![Tip-over parameters](TipOverParameters.png)
-    
+Example of *tip over tree layout*:
     
     diagram.layout({
         type: "tree",
@@ -69,8 +74,6 @@ The subtype further defines the layout type by specifying in greater detail the 
         underneathVerticalSeparation: 20                        
     });
 
-- **horizontal** - *layered layout* specific subtype. The preferred direction of the links is horizontal.
-- **vertical** - *layered layout* specific subtype. The preferred direction of the links is vertical.
 
 ###horizontalSeparation `Number` *(default: 90)*
 
@@ -111,6 +114,8 @@ Defines the horizontal offset from a child with respect to its parent. *This set
 ###iterations `Number` *(default: 300)*
 
 The number of times that all the forces in the diagram are being calculated and balanced. The default is set at 300, which should be enough for diagrams up to a hundred nodes. By increasing this parameter you increase the correctness of the simulation but it does not always lead to a more stable topology. In some situations a diagram simply does not have a stable minimum energy state and oscillates (globally or locally) between the minima. In such a situation increasing the iterations will not result in a better topology. *This setting is specific to the force-directed layout*
+
+![Increasing iterations](ForceDirectedIterations.png)
 
 ###nodeDistance `Number` *(default: 50)*
 
