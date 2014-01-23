@@ -228,6 +228,26 @@ Some events can be prevented (cancelled), so that the user action, which has tri
     });
     </script>
 
+### Unbinding Kendo UI Event Handlers
+
+It is possible to detach a previously attached event handler with the `unbind` method, which all Kendo UI widgets have.
+
+#### Example - unbinding event handlers
+
+    <div id="grid"></div>
+    <script>
+    function onChange(e) {
+        // handler body
+    }
+    
+    $("#grid").kendoGrid({
+        change: onChange
+    });
+    
+    $("#grid").data("kendoGrid").unbind("change", onChange);
+    </script>
+
+    
 ## Accessing Kendo UI widget elements
 
 Each Kendo UI widget instance keeps references to two elements - `element` and `wrapper`.
