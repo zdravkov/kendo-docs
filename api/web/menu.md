@@ -247,6 +247,43 @@ Defines the animation duration in milliseconds.
         });
     </script>
 
+### dataSource `Object|Array`
+
+The data source of the widget which is used to render its items. Can be a JSON object/Array that contains an item or an Array of items to be rendered.
+Refer to the example below for a list of the supported properties.
+
+#### Example
+
+    $(document).ready(function() {
+     $("#menu").kendoMenu({
+      dataSource:
+        [{
+            text: "Item 1",
+            cssClass: "myClass",                         // Add custom CSS class to the item, optional, added 2012 Q3 SP1.
+            url: "http://www.kendoui.com"                // Link URL if navigation is needed, optional.
+        },
+        {
+            text: "<b>Item 2</b>",
+            encoded: false,                              // Allows use of HTML for item text
+            content: "text"                              // content within an item
+        },
+        {
+            text: "Item 3",
+            imageUrl: "http://www.kendoui.com/test.jpg", // Item image URL, optional.
+            items: [{                                    // Sub item collection
+                 text: "Sub Item 1"
+            },
+            {
+                 text: "Sub Item 2"
+            }]
+        },
+        {
+            text: "Item 4",
+            spriteCssClass: "imageClass3"                // Item image sprite CSS class, optional.
+        }]
+     })
+    });
+
 ### direction `String`*(default: "default")*
 
  Specifies Menu opening direction. Can be "top", "bottom", "left", "right".

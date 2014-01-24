@@ -270,6 +270,48 @@ Sets an array with the URLs from which the **PanelBar** items content to be load
         });
     </script>
 
+### dataSource `Object|Array`
+
+The data source of the widget which is used to render its items. Can be a JSON object/Array that contains an item or an Array of items to be rendered.
+Refer to the example below for a list of the supported properties.
+
+#### Example
+
+    $("#panelbar").kendoPanelBar({
+        dataSource: [
+            {
+                text: "Item 1",
+                cssClass: "myClass",                            // Add custom CSS class to the item, optional, added 2012 Q3 SP1.
+                url: "http://www.kendoui.com/"                  // link URL if navigation is needed (optional)
+            },
+            {
+                text: "<b>Item 2</b>",
+                encoded: false,                                 // Allows use of HTML for item text
+                content: "text"                                 // content within an item
+            },
+            {
+                text: "Item 3",
+                contentUrl: "partialContent.html"               // content URL to load within an item
+            },
+            {
+                text: "Item 4",
+                imageUrl: "http://www.kendoui.com/test.jpg",    // item image URL, optional
+                expanded: true,                                 // item is rendered expanded
+                items: [{                                       // Sub item collection.
+                    text: "Sub Item 1"
+                },
+                {
+                    text: "Sub Item 2"
+                }]
+            },
+            {
+                text: "Item 5",
+                // item image sprite CSS class, optional
+                spriteCssClass: "imageClass3"
+            }
+        ]
+    });
+
 ### expandMode `String`*(default: "multiple")*
 
 Specifies how the **PanelBar** items are displayed when opened and closed. The following values
