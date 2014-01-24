@@ -15,7 +15,7 @@ The Kendo UI Bootstrapper is a free and open source tool designed to enhance you
 
 ### Video Overview
 
-<iframe height="360" src="//www.youtube.com/embed/MumyCDUYfQk?rel=0" frameborder="0" width="640"></iframe>
+<iframe height="360" src="http://www.youtube.com/embed/MumyCDUYfQk?rel=0" frameborder="0" width="640"></iframe>
 
 ## Installation
 
