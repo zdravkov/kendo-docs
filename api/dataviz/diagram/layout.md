@@ -31,33 +31,36 @@ The type of the layout algorythm to use. Predefined values are:
 
 * **layered** - Organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream). Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
 
-    There are several criteria on which this algorithm is based and which are respected in as far as the incidence structure allows it:
-    - links have a preferred direction (the complementary direction of the subtype) and attempt to flow as much as possible in this way
-    - linked nodes try to stay closed to one another (clustering of nodes)
-    - links crossings should be minimized
-    - links should be as short as possible (cross a few layers as possible)
+    <p>There are several criteria on which this algorithm is based and which are respected in as far as the incidence structure allows it:</p>
+    <ul>
+        <li>links have a preferred direction (the complementary direction of the subtype) and attempt to flow as much as possible in this way</li>
+        <li>linked nodes try to stay closed to one another (clustering of nodes)</li>
+        <li>links crossings should be minimized</li>
+        <li>links should be as short as possible (cross a few layers as possible)</li>
+    </ul>
 
-    The construction of a layered graph drawing proceeds in a series of steps (assuming an horizontal layer from here on):
+    <p>The construction of a layered graph drawing proceeds in a series of steps (assuming an horizontal layer from here on):</p>
+     + If the input graph is not already a directed acyclic graph, a set of edges is identified the reversal of which will make it acyclic.
+     + The nodes of the directed acyclic graph resulting from the first step are assigned to layers, such that each link goes from a higher layer to a lower layer.
+     + Edges that span multiple layers are replaced by paths of dummy vertices so that, after this step, each edge in the expanded graph connects two vertices on adjacent layers of the drawing.
+     + The nodes within each layer are permuted in an attempt to reduce the number of crossings among the edges connecting it to the previous layer.
+     + Each node is assigned a coordinate within its layer, consistent with the permutation calculated in the previous step.
+     + The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.
 
-    + If the input graph is not already a directed acyclic graph, a set of edges is identified the reversal of which will make it acyclic.
-    + The nodes of the directed acyclic graph resulting from the first step are assigned to layers, such that each link goes from a higher layer to a lower layer.
-    + Edges that span multiple layers are replaced by paths of dummy vertices so that, after this step, each edge in the expanded graph connects two vertices on adjacent layers of the drawing.
-    + The nodes within each layer are permuted in an attempt to reduce the number of crossings among the edges connecting it to the previous layer.
-    + Each node is assigned a coordinate within its layer, consistent with the permutation calculated in the previous step.
-    + The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.
-
-![Layered layout parameters.](LayeredParameters.png)
+    ![Layered layout parameters.](LayeredParameters.png)
 
 ###subtype `String` *(default: "down")*
 
 The subtype further defines the layout type by specifying in greater detail the behaviour expected by the layout algorithm. Possible predefined values are:
 
 - **down** - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the top and its children downwards. For the layered layout the links are directed downwards. This is the default subtype.
+
     ![Tree down parameters](treeDownParameters.png)
 
 - **up** - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the bottom and its children upwards. For the layered layout the links are directed upwards.
 - **left** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the left and its children sideways to the right. For the layered layout the links are directed to the left.
 - **right** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the right and its children sideways to the left. For the layered layout the links are directed downwards.
+
     ![Tree right parameters](treeRightParameters.png)
 
 - **mindmapHorizontal** - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
@@ -70,11 +73,15 @@ The subtype further defines the layout type by specifying in greater detail the 
         });
         
 - **mindmapVertical** -*tree layout* specific subtype. The root sits at the center and its children are spread equally above and below.
+
     ![Mindmap parameters](MindmapParameters.png)
 - **radial** - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
+
     ![Radial tree parameters](RadialTreeParameters.png)
     ![Radial layout angles.](RadialAngles.png)
+
 - **tipOver** - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example.
+
     ![Tip-over parameters](TipOverParameters.png)
 
 - **horizontal** - *layered layout* specific subtype. The preferred direction of the links is horizontal.
