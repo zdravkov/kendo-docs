@@ -7,7 +7,7 @@ tags: api,framework
 publish: false
 ---
 
-# kendo.dataviz.ui.diagram.connection
+# kendo.diagram.connection
 
 The Connection object is a visual link or connection in the graph or diagram.
 

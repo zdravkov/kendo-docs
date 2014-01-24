@@ -7,7 +7,7 @@ tags: api,framework
 publish: false
 ---
 
-# kendo.dataviz.ui.diagram.connector
+# kendo.diagram.connector
 
 The Connector object is a visual intermediate between the Connection and the Shape, it represents the attachment point of a Connection to a Shape.
 

@@ -7,7 +7,7 @@ tags: api,framework
 publish: false
 ---
 
-# kendo.dataviz.ui.diagram.shape
+# kendo.diagram.shape
 
 The Shape object represents a visual node in the graph or diagram.
 
