@@ -32,7 +32,7 @@ The fields which can be used in the template are:
 
     <script id="event-template" type="text/x-kendo-template">
       <div>Title: #: title #</div>
-      <div>Atendees:
+      <div>Attendees:
           # for (var i = 0; i < resources.length; i++) { #
             #: resources[i].text #
           # } #
@@ -50,12 +50,12 @@ The fields which can be used in the template are:
           end: new Date("2013/6/6 09:00 AM"),
           isAllDay: true,
           title: "Interview",
-          atendees: [1,2]
+          attendees: [1,2]
         }
       ],
       resources: [
         {
-          field: "atendees",
+          field: "attendees",
           dataSource: [
            { value: 1, text: "Alex" },
            { value: 2, text: "Bob" }
