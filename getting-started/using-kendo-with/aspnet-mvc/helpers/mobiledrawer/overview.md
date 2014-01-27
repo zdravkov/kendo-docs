@@ -8,16 +8,16 @@ publish: true
 
 # MobileDrawer
 
-The MobileDrawer HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile Drawer](http://docs.kendoui.com/api/mobile/drawer) widget. It allows you to configure the Kendo UI Mobile Drawer
+The MobileDrawer HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile Drawer](/kendo-ui/api/mobile/drawer) widget. It allows you to configure the Kendo UI Mobile Drawer
 from server-side code.
 
 ## Getting started
 
 The following tutorial shows how to configure Kendo UI MobileDrawer for ASP.NET MVC.
 
-1.  Create a new ASP.NET MVC 4 application (or Kendo UI ASP.NET MVC application if you have installed the [Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-If you decide not to use the Kendo UI Visual Studio Extensions, follow the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
-to add Kendo UI Complete for ASP.NET MVC to the application.
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+If you decide not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions, follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+to add Telerik UI for ASP.NET MVC to the application.
 1.  Open "HomeController.cs" and modify the `Index` action method:
 
         public ActionResult Index()
@@ -129,7 +129,7 @@ to add Kendo UI Complete for ASP.NET MVC to the application.
 ## Getting reference to the Kendo UI MobileDrawer widget
 
 To get a reference to a drawer instance use the [jQuery.data()](http://api.jquery.com/jQuery.data/) method and the value specified via the `Name()` method.
-Then you can use you can use the JavaScript [API](/api/mobile/drawer#methods) of the drawer.
+Then you can use you can use the JavaScript [API](/kendo-ui/api/mobile/drawer#methods) of the drawer.
 
 ### Example - get reference to a Kendo UI MobileDrawer instance
 
@@ -146,7 +146,7 @@ Then you can use you can use the JavaScript [API](/api/mobile/drawer#methods) of
 
 ## Handling Kendo UI MobileDrawer events
 
-You can subscribe to all [events](/api/mobile/drawer#events) exposed by the widget:
+You can subscribe to all [events](/kendo-ui/api/mobile/drawer#events) exposed by the widget:
 
 ### Example - subscribe to event by handler name (ASPX)
 

@@ -20,9 +20,9 @@ returned by PDO.
 First we will configure a Kendo Sparkline for PHP binding and then we will implement the remote service which will return JSON.
 
 
-> The following demo is using the sample SQLite database shipped with the Kendo UI for PHP demos (**/wrappers/php/sample.db**).
+> The following demo is using the sample SQLite database shipped with the Telerik UI for PHP** demos (**/wrappers/php/sample.db).
 
-1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Create a PDO connection
 
         <?php
@@ -35,7 +35,7 @@ First we will configure a Kendo Sparkline for PHP binding and then we will imple
         $statement->execute();
         $weather = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
-1. Create a [data source](/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/api/wrappers/php/Kendo/Data/DataSource#data) and [schema](/api/wrappers/php/Kendo/Data/DataSource#schema). Setting the schema is required to specify the model fields. Those fields are required for filtering and editing.
+1. Create a [data source](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource#data) and [schema](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource#schema). Setting the schema is required to specify the model fields. Those fields are required for filtering and editing.
 
         <?php
         // Create the schema model
@@ -60,7 +60,7 @@ First we will configure a Kendo Sparkline for PHP binding and then we will imple
         $dataSource->data($weather)
                    ->schema($schema);
         ?>
-1. Create a [sparkline](/api/wrappers/php/Kendo/Dataviz/UI/Sparkline), configure its [series](/api/wrappers/php/Kendo/Dataviz/UI/Sparkline#addSeriesItem).
+1. Create a [sparkline](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/Sparkline), configure its [series](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/Sparkline#addSeriesItem).
 
         <?php
         $sparkline = new \Kendo\Dataviz\UI\Sparkline('sparkline');
@@ -71,7 +71,7 @@ First we will configure a Kendo Sparkline for PHP binding and then we will imple
         $sparkline->addSeriesItem($tmaxSeries)
               ->dataSource($dataSource);
         ?>
-1. Output the sparkline by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+1. Output the sparkline by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $sparkline->render();

@@ -22,8 +22,8 @@ publish: true
 
 * **Core**: kendo.support.pointers now only shows support for IE11 pointer events - kendo.support.msPointers was added to indicate that IE10 pointer events are supported too.
 * **Splitter**: the internal method `trigger("resize")`, which has been provided as a workaround in certain scenarios, no longer works.
-It has been replaced with a [public API method `resize()`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages), which now all Kendo UI widgets have.
-Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
+It has been replaced with a [public API method `resize()`](/kendo-ui/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages), which now all Kendo UI widgets have.
+Also see [`kendo.resize()`](/kendo-ui/api/framework/kendo/#methods-resize).
 * **Splitter**: the `layoutChange` event is now obsolete and will be removed in the future. Please use the `resize` event instead.
 * **Kendo UI Scheduler for ASP.NET MVC**: "ISchedulerEvent" interface now includes two additional fields - "StartTimezone" and "EndTimezone" which stores the timezone information of the event.
 * **Scheduler**: Changes in `recurrenceEditor` messages:
@@ -37,7 +37,7 @@ Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
  -  `end.endCountOccurrence` becomes `end.occurrence`
  -  `end.endUntilOn` becomes `end.on`
 
-* **MVC DataSource**: The MVC DataSource transport now serializes numbers based on the used Kendo culture. As a result, if you are using an invariant culture number model binder, the numbers will not be parsed correctly. You should either use the the same culture to parse the numbers in the model binder or remove the model binder in order for numbers with a decimal separator to be parsed correctly. 
+* **MVC DataSource**: The MVC DataSource transport now serializes numbers based on the used Kendo culture. As a result, if you are using an invariant culture number model binder, the numbers will not be parsed correctly. You should either use the the same culture to parse the numbers in the model binder or remove the model binder in order for numbers with a decimal separator to be parsed correctly.
 
 ## KendoUI 2013 Q2
 
@@ -63,8 +63,7 @@ If you need the old tool set, use the configuration below.
             ]
         });
 
-* **Editor**: Initializing the editor from a `div` element triggers the [inline editing mode](http://demos.kendoui.com/web/editor/inline-editing.html).
-If you need the old behavior, initialize the Editor from a `<textarea>` element.
+* **Editor**: Initializing the editor from a `div` element triggers the [inline editing mode](http://demos.telerik.com/kendo-ui/web/editor/inline-editing.html). If you need to revert to the old behavior, initialize it from a `<textarea>` element.
 
 * **Mobile ListView**:
 
@@ -127,7 +126,7 @@ Enabling endless scrolling or press to load more configuration options now puts 
 
 #### ASP.NET MVC
 
-Some ASP.NET MVC applications may be broken if using other libraries incompatible with jQuery 1.9.1. Further details available in the [troubleshooting guide](/getting-started/using-kendo-with/aspnet-mvc/troubleshooting#javascript-error-that-live-method-is-unavailable,-undefined-or-unsupported)
+Some ASP.NET MVC applications may be broken if using other libraries incompatible with jQuery 1.9.1. Further details available in the [troubleshooting guide](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/troubleshooting#javascript-error-that-live-method-is-unavailable,-undefined-or-unsupported)
 
 ## KendoUI 2012 Q3 SP1
 
@@ -136,9 +135,9 @@ Some ASP.NET MVC applications may be broken if using other libraries incompatibl
 #### Breaking changes
 
 * **Cascading ComboBoxes/DropDownLists:** The parameterMap of the child widget's dataSource is called before the change event of the parent widget.
-Use [cascade](http://docs.kendoui.com/api/web/combobox#cascade) event instead of change event.
+Use [cascade](/kendo-ui/api/web/combobox#cascade) event instead of change event.
 
-* **Kendo UI Complete for ASP.NET MVC:** Remove Slide effect. Use SlideIn instead.
+* Telerik UI for ASP.NET MVC: Remove Slide effect. Use SlideIn instead.
 
 ## KendoUI 2012 Q3
 
@@ -212,7 +211,7 @@ if using the Default skin, should be updated to:
             .k-i-arrow-w
             .k-i-seek-w
             .k-i-seek-e
-    for more information check the [Styling Icons demo](http://demos.kendoui.com/web/styling/icons.html).
+    for more information check the [Styling Icons demo](http://demos.telerik.com/kendo-ui/web/styling/icons.html).
 
 *  **Popup:** Popup based widgets nested in other Popup based widgets create their Popup container inside the Popup parent. This means that a DropDownList created inside an already
     initialized Menu will create its list inside the Menu item's parent Popup.

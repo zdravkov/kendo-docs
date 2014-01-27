@@ -23,7 +23,7 @@ Contains the items of the tabstrip widget
 
 Contains the items of the tabstrip widget
 
-More documentation is available at [kendo:tabStrip-item](tabstrip/item).
+More documentation is available at [kendo:tabStrip-item](/kendo-ui/api/wrappers/jsp/tabstrip/item).
 
 #### Example
 

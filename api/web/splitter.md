@@ -10,7 +10,7 @@ publish: true
 
 # kendo.ui.Splitter
 
-Represents the Kendo UI Splitter widget. Inherits from [Widget](/api/framework/widget).
+Represents the Kendo UI Splitter widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
 
 ## Configuration
 
@@ -78,7 +78,7 @@ Specifies the URL from which to load the content of a pane.
     </div>
     <script>
     $("#splitter").kendoSplitter({
-      panes: [ {}, { contentUrl: "http://www.kendoui.com/" } ]
+      panes: [ {}, { contentUrl: "http://www.telerik.com/" } ]
     });
     </script>
 
@@ -197,7 +197,7 @@ Any data that is necessary to be sent to the server.
     var splitter = $("#splitter").data("kendoSplitter");
 
     // load a complete page in the last pane
-    splitter.ajaxRequest(".k-pane:last", "http://www.kendoui.com");
+    splitter.ajaxRequest(".k-pane:last", "http://www.telerik.com");
 
     // load content into the pane with ID="pane1"
     splitter.ajaxRequest("#pane1", "/customer/profile", { id: 42 });

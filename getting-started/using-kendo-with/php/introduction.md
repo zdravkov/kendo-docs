@@ -1,43 +1,43 @@
 ---
 title: Introduction
 slug: php-introduction
-meta_title: Documentation guide for Kendo UI for PHP
-meta_description: How to download, install Kendo UI Complete for PHP and run the sample application.
+meta_title: Documentation guide for Telerik UI for PHP
+meta_description: How to download, install Telerik UI for PHP and run the sample application.
 publish: true
 ---
 
-## What is Kendo UI Complete for PHP
+## What is Telerik UI for PHP
 
-Kendo UI Complete for PHP is a set of PHP classes which help you configure Kendo UI widgets by using server-side code in PHP web sites.
+Telerik UI for PHP is a set of PHP classes which help you configure Kendo UI widgets by using server-side code in PHP web sites.
 
 ## Requirements
 
-Kendo UI Complete for PHP requires PHP 5.3+. The sample application uses [PDO](http://www.php.net/manual/en/intro.pdo.php)
+Telerik UI for PHP requires PHP 5.3+. The sample application uses [PDO](http://www.php.net/manual/en/intro.pdo.php)
 and [SQLite](http://www.php.net/manual/en/ref.pdo-sqlite.php).
 Both extensions should be enabled in the PHP configuration (php.ini). The
 [phpinfo](http://php.net/manual/en/function.phpinfo.php) function can be used to verify that PDO and the SQLite extensions are successfully installed.
 
-## Downloading and Installing Kendo UI Complete for PHP
+## Downloading and Installing Telerik UI for PHP
 
-Yoiu can download Kendo UI Complete for PHP from the [official download page](http://www.kendoui.com/download). The distribution zip file
+Yoiu can download Telerik UI for PHP from the [official download page](http://www.telerik.com/download/pho-ui). The distribution zip file
 contains the following directories:
 
 *   **/js** - minified JavaScript files.
 *   **/styles** - minified CSS files and background images used by the themes.
 *   **/src** - JavaScript and CSS source files. Not available in the trial version.
-*   **/wrappers/php/lib/Kendo/** - PHP files required to use Kendo UI Complete for PHP.
+*   **/wrappers/php/lib/Kendo/** - PHP files required to use Telerik UI for PHP.
 *   **/wrappers/php/** - sample PHP web site.
 
 ## Running the sample web site
 
-You can find a sample PHP web site in the **/wrappers/php/** directory of the Kendo UI Complete for PHP distribution.
+You can find a sample PHP web site in the **/wrappers/php/** directory of the Telerik UI for PHP distribution.
 To run the web site copy this directory to your web root. Then navigate to **index.php**.
 
-## Using Kendo UI Complete for PHP in your PHP web site
+## Using Telerik UI for PHP in your PHP web site
 
 1. Copy **/wrappers/php/lib/Kendo** to your web site root (for example in your **lib** directory).
 2. Copy the Kendo UI JavaScript and CSS files from **/js** and **/styles** to your web site root. If you prefer to use Kendo CDN skip this and the next steps
-and check the [JavaScript Dependencies](http://docs.kendoui.com/getting-started/javascript-dependencies#cdn) help topic.
+and check the [JavaScript Dependencies](/kendo-ui/getting-started/javascript-dependencies#cdn) help topic.
 3. Include the Kendo UI JavaScript and CSS files in your PHP page:
 
         <link href="styles/kendo.common.min.css" rel="stylesheet" type="text/css" />
@@ -47,7 +47,7 @@ and check the [JavaScript Dependencies](http://docs.kendoui.com/getting-started/
 
     > If you want to use Kendo UI Web and DataViz at the same time you should include **kendo.all.min.js** instead of **kendo.web.min.js** and
 **kendo.dataviz.min.js**. You can also create a custom JavaScript file using the
-[Custom Download Builder](http://www.kendoui.com/custom-download).
+[Custom Download Builder](http://www.telerik.com/download/custom-download).
 
 4. Include the Kendo PHP [Autoload](http://php.net/manual/en/language.oop5.autoload.php) file.
 

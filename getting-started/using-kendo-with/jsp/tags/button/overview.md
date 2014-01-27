@@ -8,10 +8,10 @@ publish: true
 
 # Button
 
-The Button JSP tag is a server-side wrapper for the [Kendo UI Button](http://docs.kendoui.com/api/web/button) widget.
+The Button JSP tag is a server-side wrapper for the [Kendo UI Button](/kendo-ui/api/web/button) widget.
 
-It is assumed that the reader of this page is familiar with the fundamental [Kendo UI widget concepts](/getting-started/widgets) and
-the [Kendo UI Java wrappers](/getting-started/using-kendo-with/jsp/introduction) are setup correctly.
+It is assumed that the reader of this page is familiar with the fundamental [Kendo UI widget concepts](/kendo-ui/getting-started/widgets) and
+the [Kendo UI Java wrappers](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) are setup correctly.
 
 ## Getting Started
 
@@ -46,7 +46,7 @@ There are three settings, which the **Button** provides for configuring icons - 
 Background icons are applied via the `icon` or `spriteCssClass` properties and are displayed as a background of a `span` element.
 
 The difference between the two settings is that `icon` is intended to be used for built-in Kendo UI icons, which are part of the theme sprite.
-For a list of available icon names, please refer to the [Icons demo](http://demos.kendoui.com/web/styling/icons.html).
+For a list of available icon names, please refer to the [Icons demo](http://demos.telerik.com/kendo-ui/web/styling/icons.html).
 
 #### Using `icon`
 
@@ -107,8 +107,8 @@ The widget can also be disabled or enabled at any time with Javascript by using 
     <kendo:button name="disabledButton" type="button" enable="false" content="Disabled button">
     </kendo:button>
 
-For more information on the **Button** [`enable` method](/api/web/button#methods-enable), please refer to the [Button API](/api/web/button/).
+For more information on the **Button** [`enable` method](/kendo-ui/api/web/button#methods-enable), please refer to the [Button API](/kendo-ui/api/web/button/).
 
 ## Accessing the Button instance
 
-Please refer to the **Button**'s [Getting Started](/getting-started/web/button/overview/#accessing-the-button-instance) documentation page.
+Please refer to the **Button**'s [Getting Started](/kendo-ui/getting-started/web/button/overview/#accessing-the-button-instance) documentation page.

@@ -10,7 +10,7 @@ publish: true
 
 ## Binding through a custom transport
 
-If you have a way of fetching data that cannot be achieved through the default [dataSource transport configuration](/api/framework/hierarchicaldatasource#configuration-transport), you can provide a [custom read function](/api/framework/datasource#configuration-transport.read) that fetches the data and delivers them to the datasource (the so-called "custom transport"). This enables you to query different URLs conditionally, or provide generated authentication tokens for each request.
+If you have a way of fetching data that cannot be achieved through the default [dataSource transport configuration](/kendo-ui/api/framework/hierarchicaldatasource#configuration-transport), you can provide a [custom read function](/kendo-ui/api/framework/datasource#configuration-transport.read) that fetches the data and delivers them to the datasource (the so-called "custom transport"). This enables you to query different URLs conditionally, or provide generated authentication tokens for each request.
 
     <script>
     var datasource = new kendo.data.HierarchicalDataSource({
@@ -21,7 +21,7 @@ If you have a way of fetching data that cannot be achieved through the default [
           // [additional processing here]
 
           $.ajax({
-            url: "http://demos.kendoui.com/service/employees",
+            url: "http://demos.telerik.com/kendo-ui/service/employees",
             dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
             data: { EmployeeId: id },
             success: function(result) {

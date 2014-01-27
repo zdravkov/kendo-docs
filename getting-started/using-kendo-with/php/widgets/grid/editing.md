@@ -12,7 +12,7 @@ relatedDocs: php-ui-grid, php-grid-overview
 This help topic shows how to persist the changes from create, update and destroy operations using Kendo UI Grid for PHP.
 
 
-> The following demos are using the sample SQLite database shipped with the Kendo UI for PHP demos (**/wrappers/php/sample.db**).
+> The following demos are using the sample SQLite database shipped with the Telerik UI for PHP** demos (**/wrappers/php/sample.db).
 
 ## Editing with PDO
 
@@ -20,7 +20,7 @@ This demo shows how to use [PDO]() to perform create, update and destroy operati
 
 ### Configure Grid for editing
 
-1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Create a data source and configure it:
 
         <?php
@@ -157,7 +157,7 @@ This demo shows how to use [PDO]() to perform create, update and destroy operati
         <?php
         $db = new PDO('sqlite:../sample.db');
         ?>
-1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
+1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/kendo-ui/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
 
         <?php
         $request = json_decode(file_get_contents('php://input'));
@@ -272,12 +272,12 @@ This demo shows how to use [PDO]() to perform create, update and destroy operati
 
 The `DataSourceResult` class is a helper utility on top of PDO which simplifies common CRUD operations.
 The DataSourceResult can also perform paging, sorting, filtering, grouping and aggregate calculation on the server side by generating SQL executed via PDO.
-It is distributed with the Kendo UI for PHP demos and can be found in the **/wrappers/php/lib/** directory of the Kendo UI Complete for PHP distribution.
+It is distributed with the Telerik UI for PHP** demos and can be found in the **/wrappers/php/lib/** directory of the **Telerik UI for PHP distribution.
 
 First we will configure a Kendo Grid for PHP binding and then we will implement the remote service.
 
 ### Configure Grid for editing (using DataSourceResult)
-1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Create a data source and configure it:
 
         <?php
@@ -412,7 +412,7 @@ First we will configure a Kendo Grid for PHP binding and then we will implement 
 1. Copy **/wrappers/php/lib/DataSourceResult.php** to your web site root and include it.
 
         <?php require_once 'lib/DataSourceResult.php'; ?>
-1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
+1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/kendo-ui/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
 
         <?php
         $request = json_decode(file_get_contents('php://input'));

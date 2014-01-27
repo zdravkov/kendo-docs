@@ -8,16 +8,16 @@ publish: true
 
 # MobileScrollView
 
-The MobileScrollView HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile ScrollView](http://docs.kendoui.com/api/mobile/scrollview) widget. It allows you to configure the Kendo UI Mobile ScrollView
+The MobileScrollView HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile ScrollView](/kendo-ui/api/mobile/scrollview) widget. It allows you to configure the Kendo UI Mobile ScrollView
 from server-side code.
 
 ## Getting started
 
 The following tutorial shows how to configure Kendo UI MobileScrollView for ASP.NET MVC.
 
-1.  Create a new ASP.NET MVC 4 application (or Kendo UI ASP.NET MVC application if you have installed the [Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-If you decide not to use the Kendo UI Visual Studio Extensions, follow the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
-to add Kendo UI Complete for ASP.NET MVC to the application.
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+If you decide not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions, follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+to add Telerik UI for ASP.NET MVC to the application.
 1.  Open "HomeController.cs" and modify the `Index` action method:
 
         public ActionResult Index()
@@ -107,7 +107,7 @@ to add Kendo UI Complete for ASP.NET MVC to the application.
 ## Getting reference to the Kendo UI MobileScrollView widget
 
 To get a reference to a scrollview instance use the [jQuery.data()](http://api.jquery.com/jQuery.data/) method and the value specified via the `Name()` method.
-Then you can use you can use the JavaScript [API](/api/mobile/scrollview#methods) of the scrollview.
+Then you can use you can use the JavaScript [API](/kendo-ui/api/mobile/scrollview#methods) of the scrollview.
 
 ### Example - get reference to a Kendo UI MobileScrollView instance
 
@@ -129,7 +129,7 @@ Then you can use you can use the JavaScript [API](/api/mobile/scrollview#methods
 
 ## Handling Kendo UI MobileScrollView events
 
-You can subscribe to all [events](/api/mobile/scrollview#events) exposed by the widget:
+You can subscribe to all [events](/kendo-ui/api/mobile/scrollview#events) exposed by the widget:
 
 ### Example - subscribe to event by handler name (ASPX)
 

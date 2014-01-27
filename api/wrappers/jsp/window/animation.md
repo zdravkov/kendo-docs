@@ -24,7 +24,7 @@ will disable all animations in the widget.
 
 The animation that will be used when a Window closes.
 
-More documentation is available at [kendo:window-animation-close](window/animation-close).
+More documentation is available at [kendo:window-animation-close](/kendo-ui/api/wrappers/jsp/window/animation-close).
 
 #### Example
 
@@ -36,7 +36,7 @@ More documentation is available at [kendo:window-animation-close](window/animati
 
 The animation that will be used when a Window opens.
 
-More documentation is available at [kendo:window-animation-open](window/animation-open).
+More documentation is available at [kendo:window-animation-open](/kendo-ui/api/wrappers/jsp/window/animation-open).
 
 #### Example
 

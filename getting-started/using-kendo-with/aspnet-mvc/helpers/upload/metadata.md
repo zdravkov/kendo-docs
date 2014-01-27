@@ -1,7 +1,7 @@
 ---
 title: Metadata
 meta_title: Asynchronous uploading of metadata | Kendo UI Helpers for ASP.NET MVC
-meta_description: Explanatory notes about asynchronous uploading of metadata in Kendo UI ASP.NET MVC Helpers.
+meta_description: Explanatory notes about asynchronous uploading of metadata in Telerik UI for ASP.NET MVC Helpers.
 slug: mvc-upload-metadata
 publish: true
 ---
@@ -144,7 +144,7 @@ The Upload requires the response to be in JSON format with Content-Type set to "
             return Json(new { status = "OK" }, "text/plain");
         }
 
-2. Declare a handler for the [success event](http://docs.kendoui.com/api/web/upload#success) and process the response
+2. Declare a handler for the [success event](/kendo-ui/api/web/upload#success) and process the response
 
         function onSuccess(e) {
             alert("Status: " + e.response.status);

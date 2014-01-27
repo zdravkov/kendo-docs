@@ -39,7 +39,7 @@ Defines the initial folder to display, relative to the root.
 
 Defines texts shown within the image browser.
 
-More documentation is available at [kendo:editor-imageBrowser-messages](editor/imagebrowser-messages).
+More documentation is available at [kendo:editor-imageBrowser-messages](/kendo-ui/api/wrappers/jsp/editor/imagebrowser-messages).
 
 #### Example
 
@@ -51,7 +51,7 @@ More documentation is available at [kendo:editor-imageBrowser-messages](editor/i
 
 Set the object responsible for describing the image raw data format.
 
-More documentation is available at [kendo:editor-imageBrowser-schema](editor/imagebrowser-schema).
+More documentation is available at [kendo:editor-imageBrowser-schema](/kendo-ui/api/wrappers/jsp/editor/imagebrowser-schema).
 
 #### Example
 
@@ -63,7 +63,7 @@ More documentation is available at [kendo:editor-imageBrowser-schema](editor/ima
 
 Specifies the settings for loading and saving data.
 
-More documentation is available at [kendo:editor-imageBrowser-transport](editor/imagebrowser-transport).
+More documentation is available at [kendo:editor-imageBrowser-transport](/kendo-ui/api/wrappers/jsp/editor/imagebrowser-transport).
 
 #### Example
 

@@ -11,11 +11,11 @@ publish: true
 
 With the Q3 release, Kendo Grid supports "adaptive" enhancements like changes in styling and behavior in order to remain consistent with a device experience. 
 For instance, when filtering or editing data on a mobile device, Kendo UI will slide in a new screen for the user, which is a departure from the more desktop-like inline and popup behaviors. 
-In order to see those features in action please check the [agaptive rendering demos](http://demos.kendoui.com/mobile/adaptive/scheduler.html).
+In order to see those features in action please check the [agaptive rendering demos](http://demos.telerik.com/kendo-ui/mobile/adaptive/scheduler.html).
 
 ## Enabling the adaptive rendering feature
 
-To enable the adaptive rendering feature the developer should set [mobile](http://docs.kendoui.com/api/web/grid#configuration-mobile) propery to `true`, `phone` or `tablet`.
+To enable the adaptive rendering feature the developer should set [mobile](/kendo-ui/api/web/grid#configuration-mobile) propery to `true`, `phone` or `tablet`.
 
 #### Example
     <div id="grid"></div>
@@ -146,4 +146,4 @@ Column resizing feature on touch screen devices is triggered when the user holds
 
 ## Further reading
 
-- Blog post: [Building An Adaptive Grid and Scheduler for Kendo UI](http://www.kendoui.com/blogs/teamblog/posts/13-10-10/building-an-adaptive-grid-and-scheduler-for-kendo-ui.aspx)
+- Blog post: [Building An Adaptive Grid and Scheduler for Kendo UI](http://blogs.telerik.com/kendoui/posts/13-10-10/building-an-adaptive-grid-and-scheduler-for-kendo-ui)

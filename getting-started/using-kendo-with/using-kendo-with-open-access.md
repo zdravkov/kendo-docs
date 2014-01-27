@@ -8,7 +8,7 @@ related: gs-what-is-kendo, gs-downloading-kendo
 publish: true
 ---
 
-In this article you will learn how [OpenAccess ORM](http://www.telerik com/products/orm.aspx) can be leveraged on the backend, and [KendoUI](http://www kendoui.com) can take care of the UI.
+In this article you will learn how [OpenAccess ORM](http://www.telerik com/products/orm.aspx) can be leveraged on the backend, and [Kendo UI](http://www.telerik.com/kendo-ui) can take care of the UI.
 
 ## Getting Set Up
 
@@ -34,7 +34,7 @@ like this:![Solution After Installing jQuery And Kendo UI](images/oa2.png)
 Now we are ready to build the OpenAccess ORM model!
 
 *Note: If you are not familiar with NuGet, or would rather just download, and
-add the needed files manually.  KendoUI is available [*here*](http://www.kendoui com/get-kendo-ui.aspx), and Jquery is available [*here*](http://jquery.com/).*
+add the needed files manually. Kendo UI is available [here](http://www.telerik.com/download/kendo-ui-complete), and Jquery is available [here](http://jquery.com/).*
 
 ## Building The Model
 
@@ -103,7 +103,7 @@ Now we need to add the needed Kendo files, so add the following lines in the hea
     <script src="Scripts/jquery-1.7.1.min.js"></script>
     <script src="Scripts/2012.3.1114/kendo.all.min.js"></script>
 
-Next, we need to set up the grid.  KendoUI’s web site provides many [great examples](http://demos.kendoui.com/web/grid/index.html) of how to configure binding; so I won’t go into too much detail here.  The basic idea is that we need a div that will be used as the container for the KendoUI grid, and then we just have to configure the grid in script.
+Next, we need to set up the grid.  KendoUI’s web site provides many [great examples](http://demos.telerik.com/kendo-ui/web/grid/index.html) of how to configure binding; so I won’t go into too much detail here.  The basic idea is that we need a div that will be used as the container for the KendoUI grid, and then we just have to configure the grid in script.
 
 The code needed is here:
 
@@ -150,7 +150,7 @@ The code needed is here:
                     serverFiltering: true,
                     serverSorting: true
                 },
-                filterable: true,   
+                filterable: true,
                 sortable: true,
                 pageable: true,
                 columns: [
@@ -158,7 +158,7 @@ The code needed is here:
                         field: "OrderID",
                         filterable: false
                     },
-                    "Freight", 
+                    "Freight",
                     {
                         field: "OrderDate",
                         template: '#= kendo.toString(toDate(OrderDate), "MM/dd/yyyy") #'

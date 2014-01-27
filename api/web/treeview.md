@@ -10,7 +10,7 @@ publish: true
 
 # kendo.ui.TreeView
 
-Represents the Kendo UI TreeView. Inherits from [Widget](/api/framework/widget).
+Represents the Kendo UI TreeView. Inherits from [Widget](/kendo-ui/api/framework/widget).
 
 ## Configuration
 
@@ -166,7 +166,7 @@ The supported effects are **"expandVertical"** and **"fadeIn"**.
 
 ### autoBind `Boolean` *(default: true)*
 
-If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
+If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/kendo-ui/api/framework/datasource#events-change) event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 > Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source does not make more than one request to the remote service.
@@ -246,7 +246,7 @@ also enables tri-state checkboxes with an indeterminate state.
 
 ### checkboxes.template `String|Function`
 
-The [template](/api/framework/kendo#methods-template) which renders the checkboxes. Can be used to allow posting of
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the checkboxes. Can be used to allow posting of
 additional information along the treeview checkboxes.
 
 The fields which can be used in the template are:
@@ -279,8 +279,8 @@ Sets the field of the data item that provides the image URL of the treeview node
     <div id="treeview"></div>
     <script>
     var items = [
-      { text: "Mail", image: "http://demos.kendoui.com/content/web/treeview/mail.png" },
-      { text: "Search", image: "http://demos.kendoui.com/content/web/treeview/search.png" }
+      { text: "Mail", image: "http://demos.telerik.com/kendo-ui/content/web/treeview/mail.png" },
+      { text: "Search", image: "http://demos.telerik.com/kendo-ui/content/web/treeview/search.png" }
     ];
     $("#treeview").kendoTreeView({
       dataImageUrlField: "image",
@@ -290,11 +290,11 @@ Sets the field of the data item that provides the image URL of the treeview node
 
 ### dataSource `Object|Array|kendo.data.HierarchicalDataSource`
 
-The data source of the widget which is used render nodes. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.HierarchicalDataSource](/api/framework/hierarchicaldatasource) instance.
+The data source of the widget which is used render nodes. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.HierarchicalDataSource](/kendo-ui/api/framework/hierarchicaldatasource) instance.
 
-If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.HierarchicalDataSource](/api/framework/hierarchicaldatasource) instance using that value as data source configuration.
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.HierarchicalDataSource](/kendo-ui/api/framework/hierarchicaldatasource) instance using that value as data source configuration.
 
-If the `dataSource` option is an existing [kendo.data.HierarchicalDataSource](/api/framework/hierarchicaldatasource) instance the widget will use that instance and will **not** initialize a new one.
+If the `dataSource` option is an existing [kendo.data.HierarchicalDataSource](/kendo-ui/api/framework/hierarchicaldatasource) instance the widget will use that instance and will **not** initialize a new one.
 
 #### Example - set dataSource as a JavaScript object
 
@@ -331,7 +331,7 @@ If the `dataSource` option is an existing [kendo.data.HierarchicalDataSource](/a
     var dataSource = new kendo.data.HierarchicalDataSource({
       transport: {
         read: {
-          url: "http://demos.kendoui.com/service/Employees",
+          url: "http://demos.telerik.com/kendo-ui/service/Employees",
           dataType: "jsonp"
         }
       },
@@ -358,7 +358,7 @@ If an array, each level uses the field that is at the same index in the array, o
 
     <style>
       #treeview .k-sprite {
-        background-image: url("http://demos.kendoui.com/content/web/treeview/coloricons-sprite.png");
+        background-image: url("http://demos.telerik.com/kendo-ui/content/web/treeview/coloricons-sprite.png");
       }
 
       .folder { background-position: 0 -16px; }
@@ -713,7 +713,7 @@ A string, DOM element or jQuery object which represents the node. A string is tr
     console.log(dataItem.text); // displays "foo"
     </script>
 
-See also: [getting the node data in the select event handler](/getting-started/web/treeview/overview#getting-the-node-data-in-the-select-event-handler)
+See also: [getting the node data in the select event handler](/kendo-ui/getting-started/web/treeview/overview#getting-the-node-data-in-the-select-event-handler)
 
 ### destroy
 
@@ -866,8 +866,8 @@ The text that is being searched for.
 ### findByUid
 
 Searches for a node with the given unique identifier.
-Applicable when the widget is bound to a [HierarchicalDataSource](/api/framework/hierarchicaldatasource).
-If you want to find a node by its `id`, use the [dataSource.get()](/api/framework/datasource#get) method and supply its uid to the `findByUid` method.
+Applicable when the widget is bound to a [HierarchicalDataSource](/kendo-ui/api/framework/hierarchicaldatasource).
+If you want to find a node by its `id`, use the [dataSource.get()](/kendo-ui/api/framework/datasource#get) method and supply its uid to the `findByUid` method.
 
 #### Parameters
 

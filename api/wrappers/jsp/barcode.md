@@ -6,7 +6,7 @@ publish: true
 ---
 
 # \<kendo:barcode\>
-A JSP wrapper for Kendo UI [Barcode](/api/dataviz/barcode).
+A JSP wrapper for Kendo UI [Barcode](/kendo-ui/api/dataviz/barcode).
 
 ## Configuration Attributes
 
@@ -84,7 +84,7 @@ The width of the barcode in pixels.  By default the width is 300.
 
 The border of the barcode area.
 
-More documentation is available at [kendo:barcode-border](barcode/border).
+More documentation is available at [kendo:barcode-border](/kendo-ui/api/wrappers/jsp/barcode/border).
 
 #### Example
 
@@ -96,7 +96,7 @@ More documentation is available at [kendo:barcode-border](barcode/border).
 
 The padding of the barcode.
 
-More documentation is available at [kendo:barcode-padding](barcode/padding).
+More documentation is available at [kendo:barcode-padding](/kendo-ui/api/wrappers/jsp/barcode/padding).
 
 #### Example
 
@@ -108,7 +108,7 @@ More documentation is available at [kendo:barcode-padding](barcode/padding).
 
 Can be set to a JavaScript object which represents the text configuration.
 
-More documentation is available at [kendo:barcode-text](barcode/text).
+More documentation is available at [kendo:barcode-text](/kendo-ui/api/wrappers/jsp/barcode/text).
 
 #### Example
 

@@ -23,7 +23,7 @@ Configures the opening and closing animations of the suggestion popup. Setting t
 
 
 
-More documentation is available at [kendo:comboBox-animation-close](combobox/animation-close).
+More documentation is available at [kendo:comboBox-animation-close](/kendo-ui/api/wrappers/jsp/combobox/animation-close).
 
 #### Example
 
@@ -35,7 +35,7 @@ More documentation is available at [kendo:comboBox-animation-close](combobox/ani
 
 The animation played when the suggestion popup is opened.
 
-More documentation is available at [kendo:comboBox-animation-open](combobox/animation-open).
+More documentation is available at [kendo:comboBox-animation-open](/kendo-ui/api/wrappers/jsp/combobox/animation-open).
 
 #### Example
 

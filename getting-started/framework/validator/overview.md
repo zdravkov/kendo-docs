@@ -9,7 +9,7 @@ publish: true
 # Kendo UI Validator Overview
 The Kendo UI Validator offers an easy way to do client-side form validation. Built around the HTML5 form validation attributes, it supports variety of built-in validation rules, but also provides a convenient way for setting custom rules handling.
 
-For a complete overview of the Validator's methods and configuration options, [review the Validator API Reference](http://docs.kendoui.com/api/framework/validator).
+For a complete overview of the Validator's methods and configuration options, [review the Validator API Reference](/kendo-ui/api/framework/validator).
 
 ## HTML5 form validation
 One of the highly anticipated features in HTML5 is the arrival of new [HTML5 form validation attributes](https://developer.mozilla.org/en/HTML/Forms_in_HTML#Constraint_Validation). When used, these attributes set constraints on HTML inputs that will be enforced by the browser. Available constraints include:
@@ -61,7 +61,7 @@ Next, a Kendo UI Validator needs to be added to the page. In a JavaScript block 
         }
     });
 
-With this simple configuration, the unchanged HTML5 form validation attributes will now work in old and new browsers, and an applicaiton will have complete control over the content and styling of validation error messages. When the "Save" button is clicked, if any inputs do not pass all constraints, the Kendo UI Validator will display the appropriate valdiation error message. [View the Kendo UI Validator live demo](http://demos.kendoui.com/web/validator/index.html).
+With this simple configuration, the unchanged HTML5 form validation attributes will now work in old and new browsers, and an applicaiton will have complete control over the content and styling of validation error messages. When the "Save" button is clicked, if any inputs do not pass all constraints, the Kendo UI Validator will display the appropriate valdiation error message. [View the Kendo UI Validator live demo](http://demos.telerik.com/kendo-ui/web/validator/index.html).
 
 ## Default Validation Rules
 
@@ -91,7 +91,7 @@ With this simple configuration, the unchanged HTML5 form validation attributes w
 
 ## Custom Validation Rules
 
-Beside the built-in validation rules, with KendoUI Validator you can set custom rules through the [rules configuration option](/api/framework/validator#rules).
+Beside the built-in validation rules, with KendoUI Validator you can set custom rules through the [rules configuration option](/kendo-ui/api/framework/validator#rules).
 
 Important things to note about custom validation rules and messages:
 
@@ -242,5 +242,5 @@ adding a span with data-for attribute set to the validated input name and a clas
 
 > The validation toolip element is bound to the input's **name** via data-for attribute.
 
-The Kendo UI Validator is a powerful framework component and essential for any application that collects user input. [Review the API Docs](/api/framework/validator) for more configuration details and options.
+The Kendo UI Validator is a powerful framework component and essential for any application that collects user input. [Review the API Docs](/kendo-ui/api/framework/validator) for more configuration details and options.
 

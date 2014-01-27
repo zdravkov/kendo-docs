@@ -6,15 +6,13 @@ publish: true
 
 # Scheduler
 
-The Scheduler tag is a server-side wrapper for the [Kendo UI Scheduler](/getting-started/web/scheduler) widget.
-
-
+The Scheduler tag is a server-side wrapper for the [Kendo UI Scheduler](/kendo-ui/getting-started/web/scheduler) widget.
 
 ## Getting Started
 
 Here is how to configure the Kendo UI Scheduler for displaying and editing scheduler events.
 
-1. Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/jsp/introduction) help topic.
+1. Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) help topic.
 1. Create a class which will represent the scheduler event. We will call it `Task`.
 
         @Entity
@@ -126,7 +124,7 @@ Here is how to configure the Kendo UI Scheduler for displaying and editing sched
             }
 
         }
-1. Register the Kendo UI JSP taglib in your JSP page
+1. Register the Telerik UI for JSP taglib in your JSP page
 
         <%@taglib prefix="kendo" uri="http://www.kendoui.com/jsp/tags"%>
 1. Declare a scheduler tag. Configure it's data source model's fields.
@@ -294,7 +292,7 @@ To get a reference to a Kendo UI Scheduler instance, use the jQuery `data` and p
 
 ## Subscribing to the events of Kendo UI Scheduler
 
-The scheduler widget supports a set of [events](/api/web/scheduler#events) which the developer can subscribe to. All events are exposed as attributes and nested tags of the scheduler JSP tag.
+The scheduler widget supports a set of [events](/kendo-ui/api/web/scheduler#events) which the developer can subscribe to. All events are exposed as attributes and nested tags of the scheduler JSP tag.
 
 ### Example - handle scheduler events by setting their attributes
     <kendo:scheduler name="scheduler" dataBound="scheduler_dataBound">

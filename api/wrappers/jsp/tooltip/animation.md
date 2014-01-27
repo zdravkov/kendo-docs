@@ -24,7 +24,7 @@ will disable all animations in the widget.
 
 The animation that will be used when a Tooltip closes.
 
-More documentation is available at [kendo:tooltip-animation-close](tooltip/animation-close).
+More documentation is available at [kendo:tooltip-animation-close](/kendo-ui/api/wrappers/jsp/tooltip/animation-close).
 
 #### Example
 
@@ -36,7 +36,7 @@ More documentation is available at [kendo:tooltip-animation-close](tooltip/anima
 
 The animation that will be used when a Tooltip opens.
 
-More documentation is available at [kendo:tooltip-animation-open](tooltip/animation-open).
+More documentation is available at [kendo:tooltip-animation-open](/kendo-ui/api/wrappers/jsp/tooltip/animation-open).
 
 #### Example
 

@@ -10,12 +10,12 @@ publish: true
 ## Adding Kendo UI to the project
 
 Start by adding Kendo UI to the project. There are a lot of ways to accomplish this.
-Kendo UI can be downloaded from [kendoui.com](http://www.kendoui.com/download), referenced from the CDN, or fetched with NuGet.
+Kendo UI can be downloaded from [telerik.com](http://www.telerik.com/download/kendo-ui-complete), referenced from the CDN, or fetched with NuGet.
 
 ### Downloading Kendo UI
 
 KendoUI is divided into three parts: Web, Mobile, and DataViz.
-The preferred method of getting KendoUI is to browse to [kendoui.com](http://www.kendoui.com/download) and download Kendo UI as a .zip file.
+The preferred method of getting KendoUI is to browse to [telerik.com](http://www.telerik.com/download/kendo-ui-complete) and download Kendo UI as a .zip file.
 Depending on whether you are using the Trial version or have purchased the full Commercial version,
 you will have a .zip file that follows one of these directory structures:
 
@@ -29,7 +29,7 @@ For that reason, we will use the minified files in the remainder of this example
 
 ### Fetching from the CDN
 
-Kendo UI Web can also be fetched from a CDN instead of downloading the files. For more information and the CDN URLs, please see: **[Getting Started: Javascript Dependencies](http://docs.kendoui.com/getting-started/javascript-dependencies)**
+Kendo UI Web can also be fetched from a CDN instead of downloading the files. For more information and the CDN URLs, please see: **[Getting Started: Javascript Dependencies](http:///getting-started/javascript-dependencies)**
 
 ### Fetching from NuGet
 
@@ -43,7 +43,7 @@ Simply search for 'kendo'.
 In the Music Store project, we referenced the **kendo.all.min.js** file and the **Default** Kendo theme, because we were going to be using DataViz and a good number of the Kendo UI Widgets.
 If we were only going to be using a few select portions of Kendo, we would have taken individual JavaScript files and make a seperate bundle for them, reducing the download size for the end user.
 
-For more information on this topic, see: [Getting Started: Downloading Kendo](http://docs.kendoui.com/getting-started/downloading-kendo)
+For more information on this topic, see: [Getting Started: Downloading Kendo](http:///getting-started/downloading-kendo)
 
 ## Create MVC Bundles
 
@@ -63,7 +63,7 @@ You can see and modify which files the ASP.NET bundler will ignore by inspecting
 
     // Clear all items from the default ignore list to allow minified CSS and JavaScript files to be included in debug mode
     bundles.IgnoreList.Clear();
-    
+
     // Do not include intellisense files
     bundles.IgnoreList.Ignore("*.intellisense.js");
 
@@ -138,7 +138,7 @@ We need to make sure that Kendo's JavaScript files come after jQuery. For stylin
     </head>
     <body>
         // ...
-        
+
         @Scripts.Render("~/bundles/jquery")
         <script src="~/Scripts/kendo.all.min.js"></script> // <-- Added Here.
         @RenderSection("scripts", required: false)
@@ -146,7 +146,7 @@ We need to make sure that Kendo's JavaScript files come after jQuery. For stylin
 
 Typical practice is to include as much JavaScript at the bottom of the **&lt;body&gt;** element as possible.
 In the Music Store project, we are actually including jQuery in the **&lt;head&gt;**.
-This will be discussed later in the tutorial, but it is because we later use some of the [Kendo UI ASP.NET MVC Helpers](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction#using-kendo-ui-in-aspnet-mvc-4-application) which insert **&lt;script&gt;** tags into the **&lt;body&gt;** of the page, and require that jQuery already be defined.
+This will be discussed later in the tutorial, but it is because we later use some of [UI for ASP.NET MVC](http:///getting-started/using-kendo-with/aspnet-mvc/introduction#using-kendo-ui-in-aspnet-mvc-4-application) which insert **&lt;script&gt;** tags into the **&lt;body&gt;** of the page, and require that jQuery already be defined.
 
 ## Database
 

@@ -26,7 +26,7 @@ While sparklines are typically line charts, other types are supported as well:
 *   Pie
 *   Bullet
 
-Please visit the [Kendo UI Roadmap](http://www.kendoui.com/roadmap.aspx) for additional information about
+Please visit the [Kendo UI Roadmap](http://www.telerik.com/support/whats-new/kendo-ui-web/roadmap) for additional information about
 new Sparkline types and features.
 
 ### Creating a Sparkline
@@ -86,7 +86,7 @@ Binding to local data can be done by:
 
 #### Binding to remote data
 
-See [Binding to a Data Source](/getting-started/dataviz/chart/data-binding#binding-to-a-data-source)
+See [Binding to a Data Source](/kendo-ui/getting-started/dataviz/chart/data-binding#binding-to-a-data-source)
 
 ## Axes
 
@@ -244,7 +244,7 @@ Available options are:
 
 The Sparkline currently supports only Numeric value axes.
 
-Configuration options are accessible through the [`valueAxis` object](/api/dataviz/sparkline#valueaxis-object):
+Configuration options are accessible through the [`valueAxis` object](/kendo-ui/api/dataviz/sparkline#valueaxis-object):
 
     <span id="sparkline"></span>
     <script>

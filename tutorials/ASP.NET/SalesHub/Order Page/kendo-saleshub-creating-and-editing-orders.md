@@ -33,7 +33,7 @@ use Kendo UI widgets.
         @Html.ValidationMessageFor(m => m.ContractWeight)
     </div>
 
-Here we create a [Kendo NumericTextBox](http://demos.kendoui.com/web/numerictextbox/index.html) for the ContractWeight
+Here we create a [Kendo NumericTextBox](http://demos.telerik.com/kendo-ui/web/numerictextbox/index.html) for the ContractWeight
 property of an Order. The numeric textbox is set up to only support two decimal places and the user must enter a value
 which is greater than or equal to one.
 
@@ -52,14 +52,14 @@ JavaScript for the deferred widgets, you have to call `@Html.Kendo().DeferredScr
         @Html.ValidationMessageFor(m => m.OrderDate)
     </div>
 
-Here we set up a [Kendo DatePicker](http://demos.kendoui.com/web/datepicker/index.html) for the OrderDate of an Order.
+Here we set up a [Kendo DatePicker](http://demos.telerik.com/kendo-ui/web/datepicker/index.html) for the OrderDate of an Order.
 
     <div>
         @Html.LabelFor(m => m.CurrencyTypeId, "Invoicing Currency:")
         @Html.Kendo().DropDownListFor(m => m.CurrencyTypeId).BindTo(Model.CurrencyTypesSelectList).Deferred()
     </div>
 
-To create the currency dropdown we use a [Kendo DropDownList](http://demos.kendoui.com/web/dropdownlist/index.html),
+To create the currency dropdown we use a [Kendo DropDownList](http://demos.telerik.com/kendo-ui/web/dropdownlist/index.html),
 which we bind to server-side using the the `BindTo` function. The `BindTo` function takes `IEnumerable<SelectListItem>`
 as a parameter and will cause the extensions to generate the markup for the underlying `<select>` server-side.
 
@@ -67,7 +67,7 @@ as a parameter and will cause the extensions to generate the markup for the unde
 
 ![kendo-saleshub-order-tabstrip-screenshot](images/kendo-saleshub-order-tabstrip-screenshot.png)
 
-The next part of the Orders view is the [Kendo TabStrip](http://demos.kendoui.com/web/tabstrip/index.html), which contains
+The next part of the Orders view is the [Kendo TabStrip](http://demos.telerik.com/kendo-ui/web/tabstrip/index.html), which contains
 the grids for Order details and notes.
 
     @if (!Model.IsNew)
@@ -75,7 +75,7 @@ the grids for Order details and notes.
         <!-- TabStrip contents -->
     }
 
-The [Kendo TabStrip](http://demos.kendoui.com/web/tabstrip/index.html) is only displayed when we're editing an Order, not
+The [Kendo TabStrip](http://demos.telerik.com/kendo-ui/web/tabstrip/index.html) is only displayed when we're editing an Order, not
 when we're creating one.
 
     <div id="detailLinesTabStrip">
@@ -92,7 +92,7 @@ when we're creating one.
     </div>
     @Html.Kendo().TabStrip().Name("detailLinesTabStrip").Deferred()
 
-To setup the [Kendo TabStrip](http://demos.kendoui.com/web/tabstrip/index.html) we first have to write some basic HTML markup
+To setup the [Kendo TabStrip](http://demos.telerik.com/kendo-ui/web/tabstrip/index.html) we first have to write some basic HTML markup
 that tells the tabstrip what its tabs are and what content goes into each tab. To do this we declare a `<ul>` as the first
 child element of the `<div>` that we would like to be a tabstrip.
 
@@ -122,7 +122,7 @@ that we declared just above.
 
 Order details represent the line items for each Order. The total amount/weight of all of the Order details for an Order should be equal
 to the Contract weight/amount of an Order. The Order details grid allows a user to create/edit Order details using the "PopUp" editor
-mode for a [Kendo Grid](http://demos.kendoui.com/web/grid/index.html). The following snippets will only cover how the Order details grid
+mode for a [Kendo Grid](http://demos.telerik.com/kendo-ui/web/grid/index.html). The following snippets will only cover how the Order details grid
 is created using the extensions. If you would like to read more on how the "PopUp" editor is configured for the grid, please read
 [Creating and Editing Order Details](kendo-saleshub-creating-editing-order-details).
 
@@ -182,8 +182,8 @@ the extensions that the grid will be bound against **OrderDetailViewModel**'s.
 Here we set up each column for the Grid. Calling `Filterable(false)` allows you to selectively choose when a column cannot be filtered by the user.
 
 Calling `ClientFooterTemplate` allows you to specify a footer which is displayed for the specified column. In our case these footer templates
-make use of the [DataSource aggregates](/api/framework/datasource#configuration-aggregate) that we set up, later on, in our DataSource. As the
-client footer templates are bound client-side we use [Kendo's templating syntax](/api/framework/kendo#methods-template) to tell it which aggregate
+make use of the [DataSource aggregates](/kendo-ui/api/framework/datasource#configuration-aggregate) that we set up, later on, in our DataSource. As the
+client footer templates are bound client-side we use [Kendo's templating syntax](/kendo-ui/api/framework/kendo#methods-template) to tell it which aggregate
 to display the result of (in our case we only bind against a **sum** aggregate).
 
 The last column is a command column and we use the Grid's built-in **Edit** and **Destroy** commands.
@@ -229,7 +229,7 @@ be updated.
         .Aggregates(a => a.Add(x => x.TotalAmount).Sum())
     )
 
-Now we set up the [Kendo DataSource](http://demos.kendoui.com/web/datasource/index.html) for the Grid. As we're going to be
+Now we set up the [Kendo DataSource](http://demos.telerik.com/kendo-ui/web/datasource/index.html) for the Grid. As we're going to be
 using a remote data service, we need to call `Ajax()` first.
 
     .Read(builder => builder.Url("/api/CustomerOrderDetails/GetOrderDetails/" + Model.OrderId).Type(HttpVerbs.Get))
@@ -289,7 +289,7 @@ grid is being bound against. After you **Add** an aggregate for a property you c
         ).Deferred())
 
 Setting up the Order notes grid is somewhat similar to how we set up the order details grid. Since we're display a DateTime to the user, we specify
-a ClientTemplate for the **PostedDate** column which makes use of Kendo UI's [date formatting](/getting-started/framework/globalization/dateformatting)
+a ClientTemplate for the **PostedDate** column which makes use of Kendo UI's [date formatting](/kendo-ui/getting-started/framework/globalization/dateformatting)
 capabilities. Another difference is that we only support viewing and creating order notes, so we only provide **Read** and **Create** URLs for the
 datasource.
 
@@ -297,7 +297,7 @@ datasource.
 
 ![kendo-saleshub-order-panelbar-screenshot](images/kendo-saleshub-order-panelbar-screenshot.png)
 
-After the tabstrip containing the order details and order notes grid we have a [Kendo PanelBar](http://demos.kendoui.com/web/panelbar/index.html) which contains
+After the tabstrip containing the order details and order notes grid we have a [Kendo PanelBar](http://demos.telerik.com/kendo-ui/web/panelbar/index.html) which contains
 the fields for editing the payment terms of an Order, along with setting invoice comments.
 
     <ul id="panelBar">
@@ -374,8 +374,8 @@ with a property name of **class** and a value of **k-textbox**.
         </div>
     </div>
 
-The Payment Terms view mostly consists of [Kendo DropDownLists](http://demos.kendoui.com/web/dropdownlist/index.html) along with a
-[Kendo NumericTextBox](http://demos.kendoui.com/web/numerictextbox/index.html). The DropDownLists are generated server-side using the
+The Payment Terms view mostly consists of [Kendo DropDownLists](http://demos.telerik.com/kendo-ui/web/dropdownlist/index.html) along with a
+[Kendo NumericTextBox](http://demos.telerik.com/kendo-ui/web/numerictextbox/index.html). The DropDownLists are generated server-side using the
 `BindTo` function and we set the selected index by calling the `SelectedIndex` function. To find which item in each dropdown needs to be
 selected when the page loads, we use the `FindSelected`, which is provided by MVC. This function runs against an Enumerable of SelectListItems
 and finds which SelectListItem has its **Selected** property set to true.
@@ -403,7 +403,7 @@ The last part of the Payment terms section is the Payment terms override textare
                 .Events(events => events.Change("window.SalesHub.SuggestedValuesGrid_Changed")))
         </text>))
 
-We set up the Suggested Values window to be modal and to have a width of 600px. The contents of the window is a [Kendo Grid](http://demos.kendoui.com/web/grid/index.html)
+We set up the Suggested Values window to be modal and to have a width of 600px. The contents of the window is a [Kendo Grid](http://demos.telerik.com/kendo-ui/web/grid/index.html)
 which displays a list of suggested values that the user can select from. When the user selects a value from the grid, that value is copied into the payment terms override
 textarea and the window is closed. In order to know when the user selects a value, we listen to the `Change` event of the Grid.
 

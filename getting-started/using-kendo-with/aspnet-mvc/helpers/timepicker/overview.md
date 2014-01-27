@@ -8,13 +8,13 @@ publish: true
 
 # TimePicker
 
-The TimePicker HtmlHelper extension is a server-side wrapper for the [Kendo UI TimePicker](http://docs.kendoui.com/api/web/timepicker) widget.
+The TimePicker HtmlHelper extension is a server-side wrapper for the [Kendo UI TimePicker](/kendo-ui/api/web/timepicker) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo TimePicker:
 
-1.  Make sure you have followed all the steps from the [Introduction](http://docs.kendoui.com/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -43,7 +43,7 @@ Here is how to configure a simple Kendo TimePicker:
 ## Accessing an Existing TimePicker
 
 You can reference an existing TimePicker instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](http://docs.kendoui.com/api/web/timepicker#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/kendo-ui/api/web/timepicker#methods) to control its behavior.
 
 ### Accessing an existing TimePicker instance
 
@@ -57,7 +57,7 @@ Once a reference has been established, you can use the [API](http://docs.kendoui
 
 ## Handling Kendo UI TimePicker events
 
-You can subscribe to all [events](http://docs.kendoui.com/api/web/timepicker#events) exposed by Kendo UI TimePicker:
+You can subscribe to all [events](/kendo-ui/api/web/timepicker#events) exposed by Kendo UI TimePicker:
 
 ### WebForms - subscribe by handler name
 
@@ -135,4 +135,4 @@ The TimePicker widget supports DateTime structure. You will need to convert Date
 By default ASP.NET MVC project uses jQuery validate framework, which does not provide support for internationalized dates.
 In other words, every string which [Date.parse](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/parse) cannot define as valid date will be reported as invalid. As extending open source libraries is beyond of our product,
 you will need to resolve this issue manually - check this [link](http://www.dotnet-programming.com/post/2011/12/14/Globalization-Validation-and-DateNumber-Formats-in-AspNet-MVC.aspx) for more information.
-You can also use [Kendo Validator](http://demos.kendoui.com/web/validator/index.html), which supports validating internationalized dates.
+You can also use [Kendo Validator](http://demos.telerik.com/kendo-ui/web/validator/index.html), which supports validating internationalized dates.

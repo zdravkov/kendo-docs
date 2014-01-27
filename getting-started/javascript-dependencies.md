@@ -16,22 +16,22 @@ The following combined scripts are provided in order to simplify development and
 
 *   **kendo.all.min.js** contains a minified version of all scripts (Web, DataViz and Mobile).
 
-> **Important**: kendo.all.min.js is available in the Kendo UI Complete, Kendo UI Complete for ASP.NET MVC, Kendo UI Complete for JSP and Kendo UI Complete for PHP distributions. The contents of
+> **Important**: kendo.all.min.js is available in the Kendo UI Complete, Telerik UI for ASP.NET MVC**, **Telerik UI for JSP** and **Telerik UI for PHP distributions. The contents of
 **kendo.aspnetmvc.min.js** are **not** included in kendo.all.min.js - you need to include kendo.aspnetmvc.min.js in addition to kendo.all.min.js or use the
-[custom download builder tool](http://www.kendoui.com/custom-download).
+[custom download builder tool](http://www.telerik.com/download/custom-download).
 
 *   **kendo.web.min.js** contains a minified version of all scripts from Kendo UI Web.
 *   **kendo.dataviz.min.js** contains a minified version of all scripts from Kendo UI DataViz.
 *   **kendo.mobile.min.js** contains a minified version of all scripts from Kendo UI Mobile.
 
 > **Important:** Only one of the **web**, **dataviz**, **mobile** and **all** combined JavaScript files can be included at a time, because they contain some shared scripts. If widgets from
-different Kendo UI suites will be used simultaneously, one should either use **kendo.all.min.js** or create a custom combined JavaSript file via the [custom download builder tool](http://www.kendoui.com/custom-download).
+different Kendo UI suites will be used simultaneously, one should either use **kendo.all.min.js** or create a custom combined JavaSript file via the [custom download builder tool](http://www.telerik.com/download/custom-download).
 In addition, each of the combined script files should not be registered together with an individual widget script from the same suite. For example, `kendo.grid.js` should not be registered together with
 `kendo.web.js` or `kendo.all.js`, because they already include the Grid scripts. **Registering duplicate scripts may cause Javascript errors and unexpected behavior.**
 
 ## Custom Combined Scripts
 
-Users who own a commercial license can use the [custom download builder tool](http://www.kendoui.com/custom-download)
+Users who own a commercial license can use the [custom download builder tool](http://www.telerik.com/download/custom-download)
 to create a single JavaScript file which contains only the required widgets and features.
 
 ## CDN
@@ -50,7 +50,7 @@ The minified versions of all JavaScript files are also available via CDN
 
 The current official version of Kendo UI requires **jQuery 1.9.1**. There are occasions in which a new jQuery version is released, which introduces breaking changes and is not compatible with existing Kendo UI versions.
 In such cases we recommend using the previous jQuery version until the next official Kendo UI release that resolves the problems. We normally do not change the jQuery version that is shipped
-with Kendo UI for service packs. We can do this for major releases. The following list provides compatibility information about previous major Kendo UI releases:
+with Kendo UI service packs. We can do this for major releases. The following list provides compatibility information about previous major Kendo UI releases:
 
 * Kendo UI 2013.3.1119 (Q3 2013) - jQuery 1.9.1 (works also with 1.10.x and 2.0.x)
 * Kendo UI 2013.2.716 (Q2 2013) - jQuery 1.9.1
@@ -63,7 +63,7 @@ with Kendo UI for service packs. We can do this for major releases. The followin
 There should be no problem to use another minor jQuery version instead of the specified above, e.g. 1.7.2 instead of 1.7.1.
 
 > Registering a new jQuery instance after the Kendo UI script files will delete all Kendo UI jQuery plugins and Javascript errors will occur.
-For more information, please refer to the [Troubleshooting page](/getting-started/troubleshooting#javascript-error-that-jquery-is-unavailable-or-undefined).
+For more information, please refer to the [Troubleshooting page](/kendo-ui/getting-started/troubleshooting#javascript-error-that-jquery-is-unavailable-or-undefined).
 
 ## Script tag placement
 

@@ -23,7 +23,7 @@ Contains the items of the panelbar widget
 
 Contains the items of the panelbar widget
 
-More documentation is available at [kendo:panelBar-item](panelbar/item).
+More documentation is available at [kendo:panelBar-item](/kendo-ui/api/wrappers/jsp/panelbar/item).
 
 #### Example
 

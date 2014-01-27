@@ -52,7 +52,7 @@ initialization the **Menu** occur within a handler is provided to $(document).re
         [{
             text: "Item 1",
             cssClass: "myClass",                         // Add custom CSS class to the item, optional, added 2012 Q3 SP1.
-            url: "http://www.kendoui.com"                // Link URL if navigation is needed, optional.
+            url: "http://www.telerik.com"                // Link URL if navigation is needed, optional.
         },
         {
             text: "<b>Item 2</b>",
@@ -61,7 +61,7 @@ initialization the **Menu** occur within a handler is provided to $(document).re
         },
         {
             text: "Item 3",
-            imageUrl: "http://www.kendoui.com/test.jpg", // Item image URL, optional.
+            imageUrl: "http://www.telerik.com/test.jpg", // Item image URL, optional.
             items: [{                                    // Sub item collection
                  text: "Sub Item 1"
             },
@@ -108,7 +108,7 @@ placement in the hierarchy.
 A reference item is simply a target Menu Item HTML element that
 already exists in the Menu. Any valid jQuery selector can be used to
 obtain a reference to the target item. For examples, see the
-[Menu API demos](http://demos.kendoui.com/web/menu/api.html).
+[Menu API demos](http://demos.telerik.com/kendo-ui/web/menu/api.html).
 Removing an item only requires a reference to the target element that
 should be removed.
 
@@ -151,19 +151,19 @@ The following keys and user actions are supported:
 The Menu renders as an `<ul>`, which is a [block element](http://quirksmode.org/css/css2/display.html) and expands horizontally by default.
 If a horizontal Menu is wider than then total width of its root items, a blank space will remain visible on the right. In order to remove this space, you can use CSS:
 
-	
-	#menu-id /* for a specific menu instance */
-	,
-	.k-menu-horizontal /* for all horizontal menus */
-	{
-	   display: inline-block;
-	}
+
+    #menu-id /* for a specific menu instance */
+    ,
+    .k-menu-horizontal /* for all horizontal menus */
+    {
+       display: inline-block;
+    }
 
 Shrinking the horizontal Menu will make the last root item's border touch the Menu's right border (in left-to-right layouts). The last item border can be removed with:
-	
-	#menu-id > .k-last /* for a specific menu instance */
-	,
-	.k-menu-horizontal > .k-last /* for all horizontal menus */
-	{
-	   border-width: 0;
-	}
+
+    #menu-id > .k-last /* for a specific menu instance */
+    ,
+    .k-menu-horizontal > .k-last /* for all horizontal menus */
+    {
+       border-width: 0;
+    }

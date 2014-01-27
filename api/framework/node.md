@@ -9,11 +9,11 @@ publish: true
 
 # kendo.data.Node
 
-The `Node` is an extended type of [Model](/api/framework/model) that works with hierarchical data. The [HierarchicalDataSource](/api/framework/hierarchicaldatasource) contains instances of the `Node` type.
+The `Node` is an extended type of [Model](/kendo-ui/api/framework/model) that works with hierarchical data. The [HierarchicalDataSource](/kendo-ui/api/framework/hierarchicaldatasource) contains instances of the `Node` type.
 
 ## Fields
 
-See the [Model fields](/api/framework/model#fields) for all inherited fields.
+See the [Model fields](/kendo-ui/api/framework/model#fields) for all inherited fields.
 
 ### children
 
@@ -31,7 +31,7 @@ or when the [load](#methods-load) or [append](#methods-append) methods have been
 
 ## Methods
 
-See the [Model methods](/api/framework/model#methods) for all inherited methods.
+See the [Model methods](/kendo-ui/api/framework/model#methods) for all inherited methods.
 
 ### append
 
@@ -93,7 +93,7 @@ Loads the child nodes in the child data source, supplying the `id` of the Node t
     var dataSource = new kendo.data.HierarchicalDataSource({
         transport: {
             read: {
-                url: "http://demos.kendoui.com/service/Employees",
+                url: "http://demos.telerik.com/kendo-ui/service/Employees",
                 dataType: "jsonp"
             }
         },
@@ -120,7 +120,7 @@ Gets or sets the loaded flag of the Node. Setting the loaded flag to `false` all
     var dataSource = new kendo.data.HierarchicalDataSource({
         transport: {
             read: {
-                url: "http://demos.kendoui.com/service/Employees",
+                url: "http://demos.telerik.com/kendo-ui/service/Employees",
                 dataType: "jsonp"
             }
         },
@@ -172,4 +172,4 @@ Gets the parent node.
 
 ## Events
 
-See the [Model events](/api/framework/model#events) for all inherited events.
+See the [Model events](/kendo-ui/api/framework/model#events) for all inherited events.

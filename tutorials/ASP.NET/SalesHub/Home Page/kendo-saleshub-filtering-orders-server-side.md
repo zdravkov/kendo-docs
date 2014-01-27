@@ -11,7 +11,7 @@ publish: true
 
 Since **SalesHub** contains a lot of orders for various customers, it would not be very efficient for **all**
 of the orders to be returned when the orders grid renders. To reduce wait times and cut back on the amount of bandwidth
-that is used when retrieving orders from the server, the [Kendo DataSource](http://demos.kendoui.com/web/datasource/index.html)
+that is used when retrieving orders from the server, the [Kendo DataSource](http://demos.telerik.com/kendo-ui/web/datasource/index.html)
 that the orders grid uses has been configured to do server-side operations.
 
 ## Configure Grid for Server-Side Operations
@@ -30,7 +30,7 @@ the DataSource is configured:
         .PageSize(20)
 
 The part we care about in this DataSource configuration is the `ServerOperation(true)` function call. Passing `true` to this
-function causes the resulting client-side Kendo DataSource to include any [filters](/api/framework/datasource#methods-filter)
+function causes the resulting client-side Kendo DataSource to include any [filters](/kendo-ui/api/framework/datasource#methods-filter)
 that are being applied to it in the request that it sends to the server. In passing along any filters that need to be
 applied, the DataSource will also pass up any paging information (if it has been configured for it) to the server in its
 request.
