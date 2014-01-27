@@ -1297,6 +1297,20 @@ The node whose children have been changed. If the changes have occurred on the r
     treeview.bind("dataBound", tree_dataBound);
     </script>
 
+#### Example - show an empty message when no items have been loaded from the server
+
+    <div id="treeview"></div>
+    <script>
+      $("#treeview").kendoTreeView({
+        dataSource: [],
+        dataBound: function(e) {
+          if (!this.dataSource.data().length) {
+            this.element.html("<p>No items yet.</p>");
+          }
+        }
+      });
+    </script>
+
 ### drag
 
 Triggered while a node is being dragged.
