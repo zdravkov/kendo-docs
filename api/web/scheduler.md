@@ -431,7 +431,7 @@ which field to update. The other option is to use [MVVM](/kendo-ui/getting-start
            <label>Start: <input data-role="datetimepicker" name="start" /></label>
        </p>
        <p>
-           <label>Start: <input data-role="datetimepicker" name="end" /></label>
+           <label>End: <input data-role="datetimepicker" name="end" /></label>
        </p>
     </script>
     <div id="scheduler"></div>
@@ -465,7 +465,7 @@ which field to update. The other option is to use [MVVM](/kendo-ui/getting-start
            <label>Start: <input data-role="datetimepicker" data-bind="value: start" /></label>
        </p>
        <p>
-           <label>Start: <input data-role="datetimepicker" data-bind="value: end" /></label>
+           <label>End: <input data-role="datetimepicker" data-bind="value: end" /></label>
        </p>
     </script>
     <div id="scheduler"></div>
