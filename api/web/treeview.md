@@ -1305,7 +1305,9 @@ The node whose children have been changed. If the changes have occurred on the r
         dataSource: [],
         dataBound: function(e) {
           if (!this.dataSource.data().length) {
-            this.element.html("<p>No items yet.</p>");
+            this.element.append("<p class='no-items'>No items yet.</p>");
+          } else {
+            this.element.find(".no-items").remove();
           }
         }
       });
