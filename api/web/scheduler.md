@@ -389,6 +389,28 @@ If set to `true` the user can delete events from the view by clicking the "destr
     });
     </script>
 
+### editable.move `Boolean` *(default: true)*
+
+If set to `true` the scheduler allows event moving. Dragging the event changes the start and end time.
+
+#### Example - disable event moving
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Breakfast"
+        }
+      ],
+      editable: {
+        move: false
+      }
+    });
+    </script>
+
 ### editable.resize `Boolean` *(default: true)*
 
 If set to `true` the scheduler allows event resizing. Dragging the resize handles changes the start or end time of the event.
