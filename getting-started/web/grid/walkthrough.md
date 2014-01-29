@@ -219,7 +219,7 @@ the widget `TABLE` may overflow the wrapper `DIV`, leading to a visual glitch. P
 
 ### Scrolling
 
-Grid scrolling is enabled by default (except for the [MVC wrapper](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/configuration#scrolling), for historical reasons).
+Grid scrolling is enabled by default (except for the [MVC wrapper](http://docs.telerik.com/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/configuration#scrolling), for historical reasons).
 Scrolling can be disabled by setting the `scrollable` option to `false`.
 
 Enabling scrolling does not guarantee that scrollbars will appear. This is because scrolling makes sense and works together with set dimensions.
