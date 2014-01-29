@@ -163,10 +163,6 @@ In the **layered layout** it defines the minimum distance between nodes on the s
 
 *This setting is specific to the force-directed layout and layered layout*
 
-###componentsGridWidth `Number` *(default: 800)*
-
-defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
-
 ###grid `Object`
 
 Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
@@ -189,6 +185,10 @@ When you apply a certain layout an analysis will first split the diagram in comp
                     }
             )
 
+
+###grid.width `Number` *(default: 1500)*
+
+defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
 
 ###grid.offsetX `Number` *(default: 50)*
 
