@@ -16,7 +16,7 @@ Represents the Kendo UI QRCode widget. Inherits from [Widget](/kendo-ui/api/fram
 
 ### Example - Render as SVG, if supported
 
-<div id="qrCode"></div>
+    <div id="qrCode"></div>
     <script>
     $("#qrCode").kendoQRCode({
       value: "http://demos.telerik.com/kendo-ui/dataviz/overview/index.html",
@@ -141,7 +141,7 @@ Sets the minimum distance in pixels that should be left between the border and t
     <div id="qrCode"></div>
     <script>
     $("#qrCode").kendoQRCode({
-      value: "http://demos.kendoui.com/dataviz/overview/index.html",
+      value: "http://demos.telerik.com/kendo-ui/dataviz/overview/index.html",
       size: 240,
       padding: 10
     });

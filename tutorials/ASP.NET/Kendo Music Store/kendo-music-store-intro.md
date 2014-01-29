@@ -23,7 +23,7 @@ It focuses on [Kendo UI Web](http://www.telerik.com/kendo-ui-web), how it was us
 
 ## View the Live Site
 
-The live Kendo Music Store site is located at [demos.kendoui.com/musicstore](http://demos.kendoui.com/musicstore).
+The live Kendo Music Store site is located at [demos.telerik.com/kendo-ui/musicstore](http://demos.telerik.com/kendo-ui/musicstore).
 
 ## Get the Source Code
 
@@ -43,7 +43,7 @@ It focuses on [Kendo UI DataViz](http://www.telerik.com/kendo-ui-dataviz) and ho
 
 ## View the Live Site
 
-The live Kendo Music Store Dashboard is located at [demos.kendoui.com/musicstoredashboard](http://demos.kendoui.com/musicstoredashboard).
+The live Kendo Music Store Dashboard is located at [demos.telerik.com/kendo-ui/musicstoredashboard](http://demos.telerik.com/kendo-ui/musicstoredashboard).
 
 ## Get the Source Code
 

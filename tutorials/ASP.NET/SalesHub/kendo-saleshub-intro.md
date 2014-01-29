@@ -23,7 +23,7 @@ This sample is not feature-complete and is only meant to be used as a reference 
 
 ## View the live site
 
-The live SalesHub demo can be viewed at [demos.kendoui.com/saleshub](http://demos.kendoui.com/saleshub).
+The live SalesHub demo can be viewed at [demos.telerik.com/kendo-ui/saleshub](http://demos.telerik.com/kendo-ui/saleshub).
 
 # Getting Started
 
