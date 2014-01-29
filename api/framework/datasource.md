@@ -3175,6 +3175,159 @@ The new page size.
     console.log(dataSource.pageSize()); // displays "1"
     </script>
 
+### pushCreate
+
+Appends the specified data item(s) to the data source without marking them as "new". The data source will not sync data items appended via `pushCreate`.
+
+> The difference between `pushCreate` and `add` is that items appended via `add` are synced with the remote service.
+
+#### Parameters
+
+##### items `Object|Array`
+
+The data item or data items to append to the data source.
+
+#### Example - pushCreate with a single item
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      schema: {
+        model: {
+          id: "id"
+        }
+      }
+    });
+    dataSource.pushCreate({ id: 1, name: "John Doe" });
+    console.log(dataSource.at(0).name); // displays "John Doe"
+    console.log(dataSource.at(0).isNew()); // displays "false"
+    </script>
+
+#### Example - pushCreate with multiple items
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      schema: {
+        model: {
+          id: "id"
+        }
+      }
+    });
+    dataSource.pushCreate([
+        { id: 1, name: "John Doe" },
+        { id: 2, name: "Jane Doe" }
+    ]);
+    console.log(dataSource.at(1).name); // displays "Jane Doe"
+    console.log(dataSource.at(1).isNew()); // displays "false"
+    </script>
+
+### pushDestroy
+
+Removes the specified data item(s) from the data source without marking them as "removed". The data source will not sync data items appended via `pushDestroy`.
+
+> The difference between `pushDestroy` and `remove` is that items removed via `remove` are synced with the remote service.
+
+#### Parameters
+
+##### items `Object|Array`
+
+The data item or data items to remove from the data source.
+
+#### Example - pushDestroy with a single item
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      schema: {
+        model: {
+          id: "id"
+        }
+      },
+      data: [
+         { id: 1, name: "John Doe" }
+      ]
+    });
+    dataSource.read();
+    dataSource.pushDestroy({ id: 1, name: "John Doe" });
+    console.log(dataSource.total()); // displays "0"
+    console.log(dataSource.hasChanges()); // displays "false"
+    </script>
+
+#### Example - pushDestroy with multiple items
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      schema: {
+        model: {
+          id: "id"
+        }
+      },
+      data: [
+         { id: 1, name: "John Doe" },
+         { id: 2, name: "Jane Doe" }
+      ]
+    });
+    dataSource.read();
+    dataSource.pushDestroy([
+        { id: 1, name: "John Doe" },
+        { id: 2, name: "Jane Doe" }
+    ]);
+    console.log(dataSource.total()); // displays "0"
+    console.log(dataSource.hasChanges()); // displays "false"
+    </script>
+
+### pushUpdate
+
+Updates the specified data item(s) without marking them as "dirty". The data source will not sync data items appended via `pushUpdate`.
+If the data items are not found (using `schema.model.id`) they will be appended.
+
+> The difference between `pushUpdate` and updating items via their `set` method is that items updated via `set` are synced with the remote service.
+
+#### Parameters
+
+##### items `Object|Array`
+
+The data item or data items to update.
+
+#### Example - pushUpdate with a single item
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      schema: {
+        model: {
+          id: "id"
+        }
+      },
+      data: [
+         { id: 1, name: "John Doe" }
+      ]
+    });
+    dataSource.read();
+    dataSource.pushUpdate({ id: 1, name: "Jane Doe" });
+    console.log(dataSource.at(0).name); // displays "Jane Doe"
+    console.log(dataSource.at(0).dirty); // displays "false"
+    console.log(dataSource.hasChanges()); // displays "false"
+    </script>
+
+#### Example - pushUpdate with multiple items
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      schema: {
+        model: {
+          id: "id"
+        }
+      },
+      data: [
+         { id: 1, name: "John Doe" },
+         { id: 2, name: "Jane Doe" }
+      ]
+    });
+    dataSource.read();
+    dataSource.pushUpdate([
+        { id: 1, name: "John" },
+        { id: 2, name: "Jane" }
+    ]);
+    console.log(dataSource.at(0).name); // displays "John"
+    console.log(dataSource.at(0).dirty); // displays "false"
+    console.log(dataSource.hasChanges()); // displays "false"
+    </script>
+
 ### query
 
 Executes the specified query over the data items. Makes a HTTP request if bound to a remote service.
