@@ -1859,7 +1859,7 @@ the data source sends the parameters using jQuery's [conventions](http://api.jqu
 
 > The `parameterMap` method is often used to encode the parameters in JSON format.
 
-> **Important:** The `parameterMap` function will not be called when using custom functions for the read, update, create and destroy operations. 
+> **Important:** The `parameterMap` function will not be called when using custom functions for the read, update, create and destroy operations.
 
 #### Parameters
 
@@ -1969,6 +1969,70 @@ The type of the request which the data source makes. The supported values are "c
     dataSource.add( { ProductName: "New Product" });
     dataSource.sync();
     </script>
+
+### transport.push `Function`
+
+The function invoked during transport initialization which sets up push notifications. The data source will call this function only once and provide
+callbacks which will handle push notifications (data pushed from the server).
+
+#### Parameters
+
+##### callbacks `Object`
+
+An object containing callbacks for notifying the data source of push notifications.
+
+##### callbacks.pushCreate `Function`
+
+Function that should be invoked to notify the data source about newly created data items that are pushed from the server. Accepts a single argument - the object pushed from the server
+which should follow the `schema.data` configuration.
+
+##### callbacks.pushDestroy `Function`
+
+Function that should be invoked to notify the data source about destroyed data items that are pushed from the server. Accepts a single argument - the object pushed from the server
+which should follow the `schema.data` configuration.
+
+##### callbacks.pushUpdate `Function`
+
+Function that should be invoked to notify the data source about updated data items that are pushed from the server. Accepts a single argument - the object pushed from the server
+which should follow the `schema.data` configuration.
+
+#### Example
+
+    <script>
+    var hubUrl = "http://demos.telerik.com/kendo-ui/service/signalr/hubs";
+    var connection = $.hubConnection(hubUrl, { useDefaultPath: false});
+    var hub = connection.createHubProxy("productHub");
+    var hubStart = connection.start({ jsonp: true });
+    var dataSource = new kendo.data.DataSource({
+    transport: {
+      push: function(callbacks) {
+        hub.on("create", function(result) {
+          console.log("push create");
+          callbacks.pushCreate(result);
+        });
+        hub.on("update", function(result) {
+          console.log("push update");
+          callbacks.pushUpdate(result);
+        });
+        hub.on("destroy", function(result) {
+          console.log("push destroy");
+          callbacks.pushDestroy(result);
+        });
+      }
+    },
+    schema: {
+      model: {
+        id: "ID",
+        fields: {
+          "ID": { editable: false },
+          "CreatedAt": { type: "date" },
+          "UnitPrice": { type: "number" }
+        }
+      }
+    }
+    });
+    </script>
+
 
 ### transport.read `Object|String|Function`
 
@@ -2448,7 +2512,8 @@ If set to function the data source will invoke it and use the result as the URL.
 
 ### type `String`
 
-If set the data source will use a predefined [transport](#configuration-transport) and/or [schema](#configuration-schema). The only supported value is "odata" which supports the [OData](http://www.odata.org) v.2 protocol.
+If set the data source will use a predefined [transport](#configuration-transport) and/or [schema](#configuration-schema).
+The supported values are "odata" which supports the [OData](http://www.odata.org) v.2 protocol and "signalr".
 
 #### Example - enable OData support
 
