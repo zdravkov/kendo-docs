@@ -119,7 +119,7 @@ It is important to note how the fields of the scheduler event are configured (in
 When binding to a remote service the following are recommended (but not mandatory):
 
 1. Set the [timezone](/kendo-ui/api/web/scheduler#configuration-timezone) option of the scheduler. It is used to tell the scheduler in what timezone the scheduler events are created and stored on the server. If the timezone is not
-set the scheduler will use the current timezone. This means that users with different timezone settings will see different start and end timezones. Setting the timezone of the scheduler would make it display the same
+set the scheduler will use the current timezone. This means that users with different timezone settings will see different start and end times. Setting the timezone of the scheduler would make it display the same
 start and end times regardless of the current user timezone.
 1. Send the scheduler event date fields (start and end) in [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) to the remote service. The `parameterMap` option from the previous example does the same:
 
