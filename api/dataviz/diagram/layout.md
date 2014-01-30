@@ -129,7 +129,7 @@ Defines the radial separation between the levels (except the first one which is 
 
 Defines where the circle/arc starts. The positive direction is **clockwise** and the angle is in **radians**. *This setting is specific to the radial tree layout.*
 
-###endRadialAngle `Number` *(default: 6.28)*
+###endRadialAngle `Number` *(default: 6.283185307179586)*
 
 Defines where the circle/arc ends. The positive direction is **clockwise** and the angle is in **radians**. Default is 2\*Math.PI. *This setting is specific to the radial tree layout.*
 
