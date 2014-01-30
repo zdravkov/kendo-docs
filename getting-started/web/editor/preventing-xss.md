@@ -17,12 +17,12 @@ Allowing users to enter HTML on your site imposes security risks that need to be
 
 1. A malicious user visits a page that uses the Editor widget
 
-    $("textarea#editor").kendoEditor();
+      $("textarea#editor").kendoEditor();
 
 2. The attacker sets the value of the textarea to a malicious script, without using the editing interface, and submits the form.
 
-    $("textarea#editor").val("<script>alert('Script that gathers user info and posts it to another site');</script>");
-    $("form").submit();
+      $("textarea#editor").val("<script>alert('Script that gathers user info and posts it to another site');</script>");
+      $("form").submit();
 
    Note that the attacker can gather any data that is available on the page, or in JavaScript-accessible cookies.
 
