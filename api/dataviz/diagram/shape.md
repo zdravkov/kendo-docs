@@ -179,7 +179,9 @@ The following defines a custom shape with connectors adapted to the shape's outl
             ]
         });
 
-### connectors.connector.name `String` *(default: "")*
+### connectors.connector `Object` *(default: null)*
+
+### connectors.connector.position `String` *(default: "")*
 
 ### connectors.connector.description `String` *(default: "")*
 
