@@ -204,8 +204,8 @@ Encodes HTML characters to entities.
 
 #### Example
     <script>
-    var html = kendo.htmlEncode("<span>Hello</span>");
-    console.log(html); // outputs "&lt;span&gt;Hello&lt;/span&gt;"
+    var value = kendo.htmlEncode("<span>Hello</span>");
+    console.log(value);
     </script>
 
 #### Parameters
