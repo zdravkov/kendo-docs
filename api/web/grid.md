@@ -720,7 +720,7 @@ If set to `true` the column will not be displayed in the grid. By default all co
     });
     </script>
 
-### columns.sortable `Boolean` *(default: true)*
+### columns.sortable `Boolean|Object` *(default: true)*
 
 If set to `true` the user can click the column header and sort the grid by the column [field](#configuration-columns.field) when sorting is enabled. If set to `false` sorting will
 be disabled for this column. By default all columns are sortable if sorting is enabled via the [sortable](#configuration-sortable) option.
@@ -737,6 +737,43 @@ be disabled for this column. By default all columns are sortable if sorting is e
       sortable: true,
       dataSource: [ { id: 1, name: "Jane Doe" }, { id: 2, name: "John Doe" } ]
     });
+    </script>
+
+### columns.sortable.compare `Function`
+
+A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the second one is greater that then first one.
+
+#### Example - define custom compare function
+
+    <div id="grid"></div>
+    <script>
+        var numbers = {
+            "one"  : 1,
+            "two"  : 2,
+            "three": 3
+        };
+
+        var dataSource = new kendo.data.DataSource({
+            data: [
+                { id: 1, item: "two" },
+                { id: 2, item: "one" },
+                { id: 3, item: "three" }
+            ]
+        });
+
+        $("#grid").kendoGrid({
+            dataSource: dataSource,
+            sortable: true,
+            columns: [{
+                field: "item",
+                sortable: {
+                    compare: function(a, b) {
+                        return numbers[a.item] - numbers[b.item];
+                    }
+                }
+            }]
+        });
+
     </script>
 
 ### columns.template `String|Function`
