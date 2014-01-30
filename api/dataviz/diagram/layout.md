@@ -40,6 +40,12 @@ The type of the layout algorythm to use. Predefined values are:
 
 * **layered** - Organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream). Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
 
+		diagram.layout({
+            type: "layered",
+            subtype: "down",
+            nodeDistance: 120
+        });
+
     <p>There are several criteria on which this algorithm is based and which are respected in as far as the incidence structure allows it:</p>
     <ul>
         <li>links have a preferred direction (the complementary direction of the subtype) and attempt to flow as much as possible in this way</li>
