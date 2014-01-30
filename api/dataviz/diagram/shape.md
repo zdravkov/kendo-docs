@@ -112,7 +112,7 @@ Defines the fill-color of the shape.
 
 Defines the highlight color when the pointer is hovering over the shape.
 
-### connectors `Object`
+### connectors `Array` *(default: null)*
 
 Defines the connectors the shape owns. By default the connectors are defined as follows
 
@@ -179,13 +179,15 @@ The following defines a custom shape with connectors adapted to the shape's outl
             ]
         });
 
+### connectors.connector.name `String` *(default: "")*
 
+### connectors.connector.description `String` *(default: "")*
 
-### rotation
+### rotation `Object` *(default: null)*
 
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
 
-### content
+### content `String` *(default: "")*
 
 Sets the text content of the Shape.
 
@@ -201,7 +203,7 @@ Example - setting the text
 	// or in one go by passing the settings
     shape.redraw({content:"JustTrace"});
 
-### bounds
+### bounds `Object` *(default: null)*
 
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *all bounds should be merged*
 

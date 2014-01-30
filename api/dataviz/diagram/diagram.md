@@ -58,7 +58,7 @@ See the [dataSource field](#fields-dataSource).
 
 Defines whether items can be dropped on the diagram.
 
-### template `String|Function`
+### template `String|Function` *(default: "")*
 
 The [template](/api/framework/kendo#methods-template) which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
 
@@ -75,7 +75,7 @@ This defines whether the shapes can be rotated. If set to false the adorner will
 ![Rotatable configuration.](rotatable.png)
 
 
-### visualTemplate `Function`
+### visualTemplate `Function` *(default: null)*
 
 A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual:
 
@@ -128,8 +128,8 @@ A function returning a visual element to render for a given dataSource item. The
 	diagram = $("#canvas").kendoDiagram(options).data("kendoDiagram");
 	diagram.layout(); 
 
-### tooltip `Object`
-### copy `Object`
+### tooltip `Object` *(default: null)*
+### copy `Object` *(default: null)*
  
 
 ## Fields
