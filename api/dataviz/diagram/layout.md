@@ -73,6 +73,14 @@ The subtype further defines the layout type by specifying in greater detail the 
     ![Tree down parameters](treeDownParameters.png)
 
 - **up** - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the bottom and its children upwards. For the layered layout the links are directed upwards.
+
+        diagram.layout({
+            type: "tree",
+            subtype: "up",
+            horizontalSeparation: 120,
+            verticalSeparation: 50
+        });
+
 - **left** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the left and its children sideways to the right. For the layered layout the links are directed to the left.
 - **right** - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the right and its children sideways to the left. For the layered layout the links are directed downwards.
 
