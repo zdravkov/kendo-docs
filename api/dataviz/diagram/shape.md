@@ -187,6 +187,8 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 ### rotation `Object` *(default: null)*
 
+### rotation.angle `Number` *(default: 0)*
+
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
 
 ### content `String` *(default: "")*
