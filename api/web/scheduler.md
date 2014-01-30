@@ -4777,7 +4777,7 @@ The widget instance which fired the event.
         }
       ],
       add: function(e) {
-        console.log("Add", e.start);
+        console.log("Add", e.event.title);
       }
     });
     </script>
