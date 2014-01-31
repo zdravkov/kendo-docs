@@ -43,7 +43,7 @@ Simply search for 'kendo'.
 In the Music Store project, we referenced the **kendo.all.min.js** file and the **Default** Kendo theme, because we were going to be using DataViz and a good number of the Kendo UI Widgets.
 If we were only going to be using a few select portions of Kendo, we would have taken individual JavaScript files and make a seperate bundle for them, reducing the download size for the end user.
 
-For more information on this topic, see: [Getting Started: Downloading Kendo](http:///getting-started/downloading-kendo)
+For more information on this topic, see: [Getting Started with Kendo UI](http://docs.telerik.com/kendo-ui/getting-started/introduction)
 
 ## Create MVC Bundles
 
