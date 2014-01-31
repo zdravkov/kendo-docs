@@ -3815,7 +3815,8 @@ The "save" command persists any data changes done by the end user.
 
 ### toolbar.name `String`
 
-The name of the toolbar command. Either a built-in ("cancel", "create" and "save") or custom.
+The name of the toolbar command. Either a built-in ("cancel", "create" and "save") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
+This class can be used to obtain reference to the button after Grid initialization and attach click handlers.
 
 #### Example - specify the name of the command
     <div id="grid"></div>
@@ -3823,7 +3824,8 @@ The name of the toolbar command. Either a built-in ("cancel", "create" and "save
     $("#grid").kendoGrid({
       toolbar: [
         { name: "create" },
-        { name: "save" }
+        { name: "save" },
+        { name: "custom" }
       ],
       columns: [
         { field: "name" },
@@ -3839,6 +3841,10 @@ The name of the toolbar command. Either a built-in ("cancel", "create" and "save
         }
       },
       editable: true
+    });
+    
+    $(".k-grid-custom").click(function(e){
+        // handler body
     });
     </script>
 
