@@ -29,7 +29,7 @@ For that reason, we will use the minified files in the remainder of this example
 
 ### Fetching from the CDN
 
-Kendo UI Web can also be fetched from a CDN instead of downloading the files. For more information and the CDN URLs, please see: **[Getting Started: Javascript Dependencies](http:///getting-started/javascript-dependencies)**
+Kendo UI Web can also be fetched from a CDN instead of downloading the files. For more information and the CDN URLs, please see: **[Getting Started: Javascript Dependencies](http://docs.telerik.com/kendo-ui/getting-started/javascript-dependencies)**
 
 ### Fetching from NuGet
 
@@ -146,7 +146,7 @@ We need to make sure that Kendo's JavaScript files come after jQuery. For stylin
 
 Typical practice is to include as much JavaScript at the bottom of the **&lt;body&gt;** element as possible.
 In the Music Store project, we are actually including jQuery in the **&lt;head&gt;**.
-This will be discussed later in the tutorial, but it is because we later use some of [UI for ASP.NET MVC](http:///getting-started/using-kendo-with/aspnet-mvc/introduction#using-kendo-ui-in-aspnet-mvc-4-application) which insert **&lt;script&gt;** tags into the **&lt;body&gt;** of the page, and require that jQuery already be defined.
+This will be discussed later in the tutorial, but it is because we later use some of [UI for ASP.NET MVC](http://docs.telerik.com/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/asp-net-mvc-4) which insert **&lt;script&gt;** tags into the **&lt;body&gt;** of the page, and require that jQuery already be defined.
 
 ## Database
 
