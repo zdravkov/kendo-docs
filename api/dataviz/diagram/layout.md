@@ -136,6 +136,12 @@ Example of *tip over tree layout*:
 
 Either the distance between the siblings if the tree is up/down or between levels if the tree is left/right. In *tipOver tree layout* this setting is used only for the direct children of the root
 
+        diagram.layout({
+            type: "tree",
+            subtype: "mindmapVertical",
+            horizontalSeparation: 40
+        });
+
 ###verticalSeparation `Number` *(default: 50)*
 
 Either the distance between levels if the tree is up/down or between siblings if the tree is left/right. This property is **not used** in *tipOver tree layout* but rather replaced with three additional ones - **underneathVerticalTopOffset**, **underneathVerticalSeparation** and **underneathHorizontalOffset**
