@@ -78,6 +78,21 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
             <script src="<%: Url.Content("~/Scripts/kendo/kendo.all.min.js") %>"></script>
             <script src="<%: Url.Content("~/Scripts/kendo/kendo.aspnetmvc.min.js") %>"></script>
 
+6. If using Kendo UI Scheduler include **Scripts/kendo/kendo.timezones.min.js** after **kendo.all.min.js**.
+    - Razor
+
+            <script src="@Url.Content("~/Scripts/kendo/jquery.min.js")"></script>
+            <script src="@Url.Content("~/Scripts/kendo/kendo.all.min.js")"></script>
+            <script src="@Url.Content("~/Scripts/kendo/kendo.timezones.min.js")"></script>
+            <script src="@Url.Content("~/Scripts/kendo/kendo.aspnetmvc.min.js")"></script>
+
+    - ASPX
+
+            <script src="<%: Url.Content("~/Scripts/kendo/jquery.min.js") %>"></script>
+            <script src="<%: Url.Content("~/Scripts/kendo/kendo.all.min.js") %>"></script>
+            <script src="<%: Url.Content("~/Scripts/kendo/kendo.timezones.min.js") %>"></script>
+            <script src="<%: Url.Content("~/Scripts/kendo/kendo.aspnetmvc.min.js") %>"></script>
+
 #### Using Kendo UI CDN
 
 To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Important! Dont’t forget to replace "kendo ui version" from the code snippets below with the current version of Kendo UI e.g. “2013.2.918”.
@@ -98,6 +113,11 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js”></script>
         <script src=”http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js”></script>
 
+6. If using Kendo UI Scheduler include **kendo.timezones.min.js** _after_ **kendo.all.min.js**
+
+        <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js"></script>
+        <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.timezones.min.js"></script>
+        <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js"></script>
 ### Add reference to Kendo.Mvc.dll
 
 The next step is to add a reference to **Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.

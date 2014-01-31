@@ -47,6 +47,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
 
         bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
                     "~/Scripts/kendo/kendo.all.min.js",
+                    // "~/Scripts/kendo/kendo.timezones.min.js", // uncomment if using the Scheduler
                     "~/Scripts/kendo/kendo.aspnetmvc.min.js"));
 
 3. Add a style bundle for Kendo UI.
@@ -97,6 +98,12 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
 4. Include **kendo.all.min.js** and **kendo.aspnetmvc.min.js** _after_ jQuery.
 
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js"></script>
+        <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js"></script>
+
+5. If using Kendo UI Scheduler include **kendo.timezones.min.js** _after_ **kendo.all.min.js**
+
+        <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js"></script>
+        <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.timezones.min.js"></script>
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js"></script>
 
 ### Add reference to Kendo.Mvc.dll
