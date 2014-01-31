@@ -126,7 +126,7 @@ In the **_Layout.cshtml** file, this template is included with the line:
     @Html.Partial("_SearchResultTemplatePartial")
 
 If we were not using ASP.NET MVC, we could have written some additional code to load templates from external files.
-For more information on remote template loading, see [How To: Load Templates from External Files](http:///howto/load-templates-external-files).
+For more information on remote template loading, see [How To: Load Templates from External Files](http://docs.telerik.com/kendo-ui/howto/load-templates-external-files).
 
 Now that the template is included in the body of the page, the application code is using a jQuery selector to fetch this &lt;script&gt; element by its id and get the contents.
 It then calls **kendo.template()** to process the template.
