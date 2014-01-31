@@ -423,7 +423,7 @@ the following things…
 
 This has been an example of how to get rolling with PHP and [Kendo UI][32].
 
-[Proceed To Part 2](/kendo-ui/tutorials/PHP/build-apps-with-kendo-ui-and-php-2)
+[Proceed To Part 2](http://docs.telerik.com/kendo-ui/tutorials/PHP/build-apps-with-kendo-ui-and-php-2)
 
    [2]: http://en.wikipedia.org/wiki/Polyglot
 
@@ -443,7 +443,7 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
 
    [10]: http://www.telerik.com/videos/kendo-ui-web
 
-   [11]: /getting-started/web/grid/walkthrough
+   [11]: http://docs.telerik.com/kendo-ui/getting-started/web/grid/walkthrough
 
    [12]: http://localhost:8888/KendoUI/data/employees.php
 
