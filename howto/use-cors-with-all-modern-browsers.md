@@ -8,7 +8,7 @@ publish: true
 ---
 # How To: Use CORS with All (Modern) Browsers
 
-CORS is cool. [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors/) is a (slowly) emerging technology for the web that finally gives async web operations a way to directly grab resources from different domains. In fact, we've talked about CORS a couple of times on the Kendo UI blogs [here](http://blogs.telerik.com/kendoui/posts/11-08-25/shields_up_web_service_abstraction_with_kendo_ui.aspx) and [here](http://blogs.telerik.com/kendoui/posts/11-08-23/cross-domain_queries_to_odata_services_with_jquery).
+CORS is cool. [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors/) is a (slowly) emerging technology for the web that finally gives async web operations a way to directly grab resources from different domains. In fact, we've talked about CORS a couple of times on the Kendo UI blogs [here](http://blogs.telerik.com/kendoui/posts/11-08-25/shields_up_web_service_abstraction_with_kendo_ui) and [here](http://blogs.telerik.com/kendoui/posts/11-08-24/cross-domain_queries_to_odata_services_with_jquery).
 
 By default, the "[same origin](https://developer.mozilla.org/En/Same_origin_policy_for_JavaScript)" security sandbox built-in to all browsers does not allow XHR (Ajax) calls across different domains. You can try, but you'll get an error that looks something like this:
 
