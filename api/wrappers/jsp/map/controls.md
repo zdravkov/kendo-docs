@@ -71,7 +71,7 @@ More documentation is available at [kendo:map-controls-navigator](/kendo-ui/api/
 
 Enables or disables the built-in zoom control (+/- button).
 
-More documentation is available at [kendo:map-controls-zoom](/api/wrappers/jsp/map/controls-zoom).
+More documentation is available at [kendo:map-controls-zoom](/kendo-ui/api/wrappers/jsp/map/controls-zoom).
 
 #### Example
 

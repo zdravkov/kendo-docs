@@ -23,7 +23,7 @@ The default configuration for map layers by type.
 
 The default configuration for bing layers.
 
-More documentation is available at [kendo:map-layerDefaults-bing](/api/wrappers/jsp/map/layerdefaults-bing).
+More documentation is available at [kendo:map-layerDefaults-bing](/kendo-ui/api/wrappers/jsp/map/layerdefaults-bing).
 
 #### Example
 

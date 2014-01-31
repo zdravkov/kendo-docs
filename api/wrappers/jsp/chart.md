@@ -205,7 +205,7 @@ More documentation is available at [kendo:chart-yAxis](/kendo-ui/api/wrappers/js
 Fired when the user clicks an axis label.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [axisLabelClick](/kendo-ui/api/web/chart#events-axisLabelClick) event documentation.
+For additional information check the [axisLabelClick](/kendo-ui/api/dataviz/chart#events-axisLabelClick) event documentation.
 
 #### Example
     <kendo:chart axisLabelClick="handle_axisLabelClick">
@@ -221,7 +221,7 @@ For additional information check the [axisLabelClick](/kendo-ui/api/web/chart#ev
 Fires when an legend item is clicked.
 
 
-For additional information check the [legendItemClick](/kendo-ui/api/web/chart#events-legendItemClick) event documentation.
+For additional information check the [legendItemClick](/kendo-ui/api/dataviz/chart#events-legendItemClick) event documentation.
 
 #### Example
     <kendo:chart legendItemClick="handle_legendItemClick">
@@ -237,7 +237,7 @@ For additional information check the [legendItemClick](/kendo-ui/api/web/chart#e
 Fires when an legend item is hovered.
 
 
-For additional information check the [legendItemHover](/kendo-ui/api/web/chart#events-legendItemHover) event documentation.
+For additional information check the [legendItemHover](/kendo-ui/api/dataviz/chart#events-legendItemHover) event documentation.
 
 #### Example
     <kendo:chart legendItemHover="handle_legendItemHover">
@@ -253,7 +253,7 @@ For additional information check the [legendItemHover](/kendo-ui/api/web/chart#e
 Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [dataBound](/kendo-ui/api/web/chart#events-dataBound) event documentation.
+For additional information check the [dataBound](/kendo-ui/api/dataviz/chart#events-dataBound) event documentation.
 
 #### Example
     <kendo:chart dataBound="handle_dataBound">
@@ -269,7 +269,7 @@ For additional information check the [dataBound](/kendo-ui/api/web/chart#events-
 Fired as long as the user is dragging the chart using the mouse or swipe gestures.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [drag](/kendo-ui/api/web/chart#events-drag) event documentation.
+For additional information check the [drag](/kendo-ui/api/dataviz/chart#events-drag) event documentation.
 
 #### Example
     <kendo:chart drag="handle_drag">
@@ -285,7 +285,7 @@ For additional information check the [drag](/kendo-ui/api/web/chart#events-drag)
 Fired when the user stops dragging the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [dragEnd](/kendo-ui/api/web/chart#events-dragEnd) event documentation.
+For additional information check the [dragEnd](/kendo-ui/api/dataviz/chart#events-dragEnd) event documentation.
 
 #### Example
     <kendo:chart dragEnd="handle_dragEnd">
@@ -301,7 +301,7 @@ For additional information check the [dragEnd](/kendo-ui/api/web/chart#events-dr
 Fired when the user starts dragging the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [dragStart](/kendo-ui/api/web/chart#events-dragStart) event documentation.
+For additional information check the [dragStart](/kendo-ui/api/dataviz/chart#events-dragStart) event documentation.
 
 #### Example
     <kendo:chart dragStart="handle_dragStart">
@@ -317,7 +317,7 @@ For additional information check the [dragStart](/kendo-ui/api/web/chart#events-
 Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [noteClick](/api/web/chart#events-noteClick) event documentation.
+For additional information check the [noteClick](/kendo-ui/api/dataviz/chart#events-noteClick) event documentation.
 
 #### Example
     <kendo:chart noteClick="handle_noteClick">
@@ -333,7 +333,7 @@ For additional information check the [noteClick](/api/web/chart#events-noteClick
 Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [noteHover](/api/web/chart#events-noteHover) event documentation.
+For additional information check the [noteHover](/kendo-ui/api/dataviz/chart#events-noteHover) event documentation.
 
 #### Example
     <kendo:chart noteHover="handle_noteHover">
@@ -349,7 +349,7 @@ For additional information check the [noteHover](/api/web/chart#events-noteHover
 Fired when the user clicks the plot area.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [plotAreaClick](/kendo-ui/api/web/chart#events-plotAreaClick) event documentation.
+For additional information check the [plotAreaClick](/kendo-ui/api/dataviz/chart#events-plotAreaClick) event documentation.
 
 #### Example
     <kendo:chart plotAreaClick="handle_plotAreaClick">
@@ -365,7 +365,7 @@ For additional information check the [plotAreaClick](/kendo-ui/api/web/chart#eve
 Fired when the user modifies the selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [select](/kendo-ui/api/web/chart#events-select) event documentation.
+For additional information check the [select](/kendo-ui/api/dataviz/chart#events-select) event documentation.
 
 #### Example
     <kendo:chart select="handle_select">
@@ -381,7 +381,7 @@ For additional information check the [select](/kendo-ui/api/web/chart#events-sel
 Fired when the user completes modifying the selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [selectEnd](/kendo-ui/api/web/chart#events-selectEnd) event documentation.
+For additional information check the [selectEnd](/kendo-ui/api/dataviz/chart#events-selectEnd) event documentation.
 
 #### Example
     <kendo:chart selectEnd="handle_selectEnd">
@@ -397,7 +397,7 @@ For additional information check the [selectEnd](/kendo-ui/api/web/chart#events-
 Fired when the user starts modifying the axis selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [selectStart](/kendo-ui/api/web/chart#events-selectStart) event documentation.
+For additional information check the [selectStart](/kendo-ui/api/dataviz/chart#events-selectStart) event documentation.
 
 #### Example
     <kendo:chart selectStart="handle_selectStart">
@@ -413,7 +413,7 @@ For additional information check the [selectStart](/kendo-ui/api/web/chart#event
 Fired when the user clicks the chart series.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [seriesClick](/kendo-ui/api/web/chart#events-seriesClick) event documentation.
+For additional information check the [seriesClick](/kendo-ui/api/dataviz/chart#events-seriesClick) event documentation.
 
 #### Example
     <kendo:chart seriesClick="handle_seriesClick">
@@ -429,7 +429,7 @@ For additional information check the [seriesClick](/kendo-ui/api/web/chart#event
 Fired when the user hovers the chart series.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [seriesHover](/kendo-ui/api/web/chart#events-seriesHover) event documentation.
+For additional information check the [seriesHover](/kendo-ui/api/dataviz/chart#events-seriesHover) event documentation.
 
 #### Example
     <kendo:chart seriesHover="handle_seriesHover">
@@ -445,7 +445,7 @@ For additional information check the [seriesHover](/kendo-ui/api/web/chart#event
 Fired as long as the user is zooming the chart using the mousewheel.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [zoom](/kendo-ui/api/web/chart#events-zoom) event documentation.
+For additional information check the [zoom](/kendo-ui/api/dataviz/chart#events-zoom) event documentation.
 
 #### Example
     <kendo:chart zoom="handle_zoom">
@@ -461,7 +461,7 @@ For additional information check the [zoom](/kendo-ui/api/web/chart#events-zoom)
 Fired when the user stops zooming the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [zoomEnd](/kendo-ui/api/web/chart#events-zoomEnd) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/chart#events-zoomEnd) event documentation.
 
 #### Example
     <kendo:chart zoomEnd="handle_zoomEnd">
@@ -477,7 +477,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/web/chart#events-zo
 Fired when the user uses the mousewheel to zoom the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [zoomStart](/kendo-ui/api/web/chart#events-zoomStart) event documentation.
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/chart#events-zoomStart) event documentation.
 
 #### Example
     <kendo:chart zoomStart="handle_zoomStart">
@@ -495,7 +495,7 @@ For additional information check the [zoomStart](/kendo-ui/api/web/chart#events-
 Fired when the user clicks an axis label.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [axisLabelClick](/kendo-ui/api/web/chart#events-axisLabelClick) event documentation.
+For additional information check the [axisLabelClick](/kendo-ui/api/dataviz/chart#events-axisLabelClick) event documentation.
 
 #### Example
     <kendo:chart>
@@ -513,7 +513,7 @@ For additional information check the [axisLabelClick](/kendo-ui/api/web/chart#ev
 Fires when an legend item is clicked.
 
 
-For additional information check the [legendItemClick](/kendo-ui/api/web/chart#events-legendItemClick) event documentation.
+For additional information check the [legendItemClick](/kendo-ui/api/dataviz/chart#events-legendItemClick) event documentation.
 
 #### Example
     <kendo:chart>
@@ -531,7 +531,7 @@ For additional information check the [legendItemClick](/kendo-ui/api/web/chart#e
 Fires when an legend item is hovered.
 
 
-For additional information check the [legendItemHover](/kendo-ui/api/web/chart#events-legendItemHover) event documentation.
+For additional information check the [legendItemHover](/kendo-ui/api/dataviz/chart#events-legendItemHover) event documentation.
 
 #### Example
     <kendo:chart>
@@ -549,7 +549,7 @@ For additional information check the [legendItemHover](/kendo-ui/api/web/chart#e
 Fired when the widget is bound to data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [dataBound](/kendo-ui/api/web/chart#events-dataBound) event documentation.
+For additional information check the [dataBound](/kendo-ui/api/dataviz/chart#events-dataBound) event documentation.
 
 #### Example
     <kendo:chart>
@@ -567,7 +567,7 @@ For additional information check the [dataBound](/kendo-ui/api/web/chart#events-
 Fired as long as the user is dragging the chart using the mouse or swipe gestures.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [drag](/kendo-ui/api/web/chart#events-drag) event documentation.
+For additional information check the [drag](/kendo-ui/api/dataviz/chart#events-drag) event documentation.
 
 #### Example
     <kendo:chart>
@@ -585,7 +585,7 @@ For additional information check the [drag](/kendo-ui/api/web/chart#events-drag)
 Fired when the user stops dragging the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [dragEnd](/kendo-ui/api/web/chart#events-dragEnd) event documentation.
+For additional information check the [dragEnd](/kendo-ui/api/dataviz/chart#events-dragEnd) event documentation.
 
 #### Example
     <kendo:chart>
@@ -603,7 +603,7 @@ For additional information check the [dragEnd](/kendo-ui/api/web/chart#events-dr
 Fired when the user starts dragging the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [dragStart](/kendo-ui/api/web/chart#events-dragStart) event documentation.
+For additional information check the [dragStart](/kendo-ui/api/dataviz/chart#events-dragStart) event documentation.
 
 #### Example
     <kendo:chart>
@@ -621,7 +621,7 @@ For additional information check the [dragStart](/kendo-ui/api/web/chart#events-
 Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [noteClick](/api/web/chart#events-noteClick) event documentation.
+For additional information check the [noteClick](/kendo-ui/api/dataviz/chart#events-noteClick) event documentation.
 
 #### Example
     <kendo:chart>
@@ -639,7 +639,7 @@ For additional information check the [noteClick](/api/web/chart#events-noteClick
 Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [noteHover](/api/web/chart#events-noteHover) event documentation.
+For additional information check the [noteHover](/kendo-ui/api/dataviz/chart#events-noteHover) event documentation.
 
 #### Example
     <kendo:chart>
@@ -657,7 +657,7 @@ For additional information check the [noteHover](/api/web/chart#events-noteHover
 Fired when the user clicks the plot area.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [plotAreaClick](/kendo-ui/api/web/chart#events-plotAreaClick) event documentation.
+For additional information check the [plotAreaClick](/kendo-ui/api/dataviz/chart#events-plotAreaClick) event documentation.
 
 #### Example
     <kendo:chart>
@@ -675,7 +675,7 @@ For additional information check the [plotAreaClick](/kendo-ui/api/web/chart#eve
 Fired when the user modifies the selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [select](/kendo-ui/api/web/chart#events-select) event documentation.
+For additional information check the [select](/kendo-ui/api/dataviz/chart#events-select) event documentation.
 
 #### Example
     <kendo:chart>
@@ -693,7 +693,7 @@ For additional information check the [select](/kendo-ui/api/web/chart#events-sel
 Fired when the user completes modifying the selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [selectEnd](/kendo-ui/api/web/chart#events-selectEnd) event documentation.
+For additional information check the [selectEnd](/kendo-ui/api/dataviz/chart#events-selectEnd) event documentation.
 
 #### Example
     <kendo:chart>
@@ -711,7 +711,7 @@ For additional information check the [selectEnd](/kendo-ui/api/web/chart#events-
 Fired when the user starts modifying the axis selection.The range units are:The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [selectStart](/kendo-ui/api/web/chart#events-selectStart) event documentation.
+For additional information check the [selectStart](/kendo-ui/api/dataviz/chart#events-selectStart) event documentation.
 
 #### Example
     <kendo:chart>
@@ -729,7 +729,7 @@ For additional information check the [selectStart](/kendo-ui/api/web/chart#event
 Fired when the user clicks the chart series.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [seriesClick](/kendo-ui/api/web/chart#events-seriesClick) event documentation.
+For additional information check the [seriesClick](/kendo-ui/api/dataviz/chart#events-seriesClick) event documentation.
 
 #### Example
     <kendo:chart>
@@ -747,7 +747,7 @@ For additional information check the [seriesClick](/kendo-ui/api/web/chart#event
 Fired when the user hovers the chart series.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [seriesHover](/kendo-ui/api/web/chart#events-seriesHover) event documentation.
+For additional information check the [seriesHover](/kendo-ui/api/dataviz/chart#events-seriesHover) event documentation.
 
 #### Example
     <kendo:chart>
@@ -765,7 +765,7 @@ For additional information check the [seriesHover](/kendo-ui/api/web/chart#event
 Fired as long as the user is zooming the chart using the mousewheel.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [zoom](/kendo-ui/api/web/chart#events-zoom) event documentation.
+For additional information check the [zoom](/kendo-ui/api/dataviz/chart#events-zoom) event documentation.
 
 #### Example
     <kendo:chart>
@@ -783,7 +783,7 @@ For additional information check the [zoom](/kendo-ui/api/web/chart#events-zoom)
 Fired when the user stops zooming the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [zoomEnd](/kendo-ui/api/web/chart#events-zoomEnd) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/chart#events-zoomEnd) event documentation.
 
 #### Example
     <kendo:chart>
@@ -801,7 +801,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/web/chart#events-zo
 Fired when the user uses the mousewheel to zoom the chart.The event handler function context (available via the this keyword) will be set to the widget instance.
 
 
-For additional information check the [zoomStart](/kendo-ui/api/web/chart#events-zoomStart) event documentation.
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/chart#events-zoomStart) event documentation.
 
 #### Example
     <kendo:chart>

@@ -53,7 +53,7 @@ The map center. Coordinates are listed as [Latitude, Longitude].
 
 ### click
 Fired when the user clicks on the map.
-For additional information check the [click](/kendo-ui/api/web/map#events-click) event documentation.
+For additional information check the [click](/kendo-ui/api/dataviz/map#events-click) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -186,7 +186,7 @@ Adds one or more MapLayer to the Map.
 ### markerCreated
 Fired when a marker has been created and is about to be displayed.
 Cancelling the event will prevent the marker from being shown.
-For additional information check the [markerCreated](/kendo-ui/api/web/map#events-markerCreated) event documentation.
+For additional information check the [markerCreated](/kendo-ui/api/dataviz/map#events-markerCreated) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -345,7 +345,7 @@ Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features)
 
 ### pan
 Fired while the map viewport is being moved.
-For additional information check the [pan](/kendo-ui/api/web/map#events-pan) event documentation.
+For additional information check the [pan](/kendo-ui/api/dataviz/map#events-pan) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -381,7 +381,7 @@ For additional information check the [pan](/kendo-ui/api/web/map#events-pan) eve
 
 ### panEnd
 Fires after the map viewport has been moved.
-For additional information check the [panEnd](/kendo-ui/api/web/map#events-panEnd) event documentation.
+For additional information check the [panEnd](/kendo-ui/api/dataviz/map#events-panEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -436,7 +436,7 @@ Controls whether the user can pan the map.
 ### reset
 Fired when the map is reset.
 This typically occurs on initial load and after a zoom/center change.
-For additional information check the [reset](/kendo-ui/api/web/map#events-reset) event documentation.
+For additional information check the [reset](/kendo-ui/api/dataviz/map#events-reset) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -472,7 +472,7 @@ For additional information check the [reset](/kendo-ui/api/web/map#events-reset)
 
 ### shapeClick
 Fired when a shape is clicked or tapped.
-For additional information check the [shapeClick](/kendo-ui/api/web/map#events-shapeClick) event documentation.
+For additional information check the [shapeClick](/kendo-ui/api/dataviz/map#events-shapeClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -508,7 +508,7 @@ For additional information check the [shapeClick](/kendo-ui/api/web/map#events-s
 
 ### shapeCreated
 Fired when a shape is created, but is not rendered yet.
-For additional information check the [shapeCreated](/kendo-ui/api/web/map#events-shapeCreated) event documentation.
+For additional information check the [shapeCreated](/kendo-ui/api/dataviz/map#events-shapeCreated) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -544,7 +544,7 @@ For additional information check the [shapeCreated](/kendo-ui/api/web/map#events
 
 ### shapeMouseEnter
 Fired when the mouse enters a shape.
-For additional information check the [shapeMouseEnter](/kendo-ui/api/web/map#events-shapeMouseEnter) event documentation.
+For additional information check the [shapeMouseEnter](/kendo-ui/api/dataviz/map#events-shapeMouseEnter) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -580,7 +580,7 @@ For additional information check the [shapeMouseEnter](/kendo-ui/api/web/map#eve
 
 ### shapeMouseLeave
 Fired when the mouse leaves a shape.
-For additional information check the [shapeMouseLeave](/kendo-ui/api/web/map#events-shapeMouseLeave) event documentation.
+For additional information check the [shapeMouseLeave](/kendo-ui/api/dataviz/map#events-shapeMouseLeave) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -652,7 +652,7 @@ The initial zoom level.Typical web maps use zoom levels from 0 (whole world) to 
 
 ### zoomEnd
 Fired when the map zoom level has changed.
-For additional information check the [zoomEnd](/kendo-ui/api/web/map#events-zoomEnd) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/map#events-zoomEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -689,7 +689,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/web/map#events-zoom
 ### zoomStart
 Fired when the map zoom level is about to change.
 Cancelling the event will prevent the user action.
-For additional information check the [zoomStart](/kendo-ui/api/web/map#events-zoomStart) event documentation.
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/map#events-zoomStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`

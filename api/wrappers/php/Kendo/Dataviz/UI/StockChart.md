@@ -65,7 +65,7 @@ Default options for all chart axes.
 
 ### axisLabelClick
 Fires when an axis label is clicked.
-For additional information check the [axisLabelClick](/kendo-ui/api/web/stockchart#events-axisLabelClick) event documentation.
+For additional information check the [axisLabelClick](/kendo-ui/api/dataviz/stockchart#events-axisLabelClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -170,7 +170,7 @@ This is the entire visible area of the chart.
 ### dataBound
 Fires when the chart has received data from the data source
 and is about to render it.
-For additional information check the [dataBound](/kendo-ui/api/web/stockchart#events-dataBound) event documentation.
+For additional information check the [dataBound](/kendo-ui/api/dataviz/stockchart#events-dataBound) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -252,7 +252,7 @@ It is used as a default categoryField for all series.The data item field value m
 
 ### drag
 Fires as long as the user is dragging the chart using the mouse or swipe gestures.
-For additional information check the [drag](/kendo-ui/api/web/stockchart#events-drag) event documentation.
+For additional information check the [drag](/kendo-ui/api/dataviz/stockchart#events-drag) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -288,7 +288,7 @@ For additional information check the [drag](/kendo-ui/api/web/stockchart#events-
 
 ### dragEnd
 Fires when the user stops dragging the chart.
-For additional information check the [dragEnd](/kendo-ui/api/web/stockchart#events-dragEnd) event documentation.
+For additional information check the [dragEnd](/kendo-ui/api/dataviz/stockchart#events-dragEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -324,7 +324,7 @@ For additional information check the [dragEnd](/kendo-ui/api/web/stockchart#even
 
 ### dragStart
 Fires when the user has used the mouse or a swipe gesture to drag the chart.The drag operation can be aborted by calling e.preventDefault().
-For additional information check the [dragStart](/kendo-ui/api/web/stockchart#events-dragStart) event documentation.
+For additional information check the [dragStart](/kendo-ui/api/dataviz/stockchart#events-dragStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -389,7 +389,7 @@ The chart legend configuration options.
 
 ### legendItemClick
 Fires when an legend item is clicked.
-For additional information check the [legendItemClick](/kendo-ui/api/web/stockchart#events-legendItemClick) event documentation.
+For additional information check the [legendItemClick](/kendo-ui/api/dataviz/stockchart#events-legendItemClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -425,7 +425,7 @@ For additional information check the [legendItemClick](/kendo-ui/api/web/stockch
 
 ### legendItemHover
 Fires when an legend item is hovered.
-For additional information check the [legendItemHover](/kendo-ui/api/web/stockchart#events-legendItemHover) event documentation.
+For additional information check the [legendItemHover](/kendo-ui/api/dataviz/stockchart#events-legendItemHover) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -490,7 +490,7 @@ The data navigator configuration options.
 
 ### noteClick
 Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
-For additional information check the [noteClick](/api/web/stockchart#events-noteClick) event documentation.
+For additional information check the [noteClick](/kendo-ui/api/dataviz/stockchart#events-noteClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -517,7 +517,7 @@ For additional information check the [noteClick](/api/web/stockchart#events-note
     $stockChart->noteClick('onNoteClick');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
@@ -526,7 +526,7 @@ For additional information check the [noteClick](/api/web/stockchart#events-note
 
 ### noteHover
 Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
-For additional information check the [noteHover](/api/web/stockchart#events-noteHover) event documentation.
+For additional information check the [noteHover](/kendo-ui/api/dataviz/stockchart#events-noteHover) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -553,7 +553,7 @@ For additional information check the [noteHover](/api/web/stockchart#events-note
     $stockChart->noteHover('onNoteHover');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $stockChart = new \Kendo\Dataviz\UI\StockChart('StockChart');
@@ -629,7 +629,7 @@ The plot area configuration options. This is the area containing the plotted ser
 
 ### plotAreaClick
 Fires when plot area is clicked.
-For additional information check the [plotAreaClick](/kendo-ui/api/web/stockchart#events-plotAreaClick) event documentation.
+For additional information check the [plotAreaClick](/kendo-ui/api/dataviz/stockchart#events-plotAreaClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -684,7 +684,7 @@ If it is not supported by the browser, the Chart will switch to the first availa
 
 ### select
 Fires when the user modifies the selection.The range units are:
-For additional information check the [select](/kendo-ui/api/web/stockchart#events-select) event documentation.
+For additional information check the [select](/kendo-ui/api/dataviz/stockchart#events-select) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -720,7 +720,7 @@ For additional information check the [select](/kendo-ui/api/web/stockchart#event
 
 ### selectEnd
 Fires when the user completes modifying the selection.
-For additional information check the [selectEnd](/kendo-ui/api/web/stockchart#events-selectEnd) event documentation.
+For additional information check the [selectEnd](/kendo-ui/api/dataviz/stockchart#events-selectEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -756,7 +756,7 @@ For additional information check the [selectEnd](/kendo-ui/api/web/stockchart#ev
 
 ### selectStart
 Fires when the user starts modifying the axis selection.The range units are:
-For additional information check the [selectStart](/kendo-ui/api/web/stockchart#events-selectStart) event documentation.
+For additional information check the [selectStart](/kendo-ui/api/dataviz/stockchart#events-selectStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -830,7 +830,7 @@ Adds one or more StockChartSeriesItem to the StockChart.
 
 ### seriesClick
 Fires when chart series are clicked.
-For additional information check the [seriesClick](/kendo-ui/api/web/stockchart#events-seriesClick) event documentation.
+For additional information check the [seriesClick](/kendo-ui/api/dataviz/stockchart#events-seriesClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -913,7 +913,7 @@ Default values for each series.
 
 ### seriesHover
 Fires when chart series are hovered.
-For additional information check the [seriesHover](/kendo-ui/api/web/stockchart#events-seriesHover) event documentation.
+For additional information check the [seriesHover](/kendo-ui/api/dataviz/stockchart#events-seriesHover) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -1081,7 +1081,7 @@ Adds one or more StockChartValueAxisItem to the StockChart.
 
 ### zoom
 Fires as long as the user is zooming the chart using the mousewheel.
-For additional information check the [zoom](/kendo-ui/api/web/stockchart#events-zoom) event documentation.
+For additional information check the [zoom](/kendo-ui/api/dataviz/stockchart#events-zoom) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -1117,7 +1117,7 @@ For additional information check the [zoom](/kendo-ui/api/web/stockchart#events-
 
 ### zoomEnd
 Fires when the user stops zooming the chart.
-For additional information check the [zoomEnd](/kendo-ui/api/web/stockchart#events-zoomEnd) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/stockchart#events-zoomEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`
@@ -1153,7 +1153,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/web/stockchart#even
 
 ### zoomStart
 Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
-For additional information check the [zoomStart](/kendo-ui/api/web/stockchart#events-zoomStart) event documentation.
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/stockchart#events-zoomStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChart`

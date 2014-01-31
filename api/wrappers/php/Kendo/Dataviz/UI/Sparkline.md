@@ -65,7 +65,7 @@ Default options for all chart axes.
 
 ### axisLabelClick
 Fires when an axis label is clicked.
-For additional information check the [axisLabelClick](/kendo-ui/api/web/sparkline#events-axisLabelClick) event documentation.
+For additional information check the [axisLabelClick](/kendo-ui/api/dataviz/sparkline#events-axisLabelClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -188,7 +188,7 @@ The data for the default sparkline series.Will be discareded if series are suppl
 ### dataBound
 Fires when the sparkline has received data from the data source
 and is about to render it.
-For additional information check the [dataBound](/kendo-ui/api/web/sparkline#events-dataBound) event documentation.
+For additional information check the [dataBound](/kendo-ui/api/dataviz/sparkline#events-dataBound) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -251,7 +251,7 @@ Sets the data source of the dataSource.
 
 ### drag
 Fires as long as the user is dragging the sparkline using the mouse or swipe gestures.
-For additional information check the [drag](/kendo-ui/api/web/sparkline#events-drag) event documentation.
+For additional information check the [drag](/kendo-ui/api/dataviz/sparkline#events-drag) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -287,7 +287,7 @@ For additional information check the [drag](/kendo-ui/api/web/sparkline#events-d
 
 ### dragEnd
 Fires when the user stops dragging the sparkline.
-For additional information check the [dragEnd](/kendo-ui/api/web/sparkline#events-dragEnd) event documentation.
+For additional information check the [dragEnd](/kendo-ui/api/dataviz/sparkline#events-dragEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -323,7 +323,7 @@ For additional information check the [dragEnd](/kendo-ui/api/web/sparkline#event
 
 ### dragStart
 Fires when the user has used the mouse or a swipe gesture to drag the sparkline.The drag operation can be aborted by calling e.preventDefault().
-For additional information check the [dragStart](/kendo-ui/api/web/sparkline#events-dragStart) event documentation.
+For additional information check the [dragStart](/kendo-ui/api/dataviz/sparkline#events-dragStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -388,7 +388,7 @@ The plot area configuration options. This is the area containing the plotted ser
 
 ### plotAreaClick
 Fires when plot area is clicked.
-For additional information check the [plotAreaClick](/kendo-ui/api/web/sparkline#events-plotAreaClick) event documentation.
+For additional information check the [plotAreaClick](/kendo-ui/api/dataviz/sparkline#events-plotAreaClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -499,7 +499,7 @@ Adds one or more SparklineSeriesItem to the Sparkline.
 
 ### seriesClick
 Fires when chart series are clicked.
-For additional information check the [seriesClick](/kendo-ui/api/web/sparkline#events-seriesClick) event documentation.
+For additional information check the [seriesClick](/kendo-ui/api/dataviz/sparkline#events-seriesClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -582,7 +582,7 @@ Default values for each series.
 
 ### seriesHover
 Fires when chart series are hovered.
-For additional information check the [seriesHover](/kendo-ui/api/web/sparkline#events-seriesHover) event documentation.
+For additional information check the [seriesHover](/kendo-ui/api/dataviz/sparkline#events-seriesHover) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -739,7 +739,7 @@ Adds one or more SparklineValueAxisItem to the Sparkline.
 
 ### zoom
 Fires as long as the user is zooming the chart using the mousewheel.
-For additional information check the [zoom](/kendo-ui/api/web/sparkline#events-zoom) event documentation.
+For additional information check the [zoom](/kendo-ui/api/dataviz/sparkline#events-zoom) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -775,7 +775,7 @@ For additional information check the [zoom](/kendo-ui/api/web/sparkline#events-z
 
 ### zoomEnd
 Fires when the user stops zooming the chart.
-For additional information check the [zoomEnd](/kendo-ui/api/web/sparkline#events-zoomEnd) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/sparkline#events-zoomEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
@@ -811,7 +811,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/web/sparkline#event
 
 ### zoomStart
 Fires when the user has used the mousewheel to zoom the chart.The zoom operation can be aborted by calling e.preventDefault().
-For additional information check the [zoomStart](/kendo-ui/api/web/sparkline#events-zoomStart) event documentation.
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/sparkline#events-zoomStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Sparkline`
