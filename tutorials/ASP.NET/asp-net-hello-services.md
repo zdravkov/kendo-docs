@@ -214,7 +214,7 @@ is passed, it will be handed off to the proper method.  If nothing is passed,
 it will be ignored.
 
 This means that the route for the **EmployeesController **will be something
-like [**http://localhost:3593/api/employees**][30].
+like [**http://[your-server]/api/employees**][30].
 
 ### Test The Application
 
@@ -840,7 +840,7 @@ The completed application used in this project is available on the course
 
    [27]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
 
-   [30]: http://localhost:3593/api/employees
+   [30]: http://[yourserver]/api/employees
 
    [39]: http://en.wikipedia.org/wiki/Ajax_(programming
 
