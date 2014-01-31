@@ -15,7 +15,7 @@ I have used jqGrid in the past on a few projects. While I was fundamentally sati
 
 Fortunately, the [Grid](http://demos.telerik.com/kendo-ui/web/grid/index.html) makes this much easier on us. With to the rapid templating engine that is included with Kendo UI, and the built-in datasource, we can get up and running with our grid very quickly.
 
-To start with, we need a data source. Due to my work on [instasharp.org](http://instasharp.org/) recently, I have become quite familiar with the Instagram API. We can use their "Popular" feeds endpoint without having to go through an authorization process. We still need a client_id, but it is easy to sign up for one of those at [http://instagram.com/developer/manage/](http://instagram.com/developer/manage/).
+To start with, we need a data source. Due to my work on [instasharp.org](http://instasharp.org/) recently, I have become quite familiar with the Instagram API. We can use their "Popular" feeds endpoint without having to go through an authorization process. We still need a client_id, but it is easy to sign up for one of those at [http://instagram.com/developer/manage/](http://instagram.com/developer/register/#).
 
 ##Create The Grid
 
