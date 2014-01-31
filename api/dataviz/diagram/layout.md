@@ -154,6 +154,13 @@ Controls the distance between the root and the immediate children of the root. *
 
 Defines the radial separation between the levels (except the first one which is defined by the aforementioned radialFirstLevelSeparation). *This setting is specific to the radial tree layout.*
 
+        diagram.layout({
+            type: "tree",
+            subtype: "radial",
+            radialFirstLevelSeparation: 100,
+            radialSeparation: 50
+        });
+
 ###startRadialAngle `Number` *(default: 0)*
 
 Defines where the circle/arc starts. The positive direction is **clockwise** and the angle is in **radians**. *This setting is specific to the radial tree layout.*
