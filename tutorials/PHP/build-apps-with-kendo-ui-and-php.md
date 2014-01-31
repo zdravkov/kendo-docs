@@ -150,7 +150,7 @@ a good idea to not have an array as your top level JSON element.
 
 You could now hit that PHP page directly from your browser and see the
 results.  Your URL might be something similar to the following depending on how your development environment is setup.
-[http://localhost:8888/KendoUI/data/employees.php][12]
+[http://[yourserver]/KendoUI/data/employees.php][12]
 
 [![2][13]][14]
 
@@ -445,7 +445,7 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
 
    [11]: http://docs.telerik.com/kendo-ui/getting-started/web/grid/walkthrough
 
-   [12]: http://localhost:8888/KendoUI/data/employees.php
+   [12]: http://[yourserver]/KendoUI/data/employees.php
 
    [13]: https://raw.github.com/telerik/kendo-docs/production/tutorials/PHP/images/ff819b019713_9A19-2_thumb_2.png (2)
 
