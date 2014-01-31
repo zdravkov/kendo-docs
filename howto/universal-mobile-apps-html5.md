@@ -89,7 +89,7 @@ Conceptually, the prior code snippet is doing this:
 2. If the device is a tablet, we grab the HTML element containing our initial tablet app view. If it’s not a tablet, we grab the container for our phone app view.
 3. Since the tablet view uses a SplitView, we do not need a app layout element. If it’s a phone, we specify our default view layout.
 4. Finally, we initialize the Kendo UI Mobile Application using the configured variables.
-5. And for a little extra polish, we use some CSS to [avoid FOUJUI](http://blogs.telerik.com/posts/archive/11-10-06/foujui_flash_of_uninitialized_javascript_ui) (more on this in a minute)
+5. And for a little extra polish, we use some CSS to [avoid FOUJUI](http://blogs.telerik.com/kendoui/posts/11-10-06/foujui_flash_of_uninitialized_javascript_ui) (more on this in a minute)
 
 **The net effect is a single app containing all of the HTML, CSS, and JavaScript for both tablet and phone users that can be “universally” packaged and deployed via the browser or in hybrid app containers (like PhoneGap).**
 
