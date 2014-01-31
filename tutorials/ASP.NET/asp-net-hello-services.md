@@ -822,7 +822,7 @@ The completed application used in this project is available on the course
 
    [2]: http://www.asp.net/web-api
 
-   [3]: http://msdn.microsoft.com/en-us/library/dd565622(v=vs.85
+   [3]: http://msdn.microsoft.com/en-US/library/gg589512%28v=vs.85%29.aspx
 
    [4]: https://github.com/telerik/html5-dev-for-aspnet-devs
 
@@ -850,7 +850,7 @@ The completed application used in this project is available on the course
 
    [44]: http://api.jquery.com/id-selector/ (ID Selector (“#id”) – jQuery API)
 
-   [45]: http://msdn.microsoft.com/en-us/library/system.json(v=vs.95
+   [45]: http://msdn.microsoft.com/en-us/library/system.json%28v=vs.95%29.aspx
 
    [46]: http://jquery.com/
 
