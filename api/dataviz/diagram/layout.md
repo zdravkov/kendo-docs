@@ -169,6 +169,13 @@ Defines where the circle/arc starts. The positive direction is **clockwise** and
 
 Defines where the circle/arc ends. The positive direction is **clockwise** and the angle is in **radians**. Default is 2\*Math.PI. *This setting is specific to the radial tree layout.*
 
+        diagram.layout({
+            type: "tree",
+            subtype: "radial",
+            startRadialAngle: 3.1416,
+            endRadialAngle: 5.2832
+        });
+
 ###underneathVerticalTopOffset `Number` *(default: 15)*
 
 Defines the vertical separation between a parent and its first child. This offsets the whole set of children with respect to its parent. *This setting is specific to the tipOver tree layout.*
