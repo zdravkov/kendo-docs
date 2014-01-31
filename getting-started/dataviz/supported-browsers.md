@@ -16,7 +16,9 @@ publish: true
 *   Safari 4+
 *   Opera 10+
 
-Please note that Quirks mode is not supported. Always specify [DOCTYPE](http://reference.sitepoint.com/html/doctypes) on your pages.
+> Quirks mode is not supported. Always specify [DOCTYPE](http://reference.sitepoint.com/html/doctypes) on your pages.
+
+> Internet Explorer 8 (64-bit) does not support text rotation.
 
 ## Mobile browsers
 
