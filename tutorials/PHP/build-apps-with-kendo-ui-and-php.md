@@ -469,7 +469,7 @@ This has been an example of how to get rolling with PHP and [Kendo UI][32].
 
    [23]: http://demos.telerik.com/kendo-ui/web/grid/detailtemplate.html
 
-   [24]:/getting-started/framework/templates/overview
+   [24]: http://docs.telerik.com/kendo-ui/getting-started/framework/templates/overview
 
    [25]: http://demos.telerik.com/kendo-ui/web/templates/index.html
 
