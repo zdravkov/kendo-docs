@@ -184,6 +184,14 @@ Defines the vertical separation between a parent and its first child. This offse
 
 Defines the vertical separation between siblings and sub-branches. *This setting is specific to the tipOver tree layout.*
 
+        diagram.layout({
+            type: "tree",
+            subtype: "tipOver",
+            horizontalSeparation: 60,
+            underneathVerticalTopOffset: 40,
+            underneathVerticalSeparation: 25
+        });
+
 ###underneathHorizontalOffset `Number` *(default: 15)*
 
 Defines the horizontal offset from a child with respect to its parent. *This setting is specific to the tipOver tree layout.* 
