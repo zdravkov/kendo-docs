@@ -94,7 +94,7 @@ Conceptually, the prior code snippet is doing this:
 **The net effect is a single app containing all of the HTML, CSS, and JavaScript for both tablet and phone users that can be “universally” packaged and deployed via the browser or in hybrid app containers (like PhoneGap).**
 
 ##Universal App and FOUJUI
-When using the universal app approach, the [“Flash of Uninitialized JavaScript UI”](http://blogs.telerik.com/posts/archive/11-10-06/foujui_flash_of_uninitialized_javascript_ui) (or FOUJUI) can be particularly distracting because the initial HTML page contains markup for both the tablet and mobile views. To provide a polished loading experience and avoid displaying unsightly HTML, it is important to address FOUJUI with some simple CSS and JavaScript.
+When using the universal app approach, the [“Flash of Uninitialized JavaScript UI”](http://blogs.telerik.com/kendoui/posts/11-10-06/foujui_flash_of_uninitialized_javascript_ui) (or FOUJUI) can be particularly distracting because the initial HTML page contains markup for both the tablet and mobile views. To provide a polished loading experience and avoid displaying unsightly HTML, it is important to address FOUJUI with some simple CSS and JavaScript.
 
 In the example linked above, this technique is used:
 
