@@ -41,21 +41,21 @@ Below are the system requirements for the Kendo UI Framework.
    <tbody>
         <tr>
             <th class="browsers"></th>
-            <th class="browsers-windows" style="width: 100px">Windows</th>
-            <th class="browsers-mac" style="width: 100px">Mac OS</th>
-            <th class="browsers" style="width: 100px">Linux</th>
+            <th class="browsers" style="width: 100px">Kendo UI Web</th>
+            <th class="browsers" style="width: 100px">Kendo UI DataViz</th>
+            <th class="browsers" style="width: 100px">Kendo UI Mobile</th>
         </tr>
         <tr>
            <td><span class="ie"></span>Internet Explorer</td>
-           <td>7.0 +</td>
-           <td>-</td>
-           <td>-</td>
+           <td>7+</td>
+           <td>7+</td>
+           <td>10+</td>
         </tr>
         <tr>
             <td><span class="firefox"></span>Firefox</td>
             <td><a href="http://www.mozilla.org/en-US/firefox/organizations/">ESR</a> +</td>
             <td><a href="http://www.mozilla.org/en-US/firefox/organizations/">ESR</a> +</td>
-            <td><a href="http://www.mozilla.org/en-US/firefox/organizations/">ESR</a> +</td>
+            <td>-</td>
         </tr>
         <tr>
             <td><span class="chrome"></span>Chrome</td>
@@ -70,10 +70,10 @@ Below are the system requirements for the Kendo UI Framework.
             <td>15.0 +</td>
         </tr>
         <tr>
-            <td><span class="safari"></span>Safari</td>
-            <td>-</td>
-            <td>5.0 +</td>
-            <td>-</td>
+            <td><span class="safari"></span>Safari 5+ (OS X)</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
         </tr>
     </tbody>
 </table>
@@ -115,7 +115,7 @@ It is highly recommended to use IE's [Edge mode](http://blogs.msdn.com/b/ie/arch
     </tr>
     <tr>
         <td><span class="blackberry"></span>BlackBerry</td>
-        <td>7.0+</td>
+        <td>10.0+</td>
     </tr>
     <tr>
         <td><span class="blackberry"></span>Windows Phone</td>
@@ -134,7 +134,7 @@ It is highly recommended to use IE's [Edge mode](http://blogs.msdn.com/b/ie/arch
 * iOS 6.0+
 * Android 2.3+
 * Windows Phone 8+ 
-* BlackBerry 7.0+ touchscreen devices.
+* BlackBerry 10.0+ touchscreen devices.
 
 **NOTE:**
 
