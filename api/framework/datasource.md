@@ -2263,6 +2263,101 @@ If set to function the data source will invoke it and use the result as the URL.
     });
     </script>
 
+### transport.signalr `Object`
+
+The configuration used when [type](#configuration-type) is set to "signalr". Configures the SignalR settings - hub, connection promise, server and client hub methods.
+
+Live demo available at [demos.telerik.com/kendo-ui](http://demos.telerik.com/kendo-ui/web/grid/signalr.html).
+
+It is recommended to familiarize with the SignalR [JavaScript API](http://www.asp.net/signalr/overview/signalr-20/hubs-api/hubs-api-guide-javascript-client).
+
+#### Example
+
+    var hubUrl = "http://demos.telerik.com/kendo-ui/service/signalr/hubs";
+    var connection = $.hubConnection(hubUrl, { useDefaultPath: false});
+    var hub = connection.createHubProxy("productHub");
+    var hubStart = connection.start({ jsonp: true });
+
+    var dataSource = new kendo.data.DataSource({
+        type: "signalr",
+        schema: {
+            model: {
+                id: "ID",
+                fields: {
+                    "ID": { editable: false, nullable: true },
+                    "CreatedAt": { type: "date" },
+                    "UnitPrice": { type: "number" }
+                }
+            }
+        },
+        transport: {
+            signalr: {
+                promise: hubStart,
+                hub: hub,
+                server: {
+                    read: "read",
+                    update: "update",
+                    destroy: "destroy",
+                    create: "create"
+                },
+                client: {
+                    read: "read",
+                    update: "update",
+                    destroy: "destroy",
+                    create: "create"
+                }
+            }
+        }
+    });
+
+### transport.signalr.client `Object`
+
+Specifies the client-side CRUD methods of the SignalR hub.
+
+### transport.signalr.client.create `String`
+
+Specifies the name of the client-side method of the SignalR hub responsible for creating data items.
+
+### transport.signalr.client.destroy `String`
+
+Specifies the name of the client-side method of the SignalR hub responsible for destroying data items.
+
+### transport.signalr.client.read `String`
+
+Specifies the name of the client-side method of the SignalR hub responsible for reading data items.
+
+### transport.signalr.client.update `String`
+
+Specifies the name of the client-side method of the SignalR hub responsible for updating data items.
+
+### transport.signalr.hub `Object`
+
+The SignalR hub object returned by the `createHubProxy` method. The `hub` option is mandatory.
+
+### transport.signalr.promise `Object`
+
+The promise returned by the `start` method of the SignalR connection. The `promise` option is mandatory.
+
+### transport.signalr.server `Object`
+
+Specifies the server-side CRUD methods of the SignalR hub.
+
+### transport.signalr.server.create `String`
+
+Specifies the name of the server-side method of the SignalR hub responsible for creating data items.
+
+### transport.signalr.server.destroy `String`
+
+Specifies the name of the server-side method of the SignalR hub responsible for destroying data items.
+
+### transport.signalr.server.read `String`
+
+Specifies the name of the server-side method of the SignalR hub responsible for reading data items.
+
+### transport.signalr.server.update `String`
+
+Specifies the name of the server-side method of the SignalR hub responsible for updating data items.
+
 ### transport.update `Object|String|Function`
 
 The configuration used when the data source saves updated data items. Those are data items whose fields have been updated.
