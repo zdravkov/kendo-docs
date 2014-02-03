@@ -40,10 +40,10 @@ Below are the system requirements for the Kendo UI Framework.
 <table class="devices-platforms stripes" style="margin-top: 1.2em;">
    <tbody>
         <tr>
-            <th class="browsers"></th>
+            <th class="browsers" style="width: 120px"></th>
             <th class="browsers" style="width: 100px">Kendo UI Web</th>
-            <th class="browsers" style="width: 100px">Kendo UI DataViz</th>
-            <th class="browsers" style="width: 100px">Kendo UI Mobile</th>
+            <th class="browsers" style="width: 115px">Kendo UI DataViz</th>
+            <th class="browsers" style="width: 110px">Kendo UI Mobile</th>
         </tr>
         <tr>
            <td><span class="ie"></span>Internet Explorer</td>
