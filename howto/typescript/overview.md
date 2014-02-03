@@ -83,3 +83,41 @@ The following code example shows how to inherit from an existing Kendo UI Widget
         // Call a widget method
         myDatePicker.open();
     });
+
+## Use Kendo UI MVVM in TypeScript
+
+When inheriting from `kendo.data.ObservableObject` in TypeScript you should call the `super.init` method to properly set up dependency tracking.
+
+The following example shows how to use Kendo UI MVVM in TypeScript.
+
+    /// <reference path="jquery.d.ts" />
+    /// <reference path="kendo.all.d.ts" />
+
+    class Person extends kendo.data.ObservableObject {
+        name = "John Doe";
+
+        constructor() {
+            super();
+
+            super.init(this);
+        }
+    }
+
+    class ViewModel extends kendo.data.ObservableObject {
+        person = new Person();
+
+        constructor() {
+            super();
+
+            super.init(this);
+        }
+    }
+
+    $(function () {
+        var viewModel = new ViewModel();
+
+        kendo.bind(document.body, viewModel);
+
+        viewModel.set("person.name", "Jane Doe");
+    });
+
