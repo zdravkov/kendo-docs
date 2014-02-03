@@ -3812,7 +3812,7 @@ String describing the type of the error
 
 The current [jqXHR](http://api.jquery.com/Types/#jqXHR).
 
-#### Example - subscribe to the "error" event during initialization
+#### Example - subscribe to the "error" event after initialization
     <script>
     function dataSource_error(e) {
       console.log(e.status); // displays "error"
@@ -3827,6 +3827,46 @@ The current [jqXHR](http://api.jquery.com/Types/#jqXHR).
     dataSource.bind("error", dataSource_error);
     dataSource.fetch();
     </script>
+
+### push
+
+Fired when the data source receives a push notification or the `pushCreate`, `pushUpdate` or `pushDestroy` methods are called.
+
+#### Event Data
+
+##### e.items `Array`
+
+The array of data items that were affected by the push notification.
+
+##### e.type `String`
+
+The type of the push notification. One of the following values: "create", "update", "destroy";
+
+##### e.sender `kendo.data.DataSource`
+
+The data source instance which fired the event.
+
+#### Example - subscribe to the "push" event during initialization
+    <script>
+    function dataSource_push(e) {
+      console.log(e.type); // displays "update"
+      console.log(e.items[0].name); // displays "Jane Doe"
+    }
+    var dataSource = new kendo.data.DataSource({
+      push: dataSource_push,
+      schema: {
+        model: {
+          id: "id"
+        }
+      },
+      data: [
+        { id: 1, name: "John Doe" }
+      ]
+    });
+    dataSource.fetch();
+    dataSource.pushUpdate({ id: 1, name: "Jane Doe" });
+    </script>
+
 
 ### requestEnd
 
