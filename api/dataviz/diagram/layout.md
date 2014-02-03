@@ -1,3 +1,12 @@
+---
+title: kendo.diagram.layout
+meta_title: Layout in Kendo Diagram widget with its options
+meta_description: General discussion of Layout in the diagram widget and the API Reference for the layout options
+slug: api-framework
+tags: api,framework,diagram,layout,tree layout,force layout,layered layout
+publish: false
+---
+
 #Layout
 The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.
 
