@@ -15,19 +15,19 @@ Allowing users to enter HTML on your site imposes security risks that need to be
 
 ## A typical XSS attack
 
-1. A malicious user visits a page that uses the Editor widget
+1. A malicious user visits a page that uses the Editor widget. Let us assume that there is a `<textarea id="editor">` element on the page.
 
-        $("textarea#editor").kendoEditor();
+        $("#editor").kendoEditor();
 
-2. The attacker sets the value of the textarea to a malicious script, without using the editing interface, and submits the form.
+2. The attacker sets the value of the Editor's textarea to a malicious script, without using the editing interface, and submits the form.
 
-        $("textarea#editor").val("<script>alert('Script that gathers user info and posts it to another site');</script>");
+        $("#editor").val("<script>alert('Script that gathers user info and posts it to another site');</script>");
         $("form").submit();
 
    Note that the attacker can gather any data that is available on the page, or in JavaScript-accessible cookies.
 
 3. The unprocessed content is stored on the server
-4. A victim visits the site that outputs the above HTML, and her security is compromised.
+4. A victim visits the compromised page that outputs the above HTML.
 
 ## How does the editor widget protect me from cross-site scripting (XSS)?
 

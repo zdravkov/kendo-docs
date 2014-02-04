@@ -281,7 +281,7 @@ Only applicable for the formatting tool. Specifies the context in which the opti
 
 The kendo template that will be used for rendering the given tool.
 
-#### Example
+#### Example using a simple string template
 
     <textarea id="editor"></textarea>
     <script>
@@ -295,6 +295,27 @@ The kendo template that will be used for rendering the given tool.
     });
     </script>
 
+The code below shows how to use a template and pass variables to it. This allows template reusage or making tweaks on the fly.
+
+#### Example using a Kendo UI template with variables
+
+    <script id="toolTemplate" type="text/x-kendo-template">
+        <button class='k-button'>#= myText #</button>
+    </script>
+    
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      tools: [
+        {
+          name: "custom",
+          myText: "Button Text"
+          template: $("#toolTemplate").html()
+        }
+      ]
+    });
+    </script>
+    
 ### imageBrowser `Object`
 
 Configuration for image browser dialog.
