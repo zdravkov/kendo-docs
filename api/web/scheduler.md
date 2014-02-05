@@ -3177,6 +3177,29 @@ If set to true the user would be able to select scheduler cells and events. By d
     });
     </script>
 
+### selectedDateFormat `String` *(default: "")*
+
+Sets the date format of date range in the Scheduler header area.
+
+#### Example - using selectedDateFormat
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      selectedDateFormat: "{0:yyyy/M/dd} - {1:yyyy/M/dd}",
+      date: new Date("2013/6/6"),
+      views: ["day", "week"],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### showWorkHours `Boolean` *(default: false)*
 
 If set to true the view will be initially shown in business hours mode. By default view is displyed in full day mode.
