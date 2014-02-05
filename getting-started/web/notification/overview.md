@@ -182,6 +182,10 @@ The **Notification** widget allows configuring multiple templates. Each template
 	});
 	</script>
 
+## Events
+
+The **Notification** widgets exposes two events - `show` and `hide`. The `show` event is fired when the showing animation starts. The `hide` event is fired when the hiding animation starts.
+
 ## Accessing the Notification instance
 
 Similar to all other Kendo UI widgets, an existing **Notification** instance is accessed via the `.data("kendoNotification")` jQuery method, executed by the jQuery object of the originating element.
