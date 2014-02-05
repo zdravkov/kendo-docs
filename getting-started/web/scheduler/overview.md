@@ -188,6 +188,7 @@ Kendo UI Scheduler can display its events in different "views". The following vi
 
 - day - displays the events in single day.
 - week - displays the events in a whole week.
+- workWeek - displays the events in a work week.
 - month - display the events in single month.
 - agenda - display the events from the current date till next week (7 days).
 
