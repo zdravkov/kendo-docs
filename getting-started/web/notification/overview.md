@@ -57,7 +57,7 @@ If no type is specified when a notification is shown, "info" is assumed. An unli
 ## Hiding the notifications
 
 By default, the notifications remain visible for 5 seconds and then disappear. Clicking anywhere on them removes them right away. If this is not intuitive enough for the users, a visible close button can be displayed.
-Hide delay is configurable in milliseconds. A zero value prevents automatic hiding.
+Hide delay is configurable in milliseconds. A zero value disables automatic hiding.
 
 If needed, automatic hiding by clicking anywhere on the notifications can be disabled. In this case the notifications can be dismissed only with the button, if it is present.
 In addition, the ability to hide a notification manually can be postponed. The benefit of this feature is to prevent accidental hiding of notifications, which have just appeared. By default, postponing is disabled.
@@ -83,9 +83,9 @@ In addition, the ability to hide a notification manually can be postponed. The b
 
 ## Positioning and stacking
 
-By default, the **Notification** widget creates popups, which overlay the other page content. If no position settings are defined, the first popup will be displayed near the bottom-right corner of the browser viewport.
-In this case, subsequent popups will stack upwards. Positioning and stacking can be controlled independently. If no stacking setting is defined, the popups will stack according to the positioning settings
-by using common sense (e.g. popups which start at the top of the viewport will stack downwards).
+By default, the **Notification** widget creates popups, which overlay the other page content. If no position settings are defined, the first popup will be displayed near the bottom-right corner of the browser viewport
+and subsequent popups will stack upwards. Positioning and stacking can be controlled independently. If no stacking setting is defined, the popups will stack according to the positioning settings
+by using common sense (e.g. popups which display at the top of the viewport will stack downwards).
 
 By default, popups are *pinned*, i.e. when the page is scrolled, they do not move. This is achieved by applying a `position:fixed` style to the popups. When the popups are not pinned, they use `position:absolute`.
 
@@ -148,6 +148,10 @@ The **Notification** widget allows configuring multiple templates. Each template
 
     <span id="notification"></span>
 	
+    <script id="myAlertTemplate" type="text/x-kendo-template">
+        <div class="myAlert">System alert generated at #= time # : #= myMessage #</div>
+    </script>
+    
 	<script>
 	$(function(){
         var notificationElement = $("#notification");
@@ -158,6 +162,8 @@ The **Notification** widget allows configuring multiple templates. Each template
                 warning: "<div class='myWarning'>Warning: #= myMessage #</div>",
                 // define a template for the custom "timeAlert" notification type
                 timeAlert: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
+                // template content can also be defined separately
+                //timeAlert: $("#myAlertTemplate").html()
             }
         });
         
@@ -168,7 +174,7 @@ The **Notification** widget allows configuring multiple templates. Each template
             myMessage: "some warning message here"
         });
         
-        // show a "myType" message using the default show() method
+        // show a "timeAlert" message using the default show() method
         n.show({
             time: new Date().toLocaleTimeString(),
             myMessage: "Server will be restarted."
