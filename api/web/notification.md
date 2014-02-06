@@ -460,23 +460,50 @@ This is a shorthand method for [`show(data, "warning")`](#methods-show)
 
 ## Events
 
-### click
+### hide
 
-Fires when the **Button** is clicked with the mouse, touched on a touch device, or ENTER (or SPACE) is pressed while the **Button** is focused.
+Fires when a notification's hiding animation starts.
 
 #### Event Data
 
-##### e.event `Object`
+##### e.element `jQuery`
 
-The original DOM event.
+The jQuery object, which wraps the element being hidden.
 
-#### Example - subscribe to the "click" event during initialization
+#### Example - subscribe to the "hide" event during initialization
 
-	<button id="button" type="button">Edit</button>
+	<span id="notification"></span>
 	<script>
-	$("#button").kendoButton({
-		click: function(e) {
-			alert(e.event.target.tagName);
-		}
+    
+    function onHide(e) {
+        var elementBeingHidden = e.element;
+    }
+    
+	$("#notification").kendoNotification({
+		hide: onHide
+	});
+	</script>
+
+### show
+
+Fires when a notification's showing animation starts.
+
+#### Event Data
+
+##### e.element `jQuery`
+
+The jQuery object, which wraps the element being displayed.
+
+#### Example - subscribe to the "show" event during initialization
+
+	<span id="notification"></span>
+	<script>
+    
+    function onShow(e) {
+        var elementBeingShown = e.element;
+    }
+    
+	$("#notification").kendoNotification({
+		show: onShow
 	});
 	</script>
