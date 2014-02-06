@@ -84,8 +84,9 @@ In addition, the ability to hide a notification manually can be postponed. The b
 ## Positioning and stacking
 
 By default, the **Notification** widget creates popups, which overlay the other page content. If no position settings are defined, the first popup will be displayed near the bottom-right corner of the browser viewport
-and subsequent popups will stack upwards. Positioning and stacking can be controlled independently. If no stacking setting is defined, the popups will stack according to the positioning settings
-by using common sense (e.g. popups which display at the top of the viewport will stack downwards).
+and subsequent popups will stack upwards. Positioning and stacking can be controlled independently. If no stacking setting is defined, the popups will stack upwards or downwards, depending on the positioning settings
+(e.g. popups which display at the top of the viewport will stack downwards and vice versa). In most cases automatic stacking is good enough.
+Defining stacking explicitly is needed mostly when it should be leftward or rightward, which is a little uncommon.
 
 By default, popups are *pinned*, i.e. when the page is scrolled, they do not move. This is achieved by applying a `position:fixed` style to the popups. When the popups are not pinned, they use `position:absolute`.
 
@@ -115,7 +116,7 @@ If the popup content will vary and stacking is likely to occur, it is a good ide
 	</script>
 
 In addition to popups, the **Notification** widget can also display "static" notifications, which do not overlay other elements, but instead take part in the so-called *normal flow* of the page content. In this case
-positioning settings do not make sense and are ignored. Stacking can be downwards (default) or upwards. Static notifications are displayed, if a target container is specified.
+positioning settings do not make sense and are ignored. Stacking can be downwards (by default) or upwards. Static notifications are displayed, if a target container is specified.
 
 ### Example - static configuration
 
@@ -143,6 +144,8 @@ viewport area and will be inaccessible (if pinned). If such scenarios are likely
 *This documentation section assumes that you are familiar with [Kendo UI templates](/kendo-ui/getting-started/framework/templates/overview)*.
 
 The **Notification** widget allows configuring multiple templates. Each template will be used together with its corresponding notification type (either build-in or custom).
+If you define a custom template for a built-in notification type, you will no longer be able to benefit from the corresponding built-in template,
+but you will still be able to use the shorthand show methods, as demonstrated below.
 
 ### Example - using templates
 
