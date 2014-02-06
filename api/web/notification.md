@@ -98,7 +98,7 @@ Indicates the period in milliseconds after which a notification disappears autom
 
 ### button `Boolean` *(default: false)*
 
-Determines whether the notifications will include a close button. This setting works with the built-in templates only.
+Determines whether the notifications will include a hide button. **This setting works with the built-in templates only.**
 
 #### Example - enable hide buttons
 
