@@ -19,7 +19,7 @@ Kendo UI comes in different bundles:
 * Kendo UI DataViz - HTML5 data vizualization widgets.
 * Kendo UI Mobile - HTML5 framework for building hybrid mobile applications.
 * Kendo UI Complete - includes Kendo UI Web, Kendo UI DataViz and Kendo UI Mobile.
-* Telerik UI for ASP.NET MVC - Kendo UI Complete plus ASP.NET MVC wrappers for Kendo UI Web and Kendo UI DataViz.
+* Telerik UI for ASP.NET MVC - Kendo UI Complete plus ASP.NET MVC wrappers for Kendo UI Web, Kendo UI DataViz and Kendo UI Mobile.
 * Telerik UI for JSP - Kendo UI Complete plus JSP wrappers for Kendo UI Web and Kendo UI DataViz.
 * Telerik UI for PHP - Kendo UI Complete plus PHP wrappers for Kendo UI Web and Kendo UI DataViz.
 
