@@ -4919,6 +4919,7 @@ The widget instance which fired the event.
     $("#scheduler").kendoScheduler({
       date: new Date("2013/6/6"),
       views: [ "day", "month" ],
+      selectable:true,
       dataSource: [
         {
           id: 1,
@@ -4950,6 +4951,7 @@ The widget instance which fired the event.
     $("#scheduler").kendoScheduler({
       date: new Date("2013/6/6"),
       views: [ "day", "month" ],
+      selectable:true,
       dataSource: [
         {
           id: 1,
