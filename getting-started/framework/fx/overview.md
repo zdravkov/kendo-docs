@@ -13,7 +13,7 @@ This document provides an overview of the Kendo UI FX library. [Please refer to 
 
 ## Getting Started
 
-Kendo UI Effect instances are created through the `kendo.fx` jQuery selector wrapper. A single wrapper can produce multiple effects.
+Kendo UI Effect instances are created through the `kendo.fx` jQuery selector wrapper. A single wrapper can be used to create multiple effects.
 
     <div id="foo">
         I will be animated
@@ -82,7 +82,7 @@ Example working with multiple elements:
         var eleFoo = $("#foo"),
             eleBaz = $("#baz");
 
-        $.when(kendo.fx(eleFoo).fadeOut().play(), 
+        $.when(kendo.fx(eleFoo).fadeOut().play(),
                     kendo.fx(eleBaz).fadeOut().play()).then(function(){
                 //This will be called when both animations are done
                 alert("Both elements faded!");
@@ -101,6 +101,7 @@ The Kendo UI FX library currently supports the following effects:
 - [Tile](/kendo-ui/api/framework/fx/tile)
 - [Transfer](/kendo-ui/api/framework/fx/transfer)
 - [Zoom](/kendo-ui/api/framework/fx/zoom)
+- [Replace](/kendo-ui/api/framework/fx/replace)
 
 When possible, effects are hardware accelerated via CSS transitions, making them ideal for desktop and mobile devices. Unlike CPU intensive JavaScript animations, animations done with CSS can provide better framerates and battery life.
 
