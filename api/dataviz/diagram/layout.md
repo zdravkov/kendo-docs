@@ -7,7 +7,7 @@ tags: api,framework,diagram,layout,tree layout,force layout,layered layout
 publish: false
 ---
 
-#Layout
+# kendo.diagram.layout
 The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.
 
 On a technical level, layout consists of a multitude of algorithms and optimizations:
