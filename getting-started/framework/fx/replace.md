@@ -82,7 +82,7 @@ The transition duration is configured through the following CSS selectors, prese
         transition:all 350ms ease-out;
     }
 
-You can override the default duration for the entire document using **higher specificity selector** or by including the same selector after Kendo UI stylesheet references.
+You can override the default duration for the entire document using a [higher specificity selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity), or by including the same selector after Kendo UI stylesheet references.
 
 ### Faster replace effect transition
 
