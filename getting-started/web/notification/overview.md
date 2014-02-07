@@ -16,17 +16,17 @@ The **Kendo UI Notification** provides a styled UI widget with arbitrary content
 
 ## Getting Started
 
-Generally, the **Notification** widget can be initialized from any element. If the widget will be used with popup notifications,
-or if the notifications will not be appended to the Notification element, then the widget element **will be hidden** as it is assumed that it is not needed for anything particular.
+The **Notification** widget can be initialized from any element, because it does not manipulate the element's content. The element **will be hidden** if the widget will be used with popup notifications,
+or if static notifications will **not** be appended to the Notification element. In these two cases it is assumed that the element will not be needed for anything.
 
-If the **Notification** element will be used to contain static (non-popup) notifications, then its tag is recommended to be one, which allows nesting the elements inside the notifications' template. For example,
-inline elements (`span`, `a`, `em`, etc.) cannot contain block elements (`div`, `p`, `ul`, `li`, headings, etc.).
+On the other hand, if the **Notification** element will be used to contain static (non-popup) notifications, then its tag is recommended to be one, which allows nesting the elements inside the notifications' template.
+For example, inline elements (`span`, `a`, `em`, etc.) cannot contain block elements (`div`, `p`, `ul`, `li`, headings, etc.). Using a `div` element for the widget is OK.
 
-The **Notification** widget provides several built-in notification types - "info", "success", "warning" and "error". The purpose of having different notification types is the ability to
+The **Notification** widget provides several built-in notification types: `"info"`, `"success"`, `"warning"` and `"error"`. The benefit of having different notification types is the ability to
 use different templates and looks for each type. The built-in types provide ready-to-use shorthand methods for displaying, as well as built-in templates and styling. The shorthand method names match the listed notification types.
-If no type is specified when a notification is shown, "info" is assumed. An unlimited amount of custom notification types and corresponding templates can be defined. See [Templates](#templates).
+If no type is specified when a notification is shown, `"info"` is assumed. An unlimited amount of custom notification types and corresponding templates can be defined. For further details, see [Templates](#templates).
 
-### Example - Notification initialization
+### Example - initialization and basic usage
 
     <span id="notification"></span>
 	
@@ -62,7 +62,7 @@ Hide delay is configurable in milliseconds. A zero value disables automatic hidi
 If needed, automatic hiding by clicking anywhere on the notifications can be disabled. In this case the notifications can be dismissed only with the button, if it is present.
 In addition, the ability to hide a notification manually can be postponed. The benefit of this feature is to prevent accidental hiding of notifications, which have just appeared. By default, postponing is disabled.
 
-### Example - managing hiding settings
+### Example - manage hide settings
 
     <span id="notification"></span>
 	
@@ -92,7 +92,7 @@ By default, popups are *pinned*, i.e. when the page is scrolled, they do not mov
 
 If the popup content will vary and stacking is likely to occur, it is a good idea to define explicit dimensions, so that the popups are aligned and look better when stacked next to one another.
 
-### Example - position, stacking and size configuration
+### Example - manage position, stacking and size
 
     <span id="notification"></span>
 	
@@ -115,10 +115,14 @@ If the popup content will vary and stacking is likely to occur, it is a good ide
 	});
 	</script>
 
-In addition to popups, the **Notification** widget can also display "static" notifications, which do not overlay other elements, but instead take part in the so-called *normal flow* of the page content. In this case
-positioning settings do not make sense and are ignored. Stacking can be downwards (by default) or upwards. Static notifications are displayed, if a target container is specified.
+There may be cases when the popup notifications appear too quickly or become too much on the screen and there is no more available space. In this case the subsequent popups will appear outside of the visible
+viewport area and will be inaccessible (if pinned). If such scenarios are likely to occur, it is recommended to consider using shorter hide delay or static notifications (see below), for better usability.
 
-### Example - static configuration
+The **Notification** widget can also display "static" notifications, which do not overlay other elements, but instead take part in the so-called *normal flow* of the page content. In this case
+positioning settings do not make sense and are ignored. Stacking can be downwards (by default) or upwards. Static notifications are displayed, if a target container is specified.
+One widget instance can display either popup or static notifications, not both at the same time.
+
+### Example - enable static notifications
 
     <div id="notification"></div>
 	
@@ -133,12 +137,6 @@ positioning settings do not make sense and are ignored. Stacking can be downward
 	});
 	</script>
 
-A given **Notification** instance can display either popup or static notifications, not both at the same time. The positioning and stacking settings are also assumed to remain unchanged after widget initialization.
-If any of these must be changed on the fly, the `setOptions` method must be used, which all Kendo UI widgets have.
-
-There may be cases when the popup notifications appear too quickly or become too much on the screen and there is no available space for more. In this case the subsequent popups will appear outside of the visible
-viewport area and will be inaccessible (if pinned). If such scenarios are likely to occur, it is recommended to consider using shorter hide delay or static notifications, for better usability.
-
 ## Templates
 
 *This documentation section assumes that you are familiar with [Kendo UI templates](/kendo-ui/getting-started/framework/templates/overview)*.
@@ -147,7 +145,7 @@ The **Notification** widget allows configuring multiple templates. Each template
 If you define a custom template for a built-in notification type, you will no longer be able to benefit from the corresponding built-in template,
 but you will still be able to use the shorthand show methods, as demonstrated below.
 
-### Example - using templates
+### Example - template usage
 
     <span id="notification"></span>
 	

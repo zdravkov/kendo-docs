@@ -39,7 +39,7 @@ Defines custom show and hide animations via an Kendo UI Animation object. Settin
 	});
 	</script>
 
-### appendTo `String|jQuery|Element` *(default: null)*
+### appendTo `String|Element|jQuery` *(default: null)*
 
 Defines the element to which the notifications will be appended or prepended (depending on the [stacking](#configuration-stacking) direction).
 
@@ -53,16 +53,6 @@ Defines the element to which the notifications will be appended or prepended (de
 	});
 	</script>
 
-#### Example - set appendTo as a jQuery object
-
-	<div id="notification"></div>
-	<script>
-    var element = $("#notification");
-	element.kendoNotification({
-		appendTo: element
-	});
-	</script>
-
 #### Example - set appendTo as a DOM element
 
 	<span id="notification"></span>
@@ -71,6 +61,16 @@ Defines the element to which the notifications will be appended or prepended (de
     var container = document.getElementById("container");
 	$("#notification").kendoNotification({
 		appendTo: container
+	});
+	</script>
+
+#### Example - set appendTo as a jQuery object
+
+	<div id="notification"></div>
+	<script>
+    var element = $("#notification");
+	element.kendoNotification({
+		appendTo: element
 	});
 	</script>
 
@@ -150,7 +150,7 @@ Determines whether notifications can be hidden by clicking anywhere on their con
 It determines the position of the first notification on the screen, as well as whether the notifications will move together with the page content during scrolling.
 `top` takes precedence over `bottom` and `left` takes precedence over `right`.
 
-#### Example - default position settings
+#### Default position settings
 
 	<span id="notification"></span>
 	<script>
