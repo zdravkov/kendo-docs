@@ -153,7 +153,7 @@ For example, if 5 items are visible on the page, at least 15 physical DOM elemen
 
 Once the listview reaches the amount of items specified by the [schema.total](/kendo-ui/api/framework/datasource#configuration-schema.total) setting of the datasource, the loadmore button/endless scrolling indicator is hidden.
 
-> Currently, endless scrolling or press to load more configuration options are not supported in grouped mode.
+> Currently, certain features (**grouped mode** and **inset styling**) are **not supported** in virtual mode.
 
 ## Link Items
 
