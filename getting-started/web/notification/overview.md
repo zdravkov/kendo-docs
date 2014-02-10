@@ -183,6 +183,30 @@ but you will still be able to use the shorthand show methods, as demonstrated be
 	});
 	</script>
 
+## HTML output
+
+Each notification is rendered inside the following wrapper element:
+
+    <div class="k-widget k-notification k-notification-TYPE" data-role="popup">
+        <!-- ... default or custom template content ... -->
+    </div>
+
+`TYPE` denotes the notification type (either a built-in or a custom one), for example `k-notification-info` or `k-notification-success`, etc.
+
+When the widget displays popups, the above `div.k-notification` is nested inside an absolutely positioned `div.k-animation-container`, which is an element that wraps all Kendo UI popups.
+
+When the widget displays static notifications, the above `div.k-notification` is nested inside the element 
+
+When the widget displays static notifications, the above `div.k-notification` is a child of the element specified by the widget's [`appendTo`](#configuration-appendTo) setting.
+    
+The default template of the **Notification** widget is shown below. This markup is rendered inside the `div.k-nitification` element.
+
+    <div class="k-notification-wrap">
+        <span class="k-icon k-i-note">#=typeIcon#</span>
+            #=content#
+        <span class="k-icon k-i-close">Hide</span>
+    </div>
+
 ## Events
 
 The **Notification** widgets exposes two events - `show` and `hide`. The `show` event is fired when the showing animation starts. The `hide` event is fired when the hiding animation starts.

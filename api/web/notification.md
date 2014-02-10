@@ -374,6 +374,28 @@ Defines the notifications' width. Numbers are treated as pixels.
 
 This is a shorthand method for [`show(data, "error")`](#methods-show)
 
+### getNotifications
+
+Returns a jQuery collection of all visible notifications, displayed by the given widget instance. Each item in the collection is a `div.k-notification` element.
+
+#### Example
+
+	<span id="notification"></span>
+	<script>
+	var notificationWidget = $("#notification").kendoNotification({
+        button: false,
+        hideOnClick: false,
+        autoHideAfter: 0
+    }).data("kendoNotification");
+    
+    notificationWidget.show("foo");
+    notificationWidget.show("bar");
+    
+    // since there is no way for the user to hide notifications,
+    // the following expression will return two elements, no matter when it is executed
+    var elements = notificationWidget.getNotifications();
+	</script>
+
 ### hide
 
 Hides all notifications from the given widget instance.
