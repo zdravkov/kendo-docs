@@ -42,7 +42,7 @@ This is typical on the web today, and has been for some time. We bind the button
 
 But MVVM makes all of this not only easier, but more maintainable.
 
-### Developing With MMVM
+### Developing With MVVM
 
 To starting using the MVVM pattern, we need to create a **view model.** A view model is an observable object. This object has properties and methods. Each property will be bound to something in the HTML. In MVVM, this binding is two way, meaning that if the binding changes on the UI, the model changes, and vice versa.
 
