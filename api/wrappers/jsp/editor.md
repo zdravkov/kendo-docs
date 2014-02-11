@@ -65,6 +65,18 @@ More documentation is available at [kendo:editor-imageBrowser](/kendo-ui/api/wra
         <kendo:editor-imageBrowser></kendo:editor-imageBrowser>
     </kendo:editor>
 
+### kendo:editor-serialization
+
+Allows setting of serialization options.
+
+More documentation is available at [kendo:editor-serialization](/kendo-ui/api/wrappers/jsp/editor/serialization).
+
+#### Example
+
+    <kendo:editor>
+        <kendo:editor-serialization></kendo:editor-serialization>
+    </kendo:editor>
+
 ### kendo:editor-tools
 
 A collection of tools that are used to interact with the Editor.

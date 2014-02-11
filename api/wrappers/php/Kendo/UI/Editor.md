@@ -341,6 +341,35 @@ For additional information check the [select](/kendo-ui/api/web/editor#events-se
     $editor->select(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### serialization
+
+Allows setting of serialization options.
+
+#### Returns
+`\Kendo\UI\Editor`
+
+#### Parameters
+
+##### $value `\Kendo\UI\EditorSerialization|array`
+
+
+#### Example - using [\Kendo\UI\EditorSerialization](/kendo-ui/api/wrappers/php/Kendo/UI/EditorSerialization)
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $serialization = new \Kendo\UI\EditorSerialization();
+    $entities = true;
+    $serialization->entities($entities);
+    $editor->serialization($serialization);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $entities = true;
+    $editor->serialization(array('entities' => $entities));
+    ?>
+
 ### startContent
 
 Starts output bufferring. Any following markup will be set as the content of the Editor.
