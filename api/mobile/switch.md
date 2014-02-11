@@ -156,6 +156,35 @@ Whether to enable or disable the widget.
         }
     </script>
 
+### refresh
+
+Forces the Switch to recalculate its dimensions. Useful when major changes in the interface happen dynamically, like for instance changing the skin.
+
+#### Example
+
+    <div id="foo" data-role="view">
+      <input id="switch" type="checkbox" data-role="switch" />
+      <a data-role="button" data-click="changeSkin">Flat</a>
+    </div>
+
+    <script>
+    var app = new kendo.mobile.Application();
+
+    changeSkin = function (e) {
+        if (e.sender.element.text() === "Flat") {
+            e.sender.element.text("Native");
+            mobileSkin = "flat";
+        } else {
+            e.sender.element.text("Flat");
+            mobileSkin = "";
+        }
+
+        app.application.skin(mobileSkin);
+
+        $("#switch").data("kendoMobileSwitch").refresh();
+    };
+    </script>
+
 ### toggle
 
 Toggle the checked state of the widget.
