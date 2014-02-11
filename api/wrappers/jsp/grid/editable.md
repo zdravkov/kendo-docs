@@ -34,9 +34,9 @@ If the grid is in mobile mode this text will be used for the confirm button.
     <kendo:grid-editable confirmDelete="confirmDelete">
     </kendo:grid-editable>
 
-### confirmation `java.lang.Object`
+### confirmation `boolean`
 
-If set to true the grid will display a confirmation dialog when the user clicks the "destroy" command button.Can be set to a string which will be used as the confirmation text.
+If set to true the grid will display a confirmation dialog when the user clicks the "destroy" command button.Can be set to a string which will be used as the confirmation text.Can be set to a function which will be called, passing the model instance, to return the confirmation text.
 
 #### Example
     <kendo:grid-editable confirmation="confirmation">
@@ -94,6 +94,20 @@ Configures the Kendo UI Window instance, which is used when the Grid edit mode i
 
 ## Event Attributes
 
+### confirmation `String`
+
+If set to true the grid will display a confirmation dialog when the user clicks the "destroy" command button.Can be set to a string which will be used as the confirmation text.Can be set to a function which will be called, passing the model instance, to return the confirmation text.
+
+
+#### Example
+    <kendo:grid-editable confirmation="handle_confirmation">
+    </kendo:grid-editable>
+    <script>
+        function handle_confirmation(e) {
+            // Code to handle the confirmation event.
+        }
+    </script>
+
 ### template `String`
 
 The template which renders popup editor.The template should contain elements whose name HTML attributes are set as the editable fields. This is how the grid will know
@@ -110,6 +124,22 @@ which field to update. The other option is to use MVVM bindings in order to bind
     </script>
 
 ## Event Tags
+
+### kendo:grid-editable-confirmation
+
+If set to true the grid will display a confirmation dialog when the user clicks the "destroy" command button.Can be set to a string which will be used as the confirmation text.Can be set to a function which will be called, passing the model instance, to return the confirmation text.
+
+
+#### Example
+    <kendo:grid-editable>
+        <kendo:grid-editable-confirmation>
+            <script>
+                function(e) {
+                    // Code to handle the confirmation event.
+                }
+            </script>
+        </kendo:grid-editable-confirmation>
+    </kendo:grid-editable>
 
 ### kendo:grid-editable-template
 
