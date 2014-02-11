@@ -87,6 +87,27 @@ Defines the text of the labels that are shown within the editor. Used primarily 
     });
     </script>
 
+### serialization `Object`
+
+Allows setting of serialization options.
+
+### serialization.entities `Boolean` *(default: true)*
+
+Indicates whether the characters outside the ASCII range will be encoded as HTML entities. By default, they are encoded.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      value: "The character ä is an umlaut",
+      serialization: {
+        entities: true
+      }
+    });
+    console.log($("#editor").data("kendoEditor").value()); // logs "The character &auml; is an umlaut"
+    </script>
+
 ### stylesheets `Array`
 
 Allows custom stylesheets to be included within the editing area.
