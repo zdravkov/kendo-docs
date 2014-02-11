@@ -1368,11 +1368,13 @@ Can be set to a JavaScript object which represents the editing configuration.
 
 > Check [Batch editing](http://demos.telerik.com/kendo-ui/web/grid/editing.html), [Inline editing](http://demos.telerik.com/kendo-ui/web/grid/editing-inline.html) and [Popup editing](http://demos.telerik.com/kendo-ui/web/grid/editing-popup.html) for live demos.
 
-### editable.confirmation `Boolean|String` *(default: true)*
+### editable.confirmation `Boolean|String|Function` *(default: true)*
 
 If set to `true` the grid will display a confirmation dialog when the user clicks the "destroy" command button.
 
 Can be set to a string which will be used as the confirmation text.
+
+Can be set to a function which will be called, passing the model instance, to return the confirmation text.
 
 #### Example - disable delete confirmation
     <div id="grid"></div>
@@ -1411,6 +1413,27 @@ Can be set to a string which will be used as the confirmation text.
        }
     });
     </script>
+
+#### Example - set delete confirmation as function
+   <div id="grid"></div>
+   <script>
+     $("#grid").kendoGrid({
+       columns: [
+         { field: "name" },
+         { field: "age" },
+         { command: "destroy" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ],
+       editable: {
+         confirmation: function(e) {
+           return "Are you sure that you want to delete the record for " + e.name + "?";
+         }
+       }
+     });
+   </script>
 
 ### editable.cancelDelete `String` *(default: "Cancel")*
 
@@ -3842,7 +3865,7 @@ This class can be used to obtain reference to the button after Grid initializati
       },
       editable: true
     });
-    
+
     $(".k-grid-custom").click(function(e){
         // handler body
     });
