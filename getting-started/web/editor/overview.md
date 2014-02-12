@@ -77,3 +77,16 @@ If the `textarea` has width and height applied via external CSS styles, a simila
 
 Textarea `cols` and `rows` attributes are required and they also can incluence the dimensions of a `textarea` element, however, these attributes are not applied in a consistent manner by browsers,
 so the Editor ignores them when determining its size.
+
+## Making the Editor readonly
+
+The Editor can be made temporarily readonly by using the following approach:
+
+    var editor = $("#editor").data("kendoEditor"),
+        editorBody = $(editor.body);
+     
+    // make readonly
+    editorBody.add("td", editorBody).removeAttr("contenteditable");
+     
+    // make editable
+    editorBody.add("td", editorBody).attr("contenteditable", true);
