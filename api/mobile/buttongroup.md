@@ -211,3 +211,9 @@ Fires when a Button is selected.
       console.log(index);
     }
     </script>
+
+#### Event Data
+
+##### e.index `Number`
+
+The index of the selected button
