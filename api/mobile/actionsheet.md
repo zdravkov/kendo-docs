@@ -104,6 +104,24 @@ The popup configuration options (tablet only).
     var app = new kendo.mobile.Application();
     </script>
 
+### type `String`*(default: auto)*
+
+By default, the actionsheet opens as a full screen dialog on a phone device or as a popover if a tablet is detected. Setting the type to `"phone"` or `"tablet"` will force the looks of the widget regardless of the device.
+
+#### Example
+
+    <div data-role="view">
+      <a data-role="button" data-rel="actionsheet" href="#actionsheet">Open</a>
+      <ul id="actionsheet" data-role="actionsheet" data-type="tablet">
+        <li><a>Foo</a></li>
+        <li><a>Bar</a></li>
+      </ul>
+    </div>
+
+    <script>
+    var app = new kendo.mobile.Application();
+    </script>
+
 ## Methods
 
 ### close
