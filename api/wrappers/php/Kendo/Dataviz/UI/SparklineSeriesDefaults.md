@@ -183,21 +183,41 @@ Space between bars.
     ?>
 
 ### stack
-A value indicating if the series should be stacked.
+
+A boolean value indicating if the series should be stacked.
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesDefaults`
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\Dataviz\UI\SparklineSeriesDefaultsStack|array`
 
 
 
-#### Example 
+
+#### Example  - using boolean
     <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\SparklineSeriesDefaults();
     $seriesDefaults->stack(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesDefaultsStack](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesDefaultsStack)
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\SparklineSeriesDefaults();
+    $stack = new \Kendo\Dataviz\UI\SparklineSeriesDefaultsStack();
+    $type = 'value';
+    $stack->type($type);
+    $seriesDefaults->stack($stack);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\SparklineSeriesDefaults();
+    $type = 'value';
+    $seriesDefaults->stack(array('type' => $type));
     ?>
 
 ### tooltip

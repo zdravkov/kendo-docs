@@ -1965,10 +1965,27 @@ Space between points as proportion of the point width.
 
 Available for column, candlestick and ohlc series.
 
-### navigator.series.stack `Boolean|Boolean`*(default: false)*
+### navigator.series.stack `Boolean|String|Object` *(default: false)*
 
-A value indicating if the series should be stacked.  String value indicates that the series should be stacked in a group with the specified name.
-Available for column series.
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as [navigator.series.stack.group](#configuration-series.stack.group).
+
+> The `stack` options is supported when [navigator.series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine", "verticalArea", "radarLine", "radarArea" and "radarColumn".
+
+> Stack settings of the first series are applied to the rest of the series.
+
+### navigator.series.stack.type `String` *(default: "normal")*
+
+The type of stack to plot. The following types are supported:
+
+* "normal" - the value of the stack is the sum of all points in the category (or group)
+* "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
+
+### navigator.series.stack.group `String`
+
+Indicates that the series should be stacked in a group with the specified name.
+
+> The `group` option is supported when [navigator.series.type](#configuration-series.type) is set to "bar" or "column".
 
 ### navigator.series.tooltip `Object`
 
@@ -5712,10 +5729,27 @@ Space between points as proportion of the point width.
 
 Available for column, candlestick and ohlc series.
 
-### series.stack `Boolean|String`*(default: false)*
+### series.stack `Boolean|String|Object` *(default: false)*
 
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
-Available for column series.
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as [series.stack.group](#configuration-series.stack.group).
+
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine", "verticalArea", "radarLine", "radarArea" and "radarColumn".
+
+> Stack settings of the first series are applied to the rest of the series.
+
+### series.stack.type `String` *(default: "normal")*
+
+The type of stack to plot. The following types are supported:
+
+* "normal" - the value of the stack is the sum of all points in the category (or group)
+* "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
+
+### series.stack.group `String`
+
+Indicates that the series should be stacked in a group with the specified name.
+
+> The `group` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
 
 ### series.tooltip `Object`
 
@@ -6806,9 +6840,18 @@ The default options for all pie series. For more details see the series options.
 
  Space between bars.
 
-### seriesDefaults.stack `Boolean`*(default: false)*
+### seriesDefaults.stack `Boolean|Object` *(default: false)*
 
-A value indicating if the series should be stacked.
+A boolean value indicating if the series should be stacked.
+
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine", "verticalArea", "radarLine", "radarArea" and "radarColumn".
+
+### seriesDefaults.stack.type `String` *(default: "normal")*
+
+The type of stack to plot. The following types are supported:
+
+* "normal" - the value of the stack is the sum of all points in the category (or group)
+* "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
 
 ### seriesDefaults.tooltip `Object`
 

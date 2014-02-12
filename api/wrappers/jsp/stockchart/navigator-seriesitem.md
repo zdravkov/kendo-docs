@@ -179,8 +179,8 @@ Space between points as proportion of the point width.Available for column, cand
 
 ### stack `java.lang.Object`
 
-A value indicating if the series should be stacked.  String value indicates that the series should be stacked in a group with the specified name.
-Available for column series.
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as navigator.series.stack.group. Further configuration is available via [kendo:stockChart-navigator-seriesItem-stack](#kendo-stockChart-navigator-seriesItem-stack). 
 
 #### Example
     <kendo:stockChart-navigator-seriesItem stack="stack">
@@ -283,6 +283,19 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-overla
 
     <kendo:stockChart-navigator-seriesItem>
         <kendo:stockChart-navigator-seriesItem-overlay></kendo:stockChart-navigator-seriesItem-overlay>
+    </kendo:stockChart-navigator-seriesItem>
+
+### kendo:stockChart-navigator-seriesItem-stack
+
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as navigator.series.stack.group.
+
+More documentation is available at [kendo:stockChart-navigator-seriesItem-stack](/kendo-ui/api/wrappers/jsp/stockchart/navigator-seriesitem-stack).
+
+#### Example
+
+    <kendo:stockChart-navigator-seriesItem>
+        <kendo:stockChart-navigator-seriesItem-stack></kendo:stockChart-navigator-seriesItem-stack>
     </kendo:stockChart-navigator-seriesItem>
 
 ### kendo:stockChart-navigator-seriesItem-tooltip

@@ -2833,10 +2833,68 @@ Space between points as proportion of the point width.
 
 ** Available for bar and column series. **
 
-### series.stack `Boolean|String`*(default: false)*
+### series.stack `Boolean|String|Object` *(default: false)*
 
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
-** Available for bar and column series. **
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as [series.stack.group](#configuration-series.stack.group).
+
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine", "verticalArea", "radarLine", "radarArea" and "radarColumn".
+
+> Stack settings of the first series are applied to the rest of the series.
+
+#### Example - configure stack series
+
+    <span id="sparkline"></span>
+    <script>
+    $("#sparkline").kendoSparkline({
+      series: [
+        { stack: true, data: [ 1, 2 , 3] },
+        { data: [ 4, 5 , 6] }
+      ]
+    });
+    </script>
+
+### series.stack.type `String` *(default: "normal")*
+
+The type of stack to plot. The following types are supported:
+
+* "normal" - the value of the stack is the sum of all points in the category (or group)
+* "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
+
+#### Example - configure 100% stacked series
+
+    <span id="sparkline"></span>
+    <script>
+    $("#sparkline").kendoSparkline({
+      series: [
+        { stack: { type: "100%" }, data: [ 1, 2 ] },
+        { data: [ 10, 20 ] }
+      ]
+    });
+    </script>
+
+### series.stack.group `String`
+
+Indicates that the series should be stacked in a group with the specified name.
+
+> The `group` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
+
+#### Example - configure stack groups
+
+    <span id="sparkline"></span>
+    <script>
+    $("#sparkline").kendoSparkline({
+      seriesDefaults: {
+        type: "column"
+      },
+      series: [
+        { stack: { group: "a" }, data: [ 1, 2 ] },
+        { stack: { group: "a" }, data: [ 3, 4 ] },
+        { stack: { group: "b" }, data: [ -1, -2 ] },
+        { stack: { group: "b" }, data: [ -3, -4 ] }
+      ]
+    });
+    </script>
 
 ### series.tooltip `Object`
 
@@ -3817,9 +3875,48 @@ The default options for all pie series. For more details see the series options.
 
  Space between bars.
 
-### seriesDefaults.stack `Boolean`*(default: false)*
+### seriesDefaults.stack `Boolean|Object` *(default: false)*
 
-A value indicating if the series should be stacked.
+A boolean value indicating if the series should be stacked.
+
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine", "verticalArea", "radarLine", "radarArea" and "radarColumn".
+
+#### Example - configure stack series
+
+    <span id="sparkline"></span>
+    <script>
+    $("#sparkline").kendoSparkline({
+      seriesDefaults: {
+        stack: true
+      },
+      series: [
+        { data: [ 1, 2 , 3] },
+        { data: [ 4, 5 , 6] }
+      ]
+    });
+    </script>
+
+### seriesDefaults.stack.type `String` *(default: "normal")*
+
+The type of stack to plot. The following types are supported:
+
+* "normal" - the value of the stack is the sum of all points in the category (or group)
+* "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
+
+#### Example - configure 100% stacked series
+
+    <span id="sparkline"></span>
+    <script>
+    $("#sparkline").kendoSparkline({
+      seriesDefaults: {
+        stack: { type: "100%" }
+      },
+      series: [
+        { data: [ 1, 2 ] },
+        { data: [ 10, 20 ] }
+      ]
+    });
+    </script>
 
 ### seriesDefaults.tooltip `Object`
 

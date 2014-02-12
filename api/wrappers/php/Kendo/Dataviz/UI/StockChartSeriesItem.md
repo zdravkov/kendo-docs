@@ -616,15 +616,17 @@ Space between points as proportion of the point width.Available for column, cand
     ?>
 
 ### stack
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
-Available for column series.
+
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartSeriesItem`
 
 #### Parameters
 
-##### $value `boolean|string`
+##### $value `boolean|string|\Kendo\Dataviz\UI\StockChartSeriesItemStack|array`
+
 
 
 
@@ -638,6 +640,24 @@ Available for column series.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
     $seriesItem->stack('value');
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemStack](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemStack)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $stack = new \Kendo\Dataviz\UI\StockChartSeriesItemStack();
+    $group = 'value';
+    $stack->group($group);
+    $seriesItem->stack($stack);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+    $group = 'value';
+    $seriesItem->stack(array('group' => $group));
     ?>
 
 ### style

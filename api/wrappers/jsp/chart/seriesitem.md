@@ -365,7 +365,8 @@ The space between the chart series as proportion of the series width.
 
 ### stack `java.lang.Object`
 
-A value indicating if the series should be stacked.String value indicates that the series should be stacked in a group with the specified name.
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group. Further configuration is available via [kendo:chart-seriesItem-stack](#kendo-chart-seriesItem-stack). 
 
 #### Example
     <kendo:chart-seriesItem stack="stack">
@@ -657,6 +658,19 @@ More documentation is available at [kendo:chart-seriesItem-overlay](/kendo-ui/ap
 
     <kendo:chart-seriesItem>
         <kendo:chart-seriesItem-overlay></kendo:chart-seriesItem-overlay>
+    </kendo:chart-seriesItem>
+
+### kendo:chart-seriesItem-stack
+
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group.
+
+More documentation is available at [kendo:chart-seriesItem-stack](/kendo-ui/api/wrappers/jsp/chart/seriesitem-stack).
+
+#### Example
+
+    <kendo:chart-seriesItem>
+        <kendo:chart-seriesItem-stack></kendo:chart-seriesItem-stack>
     </kendo:chart-seriesItem>
 
 ### kendo:chart-seriesItem-target
