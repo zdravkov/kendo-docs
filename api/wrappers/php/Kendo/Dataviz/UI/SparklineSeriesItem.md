@@ -586,15 +586,17 @@ Space between points as proportion of the point width.** Available for bar and c
     ?>
 
 ### stack
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
-** Available for bar and column series. **
+
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group.
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItem`
 
 #### Parameters
 
-##### $value `boolean|string`
+##### $value `boolean|string|\Kendo\Dataviz\UI\SparklineSeriesItemStack|array`
+
 
 
 
@@ -608,6 +610,24 @@ A value indicating if the series should be stacked. String value indicates that 
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
     $seriesItem->stack('value');
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemStack](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemStack)
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $stack = new \Kendo\Dataviz\UI\SparklineSeriesItemStack();
+    $group = 'value';
+    $stack->group($group);
+    $seriesItem->stack($stack);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\SparklineSeriesItem();
+    $group = 'value';
+    $seriesItem->stack(array('group' => $group));
     ?>
 
 ### startAngle

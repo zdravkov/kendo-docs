@@ -297,21 +297,41 @@ The space between the chart series as proportion of the series width.
     ?>
 
 ### stack
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
+
+A boolean value indicating if the series should be stacked.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesDefaults`
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\Dataviz\UI\ChartSeriesDefaultsStack|array`
 
 
 
-#### Example 
+
+#### Example  - using boolean
     <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
     $seriesDefaults->stack(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesDefaultsStack](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesDefaultsStack)
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
+    $stack = new \Kendo\Dataviz\UI\ChartSeriesDefaultsStack();
+    $type = 'value';
+    $stack->type($type);
+    $seriesDefaults->stack($stack);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
+    $type = 'value';
+    $seriesDefaults->stack(array('type' => $type));
     ?>
 
 ### tooltip

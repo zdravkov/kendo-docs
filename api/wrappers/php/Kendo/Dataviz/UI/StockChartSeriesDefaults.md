@@ -197,21 +197,41 @@ Space between bars.
     ?>
 
 ### stack
-A value indicating if the series should be stacked.
+
+A boolean value indicating if the series should be stacked.
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartSeriesDefaults`
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\Dataviz\UI\StockChartSeriesDefaultsStack|array`
 
 
 
-#### Example 
+
+#### Example  - using boolean
     <?php
     $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
     $seriesDefaults->stack(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesDefaultsStack](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesDefaultsStack)
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
+    $stack = new \Kendo\Dataviz\UI\StockChartSeriesDefaultsStack();
+    $type = 'value';
+    $stack->type($type);
+    $seriesDefaults->stack($stack);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
+    $type = 'value';
+    $seriesDefaults->stack(array('type' => $type));
     ?>
 
 ### tooltip
