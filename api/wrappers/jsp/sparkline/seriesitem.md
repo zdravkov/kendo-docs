@@ -173,8 +173,8 @@ Space between points as proportion of the point width.** Available for bar and c
 
 ### stack `java.lang.Object`
 
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
-** Available for bar and column series. **
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group. Further configuration is available via [kendo:sparkline-seriesItem-stack](#kendo-sparkline-seriesItem-stack). 
 
 #### Example
     <kendo:sparkline-seriesItem stack="stack">
@@ -317,6 +317,19 @@ More documentation is available at [kendo:sparkline-seriesItem-overlay](/kendo-u
 
     <kendo:sparkline-seriesItem>
         <kendo:sparkline-seriesItem-overlay></kendo:sparkline-seriesItem-overlay>
+    </kendo:sparkline-seriesItem>
+
+### kendo:sparkline-seriesItem-stack
+
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group.
+
+More documentation is available at [kendo:sparkline-seriesItem-stack](/kendo-ui/api/wrappers/jsp/sparkline/seriesitem-stack).
+
+#### Example
+
+    <kendo:sparkline-seriesItem>
+        <kendo:sparkline-seriesItem-stack></kendo:sparkline-seriesItem-stack>
     </kendo:sparkline-seriesItem>
 
 ### kendo:sparkline-seriesItem-target

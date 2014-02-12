@@ -86,7 +86,7 @@ Space between bars.
 
 ### stack `boolean`
 
-A value indicating if the series should be stacked.
+A boolean value indicating if the series should be stacked. Further configuration is available via [kendo:sparkline-seriesDefaults-stack](#kendo-sparkline-seriesDefaults-stack). 
 
 #### Example
     <kendo:sparkline-seriesDefaults stack="stack">
@@ -117,6 +117,18 @@ More documentation is available at [kendo:sparkline-seriesDefaults-labels](/kend
 
     <kendo:sparkline-seriesDefaults>
         <kendo:sparkline-seriesDefaults-labels></kendo:sparkline-seriesDefaults-labels>
+    </kendo:sparkline-seriesDefaults>
+
+### kendo:sparkline-seriesDefaults-stack
+
+A boolean value indicating if the series should be stacked.
+
+More documentation is available at [kendo:sparkline-seriesDefaults-stack](/kendo-ui/api/wrappers/jsp/sparkline/seriesdefaults-stack).
+
+#### Example
+
+    <kendo:sparkline-seriesDefaults>
+        <kendo:sparkline-seriesDefaults-stack></kendo:sparkline-seriesDefaults-stack>
     </kendo:sparkline-seriesDefaults>
 
 ### kendo:sparkline-seriesDefaults-tooltip

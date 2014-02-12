@@ -196,8 +196,8 @@ Space between points as proportion of the point width.Available for column, cand
 
 ### stack `java.lang.Object`
 
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
-Available for column series.
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group. Further configuration is available via [kendo:stockChart-seriesItem-stack](#kendo-stockChart-seriesItem-stack). 
 
 #### Example
     <kendo:stockChart-seriesItem stack="stack">
@@ -328,6 +328,19 @@ More documentation is available at [kendo:stockChart-seriesItem-overlay](/kendo-
 
     <kendo:stockChart-seriesItem>
         <kendo:stockChart-seriesItem-overlay></kendo:stockChart-seriesItem-overlay>
+    </kendo:stockChart-seriesItem>
+
+### kendo:stockChart-seriesItem-stack
+
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as series.stack.group.
+
+More documentation is available at [kendo:stockChart-seriesItem-stack](/kendo-ui/api/wrappers/jsp/stockchart/seriesitem-stack).
+
+#### Example
+
+    <kendo:stockChart-seriesItem>
+        <kendo:stockChart-seriesItem-stack></kendo:stockChart-seriesItem-stack>
     </kendo:stockChart-seriesItem>
 
 ### kendo:stockChart-seriesItem-target
