@@ -9844,7 +9844,7 @@ The position of the labels.
 * "insideBase" - the label is positioned inside, near the base of the bar. ** Applicable for bar and column series. **
 * "insideEnd" - the label is positioned inside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. **
 * "left" - the label is positioned to the left of the marker. ** Applicable for series that render points, incl. bubble. **
-* "outsideEnd" - the label is positioned outside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. Not applicable for stacke
+* "outsideEnd" - the label is positioned outside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. Not applicable for stacked series.
 * "right" - the label is positioned to the right of the marker. ** Applicable for series that render points, incl. bubble. **
 * "top" - the label is positioned at the top of the segment. ** Applicable for funnel series **
 * "bottom" - the label is positioned at the bottom of the segment. ** Applicable for funnel series **
@@ -11151,17 +11151,16 @@ The space between the chart series as proportion of the series width.
     });
     </script>
 
-### series.stack `Boolean|String` *(default: false)*
+### series.stack `Boolean|String|Object` *(default: false)*
 
-A value indicating if the series should be stacked.
+A boolean value indicating if the series should be stacked.
+A string value is interpreted as [series.stack.group](#configuration-series.stack.group).
 
-> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine" and "verticalArea".
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine", "verticalArea", "radarLine", "radarArea" and "radarColumn".
 
-String value indicates that the series should be stacked in a group with the specified name.
+> Stack settings of the first series are applied to the rest of the series.
 
-> The named `stack` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
-
-#### Example - enable chart series stacking
+#### Example - configure stack series
 
     <div id="chart"></div>
     <script>
@@ -11169,6 +11168,45 @@ String value indicates that the series should be stacked in a group with the spe
       series: [
         { stack: true, data: [ 1, 2 , 3] },
         { data: [ 4, 5 , 6] }
+      ]
+    });
+    </script>
+
+### series.stack.type `String` *(default: "normal")*
+
+The type of stack to plot. The following types are supported:
+
+* "normal" - the value of the stack is the sum of all points in the category (or group)
+* "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
+
+#### Example - configure 100% stacked series
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        { stack: { type: "100%" }, data: [ 1, 2 ] },
+        { data: [ 10, 20 ] }
+      ]
+    });
+    </script>
+
+### series.stack.group `String`
+
+Indicates that the series should be stacked in a group with the specified name.
+
+> The `group` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
+
+#### Example - configure stack groups
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        { stack: { group: "a" }, data: [ 1, 2 ] },
+        { stack: { group: "a" }, data: [ 3, 4 ] },
+        { stack: { group: "b" }, data: [ -1, -2 ] },
+        { stack: { group: "b" }, data: [ -3, -4 ] }
       ]
     });
     </script>
@@ -13524,17 +13562,13 @@ The space between the chart series as proportion of the series width.
     });
     </script>
 
-### seriesDefaults.stack `Boolean` *(default: false)*
+### seriesDefaults.stack `Boolean|Object` *(default: false)*
 
-A value indicating if the series should be stacked.
+A boolean value indicating if the series should be stacked.
 
-> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine" and "verticalArea".
+> The `stack` options is supported when [series.type](#configuration-series.type) is set to "bar", "column", "line", "area", "verticalLine", "verticalArea", "radarLine", "radarArea" and "radarColumn".
 
-String value indicates that the series should be stacked in a group with the specified name.
-
-> The named `stack` option is supported when [series.type](#configuration-series.type) is set to "bar" or "column".
-
-#### Example - enable chart series stacking
+#### Example - configure stack series
 
     <div id="chart"></div>
     <script>
@@ -13545,6 +13579,28 @@ String value indicates that the series should be stacked in a group with the spe
       series: [
         { data: [ 1, 2 , 3] },
         { data: [ 4, 5 , 6] }
+      ]
+    });
+    </script>
+
+### seriesDefaults.stack.type `String` *(default: "normal")*
+
+The type of stack to plot. The following types are supported:
+
+* "normal" - the value of the stack is the sum of all points in the category (or group)
+* "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
+
+#### Example - configure 100% stacked series
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      seriesDefaults: {
+        stack: { type: "100%" }
+      },
+      series: [
+        { data: [ 1, 2 ] },
+        { data: [ 10, 20 ] }
       ]
     });
     </script>
