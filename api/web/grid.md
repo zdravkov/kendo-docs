@@ -720,6 +720,27 @@ If set to `true` the column will not be displayed in the grid. By default all co
     });
     </script>
 
+### columns.locked `Boolean` *(default: false)*
+
+If set to `true` the column will be displayed as locked in the grid.
+
+> Locking feature is supported only when scrolling is enabled. All of the columns should have width set,
+having at least one non locked column with width greater than twice the scrollbar width.
+> Row template and detail features are not supported in combination with column locking.
+
+#### Example - hide columns
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { locked: true, field: "id" },
+        { field: "name" }
+      ],
+      dataSource: [ { id: 1, name: "Jane Doe" }, { id: 2, name: "John Doe" } ]
+    });
+    </script>
+
+
 ### columns.sortable `Boolean|Object` *(default: true)*
 
 If set to `true` the user can click the column header and sort the grid by the column [field](#configuration-columns.field) when sorting is enabled. If set to `false` sorting will
