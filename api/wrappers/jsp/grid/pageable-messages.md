@@ -59,6 +59,14 @@ The tooltip of the button which goes to the last page.
     <kendo:grid-pageable-messages last="last">
     </kendo:grid-pageable-messages>
 
+### morePages `java.lang.String`
+
+The tooltip of the ellipsis ("...") button, which appears when the number of pages is greater than the buttonCount.
+
+#### Example
+    <kendo:grid-pageable-messages morePages="morePages">
+    </kendo:grid-pageable-messages>
+
 ### next `java.lang.String`
 
 The tooltip of the button which goes to the next page.

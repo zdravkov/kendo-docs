@@ -31,10 +31,7 @@ The supported aggregates are "average", "count", "max", "min" and "sum".
 HTML attributes of the table cell (<td>) rendered for the column.
 
 #### Example
-
-    <%@page import="java.util.HashMap"%>
-
-    <kendo:grid-column attributes="<%=new HashMap<String, String>() {{ put(\"style\", \"text-align:right;\");}} %>">
+    <kendo:grid-column attributes="attributes">
     </kendo:grid-column>
 
 ### command `java.lang.String`
@@ -138,6 +135,14 @@ If set to true the column will not be displayed in the grid. By default all colu
     <kendo:grid-column hidden="hidden">
     </kendo:grid-column>
 
+### locked `boolean`
+
+If set to true the column will be displayed as locked in the grid.
+
+#### Example
+    <kendo:grid-column locked="locked">
+    </kendo:grid-column>
+
 ### menu `boolean`
 
 If set to true the column will be visible in the grid column menu. By default the column menu includes all data-bound columns (ones that have their field set).
@@ -149,7 +154,7 @@ If set to true the column will be visible in the grid column menu. By default th
 ### sortable `boolean`
 
 If set to true the user can click the column header and sort the grid by the column field when sorting is enabled. If set to false sorting will
-be disabled for this column. By default all columns are sortable if sorting is enabled via the sortable option.
+be disabled for this column. By default all columns are sortable if sorting is enabled via the sortable option. Further configuration is available via [kendo:grid-column-sortable](#kendo-grid-column-sortable). 
 
 #### Example
     <kendo:grid-column sortable="sortable">
@@ -206,6 +211,19 @@ More documentation is available at [kendo:grid-column-filterable](/kendo-ui/api/
 
     <kendo:grid-column>
         <kendo:grid-column-filterable></kendo:grid-column-filterable>
+    </kendo:grid-column>
+
+### kendo:grid-column-sortable
+
+If set to true the user can click the column header and sort the grid by the column field when sorting is enabled. If set to false sorting will
+be disabled for this column. By default all columns are sortable if sorting is enabled via the sortable option.
+
+More documentation is available at [kendo:grid-column-sortable](/kendo-ui/api/wrappers/jsp/grid/column-sortable).
+
+#### Example
+
+    <kendo:grid-column>
+        <kendo:grid-column-sortable></kendo:grid-column-sortable>
     </kendo:grid-column>
 
 

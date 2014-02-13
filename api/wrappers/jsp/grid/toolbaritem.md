@@ -18,7 +18,8 @@ The list of commands displayed in the grid toolbar. Commands can be custom or bu
 
 ### name `java.lang.String`
 
-The name of the toolbar command. Either a built-in ("cancel", "create" and "save") or custom.
+The name of the toolbar command. Either a built-in ("cancel", "create" and "save") or custom. The name is reflected in one of the CSS classes, which is applied to the button - k-grid-name.
+This class can be used to obtain reference to the button after Grid initialization and attach click handlers.
 
 #### Example
     <kendo:grid-toolbarItem name="name">
