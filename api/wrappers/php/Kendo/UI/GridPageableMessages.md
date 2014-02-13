@@ -105,6 +105,24 @@ The tooltip of the button which goes to the last page.
     $messages->last('value');
     ?>
 
+### morePages
+The tooltip of the ellipsis ("...") button, which appears when the number of pages is greater than the buttonCount.
+
+#### Returns
+`\Kendo\UI\GridPageableMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridPageableMessages();
+    $messages->morePages('value');
+    ?>
+
 ### next
 The tooltip of the button which goes to the next page.
 

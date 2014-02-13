@@ -322,6 +322,24 @@ If set to true the column will not be displayed in the grid. By default all colu
     $column->hidden(true);
     ?>
 
+### locked
+If set to true the column will be displayed as locked in the grid.
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $column = new \Kendo\UI\GridColumn();
+    $column->locked(true);
+    ?>
+
 ### menu
 If set to true the column will be visible in the grid column menu. By default the column menu includes all data-bound columns (ones that have their field set).
 
@@ -341,6 +359,7 @@ If set to true the column will be visible in the grid column menu. By default th
     ?>
 
 ### sortable
+
 If set to true the user can click the column header and sort the grid by the column field when sorting is enabled. If set to false sorting will
 be disabled for this column. By default all columns are sortable if sorting is enabled via the sortable option.
 
@@ -349,14 +368,33 @@ be disabled for this column. By default all columns are sortable if sorting is e
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\UI\GridColumnSortable|array`
 
 
 
-#### Example 
+
+#### Example  - using boolean
     <?php
     $column = new \Kendo\UI\GridColumn();
     $column->sortable(true);
+    ?>
+
+
+#### Example - using [\Kendo\UI\GridColumnSortable](/kendo-ui/api/wrappers/php/Kendo/UI/GridColumnSortable)
+    <?php
+    $column = new \Kendo\UI\GridColumn();
+    $sortable = new \Kendo\UI\GridColumnSortable();
+    $compare = new \Kendo\JavaScriptFunction('function() { }');
+    $sortable->compare($compare);
+    $column->sortable($sortable);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $column = new \Kendo\UI\GridColumn();
+    $compare = new \Kendo\JavaScriptFunction('function() { }');
+    $column->sortable(array('compare' => $compare));
     ?>
 
 ### template

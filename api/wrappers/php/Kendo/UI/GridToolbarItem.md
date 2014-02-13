@@ -13,7 +13,8 @@ A PHP class representing the toolbarItem setting of GridToolbar.
 ## Methods
 
 ### name
-The name of the toolbar command. Either a built-in ("cancel", "create" and "save") or custom.
+The name of the toolbar command. Either a built-in ("cancel", "create" and "save") or custom. The name is reflected in one of the CSS classes, which is applied to the button - k-grid-name.
+This class can be used to obtain reference to the button after Grid initialization and attach click handlers.
 
 #### Returns
 `\Kendo\UI\GridToolbarItem`

@@ -72,6 +72,24 @@ If set to true the user can delete events from the view by clicking the "destroy
     $editable->destroy(true);
     ?>
 
+### move
+If set to true the scheduler allows event moving. Dragging the event changes the start and end time.
+
+#### Returns
+`\Kendo\UI\SchedulerEditable`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $editable = new \Kendo\UI\SchedulerEditable();
+    $editable->move(true);
+    ?>
+
 ### resize
 If set to true the scheduler allows event resizing. Dragging the resize handles changes the start or end time of the event.
 
