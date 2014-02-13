@@ -30,9 +30,9 @@ Constrains the hint movement to either the horizontal (x) or vertical (y) axis. 
          });
     </script>
 
-### container `jQuery`*(default: null)*
+### container `String`*(default: null)*
 
-If set, the hint movement is constrained to the container boundaries.
+Selector that determines the container to which boundaries the hint movement will be constrained.
 
 #### Example - initiate Sortable widget with hint movement constrains
 
@@ -58,7 +58,7 @@ If set, the hint movement is constrained to the container boundaries.
         }
     </style>
 
-### connectWith `jQuery`*(default: null)*
+### connectWith `String`*(default: null)*
 
 Selector which determines if items from the current Sortable widget can be accepted from another Sortable container(s). The connectWith option describes **one way** relationship, if the developer wants a two way connection then the connectWith option should be set on both widgets.
 
@@ -144,6 +144,14 @@ By default, the hint is initially positioned on top of the draggable source offs
         });
     </script>
 
+### cursorOffset.left `Number`
+
+The left offset of the hint element relative to the mouse cursor/finger.
+
+### cursorOffset.top `Number`
+
+The top offset of the hint element relative to the mouse cursor/finger.
+
 ### disabled `String`*(default: null)*
 
 Selector that determines which items are disabled. **Disabled items cannot be dragged but are valid sort targets**.
@@ -217,7 +225,7 @@ Selector that determines which element will be used as a draggable handler. If a
         }
     </style>
 
-### hint `Function | jQuery`
+### hint `Function | String | jQuery`
 
 Provides a way for customization of the sortable item hint. If a function is supplied, it receives one argument - the draggable element's jQuery object.
 If hint function is not provided the widget will clone dragged item and use it as a hint.
@@ -261,7 +269,7 @@ The item will also be activated by pressing, holding and lifting the finger with
         });
     </script>
 
-### placeholder `Function | jQuery`
+### placeholder `Function | String | jQuery`
 
 Provides a way for customization of the sortable item placeholder. If a function is supplied, it receives one argument - the draggable element's jQuery object.
 If placeholder function is not provided the widget will clone dragged item, remove its ID attribute, set its visibility to hidden and use it as a placeholder.
