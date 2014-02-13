@@ -283,7 +283,8 @@ The feature relies on calculating average row height, based on already loaded da
 In certain scenarios the Grid may be invisible when initialized - for example when placed inside an initially inactive TabStrip tab or in another widget. In such cases there are generally two options -
 initialize the Grid first, while its element is still visible, or initialize the Grid in a suitable event of the parent Widget (e.g. TabStrip `activate`).
 
-> Due to browser limitations, which cannot be avoided, **virtual scrolling works with up to a couple of million records** (depending on the browser). Using a larger row count than that can produce unexpected results.
+> Due to height-related browser limitations, which cannot be avoided, **virtual scrolling works with up to a couple of million records** (depending on the browser).
+Using a larger row count than that can produce unexpected behavior or Javascript errors. In such cases, revert to standard paging.
 
 #### Remove the vertical scrollbar
 
