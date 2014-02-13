@@ -52,18 +52,27 @@ If you have a way of fetching data that cannot be achieved through the default [
 Because the HierarchicalDataSource loads data on demand, loading all available data can result in multiple requests to the server. In order to prevent this, you can make a single AJAX request to get all the data, and then provide it to the datasource.
 
     <script>
-    var datasource = new kendo.data.HierarchicalDataSource();
+      var datasource = new kendo.data.HierarchicalDataSource({
+        transport: {
+          read: function(options) {
+            // asynchonous operation for getting data (e.g. $.ajax)
+            // then pass data in success or error handler
+            options.success([
+              { id: 1, Name: "Tea", items: [
+                { id: 2, Name: "Earl Gray" },
+                { id: 3, Name: "Oolong" }
+              ] }
+            ]);
+          }
+        },
+        schema: {
+          model: {
+            children: "items"
+          }
+        }
+      });
 
-    // asynchonous operation for getting data (e.g. $.ajax)
-    setTimeout(function() {
-      var data = [
-        { id: 1, Name: "Tea", items: [
-          { id: 2, Name: "Earl Gray" },
-          { id: 3, Name: "Oolong" }
-        ] }
-      ];
-
-      datasource.data(data);
+      datasource.read();
 
       var rootItems = datasource.data();
 
@@ -72,5 +81,5 @@ Because the HierarchicalDataSource loads data on demand, loading all available d
       rootItems[0].load(); // does not initiate AJAX request
 
       console.log(rootItems[0].children.data().length); // logs 2
-    }, 1000);
+
     </script>
