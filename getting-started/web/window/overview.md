@@ -138,10 +138,26 @@ should return a HTML fragment that can be loaded in a Window content area.
 
 ## Using iframes
 
-By default, the Window creates an `iframe` for its content if the content URL contains a protocol, i.e. it is assumed that it points to another domain.
-If the URL does not contain s protocol, the assumption is that this is a local URL that will load a partial view (not a full page), so an iframe is not created.
+The Window creates an `iframe` for its content if the content URL contains a protocol, i.e. it is assumed that in this case the nested page resides on another domain.
+If the URL does not contain s protocol, the assumption is that it is a local URL that will load a partial view (not a full page), so an iframe is not created.
 This behavior can be controlled explicitly via the widget configuration.
-	
+
+### Accessing the `window` and `document` objects inside the `iframe`
+
+In order to access content and script objects inside the Kendo UI Window `iframe`, the nested page must belong to the **same domain** as the main page.
+
+    <div id="window"></div>
+
+    var windowElement = $("#window").kendoWindow({
+        iframe: true,
+        content: "http://docs.telerik.com/kendo-ui/"
+    });
+
+    var iframe = windowElement.children("iframe");
+    var iframeWindowObject = iframe[0].contentWindow;
+    var iframeDocumentObject = iframe[0].contentDocument; // or iframeWindowObject.document;
+    var iframejQuery = iframeWindowObject.$; // if jQuery is registered inside the iframe page, of course
+
 ## Accessing an Existing Window
 
 You can reference an existing **Window** instance via
