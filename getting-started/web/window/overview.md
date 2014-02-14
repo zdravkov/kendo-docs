@@ -148,15 +148,21 @@ In order to access content and script objects inside the Kendo UI Window `iframe
 
     <div id="window"></div>
 
+    <script>
+    
     var windowElement = $("#window").kendoWindow({
         iframe: true,
         content: "http://docs.telerik.com/kendo-ui/"
     });
 
-    var iframe = windowElement.children("iframe");
-    var iframeWindowObject = iframe[0].contentWindow;
-    var iframeDocumentObject = iframe[0].contentDocument; // or iframeWindowObject.document;
+    var iframeDomElement = windowElement.children("iframe")[0];
+    var iframeWindowObject = iframeDomElement.contentWindow;
+    var iframeDocumentObject = iframeDomElement.contentDocument;
+    // which is equivalent to
+    // var iframeDocumentObject = iframeWindowObject.document;
     var iframejQuery = iframeWindowObject.$; // if jQuery is registered inside the iframe page, of course
+    
+    </script>
 
 ## Accessing an Existing Window
 
