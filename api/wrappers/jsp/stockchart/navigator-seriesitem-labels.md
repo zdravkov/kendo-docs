@@ -74,7 +74,7 @@ Defines the position of the labels.
 
 ### template `java.lang.String`
 
-The label template. Template variables:
+The template which renders the chart series label.The fields which can be used in the template are:
 
 #### Example
     <kendo:stockChart-navigator-seriesItem-labels template="template">
@@ -108,7 +108,7 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-labels
 
 ### template `String`
 
-The label template. Template variables:
+The template which renders the chart series label.The fields which can be used in the template are:
 
 
 #### Example
@@ -124,7 +124,7 @@ The label template. Template variables:
 
 ### kendo:stockChart-navigator-seriesItem-labels-template
 
-The label template. Template variables:
+The template which renders the chart series label.The fields which can be used in the template are:
 
 
 #### Example

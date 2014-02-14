@@ -35,10 +35,7 @@ The font style of the labels.
 
 ### template `java.lang.String`
 
-The template of the labels.
-Template variables:
-*   text - the text the legend item.
-*   series - the data series.
+The template which renders the labels.The fields which can be used in the template are:
 
 #### Example
     <kendo:stockChart-legend-labels template="template">
