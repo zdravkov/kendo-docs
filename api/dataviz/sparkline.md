@@ -2652,16 +2652,15 @@ The label is positioned to the left of the marker.
 
 ### series.labels.template `String | Function`
 
-The label template. Template variables:
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the chart series label.
 
-*   **value** - the point value. Can be a number or object containing each bindable field.
-*   **percentage** - the point value represented as a percentage value.
-    Available for pie series.
-*   **category** - the category name
-    Available for area, bar, column, line and pie series.
-*   **series** - the data series
-*   **dataItem** - the original data item used to construct the point.
-    Will be null if binding to array.
+The fields which can be used in the template are:
+
+*   category - the category name. Available for area, bar, column, bubble, donut, line and pie series.
+*   dataItem - the original data item used to construct the point. Will be null if binding to array.
+*   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+*   series - the data series
+*   value - the point value. Can be a number or object containing each bound field.
 
 ### series.labels.visible `Boolean|Function`*(default: false)*
 
@@ -6204,6 +6203,10 @@ The original data item (when binding to dataSource).
 
 The DOM element of the data point.
 
+##### e.percentage `Object`
+
+The point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+
 ### seriesHover
 
 Fires when chart series are hovered.
@@ -6247,6 +6250,10 @@ The original data item (when binding to dataSource).
 ##### e.element `Object`
 
 The DOM element of the data point.
+
+##### e.percentage `Object`
+
+The point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 
 ### zoomStart
 

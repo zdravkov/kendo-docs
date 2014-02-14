@@ -5579,8 +5579,8 @@ The fields which can be used in the template are:
 *   text - the text the legend item.
 *   series - the data series.
 *   value - the point value. (only for donut and pie charts)
-*   percentage - the point value represented as a percentage value. (only for donut and pie charts)
-*   dataItem - the original data item used to construct the point. (only for donut and pie charts)
+*   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+*   dataItem - the original data item used to construct the point.
 
 #### Example - set the chart legend label template as a string
     <div id="chart"></div>
@@ -5834,8 +5834,8 @@ The fields which can be used in the template are:
 *   text - the text the legend item.
 *   series - the data series.
 *   value - the point value. (only for donut and pie charts)
-*   percentage - the point value represented as a percentage value. (only for donut and pie charts)
-*   dataItem - the original data item used to construct the point. (only for donut and pie charts)
+*   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+*   dataItem - the original data item used to construct the point.
 
 #### Example - set the chart legend label template as a string
     <div id="chart"></div>
@@ -9873,7 +9873,7 @@ The fields which can be used in the template are:
 
 *   category - the category name. Available for area, bar, column, bubble, donut, line and pie series.
 *   dataItem - the original data item used to construct the point. Will be null if binding to array.
-*   percentage - the point value represented as a percentage value. Available for donut and pie series.
+*   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 *   series - the data series
 *   value - the point value. Can be a number or object containing each bound field.
 
@@ -29755,6 +29755,10 @@ The widget instance which fired the event.
 
 The data point value.
 
+##### e.percentage `Object`
+
+The point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+
 #### Example - subscribe to the "seriesClick" event during initialization
     <div id="chart"></div>
     <script>
@@ -29826,6 +29830,10 @@ The widget instance which fired the event.
 ##### e.value `Object`
 
 The data point value.
+
+##### e.percentage `Object`
+
+The point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 
 #### Example - subscribe to the "seriesHover" event during initialization
     <div id="chart"></div>

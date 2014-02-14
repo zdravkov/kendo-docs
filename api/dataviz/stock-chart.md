@@ -1776,14 +1776,15 @@ The label is positioned to the left of the marker.
 
 ### navigator.series.labels.template `String | Function`
 
-The label template. Template variables:
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the chart series label.
 
-*   **value** - the point value. Can be a number or object containing each bindable field.
-*   **category** - the category name
-    Available for area, column and line series.
-*   **series** - the data series
-*   **dataItem** - the original data item used to construct the point.
-    Will be null if binding to array.
+The fields which can be used in the template are:
+
+*   category - the category name. Available for area, bar, column, bubble, donut, line and pie series.
+*   dataItem - the original data item used to construct the point. Will be null if binding to array.
+*   percentage - the point value represented as a percentage value. Available only for 100% stacked charts.
+*   series - the data series
+*   value - the point value. Can be a number or object containing each bound field.
 
 #### Example
 
@@ -4522,10 +4523,15 @@ The font style of the labels.
 
 ### legend.labels.template `String`
 
-The template of the labels.
-Template variables:
-*   **text** - the text the legend item.
-*   **series** - the data series.
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+*   text - the text the legend item.
+*   series - the data series.
+*   value - the point value. (only for donut and pie charts)
+*   percentage - the point value represented as a percentage value. Available only for 100% stacked charts.
+*   dataItem - the original data item used to construct the point.
 
 
 ### legend.margin `Number | Object`*(default: 10)*
@@ -4665,14 +4671,15 @@ The font style of the labels.
 
 ### legend.inactiveItems.labels.template `String`
 
-The template of the labels.
-Template variables:
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
 
-*   **text** - the text the legend item.
-*   **series** - the data series.
-*   **value** - the point value. (only for donut and pie charts)
-*   **percentage** - the point value represented as a percentage value. (only for donut and pie charts)
-*   **dataItem** - the original data item used to construct the point. (only for donut and pie charts)
+The fields which can be used in the template are:
+
+*   text - the text the legend item.
+*   series - the data series.
+*   value - the point value. (only for donut and pie charts)
+*   percentage - the point value represented as a percentage value. Available only for 100% stacked charts.
+*   dataItem - the original data item used to construct the point.
 
 ### legend.inactiveItems.markers `Object`
 
@@ -5521,14 +5528,15 @@ The label is positioned to the left of the marker.
 
 ### series.labels.template `String | Function`
 
-The label template. Template variables:
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the chart series label.
 
-*   **value** - the point value. Can be a number or object containing each bindable field.
-*   **category** - the category name
-    Available for area, column and line series.
-*   **series** - the data series
-*   **dataItem** - the original data item used to construct the point.
-    Will be null if binding to array.
+The fields which can be used in the template are:
+
+*   category - the category name. Available for area, bar, column, bubble, donut, line and pie series.
+*   dataItem - the original data item used to construct the point. Will be null if binding to array.
+*   percentage - the point value represented as a percentage value. Available only for 100% stacked charts.
+*   series - the data series
+*   value - the point value. Can be a number or object containing each bound field.
 
 #### Example
 
@@ -9515,6 +9523,10 @@ The original data item (when binding to dataSource).
 
 The DOM element of the data point.
 
+##### e.percentage `Object`
+
+The point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+
 ### seriesHover
 
 Fires when chart series are hovered.
@@ -9558,6 +9570,10 @@ The original data item (when binding to dataSource).
 ##### e.element `Object`
 
 The DOM element of the data point.
+
+##### e.percentage `Object`
+
+The point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 
 ### zoomStart
 
