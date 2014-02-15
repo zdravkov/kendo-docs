@@ -199,6 +199,27 @@ The maximum period (in milliseconds) between two consecutive taps which will tri
 
 ## Methods
 
+### cancel
+
+Cancels the current touch event sequence. Calling `cancel` in a `touchstart` or `dragmove` will disable subsequent move or tap/end/hold event handlers from being called.
+
+#### Example
+
+    <div id="touch">Touch here</div>
+
+    <script>
+        $("#touch").kendoTouch({
+            touchstart: function(e) {
+                e.sender.cancel(); // e.sender is a reference to the touch widget.
+            },
+            hold: function(e) {
+                // this event handler will not be executed
+                console.log(e);
+            }
+        });
+    </script>
+
+
 ### destroy
 
 Prepares the **Touch** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
