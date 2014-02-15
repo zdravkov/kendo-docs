@@ -452,6 +452,28 @@ Returns the width in pixels of the scroller content.
     new kendo.mobile.Application();
     </script>
 
+### zoomOut
+
+Zooms the scroller out to the minimum zoom level possible.
+
+> The scroller widget is when the mobile view is resized or displayed initially. You can use the after-show event for the zoomOut call.
+
+#### Example
+    <div data-role="view" data-after-show="zoomOut">
+    foo
+        <div data-role="scroller" id="myScroller" style="width: 200px; height: 200px" data-zoom="true">
+        <div style="width: 500px; height: 500px">Zoomable Content</div>
+        </div>
+    bar
+    </div>
+
+    <script>
+        function zoomOut(e) {
+            $("#myScroller").data("kendoMobileScroller").zoomOut();
+        }
+        new kendo.mobile.Application();
+    </script>
+
 ## Events
 
 ### pull
