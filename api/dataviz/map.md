@@ -797,7 +797,7 @@ The layer type is determined by the value of the type field.
 If set to `false` the layer will not bind to the data source during initialization. In this case data binding will occur when the [change](/kendo-ui/api/framework/datasource#events-change) event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
 
-> Setting `autoBind` to `false` is useful when multiple layers (widgets) are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
+> Setting `autoBind` to `false` is useful when multiple layers (or widgets) are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
 
 #### Example - using manual binding
     <div id="map"></div>
@@ -822,6 +822,42 @@ data source is fired. By default the widget will bind to the data source specifi
 
         ds.read();
     </script>
+
+### layers.coverage `Array`
+
+The area(s) covered by the layer.
+Each area is defined by an extent (north-west and south-east extreme locations) and optional zoom range.
+
+The layer will be inactive if the map view is outside the defined coverage.
+
+### layers.coverage.extent `Array`
+
+A four-element array that specifies the covered extent:
+North-West latitude, North-West longitude, South-East latitude, South-East longitude
+
+Alternatively, you can provide an array of two `kendo.dataviz.map.Location` instances.
+
+#### Example - define layer with country coverage
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "shape",
+                autoBind: false,
+                dataSource: ds
+            }]
+        });
+
+        ds.read();
+    </script>
+
+### layers.coverage.minZoom
+
+The minimum zoom level at which to show this layer. Optional.
+
+### layers.coverage.maxZoom
+
+The maximum zoom level at which to show this layer. Optional.
 
 ### layers.type `String`
 
