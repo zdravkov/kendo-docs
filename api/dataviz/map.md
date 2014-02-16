@@ -687,7 +687,7 @@ The the opacity of all tile layers.
 
 ### layerDefaults.bing `Object`
 
-The default configuration for bing layers.
+The default configuration for bing tile layers.
 
 #### Example - set default options for all bing layers
     <div id="map"></div>
@@ -700,7 +700,7 @@ The default configuration for bing layers.
             },
             layers: [{
                 type: "bing",
-                key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
@@ -720,14 +720,14 @@ The attribution of all bing layers.
             },
             layers: [{
                 type: "bing",
-                key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
 
 ### layerDefaults.bing.opacity `String` *(default: 1)*
 
-The the opacity of all bing layers.
+The the opacity of all bing tile layers.
 
 #### Example - set bing layer default opacity
     <div id="map"></div>
@@ -740,22 +740,22 @@ The the opacity of all bing layers.
             },
             layers: [{
                 type: "bing",
-                key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
-	
+
 ### layerDefaults.bing.key `String`
 
-The key of all bing layers.
+The key of all bing tile layers.
 
-#### Example - set bing layer default key
+#### Example - set default API key
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layerDefaults: {
                 bing: {
-		    key: "Your bing map key"
+                    key: "YOUR API KEY"
                 }
             },
             layers: [{
@@ -827,7 +827,7 @@ data source is fired. By default the widget will bind to the data source specifi
 
 The layer type. Supported types are:
 
-* "bing" - a generic a bing layer
+* "bing" - a bing tile layer
 * "tile" - a generic "slippy map" tile layer
 * "shape" - a vector shape layer, e.g. bound to GeoJSON data
 
@@ -842,18 +842,18 @@ The layer type. Supported types are:
             }]
         });
     </script>
-	
+
 ### layers.key `String`
 
-The key of the bing layer.
+The API key for the bing layer.
 
-#### Example - set bing layer key
+#### Example - set bing layer API key
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layers: [{
                 type: "bing",
-		key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
