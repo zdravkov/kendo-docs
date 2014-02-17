@@ -792,6 +792,22 @@ The layer type is determined by the value of the type field.
         });
     </script>
 
+### layers.attribution `String`
+
+The attribution for the layer. Accepts valid HTML.
+
+#### Example - set attribution text
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
 ### layers.autoBind `Boolean` *(default: true)*
 
 If set to `false` the layer will not bind to the data source during initialization. In this case data binding will occur when the [change](/kendo-ui/api/framework/datasource#events-change) event of the
@@ -822,66 +838,6 @@ data source is fired. By default the widget will bind to the data source specifi
 
         ds.read();
     </script>
-
-### layers.coverage `Array`
-
-The area(s) covered by the layer.
-Each area is defined by an extent (north-west and south-east extreme locations) and optional zoom range.
-
-The layer will be inactive if the map view is outside the defined coverage.
-
-### layers.coverage.extent `Array`
-
-A four-element array that specifies the covered extent:
-North-West latitude, North-West longitude, South-East latitude, South-East longitude
-
-Alternatively, you can provide an array of two `kendo.dataviz.map.Location` instances.
-
-#### Example - define layer with country coverage
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            layers: [{
-                type: "shape",
-                autoBind: false,
-                dataSource: ds
-            }]
-        });
-
-        ds.read();
-    </script>
-
-### layers.coverage.minZoom
-
-The minimum zoom level at which to show this layer. Optional.
-
-### layers.coverage.maxZoom
-
-The maximum zoom level at which to show this layer. Optional.
-
-### layers.type `String`
-
-The layer type. Supported types are:
-
-* "bing" - a bing tile layer
-* "tile" - a generic "slippy map" tile layer
-* "shape" - a vector shape layer, e.g. bound to GeoJSON data
-
-#### Example - creating a tile layer
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-    </script>
-
-### layers.key `String`
-
-The API key for the bing layer.
 
 #### Example - set bing layer API key
     <div id="map"></div>
@@ -939,17 +895,23 @@ instance.
         });
     </script>
 
-### layers.attribution `String`
+### layers.key `String`
 
-The attribution for the layer. Accepts valid HTML.
+The API key for the bing layer.
 
-#### Example - set attribution text
+### layers.opacity `String` *(default: 1)*
+
+The the opacity for the layer.
+
+#### Example - setting layer opacity
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layers: [{
                 type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                opacity: 0.5,
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"],
                 attribution: "&copy; OpenStreetMap"
             }]
         });
@@ -973,19 +935,21 @@ Alternating between different subdomains allows more requests to be executed in 
         });
     </script>
 
-### layers.opacity `String` *(default: 1)*
+### layers.type `String`
 
-The the opacity for the layer.
+The layer type. Supported types are:
 
-#### Example - setting layer opacity
+* "bing" - a bing tile layer
+* "tile" - a generic "slippy map" tile layer
+* "shape" - a vector shape layer, e.g. bound to GeoJSON data
+
+#### Example - creating a tile layer
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layers: [{
                 type: "tile",
-                opacity: 0.5,
-                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                subdomains: ["a", "b", "c"],
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
                 attribution: "&copy; OpenStreetMap"
             }]
         });
