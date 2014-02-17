@@ -687,9 +687,9 @@ The the opacity of all tile layers.
 
 ### layerDefaults.bing `Object`
 
-The default configuration for bing layers.
+The default configuration for Bing (tm) tile layers.
 
-#### Example - set default options for all bing layers
+#### Example - set default options for all Bing (tm) layers
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -700,36 +700,36 @@ The default configuration for bing layers.
             },
             layers: [{
                 type: "bing",
-                key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
 
 ### layerDefaults.bing.attribution `String`
 
-The attribution of all bing layers.
+The attribution of all Bing (tm) layers.
 
-#### Example - set default attribution for all bing layers
+#### Example - set default attribution for all Bing (tm) layers
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layerDefaults: {
                 bing: {
-                    attribution: "&copy; BingMap"
+                    attribution: "&copy; Microsoft"
                 }
             },
             layers: [{
                 type: "bing",
-                key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
 
 ### layerDefaults.bing.opacity `String` *(default: 1)*
 
-The the opacity of all bing layers.
+The the opacity of all Bing (tm) tile layers.
 
-#### Example - set bing layer default opacity
+#### Example - set Bing (tm) layer default opacity
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -740,22 +740,22 @@ The the opacity of all bing layers.
             },
             layers: [{
                 type: "bing",
-                key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
-	
+
 ### layerDefaults.bing.key `String`
 
-The key of all bing layers.
+The key of all Bing (tm) tile layers.
 
-#### Example - set bing layer default key
+#### Example - set default API key
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layerDefaults: {
                 bing: {
-		    key: "Your bing map key"
+                    key: "YOUR API KEY"
                 }
             },
             layers: [{
@@ -792,12 +792,28 @@ The layer type is determined by the value of the type field.
         });
     </script>
 
+### layers.attribution `String`
+
+The attribution for the layer. Accepts valid HTML.
+
+#### Example - set attribution text
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
 ### layers.autoBind `Boolean` *(default: true)*
 
 If set to `false` the layer will not bind to the data source during initialization. In this case data binding will occur when the [change](/kendo-ui/api/framework/datasource#events-change) event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
 
-> Setting `autoBind` to `false` is useful when multiple layers (widgets) are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
+> Setting `autoBind` to `false` is useful when multiple layers (or widgets) are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
 
 #### Example - using manual binding
     <div id="map"></div>
@@ -823,37 +839,13 @@ data source is fired. By default the widget will bind to the data source specifi
         ds.read();
     </script>
 
-### layers.type `String`
-
-The layer type. Supported types are:
-
-* "bing" - a generic a bing layer
-* "tile" - a generic "slippy map" tile layer
-* "shape" - a vector shape layer, e.g. bound to GeoJSON data
-
-#### Example - creating a tile layer
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-    </script>
-	
-### layers.key `String`
-
-The key of the bing layer.
-
-#### Example - set bing layer key
+#### Example - set Bing (tm) layer API key
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layers: [{
                 type: "bing",
-		key: "Your bing map key"
+                key: "YOUR API KEY"
             }]
         });
     </script>
@@ -903,17 +895,137 @@ instance.
         });
     </script>
 
-### layers.attribution `String`
+### layers.extent `Array`
 
-The attribution for the layer. Accepts valid HTML.
+Specifies the extent of the region covered by this layer.
+The layer will be hidden when the specified area is out of view.
 
-#### Example - set attribution text
+Accepts a four-element array that specifies the extent covered by this layer:
+
+    1. North-West latitude
+    1. North-West longitude
+    1. South-East latitude
+    1. South-East longitude
+
+Alternatively, you can provide:
+
+* an array of two `kendo.dataviz.map.Location` instances
+* a `kendo.dataviz.map.Extent` instance
+
+If not specified, the layer is always visible.
+
+#### Example - activate shape layer for given region
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [42.6908, 23.3090],
+            zoom: 12,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }, {
+                extent: [
+                    43.4350, 22.2556,
+                    42.2265, 27.4850
+                ],
+                minZoom: 11,
+                type: "shape",
+                style: {
+                    fill: {
+                        opacity: 0
+                    },
+                    stroke: {
+                        color: "green",
+                        width: 4
+                    }
+                },
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [[
+                            [ 23.3569, 42.6198 ],
+                            [ 23.2360, 42.6743 ],
+                            [ 23.2278, 42.7288 ],
+                            [ 23.2666, 42.7505 ],
+                            [ 23.3095, 42.7457 ],
+                            [ 23.4046, 42.7089 ],
+                            [ 23.4183, 42.6743 ],
+                            [ 23.4204, 42.6299 ],
+                            [ 23.3569, 42.6198 ]
+                        ]]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layers.key `String`
+
+The API key for the layer. Currently supported only for Bing (tm) tile layers.
+
+### layers.maxZoom
+
+The maximum zoom level at which to show this layer.
+
+#### Example - switch to OpenCycleMap at zoom level 14
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 14,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"],
+                maxZoom: 13
+            }, {
+                minZoom: 14,
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }]
+        });
+    </script>
+
+### layers.minZoom
+
+The minimum zoom level at which to show this layer.
+
+#### Example - switch to OpenCycleMap at zoom level 14
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 14,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"],
+                maxZoom: 13
+            }, {
+                minZoom: 14,
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }]
+        });
+    </script>
+
+### layers.opacity `String` *(default: 1)*
+
+The the opacity for the layer.
+
+#### Example - setting layer opacity
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layers: [{
                 type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                opacity: 0.5,
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"],
                 attribution: "&copy; OpenStreetMap"
             }]
         });
@@ -937,19 +1049,21 @@ Alternating between different subdomains allows more requests to be executed in 
         });
     </script>
 
-### layers.opacity `String` *(default: 1)*
+### layers.type `String`
 
-The the opacity for the layer.
+The layer type. Supported types are:
 
-#### Example - setting layer opacity
+* "bing" - a Bing (tm) tile layer
+* "tile" - a generic "slippy map" tile layer
+* "shape" - a vector shape layer, e.g. bound to GeoJSON data
+
+#### Example - creating a tile layer
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layers: [{
                 type: "tile",
-                opacity: 0.5,
-                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                subdomains: ["a", "b", "c"],
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
                 attribution: "&copy; OpenStreetMap"
             }]
         });
