@@ -52,7 +52,7 @@ The configuration of built-in map controls.
 
 ### controls.attribution `Boolean|Object` *(default: true)*
 
-Enables or disables the built-in attribution control.
+Configures or disables the built-in attribution control.
 
 #### Example - hide the attribution control
     <div id="map"></div>
@@ -97,7 +97,7 @@ The position of the attribution control. Possible values include:
 
 ### controls.navigator `Boolean|Object` *(default: true)*
 
-Enables or disables the built-in navigator control (directional pad).
+Configures or disables the built-in navigator control (directional pad).
 
 #### Example - hide the navigator control
     <div id="map"></div>
@@ -142,7 +142,7 @@ The position of the navigator control. Possible values include:
 
 ### controls.zoom `Boolean|Object` *(default: true)*
 
-Enables or disables the built-in zoom control (+/- button).
+Configures or disables the built-in zoom control (+/- button).
 
 #### Example - hide the zoom control
     <div id="map"></div>
@@ -664,7 +664,7 @@ The subdomain of all tile layers.
         });
     </script>
 
-### layerDefaults.tile.opacity `String` *(default: 1)*
+### layerDefaults.tile.opacity `Number` *(default: 1)*
 
 The the opacity of all tile layers.
 
@@ -725,7 +725,7 @@ The attribution of all Bing (tm) layers.
         });
     </script>
 
-### layerDefaults.bing.opacity `String` *(default: 1)*
+### layerDefaults.bing.opacity `Number` *(default: 1)*
 
 The the opacity of all Bing (tm) tile layers.
 
@@ -895,22 +895,13 @@ instance.
         });
     </script>
 
-### layers.extent `Array`
+### layers.extent `Array|kendo.dataviz.map.Extent`
 
 Specifies the extent of the region covered by this layer.
 The layer will be hidden when the specified area is out of view.
 
 Accepts a four-element array that specifies the extent covered by this layer:
-
-    1. North-West latitude
-    1. North-West longitude
-    1. South-East latitude
-    1. South-East longitude
-
-Alternatively, you can provide:
-
-* an array of two `kendo.dataviz.map.Location` instances
-* a `kendo.dataviz.map.Extent` instance
+North-West lat, longitude, South-East latitude, longitude.
 
 If not specified, the layer is always visible.
 
