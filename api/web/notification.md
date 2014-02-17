@@ -330,7 +330,7 @@ Describes the HTML markup of the different notification types as Kendo UI templa
                     type: "timeAlert",
                     template: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
                     // template content can also be defined separately
-                    //timeAlert: $("#myAlertTemplate").html()
+                    //template: $("#myAlertTemplate").html()
             }]
         });
         
