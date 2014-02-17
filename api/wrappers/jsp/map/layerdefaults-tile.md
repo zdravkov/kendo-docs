@@ -24,7 +24,7 @@ The attribution of all tile layers.
     <kendo:map-layerDefaults-tile attribution="attribution">
     </kendo:map-layerDefaults-tile>
 
-### opacity `java.lang.String`
+### opacity `float`
 
 The the opacity of all tile layers.
 

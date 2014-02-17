@@ -56,13 +56,13 @@ The the opacity of all Bing (tm) tile layers.
 
 #### Parameters
 
-##### $value `string`
+##### $value `float`
 
 
 
 #### Example 
     <?php
     $bing = new \Kendo\Dataviz\UI\MapLayerDefaultsBing();
-    $bing->opacity('value');
+    $bing->opacity(1);
     ?>
 

@@ -18,7 +18,7 @@ The configuration of built-in map controls.
 
 ### attribution `boolean`
 
-Enables or disables the built-in attribution control. Further configuration is available via [kendo:map-controls-attribution](#kendo-map-controls-attribution). 
+Configures or disables the built-in attribution control. Further configuration is available via [kendo:map-controls-attribution](#kendo-map-controls-attribution). 
 
 #### Example
     <kendo:map-controls attribution="attribution">
@@ -26,7 +26,7 @@ Enables or disables the built-in attribution control. Further configuration is a
 
 ### navigator `boolean`
 
-Enables or disables the built-in navigator control (directional pad). Further configuration is available via [kendo:map-controls-navigator](#kendo-map-controls-navigator). 
+Configures or disables the built-in navigator control (directional pad). Further configuration is available via [kendo:map-controls-navigator](#kendo-map-controls-navigator). 
 
 #### Example
     <kendo:map-controls navigator="navigator">
@@ -34,7 +34,7 @@ Enables or disables the built-in navigator control (directional pad). Further co
 
 ### zoom `boolean`
 
-Enables or disables the built-in zoom control (+/- button). Further configuration is available via [kendo:map-controls-zoom](#kendo-map-controls-zoom). 
+Configures or disables the built-in zoom control (+/- button). Further configuration is available via [kendo:map-controls-zoom](#kendo-map-controls-zoom). 
 
 #### Example
     <kendo:map-controls zoom="zoom">
@@ -45,7 +45,7 @@ Enables or disables the built-in zoom control (+/- button). Further configuratio
 
 ### kendo:map-controls-attribution
 
-Enables or disables the built-in attribution control.
+Configures or disables the built-in attribution control.
 
 More documentation is available at [kendo:map-controls-attribution](/kendo-ui/api/wrappers/jsp/map/controls-attribution).
 
@@ -57,7 +57,7 @@ More documentation is available at [kendo:map-controls-attribution](/kendo-ui/ap
 
 ### kendo:map-controls-navigator
 
-Enables or disables the built-in navigator control (directional pad).
+Configures or disables the built-in navigator control (directional pad).
 
 More documentation is available at [kendo:map-controls-navigator](/kendo-ui/api/wrappers/jsp/map/controls-navigator).
 
@@ -69,7 +69,7 @@ More documentation is available at [kendo:map-controls-navigator](/kendo-ui/api/
 
 ### kendo:map-controls-zoom
 
-Enables or disables the built-in zoom control (+/- button).
+Configures or disables the built-in zoom control (+/- button).
 
 More documentation is available at [kendo:map-controls-zoom](/kendo-ui/api/wrappers/jsp/map/controls-zoom).
 

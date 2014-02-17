@@ -32,7 +32,7 @@ The key of all Bing (tm) tile layers.
     <kendo:map-layerDefaults-bing key="key">
     </kendo:map-layerDefaults-bing>
 
-### opacity `java.lang.String`
+### opacity `float`
 
 The the opacity of all Bing (tm) tile layers.
 

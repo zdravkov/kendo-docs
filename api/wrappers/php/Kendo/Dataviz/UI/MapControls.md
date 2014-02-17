@@ -14,7 +14,7 @@ A PHP class representing the controls setting of Map.
 
 ### attribution
 
-Enables or disables the built-in attribution control.
+Configures or disables the built-in attribution control.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapControls`
@@ -52,7 +52,7 @@ Enables or disables the built-in attribution control.
 
 ### navigator
 
-Enables or disables the built-in navigator control (directional pad).
+Configures or disables the built-in navigator control (directional pad).
 
 #### Returns
 `\Kendo\Dataviz\UI\MapControls`
@@ -90,7 +90,7 @@ Enables or disables the built-in navigator control (directional pad).
 
 ### zoom
 
-Enables or disables the built-in zoom control (+/- button).
+Configures or disables the built-in zoom control (+/- button).
 
 #### Returns
 `\Kendo\Dataviz\UI\MapControls`

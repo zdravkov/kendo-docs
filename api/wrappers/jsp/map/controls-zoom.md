@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:map-controls-zoom\>
 
-Enables or disables the built-in zoom control (+/- button).
+Configures or disables the built-in zoom control (+/- button).
 
 #### Example
     <kendo:map-controls>

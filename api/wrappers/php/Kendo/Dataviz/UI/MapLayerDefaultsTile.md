@@ -38,14 +38,14 @@ The the opacity of all tile layers.
 
 #### Parameters
 
-##### $value `string`
+##### $value `float`
 
 
 
 #### Example 
     <?php
     $tile = new \Kendo\Dataviz\UI\MapLayerDefaultsTile();
-    $tile->opacity('value');
+    $tile->opacity(1);
     ?>
 
 ### subdomains

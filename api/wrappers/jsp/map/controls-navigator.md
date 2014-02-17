@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:map-controls-navigator\>
 
-Enables or disables the built-in navigator control (directional pad).
+Configures or disables the built-in navigator control (directional pad).
 
 #### Example
     <kendo:map-controls>

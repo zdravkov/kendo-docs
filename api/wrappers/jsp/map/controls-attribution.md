@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:map-controls-attribution\>
 
-Enables or disables the built-in attribution control.
+Configures or disables the built-in attribution control.
 
 #### Example
     <kendo:map-controls>
