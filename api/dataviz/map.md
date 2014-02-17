@@ -687,9 +687,9 @@ The the opacity of all tile layers.
 
 ### layerDefaults.bing `Object`
 
-The default configuration for bing tile layers.
+The default configuration for Bing (tm) tile layers.
 
-#### Example - set default options for all bing layers
+#### Example - set default options for all Bing (tm) layers
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -707,15 +707,15 @@ The default configuration for bing tile layers.
 
 ### layerDefaults.bing.attribution `String`
 
-The attribution of all bing layers.
+The attribution of all Bing (tm) layers.
 
-#### Example - set default attribution for all bing layers
+#### Example - set default attribution for all Bing (tm) layers
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
             layerDefaults: {
                 bing: {
-                    attribution: "&copy; BingMap"
+                    attribution: "&copy; Microsoft"
                 }
             },
             layers: [{
@@ -727,9 +727,9 @@ The attribution of all bing layers.
 
 ### layerDefaults.bing.opacity `String` *(default: 1)*
 
-The the opacity of all bing tile layers.
+The the opacity of all Bing (tm) tile layers.
 
-#### Example - set bing layer default opacity
+#### Example - set Bing (tm) layer default opacity
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -747,7 +747,7 @@ The the opacity of all bing tile layers.
 
 ### layerDefaults.bing.key `String`
 
-The key of all bing tile layers.
+The key of all Bing (tm) tile layers.
 
 #### Example - set default API key
     <div id="map"></div>
@@ -839,7 +839,7 @@ data source is fired. By default the widget will bind to the data source specifi
         ds.read();
     </script>
 
-#### Example - set bing layer API key
+#### Example - set Bing (tm) layer API key
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
@@ -897,7 +897,7 @@ instance.
 
 ### layers.key `String`
 
-The API key for the bing layer.
+The API key for the layer. Currently supported only for Bing (tm) tile layers.
 
 ### layers.opacity `String` *(default: 1)*
 
@@ -939,7 +939,7 @@ Alternating between different subdomains allows more requests to be executed in 
 
 The layer type. Supported types are:
 
-* "bing" - a bing tile layer
+* "bing" - a Bing (tm) tile layer
 * "tile" - a generic "slippy map" tile layer
 * "shape" - a vector shape layer, e.g. bound to GeoJSON data
 
