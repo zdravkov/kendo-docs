@@ -76,6 +76,43 @@ Sets the data source of the dataSource.
     $layer->dataSource(array('schema' => $schema));
     ?>
 
+### extent
+Specifies the extent of the region covered by this layer.
+The layer will be hidden when the specified area is out of view.Accepts a four-element array that specifies the extent covered by this layer:Alternatively, you can provide:If not specified, the layer is always visible.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `array`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->extent(new array());
+    ?>
+
+### key
+The API key for the layer. Currently supported only for Bing (tm) tile layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->key('value');
+    ?>
+
 ### opacity
 The the opacity for the layer.
 

@@ -21,7 +21,7 @@ The default configuration for map layers by type.
 
 ### kendo:map-layerDefaults-bing
 
-The default configuration for bing layers.
+The default configuration for Bing (tm) tile layers.
 
 More documentation is available at [kendo:map-layerDefaults-bing](/kendo-ui/api/wrappers/jsp/map/layerdefaults-bing).
 

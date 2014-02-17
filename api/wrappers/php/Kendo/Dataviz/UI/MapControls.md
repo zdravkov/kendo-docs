@@ -13,6 +13,7 @@ A PHP class representing the controls setting of Map.
 ## Methods
 
 ### attribution
+
 Enables or disables the built-in attribution control.
 
 #### Returns
@@ -20,14 +21,33 @@ Enables or disables the built-in attribution control.
 
 #### Parameters
 
-##### $value `boolean`
+##### $value `boolean|\Kendo\Dataviz\UI\MapControlsAttribution|array`
 
 
 
-#### Example 
+
+#### Example  - using boolean
     <?php
     $controls = new \Kendo\Dataviz\UI\MapControls();
     $controls->attribution(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\MapControlsAttribution](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapControlsAttribution)
+    <?php
+    $controls = new \Kendo\Dataviz\UI\MapControls();
+    $attribution = new \Kendo\Dataviz\UI\MapControlsAttribution();
+    $position = 'value';
+    $attribution->position($position);
+    $controls->attribution($attribution);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $controls = new \Kendo\Dataviz\UI\MapControls();
+    $position = 'value';
+    $controls->attribution(array('position' => $position));
     ?>
 
 ### navigator

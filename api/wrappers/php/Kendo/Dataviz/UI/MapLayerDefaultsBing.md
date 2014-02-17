@@ -13,7 +13,7 @@ A PHP class representing the bing setting of MapLayerDefaults.
 ## Methods
 
 ### attribution
-The attribution of all bing layers.
+The attribution of all Bing (tm) layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayerDefaultsBing`
@@ -31,7 +31,7 @@ The attribution of all bing layers.
     ?>
 
 ### key
-The key of all bing layers.
+The key of all Bing (tm) tile layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayerDefaultsBing`
@@ -49,7 +49,7 @@ The key of all bing layers.
     ?>
 
 ### opacity
-The the opacity of all bing layers.
+The the opacity of all Bing (tm) tile layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayerDefaultsBing`

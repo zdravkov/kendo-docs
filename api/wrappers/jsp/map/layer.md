@@ -34,9 +34,18 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:map-layer autoBind="autoBind">
     </kendo:map-layer>
 
+### extent `java.lang.Object`
+
+Specifies the extent of the region covered by this layer.
+The layer will be hidden when the specified area is out of view.Accepts a four-element array that specifies the extent covered by this layer:Alternatively, you can provide:If not specified, the layer is always visible.
+
+#### Example
+    <kendo:map-layer extent="extent">
+    </kendo:map-layer>
+
 ### key `java.lang.String`
 
-The key of the bing layer.
+The API key for the layer. Currently supported only for Bing (tm) tile layers.
 
 #### Example
     <kendo:map-layer key="key">

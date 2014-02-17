@@ -12,6 +12,35 @@ A PHP class representing the layerDefaults setting of Map.
 
 ## Methods
 
+### bing
+
+The default configuration for Bing (tm) tile layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayerDefaults`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsBing|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsBing](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsBing)
+    <?php
+    $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
+    $bing = new \Kendo\Dataviz\UI\MapLayerDefaultsBing();
+    $attribution = 'value';
+    $bing->attribution($attribution);
+    $layerDefaults->bing($bing);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
+    $attribution = 'value';
+    $layerDefaults->bing(array('attribution' => $attribution));
+    ?>
+
 ### shape
 
 The default configuration for shape layers.

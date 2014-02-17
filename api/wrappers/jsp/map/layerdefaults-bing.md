@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:map-layerDefaults-bing\>
 
-The default configuration for bing layers.
+The default configuration for Bing (tm) tile layers.
 
 #### Example
     <kendo:map-layerDefaults>
@@ -18,7 +18,7 @@ The default configuration for bing layers.
 
 ### attribution `java.lang.String`
 
-The attribution of all bing layers.
+The attribution of all Bing (tm) layers.
 
 #### Example
     <kendo:map-layerDefaults-bing attribution="attribution">
@@ -26,7 +26,7 @@ The attribution of all bing layers.
 
 ### key `java.lang.String`
 
-The key of all bing layers.
+The key of all Bing (tm) tile layers.
 
 #### Example
     <kendo:map-layerDefaults-bing key="key">
@@ -34,7 +34,7 @@ The key of all bing layers.
 
 ### opacity `java.lang.String`
 
-The the opacity of all bing layers.
+The the opacity of all Bing (tm) tile layers.
 
 #### Example
     <kendo:map-layerDefaults-bing opacity="opacity">
