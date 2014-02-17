@@ -158,14 +158,17 @@ but you will still be able to use the shorthand show methods, as demonstrated be
         var notificationElement = $("#notification");
         
 		notificationElement.kendoNotification({
-            templates: {
-                // define a custom template for the built-in "warning" notification type
-                warning: "<div class='myWarning'>Warning: #= myMessage #</div>",
-                // define a template for the custom "timeAlert" notification type
-                timeAlert: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
-                // template content can also be defined separately
-                //timeAlert: $("#myAlertTemplate").html()
-            }
+            templates: [{
+                    // define a custom template for the built-in "warning" notification type
+                    type: "warning",
+                    template: "<div class='myWarning'>Warning: #= myMessage #</div>"
+                }, {
+                    // define a template for the custom "timeAlert" notification type
+                    type: "timeAlert",
+                    template: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
+                    // template content can also be defined separately
+                    //template: $("#myAlertTemplate").html()
+            }]
         });
         
         var n = notificationElement.data("kendoNotification");

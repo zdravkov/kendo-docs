@@ -302,7 +302,7 @@ The `"default"` setting takes into consideration the applied `position` settings
 	});
 	</script>
 
-### templates `Object` *(default: {})*
+### templates `Array` *(default: [])*
 
 Describes the HTML markup of the different notification types as Kendo UI template strings. The built-in types are `"info"`, `"success"`, `"warning"` and `"error"`.
 
@@ -321,14 +321,17 @@ Describes the HTML markup of the different notification types as Kendo UI templa
         var notificationElement = $("#notification");
         
 		notificationElement.kendoNotification({
-            templates: {
-                // define a custom template for the built-in "warning" notification type
-                warning: "<div class='myWarning'>Warning: #= myMessage #</div>",
-                // define a template for the custom "timeAlert" notification type
-                timeAlert: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
-                // template content can also be defined separately
-                //timeAlert: $("#myAlertTemplate").html()
-            }
+            templates: [{
+                    // define a custom template for the built-in "warning" notification type
+                    type: "warning",
+                    template: "<div class='myWarning'>Warning: #= myMessage #</div>"
+                }, {
+                    // define a template for the custom "timeAlert" notification type
+                    type: "timeAlert",
+                    template: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
+                    // template content can also be defined separately
+                    //timeAlert: $("#myAlertTemplate").html()
+            }]
         });
         
         var n = notificationElement.data("kendoNotification");
