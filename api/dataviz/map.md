@@ -895,9 +895,123 @@ instance.
         });
     </script>
 
+### layers.extent `Array`
+
+Specifies the extent of the region covered by this layer.
+The layer will be hidden when the specified area is out of view.
+
+Accepts a four-element array that specifies the extent covered by this layer:
+
+    1. North-West latitude
+    1. North-West longitude
+    1. South-East latitude
+    1. South-East longitude
+
+Alternatively, you can provide:
+
+* an array of two `kendo.dataviz.map.Location` instances
+* a `kendo.dataviz.map.Extent` instance
+
+If not specified, the layer is always visible.
+
+#### Example - activate shape layer for given region
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [42.6908, 23.3090],
+            zoom: 12,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }, {
+                extent: [
+                    43.4350, 22.2556,
+                    42.2265, 27.4850
+                ],
+                minZoom: 11,
+                type: "shape",
+                style: {
+                    fill: {
+                        opacity: 0
+                    },
+                    stroke: {
+                        color: "green",
+                        width: 4
+                    }
+                },
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [[
+                            [ 23.3569, 42.6198 ],
+                            [ 23.2360, 42.6743 ],
+                            [ 23.2278, 42.7288 ],
+                            [ 23.2666, 42.7505 ],
+                            [ 23.3095, 42.7457 ],
+                            [ 23.4046, 42.7089 ],
+                            [ 23.4183, 42.6743 ],
+                            [ 23.4204, 42.6299 ],
+                            [ 23.3569, 42.6198 ]
+                        ]]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layers.key `String`
 
 The API key for the layer. Currently supported only for Bing (tm) tile layers.
+
+### layers.maxZoom
+
+The maximum zoom level at which to show this layer.
+
+#### Example - switch to OpenCycleMap at zoom level 14
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 14,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"],
+                maxZoom: 13
+            }, {
+                minZoom: 14,
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }]
+        });
+    </script>
+
+### layers.minZoom
+
+The minimum zoom level at which to show this layer.
+
+#### Example - switch to OpenCycleMap at zoom level 14
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 14,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"],
+                maxZoom: 13
+            }, {
+                minZoom: 14,
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }]
+        });
+    </script>
 
 ### layers.opacity `String` *(default: 1)*
 
