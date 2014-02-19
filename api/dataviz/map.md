@@ -206,6 +206,661 @@ The default configuration for map layers by type.
         });
     </script>
 
+### layerDefaults.marker.shape `String` *(default: "pinTarget")*
+
+The default marker shape for all marker layers. The following pre-defined marker shapes are available:
+
+* pinTarget
+* pin
+
+Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
+For example "pinTarget" is rendered as "k-marker-pin-target".
+
+#### Example - setting marker shape
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    shape: "pin"
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip `Object`
+
+The default Kendo UI Tooltip options for all marker layers.
+
+### layerDefaults.marker.tooltip.autoHide `Boolean`*(default: false)*
+
+Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
+
+#### Example - hide tooltip on mouse leave
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        autoHide: true,
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.animation `Object`
+
+A collection of {Animation} objects, used to change default animations. A value of **false**
+will disable all animations in the widget.
+
+#### Example - disable animations
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        animation: false,
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.animation.close `Object`
+
+The animation that will be used when a Tooltip closes.
+
+#### Example - set close animation
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        animation: {
+                          close: {
+                            effects: "fade:out"
+                          }
+                        },
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.animation.close.effects `String`
+
+Effect to be used for closing of the tooltip.
+
+#### Example - set close animation effect
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        animation: {
+                            close: {
+                                effects: "fade:out"
+                            }
+                        },
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.animation.close.duration `Number`
+
+Defines the animation duration.
+
+#### Example - set close animation duration
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        animation: {
+                            close: {
+                                duration: 1000
+                            }
+                        },
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.animation.open `Object`
+
+The animation that will be used when a Tooltip opens.
+
+#### Example - set open animation
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        animation: {
+                            open: {
+                                effects: "fade:in",
+                                duration: 1000
+                            }
+                        },
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.animation.open.effects `String`
+
+Effect to be used for opening of the Tooltip.
+
+#### Example - set open animation effect
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        animation: {
+                            open: {
+                                effects: "fade:in"
+                            }
+                        },
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.animation.open.duration `Number`
+
+Defines the animation duration.
+
+#### Example - set open animation duration
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        animation: {
+                            open: {
+                                duration: "1000"
+                            }
+                        },
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.content `Object|String|Function`
+
+The text or a function which result will be shown within the tooltip.
+By default the tooltip will display the target element title attribute content.
+
+#### Example - extract the content from target marker
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        content: function(e) {
+                            var marker = e.sender.marker;
+                            return marker.options.location.toString();
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+#### Example - content as static text
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.content.url `String`
+
+Specifies a URL or request options that the tooltip should load its content from.
+
+>Note: For URLs starting with a protocol (e.g. http://),
+a container iframe element is automatically created. This behavior may change in future
+versions, so it is advisable to always use the [iframe configuration option](#iframe).
+
+#### Example - load content from remote URL
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                          content: {
+                            url: "http://demos.telerik.com/kendo-ui/content/web/tooltip/ajax/ajaxContent3.html"
+                          },
+                          width: 220,
+                          height: 280
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.template `String|Template`
+
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip content.
+
+The fields which can be used in the template are:
+
+* location - the marker location (`kendo.dataviz.map.Location` instance)
+* marker - the marker instance
+
+> Setting a template disables the content option.
+
+#### Example - set tooltip template
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        template: "Lon:#= location.lng #, Lat:#= location.lat #"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.callout `Boolean`*(default:true)*
+
+Specifies if the tooltip callout will be displayed.
+
+#### Example - hide the tooltip callout
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        callout: false,
+                        template: "Lon:#= location.lng #, Lat:#= location.lat #"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.iframe `Boolean`
+
+Explicitly states whether content iframe should be created.
+
+#### Example - load content from remote URL
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                          iframe: true,
+                          content: {
+                            url: "http://demos.telerik.com/kendo-ui/content/web/tooltip/ajax/ajaxContent3.html"
+                          },
+                          width: 220,
+                          height: 280
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.height `Number`*(default: Infinity)*
+
+The height (in pixels) of the tooltip.
+
+#### Example - set the height of the tooltip
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        height: 80,
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.width `Number`*(default: Infinity)*
+
+The width (in pixels) of the tooltip.
+
+#### Example - set the width of the tooltip
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        width: 80,
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.position `String`*(default: "top")*
+
+The position relative to the target element, at which the tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
+
+#### Example - set tooltip position
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        position: "left",
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.showAfter `Number`*(default: 100)*
+
+Specify the delay in milliseconds before the tooltip is shown. This option is ignored if showOn is set to "click" or "focus".
+
+#### Example - set show delay
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        showOn: "mouseenter",
+                        showAfter: 1000,
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.tooltip.showOn `String`*(default: "click")*
+
+The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
+
+#### Example - show tooltip on mouse enter
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    tooltip: {
+                        showOn: "mouseenter",
+                        content: "Foo"
+                    }
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.marker.opacity `Number` *(default: 1)*
+
+The the opacity of all marker layers.
+
+#### Example - set marker layer default opacity
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    opacity: 0.5
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape `Object`
 
 The default configuration for shape layers.
@@ -1669,6 +2324,7 @@ The layer type. Supported types are:
 
 * "bing" - a Bing (tm) tile layer
 * "tile" - a generic "slippy map" tile layer
+* "marker" - a data-bound marker layer
 * "shape" - a vector shape layer, e.g. bound to GeoJSON data
 
 #### Example - creating a tile layer
