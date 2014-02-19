@@ -14,6 +14,52 @@ Represents the Kendo UI Mobile Drawer widget. Inherits from [kendo.mobile.ui.Vie
 
 ## Configuration
 
+### container `jQuery`
+
+Specifies the content element to shift when the drawer appears. Required if the drawer is used outside of a mobile application.
+
+### Drawer outside of a mobile application
+    <div id="drawer">
+        <h3>Sports</h3>
+        <a href="#" data-target="baseball" class="drawer-link active">Baseball</a>
+        <a href="#" data-target="golf" class="drawer-link">Golf</a>
+    </div>
+
+    <div id="content-container">
+        <a id="drawer-trigger" href="#"><span>Show drawer</span></a>
+        <div id="baseball" class="inner-content">
+            <h3>Baseball</h3>
+        </div>
+        <div id="golf" class="inner-content">
+            <h3>Golf</h3>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $("#drawer").kendoMobileDrawer({
+                container: "#content-container"
+            });
+
+            $("#drawer-trigger").click(function() {
+                $("#drawer").data("kendoMobileDrawer").show();
+                return false;
+            });
+
+            $(".drawer-link").click(function() {
+                $("#drawer").data("kendoMobileDrawer").hide();
+                $(".drawer-link").removeClass("active");
+                $(this).addClass("active");
+                return false;
+            });
+
+            $(".drawer-link").click(function(){
+                  $(".inner-content").hide();
+                  $("#"+$(this).data("target")).show();
+            });
+        });
+    </script>
+
 ### position `String` *(default: 'left')*
 
 The position of the drawer. Can be `left` (default) or `right`.
