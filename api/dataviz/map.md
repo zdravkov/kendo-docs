@@ -974,7 +974,7 @@ If not specified, the layer is always visible.
 
 The API key for the layer. Currently supported only for Bing (tm) tile layers.
 
-### layers.locationField `String`
+### layers.locationField `String` *(default: "location")*
 
 The data item field which contains the marker location.
 The field should be an array with two numbers - latitude and longitude.
@@ -1017,18 +1017,16 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
                 shape: "pin",
 
                 locationField: "latlng",
-                titleField: "text",
                 dataSource: {
                     data: [{
-                        latlng: [0, 0],
-                        text: "POI"
+                        latlng: [0, 0]
                     }]
                 }
             }]
         });
     </script>
 
-### layers.titleField `String`
+### layers.titleField `String` *(default: "title")*
 
 The data item field which contains the marker title.
 Requires the [dataSource](#configuration-layers-dataSource) option to be set.
