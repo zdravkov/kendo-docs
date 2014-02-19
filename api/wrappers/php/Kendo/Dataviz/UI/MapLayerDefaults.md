@@ -41,6 +41,35 @@ The default configuration for Bing (tm) tile layers.
     $layerDefaults->bing(array('attribution' => $attribution));
     ?>
 
+### marker
+
+The default configuration for marker layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayerDefaults`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsMarker|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsMarker](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsMarker)
+    <?php
+    $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
+    $marker = new \Kendo\Dataviz\UI\MapLayerDefaultsMarker();
+    $opacity = 1;
+    $marker->opacity($opacity);
+    $layerDefaults->marker($marker);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
+    $opacity = 1;
+    $layerDefaults->marker(array('opacity' => $opacity));
+    ?>
+
 ### shape
 
 The default configuration for shape layers.
