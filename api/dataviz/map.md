@@ -2593,6 +2593,27 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
         });
     </script>
 
+### markers.title `String` *(default: "pinTarget")*
+
+The marker title. Displayed as browser tooltip.
+
+#### Example - setting marker title
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }],
+            markers: [{
+                shape: "pin",
+                location: [0, 0],
+                title: "POI"
+            }]
+        });
+    </script>
+
 ### markers.tooltip `Object`
 
 Kendo UI Tooltip options for this marker.
