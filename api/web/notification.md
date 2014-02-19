@@ -431,7 +431,7 @@ Displays a notification.
 
 ##### type `String`
 
-The notification type. Built-in types include `"info"`, `"success"`, `"warning"` and `"error"`. Custom types should match the keys from the [template configuration](#configuration-templates).
+The notification type. Built-in types include `"info"`, `"success"`, `"warning"` and `"error"`. Custom types should match the types from the [template configuration](#configuration-templates).
 If this argument is not supplied, then `"info"` is assumed.
 
 #### Example - use the show method with a string argument
@@ -460,7 +460,7 @@ If this argument is not supplied, then `"info"` is assumed.
 
 	<span id="notification"></span>
 	<script>
-    function getNotificationMesage() {
+    function getNotificationMessage() {
         return {
             myMessage: "foo text"
         }
@@ -472,7 +472,7 @@ If this argument is not supplied, then `"info"` is assumed.
         }
     }).data("kendoNotification");
     
-    notificationWidget.show(getNotificationMesage, "myAlert");
+    notificationWidget.show(getNotificationMessage, "myAlert");
 	</script>
 
 ### success

@@ -196,7 +196,7 @@ Each notification is rendered inside the following wrapper element:
 
 `TYPE` denotes the notification type (either a built-in or a custom one), for example `k-notification-info` or `k-notification-success`, etc.
 
-When the widget displays popups, the above `div.k-notification` is nested inside an absolutely positioned `div.k-animation-container`, which is an element that wraps all Kendo UI popups.
+When the widget displays popups, the above `div.k-notification` is nested inside a positioned (`absolute` or `fixed`) `div.k-animation-container`, which is an element that wraps every Kendo UI popup.
 
 When the widget displays static notifications, the above `div.k-notification` is a child of the element specified by the widget's [`appendTo`](#configuration-appendTo) setting.
     
