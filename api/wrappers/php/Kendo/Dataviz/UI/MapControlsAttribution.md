@@ -13,7 +13,7 @@ A PHP class representing the attribution setting of MapControls.
 ## Methods
 
 ### position
-The position of the attribution control. Predefined values are "topLeft", "topRight", "left", "bottomRight", "bottomLeft".
+The position of the attribution control. Possible values include:
 
 #### Returns
 `\Kendo\Dataviz\UI\MapControlsAttribution`

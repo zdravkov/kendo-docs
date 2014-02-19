@@ -114,25 +114,6 @@ The API key for the layer. Currently supported only for Bing (tm) tile layers.
     $layer->key('value');
     ?>
 
-### locationField
-The data item field which contains the marker location.
-The field should be an array with two numbers - latitude and longitude.Requires the dataSource option to be set.
-
-#### Returns
-`\Kendo\Dataviz\UI\MapLayer`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $layer->locationField('value');
-    ?>
-
 ### opacity
 The the opacity for the layer.
 
@@ -149,25 +130,6 @@ The the opacity for the layer.
     <?php
     $layer = new \Kendo\Dataviz\UI\MapLayer();
     $layer->opacity('value');
-    ?>
-
-### shape
-The default marker shape for data-bound markers. The following pre-defined marker shapes are available:Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
-For example "pinTarget" is rendered as "k-marker-pin-target".
-
-#### Returns
-`\Kendo\Dataviz\UI\MapLayer`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $layer->shape('value');
     ?>
 
 ### style
@@ -216,54 +178,6 @@ Alternating between different subdomains allows more requests to be executed in 
     <?php
     $layer = new \Kendo\Dataviz\UI\MapLayer();
     $layer->subdomains(new array());
-    ?>
-
-### titleField
-The data item field which contains the marker title.
-Requires the dataSource option to be set.
-
-#### Returns
-`\Kendo\Dataviz\UI\MapLayer`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $layer->titleField('value');
-    ?>
-
-### tooltip
-
-The default Kendo UI Tooltip options for data-bound markers.
-
-#### Returns
-`\Kendo\Dataviz\UI\MapLayer`
-
-#### Parameters
-
-##### $value `\Kendo\Dataviz\UI\MapLayerTooltip|array`
-
-
-#### Example - using [\Kendo\Dataviz\UI\MapLayerTooltip](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerTooltip)
-    <?php
-    $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $tooltip = new \Kendo\Dataviz\UI\MapLayerTooltip();
-    $autoHide = true;
-    $tooltip->autoHide($autoHide);
-    $layer->tooltip($tooltip);
-    ?>
-
-#### Example - using array
-
-    <?php
-    $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $autoHide = true;
-    $layer->tooltip(array('autoHide' => $autoHide));
     ?>
 
 ### type

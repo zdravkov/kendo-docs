@@ -160,7 +160,7 @@ Explicitly states whether content iframe should be created.
     ?>
 
 ### position
-The position relative to the target element, at which tlhe tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
+The position relative to the target element, at which the tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarkerTooltip`

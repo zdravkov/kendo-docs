@@ -132,8 +132,8 @@ The default configuration for map layers by type.
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
-    $marker.opacity = 1;
-    $layerDefaults->marker.opacity($marker.opacity);
+    $shape = new \Kendo\Dataviz\UI\MapLayerDefaultsShape();
+    $layerDefaults->shape($shape);
     $map->layerDefaults($layerDefaults);
     ?>
 
@@ -141,8 +141,8 @@ The default configuration for map layers by type.
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
-    $marker.opacity = 1;
-    $map->layerDefaults(array('marker.opacity' => $marker.opacity));
+    $shape = new \Kendo\Dataviz\UI\MapLayerDefaultsShape();
+    $map->layerDefaults(array('shape' => $shape));
     ?>
 
 ### addLayer
