@@ -956,6 +956,36 @@ If not specified, the layer is always visible.
 
 The API key for the layer. Currently supported only for Bing (tm) tile layers.
 
+### layers.locationField `String`
+
+The data item field which contains the marker location.
+The field should be an array with two numbers - latitude and longitude.
+
+Requires the [dataSource](#configuration-layers-dataSource) option to be set.
+
+#### Example - bind marker title
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 3,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }, {
+                type: "marker",
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [30.268107, -97.744821],
+                        text: "Austin, TX"
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layers.shape `String` *(default: "pinTarget")*
 
 The default marker shape for data-bound markers. The following pre-defined marker shapes are available:
@@ -970,14 +1000,53 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 3,
             layers: [{
                 type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
+                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }, {
+                type: "marker",
                 shape: "pin",
-                location: [42, 27]
+
+                locationField: "latlng",
+                titleField: "text",
+                dataSource: {
+                    data: [{
+                        latlng: [30.268107, -97.744821],
+                        text: "Austin, TX"
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layers.titleField `String`
+
+The data item field which contains the marker title.
+Requires the [dataSource](#configuration-layers-dataSource) option to be set.
+
+#### Example - bind marker title
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            center: [30.268107, -97.744821],
+            zoom: 3,
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
+                subdomains: ["a", "b", "c"]
+            }, {
+                type: "marker",
+                locationField: "latlng",
+                titleField: "text",
+                dataSource: {
+                    data: [{
+                        latlng: [30.268107, -97.744821],
+                        text: "Austin, TX"
+                    }]
+                }
             }]
         });
     </script>
