@@ -20,27 +20,27 @@ data source is fired. By default the widget will bind to the data source specifi
 
 #### Example - disable automatic binding
 
-	<div id="diagram"></div>
-	<script>
-	$("#diagram").kendoDiagram(
-		{
-	 		dataSource: [
-	                 {
-	
-	                     "name" : "Telerik",
-	                     "items": [
-	                         {"name": "Kendo"},
-	                         {"name": "Icenium"}
-	                     ]
-	                 }
-	             ],
-	 		template  : "#= item.name #",
-			autoBind: false
-		}
-	);
+    <div id="diagram"></div>
+    <script>
+    $("#diagram").kendoDiagram(
+        {
+            dataSource: [
+                     {
 
-	diagram.dataSource.read(); // "read()" will fire the "change" event of the dataSource 
-	</script>
+                         "name" : "Telerik",
+                         "items": [
+                             {"name": "Kendo"},
+                             {"name": "Icenium"}
+                         ]
+                     }
+                 ],
+            template  : "#= item.name #",
+            autoBind: false
+        }
+    );
+
+    diagram.dataSource.read(); // "read()" will fire the "change" event of the dataSource
+    </script>
 
 ### name `String` *(default: "Diagram")*
 
@@ -54,7 +54,7 @@ The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If 
 
 See the [dataSource field](#fields-dataSource).
 
-### dragAndDrop `Boolean` *(default: true)*
+### draggable `Boolean` *(default: true)*
 
 Defines whether items can be dropped on the diagram.
 
@@ -74,8 +74,7 @@ This defines whether the shapes can be rotated. If set to false the adorner will
 
 ![Rotatable configuration.](rotatable.png)
 
-
-### visualTemplate `Function` *(default: null)*
+### visualTemplate `Function`
 
 A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual:
 
@@ -91,46 +90,452 @@ A function returning a visual element to render for a given dataSource item. The
 
 #### Example - how to use the visualTemplate
 
-	var getVisual = function(data)
-					{
-					    var g = new kendo.diagram.Group({
-					        autoSize: true
-					    });
-					    var r = new kendo.diagram.Circle({
-					        width : 100,
-					        height: 60,
-					        background: "LimeGreen"
-					    });
-					    g.append(r);
-					    var fn = new kendo.diagram.TextBlock({
-					        text: data.name,
-					        fontSize: 16,
-					        x   : 30,
-					        y   : 30
-					    });
-					    g.append(fn);
-					    return g;
-					}
-	var options = {
-	    dataSource: [
-	        {
-	
-	            "name" : "Telerik",
-	            "items": [
-	                {"name": "Kendo"},
-	                {"name": "Icenium"}
-	            ]
-	        }
-	    ],
-	    autoBind  : true,
-	    visualTemplate  : getVisual
-	};
-	diagram = $("#canvas").kendoDiagram(options).data("kendoDiagram");
-	diagram.layout(); 
+    var getVisual = function(data) {
+        var g = new kendo.diagram.Group({
+            autoSize: true
+        });
+        var r = new kendo.diagram.Circle({
+            width : 100,
+            height: 60,
+            background: "LimeGreen"
+        });
+        g.append(r);
+        var fn = new kendo.diagram.TextBlock({
+            text: data.name,
+            fontSize: 16,
+            x   : 30,
+            y   : 30
+        });
+        g.append(fn);
+        return g;
+    };
 
-### tooltip `Object` *(default: null)*
-### copy `Object` *(default: null)*
- 
+    var diagram = $("#diagram").kendoDiagram({
+        dataSource: [{
+            "name" : "Telerik",
+            "items": [
+                {"name": "Kendo"},
+                {"name": "Icenium"}
+            ]
+        }],
+        autoBind: true,
+        visualTemplate: getVisual
+    }).data("kendoDiagram");
+    diagram.layout();
+
+### connectionsDefaults `Object`
+
+Defines the connections configuration.
+
+### connectionsDefaults.stroke `Object`
+
+Defines the stroke configuration.
+
+### connectionsDefaults.stroke.color `String`
+
+Defines the stroke or line color of the connection.
+
+### connectionsDefaults.hover `Object`
+
+Defines the hover configuration.
+
+### connectionsDefaults.hover.stroke `Object`
+
+Defines the hover stroke configuration.
+
+### connectionsDefaults.hover.stroke.color `String` *(default: "#70CAFF")*
+
+Defines the highlight color when the pointer is hovering over the connection.
+
+### connectionsDefaults.startCap `String` *(default: "FilledCircle")*
+
+The start cap (arrow, head or decoration) of the connection:
+
+* "none": no cap
+* "ArrowStart": a filled arrow
+* "FilledCircle": a filled circle
+
+You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. [the SVG documentation](http://www.w3.org/TR/SVG/painting.html "SVG markers.")).
+
+#### Example - custom connection caps
+
+This defines and adds a custom cap (a small square) to the diagram canvas and is referred to in the connection options.
+
+![Custom square cap.](CustomCap.PNG)
+
+### connectionsDefaults.endCap `String` *(default: "ArrowEnd")*
+
+The start cap (arrow, head or decoration) of the connection:
+
+* "none": no cap
+* "ArrowEnd": a filled arrow
+* "FilledCircle": a filled circle
+
+Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
+
+### connectionsDefaults.points `Array`
+
+Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
+
+#### Example - setting intermediate connection points
+
+![Intermediate connection points.](ConnectionPoints.PNG)
+
+### connectionsDefaults.points.x `Number`
+
+Sets the X coordinate of the point.
+
+### connectionsDefaults.points.y `Number`
+
+Sets the Y coordinate of the point.
+
+### connections `Array`
+
+Defines the connections configuration.
+
+### connections.stroke `Object`
+
+Defines the stroke configuration.
+
+### connections.stroke.color `String`
+
+Defines the stroke or line color of the connection.
+
+### connections.hover `Object`
+
+Defines the hover configuration.
+
+### connections.hover.stroke `Object`
+
+Defines the hover stroke configuration.
+
+### connections.hover.stroke.color `String` *(default: "#70CAFF")*
+
+Defines the highlight color when the pointer is hovering over the connection.
+
+### connections.startCap `String` *(default: "FilledCircle")*
+
+The start cap (arrow, head or decoration) of the connection:
+
+* "none": no cap
+* "ArrowStart": a filled arrow
+* "FilledCircle": a filled circle
+
+You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. [the SVG documentation](http://www.w3.org/TR/SVG/painting.html "SVG markers.")).
+
+#### Example - custom connection caps
+
+This defines and adds a custom cap (a small square) to the diagram canvas and is referred to in the connection options.
+
+![Custom square cap.](CustomCap.PNG)
+
+### connections.endCap `String` *(default: "ArrowEnd")*
+
+The start cap (arrow, head or decoration) of the connection:
+
+* "none": no cap
+* "ArrowEnd": a filled arrow
+* "FilledCircle": a filled circle
+
+Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
+
+### connections.points `Array`
+
+Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
+
+#### Example - setting intermediate connection points
+
+![Intermediate connection points.](ConnectionPoints.PNG)
+
+### connections.points.x `Number`
+
+Sets the X coordinate of the point.
+
+### connections.points.y `Number`
+
+Sets the Y coordinate of the point.
+
+### shapeDefaults `Object`
+
+Defines the shape options.
+
+### shapeDefaults.data `String` *(default: "rectangle")*
+
+The root of a Shape is a SVG group (which on its own is invisible) inside which one or more SVG visual elements can be added. By default the Shape has a simple SVG primitive (see however the custom shape topic) and this property defines this primitive. There are three possibilities:
+
+* "rectangle": this is the default option, representing a SVG Rectangle
+* "circle" : a SVG circle/ellipse
+* any other string will be understood as the data of a SVG Path and the Shape options are passed on to the Path instantiation. The data for Path follow [the standard SVG format](http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+
+### shapeDefaults.stroke `Object`
+
+Defines the stroke configuration.
+
+### shapeDefaults.stroke.color `String` *(default: "Black")*
+
+Defines the color of the shape's stroke.
+
+### shapeDefaults.stroke.width `Number` *(default: 1)*
+
+Defines the thickness or width of the shape's stroke.
+
+### shapeDefaults.stroke.dashType `String`
+
+The dash type of the shape.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### shapeDefaults.x `Number` *(default: 0)*
+
+Defines the x-coordinate of the shape when added to the diagram.
+
+### shapeDefaults.y `Number` *(default: 0)*
+
+Defines the y-coordinate of the shape when added to the diagram.
+
+### shapeDefaults.minWidth `Number` *(default: 20)*
+
+Defines the minimum width the shape should have, i.e. it cannot be resized to a value smaller than the given one.
+
+### shapeDefaults.minHeight `Number` *(default: 20)*
+
+Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
+
+### shapeDefaults.width `Number` *(default: 100)*
+
+Defines the width of the shape when added to the diagram.
+
+### shapeDefaults.height `Number` *(default: 100)*
+
+Defines the height of the shape when added to the diagram.
+
+### shapeDefaults.background `String` *(default: "SteelBlue")*
+
+Defines the fill-color of the shape.
+
+### shapeDefaults.hover `Object`
+
+Defines the hover configuration.
+
+### shapeDefaults.hover.background `String` *(default: "#70CAFF")*
+
+Hover's background color.
+
+### connectors `Array`
+
+Defines the connectors the shape owns.
+
+* "top" - top connector.
+* "right" - right connector.
+* "bottom" - bottom connector.
+* "bottomRight" - bottom right connector.
+* "left" - left connector.
+* "auto" - auto connector.
+
+You can easily define your own custom connectors or mix-match with the above defined custom connectors.
+
+Example - custom shape with custom connectors
+
+The following defines a custom shape with connectors adapted to the shape's outline. Note in particular the various helpful methods (right(), left(), top()) to define positions relative to the shape.
+
+![Custom connectors on custom shape.](../../../getting-started/dataviz/diagram/ThreeWayShape.PNG)
+
+    $("#diagram").kendoDiagram({
+        shapeDefaults: [{
+            data: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
+            connectors: [{
+                name: "Upstream",
+                position: function(shape) {
+                    return shape.transformPoint(shape.bounds().top());
+                }
+            }, {
+                name: "SideLeft",
+                position: function(shape) {
+                    var p = shape.bounds().left();
+                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y+17));
+                }
+            }, {
+                name: "SideRight",
+                position: function(shape) {
+                    var p = shape.bounds().right();
+                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y + 17));
+                }
+            }]
+        }]
+    });
+
+### shapeDefaults.connectors.connector `Object`
+
+### shapeDefaults.connectors.connector.position `String`
+
+### shapeDefaults.connectors.connector.description `String`
+
+### shapeDefaults.rotation `Object`
+
+### shapeDefaults.rotation.angle `Number` *(default: 0)*
+
+![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
+
+### shapeDefaults.content `String`
+
+Sets the text content of the Shape.
+
+### shapeDefaults.bounds `Object`
+
+![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *all bounds should be merged*
+
+### shapes `Array`
+
+Defines the shape options.
+
+### shapes.data `String` *(default: "rectangle")*
+
+The root of a Shape is a SVG group (which on its own is invisible) inside which one or more SVG visual elements can be added. By default the Shape has a simple SVG primitive (see however the custom shape topic) and this property defines this primitive. There are three possibilities:
+
+* "rectangle": this is the default option, representing a SVG Rectangle
+* "circle" : a SVG circle/ellipse
+* any other string will be understood as the data of a SVG Path and the Shape options are passed on to the Path instantiation. The data for Path follow [the standard SVG format](http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+
+### shapes.stroke `Object`
+
+Defines the stroke configuration.
+
+### shapes.stroke.color `String`
+
+Defines the color of the shape's stroke.
+
+### shapes.stroke.width `Number` *(default: 1)*
+
+Defines the thickness or width of the shape's stroke.
+
+### shapes.stroke.dashType `String`
+
+The dash type of the shape.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### shapes.x `Number` *(default: 0)*
+
+Defines the x-coordinate of the shape when added to the diagram.
+
+### shapes.y `Number` *(default: 0)*
+
+Defines the y-coordinate of the shape when added to the diagram.
+
+### shapes.minWidth `Number` *(default: 20)*
+
+Defines the minimum width the shape should have, i.e. it cannot be resized to a value smaller than the given one.
+
+### shapes.minHeight `Number` *(default: 20)*
+
+Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
+
+### shapes.width `Number` *(default: 100)*
+
+Defines the width of the shape when added to the diagram.
+
+### shapes.height `Number` *(default: 100)*
+
+Defines the height of the shape when added to the diagram.
+
+### shapes.background `String`
+
+Defines the fill-color of the shape.
+
+### shapes.hover `Object`
+
+Defines the hover configuration.
+
+### shapes.hover.background `String`
+
+Hover's background color.
+
+### connectors `Array`
+
+Defines the connectors the shape owns.
+
+* "top" - top connector.
+* "right" - right connector.
+* "bottom" - bottom connector.
+* "bottomRight" - bottom right connector.
+* "left" - left connector.
+* "auto" - auto connector.
+
+You can easily define your own custom connectors or mix-match with the above defined custom connectors.
+
+Example - custom shape with custom connectors
+
+The following defines a custom shape with connectors adapted to the shape's outline. Note in particular the various helpful methods (right(), left(), top()) to define positions relative to the shape.
+
+![Custom connectors on custom shape.](../../../getting-started/dataviz/diagram/ThreeWayShape.PNG)
+
+    $("#diagram").kendoDiagram({
+        shapes: [{
+            data: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
+            connectors: [{
+                name: "Upstream",
+                position: function(shape) {
+                    return shape.transformPoint(shape.bounds().top());
+                }
+            }, {
+                name: "SideLeft",
+                position: function(shape) {
+                    var p = shape.bounds().left();
+                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y+17));
+                }
+            }, {
+                name: "SideRight",
+                position: function(shape) {
+                    var p = shape.bounds().right();
+                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y + 17));
+                }
+            }]
+        }]
+    });
+
+### shapes.connectors.connector `Object`
+
+### shapes.connectors.connector.position `String`
+
+### shapes.connectors.connector.description `String`
+
+### shapes.rotation `Object`
+
+### shapes.rotation.angle `Number` *(default: 0)*
+
+![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
+
+### shapes.content `String`
+
+Sets the text content of the Shape.
+
+### shapes.bounds `Object`
+
+![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *all bounds should be merged*
+
+### tooltip `Object`
+
+The tooltip configuration.
+
+### copy `Object`
+
+The copy configuration.
 
 ## Fields
 
@@ -147,17 +552,15 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
     <div id="diagram"></div>
     <script>
     $("#diagram").kendoDiagram({
-      dataSource: [
-                      {
-
-                          "name" : "Telerik",
-                          "items": [
-                              {"name": "Kendo"},
-                              {"name": "Icenium"}
-                          ]
-                      }
-                  ],
-      template  : "#= item.name #"
+        dataSource: [{
+            name: "Telerik",
+            items: [{
+                name: "Kendo"
+            }, {
+                name: "Icenium"
+            }]
+        }],
+        template: "#= item.name #"
     });
     var diagram = $("#diagram").data("kendoDiagram");
     diagram.dataSource.add({ "name": "XAML" });
@@ -168,7 +571,7 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
 
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Doesn't work right now, need to hook up or amend the update of the source.*
 
- 	<div id="diagram"></div>
+    <div id="diagram"></div>
     <script>
     $("#diagram").kendoDiagram({
       dataSource: [
@@ -191,9 +594,9 @@ The [data source](/api/framework/datasource) of the widget. Configured via the [
 #### Example - remove a data item in the data source
 
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Same here, need to hook up or amend the update of the source.*
- 
 
- 	<div id="diagram"></div>
+
+    <div id="diagram"></div>
     <script>
     $("#diagram").kendoDiagram({
       dataSource: [
@@ -259,7 +662,7 @@ Prepares the widget for safe removal from the DOM. Detaches all event handlers a
       template  : "#= item.name #"
     });
     var diagram = $("#diagram").data("kendoDiagram");
-    diagram.destroy();    
+    diagram.destroy();
     </script>
 
 ### zoom
@@ -348,7 +751,7 @@ Clears the content of the diagram.
 ### connect
 
 Creates a connection which can be either attached on both ends to a shape, half attached or floating (not attached to any shape). When a connection is (half) attached to a shape it happens through the intermediate Connector object. Connectors are part of a Shape's definition and you can specify the binding of a connection to a shape directly via the shape or via one of its connectors. If you specify a Shape as a connection's endpoint the Auto-connector will be used. This means that the endpoint of the connection will switch to the most convenient (in the sense of shortest path) connector automatically. If you specify a shape's connector as an endpoint for a connection the endpoint will remain attached to that given Connector instance.
-Finally, if you wish to have a (half) floating connection endpoint you should specify a Point as parameter for the floating end. 
+Finally, if you wish to have a (half) floating connection endpoint you should specify a Point as parameter for the floating end.
 
 ![Creating connections.](connect.png)
 
@@ -373,9 +776,9 @@ The options of the new connection. See the Connection's options.
     <script>
     $("#diagram").kendoDiagram();
     var diagram = $("#diagram").data("kendoDiagram");
-	var shape1 = diagram.addShape(new Point(100, 100));
-	var shape2 = diagram.addShape(new Point(400, 100));
-	var connection = diagram.connect(shape1, shape2)        
+    var shape1 = diagram.addShape(new Point(100, 100));
+    var shape2 = diagram.addShape(new Point(400, 100));
+    var connection = diagram.connect(shape1, shape2)
     </script>
 
 #### Example - connecting two shapes using the specific connectors
@@ -383,9 +786,9 @@ The options of the new connection. See the Connection's options.
     <script>
     $("#diagram").kendoDiagram();
     var diagram = $("#diagram").data("kendoDiagram");
-	var shape1 = diagram.addShape(new Point(100, 100));
-	var shape2 = diagram.addShape(new Point(400, 100));
-	var connection = diagram.connect(shape1.getConnector["Top"], shape2.getConnector["Bottom"])        
+    var shape1 = diagram.addShape(new Point(100, 100));
+    var shape2 = diagram.addShape(new Point(400, 100));
+    var connection = diagram.connect(shape1.getConnector["Top"], shape2.getConnector["Bottom"])
     </script>
 
 #### Example - creating a half-floating connection
@@ -393,8 +796,8 @@ The options of the new connection. See the Connection's options.
     <script>
     $("#diagram").kendoDiagram();
     var diagram = $("#diagram").data("kendoDiagram");
-	var shape = diagram.addShape(new Point(100, 100));	 
-	var connection = diagram.connect(new Point(150,150), shape)        
+    var shape = diagram.addShape(new Point(100, 100));
+    var connection = diagram.connect(new Point(150,150), shape)
     </script>
 
 Note that the Shape holds an indexed connectors collection. Instead of accessing a default or custom connector by means of the **getConnector("name-of-connector")** method you could use **connectors[index]** instead.
@@ -402,7 +805,7 @@ Note that the Shape holds an indexed connectors collection. Instead of accessing
 
 ### connected
 
-Returns whether the two given shapes are connected through a connection. 
+Returns whether the two given shapes are connected through a connection.
 
 #### Parameters
 
@@ -426,17 +829,17 @@ The Connection instance to be added to the diagram.
 
 ##### undoable `Boolean` *(default:true)*
 
-Whether the addition should be recorded in the undo-redo stack. 
+Whether the addition should be recorded in the undo-redo stack.
 
 #### Example - adding a Connection to the diagram
 
     <script>
     $("#diagram").kendoDiagram();
     var diagram = $("#diagram").data("kendoDiagram");
-	var shape1 = diagram.addShape(new Point(100, 100));
+    var shape1 = diagram.addShape(new Point(100, 100));
     var shape2 = diagram.addShape(new Point(300, 200));
-    
-	var connection = new kendo.diagram.Connection(shape1, shape2, { stroke: "red", strokeThickness: 3});
+
+    var connection = new kendo.diagram.Connection(shape1, shape2, { stroke: { color: "red" } });
     diagram.addConnection(connection);
     </script>
 
@@ -452,7 +855,7 @@ A Shape instance or a Point where the default shape type will be added.
 
 ##### undoable `Boolean` *(default:true)*
 
-Whether the addition should be recorded in the undo-redo stack. 
+Whether the addition should be recorded in the undo-redo stack.
 
 #### Example - adding a shape to the diagram
 
@@ -460,7 +863,7 @@ Whether the addition should be recorded in the undo-redo stack.
     $("#diagram").kendoDiagram();
     var diagram = $("#diagram").data("kendoDiagram");
 
-	 diagram.addShape(new Point(100, 100));
+     diagram.addShape(new Point(100, 100));
      var shape = new kendo.diagram.Shape({x:500, y:100, background: "red"});
      diagram.addShape(shape);
     </script>
@@ -472,14 +875,14 @@ Undoes the previous action.
 #### Example - undoing items removal
 
     <script>
-    	$("#diagram").kendoDiagram();
-    	var diagram = $("#diagram").data("kendoDiagram");
+        $("#diagram").kendoDiagram();
+        var diagram = $("#diagram").data("kendoDiagram");
 
-	 	var shape1 = diagram.addShape(new Point(100, 100));
-	    var shape2 = diagram.addShape(new Point(400, 100));
-	    var con = diagram.connect(shape1,shape2);
-	    diagram.remove([shape1, shape2], true);
-	    diagram.undo();
+        var shape1 = diagram.addShape(new Point(100, 100));
+        var shape2 = diagram.addShape(new Point(400, 100));
+        var con = diagram.connect(shape1,shape2);
+        diagram.remove([shape1, shape2], true);
+        diagram.undo();
     </script>
 
 ### redo
@@ -503,13 +906,13 @@ Whether the removal should be recorded in the undo-redo stack.
 #### Example - removing items
 
     <script>
-    	$("#diagram").kendoDiagram();
-    	var diagram = $("#diagram").data("kendoDiagram");
+        $("#diagram").kendoDiagram();
+        var diagram = $("#diagram").data("kendoDiagram");
 
-	 	var shape1 = diagram.addShape(new Point(100, 100));
-	    var shape2 = diagram.addShape(new Point(400, 100));
-	    var con = diagram.connect(shape1,shape2);
-	    diagram.remove([shape1, shape2, con]);	    
+        var shape1 = diagram.addShape(new Point(100, 100));
+        var shape2 = diagram.addShape(new Point(400, 100));
+        var con = diagram.connect(shape1,shape2);
+        diagram.remove([shape1, shape2, con]);
     </script>
 
 ### select
@@ -528,7 +931,7 @@ Gets the currently selected items is no parameter is specified. If a parameter i
 
 ##### options `Object`
 
-Only one Boolean option is currently defined; addToSelection. If set to true the newly selected items will be added to the existing selection. Otherwise a new selection set is created. The default is false. 
+Only one Boolean option is currently defined; addToSelection. If set to true the newly selected items will be added to the existing selection. Otherwise a new selection set is created. The default is false.
 
 
 ### toFront
@@ -582,14 +985,14 @@ Brings one or more items into the view in function of various criteria.
 This will offset/pan the diagram to bring the rectangle at position (500,500) into view.
 
     <script>
-    	$("#diagram").kendoDiagram();
-    	var diagram = $("#diagram").data("kendoDiagram");
+        $("#diagram").kendoDiagram();
+        var diagram = $("#diagram").data("kendoDiagram");
 
-	 	var shape1 = diagram.addShape(new Point(100, 100));
-	    var shape2 = diagram.addShape(new Point(400, 100));
-	    var con = diagram.connect(shape1,shape2);
+        var shape1 = diagram.addShape(new Point(100, 100));
+        var shape2 = diagram.addShape(new Point(400, 100));
+        var con = diagram.connect(shape1,shape2);
 
-	    diagram.bringIntoView(new kendo.diagram.Rect(500, 500, 10, 10));
+        diagram.bringIntoView(new kendo.diagram.Rect(500, 500, 10, 10));
     </script>
 
 #### Example - bring an item into view
@@ -597,7 +1000,7 @@ This will offset/pan the diagram to bring the rectangle at position (500,500) in
 The second shape has a vertical position of 1000 and is off the screen at launch. Upon clicking the diagram this item will be in the view.
 
     <script>
-    	var shape2;
+        var shape2;
         function init()
         {
             var diagramElement = $("#canvas").kendoDiagram();
@@ -621,17 +1024,17 @@ The second shape has a vertical position of 1000 and is off the screen at launch
 
 ### getBoundingBox
 
-Returns the bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned. 
+Returns the bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
 
 #### Example - bring an item into view
 
 This will return "[0, 0, 600, 600]" in the console of the browser.
 
     <script>
-    	$("#diagram").kendoDiagram();
-    	var diagram = $("#diagram").data("kendoDiagram");
-		
-		var lt = diagram.addShape(new Point(0, 0));
+        $("#diagram").kendoDiagram();
+        var diagram = $("#diagram").data("kendoDiagram");
+
+        var lt = diagram.addShape(new Point(0, 0));
         var rb = diagram.addShape(new Point(500, 500));
         var r = diagram.getBoundingBox();
         console.log("[" + r.x + "," + r.x + "," + r.width +","+ r.height +"]");
@@ -704,10 +1107,10 @@ A variety of options can be specified regarding layout. See below for more infor
 This generates a small, random diagram whereafter the force-directed layout is applied.
 
     <script>
-        	$("#diagram").kendoDiagram();
-        	var diagram = $("#diagram").data("kendoDiagram");
+            $("#diagram").kendoDiagram();
+            var diagram = $("#diagram").data("kendoDiagram");
             diagram.randomDiagram();
-    		diagram.layout({ type: "ForceDirected")};
+            diagram.layout({ type: "ForceDirected")};
         </script>
 
 ### alignShapes
@@ -755,7 +1158,7 @@ Returns the shape or connection with the specified identifier.
 ## Visual elements
 
 The visual primitives are wrappers around the native SVG elements and make it easy to create a custom Shape or other custom diagram elements. A complete overview of all the members would fall outside the scope of this help and you are referred to the SVG documentation for more information. In fact, all of the properties and methods defined in these primitives point directly to a corresponding member in the native SVG element. Rather than reproducing the online documentation we'll give ample examples to illustrate the technique (to create custom visuals and add content to the diagram).
- 
+
 It should be emphasized that when you add content to the underlying canvas or define a custom Shape the serialization will not automatically 'know' about these additions. If you wish to preserve them between sessions or in a copy/paste operation you'll need to override the serialize() method of the Shape or the save() method of the diagram.
 
 ### TextBlock
@@ -764,9 +1167,9 @@ This represents a non-wrapping text element.
 
 ##### Example - adding a text element to the background canvas
 
-This will add a text element underneath the diagram in the canvas. 
+This will add a text element underneath the diagram in the canvas.
 
-	diagram.canvas.append(
+    diagram.canvas.append(
         new kendo.diagram.TextBlock(
         {   text:"Kendo diagrams",
             x:200,
@@ -776,46 +1179,46 @@ This will add a text element underneath the diagram in the canvas.
             background: "SteelBlue"
         })
         );
-	
+
 ##### Example - define a custom shape with databound text in it
 
 
-	var getVisual = function(data)
-					{
-					    var g = new kendo.diagram.Group({
-					        autoSize: true
-					    });
-					    var r = new kendo.diagram.Circle({
-					        width : 100,
-					        height: 60,
-					        background: "LimeGreen"
-					    });
-					    g.append(r);
-					    var fn = new kendo.diagram.TextBlock({
-					        text: data.name,
-					        fontSize: 16,
-					        x   : 30,
-					        y   : 30
-					    });
-					    g.append(fn);
-					    return g;
-					}
-	var options = {
-	    dataSource: [
-	        {
-	
-	            "name" : "Telerik",
-	            "items": [
-	                {"name": "Kendo"},
-	                {"name": "Icenium"}
-	            ]
-	        }
-	    ],
-	    autoBind  : true,
-	    visualTemplate  : getVisual
-	};
-	diagram = $("#canvas").kendoDiagram(options).data("kendoDiagram");
-	diagram.layout(); 
+    var getVisual = function(data)
+                    {
+                        var g = new kendo.diagram.Group({
+                            autoSize: true
+                        });
+                        var r = new kendo.diagram.Circle({
+                            width : 100,
+                            height: 60,
+                            background: "LimeGreen"
+                        });
+                        g.append(r);
+                        var fn = new kendo.diagram.TextBlock({
+                            text: data.name,
+                            fontSize: 16,
+                            x   : 30,
+                            y   : 30
+                        });
+                        g.append(fn);
+                        return g;
+                    }
+    var options = {
+        dataSource: [
+            {
+
+                "name" : "Telerik",
+                "items": [
+                    {"name": "Kendo"},
+                    {"name": "Icenium"}
+                ]
+            }
+        ],
+        autoBind  : true,
+        visualTemplate  : getVisual
+    };
+    diagram = $("#canvas").kendoDiagram(options).data("kendoDiagram");
+    diagram.layout();
 
 ### Rectangle
 
@@ -827,53 +1230,55 @@ This example creates a databound, custom shape with Rectangle primitives into a 
 
 ![Simple bar chart using rectangles.](ChartShape.PNG)
 
-	var getVisual = function(data)
-	{
-	    var g = new kendo.diagram.Group({
-	        autoSize: true
-	    });
-	    var r = new kendo.diagram.Rectangle({
-	        width : 100,
-	        height: 80,
-	        background: "White",
-	        stroke: "DimGray"
-	    });
-	    g.append(r);
-	    var d = data.data;
-	    if(d){
-	        for(var k=0;k< d.length; k++){
-	            var color= d[k]<40? "green":"red";
-	            g.append(new kendo.diagram.Rectangle({x: 10+k*12, y: 60- d[k], height:d[k], width:10, background:color, stroke:"none"}));
-	        }
-	    }
-	
-	    var fn = new kendo.diagram.TextBlock({
-	        text: data.name,
-	        fontSize: 11,
-	        fontFamily:"Segoe UI",
-	        background:"gray",
-	        x   : 30,
-	        y   : 13
-	    });
-	    g.append(fn);
-	    return g;
-	}
-	var options = {
-	    dataSource: [
-	        {
-	            "name" : "Josh K.",
-	            "data" : [10.5, 44.1, 33.7, 12.0, 23.9 ],
-	            "items": [
-	                {"name": "Anna W.", "data": [7.5, 24.4, 13.0, 40.9, 13.1 ]},
-	                {"name": "Jeff L.", "data": [20.5, 34.7, 43.7, 42.0, 3.9 ]}
-	            ]
-	        }
-	    ],
-	    autoBind  : true,
-	    visualTemplate: getVisual
-	};
-	diagram = $("#canvas").kendoDiagram(options).data("kendoDiagram");
-	diagram.layout({type:"Tree", subtype:"MindmapHorizontal"});
+    var getVisual = function(data)
+    {
+        var g = new kendo.diagram.Group({
+            autoSize: true
+        });
+        var r = new kendo.diagram.Rectangle({
+            width : 100,
+            height: 80,
+            background: "white",
+            stroke: {
+                color: "dimGray"
+            }
+        });
+        g.append(r);
+        var d = data.data;
+        if(d){
+            for(var k=0;k< d.length; k++){
+                var color= d[k]<40? "green":"red";
+                g.append(new kendo.diagram.Rectangle({x: 10+k*12, y: 60- d[k], height:d[k], width:10, background:color}));
+            }
+        }
+
+        var fn = new kendo.diagram.TextBlock({
+            text: data.name,
+            fontSize: 11,
+            fontFamily:"Segoe UI",
+            background:"gray",
+            x   : 30,
+            y   : 13
+        });
+        g.append(fn);
+        return g;
+    }
+    var options = {
+        dataSource: [
+            {
+                "name" : "Josh K.",
+                "data" : [10.5, 44.1, 33.7, 12.0, 23.9 ],
+                "items": [
+                    {"name": "Anna W.", "data": [7.5, 24.4, 13.0, 40.9, 13.1 ]},
+                    {"name": "Jeff L.", "data": [20.5, 34.7, 43.7, 42.0, 3.9 ]}
+                ]
+            }
+        ],
+        autoBind  : true,
+        visualTemplate: getVisual
+    };
+    diagram = $("#canvas").kendoDiagram(options).data("kendoDiagram");
+    diagram.layout({type:"Tree", subtype:"MindmapHorizontal"});
 
 ### Path
 
@@ -899,7 +1304,7 @@ This represents an image.
 ### Group
 
 This represents an invisible, grouping element with visual children. Groups can be nested to form a hierarchy.
- 
+
 ### Circle
 
 This represents an ellipse or circle.
@@ -928,7 +1333,7 @@ See also the Matrix and MatrixVector objects in the Maths documentation.
 ----------
 
 
-# kendo.dataviz.ui.diagram Math and related 
+# kendo.dataviz.ui.diagram Math and related
 
 Kendo diagram contains various structures and utilities related to transformations of visuals, geometry, graph analysis and graph layout. A detailed explanation of all structures and methods would go well beyond the scope of this help, you can find additional information in these sources:
 
@@ -944,15 +1349,15 @@ Represents a collection of key-value pairs (called buckets) stored in a classic 
 
 Internally the buckets look like
 
-	[hashOfKey] <=> {key: givenKey, value: givenValue }
+    [hashOfKey] <=> {key: givenKey, value: givenValue }
 
 and you can add, remove or retrieve these like so
 
-	var ht = new HashTable();
-	ht.add(givenKey, givenValue);
-	var obj = ht.get(givenKey);
-	var theValue = obj.value;
-	ht.remove(givenKey);
+    var ht = new HashTable();
+    ht.add(givenKey, givenValue);
+    var obj = ht.get(givenKey);
+    var theValue = obj.value;
+    ht.remove(givenKey);
 
 where the key and value can be arbitrary values or objects.
 
@@ -974,33 +1379,33 @@ Returns whether the given key exists in the table.
 ### forEach
 Loops over the buckets in the hashtable (the key/value are not given as parameters but as one key-value object!).
 
-	ht.forEach(function(obj){
-		var key = obj.key;
-		var value = obj.value;
- 	})
+    ht.forEach(function(obj){
+        var key = obj.key;
+        var value = obj.value;
+    })
 
 ###clone
 Returns a (shallow) clone of the HashTable.
-  
+
 ## Set
 
-A set only contains once a particular item, contrasting other data structure allowing repeated occurrences. 
+A set only contains once a particular item, contrasting other data structure allowing repeated occurrences.
 
-	var set = new Set();
-	set.add("some element");
-	set.add("some element"); // will not be added since items in a set appear only once
-	
+    var set = new Set();
+    set.add("some element");
+    set.add("some element"); // will not be added since items in a set appear only once
+
 You can pass a Dictionary or a HashTable in the constructor, it will populate the Set with the key-value buckets defined by these structures;
 
-	var dic = new Dictionary();
-	dic.add("k1", "Telerik");
-	var set = new Set(dic);
-	set.forEach(
-		function(kv){
-			var key = kv.key; // "k1"
-			var value = kv.value; // "Telerik"
-		}
-	);
+    var dic = new Dictionary();
+    dic.add("k1", "Telerik");
+    var set = new Set(dic);
+    set.forEach(
+        function(kv){
+            var key = kv.key; // "k1"
+            var value = kv.value; // "Telerik"
+        }
+    );
 The Set structure is based internally on the HashTable and thus has the same characteristics. The Set specific methods are the following;
 
 ### toArray
@@ -1019,21 +1424,21 @@ The add/remove/set methods are similar to the HashTable, the Dictionary adds to 
 
 A loop over the keys of the dictionary.
 
-	var dictionary = new Dictionary();
-	dictionary.forEachKey(function(key){...});
+    var dictionary = new Dictionary();
+    dictionary.forEachKey(function(key){...});
 
 ### forEachValue
 
 A loop over the values in the dictionary.
 
-	var dictionary = new Dictionary();
-	dictionary.forEachValue(function(value){...});
+    var dictionary = new Dictionary();
+    dictionary.forEachValue(function(value){...});
 
 ### forEach
 Loops over the key-value pairs, handed over as paramters;
 
-	var dictionary = new Dictionary();
-	dictionary.forEach(function(key, value){...});
+    var dictionary = new Dictionary();
+    dictionary.forEach(function(key, value){...});
 
 ### keys
 Returns an array of the dictionary keys.
@@ -1061,11 +1466,11 @@ The Range object is effectively an array of equally separated numbers. This sepa
 ## Matrix
 
 The Matrix object is an abstraction of the transformation matrix as used in SVG. The 3x3 matrix contains only six elements which are denoted by `a, b, c, d, e, f` and are organized as
-    
+
     |a c e|
     |b d f|
     |0 0 1|
-    
+
 This means that the matrix can also be represented a 6-tuple or vector `[a, b, c, d, e, f]` which you can create using the MatrixVector class. Various methods are available which allow you to go back and forth between these two classes.
 
 Special cases of the Matrix and MatrixVector are:
@@ -1171,8 +1576,8 @@ Return the opposite node in the link of the given node or null if the given node
     var from = new Node("from");
     var to = new Node("to");
     var link = new Link(from, to);
-	var opposite = link.getComplement(from); // returns the "to" node
-	var nothing = link.getComplement(new Node()) // returns null
+    var opposite = link.getComplement(from); // returns the "to" node
+    var nothing = link.getComplement(new Node()) // returns null
 
 ### getCommonNode
 
@@ -1182,18 +1587,18 @@ Returns the overlap (i.e. overlapping node) of the current link with the given o
 
 Returns whether the current link is bridging the given nodes, i.e. whether the given nodes correspond to the source and target of the current link.
 
-	var from = new Node("from");
+    var from = new Node("from");
     var to = new Node("to");
     var link = new Link(from, to);
-	var isBridging = link.isBriding(from, to); // returns true
+    var isBridging = link.isBriding(from, to); // returns true
 
 ### getNodes
 Returns the source and target of this link as a tuple (array of two elements).
 
-	var from = new Node("from");
+    var from = new Node("from");
     var to = new Node("to");
     var link = new Link(from, to);
-	var tuple = link.getNodes(); // returns [from, to]
+    var tuple = link.getNodes(); // returns [from, to]
 
 ### incidentWith
 
@@ -1201,7 +1606,7 @@ Returns whether the given node is either the source or the target of the current
 
 ### adjacentTo
 
- Returns whether the given link is a continuation of the current one. This can be both via an incoming or outgoing link. 
+ Returns whether the given link is a continuation of the current one. This can be both via an incoming or outgoing link.
 
 ### changeSource
 
@@ -1274,19 +1679,19 @@ The predefined graphs are:
 
 There is a simple method which turns a Graph into a diagram as follows:
 
-	// assuming 'diagram' is the name of the Kendo diagram control instance
- 	var graph = kendo.diagram.Graph.Predefined.Mindmap();
-	kendo.diagram.Graph.Utils.createDiagramFromGraph(diagram, graph);
+    // assuming 'diagram' is the name of the Kendo diagram control instance
+    var graph = kendo.diagram.Graph.Predefined.Mindmap();
+    kendo.diagram.Graph.Utils.createDiagramFromGraph(diagram, graph);
 
 The **createDiagramFromGraph** method also has an optional final boolean parameter which turns layout on or off. If you specify
 
-	kendo.diagram.Graph.Utils.createDiagramFromGraph(diagram, graph, true);
+    kendo.diagram.Graph.Utils.createDiagramFromGraph(diagram, graph, true);
 
 the force-directed layout will be applied after the diagram has been generated.
 
 To generate random diagram you can use the randomDiagram method directly on the control instance
 
-	 diagram.randomDiagram(50, 3, true);
+     diagram.randomDiagram(50, 3, true);
 
 which will generate a random tree diagram with 50 nodes, a maximum incidence (i.e. degree) of three. The last parameter specified whether the random diagram should be a tree. If set to false it means there are potentially cycles.
 You can also use the following methods from the utilities:
@@ -1297,8 +1702,8 @@ You can also use the following methods from the utilities:
 
 These methods are aliased in the Predefined class too, so you can create a balanced forest like so
 
-	var g = kendo.diagram.Graph.Predefined.Forest(3, 2, 3); // 3 levels, degree two, three trees
-	var useRandomSizes = true; // create nodes or shapes with random width and height
+    var g = kendo.diagram.Graph.Predefined.Forest(3, 2, 3); // 3 levels, degree two, three trees
+    var useRandomSizes = true; // create nodes or shapes with random width and height
     kendo.diagram.Graph.Utils.createDiagramFromGraph(diagram, g, false, useRandomSizes);
 
 
@@ -1331,14 +1736,14 @@ Kendo diagram includes three of the most used layout algorithms which should cov
 The generic way to apply a layout is by calling the **layout()** method on the diagram. The method has two parameters:
 
 - the **layout type**: one of the three layout types enumerated above. If none is specified the TreeLayout will be applied.
-- the **options**: this can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.  
+- the **options**: this can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.
 
 ## Grid parameters
 
-Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.             
+Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
 ![Diagram component](ComponentExample.png)
 
-A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components. 
+A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components.
 
 When you apply a certain layout an analysis will first split the diagram in components, arrange each component individually and thereafter organize the components in a grid. The common parameters referred above deal with this grid layout, they define the width, margin and padding of the (invisible) grid used to organize the components.
 
@@ -1349,9 +1754,9 @@ When you apply a certain layout an analysis will first split the diagram in comp
                         TreeLayoutType: kendo.diagram.TreeLayoutType.TreeDown,
                         horizontalSeparation: 15,
                         verticalSeparation: 80,
-                        componentsGridWidth: 5000, 
+                        componentsGridWidth: 5000,
                         totalMargin: new Size(50, 50),
-                        componentMargin: new Size(20, 20)                       
+                        componentMargin: new Size(20, 20)
                     }
             )
 
@@ -1368,7 +1773,7 @@ The tree layout needs little introduction; it organizes a diagram in a hierarchi
 - **Tree left:** the tree is arranged with the root at the left and its children sideways to the right
 - **Tree right:** the tree is arranged with the root at the right and its children sideways to the left
 - **Mindmapping horizontal:** the root sits at the center and its children are spread equally to the left and right
-- **Mindmapping vertical:** the root sits at the center and its children are spread equally above and below 
+- **Mindmapping vertical:** the root sits at the center and its children are spread equally above and below
 - **Radial:** the root sits at the center and its children are spread radially around
 - **Tip-over:** a special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example.
 
@@ -1376,7 +1781,7 @@ The default tree sub-type is the TreeDown option and you can specify a particula
 
     diagram.layout(kendo.diagram.LayoutTypes.TreeLayout,
                     {
-                        TreeLayoutType    : kendo.diagram.TreeLayoutType.TreeUp                        
+                        TreeLayoutType    : kendo.diagram.TreeLayoutType.TreeUp
                     }
             )
 You can alter the separation between nodes of the four standard tree types (TreeDown, TreeUp, TreeLeft, TreeRight) as shown in the picture below;
@@ -1387,7 +1792,7 @@ You can alter the separation between nodes of the four standard tree types (Tree
                     {
                         TreeLayoutType: kendo.diagram.TreeLayoutType.TreeDown,
                         horizontalSeparation: 15,
-                        verticalSeparation: 80                       
+                        verticalSeparation: 80
                     }
             )
 
@@ -1400,7 +1805,7 @@ You can alter the separation between nodes of the four standard tree types (Tree
                     {
                         TreeLayoutType: kendo.diagram.TreeLayoutType.MindmapHorizontal,
                         horizontalSeparation: 60,
-                        verticalSeparation: 10                        
+                        verticalSeparation: 10
                     }
             )
 
@@ -1418,7 +1823,7 @@ The radial tree layout has four parameters;
                     {
                         TreeLayoutType: kendo.diagram.TreeLayoutType.RadialTree,
                         radialFirstLevelSeparation: 250,
-                        radialSeparation: 50                     
+                        radialSeparation: 50
                     }
             )
 
@@ -1432,19 +1837,19 @@ The radial tree layout has four parameters;
                         horizontalSeparation: 50,
                         underneathVerticalTopOffset: 20,
                         underneathHorizontalOffset: 50,
-                        underneathVerticalSeparation: 20                        
+                        underneathVerticalSeparation: 20
                     }
             )
 
 The tip-over layout has some specific parameters:
 
 - the verticalSeparation parameter is **not used** in this layout but rather replaced with three additional ones
-- the **horizontalSeparation** parameter is only used for the direct children of the root   
+- the **horizontalSeparation** parameter is only used for the direct children of the root
 - the **underneathVerticalTopOffset** defines the vertical separation between a parent and its first child. This offsets the whole set of children with respect to its parent.
 - the **underneathVerticalSeparation** defines the vertical separation between siblings and sub-branches (see picture)
 - the **underneathHorizontalOffset** defines the horizontal offset from a child with respect to its parent
 
- 
+
 ## Force-directed layout algorithm (aka spring embedded algorithm)
 
 The force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node. The ground-state of a spring is defined by its base length; if a link is longer than there will be a force pulling the nodes together, if the link is shorter the force will push the nodes apart.
@@ -1454,8 +1859,8 @@ The force-directed layout algorithm (also known as the spring-embedder algorithm
 This optimal length is the nodeDistance parameter of the layout and is by default equal to 50 (pixels);
 
     diagram.layout(kendo.diagram.LayoutTypes.ForceDirectedLayout,
-                    {                        
-                        nodeDistance: 50                        
+                    {
+                        nodeDistance: 50
                     }
             )
 
@@ -1489,12 +1894,12 @@ There are several criteria on which this algorithm is based and which are respec
 
 The construction of a layered graph drawing proceeds in a series of steps (assuming an horizontal layer from here on):
 
-- If the input graph is not already a directed acyclic graph, a set of edges is identified the reversal of which will make it acyclic. 
-- The nodes of the directed acyclic graph resulting from the first step are assigned to layers, such that each link goes from a higher layer to a lower layer. 
+- If the input graph is not already a directed acyclic graph, a set of edges is identified the reversal of which will make it acyclic.
+- The nodes of the directed acyclic graph resulting from the first step are assigned to layers, such that each link goes from a higher layer to a lower layer.
 - Edges that span multiple layers are replaced by paths of dummy vertices so that, after this step, each edge in the expanded graph connects two vertices on adjacent layers of the drawing.
 - The nodes within each layer are permuted in an attempt to reduce the number of crossings among the edges connecting it to the previous layer.
 - Each node is assigned a coordinate within its layer, consistent with the permutation calculated in the previous step.
-- The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.  
+- The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.
 
 The parametrization of the layered layout consists of the following elements:
 

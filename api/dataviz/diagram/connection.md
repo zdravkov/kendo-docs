@@ -13,23 +13,35 @@ The Connection object is a visual link or connection in the graph or diagram.
 
 ## Configuration
 
-### stroke `String` *(default: "Gray")*
+### stroke `Object`
+
+Defines the stroke configuration.
+
+### stroke.color `String`
 
 Defines the stroke or line color of the connection.
 
 #### Example - setting the stroke of a Connection
 
-	var s1 = diagram.addShape(new Point(100, 100));
+    var s1 = diagram.addShape(new Point(100, 100));
     var s2 = diagram.addShape(new Point(400, 100));
     var conn = diagram.connect(s1,s2, {stroke:"red"});
 
-### hoveredStroke `String` *(default: "#70CAFF")*
+### hover `Object`
+
+Defines the hover configuration.
+
+### hover.stroke `Object`
+
+Defines the hover stroke configuration.
+
+### hover.stroke.color `String` *(default: "#70CAFF")*
 
 Defines the highlight color when the pointer is hovering over the connection.
 
 #### Example setting color and hovering color of the connection
 
-	var s1 = diagram.addShape(new Point(100, 100));
+    var s1 = diagram.addShape(new Point(100, 100));
     var s2 = diagram.addShape(new Point(400, 100));
     var conn = diagram.connect(s1,s2,
             {
@@ -53,23 +65,22 @@ This defines and adds a custom cap (a small square) to the diagram canvas and is
 
 ![Custom square cap.](CustomCap.PNG)
 
-	 var con = diagram.connect(new Point(100,100), new Point(300,100));
+     var con = diagram.connect(new Point(100,100), new Point(300,100));
 
      diagram.canvas.addMarker(new kendo.diagram.Marker({
-        path  : {
+        path: {
             data: "m20,20l0,60l60,0l0,-60z",
             background: "Black"
         },
-        id    : "custom",
+        id: "custom",
         orientation: "auto",
-        width : 15,
+        width: 15,
         height: 15,
-        ref   : new Point(50, 50),
+        ref: new Point(50, 50),
         viewBox: new kendo.diagram.Rect(0,0,100,100)
     }));
 
     con.redraw({startCap: "custom"});
-
 
 ### endCap `String` *(default: "ArrowEnd")*
 
@@ -81,8 +92,7 @@ The start cap (arrow, head or decoration) of the connection:
 
 Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
 
-
-### points `Array` *(default: null)*
+### points `Array`
 
 Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
 
@@ -90,29 +100,22 @@ Sets the intermediate points (in global coordinates) of the connection. It's imp
 
 ![Intermediate connection points.](ConnectionPoints.PNG)
 
-	var con = diagram.connect(new Point(100,100), new Point(300,100),
-        {
-            points: [ new Point(150,100),
-                      new Point(150,150),
-                      new Point(200,150),
-                      new Point(200,100)
-                    ]
-        }
-	);
+    var con = diagram.connect(new Point(100,100), new Point(300,100), {
+        points: [
+            new Point(150,100),
+            new Point(150,150),
+            new Point(200,150),
+            new Point(200,100)
+        ]
+    });
 
-### points.point `Object` *(default: null)*
-
-### points.point.x `Number` *(default: 0)*
+### points.x `Number`
 
 Sets the X coordinate of the point.
 
-### points.point.y `Number` *(default: 0)*
+### points.y `Number`
 
 Sets the Y coordinate of the point.
-
-### cssClass `String` *(default: "k-connection")*
-
-Defines the name of the CSS class of the SVG Group which represents the visual root of the Connection. The Connection's visual is an SVG Path inside a Group, the CSS class is defined on the level of the Group and not the Path. See [the Kendo styling guide for more information on styling and CSS](http://docs.kendoui.com/getting-started/web/appearance-styling "Appearance and styling in Kendo UI.").
 
 ## Methods
 
@@ -162,7 +165,6 @@ Gets the bounds of the Connection.
 
 Gets or sets the (sub-) type of the Connection which defines the way it routes. The routing of a connection is the way that intermediate points of a Connection defines a route. A route is usually defined on the basis of constraints or behaviors. Currently the framework defines a default polyline route (which simply connects the given intermediate points) and a simple rectangular (aka cascading) route. The cascading type is useful when using tree layout and hierarchies; the routed Connection will in this case enhance the representation of the hierarchy and thus reproduce a classic organization diagram.
 
-
 #### Parameters
 
 ##### value `String` *(default: "Polyline")*
@@ -188,15 +190,14 @@ Redraws the Connection with the given options.
 
 ![Connection redraw.](ConnectionRedraw.PNG)
 
-	var con = diagram.connect(new Point(10,10), new Point(200,70));
-	con.redraw({
-	        content: "Label",
-	        stroke : "Orange",
-	        points:[new Point(200,10)]
-	        }
-	);
-
-
+    var con = diagram.connect(new Point(10,10), new Point(200,70));
+    con.redraw({
+        content: "Label",
+        stroke: {
+            color: "orange"
+        },
+        points:[new Point(200,10)]
+    });
 
 ### refresh
 
