@@ -874,7 +874,7 @@ instance.
         });
     </script>
 
-#### Example - binding to existing data source
+#### Example - binding a shape layer to existing data source
     <div id="map"></div>
     <script>
         var ds = new kendo.data.DataSource({
@@ -891,6 +891,24 @@ instance.
             layers: [{
                 type: "shape",
                 dataSource: ds
+            }]
+        });
+    </script>
+
+#### Example - binding a marker layer to existing data source
+    <div id="map"></div>
+    <script>
+        var ds = new kendo.data.DataSource({
+            data: [{
+                latlng: [0, 0]
+            }]
+        });
+
+        $("#map").kendoMap({
+            layers: [{
+                type: "marker",
+                dataSource: ds,
+                locationField: "latlng"
             }]
         });
     </script>
@@ -967,19 +985,13 @@ Requires the [dataSource](#configuration-layers-dataSource) option to be set.
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
-            center: [30.268107, -97.744821],
-            zoom: 3,
             layers: [{
-                type: "tile",
-                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
-                subdomains: ["a", "b", "c"]
-            }, {
                 type: "marker",
                 locationField: "latlng",
                 dataSource: {
                     data: [{
-                        latlng: [30.268107, -97.744821],
-                        text: "Austin, TX"
+                        latlng: [0, 0],
+                        text: "POI"
                     }]
                 }
             }]
@@ -1000,13 +1012,7 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
-            center: [30.268107, -97.744821],
-            zoom: 3,
             layers: [{
-                type: "tile",
-                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
-                subdomains: ["a", "b", "c"]
-            }, {
                 type: "marker",
                 shape: "pin",
 
@@ -1014,8 +1020,8 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
                 titleField: "text",
                 dataSource: {
                     data: [{
-                        latlng: [30.268107, -97.744821],
-                        text: "Austin, TX"
+                        latlng: [0, 0],
+                        text: "POI"
                     }]
                 }
             }]
@@ -1031,20 +1037,14 @@ Requires the [dataSource](#configuration-layers-dataSource) option to be set.
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
-            center: [30.268107, -97.744821],
-            zoom: 3,
             layers: [{
-                type: "tile",
-                urlTemplate: "http://#= subdomain #.tile2.opencyclemap.org/transport/#= zoom #/#= x #/#= y #.png",
-                subdomains: ["a", "b", "c"]
-            }, {
                 type: "marker",
                 locationField: "latlng",
                 titleField: "text",
                 dataSource: {
                     data: [{
-                        latlng: [30.268107, -97.744821],
-                        text: "Austin, TX"
+                        latlng: [0, 0],
+                        text: "POI"
                     }]
                 }
             }]
@@ -1064,16 +1064,17 @@ Specifies if the tooltip will be hidden when mouse leaves the target element. If
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     autoHide: true,
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1088,16 +1089,17 @@ will disable all animations in the widget.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     animation: false,
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1111,12 +1113,7 @@ The animation that will be used when a Tooltip closes.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     animation: {
                       close: {
@@ -1124,7 +1121,13 @@ The animation that will be used when a Tooltip closes.
                       }
                     },
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1138,12 +1141,7 @@ Effect to be used for closing of the tooltip.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     animation: {
                         close: {
@@ -1151,7 +1149,13 @@ Effect to be used for closing of the tooltip.
                         }
                     },
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1165,12 +1169,7 @@ Defines the animation duration.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     animation: {
                         close: {
@@ -1178,7 +1177,13 @@ Defines the animation duration.
                         }
                     },
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1192,12 +1197,7 @@ The animation that will be used when a Tooltip opens.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     animation: {
                         open: {
@@ -1206,7 +1206,13 @@ The animation that will be used when a Tooltip opens.
                         }
                     },
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1220,12 +1226,7 @@ Effect to be used for opening of the Tooltip.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     animation: {
                         open: {
@@ -1233,7 +1234,13 @@ Effect to be used for opening of the Tooltip.
                         }
                     },
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1247,12 +1254,7 @@ Defines the animation duration.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     animation: {
                         open: {
@@ -1260,7 +1262,13 @@ Defines the animation duration.
                         }
                     },
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1275,18 +1283,19 @@ By default the tooltip will display the target element title attribute content.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     content: function(e) {
                         var marker = e.sender.marker;
                         return marker.options.location.toString();
                     }
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1296,15 +1305,16 @@ By default the tooltip will display the target element title attribute content.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1322,19 +1332,20 @@ versions, so it is advisable to always use the [iframe configuration option](#if
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                       content: {
                         url: "http://demos.telerik.com/kendo-ui/content/web/tooltip/ajax/ajaxContent3.html"
                       },
                       width: 220,
                       height: 280
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1355,15 +1366,16 @@ The fields which can be used in the template are:
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     template: "Lon:#= location.lng #, Lat:#= location.lat #"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1377,16 +1389,17 @@ Specifies if the tooltip callout will be displayed.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     callout: false,
                     template: "Lon:#= location.lng #, Lat:#= location.lat #"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1400,12 +1413,7 @@ Explicitly states whether content iframe should be created.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                       iframe: true,
                       content: {
@@ -1413,7 +1421,13 @@ Explicitly states whether content iframe should be created.
                       },
                       width: 220,
                       height: 280
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1427,16 +1441,17 @@ The height (in pixels) of the tooltip.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     height: 80,
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1450,16 +1465,17 @@ The width (in pixels) of the tooltip.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     width: 80,
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1473,16 +1489,17 @@ The position relative to the target element, at which the tooltip will be shown.
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     position: "left",
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1496,17 +1513,18 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     showOn: "mouseenter",
                     showAfter: 1000,
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
@@ -1520,16 +1538,17 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
     <script>
         $("#map").kendoMap({
             layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }],
-            markers: [{
-                location: [42, 27],
+                type: "marker",
                 tooltip: {
                     showOn: "mouseenter",
                     content: "Foo"
-                }
+                },
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                },
+                locationField: "latlng"
             }]
         });
     </script>
