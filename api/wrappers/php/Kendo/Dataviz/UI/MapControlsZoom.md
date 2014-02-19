@@ -13,7 +13,7 @@ A PHP class representing the zoom setting of MapControls.
 ## Methods
 
 ### position
-The position of the zoom control. Possible values include:
+The position of the zoom control. Predefined values are "topLeft", "topRight", "left", "bottomRight", "bottomLeft".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapControlsZoom`

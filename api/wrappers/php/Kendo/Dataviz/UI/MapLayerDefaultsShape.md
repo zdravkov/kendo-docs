@@ -30,6 +30,24 @@ The attribution for all shape layers.
     $shape->attribution('value');
     ?>
 
+### opacity
+The the opacity of all shape layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayerDefaultsShape`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $shape = new \Kendo\Dataviz\UI\MapLayerDefaultsShape();
+    $shape->opacity(1);
+    ?>
+
 ### style
 
 The default style for shapes.

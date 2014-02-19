@@ -13,7 +13,7 @@ A PHP class representing the navigator setting of MapControls.
 ## Methods
 
 ### position
-The position of the navigator control. Possible values include:
+The position of the navigator control. Predefined values are "topLeft", "topRight", "left", "bottomRight", "bottomLeft".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapControlsNavigator`
