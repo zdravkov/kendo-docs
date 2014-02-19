@@ -206,6 +206,32 @@ The default configuration for map layers by type.
         });
     </script>
 
+### layerDefaults.marker `Object`
+
+The default configuration for marker layers.
+
+#### Example - setting default marker shape
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                marker: {
+                    shape: "pin"
+                }
+            },
+            layers: [{
+                type: "marker",
+
+                locationField: "latlng",
+                dataSource: {
+                    data: [{
+                        latlng: [0, 0]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.marker.shape `String` *(default: "pinTarget")*
 
 The default marker shape for all marker layers. The following pre-defined marker shapes are available:
@@ -216,7 +242,7 @@ The default marker shape for all marker layers. The following pre-defined marker
 Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
 For example "pinTarget" is rendered as "k-marker-pin-target".
 
-#### Example - setting marker shape
+#### Example - setting default marker shape
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
