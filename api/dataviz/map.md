@@ -262,6 +262,34 @@ The attribution for all shape layers.
         });
     </script>
 
+### layerDefaults.shape.opacity `Number` *(default: 1)*
+
+The the opacity of all shape layers.
+
+#### Example - set tile layer default opacity
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                shape: {
+                    opacity: 0.5
+                }
+            },
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Polygon",
+                        "coordinates": [
+                            [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+                        ]
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.shape.style `Object`
 
 The default style for shapes.
