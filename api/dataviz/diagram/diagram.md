@@ -1,5 +1,5 @@
 ---
-title: kendo.diagram
+title: kendo.dataviz.ui.Diagram
 meta_title: API Reference for methods, objects and properties in the math module of Kendo diagram
 meta_description: Examples and detailed explanation of Kendo UI methods and properties.
 slug: api-framework
@@ -7,7 +7,7 @@ tags: api,framework
 publish: false
 ---
 
-# kendo.dataviz.ui.diagram
+# kendo.dataviz.ui.Diagram
 
 ## Configuration
 
@@ -329,7 +329,7 @@ Defines the hover configuration.
 
 Hover's background color.
 
-### connectors `Array`
+### shapeDefaults.connectors `Array`
 
 Defines the connectors the shape owns.
 
@@ -466,7 +466,7 @@ Defines the hover configuration.
 
 Hover's background color.
 
-### connectors `Array`
+### shapes.connectors `Array`
 
 Defines the connectors the shape owns.
 
@@ -1278,6 +1278,7 @@ This example creates a databound, custom shape with Rectangle primitives into a 
         visualTemplate: getVisual
     };
     diagram = $("#canvas").kendoDiagram(options).data("kendoDiagram");
+
     diagram.layout({type:"Tree", subtype:"MindmapHorizontal"});
 
 ### Path
@@ -1814,6 +1815,7 @@ The radial tree layout has four parameters;
 - the **radialFirstLevelSeparation**: it controls the distance between the root and the immediate children of the root
 - the **radialSeparation**: it defines the radial separation between the levels (except the first one which is defined by the aforementioned radialFirstLevelSeparation)
 - the **startRadialAngle**: defines where the circle/arc starts. The positive direction is **clockwise** and the angle is in **radians**. Default is zero.
+
 - the **endRadialAngle**: defines where the circle/arc ends. Default is 2*Math.PI.
 
 
