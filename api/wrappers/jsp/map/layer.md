@@ -52,12 +52,30 @@ The API key for the layer. Currently supported only for Bing (tm) tile layers.
     <kendo:map-layer key="key">
     </kendo:map-layer>
 
+### locationField `java.lang.String`
+
+The data item field which contains the marker location.
+The field should be an array with two numbers - latitude and longitude.Requires the dataSource option to be set.
+
+#### Example
+    <kendo:map-layer locationField="locationField">
+    </kendo:map-layer>
+
 ### opacity `java.lang.String`
 
 The the opacity for the layer.
 
 #### Example
     <kendo:map-layer opacity="opacity">
+    </kendo:map-layer>
+
+### shape `java.lang.String`
+
+The default marker shape for data-bound markers. The following pre-defined marker shapes are available:Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
+For example "pinTarget" is rendered as "k-marker-pin-target".
+
+#### Example
+    <kendo:map-layer shape="shape">
     </kendo:map-layer>
 
 ### subdomains `java.lang.Object`
@@ -67,6 +85,15 @@ Alternating between different subdomains allows more requests to be executed in 
 
 #### Example
     <kendo:map-layer subdomains="subdomains">
+    </kendo:map-layer>
+
+### titleField `java.lang.String`
+
+The data item field which contains the marker title.
+Requires the dataSource option to be set.
+
+#### Example
+    <kendo:map-layer titleField="titleField">
     </kendo:map-layer>
 
 ### type `java.lang.String`
@@ -98,5 +125,17 @@ More documentation is available at [kendo:map-layer-style](/kendo-ui/api/wrapper
 
     <kendo:map-layer>
         <kendo:map-layer-style></kendo:map-layer-style>
+    </kendo:map-layer>
+
+### kendo:map-layer-tooltip
+
+The default Kendo UI Tooltip options for data-bound markers.
+
+More documentation is available at [kendo:map-layer-tooltip](/kendo-ui/api/wrappers/jsp/map/layer-tooltip).
+
+#### Example
+
+    <kendo:map-layer>
+        <kendo:map-layer-tooltip></kendo:map-layer-tooltip>
     </kendo:map-layer>
 

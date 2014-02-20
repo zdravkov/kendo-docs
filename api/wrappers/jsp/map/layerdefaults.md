@@ -31,6 +31,18 @@ More documentation is available at [kendo:map-layerDefaults-bing](/kendo-ui/api/
         <kendo:map-layerDefaults-bing></kendo:map-layerDefaults-bing>
     </kendo:map-layerDefaults>
 
+### kendo:map-layerDefaults-marker
+
+The default configuration for marker layers.
+
+More documentation is available at [kendo:map-layerDefaults-marker](/kendo-ui/api/wrappers/jsp/map/layerdefaults-marker).
+
+#### Example
+
+    <kendo:map-layerDefaults>
+        <kendo:map-layerDefaults-marker></kendo:map-layerDefaults-marker>
+    </kendo:map-layerDefaults>
+
 ### kendo:map-layerDefaults-shape
 
 The default configuration for shape layers.

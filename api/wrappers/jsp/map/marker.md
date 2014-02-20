@@ -32,6 +32,14 @@ The marker shape. Supported shapes are "pin" and "circle".
     <kendo:map-marker shape="shape">
     </kendo:map-marker>
 
+### title `java.lang.String`
+
+The marker title. Displayed as browser tooltip.
+
+#### Example
+    <kendo:map-marker title="title">
+    </kendo:map-marker>
+
 
 ##  Configuration JSP Tags
 

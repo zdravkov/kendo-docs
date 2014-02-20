@@ -1,18 +1,18 @@
 ---
-title: map-marker-tooltip
-slug: jsp-map-marker-tooltip
+title: map-layer-tooltip
+slug: jsp-map-layer-tooltip
 tags: api, java
 publish: true
 ---
 
-# \<kendo:map-marker-tooltip\>
+# \<kendo:map-layer-tooltip\>
 
-Kendo UI Tooltip options for this marker.
+The default Kendo UI Tooltip options for data-bound markers.
 
 #### Example
-    <kendo:map-marker>
-        <kendo:map-marker-tooltip></kendo:map-marker-tooltip>
-    </kendo:map-marker>
+    <kendo:map-layer>
+        <kendo:map-layer-tooltip></kendo:map-layer-tooltip>
+    </kendo:map-layer>
 
 ## Configuration Attributes
 
@@ -21,86 +21,86 @@ Kendo UI Tooltip options for this marker.
 Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
 
 #### Example
-    <kendo:map-marker-tooltip autoHide="autoHide">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip autoHide="autoHide">
+    </kendo:map-layer-tooltip>
 
 ### callout `boolean`
 
 Specifies if the tooltip callout will be displayed.
 
 #### Example
-    <kendo:map-marker-tooltip callout="callout">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip callout="callout">
+    </kendo:map-layer-tooltip>
 
 ### height `float`
 
 The height (in pixels) of the tooltip.
 
 #### Example
-    <kendo:map-marker-tooltip height="height">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip height="height">
+    </kendo:map-layer-tooltip>
 
 ### iframe `boolean`
 
 Explicitly states whether content iframe should be created.
 
 #### Example
-    <kendo:map-marker-tooltip iframe="iframe">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip iframe="iframe">
+    </kendo:map-layer-tooltip>
 
 ### position `java.lang.String`
 
-The position relative to the target element, at which tlhe tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
+The position relative to the target element, at which the tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
 
 #### Example
-    <kendo:map-marker-tooltip position="position">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip position="position">
+    </kendo:map-layer-tooltip>
 
 ### showAfter `float`
 
 Specify the delay in milliseconds before the tooltip is shown. This option is ignored if showOn is set to "click" or "focus".
 
 #### Example
-    <kendo:map-marker-tooltip showAfter="showAfter">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip showAfter="showAfter">
+    </kendo:map-layer-tooltip>
 
 ### showOn `java.lang.String`
 
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
 
 #### Example
-    <kendo:map-marker-tooltip showOn="showOn">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip showOn="showOn">
+    </kendo:map-layer-tooltip>
 
 ### template `java.lang.String`
 
 The template which renders the tooltip content.The fields which can be used in the template are:
 
 #### Example
-    <kendo:map-marker-tooltip template="template">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip template="template">
+    </kendo:map-layer-tooltip>
 
 ### width `float`
 
 The width (in pixels) of the tooltip.
 
 #### Example
-    <kendo:map-marker-tooltip width="width">
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip width="width">
+    </kendo:map-layer-tooltip>
 
 
 ##  Configuration JSP Tags
 
-### kendo:map-marker-tooltip-animation
+### kendo:map-layer-tooltip-animation
 
 A collection of {Animation} objects, used to change default animations. A value of false
 will disable all animations in the widget.
 
-More documentation is available at [kendo:map-marker-tooltip-animation](/kendo-ui/api/wrappers/jsp/map/marker-tooltip-animation).
+More documentation is available at [kendo:map-layer-tooltip-animation](/kendo-ui/api/wrappers/jsp/map/layer-tooltip-animation).
 
 #### Example
 
-    <kendo:map-marker-tooltip>
-        <kendo:map-marker-tooltip-animation></kendo:map-marker-tooltip-animation>
-    </kendo:map-marker-tooltip>
+    <kendo:map-layer-tooltip>
+        <kendo:map-layer-tooltip-animation></kendo:map-layer-tooltip-animation>
+    </kendo:map-layer-tooltip>
 

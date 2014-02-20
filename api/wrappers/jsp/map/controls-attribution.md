@@ -18,7 +18,7 @@ Configures or disables the built-in attribution control.
 
 ### position `java.lang.String`
 
-The position of the attribution control. Possible values include:
+The position of the attribution control. Predefined values are "topLeft", "topRight", "left", "bottomRight", "bottomLeft".
 
 #### Example
     <kendo:map-controls-attribution position="position">
