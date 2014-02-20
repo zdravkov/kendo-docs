@@ -13,8 +13,7 @@ A PHP class representing the markerDefaults setting of Map.
 ## Methods
 
 ### shape
-The default marker shape. The following pre-defined marker shapes are available:Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
-For example "pinTarget" is rendered as "k-marker-pin-target".
+The default marker shape. Supported shapes are "pin" and "pinTarget".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarkerDefaults`
