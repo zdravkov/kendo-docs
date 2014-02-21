@@ -49,10 +49,7 @@ controlled:
 *   Precision of the number
 *   Number format (any valid number format is allowed)
 
-
-
-To see a full list of available properties and values, review the
-Slider Configuration API documentation tab.
+For a complete overview of the NumericTextBox's methods and configuration options, [review the NumericTextBox API Reference](/kendo-ui/api/web/numerictextbox).
 
 ### Customizing NumericTextBox defaults
 
