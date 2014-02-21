@@ -82,7 +82,23 @@ The following mask literals will be globalized based on the current culture:
 ### Define a custom mask rule
 
 The **MaskedTextBox** widget provides the ability to define custom mask rules during initialization.
-To accomplish this task you will need to specify
+To accomplish this task define a rule in the [rules](/kendo-ui/api/web/maskedtextbox#configuration-rules)
+option. Widget supports rules defined as **RegExp** or **Function**:
+
+    $(document).ready(function(){
+        $("#maskedtextbox").kendoMaskedTextBox({
+            mask: "~^",
+            rules: {
+                "~": /[+-]/,
+                "^": function (char) {
+                    return char === "^"; //allow ony "^" symbol
+                }
+            }
+        });
+    });
+
+> Any of the predefined rules can be overriden through the [rules](/kendo-ui/api/web/maskedtextbox#configuration-rules) option.
+
 
 ## Accessing an Existing MaskedTextBox
 
