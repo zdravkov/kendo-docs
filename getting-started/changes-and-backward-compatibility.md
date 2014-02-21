@@ -8,6 +8,14 @@ publish: true
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## KendoUI 2014 Q1
+
+### Changes from 2013 Q3 SP2 (2013.3.1324)
+
+#### Breaking changes
+
+* **Flat Theme**: Button background is now gray. The previous outcome can be achieved using .k-primary class.
+
 ## KendoUI 2013 Q3
 
 ### Changes from 2013 Q3 (2013.3.1119)
