@@ -268,7 +268,7 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
 
 The default Kendo UI Tooltip options for all marker layers.
 
-### layerDefaults.marker.tooltip.autoHide `Boolean`*(default: false)*
+### layerDefaults.marker.tooltip.autoHide `Boolean`*(default: true)*
 
 Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
 
@@ -832,7 +832,7 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
         });
     </script>
 
-### layerDefaults.marker.tooltip.showOn `String`*(default: "click")*
+### layerDefaults.marker.tooltip.showOn `String`*(default: "mouseenter")*
 
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
 
@@ -1762,7 +1762,7 @@ Requires the [dataSource](#configuration-layers-dataSource) option to be set.
 
 The default Kendo UI Tooltip options for data-bound markers.
 
-### layers.tooltip.autoHide `Boolean`*(default: false)*
+### layers.tooltip.autoHide `Boolean`*(default: true)*
 
 Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
 
@@ -2236,7 +2236,7 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
         });
     </script>
 
-### layers.tooltip.showOn `String`*(default: "click")*
+### layers.tooltip.showOn `String`*(default: "mouseenter")*
 
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
 
@@ -2725,7 +2725,7 @@ For example "pinTarget" is rendered as "k-marker-pin-target".
 
 Default Kendo UI Tooltip options for this marker.
 
-### markerDefaults.tooltip.autoHide `Boolean`*(default: false)*
+### markerDefaults.tooltip.autoHide `Boolean`*(default: true)*
 
 Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
 
@@ -3293,7 +3293,7 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
         });
     </script>
 
-### markerDefaults.tooltip.showOn `String`*(default: "click")*
+### markerDefaults.tooltip.showOn `String`*(default: "mouseenter")*
 
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
 
@@ -3414,7 +3414,7 @@ The marker title. Displayed as browser tooltip.
 
 Kendo UI Tooltip options for this marker.
 
-### markers.tooltip.autoHide `Boolean`*(default: false)*
+### markers.tooltip.autoHide `Boolean`*(default: true)*
 
 Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
 
@@ -3870,7 +3870,7 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
         });
     </script>
 
-### markers.tooltip.showOn `String`*(default: "click")*
+### markers.tooltip.showOn `String`*(default: "mouseenter")*
 
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
 
