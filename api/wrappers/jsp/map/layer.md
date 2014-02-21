@@ -71,8 +71,7 @@ The the opacity for the layer.
 
 ### shape `java.lang.String`
 
-The default marker shape for data-bound markers. The following pre-defined marker shapes are available:Marker shapes are implemented as CSS classes on the marker element (span.k-marker).
-For example "pinTarget" is rendered as "k-marker-pin-target".
+The marker shape. Supported shapes are "pin" and "pinTarget".
 
 #### Example
     <kendo:map-layer shape="shape">
