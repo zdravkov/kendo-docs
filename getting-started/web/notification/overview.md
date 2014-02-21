@@ -47,7 +47,7 @@ The **Notification** widget provides several built-in notification types: `"info
 use different templates and looks for each type. The built-in types provide ready-to-use shorthand methods for displaying, as well as built-in templates and styling. The shorthand method names match the listed notification types.
 If no type is specified when a notification is shown, `"info"` is assumed. An unlimited amount of custom notification types and corresponding templates can be defined. For further details, see [Templates](#templates).
 
-### Example - initialization and basic usage
+### Example - built-in notification types
 
     <span id="notification"></span>
 	
