@@ -22,10 +22,6 @@ or if static notifications will **not** be appended to the Notification element.
 On the other hand, if the **Notification** element will be used to contain static (non-popup) notifications, then its tag is recommended to be one, which allows nesting the elements inside the notifications' template.
 For example, inline elements (`span`, `a`, `em`, etc.) cannot contain block elements (`div`, `p`, `ul`, `li`, headings, etc.). Using a `div` element for the widget is OK.
 
-The **Notification** widget provides several built-in notification types: `"info"`, `"success"`, `"warning"` and `"error"`. The benefit of having different notification types is the ability to
-use different templates and looks for each type. The built-in types provide ready-to-use shorthand methods for displaying, as well as built-in templates and styling. The shorthand method names match the listed notification types.
-If no type is specified when a notification is shown, `"info"` is assumed. An unlimited amount of custom notification types and corresponding templates can be defined. For further details, see [Templates](#templates).
-
 ### Example - initialization and basic usage
 
     <span id="notification"></span>
@@ -38,6 +34,27 @@ If no type is specified when a notification is shown, `"info"` is assumed. An un
         notificationElement.kendoNotification();
         
         // get the widget object
+        var notificationWidget = notificationElement.data("kendoNotification");
+        
+        // display a "foo" message
+        notificationWidget.show("foo");
+	});
+	</script>
+
+## Notification Types
+
+The **Notification** widget provides several built-in notification types: `"info"`, `"success"`, `"warning"` and `"error"`. The benefit of having different notification types is the ability to
+use different templates and looks for each type. The built-in types provide ready-to-use shorthand methods for displaying, as well as built-in templates and styling. The shorthand method names match the listed notification types.
+If no type is specified when a notification is shown, `"info"` is assumed. An unlimited amount of custom notification types and corresponding templates can be defined. For further details, see [Templates](#templates).
+
+### Example - initialization and basic usage
+
+    <span id="notification"></span>
+	
+	<script>
+	$(function(){
+		var notificationElement = $("#notification");
+        notificationElement.kendoNotification();
         var notificationWidget = notificationElement.data("kendoNotification");
         
         // display a "foo" warning message
@@ -141,7 +158,7 @@ One widget instance can display either popup or static notifications, not both a
 
 *This documentation section assumes that you are familiar with [Kendo UI templates](/kendo-ui/getting-started/framework/templates/overview)*.
 
-The **Notification** widget allows configuring multiple templates. Each template will be used together with its corresponding notification type (either build-in or custom).
+The **Notification** widget allows configuring multiple templates. Each template will be used together with its corresponding [notification type](#notification-types) (either build-in or custom).
 If you define a custom template for a built-in notification type, you will no longer be able to benefit from the corresponding built-in template,
 but you will still be able to use the shorthand show methods, as demonstrated below.
 
@@ -194,7 +211,7 @@ Each notification is rendered inside the following wrapper element:
         <!-- ... default or custom template content ... -->
     </div>
 
-`TYPE` denotes the notification type (either a built-in or a custom one), for example `k-notification-info` or `k-notification-success`, etc.
+`TYPE` denotes the [notification type](#notification-types) (either a built-in or a custom one), for example `k-notification-info` or `k-notification-success`, etc.
 
 When the widget displays popups, the above `div.k-notification` is nested inside a positioned (`absolute` or `fixed`) `div.k-animation-container`, which is an element that wraps every Kendo UI popup.
 
