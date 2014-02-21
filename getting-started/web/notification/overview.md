@@ -159,7 +159,7 @@ One widget instance can display either popup or static notifications, not both a
 *This documentation section assumes that you are familiar with [Kendo UI templates](/kendo-ui/getting-started/framework/templates/overview)*.
 
 The **Notification** widget allows configuring multiple templates. Each template will be used together with its corresponding [notification type](#notification-types) (either build-in or custom).
-If you define a custom template for a built-in notification type, you will no longer be able to benefit from the corresponding built-in template,
+If you define a custom template for a built-in notification type, you will no longer be able to use the corresponding built-in template,
 but you will still be able to use the shorthand show methods, as demonstrated below.
 
 ### Example - template usage
@@ -185,6 +185,8 @@ but you will still be able to use the shorthand show methods, as demonstrated be
                     template: "<div class='myAlert'>System alert generated at #= time # : #= myMessage #</div>"
                     // template content can also be defined separately
                     //template: $("#myAlertTemplate").html()
+                    // which is equivalent to
+                    //templateId: "myAlertTemplate"
             }]
         });
         
