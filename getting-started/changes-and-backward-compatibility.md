@@ -8,21 +8,21 @@ publish: true
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
-## KendoUI 2014 Q1
+## Kendo UI 2014 Q1
 
 ### Changes from 2013 Q3 SP2 (2013.3.1324)
 
 #### Breaking changes
 
-* **Flat Theme**: Button background is now gray. The previous outcome can be achieved using .k-primary class.
-
-## KendoUI 2013 Q3
+* **Flat Theme**: Button background is now gray. The previous outcome can be achieved using **.k-primary** class.
 
 ### Changes from 2013 Q3 (2013.3.1119)
 
 #### Breaking changes
 
 * **Supporting libs**: Kendo UI LESS fork is now updated to LESS 1.6.0. Kendo UI CSS files are built with it (no breaking changes in the LESS files themselves).
+
+## Kendo UI 2013 Q3
 
 ### Changes from 2013 Q2 SP1 (2013.2.918)
 
@@ -47,7 +47,7 @@ Also see [`kendo.resize()`](/kendo-ui/api/framework/kendo/#methods-resize).
 
 * **MVC DataSource**: The MVC DataSource transport now serializes numbers based on the used Kendo culture. As a result, if you are using an invariant culture number model binder, the numbers will not be parsed correctly. You should either use the the same culture to parse the numbers in the model binder or remove the model binder in order for numbers with a decimal separator to be parsed correctly.
 
-## KendoUI 2013 Q2
+## Kendo UI 2013 Q2
 
 ### Changes from 2013 Q1 SP1 (2013.1.514)
 
@@ -121,7 +121,7 @@ Enabling endless scrolling or press to load more configuration options now puts 
             });
 
 
-## KendoUI 2013 Q1
+## Kendo UI 2013 Q1
 
 ### Changes from 2012 Q3 SP1 (2012.3.1315)
 
@@ -136,7 +136,7 @@ Enabling endless scrolling or press to load more configuration options now puts 
 
 Some ASP.NET MVC applications may be broken if using other libraries incompatible with jQuery 1.9.1. Further details available in the [troubleshooting guide](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/troubleshooting#javascript-error-that-live-method-is-unavailable,-undefined-or-unsupported)
 
-## KendoUI 2012 Q3 SP1
+## Kendo UI 2012 Q3 SP1
 
 ### Changes from 2012 Q3 (2011.3.1114)
 
@@ -147,7 +147,7 @@ Use [cascade](/kendo-ui/api/web/combobox#cascade) event instead of change event.
 
 * Telerik UI for ASP.NET MVC: Remove Slide effect. Use SlideIn instead.
 
-## KendoUI 2012 Q3
+## Kendo UI 2012 Q3
 
 ### Changes from 2012 Q2 SP1 (2011.2.913)
 
@@ -194,7 +194,7 @@ if using the Default skin, should be updated to:
 
 * **DataViz:** missingValues defaults to "zero" for area, stacked area and stacked line series. The previous default was "gap" which can lead to incorrect results.
 
-## KendoUI 2012 Q2
+## Kendo UI 2012 Q2
 
 ### Changes from 2012 Q1 SP1 (2012.1.322)
 
@@ -251,7 +251,7 @@ if using the Default skin, should be updated to:
             var chart = $("#chart").data("kendoChart");
             chart.dataSource.read();
 
-## KendoUI 2012 Q1 (2012.1.322)
+## Kendo UI 2012 Q1 (2012.1.322)
 
 ### Changes from 2011 Q3 SP1 (2011.3.1407)
 
