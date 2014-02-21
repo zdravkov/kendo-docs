@@ -4,7 +4,7 @@ meta_title: Configuration, methods and events of Kendo UI DataViz Barcode
 meta_description: Manipulate the configuration options of Barcode, configure the color of the bars/text and change the value.
 slug: api-dataviz-barcode
 relatedDocs: gs-dataviz-barcode-overview
-tags: api,dataviz
+tags: api,dataviz,barcode
 publish: true
 ---
 
