@@ -37,7 +37,8 @@ The tag used for the root element of the view.
 
 ### wrap `Boolean` *(default: true)*
 
-If set to `false`, the view will not wrap its contents in a root element. In that case, the view element will point to the root element in the template.
+If set to `false`, the view will not wrap its contents in a root element. In that case, the view element will point to the root element in the template. If false, the view template should have a **single** root element.
+
 
 #### Example
 
