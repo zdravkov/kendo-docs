@@ -17245,6 +17245,7 @@ The skip of the value axis major grid lines.
 ### valueAxis.majorUnit `Number`
 
 The interval between major divisions.
+If the [valueAxis.type](#configuration-valueAxis.type) is set to `"log"`, the majorUnit value will be used for the base of the logarithm.
 
 #### Example - set the value axis major unit
 
@@ -17256,6 +17257,21 @@ The interval between major divisions.
       },
       series: [
         { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+#### Example - set the base of the logarithm for a logarithmic value axis.
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: {
+        type: "log",
+        majorUnit: 2
+      },
+      series: [
+        { data: [5, 8, 1024] }
       ]
     });
     </script>
@@ -17839,6 +17855,7 @@ The skip of the value axis minor ticks.
 ### valueAxis.minorUnit `Number`
 
 The interval between minor divisions. It defaults to 1/5th of the [valueAxis.majorUnit](#configuration-valueAxis.majorUnit).
+If the [valueAxis.type](#configuration-valueAxis.type) is set to `"log"`, the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
 
 #### Example - set the value axis minor unit
 
@@ -17850,6 +17867,24 @@ The interval between minor divisions. It defaults to 1/5th of the [valueAxis.maj
       },
       series: [
         { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+#### Example - set the logarithmic value axis minor unit
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: {
+        type: "log",
+        minorUnit: 2,
+        minorGridLines: {
+          visible: true
+        }
+      },
+      series: [
+        { data: [1, 10] }
       ]
     });
     </script>
@@ -18583,6 +18618,30 @@ If set to `true` the chart will display the value axis title. By default the val
       }],
       series: [
         { data: [1, 2, 3] }
+      ]
+    });
+    </script>
+
+
+### valueAxis.type `String` *(default: "numeric")*
+
+The axis type.
+
+The supported values are:
+
+* "numeric" - numeric axis.
+* "log" - logarithmic axis.
+
+#### Example - using logarithmic value axis
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      valueAxis: {
+        type: "log"
+      },
+      series: [
+        { data: [5, 7, 11123] }
       ]
     });
     </script>
@@ -22236,6 +22295,7 @@ The skip of the x axis major ticks.
 
 The interval between major divisions.
 If this is a date axis the value represents the number of [xAxis.baseUnits](#configuration-xAxis.baseUnit) between major divisions.
+If the [xAxis.type](#configuration-xAxis.type) is set to `"log"`, the majorUnit value will be used for the base of the logarithm.
 
 #### Example - set the scatter chart x axis major unit
     <div id="chart"></div>
@@ -22262,6 +22322,22 @@ If this is a date axis the value represents the number of [xAxis.baseUnits](#con
       xAxis: {
         baseUnit: "days",
         majorUnit: 5
+      }
+    });
+    </script>
+
+#### Example - set the base for a logarithmic x axis
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatterLine",
+        data: [[5, 1], [8, 2], [1024, 3]]
+      }],
+      xAxis: {
+        type: "log",
+        majorUnit: 2
       }
     });
     </script>
@@ -22305,6 +22381,26 @@ The minimum value of the axis.
 ### xAxis.minorUnit `Number`
 
 The interval between minor divisions. It defaults to 1/5th of the [xAxis.majorUnit](#configuration-xAxis.majorUnit).
+If the [xAxis.type](#configuration-xAxis.type) is set to `"log"`, the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
+
+#### Example - set the logarithmic x axis minor unit
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      xAxis: {
+        type: "log",
+        minorUnit: 2,
+        minorGridLines: {
+          visible: true
+        }
+      },
+      series: [{
+          type: "scatter",
+          data: [[3, 1],[20, 2]]
+        }]
+    });
+    </script>
 
 ### xAxis.name `Object` *(default: "primary")*
 
@@ -23045,8 +23141,9 @@ The axis type.
 
 The supported values are:
 
-* "number" - discrete category axis.
+* "numeric" - numeric axis.
 * "date" - specialized axis for displaying chronological data.
+* "log" - logarithmic axis.
 
 > The chart will automatically switch to a date axis if the series X value
 is of type `Date`. Set the `xAsix.type` when such behavior is undesired.
@@ -23067,6 +23164,27 @@ is of type `Date`. Set the `xAsix.type` when such behavior is undesired.
       ],
       xAxis: {
         type: "date"
+      }
+    });
+    </script>
+
+### Example - using logarithmic x axis for the scatter chart
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        {
+          type: "scatter",
+          data: [
+            [5, 2],
+            [7, 2],
+            [11123, 2]
+          ]
+        }
+      ],
+      xAxis: {
+        type: "log"
       }
     });
     </script>
@@ -26720,6 +26838,7 @@ The skip of the y axis major ticks.
 
 The interval between major divisions.
 If this is a date axis the value represents the number of [xAxis.baseUnits](#configuration-xAxis.baseUnit) between major divisions.
+If the [yAxis.type](#configuration-yAxis.type) is set to `"log"`, the majorUnit value will be used for the base of the logarithm.
 
 #### Example - set the scatter chart y axis major unit
     <div id="chart"></div>
@@ -26746,6 +26865,22 @@ If this is a date axis the value represents the number of [xAxis.baseUnits](#con
       yAxis: {
         baseUnit: "days",
         majorUnit: 5
+      }
+    });
+    </script>
+
+#### Example - set the base for a logarithmic y axis
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "scatterLine",
+        data: [[1, 5], [2, 8], [3, 1024]]
+      }],
+      yAxis: {
+        type: "log",
+        majorUnit: 2
       }
     });
     </script>
@@ -26789,6 +26924,26 @@ The minimum value of the axis.
 ### yAxis.minorUnit `Number`
 
 The interval between minor divisions. It defaults to 1/5th of the [yAxis.majorUnit](#configuration-yAxis.majorUnit).
+If the [yAxis.type](#configuration-yAxis.type) is set to `"log"`, the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
+
+#### Example - set the logarithmic y axis minor unit
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      yAxis: {
+        type: "log",
+        minorUnit: 2,
+        minorGridLines: {
+          visible: true
+        }
+      },
+      series: [{
+          type: "scatter",
+          data: [[1, 3],[2, 20]]
+        }]
+    });
+    </script>
 
 ### yAxis.name `Object` *(default: "primary")*
 
@@ -27523,8 +27678,9 @@ The axis type.
 
 The supported values are:
 
-* "number" - discrete category axis.
+* "numeric" - numeric axis.
 * "date" - specialized axis for displaying chronological data.
+* "log" - logarithmic axis.
 
 > The chart will automatically switch to a date axis if the series X value
 is of type `Date`. Set the `xAsix.type` when such behavior is undesired.
@@ -27545,6 +27701,27 @@ is of type `Date`. Set the `xAsix.type` when such behavior is undesired.
       ],
       yAxis: {
         type: "date"
+      }
+    });
+    </script>
+
+#### Example - using logarithmic y axis for the scatter chart
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        {
+          type: "scatter",
+          data: [
+            [2, 5],
+            [2, 7],
+            [2, 11123]
+          ]
+        }
+      ],
+      yAxis: {
+        type: "log"
       }
     });
     </script>
