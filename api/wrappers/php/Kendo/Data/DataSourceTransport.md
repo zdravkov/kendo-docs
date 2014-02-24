@@ -119,6 +119,25 @@ the data source sends the parameters using jQuery's conventions.
     $transport->parameterMap(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### push
+The function invoked during transport initialization which sets up push notifications. The data source will call this function only once and provide
+callbacks which will handle push notifications (data pushed from the server).
+
+#### Returns
+`\Kendo\Data\DataSourceTransport`
+
+#### Parameters
+
+##### $value `\Kendo\JavaScriptFunction`
+
+
+
+#### Example 
+    <?php
+    $transport = new \Kendo\Data\DataSourceTransport();
+    $transport->push(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### read
 
 The configuration used when the data source loads data items from a remote service.If the value of transport.read is a function, the data source invokes that function instead of jQuery.ajax.If the value of transport.read is a string the data source uses this string as the URL of the remote service.
@@ -161,6 +180,35 @@ The configuration used when the data source loads data items from a remote servi
     $transport = new \Kendo\Data\DataSourceTransport();
     $cache = true;
     $transport->read(array('cache' => $cache));
+    ?>
+
+### signalr
+
+The configuration used when type is set to "signalr". Configures the SignalR settings - hub, connection promise, server and client hub methods.Live demo available at demos.telerik.com/kendo-ui.It is recommended to familiarize with the SignalR JavaScript API.
+
+#### Returns
+`\Kendo\Data\DataSourceTransport`
+
+#### Parameters
+
+##### $value `\Kendo\Data\DataSourceTransportSignalr|array`
+
+
+#### Example - using [\Kendo\Data\DataSourceTransportSignalr](/kendo-ui/api/wrappers/php/Kendo/Data/DataSourceTransportSignalr)
+    <?php
+    $transport = new \Kendo\Data\DataSourceTransport();
+    $signalr = new \Kendo\Data\DataSourceTransportSignalr();
+    $hub = new ();
+    $signalr->hub($hub);
+    $transport->signalr($signalr);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $transport = new \Kendo\Data\DataSourceTransport();
+    $hub = new ();
+    $transport->signalr(array('hub' => $hub));
     ?>
 
 ### update

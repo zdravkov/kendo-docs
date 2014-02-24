@@ -295,6 +295,42 @@ The number of data items per page.
     $dataSource->pageSize(1);
     ?>
 
+### push
+Fired when the data source receives a push notification or the pushCreate, pushUpdate or pushDestroy methods are called.
+For additional information check the [push](/kendo-ui/api/framework/datasource#events-push) event documentation.
+
+#### Returns
+`\Kendo\Data\DataSource`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $dataSource = new \Kendo\Data\DataSource('DataSource');
+    $dataSource->push('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onPush(e) {
+            // handle the push event.
+        }
+    </script>
+    <?php
+    $dataSource = new \Kendo\Data\DataSource('DataSource');
+    $dataSource->push('onPush');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $dataSource = new \Kendo\Data\DataSource('DataSource');
+    $dataSource->push(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### requestEnd
 Fired when a remote service request is finished.The event handler function context (available via the this keyword) will be set to the data source instance.
 For additional information check the [requestEnd](/kendo-ui/api/framework/datasource#events-requestEnd) event documentation.
@@ -591,7 +627,8 @@ The transport option can also be used to implement custom data loading and savin
     ?>
 
 ### type
-If set the data source will use a predefined transport and/or schema. The only supported value is "odata" which supports the OData v.2 protocol.
+If set the data source will use a predefined transport and/or schema.
+The supported values are "odata" which supports the OData v.2 protocol and "signalr".
 
 #### Returns
 `\Kendo\Data\DataSource`
