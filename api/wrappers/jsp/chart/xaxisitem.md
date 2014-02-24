@@ -52,6 +52,7 @@ The color of the axis. Accepts a valid CSS color string, including hex and rgb.
 
 The interval between major divisions.
 If this is a date axis the value represents the number of xAxis.baseUnits between major divisions.
+If the xAxis.type is set to "log", the majorUnit value will be used for the base of the logarithm.
 
 #### Example
     <kendo:chart-xAxisItem majorUnit="majorUnit">
@@ -76,6 +77,7 @@ The minimum value of the axis.
 ### minorUnit `float`
 
 The interval between minor divisions. It defaults to 1/5th of the xAxis.majorUnit.
+If the xAxis.type is set to "log", the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
 
 #### Example
     <kendo:chart-xAxisItem minorUnit="minorUnit">

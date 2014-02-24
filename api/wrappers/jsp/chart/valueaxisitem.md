@@ -43,6 +43,7 @@ The color of the value axis. Accepts a valid CSS color string, including hex and
 ### majorUnit `float`
 
 The interval between major divisions.
+If the valueAxis.type is set to "log", the majorUnit value will be used for the base of the logarithm.
 
 #### Example
     <kendo:chart-valueAxisItem majorUnit="majorUnit">
@@ -67,6 +68,7 @@ The minimum value of the axis.
 ### minorUnit `float`
 
 The interval between minor divisions. It defaults to 1/5th of the valueAxis.majorUnit.
+If the valueAxis.type is set to "log", the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
 
 #### Example
     <kendo:chart-valueAxisItem minorUnit="minorUnit">
@@ -103,6 +105,14 @@ If set to true the value axis direction will be reversed. By default categories 
 
 #### Example
     <kendo:chart-valueAxisItem reverse="reverse">
+    </kendo:chart-valueAxisItem>
+
+### type `java.lang.String`
+
+The axis type.The supported values are:
+
+#### Example
+    <kendo:chart-valueAxisItem type="type">
     </kendo:chart-valueAxisItem>
 
 ### visible `boolean`

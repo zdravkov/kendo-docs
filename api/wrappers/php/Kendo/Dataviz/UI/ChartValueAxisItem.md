@@ -226,6 +226,7 @@ The configuration of the value axis major ticks.
 
 ### majorUnit
 The interval between major divisions.
+If the valueAxis.type is set to "log", the majorUnit value will be used for the base of the logarithm.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartValueAxisItem`
@@ -339,6 +340,7 @@ The configuration of the value axis minor ticks.
 
 ### minorUnit
 The interval between minor divisions. It defaults to 1/5th of the valueAxis.majorUnit.
+If the valueAxis.type is set to "log", the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartValueAxisItem`
@@ -516,6 +518,24 @@ The title configuration of the value axis.
     $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
     $background = 'value';
     $valueAxisItem->title(array('background' => $background));
+    ?>
+
+### type
+The axis type.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartValueAxisItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $valueAxisItem = new \Kendo\Dataviz\UI\ChartValueAxisItem();
+    $valueAxisItem->type('value');
     ?>
 
 ### visible

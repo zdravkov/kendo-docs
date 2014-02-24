@@ -245,6 +245,7 @@ The configuration of the scatter chart x axis major ticks.
 ### majorUnit
 The interval between major divisions.
 If this is a date axis the value represents the number of xAxis.baseUnits between major divisions.
+If the xAxis.type is set to "log", the majorUnit value will be used for the base of the logarithm.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartXAxisItem`
@@ -346,6 +347,7 @@ The configuration of the x axis minor ticks.
 
 ### minorUnit
 The interval between minor divisions. It defaults to 1/5th of the xAxis.majorUnit.
+If the xAxis.type is set to "log", the minorUnit value represents the number of divisions between two major units and defaults to the major unit minus one.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartXAxisItem`
