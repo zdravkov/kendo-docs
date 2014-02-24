@@ -93,7 +93,8 @@ If set to true the data source will leave the data item sorting implementation t
 
 ### type `java.lang.String`
 
-If set the data source will use a predefined transport and/or schema. The only supported value is "odata" which supports the OData v.2 protocol.
+If set the data source will use a predefined transport and/or schema.
+The supported values are "odata" which supports the OData v.2 protocol and "signalr".
 
 #### Example
     <kendo:dataSource type="type">
@@ -210,6 +211,22 @@ For additional information check the [error](/kendo-ui/api/framework/datasource#
         }
     </script>
 
+### push `String`
+
+Fired when the data source receives a push notification or the pushCreate, pushUpdate or pushDestroy methods are called.
+
+
+For additional information check the [push](/kendo-ui/api/framework/datasource#events-push) event documentation.
+
+#### Example
+    <kendo:dataSource push="handle_push">
+    </kendo:dataSource>
+    <script>
+        function handle_push(e) {
+            // Code to handle the push event.
+        }
+    </script>
+
 ### requestEnd `String`
 
 Fired when a remote service request is finished.The event handler function context (available via the this keyword) will be set to the data source instance.
@@ -294,6 +311,24 @@ For additional information check the [error](/kendo-ui/api/framework/datasource#
                 }
             </script>
         </kendo:dataSource-error>
+    </kendo:dataSource>
+
+### kendo:dataSource-push
+
+Fired when the data source receives a push notification or the pushCreate, pushUpdate or pushDestroy methods are called.
+
+
+For additional information check the [push](/kendo-ui/api/framework/datasource#events-push) event documentation.
+
+#### Example
+    <kendo:dataSource>
+        <kendo:dataSource-push>
+            <script>
+                function(e) {
+                    // Code to handle the push event.
+                }
+            </script>
+        </kendo:dataSource-push>
     </kendo:dataSource>
 
 ### kendo:dataSource-requestEnd

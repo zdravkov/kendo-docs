@@ -136,6 +136,18 @@ More documentation is available at [kendo:treeView-items](/kendo-ui/api/wrappers
         <kendo:treeView-items></kendo:treeView-items>
     </kendo:treeView>
 
+### kendo:treeView-messages
+
+The text messages displayed in the widget. Use it to customize or localize the messages.
+
+More documentation is available at [kendo:treeView-messages](/kendo-ui/api/wrappers/jsp/treeview/messages).
+
+#### Example
+
+    <kendo:treeView>
+        <kendo:treeView-messages></kendo:treeView-messages>
+    </kendo:treeView>
+
 
 ## Event Attributes
 

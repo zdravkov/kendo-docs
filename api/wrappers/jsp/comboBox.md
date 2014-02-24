@@ -29,7 +29,7 @@ Help topic showing how cascading functionality works
 
 ### cascadeFromField `java.lang.String`
 
-Defines the field to be used to filter the data source. If not defined the parent's dataValueField option will be used.
+Defines the field to be used to filter the data source. If not defiend the parent's dataValueField option will be used.
 Help topic showing how cascading functionality works
 
 #### Example
