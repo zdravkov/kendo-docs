@@ -624,7 +624,7 @@ The DOM element that may have a Kendo UI instance attached to it.
 
 ##### suite `Object`
 
-**Optional**. The Kendo UI suite, that the widget is expected to be part of - `kendo.ui` (web widgets), `kendo.mobile.ui` or `kendo.dataviz.ui`.
+**Optional**. The Kendo UI suite, that the widget is expected to be part of - `kendo.ui` (web widgets), `kendo.mobile.ui` or `kendo.dataviz.ui`. As of Q1 2014 you can also pass an array of suites.
 
 #### Returns
 
