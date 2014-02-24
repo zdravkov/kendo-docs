@@ -31,7 +31,7 @@ Sets the HTML content of the DatePickerMonth.
 
 
 ### _empty
-The template to be used for rendering the cells in the "month" view, which are not in the min/max range.
+The template used for rendering cells in the "month" view, which are outside the min/max range.
 
 #### Returns
 `\Kendo\UI\DatePickerMonth`

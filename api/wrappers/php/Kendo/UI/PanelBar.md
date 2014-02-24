@@ -180,6 +180,51 @@ For additional information check the [contentLoad](/kendo-ui/api/web/panelbar#ev
     $panelBar->contentLoad(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### contentUrls
+Sets an array with the URLs from which the PanelBar items content to be loaded from. If only specific items should be loaded via Ajax, then you should set the URLs to the corresponding positions in the array and set the other elements to null.
+
+#### Returns
+`\Kendo\UI\PanelBar`
+
+#### Parameters
+
+##### $value `array`
+
+
+
+#### Example 
+    <?php
+    $panelBar = new \Kendo\UI\PanelBar('PanelBar');
+    $panelBar->contentUrls(new array());
+    ?>
+
+### dataSource
+
+Sets the data source of the dataSource.
+
+#### Returns
+`\Kendo\UI\PanelBar`
+
+#### Parameters
+
+##### $value `\Kendo\Data\DataSource|array`
+
+#### Example - using [\Kendo\Data\DataSource](/kendo-ui/api/wrappers/php/kendo/data/datasource)
+
+    <?php
+    $panelBar = new \Kendo\UI\PanelBar('PanelBar');
+    $dataSource = new \Kendo\Data\DataSource();
+    $panelBar->dataSource($dataSource);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $panelBar = new \Kendo\UI\PanelBar('PanelBar');
+    $schema = new \Kendo\Data\DataSourceSchema();
+    $panelBar->dataSource(array('schema' => $schema));
+    ?>
+
 ### error
 Fires when AJAX request results in an error.
 For additional information check the [error](/kendo-ui/api/web/panelbar#events-error) event documentation.

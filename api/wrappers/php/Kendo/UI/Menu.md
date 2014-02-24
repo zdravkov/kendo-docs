@@ -153,6 +153,33 @@ Specifies that sub menus should close after item selection (provided they won't 
     $menu->closeOnClick(true);
     ?>
 
+### dataSource
+
+Sets the data source of the dataSource.
+
+#### Returns
+`\Kendo\UI\Menu`
+
+#### Parameters
+
+##### $value `\Kendo\Data\DataSource|array`
+
+#### Example - using [\Kendo\Data\DataSource](/kendo-ui/api/wrappers/php/kendo/data/datasource)
+
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $dataSource = new \Kendo\Data\DataSource();
+    $menu->dataSource($dataSource);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $menu = new \Kendo\UI\Menu('Menu');
+    $schema = new \Kendo\Data\DataSourceSchema();
+    $menu->dataSource(array('schema' => $schema));
+    ?>
+
 ### deactivate
 Fires when a sub menu gets closed and its animation finished.
 For additional information check the [deactivate](/kendo-ui/api/web/menu#events-deactivate) event documentation.

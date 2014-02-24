@@ -600,6 +600,35 @@ Note: when initializing the widget from an array (rather than from a Hierarchica
     $treeView->loadOnDemand(true);
     ?>
 
+### messages
+
+The text messages displayed in the widget. Use it to customize or localize the messages.
+
+#### Returns
+`\Kendo\UI\TreeView`
+
+#### Parameters
+
+##### $value `\Kendo\UI\TreeViewMessages|array`
+
+
+#### Example - using [\Kendo\UI\TreeViewMessages](/kendo-ui/api/wrappers/php/Kendo/UI/TreeViewMessages)
+    <?php
+    $treeView = new \Kendo\UI\TreeView('TreeView');
+    $messages = new \Kendo\UI\TreeViewMessages();
+    $loading = 'value';
+    $messages->loading($loading);
+    $treeView->messages($messages);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $treeView = new \Kendo\UI\TreeView('TreeView');
+    $loading = 'value';
+    $treeView->messages(array('loading' => $loading));
+    ?>
+
 ### navigate
 Triggered when the user moves the focus on another node
 For additional information check the [navigate](/kendo-ui/api/web/treeview#events-navigate) event documentation.
