@@ -37,7 +37,7 @@ For a complete overview of the MaskedTextBox's methods and configuration options
 
 When a **MaskedTextBox** is initialized, it will decorate the input element with a "k-textbox" CSS class.
 
-> Always define a *mask* option when initializing the MaskedTextBox widget. The default *mask* is an empty string, which does not allow typing.
+> The default *mask* is an empty string, which allows any input. If you need to restrict user input, define a mask value.
 
 ### Configuring MaskedTextBox behaviors
 
