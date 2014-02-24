@@ -26,7 +26,7 @@ The actionsheet element should contain one or more `li` elements, each with an `
       <li><a data-action="bar">Bar</a></li>
     </ul>
 
-In iOS, the ActionSheet slides in from the bottom of the screen; It also acts like a modal dialog - tapping the background does not close it.
+In iOS, the ActionSheet slides in from the bottom of the screen; In *iOS6*,  It also acts like a modal dialog - tapping the background does not close it.
 
 In Android and Blackberry, the available actions are centered in the middle of the screen, and tapping the background closes it.
 
