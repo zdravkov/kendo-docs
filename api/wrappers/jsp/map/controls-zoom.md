@@ -18,7 +18,7 @@ Configures or disables the built-in zoom control (+/- button).
 
 ### position `java.lang.String`
 
-The position of the zoom control. Possible values include:
+The position of the zoom control. Predefined values are "topLeft", "topRight", "left", "bottomRight", "bottomLeft".
 
 #### Example
     <kendo:map-controls-zoom position="position">

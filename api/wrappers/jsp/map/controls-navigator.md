@@ -18,7 +18,7 @@ Configures or disables the built-in navigator control (directional pad).
 
 ### position `java.lang.String`
 
-The position of the navigator control. Possible values include:
+The position of the navigator control. Predefined values are "topLeft", "topRight", "left", "bottomRight", "bottomLeft".
 
 #### Example
     <kendo:map-controls-navigator position="position">

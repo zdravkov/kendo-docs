@@ -24,6 +24,14 @@ The attribution for all shape layers.
     <kendo:map-layerDefaults-shape attribution="attribution">
     </kendo:map-layerDefaults-shape>
 
+### opacity `float`
+
+The the opacity of all shape layers.
+
+#### Example
+    <kendo:map-layerDefaults-shape opacity="opacity">
+    </kendo:map-layerDefaults-shape>
+
 
 ##  Configuration JSP Tags
 

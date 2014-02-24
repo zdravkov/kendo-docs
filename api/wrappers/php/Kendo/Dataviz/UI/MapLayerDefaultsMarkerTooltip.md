@@ -1,13 +1,13 @@
 ---
-title: MapMarkerTooltip
-slug: php-dataviz-ui-mapmarkertooltip
+title: MapLayerDefaultsMarkerTooltip
+slug: php-dataviz-ui-maplayerdefaultsmarkertooltip
 tags: api, php
 publish: true
 ---
 
-# \Kendo\Dataviz\UI\MapMarkerTooltip
+# \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip
 
-A PHP class representing the tooltip setting of MapMarker.
+A PHP class representing the tooltip setting of MapLayerDefaultsMarker.
 
 
 ## Methods
@@ -18,18 +18,18 @@ A collection of {Animation} objects, used to change default animations. A value 
 will disable all animations in the widget.
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
-##### $value `\Kendo\Dataviz\UI\MapMarkerTooltipAnimation|array`
+##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimation|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapMarkerTooltipAnimation](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapMarkerTooltipAnimation)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimation](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsMarkerTooltipAnimation)
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
-    $animation = new \Kendo\Dataviz\UI\MapMarkerTooltipAnimation();
-    $close = new \Kendo\Dataviz\UI\MapMarkerTooltipAnimationClose();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
+    $animation = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimation();
+    $close = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationClose();
     $animation->close($close);
     $tooltip->animation($animation);
     ?>
@@ -37,8 +37,8 @@ will disable all animations in the widget.
 #### Example - using array
 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
-    $close = new \Kendo\Dataviz\UI\MapMarkerTooltipAnimationClose();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
+    $close = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationClose();
     $tooltip->animation(array('close' => $close));
     ?>
 
@@ -46,7 +46,7 @@ will disable all animations in the widget.
 Specifies if the tooltip will be hidden when mouse leaves the target element. If set to false a close button will be shown within tooltip. If set to false, showAfter is specified and the showOn is set to "mouseenter" the Tooltip will be displayed after the given timeout even if the element is no longer hovered.
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Specifies if the tooltip will be hidden when mouse leaves the target element. If
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->autoHide(true);
     ?>
 
@@ -64,7 +64,7 @@ Specifies if the tooltip will be hidden when mouse leaves the target element. If
 Specifies if the tooltip callout will be displayed.
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -74,7 +74,7 @@ Specifies if the tooltip callout will be displayed.
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->callout(true);
     ?>
 
@@ -84,32 +84,32 @@ The text or a function which result will be shown within the tooltip.
 By default the tooltip will display the target element title attribute content.
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
-##### $value `string|\Kendo\JavaScriptFunction|\Kendo\Dataviz\UI\MapMarkerTooltipContent|array`
+##### $value `string|\Kendo\JavaScriptFunction|\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipContent|array`
 
 
 
 
 #### Example  - using string
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->content('value');
     ?>
 
 #### Example  - using \Kendo\JavaScriptFunction
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->content(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapMarkerTooltipContent](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapMarkerTooltipContent)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipContent](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsMarkerTooltipContent)
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
-    $content = new \Kendo\Dataviz\UI\MapMarkerTooltipContent();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
+    $content = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipContent();
     $url = 'value';
     $content->url($url);
     $tooltip->content($content);
@@ -118,7 +118,7 @@ By default the tooltip will display the target element title attribute content.
 #### Example - using array
 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $url = 'value';
     $tooltip->content(array('url' => $url));
     ?>
@@ -127,7 +127,7 @@ By default the tooltip will display the target element title attribute content.
 The height (in pixels) of the tooltip.
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -137,7 +137,7 @@ The height (in pixels) of the tooltip.
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->height(1);
     ?>
 
@@ -145,7 +145,7 @@ The height (in pixels) of the tooltip.
 Explicitly states whether content iframe should be created.
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -155,15 +155,15 @@ Explicitly states whether content iframe should be created.
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->iframe(true);
     ?>
 
 ### position
-The position relative to the target element, at which tlhe tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
+The position relative to the target element, at which the tooltip will be shown. Predefined values are "bottom", "top", "left", "right", "center".
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -173,7 +173,7 @@ The position relative to the target element, at which tlhe tooltip will be shown
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->position('value');
     ?>
 
@@ -181,7 +181,7 @@ The position relative to the target element, at which tlhe tooltip will be shown
 Specify the delay in milliseconds before the tooltip is shown. This option is ignored if showOn is set to "click" or "focus".
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -191,7 +191,7 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->showAfter(1);
     ?>
 
@@ -199,7 +199,7 @@ Specify the delay in milliseconds before the tooltip is shown. This option is ig
 The event on which the tooltip will be shown. Predefined values are "mouseenter", "click" and "focus".
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -209,7 +209,7 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->showOn('value');
     ?>
 
@@ -217,7 +217,7 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
 The template which renders the tooltip content.The fields which can be used in the template are:
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -227,7 +227,7 @@ The template which renders the tooltip content.The fields which can be used in t
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->template('value');
     ?>
 
@@ -235,7 +235,7 @@ The template which renders the tooltip content.The fields which can be used in t
 The width (in pixels) of the tooltip.
 
 #### Returns
-`\Kendo\Dataviz\UI\MapMarkerTooltip`
+`\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip`
 
 #### Parameters
 
@@ -245,7 +245,7 @@ The width (in pixels) of the tooltip.
 
 #### Example 
     <?php
-    $tooltip = new \Kendo\Dataviz\UI\MapMarkerTooltip();
+    $tooltip = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltip();
     $tooltip->width(1);
     ?>
 

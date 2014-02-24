@@ -31,7 +31,7 @@ The marker location on the map. Coordinates are listed as [Latitude, Longitude].
     ?>
 
 ### shape
-The marker shape. Supported shapes are "pin" and "circle".
+The marker shape. Supported shapes are "pin" and "pinTarget".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapMarker`
@@ -46,6 +46,24 @@ The marker shape. Supported shapes are "pin" and "circle".
     <?php
     $marker = new \Kendo\Dataviz\UI\MapMarker();
     $marker->shape('value');
+    ?>
+
+### title
+The marker title. Displayed as browser tooltip.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapMarker`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $marker = new \Kendo\Dataviz\UI\MapMarker();
+    $marker->title('value');
     ?>
 
 ### tooltip

@@ -26,10 +26,18 @@ The marker location on the map. Coordinates are listed as [Latitude, Longitude].
 
 ### shape `java.lang.String`
 
-The marker shape. Supported shapes are "pin" and "circle".
+The marker shape. Supported shapes are "pin" and "pinTarget".
 
 #### Example
     <kendo:map-marker shape="shape">
+    </kendo:map-marker>
+
+### title `java.lang.String`
+
+The marker title. Displayed as browser tooltip.
+
+#### Example
+    <kendo:map-marker title="title">
     </kendo:map-marker>
 
 
