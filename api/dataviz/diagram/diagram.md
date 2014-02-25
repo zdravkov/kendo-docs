@@ -1260,10 +1260,19 @@ Whether the generated graph should be a tree.
 
 Whether the shapes should have random sizes. By default the shapes are circles but if this property is set to true the shapes will be rectangles with a random with and height.
 
-### getId
+### getShapeById
 
 Returns the shape or connection with the specified identifier.
 
+#### Parameters
+
+##### id
+
+The unique identifier of the Shape or Connection
+
+#### Returns
+
+`kendo.dataviz.diagram.Shape|kendo.dataviz.diagram.Connection` the item that has the provided ID.
 
 ----------
 
