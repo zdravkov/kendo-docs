@@ -165,11 +165,11 @@ It determines the position of the first notification on the screen, as well as w
 	});
 	</script>
 
-### position.bottom `Number|String` *(default: 20)*
+### position.bottom `Number` *(default: 20)*
 
-Determines the position of the first popup notification with regard to the viewport's bottom edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's bottom edge.
 
-#### Example - set position.bottom as a number
+#### Example - set position.bottom
 
 	<span id="notification"></span>
 	<script>
@@ -180,39 +180,17 @@ Determines the position of the first popup notification with regard to the viewp
 	});
 	</script>
 
-#### Example - set position.bottom as a string
+### position.left `Number` *(default: null)*
 
-	<span id="notification"></span>
-	<script>
-	$("#notification").kendoNotification({
-		position: {
-            bottom: "3em"
-        }
-	});
-	</script>
+Determines the pixel position of the first popup notification with regard to the viewport's left edge.
 
-### position.left `Number|String` *(default: null)*
-
-Determines the position of the first popup notification with regard to the viewport's left edge. Numeric values are treated as pixels.
-
-#### Example - set position.left as a number
+#### Example - set position.left
 
 	<span id="notification"></span>
 	<script>
 	$("#notification").kendoNotification({
 		position: {
             left: 30
-        }
-	});
-	</script>
-
-#### Example - set position.left as a string
-
-	<span id="notification"></span>
-	<script>
-	$("#notification").kendoNotification({
-		position: {
-            left: "3em"
         }
 	});
 	</script>
@@ -232,11 +210,11 @@ Determines whether the popup notifications will move together with the other pag
 	});
 	</script>
 
-### position.right `Number|String` *(default: 20)*
+### position.right `Number` *(default: 20)*
 
-Determines the position of the first popup notification with regard to the viewport's right edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's right edge.
 
-#### Example - set position.right as a number
+#### Example - set position.right
 
 	<span id="notification"></span>
 	<script>
@@ -247,39 +225,17 @@ Determines the position of the first popup notification with regard to the viewp
 	});
 	</script>
 
-#### Example - set position.right as a string
-
-	<span id="notification"></span>
-	<script>
-	$("#notification").kendoNotification({
-		position: {
-            right: "3em"
-        }
-	});
-	</script>
-
 ### position.top `Number|String` *(default: null)*
 
 Determines the position of the first popup notification with regard to the viewport's top edge. Numeric values are treated as pixels.
 
-#### Example - set position.top as a number
+#### Example - set position.top
 
 	<span id="notification"></span>
 	<script>
 	$("#notification").kendoNotification({
 		position: {
             top: 30
-        }
-	});
-	</script>
-
-#### Example - set position.top as a string
-
-	<span id="notification"></span>
-	<script>
-	$("#notification").kendoNotification({
-		position: {
-            top: "3em"
         }
 	});
 	</script>
