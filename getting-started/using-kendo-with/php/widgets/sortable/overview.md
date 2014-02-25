@@ -1,7 +1,7 @@
 ---
 title: Overview
 meta_title: How to use the Sortable PHP class, server-side wrapper for Kendo UI Sortable widget
-meta_description: Learn how to create Kendo UI Sortable for PHP, handle Kendo UI Sortable Events, access an existing tooltip.
+meta_description: Learn how to create Kendo UI Sortable for PHP, handle Kendo UI Sortable Events, access an existing sortable.
 slug: php-sortable-overview
 publish: true
 relatedDocs: php-ui-sortable
@@ -25,7 +25,7 @@ Here is how to configure a simple Kendo Sortable:
         $sortable->hint(new \Kendo\JavaScriptFunction('hint'))
                  ->placeholder(new \Kendo\JavaScriptFunction('placeholder'));
         ?>
-3. Output the tooltip by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the sortable by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $sortable->render();
