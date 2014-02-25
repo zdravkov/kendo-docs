@@ -164,11 +164,15 @@ a number representing the underlying value.
 
 #### Parameters
 
-##### value `String`
+##### value `Number`
 
 _optional, default: _
 
 The value to be set for a Slider.
+
+#### Returns
+
+`Number` The value of the Slider.
 
 ## Events
 

@@ -139,9 +139,17 @@ selection values.
 
 #### Parameters
 
-##### value `Number`
+##### selectionStart `Number`
 
-The new value of the RangeSlider.
+The selection start value of the RangeSlider.
+
+##### selectionEnd `Number`
+
+The selection start value of the RangeSlider.
+
+#### Returns
+
+`Array` The value of the RangeSlider.
 
 ## Events
 
