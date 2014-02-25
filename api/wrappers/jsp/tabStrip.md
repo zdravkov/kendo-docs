@@ -10,6 +10,15 @@ A JSP wrapper for Kendo UI [TabStrip](/kendo-ui/api/web/tabstrip).
 
 ## Configuration Attributes
 
+### animation `boolean`
+
+A collection of visual animations used when TabStrip tab are selected through
+user interactions. Setting this option to false will disable all animations. Further configuration is available via [kendo:tabStrip-animation](#kendo-tabStrip-animation). 
+
+#### Example
+    <kendo:tabStrip animation="animation">
+    </kendo:tabStrip>
+
 ### collapsible `boolean`
 
 Specifies whether the TabStrip should be able to collapse completely when clicking an expanded tab.

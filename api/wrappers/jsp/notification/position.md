@@ -18,17 +18,17 @@ top takes precedence over bottom and left takes precedence over right.
 
 ## Configuration Attributes
 
-### bottom `java.lang.Object`
+### bottom `float`
 
-Determines the position of the first popup notification with regard to the viewport's bottom edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's bottom edge.
 
 #### Example
     <kendo:notification-position bottom="bottom">
     </kendo:notification-position>
 
-### left `java.lang.Object`
+### left `float`
 
-Determines the position of the first popup notification with regard to the viewport's left edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's left edge.
 
 #### Example
     <kendo:notification-position left="left">
@@ -42,15 +42,15 @@ Determines whether the popup notifications will move together with the other pag
     <kendo:notification-position pinned="pinned">
     </kendo:notification-position>
 
-### right `java.lang.Object`
+### right `float`
 
-Determines the position of the first popup notification with regard to the viewport's right edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's right edge.
 
 #### Example
     <kendo:notification-position right="right">
     </kendo:notification-position>
 
-### top `java.lang.Object`
+### top `float`
 
 Determines the position of the first popup notification with regard to the viewport's top edge. Numeric values are treated as pixels.
 

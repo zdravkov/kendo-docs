@@ -42,6 +42,15 @@ the data source sends the parameters using jQuery's conventions.
     <kendo:dataSource-transport parameterMap="parameterMap">
     </kendo:dataSource-transport>
 
+### push `java.lang.String`
+
+The function invoked during transport initialization which sets up push notifications. The data source will call this function only once and provide
+callbacks which will handle push notifications (data pushed from the server).
+
+#### Example
+    <kendo:dataSource-transport push="push">
+    </kendo:dataSource-transport>
+
 ### read `java.lang.String`
 
 The configuration used when the data source loads data items from a remote service.If the value of transport.read is a function, the data source invokes that function instead of jQuery.ajax.If the value of transport.read is a string the data source uses this string as the URL of the remote service. Further configuration is available via [kendo:dataSource-transport-read](#kendo-dataSource-transport-read). 
@@ -97,6 +106,18 @@ More documentation is available at [kendo:dataSource-transport-read](/kendo-ui/a
         <kendo:dataSource-transport-read></kendo:dataSource-transport-read>
     </kendo:dataSource-transport>
 
+### kendo:dataSource-transport-signalr
+
+The configuration used when type is set to "signalr". Configures the SignalR settings - hub, connection promise, server and client hub methods.Live demo available at demos.telerik.com/kendo-ui.It is recommended to familiarize with the SignalR JavaScript API.
+
+More documentation is available at [kendo:dataSource-transport-signalr](/kendo-ui/api/wrappers/jsp/datasource/transport-signalr).
+
+#### Example
+
+    <kendo:dataSource-transport>
+        <kendo:dataSource-transport-signalr></kendo:dataSource-transport-signalr>
+    </kendo:dataSource-transport>
+
 ### kendo:dataSource-transport-update
 
 The configuration used when the data source saves updated data items. Those are data items whose fields have been updated.If the value of transport.update is a function, the data source invokes that function instead of jQuery.ajax.If the value of transport.update is a string the data source uses this string as the URL of the remote service.
@@ -127,6 +148,21 @@ the data source sends the parameters using jQuery's conventions.
         }
     </script>
 
+### push `String`
+
+The function invoked during transport initialization which sets up push notifications. The data source will call this function only once and provide
+callbacks which will handle push notifications (data pushed from the server).
+
+
+#### Example
+    <kendo:dataSource-transport push="handle_push">
+    </kendo:dataSource-transport>
+    <script>
+        function handle_push(e) {
+            // Code to handle the push event.
+        }
+    </script>
+
 ## Event Tags
 
 ### kendo:dataSource-transport-parameterMap
@@ -144,5 +180,22 @@ the data source sends the parameters using jQuery's conventions.
                 }
             </script>
         </kendo:dataSource-transport-parameterMap>
+    </kendo:dataSource-transport>
+
+### kendo:dataSource-transport-push
+
+The function invoked during transport initialization which sets up push notifications. The data source will call this function only once and provide
+callbacks which will handle push notifications (data pushed from the server).
+
+
+#### Example
+    <kendo:dataSource-transport>
+        <kendo:dataSource-transport-push>
+            <script>
+                function(e) {
+                    // Code to handle the push event.
+                }
+            </script>
+        </kendo:dataSource-transport-push>
     </kendo:dataSource-transport>
 
