@@ -10,7 +10,7 @@ The Sortable HtmlHelper extension is a server-side wrapper for the [Kendo UI Sor
 
 ## Getting Started
 
-Unline most of the HtmlHelpers the Sortable one does not render HTML mark-up. **The Sortable HtmlHelper should be initialized for already existing DOM element.**
+Unlike most of the HtmlHelpers the Sortable one does not render HTML mark-up. **The Sortable HtmlHelper should be initialized for already existing DOM element.**
 
 ### Configure the Kendo Sortable
 
@@ -23,6 +23,7 @@ Here is how to configure the Kendo Sortable:
         {
             return View();
         }
+
  3.  Initialize the Sortable:
      - WebForms
 
