@@ -357,19 +357,19 @@ The following defines a custom shape with connectors adapted to the shape's outl
             connectors: [{
                 name: "Upstream",
                 position: function(shape) {
-                    return shape.transformPoint(shape.bounds().top());
+                    return shape._transformPoint(shape.bounds().top());
                 }
             }, {
                 name: "SideLeft",
                 position: function(shape) {
                     var p = shape.bounds().left();
-                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y+17));
+                    return shape._transformPoint(new kendo.diagram.Point(p.x, p.y+17));
                 }
             }, {
                 name: "SideRight",
                 position: function(shape) {
                     var p = shape.bounds().right();
-                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y + 17));
+                    return shape._transformPoint(new kendo.diagram.Point(p.x, p.y + 17));
                 }
             }]
         }]
@@ -497,19 +497,19 @@ The following defines a custom shape with connectors adapted to the shape's outl
             connectors: [{
                 name: "Upstream",
                 position: function(shape) {
-                    return shape.transformPoint(shape.bounds().top());
+                    return shape._transformPoint(shape.bounds().top());
                 }
             }, {
                 name: "SideLeft",
                 position: function(shape) {
                     var p = shape.bounds().left();
-                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y+17));
+                    return shape._transformPoint(new kendo.diagram.Point(p.x, p.y+17));
                 }
             }, {
                 name: "SideRight",
                 position: function(shape) {
                     var p = shape.bounds().right();
-                    return shape.transformPoint(new kendo.diagram.Point(p.x, p.y + 17));
+                    return shape._transformPoint(new kendo.diagram.Point(p.x, p.y + 17));
                 }
             }]
         }]
@@ -723,6 +723,118 @@ The translation delta to apply to the diagram.
 ### viewport
 
 Returns the bounds of the diagramming canvas.
+
+### viewToDocument
+
+Transforms a point from View coordinates to Page document coordinates. View origin is the diagram container.
+
+#### Parameters
+
+##### point `Point`
+
+The point in Page document coordinates.
+
+#### Returns
+
+`Point` the transformed point
+
+### documentToView
+
+Transforms a point from Page document coordinates to View coordinates. View origin is the diagram container.
+
+#### Parameters
+
+##### point `Point`
+
+The point in View coordinates.
+
+#### Returns
+
+`Point` the transformed point
+
+### viewToModel
+
+Transforms a point from View coordinates to Model coordinates. Model coordinates are independent coordinates to define Shape bounds.
+
+#### Parameters
+
+##### point `Point`
+
+The point in View coordinates.
+
+#### Returns
+
+`Point` the transformed point
+
+### modelToView
+
+Transforms a point from Model coordinates to View coordinates. Model coordinates are independent coordinates to define Shape bounds.
+
+#### Parameters
+
+##### point `Point`
+
+The point in Model coordinates.
+
+#### Returns
+
+`Point` the transformed point
+
+### modelToLayer
+
+Transforms a point from Model coordinates to Layer coordinates. Layer coordinates are relative to the drawable canvas - SVG, 2d canvas context, etc.
+
+#### Parameters
+
+##### point `Point`
+
+The point in Model coordinates.
+
+#### Returns
+
+`Point` the transformed point
+
+### layerToModel
+
+Transforms a point from Layer coordinates to Model coordinates. Layer coordinates are relative to the drawable canvas - SVG, 2d canvas context, etc.
+
+#### Parameters
+
+##### point `Point`
+
+The point in layer coordinates.
+
+#### Returns
+
+`Point` the transformed point
+
+### documentToModel
+
+Transforms a point from Page document coordinates to Model coordinates. Shortcut for viewToModel(documentToView(point))
+
+#### Parameters
+
+##### point `Point`
+
+The point in Page document coordinates.
+
+#### Returns
+
+`Point` the transformed point
+
+### modelToDocument
+
+Transforms a point from Model coordinates to Page document coordinates. Shortcut for viewToDocument(modelToView(point))
+
+#### Parameters
+
+##### point `Point`
+
+The point in Model coordinates.
+
+#### Returns
+
+`Point` the transformed point
 
 ### transformPoint
 
@@ -1046,10 +1158,6 @@ This will return "[0, 0, 600, 600]" in the console of the browser.
         console.log("[" + r.x + "," + r.x + "," + r.width +","+ r.height +"]");
     </script>
 
-
-### getOriginBoundingBox
-
-### documentToCanvasPoint
 
 ### copy
 
