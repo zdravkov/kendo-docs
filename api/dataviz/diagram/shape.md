@@ -13,29 +13,21 @@ The Shape object represents a visual node in the graph or diagram.
 
 ## Configuration
 
-### data `String` *(default: "rectangle")*
+### id `String`
 
-The root  of a Shape is a SVG group (which on its own is invisible) inside which one or more SVG visual elements can be added. By default the Shape has a simple SVG primitive (see however the custom shape topic) and this property defines this primitive. There are three possibilities:
+The unique identifier for a Shape. Makes it easy to find the Shape by ID using the Diagram API.
 
-* "rectangle": this is the default option, representing a SVG Rectangle
-* "circle" : a SVG circle/ellipse
-* any other string will be understood as the data of a SVG Path and the Shape options are passed on to the Path instantiation. The data for Path follow [the standard SVG format](http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+### path `String`
+
+The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
 
 #### Example - custom Shape data
 
 The following Shape creation defines a Path visual and the data string defines a custom Path (here the 'Apple' logo).
 
     diagram.addShape(new Point(100, 100), {
-        data:"m52.10522,2.5c-11.76762,2.1674 -15.67321,12.01996 -15.82503,17.64957c6.47508,0.468 10.51705,-3.18687 12.17056,-5.32507c2.69337,-3.03252 3.35037,-7.30312 3.65446,-12.32449l0,0zm1.44453,19.46323c-8.50652,-0.0042 -13.2543,3.47298 -15.59565,3.51137c-2.68627,-0.20935 -10.51538,-3.35788 -15.0796,-3.40794c-15.98605,0.47638 -20.56654,17.84731 -20.36841,25.31639c1.3023,28.59586 18.7516,35.97569 21.6031,36.66646c2.28713,0.4505 9.999,-3.52641 15.67194,-3.3454c6.19436,0.64577 10.52249,3.21524 13.00983,3.03589c3.14639,-0.21855 13.41026,-8.51358 16.5041,-21.29358c-6.23814,-5.27423 -10.08575,-10.0545 -10.4303,-14.59035c-0.15976,-2.05142 2.92491,-13.64513 7.8441,-16.90373c0.70998,-4.00609 -6.59648,-9.09009 -12.32408,-8.97577c-0.28196,-0.00751 -0.5606,-0.01334 -0.83505,-0.01334l0,0z" }
+        path:"m52.10522,2.5c-11.76762,2.1674 -15.67321,12.01996 -15.82503,17.64957c6.47508,0.468 10.51705,-3.18687 12.17056,-5.32507c2.69337,-3.03252 3.35037,-7.30312 3.65446,-12.32449l0,0zm1.44453,19.46323c-8.50652,-0.0042 -13.2543,3.47298 -15.59565,3.51137c-2.68627,-0.20935 -10.51538,-3.35788 -15.0796,-3.40794c-15.98605,0.47638 -20.56654,17.84731 -20.36841,25.31639c1.3023,28.59586 18.7516,35.97569 21.6031,36.66646c2.28713,0.4505 9.999,-3.52641 15.67194,-3.3454c6.19436,0.64577 10.52249,3.21524 13.00983,3.03589c3.14639,-0.21855 13.41026,-8.51358 16.5041,-21.29358c-6.23814,-5.27423 -10.08575,-10.0545 -10.4303,-14.59035c-0.15976,-2.05142 2.92491,-13.64513 7.8441,-16.90373c0.70998,-4.00609 -6.59648,-9.09009 -12.32408,-8.97577c-0.28196,-0.00751 -0.5606,-0.01334 -0.83505,-0.01334l0,0z" }
     );
-
-#### Example - creating an elliptic shape
-
-    diagram.addShape(new Point(100, 100), {
-        data:"circle",
-        width:200,
-        height:100
-    });
 
 ### stroke `Object`
 
@@ -48,7 +40,7 @@ Defines the color of the shape's stroke.
 #### Example - setting the shape's stroke and strokeWidth
 
     diagram.addShape(new Point(100, 100), {
-        data:"circle",
+        type:"circle",
         stroke: {
             color: "violet",
             width: 3
@@ -81,6 +73,21 @@ The following dash types are supported:
             dashType: "dot",
             width: 3
         }
+    });
+
+### type `String` *(default: "rectangle")*
+
+Specifies the type of the Shape using any of the built-in shape type.
+
+* "rectangle": this is the default option, representing a SVG Rectangle
+* "circle" : a SVG circle/ellipse
+
+#### Example - creating an elliptic shape
+
+    diagram.addShape(new Point(100, 100), {
+        type:"circle",
+        width:200,
+        height:100
     });
 
 ### x `Number` *(default: 0)*
@@ -140,7 +147,7 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
     $("#diagram").kendoDiagram({
         shapes: [{
-            data: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
+            path: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
             connectors: [{
                 name: "Upstream",
                 position: function(shape) {

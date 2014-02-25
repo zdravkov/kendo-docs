@@ -259,13 +259,9 @@ Sets the Y coordinate of the point.
 
 Defines the shape options.
 
-### shapeDefaults.data `String` *(default: "rectangle")*
+### shapeDefaults.path `String`
 
-The root of a Shape is a SVG group (which on its own is invisible) inside which one or more SVG visual elements can be added. By default the Shape has a simple SVG primitive (see however the custom shape topic) and this property defines this primitive. There are three possibilities:
-
-* "rectangle": this is the default option, representing a SVG Rectangle
-* "circle" : a SVG circle/ellipse
-* any other string will be understood as the data of a SVG Path and the Shape options are passed on to the Path instantiation. The data for Path follow [the standard SVG format](http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
 
 ### shapeDefaults.stroke `Object`
 
@@ -292,6 +288,13 @@ The following dash types are supported:
 * "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
 * "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
 * "solid" - a solid line
+
+### shapeDefaults.type `String` *(default: "rectangle")*
+
+Specifies the type of the Shape using any of the built-in shape type.
+
+* "rectangle": this is the default option, representing a SVG Rectangle
+* "circle" : a SVG circle/ellipse
 
 ### shapeDefaults.x `Number` *(default: 0)*
 
@@ -350,7 +353,7 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
     $("#diagram").kendoDiagram({
         shapeDefaults: [{
-            data: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
+            path: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
             connectors: [{
                 name: "Upstream",
                 position: function(shape) {
@@ -396,13 +399,9 @@ Sets the text content of the Shape.
 
 Defines the shape options.
 
-### shapes.data `String` *(default: "rectangle")*
+### shapes.path `String`
 
-The root of a Shape is a SVG group (which on its own is invisible) inside which one or more SVG visual elements can be added. By default the Shape has a simple SVG primitive (see however the custom shape topic) and this property defines this primitive. There are three possibilities:
-
-* "rectangle": this is the default option, representing a SVG Rectangle
-* "circle" : a SVG circle/ellipse
-* any other string will be understood as the data of a SVG Path and the Shape options are passed on to the Path instantiation. The data for Path follow [the standard SVG format](http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
 
 ### shapes.stroke `Object`
 
@@ -429,6 +428,13 @@ The following dash types are supported:
 * "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
 * "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
 * "solid" - a solid line
+
+### shapes.type `String` *(default: "rectangle")*
+
+Specifies the type of the Shape using any of the built-in shape type.
+
+* "rectangle": this is the default option, representing a SVG Rectangle
+* "circle" : a SVG circle/ellipse
 
 ### shapes.x `Number` *(default: 0)*
 
@@ -487,7 +493,7 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
     $("#diagram").kendoDiagram({
         shapes: [{
-            data: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
+            path: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
             connectors: [{
                 name: "Upstream",
                 position: function(shape) {
