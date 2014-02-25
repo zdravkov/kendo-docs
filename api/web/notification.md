@@ -225,7 +225,7 @@ Determines the pixel position of the first popup notification with regard to the
 	});
 	</script>
 
-### position.top `Number|String` *(default: null)*
+### position.top `Number` *(default: null)*
 
 Determines the position of the first popup notification with regard to the viewport's top edge. Numeric values are treated as pixels.
 
