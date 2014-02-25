@@ -13,51 +13,39 @@ A PHP class representing the position setting of Notification.
 ## Methods
 
 ### bottom
-Determines the position of the first popup notification with regard to the viewport's bottom edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's bottom edge.
 
 #### Returns
 `\Kendo\UI\NotificationPosition`
 
 #### Parameters
 
-##### $value `float|string`
+##### $value `float`
 
 
 
-#### Example  - using float
+#### Example 
     <?php
     $position = new \Kendo\UI\NotificationPosition();
     $position->bottom(1);
     ?>
 
-#### Example  - using string
-    <?php
-    $position = new \Kendo\UI\NotificationPosition();
-    $position->bottom('value');
-    ?>
-
 ### left
-Determines the position of the first popup notification with regard to the viewport's left edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's left edge.
 
 #### Returns
 `\Kendo\UI\NotificationPosition`
 
 #### Parameters
 
-##### $value `float|string`
+##### $value `float`
 
 
 
-#### Example  - using float
+#### Example 
     <?php
     $position = new \Kendo\UI\NotificationPosition();
     $position->left(1);
-    ?>
-
-#### Example  - using string
-    <?php
-    $position = new \Kendo\UI\NotificationPosition();
-    $position->left('value');
     ?>
 
 ### pinned
@@ -79,27 +67,21 @@ Determines whether the popup notifications will move together with the other pag
     ?>
 
 ### right
-Determines the position of the first popup notification with regard to the viewport's right edge. Numeric values are treated as pixels.
+Determines the pixel position of the first popup notification with regard to the viewport's right edge.
 
 #### Returns
 `\Kendo\UI\NotificationPosition`
 
 #### Parameters
 
-##### $value `float|string`
+##### $value `float`
 
 
 
-#### Example  - using float
+#### Example 
     <?php
     $position = new \Kendo\UI\NotificationPosition();
     $position->right(1);
-    ?>
-
-#### Example  - using string
-    <?php
-    $position = new \Kendo\UI\NotificationPosition();
-    $position->right('value');
     ?>
 
 ### top
@@ -110,19 +92,13 @@ Determines the position of the first popup notification with regard to the viewp
 
 #### Parameters
 
-##### $value `float|string`
+##### $value `float`
 
 
 
-#### Example  - using float
+#### Example 
     <?php
     $position = new \Kendo\UI\NotificationPosition();
     $position->top(1);
-    ?>
-
-#### Example  - using string
-    <?php
-    $position = new \Kendo\UI\NotificationPosition();
-    $position->top('value');
     ?>
 
