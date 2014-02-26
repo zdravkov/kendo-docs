@@ -780,8 +780,6 @@ Pans the diagram with a specified delta (represented as a Point).
 
 The translation delta to apply to the diagram.
 
-#### Returns
-
 ### viewport
 
 The bounds of the diagramming canvas.
@@ -924,13 +922,9 @@ Sets the focus on the diagram.
 
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Something about scrolling which has to be cleared out or demonstrated.*
 
-#### Parameters
-
 ### clear
 
 Clears the content of the diagram.
-
-#### Parameters
 
 ### connect
 
