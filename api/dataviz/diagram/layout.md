@@ -45,7 +45,7 @@ The type of the layout algorythm to use. Predefined values are:
 
 * **force** - The force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node. This force-directed layout is **non-deterministic**; each layout pass will result in an unpredictable (and hence not reproducible) layout. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
 
-    ![Force-directed parameter](ForceDirectedParameters.png)
+    ![Force-directed parameter](forceDirectedParameters.png)
 
 * **layered** - Organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream). Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
 
@@ -71,7 +71,7 @@ The type of the layout algorythm to use. Predefined values are:
      + Each node is assigned a coordinate within its layer, consistent with the permutation calculated in the previous step.
      + The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.
 
-    ![Layered layout parameters.](LayeredParameters.png)
+    ![Layered layout parameters.](layeredParameters.png)
 
 ###subtype `String` *(default: "down")*
 
@@ -106,15 +106,15 @@ The subtype further defines the layout type by specifying in greater detail the 
         
 - **mindmapVertical** -*tree layout* specific subtype. The root sits at the center and its children are spread equally above and below.
 
-    ![Mindmap parameters](MindmapParameters.png)
+    ![Mindmap parameters](mindmapParameters.png)
 - **radial** - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
 
-    ![Radial tree parameters](RadialTreeParameters.png)
-    ![Radial layout angles.](RadialAngles.png)
+    ![Radial tree parameters](radialTreeParameters.png)
+    ![Radial layout angles.](radialAngles.png)
 
 - **tipOver** - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example.
 
-    ![Tip-over parameters](TipOverParameters.png)
+    ![Tip-over parameters](tipOverParameters.png)
 
 - **horizontal** - *layered layout* specific subtype. The preferred direction of the links is horizontal.
 - **vertical** - *layered layout* specific subtype. The preferred direction of the links is vertical.
@@ -213,7 +213,7 @@ In situations where there is enough symmetry in the diagram the increased number
 
 *This setting is specific to the force-directed layout*
 
-![Increasing iterations](ForceDirectedIterations.png)
+![Increasing iterations](forceDirectedIterations.png)
 
 ###nodeDistance `Number` *(default: 50)*
 
@@ -232,7 +232,7 @@ A diagram can have in general disconnected pieces, known as components, which ca
 
 When you apply a certain layout an analysis will first split the diagram in components, arrange each component individually and thereafter organize the components in a grid. The common parameters referred above deal with this grid layout, they define the width, margin and padding of the (invisible) grid used to organize the components.
 
-![Component parameters](ComponentParameters.png)
+![Component parameters](componentParameters.png)
 
     diagram.layout(kendo.diagram.LayoutTypes.TreeLayout,
                     {
