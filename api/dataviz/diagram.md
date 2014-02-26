@@ -542,11 +542,9 @@ The following defines a custom shape with connectors adapted to the shape's outl
         }]
     });
 
-### shapeDefaults.connectors.connector `Object`
+### shapeDefaults.connectors.position `String`
 
-### shapeDefaults.connectors.connector.position `String`
-
-### shapeDefaults.connectors.connector.description `String`
+### shapeDefaults.connectors.description `String`
 
 ### shapeDefaults.rotation `Object`
 
@@ -690,11 +688,9 @@ The following defines a custom shape with connectors adapted to the shape's outl
         }]
     });
 
-### shapes.connectors.connector `Object`
+### shapes.connectors.position `String`
 
-### shapes.connectors.connector.position `String`
-
-### shapes.connectors.connector.description `String`
+### shapes.connectors.description `String`
 
 ### shapes.rotation `Object`
 
