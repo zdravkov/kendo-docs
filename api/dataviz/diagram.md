@@ -302,6 +302,10 @@ Defines the stroke configuration.
 
 Defines the stroke or line color of the connection.
 
+### connectionsDefaults.stroke.width `Number`
+
+Defines the stroke width of the connection.
+
 ### connectionsDefaults.hover `Object`
 
 Defines the hover configuration.
@@ -367,6 +371,10 @@ Defines the stroke configuration.
 ### connections.stroke.color `String`
 
 Defines the stroke or line color of the connection.
+
+### connections.stroke.width `Number`
+
+Defines the stroke width of the connection.
 
 ### connections.hover `Object`
 
