@@ -446,6 +446,56 @@ Prepares the **ScrollView** for safe removal from DOM. Detaches all event handle
     }
     </script>
 
+### next
+
+Switches to the next page with animation.
+
+#### Example
+
+    <div data-role="view">
+      <div id="scrollView" data-role="scrollview">
+        <div data-role="page">Foo</div>
+        <div data-role="page">Bar</div>
+        <div data-role="page">Baz</div>
+        <div data-role="page">Bat</div>
+      </div>
+      <a data-role="button" data-click="next">Next</a>
+    </div>
+
+    <script>
+    var app = new kendo.mobile.Application();
+
+    function next() {
+      var scrollview = $("#scrollView").data("kendoMobileScrollView");
+      scrollview.next();
+    }
+    </script>
+
+### prev
+
+Switches to the previous page with animation.
+
+#### Example
+
+    <div data-role="view">
+      <div id="scrollView" data-role="scrollview">
+        <div data-role="page">Foo</div>
+        <div data-role="page">Bar</div>
+        <div data-role="page">Baz</div>
+        <div data-role="page">Bat</div>
+      </div>
+      <a data-role="button" data-click="prev">Next</a>
+    </div>
+
+    <script>
+    var app = new kendo.mobile.Application();
+
+    function next() {
+      var scrollview = $("#scrollView").data("kendoMobileScrollView");
+      scrollview.prev();
+    }
+    </script>
+
 ### refresh
 
 Redraw the mobile ScrollView pager. Called automatically on device orientation change event.
