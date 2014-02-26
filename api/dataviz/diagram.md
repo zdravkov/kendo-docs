@@ -1047,7 +1047,7 @@ Transforms a given rectangle to the diagram coordinate system.
 
 #### Parameters
 
-##### r `Rect`
+##### r
 
 The rectangle to be transformed.
 
