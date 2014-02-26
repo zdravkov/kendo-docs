@@ -742,7 +742,7 @@ Zooms in or out of the diagram.
 
 The zoom factor.
 
-##### staticPoint `Object'
+##### staticPoint `Object`
 
 The point to zoom into or out of.
 
@@ -1000,7 +1000,7 @@ Adds the given Connection to the diagram.
 
 #### Parameters
 
-##### connection `Connection`
+##### connection `Object`
 
 The Connection instance to be added to the diagram.
 
@@ -1145,7 +1145,7 @@ Brings one or more items into the view in function of various criteria.
 
 #### Parameters
 
-##### obj `Array|Item|Object`
+##### obj `Array|Object`
 
 * a diagram item
 * an array of items
