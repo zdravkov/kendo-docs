@@ -712,10 +712,6 @@ Prepares the widget for safe removal from the DOM. Detaches all event handlers a
 
 > This method does not remove the widget element from the DOM.
 
-#### Parameters
-
-#### Returns
-
 #### Example
 
     <script>
@@ -750,8 +746,6 @@ The zoom factor.
 
 The point to zoom into or out of.
 
-#### Returns
-
 ### setDataSource
 
 Sets the data source of the diagram.
@@ -762,15 +756,9 @@ Sets the data source of the diagram.
 
 The data source to which the widget should be bound.
 
-#### Returns
-
 ### save
 
 Saves the diagram.
-
-#### Parameters
-
-#### Returns
 
 ### load
 
@@ -782,25 +770,19 @@ Loads a saved diagram.
 
 The serialized diagram in JSON format.
 
-#### Returns
-
 ### pan
 
 Pans the diagram with a specified delta (represented as a Point).
 
 #### Parameters
 
-##### pan
+##### pan `Object`
 
 The translation delta to apply to the diagram.
 
 #### Returns
 
 ### viewport
-
-#### Parameters
-
-#### Returns
 
 The bounds of the diagramming canvas.
 
@@ -810,7 +792,7 @@ Transforms a point from View coordinates to Page document coordinates. View orig
 
 #### Parameters
 
-##### point
+##### point `Object`
 
 The point in Page document coordinates.
 
@@ -926,8 +908,6 @@ Transforms a point from the main canvas coordinates to the non-transformed origi
 
 An arbitrary point to transform to the diagram coordinate system.
 
-#### Returns
-
 ### transformRect
 
 Transforms a given rectangle to the diagram coordinate system.
@@ -938,8 +918,6 @@ Transforms a given rectangle to the diagram coordinate system.
 
 The rectangle to be transformed.
 
-#### Returns
-
 ### focus
 
 Sets the focus on the diagram.
@@ -948,15 +926,11 @@ Sets the focus on the diagram.
 
 #### Parameters
 
-#### Returns
-
 ### clear
 
 Clears the content of the diagram.
 
 #### Parameters
-
-#### Returns
 
 ### connect
 
@@ -980,8 +954,6 @@ The target definition of the connection. This can be a Shape, a Connector or a P
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Forward to the Connection Options here*
 
 The options of the new connection. See the Connection's options.
-
-#### Returns
 
 #### Example - connecting two shapes using the Auto-connector
 
@@ -1020,15 +992,13 @@ Returns whether the two given shapes are connected through a connection.
 
 #### Parameters
 
-##### source
+##### source `Object`
 
 A Shape in the diagram.
 
-##### target
+##### target `Object`
 
 A Shape in the diagram.
-
-#### Returns
 
 ### addConnection
 
@@ -1043,8 +1013,6 @@ The Connection instance to be added to the diagram.
 ##### undoable `Boolean` *(default:true)*
 
 Whether the addition should be recorded in the undo-redo stack.
-
-#### Returns
 
 #### Example - adding a Connection to the diagram
 
@@ -1064,15 +1032,13 @@ Adds a new shape to the diagram.
 
 #### Parameters
 
-##### obj
+##### obj `Object`
 
 A Shape instance or a Point where the default shape type will be added.
 
 ##### undoable `Boolean` *(default:true)*
 
 Whether the addition should be recorded in the undo-redo stack.
-
-#### Returns
 
 #### Example - adding a shape to the diagram
 
@@ -1088,10 +1054,6 @@ Whether the addition should be recorded in the undo-redo stack.
 ### undo
 
 Undoes the previous action.
-
-#### Parameters
-
-#### Returns
 
 #### Example - undoing items removal
 
@@ -1110,10 +1072,6 @@ Undoes the previous action.
 
 Executes again the previously undone action.
 
-#### Parameters
-
-#### Returns
-
 ### remove
 
 Removes one or more items from the diagram
@@ -1127,8 +1085,6 @@ A diagram item or an array of diagram items to remove.
 ##### undoable `Boolean` *(default:true)*
 
 Whether the removal should be recorded in the undo-redo stack.
-
-#### Returns
 
 #### Example - removing items
 
@@ -1160,8 +1116,6 @@ Gets the currently selected items is no parameter is specified. If a parameter i
 
 Only one Boolean option is currently defined; addToSelection. If set to true the newly selected items will be added to the existing selection. Otherwise a new selection set is created. The default is false.
 
-#### Returns
-
 ### toFront
 
 Brings the specified items in front, i.e. it's reordering items in the SVG stack to ensure they are on top of the complementary items.
@@ -1175,8 +1129,6 @@ An array of diagram items.
 ##### undoable `Boolean`
 
 Whether the change should be recorded in the undo-redo stack.
-
-#### Returns
 
 
 ### toBack
@@ -1192,8 +1144,6 @@ An array of diagram items.
 ##### undoable `Boolean`
 
 Whether the change should be recorded in the undo-redo stack.
-
-#### Returns
 
 ### bringIntoView
 
@@ -1211,8 +1161,6 @@ Brings one or more items into the view in function of various criteria.
 
 * animate
 * align
-
-#### Returns
 
 #### Example - bring a portion of the diagram into view
 
@@ -1258,11 +1206,9 @@ The second shape has a vertical position of 1000 and is off the screen at launch
 
 ### getBoundingBox
 
-#### Parameters
-
 #### Returns
 
-The bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
+`Object` The bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
 
 #### Example - bring an item into view
 
@@ -1282,25 +1228,13 @@ This will return "[0, 0, 600, 600]" in the console of the browser.
 
 Puts a copy of the currently selected diagram items on the (internal diagram) clipboard.
 
-#### Parameters
-
-#### Returns
-
 ### cut
 
 Cuts the currently selected diagram items and puts them on the (internal diagram) clipboard.
 
-#### Parameters
-
-#### Returns
-
 ### paste
 
 Pastes the content of the (internal diagram) clipboard in the diagram.
-
-#### Parameters
-
-#### Returns
 
 ### findByUid
 
@@ -1346,8 +1280,6 @@ A more detailed overview of layout and graph analysis can be found below.
 
 A variety of options can be specified regarding layout. See below for more information.
 
-#### Returns
-
 #### Example - force-directed layout
 
 This generates a small, random diagram whereafter the force-directed layout is applied.
@@ -1368,8 +1300,6 @@ Aligns the edges (as defined by the bounding box) of the selected shapes.
 ##### direction `String`
 
 This can be one of the four standard directions: 'left', 'right', 'top', 'bottom'.
-
-#### Returns
 
 ### randomDiagram
 
@@ -1393,15 +1323,13 @@ Whether the generated graph should be a tree.
 
 Whether the shapes should have random sizes. By default the shapes are circles but if this property is set to true the shapes will be rectangles with a random with and height.
 
-#### Returns
-
 ### getShapeById
 
 Returns the shape or connection with the specified identifier.
 
 #### Parameters
 
-##### id
+##### id `String`
 
 The unique identifier of the Shape or Connection
 
