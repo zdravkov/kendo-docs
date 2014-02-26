@@ -42,15 +42,11 @@ data source is fired. By default the widget will bind to the data source specifi
     diagram.dataSource.read(); // "read()" will fire the "change" event of the dataSource
     </script>
 
-### name `String` *(default: "Diagram")*
-
-The name of the diagram is an option which you are free to choose. It's being serialized with the diagram but has otherwise no additional function.
-
 ### zoomRate `Number` *(default: 1.1)*
 
 The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If zoomRate is less than 1, zooming will be reverted. If zoomRate=1, then zooming will appear disabled.
 
-### dataSource `kendo.data.DataSource`
+### dataSource `Object|Array|kendo.data.DataSource`
 
 See the [dataSource field](#fields-dataSource).
 
