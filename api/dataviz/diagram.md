@@ -340,22 +340,6 @@ The start cap (arrow, head or decoration) of the connection:
 
 Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
 
-### connectionDefaults.points `Array`
-
-Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
-
-#### Example - setting intermediate connection points
-
-![Intermediate connection points.](diagram/connectionPoints.png)
-
-### connectionDefaults.points.x `Number`
-
-Sets the X coordinate of the point.
-
-### connectionDefaults.points.y `Number`
-
-Sets the Y coordinate of the point.
-
 ### connections `Array`
 
 Defines the connections configuration.
@@ -574,10 +558,6 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 Sets the text content of the Shape.
 
-### shapeDefaults.bounds `Object`
-
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *all bounds should be merged*
-
 ### shapes `Array`
 
 Defines the shape options.
@@ -725,18 +705,6 @@ The following defines a custom shape with connectors adapted to the shape's outl
 ### shapes.content `String`
 
 Sets the text content of the Shape.
-
-### shapes.bounds `Object`
-
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *all bounds should be merged*
-
-### tooltip `Object`
-
-The tooltip configuration.
-
-### copy `Object`
-
-The copy configuration.
 
 ## Fields
 
