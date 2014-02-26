@@ -166,7 +166,7 @@ Defines the vertical separation between siblings and sub-branches. *This setting
 
 ### layout.underneathHorizontalOffset `Number` *(default: 15)*
 
-Defines the horizontal offset from a child with respect to its parent. *This setting is specific to the tipOver tree layout.* 
+Defines the horizontal offset from a child with respect to its parent. *This setting is specific to the tipOver tree layout.*
 
 ### layout.iterations `Number` *(default: 300)*
 
@@ -191,7 +191,7 @@ In the **layered layout** it defines the minimum distance between nodes on the s
 Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
 ![Diagram component](diagram/ComponentExample.png)
 
-A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components. 
+A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components.
 
 When you apply a certain layout an analysis will first split the diagram in components, arrange each component individually and thereafter organize the components in a grid. The common parameters referred above deal with this grid layout, they define the width, margin and padding of the (invisible) grid used to organize the components.
 
@@ -913,7 +913,7 @@ Transforms a given rectangle to the diagram coordinate system.
 
 #### Parameters
 
-##### r
+##### r `Object`
 
 The rectangle to be transformed.
 
