@@ -988,11 +988,11 @@ Returns whether the two given shapes are connected through a connection.
 
 #### Parameters
 
-##### source `Shape`
+##### source
 
 A Shape in the diagram.
 
-##### target `Shape`
+##### target
 
 A Shape in the diagram.
 
@@ -1028,7 +1028,7 @@ Adds a new shape to the diagram.
 
 #### Parameters
 
-##### obj `Shape|Point` *(default: new Point(0,0))*
+##### obj
 
 A Shape instance or a Point where the default shape type will be added.
 
