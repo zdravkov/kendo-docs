@@ -259,6 +259,18 @@ Sets the Y coordinate of the point.
 
 Defines the shape options.
 
+### shapeDefaults.editable `Boolean` *(default:true)*
+
+Specifies if the shape is editable by the user.
+
+### shapeDefaults.rotatable `Boolean` *(default:true)*
+
+Specifies if the user is allowed to rotate the shape.
+
+### shapeDefaults.resizable `Boolean` *(default:true)*
+
+Specifies if the shape is resizable.
+
 ### shapeDefaults.path `String`
 
 The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
@@ -398,6 +410,18 @@ Sets the text content of the Shape.
 ### shapes `Array`
 
 Defines the shape options.
+
+### shapes.editable `Boolean` *(default:true)*
+
+Specifies if the shape is editable by the user.
+
+### shapes.rotatable `Boolean` *(default:true)*
+
+Specifies if the user is allowed to rotate the shape.
+
+### shapes.resizable `Boolean` *(default:true)*
+
+Specifies if the shape is resizable.
 
 ### shapes.path `String`
 
