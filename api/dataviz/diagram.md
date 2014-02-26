@@ -712,6 +712,10 @@ Prepares the widget for safe removal from the DOM. Detaches all event handlers a
 
 > This method does not remove the widget element from the DOM.
 
+#### Parameters
+
+#### Returns
+
 #### Example
 
     <script>
@@ -742,9 +746,11 @@ Zooms in or out of the diagram.
 
 The zoom factor.
 
-##### staticPoint `Point`
+##### staticPoint `Object'
 
 The point to zoom into or out of.
+
+#### Returns
 
 ### setDataSource
 
@@ -756,9 +762,15 @@ Sets the data source of the diagram.
 
 The data source to which the widget should be bound.
 
+#### Returns
+
 ### save
 
 Saves the diagram.
+
+#### Parameters
+
+#### Returns
 
 ### load
 
@@ -770,6 +782,7 @@ Loads a saved diagram.
 
 The serialized diagram in JSON format.
 
+#### Returns
 
 ### pan
 
@@ -777,13 +790,19 @@ Pans the diagram with a specified delta (represented as a Point).
 
 #### Parameters
 
-##### pan `Point`
+##### pan
 
 The translation delta to apply to the diagram.
 
+#### Returns
+
 ### viewport
 
-Returns the bounds of the diagramming canvas.
+#### Parameters
+
+#### Returns
+
+The bounds of the diagramming canvas.
 
 ### viewToDocument
 
@@ -791,13 +810,13 @@ Transforms a point from View coordinates to Page document coordinates. View orig
 
 #### Parameters
 
-##### point `Point`
+##### point
 
 The point in Page document coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### documentToView
 
@@ -805,13 +824,13 @@ Transforms a point from Page document coordinates to View coordinates. View orig
 
 #### Parameters
 
-##### point `Point`
+##### point `Object`
 
 The point in View coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### viewToModel
 
@@ -819,13 +838,13 @@ Transforms a point from View coordinates to Model coordinates. Model coordinates
 
 #### Parameters
 
-##### point `Point`
+##### point `Object`
 
 The point in View coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### modelToView
 
@@ -833,13 +852,13 @@ Transforms a point from Model coordinates to View coordinates. Model coordinates
 
 #### Parameters
 
-##### point `Point`
+##### point `Object`
 
 The point in Model coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### modelToLayer
 
@@ -847,13 +866,13 @@ Transforms a point from Model coordinates to Layer coordinates. Layer coordinate
 
 #### Parameters
 
-##### point `Point`
+##### point `Object`
 
 The point in Model coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### layerToModel
 
@@ -861,13 +880,13 @@ Transforms a point from Layer coordinates to Model coordinates. Layer coordinate
 
 #### Parameters
 
-##### point `Point`
+##### point `Object`
 
 The point in layer coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### documentToModel
 
@@ -875,13 +894,13 @@ Transforms a point from Page document coordinates to Model coordinates. Shortcut
 
 #### Parameters
 
-##### point `Point`
+##### point `Object`
 
 The point in Page document coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### modelToDocument
 
@@ -889,13 +908,13 @@ Transforms a point from Model coordinates to Page document coordinates. Shortcut
 
 #### Parameters
 
-##### point `Point`
+##### point `Object`
 
 The point in Model coordinates.
 
 #### Returns
 
-`Point` the transformed point
+`Object` the transformed point
 
 ### transformPoint
 
@@ -903,9 +922,11 @@ Transforms a point from the main canvas coordinates to the non-transformed origi
 
 #### Parameters
 
-##### p `Point`
+##### p `Object`
 
 An arbitrary point to transform to the diagram coordinate system.
+
+#### Returns
 
 ### transformRect
 
@@ -917,15 +938,25 @@ Transforms a given rectangle to the diagram coordinate system.
 
 The rectangle to be transformed.
 
+#### Returns
+
 ### focus
 
 Sets the focus on the diagram.
 
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Something about scrolling which has to be cleared out or demonstrated.*
 
+#### Parameters
+
+#### Returns
+
 ### clear
 
 Clears the content of the diagram.
+
+#### Parameters
+
+#### Returns
 
 ### connect
 
@@ -949,6 +980,8 @@ The target definition of the connection. This can be a Shape, a Connector or a P
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Forward to the Connection Options here*
 
 The options of the new connection. See the Connection's options.
+
+#### Returns
 
 #### Example - connecting two shapes using the Auto-connector
 
@@ -981,7 +1014,6 @@ The options of the new connection. See the Connection's options.
 
 Note that the Shape holds an indexed connectors collection. Instead of accessing a default or custom connector by means of the **getConnector("name-of-connector")** method you could use **connectors[index]** instead.
 
-
 ### connected
 
 Returns whether the two given shapes are connected through a connection.
@@ -996,6 +1028,8 @@ A Shape in the diagram.
 
 A Shape in the diagram.
 
+#### Returns
+
 ### addConnection
 
 Adds the given Connection to the diagram.
@@ -1009,6 +1043,8 @@ The Connection instance to be added to the diagram.
 ##### undoable `Boolean` *(default:true)*
 
 Whether the addition should be recorded in the undo-redo stack.
+
+#### Returns
 
 #### Example - adding a Connection to the diagram
 
@@ -1036,6 +1072,8 @@ A Shape instance or a Point where the default shape type will be added.
 
 Whether the addition should be recorded in the undo-redo stack.
 
+#### Returns
+
 #### Example - adding a shape to the diagram
 
     <script>
@@ -1050,6 +1088,10 @@ Whether the addition should be recorded in the undo-redo stack.
 ### undo
 
 Undoes the previous action.
+
+#### Parameters
+
+#### Returns
 
 #### Example - undoing items removal
 
@@ -1068,6 +1110,10 @@ Undoes the previous action.
 
 Executes again the previously undone action.
 
+#### Parameters
+
+#### Returns
+
 ### remove
 
 Removes one or more items from the diagram
@@ -1081,6 +1127,8 @@ A diagram item or an array of diagram items to remove.
 ##### undoable `Boolean` *(default:true)*
 
 Whether the removal should be recorded in the undo-redo stack.
+
+#### Returns
 
 #### Example - removing items
 
@@ -1112,6 +1160,7 @@ Gets the currently selected items is no parameter is specified. If a parameter i
 
 Only one Boolean option is currently defined; addToSelection. If set to true the newly selected items will be added to the existing selection. Otherwise a new selection set is created. The default is false.
 
+#### Returns
 
 ### toFront
 
@@ -1126,6 +1175,8 @@ An array of diagram items.
 ##### undoable `Boolean`
 
 Whether the change should be recorded in the undo-redo stack.
+
+#### Returns
 
 
 ### toBack
@@ -1142,13 +1193,15 @@ An array of diagram items.
 
 Whether the change should be recorded in the undo-redo stack.
 
+#### Returns
+
 ### bringIntoView
 
 Brings one or more items into the view in function of various criteria.
 
 #### Parameters
 
-##### obj `Array|Item|Rect`
+##### obj `Array|Item|Object`
 
 * a diagram item
 * an array of items
@@ -1158,6 +1211,8 @@ Brings one or more items into the view in function of various criteria.
 
 * animate
 * align
+
+#### Returns
 
 #### Example - bring a portion of the diagram into view
 
@@ -1203,7 +1258,11 @@ The second shape has a vertical position of 1000 and is off the screen at launch
 
 ### getBoundingBox
 
-Returns the bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
+#### Parameters
+
+#### Returns
+
+The bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
 
 #### Example - bring an item into view
 
@@ -1219,19 +1278,29 @@ This will return "[0, 0, 600, 600]" in the console of the browser.
         console.log("[" + r.x + "," + r.x + "," + r.width +","+ r.height +"]");
     </script>
 
-
 ### copy
 
 Puts a copy of the currently selected diagram items on the (internal diagram) clipboard.
+
+#### Parameters
+
+#### Returns
 
 ### cut
 
 Cuts the currently selected diagram items and puts them on the (internal diagram) clipboard.
 
+#### Parameters
+
+#### Returns
+
 ### paste
 
 Pastes the content of the (internal diagram) clipboard in the diagram.
 
+#### Parameters
+
+#### Returns
 
 ### findByUid
 
@@ -1277,6 +1346,8 @@ A more detailed overview of layout and graph analysis can be found below.
 
 A variety of options can be specified regarding layout. See below for more information.
 
+#### Returns
+
 #### Example - force-directed layout
 
 This generates a small, random diagram whereafter the force-directed layout is applied.
@@ -1292,12 +1363,13 @@ This generates a small, random diagram whereafter the force-directed layout is a
 
 Aligns the edges (as defined by the bounding box) of the selected shapes.
 
-
 #### Parameters
 
 ##### direction `String`
 
 This can be one of the four standard directions: 'left', 'right', 'top', 'bottom'.
+
+#### Returns
 
 ### randomDiagram
 
@@ -1321,6 +1393,8 @@ Whether the generated graph should be a tree.
 
 Whether the shapes should have random sizes. By default the shapes are circles but if this property is set to true the shapes will be rectangles with a random with and height.
 
+#### Returns
+
 ### getShapeById
 
 Returns the shape or connection with the specified identifier.
@@ -1333,7 +1407,7 @@ The unique identifier of the Shape or Connection
 
 #### Returns
 
-`kendo.dataviz.diagram.Shape|kendo.dataviz.diagram.Connection` the item that has the provided ID.
+`Object` the item that has the provided ID.
 
 ## Events
 
