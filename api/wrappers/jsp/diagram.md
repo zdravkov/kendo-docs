@@ -43,14 +43,6 @@ Defines whether items can be dropped on the diagram.
     <kendo:diagram draggable="draggable">
     </kendo:diagram>
 
-### name `java.lang.String`
-
-The name of the diagram is an option which you are free to choose. It's being serialized with the diagram but has otherwise no additional function.
-
-#### Example
-    <kendo:diagram name="name">
-    </kendo:diagram>
-
 ### resizable `boolean`
 
 This defines whether the shapes can be resized. If set to false the adorner will not show the resizing thumbs, as can be seen below;
@@ -120,6 +112,18 @@ More documentation is available at [kendo:diagram-connectionsDefaults](/kendo-ui
 
     <kendo:diagram>
         <kendo:diagram-connectionsDefaults></kendo:diagram-connectionsDefaults>
+    </kendo:diagram>
+
+### kendo:diagram-layout
+
+The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.On a technical level, layout consists of a multitude of algorithms and optimizations:and various ad-hoc calculations which depend on the type of layout. The criteria on which an algorithm is based vary but the common denominator is:Kendo diagram includes three of the most used layout algorithms which should cover most of your layout needs - tree layout, force-directed layout and layered layout. Please, check the type property for more details regarding each type.The generic way to apply a layout is by calling the layout() method on the diagram. The method has a single parameter options. It is an object, which can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.
+
+More documentation is available at [kendo:diagram-layout](/kendo-ui/api/wrappers/jsp/diagram/layout).
+
+#### Example
+
+    <kendo:diagram>
+        <kendo:diagram-layout></kendo:diagram-layout>
     </kendo:diagram>
 
 ### kendo:diagram-shapeDefaults

@@ -40,12 +40,12 @@ Sets the text content of the Shape.
     <kendo:diagram-shapeDefaults content="content">
     </kendo:diagram-shapeDefaults>
 
-### data `java.lang.String`
+### editable `boolean`
 
-The root of a Shape is a SVG group (which on its own is invisible) inside which one or more SVG visual elements can be added. By default the Shape has a simple SVG primitive (see however the custom shape topic) and this property defines this primitive. There are three possibilities:
+Specifies if the shape is editable by the user.
 
 #### Example
-    <kendo:diagram-shapeDefaults data="data">
+    <kendo:diagram-shapeDefaults editable="editable">
     </kendo:diagram-shapeDefaults>
 
 ### height `float`
@@ -70,6 +70,38 @@ Defines the minimum width the shape should have, i.e. it cannot be resized to a 
 
 #### Example
     <kendo:diagram-shapeDefaults minWidth="minWidth">
+    </kendo:diagram-shapeDefaults>
+
+### path `java.lang.String`
+
+The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+
+#### Example
+    <kendo:diagram-shapeDefaults path="path">
+    </kendo:diagram-shapeDefaults>
+
+### resizable `boolean`
+
+Specifies if the shape is resizable.
+
+#### Example
+    <kendo:diagram-shapeDefaults resizable="resizable">
+    </kendo:diagram-shapeDefaults>
+
+### rotatable `boolean`
+
+Specifies if the user is allowed to rotate the shape.
+
+#### Example
+    <kendo:diagram-shapeDefaults rotatable="rotatable">
+    </kendo:diagram-shapeDefaults>
+
+### type `java.lang.String`
+
+Specifies the type of the Shape using any of the built-in shape type.
+
+#### Example
+    <kendo:diagram-shapeDefaults type="type">
     </kendo:diagram-shapeDefaults>
 
 ### width `float`
