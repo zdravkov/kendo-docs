@@ -173,22 +173,6 @@ The start cap (arrow, head or decoration) of the connection:
 
 Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
 
-### connectionDefaults.points `Array`
-
-Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
-
-#### Example - setting intermediate connection points
-
-![Intermediate connection points.](ConnectionPoints.PNG)
-
-### connectionDefaults.points.x `Number`
-
-Sets the X coordinate of the point.
-
-### connectionDefaults.points.y `Number`
-
-Sets the Y coordinate of the point.
-
 ### connections `Array`
 
 Defines the connections configuration.
