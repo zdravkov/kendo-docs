@@ -103,6 +103,22 @@ Hint is the element which represents the dragged. By default the hint is a clone
         });
     </script>
 
+### Disabling the hint
+
+The Sortable widget can operate without hint. To disable the hint you should set it to an empty function ([jQuery.noop](http://api.jquery.com/jQuery.noop/)).
+
+    <ul id="sortable">
+        <li>ItemA1</li>
+        <li>ItemA2</li>
+        <li>ItemA3</li>
+    </ul>
+    
+    <script>
+        $("#sortable").kendoSortable({ 
+            hint: $.noop
+        });
+    </script>
+
 ## Filter/Disable items
 
 The **filter** option specifies which items inside the Sortable's element will be sortable. Items that does not match the filter selector will not be draggable nor reordered when user drags a sortable item over them.

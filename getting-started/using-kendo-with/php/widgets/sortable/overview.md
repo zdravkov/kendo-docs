@@ -95,3 +95,17 @@ You can subscribe to all sortable [events](/kendo-ui/api/web/sortable#events).
 
     echo $sortable->render();
     ?>
+
+## Disabling the hint
+
+The Sortable widget can operate without hint. To disable the hint you should set it to an empty function ([jQuery.noop](http://api.jquery.com/jQuery.noop/)).
+
+    <?php
+        $sortable = new \Kendo\UI\Sortable('#sortable-basic'); // select the container for the Sortable
+        $sortable->hint(new \Kendo\JavaScriptFunction('noHint'));
+    ?>
+    
+    <script>
+        var noHint = $.noop;
+    </script>
+

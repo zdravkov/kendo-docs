@@ -181,3 +181,16 @@ You can subscribe to all [events](/kendo-ui/api/web/sortable#events) exposed by 
         )
     )
 
+## Disabling the hint
+
+The Sortable widget can operate without hint. To disable the hint you should set it to an empty function ([jQuery.noop](http://api.jquery.com/jQuery.noop/)).
+
+    @(Html.Kendo().Sortable()
+        .For("#sortable")
+        .HintHandler("noHint")
+    )
+    
+    <script>
+        var noHint = $.noop;
+    </script>
+
