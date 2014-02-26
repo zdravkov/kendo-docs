@@ -52,6 +52,42 @@ data source is fired. By default the widget will bind to the data source specifi
     $diagram->autoBind(true);
     ?>
 
+### change
+Fired when an item is added or removed to/from the diagram.
+For additional information check the [change](/kendo-ui/api/dataviz/diagram#events-change) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->change('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onChange(e) {
+            // handle the change event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->change('onChange');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### connectionDefaults
 
 Defines the connections configuration.
@@ -144,6 +180,78 @@ Defines whether items can be dropped on the diagram.
     $diagram->draggable(true);
     ?>
 
+### itemBoundsChange
+Fired when the bounds of an item are changed.
+For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->itemBoundsChange('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onItemBoundsChange(e) {
+            // handle the itemBoundsChange event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->itemBoundsChange('onItemBoundsChange');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->itemBoundsChange(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### itemRotate
+Fired when an item is rotated.
+For additional information check the [itemRotate](/kendo-ui/api/dataviz/diagram#events-itemRotate) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->itemRotate('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onItemRotate(e) {
+            // handle the itemRotate event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->itemRotate('onItemRotate');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->itemRotate(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### layout
 
 The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.On a technical level, layout consists of a multitude of algorithms and optimizations:and various ad-hoc calculations which depend on the type of layout. The criteria on which an algorithm is based vary but the common denominator is:Kendo diagram includes three of the most used layout algorithms which should cover most of your layout needs - tree layout, force-directed layout and layered layout. Please, check the type property for more details regarding each type.The generic way to apply a layout is by calling the layout() method on the diagram. The method has a single parameter options. It is an object, which can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.
@@ -171,6 +279,42 @@ The layout of a diagram consists in arranging the shapes (sometimes also the con
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $endRadialAngle = 1;
     $diagram->layout(array('endRadialAngle' => $endRadialAngle));
+    ?>
+
+### pan
+Fired when the user pans the diagram.
+For additional information check the [pan](/kendo-ui/api/dataviz/diagram#events-pan) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->pan('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onPan(e) {
+            // handle the pan event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->pan('onPan');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->pan(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### resizable
@@ -207,6 +351,42 @@ This defines whether the shapes can be rotated. If set to false the adorner will
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $diagram->rotatable(true);
+    ?>
+
+### select
+Fired when the user selects one or more items.
+For additional information check the [select](/kendo-ui/api/dataviz/diagram#events-select) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->select('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onSelect(e) {
+            // handle the select event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->select('onSelect');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->select(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### shapeDefaults
@@ -296,6 +476,42 @@ A function returning a visual element to render for a given dataSource item. The
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $diagram->visualTemplate(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
+### zoom
+Fired when the user changes the diagram zoom level.
+For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events-zoom) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoom('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onZoom(e) {
+            // handle the zoom event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoom('onZoom');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoom(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### zoomRate

@@ -122,3 +122,212 @@ More documentation is available at [kendo:diagram-shapeDefaults](/kendo-ui/api/w
         <kendo:diagram-shapeDefaults></kendo:diagram-shapeDefaults>
     </kendo:diagram>
 
+
+## Event Attributes
+
+### change `String`
+
+Fired when an item is added or removed to/from the diagram.
+
+
+For additional information check the [change](/kendo-ui/api/dataviz/diagram#events-change) event documentation.
+
+#### Example
+    <kendo:diagram change="handle_change">
+    </kendo:diagram>
+    <script>
+        function handle_change(e) {
+            // Code to handle the change event.
+        }
+    </script>
+
+### itemBoundsChange `String`
+
+Fired when the bounds of an item are changed.
+
+
+For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
+
+#### Example
+    <kendo:diagram itemBoundsChange="handle_itemBoundsChange">
+    </kendo:diagram>
+    <script>
+        function handle_itemBoundsChange(e) {
+            // Code to handle the itemBoundsChange event.
+        }
+    </script>
+
+### itemRotate `String`
+
+Fired when an item is rotated.
+
+
+For additional information check the [itemRotate](/kendo-ui/api/dataviz/diagram#events-itemRotate) event documentation.
+
+#### Example
+    <kendo:diagram itemRotate="handle_itemRotate">
+    </kendo:diagram>
+    <script>
+        function handle_itemRotate(e) {
+            // Code to handle the itemRotate event.
+        }
+    </script>
+
+### pan `String`
+
+Fired when the user pans the diagram.
+
+
+For additional information check the [pan](/kendo-ui/api/dataviz/diagram#events-pan) event documentation.
+
+#### Example
+    <kendo:diagram pan="handle_pan">
+    </kendo:diagram>
+    <script>
+        function handle_pan(e) {
+            // Code to handle the pan event.
+        }
+    </script>
+
+### select `String`
+
+Fired when the user selects one or more items.
+
+
+For additional information check the [select](/kendo-ui/api/dataviz/diagram#events-select) event documentation.
+
+#### Example
+    <kendo:diagram select="handle_select">
+    </kendo:diagram>
+    <script>
+        function handle_select(e) {
+            // Code to handle the select event.
+        }
+    </script>
+
+### zoom `String`
+
+Fired when the user changes the diagram zoom level.
+
+
+For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events-zoom) event documentation.
+
+#### Example
+    <kendo:diagram zoom="handle_zoom">
+    </kendo:diagram>
+    <script>
+        function handle_zoom(e) {
+            // Code to handle the zoom event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:diagram-change
+
+Fired when an item is added or removed to/from the diagram.
+
+
+For additional information check the [change](/kendo-ui/api/dataviz/diagram#events-change) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-change>
+            <script>
+                function(e) {
+                    // Code to handle the change event.
+                }
+            </script>
+        </kendo:diagram-change>
+    </kendo:diagram>
+
+### kendo:diagram-itemBoundsChange
+
+Fired when the bounds of an item are changed.
+
+
+For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-itemBoundsChange>
+            <script>
+                function(e) {
+                    // Code to handle the itemBoundsChange event.
+                }
+            </script>
+        </kendo:diagram-itemBoundsChange>
+    </kendo:diagram>
+
+### kendo:diagram-itemRotate
+
+Fired when an item is rotated.
+
+
+For additional information check the [itemRotate](/kendo-ui/api/dataviz/diagram#events-itemRotate) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-itemRotate>
+            <script>
+                function(e) {
+                    // Code to handle the itemRotate event.
+                }
+            </script>
+        </kendo:diagram-itemRotate>
+    </kendo:diagram>
+
+### kendo:diagram-pan
+
+Fired when the user pans the diagram.
+
+
+For additional information check the [pan](/kendo-ui/api/dataviz/diagram#events-pan) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-pan>
+            <script>
+                function(e) {
+                    // Code to handle the pan event.
+                }
+            </script>
+        </kendo:diagram-pan>
+    </kendo:diagram>
+
+### kendo:diagram-select
+
+Fired when the user selects one or more items.
+
+
+For additional information check the [select](/kendo-ui/api/dataviz/diagram#events-select) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-select>
+            <script>
+                function(e) {
+                    // Code to handle the select event.
+                }
+            </script>
+        </kendo:diagram-select>
+    </kendo:diagram>
+
+### kendo:diagram-zoom
+
+Fired when the user changes the diagram zoom level.
+
+
+For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events-zoom) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-zoom>
+            <script>
+                function(e) {
+                    // Code to handle the zoom event.
+                }
+            </script>
+        </kendo:diagram-zoom>
+    </kendo:diagram>
+

@@ -702,104 +702,6 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 Sets the text content of the Shape.
 
-## Fields
-
-### dataSource `kendo.data.DataSource`
-
-The [data source](/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
-
-> Changes of the data source will be reflected in the widget.
-
-> Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
-
-#### Example - add a data item to the data source
-
-    <div id="diagram"></div>
-    <script>
-    $("#diagram").kendoDiagram({
-        dataSource: [{
-            name: "Telerik",
-            items: [{
-                name: "Kendo"
-            }, {
-                name: "Icenium"
-            }]
-        }],
-        template: "#= item.name #"
-    });
-    var diagram = $("#diagram").data("kendoDiagram");
-    diagram.dataSource.add({ "name": "XAML" });
-    </script>
-
-#### Example - update a data item in the data source
-
-
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Doesn't work right now, need to hook up or amend the update of the source.*
-
-    <div id="diagram"></div>
-    <script>
-    $("#diagram").kendoDiagram({
-      dataSource: [
-                      {
-
-                          "name" : "Telerik",
-                          "items": [
-                              {"name": "Kendo"},
-                              {"name": "Icenium"}
-                          ]
-                      }
-                  ],
-      template  : "#= item.name #"
-    });
-    var diagram = $("#diagram").data("kendoDiagram");
-    var data = diagram.dataSource.at(0);
-    data.set("name", "Telerik AD");
-    </script>
-
-#### Example - remove a data item in the data source
-
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Same here, need to hook up or amend the update of the source.*
-
-
-    <div id="diagram"></div>
-    <script>
-    $("#diagram").kendoDiagram({
-      dataSource: [
-                      {
-
-                          "name" : "Telerik",
-                          "items": [
-                              {"name": "Kendo"},
-                              {"name": "Icenium"}
-                          ]
-                      }
-                  ],
-      template  : "#= item.name #"
-    });
-    var diagram = $("#diagram").data("kendoDiagram");
-    var data = diagram.dataSource.at(0);
-    diagram.dataSource.remove(data);
-    </script>
-
-### options `Object`
-
-The [configuration](#configuration) options with which the diagram is initialized.
-
-
-
-#### Example - changing the diagram options
-
-    <div id="chart"></div>
-    <script>
-     $("#diagram").kendoDiagram();
-     var diagram = $("#diagram").data("kendoDiagram");
-     diagram.options.copy = {
-                       enabled: true,
-                       offsetX: 100,
-                       offsetY: 100
-                   };
-    </script>
-
 ## Methods
 
 ![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *I have gone over all the methods in the code which are not marked as '_private', but it doesn't mean they should be public. We should clean up and decide/set/settle the method which should be private or public.*
@@ -1432,4 +1334,30 @@ The unique identifier of the Shape or Connection
 #### Returns
 
 `kendo.dataviz.diagram.Shape|kendo.dataviz.diagram.Connection` the item that has the provided ID.
+
+## Events
+
+### change
+
+Fired when an item is added or removed to/from the diagram.
+
+### itemBoundsChange
+
+Fired when the bounds of an item are changed.
+
+### itemRotate
+
+Fired when an item is rotated.
+
+### pan
+
+Fired when the user pans the diagram.
+
+### select
+
+Fired when the user selects one or more items.
+
+### zoom
+
+Fired when the user changes the diagram zoom level.
 
