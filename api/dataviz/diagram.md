@@ -286,35 +286,35 @@ A function returning a visual element to render for a given dataSource item. The
     }).data("kendoDiagram");
     diagram.layout();
 
-### connectionsDefaults `Object`
+### connectionDefaults `Object`
 
 Defines the connections configuration.
 
-### connectionsDefaults.stroke `Object`
+### connectionDefaults.stroke `Object`
 
 Defines the stroke configuration.
 
-### connectionsDefaults.stroke.color `String`
+### connectionDefaults.stroke.color `String`
 
 Defines the stroke or line color of the connection.
 
-### connectionsDefaults.stroke.width `Number`
+### connectionDefaults.stroke.width `Number`
 
 Defines the stroke width of the connection.
 
-### connectionsDefaults.hover `Object`
+### connectionDefaults.hover `Object`
 
 Defines the hover configuration.
 
-### connectionsDefaults.hover.stroke `Object`
+### connectionDefaults.hover.stroke `Object`
 
 Defines the hover stroke configuration.
 
-### connectionsDefaults.hover.stroke.color `String` *(default: "#70CAFF")*
+### connectionDefaults.hover.stroke.color `String` *(default: "#70CAFF")*
 
 Defines the highlight color when the pointer is hovering over the connection.
 
-### connectionsDefaults.startCap `String` *(default: "FilledCircle")*
+### connectionDefaults.startCap `String` *(default: "FilledCircle")*
 
 The start cap (arrow, head or decoration) of the connection:
 
@@ -330,7 +330,7 @@ This defines and adds a custom cap (a small square) to the diagram canvas and is
 
 ![Custom square cap.](diagram/customCap.png)
 
-### connectionsDefaults.endCap `String` *(default: "ArrowEnd")*
+### connectionDefaults.endCap `String` *(default: "ArrowEnd")*
 
 The start cap (arrow, head or decoration) of the connection:
 
@@ -340,7 +340,7 @@ The start cap (arrow, head or decoration) of the connection:
 
 Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
 
-### connectionsDefaults.points `Array`
+### connectionDefaults.points `Array`
 
 Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
 
@@ -348,11 +348,11 @@ Sets the intermediate points (in global coordinates) of the connection. It's imp
 
 ![Intermediate connection points.](diagram/connectionPoints.png)
 
-### connectionsDefaults.points.x `Number`
+### connectionDefaults.points.x `Number`
 
 Sets the X coordinate of the point.
 
-### connectionsDefaults.points.y `Number`
+### connectionDefaults.points.y `Number`
 
 Sets the Y coordinate of the point.
 
