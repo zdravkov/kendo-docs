@@ -24,14 +24,6 @@ Defines the fill-color of the shape.
     <kendo:diagram-shapeDefaults background="background">
     </kendo:diagram-shapeDefaults>
 
-### bounds `java.lang.Object`
-
-all bounds should be merged
-
-#### Example
-    <kendo:diagram-shapeDefaults bounds="bounds">
-    </kendo:diagram-shapeDefaults>
-
 ### content `java.lang.String`
 
 Sets the text content of the Shape.

@@ -27,14 +27,6 @@ Collection of predefined connections to be added to the diagram
     <kendo:diagram connections="connections">
     </kendo:diagram>
 
-### copy `java.lang.Object`
-
-The copy configuration.
-
-#### Example
-    <kendo:diagram copy="copy">
-    </kendo:diagram>
-
 ### draggable `boolean`
 
 Defines whether items can be dropped on the diagram.
@@ -75,14 +67,6 @@ The template which renders the content of the shape when bound to a dataSource. 
     <kendo:diagram template="template">
     </kendo:diagram>
 
-### tooltip `java.lang.Object`
-
-The tooltip configuration.
-
-#### Example
-    <kendo:diagram tooltip="tooltip">
-    </kendo:diagram>
-
 ### visualTemplate `java.lang.String`
 
 A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual: Should redirect here to a more comprehensive overview of how to use the primitives.
@@ -102,16 +86,16 @@ The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If 
 
 ##  Configuration JSP Tags
 
-### kendo:diagram-connectionsDefaults
+### kendo:diagram-connectionDefaults
 
 Defines the connections configuration.
 
-More documentation is available at [kendo:diagram-connectionsDefaults](/kendo-ui/api/wrappers/jsp/diagram/connectionsdefaults).
+More documentation is available at [kendo:diagram-connectionDefaults](/kendo-ui/api/wrappers/jsp/diagram/connectiondefaults).
 
 #### Example
 
     <kendo:diagram>
-        <kendo:diagram-connectionsDefaults></kendo:diagram-connectionsDefaults>
+        <kendo:diagram-connectionDefaults></kendo:diagram-connectionDefaults>
     </kendo:diagram>
 
 ### kendo:diagram-layout
