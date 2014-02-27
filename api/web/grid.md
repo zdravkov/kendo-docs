@@ -4103,6 +4103,10 @@ The [data source](/kendo-ui/api/framework/datasource) of the widget. Configured 
     grid.dataSource.remove(data);
     </script>
 
+### footer `jQuery`
+
+The jQuery object which represents the grid footer element.
+
 ### pager `kendo.ui.Pager`
 
 The [Pager widget](/kendo-ui/api/web/pager) attached to the Grid.
