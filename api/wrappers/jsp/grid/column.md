@@ -135,6 +135,14 @@ If set to true the column will not be displayed in the grid. By default all colu
     <kendo:grid-column hidden="hidden">
     </kendo:grid-column>
 
+### lockable `boolean`
+
+If set to false the column will remain in the side of the grid into which its own locked configuration placed it.
+
+#### Example
+    <kendo:grid-column lockable="lockable">
+    </kendo:grid-column>
+
 ### locked `boolean`
 
 If set to true the column will be displayed as locked in the grid.
