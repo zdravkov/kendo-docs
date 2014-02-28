@@ -728,7 +728,7 @@ If set to `true` the column will be displayed as locked in the grid.
 having at least one non locked column with width greater than twice the scrollbar width.
 > Row template and detail features are not supported in combination with column locking.
 
-#### Example - hide columns
+#### Example - locked columns
     <div id="grid"></div>
     <script>
     $("#grid").kendoGrid({
@@ -740,6 +740,29 @@ having at least one non locked column with width greater than twice the scrollba
     });
     </script>
 
+### columns.lockable `Boolean` *(default: true)*
+
+If set to `false` the column will remain in the side of the grid into which its own locked configuration placed it.
+
+> This option is meaningful when the grid has columns which are configured with a [locked](#configuration-columns.locked) value. Setting it explicitly to `false` will
+prevent the user from locking or unlocking this column using the user interface.
+
+#### Example - lockable columns
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { locked: true, field: "id", lockable: false },
+        { locked: true, field: "age" },
+        { field: "name" },
+        { field: "city", lockable: false }
+      ],
+      dataSource: [
+          { id: 1, name: "Jane Doe", age: 31, city: "Boston" },
+          { id: 2, name: "John Doe", age: 55, city: "New York" }
+      ]
+    });
+    </script>
 
 ### columns.sortable `Boolean|Object` *(default: true)*
 
