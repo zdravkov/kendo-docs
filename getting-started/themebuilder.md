@@ -9,7 +9,7 @@ publish: true
 
 ### What is the Kendo UI ThemeBuilder?
 
-The Kendo UI ThemeBuilder is a tool that lets you modify Kendo UI themes so that they match the look and feel of your site or app. You can test it online [here] (http://demos.telerik.com/kendo-ui/themebuilder/web.html)
+The Kendo UI ThemeBuilder is a tool that lets you modify Kendo UI themes so that they match the look and feel of your site or app. You can test it online [here](http://demos.telerik.com/kendo-ui/themebuilder/web.html).
 
 ### Using the ThemeBuilder on your own pages
 
