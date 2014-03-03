@@ -10,6 +10,8 @@ publish: true
 
 # MaskedTextBox Overview
 
+> MaskedTextBox is available in [Q1 2014 Beta](http://demos.telerik.com/kendo-ui/Beta/web/maskedtextbox/index.html)
+
 The MaskedTextBox widget allows controlled text input based on a specific format.
 It can be defined using the [mask](/kendo-ui/api/web/maskedtextbox#configuration-mask) option of the widget. Every mask can contain mask rules and
 mask literals. The mask literals will be automatically entered for the user and they cannot be removed.

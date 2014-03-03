@@ -10,6 +10,8 @@ publish: true
 
 # Sortable Overview
 
+> Sortable is available in [Q1 2014 Beta](http://demos.telerik.com/kendo-ui/Beta/web/sortable/index.html)
+
 The **Sortable** widget makes a group of DOM elements sortable by dragging and dropping with mouse/finger.
 
 ## Getting Started

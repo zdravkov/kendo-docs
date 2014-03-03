@@ -9,6 +9,8 @@ publish: false
 
 # Kendo Diagramming Overview
 
+> Kendo Diagram is available in [Q1 2014 Beta](http://demos.telerik.com/kendo-ui/Beta/dataviz/diagram/index.html)
+
 ## Getting started
 To create a diagram, add an empty div in the HTML and give it an Id;
 

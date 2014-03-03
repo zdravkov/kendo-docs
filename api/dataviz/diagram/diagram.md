@@ -9,6 +9,8 @@ publish: false
 
 # kendo.dataviz.ui.Diagram
 
+> Kendo Diagram is available in [Q1 2014 Beta](http://demos.telerik.com/kendo-ui/Beta/dataviz/diagram/index.html)
+
 ## Configuration
 
 ### autoBind `Boolean` *(default: true)*
