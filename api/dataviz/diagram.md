@@ -253,7 +253,6 @@ A function returning a visual element to render for a given dataSource item. The
 * TextBlock
 * Image
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Should redirect here to a more comprehensive overview of how to use the primitives.*
 
 #### Example - how to use the visualTemplate
 
@@ -552,8 +551,6 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 ### shapeDefaults.rotation.angle `Number` *(default: 0)*
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
-
 ### shapeDefaults.content `String`
 
 Sets the text content of the Shape.
@@ -698,15 +695,11 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 ### shapes.rotation.angle `Number` *(default: 0)*
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
-
 ### shapes.content `String`
 
 Sets the text content of the Shape.
 
 ## Methods
-
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *I have gone over all the methods in the code which are not marked as '_private', but it doesn't mean they should be public. We should clean up and decide/set/settle the method which should be private or public.*
 
 ### destroy
 
@@ -922,8 +915,6 @@ The rectangle to be transformed.
 
 Sets the focus on the diagram.
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Something about scrolling which has to be cleared out or demonstrated.*
-
 ### clear
 
 Clears the content of the diagram.
@@ -947,9 +938,7 @@ The target definition of the connection. This can be a Shape, a Connector or a P
 
 ##### options `Object`
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Forward to the Connection Options here*
-
-The options of the new connection. See the Connection's options.
+The options of the new connection. See [connections](#configuration-connections) options.
 
 #### Example - connecting two shapes using the Auto-connector
 
