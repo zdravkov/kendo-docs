@@ -328,8 +328,6 @@ The start cap (arrow, head or decoration) of the connection:
 * "ArrowStart": a filled arrow
 * "FilledCircle": a filled circle
 
-You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. [the SVG documentation](http://www.w3.org/TR/SVG/painting.html "SVG markers.")).
-
 #### Example - custom connection caps
 
 This defines and adds a custom cap (a small square) to the diagram canvas and is referred to in the connection options.
@@ -381,8 +379,6 @@ The start cap (arrow, head or decoration) of the connection:
 * "none": no cap
 * "ArrowStart": a filled arrow
 * "FilledCircle": a filled circle
-
-You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. [the SVG documentation](http://www.w3.org/TR/SVG/painting.html "SVG markers.")).
 
 #### Example - custom connection caps
 
@@ -466,8 +462,8 @@ The following dash types are supported:
 
 Specifies the type of the Shape using any of the built-in shape type.
 
-* "rectangle": this is the default option, representing a SVG Rectangle
-* "circle" : a SVG circle/ellipse
+* "rectangle": this is the default option
+* "circle" : a circle/ellipse
 
 ### shapeDefaults.x `Number` *(default: 0)*
 
@@ -612,8 +608,8 @@ The following dash types are supported:
 
 Specifies the type of the Shape using any of the built-in shape type.
 
-* "rectangle": this is the default option, representing a SVG Rectangle
-* "circle" : a SVG circle/ellipse
+* "rectangle": this is the default option
+* "circle" : a circle/ellipse
 
 ### shapes.x `Number` *(default: 0)*
 
@@ -848,7 +844,7 @@ The point in Model coordinates.
 
 ### modelToLayer
 
-Transforms a point from Model coordinates to Layer coordinates. Layer coordinates are relative to the drawable canvas - SVG, 2d canvas context, etc.
+Transforms a point from Model coordinates to Layer coordinates. Layer coordinates are relative to the drawing surface.
 
 #### Parameters
 
@@ -862,7 +858,7 @@ The point in Model coordinates.
 
 ### layerToModel
 
-Transforms a point from Layer coordinates to Model coordinates. Layer coordinates are relative to the drawable canvas - SVG, 2d canvas context, etc.
+Transforms a point from Layer coordinates to Model coordinates. Layer coordinates are relative to the drawable surface.
 
 #### Parameters
 
@@ -1118,7 +1114,7 @@ Only one Boolean option is currently defined; addToSelection. If set to true the
 
 ### toFront
 
-Brings the specified items in front, i.e. it's reordering items in the SVG stack to ensure they are on top of the complementary items.
+Brings the specified items in front, i.e. it's reordering items to ensure they are on top of the complementary items.
 
 #### Parameters
 
@@ -1133,7 +1129,7 @@ Whether the change should be recorded in the undo-redo stack.
 
 ### toBack
 
-Sends the specified items to the back, i.e. it's reordering items in the SVG stack to ensure they are underneath the complementary items.
+Sends the specified items to the back, i.e. it's reordering items to ensure they are underneath the complementary items.
 
 #### Parameters
 
