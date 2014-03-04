@@ -16,18 +16,19 @@ Defines the connectors the shape owns.You can easily define your own custom conn
 
 ## Configuration Attributes
 
-
-##  Configuration JSP Tags
-
-### kendo:diagram-shape-connector-connector
+### description `java.lang.String`
 
 
-
-More documentation is available at [kendo:diagram-shape-connector-connector](/kendo-ui/api/wrappers/jsp/diagram/shape-connector-connector).
 
 #### Example
+    <kendo:diagram-shape-connector description="description">
+    </kendo:diagram-shape-connector>
 
-    <kendo:diagram-shape-connector>
-        <kendo:diagram-shape-connector-connector></kendo:diagram-shape-connector-connector>
+### position `java.lang.String`
+
+
+
+#### Example
+    <kendo:diagram-shape-connector position="position">
     </kendo:diagram-shape-connector>
 

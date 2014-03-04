@@ -13,7 +13,7 @@ A PHP class representing the rotation setting of DiagramShapeDefaults.
 ## Methods
 
 ### angle
-this is an object right now and contains only an angle
+
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramShapeDefaultsRotation`

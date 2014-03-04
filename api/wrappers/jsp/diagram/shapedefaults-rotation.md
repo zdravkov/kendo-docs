@@ -18,7 +18,7 @@ publish: true
 
 ### angle `float`
 
-this is an object right now and contains only an angle
+
 
 #### Example
     <kendo:diagram-shapeDefaults-rotation angle="angle">
