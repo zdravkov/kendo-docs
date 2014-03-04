@@ -117,22 +117,42 @@ Defines the connections configuration.
     $diagram->connectionDefaults(array('endCap' => $endCap));
     ?>
 
-### connections
-Collection of predefined connections to be added to the diagram
+### addConnection
+
+Adds one or more DiagramConnection to the Diagram.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
 
 #### Parameters
 
-##### $value `array`
+##### $value[, $value2, ...] `\Kendo\Dataviz\UI\DiagramConnection|array`
 
+#### Example - using \Kendo\Dataviz\UI\DiagramConnection
 
-
-#### Example 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->connections(new array());
+    $connection = new \Kendo\Dataviz\UI\DiagramConnection();
+    $endCap = 'value';
+    $connection->endCap($endCap);
+    $diagram->addConnection($connection);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $endCap = 'value';
+    $diagram->addConnection(array('endCap' => $endCap));
+    ?>
+
+#### Example - adding more than one DiagramConnection
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $first  = new \Kendo\Dataviz\UI\DiagramConnection();
+    $second = new \Kendo\Dataviz\UI\DiagramConnection();
+    $diagram->addConnection($first, $second);
     ?>
 
 ### dataSource
@@ -418,22 +438,42 @@ Defines the shape options.
     $diagram->shapeDefaults(array('background' => $background));
     ?>
 
-### shapes
-Collection of predefined shapes to be added to the diagram
+### addShape
+
+Adds one or more DiagramShape to the Diagram.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
 
 #### Parameters
 
-##### $value `array`
+##### $value[, $value2, ...] `\Kendo\Dataviz\UI\DiagramShape|array`
 
+#### Example - using \Kendo\Dataviz\UI\DiagramShape
 
-
-#### Example 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->shapes(new array());
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $background = 'value';
+    $shape->background($background);
+    $diagram->addShape($shape);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $background = 'value';
+    $diagram->addShape(array('background' => $background));
+    ?>
+
+#### Example - adding more than one DiagramShape
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $first  = new \Kendo\Dataviz\UI\DiagramShape();
+    $second = new \Kendo\Dataviz\UI\DiagramShape();
+    $diagram->addShape($first, $second);
     ?>
 
 ### template
@@ -461,7 +501,7 @@ The template which renders the content of the shape when bound to a dataSource. 
     ?>
 
 ### visualTemplate
-A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual: Should redirect here to a more comprehensive overview of how to use the primitives.
+A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual:
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -515,7 +555,8 @@ For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events
     ?>
 
 ### zoomRate
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If zoomRate is less than 1, zooming will be reverted. If zoomRate=1, then zooming will appear disabled.
+The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
+If zoomRate is less than 1, zooming will be reversed.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`

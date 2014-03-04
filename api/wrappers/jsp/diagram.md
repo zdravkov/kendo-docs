@@ -19,14 +19,6 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:diagram autoBind="autoBind">
     </kendo:diagram>
 
-### connections `java.lang.Object`
-
-Collection of predefined connections to be added to the diagram
-
-#### Example
-    <kendo:diagram connections="connections">
-    </kendo:diagram>
-
 ### draggable `boolean`
 
 Defines whether items can be dropped on the diagram.
@@ -51,14 +43,6 @@ This defines whether the shapes can be rotated. If set to false the adorner will
     <kendo:diagram rotatable="rotatable">
     </kendo:diagram>
 
-### shapes `java.lang.Object`
-
-Collection of predefined shapes to be added to the diagram
-
-#### Example
-    <kendo:diagram shapes="shapes">
-    </kendo:diagram>
-
 ### template `java.lang.String`
 
 The template which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
@@ -69,7 +53,7 @@ The template which renders the content of the shape when bound to a dataSource. 
 
 ### visualTemplate `java.lang.String`
 
-A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual: Should redirect here to a more comprehensive overview of how to use the primitives.
+A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual:
 
 #### Example
     <kendo:diagram visualTemplate="visualTemplate">
@@ -77,7 +61,8 @@ A function returning a visual element to render for a given dataSource item. The
 
 ### zoomRate `float`
 
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If zoomRate is less than 1, zooming will be reverted. If zoomRate=1, then zooming will appear disabled.
+The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
+If zoomRate is less than 1, zooming will be reversed.
 
 #### Example
     <kendo:diagram zoomRate="zoomRate">
@@ -96,6 +81,18 @@ More documentation is available at [kendo:diagram-connectionDefaults](/kendo-ui/
 
     <kendo:diagram>
         <kendo:diagram-connectionDefaults></kendo:diagram-connectionDefaults>
+    </kendo:diagram>
+
+### kendo:diagram-connections
+
+Defines the connections configuration.
+
+More documentation is available at [kendo:diagram-connections](/kendo-ui/api/wrappers/jsp/diagram/connections).
+
+#### Example
+
+    <kendo:diagram>
+        <kendo:diagram-connections></kendo:diagram-connections>
     </kendo:diagram>
 
 ### kendo:diagram-layout
@@ -120,6 +117,18 @@ More documentation is available at [kendo:diagram-shapeDefaults](/kendo-ui/api/w
 
     <kendo:diagram>
         <kendo:diagram-shapeDefaults></kendo:diagram-shapeDefaults>
+    </kendo:diagram>
+
+### kendo:diagram-shapes
+
+Defines the shape options.
+
+More documentation is available at [kendo:diagram-shapes](/kendo-ui/api/wrappers/jsp/diagram/shapes).
+
+#### Example
+
+    <kendo:diagram>
+        <kendo:diagram-shapes></kendo:diagram-shapes>
     </kendo:diagram>
 
 

@@ -26,7 +26,7 @@ The start cap (arrow, head or decoration) of the connection:Note that you can al
 
 ### startCap `java.lang.String`
 
-The start cap (arrow, head or decoration) of the connection:You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. the SVG documentation).
+The start cap (arrow, head or decoration) of the connection:
 
 #### Example
     <kendo:diagram-connectionDefaults startCap="startCap">

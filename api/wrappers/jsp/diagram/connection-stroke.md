@@ -24,3 +24,11 @@ Defines the stroke or line color of the connection.
     <kendo:diagram-connection-stroke color="color">
     </kendo:diagram-connection-stroke>
 
+### width `float`
+
+Defines the stroke width of the connection.
+
+#### Example
+    <kendo:diagram-connection-stroke width="width">
+    </kendo:diagram-connection-stroke>
+

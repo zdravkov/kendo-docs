@@ -39,12 +39,16 @@ data source is fired. By default the widget will bind to the data source specifi
         }
     );
 
-    diagram.dataSource.read(); // "read()" will fire the "change" event of the dataSource
+    // Fetching data will trigger "change" on the dataSource
+    $("#diagram").getKendoDiagram().dataSource.fetch();
     </script>
 
 ### zoomRate `Number` *(default: 1.1)*
 
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If zoomRate is less than 1, zooming will be reverted. If zoomRate=1, then zooming will appear disabled.
+The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
+If zoomRate is less than 1, zooming will be reversed.
+
+> Setting zoomRate of 1 will disable zooming.
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
@@ -249,21 +253,21 @@ A function returning a visual element to render for a given dataSource item. The
 * TextBlock
 * Image
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Should redirect here to a more comprehensive overview of how to use the primitives.*
 
 #### Example - how to use the visualTemplate
 
+    var diagram = kendo.dataviz.diagram;
     var getVisual = function(data) {
-        var g = new kendo.diagram.Group({
+        var g = new diagram.Group({
             autoSize: true
         });
-        var r = new kendo.diagram.Circle({
+        var r = new diagram.Circle({
             width : 100,
             height: 60,
             background: "LimeGreen"
         });
         g.append(r);
-        var fn = new kendo.diagram.TextBlock({
+        var fn = new diagram.TextBlock({
             text: data.name,
             fontSize: 16,
             x   : 30,
@@ -273,7 +277,7 @@ A function returning a visual element to render for a given dataSource item. The
         return g;
     };
 
-    var diagram = $("#diagram").kendoDiagram({
+    $("#diagram").kendoDiagram({
         dataSource: [{
             "name" : "Telerik",
             "items": [
@@ -283,8 +287,9 @@ A function returning a visual element to render for a given dataSource item. The
         }],
         autoBind: true,
         visualTemplate: getVisual
-    }).data("kendoDiagram");
-    diagram.layout();
+    });
+
+    $("#diagram").getKendoDiagram().layout();
 
 ### connectionDefaults `Object`
 
@@ -321,8 +326,6 @@ The start cap (arrow, head or decoration) of the connection:
 * "none": no cap
 * "ArrowStart": a filled arrow
 * "FilledCircle": a filled circle
-
-You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. [the SVG documentation](http://www.w3.org/TR/SVG/painting.html "SVG markers.")).
 
 #### Example - custom connection caps
 
@@ -375,8 +378,6 @@ The start cap (arrow, head or decoration) of the connection:
 * "none": no cap
 * "ArrowStart": a filled arrow
 * "FilledCircle": a filled circle
-
-You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. [the SVG documentation](http://www.w3.org/TR/SVG/painting.html "SVG markers.")).
 
 #### Example - custom connection caps
 
@@ -460,8 +461,8 @@ The following dash types are supported:
 
 Specifies the type of the Shape using any of the built-in shape type.
 
-* "rectangle": this is the default option, representing a SVG Rectangle
-* "circle" : a SVG circle/ellipse
+* "rectangle": this is the default option
+* "circle" : a circle/ellipse
 
 ### shapeDefaults.x `Number` *(default: 0)*
 
@@ -550,8 +551,6 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 ### shapeDefaults.rotation.angle `Number` *(default: 0)*
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
-
 ### shapeDefaults.content `String`
 
 Sets the text content of the Shape.
@@ -606,8 +605,8 @@ The following dash types are supported:
 
 Specifies the type of the Shape using any of the built-in shape type.
 
-* "rectangle": this is the default option, representing a SVG Rectangle
-* "circle" : a SVG circle/ellipse
+* "rectangle": this is the default option
+* "circle" : a circle/ellipse
 
 ### shapes.x `Number` *(default: 0)*
 
@@ -696,15 +695,11 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 ### shapes.rotation.angle `Number` *(default: 0)*
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *this is an object right now and contains only an angle*
-
 ### shapes.content `String`
 
 Sets the text content of the Shape.
 
 ## Methods
-
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *I have gone over all the methods in the code which are not marked as '_private', but it doesn't mean they should be public. We should clean up and decide/set/settle the method which should be private or public.*
 
 ### destroy
 
@@ -842,7 +837,7 @@ The point in Model coordinates.
 
 ### modelToLayer
 
-Transforms a point from Model coordinates to Layer coordinates. Layer coordinates are relative to the drawable canvas - SVG, 2d canvas context, etc.
+Transforms a point from Model coordinates to Layer coordinates. Layer coordinates are relative to the drawing surface.
 
 #### Parameters
 
@@ -856,7 +851,7 @@ The point in Model coordinates.
 
 ### layerToModel
 
-Transforms a point from Layer coordinates to Model coordinates. Layer coordinates are relative to the drawable canvas - SVG, 2d canvas context, etc.
+Transforms a point from Layer coordinates to Model coordinates. Layer coordinates are relative to the drawable surface.
 
 #### Parameters
 
@@ -920,8 +915,6 @@ The rectangle to be transformed.
 
 Sets the focus on the diagram.
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Something about scrolling which has to be cleared out or demonstrated.*
-
 ### clear
 
 Clears the content of the diagram.
@@ -945,9 +938,7 @@ The target definition of the connection. This can be a Shape, a Connector or a P
 
 ##### options `Object`
 
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *Forward to the Connection Options here*
-
-The options of the new connection. See the Connection's options.
+The options of the new connection. See [connections](#configuration-connections) options.
 
 #### Example - connecting two shapes using the Auto-connector
 
@@ -1112,7 +1103,7 @@ Only one Boolean option is currently defined; addToSelection. If set to true the
 
 ### toFront
 
-Brings the specified items in front, i.e. it's reordering items in the SVG stack to ensure they are on top of the complementary items.
+Brings the specified items in front, i.e. it's reordering items to ensure they are on top of the complementary items.
 
 #### Parameters
 
@@ -1127,7 +1118,7 @@ Whether the change should be recorded in the undo-redo stack.
 
 ### toBack
 
-Sends the specified items to the back, i.e. it's reordering items in the SVG stack to ensure they are underneath the complementary items.
+Sends the specified items to the back, i.e. it's reordering items to ensure they are underneath the complementary items.
 
 #### Parameters
 

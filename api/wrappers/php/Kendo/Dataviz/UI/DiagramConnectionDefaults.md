@@ -60,7 +60,7 @@ Defines the hover configuration.
     ?>
 
 ### startCap
-The start cap (arrow, head or decoration) of the connection:You easily add custom caps through the underlying mechanism of SVG called 'markers' (see e.g. the SVG documentation).
+The start cap (arrow, head or decoration) of the connection:
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramConnectionDefaults`

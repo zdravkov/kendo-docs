@@ -24,14 +24,6 @@ Defines the fill-color of the shape.
     <kendo:diagram-shape background="background">
     </kendo:diagram-shape>
 
-### bounds `java.lang.Object`
-
-all bounds should be merged
-
-#### Example
-    <kendo:diagram-shape bounds="bounds">
-    </kendo:diagram-shape>
-
 ### content `java.lang.String`
 
 Sets the text content of the Shape.
@@ -40,12 +32,12 @@ Sets the text content of the Shape.
     <kendo:diagram-shape content="content">
     </kendo:diagram-shape>
 
-### data `java.lang.String`
+### editable `boolean`
 
-The root of a Shape is a SVG group (which on its own is invisible) inside which one or more SVG visual elements can be added. By default the Shape has a simple SVG primitive (see however the custom shape topic) and this property defines this primitive. There are three possibilities:
+Specifies if the shape is editable by the user.
 
 #### Example
-    <kendo:diagram-shape data="data">
+    <kendo:diagram-shape editable="editable">
     </kendo:diagram-shape>
 
 ### height `float`
@@ -70,6 +62,38 @@ Defines the minimum width the shape should have, i.e. it cannot be resized to a 
 
 #### Example
     <kendo:diagram-shape minWidth="minWidth">
+    </kendo:diagram-shape>
+
+### path `java.lang.String`
+
+The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+
+#### Example
+    <kendo:diagram-shape path="path">
+    </kendo:diagram-shape>
+
+### resizable `boolean`
+
+Specifies if the shape is resizable.
+
+#### Example
+    <kendo:diagram-shape resizable="resizable">
+    </kendo:diagram-shape>
+
+### rotatable `boolean`
+
+Specifies if the user is allowed to rotate the shape.
+
+#### Example
+    <kendo:diagram-shape rotatable="rotatable">
+    </kendo:diagram-shape>
+
+### type `java.lang.String`
+
+Specifies the type of the Shape using any of the built-in shape type.
+
+#### Example
+    <kendo:diagram-shape type="type">
     </kendo:diagram-shape>
 
 ### width `float`
