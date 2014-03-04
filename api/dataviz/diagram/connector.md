@@ -1,5 +1,5 @@
 ---
-title: kendo.diagram.connector
+title: kendo.dataviz.diagram.Connector
 meta_title: API Reference for methods, objects and properties in the Connector - diagram's primitive
 meta_description: Examples and detailed explanation of Kendo UI methods and properties.
 slug: api-framework
@@ -7,7 +7,7 @@ tags: api,framework
 publish: false
 ---
 
-# kendo.diagram.connector
+# kendo.dataviz.diagram.Connector
 
 The Connector object is a visual intermediate between the Connection and the Shape, it represents the attachment point of a Connection to a Shape.
 

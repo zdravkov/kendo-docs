@@ -1,5 +1,5 @@
 ---
-title: kendo.diagram.shape
+title: kendo.dataviz.diagram.shape
 meta_title: API Reference for methods, objects and properties in the Shape - diagram's primitive
 meta_description: Examples and detailed explanation of Kendo UI methods and properties.
 slug: api-framework
@@ -7,7 +7,7 @@ tags: api,framework
 publish: false
 ---
 
-# kendo.diagram.shape
+# kendo.dataviz.diagram.Shape
 
 The Shape object represents a visual node in the graph or diagram.
 
@@ -118,11 +118,11 @@ Defines the height of the shape when added to the diagram.
 
 Defines the fill-color of the shape.
 
-### shapes.hover `Object`
+### hover `Object`
 
 Defines the hover configuration.
 
-### shapes.hover.background `String` *(default: "#70CAFF")*
+### hover.background `String` *(default: "#70CAFF")*
 
 Hover's background color.
 
@@ -169,11 +169,11 @@ The following defines a custom shape with connectors adapted to the shape's outl
         }]
     });
 
-### connectors.connector `Object`
+### connectors.name `String`
 
-### connectors.connector.position `String`
+### connectors.description `String`
 
-### connectors.connector.description `String`
+### connectors.position `Function`
 
 ### rotation `Object`
 
@@ -196,10 +196,6 @@ Example - setting the text
 
     // or in one go by passing the settings
     shape.redraw({content:"JustTrace"});
-
-### bounds `Object`
-
-![alt Attention](http://demos.telerik.com/aspnet-ajax/toolbar/examples/overview/Img/followUp.gif "We need to look into this.") *all bounds should be merged*
 
 ## Methods
 

@@ -543,11 +543,13 @@ The following defines a custom shape with connectors adapted to the shape's outl
         }]
     });
 
-### shapeDefaults.connectors.position `String`
+### shapeDefaults.connectors.name `String`
 
 ### shapeDefaults.connectors.description `String`
 
-### shapeDefaults.rotation `Object`
+### shapeDefaults.connectors.position `String|Function`
+
+### shapeDefaults.rotation `Object` *(default: null)*
 
 ### shapeDefaults.rotation.angle `Number` *(default: 0)*
 
@@ -687,11 +689,13 @@ The following defines a custom shape with connectors adapted to the shape's outl
         }]
     });
 
-### shapes.connectors.position `String`
+### shapes.connectors.name `String`
 
 ### shapes.connectors.description `String`
 
-### shapes.rotation `Object`
+### shapes.connectors.position `String|Function`
+
+### shapes.rotation `Object` *(default: "null")*
 
 ### shapes.rotation.angle `Number` *(default: 0)*
 
