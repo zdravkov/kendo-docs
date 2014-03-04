@@ -39,12 +39,16 @@ data source is fired. By default the widget will bind to the data source specifi
         }
     );
 
-    diagram.dataSource.read(); // "read()" will fire the "change" event of the dataSource
+    // Fetching data will trigger "change" on the dataSource
+    $("#diagram").getKendoDiagram().dataSource.fetch();
     </script>
 
 ### zoomRate `Number` *(default: 1.1)*
 
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out. If zoomRate is less than 1, zooming will be reverted. If zoomRate=1, then zooming will appear disabled.
+The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
+If zoomRate is less than 1, zooming will be reversed.
+
+> Setting zoomRate of 1 will disable zooming.
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
@@ -253,17 +257,18 @@ A function returning a visual element to render for a given dataSource item. The
 
 #### Example - how to use the visualTemplate
 
+    var diagram = kendo.dataviz.diagram;
     var getVisual = function(data) {
-        var g = new kendo.diagram.Group({
+        var g = new diagram.Group({
             autoSize: true
         });
-        var r = new kendo.diagram.Circle({
+        var r = new diagram.Circle({
             width : 100,
             height: 60,
             background: "LimeGreen"
         });
         g.append(r);
-        var fn = new kendo.diagram.TextBlock({
+        var fn = new diagram.TextBlock({
             text: data.name,
             fontSize: 16,
             x   : 30,
@@ -273,7 +278,7 @@ A function returning a visual element to render for a given dataSource item. The
         return g;
     };
 
-    var diagram = $("#diagram").kendoDiagram({
+    $("#diagram").kendoDiagram({
         dataSource: [{
             "name" : "Telerik",
             "items": [
@@ -283,8 +288,9 @@ A function returning a visual element to render for a given dataSource item. The
         }],
         autoBind: true,
         visualTemplate: getVisual
-    }).data("kendoDiagram");
-    diagram.layout();
+    });
+
+    $("#diagram").getKendoDiagram().layout();
 
 ### connectionDefaults `Object`
 
