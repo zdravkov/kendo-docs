@@ -241,56 +241,6 @@ This defines whether the shapes can be rotated. If set to false the adorner will
 
 ![Rotatable configuration.](diagram/rotatable.png)
 
-### visualTemplate `Function`
-
-A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual:
-
-* Circle
-* Rectangle
-* Path
-* Line
-* Polyline
-* TextBlock
-* Image
-
-
-#### Example - how to use the visualTemplate
-
-    var diagram = kendo.dataviz.diagram;
-    var getVisual = function(data) {
-        var g = new diagram.Group({
-            autoSize: true
-        });
-        var r = new diagram.Circle({
-            width : 100,
-            height: 60,
-            background: "LimeGreen"
-        });
-        g.append(r);
-        var fn = new diagram.TextBlock({
-            text: data.name,
-            fontSize: 16,
-            x   : 30,
-            y   : 30
-        });
-        g.append(fn);
-        return g;
-    };
-
-    $("#diagram").kendoDiagram({
-        dataSource: [{
-            "name" : "Telerik",
-            "items": [
-                {"name": "Kendo"},
-                {"name": "Icenium"}
-            ]
-        }],
-        autoBind: true,
-        visualTemplate: getVisual
-    });
-
-    $("#diagram").getKendoDiagram().layout();
-
 ### connectionDefaults `Object`
 
 Defines the connections configuration.
@@ -556,6 +506,56 @@ The following defines a custom shape with connectors adapted to the shape's outl
 ### shapeDefaults.content `String`
 
 Sets the text content of the Shape.
+
+### shapeDefaults.visual `Function`
+
+A function returning a visual element to render for a given shape. The following primitives can be used to construct a composite visual:
+
+* Circle
+* Rectangle
+* Path
+* Line
+* Polyline
+* TextBlock
+* Image
+
+
+#### Example - how to use the visualTemplate
+
+    var diagram = kendo.dataviz.diagram;
+    var getVisual = function(data) {
+        var g = new diagram.Group({
+            autoSize: true
+        });
+        var r = new diagram.Circle({
+            width : 100,
+            height: 60,
+            background: "LimeGreen"
+        });
+        g.append(r);
+        var fn = new diagram.TextBlock({
+            text: data.name,
+            fontSize: 16,
+            x   : 30,
+            y   : 30
+        });
+        g.append(fn);
+        return g;
+    };
+
+    $("#diagram").kendoDiagram({
+        dataSource: [{
+            "name" : "Telerik",
+            "items": [
+                {"name": "Kendo"},
+                {"name": "Icenium"}
+            ]
+        }],
+        autoBind: true,
+        visualTemplate: getVisual
+    });
+
+    $("#diagram").getKendoDiagram().layout();
 
 ### shapes `Array`
 
