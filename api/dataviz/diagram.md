@@ -703,6 +703,11 @@ The following defines a custom shape with connectors adapted to the shape's outl
 
 Sets the text content of the Shape.
 
+### shapes.visual `Function`
+
+A function returning a visual element to render for this shape.
+See [visual](#configuration-shapeDefaults-visual).
+
 ## Methods
 
 ### destroy
