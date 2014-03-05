@@ -51,14 +51,6 @@ The template which renders the content of the shape when bound to a dataSource. 
     <kendo:diagram template="template">
     </kendo:diagram>
 
-### visualTemplate `java.lang.String`
-
-A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual:
-
-#### Example
-    <kendo:diagram visualTemplate="visualTemplate">
-    </kendo:diagram>
-
 ### zoomRate `float`
 
 The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
