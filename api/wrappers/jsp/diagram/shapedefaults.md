@@ -96,6 +96,14 @@ Specifies the type of the Shape using any of the built-in shape type.
     <kendo:diagram-shapeDefaults type="type">
     </kendo:diagram-shapeDefaults>
 
+### visual `java.lang.String`
+
+A function returning a visual element to render for a given shape. The following primitives can be used to construct a composite visual:
+
+#### Example
+    <kendo:diagram-shapeDefaults visual="visual">
+    </kendo:diagram-shapeDefaults>
+
 ### width `float`
 
 Defines the width of the shape when added to the diagram.
@@ -169,5 +177,40 @@ More documentation is available at [kendo:diagram-shapeDefaults-stroke](/kendo-u
 
     <kendo:diagram-shapeDefaults>
         <kendo:diagram-shapeDefaults-stroke></kendo:diagram-shapeDefaults-stroke>
+    </kendo:diagram-shapeDefaults>
+
+
+## Event Attributes
+
+### visual `String`
+
+A function returning a visual element to render for a given shape. The following primitives can be used to construct a composite visual:
+
+
+#### Example
+    <kendo:diagram-shapeDefaults visual="handle_visual">
+    </kendo:diagram-shapeDefaults>
+    <script>
+        function handle_visual(e) {
+            // Code to handle the visual event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:diagram-shapeDefaults-visual
+
+A function returning a visual element to render for a given shape. The following primitives can be used to construct a composite visual:
+
+
+#### Example
+    <kendo:diagram-shapeDefaults>
+        <kendo:diagram-shapeDefaults-visual>
+            <script>
+                function(e) {
+                    // Code to handle the visual event.
+                }
+            </script>
+        </kendo:diagram-shapeDefaults-visual>
     </kendo:diagram-shapeDefaults>
 
