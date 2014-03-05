@@ -159,6 +159,24 @@ Selector that determines the container to which boundaries the hint movement wil
     $sortable->container('value');
     ?>
 
+### cursor
+The cursor that will be shown while user drags sortable item.
+
+#### Returns
+`\Kendo\UI\Sortable`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $sortable = new \Kendo\UI\Sortable('Sortable');
+    $sortable->cursor('value');
+    ?>
+
 ### cursorOffset
 
 If set, specifies the offset of the hint relative to the mouse cursor/finger.
