@@ -500,24 +500,6 @@ The template which renders the content of the shape when bound to a dataSource. 
     $diagram->template(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
-### visualTemplate
-A function returning a visual element to render for a given dataSource item. The following primitives can be used to construct a composite visual:
-
-#### Returns
-`\Kendo\Dataviz\UI\Diagram`
-
-#### Parameters
-
-##### $value `\Kendo\JavaScriptFunction`
-
-
-
-#### Example 
-    <?php
-    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->visualTemplate(new \Kendo\JavaScriptFunction('function() { }'));
-    ?>
-
 ### zoom
 Fired when the user changes the diagram zoom level.
 For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events-zoom) event documentation.
