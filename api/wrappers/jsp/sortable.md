@@ -34,6 +34,14 @@ Selector that determines the container to which boundaries the hint movement wil
     <kendo:sortable container="container">
     </kendo:sortable>
 
+### cursor `java.lang.String`
+
+The cursor that will be shown while user drags sortable item.
+
+#### Example
+    <kendo:sortable cursor="cursor">
+    </kendo:sortable>
+
 ### disabled `java.lang.String`
 
 Selector that determines which items are disabled. Disabled items cannot be dragged but are valid sort targets.
