@@ -24,11 +24,54 @@ Defines the connectors the shape owns.You can easily define your own custom conn
     <kendo:diagram-shapeDefaults-connector description="description">
     </kendo:diagram-shapeDefaults-connector>
 
+### name `java.lang.String`
+
+
+
+#### Example
+    <kendo:diagram-shapeDefaults-connector name="name">
+    </kendo:diagram-shapeDefaults-connector>
+
 ### position `java.lang.String`
 
 
 
 #### Example
     <kendo:diagram-shapeDefaults-connector position="position">
+    </kendo:diagram-shapeDefaults-connector>
+
+
+## Event Attributes
+
+### position `String`
+
+
+
+
+#### Example
+    <kendo:diagram-shapeDefaults-connector position="handle_position">
+    </kendo:diagram-shapeDefaults-connector>
+    <script>
+        function handle_position(e) {
+            // Code to handle the position event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:diagram-shapeDefaults-connector-position
+
+
+
+
+#### Example
+    <kendo:diagram-shapeDefaults-connector>
+        <kendo:diagram-shapeDefaults-connector-position>
+            <script>
+                function(e) {
+                    // Code to handle the position event.
+                }
+            </script>
+        </kendo:diagram-shapeDefaults-connector-position>
     </kendo:diagram-shapeDefaults-connector>
 

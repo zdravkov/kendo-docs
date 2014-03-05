@@ -96,6 +96,15 @@ Specifies the type of the Shape using any of the built-in shape type.
     <kendo:diagram-shape type="type">
     </kendo:diagram-shape>
 
+### visual `java.lang.String`
+
+A function returning a visual element to render for this shape.
+See visual.
+
+#### Example
+    <kendo:diagram-shape visual="visual">
+    </kendo:diagram-shape>
+
 ### width `float`
 
 Defines the width of the shape when added to the diagram.
@@ -169,5 +178,42 @@ More documentation is available at [kendo:diagram-shape-stroke](/kendo-ui/api/wr
 
     <kendo:diagram-shape>
         <kendo:diagram-shape-stroke></kendo:diagram-shape-stroke>
+    </kendo:diagram-shape>
+
+
+## Event Attributes
+
+### visual `String`
+
+A function returning a visual element to render for this shape.
+See visual.
+
+
+#### Example
+    <kendo:diagram-shape visual="handle_visual">
+    </kendo:diagram-shape>
+    <script>
+        function handle_visual(e) {
+            // Code to handle the visual event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:diagram-shape-visual
+
+A function returning a visual element to render for this shape.
+See visual.
+
+
+#### Example
+    <kendo:diagram-shape>
+        <kendo:diagram-shape-visual>
+            <script>
+                function(e) {
+                    // Code to handle the visual event.
+                }
+            </script>
+        </kendo:diagram-shape-visual>
     </kendo:diagram-shape>
 

@@ -317,6 +317,25 @@ Specifies the type of the Shape using any of the built-in shape type.
     $shape->type('value');
     ?>
 
+### visual
+A function returning a visual element to render for this shape.
+See visual.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShape`
+
+#### Parameters
+
+##### $value `\Kendo\JavaScriptFunction`
+
+
+
+#### Example 
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $shape->visual(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### width
 Defines the width of the shape when added to the diagram.
 

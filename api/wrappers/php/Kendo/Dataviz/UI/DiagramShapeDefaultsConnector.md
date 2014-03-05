@@ -30,7 +30,7 @@ A PHP class representing the connector setting of DiagramShapeDefaultsConnectors
     $connector->description('value');
     ?>
 
-### position
+### name
 
 
 #### Returns
@@ -45,6 +45,30 @@ A PHP class representing the connector setting of DiagramShapeDefaultsConnectors
 #### Example 
     <?php
     $connector = new \Kendo\Dataviz\UI\DiagramShapeDefaultsConnector();
+    $connector->name('value');
+    ?>
+
+### position
+
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShapeDefaultsConnector`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+
+
+#### Example  - using string
+    <?php
+    $connector = new \Kendo\Dataviz\UI\DiagramShapeDefaultsConnector();
     $connector->position('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $connector = new \Kendo\Dataviz\UI\DiagramShapeDefaultsConnector();
+    $connector->position(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
