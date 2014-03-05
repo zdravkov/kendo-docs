@@ -127,6 +127,24 @@ Selector which determines if items from the current Sortable widget can be accep
         #listB li { background-color: #0000FF; }
     </style>
 
+### cursor `String`*(default: "auto")*
+
+The cursor that will be shown while user drags sortable item.
+
+#### Example - setting cursor to move
+
+    <ul id="sortable">
+        <li>ItemA1</li>
+        <li>ItemA2</li>
+        <li>ItemA3</li>
+    </ul>
+
+    <script>
+        $("#sortable").kendoSortable({
+            cursor: "move"
+        });
+    </script>
+
 ### cursorOffset `Object`*(default: null)*
 
 If set, specifies the offset of the hint relative to the mouse cursor/finger.
@@ -141,7 +159,7 @@ By default, the hint is initially positioned on top of the draggable source offs
     </ul>
 
     <script>
-        $("#sortable").kendoSortable({ 
+        $("#sortable").kendoSortable({
             cursorOffset: { top: 30, left: 30 }
         });
     </script>
