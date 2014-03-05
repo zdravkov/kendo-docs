@@ -317,6 +317,24 @@ Specifies the type of the Shape using any of the built-in shape type.
     $shapeDefaults->type('value');
     ?>
 
+### visual
+A function returning a visual element to render for a given shape. The following primitives can be used to construct a composite visual:
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShapeDefaults`
+
+#### Parameters
+
+##### $value `\Kendo\JavaScriptFunction`
+
+
+
+#### Example 
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $shapeDefaults->visual(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### width
 Defines the width of the shape when added to the diagram.
 
