@@ -106,18 +106,6 @@ More documentation is available at [kendo:dataSource-transport-read](/kendo-ui/a
         <kendo:dataSource-transport-read></kendo:dataSource-transport-read>
     </kendo:dataSource-transport>
 
-### kendo:dataSource-transport-signalr
-
-The configuration used when type is set to "signalr". Configures the SignalR settings - hub, connection promise, server and client hub methods.Live demo available at demos.telerik.com/kendo-ui.It is recommended to familiarize with the SignalR JavaScript API.
-
-More documentation is available at [kendo:dataSource-transport-signalr](/kendo-ui/api/wrappers/jsp/datasource/transport-signalr).
-
-#### Example
-
-    <kendo:dataSource-transport>
-        <kendo:dataSource-transport-signalr></kendo:dataSource-transport-signalr>
-    </kendo:dataSource-transport>
-
 ### kendo:dataSource-transport-update
 
 The configuration used when the data source saves updated data items. Those are data items whose fields have been updated.If the value of transport.update is a function, the data source invokes that function instead of jQuery.ajax.If the value of transport.update is a string the data source uses this string as the URL of the remote service.
