@@ -28,6 +28,13 @@ The **Sortable** widget makes a group of DOM elements sortable by dragging and d
         $("#sortable").kendoSortable();
     </script>
 
+You can reference an existing **Sortable** instance via
+[jQuery.data()](http://api.jquery.com/jQuery.data/).
+
+### Accessing an existing Sortable instance
+
+    var sortable = $("#sortable").data("kendoSortable");
+
 ## Placeholder
 
 Placeholder is the element which indicates where the dragged item will be placed after drop. By default the placeholder is a clone of the dragged element with removed `id` attribute and visibility set to hidden. Developer have the ability to change the default placeholder though the `placeholder` configuration option.
@@ -153,12 +160,101 @@ By default the widget uses mouse cursor to determine the drop target before/afte
 
 If the `axis` is set to "x" or "y" however, the widget will start operating in movement by axis mode - the widget will use x/y position of the mouse cursor to determine the current target. To see this feature in action please check [constraints demo page](http://demos.telerik.com/kendo-ui/web/sortable/constraints.html).
 
-## Accessing an Existing Sortable
+## Integration with other Kendo UI Widgets
 
+### Grid
 
-You can reference an existing **Sortable** instance via
-[jQuery.data()](http://api.jquery.com/jQuery.data/).
+**Sortable widget** gives the ability to the user to sort the Grid's table rows via drag and drop with the mouse.
 
-### Accessing an existing Sortable instance
+>**Important:** Sortable widget reorders HTML DOM elements. It will not update automatically the position of the item in the DataSource. It is responsibility of the developer to update the data.
 
-    var sortable = $("#sortable").data("kendoSortable");
+Sortable widget should be initialized for Grid's [`table element`](../../../api/web/grid#fields-table). In the general case filter property of the widget should select all `tr` elements that are direct children of the table's `tbody` element.
+
+    $("#grid").data("kendoGrid").table.kendoSortable({
+        filter: ">tbody >tr", //set the filter
+        hint: function(element) { //customize the hint
+            var grid = $("#grid").data("kendoGrid"),
+                table = grid.table.clone(), //clone Grid's table
+                wrapperWidth = grid.wrapper.width(), //get Grid's width
+                wrapper = $("<div class='k-grid k-widget'></div>").width(wrapperWidth),
+                hint;
+
+            table.find("thead").remove(); //remove Grid's header from the hint
+            table.find("tbody").empty(); //remove the existing rows from the hint
+            table.wrap(wrapper); //wrap the table
+            table.append(element.clone()); //append the dragged element
+
+            hint = table.parent(); //get the wrapper
+
+            return hint; //return the hint element
+        },
+        placeholder: function(element) { //customize the placeholder
+            return element.clone().addClass("k-state-hover").css("opacity", 0.65);
+        },
+        change: function(e) {
+            //handle the change event
+            //update the underlying data according to the DOM position change
+        }
+    });
+
+For more information check [Sortable's events](../../../api/web/sortable#events) and Grid integration [demo page](http://demos.telerik.com/kendo-ui/web/sortable/integration-grid.html).
+
+### ListView
+
+**Sortable widget** gives the ability to the user to sort the ListView's items via drag and drop with the mouse.
+
+>**Important:** Sortable widget reorders HTML DOM elements. It will not update automatically the position of the item in the DataSource. It is responsibility of the developer to update the data.
+
+Sortable widget should be initialized for ListView's element. In the general case filter property of the widget should select all elements that are direct children of the ListView's element.
+
+For more information check [Sortable's events](../../../api/web/sortable#events) and ListView integration [demo page](http://demos.telerik.com/kendo-ui/web/sortable/integration-listview.html).
+
+### TabStrip
+
+**Sortable widget** gives the ability to the user to sort the TabStrip's tab via drag and drop with the mouse.
+
+Sortable widget should be initialized for TabStrip's `ul.k-tabstrip-items` element. In the general case filter property of the widget should select all `li.k-item` elements. If required the hint movement can be restricted within the `ul.k-tabstrip-items` element.
+
+    $("#tabstrip ul.k-tabstrip-items").kendoSortable({
+        filter: "li.k-item",
+        axis: "x",
+        container: "ul.k-tabstrip-items",
+        hint: function(element) {
+            return $("<div id='hint' class='k-widget k-header k-tabstrip'><ul class='k-tabstrip-items k-reset'><li class='k-item k-state-active k-tab-on-top'>" + element.html() + "</li></ul></div>");
+        },
+        start: function(e) {
+            $("#tabstrip").data("kendoTabStrip").activateTab(e.item);
+        },
+        change: function(e) {
+            var tabstrip = $("#tabstrip").data("kendoTabStrip"),
+                reference = tabstrip.tabGroup.children().eq(e.newIndex);
+
+            if(e.oldIndex < e.newIndex) {
+                tabstrip.insertAfter(e.item, reference);
+            } else {
+                tabstrip.insertBefore(e.item, reference);
+            }
+        }
+    });
+
+In order to avoid visual glitches it is recommended to activate the current tab in the `start` event handler of the Sortable widget.
+
+    start: function(e) {
+        $("#tabstrip").data("kendoTabStrip").activateTab(e.item);
+    }
+
+After tab is sorted the developer should update its position in the TabStrip widget.
+
+    change: function(e) {
+        var tabstrip = $("#tabstrip").data("kendoTabStrip"),
+            reference = tabstrip.tabGroup.children().eq(e.newIndex);
+
+        if(e.oldIndex < e.newIndex) {
+            tabstrip.insertAfter(e.item, reference);
+        } else {
+            tabstrip.insertBefore(e.item, reference);
+        }
+    }
+
+For more information check [Sortable's events](../../../api/web/sortable#events) and TabStrip integration [demo page](http://demos.telerik.com/kendo-ui/web/sortable/integration-tabstrip.html).
+
