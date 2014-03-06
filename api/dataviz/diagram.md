@@ -1357,3 +1357,6 @@ Fired when the user selects one or more items.
 
 Fired when the user changes the diagram zoom level.
 
+### click
+
+Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
