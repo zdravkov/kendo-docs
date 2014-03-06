@@ -229,6 +229,13 @@ The default template of the **Notification** widget is shown below. This markup 
         <span class="k-icon k-i-close">Hide</span>
     </div>
 
+## RTL Support
+
+Proper RTL support for the popup notifications requires the originating element of the Notification widget to be a descendant of an element with a `k-rtl` class.
+Static notifications should also be descendants of such an element.
+
+For more information, please refer to the [general RTL Support article](http://docs.telerik.com/kendo-ui/getting-started/web/appearance-rtl).
+
 ## Events
 
 The **Notification** widgets exposes two events - `show` and `hide`. The `show` event is fired when the showing animation starts. The `hide` event is fired when the hiding animation starts.
