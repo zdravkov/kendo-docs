@@ -231,8 +231,8 @@ The default template of the **Notification** widget is shown below. This markup 
 
 ## RTL Support
 
-Proper RTL support for the popup notifications requires the originating element of the Notification widget to be a descendant of an element with a `k-rtl` class.
-Static notifications should also be descendants of such an element.
+Proper right-to-left support for the popup notifications (when using the built-in notification templates) requires the originating element of the Notification widget to be a descendant of an element with a `k-rtl` class.
+Static notifications using built-in templates should also be descendants of such a `.k-rtl` element.
 
 For more information, please refer to the [general RTL Support article](http://docs.telerik.com/kendo-ui/getting-started/web/appearance-rtl).
 
