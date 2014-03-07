@@ -1255,6 +1255,58 @@ The text message displayed in the menu header button (available in mobile mode o
     });
     </script>
 
+### columnMenu.messages.lock `String` *(default: "Lock")*
+
+The text message displayed in the column menu for locking a column.
+
+#### Example - column menu lock button text
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name", lockable: true },
+        { field: "age" }
+      ],
+      columnMenu: {
+        messages: {
+          lock: "Pin this column"
+        }
+      },
+      sortable: true,
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    </script>
+
+### columnMenu.messages.unlock `String` *(default: "Unlock")*
+
+The text message displayed in the column menu for unlocking a column.
+
+#### Example - column menu unlock button text
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name", lockable: true },
+        { field: "age" }
+      ],
+      columnMenu: {
+        messages: {
+          unlock: "Unpin this column"
+        }
+      },
+      sortable: true,
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    </script>
+
 ### dataSource `Object|Array|kendo.data.DataSource`
 
 The data source of the widget which is used render table rows. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/kendo-ui/api/framework/datasource)
