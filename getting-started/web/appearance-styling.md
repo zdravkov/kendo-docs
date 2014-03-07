@@ -44,6 +44,27 @@ The appearance of a component may also depend on its state, which is also tied t
 *   **k-state-selected** - selected items receive this class to apply their selected look, like in PanelBar and TabStrip
 *   **k-state-disabled** - this class is set on disabled items
 
+## LESS structure
+
+In Q1 2014 we split the Kendo UI Web common LESS file to separate LESS files for each widget. We also split all Kendo UI Mobile platform themes to file per widget.
+The LESS command-line compiler can be used to build source LESS files to CSS skins and themes. The LESS files that can be passed to the compiler are located in the first level folders inside styles/ folder -
+styles/web/ and styles/mobile/. Kendo UI Mobile files are self explanatory - except meego.less, which is deprecated, the rest of the files can be built with [our fork of LESS, located in GitHub](https://github.com/telerik/less.js)
+and produce all platform themes and several special use CSS files (including kendo.mobile.all.css).
+The Kendo UI Web LESS files' naming is listed below:
+
+*   **kendo.[skin-name].less** - skin variables file, builds with compiler - produces the skin;
+*   **kendo.[skin-name].mobile.less** - mobile widgets styling for the corresponding skin, references the variables file above, builds - produces the mobile skin;
+*   **kendo.common.core.less** - core Common LESS file, references only the common core, builds - produces the common core CSS;
+*   **kendo.common.less** - full Common LESS file, builds - produces the common Web CSS;
+*   **kendo.common-bootstrap.core.less** - core Bootstrap common, builds - produces the core common Bootstrap CSS;
+*   **kendo.common-bootstrap.less** - full Bootstrap common, builds - produces the common Bootstrap CSS;
+*   **kendo.rtl.css** - RTL styles, CSS only;
+*   **kendo.winjs.less** - WinJS specific styles, builds;
+*   **theme-template.less** - common skin template, referenced by all skins, doesn't build;
+*   **type-metro.less** - common metro skin template, referenced by all metro skins, doesn't build;
+
+The Kendo UI Web LESS files (including the Kendo UI Web mobile widgets styling) can be built using the upstream LESS, version 1.5.0 or newer.
+
 ## Customizing Appearance
 
 Usually, a CSS property defined by a primitive class is used by all widgets that use that class, unless overridden by a higher specificity selector. For example:
