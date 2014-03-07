@@ -66,6 +66,24 @@ The text message displayed for the filter menu item.
     $messages->filter('value');
     ?>
 
+### lock
+The text message displayed in the column menu for locking a column.
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridColumnMenuMessages();
+    $messages->lock('value');
+    ?>
+
 ### settings
 The text message displayed in the menu header (available in mobile mode only).
 
@@ -118,5 +136,23 @@ The text message displayed for the menu item which performs descending sort.
     <?php
     $messages = new \Kendo\UI\GridColumnMenuMessages();
     $messages->sortDescending('value');
+    ?>
+
+### unlock
+The text message displayed in the column menu for unlocking a column.
+
+#### Returns
+`\Kendo\UI\GridColumnMenuMessages`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $messages = new \Kendo\UI\GridColumnMenuMessages();
+    $messages->unlock('value');
     ?>
 
