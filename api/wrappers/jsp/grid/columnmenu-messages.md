@@ -40,6 +40,14 @@ The text message displayed for the filter menu item.
     <kendo:grid-columnMenu-messages filter="filter">
     </kendo:grid-columnMenu-messages>
 
+### lock `java.lang.String`
+
+The text message displayed in the column menu for locking a column.
+
+#### Example
+    <kendo:grid-columnMenu-messages lock="lock">
+    </kendo:grid-columnMenu-messages>
+
 ### settings `java.lang.String`
 
 The text message displayed in the menu header (available in mobile mode only).
@@ -62,5 +70,13 @@ The text message displayed for the menu item which performs descending sort.
 
 #### Example
     <kendo:grid-columnMenu-messages sortDescending="sortDescending">
+    </kendo:grid-columnMenu-messages>
+
+### unlock `java.lang.String`
+
+The text message displayed in the column menu for unlocking a column.
+
+#### Example
+    <kendo:grid-columnMenu-messages unlock="unlock">
     </kendo:grid-columnMenu-messages>
 
