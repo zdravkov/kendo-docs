@@ -46,6 +46,8 @@ The appearance of a component may also depend on its state, which is also tied t
 
 ## LESS structure
 
+**The following LESS-related information is applicable only to the case when you want to modify the Kendo UI CSS source code.**
+
 In Q1 2014 we split the Kendo UI Web common LESS file to separate LESS files for each widget. We also split all Kendo UI Mobile platform themes to file per widget.
 The LESS command-line compiler can be used to build source LESS files to CSS skins and themes. The LESS files that can be passed to the compiler are located in the first level folders inside styles/ folder -
 styles/web/ and styles/mobile/. Kendo UI Mobile files are self explanatory - except meego.less, which is deprecated, the rest of the files can be built with [our fork of LESS, located in GitHub](https://github.com/telerik/less.js)
