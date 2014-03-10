@@ -303,6 +303,18 @@ Creates a new Barcode.
     %>
 
 
+### Sortable
+Creates a new Sortable.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Sortable()
+    .For("Container")
+    %>
+
+
 ### Tooltip
 Creates a new Tooltip.
 
@@ -394,6 +406,19 @@ Creates a new RecurrenceEditor.
     %>
 
 
+### TimezoneEditor
+Creates a new TimezoneEditor.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TimezoneEditor()
+    .Name("timezoneEditor")
+    .Value("Etc/UTC")
+    %>
+
+
 ### SchedulerT1
 Creates a new 1.
 
@@ -476,6 +501,18 @@ Creates a new IntegerTextBox.
 #### Example (ASPX)
     <%= Html.Kendo().IntegerTextBox()
     .Name("IntegerTextBox")
+    %>
+
+
+### MaskedTextBox
+Creates a new MaskedTextBox.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().MaskedTextBox()
+    .Name("MaskedTextBox")
     %>
 
 
@@ -668,6 +705,18 @@ Creates a Button
 #### Example (ASPX)
     <%= Html.Kendo().Button()
     .Name("Button1");
+    %>
+
+
+### Notification
+Creates a Notification
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Notification()
+    .Name("Notification1");
     %>
 
 
@@ -887,6 +936,37 @@ Determines if the script should be rendered within a script tag
 #### Returns
 
 
+
+
+### DeferredScriptsFor(`System.String,System.Boolean`)
+Returns the initialization scripts for the specified widget.
+
+
+#### Parameters
+
+##### name `System.String`
+The name of the widget.
+
+##### renderScriptTags `System.Boolean`
+Determines if the script should be rendered within a script tag
+
+
+
+#### Returns
+
+
+
+
+### Map
+Creates a Map
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Map()
+    .Name("Map")
+    %>
 
 
 ### MobileActionSheet

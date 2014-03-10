@@ -70,7 +70,7 @@ The add action.
 
 
 ### OptionLabel(`System.String`)
-Define the text of the default empty item. If the value is an object, then the widget will use it directly.
+Define the text of the default empty item.
 
 
 
@@ -79,6 +79,21 @@ Define the text of the default empty item. If the value is an object, then the w
     <%= Html.Kendo().DropDownList()
     .Name("DropDownList")
     .OptionLabel("Select country...")
+    %>
+
+
+### OptionLabel(`System.Object`)
+Define the object of the default empty item.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .DataTextField("Text")
+    .DataValueField("Value")
+    .OptionLabel(new { Text = "Text1", Value = "Value1" })
     %>
 
 
@@ -114,6 +129,20 @@ Use it to set the Id of the parent DropDownList.
     %>
 
 
+### CascadeFromField(`System.String`)
+Use it to set the field used to filter the data source.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Telerik().DropDownList()
+    .Name("DropDownList2")
+    .CascadeFrom("DropDownList1")
+    .CascadeFromField("ParentID")
+    %>
+
+
 ### Text(`System.String`)
 Define the text of the widget, when the autoBind is set to false.
 
@@ -125,6 +154,32 @@ Define the text of the widget, when the autoBind is set to false.
     .Name("DropDownList")
     .Text("Chai")
     .AutoBind(false)
+    %>
+
+
+### ValueTemplate(`System.String`)
+ValueTemplate to be used to render the selected value.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .ValueTemplate("#= data #")
+    %>
+
+
+### ValueTemplateId(`System.String`)
+ValueTemplateId to be used to render the selected value.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .ValueTemplateId("widgetValueTemplateId")
     %>
 
 

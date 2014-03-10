@@ -42,7 +42,7 @@ The name.
 
 
 
-### Deferred
+### Deferred(`System.Boolean`)
 Suppress initialization script rendering. Note that this options should be used in conjunction with M:Kendo.Mvc.UI.Fluent.WidgetFactory.DeferredScripts(System.Boolean)
 
 

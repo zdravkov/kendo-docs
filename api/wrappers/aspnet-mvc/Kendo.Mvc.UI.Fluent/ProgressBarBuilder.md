@@ -108,14 +108,14 @@ The client events configuration action.
     %>
 
 
-### Max(`System.Int32`)
+### Max(`System.Double`)
 Sets the maximum value of the ProgressBar
 
 
 #### Parameters
 
-##### value `System.Int32`
-Integer specifying the maximum value
+##### value `System.Double`
+Number specifying the maximum value
 
 
 
@@ -127,14 +127,14 @@ Integer specifying the maximum value
     %>
 
 
-### Min(`System.Int32`)
+### Min(`System.Double`)
 Sets the minimum value of the ProgressBar
 
 
 #### Parameters
 
-##### value `System.Int32`
-Integer specifying the minimum value
+##### value `System.Double`
+Number specifying the minimum value
 
 
 
@@ -222,14 +222,14 @@ ProgressBarType enumeration specifying the type
     %>
 
 
-### Value(`System.Int32`)
-Sets the current value of the ProgressBar
+### Value(`System.Double`)
+Sets the initial value of the ProgressBar
 
 
 #### Parameters
 
-##### value `System.Int32`
-Integer specifying the value
+##### value `System.Double`
+Number specifying the value
 
 
 
@@ -240,6 +240,27 @@ Integer specifying the value
     .Min(100)
     .Max(200)
     .Value(100)
+    %>
+
+
+### Value(`System.Boolean`)
+Sets the initial value of the ProgressBar
+
+
+#### Parameters
+
+##### value `System.Boolean`
+Pass false to set indeterminate value
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().ProgressBar()
+    .Name("progressBar")
+    .Min(100)
+    .Max(200)
+    .Value(false)
     %>
 
 

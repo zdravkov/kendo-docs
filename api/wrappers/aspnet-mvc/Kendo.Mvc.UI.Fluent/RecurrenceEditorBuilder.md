@@ -110,4 +110,60 @@ The addFrequencyAction
     )
 
 
+### Frequency(`System.Collections.Generic.IEnumerable<Kendo.Mvc.UI.RecurrenceEditorFrequency>`)
+The IEnumerable collection of frequencies for the RecurrenceEditor.
+
+
+#### Parameters
+
+##### frequencies System.Collections.Generic.IEnumerable<[Kendo.Mvc.UI.RecurrenceEditorFrequency](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/RecurrenceEditorFrequency)>
+The frequencies
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().RecurrenceEditor()
+        .Name("recurrenceEditor")
+        .Frequency(new List<RecurrenceEditorFrequency>() {
+        RecurrenceEditorFrequency.Never,
+        RecurrenceEditorFrequency.Daily,
+        RecurrenceEditorFrequency.Weekly,
+        }))
+
+
+### Messages(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMessagesBuilder>`)
+Sets the messages of the recurrenceEditor.
+
+
+#### Parameters
+
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorMessagesBuilder)>
+The lambda which configures the scheduler messages
+
+
+
+
+
+### Events(`System.Action<Kendo.Mvc.UI.Fluent.RecurrenceEditorEventBuilder>`)
+Sets the events configuration of the recurrenceEditor.
+
+
+#### Parameters
+
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.RecurrenceEditorEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/RecurrenceEditorEventBuilder)>
+The lambda which configures the recurrenceEditor events
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().RecurrenceEditor()
+    .Name("RecurrenceEditor")
+    .Events(events =>
+        events.Change("change")
+    )
+    %>
+
+
 

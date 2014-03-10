@@ -74,4 +74,11 @@ Configures the client-side events
 
 
 
+### Custom
+Use it to configure Custom binding.
+
+
+
+
+
 

@@ -259,6 +259,68 @@ The name of the JavaScript function that will handle the event.
     )
 
 
+### Change(`System.Func<System.Object,System.Object>`)
+Defines the inline handler of the change event.
+
+For additional information check the [change](/kendo-ui/api/web/scheduler#events-change) event documentation.
+
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Task>()
+        .Name("Scheduler")
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+            .Create("Create", "Scheduler")
+            .Destroy("Destroy", "Scheduler")
+            .Update("Update", "Scheduler")
+        )
+        .Events(events => events.Change(
+                @<text>
+                    function(e) {
+                    //event handling code
+                    }
+                    </text>
+                    ))
+                )
+
+
+### Change(`System.String`)
+Defines the name of the JavaScript function that will handle the the change event.
+
+For additional information check the [change](/kendo-ui/api/web/scheduler#events-change) event documentation.
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Task>()
+        .Name("Scheduler")
+        .Events(events => events.Change("change"))
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+            .Create("Create", "Scheduler")
+            .Destroy("Destroy", "Scheduler")
+            .Update("Update", "Scheduler")
+        )
+    )
+
+
 ### Save(`System.Func<System.Object,System.Object>`)
 Defines the inline handler of the save event.
 

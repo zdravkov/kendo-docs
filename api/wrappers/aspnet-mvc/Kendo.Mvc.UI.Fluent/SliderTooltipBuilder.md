@@ -49,7 +49,7 @@ The value.
     %>
 
 
-### Tempalte(`System.String`)
+### Template(`System.String`)
 Gets or sets the template for displaying the value in the tooltip.
 
 

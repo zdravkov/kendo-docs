@@ -77,7 +77,7 @@ The value that configures the loading.
 
 
 ### Platform(`System.String`)
-Which platform look to force on the application. Supported values are "ios", "android", "blackberry" and "wp8".
+Which platform look to force on the application. Supported values are "ios" (meaning iOS 6 look), "ios7","android", "blackberry" and "wp".
 
 
 #### Parameters

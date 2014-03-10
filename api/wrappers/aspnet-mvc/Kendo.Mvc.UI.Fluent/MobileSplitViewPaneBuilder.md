@@ -76,6 +76,45 @@ The value that configures the transition.
 
 
 
+### Collapsible(`System.Boolean`)
+Defines whether the pane is collapsible. Collapsible panes are automatically hidden when the device is in portrait orientation.
+
+
+#### Parameters
+
+##### value `System.Boolean`
+The value that configures the collapsible.
+
+
+
+
+
+### PortraitWidth(`System.String`)
+Defines the width of the pane in portrait orientation.
+
+
+#### Parameters
+
+##### value `System.String`
+The value that configures the portraitwidth.
+
+
+
+
+
+### PortraitWidth(`System.Int32`)
+Defines the width of the pane in portrait orientation (in pixels).
+
+
+#### Parameters
+
+##### value `System.Int32`
+The value that configures the portraitwidth.
+
+
+
+
+
 ### Content(`System.Action`)
 Sets the HTML content which the pane should display.
 

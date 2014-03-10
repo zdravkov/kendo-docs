@@ -1,10 +1,10 @@
 ---
-title:DataSourceModelDescriptorFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcemodeldescriptorfactory
+title:CustomDataSourceModelDescriptorFactory
+slug:aspnetmvc-kendo.mvc.ui.fluent.customdatasourcemodeldescriptorfactory
 publish:true
 ---
 
-# Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactory
+# Kendo.Mvc.UI.Fluent.CustomDataSourceModelDescriptorFactory
 Defines the fluent interface for configuring the DataSource Model definition.
 
 
@@ -61,6 +61,13 @@ Describes a Model field
 
 ##### memberName `System.String`
 Member name
+
+
+
+
+
+### ClearFields
+Clears all Model fields.
 
 
 

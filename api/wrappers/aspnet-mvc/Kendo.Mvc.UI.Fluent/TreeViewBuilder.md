@@ -528,14 +528,14 @@ The field name.
     %>
 
 
-### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder>`)
+### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.HierarchicalDataSourceBuilder>`)
 Configure the DataSource of the component
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyDataSourceBuilder)>
-The action that configures the M:Kendo.Mvc.UI.Fluent.TreeViewBuilder.DataSource(System.Action{Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder}).
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.HierarchicalDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/HierarchicalDataSourceBuilder)>
+The action that configures the M:Kendo.Mvc.UI.Fluent.TreeViewBuilder.DataSource(System.Action{Kendo.Mvc.UI.Fluent.HierarchicalDataSourceBuilder}).
 
 
 

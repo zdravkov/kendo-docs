@@ -102,4 +102,56 @@ The message
 
 
 
+### Clear(`System.String`)
+Sets the text for Clear button.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
+### Operator(`System.String`)
+Sets the text for Operator label.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
+### Value(`System.String`)
+Sets the text for Value label.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
+### Cancel(`System.String`)
+Sets the text for Cancel button.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
 

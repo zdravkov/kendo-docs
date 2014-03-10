@@ -102,4 +102,17 @@ The lambda which configures the scheduler recurrence editor offsetPositions mess
 
 
 
+### Weekdays(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeekdaysMessagesBuilder>`)
+Sets the Recurrence Editor Weekdays messages of the scheduler.
+
+
+#### Parameters
+
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeekdaysMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorWeekdaysMessagesBuilder)>
+The lambda which configures the scheduler recurrence editor weekdays messages
+
+
+
+
+
 

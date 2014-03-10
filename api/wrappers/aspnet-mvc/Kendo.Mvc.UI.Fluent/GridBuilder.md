@@ -1482,4 +1482,24 @@ Enables grid grouping.
     )
 
 
+### Mobile
+Enables the adaptive rendering when viewed on mobile browser
+
+
+
+
+
+### Mobile(`Kendo.Mvc.UI.MobileMode`)
+Used to determine if adaptive rendering should be used when viewed on mobile browser
+
+
+#### Parameters
+
+##### type [Kendo.Mvc.UI.MobileMode](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileMode)
+
+
+
+
+
+
 

@@ -192,6 +192,20 @@ Use it to set the Id of the parent ComboBox.
     %>
 
 
+### CascadeFromField(`System.String`)
+Use it to set the field used to filter the data source.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Telerik().ComboBox()
+    .Name("ComboBox2")
+    .CascadeFrom("ComboBox1")
+    .CascadeFromField("ParentID")
+    %>
+
+
 ### Text(`System.String`)
 Define the text of the widget, when the autoBind is set to false.
 

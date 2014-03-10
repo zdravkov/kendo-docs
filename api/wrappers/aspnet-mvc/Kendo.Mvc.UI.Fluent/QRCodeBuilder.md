@@ -224,6 +224,31 @@ The QR value.
     %>
 
 
+### Padding(`System.Int32`)
+Sets the padding of the QR code.
+
+
+#### Parameters
+
+##### padding `System.Int32`
+The QR padding.
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().QRCode()
+        .Name("qrCode")
+        .Padding(5)
+    )
+
+#### Example (ASPX)
+    <%:Html.Kendo().QRCode()
+        .Name("qrCode")
+        .Padding(5)
+    %>
+
+
 ### RenderAs(`Kendo.Mvc.UI.RenderingMode`)
 Sets the preferred rendering engine.
             If it is not supported by the browser, the Chart will switch to the first available mode.

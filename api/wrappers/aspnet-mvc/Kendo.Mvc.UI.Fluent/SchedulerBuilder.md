@@ -31,6 +31,26 @@ The Date
     )
 
 
+### Mobile
+Enables the adaptive rendering when viewed on mobile browser
+
+
+
+
+
+### Mobile(`Kendo.Mvc.UI.MobileMode`)
+Used to determine if adaptive rendering should be used when viewed on mobile browser
+
+
+#### Parameters
+
+##### type [Kendo.Mvc.UI.MobileMode](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileMode)
+
+
+
+
+
+
 ### StartTime(`System.DateTime`)
 The start time of the week and day views. The scheduler will display events starting after the startTime.
 
@@ -349,6 +369,26 @@ The allDaySlot.
 
 
 
+### ShowWorkHours(`System.Boolean`)
+If set to true day and week views will be initially shown in business hours mode.
+
+
+#### Parameters
+
+##### value `System.Boolean`
+
+
+
+
+
+
+### ShowWorkHours
+If set day and week views will be initially shown in business hours mode.
+
+
+
+
+
 ### Selectable(`System.Boolean`)
 If set to true the scheduler will enable the selection
 
@@ -608,6 +648,54 @@ The autoBind
     )
 
 
+### WorkWeekStart(`System.Int32`)
+Sets the start day of work week by index.
+
+
+#### Parameters
+
+##### workWeekStartDay `System.Int32`
+The workWeekStartDay
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Task>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .WorkWeekStart(2)
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+        )
+    )
+
+
+### WorkWeekEnd(`System.Int32`)
+Sets the end day of work week by index.
+
+
+#### Parameters
+
+##### workWeekEndDay `System.Int32`
+The workWeekEndDay
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Task>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .WorkWeekEnd(2)
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+        )
+    )
+
+
 ### Editable(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder<T>>`)
 Sets the editing configuration of the scheduler.
 
@@ -663,13 +751,39 @@ The isEditable
     )
 
 
-### Group(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder<T>>`)
+### Min(`System.DateTime`)
+Constraints the minimum date which can be selected via the scheduler navigation.
+
+
+#### Parameters
+
+##### date `System.DateTime`
+The min date
+
+
+
+
+
+### Max(`System.DateTime`)
+Constraints the maximum date which can be selected via the scheduler navigation.
+
+
+#### Parameters
+
+##### date `System.DateTime`
+The max date
+
+
+
+
+
+### Group(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder>`)
 Sets the resources grouping configuration of the scheduler.
 
 
 #### Parameters
 
-##### addResourceAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerGroupBuilder)<T>>
+##### configuration System.Action<[Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerGroupBuilder)>
 The lambda which configures the scheduler grouping
 
 
@@ -812,13 +926,13 @@ The data source.
             ))
 
 
-### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.AjaxSchedulerDataSourceBuilder<T>>`)
+### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerAjaxDataSourceBuilder<T>>`)
 Configures the DataSource options.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.AjaxSchedulerDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/AjaxSchedulerDataSourceBuilder)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerAjaxDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerAjaxDataSourceBuilder)<T>>
 The DataSource configurator action.
 
 

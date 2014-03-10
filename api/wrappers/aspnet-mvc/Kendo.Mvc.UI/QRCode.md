@@ -25,6 +25,8 @@ Gets or sets the QRCode background.
 Gets or sets the QRCode error correction level.
 ### Encoding
 Gets or sets the QRCode encoding.
+### Padding
+Gets or sets the QRCode padding.
 
 
 

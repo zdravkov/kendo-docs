@@ -11,7 +11,7 @@ Creates views for the 1 class.
 
 ## Methods
 
-### DayView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewDayBuilder<Kendo.Mvc.UI.SchedulerViewDay>>`)
+### DayView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerDayViewBuilder<Kendo.Mvc.UI.SchedulerDayView>>`)
 Defines a Scheduler day view.
 
 
@@ -44,7 +44,7 @@ The JavaScript type name
 
 
 
-### CustomView(`System.String,System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewBaseBuilder<Kendo.Mvc.UI.SchedulerCustomView>>`)
+### CustomView(`System.String,System.Action<Kendo.Mvc.UI.Fluent.SchedulerCustomViewBuilder<Kendo.Mvc.UI.SchedulerCustomView>>`)
 Defines a custom view
 
 
@@ -53,11 +53,34 @@ Defines a custom view
 ##### type `System.String`
 The JavaScript type name
 
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerCustomViewBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerCustomViewBuilder)<Kendo.Mvc.UI.SchedulerCustomView>>
+The action for configuring the custom view
 
 
 
 
-### WeekView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewWeekBuilder<Kendo.Mvc.UI.SchedulerViewWeek>>`)
+
+### WorkWeekView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerWorkWeekViewBuilder<Kendo.Mvc.UI.SchedulerWorkWeekView>>`)
+Defines a Scheduler workWeek view.
+
+
+
+#### Returns
+
+
+
+
+### WorkWeekView
+Enables a Scheduler workWeek view.
+
+
+
+#### Returns
+
+
+
+
+### WeekView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerWeekViewBuilder<Kendo.Mvc.UI.SchedulerWeekView>>`)
 Defines a Scheduler week view.
 
 
@@ -77,7 +100,7 @@ Enables a Scheduler week view.
 
 
 
-### MonthView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewMonthBuilder<Kendo.Mvc.UI.SchedulerViewMonth>>`)
+### MonthView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerMonthViewBuilder<Kendo.Mvc.UI.SchedulerMonthView>>`)
 Defines a Scheduler month view.
 
 
@@ -97,7 +120,7 @@ Enables a Scheduler month view.
 
 
 
-### AgendaView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewAgendaBuilder<Kendo.Mvc.UI.SchedulerViewAgenda>>`)
+### AgendaView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerAgendaViewBuilder<Kendo.Mvc.UI.SchedulerAgendaView>>`)
 Defines a Scheduler agenda view.
 
 

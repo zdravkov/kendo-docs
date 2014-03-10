@@ -5,7 +5,7 @@ publish:true
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder
-Defines the fluent interface for configuring the SchedulerEditableSettings.
+Defines the fluent interface for configuring the 1.
 
 
 
@@ -82,7 +82,7 @@ The EditorTemplate which to be rendered as editor.
 
 #### Parameters
 
-##### template `System.String`
+##### name `System.String`
 The name of the EditorTemplate
 
 

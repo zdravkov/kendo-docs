@@ -69,6 +69,32 @@ Enables or disables delete confirmation.
     %>
 
 
+### ConfirmDelete(`System.String`)
+Change default text for confirm delete button. Note: Available only on mobile devices.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Grid<Order>()
+    .Name("Orders")
+    .Editable(settings => settings.ConfirmDelete("Yes"))
+    %>
+
+
+### CancelDelete(`System.String`)
+Change default text for cancel delete button. Note: Available only on mobile devices.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Grid<Order>()
+    .Name("Orders")
+    .Editable(settings => settings.ConfirmDelete("No"))
+    %>
+
+
 ### CreateAt(`Kendo.Mvc.UI.GridInsertRowPosition`)
 Sets insert row position.
 

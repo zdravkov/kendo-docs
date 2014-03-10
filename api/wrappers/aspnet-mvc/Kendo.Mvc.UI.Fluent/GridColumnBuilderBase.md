@@ -207,6 +207,32 @@ Makes the column visible or not. By default all columns are visible. Invisible c
     %>
 
 
+### Locked
+Makes the column static. By default all columns are not locked.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Grid(Model)
+    .Name("Grid")
+    .Columns(columns => columns.Bound(o => o.OrderID).Locked())
+    %>
+
+
+### Locked(`System.Boolean`)
+Makes the column static or not. By default all columns are not locked.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Grid(Model)
+    .Name("Grid")
+    .Columns(columns => columns.Bound(o => o.OrderID).Locked((bool)ViewData["locked"]))
+    %>
+
+
 ### Hidden(`System.Boolean`)
 Makes the column hidden or not. By default all columns are not hidden. Hidden columns are rendered in the output HTML but are hidden.
 

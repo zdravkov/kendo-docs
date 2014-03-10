@@ -90,7 +90,7 @@ The client events action.
 
 
 ### Format(`System.String`)
-Sets the date format, which will be used to parse and format the machine date.
+Sets the date format, which will be used to parse and format the machine date. Defaults to CultureInfo.DateTimeFormat.ShortDatePattern.
 
 
 

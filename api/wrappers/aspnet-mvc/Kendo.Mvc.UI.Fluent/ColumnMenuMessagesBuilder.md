@@ -63,4 +63,30 @@ The message
 
 
 
+### Done(`System.String`)
+Sets the text displayed for done menu button.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
+### ColumnSettings(`System.String`)
+Sets the text displayed for menu header.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
 

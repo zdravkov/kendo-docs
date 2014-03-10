@@ -24,6 +24,19 @@ Controls whether to bind the widget to the DataSource on initialization.
     %>
 
 
+### AutoClose(`System.Boolean`)
+Controls whether to close the widget suggestion list on item selection.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().MultiSelect()
+    .Name("MultiSelect")
+    .AutoClose(false)
+    %>
+
+
 ### DataValueField(`System.String`)
 Sets the field of the data item that provides the value content of the list items.
 

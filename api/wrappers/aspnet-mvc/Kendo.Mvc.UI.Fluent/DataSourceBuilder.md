@@ -25,4 +25,18 @@ Use it to configure Server binding.
 
 
 
+### WebApi
+Use it to configure WebApi binding.
+
+
+
+
+
+### Custom
+Use it to configure Custom binding.
+
+
+
+
+
 
