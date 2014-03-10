@@ -11,11 +11,6 @@ In this tutorial, you will learn how to fully enable CRUD operations in the
 grid and how to additionally handle errors on your server and bubble them up
 to the browser.
 
-## Screencast
-
-
-## Written Content
-
 You can build off of **[Part 1][2]**, or you can download the completed code
 for Part 2 **[here][3]**.
 
