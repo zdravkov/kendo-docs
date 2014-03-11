@@ -1,7 +1,7 @@
 ---
 title:kendo.dataviz.diagram.Link
 slug:api-dataviz-diagram-Link
-publish: true
+publish: false
 ---
 
 # kendo.dataviz.ui.diagram.Link
