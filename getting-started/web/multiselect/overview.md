@@ -216,8 +216,42 @@ This functionality is supported in Q1 SP1 2013 release and later versions of Ken
         });
     </script>
 
-## Accessing an Existing MultiSelect
+## Make the MultiSelect scrollable
 
+By design, the MultiSelect expands vertically when adding more items that do not fit in the existing free space. Limited expansion and scrolling can be achieved with some CSS and Javascript code.
+
+Add a custom CSS class to the MultiSelect wrapper element after initialization.
+
+    $(document).ready(function() {
+        $("#multiselect")
+            .kendoMultiSelect({
+                select: onSelect
+            })
+            .data("kendoMultiSelect")
+                .wrapper.addClass("myClass");
+    });
+
+Use the following CSS rule to limit the MultiSelect expansion (with a `min-height` style) or set a fixed height (with a `height` style).
+
+    .myClass .k-multiselect-wrap
+    {
+        overflow: auto;
+
+        max-height: 100px;
+        /* or */
+        /* height: 100px; */
+    }
+
+You may want to scroll the widget automatically to the bottom when new items are added, so that they are visible to the user. Use the `select` event handler.
+
+    function onSelect(e) {
+        setTimeout(function() {
+            var container = e.sender.wrapper.children(".k-multiselect-wrap");
+            container.scrollTop(container[0].scrollHeight);
+        });
+    }
+
+## Accessing an Existing MultiSelect
 
 You can reference an existing **MultiSelect** instance via
 [jQuery.data()](http://api.jquery.com/jQuery.data/). Objectnce a reference has been established, you
