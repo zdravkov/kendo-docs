@@ -286,7 +286,8 @@ Virtual Scrolling will load in data from the remote data source as you scroll do
     });
 
 > Using virtual scrolling together with grouping, hierarchy, batch editing and inline editing is not recommended.
-The feature relies on calculating average row height, based on already loaded data, so having a large variance of row heights may cause unexpected behavior.
+The feature relies on calculating average row height, based on already loaded data, so having a large variance of row heights,
+or an unknown number of non-databound rows (e.g. group headers) may cause unexpected behavior.
 
 > A scrollable Grid with a set height needs to be visible when initialized. Thus the Grid can adjust the height of its scrollable data area in accordance with the total  widget height.
 In certain scenarios the Grid may be invisible when initialized - for example when placed inside an initially inactive TabStrip tab or in another widget. In such cases there are generally two options -
