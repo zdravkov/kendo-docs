@@ -223,12 +223,11 @@ By design, the MultiSelect expands vertically when adding more items that do not
 Add a custom CSS class to the MultiSelect wrapper element after initialization.
 
     $(document).ready(function() {
-        $("#multiselect")
-            .kendoMultiSelect({
-                select: onSelect
-            })
-            .data("kendoMultiSelect")
-                .wrapper.addClass("myClass");
+        $("#multiselect").kendoMultiSelect({
+            select: onSelect
+        });
+        
+        $("#multiselect").data("kendoMultiSelect").wrapper.addClass("myClass");
     });
 
 Use the following CSS rule to limit the MultiSelect expansion (with a `min-height` style) or set a fixed height (with a `height` style).
