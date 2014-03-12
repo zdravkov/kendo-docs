@@ -183,7 +183,7 @@ Gets the bounds of the Connection.
 
 #### Returns
 
-`kendo.dataviz.diagram.Rect` the bounding rectangle of the connection.
+`Object` the bounding rectangle of the connection.
 
 ### type
 
