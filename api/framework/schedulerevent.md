@@ -480,11 +480,13 @@ Clones the scheduler event.
 
 Additional options passed to the SchedulerEvent constructor.
 
-> By default, `uid` property will be preserved.
+##### updateUid `Boolean`*(default: false)*
+
+If you pass `true` the `uid` of the event will be preserved.
 
 #### Returns
 
-`kendo.data.Scheduler` the cloned scheduler event.
+`kendo.data.SchedulerEvent` the cloned scheduler event.
 
 #### Example - clone the scheduler event
 
@@ -556,7 +558,7 @@ The time zone ID used to convert the recurrence rule dates.
 
 #### Returns
 
-`Array` the list of the occurrences.
+`Array` list of occurrences.
 
 #### Example - get the occurrences
 
@@ -570,6 +572,184 @@ The time zone ID used to convert the recurrence rule dates.
     });
 
     var occurrences = event.expand(new Date("2013/4/4"), new Date("2013/5/4"), "Etc/UTC");
+    </script>
+
+### update
+
+Updates the scheduler event.
+
+#### Parameters
+
+##### eventInfo `Object`
+
+The new values, which will be used to update the event.
+
+#### Example - update the scheduler event
+
+    <script>
+        var event = new kendo.data.SchedulerEvent({
+            id: 1,
+            title: "Task1",
+            start: new Date("2013/4/4 12:00"),
+            end: new Date("2013/4/4 14:00")
+        });
+
+        event.update({
+            start: new Date("2013/4/4 2:00"),
+            end: new Date("2013/4/4 4:00")
+        });
+    </script>
+
+### isMultiDay
+
+Checks whether the event is equal to or longer then twenty four hours.
+
+#### Returns
+
+`Boolean` return `true` if event is equal to or longer then 24 hours.
+
+#### Example - check whether an event is a multi-day event
+
+    <script>
+        var event = new kendo.data.SchedulerEvent({
+            id: 1,
+            title: "Task1",
+            start: new Date("2013/4/4"),
+            end: new Date("2013/4/7")
+        });
+
+        console.log(event.isMultiDay()); //logs 'true'
+    </script>
+
+### isException
+
+Checks whether the event is a recurrence exception.
+
+#### Returns
+
+`Boolean` return `true` if event is a recurrence exception.
+
+#### Example - check whether an event is an exception
+
+    <script>
+        var event = new kendo.data.SchedulerEvent({
+            id: 2,
+            recurrenceId: 1, //id of the recurrence head event
+            title: "Task1",
+            start: new Date("2013/4/4"),
+            end: new Date("2013/4/4")
+        });
+
+        console.log(event.isException()); //logs 'true'
+    </script>
+
+### isOccurrence
+
+Checks whether the event is an occurrence part of a recurring series.
+
+#### Returns
+
+`Boolean` return `true` if event is an occurrence.
+
+#### Example - check whether an event is an occurrence
+
+    <script>
+        var event = new kendo.data.SchedulerEvent({
+            id: 0, //event has a default id
+            recurrenceId: 1, //id of the recurrence head event
+            title: "Task1",
+            start: new Date("2013/4/4"),
+            end: new Date("2013/4/4")
+        });
+
+        console.log(event.isOccurrence()); //logs 'true'
+    </script>
+
+### isRecurring
+
+Checks whether the event is part of a recurring series.
+
+#### Returns
+
+`Boolean` return `true` if event is recurring.
+
+#### Example - check whether an event is an occurrence
+
+    <script>
+        var event = new kendo.data.SchedulerEvent({
+            id: 0,
+            recurrenceId: 1, //id of the recurrence head event
+            title: "Task1",
+            start: new Date("2013/4/4"),
+            end: new Date("2013/4/4")
+        });
+
+        var event2 = new kendo.data.SchedulerEvent({
+            id: 1,
+            title: "Task1",
+            start: new Date("2013/4/4"),
+            end: new Date("2013/4/4"),
+            recurrenceRule: "FREQ=DAILY"
+        });
+
+        console.log(event.isRecurring()); //logs 'true'
+        console.log(event2.isRecurring()); //logs 'true'
+    </script>
+
+### isRecurrenceHead
+
+Checks whether the event is the head of a recurring series.
+
+#### Returns
+
+`Boolean` return `true` if event is a recurrence head.
+
+#### Example - check whether an event is a recurrence head
+
+    <script>
+        var event = new kendo.data.SchedulerEvent({
+            id: 1,
+            title: "Task1",
+            start: new Date("2013/4/4"),
+            end: new Date("2013/4/4"),
+            recurrenceRule: "FREQ=DAILY"
+        });
+
+        console.log(event.isRecurrenceHead()); //logs 'true'
+    </script>
+
+### toOccurrence
+
+Converts the scheduler event to a event occurrence. Method will remove `recurrenceRule`, `recurrenceException` options, will add a `recurrenceId` field and will set `id` to the default one.
+
+#### Parameters
+
+##### options `Object`
+
+Additional options passed to the SchedulerEvent constructor.
+
+> `uid` property of the event will be preserved.
+
+#### Returns
+
+`kendo.data.SchedulerEvent` the occurrence.
+
+#### Example - create occurrence from a scheduler event
+
+    <script>
+        var event = new kendo.data.SchedulerEvent({
+            id: 1,
+            title: "Task1",
+            start: new Date(2013, 10, 11, 12),
+            end: new Date(2013, 10, 11, 14),
+            recurrenceRule: "FREQ=DAILY"
+        });
+
+        var occurrence = event.toOccurrence();
+
+        console.log(occurrence.id); //logs default id
+        console.log(occurrence.recurrenceId); //logs id of the head. In this case '1'
+        console.log(occurrence.recurrenceRule); //logs 'null'
     </script>
 
 ## Events
