@@ -18,7 +18,6 @@ to add Telerik UI for ASP.NET MVC to the application.
 Name the model "Northwind.edmx" and click **Next**. This will start the **Entity Data Model Wizard**.
 ![New entity data model](images/grid-entity-data-model.png)
 1. Select **Generate from database** option and click **Next**. Configure a connection to the Northwind database. Click **Next**.
-![Choose the connection](images/grid-entity-data-model.png)
 1. Select the **Products** table. Leave all other options as they are set by default. Click **Finish** to create the Entity Framework model.
 ![Choose the Products table](images/grid-database-objects.png)
 1. Right click the **Controllers** folder in Visual Studio solution explorer. Select **Add -> Controller**.
