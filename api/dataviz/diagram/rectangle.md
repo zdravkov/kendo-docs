@@ -1,6 +1,6 @@
 ---
-title:kendo.dataviz.diagram.TextBlock
-slug:api-dataviz-diagram-text-block
+title:kendo.dataviz.diagram.Rectangle
+slug:api-dataviz-diagram-rectangle
 publish: true
 ---
 
@@ -10,9 +10,13 @@ Represents a rectangle.
 
 ## Configuration
 
-### fill `String`
+### background `String`
+
+Defines the fill color of the rectangle.
 
 ### height `Number`
+
+Sets the height of the rectangle.
 
 ### stroke `Object`
 
@@ -28,6 +32,8 @@ Defines the stroke width of the rectangle.
 
 ### width `Number`
 
+Sets the width of the rectangle.
+
 ### x `Number`
 
 The X position of the top-left corner of the rectangle.
@@ -36,3 +42,18 @@ The X position of the top-left corner of the rectangle.
 
 The Y position of the top-left corner of the rectangle.
 
+## Methods
+
+### visible
+
+Gets or sets the visibilty of the current element.
+
+#### Parameters
+
+##### visible `Boolean`
+
+The new visibility state.
+
+#### Returns
+
+`Boolean` True if the element is visible, false otherwise.

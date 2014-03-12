@@ -12,19 +12,31 @@ A non-wrapping text element with optional background.
 
 ### background `String`
 
+The background color of the text block.
+
 ### color `String`
+
+The text color of the text block.
 
 ### fontFamily `String`
 
+The font family of the text block.
+
 ### fontSize `Number`
 
+The font size of the text block.
+
 ### height `Number`
+
+The height of the text block.
 
 ### text `String`
 
 The content of the text block.
 
 ### width `Number`
+
+The width of the text block.
 
 ### x `Number`
 
@@ -50,3 +62,16 @@ The new text content.
 
 `String` the current text content.
 
+### visible
+
+Gets or sets the visibilty of the current element.
+
+#### Parameters
+
+##### visible `Boolean`
+
+The new visibility state.
+
+#### Returns
+
+`Boolean` True if the element is visible, false otherwise.
