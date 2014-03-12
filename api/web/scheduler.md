@@ -3462,6 +3462,8 @@ The fields which can be used in the template are:
 
 * date - represents the slot date.
 
+* resources() - returns the relevant resources for the current slot.
+
 > The `allDaySlotTemplate` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
 
 #### Example - set the date header template
@@ -3484,6 +3486,40 @@ The fields which can be used in the template are:
         }
       ]
     });
+    </script>
+
+#### Exampe - modify the all day slot based on resources
+    <div id="scheduler"></div>
+    <script id="allDaySlotTemplate" type="text/x-kendo-template">
+        # var resources = data.resources(); #
+        # var color = resources.roomId === 1 ? "red" : "blue"; #
+
+        <span style="background: #=color#">
+          #=kendo.toString(date, "d")#
+        </span>
+    </script>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [{
+        type: "day",
+        allDaySlotTemplate: kendo.template($("#allDaySlotTemplate").html())
+      }],
+      group: {
+        resources: ["Rooms"]
+      },
+      resources: [
+        {
+          field: "roomId",
+          name: "Rooms",
+          dataSource: [
+            { text: "Meeting Room 101", value: 1, color: "#6eb3fa" },
+            { text: "Meeting Room 201", value: 2, color: "#f58a8a" }
+          ],
+          title: "Room"
+        }
+      ]
+    })
     </script>
 
 ### views.dateHeaderTemplate `String|Function`
@@ -3528,6 +3564,8 @@ The fields which can be used in the template are:
 
 * date `Date` - represents the current day
 
+* resources() - returns the relevant resources for the current slot.
+
 > The `dayTemplate` option is supported when [views.type](#configuration-views.type) is set to "month".
 
 #### Example - set the day template in month view
@@ -3548,6 +3586,40 @@ The fields which can be used in the template are:
           start: new Date("2013/6/6 08:00 AM"),
           end: new Date("2013/6/6 09:00 AM"),
           title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+#### Exampe - modify the day slot based on resources
+    <div id="scheduler"></div>
+    <script id="dayTemplate" type="text/x-kendo-template">
+        # var resources = data.resources(); #
+        # var color = resources.roomId === 1 ? "red" : "blue"; #
+
+        <span style="display:none; height:100%; background: #=color#">
+          #=kendo.toString(date, "d")#
+        </span>
+    </script>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [{
+        type: "month",
+        dayTemplate: kendo.template($("#dayTemplate").html())
+      }],
+      group: {
+        resources: ["Rooms"]
+      },
+      resources: [
+        {
+          field: "roomId",
+          name: "Rooms",
+          dataSource: [
+            { text: "Meeting Room 101", value: 1, color: "#6eb3fa" },
+            { text: "Meeting Room 201", value: 2, color: "#f58a8a" }
+          ],
+          title: "Room"
         }
       ]
     });
@@ -4125,9 +4197,11 @@ The fields which can be used in the template are:
 
 * date - represents the slot date and time.
 
+* resources() - returns the relevant resources for the current slot.
+
 > The `slotTemplate` option is supported when [views.type](#configuration-views.type) is set to "day" or "week".
 
-#### Example - set the date header template
+#### Example - set the slot template
     <div id="scheduler"></div>
     <script>
     $("#scheduler").kendoScheduler({
@@ -4144,6 +4218,40 @@ The fields which can be used in the template are:
           start: new Date("2013/6/6 08:00 AM"),
           end: new Date("2013/6/6 09:00 AM"),
           title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+#### Exampe - modify the slot based on resources
+    <div id="scheduler"></div>
+    <script id="slotTemplate" type="text/x-kendo-template">
+        # var resources = data.resources(); #
+        # var color = resources.roomId === 1 ? "red" : "blue"; #
+
+        <span style="background: #=color#">
+          #=kendo.toString(date, "d")#
+        </span>
+    </script>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [{
+        type: "day",
+        slotTemplate: kendo.template($("#slotTemplate").html())
+      }],
+      group: {
+        resources: ["Rooms"]
+      },
+      resources: [
+        {
+          field: "roomId",
+          name: "Rooms",
+          dataSource: [
+            { text: "Meeting Room 101", value: 1, color: "#6eb3fa" },
+            { text: "Meeting Room 201", value: 2, color: "#f58a8a" }
+          ],
+          title: "Room"
         }
       ]
     });
@@ -4706,7 +4814,7 @@ Get the time slot from given element.
     console.log("slot endDate: " + slot.endDate);
     </script>
 
-### resourceBySlot
+### resourcesBySlot
 
 Get the relevant resources for a given slot.
 
@@ -4743,7 +4851,7 @@ Get the relevant resources for a given slot.
 
     var slot = scheduler.slotByElement(element);
 
-    var resouce = scheduler.resourceBySlot(slot);
+    var resouce = scheduler.resourcesBySlot(slot);
 
     for (var key in resource) {
         console.log("resouce - {" + key + ": " + resource[key] + " }");
