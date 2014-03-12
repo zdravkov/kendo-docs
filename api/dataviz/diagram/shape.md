@@ -122,10 +122,9 @@ The rotation angle.
 
 Sets the text content of the Shape.
 
-### shapes.visual `Function`
+### visual `Function`
 
 A function returning a visual element to render for this shape.
-See [visual](#configuration-shapeDefaults-visual).
 
 ## Methods
 
