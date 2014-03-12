@@ -4683,6 +4683,90 @@ The event which should be put in edit mode. Also accepts a string which is the `
     scheduler.editEvent(event);
     </script>
 
+### occurrenceByUid
+
+Gets the event occurrence with the specified [uid](/kendo-ui/api/framework/model#fields-uid).
+
+> This method can return an occurrence (not part of the data source's data) part of a recurring series.
+
+#### Parameters
+
+##### uid `String`
+
+The uid of the occurrence to look for.
+
+#### Returns
+
+`kendo.data.SchedulerEvent` the occurrence instance. Returns `undefined` if an occurrence with the specified uid is not found.
+
+#### Example - get an occurrence from a recurring series
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: ["week"],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview",
+          recurrenceRule: "FREQ=DAILY"
+        }
+      ]
+    });
+
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    var uid = scheduler.wrapper.find(".k-event:last").data("uid");
+    var event = scheduler.occurrenceByUid(uid);
+
+    console.log(event);
+    </script>
+
+### occurrencesInRange
+
+Gets a list of event occurrences in specified time range.
+
+#### Parameters
+
+##### start `Date`
+
+The start date of the period.
+
+##### end `Date`
+
+The end date of the period.
+
+#### Returns
+
+`Array` a list of scheduler events filtered by the specified start/end period.
+
+> All recurring events within the start - end period will be returned in the list.
+
+#### Example - get a list of occurrences
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: ["week"],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview",
+          recurrenceRule: "FREQ=DAILY"
+        }
+      ]
+    });
+
+    var scheduler = $("#scheduler").data("kendoScheduler");
+
+    var events = scheduler.occurrencesInRange(new Date("2013/6/5"), new Date("2013/6/10"));
+
+    console.log(events);
+    </script>
+
 ### removeEvent
 
 Removes the specified scheduler event.
@@ -4710,6 +4794,51 @@ The event which should be removed. Also accepts a string which is the `uid` of t
     var scheduler = $("#scheduler").data("kendoScheduler");
     var event = scheduler.dataSource.at(0);
     scheduler.removeEvent(event);
+    </script>
+
+### resourcesBySlot
+
+Get the relevant resources for a given slot.
+
+#### Parameters
+
+##### slot `Object`
+
+#### Returns
+
+`Object` The relevant resouces.
+
+#### Exampe - get the relevant resources
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      group: {
+        resources: ["Rooms"]
+      },
+      resources: [
+        {
+            field: "roomId",
+            name: "Rooms",
+            dataSource: [
+                { text: "Meeting Room 101", value: 1, color: "#6eb3fa" },
+                { text: "Meeting Room 201", value: 2, color: "#f58a8a" }
+            ]
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+
+    var element = scheduler.view().content.find("tr:first td:first");
+
+    var slot = scheduler.slotByElement(element);
+
+    var resouce = scheduler.resourcesBySlot(slot);
+
+    for (var key in resource) {
+        console.log("resouce - {" + key + ": " + resource[key] + " }");
+    }
+
     </script>
 
 ### saveEvent
@@ -4812,51 +4941,6 @@ Get the time slot from given element.
 
     console.log("slot startDate: " + slot.startDate);
     console.log("slot endDate: " + slot.endDate);
-    </script>
-
-### resourcesBySlot
-
-Get the relevant resources for a given slot.
-
-#### Parameters
-
-##### slot `Object`
-
-#### Returns
-
-`Object` The relevant resouces.
-
-#### Exampe - get the relevant resources
-    <div id="scheduler"></div>
-    <script>
-    $("#scheduler").kendoScheduler({
-      date: new Date("2013/6/6"),
-      group: {
-        resources: ["Rooms"]
-      },
-      resources: [
-        {
-            field: "roomId",
-            name: "Rooms",
-            dataSource: [
-                { text: "Meeting Room 101", value: 1, color: "#6eb3fa" },
-                { text: "Meeting Room 201", value: 2, color: "#f58a8a" }
-            ]
-        }
-      ]
-    });
-    var scheduler = $("#scheduler").data("kendoScheduler");
-
-    var element = scheduler.view().content.find("tr:first td:first");
-
-    var slot = scheduler.slotByElement(element);
-
-    var resouce = scheduler.resourcesBySlot(slot);
-
-    for (var key in resource) {
-        console.log("resouce - {" + key + ": " + resource[key] + " }");
-    }
-
     </script>
 
 ### view
