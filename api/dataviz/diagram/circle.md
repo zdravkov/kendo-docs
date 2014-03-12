@@ -4,7 +4,7 @@ slug:api-dataviz-diagram-circle
 publish: true
 ---
 
-### kendo.dataviz.diagram.Circle
+# kendo.dataviz.diagram.Circle
 
 Represents a circle.
 

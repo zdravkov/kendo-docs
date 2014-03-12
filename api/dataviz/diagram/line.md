@@ -4,7 +4,7 @@ slug:api-dataviz-diagram-line
 publish: true
 ---
 
-### kendo.dataviz.diagram.Line
+# kendo.dataviz.diagram.Line
 
 This represents a single, straight line.
 

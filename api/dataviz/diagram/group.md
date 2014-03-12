@@ -4,7 +4,7 @@ slug:api-dataviz-diagram-group
 publish: true
 ---
 
-### kendo.dataviz.diagram.Group
+# kendo.dataviz.diagram.Group
 
 This represents an invisible, grouping element with visual children. Groups can be nested to form a hierarchy.
 

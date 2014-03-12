@@ -4,7 +4,7 @@ slug:api-dataviz-diagram-rectangle
 publish: true
 ---
 
-### kendo.dataviz.diagram.Rectangle
+# kendo.dataviz.diagram.Rectangle
 
 Represents a rectangle.
 

@@ -4,7 +4,7 @@ slug:api-dataviz-diagram-image
 publish: true
 ---
 
-### kendo.dataviz.diagram.Image
+# kendo.dataviz.diagram.Image
 
 Represents a bitmap image loaded from source URL.
 

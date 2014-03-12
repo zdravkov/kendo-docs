@@ -4,7 +4,7 @@ slug:api-dataviz-diagram-text-block
 publish: true
 ---
 
-### kendo.dataviz.diagram.TextBlock
+# kendo.dataviz.diagram.TextBlock
 
 A non-wrapping text element with optional background.
 
