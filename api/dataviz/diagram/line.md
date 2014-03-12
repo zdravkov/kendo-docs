@@ -26,11 +26,11 @@ Defines the line width.
 
 The first point of the line.
 
-### x `Number`
+#### x `Number`
 
 The X position of first point.
 
-### y `Number`
+#### y `Number`
 
 The Y position of first point.
 
@@ -38,11 +38,11 @@ The Y position of first point.
 
 The second point of the line.
 
-### x `Number`
+#### x `Number`
 
 The X position of second point.
 
-### y `Number`
+#### y `Number`
 
 The Y position of second point.
 
