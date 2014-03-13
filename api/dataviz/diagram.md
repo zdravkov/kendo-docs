@@ -1331,6 +1331,16 @@ The widget instance which fired the event.
 
 Fired when an item is rotated.
 
+#### Event Data
+
+##### e.item `Object`
+
+The rotated item (shape or connection).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
 ### pan
 
 Fired when the user pans the diagram.
