@@ -144,7 +144,7 @@ For additional information check the [change](/kendo-ui/api/dataviz/diagram#even
 
 ### itemBoundsChange `String`
 
-Fired when the bounds of an item are changed.
+Fired when the location or size of an item are changed.
 
 
 For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
@@ -206,25 +206,41 @@ For additional information check the [select](/kendo-ui/api/dataviz/diagram#even
         }
     </script>
 
-### zoom `String`
+### zoomStart `String`
+
+Fired when the user starts changing the diagram zoom level.
+
+
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/diagram#events-zoomStart) event documentation.
+
+#### Example
+    <kendo:diagram zoomStart="handle_zoomStart">
+    </kendo:diagram>
+    <script>
+        function handle_zoomStart(e) {
+            // Code to handle the zoomStart event.
+        }
+    </script>
+
+### zoomEnd `String`
 
 Fired when the user changes the diagram zoom level.
 
 
-For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events-zoom) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/diagram#events-zoomEnd) event documentation.
 
 #### Example
-    <kendo:diagram zoom="handle_zoom">
+    <kendo:diagram zoomEnd="handle_zoomEnd">
     </kendo:diagram>
     <script>
-        function handle_zoom(e) {
-            // Code to handle the zoom event.
+        function handle_zoomEnd(e) {
+            // Code to handle the zoomEnd event.
         }
     </script>
 
 ### click `String`
 
-Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+Fired when the user clicks on a shape or a connection.
 
 
 For additional information check the [click](/kendo-ui/api/dataviz/diagram#events-click) event documentation.
@@ -260,7 +276,7 @@ For additional information check the [change](/kendo-ui/api/dataviz/diagram#even
 
 ### kendo:diagram-itemBoundsChange
 
-Fired when the bounds of an item are changed.
+Fired when the location or size of an item are changed.
 
 
 For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
@@ -330,27 +346,45 @@ For additional information check the [select](/kendo-ui/api/dataviz/diagram#even
         </kendo:diagram-select>
     </kendo:diagram>
 
-### kendo:diagram-zoom
+### kendo:diagram-zoomStart
+
+Fired when the user starts changing the diagram zoom level.
+
+
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/diagram#events-zoomStart) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-zoomStart>
+            <script>
+                function(e) {
+                    // Code to handle the zoomStart event.
+                }
+            </script>
+        </kendo:diagram-zoomStart>
+    </kendo:diagram>
+
+### kendo:diagram-zoomEnd
 
 Fired when the user changes the diagram zoom level.
 
 
-For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events-zoom) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/diagram#events-zoomEnd) event documentation.
 
 #### Example
     <kendo:diagram>
-        <kendo:diagram-zoom>
+        <kendo:diagram-zoomEnd>
             <script>
                 function(e) {
-                    // Code to handle the zoom event.
+                    // Code to handle the zoomEnd event.
                 }
             </script>
-        </kendo:diagram-zoom>
+        </kendo:diagram-zoomEnd>
     </kendo:diagram>
 
 ### kendo:diagram-click
 
-Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+Fired when the user clicks on a shape or a connection.
 
 
 For additional information check the [click](/kendo-ui/api/dataviz/diagram#events-click) event documentation.

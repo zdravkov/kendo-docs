@@ -89,7 +89,7 @@ For additional information check the [change](/kendo-ui/api/dataviz/diagram#even
     ?>
 
 ### click
-Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+Fired when the user clicks on a shape or a connection.
 For additional information check the [click](/kendo-ui/api/dataviz/diagram#events-click) event documentation.
 
 #### Returns
@@ -237,7 +237,7 @@ Defines whether items can be dropped on the diagram.
     ?>
 
 ### itemBoundsChange
-Fired when the bounds of an item are changed.
+Fired when the location or size of an item are changed.
 For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
 
 #### Returns
@@ -536,9 +536,9 @@ The template which renders the content of the shape when bound to a dataSource. 
     $diagram->template(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
-### zoom
+### zoomEnd
 Fired when the user changes the diagram zoom level.
-For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events-zoom) event documentation.
+For additional information check the [zoomEnd](/kendo-ui/api/dataviz/diagram#events-zoomEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -551,25 +551,25 @@ For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->zoom('function(e) { }');
+    $diagram->zoomEnd('function(e) { }');
     ?>
 
 #### Example - using string which defines a JavaScript name
     <script>
-        function onZoom(e) {
-            // handle the zoom event.
+        function onZoomEnd(e) {
+            // handle the zoomEnd event.
         }
     </script>
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->zoom('onZoom');
+    $diagram->zoomEnd('onZoomEnd');
     ?>
 
 #### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->zoom(new \Kendo\JavaScriptFunction('function(e) { }'));
+    $diagram->zoomEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
 ### zoomRate
@@ -589,5 +589,41 @@ If zoomRate is less than 1, zooming will be reversed.
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $diagram->zoomRate(1);
+    ?>
+
+### zoomStart
+Fired when the user starts changing the diagram zoom level.
+For additional information check the [zoomStart](/kendo-ui/api/dataviz/diagram#events-zoomStart) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoomStart('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onZoomStart(e) {
+            // handle the zoomStart event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoomStart('onZoomStart');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoomStart(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
