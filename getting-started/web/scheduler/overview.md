@@ -341,3 +341,16 @@ The following CSS code will ensure that the widget expands and displays all even
 		  overflow-y: scroll !important;
 	   }
 	}
+
+The above will work in Internet Explorer and Google Chrome. Firefox will ignore the `overflow-y` style, that's why it needs a different approach:
+
+    @media print {
+        /* the same rules as above... */
+        
+        .k-ff .k-scheduler-content
+        {
+            margin-right: 17px !important;
+        }
+    }
+
+`17px` is a hard-coded value, which should match the scrollbar width. It can be calculated and set with Javascript before printing, if desired.
