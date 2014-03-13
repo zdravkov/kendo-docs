@@ -1,10 +1,7 @@
 ---
-title: kendo.dataviz.diagram.Connector
-meta_title: API Reference for methods, objects and properties in the Connector - diagram's primitive
-meta_description: Examples and detailed explanation of Kendo UI methods and properties.
-slug: api-framework
-tags: api,framework
-publish: false
+title:kendo.dataviz.diagram.Connector
+slug:api-dataviz-diagram-connector
+publish: true
 ---
 
 # kendo.dataviz.diagram.Connector
@@ -21,18 +18,27 @@ Defines the width of the connector.
 
 Defines the height of the connector.
 
-### background `String` *(default: "Yellow")*
+### background `String`
 
-Defines the background color of the Connector. The Connector visual is by default an SVG Ellipse and all connectors are children of the same SVG Group. This background color is the SVG fill attribute of the Ellipse.
+Defines the background color of the Connector.
 
-### hoveredBackground `String` *(default: "#70CAFF")*
+### hoveredBackground `String`
 
 Defines the color of the Connector when the pointer hovers over it.
 
-### cssClass `String` *(default: "k-connector")*
-
-Defines the CSS class of the SVG visual representing the Connector.
+## Methods
 
 ### position
 
-Returns the position in global coordinates of the Connector.
+Gets or sets the position of the Connector.
+
+#### Parameters
+
+##### position `kendo.dataviz.diagram.Point`
+
+The new position of the connector.
+
+#### Returns
+
+`kendo.dataviz.diagram.Point` the current position of the connector.
+

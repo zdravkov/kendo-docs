@@ -44,7 +44,7 @@ The data field containing the point category name.** Applicable to pie series. *
 
 ### color `java.lang.String`
 
-The series base color.
+The series base color. The supported values are:
 
 #### Example
     <kendo:sparkline-seriesItem color="color">
@@ -361,7 +361,7 @@ More documentation is available at [kendo:sparkline-seriesItem-tooltip](/kendo-u
 
 ### color `String`
 
-The series base color.
+The series base color. The supported values are:
 
 
 #### Example
@@ -377,7 +377,7 @@ The series base color.
 
 ### kendo:sparkline-seriesItem-color
 
-The series base color.
+The series base color. The supported values are:
 
 
 #### Example

@@ -2,8 +2,8 @@
 title: kendo.dataviz.ui.Diagram
 meta_title: API Reference for methods, objects and properties in the math module of Kendo diagram
 meta_description: Examples and detailed explanation of Kendo UI methods and properties.
-slug: api-framework
-tags: api,framework
+slug: api-dataviz-diagram
+tags: api,dataviz
 publish: true
 ---
 
@@ -140,6 +140,8 @@ The subtype further defines the layout type by specifying in greater detail the 
 
 Either the distance between the siblings if the tree is up/down or between levels if the tree is left/right. In *tipOver tree layout* this setting is used only for the direct children of the root
 
+![Tree parameters](diagram/treeParameters.png)
+
 ### layout.verticalSeparation `Number` *(default: 50)*
 
 Either the distance between levels if the tree is up/down or between siblings if the tree is left/right. This property is **not used** in *tipOver tree layout* but rather replaced with three additional ones - **underneathVerticalTopOffset**, **underneathVerticalSeparation** and **underneathHorizontalOffset**
@@ -193,7 +195,7 @@ In the **layered layout** it defines the minimum distance between nodes on the s
 ### layout.grid `Object`
 
 Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
-![Diagram component](diagram/ComponentExample.png)
+![Diagram component](diagram/componentExample.png)
 
 A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components.
 
@@ -203,27 +205,27 @@ When you apply a certain layout an analysis will first split the diagram in comp
 
 ### layout.grid.width `Number` *(default: 1500)*
 
-defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
+Defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
 
 ### layout.grid.offsetX `Number` *(default: 50)*
 
-defines the left offset of the grid layout. The default is 50.
+Defines the left offset of the grid layout. The default is 50.
 
 ### layout.grid.offsetY `Number` *(default: 50)*
 
-defines the top offset of the grid layout. The default is 50.
+Defines the top offset of the grid layout. The default is 50.
 
 ### layout.grid.componentSpacingX `Number` *(default: 50)*
 
-defines the horizontal spacing between each component. The default is 50.
+Defines the horizontal spacing between each component. The default is 50.
 
 ### layout.grid.componentSpacingY `Number` *(default: 50)*
 
-defines the vertical spacing between each component. The default is 50.
+Defines the vertical spacing between each component. The default is 50.
 
 ### layout.layerSeparation `Number` *(default: 50)*
 
-the height (in a vertical layout) or width (in a horizontal layout) between the layers.
+The height (in a vertical layout) or width (in a horizontal layout) between the layers.
 
 ### template `String|Function` *(default: "")*
 
@@ -277,12 +279,6 @@ The start cap (arrow, head or decoration) of the connection:
 * "ArrowStart": a filled arrow
 * "FilledCircle": a filled circle
 
-#### Example - custom connection caps
-
-This defines and adds a custom cap (a small square) to the diagram canvas and is referred to in the connection options.
-
-![Custom square cap.](diagram/customCap.png)
-
 ### connectionDefaults.endCap `String` *(default: "ArrowEnd")*
 
 The start cap (arrow, head or decoration) of the connection:
@@ -291,7 +287,7 @@ The start cap (arrow, head or decoration) of the connection:
 * "ArrowEnd": a filled arrow
 * "FilledCircle": a filled circle
 
-Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
+Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
 
 ### connections `Array`
 
@@ -329,12 +325,6 @@ The start cap (arrow, head or decoration) of the connection:
 * "ArrowStart": a filled arrow
 * "FilledCircle": a filled circle
 
-#### Example - custom connection caps
-
-This defines and adds a custom cap (a small square) to the diagram canvas and is referred to in the connection options.
-
-![Custom square cap.](diagram/customCap.png)
-
 ### connections.endCap `String` *(default: "ArrowEnd")*
 
 The start cap (arrow, head or decoration) of the connection:
@@ -343,7 +333,7 @@ The start cap (arrow, head or decoration) of the connection:
 * "ArrowEnd": a filled arrow
 * "FilledCircle": a filled circle
 
-Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed. Much like the startCap example above, you can define custom caps (markers) for the endpoint of the connection.
+Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
 
 ### connections.points `Array`
 
@@ -565,6 +555,10 @@ Defines the shape options.
 
 Specifies if the shape is editable by the user.
 
+### shapes.id `String`
+
+The unique identifier for a Shape.
+
 ### shapes.rotatable `Boolean` *(default:true)*
 
 Specifies if the user is allowed to rotate the shape.
@@ -650,6 +644,10 @@ Hover's background color.
 
 Defines the connectors the shape owns.
 
+### shapes.connectors.name `String`
+
+The connector name. Predefined names include:
+
 * "top" - top connector.
 * "right" - right connector.
 * "bottom" - bottom connector.
@@ -657,47 +655,21 @@ Defines the connectors the shape owns.
 * "left" - left connector.
 * "auto" - auto connector.
 
-You can easily define your own custom connectors or mix-match with the above defined custom connectors.
-
-Example - custom shape with custom connectors
-
-The following defines a custom shape with connectors adapted to the shape's outline. Note in particular the various helpful methods (right(), left(), top()) to define positions relative to the shape.
-
-![Custom connectors on custom shape.](../../../getting-started/dataviz/diagram/ThreeWayShape.PNG)
-
-    $("#diagram").kendoDiagram({
-        shapes: [{
-            path: "m1,53.69333l17.5647,-17.56445l0,8.78235l23.15292,0l0,-26.34678l-8.78181,0l17.56417,-17.56444l17.5647,17.56444l-8.78238,0l0,26.34678l23.15297,0l0,-8.78235l17.56473,17.56445l-17.56473,17.56466l0,-8.78231l-63.87057,0l0,8.78231l-17.5647,-17.56466l0,0z",
-            connectors: [{
-                name: "Upstream",
-                position: function(shape) {
-                    return shape._transformPoint(shape.bounds().top());
-                }
-            }, {
-                name: "SideLeft",
-                position: function(shape) {
-                    var p = shape.bounds().left();
-                    return shape._transformPoint(new kendo.diagram.Point(p.x, p.y+17));
-                }
-            }, {
-                name: "SideRight",
-                position: function(shape) {
-                    var p = shape.bounds().right();
-                    return shape._transformPoint(new kendo.diagram.Point(p.x, p.y + 17));
-                }
-            }]
-        }]
-    });
-
-### shapes.connectors.name `String`
-
 ### shapes.connectors.description `String`
+
+The connector description.
 
 ### shapes.connectors.position `String|Function`
 
-### shapes.rotation `Object` *(default: "null")*
+The function that positions the connector.
+
+### shapes.rotation `Object`
+
+The function that positions the connector.
 
 ### shapes.rotation.angle `Number` *(default: 0)*
+
+The rotation angle.
 
 ### shapes.content `String`
 

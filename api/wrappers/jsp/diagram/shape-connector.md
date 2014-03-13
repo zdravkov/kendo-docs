@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:diagram-shape-connector\>
 
-Defines the connectors the shape owns.You can easily define your own custom connectors or mix-match with the above defined custom connectors.Example - custom shape with custom connectorsThe following defines a custom shape with connectors adapted to the shape's outline. Note in particular the various helpful methods (right(), left(), top()) to define positions relative to the shape.
+Defines the connectors the shape owns.
 
 #### Example
     <kendo:diagram-shape-connectors>
@@ -18,7 +18,7 @@ Defines the connectors the shape owns.You can easily define your own custom conn
 
 ### description `java.lang.String`
 
-
+The connector description.
 
 #### Example
     <kendo:diagram-shape-connector description="description">
@@ -26,7 +26,7 @@ Defines the connectors the shape owns.You can easily define your own custom conn
 
 ### name `java.lang.String`
 
-
+The connector name. Predefined names include:
 
 #### Example
     <kendo:diagram-shape-connector name="name">
@@ -34,7 +34,7 @@ Defines the connectors the shape owns.You can easily define your own custom conn
 
 ### position `java.lang.String`
 
-
+The function that positions the connector.
 
 #### Example
     <kendo:diagram-shape-connector position="position">
@@ -45,7 +45,7 @@ Defines the connectors the shape owns.You can easily define your own custom conn
 
 ### position `String`
 
-
+The function that positions the connector.
 
 
 #### Example
@@ -61,7 +61,7 @@ Defines the connectors the shape owns.You can easily define your own custom conn
 
 ### kendo:diagram-shape-connector-position
 
-
+The function that positions the connector.
 
 
 #### Example

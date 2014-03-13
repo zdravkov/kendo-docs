@@ -115,7 +115,7 @@ The data field containing the close value.** Available for candlestick and ohlc 
     ?>
 
 ### color
-The series base color.
+The series base color. The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartSeriesItem`

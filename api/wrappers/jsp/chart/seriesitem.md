@@ -52,7 +52,7 @@ The data field containing the close value.
 
 ### color `java.lang.String`
 
-The series base color. Accepts a valid CSS color string, including hex and rgb.
+The series base color. The supported values are:
 
 #### Example
     <kendo:chart-seriesItem color="color">
@@ -702,7 +702,7 @@ More documentation is available at [kendo:chart-seriesItem-tooltip](/kendo-ui/ap
 
 ### color `String`
 
-The series base color. Accepts a valid CSS color string, including hex and rgb.
+The series base color. The supported values are:
 
 
 #### Example
@@ -732,7 +732,7 @@ The series color when the open value is greater than the close value.
 
 ### kendo:chart-seriesItem-color
 
-The series base color. Accepts a valid CSS color string, including hex and rgb.
+The series base color. The supported values are:
 
 
 #### Example

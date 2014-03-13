@@ -222,6 +222,22 @@ For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events
         }
     </script>
 
+### click `String`
+
+Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+
+
+For additional information check the [click](/kendo-ui/api/dataviz/diagram#events-click) event documentation.
+
+#### Example
+    <kendo:diagram click="handle_click">
+    </kendo:diagram>
+    <script>
+        function handle_click(e) {
+            // Code to handle the click event.
+        }
+    </script>
+
 ## Event Tags
 
 ### kendo:diagram-change
@@ -330,5 +346,23 @@ For additional information check the [zoom](/kendo-ui/api/dataviz/diagram#events
                 }
             </script>
         </kendo:diagram-zoom>
+    </kendo:diagram>
+
+### kendo:diagram-click
+
+Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+
+
+For additional information check the [click](/kendo-ui/api/dataviz/diagram#events-click) event documentation.
+
+#### Example
+    <kendo:diagram>
+        <kendo:diagram-click>
+            <script>
+                function(e) {
+                    // Code to handle the click event.
+                }
+            </script>
+        </kendo:diagram-click>
     </kendo:diagram>
 

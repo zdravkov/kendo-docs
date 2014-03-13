@@ -97,7 +97,7 @@ The data field containing the point category name.** Applicable to pie series. *
     ?>
 
 ### color
-The series base color.
+The series base color. The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\SparklineSeriesItem`
