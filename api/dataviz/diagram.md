@@ -1311,7 +1311,21 @@ Fired when an item is added or removed to/from the diagram.
 
 ### itemBoundsChange
 
-Fired when the bounds of an item are changed.
+Fired when the location or size of an item are changed.
+
+#### Event Data
+
+##### e.bounds `Object`
+
+The new item bounds.
+
+##### e.item `Object`
+
+The affected item (shape or connection).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
 
 ### itemRotate
 
