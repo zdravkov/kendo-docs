@@ -1309,6 +1309,18 @@ The unique identifier of the Shape or Connection
 
 Fired when an item is added or removed to/from the diagram.
 
+##### e.added `Array`
+
+The removed items (shapes or connections).
+
+##### e.removed `Array`
+
+The removed items (shapes or connections).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
 ### itemBoundsChange
 
 Fired when the location or size of an item are changed.
