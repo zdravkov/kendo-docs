@@ -1325,9 +1325,57 @@ Fired when the user pans the diagram.
 
 Fired when the user selects one or more items.
 
-### zoom
+### zoomStart
+
+Fired when the user starts changing the diagram zoom level.
+
+#### Event Data
+
+##### e.point `Object`
+
+The zoom center.
+
+##### e.point.x `Number`
+
+The zoom center X coordinate.
+
+##### e.point.y `Number`
+
+The zoom center Y coordinate.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+##### e.zoom `Number`
+
+The current zoom level.
+
+### zoomEnd
 
 Fired when the user changes the diagram zoom level.
+
+#### Event Data
+
+##### e.point `Object`
+
+The zoom center.
+
+##### e.point.x `Number`
+
+The zoom center X coordinate.
+
+##### e.point.y `Number`
+
+The zoom center Y coordinate.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+##### e.zoom `Number`
+
+The current zoom level.
 
 ### click
 
