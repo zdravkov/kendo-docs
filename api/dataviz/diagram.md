@@ -1321,6 +1321,12 @@ Fired when an item is rotated.
 
 Fired when the user pans the diagram.
 
+#### Event Data
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
 ### select
 
 Fired when the user selects one or more items.
