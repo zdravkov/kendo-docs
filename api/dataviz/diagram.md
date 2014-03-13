@@ -1327,7 +1327,7 @@ Fired when the location or size of an item are changed.
 
 #### Event Data
 
-##### e.bounds `Object`
+##### e.bounds `kendo.dataviz.diagram.Rect`
 
 The new item bounds.
 
