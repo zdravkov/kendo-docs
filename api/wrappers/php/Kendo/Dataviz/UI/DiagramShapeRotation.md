@@ -13,7 +13,7 @@ A PHP class representing the rotation setting of DiagramShape.
 ## Methods
 
 ### angle
-
+The rotation angle.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramShapeRotation`

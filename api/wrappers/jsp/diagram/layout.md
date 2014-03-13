@@ -42,7 +42,7 @@ The number of times that all the forces in the diagram are being calculated and 
 
 ### layerSeparation `float`
 
-the height (in a vertical layout) or width (in a horizontal layout) between the layers.
+The height (in a vertical layout) or width (in a horizontal layout) between the layers.
 
 #### Example
     <kendo:diagram-layout layerSeparation="layerSeparation">

@@ -115,7 +115,7 @@ The data field containing the close value.
     ?>
 
 ### color
-The series base color. Accepts a valid CSS color string, including hex and rgb.
+The series base color. The supported values are:
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`

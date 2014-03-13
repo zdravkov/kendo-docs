@@ -51,7 +51,7 @@ The data field containing the close value.** Available for candlestick and ohlc 
 
 ### color `java.lang.String`
 
-The series base color.
+The series base color. The supported values are:
 
 #### Example
     <kendo:stockChart-navigator-seriesItem color="color">

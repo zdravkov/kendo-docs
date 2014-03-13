@@ -7,7 +7,7 @@ publish: true
 
 # \<kendo:diagram-shape-rotation\>
 
-
+The function that positions the connector.
 
 #### Example
     <kendo:diagram-shape>
@@ -18,7 +18,7 @@ publish: true
 
 ### angle `float`
 
-
+The rotation angle.
 
 #### Example
     <kendo:diagram-shape-rotation angle="angle">

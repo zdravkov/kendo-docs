@@ -19,7 +19,7 @@ A diagram can have in general disconnected pieces, known as components, which ca
 
 ### componentSpacingX `float`
 
-defines the horizontal spacing between each component. The default is 50.
+Defines the horizontal spacing between each component. The default is 50.
 
 #### Example
     <kendo:diagram-layout-grid componentSpacingX="componentSpacingX">
@@ -27,7 +27,7 @@ defines the horizontal spacing between each component. The default is 50.
 
 ### componentSpacingY `float`
 
-defines the vertical spacing between each component. The default is 50.
+Defines the vertical spacing between each component. The default is 50.
 
 #### Example
     <kendo:diagram-layout-grid componentSpacingY="componentSpacingY">
@@ -35,7 +35,7 @@ defines the vertical spacing between each component. The default is 50.
 
 ### offsetX `float`
 
-defines the left offset of the grid layout. The default is 50.
+Defines the left offset of the grid layout. The default is 50.
 
 #### Example
     <kendo:diagram-layout-grid offsetX="offsetX">
@@ -43,7 +43,7 @@ defines the left offset of the grid layout. The default is 50.
 
 ### offsetY `float`
 
-defines the top offset of the grid layout. The default is 50.
+Defines the top offset of the grid layout. The default is 50.
 
 #### Example
     <kendo:diagram-layout-grid offsetY="offsetY">
@@ -51,7 +51,7 @@ defines the top offset of the grid layout. The default is 50.
 
 ### width `float`
 
-defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
+Defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
 
 #### Example
     <kendo:diagram-layout-grid width="width">

@@ -97,7 +97,7 @@ The number of times that all the forces in the diagram are being calculated and 
     ?>
 
 ### layerSeparation
-the height (in a vertical layout) or width (in a horizontal layout) between the layers.
+The height (in a vertical layout) or width (in a horizontal layout) between the layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramLayout`

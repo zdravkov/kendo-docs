@@ -13,7 +13,7 @@ A PHP class representing the connector setting of DiagramShapeConnectors.
 ## Methods
 
 ### description
-
+The connector description.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramShapeConnector`
@@ -31,7 +31,7 @@ A PHP class representing the connector setting of DiagramShapeConnectors.
     ?>
 
 ### name
-
+The connector name. Predefined names include:
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramShapeConnector`
@@ -49,7 +49,7 @@ A PHP class representing the connector setting of DiagramShapeConnectors.
     ?>
 
 ### position
-
+The function that positions the connector.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramShapeConnector`

@@ -88,6 +88,42 @@ For additional information check the [change](/kendo-ui/api/dataviz/diagram#even
     $diagram->change(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### click
+Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+For additional information check the [click](/kendo-ui/api/dataviz/diagram#events-click) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->click('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onClick(e) {
+            // handle the click event.
+        }
+    </script>
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->click('onClick');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->click(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### connectionDefaults
 
 Defines the connections configuration.

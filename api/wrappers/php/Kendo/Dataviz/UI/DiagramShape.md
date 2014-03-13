@@ -151,6 +151,24 @@ Defines the hover configuration.
     $shape->hover(array('background' => $background));
     ?>
 
+### id
+The unique identifier for a Shape.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShape`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $shape->id('value');
+    ?>
+
 ### minHeight
 Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
 
@@ -243,7 +261,7 @@ Specifies if the user is allowed to rotate the shape.
 
 ### rotation
 
-
+The function that positions the connector.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramShape`

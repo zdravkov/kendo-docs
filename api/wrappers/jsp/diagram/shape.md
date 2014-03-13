@@ -48,6 +48,14 @@ Defines the height of the shape when added to the diagram.
     <kendo:diagram-shape height="height">
     </kendo:diagram-shape>
 
+### id `java.lang.String`
+
+The unique identifier for a Shape.
+
+#### Example
+    <kendo:diagram-shape id="id">
+    </kendo:diagram-shape>
+
 ### minHeight `float`
 
 Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
@@ -134,7 +142,7 @@ Defines the y-coordinate of the shape when added to the diagram.
 
 ### kendo:diagram-shape-connectors
 
-Defines the connectors the shape owns.You can easily define your own custom connectors or mix-match with the above defined custom connectors.Example - custom shape with custom connectorsThe following defines a custom shape with connectors adapted to the shape's outline. Note in particular the various helpful methods (right(), left(), top()) to define positions relative to the shape.
+Defines the connectors the shape owns.
 
 More documentation is available at [kendo:diagram-shape-connectors](/kendo-ui/api/wrappers/jsp/diagram/shape-connectors).
 
@@ -158,7 +166,7 @@ More documentation is available at [kendo:diagram-shape-hover](/kendo-ui/api/wra
 
 ### kendo:diagram-shape-rotation
 
-
+The function that positions the connector.
 
 More documentation is available at [kendo:diagram-shape-rotation](/kendo-ui/api/wrappers/jsp/diagram/shape-rotation).
 

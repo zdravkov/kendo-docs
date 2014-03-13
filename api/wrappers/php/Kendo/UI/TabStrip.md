@@ -23,7 +23,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
     $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
 
     // Configure it
-    $tabStrip->collapsible(true)
+    $tabStrip->animation(true)
 
     // Output it
 
@@ -79,7 +79,16 @@ user interactions. Setting this option to false will disable all animations.
 
 #### Parameters
 
-##### $value `\Kendo\UI\TabStripAnimation|array`
+##### $value `boolean|\Kendo\UI\TabStripAnimation|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
+    $tabStrip->animation(true);
+    ?>
 
 
 #### Example - using [\Kendo\UI\TabStripAnimation](/kendo-ui/api/wrappers/php/Kendo/UI/TabStripAnimation)
