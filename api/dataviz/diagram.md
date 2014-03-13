@@ -1309,26 +1309,130 @@ The unique identifier of the Shape or Connection
 
 Fired when an item is added or removed to/from the diagram.
 
+#### Event Data
+
+##### e.added `Array`
+
+The removed items (shapes or connections).
+
+##### e.removed `Array`
+
+The removed items (shapes or connections).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
 ### itemBoundsChange
 
-Fired when the bounds of an item are changed.
+Fired when the location or size of an item are changed.
+
+#### Event Data
+
+##### e.bounds `kendo.dataviz.diagram.Rect`
+
+The new item bounds.
+
+##### e.item `Object`
+
+The affected item (shape or connection).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
 
 ### itemRotate
 
 Fired when an item is rotated.
 
+#### Event Data
+
+##### e.item `Object`
+
+The rotated item (shape or connection).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
 ### pan
 
 Fired when the user pans the diagram.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
 
 ### select
 
 Fired when the user selects one or more items.
 
-### zoom
+#### Event Data
+
+##### e.selected `Array`
+
+The selected items (shapes and connections).
+
+##### e.deselected `Array`
+
+The rest of the items (shapes and connections).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+### zoomStart
+
+Fired when the user starts changing the diagram zoom level.
+
+#### Event Data
+
+##### e.point `kendo.dataviz.diagram.Point`
+
+The zoom center.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+##### e.zoom `Number`
+
+The current zoom level.
+
+### zoomEnd
 
 Fired when the user changes the diagram zoom level.
 
+#### Event Data
+
+##### e.point `kendo.dataviz.diagram.Point`
+
+The zoom center.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+##### e.zoom `Number`
+
+The current zoom level.
+
 ### click
 
-Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+Fired when the user clicks on a shape or a connection.
+
+#### Event Data
+
+##### e.item `Object`
+
+The clicked shape or connection.
+
+##### e.point `kendo.dataviz.diagram.Point`
+
+The clicked location.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
