@@ -1379,14 +1379,6 @@ The selected items (shapes and connections).
 
 The rest of the items (shapes and connections).
 
-##### e.point.x `Number`
-
-The zoom center X coordinate.
-
-##### e.point.y `Number`
-
-The zoom center Y coordinate.
-
 ##### e.sender `kendo.ui.Diagram`
 
 The widget instance which fired the event.
@@ -1397,17 +1389,9 @@ Fired when the user starts changing the diagram zoom level.
 
 #### Event Data
 
-##### e.point `Object`
+##### e.point `kendo.dataviz.diagram.Point`
 
 The zoom center.
-
-##### e.point.x `Number`
-
-The zoom center X coordinate.
-
-##### e.point.y `Number`
-
-The zoom center Y coordinate.
 
 ##### e.sender `kendo.ui.Diagram`
 
@@ -1423,17 +1407,9 @@ Fired when the user changes the diagram zoom level.
 
 #### Event Data
 
-##### e.point `Object`
+##### e.point `kendo.dataviz.diagram.Point`
 
 The zoom center.
-
-##### e.point.x `Number`
-
-The zoom center X coordinate.
-
-##### e.point.y `Number`
-
-The zoom center Y coordinate.
 
 ##### e.sender `kendo.ui.Diagram`
 
@@ -1453,17 +1429,9 @@ Fired when the user clicks on a shape or a connection.
 
 The clicked shape or connection.
 
-##### e.point `Object`
+##### e.point `kendo.dataviz.diagram.Point`
 
 The clicked location.
-
-##### e.point.x `Number`
-
-The clicked location X coordinate.
-
-##### e.point.y `Number`
-
-The clicked location Y coordinate.
 
 ##### e.sender `kendo.ui.Diagram`
 
