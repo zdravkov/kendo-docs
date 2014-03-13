@@ -1309,6 +1309,8 @@ The unique identifier of the Shape or Connection
 
 Fired when an item is added or removed to/from the diagram.
 
+#### Event Data
+
 ##### e.added `Array`
 
 The removed items (shapes or connections).
