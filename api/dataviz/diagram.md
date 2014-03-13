@@ -1373,6 +1373,10 @@ Fired when the user selects one or more items.
 
 The selected items (shapes and connections).
 
+##### e.deselected `Array`
+
+The rest of the items (shapes and connections).
+
 ##### e.point.x `Number`
 
 The zoom center X coordinate.
