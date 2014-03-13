@@ -1331,4 +1331,26 @@ Fired when the user changes the diagram zoom level.
 
 ### click
 
-Fired when the user clicks on a shape or a connection. Will not fire when the start/down and end/up event points are not equal.
+Fired when the user clicks on a shape or a connection.
+
+#### Event Data
+
+##### e.item `Object`
+
+The clicked shape or connection.
+
+##### e.point `Object`
+
+The clicked location.
+
+##### e.point.x `Number`
+
+The clicked location X coordinate.
+
+##### e.point.y `Number`
+
+The clicked location Y coordinate.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
