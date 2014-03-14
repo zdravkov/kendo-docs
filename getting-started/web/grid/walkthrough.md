@@ -140,7 +140,7 @@ until an element with a pixel height is reached, or until the `html` element is 
 so the default border of the Grid `div` should be removed as well.
 
 The second step is to subscribe to the browser window's `resize` event and execute the Grid's [`resize`](/kendo-ui/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages) method.
-It will take care of measuring the total height of the Grid and adjusting the height of the scrollable data area. This will work for Kendo UI versions Q1 2013 or later.
+It will take care of measuring the total height of the Grid and adjusting the height of the scrollable data area. This will work for Kendo UI versions Q3 2013 or later.
 For older version, the following Javascript code must be used instead, which practically does the same:
 
     $(window).resize(function() {
