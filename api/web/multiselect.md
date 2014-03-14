@@ -525,6 +525,32 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) used to render th
     });
     </script>
 
+### valuePrimitive `Boolean`*(default: false)*
+
+Specifies the [value binding](/kendo-ui/getting-started/framework/mvvm/bindings/value) behavior for the widget. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+
+#### Example - specify that the View-Model field should be updated with the selected item value
+
+    <select id="multiselect" multiple="multiple" data-bind="value: values, source: products"></select>
+
+    <script>
+    $("#multiselect").kendoMultiSelect({
+      valuePrimitive: true,
+      dataTextField: "name",
+      dataValueField: "id"
+    });
+    var viewModel = kendo.observable({
+      selectedProductId: [],
+      products: [
+        { id: 1, name: "Coffee" },
+        { id: 2, name: "Tea" },
+        { id: 3, name: "Juice" }
+      ]
+    });
+
+    kendo.bind($("#multiselect"), viewModel);
+    </script>
+
 ## Fields
 
 ### dataSource `kendo.data.DataSource`
