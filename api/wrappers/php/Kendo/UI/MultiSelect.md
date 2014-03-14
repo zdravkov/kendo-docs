@@ -588,3 +588,21 @@ Define the value of the widget
     $multiSelect->value(new array());
     ?>
 
+### valuePrimitive
+Specifies the value binding behavior for the widget. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+
+#### Returns
+`\Kendo\UI\MultiSelect`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $multiSelect = new \Kendo\UI\MultiSelect('MultiSelect');
+    $multiSelect->valuePrimitive(true);
+    ?>
+
