@@ -1192,15 +1192,15 @@ This will return "[0, 0, 600, 600]" in the console of the browser.
 
 ### copy
 
-Puts a copy of the currently selected diagram items on the (internal diagram) clipboard.
+Puts a copy of the currently selected diagram to an internal clipboard.
 
 ### cut
 
-Cuts the currently selected diagram items and puts them on the (internal diagram) clipboard.
+Cuts the currently selected diagram items to an internal clipboard.
 
 ### paste
 
-Pastes the content of the (internal diagram) clipboard in the diagram.
+Pastes the content of the internal diagram clipboard.
 
 ### layout
 
