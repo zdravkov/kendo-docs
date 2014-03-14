@@ -1265,7 +1265,12 @@ Aligns the edges (as defined by the bounding box) of the selected shapes.
 
 ##### direction `String`
 
-This can be one of the four standard directions: 'left', 'right', 'top', 'bottom'.
+This can be one of the four supported directions:
+
+* "left"
+* "right"
+* "top"
+* "bottom"
 
 ### getShapeById
 
