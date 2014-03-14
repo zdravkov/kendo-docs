@@ -1170,25 +1170,18 @@ The second shape has a vertical position of 1000 and is off the screen at launch
         });
     </script>
 
-### getBoundingBox
+### boundingBox
 
 #### Returns
 
-`Object` The bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
+`kendo.dataviz.diagram.Rect` The bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
 
-#### Example - bring an item into view
+#### Parameters
 
-This will return "[0, 0, 600, 600]" in the console of the browser.
+##### items `Array`
 
-    <script>
-        $("#diagram").kendoDiagram();
-        var diagram = $("#diagram").data("kendoDiagram");
-
-        var lt = diagram.addShape(new Point(0, 0));
-        var rb = diagram.addShape(new Point(500, 500));
-        var r = diagram.getBoundingBox();
-        console.log("[" + r.x + "," + r.x + "," + r.width +","+ r.height +"]");
-    </script>
+The items (shapes and connections) to include in the bounding box.
+Defaults to all items if not specified.
 
 ### copy
 
