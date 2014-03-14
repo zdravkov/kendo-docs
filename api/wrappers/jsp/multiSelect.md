@@ -147,6 +147,14 @@ Define the value of the widget
     <kendo:multiSelect value="value">
     </kendo:multiSelect>
 
+### valuePrimitive `boolean`
+
+Specifies the value binding behavior for the widget. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+
+#### Example
+    <kendo:multiSelect valuePrimitive="valuePrimitive">
+    </kendo:multiSelect>
+
 
 ##  Configuration JSP Tags
 
