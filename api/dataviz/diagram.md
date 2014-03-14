@@ -1202,38 +1202,6 @@ Cuts the currently selected diagram items and puts them on the (internal diagram
 
 Pastes the content of the (internal diagram) clipboard in the diagram.
 
-### findByUid
-
-Searches for a node with the given unique identifier.
-Applicable when the widget is bound to a [HierarchicalDataSource](/api/framework/hierarchicaldatasource).
-
-#### Parameters
-
-##### text `String`
-
-The text that is being searched for.
-
-#### Returns
-
-`jQuery` All nodes having the specified the text.
-
-#### Example
-
-
-    <script>
-    $("#diagram").kendoDiagram({
-      dataSource: [
-        { id: 1, text: "foo" },
-        { id: 2, text: "bar" }
-      ]
-    });
-
-    var diagram = $("#diagram").data("kendoDiagram");
-    var dataItem = diagram.dataSource.get(2);
-    var element = diagram.findByUid(dataItem.uid);
-    console.log(element);
-    </script>
-
 ### layout
 
 Applies a layout algorithm on the current diagram.
