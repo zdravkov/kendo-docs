@@ -1244,18 +1244,7 @@ A more detailed overview of layout and graph analysis can be found below.
 
 ##### options `Object`
 
-A variety of options can be specified regarding layout. See below for more information.
-
-#### Example - force-directed layout
-
-This generates a small, random diagram whereafter the force-directed layout is applied.
-
-    <script>
-            $("#diagram").kendoDiagram();
-            var diagram = $("#diagram").data("kendoDiagram");
-            diagram.randomDiagram();
-            diagram.layout({ type: "ForceDirected")};
-        </script>
+The layout options. See [options.layout](#configuration-layout) for a full reference.
 
 ### alignShapes
 
