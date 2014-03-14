@@ -1267,28 +1267,6 @@ Aligns the edges (as defined by the bounding box) of the selected shapes.
 
 This can be one of the four standard directions: 'left', 'right', 'top', 'bottom'.
 
-### randomDiagram
-
-Generates a random diagram with optionally some specifications. The method is useful to quickly generate a diagram in function of layout or some feature (databinding e.g.).
-
-#### Parameters
-
-##### shapeCount `Number` *(default: 40)*
-
-The number of shapes to generate.
-
-##### maxIncidence `Number` *(default: 4)*
-
-The maximum number of links a vertex (node) can have.
-
-##### isTree `Number` *(default: false)*
-
-Whether the generated graph should be a tree.
-
-##### randomSize `Number` *(default: false)*
-
-Whether the shapes should have random sizes. By default the shapes are circles but if this property is set to true the shapes will be rectangles with a random with and height.
-
 ### getShapeById
 
 Returns the shape or connection with the specified identifier.
