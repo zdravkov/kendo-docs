@@ -1734,6 +1734,7 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 The fields which can be used in the template are:
 
 * value - the category value
+* dataItem - the data item, in case a field has been specified
 
 #### Example - set the category axis template as a string
 

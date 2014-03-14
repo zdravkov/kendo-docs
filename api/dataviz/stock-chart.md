@@ -2346,10 +2346,12 @@ Every n-th label is rendered where n is the step
 
 ### categoryAxis.labels.template `String | Function`
 
-The label template.
-Template variables:
+The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
 
-*   **value** - the value
+The fields which can be used in the template are:
+
+* value - the category value
+* dataItem - the data item, in case a field has been specified
 
 #### Example
 
