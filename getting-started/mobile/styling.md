@@ -102,6 +102,119 @@ Additionally a single View tint color can be changed by simply adding a CSS clas
       new kendo.mobile.Application();
     </script>
 
+## Changing Android tint color
+
+As of Q1 2014, every Android application also can have the ability to set "tint color" which is used for highlighting specific interactive elements throughout the whole application.
+The tint color can be also set per single view. The Kendo UI Mobile's Android theme (android-light and android-dark) are created to be similarly easy to change the application tint color with this CSS rule:
+
+    .km-android .km-shim,
+    .km-android .km-popup,
+    .km-android .k-slider,
+    .km-android .km-badge,
+    .km-android .km-switch-on,
+    .km-android .km-current-page,
+    .km-android input:focus,
+    .km-android select:focus,
+    .km-android textarea:focus,
+    .km-android input:checked,
+    .km-android .km-touch-scrollbar,
+    .km-android .km-widget .k-state-focused,
+    .km-android .km-widget .km-state-active
+    {
+        color: pink;
+    }
+
+The CSS rule is bigger than the iOS one, as the Android theme mostly has highlight colors on its active states.
+
+Additionally a single View tint color can be changed by simply adding a CSS class to it and changing the above CSS accordingly. Make sure to avoid raising the CSS specificity above 20
+(avoid #ID selectors and !important).
+
+### Change the iOS7 tint color for a specific View
+
+    .specific-view .km-shim,
+    .specific-view .km-popup,
+    .specific-view .k-slider,
+    .specific-view .km-badge,
+    .specific-view .km-switch-on,
+    .specific-view .km-current-page,
+    .specific-view input:focus,
+    .specific-view select:focus,
+    .specific-view textarea:focus,
+    .specific-view input:checked,
+    .specific-view .km-touch-scrollbar,
+    .specific-view .km-widget .k-state-focused,
+    .specific-view .km-widget .km-state-active
+    {
+        color: green;
+    }
+
+### Example with application and View-specific tint
+
+    <style scoped>
+      .km-android .km-shim,
+      .km-android .km-popup,
+      .km-android .k-slider,
+      .km-android .km-badge,
+      .km-android .km-switch-on,
+      .km-android .km-current-page,
+      .km-android input:focus,
+      .km-android select:focus,
+      .km-android textarea:focus,
+      .km-android input:checked,
+      .km-android .km-touch-scrollbar,
+      .km-android .km-widget .k-state-focused,
+      .km-android .km-widget .km-state-active
+      {
+        color: green;
+      }
+      .view2 .km-shim,
+      .view2 .km-popup,
+      .view2 .k-slider,
+      .view2 .km-badge,
+      .view2 .km-switch-on,
+      .view2 .km-current-page,
+      .view2 input:focus,
+      .view2 select:focus,
+      .view2 textarea:focus,
+      .view2 input:checked,
+      .view2 .km-touch-scrollbar,
+      .view2 .km-widget .k-state-focused,
+      .view2 .km-widget .km-state-active
+      {
+        color: red;
+      }
+    </style>
+
+    <div data-role="view" data-title="View 1" id="view1">
+      <header data-role="header">
+        <div data-role="navbar">
+          <div data-role="view-title"></div>
+        </div>
+      </header>
+      <footer data-role="footer">
+        <div data-role="tabstrip">
+          <a data-role="button" data-icon="favorites" href="#view1">Favorites</a>
+          <a data-role="button" data-icon="home" href="#view2">Home</a>
+        </div>
+      </footer>
+    </div>
+    <div data-role="view" data-title="View 2" id="view2" class="view2">
+      <header data-role="header">
+        <div data-role="navbar">
+          <div data-role="view-title"></div>
+        </div>
+      </header>
+      <footer data-role="footer">
+        <div data-role="tabstrip">
+          <a data-role="button" data-icon="favorites" href="#view1">Favorites</a>
+          <a data-role="button" data-icon="home" href="#view2">Home</a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      new kendo.mobile.Application();
+    </script>
+
 ## Changing Flat skin active color
 
 <br/>
