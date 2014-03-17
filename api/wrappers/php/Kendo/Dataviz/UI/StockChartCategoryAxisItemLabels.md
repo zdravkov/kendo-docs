@@ -257,8 +257,7 @@ Every n-th label is rendered where n is the step
     ?>
 
 ### template
-The label template.
-Template variables:
+The template which renders the labels.The fields which can be used in the template are:
 
 #### Returns
 `\Kendo\Dataviz\UI\StockChartCategoryAxisItemLabels`

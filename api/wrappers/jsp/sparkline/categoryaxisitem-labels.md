@@ -119,8 +119,7 @@ Every n-th label is rendered where n is the step
 
 ### template `java.lang.String`
 
-The label template.
-Template variables:
+The template which renders the labels.The fields which can be used in the template are:
 
 #### Example
     <kendo:sparkline-categoryAxisItem-labels template="template">
@@ -154,8 +153,7 @@ More documentation is available at [kendo:sparkline-categoryAxisItem-labels-bord
 
 ### template `String`
 
-The label template.
-Template variables:
+The template which renders the labels.The fields which can be used in the template are:
 
 
 #### Example
@@ -171,8 +169,7 @@ Template variables:
 
 ### kendo:sparkline-categoryAxisItem-labels-template
 
-The label template.
-Template variables:
+The template which renders the labels.The fields which can be used in the template are:
 
 
 #### Example

@@ -18,7 +18,7 @@ The layout of a diagram consists in arranging the shapes (sometimes also the con
 
 ### endRadialAngle `float`
 
-Defines where the circle/arc ends. The positive direction is clockwise and the angle is in radians. Default is 2*Math.PI. This setting is specific to the radial tree layout.
+Defines where the circle/arc ends. The positive direction is clockwise and the angle is in degrees. This setting is specific to the radial tree layout.
 
 #### Example
     <kendo:diagram-layout endRadialAngle="endRadialAngle">
@@ -74,7 +74,7 @@ Defines the radial separation between the levels (except the first one which is 
 
 ### startRadialAngle `float`
 
-Defines where the circle/arc starts. The positive direction is clockwise and the angle is in radians. This setting is specific to the radial tree layout.
+Defines where the circle/arc starts. The positive direction is clockwise and the angle is in degrees. This setting is specific to the radial tree layout.
 
 #### Example
     <kendo:diagram-layout startRadialAngle="startRadialAngle">
