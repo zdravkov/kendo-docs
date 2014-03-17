@@ -310,7 +310,16 @@ passing the platform name in the `options` parameter of the Application's constr
          });
     </script>
 
-Platform can be one of "ios", "ios7", "android", "blackberry", "wp", "meego".
+Platform can be one of "ios", "ios7", "android", "blackberry", "wp", "meego". Additionally, platform theme variants can be set by either using platform or skin configuration option.
+Platform variants can be "android-light" and "android-dark" (which is default):
+
+### Force Android Holo Light theme
+
+    <script>
+         new kendo.mobile.Application($(document.body), {
+             skin: "android-light"
+         });
+    </script>
 
 Additionally, the OS version can be specified by passing a `kendo.support.mobileOS` object that is expected by Kendo UI Mobile.
 This allows fine-grained tuning of the application look and behavior. A sample object initialization is like this:

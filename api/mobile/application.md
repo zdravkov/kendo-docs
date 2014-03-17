@@ -84,6 +84,7 @@ The text displayed in the loading popup. Setting this value to false will disabl
 ### platform `String`
 
 Which platform look to force on the application. Supported values are `"ios"` (meaning iOS 6 look), `"ios7"`,`"android"`, `"blackberry"` and `"wp"`.
+You can also set platform variants with it (`"android-light"` or `"android-dark"`), but keep in mind that it will still override the platform. If this is not desired, use the `skin` option.
 
 #### Example
 
@@ -111,7 +112,7 @@ If set to true, the application will not use AJAX to load remote views.
 
 ### skin `String`
 
-The skin to apply to the application. Currently, Kendo UI Mobile ships with a **flat** skin in addition to the native looking ones.
+The skin to apply to the application. Currently, Kendo UI Mobile ships with a **flat** skin in addition to the native looking ones. You can also set platform variants with it ("android-light" or "android-dark").
 
 > The skin setting will be applied on any device, making the application look the same way.
 
