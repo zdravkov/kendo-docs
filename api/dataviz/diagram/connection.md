@@ -177,14 +177,6 @@ Select or deselects the Connection.
 
 True to select the Connection and `false` to deselect it.
 
-### bounds
-
-Gets the bounds of the Connection.
-
-#### Returns
-
-`Object` the bounding rectangle of the connection.
-
 ### type
 
 Gets or sets the (sub-) type of the Connection which defines the way it routes.
