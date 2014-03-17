@@ -548,6 +548,8 @@ The fields which can be used in the template are:
 * min - the value of the "min" aggregate (if specified)
 * sum - the value of the "sum" aggregate (if specified)
 
+> If the grid is bound using [source binding](/kendo-ui/getting-started/framework/mvvm/bindings/source), it will initially be assigned with an empty [dataSource](/kendo-ui/api/framework/datasource) without any aggregates. In order to avoid a JavaScript error for an undefined aggregate when the footer is rendered with the empty dataSource, you should check if the field is defined in the template data before accessing the value. If no groups are specified for the actual dataSource, then you will also need to use the field name to access the aggregate value.
+
 #### Example - specify column footer template
 
     <div id="grid"></div>
@@ -570,6 +572,51 @@ The fields which can be used in the template are:
         ]
       }
     });
+    </script>
+
+#### Example - specify footer template when using source binding
+
+    <div data-role="grid" data-bind="source:dataSource"
+         data-columns='["category", "name", {"field": "price", "footerTemplate": "Total: #: data.price ? sum: 0 #"}]'></div>
+    <script>
+      $(function() {
+        var viewModel = kendo.observable({
+          dataSource: new kendo.data.DataSource({
+            data: [
+              { category: "Beverages", name: "Chai", price: 18 },
+              { category: "Beverages", name: "Chang", price: 19 },
+              { category: "Seafood", name: "Konbu", price: 6 }
+            ],
+            group: [{field: "category"}],
+            aggregate: [
+              { field: "price", aggregate: "sum" }
+            ]
+          })
+        });
+        kendo.bind($("body"), viewModel);
+      });
+    </script>
+
+#### Example - specify footer template when using source binding and there are no groups
+
+    <div data-role="grid" data-bind="source:dataSource"
+         data-columns='["category", "name", {"field": "price", "footerTemplate": "Total: #: data.price ? data.price.sum: 0 #"}]'></div>
+    <script>
+      $(function() {
+        var viewModel = kendo.observable({
+          dataSource: new kendo.data.DataSource({
+            data: [
+              { category: "Beverages", name: "Chai", price: 18 },
+              { category: "Beverages", name: "Chang", price: 19 },
+              { category: "Seafood", name: "Konbu", price: 6 }
+            ],
+            aggregate: [
+              { field: "price", aggregate: "sum" }
+            ]
+          })
+        });
+        kendo.bind($("body"), viewModel);
+      });
     </script>
 
 ### columns.format `String`
