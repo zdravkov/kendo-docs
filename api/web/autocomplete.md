@@ -866,6 +866,8 @@ The widget instance which fired the event.
 
 Fired when an item from the suggestion popup is selected by the user.
 
+> **Important:** The event is not fired when an item is selected programmatically.
+
 #### Event Data
 
 ##### e.item `jQuery`

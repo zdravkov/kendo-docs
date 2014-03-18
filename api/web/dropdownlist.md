@@ -244,7 +244,7 @@ The field of the data item that provides the text content of the list items. The
         dataTextField: "Name",
         dataValueField: "Id"
       });
-    </script> 
+    </script>
 
 ### dataValueField `String`*(default: "")*
 
@@ -1015,7 +1015,7 @@ Fired when the value of the widget is changed by the user.
 
 The event handler function context (available via the `this` keyword) will be set to the widget instance.
 
-> **Important:** The event is not fired when the value of the widget is changed from code.
+> **Important:** The event is not fired when the value of the widget is changed programmatically. If you need to handle changes made by API, wire the [cascade](/kendo-ui/api/web/dropdownlist#events-cascade) event.
 
 #### Event Data
 
@@ -1157,6 +1157,8 @@ The widget instance which fired the event.
 
 Fired when an item from the popup is selected by the user.
 
+> **Important:** The event is not fired when an item is selected programmatically.
+
 #### Event Data
 
 ##### e.item `jQuery`
@@ -1196,7 +1198,7 @@ The widget instance which fired the event.
 
 ### cascade
 
-Fired when the value of the widget is changed via API or user interactionTriggered.
+Fired when the value of the widget is changed via API or user interaction.
 
 #### Event Data
 
