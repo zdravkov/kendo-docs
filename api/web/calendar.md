@@ -65,6 +65,8 @@ shows the years of the decade
 
 shows the decades from the century
 
+> Note the option will not be applied if **start** option is *lower* than **depth**. Always set both and **start** and **depth** options.
+
 #### Example - set navigation depth of the calendar
 
     <div id="calendar"></div>

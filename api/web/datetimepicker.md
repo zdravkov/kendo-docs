@@ -166,6 +166,8 @@ shows the years of the decade
 
 shows the decades from the century
 
+> Note the option will not be applied if **start** option is *lower* than **depth**. Always set both and **start** and **depth** options.
+
 #### Example - set navigation depth of the calendar popup
 
     <div id="datetimepicker"></div>
@@ -289,7 +291,7 @@ The template used for rendering cells in the calendar "month" view, which are ou
         }
     });
     </script>
-    
+
 #### Example - add date value to the out-of-range cells
 
     <input id="datetimepicker2" />
