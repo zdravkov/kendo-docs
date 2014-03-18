@@ -52,7 +52,7 @@ $(document).ready().
 
 ### Creating a MultiSelect from existing `<select>` element with a pre-defined structure
 
-    <select id="multiselect">
+    <select id="multiselect" multiple>
         <option>Item 1</option>
         <option>Item 2</option>
         <option>Item 3</option>
@@ -66,110 +66,131 @@ $(document).ready().
 
 ## Binding to Local or Remote Data
 
-
 The **MultiSelect** can be bound to both local arrays and remote data via the
 **DataSource** component; an abstraction for local and
 remote data. Local arrays are appropriate for limited value options, while remote data binding is better for
 larger data sets. With remote data-binding, items will be loaded on-demand; when they are displayed.
+The **DataSource**
+component can be used to serve data from a variety of data services,
+such as
+[XML](http://en.wikipedia.org/wiki/XML),
+[JSON](http://en.wikipedia.org/wiki/JSON), and
+[JSONP](http://en.wikipedia.org/wiki/JSONP).
 
-### Binding to a remote OData service
+### Binding to a remote service
 
+    <select id="multiselect" multiple></select>
+
+    <script>
     $(document).ready(function() {
         $("#multiselect").kendoMultiSelect({
-            dataTextField: "Name",
-            dataValueField: "Id",
-            filter: "contains",
+            dataTextField: "ProductName",
+            dataValueField: "ProductID",
             dataSource: {
-                type: "odata",
-                serverFiltering: true,
-                serverPaging: true,
-                pageSize: 20,
                 transport: {
-                    read: "http://odata.netflix.com/Catalog/Titles"
+                    read: {
+                        dataType: "jsonp",
+                        url: "http://demos.telerik.com/kendo-ui/service/Products"
+                    }
                 }
             }
         });
     });
+    </script>
 
-## Customizing Item Templates
+## Customizing Templates
 
-
-The **MultiSelect** uses Kendo UI templates to enable you to control how items are rendered. For a
+The **MultiSelect** uses Kendo UI templates to enable you to control how item, tag or header is rendered. For a
 detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
 [documentation](/kendo-ui/getting-started/framework/templates/overview).
 
-### Basic item template customization
+### Item template customization
 
-    <select id="multiselect"></select>
+The **MultiSelect** uses Kendo UI templates to control how *drop-down items* are rendered.
+
+#### Example - define an item template
+
+    <select id="multiselect" multiple></select>
     <!-- Item Template -->
-    <script id="scriptTemplate" type="text/x-kendo-template">
-        # if (data.BoxArt.SmallUrl) { #
-            <img src="#: data.BoxArt.SmallUrl #" alt="#: data.Name #" />
-            Title:#: data.Name #, Year: #: data.Name #
-        # } else { #
-            <img alt="#: data.Name #" />
-            Title:#: data.Name #, Year: #: data.Name #
-        # } #
+    <script id="itemTemplate" type="text/x-kendo-template">
+        ContactName: #:data.ContactName#, CustomerID: #:data.CustomerID#
     </script>
 
     <!-- MultiSelect initialization -->
     <script>
         $(document).ready(function() {
             $("#multiselect").kendoMultiSelect({
-                autoBind: false,
-                dataTextField: "Name",
-                dataValueField: "Id",
-                itemTemplate: $("#scriptTemplate").html(),
+                itemTemplate: $("#itemTemplate").html(),
+                dataTextField: "ContactName",
+                dataValueField: "CustomerID",
                 dataSource: {
-                    type: "odata",
-                    serverFiltering: true,
-                    serverPaging: true,
-                    pageSize: 20,
                     transport: {
-                        read: "http://odata.netflix.com/Catalog/Titles"
+                        read: {
+                            dataType: "jsonp",
+                            url: "http://demos.telerik.com/kendo-ui/service/Customers"
+                        }
                     }
                 }
             });
         });
     </script>
 
-## Customizing Tag Templates
+### Tag template customization
 
+The **MultiSelect** uses Kendo UI templates to control how selected tag is rendered.
 
-The **MultiSelect** uses Kendo UI templates to enable you to control how tags are rendered. For a
-detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
-[documentation](/kendo-ui/getting-started/framework/templates/overview).
+#### Example - define a tag template
 
-### Basic tag template customization
-
-    <select id="multiselect"></select>
-
-    <!-- Tag Template -->
-    <script id="scriptTemplate" type="text/x-kendo-template">
-        # if (data.BoxArt.SmallUrl) { #
-            <img src="#: data.BoxArt.SmallUrl #" alt="#: data.Name #" />
-        # } else { #
-            <img alt="#: data.Name #" />
-        # } #
-
-        Title:#: data.Name #
+    <select id="multiselect" multiple></select>
+    <!-- Item Template -->
+    <script id="tagTemplate" type="text/x-kendo-template">
+        ContactName: #:data.ContactName#
     </script>
 
     <!-- MultiSelect initialization -->
     <script>
         $(document).ready(function() {
             $("#multiselect").kendoMultiSelect({
-                autoBind: false,
-                dataTextField: "Name",
-                dataValueField: "Id",
-                tagTemplate: $("#scriptTemplate").html(),
+                tagTemplate: $("#tagTemplate").html(),
+                dataTextField: "ContactName",
+                dataValueField: "CustomerID",
                 dataSource: {
-                    type: "odata",
-                    serverFiltering: true,
-                    serverPaging: true,
-                    pageSize: 20,
                     transport: {
-                        read: "http://odata.netflix.com/Catalog/Titles"
+                        read: {
+                            dataType: "jsonp",
+                            url: "http://demos.telerik.com/kendo-ui/service/Customers"
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+### Header template customization
+
+The **MultiSelect** gives the ability to render a popup header.
+
+#### Example - define a header template
+
+    <input id="multiselect" />
+    <!-- Template -->
+    <script id="headerTemplate" type="text/x-kendo-template">
+        <strong>Header</strong>
+    </script>
+
+    <!-- MultiSelect initialization -->
+    <script>
+        $(document).ready(function() {
+            $("#multiselect").kendoMultiSelect({
+                headerTemplate: $("#headerTemplate").html(),
+                dataTextField: "ContactName",
+                dataValueField: "CustomerID",
+                dataSource: {
+                    transport: {
+                        read: {
+                            dataType: "jsonp",
+                            url: "http://demos.telerik.com/kendo-ui/service/Customers"
+                        }
                     }
                 }
             });
@@ -226,7 +247,7 @@ Add a custom CSS class to the MultiSelect wrapper element after initialization.
         $("#multiselect").kendoMultiSelect({
             select: onSelect
         });
-        
+
         $("#multiselect").data("kendoMultiSelect").wrapper.addClass("myClass");
     });
 

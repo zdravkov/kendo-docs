@@ -40,15 +40,11 @@ the **AutoComplete** can come from a local Array or from a remote data service.
 
 ## AutoComplete Suggestions
 
-
 There are two primary ways to provide the **AutoComplete**
 suggestions:
 
-
 1.  From a local array
 2.  From a remote data service
-
-
 
 Locally defined values are best for small, fixed sets of suggestions.
 Remote suggestions should be used for larger data sets. When used
@@ -58,7 +54,6 @@ well, maximizing client-side performance.
 
 
 ## Local Suggestions
-
 
 To configure and provide **AutoComplete** suggestions locally, you
 can either pass an array directly to its constructor or you can set
@@ -77,7 +72,6 @@ the dataSource property to an local array.
 
 ## Remote Suggestions
 
-
 The easiest way to bind an **AutoComplete** to remote
 suggestions is to use the
 **DataSource** component; an
@@ -88,25 +82,22 @@ such as
 [JSON](http://en.wikipedia.org/wiki/JSON), and
 [JSONP](http://en.wikipedia.org/wiki/JSONP).
 
-### Using the Kendo UI Web DataSource component to bind to
-remote suggestions with OData
+### Using the Kendo UI Web DataSource component to bind to remote suggestions with OData
 
     $(document).ready(function(){
-     $("#autoComplete").kendoAutoComplete({
-      minLength: 3,
-      dataTextField: "Name", // JSON property name to use
-      dataSource: new kendo.data.DataSource({
-       type: "odata", // specifies data protocol
-       pageSize: 10, // limits result set
-       transport: {
-        read: "http://odata.netflix.com/Catalog/Titles"
-       }
-      })
-     })
+        $("#autoComplete").kendoAutoComplete({
+            minLength: 3,
+            dataTextField: "ContactName", // JSON property name to use
+            dataSource: new kendo.data.DataSource({
+                type: "odata", // specifies data protocol
+                transport: {
+                    read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Customers"
+                }
+            })
+        });
     });
 
-### Using the Kendo UI Web DataSource to bind to JSONP
-suggestions
+### Using the Kendo UI Web DataSource to bind to JSONP suggestions
 
     $(document).ready(function(){
      $("#autoComplete").kendoAutoComplete({
@@ -136,8 +127,73 @@ suggestions
      })
     });
 
-## Customizing the width of the drop-down list
+## Customizing Templates
 
+The **AutoComplete** uses Kendo UI templates to enable control over how item and popup header is rendered. For a
+detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
+[documentation](/kendo-ui/getting-started/framework/templates/overview).
+
+### Item template customization
+
+The **AutoComplete** uses Kendo UI templates to control how *drop-down items* are rendered.
+
+#### Example - define an item template
+
+    <input id="autocomplete" />
+    <!-- Template -->
+    <script id="scriptTemplate" type="text/x-kendo-template">
+        ContactName: #:data.ContactName#, CustomerID: #:data.CustomerID#
+    </script>
+
+    <!-- AutoComplete initialization -->
+    <script>
+        $(document).ready(function() {
+            $("#autocomplete").kendoAutoComplete({
+                template: $("#scriptTemplate").html(),
+                dataTextField: "ContactName",
+                dataSource: {
+                    transport: {
+                        read: {
+                            dataType: "jsonp",
+                            url: "http://demos.telerik.com/kendo-ui/service/Customers"
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+### Header template customization
+
+The **AutoComplete** gives the ability to render a popup header.
+
+#### Example - define a header template
+
+    <input id="autocomplete" />
+    <!-- Template -->
+    <script id="headerTemplate" type="text/x-kendo-template">
+        <strong>Header</strong>
+    </script>
+
+    <!-- AutoComplete initialization -->
+    <script>
+        $(document).ready(function() {
+            $("#autocomplete").kendoAutoComplete({
+                headerTemplate: $("#headerTemplate").html(),
+                dataTextField: "ContactName",
+                dataSource: {
+                    transport: {
+                        read: {
+                            dataType: "jsonp",
+                            url: "http://demos.telerik.com/kendo-ui/service/Customers"
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+## Customizing the width of the drop-down list
 
 Width of AutoComplete's drop-down list can be changed via jQuery width method.
 
