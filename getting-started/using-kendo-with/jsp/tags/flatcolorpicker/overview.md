@@ -1,6 +1,6 @@
 ---
 title: Overview
-slug: jsp-colorpalatte-overview
+slug: jsp-flatcolorpicker-overview
 publish: true
 ---
 
