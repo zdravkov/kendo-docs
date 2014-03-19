@@ -72,7 +72,7 @@ You can configure a Kendo UI widget by passing a configuration object as an argu
 
 This example sets the [height](/kendo-ui/api/web/grid#height-numberstring), [columns](/kendo-ui/api/web/grid#columns-array) and [dataSource](/kendo-ui/api/web/grid#datasource-kendodatadatasource--object) configuration options of the grid widget.
 
-> The [api](/kendo-ui/api) documentation lists all configuration options supported by each Kendo UI widget.
+> The [api](/kendo-ui/api/introduction) documentation lists all configuration options supported by each Kendo UI widget.
 
 ## Getting reference to a Kendo UI widget
 
@@ -136,7 +136,7 @@ This example does the following:
 1. Sets the value of the AutoComplete by invoking the [value](/kendo-ui/api/web/autocomplete#value) method and passing the string `"Cherries"` as the argument.
 1. Gets the value of the AutoComplete by invoking the [value](/kendo-ui/api/web/autocomplete#value) without arguments.
 
-> The [api](/kendo-ui/api) documentation lists all methods supported by each Kendo UI widget.
+> The [api](/kendo-ui/api/introduction) documentation lists all methods supported by each Kendo UI widget.
 
 ## Subscribing to the events of a Kendo UI widget
 
@@ -174,7 +174,7 @@ This example initializes a Kendo AutoComplete widget and configures it to invoke
 This `autocomplete.bind("change", autocomplete_change)` statement attaches the `autocomplete_change` JavaScript function to the **change** event. As a result, the `autocomplete_change`
 function will be invoked when the **change** event is fired.
 
-> The [api](/kendo-ui/api) documentation lists all events supported by each Kendo UI widget.
+> The [api](/kendo-ui/api/introduction) documentation lists all events supported by each Kendo UI widget.
 
 ### Event Handler
 

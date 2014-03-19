@@ -67,7 +67,7 @@ The animation played when the popup is closed.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx#effects)
+[Complete list of available animations](/kendo-ui/api/framework/fx/common)
 
 ### animation.close.duration `Number`
 
@@ -95,7 +95,7 @@ The animation played when the calendar popup is opened.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx#effects)
+[Complete list of available animations](/kendo-ui/api/framework/fx/common)
 
 ### animation.open.duration `Number`
 

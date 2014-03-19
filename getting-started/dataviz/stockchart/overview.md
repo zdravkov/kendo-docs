@@ -14,7 +14,7 @@ The Stock Chart is a specialized widget for visualizing stock price and related 
 
 It includes extensive touch support and a navigator pane for easy browsing of extended time periods.
 
-The widget extends the [Chart widget](/kendo-ui/getting-started/dataviz/chart) and shares most if its features. 
+The widget extends the [Chart widget](/kendo-ui/getting-started/dataviz/chart/overview) and shares most if its features. 
 
 ![Stock Chart](stock-chart.png)
 

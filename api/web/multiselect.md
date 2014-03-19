@@ -73,7 +73,7 @@ Configures the opening and closing animations of the suggestion popup. Setting t
 
 The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx#effects)
+[Complete list of available animations](/kendo-ui/api/framework/fx/common)
 
 ### animation.close.duration `Number` *(default: 100)*
 
@@ -104,7 +104,7 @@ The animation played when the suggestion popup is opened.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx#effects)
+[Complete list of available animations](/kendo-ui/api/framework/fx/common)
 
 ### animation.open.duration `Number` *(default: 200)*
 
