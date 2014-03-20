@@ -122,3 +122,4 @@ While most of the CSS code is cross-browser compatible, some layouts require dif
     .k-ff { /* styles to be applied to all versions of Firefox */ }
 
 The syntax of the generated classes is `k-[browser] k-[browser][majorVersion]`.
+
