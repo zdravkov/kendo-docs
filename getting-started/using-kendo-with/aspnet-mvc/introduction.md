@@ -19,7 +19,7 @@ The sample application requires:
 * Visual Studio 2012 or Visual Studio 2013
 * LocalDB
 
-The Kendo UI Visual Studio Extension supports Visual Studio 2010 and Visual Studio 2012.
+The Kendo UI Visual Studio Extensions support Visual Studio 2010+.
 
 ## Download
 
