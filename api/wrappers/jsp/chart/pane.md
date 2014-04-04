@@ -25,6 +25,14 @@ The background color of the chart pane. Accepts a valid CSS color string, includ
     <kendo:chart-pane background="background">
     </kendo:chart-pane>
 
+### clip `boolean`
+
+Specifies whether the charts in the pane should be clipped. By default all charts except radar, polar and 100% stacked charts are clipped.
+
+#### Example
+    <kendo:chart-pane clip="clip">
+    </kendo:chart-pane>
+
 ### height `float`
 
 The chart pane height in pixels.

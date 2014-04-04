@@ -59,6 +59,24 @@ The border of the chart pane.
     $pane->border(array('color' => $color));
     ?>
 
+### clip
+Specifies whether the charts in the pane should be clipped. By default all charts except radar, polar and 100% stacked charts are clipped.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartPane`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $pane = new \Kendo\Dataviz\UI\ChartPane();
+    $pane->clip(true);
+    ?>
+
 ### height
 The chart pane height in pixels.
 

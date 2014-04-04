@@ -25,6 +25,14 @@ The background color of the pane.
     <kendo:stockChart-pane background="background">
     </kendo:stockChart-pane>
 
+### clip `boolean`
+
+Specifies whether the charts in the pane should be clipped.
+
+#### Example
+    <kendo:stockChart-pane clip="clip">
+    </kendo:stockChart-pane>
+
 ### height `float`
 
 The pane height in pixels.

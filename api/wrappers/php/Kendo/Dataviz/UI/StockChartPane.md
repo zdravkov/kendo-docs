@@ -59,6 +59,24 @@ The border of the pane.
     $pane->border(array('color' => $color));
     ?>
 
+### clip
+Specifies whether the charts in the pane should be clipped.
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartPane`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $pane = new \Kendo\Dataviz\UI\StockChartPane();
+    $pane->clip(true);
+    ?>
+
 ### height
 The pane height in pixels.
 
