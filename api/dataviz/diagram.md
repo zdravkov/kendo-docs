@@ -50,6 +50,118 @@ If zoomRate is less than 1, zooming will be reversed.
 
 > Setting zoomRate of 1 will disable zooming.
 
+### editable `Object|Boolean`
+
+Specifies the shape editable.
+
+### editable.resize `Object|Boolean`
+
+Specifies the shape resizing.
+
+### editable.resize.handles `Object`
+
+Specifies the handles style.
+
+### editable.resize.handles.background `String`
+
+Set the handles backgorund.
+
+### editable.resize.handles.stroke `Object`
+
+Specifies the handles stroke styles.
+
+### editable.resize.handles.stroke.color `String`
+
+Specifies the handles stroke color.
+
+### editable.resize.handles.stroke.width `Number`
+
+Specifies the handles stroke width.
+
+### editable.resize.handles.stroke.dashType `String`
+
+Specifies the handles stroke dash type.
+
+### editable.resize.handles.hover.background `String`
+
+Set the handles backgorund.
+
+### editable.resize.handles.hover.stroke `Object`
+
+Specifies the handles stroke styles.
+
+### editable.resize.handles.hover.stroke.color `String`
+
+Specifies the handles stroke color.
+
+### editable.resize.handles.hover.stroke.width `Number`
+
+Specifies the handles stroke width.
+
+### editable.resize.handles.hover.stroke.dashType `String`
+
+Specifies the handles stroke dash type.
+
+### editable.resize.handles.width `Number`
+
+The hangles width.
+
+### editable.resize.handles.height `Number`
+
+The hangles height.
+
+### editable.rotate `Object|Bolean`
+
+Specifyes the rotate style.
+
+### editable.rotate.thumb `Object`
+
+Specifyes the thumb style.
+
+### editable.rotate.thumb.background `String`
+
+Set the thumb backgorund.
+
+### editable.rotate.thumb.stroke `Object`
+
+Specifies the thumb stroke styles.
+
+### editable.rotate.thumb.stroke.color `String`
+
+Specifies the thumb stroke color.
+
+### editable.rotate.thumb.stroke.width `Number`
+
+Specifies the thumb stroke width.
+
+### editable.rotate.thumb.stroke.dashType `String`
+
+Specifies the thumb stroke dash type.
+
+### editable.select `Object|Bolean`
+
+Specifyes the select style.
+
+### editable.select.background `String`
+
+Set the thumb backgorund.
+
+### editable.select.stroke `Object`
+
+Specifies the select stroke styles.
+
+### editable.select.stroke.color `String`
+
+Specifies the select stroke color.
+
+### editable.select.stroke.width `Number`
+
+Specifies the select stroke width.
+
+### editable.select.stroke.dashType `String`
+
+Specifies the select stroke dash type.
+
 ### dataSource `Object|Array|kendo.data.DataSource`
 
 See the [dataSource field](#fields-dataSource).
@@ -231,18 +343,6 @@ The height (in a vertical layout) or width (in a horizontal layout) between the 
 
 The [template](/api/framework/kendo#methods-template) which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
 
-### resizable `Boolean` *(default: true)*
-
-This defines whether the shapes can be resized. If set to false the adorner will not show the resizing thumbs, as can be seen below;
-
-![Resizable configuration.](diagram/resizable.png)
-
-### rotatable `Boolean` *(default: true)*
-
-This defines whether the shapes can be rotated. If set to false the adorner will not show the rotating thumb, as can be seen below;
-
-![Rotatable configuration.](diagram/rotatable.png)
-
 ### connectionDefaults `Object`
 
 Defines the connections configuration.
@@ -355,18 +455,6 @@ Sets the Y coordinate of the point.
 
 Defines the shape options.
 
-### shapeDefaults.editable `Boolean` *(default:true)*
-
-Specifies if the shape is editable by the user.
-
-### shapeDefaults.rotatable `Boolean` *(default:true)*
-
-Specifies if the user is allowed to rotate the shape.
-
-### shapeDefaults.resizable `Boolean` *(default:true)*
-
-Specifies if the shape is resizable.
-
 ### shapeDefaults.path `String`
 
 The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
@@ -428,7 +516,7 @@ Defines the width of the shape when added to the diagram.
 
 Defines the height of the shape when added to the diagram.
 
-### shapeDefaults.background `String` *(default: "SteelBlue")*
+### shapeDefaults.background `String`
 
 Defines the fill-color of the shape.
 
@@ -559,21 +647,9 @@ A function returning a visual element to render for a given shape. The following
 
 Defines the shape options.
 
-### shapes.editable `Boolean` *(default:true)*
-
-Specifies if the shape is editable by the user.
-
 ### shapes.id `String`
 
 The unique identifier for a Shape.
-
-### shapes.rotatable `Boolean` *(default:true)*
-
-Specifies if the user is allowed to rotate the shape.
-
-### shapes.resizable `Boolean` *(default:true)*
-
-Specifies if the shape is resizable.
 
 ### shapes.path `String`
 
