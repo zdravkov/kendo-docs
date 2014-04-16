@@ -84,6 +84,14 @@ The item will also be activated by pressing, holding and lifting the finger with
     <kendo:sortable holdToDrag="holdToDrag">
     </kendo:sortable>
 
+### ignore `java.lang.String`
+
+Selector that determines which elements inside the sorted item's container will be ignored. Useful if the sortable item contains input elements.
+
+#### Example
+    <kendo:sortable ignore="ignore">
+    </kendo:sortable>
+
 ### placeholder `java.lang.String`
 
 Provides a way for customization of the sortable item placeholder. If a function is supplied, it receives one argument - the draggable element's jQuery object.

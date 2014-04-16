@@ -341,7 +341,7 @@ If set to false the column will remain in the side of the grid into which its ow
     ?>
 
 ### locked
-If set to true the column will be displayed as locked in the grid.
+If set to true the column will be displayed as locked in the grid. Also see Frozen Columns.
 
 #### Returns
 `\Kendo\UI\GridColumn`

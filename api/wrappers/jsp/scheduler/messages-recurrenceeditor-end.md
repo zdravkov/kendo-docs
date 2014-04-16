@@ -32,6 +32,14 @@ The text similar to "End:" displayed in the scheduler recurrence editor.
     <kendo:scheduler-messages-recurrenceEditor-end label="label">
     </kendo:scheduler-messages-recurrenceEditor-end>
 
+### mobileLabel `java.lang.String`
+
+The text similar to "Ends" displayed in the adaptive version of the scheduler recurrence editor.
+
+#### Example
+    <kendo:scheduler-messages-recurrenceEditor-end mobileLabel="mobileLabel">
+    </kendo:scheduler-messages-recurrenceEditor-end>
+
 ### never `java.lang.String`
 
 The text similar to "Never" displayed in the scheduler recurrence editor.

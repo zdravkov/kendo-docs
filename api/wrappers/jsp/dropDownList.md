@@ -249,7 +249,7 @@ For additional information check the [select](/kendo-ui/api/web/dropdownlist#eve
 
 ### cascade `String`
 
-Fired when the value of the widget is changed via API or user interactionTriggered.
+Fired when the value of the widget is changed via API or user interaction.
 
 
 For additional information check the [cascade](/kendo-ui/api/web/dropdownlist#events-cascade) event documentation.
@@ -357,7 +357,7 @@ For additional information check the [select](/kendo-ui/api/web/dropdownlist#eve
 
 ### kendo:dropDownList-cascade
 
-Fired when the value of the widget is changed via API or user interactionTriggered.
+Fired when the value of the widget is changed via API or user interaction.
 
 
 For additional information check the [cascade](/kendo-ui/api/web/dropdownlist#events-cascade) event documentation.

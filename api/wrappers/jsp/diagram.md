@@ -27,20 +27,12 @@ Defines whether items can be dropped on the diagram.
     <kendo:diagram draggable="draggable">
     </kendo:diagram>
 
-### resizable `boolean`
+### editable `boolean`
 
-This defines whether the shapes can be resized. If set to false the adorner will not show the resizing thumbs, as can be seen below;
-
-#### Example
-    <kendo:diagram resizable="resizable">
-    </kendo:diagram>
-
-### rotatable `boolean`
-
-This defines whether the shapes can be rotated. If set to false the adorner will not show the rotating thumb, as can be seen below;
+Specifies the shape editable. Further configuration is available via [kendo:diagram-editable](#kendo-diagram-editable). 
 
 #### Example
-    <kendo:diagram rotatable="rotatable">
+    <kendo:diagram editable="editable">
     </kendo:diagram>
 
 ### template `java.lang.String`
@@ -85,6 +77,18 @@ More documentation is available at [kendo:diagram-connections](/kendo-ui/api/wra
 
     <kendo:diagram>
         <kendo:diagram-connections></kendo:diagram-connections>
+    </kendo:diagram>
+
+### kendo:diagram-editable
+
+Specifies the shape editable.
+
+More documentation is available at [kendo:diagram-editable](/kendo-ui/api/wrappers/jsp/diagram/editable).
+
+#### Example
+
+    <kendo:diagram>
+        <kendo:diagram-editable></kendo:diagram-editable>
     </kendo:diagram>
 
 ### kendo:diagram-layout

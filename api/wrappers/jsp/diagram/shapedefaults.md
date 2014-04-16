@@ -24,14 +24,6 @@ Defines the fill-color of the shape.
     <kendo:diagram-shapeDefaults background="background">
     </kendo:diagram-shapeDefaults>
 
-### editable `boolean`
-
-Specifies if the shape is editable by the user.
-
-#### Example
-    <kendo:diagram-shapeDefaults editable="editable">
-    </kendo:diagram-shapeDefaults>
-
 ### height `float`
 
 Defines the height of the shape when added to the diagram.
@@ -62,22 +54,6 @@ The path option of a Shape is a description of a custom geometry. The format fol
 
 #### Example
     <kendo:diagram-shapeDefaults path="path">
-    </kendo:diagram-shapeDefaults>
-
-### resizable `boolean`
-
-Specifies if the shape is resizable.
-
-#### Example
-    <kendo:diagram-shapeDefaults resizable="resizable">
-    </kendo:diagram-shapeDefaults>
-
-### rotatable `boolean`
-
-Specifies if the user is allowed to rotate the shape.
-
-#### Example
-    <kendo:diagram-shapeDefaults rotatable="rotatable">
     </kendo:diagram-shapeDefaults>
 
 ### type `java.lang.String`

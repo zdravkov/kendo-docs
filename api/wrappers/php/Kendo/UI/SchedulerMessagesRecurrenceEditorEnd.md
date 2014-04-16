@@ -48,6 +48,24 @@ The text similar to "End:" displayed in the scheduler recurrence editor.
     $end->label('value');
     ?>
 
+### mobileLabel
+The text similar to "Ends" displayed in the adaptive version of the scheduler recurrence editor.
+
+#### Returns
+`\Kendo\UI\SchedulerMessagesRecurrenceEditorEnd`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $end = new \Kendo\UI\SchedulerMessagesRecurrenceEditorEnd();
+    $end->mobileLabel('value');
+    ?>
+
 ### never
 The text similar to "Never" displayed in the scheduler recurrence editor.
 

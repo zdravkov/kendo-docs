@@ -13,7 +13,7 @@ A PHP class representing the messages setting of Scheduler.
 ## Methods
 
 ### allDay
-The text similar to "all day" displayed in day/week views.
+The text similar to "all day" displayed in day,week and agenda views.
 
 #### Returns
 `\Kendo\UI\SchedulerMessages`

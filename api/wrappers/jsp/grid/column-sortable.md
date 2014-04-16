@@ -19,7 +19,7 @@ be disabled for this column. By default all columns are sortable if sorting is e
 
 ### compare `java.lang.String`
 
-A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the second one is greater that then first one.
+A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the first one is greater than second one.
 
 #### Example
     <kendo:grid-column-sortable compare="compare">
@@ -30,7 +30,7 @@ A JavaScript function which is used to compare the values - should return -1 if 
 
 ### compare `String`
 
-A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the second one is greater that then first one.
+A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the first one is greater than second one.
 
 
 #### Example
@@ -46,7 +46,7 @@ A JavaScript function which is used to compare the values - should return -1 if 
 
 ### kendo:grid-column-sortable-compare
 
-A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the second one is greater that then first one.
+A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the first one is greater than second one.
 
 
 #### Example

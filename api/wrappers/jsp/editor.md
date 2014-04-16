@@ -18,6 +18,17 @@ The content of the editor
     <kendo:editor content="content">
     </kendo:editor>
 
+### domain `java.lang.String`
+
+Relaxes the same-origin policy when using the iframe-based editor.
+This is done automatically for all cases except when the policy is relaxed by document.domain = document.domain.
+In that case, this property must be used to allow the editor to function properly across browsers.
+This property has been introduced in internal builds after 2014.1.319.
+
+#### Example
+    <kendo:editor domain="domain">
+    </kendo:editor>
+
 ### encoded `boolean`
 
 Indicates whether the Editor should submit encoded HTML tags. By default, the submitted value is encoded.

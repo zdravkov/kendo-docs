@@ -18,7 +18,7 @@ The configuration of the scheduler messages. Use this option to customize or loc
 
 ### allDay `java.lang.String`
 
-The text similar to "all day" displayed in day/week views.
+The text similar to "all day" displayed in day,week and agenda views.
 
 #### Example
     <kendo:scheduler-messages allDay="allDay">

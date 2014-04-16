@@ -81,7 +81,7 @@ Controls whether to bind the widget to the data source on initialization.
     ?>
 
 ### cascade
-Fired when the value of the widget is changed via API or user interactionTriggered.
+Fired when the value of the widget is changed via API or user interaction.
 For additional information check the [cascade](/kendo-ui/api/web/dropdownlist#events-cascade) event documentation.
 
 #### Returns

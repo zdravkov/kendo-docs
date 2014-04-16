@@ -236,6 +236,44 @@ Defines whether items can be dropped on the diagram.
     $diagram->draggable(true);
     ?>
 
+### editable
+
+Specifies the shape editable.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `boolean|\Kendo\Dataviz\UI\DiagramEditable|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->editable(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramEditable](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramEditable)
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $editable = new \Kendo\Dataviz\UI\DiagramEditable();
+    $resize = true;
+    $editable->resize($resize);
+    $diagram->editable($editable);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $resize = true;
+    $diagram->editable(array('resize' => $resize));
+    ?>
+
 ### itemBoundsChange
 Fired when the location or size of an item are changed.
 For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
@@ -371,42 +409,6 @@ For additional information check the [pan](/kendo-ui/api/dataviz/diagram#events-
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $diagram->pan(new \Kendo\JavaScriptFunction('function(e) { }'));
-    ?>
-
-### resizable
-This defines whether the shapes can be resized. If set to false the adorner will not show the resizing thumbs, as can be seen below;
-
-#### Returns
-`\Kendo\Dataviz\UI\Diagram`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->resizable(true);
-    ?>
-
-### rotatable
-This defines whether the shapes can be rotated. If set to false the adorner will not show the rotating thumb, as can be seen below;
-
-#### Returns
-`\Kendo\Dataviz\UI\Diagram`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->rotatable(true);
     ?>
 
 ### select

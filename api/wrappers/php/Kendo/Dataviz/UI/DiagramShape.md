@@ -97,24 +97,6 @@ Defines the shapes content settings.
     $shape->content(array('align' => $align));
     ?>
 
-### editable
-Specifies if the shape is editable by the user.
-
-#### Returns
-`\Kendo\Dataviz\UI\DiagramShape`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $shape = new \Kendo\Dataviz\UI\DiagramShape();
-    $shape->editable(true);
-    ?>
-
 ### height
 Defines the height of the shape when added to the diagram.
 
@@ -232,42 +214,6 @@ The path option of a Shape is a description of a custom geometry. The format fol
     <?php
     $shape = new \Kendo\Dataviz\UI\DiagramShape();
     $shape->path('value');
-    ?>
-
-### resizable
-Specifies if the shape is resizable.
-
-#### Returns
-`\Kendo\Dataviz\UI\DiagramShape`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $shape = new \Kendo\Dataviz\UI\DiagramShape();
-    $shape->resizable(true);
-    ?>
-
-### rotatable
-Specifies if the user is allowed to rotate the shape.
-
-#### Returns
-`\Kendo\Dataviz\UI\DiagramShape`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $shape = new \Kendo\Dataviz\UI\DiagramShape();
-    $shape->rotatable(true);
     ?>
 
 ### rotation

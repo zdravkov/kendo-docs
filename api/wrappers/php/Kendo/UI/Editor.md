@@ -23,7 +23,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
     $editor = new \Kendo\UI\Editor('Editor');
 
     // Configure it
-    $editor->encoded(true)
+    $editor->domain('value')
 
     // Output it
 
@@ -86,6 +86,27 @@ Sets the HTML content of the Editor.
     $editor->content('<strong>Content</strong>');
     ?>
 
+
+### domain
+Relaxes the same-origin policy when using the iframe-based editor.
+This is done automatically for all cases except when the policy is relaxed by document.domain = document.domain.
+In that case, this property must be used to allow the editor to function properly across browsers.
+This property has been introduced in internal builds after 2014.1.319.
+
+#### Returns
+`\Kendo\UI\Editor`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $editor->domain('value');
+    ?>
 
 ### encoded
 Indicates whether the Editor should submit encoded HTML tags. By default, the submitted value is encoded.

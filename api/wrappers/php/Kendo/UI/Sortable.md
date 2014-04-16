@@ -341,6 +341,24 @@ The item will also be activated by pressing, holding and lifting the finger with
     $sortable->holdToDrag(true);
     ?>
 
+### ignore
+Selector that determines which elements inside the sorted item's container will be ignored. Useful if the sortable item contains input elements.
+
+#### Returns
+`\Kendo\UI\Sortable`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $sortable = new \Kendo\UI\Sortable('Sortable');
+    $sortable->ignore('value');
+    ?>
+
 ### move
 Fires when Sortable's placeholder changes its position.
 For additional information check the [move](/kendo-ui/api/web/sortable#events-move) event documentation.
