@@ -82,6 +82,10 @@ Specifies the handles stroke width.
 
 Specifies the handles stroke dash type.
 
+### editable.resize.handles.hover `Object`
+
+Set the handles hover styles.
+
 ### editable.resize.handles.hover.background `String`
 
 Set the handles backgorund.
