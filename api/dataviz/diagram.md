@@ -50,11 +50,11 @@ If zoomRate is less than 1, zooming will be reversed.
 
 > Setting zoomRate of 1 will disable zooming.
 
-### editable `Object|Boolean`
+### editable `Boolean|Object`
 
 Specifies the shape editable.
 
-### editable.resize `Object|Boolean`
+### editable.resize `Boolean|Object`
 
 Specifies the shape resizing.
 
@@ -114,7 +114,7 @@ The hangles width.
 
 The hangles height.
 
-### editable.rotate `Object|Bolean`
+### editable.rotate `Boolean|Object`
 
 Specifyes the rotate style.
 
@@ -142,7 +142,7 @@ Specifies the thumb stroke width.
 
 Specifies the thumb stroke dash type.
 
-### editable.select `Object|Bolean`
+### editable.select `Boolean|Object`
 
 Specifyes the select style.
 
