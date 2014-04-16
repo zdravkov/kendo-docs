@@ -24,6 +24,22 @@ Specifies the shape resizing. Further configuration is available via [kendo:diag
     <kendo:diagram-editable resize="resize">
     </kendo:diagram-editable>
 
+### rotate `boolean`
+
+Specifyes the rotate style. Further configuration is available via [kendo:diagram-editable-rotate](#kendo-diagram-editable-rotate). 
+
+#### Example
+    <kendo:diagram-editable rotate="rotate">
+    </kendo:diagram-editable>
+
+### select `boolean`
+
+Specifyes the select style. Further configuration is available via [kendo:diagram-editable-select](#kendo-diagram-editable-select). 
+
+#### Example
+    <kendo:diagram-editable select="select">
+    </kendo:diagram-editable>
+
 
 ##  Configuration JSP Tags
 

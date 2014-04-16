@@ -59,7 +59,16 @@ Specifyes the rotate style.
 
 #### Parameters
 
-##### $value `\Kendo\Dataviz\UI\DiagramEditableRotate|array`
+##### $value `boolean|\Kendo\Dataviz\UI\DiagramEditableRotate|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $editable = new \Kendo\Dataviz\UI\DiagramEditable();
+    $editable->rotate(true);
+    ?>
 
 
 #### Example - using [\Kendo\Dataviz\UI\DiagramEditableRotate](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramEditableRotate)
@@ -88,7 +97,16 @@ Specifyes the select style.
 
 #### Parameters
 
-##### $value `\Kendo\Dataviz\UI\DiagramEditableSelect|array`
+##### $value `boolean|\Kendo\Dataviz\UI\DiagramEditableSelect|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $editable = new \Kendo\Dataviz\UI\DiagramEditable();
+    $editable->select(true);
+    ?>
 
 
 #### Example - using [\Kendo\Dataviz\UI\DiagramEditableSelect](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramEditableSelect)
