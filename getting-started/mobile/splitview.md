@@ -105,6 +105,55 @@ The expanded panes can also be collapsed when a navigation happens in the mane p
         }
     </script>
 
+## Header and Footer support
+
+In Q2 2014 and later versions, the SplitView supports top-level header and footer elements like a regular view.
+
+### SplitView with top-level footer
+
+    <div data-role="splitview">
+
+      <div data-role="pane" id="side-pane">
+          <div data-role="view" data-title="Messages">
+             <ul data-role="listview">
+               <li><a href="#foo" data-target="main-pane">Foo</a></li><!-- link to main pane -->
+               <li><a href="#bar">Bar</a></li><!-- link to same pane -->
+             </ul>
+          </div>
+      </div>
+
+      <div data-role="pane" data-layout="main-default" id="main-pane">
+          <div data-role="view" data-title="Messages">
+              No message selected
+          </div>
+
+
+          <div data-role="layout" data-id="main-default">
+              <div data-role="header">
+                  <div data-role="navbar">
+                      <span data-role="view-title"></span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div data-role="footer">
+         <div data-role="tabstrip">
+            <a href="#tabstrip-profile" data-icon="contacts">Profile
+            </a><a href="#tabstrip-sales" data-icon="history">Sales
+            </a><a href="#tabstrip-rating" data-icon="favorites">Rating
+            </a><a href="#tabstrip-settings" data-icon="settings">Settings</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        $(function() {
+            new kendo.mobile.Application();
+        });
+    </script>
+
+
 ## Customizing appearance
 
 By default Kendo UI Mobile is configured to show a horizontal SplitView with smaller left and bigger right pane in 1:2 proportion.
