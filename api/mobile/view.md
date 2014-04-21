@@ -44,6 +44,17 @@ Applicable to remote views only. If set to true, the remote view contents will b
       <a href="#" id="link">Link</a>
     </div>
 
+### scroller `Object` *(default: null)*
+
+Configuration options to be passed to the scroller instance instantiated by the view. For more details, check the scroller [configuration options](/api/mobile/scroller#configuration).
+
+#### A view with elastic scrolling set to false
+
+    <!-- foo.html -->
+    <div data-role="view" data-scroller='{"elastic": false}'>
+        This view will not bounce when scrolled
+    </div>
+
 ### stretch `Boolean`*(default: false)*
 
 If set to true, the view will stretch its child contents to occupy the entire view, while disabling kinetic scrolling.
