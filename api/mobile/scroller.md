@@ -14,23 +14,6 @@ Represents the Kendo UI Mobile Scroller widget. Inherits from [kendo.mobile.ui.W
 
 ## Configuration
 
-### zoom `Boolean`*(default: false)*
-
-If set to true, the user can zoom in/out the contents of the widget using the pinch/zoom gesture.
-
-#### Example
-    <div data-role="view">
-        foo
-      <div data-role="scroller" style="width: 200px; height: 200px" data-zoom="true">
-        <div style="width: 500px; height: 500px">Zoomable Content</div>
-      </div>
-        bar
-     </div>
-
-    <script>
-    new kendo.mobile.Application();
-    </script>
-
 ### elastic `Boolean`*(default: true)*
 
 Weather or not to allow out of bounds dragging and easing.
@@ -161,7 +144,7 @@ Has effect only when the `pullToRefresh` option is set to true.
     new kendo.mobile.Application();
     </script>
 
-### useNative `Boolean`*(default: false)*
+### useNative `Boolean` *(default: false)*
 
 If set to true, the scroller will use the native scrolling available in the current platform. This should help with form issues on some platforms (namely Android and WP8).
 Native scrolling is only enabled on platforms that support it: iOS > 4, Android > 2, WP8. BlackBerry devices do support it, but the native scroller is flaky.
@@ -176,6 +159,46 @@ Native scrolling is only enabled on platforms that support it: iOS > 4, Android 
         </div>
         bar
     </div>
+
+    <script>
+    new kendo.mobile.Application();
+    </script>
+
+### visibleScrollHints `Boolean` *(default: false)*
+
+If set to `true`, the scroller scroll hints will always be displayed.
+
+> The configuration option does not have any effect if the `useNative` option is set to `true`.
+
+#### Example
+    <div data-role="view">
+        foo
+        <div data-role="scroller" style="width: 200px; height: 200px" data-visible-scroll-hints="true">
+            <div style="height: 500px">
+                Content
+            </div>
+        </div>
+        bar
+    </div>
+
+    <script>
+    new kendo.mobile.Application();
+    </script>
+
+### zoom `Boolean` *(default: false)*
+
+If set to true, the user can zoom in/out the contents of the widget using the pinch/zoom gesture.
+
+> The configuration option does not have any effect if the `useNative` option is set to `true`.
+
+#### Example
+    <div data-role="view">
+        foo
+      <div data-role="scroller" style="width: 200px; height: 200px" data-zoom="true">
+        <div style="width: 500px; height: 500px">Zoomable Content</div>
+      </div>
+        bar
+     </div>
 
     <script>
     new kendo.mobile.Application();
