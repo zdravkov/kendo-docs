@@ -212,6 +212,34 @@ Show the Drawer
 
 ## Events
 
+### afterHide
+
+Fired after the mobile Drawer has been hidden.
+
+#### Example
+
+    <div data-role="view" id="drawer-settings">
+        <h1>Settings</h1>
+    </div>
+
+    <div data-role="drawer" id="foo" data-after-hide="onAfterHide">
+        Foo
+    </div>
+
+    <script>
+    new kendo.mobile.Application();
+
+    function onAfterHide(e) {
+        console.log(e);
+    }
+    </script>
+
+#### Event Data
+
+##### e.sender `kendo.mobile.ui.Drawer`
+
+The widget instance which fired the event.
+
 ### beforeShow
 
 Fires before the mobile Drawer is revealed. The event can be prevented by calling the `preventDefault` method of the event parameter.
