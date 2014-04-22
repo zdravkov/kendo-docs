@@ -395,6 +395,12 @@ Fires while dragging.
       }
     </style>
 
+#### Event Data
+
+##### e.dropTarget `DropTarget`
+
+The current draggable drop target (if any).
+
 ### dragcancel
 
 Fires when item drag is canceled by pressing the Escape key.
