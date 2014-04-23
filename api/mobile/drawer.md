@@ -82,6 +82,31 @@ The position of the drawer. Can be `left` (default) or `right`.
 
 If set to `false`, swiping the view will not activate the drawer. In this case, the drawer will only be open by a designated button
 
+### swipeToOpenViews `Array`
+
+A list of the view ids on which the drawer will appear when the view is swiped. If omitted, the swipe gesture will work on all views.
+The option has effect only if `swipeToOpen` is set to `true`.
+
+#### Example
+
+    <div data-role="view" id="drawer-settings">
+        <h1>Settings</h1>
+        <a href="#bar" data-role="button">Go to bar</a>
+    </div>
+
+    <div data-role="view" id="bar">
+        Drawer will not be revealed when the view is swiped
+        <a href="#drawer-settings" data-role="button">Back to settings</a>
+    </div>
+
+    <div data-role="drawer" id="my-drawer" data-swipe-to-open-views='["drawer-settings"]'>
+        Hi!
+    </div>
+
+    <script>
+    new kendo.mobile.Application();
+    </script>
+
 #### Drawer with swipe to open set to false
 
     <div data-role="view">
