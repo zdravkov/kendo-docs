@@ -241,7 +241,7 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) used to render th
 
 By default the scheduler renders the date using a custom date format - "ddd M/dd".
 The "ddd" specifier, a.k.a abbreviated name of the week day, will be localized using the current Kendo UI culture.
-If the developer wants to control the the day and month order then one needs to define a custom template.
+If the developer wants to control the day and month order then one needs to define a custom template.
 
 The fields which can be used in the template are:
 
