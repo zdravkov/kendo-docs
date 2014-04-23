@@ -146,6 +146,35 @@ Open the ModalView
 
 ## Events
 
+### beforeOpen
+
+Fires before the ModalView is shown. calling `preventDefault` on the event argument will cancel the open.
+
+#### Example
+
+    <div data-role="view">
+        <a data-role="button" href="#foo" data-rel="modalview">Foo</a>
+    </div>
+
+    <div data-role="modalview" id="foo" data-before-open="preventOpen">
+        Foo
+    </div>
+
+    <script>
+    function preventOpen(e) {
+        e.preventDefault();
+        console.log(e.target); // <a href="#foo" ...
+    }
+
+    new kendo.mobile.Application();
+    </script>
+
+#### Event Data
+
+##### e.target `jQuery`
+
+The invocation target of the ModalView.
+
 ### close
 
 Fired when the mobile ModalView is closed by the user.
@@ -190,7 +219,7 @@ Fired when the mobile ModalView and its child widgets are initialized.
 
     <script>
     function onInit(e) {
-        console.log(e.target); // <a href="#foo" ...
+        console.log(e.sender);
     }
 
     new kendo.mobile.Application();
