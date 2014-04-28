@@ -840,6 +840,16 @@ The target tab(s), specified as a selector, jQuery object or index in the tab gr
 
 Triggered just after a tab is being made visible, but before the end of the animation
 
+#### Event Data
+
+##### e.item `Element`
+
+The activated tab.
+
+##### e.contentElement `Element`
+
+The content element of the activated tab.
+
 #### Attach activate event handler during initialization; detach via unbind()
 
     <div id="tabstrip">
@@ -891,19 +901,19 @@ Triggered just after a tab is being made visible, but before the end of the anim
         tabStrip.bind("activate", onActivate);
     </script>
 
+### contentLoad
+
+Triggered when content is fetched from an AJAX request.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The activated tab.
+The selected item
 
 ##### e.contentElement `Element`
 
-The content element of the activated tab.
-
-### contentLoad
-
-Triggered when content is fetched from an AJAX request.
+The loaded content element that is retrieved via AJAX.
 
 #### Attach contentLoad event handler during initialization; detach via unbind()
 
@@ -933,19 +943,19 @@ Triggered when content is fetched from an AJAX request.
         }).data("kendoTabStrip");
     </script>
 
-#### Event Data
-
-##### e.item `Element`
-
-The selected item
-
-##### e.contentElement `Element`
-
-The loaded content element that is retrieved via AJAX.
-
 ### error
 
 Triggered when an AJAX request results in an error.
+
+#### Event Data
+
+##### e.xhr `jqXHR`
+
+The jqXHR object used to load the content
+
+##### e.status `String`
+
+The returned status.
 
 #### Attach error event handler during initialization; detach via unbind()
 
@@ -973,19 +983,19 @@ Triggered when an AJAX request results in an error.
         }).data("kendoTabStrip");
     </script>
 
-#### Event Data
-
-##### e.xhr `jqXHR`
-
-The jqXHR object used to load the content
-
-##### e.status `String`
-
-The returned status.
-
 ### select
 
 Triggered before a tab is selected.
+
+#### Event Data
+
+##### e.item `Element`
+
+The selected item chosen by a user.
+
+##### e.contentElement `Element`
+
+The content element of the tab going to be selected.
 
 #### Attach select event handler during initialization; detach via unbind()
 
@@ -1037,13 +1047,3 @@ Triggered before a tab is selected.
         var tabStrip = $("#tabstrip").kendoTabStrip().data("kendoTabStrip");
         tabStrip.bind("select", onSelect);
     </script>
-
-#### Event Data
-
-##### e.item `Element`
-
-The selected item chosen by a user.
-
-##### e.contentElement `Element`
-
-The content element of the tab going to be selected.

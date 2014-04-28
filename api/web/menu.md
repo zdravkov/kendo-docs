@@ -817,6 +817,12 @@ Target item selector.
 
 Fires before a sub menu gets closed. You can cancel this event to prevent closure.
 
+#### Event Data
+
+##### e.item `Element`
+
+The closed item
+
 #### Example
 
     <ul id="menu">
@@ -870,15 +876,15 @@ Fires before a sub menu gets closed. You can cancel this event to prevent closur
          });
     </script>
 
+### open
+
+Fires before a sub menu gets opened. You can cancel this event to prevent opening the sub menu.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The closed item
-
-### open
-
-Fires before a sub menu gets opened. You can cancel this event to prevent opening the sub menu.
+The opened item
 
 #### Example
 
@@ -933,15 +939,15 @@ Fires before a sub menu gets opened. You can cancel this event to prevent openin
          });
     </script>
 
+### activate
+
+Fires when a sub menu gets opened and its animation finished.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The opened item
-
-### activate
-
-Fires when a sub menu gets opened and its animation finished.
+The activated item
 
 #### Example
 
@@ -996,15 +1002,15 @@ Fires when a sub menu gets opened and its animation finished.
          });
     </script>
 
+### deactivate
+
+Fires when a sub menu gets closed and its animation finished.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The activated item
-
-### deactivate
-
-Fires when a sub menu gets closed and its animation finished.
+The deactivated item
 
 #### Example
 
@@ -1059,15 +1065,15 @@ Fires when a sub menu gets closed and its animation finished.
          });
     </script>
 
+### select
+
+Fires when a menu item gets selected.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The deactivated item
-
-### select
-
-Fires when a menu item gets selected.
+The selected item
 
 #### Example
 
@@ -1122,8 +1128,3 @@ Fires when a menu item gets selected.
          });
     </script>
 
-#### Event Data
-
-##### e.item `Element`
-
-The selected item

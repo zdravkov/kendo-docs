@@ -839,6 +839,12 @@ represented by a [jQuery selector](http://api.jquery.com/category/selectors/).
 
 Triggered when an item of a PanelBar is activated.
 
+#### Event Data
+
+##### e.item `Element`
+
+The activated item of the PanelBar.
+
 #### Attach activate event handler during initialization; detach via unbind()
 
     <ul id="panelbar">
@@ -905,15 +911,15 @@ Triggered when an item of a PanelBar is activated.
         $("#panelbar").data("kendoPanelBar").bind("activate", onActivate);
     </script>
 
+### collapse
+
+Triggered when an item of a PanelBar is collapsed.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The activated item of the PanelBar.
-
-### collapse
-
-Triggered when an item of a PanelBar is collapsed.
+The collapsing item of the PanelBar.
 
 #### Attach collapse event handler during initialization; detach via unbind()
 
@@ -981,15 +987,19 @@ Triggered when an item of a PanelBar is collapsed.
         $("#panelbar").data("kendoPanelBar").bind("collapse", onCollapse);
     </script>
 
+### contentLoad
+
+Fires when content is fetched from an AJAX request.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The collapsing item of the PanelBar.
+The selected item
 
-### contentLoad
+##### e.contentElement `Element`
 
-Fires when content is fetched from an AJAX request.
+The loaded content element
 
 #### Example
 
@@ -1044,19 +1054,19 @@ Fires when content is fetched from an AJAX request.
         });
     </script>
 
-#### Event Data
-
-##### e.item `Element`
-
-The selected item
-
-##### e.contentElement `Element`
-
-The loaded content element
-
 ### error
 
 Fires when AJAX request results in an error.
+
+#### Event Data
+
+##### e.xhr `jqXHR`
+
+The jqXHR object used to load the content
+
+##### e.status `String`
+
+The returned status.
 
 #### Example
 
@@ -1111,19 +1121,15 @@ Fires when AJAX request results in an error.
         });
     </script>
 
-#### Event Data
-
-##### e.xhr `jqXHR`
-
-The jqXHR object used to load the content
-
-##### e.status `String`
-
-The returned status.
-
 ### expand
 
 Triggered when an item of a PanelBar is expanded.
+
+#### Event Data
+
+##### e.item `Element`
+
+The expanding item of the PanelBar.
 
 #### Attach expand event handler during initialization; detach via unbind()
 
@@ -1191,15 +1197,15 @@ Triggered when an item of a PanelBar is expanded.
         $("#panelbar").data("kendoPanelBar").bind("expand", onExpand);
     </script>
 
+### select
+
+Triggered when an item of a PanelBar is selected.
+
 #### Event Data
 
 ##### e.item `Element`
 
-The expanding item of the PanelBar.
-
-### select
-
-Triggered when an item of a PanelBar is selected.
+The selected item of the PanelBar.
 
 #### Attach select event handler during initialization; detach via unbind()
 
@@ -1266,9 +1272,3 @@ Triggered when an item of a PanelBar is selected.
         // attach select event handler via bind()
         $("#panelbar").data("kendoPanelBar").bind("select", onSelect);
     </script>
-
-#### Event Data
-
-##### e.item `Element`
-
-The selected item of the PanelBar.
