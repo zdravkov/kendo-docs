@@ -26,7 +26,7 @@ The following example shows the correct Visual Basic (VB) syntax when using [lam
                                           items.Add("Verdana", "verdana")
                                   End Sub)
                        t.CustomButton(Sub(cb)
-                                              cb.Name("custom")
+											  cb.Name("custom")
                                               cb.ToolTip("horizontal rule")
                                               cb.Exec(Function()
                                                               Return "function(e) { alert('exec'); }"
@@ -48,18 +48,20 @@ The following example shows the correct Visual Basic (VB) syntax when using [lam
 		Html.Kendo().Grid(Of KendoUIMvcVB.Person)() _
 			.Name("Grid") _
 			.Columns(Sub(c)
-							 c.Bound(Function(p) p.PersonID)
-							 c.Bound(Function(p) p.PersonName)
-							 c.Bound(Function(p) p.PersonBirthDate)
-							 c.Template(Sub()
-											@<text>server template</text>
-										End Sub).Title("Template column").ClientTemplate("client template")
+                            c.Bound(Function(p) p.PersonID)
+                            c.Bound(Function(p) p.PersonName)
+                            c.Bound(Function(p) p.PersonBirthDate)
+                            c.Template(Sub()
+                                            @<text>server template</text>
+                                       End Sub).Title("Template column").ClientTemplate("client template")
 					 End Sub) _
 		.Pageable() _
 		.Sortable() _
 		.Filterable() _
 		.DataSource(Function(d)
-							d.Ajax().Read(Function(read) read.Action("Person_Read", "Home"))
+							d.Ajax().Read(Function(read) read.Action("Person_Read", "Home")).Model(Sub(m)
+                                                                                                         m.Id(Function(i) i.PersonID)
+                                                                                                   End Sub)
 					End Function) _
 		.Render()
 	End Code
