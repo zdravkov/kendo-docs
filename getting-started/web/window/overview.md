@@ -35,9 +35,43 @@ targeted content will automatically be wrapped in the div element of the **Windo
 When a **Window** is initialized, it will automatically be displayed open near the location of the
 DOM element that was used to initialize the content.
 
+### HTML structure and DOM Placement
+
+By default, the Window is created as a child of the `&lt;body&gt;` element. This behavior should be taken into account with regard to CSS selectors or element discovery via Javascript.
+The behavior is configurable via the [`appendTo` setting](/kendo-ui/api/web/window#configuration-appendTo).
+
+#### Before initialization
+
+	<body>
+		<div id="container1">
+			<div id="window">
+				Content of the Window
+			</div>
+			...
+		</div>
+		<div id="container2">
+			...
+		</div>
+	</body>
+
+#### After initialization
+
+	<body>
+		<div id="container1">
+			...
+		</div>
+		<div id="container2">
+			...
+		</div>
+		<div class="k-widget k-window">
+			<div class="k-window-titlebar">...</div>
+			<div id="window" class="k-window-content">
+				Content of the Window
+			</div>
+		</div>
+	</body>
 
 ## Configuring Window Behaviors
-
 
 A **Window** provides many configuration options that can be easily set during initialization.
 Among the properties that can be controlled:
