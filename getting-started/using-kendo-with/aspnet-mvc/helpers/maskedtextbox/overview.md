@@ -71,7 +71,7 @@ To add a custom rule use the **Rules** method:
     <%: Html.Kendo().MaskedTextBox()
             .Name("maskedtextbox")
             .Rules(rules => {
-                rules.Add("~", "/[+-]/");
+                rules.Add('~', "/[+-]/");
             })
             .Mask("~0000") //Set a mask with custom rule
     %>
@@ -81,7 +81,7 @@ To add a custom rule use the **Rules** method:
     @(Html.Kendo().MaskedTextBox()
           .Name("maskedtextbox")
           .Rules(rules => {
-              rules.Add("~", "/[+-]/");
+              rules.Add('~', "/[+-]/");
           })
           .Mask("~0000") //Set a mask with custom rule
     )
