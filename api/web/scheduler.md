@@ -70,6 +70,8 @@ The fields which can be used in the template are:
 
 If set to `true` the scheduler will display a slot for "all day" events.
 
+> The option is a shorthand to the view's allDaySlot option. To define the daySlot visibility using a **data-** attribute set the [views.allDaySlot](#configuration-views.allDaySlot) option directly.
+
 #### Example - hide the all day slot
     <div id="scheduler"></div>
     <script>
