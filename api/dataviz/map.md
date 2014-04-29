@@ -4427,6 +4427,35 @@ An array argument is assumed to be in [Latitude, Lonigude] order.
         // 512,512
     </script>
 
+### resize
+
+Adjusts the widget layout to match the size of the container.
+
+#### Example
+
+    <div id="map" style="width: 512px; height: 512px;"></div>
+    <script>
+        $("#map").kendoMap({
+            zoom: 3,
+            center: [0, 0],
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        $("#map")
+           .css({ width: "1024px", height: "1024px" })
+           .data("kendoMap").resize();
+    </script>
+
+#### Parameters
+
+##### force `Boolean` *(default: false)*
+
+Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
+
 ### setOptions
 
 Resets the map and applies new options over the current state.

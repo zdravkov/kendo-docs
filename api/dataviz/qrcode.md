@@ -241,6 +241,29 @@ Redraws the QR code using the current value and options.
     var qrCode = $("#qrCode").data("kendoQRCode");
     qrCode.redraw();
 
+### resize
+
+Adjusts the widget layout to match the size of the container.
+
+#### Example
+
+    <div id="qrcode" style="width: 150px; height: 150px;"></div>
+    <script>
+        $("#qrcode").kendoQRCode({
+          value: "FOO"
+        });
+
+        $("#qrcode")
+           .css({ width: "600px", height: "300px" })
+           .data("kendoQRCode").resize();
+    </script>
+
+#### Parameters
+
+##### force `Boolean` *(default: false)*
+
+Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
+
 ### setOptions
 
 Sets new options to the QRCode and redraws it.

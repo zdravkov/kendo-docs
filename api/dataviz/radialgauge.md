@@ -417,6 +417,35 @@ Redraws the gauge.
     var gauge = $("#radial-gauge").data("kendoRadialGauge");
     gauge.redraw();
 
+### resize
+
+Adjusts the widget layout to match the size of the container.
+
+#### Example
+
+    <div id="gauge" style="width: 100px; height: 100px;"></div>
+    <script>
+        $("#gauge").kendoRadialGauge({
+            pointer: {
+                value: 50
+            },
+            scale: {
+                min: 0,
+                max: 100
+            }
+        });
+
+        $("#gauge")
+           .css({ width: "200px", height: "200px" })
+           .data("kendoRadialGauge").resize();
+    </script>
+
+#### Parameters
+
+##### force `Boolean` *(default: false)*
+
+Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
+
 ### svg
 
 Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the gauge.

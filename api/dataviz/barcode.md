@@ -335,6 +335,29 @@ Redraws the barcode.
     var barcode = $("#barcode").data("kendoBarcode");
     barcode.redraw();
 
+### resize
+
+Adjusts the widget layout to match the size of the container.
+
+#### Example
+
+    <div id="barcode" style="width: 300px; height: 150px;"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value: "FOO"
+    });
+
+    $("#barcode")
+       .css("width", "600px")
+       .data("kendoBarcode").resize();
+    </script>
+
+#### Parameters
+
+##### force `Boolean` *(default: false)*
+
+Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
+
 ### svg
 
 Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the barcode. The returned string is a self-contained SVG document that can be used as is or converted to other formats using tools like [Inkscape](http://inkscape.org/) and

@@ -588,6 +588,35 @@ Redraws the gauge.
     var gauge = $("#linear-gauge").data("kendoLinearGauge");
     gauge.redraw();
 
+### resize
+
+Adjusts the widget layout to match the size of the container.
+
+#### Example
+
+    <div id="gauge" style="width: 50px; height: 100px;"></div>
+    <script>
+    $("#gauge").kendoLinearGauge({
+        pointer: {
+            value: 50
+        },
+        scale: {
+            min: 0,
+            max: 100
+        }
+    });
+
+    $("#gauge")
+       .css("height", "200px")
+       .data("kendoLinearGauge").resize();
+    </script>
+
+#### Parameters
+
+##### force `Boolean` *(default: false)*
+
+Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
+
 ### svg
 
 Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the gauge.

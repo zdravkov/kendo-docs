@@ -29092,6 +29092,30 @@ Reloads the data and renders the chart.
     chart.refresh();
     </script>
 
+### resize
+
+Adjusts the chart layout to match the size of the container.
+
+#### Example
+
+    <div id="chart" style="width: 400px;"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [
+        { type: "line", data: [1, 2] }
+      ]
+    });
+
+    $("#chart").css("width", "800px")
+               .data("kendoChart").resize();
+    </script>
+
+#### Parameters
+
+##### force `Boolean` *(default: false)*
+
+Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
+
 ### setDataSource
 
 Sets the data source of the widget.
