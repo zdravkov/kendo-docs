@@ -5639,7 +5639,7 @@ The widget instance which fired the event.
 
 ### navigate
 
-Fired when the user changes selected date, view or of the scheduler
+Fired when the user changes the selected date, or view of the scheduler
 
 The event handler function context (available via the `this` keyword) will be set to the widget instance.
 
