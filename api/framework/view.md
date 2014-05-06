@@ -9,6 +9,19 @@ publish: true
 
 ## Configuration
 
+### evalTemplate `Boolean`*(default: false)*
+
+If set to `true`, the view template will be treated as kendo template and evaluated against the provided model instance.
+
+#### Example
+
+    <div id="app"></div>
+    <script>
+     var foo = { foo: "foo" }
+     var view = new kendo.View('<span>#: foo #</span>', { model: foo, evalTemplate: true });
+     view.render($("#app"));
+    </script>
+
 ### model `ObservableObject`*(default: null)*
 
 The MVVM model to bind the element to.
@@ -38,7 +51,6 @@ The tag used for the root element of the view.
 ### wrap `Boolean` *(default: true)*
 
 If set to `false`, the view will not wrap its contents in a root element. In that case, the view element will point to the root element in the template. If false, the view template should have a **single** root element.
-
 
 #### Example
 

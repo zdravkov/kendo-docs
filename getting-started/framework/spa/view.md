@@ -73,6 +73,20 @@ If no model is present, the content will be processed using [Data Attribute Init
         var index = new kendo.View('index', {model: model});
     </script>
 
+If the view `evalTemplate` configuration option is set to `true`, the template will be treated as [kendo template](/kendo-ui/getting-started/framework/templates/overview) and evaluated against the passed model instance **when the view is rendered initially**.
+
+> Changing the viewModel fields will not re-render the view template. If you want to display dynamic data, you should use the `data-bind` syntax.
+
+## MVVM Bound View with an evaluated template
+    <script id="index" type="text/x-kendo-template">
+        #: foo #
+        <div>Hello <span data-bind="text:foo"></span>!</div>
+    </script>
+
+    <script>
+        var model = kendo.observable({foo: "World"});
+        var index = new kendo.View('index', {model: model});
+    </script>
 
 ## Removing/Destroying Views
 
