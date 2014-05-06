@@ -42,3 +42,22 @@ When initialized, the mobile View will call [kendo.bind](/kendo-ui/framework/mvv
 This means that if an element with `data-role="listview"` is present, a mobile (and not web) listview will be initialized.
 This behaviour can be overriden by specifying the full widget class name (with its namespace) in the role attribute.
 
+With the *2014 Q2*, the mobile view events may be bound to the view model, too.
+
+#### Example
+
+    <script>
+     var foo = {
+         onViewInit: function(e) {
+            console.log(e);
+         },
+
+         onViewShow: function(e) {
+            console.log(e);
+         }
+     };
+    </script>
+
+    <div data-role="view" data-model="foo" data-bind="events: { init: onViewInit, show: onViewShow }>
+       <span data-bind="text:bar"></span>
+    </div>
