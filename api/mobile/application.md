@@ -87,6 +87,26 @@ The text displayed in the loading popup. Setting this value to false will disabl
     });
     </script>
 
+### modelScope `Object` *(default: "window")*
+
+The view model scope. By default, the views will try to resolve their models from the global scope (window).
+
+#### Example
+
+    <div data-role="view" data-model="foo" data-bind="events: {init: onInit }">Bar</div>
+
+    <script>
+    new kendo.mobile.Application($(document.body), {
+        modelScope: {
+            foo: {
+                onInit: function(e) {
+                    console.log(e);
+                }
+            }
+        }
+    });
+    </script>
+
 ### platform `String`
 
 Which platform look to force on the application. Supported values are `"ios"` (meaning iOS 6 look), `"ios7"`,`"android"`, `"blackberry"` and `"wp"`.
