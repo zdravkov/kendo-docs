@@ -169,6 +169,30 @@ Here is how to configure the Kendo MultiSelect to send parameters to the server:
             }
         </script>
 
+Here is how the **GetProducts** method looks like:
+
+        public JsonResult GetProducts(string text)
+        {
+            var northwind = new SampleEntities();
+
+            var products = northwind.Products.Select(product => new ProductViewModel
+                    {
+                    ProductID = product.ProductID,
+                    ProductName = product.ProductName,
+                    UnitPrice = product.UnitPrice ?? 0,
+                    UnitsInStock = product.UnitsInStock ?? 0,
+                    UnitsOnOrder = product.UnitsOnOrder ?? 0,
+                    Discontinued = product.Discontinued
+                    });
+
+            if (!string.IsNullOrEmpty(text))
+            {
+                products = products.Where(p => p.ProductName.Contains(text));
+            }
+
+            return Json(products, JsonRequestBehavior.AllowGet);
+        }
+
 > The Kendo MultiSelect has default event handler for the DataSource's Data callback. If you do not
 define event handler, it will be used.
 
