@@ -47,6 +47,26 @@ The following JavaScript errors will be thrown (depending on the browser):
 #### Solution
 Make sure jQuery is not included more than once in your page. Remove any duplicate `script` references to jQuery. Include all [required Kendo JavaScript files](/kendo-ui/getting-started/javascript-dependencies).
 
+### JavaScript error that Kendo widgets cannot be initialized in IE (Compatibility mode)
+
+Kendo widgets provide a WAI-ARIA support, which means that some ARIA specific attributes are added to the HTML element. When a widget tries to add an ARIA attribute using
+[jQuery's attr method](http://api.jquery.com/attr/), which in turn calls[Element.setAttribute method](https://developer.mozilla.org/en-US/docs/Web/API/Element.setAttribute),
+the *Internet Explorer* in Compatibility mode will raise a JavaScript error with the following message:
+
+* SCRIPT3: Member not found (in Internet Explorer 10+ in Compatibility Mode)
+
+The problem is reported to Microsoft [here](https://connect.microsoft.com/IE/feedback/details/774078). Also there is a [jQuery bug report](http://bugs.jquery.com/ticket/12577)
+where more information can be found.
+
+> **Note**: All Kendo widgets, which adds ARIA attributes to HTML elements will be affected.
+
+#### Solution
+1. The workaround is to force the *Internet Exprorer* to use the 'Edge' mode:
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+2. The other option is to path jQuery. You can find more information about the possible path in the aforementioned jQuery bug report.
+
 ## Scripts or stylesheets do not load from the Kendo UI CDN
 
 Please refer to [Kendo UI CDN Fallback and Troubleshooting](/kendo-ui/getting-started/javascript-dependencies#cdn-fallback-and-troubleshooting).
