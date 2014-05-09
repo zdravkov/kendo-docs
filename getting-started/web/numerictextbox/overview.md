@@ -96,3 +96,12 @@ its behavior.
 
     var numericTextBox = $("#numericTextBox").data("kendoNumericTextBox");
 
+## Known limitations
+
+Kendo NumericTextBox widget uses JavaScript [Number](http://ecma262-5.com/ELS5_HTML.htm#Section_8.5) object to keep its value, which has a certain precision limitation.
+In general, Number object can persists its precision up to 16 digits. Numbers longer than that length will be converted to
+exponential numbers and hence will lose their precision. As the widget relies on a Number object, it gets the same precision limitation.
+
+#### Workaround
+Unfortunately, there is no feasible workaround for this limitation as it comes from the JavaScript itself. What we suggest is to use
+simple INPUT element with server validation, because the used server language should be able to parse long numbers.
