@@ -344,6 +344,27 @@ tab.
         });
     </script>
 
+### navigatable `Boolean`*(default: true)*
+
+Specifies whether the TabStrip should be keyboard navigatable.
+
+#### Example
+
+    <div id="tabstrip">
+        <ul>
+            <li>Tab 1</li>
+            <li>Tab 2</li>
+        </ul>
+        <div>Content 1</div>
+        <div>Content 2</div>
+    </div>
+
+    <script>
+        $("#tabstrip").kendoTabStrip({
+            navigatable: false
+        });
+    </script>
+
 ## Fields
 
 ### tabGroup `jQuery`
