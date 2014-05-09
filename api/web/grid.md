@@ -642,6 +642,29 @@ The format that is applied to the value before it is displayed. Takes the form "
       dataSource: [ { date: new Date(), number: 3.1415 } ]
     });
     </script>
+    
+### columns.groupable `Boolean` *(default: true)*
+
+If set to false the column will not be groupable (requires Grid groupable property to be enabled). By default all columns are groupable 
+
+#### Example - disable grouping for individual column
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      groupable: true,
+      columns: [
+        { field: "name", groupable: false },
+        { field: "age"}
+      ],
+      dataSource: {
+        data: [
+          { name: "Jane Doe", age: 30 },
+          { name: "John Doe", age: 30 }
+        ]
+      }
+    });
+    </script>
 
 ### columns.groupHeaderTemplate `String|Function`
 
