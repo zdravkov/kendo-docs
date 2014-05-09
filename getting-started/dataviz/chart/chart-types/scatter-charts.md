@@ -68,8 +68,9 @@ The default line type is solid. The following dash styles are available through 
 For example:
 
     series: [{
-        name: "World",
-        data: [15.7, 16.7, 20, 23.5, 26.6],
+        type: "scatterLine",
+        name: "3.1C",
+        data: [[10, 70], [13, 90], [25, 100]],
         dashType: "dot"
     }]
 
