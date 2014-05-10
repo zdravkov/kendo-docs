@@ -10,10 +10,17 @@ publish: true
 Telerik UI for ASP.NET MVC is a set of server-side wrappers that allow using the Kendo UI widgets from C# or VB.NET code.
 This article shows how to download Telerik UI for ASP.NET MVC, install it and then run the sample ASP.NET MVC application.
 
-## Requirements
-Telerik UI for ASP.NET MVC requires ASP.NET MVC. It supports ASP.NET MVC  3, 4, and 5.
+## Requirements and Supported Environments
+Telerik UI for ASP.NET MVC requires ASP.NET MVC. It supports:
 
-The sample application requires:
+* .NET Framework - 3.5+
+* ASP.NET MVC 3+
+* Visual Studio - 2010+
+* IIS 5+
+* C# / VB.NET
+* SharePoint - 2010+
+
+The offline sample application requires:
 
 * ASP.NET MVC 4 or ASP.NET MVC 5
 * Visual Studio 2012 or Visual Studio 2013
