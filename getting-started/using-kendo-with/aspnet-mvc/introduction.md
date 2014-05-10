@@ -13,12 +13,12 @@ This article shows how to download Telerik UI for ASP.NET MVC, install it and th
 ## Requirements and Supported Environments
 Telerik UI for ASP.NET MVC requires ASP.NET MVC. It supports:
 
-* .NET Framework - 3.5+
+* .NET Framework 3.5+
 * ASP.NET MVC 3+
-* Visual Studio - 2010+
+* Visual Studio 2010+
 * IIS 5+
 * C# / VB.NET
-* SharePoint - 2010+
+* SharePoint 2010+
 
 The offline sample application requires:
 
