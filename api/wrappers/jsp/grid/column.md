@@ -110,6 +110,14 @@ and the current group value is displayed.The fields which can be used in the tem
     <kendo:grid-column groupHeaderTemplate="groupHeaderTemplate">
     </kendo:grid-column>
 
+### groupable `boolean`
+
+If set to false the column will not be groupable (requires Grid groupable property to be enabled). By default all columns are groupable
+
+#### Example
+    <kendo:grid-column groupable="groupable">
+    </kendo:grid-column>
+
 ### headerAttributes `java.lang.Object`
 
 HTML attributes of the column header. The grid renders a table header cell (<th>) for every column. The headerAttributes option can be used to set the HTML attributes of that th.

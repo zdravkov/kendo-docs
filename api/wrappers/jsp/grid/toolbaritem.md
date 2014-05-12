@@ -27,7 +27,7 @@ This class can be used to obtain reference to the button after Grid initializati
 
 ### template `java.lang.String`
 
-The template which renders the command. Be default renders a button.
+The template which renders the command. By default renders a button.
 
 #### Example
     <kendo:grid-toolbarItem template="template">
@@ -46,7 +46,7 @@ The text displayed by the command button. If not set the name` option would be u
 
 ### template `String`
 
-The template which renders the command. Be default renders a button.
+The template which renders the command. By default renders a button.
 
 
 #### Example
@@ -62,7 +62,7 @@ The template which renders the command. Be default renders a button.
 
 ### kendo:grid-toolbarItem-template
 
-The template which renders the command. Be default renders a button.
+The template which renders the command. By default renders a button.
 
 
 #### Example

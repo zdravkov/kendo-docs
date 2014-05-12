@@ -88,6 +88,14 @@ tab.
     <kendo:tabStrip dataUrlField="dataUrlField">
     </kendo:tabStrip>
 
+### navigatable `boolean`
+
+Specifies whether the TabStrip should be keyboard navigatable.
+
+#### Example
+    <kendo:tabStrip navigatable="navigatable">
+    </kendo:tabStrip>
+
 
 ##  Configuration JSP Tags
 

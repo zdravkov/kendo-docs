@@ -18,19 +18,10 @@ Describes the HTML markup of the different notification types as Kendo UI templa
 
 ### template `java.lang.String`
 
-Defines a Kendo UI template to be used with the corresponding notification type. Either templates.template or templates.templateId must be set.See the example above.
+Defines a Kendo UI template to be used with the corresponding notification type.See the example above.
 
 #### Example
     <kendo:notification-template template="template">
-    </kendo:notification-template>
-
-### templateId `java.lang.String`
-
-Defines a client ID of an external Kendo UI template to be used with the corresponding notification type. Do not include the # sign with the ID.
-Either templates.template or templates.templateId must be set.See the example above.
-
-#### Example
-    <kendo:notification-template templateId="templateId">
     </kendo:notification-template>
 
 ### type `java.lang.String`

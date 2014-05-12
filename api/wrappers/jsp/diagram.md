@@ -43,10 +43,33 @@ The template which renders the content of the shape when bound to a dataSource. 
     <kendo:diagram template="template">
     </kendo:diagram>
 
+### zoom `float`
+
+The zoom level in percentages.
+
+#### Example
+    <kendo:diagram zoom="zoom">
+    </kendo:diagram>
+
+### zoomMax `float`
+
+The zoom max level in percentages.
+
+#### Example
+    <kendo:diagram zoomMax="zoomMax">
+    </kendo:diagram>
+
+### zoomMin `float`
+
+The zoom min level in percentages.
+
+#### Example
+    <kendo:diagram zoomMin="zoomMin">
+    </kendo:diagram>
+
 ### zoomRate `float`
 
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
-If zoomRate is less than 1, zooming will be reversed.
+The zoom step when using the mouse-wheel to zoom in or out.
 
 #### Example
     <kendo:diagram zoomRate="zoomRate">

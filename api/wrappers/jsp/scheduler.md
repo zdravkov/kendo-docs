@@ -45,7 +45,9 @@ The current date of the scheduler. Used to determine the period which is display
 
 ### dateHeaderTemplate `java.lang.String`
 
-The template used to render the date header cells.By default the scheduler renders the date using the current culture date format.The fields which can be used in the template are:
+The template used to render the date header cells.By default the scheduler renders the date using a custom date format - "ddd M/dd".
+The "ddd" specifier, a.k.a abbreviated name of the week day, will be localized using the current Kendo UI culture.
+If the developer wants to control the day and month order then one needs to define a custom template.The fields which can be used in the template are:
 
 #### Example
     <kendo:scheduler dateHeaderTemplate="dateHeaderTemplate">
@@ -455,7 +457,7 @@ For additional information check the [moveEnd](/kendo-ui/api/web/scheduler#event
 
 ### navigate `String`
 
-Fired when the user changes selected date, view or of the schedulerThe event handler function context (available via the this keyword) will be set to the widget instance.
+Fired when the user changes the selected date, or view of the schedulerThe event handler function context (available via the this keyword) will be set to the widget instance.
 
 
 For additional information check the [navigate](/kendo-ui/api/web/scheduler#events-navigate) event documentation.
@@ -715,7 +717,7 @@ For additional information check the [moveEnd](/kendo-ui/api/web/scheduler#event
 
 ### kendo:scheduler-navigate
 
-Fired when the user changes selected date, view or of the schedulerThe event handler function context (available via the this keyword) will be set to the widget instance.
+Fired when the user changes the selected date, or view of the schedulerThe event handler function context (available via the this keyword) will be set to the widget instance.
 
 
 For additional information check the [navigate](/kendo-ui/api/web/scheduler#events-navigate) event documentation.
