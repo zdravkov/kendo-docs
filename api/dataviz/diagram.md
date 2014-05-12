@@ -644,8 +644,9 @@ A function returning a visual element to render for a given shape. The following
                 {"name": "Icenium"}
             ]
         }],
-        autoBind: true,
-        visual: getVisual
+        shapeDefaults: {
+            visual: getVisual
+        }
     });
 
     $("#diagram").getKendoDiagram().layout();
