@@ -613,8 +613,7 @@ A function returning a visual element to render for a given shape. The following
 * TextBlock
 * Image
 
-
-#### Example - how to use the visualTemplate
+#### Example - how to use the visual
 
     var diagram = kendo.dataviz.diagram;
     var getVisual = function(data) {
@@ -630,8 +629,8 @@ A function returning a visual element to render for a given shape. The following
         var fn = new diagram.TextBlock({
             text: data.name,
             fontSize: 16,
-            x   : 30,
-            y   : 30
+            x: 30,
+            y: 30
         });
         g.append(fn);
         return g;
@@ -646,7 +645,7 @@ A function returning a visual element to render for a given shape. The following
             ]
         }],
         autoBind: true,
-        visualTemplate: getVisual
+        visual: getVisual
     });
 
     $("#diagram").getKendoDiagram().layout();
