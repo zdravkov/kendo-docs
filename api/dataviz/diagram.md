@@ -22,33 +22,37 @@ data source is fired. By default the widget will bind to the data source specifi
 
     <div id="diagram"></div>
     <script>
-    $("#diagram").kendoDiagram(
-        {
-            dataSource: [
-                     {
-
-                         "name" : "Telerik",
-                         "items": [
-                             {"name": "Kendo"},
-                             {"name": "Icenium"}
-                         ]
-                     }
-                 ],
-            template  : "#= item.name #",
-            autoBind: false
-        }
-    );
+    $("#diagram").kendoDiagram({
+        dataSource: [{
+	       "name": "Telerik",
+	       "items": [
+	           {"name": "Kendo"},
+	           {"name": "Icenium"}
+	       ]
+	    }],
+        template: "#= item.name #",
+        autoBind: false
+    });
 
     // Fetching data will trigger "change" on the dataSource
     $("#diagram").getKendoDiagram().dataSource.fetch();
     </script>
 
-### zoomRate `Number` *(default: 1.1)*
+### zoomRate `Number` *(default: 0.1)*
 
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
-If zoomRate is less than 1, zooming will be reversed.
+The zoom step when using the mouse-wheel to zoom in or out.
 
-> Setting zoomRate of 1 will disable zooming.
+### zoom `Number` *(default: 1)*
+
+The zoom level in percentages.
+
+### zoomMin `Number` *(default: 0.1)*
+
+The zoom min level in percentages.
+
+### zoomMax `Number` *(default: 2)*
+
+The zoom max level in percentages.
 
 ### editable `Boolean|Object`
 
