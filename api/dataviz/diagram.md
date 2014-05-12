@@ -777,7 +777,7 @@ The alignment of the text inside the shape.
 ### shapes.visual `Function`
 
 A function returning a visual element to render for this shape.
-See [visual](#configuration-shapeDefaults-visual).
+See [visual](#configuration-shapeDefaults.visual).
 
 ## Methods
 
