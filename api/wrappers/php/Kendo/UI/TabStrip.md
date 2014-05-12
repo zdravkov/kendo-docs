@@ -367,6 +367,24 @@ Adds one or more TabStripItem to the TabStrip.
     $tabStrip->addItem($first, $second);
     ?>
 
+### navigatable
+Specifies whether the TabStrip should be keyboard navigatable.
+
+#### Returns
+`\Kendo\UI\TabStrip`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $tabStrip = new \Kendo\UI\TabStrip('TabStrip');
+    $tabStrip->navigatable(true);
+    ?>
+
 ### select
 Triggered before a tab is selected.
 For additional information check the [select](/kendo-ui/api/web/tabstrip#events-select) event documentation.

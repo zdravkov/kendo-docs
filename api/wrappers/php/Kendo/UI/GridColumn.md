@@ -267,6 +267,24 @@ and the current group value is displayed.The fields which can be used in the tem
     $column->groupHeaderTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### groupable
+If set to false the column will not be groupable (requires Grid groupable property to be enabled). By default all columns are groupable
+
+#### Returns
+`\Kendo\UI\GridColumn`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $column = new \Kendo\UI\GridColumn();
+    $column->groupable(true);
+    ?>
+
 ### headerAttributes
 HTML attributes of the column header. The grid renders a table header cell (<th>) for every column. The headerAttributes option can be used to set the HTML attributes of that th.
 

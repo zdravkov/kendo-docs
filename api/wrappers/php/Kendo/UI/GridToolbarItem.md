@@ -32,7 +32,7 @@ This class can be used to obtain reference to the button after Grid initializati
     ?>
 
 ### template
-The template which renders the command. Be default renders a button.
+The template which renders the command. By default renders a button.
 
 #### Returns
 `\Kendo\UI\GridToolbarItem`

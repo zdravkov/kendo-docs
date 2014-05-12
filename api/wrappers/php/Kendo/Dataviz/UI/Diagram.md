@@ -538,6 +538,24 @@ The template which renders the content of the shape when bound to a dataSource. 
     $diagram->template(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### zoom
+The zoom level in percentages.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoom(1);
+    ?>
+
 ### zoomEnd
 Fired when the user changes the diagram zoom level.
 For additional information check the [zoomEnd](/kendo-ui/api/dataviz/diagram#events-zoomEnd) event documentation.
@@ -574,9 +592,44 @@ For additional information check the [zoomEnd](/kendo-ui/api/dataviz/diagram#eve
     $diagram->zoomEnd(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### zoomMax
+The zoom max level in percentages.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoomMax(1);
+    ?>
+
+### zoomMin
+The zoom min level in percentages.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->zoomMin(1);
+    ?>
+
 ### zoomRate
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
-If zoomRate is less than 1, zooming will be reversed.
+The zoom step when using the mouse-wheel to zoom in or out.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
