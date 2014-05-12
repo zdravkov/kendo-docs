@@ -4452,7 +4452,7 @@ Adjusts the widget layout to match the size of the container.
 
 #### Parameters
 
-##### force `Boolean` *(default: false)*
+##### force `Boolean` *optional*
 
 Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
 
