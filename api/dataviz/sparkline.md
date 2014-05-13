@@ -3922,6 +3922,16 @@ The type of stack to plot. The following types are supported:
     });
     </script>
 
+### seriesDefaults.type `String`
+
+The type of the series. Available types:
+
+* area
+* column (synonym: bar)
+* line
+* pie
+* bullet
+
 ### seriesDefaults.tooltip `Object`
 
 The data point tooltip configuration options.

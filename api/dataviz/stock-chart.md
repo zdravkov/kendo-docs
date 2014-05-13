@@ -6873,6 +6873,18 @@ The type of stack to plot. The following types are supported:
 * "normal" - the value of the stack is the sum of all points in the category (or group)
 * "100%" - the value of the stack is always 100% (1.00). Points within the category (or group) are represented as percentages.
 
+### seriesDefaults.type `String`
+
+The default type of the series.
+
+The supported values are:
+
+* area
+* column
+* line
+* candlestick, ohlc
+* bullet
+
 ### seriesDefaults.tooltip `Object`
 
 The data point tooltip configuration options.

@@ -13636,6 +13636,35 @@ The type of stack to plot. The following types are supported:
     });
     </script>
 
+### seriesDefaults.type `String`
+
+The default type of the series.
+
+The supported values are:
+
+* area
+* bar
+* bubble
+* bullet
+* candlestick
+* column
+* donut
+* funnel
+* line
+* ohlc
+* pie
+* polarArea
+* polarLine
+* polarScatter
+* radarArea
+* radarColumn
+* radarLine
+* scatter
+* scatterLine
+* verticalArea
+* verticalBullet
+* verticalLine
+
 ### seriesDefaults.tooltip `Object`
 
 The chart series tooltip configuration options.
