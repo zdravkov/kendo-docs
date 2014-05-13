@@ -6,102 +6,82 @@ publish: true
 ---
 
 # \<kendo:chart-seriesDefaults-labels\>
-A JSP tag representing Kendo Labels.
+
+The chart series label configuration.
 
 #### Example
     <kendo:chart-seriesDefaults>
         <kendo:chart-seriesDefaults-labels></kendo:chart-seriesDefaults-labels>
     </kendo:chart-seriesDefaults>
 
-
 ## Configuration Attributes
 
+### background `java.lang.String`
 
-### background `String`
-
-The background color of the labels. Any valid CSS color string will work here,
-including hex and rgb.
+The background color of the labels. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
-    <kendo:chart background="background">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-labels background="background">
+    </kendo:chart-seriesDefaults-labels>
 
+### color `java.lang.String`
 
-
-### color `String`
-
-The text color of the labels. Any valid CSS color string will work here, including hex
-and rgb.
+The text color of the labels. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-labels color="color">
+    </kendo:chart-seriesDefaults-labels>
 
-
-
-### font `String`
+### font `java.lang.String`
 
 The font style of the labels.
-labels
 
 #### Example
-    <kendo:chart font="font">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-labels font="font">
+    </kendo:chart-seriesDefaults-labels>
 
+### format `java.lang.String`
 
-
-### format `String`
-
-The format of the labels.
+The format of the labels. Uses kendo.format.
 
 #### Example
-    <kendo:chart format="format">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults-labels format="format">
+    </kendo:chart-seriesDefaults-labels>
 
 ### margin `float`
 
-The margin of the labels.
+The margin of the labels. A numeric value will set all margins. Further configuration is available via [kendo:chart-seriesDefaults-labels-margin](#kendo-chart-seriesDefaults-labels-margin). 
 
 #### Example
-    <kendo:chart margin="margin">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults-labels margin="margin">
+    </kendo:chart-seriesDefaults-labels>
 
 ### padding `float`
 
-The padding of the labels.
+The padding of the labels. A numeric value will set all margins. Further configuration is available via [kendo:chart-seriesDefaults-labels-padding](#kendo-chart-seriesDefaults-labels-padding). 
 
 #### Example
-    <kendo:chart padding="padding">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-labels padding="padding">
+    </kendo:chart-seriesDefaults-labels>
 
+### template `java.lang.String`
 
-
-### template `String`
-
-The label template.
-Template variables:
+The template which renders the chart series label.The fields which can be used in the template are:
 
 #### Example
-    <kendo:chart template="template">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults-labels template="template">
+    </kendo:chart-seriesDefaults-labels>
 
 ### visible `boolean`
 
-The visibility of the labels.
+If set to true the chart will display the series labels. By default chart series labels are not displayed.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-labels visible="visible">
+    </kendo:chart-seriesDefaults-labels>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-seriesDefaults-labels-border
 
@@ -114,4 +94,63 @@ More documentation is available at [kendo:chart-seriesDefaults-labels-border](/k
     <kendo:chart-seriesDefaults-labels>
         <kendo:chart-seriesDefaults-labels-border></kendo:chart-seriesDefaults-labels-border>
     </kendo:chart-seriesDefaults-labels>
- 
+
+### kendo:chart-seriesDefaults-labels-margin
+
+The margin of the labels. A numeric value will set all margins.
+
+More documentation is available at [kendo:chart-seriesDefaults-labels-margin](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-labels-margin).
+
+#### Example
+
+    <kendo:chart-seriesDefaults-labels>
+        <kendo:chart-seriesDefaults-labels-margin></kendo:chart-seriesDefaults-labels-margin>
+    </kendo:chart-seriesDefaults-labels>
+
+### kendo:chart-seriesDefaults-labels-padding
+
+The padding of the labels. A numeric value will set all margins.
+
+More documentation is available at [kendo:chart-seriesDefaults-labels-padding](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-labels-padding).
+
+#### Example
+
+    <kendo:chart-seriesDefaults-labels>
+        <kendo:chart-seriesDefaults-labels-padding></kendo:chart-seriesDefaults-labels-padding>
+    </kendo:chart-seriesDefaults-labels>
+
+
+## Event Attributes
+
+### template `String`
+
+The template which renders the chart series label.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:chart-seriesDefaults-labels template="handle_template">
+    </kendo:chart-seriesDefaults-labels>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-seriesDefaults-labels-template
+
+The template which renders the chart series label.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:chart-seriesDefaults-labels>
+        <kendo:chart-seriesDefaults-labels-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:chart-seriesDefaults-labels-template>
+    </kendo:chart-seriesDefaults-labels>
+

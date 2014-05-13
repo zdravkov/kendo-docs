@@ -6,89 +6,74 @@ publish: true
 ---
 
 # \<kendo:chart-seriesDefaults-tooltip\>
-A JSP tag representing Kendo Tooltip.
+
+The chart series tooltip configuration options.
 
 #### Example
     <kendo:chart-seriesDefaults>
         <kendo:chart-seriesDefaults-tooltip></kendo:chart-seriesDefaults-tooltip>
     </kendo:chart-seriesDefaults>
 
-
 ## Configuration Attributes
 
+### background `java.lang.String`
 
-### background `String`
-
-The background color of the tooltip. The default is determined from the series color.
-
-#### Example
-    <kendo:chart background="background">
-    </kendo:chart>
-
-
-
-### color `String`
-
-The text color of the tooltip. The default is the same as the series labels color.
+The background color of the tooltip. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
-    <kendo:chart color="color">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-tooltip background="background">
+    </kendo:chart-seriesDefaults-tooltip>
 
+### color `java.lang.String`
 
+The text color of the tooltip. Accepts a valid CSS color string, including hex and rgb.
 
-### font `String`
+#### Example
+    <kendo:chart-seriesDefaults-tooltip color="color">
+    </kendo:chart-seriesDefaults-tooltip>
+
+### font `java.lang.String`
 
 The tooltip font.
 
 #### Example
-    <kendo:chart font="font">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-tooltip font="font">
+    </kendo:chart-seriesDefaults-tooltip>
 
+### format `java.lang.String`
 
-
-### format `String`
-
-The tooltip format.
+The format of the labels. Uses kendo.format.Format placeholders:
 
 #### Example
-    <kendo:chart format="format">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults-tooltip format="format">
+    </kendo:chart-seriesDefaults-tooltip>
 
 ### padding `float`
 
-The padding of the tooltip.
+The padding of the tooltip. A numeric value will set all paddings. Further configuration is available via [kendo:chart-seriesDefaults-tooltip-padding](#kendo-chart-seriesDefaults-tooltip-padding). 
 
 #### Example
-    <kendo:chart padding="padding">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-tooltip padding="padding">
+    </kendo:chart-seriesDefaults-tooltip>
 
+### template `java.lang.String`
 
-
-### template `String`
-
-The tooltip template.
-Template variables:
+The template which renders the tooltip.The fields which can be used in the template are:
 
 #### Example
-    <kendo:chart template="template">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults-tooltip template="template">
+    </kendo:chart-seriesDefaults-tooltip>
 
 ### visible `boolean`
 
-A value indicating if the tooltip should be displayed.
+If set to true the chart will display the series tooltip. By default the series tooltip is not displayed.
 
 #### Example
-    <kendo:chart visible="visible">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-tooltip visible="visible">
+    </kendo:chart-seriesDefaults-tooltip>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-seriesDefaults-tooltip-border
 
@@ -101,4 +86,51 @@ More documentation is available at [kendo:chart-seriesDefaults-tooltip-border](/
     <kendo:chart-seriesDefaults-tooltip>
         <kendo:chart-seriesDefaults-tooltip-border></kendo:chart-seriesDefaults-tooltip-border>
     </kendo:chart-seriesDefaults-tooltip>
- 
+
+### kendo:chart-seriesDefaults-tooltip-padding
+
+The padding of the tooltip. A numeric value will set all paddings.
+
+More documentation is available at [kendo:chart-seriesDefaults-tooltip-padding](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-tooltip-padding).
+
+#### Example
+
+    <kendo:chart-seriesDefaults-tooltip>
+        <kendo:chart-seriesDefaults-tooltip-padding></kendo:chart-seriesDefaults-tooltip-padding>
+    </kendo:chart-seriesDefaults-tooltip>
+
+
+## Event Attributes
+
+### template `String`
+
+The template which renders the tooltip.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:chart-seriesDefaults-tooltip template="handle_template">
+    </kendo:chart-seriesDefaults-tooltip>
+    <script>
+        function handle_template(e) {
+            // Code to handle the template event.
+        }
+    </script>
+
+## Event Tags
+
+### kendo:chart-seriesDefaults-tooltip-template
+
+The template which renders the tooltip.The fields which can be used in the template are:
+
+
+#### Example
+    <kendo:chart-seriesDefaults-tooltip>
+        <kendo:chart-seriesDefaults-tooltip-template>
+            <script>
+                function(e) {
+                    // Code to handle the template event.
+                }
+            </script>
+        </kendo:chart-seriesDefaults-tooltip-template>
+    </kendo:chart-seriesDefaults-tooltip>
+

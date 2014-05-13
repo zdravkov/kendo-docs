@@ -6,200 +6,154 @@ publish: true
 ---
 
 # \<kendo:chart-seriesDefaults\>
-A JSP tag representing Kendo SeriesDefaults.
+
+The default options for all series.
 
 #### Example
     <kendo:chart>
         <kendo:chart-seriesDefaults></kendo:chart-seriesDefaults>
     </kendo:chart>
 
-
 ## Configuration Attributes
 
+### area `java.lang.Object`
 
-### area `Object`
-
-The area configuration options.
-The default options for all area series. For more details see the series options.
+The area chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart area="area">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults area="area">
+    </kendo:chart-seriesDefaults>
 
+### bar `java.lang.Object`
 
-
-### candlestick `Object`
-
-The candlestick configuration options.
-The default options for all candlestick series. For more details see the series options.
+The bar chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart candlestick="candlestick">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults bar="bar">
+    </kendo:chart-seriesDefaults>
 
+### bubble `java.lang.Object`
 
-
-### ohlc `Object`
-
-The ohlc configuration options.
-The default options for all ohlc series. For more details see the series options.
+The bubble chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart ohlc="ohlc">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults bubble="bubble">
+    </kendo:chart-seriesDefaults>
 
+### candlestick `java.lang.Object`
 
-
-### bar `Object`
-
-The default options for all bar series. For more details see the series options.
+The candlestick chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart bar="bar">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults candlestick="candlestick">
+    </kendo:chart-seriesDefaults>
 
+### column `java.lang.Object`
 
-
-### bubble `Object`
-
-The bubble configuration options.
-The default options for all bubble series. For more details see the series options.
+The column chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart bubble="bubble">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults column="column">
+    </kendo:chart-seriesDefaults>
 
+### donut `java.lang.Object`
 
-
-### column `Object`
-
-The column configuration options.
-The default options for all column series. For more details see the series options.
+The donut chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart column="column">
-    </kendo:chart>
-
-
-
-### donut `Object`
-
-The donut configuration options.
-The default options for all donut series. For more details see the series options.
-
-#### Example
-    <kendo:chart donut="donut">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults donut="donut">
+    </kendo:chart-seriesDefaults>
 
 ### gap `float`
 
 The distance between category clusters.
 
 #### Example
-    <kendo:chart gap="gap">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults gap="gap">
+    </kendo:chart-seriesDefaults>
 
+### line `java.lang.Object`
 
-
-### line `Object`
-
-The line configuration options.
-The default options for all line series. For more details see the series options.
+The line chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart line="line">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults line="line">
+    </kendo:chart-seriesDefaults>
 
+### ohlc `java.lang.Object`
 
-
-### overlay `Object`
-
-The effects overlay.
+The ohlc chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart overlay="overlay">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults ohlc="ohlc">
+    </kendo:chart-seriesDefaults>
 
+### pie `java.lang.Object`
 
-
-### pie `Object`
-
-The pie configuration options.
-The default options for all pie series. For more details see the series options.
+The pie chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart pie="pie">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults pie="pie">
+    </kendo:chart-seriesDefaults>
 
+### scatter `java.lang.Object`
 
-
-### scatter `Object`
-
-The scatter configuration options.
-The default options for all scatter series. For more details see the series options.
+The scatter chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart scatter="scatter">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults scatter="scatter">
+    </kendo:chart-seriesDefaults>
 
+### scatterLine `java.lang.Object`
 
-
-### scatterLine `Object`
-
-The scatterLine configuration options.
-The default options for all scatterLine series. For more details see the series options.
+The scatterLine chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart scatterLine="scatterLine">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults scatterLine="scatterLine">
+    </kendo:chart-seriesDefaults>
 
 ### spacing `float`
 
-Space between bars.
+The space between the chart series as proportion of the series width.
 
 #### Example
-    <kendo:chart spacing="spacing">
-    </kendo:chart>
-
-
+    <kendo:chart-seriesDefaults spacing="spacing">
+    </kendo:chart-seriesDefaults>
 
 ### stack `boolean`
 
-A value indicating if the series should be stacked.
+A boolean value indicating if the series should be stacked. Further configuration is available via [kendo:chart-seriesDefaults-stack](#kendo-chart-seriesDefaults-stack). 
 
 #### Example
-    <kendo:chart stack="stack">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults stack="stack">
+    </kendo:chart-seriesDefaults>
 
+### type `java.lang.String`
 
-
-### verticalArea `Object`
-
-The vertical area configuration options.
-The default options for all vertical area series. For more details see the series options.
+The default type of the series.The supported values are:
 
 #### Example
-    <kendo:chart verticalArea="verticalArea">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults type="type">
+    </kendo:chart-seriesDefaults>
 
+### verticalArea `java.lang.Object`
 
-
-### verticalLine `Object`
-
-The vertical line configuration options.
-The default options for all vertical line series. For more details see the series options.
+The verticalArea chart series options. Accepts all values supported by the series option.
 
 #### Example
-    <kendo:chart verticalLine="verticalLine">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults verticalArea="verticalArea">
+    </kendo:chart-seriesDefaults>
+
+### verticalLine `java.lang.Object`
+
+The verticalLine chart series options. Accepts all values supported by the series option.
+
+#### Example
+    <kendo:chart-seriesDefaults verticalLine="verticalLine">
+    </kendo:chart-seriesDefaults>
 
 
-
-## Child JSP Tags
+##  Configuration JSP Tags
 
 ### kendo:chart-seriesDefaults-border
 
@@ -212,10 +166,10 @@ More documentation is available at [kendo:chart-seriesDefaults-border](/kendo-ui
     <kendo:chart-seriesDefaults>
         <kendo:chart-seriesDefaults-border></kendo:chart-seriesDefaults-border>
     </kendo:chart-seriesDefaults>
- 
+
 ### kendo:chart-seriesDefaults-labels
 
-Configures the series data labels.
+The chart series label configuration.
 
 More documentation is available at [kendo:chart-seriesDefaults-labels](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-labels).
 
@@ -224,10 +178,46 @@ More documentation is available at [kendo:chart-seriesDefaults-labels](/kendo-ui
     <kendo:chart-seriesDefaults>
         <kendo:chart-seriesDefaults-labels></kendo:chart-seriesDefaults-labels>
     </kendo:chart-seriesDefaults>
- 
+
+### kendo:chart-seriesDefaults-notes
+
+The seriesDefaults notes configuration.
+
+More documentation is available at [kendo:chart-seriesDefaults-notes](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-notes).
+
+#### Example
+
+    <kendo:chart-seriesDefaults>
+        <kendo:chart-seriesDefaults-notes></kendo:chart-seriesDefaults-notes>
+    </kendo:chart-seriesDefaults>
+
+### kendo:chart-seriesDefaults-overlay
+
+The chart series overlay options.
+
+More documentation is available at [kendo:chart-seriesDefaults-overlay](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-overlay).
+
+#### Example
+
+    <kendo:chart-seriesDefaults>
+        <kendo:chart-seriesDefaults-overlay></kendo:chart-seriesDefaults-overlay>
+    </kendo:chart-seriesDefaults>
+
+### kendo:chart-seriesDefaults-stack
+
+A boolean value indicating if the series should be stacked.
+
+More documentation is available at [kendo:chart-seriesDefaults-stack](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-stack).
+
+#### Example
+
+    <kendo:chart-seriesDefaults>
+        <kendo:chart-seriesDefaults-stack></kendo:chart-seriesDefaults-stack>
+    </kendo:chart-seriesDefaults>
+
 ### kendo:chart-seriesDefaults-tooltip
 
-The data point tooltip configuration options.
+The chart series tooltip configuration options.
 
 More documentation is available at [kendo:chart-seriesDefaults-tooltip](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-tooltip).
 
@@ -236,4 +226,4 @@ More documentation is available at [kendo:chart-seriesDefaults-tooltip](/kendo-u
     <kendo:chart-seriesDefaults>
         <kendo:chart-seriesDefaults-tooltip></kendo:chart-seriesDefaults-tooltip>
     </kendo:chart-seriesDefaults>
- 
+

@@ -6,43 +6,37 @@ publish: true
 ---
 
 # \<kendo:chart-seriesDefaults-border\>
-A JSP tag representing Kendo Border.
+
+The border of the series.
 
 #### Example
     <kendo:chart-seriesDefaults>
         <kendo:chart-seriesDefaults-border></kendo:chart-seriesDefaults-border>
     </kendo:chart-seriesDefaults>
 
-
 ## Configuration Attributes
 
+### color `java.lang.String`
 
-### color `String`
-
-The color of the border.
-
-#### Example
-    <kendo:chart color="color">
-    </kendo:chart>
-
-
-
-### dashType `String`
-
-The dash type of the border.
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
-    <kendo:chart dashType="dashType">
-    </kendo:chart>
+    <kendo:chart-seriesDefaults-border color="color">
+    </kendo:chart-seriesDefaults-border>
 
+### dashType `java.lang.String`
 
+The dash type of the chart series border.The following dash types are supported:
+
+#### Example
+    <kendo:chart-seriesDefaults-border dashType="dashType">
+    </kendo:chart-seriesDefaults-border>
 
 ### width `float`
 
-The width of the border.
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
 
 #### Example
-    <kendo:chart width="width">
-    </kendo:chart>
-
+    <kendo:chart-seriesDefaults-border width="width">
+    </kendo:chart-seriesDefaults-border>
 

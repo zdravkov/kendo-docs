@@ -92,6 +92,14 @@ A boolean value indicating if the series should be stacked. Further configuratio
     <kendo:sparkline-seriesDefaults stack="stack">
     </kendo:sparkline-seriesDefaults>
 
+### type `java.lang.String`
+
+The type of the series. Available types:
+
+#### Example
+    <kendo:sparkline-seriesDefaults type="type">
+    </kendo:sparkline-seriesDefaults>
+
 
 ##  Configuration JSP Tags
 
