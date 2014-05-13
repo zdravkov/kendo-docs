@@ -363,6 +363,24 @@ The chart series tooltip configuration options.
     $seriesDefaults->tooltip(array('background' => $background));
     ?>
 
+### type
+The default type of the series.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesDefaults`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\ChartSeriesDefaults();
+    $seriesDefaults->type('value');
+    ?>
+
 ### verticalArea
 The verticalArea chart series options. Accepts all values supported by the series option.
 

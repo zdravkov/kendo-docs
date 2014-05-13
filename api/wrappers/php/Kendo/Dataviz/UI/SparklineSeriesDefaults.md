@@ -249,3 +249,21 @@ The data point tooltip configuration options.
     $seriesDefaults->tooltip(array('background' => $background));
     ?>
 
+### type
+The type of the series. Available types:
+
+#### Returns
+`\Kendo\Dataviz\UI\SparklineSeriesDefaults`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\SparklineSeriesDefaults();
+    $seriesDefaults->type('value');
+    ?>
+

@@ -263,3 +263,21 @@ The data point tooltip configuration options.
     $seriesDefaults->tooltip(array('background' => $background));
     ?>
 
+### type
+The default type of the series.The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\StockChartSeriesDefaults`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesDefaults = new \Kendo\Dataviz\UI\StockChartSeriesDefaults();
+    $seriesDefaults->type('value');
+    ?>
+
