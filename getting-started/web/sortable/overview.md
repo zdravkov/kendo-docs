@@ -156,7 +156,7 @@ The **disabled** option specifies which items inside the Sortable's element cann
 
 A common problem that developers encounter is that input elements that are children of a sortable item cannot be focused with the mouse. The ignore option provides solution for this.
 
-> **Important** The `ignore` option is available in the latest internal build! This feature is **not** included in Q1 2014 (v2014.1.318).
+> **Important** The `ignore` option is available in Q1 2014 SP1 (2014.1.416)! This feature is **not** included in Q1 2014 (v2014.1.318).
 
 ### Example - Sortable widget with focus-able input elements
 
