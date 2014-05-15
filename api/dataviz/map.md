@@ -2308,7 +2308,7 @@ The minimum zoom level at which to show this layer.
         });
     </script>
 
-### layers.opacity `String` *(default: 1)*
+### layers.opacity `Number` *(default: 1)*
 
 The the opacity for the layer.
 
