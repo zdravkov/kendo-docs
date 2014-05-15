@@ -150,18 +150,6 @@ More documentation is available at [kendo:stockChart-series](/kendo-ui/api/wrapp
         <kendo:stockChart-series></kendo:stockChart-series>
     </kendo:stockChart>
 
-### kendo:stockChart-seriesDefaults
-
-Default values for each series.
-
-More documentation is available at [kendo:stockChart-seriesDefaults](/kendo-ui/api/wrappers/jsp/stockchart/seriesdefaults).
-
-#### Example
-
-    <kendo:stockChart>
-        <kendo:stockChart-seriesDefaults></kendo:stockChart-seriesDefaults>
-    </kendo:stockChart>
-
 ### kendo:stockChart-title
 
 The chart title configuration options or text.

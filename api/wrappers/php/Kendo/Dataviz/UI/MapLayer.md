@@ -141,14 +141,14 @@ The the opacity for the layer.
 
 #### Parameters
 
-##### $value `string`
+##### $value `float`
 
 
 
 #### Example 
     <?php
     $layer = new \Kendo\Dataviz\UI\MapLayer();
-    $layer->opacity('value');
+    $layer->opacity(1);
     ?>
 
 ### shape

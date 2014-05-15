@@ -61,7 +61,7 @@ The field should be an array with two numbers - latitude and longitude.Requires 
     <kendo:map-layer locationField="locationField">
     </kendo:map-layer>
 
-### opacity `java.lang.String`
+### opacity `float`
 
 The the opacity for the layer.
 
