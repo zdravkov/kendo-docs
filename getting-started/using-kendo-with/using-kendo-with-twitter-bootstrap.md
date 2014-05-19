@@ -38,7 +38,6 @@ will not work as expected. In general, multiple level nesting of the two product
 
 A possible easy workaround is to override the Bootstrap CSS, apply `content-box` box model to all elements on the page and use a `border-box` box model only to selected Bootstrap elements, which need it
 (these are all `.col-...` classes, `.row`, `.container` and `.container-fluid`). You can add the following CSS rules **after** the Bootstrap and Kendo UI stylesheets.
-They will be included in the Kendo UI distribution in the future.
 
 	/* reset everything to the default box model */
 	 
