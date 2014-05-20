@@ -4595,6 +4595,8 @@ DOM element or jQuery object which represents the navigatable cell.
 
 Returns the data item to which the specified table row is bound.
 
+**Note to developers using the Grid's MVC wrapper: the Grid must be Ajax-bound, otherwise the widget's dataSource instance does not contain the serialized data.**
+
 #### Parameters
 
 ##### row `String|Element|jQuery`
