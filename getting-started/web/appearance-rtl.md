@@ -10,7 +10,7 @@ publish: true
 
 In order to enable RTL support of the **Kendo UI** web widgets, please do the following:
 
-1. Register the **kendo.rtl.css** stylesheet. It is found in the same folder as the `kendo.common.css` file.
+1. Register the **kendo.rtl.css** stylesheet. It is found in the same folder as the `kendo.common.css` file. The RTL stylesheet should be registered after the common stylesheet and before the theme stylesheet.
 2. Wrap the Kendo widgets in an HTML element with a **k-rtl** CSS class. You can assign this class to the `<body>` tag, so that no additional DOM elements are required.
 
 The `k-rtl` class has the following effects:
