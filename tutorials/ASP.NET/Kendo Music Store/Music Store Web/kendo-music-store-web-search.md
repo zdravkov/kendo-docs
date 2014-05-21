@@ -7,7 +7,7 @@ publish: true
 
 # Album Search - Kendo Music Store
 
-![kendo-search-overview](images/kendo-search-overview.png)
+![kendo-search-overview](/tutorials/asp-net/kendo-music-store/music-store-web/images/kendo-search-overview.png)
 
 The Music Store application provides an text box for searching the store by album title.
 To implement this, a [Kendo AutoComplete Widget](http://demos.telerik.com/kendo-ui/web/autocomplete/index.html) was used.

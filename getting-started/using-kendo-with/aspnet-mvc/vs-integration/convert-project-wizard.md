@@ -13,7 +13,7 @@ To start the wizard click the **Telerik | UI for ASP.NET MVC | Convert to Teleri
 
 ##Project Settings
 
-![Project Settings](images/convert.png)
+![Project Settings](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/convert.png)
 
 You can modify the following project-wide settings:
 
@@ -27,13 +27,13 @@ You can modify the following project-wide settings:
 
 If you have layout and master page you can choose whether you want to apply the selected settings to both or only one of them:
 
-![update Project Resources](images/convert2.png)
+![update Project Resources](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/convert2.png)
 
 - **Theme** - Choose the visual theme for your Telerik UI for ASP.NET MVC Application
 
 In case you have neither a master page nor a layout page you have the opportunity to add one:
 
-![No Master Page](images/no_master_page.png)
+![No Master Page](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/no_master_page.png)
 
 The wizard gives you the option to create a new master page or layout page so that the user can set the Master Page settings. Depending on the selected view engine the wizard will create master page for WebForms or layout page for Razor.
 

@@ -34,7 +34,7 @@ When calling `kendoColorPicker` you can pass one argument with
 configuration options.  The default drop-down is a HSV (hue /
 saturation / value) selector and looks like this:
 
-![HSV picker](hsv-dropdown.png)
+![HSV picker](/getting-started/web/colorpicker/hsv-dropdown.png)
 
 ### Get a simple color picker
 
@@ -44,7 +44,7 @@ saturation / value) selector and looks like this:
 
 Will render a very simple picker containing 20 colors:
 
-![Simple picker with basic palette](simple-basic.png)
+![Simple picker with basic palette](/getting-started/web/colorpicker/simple-basic.png)
 
 ### Get the "web-safe" color palette
 
@@ -55,7 +55,7 @@ Will render a very simple picker containing 20 colors:
 This will display the 216 colors "web-safe" palette that would look
 like this:
 
-![Simple picker with web-safe palette](simple-web.png)
+![Simple picker with web-safe palette](/getting-started/web/colorpicker/simple-web.png)
 
 ### Custom colors for the simple picker
 

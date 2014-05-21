@@ -57,13 +57,13 @@ Each data point is an array that contains two values - X and Y.
 
 Produces the following Scatter Line chart.
 
- ![Scatter Line Chart](chart-scatter-line.png)
+ ![Scatter Line Chart](/getting-started/dataviz/chart/chart-types/chart-scatter-line.png)
 
 #### Dash type
 
 The default line type is solid. The following dash styles are available through the "dashType" option:
 
-![Dash Type](chart-dash-types.png)
+![Dash Type](/getting-started/dataviz/chart/chart-types/chart-dash-types.png)
 
 For example:
 
@@ -79,4 +79,4 @@ For example:
 
 Specifying "scatter" instead of "scatterLine" will remove the connecting lines
 
-![Scatter Chart](chart-scatter.png)
+![Scatter Chart](/getting-started/dataviz/chart/chart-types/chart-scatter.png)

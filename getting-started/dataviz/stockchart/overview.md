@@ -16,7 +16,7 @@ It includes extensive touch support and a navigator pane for easy browsing of ex
 
 The widget extends the [Chart widget](/kendo-ui/getting-started/dataviz/chart/overview) and shares most if its features. 
 
-![Stock Chart](stock-chart.png)
+![Stock Chart](/getting-started/dataviz/stockchart/stock-chart.png)
 
 Supported series types:
 

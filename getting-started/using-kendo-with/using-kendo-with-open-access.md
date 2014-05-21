@@ -14,7 +14,7 @@ In this article you will learn how [OpenAccess ORM](http://www.telerik com/produ
 
 To get started create a new **ASP.Net** **Empty Web Application. **
 
-![New Web Project](images/oa1.png)
+![New Web Project](/getting-started/using-kendo-with/images/oa1.png)
 
 *Note: You can really use any web based project template you like, in this walkthrough you will be starting from scratch.*
 
@@ -29,7 +29,7 @@ Add KendoUI to the project using the command:
     Install-Package KendoUIWeb
 
 Once you run both of these NuGet commands, the solution explorer should look
-like this:![Solution After Installing jQuery And Kendo UI](images/oa2.png)
+like this:![Solution After Installing jQuery And Kendo UI](/getting-started/using-kendo-with/images/oa2.png)
 
 Now we are ready to build the OpenAccess ORM model!
 
@@ -45,23 +45,23 @@ Model**.
 *Note: If you do not have OpenAccess ORM installed, you can get the trial
 edition [here](http://www.telerik.com/download-trial-file.aspx?pid=638).*
 
-![Build The Model](images/oa3.png)
+![Build The Model](/getting-started/using-kendo-with/images/oa3.png)
 
 Make sure to give the model a name, and then click **Add**.
 
 In the next window select **Populate from Database**, and click **Next**.
 
-![Populate From Data](images/oa4.png)
+![Populate From Data](/getting-started/using-kendo-with/images/oa4.png)
 
 Set up a connection to NorthwindOA, which is installed with OpenAccess, and
 then click next.
 
-![Connect To NorthwindOA](images/oa5.png)
+![Connect To NorthwindOA](/getting-started/using-kendo-with/images/oa5.png)
 
 At this point go ahead and include all tables from the database in the data
 model.
 
-![Include All Tables](images/oa6.png)
+![Include All Tables](/getting-started/using-kendo-with/images/oa6.png)
 
 Click finish, and step 2 is done!  The data model is ready to be used.  The
 next step is to expose this data model through a service layer.
@@ -71,19 +71,19 @@ next step is to expose this data model through a service layer.
 Perform a **build** on the application, and right click on the .rlinq file in the
 solution explorer. Select **Generate OpenAccess Domain Model Service…**, and the domain service wizard will fire up.
 
-![Generate OpenAccess Domain Model](images/oa7.png)
+![Generate OpenAccess Domain Model](/getting-started/using-kendo-with/images/oa7.png)
 
 *Note: please ensure you **build** the project before you launch the wizard. If you do not do this, you will not be able to see the domain model in the service wizard as shown below.*
 
-![Service Wizard](images/oa8.png)
+![Service Wizard](/getting-started/using-kendo-with/images/oa8.png)
 
 Select the NorthwindOA context in the wizard, and click Next.
 
-![Select Northwind OA](images/oa9.png)
+![Select Northwind OA](/getting-started/using-kendo-with/images/oa9.png)
 
 This screen allows you to configure the service that will be created.  Give the service a name, select the **WCF Data Services V2 tab**, and then click Finish.
 
-![Configure The Service](images/oa10.png)
+![Configure The Service](/getting-started/using-kendo-with/images/oa10.png)
 
 In about 3 clicks you created an OData service which exposes the domain model.
 
@@ -93,7 +93,7 @@ Now all that is left to do is configure the front end.  For now we will wire up 
 
 First thing we need to do is add a new *html* page to the project. So once again, right click on the project in the solution explorer, select **Add** > **New Item**, only this time choose HTML Page and name the page **default.htm** and then click **Add.**
 
-![Add HTML Page](images/oa11.png)
+![Add HTML Page](/getting-started/using-kendo-with/images/oa11.png)
 
 Now we need to add the needed Kendo files, so add the following lines in the head section:
 
@@ -174,7 +174,7 @@ The code needed is here:
 
 Now run the application, and navigate to default.htm.  If all went well you should be presented with a great looking *empty* grid:
 
-![Empty Grid](images/oa12.png)
+![Empty Grid](/getting-started/using-kendo-with/images/oa12.png)
 
 So what gives?!  Why is there no data in the grid?  Well if you take a look at firebug/Chrome/F12 tools you should see something like:
 
@@ -206,7 +206,7 @@ In the service add the **JSONPSupportBehavior** attribute:
 
 Run the application one more time, and this time, you should be greeted by a great looking *populated* grid.
 
-![Populated Grid](images/oa13.png)
+![Populated Grid](/getting-started/using-kendo-with/images/oa13.png)
 
 ## Conclusions
 

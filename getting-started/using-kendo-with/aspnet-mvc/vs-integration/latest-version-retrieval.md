@@ -10,14 +10,14 @@ With the **Telerik UI for ASP.NET MVC** Visual Studio Extensions you keep your p
 
 Once a day, upon Visual Studio launch, the extensions query the Telerik website for a new version of Telerik UI for ASP.NET MVC. A notification gets displayed when a new version is discovered:
 
-![Notification](images/notification.png)
+![Notification](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/notification.png)
 
 > **Note:**
 If you've disabled the notifications, you can use the Options Dialog to activate them again.
 
 Clicking the **Get Now** button starts the Latest Version Acquirer tool, prompting for your Telerik credentials in its first page. If you do not have www.telerik.com account, you can create one through the **Register** link.
 
-![Get latest version](images/lva1.png)
+![Get latest version](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/lva1.png)
 
 >**Important:**
 You cannot use the tool if you have a trial license. Attempt to download a distribution would result in an error message.
@@ -28,9 +28,9 @@ You can use the **Save my password** checkbox to avoid having to enter your Tele
 
 The download starts automatically after a confirmation window.
 
-![Get latest version](images/lva2.png)
-![Get latest version](images/lva3.png)
-![Get latest version](images/lva4.png)
+![Get latest version](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/lva2.png)
+![Get latest version](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/lva3.png)
+![Get latest version](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/lva4.png)
 
 Once the download succeeds, the latest version of Telerik UI for ASP.NET MVC** will be available for use in the **Upgrade Wizard** and the **New Project Wizard.
 

@@ -11,7 +11,7 @@ publish: true
 
 The Chart can display details about the data point that the mouse is currently hovering. The border of this tooltip matches the color of the series.
 
-![](chart-tooltip.png)
+![](/getting-started/dataviz/chart/chart-tooltip.png)
 
 ## Configuration
 

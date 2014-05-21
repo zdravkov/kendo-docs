@@ -13,9 +13,9 @@ This feature is only available in [async mode](modes#asynchronous-mode) and requ
 
 ## Uploading files with drag and drop
 
-1. The drop zone will appear when a file is dragged over the browser window.  ![](upload-dd1.png)
-2. The drop zone will be highlighted when the mouse is over it.  ![](upload-dd2.png)
-3. Releasing the file over the drop zone will add it to the upload queue.  ![](upload-dd3.png)
+1. The drop zone will appear when a file is dragged over the browser window.  ![](/getting-started/web/upload/upload-dd1.png)
+2. The drop zone will be highlighted when the mouse is over it.  ![](/getting-started/web/upload/upload-dd2.png)
+3. Releasing the file over the drop zone will add it to the upload queue.  ![](/getting-started/web/upload/upload-dd3.png)
 
 ##  Drop zone visibility
 

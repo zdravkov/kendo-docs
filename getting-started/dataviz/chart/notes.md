@@ -11,7 +11,7 @@ publish: true
 
 The Chart can display the matadata of a point or a specific part of the axis.
 
-![](chart-notes.png)
+![](/getting-started/dataviz/chart/chart-notes.png)
 
 ## Configuration
 

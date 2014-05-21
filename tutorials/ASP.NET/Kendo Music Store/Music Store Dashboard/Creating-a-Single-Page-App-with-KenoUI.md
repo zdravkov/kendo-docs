@@ -7,7 +7,7 @@ publish: true
 
 # Creating a Single-Page App with KendoUI - Music Dashboard
 
-![dashboard-overview](images/dashboard-overview.png)
+![dashboard-overview](/tutorials/asp-net/kendo-music-store/music-store-dashboard/images/dashboard-overview.png)
 
 The Music Dashboard is constructed as a single page app, built to have smooth transitions and high performance. Using the Sammy.js framework, the various pages of the application are routed through this framework and in ASP.NET MVC.
 
@@ -197,7 +197,7 @@ view's parent element. For the Music Dashboard this is the #main element.
 
 # Page navigation
 
-![navigation-strip](images/navigation-strip.png)
+![navigation-strip](/tutorials/asp-net/kendo-music-store/music-store-dashboard/images/navigation-strip.png)
 
 The various pages of the Music Dashboard are accessed through the nagivation strip along the top.
 

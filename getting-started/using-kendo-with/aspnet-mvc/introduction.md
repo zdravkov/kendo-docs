@@ -78,7 +78,7 @@ To run the sample application follow these steps.
     - to run the ASP.NET MVC 5 version open **wrappers\aspnetmvc\Examples\VS2013\Kendo.Mvc.Examples.sln** with **Visual Studio 2013**.
 3. Press **CTRL+F5** to build and run the application.
 4. A browser will load the start page of the sample application. Use the links to explore the available demos.
-![Telerik UI for ASP.NET MVC Sample Application](images/demos.png)
+![Telerik UI for ASP.NET MVC Sample Application](/getting-started/using-kendo-with/aspnet-mvc/images/demos.png)
 
 ### Contents
 

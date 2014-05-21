@@ -15,11 +15,11 @@ The Upgrade Wizard has two main purposes:
 
 The Upgrade Wizard can be launched from the **Telerik | UI for ASP.NET MVC | Upgrade Wizard** menu item.
 
-![Choose projects](images/upgrade_menu.png)
+![Choose projects](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/upgrade_menu.png)
 
 ##Choose which projects will be updated
 
-![update Project Resources](images/upgrade1.png)
+![update Project Resources](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/upgrade1.png)
 
 The page allows you to configure the following options:
 
@@ -37,7 +37,7 @@ The listed projects use Telerik UI for ASP.NET MVC** 4. If the solution contains
 
 ##Update Project Resources
 
-![Update Project Resources](images/upgrade2.png)
+![Update Project Resources](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/upgrade2.png)
 
 The Update Project Resources page allows you to:
 
@@ -45,7 +45,7 @@ The Update Project Resources page allows you to:
 
 ##Create Backup
 
-![Create Backup](images/upgrade3.png)
+![Create Backup](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/upgrade3.png)
 
 The **Create Backup** page allows you to:
 

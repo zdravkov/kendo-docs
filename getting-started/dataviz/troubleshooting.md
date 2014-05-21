@@ -10,7 +10,7 @@ List of common problems and suggested solutions.
 
 # Problem: The chart graphics do not render in Internet Explorer
 
-![Chart in IE](chart-ie.png)
+![Chart in IE](/getting-started/dataviz/chart-ie.png)
 
 **_Note:_**
 
@@ -22,7 +22,7 @@ You do **not** need to follow the steps below if you choose to enable *Intranet*
 
 *   Set the following option to "Enable" in Internet Explorer: "Internet Options -> Security -> Internet (or Local intranet) -> Custom Level -> Binary and script behaviors"
 
-![IEscript behaviors](chart-ie-script-behaviors.png)
+![IEscript behaviors](/getting-started/dataviz/chart-ie-script-behaviors.png)
 
 # Problem: The chart does not render with JavaScript disabled
 

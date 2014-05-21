@@ -32,7 +32,7 @@ In the **Hello Services** project, delete the **Site.Master**, **About.aspx**
 and **Default.aspx** pages.  Add a new WebForm to the project and call it
 **Default.aspx**.
 
-![add-new-webform](images/add-new-webform.png)
+![add-new-webform](/tutorials/asp-net/hello-kendo-ui/images/add-new-webform.png)
 
 When the document comes up, delete all of the unnecessary **DOCTYPE
 **declaration and HTML namespacing.  If you refer to [**Hello HTML5**][3], you
@@ -81,13 +81,13 @@ reference**. Select **online** from the left-hand side and search for
 you have a licensed copy before using Kendo UI in a production application.
 Click [here][11] for more information on Kendo UI licensing.**
 
-![kendo-ui-nuget](images/kendo-ui-nuget.png)
+![kendo-ui-nuget](/tutorials/asp-net/hello-kendo-ui/images/kendo-ui-nuget.png)
 
 Notice that you now have a **Content** folder that contains a **kendo**
 subfolder.  You also have a **Scripts** folder which also has a **kendo**
 subfolder.
 
-![solution-explorer-content](images/solution-explorer-content.jpg)
+![solution-explorer-content](/tutorials/asp-net/hello-kendo-ui/images/solution-explorer-content.jpg)
 
 ### Add Kendo UI To The Default Page
 
@@ -185,7 +185,7 @@ the **kendoGrid** function.  Inside that function, you will need to create the
 Now with that simple piece of markup and small bit of JavaScript, you have
 created a** [Kendo UI Grid][4]**.
 
-![kendo-grid-preview](images/kendo-grid-preview.png)
+![kendo-grid-preview](/tutorials/asp-net/hello-kendo-ui/images/kendo-grid-preview.png)
 
 Kendo UI automatically creates columns for each of the data items and assigns
 the field name as the column header.  We want to change this to make it more
@@ -214,7 +214,7 @@ spaced title case.  Right now they are title cased, but there is no space.
 Now the grid displays the column headers correctly and does not display the
 unnecessary **Id** column.
 
-![grid-preview-with-columns-and-sorting](images/grid-preview-with-columns-and-sorting.png)
+![grid-preview-with-columns-and-sorting](/tutorials/asp-net/hello-kendo-ui/images/grid-preview-with-columns-and-sorting.png)
 
 You can also enable drag-and-drop grouping by setting the **groupable: true
 **flag, as well as multi-column sorting, aggregating, and paging.
@@ -259,7 +259,7 @@ work with.
 
 Now the grid is setup for paging.
 
-![grid-preview-client-paging](images/grid-preview-client-paging.png)
+![grid-preview-client-paging](/tutorials/asp-net/hello-kendo-ui/images/grid-preview-client-paging.png)
 
 You need to push this paging to the server.  To tell Kendo UI to do this,
 simply toggle the **serverPaging: true** on the DataSource in the grid.
@@ -284,7 +284,7 @@ simply toggle the **serverPaging: true** on the DataSource in the grid.
         });
     });
 
-![grid-preview-server-paging-only-1-page](images/grid-preview-server-paging-only-1-page.png)
+![grid-preview-server-paging-only-1-page](/tutorials/asp-net/hello-kendo-ui//tutorials/asp-net/hello-kendo-ui/images/grid-preview-server-paging-only-1-page.png)
 
 The grid now displays only 1 page.  The reason for this is that it is
 expecting the server to send it some information that we have not yet
@@ -298,7 +298,7 @@ An inspection of the request in the **DevTools** reveals that Kendo UI is now
 sending **take, skip **and **pageSize** parameters back to the WebAPI service.
 You need to handle these parameters in the method on the server.
 
-![grid-preview-server-paging-broken-dev-tools](images/grid-preview-server-paging-broken-dev-tools.png)
+![grid-preview-server-paging-broken-dev-tools](/tutorials/asp-net/hello-kendo-ui/images/grid-preview-server-paging-broken-dev-tools.png)
 
 ### Handling Request Parameters
 
@@ -341,7 +341,7 @@ call the **Skip** and **Take **methods on your query to the **Employees
 The server is now handling the paging.  Start the application and preview it
 in the browser.
 
-![grid-preview-server-paging-only-1-page](images/grid-preview-server-paging-only-1-page.png)
+![grid-preview-server-paging-only-1-page](/tutorials/asp-net/hello-kendo-ui//tutorials/asp-net/hello-kendo-ui/images/grid-preview-server-paging-only-1-page.png)
 
 You will notice that there is still only 1 page of data.  This is because you
 have not yet given Kendo UI an essential piece of information.
@@ -451,7 +451,7 @@ indicating a server action.  You can add a
 like while the UI is waiting for the server to respond.  Kendo UI takes care
 of that too.
 
-![grid-preview-paging-server-dev-tools](images/grid-preview-paging-server-dev-tools.png)
+![grid-preview-paging-server-dev-tools](/tutorials/asp-net/hello-kendo-ui/images/grid-preview-paging-server-dev-tools.png)
 
 Download the full source for the project in this tutorial [**here**][6].  You
 will build on this tutorial in the weeks to come as you add more and more

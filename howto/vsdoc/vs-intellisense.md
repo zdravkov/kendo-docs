@@ -18,25 +18,25 @@ Each bundle package contains a *vsdoc* directory, which contains a vsdoc.js and 
 
 - Visual Studio 2008 SP1
 
-![Solution Explorer](solution-explorer.png)
+![Solution Explorer](/howto/vsdoc/solution-explorer.png)
 
 - Visual Studio 2012
 
-![Solution Explorer VS2012](solution-explorer-vs2012.png)
+![Solution Explorer VS2012](/howto/vsdoc/solution-explorer-vs2012.png)
 
 ## Features
 
 ### Widget Initialization Configuration Options
 
-![jquery plugin](jquery-plugin.png)
+![jquery plugin](/howto/vsdoc/jquery-plugin.png)
 
 ### Widget accessors
 
-![jquery plugin](jquery-accessor.png)
+![jquery plugin](/howto/vsdoc/jquery-accessor.png)
 
 ### Widget Methods
 
-![jquery plugin](widget-method.png)
+![jquery plugin](/howto/vsdoc/widget-method.png)
 
 ## Referencing
 
@@ -46,4 +46,4 @@ There are two ways to reference the intellisense.
 The `kendo.all-vsdoc.js` and `kendo.all.min.intellisense.js` files are also available on the [Kendo UI CDN](/kendo-ui/getting-started/javascript-dependencies#cdn), in the same folder as the regular JS files.
 1. Using a reference hint from within an external JS file as shown below
 
-![script reference](js-reference.png)
+![script reference](/howto/vsdoc/js-reference.png)

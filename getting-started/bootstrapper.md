@@ -53,7 +53,7 @@ You can start the Bootstrapper from the command line by having node run the `sta
 
 The Kendo UI Bootstrapper should now be up and running.  The first thing that it will want to know is where your Kendo UI source files are.  It's going to use this distribution to scaffold new projects, as well as know which files to provide to you during a build.  You have to provide this to continue on.
 
-![Bootstrapper First Launch](images/bootstrapper1.jpeg)
+![Bootstrapper First Launch](/getting-started/images/bootstrapper1.jpeg)
 
 ## Creating A Project
 
@@ -61,19 +61,19 @@ As mentioned, the Bootstrapper is not an IDE.  This means that you continue to u
 
 Create a new project by clicking on the `+` icon in the "Projects" sidebar menu, and call it "GettingStarted".
 
-![Create A New Project](images/bootstrapper2.jpeg)
+![Create A New Project](/getting-started/images/bootstrapper2.jpeg)
 
 By default, the Bootstrapper puts all of your projects into a `PROJECTS` folder in the root of the Bootstrapper install location.  You also have the option to specify a [RequireJS](http://blogs.telerik.com/kendoui/posts/13-05-08/requirejs-fundamentals) project configuration if you want.  For now, leave that box unchecked.
 
 The Bootstrapper will now scaffold you a simple project.  You can see the different project files in the main area of the Bootstrapper.  The files in your project are devided up into two types, **Project Files** and **Library Files**.  The **Project Files** are those which comprise the code that you are writing.  The **Library Files** are those third party libraries that you are using with your project.  Even if you don't have the library  files included in your HTML pages, the Bootstrapper will detect them and show them here if they exist in your project.
 
-![Project Files vs Library Files](images/bootstrapper3.jpeg)
+![Project Files vs Library Files](/getting-started/images/bootstrapper3.jpeg)
 
 You can preview the simple application that the Bootstrapper provided you with by clicking on the `Preview` button.  This will launch your application in a new Chrome window.
 
-![Preview Button](images/bootstrapper4.jpeg)
+![Preview Button](/getting-started/images/bootstrapper4.jpeg)
 
-![Application Preview](images/bootstrapper5.jpeg)
+![Application Preview](/getting-started/images/bootstrapper5.jpeg)
 
 The Bootstrapper will automatically refresh changes to your app in the preview window, so you're free to keep it open as you work on your app.
 
@@ -148,31 +148,31 @@ If you go back to your preview window now, you will see that it's empty.  The pr
 
 The Bootstrapper will lint your JavaScript for you using [JSHint](http://blogs.telerik.com/kendoui/posts/13-07-09/protecting-your-mellow-with-javascript-linters).  If you lint the code that you just copied, you will get one error.
 
-![JSHint Button](images/bootstrapper6.jpeg)
+![JSHint Button](/getting-started/images/bootstrapper6.jpeg)
 
-![JSHint Output](images/bootstrapper7.jpeg)
+![JSHint Output](/getting-started/images/bootstrapper7.jpeg)
 
 Oops.  That's not a deal breaker, but lets correct it.
 
-![Bootstrapper Console Output](images/bootstrapper9.jpeg)
+![Bootstrapper Console Output](/getting-started/images/bootstrapper9.jpeg)
 
 The Bootstrapper tells you the file and row where the error is.  If you dismiss the window, you will see the error in the console.
 
-![Bootstrapper Console Output](images/bootstrapper8.jpeg)
+![Bootstrapper Console Output](/getting-started/images/bootstrapper8.jpeg)
 
 The preview window is still empty.  There is still a problem with the code, but now it's not a JavaScript error, it's a Kendo UI configuration error.  The Bootstrapper also ships with the [Kendo Linter](https://github.com/kendo-labs/kendo-lint).  This tool is much like JSHint, but it is specific to Kendo UI.  It's job is to inspect and warn you about invalid widget configuration.  From the Bootstrapper, click the Kendo Lint button.
 
-![Kendo Linter Button](images/bootstrapper10.jpeg)
+![Kendo Linter Button](/getting-started/images/bootstrapper10.jpeg)
 
-![Kendo Linter Output](images/bootstrapper11.jpeg)
+![Kendo Linter Output](/getting-started/images/bootstrapper11.jpeg)
 
 The Kendo Linter is telling us that the option that was specified as `datasource` is invalid.  You can now consult the documentation inside of the Bootstrapper to find the ListView.
 
-![Filter Documentation Sidebar](images/bootstrapper12.jpeg)
+![Filter Documentation Sidebar](/getting-started/images/bootstrapper12.jpeg)
 
 You can see from the documentation that it should be `dataSource`, not `datasource`.
 
-![dataSource with an uppercase S](images/bootstrapper13.jpeg)
+![dataSource with an uppercase S](/getting-started/images/bootstrapper13.jpeg)
 
 Make that fix in the code and then return to the preview window.  You should see the most popular pictures from Instagram returned.
 
@@ -187,7 +187,7 @@ While the Bootstrapper refreshes the page for JavaScript and HTML changes, it ap
       margin: 5px;
     }
 
-![Finished Demo App](images/bootstrapper14.jpeg)
+![Finished Demo App](/getting-started/images/bootstrapper14.jpeg)
 
 ## Ready For Production
 
@@ -197,7 +197,7 @@ Now the application is ready to be deployed.  The Kendo UI Bootstrapper is well 
 
 Right now, the Bootstrapper is serving up the LESS file and letting the browser compile it.  We want the Bootstrapper to do that, so hit the Compile button.
 
-![Compile LESS And CoffeeScript Files](images/bootstrapper15.jpeg)
+![Compile LESS And CoffeeScript Files](/getting-started/images/bootstrapper15.jpeg)
 
 The LESS file is compiled to CSS.  The Bootstrapper is additionally capable of compiling JavaScript files.
 
@@ -205,17 +205,17 @@ The LESS file is compiled to CSS.  The Bootstrapper is additionally capable of c
 
 You may notice that you are currently using the entire `kendo.web.js` file.  That file contains all the widgets and it's quite large.
 
-![Kendo UI Web Is Large](images/bootstrapper16.jpeg)
+![Kendo UI Web Is Large](/getting-started/images/bootstrapper16.jpeg)
 
 It's entirely uncessary to have all of Kendo UI in an application that is only using one widget.  Really you just want the ListView and any other files it depends on.  The problem is that you don't know what files the ListView depends on, and it's kind of a pain to go hunt all of them down and copy and paste them in, hoping to get them in the right order.
 
 The Bootstrapper now takes care of all of this for you.  Simply click the Build Kendo button.
 
-![Build Kendo](images/bootstrapper18.jpeg)
+![Build Kendo](/getting-started/images/bootstrapper18.jpeg)
 
 The Bootstrapper will now walk your application and automatically determine what files you need.  It creates a custom build for you based on what widgets your application is actually using.  You can optionally include other files in this window as well by checking them.
 
-![Bootstrapper Determines Dependencies](images/bootstrapper19.jpeg)
+![Bootstrapper Determines Dependencies](/getting-started/images/bootstrapper19.jpeg)
 
 The resulting build is only 118K, which is roughly 6 times smaller.
 
@@ -223,7 +223,7 @@ The resulting build is only 118K, which is roughly 6 times smaller.
 
 The last step in a build process is usually to bundle all of the JavaScript and CSS up for delivery by Uglifying it, and then concatenating it together in one file.  The Bootstrapper does this with the Bundle button.
 
-![Bundling Minifies and Concatenates Files](images/bootstrapper20.jpeg)
+![Bundling Minifies and Concatenates Files](/getting-started/images/bootstrapper20.jpeg)
 
 The resulting output is a zip file containing your project, ready for deployment to production.
 

@@ -10,14 +10,14 @@ The Visual Studio Extensions options dialog provides settings allowing you to co
 
 It can be accessed via the **Telerik | VSExtensions Options** menu item.
 
-![Options menu](images/options_menu.png)
+![Options menu](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/options_menu.png)
 
 The Options dialog contains two sets of options that affect the Telerik UI for ASP.NET MVC Visual Studio Extensions.
 
 ## General Settings ##
 The settings under the General category affect all of the installed **Telerik Visual Studio Extensions**.
 
-![Options Dialog](images/options.png)
+![Options Dialog](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/options.png)
 
 ###Project setup
 - **Add referenced assemblies to solution and source control** – Sets the default value for the Add referenced assemblies to solution option in the Project Configuration Wizard.
@@ -42,7 +42,7 @@ Changing the folder path will not move existing folder contents from your previo
 ##Telerik UI for ASP.NET MVC Settings
 All settings under the KendoUI category affect only the Telerik UI for ASP.NET MVC Visual Studio Extensions.
 
-![Options Dialog](images/options_kendo.png)
+![Options Dialog](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/options_kendo.png)
 
 ###Latest version retrieval
 

@@ -12,7 +12,7 @@ The New Project wizard is used for creation of a new Telerik UI for ASP.NET MVC 
 
 ##Project Settings
 
-![New Project Wizard](images/new1.png)
+![New Project Wizard](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/new1.png)
 
 Using the options in the Telerik UI for ASP.NET MVC Project Settings page you can modify various project-wide settings:
 
@@ -28,7 +28,7 @@ Using the options in the Telerik UI for ASP.NET MVC Project Settings page you ca
 
 ##Data Access Settings
 
-![Data Access Settings](images/data_access.png)
+![Data Access Settings](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/data_access.png)
 
 On the next step the New Project wizard's Data Access page offers you initialize the creation of your data access layer using Telerik OpenAccess ORM. You are given the following options:
 

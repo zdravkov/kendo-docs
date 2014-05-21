@@ -13,7 +13,7 @@ We'll illustrate the process of creating a map from scratch, using freely availa
 The goal for this tutorial is a map of the Australian states and mainland territories.
 
 This is how the finished map should look like:
-![Finished map](images/map-au.png)
+![Finished map](/getting-started/dataviz/map/images/map-au.png)
 
 ## Finding Data
 
@@ -41,7 +41,7 @@ The open-source [QGIS](http://www.qgis.org/en/site/) project is an excellent cho
 We'll start by [importing the Esri Shapefile](http://www.qgis.org/en/docs/user_manual/working_with_vector/supported_data.html#esri-shapefiles) for the data set.
 With the help of the [Identify tool](http://www.qgis.org/en/docs/user_manual/introduction/general_tools.html#identify) we can quickly inspect the available metadata.
 
-![Identify results](images/map-qgis-identify.png)
+![Identify results](/getting-started/dataviz/map/images/map-qgis-identify.png)
 
 We can narrow down our interest to features with "AU" [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code.
 
@@ -83,7 +83,7 @@ It's GeoJSON data source will point to our processed dataset.
     });
     </script>
 
-![Unstyled map](images/map-au-base.png)
+![Unstyled map](/getting-started/dataviz/map/images/map-au-base.png)
 
 ## Styling
 

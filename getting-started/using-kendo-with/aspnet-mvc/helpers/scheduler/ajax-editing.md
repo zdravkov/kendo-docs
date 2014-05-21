@@ -19,11 +19,11 @@ Name the application "KendoSchedulerAjaxEditing". If you decided not to use the 
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Add a new "Entity Framework Data Model". Right click the `~/Models` folder in the solution explorer and pick "Add ->  New Item". Choose "Data -> ADO.NET Entity Data Model" in the "Add New Item" dialog.
 Name the model "Sample.edmx" and click "Next". This will start the "Entity Data Model Wizard".
-![New entity data model](images/entity-data-model.png)
+![New entity data model](/getting-started/using-kendo-with/aspnet-mvc/helpers/scheduler//getting-started/using-kendo-with/aspnet-mvc/helpers/scheduler/images/entity-data-model.png)
 1.  Pick the "Generate from database" option and click "Next". Configure a connection to the Sample database. Click "Next".
-![Choose the connection](images/entity-data-model.png)
+![Choose the connection](/getting-started/using-kendo-with/aspnet-mvc/helpers/scheduler//getting-started/using-kendo-with/aspnet-mvc/helpers/scheduler/images/entity-data-model.png)
 1.  Choose the "Tasks" table from the "Which database objects do you want to include in your model?". Leave all other options as they are set by default. Click "Finish".
-![Choose the Tasks table](images/database-objects.png)
+![Choose the Tasks table](/getting-started/using-kendo-with/aspnet-mvc/helpers/scheduler/images/database-objects.png)
 1. Add a new class to the `~/Models` folder. Name it `TaskViewModel`.
 
         public class TaskViewModel : ISchedulerEvent
@@ -253,4 +253,4 @@ Name the model "Sample.edmx" and click "Next". This will start the "Entity Data 
                 )
             )
 1. Build and run the application
-![Final result](images/scheduler.png)
+![Final result](/getting-started/using-kendo-with/aspnet-mvc/helpers/scheduler/images/scheduler.png)

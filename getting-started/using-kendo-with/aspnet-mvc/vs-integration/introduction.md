@@ -20,20 +20,20 @@ Additionally, the extensions can be accessed through the Solution Explorer conte
 
 **No selected project in Visual Studio**
 
- ![Create Menu](images/create_menu.png)
+ ![Create Menu](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/create_menu.png)
 
 
 **Selected project in Visual Studio is Standard ASP.NET MVC 3, 4 or 5 Web Application**
 
- ![Convert Menu](images/convert_menu.png)
+ ![Convert Menu](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/convert_menu.png)
 
 **Selected project in Visual Studio is Telerik UI for ASP.NET MVC** Web Application
 
- ![Configure Menu](images/configure_menu.png)
+ ![Configure Menu](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/configure_menu.png)
 
 When installed, the extensions add the following project templates to the New Project dialog of Visual Studio:
 
- ![Project templates](images/project_template.png)
+ ![Project templates](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/project_template.png)
 
 -   C# Telerik UI for ASP.NET MVC Web Application
 -   VB Telerik UI for ASP.NET MVC Web Application
@@ -42,7 +42,7 @@ These are available in the language specific nodes of the dialog as well:
 
 -   New ASP.NET MVC 3 or 4 Project Wizard also contains Telerik UI for ASP.NET MVC Web Application
 
-![Mvc Wizard](images/mvc_wizard.png)
+![Mvc Wizard](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/mvc_wizard.png)
 
 -   The Add New Project dialog contains Telerik UI for ASP.NET MVC Web Application under both CSharp\Web and Visual Basic\Web nodes.
 

@@ -78,7 +78,7 @@ then they'll be aggregated to display a single value.
 
 Note that the dates match the source:
 
-![Chart with date category axis](chart-category-date-axis.png)
+![Chart with date category axis](/getting-started/dataviz/chart/chart-category-date-axis.png)
 
 #### Example: Date series with grouping by year
 
@@ -118,7 +118,7 @@ Note that the dates match the source:
 
 Notice how the chart now displays the maximum value for each year:
 
-![Chart with grouped date category axis](chart-category-date-axis-grouped.png)
+![Chart with grouped date category axis](/getting-started/dataviz/chart/chart-category-date-axis-grouped.png)
 
 ### Aggregates
 

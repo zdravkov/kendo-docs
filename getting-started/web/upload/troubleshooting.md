@@ -15,13 +15,13 @@ As such, it is subject to security settings and can be accidentally disabled.
 
 Sample image of an affected component:
 
-![](upload-activex.png)
+![](/getting-started/web/upload/upload-activex.png)
 
 ### Suggested actions
 
 Set the following option to "Enable" in Internet Explorer: "Internet Options -> Security -> Internet (or Local intranet) -> Custom Level -> Binary and script behaviors"
 
-![](upload-ie-script-behaviors.png)
+![](/getting-started/web/upload/upload-ie-script-behaviors.png)
 
 ## Problem: Incorrect behavior in the Opera browser
 

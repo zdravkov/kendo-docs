@@ -141,7 +141,7 @@ The mobile pane in which adaptive Grid is placed will **not** expand in height a
 
 Column resizing feature on touch screen devices is triggered when the user holds a finger on the respective column header. When the resizing icon appears the user will be able to resize the column with dragging.
 
-![](adaptive-resizing-icon.png)
+![](/getting-started/web/grid/adaptive-resizing-icon.png)
 
 
 ## Further reading

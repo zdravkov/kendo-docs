@@ -20,7 +20,7 @@ To create a new ASP.NET MVC 4 Application follow these steps.
 4. Select **ASP.NET MVC 4 Web Application** and click **OK**. This will start the **New ASP.NET MVC 4 Project** wizard.
 5. Select **Internet Application** from the available templates and click **OK**. Alternatively you can select other templates - the remaining steps are the same.
 6. Press **CTRL+F5** to build and run the application.
-![New ASP.NET MVC 4 Application](images/mvc4-new-app.png)
+![New ASP.NET MVC 4 Application](/getting-started/using-kendo-with/aspnet-mvc/images/mvc4-new-app.png)
 
 ## Add Telerik UI for ASP.NET MVC to the application
 To use Telerik UI for ASP.NET MVC you need to include the required JavaScript and CSS files, reference the Kendo.Mvc.dll assembly and update the web.config file of the application.
@@ -36,7 +36,7 @@ To copy the Kendo UI JavaScript and CSS files in the Visual Studio Solution of t
 3. Copy the **styles** directory from the install location and paste it in the **Content** folder of the application.
 4. Rename the **Scripts/js** directory to **Scripts/kendo**. Rename **Content/styles** to **Content/kendo**.
 
-![Kendo directories in Solution Explorer](images/mvc4-solution.png)
+![Kendo directories in Solution Explorer](/getting-started/using-kendo-with/aspnet-mvc/images/mvc4-solution.png)
 
 After the Kendo UI JavaScript and CSS files are added in the application you can include them.
 
@@ -142,7 +142,7 @@ Finally lets use a Kendo UI widget.
 3. Press **CTRL+F5** to build and run the application.
 
 
-![Final result](images/mvc4-final.png)
+![Final result](/getting-started/using-kendo-with/aspnet-mvc/images/mvc4-final.png)
 
 ## Next steps
 

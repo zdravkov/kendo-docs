@@ -48,7 +48,7 @@ Each data point is an object that specifies the point value, category label and 
 
 This produces the following Pie Chart.
 
-![Pie Chart](chart-pie.png)
+![Pie Chart](/getting-started/dataviz/chart/chart-types/chart-pie.png)
 
 ## Effects Overlay
 
@@ -68,13 +68,13 @@ The following gradient options are available:
 
 *   roundedBevel - default
 
-![Pie Chart with roundedBevel overlay](chart-pie-overlay-roundBevel.png)
+![Pie Chart with roundedBevel overlay](/getting-started/dataviz/chart/chart-types/chart-pie-overlay-roundbevel.png)
 
 *   sharpBevel
 
-![Pie Chart with sharpBevel overlay](chart-pie-overlay-sharpBevel.png)
+![Pie Chart with sharpBevel overlay](/getting-started/dataviz/chart/chart-types/chart-pie-overlay-sharpbevel.png)
 
 *   none
 
-![Pie Chart with no overlay](chart-pie-overlay-none.png)
+![Pie Chart with no overlay](/getting-started/dataviz/chart/chart-types/chart-pie-overlay-none.png)
 

@@ -133,4 +133,4 @@ Here's an example for a pair of [AutoComplete](/kendo-ui/api/web/autocomplete) w
 
 Here's how the page looks in the browser:
 
-![Auto complate example](images/autocomplete-example.png)
+![Auto complate example](/howto/images/autocomplete-example.png)

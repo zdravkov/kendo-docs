@@ -12,7 +12,7 @@ The albums will be limited to 20 per page, and display paging navigation at both
 
 ## Displaying items in a ListView (with MVVM, templates, and binding to a remote data source)
 
-![kendo-genre-screenshot](images/kendo-genre-screenshot.png)
+![kendo-genre-screenshot](/tutorials/asp-net/kendo-music-store/music-store-web/images/kendo-genre-screenshot.png)
 
 ### Create the HTML
 

@@ -84,7 +84,7 @@ Sets the intermediate points (in global coordinates) of the connection.
 
 #### Example - setting intermediate connection points
 
-![Intermediate connection points.](connectionPoints.png)
+![Intermediate connection points.](/api/dataviz/diagram/connectionpoints.png)
 
     <div id="diagram"></div>
     <script>
@@ -213,7 +213,7 @@ Redraws the Connection with the given options.
 
 ##### Example - changing the Connection after it has been added
 
-![Connection redraw.](connectionRedraw.png)
+![Connection redraw.](/api/dataviz/diagram/connectionredraw.png)
 
     <div id="diagram"></div>
     <script>

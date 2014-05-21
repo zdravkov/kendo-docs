@@ -17,7 +17,7 @@ This page is contained in the files **Views\Home\Index.cshtml** and **Scripts\Ap
 
 ## Displaying items in a ListView (with MVVM, templates, and binding to a remote data source)
 
-![kendo-music-store-web-main-lists-screenshot](images\kendo-music-store-web-main-lists-screenshot.png)
+![kendo-music-store-web-main-lists-screenshot](/tutorials/asp-net/kendo-music-store/music-store-web/images/kendo-music-store-web-main-lists-screenshot.png)
 
 To implement our lists of "featured artist" and "top selling" albums,
 we can start with some simple HTML markup to represent the 2 ListView widgets:

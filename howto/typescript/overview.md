@@ -25,15 +25,15 @@ You can optionally include the latest jQuery TypeScript definition file as well:
 
 ### Get instance of existing Kendo UI widgets
 
-![Get instante of existing Kendo UI widget](get-instance.png)
+![Get instante of existing Kendo UI widget](/howto/typescript/get-instance.png)
 
 ### Initialize and configure any Kendo UI widget
 
-![All Kendo UI widgets](init.png)
+![All Kendo UI widgets](/howto/typescript/init.png)
 
 ### Initialize a Kendo DataSource
 
-![Initialize a Kendo DataSource](datasource.png)
+![Initialize a Kendo DataSource](/howto/typescript/datasource.png)
 
 ## Create Kendo UI widget via TypeScript inheritance
 

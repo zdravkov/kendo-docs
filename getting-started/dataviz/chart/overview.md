@@ -72,7 +72,7 @@ The chart is rendered by selecting the div with a jQuery selector and calling th
 
 This will render the chart shown below:
 
-![Empty Chart](chart-empty.png)</img>
+![Empty Chart](/getting-started/dataviz/chart/chart-empty.png)</img>
 
 The chart can then be given a title by specifying the "text" property of the "title" object in the Kendo Chart.
 
@@ -103,7 +103,7 @@ Start by creating a series that displays inline data.
 
 This will render a column chart by default.
 
-![Column Chart without categories](chart-column-no-categories.png)</img>
+![Column Chart without categories](/getting-started/dataviz/chart/chart-column-no-categories.png)</img>
 
 You will notice that the columns have no label across the category axis.
 You specify the labeling for the series in the [`categoryAxis` property](/kendo-ui/api/dataviz/chart#categoryAxis).
@@ -122,7 +122,7 @@ You specify the labeling for the series in the [`categoryAxis` property](/kendo-
         }
     });
 
-![Column Chart with categories](chart-column-categories.png)</img>
+![Column Chart with categories](/getting-started/dataviz/chart/chart-column-categories.png)</img>
 
 ## Categorical charts
 
@@ -227,7 +227,7 @@ A chart might have more than one value axis. These additional axes must have uni
     });
 
 
-![Chart with multiple axes](chart-multiple-axes.png)
+![Chart with multiple axes](/getting-started/dataviz/chart/chart-multiple-axes.png)
 
 In this example we have defined "temperature" and "humidity" axes. Series are associated to a value axis by specifying its name.
 
@@ -243,7 +243,7 @@ You can control the arrangement of the value axes by specifying the values (cate
 
 The first value axis will cross the category axis at the first category (leftmost). The second value axis will cross it at the last category.
 
-![Bar chart with customized axis crossing values](chart-axis-crossing-values.png)
+![Bar chart with customized axis crossing values](/getting-started/dataviz/chart/chart-axis-crossing-values.png)
 
 
 ## Scatter Charts
@@ -307,7 +307,7 @@ You can define more X and Y axes in addition to the primary axes. These addition
 
 The first series is associated with the default Y axis, as no axis name is specified. The "torque" series will be plotted on the "torque" Y axis.
 
-![Scatter chart with multiple axes](chart-scatter-line-multiple-axes.png)
+![Scatter chart with multiple axes](/getting-started/dataviz/chart/chart-scatter-line-multiple-axes.png)
 
 ### Axis crossing value(s)
 
@@ -321,7 +321,7 @@ You can control the arrangement of the X and Y axes by specifying the values at 
 
 The primary Y axis will cross the X axis at 0 (leftmost). The second, "torque" Y axis will cross the X axis at the 2500 mark or at its right end, whichever is first.
 
-![Scatter line chart with customized axis crossing value](chart-scatter-line-axis-crossing-value.png)
+![Scatter line chart with customized axis crossing value](/getting-started/dataviz/chart/chart-scatter-line-axis-crossing-value.png)
 
 
 ## Common features
@@ -364,7 +364,7 @@ A title can be added to clearly indicate the role of the axis.For example:
     });
 
 
-![Chart with axis titles](chart-axis-titles.png)
+![Chart with axis titles](/getting-started/dataviz/chart/chart-axis-titles.png)
 
 ### Plot Bands
 
@@ -392,7 +392,7 @@ For example:
     }]
 
 
-![Chart with axis plot bands](chart-plot-bands.png)
+![Chart with axis plot bands](/getting-started/dataviz/chart/chart-plot-bands.png)
 
 ## Global settings
 

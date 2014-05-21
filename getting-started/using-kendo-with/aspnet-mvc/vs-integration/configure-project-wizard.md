@@ -10,7 +10,7 @@ This help topic shows how to configure a Telerik UI for ASP.NET MVC Application.
 
 The **Telerik | UI for ASP.NET MVC | Configure Project** menu item opens the **Project Configuration Wizard**.
 
-![Configure Project](images/configure.png)
+![Configure Project](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/images/configure.png)
 
 You can modify the following project-wide settings:
 

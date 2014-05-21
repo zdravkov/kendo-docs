@@ -7,7 +7,7 @@ publish: true
 
 # Creating the Customer TreeView - SalesHub
 
-![kendo-saleshub-customer-TreeView-screenshot](images/kendo-saleshub-customer-TreeView-screenshot.png)
+![kendo-saleshub-customer-TreeView-screenshot](/tutorials/asp-net/saleshub/home-page/images/kendo-saleshub-customer-treeview-screenshot.png)
 
 In this section of the tutorial you'll learn how to create a [Kendo TreeView](http://demos.telerik.com/kendo-ui/web/treeview/index.html)
 server-side.

@@ -59,4 +59,4 @@ Lets add a basic tile layer bound to OpenStreetMap:
     });
     </script>
 
-![Basic map](images/map-basic.png)
+![Basic map](/getting-started/dataviz/map/images/map-basic.png)

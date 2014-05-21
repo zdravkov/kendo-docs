@@ -16,14 +16,14 @@ Name the application "KendoGridWebApiCRUD". If you decided not to use the Visual
 to add Telerik UI for ASP.NET MVC to the application.
 1. Add a new "Entity Framework Data Model". Right click the **Models** folder in Visual Studio solution explorer and pick **Add -> New Item**. Choose **Data -> ADO.NET Entity Data Model** from the **Add New Item** dialog.
 Name the model "Northwind.edmx" and click **Next**. This will start the **Entity Data Model Wizard**.
-![New entity data model](images/grid-entity-data-model.png)
+![New entity data model](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
 1. Select **Generate from database** option and click **Next**. Configure a connection to the Northwind database. Click **Next**.
 1. Select the **Products** table. Leave all other options as they are set by default. Click **Finish** to create the Entity Framework model.
-![Choose the Products table](images/grid-database-objects.png)
+![Choose the Products table](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-database-objects.png)
 1. Right click the **Controllers** folder in Visual Studio solution explorer. Select **Add -> Controller**.
 1. Set "ProductsController" as **Controller name**. Select **API controller with read/write actions, using Entity Framework** as **Template**. Select **Product (KendoGridWebApiCRUD.Models)** as **Model class** and
 **NorthwindEntities (KendoGridWebApiCRUD.Models)** as **Data context class**. Click **Add** to create the Web API controller.
-![Add Controller](images/grid-api-controller.png)
+![Add Controller](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-api-controller.png)
 1. Open **Controllers/ProductsController.cs**
 1. Update the **GetProducts** method to
 
@@ -118,4 +118,4 @@ Name the model "Northwind.edmx" and click **Next**. This will start the **Entity
                   .Pageable()
             )
 1. Build and run the application
-![Final result](images/grid-inline-grid.png)
+![Final result](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-inline-grid.png)

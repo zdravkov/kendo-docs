@@ -7,7 +7,7 @@ publish: true
 
 # Creating the Checkout Page - Kendo Music Store
 
-![kendo-checkout-screenshot](images/kendo-checkout-screenshot.png)
+![kendo-checkout-screenshot](/tutorials/asp-net/kendo-music-store/music-store-web/images/kendo-checkout-screenshot.png)
 
 The Checkout page is navigated to when the user hovers over the Shopping Cart Menu and clicks the "Checkout" button.
 It provides the user with a chance to review the items in their cart.

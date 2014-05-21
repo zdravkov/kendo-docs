@@ -88,7 +88,7 @@ The next step is to bind the grid to data.  The grid can be bound to local data 
          dataSource: people
      });
 
-![](grid2_1.png)
+![](/getting-started/web/grid/grid2_1.png)
 
 ### Data Binding – Remote
 
@@ -124,7 +124,7 @@ You can control the height of the grid by specifying a static pixel value.
     });
 
 
-![Grid With Fixed Height And Scrolling](grid3_1.png)
+![Grid With Fixed Height And Scrolling](/getting-started/web/grid/grid3_1.png)
 
 As all block elements, the Grid expands to 100% width. Setting CSS width properties for the Grid itself, or some of its ancestors can control the width of the Grid.
 
@@ -338,7 +338,7 @@ This will by default enable single row selection in the grid.
         // other configuration
      });
 
-![Grid With Row Selection Enabled](grid4_1.png)
+![Grid With Row Selection Enabled](/getting-started/web/grid/grid4_1.png)
 
 The `selectable` option can also be set to the following values:
 
@@ -404,9 +404,9 @@ Once grouping is enabled, a new area will be exposed in the header informing you
          // other configuration
     });
 
-![Grid With Grouping Enabled](grid5_1.png)
+![Grid With Grouping Enabled](/getting-started/web/grid/grid5_1.png)
 
-![Grid Grouped By Last Name](grid6_1.png)
+![Grid Grouped By Last Name](/getting-started/web/grid/grid6_1.png)
 
 You can additionally sort the grouping by clicking on the grouping tab.  In this example, clicking on “lastName” will sort the grouping descending.  Clicking it again will toggle to ascending.  Each of the individual groups themselves can be toggled from expanded to collapsed by clicking on the arrow next to the respective header grouping.
 
@@ -448,7 +448,7 @@ Sorting is supported in two formats: either single-column sorting, or multi-colu
          // other configuration
     });
 
-![Grid With Sorting Enabled](grid7_1.png)
+![Grid With Sorting Enabled](/getting-started/web/grid/grid7_1.png)
 
 The sortable attribute also has the following settings:
 
@@ -527,7 +527,7 @@ This is then specified as the template for each row by passing it in to the `row
 
 Now the email address is an interactive hyperlink  that will open a new email message.
 
-![Grid With Row Template](grid8_1.png)
+![Grid With Row Template](/getting-started/web/grid/grid8_1.png)
 
 ## Printing the Grid
 

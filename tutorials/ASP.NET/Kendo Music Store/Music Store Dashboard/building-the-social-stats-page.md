@@ -7,7 +7,7 @@ publish: true
 
 # Building the Social Stats Page
 
-![social-overview](images/social-overview.png)
+![social-overview](/tutorials/asp-net/kendo-music-store/music-store-dashboard/images/social-overview.png)
 
 The Social Stats page contains various views of social networking data taken from the Kendo UI Music Store. This includes Facebook Likes, Twitter tweets, Google Plus pluses, and Pintrest pins.
 
@@ -36,7 +36,7 @@ Note the functions **buildSocialStatsSeries** and **buildSocialStatsValueAxis**:
 
 These "social tiles" are located below the chart:
 
-![social-tiles](images/social-tiles.png)
+![social-tiles](/tutorials/asp-net/kendo-music-store/music-store-dashboard/images/social-tiles.png)
 
 These tiles are constructed using standard declarative markup in HTML and Javascript events. The HTML is below:
 

@@ -8,7 +8,7 @@ ordinal: 1
 
 # Tutorial: SalesHub: Introduction
 
-![kendo-saleshub-intro-home-screenshot](images/kendo-saleshub-intro-home-screenshot.png)
+![kendo-saleshub-intro-home-screenshot](/tutorials/asp-net/saleshub/images/kendo-saleshub-intro-home-screenshot.png)
 
 In this tutorial, we will review portions of the **SalesHub** sample project.
 
@@ -56,7 +56,7 @@ The first time the application launches, it creates and seeds its database.
 
 # Solution Structure
 
-![kendo-saleshub-intro-project-structure-screenshot](images/kendo-saleshub-intro-project-structure-screenshot.png)
+![kendo-saleshub-intro-project-structure-screenshot](/tutorials/asp-net/saleshub/images/kendo-saleshub-intro-project-structure-screenshot.png)
 
 There are three main projects in this sample application. They are:
 

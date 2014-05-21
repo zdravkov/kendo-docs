@@ -19,7 +19,7 @@ To create a new ASP.NET MVC 5 Application follow these steps.
 4. Select **ASP.NET Web Application** and click **OK**. This will start the **New ASP.NET  Project** wizard.
 5. Select **MVC** from the available templates and click **OK**.
 6. Press **CTRL+F5** to build and run the application.
-![New ASP.NET MVC 5 Application](images/mvc5-new-app.png)
+![New ASP.NET MVC 5 Application](/getting-started/using-kendo-with/aspnet-mvc/images/mvc5-new-app.png)
 
 ## Add Telerik UI for ASP.NET MVC to the application
 
@@ -38,7 +38,7 @@ To copy the Kendo UI JavaScript and CSS files in the Visual Studio Solution of t
 3. Copy the **styles** directory from the install location and paste it in the **Content** folder of the application.
 4. Rename the **Scripts/js** directory to **Scripts/kendo**. Rename **Content/styles** to **Content/kendo**.
 
-![Kendo directories in Solution Explorer](images/mvc5-solution.png)
+![Kendo directories in Solution Explorer](/getting-started/using-kendo-with/aspnet-mvc/images/mvc5-solution.png)
 
 After the Kendo UI JavaScript and CSS files are added in the application you can include them.
 
@@ -147,7 +147,7 @@ Finally lets use a Kendo UI widget.
 3. Press **CTRL+F5** to build and run the application.
 
 
-![Final result](images/mvc5-final.png)
+![Final result](/getting-started/using-kendo-with/aspnet-mvc/images/mvc5-final.png)
 
 ## Next steps
 

@@ -24,7 +24,7 @@ The main building blocks of the chart are:
 *   Axes
 *   Series
 
-![Chart Structure](chart-structure.png)
+![Chart Structure](/getting-started/dataviz/chart/chart-structure.png)
 
 ### Title
 
@@ -45,7 +45,7 @@ The legend position is also controllable. Supported `position` values:
 
 Custom positioning is configured through the `offsetX`  and `offsetY` options. For example:
 
-![Custom legend position](chart-legend-custom-position.png)
+![Custom legend position](/getting-started/dataviz/chart/chart-legend-custom-position.png)
 
 Series can be excluded from the legend by setting their `visibleInLegend` option to `false`.
 

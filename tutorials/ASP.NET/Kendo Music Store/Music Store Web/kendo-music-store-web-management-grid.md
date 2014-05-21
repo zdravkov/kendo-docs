@@ -7,7 +7,7 @@ publish: true
 
 # Creating the Store Management Grid - Kendo Music Store
 
-![kendo-manage-grid-screenshot](images/kendo-manage-grid-screenshot.png)
+![kendo-manage-grid-screenshot](/tutorials/asp-net/kendo-music-store/music-store-web/images/kendo-manage-grid-screenshot.png)
 
 When logged in to the Music Store as an administrator an additional button titled "Manage Store" is made available in the upper right corner.
 This opens the management grid which can be used to add, remove and delete albums from the store.

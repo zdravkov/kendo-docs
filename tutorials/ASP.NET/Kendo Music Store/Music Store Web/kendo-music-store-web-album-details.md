@@ -11,7 +11,7 @@ When an Album is clicked from any page, the album details are shown in a popup w
 This window gives the user the ability to change the quantity to order, and add the album to the cart.
 More than one album details window can be opened at once, and they can be dragged around the screen.
 
-![kendo-album-details-window](images/kendo-album-details-window.png)
+![kendo-album-details-window](/tutorials/asp-net/kendo-music-store/music-store-web/images/kendo-album-details-window.png)
 
 ## Calling a Common Function
 

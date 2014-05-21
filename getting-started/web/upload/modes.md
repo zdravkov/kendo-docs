@@ -15,7 +15,7 @@ From a developer's perspective an Upload in sync mode behaves much like a regula
 
 The users benefit from the ability to select a variable number of files. This feature does not require the browser to support multiple file selection.
 
-![](upload-sync.png)
+![](/getting-started/web/upload/upload-sync.png)
 
 The Upload is initialized from an existing file input placed in a form.
 
@@ -37,7 +37,7 @@ Please consult the documentation of your specific server technology regarding th
 
 In this mode the Upload requires dedicated server handlers to store and remove uploaded files. Files are uploaded immediately or, optionally, after user confirmation. The upload request is executed out-of-band without interrupting the page flow.
 
-![](upload-async.png)
+![](/getting-started/web/upload/upload-async.png)
 
 The async mode is implemented using the HTML5 File API. The upload will gracefully degrade and continue to function in legacy browsers using a hidden IFRAME.
 

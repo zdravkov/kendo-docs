@@ -80,7 +80,7 @@ in the variable not being found.
 
 
 
-![Capture][19](images/8C23-Capture.png)
+![Capture][19](/tutorials/images/8c23-capture.png)
 
 We can also add a constructor for this object by including an "_init_" method.
 We could then create a new person by newing up a new **Person** object. We’ll
@@ -120,7 +120,7 @@ to true.
     person.sayHello();
 
 
-![nh5](images/8C23-nh5.png)
+![nh5](/tutorials/images/8c23-nh5.png)
 
 Now we can instantiate a new person object of type parent that inherits the
 properties of **Person** by extending the base person object.  Here I’ve
@@ -156,9 +156,9 @@ person so we’ll toggle that on.
     alert(myDad.isAPrettyCoolPerson);
 
 
-![nh1](images/8C23-nh1_1.png)
+![nh1](/tutorials/images/8c23-nh1_1.png)
 
-![nh2](images/8C23-nh2.png)
+![nh2](/tutorials/images/8c23-nh2.png)
 
 Now a child would inherit some, but not all properties from their parents. I
 inherit my father's last name, but I override the first name since I have my
@@ -180,9 +180,9 @@ inherit from his as well right?
 
 
 
-![nh3](images/8C23-nh3.png)
+![nh3](/tutorials/images/8c23-nh3.png)
 
-![nh4](images/8C23-nh4.png)
+![nh4](/tutorials/images/8c23-nh4.png)
 
 ### Understanding Parent Objects
 

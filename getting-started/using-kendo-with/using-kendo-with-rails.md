@@ -85,7 +85,7 @@ Next, I'll start up my server
 
 And finally, open up a browser at `localhost:3000/shoes/new`. 
 
- ![Kendo UI and Rails in Action](images/shoefodder.png)
+ ![Kendo UI and Rails in Action](/getting-started/using-kendo-with/images/shoefodder.png)
 
 Using Kendo UI with Rails in your apps is simple with the kendo-rails gem. If you want to view a recorded walk-through of this process, you can check out the embedded video below, or [watch it over on our YouTube channel][3] (Note: be sure to watch in full screen mode to get all of the detail.)
 

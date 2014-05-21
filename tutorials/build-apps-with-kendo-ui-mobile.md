@@ -23,7 +23,7 @@ At the conclusion of this tutorial, you should be able to build a mobile app wit
 
 Kendo UI Mobile is designed to help developers build mobile app experiences using HTML and JavaScript that automatically adapt to the native look-and-feel of different mobile platforms. Developers using Kendo UI Mobile can focus on their app's function and content and let the Kendo UI framework handle differences between platforms like iOS and Android.
 
-![Illustration of Kendo UI Mobile adaptive rendering](images/km-adaptive-rending-illustration.png)  
+![Illustration of Kendo UI Mobile adaptive rendering](/tutorials/images/km-adaptive-rending-illustration.png)  
 *Fig 1: Illustration of Kendo UI Mobile adaptive rendering* 
 
 Where some mobile HTML frameworks focus on providing a "one size fits all" experience, Kendo UI Mobile focuses on delivering perfectly tailored experiences for different mobile platforms. **Built and packaged correctly, the goal of a Kendo UI Mobile app is to be virtually indistinguishable to end-users from a native SDK app.**
@@ -172,7 +172,7 @@ Add this script block *after* your jQuery and Kendo UI Mobile script links, but 
 
 This single line of JavaScript will automatically intialize your Kendo UI Mobile app and all widgets with the `data-role` attributes. Go ahead! [Give it a try](http://jsbin.com/egowef "Live example of tutorial code running on jsBin"). Load your page in a browser and see the beginnings of your HTML mobile app.
 
-![Basic Kendo UI Mobile app progress](images/km-basic-app-1.png)  
+![Basic Kendo UI Mobile app progress](/tutorials/images/km-basic-app-1.png)  
 *Fig 2: If everything is working correctly, your basic Kendo UI Mobile app should look like this image at this point in the tutorial.*
 
 > If you have trouble seeing the app, make sure all of your script and CSS resources are loading without error (using the browser developer tools). Some browsers (like Chrome) will block the loading of external resources if you load your page using the `file://` protocol. Instead, test your pages using local web server (localhost) or a browser that does not restrict local resources, like Safari.

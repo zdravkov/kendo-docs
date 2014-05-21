@@ -14,7 +14,7 @@ Telerik UI for ASP.NET MVC is a set of server-side wrappers. A server-wrapper do
 * Allows the developer to configure a Kendo UI widget via C# or VB.NET code - set its value, data source etc.
 * Renders the HTML and JavaScript needed to initialize the Kendo UI widget. The widget options propagate to the client-side via the widget initialization script.
 
-![Server-side wrapper outputs HTML and JavaScript](images/wrapper-output.png)
+![Server-side wrapper outputs HTML and JavaScript](/getting-started/using-kendo-with/aspnet-mvc/images/wrapper-output.png)
 
 ## Configuration
 
@@ -22,13 +22,13 @@ Telerik UI for ASP.NET MVC is a set of server-side wrappers. A server-wrapper do
 
 The **Kendo** [HtmlHelper](http://www.asp.net/mvc/tutorials/older-versions/views/creating-custom-html-helpers-cs) exposes all Kendo UI server-wrappers.
 
-![Kendo HtmlHelper extension method](images/kendo-extension.png)
+![Kendo HtmlHelper extension method](/getting-started/using-kendo-with/aspnet-mvc/images/kendo-extension.png)
 
 ### Widget options
 
 The widget options are exposed via [fluent interface](http://en.wikipedia.org/wiki/Fluent_interface).
 
-![Fluent interface](images/fluent-interface.png)
+![Fluent interface](/getting-started/using-kendo-with/aspnet-mvc/images/fluent-interface.png)
 
 To set an option call the corresponding method and pass the required option value.
 
@@ -43,7 +43,7 @@ To set an option call the corresponding method and pass the required option valu
 You must set the **Name** option of a Kendo UI widget. The value will be used as the `id` and `name` HTML attributes (the `name` HTML attribute is set only for input widgets e.g. DatePicker, NumericTextBox, DropDownList etc.).
 The `id` HTML attribute is used to initialize the Kendo UI widget.
 
-![Wrapper name](images/wrapper-name.png)
+![Wrapper name](/getting-started/using-kendo-with/aspnet-mvc/images/wrapper-name.png)
 
 Alternatively you can use `NumericTextBoxFor`. All Kendo UI widgets which accept a value can be initialized via a [WidgetName]For method e.g. DatePicker -> DatePicker**For**.
 Those methods set the **Name** of the widget automatically. Thus `@Html.Kendo().NumericTextBoxFor(model => model.Age)` is the same as `@Html.Kendo().NumericTextBox().Name("Age").Value(Model.Age)`.

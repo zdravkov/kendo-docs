@@ -19,9 +19,9 @@ The following tutorial shows how to configure Kendo UI TreeView for ASP.NET MVC 
 1. Add a new **Entity Framework DataM Model**. Right-click the **Models** folder in Visual Studio solution explorer and select **Add->New Item**. Choose **Data-> ADO.NET Data Model** from the **Add New Item** dialog.
 1. Name the model **Northwind.edmx** and click **Next**. This starts the **Entity Data Model Wizard**.
 1. Select **Generate from database** and click **Next**. Configure a connection to the Northwind database and click **Next**.
-![New entity data model](images/tree-entity-data-model.png)
+![New entity data model](/getting-started/using-kendo-with/aspnet-mvc/helpers/treeview/images/tree-entity-data-model.png)
 1. Select the **Employees** table and click **Finish**.
-![Choose the Employees table](images/tree-employees-table.png)
+![Choose the Employees table](/getting-started/using-kendo-with/aspnet-mvc/helpers/treeview/images/tree-employees-table.png)
 1. Open **Controllers/HomeController.cs** and add a new action method which will return JSON. The tree view will make an ajax request to this action method any time the
 user expands a parent node. The action method returns only the child nodes of the expanded parent node. The tree view will provide the unique identifier of the parent node or `null` when it makes the initial request.
 
@@ -87,4 +87,4 @@ user expands a parent node. The action method returns only the child nodes of th
                 )
             %>
 1. Press **CTRL+F5** to build and run the application. Expand the **Andrew Fuller** node and the tree view will load its children.
-![Final result](images/tree-employees.png)
+![Final result](/getting-started/using-kendo-with/aspnet-mvc/helpers/treeview/images/tree-employees.png)

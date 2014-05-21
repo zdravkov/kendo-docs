@@ -7,7 +7,7 @@ publish: true
 
 # Creating the Orders Grid - SalesHub
 
-![kendo-saleshub-orders-grid-screenshot](images/kendo-saleshub-orders-grid-screenshot.png)
+![kendo-saleshub-orders-grid-screenshot](/tutorials/asp-net/saleshub/home-page/images/kendo-saleshub-orders-grid-screenshot.png)
 
 In this section we'll show you how the Orders grid is set up using the Kendo UI MVC Extensions.
 

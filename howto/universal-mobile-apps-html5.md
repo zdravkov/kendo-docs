@@ -39,11 +39,11 @@ Building a universal mobile app using Kendo UI Mobile is not automatic, but it i
 
 The result allows the same deployed app to look like this on phones:
 
-![Universal app on phone](images/kendo-universal-phone.png)
+![Universal app on phone](/howto/images/kendo-universal-phone.png)
 
 And like this on tablets:
 
-![Universal app on tablet](images/kendo-universal-tablet.png)
+![Universal app on tablet](/howto/images/kendo-universal-tablet.png)
 
 In code, handling a universal app looks something like this:
 
@@ -128,11 +128,11 @@ Now the correct app will fade in to view (hardware accelerated by CSS), and the 
 
 Without this technique, app loading may look like this, with unitialized HTML visible before the app loads:
 
-![FOUJUI on mobile](images/foujui-mobile.gif)
+![FOUJUI on mobile](/howto/images/foujui-mobile.gif)
 
 With this technique applied, app loading is polished:
 
-![FOUJUI on mobile fixed](images/foujui-mobile-fixed.gif)
+![FOUJUI on mobile fixed](/howto/images/foujui-mobile-fixed.gif)
 
 ##Responsive Design
 What about responsive design, you ask?

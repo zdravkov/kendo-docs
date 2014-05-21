@@ -7,7 +7,7 @@ publish: true
 
 # Creating the Dashboard Main Page - Music Dashboard
 
-![dashboard-overview](images/dashboard-overview.png)
+![dashboard-overview](/tutorials/asp-net/kendo-music-store/music-store-dashboard/images/dashboard-overview.png)
 
 The main page constitutes the landing page of the Dashboard, and the navigation strip, an overview of recent sales far various periods of time, top singles and albums, and a series of gauges showing hourly data. For this view, we use a declarative approach similar to the Kendo Music Store itself, also using the **data-** attributes, and the [Kendo MVVM](http://demos.telerik.com/kendo-ui/web/mvvm/index.html) framework.
 

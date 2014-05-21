@@ -24,7 +24,7 @@ The Column Chart is the default chart rendered if a "_type_" is not specified.
     });
 
 
-![Column Chart with categories](chart-column-categories.png)
+![Column Chart with categories](/getting-started/dataviz/chart/chart-column-categories.png)
 
 ## Bar Chart
 
@@ -43,4 +43,4 @@ Setting the "type" property on the "series" object to "bar" renders horizontal b
             categories: [ 2000, 2001, 2002, 2003 ]
         }
     });
-![Bar Chart](chart-bar.png)
+![Bar Chart](/getting-started/dataviz/chart/chart-types/chart-bar.png)
