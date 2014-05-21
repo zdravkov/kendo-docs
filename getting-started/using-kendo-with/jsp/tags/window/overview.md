@@ -30,7 +30,7 @@ Here is how to configure a simple Kendo Window:
 
     <kendo:window name="window" title="About us" draggable="true" resizable="true">
         <kendo:window-content>
-            <img src="logo.png" alt="Our logo!" />
+            <img src="logo.png" alt="Our logo" />
             <p>More content about us.</p>
         </kendo:window-content>
     </kendo:window>
