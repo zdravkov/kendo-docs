@@ -204,7 +204,7 @@ The value should be a valid [number](/kendo-ui/api/framework/kendo#standard-numb
 
 ### How do I implement paging, sorting, filtering and grouping?
 
-If your model supports the `IQueryable` interface or is `DataTable` the grid will do paging, sorting, filtering, grouping and aggregates automatically.
+If your model supports the `IQueryable` interface or is `DataTable` the grid will do paging, sorting, filtering, grouping and aggregates (`DataTable` binding supports only `count` aggregate) automatically.
 For server binding scenarios no additional steps are required - just pass the IQueryable to the `Grid` constructor. Check the
 [server binding](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/server-binding) help topic for additional info.
 
