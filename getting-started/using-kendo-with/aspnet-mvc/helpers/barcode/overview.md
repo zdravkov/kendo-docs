@@ -27,13 +27,13 @@ Here is how to configure a simple Kendo Barcode:
 
             <%: Html.Kendo().Barcode()
                     .Name("barcode") // The name of the barcode is mandatory. It specifies the "id" attribute of the widget.
-                    .Value("#ff0000") // Set the value of the barcode
+                    .Value("foo") // Set the value of the barcode
             %>
     - Razor
 
             @(Html.Kendo().Barcode()
                   .Name("barcode") // The name of the barcode is mandatory. It specifies the "id" attribute of the widget.
-                  .Value("#ff0000") // Set the value of the barcode
+                  .Value("foo") // Set the value of the barcode
             )
 4. Choose the appropriate symbology(encoding), all available [here](/kendo-ui/api/web/barcode#configuration-type). And specify it through the Encoding method which accepts an enum value.
     - WebForms
@@ -41,14 +41,14 @@ Here is how to configure a simple Kendo Barcode:
             <%: Html.Kendo().Barcode()
                     .Name("barcode")
                     .Encoding(BarcodeSymbology.EAN13) //by default Code39 encoding is used
-                    .Value("#ff0000")
+                    .Value("foo")
             %>
     - Razor
 
             @(Html.Kendo().Barcode()
                   .Name("barcode")
                   .Encoding(BarcodeSymbology.EAN13) //by default Code39 encoding is used
-                  .Value("#ff0000")
+                  .Value("foo")
             )
 
 
