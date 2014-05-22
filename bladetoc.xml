@@ -2958,7 +2958,7 @@
         <Article Title="Create A Custom Kendo UI Widget" Slug="howto-create-custom-kendo-widget" />
         <Article Title="Interact With an Existing DB" Slug="howto-interact-with-an-existing-db" />
         <Article Title="Load Templates from External Files" Slug="howto-load-templates-external-files" />
-        <Article Title="Universal Mobile Apps with HTML5 & Kendo UI Mobile" Slug="howto-universal-mobile-apps-html5-kendoui-mobile" />
+        <Article Title="Universal Mobile Apps with HTML5 &amp; Kendo UI Mobile" Slug="howto-universal-mobile-apps-html5-kendoui-mobile" />
         <Article Title="Use CORS with All Browsers" Slug="howto-use-cors-with-all-modern-browsers" />
         <Article Title="Use Kendo UI Declarative Initialization" Slug="howto-use-kendo-ui-declarative-initialization" />
         <Article Title="Use the DataSource" Slug="howto-use-the-datasource" />
