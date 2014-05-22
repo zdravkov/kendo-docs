@@ -205,10 +205,10 @@ The field of the data item that provides the text content of the list items. The
     </select>
     <script>
     $("#multiselect").kendoMultiSelect({
-        dataSource: [{
+        dataSource: [
             { Name: "Parent1", Id: 1 },
             { Name: "Parent2", Id: 2 }
-        }]
+        ],
         dataTextField: "Name",
         dataValueField: "Id"
     });
