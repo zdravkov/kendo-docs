@@ -284,7 +284,7 @@ simply toggle the **serverPaging: true** on the DataSource in the grid.
         });
     });
 
-![grid-preview-server-paging-only-1-page](/tutorials/asp-net/hello-kendo-ui//tutorials/asp-net/hello-kendo-ui/images/grid-preview-server-paging-only-1-page.png)
+![grid-preview-server-paging-only-1-page](/tutorials/asp-net/hello-kendo-ui/images/grid-preview-server-paging-only-1-page.png)
 
 The grid now displays only 1 page.  The reason for this is that it is
 expecting the server to send it some information that we have not yet
@@ -341,7 +341,7 @@ call the **Skip** and **Take **methods on your query to the **Employees
 The server is now handling the paging.  Start the application and preview it
 in the browser.
 
-![grid-preview-server-paging-only-1-page](/tutorials/asp-net/hello-kendo-ui//tutorials/asp-net/hello-kendo-ui/images/grid-preview-server-paging-only-1-page.png)
+![grid-preview-server-paging-only-1-page](/tutorials/asp-net/hello-kendo-ui/images/grid-preview-server-paging-only-1-page.png)
 
 You will notice that there is still only 1 page of data.  This is because you
 have not yet given Kendo UI an essential piece of information.

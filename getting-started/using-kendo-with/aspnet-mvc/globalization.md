@@ -119,7 +119,7 @@ To change the provided localization messages a custom version of Kendo.Mvc.dll m
 
 1. Open the **\src\Kendo.Mvc\Kendo.Mvc.csproj** Visual Studio project. The **\src** directory is available only with the commercial version of Telerik UI for ASP.NET MVC.
 1. Locate the **Resources** directory in the solution explorer. It contains the resource files for the supported cultures.
-![Resources](/getting-started/using-kendo-with/aspnet-mvc//getting-started/using-kendo-with/aspnet-mvc/images/resources.png)
+![Resources](/getting-started/using-kendo-with/aspnet-mvc/images/resources.png)
 1. Open the resource file which corresponds to the target culture e.g. "Messages.es-ES.resx".
 1. Edit the resource file and save it.
 1. Change the solution configuration to "Release".
@@ -153,7 +153,7 @@ To add a localization for a new language a custom version of Kendo.Mvc.dll must 
 
 1. Open the **\src\Kendo.Mvc\Kendo.Mvc.csproj** Visual Studio project. The **\src** directory is available only with the commercial version of Telerik UI for ASP.NET MVC.
 1. Locate the **Resources** directory in the solution explorer. It contains the resource files for the supported cultures.
-![Resources](/getting-started/using-kendo-with/aspnet-mvc//getting-started/using-kendo-with/aspnet-mvc/images/resources.png)
+![Resources](/getting-started/using-kendo-with/aspnet-mvc/images/resources.png)
 1. Copy **Messages.resx** and paste it. Rename the copy to **Messages.culture-code.resx** e.g. **Messages.es-MX.resx**.
 1. Open the newly created resource file.
 1. Edit the resource file and save it. The **Messagex.resx** file contains the English messages.

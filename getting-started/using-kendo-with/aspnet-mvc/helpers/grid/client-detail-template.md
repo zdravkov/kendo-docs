@@ -22,9 +22,9 @@ Name the application "KendoGridClientDetailTemplate". If you decided not to use 
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Add a new "Entity Framework Data Model". Right click the `~/Models` folder in the solution explorer and pick "Add ->  New Item". Choose "Data -> ADO.NET Entity Data Model" in the "Add New Item" dialog.
 Name the model "Northwind.edmx" and click "Next". This will start the "Entity Data Model Wizard".
-![New entity data model](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
+![New entity data model](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
 1.  Pick the "Generate from database" option and click "Next". Configure a connection to the Northwind database. Click "Next".
-![Choose the connection](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
+![Choose the connection](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
 1.  Choose the "Products" table from the "Which database objects do you want to include in your model?". Leave all other options as they are set by default. Click "Finish".
 ![Choose the Products table](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-database-objects.png)
 1.  Open HomeController.cs and add a new action method which will return the Products as JSON. The grid will make ajax requests to this action.
@@ -148,9 +148,9 @@ Name the application "KendoGridClientHierarchy". If you decided not to use the T
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Add a new "Entity Framework Data Model". Right click the `~/Models` folder in the solution explorer and pick "Add ->  New Item". Choose "Data -> ADO.NET Entity Data Model" in the "Add New Item" dialog.
 Name the model "Northwind.edmx" and click "Next". This will start the "Entity Data Model Wizard".
-![New entity data model](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
+![New entity data model](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
 1.  Pick the "Generate from database" option and click "Next". Configure a connection to the Northwind database. Click "Next".
-![Choose the connection](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid//getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
+![Choose the connection](/getting-started/using-kendo-with/aspnet-mvc/helpers/grid/images/grid-entity-data-model.png)
 1.  Choose the "Products" and "Categories" tables from the "Which database objects do you want to include in your model?". Leave all other options as they are set by default. Click "Finish".
 1.  Open HomeController.cs and add a new action method which will return the Category entities as JSON. The grid will make ajax requests to this action.
 

@@ -20,7 +20,7 @@ This page is contained in the following files: **app/views/sales.html**, **app/s
 
 The **Sales By Genre** chart allows for the chart type to be changed dynamically. The chart can be changed from, for instance, a bar graph
 
-![sales-by-genre-bar](/tutorials/asp-net/kendo-music-store/music-store-dashboard//tutorials/asp-net/kendo-music-store/music-store-dashboard/images/sales-by-genre-bar.png)
+![sales-by-genre-bar](/tutorials/asp-net/kendo-music-store/music-store-dashboard/images/sales-by-genre-bar.png)
 
 to a line graph
 
@@ -93,7 +93,7 @@ The chart's options are then changed to the selected chart type, and the chart i
 
 The **Sales By Genre** and **Searches By Genre** charts also provide a method to dynamically change the temporal data in use. For example, using the buttons on top, the **Sales By Genre** chart can be changed from showing Weekly data
 
-![sales-by-genre-bar-weekly](/tutorials/asp-net/kendo-music-store/music-store-dashboard//tutorials/asp-net/kendo-music-store/music-store-dashboard/images/sales-by-genre-bar.png)
+![sales-by-genre-bar-weekly](/tutorials/asp-net/kendo-music-store/music-store-dashboard/images/sales-by-genre-bar.png)
 
 to showing Monthly data.
 
