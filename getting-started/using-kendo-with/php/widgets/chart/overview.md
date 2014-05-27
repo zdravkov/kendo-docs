@@ -21,6 +21,7 @@ There are two ways to bind Kendo Chart for PHP:
 Here is how to configure the chart for local binding:
 
 1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+
 2. Create an array which to which the chart will be bound to
 
         <?php
@@ -59,7 +60,6 @@ Here is how to configure the chart for local binding:
 
 You can reference the clien-side Kendo Chart instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
 Once a reference has been established, you can use the [API](/kendo-ui/api/dataviz/chart#methods) to control its behavior.
-
 
 ### Example
 

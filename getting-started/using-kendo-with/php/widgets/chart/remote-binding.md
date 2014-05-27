@@ -53,7 +53,8 @@ This help topic shows how to bind Kendo Chart for PHP to JSON response.
         $dataSource->transport($transport)
                    ->schema($schema);
         ?>
-1. Create a chart, configure its columns and set its data source.
+
+1. Create a chart, configure its series and set its data source.
 
         <?php
         $chart = new \Kendo\Dataviz\UI\Chart('chart');
