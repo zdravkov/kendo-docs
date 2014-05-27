@@ -25,6 +25,24 @@ The Editor allows users to create rich text content by means of a WYSIWYG interf
           $("#editor").kendoEditor();
       });
 
+## Classic Mode vs Inline Mode
+
+The Editor's mode is determined by the element from which the widget is created.
+
+* If the Editor is initialized from a `textarea`, it will assume its "classic" mode. The `textarea` will be hidden and it will be used to hold the widget value.
+A **contenteditable iframe** will be created for the user to type in. In the past, iframes were the only element, which allowed content editability in most browsers.
+* If the Editor is initialized from a `div` or any other element (divs are recommended in most cases), it will assume its "inline" mode.
+The originating element will be made **contenteditable** and it will be used by the widget to return its value.
+
+The major differences between the two modes are:
+
+* The classic Editor is able to post its value automatically, because it is based on a form element. The Editor tools are always visible. The Editor's content does not reside on the main web page, so the page styling does not
+influence the editable content. If custom styles need to be applied to the editable content, they should be [injected via the Editor's configuration](/kendo-ui/api/web/editor#configuration-stylesheets).
+[Classic Editor Demo](http://demos.telerik.com/kendo-ui/web/editor/index.html)
+* The inline Editor is not able to post its value and [this should be taken care of by the developer](/kendo-ui/getting-started/web/editor/troubleshooting).
+The Editor tools are only visible when the widget is focused. The Editor's content resides on the main web page, so the page styling can influence the editable content.
+[Inline Editor Demo](http://demos.telerik.com/kendo-ui/web/editor/inline-editing.html)
+
 ## Configuring the Editor
 
 The editor tools can be configured through the [`tools` configuration option](/kendo-ui/api/web/editor#tools).
