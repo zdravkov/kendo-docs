@@ -18,20 +18,20 @@ Here is how to configure a simple Kendo QRCode:
 
 2.  Create a new action method which renders the view:
 
-    @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
-    public String index() {
-        return "/dataviz/qrcode/index";
-    }
+        @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
+        public String index() {
+            return "/dataviz/qrcode/index";
+        }
 
 3.  Add a QRCode:
 
-    <kendo:qRCode name="qrcode" value="foo" >
-    </kendo:qRCode>
+        <kendo:qRCode name="qrcode" value="foo" >
+        </kendo:qRCode>
 
 4. Choose the appropriate [error correction level](/kendo-ui/api/dataviz/qrcode#configuration-errorCorrection) and [encoding](/kendo-ui/api/dataviz/qrcode#configuration-encoding).
 
-    <kendo:qRCode name="qrcode" value="foo" errorCorrection="H" encoding="UTF_8"  >
-    </kendo:qRCode>
+        <kendo:qRCode name="qrcode" value="foo" errorCorrection="H" encoding="UTF_8"  >
+        </kendo:qRCode>
 
 ## Accessing an Existing QRCode
 
@@ -41,11 +41,11 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/q
 
 ### Accessing an existing QRCode instance
 
-    //Put this after your Kendo QRCode tag
-    <script>
-    $(function() {
-        // Notice that the name of the qrcode is used to get its client-side instance
-        var qrcode = $("#qrcode").data("kendoQRCode");
-        qrcode.value("bar");
-    });
-    </script>
+        //Put this after your Kendo QRCode tag
+        <script>
+        $(function() {
+            // Notice that the name of the qrcode is used to get its client-side instance
+            var qrcode = $("#qrcode").data("kendoQRCode");
+            qrcode.value("bar");
+        });
+        </script>

@@ -18,13 +18,13 @@ Here is how to configure a simple Kendo UI RadialGauge:
 
 3.  Add a radial gauge:
 
-    $gauge = new \Kendo\Dataviz\UI\RadialGauge('gauge');
-    $gauge->pointer(array('value' => 10))
-          ->scale(array('min' => 0, 'max' => 100));
+        $gauge = new \Kendo\Dataviz\UI\RadialGauge('gauge');
+        $gauge->pointer(array('value' => 10))
+              ->scale(array('min' => 0, 'max' => 100));
 
 1. Output the chart by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
 
-    echo $gauge->render();
+        echo $gauge->render();
 
 ## Accessing an Existing Radial Gauge
 
@@ -33,12 +33,12 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/datav
 
 ### Accessing an existing RadialGauge instance
 
-    // Put this after your Kendo RadialGauge for PHP render() call
-    <script>
-    $(function() {
-        // Notice that the Name() of the radialGauge is used to get its client-side instance
-        var gauge = $("#radialGauge").data("kendoRadialGauge");
-        gauge.value(20);
-    });
-    </script>
+        // Put this after your Kendo RadialGauge for PHP render() call
+        <script>
+        $(function() {
+            // Notice that the Name() of the radialGauge is used to get its client-side instance
+            var gauge = $("#radialGauge").data("kendoRadialGauge");
+            gauge.value(20);
+        });
+        </script>
 

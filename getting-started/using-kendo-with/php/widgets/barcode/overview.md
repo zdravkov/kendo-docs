@@ -18,18 +18,18 @@ Here is how to configure a simple Kendo UI Barcode:
 
 1. Add a barcode with the default [type](/kendo-ui/api/web/barcode#configuration-type) (Code39):
 
-    $barcode = new \Kendo\Dataviz\UI\Barcode('barcode');
-    $barcode->value("foo");
+        $barcode = new \Kendo\Dataviz\UI\Barcode('barcode');
+        $barcode->value("foo");
 
 1. Change the symbology to match your scenario:
 
-    $barcode = new \Kendo\Dataviz\UI\Barcode('barcode');
-    $barcode->value("foo");
-    $barcode->type("ean8");
+        $barcode = new \Kendo\Dataviz\UI\Barcode('barcode');
+        $barcode->value("foo");
+        $barcode->type("ean8");
 
 1. Output the chart by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
 
-    echo $barcode->render();
+        echo $barcode->render();
 
 ## Accessing an Existing Barcode
 
@@ -38,11 +38,11 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/b
 
 ### Accessing an existing Barcode instance
 
-    // Put this after your Kendo Barcode for PHP render() call
-    <script>
-    $(function() {
-        // Notice that the name of the barcode is used to get its client-side instance
-        var barcode = $("#barcode").data("kendoBarcode");
-        barcode.value("foo");
-    });
-    </script>
+        // Put this after your Kendo Barcode for PHP render() call
+        <script>
+        $(function() {
+            // Notice that the name of the barcode is used to get its client-side instance
+            var barcode = $("#barcode").data("kendoBarcode");
+            barcode.value("foo");
+        });
+        </script>

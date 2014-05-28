@@ -23,44 +23,44 @@ Here is how to configure the Kendo StockChart for server binding:
 
 1. Create an array which to which the chart will be bound to
 
-    <?php
-    $data = array(
-        array('Date' => '2014-04-01', 'Open' => 10, 'High' => 20, 'Low' => 9, 'Close' => 12),
-        array('Date' => '2014-04-02', 'Open' => 12, 'High' => 19, 'Low' => 10, 'Close' => 14)
-    );
-    ?>
+        <?php
+        $data = array(
+            array('Date' => '2014-04-01', 'Open' => 10, 'High' => 20, 'Low' => 9, 'Close' => 12),
+            array('Date' => '2014-04-02', 'Open' => 12, 'High' => 19, 'Low' => 10, 'Close' => 14)
+        );
+        ?>
 
 1. Create a [data source](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource#data):
 
-    <?php
-    $dataSource = new \Kendo\Data\DataSource();
-    $dataSource->data($data);
-    ?>
+        <?php
+        $dataSource = new \Kendo\Data\DataSource();
+        $dataSource->data($data);
+        ?>
 
 1. Create a [stock chart](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChart) and configure it:
 
-    <?php
-    $chart = new \Kendo\Dataviz\UI\StockChart('stock-chart');
+        <?php
+        $chart = new \Kendo\Dataviz\UI\StockChart('stock-chart');
 
-    $series = new \Kendo\Dataviz\UI\StockChartSeriesItem();
-    $series->type('candlestick')
-           ->openField('Open')
-           ->highField('High')
-           ->lowField('Low')
-           ->closeField('Close');
+        $series = new \Kendo\Dataviz\UI\StockChartSeriesItem();
+        $series->type('candlestick')
+               ->openField('Open')
+               ->highField('High')
+               ->lowField('Low')
+               ->closeField('Close');
 
-    $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
-    $navigator->addSeriesItem(array('type' => 'area', 'field' => 'Close'));
+        $navigator = new \Kendo\Dataviz\UI\StockChartNavigator();
+        $navigator->addSeriesItem(array('type' => 'area', 'field' => 'Close'));
 
-    $chart->dataSource($dataSource)
-          ->dateField('Date')
-          ->addSeriesItem($series)
-          ->navigator($navigator);
-    ?>
+        $chart->dataSource($dataSource)
+              ->dateField('Date')
+              ->addSeriesItem($series)
+              ->navigator($navigator);
+        ?>
 
 1. Output the chart by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
 
-    <?php echo $chart->render(); ?>
+        <?php echo $chart->render(); ?>
 
 ## Getting Client-side Reference
 
@@ -69,13 +69,13 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/datav
 
 ### Example
 
-    // Put this after your Kendo StockChart for PHP render() call
-    <script>
-        $(function() {
-            // Notice that the name of the chart is used to get its client-side instance
-            var chart = $("#stockChart").data("kendoStockChart");
-        });
-    </script>
+        // Put this after your Kendo StockChart for PHP render() call
+        <script>
+            $(function() {
+                // Notice that the name of the chart is used to get its client-side instance
+                var chart = $("#stockChart").data("kendoStockChart");
+            });
+        </script>
 
 ## Handling Events
 
@@ -83,28 +83,28 @@ You can subscribe to all [events](/kendo-ui/api/dataviz/stock-chart#events) expo
 
 ### Example - subscribing by specifying JavaScript function name
 
-    <?php
-    $chart = new \Kendo\Dataviz\UI\StockChart('stock-chart');
+        <?php
+        $chart = new \Kendo\Dataviz\UI\StockChart('stock-chart');
 
-    // The 'chart_dataBound' JavaScript function will handle the 'dataBound' event of the chart
-    $chart->dataBound('chart_dataBound');
+        // The 'chart_dataBound' JavaScript function will handle the 'dataBound' event of the chart
+        $chart->dataBound('chart_dataBound');
 
-    echo $chart->render();
-    ?>
-    <script>
-    function chart_dataBound() {
-        // Handle the dataBound event
-    }
-    </script>
+        echo $chart->render();
+        ?>
+        <script>
+        function chart_dataBound() {
+            // Handle the dataBound event
+        }
+        </script>
 
 ### Example - providing inline JavaScript code
 
-    <?php
-    $chart = new \Kendo\Dataviz\UI\StockChart('stock-chart');
+        <?php
+        $chart = new \Kendo\Dataviz\UI\StockChart('stock-chart');
 
-    // Provide inline JavaScript code that will handle the 'dataBound' event of the chart
-    $chart->dataBound('function() { /* Handle the dataBound event */ }');
+        // Provide inline JavaScript code that will handle the 'dataBound' event of the chart
+        $chart->dataBound('function() { /* Handle the dataBound event */ }');
 
-    echo $chart->render();
-    ?>
+        echo $chart->render();
+        ?>
 

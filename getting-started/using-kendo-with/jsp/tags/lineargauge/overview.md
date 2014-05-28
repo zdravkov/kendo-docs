@@ -18,18 +18,18 @@ Here is how to configure a simple Kendo UI LinearGauge:
 
 2.  Create a new action method to render the view:
 
-    @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
-    public String index() {
-        return "/lineargauge/index";
-    }
+        @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
+        public String index() {
+            return "/lineargauge/index";
+        }
 
 3.  Add a LinearGauge:
 
-     <kendo:linearGauge name="gauge">
-        <kendo:linearGauge-pointer value="10" />
-        <kendo:linearGauge-scale min="0" max="100">
-        </kendo:linearGauge-scale>
-     </kendo:linearGauge>
+         <kendo:linearGauge name="gauge">
+            <kendo:linearGauge-pointer value="10" />
+            <kendo:linearGauge-scale min="0" max="100">
+            </kendo:linearGauge-scale>
+         </kendo:linearGauge>
 
 ## Accessing an Existing LinearGauge
 
@@ -38,12 +38,12 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/datav
 
 ### Accessing an existing LinearGauge instance
 
-    //Put this after your Kendo UI LinearGauge tag
-    <script>
-    $(function() {
-    // Notice that the name of the linearGauge is used to get its client-side instance
-        var gauge = $("#linearGauge").data("kendoLinearGauge");
-        gauge.value(20);
-    });
-    </script>
+        //Put this after your Kendo UI LinearGauge tag
+        <script>
+        $(function() {
+        // Notice that the name of the linearGauge is used to get its client-side instance
+            var gauge = $("#linearGauge").data("kendoLinearGauge");
+            gauge.value(20);
+        });
+        </script>
 

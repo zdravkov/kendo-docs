@@ -18,19 +18,19 @@ Here is how to configure a simple Kendo UI QRCode:
 
 1.  Add a qrcode:
 
-    $qrcode = new \Kendo\Dataviz\UI\QRCode('qrcode');
-    $qrcode->value("foo");
+        $qrcode = new \Kendo\Dataviz\UI\QRCode('qrcode');
+        $qrcode->value("foo");
 
 1. Choose the appropriate [error correction level](/kendo-ui/api/dataviz/qrcode#configuration-errorCorrection) and [encoding](/kendo-ui/api/dataviz/qrcode#configuration-encoding).
 
-    $qrcode = new \Kendo\Dataviz\UI\QRCode('qrcode');
-    $qrcode->value("foo")
-           ->errorCorrection("H")
-           ->encoding("UTF_8");
+        $qrcode = new \Kendo\Dataviz\UI\QRCode('qrcode');
+        $qrcode->value("foo")
+               ->errorCorrection("H")
+               ->encoding("UTF_8");
 
 1. Output the chart by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
 
-    echo $qrcode->render();
+        echo $qrcode->render();
 
 ## Accessing an Existing QRCode
 
@@ -40,10 +40,10 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/q
 
 ### Accessing an existing QRCode instance
 
-    //Put this after your Kendo QRCode for PHP render() call
-    <script>
-    $(function() {
-        // Notice that the Name() of the qrcode is used to get its client-side instance
-        var qrcode = $("#qrcode").data("kendoQRCode");
-    });
-    </script>
+        //Put this after your Kendo QRCode for PHP render() call
+        <script>
+        $(function() {
+            // Notice that the Name() of the qrcode is used to get its client-side instance
+            var qrcode = $("#qrcode").data("kendoQRCode");
+        });
+        </script>
