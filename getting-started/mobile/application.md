@@ -316,9 +316,11 @@ By default Android Kendo UI Mobile styling switches the places of the applicatio
 
 ### Switch places of header and footer
 
-    .km-root .km-android .km-view {
+    .km-android .km-view:not(.km-splitview) {
         -webkit-box-direction: normal;
+        box-direction: normal;
         -webkit-flex-direction: column;
+        flex-direction: column;
     }
 
 ## Forcing Platform Styles
