@@ -114,6 +114,59 @@ data source is fired. By default the widget will bind to the data source specifi
     });
     </script>
 
+### currentTimeMarker `Boolean|Object`
+
+If set to `false` the "current time" marker of the scheduler would not be displayed.
+
+#### Example - disable "current time" marker
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date(),
+      currentTimeMarker: false,
+      views: [
+        "day", "week", "workWeek"
+      ]
+    });
+    </script>
+
+### currentTimeMarker.updateInterval `Number` *(default: 10000)*
+
+The update interval of the "current time" marker, in milliseconds.
+
+#### Example - set the update interval of the "current time" marker
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date(),
+      currentTimeMarker: {
+        updateInterval: 100
+      },
+      views: [
+        "day", "week", "workWeek"
+      ]
+    });
+    </script>
+
+### currentTimeMarker.useLocalTimezone `Boolean` *(default: true)*
+
+If set to `false` the "current time" marker would be displayed using the scheduler [timezone](/kendo-ui/api/web/scheduler#configuration-timezone).
+
+#### Example - set "current time" marker to use scheduler timezone
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date(),
+      timezone: "Europe/London", // Use the London timezone
+      currentTimeMarker: {
+        useLocalTimezone: false
+      },
+      views: [
+        "day", "week", "workWeek"
+      ]
+    });
+    </script>
+
 ### dataSource `Object|Array|kendo.data.SchedulerDataSource`
 
 The data source of the widget which contains the scheduler events. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.SchedulerDataSource](/kendo-ui/api/framework/schedulerdatasource)
