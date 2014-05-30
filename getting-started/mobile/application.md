@@ -318,7 +318,7 @@ By default Android Kendo UI Mobile styling switches the places of the applicatio
 
     .km-android .km-view:not(.km-splitview) {
         -webkit-box-direction: normal;
-        box-direction: normal;
+        -moz-box-direction: normal;
         -webkit-flex-direction: column;
         flex-direction: column;
     }
