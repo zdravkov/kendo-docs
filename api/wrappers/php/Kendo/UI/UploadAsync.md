@@ -142,3 +142,22 @@ containing one or more fields with the same name as the original input name.
     $async->saveUrl('value');
     ?>
 
+### withCredentials
+Controls whether or not to send the credentials such as cookies or authorization headers.
+This option will be ignored if the browser doesn't support File API.
+
+#### Returns
+`\Kendo\UI\UploadAsync`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $async = new \Kendo\UI\UploadAsync();
+    $async->withCredentials(true);
+    ?>
+

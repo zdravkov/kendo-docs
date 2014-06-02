@@ -78,3 +78,12 @@ containing one or more fields with the same name as the original input name.
     <kendo:upload-async saveUrl="saveUrl">
     </kendo:upload-async>
 
+### withCredentials `boolean`
+
+Controls whether or not to send the credentials such as cookies or authorization headers.
+This option will be ignored if the browser doesn't support File API.
+
+#### Example
+    <kendo:upload-async withCredentials="withCredentials">
+    </kendo:upload-async>
+
