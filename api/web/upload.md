@@ -153,6 +153,11 @@ containing one or more fields with the same name as the original input name.
 	    });
 	</script>
 
+### async.withCredentials `Boolean` *(default: true)*
+
+Controls whether to send credentials (cookies, headers) for cross-site requests.
+This option will be ignored if the browser doesn't support File API.
+
 ### enabled `Boolean`*(default: true)*
 
 Enables (**true**) or disables (**false**) an **Upload**. A disabled
