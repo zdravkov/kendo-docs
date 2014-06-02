@@ -143,7 +143,7 @@ containing one or more fields with the same name as the original input name.
     ?>
 
 ### withCredentials
-Controls whether or not to send the credentials such as cookies or authorization headers.
+Controls whether to send credentials (cookies, headers) for cross-site requests.
 This option will be ignored if the browser doesn't support File API.
 
 #### Returns
