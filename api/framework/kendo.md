@@ -521,6 +521,35 @@ the performance of the template.
 
     console.log(template({ name: "John Doe" })); // outputs "<strong>John Doe</strong>"
 
+### throttle
+
+Limits the number of calls to a function to one for a specified amount of time.
+
+#### Example
+
+    <script>
+      var throttled = kendo.throttle(function() {
+          console.log("hey! " + new Date());
+      }, 100);
+
+      // will log two times "hey":
+      // (1) once for the first call
+      // (2) once for the last call, roughly 100ms after the first one
+      for (var i = 0; i < 10; i++) {
+          throttled();
+      }
+    </script>
+
+#### Parameters
+
+##### fn `Function`
+
+The function to be throttled.
+
+##### timeout `Number`
+
+The amount of time that needs to pass before a subsequent function call is made.
+
 ### touchScroller
 
 Enables kinetic scrolling on touch devices
