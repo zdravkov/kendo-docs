@@ -32,6 +32,8 @@ If you need any custom checkbox rendering, use the checkboxes.template option:
         }
     });
 
+**Editor**: The deprecated **formatBlock** and **style** tools have been removed. See the 2013 Q2 release notes below on how to migrate to the **formatting** tool.
+
 ## Kendo UI 2014 Q1
 
 ### Changes from 2013 Q3 SP2 (2013.3.1324)
