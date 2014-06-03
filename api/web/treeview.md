@@ -832,6 +832,41 @@ The nodes that are to be expanded.
     treeview.expand(".k-item");
     </script>
 
+### expandPath
+
+Expands all nodes to a given element.
+
+#### Parameters
+
+##### path `Array`
+
+The IDs of the nodes that need to be expanded.
+
+##### complete `Function`
+
+Callback function that will be called once the path has been expanded.
+
+#### Example
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: [
+        { id: 1, text: "foo", items: [
+          { id: 2, text: "bar", items: [
+            { id: 3, text: "baz" }
+          ] }
+        ] }
+      ]
+    });
+
+    var treeview = $("#treeview").data("kendoTreeView");
+
+    // expand the path of nodes with IDs 1, 2, and 3
+    treeview.expandPath([1, 2, 3]);
+
+    </script>
+
 ### findByText
 
 Searches for a node that has specific text.
