@@ -799,6 +799,8 @@ If set to `true` the column will not be displayed in the grid. By default all co
 
 If set to `true` the column will be displayed as locked in the grid. Also see [Frozen Columns][frozen-columns-url].
 
+> Row template and detail features are not supported in combination with column locking.
+
 #### Example - locked columns
     <div id="grid"></div>
     <script>
@@ -816,7 +818,7 @@ If set to `true` the column will be displayed as locked in the grid. Also see [F
 If set to `false` the column will remain in the side of the grid into which its own locked configuration placed it.
 
 > This option is meaningful when the grid has columns which are configured with a [locked](#configuration-columns.locked) value. Setting it explicitly to `false` will
-prevent the user from locking or unlocking this column using the user interface. Row template and detail features are not supported in combination with column locking.
+prevent the user from locking or unlocking this column using the user interface.
 
 #### Example - lockable columns
     <div id="grid"></div>
