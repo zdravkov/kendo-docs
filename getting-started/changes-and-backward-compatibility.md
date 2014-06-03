@@ -8,6 +8,30 @@ publish: true
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## Kendo UI 2014 Q2
+
+### Changes from 2014 Q1 SP2 (2014.1.528)
+
+#### Breaking changes
+
+**TreeView**: The deprecated `checkboxTemplate` configuration option has been removed.
+If you don't need a highly specific checkbox template, consider using the default one (using checkboxes: true).
+If you need any custom checkbox rendering, use the checkboxes.template option:
+
+-Old:
+
+    $("#tree").kendoTreeView({
+        checkboxTemplate: "..."
+    });
+
+-New:
+
+    $("#tree").kendoTreeView({
+        checkboxes: {
+            template: "..."
+        }
+    });
+
 ## Kendo UI 2014 Q1
 
 ### Changes from 2013 Q3 SP2 (2013.3.1324)
