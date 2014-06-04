@@ -232,3 +232,37 @@ This is useful when the Splitter has been initialized in an invisible container 
     splitterObject.resize(true);
     
 On a side note, changing the pane sizes manually is not recommended. Use the [`size()`](/kendo-ui/api/web/splitter#methods-size) method for that.
+
+## Allow an element to overflow a Splitter pane
+
+Splitter panes are either scrollable (have an `overflow:auto` style) or they clip overflowing content (have an `overflow:hidden` style). In either case, nothing is allowed to be displayed outside the pane boundaries.
+This can be problematic in scenarios, which include Menus and other non-detached popups, which are rendered **inside** the pane.
+
+The solution is to disable pane content scrolling and clipping by enforcing an `overflow:visible` style to the Splitter pane `&lt;div&gt;`. In addition, the pane's stacking context must be raised by applying
+a positive `z-index` style.
+
+### Example
+
+#### HTML
+
+    <div id="splitter1">
+        <div id="pane1">
+            <ul id="menu1">
+                <li>root menu item
+                    <ul>
+                        <!-- child menu items -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+#### CSS
+
+    #pane1
+    {
+        overflow: visible;
+        z-index: 2;
+    }
+
+If there are several nested Splitters, then each pane, which is an ancestor of the Menu, requires the specified `overflow` and `z-index` styles. These styles can also be applied inline instead of externally.
