@@ -330,6 +330,26 @@ Fires when the mobile View becomes visible.
 
 The mobile view instance.
 
+### transitionStart
+
+Fires when the mobile view transition starts.
+
+#### Event Data
+
+##### e.type `String`
+
+The transition type. Can be either `"show"` or `"hide"`
+
+### transitionEnd
+
+Fires after the mobile view transition container has its `k-fx-end` class set. Setting CSS properties to the view at the event handler will animate them.
+
+#### Event Data
+
+##### e.type `String`
+
+The transition type. Can be either `"show"` or `"hide"`
+
 ## Fields
 
 ### header `jQuery`

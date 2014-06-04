@@ -148,7 +148,7 @@ Fires the first time the view renders.
 
 ### show
 
-Fires when after the mobile View is rendered (either by calling `render`, or by being rendered from the **Layout** `showIn` method).
+Fires after the View is rendered (either by calling `render`, or by being rendered from the **Layout** `showIn` method).
 
 #### Example
 
@@ -157,6 +157,46 @@ Fires when after the mobile View is rendered (either by calling `render`, or by 
     <script>
     var view = new kendo.View("Hi!", { show: function() { console.log("View is rendered") } });
     view.render($("#app"));
+    </script>
+
+### transitionStart
+
+Fires when the view transition starts. The `type` event data is set to either `"show"` or `"hide"`. For more details on view Transitions check the [layout showIn](layout#methods-showIn) method.
+
+#### Example
+
+    <div id="app"></div>
+
+    <script>
+    var foo = new kendo.View("<span>Foo</span>");
+    var bar = new kendo.View("<span>Bar</span>", { transitionStart: function() { console.log(e) });
+
+    var layout = new kendo.Layout("<header>Header</header><section id="content"></section><footer></footer>");
+
+    layout.render($("#app"));
+
+    layout.showIn("#content", foo);
+    layout.showIn("#content", bar);
+    </script>
+
+### transitionEnd
+
+Fires after the view transition container has its `k-fx-end` class set. The `type` event data is set to either `"show"` or `"hide"`. For more details on view Transitions check the [layout showIn](layout#methods-showIn) method.
+
+#### Example
+
+    <div id="app"></div>
+
+    <script>
+    var foo = new kendo.View("<span>Foo</span>");
+    var bar = new kendo.View("<span>Bar</span>", { transitionEnd: function() { console.log(e) });
+
+    var layout = new kendo.Layout("<header>Header</header><section id="content"></section><footer></footer>");
+
+    layout.render($("#app"));
+
+    layout.showIn("#content", foo);
+    layout.showIn("#content", bar);
     </script>
 
 ## Fields
