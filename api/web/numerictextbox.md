@@ -55,7 +55,7 @@ Represents the Kendo UI NumericTextBox widget. Inherits from [Widget](/kendo-ui/
 
 ### format `String`*(default: "n")*
 
- Specifies the format of the number. Any valid number format is allowed.
+ Specifies the format of the number. Any [valid number format](/kendo-ui/getting-started/framework/globalization/numberformatting) is allowed.
 
 #### Example
 
