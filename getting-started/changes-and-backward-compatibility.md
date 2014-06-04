@@ -120,6 +120,7 @@ Also see [`kendo.resize()`](/kendo-ui/api/framework/kendo/#methods-resize).
 
 #### Breaking changes
 
+* **themes**: The icons in the sprite image have been rearranged to include more icons in two different sizes.
 * **Editor**: The default tool set now includes the newly introduced table editing. Toolbar tools are now grouped, so their dimensions have been increased by 2px. On the other hand,
 the "Font name" and "Font size" tools no longer appear by default. The idea is to encourage developers (and users respectively) to use the formatting dropdown, which provides a predefined (and customizable) set of options.
 This will ultimately lead to better structured, formatted and consistent rich text documents, compared to the case when the user has the ability to apply arbitrary font styles.
