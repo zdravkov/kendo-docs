@@ -1473,6 +1473,16 @@ The key of all Bing (tm) tile layers.
         });
     </script>
 
+### layerDefaults.bing.imagerySet `String` *(default: "road")*
+
+The bing map tile types. Possible options:
+
+    * aerial - Aerial imagery.
+    * aerialWithLabels - Aerial imagery with a road overlay.
+    * birdseye - Bird’s eye (oblique-angle) imagery
+    * birdseyeWithLabels - Bird’s eye imagery with a road overlay.
+    * road - Roads without additional imagery. (default)
+
 ### layers `Array`
 
 The configuration of the map layers.
@@ -1682,6 +1692,16 @@ If not specified, the layer is always visible.
 ### layers.key `String`
 
 The API key for the layer. Currently supported only for Bing (tm) tile layers.
+
+### layers.imagerySet `String` *(default: "road")*
+
+The bing map tile types. Possible options:
+
+    * aerial - Aerial imagery.
+    * aerialWithLabels - Aerial imagery with a road overlay.
+    * birdseye - Bird’s eye (oblique-angle) imagery
+    * birdseyeWithLabels - Bird’s eye imagery with a road overlay.
+    * road - Roads without additional imagery. (default)
 
 ### layers.locationField `String` *(default: "location")*
 
