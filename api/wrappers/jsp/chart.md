@@ -137,6 +137,18 @@ More documentation is available at [kendo:chart-series](/kendo-ui/api/wrappers/j
         <kendo:chart-series></kendo:chart-series>
     </kendo:chart>
 
+### kendo:chart-seriesDefaults
+
+The default options for all series.
+
+More documentation is available at [kendo:chart-seriesDefaults](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults).
+
+#### Example
+
+    <kendo:chart>
+        <kendo:chart-seriesDefaults></kendo:chart-seriesDefaults>
+    </kendo:chart>
+
 ### kendo:chart-title
 
 The chart title configuration options or text.

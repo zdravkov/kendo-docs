@@ -24,6 +24,14 @@ The attribution of all Bing (tm) layers.
     <kendo:map-layerDefaults-bing attribution="attribution">
     </kendo:map-layerDefaults-bing>
 
+### imagerySet `java.lang.String`
+
+The bing map tile types. Possible options.
+
+#### Example
+    <kendo:map-layerDefaults-bing imagerySet="imagerySet">
+    </kendo:map-layerDefaults-bing>
+
 ### key `java.lang.String`
 
 The key of all Bing (tm) tile layers.

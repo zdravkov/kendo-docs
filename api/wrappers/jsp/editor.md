@@ -47,7 +47,8 @@ Defines the text of the labels that are shown within the editor. Used primarily 
 
 ### stylesheets `java.lang.Object`
 
-Allows custom stylesheets to be included within the editing area.
+Allows custom stylesheets to be included within the editing area. This setting is applicable only when the Editor is initialized from a textarea
+and a contenteditable iframe is generated.
 
 #### Example
     <kendo:editor stylesheets="stylesheets">

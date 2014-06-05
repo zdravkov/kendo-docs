@@ -30,6 +30,24 @@ The attribution of all Bing (tm) layers.
     $bing->attribution('value');
     ?>
 
+### imagerySet
+The bing map tile types. Possible options.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayerDefaultsBing`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $bing = new \Kendo\Dataviz\UI\MapLayerDefaultsBing();
+    $bing->imagerySet('value');
+    ?>
+
 ### key
 The key of all Bing (tm) tile layers.
 

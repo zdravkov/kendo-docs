@@ -44,6 +44,14 @@ North-West lat, longitude, South-East latitude, longitude.If not specified, the 
     <kendo:map-layer extent="extent">
     </kendo:map-layer>
 
+### imagerySet `java.lang.String`
+
+The bing map tile types. Possible options.
+
+#### Example
+    <kendo:map-layer imagerySet="imagerySet">
+    </kendo:map-layer>
+
 ### key `java.lang.String`
 
 The API key for the layer. Currently supported only for Bing (tm) tile layers.

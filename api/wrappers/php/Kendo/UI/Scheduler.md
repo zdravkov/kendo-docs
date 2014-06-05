@@ -166,6 +166,44 @@ For additional information check the [change](/kendo-ui/api/web/scheduler#events
     $scheduler->change(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### currentTimeMarker
+
+If set to false the "current time" marker of the scheduler would not be displayed.
+
+#### Returns
+`\Kendo\UI\Scheduler`
+
+#### Parameters
+
+##### $value `boolean|\Kendo\UI\SchedulerCurrentTimeMarker|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $scheduler->currentTimeMarker(true);
+    ?>
+
+
+#### Example - using [\Kendo\UI\SchedulerCurrentTimeMarker](/kendo-ui/api/wrappers/php/Kendo/UI/SchedulerCurrentTimeMarker)
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $currentTimeMarker = new \Kendo\UI\SchedulerCurrentTimeMarker();
+    $updateInterval = 1;
+    $currentTimeMarker->updateInterval($updateInterval);
+    $scheduler->currentTimeMarker($currentTimeMarker);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $scheduler = new \Kendo\UI\Scheduler('Scheduler');
+    $updateInterval = 1;
+    $scheduler->currentTimeMarker(array('updateInterval' => $updateInterval));
+    ?>
+
 ### dataBinding
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [dataBinding](/kendo-ui/api/web/scheduler#events-dataBinding) event documentation.

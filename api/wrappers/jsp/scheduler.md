@@ -35,6 +35,14 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:scheduler autoBind="autoBind">
     </kendo:scheduler>
 
+### currentTimeMarker `boolean`
+
+If set to false the "current time" marker of the scheduler would not be displayed. Further configuration is available via [kendo:scheduler-currentTimeMarker](#kendo-scheduler-currentTimeMarker). 
+
+#### Example
+    <kendo:scheduler currentTimeMarker="currentTimeMarker">
+    </kendo:scheduler>
+
 ### date `java.util.Date`
 
 The current date of the scheduler. Used to determine the period which is displayed by the widget.
@@ -233,6 +241,18 @@ The start of working week (index based).
 
 
 ##  Configuration JSP Tags
+
+### kendo:scheduler-currentTimeMarker
+
+If set to false the "current time" marker of the scheduler would not be displayed.
+
+More documentation is available at [kendo:scheduler-currentTimeMarker](/kendo-ui/api/wrappers/jsp/scheduler/currenttimemarker).
+
+#### Example
+
+    <kendo:scheduler>
+        <kendo:scheduler-currentTimeMarker></kendo:scheduler-currentTimeMarker>
+    </kendo:scheduler>
 
 ### kendo:scheduler-editable
 

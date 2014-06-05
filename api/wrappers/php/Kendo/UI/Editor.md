@@ -408,7 +408,8 @@ Starts output bufferring. Any following markup will be set as the content of the
 
 
 ### stylesheets
-Allows custom stylesheets to be included within the editing area.
+Allows custom stylesheets to be included within the editing area. This setting is applicable only when the Editor is initialized from a textarea
+and a contenteditable iframe is generated.
 
 #### Returns
 `\Kendo\UI\Editor`

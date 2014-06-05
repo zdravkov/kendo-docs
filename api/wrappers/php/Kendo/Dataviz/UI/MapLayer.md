@@ -96,6 +96,24 @@ North-West lat, longitude, South-East latitude, longitude.If not specified, the 
     $layer->extent(new array());
     ?>
 
+### imagerySet
+The bing map tile types. Possible options.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->imagerySet('value');
+    ?>
+
 ### key
 The API key for the layer. Currently supported only for Bing (tm) tile layers.
 
