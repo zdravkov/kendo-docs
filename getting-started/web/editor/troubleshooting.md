@@ -53,5 +53,5 @@ Since the inline editor is initialized from a non-form element, it is not posted
 
 To begin with, image resizing inside contenteditable elements depends on the browser, and this is not an Editor feature. In addition, there is a browser issue, which is exhibited in the following way -
 if a "classic" Editor (which uses an `iframe`) is created while hidden, or is hidden after initialization and then displayed back, then images become non-resizable. This problem is not related to Kendo UI.
-It can be resolved by calling the Editor's [`refresh`](/kendo-ui/api/web/editor#methods-refresh) method after the Editot becomes visible. Refreshing the widget will recreate the iframe.
+It can be resolved by calling the Editor's [`refresh`](/kendo-ui/api/web/editor#methods-refresh) method after the Editor becomes visible. Refreshing the widget will recreate the iframe.
 Another possible approach is to use the Editor's "inline" mode, i.e. create the Editor from a `div`.
