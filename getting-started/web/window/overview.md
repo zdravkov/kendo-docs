@@ -155,7 +155,9 @@ Click events can be captured and handled in a standard way:
 ## Loading Window content via AJAX
 
 A **Window** provides built-in support for asynchronously loading content from a URL. This URL
-should return a HTML fragment that can be loaded in a Window content area.
+should return an **HTML fragment** that can be loaded in a Window content area.
+
+> Loading full pages (with a DOCTYPE, `html`, `head` and `body` tags) with AJAX is incorrect and will cause all sorts of undesired side effects, including broken DOM tree, deleted widgets instances and Javascript errors.
 
 ### Load Window content asynchronously
 
@@ -176,9 +178,7 @@ The Window creates an `iframe` for its content if the content URL contains a pro
 If the URL does not contain s protocol, the assumption is that it is a local URL that will load a partial view (not a full page), so an iframe is not created.
 This behavior can be controlled explicitly via the widget configuration.
 
-> Loading full pages inside the Window without an iframe is incorrect. This will break the page HTML markup and will cause undesired side effects and Javascript errors.
-
-> Loading partial content inside an iframe is incorrect as well.
+> Loading HTML fragments (partial content) inside an iframe is incorrect. Iframe pages should include a DOCTYPE, `html`, `head` and `body` tags, just like a standard web page does.
 
 ### Accessing the `window` and `document` objects inside the `iframe`
 
