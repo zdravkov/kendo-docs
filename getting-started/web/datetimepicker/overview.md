@@ -48,8 +48,7 @@ during initialization. Among the properties that can be controlled:
 *   Navigation depth (last view to which end user can navigate)
 *   Define interval between predefined values in the time drop-down list
 
-### Create DateTimePicker with a selected value and a defined
-minimum and maximum datetime
+### Create DateTimePicker with a selected value and a defined minimum and maximum datetime
 
     $(document).ready(function(){
         $("#dateTimePicker").kendoDateTimePicker({
