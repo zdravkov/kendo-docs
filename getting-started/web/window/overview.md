@@ -157,7 +157,8 @@ Click events can be captured and handled in a standard way:
 A **Window** provides built-in support for asynchronously loading content from a URL. This URL
 should return an **HTML fragment** that can be loaded in a Window content area.
 
-> Loading full pages (with a DOCTYPE, `html`, `head` and `body` tags) with AJAX is incorrect and will cause all sorts of undesired side effects, including broken DOM tree, deleted widgets instances and Javascript errors.
+> Loading full pages (i.e. ones with a DOCTYPE, `html`, `head` and `body` tags) inside the Window with AJAX is incorrect and will cause
+all sorts of undesired side effects, including a broken DOM tree, deleted widget instances and Javascript errors.
 
 ### Load Window content asynchronously
 
