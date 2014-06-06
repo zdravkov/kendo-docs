@@ -943,11 +943,11 @@ The loaded content element that is retrieved via AJAX.
 
     <script>
         // event handler for select
-        var onError = function(e) {
+        var onContentLoad = function(e) {
             // access the selected item via e.item (Element)
 
-            // detach select event handler via unbind()
-            tabStrip.unbind("error", onError);
+            // detach contentLoad event handler via unbind()
+            tabStrip.unbind("contentLoad", onError);
         };
 
         // attach select event handler during initialization
@@ -960,7 +960,7 @@ The loaded content element that is retrieved via AJAX.
                 text: "Tab 2",
                 contentUrl: "partialContent2.html"
             }],
-            error: onError
+            contentLoad: onContentLoad
         }).data("kendoTabStrip");
     </script>
 
@@ -994,7 +994,7 @@ The returned status.
         var onError = function(e) {
             // access the selected item via e.item (Element)
 
-            // detach select event handler via unbind()
+            // detach error event handler via unbind()
             tabStrip.unbind("error", onError);
         };
 
