@@ -5439,6 +5439,28 @@ The width of the border in pixels. By default the border width is set to zero wh
     });
     </script>
 
+### legend.height `Number`
+
+The legend height when the [legend.position](#configuration-legend.position) is set to "custom" and the [legend.orientation](#configuration-legend.orientation) is set to "vertical".
+
+#### Example - set the chart legend height
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        position: "custom",
+        orientation: "vertical",
+        height: 50
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] },
+        { name: "Series 3", data: [6, 7, 8] }
+      ]
+    });
+    </script>
+
 ### legend.inactiveItems `Object`
 
 The chart inactive legend items configuration.
@@ -5713,7 +5735,7 @@ The font style of the labels.
     });
     </script>
 
-### legend.labels.margin `Number|Object` *(default: 10)*
+### legend.labels.margin `Number|Object` *(default: 0)*
 
 The margin of the labels. A numeric value will set all margins.
 
@@ -5815,6 +5837,119 @@ The top margin of the labels.
       legend: {
         labels: {
           margin: {
+            top: 20
+          }
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.labels.padding `Number|Object` *(default: 0)*
+
+The padding of the labels. A numeric value will set all paddings.
+
+#### Example - set the chart legend label padding as a number
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        labels: {
+          padding: 20
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.labels.padding.bottom `Number` *(default: 0)*
+
+The bottom padding of the labels.
+
+#### Example - set the chart legend label bottom padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        labels: {
+          padding: {
+            bottom: 20
+          }
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.labels.padding.left `Number` *(default: 6)*
+
+The left padding of the labels.
+
+#### Example - set the chart legend label left padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        labels: {
+          padding: {
+            left: 20
+          }
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.labels.padding.right `Number` *(default: 0)*
+
+The right padding of the labels.
+
+#### Example - set the chart legend label right padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        labels: {
+          padding: {
+            right: 20
+          }
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.labels.padding.top `Number` *(default: 0)*
+
+The top padding of the labels.
+
+#### Example - set the chart legend label top padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        labels: {
+          padding: {
             top: 20
           }
         }
@@ -6015,6 +6150,136 @@ A negative value will move the legend upwards from its current position.
     });
     </script>
 
+### legend.orientation `String` *(default: "vertical")*
+
+The orientation of the legend items when the position [legend.position](#configuration-legend.position) is set to "custom".
+
+The supported values are:
+
+* "vertical" - the legend items are added vertically.
+
+* "horizontal" - the legend items are added horizontally.
+
+#### Example - set horizontal orientation to the chart legend
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        position: "custom",
+        orientation: "horizontal"
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] },
+        { name: "Series 3", data: [6, 7, 8] }
+      ]
+    });
+    </script>
+
+### legend.padding `Number|Object` *(default: 5)*
+
+The padding of the chart legend. A numeric value will set all paddings.
+
+#### Example - set the chart legend padding as a number
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        padding: 20
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.padding.bottom `Number` *(default: 0)*
+
+The bottom padding of the chart legend.
+
+#### Example - set the chart legend bottom padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        padding: {
+          bottom: 20
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.padding.left `Number` *(default: 0)*
+
+The left padding of the chart legend.
+
+#### Example - set the chart legend left padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        padding: {
+          left: 20
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.padding.right `Number` *(default: 0)*
+
+The right padding of the chart legend.
+
+#### Example - set the chart legend right padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        padding: {
+          right: 20
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.padding.top `Number` *(default: 0)*
+
+The top padding of the chart legend.
+
+#### Example - set the chart legend top padding
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        padding: {
+          top: 20
+        }
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
 ### legend.position `String` *(default: "right")*
 
 The positions of the chart legend.
@@ -6046,6 +6311,28 @@ If set to `true` the chart will display the legend. By default the chart legend 
       series: [
         { name: "Series 1", data: [1, 2, 3] },
         { name: "Series 2", data: [3, 4, 5] }
+      ]
+    });
+    </script>
+
+### legend.width `Number`
+
+The legend width when the [legend.position](#configuration-legend.position) is set to "custom" and the [legend.orientation](#configuration-legend.orientation) is set to "horizontal".
+
+#### Example - set the chart legend width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      legend: {
+        position: "custom",
+        orientation: "horizontal",
+        width: 200
+      },
+      series: [
+        { name: "Series 1", data: [1, 2, 3] },
+        { name: "Series 2", data: [3, 4, 5] },
+        { name: "Series 3", data: [6, 7, 8] }
       ]
     });
     </script>
