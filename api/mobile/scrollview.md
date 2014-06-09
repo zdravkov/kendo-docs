@@ -283,7 +283,7 @@ Determines how many data items will be passed to the page template.
 
 The initial page to display.
 
->If the widget is bound to a DataSource, the initial item to display must be within the records from the first data page. For example if the DataSource has `pageSize: 32` the page configuration option of the ScrollView should not exceed 30. 
+>If the widget is bound to a DataSource, the initial item to display must be within the records from the first data page. For example if the DataSource has `pageSize: 32` the page configuration option of the ScrollView should not exceed 30.
 
 #### Example
 
@@ -584,6 +584,20 @@ Sets the DataSource of an existing ScrollView and rebinds it.
 
         var app = new kendo.mobile.Application();
     </script>
+
+### value
+
+Works in data-bound mode only. If a parameter is passed, the widget scrolls to the given dataItem. If not, the method return currently displayed dataItem.
+
+#### Parameters
+
+##### dataItem `Object`
+
+The dataItem to set.
+
+#### Returns
+
+`Object` The currently displayed dataItem.
 
 ## Events
 
