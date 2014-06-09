@@ -59,6 +59,24 @@ The border of the legend.
     $legend->border(array('color' => $color));
     ?>
 
+### height
+The legend height when the legend.position is set to "custom" and the legend.orientation is set to "vertical".
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $legend = new \Kendo\Dataviz\UI\ChartLegend();
+    $legend->height(1);
+    ?>
+
 ### inactiveItems
 
 The chart inactive legend items configuration.
@@ -195,6 +213,62 @@ A negative value will move the legend upwards from its current position.
     $legend->offsetY(1);
     ?>
 
+### orientation
+The orientation of the legend items when the position legend.position is set to "custom".The supported values are:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $legend = new \Kendo\Dataviz\UI\ChartLegend();
+    $legend->orientation('value');
+    ?>
+
+### padding
+
+The padding of the chart legend. A numeric value will set all paddings.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
+#### Parameters
+
+##### $value `float|\Kendo\Dataviz\UI\ChartLegendPadding|array`
+
+
+
+
+#### Example  - using float
+    <?php
+    $legend = new \Kendo\Dataviz\UI\ChartLegend();
+    $legend->padding(1);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartLegendPadding](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartLegendPadding)
+    <?php
+    $legend = new \Kendo\Dataviz\UI\ChartLegend();
+    $padding = new \Kendo\Dataviz\UI\ChartLegendPadding();
+    $bottom = 1;
+    $padding->bottom($bottom);
+    $legend->padding($padding);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $legend = new \Kendo\Dataviz\UI\ChartLegend();
+    $bottom = 1;
+    $legend->padding(array('bottom' => $bottom));
+    ?>
+
 ### position
 The positions of the chart legend.The supported values are:
 
@@ -229,5 +303,23 @@ If set to true the chart will display the legend. By default the chart legend is
     <?php
     $legend = new \Kendo\Dataviz\UI\ChartLegend();
     $legend->visible(true);
+    ?>
+
+### width
+The legend width when the legend.position is set to "custom" and the legend.orientation is set to "horizontal".
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartLegend`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $legend = new \Kendo\Dataviz\UI\ChartLegend();
+    $legend->width(1);
     ?>
 

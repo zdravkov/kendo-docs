@@ -24,6 +24,14 @@ The background color of the legend. Accepts a valid CSS color string, including 
     <kendo:chart-legend background="background">
     </kendo:chart-legend>
 
+### height `float`
+
+The legend height when the legend.position is set to "custom" and the legend.orientation is set to "vertical".
+
+#### Example
+    <kendo:chart-legend height="height">
+    </kendo:chart-legend>
+
 ### margin `float`
 
 The margin of the chart legend. A numeric value will set all paddings. Further configuration is available via [kendo:chart-legend-margin](#kendo-chart-legend-margin). 
@@ -52,6 +60,22 @@ A negative value will move the legend upwards from its current position.
     <kendo:chart-legend offsetY="offsetY">
     </kendo:chart-legend>
 
+### orientation `java.lang.String`
+
+The orientation of the legend items when the position legend.position is set to "custom".The supported values are:
+
+#### Example
+    <kendo:chart-legend orientation="orientation">
+    </kendo:chart-legend>
+
+### padding `float`
+
+The padding of the chart legend. A numeric value will set all paddings. Further configuration is available via [kendo:chart-legend-padding](#kendo-chart-legend-padding). 
+
+#### Example
+    <kendo:chart-legend padding="padding">
+    </kendo:chart-legend>
+
 ### position `java.lang.String`
 
 The positions of the chart legend.The supported values are:
@@ -66,6 +90,14 @@ If set to true the chart will display the legend. By default the chart legend is
 
 #### Example
     <kendo:chart-legend visible="visible">
+    </kendo:chart-legend>
+
+### width `float`
+
+The legend width when the legend.position is set to "custom" and the legend.orientation is set to "horizontal".
+
+#### Example
+    <kendo:chart-legend width="width">
     </kendo:chart-legend>
 
 
@@ -117,5 +149,17 @@ More documentation is available at [kendo:chart-legend-margin](/kendo-ui/api/wra
 
     <kendo:chart-legend>
         <kendo:chart-legend-margin></kendo:chart-legend-margin>
+    </kendo:chart-legend>
+
+### kendo:chart-legend-padding
+
+The padding of the chart legend. A numeric value will set all paddings.
+
+More documentation is available at [kendo:chart-legend-padding](/kendo-ui/api/wrappers/jsp/chart/legend-padding).
+
+#### Example
+
+    <kendo:chart-legend>
+        <kendo:chart-legend-padding></kendo:chart-legend-padding>
     </kendo:chart-legend>
 

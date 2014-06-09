@@ -40,6 +40,14 @@ The margin of the labels. A numeric value will set all margins. Further configur
     <kendo:chart-legend-labels margin="margin">
     </kendo:chart-legend-labels>
 
+### padding `float`
+
+The padding of the labels. A numeric value will set all paddings. Further configuration is available via [kendo:chart-legend-labels-padding](#kendo-chart-legend-labels-padding). 
+
+#### Example
+    <kendo:chart-legend-labels padding="padding">
+    </kendo:chart-legend-labels>
+
 ### template `java.lang.String`
 
 The template which renders the labels.The fields which can be used in the template are:
@@ -61,6 +69,18 @@ More documentation is available at [kendo:chart-legend-labels-margin](/kendo-ui/
 
     <kendo:chart-legend-labels>
         <kendo:chart-legend-labels-margin></kendo:chart-legend-labels-margin>
+    </kendo:chart-legend-labels>
+
+### kendo:chart-legend-labels-padding
+
+The padding of the labels. A numeric value will set all paddings.
+
+More documentation is available at [kendo:chart-legend-labels-padding](/kendo-ui/api/wrappers/jsp/chart/legend-labels-padding).
+
+#### Example
+
+    <kendo:chart-legend-labels>
+        <kendo:chart-legend-labels-padding></kendo:chart-legend-labels-padding>
     </kendo:chart-legend-labels>
 
 
