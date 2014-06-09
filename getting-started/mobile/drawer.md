@@ -10,11 +10,11 @@ publish: true
 
 # Drawer
 
-The Kendo Mobile Drawer widget provides slide to reveal global mobile application toolbox or navigation.
+The Kendo UI Mobile Drawer widget provides slide to reveal global mobile application toolbox or navigation.
 
 ## Getting Started
 
-The Kendo mobile Application will automatically initialize a mobile Drawer widget for every `div` element with `role` data attribute set to `drawer` present in the **mobile application DOM element** (same level as the application views).
+The Kendo UI Mobile Application will automatically initialize a mobile Drawer widget for every `div` element with `role` data attribute set to `drawer` present in the **mobile application DOM element** (same level as the application views).
 The Drawer element may contain optional header and/or footer. A mobile scroller is automatically initialized around the contents of the element.
 
 By default, the drawer will be revealed at the left side when swiping from from left to right.  The position can be changed using the `position` configuration option (`left` or `right`). One application can have up to two drawers (left and right one) active at the same time.
