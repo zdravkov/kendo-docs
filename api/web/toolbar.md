@@ -2,6 +2,7 @@
 title: kendo.ui.ToolBar
 meta_title: Configuration, methods and events of Kendo UI ToolBar
 slug: api-web-toolbar
+relatedDocs: gs-web-toolbar-overview
 tags: api,web
 publish: true
 ---
@@ -12,11 +13,11 @@ Represents the Kendo UI ToolBar. Inherits from [Widget](/kendo-ui/api/framework/
 
 ## Configuration
 
-### resizable `Boolean`*(default: true)*
+### resizable `Boolean` *(default: true)*
 
-If resizable is set to true the widget will detect changes in the viewport width and will hide the controls for which there is not enough space in the overflow container. By default resizable feature is enabled.
+If `resizable` is set to `true` the widget will detect changes in the viewport width and hides the overflowing controls in the command overflow popup.
 
-#### Example - disabling the resizable feature
+#### Example - disable the resizable feature
 
     <div id="toolbar"></div>
     <script>
@@ -121,7 +122,7 @@ A boolean flag that determines whether the command should be enabled (true) or d
 
 ### remove
 
-Removes command from the ToolBar widget. Command is removed from the ToolBar container and overflow popup (if resizable is enabled). If the removed command is of SplitButton type calls the destroy method of the corresponding popup element.
+Removes a command from the ToolBar widget. The command is removed from the ToolBar container and overflow popup (if resizable is enabled).
 
 #### Parameters
 
@@ -150,7 +151,7 @@ A string, DOM element or jQuery object which represents the command to be remove
 
 Fires when the user clicks a command button.
 
-> The event does not fire for toggable buttons. If the button has `toggle: true` please use the toggle event.
+> The event does not fire for toggable buttons. If the button has `toggle: true` use the `toggle` event.
 
 #### Event Data
 
@@ -206,11 +207,11 @@ The jQuery object that represents the SplitButton element.
 
 ##### e.popup `kendo.ui.Popup`
 
-The popup instance that is attached to the SplitButton control.
+The popup instance that is attached to the Split Button command.
 
 ##### e.preventDefault `Function`
 
-If invoked prevents the close action. The popup will remain open.
+Prevents the close action if called. The popup will remain open.
 
 ##### e.sender `kendo.ui.ToolBar`
 
@@ -258,7 +259,7 @@ The widget instance which fired the event.
 
 ### open
 
-Fires when the SplitButton's popup opens.
+Fires when the Split Button's popup opens.
 
 #### Event Data
 
@@ -272,7 +273,7 @@ The popup instance that is attached to the SplitButton control.
 
 ##### e.preventDefault `Function`
 
-If invoked prevents the open action. The popup will remain closed.
+Prevents the open action if called. The popup will remain closed.
 
 ##### e.sender `kendo.ui.ToolBar`
 
@@ -332,11 +333,11 @@ The jQuery object that represents the command element.
 
 ##### e.checked `Boolean`
 
-Boolean flag that indicates the button checked state.
+Boolean flag that indicates the button state.
 
 ##### e.preventDefault `Function`
 
-If invoked prevents the state change action. The toggle button remains at its initial state.
+Prevents the state change action if called. The toggle button remains in its initial state.
 
 ##### e.sender `kendo.ui.ToolBar`
 

@@ -102,17 +102,17 @@ The `overflow` property accepts the following values:
         });
     </script>
 
-If the `showIcon` property is set to:
+The `showIcon` property accepts the following values:
 
 * "toolbar" - the icon will be displayed only when the button is visible in the ToolBar wrapper. The same button will appear with no icon in the command overflow popup.
 * "overflow" - the icon will be displayed only when the button is visible in the command overflow popup. The same button will appear with no icon in the ToolBar wrapper.
-* "both" - the icon will be displayed for both buttons. That is the default setting.
+* "both" - the icon will be displayed for both buttons. This is the default setting.
 
-If the `showText` property is set to:
+The `showText` property accepts the following values:
 
 * "toolbar" - only the button located in the ToolBar wrapper will have a text.
 * "overflow" - only the button located in the command overflow container will have a text.
-* "buth" - both buttons will have a text.
+* "both" - both buttons will have a text. This is the default setting.
 
 ##### Example - define a button that will be displayed only as an icon in the ToolBar wrapper and will have only text in the command overflow container
 
@@ -134,11 +134,11 @@ If the `showText` property is set to:
 
 ### Toggle Button
 
-The Toggle Button allows the user to change a setting between two states. To define a Toggle Button the developer should configure a standard button and set its `toggle` property to "true". Toggle Button has the same configuration options as the standard button.
+The Toggle Button allows the user to change a setting between two states. To define a Toggle Button, set the button `toggle` property to `"true"`. The Toggle Button supports the same configuration options as the standard button.
 
-> Clicking on a Toggle Button triggers the toggle event. Clicking on a Toggle Button does **not** trigger the click event.
+> Clicking on a Toggle Button triggers the `toggle` event. Clicking on a Toggle Button does **not** trigger the `click` event.
 
-##### Example - define a toggle button
+##### Example - define a Toggle Button
 
     <div id="toolbar" style="min-width: 240px;"></div>
 
@@ -147,9 +147,9 @@ The Toggle Button allows the user to change a setting between two states. To def
             items: [
                 {
                     type: "button",
-                    toggle: true, //defines a toggle button
+                    toggle: true,
                     text: "My Toggle Button",
-                    spriteCssClass: "myIcon"
+                    spriteCssClass: "myIcon",
                     showIcon: "toolbar",
                     selected: true
                 }
@@ -159,9 +159,9 @@ The Toggle Button allows the user to change a setting between two states. To def
 
 #### Toggle Button groups
 
-Only a single button of a given group can be selected at a time. That feature is useful when the developer wants to create a group of mutually exclusive toggle buttons.
+Only a one Button from a group may be selected at a time. This is useful if you want to create a group of mutually exclusive Toggle Buttons.
 
-##### Example - define a mutually exclusive toggle buttons
+##### Example - define a group of mutually exclusive Toggle Buttons
 
     <div id="toolbar" style="min-width: 240px;"></div>
 
@@ -179,9 +179,9 @@ Only a single button of a given group can be selected at a time. That feature is
 
 The Split Button is a composite control which has a primary (main) button and alternative options displayed in a drop-down list bound to a secondary button.
 
-In the command overflow popup the SplitButton is rendered as list of commands - first is the primary (main) button followed by the drop-down items in the order they are defined.
+In the command overflow popup the Split Button is rendered as flat list of commands. The first is the primary (main) button followed by the drop-down items in the order they are defined.
 
-##### Example - define a split button
+##### Example - define a Split Button
 
     <div id="toolbar" style="min-width: 240px;"></div>
 
@@ -203,14 +203,13 @@ In the command overflow popup the SplitButton is rendered as list of commands - 
         });
     </script>
 
-
 ### Button Group
 
-The Button Group consists of a multiple button elements that are visually separated in a group.
+The Button Group consists of multiple button elements that are visually separated in a group.
 
 In the command overflow popup the Button Group is rendered as list of commands.
 
-##### Example - define a button group
+##### Example - define a Button Group
 
     <div id="toolbar" style="min-width: 240px;"></div>
 
@@ -220,7 +219,7 @@ In the command overflow popup the Button Group is rendered as list of commands.
                 {
                     type: "buttonGroup",
                     id: "btnGroup",
-                    //ButtonGroup's items accept the same appearance configration optinos as the button control
+                    //ButtonGroup's items accept the same appearance configuration options as the button item
                     items: [
                         { text: "prev", icon: "arrow-w" },
                         { text: "next", icon: "arrow-e" }
@@ -230,7 +229,7 @@ In the command overflow popup the Button Group is rendered as list of commands.
         });
     </script>
 
-##### Example - define a button group with a mutually exclusive options
+##### Example - define a Button Group with a mutually exclusive options
 
     <div id="toolbar" style="min-width: 240px;"></div>
 
@@ -253,9 +252,12 @@ In the command overflow popup the Button Group is rendered as list of commands.
 
 ### Custom Templates
 
-The ToolBar widget allows the developer to define custom control elements via templates.
+The ToolBar widget allows the developer to define custom items.
 
-> Unline all other commands the template one does not need a type. If a template is provided the type will be ignored. By default the developer should provide both `template` and `overflowTemplate` in order to determine how the command will be rendered in the command overflow popup. If the command should not appear in the command overflow popup its `overflow` property should be set to "never".
+Unlike all other commands the template command does not need a type set.
+If a template is provided the type property will be ignored.
+By default, you should define both `template` and `overflowTemplate` in order to specify how the command will be rendered in the command overflow popup.
+If the command should not appear in the command overflow popup its `overflow` property should be set to `"never"`.
 
 ##### Example - add a template command
 
@@ -267,6 +269,7 @@ The ToolBar widget allows the developer to define custom control elements via te
                 {
                     //specifies what element will be added in the ToolBar wrapper
                     template: '<img class="mail-icon" src="gmail.png" alt="gmail" />',
+
                     //specifies what element will be added in the command overflow popup
                     overflowTemplate: '<img class="mail-overflow-icon" src="gmail-overflow.png" alt="gmail" />
                 }
@@ -290,7 +293,7 @@ The ToolBar widget allows the developer to define custom control elements via te
         });
     </script>
 
-Custom template commands allows the developer to include other Kendo UI widgets in the ToolBar.
+Custom template commands allows the developer to add other Kendo UI widgets in the ToolBar.
 
 ##### Example - add DropDownList widget in the ToolBar
 
