@@ -132,7 +132,7 @@ When using hierarchy, the detail template content cannot be wider than the total
 
 ### Making the Grid 100% high and auto resizable
 
-This help section is applicable to scrollable Grids only.
+This help section is applicable to **scrollable** Grids only.
 
 In order to configure the Grid to be 100% high and resize together with its parent element on browser window resize, the first and most important thing to do is
 make the Grid `div` 100% high. According to web standards, elements with a percentage height require their parent to have an explicit height. This requirement applies recursively
@@ -140,8 +140,13 @@ until an element with a pixel height is reached, or until the `html` element is 
 so the default border of the Grid `div` should be removed as well.
 
 The second step is to subscribe to the browser window's `resize` event and execute the Grid's [`resize`](/kendo-ui/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages) method.
-It will take care of measuring the total height of the Grid and adjusting the height of the scrollable data area. This will work for Kendo UI versions Q3 2013 or later.
-For older versions, the following Javascript code must be used instead, which practically does the same:
+If Grid virtual scrolling is used, then execute the following instead of `resize`.
+
+    $("#GridID").data("kendoGrid").dataSource.fetch();
+
+The above statements will take care of measuring the total height of the Grid and adjusting the height of the scrollable data area.
+
+The `resize` method will work for Kendo UI versions **Q3 2013 or later**. For older versions, the following Javascript code must be used instead or `resize`, which practically does the same:
 
     $(window).resize(function() {
         var gridElement = $("#grid"),
