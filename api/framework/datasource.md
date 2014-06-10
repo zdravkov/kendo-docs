@@ -145,7 +145,7 @@ makes a HTTP request for every CRUD operation.
 
 ### data `Array|String`
 
-The array of data items which the data source contains. The data source will wrap those items as [kendo.data.ObservableObject](/kendo-ui/api/framework/obvservableobject) or [kendo.data.Model](/kendo-ui/api/framework/model) (if [schema.model](#configuration-schema.model) is set).
+The array of data items which the data source contains. The data source will wrap those items as [kendo.data.ObservableObject](/kendo-ui/api/framework/observableobject) or [kendo.data.Model](/kendo-ui/api/framework/model) (if [schema.model](#configuration-schema-model) is set).
 
 Can be set to a string value if the [schema.type](#configuration-schema.type) option is set to "xml".
 
