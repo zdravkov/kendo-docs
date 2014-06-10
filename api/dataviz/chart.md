@@ -951,7 +951,7 @@ If set to `true` the chart will position categories and series points on major t
 
 The default value is `false` except for "area" and "verticalArea".
 
-> This option is ignored if the [series.type](#configuration-series.type) option is set to "bar", "column", "boxPlot", "ohlc" or "candlestick".
+> This option is ignored if the [series.type](#configuration-series.type) option is set to "bar", "column", "boxPlot", "ohlc", "candlestick" or "waterfall".
 
 #### Example - justify categories and series
 
@@ -2887,7 +2887,7 @@ If set to `true` the category axis direction will be reversed. By default catego
 
 If set to `true` the chart will round the first and last date to the nearest base unit.
 
-The `roundToBaseUnit` option will be ignored if [series.type](#configuration-series.type) is set to "bar", "column", "boxPlot", "ohlc" or "candlestick".
+The `roundToBaseUnit` option will be ignored if [series.type](#configuration-series.type) is set to "bar", "column", "boxPlot", "ohlc", "candlestick" or "waterfall".
 
 ### categoryAxis.select `Object`
 
@@ -8088,7 +8088,7 @@ The supported values are:
 
 The name of the value axis to use.
 
-> The `axis` option is supported when [series.type](#configuration-series.type) is set to "area", "bar", "column", "line", "boxPlot", "candlestick" or "ohlc".
+> The `axis` option is supported for scatter plots. See [xAxis](#configuration-series.xAxis) and [yAxis](#configuration-series.yAxis) for scatter plots.
 
 #### Example - set the chart series value axis
 
@@ -8110,7 +8110,7 @@ The name of the value axis to use.
 
 The border of the chart series.
 
-> The `border` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "donut", "pie", "bubble", "boxPlot", "candlestick" or "ohlc".
+> The `border` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "donut", "pie", "bubble", "boxPlot", "candlestick", "ohlc" or "candlestick".
 
 #### Example - set the chart series border
 
@@ -8344,7 +8344,7 @@ The series base color. The supported values are:
 
 The data item field which contains the series color.
 
-> The `colorField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "bubble", "donut", "pie", "candlestick" or "ohlc".
+> The `colorField` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "bubble", "donut", "pie", "candlestick", "ohlc" or "waterfall".
 
 #### Example - set the chart series color field
 
@@ -8504,7 +8504,7 @@ The array of data items which represent the series data.
 Can be set to :
 
 * Array of objects. Each point is bound to the field specified via the [series.field](#configuration-series.field) option.
-* Array of numbers. Supported when the [series.type](#configuration-series.type) option is set to "area", "bar", "column", "donut", "pie" or "line".
+* Array of numbers. Supported when the [series.type](#configuration-series.type) option is set to "area", "bar", "column", "donut", "pie", "line" or "waterfall".
 * Array of arrays of numbers. Supported when the [series.type](#configuration-series.type) option is set to "bubble", "scatter", "scatterLine", "ohlc" or polar series.
     * Bubble series need arrays of three values - X value, Y value and Size value e.g. `[1, 1, 10]`
     * Scatter and scatter line series need arrays of two values - X value and Y value
@@ -8627,6 +8627,37 @@ The space in pixels between the different segments of the funnel chart.
     });
     </script>
 
+### series.summaryField `String` *(default: "summary")*
+
+The data item field which contains the summary type for [waterfall](#configuration-series.type) series.
+Summary columns are optional and can be one of two types:
+
+* "runningTotal" - Displays a running total from the last partial sum.
+* "sum" - Displays the sum of all series in the point
+
+> The value, if any, of a data item marked as a summary point will be discarded.
+
+#### Example
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [{
+        type: "waterfall",
+        data: [{
+            value: 100
+        }, {
+            value: -20
+        }, {
+            type: "runningTotal"
+        }, {
+            value: 50
+        }, {
+            type: "sum"
+        }]
+      }]
+    });
+    </script>
 
 ### series.neckRatio `Number` *(default: 0.3)*
 
@@ -9378,7 +9409,7 @@ The data item field which contains the series outliers value.
 
 The distance between the category clusters.
 
-> The `gap` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick", "ohlc" or "radarColumn".
+> The `gap` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick", "ohlc", "radarColumn" or "waterfall".
 
 #### Example - set the chart series gap
 
@@ -10202,11 +10233,11 @@ The position of the labels.
 
 * "above" - the label is positioned at the top of the marker. ** Applicable for series that render points, incl. bubble. **
 * "below" - the label is positioned at the bottom of the marker. ** Applicable for series that render points, incl. bubble. **
-* "center" - the label is positioned at the point center. ** Applicable for bar, column, donut, pie, funnel and radarColumn series. **
-* "insideBase" - the label is positioned inside, near the base of the bar. ** Applicable for bar and column series. **
-* "insideEnd" - the label is positioned inside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. **
+* "center" - the label is positioned at the point center. ** Applicable for bar, column, donut, pie, funnel, radarColumn and waterfall series. **
+* "insideBase" - the label is positioned inside, near the base of the bar. ** Applicable for bar, column and waterfall series. **
+* "insideEnd" - the label is positioned inside, near the end of the point. ** Applicable for bar, column, donut, pie, radarColumn and waterfall series. **
 * "left" - the label is positioned to the left of the marker. ** Applicable for series that render points, incl. bubble. **
-* "outsideEnd" - the label is positioned outside, near the end of the point. ** Applicable for bar, column, donut, pie and radarColumn series. Not applicable for stacked series.
+* "outsideEnd" - the label is positioned outside, near the end of the point. ** Applicable for bar, column, donut, pie, radarColumn and waterfall series. Not applicable for stacked series.
 * "right" - the label is positioned to the right of the marker. ** Applicable for series that render points, incl. bubble. **
 * "top" - the label is positioned at the top of the segment. ** Applicable for funnel series **
 * "bottom" - the label is positioned at the bottom of the segment. ** Applicable for funnel series **
@@ -10233,7 +10264,7 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 
 The fields which can be used in the template are:
 
-*   category - the category name. Available for area, bar, column, bubble, donut, line and pie series.
+*   category - the category name. Available for area, bar, column, bubble, donut, line, pie and waterfall series.
 *   dataItem - the original data item used to construct the point. Will be null if binding to array.
 *   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 *   series - the data series
@@ -10276,7 +10307,7 @@ If set to `true` the chart will display the series labels. By default chart seri
 
 The chart line configuration options.
 
-> The `line` option is supported when the [series.type](#configuration-series.type) option is set to "area", "candlestick" or "ohlc".
+> The `line` option is supported when the [series.type](#configuration-series.type) option is set to "area", "candlestick", "ohlc" or "waterfall".
 
 #### Example - configure the chart line options
 
@@ -11279,7 +11310,7 @@ The fields which can be used in the template are:
 
 ### series.negativeColor `String`
 
-The color to use for bar or column series with negative values. Accepts a valid CSS color string, including hex and rgb.
+The color to use for bar, column or waterfall series with negative values. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example - set the chart column series negative color
 
@@ -13994,6 +14025,7 @@ The supported values are:
 * radarLine
 * scatter
 * scatterLine
+* waterfall
 * verticalArea
 * verticalBullet
 * verticalLine
