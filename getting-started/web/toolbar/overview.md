@@ -22,57 +22,71 @@ The ToolBar widget is designed to hold different types of controls such as butto
 
 ### Button
 
-Button element can have the following properties:
+Each button item can have the following properties:
 
     $("#toolbar").kendoToolBar({
         items: [
             {
                 //**mandatory** specifies the command type
                 type: "button",
+
                 //sets the text
                 text: "MyButton",
-                //specifies where the text will be displayed, possible values: "toolbar", "overflow" or "both". Default value is "both".
+
+                //specifies where the text will be displayed. Possible values are: "toolbar", "overflow" or "both" (default).
                 showText: "both",
-                //defines a name of an existing icon in the Kendo UI theme sprite.
-                icon: "folder-add"
-                //defines a URL, which will be used for an img element inside the Button.
+
+                //sets icon for the item. The icon should be one of the existing in the Kendo UI theme sprite.
+                icon: "folder-add",
+
+                //if set, the ToolBar will render an image with the specified URL in the button.
                 imageUrl: "../content/btnImage.png"
-                //defines a CSS class (or multiple classes separated by spaces), which will be used for button icon.
+
+                //defines a CSS class (or multiple classes separated by spaces) which will be used for button icon.
                 spriteCssClass: "myIcon"
-                //specifies where the button icon will be displayed, possible values: "toolbar", "overflow" or "both". Default value is "both".
+
+                //specifies where the button icon will be displayed. Possible values are: "toolbar", "overflow" or "both" (default).
                 showIcon: "toolbar",
+
                 //specifies the ID of the button.
                 id: "myButton",
+
                 //specifies whether the control is initially enabled or disabled. Default value is "true".
                 enable: true,
+
                 //specifies whether the button is primary. Primary buttons receive different styling.
                 primary: false,
-                //specifies how the control will behave on resizing. Possible values: "always", "never" or "auto". Default value is "auto".
-                overflow: "auto"
-                //specifies whether the button is toggable, e.g. has a selected and non selected state.
+
+                //specifies how the button behaves when the ToolBar is resized. Possible values are: "always", "never" or "auto" (default).
+                overflow: "auto",
+
+                //specifies if the button is toggable, e.g. has a selected and unselected state.
                 toggle: true,
-                //specifies whether a toggle button is initially selected. Applicable only for buttons with toggle: true
+
+                //specifies if the toggle button is initially selected. Applicable only for buttons with toggle: true.
                 selected: true,
-                //assigns the button to a group. Applicable only for buttons with toggle: true
+
+                //assigns the button to a group. Applicable only for buttons with toggle: true.
                 group: "myGroup"
             }
         ]
     });
 
-**When resizing is enabled the control will be rendered two times** - once in the toolbar and once in the command overflow popup.
-If the button has specified ID it will be assigned to the element located in the ToolBar wrapper, the element located in the command overflow popup will receive the same ID but with a "_overflow" suffix.
+**When resizing is enabled the control will be rendered two times** - once in the ToolBar and once in the command overflow popup.
+If the button has an ID set, it will be assigned to the element in the ToolBar wrapper. The corresponding element in the command overflow popup will receive the same ID with an "_overflow" suffix.
+For example, a button with `id: "foo"` and `overflow: "auto"` will render an element with id="foo" in the ToolBar and another element with an id="foo_overflow" in the ToolBar command overflow popup.
 
-If the `overflow` propertiy is set to:
+The `overflow` property accepts the following values:
 
-* "always" - button will be rendered and displayed only in the command overflow popup.
-* "never" - button will be rendered and displayed only in the ToolBar wrapper.
-* "both" - button will be rendered both in the ToolBar wrapper and in the command overflow popup. It will be displayed in only one of the locations depending on the available space in the ToolBar wrapper.
+* "always" - the button will be rendered and displayed only in the command overflow popup.
+* "never" - the button will be rendered and displayed only in the ToolBar wrapper.
+* "both" - the button will be rendered both in the ToolBar wrapper and in the command overflow popup. It will be displayed in only one of the locations depending on the available space in the ToolBar wrapper.
 
-#### Button's appearance:
+#### Button appearance:
 
-* The `icon` property defines a name of an existing icon in the Kendo UI theme sprite. The icon will be applied as background image of a span element rendered inside the Button. For a list of available icon names, please refer to the [Icons demo](http://demos.telerik.com/kendo-ui/styling/icons).
-* The `imageUrl` property defines a URL, which will be used for an img element inside the Button. The URL can be relative or absolute. In case it is relative, it will be evaluated with relation to the web page URL. The img element can be rendered automatically by the widget.
-* The `spriteCssClass` property defines a CSS class (or multiple classes separated by spaces), which will be used for applying a background image to a span element inside the Button. In case you want to use an icon from the Kendo UI theme sprite background image, it is easier to use the icon property.
+* The `icon` property defines a name of an existing icon from the Kendo UI theme sprite. The icon will be applied as background image of a `span` element rendered inside the Button. For a list of available icon names, refer to the [Icons demo](http://demos.telerik.com/kendo-ui/styling/icons).
+* The `imageUrl` property defines an URL which will be used for an `img` element inside the Button. The `img` element will be rendered automatically by the widget.
+* The `spriteCssClass` property defines a one or more CSS classes separated by spaces, which will be used for applying a background image to a `span` element inside the Button. In case you want to use an icon from the Kendo UI theme sprite background image, it is easier to use the icon property.
 
 ##### Example - using icons
 
@@ -204,8 +218,8 @@ In the command overflow popup the Button Group is rendered as list of commands.
         $("#toolbar").kendoToolBar({
             items: [
                 {
-                    type: "buttonGroup", 
-                    id: "btnGroup", 
+                    type: "buttonGroup",
+                    id: "btnGroup",
                     //ButtonGroup's items accept the same appearance configration optinos as the button control
                     items: [
                         { text: "prev", icon: "arrow-w" },
@@ -224,8 +238,8 @@ In the command overflow popup the Button Group is rendered as list of commands.
         $("#toolbar").kendoToolBar({
             items: [
                 {
-                    type: "buttonGroup", 
-                    id: "btnGroup", 
+                    type: "buttonGroup",
+                    id: "btnGroup",
                     //ButtonGroup's items accept the same appearance configration optinos as the button control
                     items: [
                         { text: "foo", toggle: true, group: "controlGroup" },
