@@ -32,7 +32,7 @@ If resizable is set to true the widget will detect changes in the viewport width
 
 ### add
 
-Adds new command to the ToolBar widget. Accepts object with valid command configuration options.
+Adds new command to the ToolBar widget. Accepts object with [valid command configuration options](/kendo-ui/getting-started/web/toolbar/overview#command-types).
 
 #### Parameters
 
@@ -55,7 +55,7 @@ An object with valid command configuration options.
             type: "button",
             text: "Just added",
             toggle: true
-        });
+        });)
     </script>
 
 ### destroy
