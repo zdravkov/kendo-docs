@@ -10270,6 +10270,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value. Can be a number or object containing each bound field.
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* sum - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series label template
 
@@ -12181,6 +12182,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value (either a number or an object)
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* sum - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
@@ -13749,6 +13751,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value. Can be a number or object containing each bound field.
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* sum - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series label template
 
@@ -14354,6 +14357,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value (either a number or an object)
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* sum - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
@@ -15929,6 +15933,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value (either a number or an object)
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* sum - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
