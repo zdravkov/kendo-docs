@@ -205,10 +205,6 @@ Fires when the SplitButton's popup closes.
 
 The jQuery object that represents the SplitButton element.
 
-##### e.popup `kendo.ui.Popup`
-
-The popup instance that is attached to the Split Button command.
-
 ##### e.preventDefault `Function`
 
 Prevents the close action if called. The popup will remain open.
@@ -266,10 +262,6 @@ Fires when the Split Button's popup opens.
 ##### e.SplitButton `jQuery`
 
 The jQuery object that represents the SplitButton element.
-
-##### e.popup `kendo.ui.Popup`
-
-The popup instance that is attached to the SplitButton control.
 
 ##### e.preventDefault `Function`
 
