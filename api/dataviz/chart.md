@@ -10264,11 +10264,12 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 
 The fields which can be used in the template are:
 
-*   category - the category name. Available for area, bar, column, bubble, donut, line, pie and waterfall series.
-*   dataItem - the original data item used to construct the point. Will be null if binding to array.
-*   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
-*   series - the data series
-*   value - the point value. Can be a number or object containing each bound field.
+* category - the category name. Available for area, bar, column, bubble, donut, line, pie and waterfall series.
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+* series - the data series
+* value - the point value. Can be a number or object containing each bound field.
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 
 #### Example - set the chart series label template
 
@@ -12175,10 +12176,11 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 
 The fields which can be used in the template are:
 
-*   category - the category name
-*   dataItem - the original data item used to construct the point. Will be null if binding to array.
-*   series - the data series
-*   value - the point value (either a number or an object)
+* category - the category name
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* series - the data series
+* value - the point value (either a number or an object)
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
@@ -13741,11 +13743,12 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 
 The fields which can be used in the template are:
 
-*   category - the category name. Available for area, bar, column, bubble, donut, funnel, line and pie series.
-*   dataItem - the original data item used to construct the point. Will be null if binding to array.
-*   percentage - the point value represented as a percentage value. Available for donut, funnel and pie series.
-*   series - the data series
-*   value - the point value. Can be a number or object containing each bound field.
+* category - the category name. Available for area, bar, column, bubble, donut, funnel, line and pie series.
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* percentage - the point value represented as a percentage value. Available for donut, funnel and pie series.
+* series - the data series
+* value - the point value. Can be a number or object containing each bound field.
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 
 #### Example - set the chart series label template
 
@@ -13940,7 +13943,7 @@ The scatterLine chart series options. Accepts all values supported by the [serie
 
 The space between the chart series as proportion of the series width.
 
-> The `spacing` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick" or "ohlc".
+> The `spacing` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick", "ohlc" and "candlestick".
 
 #### Example - set the chart series spacing
 
@@ -14346,10 +14349,11 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 
 The fields which can be used in the template are:
 
-*   category - the category name
-*   dataItem - the original data item used to construct the point. Will be null if binding to array.
-*   series - the data series
-*   value - the point value (either a number or an object)
+* category - the category name
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* series - the data series
+* value - the point value (either a number or an object)
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
@@ -15920,10 +15924,11 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the
 
 The fields which can be used in the template are:
 
-*   category - the category name
-*   dataItem - the original data item used to construct the point. Will be null if binding to array.
-*   series - the data series
-*   value - the point value (either a number or an object)
+* category - the category name
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* series - the data series
+* value - the point value (either a number or an object)
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
