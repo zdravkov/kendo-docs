@@ -8633,7 +8633,7 @@ The data item field which contains the summary type for [waterfall](#configurati
 Summary columns are optional and can be one of two types:
 
 * "runningTotal" - Displays a running total from the last partial sum.
-* "sum" - Displays the sum of all series in the point
+* "total" - Displays the sum of all points in the series.
 
 > The value, if any, of a data item marked as a summary point will be discarded.
 
@@ -8653,7 +8653,7 @@ Summary columns are optional and can be one of two types:
         }, {
             value: 50
         }, {
-            type: "sum"
+            type: "total"
         }]
       }]
     });
@@ -10270,7 +10270,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value. Can be a number or object containing each bound field.
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
-* sum - the sum of all series values. Available for waterfall series.
+* total - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series label template
 
@@ -12182,7 +12182,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value (either a number or an object)
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
-* sum - the sum of all series values. Available for waterfall series.
+* total - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
@@ -13751,7 +13751,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value. Can be a number or object containing each bound field.
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
-* sum - the sum of all series values. Available for waterfall series.
+* total - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series label template
 
@@ -14357,7 +14357,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value (either a number or an object)
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
-* sum - the sum of all series values. Available for waterfall series.
+* total - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
@@ -15933,7 +15933,7 @@ The fields which can be used in the template are:
 * series - the data series
 * value - the point value (either a number or an object)
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
-* sum - the sum of all series values. Available for waterfall series.
+* total - the sum of all series values. Available for waterfall series.
 
 #### Example - set the chart series tooltip template
     <div id="chart"></div>
