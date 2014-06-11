@@ -11,12 +11,66 @@ publish: true
 # ToolBar Overview
 
 The ToolBar widget is designed to hold different types of controls such as buttons, button groups, toggle buttons, split buttons or other custom defined elements.
+The widget consists of a three main areas - ToolBar wrapper, overflow anchor and command overflow popup.
+The TollBar wrapper holds all commands that can be placed within the available container width, those ones for which there is not enough space are moved to the command overflow popup.
+
+![ToolBar areas](/getting-started/web/toolbar/toolbar-areas.png)
 
 ## Getting Started
 
 ### Example - initialization and basic usage
 
+    <div id="toolbar"></div>
 
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                //custom template
+                {
+                    template: '<div class="toolbar-logo"><img src="../content/logo.png" alt="logo" /></div>",
+                    overflow: "never"
+                },
+
+                //regular button
+                {
+                    type: "button",
+                    text: "Button",
+                    icon: "note",
+                    showIcon: "toolbar"
+                },
+
+                //toggle button
+                {
+                    type: "button",
+                    toggle: true,
+                    text: "Toggle Button",
+                    icon: "tick",
+                    selected: true
+                },
+
+                //split button
+                {
+                    type: "splitButton",
+                    text: "Split Button",
+                    items: [
+                        { id: "option1", text: "Option 1" },
+                        { id: "option2", text: "Option 2" },
+                        { id: "option3", text: "Option 3" }
+                    ]
+                },
+
+                //button group
+                {
+                    type: "buttonGroup",
+                    items: [
+                        { text: "left",   showText: "overflow", icon: "justifyLeft",   showIcon: "toolbar" },
+                        { text: "center", showText: "overflow", icon: "justifyCenter", showIcon: "toolbar" },
+                        { text: "right",  showText: "overflow", icon: "justifyRight",  showIcon: "toolbar" }
+                    ]
+                }
+            ]
+        });
+    </script>
 
 ## Command Types
 
@@ -90,7 +144,7 @@ The `overflow` property accepts the following values:
 
 ##### Example - using icons
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -116,7 +170,7 @@ The `showText` property accepts the following values:
 
 ##### Example - define a button that will be displayed only as an icon in the ToolBar wrapper and will have only text in the command overflow container
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -140,7 +194,7 @@ The Toggle Button allows the user to change a setting between two states. To def
 
 ##### Example - define a Toggle Button
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -163,7 +217,7 @@ Only a one Button from a group may be selected at a time. This is useful if you 
 
 ##### Example - define a group of mutually exclusive Toggle Buttons
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -183,7 +237,7 @@ In the command overflow popup the Split Button is rendered as flat list of comma
 
 ##### Example - define a Split Button
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -211,7 +265,7 @@ In the command overflow popup the Button Group is rendered as list of commands.
 
 ##### Example - define a Button Group
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -231,7 +285,7 @@ In the command overflow popup the Button Group is rendered as list of commands.
 
 ##### Example - define a Button Group with a mutually exclusive options
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -261,7 +315,7 @@ If the command should not appear in the command overflow popup its `overflow` pr
 
 ##### Example - add a template command
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -279,7 +333,7 @@ If the command should not appear in the command overflow popup its `overflow` pr
 
 ##### Example - add a template command that will appear only in the ToolBar wrapper
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -297,7 +351,7 @@ Custom template commands allows the developer to add other Kendo UI widgets in t
 
 ##### Example - add DropDownList widget in the ToolBar
 
-    <div id="toolbar" style="min-width: 240px;"></div>
+    <div id="toolbar"></div>
 
     <script>
         $("#toolbar").kendoToolBar({
@@ -316,5 +370,29 @@ Custom template commands allows the developer to add other Kendo UI widgets in t
     </script>
 
 ## Resizing
+
+By design the widget will detect changes in the viewport width and hide the overflowing controls in the command overflow popup. This feature may be disabled by setting `resizable` option to `false`.
+
+The developer can control how a given command will behave on resizing with its `overflow` property.
+
+> Commands with `overflow: "never"` should be declared first followed by those with `overflow: "auto"`. Commands with `overflow: "always"` should be declared last.
+
+> Setting the min-width of the ToolBar's element is mandatory if the developer wants to prevent the widget from resizing below a given width.
+
+##### Example - using the overflow property
+
+    <div id="toolbar" style="min-width: 240px;"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { overflow: "never", template: '<input id="search" />' },
+                { overflow: "never", type: "button", text: "Never" },
+                { overflow: "auto", type: "button", text: "Auto 1" },
+                { overflow: "auto", type: "button", text: "Auto 2" },
+                { overflow: "always", type: "button", text: "Always" }
+            ]
+        });
+    </script>
 
 ## Mobile rendering
