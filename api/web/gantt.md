@@ -35,6 +35,17 @@ data source is fired. By default the widget will bind to the data source specifi
     dataSource.read(); // "read()" will fire the "change" event of the dataSource and the widget will be bound
     </script>
 
+### dataSource `Object|Array|kendo.data.GanttDataSource`
+
+The data source of the widget which contains the tasks. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.GanttDataSource](/kendo-ui/api/framework/ganttdatasource)
+instance.
+
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.GanttDataSource](/kendo-ui/api/framework/ganttdatasource) instance using that value as data source configuration.
+
+If the `dataSource` option is an existing [kendo.data.GanttDataSource](/kendo-ui/api/framework/ganttdatasource) instance the widget will use that instance and will **not** initialize a new one.
+
+> The Kendo UI Gantt widget can be bound *only* to a `kendo.data.GanttDataSource`. An exception will be thrown if the `dataSource` option is set to a `kendo.data.DataSource` instance.
+
 ## Fields
 
 ### dataSource `kendo.data.GanttDataSource`
