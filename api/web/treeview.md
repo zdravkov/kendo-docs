@@ -834,7 +834,7 @@ The nodes that are to be expanded.
 
 ### expandPath
 
-Expands all nodes to a given element.
+Expands all nodes to a given element. Nodes may be loaded from a remote end-point.
 
 #### Parameters
 
@@ -864,6 +864,47 @@ Callback function that will be called once the path has been expanded.
 
     // expand the path of nodes with IDs 1, 2, and 3
     treeview.expandPath([1, 2, 3]);
+
+    </script>
+
+### expandTo
+
+Expands all nodes up to a given element. The element needs to be already loaded.
+
+#### Parameters
+
+##### targetNode `kendo.data.Node|Object`
+
+The dataItem of the node up to which to expand. Can also be the node ID
+
+#### Example
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: [
+        { id: 1, text: "foo", items: [
+          { id: 2, text: "bar", items: [
+            { id: 3, text: "baz" }
+          ] }
+        ] },
+        { text: "one", items: [
+          { text: "two", items: [
+            { text: "three" }
+          ] }
+        ] }
+      ]
+    });
+
+    var treeview = $("#treeview").data("kendoTreeView");
+
+    // expand all nodes up to "baz" (with id = 3)
+    treeview.expandTo(3);
+
+
+    // expand all nodes up to "three"
+    var three = treeview.dataItem(treeview.findByText("three"));
+    treeview.expandTo(three);
 
     </script>
 
