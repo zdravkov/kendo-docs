@@ -9097,6 +9097,50 @@ The data item field which contains the series value.
     });
     </script>
 
+### series.fromField `String` *(default: "min")*
+
+The data item field which contains the series from value.
+
+#### Example - set the chart series fromField
+
+	<div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [
+          { from: 1, to: 5 },
+          { from: 2, to: 6 },
+          { from: 3, to: 7 }
+        ]
+      },
+      series: [{
+        fromField: "from"
+      }]
+    });
+    </script>
+
+### series.toField `String` *(default: "max")*
+
+The data item field which contains the series to value.
+
+#### Example - set the chart series toField
+
+	<div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      dataSource: {
+        data: [
+          { from: 1, to: 5 },
+          { from: 2, to: 6 },
+          { from: 3, to: 7 }
+        ]
+      },
+      series: [{
+        toField: "to"
+      }]
+    });
+    </script>
+
 ### series.noteTextField `String` *(default: "noteText")*
 
 The data item field which contains the series note text.
@@ -12166,6 +12210,8 @@ The supported values are:
 * radarArea
 * radarColumn
 * radarLine
+* rangeBar
+* rangeColumn
 * scatter
 * scatterLine
 * verticalArea

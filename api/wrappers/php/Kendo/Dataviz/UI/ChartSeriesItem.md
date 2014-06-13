@@ -448,6 +448,24 @@ The data item field which contains the series value.
     $seriesItem->field('value');
     ?>
 
+### fromField
+The data item field which contains the series from value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->fromField('value');
+    ?>
+
 ### gap
 The distance between the category clusters.
 
@@ -1285,6 +1303,24 @@ The data item field containing the target value.
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->targetField('value');
+    ?>
+
+### toField
+The data item field which contains the series to value.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->toField('value');
     ?>
 
 ### tooltip
