@@ -573,7 +573,7 @@ If set to true the category axis direction will be reversed. By default categori
     ?>
 
 ### roundToBaseUnit
-If set to true the chart will round the first and last date to the nearest base unit.The roundToBaseUnit option will be ignored if series.type is set to "bar", "column", "boxPlot", "ohlc" or "candlestick".
+If set to true the chart will round the first and last date to the nearest base unit.The roundToBaseUnit option will be ignored if series.type is set to "bar", "column", "boxPlot", "ohlc", "candlestick" or "waterfall".
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartCategoryAxisItem`

@@ -846,7 +846,7 @@ specifies the ratio top-base/bottom-base of the whole chart. neckRatio set to th
     ?>
 
 ### negativeColor
-The color to use for bar or column series with negative values. Accepts a valid CSS color string, including hex and rgb.
+The color to use for bar, column or waterfall series with negative values. Accepts a valid CSS color string, including hex and rgb.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesItem`
@@ -1256,6 +1256,25 @@ The supported values are:
     <?php
     $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
     $seriesItem->style('value');
+    ?>
+
+### summaryField
+The data item field which contains the summary type for waterfall series.
+Summary columns are optional and can be one of two types:
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItem`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $seriesItem = new \Kendo\Dataviz\UI\ChartSeriesItem();
+    $seriesItem->summaryField('value');
     ?>
 
 ### target
