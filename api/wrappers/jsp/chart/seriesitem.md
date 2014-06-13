@@ -155,6 +155,14 @@ The data item field which contains the series value.
     <kendo:chart-seriesItem field="field">
     </kendo:chart-seriesItem>
 
+### fromField `java.lang.String`
+
+The data item field which contains the series from value.
+
+#### Example
+    <kendo:chart-seriesItem fromField="fromField">
+    </kendo:chart-seriesItem>
+
 ### gap `float`
 
 The distance between the category clusters.
@@ -394,6 +402,14 @@ The data item field containing the target value.
 
 #### Example
     <kendo:chart-seriesItem targetField="targetField">
+    </kendo:chart-seriesItem>
+
+### toField `java.lang.String`
+
+The data item field which contains the series to value.
+
+#### Example
+    <kendo:chart-seriesItem toField="toField">
     </kendo:chart-seriesItem>
 
 ### type `java.lang.String`
