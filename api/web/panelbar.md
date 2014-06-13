@@ -411,6 +411,27 @@ A reference item to append the new item in the PanelBar, can be omitted.
 
 `kendo.ui.PanelBar` Returns the PanelBar object to support chaining.
 
+### clearSelection
+
+Clears the currently selected PanelBar items.
+
+#### Example - clear selection
+
+    <ul id="panelbar">
+        <li id="item1">Item 1</li>
+        <li id="item2">Item 2</li>
+    </ul>
+    <script>
+        // create a PanelBar instance and get it.
+        var panelBar = $("#panelbar").kendoPanelBar().data("kendoPanelBar");
+        // select the element with ID "item1"
+        panelBar.select($("#item1"));
+        // select the element with ID "item2"
+        panelBar.select($("#item2"));
+        // clear all selection
+        panelBar.clearSelection();
+    </script>
+
 ### collapse
 
 Collapses the specified item(s) of a **PanelBar**.
