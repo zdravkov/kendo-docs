@@ -277,7 +277,7 @@ specifies the ratio top-base/bottom-base of the whole chart. neckRatio set to th
 
 ### negativeColor `java.lang.String`
 
-The color to use for bar or column series with negative values. Accepts a valid CSS color string, including hex and rgb.
+The color to use for bar, column or waterfall series with negative values. Accepts a valid CSS color string, including hex and rgb.
 
 #### Example
     <kendo:chart-seriesItem negativeColor="negativeColor">
@@ -394,6 +394,15 @@ The supported values are:
 
 #### Example
     <kendo:chart-seriesItem style="style">
+    </kendo:chart-seriesItem>
+
+### summaryField `java.lang.String`
+
+The data item field which contains the summary type for waterfall series.
+Summary columns are optional and can be one of two types:
+
+#### Example
+    <kendo:chart-seriesItem summaryField="summaryField">
     </kendo:chart-seriesItem>
 
 ### targetField `java.lang.String`
