@@ -1303,9 +1303,9 @@ The default configuration for bubble layers.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1329,9 +1329,9 @@ The attribution for all bubble layers.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1355,9 +1355,9 @@ The the opacity of all bubble layers.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1381,9 +1381,9 @@ The maximum symbol size for bubble layer symbols.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1409,9 +1409,9 @@ The minimum symbol size for bubble layer symbols.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1446,9 +1446,9 @@ The default style for bubble layer symbols.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1478,9 +1478,9 @@ Accepts a valid CSS color string or object with detailed configuration.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1509,9 +1509,9 @@ Accepts a valid CSS color string, including hex and rgb.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1540,9 +1540,9 @@ The default fill opacity (0 to 1) for layer symbols.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1574,9 +1574,9 @@ Accepts a valid CSS color string or object with detailed configuration.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1605,9 +1605,9 @@ Accepts a valid CSS color string, including hex and rgb.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1645,9 +1645,9 @@ The following dash types are supported:
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1676,9 +1676,9 @@ The default stroke opacity (0 to 1) for bubble layer symbols.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1706,9 +1706,9 @@ The default stroke width for bubble layer symbols.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -1745,9 +1745,9 @@ The function return value must be a `kendo.dataviz.drawing.Shape`.
                 type: "bubble",
                 dataSource: {
                     data: [{
-                        "lat": 42, "lng": 2, "value": 100
+                        "location": [42, 12], "value": 10
                     }, {
-                        "lat": 45, "lng": 7, "value": 150
+                        "location": [45, 15], "value": 25
                     }]
                 }
             }]
@@ -2173,10 +2173,12 @@ The bing map tile types. Possible options:
 
 ### layers.locationField `String` *(default: "location")*
 
-The data item field which contains the marker location.
-The field should be an array with two numbers - latitude and longitude.
+The data item field which contains the marker (symbol) location.
+The field should be an array with two numbers - latitude and longitude in decimal degrees.
 
 Requires the [dataSource](#configuration-layers-dataSource) option to be set.
+
+Only applicable to "marker" and "bubble" layers.
 
 #### Example - bind marker title
     <div id="map"></div>
@@ -2748,6 +2750,52 @@ The event on which the tooltip will be shown. Predefined values are "mouseenter"
         });
     </script>
 
+### layers.maxSize `Number` *(default: 100)*
+
+The maximum symbol size for bubble layer symbols.
+
+#### Example - Set minSize for bubble layer
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "bubble",
+                maxSize: 50,
+                dataSource: {
+                    data: [{
+                        "location": [42, 12], "value": 10
+                    }, {
+                        "location": [45, 15], "value": 25
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layers.minSize `Number` *(default: 0)*
+
+The minimum symbol size for bubble layer symbols.
+
+> Setting non-zero value will distort symbol area to value ratio.
+
+#### Example - Set minSize for bubble layer
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "bubble",
+                minSize: 10,
+                dataSource: {
+                    data: [{
+                        "location": [42, 12], "value": 10
+                    }, {
+                        "location": [45, 15], "value": 25
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layers.maxZoom
 
 The maximum zoom level at which to show this layer.
@@ -2828,6 +2876,41 @@ Alternating between different subdomains allows more requests to be executed in 
                 urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
                 subdomains: ["a", "b", "c"],
                 attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### layers.symbol `String|Function` *(default: "circle")*
+
+The symbol to use for bubble layers. Possible values:
+
+* "circle" - A circle.
+* "square" - A square symbol.
+* function - An user defined symbol.
+
+The function must accept an object with the following fields:
+* center - The symbol center on the current layer.
+* size - The symbol size.
+* style - The symbol style.
+* dataItem - The dataItem used to create the symbol.
+* location - The location of the data point.
+
+The function return value must be a `kendo.dataviz.drawing.Shape`.
+
+#### Example - Set symbol for bubble layer
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "bubble",
+                symbol: "square",
+                dataSource: {
+                    data: [{
+                        "location": [42, 12], "value": 10
+                    }, {
+                        "location": [45, 15], "value": 25
+                    }]
+                }
             }]
         });
     </script>
@@ -3152,6 +3235,30 @@ The URL template for tile layers. Template variables:
                 urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
                 subdomains: ["a", "b", "c"],
                 attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### layers.valueField `String` *(default: "value")*
+
+The value field for bubble layer symbols.
+The data item field should be a number.
+
+#### Example - Set bubble layer fields
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "bubble",
+                locationField: "loc",
+                valueField: "val",
+                dataSource: {
+                    data: [{
+                        "loc": [42, 2], "val": 100
+                    }, {
+                        "loc": [45, 7], "val": 150
+                    }]
+                }
             }]
         });
     </script>
