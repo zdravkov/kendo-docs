@@ -1286,6 +1286,474 @@ The default stroke width for layer shapes.
         });
     </script>
 
+### layerDefaults.bubble `Object`
+
+The default configuration for bubble layers.
+
+#### Example
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    attribution: "&copy; Company Inc."
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.attribution `String`
+
+The attribution for all bubble layers.
+
+#### Example - set default attribution for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    attribution: "&copy; Company Inc."
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.opacity `Number` *(default: 1)*
+
+The the opacity of all bubble layers.
+
+#### Example - set tile layer default opacity
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    opacity: 0.5
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.maxSize `Number` *(default: 100)*
+
+The maximum symbol size for bubble layer symbols.
+
+#### Example - Set default minSize for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    maxSize: 50
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.minSize `Number` *(default: 0)*
+
+The minimum symbol size for bubble layer symbols.
+
+> Setting non-zero value will distort symbol area to value ratio.
+
+#### Example - Set default minSize for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    minSize: 10
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style `Object`
+
+The default style for bubble layer symbols.
+
+#### Example - Set default style for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        fill: {
+                            color: "red",
+                            opacity: 1
+                        },
+                        stroke: {
+                            color: "green",
+                            width: 4,
+                            dashType: "longDashDot",
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.fill `Object`
+
+The default fill for bubble layer symbols.
+Accepts a valid CSS color string or object with detailed configuration.
+
+#### Example - Set default fill for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        fill: {
+                            color: "red",
+                            opacity: 1
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.fill.color `String`
+
+The default fill color for bubble layer symbols.
+Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - Set default fill color for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        fill: {
+                            color: "red"
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.fill.opacity `Number`
+
+The default fill opacity (0 to 1) for layer symbols.
+
+#### Example - Set default fill with opacity for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        fill: {
+                            color: "red",
+                            opacity: 1
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.stroke `Object`
+
+The default stroke for bubble layer symbols.
+Accepts a valid CSS color string or object with detailed configuration.
+
+#### Example - Set default stroke for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        stroke: {
+                            color: "green",
+                            width: 4,
+                            dashType: "longDashDot",
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.stroke.color `String`
+
+The default stroke color for bubble layer symbols.
+Accepts a valid CSS color string, including hex and rgb.
+
+#### Example - Set default stroke color for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        stroke: {
+                            color: "green"
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.stroke.dashType `String` *(default: "solid")*
+
+The default dash type for layer symbols.
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+#### Example - Set default dashed stroke for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        stroke: {
+                            width: 4,
+                            dashType: "longDashDot"
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.stroke.opacity `Number`
+
+The default stroke opacity (0 to 1) for bubble layer symbols.
+
+#### Example - Set default stroke with opacity for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        stroke: {
+                            width: 4,
+                            opacity: 0.5
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.style.stroke.width `Number` *(default: 1)*
+
+The default stroke width for bubble layer symbols.
+
+#### Example - Set default stroke width for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    style: {
+                        stroke: {
+                            width: 4
+                        }
+                    }
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
+### layerDefaults.bubble.symbol `String|Function` *(default: "circle")*
+
+The default symbol for bubble layers. Possible values:
+
+* "circle" - A circle.
+* "square" - A square symbol.
+* function - An user defined symbol.
+
+The function must accept an object with the following fields:
+* center - The symbol center on the current layer.
+* size - The symbol size.
+* style - The symbol style.
+* dataItem - The dataItem used to create the symbol.
+* location - The location of the data point.
+
+The function return value must be a `kendo.dataviz.drawing.Shape`.
+
+#### Example - Set default symbol for all bubble layers
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layerDefaults: {
+                bubble: {
+                    symbol: "square"
+                }
+            },
+            layers: [{
+                type: "bubble",
+                dataSource: {
+                    data: [{
+                        "lat": 42, "lng": 2, "value": 100
+                    }, {
+                        "lat": 45, "lng": 7, "value": 150
+                    }]
+                }
+            }]
+        });
+    </script>
+
 ### layerDefaults.tile `Object`
 
 The default configuration for tile layers.
@@ -2372,6 +2840,7 @@ The layer type. Supported types are:
 * "tile" - a generic "slippy map" tile layer
 * "marker" - a data-bound marker layer
 * "shape" - a vector shape layer, e.g. bound to GeoJSON data
+* "bubble" - a specialized vector shape layer for bubble maps
 
 #### Example - creating a tile layer
     <div id="map"></div>
