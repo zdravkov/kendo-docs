@@ -36,6 +36,38 @@ If the `dataSource` option is an existing [kendo.data.GanttDataSource](/kendo-ui
 
 If set to `true` the user would be able to create new tasks and modify or delete existing ones.
 
+### workDayStart `Date`
+
+Sets the start of the work day.
+
+### workDayEnd `Date`
+
+Sets the end of the work day.
+
+### workWeekStart `Number` *(default: 1)*
+
+The start of working week (index based).
+
+### workWeekEnd `Number` *(default: 5)*
+
+The end of working week (index based).
+
+### hourSpan `Number` *(default: 1)*
+
+The span of an hour slot.
+
+### snap `Boolean` *(default: true)*
+
+If `true`, tasks snap to time slots, otherwise tasks can have arbitrary duration.
+
+### height `Number|String` *(default: 600)*
+
+The height of the widget. Numeric values are treated as pixels.
+
+### listWidth `String|Number` *(default: "30%")*
+
+The width of the task list. Numeric values are treated as pixels.
+
 ### messages `Object`
 
 The configuration of the gantt messages. Use this option to customize or localize the gantt messages.
@@ -97,6 +129,21 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 > Changes of the data source will be reflected in the widget.
 
 > Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
+
+### views `Array`
+
+The views displayed by the gantt and their configuration. The array items can be either objects specifying the view configuration or strings representing the view types (assuming default configuration).
+By default the Kendo UI Gantt widget displays the "day" and "week" views.
+
+### views.selected `Boolean` *(default: false)*
+
+If set to `true` the view will be initially selected by the gantt widget.
+
+> If more than one view is selected then last of them will prevail.
+
+### views.type `String`
+
+The type of the view. The built-in views are: "day", "week", and "month".
 
 ## Methods
 
