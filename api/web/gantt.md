@@ -21,20 +21,6 @@ data source is fired. By default the widget will bind to the data source specifi
 
 > Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
 
-#### Example - disable automatic binding
-
-    <div id="gantt"></div>
-    <script>
-    var dataSource = new kendo.data.GanttDataSource({
-      data: [ { name: "Jane Doe" }, { name: "John Doe" }]
-    });
-    $("#gantt").kendoGantt({
-      autoBind: false,
-      dataSource: dataSource
-    });
-    dataSource.read(); // "read()" will fire the "change" event of the dataSource and the widget will be bound
-    </script>
-
 ### dataSource `Object|Array|kendo.data.GanttDataSource`
 
 The data source of the widget which contains the tasks. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.GanttDataSource](/kendo-ui/api/framework/ganttdatasource)
@@ -46,6 +32,62 @@ If the `dataSource` option is an existing [kendo.data.GanttDataSource](/kendo-ui
 
 > The Kendo UI Gantt widget can be bound *only* to a `kendo.data.GanttDataSource`. An exception will be thrown if the `dataSource` option is set to a `kendo.data.DataSource` instance.
 
+### editable `Boolean` *(default: true)*
+
+If set to `true` the user would be able to create new tasks and modify or delete existing ones.
+
+### messages `Object`
+
+The configuration of the gantt messages. Use this option to customize or localize the gantt messages.
+
+### messages.views `Object`
+
+The configuration of the gantt view messages. Use this option to customize or localize the gantt view messages.
+
+### messages.views.day `String` *(default: "Day")*
+
+The text similar to "Day" displayed as gantt "day" view title.
+
+### messages.views.week `String` *(default: "Week")*
+
+The text similar to "Week" displayed as gantt "week" view title.
+
+### messages.views.month `String` *(default: "Month")*
+
+The text similar to "Month" displayed as gantt "month" view title.
+
+### messages.actions `Object`
+
+The configuration of the gantt action messages. Use this option to customize or localize the gantt action messages.
+
+### messages.actions.append `String` *(default: "Add Task")*
+
+The text similar to "Append" displayed as gantt "append" buttons.
+
+### messages.actions.addChild `String` *(default: "Add Child")*
+
+The text similar to "Add child" displayed as gantt "add child" buttons.
+
+### messages.actions.insertBefore `String` *(default: "Add Above")*
+
+The text similar to "Add above" displayed as gantt "add above" buttons.
+
+### messages.actions.insetAfter `String` *(default: "Add Below")*
+
+The text similar to "Add below" displayed as gantt "add below" buttons.
+
+### selectable `Boolean` *(default: true)*
+
+If set to `true` the user would be able to select tasks in the gantt. This triggers the [change event](#events-change).
+
+### showWorkDays `Boolean` *(default: true)*
+
+If set to `false`, the week and month views will show all days of the week. By default these views display only business days.
+
+### showWorkHours `Boolean` *(default: true)*
+
+If set to `false`, the day view will show all hours of the day. By default the view displays only business hours.
+
 ## Fields
 
 ### dataSource `kendo.data.GanttDataSource`
@@ -56,48 +98,6 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 
 > Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
 
-#### Example - add a data item to the data source
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [
-        { name: "Jane Doe", age: 30}
-      ]
-    });
-    var gantt = $("#gantt").data("kendoGantt");
-    gantt.dataSource.add({ name: "John Doe", age: 33 });
-    </script>
-
-#### Example - update a data item in the data source
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [
-        { name: "Jane Doe", age: 30 }
-      ]
-    });
-    var gantt = $("#gantt").data("kendoGantt");
-    var data = gantt.dataSource.at(0);
-    data.set("name", "John Doe");
-    </script>
-
-#### Example - remove a data item from the data source
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [
-        { name: "Jane Doe", age: 30},
-        { name: "John Doe", age: 33},
-      ]
-    });
-    var gantt = $("#gantt").data("kendoGantt");
-    var data = gantt.dataSource.at(1);
-    gantt.dataSource.remove(data);
-    </script>
-
 ## Methods
 
 ### destroy
@@ -105,20 +105,6 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > This method does not remove the widget element from DOM.
-
-#### Example
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [
-          { name: "Jane Doe", age: 30 },
-          { name: "John Doe", age: 33 }
-      ]
-    });
-    var gantt = $("#gantt").data("kendoGantt");
-    gantt.destroy();
-    </script>
 
 ## Events
 
@@ -138,37 +124,58 @@ The widget instance which fired the event.
 
 If invoked prevents the data bind action. The table rows will remain unchanged and `dataBound` event will not fire.
 
-#### Example - subscribe to the "dataBinding" event before initialization
+### dataBound
 
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [
-        { name: "Jane Doe", age: 30 },
-        { name: "John Doe", age: 33 }
-      ],
-      dataBinding: function(e) {
-        console.log("dataBinding");
-      }
-    });
-    </script>
+Fired when the widget is bound to data from its data source.
 
-#### Example - subscribe to the "dataBinding" event after initialization
+### add
 
-    <div id="gantt"></div>
-    <script>
-    function gantt_dataBinding(e) {
-      console.log("dataBinding");
-    }
-    $("#gantt").kendoGantt({
-      autoBind: false,
-      dataSource: [
-        { name: "Jane Doe", age: 30 },
-        { name: "John Doe", age: 33 }
-      ]
-    });
-    var gantt = $("#gantt").data("kendoGantt");
-    gantt.bind("dataBinding", gantt_dataBinding);
-    gantt.dataSource.fetch();
-    </script>
+Fired when the a new task is about to be added.
 
+### edit
+
+Fired when the user opens a gantt task in edit mode by or creates a new task.
+
+### remove
+
+Fired when the user clicks the "destroy" button.
+
+### cancel
+
+Fired when the user cancels editing by clicking the "cancel" button.
+
+### save
+
+Fired when the user saves a gantt task by clicking the "save" button.
+
+### change
+
+Fired when the user selects a task in the gantt.
+
+### navigate
+
+Fired when the user changes the selected view of the gantt.
+
+### moveStart
+
+Fired when the user starts to drag a task.
+
+### move
+
+Fired when the user is moving a task.
+
+### moveEnd
+
+Fired when the user stops moving a task.
+
+### resizeStart
+
+Fired when the user starts to resize a task.
+
+### resize
+
+Fired when the user is resizing a task.
+
+### resizeEnd
+
+Fired when the user releases the mouse after resizing a task.
