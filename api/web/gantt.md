@@ -21,6 +21,37 @@ data source is fired. By default the widget will bind to the data source specifi
 
 > Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
 
+### columns `Array`
+
+The configuration of the gantt columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
+[field](#configuration-columns.field) to which the column is bound. The gantt will create a column for every item of the array.
+
+> If this setting is **not** specified the gantt will create a single column for the task title.
+
+### columns.field `String`
+
+The field to which the column is bound. The value of this field is displayed by the column during data binding.
+**The field name should be a valid Javascript identifier and should contain no spaces, no special characters, and the first character should be a letter.**
+
+### columns.title `String`
+
+The text that is displayed in the column header cell. If not set the [field](#configuration-columns.field) is used.
+
+### columns.format `String`
+
+The format that is applied to the value before it is displayed. Takes the form "{0:format}" where "format" is a [standard number format](/kendo-ui/api/framework/kendo#standard-number-formats),
+[custom number format](/kendo-ui/api/framework/kendo#custom-number-formats), [standard date format](/kendo-ui/api/framework/kendo#standard-date-formats) or a [custom date format](/kendo-ui/api/framework/kendo#custom-date-formats).
+
+> The [kendo.format](/kendo-ui/api/framework/kendo#methods-format) function is used to format the value.
+
+### columns.width `String|Number`
+
+The width of the column. Numeric values are treated as pixels.
+
+### columns.editable `Boolean` *(default: false)*
+
+Specifies whether this column can be edited by the user.
+
 ### dataSource `Object|Array|kendo.data.GanttDataSource`
 
 The data source of the widget which contains the tasks. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.GanttDataSource](/kendo-ui/api/framework/ganttdatasource)
