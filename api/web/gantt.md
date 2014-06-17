@@ -120,16 +120,6 @@ If set to `false`, the week and month views will show all days of the week. By d
 
 If set to `false`, the day view will show all hours of the day. By default the view displays only business hours.
 
-## Fields
-
-### dataSource `kendo.data.GanttDataSource`
-
-The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
-
-> Changes of the data source will be reflected in the widget.
-
-> Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
-
 ### views `Array`
 
 The views displayed by the gantt and their configuration. The array items can be either objects specifying the view configuration or strings representing the view types (assuming default configuration).
@@ -144,6 +134,16 @@ If set to `true` the view will be initially selected by the gantt widget.
 ### views.type `String`
 
 The type of the view. The built-in views are: "day", "week", and "month".
+
+## Fields
+
+### dataSource `kendo.data.GanttDataSource`
+
+The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
+
+> Changes of the data source will be reflected in the widget.
+
+> Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
 
 ## Methods
 
