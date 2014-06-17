@@ -133,8 +133,8 @@ The API key for the layer. Currently supported only for Bing (tm) tile layers.
     ?>
 
 ### locationField
-The data item field which contains the marker location.
-The field should be an array with two numbers - latitude and longitude.Requires the dataSource option to be set.
+The data item field which contains the marker (symbol) location.
+The field should be an array with two numbers - latitude and longitude in decimal degrees.Requires the dataSource option to be set.Only applicable to "marker" and "bubble" layers.
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayer`
@@ -149,6 +149,42 @@ The field should be an array with two numbers - latitude and longitude.Requires 
     <?php
     $layer = new \Kendo\Dataviz\UI\MapLayer();
     $layer->locationField('value');
+    ?>
+
+### maxSize
+The maximum symbol size for bubble layer symbols.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->maxSize(1);
+    ?>
+
+### minSize
+The minimum symbol size for bubble layer symbols.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->minSize(1);
     ?>
 
 ### opacity
@@ -235,6 +271,24 @@ Alternating between different subdomains allows more requests to be executed in 
     $layer->subdomains(new array());
     ?>
 
+### symbol
+The bubble layer symbol type. Supported symbols are "circle" and "square".
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->symbol('value');
+    ?>
+
 ### titleField
 The data item field which contains the marker title.
 Requires the dataSource option to be set.
@@ -284,7 +338,7 @@ The default Kendo UI Tooltip options for data-bound markers.
     ?>
 
 ### type
-The layer type. Supported types are "tile" and "shape".
+The layer type. Supported types are "tile", "bing", "shape", "marker" and "bubble".
 
 #### Returns
 `\Kendo\Dataviz\UI\MapLayer`
@@ -317,5 +371,24 @@ The URL template for tile layers. Template variables:
     <?php
     $layer = new \Kendo\Dataviz\UI\MapLayer();
     $layer->urlTemplate('value');
+    ?>
+
+### valueField
+The value field for bubble layer symbols.
+The data item field should be a number.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->valueField('value');
     ?>
 

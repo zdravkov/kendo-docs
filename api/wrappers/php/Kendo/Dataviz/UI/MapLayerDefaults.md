@@ -41,6 +41,35 @@ The default configuration for Bing (tm) tile layers.
     $layerDefaults->bing(array('attribution' => $attribution));
     ?>
 
+### bubble
+
+The default configuration for bubble layers.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayerDefaults`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsBubble|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsBubble](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsBubble)
+    <?php
+    $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
+    $bubble = new \Kendo\Dataviz\UI\MapLayerDefaultsBubble();
+    $attribution = 'value';
+    $bubble->attribution($attribution);
+    $layerDefaults->bubble($bubble);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
+    $attribution = 'value';
+    $layerDefaults->bubble(array('attribution' => $attribution));
+    ?>
+
 ### marker
 
 The default configuration for marker layers.

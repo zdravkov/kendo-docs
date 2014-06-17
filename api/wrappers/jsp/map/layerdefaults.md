@@ -31,6 +31,18 @@ More documentation is available at [kendo:map-layerDefaults-bing](/kendo-ui/api/
         <kendo:map-layerDefaults-bing></kendo:map-layerDefaults-bing>
     </kendo:map-layerDefaults>
 
+### kendo:map-layerDefaults-bubble
+
+The default configuration for bubble layers.
+
+More documentation is available at [kendo:map-layerDefaults-bubble](/kendo-ui/api/wrappers/jsp/map/layerdefaults-bubble).
+
+#### Example
+
+    <kendo:map-layerDefaults>
+        <kendo:map-layerDefaults-bubble></kendo:map-layerDefaults-bubble>
+    </kendo:map-layerDefaults>
+
 ### kendo:map-layerDefaults-marker
 
 The default configuration for marker layers.
