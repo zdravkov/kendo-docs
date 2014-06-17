@@ -7,20 +7,19 @@ publish: true
 
 # Using Kendo with AngularJS
 
-Kendo UI can be used seamlessly with AngularJS.  The two frameworks have some overlapping features though; if you are using AngularJS then you probably want to use Angular's own routing mechanism and data binding.
-
-For a good integration we provide [angular-kendo](http://kendo-labs.github.io/angular-kendo/), a small library which creates Angular directives for Kendo widgets, allowing you to build your UI in a declarative way.
+Kendo UI can be used seamlessly with AngularJS.  The two frameworks have some overlapping features though; if you are using AngularJS then you probably want to use Angular's own routing mechanism and data binding.  Do not mix that with Kendo MVVM.
 
 ## Using Angular-Kendo bindings
 
-Download the latest version of `angular-kendo.js` from the Github repository: [https://github.com/kendo-labs/angular-kendo](https://github.com/kendo-labs/angular-kendo).  You can also find it on NuGet and on Bower, but the packages might sometimes be out of date.
+The Angular bindings are now integrated into Kendo UI.  If you're using one of the bundles (such as `kendo.all.min.js`) then the required code is already there.  If you load individual Kendo UI files, you need to also load `kendo.angular.js` (or `kendo.angular.min.js`).  It must be loaded after `kendo.core`.
 
-`angular-kendo.js` depends on Kendo and Angular, and Kendo itself depends on jQuery.  Therefore, load the scripts in this order:
+In order for the Angular bindings to be activated, you must load `angular.js` _before_ Kendo.
+
+Therefore, load the scripts in this order:
 
     <script src="jquery.js"></script>
-    <script src="kendo.all.js"></script>
     <script src="angular.js"></script>
-    <script src="angular-kendo.js"></script>
+    <script src="kendo.all.js"></script>
 
 Don't forget to load the Kendo UI stylesheets too.
 
@@ -35,6 +34,10 @@ The directives kick in on attributes like `kendo-widget-name`.  For example to g
     <label>Birthday: <input kendo-date-picker /></label>
 
 When AngularJS compiles the HTML, the Kendo UI directive will turn the `<input>` field into a nice date picker widget.
+
+As a shortcut, you can discard the dashes after `kendo-`:
+
+    <input kendo-numerictextbox />
 
 ### Scope bindings (`ng-model`)
 
@@ -117,7 +120,7 @@ If you store the whole configuration in the controller, like above, then adding 
 
 The sample above includes a paragraph that's using Angular's `ng-show` directive and will be displayed only after a month was picked.  Notice in the event handler that we had to call `$scope.$digest()` in order for this trick to work.
 
-It is possible to specify event handlers using attributes as well.  They require the `k-on-` prefix:
+It is possible to specify event handlers using attributes as well. They require the `k-on-` prefix:
 
     // in controller:
     $scope.onDateSelected = function(e) {
@@ -130,7 +133,21 @@ It is possible to specify event handlers using attributes as well.  They require
     <input kendo-date-picker k-on-change="onDateSelected(kendoEvent)" />
     <p ng-show="selected">A month was picked</p>
 
-Notice that the `kendoEvent` variable will be defined in scope and we must pass it to the event handler.  If we are using the `k-on-` attributes, there is no need to call `$digest()` on the scope (it's taken care of by angular-kendo.js).
+Notice that the `kendoEvent` variable will be defined in scope and we must pass it to the event handler.  If we are using the `k-on-` attributes, there is no need to call `$digest()` on the scope (it's taken care of by our bindings).
+
+#### Special `"change"` event on certain widgets
+
+The Grid, TreeView and ListView widgets will evaluate handlers defined with `k-on-change` in a scope containing additional information about the selected item(s), as local variables.  The following locals are defined:
+
+- `selected` (jQuery object) -- the selected elements
+
+- `data` (array or data item) -- the selected data model(s).  It will be an array when multiple selection is enabled, or a single item otherwise.
+
+- `dataItem` -- when multiple selection is not enabled, this is provided for consistency and will be the same item as `data`.
+
+- `columns` -- for the Grid, when cell selection is enabled, it will be an array with zero-based column indexes for the selected columns. Also in this case the `selected` object will contain the respective `<td>` elements, instead of `<tr>`-s.
+
+The `kendoEvent` is available as well.
 
 ### Updating widgets when options change
 
@@ -155,6 +172,30 @@ To watch multiple options for change, just use `k-options` and pass the same var
 
     <ul kendo-menu k-options="menuOptions" k-rebind="menuOptions"> ... </ul>
 
+### Delaying widget initialization
+
+It's sometimes useful to postpone creating a widget until after some asynchronously-loaded data is available.  For example you would need this to initialize a Grid widget when you load the column definitions from server (as the Grid does not support re-defining the columns after the widget is instantiated).
+
+You can use the special `k-ng-delay` attribute for this.  Example:
+
+    // in controller
+    $http({ method: "GET", url: "customers.json" })
+      .success(function(result){
+        var dataSource = new kendo.data.DataSource({
+          data: result.data
+        });
+        $scope.gridOptions = {
+          dataSource: data,
+          columns: result.columns,
+          ...
+        };
+      });
+
+    <!-- in HTML: -->
+    <div kendo-grid k-options="gridOptions" k-ng-delay="gridOptions"></div>
+
+The grid will be created only when the `gridOptions` variable becomes available.
+
 ### Getting widget references
 
 Sometimes you might need a reference to the widgets in order to call methods on it from your controller.  To get one, just assign a name to the `kendo-widget-name` attribute, for example:
@@ -168,6 +209,23 @@ Sometimes you might need a reference to the widgets in order to call methods on 
     <!-- in HTML: -->
     <input kendo-date-picker="datePicker" k-on-change="onChange()" />
 
-## Get involved
+### Global Angular events emitted by the Kendo bindings
 
-[Angular-Kendo](https://github.com/kendo-labs/angular-kendo) is free software.  If you find any issues or have suggestions, please use the issue tracker.
+#### `kendoWidgetCreated`
+
+This event is emitted when a Kendo widget has been created.  You can hook on it from your Angular controller like this:
+
+    // in controller
+    $scope.$on("kendoWidgetCreated", function(ev, widget){
+      // in widget you have a reference to the event
+      if (widget === $scope.myGrid) {
+        // the Grid defined below has just been created
+      }
+    });
+
+    <!-- in HTML: -->
+    <div kendo-grid="myGrid" ...></div>
+
+#### `kendoRendered`
+
+This event is emitted when all Kendo widgets defined in the page have been created.  It's sometimes useful to be able to intercept this event, since widgets are created asynchronously.  For example you can initially display a "Loading..." overlay in the page, and hide it from a handler on this event.
