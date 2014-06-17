@@ -147,12 +147,379 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 
 ## Methods
 
+### clearSelection
+
+Clears the currently selected task or dependency.
+
+#### Example - clear selection
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      // select the first task
+      gantt.select("tr:eq(0)");
+      gantt.clearSelection();
+    </script>
+
+### dataItem
+
+Returns the data item to which the specified table row from the treelist is bound
+
+#### Parameters
+
+##### row `String|Element|jQuery`
+
+A string, DOM element or jQuery object which represents the table row. A string is treated as a jQuery selector.
+
+#### Returns
+
+`kendo.data.GanttTask` the task data item to which the specified table row is bound.
+
+#### Example - get the task data item to which the first table row is bound
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      var task = gantt.dataItem("tr:eq(0)");
+      console.log(task.title); // displays "Task1"
+    </script>
+
 ### destroy
 
 Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
 > This method does not remove the widget element from DOM.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      gantt.destroy();
+    </script>
+
+### refresh
+
+Renders all tasks and dependencies using the current data items.
+
+#### Example - refresh the widget
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      gantt.refresh();
+    </script>
+
+### refreshDependencies
+
+Renders all dependencies using the current data items.
+
+#### Example - refresh the dependencies
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 1,
+            parentId: null,
+            title: "Task2",
+            start: new Date("2014/6/17 12:00"),
+            end: new Date("2014/6/17 14:00")
+          }
+        ],
+        dependencies: [
+          {
+            predecessorId: 1,
+            successorId: 2,
+            type: 1
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      gantt.refreshDependencies();
+    </script>
+
+### removeDependency
+
+Removes the specified gantt dependency.
+
+#### Parameters
+
+##### dependency `String|kendo.data.GanttDependency`
+
+The dependency which should be removed. Also accepts a string which is the `uid` of the dependency which should be removed.
+
+#### Example - remove a dependency
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 1,
+            parentId: null,
+            title: "Task2",
+            start: new Date("2014/6/17 12:00"),
+            end: new Date("2014/6/17 14:00")
+          }
+        ],
+        dependencies: [
+          {
+            predecessorId: 1,
+            successorId: 2,
+            type: 1
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      var dependency = gantt.dependencies.at(0);
+      gantt.removeDependency(dependency);
+    </script>
+
+### removeTask
+
+Removes the specified gantt task.
+
+#### Parameters
+
+##### task `String|kendo.data.GanttTask`
+
+The task which should be removed. Also accepts a string which is the `uid` of the task which should be removed.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      var task = gantt.dataSource.at(0);
+      gantt.removeTask(task);
+    </script>
+
+### select
+
+Gets or sets the table row which is selected.
+
+#### Parameters
+
+##### row `String|Element|jQuery`
+
+A string, DOM element or jQuery object which represents the table row. A string is treated as a jQuery selector.
+
+#### Returns
+
+`jQuery` the selected table row.
+
+#### Example - select the first table row.
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      gantt.select("tr:first");
+    </script>
+
+### setDataSource
+
+Sets the tasks data source of the widget.
+
+#### Parameters
+
+##### dataSource `kendo.data.GanttDataSource`
+
+The tasks data source to which the widget should be bound.
+
+#### Example - set the tasks data source
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt();
+      var gantt = $("#gantt").data("kendoGantt");
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      gantt.setDataSource(dataSource);
+    </script>
+
+### setDependenciesDataSource
+
+Sets the dependencies data source of the widget.
+
+#### Parameters
+
+##### dataSource `kendo.data.GanttDependencyDataSource`
+
+The dependencies data source to which the widget should be bound.
+
+#### Example - set the dependencies data source
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 1,
+            parentId: null,
+            title: "Task2",
+            start: new Date("2014/6/17 12:00"),
+            end: new Date("2014/6/17 14:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      var dependenciesDataSource = new kendo.data.GanttDependencyDataSource({
+        data: [
+          {
+            predecessorId: 1,
+            successorId: 2,
+            type: 1
+          }
+        ]
+      });
+      gantt.setDependenciesDataSource(dependenciesDataSource);
+    </script>
+
+### view
+
+Gets or sets the current gantt view.
+
+#### Parameters
+
+##### type `String` *(optional)*
+
+The view type to select.
+
+#### Returns
+
+`kendo.ui.GanttView` the current gantt view.
+
+#### Example - set the current view
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      var gantt = $("#gantt").data("kendoGantt");
+      gantt.view("month");
+    </script>
+    
 ## Events
 
 ### dataBinding
