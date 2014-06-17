@@ -62,11 +62,27 @@ The API key for the layer. Currently supported only for Bing (tm) tile layers.
 
 ### locationField `java.lang.String`
 
-The data item field which contains the marker location.
-The field should be an array with two numbers - latitude and longitude.Requires the dataSource option to be set.
+The data item field which contains the marker (symbol) location.
+The field should be an array with two numbers - latitude and longitude in decimal degrees.Requires the dataSource option to be set.Only applicable to "marker" and "bubble" layers.
 
 #### Example
     <kendo:map-layer locationField="locationField">
+    </kendo:map-layer>
+
+### maxSize `float`
+
+The maximum symbol size for bubble layer symbols.
+
+#### Example
+    <kendo:map-layer maxSize="maxSize">
+    </kendo:map-layer>
+
+### minSize `float`
+
+The minimum symbol size for bubble layer symbols.
+
+#### Example
+    <kendo:map-layer minSize="minSize">
     </kendo:map-layer>
 
 ### opacity `float`
@@ -94,6 +110,14 @@ Alternating between different subdomains allows more requests to be executed in 
     <kendo:map-layer subdomains="subdomains">
     </kendo:map-layer>
 
+### symbol `java.lang.String`
+
+The bubble layer symbol type. Supported symbols are "circle" and "square".
+
+#### Example
+    <kendo:map-layer symbol="symbol">
+    </kendo:map-layer>
+
 ### titleField `java.lang.String`
 
 The data item field which contains the marker title.
@@ -105,7 +129,7 @@ Requires the dataSource option to be set.
 
 ### type `java.lang.String`
 
-The layer type. Supported types are "tile" and "shape".
+The layer type. Supported types are "tile", "bing", "shape", "marker" and "bubble".
 
 #### Example
     <kendo:map-layer type="type">
@@ -117,6 +141,15 @@ The URL template for tile layers. Template variables:
 
 #### Example
     <kendo:map-layer urlTemplate="urlTemplate">
+    </kendo:map-layer>
+
+### valueField `java.lang.String`
+
+The value field for bubble layer symbols.
+The data item field should be a number.
+
+#### Example
+    <kendo:map-layer valueField="valueField">
     </kendo:map-layer>
 
 
