@@ -1,4 +1,4 @@
----
+
 title: kendo.ui.Gantt
 meta_title: Configuration, methods and events of Kendo UI Gantt
 meta_description: Code examples for Gantt UI widget configuration, learn how to use methods and which events to set once the gantt UI widget detail is initialized.
@@ -182,7 +182,17 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 
 Clears the currently selected task or dependency.
 
-#### Example - clear selection
+#### Event Data
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the data bind action and `dataBound` event will not fire.
+
+#### Example - subscribe to the "dataBinding" event during initialization
 
     <div id="gantt"></div>
     <script>      
@@ -550,14 +560,6 @@ The view type to select.
       var gantt = $("#gantt").data("kendoGantt");
       gantt.view("month");
     </script>
-    
-## Events
-
-### dataBinding
-
-Fired before the widget binds to its data source.
-
-The event handler function context (available via the `this` keyword) will be set to the widget instance.
 
 #### Event Data
 
@@ -567,60 +569,1079 @@ The widget instance which fired the event.
 
 ##### e.preventDefault `Function`
 
-If invoked prevents the data bind action. The table rows will remain unchanged and `dataBound` event will not fire.
+If invoked prevents the data bind action and `dataBound` event will not fire.
 
+#### Example - subscribe to the "dataBinding" event during initialization
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dataBinding: function(e) {
+        console.log("dataBinding");
+      }
+    });
+    </script>
+    
+ #### Example - subscribe to the "dataBinding" after initialization
+ 
+    <div id="gantt"></div>
+    <script>      
+    function gantt_dataBinding(e) {
+      console.log("dataBinding");
+    }  
+    $("#gantt").kendoGantt({
+     dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("dataBinding", gantt_dataBinding);
+    </script>
+ 
 ### dataBound
 
 Fired when the widget is bound to data from its data source.
 
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "dataBound" event during initialization
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dataBound: function(e) {
+        console.log("dataBound");
+      }
+    });
+    </script>
+    
+ #### Example - subscribe to the "dataBound" event after initialization
+ 
+    <div id="gantt"></div>
+    <script>      
+    function gantt_dataBound(e) {
+      console.log("dataBound");
+    }  
+    $("#gantt").kendoGantt({
+     dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("dataBound", gantt_dataBound);
+    </script>
+
 ### add
 
-Fired when the a new task is about to be added.
+Fired when a new task or a new dependency is about to be added.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+### Event Data
+
+#### e.task 'kendo.data.GanttTask'
+
+The GanttTask instance which will be added to the DataSource.
+
+#### e.dependency 'kendo.data.GanttDependency'
+
+The GanttDependency instance which will be added to the DataSource.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the add action.
+
+##### e.sender `kendo.ui.Gantt`
+
+#### Example - subscribe to the "add" event during initialization
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      add: function(e) {
+        console.log("Add", e.task.title);
+      }
+    });
+
+#### Example - subscribe to the "add" event after initialization
+
+    <div id="gantt"></div>
+    <script>      
+    function gantt_add(e) {
+      console.log("Add", e.task.title);
+    }  
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("add", gantt_add);
+    </script>
 
 ### edit
 
-Fired when the user opens a gantt task in edit mode by or creates a new task.
+Fired when the user starts task edit upon double click on a cell.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the wrapping cell element. That element contains the editing UI.
+
+##### e.task `kendo.data.GanttTask`
+
+The GanttTask which is being edited.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the edit action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "edit" event during initialization
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      columns: [ { field: "title", title: "Title", editable: true } ],
+      edit: function(e) {
+        console.log("Editing task: ", e.task.title);
+      }
+    });
+    </script>
+    
+#### Example - subscribe to the "edit" event after initialization
+    
+    <div id="gantt"></div>
+    <script>      
+    function gantt_edit(e) {
+      console.log("Editing task: ", e.task.title)
+    }  
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      columns: [ { field: "title", title: "Title", editable: true } ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("edit", gantt_edit);
+    </script>
 
 ### remove
 
-Fired when the user clicks the "destroy" button.
+Fired when a task or a dependency is about to be removed.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+#### e.task 'kendo.data.GanttTask'
+
+The GanttTask instance which is being removed the DataSource.
+
+#### e.dependencies 'Array'
+
+An array of GanttDependency instances which are assosiated with the task being removed, or an array with a sigle dependency which is being removed.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the remove action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "remove" event during initialization
+
+    <div id="gantt"></div>  
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 15:00"),
+          end: new Date("2014/6/17 16:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1,
+          id: 0
+        }
+      ],
+      remove: function(e) {          
+        if (e.task) {
+          console.log("Removing task:", e.task.title);
+          console.log(kendo.format("Removing {0} related dependencies", e.dependencies.length));
+        } else {            
+          console.log("Removing dependency with id:", e.dependencies[0].id);
+        }
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "remove" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function gantt_remove(e) {
+      if (e.task) {
+        console.log("Removing task:", e.task.title);
+        console.log(kendo.format("Removing {0} related dependencies", e.dependencies.length));
+      } else {            
+        console.log("Removing dependency with id:", e.dependencies[0].id);
+      }
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 15:00"),
+          end: new Date("2014/6/17 16:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1,
+          id: 0
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("remove", gantt_remove);      
+    </script>
 
 ### cancel
 
-Fired when the user cancels editing by clicking the "cancel" button.
+Fired when the user cancels tasks's cell editing by pressing the 'Esc' key.
+
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the wrapping cell element. That element contains the editing UI.
+
+##### e.task `kendo.data.GanttTask`
+
+The GanttTask which has been edited.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the cancel action and keeps the cel in edit mode.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "cancel" event during initialization
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      columns: [ { field: "title", title: "Title", editable: true } ],
+      cancel: function(e) {
+        console.log("Cancel editing task: ", e.task.title);
+      }
+    });
+    </script>
+    
+#### Example - subscribe to the "cancel" event after initialization
+    
+    <div id="gantt"></div>
+    <script>      
+    function gantt_cancel(e) {
+      console.log("Cancel editing task: ", e.task.title)
+    }  
+    $("#gantt").kendoGantt({
+      dataSource: [ 
+        { 
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      columns: [ { field: "title", title: "Title", editable: true } ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("cancel", gantt_edit);
+    </script>
 
 ### save
 
-Fired when the user saves a gantt task by clicking the "save" button.
+Fired when a task field is updated upon user interaction.
+
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.task `kendo.data.GanttTask`
+
+The GanttTask which has been edited.
+
+##### e.value 'Object'
+
+The GantTask fields being updated with new values.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the save action and prevents the task from being edited.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "save" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      save: function(e) {
+        console.log("Save task:", e.task.title);          
+      }
+    }); 
+    </script>
+
+#### Example - subscribe to the "save" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function gantt_save(e) {
+        console.log("Save task:", e.task.title);          
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("save", gantt_save);      
+    </script>
+
+-------------------------------------------------------
 
 ### change
 
 Fired when the user selects a task in the gantt.
 
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Even tData
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "change" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 15:00"),
+          end: new Date("2014/6/17 16:00")
+        }
+      ],
+      change: function(e) {
+        var selection = this.select();
+        var task;
+        
+        if (selection) {
+          task = this.dataItem(selection);
+          console.log(kendo.format("{0} is selected", task.title));
+        }
+      }
+    }); 
+    </script>
+
+#### Example - subscribe to the "change" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function gantt_change(e) {
+      var selection = this.select();
+        var task;
+        
+        if (selection) {
+          task = this.dataItem(selection);
+          console.log(kendo.format("{0} is selected", task.title));
+        }
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 15:00"),
+          end: new Date("2014/6/17 16:00")
+        }
+      ]        
+    }); 
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("change", gantt_change);  
+    </script>
+    
 ### navigate
 
 Fired when the user changes the selected view of the gantt.
+
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.view 'String'
+
+The name of the view which is about to be selected. The possible values are:
+
+* day
+* week
+* month
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "navigate" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 15:00"),
+          end: new Date("2014/6/17 16:00")
+        }
+      ],
+      navigate: function(e) {
+        console.log(kendo.format("Navigate to {0} view", e.view.charAt(0).toUpperCase() + e.view.slice(1)));  
+      }
+    });
+    </script> 
+
+#### Example -  subscribe to the "navigate" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+      function gantt_navigate(e) {
+        console.log(kendo.format("Navigate to {0} view", e.view.charAt(0).toUpperCase() + e.view.slice(1)));
+      }
+      $("#gantt").kendoGantt({
+        dataSource: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            start: new Date("2014/6/17 11:00"),
+            end: new Date("2014/6/17 14:00")
+          },
+          {
+            id: 2,
+            orderId: 1,
+            parentId: null,
+            title: "Task2",
+            start: new Date("2014/6/17 15:00"),
+            end: new Date("2014/6/17 16:00")
+          }
+        ]        
+      }); 
+      var gantt = $("#gantt").data("kendoGantt");
+      gantt.bind("navigate", gantt_navigate);  
+    </script> 
 
 ### moveStart
 
 Fired when the user starts to drag a task.
 
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.task `kendo.data.GanttTask`
+
+The event which is being moved.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "moveStart" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      moveStart: function(e) {
+        console.log("Move start ", e.task.title);  
+      }
+    });
+    </script> 
+
+#### Example - subscribe to the "moveStart" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function gantt_moveStart(e) {
+      console.log("Move start ", e.task.title);
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]  
+    }); 
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("moveStart", gantt_moveStart);  
+    </script> 
+
 ### move
 
 Fired when the user is moving a task.
+
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.task `kendo.data.GanttTask`
+
+The event which is being moved.
+
+##### e.start 'Date'
+
+The current event start date.
+
+##### e.end 'Date'
+
+The current event end date.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "move" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      move: function(e) {
+        console.log(kendo.format("task's curren Start {0:g}", e.start));        
+        console.log(kendo.format("task's curren End {0:g}", e.end));
+      }
+    }); 
+    </script> 
+
+#### Example - subscribe to the "move" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function gantt_move(e) {
+      console.log(kendo.format("task's curren Start {0:g}", e.start));        
+      console.log(kendo.format("task's curren End {0:g}", e.end));
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]  
+    }); 
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("move", gantt_move);  
+    </script>
 
 ### moveEnd
 
 Fired when the user stops moving a task.
 
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.task `kendo.data.GanttTask`
+
+The event which is being moved.
+
+##### e.start 'Date'
+
+The new event start date.
+
+##### e.end 'Date'
+
+The new event end date.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "moveEnd" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      moveEnd: function(e) {
+        console.log(kendo.format("task's new Start {0:g}", e.start));    
+        console.log(kendo.format("task's new End {0:g}", e.end));
+      }
+    }); 
+    </script> 
+
+#### Example - subscribe to the "moveEnd" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function moveEnd(e) {
+      console.log(kendo.format("task's new Start {0:g}", e.start));    
+      console.log(kendo.format("task's new End {0:g}", e.end));
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]  
+    }); 
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("moveEnd", moveEnd);  
+    </script>
+
 ### resizeStart
 
 Fired when the user starts to resize a task.
+
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.task `kendo.data.GanttTask`
+
+The event which is being resized.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "resizeStart" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      resizeStart: function(e) {
+        console.log("Resize start ", e.task.title);
+      }
+    });   
+    </script>
+
+#### Example - subscribe to the "resizeStart" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function resizeStart(e) {
+      console.log("Resize start ", e.task.title);
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]  
+    }); 
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("resizeStart", resizeStart);  
+    </script>
 
 ### resize
 
 Fired when the user is resizing a task.
 
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+##### e.task `kendo.data.GanttTask`
+
+The event which is being moved.
+
+##### e.start 'Date'
+
+The current event start date.
+
+##### e.end 'Date'
+
+The current event end date.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "resize" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      resize: function(e) {
+        console.log(kendo.format("task's curren Start {0:g}", e.start));        
+        console.log(kendo.format("task's curren End {0:g}", e.end));
+      }
+    });   
+    </script>
+
+#### Example - subscribe to the "resize" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function gantt_resize(e) {
+      console.log(kendo.format("task's curren Start {0:g}", e.start));    
+      console.log(kendo.format("task's current End {0:g}", e.end));
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    }); 
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("resize", gantt_resize);  
+    </script>
+
 ### resizeEnd
 
 Fired when the user releases the mouse after resizing a task.
+
+The event handler function context (available via the this keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.task `kendo.data.GanttTask`
+
+The event which is being resized.
+
+##### e.start 'Date'
+
+The new event start date.
+
+##### e.end 'Date'
+
+The new event end date.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the action.
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "resizeEnd" event during initialization
+
+    <div id="gantt"></div>
+    <script> 
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      resizeEnd: function(e) {
+        console.log(kendo.format("task's new Start {0:g}", e.start));    
+        console.log(kendo.format("task's new End {0:g}", e.end));
+      }
+    }); 
+    </script>
+
+#### Example - subscribe to the "resizeEnd" event after initialization
+
+    <div id="gantt"></div>
+    <script> 
+    function gantt_resizeEnd(e) {
+      console.log(kendo.format("task's new Start {0:g}", e.start));    
+      console.log(kendo.format("task's new End {0:g}", e.end));
+    }
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 11:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    }); 
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("resizeEnd", gantt_resizeEnd);  
+    </script>
