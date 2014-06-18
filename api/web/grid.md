@@ -3139,6 +3139,51 @@ The height of the grid. Numeric values are treated as pixels.
     });
     </script>
 
+### mobile `Boolean|String` *(default: false)*
+
+If set to `true` and the grid is viewed on mobile browser it will use adaptive rendering.
+
+Can be set to a string `phone` or `tablet` which will force the widget to use adaptive rendering regardless of browser type.
+The grid uses same layout for both `phone` and `tablet`.
+
+#### Example - enable adaptive rendering auto detect
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+       columns: [
+         { field: "name" },
+         { field: "age" },
+         { command: "destroy" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ],
+       filterable: true,
+       columnMenu: true,
+       mobile: true
+    });
+    </script>
+
+#### Example - force adaptive rendering
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+       columns: [
+         { field: "name" },
+         { field: "age" },
+         { command: "destroy" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ],
+       filterable: true,
+       columnMenu: true,
+       mobile: "phone"
+    });
+    </script>
+    
 ### navigatable `Boolean` *(default: false)*
 
 If set to `true` the use could navigate the widget using the keyboard navigation. By default keyboard navigation is disabled.
@@ -4120,50 +4165,6 @@ The text displayed by the command button. If not set the [name](#configuration-t
     });
     </script>
 
-### mobile `Boolean|String` *(default: false)*
-
-If set to `true` and the grid is viewed on mobile browser it will use adaptive rendering.
-
-Can be set to a string `phone` or `tablet` which will force the widget to use adaptive rendering regardless of browser type.
-The grid uses same layout for both `phone` and `tablet`.
-
-#### Example - enable adaptive rendering auto detect
-    <div id="grid"></div>
-    <script>
-    $("#grid").kendoGrid({
-       columns: [
-         { field: "name" },
-         { field: "age" },
-         { command: "destroy" }
-       ],
-       dataSource: [
-         { name: "Jane Doe", age: 30 },
-         { name: "John Doe", age: 33 }
-       ],
-       filterable: true,
-       columnMenu: true,
-       mobile: true
-    });
-    </script>
-
-#### Example - force adaptive rendering
-    <div id="grid"></div>
-    <script>
-    $("#grid").kendoGrid({
-       columns: [
-         { field: "name" },
-         { field: "age" },
-         { command: "destroy" }
-       ],
-       dataSource: [
-         { name: "Jane Doe", age: 30 },
-         { name: "John Doe", age: 33 }
-       ],
-       filterable: true,
-       columnMenu: true,
-       mobile: "phone"
-    });
-    </script>
 
 ## Fields
 
