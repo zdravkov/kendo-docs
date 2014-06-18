@@ -21,6 +21,8 @@ remote data using the Kendo DataSource component.
 
       <ul id="listView"></ul>
 
+The ListView can be initialized from span, div or ul elements.
+
 ### Initialize the Kendo ListView
 
       $(document).ready(function() {
