@@ -560,6 +560,14 @@ The view type to select.
       var gantt = $("#gantt").data("kendoGantt");
       gantt.view("month");
     </script>
+    
+## Events
+
+### dataBinding
+
+Fired before the widget binds to its data source.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
 
 #### Event Data
 
@@ -1053,8 +1061,6 @@ The widget instance which fired the event.
     var gantt = $("#gantt").data("kendoGantt");
     gantt.bind("save", gantt_save);      
     </script>
-
--------------------------------------------------------
 
 ### change
 
