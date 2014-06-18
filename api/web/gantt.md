@@ -600,7 +600,7 @@ If invoked prevents the data bind action and `dataBound` event will not fire.
     });
     </script>
     
- #### Example - subscribe to the "dataBinding" after initialization
+#### Example - subscribe to the "dataBinding" after initialization
  
     <div id="gantt"></div>
     <script>      
@@ -656,7 +656,7 @@ The widget instance which fired the event.
     });
     </script>
     
- #### Example - subscribe to the "dataBound" event after initialization
+#### Example - subscribe to the "dataBound" event after initialization
  
     <div id="gantt"></div>
     <script>      
