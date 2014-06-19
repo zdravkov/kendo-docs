@@ -12,45 +12,45 @@ Unfortunately there are no known workarounds yet. Use [images for icons](#custom
 Kendo UI Mobile includes 34 integrated font icons, which can be used directly in a Kendo UI Mobile project by specifying a data-icon attribute with one of the following icon names
 (supported by all Button widgets and the ListView items):
 
-<ul class="icon-block">
-    <li><span class="km-icon km-about"></span><br/>about</li>
-    <li><span class="km-icon km-action"></span><br/>action</li>
-    <li><span class="km-icon km-add"></span><br/>add</li>
-    <li><span class="km-icon km-bookmarks"></span><br/>bookmarks</li>
-    <li><span class="km-icon km-camera"></span><br/>camera</li>
-    <li><span class="km-icon km-cart"></span><br/>cart</li>
-    <li><span class="km-icon km-compose"></span><br/>compose</li>
-    <li><span class="km-icon km-contacts"></span><br/>contacts</li>
-    <li><span class="km-icon km-delete"></span><br/>delete</li>
-    <li><span class="km-icon km-details"></span><br/>details</li>
-    <li><span class="km-icon km-downloads"></span><br/>downloads</li>
-    <li><span class="km-icon km-fastforward"></span><br/>fastforward</li>
-    <li><span class="km-icon km-favorites"></span><br/>favorites</li>
-    <li><span class="km-icon km-featured"></span><br/>featured</li>
-    <li><span class="km-icon km-globe"></span><br/>globe</li>
-    <li><span class="km-icon km-history"></span><br/>history</li>
-    <li><span class="km-icon km-home"></span><br/>home</li>
-    <li><span class="km-icon km-info"></span><br/>info</li>
-    <li><span class="km-icon km-more"></span><br/>more</li>
-    <li><span class="km-icon km-mostrecent"></span><br/>mostrecent</li>
-    <li><span class="km-icon km-mostviewed"></span><br/>mostviewed</li>
-    <li><span class="km-icon km-organize"></span><br/>organize</li>
-    <li><span class="km-icon km-pause"></span><br/>pause</li>
-    <li><span class="km-icon km-play"></span><br/>play</li>
-    <li><span class="km-icon km-phone"></span><br/>phone</li>
-    <li><span class="km-icon km-recents"></span><br/>recents</li>
-    <li><span class="km-icon km-refresh"></span><br/>refresh</li>
-    <li><span class="km-icon km-reply"></span><br/>reply</li>
-    <li><span class="km-icon km-rewind"></span><br/>rewind</li>
-    <li><span class="km-icon km-search"></span><br/>search</li>
-    <li><span class="km-icon km-settings"></span><br/>settings</li>
-    <li><span class="km-icon km-share"></span><br/>share</li>
-    <li><span class="km-icon km-sounds"></span><br/>sounds</li>
-    <li><span class="km-icon km-stop"></span><br/>stop</li>
-    <li><span class="km-icon km-toprated"></span><br/>toprated</li>
-    <li><span class="km-icon km-trash"></span><br/>trash</li>
-    <li><span class="km-icon km-volume"></span><br/>volume</li>
-    <li><span class="km-icon km-wifi"></span><br/>wifi</li>
+<ul class="additional-icons">
+    <li><span class="button km-about"></span>about</li>
+    <li><span class="button km-action"></span>action</li>
+    <li><span class="button km-add"></span>add</li>
+    <li><span class="button km-bookmarks"></span>bookmarks</li>
+    <li><span class="button km-camera"></span>camera</li>
+    <li><span class="button km-cart"></span>cart</li>
+    <li><span class="button km-compose"></span>compose</li>
+    <li><span class="button km-contacts"></span>contacts</li>
+    <li><span class="button km-delete"></span>delete</li>
+    <li><span class="button km-details"></span>details</li>
+    <li><span class="button km-downloads"></span>downloads</li>
+    <li><span class="button km-fastforward"></span>fastforward</li>
+    <li><span class="button km-favorites"></span>favorites</li>
+    <li><span class="button km-featured"></span>featured</li>
+    <li><span class="button km-globe"></span>globe</li>
+    <li><span class="button km-history"></span>history</li>
+    <li><span class="button km-home"></span>home</li>
+    <li><span class="button km-info"></span>info</li>
+    <li><span class="button km-more"></span>more</li>
+    <li><span class="button km-mostrecent"></span>mostrecent</li>
+    <li><span class="button km-mostviewed"></span>mostviewed</li>
+    <li><span class="button km-organize"></span>organize</li>
+    <li><span class="button km-pause"></span>pause</li>
+    <li><span class="button km-play"></span>play</li>
+    <li><span class="button km-phone"></span>phone</li>
+    <li><span class="button km-recents"></span>recents</li>
+    <li><span class="button km-refresh"></span>refresh</li>
+    <li><span class="button km-reply"></span>reply</li>
+    <li><span class="button km-rewind"></span>rewind</li>
+    <li><span class="button km-search"></span>search</li>
+    <li><span class="button km-settings"></span>settings</li>
+    <li><span class="button km-share"></span>share</li>
+    <li><span class="button km-sounds"></span>sounds</li>
+    <li><span class="button km-stop"></span>stop</li>
+    <li><span class="button km-toprated"></span>toprated</li>
+    <li><span class="button km-trash"></span>trash</li>
+    <li><span class="button km-volume"></span>volume</li>
+    <li><span class="button km-wifi"></span>wifi</li>
 </ul>
 
 In addition to these 34 icons, there are more icons available inside the font file distributed with Kendo UI Mobile. For a full list of them, check the end of this document.
@@ -689,248 +689,44 @@ already defined and in use, but only in the iOS7 platform theme (and available s
 .k-i-subscript:after { content: "\E117"; }
 .k-i-superscript:after { content: "\E118"; }
 .k-i-drophere:after { content: "\E119"; }
-
-.km-contactadd:after,
-.km-contactadd:before,
-.km-rowinsert:after,
-.km-rowinsert:before
-{
-    content: "\E039";
-}
-
-.km-rowdelete:after,
-.km-rowdelete:before
-{
-    content: "\E03a";
-}
-
-.km-detaildisclose:after,
-.km-detaildisclose:before
-{
-    content: "\E0E2";
-}
-
-.km-action:after,
-.km-action:before
-{
-    content: "\e0ca";
-}
-
-.km-add:after,
-.km-add:before
-{
-    content: "\e0cb";
-}
-
-.km-battery:after,
-.km-battery:before
-{
-    content: "\e0ce";
-}
-
-.km-bookmarks:after,
-.km-bookmarks:before
-{
-    content: "\e0cf";
-}
-
-.km-camera:after,
-.km-camera:before
-{
-    content: "\e0d0";
-}
-
-.km-cart:after,
-.km-cart:before
-{
-    content: "\e0d1";
-}
-
-.km-edit:after,
-.km-compose:after,
-.km-edit:before,
-.km-compose:before
-{
-    content: "\e0d5";
-}
-
-.km-contacts:after,
-.km-contacts:before
-{
-    content: "\e0e4";
-}
-
-.km-trash:after,
-.km-delete:after,
-.km-trash:before,
-.km-delete:before
-{
-    content: "\e0ec";
-}
-
-.km-details:after,
-.km-details:before
-{
-    content: "\e0e2";
-}
-
-.km-download:after,
-.km-downloads:after,
-.km-download:before,
-.km-downloads:before
-{
-    content: "\e0d4";
-}
-
-.km-fastforward:after,
-.km-fastforward:before
-{
-    content: "\e0d9";
-}
-
-.km-toprated:after,
-.km-favorites:after,
-.km-toprated:before,
-.km-favorites:before
-{
-    content: "\e0d7";
-}
-
-.km-featured:after,
-.km-featured:before
-{
-    content: "\e0d8";
-}
-
-.km-globe:after,
-.km-globe:before
-{
-    content: "\e0dc";
-}
-
-.km-history:after,
-.km-history:before
-{
-    content: "\e0e7";
-}
-
-.km-home:after,
-.km-home:before
-{
-    content: "\e0dd";
-}
-
-.km-info:after,
-.km-about:after,
-.km-info:before,
-.km-about:before
-{
-    content: "\e0de";
-}
-
-.km-more:after,
-.km-more:before
-{
-    content: "\e0e0";
-}
-
-.km-mostrecent:after,
-.km-mostrecent:before
-{
-    content: "\e0cc";
-}
-
-.km-mostviewed:after,
-.km-mostviewed:before
-{
-    content: "\e0d6";
-}
-
-.km-organize:after,
-.km-organize:before
-{
-    content: "\e0eb";
-}
-
-.km-pause:after,
-.km-pause:before
-{
-    content: "\e0e3";
-}
-
-.km-play:after,
-.km-play:before
-{
-    content: "\e0e5";
-}
-
-.km-recents:after,
-.km-recents:before
-{
-    content: "\e0d2";
-}
-
-.km-refresh:after,
-.km-refresh:before
-{
-    content: "\e0e6";
-}
-
-.km-reply:after,
-.km-reply:before
-{
-    content: "\e0ed";
-}
-
-.km-rewind:after,
-.km-rewind:before
-{
-    content: "\e0e8";
-}
-
-.km-search:after,
-.km-search:before
-{
-    content: "\e0e9";
-}
-
-.km-settings:after,
-.km-settings:before
-{
-    content: "\e0da";
-}
-
-.km-share:after,
-.km-share:before
-{
-    content: "\e0df";
-}
-
-.km-sounds:after,
-.km-volume:after,
-.km-sounds:before,
-.km-volume:before
-{
-    content: "\e0ef";
-}
-
-.km-stop:after,
-.km-stop:before
-{
-    content: "\e0ea";
-}
-
-.km-wifi:after,
-.km-wifi:before
-{
-    content: "\e0f0";
-}
-
-.km-icon.km-phone:after
-{
-    content: "\e326";
-}
-
+.km-contactadd:after, .km-rowinsert:after { content: "\E039"; }
+.km-rowdelete:after { content: "\E03a"; } 
+.km-detaildisclose:after { content: "\E0E2"; } 
+.km-action:after { content: "\e0ca"; } 
+.km-add:after { content: "\e0cb"; } 
+.km-battery:after { content: "\e0ce"; } 
+.km-bookmarks:after { content: "\e0cf"; } 
+.km-camera:after { content: "\e0d0"; } 
+.km-cart:after { content: "\e0d1"; } 
+.km-edit:after, .km-compose:after { content: "\e0d5"; }
+.km-contacts:after { content: "\e0e4"; } 
+.km-trash:after, .km-delete:after { content: "\e0ec"; }
+.km-details:after { content: "\e0e2"; } 
+.km-download:after, .km-downloads:after { content: "\e0d4"; }
+.km-fastforward:after { content: "\e0d9"; } 
+.km-toprated:after, .km-favorites:after { content: "\e0d7"; }
+.km-featured:after { content: "\e0d8"; } 
+.km-globe:after { content: "\e0dc"; } 
+.km-history:after { content: "\e0e7"; } 
+.km-home:after { content: "\e0dd"; } 
+.km-info:after, .km-about:after { content: "\e0de"; }
+.km-more:after { content: "\e0e0"; } 
+.km-mostrecent:after { content: "\e0cc"; } 
+.km-mostviewed:after { content: "\e0d6"; } 
+.km-organize:after { content: "\e0eb"; } 
+.km-pause:after { content: "\e0e3"; } 
+.km-play:after { content: "\e0e5"; } 
+.km-recents:after { content: "\e0d2"; } 
+.km-refresh:after { content: "\e0e6"; } 
+.km-reply:after { content: "\e0ed"; } 
+.km-rewind:after { content: "\e0e8"; } 
+.km-search:after { content: "\e0e9"; } 
+.km-settings:after { content: "\e0da"; } 
+.km-share:after { content: "\e0df"; } 
+.km-sounds:after, .km-volume:after { content: "\e0ef"; }
+.km-stop:after { content: "\e0ea"; } 
+.km-wifi:after { content: "\e0f0"; } 
+.km-phone:after { content: "\e326"; } 
 .k-ios7-action:after { content: "\E200"; }
 .k-ios7-add:after { content: "\E200"; }
 .k-ios7-add-inv:after { content: "\E201"; }
