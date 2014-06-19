@@ -182,16 +182,6 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 
 Clears the currently selected task or dependency.
 
-#### Event Data
-
-##### e.sender `kendo.ui.Gantt`
-
-The widget instance which fired the event.
-
-##### e.preventDefault `Function`
-
-If invoked prevents the data bind action and `dataBound` event will not fire.
-
 #### Example - subscribe to the "dataBinding" event during initialization
 
     <div id="gantt"></div>
@@ -685,13 +675,13 @@ Fired when a new task or a new dependency is about to be added.
 
 The event handler function context (available via the `this` keyword) will be set to the widget instance.
 
-### Event Data
+#### Event Data
 
-#### e.task 'kendo.data.GanttTask'
+##### e.task `kendo.data.GanttTask`
 
 The GanttTask instance which will be added to the DataSource.
 
-#### e.dependency 'kendo.data.GanttDependency'
+##### e.dependency `kendo.data.GanttDependency`
 
 The GanttDependency instance which will be added to the DataSource.
 
@@ -822,13 +812,13 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-#### e.task 'kendo.data.GanttTask'
+#### e.task `kendo.data.GanttTask`
 
 The GanttTask instance which is being removed the DataSource.
 
-#### e.dependencies 'Array'
+#### e.dependencies `Array`
 
-An array of GanttDependency instances which are assosiated with the task being removed, or an array with a sigle dependency which is being removed.
+An array of GanttDependency instances which are associated with the task being removed, or an array with a single dependency which is being removed.
 
 ##### e.preventDefault `Function`
 
