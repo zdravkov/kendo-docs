@@ -29,6 +29,25 @@ If `resizable` is set to `true` the widget will detect changes in the viewport w
         });
     </script>
 
+### items `Array`
+
+A JavaScript array that contains the ToolBar's commands configuration. 
+
+> For more information regarding supported commands and their configration properties check the [Getting Started topic](/kendo-ui/getting-started/web/toolbar/overview#command-types).
+
+#### Example - initialize ToolBar with Button, Toggle Button and SplitButton
+
+    <div id="toolbar"></div>
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", text: "Button" },
+                { type: "button", text: "Toggle", toggable: true },
+                { type: "splitButton", text: "SplitButton", items: [{text: "Option 1"}, {text: "Option 2"}] }
+            ]
+        });
+    </script>
+
 ## Methods
 
 ### add
@@ -55,7 +74,7 @@ An object with valid command configuration options.
         toolbar.add({
             type: "button",
             text: "Just added",
-            toggle: true
+            toggable: true
         });)
     </script>
 
@@ -120,6 +139,39 @@ A boolean flag that determines whether the command should be enabled (true) or d
         toolbar.enable("#btn1", false); //disables the initially disabled command
     </script>
 
+### getSelectedFromGroup
+
+Returns the selected toggle button from the specified group.
+
+#### Parameters
+
+##### groupName `String`
+
+The name of the group.
+
+#### Example - get selected button from group with name "radio"
+
+    <div id="toolbar"></div>
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { 
+                    type: "buttonGroup",
+                    items: [
+                        { type: "button", id: "btn1", text: "Button 1", toggable: true, group: "radio" },
+                        { type: "button", id: "btn1", text: "Button 1", toggable: true, group: "radio", selected: true },
+                        { type: "button", id: "btn1", text: "Button 1", toggable: true, group: "radio" }
+                    ]
+                }
+            ]
+        });
+
+        var toolbar = $("#toolbar").data("kendoToolBar");
+        var selected = toolbar.getSelectedFromGroup("radio");
+
+        console.log(selected.attr("id"));
+    </script>
+
 ### remove
 
 Removes a command from the ToolBar widget. The command is removed from the ToolBar container and overflow popup (if resizable is enabled).
@@ -151,13 +203,17 @@ A string, DOM element or jQuery object which represents the command to be remove
 
 Fires when the user clicks a command button.
 
-> The event does not fire for toggable buttons. If the button has `toggle: true` use the `toggle` event.
+> The event does not fire for toggable buttons. If the button has `toggable: true` use the `toggle` event.
 
 #### Event Data
 
 ##### e.target `jQuery`
 
 The jQuery object that represents the command element.
+
+##### e.id `String`
+
+The id of the command element.
 
 ##### e.sender `kendo.ui.ToolBar`
 
@@ -315,7 +371,7 @@ The widget instance which fired the event.
 
 Fires when the user changes the checked state of a toggle button.
 
-> **Important** Click event does not fire for buttons that have `toggle: true`
+> **Important** `click` event does not fire for buttons that have `toggable: true`
 
 #### Event Data
 
@@ -327,9 +383,9 @@ The jQuery object that represents the command element.
 
 Boolean flag that indicates the button state.
 
-##### e.preventDefault `Function`
+##### e.id `String`
 
-Prevents the state change action if called. The toggle button remains in its initial state.
+The id of the command element.
 
 ##### e.sender `kendo.ui.ToolBar`
 
@@ -341,8 +397,8 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "button", id: "btn1", text: "Button 1", toggle: true },
-                { type: "button", id: "btn2", text: "Button 2", toggle: true }
+                { type: "button", id: "btn1", text: "Button 1", toggable: true },
+                { type: "button", id: "btn2", text: "Button 2", toggable: true }
             ],
             toggle: function(e) {
                 console.log("toggle", e.target.text(), e.checked);
@@ -356,13 +412,105 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "button", id: "btn1", text: "Button 1", toggle: true },
-                { type: "button", id: "btn2", text: "Button 2", toggle: true }
+                { type: "button", id: "btn1", text: "Button 1", toggable: true },
+                { type: "button", id: "btn2", text: "Button 2", toggable: true }
             ]
         });
 
         var toolbar = $("#toolbar").data("kendoToolBar");
         toolbar.bind("toggle", function(e){
             console.log("toggle", e.target.text(), e.checked);
+        });
+    </script>
+
+### overflowClose
+
+Fires when the overflow popup container is about to close.
+
+#### Event Data
+
+##### e.preventDefault `Function`
+
+Prevents the close action if called. The popup will remain open.
+
+##### e.sender `kendo.ui.ToolBar`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "overflowClose" event during initialization
+
+    <div id="toolbar"></div>
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", id: "btn1", text: "Button 1" },
+                { type: "button", id: "btn2", text: "Button 2", overflow: "always" }
+            ],
+            overflowClose: function(e) {
+                console.log("close");
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "overflowClose" event after initialization
+
+    <div id="toolbar"></div>
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", id: "btn1", text: "Button 1" },
+                { type: "button", id: "btn2", text: "Button 2", overflow: "always" }
+            ]
+        });
+
+        var toolbar = $("#toolbar").data("kendoToolBar");
+        toolbar.bind("overflowClose", function(e){
+            console.log("close");
+        });
+    </script>
+
+### overflowOpen
+
+Fires when the overflow popup container is about to open.
+
+#### Event Data
+
+##### e.preventDefault `Function`
+
+Prevents the close action if called. The popup will remain closed.
+
+##### e.sender `kendo.ui.ToolBar`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "overflowOpen" event during initialization
+
+    <div id="toolbar"></div>
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", id: "btn1", text: "Button 1" },
+                { type: "button", id: "btn2", text: "Button 2", overflow: "always" }
+            ],
+            overflowOpen: function(e) {
+                console.log("open");
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "overflowOpen" event after initialization
+
+    <div id="toolbar"></div>
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", id: "btn1", text: "Button 1" },
+                { type: "button", id: "btn2", text: "Button 2", overflow: "always" }
+            ]
+        });
+
+        var toolbar = $("#toolbar").data("kendoToolBar");
+        toolbar.bind("overflowOpen", function(e){
+            console.log("open");
         });
     </script>
