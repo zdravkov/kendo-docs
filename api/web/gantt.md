@@ -1006,7 +1006,7 @@ The event handler function context (available via the this keyword) will be set 
 
 The GanttTask which has been edited.
 
-##### e.value 'Object'
+##### e.value `Object`
 
 The GantTask fields being updated with new values.
 
@@ -1154,7 +1154,7 @@ The event handler function context (available via the this keyword) will be set 
 
 #### Event Data
 
-##### e.view 'String'
+##### e.view `String`
 
 The name of the view which is about to be selected. The possible values are:
 
@@ -1306,11 +1306,11 @@ The event handler function context (available via the this keyword) will be set 
 
 The event which is being moved.
 
-##### e.start 'Date'
+##### e.start `Date`
 
 The current event start date.
 
-##### e.end 'Date'
+##### e.end `Date`
 
 The current event end date.
 
@@ -1380,11 +1380,11 @@ The event handler function context (available via the this keyword) will be set 
 
 The event which is being moved.
 
-##### e.start 'Date'
+##### e.start `Date`
 
 The new event start date.
 
-##### e.end 'Date'
+##### e.end `Date`
 
 The new event end date.
 
@@ -1516,11 +1516,11 @@ The event handler function context (available via the this keyword) will be set 
 
 The event which is being moved.
 
-##### e.start 'Date'
+##### e.start `Date`
 
 The current event start date.
 
-##### e.end 'Date'
+##### e.end `Date`
 
 The current event end date.
 
@@ -1590,11 +1590,11 @@ The event handler function context (available via the this keyword) will be set 
 
 The event which is being resized.
 
-##### e.start 'Date'
+##### e.start `Date`
 
 The new event start date.
 
-##### e.end 'Date'
+##### e.end `Date`
 
 The new event end date.
 
