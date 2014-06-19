@@ -502,6 +502,8 @@ Can be set to a JavaScript object which represents the filter menu configuration
 
 The role data attribute of the widget used in the filter menu or a JavaScript function which initializes that widget.
 
+> This feature is not supported for columns which have their [values](#configuration-columns.values) option set.
+
 #### Example - specify the filter UI as a string
     <div id="grid"></div>
     <script>
