@@ -689,6 +689,248 @@ already defined and in use, but only in the iOS7 platform theme (and available s
 .k-i-subscript:after { content: "\E117"; }
 .k-i-superscript:after { content: "\E118"; }
 .k-i-drophere:after { content: "\E119"; }
+
+.km-contactadd:after,
+.km-contactadd:before,
+.km-rowinsert:after,
+.km-rowinsert:before
+{
+    content: "\E039";
+}
+
+.km-rowdelete:after,
+.km-rowdelete:before
+{
+    content: "\E03a";
+}
+
+.km-detaildisclose:after,
+.km-detaildisclose:before
+{
+    content: "\E0E2";
+}
+
+.km-action:after,
+.km-action:before
+{
+    content: "\e0ca";
+}
+
+.km-add:after,
+.km-add:before
+{
+    content: "\e0cb";
+}
+
+.km-battery:after,
+.km-battery:before
+{
+    content: "\e0ce";
+}
+
+.km-bookmarks:after,
+.km-bookmarks:before
+{
+    content: "\e0cf";
+}
+
+.km-camera:after,
+.km-camera:before
+{
+    content: "\e0d0";
+}
+
+.km-cart:after,
+.km-cart:before
+{
+    content: "\e0d1";
+}
+
+.km-edit:after,
+.km-compose:after,
+.km-edit:before,
+.km-compose:before
+{
+    content: "\e0d5";
+}
+
+.km-contacts:after,
+.km-contacts:before
+{
+    content: "\e0e4";
+}
+
+.km-trash:after,
+.km-delete:after,
+.km-trash:before,
+.km-delete:before
+{
+    content: "\e0ec";
+}
+
+.km-details:after,
+.km-details:before
+{
+    content: "\e0e2";
+}
+
+.km-download:after,
+.km-downloads:after,
+.km-download:before,
+.km-downloads:before
+{
+    content: "\e0d4";
+}
+
+.km-fastforward:after,
+.km-fastforward:before
+{
+    content: "\e0d9";
+}
+
+.km-toprated:after,
+.km-favorites:after,
+.km-toprated:before,
+.km-favorites:before
+{
+    content: "\e0d7";
+}
+
+.km-featured:after,
+.km-featured:before
+{
+    content: "\e0d8";
+}
+
+.km-globe:after,
+.km-globe:before
+{
+    content: "\e0dc";
+}
+
+.km-history:after,
+.km-history:before
+{
+    content: "\e0e7";
+}
+
+.km-home:after,
+.km-home:before
+{
+    content: "\e0dd";
+}
+
+.km-info:after,
+.km-about:after,
+.km-info:before,
+.km-about:before
+{
+    content: "\e0de";
+}
+
+.km-more:after,
+.km-more:before
+{
+    content: "\e0e0";
+}
+
+.km-mostrecent:after,
+.km-mostrecent:before
+{
+    content: "\e0cc";
+}
+
+.km-mostviewed:after,
+.km-mostviewed:before
+{
+    content: "\e0d6";
+}
+
+.km-organize:after,
+.km-organize:before
+{
+    content: "\e0eb";
+}
+
+.km-pause:after,
+.km-pause:before
+{
+    content: "\e0e3";
+}
+
+.km-play:after,
+.km-play:before
+{
+    content: "\e0e5";
+}
+
+.km-recents:after,
+.km-recents:before
+{
+    content: "\e0d2";
+}
+
+.km-refresh:after,
+.km-refresh:before
+{
+    content: "\e0e6";
+}
+
+.km-reply:after,
+.km-reply:before
+{
+    content: "\e0ed";
+}
+
+.km-rewind:after,
+.km-rewind:before
+{
+    content: "\e0e8";
+}
+
+.km-search:after,
+.km-search:before
+{
+    content: "\e0e9";
+}
+
+.km-settings:after,
+.km-settings:before
+{
+    content: "\e0da";
+}
+
+.km-share:after,
+.km-share:before
+{
+    content: "\e0df";
+}
+
+.km-sounds:after,
+.km-volume:after,
+.km-sounds:before,
+.km-volume:before
+{
+    content: "\e0ef";
+}
+
+.km-stop:after,
+.km-stop:before
+{
+    content: "\e0ea";
+}
+
+.km-wifi:after,
+.km-wifi:before
+{
+    content: "\e0f0";
+}
+
+.km-icon.km-phone:after
+{
+    content: "\e326";
+}
+
 .k-ios7-action:after { content: "\E200"; }
 .k-ios7-add:after { content: "\E200"; }
 .k-ios7-add-inv:after { content: "\E201"; }
