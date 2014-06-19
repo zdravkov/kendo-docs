@@ -812,11 +812,11 @@ The event handler function context (available via the `this` keyword) will be se
 
 #### Event Data
 
-#### e.task `kendo.data.GanttTask`
+##### e.task `kendo.data.GanttTask`
 
 The GanttTask instance which is being removed the DataSource.
 
-#### e.dependencies `Array`
+##### e.dependencies `Array`
 
 An array of GanttDependency instances which are associated with the task being removed, or an array with a single dependency which is being removed.
 
@@ -1058,7 +1058,7 @@ Fired when the user selects a task in the gantt.
 
 The event handler function context (available via the this keyword) will be set to the widget instance.
 
-#### Even tData
+#### Event Data
 
 ##### e.sender `kendo.ui.Gantt`
 
