@@ -1,6 +1,6 @@
 ---
 nav_title: kendo.data.GanttDataSource
-meta_title: API Reference for Kendo UI GanttDataSource
+title: API Reference for Kendo UI GanttDataSource
 meta_description: Learn more about the configuration of Kendo UI GanttDataSource, methods and events.
 ---
 

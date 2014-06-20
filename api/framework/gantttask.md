@@ -1,6 +1,6 @@
 ---
 nav_title: kendo.data.GanttTask
-meta_title: API Reference for Kendo Data GanttTask
+title: API Reference for Kendo Data GanttTask
 meta_description: Documentation how to get started with the GanttTask.
 ---
 
