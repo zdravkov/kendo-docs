@@ -49,6 +49,15 @@ There are two ways you can contribute to the public Kendo UI documentation: eith
 
     Once you've made your changes, commit, pull, merge, push and [send us a pull request](https://help.github.com/articles/using-pull-requests)! We — and Kendo UI users everywhere — thank you for making our docs the best front-end library documentation on the web!
 
+## Running locally
+
+You can generate a static web site from the Kendo UI the documentation and browse it locally.
+
+1. Clone the repository `git clone git@github.com:telerik/kendo-docs.git`
+2. Run `bundle install` (you must have ruby and bundler isntalled beforehand)
+3. Run `jekyll serve`
+4. Open "http://localhost:4000/kendo-ui" in your browser
+
 ## License
 
 The Kendo UI Documentation is licensed under an MIT license. This license applies to the markdown (.md) files in this site **ONLY**, and does not convey, override or modify any existing licenses covering the runtime source and components of Kendo UI. For information about available licensed for the Kendo UI Library, visit our [license page](http://www.telerik.com/purchase/license-agreement/kendo-ui-complete).
