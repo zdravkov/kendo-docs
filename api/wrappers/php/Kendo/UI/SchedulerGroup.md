@@ -1,8 +1,5 @@
 ---
-title: SchedulerGroup
-slug: php-ui-schedulergroup
-tags: api, php
-publish: true
+nav_title: SchedulerGroup
 ---
 
 # \Kendo\UI\SchedulerGroup

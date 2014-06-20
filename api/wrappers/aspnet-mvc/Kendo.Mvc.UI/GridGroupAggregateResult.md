@@ -1,7 +1,5 @@
 ---
-title:GridGroupAggregateResult
-slug:aspnetmvc-kendo.mvc.ui.gridgroupaggregateresult
-publish:true
+nav_title: GridGroupAggregateResult
 ---
 
 # Kendo.Mvc.UI.GridGroupAggregateResult

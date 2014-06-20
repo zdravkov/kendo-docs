@@ -1,8 +1,5 @@
 ---
-title: SparklinePlotArea
-slug: php-dataviz-ui-sparklineplotarea
-tags: api, php
-publish: true
+nav_title: SparklinePlotArea
 ---
 
 # \Kendo\Dataviz\UI\SparklinePlotArea
@@ -42,7 +39,7 @@ The border of the plot area.
 ##### $value `\Kendo\Dataviz\UI\SparklinePlotAreaBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklinePlotAreaBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklinePlotAreaBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklinePlotAreaBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklinePlotAreaBorder)
     <?php
     $plotArea = new \Kendo\Dataviz\UI\SparklinePlotArea();
     $border = new \Kendo\Dataviz\UI\SparklinePlotAreaBorder();

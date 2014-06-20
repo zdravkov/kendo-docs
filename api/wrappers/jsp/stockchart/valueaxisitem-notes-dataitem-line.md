@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-notes-dataItem-line
-slug: jsp-stockChart-valueAxisItem-notes-dataItem-line
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-notes-dataItem-line
 ---
 
 # \<kendo:stockChart-valueAxisItem-notes-dataItem-line\>

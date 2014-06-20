@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-plotBand
-slug: jsp-chart-categoryAxisItem-plotBand
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-plotBand
 ---
 
 # \<kendo:chart-categoryAxisItem-plotBand\>

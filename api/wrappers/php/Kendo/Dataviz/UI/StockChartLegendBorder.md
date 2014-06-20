@@ -1,8 +1,5 @@
 ---
-title: StockChartLegendBorder
-slug: php-dataviz-ui-stockchartlegendborder
-tags: api, php
-publish: true
+nav_title: StockChartLegendBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartLegendBorder

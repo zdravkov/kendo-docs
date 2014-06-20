@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-title-margin
-slug: jsp-stockChart-navigator-categoryAxisItem-title-margin
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-title-margin
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-title-margin\>

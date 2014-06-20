@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxis-title
-slug: jsp-chart-categoryAxis-title
-tags: api, java
-publish: true
+nav_title: chart-categoryAxis-title
 ---
 
 # \<kendo:chart-categoryAxis-title\>
@@ -104,7 +101,7 @@ The visibility of the title.
 
 The border of the title.
 
-More documentation is available at [kendo:chart-categoryAxis-title-border](/kendo-ui/api/wrappers/jsp/chart/categoryaxis-title-border).
+More documentation is available at [kendo:chart-categoryAxis-title-border](/api/wrappers/jsp/chart/categoryaxis-title-border).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: dataSource-transport-read
-slug: jsp-dataSource-transport-read
-tags: api, java
-publish: true
+nav_title: dataSource-transport-read
 ---
 
 # \<kendo:dataSource-transport-read\>

@@ -1,8 +1,5 @@
 ---
-title: MenuAnimationClose
-slug: php-ui-menuanimationclose
-tags: api, php
-publish: true
+nav_title: MenuAnimationClose
 ---
 
 # \Kendo\UI\MenuAnimationClose

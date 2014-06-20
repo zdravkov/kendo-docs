@@ -1,22 +1,19 @@
 ---
-title: Overview
-meta_title: How to use the Window PHP class, server-side wrapper for Kendo UI Window widget
-meta_description: Learn how to create Kendo UI Window for PHP, handle Kendo UI Window Events, access an existing window.
-slug: php-window-overview
-publish: true
-relatedDocs: php-ui-window
+nav_title: Overview
+title: How to use the Window PHP class, server-side wrapper for Kendo UI Window widget
+description: Learn how to create Kendo UI Window for PHP, handle Kendo UI Window Events, access an existing window.
 ---
 
 # Window
 
-The Kendo Window for PHP is a server-side wrapper for the [Kendo UI Window](/kendo-ui/api/web/window) widget.
+The Kendo Window for PHP is a server-side wrapper for the [Kendo UI Window](/api/web/window) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo Window:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
-2. Create a [window](/kendo-ui/api/wrappers/php/Kendo/UI/Window)
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+2. Create a [window](/api/wrappers/php/Kendo/UI/Window)
 
         <?php
         $window = new \Kendo\UI\Window('window');
@@ -43,7 +40,7 @@ Here is how to configure a simple Kendo Window:
             $window->endContent();
         ?>
 
-4. Output the window by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+4. Output the window by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $window->render();
@@ -66,7 +63,7 @@ You can load views asynchronously through the `content` method:
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo Window instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/window#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/window#methods) to control its behavior.
 
 ### Example
 
@@ -83,7 +80,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/w
 
 ## Handling Events
 
-You can subscribe to all window [events](/kendo-ui/api/web/window#events).
+You can subscribe to all window [events](/api/web/window#events).
 
 ### Example - subscribing by specifying JavaScript function name
 

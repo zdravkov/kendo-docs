@@ -1,10 +1,8 @@
 ---
-title: Metadata
-meta_title: Documentation guide for using metadata in File Upload UI widget
-meta_description: How to send metadata to the save handler and receive metadata in Kendo UI Upload widget.
-slug: upload-metadata
-ordinal: 3
-publish: true
+nav_title: Metadata
+title: Documentation guide for using metadata in File Upload UI widget
+description: How to send metadata to the save handler and receive metadata in Kendo UI Upload widget.
+nav_position: 3
 ---
 
 Asynchronous uploading usually means that you lose the association betwen the files and the context that they originate from.
@@ -60,7 +58,7 @@ The Upload requires the response to be in JSON format with Content-Type set to "
             echo json_encode($data);
         ?>
 
-2. Declare a handler for the [success event](/kendo-ui/api/web/upload/events.aspx#success) and process the response
+2. Declare a handler for the [success event](/api/web/upload/events.aspx#success) and process the response
 
         function onSuccess(e) {
             alert("Status: " + e.response.status);

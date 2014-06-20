@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxis-labels-border
-slug: jsp-chart-valueAxis-labels-border
-tags: api, java
-publish: true
+nav_title: chart-valueAxis-labels-border
 ---
 
 # \<kendo:chart-valueAxis-labels-border\>

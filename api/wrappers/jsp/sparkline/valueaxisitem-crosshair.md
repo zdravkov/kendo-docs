@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-crosshair
-slug: jsp-sparkline-valueAxisItem-crosshair
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-crosshair
 ---
 
 # \<kendo:sparkline-valueAxisItem-crosshair\>
@@ -63,7 +60,7 @@ The width of the crosshair.
 
 The crosshar tooltip configuration options.
 
-More documentation is available at [kendo:sparkline-valueAxisItem-crosshair-tooltip](/kendo-ui/api/wrappers/jsp/sparkline/valueaxisitem-crosshair-tooltip).
+More documentation is available at [kendo:sparkline-valueAxisItem-crosshair-tooltip](/api/wrappers/jsp/sparkline/valueaxisitem-crosshair-tooltip).
 
 #### Example
 

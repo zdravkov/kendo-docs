@@ -1,8 +1,5 @@
 ---
-title: DataSourceAggregateItem
-slug: php-data-datasourceaggregateitem
-tags: api, php
-publish: true
+nav_title: DataSourceAggregateItem
 ---
 
 # \Kendo\Data\DataSourceAggregateItem

@@ -1,8 +1,5 @@
 ---
-title: StockChartSeriesItemTargetLine
-slug: php-dataviz-ui-stockchartseriesitemtargetline
-tags: api, php
-publish: true
+nav_title: StockChartSeriesItemTargetLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemTargetLine

@@ -1,8 +1,5 @@
 ---
-title: TreeViewAnimation
-slug: php-ui-treeviewanimation
-tags: api, php
-publish: true
+nav_title: TreeViewAnimation
 ---
 
 # \Kendo\UI\TreeViewAnimation
@@ -33,7 +30,7 @@ The animation that will be used when collapsing items.
     ?>
 
 
-#### Example - using [\Kendo\UI\TreeViewAnimationCollapse](/kendo-ui/api/wrappers/php/Kendo/UI/TreeViewAnimationCollapse)
+#### Example - using [\Kendo\UI\TreeViewAnimationCollapse](/api/wrappers/php/Kendo/UI/TreeViewAnimationCollapse)
     <?php
     $animation = new \Kendo\UI\TreeViewAnimation();
     $collapse = new \Kendo\UI\TreeViewAnimationCollapse();
@@ -71,7 +68,7 @@ The animation that will be used when expanding items.
     ?>
 
 
-#### Example - using [\Kendo\UI\TreeViewAnimationExpand](/kendo-ui/api/wrappers/php/Kendo/UI/TreeViewAnimationExpand)
+#### Example - using [\Kendo\UI\TreeViewAnimationExpand](/api/wrappers/php/Kendo/UI/TreeViewAnimationExpand)
     <?php
     $animation = new \Kendo\UI\TreeViewAnimation();
     $expand = new \Kendo\UI\TreeViewAnimationExpand();

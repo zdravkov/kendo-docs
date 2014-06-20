@@ -1,8 +1,5 @@
 ---
-title: TabStripAnimationOpen
-slug: php-ui-tabstripanimationopen
-tags: api, php
-publish: true
+nav_title: TabStripAnimationOpen
 ---
 
 # \Kendo\UI\TabStripAnimationOpen

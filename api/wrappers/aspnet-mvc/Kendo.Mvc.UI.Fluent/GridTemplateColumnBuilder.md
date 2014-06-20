@@ -1,7 +1,5 @@
 ---
-title:GridTemplateColumnBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gridtemplatecolumnbuilder
-publish:true
+nav_title: GridTemplateColumnBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridTemplateColumnBuilder

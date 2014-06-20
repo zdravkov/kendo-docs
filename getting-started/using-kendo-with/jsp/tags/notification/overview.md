@@ -1,17 +1,15 @@
 ---
-title: Overview
-meta_title: Notification JSP tag for Kendo UI Notification widget | Kendo UI documentation
-meta_description: Getting started with Notification JSP tag extension in quick steps - configure Kendo UI Notification widget and operate Kendo UI Notification events.
-slug: jsp-notification-overview
-publish: true
+nav_title: Overview
+title: Notification JSP tag for Kendo UI Notification widget | Kendo UI documentation
+description: Getting started with Notification JSP tag extension in quick steps - configure Kendo UI Notification widget and operate Kendo UI Notification events.
 ---
 
 # Notification
 
-The Notification JSP tag is a server-side wrapper for the [Kendo UI Notification](/kendo-ui/api/web/notification) widget.
+The Notification JSP tag is a server-side wrapper for the [Kendo UI Notification](/api/web/notification) widget.
 
-It is assumed that the reader of this page is familiar with the fundamental [Kendo UI widget concepts](/kendo-ui/getting-started/widgets) and
-the [Kendo UI Java wrappers](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) are setup correctly.
+It is assumed that the reader of this page is familiar with the fundamental [Kendo UI widget concepts](/getting-started/widgets) and
+the [Kendo UI Java wrappers](/getting-started/using-kendo-with/jsp/introduction) are setup correctly.
 
 The **Kendo UI Notification** provides a styled UI widget with arbitrary content, which can provide information to the user on various occasions.
 
@@ -107,7 +105,7 @@ One widget instance can display either popup or static notifications, not both a
 
 ## Templates
 
-*This documentation section assumes that you are familiar with [Kendo UI templates](/kendo-ui/getting-started/framework/templates/overview)*.
+*This documentation section assumes that you are familiar with [Kendo UI templates](/getting-started/framework/templates/overview)*.
 
 The **Notification** widget allows configuring multiple templates. Each template will be used together with its corresponding [notification type](#notification-types) (either build-in or custom).
 If you define a custom template for a built-in notification type, you will no longer be able to use the corresponding built-in template,
@@ -152,5 +150,5 @@ but you will still be able to use the shorthand show methods, as demonstrated be
 	</script>
 
 For more information on other Notification features and behavior (HTML output, RTL support, Events, etc),
-please refer to the widget's main [Overview](/kendo-ui/getting-started/web/notification/overview) help page.
-The widget events and methods are described on the [Notification API](/kendo-ui/api/web/notification/) page.
+please refer to the widget's main [Overview](/getting-started/web/notification/overview) help page.
+The widget events and methods are described on the [Notification API](/api/web/notification/) page.

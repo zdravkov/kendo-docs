@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemTooltipPadding
-slug: php-dataviz-ui-chartseriesitemtooltippadding
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemTooltipPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemTooltipPadding

@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemPlotBand
-slug: php-dataviz-ui-sparklinecategoryaxisitemplotband
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemPlotBand
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemPlotBand

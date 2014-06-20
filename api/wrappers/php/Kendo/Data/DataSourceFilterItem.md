@@ -1,8 +1,5 @@
 ---
-title: DataSourceFilterItem
-slug: php-data-datasourcefilteritem
-tags: api, php
-publish: true
+nav_title: DataSourceFilterItem
 ---
 
 # \Kendo\Data\DataSourceFilterItem

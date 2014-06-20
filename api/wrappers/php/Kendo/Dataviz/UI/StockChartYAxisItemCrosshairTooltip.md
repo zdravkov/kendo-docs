@@ -1,8 +1,5 @@
 ---
-title: StockChartYAxisItemCrosshairTooltip
-slug: php-dataviz-ui-stockchartyaxisitemcrosshairtooltip
-tags: api, php
-publish: true
+nav_title: StockChartYAxisItemCrosshairTooltip
 ---
 
 # \Kendo\Dataviz\UI\StockChartYAxisItemCrosshairTooltip
@@ -42,7 +39,7 @@ The border configuration options.
 ##### $value `\Kendo\Dataviz\UI\StockChartYAxisItemCrosshairTooltipBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartYAxisItemCrosshairTooltipBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartYAxisItemCrosshairTooltipBorder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartYAxisItemCrosshairTooltipBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartYAxisItemCrosshairTooltipBorder)
     <?php
     $tooltip = new \Kendo\Dataviz\UI\StockChartYAxisItemCrosshairTooltip();
     $border = new \Kendo\Dataviz\UI\StockChartYAxisItemCrosshairTooltipBorder();

@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-crosshair-tooltip
-slug: jsp-chart-valueAxisItem-crosshair-tooltip
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-crosshair-tooltip
 ---
 
 # \<kendo:chart-valueAxisItem-crosshair-tooltip\>
@@ -79,7 +76,7 @@ If set to true the chart will display the value axis crosshair tooltip. By defau
 
 The border options.
 
-More documentation is available at [kendo:chart-valueAxisItem-crosshair-tooltip-border](/kendo-ui/api/wrappers/jsp/chart/valueaxisitem-crosshair-tooltip-border).
+More documentation is available at [kendo:chart-valueAxisItem-crosshair-tooltip-border](/api/wrappers/jsp/chart/valueaxisitem-crosshair-tooltip-border).
 
 #### Example
 
@@ -91,7 +88,7 @@ More documentation is available at [kendo:chart-valueAxisItem-crosshair-tooltip-
 
 The padding of the crosshair tooltip. A numeric value will set all paddings.
 
-More documentation is available at [kendo:chart-valueAxisItem-crosshair-tooltip-padding](/kendo-ui/api/wrappers/jsp/chart/valueaxisitem-crosshair-tooltip-padding).
+More documentation is available at [kendo:chart-valueAxisItem-crosshair-tooltip-padding](/api/wrappers/jsp/chart/valueaxisitem-crosshair-tooltip-padding).
 
 #### Example
 

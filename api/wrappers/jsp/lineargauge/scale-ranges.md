@@ -1,8 +1,5 @@
 ---
-title: linearGauge-scale-ranges
-slug: jsp-linearGauge-scale-ranges
-tags: api, java
-publish: true
+nav_title: linearGauge-scale-ranges
 ---
 
 # \<kendo:linearGauge-scale-ranges\>
@@ -23,7 +20,7 @@ The ranges of the scale.
 
 The ranges of the scale.
 
-More documentation is available at [kendo:linearGauge-scale-range](/kendo-ui/api/wrappers/jsp/lineargauge/scale-range).
+More documentation is available at [kendo:linearGauge-scale-range](/api/wrappers/jsp/lineargauge/scale-range).
 
 #### Example
 

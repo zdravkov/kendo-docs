@@ -1,8 +1,5 @@
 ---
-title: ChartYAxisItemNotesDataItemIconBorder
-slug: php-dataviz-ui-chartyaxisitemnotesdataitemiconborder
-tags: api, php
-publish: true
+nav_title: ChartYAxisItemNotesDataItemIconBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemNotesDataItemIconBorder

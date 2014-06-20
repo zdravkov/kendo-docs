@@ -1,7 +1,5 @@
 ---
-title:MobileTabStripBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobiletabstripbuilder
-publish:true
+nav_title: MobileTabStripBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileTabStripBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileTabStrip for ASP.NET MVC.
 
 
 
+
 ## Methods
 
-### SelectedIndex(`System.Int32`)
+
+### SelectedIndex(System.Int32)
 The index of the initially selected tab.
 
 
@@ -24,26 +24,26 @@ The value that configures the selectedindex.
 
 
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.MobileTabStripItemFactory>`)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.MobileTabStripItemFactory\>)
 Contains the items of the tabstrip widget
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileTabStripItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileTabStripItemFactory)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileTabStripItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileTabStripItemFactory)>
 The action that configures the items.
 
 
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileTabStripEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileTabStripEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileTabStripEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileTabStripEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileTabStripEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileTabStripEventBuilder)>
 The client events action.
 
 

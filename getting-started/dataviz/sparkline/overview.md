@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Documentation for Sparkline widget in Kendo UI DataViz
-meta_description: How to create a sparkline, enable the visualization of a series that displays inline data, explore the quick overview of Sparkline widget major features.
-slug: gs-dataviz-sparkline-overview
-relatedDocs: api-dataviz-sparkline
-publish: true
-relatedDocs: chart-overview, chart-data-binding
+nav_title: Overview
+title: Documentation for Sparkline widget in Kendo UI DataViz
+description: How to create a sparkline, enable the visualization of a series that displays inline data, explore the quick overview of Sparkline widget major features.
 ---
 
 # Sparkline Overview
@@ -86,7 +82,7 @@ Binding to local data can be done by:
 
 #### Binding to remote data
 
-See [Binding to a Data Source](/kendo-ui/getting-started/dataviz/chart/data-binding#binding-to-a-data-source)
+See [Binding to a Data Source](/getting-started/dataviz/chart/data-binding#binding-to-a-data-source)
 
 ## Axes
 
@@ -244,7 +240,7 @@ Available options are:
 
 The Sparkline currently supports only Numeric value axes.
 
-Configuration options are accessible through the [`valueAxis` object](/kendo-ui/api/dataviz/sparkline#valueaxis-object):
+Configuration options are accessible through the [`valueAxis` object](/api/dataviz/sparkline#valueaxis-object):
 
     <span id="sparkline"></span>
     <script>

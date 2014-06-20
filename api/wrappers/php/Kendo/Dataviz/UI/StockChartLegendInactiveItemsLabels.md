@@ -1,8 +1,5 @@
 ---
-title: StockChartLegendInactiveItemsLabels
-slug: php-dataviz-ui-stockchartlegendinactiveitemslabels
-tags: api, php
-publish: true
+nav_title: StockChartLegendInactiveItemsLabels
 ---
 
 # \Kendo\Dataviz\UI\StockChartLegendInactiveItemsLabels

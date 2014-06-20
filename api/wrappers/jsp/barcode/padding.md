@@ -1,8 +1,5 @@
 ---
-title: barcode-padding
-slug: jsp-barcode-padding
-tags: api, java
-publish: true
+nav_title: barcode-padding
 ---
 
 # \<kendo:barcode-padding\>

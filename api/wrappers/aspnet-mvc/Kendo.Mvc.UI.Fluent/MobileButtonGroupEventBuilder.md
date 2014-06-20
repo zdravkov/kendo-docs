@@ -1,7 +1,5 @@
 ---
-title:MobileButtonGroupEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilebuttongroupeventbuilder
-publish:true
+nav_title: MobileButtonGroupEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileButtonGroupEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent API for configuring the Kendo MobileButtonGroup for ASP.NET M
 
 
 
+
 ## Methods
 
-### Select(`System.String`)
+
+### Select(System.String)
 Fires when a Button is selected.
 
-For additional information check the [select](/kendo-ui/api/web/mobilebuttongroup#events-select) event documentation.
+For additional information check the [select](/api/web/mobilebuttongroup#events-select) event documentation.
 
 
 #### Parameters

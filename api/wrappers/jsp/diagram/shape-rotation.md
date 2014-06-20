@@ -1,8 +1,5 @@
 ---
-title: diagram-shape-rotation
-slug: jsp-diagram-shape-rotation
-tags: api, java
-publish: true
+nav_title: diagram-shape-rotation
 ---
 
 # \<kendo:diagram-shape-rotation\>

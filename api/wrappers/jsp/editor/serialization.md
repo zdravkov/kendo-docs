@@ -1,8 +1,5 @@
 ---
-title: editor-serialization
-slug: jsp-editor-serialization
-tags: api, java
-publish: true
+nav_title: editor-serialization
 ---
 
 # \<kendo:editor-serialization\>

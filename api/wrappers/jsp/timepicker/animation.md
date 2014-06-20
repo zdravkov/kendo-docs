@@ -1,8 +1,5 @@
 ---
-title: timePicker-animation
-slug: jsp-timePicker-animation
-tags: api, java
-publish: true
+nav_title: timePicker-animation
 ---
 
 # \<kendo:timePicker-animation\>
@@ -23,7 +20,7 @@ Configures the opening and closing animations of the popup. Setting the animatio
 
 The animation played when the popup is closed.
 
-More documentation is available at [kendo:timePicker-animation-close](/kendo-ui/api/wrappers/jsp/timepicker/animation-close).
+More documentation is available at [kendo:timePicker-animation-close](/api/wrappers/jsp/timepicker/animation-close).
 
 #### Example
 
@@ -35,7 +32,7 @@ More documentation is available at [kendo:timePicker-animation-close](/kendo-ui/
 
 The animation played when the calendar popup is opened.
 
-More documentation is available at [kendo:timePicker-animation-open](/kendo-ui/api/wrappers/jsp/timepicker/animation-open).
+More documentation is available at [kendo:timePicker-animation-open](/api/wrappers/jsp/timepicker/animation-open).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-crosshair
-slug: jsp-stockChart-valueAxisItem-crosshair
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-crosshair
 ---
 
 # \<kendo:stockChart-valueAxisItem-crosshair\>
@@ -63,7 +60,7 @@ The width of the crosshair.
 
 The crosshar tooltip configuration options.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-crosshair-tooltip](/kendo-ui/api/wrappers/jsp/stockchart/valueaxisitem-crosshair-tooltip).
+More documentation is available at [kendo:stockChart-valueAxisItem-crosshair-tooltip](/api/wrappers/jsp/stockchart/valueaxisitem-crosshair-tooltip).
 
 #### Example
 

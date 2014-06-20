@@ -1,8 +1,5 @@
 ---
-title: treeView-item
-slug: jsp-treeView-item
-tags: api, java
-publish: true
+nav_title: treeView-item
 ---
 
 # \<kendo:treeView-item\>

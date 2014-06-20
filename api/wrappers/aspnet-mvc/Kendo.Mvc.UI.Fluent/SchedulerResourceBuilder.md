@@ -1,7 +1,5 @@
 ---
-title:SchedulerResourceBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerresourcebuilder
-publish:true
+nav_title: SchedulerResourceBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerResourceBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the 1.
 
 
 
+
 ## Methods
 
-### Title(`System.String`)
+
+### Title(System.String)
 The user friendly title of the resource displayed in the scheduler edit form. If not set the value of the field option is used.
 
 
@@ -24,7 +24,7 @@ The title
 
 
 
-### Multiple(`System.Boolean`)
+### Multiple(System.Boolean)
 If set to true the scheduler event can be assigned multiple instances of the resource. The scheduler event field specified via the field option will contain an array of resources. By default only one resource instance can be assigned to an event.
 
 
@@ -37,14 +37,14 @@ The isMultiple
 
 
 
-### Name(`System.String`)
+### Name(System.String)
 The name of the resource.
 
 
 
 
 
-### BindTo(`System.Collections.IEnumerable`)
+### BindTo(System.Collections.IEnumerable)
 Binds the scheduler resource to a list of objects
 
 
@@ -88,7 +88,7 @@ The dataSource
     )
 
 
-### DataValueField(`System.String`)
+### DataValueField(System.String)
 The field of the resource data item which represents the resource value. The resource value is used to link a scheduler event with a resource.
 
 
@@ -101,7 +101,7 @@ The field
 
 
 
-### DataTextField(`System.String`)
+### DataTextField(System.String)
 The field of the resource data item which represents the resource text.
 
 
@@ -114,7 +114,7 @@ The field
 
 
 
-### DataColorField(`System.String`)
+### DataColorField(System.String)
 The field of the resource data item which contains the resource color.
 
 
@@ -127,7 +127,7 @@ The field
 
 
 
-### ValuePrimitive(`System.Boolean`)
+### ValuePrimitive(System.Boolean)
 Set to false if the scheduler event field specified via the field option contains a resource data item. By default the scheduler expects that field to contain a primitive value (string, number) which corresponds to the "value" of the resource (specified via dataValueField).
 
 
@@ -140,13 +140,13 @@ The valuePrimitive
 
 
 
-### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder>`)
+### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder\>)
 Configures the DataSource options.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyDataSourceBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyDataSourceBuilder)>
 The DataSource configurator action.
 
 

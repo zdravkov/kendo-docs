@@ -1,8 +1,5 @@
 ---
-title: MapLayerDefaultsMarkerTooltipContent
-slug: php-dataviz-ui-maplayerdefaultsmarkertooltipcontent
-tags: api, php
-publish: true
+nav_title: MapLayerDefaultsMarkerTooltipContent
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipContent

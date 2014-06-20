@@ -1,7 +1,5 @@
 ---
-title:UploadEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.uploadeventbuilder
-publish:true
+nav_title: UploadEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.UploadEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent interface for configuring the Upload events.
 
 
 
+
 ## Methods
 
-### Select(`System.Func<System.Object,System.Object>`)
+
+### Select(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Select client-side event
 
-For additional information check the [select](/kendo-ui/api/web/upload#events-select) event documentation.
+For additional information check the [select](/api/web/upload#events-select) event documentation.
 
 
 #### Parameters
@@ -39,10 +39,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Select(`System.String`)
+### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
 
-For additional information check the [select](/kendo-ui/api/web/upload#events-select) event documentation.
+For additional information check the [select](/api/web/upload#events-select) event documentation.
 
 
 #### Parameters
@@ -60,10 +60,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Upload(`System.Func<System.Object,System.Object>`)
+### Upload(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Upload client-side event
 
-For additional information check the [upload](/kendo-ui/api/web/upload#events-upload) event documentation.
+For additional information check the [upload](/api/web/upload#events-upload) event documentation.
 
 
 #### Parameters
@@ -88,10 +88,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Upload(`System.String`)
+### Upload(System.String)
 Defines the name of the JavaScript function that will handle the the Upload client-side event.
 
-For additional information check the [upload](/kendo-ui/api/web/upload#events-upload) event documentation.
+For additional information check the [upload](/api/web/upload#events-upload) event documentation.
 
 
 #### Parameters
@@ -109,10 +109,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Success(`System.Func<System.Object,System.Object>`)
+### Success(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Success client-side event
 
-For additional information check the [success](/kendo-ui/api/web/upload#events-success) event documentation.
+For additional information check the [success](/api/web/upload#events-success) event documentation.
 
 
 #### Parameters
@@ -137,10 +137,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Success(`System.String`)
+### Success(System.String)
 Defines the name of the JavaScript function that will handle the the Success client-side event.
 
-For additional information check the [success](/kendo-ui/api/web/upload#events-success) event documentation.
+For additional information check the [success](/api/web/upload#events-success) event documentation.
 
 
 #### Parameters
@@ -158,10 +158,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Error(`System.Func<System.Object,System.Object>`)
+### Error(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Error client-side event
 
-For additional information check the [error](/kendo-ui/api/web/upload#events-error) event documentation.
+For additional information check the [error](/api/web/upload#events-error) event documentation.
 
 
 #### Parameters
@@ -186,10 +186,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Error(`System.String`)
+### Error(System.String)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
 
-For additional information check the [error](/kendo-ui/api/web/upload#events-error) event documentation.
+For additional information check the [error](/api/web/upload#events-error) event documentation.
 
 
 #### Parameters
@@ -207,10 +207,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Complete(`System.Func<System.Object,System.Object>`)
+### Complete(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Complete client-side event
 
-For additional information check the [complete](/kendo-ui/api/web/upload#events-complete) event documentation.
+For additional information check the [complete](/api/web/upload#events-complete) event documentation.
 
 
 #### Parameters
@@ -235,10 +235,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Complete(`System.String`)
+### Complete(System.String)
 Defines the name of the JavaScript function that will handle the the Complete client-side event.
 
-For additional information check the [complete](/kendo-ui/api/web/upload#events-complete) event documentation.
+For additional information check the [complete](/api/web/upload#events-complete) event documentation.
 
 
 #### Parameters
@@ -256,10 +256,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Cancel(`System.Func<System.Object,System.Object>`)
+### Cancel(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Cancel client-side event
 
-For additional information check the [cancel](/kendo-ui/api/web/upload#events-cancel) event documentation.
+For additional information check the [cancel](/api/web/upload#events-cancel) event documentation.
 
 
 #### Parameters
@@ -284,10 +284,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Cancel(`System.String`)
+### Cancel(System.String)
 Defines the name of the JavaScript function that will handle the the Cancel client-side event.
 
-For additional information check the [cancel](/kendo-ui/api/web/upload#events-cancel) event documentation.
+For additional information check the [cancel](/api/web/upload#events-cancel) event documentation.
 
 
 #### Parameters
@@ -305,10 +305,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Remove(`System.Func<System.Object,System.Object>`)
+### Remove(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Remove client-side event
 
-For additional information check the [remove](/kendo-ui/api/web/upload#events-remove) event documentation.
+For additional information check the [remove](/api/web/upload#events-remove) event documentation.
 
 
 #### Parameters
@@ -333,10 +333,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Remove(`System.String`)
+### Remove(System.String)
 Defines the name of the JavaScript function that will handle the the Remove client-side event.
 
-For additional information check the [remove](/kendo-ui/api/web/upload#events-remove) event documentation.
+For additional information check the [remove](/api/web/upload#events-remove) event documentation.
 
 
 #### Parameters
@@ -354,10 +354,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Progress(`System.Func<System.Object,System.Object>`)
+### Progress(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Progress client-side event
 
-For additional information check the [progress](/kendo-ui/api/web/upload#events-progress) event documentation.
+For additional information check the [progress](/api/web/upload#events-progress) event documentation.
 
 
 #### Parameters
@@ -382,10 +382,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Progress(`System.String`)
+### Progress(System.String)
 Defines the name of the JavaScript function that will handle the the Progress client-side event.
 
-For additional information check the [progress](/kendo-ui/api/web/upload#events-progress) event documentation.
+For additional information check the [progress](/api/web/upload#events-progress) event documentation.
 
 
 #### Parameters

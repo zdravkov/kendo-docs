@@ -1,7 +1,5 @@
 ---
-title:ChartMajorTicksBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartmajorticksbuilder
-publish:true
+nav_title: ChartMajorTicksBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMajorTicksBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartMajorTicksBuilder.
 
 
 
+
 ## Methods
 
-### Skip(`System.Int32`)
+
+### Skip(System.Int32)
 Sets the line skip
 
 
@@ -31,7 +31,7 @@ The line skip.
     %>
 
 
-### Step(`System.Int32`)
+### Step(System.Int32)
 Sets the line step
 
 

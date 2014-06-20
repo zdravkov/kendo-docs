@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-select
-slug: jsp-chart-categoryAxisItem-select
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-select
 ---
 
 # \<kendo:chart-categoryAxisItem-select\>
@@ -55,7 +52,7 @@ The upper boundary of the selected range.
 
 The mouse wheel configuration of the selection.
 
-More documentation is available at [kendo:chart-categoryAxisItem-select-mousewheel](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem-select-mousewheel).
+More documentation is available at [kendo:chart-categoryAxisItem-select-mousewheel](/api/wrappers/jsp/chart/categoryaxisitem-select-mousewheel).
 
 #### Example
 

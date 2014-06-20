@@ -1,8 +1,5 @@
 ---
-title: ColorPickerTileSize
-slug: php-ui-colorpickertilesize
-tags: api, php
-publish: true
+nav_title: ColorPickerTileSize
 ---
 
 # \Kendo\UI\ColorPickerTileSize

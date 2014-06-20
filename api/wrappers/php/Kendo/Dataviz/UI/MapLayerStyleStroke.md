@@ -1,8 +1,5 @@
 ---
-title: MapLayerStyleStroke
-slug: php-dataviz-ui-maplayerstylestroke
-tags: api, php
-publish: true
+nav_title: MapLayerStyleStroke
 ---
 
 # \Kendo\Dataviz\UI\MapLayerStyleStroke

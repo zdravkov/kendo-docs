@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemCrosshairTooltipBorder
-slug: php-dataviz-ui-sparklinecategoryaxisitemcrosshairtooltipborder
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemCrosshairTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshairTooltipBorder

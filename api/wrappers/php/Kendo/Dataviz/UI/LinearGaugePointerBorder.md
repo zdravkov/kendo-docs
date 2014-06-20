@@ -1,8 +1,5 @@
 ---
-title: LinearGaugePointerBorder
-slug: php-dataviz-ui-lineargaugepointerborder
-tags: api, php
-publish: true
+nav_title: LinearGaugePointerBorder
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugePointerBorder

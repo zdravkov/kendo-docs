@@ -1,8 +1,5 @@
 ---
-title: WindowAnimationOpen
-slug: php-ui-windowanimationopen
-tags: api, php
-publish: true
+nav_title: WindowAnimationOpen
 ---
 
 # \Kendo\UI\WindowAnimationOpen

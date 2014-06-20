@@ -1,8 +1,5 @@
 ---
-title: stockChart-seriesItem-highlight-line
-slug: jsp-stockChart-seriesItem-highlight-line
-tags: api, java
-publish: true
+nav_title: stockChart-seriesItem-highlight-line
 ---
 
 # \<kendo:stockChart-seriesItem-highlight-line\>

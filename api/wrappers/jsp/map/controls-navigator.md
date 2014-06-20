@@ -1,8 +1,5 @@
 ---
-title: map-controls-navigator
-slug: jsp-map-controls-navigator
-tags: api, java
-publish: true
+nav_title: map-controls-navigator
 ---
 
 # \<kendo:map-controls-navigator\>

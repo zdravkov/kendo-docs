@@ -1,7 +1,5 @@
 ---
-title:SchedulerBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerbuilder
-publish:true
+nav_title: SchedulerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the 1.
 
 
 
+
 ## Methods
 
-### Date(`System.DateTime`)
+
+### Date(System.DateTime)
 The current date of the scheduler. Used to determine the period which is displayed by the widget.
 
 
@@ -38,20 +38,20 @@ Enables the adaptive rendering when viewed on mobile browser
 
 
 
-### Mobile(`Kendo.Mvc.UI.MobileMode`)
+### Mobile(Kendo.Mvc.UI.MobileMode)
 Used to determine if adaptive rendering should be used when viewed on mobile browser
 
 
 #### Parameters
 
-##### type [Kendo.Mvc.UI.MobileMode](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileMode)
+##### type [Kendo.Mvc.UI.MobileMode](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileMode)
 
 
 
 
 
 
-### StartTime(`System.DateTime`)
+### StartTime(System.DateTime)
 The start time of the week and day views. The scheduler will display events starting after the startTime.
 
 
@@ -72,7 +72,7 @@ The startTime.
     )
 
 
-### StartTime(`System.Int32,System.Int32,System.Int32`)
+### StartTime(System.Int32,System.Int32,System.Int32)
 The start time of the week and day views. The scheduler will display events starting after the startTime.
 
 
@@ -99,7 +99,7 @@ The seconds
     )
 
 
-### EndTime(`System.DateTime`)
+### EndTime(System.DateTime)
 The end time of the week and day views. The scheduler will display events ending before the endTime.
 
 
@@ -120,7 +120,7 @@ The endTime.
     )
 
 
-### EndTime(`System.Int32,System.Int32,System.Int32`)
+### EndTime(System.Int32,System.Int32,System.Int32)
 The end time of the week and day views. The scheduler will display events ending before the endTime.
 
 
@@ -147,7 +147,7 @@ The seconds
     )
 
 
-### WorkDayStart(`System.DateTime`)
+### WorkDayStart(System.DateTime)
 The start time of the business day. The scheduler will display events starting after the workDayStart when the "Show Business Hours" button is pressed.
 
 
@@ -168,7 +168,7 @@ The workDayStart.
     )
 
 
-### WorkDayStart(`System.Int32,System.Int32,System.Int32`)
+### WorkDayStart(System.Int32,System.Int32,System.Int32)
 The start time of the business day. The scheduler will display events starting after the workDayStart when the "Show Business Hours" button is pressed.
 
 
@@ -195,7 +195,7 @@ The seconds
     )
 
 
-### WorkDayEnd(`System.DateTime`)
+### WorkDayEnd(System.DateTime)
 The end time of the business day. The scheduler will display events ending before the workDayEnd when the "Show Business Hours" button is pressed.
 
 
@@ -216,7 +216,7 @@ The workDayEnd.
     )
 
 
-### WorkDayEnd(`System.Int32,System.Int32,System.Int32`)
+### WorkDayEnd(System.Int32,System.Int32,System.Int32)
 The end time of the business day. The scheduler will display events ending before the workDayEnd when the "Show Business Hours" button is pressed.
 
 
@@ -243,7 +243,7 @@ The seconds
     )
 
 
-### Height(`System.Int32`)
+### Height(System.Int32)
 The height of the widget.
 
 
@@ -264,7 +264,7 @@ The height.
     )
 
 
-### EventTemplate(`System.String`)
+### EventTemplate(System.String)
 The template used to render the scheduler events.
 
 
@@ -301,7 +301,7 @@ The eventTemplate.
         )
 
 
-### EventTemplateId(`System.String`)
+### EventTemplateId(System.String)
 The Id of the template used to render the scheduler events.
 
 
@@ -330,7 +330,7 @@ The eventTemplateId
     )
 
 
-### AllDayEventTemplate(`System.String`)
+### AllDayEventTemplate(System.String)
 The template used to render the "all day" scheduler events.
 
 
@@ -343,7 +343,7 @@ The allDayEventTemplate
 
 
 
-### AllDayEventTemplateId(`System.String`)
+### AllDayEventTemplateId(System.String)
 The Id of the template used to render the "all day" scheduler events.
 
 
@@ -356,7 +356,7 @@ The allDayEventTemplateId
 
 
 
-### AllDaySlot(`System.Boolean`)
+### AllDaySlot(System.Boolean)
 If set to true the scheduler will display a slot for "all day" events.
 
 
@@ -369,7 +369,7 @@ The allDaySlot.
 
 
 
-### ShowWorkHours(`System.Boolean`)
+### ShowWorkHours(System.Boolean)
 If set to true day and week views will be initially shown in business hours mode.
 
 
@@ -389,7 +389,7 @@ If set day and week views will be initially shown in business hours mode.
 
 
 
-### Selectable(`System.Boolean`)
+### Selectable(System.Boolean)
 If set to true the scheduler will enable the selection
 
 
@@ -402,7 +402,7 @@ The selectable.
 
 
 
-### DateHeaderTemplate(`System.String`)
+### DateHeaderTemplate(System.String)
 The template used to render the date header cells.
 
 
@@ -415,7 +415,7 @@ The dateHeaderTemplate
 
 
 
-### DateHeaderTemplateId(`System.String`)
+### DateHeaderTemplateId(System.String)
 The Id of the template used to render the date header cells.
 
 
@@ -444,7 +444,7 @@ The dateHeaderTemplateId
     )
 
 
-### MajorTick(`System.Int32`)
+### MajorTick(System.Int32)
 The number of minutes represented by a major tick.
 
 
@@ -466,7 +466,7 @@ The majorTick
     )
 
 
-### MajorTimeHeaderTemplate(`System.String`)
+### MajorTimeHeaderTemplate(System.String)
 The template used to render the major ticks.
 
 
@@ -479,7 +479,7 @@ The majorTimeHeaderTemplate
 
 
 
-### MajorTimeHeaderTemplateId(`System.String`)
+### MajorTimeHeaderTemplateId(System.String)
 The Id of the template used to render the major ticks.
 
 
@@ -492,7 +492,7 @@ The majorTimeHeaderTemplateId
 
 
 
-### MinorTickCount(`System.Int32`)
+### MinorTickCount(System.Int32)
 The number of time slots to display per major tick.
 
 
@@ -514,7 +514,7 @@ The minorTickCount
     )
 
 
-### MinorTimeHeaderTemplate(`System.String`)
+### MinorTimeHeaderTemplate(System.String)
 The template used to render the minor ticks.
 
 
@@ -527,7 +527,7 @@ The minorTimeHeaderTemplate
 
 
 
-### MinorTimeHeaderTemplateId(`System.String`)
+### MinorTimeHeaderTemplateId(System.String)
 The Id of the template used to render the minor ticks.
 
 
@@ -540,7 +540,7 @@ The minorTimeHeaderTemplateId
 
 
 
-### Timezone(`System.String`)
+### Timezone(System.String)
 The timezone which the scheduler will use to display the scheduler appointment dates. By default the current system timezone is used. This is an acceptable default when the scheduler widget is bound to local array of events. It is advisable to specify a timezone if the scheduler is bound to a remote service. That way all users would see the same dates and times no matter their configured system timezone.
             The complete list of the supported timezones is available in the List of IANA time zones Wikipedia page.
 
@@ -569,7 +569,7 @@ The timezone
     )
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 The width of the widget.
 
 
@@ -597,7 +597,7 @@ The width
     )
 
 
-### Snap(`System.Boolean`)
+### Snap(System.Boolean)
 If set to false the events would not snap events to the nearest slot during dragging (resizing or moving). Set it to false to allow free moving and resizing of events.
 
 
@@ -624,7 +624,7 @@ The isSnapable
     )
 
 
-### AutoBind(`System.Boolean`)
+### AutoBind(System.Boolean)
 If set to false the initial binding will be prevented.
 
 
@@ -648,7 +648,7 @@ The autoBind
     )
 
 
-### WorkWeekStart(`System.Int32`)
+### WorkWeekStart(System.Int32)
 Sets the start day of work week by index.
 
 
@@ -672,7 +672,7 @@ The workWeekStartDay
     )
 
 
-### WorkWeekEnd(`System.Int32`)
+### WorkWeekEnd(System.Int32)
 Sets the end day of work week by index.
 
 
@@ -696,13 +696,13 @@ The workWeekEndDay
     )
 
 
-### Editable(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder<T>>`)
+### Editable(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder\<T\>\>)
 Sets the editing configuration of the scheduler.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerEditableSettingsBuilder)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerEditableSettingsBuilder)<T>>
 The lambda which configures the editing
 
 
@@ -727,7 +727,7 @@ The lambda which configures the editing
     )
 
 
-### Editable(`System.Boolean`)
+### Editable(System.Boolean)
 If set to false the user would not be able to create new scheduler events and modify or delete existing ones.
 
 
@@ -751,7 +751,7 @@ The isEditable
     )
 
 
-### Min(`System.DateTime`)
+### Min(System.DateTime)
 Constraints the minimum date which can be selected via the scheduler navigation.
 
 
@@ -764,7 +764,7 @@ The min date
 
 
 
-### Max(`System.DateTime`)
+### Max(System.DateTime)
 Constraints the maximum date which can be selected via the scheduler navigation.
 
 
@@ -777,13 +777,13 @@ The max date
 
 
 
-### Group(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder>`)
+### Group(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder\>)
 Sets the resources grouping configuration of the scheduler.
 
 
 #### Parameters
 
-##### configuration System.Action<[Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerGroupBuilder)>
+##### configuration System.Action<[Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerGroupBuilder)>
 The lambda which configures the scheduler grouping
 
 
@@ -806,13 +806,13 @@ The lambda which configures the scheduler grouping
             ))
 
 
-### Resources(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerResourceFactory<T>>`)
+### Resources(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerResourceFactory\<T\>\>)
 Sets the resources configuration of the scheduler.
 
 
 #### Parameters
 
-##### addResourceAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerResourceFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerResourceFactory)<T>>
+##### addResourceAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerResourceFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerResourceFactory)<T>>
 The lambda which configures the scheduler resources
 
 
@@ -835,13 +835,13 @@ The lambda which configures the scheduler resources
             ))
 
 
-### Views(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewFactory<T>>`)
+### Views(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerViewFactory\<T\>\>)
 Sets the views configuration of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerViewFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerViewFactory)<T>>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerViewFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerViewFactory)<T>>
 The lambda which configures the scheduler views
 
 
@@ -859,26 +859,26 @@ The lambda which configures the scheduler views
     )
 
 
-### Messages(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerMessagesBuilder>`)
+### Messages(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerMessagesBuilder\>)
 Sets the messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerMessagesBuilder)>
 The lambda which configures the scheduler messages
 
 
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerEventBuilder\>)
 Sets the events configuration of the scheduler.
 
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerEventBuilder)>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerEventBuilder)>
 The lambda which configures the scheduler events
 
 
@@ -894,7 +894,7 @@ The lambda which configures the scheduler events
     %>
 
 
-### BindTo(`System.Collections.Generic.IEnumerable<T>`)
+### BindTo(System.Collections.Generic.IEnumerable\<T\>)
 Binds the scheduler to a list of objects
 
 
@@ -926,13 +926,13 @@ The data source.
             ))
 
 
-### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerAjaxDataSourceBuilder<T>>`)
+### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerAjaxDataSourceBuilder\<T\>\>)
 Configures the DataSource options.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerAjaxDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerAjaxDataSourceBuilder)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerAjaxDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerAjaxDataSourceBuilder)<T>>
 The DataSource configurator action.
 
 

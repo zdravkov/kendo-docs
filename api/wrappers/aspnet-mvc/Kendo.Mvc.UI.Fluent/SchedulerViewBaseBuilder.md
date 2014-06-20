@@ -1,7 +1,5 @@
 ---
-title:SchedulerViewBaseBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerviewbasebuilder
-publish:true
+nav_title: SchedulerViewBaseBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewBaseBuilder
@@ -49,7 +47,7 @@ Sets the editing configuration of the current scheduler view.
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerViewEditableSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerViewEditableSettingsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerViewEditableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerViewEditableSettingsBuilder)>
 The lambda which configures the editing
 
 
@@ -194,7 +192,7 @@ Sets the orientation of the group headers
 
 #### Parameters
 
-##### orientation [Kendo.Mvc.UI.SchedulerGroupOrientation](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SchedulerGroupOrientation)
+##### orientation [Kendo.Mvc.UI.SchedulerGroupOrientation](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SchedulerGroupOrientation)
 The orientation
 
 

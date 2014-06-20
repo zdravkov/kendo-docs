@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-tooltip-padding
-slug: jsp-chart-seriesItem-tooltip-padding
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-tooltip-padding
 ---
 
 # \<kendo:chart-seriesItem-tooltip-padding\>

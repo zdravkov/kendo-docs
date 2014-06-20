@@ -1,7 +1,5 @@
 ---
-title:SchedulerViewMonthBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerviewmonthbuilder
-publish:true
+nav_title: SchedulerViewMonthBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewMonthBuilder

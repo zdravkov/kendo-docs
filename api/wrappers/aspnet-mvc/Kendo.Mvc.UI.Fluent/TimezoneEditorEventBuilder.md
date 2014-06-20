@@ -1,7 +1,5 @@
 ---
-title:TimezoneEditorEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.timezoneeditoreventbuilder
-publish:true
+nav_title: TimezoneEditorEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TimezoneEditorEventBuilder
@@ -9,12 +7,14 @@ The fluent API for subscribing to Kendo UI TimezoneEditor events.
 
 
 
+
 ## Methods
 
-### Change(`System.Func<System.Object,System.Object>`)
+
+### Change(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the change event.
 
-For additional information check the [change](/kendo-ui/api/web/timezoneeditor#events-change) event documentation.
+For additional information check the [change](/api/web/timezoneeditor#events-change) event documentation.
 
 
 #### Parameters
@@ -38,10 +38,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### Change(`System.String`)
+### Change(System.String)
 Defines the name of the JavaScript function that will handle the the change event.
 
-For additional information check the [change](/kendo-ui/api/web/timezoneeditor#events-change) event documentation.
+For additional information check the [change](/api/web/timezoneeditor#events-change) event documentation.
 
 
 #### Parameters

@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-notes-icon
-slug: jsp-sparkline-seriesItem-notes-icon
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-notes-icon
 ---
 
 # \<kendo:sparkline-seriesItem-notes-icon\>
@@ -58,7 +55,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-icon-border](/kendo-ui/api/wrappers/jsp/sparkline/seriesitem-notes-icon-border).
+More documentation is available at [kendo:sparkline-seriesItem-notes-icon-border](/api/wrappers/jsp/sparkline/seriesitem-notes-icon-border).
 
 #### Example
 

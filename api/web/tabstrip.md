@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.TabStrip
-meta_title: Configuration, methods and events of Kendo UI TabStrip
-meta_description: Easily disable all animations, set the parameters, used for the visual animation and the effects used in TabStrip UI widget.
-slug: api-web-tabstrip
-relatedDocs: gs-web-tabstrip-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.TabStrip
+title: Configuration, methods and events of Kendo UI TabStrip
+description: Easily disable all animations, set the parameters, used for the visual animation and the effects used in TabStrip UI widget.
 ---
 
 # kendo.ui.TabStrip
 
-Represents the Kendo UI TabStrip. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI TabStrip. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

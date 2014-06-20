@@ -1,11 +1,8 @@
 ---
-title: Using Kendo With Open Access ORM
-meta_title: Examples of using Kendo UI With The Open Access ORM Tool
-meta_description: Learn how to retrieve data from a database with OpenAccess and consume it with Kendo UI.
-slug: gs-using-kendo-with-open-access
-tags: 101, Getting Started, Open Access
+nav_title: Using Kendo With Open Access ORM
+title: Examples of using Kendo UI With The Open Access ORM Tool
+description: Learn how to retrieve data from a database with OpenAccess and consume it with Kendo UI.
 related: gs-what-is-kendo, gs-downloading-kendo
-publish: true
 ---
 
 In this article you will learn how [OpenAccess ORM](http://www.telerik com/products/orm.aspx) can be leveraged on the backend, and [Kendo UI](http://www.telerik.com/kendo-ui) can take care of the UI.

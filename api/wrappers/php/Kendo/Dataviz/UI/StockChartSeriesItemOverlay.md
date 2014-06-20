@@ -1,8 +1,5 @@
 ---
-title: StockChartSeriesItemOverlay
-slug: php-dataviz-ui-stockchartseriesitemoverlay
-tags: api, php
-publish: true
+nav_title: StockChartSeriesItemOverlay
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemOverlay

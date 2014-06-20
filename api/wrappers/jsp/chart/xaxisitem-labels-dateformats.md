@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-labels-dateFormats
-slug: jsp-chart-xAxisItem-labels-dateFormats
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-labels-dateFormats
 ---
 
 # \<kendo:chart-xAxisItem-labels-dateFormats\>

@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.MaskedTextBox
-meta_title: Configuration, methods and events of Kendo UI MaskedTextBox
-meta_description: Code examples and tips how to configure MaskedTextBox widget, use available methods and events.
-slug: api-web-maskedtextbox
-relatedDocs: gs-web-maskedtextbox-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.MaskedTextBox
+title: Configuration, methods and events of Kendo UI MaskedTextBox
+description: Code examples and tips how to configure MaskedTextBox widget, use available methods and events.
 ---
 
 # kendo.ui.MaskedTextBox
 
-Represents the Kendo UI MaskedTextBox widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI MaskedTextBox widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

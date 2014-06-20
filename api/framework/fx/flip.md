@@ -1,7 +1,5 @@
 ---
-title: FX Flip
-slug: api-fx-flip
-publish: true
+nav_title: FX Flip
 ---
 
 # Flip

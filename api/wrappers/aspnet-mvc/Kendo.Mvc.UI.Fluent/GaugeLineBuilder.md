@@ -1,7 +1,5 @@
 ---
-title:GaugeLineBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugelinebuilder
-publish:true
+nav_title: GaugeLineBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLineBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring GaugeLine.
 
 
 
+
 ## Methods
 
-### Visible(`System.Boolean`)
+
+### Visible(System.Boolean)
 Sets the line visibility
 
 

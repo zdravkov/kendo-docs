@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-connectors
-slug: jsp-chart-seriesItem-connectors
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-connectors
 ---
 
 # \<kendo:chart-seriesItem-connectors\>

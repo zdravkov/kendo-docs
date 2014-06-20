@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Overview of TimePicker UI widget
-meta_description: How to create, initialize and use TimePicker UI widget.
-slug: gs-web-timepicker-overview
-relatedDocs: api-web-timepicker
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Overview of TimePicker UI widget
+description: How to create, initialize and use TimePicker UI widget.
 ---
 
 # TimePicker Overview

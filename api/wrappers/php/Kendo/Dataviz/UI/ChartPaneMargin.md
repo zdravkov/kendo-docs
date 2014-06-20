@@ -1,8 +1,5 @@
 ---
-title: ChartPaneMargin
-slug: php-dataviz-ui-chartpanemargin
-tags: api, php
-publish: true
+nav_title: ChartPaneMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartPaneMargin

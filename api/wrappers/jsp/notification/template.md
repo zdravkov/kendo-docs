@@ -1,8 +1,5 @@
 ---
-title: notification-template
-slug: jsp-notification-template
-tags: api, java
-publish: true
+nav_title: notification-template
 ---
 
 # \<kendo:notification-template\>

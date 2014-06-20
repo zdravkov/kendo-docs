@@ -1,17 +1,15 @@
 ---
-title: ObservableObject
-meta_title: ObservableObject in Kendo UI MVVM framework | Kendo UI Documentation
-meta_description: Initialize ObservableObject in Kendo UI MVVM framework, get a field value, set a field value to change tracking and notify any subscribers when a change occurs.
-slug: mvvm-observableObject
-ordinal: 2
-publish: true
+nav_title: ObservableObject
+title: ObservableObject in Kendo UI MVVM framework | Kendo UI Documentation
+description: Initialize ObservableObject in Kendo UI MVVM framework, get a field value, set a field value to change tracking and notify any subscribers when a change occurs.
+nav_position: 2
 ---
 
 # ObservableObject
 
 ## Overview
 
-The [kendo.data.ObservableObject](/kendo-ui/api/framework/observableobject) is an important part of the Kendo MVVM framework - the View-Model.
+The [kendo.data.ObservableObject](/api/framework/observableobject) is an important part of the Kendo MVVM framework - the View-Model.
 It supports change tracking and notifies any subscribers when a change occurs.
 All View-Model objects inherit from `kendo.data.ObservableObject`. From now on ObservableObject and View-Model would be used interchangeably.
 

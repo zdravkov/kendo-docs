@@ -1,22 +1,20 @@
 ---
-title: Overview
-meta_title: How to use the Kendo UI MobileSplitView HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile SplitView widget
-meta_description: Learn how to initialize Kendo UI MobileSplitView for ASP.NET MVC, handle Kendo UI MobileSplitView Events, access an existing splitview with MobileSplitView HtmlHelper extension documentation.
-slug: mvc-mobilesplitview-overview
-publish: true
+nav_title: Overview
+title: How to use the Kendo UI MobileSplitView HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile SplitView widget
+description: Learn how to initialize Kendo UI MobileSplitView for ASP.NET MVC, handle Kendo UI MobileSplitView Events, access an existing splitview with MobileSplitView HtmlHelper extension documentation.
 ---
 
 # MobileSplitView
 
-The MobileSplitView HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile SplitView](/kendo-ui/api/mobile/splitview) widget. It allows you to configure the Kendo UI Mobile SplitView
+The MobileSplitView HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile SplitView](/api/mobile/splitview) widget. It allows you to configure the Kendo UI Mobile SplitView
 from server-side code.
 
 ## Getting started
 
 The following tutorial shows how to configure Kendo UI MobileSplitView for ASP.NET MVC.
 
-1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-If you decide not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions, follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+If you decide not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions, follow the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Open "HomeController.cs" and modify the `Index` action method:
 
@@ -105,7 +103,7 @@ to add Telerik UI for ASP.NET MVC to the application.
 ## Getting reference to the Kendo UI MobileSplitView widget
 
 To get a reference to a splitview instance use the [jQuery.data()](http://api.jquery.com/jQuery.data/) method and the value specified via the `Name()` method.
-Then you can use you can use the JavaScript [API](/kendo-ui/api/mobile/splitview#methods) of the splitview.
+Then you can use you can use the JavaScript [API](/api/mobile/splitview#methods) of the splitview.
 
 ### Example - get reference to a Kendo UI MobileSplitView instance
 
@@ -133,7 +131,7 @@ Then you can use you can use the JavaScript [API](/kendo-ui/api/mobile/splitview
 
 ## Handling Kendo UI MobileSplitView events
 
-You can subscribe to all [events](/kendo-ui/api/mobile/splitview#events) exposed by the widget:
+You can subscribe to all [events](/api/mobile/splitview#events) exposed by the widget:
 
 ### Example - subscribe to event by handler name (ASPX)
 

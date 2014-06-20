@@ -1,8 +1,5 @@
 ---
-title: MenuAnimationOpen
-slug: php-ui-menuanimationopen
-tags: api, php
-publish: true
+nav_title: MenuAnimationOpen
 ---
 
 # \Kendo\UI\MenuAnimationOpen

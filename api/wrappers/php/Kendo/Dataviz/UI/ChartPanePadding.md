@@ -1,8 +1,5 @@
 ---
-title: ChartPanePadding
-slug: php-dataviz-ui-chartpanepadding
-tags: api, php
-publish: true
+nav_title: ChartPanePadding
 ---
 
 # \Kendo\Dataviz\UI\ChartPanePadding

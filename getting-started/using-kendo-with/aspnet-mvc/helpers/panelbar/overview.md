@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: PanelBar HtmlHelper extension, server-side wrapper for Kendo UI PanelBar widget | Kendo UI Documentation
-meta_description: How to define items of the Kendo UI PanelBar for ASP.NET MVC in PanelBar HtmlHelper extension, handle Kendo UI PanelBar events.
-slug: mvc-panelbar-overview
-publish: true
+nav_title: Overview
+title: PanelBar HtmlHelper extension, server-side wrapper for Kendo UI PanelBar widget | Kendo UI Documentation
+description: How to define items of the Kendo UI PanelBar for ASP.NET MVC in PanelBar HtmlHelper extension, handle Kendo UI PanelBar events.
 ---
 
 # PanelBar
 
-The PanelBar HtmlHelper extension is a server-side wrapper for the [Kendo UI PanelBar](/kendo-ui/api/web/panelbar) widget.
+The PanelBar HtmlHelper extension is a server-side wrapper for the [Kendo UI PanelBar](/api/web/panelbar) widget.
 
 ## Getting Started
 
@@ -20,7 +18,7 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
 
 ### Define items of the Kendo PanelBar
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -52,7 +50,7 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
 
 ### Bind Kendo PanelBar to a sitemap
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a simple sitemap with **sample.sitemap** file name at the root of the project:
 
@@ -95,7 +93,7 @@ There are several ways to define items of the Kendo PanelBar for ASP.NET MVC
 
 ### Bind Kendo PanelBar to a hierarchical model
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method and pass the Categories table as the model. Note that the Categories should have association to the Products table:
 
@@ -167,7 +165,7 @@ for more information about ASP.NET MVC Authorization. The Menu will hide the men
 ## Accessing an Existing PanelBar
 
 You can reference an existing PanelBar instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/panelbar#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/panelbar#methods) to control its behavior.
 
 ### Accessing an existing PanelBar instance
 
@@ -182,7 +180,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/p
 
 ## Handling Kendo UI PanelBar events
 
-You can subscribe to all [events](/kendo-ui/api/web/panelbar#events) exposed by Kendo UI PanelBar:
+You can subscribe to all [events](/api/web/panelbar#events) exposed by Kendo UI PanelBar:
 
 ### WebForms - subscribe by handler name
 

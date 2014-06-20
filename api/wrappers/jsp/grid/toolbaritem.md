@@ -1,8 +1,5 @@
 ---
-title: grid-toolbarItem
-slug: jsp-grid-toolbarItem
-tags: api, java
-publish: true
+nav_title: grid-toolbarItem
 ---
 
 # \<kendo:grid-toolbarItem\>

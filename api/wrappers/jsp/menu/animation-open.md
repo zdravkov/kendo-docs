@@ -1,8 +1,5 @@
 ---
-title: menu-animation-open
-slug: jsp-menu-animation-open
-tags: api, java
-publish: true
+nav_title: menu-animation-open
 ---
 
 # \<kendo:menu-animation-open\>

@@ -1,7 +1,5 @@
 ---
-title:CustomDataSourceTransportBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.customdatasourcetransportbuilderbase
-publish:true
+nav_title: CustomDataSourceTransportBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceTransportBuilderBase
@@ -9,16 +7,18 @@ Defines the fluent interface for configuring the Transport options.
 
 
 
+
 ## Methods
 
-### ParameterMap(`System.Func<System.Object,System.Object>`)
+
+### ParameterMap(System.Func\<System.Object,System.Object\>)
 Sets the parameterMap function.
 
 
 
 
 
-### ParameterMap(`System.String`)
+### ParameterMap(System.String)
 Sets the parameterMap function.
 
 
@@ -31,14 +31,14 @@ JavaScript function name
 
 
 
-### Read(`System.Action<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder>`)
+### Read(System.Action\<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder\>)
 Configures the URL for Read operation.
 
 
 
 
 
-### Read(`System.String,System.String,System.Object`)
+### Read(System.String,System.String,System.Object)
 Sets controller and action for Read operation.
 
 
@@ -57,7 +57,7 @@ Route values
 
 
 
-### Read(`System.String,System.String`)
+### Read(System.String,System.String)
 Sets controller, action and routeValues for Read operation.
 
 
@@ -73,14 +73,14 @@ Controller Name
 
 
 
-### Read(`System.Object`)
+### Read(System.Object)
 Sets the Read operation using anonymous object.
 
 
 
 
 
-### Read(`System.String`)
+### Read(System.String)
 Sets JavaScript function which to return additional parameters which to be sent the server.
 
 

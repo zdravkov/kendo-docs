@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-markers-border
-slug: jsp-sparkline-seriesItem-markers-border
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-markers-border
 ---
 
 # \<kendo:sparkline-seriesItem-markers-border\>

@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-notes-dataItem-icon
-slug: jsp-stockChart-categoryAxisItem-notes-dataItem-icon
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-notes-dataItem-icon
 ---
 
 # \<kendo:stockChart-categoryAxisItem-notes-dataItem-icon\>
@@ -59,7 +56,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:stockChart-categoryAxisItem-notes-dataItem-icon-border](/kendo-ui/api/wrappers/jsp/stockchart/categoryaxisitem-notes-dataitem-icon-border).
+More documentation is available at [kendo:stockChart-categoryAxisItem-notes-dataItem-icon-border](/api/wrappers/jsp/stockchart/categoryaxisitem-notes-dataitem-icon-border).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: dataSource-filter
-slug: jsp-dataSource-filter
-tags: api, java
-publish: true
+nav_title: dataSource-filter
 ---
 
 # \<kendo:dataSource-filter\>
@@ -23,7 +20,7 @@ The filter(s) which is (are) applied over the data items. By default no filter i
 
 The filter(s) which is (are) applied over the data items. By default no filter is applied.
 
-More documentation is available at [kendo:dataSource-filterItem](/kendo-ui/api/wrappers/jsp/datasource/filteritem).
+More documentation is available at [kendo:dataSource-filterItem](/api/wrappers/jsp/datasource/filteritem).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: notification-templates
-slug: jsp-notification-templates
-tags: api, java
-publish: true
+nav_title: notification-templates
 ---
 
 # \<kendo:notification-templates\>
@@ -23,7 +20,7 @@ Describes the HTML markup of the different notification types as Kendo UI templa
 
 Describes the HTML markup of the different notification types as Kendo UI template strings. The built-in types are "info", "success", "warning" and "error".This documentation section assumes that you are familiar with Kendo UI templates.
 
-More documentation is available at [kendo:notification-template](/kendo-ui/api/wrappers/jsp/notification/template).
+More documentation is available at [kendo:notification-template](/api/wrappers/jsp/notification/template).
 
 #### Example
 

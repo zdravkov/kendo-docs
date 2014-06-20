@@ -1,8 +1,5 @@
 ---
-title: UploadAsync
-slug: php-ui-uploadasync
-tags: api, php
-publish: true
+nav_title: UploadAsync
 ---
 
 # \Kendo\UI\UploadAsync

@@ -1,8 +1,5 @@
 ---
-title: grid-columnMenu-messages
-slug: jsp-grid-columnMenu-messages
-tags: api, java
-publish: true
+nav_title: grid-columnMenu-messages
 ---
 
 # \<kendo:grid-columnMenu-messages\>

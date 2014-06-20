@@ -1,7 +1,5 @@
 ---
-title:MobileSwitchEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobileswitcheventbuilder
-publish:true
+nav_title: MobileSwitchEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileSwitchEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent API for configuring the Kendo MobileSwitch for ASP.NET MVC ev
 
 
 
+
 ## Methods
 
-### Change(`System.String`)
+
+### Change(System.String)
 Fires when the state of the widget changes
 
-For additional information check the [change](/kendo-ui/api/web/mobileswitch#events-change) event documentation.
+For additional information check the [change](/api/web/mobileswitch#events-change) event documentation.
 
 
 #### Parameters

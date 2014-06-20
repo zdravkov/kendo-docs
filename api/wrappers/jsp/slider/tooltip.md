@@ -1,8 +1,5 @@
 ---
-title: slider-tooltip
-slug: jsp-slider-tooltip
-tags: api, java
-publish: true
+nav_title: slider-tooltip
 ---
 
 # \<kendo:slider-tooltip\>

@@ -1,0 +1,93 @@
+safe: false
+url: "http://docs.telerik.com/kendo-ui"
+exclude: [readme.md, Gemfile, Gemfile.lock,api_sort.rb]
+mapping:
+    using-kendo-with: "Using Kendo With"
+    aspnet-mvc: "ASP.NET MVC"
+    php: "PHP"
+    jsp: "JSP"
+    barcode: "Barcode"
+    chart: "Chart"
+    diagram: "Diagram"
+    lineargauge: "LinearGauge"
+    map: "Map"
+    qrcode: "QRCode"
+    radialgauge: "RadialGauge"
+    sparkline: "Sparkline"
+    stockchart: "StockChart"
+    datasource: "DataSource"
+    draganddrop: "Drag and Drop"
+    fx: "FX"
+    globalization: "Globalization"
+    hierarchicaldatasource: "HierarchicalDataSource"
+    mvvm: "MVVM"
+    spa: "SPA"
+    templates: "Templates"
+    validator: "Validator"
+    autocomplete: "AutoComplete"
+    button: "Button"
+    calendar: "Calendar"
+    colorpicker: "ColorPicker"
+    combobox: "ComboBox"
+    datepicker: "DatePicker"
+    datetimepicker: "DateTimePicker"
+    dropdownlist: "DropDownList"
+    editor: "Editor"
+    grid: "Grid"
+    listview: "ListView"
+    maskedtextbox: "MaskedTextBox"
+    menu: "Menu"
+    multiselect: "MultiSelect"
+    notification: "Notification"
+    numerictextbox: "NumericTextBox"
+    panelbar: "PanelBar"
+    progressbar: "ProgressBar"
+    rangeslider: "RangeSlider"
+    scheduler: "Scheduler"
+    slider: "Slider"
+    sortable: "Sortable"
+    splitter: "Splitter"
+    tabstrip: "TabStrip"
+    timepicker: "TimePicker"
+    tooltip: "Tooltip"
+    treeview: "TreeView"
+    upload: "Upload"
+    window: "Window"
+    hello-kendo-ui: "Hello Kendo UI"
+    kendo-music-store: "Kendo UI Music Store"
+    music-store-dashboard: "Music Store Dashboard"
+    music-store-web: "Musict Store Web"
+    saleshub: "Sales Hub"
+    home-page: "Home Page"
+    order-page: "Order Page"
+markdown: MarkdownProcessor
+kramdown:
+    toc_levels: 2..3
+    smart_quotes: ["quot", "quot", "quot", "quot"]
+    input: GFM
+baseurl: /kendo-ui
+defaults:
+-
+    scope:
+        path: "getting-started"
+    values:
+        layout: "page"
+        category: "getting-started"
+-
+    scope:
+        path: "api"
+    values:
+        layout: "page"
+        category: "api"
+-
+    scope:
+        path: "howto"
+    values:
+        layout: "page"
+        category: "howto"
+-
+    scope:
+        path: "tutorials"
+    values:
+        layout: "page"
+        category: "tutorials"

@@ -1,10 +1,6 @@
 ---
-title: kendo.ui.FlatColorPicker
-meta_title: Configuration, methods and events of Kendo UI FlatColorPicker
-slug: api-web-flatcolorpicker
-relatedDocs: gs-web-flatcolorpicker-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.FlatColorPicker
+title: Configuration, methods and events of Kendo UI FlatColorPicker
 ---
 
 # kendo.ui.FlatColorPicker
@@ -149,7 +145,7 @@ This does not trigger the "change" event.
 
 ### color
 
-Get or set the selected color. If no argument is given, this returns the currently selected color as a [`kendo.Color` object](/kendo-ui/api/framework/color).
+Get or set the selected color. If no argument is given, this returns the currently selected color as a [`kendo.Color` object](/api/framework/color).
 
 #### Parameters
 

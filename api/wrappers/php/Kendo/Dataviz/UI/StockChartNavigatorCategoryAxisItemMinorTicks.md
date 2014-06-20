@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemMinorTicks
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemminorticks
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMinorTicks

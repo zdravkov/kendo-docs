@@ -1,7 +1,5 @@
 ---
-title:WindowBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.windowbuilder
-publish:true
+nav_title: WindowBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Window component.
 
 
 
+
 ## Methods
 
-### Title(`System.Boolean`)
+
+### Title(System.Boolean)
 Allows title to be shown / hidden
 
 
@@ -24,14 +24,14 @@ Whether the window title will be visible
 
 
 
-### Title(`System.String`)
+### Title(System.String)
 Sets title, which appears in the header of the window.
 
 
 
 
 
-### AppendTo(`System.String`)
+### AppendTo(System.String)
 Defines a selector for the element to which the Window will be appended. By default this is the page body.
 
 
@@ -44,7 +44,7 @@ A selector of the Window container
 
 
 
-### Content(`System.Action`)
+### Content(System.Action)
 Sets the HTML content which the window should display.
 
 
@@ -68,7 +68,7 @@ The action which renders the content.
     %>
 
 
-### Content(`System.Func<System.Object,System.Object>`)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the window should display
 
 
@@ -89,7 +89,7 @@ The Razor inline template
         .Content(@<strong> Hello World!</strong>))
 
 
-### Content(`System.String`)
+### Content(System.String)
 Sets the HTML content which the item should display as a string.
 
 
@@ -102,7 +102,7 @@ The action which renders the content.
 
 
 
-### LoadContentFrom(`System.Web.Routing.RouteValueDictionary`)
+### LoadContentFrom(System.Web.Routing.RouteValueDictionary)
 Sets the Url, which will be requested to return the content.
 
 
@@ -121,7 +121,7 @@ The route values of the Action method.
     %>
 
 
-### LoadContentFrom(`System.String,System.String`)
+### LoadContentFrom(System.String,System.String)
 Sets the Url, which will be requested to return the content.
 
 
@@ -143,7 +143,7 @@ The controller name.
     %>
 
 
-### LoadContentFrom(`System.String,System.String,System.Object`)
+### LoadContentFrom(System.String,System.String,System.Object)
 Sets the Url, which will be requested to return the content.
 
 
@@ -168,7 +168,7 @@ Route values.
     %>
 
 
-### LoadContentFrom(`System.String`)
+### LoadContentFrom(System.String)
 Sets the Url, which will be requested to return the content.
 
 
@@ -187,13 +187,13 @@ The url.
     %>
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.WindowEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.WindowEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowEventBuilder)>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowEventBuilder)>
 The client events action.
 
 
@@ -221,13 +221,13 @@ Enables windows resizing.
     %>
 
 
-### Resizable(`System.Action<Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder>`)
+### Resizable(System.Action\<Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder\>)
 Configures the resizing ability of the window.
 
 
 #### Parameters
 
-##### resizingSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowResizingSettingsBuilder)>
+##### resizingSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowResizingSettingsBuilder)>
 Resizing settings action.
 
 
@@ -242,13 +242,13 @@ Resizing settings action.
     %>
 
 
-### Actions(`System.Action<Kendo.Mvc.UI.Fluent.WindowActionsBuilder>`)
+### Actions(System.Action\<Kendo.Mvc.UI.Fluent.WindowActionsBuilder\>)
 Configures the window buttons.
 
 
 #### Parameters
 
-##### actionsBuilderAction System.Action<[Kendo.Mvc.UI.Fluent.WindowActionsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowActionsBuilder)>
+##### actionsBuilderAction System.Action<[Kendo.Mvc.UI.Fluent.WindowActionsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowActionsBuilder)>
 The buttons configuration action.
 
 
@@ -263,27 +263,27 @@ The buttons configuration action.
     %>
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 Sets the width of the window.
 
 
 
 
 
-### Height(`System.Int32`)
+### Height(System.Int32)
 Sets the height of the window.
 
 
 
 
 
-### Position(`System.Action<Kendo.Mvc.UI.Fluent.WindowPositionSettingsBuilder>`)
+### Position(System.Action\<Kendo.Mvc.UI.Fluent.WindowPositionSettingsBuilder\>)
 Configures the position of the window.
 
 
 #### Parameters
 
-##### positionSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowPositionSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowPositionSettingsBuilder)>
+##### positionSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.WindowPositionSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/WindowPositionSettingsBuilder)>
 Position settings action.
 
 
@@ -298,21 +298,21 @@ Position settings action.
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets whether the window should be rendered visible.
 
 
 
 
 
-### Scrollable(`System.Boolean`)
+### Scrollable(System.Boolean)
 Sets whether the window should have scrollbars.
 
 
 
 
 
-### Animation(`System.Boolean`)
+### Animation(System.Boolean)
 Configures the animation effects of the window.
 
 
@@ -330,13 +330,13 @@ Whether the component animation is enabled.
     .Animation(false)
 
 
-### Animation(`System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`)
+### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
 Configures the animation effects of the panelbar.
 
 
 #### Parameters
 
-##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder)>
+##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder)>
 The action that configures the animation.
 
 
@@ -348,7 +348,7 @@ The action that configures the animation.
     .Animation(animation => animation.Expand)
 
 
-### Modal(`System.Boolean`)
+### Modal(System.Boolean)
 Sets whether the window should be modal or not.
 
 
@@ -362,7 +362,7 @@ Sets whether the window can be moved.
 
 
 
-### Draggable(`System.Boolean`)
+### Draggable(System.Boolean)
 Sets whether the window can be moved.
 
 
@@ -376,21 +376,21 @@ Sets whether the window is pinned.
 
 
 
-### AutoFocus(`System.Boolean`)
+### AutoFocus(System.Boolean)
 Sets whether the window automatically gains focus when opened.
 
 
 
 
 
-### Pinned(`System.Boolean`)
+### Pinned(System.Boolean)
 Sets whether the window is pinned.
 
 
 
 
 
-### Iframe(`System.Boolean`)
+### Iframe(System.Boolean)
 Explicitly specifies whether the loaded window content will be rendered as an iframe or in-line
 
 

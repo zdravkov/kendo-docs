@@ -1,7 +1,5 @@
 ---
-title:DataSourceFilterDescriptorFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcefilterdescriptorfactory
-publish:true
+nav_title: DataSourceFilterDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceFilterDescriptorFactory
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring filter.
 
 
 
+
 ## Methods
 
-### Add(`System.Linq.Expressions.Expression<System.Func<T,System.Boolean>>`)
+
+### Add(System.Linq.Expressions.Expression\<System.Func\<T,System.Boolean\>\>)
 Specifies the member on which the filter should be applied.
 
 
@@ -24,7 +24,7 @@ Member access expression which describes the member
 
 
 
-### Add(`System.Linq.Expressions.Expression<System.Func<T,System.Nullable<System.Boolean>>>`)
+### Add(System.Linq.Expressions.Expression\<System.Func\<T,System.Nullable\<System.Boolean\>\>\>)
 Specifies the member on which the filter should be applied.
 
 
@@ -37,7 +37,7 @@ Member access expression which describes the member
 
 
 
-### Add(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+### Add(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Specifies the member on which the filter should be applied.
 
 
@@ -50,7 +50,7 @@ Member access expression which describes the member
 
 
 
-### Add(`System.Linq.Expressions.Expression<System.Func<T,System.String>>`)
+### Add(System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
 Specifies the member on which the filter should be applied.
 
 

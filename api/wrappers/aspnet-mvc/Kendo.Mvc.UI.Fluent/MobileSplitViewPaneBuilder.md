@@ -1,7 +1,5 @@
 ---
-title:MobileSplitViewPaneBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilesplitviewpanebuilder
-publish:true
+nav_title: MobileSplitViewPaneBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileSplitViewPaneBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobileSplitViewPane settings.
 
 
 
+
 ## Methods
 
-### Id(`System.String`)
+
+### Id(System.String)
 The id of tha pane.
 
 
@@ -24,7 +24,7 @@ The value that configures the id.
 
 
 
-### Initial(`System.String`)
+### Initial(System.String)
 The value that configures the initial.
 
 
@@ -37,7 +37,7 @@ The value that configures the initial.
 
 
 
-### Layout(`System.String`)
+### Layout(System.String)
 The value that configures the layout.
 
 
@@ -50,7 +50,7 @@ The value that configures the layout.
 
 
 
-### Loading(`System.String`)
+### Loading(System.String)
 The text displayed in the loading popup. Setting this value to false will disable the loading popup.
 
 
@@ -63,7 +63,7 @@ The value that configures the loading.
 
 
 
-### Transition(`System.String`)
+### Transition(System.String)
 The default View transition.
 
 
@@ -76,7 +76,7 @@ The value that configures the transition.
 
 
 
-### Collapsible(`System.Boolean`)
+### Collapsible(System.Boolean)
 Defines whether the pane is collapsible. Collapsible panes are automatically hidden when the device is in portrait orientation.
 
 
@@ -89,7 +89,7 @@ The value that configures the collapsible.
 
 
 
-### PortraitWidth(`System.String`)
+### PortraitWidth(System.String)
 Defines the width of the pane in portrait orientation.
 
 
@@ -102,7 +102,7 @@ The value that configures the portraitwidth.
 
 
 
-### PortraitWidth(`System.Int32`)
+### PortraitWidth(System.Int32)
 Defines the width of the pane in portrait orientation (in pixels).
 
 
@@ -115,7 +115,7 @@ The value that configures the portraitwidth.
 
 
 
-### Content(`System.Action`)
+### Content(System.Action)
 Sets the HTML content which the pane should display.
 
 
@@ -128,7 +128,7 @@ The action which renders the content.
 
 
 
-### Content(`System.Func<System.Object,System.Object>`)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the pane should display.
 
 
@@ -141,7 +141,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Content(`System.String`)
+### Content(System.String)
 Sets the HTML content which the pane should display as a string.
 
 
@@ -154,7 +154,7 @@ The action which renders the view content.
 
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
 
@@ -170,7 +170,7 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes.
 
 
@@ -186,13 +186,13 @@ The HTML attributes.
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileSplitViewPaneEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileSplitViewPaneEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileSplitViewPaneEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileSplitViewPaneEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileSplitViewPaneEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileSplitViewPaneEventBuilder)>
 The client events action.
 
 

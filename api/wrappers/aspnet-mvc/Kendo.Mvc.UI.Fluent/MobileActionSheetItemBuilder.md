@@ -1,7 +1,5 @@
 ---
-title:MobileActionSheetItemBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobileactionsheetitembuilder
-publish:true
+nav_title: MobileActionSheetItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileActionSheetItemBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobileActionSheetItem settings.
 
 
 
+
 ## Methods
 
-### Action(`System.String`)
+
+### Action(System.String)
 Specifies the name of the handler that will be executed when the item is clicked
 
 
@@ -24,7 +24,7 @@ The value that configures the action.
 
 
 
-### Text(`System.String`)
+### Text(System.String)
 Specifies the text of the item
 
 
@@ -37,7 +37,7 @@ The value that configures the text.
 
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
 
@@ -53,7 +53,7 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes.
 
 

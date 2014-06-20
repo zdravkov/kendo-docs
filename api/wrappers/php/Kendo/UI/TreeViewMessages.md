@@ -1,8 +1,5 @@
 ---
-title: TreeViewMessages
-slug: php-ui-treeviewmessages
-tags: api, php
-publish: true
+nav_title: TreeViewMessages
 ---
 
 # \Kendo\UI\TreeViewMessages

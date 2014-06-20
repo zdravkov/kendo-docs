@@ -1,8 +1,5 @@
 ---
-title: chart-plotArea-margin
-slug: jsp-chart-plotArea-margin
-tags: api, java
-publish: true
+nav_title: chart-plotArea-margin
 ---
 
 # \<kendo:chart-plotArea-margin\>

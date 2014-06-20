@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesDefaultsTooltipBorder
-slug: php-dataviz-ui-sparklineseriesdefaultstooltipborder
-tags: api, php
-publish: true
+nav_title: SparklineSeriesDefaultsTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltipBorder

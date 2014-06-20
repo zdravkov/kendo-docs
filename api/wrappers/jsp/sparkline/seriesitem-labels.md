@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-labels
-slug: jsp-sparkline-seriesItem-labels
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-labels
 ---
 
 # \<kendo:sparkline-seriesItem-labels\>
@@ -111,7 +108,7 @@ The visibility of the labels.
 
 The border of the labels.
 
-More documentation is available at [kendo:sparkline-seriesItem-labels-border](/kendo-ui/api/wrappers/jsp/sparkline/seriesitem-labels-border).
+More documentation is available at [kendo:sparkline-seriesItem-labels-border](/api/wrappers/jsp/sparkline/seriesitem-labels-border).
 
 #### Example
 

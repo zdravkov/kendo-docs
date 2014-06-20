@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-series
-slug: jsp-stockChart-navigator-series
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-series
 ---
 
 # \<kendo:stockChart-navigator-series\>
@@ -23,7 +20,7 @@ Array of series definitions.Accepts the same options as the root series collecti
 
 Array of series definitions.Accepts the same options as the root series collection.Omitting the array and specifying a single series is also acceptable.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem](/kendo-ui/api/wrappers/jsp/stockchart/navigator-seriesitem).
+More documentation is available at [kendo:stockChart-navigator-seriesItem](/api/wrappers/jsp/stockchart/navigator-seriesitem).
 
 #### Example
 

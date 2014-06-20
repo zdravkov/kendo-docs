@@ -1,10 +1,7 @@
 ---
-title: VS Intellisense
-meta_title: Kendo UI Visual Studio Intellisense Documentation
-meta_description: Learn how to reference Kendo UI Visual Studio Intellisense by using an additional vsdoc Javascript file.
-slug: howto-using-vs-intellisense
-tags: How-To, Visual Studio, Intellisense
-publish: true
+nav_title: VS Intellisense
+title: Kendo UI Visual Studio Intellisense Documentation
+description: Learn how to reference Kendo UI Visual Studio Intellisense by using an additional vsdoc Javascript file.
 ---
 
 # KendoUI Visual Studio Intellisense
@@ -43,7 +40,7 @@ Each bundle package contains a *vsdoc* directory, which contains a vsdoc.js and 
 There are two ways to reference the intellisense.
 
 1. When the script is directly added to a page as shown above.
-The `kendo.all-vsdoc.js` and `kendo.all.min.intellisense.js` files are also available on the [Kendo UI CDN](/kendo-ui/getting-started/javascript-dependencies#cdn), in the same folder as the regular JS files.
+The `kendo.all-vsdoc.js` and `kendo.all.min.intellisense.js` files are also available on the [Kendo UI CDN](/getting-started/javascript-dependencies#cdn), in the same folder as the regular JS files.
 1. Using a reference hint from within an external JS file as shown below
 
 ![script reference](/howto/vsdoc/js-reference.png)

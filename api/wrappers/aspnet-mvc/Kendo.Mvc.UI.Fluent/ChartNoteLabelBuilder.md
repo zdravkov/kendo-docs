@@ -1,7 +1,5 @@
 ---
-title:ChartNoteLabelBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartnotelabelbuilder
-publish:true
+nav_title: ChartNoteLabelBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNoteLabelBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring the chart note label.
 
 
 
+
 ## Methods
 
-### Position(`Kendo.Mvc.UI.ChartNoteLabelPosition`)
+
+### Position(Kendo.Mvc.UI.ChartNoteLabelPosition)
 Sets the labels position
 
 
 #### Parameters
 
-##### position [Kendo.Mvc.UI.ChartNoteLabelPosition](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartNoteLabelPosition)
+##### position [Kendo.Mvc.UI.ChartNoteLabelPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartNoteLabelPosition)
 The labels position.
 
 
@@ -37,7 +37,7 @@ The labels position.
     %>
 
 
-### Text(`System.String`)
+### Text(System.String)
 Sets the labels position
 
 

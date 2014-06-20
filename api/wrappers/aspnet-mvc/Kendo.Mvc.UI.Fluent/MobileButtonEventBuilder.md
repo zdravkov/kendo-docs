@@ -1,7 +1,5 @@
 ---
-title:MobileButtonEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilebuttoneventbuilder
-publish:true
+nav_title: MobileButtonEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileButtonEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent API for configuring the Kendo MobileButton for ASP.NET MVC ev
 
 
 
+
 ## Methods
 
-### Click(`System.String`)
+
+### Click(System.String)
 Fires when the user taps the button.
 
-For additional information check the [click](/kendo-ui/api/web/mobilebutton#events-click) event documentation.
+For additional information check the [click](/api/web/mobilebutton#events-click) event documentation.
 
 
 #### Parameters

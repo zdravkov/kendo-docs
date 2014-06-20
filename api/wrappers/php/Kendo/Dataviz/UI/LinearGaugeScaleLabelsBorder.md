@@ -1,8 +1,5 @@
 ---
-title: LinearGaugeScaleLabelsBorder
-slug: php-dataviz-ui-lineargaugescalelabelsborder
-tags: api, php
-publish: true
+nav_title: LinearGaugeScaleLabelsBorder
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeScaleLabelsBorder

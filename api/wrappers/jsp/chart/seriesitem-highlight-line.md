@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-highlight-line
-slug: jsp-chart-seriesItem-highlight-line
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-highlight-line
 ---
 
 # \<kendo:chart-seriesItem-highlight-line\>

@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemMajorGridLines
-slug: php-dataviz-ui-chartvalueaxisitemmajorgridlines
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemMajorGridLines

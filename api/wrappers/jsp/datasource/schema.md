@@ -1,8 +1,5 @@
 ---
-title: dataSource-schema
-slug: jsp-dataSource-schema
-tags: api, java
-publish: true
+nav_title: dataSource-schema
 ---
 
 # \<kendo:dataSource-schema\>

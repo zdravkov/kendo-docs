@@ -1,8 +1,5 @@
 ---
-title: ChartXAxisItemMinorGridLines
-slug: php-dataviz-ui-chartxaxisitemminorgridlines
-tags: api, php
-publish: true
+nav_title: ChartXAxisItemMinorGridLines
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemMinorGridLines

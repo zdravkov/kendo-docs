@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesDefaultsNotesLabelBorder
-slug: php-dataviz-ui-chartseriesdefaultsnoteslabelborder
-tags: api, php
-publish: true
+nav_title: ChartSeriesDefaultsNotesLabelBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsNotesLabelBorder

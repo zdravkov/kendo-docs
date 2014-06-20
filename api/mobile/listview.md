@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.ListView
-meta_title: Configuration, methods and events of Kendo UI Mobile ListView
-meta_description: How to display flat or grouped list of items with Kendo UI Mobile ListView widget and use events to handle button clicks and access dataItem.
-slug: api-mobile-listview
-relatedDocs: gs-mobile-listview
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.ListView
+title: Configuration, methods and events of Kendo UI Mobile ListView
+description: How to display flat or grouped list of items with Kendo UI Mobile ListView widget and use events to handle button clicks and access dataItem.
 ---
 
 # kendo.mobile.ui.ListView
 
-Represents the Kendo UI Mobile ListView widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile ListView widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 
@@ -601,7 +597,7 @@ Specifies whether the filter expression must be case sensitive or not.
 
 ### filterable.operator `String`*(default: "startsWith")*
 
-Specifies the comparison operator used in the filter expression. The operator must be one of the available DataSource filter [operators](/kendo-ui/api/framework/datasource#configuration-filter.operator).
+Specifies the comparison operator used in the filter expression. The operator must be one of the available DataSource filter [operators](/api/framework/datasource#configuration-filter.operator).
 
 #### Example - enabled filtering with comparison operator defined
 

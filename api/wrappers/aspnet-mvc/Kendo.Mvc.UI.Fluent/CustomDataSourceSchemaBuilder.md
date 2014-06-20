@@ -1,7 +1,5 @@
 ---
-title:CustomDataSourceSchemaBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.customdatasourceschemabuilder
-publish:true
+nav_title: CustomDataSourceSchemaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceSchemaBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Schema options.
 
 
 
+
 ## Methods
 
-### Model(`System.Action<Kendo.Mvc.UI.Fluent.CustomDataSourceModelDescriptorFactory<T>>`)
+
+### Model(System.Action\<Kendo.Mvc.UI.Fluent.CustomDataSourceModelDescriptorFactory\<T\>\>)
 Configures Model properties
 
 

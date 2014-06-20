@@ -1,11 +1,8 @@
 ---
-title: Overview
-meta_title: Documentation for Chart widget in Kendo UI DataViz
-meta_description: How to create a chart, enable the visualization of a series that displays inline data, explore the quick overview of Chart widget major features.
-slug: gs-dataviz-chart-overview
-relatedDocs: api-dataviz-chart
-ordinal: 1
-publish: true
+nav_title: Overview
+title: Documentation for Chart widget in Kendo UI DataViz
+description: How to create a chart, enable the visualization of a series that displays inline data, explore the quick overview of Chart widget major features.
+nav_position: 1
 ---
 
 # Chart Overview
@@ -106,7 +103,7 @@ This will render a column chart by default.
 ![Column Chart without categories](/getting-started/dataviz/chart/chart-column-no-categories.png)</img>
 
 You will notice that the columns have no label across the category axis.
-You specify the labeling for the series in the [`categoryAxis` property](/kendo-ui/api/dataviz/chart#categoryAxis).
+You specify the labeling for the series in the [`categoryAxis` property](/api/dataviz/chart#categoryAxis).
 
 #### Example
 
@@ -171,7 +168,7 @@ The category name can also be bound to a field of the data item:
 
 The Chart currently supports only Numeric value axes.
 
-Configuration options are accessible through the [`valueAxis` object](/kendo-ui/api/dataviz/chart#valueaxis-object):
+Configuration options are accessible through the [`valueAxis` object](/api/dataviz/chart#valueaxis-object):
 
     $("#chart").kendoChart({
         series: [{
@@ -396,7 +393,7 @@ For example:
 
 ## Global settings
 
-Sometimes you need to apply settings to all axes. In this case it is convenient to use the [`axisDefaults` object](/kendo-ui/api/dataviz/chart#axisdefaults-object):
+Sometimes you need to apply settings to all axes. In this case it is convenient to use the [`axisDefaults` object](/api/dataviz/chart#axisdefaults-object):
 
     $("#chart").kendoChart({
         series: [{

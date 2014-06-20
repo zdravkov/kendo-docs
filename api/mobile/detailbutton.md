@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.DetailButton
-meta_title: Configuration, methods and events of Kendo UI Mobile DetailButton
-meta_description: Documentation on how to initialize Kendo UI mobile DetailButton.
-slug: api-mobile-detailbutton
-relatedDocs: gs-mobile-detailbutton
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.DetailButton
+title: Configuration, methods and events of Kendo UI Mobile DetailButton
+description: Documentation on how to initialize Kendo UI mobile DetailButton.
 ---
 
 # kendo.mobile.ui.DetailButton
 
-Represents the Kendo UI Mobile DetailButton widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile DetailButton widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## DetailButton
 

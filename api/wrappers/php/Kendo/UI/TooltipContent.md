@@ -1,8 +1,5 @@
 ---
-title: TooltipContent
-slug: php-ui-tooltipcontent
-tags: api, php
-publish: true
+nav_title: TooltipContent
 ---
 
 # \Kendo\UI\TooltipContent

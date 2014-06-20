@@ -1,8 +1,5 @@
 ---
-title: GridFilterableOperatorsString
-slug: php-ui-gridfilterableoperatorsstring
-tags: api, php
-publish: true
+nav_title: GridFilterableOperatorsString
 ---
 
 # \Kendo\UI\GridFilterableOperatorsString

@@ -1,8 +1,5 @@
 ---
-title: listView-pageable-messages
-slug: jsp-listView-pageable-messages
-tags: api, java
-publish: true
+nav_title: listView-pageable-messages
 ---
 
 # \<kendo:listView-pageable-messages\>

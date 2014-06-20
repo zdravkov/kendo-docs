@@ -1,7 +1,5 @@
 ---
-title: RTL Support
-slug: widget-appearance-rtl
-publish: true
+nav_title: RTL Support
 ---
 
 # RTL Support

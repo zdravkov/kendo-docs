@@ -1,10 +1,7 @@
 ---
-title: Overview
-meta_title: Documentation Guide for Kendo UI Radial Gauge widget
-meta_description: How to create and set a Radial Gauge widget in Kendo UI DataViz.
-slug: gs-dataviz-radialgauge-overview
-relatedDocs: api-dataviz-radialgauge
-publish: true
+nav_title: Overview
+title: Documentation Guide for Kendo UI Radial Gauge widget
+description: How to create and set a Radial Gauge widget in Kendo UI DataViz.
 ---
 
 # Radial Gauge Overview
@@ -27,8 +24,8 @@ All graphics are rendered on the client using SVG with a fallback to VML for leg
 
 ## Creating half- and quarter-circle gauges
 
-The [`startAngle`](/kendo-ui/api/dataviz/radialgauge#scale.startAngle) and
-[`endAngle`](/kendo-ui/api/dataviz/radialgauge#scale.endAngle) configuration options
+The [`startAngle`](/api/dataviz/radialgauge#scale.startAngle) and
+[`endAngle`](/api/dataviz/radialgauge#scale.endAngle) configuration options
 enable you to create gauges that align with your design goals.
 
 ### Create a quarter-gauge, oriented to the top-right
@@ -40,4 +37,4 @@ enable you to create gauges that align with your design goals.
 
 For a real-world example for this functionality, see the [car dashboard demo](http://demos.telerik.com/kendo-ui/dataviz/dashboards/car-dashboard.html).
 
-To see all available configuration options, see the [radial gauge API section](/kendo-ui/api/dataviz/radialgauge).
+To see all available configuration options, see the [radial gauge API section](/api/dataviz/radialgauge).

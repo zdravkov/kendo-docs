@@ -1,8 +1,5 @@
 ---
-title: LinearGaugeScaleMinorTicks
-slug: php-dataviz-ui-lineargaugescaleminorticks
-tags: api, php
-publish: true
+nav_title: LinearGaugeScaleMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks

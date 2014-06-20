@@ -1,8 +1,5 @@
 ---
-title: linearGauge-scale-minorTicks
-slug: jsp-linearGauge-scale-minorTicks
-tags: api, java
-publish: true
+nav_title: linearGauge-scale-minorTicks
 ---
 
 # \<kendo:linearGauge-scale-minorTicks\>

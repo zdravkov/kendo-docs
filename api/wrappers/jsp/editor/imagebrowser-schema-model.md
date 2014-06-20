@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-schema-model
-slug: jsp-editor-imageBrowser-schema-model
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-schema-model
 ---
 
 # \<kendo:editor-imageBrowser-schema-model\>
@@ -31,7 +28,7 @@ The name of the field which acts as an identifier.
 
 
 
-More documentation is available at [kendo:editor-imageBrowser-schema-model-fields](/kendo-ui/api/wrappers/jsp/editor/imagebrowser-schema-model-fields).
+More documentation is available at [kendo:editor-imageBrowser-schema-model-fields](/api/wrappers/jsp/editor/imagebrowser-schema-model-fields).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: stockChart-seriesItem-labels
-slug: jsp-stockChart-seriesItem-labels
-tags: api, java
-publish: true
+nav_title: stockChart-seriesItem-labels
 ---
 
 # \<kendo:stockChart-seriesItem-labels\>
@@ -95,7 +92,7 @@ The visibility of the labels.
 
 The border of the labels.
 
-More documentation is available at [kendo:stockChart-seriesItem-labels-border](/kendo-ui/api/wrappers/jsp/stockchart/seriesitem-labels-border).
+More documentation is available at [kendo:stockChart-seriesItem-labels-border](/api/wrappers/jsp/stockchart/seriesitem-labels-border).
 
 #### Example
 

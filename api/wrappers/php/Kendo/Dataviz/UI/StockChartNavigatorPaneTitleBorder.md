@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorPaneTitleBorder
-slug: php-dataviz-ui-stockchartnavigatorpanetitleborder
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorPaneTitleBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorPaneTitleBorder

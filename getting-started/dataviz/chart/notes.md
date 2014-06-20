@@ -1,10 +1,8 @@
 ---
-title: Notes
-meta_title: Configuration guide for the chart notes
-meta_description: How to configure the notes of a chart.
-slug: chart-notes
-ordinal: 4
-publish: true
+nav_title: Notes
+title: Configuration guide for the chart notes
+description: How to configure the notes of a chart.
+nav_position: 4
 ---
 
 # Notes

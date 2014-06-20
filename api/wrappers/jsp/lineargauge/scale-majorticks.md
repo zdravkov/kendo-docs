@@ -1,8 +1,5 @@
 ---
-title: linearGauge-scale-majorTicks
-slug: jsp-linearGauge-scale-majorTicks
-tags: api, java
-publish: true
+nav_title: linearGauge-scale-majorTicks
 ---
 
 # \<kendo:linearGauge-scale-majorTicks\>

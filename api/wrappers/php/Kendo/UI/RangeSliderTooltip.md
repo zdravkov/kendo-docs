@@ -1,8 +1,5 @@
 ---
-title: RangeSliderTooltip
-slug: php-ui-rangeslidertooltip
-tags: api, php
-publish: true
+nav_title: RangeSliderTooltip
 ---
 
 # \Kendo\UI\RangeSliderTooltip

@@ -1,8 +1,5 @@
 ---
-title: PagerMessages
-slug: php-ui-pagermessages
-tags: api, php
-publish: true
+nav_title: PagerMessages
 ---
 
 # \Kendo\UI\PagerMessages

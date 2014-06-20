@@ -1,8 +1,5 @@
 ---
-title: TimePickerAnimationOpen
-slug: php-ui-timepickeranimationopen
-tags: api, php
-publish: true
+nav_title: TimePickerAnimationOpen
 ---
 
 # \Kendo\UI\TimePickerAnimationOpen

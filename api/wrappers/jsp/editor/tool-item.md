@@ -1,8 +1,5 @@
 ---
-title: editor-tool-item
-slug: jsp-editor-tool-item
-tags: api, java
-publish: true
+nav_title: editor-tool-item
 ---
 
 # \<kendo:editor-tool-item\>

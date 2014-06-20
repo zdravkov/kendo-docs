@@ -1,9 +1,6 @@
 ---
-title: Image Browser
-slug: gs-web-editor-imagebrowser
-tags: editor,imagebrowser,web
-ordinal: 2
-publish: true
+nav_title: Image Browser
+nav_position: 2
 ---
 
 # Image Browser
@@ -22,7 +19,7 @@ The image browser needs a server side implementation to retrieve and upload the 
 
 ## Configuring the ImageBrowser
 
-The image browser tool can be configured through the [`imagebrowser` configuration option](/kendo-ui/api/web/editor#configuration-imageBrowser).
+The image browser tool can be configured through the [`imagebrowser` configuration option](/api/web/editor#configuration-imageBrowser).
 
 #### Example
 
@@ -70,4 +67,4 @@ The default requests and responses for the create / read / destroy / upload  ope
 
         { "name": "foo.png", "type": "f", "size": 12345 }
 
-All of these can be changed through the [`imagebrowser` configuration](/kendo-ui/api/web/editor#configuration-imageBrowser).
+All of these can be changed through the [`imagebrowser` configuration](/api/web/editor#configuration-imageBrowser).

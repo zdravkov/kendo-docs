@@ -1,8 +1,5 @@
 ---
-title: PanelBarAnimationCollapse
-slug: php-ui-panelbaranimationcollapse
-tags: api, php
-publish: true
+nav_title: PanelBarAnimationCollapse
 ---
 
 # \Kendo\UI\PanelBarAnimationCollapse

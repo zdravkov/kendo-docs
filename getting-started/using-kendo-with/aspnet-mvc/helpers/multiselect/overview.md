@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: How to use MultiSelect HtmlHelper extension | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI MultiSelect for ASP.NET MVC widget.
-slug: mvc-multiselect-overview
-publish: true
+nav_title: Overview
+title: How to use MultiSelect HtmlHelper extension | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI MultiSelect for ASP.NET MVC widget.
 ---
 
 # MultiSelect
 
-The MultiSelect HtmlHelper extension is a server-side wrapper for the [Kendo UI MultiSelect](/kendo-ui/api/web/multiselect) widget.
+The MultiSelect HtmlHelper extension is a server-side wrapper for the [Kendo UI MultiSelect](/api/web/multiselect) widget.
 
 ## Getting Started
 
@@ -21,7 +19,7 @@ There are two ways to bind a Kendo MultiSelect for ASP.NET MVC:
 
 Here is how to configure the Kendo MultiSelect for server binding to the Northwind Products table using Linq to SQL:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method and pass the Products table as the model:
 
@@ -61,7 +59,7 @@ Here is how to configure the Kendo MultiSelect for server binding to the Northwi
 
 Here is how to configure the Kendo MultiSelect for ajax binding to the Northwind Products table using Linq to SQL:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create an action method which renders the view:
 
@@ -256,7 +254,7 @@ This functionality is supported in Q1 SP1 2013 release and later versions of Ken
 ## Accessing an Existing MultiSelect
 
 You can reference an existing MultiSelect instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/multiselect#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/multiselect#methods) to control its behavior.
 
 
 ### Accessing an existing MultiSelect instance
@@ -272,7 +270,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/m
 
 ## Handling Kendo UI MultiSelect events
 
-You can subscribe to all [events](/kendo-ui/api/web/multiselect#events) exposed by Kendo UI MultiSelect:
+You can subscribe to all [events](/api/web/multiselect#events) exposed by Kendo UI MultiSelect:
 
 ### WebForms - subscribe by handler name
 

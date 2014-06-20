@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-notes-label-border
-slug: jsp-sparkline-seriesItem-notes-label-border
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-notes-label-border
 ---
 
 # \<kendo:sparkline-seriesItem-notes-label-border\>

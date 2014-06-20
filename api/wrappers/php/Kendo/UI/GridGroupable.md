@@ -1,8 +1,5 @@
 ---
-title: GridGroupable
-slug: php-ui-gridgroupable
-tags: api, php
-publish: true
+nav_title: GridGroupable
 ---
 
 # \Kendo\UI\GridGroupable
@@ -24,7 +21,7 @@ The text messages displayed during grouping.
 ##### $value `\Kendo\UI\GridGroupableMessages|array`
 
 
-#### Example - using [\Kendo\UI\GridGroupableMessages](/kendo-ui/api/wrappers/php/Kendo/UI/GridGroupableMessages)
+#### Example - using [\Kendo\UI\GridGroupableMessages](/api/wrappers/php/Kendo/UI/GridGroupableMessages)
     <?php
     $groupable = new \Kendo\UI\GridGroupable();
     $messages = new \Kendo\UI\GridGroupableMessages();

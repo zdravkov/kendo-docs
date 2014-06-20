@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-plotBand
-slug: jsp-chart-xAxisItem-plotBand
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-plotBand
 ---
 
 # \<kendo:chart-xAxisItem-plotBand\>

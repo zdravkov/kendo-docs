@@ -1,17 +1,15 @@
 ---
-title: Batch Editing
-meta_title: Cell editing mode and Batch Updates for Kendo UI Grid for ASP.NET MVC
-meta_description: Step by step guide how to enable cell editing mode and batch updates in Kendo UI Grid for ASP.NET MVC.
-slug: mvc-grid-batch-editing
-publish: true
+nav_title: Batch Editing
+title: Cell editing mode and Batch Updates for Kendo UI Grid for ASP.NET MVC
+description: Step by step guide how to enable cell editing mode and batch updates in Kendo UI Grid for ASP.NET MVC.
 ---
 
 # Cell Editing and Batch Updates
 
 ## Getting started
 
-1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-Name the application "KendoGridBatchEditing". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions followe the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+Name the application "KendoGridBatchEditing". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions followe the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Add a new "Entity Framework Data Model". Right click the `~/Models` folder in the solution explorer and pick "Add ->  New Item". Choose "Data -> ADO.NET Entity Data Model" in the "Add New Item" dialog.
 Name the model "Northwind.edmx" and click "Next". This will start the "Entity Data Model Wizard".

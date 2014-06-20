@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemNotesLabel
-slug: php-dataviz-ui-sparklinecategoryaxisitemnoteslabel
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemNotesLabel
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabel
@@ -42,7 +39,7 @@ The border of the label.
 ##### $value `\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabelBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabelBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemNotesLabelBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabelBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemNotesLabelBorder)
     <?php
     $label = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabel();
     $border = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabelBorder();

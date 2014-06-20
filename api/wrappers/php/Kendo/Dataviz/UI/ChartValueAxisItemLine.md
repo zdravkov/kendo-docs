@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemLine
-slug: php-dataviz-ui-chartvalueaxisitemline
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemLine
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemLine

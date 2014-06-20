@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-recurrenceMessages
-slug: jsp-scheduler-messages-recurrenceMessages
-tags: api, java
-publish: true
+nav_title: scheduler-messages-recurrenceMessages
 ---
 
 # \<kendo:scheduler-messages-recurrenceMessages\>

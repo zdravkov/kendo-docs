@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-schema-model-fields
-slug: jsp-editor-imageBrowser-schema-model-fields
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-schema-model-fields
 ---
 
 # \<kendo:editor-imageBrowser-schema-model-fields\>
@@ -47,7 +44,7 @@ The field which contains the type of the entry. Either f for image or d for dire
 
 The field which contains the name of the image/directory
 
-More documentation is available at [kendo:editor-imageBrowser-schema-model-fields-name](/kendo-ui/api/wrappers/jsp/editor/imagebrowser-schema-model-fields-name).
+More documentation is available at [kendo:editor-imageBrowser-schema-model-fields-name](/api/wrappers/jsp/editor/imagebrowser-schema-model-fields-name).
 
 #### Example
 
@@ -59,7 +56,7 @@ More documentation is available at [kendo:editor-imageBrowser-schema-model-field
 
 The field which contains the size of image.
 
-More documentation is available at [kendo:editor-imageBrowser-schema-model-fields-size](/kendo-ui/api/wrappers/jsp/editor/imagebrowser-schema-model-fields-size).
+More documentation is available at [kendo:editor-imageBrowser-schema-model-fields-size](/api/wrappers/jsp/editor/imagebrowser-schema-model-fields-size).
 
 #### Example
 
@@ -71,7 +68,7 @@ More documentation is available at [kendo:editor-imageBrowser-schema-model-field
 
 The field which contains the type of the entry. Either f for image or d for directory.
 
-More documentation is available at [kendo:editor-imageBrowser-schema-model-fields-type](/kendo-ui/api/wrappers/jsp/editor/imagebrowser-schema-model-fields-type).
+More documentation is available at [kendo:editor-imageBrowser-schema-model-fields-type](/api/wrappers/jsp/editor/imagebrowser-schema-model-fields-type).
 
 #### Example
 

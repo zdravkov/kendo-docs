@@ -1,10 +1,7 @@
 ---
-title: Editing
-meta_title: How to perform CRUD with Kendo Grid for PHP
-meta_description: Learn how to do create, update and destroy with Kendo UI Grid for PHP
-slug: php-grid-editing
-publish: true
-relatedDocs: php-ui-grid, php-grid-overview
+nav_title: Editing
+title: How to perform CRUD with Kendo Grid for PHP
+description: Learn how to do create, update and destroy with Kendo UI Grid for PHP
 ---
 
 # Editing
@@ -20,7 +17,7 @@ This demo shows how to use [PDO]() to perform create, update and destroy operati
 
 ### Configure Grid for editing
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Create a data source and configure it:
 
         <?php
@@ -157,7 +154,7 @@ This demo shows how to use [PDO]() to perform create, update and destroy operati
         <?php
         $db = new PDO('sqlite:../sample.db');
         ?>
-1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/kendo-ui/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
+1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
 
         <?php
         $request = json_decode(file_get_contents('php://input'));
@@ -277,7 +274,7 @@ It is distributed with the Telerik UI for PHP** demos and can be found in the **
 First we will configure a Kendo Grid for PHP binding and then we will implement the remote service.
 
 ### Configure Grid for editing (using DataSourceResult)
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Create a data source and configure it:
 
         <?php
@@ -412,7 +409,7 @@ First we will configure a Kendo Grid for PHP binding and then we will implement 
 1. Copy **/wrappers/php/lib/DataSourceResult.php** to your web site root and include it.
 
         <?php require_once 'lib/DataSourceResult.php'; ?>
-1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/kendo-ui/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
+1. Read the request body and parse it as JSON. In the previous example we configured the Kendo DataSource to submit its parameters as JSON via the [parameterMap](/api/wrappers/php/Kendo/Data/DataSourceTransport#parametermap).
 
         <?php
         $request = json_decode(file_get_contents('php://input'));

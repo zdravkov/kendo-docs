@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemMajorTicks
-slug: php-dataviz-ui-sparklinecategoryaxisitemmajorticks
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemMajorTicks

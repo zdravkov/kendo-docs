@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-notes
-slug: jsp-chart-seriesItem-notes
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-notes
 ---
 
 # \<kendo:chart-seriesItem-notes\>
@@ -31,7 +28,7 @@ The position of the series note.
 
 The icon of the notes.
 
-More documentation is available at [kendo:chart-seriesItem-notes-icon](/kendo-ui/api/wrappers/jsp/chart/seriesitem-notes-icon).
+More documentation is available at [kendo:chart-seriesItem-notes-icon](/api/wrappers/jsp/chart/seriesitem-notes-icon).
 
 #### Example
 
@@ -43,7 +40,7 @@ More documentation is available at [kendo:chart-seriesItem-notes-icon](/kendo-ui
 
 The label of the notes.
 
-More documentation is available at [kendo:chart-seriesItem-notes-label](/kendo-ui/api/wrappers/jsp/chart/seriesitem-notes-label).
+More documentation is available at [kendo:chart-seriesItem-notes-label](/api/wrappers/jsp/chart/seriesitem-notes-label).
 
 #### Example
 
@@ -55,7 +52,7 @@ More documentation is available at [kendo:chart-seriesItem-notes-label](/kendo-u
 
 The line of the notes.
 
-More documentation is available at [kendo:chart-seriesItem-notes-line](/kendo-ui/api/wrappers/jsp/chart/seriesitem-notes-line).
+More documentation is available at [kendo:chart-seriesItem-notes-line](/api/wrappers/jsp/chart/seriesitem-notes-line).
 
 #### Example
 

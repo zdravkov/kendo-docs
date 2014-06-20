@@ -1,8 +1,5 @@
 ---
-title: linearGauge-gaugeArea
-slug: jsp-linearGauge-gaugeArea
-tags: api, java
-publish: true
+nav_title: linearGauge-gaugeArea
 ---
 
 # \<kendo:linearGauge-gaugeArea\>
@@ -59,7 +56,7 @@ horizontal gauge is 200px.
 
 The border of the gauge area.
 
-More documentation is available at [kendo:linearGauge-gaugeArea-border](/kendo-ui/api/wrappers/jsp/lineargauge/gaugearea-border).
+More documentation is available at [kendo:linearGauge-gaugeArea-border](/api/wrappers/jsp/lineargauge/gaugearea-border).
 
 #### Example
 

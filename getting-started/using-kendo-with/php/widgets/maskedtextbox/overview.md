@@ -1,15 +1,12 @@
 ---
-title: Overview
-meta_title: How to use the MaskedTextBox PHP class, server-side wrapper for Kendo UI MaskedTextBox widget
-meta_description: Getting started with Kendo UI MaskedTextBox for PHP in quick steps - configure Kendo UI MaskedTextBox widget and operate Kendo UI MaskedTextBox events.
-slug: php-maskedtextbox-overview
-publish: true
-relatedDocs: php-ui-maskedtextbox
+nav_title: Overview
+title: How to use the MaskedTextBox PHP class, server-side wrapper for Kendo UI MaskedTextBox widget
+description: Getting started with Kendo UI MaskedTextBox for PHP in quick steps - configure Kendo UI MaskedTextBox widget and operate Kendo UI MaskedTextBox events.
 ---
 
 # MaskedTextBox
 
-The Kendo MaskedTextBox for PHP is a server-side wrapper for the [Kendo UI MaskedTextBox](/kendo-ui/api/web/maskedtextbox) widget.
+The Kendo MaskedTextBox for PHP is a server-side wrapper for the [Kendo UI MaskedTextBox](/api/web/maskedtextbox) widget.
 
 ## Getting Started
 
@@ -17,9 +14,9 @@ The Kendo MaskedTextBox for PHP is a server-side wrapper for the [Kendo UI Maske
 
 Here is how to configure a simple Kendo MaskedTextBox:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 
-2. Create a [maskedtextbox](/kendo-ui/api/wrappers/php/Kendo/UI/MaskedTextBox).
+2. Create a [maskedtextbox](/api/wrappers/php/Kendo/UI/MaskedTextBox).
 
         <?php
         $maskedtextbox = new \Kendo\UI\MaskedTextBox('maskedtextbox');
@@ -27,7 +24,7 @@ Here is how to configure a simple Kendo MaskedTextBox:
                       ->value("(123) 345-6789");
         ?>
 
-3. Output the maskedtextbox by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the maskedtextbox by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $maskedtextbox->render();
@@ -35,7 +32,7 @@ Here is how to configure a simple Kendo MaskedTextBox:
 
 ### Define widget's mask value
 
-The MaskedTextBox has [a list of predefined mask rules](/kendo-ui/getting-started/web/maskedtextbox/overview#predefined-mask-rules),
+The MaskedTextBox has [a list of predefined mask rules](/getting-started/web/maskedtextbox/overview#predefined-mask-rules),
 which can be used to compose the widget's mask.
 
 #### WebForms - set a `zip code` mask
@@ -70,7 +67,7 @@ defined as a string or JavaScript function.
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo MaskedTextBox instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/maskedtextbox#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/maskedtextbox#methods) to control its behavior.
 
 
 ### Example
@@ -88,7 +85,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/m
 
 ## Handling Events
 
-You can subscribe to all maskedtextbox [events](/kendo-ui/api/web/maskedtextbox#events).
+You can subscribe to all maskedtextbox [events](/api/web/maskedtextbox#events).
 
 ### Example - subscribing by specifying JavaScript function name
 

@@ -1,8 +1,6 @@
 ---
-title: Router
-slug: spa-router
-ordinal: 2
-publish: true
+nav_title: Router
+nav_position: 2
 ---
 
 # Router Overview

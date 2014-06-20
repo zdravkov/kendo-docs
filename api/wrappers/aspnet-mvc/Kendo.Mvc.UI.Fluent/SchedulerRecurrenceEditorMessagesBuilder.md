@@ -1,7 +1,5 @@
 ---
-title:SchedulerRecurrenceEditorMessagesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerrecurrenceeditormessagesbuilder
-publish:true
+nav_title: SchedulerRecurrenceEditorMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMessagesBuilder
@@ -9,106 +7,108 @@ Defines the fluent interface for configuring the SchedulerRecurrenceEditorMessag
 
 
 
+
 ## Methods
 
-### Frequencies(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorFrequenciesMessagesBuilder>`)
+
+### Frequencies(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorFrequenciesMessagesBuilder\>)
 Sets the Recurrence Editor Frequencies messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorFrequenciesMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorFrequenciesMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorFrequenciesMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorFrequenciesMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor frequencies messages
 
 
 
 
 
-### Daily(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorDailyMessagesBuilder>`)
+### Daily(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorDailyMessagesBuilder\>)
 Sets the Recurrence Editor Daily messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorDailyMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorDailyMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorDailyMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorDailyMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor daily messages
 
 
 
 
 
-### Weekly(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeeklyMessagesBuilder>`)
+### Weekly(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeeklyMessagesBuilder\>)
 Sets the Recurrence Editor Weekly messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeeklyMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorWeeklyMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeeklyMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorWeeklyMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor weekly messages
 
 
 
 
 
-### Monthly(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMonthlyMessagesBuilder>`)
+### Monthly(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMonthlyMessagesBuilder\>)
 Sets the Recurrence Editor Montly messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMonthlyMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorMonthlyMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMonthlyMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorMonthlyMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor montly messages
 
 
 
 
 
-### Yearly(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorYearlyMessagesBuilder>`)
+### Yearly(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorYearlyMessagesBuilder\>)
 Sets the Recurrence Editor Yearly messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorYearlyMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorYearlyMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorYearlyMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorYearlyMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor yearly messages
 
 
 
 
 
-### End(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorEndMessagesBuilder>`)
+### End(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorEndMessagesBuilder\>)
 Sets the Recurrence Editor End messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorEndMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorEndMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorEndMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorEndMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor end messages
 
 
 
 
 
-### OffsetPositions(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorOffsetPositionsMessagesBuilder>`)
+### OffsetPositions(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorOffsetPositionsMessagesBuilder\>)
 Sets the Recurrence Editor OffsetPositions messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorOffsetPositionsMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorOffsetPositionsMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorOffsetPositionsMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorOffsetPositionsMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor offsetPositions messages
 
 
 
 
 
-### Weekdays(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeekdaysMessagesBuilder>`)
+### Weekdays(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeekdaysMessagesBuilder\>)
 Sets the Recurrence Editor Weekdays messages of the scheduler.
 
 
 #### Parameters
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeekdaysMessagesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorWeekdaysMessagesBuilder)>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorWeekdaysMessagesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerRecurrenceEditorWeekdaysMessagesBuilder)>
 The lambda which configures the scheduler recurrence editor weekdays messages
 
 

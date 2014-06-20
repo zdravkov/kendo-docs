@@ -1,8 +1,5 @@
 ---
-title: diagram-connection-stroke
-slug: jsp-diagram-connection-stroke
-tags: api, java
-publish: true
+nav_title: diagram-connection-stroke
 ---
 
 # \<kendo:diagram-connection-stroke\>

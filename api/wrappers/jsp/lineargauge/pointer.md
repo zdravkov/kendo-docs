@@ -1,8 +1,5 @@
 ---
-title: linearGauge-pointer
-slug: jsp-linearGauge-pointer
-tags: api, java
-publish: true
+nav_title: linearGauge-pointer
 ---
 
 # \<kendo:linearGauge-pointer\>
@@ -72,7 +69,7 @@ The value of the gauge.
 
 The border of the pointer.
 
-More documentation is available at [kendo:linearGauge-pointer-border](/kendo-ui/api/wrappers/jsp/lineargauge/pointer-border).
+More documentation is available at [kendo:linearGauge-pointer-border](/api/wrappers/jsp/lineargauge/pointer-border).
 
 #### Example
 
@@ -85,7 +82,7 @@ More documentation is available at [kendo:linearGauge-pointer-border](/kendo-ui/
 The element arround/under the pointer.
 (available only for 'barIndicator' shape)
 
-More documentation is available at [kendo:linearGauge-pointer-track](/kendo-ui/api/wrappers/jsp/lineargauge/pointer-track).
+More documentation is available at [kendo:linearGauge-pointer-track](/api/wrappers/jsp/lineargauge/pointer-track).
 
 #### Example
 

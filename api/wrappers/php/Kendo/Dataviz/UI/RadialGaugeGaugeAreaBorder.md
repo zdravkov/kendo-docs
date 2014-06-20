@@ -1,8 +1,5 @@
 ---
-title: RadialGaugeGaugeAreaBorder
-slug: php-dataviz-ui-radialgaugegaugeareaborder
-tags: api, php
-publish: true
+nav_title: RadialGaugeGaugeAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugeGaugeAreaBorder

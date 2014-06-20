@@ -1,8 +1,5 @@
 ---
-title: grid-column-filterable
-slug: jsp-grid-column-filterable
-tags: api, java
-publish: true
+nav_title: grid-column-filterable
 ---
 
 # \<kendo:grid-column-filterable\>

@@ -1,7 +1,5 @@
 ---
-title:GaugeRadialCapBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeradialcapbuilder
-publish:true
+nav_title: GaugeRadialCapBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the GaugeRadialCapBuilder.
 
 
 
+
 ## Methods
 
-### Color(`System.String`)
+
+### Color(System.String)
 Sets the cap color.
 
 
@@ -33,7 +33,7 @@ The cap color.
     %>
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the cap opacity.
 
 
@@ -56,7 +56,7 @@ The cap opacity in the range from 0 (transparent) to 1 (opaque).
     %>
 
 
-### Size(`System.Double`)
+### Size(System.Double)
 Sets the cap size in percents.
 
 

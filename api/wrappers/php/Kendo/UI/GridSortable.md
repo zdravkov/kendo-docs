@@ -1,8 +1,5 @@
 ---
-title: GridSortable
-slug: php-ui-gridsortable
-tags: api, php
-publish: true
+nav_title: GridSortable
 ---
 
 # \Kendo\UI\GridSortable

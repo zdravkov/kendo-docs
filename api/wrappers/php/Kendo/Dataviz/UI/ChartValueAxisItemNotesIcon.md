@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemNotesIcon
-slug: php-dataviz-ui-chartvalueaxisitemnotesicon
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemNotesIcon
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemNotesIcon
@@ -42,7 +39,7 @@ The border of the icon.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemNotesIconBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemNotesIconBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemNotesIconBorder)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemNotesIconBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemNotesIconBorder)
     <?php
     $icon = new \Kendo\Dataviz\UI\ChartValueAxisItemNotesIcon();
     $border = new \Kendo\Dataviz\UI\ChartValueAxisItemNotesIconBorder();

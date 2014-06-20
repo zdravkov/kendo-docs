@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemErrorBarsLine
-slug: php-dataviz-ui-chartseriesitemerrorbarsline
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemErrorBarsLine
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemErrorBarsLine

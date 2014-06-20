@@ -1,8 +1,5 @@
 ---
-title: dataSource-filterItem
-slug: jsp-dataSource-filterItem
-tags: api, java
-publish: true
+nav_title: dataSource-filterItem
 ---
 
 # \<kendo:dataSource-filterItem\>

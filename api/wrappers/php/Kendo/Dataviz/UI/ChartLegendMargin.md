@@ -1,8 +1,5 @@
 ---
-title: ChartLegendMargin
-slug: php-dataviz-ui-chartlegendmargin
-tags: api, php
-publish: true
+nav_title: ChartLegendMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartLegendMargin

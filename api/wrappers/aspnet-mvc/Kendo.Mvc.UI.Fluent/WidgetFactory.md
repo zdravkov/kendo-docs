@@ -1,7 +1,5 @@
 ---
-title:WidgetFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.widgetfactory
-publish:true
+nav_title: WidgetFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.WidgetFactory
@@ -9,7 +7,9 @@ Creates the fluent API builders of the Kendo UI widgets
 
 
 
+
 ## Methods
+
 
 ### Menu
 Creates a Menu
@@ -49,7 +49,7 @@ Creates a new 1 bound to the specified data item type.
     %>
 
 
-### Grid(`System.Collections.Generic.IEnumerable<T1>`)
+### Grid(System.Collections.Generic.IEnumerable\<T1\>)
 Creates a new 1 bound to the specified data source.
 
 
@@ -67,7 +67,7 @@ The data source.
     %>
 
 
-### Grid(`System.Data.DataTable`)
+### Grid(System.Data.DataTable)
 Creates a new 1 bound to a DataTable.
 
 
@@ -80,7 +80,7 @@ DataTable from which the grid instance will be bound
 
 
 
-### Grid(`System.Data.DataView`)
+### Grid(System.Data.DataView)
 Creates a new 1 bound to a DataView.
 
 
@@ -93,7 +93,7 @@ DataView from which the grid instance will be bound
 
 
 
-### Grid(`System.String`)
+### Grid(System.String)
 Creates a new 1 bound an item in ViewData.
 
 
@@ -124,7 +124,7 @@ Creates a new 1 bound to the specified data item type.
     %>
 
 
-### ListView(`System.Collections.Generic.IEnumerable<T1>`)
+### ListView(System.Collections.Generic.IEnumerable\<T1\>)
 Creates a new 1 bound to the specified data source.
 
 
@@ -142,7 +142,7 @@ The data source.
     %>
 
 
-### ListView(`System.String`)
+### ListView(System.String)
 Creates a new 1 bound an item in ViewData.
 
 
@@ -190,7 +190,7 @@ Creates a new MobileListView.
     %>
 
 
-### MobileListView(`System.Collections.Generic.IEnumerable<T1>`)
+### MobileListView(System.Collections.Generic.IEnumerable\<T1\>)
 Creates a new 1 bound to the specified data source.
 
 
@@ -208,7 +208,7 @@ The data source.
     %>
 
 
-### MobileListView(`System.String`)
+### MobileListView(System.String)
 Creates a new 1 bound an item in ViewData.
 
 
@@ -732,7 +732,7 @@ Creates a 1
     %>
 
 
-### Chart(`System.Collections.Generic.IEnumerable<T1>`)
+### Chart(System.Collections.Generic.IEnumerable\<T1\>)
 Creates a new 1 bound to the specified data source.
 
 
@@ -750,7 +750,7 @@ The data source.
     %>
 
 
-### Chart(`System.String`)
+### Chart(System.String)
 Creates a new 1 bound an item in ViewData.
 
 
@@ -795,7 +795,7 @@ Creates a 1
     %>
 
 
-### StockChart(`System.Collections.Generic.IEnumerable<T1>`)
+### StockChart(System.Collections.Generic.IEnumerable\<T1\>)
 Creates a new 1 bound to the specified data source.
 
 
@@ -813,7 +813,7 @@ The data source.
     %>
 
 
-### StockChart(`System.String`)
+### StockChart(System.String)
 Creates a new 1 bound an item in ViewData.
 
 
@@ -858,7 +858,7 @@ Creates a 1
     %>
 
 
-### Sparkline(`System.Collections.Generic.IEnumerable<T1>`)
+### Sparkline(System.Collections.Generic.IEnumerable\<T1\>)
 Creates a new 1 bound to the specified data source.
 
 
@@ -876,7 +876,7 @@ The data source.
     %>
 
 
-### Sparkline(`System.String`)
+### Sparkline(System.String)
 Creates a new 1 bound an item in ViewData.
 
 
@@ -922,7 +922,7 @@ Creates a QRCode
     %>
 
 
-### DeferredScripts(`System.Boolean`)
+### DeferredScripts(System.Boolean)
 Returns the initialization scripts for widgets set as deferred
 
 
@@ -938,7 +938,7 @@ Determines if the script should be rendered within a script tag
 
 
 
-### DeferredScriptsFor(`System.String,System.Boolean`)
+### DeferredScriptsFor(System.String,System.Boolean)
 Returns the initialization scripts for the specified widget.
 
 
@@ -955,6 +955,18 @@ Determines if the script should be rendered within a script tag
 #### Returns
 
 
+
+
+### Diagram
+Creates a Diagram
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Diagram()
+    .Name("Diagram")
+    %>
 
 
 ### Map

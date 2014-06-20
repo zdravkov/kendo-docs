@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.ModalView
-meta_title: Configuration, methods and events of Kendo UI Mobile ModalView
-meta_description: Set height and width of the Kendo UI Mobile ModalView container in pixels, use methods to open and close it.
-slug: api-mobile-modalview
-relatedDocs: gs-mobile-modalview
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.ModalView
+title: Configuration, methods and events of Kendo UI Mobile ModalView
+description: Set height and width of the Kendo UI Mobile ModalView container in pixels, use methods to open and close it.
 ---
 
 # kendo.mobile.ui.ModalView
 
-Represents the Kendo UI Mobile ModalView widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile ModalView widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Example
     <div data-role="view">

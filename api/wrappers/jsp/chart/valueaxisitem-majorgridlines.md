@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-majorGridLines
-slug: jsp-chart-valueAxisItem-majorGridLines
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-majorGridLines
 ---
 
 # \<kendo:chart-valueAxisItem-majorGridLines\>

@@ -1,8 +1,5 @@
 ---
-title: DatePickerAnimation
-slug: php-ui-datepickeranimation
-tags: api, php
-publish: true
+nav_title: DatePickerAnimation
 ---
 
 # \Kendo\UI\DatePickerAnimation
@@ -24,7 +21,7 @@ The animation played when the calendar popup is closed.
 ##### $value `\Kendo\UI\DatePickerAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\DatePickerAnimationClose](/kendo-ui/api/wrappers/php/Kendo/UI/DatePickerAnimationClose)
+#### Example - using [\Kendo\UI\DatePickerAnimationClose](/api/wrappers/php/Kendo/UI/DatePickerAnimationClose)
     <?php
     $animation = new \Kendo\UI\DatePickerAnimation();
     $close = new \Kendo\UI\DatePickerAnimationClose();
@@ -53,7 +50,7 @@ The animation played when the calendar popup is opened.
 ##### $value `\Kendo\UI\DatePickerAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\DatePickerAnimationOpen](/kendo-ui/api/wrappers/php/Kendo/UI/DatePickerAnimationOpen)
+#### Example - using [\Kendo\UI\DatePickerAnimationOpen](/api/wrappers/php/Kendo/UI/DatePickerAnimationOpen)
     <?php
     $animation = new \Kendo\UI\DatePickerAnimation();
     $open = new \Kendo\UI\DatePickerAnimationOpen();

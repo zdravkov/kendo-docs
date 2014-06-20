@@ -1,8 +1,5 @@
 ---
-title: EditorImageBrowserSchemaModelFieldsName
-slug: php-ui-editorimagebrowserschemamodelfieldsname
-tags: api, php
-publish: true
+nav_title: EditorImageBrowserSchemaModelFieldsName
 ---
 
 # \Kendo\UI\EditorImageBrowserSchemaModelFieldsName

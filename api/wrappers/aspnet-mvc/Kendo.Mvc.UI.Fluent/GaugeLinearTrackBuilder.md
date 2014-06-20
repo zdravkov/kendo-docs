@@ -1,7 +1,5 @@
 ---
-title:GaugeLinearTrackBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugelineartrackbuilder
-publish:true
+nav_title: GaugeLinearTrackBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the linear gauge track.
 
 
 
+
 ## Methods
 
-### Color(`System.String`)
+
+### Color(System.String)
 Sets the track color.
 
 
@@ -33,7 +33,7 @@ The track color.
     %>
 
 
-### Size(`System.Double`)
+### Size(System.Double)
 Sets the track size.
 
 
@@ -55,7 +55,7 @@ The track size.
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the track visibility.
 
 
@@ -77,7 +77,7 @@ The track visibility.
     %>
 
 
-### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the track border.
 
 
@@ -89,7 +89,7 @@ The pointer border width.
 ##### color `System.String`
 The pointer border color.
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The pointer dash type.
 
 
@@ -105,13 +105,13 @@ The pointer dash type.
     %>
 
 
-### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the track border
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 The border configuration action
 
 

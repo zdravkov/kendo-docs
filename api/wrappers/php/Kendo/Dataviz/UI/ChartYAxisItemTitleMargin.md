@@ -1,8 +1,5 @@
 ---
-title: ChartYAxisItemTitleMargin
-slug: php-dataviz-ui-chartyaxisitemtitlemargin
-tags: api, php
-publish: true
+nav_title: ChartYAxisItemTitleMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemTitleMargin

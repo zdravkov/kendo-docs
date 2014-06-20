@@ -1,7 +1,5 @@
 ---
-title:DataSourceSchedulerModelDescriptorFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.datasourceschedulermodeldescriptorfactory
-publish:true
+nav_title: DataSourceSchedulerModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceSchedulerModelDescriptorFactory
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the DataSource Model definition.
 
 
 
+
 ## Methods
 
-### RecurrenceId(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+
+### RecurrenceId(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Specify the member used for recurrenceId.
 
 
@@ -24,7 +24,7 @@ Member access expression which describes the member
 
 
 
-### RecurrenceId(`System.String`)
+### RecurrenceId(System.String)
 Specify the member used for recurrenceId.
 
 

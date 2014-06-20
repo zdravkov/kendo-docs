@@ -1,8 +1,5 @@
 ---
-title: sparkline-tooltip-border
-slug: jsp-sparkline-tooltip-border
-tags: api, java
-publish: true
+nav_title: sparkline-tooltip-border
 ---
 
 # \<kendo:sparkline-tooltip-border\>

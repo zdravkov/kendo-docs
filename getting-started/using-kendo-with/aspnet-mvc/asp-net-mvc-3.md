@@ -1,9 +1,7 @@
 ---
-title: ASP.NET MVC 3
-meta_title: Using Kendo UI with ASP.NET MVC 3
-meta_description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 3 applications
-slug: mvc-3
-publish: true
+nav_title: ASP.NET MVC 3
+title: Using Kendo UI with ASP.NET MVC 3
+description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 3 applications
 ---
 
 # Kendo UI in ASP.NET MVC 3 applications
@@ -162,6 +160,6 @@ Finally lets use a Kendo UI widget.
 
 ## Next steps
 
-* [Fundamentals](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/fundamentals)
-* [Using the Kendo UI Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
-* [Troubleshooting](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/troubleshooting)
+* [Fundamentals](/getting-started/using-kendo-with/aspnet-mvc/fundamentals)
+* [Using the Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
+* [Troubleshooting](/getting-started/using-kendo-with/aspnet-mvc/troubleshooting)

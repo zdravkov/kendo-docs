@@ -1,8 +1,5 @@
 ---
-title: SchedulerMessagesRecurrenceEditorDaily
-slug: php-ui-schedulermessagesrecurrenceeditordaily
-tags: api, php
-publish: true
+nav_title: SchedulerMessagesRecurrenceEditorDaily
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceEditorDaily

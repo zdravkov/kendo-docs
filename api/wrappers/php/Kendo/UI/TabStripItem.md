@@ -1,8 +1,5 @@
 ---
-title: TabStripItem
-slug: php-ui-tabstripitem
-tags: api, php
-publish: true
+nav_title: TabStripItem
 ---
 
 # \Kendo\UI\TabStripItem

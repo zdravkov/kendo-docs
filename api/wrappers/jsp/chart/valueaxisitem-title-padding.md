@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-title-padding
-slug: jsp-chart-valueAxisItem-title-padding
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-title-padding
 ---
 
 # \<kendo:chart-valueAxisItem-title-padding\>

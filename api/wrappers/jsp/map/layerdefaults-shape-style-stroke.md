@@ -1,8 +1,5 @@
 ---
-title: map-layerDefaults-shape-style-stroke
-slug: jsp-map-layerDefaults-shape-style-stroke
-tags: api, java
-publish: true
+nav_title: map-layerDefaults-shape-style-stroke
 ---
 
 # \<kendo:map-layerDefaults-shape-style-stroke\>

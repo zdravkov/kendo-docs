@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Summary of Splitter UI widget primary functions
-meta_description: Find out how to use the Splitter UI widget and achieve complex layouts.
-slug: gs-web-splitter-overview
-relatedDocs: api-web-splitter
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Summary of Splitter UI widget primary functions
+description: Find out how to use the Splitter UI widget and achieve complex layouts.
 ---
 
 # Splitter Overview
@@ -214,7 +210,7 @@ cannot have borders, margins or paddings. In a nested Splitters scenario, the in
 
 ## Resizing a Splitter manually
 
-The Splitter `div` can be resized manually by applying new width or height style with Javascript. Afterwards, the [`resize()`](/kendo-ui/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages) method
+The Splitter `div` can be resized manually by applying new width or height style with Javascript. Afterwards, the [`resize()`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages) method
 should be executed, so that the widget readjusts its layout and pane sizes.
 
     var splitterElement = $("#SplitterID"),
@@ -231,7 +227,7 @@ This is useful when the Splitter has been initialized in an invisible container 
 
     splitterObject.resize(true);
     
-On a side note, changing the pane sizes manually is not recommended. Use the [`size()`](/kendo-ui/api/web/splitter#methods-size) method for that.
+On a side note, changing the pane sizes manually is not recommended. Use the [`size()`](/api/web/splitter#methods-size) method for that.
 
 ## Allow an element to overflow a Splitter pane
 

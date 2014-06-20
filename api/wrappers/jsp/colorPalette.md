@@ -1,12 +1,9 @@
 ---
-title: colorPalette
-slug: jsp-colorPalette
-tags: api, java
-publish: true
+nav_title: colorPalette
 ---
 
 # \<kendo:colorPalette\>
-A JSP wrapper for Kendo UI [ColorPalette](/kendo-ui/api/web/colorpalette).
+A JSP wrapper for Kendo UI [ColorPalette](/api/web/colorpalette).
 
 ## Configuration Attributes
 
@@ -50,7 +47,7 @@ Specifies the initially selected color.
 
 The size of a color cell.
 
-More documentation is available at [kendo:colorPalette-tileSize](/kendo-ui/api/wrappers/jsp/colorpalette/tilesize).
+More documentation is available at [kendo:colorPalette-tileSize](/api/wrappers/jsp/colorpalette/tilesize).
 
 #### Example
 
@@ -66,7 +63,7 @@ More documentation is available at [kendo:colorPalette-tileSize](/kendo-ui/api/w
 Triggers when a new color has been changed.
 
 
-For additional information check the [change](/kendo-ui/api/web/colorpalette#events-change) event documentation.
+For additional information check the [change](/api/web/colorpalette#events-change) event documentation.
 
 #### Example
     <kendo:colorPalette change="handle_change">
@@ -84,7 +81,7 @@ For additional information check the [change](/kendo-ui/api/web/colorpalette#eve
 Triggers when a new color has been changed.
 
 
-For additional information check the [change](/kendo-ui/api/web/colorpalette#events-change) event documentation.
+For additional information check the [change](/api/web/colorpalette#events-change) event documentation.
 
 #### Example
     <kendo:colorPalette>

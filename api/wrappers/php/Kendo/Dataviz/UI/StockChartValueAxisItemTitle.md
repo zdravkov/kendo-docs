@@ -1,8 +1,5 @@
 ---
-title: StockChartValueAxisItemTitle
-slug: php-dataviz-ui-stockchartvalueaxisitemtitle
-tags: api, php
-publish: true
+nav_title: StockChartValueAxisItemTitle
 ---
 
 # \Kendo\Dataviz\UI\StockChartValueAxisItemTitle
@@ -43,7 +40,7 @@ The border of the title.
 ##### $value `\Kendo\Dataviz\UI\StockChartValueAxisItemTitleBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartValueAxisItemTitleBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartValueAxisItemTitleBorder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartValueAxisItemTitleBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartValueAxisItemTitleBorder)
     <?php
     $title = new \Kendo\Dataviz\UI\StockChartValueAxisItemTitle();
     $border = new \Kendo\Dataviz\UI\StockChartValueAxisItemTitleBorder();

@@ -1,8 +1,5 @@
 ---
-title: WindowAnimationClose
-slug: php-ui-windowanimationclose
-tags: api, php
-publish: true
+nav_title: WindowAnimationClose
 ---
 
 # \Kendo\UI\WindowAnimationClose

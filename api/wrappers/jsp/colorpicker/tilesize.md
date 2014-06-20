@@ -1,8 +1,5 @@
 ---
-title: colorPicker-tileSize
-slug: jsp-colorPicker-tileSize
-tags: api, java
-publish: true
+nav_title: colorPicker-tileSize
 ---
 
 # \<kendo:colorPicker-tileSize\>

@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-title-padding
-slug: jsp-stockChart-navigator-categoryAxisItem-title-padding
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-title-padding
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-title-padding\>

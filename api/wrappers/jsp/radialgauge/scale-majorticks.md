@@ -1,8 +1,5 @@
 ---
-title: radialGauge-scale-majorTicks
-slug: jsp-radialGauge-scale-majorTicks
-tags: api, java
-publish: true
+nav_title: radialGauge-scale-majorTicks
 ---
 
 # \<kendo:radialGauge-scale-majorTicks\>

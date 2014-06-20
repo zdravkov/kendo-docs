@@ -1,7 +1,5 @@
 ---
-title:GridEditingSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.grideditingsettingsbuilder
-publish:true
+nav_title: GridEditingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring grid editing.
 
 
 
+
 ## Methods
 
-### Enabled(`System.Boolean`)
+
+### Enabled(System.Boolean)
 Enables or disables grid editing.
 
 
@@ -24,7 +24,7 @@ Enables or disables grid editing.
     %>
 
 
-### TemplateName(`System.String`)
+### TemplateName(System.String)
 Specify an editor template which to be used for InForm or PopUp modes
 
 
@@ -37,7 +37,7 @@ name of the editor template
 
 
 
-### AdditionalViewData(`System.Object`)
+### AdditionalViewData(System.Object)
 Provides additional view data in the editor template.
 
 
@@ -56,7 +56,7 @@ An anonymous object which contains the additional data
     %>
 
 
-### DisplayDeleteConfirmation(`System.Boolean`)
+### DisplayDeleteConfirmation(System.Boolean)
 Enables or disables delete confirmation.
 
 
@@ -69,7 +69,7 @@ Enables or disables delete confirmation.
     %>
 
 
-### ConfirmDelete(`System.String`)
+### ConfirmDelete(System.String)
 Change default text for confirm delete button. Note: Available only on mobile devices.
 
 
@@ -82,7 +82,7 @@ Change default text for confirm delete button. Note: Available only on mobile de
     %>
 
 
-### CancelDelete(`System.String`)
+### CancelDelete(System.String)
 Change default text for cancel delete button. Note: Available only on mobile devices.
 
 
@@ -95,7 +95,7 @@ Change default text for cancel delete button. Note: Available only on mobile dev
     %>
 
 
-### CreateAt(`Kendo.Mvc.UI.GridInsertRowPosition`)
+### CreateAt(Kendo.Mvc.UI.GridInsertRowPosition)
 Sets insert row position.
 
 

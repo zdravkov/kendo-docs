@@ -1,8 +1,5 @@
 ---
-title: MapLayerDefaultsTile
-slug: php-dataviz-ui-maplayerdefaultstile
-tags: api, php
-publish: true
+nav_title: MapLayerDefaultsTile
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsTile

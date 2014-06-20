@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesDefaultsBorder
-slug: php-dataviz-ui-sparklineseriesdefaultsborder
-tags: api, php
-publish: true
+nav_title: SparklineSeriesDefaultsBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsBorder

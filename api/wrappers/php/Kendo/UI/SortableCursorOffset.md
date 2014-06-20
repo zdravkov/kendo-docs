@@ -1,8 +1,5 @@
 ---
-title: SortableCursorOffset
-slug: php-ui-sortablecursoroffset
-tags: api, php
-publish: true
+nav_title: SortableCursorOffset
 ---
 
 # \Kendo\UI\SortableCursorOffset

@@ -1,7 +1,5 @@
 ---
-title:GridSelectionMode
-slug:aspnetmvc-kendo.mvc.ui.gridselectionmode
-publish:true
+nav_title: GridSelectionMode
 ---
 
 # Kendo.Mvc.UI.GridSelectionMode

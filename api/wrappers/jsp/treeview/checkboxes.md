@@ -1,8 +1,5 @@
 ---
-title: treeView-checkboxes
-slug: jsp-treeView-checkboxes
-tags: api, java
-publish: true
+nav_title: treeView-checkboxes
 ---
 
 # \<kendo:treeView-checkboxes\>

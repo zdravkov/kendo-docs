@@ -1,10 +1,7 @@
 ---
-title: Add Widgets with Kendo UI Web
-meta_title: Add Kendo UI jQuery widgets to an app | Kendo UI Web Documentation
-meta_description: Learn how to add Kendo UI Web widgets to your mobile website or web app.
-slug: howto-add-widgets
-tags: How-To
-publish: true
+nav_title: Add Widgets with Kendo UI Web
+title: Add Kendo UI jQuery widgets to an app | Kendo UI Web Documentation
+description: Learn how to add Kendo UI Web widgets to your mobile website or web app.
 ---
 
 # How-To: Add Widgets with Kendo UI Web
@@ -71,14 +68,14 @@ The first step is to add script and stylesheet references for jQuery and Kendo U
     </body>
     </html>
 
-> Style and script references to Kendo UI are accessible via HTTPS. However, they are hosted on Amazon CloudFront. Please refer to the [JavaScript Dependencies of Kendo UI](/kendo-ui/getting-started/javascript-dependencies) for more information about script requirements for Kendo UI Web, Kendo UI DataViz, and Kendo UI Mobile.
+> Style and script references to Kendo UI are accessible via HTTPS. However, they are hosted on Amazon CloudFront. Please refer to the [JavaScript Dependencies of Kendo UI](/getting-started/javascript-dependencies) for more information about script requirements for Kendo UI Web, Kendo UI DataViz, and Kendo UI Mobile.
 
 The next step is to declare a target element for a widget. Depending on the type of widget, this can be represented by a few different elements. Widgets may configured in the following two (2) ways:
 
 * in a script block via a jQuery selector and configuration properties;
 * or, with data-* attributes for configuration properties and via a call to kendo.init().
 
-Here's an example for a pair of [AutoComplete](/kendo-ui/api/web/autocomplete) widgets along with some sample data:
+Here's an example for a pair of [AutoComplete](/api/web/autocomplete) widgets along with some sample data:
 
     <!DOCTYPE html>
     <html lang="en">

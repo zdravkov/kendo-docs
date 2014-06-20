@@ -1,10 +1,7 @@
 ---
-title: kendo.ui.Validator
-meta_title: Validator configuration and methods | Kendo UI Framework
-meta_description: How to configure the Validator in Kendo UI Framework, get error messages and ensure the validation of the input elements in supported methods.
-slug: api-framework-validator
-tags: api,web
-publish: true
+nav_title: kendo.ui.Validator
+title: Validator configuration and methods | Kendo UI Framework
+description: How to configure the Validator in Kendo UI Framework, get error messages and ensure the validation of the input elements in supported methods.
 ---
 
 # kendo.ui.Validator
@@ -13,7 +10,7 @@ publish: true
 
 ### errorTemplate `String`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the validation message.
+The [template](/api/framework/kendo#methods-template) which renders the validation message.
 
 #### Defining custom error template
     <form id="myform">
@@ -72,7 +69,7 @@ By setting already existing key the appropriate built-in message will be overrid
 
 ### rules `Object`
 
-Set of custom validation rules. Those rules will extend the [built-in ones](/kendo-ui/getting-started/framework/validator/overview#default-validation-rules).
+Set of custom validation rules. Those rules will extend the [built-in ones](/getting-started/framework/validator/overview#default-validation-rules).
 
 #### Defining custom rules
 

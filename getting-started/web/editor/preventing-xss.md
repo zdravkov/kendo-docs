@@ -1,12 +1,8 @@
 ---
-title: Preventing XSS
-meta_title: Preventing Cross-site scripting (XSS) attacks with Editor UI widget | Kendo UI Documentation
-meta_description: This help topic explains the security implications of allowing HTML editing in your pages and provide guidelines on how to secure them.
-slug: gs-web-editor-security
-relatedDocs: api-web-editor, gs-web-editor-overview
-tags: getting-started,web
-ordinal: 5
-publish: true
+nav_title: Preventing XSS
+title: Preventing Cross-site scripting (XSS) attacks with Editor UI widget | Kendo UI Documentation
+description: This help topic explains the security implications of allowing HTML editing in your pages and provide guidelines on how to secure them.
+nav_position: 5
 ---
 
 # Overview

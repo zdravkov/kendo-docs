@@ -1,7 +1,5 @@
 ---
-title:TabStripBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.tabstripbuilder
-publish:true
+nav_title: TabStripBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TabStripBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring the TabStrip component.
 
 
 
+
 ## Methods
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.TabStripItemFactory>`)
+
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.TabStripItemFactory\>)
 Defines the items in the tabstrip
 
 
 #### Parameters
 
-##### addAction System.Action<[Kendo.Mvc.UI.Fluent.TabStripItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TabStripItemFactory)>
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.TabStripItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TabStripItemFactory)>
 The add action.
 
 
@@ -34,13 +34,13 @@ The add action.
     %>
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.TabStripEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.TabStripEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.TabStripEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TabStripEventBuilder)>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.TabStripEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TabStripEventBuilder)>
 The client events action.
 
 
@@ -55,7 +55,7 @@ The client events action.
     %>
 
 
-### Animation(`System.Boolean`)
+### Animation(System.Boolean)
 Configures the animation effects of the tabstrip.
 
 
@@ -73,13 +73,13 @@ Whether the component animation is enabled.
     .Animation(false)
 
 
-### Animation(`System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`)
+### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
 Configures the animation effects of the tabstrip.
 
 
 #### Parameters
 
-##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder)>
+##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder)>
 The action that configures the animation.
 
 
@@ -91,7 +91,7 @@ The action that configures the animation.
     .Animation(animation => animation.Open(config => config.Fade(FadeDirection.In)))
 
 
-### BindTo(`System.String,System.Action<Kendo.Mvc.UI.TabStripItem,Kendo.Mvc.SiteMapNode>`)
+### BindTo(System.String,System.Action\<Kendo.Mvc.UI.TabStripItem,Kendo.Mvc.SiteMapNode\>)
 Binds the tabstrip to a sitemap
 
 
@@ -100,7 +100,7 @@ Binds the tabstrip to a sitemap
 ##### viewDataKey `System.String`
 The view data key.
 
-##### siteMapAction System.Action<[Kendo.Mvc.UI.TabStripItem](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem),Kendo.Mvc.SiteMapNode>
+##### siteMapAction System.Action<[Kendo.Mvc.UI.TabStripItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem),Kendo.Mvc.SiteMapNode>
 The action to configure the item.
 
 
@@ -115,7 +115,7 @@ The action to configure the item.
     %>
 
 
-### BindTo(`System.String`)
+### BindTo(System.String)
 Binds the tabstrip to a sitemap.
 
 
@@ -134,7 +134,7 @@ The view data key.
     %>
 
 
-### BindTo(`System.Collections.Generic.IEnumerable<T1>,System.Action<Kendo.Mvc.UI.TabStripItem,T1>`)
+### BindTo(System.Collections.Generic.IEnumerable\<T1\>,System.Action\<Kendo.Mvc.UI.TabStripItem,T1\>)
 Binds the tabstrip to a list of objects
 
 
@@ -143,7 +143,7 @@ Binds the tabstrip to a list of objects
 ##### dataSource `System.Collections.Generic.IEnumerable<T1>`
 The data source.
 
-##### itemDataBound System.Action<[Kendo.Mvc.UI.TabStripItem](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem),T1>
+##### itemDataBound System.Action<[Kendo.Mvc.UI.TabStripItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem),T1>
 The action executed for every data bound item.
 
 
@@ -159,7 +159,7 @@ The action executed for every data bound item.
     %>
 
 
-### SelectedIndex(`System.Int32`)
+### SelectedIndex(System.Int32)
 Selects the item at the specified index.
 
 
@@ -183,13 +183,13 @@ The index.
     %>
 
 
-### ItemAction(`System.Action<Kendo.Mvc.UI.TabStripItem>`)
+### ItemAction(System.Action\<Kendo.Mvc.UI.TabStripItem\>)
 Callback for each item.
 
 
 #### Parameters
 
-##### action System.Action<[Kendo.Mvc.UI.TabStripItem](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem)>
+##### action System.Action<[Kendo.Mvc.UI.TabStripItem](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TabStripItem)>
 Action, which will be executed for each item.
 
 
@@ -207,7 +207,7 @@ Action, which will be executed for each item.
     %>
 
 
-### HighlightPath(`System.Boolean`)
+### HighlightPath(System.Boolean)
 Select item depending on the current URL.
 
 
@@ -226,7 +226,7 @@ If true the item will be highlighted.
     %>
 
 
-### SecurityTrimming(`System.Boolean`)
+### SecurityTrimming(System.Boolean)
 Enable/disable security trimming functionality of the component.
 
 

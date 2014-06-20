@@ -1,7 +1,5 @@
 ---
-title:GridCell
-slug:aspnetmvc-kendo.mvc.ui.gridcell
-publish:true
+nav_title: GridCell
 ---
 
 # Kendo.Mvc.UI.GridCell

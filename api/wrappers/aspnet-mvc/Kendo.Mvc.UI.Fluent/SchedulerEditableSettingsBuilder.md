@@ -1,7 +1,5 @@
 ---
-title:SchedulerEditableSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulereditablesettingsbuilder
-publish:true
+nav_title: SchedulerEditableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the 1.
 
 
 
+
 ## Methods
 
-### Create(`System.Boolean`)
+
+### Create(System.Boolean)
 If set to true the user can create new events. Creating is enabled by default.
 
 
@@ -24,7 +24,7 @@ The create
 
 
 
-### Destroy(`System.Boolean`)
+### Destroy(System.Boolean)
 If set to true the user can delete events from the view by clicking the "destroy" button. Deleting is enabled by default.
 
 
@@ -37,7 +37,7 @@ The destroy
 
 
 
-### Update(`System.Boolean`)
+### Update(System.Boolean)
 If set to true the user can update events. Updating is enabled by default.
 
 
@@ -50,7 +50,7 @@ The update
 
 
 
-### Template(`System.String`)
+### Template(System.String)
 The template which renders the editor.
 
 
@@ -63,7 +63,7 @@ The template
 
 
 
-### TemplateId(`System.String`)
+### TemplateId(System.String)
 The Id of the template which renders the editor.
 
 
@@ -76,7 +76,7 @@ The templateId
 
 
 
-### TemplateName(`System.String`)
+### TemplateName(System.String)
 The EditorTemplate which to be rendered as editor.
 
 
@@ -89,7 +89,7 @@ The name of the EditorTemplate
 
 
 
-### Confirmation(`System.String`)
+### Confirmation(System.String)
 The text which the scheduler will display in a confirmation dialog when the user clicks the "destroy" button.
 
 
@@ -102,7 +102,7 @@ The message
 
 
 
-### Resize(`System.Boolean`)
+### Resize(System.Boolean)
 If set to false the resizing of the events will be disabled. Resizing is enabled by default.
 
 
@@ -115,7 +115,20 @@ The resize option
 
 
 
-### Confirmation(`System.Boolean`)
+### Move(System.Boolean)
+If set to false the moving of the events will be disabled. Moving is enabled by default.
+
+
+#### Parameters
+
+##### enable `System.Boolean`
+The move option
+
+
+
+
+
+### Confirmation(System.Boolean)
 If set to true the scheduler will display a confirmation dialog when the user clicks the "destroy" button. Confirmation dialog is enabled by default.
 
 

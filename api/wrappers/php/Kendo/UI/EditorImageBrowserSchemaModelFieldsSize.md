@@ -1,8 +1,5 @@
 ---
-title: EditorImageBrowserSchemaModelFieldsSize
-slug: php-ui-editorimagebrowserschemamodelfieldssize
-tags: api, php
-publish: true
+nav_title: EditorImageBrowserSchemaModelFieldsSize
 ---
 
 # \Kendo\UI\EditorImageBrowserSchemaModelFieldsSize

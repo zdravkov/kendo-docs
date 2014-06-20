@@ -1,8 +1,5 @@
 ---
-title: qRCode-border
-slug: jsp-qRCode-border
-tags: api, java
-publish: true
+nav_title: qRCode-border
 ---
 
 # \<kendo:qRCode-border\>

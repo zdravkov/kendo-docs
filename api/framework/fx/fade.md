@@ -1,7 +1,5 @@
 ---
-title: FX Fade
-slug: api-fx-fade
-publish: true
+nav_title: FX Fade
 ---
 
 # Fade

@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemLabelsBorder
-slug: php-dataviz-ui-sparklineseriesitemlabelsborder
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemLabelsBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemLabelsBorder

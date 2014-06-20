@@ -1,9 +1,7 @@
 ---
-title: Troubleshooting
-meta_title: Troubleshooting in Kendo UI JavaScript framework
-meta_description: Find solutions for common problems when working with Kendo UI widgets: JavaScript errors, versions availability on CDN, undefined widget object.
-slug: widget-troubleshooting
-publish: true
+nav_title: Troubleshooting
+title: Troubleshooting in Kendo UI JavaScript framework
+description: "Find solutions for common problems when working with Kendo UI widgets: JavaScript errors, versions availability on CDN, undefined widget object."
 ---
 
 # Troubleshooting
@@ -33,7 +31,7 @@ Make sure that jQuery is included **only before** the Kendo UI JavaScript files 
 ### JavaScript error that Kendo widgets are unavailable or undefined
 
 If jQuery is included more than once in the page all existing jQuery plugins (including Kendo UI) will be wiped out. Will also occur
-if the [required Kendo JavaScript files](/kendo-ui/getting-started/javascript-dependencies) are not included.
+if the [required Kendo JavaScript files](/getting-started/javascript-dependencies) are not included.
 
 The following JavaScript errors will be thrown (depending on the browser):
 
@@ -45,7 +43,7 @@ The following JavaScript errors will be thrown (depending on the browser):
 > **Note**: All Kendo widgets will be affected by this problem, not just the Kendo Grid. Just the error message will be different e.g. "kendoChart is not a function" or "Object has no method kendoEditor".
 
 #### Solution
-Make sure jQuery is not included more than once in your page. Remove any duplicate `script` references to jQuery. Include all [required Kendo JavaScript files](/kendo-ui/getting-started/javascript-dependencies).
+Make sure jQuery is not included more than once in your page. Remove any duplicate `script` references to jQuery. Include all [required Kendo JavaScript files](/getting-started/javascript-dependencies).
 
 ### JavaScript error that Kendo widgets cannot be initialized in IE (Compatibility mode)
 
@@ -69,7 +67,7 @@ where more information can be found.
 
 ## Scripts or stylesheets do not load from the Kendo UI CDN
 
-Please refer to [Kendo UI CDN Fallback and Troubleshooting](/kendo-ui/getting-started/javascript-dependencies#cdn-fallback-and-troubleshooting).
+Please refer to [Kendo UI CDN Fallback and Troubleshooting](/getting-started/javascript-dependencies#cdn-fallback-and-troubleshooting).
 
 ## The widget object is undefined after loading a page through AJAX
 
@@ -104,7 +102,7 @@ The solution is to load a partial HTML fragment that doesn't contain any unneede
 
 Change event of an input widget is triggered only by user action. DOM elements work in the same way.
 
-If you need to trigger an event manually use the [trigger method](/kendo-ui/api/framework/widget#trigger).
+If you need to trigger an event manually use the [trigger method](/api/framework/widget#trigger).
 
 ## Creating two or more widgets produces JavaScript errors or only the first one is initialized/working.
 

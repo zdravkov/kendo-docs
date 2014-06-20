@@ -1,7 +1,5 @@
 ---
-title:SchedulerViewEditableSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulervieweditablesettingsbuilder
-publish:true
+nav_title: SchedulerViewEditableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewEditableSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the SchedulerViewEditableSettings.
 
 
 
+
 ## Methods
 
-### Create(`System.Boolean`)
+
+### Create(System.Boolean)
 If set to true the user can create new events. Creating is enabled by default.
 
 
@@ -24,7 +24,7 @@ The create
 
 
 
-### Destroy(`System.Boolean`)
+### Destroy(System.Boolean)
 If set to true the user can delete events from the view by clicking the "destroy" button. Deleting is enabled by default.
 
 
@@ -37,7 +37,7 @@ The destroy
 
 
 
-### Update(`System.Boolean`)
+### Update(System.Boolean)
 If set to true the user can update events. Updating is enabled by default.
 
 

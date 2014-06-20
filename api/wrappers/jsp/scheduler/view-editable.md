@@ -1,8 +1,5 @@
 ---
-title: scheduler-view-editable
-slug: jsp-scheduler-view-editable
-tags: api, java
-publish: true
+nav_title: scheduler-view-editable
 ---
 
 # \<kendo:scheduler-view-editable\>

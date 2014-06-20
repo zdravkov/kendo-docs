@@ -1,14 +1,11 @@
 ---
-title: Using Kendo In Responsive Web Pages
-slug: gs-using-kendo-in-responsive-web-pages
-tags: 101, Getting Started, Twitter Bootstrap
-meta_description: How to auto-resize kendo widgets when put in resizable containers (splitter or window).
-publish: true
+nav_title: Using Kendo In Responsive Web Pages
+description: How to auto-resize kendo widgets when put in resizable containers (splitter or window).
 ---
 
 # Using Kendo with In Responsive Web Pages
 
-Most Kendo UI Widgets work and auto-resize when used in responsive web pages out of the box. Several widgets will need an additonal [kendo.resize](/kendo-ui/api/framework/kendo#methods-resize) in case their dimensions are set to percentage values.
+Most Kendo UI Widgets work and auto-resize when used in responsive web pages out of the box. Several widgets will need an additonal [kendo.resize](/api/framework/kendo#methods-resize) in case their dimensions are set to percentage values.
 
 ## Widgets that do not suppport auto resizing when container is resized: ##
 

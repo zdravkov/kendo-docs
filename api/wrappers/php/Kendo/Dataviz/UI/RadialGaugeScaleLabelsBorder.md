@@ -1,8 +1,5 @@
 ---
-title: RadialGaugeScaleLabelsBorder
-slug: php-dataviz-ui-radialgaugescalelabelsborder
-tags: api, php
-publish: true
+nav_title: RadialGaugeScaleLabelsBorder
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugeScaleLabelsBorder

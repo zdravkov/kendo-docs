@@ -1,28 +1,32 @@
 ---
-title:ChartCandlestickSeriesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartcandlestickseriesbuilder
-publish:true
+nav_title: ChartCandlestickSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesBuilder
 Defines the fluent interface for configuring candlestick series.
 
 
+
 ## Properties
+
+
 ### Series
+
 Gets or sets the series.
+
 
 
 
 ## Methods
 
-### Overlay(`Kendo.Mvc.UI.ChartBarSeriesOverlay`)
+
+### Overlay(Kendo.Mvc.UI.ChartBarSeriesOverlay)
 Sets the bar effects overlay
 
 
 #### Parameters
 
-##### overlay [Kendo.Mvc.UI.ChartBarSeriesOverlay](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarSeriesOverlay)
+##### overlay [Kendo.Mvc.UI.ChartBarSeriesOverlay](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarSeriesOverlay)
 The candlestick effects overlay. The default is ChartBarSeriesOverlay.Glass
 
 
@@ -36,13 +40,13 @@ The candlestick effects overlay. The default is ChartBarSeriesOverlay.Glass
     %>
 
 
-### Highlight(`System.Action<Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder>`)
+### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder\>)
 Configures the series highlight
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartCandlestickSeriesHighlightBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartCandlestickSeriesHighlightBuilder)>
 The configuration action.
 
 

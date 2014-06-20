@@ -1,9 +1,6 @@
 ---
-title: kendo.ui
-meta_description: Documentation on helper methods for writing new widgets and show progress with a loading message.
-slug: web-kendo.ui
-tags: api,web
-publish: true
+nav_title: kendo.ui
+description: Documentation on helper methods for writing new widgets and show progress with a loading message.
 ---
 
 # kendo.ui

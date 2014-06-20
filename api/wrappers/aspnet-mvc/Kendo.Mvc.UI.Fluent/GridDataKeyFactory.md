@@ -1,7 +1,5 @@
 ---
-title:GridDataKeyFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.griddatakeyfactory
-publish:true
+nav_title: GridDataKeyFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.GridDataKeyFactory
@@ -9,9 +7,11 @@ Creates data key for the 1.
 
 
 
+
 ## Methods
 
-### Add(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+
+### Add(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Defines a data key.
 
 

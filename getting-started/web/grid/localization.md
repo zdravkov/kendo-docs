@@ -1,8 +1,6 @@
 ---
-title: Localization
-slug: grid-localization
-ordinal: 4
-publish: true
+nav_title: Localization
+nav_position: 4
 ---
 
 # Grid Localization
@@ -20,7 +18,7 @@ Kendo Grid provides a way to localize the user interface using the configuration
 		{ name: "cancel", text: "Custom Cancel" }
 	]
 
-More info can be found in the [toolbar](/kendo-ui/api/web/grid#toolbar-array) section of the Grid API reference.
+More info can be found in the [toolbar](/api/web/grid#toolbar-array) section of the Grid API reference.
 
 ## Localization of the column commands:
 
@@ -42,7 +40,7 @@ More info can be found in the [toolbar](/kendo-ui/api/web/grid#toolbar-array) se
         }
     ]
 
-More info can be found in the [columns.command](/kendo-ui/api/web/grid#columnscommand-stringarray) section of the Grid API reference.
+More info can be found in the [columns.command](/api/web/grid#columnscommand-stringarray) section of the Grid API reference.
     
 ## Localization of the filter menu
 
@@ -95,7 +93,7 @@ More info can be found in the [columns.command](/kendo-ui/api/web/grid#columnsco
 		}
 	}
 
-More info can be found in the [filterable](/kendo-ui/api/web/grid#filterablemessages-object) section of the Grid API reference.
+More info can be found in the [filterable](/api/web/grid#filterablemessages-object) section of the Grid API reference.
 
 ## Localization of the grouping header
 
@@ -105,7 +103,7 @@ More info can be found in the [filterable](/kendo-ui/api/web/grid#filterablemess
         }
     }
 
-More info can be found in the [groupable.messages](/kendo-ui/api/web/grid#groupablemessages-object) section of the Grid API reference.
+More info can be found in the [groupable.messages](/api/web/grid#groupablemessages-object) section of the Grid API reference.
 
 ## Localization of the column menu
 
@@ -118,7 +116,7 @@ More info can be found in the [groupable.messages](/kendo-ui/api/web/grid#groupa
         }
     }
 
-More info can be found in the [columnMenu.messages](/kendo-ui/api/web/grid#columnmenumessages-object) section of the Grid API reference.
+More info can be found in the [columnMenu.messages](/api/web/grid#columnmenumessages-object) section of the Grid API reference.
 
 ## Localization of the pager
 
@@ -137,4 +135,4 @@ More info can be found in the [columnMenu.messages](/kendo-ui/api/web/grid#colum
         }
     }
 
-More info can be found in the [messages](/kendo-ui/api/web/pager#messages-object) section of the Pager API reference.
+More info can be found in the [messages](/api/web/pager#messages-object) section of the Pager API reference.

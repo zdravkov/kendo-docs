@@ -1,8 +1,5 @@
 ---
-title: stockChart-legend-inactiveItems-labels
-slug: jsp-stockChart-legend-inactiveItems-labels
-tags: api, java
-publish: true
+nav_title: stockChart-legend-inactiveItems-labels
 ---
 
 # \<kendo:stockChart-legend-inactiveItems-labels\>

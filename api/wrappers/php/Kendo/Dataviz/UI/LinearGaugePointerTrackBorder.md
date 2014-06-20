@@ -1,8 +1,5 @@
 ---
-title: LinearGaugePointerTrackBorder
-slug: php-dataviz-ui-lineargaugepointertrackborder
-tags: api, php
-publish: true
+nav_title: LinearGaugePointerTrackBorder
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugePointerTrackBorder

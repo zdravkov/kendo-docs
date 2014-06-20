@@ -1,8 +1,5 @@
 ---
-title: scheduler-view-group
-slug: jsp-scheduler-view-group
-tags: api, java
-publish: true
+nav_title: scheduler-view-group
 ---
 
 # \<kendo:scheduler-view-group\>

@@ -1,15 +1,11 @@
 ---
-title: kendo.ui.MultiSelect
-meta_title: Configuration, methods and events of Kendo UI MultiSelect
-slug: api-web-multiselect
-relatedDocs: gs-web-multiselect-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.MultiSelect
+title: Configuration, methods and events of Kendo UI MultiSelect
 ---
 
 # kendo.ui.MultiSelect
 
-Represents the Kendo UI MultiSelect widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI MultiSelect widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
@@ -73,7 +69,7 @@ Configures the opening and closing animations of the suggestion popup. Setting t
 
 The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.close.duration `Number` *(default: 100)*
 
@@ -104,7 +100,7 @@ The animation played when the suggestion popup is opened.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.open.duration `Number` *(default: 200)*
 
@@ -144,12 +140,12 @@ Controls whether to close the widget suggestion list on item selection.
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
-The data source of the widget which is used to display a list of values. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/kendo-ui/api/framework/datasource)
+The data source of the widget which is used to display a list of values. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
 
-If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/kendo-ui/api/framework/datasource) instance using that value as data source configuration.
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/api/framework/datasource) instance using that value as data source configuration.
 
-If the `dataSource` option is an existing [kendo.data.DataSource](/kendo-ui/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
 
 #### Example - set dataSource as a JavaScript object
 
@@ -418,7 +414,7 @@ Specifies a static HTML content, which will be rendered as a header of the popup
 
 ### itemTemplate `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) used to render the items in the popup list.
+The [template](/api/framework/kendo#methods-template) used to render the items in the popup list.
 
 #### Example - specify template as a function
 
@@ -458,7 +454,7 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) used to render th
 
 ### tagTemplate `String`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) used to render the tags.
+The [template](/api/framework/kendo#methods-template) used to render the tags.
 
 #### Example - specify template as a function
 
@@ -527,7 +523,7 @@ The [template](/kendo-ui/api/framework/kendo#methods-template) used to render th
 
 ### valuePrimitive `Boolean`*(default: false)*
 
-Specifies the [value binding](/kendo-ui/getting-started/framework/mvvm/bindings/value) behavior for the widget. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+Specifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
 
 #### Example - specify that the View-Model field should be updated with the selected item value
 
@@ -555,7 +551,7 @@ Specifies the [value binding](/kendo-ui/getting-started/framework/mvvm/bindings/
 
 ### dataSource `kendo.data.DataSource`
 
-The [data source](/kendo-ui/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
+The [data source](/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
 
 > Changes of the data source will be reflected in the widget.
 

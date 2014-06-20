@@ -1,7 +1,5 @@
 ---
-title:SchedulerMonthViewBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulermonthviewbuilder
-publish:true
+nav_title: SchedulerMonthViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerMonthViewBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the SchedulerMonthView.
 
 
 
+
 ## Methods
 
-### DayTemplate(`System.String`)
+
+### DayTemplate(System.String)
 The template used to render the day slots in month view.
 
 
@@ -24,7 +24,7 @@ The dayTemplate
 
 
 
-### DayTemplateId(`System.String`)
+### DayTemplateId(System.String)
 The Id of the template used to render the day slots in month view.
 
 
@@ -37,7 +37,7 @@ The dayTemplateId
 
 
 
-### EventHeight(`System.Int32`)
+### EventHeight(System.Int32)
 The height of the scheduler event rendered in month view.
 
 

@@ -1,18 +1,16 @@
 ---
-title: Overview
-slug: jsp-stockchart-overview
-publish: true
+nav_title: Overview
 ---
 
 # StockChart
 
-The Chart tag is a server-side wrapper for the [Kendo UI StockChart](/kendo-ui/api/dataviz/stock-chart) widget.
+The Chart tag is a server-side wrapper for the [Kendo UI StockChart](/api/dataviz/stock-chart) widget.
 
 ## Getting Started
 
 Here is how to configure the Kendo StockChart for binding to a data passed as model attribute in Spring MVC:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/jsp/introduction) help topic.
 
 2.  Create a new action method and pass the InternetUsers list as the model:
 
@@ -41,7 +39,7 @@ Here is how to configure the Kendo StockChart for binding to a data passed as mo
 ## Accessing an Existing StockChart
 
 You can reference an existing chart instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/dataviz/stock-chart#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/dataviz/stock-chart#methods) to control its behavior.
 
 ### Accessing an existing StockChart instance
 
@@ -55,7 +53,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/datav
 
 ## Handling Kendo UI StockChart events
 
-You can subscribe to all [events](/kendo-ui/api/dataviz/stock-chart#events) exposed by Kendo UI StockChart:
+You can subscribe to all [events](/api/dataviz/stock-chart#events) exposed by Kendo UI StockChart:
 
 
 ### Subscribe by handler name

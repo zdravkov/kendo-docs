@@ -1,8 +1,5 @@
 ---
-title: RadialGaugePointerCap
-slug: php-dataviz-ui-radialgaugepointercap
-tags: api, php
-publish: true
+nav_title: RadialGaugePointerCap
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugePointerCap

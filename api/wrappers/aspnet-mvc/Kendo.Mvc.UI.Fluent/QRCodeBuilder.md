@@ -1,7 +1,5 @@
 ---
-title:QRCodeBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.qrcodebuilder
-publish:true
+nav_title: QRCodeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.QRCodeBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the QRCode component.
 
 
 
+
 ## Methods
 
-### Background(`System.String`)
+
+### Background(System.String)
 Sets the background color of the QR code.
 
 
@@ -36,7 +36,7 @@ The QR code background color.
     %>
 
 
-### Border(`System.String,System.Int32`)
+### Border(System.String,System.Int32)
 Sets the border width and color of the QR code.
 
 
@@ -64,13 +64,13 @@ The QR code border width.
     %>
 
 
-### Border(`System.Action<Kendo.Mvc.UI.Fluent.QRBorderBuilder>`)
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.QRBorderBuilder\>)
 Sets the border configuration of the QRCode.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.QRBorderBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/QRBorderBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.QRBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/QRBorderBuilder)>
 The lambda which configures the border.
 
 
@@ -99,7 +99,7 @@ The lambda which configures the border.
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the color of the QR code.
 
 
@@ -124,13 +124,13 @@ The QR code color.
     %>
 
 
-### Encoding(`Kendo.Mvc.UI.QREncoding`)
+### Encoding(Kendo.Mvc.UI.QREncoding)
 Sets the encoding of the QR code.
 
 
 #### Parameters
 
-##### encoding [Kendo.Mvc.UI.QREncoding](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/QREncoding)
+##### encoding [Kendo.Mvc.UI.QREncoding](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/QREncoding)
 The QR code encoding.
 
 
@@ -149,13 +149,13 @@ The QR code encoding.
     %>
 
 
-### ErrorCorrection(`Kendo.Mvc.UI.QRErrorCorrectionLevel`)
+### ErrorCorrection(Kendo.Mvc.UI.QRErrorCorrectionLevel)
 Sets the error correction level of the QR code.
 
 
 #### Parameters
 
-##### errorCorrection [Kendo.Mvc.UI.QRErrorCorrectionLevel](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/QRErrorCorrectionLevel)
+##### errorCorrection [Kendo.Mvc.UI.QRErrorCorrectionLevel](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/QRErrorCorrectionLevel)
 The QR code error correction level.
 
 
@@ -174,7 +174,7 @@ The QR code error correction level.
     %>
 
 
-### Size(`System.Int32`)
+### Size(System.Int32)
 Sets the size of the QR code.
 
 
@@ -199,7 +199,7 @@ The QR code size.
     %>
 
 
-### Value(`System.String`)
+### Value(System.String)
 Sets the value of the QR code.
 
 
@@ -224,7 +224,7 @@ The QR value.
     %>
 
 
-### Padding(`System.Int32`)
+### Padding(System.Int32)
 Sets the padding of the QR code.
 
 
@@ -249,14 +249,14 @@ The QR padding.
     %>
 
 
-### RenderAs(`Kendo.Mvc.UI.RenderingMode`)
+### RenderAs(Kendo.Mvc.UI.RenderingMode)
 Sets the preferred rendering engine.
             If it is not supported by the browser, the Chart will switch to the first available mode.
 
 
 #### Parameters
 
-##### renderAs [Kendo.Mvc.UI.RenderingMode](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/RenderingMode)
+##### renderAs [Kendo.Mvc.UI.RenderingMode](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/RenderingMode)
 The preferred rendering engine.
 
 

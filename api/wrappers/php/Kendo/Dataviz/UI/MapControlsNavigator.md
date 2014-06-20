@@ -1,8 +1,5 @@
 ---
-title: MapControlsNavigator
-slug: php-dataviz-ui-mapcontrolsnavigator
-tags: api, php
-publish: true
+nav_title: MapControlsNavigator
 ---
 
 # \Kendo\Dataviz\UI\MapControlsNavigator

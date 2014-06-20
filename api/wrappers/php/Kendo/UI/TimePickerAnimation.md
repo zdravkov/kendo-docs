@@ -1,8 +1,5 @@
 ---
-title: TimePickerAnimation
-slug: php-ui-timepickeranimation
-tags: api, php
-publish: true
+nav_title: TimePickerAnimation
 ---
 
 # \Kendo\UI\TimePickerAnimation
@@ -24,7 +21,7 @@ The animation played when the popup is closed.
 ##### $value `\Kendo\UI\TimePickerAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\TimePickerAnimationClose](/kendo-ui/api/wrappers/php/Kendo/UI/TimePickerAnimationClose)
+#### Example - using [\Kendo\UI\TimePickerAnimationClose](/api/wrappers/php/Kendo/UI/TimePickerAnimationClose)
     <?php
     $animation = new \Kendo\UI\TimePickerAnimation();
     $close = new \Kendo\UI\TimePickerAnimationClose();
@@ -53,7 +50,7 @@ The animation played when the calendar popup is opened.
 ##### $value `\Kendo\UI\TimePickerAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\TimePickerAnimationOpen](/kendo-ui/api/wrappers/php/Kendo/UI/TimePickerAnimationOpen)
+#### Example - using [\Kendo\UI\TimePickerAnimationOpen](/api/wrappers/php/Kendo/UI/TimePickerAnimationOpen)
     <?php
     $animation = new \Kendo\UI\TimePickerAnimation();
     $open = new \Kendo\UI\TimePickerAnimationOpen();

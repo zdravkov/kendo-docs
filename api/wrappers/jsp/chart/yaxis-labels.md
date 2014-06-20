@@ -1,8 +1,5 @@
 ---
-title: chart-yAxis-labels
-slug: jsp-chart-yAxis-labels
-tags: api, java
-publish: true
+nav_title: chart-yAxis-labels
 ---
 
 # \<kendo:chart-yAxis-labels\>

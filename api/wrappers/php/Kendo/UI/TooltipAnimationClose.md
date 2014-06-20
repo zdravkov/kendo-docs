@@ -1,8 +1,5 @@
 ---
-title: TooltipAnimationClose
-slug: php-ui-tooltipanimationclose
-tags: api, php
-publish: true
+nav_title: TooltipAnimationClose
 ---
 
 # \Kendo\UI\TooltipAnimationClose

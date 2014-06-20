@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: How to use ComboBox HtmlHelper extension | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI ComboBox for ASP.NET MVC widget.
-slug: mvc-combobox-overview
-publish: true
+nav_title: Overview
+title: How to use ComboBox HtmlHelper extension | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI ComboBox for ASP.NET MVC widget.
 ---
 
 # ComboBox
 
-The ComboBox HtmlHelper extension is a server-side wrapper for the [Kendo UI ComboBox](/kendo-ui/api/web/combobox) widget.
+The ComboBox HtmlHelper extension is a server-side wrapper for the [Kendo UI ComboBox](/api/web/combobox) widget.
 
 ## Getting Started
 
@@ -21,7 +19,7 @@ There are two ways to bind a Kendo ComboBox for ASP.NET MVC:
 
 Here is how to configure the Kendo ComboBox for server binding to the Northwind Products table using Linq to SQL:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method and pass the Products table as the model:
 
@@ -63,7 +61,7 @@ Here is how to configure the Kendo ComboBox for server binding to the Northwind 
 
 Here is how to configure the Kendo ComboBox for ajax binding to the Northwind Products table using Linq to SQL:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create an action method which renders the view:
 
@@ -218,7 +216,7 @@ As you can see the combobox sends the input's value only if the end-user starts 
 ## Accessing an Existing ComboBox
 
 You can reference an existing ComboBox instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/combobox#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/combobox#methods) to control its behavior.
 
 
 ### Accessing an existing ComboBox instance
@@ -234,7 +232,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/c
 
 ## Handling Kendo UI ComboBox events
 
-You can subscribe to all [events](/kendo-ui/api/web/combobox#events) exposed by Kendo UI ComboBox:
+You can subscribe to all [events](/api/web/combobox#events) exposed by Kendo UI ComboBox:
 
 ### WebForms - subscribe by handler name
 

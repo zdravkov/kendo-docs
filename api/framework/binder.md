@@ -1,8 +1,5 @@
 ---
-title: kendo.data.Binder
-slug: api-framework-binder
-tags: api,framework
-publish: true
+nav_title: kendo.data.Binder
 ---
 
 # kendo.data.Binder

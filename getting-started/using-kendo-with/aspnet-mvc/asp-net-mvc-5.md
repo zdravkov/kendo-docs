@@ -1,9 +1,7 @@
 ---
-title: ASP.NET MVC 5
-meta_title: Using Kendo UI with ASP.NET MVC 5
-meta_description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 5 applications
-slug: mvc-5
-publish: true
+nav_title: ASP.NET MVC 5
+title: Using Kendo UI with ASP.NET MVC 5
+description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 5 applications
 ---
 # Kendo UI in ASP.NET MVC 5 applications
 This tutorial shows how to use Telerik UI for ASP.NET MVC in ASP.NET MVC 5 applications. The tutorial uses Visual Studio 2013 but will work with all Visual Studio versions that support ASP.NET MVC 5. The tutorial also creates a new ASP.NET MVC 5 application but the steps to use Kendo UI in exsiting ASP.NET MVC 5 application are the same.
@@ -151,6 +149,6 @@ Finally lets use a Kendo UI widget.
 
 ## Next steps
 
-* [Fundamentals](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/fundamentals)
-* [Using the Kendo UI Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
-* [Troubleshooting](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/troubleshooting)
+* [Fundamentals](/getting-started/using-kendo-with/aspnet-mvc/fundamentals)
+* [Using the Kendo UI Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/vs-integration/introduction)
+* [Troubleshooting](/getting-started/using-kendo-with/aspnet-mvc/troubleshooting)

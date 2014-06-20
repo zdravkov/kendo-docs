@@ -1,8 +1,5 @@
 ---
-title: grid-columnMenu
-slug: jsp-grid-columnMenu
-tags: api, java
-publish: true
+nav_title: grid-columnMenu
 ---
 
 # \<kendo:grid-columnMenu\>
@@ -48,7 +45,7 @@ If set to true the column menu would allow the user to sort the grid by the colu
 
 The text messages displayed in the column menu. Use it to customize or localize the column menu messages.
 
-More documentation is available at [kendo:grid-columnMenu-messages](/kendo-ui/api/wrappers/jsp/grid/columnmenu-messages).
+More documentation is available at [kendo:grid-columnMenu-messages](/api/wrappers/jsp/grid/columnmenu-messages).
 
 #### Example
 

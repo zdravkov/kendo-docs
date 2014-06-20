@@ -1,10 +1,7 @@
 ---
-title: kendo
-meta_title: API Reference for methods and properties in Kendo UI Framework
-meta_description: Examples and detailed explanation of Kendo UI methods and properties.
-slug: api-framework
-tags: api,framework
-publish: true
+nav_title: kendo
+title: API Reference for methods and properties in Kendo UI Framework
+description: Examples and detailed explanation of Kendo UI methods and properties.
 ---
 
 # kendo
@@ -608,7 +605,7 @@ The format string which should be used to format the value.
 
 ##### culture `String`
 
-The name of the culture which should be used to format the value. [The culture should be registered on the page](/kendo-ui/getting-started/framework/globalization/overview#add culture scripts to the page).
+The name of the culture which should be used to format the value. [The culture should be registered on the page](/getting-started/framework/globalization/overview#add culture scripts to the page).
 
 ### unbind
 
@@ -672,10 +669,10 @@ The DOM element that may have a Kendo UI instance attached to it.
 	var widget = kendo.widgetInstance(textbox);
 	if (widget) {
 		// execute an API method
-		widget.value(/kendo-ui/* ... */);
+		widget.value(/* ... */);
 	} else {
 		// execute generic jQuery method
-		textbox.val(/kendo-ui/* ... */);
+		textbox.val(/* ... */);
 	}
 
 ## Fields

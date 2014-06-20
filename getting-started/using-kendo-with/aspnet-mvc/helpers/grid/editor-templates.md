@@ -1,9 +1,7 @@
 ---
-title: Editor Templates
-meta_title: Editor Templates for Kendo UI Grid ASP.NET MVC
-meta_description: How to create the editing UI of Kendo Grid ASP.NET MVC with ASP.NET MVC editor templates.
-slug: mvc-grid-editor-templates
-publish: true
+nav_title: Editor Templates
+title: Editor Templates for Kendo UI Grid ASP.NET MVC
+description: How to create the editing UI of Kendo Grid ASP.NET MVC with ASP.NET MVC editor templates.
 ---
 
 # Editor Templates

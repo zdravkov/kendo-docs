@@ -1,7 +1,5 @@
 ---
-title:PanelBarItemFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.panelbaritemfactory
-publish:true
+nav_title: PanelBarItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.PanelBarItemFactory

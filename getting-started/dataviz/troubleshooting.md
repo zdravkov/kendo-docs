@@ -1,9 +1,7 @@
 ---
-title: Troubleshooting
-meta_title: Troubleshooting guide for Kendo UI DataViz
-meta_description: Find a detailed list of common issues and possible solutions for Kendo UI DataViz suite.
-slug: dataviz-troubleshooting
-publish: true
+nav_title: Troubleshooting
+title: Troubleshooting guide for Kendo UI DataViz
+description: Find a detailed list of common issues and possible solutions for Kendo UI DataViz suite.
 ---
 
 List of common problems and suggested solutions.

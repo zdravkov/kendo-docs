@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-title-padding
-slug: jsp-chart-yAxisItem-title-padding
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-title-padding
 ---
 
 # \<kendo:chart-yAxisItem-title-padding\>

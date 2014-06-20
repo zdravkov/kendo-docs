@@ -1,7 +1,5 @@
 ---
-title:DropDownListItemFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.dropdownlistitemfactory
-publish:true
+nav_title: DropDownListItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DropDownListItemFactory
@@ -9,7 +7,9 @@ Creates items for the DropDownListItem.
 
 
 
+
 ## Methods
+
 
 ### Add
 Defines a item.

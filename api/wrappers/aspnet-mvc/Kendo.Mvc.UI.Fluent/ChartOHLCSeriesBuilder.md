@@ -1,7 +1,5 @@
 ---
-title:ChartOHLCSeriesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartohlcseriesbuilder
-publish:true
+nav_title: ChartOHLCSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartOHLCSeriesBuilder
@@ -9,25 +7,27 @@ Defines the fluent interface for configuring bar series.
 
 
 
+
 ## Methods
 
-### Aggregate(`System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>,System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>,System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>,System.Nullable<Kendo.Mvc.UI.ChartSeriesAggregate>`)
+
+### Aggregate(System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>,System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>,System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>,System.Nullable\<Kendo.Mvc.UI.ChartSeriesAggregate\>)
 Sets the aggregate function for date series.
             This function is used when a category (an year, month, etc.) contains two or more points.
 
 
 #### Parameters
 
-##### open System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
+##### open System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
 Open aggregate name.
 
-##### high System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
+##### high System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
 High aggregate name.
 
-##### low System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
+##### low System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
 Low aggregate name.
 
-##### close System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
+##### close System.Nullable<[Kendo.Mvc.UI.ChartSeriesAggregate](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartSeriesAggregate)>
 Close aggregate name.
 
 
@@ -40,7 +40,7 @@ Close aggregate name.
     %>
 
 
-### Gap(`System.Double`)
+### Gap(System.Double)
 Set distance between category clusters. 
             
             A value of 1 means that there is a total of 1 point width between categories. 
@@ -57,7 +57,7 @@ Set distance between category clusters.
     %>
 
 
-### Spacing(`System.Double`)
+### Spacing(System.Double)
 Sets a value indicating the distance between points in the same category.
 
 
@@ -77,7 +77,7 @@ Value of 1 means that the distance between points in the same category.
     %>
 
 
-### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the points border
 
 
@@ -89,7 +89,7 @@ The points border width.
 ##### color `System.String`
 The points border color (CSS syntax).
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The points border dash type.
 
 
@@ -103,7 +103,7 @@ The points border dash type.
     %>
 
 
-### Line(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+### Line(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Configures the ohlc chart lines.
 
 
@@ -115,7 +115,7 @@ The lines width.
 ##### color `System.String`
 The lines color.
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The lines dashType.
 
 
@@ -132,7 +132,7 @@ The lines dashType.
     %>
 
 
-### Line(`System.Int32`)
+### Line(System.Int32)
 Configures the ohlc line width.
 
 
@@ -145,7 +145,7 @@ The lines width.
 
 
 
-### Line(`System.Int32,System.String`)
+### Line(System.Int32,System.String)
 Configures the ohlc lines.
 
 
@@ -161,13 +161,13 @@ The lines color.
 
 
 
-### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartLineBuilder>`)
+### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartLineBuilder\>)
 Configures the ohlc chart lines.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartLineBuilder)>
 The configuration action.
 
 
@@ -184,17 +184,166 @@ The configuration action.
     %>
 
 
-### Highlight(`System.Action<Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder>`)
+### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder\>)
 Configures the series highlight
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartOHLCSeriesHighlightBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartOHLCSeriesHighlightBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartOHLCSeriesHighlightBuilder)>
 The configuration action.
 
 
 
+
+
+### OpenField(System.String)
+Sets the open field for the series
+
+
+#### Parameters
+
+##### openField `System.String`
+The open field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.OHLC(Model.Records).OpenField("Open").HighField("High").LowField("Low").CloseField("Close"))
+        .Render();
+    %>
+
+
+### CloseField(System.String)
+Sets the close field for the series
+
+
+#### Parameters
+
+##### closeField `System.String`
+The close field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.OHLC(Model.Records).OpenField("Open").HighField("High").LowField("Low").CloseField("Close"))
+        .Render();
+    %>
+
+
+### HighField(System.String)
+Sets the high field for the series
+
+
+#### Parameters
+
+##### highField `System.String`
+The high field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.OHLC(Model.Records).OpenField("Open").HighField("High").LowField("Low").CloseField("Close"))
+        .Render();
+    %>
+
+
+### LowField(System.String)
+Sets the low field for the series
+
+
+#### Parameters
+
+##### lowField `System.String`
+The low field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.OHLC(Model.Records).OpenField("Open").HighField("High").LowField("Low").CloseField("Close"))
+        .Render();
+    %>
+
+
+### Fields(System.String,System.String,System.String,System.String)
+Sets the value fields for the series
+
+
+#### Parameters
+
+##### openField `System.String`
+The open field for the series
+
+##### highField `System.String`
+The value fields for the series
+
+##### lowField `System.String`
+The low field for the series
+
+##### closeField `System.String`
+The close field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.OHLC(Model.Records).Fields("Open", "High", "Low", "Close"))
+        .Render();
+    %>
+
+
+### ColorField(System.String)
+Sets the color field for the series
+
+
+#### Parameters
+
+##### colorField `System.String`
+The color field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.OHLC(Model.Records).OpenField("Open").HighField("High").LowField("Low").CloseField("Close").ColorField("Color"))
+        .Render();
+    %>
+
+
+### NoteTextField(System.String)
+Sets the note text field for the series
+
+
+#### Parameters
+
+##### noteTextField `System.String`
+The note text field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.OHLC(Model.Records).OpenField("Open").HighField("High").LowField("Low").CloseField("Close").NoteTextField("NoteText"))
+        .Render();
+    %>
 
 
 

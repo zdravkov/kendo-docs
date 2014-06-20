@@ -1,8 +1,5 @@
 ---
-title: RadialGaugeScaleMinorTicks
-slug: php-dataviz-ui-radialgaugescaleminorticks
-tags: api, php
-publish: true
+nav_title: RadialGaugeScaleMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugeScaleMinorTicks

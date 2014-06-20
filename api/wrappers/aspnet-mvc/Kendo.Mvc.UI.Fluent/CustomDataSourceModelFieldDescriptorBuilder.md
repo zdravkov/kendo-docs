@@ -1,7 +1,5 @@
 ---
-title:CustomDataSourceModelFieldDescriptorBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.customdatasourcemodelfielddescriptorbuilder
-publish:true
+nav_title: CustomDataSourceModelFieldDescriptorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceModelFieldDescriptorBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the ModelFieldDescriptor.
 
 
 
+
 ## Methods
 
-### From(`System.String`)
+
+### From(System.String)
 Specifies the field of the original record which value to be used for population of the Model field.
 
 
@@ -24,7 +24,7 @@ The field of the original record which value to be used
 
 
 
-### Parse(`System.String`)
+### Parse(System.String)
 Specifies the handler which will parse the field value. If not set default parsers will be used.
 
 
@@ -37,7 +37,7 @@ The handler
 
 
 
-### Parse(`System.Func<System.Object,System.Object>`)
+### Parse(System.Func\<System.Object,System.Object\>)
 Specifies the handler which will parse the field value. If not set default parsers will be used.
 
 

@@ -1,8 +1,5 @@
 ---
-title: TreeViewAnimationExpand
-slug: php-ui-treeviewanimationexpand
-tags: api, php
-publish: true
+nav_title: TreeViewAnimationExpand
 ---
 
 # \Kendo\UI\TreeViewAnimationExpand

@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-plotBand
-slug: jsp-stockChart-valueAxisItem-plotBand
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-plotBand
 ---
 
 # \<kendo:stockChart-valueAxisItem-plotBand\>

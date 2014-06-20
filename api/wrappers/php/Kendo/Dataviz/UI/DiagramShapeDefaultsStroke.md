@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeDefaultsStroke
-slug: php-dataviz-ui-diagramshapedefaultsstroke
-tags: api, php
-publish: true
+nav_title: DiagramShapeDefaultsStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsStroke

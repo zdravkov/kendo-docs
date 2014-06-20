@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-labels
-slug: jsp-stockChart-valueAxisItem-labels
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-labels
 ---
 
 # \<kendo:stockChart-valueAxisItem-labels\>
@@ -125,7 +122,7 @@ The visibility of the labels.
 
 The border of the labels.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-labels-border](/kendo-ui/api/wrappers/jsp/stockchart/valueaxisitem-labels-border).
+More documentation is available at [kendo:stockChart-valueAxisItem-labels-border](/api/wrappers/jsp/stockchart/valueaxisitem-labels-border).
 
 #### Example
 

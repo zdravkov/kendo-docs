@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-notes-dataItem
-slug: jsp-chart-yAxisItem-notes-dataItem
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-notes-dataItem
 ---
 
 # \<kendo:chart-yAxisItem-notes-dataItem\>
@@ -39,7 +36,7 @@ The value of the note.
 
 The icon of the note.
 
-More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-icon](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-icon).
+More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-icon](/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-icon).
 
 #### Example
 
@@ -51,7 +48,7 @@ More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-icon](/
 
 The label of the note.
 
-More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-label](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-label).
+More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-label](/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-label).
 
 #### Example
 
@@ -63,7 +60,7 @@ More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-label](
 
 The line of the note.
 
-More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-line](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-line).
+More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-line](/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-line).
 
 #### Example
 

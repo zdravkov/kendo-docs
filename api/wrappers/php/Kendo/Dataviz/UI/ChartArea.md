@@ -1,8 +1,5 @@
 ---
-title: ChartArea
-slug: php-dataviz-ui-chartarea
-tags: api, php
-publish: true
+nav_title: ChartArea
 ---
 
 # \Kendo\Dataviz\UI\ChartArea
@@ -42,7 +39,7 @@ The border of the chart area.
 ##### $value `\Kendo\Dataviz\UI\ChartAreaBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartAreaBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartAreaBorder)
+#### Example - using [\Kendo\Dataviz\UI\ChartAreaBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartAreaBorder)
     <?php
     $chartArea = new \Kendo\Dataviz\UI\ChartArea();
     $border = new \Kendo\Dataviz\UI\ChartAreaBorder();
@@ -98,7 +95,7 @@ The margin of the chart area. A numeric value will set all margins.
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartAreaMargin](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartAreaMargin)
+#### Example - using [\Kendo\Dataviz\UI\ChartAreaMargin](/api/wrappers/php/Kendo/Dataviz/UI/ChartAreaMargin)
     <?php
     $chartArea = new \Kendo\Dataviz\UI\ChartArea();
     $margin = new \Kendo\Dataviz\UI\ChartAreaMargin();

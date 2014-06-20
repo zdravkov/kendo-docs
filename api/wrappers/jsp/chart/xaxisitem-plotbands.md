@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-plotBands
-slug: jsp-chart-xAxisItem-plotBands
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-plotBands
 ---
 
 # \<kendo:chart-xAxisItem-plotBands\>
@@ -23,7 +20,7 @@ The plot bands of the x axis.
 
 The plot bands of the x axis.
 
-More documentation is available at [kendo:chart-xAxisItem-plotBand](/kendo-ui/api/wrappers/jsp/chart/xaxisitem-plotband).
+More documentation is available at [kendo:chart-xAxisItem-plotBand](/api/wrappers/jsp/chart/xaxisitem-plotband).
 
 #### Example
 

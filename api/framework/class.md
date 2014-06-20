@@ -1,8 +1,5 @@
 ---
-title: kendo.Class
-slug: api-framework-Class
-tags: api,framework
-publish: true
+nav_title: kendo.Class
 ---
 
 

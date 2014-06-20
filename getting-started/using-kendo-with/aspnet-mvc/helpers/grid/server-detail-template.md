@@ -1,9 +1,7 @@
 ---
-title: Server Detail Template
-meta_title: Configure Kendo UI Grid Server Detail Template
-meta_description: Set the detail template of Kendo UI Grid used during server binding
-slug: mvc-grid-detail-template
-publish: true
+nav_title: Server Detail Template
+title: Configure Kendo UI Grid Server Detail Template
+description: Set the detail template of Kendo UI Grid used during server binding
 ---
 
 # Server Detail Template
@@ -17,8 +15,8 @@ This help topic shows how to use detail template which is used in server binding
 
 The following tutorial shows how to configure Kendo UI Grid for ASP.NET MVC to display additional details of the **Product** entity from the **Northwind** database.
 
-1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-Name the application "KendoGridServerDetailTemplate". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions followe the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+Name the application "KendoGridServerDetailTemplate". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions followe the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Add a new "Entity Framework Data Model". Right click the `~/Models` folder in the solution explorer and pick "Add ->  New Item". Choose "Data -> ADO.NET Entity Data Model" in the "Add New Item" dialog.
 Name the model "Northwind.edmx" and click "Next". This will start the "Entity Data Model Wizard".
@@ -106,8 +104,8 @@ Name the model "Northwind.edmx" and click "Next". This will start the "Entity Da
 
 The following tutorial shows how to configure Kendo UI Grid for ASP.NET MVC to display all **Product** entities available per **Category** entity from the **Northwind** database.
 
-1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-Name the application "KendoGridServerHierarchy". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions followe the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+Name the application "KendoGridServerHierarchy". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions followe the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Add a new "Entity Framework Data Model". Right click the `~/Models` folder in the solution explorer and pick "Add ->  New Item". Choose "Data -> ADO.NET Entity Data Model" in the "Add New Item" dialog.
 Name the model "Northwind.edmx" and click "Next". This will start the "Entity Data Model Wizard".

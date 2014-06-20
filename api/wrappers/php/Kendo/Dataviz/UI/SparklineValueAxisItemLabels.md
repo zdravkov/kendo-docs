@@ -1,8 +1,5 @@
 ---
-title: SparklineValueAxisItemLabels
-slug: php-dataviz-ui-sparklinevalueaxisitemlabels
-tags: api, php
-publish: true
+nav_title: SparklineValueAxisItemLabels
 ---
 
 # \Kendo\Dataviz\UI\SparklineValueAxisItemLabels
@@ -43,7 +40,7 @@ The border of the labels.
 ##### $value `\Kendo\Dataviz\UI\SparklineValueAxisItemLabelsBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineValueAxisItemLabelsBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineValueAxisItemLabelsBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineValueAxisItemLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineValueAxisItemLabelsBorder)
     <?php
     $labels = new \Kendo\Dataviz\UI\SparklineValueAxisItemLabels();
     $border = new \Kendo\Dataviz\UI\SparklineValueAxisItemLabelsBorder();

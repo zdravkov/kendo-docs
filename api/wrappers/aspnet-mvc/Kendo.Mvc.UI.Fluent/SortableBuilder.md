@@ -1,7 +1,5 @@
 ---
-title:SortableBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.sortablebuilder
-publish:true
+nav_title: SortableBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SortableBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Sortable component.
 
 
 
+
 ## Methods
 
-### For(`System.String`)
+
+### For(System.String)
 The selector to match the DOM element to which the Sortable widget will be instantiated
 
 
@@ -27,7 +27,7 @@ jQuery selector
 
 
 
-### Disabled(`System.String`)
+### Disabled(System.String)
 The selector that determines which items are disabled. Disabled items cannot be dragged but are valid sort targets.
 
 
@@ -43,7 +43,7 @@ jQuery selector
 
 
 
-### Filter(`System.String`)
+### Filter(System.String)
 The selector that determines which items are sortable. Filtered items cannot be dragged and are not valid sort targets.
 
 
@@ -59,7 +59,7 @@ jQuery selector
 
 
 
-### Handler(`System.String`)
+### Handler(System.String)
 The selector that determines which element will be used as a draggable handler.
 
 
@@ -75,7 +75,7 @@ jQuery selector
 
 
 
-### ContainerSelector(`System.String`)
+### ContainerSelector(System.String)
 Selector that determines the container boundaries in which hint movement will be constrained to.
 
 
@@ -91,7 +91,7 @@ jQuery selector
 
 
 
-### ConnectWith(`System.String`)
+### ConnectWith(System.String)
 The selector which determines if items from the current Sortable widget can be accepted from another Sortable container(s). The connectWith option describes one way relationship, if the developer wants a two way connection then the connectWith option should be set on both widgets.
 
 
@@ -107,7 +107,39 @@ jQuery selector
 
 
 
-### HoldToDrag(`System.Boolean`)
+### Ignore(System.String)
+The selector which determines child elements for which the sort will not be initiated. Useful if the sortable item contains input elements.
+
+
+#### Parameters
+
+##### selector `System.String`
+jQuery selector
+
+
+
+#### Returns
+
+
+
+
+### Cursor(System.String)
+The CSS style which determines the cursor that will be shown while user drags sortable item. For example 'move', 'pointer', etc.
+
+
+#### Parameters
+
+##### string `System.String`
+String
+
+
+
+#### Returns
+
+
+
+
+### HoldToDrag(System.Boolean)
 When set to true, the item will be activated after the user taps and holds the finger on the element for a short amount of time.
 
 
@@ -123,13 +155,13 @@ When set to true, the item will be activated after the user taps and holds the f
 
 
 
-### Axis(`Kendo.Mvc.UI.SortableAxis`)
+### Axis(Kendo.Mvc.UI.SortableAxis)
 Constrains the hint movement to either the horizontal (x) or vertical (y) axis.
 
 
 #### Parameters
 
-##### axis [Kendo.Mvc.UI.SortableAxis](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SortableAxis)
+##### axis [Kendo.Mvc.UI.SortableAxis](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SortableAxis)
 The axis
 
 
@@ -139,13 +171,13 @@ The axis
 
 
 
-### CursorOffset(`System.Action<Kendo.Mvc.UI.Fluent.SortableCursorOffsetSettingsBuilder>`)
+### CursorOffset(System.Action\<Kendo.Mvc.UI.Fluent.SortableCursorOffsetSettingsBuilder\>)
 Configures the cursor offset of Sortable widget.
 
 
 #### Parameters
 
-##### cursorOffsetSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.SortableCursorOffsetSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SortableCursorOffsetSettingsBuilder)>
+##### cursorOffsetSettingsAction System.Action<[Kendo.Mvc.UI.Fluent.SortableCursorOffsetSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SortableCursorOffsetSettingsBuilder)>
 Cursor offset settings action.
 
 
@@ -160,7 +192,7 @@ Cursor offset settings action.
     %>
 
 
-### Hint(`System.String`)
+### Hint(System.String)
 HTML string representing the the hint element
 
 
@@ -176,14 +208,14 @@ Html string
 
 
 
-### HintHandler(`System.Func<System.Object,System.Object>`)
+### HintHandler(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return the hint for the sorted item.
 
 
 
 
 
-### HintHandler(`System.String`)
+### HintHandler(System.String)
 Sets JavaScript function which to return the hint for the sorted item.
 
 
@@ -196,7 +228,7 @@ JavaScript function name
 
 
 
-### Placeholder(`System.String`)
+### Placeholder(System.String)
 HTML string representing the placeholder
 
 
@@ -212,14 +244,14 @@ Html string
 
 
 
-### PlaceholderHandler(`System.Func<System.Object,System.Object>`)
+### PlaceholderHandler(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return the placeholder for the sorted item.
 
 
 
 
 
-### PlaceholderHandler(`System.String`)
+### PlaceholderHandler(System.String)
 Sets JavaScript function which to return the placeholder for the sorted item.
 
 
@@ -252,13 +284,13 @@ Returns the internal view component.
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.SortableEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.SortableEventBuilder\>)
 Sets the event configuration of the Sortable.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SortableEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SortableEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SortableEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SortableEventBuilder)>
 The lambda which configures the events
 
 

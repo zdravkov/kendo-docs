@@ -1,9 +1,7 @@
 ---
-title: Overview
-meta_title: DateTimePicker HtmlHelper extension | Kendo UI documentation
-meta_description: Configure Kendo UI DateTimePicker for ASP.NET MVC widget, add DataTimePicker HtmlHelper extension and handle events.
-slug: mvc-datetimepicker-overview
-publish: true
+nav_title: Overview
+title: DateTimePicker HtmlHelper extension | Kendo UI documentation
+description: Configure Kendo UI DateTimePicker for ASP.NET MVC widget, add DataTimePicker HtmlHelper extension and handle events.
 ---
 
 # DateTimePicker
@@ -14,7 +12,7 @@ The DateTimePicker HtmlHelper extension is a server-side wrapper for the Kendo U
 
 Here is how to configure a simple Kendo DateTimePicker:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 

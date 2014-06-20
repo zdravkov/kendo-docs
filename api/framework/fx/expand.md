@@ -1,7 +1,5 @@
 ---
-title: FX Expand
-slug: api-fx-expand
-publish: true
+nav_title: FX Expand
 ---
 
 # Expand

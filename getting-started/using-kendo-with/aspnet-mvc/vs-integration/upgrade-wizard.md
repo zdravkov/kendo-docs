@@ -1,7 +1,5 @@
 ---
-title: Upgrade Wizard
-slug: mvc-vsx-upgrade-wizard
-publish: true
+nav_title: Upgrade Wizard
 ---
 
 #Upgrade Wizard

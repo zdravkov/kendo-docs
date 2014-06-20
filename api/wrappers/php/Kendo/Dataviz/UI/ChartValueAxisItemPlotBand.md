@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemPlotBand
-slug: php-dataviz-ui-chartvalueaxisitemplotband
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemPlotBand
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemPlotBand

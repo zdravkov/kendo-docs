@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: How to use Barcode JSP tag | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI Barcode for JSP.
-slug: jsp-barcode-overview
-publish: true
+nav_title: Overview
+title: How to use Barcode JSP tag | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI Barcode for JSP.
 ---
 
 # Barcode
 
-The Barcode tag is a server-side wrapper for the [Kendo UI Barcode](/kendo-ui/api/web/barcode) widget.
+The Barcode tag is a server-side wrapper for the [Kendo UI Barcode](/api/web/barcode) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo UI Barcode:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/jsp/introduction) help topic.
 
 2.  Create a new action method to render the view:
 
@@ -23,7 +21,7 @@ Here is how to configure a simple Kendo UI Barcode:
             return "/dataviz/barcode/index";
         }
 
-3.  Add a barcode with the default [type](/kendo-ui/api/web/barcode#configuration-type) (Code39):
+3.  Add a barcode with the default [type](/api/web/barcode#configuration-type) (Code39):
 
         <kendo:barcode name="barcode" value="foo">
         </kendo:barcode>
@@ -37,7 +35,7 @@ Here is how to configure a simple Kendo UI Barcode:
 ## Accessing an Existing Barcode
 
 You can reference an existing Barcode instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/barcode#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/barcode#methods) to control its behavior.
 
 ### Accessing an existing Barcode instance
 

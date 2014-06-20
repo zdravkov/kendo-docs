@@ -1,10 +1,7 @@
 ---
-title: Modes
-meta_title: How to configure the upload mode of the Kendo UI Upload widget
-meta_description: Learn how to use the synchronous and asynchronous modes of Kendo UI Upload for PHP, handle save and remove requests.
-slug: php-upload-modes
-publish: true
-relatedDocs: php-ui-upload
+nav_title: Modes
+title: How to configure the upload mode of the Kendo UI Upload widget
+description: Learn how to use the synchronous and asynchronous modes of Kendo UI Upload for PHP, handle save and remove requests.
 ---
 
 # Upload
@@ -12,7 +9,7 @@ relatedDocs: php-ui-upload
 The Upload supports two modes of operation - synchronous and asynchronous.
 
 This help topic explains how to use these modes with PHP.
-Please review the main [Upload Modes](/kendo-ui/getting-started/web/upload/modes) help topic for general information.
+Please review the main [Upload Modes](/getting-started/web/upload/modes) help topic for general information.
 
 ## Synchronous mode
 

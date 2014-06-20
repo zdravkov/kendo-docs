@@ -1,11 +1,7 @@
 ---
-title: Drawer
-meta_title: Documentation for Kendo UI Drawer mobile widget
-meta_description: How to initialize and use a mobile Drawer component in Kendo UI Mobile framework.
-slug: gs-mobile-drawer
-relatedDocs: api-mobile-drawer
-tags: getting-started,mobile
-publish: true
+nav_title: Drawer
+title: Documentation for Kendo UI Drawer mobile widget
+description: How to initialize and use a mobile Drawer component in Kendo UI Mobile framework.
 ---
 
 # Drawer

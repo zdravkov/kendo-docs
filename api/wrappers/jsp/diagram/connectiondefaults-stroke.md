@@ -1,8 +1,5 @@
 ---
-title: diagram-connectionDefaults-stroke
-slug: jsp-diagram-connectionDefaults-stroke
-tags: api, java
-publish: true
+nav_title: diagram-connectionDefaults-stroke
 ---
 
 # \<kendo:diagram-connectionDefaults-stroke\>

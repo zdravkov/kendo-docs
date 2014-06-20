@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-schema-model-fields-size
-slug: jsp-editor-imageBrowser-schema-model-fields-size
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-schema-model-fields-size
 ---
 
 # \<kendo:editor-imageBrowser-schema-model-fields-size\>

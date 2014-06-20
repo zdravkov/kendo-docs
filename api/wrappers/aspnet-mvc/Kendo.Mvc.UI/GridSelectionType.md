@@ -1,7 +1,5 @@
 ---
-title:GridSelectionType
-slug:aspnetmvc-kendo.mvc.ui.gridselectiontype
-publish:true
+nav_title: GridSelectionType
 ---
 
 # Kendo.Mvc.UI.GridSelectionType

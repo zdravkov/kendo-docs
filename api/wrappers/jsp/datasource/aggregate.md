@@ -1,8 +1,5 @@
 ---
-title: dataSource-aggregate
-slug: jsp-dataSource-aggregate
-tags: api, java
-publish: true
+nav_title: dataSource-aggregate
 ---
 
 # \<kendo:dataSource-aggregate\>
@@ -23,7 +20,7 @@ The aggregate(s) which are calculated when the data source populates with data. 
 
 The aggregate(s) which are calculated when the data source populates with data. The supported aggregates are "average", "count", "max", "min" and "sum".
 
-More documentation is available at [kendo:dataSource-aggregateItem](/kendo-ui/api/wrappers/jsp/datasource/aggregateitem).
+More documentation is available at [kendo:dataSource-aggregateItem](/api/wrappers/jsp/datasource/aggregateitem).
 
 #### Example
 

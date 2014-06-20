@@ -1,8 +1,5 @@
 ---
-title: grid-filterable-operators-string
-slug: jsp-grid-filterable-operators-string
-tags: api, java
-publish: true
+nav_title: grid-filterable-operators-string
 ---
 
 # \<kendo:grid-filterable-operators-string\>

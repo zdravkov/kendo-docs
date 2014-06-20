@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesDefaultsLabelsBorder
-slug: php-dataviz-ui-sparklineseriesdefaultslabelsborder
-tags: api, php
-publish: true
+nav_title: SparklineSeriesDefaultsLabelsBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsLabelsBorder

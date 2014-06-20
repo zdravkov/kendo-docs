@@ -1,15 +1,12 @@
 ---
-title: Overview
-meta_title: How to use the Sortable PHP class, server-side wrapper for Kendo UI Sortable widget
-meta_description: Learn how to create Kendo UI Sortable for PHP, handle Kendo UI Sortable Events, access an existing sortable.
-slug: php-sortable-overview
-publish: true
-relatedDocs: php-ui-sortable
+nav_title: Overview
+title: How to use the Sortable PHP class, server-side wrapper for Kendo UI Sortable widget
+description: Learn how to create Kendo UI Sortable for PHP, handle Kendo UI Sortable Events, access an existing sortable.
 ---
 
 # Sortable
 
-The Kendo Sortable for PHP is a server-side wrapper for the [Kendo UI Sortable](/kendo-ui/api/web/sortable) widget.
+The Kendo Sortable for PHP is a server-side wrapper for the [Kendo UI Sortable](/api/web/sortable) widget.
 
 ## Getting Started
 
@@ -17,15 +14,15 @@ Unlike most of the server side wrapper the Sortable one does not render HTML mar
 
 Here is how to configure a simple Kendo Sortable:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
-2. Create a [sortable](/kendo-ui/api/wrappers/php/Kendo/UI/Sortable), set its container and customize the hint and placeholder of the widget
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+2. Create a [sortable](/api/wrappers/php/Kendo/UI/Sortable), set its container and customize the hint and placeholder of the widget
 
         <?php
         $sortable = new \Kendo\UI\Sortable('#sortable-basic'); // select the container for the Sortable
         $sortable->hint(new \Kendo\JavaScriptFunction('hint'))
                  ->placeholder(new \Kendo\JavaScriptFunction('placeholder'));
         ?>
-3. Output the sortable by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the sortable by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $sortable->render();
@@ -50,7 +47,7 @@ Here is how to configure a simple Kendo Sortable:
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo Sortable instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/sortable#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/sortable#methods) to control its behavior.
 
 ### Example
 
@@ -67,7 +64,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/s
 
 ## Handling Events
 
-You can subscribe to all sortable [events](/kendo-ui/api/web/sortable#events).
+You can subscribe to all sortable [events](/api/web/sortable#events).
 
 ### Example - subscribing by specifying JavaScript function name
 

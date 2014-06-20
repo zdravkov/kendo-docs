@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-transport-read
-slug: jsp-editor-imageBrowser-transport-read
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-transport-read
 ---
 
 # \<kendo:editor-imageBrowser-transport-read\>

@@ -1,28 +1,32 @@
 ---
-title:GaugeScaleBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugescalebuilderbase
-publish:true
+nav_title: GaugeScaleBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeScaleBuilderBase
 Defines the fluent interface for configuring scale.
 
 
+
 ## Properties
+
+
 ### Scale
+
 Gets or sets the scale.
+
 
 
 
 ## Methods
 
-### MinorTicks(`System.Action<Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder>`)
+
+### MinorTicks(System.Action\<Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder\>)
 Configures the minor ticks.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeScaleTicksBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeScaleTicksBuilder)>
 The configuration action.
 
 
@@ -39,13 +43,13 @@ The configuration action.
     %>
 
 
-### MajorTicks(`System.Action<Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder>`)
+### MajorTicks(System.Action\<Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder\>)
 Configures the major ticks.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeScaleTicksBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeScaleTicksBuilder)>
 The configuration action.
 
 
@@ -62,13 +66,13 @@ The configuration action.
     %>
 
 
-### Ranges(`System.Action<Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory<T>>`)
+### Ranges(System.Action\<Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory\<T\>\>)
 Defines the ranges items.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeScaleRangesFactory)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeScaleRangesFactory)<T>>
 The add action.
 
 
@@ -85,7 +89,7 @@ The add action.
     %>
 
 
-### MajorUnit(`System.Double`)
+### MajorUnit(System.Double)
 Sets the scale major unit.
 
 
@@ -104,7 +108,7 @@ The major unit.
     %>
 
 
-### MinorUnit(`System.Double`)
+### MinorUnit(System.Double)
 Sets the scale minor unit.
 
 
@@ -123,7 +127,7 @@ The minor unit.
     %>
 
 
-### Min(`System.Double`)
+### Min(System.Double)
 Sets the scale min value.
 
 
@@ -142,7 +146,7 @@ The min.
     %>
 
 
-### Max(`System.Double`)
+### Max(System.Double)
 Sets the scale max value.
 
 
@@ -161,7 +165,7 @@ The max.
     %>
 
 
-### Reverse(`System.Boolean`)
+### Reverse(System.Boolean)
 Sets the scale reverse.
 
 
@@ -180,13 +184,13 @@ The scale reverse.
     %>
 
 
-### Line(`System.Action<Kendo.Mvc.UI.Fluent.GaugeLineBuilder>`)
+### Line(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLineBuilder\>)
 Configures the major ticks.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLineBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLineBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLineBuilder)>
 The configuration action.
 
 

@@ -1,8 +1,5 @@
 ---
-title: ChartTooltipBorder
-slug: php-dataviz-ui-charttooltipborder
-tags: api, php
-publish: true
+nav_title: ChartTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartTooltipBorder

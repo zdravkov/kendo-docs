@@ -1,8 +1,5 @@
 ---
-title: DiagramConnectionDefaultsStroke
-slug: php-dataviz-ui-diagramconnectiondefaultsstroke
-tags: api, php
-publish: true
+nav_title: DiagramConnectionDefaultsStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionDefaultsStroke

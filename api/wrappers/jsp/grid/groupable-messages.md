@@ -1,8 +1,5 @@
 ---
-title: grid-groupable-messages
-slug: jsp-grid-groupable-messages
-tags: api, java
-publish: true
+nav_title: grid-groupable-messages
 ---
 
 # \<kendo:grid-groupable-messages\>

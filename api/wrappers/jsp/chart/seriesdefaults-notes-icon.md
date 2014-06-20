@@ -1,8 +1,5 @@
 ---
-title: chart-seriesDefaults-notes-icon
-slug: jsp-chart-seriesDefaults-notes-icon
-tags: api, java
-publish: true
+nav_title: chart-seriesDefaults-notes-icon
 ---
 
 # \<kendo:chart-seriesDefaults-notes-icon\>
@@ -59,7 +56,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:chart-seriesDefaults-notes-icon-border](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-notes-icon-border).
+More documentation is available at [kendo:chart-seriesDefaults-notes-icon-border](/api/wrappers/jsp/chart/seriesdefaults-notes-icon-border).
 
 #### Example
 

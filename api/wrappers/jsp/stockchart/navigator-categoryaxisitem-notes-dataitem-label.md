@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-notes-dataItem-label
-slug: jsp-stockChart-navigator-categoryAxisItem-notes-dataItem-label
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-notes-dataItem-label
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-label\>
@@ -95,7 +92,7 @@ If set to true the chart will display the category notes label. By default the c
 
 The border of the label.
 
-More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-label-border](/kendo-ui/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-label-border).
+More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-label-border](/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-label-border).
 
 #### Example
 

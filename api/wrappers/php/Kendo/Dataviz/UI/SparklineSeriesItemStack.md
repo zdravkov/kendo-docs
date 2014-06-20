@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemStack
-slug: php-dataviz-ui-sparklineseriesitemstack
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemStack
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemStack

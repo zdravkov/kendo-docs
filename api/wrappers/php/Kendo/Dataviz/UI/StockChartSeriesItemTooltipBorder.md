@@ -1,8 +1,5 @@
 ---
-title: StockChartSeriesItemTooltipBorder
-slug: php-dataviz-ui-stockchartseriesitemtooltipborder
-tags: api, php
-publish: true
+nav_title: StockChartSeriesItemTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemTooltipBorder

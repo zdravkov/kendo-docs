@@ -1,7 +1,5 @@
 ---
-title: Latest Version Retrieval
-slug: mvc-vsx-lva
-publish: true
+nav_title: Latest Version Retrieval
 ---
 
 #Automatic Latest Version Retrieval

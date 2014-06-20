@@ -1,7 +1,5 @@
 ---
-title:UploadAsyncSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.uploadasyncsettingsbuilder
-publish:true
+nav_title: UploadAsyncSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder
@@ -9,9 +7,11 @@ A builder class for IUploadAsyncSettings
 
 
 
+
 ## Methods
 
-### AutoUpload(`System.Boolean`)
+
+### AutoUpload(System.Boolean)
 Sets a value indicating whether to start the upload immediately after selecting a file
 
 
@@ -24,7 +24,7 @@ true if the upload should start immediately after selecting a file, false otherw
 
 
 
-### Batch(`System.Boolean`)
+### Batch(System.Boolean)
 Sets a value indicating whether to upload selected files in one batch (request)
 
 
@@ -37,7 +37,7 @@ true if the files should be uploaded in a single request, false otherwise; false
 
 
 
-### Save(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
+### Save(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values for the save operation
 
 
@@ -64,7 +64,7 @@ The route values.
     %>
 
 
-### Save(`System.String,System.String,System.Object`)
+### Save(System.String,System.String,System.Object)
 Sets the action, controller and route values for the save operation
 
 
@@ -91,7 +91,7 @@ The route values.
     %>
 
 
-### Save(`System.String,System.String`)
+### Save(System.String,System.String)
 Sets the action and controller for the save operation
 
 
@@ -115,7 +115,7 @@ Name of the controller.
     %>
 
 
-### Save(`System.String`)
+### Save(System.String)
 Sets the route name for the save operation
 
 
@@ -136,7 +136,7 @@ Name of the route.
     %>
 
 
-### Save(`System.Web.Routing.RouteValueDictionary`)
+### Save(System.Web.Routing.RouteValueDictionary)
 Sets the route values for the save operation
 
 
@@ -157,7 +157,7 @@ The route values of the action method.
     %>
 
 
-### Save(`System.String,System.Web.Routing.RouteValueDictionary`)
+### Save(System.String,System.Web.Routing.RouteValueDictionary)
 Sets the route and values for the save operation
 
 
@@ -181,7 +181,7 @@ The route values.
     %>
 
 
-### Save(`System.String,System.Object`)
+### Save(System.String,System.Object)
 Sets the route and values for the save operation
 
 
@@ -205,7 +205,7 @@ The route values.
     %>
 
 
-### Save(`System.Linq.Expressions.Expression<System.Action<T1>>`)
+### Save(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Sets the action for the save operation
 
 
@@ -226,7 +226,7 @@ The action.
     %>
 
 
-### SaveField(`System.String`)
+### SaveField(System.String)
 Sets the field name for the save operation
 
 
@@ -248,7 +248,7 @@ The form field name to use for submiting the files.
     %>
 
 
-### SaveUrl(`System.String`)
+### SaveUrl(System.String)
 Sets an absolute or relative Save action URL.
             Note that the URL must be in the same domain for the upload to succeed.
 
@@ -270,7 +270,7 @@ The Save action URL.
     %>
 
 
-### Remove(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
+### Remove(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values for the remove operation
 
 
@@ -297,7 +297,7 @@ The route values.
     %>
 
 
-### Remove(`System.String,System.String,System.Object`)
+### Remove(System.String,System.String,System.Object)
 Sets the action, controller and route values for the remove operation
 
 
@@ -324,7 +324,7 @@ The route values.
     %>
 
 
-### Remove(`System.String,System.String`)
+### Remove(System.String,System.String)
 Sets the action and controller for the remove operation
 
 
@@ -348,7 +348,7 @@ Name of the controller.
     %>
 
 
-### Remove(`System.String`)
+### Remove(System.String)
 Sets the route name for the remove operation
 
 
@@ -369,7 +369,7 @@ Name of the route.
     %>
 
 
-### Remove(`System.Web.Routing.RouteValueDictionary`)
+### Remove(System.Web.Routing.RouteValueDictionary)
 Sets the route values for the remove operation
 
 
@@ -390,7 +390,7 @@ The route values of the action method.
     %>
 
 
-### Remove(`System.String,System.Web.Routing.RouteValueDictionary`)
+### Remove(System.String,System.Web.Routing.RouteValueDictionary)
 Sets the route and values for the remove operation
 
 
@@ -414,7 +414,7 @@ The route values.
     %>
 
 
-### Remove(`System.String,System.Object`)
+### Remove(System.String,System.Object)
 Sets the route and values for the remove operation
 
 
@@ -438,7 +438,7 @@ The route values.
     %>
 
 
-### Remove(`System.Linq.Expressions.Expression<System.Action<T1>>`)
+### Remove(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Sets the action for the remove operation
 
 
@@ -459,7 +459,7 @@ The action.
     %>
 
 
-### RemoveUrl(`System.String`)
+### RemoveUrl(System.String)
 Sets an absolute or relative Remove action URL.
             Note that the URL must be in the same domain for the operation to succeed.
 
@@ -481,7 +481,7 @@ The Remove action URL.
     %>
 
 
-### RemoveField(`System.String`)
+### RemoveField(System.String)
 Sets the field name for the remove operation
 
 
@@ -501,6 +501,19 @@ The form field name to use for submiting the files.
         .RemoveField("attachments");
     )
     %>
+
+
+### WithCredentials(System.Boolean)
+Sets a value indicating whether to send credentials (cookies, headers) for cross-site requests.
+
+
+#### Parameters
+
+##### value `System.Boolean`
+true if credentials should be sent, false otherwise; true by default
+
+
+
 
 
 

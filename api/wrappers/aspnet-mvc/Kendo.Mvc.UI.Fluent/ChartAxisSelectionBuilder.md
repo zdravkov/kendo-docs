@@ -1,7 +1,5 @@
 ---
-title:ChartAxisSelectionBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxisselectionbuilder
-publish:true
+nav_title: ChartAxisSelectionBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the ChartAxisSelectionBuilder.
 
 
 
+
 ## Methods
 
-### From(`System.DateTime`)
+
+### From(System.DateTime)
 Sets the selection lower boundary
 
 
@@ -33,7 +33,7 @@ The selection lower boundary.
     %>
 
 
-### From(`System.Double`)
+### From(System.Double)
 Sets the selection lower boundary
 
 
@@ -55,7 +55,7 @@ The selection lower boundary.
             %>
 
 
-### To(`System.DateTime`)
+### To(System.DateTime)
 Sets the selection upper boundary
 
 
@@ -77,7 +77,7 @@ The selection upper boundary.
             %>
 
 
-### To(`System.Double`)
+### To(System.Double)
 Sets the selection upper boundary
 
 
@@ -98,13 +98,13 @@ The selection upper boundary.
             %>
 
 
-### Mousewheel(`System.Action<Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder>`)
+### Mousewheel(System.Action\<Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder\>)
 Configures the mousewheel zoom options
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSelectionMousewheelBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSelectionMousewheelBuilder)>
 The mousewheel zoom options
 
 

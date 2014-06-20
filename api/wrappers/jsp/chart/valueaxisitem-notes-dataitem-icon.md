@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-notes-dataItem-icon
-slug: jsp-chart-valueAxisItem-notes-dataItem-icon
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-notes-dataItem-icon
 ---
 
 # \<kendo:chart-valueAxisItem-notes-dataItem-icon\>
@@ -59,7 +56,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:chart-valueAxisItem-notes-dataItem-icon-border](/kendo-ui/api/wrappers/jsp/chart/valueaxisitem-notes-dataitem-icon-border).
+More documentation is available at [kendo:chart-valueAxisItem-notes-dataItem-icon-border](/api/wrappers/jsp/chart/valueaxisitem-notes-dataitem-icon-border).
 
 #### Example
 

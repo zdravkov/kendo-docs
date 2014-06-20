@@ -1,7 +1,5 @@
 ---
-title: Ajax Editing
-slug: jsp-grid-ajax-editing
-publish: true
+nav_title: Ajax Editing
 ---
 
 # Editing

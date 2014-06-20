@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesDefaultsTooltip
-slug: php-dataviz-ui-sparklineseriesdefaultstooltip
-tags: api, php
-publish: true
+nav_title: SparklineSeriesDefaultsTooltip
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltip
@@ -42,7 +39,7 @@ The border configuration options.
 ##### $value `\Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltipBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltipBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesDefaultsTooltipBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltipBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesDefaultsTooltipBorder)
     <?php
     $tooltip = new \Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltip();
     $border = new \Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltipBorder();

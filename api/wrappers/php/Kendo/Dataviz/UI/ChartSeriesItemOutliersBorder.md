@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemOutliersBorder
-slug: php-dataviz-ui-chartseriesitemoutliersborder
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemOutliersBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemOutliersBorder

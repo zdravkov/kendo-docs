@@ -1,14 +1,12 @@
 ---
-title: Date Formatting
-meta_title: Date Formatting | Kendo UI Framework Globalization documentation
-meta_description: Learn how with date formatting you can convert Date object to human readable string, supporting standard and custom date formats.
-slug: date-formatting
-publish: true
+nav_title: Date Formatting
+title: Date Formatting | Kendo UI Framework Globalization documentation
+description: Learn how with date formatting you can convert Date object to human readable string, supporting standard and custom date formats.
 ---
 
 #Date Formatting
 
-The purpose of date formatting is to convert Date object to a human readable string using culture's specific settings. [kendo.format](/kendo-ui/api/framework/kendo#format) and [kendo.toString](/kendo-ui/api/framework/kendo#tostring) methods support standard and custom date formats:
+The purpose of date formatting is to convert Date object to a human readable string using culture's specific settings. [kendo.format](/api/framework/kendo#format) and [kendo.toString](/api/framework/kendo#tostring) methods support standard and custom date formats:
 
 ## Standard date formats
 

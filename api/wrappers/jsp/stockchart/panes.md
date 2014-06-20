@@ -1,8 +1,5 @@
 ---
-title: stockChart-panes
-slug: jsp-stockChart-panes
-tags: api, java
-publish: true
+nav_title: stockChart-panes
 ---
 
 # \<kendo:stockChart-panes\>
@@ -25,7 +22,7 @@ Axis that don't have specified pane are placed in the top (default) pane.Series 
 The chart panes configuration.Panes are used to split the chart in two or more parts. The panes are ordered from top to bottom.Each axis can be associated with a pane by setting its pane option to the name of the desired pane.
 Axis that don't have specified pane are placed in the top (default) pane.Series are moved to the desired pane by associating them with an axis.
 
-More documentation is available at [kendo:stockChart-pane](/kendo-ui/api/wrappers/jsp/stockchart/pane).
+More documentation is available at [kendo:stockChart-pane](/api/wrappers/jsp/stockchart/pane).
 
 #### Example
 

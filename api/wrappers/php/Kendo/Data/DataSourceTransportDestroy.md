@@ -1,8 +1,5 @@
 ---
-title: DataSourceTransportDestroy
-slug: php-data-datasourcetransportdestroy
-tags: api, php
-publish: true
+nav_title: DataSourceTransportDestroy
 ---
 
 # \Kendo\Data\DataSourceTransportDestroy

@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: User Guide for TreeView HtmlHelper extension for Kendo UI TreeView widget
-meta_description: Instructions and examples for TreeView HtmlHelper extension for Kendo UI TreeView for ASP.NET MVC.
-slug: mvc-treeview-overview
-publish: true
+nav_title: Overview
+title: User Guide for TreeView HtmlHelper extension for Kendo UI TreeView widget
+description: Instructions and examples for TreeView HtmlHelper extension for Kendo UI TreeView for ASP.NET MVC.
 ---
 
 # TreeView
 
-The TreeView HtmlHelper extension is a server-side wrapper for the [Kendo UI TreeView](/kendo-ui/api/web/treeview) widget.
+The TreeView HtmlHelper extension is a server-side wrapper for the [Kendo UI TreeView](/api/web/treeview) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo TreeView:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -57,7 +55,7 @@ for more information about ASP.NET MVC Authorization. The Menu will hide the men
 ## Accessing an Existing TreeView
 
 You can reference an existing TreeView instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/treeview#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/treeview#methods) to control its behavior.
 
 ### Accessing an existing TreeView instance
 
@@ -72,7 +70,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/t
 
 ## Handling Kendo UI TreeView events
 
-You can subscribe to all [events](/kendo-ui/api/web/treeview#events) exposed by Kendo UI TreeView:
+You can subscribe to all [events](/api/web/treeview#events) exposed by Kendo UI TreeView:
 
 ### WebForms - subscribe by handler name
 

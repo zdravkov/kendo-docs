@@ -1,8 +1,5 @@
 ---
-title: ChartXAxisItemLabelsDateFormats
-slug: php-dataviz-ui-chartxaxisitemlabelsdateformats
-tags: api, php
-publish: true
+nav_title: ChartXAxisItemLabelsDateFormats
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemLabelsDateFormats

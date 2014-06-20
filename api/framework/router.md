@@ -1,8 +1,5 @@
 ---
-title: kendo.Router
-slug: api-framework-router
-tags: api,framework
-publish: true
+nav_title: kendo.Router
 ---
 
 # kendo.Router

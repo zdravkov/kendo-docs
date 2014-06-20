@@ -1,8 +1,5 @@
 ---
-title: scheduler-footer
-slug: jsp-scheduler-footer
-tags: api, java
-publish: true
+nav_title: scheduler-footer
 ---
 
 # \<kendo:scheduler-footer\>

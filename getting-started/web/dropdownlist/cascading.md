@@ -1,13 +1,10 @@
 ---
-title: Cascading DropDownLists
-meta_title: jQuery Cascading DropDown Lists with Kendo UI Web
-meta_description: How to get started using the cascading functionality of Kendo UI DropDownList widget.
-slug: gs-web-cascading-dropdownlists
-tags: getting-started,web
-ordinal: 2
-publish: true
+nav_title: Cascading DropDownLists
+title: jQuery Cascading DropDown Lists with Kendo UI Web
+description: How to get started using the cascading functionality of Kendo UI DropDownList widget.
+nav_position: 2
 ---
 
 # Cascading DropDownLists
 
-Cascading functionality described in the [ComboBox](/kendo-ui/getting-started/web/combobox/cascading) are applicable to the DropDownList.
+Cascading functionality described in the [ComboBox](/getting-started/web/combobox/cascading) are applicable to the DropDownList.

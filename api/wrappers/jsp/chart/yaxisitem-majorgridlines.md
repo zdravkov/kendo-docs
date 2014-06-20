@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-majorGridLines
-slug: jsp-chart-yAxisItem-majorGridLines
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-majorGridLines
 ---
 
 # \<kendo:chart-yAxisItem-majorGridLines\>

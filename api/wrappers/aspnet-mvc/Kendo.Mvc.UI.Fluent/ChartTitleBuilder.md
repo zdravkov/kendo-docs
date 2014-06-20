@@ -1,7 +1,5 @@
 ---
-title:ChartTitleBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.charttitlebuilder
-publish:true
+nav_title: ChartTitleBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartTitleBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the ChartTitle.
 
 
 
+
 ## Methods
 
-### Text(`System.String`)
+
+### Text(System.String)
 Sets the title text
 
 
@@ -31,7 +31,7 @@ The text title.
     %>
 
 
-### Font(`System.String`)
+### Font(System.String)
 Sets the title font
 
 
@@ -51,7 +51,7 @@ The title font (CSS format).
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the title color
 
 
@@ -71,7 +71,7 @@ The title color (CSS format).
     %>
 
 
-### Background(`System.String`)
+### Background(System.String)
 Sets the title background color
 
 
@@ -91,13 +91,13 @@ The background color.
     %>
 
 
-### Position(`Kendo.Mvc.UI.ChartTitlePosition`)
+### Position(Kendo.Mvc.UI.ChartTitlePosition)
 Sets the title position
 
 
 #### Parameters
 
-##### position [Kendo.Mvc.UI.ChartTitlePosition](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartTitlePosition)
+##### position [Kendo.Mvc.UI.ChartTitlePosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartTitlePosition)
 The title position.
 
 
@@ -111,13 +111,13 @@ The title position.
     %>
 
 
-### Align(`Kendo.Mvc.UI.ChartTextAlignment`)
+### Align(Kendo.Mvc.UI.ChartTextAlignment)
 Sets the title alignment
 
 
 #### Parameters
 
-##### align [Kendo.Mvc.UI.ChartTextAlignment](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartTextAlignment)
+##### align [Kendo.Mvc.UI.ChartTextAlignment](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartTextAlignment)
 The title alignment.
 
 
@@ -131,7 +131,7 @@ The title alignment.
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the title visibility
 
 
@@ -151,7 +151,7 @@ The title visibility.
     %>
 
 
-### Margin(`System.Int32,System.Int32,System.Int32,System.Int32`)
+### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the title margin
 
 
@@ -180,7 +180,7 @@ The title left margin.
     %>
 
 
-### Margin(`System.Int32`)
+### Margin(System.Int32)
 Sets the title margin
 
 
@@ -200,7 +200,7 @@ The title margin.
     %>
 
 
-### Padding(`System.Int32,System.Int32,System.Int32,System.Int32`)
+### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the title padding
 
 
@@ -229,7 +229,7 @@ The title left padding.
     %>
 
 
-### Padding(`System.Int32`)
+### Padding(System.Int32)
 Sets the title padding
 
 
@@ -249,7 +249,7 @@ The title padding.
     %>
 
 
-### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the title border
 
 
@@ -261,7 +261,7 @@ The title border width.
 ##### color `System.String`
 The title border color.
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The title dash type.
 
 
@@ -275,13 +275,13 @@ The title dash type.
     %>
 
 
-### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the plot area border
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 The border configuration action
 
 

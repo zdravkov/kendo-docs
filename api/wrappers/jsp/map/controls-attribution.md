@@ -1,8 +1,5 @@
 ---
-title: map-controls-attribution
-slug: jsp-map-controls-attribution
-tags: api, java
-publish: true
+nav_title: map-controls-attribution
 ---
 
 # \<kendo:map-controls-attribution\>

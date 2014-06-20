@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-autoBaseUnitSteps
-slug: jsp-stockChart-categoryAxisItem-autoBaseUnitSteps
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-autoBaseUnitSteps
 ---
 
 # \<kendo:stockChart-categoryAxisItem-autoBaseUnitSteps\>

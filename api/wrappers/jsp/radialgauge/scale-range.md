@@ -1,8 +1,5 @@
 ---
-title: radialGauge-scale-range
-slug: jsp-radialGauge-scale-range
-tags: api, java
-publish: true
+nav_title: radialGauge-scale-range
 ---
 
 # \<kendo:radialGauge-scale-range\>

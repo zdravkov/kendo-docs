@@ -1,12 +1,8 @@
 ---
-title: Overview
-meta_title: Overview of Grid UI widget | Kendo UI Documentation
-meta_description: Quick steps to help you create Kendo UI Grid, initialization and enabling of Grid UI virtualization.
-slug: gs-web-grid-overview
-relatedDocs: api-web-grid
-tags: getting-started,web
-ordinal: 1
-publish: true
+nav_title: Overview
+title: Overview of Grid UI widget | Kendo UI Documentation
+description: Quick steps to help you create Kendo UI Grid, initialization and enabling of Grid UI virtualization.
+nav_position: 1
 ---
 
 # Grid Overview
@@ -131,7 +127,7 @@ for highly optimized binding to large data sets. Enabling UI virtualization is d
 ## Accessing an Existing Grid
 
 You can reference an existing **Grid** instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [Grid API](/kendo-ui/api/web/grid) to control its behavior.
+Once a reference has been established, you can use the [Grid API](/api/web/grid) to control its behavior.
 
 ### Accessing an existing Grid instance
 

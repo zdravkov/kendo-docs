@@ -1,7 +1,5 @@
 ---
-title:FilterableMessagesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.filterablemessagesbuilder
-publish:true
+nav_title: FilterableMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Filter menu options.
 
 
 
+
 ## Methods
 
-### Info(`System.String`)
+
+### Info(System.String)
 Sets the info part of the filter menu
 
 
@@ -24,7 +24,7 @@ The message
 
 
 
-### And(`System.String`)
+### And(System.String)
 Sets the text for And option.
 
 
@@ -37,7 +37,7 @@ The text
 
 
 
-### Or(`System.String`)
+### Or(System.String)
 Sets the text for Or option.
 
 
@@ -50,7 +50,7 @@ The text
 
 
 
-### IsTrue(`System.String`)
+### IsTrue(System.String)
 Sets the text for Boolean IsTrue option value.
 
 
@@ -63,7 +63,7 @@ The message
 
 
 
-### IsFalse(`System.String`)
+### IsFalse(System.String)
 Sets the text for Boolean IsFalse option value.
 
 
@@ -76,7 +76,7 @@ The message
 
 
 
-### Filter(`System.String`)
+### Filter(System.String)
 Sets the text for Filter button.
 
 
@@ -89,7 +89,7 @@ The message
 
 
 
-### SelectValue(`System.String`)
+### SelectValue(System.String)
 Sets the text for SelectValue option.
 
 
@@ -102,7 +102,7 @@ The message
 
 
 
-### Clear(`System.String`)
+### Clear(System.String)
 Sets the text for Clear button.
 
 
@@ -115,7 +115,7 @@ The message
 
 
 
-### Operator(`System.String`)
+### Operator(System.String)
 Sets the text for Operator label.
 
 
@@ -128,7 +128,7 @@ The message
 
 
 
-### Value(`System.String`)
+### Value(System.String)
 Sets the text for Value label.
 
 
@@ -141,7 +141,7 @@ The message
 
 
 
-### Cancel(`System.String`)
+### Cancel(System.String)
 Sets the text for Cancel button.
 
 

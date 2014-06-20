@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemLabelsPadding
-slug: php-dataviz-ui-chartseriesitemlabelspadding
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemLabelsPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemLabelsPadding

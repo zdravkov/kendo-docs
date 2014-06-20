@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.Splitter
-meta_title: Configuration, methods and events of Kendo UI Splitter
-meta_description: Step by step guide and code examples for successful configuration of Splitter UI widget, supported methods and events types.
-slug: api-web-splitter
-relatedDocs: gs-web-splitter-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.Splitter
+title: Configuration, methods and events of Kendo UI Splitter
+description: Step by step guide and code examples for successful configuration of Splitter UI widget, supported methods and events types.
 ---
 
 # kendo.ui.Splitter
 
-Represents the Kendo UI Splitter widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Splitter widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxis
-slug: jsp-sparkline-categoryAxis
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxis
 ---
 
 # \<kendo:sparkline-categoryAxis\>
@@ -23,7 +20,7 @@ The category axis configuration options.
 
 The category axis configuration options.
 
-More documentation is available at [kendo:sparkline-categoryAxisItem](/kendo-ui/api/wrappers/jsp/sparkline/categoryaxisitem).
+More documentation is available at [kendo:sparkline-categoryAxisItem](/api/wrappers/jsp/sparkline/categoryaxisitem).
 
 #### Example
 

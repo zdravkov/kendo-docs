@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-outliers-border
-slug: jsp-chart-seriesItem-outliers-border
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-outliers-border
 ---
 
 # \<kendo:chart-seriesItem-outliers-border\>

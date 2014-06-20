@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxis
-slug: jsp-sparkline-valueAxis
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxis
 ---
 
 # \<kendo:sparkline-valueAxis\>
@@ -23,7 +20,7 @@ The value axis configuration options.
 
 The value axis configuration options.
 
-More documentation is available at [kendo:sparkline-valueAxisItem](/kendo-ui/api/wrappers/jsp/sparkline/valueaxisitem).
+More documentation is available at [kendo:sparkline-valueAxisItem](/api/wrappers/jsp/sparkline/valueaxisitem).
 
 #### Example
 

@@ -1,7 +1,5 @@
 ---
-title:ListViewSelectionMode
-slug:aspnetmvc-kendo.mvc.ui.listviewselectionmode
-publish:true
+nav_title: ListViewSelectionMode
 ---
 
 # Kendo.Mvc.UI.ListViewSelectionMode

@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-title-margin
-slug: jsp-chart-yAxisItem-title-margin
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-title-margin
 ---
 
 # \<kendo:chart-yAxisItem-title-margin\>

@@ -1,8 +1,5 @@
 ---
-title: diagram-shapeDefaults-connector-connector
-slug: jsp-diagram-shapeDefaults-connector-connector
-tags: api, java
-publish: true
+nav_title: diagram-shapeDefaults-connector-connector
 ---
 
 # \<kendo:diagram-shapeDefaults-connector-connector\>

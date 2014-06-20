@@ -1,8 +1,5 @@
 ---
-title: DiagramConnectionDefaultsHoverStroke
-slug: php-dataviz-ui-diagramconnectiondefaultshoverstroke
-tags: api, php
-publish: true
+nav_title: DiagramConnectionDefaultsHoverStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionDefaultsHoverStroke

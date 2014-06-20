@@ -1,8 +1,5 @@
 ---
-title: BarcodeBorder
-slug: php-dataviz-ui-barcodeborder
-tags: api, php
-publish: true
+nav_title: BarcodeBorder
 ---
 
 # \Kendo\Dataviz\UI\BarcodeBorder

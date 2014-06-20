@@ -1,8 +1,5 @@
 ---
-title: map-layerDefaults-marker-tooltip-animation
-slug: jsp-map-layerDefaults-marker-tooltip-animation
-tags: api, java
-publish: true
+nav_title: map-layerDefaults-marker-tooltip-animation
 ---
 
 # \<kendo:map-layerDefaults-marker-tooltip-animation\>
@@ -24,7 +21,7 @@ will disable all animations in the widget.
 
 The animation that will be used when a Tooltip closes.
 
-More documentation is available at [kendo:map-layerDefaults-marker-tooltip-animation-close](/kendo-ui/api/wrappers/jsp/map/layerdefaults-marker-tooltip-animation-close).
+More documentation is available at [kendo:map-layerDefaults-marker-tooltip-animation-close](/api/wrappers/jsp/map/layerdefaults-marker-tooltip-animation-close).
 
 #### Example
 
@@ -36,7 +33,7 @@ More documentation is available at [kendo:map-layerDefaults-marker-tooltip-anima
 
 The animation that will be used when a Tooltip opens.
 
-More documentation is available at [kendo:map-layerDefaults-marker-tooltip-animation-open](/kendo-ui/api/wrappers/jsp/map/layerdefaults-marker-tooltip-animation-open).
+More documentation is available at [kendo:map-layerDefaults-marker-tooltip-animation-open](/api/wrappers/jsp/map/layerdefaults-marker-tooltip-animation-open).
 
 #### Example
 

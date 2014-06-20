@@ -1,8 +1,5 @@
 ---
-title: panelBar-item
-slug: jsp-panelBar-item
-tags: api, java
-publish: true
+nav_title: panelBar-item
 ---
 
 # \<kendo:panelBar-item\>

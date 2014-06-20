@@ -1,9 +1,7 @@
 ---
-title: Area
-meta_title: Area Charts in Kendo UI DataViz
-meta_description: Learn how to define area charts in Kendo UI DataViz HTML5 charting widget.
-slug: chart-area-type
-publish: true
+nav_title: Area
+title: Area Charts in Kendo UI DataViz
+description: Learn how to define area charts in Kendo UI DataViz HTML5 charting widget.
 ---
 
 ## Area Charts
@@ -46,7 +44,7 @@ This configuration produces the following area chart:
 
 ## Line Style
 
-The area chart supports rendering the lines between the points with different styles. The supported styles are "normal", "step" and "smooth" and can be set with the [line.style](/kendo-ui/api/dataviz/chart#configuration-series.line.style) option. The default style is "normal" and will produce a straight line between the data points. When the style is set to "step", the data points will be connected only with vertical and horizontal lines. This style can be used to indicate that the value is constant between the changes. 
+The area chart supports rendering the lines between the points with different styles. The supported styles are "normal", "step" and "smooth" and can be set with the [line.style](/api/dataviz/chart#configuration-series.line.style) option. The default style is "normal" and will produce a straight line between the data points. When the style is set to "step", the data points will be connected only with vertical and horizontal lines. This style can be used to indicate that the value is constant between the changes. 
  
 ![Step Line Chart](/getting-started/dataviz/chart/chart-types/chart-step-area.png)
 

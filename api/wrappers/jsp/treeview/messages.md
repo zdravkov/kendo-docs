@@ -1,8 +1,5 @@
 ---
-title: treeView-messages
-slug: jsp-treeView-messages
-tags: api, java
-publish: true
+nav_title: treeView-messages
 ---
 
 # \<kendo:treeView-messages\>

@@ -1,7 +1,5 @@
 ---
-title:ChartAxisLabelsDateFormatsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxislabelsdateformatsbuilder
-publish:true
+nav_title: ChartAxisLabelsDateFormatsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisLabelsDateFormatsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartAxisLabelsDateFormatsBuilder.
 
 
 
+
 ## Methods
 
-### Seconds(`System.String`)
+
+### Seconds(System.String)
 Sets the date format when the base date unit is Seconds
 
 
@@ -37,7 +37,7 @@ The date format.
     %>
 
 
-### Minutes(`System.String`)
+### Minutes(System.String)
 Sets the date format when the base date unit is Minutes
 
 
@@ -63,7 +63,7 @@ The date format.
     %>
 
 
-### Hours(`System.String`)
+### Hours(System.String)
 Sets the date format when the base date unit is Hours
 
 
@@ -89,7 +89,7 @@ The date format.
     %>
 
 
-### Days(`System.String`)
+### Days(System.String)
 Sets the date format when the base date unit is Days
 
 
@@ -115,7 +115,7 @@ The date format.
     %>
 
 
-### Months(`System.String`)
+### Months(System.String)
 Sets the date format when the base date unit is Months
 
 
@@ -141,7 +141,7 @@ The date format.
     %>
 
 
-### Weeks(`System.String`)
+### Weeks(System.String)
 Sets the date format when the base date unit is Months
 
 
@@ -167,7 +167,7 @@ The date format.
     %>
 
 
-### Years(`System.String`)
+### Years(System.String)
 Sets the date format when the base date unit is Years
 
 

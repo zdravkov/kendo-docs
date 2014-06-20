@@ -1,22 +1,26 @@
 ---
-title:GridColumnBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.gridcolumnbuilderbase
-publish:true
+nav_title: GridColumnBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnBuilderBase
 Defines the fluent interface for configuring columns.
 
 
+
 ## Properties
+
+
 ### Column
+
 Gets or sets the column.
+
 
 
 
 ## Methods
 
-### Title(`System.String`)
+
+### Title(System.String)
 Sets the title displayed in the header of the column.
 
 
@@ -35,7 +39,7 @@ The text.
     %>
 
 
-### HeaderHtmlAttributes(`System.Object`)
+### HeaderHtmlAttributes(System.Object)
 Sets the HTML attributes applied to the header cell of the column.
 
 
@@ -54,7 +58,7 @@ The attributes.
     %>
 
 
-### HeaderHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HeaderHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes applied to the header cell of the column.
 
 
@@ -73,7 +77,7 @@ The attributes.
     %>
 
 
-### FooterHtmlAttributes(`System.Object`)
+### FooterHtmlAttributes(System.Object)
 Sets the HTML attributes applied to the footer cell of the column.
 
 
@@ -92,7 +96,7 @@ The attributes.
     %>
 
 
-### FooterHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### FooterHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes applied to the footer cell of the column.
 
 
@@ -111,7 +115,7 @@ The attributes.
     %>
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes applied to the content cell of the column.
 
 
@@ -130,7 +134,7 @@ The attributes.
     %>
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes applied to the content cell of the column.
 
 
@@ -149,7 +153,7 @@ The attributes.
     %>
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 Sets the width of the column in pixels.
 
 
@@ -168,7 +172,7 @@ The width in pixels.
     %>
 
 
-### Width(`System.String`)
+### Width(System.String)
 Sets the width of the column using CSS syntax.
 
 
@@ -194,7 +198,7 @@ The width to set.
             %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Makes the column visible or not. By default all columns are visible. Invisible columns are not rendered in the output HTML.
 
 
@@ -220,7 +224,7 @@ Makes the column static. By default all columns are not locked.
     %>
 
 
-### Locked(`System.Boolean`)
+### Locked(System.Boolean)
 Makes the column static or not. By default all columns are not locked.
 
 
@@ -233,7 +237,20 @@ Makes the column static or not. By default all columns are not locked.
     %>
 
 
-### Hidden(`System.Boolean`)
+### Lockable(System.Boolean)
+If set to false the column will remain in the side of the grid into which its own locked configuration placed it.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Grid(Model)
+    .Name("Grid")
+    .Columns(columns => columns.Bound(o => o.OrderID).Lockable((bool)ViewData["lockable"]))
+    %>
+
+
+### Hidden(System.Boolean)
 Makes the column hidden or not. By default all columns are not hidden. Hidden columns are rendered in the output HTML but are hidden.
 
 
@@ -259,7 +276,7 @@ Hides a column. By default all columns are not hidden. Hidden columns are render
     %>
 
 
-### IncludeInMenu(`System.Boolean`)
+### IncludeInMenu(System.Boolean)
 Specifys whether the columns should be included in column header menu. By default all columns are included.
             The column also need to have a Title set in order to be included in the menu.
 
@@ -273,8 +290,8 @@ Specifys whether the columns should be included in column header menu. By defaul
     %>
 
 
-### HeaderTemplate(`System.Action`)
-Sets the header template for the column.
+### HeaderTemplate(System.Action)
+Sets the header template for the column. If sorting is enabled, the template content wrapper must have a k-link CSS class.
 
 
 #### Parameters
@@ -286,8 +303,8 @@ The action defining the template.
 
 
 
-### HeaderTemplate(`System.String`)
-Sets the header template for the column.
+### HeaderTemplate(System.String)
+Sets the header template for the column.  If sorting is enabled, the template content wrapper must have a k-link CSS class.
 
 
 #### Parameters
@@ -299,8 +316,8 @@ The string defining the template.
 
 
 
-### HeaderTemplate(`System.Func<System.Object,System.Object>`)
-Sets the header template for the column.
+### HeaderTemplate(System.Func\<System.Object,System.Object\>)
+Sets the header template for the column.  If sorting is enabled, the template content wrapper must have a k-link CSS class.
 
 
 #### Parameters
@@ -312,7 +329,7 @@ The action defining the template.
 
 
 
-### FooterTemplate(`System.Action`)
+### FooterTemplate(System.Action)
 Sets the footer template for the column.
 
 
@@ -325,7 +342,7 @@ The action defining the template.
 
 
 
-### FooterTemplate(`System.String`)
+### FooterTemplate(System.String)
 Sets the footer template for the column.
 
 
@@ -338,7 +355,7 @@ The string defining the template.
 
 
 
-### FooterTemplate(`System.Func<System.Object,System.Object>`)
+### FooterTemplate(System.Func\<System.Object,System.Object\>)
 Sets the footer template for the column.
 
 

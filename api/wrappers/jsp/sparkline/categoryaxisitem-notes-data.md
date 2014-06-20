@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-notes-data
-slug: jsp-sparkline-categoryAxisItem-notes-data
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-notes-data
 ---
 
 # \<kendo:sparkline-categoryAxisItem-notes-data\>
@@ -23,7 +20,7 @@ The items of the notes.
 
 The items of the notes.
 
-More documentation is available at [kendo:sparkline-categoryAxisItem-notes-dataItem](/kendo-ui/api/wrappers/jsp/sparkline/categoryaxisitem-notes-dataitem).
+More documentation is available at [kendo:sparkline-categoryAxisItem-notes-dataItem](/api/wrappers/jsp/sparkline/categoryaxisitem-notes-dataitem).
 
 #### Example
 

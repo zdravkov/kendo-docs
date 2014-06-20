@@ -1,8 +1,5 @@
 ---
-title: dataSource-transport-update
-slug: jsp-dataSource-transport-update
-tags: api, java
-publish: true
+nav_title: dataSource-transport-update
 ---
 
 # \<kendo:dataSource-transport-update\>

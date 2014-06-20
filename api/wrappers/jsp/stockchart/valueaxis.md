@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxis
-slug: jsp-stockChart-valueAxis
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxis
 ---
 
 # \<kendo:stockChart-valueAxis\>
@@ -23,7 +20,7 @@ The value axis configuration options.
 
 The value axis configuration options.
 
-More documentation is available at [kendo:stockChart-valueAxisItem](/kendo-ui/api/wrappers/jsp/stockchart/valueaxisitem).
+More documentation is available at [kendo:stockChart-valueAxisItem](/api/wrappers/jsp/stockchart/valueaxisitem).
 
 #### Example
 

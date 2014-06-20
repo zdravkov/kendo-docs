@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxis-line
-slug: jsp-chart-valueAxis-line
-tags: api, java
-publish: true
+nav_title: chart-valueAxis-line
 ---
 
 # \<kendo:chart-valueAxis-line\>

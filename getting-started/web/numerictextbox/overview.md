@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: NumericTextBox UI widget - documentation overview
-meta_description: How to create NumericTextBox widget and deal with proper configuration of its behaviors.
-slug: gs-web-numerictextbox-overview
-relatedDocs: api-web-numerictextbox
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: NumericTextBox UI widget - documentation overview
+description: How to create NumericTextBox widget and deal with proper configuration of its behaviors.
 ---
 
 # NumericTextBox Overview
@@ -49,7 +45,7 @@ controlled:
 *   Precision of the number
 *   Number format (any valid number format is allowed)
 
-For a complete overview of the NumericTextBox's methods and configuration options, [review the NumericTextBox API Reference](/kendo-ui/api/web/numerictextbox).
+For a complete overview of the NumericTextBox's methods and configuration options, [review the NumericTextBox API Reference](/api/web/numerictextbox).
 
 ### Customizing NumericTextBox defaults
 

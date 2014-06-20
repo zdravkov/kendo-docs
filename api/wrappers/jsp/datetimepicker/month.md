@@ -1,8 +1,5 @@
 ---
-title: dateTimePicker-month
-slug: jsp-dateTimePicker-month
-tags: api, java
-publish: true
+nav_title: dateTimePicker-month
 ---
 
 # \<kendo:dateTimePicker-month\>

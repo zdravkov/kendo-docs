@@ -1,8 +1,5 @@
 ---
-title: stockChart-seriesDefaults-tooltip
-slug: jsp-stockChart-seriesDefaults-tooltip
-tags: api, java
-publish: true
+nav_title: stockChart-seriesDefaults-tooltip
 ---
 
 # \<kendo:stockChart-seriesDefaults-tooltip\>
@@ -80,7 +77,7 @@ A value indicating if the tooltip should be displayed.
 
 The border configuration options.
 
-More documentation is available at [kendo:stockChart-seriesDefaults-tooltip-border](/kendo-ui/api/wrappers/jsp/stockchart/seriesdefaults-tooltip-border).
+More documentation is available at [kendo:stockChart-seriesDefaults-tooltip-border](/api/wrappers/jsp/stockchart/seriesdefaults-tooltip-border).
 
 #### Example
 

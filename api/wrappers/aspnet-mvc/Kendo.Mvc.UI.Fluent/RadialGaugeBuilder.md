@@ -1,7 +1,5 @@
 ---
-title:RadialGaugeBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.radialgaugebuilder
-publish:true
+nav_title: RadialGaugeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.RadialGaugeBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the RadialGauge component.
 
 
 
+
 ## Methods
 
-### Theme(`System.String`)
+
+### Theme(System.String)
 Sets the theme of the radial gauge.
 
 
@@ -30,27 +30,27 @@ The radial gauge theme.
     %>
 
 
-### RenderAs(`Kendo.Mvc.UI.RenderingMode`)
+### RenderAs(Kendo.Mvc.UI.RenderingMode)
 Sets the preferred rendering engine.
             If it is not supported by the browser, the Chart will switch to the first available mode.
 
 
 #### Parameters
 
-##### renderAs [Kendo.Mvc.UI.RenderingMode](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/RenderingMode)
+##### renderAs [Kendo.Mvc.UI.RenderingMode](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/RenderingMode)
 The preferred rendering engine.
 
 
 
 
 
-### GaugeArea(`System.Action<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder>`)
+### GaugeArea(System.Action\<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder\>)
 Sets the radial gauge area.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeAreaBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeAreaBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeAreaBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeAreaBuilder)>
 The radial gauge area.
 
 
@@ -63,13 +63,13 @@ The radial gauge area.
     %>
 
 
-### Scale(`System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder>`)
+### Scale(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder\>)
 Configures the scale
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleBuilder)>
 The configurator
 
 
@@ -84,13 +84,13 @@ The configurator
     %>
 
 
-### Pointer(`System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder>`)
+### Pointer(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder\>)
 Configures the pointer
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialPointerBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialPointerBuilder)>
 The configurator
 
 
@@ -105,7 +105,7 @@ The configurator
     %>
 
 
-### Transitions(`System.Boolean`)
+### Transitions(System.Boolean)
 Enables or disabled animated transitions on initial load and refresh.
 
 

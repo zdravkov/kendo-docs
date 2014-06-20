@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-title-margin
-slug: jsp-chart-categoryAxisItem-title-margin
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-title-margin
 ---
 
 # \<kendo:chart-categoryAxisItem-title-margin\>

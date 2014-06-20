@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-notes-label-border
-slug: jsp-sparkline-valueAxisItem-notes-label-border
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-notes-label-border
 ---
 
 # \<kendo:sparkline-valueAxisItem-notes-label-border\>

@@ -1,8 +1,5 @@
 ---
-title: tooltip-animation-open
-slug: jsp-tooltip-animation-open
-tags: api, java
-publish: true
+nav_title: tooltip-animation-open
 ---
 
 # \<kendo:tooltip-animation-open\>

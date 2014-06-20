@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: Help Guide for AutoComplete HtmlHelper extension | Kendo UI documentation
-meta_description: Instructions how to configure the Kendo UI AutoComplete for ASP.NET MVC widget for server binding and add AutoComplete HtmlHelper extension.
-slug: mvc-autocomplete-overview
-publish: true
+nav_title: Overview
+title: Help Guide for AutoComplete HtmlHelper extension | Kendo UI documentation
+description: Instructions how to configure the Kendo UI AutoComplete for ASP.NET MVC widget for server binding and add AutoComplete HtmlHelper extension.
 ---
 
 # AutoComplete
 
-The AutoComplete HtmlHelper extension is a server-side wrapper for the [Kendo UI AutoComplete](/kendo-ui/api/web/autocomplete) widget.
+The AutoComplete HtmlHelper extension is a server-side wrapper for the [Kendo UI AutoComplete](/api/web/autocomplete) widget.
 
 ## Getting Started
 
@@ -21,7 +19,7 @@ There are two ways to bind a Kendo AutoComplete for ASP.NET MVC:
 
 Here is how to configure the Kendo AutoComplete for server binding to the Northwind Products table using Linq to SQL:
 
- 1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+ 1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
  2.  Create a new action method and pass the Products table as the model:
 
         public ActionResult Index()
@@ -60,7 +58,7 @@ Here is how to configure the Kendo AutoComplete for server binding to the Northw
 
 Here is how to configure the Kendo AutoComplete for ajax binding to the Northwind Products table using Linq to SQL:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 2.  Create an action method which renders the view:
 
         public ActionResult Index()
@@ -182,7 +180,7 @@ Here is how the **GetProducts** method looks like:
 ## Accessing an Existing AutoComplete
 
 You can reference an existing AutoComplete instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/autocomplete#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/autocomplete#methods) to control its behavior.
 
 ### Accessing an existing AutoComplete instance
 
@@ -197,7 +195,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/a
 
 ## Handling Kendo UI AutoComplete events
 
-You can subscribe to all [events](/kendo-ui/api/web/autocomplete#events) exposed by Kendo UI autocomplete:
+You can subscribe to all [events](/api/web/autocomplete#events) exposed by Kendo UI autocomplete:
 
 ### WebForms - subscribe by handler name
 

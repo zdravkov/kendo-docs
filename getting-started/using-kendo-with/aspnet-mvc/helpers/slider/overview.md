@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: Help Guide for Slider HtmlHelper extension | Kendo UI documentation
-meta_description: Step-by-step instructions how to configure Kendo UI Slider for ASP.NET MVC widget and add Slider HtmlHelper extension.
-slug: mvc-slider-overview
-publish: true
+nav_title: Overview
+title: Help Guide for Slider HtmlHelper extension | Kendo UI documentation
+description: Step-by-step instructions how to configure Kendo UI Slider for ASP.NET MVC widget and add Slider HtmlHelper extension.
 ---
 
 # Slider
 
-The Slider HtmlHelper extension is a server-side wrapper for the&nbsp;[Kendo UI Slider](/kendo-ui/api/web/slider)&nbsp;widget.
+The Slider HtmlHelper extension is a server-side wrapper for the&nbsp;[Kendo UI Slider](/api/web/slider)&nbsp;widget.
 
 ## Getting Started
 
@@ -19,7 +17,7 @@ There are two types of Slider:
 
 Here is how to configure a simple Kendo Slider:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -48,7 +46,7 @@ Here is how to configure a simple Kendo Slider:
 ## Accessing an Existing Slider
 
 You can reference an existing slider instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/slider#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/slider#methods) to control its behavior.
 
 ### Accessing an existing slider instance
 
@@ -63,7 +61,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/s
 
 ## Handling Kendo UI Slider events
 
-You can subscribe to all [events](/kendo-ui/api/web/slider#events) exposed by Kendo UI Slider:
+You can subscribe to all [events](/api/web/slider#events) exposed by Kendo UI Slider:
 
 ### WebForms - subscribe by handler name
 

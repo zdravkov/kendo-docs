@@ -1,8 +1,5 @@
 ---
-title: chart-seriesDefaults-overlay
-slug: jsp-chart-seriesDefaults-overlay
-tags: api, java
-publish: true
+nav_title: chart-seriesDefaults-overlay
 ---
 
 # \<kendo:chart-seriesDefaults-overlay\>

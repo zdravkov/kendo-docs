@@ -1,8 +1,6 @@
 ---
-title: Layout
-slug: spa-layout
-ordinal: 3
-publish: true
+nav_title: Layout
+nav_position: 3
 ---
 
 # Layout Overview

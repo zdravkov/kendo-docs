@@ -1,22 +1,26 @@
 ---
-title:ChartCategoryAxisBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartcategoryaxisbuilder
-publish:true
+nav_title: ChartCategoryAxisBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder
 Configures the category axis for the 1.
 
 
+
 ## Properties
+
+
 ### Container
+
 The parent Chart
+
 
 
 
 ## Methods
 
-### Categories(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+
+### Categories(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Defines bound categories.
 
 
@@ -29,20 +33,20 @@ The expression used to extract the categories value from the chart model
 
 
 
-### Type(`Kendo.Mvc.UI.ChartCategoryAxisType`)
+### Type(Kendo.Mvc.UI.ChartCategoryAxisType)
 Overrides the category axis type.
 
 
 #### Parameters
 
-##### type [Kendo.Mvc.UI.ChartCategoryAxisType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartCategoryAxisType)
+##### type [Kendo.Mvc.UI.ChartCategoryAxisType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartCategoryAxisType)
 The axis type. The default is determined by the category items type.
 
 
 
 
 
-### Categories(`System.Collections.IEnumerable`)
+### Categories(System.Collections.IEnumerable)
 Defines categories.
 
 
@@ -55,7 +59,7 @@ The list of categories
 
 
 
-### Categories(`System.String[]`)
+### Categories(System.String[])
 Defines categories.
 
 
@@ -68,7 +72,7 @@ The list of categories
 
 
 
-### AxisCrossingValue(`System.Double`)
+### AxisCrossingValue(System.Double)
 Sets value at which the first perpendicular axis crosses this axis.
 
 
@@ -89,7 +93,7 @@ The value at which the first perpendicular axis crosses this axis.
     %>
 
 
-### AxisCrossingValue(`System.Double[]`)
+### AxisCrossingValue(System.Double[])
 Sets value at which perpendicular axes cross this axis.
 
 
@@ -110,7 +114,7 @@ The values at which perpendicular axes cross this axis.
     %>
 
 
-### AxisCrossingValue(`System.Collections.Generic.IEnumerable<System.Double>`)
+### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
 Sets value at which perpendicular axes cross this axis.
 
 
@@ -131,7 +135,7 @@ The values at which perpendicular axes cross this axis.
     %>
 
 
-### Justify(`System.Boolean`)
+### Justify(System.Boolean)
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
 
@@ -154,7 +158,7 @@ Positions categories and series points on major ticks. This removes the empty sp
 
 
 
-### Select(`System.Double,System.Double`)
+### Select(System.Double,System.Double)
 Sets the selection range
 
 
@@ -179,13 +183,13 @@ The selection range end.
     %>
 
 
-### Select(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder>`)
+### Select(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder\>)
 Configures the selection
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisSelectionBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisSelectionBuilder)>
 The configuration action.
 
 

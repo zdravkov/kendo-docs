@@ -1,9 +1,6 @@
 ---
-title: Using with Kendo UI Web
-meta_title: How to guide on using mobile widgets outside of a Kendo UI Mobile application container
-slug: gs-mobile-regular-usage
-tags: getting-started, mobile
-publish: true
+nav_title: Using with Kendo UI Web
+title: How to guide on using mobile widgets outside of a Kendo UI Mobile application container
 ---
 
 Starting with the 2014 Q1 release, the Kendo UI Mobile widgets can be used alongside the Kendo UI Web widgets in a regular web page, *without an active mobile application instance*.
@@ -36,5 +33,5 @@ so the Kendo UI Mobile platform CSS (even the common styling) should **not** be 
 - As a mobile application instance is missing, its features (declarative widget initialization, view transitions, browser history binding, etc.) will not work.
 - Unlike the application mode, this mode primary targets mobile web sites - thus the mobile OS skins (Android/iOS) are not supported.
 - Certain listview features (pull to refresh, endless scrolling, press to load more, fixed headers) rely on the mobile scroller; the listview widget should be instantiated in a mobile scroller widget element.
-- The drawer widget should have its [container configuration option](/kendo-ui/api/mobile/drawer/#configuration-container) set. The drawer will not close automatically when navigation is performed.
+- The drawer widget should have its [container configuration option](/api/mobile/drawer/#configuration-container) set. The drawer will not close automatically when navigation is performed.
 

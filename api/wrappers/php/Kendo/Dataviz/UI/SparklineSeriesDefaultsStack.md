@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesDefaultsStack
-slug: php-dataviz-ui-sparklineseriesdefaultsstack
-tags: api, php
-publish: true
+nav_title: SparklineSeriesDefaultsStack
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsStack

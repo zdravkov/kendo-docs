@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Kendo UI ListView Widget Documentation
-meta_description: Specify custom type of layout, first steps, configuration and behavior of Kendo UI ListView widget.
-slug: gs-web-listview-overview
-relatedDocs: api-web-listview
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Kendo UI ListView Widget Documentation
+description: Specify custom type of layout, first steps, configuration and behavior of Kendo UI ListView widget.
 ---
 
 # ListView Overview

@@ -1,8 +1,5 @@
 ---
-title: AutoCompleteAnimationClose
-slug: php-ui-autocompleteanimationclose
-tags: api, php
-publish: true
+nav_title: AutoCompleteAnimationClose
 ---
 
 # \Kendo\UI\AutoCompleteAnimationClose

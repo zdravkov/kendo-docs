@@ -1,7 +1,5 @@
 ---
-title:MaskedTextBoxBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.maskedtextboxbuilder
-publish:true
+nav_title: MaskedTextBoxBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MaskedTextBoxBuilder
@@ -9,29 +7,31 @@ Defines the fluent interface for configuring the MaskedTextBox component.
 
 
 
+
 ## Methods
 
-### Value(`System.String`)
+
+### Value(System.String)
 Sets the initial value of the MaskedTextBox.
 
 
 
 
 
-### PromptChar(`System.String`)
+### PromptChar(System.String)
 Specifies the character used to represent the absence of user input in the widget
 
 
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MaskedTextBoxEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MaskedTextBoxEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### EventsAction System.Action<[Kendo.Mvc.UI.Fluent.MaskedTextBoxEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MaskedTextBoxEventBuilder)>
+##### EventsAction System.Action<[Kendo.Mvc.UI.Fluent.MaskedTextBoxEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MaskedTextBoxEventBuilder)>
 The client events action.
 
 
@@ -46,13 +46,13 @@ The client events action.
     %>
 
 
-### Rules(`System.Action<Kendo.Mvc.UI.Fluent.MaskedTextBoxRulesBuilder>`)
+### Rules(System.Action\<Kendo.Mvc.UI.Fluent.MaskedTextBoxRulesBuilder\>)
 Configures the custom rules.
 
 
 #### Parameters
 
-##### RulesAction System.Action<[Kendo.Mvc.UI.Fluent.MaskedTextBoxRulesBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MaskedTextBoxRulesBuilder)>
+##### RulesAction System.Action<[Kendo.Mvc.UI.Fluent.MaskedTextBoxRulesBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MaskedTextBoxRulesBuilder)>
 The rules action.
 
 
@@ -67,7 +67,7 @@ The rules action.
     %>
 
 
-### Enable(`System.Boolean`)
+### Enable(System.Boolean)
 Enables or disables the textbox.
 
 
@@ -83,7 +83,7 @@ Enables or disables the textbox.
 
 
 
-### Mask(`System.String`)
+### Mask(System.String)
 Sets the mask of the MaskedTextBox.
 
 
@@ -96,7 +96,7 @@ Sets the mask of the MaskedTextBox.
     %>
 
 
-### Culture(`System.String`)
+### Culture(System.String)
 Specifies the culture info used by the MaskedTextBox widget.
 
 

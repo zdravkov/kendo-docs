@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemErrorBars
-slug: php-dataviz-ui-chartseriesitemerrorbars
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemErrorBars
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemErrorBars
@@ -60,7 +57,7 @@ The error bars line options.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemErrorBarsLine|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemErrorBarsLine](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemErrorBarsLine)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemErrorBarsLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemErrorBarsLine)
     <?php
     $errorBars = new \Kendo\Dataviz\UI\ChartSeriesItemErrorBars();
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemErrorBarsLine();

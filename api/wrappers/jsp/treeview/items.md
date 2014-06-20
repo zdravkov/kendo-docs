@@ -1,8 +1,5 @@
 ---
-title: treeView-items
-slug: jsp-treeView-items
-tags: api, java
-publish: true
+nav_title: treeView-items
 ---
 
 # \<kendo:treeView-items\>
@@ -23,7 +20,7 @@ Contains the items of the treeview widget
 
 Contains the items of the treeview widget
 
-More documentation is available at [kendo:treeView-item](/kendo-ui/api/wrappers/jsp/treeview/item).
+More documentation is available at [kendo:treeView-item](/api/wrappers/jsp/treeview/item).
 
 #### Example
 

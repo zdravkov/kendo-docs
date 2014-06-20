@@ -1,8 +1,5 @@
 ---
-title: scheduler-resource
-slug: jsp-scheduler-resource
-tags: api, java
-publish: true
+nav_title: scheduler-resource
 ---
 
 # \<kendo:scheduler-resource\>

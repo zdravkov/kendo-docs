@@ -1,8 +1,5 @@
 ---
-title: tabStrip-item
-slug: jsp-tabStrip-item
-tags: api, java
-publish: true
+nav_title: tabStrip-item
 ---
 
 # \<kendo:tabStrip-item\>

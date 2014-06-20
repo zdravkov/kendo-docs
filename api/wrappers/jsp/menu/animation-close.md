@@ -1,8 +1,5 @@
 ---
-title: menu-animation-close
-slug: jsp-menu-animation-close
-tags: api, java
-publish: true
+nav_title: menu-animation-close
 ---
 
 # \<kendo:menu-animation-close\>

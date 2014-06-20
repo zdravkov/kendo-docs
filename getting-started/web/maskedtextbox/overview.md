@@ -1,17 +1,13 @@
 ---
-title: Overview
-meta_title: MaskedTextBox UI widget - documentation overview
-meta_description: How to create MaskedTextBox widget and deal with proper configuration of its behaviors.
-slug: gs-web-maskedtextbox-overview
-relatedDocs: api-web-maskedtextbox
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: MaskedTextBox UI widget - documentation overview
+description: How to create MaskedTextBox widget and deal with proper configuration of its behaviors.
 ---
 
 # MaskedTextBox Overview
 
 The MaskedTextBox widget allows controlled text input based on a specific format.
-It can be defined using the [mask](/kendo-ui/api/web/maskedtextbox#configuration-mask) option of the widget. Every mask can contain mask rules and
+It can be defined using the [mask](/api/web/maskedtextbox#configuration-mask) option of the widget. Every mask can contain mask rules and
 mask literals. The mask literals will be automatically entered for the user and they cannot be removed.
 Widget also has predefined rules specifying:
 
@@ -19,7 +15,7 @@ Widget also has predefined rules specifying:
 - required/optional letter input
 - required/optional character input (allow any character)
 
-For a complete overview of the MaskedTextBox's methods and configuration options, [review the MaskedTextBox API Reference](/kendo-ui/api/web/maskedtextbox).
+For a complete overview of the MaskedTextBox's methods and configuration options, [review the MaskedTextBox API Reference](/api/web/maskedtextbox).
 
 ## Getting Started
 
@@ -51,7 +47,7 @@ controlled:
 *   Prompt char
 *   Culture name
 
-For a complete overview of the MaskedTextBox's methods and configuration options, [review the MaskedTextBox API Reference](/kendo-ui/api/web/maskedtextbox).
+For a complete overview of the MaskedTextBox's methods and configuration options, [review the MaskedTextBox API Reference](/api/web/maskedtextbox).
 
 ### Predefined Mask Rules
 
@@ -82,7 +78,7 @@ The following mask literals will be globalized based on the current culture:
 ### Define a custom mask rule
 
 The **MaskedTextBox** widget provides the ability to define custom mask rules during initialization.
-To accomplish this task define a rule in the [rules](/kendo-ui/api/web/maskedtextbox#configuration-rules)
+To accomplish this task define a rule in the [rules](/api/web/maskedtextbox#configuration-rules)
 option. Widget supports rules defined as **RegExp** or **Function**:
 
     $(document).ready(function(){
@@ -97,7 +93,7 @@ option. Widget supports rules defined as **RegExp** or **Function**:
         });
     });
 
-> Any of the predefined rules can be overriden through the [rules](/kendo-ui/api/web/maskedtextbox#configuration-rules) option.
+> Any of the predefined rules can be overriden through the [rules](/api/web/maskedtextbox#configuration-rules) option.
 
 
 ## Accessing an Existing MaskedTextBox

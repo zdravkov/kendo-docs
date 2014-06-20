@@ -1,8 +1,5 @@
 ---
-title: SparklineValueAxisItemCrosshair
-slug: php-dataviz-ui-sparklinevalueaxisitemcrosshair
-tags: api, php
-publish: true
+nav_title: SparklineValueAxisItemCrosshair
 ---
 
 # \Kendo\Dataviz\UI\SparklineValueAxisItemCrosshair
@@ -78,7 +75,7 @@ The crosshar tooltip configuration options.
 ##### $value `\Kendo\Dataviz\UI\SparklineValueAxisItemCrosshairTooltip|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineValueAxisItemCrosshairTooltip](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineValueAxisItemCrosshairTooltip)
+#### Example - using [\Kendo\Dataviz\UI\SparklineValueAxisItemCrosshairTooltip](/api/wrappers/php/Kendo/Dataviz/UI/SparklineValueAxisItemCrosshairTooltip)
     <?php
     $crosshair = new \Kendo\Dataviz\UI\SparklineValueAxisItemCrosshair();
     $tooltip = new \Kendo\Dataviz\UI\SparklineValueAxisItemCrosshairTooltip();

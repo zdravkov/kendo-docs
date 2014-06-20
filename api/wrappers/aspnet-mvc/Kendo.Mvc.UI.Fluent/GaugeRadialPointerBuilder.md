@@ -1,7 +1,5 @@
 ---
-title:GaugeRadialPointerBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeradialpointerbuilder
-publish:true
+nav_title: GaugeRadialPointerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the GaugeRadialPointerBuilder.
 
 
 
+
 ## Methods
 
-### Color(`System.String`)
+
+### Color(System.String)
 Sets the pointer color.
 
 
@@ -33,7 +33,7 @@ The pointer color.
     %>
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the pointer opacity.
 
 
@@ -56,7 +56,7 @@ The pointer opacity in the range from 0 (transparent) to 1 (opaque).
     %>
 
 
-### Value(`System.Double`)
+### Value(System.Double)
 Sets the pointer value.
 
 
@@ -78,13 +78,13 @@ The pointer value.
     %>
 
 
-### Cap(`System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder>`)
+### Cap(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder\>)
 Configures the pointer cap.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialCapBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialCapBuilder)>
 The configuration action.
 
 

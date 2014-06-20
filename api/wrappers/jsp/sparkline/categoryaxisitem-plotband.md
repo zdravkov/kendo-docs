@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-plotBand
-slug: jsp-sparkline-categoryAxisItem-plotBand
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-plotBand
 ---
 
 # \<kendo:sparkline-categoryAxisItem-plotBand\>

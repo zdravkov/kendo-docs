@@ -1,8 +1,5 @@
 ---
-title: SchedulerEditable
-slug: php-ui-schedulereditable
-tags: api, php
-publish: true
+nav_title: SchedulerEditable
 ---
 
 # \Kendo\UI\SchedulerEditable

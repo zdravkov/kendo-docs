@@ -1,8 +1,5 @@
 ---
-title: StockChartValueAxisItemMinorGridLines
-slug: php-dataviz-ui-stockchartvalueaxisitemminorgridlines
-tags: api, php
-publish: true
+nav_title: StockChartValueAxisItemMinorGridLines
 ---
 
 # \Kendo\Dataviz\UI\StockChartValueAxisItemMinorGridLines

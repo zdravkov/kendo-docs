@@ -1,14 +1,11 @@
 ---
-title: Introduction
-meta_title: HTML5, jQuery-based framework | Kendo UI
-meta_description: Kendo UI API reference overview: UI components, rich data vizualization framework, auto-adaptive mobile widgets and all tools for building rich web apps.
-slug: api-introduction
-tags: api, internals
-publish: true
-ordinal: 01
+nav_title: Introduction
+title: HTML5, jQuery-based framework | Kendo UI
+description: 'Kendo UI API reference overview: UI components, rich data vizualization framework, auto-adaptive mobile widgets and all tools for building rich web apps.'
+nav_position: 1
 ---
 
-# Kendo UI 
+# Kendo UI
 
 ## API Reference
 
@@ -26,23 +23,23 @@ Filtering an API reference page for a specific configuration, field, method or e
 
 #### API Reference
 
-##### [DataViz](/kendo-ui/api/dataviz)
+##### [DataViz](/api/dataviz)
 
 The API Reference For Kendo UI DataViz
 
-##### [Framework](/kendo-ui/api/framework)
+##### [Framework](/api/framework)
 
 The API Reference For Kendo UI Core Framework (i.e. MVVM, Globalization, SPA)
 
-##### [Mobile](/kendo-ui/api/mobile)
+##### [Mobile](/api/mobile)
 
 The API Reference For Kendo UI Mobile
 
-##### [Web](/kendo-ui/api/web)
+##### [Web](/api/web)
 
 (i.e. Grid, Treeview, Scheduler)
 
-##### [Wrappers](/kendo-ui/api/wrappers)
+##### [Wrappers](/api/wrappers)
 
 The API Reference For Kendo UI Server Wrappers (ASP.NET MVC, Java, PHP)
 

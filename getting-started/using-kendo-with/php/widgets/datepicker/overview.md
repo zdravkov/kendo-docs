@@ -1,23 +1,20 @@
 ---
-title: Overview
-meta_title: How to use the DatePicker PHP class, server-side wrapper for Kendo UI DatePicker widget
-meta_description: Getting started with Kendo UI DatePicker for PHP in quick steps - configure Kendo UI DatePicker widget and operate Kendo UI DatePicker events.
-slug: php-datepicker-overview
-publish: true
-relatedDocs: php-ui-datepicker
+nav_title: Overview
+title: How to use the DatePicker PHP class, server-side wrapper for Kendo UI DatePicker widget
+description: Getting started with Kendo UI DatePicker for PHP in quick steps - configure Kendo UI DatePicker widget and operate Kendo UI DatePicker events.
 ---
 
 # DatePicker
 
-The Kendo DatePicker for PHP is a server-side wrapper for the [Kendo UI DatePicker](/kendo-ui/api/web/datepicker) widget.
+The Kendo DatePicker for PHP is a server-side wrapper for the [Kendo UI DatePicker](/api/web/datepicker) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo DatePicker:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 
-2. Create a [datepicker](/kendo-ui/api/wrappers/php/Kendo/UI/DatePicker).
+2. Create a [datepicker](/api/wrappers/php/Kendo/UI/DatePicker).
 
         <?php
         $datepicker = new \Kendo\UI\DatePicker('datepicker');
@@ -26,7 +23,7 @@ Here is how to configure a simple Kendo DatePicker:
                    ->value(new DateTime('today', new DateTimeZone('UTC')));
         ?>
 
-3. Output the datepicker by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the datepicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $datepicker->render();
@@ -36,7 +33,7 @@ Here is how to configure a simple Kendo DatePicker:
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo DatePicker instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/datepicker#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/datepicker#methods) to control its behavior.
 
 
 ### Example
@@ -54,7 +51,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/d
 
 ## Handling Events
 
-You can subscribe to all datepicker [events](/kendo-ui/api/web/datepicker#events).
+You can subscribe to all datepicker [events](/api/web/datepicker#events).
 
 ### Example - subscribing by specifying JavaScript function name
 

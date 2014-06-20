@@ -1,8 +1,5 @@
 ---
-title: splitter-pane
-slug: jsp-splitter-pane
-tags: api, java
-publish: true
+nav_title: splitter-pane
 ---
 
 # \<kendo:splitter-pane\>

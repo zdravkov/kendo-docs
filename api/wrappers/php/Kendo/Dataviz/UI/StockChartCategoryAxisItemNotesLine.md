@@ -1,8 +1,5 @@
 ---
-title: StockChartCategoryAxisItemNotesLine
-slug: php-dataviz-ui-stockchartcategoryaxisitemnotesline
-tags: api, php
-publish: true
+nav_title: StockChartCategoryAxisItemNotesLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesLine

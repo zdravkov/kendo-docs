@@ -1,16 +1,14 @@
 ---
-title: Modes
-meta_title: Upload Modes in Telerik UI for ASP.NET MVC helper for Kendo UI Upload component
-meta_description: Explanation about synchronous and asynchronous operation modes of Telerik UI for ASP.NET MVC wrappers for Kendo UI Upload widget.
-slug: mvc-upload-modes
-publish: true
+nav_title: Modes
+title: Upload Modes in Telerik UI for ASP.NET MVC helper for Kendo UI Upload component
+description: Explanation about synchronous and asynchronous operation modes of Telerik UI for ASP.NET MVC wrappers for Kendo UI Upload widget.
 ---
 # Upload Modes
 
 The Upload supports two modes of operation - synchronous and asynchronous.
 
 This help topic explains how to use these modes with ASP.NET MVC.
-Please review the main [Upload Modes](/kendo-ui/getting-started/web/upload/modes) help topic for general information.
+Please review the main [Upload Modes](/getting-started/web/upload/modes) help topic for general information.
 
 ## Synchronous mode
 

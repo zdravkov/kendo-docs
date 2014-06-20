@@ -1,7 +1,5 @@
 ---
-title: Events
-slug: mvvm-events-binding
-publish: true
+nav_title: Events
 ---
 
 # Events binding

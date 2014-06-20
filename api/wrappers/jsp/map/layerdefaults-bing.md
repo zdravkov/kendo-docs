@@ -1,8 +1,5 @@
 ---
-title: map-layerDefaults-bing
-slug: jsp-map-layerDefaults-bing
-tags: api, java
-publish: true
+nav_title: map-layerDefaults-bing
 ---
 
 # \<kendo:map-layerDefaults-bing\>

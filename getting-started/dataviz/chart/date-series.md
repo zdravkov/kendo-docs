@@ -1,10 +1,8 @@
 ---
-title: Date Series
-meta_title: Working with date series in Kendo UI Javascript Chart widget
-meta_description: How to handle date series and date grouping in Chart UI widget.
-slug: chart-date-series
-ordinal: 3
-publish: true
+nav_title: Date Series
+title: Working with date series in Kendo UI Javascript Chart widget
+description: How to handle date series and date grouping in Chart UI widget.
+nav_position: 3
 ---
 
 # Date Series
@@ -29,12 +27,12 @@ Categorical series have built-in support for displaying dates. This includes:
 Specifying categories of type Date will switch the axis to date mode.
 
 The automatic mode selection can be overriden by setting
-[categoryAxis.type](/kendo-ui/api/dataviz/chart#configuration-categoryAxis.type) to "Date".
+[categoryAxis.type](/api/dataviz/chart#configuration-categoryAxis.type) to "Date".
 
 ### Category binding
 
 Date series should be bound using
-[categoryField](/kendo-ui/api/dataviz/chart#configuration-series.categoryField).
+[categoryField](/api/dataviz/chart#configuration-series.categoryField).
 
 The categories (dates) for all series will be sorted and merged during data binding.
 
@@ -184,7 +182,7 @@ For example:
         // baseUnit is set to "days"
     }
 
-The [baseUnit](/kendo-ui/api/dataviz/chart#configuration-categoryAxis.baseUnit) can be specified manually.
+The [baseUnit](/api/dataviz/chart#configuration-categoryAxis.baseUnit) can be specified manually.
 Valid options are:
 
 * seconds
@@ -197,17 +195,17 @@ Valid options are:
 * fit (see [Automatic fitting](#automatic-fitting))
 
 You can also choose to show every n-th base unit by setting the
-[baseUnitStep](/kendo-ui/api/dataviz/chart#configuration-categoryAxis.baseUnitStep)
+[baseUnitStep](/api/dataviz/chart#configuration-categoryAxis.baseUnitStep)
 option.
 
 #### Automatic fitting
 
-Setting [baseUnit](/kendo-ui/api/dataviz/chart#configuration-categoryAxis.baseUnit)
+Setting [baseUnit](/api/dataviz/chart#configuration-categoryAxis.baseUnit)
 to "fit" will constraint the total number of base units to
-[maxDateGroups](/kendo-ui/api/dataviz/chart#configuration-categoryAxis.baseUnit).
+[maxDateGroups](/api/dataviz/chart#configuration-categoryAxis.baseUnit).
 
 The baseUnit and baseUnitStep will be chosen according to
-[autoBaseUnitSteps](/kendo-ui/api/dataviz/chart#configuration-categoryAxis.autoBaseUnitSteps)
+[autoBaseUnitSteps](/api/dataviz/chart#configuration-categoryAxis.autoBaseUnitSteps)
 
 ##### Example: Fit date series
 
@@ -263,7 +261,7 @@ The date category axis supports specifying one format per base unit.
         }
     }
 
-The [`labels.format` property](/kendo-ui/api/dataviz/chart#categoryaxis.labels.format-string) takes priority, if specified.
+The [`labels.format` property](/api/dataviz/chart#categoryaxis.labels.format-string) takes priority, if specified.
 
 The global KendoUI culture is used for formatting the dates.
 It can be overriden by setting `labels.culture`.
@@ -282,14 +280,14 @@ The automatic mode selection can be overriden by specifying `type: "Date"`
 
 The following options accept dates:
 
-* [min](/kendo-ui/api/dataviz/chart#configuration-xAxis.min)
-* [max](/kendo-ui/api/dataviz/chart#configuration-xAxis.max)
-* [axisCrossingValue](/kendo-ui/api/dataviz/chart#configuration-xAxis.axisCrossingValue)
+* [min](/api/dataviz/chart#configuration-xAxis.min)
+* [max](/api/dataviz/chart#configuration-xAxis.max)
+* [axisCrossingValue](/api/dataviz/chart#configuration-xAxis.axisCrossingValue)
 
 The following options are expressed in base units:
 
-* [minorUnit](/kendo-ui/api/dataviz/chart#configuration-xAxis.minorUnit)
-* [majorUnit](/kendo-ui/api/dataviz/chart#configuration-xAxis.majorUnit)
+* [minorUnit](/api/dataviz/chart#configuration-xAxis.minorUnit)
+* [majorUnit](/api/dataviz/chart#configuration-xAxis.majorUnit)
 
 ### Base Units
 
@@ -330,8 +328,8 @@ The date axis supports specifying one format per base unit.
         }
     }
 
-The [`labels.format` property](/kendo-ui/api/dataviz/chart#xAxis.labels.format) property takes priority, if specified.
+The [`labels.format` property](/api/dataviz/chart#xAxis.labels.format) property takes priority, if specified.
 
 The global KendoUI culture is used for formatting the dates.
-It can be overriden by setting [`labels.culture` property](/kendo-ui/api/dataviz/chart#xAxis.labels.culture).
+It can be overriden by setting [`labels.culture` property](/api/dataviz/chart#xAxis.labels.culture).
 

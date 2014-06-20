@@ -1,8 +1,5 @@
 ---
-title: StockChartCategoryAxisItemMajorTicks
-slug: php-dataviz-ui-stockchartcategoryaxisitemmajorticks
-tags: api, php
-publish: true
+nav_title: StockChartCategoryAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorTicks

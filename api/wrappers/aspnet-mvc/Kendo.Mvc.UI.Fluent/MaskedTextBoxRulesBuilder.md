@@ -1,7 +1,5 @@
 ---
-title:MaskedTextBoxRulesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.maskedtextboxrulesbuilder
-publish:true
+nav_title: MaskedTextBoxRulesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MaskedTextBoxRulesBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the NumericTextBox events.
 
 
 
+
 ## Methods
 
-### Add(`System.Char,System.String`)
+
+### Add(System.Char,System.String)
 Adds custom mask rule.
 
 
@@ -39,7 +39,7 @@ The JavaScript RegExp object assigned to defined rule.
                 )
 
 
-### Add(`System.Char,System.Func<System.Object,System.Object>`)
+### Add(System.Char,System.Func\<System.Object,System.Object\>)
 Adds custom mask rule.
 
 

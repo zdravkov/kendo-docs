@@ -1,8 +1,5 @@
 ---
-title: SchedulerFooter
-slug: php-ui-schedulerfooter
-tags: api, php
-publish: true
+nav_title: SchedulerFooter
 ---
 
 # \Kendo\UI\SchedulerFooter

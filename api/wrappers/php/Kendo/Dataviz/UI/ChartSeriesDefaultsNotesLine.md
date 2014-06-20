@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesDefaultsNotesLine
-slug: php-dataviz-ui-chartseriesdefaultsnotesline
-tags: api, php
-publish: true
+nav_title: ChartSeriesDefaultsNotesLine
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsNotesLine

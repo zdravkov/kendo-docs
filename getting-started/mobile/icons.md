@@ -1,7 +1,5 @@
 ---
-title: Icons
-slug: mobile-icons
-publish: true
+nav_title: Icons
 ---
 
 # Icons in Kendo UI Mobile

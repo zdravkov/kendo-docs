@@ -1,8 +1,5 @@
 ---
-title: GridColumnSortable
-slug: php-ui-gridcolumnsortable
-tags: api, php
-publish: true
+nav_title: GridColumnSortable
 ---
 
 # \Kendo\UI\GridColumnSortable

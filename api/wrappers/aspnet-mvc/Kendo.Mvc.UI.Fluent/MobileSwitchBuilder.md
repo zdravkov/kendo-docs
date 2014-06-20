@@ -1,7 +1,5 @@
 ---
-title:MobileSwitchBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobileswitchbuilder
-publish:true
+nav_title: MobileSwitchBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileSwitchBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileSwitch for ASP.NET MVC.
 
 
 
+
 ## Methods
 
-### Checked(`System.Boolean`)
+
+### Checked(System.Boolean)
 The checked state of the widget.
 
 
@@ -24,7 +24,7 @@ The value that configures the checked.
 
 
 
-### Enable(`System.Boolean`)
+### Enable(System.Boolean)
 If set to false the widget will be disabled and will not allow the user to change its checked state. The widget is enabled by default.
 
 
@@ -37,7 +37,7 @@ The value that configures the enable.
 
 
 
-### OffLabel(`System.String`)
+### OffLabel(System.String)
 The OFF label.
 
 
@@ -50,7 +50,7 @@ The value that configures the offlabel.
 
 
 
-### OnLabel(`System.String`)
+### OnLabel(System.String)
 The ON label.
 
 
@@ -63,13 +63,13 @@ The value that configures the onlabel.
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileSwitchEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileSwitchEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileSwitchEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileSwitchEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileSwitchEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileSwitchEventBuilder)>
 The client events action.
 
 

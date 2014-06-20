@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-connectors
-slug: jsp-sparkline-seriesItem-connectors
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-connectors
 ---
 
 # \<kendo:sparkline-seriesItem-connectors\>

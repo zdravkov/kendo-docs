@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-notes-icon
-slug: jsp-stockChart-valueAxisItem-notes-icon
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-notes-icon
 ---
 
 # \<kendo:stockChart-valueAxisItem-notes-icon\>
@@ -59,7 +56,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-notes-icon-border](/kendo-ui/api/wrappers/jsp/stockchart/valueaxisitem-notes-icon-border).
+More documentation is available at [kendo:stockChart-valueAxisItem-notes-icon-border](/api/wrappers/jsp/stockchart/valueaxisitem-notes-icon-border).
 
 #### Example
 

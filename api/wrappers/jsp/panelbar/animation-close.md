@@ -1,8 +1,5 @@
 ---
-title: panelBar-animation-close
-slug: jsp-panelBar-animation-close
-tags: api, java
-publish: true
+nav_title: panelBar-animation-close
 ---
 
 # \<kendo:panelBar-animation-close\>

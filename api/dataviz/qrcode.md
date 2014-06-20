@@ -1,16 +1,12 @@
 ---
-title: kendo.dataviz.ui.QRCode
-meta_title: Configuration, methods and events of Kendo UI DataViz QRCode
-meta_description: Learn the configuration options for QRCode widget, set its options, use methods properly.
-slug: api-dataviz-qrcode
-relatedDocs: gs-dataviz-qrcode-overview
-tags: api,dataviz
-publish: true
+nav_title: kendo.dataviz.ui.QRCode
+title: Configuration, methods and events of Kendo UI DataViz QRCode
+description: Learn the configuration options for QRCode widget, set its options, use methods properly.
 ---
 
 # kendo.dataviz.ui.QRCode
 
-Represents the Kendo UI QRCode widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI QRCode widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

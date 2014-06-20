@@ -1,7 +1,5 @@
 ---
-title:MobileActionSheetBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobileactionsheetbuilder
-publish:true
+nav_title: MobileActionSheetBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileActionSheetBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileActionSheet for ASP.NET M
 
 
 
+
 ## Methods
 
-### Cancel(`System.String`)
+
+### Cancel(System.String)
 The text of the cancel button.
 
 
@@ -24,7 +24,7 @@ The value that configures the cancel.
 
 
 
-### Title(`System.String`)
+### Title(System.String)
 Specifies the title of the actionsheet
 
 
@@ -37,39 +37,52 @@ The value that configures the title.
 
 
 
-### Popup(`System.Action<Kendo.Mvc.UI.Fluent.MobileActionSheetPopupSettingsBuilder>`)
+### Popup(System.Action\<Kendo.Mvc.UI.Fluent.MobileActionSheetPopupSettingsBuilder\>)
 The popup configuration options (tablet only)
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileActionSheetPopupSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileActionSheetPopupSettingsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileActionSheetPopupSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileActionSheetPopupSettingsBuilder)>
 The action that configures the popup.
 
 
 
 
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.MobileActionSheetItemFactory>`)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.MobileActionSheetItemFactory\>)
 Contains the items of the actionsheet widget
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileActionSheetItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileActionSheetItemFactory)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileActionSheetItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileActionSheetItemFactory)>
 The action that configures the items.
 
 
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileActionSheetEventBuilder>`)
+### Type(Kendo.Mvc.UI.MobileActionSheetType)
+Specifies the actionsheet type.
+
+
+#### Parameters
+
+##### value [Kendo.Mvc.UI.MobileActionSheetType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileActionSheetType)
+The value that configures the type.
+
+
+
+
+
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileActionSheetEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileActionSheetEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileActionSheetEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileActionSheetEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileActionSheetEventBuilder)>
 The client events action.
 
 

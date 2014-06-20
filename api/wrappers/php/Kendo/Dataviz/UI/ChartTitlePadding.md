@@ -1,8 +1,5 @@
 ---
-title: ChartTitlePadding
-slug: php-dataviz-ui-charttitlepadding
-tags: api, php
-publish: true
+nav_title: ChartTitlePadding
 ---
 
 # \Kendo\Dataviz\UI\ChartTitlePadding

@@ -1,8 +1,5 @@
 ---
-title: upload-localization
-slug: jsp-upload-localization
-tags: api, java
-publish: true
+nav_title: upload-localization
 ---
 
 # \<kendo:upload-localization\>

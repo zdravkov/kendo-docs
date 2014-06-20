@@ -1,9 +1,7 @@
 ---
-title: Define culture information
-meta_title: Define Culture Information | Kendo UI Framework Globalization documentation
-meta_description: How to define culture information in culture files and extend it, default culture information settings.
-slug: define-culture-info
-publish: true
+nav_title: Define culture information
+title: Define Culture Information | Kendo UI Framework Globalization documentation
+description: How to define culture information in culture files and extend it, default culture information settings.
 ---
 # Define culture information
 

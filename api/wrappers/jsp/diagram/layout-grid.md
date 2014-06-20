@@ -1,8 +1,5 @@
 ---
-title: diagram-layout-grid
-slug: jsp-diagram-layout-grid
-tags: api, java
-publish: true
+nav_title: diagram-layout-grid
 ---
 
 # \<kendo:diagram-layout-grid\>

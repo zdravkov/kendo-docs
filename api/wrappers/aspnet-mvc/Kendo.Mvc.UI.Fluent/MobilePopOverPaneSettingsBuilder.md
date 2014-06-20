@@ -1,7 +1,5 @@
 ---
-title:MobilePopOverPaneSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilepopoverpanesettingsbuilder
-publish:true
+nav_title: MobilePopOverPaneSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobilePopOverPaneSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobilePopOverPaneSettings settings.
 
 
 
+
 ## Methods
 
-### Initial(`System.String`)
+
+### Initial(System.String)
 The id of the initial mobile View to display.
 
 
@@ -24,7 +24,7 @@ The value that configures the initial.
 
 
 
-### Layout(`System.String`)
+### Layout(System.String)
 The id of the default Pane Layout.
 
 
@@ -37,7 +37,7 @@ The value that configures the layout.
 
 
 
-### Loading(`System.String`)
+### Loading(System.String)
 The text displayed in the loading popup. Setting this value to false will disable the loading popup.
 
 
@@ -50,7 +50,7 @@ The value that configures the loading.
 
 
 
-### Transition(`System.String`)
+### Transition(System.String)
 The default View transition.
 
 

@@ -1,7 +1,5 @@
 ---
-title:QRBorderBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.qrborderbuilder
-publish:true
+nav_title: QRBorderBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.QRBorderBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring QRBorder.
 
 
 
+
 ## Methods
 
-### Width(`System.Int32`)
+
+### Width(System.Int32)
 Sets the border width.
 
 
@@ -36,7 +36,7 @@ The border width.
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the border color.
 
 

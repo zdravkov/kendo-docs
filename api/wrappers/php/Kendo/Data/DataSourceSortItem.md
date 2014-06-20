@@ -1,8 +1,5 @@
 ---
-title: DataSourceSortItem
-slug: php-data-datasourcesortitem
-tags: api, php
-publish: true
+nav_title: DataSourceSortItem
 ---
 
 # \Kendo\Data\DataSourceSortItem

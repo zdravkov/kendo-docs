@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-majorTicks
-slug: jsp-stockChart-categoryAxisItem-majorTicks
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-majorTicks
 ---
 
 # \<kendo:stockChart-categoryAxisItem-majorTicks\>

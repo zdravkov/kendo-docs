@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-target-border
-slug: jsp-chart-seriesItem-target-border
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-target-border
 ---
 
 # \<kendo:chart-seriesItem-target-border\>

@@ -1,8 +1,5 @@
 ---
-title: dropDownList-animation-open
-slug: jsp-dropDownList-animation-open
-tags: api, java
-publish: true
+nav_title: dropDownList-animation-open
 ---
 
 # \<kendo:dropDownList-animation-open\>

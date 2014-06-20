@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-seriesItem-tooltip-border
-slug: jsp-stockChart-navigator-seriesItem-tooltip-border
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-seriesItem-tooltip-border
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-tooltip-border\>

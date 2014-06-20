@@ -1,8 +1,5 @@
 ---
-title: stockChart-legend-labels
-slug: jsp-stockChart-legend-labels
-tags: api, java
-publish: true
+nav_title: stockChart-legend-labels
 ---
 
 # \<kendo:stockChart-legend-labels\>

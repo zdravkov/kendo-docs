@@ -1,7 +1,5 @@
 ---
-title:ProgressBarAnimationBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.progressbaranimationbuilder
-publish:true
+nav_title: ProgressBarAnimationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ProgressBarAnimationBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the ProgressBarAnimation object.
 
 
 
+
 ## Methods
 
-### Enable(`System.Boolean`)
+
+### Enable(System.Boolean)
 Enables or disables the progress animation
 
 
@@ -30,7 +30,7 @@ The boolean value
     %>
 
 
-### Duration(`System.Int32`)
+### Duration(System.Int32)
 Specifies the duration of the progress animation
 
 

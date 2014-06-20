@@ -1,10 +1,7 @@
 ---
-title: Local binding
-meta_title: How to bind Kendo TreeView for PHP to PHP array
-meta_description: Learn how to bind Kendo UI TreeView for PHP to array of data
-slug: php-treeview-local-binding
-publish: true
-relatedDocs: php-ui-treeview, php-treeview-overview
+nav_title: Local binding
+title: How to bind Kendo TreeView for PHP to PHP array
+description: Learn how to bind Kendo UI TreeView for PHP to array of data
 ---
 
 # Local Binding to Array
@@ -22,7 +19,7 @@ First we will configure a Kendo TreeView for PHP binding and then we will implem
 
 > The following demo is using the sample SQLite database shipped with the Telerik UI for PHP** demos (**/wrappers/php/sample.db).
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Create a PDO connection
 
         <?php
@@ -78,7 +75,7 @@ First we will configure a Kendo TreeView for PHP binding and then we will implem
         $data = toHierarchy($rows, 'EmployeeID', 'ReportsTo');
         ?>
 
-1. Create a [data source](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource#data)
+1. Create a [data source](/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/api/wrappers/php/Kendo/Data/DataSource#data)
 
         <?php
         $dataSource = new \Kendo\Data\DataSource();
@@ -86,7 +83,7 @@ First we will configure a Kendo TreeView for PHP binding and then we will implem
         $dataSource->data($data);
         ?>
 
-1. Create a [treeview](/kendo-ui/api/wrappers/php/Kendo/UI/TreeView), configure its [dataTextField](/kendo-ui/api/wrappers/php/Kendo/UI/TreeView#dataTextField) and set its [data source](/kendo-ui/api/wrappers/php/Kendo/UI/TreeView#datasource).
+1. Create a [treeview](/api/wrappers/php/Kendo/UI/TreeView), configure its [dataTextField](/api/wrappers/php/Kendo/UI/TreeView#dataTextField) and set its [data source](/api/wrappers/php/Kendo/UI/TreeView#datasource).
 
         <?php
         $treeview = new \Kendo\UI\TreeView('treeview');
@@ -97,7 +94,7 @@ First we will configure a Kendo TreeView for PHP binding and then we will implem
 
         ?>
 
-1. Output the treeview by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+1. Output the treeview by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $treeview->render();

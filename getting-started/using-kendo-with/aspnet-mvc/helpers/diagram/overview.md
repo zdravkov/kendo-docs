@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: Diagram HtmlHelper extension | Kendo UI documentation
-meta_description: Configuration of Kendo UI Diagram widget for server binding in quick steps, add Diagram HtmlHelper extension, manipulate Kendo UI diagram events.
-slug: mvc-diagram-overview
-publish: true
+nav_title: Overview
+title: Diagram HtmlHelper extension | Kendo UI documentation
+description: Configuration of Kendo UI Diagram widget for server binding in quick steps, add Diagram HtmlHelper extension, manipulate Kendo UI diagram events.
 ---
 
 # Diagram
 
-The Diagram HtmlHelper extension is a server-side wrapper for the [Kendo UI Diagram](/kendo-ui/api/dataviz/diagram) widget.
+The Diagram HtmlHelper extension is a server-side wrapper for the [Kendo UI Diagram](/api/dataviz/diagram) widget.
 
 ## Getting Started
 
@@ -53,7 +51,7 @@ Here is how to configure the Kendo Diagram with ajax binding:
 ## Accessing an Existing Diagram
 
 You can reference an existing diagram instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/dataviz/diagram#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/dataviz/diagram#methods) to control its behavior.
 
 ### Accessing an existing Diagram instance
 
@@ -67,7 +65,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/datav
 
 ## Handling Kendo UI Diagram events
 
-You can subscribe to all [events](/kendo-ui/api/dataviz/diagram#events) exposed by Kendo UI Diagram:
+You can subscribe to all [events](/api/dataviz/diagram#events) exposed by Kendo UI Diagram:
 
 ### WebForms - subscribe by handler name
 

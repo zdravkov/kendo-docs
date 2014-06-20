@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorPanePadding
-slug: php-dataviz-ui-stockchartnavigatorpanepadding
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorPanePadding
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorPanePadding

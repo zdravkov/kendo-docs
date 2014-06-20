@@ -1,7 +1,5 @@
 ---
-title:TooltipSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.tooltipsettingsbuilder
-publish:true
+nav_title: TooltipSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TooltipSettingsBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring the Tooltip component.
 
 
 
+
 ## Methods
 
-### Position(`Kendo.Mvc.UI.TooltipPosition`)
+
+### Position(Kendo.Mvc.UI.TooltipPosition)
 The position (relative to the target) at which the Tooltip will be shown
 
 
 #### Parameters
 
-##### position [Kendo.Mvc.UI.TooltipPosition](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TooltipPosition)
+##### position [Kendo.Mvc.UI.TooltipPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/TooltipPosition)
 The position
 
 
@@ -27,7 +27,7 @@ The position
 
 
 
-### ShowAfter(`System.Int32`)
+### ShowAfter(System.Int32)
 The inverval in milliseconds, after which the Tooltip will be shown
 
 
@@ -43,7 +43,7 @@ The inverval in milliseconds, after which the Tooltip will be shown
 
 
 
-### Callout(`System.Boolean`)
+### Callout(System.Boolean)
 Determines if callout should be visible
 
 
@@ -59,7 +59,7 @@ Determines if callout should be visible
 
 
 
-### AutoHide(`System.Boolean`)
+### AutoHide(System.Boolean)
 Determines if tooltip should be automatically hidden, or a close button should be present
 
 
@@ -75,7 +75,7 @@ Determines if tooltip should be automatically hidden, or a close button should b
 
 
 
-### LoadContentFrom(`System.Web.Routing.RouteValueDictionary`)
+### LoadContentFrom(System.Web.Routing.RouteValueDictionary)
 Sets the Url, which will be requested to return the content.
 
 
@@ -94,7 +94,7 @@ The route values of the Action method.
     %>
 
 
-### LoadContentFrom(`System.String,System.String`)
+### LoadContentFrom(System.String,System.String)
 Sets the Url, which will be requested to return the content.
 
 
@@ -116,7 +116,7 @@ The controller name.
     %>
 
 
-### LoadContentFrom(`System.String,System.String,System.Object`)
+### LoadContentFrom(System.String,System.String,System.Object)
 Sets the Url, which will be requested to return the content.
 
 
@@ -141,7 +141,7 @@ Route values.
     %>
 
 
-### LoadContentFrom(`System.String`)
+### LoadContentFrom(System.String)
 Sets the Url, which will be requested to return the content.
 
 
@@ -160,7 +160,7 @@ The url.
     %>
 
 
-### Content(`System.String`)
+### Content(System.String)
 Sets the HTML content which the tooltip should display as a string.
 
 
@@ -173,7 +173,7 @@ The action which renders the content.
 
 
 
-### ContentTemplateId(`System.String`)
+### ContentTemplateId(System.String)
 Sets the id of kendo template which will be used as tooltip content.
 
 
@@ -186,14 +186,14 @@ The id of the template
 
 
 
-### ContentHandler(`System.Func<System.Object,System.Object>`)
+### ContentHandler(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return the content for the tooltip.
 
 
 
 
 
-### ContentHandler(`System.String`)
+### ContentHandler(System.String)
 Sets JavaScript function which to return the content for the tooltip.
 
 
@@ -206,7 +206,7 @@ JavaScript function name
 
 
 
-### Animation(`System.Boolean`)
+### Animation(System.Boolean)
 Configures the animation effects of the window.
 
 
@@ -224,13 +224,13 @@ Whether the component animation is enabled.
     .Animation(false)
 
 
-### Animation(`System.Action<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder>`)
+### Animation(System.Action\<Kendo.Mvc.UI.Fluent.PopupAnimationBuilder\>)
 Configures the animation effects of the panelbar.
 
 
 #### Parameters
 
-##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder)>
+##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.PopupAnimationBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PopupAnimationBuilder)>
 The action that configures the animation.
 
 
@@ -242,14 +242,14 @@ The action that configures the animation.
     .Animation(animation => animation.Expand)
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 Sets the width of the tooltip.
 
 
 
 
 
-### Height(`System.Int32`)
+### Height(System.Int32)
 Sets the height of the tooltip.
 
 

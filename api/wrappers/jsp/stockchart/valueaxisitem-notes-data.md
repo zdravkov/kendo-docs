@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-notes-data
-slug: jsp-stockChart-valueAxisItem-notes-data
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-notes-data
 ---
 
 # \<kendo:stockChart-valueAxisItem-notes-data\>
@@ -23,7 +20,7 @@ The items of the notes.
 
 The items of the notes.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-notes-dataItem](/kendo-ui/api/wrappers/jsp/stockchart/valueaxisitem-notes-dataitem).
+More documentation is available at [kendo:stockChart-valueAxisItem-notes-dataItem](/api/wrappers/jsp/stockchart/valueaxisitem-notes-dataitem).
 
 #### Example
 

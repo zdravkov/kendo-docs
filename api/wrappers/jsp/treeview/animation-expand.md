@@ -1,8 +1,5 @@
 ---
-title: treeView-animation-expand
-slug: jsp-treeView-animation-expand
-tags: api, java
-publish: true
+nav_title: treeView-animation-expand
 ---
 
 # \<kendo:treeView-animation-expand\>

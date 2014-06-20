@@ -1,8 +1,5 @@
 ---
-title: autoComplete-animation-close
-slug: jsp-autoComplete-animation-close
-tags: api, java
-publish: true
+nav_title: autoComplete-animation-close
 ---
 
 # \<kendo:autoComplete-animation-close\>

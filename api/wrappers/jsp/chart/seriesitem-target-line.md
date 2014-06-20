@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-target-line
-slug: jsp-chart-seriesItem-target-line
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-target-line
 ---
 
 # \<kendo:chart-seriesItem-target-line\>

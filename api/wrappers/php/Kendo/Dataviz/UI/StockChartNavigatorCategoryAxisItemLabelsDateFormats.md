@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemLabelsDateFormats
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemlabelsdateformats
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemLabelsDateFormats
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemLabelsDateFormats

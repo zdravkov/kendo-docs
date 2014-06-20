@@ -1,8 +1,5 @@
 ---
-title: chart-seriesDefaults-border
-slug: jsp-chart-seriesDefaults-border
-tags: api, java
-publish: true
+nav_title: chart-seriesDefaults-border
 ---
 
 # \<kendo:chart-seriesDefaults-border\>

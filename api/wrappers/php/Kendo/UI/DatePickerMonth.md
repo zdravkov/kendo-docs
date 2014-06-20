@@ -1,8 +1,5 @@
 ---
-title: DatePickerMonth
-slug: php-ui-datepickermonth
-tags: api, php
-publish: true
+nav_title: DatePickerMonth
 ---
 
 # \Kendo\UI\DatePickerMonth

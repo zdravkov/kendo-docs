@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.ProgressBar
-meta_title: Configuration, fields, methods and events of Kendo UI ProgressBar
-meta_description: How to configure and control Kendo UI ProgressBar widget
-slug: api-web-progressbar
-relatedDocs: gs-web-progressbar-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.ProgressBar
+title: Configuration, fields, methods and events of Kendo UI ProgressBar
+description: How to configure and control Kendo UI ProgressBar widget
 ---
 
 # kendo.ui.ProgressBar
 
-Represents the Kendo UI ProgressBar widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI ProgressBar widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

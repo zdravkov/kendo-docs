@@ -1,7 +1,5 @@
 ---
-title:ChartAxisLabelsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxislabelsbuilder
-publish:true
+nav_title: ChartAxisLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the chart labels.
 
 
 
+
 ## Methods
 
-### Mirror(`System.Boolean`)
+
+### Mirror(System.Boolean)
 Renders the axis labels on the other side.
 
 
@@ -37,7 +37,7 @@ A value indicating whether to render the axis labels on the other side.
     %>
 
 
-### Step(`System.Int32`)
+### Step(System.Int32)
 Label rendering step.
 
 
@@ -60,7 +60,7 @@ A value indicating the step at which labels are rendered.
     %>
 
 
-### Skip(`System.Int32`)
+### Skip(System.Int32)
 Label rendering skip.
 
 

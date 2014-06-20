@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.ActionSheet
-meta_title: Configuration, methods and events of Kendo UI Mobile ActionSheet
-meta_description: Quickly configure mobile ActionSheet widget, close and open it using methods, find which events to use.
-slug: api-mobile-actionsheet
-relatedDocs: gs-mobile-actionsheet
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.ActionSheet
+title: Configuration, methods and events of Kendo UI Mobile ActionSheet
+description: Quickly configure mobile ActionSheet widget, close and open it using methods, find which events to use.
 ---
 
 # kendo.mobile.ui.ActionSheet
 
-Represents the Kendo UI Mobile ActionSheet widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile ActionSheet widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 

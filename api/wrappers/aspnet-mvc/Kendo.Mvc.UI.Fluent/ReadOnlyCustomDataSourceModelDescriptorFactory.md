@@ -1,7 +1,5 @@
 ---
-title:ReadOnlyCustomDataSourceModelDescriptorFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.readonlycustomdatasourcemodeldescriptorfactory
-publish:true
+nav_title: ReadOnlyCustomDataSourceModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.ReadOnlyCustomDataSourceModelDescriptorFactory
@@ -9,9 +7,24 @@ Defines the fluent interface for configuring the DataSource Model definition.
 
 
 
+
 ## Methods
 
-### Field(`System.String,System.Type`)
+
+### Id(System.String)
+Specify the member used to identify an unique Model instance.
+
+
+#### Parameters
+
+##### fieldName `System.String`
+The member name.
+
+
+
+
+
+### Field(System.String,System.Type)
 Describes a Model field
 
 

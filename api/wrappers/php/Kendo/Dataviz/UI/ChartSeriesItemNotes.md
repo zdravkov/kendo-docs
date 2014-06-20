@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemNotes
-slug: php-dataviz-ui-chartseriesitemnotes
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemNotes
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemNotes
@@ -24,7 +21,7 @@ The icon of the notes.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemNotesIcon|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNotesIcon](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNotesIcon)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNotesIcon](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNotesIcon)
     <?php
     $notes = new \Kendo\Dataviz\UI\ChartSeriesItemNotes();
     $icon = new \Kendo\Dataviz\UI\ChartSeriesItemNotesIcon();
@@ -53,7 +50,7 @@ The label of the notes.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemNotesLabel|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNotesLabel](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNotesLabel)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNotesLabel](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNotesLabel)
     <?php
     $notes = new \Kendo\Dataviz\UI\ChartSeriesItemNotes();
     $label = new \Kendo\Dataviz\UI\ChartSeriesItemNotesLabel();
@@ -82,7 +79,7 @@ The line of the notes.
 ##### $value `\Kendo\Dataviz\UI\ChartSeriesItemNotesLine|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNotesLine](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNotesLine)
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemNotesLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemNotesLine)
     <?php
     $notes = new \Kendo\Dataviz\UI\ChartSeriesItemNotes();
     $line = new \Kendo\Dataviz\UI\ChartSeriesItemNotesLine();

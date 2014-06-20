@@ -1,7 +1,5 @@
 ---
-title: Batch Editing
-slug: jsp-grid-batch-editing
-publish: true
+nav_title: Batch Editing
 ---
 
 # Cell Editing and Batch Updates

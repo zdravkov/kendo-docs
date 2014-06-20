@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.ButtonGroup
-meta_title: Configuration, methods and events of Kendo UI Mobile ButtonGroup
-meta_description: Learn how to define the initially selected button, select a button and get the currently selected button.
-slug: api-mobile-buttongroup
-relatedDocs: gs-mobile-buttongroup
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.ButtonGroup
+title: Configuration, methods and events of Kendo UI Mobile ButtonGroup
+description: Learn how to define the initially selected button, select a button and get the currently selected button.
 ---
 
 # kendo.mobile.ui.ButtonGroup
 
-Represents the Kendo UI Mobile ButtonGroup widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile ButtonGroup widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 

@@ -1,8 +1,5 @@
 ---
-title: barcode-border
-slug: jsp-barcode-border
-tags: api, java
-publish: true
+nav_title: barcode-border
 ---
 
 # \<kendo:barcode-border\>

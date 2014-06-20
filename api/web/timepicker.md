@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.TimePicker
-meta_title: Configuration, methods and events of Kendo UI TimePicker
-meta_description: What type of animations you can use in TimePicker UI widget, find supported methods and see which events are triggered once the value is changed.
-slug: api-web-timepicker
-relatedDocs: gs-web-timepicker-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.TimePicker
+title: Configuration, methods and events of Kendo UI TimePicker
+description: What type of animations you can use in TimePicker UI widget, find supported methods and see which events are triggered once the value is changed.
 ---
 
 # kendo.ui.TimePicker
 
-Represents the Kendo UI TimePicker. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI TimePicker. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
@@ -67,7 +63,7 @@ The animation played when the popup is closed.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.close.duration `Number`
 
@@ -95,7 +91,7 @@ The animation played when the calendar popup is opened.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.open.duration `Number`
 

@@ -1,8 +1,5 @@
 ---
-title: linearGauge-pointer-track
-slug: jsp-linearGauge-pointer-track
-tags: api, java
-publish: true
+nav_title: linearGauge-pointer-track
 ---
 
 # \<kendo:linearGauge-pointer-track\>
@@ -56,7 +53,7 @@ The visibility of the track.
 
 The border of the track.
 
-More documentation is available at [kendo:linearGauge-pointer-track-border](/kendo-ui/api/wrappers/jsp/lineargauge/pointer-track-border).
+More documentation is available at [kendo:linearGauge-pointer-track-border](/api/wrappers/jsp/lineargauge/pointer-track-border).
 
 #### Example
 

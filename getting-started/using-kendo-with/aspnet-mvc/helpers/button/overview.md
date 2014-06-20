@@ -1,17 +1,15 @@
 ---
-title: Overview
-meta_title: Button HtmlHelper extension for Kendo UI Button widget | Kendo UI documentation
-meta_description: Getting started with Button HtmlHelper extension in quick steps - configure Kendo UI Button widget and operate Kendo UI Button events.
-slug: mvc-button-overview
-publish: true
+nav_title: Overview
+title: Button HtmlHelper extension for Kendo UI Button widget | Kendo UI documentation
+description: Getting started with Button HtmlHelper extension in quick steps - configure Kendo UI Button widget and operate Kendo UI Button events.
 ---
 
 # Button
 
-The Button HtmlHelper extension is a server-side wrapper for the [Kendo UI Button](/kendo-ui/api/web/button) widget.
+The Button HtmlHelper extension is a server-side wrapper for the [Kendo UI Button](/api/web/button) widget.
 
-It is assumed that the reader of this page is familiar with the fundamental [Kendo UI widget concepts](/kendo-ui/getting-started/widgets) and
-the [Kendo UI MVC wrappers](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) are setup correctly.
+It is assumed that the reader of this page is familiar with the fundamental [Kendo UI widget concepts](/getting-started/widgets) and
+the [Kendo UI MVC wrappers](/getting-started/using-kendo-with/aspnet-mvc/introduction) are setup correctly.
 
 ## Getting Started
 
@@ -187,8 +185,8 @@ The widget can also be disabled or enabled at any time with Javascript by using 
             .Enable(false)
             .Content("Disabled button") %>
 
-For more information on the **Button** [`enable` method](/kendo-ui/api/web/button#methods-enable), please refer to the [Button API](/kendo-ui/api/web/button/).
+For more information on the **Button** [`enable` method](/api/web/button#methods-enable), please refer to the [Button API](/api/web/button/).
 
 ## Accessing the Button instance
 
-Please refer to the **Button**'s [Getting Started](/kendo-ui/getting-started/web/button/overview/#accessing-the-button-instance) documentation page.
+Please refer to the **Button**'s [Getting Started](/getting-started/web/button/overview/#accessing-the-button-instance) documentation page.

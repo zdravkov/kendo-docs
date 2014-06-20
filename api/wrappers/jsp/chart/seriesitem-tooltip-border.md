@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-tooltip-border
-slug: jsp-chart-seriesItem-tooltip-border
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-tooltip-border
 ---
 
 # \<kendo:chart-seriesItem-tooltip-border\>

@@ -1,8 +1,5 @@
 ---
-title: grid-column-commandItem
-slug: jsp-grid-column-commandItem
-tags: api, java
-publish: true
+nav_title: grid-column-commandItem
 ---
 
 # \<kendo:grid-column-commandItem\>

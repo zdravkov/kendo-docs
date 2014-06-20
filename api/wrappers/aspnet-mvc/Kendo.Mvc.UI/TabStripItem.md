@@ -1,7 +1,5 @@
 ---
-title:TabStripItem
-slug:aspnetmvc-kendo.mvc.ui.tabstripitem
-publish:true
+nav_title: TabStripItem
 ---
 
 # Kendo.Mvc.UI.TabStripItem

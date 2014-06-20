@@ -1,8 +1,5 @@
 ---
-title: MapControls
-slug: php-dataviz-ui-mapcontrols
-tags: api, php
-publish: true
+nav_title: MapControls
 ---
 
 # \Kendo\Dataviz\UI\MapControls
@@ -33,7 +30,7 @@ Configures or disables the built-in attribution control.
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapControlsAttribution](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapControlsAttribution)
+#### Example - using [\Kendo\Dataviz\UI\MapControlsAttribution](/api/wrappers/php/Kendo/Dataviz/UI/MapControlsAttribution)
     <?php
     $controls = new \Kendo\Dataviz\UI\MapControls();
     $attribution = new \Kendo\Dataviz\UI\MapControlsAttribution();
@@ -71,7 +68,7 @@ Configures or disables the built-in navigator control (directional pad).
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapControlsNavigator](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapControlsNavigator)
+#### Example - using [\Kendo\Dataviz\UI\MapControlsNavigator](/api/wrappers/php/Kendo/Dataviz/UI/MapControlsNavigator)
     <?php
     $controls = new \Kendo\Dataviz\UI\MapControls();
     $navigator = new \Kendo\Dataviz\UI\MapControlsNavigator();
@@ -109,7 +106,7 @@ Configures or disables the built-in zoom control (+/- button).
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapControlsZoom](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapControlsZoom)
+#### Example - using [\Kendo\Dataviz\UI\MapControlsZoom](/api/wrappers/php/Kendo/Dataviz/UI/MapControlsZoom)
     <?php
     $controls = new \Kendo\Dataviz\UI\MapControls();
     $zoom = new \Kendo\Dataviz\UI\MapControlsZoom();

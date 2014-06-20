@@ -1,7 +1,5 @@
 ---
-title:ChartSeriesDefaultsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartseriesdefaultsbuilder
-publish:true
+nav_title: ChartSeriesDefaultsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartSeriesDefaultsBuilder
@@ -9,7 +7,9 @@ Defines the fluent API for configuring the chart series defaults.
 
 
 
+
 ## Methods
+
 
 ### Bar
 Defines the default settings for bar series.
@@ -67,6 +67,13 @@ Defines the default settings for donut series.
 
 
 
+### Funnel
+Defines the default settings for funnel series.
+
+
+
+
+
 ### Scatter
 Defines the default settings for scatter series.
 
@@ -118,6 +125,27 @@ Defines the default settings for radar column series.
 
 ### RadarLine
 Defines the default settings for radar line series.
+
+
+
+
+
+### PolarLine
+Defines the default settings for polar line series.
+
+
+
+
+
+### PolarArea
+Defines the default settings for polar area series.
+
+
+
+
+
+### PolarScatter
+Defines the default settings for polar scatter series.
 
 
 

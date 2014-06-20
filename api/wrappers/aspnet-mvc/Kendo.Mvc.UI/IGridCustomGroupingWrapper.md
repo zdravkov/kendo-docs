@@ -1,7 +1,5 @@
 ---
-title:IGridCustomGroupingWrapper
-slug:aspnetmvc-kendo.mvc.ui.igridcustomgroupingwrapper
-publish:true
+nav_title: IGridCustomGroupingWrapper
 ---
 
 # Kendo.Mvc.UI.IGridCustomGroupingWrapper

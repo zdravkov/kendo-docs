@@ -1,8 +1,5 @@
 ---
-title: diagram-connections
-slug: jsp-diagram-connections
-tags: api, java
-publish: true
+nav_title: diagram-connections
 ---
 
 # \<kendo:diagram-connections\>
@@ -23,7 +20,7 @@ Defines the connections configuration.
 
 Defines the connections configuration.
 
-More documentation is available at [kendo:diagram-connection](/kendo-ui/api/wrappers/jsp/diagram/connection).
+More documentation is available at [kendo:diagram-connection](/api/wrappers/jsp/diagram/connection).
 
 #### Example
 

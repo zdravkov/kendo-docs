@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: How to use QRCode JSP tag | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI QRCode for JSP.
-slug: jsp-qrcode-overview
-publish: true
+nav_title: Overview
+title: How to use QRCode JSP tag | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI QRCode for JSP.
 ---
 
 # QRCode
 
-The QRCode HtmlHelper extension is a server-side wrapper for the [Kendo UI QRCode](/kendo-ui/api/web/qrcode) widget.
+The QRCode HtmlHelper extension is a server-side wrapper for the [Kendo UI QRCode](/api/web/qrcode) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo QRCode:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/jsp/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -28,7 +26,7 @@ Here is how to configure a simple Kendo QRCode:
         <kendo:qRCode name="qrcode" value="foo" >
         </kendo:qRCode>
 
-4. Choose the appropriate [error correction level](/kendo-ui/api/dataviz/qrcode#configuration-errorCorrection) and [encoding](/kendo-ui/api/dataviz/qrcode#configuration-encoding).
+4. Choose the appropriate [error correction level](/api/dataviz/qrcode#configuration-errorCorrection) and [encoding](/api/dataviz/qrcode#configuration-encoding).
 
         <kendo:qRCode name="qrcode" value="foo" errorCorrection="H" encoding="UTF_8"  >
         </kendo:qRCode>
@@ -36,7 +34,7 @@ Here is how to configure a simple Kendo QRCode:
 ## Accessing an Existing QRCode
 
 You can reference an existing QRCode instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/qrcode#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/qrcode#methods) to control its behavior.
 
 
 ### Accessing an existing QRCode instance

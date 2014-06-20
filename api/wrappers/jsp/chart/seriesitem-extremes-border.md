@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-extremes-border
-slug: jsp-chart-seriesItem-extremes-border
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-extremes-border
 ---
 
 # \<kendo:chart-seriesItem-extremes-border\>

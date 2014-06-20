@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-plotBands
-slug: jsp-stockChart-categoryAxisItem-plotBands
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-plotBands
 ---
 
 # \<kendo:stockChart-categoryAxisItem-plotBands\>
@@ -23,7 +20,7 @@ The plot bands of the category axis.
 
 The plot bands of the category axis.
 
-More documentation is available at [kendo:stockChart-categoryAxisItem-plotBand](/kendo-ui/api/wrappers/jsp/stockchart/categoryaxisitem-plotband).
+More documentation is available at [kendo:stockChart-categoryAxisItem-plotBand](/api/wrappers/jsp/stockchart/categoryaxisitem-plotband).
 
 #### Example
 

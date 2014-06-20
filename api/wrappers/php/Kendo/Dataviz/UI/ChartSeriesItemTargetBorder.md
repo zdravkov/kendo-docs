@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemTargetBorder
-slug: php-dataviz-ui-chartseriesitemtargetborder
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemTargetBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemTargetBorder

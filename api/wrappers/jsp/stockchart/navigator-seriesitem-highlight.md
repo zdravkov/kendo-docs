@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-seriesItem-highlight
-slug: jsp-stockChart-navigator-seriesItem-highlight
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-seriesItem-highlight
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-highlight\>
@@ -47,7 +44,7 @@ A value indicating if the series points should be highlighted.
 
 The border of highlighted points. The color is computed automatically from the base point color.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-highlight-border](/kendo-ui/api/wrappers/jsp/stockchart/navigator-seriesitem-highlight-border).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-highlight-border](/api/wrappers/jsp/stockchart/navigator-seriesitem-highlight-border).
 
 #### Example
 
@@ -59,7 +56,7 @@ More documentation is available at [kendo:stockChart-navigator-seriesItem-highli
 
 Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-highlight-line](/kendo-ui/api/wrappers/jsp/stockchart/navigator-seriesitem-highlight-line).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-highlight-line](/api/wrappers/jsp/stockchart/navigator-seriesitem-highlight-line).
 
 #### Example
 

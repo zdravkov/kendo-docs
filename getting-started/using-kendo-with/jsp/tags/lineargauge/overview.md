@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: How to use LinearGauge JSP tag | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI LinearGauge for JSP.
-slug: jsp-linear-gauge-overview
-publish: true
+nav_title: Overview
+title: How to use LinearGauge JSP tag | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI LinearGauge for JSP.
 ---
 
 # Linear Gauge
 
-The LinearGauge tag is a server-side wrapper for the [Kendo UI DataViz LinearGauge](/kendo-ui/api/dataviz/lineargauge) widget.
+The LinearGauge tag is a server-side wrapper for the [Kendo UI DataViz LinearGauge](/api/dataviz/lineargauge) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo UI LinearGauge:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/jsp/introduction) help topic.
 
 2.  Create a new action method to render the view:
 
@@ -34,7 +32,7 @@ Here is how to configure a simple Kendo UI LinearGauge:
 ## Accessing an Existing LinearGauge
 
 You can reference an existing LinearGauge instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/dataviz/lineargauge#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/dataviz/lineargauge#methods) to control its behavior.
 
 ### Accessing an existing LinearGauge instance
 

@@ -1,7 +1,5 @@
 ---
-title: Introduction
-slug: jsp-introduction
-publish: true
+nav_title: Introduction
 ---
 
 ## Downloading and Installing Telerik UI for JSP

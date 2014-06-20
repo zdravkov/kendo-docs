@@ -1,8 +1,5 @@
 ---
-title: stockChart-xAxisItem-crosshair-tooltip
-slug: jsp-stockChart-xAxisItem-crosshair-tooltip
-tags: api, java
-publish: true
+nav_title: stockChart-xAxisItem-crosshair-tooltip
 ---
 
 # \<kendo:stockChart-xAxisItem-crosshair-tooltip\>

@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-crosshair-tooltip
-slug: jsp-stockChart-categoryAxisItem-crosshair-tooltip
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-crosshair-tooltip
 ---
 
 # \<kendo:stockChart-categoryAxisItem-crosshair-tooltip\>
@@ -80,7 +77,7 @@ A value indicating if the tooltip should be displayed.
 
 The border configuration options.
 
-More documentation is available at [kendo:stockChart-categoryAxisItem-crosshair-tooltip-border](/kendo-ui/api/wrappers/jsp/stockchart/categoryaxisitem-crosshair-tooltip-border).
+More documentation is available at [kendo:stockChart-categoryAxisItem-crosshair-tooltip-border](/api/wrappers/jsp/stockchart/categoryaxisitem-crosshair-tooltip-border).
 
 #### Example
 

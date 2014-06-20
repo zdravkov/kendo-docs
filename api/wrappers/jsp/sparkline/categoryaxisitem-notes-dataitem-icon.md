@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-notes-dataItem-icon
-slug: jsp-sparkline-categoryAxisItem-notes-dataItem-icon
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-notes-dataItem-icon
 ---
 
 # \<kendo:sparkline-categoryAxisItem-notes-dataItem-icon\>
@@ -58,7 +55,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:sparkline-categoryAxisItem-notes-dataItem-icon-border](/kendo-ui/api/wrappers/jsp/sparkline/categoryaxisitem-notes-dataitem-icon-border).
+More documentation is available at [kendo:sparkline-categoryAxisItem-notes-dataItem-icon-border](/api/wrappers/jsp/sparkline/categoryaxisitem-notes-dataitem-icon-border).
 
 #### Example
 

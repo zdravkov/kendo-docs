@@ -1,10 +1,7 @@
 ---
-title: Authoring Maps
-meta_title: Authoring maps for the Map widget in Kendo UI DataViz
-meta_description: How to process and transform maps from external sources to use with the Map widget.
-slug: gs-dataviz-map-authoring-maps
-relatedDocs: gs-dataviz-map-layers
-publish: true
+nav_title: Authoring Maps
+title: Authoring maps for the Map widget in Kendo UI DataViz
+description: How to process and transform maps from external sources to use with the Map widget.
 ---
 
 # Authoring Maps
@@ -115,5 +112,5 @@ The map can definitely benefit from some color. Let's define a palette and apply
     </script>
 
 The *provnum_ne* field goes from 1 to 9 denoting each mainland state and territory.
-We use the [shapeCreated](/kendo-ui/api/dataviz/map#events-shapeCreated) event to set the fill color of the newly created shape.
+We use the [shapeCreated](/api/dataviz/map#events-shapeCreated) event to set the fill color of the newly created shape.
 

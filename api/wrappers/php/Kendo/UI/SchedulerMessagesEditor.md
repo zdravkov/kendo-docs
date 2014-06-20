@@ -1,8 +1,5 @@
 ---
-title: SchedulerMessagesEditor
-slug: php-ui-schedulermessageseditor
-tags: api, php
-publish: true
+nav_title: SchedulerMessagesEditor
 ---
 
 # \Kendo\UI\SchedulerMessagesEditor

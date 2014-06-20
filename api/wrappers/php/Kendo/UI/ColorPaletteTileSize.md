@@ -1,8 +1,5 @@
 ---
-title: ColorPaletteTileSize
-slug: php-ui-colorpalettetilesize
-tags: api, php
-publish: true
+nav_title: ColorPaletteTileSize
 ---
 
 # \Kendo\UI\ColorPaletteTileSize

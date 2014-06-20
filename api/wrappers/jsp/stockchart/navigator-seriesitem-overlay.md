@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-seriesItem-overlay
-slug: jsp-stockChart-navigator-seriesItem-overlay
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-seriesItem-overlay
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-overlay\>

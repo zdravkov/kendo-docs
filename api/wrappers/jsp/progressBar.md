@@ -1,12 +1,9 @@
 ---
-title: progressBar
-slug: jsp-progressBar
-tags: api, java
-publish: true
+nav_title: progressBar
 ---
 
 # \<kendo:progressBar\>
-A JSP wrapper for Kendo UI [ProgressBar](/kendo-ui/api/web/progressbar).
+A JSP wrapper for Kendo UI [ProgressBar](/api/web/progressbar).
 
 ## Configuration Attributes
 
@@ -89,7 +86,7 @@ The underlying value of the ProgressBar.
 
 Configures the progress animation. Currently only the duration of the animation could be set.
 
-More documentation is available at [kendo:progressBar-animation](/kendo-ui/api/wrappers/jsp/progressbar/animation).
+More documentation is available at [kendo:progressBar-animation](/api/wrappers/jsp/progressbar/animation).
 
 #### Example
 
@@ -105,7 +102,7 @@ More documentation is available at [kendo:progressBar-animation](/kendo-ui/api/w
 Fired when the value of the ProgressBar has changed. If the progress animation is enabled, the event will be fired after the animation has completed (does not applies to chunk ProgressBar).
 
 
-For additional information check the [change](/kendo-ui/api/web/progressbar#events-change) event documentation.
+For additional information check the [change](/api/web/progressbar#events-change) event documentation.
 
 #### Example
     <kendo:progressBar change="handle_change">
@@ -121,7 +118,7 @@ For additional information check the [change](/kendo-ui/api/web/progressbar#even
 Fired when the value of the ProgressBar reaches the maximum value.
 
 
-For additional information check the [complete](/kendo-ui/api/web/progressbar#events-complete) event documentation.
+For additional information check the [complete](/api/web/progressbar#events-complete) event documentation.
 
 #### Example
     <kendo:progressBar complete="handle_complete">
@@ -139,7 +136,7 @@ For additional information check the [complete](/kendo-ui/api/web/progressbar#ev
 Fired when the value of the ProgressBar has changed. If the progress animation is enabled, the event will be fired after the animation has completed (does not applies to chunk ProgressBar).
 
 
-For additional information check the [change](/kendo-ui/api/web/progressbar#events-change) event documentation.
+For additional information check the [change](/api/web/progressbar#events-change) event documentation.
 
 #### Example
     <kendo:progressBar>
@@ -157,7 +154,7 @@ For additional information check the [change](/kendo-ui/api/web/progressbar#even
 Fired when the value of the ProgressBar reaches the maximum value.
 
 
-For additional information check the [complete](/kendo-ui/api/web/progressbar#events-complete) event documentation.
+For additional information check the [complete](/api/web/progressbar#events-complete) event documentation.
 
 #### Example
     <kendo:progressBar>

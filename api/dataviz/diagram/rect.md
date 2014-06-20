@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Rect
-slug:api-dataviz-diagram-rect
-publish: true
+nav_title: kendo.dataviz.diagram.Rect
 ---
 
 # kendo.dataviz.diagram.Rect

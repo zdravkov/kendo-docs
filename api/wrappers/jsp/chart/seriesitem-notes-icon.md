@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-notes-icon
-slug: jsp-chart-seriesItem-notes-icon
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-notes-icon
 ---
 
 # \<kendo:chart-seriesItem-notes-icon\>
@@ -59,7 +56,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:chart-seriesItem-notes-icon-border](/kendo-ui/api/wrappers/jsp/chart/seriesitem-notes-icon-border).
+More documentation is available at [kendo:chart-seriesItem-notes-icon-border](/api/wrappers/jsp/chart/seriesitem-notes-icon-border).
 
 #### Example
 

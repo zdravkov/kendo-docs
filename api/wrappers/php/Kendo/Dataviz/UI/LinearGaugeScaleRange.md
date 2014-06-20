@@ -1,8 +1,5 @@
 ---
-title: LinearGaugeScaleRange
-slug: php-dataviz-ui-lineargaugescalerange
-tags: api, php
-publish: true
+nav_title: LinearGaugeScaleRange
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeScaleRange

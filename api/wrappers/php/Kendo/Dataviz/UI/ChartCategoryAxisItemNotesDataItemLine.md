@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemNotesDataItemLine
-slug: php-dataviz-ui-chartcategoryaxisitemnotesdataitemline
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemNotesDataItemLine
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLine

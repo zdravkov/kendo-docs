@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-views
-slug: jsp-scheduler-messages-views
-tags: api, java
-publish: true
+nav_title: scheduler-messages-views
 ---
 
 # \<kendo:scheduler-messages-views\>

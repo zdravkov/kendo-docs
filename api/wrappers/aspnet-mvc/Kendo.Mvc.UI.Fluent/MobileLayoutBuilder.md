@@ -1,7 +1,5 @@
 ---
-title:MobileLayoutBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilelayoutbuilder
-publish:true
+nav_title: MobileLayoutBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileLayoutBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileLayout for ASP.NET MVC.
 
 
 
+
 ## Methods
 
-### Platform(`System.String`)
+
+### Platform(System.String)
 The specific platform this layout targets. By default, layouts are displayed
             on all platforms.
 
@@ -25,7 +25,7 @@ The value that configures the platform.
 
 
 
-### Header(`System.Action`)
+### Header(System.Action)
 Sets the HTML content which the header should display.
 
 
@@ -38,7 +38,7 @@ The action which renders the header.
 
 
 
-### Header(`System.Func<System.Object,System.Object>`)
+### Header(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the header should display.
 
 
@@ -51,7 +51,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Header(`System.String`)
+### Header(System.String)
 Sets the HTML content which the header should display as a string.
 
 
@@ -64,7 +64,7 @@ The action which renders the header.
 
 
 
-### Footer(`System.Action`)
+### Footer(System.Action)
 Sets the HTML content which the footer should display.
 
 
@@ -77,7 +77,7 @@ The action which renders the footer.
 
 
 
-### Footer(`System.Func<System.Object,System.Object>`)
+### Footer(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the footer should display.
 
 
@@ -90,7 +90,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Footer(`System.String`)
+### Footer(System.String)
 Sets the HTML content which the footer should display as a string.
 
 
@@ -103,7 +103,7 @@ The action which renders the footer.
 
 
 
-### HeaderHtmlAttributes(`System.Object`)
+### HeaderHtmlAttributes(System.Object)
 Sets the Header HTML attributes.
 
 
@@ -119,7 +119,7 @@ The HTML attributes.
 
 
 
-### FooterHtmlAttributes(`System.Object`)
+### FooterHtmlAttributes(System.Object)
 Sets the Footer HTML attributes.
 
 
@@ -135,7 +135,7 @@ The HTML attributes.
 
 
 
-### HeaderHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HeaderHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the Header HTML attributes.
 
 
@@ -151,7 +151,7 @@ The HTML attributes.
 
 
 
-### FooterHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### FooterHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the Footer HTML attributes.
 
 
@@ -167,13 +167,13 @@ The HTML attributes.
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileLayoutEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileLayoutEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileLayoutEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileLayoutEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileLayoutEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileLayoutEventBuilder)>
 The client events action.
 
 

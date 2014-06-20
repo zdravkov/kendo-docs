@@ -1,7 +1,5 @@
 ---
-title:GaugeScaleTicksBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugescaleticksbuilder
-publish:true
+nav_title: GaugeScaleTicksBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring GaugeScaleTicks.
 
 
 
+
 ## Methods
 
-### Color(`System.String`)
+
+### Color(System.String)
 Sets the ticks color
 
 
@@ -31,7 +31,7 @@ The ticks color (CSS format).
     %>
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 Sets the ticks width
 
 
@@ -51,7 +51,7 @@ The ticks width.
     %>
 
 
-### Size(`System.Int32`)
+### Size(System.Int32)
 Sets the ticks size
 
 
@@ -71,13 +71,13 @@ The ticks size.
     %>
 
 
-### DashType(`Kendo.Mvc.UI.ChartDashType`)
+### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the ticks dashType
 
 
 #### Parameters
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The ticks dashType.
 
 
@@ -91,7 +91,7 @@ The ticks dashType.
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the ticks visibility
 
 

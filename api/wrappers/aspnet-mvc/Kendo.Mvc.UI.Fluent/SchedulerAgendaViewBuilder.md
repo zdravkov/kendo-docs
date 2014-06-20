@@ -1,7 +1,5 @@
 ---
-title:SchedulerAgendaViewBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.scheduleragendaviewbuilder
-publish:true
+nav_title: SchedulerAgendaViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerAgendaViewBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the SchedulerAgendaView.
 
 
 
+
 ## Methods
 
-### EventDateTemplate(`System.String`)
+
+### EventDateTemplate(System.String)
 The template used by the agenda view to render the date of the scheduler events.
 
 
@@ -24,7 +24,7 @@ The eventDateTemplate
 
 
 
-### EventDateTemplateId(`System.String`)
+### EventDateTemplateId(System.String)
 The Id of the template used by the agenda view to render the date of the scheduler events.
 
 
@@ -37,7 +37,7 @@ The eventDateTemplateId
 
 
 
-### EventTimeTemplate(`System.String`)
+### EventTimeTemplate(System.String)
 The template used by the agenda view to render the time of the scheduler events.
 
 
@@ -50,7 +50,7 @@ The eventTimeTemplate
 
 
 
-### EventTimeTemplateId(`System.String`)
+### EventTimeTemplateId(System.String)
 The Id of the template used by the agenda view to render the time of the scheduler events.
 
 

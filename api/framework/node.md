@@ -1,19 +1,16 @@
 ---
-title: kendo.data.Node
-meta_title: API Reference for Kendo Data Node
-meta_description: Documentation how to get started with the kendo.data.Node, the extended type of kendo.data.Model. Find examples and guidelines for methods, fields and events of kendo.data.Node.
-slug: api-framework-node
-tags: api,framework
-publish: true
+nav_title: kendo.data.Node
+title: API Reference for Kendo Data Node
+description: Documentation how to get started with the kendo.data.Node, the extended type of kendo.data.Model. Find examples and guidelines for methods, fields and events of kendo.data.Node.
 ---
 
 # kendo.data.Node
 
-The `Node` is an extended type of [Model](/kendo-ui/api/framework/model) that works with hierarchical data. The [HierarchicalDataSource](/kendo-ui/api/framework/hierarchicaldatasource) contains instances of the `Node` type.
+The `Node` is an extended type of [Model](/api/framework/model) that works with hierarchical data. The [HierarchicalDataSource](/api/framework/hierarchicaldatasource) contains instances of the `Node` type.
 
 ## Fields
 
-See the [Model fields](/kendo-ui/api/framework/model#fields) for all inherited fields.
+See the [Model fields](/api/framework/model#fields) for all inherited fields.
 
 ### children
 
@@ -31,7 +28,7 @@ or when the [load](#methods-load) or [append](#methods-append) methods have been
 
 ## Methods
 
-See the [Model methods](/kendo-ui/api/framework/model#methods) for all inherited methods.
+See the [Model methods](/api/framework/model#methods) for all inherited methods.
 
 ### append
 
@@ -172,4 +169,4 @@ Gets the parent node.
 
 ## Events
 
-See the [Model events](/kendo-ui/api/framework/model#events) for all inherited events.
+See the [Model events](/api/framework/model#events) for all inherited events.

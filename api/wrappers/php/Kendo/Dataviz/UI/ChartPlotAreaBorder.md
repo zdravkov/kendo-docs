@@ -1,8 +1,5 @@
 ---
-title: ChartPlotAreaBorder
-slug: php-dataviz-ui-chartplotareaborder
-tags: api, php
-publish: true
+nav_title: ChartPlotAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartPlotAreaBorder

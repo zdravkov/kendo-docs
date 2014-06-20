@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorPaneMargin
-slug: php-dataviz-ui-stockchartnavigatorpanemargin
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorPaneMargin
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorPaneMargin

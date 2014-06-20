@@ -1,8 +1,5 @@
 ---
-title: ChartPlotAreaPadding
-slug: php-dataviz-ui-chartplotareapadding
-tags: api, php
-publish: true
+nav_title: ChartPlotAreaPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartPlotAreaPadding

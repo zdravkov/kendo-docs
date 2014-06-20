@@ -1,8 +1,5 @@
 ---
-title: GridFilterableOperatorsDate
-slug: php-ui-gridfilterableoperatorsdate
-tags: api, php
-publish: true
+nav_title: GridFilterableOperatorsDate
 ---
 
 # \Kendo\UI\GridFilterableOperatorsDate

@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-autoBaseUnitSteps
-slug: jsp-chart-categoryAxisItem-autoBaseUnitSteps
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-autoBaseUnitSteps
 ---
 
 # \<kendo:chart-categoryAxisItem-autoBaseUnitSteps\>

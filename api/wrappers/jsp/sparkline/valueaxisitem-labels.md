@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-labels
-slug: jsp-sparkline-valueAxisItem-labels
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-labels
 ---
 
 # \<kendo:sparkline-valueAxisItem-labels\>
@@ -125,7 +122,7 @@ The visibility of the labels.
 
 The border of the labels.
 
-More documentation is available at [kendo:sparkline-valueAxisItem-labels-border](/kendo-ui/api/wrappers/jsp/sparkline/valueaxisitem-labels-border).
+More documentation is available at [kendo:sparkline-valueAxisItem-labels-border](/api/wrappers/jsp/sparkline/valueaxisitem-labels-border).
 
 #### Example
 

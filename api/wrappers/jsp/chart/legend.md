@@ -1,8 +1,5 @@
 ---
-title: chart-legend
-slug: jsp-chart-legend
-tags: api, java
-publish: true
+nav_title: chart-legend
 ---
 
 # \<kendo:chart-legend\>
@@ -107,7 +104,7 @@ The legend width when the legend.position is set to "custom" and the legend.orie
 
 The border of the legend.
 
-More documentation is available at [kendo:chart-legend-border](/kendo-ui/api/wrappers/jsp/chart/legend-border).
+More documentation is available at [kendo:chart-legend-border](/api/wrappers/jsp/chart/legend-border).
 
 #### Example
 
@@ -119,7 +116,7 @@ More documentation is available at [kendo:chart-legend-border](/kendo-ui/api/wra
 
 The chart inactive legend items configuration.
 
-More documentation is available at [kendo:chart-legend-inactiveItems](/kendo-ui/api/wrappers/jsp/chart/legend-inactiveitems).
+More documentation is available at [kendo:chart-legend-inactiveItems](/api/wrappers/jsp/chart/legend-inactiveitems).
 
 #### Example
 
@@ -131,7 +128,7 @@ More documentation is available at [kendo:chart-legend-inactiveItems](/kendo-ui/
 
 The chart legend label configuration.
 
-More documentation is available at [kendo:chart-legend-labels](/kendo-ui/api/wrappers/jsp/chart/legend-labels).
+More documentation is available at [kendo:chart-legend-labels](/api/wrappers/jsp/chart/legend-labels).
 
 #### Example
 
@@ -143,7 +140,7 @@ More documentation is available at [kendo:chart-legend-labels](/kendo-ui/api/wra
 
 The margin of the chart legend. A numeric value will set all paddings.
 
-More documentation is available at [kendo:chart-legend-margin](/kendo-ui/api/wrappers/jsp/chart/legend-margin).
+More documentation is available at [kendo:chart-legend-margin](/api/wrappers/jsp/chart/legend-margin).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: grid-filterable-operators-date
-slug: jsp-grid-filterable-operators-date
-tags: api, java
-publish: true
+nav_title: grid-filterable-operators-date
 ---
 
 # \<kendo:grid-filterable-operators-date\>

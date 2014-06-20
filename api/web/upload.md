@@ -1,23 +1,19 @@
 ---
-title: kendo.ui.Upload
-meta_title: Configuration, methods and events of Kendo UI Upload
-meta_description: How to configure the ability to upload files in an asynchronous manner in Upload UI widget.
-slug: api-web-upload
-relatedDocs: gs-web-upload-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.Upload
+title: Configuration, methods and events of Kendo UI Upload
+description: How to configure the ability to upload files in an asynchronous manner in Upload UI widget.
 ---
 
 # kendo.ui.Upload
 
-Represents the Kendo UI Upload. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Upload. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
 ### async `Object`
 
 Configures the ability to upload a file(s) in an asynchronous manner. Please refer to the
-[async mode help topic](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode)
+[async mode help topic](/getting-started/web/upload/modes#asynchronous-mode)
 for more details.
 
 #### Example
@@ -182,7 +178,7 @@ List of files to be initially rendered in the Upload widget files list.
 *   size
 *   extension
 
-> **Important:** This option could be used only when the Upload widget is in [async mode](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode). The files will be rendered as successfully uploaded.
+> **Important:** This option could be used only when the Upload widget is in [async mode](/getting-started/web/upload/modes#asynchronous-mode). The files will be rendered as successfully uploaded.
 
 #### Example - passing an array of initial files
 
@@ -468,7 +464,7 @@ client-side events to build your own UI.
 	</script>
 
 ### template `String|Function`
-The [template](/kendo-ui/api/framework/kendo#methods-template) used to render the files in the list
+The [template](/api/framework/kendo#methods-template) used to render the files in the list
 
 #### Template data `Array`
 
@@ -606,7 +602,7 @@ Fires when the upload has been cancelled while in progress.
 
 
 Note: The cancel event fires only when the upload is in
-[async mode](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode).
+[async mode](/getting-started/web/upload/modes#asynchronous-mode).
 
 #### Example
 
@@ -647,7 +643,7 @@ Fires when all active uploads have completed either successfully or with errors.
 
 
 Note: The complete event fires only when the upload is in
-[async mode](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode).
+[async mode](/getting-started/web/upload/modes#asynchronous-mode).
 
 #### Example
 
@@ -673,7 +669,7 @@ Fires when an upload / remove operation has failed.
 
 
 Note: The error event fires only when the upload is in
-[async mode](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode).
+[async mode](/getting-started/web/upload/modes#asynchronous-mode).
 
 #### Example
 
@@ -729,10 +725,10 @@ Fires when upload progress data is available.
 
 
 Note: The progress event fires only when the upload is in
-[async mode](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode).
+[async mode](/getting-started/web/upload/modes#asynchronous-mode).
 
 Note: The progress event is not fired in IE.
-See [Supported Browsers](/kendo-ui/getting-started/web/upload/supported-browsers)
+See [Supported Browsers](/getting-started/web/upload/supported-browsers)
 
 #### Example
 
@@ -862,7 +858,7 @@ Fires when an upload / remove operation has been completed successfully.
 
 
 Note: The success event fires only when the upload is in
-[async mode](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode).
+[async mode](/getting-started/web/upload/modes#asynchronous-mode).
 
 #### Example
 
@@ -922,7 +918,7 @@ Fires when one or more files are about to be uploaded.
 Cancelling the event will prevent the upload.
 
 Note: The upload event fires only when the upload is in
-[async mode](/kendo-ui/getting-started/web/upload/modes#asynchronous-mode).
+[async mode](/getting-started/web/upload/modes#asynchronous-mode).
 
 #### Example
 

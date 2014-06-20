@@ -1,7 +1,5 @@
 ---
-title:SchedulerGroupBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulergroupbuilder
-publish:true
+nav_title: SchedulerGroupBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder
@@ -9,9 +7,11 @@ Creates resources grouping for the 1 class.
 
 
 
+
 ## Methods
 
-### Resources(`System.String[]`)
+
+### Resources(System.String[])
 Sets the resources by which the scheduler will be grouped.
 
 
@@ -24,13 +24,13 @@ The names of the resources
 
 
 
-### Orientation(`Kendo.Mvc.UI.SchedulerGroupOrientation`)
+### Orientation(Kendo.Mvc.UI.SchedulerGroupOrientation)
 The orientation of the group headers.
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.SchedulerGroupOrientation](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SchedulerGroupOrientation)
+##### value [Kendo.Mvc.UI.SchedulerGroupOrientation](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SchedulerGroupOrientation)
 The orientation
 
 

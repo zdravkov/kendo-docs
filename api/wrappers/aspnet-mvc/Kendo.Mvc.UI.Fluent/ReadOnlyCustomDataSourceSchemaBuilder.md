@@ -1,7 +1,5 @@
 ---
-title:ReadOnlyCustomDataSourceSchemaBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.readonlycustomdatasourceschemabuilder
-publish:true
+nav_title: ReadOnlyCustomDataSourceSchemaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ReadOnlyCustomDataSourceSchemaBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Schema options.
 
 
 
+
 ## Methods
 
-### Model(`System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyCustomDataSourceModelDescriptorFactory<T>>`)
+
+### Model(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyCustomDataSourceModelDescriptorFactory\<T\>\>)
 Configures Model properties
 
 

@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: User guide for Kendo UI MaskedTextBox widget | Kendo UI documentation
-meta_description: How to configure a simple Kendo UI MaskedTextBox widget, add MaskedTextBox, handle events to control widget's behavior.
-slug: mvc-masked-textbox-overview
-publish: true
+nav_title: Overview
+title: User guide for Kendo UI MaskedTextBox widget | Kendo UI documentation
+description: How to configure a simple Kendo UI MaskedTextBox widget, add MaskedTextBox, handle events to control widget's behavior.
 ---
 
 # MaskedTextBox
 
-The MaskedTextBox HtmlHelper extension is a server-side wrapper for the [Kendo UI MaskedTextBox](/kendo-ui/api/web/maskedtextbox) widget.
+The MaskedTextBox HtmlHelper extension is a server-side wrapper for the [Kendo UI MaskedTextBox](/api/web/maskedtextbox) widget.
 
 ## Getting Started
 
@@ -16,7 +14,7 @@ The MaskedTextBox HtmlHelper extension is a server-side wrapper for the [Kendo U
 
 Here is how to configure a simple Kendo MaskedTextBox:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -42,7 +40,7 @@ Here is how to configure a simple Kendo MaskedTextBox:
 
 ### Define widget's mask value
 
-The MaskedTextBox has [a list of predefined mask rules](/kendo-ui/getting-started/web/maskedtextbox/overview#predefined-mask-rules),
+The MaskedTextBox has [a list of predefined mask rules](/getting-started/web/maskedtextbox/overview#predefined-mask-rules),
 which can be used to compose the widget's mask.
 
 #### WebForms - set a `zip code` mask
@@ -92,7 +90,7 @@ defined as a string or JavaScript function.
 ## Accessing an Existing MaskedTextBox
 
 You can reference an existing MaskedTextBox instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/maskedtextbox#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/maskedtextbox#methods) to control its behavior.
 
 
 ### Accessing an existing MaskedTextBox instance
@@ -108,7 +106,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/m
 
 ## Handling Kendo UI MaskedTextBox events
 
-You can subscribe to all [events](/kendo-ui/api/web/maskedtextbox#events) exposed by Kendo UI MaskedTextBox:
+You can subscribe to all [events](/api/web/maskedtextbox#events) exposed by Kendo UI MaskedTextBox:
 
 ### WebForms - subscribe by handler name
 

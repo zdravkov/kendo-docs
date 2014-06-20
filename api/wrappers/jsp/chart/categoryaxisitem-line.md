@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-line
-slug: jsp-chart-categoryAxisItem-line
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-line
 ---
 
 # \<kendo:chart-categoryAxisItem-line\>

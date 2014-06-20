@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxis-title-border
-slug: jsp-chart-categoryAxis-title-border
-tags: api, java
-publish: true
+nav_title: chart-categoryAxis-title-border
 ---
 
 # \<kendo:chart-categoryAxis-title-border\>

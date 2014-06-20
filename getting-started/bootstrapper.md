@@ -1,10 +1,7 @@
 ---
-title: Bootstrapper
-meta_title: HTML5, jQuery-based framework | Kendo UI
-meta_description: Kendo UI framework overview: UI components, rich data vizualization framework, auto-adaptive mobile widgets and all tools for building rich web apps.
-slug: gs-bootstrapper
-tags: 101, Getting Started, bootstrapper, tools
-publish: true
+nav_title: Bootstrapper
+title: HTML5, jQuery-based framework | Kendo UI
+description: "Kendo UI framework overview: UI components, rich data vizualization framework, auto-adaptive mobile widgets and all tools for building rich web apps."
 ---
 
 # Getting Started with the Kendo UI Bootstrapper
@@ -38,7 +35,7 @@ You can also install the Bootstrapper directly from GitHub by cloning the repo t
 
 ### Setup
 
-The Bootstrapper depends on some NodeJS libraries that you will need to install.  Change to the directory where you unpacked or cloned the Bootstrapper, and install the necessary dependencies using Npm. 
+The Bootstrapper depends on some NodeJS libraries that you will need to install.  Change to the directory where you unpacked or cloned the Bootstrapper, and install the necessary dependencies using Npm.
 
     cd kendo-bootstrapper
     npm install
@@ -57,7 +54,7 @@ The Kendo UI Bootstrapper should now be up and running.  The first thing that it
 
 ## Creating A Project
 
-As mentioned, the Bootstrapper is not an IDE.  This means that you continue to use your existing IDE and the Bootstrapper augments your workflow.  Let's take a look at how that works.  
+As mentioned, the Bootstrapper is not an IDE.  This means that you continue to use your existing IDE and the Bootstrapper augments your workflow.  Let's take a look at how that works.
 
 Create a new project by clicking on the `+` icon in the "Projects" sidebar menu, and call it "GettingStarted".
 
@@ -191,7 +188,7 @@ While the Bootstrapper refreshes the page for JavaScript and HTML changes, it ap
 
 ## Ready For Production
 
-Now the application is ready to be deployed.  The Kendo UI Bootstrapper is well equiped to help you out here.  
+Now the application is ready to be deployed.  The Kendo UI Bootstrapper is well equiped to help you out here.
 
 ### Compile
 

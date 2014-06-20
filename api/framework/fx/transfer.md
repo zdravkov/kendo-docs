@@ -1,7 +1,5 @@
 ---
-title: FX Transfer
-slug: api-fx-transfer
-publish: true
+nav_title: FX Transfer
 ---
 
 # Transfer

@@ -1,23 +1,20 @@
 ---
-title: Overview
-meta_title: How to use the NumericTextBox PHP class, server-side wrapper for Kendo UI NumericTextBox widget
-meta_description: Getting started with Kendo UI NumericTextBox for PHP in quick steps - configure Kendo UI NumericTextBox widget and operate Kendo UI NumericTextBox events.
-slug: php-numerictextbox-overview
-publish: true
-relatedDocs: php-ui-numerictextbox
+nav_title: Overview
+title: How to use the NumericTextBox PHP class, server-side wrapper for Kendo UI NumericTextBox widget
+description: Getting started with Kendo UI NumericTextBox for PHP in quick steps - configure Kendo UI NumericTextBox widget and operate Kendo UI NumericTextBox events.
 ---
 
 # NumericTextBox
 
-The Kendo NumericTextBox for PHP is a server-side wrapper for the [Kendo UI NumericTextBox](/kendo-ui/api/web/numerictextbox) widget.
+The Kendo NumericTextBox for PHP is a server-side wrapper for the [Kendo UI NumericTextBox](/api/web/numerictextbox) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo NumericTextBox:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 
-2. Create a [numerictextbox](/kendo-ui/api/wrappers/php/Kendo/UI/NumericTextBox).
+2. Create a [numerictextbox](/api/wrappers/php/Kendo/UI/NumericTextBox).
 
         <?php
         $numerictextbox = new \Kendo\UI\NumericTextBox('numerictextbox');
@@ -26,7 +23,7 @@ Here is how to configure a simple Kendo NumericTextBox:
                        ->value(10));
         ?>
 
-3. Output the numerictextbox by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the numerictextbox by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $numerictextbox->render();
@@ -36,7 +33,7 @@ Here is how to configure a simple Kendo NumericTextBox:
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo NumericTextBox instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/numerictextbox#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/numerictextbox#methods) to control its behavior.
 
 
 ### Example
@@ -54,7 +51,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/n
 
 ## Handling Events
 
-You can subscribe to all numerictextbox [events](/kendo-ui/api/web/numerictextbox#events).
+You can subscribe to all numerictextbox [events](/api/web/numerictextbox#events).
 
 ### Example - subscribing by specifying JavaScript function name
 

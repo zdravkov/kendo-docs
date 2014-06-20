@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemCrosshairTooltipPadding
-slug: php-dataviz-ui-chartvalueaxisitemcrosshairtooltippadding
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemCrosshairTooltipPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemCrosshairTooltipPadding

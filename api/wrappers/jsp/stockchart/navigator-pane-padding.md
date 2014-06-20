@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-pane-padding
-slug: jsp-stockChart-navigator-pane-padding
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-pane-padding
 ---
 
 # \<kendo:stockChart-navigator-pane-padding\>

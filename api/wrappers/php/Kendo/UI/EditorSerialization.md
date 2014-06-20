@@ -1,8 +1,5 @@
 ---
-title: EditorSerialization
-slug: php-ui-editorserialization
-tags: api, php
-publish: true
+nav_title: EditorSerialization
 ---
 
 # \Kendo\UI\EditorSerialization

@@ -1,8 +1,5 @@
 ---
-title: panelBar-animation-collapse
-slug: jsp-panelBar-animation-collapse
-tags: api, java
-publish: true
+nav_title: panelBar-animation-collapse
 ---
 
 # \<kendo:panelBar-animation-collapse\>

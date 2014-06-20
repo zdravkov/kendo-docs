@@ -1,8 +1,5 @@
 ---
-title: stockChart-seriesItem-highlight-border
-slug: jsp-stockChart-seriesItem-highlight-border
-tags: api, java
-publish: true
+nav_title: stockChart-seriesItem-highlight-border
 ---
 
 # \<kendo:stockChart-seriesItem-highlight-border\>

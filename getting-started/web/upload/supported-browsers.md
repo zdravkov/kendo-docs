@@ -1,10 +1,8 @@
 ---
-title: Supported Browsers
-meta_title: Supported browsers for Kendo UI Upload widget
-meta_description: Detailed browser requirements for the Upload widget.
-slug: upload-supported-browsers
-ordinal: 5
-publish: true
+nav_title: Supported Browsers
+title: Supported browsers for Kendo UI Upload widget
+description: Detailed browser requirements for the Upload widget.
+nav_position: 5
 ---
 
 # Supported features

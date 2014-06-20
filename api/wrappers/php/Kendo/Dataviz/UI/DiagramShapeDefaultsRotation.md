@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeDefaultsRotation
-slug: php-dataviz-ui-diagramshapedefaultsrotation
-tags: api, php
-publish: true
+nav_title: DiagramShapeDefaultsRotation
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsRotation

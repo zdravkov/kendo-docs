@@ -1,8 +1,5 @@
 ---
-title: dataSource-groupItem-aggregates
-slug: jsp-dataSource-groupItem-aggregates
-tags: api, java
-publish: true
+nav_title: dataSource-groupItem-aggregates
 ---
 
 # \<kendo:dataSource-groupItem-aggregates\>
@@ -23,7 +20,7 @@ The aggregate(s) which are calculated during grouping. The supported aggregates 
 
 The aggregate(s) which are calculated during grouping. The supported aggregates are "average", "count", "max", "min" and "sum".
 
-More documentation is available at [kendo:dataSource-groupItem-aggregate](/kendo-ui/api/wrappers/jsp/datasource/groupitem-aggregate).
+More documentation is available at [kendo:dataSource-groupItem-aggregate](/api/wrappers/jsp/datasource/groupitem-aggregate).
 
 #### Example
 

@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Shape
-slug:api-dataviz-diagram-shape
-publish: true
+nav_title: kendo.dataviz.diagram.Shape
 ---
 
 # kendo.dataviz.diagram.Shape

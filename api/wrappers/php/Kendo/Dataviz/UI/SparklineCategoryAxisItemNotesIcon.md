@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemNotesIcon
-slug: php-dataviz-ui-sparklinecategoryaxisitemnotesicon
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemNotesIcon
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIcon
@@ -42,7 +39,7 @@ The border of the icon.
 ##### $value `\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIconBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIconBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemNotesIconBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIconBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemNotesIconBorder)
     <?php
     $icon = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIcon();
     $border = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesIconBorder();

@@ -1,8 +1,5 @@
 ---
-title: DataSourceGroupItem
-slug: php-data-datasourcegroupitem
-tags: api, php
-publish: true
+nav_title: DataSourceGroupItem
 ---
 
 # \Kendo\Data\DataSourceGroupItem

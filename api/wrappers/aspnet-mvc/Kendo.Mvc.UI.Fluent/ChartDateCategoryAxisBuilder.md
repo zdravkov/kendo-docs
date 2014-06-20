@@ -1,22 +1,26 @@
 ---
-title:ChartDateCategoryAxisBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartdatecategoryaxisbuilder
-publish:true
+nav_title: ChartDateCategoryAxisBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartDateCategoryAxisBuilder
 Configures date category axis for the 1.
 
 
+
 ## Properties
+
+
 ### Container
+
 The parent Chart
+
 
 
 
 ## Methods
 
-### Categories(`System.Linq.Expressions.Expression<System.Func<T,System.DateTime>>`)
+
+### Categories(System.Linq.Expressions.Expression\<System.Func\<T,System.DateTime\>\>)
 Defines bound categories.
 
 
@@ -29,7 +33,7 @@ The expression used to extract the categories value from the chart model
 
 
 
-### Categories(`System.Collections.Generic.IEnumerable<System.DateTime>`)
+### Categories(System.Collections.Generic.IEnumerable\<System.DateTime\>)
 Defines categories.
 
 
@@ -42,7 +46,7 @@ The list of categories
 
 
 
-### Categories(`System.DateTime[]`)
+### Categories(System.DateTime[])
 Defines categories.
 
 
@@ -55,20 +59,20 @@ The list of categories
 
 
 
-### BaseUnit(`Kendo.Mvc.UI.ChartAxisBaseUnit`)
+### BaseUnit(Kendo.Mvc.UI.ChartAxisBaseUnit)
 Sets the date category axis base unit.
 
 
 #### Parameters
 
-##### baseUnit [Kendo.Mvc.UI.ChartAxisBaseUnit](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAxisBaseUnit)
+##### baseUnit [Kendo.Mvc.UI.ChartAxisBaseUnit](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartAxisBaseUnit)
 The date category axis base unit
 
 
 
 
 
-### BaseUnitStep(`System.Int32`)
+### BaseUnitStep(System.Int32)
 Sets the step (interval) between categories in base units.
             Specifiying 0 (auto) will set the step to such value that the total
             number of categories does not exceed MaxDateGroups.
@@ -84,7 +88,7 @@ the step (interval) between categories in base units.
 
 
 
-### MaxDateGroups(`System.Int32`)
+### MaxDateGroups(System.Int32)
 Specifies the maximum number of groups (categories) that the chart will attempt to
             produce when either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
             This option is ignored in all other cases.
@@ -100,7 +104,7 @@ the maximum number of groups (categories).
 
 
 
-### RoundToBaseUnit(`System.Boolean`)
+### RoundToBaseUnit(System.Boolean)
 If set to false, the min and max dates will not be rounded off to
             the nearest baseUnit.
             This option is most useful in combination with explicit min and max dates.
@@ -117,7 +121,7 @@ A boolean value that indicates if the axis range should be rounded to the neares
 
 
 
-### WeekStartDay(`System.DayOfWeek`)
+### WeekStartDay(System.DayOfWeek)
 Sets the week start day.
 
 
@@ -130,7 +134,7 @@ The week start day when the base unit is Weeks. The default is Sunday.
 
 
 
-### Justify(`System.Boolean`)
+### Justify(System.Boolean)
 Positions categories and series points on major ticks. This removes the empty space before and after the series.
             This option will be ignored if either Bar, Column, OHLC or Candlestick series are plotted on the axis.
 
@@ -153,21 +157,21 @@ Positions categories and series points on major ticks. This removes the empty sp
 
 
 
-### AutoBaseUnitSteps(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder>`)
+### AutoBaseUnitSteps(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder\>)
 Specifies the discrete baseUnitStep values when
             either BaseUnit is set to Fit or BaseUnitStep is set to 0 (auto).
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisBaseUnitStepsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisBaseUnitStepsBuilder)>
 The configuration action.
 
 
 
 
 
-### Min(`System.DateTime`)
+### Min(System.DateTime)
 Sets the date category axis minimum (start) date.
 
 
@@ -180,7 +184,7 @@ The date category axis minimum (start) date
 
 
 
-### Max(`System.DateTime`)
+### Max(System.DateTime)
 Sets the date category axis maximum (end) date.
 
 
@@ -193,7 +197,7 @@ The date category axis maximum (end) date
 
 
 
-### AxisCrossingValue(`System.Double`)
+### AxisCrossingValue(System.Double)
 Sets value at which the first perpendicular axis crosses this axis.
 
 
@@ -214,7 +218,7 @@ The value at which the first perpendicular axis crosses this axis.
     %>
 
 
-### AxisCrossingValue(`System.Double[]`)
+### AxisCrossingValue(System.Double[])
 Sets value at which perpendicular axes cross this axis.
 
 
@@ -235,7 +239,7 @@ The values at which perpendicular axes cross this axis.
     %>
 
 
-### AxisCrossingValue(`System.Collections.Generic.IEnumerable<System.Double>`)
+### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
 Sets value at which perpendicular axes cross this axis.
 
 
@@ -256,13 +260,13 @@ The values at which perpendicular axes cross this axis.
     %>
 
 
-### Labels(`System.Action<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder>`)
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder\>)
 Configures the axis labels.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartDateAxisLabelsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartDateAxisLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartDateAxisLabelsBuilder)>
 The configuration action.
 
 
@@ -281,7 +285,7 @@ The configuration action.
     %>
 
 
-### Select(`System.Nullable<System.DateTime>,System.Nullable<System.DateTime>`)
+### Select(System.Nullable\<System.DateTime\>,System.Nullable\<System.DateTime\>)
 Sets the selection range
 
 
@@ -306,13 +310,13 @@ The selection range end.
     %>
 
 
-### Select(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder>`)
+### Select(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder\>)
 Configures the selection
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisSelectionBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisSelectionBuilder)>
 The configuration action.
 
 

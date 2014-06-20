@@ -1,8 +1,5 @@
 ---
-title: StockChartPlotAreaBorder
-slug: php-dataviz-ui-stockchartplotareaborder
-tags: api, php
-publish: true
+nav_title: StockChartPlotAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartPlotAreaBorder

@@ -1,8 +1,5 @@
 ---
-title: TooltipAnimationOpen
-slug: php-ui-tooltipanimationopen
-tags: api, php
-publish: true
+nav_title: TooltipAnimationOpen
 ---
 
 # \Kendo\UI\TooltipAnimationOpen

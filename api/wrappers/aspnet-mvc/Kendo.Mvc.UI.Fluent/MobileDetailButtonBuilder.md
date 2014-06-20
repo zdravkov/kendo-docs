@@ -1,7 +1,5 @@
 ---
-title:MobileDetailButtonBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobiledetailbuttonbuilder
-publish:true
+nav_title: MobileDetailButtonBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileDetailButtonBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileDetailButton for ASP.NET 
 
 
 
+
 ## Methods
 
-### Url(`System.String`)
+
+### Url(System.String)
 Specifies the url for remote view or id of the view to be loaded (prefixed with #, like an anchor)
 
 
@@ -24,7 +24,7 @@ The value that configures the url.
 
 
 
-### Transition(`System.String`)
+### Transition(System.String)
 Specifies the Pane transition
 
 
@@ -37,7 +37,7 @@ The value that configures the transition.
 
 
 
-### Target(`System.String`)
+### Target(System.String)
 Specifies the id of target Pane or `_top` for application level Pane
 
 
@@ -50,7 +50,7 @@ The value that configures the target.
 
 
 
-### ActionsheetContext(`System.String`)
+### ActionsheetContext(System.String)
 This value will be available when the action callback of ActionSheet item is executed
 
 
@@ -63,7 +63,7 @@ The value that configures the actionsheetcontext.
 
 
 
-### Icon(`System.String`)
+### Icon(System.String)
 The icon of the button. It can be either one of the built-in icons, or a custom one.
 
 
@@ -76,53 +76,53 @@ The value that configures the icon.
 
 
 
-### Style(`Kendo.Mvc.UI.MobileDetailButtonStyle`)
+### Style(Kendo.Mvc.UI.MobileDetailButtonStyle)
 Specifies predefined button style
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.MobileDetailButtonStyle](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileDetailButtonStyle)
+##### value [Kendo.Mvc.UI.MobileDetailButtonStyle](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileDetailButtonStyle)
 The value that configures the style.
 
 
 
 
 
-### Align(`Kendo.Mvc.UI.MobileButtonAlign`)
+### Align(Kendo.Mvc.UI.MobileButtonAlign)
 Use the align data attribute to specify the elements position inside the NavBar. By default, elements without any align are centered.
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.MobileButtonAlign](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonAlign)
+##### value [Kendo.Mvc.UI.MobileButtonAlign](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonAlign)
 The value that configures the align.
 
 
 
 
 
-### Rel(`Kendo.Mvc.UI.MobileButtonRel`)
+### Rel(Kendo.Mvc.UI.MobileButtonRel)
 Specifies the widget to be open when is tapped (the href must be set too)
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.MobileButtonRel](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonRel)
+##### value [Kendo.Mvc.UI.MobileButtonRel](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonRel)
 The value that configures the rel.
 
 
 
 
 
-### Url(`System.Action<Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder>`)
+### Url(System.Action\<Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder\>)
 Specifies the url for remote view to be loaded
 
 
 
 
 
-### Url(`System.String,System.String,System.Object`)
+### Url(System.String,System.String,System.Object)
 Sets controller and action from where the remove view to be loaded.
 
 
@@ -141,7 +141,7 @@ Route values
 
 
 
-### Url(`System.String,System.String`)
+### Url(System.String,System.String)
 Sets controller, action and routeValues from where the remove view to be loaded.
 
 
@@ -157,13 +157,13 @@ Controller Name
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileDetailButtonEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileDetailButtonEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileDetailButtonEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileDetailButtonEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileDetailButtonEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileDetailButtonEventBuilder)>
 The client events action.
 
 

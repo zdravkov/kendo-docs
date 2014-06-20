@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesDefaultsLabelsMargin
-slug: php-dataviz-ui-chartseriesdefaultslabelsmargin
-tags: api, php
-publish: true
+nav_title: ChartSeriesDefaultsLabelsMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsMargin

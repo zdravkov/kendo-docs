@@ -1,7 +1,5 @@
 ---
-title:WindowActionsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.windowactionsbuilder
-publish:true
+nav_title: WindowActionsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowActionsBuilder
@@ -9,7 +7,9 @@ Defines the fluent interface for configuring the Actions.
 
 
 
+
 ## Methods
+
 
 ### Close
 Configures the window to show a close button.
@@ -76,7 +76,7 @@ Configures the window to show a pin button.
     %>
 
 
-### Custom(`System.String`)
+### Custom(System.String)
 Configures the window to show a refresh button.
 
 

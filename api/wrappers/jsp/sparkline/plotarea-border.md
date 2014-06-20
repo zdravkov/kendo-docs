@@ -1,8 +1,5 @@
 ---
-title: sparkline-plotArea-border
-slug: jsp-sparkline-plotArea-border
-tags: api, java
-publish: true
+nav_title: sparkline-plotArea-border
 ---
 
 # \<kendo:sparkline-plotArea-border\>

@@ -1,8 +1,5 @@
 ---
-title: radialGauge-scale-minorTicks
-slug: jsp-radialGauge-scale-minorTicks
-tags: api, java
-publish: true
+nav_title: radialGauge-scale-minorTicks
 ---
 
 # \<kendo:radialGauge-scale-minorTicks\>

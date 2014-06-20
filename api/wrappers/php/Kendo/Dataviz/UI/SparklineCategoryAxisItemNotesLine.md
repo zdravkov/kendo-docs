@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemNotesLine
-slug: php-dataviz-ui-sparklinecategoryaxisitemnotesline
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemNotesLine
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLine

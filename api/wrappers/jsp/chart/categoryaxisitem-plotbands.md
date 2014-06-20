@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-plotBands
-slug: jsp-chart-categoryAxisItem-plotBands
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-plotBands
 ---
 
 # \<kendo:chart-categoryAxisItem-plotBands\>
@@ -23,7 +20,7 @@ The plot bands of the category axis.
 
 The plot bands of the category axis.
 
-More documentation is available at [kendo:chart-categoryAxisItem-plotBand](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem-plotband).
+More documentation is available at [kendo:chart-categoryAxisItem-plotBand](/api/wrappers/jsp/chart/categoryaxisitem-plotband).
 
 #### Example
 

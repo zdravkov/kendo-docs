@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-pane-title-margin
-slug: jsp-stockChart-navigator-pane-title-margin
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-pane-title-margin
 ---
 
 # \<kendo:stockChart-navigator-pane-title-margin\>

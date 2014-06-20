@@ -1,8 +1,5 @@
 ---
-title: diagram-shape-content
-slug: jsp-diagram-shape-content
-tags: api, java
-publish: true
+nav_title: diagram-shape-content
 ---
 
 # \<kendo:diagram-shape-content\>

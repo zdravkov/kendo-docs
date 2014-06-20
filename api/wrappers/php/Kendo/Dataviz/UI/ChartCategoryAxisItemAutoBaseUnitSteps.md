@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemAutoBaseUnitSteps
-slug: php-dataviz-ui-chartcategoryaxisitemautobaseunitsteps
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemAutoBaseUnitSteps
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemAutoBaseUnitSteps

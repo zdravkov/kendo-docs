@@ -1,11 +1,8 @@
 ---
-title: Cascading ComboBoxes
-meta_title: jQuery-powered Cascading ComboBox in Kendo UI Web
-meta_description: This document provides information how Kendo UI cascading ComboBox works and helps you handle most common scenarios with illustrative examples and FAQ.
-slug: gs-web-cascading-comboboxes
-tags: getting-started,web
-ordinal: 2
-publish: true
+nav_title: Cascading ComboBoxes
+title: jQuery-powered Cascading ComboBox in Kendo UI Web
+description: This document provides information how Kendo UI cascading ComboBox works and helps you handle most common scenarios with illustrative examples and FAQ.
+nav_position: 2
 ---
 
 # Cascading ComboBoxes
@@ -33,7 +30,7 @@ Here is a simple example:
              });
          });
     </script>
-The "child" combobox will cascade from the "parent" combobox if the [cascadeFrom](/kendo-ui/api/web/combobox#configuration) option is defined. The `cascadeFrom` option should point to the parent's ID.
+The "child" combobox will cascade from the "parent" combobox if the [cascadeFrom](/api/web/combobox#configuration) option is defined. The `cascadeFrom` option should point to the parent's ID.
 
 > **Important:** If the `cascadeFrom` property is not defined or the parent combobox is not initialized then the cascading functionality will not **work**.
 
@@ -72,11 +69,11 @@ A: You need to set the value of the comboboxes. For instance, you can define it 
        //initialization of the comboboxes
     </script>
 
-You also can use the [value](/kendo-ui/api/web/combobox#configuration) option.
+You also can use the [value](/api/web/combobox#configuration) option.
 
 Q: I am using comboboxes with load on demand (autoBind: false) and I need to pre-set the selected items. How to do that?
 
-A: You need to set the value and the text of the combobox. You can use the [value](/kendo-ui/api/web/combobox#configuration) and [text](/kendo-ui/api/web/combobox#configuration) options.
+A: You need to set the value and the text of the combobox. You can use the [value](/api/web/combobox#configuration) and [text](/api/web/combobox#configuration) options.
 
     <input id="parent" value="1" />
     <input id="child" value="36" />
@@ -110,7 +107,7 @@ A: You need to set the value and the text of the combobox. You can use the [valu
 
 Q: The serverFiltering is disabled and the child combobox does not work?
 
-A: When the [serverFiltering](/kendo-ui/api/framework/datasource#configuration) is disabled, then the combobox will not make any additional requests to the server. Hence it will filter the initial data using the parent's dataValueField property. If no items are found, then the child combobox will be empty. If you need to use child combobox with disabled server filtering, then you will need to provide all neccessary data on the client.
+A: When the [serverFiltering](/api/framework/datasource#configuration) is disabled, then the combobox will not make any additional requests to the server. Hence it will filter the initial data using the parent's dataValueField property. If no items are found, then the child combobox will be empty. If you need to use child combobox with disabled server filtering, then you will need to provide all neccessary data on the client.
 
 Q: Cannot get the request parameters on the server?
 

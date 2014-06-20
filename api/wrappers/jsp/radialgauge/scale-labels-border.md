@@ -1,8 +1,5 @@
 ---
-title: radialGauge-scale-labels-border
-slug: jsp-radialGauge-scale-labels-border
-tags: api, java
-publish: true
+nav_title: radialGauge-scale-labels-border
 ---
 
 # \<kendo:radialGauge-scale-labels-border\>

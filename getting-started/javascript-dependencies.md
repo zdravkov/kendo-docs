@@ -1,9 +1,7 @@
 ---
+nav_title: Javascript Dependencies
 title: Javascript Dependencies
-meta_title: Javascript Dependencies
-meta_description: A list of scripts that Kendo UI widgets require to work, detailed explanation about all JavaScript files
-slug: gs-javascript-dependencies
-publish: true
+description: A list of scripts that Kendo UI widgets require to work, detailed explanation about all JavaScript files
 ---
 
 # JavaScript files used by Kendo UI
@@ -122,7 +120,7 @@ with Kendo UI service packs. We can do this for major releases. The following li
 There should be no problem to use another minor jQuery version instead of the specified above, e.g. 1.7.2 instead of 1.7.1.
 
 > Registering a new jQuery instance after the Kendo UI script files will delete all Kendo UI jQuery plugins and Javascript errors will occur.
-For more information, please refer to the [Troubleshooting page](/kendo-ui/getting-started/troubleshooting#javascript-error-that-jquery-is-unavailable-or-undefined).
+For more information, please refer to the [Troubleshooting page](/getting-started/troubleshooting#javascript-error-that-jquery-is-unavailable-or-undefined).
 
 ### Using Kendo UI and the discontinued Telerik MVC Extensions on the same page
 

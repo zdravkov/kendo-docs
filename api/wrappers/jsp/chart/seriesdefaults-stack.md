@@ -1,8 +1,5 @@
 ---
-title: chart-seriesDefaults-stack
-slug: jsp-chart-seriesDefaults-stack
-tags: api, java
-publish: true
+nav_title: chart-seriesDefaults-stack
 ---
 
 # \<kendo:chart-seriesDefaults-stack\>

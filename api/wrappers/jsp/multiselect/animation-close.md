@@ -1,8 +1,5 @@
 ---
-title: multiSelect-animation-close
-slug: jsp-multiSelect-animation-close
-tags: api, java
-publish: true
+nav_title: multiSelect-animation-close
 ---
 
 # \<kendo:multiSelect-animation-close\>

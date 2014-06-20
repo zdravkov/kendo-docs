@@ -1,11 +1,7 @@
 ---
-title: ScrollView
-meta_title: Technical documentation for Kendo UI Mobile ScrollView widget
-meta_description: Learn how to initialize Mobile ScrollView widget and define content pages in order to display one item per page.
-slug: gs-mobile-scrollview
-relatedDocs: api-mobile-scrollview
-tags: getting-started,mobile
-publish: true
+nav_title: ScrollView
+title: Technical documentation for Kendo UI Mobile ScrollView widget
+description: Learn how to initialize Mobile ScrollView widget and define content pages in order to display one item per page.
 ---
 
 # ScrollView
@@ -257,11 +253,11 @@ One possible approach is to use JavaScript logic (for loop) inside the template.
 
 If a dataBound ScrollView does not display any data the reason might be:
 
-- the [pageSize](/kendo-ui/api/framework/datasource#configuration-pageSize) of the DataSource is undefined. Setting `pageSize` is mandatory.
-- the [total](/kendo-ui/api/framework/datasource#configuration-schema.total) amount of records in the DataSource is undefined. Setting the `total` is mandatory.
-- the widget's [template](/kendo-ui/api/mobile/scrollview#configuration-template) is undefined. Setting `template` is mandatory.
-- the widget content height is zero - if `contentHeight` is set to 100% the ScrollView element should be immediate child of the View and the View's stretch option should be set to true. Code sample could be found [here](/kendo-ui/api/mobile/scrollview#configuration-contentHeight)
+- the [pageSize](/api/framework/datasource#configuration-pageSize) of the DataSource is undefined. Setting `pageSize` is mandatory.
+- the [total](/api/framework/datasource#configuration-schema.total) amount of records in the DataSource is undefined. Setting the `total` is mandatory.
+- the widget's [template](/api/mobile/scrollview#configuration-template) is undefined. Setting `template` is mandatory.
+- the widget content height is zero - if `contentHeight` is set to 100% the ScrollView element should be immediate child of the View and the View's stretch option should be set to true. Code sample could be found [here](/api/mobile/scrollview#configuration-contentHeight)
 
 If the widget loads data but the application hangs or crashes:
 
-- most probably the total amount of records that you are loading is large and you have to set [enablePager](/kendo-ui/api/mobile/scrollview#configuration-enablePager) to false.
+- most probably the total amount of records that you are loading is large and you have to set [enablePager](/api/mobile/scrollview#configuration-enablePager) to false.

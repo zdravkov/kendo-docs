@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-notes-label
-slug: jsp-chart-seriesItem-notes-label
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-notes-label
 ---
 
 # \<kendo:chart-seriesItem-notes-label\>
@@ -87,7 +84,7 @@ If set to true the chart will display the series notes label. By default the ser
 
 The border of the label.
 
-More documentation is available at [kendo:chart-seriesItem-notes-label-border](/kendo-ui/api/wrappers/jsp/chart/seriesitem-notes-label-border).
+More documentation is available at [kendo:chart-seriesItem-notes-label-border](/api/wrappers/jsp/chart/seriesitem-notes-label-border).
 
 #### Example
 

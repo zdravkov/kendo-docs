@@ -1,8 +1,5 @@
 ---
-title: DataSourceTransportSignalrServer
-slug: php-data-datasourcetransportsignalrserver
-tags: api, php
-publish: true
+nav_title: DataSourceTransportSignalrServer
 ---
 
 # \Kendo\Data\DataSourceTransportSignalrServer

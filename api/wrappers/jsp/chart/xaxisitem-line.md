@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-line
-slug: jsp-chart-xAxisItem-line
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-line
 ---
 
 # \<kendo:chart-xAxisItem-line\>

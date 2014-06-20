@@ -1,7 +1,5 @@
 ---
-title:TabStripItemFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.tabstripitemfactory
-publish:true
+nav_title: TabStripItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.TabStripItemFactory

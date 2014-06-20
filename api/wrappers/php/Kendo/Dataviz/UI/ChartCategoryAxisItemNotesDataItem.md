@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemNotesDataItem
-slug: php-dataviz-ui-chartcategoryaxisitemnotesdataitem
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemNotesDataItem
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem
@@ -24,7 +21,7 @@ The icon of the note.
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemIcon|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemIcon](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemNotesDataItemIcon)
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemIcon](/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemNotesDataItemIcon)
     <?php
     $dataItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem();
     $icon = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemIcon();
@@ -53,7 +50,7 @@ The label of the note.
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLabel|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLabel](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemNotesDataItemLabel)
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLabel](/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemNotesDataItemLabel)
     <?php
     $dataItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem();
     $label = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLabel();
@@ -82,7 +79,7 @@ The line of the note.
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLine|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLine](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemNotesDataItemLine)
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLine](/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemNotesDataItemLine)
     <?php
     $dataItem = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItem();
     $line = new \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemLine();

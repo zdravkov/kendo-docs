@@ -1,7 +1,5 @@
 ---
-title:LinearGaugeBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.lineargaugebuilder
-publish:true
+nav_title: LinearGaugeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.LinearGaugeBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the LinearGauge component.
 
 
 
+
 ## Methods
 
-### Theme(`System.String`)
+
+### Theme(System.String)
 Sets the theme of the linear gauge.
 
 
@@ -30,27 +30,27 @@ The linear gauge theme.
     %>
 
 
-### RenderAs(`Kendo.Mvc.UI.RenderingMode`)
+### RenderAs(Kendo.Mvc.UI.RenderingMode)
 Sets the preferred rendering engine.
             If it is not supported by the browser, the Chart will switch to the first available mode.
 
 
 #### Parameters
 
-##### renderAs [Kendo.Mvc.UI.RenderingMode](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/RenderingMode)
+##### renderAs [Kendo.Mvc.UI.RenderingMode](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/RenderingMode)
 The preferred rendering engine.
 
 
 
 
 
-### GaugeArea(`System.Action<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder>`)
+### GaugeArea(System.Action\<Kendo.Mvc.UI.Fluent.GaugeAreaBuilder\>)
 Sets the linear gauge area.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeAreaBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeAreaBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeAreaBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeAreaBuilder)>
 The linear gauge area.
 
 
@@ -63,13 +63,13 @@ The linear gauge area.
     %>
 
 
-### Scale(`System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder>`)
+### Scale(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder\>)
 Configures the scale
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearScaleBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearScaleBuilder)>
 The configurator
 
 
@@ -84,13 +84,13 @@ The configurator
     %>
 
 
-### Pointer(`System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder>`)
+### Pointer(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder\>)
 Configures the pointer
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearPointerBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearPointerBuilder)>
 The configurator
 
 
@@ -105,7 +105,7 @@ The configurator
     %>
 
 
-### Transitions(`System.Boolean`)
+### Transitions(System.Boolean)
 Enables or disabled animated transitions on initial load and refresh.
 
 

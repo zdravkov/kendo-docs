@@ -1,7 +1,5 @@
 ---
-title:CustomDataSourceTransportBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.customdatasourcetransportbuilder
-publish:true
+nav_title: CustomDataSourceTransportBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceTransportBuilder
@@ -9,16 +7,18 @@ Defines the fluent interface for configuring the Transport options.
 
 
 
+
 ## Methods
 
-### Update(`System.Action<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder>`)
+
+### Update(System.Action\<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder\>)
 Configures the URL for Update operation.
 
 
 
 
 
-### Update(`System.String,System.String`)
+### Update(System.String,System.String)
 Sets controller and action for Update operation.
 
 
@@ -34,7 +34,7 @@ Controller Name
 
 
 
-### Update(`System.String,System.String,System.Object`)
+### Update(System.String,System.String,System.Object)
 Sets controller, action and routeValues for Update operation.
 
 
@@ -53,14 +53,14 @@ Route values
 
 
 
-### Update(`System.Object`)
+### Update(System.Object)
 Sets the Update operation using anonymous object.
 
 
 
 
 
-### Update(`System.String`)
+### Update(System.String)
 Sets JavaScript function which to return additional parameters which to be sent the server.
 
 
@@ -73,14 +73,14 @@ JavaScript function name
 
 
 
-### Create(`System.Action<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder>`)
+### Create(System.Action\<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder\>)
 Configures the URL for Create operation.
 
 
 
 
 
-### Create(`System.String,System.String`)
+### Create(System.String,System.String)
 Sets controller and action for Create operation.
 
 
@@ -96,7 +96,7 @@ Controller Name
 
 
 
-### Create(`System.String,System.String,System.Object`)
+### Create(System.String,System.String,System.Object)
 Sets controller, action and routeValues for Create operation.
 
 
@@ -115,14 +115,14 @@ Route values
 
 
 
-### Create(`System.Object`)
+### Create(System.Object)
 Sets the Create operation using anonymous object.
 
 
 
 
 
-### Create(`System.String`)
+### Create(System.String)
 Sets JavaScript function which to return additional parameters which to be sent the server.
 
 
@@ -135,14 +135,14 @@ JavaScript function name
 
 
 
-### Destroy(`System.Action<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder>`)
+### Destroy(System.Action\<Kendo.Mvc.UI.Fluent.CustomCrudOperationBuilder\>)
 Configures the URL for Destroy operation.
 
 
 
 
 
-### Destroy(`System.String,System.String`)
+### Destroy(System.String,System.String)
 Sets controller and action for Destroy operation.
 
 
@@ -158,7 +158,7 @@ Controller Name
 
 
 
-### Destroy(`System.String,System.String,System.Object`)
+### Destroy(System.String,System.String,System.Object)
 Sets controller, action and routeValues for Destroy operation.
 
 
@@ -177,14 +177,14 @@ Route values
 
 
 
-### Destroy(`System.Object`)
+### Destroy(System.Object)
 Sets the Destroy operation using anonymous object.
 
 
 
 
 
-### Destroy(`System.String`)
+### Destroy(System.String)
 Sets JavaScript function which to return additional parameters which to be sent the server.
 
 

@@ -1,8 +1,5 @@
 ---
-title: grid-column-sortable
-slug: jsp-grid-column-sortable
-tags: api, java
-publish: true
+nav_title: grid-column-sortable
 ---
 
 # \<kendo:grid-column-sortable\>

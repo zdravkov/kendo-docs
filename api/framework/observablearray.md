@@ -1,16 +1,13 @@
 ---
-title: kendo.data.ObservableArray
-meta_title: API Reference for ObservableArray wrap in Kendo MVVM and Kendo DataSource
-meta_description: How to create a new ObservableArray, explanations how to use kendo.observable methods, fields and events.
-slug: api-framework-observablearray
-tags: api,framework
-publish: true
+nav_title: kendo.data.ObservableArray
+title: API Reference for ObservableArray wrap in Kendo MVVM and Kendo DataSource
+description: How to create a new ObservableArray, explanations how to use kendo.observable methods, fields and events.
 ---
 
 # kendo.data.ObservableArray
 
-The `ObservableArray` wraps an existing Array object with change tracking capabilities. It is used by [Kendo MVVM](/kendo-ui/getting-started/framework/mvvm/overview) and
-the [kendo.data.DataSource](/kendo-ui/getting-started/framework/datasource/overview). Inherits from [kendo.Observable](/kendo-ui/api/framework/observable).
+The `ObservableArray` wraps an existing Array object with change tracking capabilities. It is used by [Kendo MVVM](/getting-started/framework/mvvm/overview) and
+the [kendo.data.DataSource](/getting-started/framework/datasource/overview). Inherits from [kendo.Observable](/api/framework/observable).
 
 ## Configuration
 
@@ -39,7 +36,7 @@ To create a new `ObservableArray`, use its constructor or the `kendo.observable`
     console.log(observable.people instanceof kendo.data.ObservableArray); // outputs "true"
     </script>
 
-> **Important**: The `kendo.data.ObservableArray` wraps its items [kendo.data.ObservableObject](/kendo-ui/api/framework/observableobject) instances (unless the items are of primitive type).
+> **Important**: The `kendo.data.ObservableArray` wraps its items [kendo.data.ObservableObject](/api/framework/observableobject) instances (unless the items are of primitive type).
 
 #### Example - array of complex and primitive Type
     <script>

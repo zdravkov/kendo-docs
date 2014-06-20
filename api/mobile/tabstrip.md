@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.TabStrip
-meta_title: Configuration, methods and events of Kendo UI Mobile TabStrip
-meta_description: How to configure Mobile Tabstrip widget with a few clicks, change its behavior and use supported events.
-slug: api-mobile-tabstrip
-relatedDocs: gs-mobile-tabstrip
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.TabStrip
+title: Configuration, methods and events of Kendo UI Mobile TabStrip
+description: How to configure Mobile Tabstrip widget with a few clicks, change its behavior and use supported events.
 ---
 
 # kendo.mobile.ui.TabStrip
 
-Represents the Kendo UI Mobile TabStrip widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile TabStrip widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 
@@ -140,7 +136,7 @@ Prepares the **TabStrip** for safe removal from DOM. Detaches all event handlers
 
 ### switchTo
 
-Set the mobile TabStrip active tab to the tab with the specified URL. This method doesn't change the current View. To change the View, use Application's [navigate](/kendo-ui/api/mobile/application#navigate) method instead.
+Set the mobile TabStrip active tab to the tab with the specified URL. This method doesn't change the current View. To change the View, use Application's [navigate](/api/mobile/application#navigate) method instead.
 
 #### Parameters
 
@@ -170,7 +166,7 @@ The URL or zero based index of the tab.
 
 ### switchByFullUrl
 
-Set the mobile TabStrip active tab to the tab with the specified full URL. This method doesn't change the current View. To change the View, use Application's [navigate](/kendo-ui/api/mobile/application#navigate) method instead.
+Set the mobile TabStrip active tab to the tab with the specified full URL. This method doesn't change the current View. To change the View, use Application's [navigate](/api/mobile/application#navigate) method instead.
 
 > Use switchByFullUrl when you want to active a tab that has URL with query string parameters.
 

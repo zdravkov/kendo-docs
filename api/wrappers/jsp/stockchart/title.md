@@ -1,8 +1,5 @@
 ---
-title: stockChart-title
-slug: jsp-stockChart-title
-tags: api, java
-publish: true
+nav_title: stockChart-title
 ---
 
 # \<kendo:stockChart-title\>
@@ -87,7 +84,7 @@ The visibility of the title.
 
 The border of the title.
 
-More documentation is available at [kendo:stockChart-title-border](/kendo-ui/api/wrappers/jsp/stockchart/title-border).
+More documentation is available at [kendo:stockChart-title-border](/api/wrappers/jsp/stockchart/title-border).
 
 #### Example
 

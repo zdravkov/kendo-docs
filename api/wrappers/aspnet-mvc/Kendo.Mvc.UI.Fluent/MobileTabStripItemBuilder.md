@@ -1,7 +1,5 @@
 ---
-title:MobileTabStripItemBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobiletabstripitembuilder
-publish:true
+nav_title: MobileTabStripItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileTabStripItemBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobileTabStripItem settings.
 
 
 
+
 ## Methods
 
-### Url(`System.String`)
+
+### Url(System.String)
 Specifies the url or id of the view which will be loaded
 
 
@@ -24,7 +24,7 @@ The value that configures the url.
 
 
 
-### Icon(`System.String`)
+### Icon(System.String)
 The icon of the button. It can be either one of the built-in icons, or a custom one
 
 
@@ -37,7 +37,7 @@ The value that configures the icon.
 
 
 
-### Text(`System.String`)
+### Text(System.String)
 Specifies the text of the item
 
 
@@ -50,7 +50,7 @@ The value that configures the text.
 
 
 
-### Target(`System.String`)
+### Target(System.String)
 Specifies the id of target Pane or `_top` for application level Pane
 
 
@@ -63,7 +63,7 @@ The value that configures the target.
 
 
 
-### ActionsheetContext(`System.String`)
+### ActionsheetContext(System.String)
 This value will be available when the action callback of ActionSheet item is executed
 
 
@@ -76,7 +76,7 @@ The value that configures the actionsheetcontext.
 
 
 
-### Badge(`System.String`)
+### Badge(System.String)
 Specifies the value shown in badge icon
 
 
@@ -89,20 +89,20 @@ The value that configures the badge.
 
 
 
-### Rel(`Kendo.Mvc.UI.MobileButtonRel`)
+### Rel(Kendo.Mvc.UI.MobileButtonRel)
 Specifies the widget to be open when is tapped (the href must be set too)
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.MobileButtonRel](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonRel)
+##### value [Kendo.Mvc.UI.MobileButtonRel](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonRel)
 The value that configures the rel.
 
 
 
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
 
@@ -118,7 +118,7 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes.
 
 
@@ -134,14 +134,14 @@ The HTML attributes.
 
 
 
-### Url(`System.Action<Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder>`)
+### Url(System.Action\<Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder\>)
 Specifies the url for remote view to be loaded
 
 
 
 
 
-### Url(`System.String,System.String,System.Object`)
+### Url(System.String,System.String,System.Object)
 Sets controller and action from where the remove view to be loaded.
 
 
@@ -160,7 +160,7 @@ Route values
 
 
 
-### Url(`System.String,System.String`)
+### Url(System.String,System.String)
 Sets controller, action and routeValues from where the remove view to be loaded.
 
 

@@ -1,8 +1,5 @@
 ---
-title: chart-xAxis
-slug: jsp-chart-xAxis
-tags: api, java
-publish: true
+nav_title: chart-xAxis
 ---
 
 # \<kendo:chart-xAxis\>
@@ -23,7 +20,7 @@ The X-axis configuration options of the scatter chart X-axis. Supports all value
 
 The X-axis configuration options of the scatter chart X-axis. Supports all valueAxis options.
 
-More documentation is available at [kendo:chart-xAxisItem](/kendo-ui/api/wrappers/jsp/chart/xaxisitem).
+More documentation is available at [kendo:chart-xAxisItem](/api/wrappers/jsp/chart/xaxisitem).
 
 #### Example
 

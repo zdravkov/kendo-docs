@@ -1,8 +1,5 @@
 ---
-title: StockChartSeriesItemNotesLabel
-slug: php-dataviz-ui-stockchartseriesitemnoteslabel
-tags: api, php
-publish: true
+nav_title: StockChartSeriesItemNotesLabel
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemNotesLabel
@@ -42,7 +39,7 @@ The border of the label.
 ##### $value `\Kendo\Dataviz\UI\StockChartSeriesItemNotesLabelBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemNotesLabelBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemNotesLabelBorder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartSeriesItemNotesLabelBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartSeriesItemNotesLabelBorder)
     <?php
     $label = new \Kendo\Dataviz\UI\StockChartSeriesItemNotesLabel();
     $border = new \Kendo\Dataviz\UI\StockChartSeriesItemNotesLabelBorder();

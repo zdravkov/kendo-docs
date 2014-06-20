@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Rectangle
-slug:api-dataviz-diagram-rectangle
-publish: true
+nav_title: kendo.dataviz.diagram.Rectangle
 ---
 
 # kendo.dataviz.diagram.Rectangle

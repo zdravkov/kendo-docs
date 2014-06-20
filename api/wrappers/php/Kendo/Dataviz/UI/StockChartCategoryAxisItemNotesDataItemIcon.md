@@ -1,8 +1,5 @@
 ---
-title: StockChartCategoryAxisItemNotesDataItemIcon
-slug: php-dataviz-ui-stockchartcategoryaxisitemnotesdataitemicon
-tags: api, php
-publish: true
+nav_title: StockChartCategoryAxisItemNotesDataItemIcon
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemIcon
@@ -42,7 +39,7 @@ The border of the icon.
 ##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemIconBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemIconBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemNotesDataItemIconBorder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemIconBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemNotesDataItemIconBorder)
     <?php
     $icon = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemIcon();
     $border = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemIconBorder();

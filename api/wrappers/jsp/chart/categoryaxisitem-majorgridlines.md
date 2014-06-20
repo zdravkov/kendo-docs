@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-majorGridLines
-slug: jsp-chart-categoryAxisItem-majorGridLines
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-majorGridLines
 ---
 
 # \<kendo:chart-categoryAxisItem-majorGridLines\>

@@ -1,7 +1,5 @@
 ---
-title:ChartNavigatorHintBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartnavigatorhintbuilder
-publish:true
+nav_title: ChartNavigatorHintBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartNavigatorhintBuilder.
 
 
 
+
 ## Methods
 
-### Format(`System.String`)
+
+### Format(System.String)
 Sets the border color.
 
 
@@ -38,7 +38,7 @@ The border color (CSS format).
     %>
 
 
-### Template(`System.String`)
+### Template(System.String)
 Sets the border opacity
 
 
@@ -65,7 +65,7 @@ The border opacity (CSS format).
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the hint visibility.
 
 

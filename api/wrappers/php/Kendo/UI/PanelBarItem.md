@@ -1,8 +1,5 @@
 ---
-title: PanelBarItem
-slug: php-ui-panelbaritem
-tags: api, php
-publish: true
+nav_title: PanelBarItem
 ---
 
 # \Kendo\UI\PanelBarItem

@@ -1,0 +1,64 @@
+---
+layout: index
+---
+<div id="page-top">
+    <ul id="page-tabs">
+        <li><a href="{{site.baseurl}}/">Home</a></li>
+        {% if page.category == "api" %}
+        <li class="active">API Reference</li>
+        {% else %}
+        <li><a href="{{site.baseurl}}/api/introduction">API Reference</a></li>
+        {% endif %}
+        {% if page.category == "getting-started" %}
+        <li class="active">Getting Started</li>
+        {% else %}
+        <li><a href="{{site.baseurl}}/getting-started/introduction">Getting Started</a></li>
+        {% endif %}
+        {% if page.category == "howto" %}
+        <li class="active">How Do I?</li>
+        {% else %}
+        <li><a href="{{site.baseurl}}/howto/add-charts-and-graphs-to-an-application">How Do I?</a></li>
+        {% endif %}
+        {% if page.category == "tutorials" %}
+        <li class="active">Tutorials</li>
+        {% else %}
+        <li><a href="{{site.baseurl}}/tutorials/inheritance-with-kendoui">Tutorials</a></li>
+        {% endif %}
+    </ul>
+    <div id="page-search">
+        {% include search.html %}
+    </div>
+</div>
+<div id="page-inner-content">
+    <div id="page-nav">
+        <div id="page-tree"></div>
+        <script>
+        $("#page-tree").kendoTreeView({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "{{site.baseurl}}/{{page.category}}.json",
+                        dataType: "json"
+                    }
+                },
+                schema: {
+                    model: {
+                        id: "path",
+                        children: "items",
+                        hasChildren: "items"
+                    }
+                }
+            },
+            select: preventParentSelection,
+            template: navigationTemplate("{{site.baseurl}}/{{page.category}}/"),
+            dataBound: expandNavigation("{{page.url | remove_first: '/' | remove_first: page.category | remove_first: '/'}}")
+        });
+        </script>
+    </div>
+    <div id="page-article">
+    {% if page.category == "api" %}<div id="markdown-toc"></div>{% endif %}
+    {{ content }}
+    </div>
+
+    {% include footer.html %}
+</div>

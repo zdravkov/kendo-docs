@@ -1,20 +1,17 @@
 ---
-title: Map
-slug: php-dataviz-ui-map
-tags: api, php
-publish: true
+nav_title: Map
 ---
 
 # \Kendo\Dataviz\UI\Map
 
-A PHP wrapper for Kendo UI [Map](/kendo-ui/api/dataviz/map).
+A PHP wrapper for Kendo UI [Map](/api/dataviz/map).
 
-Inherits from [\Kendo\UI\Widget](/kendo-ui/api/wrappers/php/Kendo/UI/Widget).
+Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
 ## Usage
 
 To use Map in a PHP page instantiate a new instance, configure it via the available
-configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
 ### Using Kendo Map
 
@@ -53,7 +50,7 @@ The map center. Coordinates are listed as [Latitude, Longitude].
 
 ### click
 Fired when the user clicks on the map.
-For additional information check the [click](/kendo-ui/api/dataviz/map#events-click) event documentation.
+For additional information check the [click](/api/dataviz/map#events-click) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -80,7 +77,7 @@ For additional information check the [click](/kendo-ui/api/dataviz/map#events-cl
     $map->click('onClick');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -99,7 +96,7 @@ The configuration of built-in map controls.
 ##### $value `\Kendo\Dataviz\UI\MapControls|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapControls](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapControls)
+#### Example - using [\Kendo\Dataviz\UI\MapControls](/api/wrappers/php/Kendo/Dataviz/UI/MapControls)
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $controls = new \Kendo\Dataviz\UI\MapControls();
@@ -128,7 +125,7 @@ The default configuration for map layers by type.
 ##### $value `\Kendo\Dataviz\UI\MapLayerDefaults|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaults](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaults)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaults](/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaults)
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $layerDefaults = new \Kendo\Dataviz\UI\MapLayerDefaults();
@@ -186,7 +183,7 @@ Adds one or more MapLayer to the Map.
 ### markerCreated
 Fired when a marker has been created and is about to be displayed.
 Cancelling the event will prevent the marker from being shown.
-For additional information check the [markerCreated](/kendo-ui/api/dataviz/map#events-markerCreated) event documentation.
+For additional information check the [markerCreated](/api/dataviz/map#events-markerCreated) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -213,7 +210,7 @@ For additional information check the [markerCreated](/kendo-ui/api/dataviz/map#e
     $map->markerCreated('onMarkerCreated');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -232,7 +229,7 @@ The default options for all markers.
 ##### $value `\Kendo\Dataviz\UI\MapMarkerDefaults|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapMarkerDefaults](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapMarkerDefaults)
+#### Example - using [\Kendo\Dataviz\UI\MapMarkerDefaults](/api/wrappers/php/Kendo/Dataviz/UI/MapMarkerDefaults)
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
     $markerDefaults = new \Kendo\Dataviz\UI\MapMarkerDefaults();
@@ -345,7 +342,7 @@ Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features)
 
 ### pan
 Fired while the map viewport is being moved.
-For additional information check the [pan](/kendo-ui/api/dataviz/map#events-pan) event documentation.
+For additional information check the [pan](/api/dataviz/map#events-pan) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -372,7 +369,7 @@ For additional information check the [pan](/kendo-ui/api/dataviz/map#events-pan)
     $map->pan('onPan');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -381,7 +378,7 @@ For additional information check the [pan](/kendo-ui/api/dataviz/map#events-pan)
 
 ### panEnd
 Fires after the map viewport has been moved.
-For additional information check the [panEnd](/kendo-ui/api/dataviz/map#events-panEnd) event documentation.
+For additional information check the [panEnd](/api/dataviz/map#events-panEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -408,7 +405,7 @@ For additional information check the [panEnd](/kendo-ui/api/dataviz/map#events-p
     $map->panEnd('onPanEnd');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -436,7 +433,7 @@ Controls whether the user can pan the map.
 ### reset
 Fired when the map is reset.
 This typically occurs on initial load and after a zoom/center change.
-For additional information check the [reset](/kendo-ui/api/dataviz/map#events-reset) event documentation.
+For additional information check the [reset](/api/dataviz/map#events-reset) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -463,7 +460,7 @@ For additional information check the [reset](/kendo-ui/api/dataviz/map#events-re
     $map->reset('onReset');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -472,7 +469,7 @@ For additional information check the [reset](/kendo-ui/api/dataviz/map#events-re
 
 ### shapeClick
 Fired when a shape is clicked or tapped.
-For additional information check the [shapeClick](/kendo-ui/api/dataviz/map#events-shapeClick) event documentation.
+For additional information check the [shapeClick](/api/dataviz/map#events-shapeClick) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -499,7 +496,7 @@ For additional information check the [shapeClick](/kendo-ui/api/dataviz/map#even
     $map->shapeClick('onShapeClick');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -508,7 +505,7 @@ For additional information check the [shapeClick](/kendo-ui/api/dataviz/map#even
 
 ### shapeCreated
 Fired when a shape is created, but is not rendered yet.
-For additional information check the [shapeCreated](/kendo-ui/api/dataviz/map#events-shapeCreated) event documentation.
+For additional information check the [shapeCreated](/api/dataviz/map#events-shapeCreated) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -535,7 +532,7 @@ For additional information check the [shapeCreated](/kendo-ui/api/dataviz/map#ev
     $map->shapeCreated('onShapeCreated');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -544,7 +541,7 @@ For additional information check the [shapeCreated](/kendo-ui/api/dataviz/map#ev
 
 ### shapeMouseEnter
 Fired when the mouse enters a shape.
-For additional information check the [shapeMouseEnter](/kendo-ui/api/dataviz/map#events-shapeMouseEnter) event documentation.
+For additional information check the [shapeMouseEnter](/api/dataviz/map#events-shapeMouseEnter) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -571,7 +568,7 @@ For additional information check the [shapeMouseEnter](/kendo-ui/api/dataviz/map
     $map->shapeMouseEnter('onShapeMouseEnter');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -580,7 +577,7 @@ For additional information check the [shapeMouseEnter](/kendo-ui/api/dataviz/map
 
 ### shapeMouseLeave
 Fired when the mouse leaves a shape.
-For additional information check the [shapeMouseLeave](/kendo-ui/api/dataviz/map#events-shapeMouseLeave) event documentation.
+For additional information check the [shapeMouseLeave](/api/dataviz/map#events-shapeMouseLeave) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -607,7 +604,7 @@ For additional information check the [shapeMouseLeave](/kendo-ui/api/dataviz/map
     $map->shapeMouseLeave('onShapeMouseLeave');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -652,7 +649,7 @@ The initial zoom level.Typical web maps use zoom levels from 0 (whole world) to 
 
 ### zoomEnd
 Fired when the map zoom level has changed.
-For additional information check the [zoomEnd](/kendo-ui/api/dataviz/map#events-zoomEnd) event documentation.
+For additional information check the [zoomEnd](/api/dataviz/map#events-zoomEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -679,7 +676,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/dataviz/map#events-
     $map->zoomEnd('onZoomEnd');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');
@@ -689,7 +686,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/dataviz/map#events-
 ### zoomStart
 Fired when the map zoom level is about to change.
 Cancelling the event will prevent the user action.
-For additional information check the [zoomStart](/kendo-ui/api/dataviz/map#events-zoomStart) event documentation.
+For additional information check the [zoomStart](/api/dataviz/map#events-zoomStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Map`
@@ -716,7 +713,7 @@ For additional information check the [zoomStart](/kendo-ui/api/dataviz/map#event
     $map->zoomStart('onZoomStart');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $map = new \Kendo\Dataviz\UI\Map('Map');

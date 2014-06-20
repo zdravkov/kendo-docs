@@ -1,8 +1,5 @@
 ---
-title: ListViewPageableMessages
-slug: php-ui-listviewpageablemessages
-tags: api, php
-publish: true
+nav_title: ListViewPageableMessages
 ---
 
 # \Kendo\UI\ListViewPageableMessages

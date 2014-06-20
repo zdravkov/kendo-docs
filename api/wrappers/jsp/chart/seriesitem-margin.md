@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-margin
-slug: jsp-chart-seriesItem-margin
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-margin
 ---
 
 # \<kendo:chart-seriesItem-margin\>

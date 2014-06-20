@@ -1,8 +1,5 @@
 ---
-title: SchedulerMessagesRecurrenceEditorMonthly
-slug: php-ui-schedulermessagesrecurrenceeditormonthly
-tags: api, php
-publish: true
+nav_title: SchedulerMessagesRecurrenceEditorMonthly
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceEditorMonthly

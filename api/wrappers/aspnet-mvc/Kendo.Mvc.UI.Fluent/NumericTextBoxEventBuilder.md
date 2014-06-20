@@ -1,7 +1,5 @@
 ---
-title:NumericTextBoxEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.numerictextboxeventbuilder
-publish:true
+nav_title: NumericTextBoxEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent interface for configuring the NumericTextBox events.
 
 
 
+
 ## Methods
 
-### Change(`System.Func<System.Object,System.Object>`)
+
+### Change(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Change client-side event
 
-For additional information check the [change](/kendo-ui/api/web/numerictextbox#events-change) event documentation.
+For additional information check the [change](/api/web/numerictextbox#events-change) event documentation.
 
 
 #### Parameters
@@ -38,10 +38,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### Change(`System.String`)
+### Change(System.String)
 Defines the name of the JavaScript function that will handle the the Change client-side event.
 
-For additional information check the [change](/kendo-ui/api/web/numerictextbox#events-change) event documentation.
+For additional information check the [change](/api/web/numerictextbox#events-change) event documentation.
 
 
 #### Parameters
@@ -59,10 +59,10 @@ The name of the JavaScript function that will handle the event.
     )
 
 
-### Spin(`System.Func<System.Object,System.Object>`)
+### Spin(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Spin client-side event
 
-For additional information check the [spin](/kendo-ui/api/web/numerictextbox#events-spin) event documentation.
+For additional information check the [spin](/api/web/numerictextbox#events-spin) event documentation.
 
 
 #### Parameters
@@ -86,10 +86,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### Spin(`System.String`)
+### Spin(System.String)
 Defines the name of the JavaScript function that will handle the the Spin client-side event.
 
-For additional information check the [spin](/kendo-ui/api/web/numerictextbox#events-spin) event documentation.
+For additional information check the [spin](/api/web/numerictextbox#events-spin) event documentation.
 
 
 #### Parameters

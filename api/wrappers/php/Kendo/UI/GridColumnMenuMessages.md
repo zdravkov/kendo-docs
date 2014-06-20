@@ -1,8 +1,5 @@
 ---
-title: GridColumnMenuMessages
-slug: php-ui-gridcolumnmenumessages
-tags: api, php
-publish: true
+nav_title: GridColumnMenuMessages
 ---
 
 # \Kendo\UI\GridColumnMenuMessages

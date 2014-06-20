@@ -1,8 +1,5 @@
 ---
-title: LinearGaugeScaleMajorTicks
-slug: php-dataviz-ui-lineargaugescalemajorticks
-tags: api, php
-publish: true
+nav_title: LinearGaugeScaleMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks

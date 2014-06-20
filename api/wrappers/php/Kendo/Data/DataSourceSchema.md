@@ -1,8 +1,5 @@
 ---
-title: DataSourceSchema
-slug: php-data-datasourceschema
-tags: api, php
-publish: true
+nav_title: DataSourceSchema
 ---
 
 # \Kendo\Data\DataSourceSchema

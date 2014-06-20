@@ -1,8 +1,5 @@
 ---
-title: SparklineTooltipBorder
-slug: php-dataviz-ui-sparklinetooltipborder
-tags: api, php
-publish: true
+nav_title: SparklineTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineTooltipBorder

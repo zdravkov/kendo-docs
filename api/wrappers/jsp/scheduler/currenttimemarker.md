@@ -1,8 +1,5 @@
 ---
-title: scheduler-currentTimeMarker
-slug: jsp-scheduler-currentTimeMarker
-tags: api, java
-publish: true
+nav_title: scheduler-currentTimeMarker
 ---
 
 # \<kendo:scheduler-currentTimeMarker\>

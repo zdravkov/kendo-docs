@@ -1,9 +1,7 @@
 ---
-title: Supported Browsers
-meta_title: Supported desktop and mobile browsers for Kendo UI DataViz
-meta_description: Find detailed browser requirements for Kendo UI DataViz suite.
-slug: dataviz-supported-browsers
-publish: true
+nav_title: Supported Browsers
+title: Supported desktop and mobile browsers for Kendo UI DataViz
+description: Find detailed browser requirements for Kendo UI DataViz suite.
 ---
 
 # Supported Browsers

@@ -1,8 +1,5 @@
 ---
-title: grid-filterable-messages
-slug: jsp-grid-filterable-messages
-tags: api, java
-publish: true
+nav_title: grid-filterable-messages
 ---
 
 # \<kendo:grid-filterable-messages\>

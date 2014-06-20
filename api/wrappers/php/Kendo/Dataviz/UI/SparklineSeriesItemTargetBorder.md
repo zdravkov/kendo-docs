@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemTargetBorder
-slug: php-dataviz-ui-sparklineseriesitemtargetborder
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemTargetBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder

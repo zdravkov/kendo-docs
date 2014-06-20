@@ -1,8 +1,5 @@
 ---
-title: diagram-shapeDefaults-hover
-slug: jsp-diagram-shapeDefaults-hover
-tags: api, java
-publish: true
+nav_title: diagram-shapeDefaults-hover
 ---
 
 # \<kendo:diagram-shapeDefaults-hover\>

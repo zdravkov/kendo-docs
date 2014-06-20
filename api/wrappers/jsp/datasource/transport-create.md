@@ -1,8 +1,5 @@
 ---
-title: dataSource-transport-create
-slug: jsp-dataSource-transport-create
-tags: api, java
-publish: true
+nav_title: dataSource-transport-create
 ---
 
 # \<kendo:dataSource-transport-create\>

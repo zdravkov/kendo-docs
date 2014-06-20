@@ -1,8 +1,5 @@
 ---
-title: window-animation
-slug: jsp-window-animation
-tags: api, java
-publish: true
+nav_title: window-animation
 ---
 
 # \<kendo:window-animation\>
@@ -24,7 +21,7 @@ will disable all animations in the widget.
 
 The animation that will be used when a Window closes.
 
-More documentation is available at [kendo:window-animation-close](/kendo-ui/api/wrappers/jsp/window/animation-close).
+More documentation is available at [kendo:window-animation-close](/api/wrappers/jsp/window/animation-close).
 
 #### Example
 
@@ -36,7 +33,7 @@ More documentation is available at [kendo:window-animation-close](/kendo-ui/api/
 
 The animation that will be used when a Window opens.
 
-More documentation is available at [kendo:window-animation-open](/kendo-ui/api/wrappers/jsp/window/animation-open).
+More documentation is available at [kendo:window-animation-open](/api/wrappers/jsp/window/animation-open).
 
 #### Example
 

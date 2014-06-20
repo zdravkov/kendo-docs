@@ -1,8 +1,5 @@
 ---
-title: SparklineValueAxisItemMajorGridLines
-slug: php-dataviz-ui-sparklinevalueaxisitemmajorgridlines
-tags: api, php
-publish: true
+nav_title: SparklineValueAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\SparklineValueAxisItemMajorGridLines

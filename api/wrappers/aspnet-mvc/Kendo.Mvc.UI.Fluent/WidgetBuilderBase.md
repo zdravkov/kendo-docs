@@ -1,20 +1,24 @@
 ---
-title:WidgetBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.widgetbuilderbase
-publish:true
+nav_title: WidgetBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.WidgetBuilderBase
 View component Builder base class.
 
 
+
 ## Properties
+
+
 ### Component
+
 Gets the view component.
 
 
 
+
 ## Methods
+
 
 ### ToComponent
 Returns the internal view component.
@@ -26,7 +30,7 @@ Returns the internal view component.
 
 
 
-### Name(`System.String`)
+### Name(System.String)
 Sets the name of the component.
 
 
@@ -42,7 +46,7 @@ The name.
 
 
 
-### Deferred(`System.Boolean`)
+### Deferred(System.Boolean)
 Suppress initialization script rendering. Note that this options should be used in conjunction with M:Kendo.Mvc.UI.Fluent.WidgetFactory.DeferredScripts(System.Boolean)
 
 
@@ -52,7 +56,7 @@ Suppress initialization script rendering. Note that this options should be used 
 
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
 
@@ -68,7 +72,7 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes.
 
 

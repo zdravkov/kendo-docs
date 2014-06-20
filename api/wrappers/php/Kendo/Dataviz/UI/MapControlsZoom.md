@@ -1,8 +1,5 @@
 ---
-title: MapControlsZoom
-slug: php-dataviz-ui-mapcontrolszoom
-tags: api, php
-publish: true
+nav_title: MapControlsZoom
 ---
 
 # \Kendo\Dataviz\UI\MapControlsZoom

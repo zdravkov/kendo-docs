@@ -1,13 +1,10 @@
 ---
-title: kendo.Layout
-slug: api-framework-layout
-tags: api,framework
-publish: true
+nav_title: kendo.Layout
 ---
 
 # kendo.Layout
 
-The Layout class inherits from the [View](/kendo-ui/api/framework/view) and provides the additional functionality of rendering other views/layouts in the element.
+The Layout class inherits from the [View](/api/framework/view) and provides the additional functionality of rendering other views/layouts in the element.
 
 ## Methods
 

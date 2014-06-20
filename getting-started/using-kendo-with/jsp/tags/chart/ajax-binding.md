@@ -1,7 +1,5 @@
 ---
-title: Ajax Binding
-slug: jsp-chart-ajax-binding
-publish: true
+nav_title: Ajax Binding
 ---
 
 ## Ajax Binding

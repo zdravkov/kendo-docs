@@ -1,12 +1,8 @@
 ---
-title: Overview
-meta_title: Overview of DropDownList widget - primary uses
-meta_description: Quickly explore all features of Kendo UI DropDown control and how to use them.
-slug: gs-web-dropdownlist-overview
-relatedDocs: api-web-dropdownlist
-tags: getting-started,web
-ordinal: 1
-publish: true
+nav_title: Overview
+title: Overview of DropDownList widget - primary uses
+description: Quickly explore all features of Kendo UI DropDown control and how to use them.
+nav_position: 1
 ---
 
 # DropDownList Overview
@@ -98,7 +94,7 @@ such as
 
 The **DropDownList** uses Kendo UI templates to enable control over how item, popup header and selected value is rendered. For a
 detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
-[documentation](/kendo-ui/getting-started/framework/templates/overview).
+[documentation](/getting-started/framework/templates/overview).
 
 ### Item template customization
 

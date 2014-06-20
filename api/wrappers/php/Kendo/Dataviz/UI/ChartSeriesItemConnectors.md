@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemConnectors
-slug: php-dataviz-ui-chartseriesitemconnectors
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemConnectors
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemConnectors

@@ -1,8 +1,5 @@
 ---
-title: SchedulerMessagesRecurrenceEditorFrequencies
-slug: php-ui-schedulermessagesrecurrenceeditorfrequencies
-tags: api, php
-publish: true
+nav_title: SchedulerMessagesRecurrenceEditorFrequencies
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceEditorFrequencies

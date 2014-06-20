@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-notes-icon
-slug: jsp-chart-categoryAxisItem-notes-icon
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-notes-icon
 ---
 
 # \<kendo:chart-categoryAxisItem-notes-icon\>
@@ -59,7 +56,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:chart-categoryAxisItem-notes-icon-border](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem-notes-icon-border).
+More documentation is available at [kendo:chart-categoryAxisItem-notes-icon-border](/api/wrappers/jsp/chart/categoryaxisitem-notes-icon-border).
 
 #### Example
 

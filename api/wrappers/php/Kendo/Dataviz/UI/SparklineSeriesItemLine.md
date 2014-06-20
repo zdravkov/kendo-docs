@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemLine
-slug: php-dataviz-ui-sparklineseriesitemline
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemLine
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemLine

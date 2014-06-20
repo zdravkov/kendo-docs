@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Connector
-slug:api-dataviz-diagram-connector
-publish: true
+nav_title: kendo.dataviz.diagram.Connector
 ---
 
 # kendo.dataviz.diagram.Connector

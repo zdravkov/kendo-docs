@@ -1,7 +1,5 @@
 ---
-title: Configure Project Wizard
-slug: mvc-vsx-configure-project
-publish: true
+nav_title: Configure Project Wizard
 ---
 
 #Configure Project Wizard
@@ -15,5 +13,5 @@ The **Telerik | UI for ASP.NET MVC | Configure Project** menu item opens the **P
 You can modify the following project-wide settings:
 
 - **Theme** - Choose the visual theme for your Telerik UI for ASP.NET MVC Application
-- **Use CDN Support** - Enable or disable [CDN](/kendo-ui/getting-started/javascript-dependencies#cdn) support.
+- **Use CDN Support** - Enable or disable [CDN](/getting-started/javascript-dependencies#cdn) support.
 - **Copy Global Resources** - Copy the localization files to ~/Scripts/kendo/{version}/cultures

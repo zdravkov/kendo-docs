@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-select-mousewheel
-slug: jsp-stockChart-categoryAxisItem-select-mousewheel
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-select-mousewheel
 ---
 
 # \<kendo:stockChart-categoryAxisItem-select-mousewheel\>

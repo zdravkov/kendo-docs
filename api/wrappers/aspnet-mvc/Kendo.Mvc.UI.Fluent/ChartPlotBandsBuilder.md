@@ -1,7 +1,5 @@
 ---
-title:ChartPlotBandsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartplotbandsbuilder
-publish:true
+nav_title: ChartPlotBandsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPlotBandsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring plot band.
 
 
 
+
 ## Methods
 
-### From(`System.Double`)
+
+### From(System.Double)
 Sets the plot band start position.
 
 
@@ -35,7 +35,7 @@ The plot band start position.
     %>
 
 
-### To(`System.Double`)
+### To(System.Double)
 Sets the plot band end position.
 
 
@@ -59,7 +59,7 @@ The plot band end position.
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the plot band background color
 
 
@@ -83,7 +83,7 @@ The plot band background color.
     %>
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the plot band opacity
 
 

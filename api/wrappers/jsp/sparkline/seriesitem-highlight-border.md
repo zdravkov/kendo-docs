@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-highlight-border
-slug: jsp-sparkline-seriesItem-highlight-border
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-highlight-border
 ---
 
 # \<kendo:sparkline-seriesItem-highlight-border\>

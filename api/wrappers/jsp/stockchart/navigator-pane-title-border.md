@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-pane-title-border
-slug: jsp-stockChart-navigator-pane-title-border
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-pane-title-border
 ---
 
 # \<kendo:stockChart-navigator-pane-title-border\>

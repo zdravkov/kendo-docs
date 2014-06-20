@@ -1,7 +1,5 @@
 ---
-title:WindowResizingSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.windowresizingsettingsbuilder
-publish:true
+nav_title: WindowResizingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder

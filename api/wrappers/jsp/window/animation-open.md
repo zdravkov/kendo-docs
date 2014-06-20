@@ -1,8 +1,5 @@
 ---
-title: window-animation-open
-slug: jsp-window-animation-open
-tags: api, java
-publish: true
+nav_title: window-animation-open
 ---
 
 # \<kendo:window-animation-open\>

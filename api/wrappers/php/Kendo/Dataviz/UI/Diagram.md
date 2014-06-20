@@ -1,20 +1,17 @@
 ---
-title: Diagram
-slug: php-dataviz-ui-diagram
-tags: api, php
-publish: true
+nav_title: Diagram
 ---
 
 # \Kendo\Dataviz\UI\Diagram
 
-A PHP wrapper for Kendo UI [Diagram](/kendo-ui/api/dataviz/diagram).
+A PHP wrapper for Kendo UI [Diagram](/api/dataviz/diagram).
 
-Inherits from [\Kendo\UI\Widget](/kendo-ui/api/wrappers/php/Kendo/UI/Widget).
+Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
 ## Usage
 
 To use Diagram in a PHP page instantiate a new instance, configure it via the available
-configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
 ### Using Kendo Diagram
 
@@ -54,7 +51,7 @@ data source is fired. By default the widget will bind to the data source specifi
 
 ### change
 Fired when an item is added or removed to/from the diagram.
-For additional information check the [change](/kendo-ui/api/dataviz/diagram#events-change) event documentation.
+For additional information check the [change](/api/dataviz/diagram#events-change) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -81,7 +78,7 @@ For additional information check the [change](/kendo-ui/api/dataviz/diagram#even
     $diagram->change('onChange');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -90,7 +87,7 @@ For additional information check the [change](/kendo-ui/api/dataviz/diagram#even
 
 ### click
 Fired when the user clicks on a shape or a connection.
-For additional information check the [click](/kendo-ui/api/dataviz/diagram#events-click) event documentation.
+For additional information check the [click](/api/dataviz/diagram#events-click) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -117,7 +114,7 @@ For additional information check the [click](/kendo-ui/api/dataviz/diagram#event
     $diagram->click('onClick');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -136,7 +133,7 @@ Defines the connections configuration.
 ##### $value `\Kendo\Dataviz\UI\DiagramConnectionDefaults|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\DiagramConnectionDefaults](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramConnectionDefaults)
+#### Example - using [\Kendo\Dataviz\UI\DiagramConnectionDefaults](/api/wrappers/php/Kendo/Dataviz/UI/DiagramConnectionDefaults)
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $connectionDefaults = new \Kendo\Dataviz\UI\DiagramConnectionDefaults();
@@ -202,7 +199,7 @@ Sets the data source of the dataSource.
 
 ##### $value `\Kendo\Data\DataSource|array`
 
-#### Example - using [\Kendo\Data\DataSource](/kendo-ui/api/wrappers/php/kendo/data/datasource)
+#### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -276,7 +273,7 @@ Specifies the shape editable.
 
 ### itemBoundsChange
 Fired when the location or size of an item are changed.
-For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/diagram#events-itemBoundsChange) event documentation.
+For additional information check the [itemBoundsChange](/api/dataviz/diagram#events-itemBoundsChange) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -303,7 +300,7 @@ For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/di
     $diagram->itemBoundsChange('onItemBoundsChange');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -312,7 +309,7 @@ For additional information check the [itemBoundsChange](/kendo-ui/api/dataviz/di
 
 ### itemRotate
 Fired when an item is rotated.
-For additional information check the [itemRotate](/kendo-ui/api/dataviz/diagram#events-itemRotate) event documentation.
+For additional information check the [itemRotate](/api/dataviz/diagram#events-itemRotate) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -339,7 +336,7 @@ For additional information check the [itemRotate](/kendo-ui/api/dataviz/diagram#
     $diagram->itemRotate('onItemRotate');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -358,7 +355,7 @@ The layout of a diagram consists in arranging the shapes (sometimes also the con
 ##### $value `\Kendo\Dataviz\UI\DiagramLayout|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\DiagramLayout](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramLayout)
+#### Example - using [\Kendo\Dataviz\UI\DiagramLayout](/api/wrappers/php/Kendo/Dataviz/UI/DiagramLayout)
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $layout = new \Kendo\Dataviz\UI\DiagramLayout();
@@ -377,7 +374,7 @@ The layout of a diagram consists in arranging the shapes (sometimes also the con
 
 ### pan
 Fired when the user pans the diagram.
-For additional information check the [pan](/kendo-ui/api/dataviz/diagram#events-pan) event documentation.
+For additional information check the [pan](/api/dataviz/diagram#events-pan) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -404,7 +401,7 @@ For additional information check the [pan](/kendo-ui/api/dataviz/diagram#events-
     $diagram->pan('onPan');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -413,7 +410,7 @@ For additional information check the [pan](/kendo-ui/api/dataviz/diagram#events-
 
 ### select
 Fired when the user selects one or more items.
-For additional information check the [select](/kendo-ui/api/dataviz/diagram#events-select) event documentation.
+For additional information check the [select](/api/dataviz/diagram#events-select) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -440,7 +437,7 @@ For additional information check the [select](/kendo-ui/api/dataviz/diagram#even
     $diagram->select('onSelect');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -459,7 +456,7 @@ Defines the shape options.
 ##### $value `\Kendo\Dataviz\UI\DiagramShapeDefaults|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\DiagramShapeDefaults](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeDefaults)
+#### Example - using [\Kendo\Dataviz\UI\DiagramShapeDefaults](/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeDefaults)
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
@@ -558,7 +555,7 @@ The zoom level in percentages.
 
 ### zoomEnd
 Fired when the user changes the diagram zoom level.
-For additional information check the [zoomEnd](/kendo-ui/api/dataviz/diagram#events-zoomEnd) event documentation.
+For additional information check the [zoomEnd](/api/dataviz/diagram#events-zoomEnd) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -585,7 +582,7 @@ For additional information check the [zoomEnd](/kendo-ui/api/dataviz/diagram#eve
     $diagram->zoomEnd('onZoomEnd');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
@@ -648,7 +645,7 @@ The zoom step when using the mouse-wheel to zoom in or out.
 
 ### zoomStart
 Fired when the user starts changing the diagram zoom level.
-For additional information check the [zoomStart](/kendo-ui/api/dataviz/diagram#events-zoomStart) event documentation.
+For additional information check the [zoomStart](/api/dataviz/diagram#events-zoomStart) event documentation.
 
 #### Returns
 `\Kendo\Dataviz\UI\Diagram`
@@ -675,7 +672,7 @@ For additional information check the [zoomStart](/kendo-ui/api/dataviz/diagram#e
     $diagram->zoomStart('onZoomStart');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');

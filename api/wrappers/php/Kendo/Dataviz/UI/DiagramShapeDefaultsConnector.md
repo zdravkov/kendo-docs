@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeDefaultsConnector
-slug: php-dataviz-ui-diagramshapedefaultsconnector
-tags: api, php
-publish: true
+nav_title: DiagramShapeDefaultsConnector
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsConnector

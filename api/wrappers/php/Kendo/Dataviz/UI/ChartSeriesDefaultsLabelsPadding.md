@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesDefaultsLabelsPadding
-slug: php-dataviz-ui-chartseriesdefaultslabelspadding
-tags: api, php
-publish: true
+nav_title: ChartSeriesDefaultsLabelsPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsPadding

@@ -1,8 +1,5 @@
 ---
-title: stockChart-legend-border
-slug: jsp-stockChart-legend-border
-tags: api, java
-publish: true
+nav_title: stockChart-legend-border
 ---
 
 # \<kendo:stockChart-legend-border\>

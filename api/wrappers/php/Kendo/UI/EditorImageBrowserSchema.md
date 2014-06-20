@@ -1,8 +1,5 @@
 ---
-title: EditorImageBrowserSchema
-slug: php-ui-editorimagebrowserschema
-tags: api, php
-publish: true
+nav_title: EditorImageBrowserSchema
 ---
 
 # \Kendo\UI\EditorImageBrowserSchema

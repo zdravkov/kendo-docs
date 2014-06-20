@@ -1,8 +1,5 @@
 ---
-title: chart-plotArea-border
-slug: jsp-chart-plotArea-border
-tags: api, java
-publish: true
+nav_title: chart-plotArea-border
 ---
 
 # \<kendo:chart-plotArea-border\>

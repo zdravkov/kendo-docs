@@ -1,7 +1,5 @@
 ---
-title:ChartLineBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartlinebuilderbase
-publish:true
+nav_title: ChartLineBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartLineBuilderBase
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartLine.
 
 
 
+
 ## Methods
 
-### Color(`System.String`)
+
+### Color(System.String)
 Sets the line color
 
 
@@ -31,7 +31,7 @@ The line color (CSS format).
     %>
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 Sets the line width
 
 
@@ -51,13 +51,13 @@ The line width.
     %>
 
 
-### DashType(`Kendo.Mvc.UI.ChartDashType`)
+### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the line dashType.
 
 
 #### Parameters
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The line dashType.
 
 

@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-crosshair
-slug: jsp-chart-yAxisItem-crosshair
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-crosshair
 ---
 
 # \<kendo:chart-yAxisItem-crosshair\>
@@ -55,7 +52,7 @@ The width of the crosshair in pixels.
 
 The crosshar tooltip options.
 
-More documentation is available at [kendo:chart-yAxisItem-crosshair-tooltip](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-crosshair-tooltip).
+More documentation is available at [kendo:chart-yAxisItem-crosshair-tooltip](/api/wrappers/jsp/chart/yaxisitem-crosshair-tooltip).
 
 #### Example
 

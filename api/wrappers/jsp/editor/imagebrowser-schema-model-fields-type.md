@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-schema-model-fields-type
-slug: jsp-editor-imageBrowser-schema-model-fields-type
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-schema-model-fields-type
 ---
 
 # \<kendo:editor-imageBrowser-schema-model-fields-type\>

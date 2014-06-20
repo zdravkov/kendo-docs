@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-recurrenceEditor-weekdays
-slug: jsp-scheduler-messages-recurrenceEditor-weekdays
-tags: api, java
-publish: true
+nav_title: scheduler-messages-recurrenceEditor-weekdays
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-weekdays\>

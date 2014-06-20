@@ -1,8 +1,5 @@
 ---
-title: StockChartXAxisItemTitleBorder
-slug: php-dataviz-ui-stockchartxaxisitemtitleborder
-tags: api, php
-publish: true
+nav_title: StockChartXAxisItemTitleBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartXAxisItemTitleBorder

@@ -1,7 +1,5 @@
 ---
-title:ListViewEditingSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.listvieweditingsettingsbuilder
-publish:true
+nav_title: ListViewEditingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ListView editing.
 
 
 
+
 ## Methods
 
-### TemplateName(`System.String`)
+
+### TemplateName(System.String)
 Specify an editor template which to be used.
 
 

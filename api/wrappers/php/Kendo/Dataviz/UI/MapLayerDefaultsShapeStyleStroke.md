@@ -1,8 +1,5 @@
 ---
-title: MapLayerDefaultsShapeStyleStroke
-slug: php-dataviz-ui-maplayerdefaultsshapestylestroke
-tags: api, php
-publish: true
+nav_title: MapLayerDefaultsShapeStyleStroke
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleStroke

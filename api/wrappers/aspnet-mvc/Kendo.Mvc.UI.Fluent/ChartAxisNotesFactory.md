@@ -1,7 +1,5 @@
 ---
-title:ChartAxisNotesFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxisnotesfactory
-publish:true
+nav_title: ChartAxisNotesFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisNotesFactory
@@ -9,7 +7,9 @@ Creates items for the ChartAxisNotesFactory.
 
 
 
+
 ## Methods
+
 
 ### Add
 Defines a item.

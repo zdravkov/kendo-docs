@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemCrosshair
-slug: php-dataviz-ui-sparklinecategoryaxisitemcrosshair
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemCrosshair
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshair
@@ -78,7 +75,7 @@ The crosshar tooltip configuration options.
 ##### $value `\Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshairTooltip|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshairTooltip](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemCrosshairTooltip)
+#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshairTooltip](/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemCrosshairTooltip)
     <?php
     $crosshair = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshair();
     $tooltip = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshairTooltip();

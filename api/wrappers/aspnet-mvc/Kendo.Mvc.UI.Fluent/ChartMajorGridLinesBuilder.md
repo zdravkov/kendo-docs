@@ -1,7 +1,5 @@
 ---
-title:ChartMajorGridLinesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartmajorgridlinesbuilder
-publish:true
+nav_title: ChartMajorGridLinesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMajorGridLinesBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartMajorGridLinesBuilder.
 
 
 
+
 ## Methods
 
-### Skip(`System.Int32`)
+
+### Skip(System.Int32)
 Sets the line skip
 
 
@@ -31,7 +31,7 @@ The line skip.
     %>
 
 
-### Step(`System.Int32`)
+### Step(System.Int32)
 Sets the line step
 
 

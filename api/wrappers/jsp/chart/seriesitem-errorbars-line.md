@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-errorBars-line
-slug: jsp-chart-seriesItem-errorBars-line
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-errorBars-line
 ---
 
 # \<kendo:chart-seriesItem-errorBars-line\>

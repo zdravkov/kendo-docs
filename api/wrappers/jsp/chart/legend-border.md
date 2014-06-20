@@ -1,8 +1,5 @@
 ---
-title: chart-legend-border
-slug: jsp-chart-legend-border
-tags: api, java
-publish: true
+nav_title: chart-legend-border
 ---
 
 # \<kendo:chart-legend-border\>

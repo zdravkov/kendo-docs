@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemOverlay
-slug: php-dataviz-ui-sparklineseriesitemoverlay
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemOverlay
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemOverlay

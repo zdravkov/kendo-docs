@@ -1,10 +1,7 @@
 ---
-title: kendo.Color
-meta_title: API Reference for Kendo Color
-meta_description: Documentation how to get started with the kendo.Color object. Find examples and guidelines for methods, fields and events of kendo.Color.
-slug: api-framework-color
-tags: api,framework
-publish: true
+nav_title: kendo.Color
+title: API Reference for Kendo Color
+description: Documentation how to get started with the kendo.Color object. Find examples and guidelines for methods, fields and events of kendo.Color.
 ---
 
 # kendo.Color

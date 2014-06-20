@@ -1,8 +1,5 @@
 ---
-title: ComboBoxAnimationOpen
-slug: php-ui-comboboxanimationopen
-tags: api, php
-publish: true
+nav_title: ComboBoxAnimationOpen
 ---
 
 # \Kendo\UI\ComboBoxAnimationOpen

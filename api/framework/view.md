@@ -1,8 +1,5 @@
 ---
-title: kendo.View
-slug: api-framework-view
-tags: api,framework
-publish: true
+nav_title: kendo.View
 ---
 
 # kendo.View

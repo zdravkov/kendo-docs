@@ -1,8 +1,5 @@
 ---
-title: CalendarMonth
-slug: php-ui-calendarmonth
-tags: api, php
-publish: true
+nav_title: CalendarMonth
 ---
 
 # \Kendo\UI\CalendarMonth

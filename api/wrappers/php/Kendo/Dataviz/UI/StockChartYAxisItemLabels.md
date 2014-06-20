@@ -1,8 +1,5 @@
 ---
-title: StockChartYAxisItemLabels
-slug: php-dataviz-ui-stockchartyaxisitemlabels
-tags: api, php
-publish: true
+nav_title: StockChartYAxisItemLabels
 ---
 
 # \Kendo\Dataviz\UI\StockChartYAxisItemLabels
@@ -43,7 +40,7 @@ The border of the labels.
 ##### $value `\Kendo\Dataviz\UI\StockChartYAxisItemLabelsBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartYAxisItemLabelsBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartYAxisItemLabelsBorder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartYAxisItemLabelsBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartYAxisItemLabelsBorder)
     <?php
     $labels = new \Kendo\Dataviz\UI\StockChartYAxisItemLabels();
     $border = new \Kendo\Dataviz\UI\StockChartYAxisItemLabelsBorder();

@@ -1,10 +1,7 @@
 ---
-title: Universal Mobile Apps with HTML5 & Kendo UI Mobile
-meta_title: HTML5 cross-platform apps and mobile frameworks | Kendo UI Mobile documentation
-meta_description: How to build universal HTML5 and Javascript mobile apps with Kendo UI Mobile framework.
-slug: howto-universal-mobile-apps-html5-kendoui-mobile
-tags: How-To
-publish: true
+nav_title: Universal Mobile Apps with HTML5 & Kendo UI Mobile
+title: HTML5 cross-platform apps and mobile frameworks | Kendo UI Mobile documentation
+description: How to build universal HTML5 and Javascript mobile apps with Kendo UI Mobile framework.
 ---
 
 # Universal Mobile Apps with HTML5 & Kendo UI Mobile

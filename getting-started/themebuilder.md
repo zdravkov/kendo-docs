@@ -1,10 +1,7 @@
 ---
-title: ThemeBuilder
-meta_title: Modify Kendo UI themes with Kendo UI ThemeBuilder
-meta_description: Modify Kendo UI Themes to make them fit the look and feel of your application or website, using the handy ThemeBuilder tool.
-slug: gs-themebuilder
-tags: themebuilder, customization, css
-publish: true
+nav_title: ThemeBuilder
+title: Modify Kendo UI themes with Kendo UI ThemeBuilder
+description: Modify Kendo UI Themes to make them fit the look and feel of your application or website, using the handy ThemeBuilder tool.
 ---
 
 ### What is the Kendo UI ThemeBuilder?

@@ -1,22 +1,20 @@
 ---
-title: Overview
-meta_title: How to use the Kendo UI MobileActionSheet HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile ActionSheet widget
-meta_description: Learn how to initialize Kendo UI MobileActionSheet for ASP.NET MVC, handle Kendo UI MobileActionSheet Events, access an existing actionsheet with MobileActionSheet HtmlHelper extension documentation.
-slug: mvc-mobileactionsheet-overview
-publish: true
+nav_title: Overview
+title: How to use the Kendo UI MobileActionSheet HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile ActionSheet widget
+description: Learn how to initialize Kendo UI MobileActionSheet for ASP.NET MVC, handle Kendo UI MobileActionSheet Events, access an existing actionsheet with MobileActionSheet HtmlHelper extension documentation.
 ---
 
 # MobileActionSheet
 
-The MobileActionSheet HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile ActionSheet](/kendo-ui/api/mobile/actionsheet) widget. It allows you to configure the Kendo UI Mobile ActionSheet
+The MobileActionSheet HtmlHelper extension is a server-side wrapper for the [Kendo UI Mobile ActionSheet](/api/mobile/actionsheet) widget. It allows you to configure the Kendo UI Mobile ActionSheet
 from server-side code.
 
 ## Getting started
 
 The following tutorial shows how to configure Kendo UI MobileActionSheet for ASP.NET MVC.
 
-1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-If you decide not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions, follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+If you decide not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions, follow the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Open "HomeController.cs" and modify the `Index` action method:
 
@@ -104,7 +102,7 @@ to add Telerik UI for ASP.NET MVC to the application.
 ## Getting reference to the Kendo UI MobileActionSheet widget
 
 To get a reference to a actionsheet instance use the [jQuery.data()](http://api.jquery.com/jQuery.data/) method and the value specified via the `Name()` method.
-Then you can use you can use the JavaScript [API](/kendo-ui/api/mobile/actionsheet#methods) of the actionsheet.
+Then you can use you can use the JavaScript [API](/api/mobile/actionsheet#methods) of the actionsheet.
 
 ### Example - get reference to a Kendo UI MobileActionSheet instance
 
@@ -127,7 +125,7 @@ Then you can use you can use the JavaScript [API](/kendo-ui/api/mobile/actionshe
 
 ## Handling Kendo UI MobileActionSheet events
 
-You can subscribe to all [events](/kendo-ui/api/mobile/actionsheet#events) exposed by the widget:
+You can subscribe to all [events](/api/mobile/actionsheet#events) exposed by the widget:
 
 ### Example - subscribe to event by handler name (ASPX)
 

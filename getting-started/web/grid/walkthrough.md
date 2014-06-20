@@ -1,10 +1,8 @@
 ---
-title: Walkthrough
-meta_title: Detailed documentation for Kendo UI Grid Widget
-meta_description: This walkthrough section will guide you how to create a grid, add HTML table and control grid widget's features.
-slug: grid-walkthrough
-ordinal: 2
-publish: true
+nav_title: Walkthrough
+title: Detailed documentation for Kendo UI Grid Widget
+description: This walkthrough section will guide you how to create a grid, add HTML table and control grid widget's features.
+nav_position: 2
 ---
 
 The Kendo UI Grid is a powerful piece of the Kendo UI framework and an essential part of almost any user interface.  Kendo UI provides a grid component that is quick to setup and packed with features like sorting, grouping, paging and editing.
@@ -60,7 +58,7 @@ Fields and templates are defined via data attributes:
     </table>
 
 The table can now describe the entire structure of the grid. The field that the column is bound to in the data set, is specified in the `data-field` attribute of each `th` element. Using `data-field` attributes is highly
-recommended, otherwise the header cell content should meet the [requirements for data field names](/kendo-ui/api/web/grid#configuration-columns.field).
+recommended, otherwise the header cell content should meet the [requirements for data field names](/api/web/grid#configuration-columns.field).
 
 Since the layout of the grid is defined by the HTML it’s only necessary to call the kendoGrid() function to create a grid.
 
@@ -139,7 +137,7 @@ make the Grid `div` 100% high. According to web standards, elements with a perce
 until an element with a pixel height is reached, or until the `html` element is reached. 100% high elements cannot have margins, paddings, borders or sibling elements,
 so the default border of the Grid `div` should be removed as well.
 
-The second step is to subscribe to the browser window's `resize` event and execute the Grid's [`resize`](/kendo-ui/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages) method.
+The second step is to subscribe to the browser window's `resize` event and execute the Grid's [`resize`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages) method.
 If Grid virtual scrolling is used, then execute the following instead of `resize`.
 
     $("#GridID").data("kendoGrid").dataSource.fetch();
@@ -173,7 +171,7 @@ If virtual scrolling is **not used**, there are several options:
 
 * The Grid should be initialized when its element becomes visible;
 * The Grid's layout must be adjusted manually. With old Kendo UI versions, use the code from the above example (there is no need to attach a window resize handler). Since Q3 2013,
-you can use [`kendo.resize()`](/kendo-ui/api/framework/kendo/#methods-resize) or the Grid's [`resize()`](/kendo-ui/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages#individual-widget-resizing) method.
+you can use [`kendo.resize()`](/api/framework/kendo/#methods-resize) or the Grid's [`resize()`](/getting-started/using-kendo-with/using-kendo-in-responsive-web-pages#individual-widget-resizing) method.
 * Instead of setting an overall height for the Grid in its configuration, you can define height for the scrollable data area only. In this case no height calculations will be made:
 
         #GridID .k-grid-content
@@ -499,7 +497,7 @@ This is achieved by preventing event bubbling of the custom hyperlinks' **keydow
 
 In order to get a Grid table row by the data item ID can be achieved in the following way.
 
-First, the [ID field should be defined in the model configuration](/kendo-ui/api/framework/model#configuration-Example) of the Grid datasource.
+First, the [ID field should be defined in the model configuration](/api/framework/model#configuration-Example) of the Grid datasource.
 
 Then, the row model, the model UID and the Grid table row can be retrieved consecutively in the following way:
 
@@ -638,7 +636,7 @@ The code below addresses this issue by cloning the header row and prepending it 
 
 When the datasource does not return any data (e.g. as a result of filtering) a table row with some user-friendly message can be added manually:
 
-### Example - adding a table row in the Grid's [dataBound](/kendo-ui/api/web/grid/#events-dataBound) event handler
+### Example - adding a table row in the Grid's [dataBound](/api/web/grid/#events-dataBound) event handler
 
     function onGridDataBound(e) {
         if (!e.sender.dataSource.view().length) {

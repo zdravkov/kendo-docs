@@ -1,9 +1,6 @@
 ---
-title: Working with the High Contrast Theme in Kendo UI
-slug: a11y-high-contrast-theme
-tags: Tutorial, Accessibility, High-Contrast, WCAG
+nav_title: Working with the High Contrast Theme in Kendo UI
 related: a11y-accessibility-overview
-publish: true
 ---
 
 # Working with the High-Contrast Theme in Kendo UI

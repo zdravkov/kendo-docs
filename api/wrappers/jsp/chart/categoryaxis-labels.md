@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxis-labels
-slug: jsp-chart-categoryAxis-labels
-tags: api, java
-publish: true
+nav_title: chart-categoryAxis-labels
 ---
 
 # \<kendo:chart-categoryAxis-labels\>
@@ -168,7 +165,7 @@ Date format strings
 
 The border of the labels.
 
-More documentation is available at [kendo:chart-categoryAxis-labels-border](/kendo-ui/api/wrappers/jsp/chart/categoryaxis-labels-border).
+More documentation is available at [kendo:chart-categoryAxis-labels-border](/api/wrappers/jsp/chart/categoryaxis-labels-border).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: GridColumnFilterable
-slug: php-ui-gridcolumnfilterable
-tags: api, php
-publish: true
+nav_title: GridColumnFilterable
 ---
 
 # \Kendo\UI\GridColumnFilterable

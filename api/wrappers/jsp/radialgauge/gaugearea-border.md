@@ -1,8 +1,5 @@
 ---
-title: radialGauge-gaugeArea-border
-slug: jsp-radialGauge-gaugeArea-border
-tags: api, java
-publish: true
+nav_title: radialGauge-gaugeArea-border
 ---
 
 # \<kendo:radialGauge-gaugeArea-border\>

@@ -1,8 +1,5 @@
 ---
-title: JavaScriptFunction
-slug: php-javascriptfunction
-tags: api, php
-publish: true
+nav_title: JavaScriptFunction
 ---
 
 # \Kendo\JavaScriptFunction

@@ -1,7 +1,5 @@
 ---
-title:IFilterDescriptor
-slug:aspnetmvc-kendo.mvc.ifilterdescriptor
-publish:true
+nav_title: IFilterDescriptor
 ---
 
 # Kendo.Mvc.IFilterDescriptor
@@ -9,9 +7,11 @@ Represents a filtering abstraction that knows how to create predicate filtering 
 
 
 
+
 ## Methods
 
-### CreateFilterExpression(`System.Linq.Expressions.Expression`)
+
+### CreateFilterExpression(System.Linq.Expressions.Expression)
 Creates a predicate filter expression used for collection filtering.
 
 

@@ -1,8 +1,5 @@
 ---
-title: map-layerDefaults-tile
-slug: jsp-map-layerDefaults-tile
-tags: api, java
-publish: true
+nav_title: map-layerDefaults-tile
 ---
 
 # \<kendo:map-layerDefaults-tile\>

@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeDefaultsHover
-slug: php-dataviz-ui-diagramshapedefaultshover
-tags: api, php
-publish: true
+nav_title: DiagramShapeDefaultsHover
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsHover

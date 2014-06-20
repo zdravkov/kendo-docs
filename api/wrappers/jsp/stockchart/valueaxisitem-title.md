@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-title
-slug: jsp-stockChart-valueAxisItem-title
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-title
 ---
 
 # \<kendo:stockChart-valueAxisItem-title\>
@@ -96,7 +93,7 @@ The visibility of the title.
 
 The border of the title.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-title-border](/kendo-ui/api/wrappers/jsp/stockchart/valueaxisitem-title-border).
+More documentation is available at [kendo:stockChart-valueAxisItem-title-border](/api/wrappers/jsp/stockchart/valueaxisitem-title-border).
 
 #### Example
 

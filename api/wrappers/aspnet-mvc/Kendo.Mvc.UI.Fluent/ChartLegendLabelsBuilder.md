@@ -1,7 +1,5 @@
 ---
-title:ChartLegendLabelsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartlegendlabelsbuilder
-publish:true
+nav_title: ChartLegendLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartLegendLabelsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the chart labels.
 
 
 
+
 ## Methods
 
-### Font(`System.String`)
+
+### Font(System.String)
 Sets the labels font
 
 
@@ -35,7 +35,7 @@ The labels font (CSS format).
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the labels text color
 
 
@@ -59,7 +59,7 @@ The labels text color.
     %>
 
 
-### Template(`System.String`)
+### Template(System.String)
 Sets the labels template.
 
 

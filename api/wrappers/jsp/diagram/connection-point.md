@@ -1,8 +1,5 @@
 ---
-title: diagram-connection-point
-slug: jsp-diagram-connection-point
-tags: api, java
-publish: true
+nav_title: diagram-connection-point
 ---
 
 # \<kendo:diagram-connection-point\>

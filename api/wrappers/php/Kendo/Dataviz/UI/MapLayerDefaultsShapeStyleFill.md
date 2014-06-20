@@ -1,8 +1,5 @@
 ---
-title: MapLayerDefaultsShapeStyleFill
-slug: php-dataviz-ui-maplayerdefaultsshapestylefill
-tags: api, php
-publish: true
+nav_title: MapLayerDefaultsShapeStyleFill
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleFill

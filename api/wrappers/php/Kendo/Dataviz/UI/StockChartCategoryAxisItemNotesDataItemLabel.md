@@ -1,8 +1,5 @@
 ---
-title: StockChartCategoryAxisItemNotesDataItemLabel
-slug: php-dataviz-ui-stockchartcategoryaxisitemnotesdataitemlabel
-tags: api, php
-publish: true
+nav_title: StockChartCategoryAxisItemNotesDataItemLabel
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemLabel
@@ -42,7 +39,7 @@ The border of the label.
 ##### $value `\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemLabelBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemLabelBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemNotesDataItemLabelBorder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemLabelBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartCategoryAxisItemNotesDataItemLabelBorder)
     <?php
     $label = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemLabel();
     $border = new \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemLabelBorder();

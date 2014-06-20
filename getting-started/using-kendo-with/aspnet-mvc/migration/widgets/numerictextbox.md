@@ -1,9 +1,7 @@
 ---
-title: NumericTextBox
-meta_title: API documentation for Kendo UI jQuery NumericTextBox control with ASP.NET MVC
-meta_description: Documentation and code examples about server-side and client-side API for Kendo UI NumericTextBox component.
-slug: numerictextbox
-publish: true
+nav_title: NumericTextBox
+title: API documentation for Kendo UI jQuery NumericTextBox control with ASP.NET MVC
+description: Documentation and code examples about server-side and client-side API for Kendo UI NumericTextBox component.
 ---
 
 # Server-Side API

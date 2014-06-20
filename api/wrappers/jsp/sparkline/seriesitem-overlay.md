@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-overlay
-slug: jsp-sparkline-seriesItem-overlay
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-overlay
 ---
 
 # \<kendo:sparkline-seriesItem-overlay\>

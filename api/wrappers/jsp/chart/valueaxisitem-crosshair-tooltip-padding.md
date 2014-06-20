@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-crosshair-tooltip-padding
-slug: jsp-chart-valueAxisItem-crosshair-tooltip-padding
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-crosshair-tooltip-padding
 ---
 
 # \<kendo:chart-valueAxisItem-crosshair-tooltip-padding\>

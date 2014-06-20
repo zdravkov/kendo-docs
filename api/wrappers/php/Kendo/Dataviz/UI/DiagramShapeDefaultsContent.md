@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeDefaultsContent
-slug: php-dataviz-ui-diagramshapedefaultscontent
-tags: api, php
-publish: true
+nav_title: DiagramShapeDefaultsContent
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsContent

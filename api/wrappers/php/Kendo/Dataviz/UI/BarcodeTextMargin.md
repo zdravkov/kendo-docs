@@ -1,8 +1,5 @@
 ---
-title: BarcodeTextMargin
-slug: php-dataviz-ui-barcodetextmargin
-tags: api, php
-publish: true
+nav_title: BarcodeTextMargin
 ---
 
 # \Kendo\Dataviz\UI\BarcodeTextMargin

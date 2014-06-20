@@ -1,7 +1,5 @@
 ---
-title:DropDownListBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.dropdownlistbuilder
-publish:true
+nav_title: DropDownListBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DropDownListBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the DropDownList component.
 
 
 
+
 ## Methods
 
-### DataValueField(`System.String`)
+
+### DataValueField(System.String)
 Sets the field of the data item that provides the value content of the list items.
 
 
@@ -25,13 +25,13 @@ Sets the field of the data item that provides the value content of the list item
     %>
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.DropDownListEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.DropDownListEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListEventBuilder)>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.DropDownListEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListEventBuilder)>
 The client events action.
 
 
@@ -46,13 +46,13 @@ The client events action.
     %>
 
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>`)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListItemFactory\>)
 Defines the items in the DropDownList
 
 
 #### Parameters
 
-##### addAction System.Action<[Kendo.Mvc.UI.Fluent.DropDownListItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListItemFactory)>
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.DropDownListItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListItemFactory)>
 The add action.
 
 
@@ -69,7 +69,7 @@ The add action.
     %>
 
 
-### OptionLabel(`System.String`)
+### OptionLabel(System.String)
 Define the text of the default empty item.
 
 
@@ -82,7 +82,7 @@ Define the text of the default empty item.
     %>
 
 
-### OptionLabel(`System.Object`)
+### OptionLabel(System.Object)
 Define the object of the default empty item.
 
 
@@ -97,7 +97,7 @@ Define the object of the default empty item.
     %>
 
 
-### SelectedIndex(`System.Int32`)
+### SelectedIndex(System.Int32)
 Use it to set selected item index
 
 
@@ -116,7 +116,7 @@ Item index.
     %>
 
 
-### CascadeFrom(`System.String`)
+### CascadeFrom(System.String)
 Use it to set the Id of the parent DropDownList.
 
 
@@ -129,7 +129,7 @@ Use it to set the Id of the parent DropDownList.
     %>
 
 
-### CascadeFromField(`System.String`)
+### CascadeFromField(System.String)
 Use it to set the field used to filter the data source.
 
 
@@ -143,7 +143,7 @@ Use it to set the field used to filter the data source.
     %>
 
 
-### Text(`System.String`)
+### Text(System.String)
 Define the text of the widget, when the autoBind is set to false.
 
 
@@ -157,7 +157,7 @@ Define the text of the widget, when the autoBind is set to false.
     %>
 
 
-### ValueTemplate(`System.String`)
+### ValueTemplate(System.String)
 ValueTemplate to be used to render the selected value.
 
 
@@ -170,7 +170,7 @@ ValueTemplate to be used to render the selected value.
     %>
 
 
-### ValueTemplateId(`System.String`)
+### ValueTemplateId(System.String)
 ValueTemplateId to be used to render the selected value.
 
 

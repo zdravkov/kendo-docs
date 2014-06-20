@@ -1,8 +1,5 @@
 ---
-title: StockChartValueAxisItemMinorTicks
-slug: php-dataviz-ui-stockchartvalueaxisitemminorticks
-tags: api, php
-publish: true
+nav_title: StockChartValueAxisItemMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\StockChartValueAxisItemMinorTicks

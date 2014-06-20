@@ -1,8 +1,5 @@
 ---
-title: StockChartCategoryAxisItemSelectMousewheel
-slug: php-dataviz-ui-stockchartcategoryaxisitemselectmousewheel
-tags: api, php
-publish: true
+nav_title: StockChartCategoryAxisItemSelectMousewheel
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemSelectMousewheel

@@ -1,7 +1,5 @@
 ---
-title:MobileNavigatableSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilenavigatablesettingsbuilder
-publish:true
+nav_title: MobileNavigatableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the MobileNavigatableSettings optio
 
 
 
+
 ## Methods
 
-### Route(`System.Web.Routing.RouteValueDictionary`)
+
+### Route(System.Web.Routing.RouteValueDictionary)
 Sets the route values for the settings.
 
 
@@ -24,7 +24,7 @@ Route values
 
 
 
-### Action(`System.String,System.String,System.Object`)
+### Action(System.String,System.String,System.Object)
 Sets the action, contoller and route values for the settings.
 
 
@@ -43,7 +43,7 @@ Route values
 
 
 
-### Action(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
+### Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action, contoller and route values for the settings.
 
 
@@ -62,7 +62,7 @@ Route values
 
 
 
-### Action(`System.String,System.String`)
+### Action(System.String,System.String)
 Sets the action and contoller values for the settings.
 
 
@@ -78,7 +78,7 @@ Controller name
 
 
 
-### Route(`System.String,System.Web.Routing.RouteValueDictionary`)
+### Route(System.String,System.Web.Routing.RouteValueDictionary)
 Sets the route name and values for the settings.
 
 
@@ -94,7 +94,7 @@ Route values
 
 
 
-### Route(`System.String,System.Object`)
+### Route(System.String,System.Object)
 Sets the route name and values for the settings.
 
 
@@ -110,7 +110,7 @@ Route values
 
 
 
-### Route(`System.String`)
+### Route(System.String)
 Sets the route name for the settings.
 
 
@@ -123,7 +123,7 @@ Sets the route name for the settings.
 
 
 
-### Url(`System.String`)
+### Url(System.String)
 Specifies an absolute or relative URL for the settings.
 
 

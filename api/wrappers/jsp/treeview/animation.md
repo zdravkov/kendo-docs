@@ -1,8 +1,5 @@
 ---
-title: treeView-animation
-slug: jsp-treeView-animation
-tags: api, java
-publish: true
+nav_title: treeView-animation
 ---
 
 # \<kendo:treeView-animation\>
@@ -40,7 +37,7 @@ The animation that will be used when expanding items. Further configuration is a
 
 The animation that will be used when collapsing items.
 
-More documentation is available at [kendo:treeView-animation-collapse](/kendo-ui/api/wrappers/jsp/treeview/animation-collapse).
+More documentation is available at [kendo:treeView-animation-collapse](/api/wrappers/jsp/treeview/animation-collapse).
 
 #### Example
 
@@ -52,7 +49,7 @@ More documentation is available at [kendo:treeView-animation-collapse](/kendo-ui
 
 The animation that will be used when expanding items.
 
-More documentation is available at [kendo:treeView-animation-expand](/kendo-ui/api/wrappers/jsp/treeview/animation-expand).
+More documentation is available at [kendo:treeView-animation-expand](/api/wrappers/jsp/treeview/animation-expand).
 
 #### Example
 

@@ -1,7 +1,5 @@
 ---
-title:TreeViewBindingSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.treeviewbindingsettingsbuilder
-publish:true
+nav_title: TreeViewBindingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewBindingSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for building TreeViewBindingSettingsBuilder
 
 
 
+
 ## Methods
 
-### Enabled(`System.Boolean`)
+
+### Enabled(System.Boolean)
 Enables or disables binding.
 
 
@@ -27,7 +27,7 @@ Enables or disables binding.
     %>
 
 
-### Select(`System.Web.Routing.RouteValueDictionary`)
+### Select(System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values
 
 
@@ -49,7 +49,7 @@ The route values of the Action method.
     %>
 
 
-### Select(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
+### Select(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action, controller and route values for the select operation
 
 
@@ -77,7 +77,7 @@ The route values.
     %>
 
 
-### Select(`System.String,System.String,System.Object`)
+### Select(System.String,System.String,System.Object)
 Sets the action, controller and route values for the select operation
 
 
@@ -105,7 +105,7 @@ The route values.
     %>
 
 
-### Select(`System.String,System.String`)
+### Select(System.String,System.String)
 Sets the action, controller and route values for the select operation
 
 
@@ -130,7 +130,7 @@ Name of the controller.
     %>
 
 
-### Select(`System.String,System.Web.Routing.RouteValueDictionary`)
+### Select(System.String,System.Web.Routing.RouteValueDictionary)
 Sets the route and values for the select operation
 
 
@@ -155,7 +155,7 @@ The route values.
     %>
 
 
-### Select(`System.String,System.Object`)
+### Select(System.String,System.Object)
 Sets the route and values for the select operation
 
 
@@ -180,7 +180,7 @@ The route values.
     %>
 
 
-### Select(`System.String`)
+### Select(System.String)
 Sets the route name for the select operation
 
 

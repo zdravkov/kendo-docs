@@ -1,11 +1,7 @@
 ---
-title: kendo.dataviz.ui.Chart
-meta_title: Configuration, methods and events of Kendo UI DataViz Chart
-meta_description: Learn how to configure Kendo UI Javascript chart widget in a few easy steps, use and change methods and events.
-slug: api-dataviz-chart
-relatedDocs: gs-dataviz-chart-overview
-tags: api,dataviz
-publish: true
+nav_title: kendo.dataviz.ui.Chart
+title: Configuration, methods and events of Kendo UI DataViz Chart
+description: Learn how to configure Kendo UI Javascript chart widget in a few easy steps, use and change methods and events.
 ---
 
 # kendo.dataviz.ui.Chart
@@ -14,7 +10,7 @@ publish: true
 
 ### autoBind `Boolean` *(default: true)*
 
-If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/kendo-ui/api/framework/datasource#events-change) event of the
+If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 > Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
@@ -650,7 +646,7 @@ The tooltip font.
 
 ### categoryAxis.crosshair.tooltip.format `String` *(default: "{0}")*
 
-The format used to display the tooltip. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the tooltip. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the category axis crosshair tooltip format
 
@@ -808,7 +804,7 @@ The top padding of the crosshair tooltip.
 
 ### categoryAxis.crosshair.tooltip.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
 
 The fields which can be used in the template are:
 
@@ -1206,11 +1202,11 @@ The text color of the labels. Accepts a valid CSS color string, including hex an
 
 ### categoryAxis.labels.culture `String`
 
-The culture to use when formatting date values. See the [globalization overview](/kendo-ui/getting-started/framework/globalization/overview) for more information.
+The culture to use when formatting date values. See the [globalization overview](/getting-started/framework/globalization/overview) for more information.
 
 ### categoryAxis.labels.dateFormats `Object`
 
-The format used to display the labels when the categories are dates. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the labels when the categories are dates. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 > The chart will choose the appropriate format for the current [categoryAxis.baseUnit](#configuration-categoryAxis.baseUnit). Setting the [categoryAxis.labels.format](#configuration-categoryAxis.labels.format) option will override the date formats.
 
@@ -1399,7 +1395,7 @@ The font style of the labels.
 
 ### categoryAxis.labels.format `String` *(default: "{0}")*
 
-The format used to display the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the labels. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the category axis label format
 
@@ -1729,7 +1725,7 @@ The label rendering step - render every n-th label. By default every label is re
 
 ### categoryAxis.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -4124,7 +4120,7 @@ The font style of the label.
 
 ### categoryAxis.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -4197,7 +4193,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### categoryAxis.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the category axis notes label format
 
@@ -4711,7 +4707,7 @@ The font style of the note label.
 
 ### categoryAxis.notes.data.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -4790,7 +4786,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### categoryAxis.notes.data.label.format `String` *(default: "{0}")*
 
-The format used to display the note label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the category axis note label format
 
@@ -5218,12 +5214,12 @@ The width of the chart area.
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
-The data source of the chart which is used to display the series. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/kendo-ui/api/framework/datasource)
+The data source of the chart which is used to display the series. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
 
-If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/kendo-ui/api/framework/datasource) instance using that value as data source configuration.
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/api/framework/datasource) instance using that value as data source configuration.
 
-If the `dataSource` option is an existing [kendo.data.DataSource](/kendo-ui/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
 
 #### Example - set dataSource as a JavaScript object
     <div id="chart"></div>
@@ -5595,7 +5591,7 @@ The font style of the labels.
 
 ### legend.inactiveItems.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -5963,7 +5959,7 @@ The top padding of the labels.
 
 ### legend.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -10014,7 +10010,7 @@ The font style of the labels.
 
 ### series.labels.format `String|Function` *(default: "{0}")*
 
-The format of the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format).
+The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-format).
 
 #### Example - set the chart series label format
 
@@ -10260,7 +10256,7 @@ The position of the labels.
 
 ### series.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the chart series label.
+The [template](/api/framework/kendo#methods-template) which renders the chart series label.
 
 The fields which can be used in the template are:
 
@@ -11281,7 +11277,7 @@ The name of the chart series which is visible in the legend.
     });
     </script>
 
-The name can also be a [template](/kendo-ui/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
+The name can also be a [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
 
 The fields which can be used in the template are:
 
@@ -12016,7 +12012,7 @@ The tooltip font.
 
 ### series.tooltip.format `String`
 
-The format of the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format).
+The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-format).
 
 Format placeholders:
 
@@ -12173,7 +12169,7 @@ The top padding of the tooltip.
 
 ### series.tooltip.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
 
 The fields which can be used in the template are:
 
@@ -12823,7 +12819,7 @@ The font style of the label.
 
 ### series.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -12908,7 +12904,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### series.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the series notes label format
 
@@ -13506,7 +13502,7 @@ The font style of the labels.
 
 ### seriesDefaults.labels.format `String` *(default: "{0}")*
 
-The format of the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format).
+The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-format).
 
 #### Example - set the chart series label format
 
@@ -13743,7 +13739,7 @@ The top padding of the labels.
 
 ### seriesDefaults.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the chart series label.
+The [template](/api/framework/kendo#methods-template) which renders the chart series label.
 
 The fields which can be used in the template are:
 
@@ -14194,7 +14190,7 @@ The tooltip font.
 
 ### seriesDefaults.tooltip.format `String`
 
-The format of the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format).
+The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-format).
 
 Format placeholders:
 
@@ -14350,7 +14346,7 @@ The top padding of the tooltip.
 
 ### seriesDefaults.tooltip.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
 
 The fields which can be used in the template are:
 
@@ -14899,7 +14895,7 @@ The font style of the label.
 
 ### seriesDefaults.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -14990,7 +14986,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### seriesDefaults.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the seriesDefaults notes label format
 
@@ -15725,7 +15721,7 @@ The tooltip font.
 
 ### tooltip.format `String`
 
-The format of the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format).
+The format of the labels. Uses [kendo.format](/api/framework/kendo#methods-format).
 
 Format placeholders:
 
@@ -15891,7 +15887,7 @@ If set to `true` the chart will display a single tooltip for every category.
 
 ### tooltip.sharedTemplate `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the shared tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the shared tooltip.
 
 The fields which can be used in the template are:
 
@@ -15926,7 +15922,7 @@ The fields which can be used in the template are:
 
 ### tooltip.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
 
 The fields which can be used in the template are:
 
@@ -16435,7 +16431,7 @@ The tooltip font.
 
 ### valueAxis.crosshair.tooltip.format `String` *(default: "{0}")*
 
-The format used to display the tooltip. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the value value.
+The format used to display the tooltip. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the value value.
 
 #### Example - set the value axis crosshair tooltip format
 
@@ -16587,7 +16583,7 @@ The top padding of the crosshair tooltip.
 
 ### valueAxis.crosshair.tooltip.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
 
 The fields which can be used in the template are:
 
@@ -16944,7 +16940,7 @@ The font style of the labels.
 
 ### valueAxis.labels.format `String` *(default: "{0}")*
 
-The format used to display the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the labels. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the value axis label format
 
@@ -17264,7 +17260,7 @@ Every n-th label is rendered where n is the step
 
 ### valueAxis.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -19482,7 +19478,7 @@ The font style of the label.
 
 ### valueAxis.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -19555,7 +19551,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### valueAxis.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the value axis notes label format
 
@@ -20069,7 +20065,7 @@ The font style of the note label.
 
 ### valueAxis.notes.data.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -20148,7 +20144,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### valueAxis.notes.data.label.format `String` *(default: "{0}")*
 
-The format used to display the note label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the value axis note label format
 
@@ -20754,7 +20750,7 @@ The tooltip font.
 
 ### xAxis.crosshair.tooltip.format `String` *(default: "{0}")*
 
-The format used to display the tooltip. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the value value.
+The format used to display the tooltip. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the value value.
 
 #### Example - set the scatter chart x axis crosshair tooltip format
 
@@ -20906,7 +20902,7 @@ The top padding of the crosshair tooltip.
 
 ### xAxis.crosshair.tooltip.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
 
 The fields which can be used in the template are:
 
@@ -21245,11 +21241,11 @@ The text color of the labels. Accepts a valid CSS color string, including hex an
 
 ### xAxis.labels.culture `String`
 
-The culture to use when formatting date values. See the [globalization overview](/kendo-ui/getting-started/framework/globalization/overview) for more information.
+The culture to use when formatting date values. See the [globalization overview](/getting-started/framework/globalization/overview) for more information.
 
 ### xAxis.labels.dateFormats `Object`
 
-The format used to display the labels when the x values are dates. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the labels when the x values are dates. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 > The chart will choose the appropriate format for the current [xAxis.baseUnit](#configuration-xAxis.baseUnit). Setting the [categoryAxis.labels.format](#configuration-categoryAxis.labels.format) option will override the date formats.
 
@@ -21454,7 +21450,7 @@ The font style of the labels.
 
 ### xAxis.labels.format `String`
 
-The format used to display the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the labels. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the scatter chart x axis label format
 
@@ -21767,7 +21763,7 @@ The label rendering step - render every n-th label. By default every label is re
 
 ### xAxis.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -24025,7 +24021,7 @@ The font style of the label.
 
 ### xAxis.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -24098,7 +24094,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### xAxis.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the x axis notes label format
 
@@ -24612,7 +24608,7 @@ The font style of the note label.
 
 ### xAxis.notes.data.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -24691,7 +24687,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### xAxis.notes.data.label.format `String` *(default: "{0}")*
 
-The format used to display the note label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the x axis note label format
 
@@ -25297,7 +25293,7 @@ The tooltip font.
 
 ### yAxis.crosshair.tooltip.format `String` *(default: "{0}")*
 
-The format used to display the tooltip. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the value value.
+The format used to display the tooltip. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the value value.
 
 #### Example - set the scatter chart y axis crosshair tooltip format
 
@@ -25449,7 +25445,7 @@ The top padding of the crosshair tooltip.
 
 ### yAxis.crosshair.tooltip.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the tooltip.
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
 
 The fields which can be used in the template are:
 
@@ -25788,11 +25784,11 @@ The text color of the labels. Accepts a valid CSS color string, including hex an
 
 ### yAxis.labels.culture `String`
 
-The culture to use when formatting date values. See the [globalization overview](/kendo-ui/getting-started/framework/globalization/overview) for more information.
+The culture to use when formatting date values. See the [globalization overview](/getting-started/framework/globalization/overview) for more information.
 
 ### yAxis.labels.dateFormats `Object`
 
-The format used to display the labels when the x values are dates. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the labels when the x values are dates. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 > The chart will choose the appropriate format for the current [yAxis.baseUnit](#configuration-yAxis.baseUnit). Setting the [categoryAxis.labels.format](#configuration-categoryAxis.labels.format) option will override the date formats.
 
@@ -25997,7 +25993,7 @@ The font style of the labels.
 
 ### yAxis.labels.format `String`
 
-The format used to display the labels. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the labels. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the scatter chart y axis label format
 
@@ -26310,7 +26306,7 @@ The label rendering step - render every n-th label. By default every label is re
 
 ### yAxis.labels.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -28562,7 +28558,7 @@ The font style of the label.
 
 ### yAxis.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -28635,7 +28631,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### yAxis.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the y axis notes label format
 
@@ -29149,7 +29145,7 @@ The font style of the note label.
 
 ### yAxis.notes.data.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -29228,7 +29224,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### yAxis.notes.data.label.format `String` *(default: "{0}")*
 
-The format used to display the note label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the y axis note label format
 
@@ -29366,7 +29362,7 @@ The length of the connecting lines in pixels.
 
 ### dataSource `kendo.data.DataSource`
 
-The [data source](/kendo-ui/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
+The [data source](/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
 
 > Changes of the data source will be reflected in the widget.
 

@@ -1,7 +1,5 @@
 ---
-title:ChartNumericAxisBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartnumericaxisbuilder
-publish:true
+nav_title: ChartNumericAxisBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNumericAxisBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring numeric axis.
 
 
 
+
 ## Methods
 
-### Min(`System.Double`)
+
+### Min(System.Double)
 Sets the axis minimum value.
 
 
@@ -30,7 +30,7 @@ The axis minimum value.
     %>
 
 
-### Max(`System.Double`)
+### Max(System.Double)
 Sets the axis maximum value.
 
 
@@ -49,7 +49,7 @@ The axis maximum value.
     %>
 
 
-### MajorUnit(`System.Double`)
+### MajorUnit(System.Double)
 Sets the interval between major divisions.
 
 
@@ -68,7 +68,7 @@ The interval between major divisions.
     %>
 
 
-### MinorUnit(`System.Double`)
+### MinorUnit(System.Double)
 Sets the interval between minor divisions.
             It defaults to MajorUnit / 5.
 
@@ -92,7 +92,7 @@ The interval between minor divisions.
     %>
 
 
-### AxisCrossingValue(`System.Double`)
+### AxisCrossingValue(System.Double)
 Sets value at which the first perpendicular axis crosses this axis.
 
 
@@ -111,7 +111,7 @@ The value at which the first perpendicular axis crosses this axis.
     %>
 
 
-### AxisCrossingValue(`System.Double[]`)
+### AxisCrossingValue(System.Double[])
 Sets value at which perpendicular axes cross this axis.
 
 
@@ -132,7 +132,7 @@ The values at which perpendicular axes cross this axis.
     %>
 
 
-### AxisCrossingValue(`System.Collections.Generic.IEnumerable<System.Double>`)
+### AxisCrossingValue(System.Collections.Generic.IEnumerable\<System.Double\>)
 Sets value at which perpendicular axes cross this axis.
 
 

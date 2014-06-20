@@ -1,7 +1,5 @@
 ---
-title:MobileListViewBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilelistviewbuilder
-publish:true
+nav_title: MobileListViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileListViewBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileListView for ASP.NET MVC.
 
 
 
+
 ## Methods
 
-### BindTo(`System.Collections.Generic.IEnumerable<T>`)
+
+### BindTo(System.Collections.Generic.IEnumerable\<T\>)
 Binds the MobileListView to a list of objects
 
 
@@ -30,7 +30,7 @@ The data source.
     %>
 
 
-### BindTo(`System.Collections.IEnumerable`)
+### BindTo(System.Collections.IEnumerable)
 Binds the MobileListView to a list of objects
 
 
@@ -49,7 +49,7 @@ The data source.
     %>
 
 
-### AppendOnRefresh(`System.Boolean`)
+### AppendOnRefresh(System.Boolean)
 Used in combination with pullToRefresh. If set to true, newly loaded data will be appended on top when refershing.
 
 
@@ -62,7 +62,7 @@ The value that configures the appendonrefresh.
 
 
 
-### AutoBind(`System.Boolean`)
+### AutoBind(System.Boolean)
 Indicates whether the listview will call read on the DataSource initially.
 
 
@@ -75,20 +75,20 @@ The value that configures the autobind.
 
 
 
-### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilder<T>>`)
+### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilder\<T\>\>)
 Instance of DataSource or the data that the mobile ListView will be bound to.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/AjaxDataSourceBuilder)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/AjaxDataSourceBuilder)<T>>
 The value that configures the datasource.
 
 
 
 
 
-### EndlessScroll(`System.Boolean`)
+### EndlessScroll(System.Boolean)
 If set to true, the listview gets the next page of data when the user scrolls near the bottom of the view.
 
 
@@ -101,7 +101,7 @@ The value that configures the endlessscroll.
 
 
 
-### FixedHeaders(`System.Boolean`)
+### FixedHeaders(System.Boolean)
 If set to true, the group headers will persist their position when the user scrolls through the listview. Applicable only when the type is set to group, or when binding to grouped datasource.
 
 
@@ -114,7 +114,7 @@ The value that configures the fixedheaders.
 
 
 
-### HeaderTemplateId(`System.String`)
+### HeaderTemplateId(System.String)
 The header item template (applicable when the type is set to group).
 
 
@@ -127,7 +127,7 @@ The value that configures the headertemplate.
 
 
 
-### LoadMore(`System.Boolean`)
+### LoadMore(System.Boolean)
 If set to true, a button is rendered at the bottom of the listview, which fetch the next page of data when tapped.
 
 
@@ -140,7 +140,7 @@ The value that configures the loadmore.
 
 
 
-### LoadMoreText(`System.String`)
+### LoadMoreText(System.String)
 The text of the rendered load-more button (applies only if loadMore is set to true).
 
 
@@ -153,7 +153,7 @@ The value that configures the loadmoretext.
 
 
 
-### PullTemplateId(`System.String`)
+### PullTemplateId(System.String)
 The message template displayed when the user pulls the listView. Applicable only when pullToRefresh is set to true.
 
 
@@ -166,7 +166,7 @@ The value that configures the pulltemplate.
 
 
 
-### PullToRefresh(`System.Boolean`)
+### PullToRefresh(System.Boolean)
 If set to true, the listview will reload its data when the user pulls the view over the top limit.
 
 
@@ -179,7 +179,7 @@ The value that configures the pulltorefresh.
 
 
 
-### RefreshTemplateId(`System.String`)
+### RefreshTemplateId(System.String)
 The message template displayed during the refresh. Applicable only when pullToRefresh is set to true.
 
 
@@ -192,7 +192,7 @@ The value that configures the refreshtemplate.
 
 
 
-### ReleaseTemplateId(`System.String`)
+### ReleaseTemplateId(System.String)
 The message template indicating that pullToRefresh will occur. Applicable only when pullToRefresh is set to true.
 
 
@@ -205,7 +205,7 @@ The value that configures the releasetemplate.
 
 
 
-### ScrollTreshold(`System.String`)
+### ScrollTreshold(System.String)
 The distance to the bottom in pixels, after which the listview will start fetching the next page. Applicable only when endlessScroll is set to true.
 
 
@@ -218,7 +218,7 @@ The value that configures the scrolltreshold.
 
 
 
-### ScrollTreshold(`System.Int32`)
+### ScrollTreshold(System.Int32)
 The distance to the bottom in pixels, after which the listview will start fetching the next page. Applicable only when endlessScroll is set to true.
 
 
@@ -231,7 +231,7 @@ The value that configures the scrolltreshold.
 
 
 
-### Style(`System.String`)
+### Style(System.String)
 The style of the control. Can be either empty string(""), or inset.
 
 
@@ -244,7 +244,7 @@ The value that configures the style.
 
 
 
-### TemplateId(`System.String`)
+### TemplateId(System.String)
 The item template.
 
 
@@ -257,7 +257,7 @@ The value that configures the template.
 
 
 
-### Type(`System.String`)
+### Type(System.String)
 The type of the control. Can be either flat (default) or group. Determined automatically in databound mode.
 
 
@@ -270,26 +270,26 @@ The value that configures the type.
 
 
 
-### Filterable(`System.Action<Kendo.Mvc.UI.Fluent.MobileListViewFilterableSettingsBuilder>`)
+### Filterable(System.Action\<Kendo.Mvc.UI.Fluent.MobileListViewFilterableSettingsBuilder\>)
 Indicates whether the filter input must be visible or not.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileListViewFilterableSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileListViewFilterableSettingsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileListViewFilterableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileListViewFilterableSettingsBuilder)>
 The action that configures the filterable.
 
 
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileListViewEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileListViewEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileListViewEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileListViewEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileListViewEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileListViewEventBuilder)>
 The client events action.
 
 
@@ -304,13 +304,13 @@ The client events action.
     %>
 
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.MobileListViewItemFactory>`)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.MobileListViewItemFactory\>)
 Builds MobileListView items.
 
 
 #### Parameters
 
-##### action System.Action<[Kendo.Mvc.UI.Fluent.MobileListViewItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileListViewItemFactory)>
+##### action System.Action<[Kendo.Mvc.UI.Fluent.MobileListViewItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileListViewItemFactory)>
 Action for declaratively building MobileListView items.
 
 

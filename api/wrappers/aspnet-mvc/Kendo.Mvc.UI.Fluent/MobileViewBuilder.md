@@ -1,7 +1,5 @@
 ---
-title:MobileViewBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobileviewbuilder
-publish:true
+nav_title: MobileViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileViewBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileView for ASP.NET MVC.
 
 
 
+
 ## Methods
 
-### Reload(`System.Boolean`)
+
+### Reload(System.Boolean)
 Applicable to remote views only. If set to true, the remote view contents will be reloaded from the server (using Ajax) each time the view is navigated to.
 
 
@@ -24,7 +24,7 @@ The value that configures the reload.
 
 
 
-### Stretch(`System.Boolean`)
+### Stretch(System.Boolean)
 If set to true, the view will stretch its child contents to occupy the entire view, while disabling kinetic scrolling.
             Useful if the view contains an image or a map.
 
@@ -38,7 +38,7 @@ The value that configures the stretch.
 
 
 
-### Title(`System.String`)
+### Title(System.String)
 The text to display in the NavBar title (if present) and the browser title.
 
 
@@ -51,7 +51,7 @@ The value that configures the title.
 
 
 
-### UseNativeScrolling(`System.Boolean`)
+### UseNativeScrolling(System.Boolean)
 If set to true, the view will use the native scrolling available in the current platform. This should help with form issues on some platforms (namely Android and WP8).
             Native scrolling is only enabled on platforms that support it: iOS > 5+, Android > 3+, WP8. BlackBerry devices do support it, but the native scroller is flaky.
 
@@ -65,7 +65,7 @@ The value that configures the usenativescrolling.
 
 
 
-### Zoom(`System.Boolean`)
+### Zoom(System.Boolean)
 If set to true, the user can zoom in/out the contents of the view using the pinch/zoom gesture.
 
 
@@ -78,7 +78,7 @@ The value that configures the zoom.
 
 
 
-### Layout(`System.String`)
+### Layout(System.String)
 Specifies the id of the default layout
 
 
@@ -91,7 +91,7 @@ The value that configures the layout.
 
 
 
-### Transition(`System.String`)
+### Transition(System.String)
 Specifies the Pane transition
 
 
@@ -104,7 +104,7 @@ The value that configures the transition.
 
 
 
-### Header(`System.Action`)
+### Header(System.Action)
 Sets the HTML content which the header should display.
 
 
@@ -117,7 +117,7 @@ The action which renders the header.
 
 
 
-### Header(`System.Func<System.Object,System.Object>`)
+### Header(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the header should display.
 
 
@@ -130,7 +130,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Header(`System.String`)
+### Header(System.String)
 Sets the HTML content which the header should display as a string.
 
 
@@ -143,7 +143,7 @@ The action which renders the header.
 
 
 
-### Content(`System.Action`)
+### Content(System.Action)
 Sets the HTML content which the content should display.
 
 
@@ -156,7 +156,7 @@ The action which renders the content.
 
 
 
-### Content(`System.Func<System.Object,System.Object>`)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the content should display.
 
 
@@ -169,7 +169,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Content(`System.String`)
+### Content(System.String)
 Sets the HTML content which the view content should display as a string.
 
 
@@ -182,7 +182,7 @@ The action which renders the view content.
 
 
 
-### Footer(`System.Action`)
+### Footer(System.Action)
 Sets the HTML content which the footer should display.
 
 
@@ -195,7 +195,7 @@ The action which renders the footer.
 
 
 
-### Footer(`System.Func<System.Object,System.Object>`)
+### Footer(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the footer should display.
 
 
@@ -208,7 +208,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Footer(`System.String`)
+### Footer(System.String)
 Sets the HTML content which the footer should display as a string.
 
 
@@ -221,13 +221,13 @@ The action which renders the footer.
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileViewEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileViewEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileViewEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileViewEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileViewEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileViewEventBuilder)>
 The client events action.
 
 

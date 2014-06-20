@@ -1,7 +1,5 @@
 ---
-title:PanelBarEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.panelbareventbuilder
-publish:true
+nav_title: PanelBarEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PanelBarEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent interface for configuring the PanelBar events.
 
 
 
+
 ## Methods
 
-### Expand(`System.Func<System.Object,System.Object>`)
+
+### Expand(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Expand client-side event
 
-For additional information check the [expand](/kendo-ui/api/web/panelbar#events-expand) event documentation.
+For additional information check the [expand](/api/web/panelbar#events-expand) event documentation.
 
 
 #### Parameters
@@ -39,10 +39,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Expand(`System.String`)
+### Expand(System.String)
 Defines the name of the JavaScript function that will handle the the Expand client-side event.
 
-For additional information check the [expand](/kendo-ui/api/web/panelbar#events-expand) event documentation.
+For additional information check the [expand](/api/web/panelbar#events-expand) event documentation.
 
 
 #### Parameters
@@ -60,10 +60,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### ContentLoad(`System.Func<System.Object,System.Object>`)
+### ContentLoad(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the ContentLoad client-side event
 
-For additional information check the [contentLoad](/kendo-ui/api/web/panelbar#events-contentLoad) event documentation.
+For additional information check the [contentLoad](/api/web/panelbar#events-contentLoad) event documentation.
 
 
 #### Parameters
@@ -88,10 +88,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### ContentLoad(`System.String`)
+### ContentLoad(System.String)
 Defines the name of the JavaScript function that will handle the the ContentLoad client-side event.
 
-For additional information check the [contentLoad](/kendo-ui/api/web/panelbar#events-contentLoad) event documentation.
+For additional information check the [contentLoad](/api/web/panelbar#events-contentLoad) event documentation.
 
 
 #### Parameters
@@ -109,10 +109,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Collapse(`System.Func<System.Object,System.Object>`)
+### Collapse(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Collapse client-side event
 
-For additional information check the [collapse](/kendo-ui/api/web/panelbar#events-collapse) event documentation.
+For additional information check the [collapse](/api/web/panelbar#events-collapse) event documentation.
 
 
 #### Parameters
@@ -137,10 +137,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Collapse(`System.String`)
+### Collapse(System.String)
 Defines the name of the JavaScript function that will handle the the Collapse client-side event.
 
-For additional information check the [collapse](/kendo-ui/api/web/panelbar#events-collapse) event documentation.
+For additional information check the [collapse](/api/web/panelbar#events-collapse) event documentation.
 
 
 #### Parameters
@@ -158,10 +158,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Select(`System.Func<System.Object,System.Object>`)
+### Select(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Select client-side event
 
-For additional information check the [select](/kendo-ui/api/web/panelbar#events-select) event documentation.
+For additional information check the [select](/api/web/panelbar#events-select) event documentation.
 
 
 #### Parameters
@@ -186,10 +186,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Select(`System.String`)
+### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
 
-For additional information check the [select](/kendo-ui/api/web/panelbar#events-select) event documentation.
+For additional information check the [select](/api/web/panelbar#events-select) event documentation.
 
 
 #### Parameters
@@ -207,10 +207,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Error(`System.Func<System.Object,System.Object>`)
+### Error(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Error client-side event
 
-For additional information check the [error](/kendo-ui/api/web/panelbar#events-error) event documentation.
+For additional information check the [error](/api/web/panelbar#events-error) event documentation.
 
 
 #### Parameters
@@ -235,10 +235,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Error(`System.String`)
+### Error(System.String)
 Defines the name of the JavaScript function that will handle the the Error client-side event.
 
-For additional information check the [error](/kendo-ui/api/web/panelbar#events-error) event documentation.
+For additional information check the [error](/api/web/panelbar#events-error) event documentation.
 
 
 #### Parameters

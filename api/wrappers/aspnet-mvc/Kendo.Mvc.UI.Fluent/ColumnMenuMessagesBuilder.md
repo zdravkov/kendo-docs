@@ -1,7 +1,5 @@
 ---
-title:ColumnMenuMessagesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.columnmenumessagesbuilder
-publish:true
+nav_title: ColumnMenuMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the column menu messages.
 
 
 
+
 ## Methods
 
-### Filter(`System.String`)
+
+### Filter(System.String)
 Sets the text displayed for filter menu option.
 
 
@@ -24,7 +24,7 @@ The message
 
 
 
-### Columns(`System.String`)
+### Columns(System.String)
 Sets the text displayed for columns menu option.
 
 
@@ -37,7 +37,7 @@ The message
 
 
 
-### SortAscending(`System.String`)
+### SortAscending(System.String)
 Sets the text displayed for sort ascending menu option.
 
 
@@ -50,7 +50,7 @@ The message
 
 
 
-### SortDescending(`System.String`)
+### SortDescending(System.String)
 Sets the text displayed for sort descending menu option.
 
 
@@ -63,7 +63,7 @@ The message
 
 
 
-### Done(`System.String`)
+### Done(System.String)
 Sets the text displayed for done menu button.
 
 
@@ -76,8 +76,34 @@ The message
 
 
 
-### ColumnSettings(`System.String`)
+### ColumnSettings(System.String)
 Sets the text displayed for menu header.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
+### Lock(System.String)
+Sets the text message displayed in the column menu for locking a column.
+
+
+#### Parameters
+
+##### message `System.String`
+The message
+
+
+
+
+
+### Unlock(System.String)
+Sets the text message displayed in the column menu for unlocking a column.
 
 
 #### Parameters

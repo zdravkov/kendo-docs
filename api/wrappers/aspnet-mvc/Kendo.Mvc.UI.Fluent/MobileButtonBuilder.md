@@ -1,7 +1,5 @@
 ---
-title:MobileButtonBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilebuttonbuilder
-publish:true
+nav_title: MobileButtonBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileButtonBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileButton for ASP.NET MVC.
 
 
 
+
 ## Methods
 
-### Enable(`System.Boolean`)
+
+### Enable(System.Boolean)
 If set to false the widget will be disabled and will not allow the user to click it. The widget is enabled by default.
 
 
@@ -24,7 +24,7 @@ The value that configures the enable.
 
 
 
-### Icon(`System.String`)
+### Icon(System.String)
 The icon of the button. It can be either one of the built-in icons, or a custom one.
 
 
@@ -37,7 +37,7 @@ The value that configures the icon.
 
 
 
-### Url(`System.String`)
+### Url(System.String)
 Specifies the url for remote view or id of the view to be loaded (prefixed with #, like an anchor)
 
 
@@ -50,7 +50,7 @@ The value that configures the url.
 
 
 
-### Text(`System.String`)
+### Text(System.String)
 Specifies the text of the button
 
 
@@ -63,7 +63,7 @@ The value that configures the text.
 
 
 
-### Transition(`System.String`)
+### Transition(System.String)
 Specifies the Pane transition
 
 
@@ -76,7 +76,7 @@ The value that configures the transition.
 
 
 
-### Target(`System.String`)
+### Target(System.String)
 Specifies the id of target Pane or `_top` for application level Pane
 
 
@@ -89,7 +89,7 @@ The value that configures the target.
 
 
 
-### ActionsheetContext(`System.String`)
+### ActionsheetContext(System.String)
 This value will be available when the action callback of ActionSheet item is executed
 
 
@@ -102,33 +102,33 @@ The value that configures the actionsheetcontext.
 
 
 
-### Align(`Kendo.Mvc.UI.MobileButtonAlign`)
+### Align(Kendo.Mvc.UI.MobileButtonAlign)
 Use the align data attribute to specify the elements position inside the NavBar. By default, elements without any align are centered.
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.MobileButtonAlign](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonAlign)
+##### value [Kendo.Mvc.UI.MobileButtonAlign](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonAlign)
 The value that configures the align.
 
 
 
 
 
-### Rel(`Kendo.Mvc.UI.MobileButtonRel`)
+### Rel(Kendo.Mvc.UI.MobileButtonRel)
 Specifies the widget to be open when is tapped (the href must be set too)
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.MobileButtonRel](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonRel)
+##### value [Kendo.Mvc.UI.MobileButtonRel](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobileButtonRel)
 The value that configures the rel.
 
 
 
 
 
-### Badge(`System.String`)
+### Badge(System.String)
 Specifies the value shown in badge icon
 
 
@@ -141,14 +141,14 @@ The value that configures the badge.
 
 
 
-### Url(`System.Action<Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder>`)
+### Url(System.Action\<Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder\>)
 Specifies the url for remote view to be loaded
 
 
 
 
 
-### Url(`System.String,System.String,System.Object`)
+### Url(System.String,System.String,System.Object)
 Sets controller and action from where the remove view to be loaded.
 
 
@@ -167,7 +167,7 @@ Route values
 
 
 
-### Url(`System.String,System.String`)
+### Url(System.String,System.String)
 Sets controller, action and routeValues from where the remove view to be loaded.
 
 
@@ -183,13 +183,13 @@ Controller Name
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileButtonEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileButtonEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileButtonEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileButtonEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileButtonEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileButtonEventBuilder)>
 The client events action.
 
 

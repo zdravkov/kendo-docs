@@ -1,7 +1,5 @@
 ---
-title: Replace Effect
-slug: fx-replace
-publish: true
+nav_title: Replace Effect
 ---
 # Kendo UI Replace Effect
 

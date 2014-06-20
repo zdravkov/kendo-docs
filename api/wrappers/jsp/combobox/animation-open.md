@@ -1,8 +1,5 @@
 ---
-title: comboBox-animation-open
-slug: jsp-comboBox-animation-open
-tags: api, java
-publish: true
+nav_title: comboBox-animation-open
 ---
 
 # \<kendo:comboBox-animation-open\>

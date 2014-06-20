@@ -1,8 +1,5 @@
 ---
-title: SchedulerMessagesRecurrenceEditorOffsetPositions
-slug: php-ui-schedulermessagesrecurrenceeditoroffsetpositions
-tags: api, php
-publish: true
+nav_title: SchedulerMessagesRecurrenceEditorOffsetPositions
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceEditorOffsetPositions

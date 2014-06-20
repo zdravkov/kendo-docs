@@ -1,8 +1,5 @@
 ---
-title: TreeViewItem
-slug: php-ui-treeviewitem
-tags: api, php
-publish: true
+nav_title: TreeViewItem
 ---
 
 # \Kendo\UI\TreeViewItem

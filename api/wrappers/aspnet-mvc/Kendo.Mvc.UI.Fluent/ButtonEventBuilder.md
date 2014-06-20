@@ -1,7 +1,5 @@
 ---
-title:ButtonEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.buttoneventbuilder
-publish:true
+nav_title: ButtonEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ButtonEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent interface for configuring the Button events.
 
 
 
+
 ## Methods
 
-### Click(`System.Func<System.Object,System.Object>`)
+
+### Click(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Click client-side event
 
-For additional information check the [click](/kendo-ui/api/web/button#events-click) event documentation.
+For additional information check the [click](/api/web/button#events-click) event documentation.
 
 
 #### Parameters
@@ -39,10 +39,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Click(`System.String`)
+### Click(System.String)
 Defines the name of the JavaScript function that will handle the the Click client-side event.
 
-For additional information check the [click](/kendo-ui/api/web/button#events-click) event documentation.
+For additional information check the [click](/api/web/button#events-click) event documentation.
 
 
 #### Parameters

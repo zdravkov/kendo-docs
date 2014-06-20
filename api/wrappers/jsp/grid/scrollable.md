@@ -1,8 +1,5 @@
 ---
-title: grid-scrollable
-slug: jsp-grid-scrollable
-tags: api, java
-publish: true
+nav_title: grid-scrollable
 ---
 
 # \<kendo:grid-scrollable\>

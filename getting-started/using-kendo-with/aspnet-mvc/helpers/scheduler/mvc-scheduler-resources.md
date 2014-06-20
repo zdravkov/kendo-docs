@@ -1,14 +1,12 @@
 ---
-title: Resources
-meta_title: Resources and Scheduler HtmlHelper extension | Kendo UI documentation
-meta_description: How to add Resources to Scheduler HtmlHelper extension for Kendo UI Scheduler widget.
-slug: mvc-scheduler-resources
-publish: true
+nav_title: Resources
+title: Resources and Scheduler HtmlHelper extension | Kendo UI documentation
+description: How to add Resources to Scheduler HtmlHelper extension for Kendo UI Scheduler widget.
 ---
 
 # Scheduler Resources
 
-The Scheduler HtmlHelper extension supports assigning scheduler events to a set of predefined [resources](/kendo-ui/getting-started/web/scheduler/resources).
+The Scheduler HtmlHelper extension supports assigning scheduler events to a set of predefined [resources](/getting-started/web/scheduler/resources).
 
 
 

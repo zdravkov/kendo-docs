@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.Editor
-meta_title: Configuration, methods and events of Kendo UI Editor
-meta_description: Help guide for proper configuration of Editor UI widget, and how to use methods and events.
-slug: api-web-editor
-relatedDocs: gs-web-editor-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.Editor
+title: Configuration, methods and events of Kendo UI Editor
+description: Help guide for proper configuration of Editor UI widget, and how to use methods and events.
 ---
 
 # kendo.ui.Editor
 
-Represents the Kendo UI Editor widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Editor widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
@@ -129,7 +125,7 @@ Indicates whether the characters outside the ASCII range will be encoded as HTML
 
 ### stylesheets `Array`
 
-Allows custom stylesheets to be included within the editing area. This setting is applicable only when the [Editor is initialized from a `textarea`](/kendo-ui/getting-started/web/editor/overview)
+Allows custom stylesheets to be included within the editing area. This setting is applicable only when the [Editor is initialized from a `textarea`](/getting-started/web/editor/overview)
 and a contenteditable iframe is generated.
 
 #### Example
@@ -1581,9 +1577,9 @@ Fires when the user releases a keyboard key.
     <div id="words"></div>
     <script>
     function wordCount(value) {
-      return $.trim(value.replace(/kendo-ui/<.*?>/g, " "))
-        .replace(/kendo-ui/['";:,.?\-!]+/g, '')
-        .match(/kendo-ui/\S+/g).length;
+      return $.trim(value.replace(/<.*?>/g, " "))
+        .replace(/['";:,.?\-!]+/g, '')
+        .match(/\S+/g).length;
     }
 
     $("#editor").kendoEditor({

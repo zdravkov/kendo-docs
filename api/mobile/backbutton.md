@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.BackButton
-meta_title: Configuration, methods and events of Kendo UI Mobile BackButton
-meta_description: Examples how to initialize Kendo UI mobile BackButton based on role data attribute and using jQuery plugin syntax.
-slug: api-mobile-backbutton
-relatedDocs: gs-mobile-backbutton
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.BackButton
+title: Configuration, methods and events of Kendo UI Mobile BackButton
+description: Examples how to initialize Kendo UI mobile BackButton based on role data attribute and using jQuery plugin syntax.
 ---
 
 # kendo.mobile.ui.BackButton
 
-Represents the Kendo UI Mobile BackButton widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile BackButton widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## BackButton
 

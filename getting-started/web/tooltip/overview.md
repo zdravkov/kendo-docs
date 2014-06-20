@@ -1,9 +1,5 @@
 ---
-title: Overview
-slug: gs-web-tooltip-overview
-relatedDocs: api-web-tooltip
-tags: getting-started,web
-publish: true
+nav_title: Overview
 ---
 
 # Tooltip Overview

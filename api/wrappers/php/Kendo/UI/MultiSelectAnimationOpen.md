@@ -1,8 +1,5 @@
 ---
-title: MultiSelectAnimationOpen
-slug: php-ui-multiselectanimationopen
-tags: api, php
-publish: true
+nav_title: MultiSelectAnimationOpen
 ---
 
 # \Kendo\UI\MultiSelectAnimationOpen

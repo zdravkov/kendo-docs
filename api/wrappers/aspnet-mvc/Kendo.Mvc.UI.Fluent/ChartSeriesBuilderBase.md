@@ -1,22 +1,26 @@
 ---
-title:ChartSeriesBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartseriesbuilderbase
-publish:true
+nav_title: ChartSeriesBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartSeriesBuilderBase
 Defines the fluent interface for configuring series.
 
 
+
 ## Properties
+
+
 ### Series
+
 Gets or sets the series.
+
 
 
 
 ## Methods
 
-### Name(`System.String`)
+
+### Name(System.String)
 Sets the series title displayed in the legend.
 
 
@@ -35,7 +39,7 @@ The title.
     %>
 
 
-### GroupNameTemplate(`System.String`)
+### GroupNameTemplate(System.String)
 Sets the name template for auto-generated series when binding to grouped data.
 
 
@@ -62,7 +66,7 @@ The name template for auto-generated series when binding to grouped data.
     %>
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the series opacity.
 
 
@@ -82,7 +86,7 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the bar fill color
 
 
@@ -102,7 +106,7 @@ The bar fill color (CSS syntax).
     %>
 
 
-### Color(`System.Func<System.Object,System.Object>`)
+### Color(System.Func\<System.Object,System.Object\>)
 Sets the function used to retrieve point color.
 
 
@@ -132,13 +136,67 @@ The JavaScript function that will be executed
             %>
 
 
-### Tooltip(`System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>`)
+### ColorHandler(System.Func\<System.Object,System.Object\>)
+Sets the function used to retrieve point color.
+
+
+#### Parameters
+
+##### colorFunction `System.Func<System.Object,System.Object>`
+The JavaScript function that will be executed
+                to retrieve the color of each point.
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Bar(s => s.Sales)
+            .ColorHandler(
+                @<text>
+                    function(point) {
+                    return point.value > 5 ? "red" : "green";
+                    }
+                    </text>
+                )
+            )
+            .Render();
+            %>
+
+
+### ColorHandler(System.String)
+Sets the function used to retrieve point color.
+
+
+#### Parameters
+
+##### colorFunction `System.String`
+The JavaScript function that will be executed
+                to retrieve the color of each point.
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Bar(s => s.Sales)
+            .ColorHandler("pointColor")
+        )
+        .Render();
+    %>
+
+
+### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
 Configure the data point tooltip for the series.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartTooltipBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartTooltipBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartTooltipBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartTooltipBuilder)>
 Use the configurator to set data tooltip options.
 
 
@@ -156,7 +214,7 @@ Use the configurator to set data tooltip options.
     %>
 
 
-### Tooltip(`System.Boolean`)
+### Tooltip(System.Boolean)
 Sets the data point tooltip visibility.
 
 
@@ -176,7 +234,7 @@ A value indicating if the data point tooltip should be displayed.
     %>
 
 
-### Axis(`System.String`)
+### Axis(System.String)
 Sets the axis name to use for this series.
 
 
@@ -198,20 +256,33 @@ The axis name for this series.
     %>
 
 
-### Highlight(`System.Action<Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilder>`)
+### CategoryAxis(System.String)
+Sets the axis name to use for this series.
+
+
+#### Parameters
+
+##### categoryAxis `System.String`
+The category axis name for this series.
+
+
+
+
+
+### Highlight(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilder\>)
 Configures the series highlight
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSeriesHighlightBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSeriesHighlightBuilder)>
 The configuration action.
 
 
 
 
 
-### Highlight(`System.Boolean`)
+### Highlight(System.Boolean)
 Configures the highlight visibility
 
 
@@ -224,7 +295,7 @@ The highlight visibility.
 
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the labels visibility
 
 
@@ -244,17 +315,76 @@ The labels visibility.
     %>
 
 
-### Notes(`System.Action<Kendo.Mvc.UI.Fluent.ChartNoteBuilder>`)
+### Notes(System.Action\<Kendo.Mvc.UI.Fluent.ChartNoteBuilder\>)
 Configures the series notes
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartNoteBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartNoteBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartNoteBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartNoteBuilder)>
 The configuration action.
 
 
 
+
+
+### Aggregate(System.Func\<System.Object,System.Object\>)
+Sets the function used to retrieve point color.
+
+
+#### Parameters
+
+##### aggregateFunction `System.Func<System.Object,System.Object>`
+The JavaScript function that will be executed
+                to retrieve the value of each aggregated point.
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Bar(s => s.Sales)
+            .Aggregate(
+                @<text>
+                    function(values) {
+                    return values[0];
+                    }
+                    </text>
+                )
+            )
+            .Render();
+            %>
+
+
+### Aggregate(System.String)
+Sets the function used to retrieve point color.
+
+
+#### Parameters
+
+##### aggregateFunction `System.String`
+The JavaScript function that will be executed
+                to retrieve the value of each aggregated point.
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series
+            .Bar(s => s.Sales)
+            .Aggregate("myAggregate")
+        )
+        .Render();
+    %>
+    <script>
+    function myAggregate(values) {
+    return values[0];
+    }
+    </script>
 
 
 

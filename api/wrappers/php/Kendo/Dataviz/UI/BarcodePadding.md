@@ -1,8 +1,5 @@
 ---
-title: BarcodePadding
-slug: php-dataviz-ui-barcodepadding
-tags: api, php
-publish: true
+nav_title: BarcodePadding
 ---
 
 # \Kendo\Dataviz\UI\BarcodePadding

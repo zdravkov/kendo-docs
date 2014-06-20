@@ -1,10 +1,7 @@
 ---
-title: kendo.mobile.Application
-meta_title: Configuration and methods for Mobile Application widget
-meta_description: How to hide the browser address bar, set the platform which will force on the application, hide/show a loading animation and more in Kendo UI Mobile Application widget.
-slug: mobile-kendo.mobile.application
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.Application
+title: Configuration and methods for Mobile Application widget
+description: How to hide the browser address bar, set the platform which will force on the application, hide/show a loading animation and more in Kendo UI Mobile Application widget.
 ---
 
 # kendo.mobile.Application
@@ -167,7 +164,7 @@ The skin to apply to the application. Currently, Kendo UI Mobile ships with a **
 Set the status bar style meta tag in iOS used to control the styling of the status bar in a pinned to the Home Screen app. Available as of Q2 2013 SP.
 
 > The default setting of "black" pushes down the content of the page, while the rest overlay it. To create seamless status bar in iOS7,
-check [Seamless Status Bar in iOS7](/kendo-ui/getting-started/mobile/application#seamless-status-bar-in-ios7) section in Mobile Application's Getting Started page.
+check [Seamless Status Bar in iOS7](/getting-started/mobile/application#seamless-status-bar-in-ios7) section in Mobile Application's Getting Started page.
 
 #### Example
 
@@ -300,7 +297,7 @@ The id or url of the view.
 
 ##### transition `String`
 
-Optional. The transition to apply when navigating. See [View Transitions section](/kendo-ui/getting-started/mobile/application#view-transitions) for more information.
+Optional. The transition to apply when navigating. See [View Transitions section](/getting-started/mobile/application#view-transitions) for more information.
 
 ###### Example
 
@@ -327,7 +324,7 @@ The id or url of the view.
 
 ##### transition `String`
 
-Optional. The transition to apply when navigating. See [View Transitions section](/kendo-ui/getting-started/mobile/application#view-transitions) for more information.
+Optional. The transition to apply when navigating. See [View Transitions section](/getting-started/mobile/application#view-transitions) for more information.
 
 ###### Example
 

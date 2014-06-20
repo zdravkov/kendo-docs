@@ -1,8 +1,5 @@
 ---
-title: EditorImageBrowserTransportCreate
-slug: php-ui-editorimagebrowsertransportcreate
-tags: api, php
-publish: true
+nav_title: EditorImageBrowserTransportCreate
 ---
 
 # \Kendo\UI\EditorImageBrowserTransportCreate

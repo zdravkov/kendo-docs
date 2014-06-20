@@ -1,8 +1,5 @@
 ---
-title: scheduler-group
-slug: jsp-scheduler-group
-tags: api, java
-publish: true
+nav_title: scheduler-group
 ---
 
 # \<kendo:scheduler-group\>

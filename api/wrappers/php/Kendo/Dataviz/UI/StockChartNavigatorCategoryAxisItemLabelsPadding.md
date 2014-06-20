@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemLabelsPadding
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemlabelspadding
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemLabelsPadding
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemLabelsPadding

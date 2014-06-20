@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-select
-slug: jsp-stockChart-navigator-select
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-select
 ---
 
 # \<kendo:stockChart-navigator-select\>

@@ -1,8 +1,5 @@
 ---
-title: GridFilterableMessages
-slug: php-ui-gridfilterablemessages
-tags: api, php
-publish: true
+nav_title: GridFilterableMessages
 ---
 
 # \Kendo\UI\GridFilterableMessages

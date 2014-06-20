@@ -1,8 +1,5 @@
 ---
-title: DataSourceTransportSignalr
-slug: php-data-datasourcetransportsignalr
-tags: api, php
-publish: true
+nav_title: DataSourceTransportSignalr
 ---
 
 # \Kendo\Data\DataSourceTransportSignalr
@@ -24,7 +21,7 @@ Specifies the client-side CRUD methods of the SignalR hub.
 ##### $value `\Kendo\Data\DataSourceTransportSignalrClient|array`
 
 
-#### Example - using [\Kendo\Data\DataSourceTransportSignalrClient](/kendo-ui/api/wrappers/php/Kendo/Data/DataSourceTransportSignalrClient)
+#### Example - using [\Kendo\Data\DataSourceTransportSignalrClient](/api/wrappers/php/Kendo/Data/DataSourceTransportSignalrClient)
     <?php
     $signalr = new \Kendo\Data\DataSourceTransportSignalr();
     $client = new \Kendo\Data\DataSourceTransportSignalrClient();
@@ -77,7 +74,7 @@ Specifies the server-side CRUD methods of the SignalR hub.
 ##### $value `\Kendo\Data\DataSourceTransportSignalrServer|array`
 
 
-#### Example - using [\Kendo\Data\DataSourceTransportSignalrServer](/kendo-ui/api/wrappers/php/Kendo/Data/DataSourceTransportSignalrServer)
+#### Example - using [\Kendo\Data\DataSourceTransportSignalrServer](/api/wrappers/php/Kendo/Data/DataSourceTransportSignalrServer)
     <?php
     $signalr = new \Kendo\Data\DataSourceTransportSignalr();
     $server = new \Kendo\Data\DataSourceTransportSignalrServer();

@@ -1,8 +1,5 @@
 ---
-title: DataSourceTransportUpdate
-slug: php-data-datasourcetransportupdate
-tags: api, php
-publish: true
+nav_title: DataSourceTransportUpdate
 ---
 
 # \Kendo\Data\DataSourceTransportUpdate

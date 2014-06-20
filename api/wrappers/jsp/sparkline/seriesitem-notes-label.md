@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-notes-label
-slug: jsp-sparkline-seriesItem-notes-label
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-notes-label
 ---
 
 # \<kendo:sparkline-seriesItem-notes-label\>
@@ -87,7 +84,7 @@ If set to true the chart will display the series notes label. By default the ser
 
 The border of the label.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-label-border](/kendo-ui/api/wrappers/jsp/sparkline/seriesitem-notes-label-border).
+More documentation is available at [kendo:sparkline-seriesItem-notes-label-border](/api/wrappers/jsp/sparkline/seriesitem-notes-label-border).
 
 #### Example
 

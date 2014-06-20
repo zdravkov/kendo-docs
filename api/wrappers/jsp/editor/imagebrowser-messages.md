@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-messages
-slug: jsp-editor-imageBrowser-messages
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-messages
 ---
 
 # \<kendo:editor-imageBrowser-messages\>

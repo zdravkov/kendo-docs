@@ -1,7 +1,5 @@
 ---
-title:ChartScatterSeriesBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartscatterseriesbuilderbase
-publish:true
+nav_title: ChartScatterSeriesBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartScatterSeriesBuilderBase
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring scatter series.
 
 
 
+
 ## Methods
 
-### Labels(`System.Action<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder>`)
+
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder\>)
 Configures the scatter chart labels.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartPointLabelsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartPointLabelsBuilder)>
 The configuration action.
 
 
@@ -36,7 +36,7 @@ The configuration action.
     %>
 
 
-### Labels(`System.Boolean`)
+### Labels(System.Boolean)
 Sets the visibility of scatter chart labels.
 
 
@@ -58,13 +58,13 @@ The visibility. The default value is false.
     %>
 
 
-### Markers(`System.Action<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder>`)
+### Markers(System.Action\<Kendo.Mvc.UI.Fluent.ChartMarkersBuilder\>)
 Configures the scatter chart markers.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartMarkersBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartMarkersBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartMarkersBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartMarkersBuilder)>
 The configuration action.
 
 
@@ -82,7 +82,7 @@ The configuration action.
     %>
 
 
-### Markers(`System.Boolean`)
+### Markers(System.Boolean)
 Sets the visibility of scatter chart markers.
 
 
@@ -104,7 +104,7 @@ The visibility. The default value is true.
     %>
 
 
-### XAxis(`System.String`)
+### XAxis(System.String)
 Sets the axis name to use for this series.
 
 
@@ -125,7 +125,7 @@ The axis name for this series.
     %>
 
 
-### YAxis(`System.String`)
+### YAxis(System.String)
 Sets the axis name to use for this series.
 
 
@@ -146,11 +146,101 @@ The axis name for this series.
     %>
 
 
-### Axis(`System.String`)
+### Axis(System.String)
 Not applicable to scatter series
 
 
 
+
+
+### CategoryAxis(System.String)
+Not applicable to scatter series
+
+
+
+
+
+### XField(System.String)
+Sets the X field for the series
+
+
+#### Parameters
+
+##### xField `System.String`
+The value X field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Scatter(Model.Records).XField("X").YField("Y"))
+        .Render();
+    %>
+
+
+### YField(System.String)
+Sets the Y field for the series
+
+
+#### Parameters
+
+##### yField `System.String`
+The value Y field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Scatter(Model.Records).XField("X").YField("Y"))
+        .Render();
+    %>
+
+
+### NoteTextField(System.String)
+Sets the note text field for the series
+
+
+#### Parameters
+
+##### noteTextField `System.String`
+The note text field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Bar(Model.Records).Field("Value").NoteTextField("NoteText"))
+        .Render();
+    %>
+
+
+### Fields(System.String,System.String)
+Sets the X and Y fields for the series
+
+
+#### Parameters
+
+##### xField `System.String`
+The X field for the series
+
+##### yField `System.String`
+The Y field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Scatter(Model.Records).Fields("X", "Y"))
+        .Render();
+    %>
 
 
 

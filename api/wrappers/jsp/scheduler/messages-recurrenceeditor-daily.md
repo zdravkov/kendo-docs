@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-recurrenceEditor-daily
-slug: jsp-scheduler-messages-recurrenceEditor-daily
-tags: api, java
-publish: true
+nav_title: scheduler-messages-recurrenceEditor-daily
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-daily\>

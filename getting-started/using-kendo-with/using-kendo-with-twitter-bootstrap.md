@@ -1,8 +1,5 @@
 ---
-title: Using Kendo With Twitter Bootstrap
-slug: gs-using-kendo-with-twitter-bootstrap
-tags: 101, Getting Started, Twitter Bootstrap
-publish: true
+nav_title: Using Kendo With Twitter Bootstrap
 ---
 
 # Using Kendo with Twitter Bootstrap

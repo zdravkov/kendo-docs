@@ -1,15 +1,12 @@
 ---
-title: kendo.data.SchedulerEvent
-meta_title: API Reference for Kendo Data SchedulerEvent
-meta_description: Documentation how to get started with the SchedulerEvent.
-slug: api-framework-schedulerevent
-tags: api,framework
-publish: true
+nav_title: kendo.data.SchedulerEvent
+title: API Reference for Kendo Data SchedulerEvent
+description: Documentation how to get started with the SchedulerEvent.
 ---
 
 # kendo.data.SchedulerEvent
 
-The `kendo.data.SchedulerEvent` class represents a data item from the [kendo.data.SchedulerDataSource](/kendo-ui/api/framework/schedulerdatasource). Inherits from [kendo.data.Model](/kendo-ui/api/framework/model).
+The `kendo.data.SchedulerEvent` class represents a data item from the [kendo.data.SchedulerDataSource](/api/framework/schedulerdatasource). Inherits from [kendo.data.Model](/api/framework/model).
 
 
 
@@ -48,7 +45,7 @@ The date at which the scheduler event ends. The `end` date is mandatory.
 
 ### endTimezone `String` *(default: undefined)*
 
-The timezone of the `end` date. If not specified the [timezone](/kendo-ui/api/web/scheduler#configuration-timezone) will be used.
+The timezone of the `end` date. If not specified the [timezone](/api/web/scheduler#configuration-timezone) will be used.
 
 The complete list of the supported timezones is available in the [List of IANA time zones](http://en.wikipedia.org/wiki/List_of_IANA_time_zones) Wikipedia page.
 
@@ -179,7 +176,7 @@ The date at which the scheduler event starts. The `start` date is mandatory.
 
 ### startTimezone `String` *(default: undefined)*
 
-The timezone of the `start` date. If not specified the [timezone](/kendo-ui/api/web/scheduler#configuration-timezone) will be used.
+The timezone of the `start` date. If not specified the [timezone](/api/web/scheduler#configuration-timezone) will be used.
 
 The complete list of the supported timezones is available in the [List of IANA time zones](http://en.wikipedia.org/wiki/List_of_IANA_time_zones) Wikipedia page.
 
@@ -402,7 +399,7 @@ The title of the event which is displayed by the scheduler widget.
 
 ## Methods
 
-See the [Model methods](/kendo-ui/api/framework/model#methods) for all inherited methods.
+See the [Model methods](/api/framework/model#methods) for all inherited methods.
 
 ### SchedulerEvent.define
 
@@ -448,7 +445,7 @@ Specifies the the type of the field. The available options are `"string"`, `"num
 
 ##### options.fields.fieldName.validation `Object`
 
-Specifies the validation options which will be used by [Kendo Validator](/kendo-ui/api/framework/validator).
+Specifies the validation options which will be used by [Kendo Validator](/api/framework/validator).
 
 #### Example - define custom scheduler event
 
@@ -754,4 +751,4 @@ Additional options passed to the SchedulerEvent constructor.
 
 ## Events
 
-See the [Model events](/kendo-ui/api/framework/model#events) for all inherited events.
+See the [Model events](/api/framework/model#events) for all inherited events.

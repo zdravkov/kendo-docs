@@ -1,8 +1,5 @@
 ---
-title: DiagramConnectionHover
-slug: php-dataviz-ui-diagramconnectionhover
-tags: api, php
-publish: true
+nav_title: DiagramConnectionHover
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionHover
@@ -24,7 +21,7 @@ Defines the hover stroke configuration.
 ##### $value `\Kendo\Dataviz\UI\DiagramConnectionHoverStroke|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\DiagramConnectionHoverStroke](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramConnectionHoverStroke)
+#### Example - using [\Kendo\Dataviz\UI\DiagramConnectionHoverStroke](/api/wrappers/php/Kendo/Dataviz/UI/DiagramConnectionHoverStroke)
     <?php
     $hover = new \Kendo\Dataviz\UI\DiagramConnectionHover();
     $stroke = new \Kendo\Dataviz\UI\DiagramConnectionHoverStroke();

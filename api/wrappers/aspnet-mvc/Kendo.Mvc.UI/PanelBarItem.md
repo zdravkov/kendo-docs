@@ -1,7 +1,5 @@
 ---
-title:PanelBarItem
-slug:aspnetmvc-kendo.mvc.ui.panelbaritem
-publish:true
+nav_title: PanelBarItem
 ---
 
 # Kendo.Mvc.UI.PanelBarItem

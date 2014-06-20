@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeContent
-slug: php-dataviz-ui-diagramshapecontent
-tags: api, php
-publish: true
+nav_title: DiagramShapeContent
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeContent

@@ -1,8 +1,5 @@
 ---
-title: barcode-text-margin
-slug: jsp-barcode-text-margin
-tags: api, java
-publish: true
+nav_title: barcode-text-margin
 ---
 
 # \<kendo:barcode-text-margin\>

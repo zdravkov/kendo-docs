@@ -1,8 +1,5 @@
 ---
-title: map-marker
-slug: jsp-map-marker
-tags: api, java
-publish: true
+nav_title: map-marker
 ---
 
 # \<kendo:map-marker\>
@@ -47,7 +44,7 @@ The marker title. Displayed as browser tooltip.
 
 Kendo UI Tooltip options for this marker.
 
-More documentation is available at [kendo:map-marker-tooltip](/kendo-ui/api/wrappers/jsp/map/marker-tooltip).
+More documentation is available at [kendo:map-marker-tooltip](/api/wrappers/jsp/map/marker-tooltip).
 
 #### Example
 

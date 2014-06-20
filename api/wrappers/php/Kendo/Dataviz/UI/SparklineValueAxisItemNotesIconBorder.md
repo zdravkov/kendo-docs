@@ -1,8 +1,5 @@
 ---
-title: SparklineValueAxisItemNotesIconBorder
-slug: php-dataviz-ui-sparklinevalueaxisitemnotesiconborder
-tags: api, php
-publish: true
+nav_title: SparklineValueAxisItemNotesIconBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineValueAxisItemNotesIconBorder

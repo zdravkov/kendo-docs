@@ -1,8 +1,5 @@
 ---
-title: TabStripAnimationClose
-slug: php-ui-tabstripanimationclose
-tags: api, php
-publish: true
+nav_title: TabStripAnimationClose
 ---
 
 # \Kendo\UI\TabStripAnimationClose

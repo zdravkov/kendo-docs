@@ -1,8 +1,5 @@
 ---
-title: map-layerDefaults-shape-style-fill
-slug: jsp-map-layerDefaults-shape-style-fill
-tags: api, java
-publish: true
+nav_title: map-layerDefaults-shape-style-fill
 ---
 
 # \<kendo:map-layerDefaults-shape-style-fill\>

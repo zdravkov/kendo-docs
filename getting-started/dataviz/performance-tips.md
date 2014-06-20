@@ -1,9 +1,7 @@
 ---
-title: Performance tips
-meta_title: Performance guide for Kendo UI DataViz
-meta_description: Find valuable tips for making the most performance out of the Kendo UI DataViz suite.
-slug: dataviz-performance-tips
-publish: true
+nav_title: Performance tips
+title: Performance guide for Kendo UI DataViz
+description: Find valuable tips for making the most performance out of the Kendo UI DataViz suite.
 ---
 
 # Use Canvas rendering
@@ -28,8 +26,8 @@ It's an excellent choice for fast-updating graphs that don't need animations and
 
 See also:
 
- - [renderAs](/kendo-ui/api/dataviz/chart#configuration-renderAs)
- - [Notes on rendering](/kendo-ui/getting-started/dataviz/rendering)
+ - [renderAs](/api/dataviz/chart#configuration-renderAs)
+ - [Notes on rendering](/getting-started/dataviz/rendering)
 
 # Turn off animated transitions
 

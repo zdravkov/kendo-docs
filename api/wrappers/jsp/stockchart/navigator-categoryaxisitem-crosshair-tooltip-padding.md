@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-crosshair-tooltip-padding
-slug: jsp-stockChart-navigator-categoryAxisItem-crosshair-tooltip-padding
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-crosshair-tooltip-padding
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-crosshair-tooltip-padding\>

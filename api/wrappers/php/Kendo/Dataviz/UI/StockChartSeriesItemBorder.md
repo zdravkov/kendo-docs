@@ -1,8 +1,5 @@
 ---
-title: StockChartSeriesItemBorder
-slug: php-dataviz-ui-stockchartseriesitemborder
-tags: api, php
-publish: true
+nav_title: StockChartSeriesItemBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemBorder

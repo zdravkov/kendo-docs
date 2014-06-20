@@ -1,8 +1,5 @@
 ---
-title: window-position
-slug: jsp-window-position
-tags: api, java
-publish: true
+nav_title: window-position
 ---
 
 # \<kendo:window-position\>

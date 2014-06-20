@@ -1,8 +1,5 @@
 ---
-title: EditorImageBrowserTransportDestroy
-slug: php-ui-editorimagebrowsertransportdestroy
-tags: api, php
-publish: true
+nav_title: EditorImageBrowserTransportDestroy
 ---
 
 # \Kendo\UI\EditorImageBrowserTransportDestroy

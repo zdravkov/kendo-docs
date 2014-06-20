@@ -1,8 +1,5 @@
 ---
-title: QRCodeBorder
-slug: php-dataviz-ui-qrcodeborder
-tags: api, php
-publish: true
+nav_title: QRCodeBorder
 ---
 
 # \Kendo\Dataviz\UI\QRCodeBorder

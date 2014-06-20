@@ -1,8 +1,5 @@
 ---
-title: EditorImageBrowserTransportRead
-slug: php-ui-editorimagebrowsertransportread
-tags: api, php
-publish: true
+nav_title: EditorImageBrowserTransportRead
 ---
 
 # \Kendo\UI\EditorImageBrowserTransportRead

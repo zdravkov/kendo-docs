@@ -1,7 +1,5 @@
 ---
-title: FX SlideIn
-slug: api-fx-slidein
-publish: true
+nav_title: FX SlideIn
 ---
 
 # SlideIn

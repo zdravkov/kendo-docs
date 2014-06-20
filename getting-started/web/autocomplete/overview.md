@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Documentation for Autocomplete UI widget in Kendo UI framework
-meta_description: How to provide AutoComplete Suggestions, guide to Autocomplete UI widget.
-slug: gs-web-autocomplete-overview
-relatedDocs: api-web-autocomplete
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Documentation for Autocomplete UI widget in Kendo UI framework
+description: How to provide AutoComplete Suggestions, guide to Autocomplete UI widget.
 ---
 
 # AutoComplete Overview
@@ -131,7 +127,7 @@ such as
 
 The **AutoComplete** uses Kendo UI templates to enable control over how item and popup header is rendered. For a
 detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
-[documentation](/kendo-ui/getting-started/framework/templates/overview).
+[documentation](/getting-started/framework/templates/overview).
 
 ### Item template customization
 

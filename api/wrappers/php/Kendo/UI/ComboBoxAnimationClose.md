@@ -1,8 +1,5 @@
 ---
-title: ComboBoxAnimationClose
-slug: php-ui-comboboxanimationclose
-tags: api, php
-publish: true
+nav_title: ComboBoxAnimationClose
 ---
 
 # \Kendo\UI\ComboBoxAnimationClose

@@ -1,8 +1,5 @@
 ---
-title: SchedulerCurrentTimeMarker
-slug: php-ui-schedulercurrenttimemarker
-tags: api, php
-publish: true
+nav_title: SchedulerCurrentTimeMarker
 ---
 
 # \Kendo\UI\SchedulerCurrentTimeMarker

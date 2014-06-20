@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemPlotBand
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemplotband
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemPlotBand
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemPlotBand

@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-plotBands
-slug: jsp-stockChart-valueAxisItem-plotBands
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-plotBands
 ---
 
 # \<kendo:stockChart-valueAxisItem-plotBands\>
@@ -23,7 +20,7 @@ The plot bands of the value axis.
 
 The plot bands of the value axis.
 
-More documentation is available at [kendo:stockChart-valueAxisItem-plotBand](/kendo-ui/api/wrappers/jsp/stockchart/valueaxisitem-plotband).
+More documentation is available at [kendo:stockChart-valueAxisItem-plotBand](/api/wrappers/jsp/stockchart/valueaxisitem-plotband).
 
 #### Example
 

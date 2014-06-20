@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxis-minorGridLines
-slug: jsp-chart-categoryAxis-minorGridLines
-tags: api, java
-publish: true
+nav_title: chart-categoryAxis-minorGridLines
 ---
 
 # \<kendo:chart-categoryAxis-minorGridLines\>

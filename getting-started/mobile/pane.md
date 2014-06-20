@@ -1,11 +1,7 @@
 ---
-title: Pane
-meta_title: Mobile navigational panes | Kendo UI Mobile Pane widget documentation
-meta_description: How to navigate across panes and use Kendo UI Mobile Pane widget to change mobile views within the main view application.
-slug: gs-mobile-pane
-relatedDocs: api-mobile-pane
-tags: getting-started,mobile
-publish: true
+nav_title: Pane
+title: Mobile navigational panes | Kendo UI Mobile Pane widget documentation
+description: How to navigate across panes and use Kendo UI Mobile Pane widget to change mobile views within the main view application.
 ---
 
 # Pane

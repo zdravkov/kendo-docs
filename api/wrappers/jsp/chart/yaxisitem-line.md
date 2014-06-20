@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-line
-slug: jsp-chart-yAxisItem-line
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-line
 ---
 
 # \<kendo:chart-yAxisItem-line\>

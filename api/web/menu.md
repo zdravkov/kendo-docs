@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.Menu
-meta_title: Configuration, methods and events of Kendo UI Menu
-meta_description: How to configure all animations in Menu UI widget, enable and disable, remove specified items and use code examples for all methods and events supported.
-slug: api-web-menu
-relatedDocs: gs-web-menu-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.Menu
+title: Configuration, methods and events of Kendo UI Menu
+description: How to configure all animations in Menu UI widget, enable and disable, remove specified items and use code examples for all methods and events supported.
 ---
 
 # kendo.ui.Menu
 
-Represents the Kendo UI Menu widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Menu widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

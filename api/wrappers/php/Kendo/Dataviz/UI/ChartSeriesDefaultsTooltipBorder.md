@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesDefaultsTooltipBorder
-slug: php-dataviz-ui-chartseriesdefaultstooltipborder
-tags: api, php
-publish: true
+nav_title: ChartSeriesDefaultsTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipBorder

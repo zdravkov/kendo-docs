@@ -1,7 +1,5 @@
 ---
-title:EditorStyleSheetBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.editorstylesheetbuilder
-publish:true
+nav_title: EditorStyleSheetBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.EditorStyleSheetBuilder

@@ -1,9 +1,7 @@
 ---
-title: Technical Requirements
-meta_title: Technical Requirements for using Kendo UI JavaScript framework
-meta_description: Check browser and platform support and prerequisites for best performance when working with Kendo UI.
-slug: gs-technical-requirements
-publish: true
+nav_title: Technical Requirements
+title: Technical Requirements for using Kendo UI JavaScript framework
+description: Check browser and platform support and prerequisites for best performance when working with Kendo UI.
 ---
 
 <style scoped>

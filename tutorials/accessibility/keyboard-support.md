@@ -1,9 +1,6 @@
 ---
-title: Keyboard Support in Kendo UI Web
-slug: a11y-keyboard-support
-tags: Tutorial, Accessibility, Keyboard, Section 508, WAI-ARIA
+nav_title: Keyboard Support in Kendo UI Web
 related: a11y-accessibility-overview, a11y-wai-aria-support-in-kendo
-publish: true
 ---
 
 # Keyboard Support in Kendo UI Web

@@ -1,8 +1,5 @@
 ---
-title: TabStripAnimation
-slug: php-ui-tabstripanimation
-tags: api, php
-publish: true
+nav_title: TabStripAnimation
 ---
 
 # \Kendo\UI\TabStripAnimation
@@ -24,7 +21,7 @@ The visual animation(s) that will be used when the current tab is closed.
 ##### $value `\Kendo\UI\TabStripAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\TabStripAnimationClose](/kendo-ui/api/wrappers/php/Kendo/UI/TabStripAnimationClose)
+#### Example - using [\Kendo\UI\TabStripAnimationClose](/api/wrappers/php/Kendo/UI/TabStripAnimationClose)
     <?php
     $animation = new \Kendo\UI\TabStripAnimation();
     $close = new \Kendo\UI\TabStripAnimationClose();
@@ -53,7 +50,7 @@ The visual animation(s) that will be used when the new tab is shown.
 ##### $value `\Kendo\UI\TabStripAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\TabStripAnimationOpen](/kendo-ui/api/wrappers/php/Kendo/UI/TabStripAnimationOpen)
+#### Example - using [\Kendo\UI\TabStripAnimationOpen](/api/wrappers/php/Kendo/UI/TabStripAnimationOpen)
     <?php
     $animation = new \Kendo\UI\TabStripAnimation();
     $open = new \Kendo\UI\TabStripAnimationOpen();

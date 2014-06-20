@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemNotesDataItemIconBorder
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemnotesdataitemiconborder
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemNotesDataItemIconBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemNotesDataItemIconBorder

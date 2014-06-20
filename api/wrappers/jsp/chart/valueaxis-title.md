@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxis-title
-slug: jsp-chart-valueAxis-title
-tags: api, java
-publish: true
+nav_title: chart-valueAxis-title
 ---
 
 # \<kendo:chart-valueAxis-title\>
@@ -114,7 +111,7 @@ The visibility of the title.
 
 The border of the title.
 
-More documentation is available at [kendo:chart-valueAxis-title-border](/kendo-ui/api/wrappers/jsp/chart/valueaxis-title-border).
+More documentation is available at [kendo:chart-valueAxis-title-border](/api/wrappers/jsp/chart/valueaxis-title-border).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-crosshair-tooltip
-slug: jsp-sparkline-categoryAxisItem-crosshair-tooltip
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-crosshair-tooltip
 ---
 
 # \<kendo:sparkline-categoryAxisItem-crosshair-tooltip\>
@@ -80,7 +77,7 @@ A value indicating if the tooltip should be displayed.
 
 The border configuration options.
 
-More documentation is available at [kendo:sparkline-categoryAxisItem-crosshair-tooltip-border](/kendo-ui/api/wrappers/jsp/sparkline/categoryaxisitem-crosshair-tooltip-border).
+More documentation is available at [kendo:sparkline-categoryAxisItem-crosshair-tooltip-border](/api/wrappers/jsp/sparkline/categoryaxisitem-crosshair-tooltip-border).
 
 #### Example
 

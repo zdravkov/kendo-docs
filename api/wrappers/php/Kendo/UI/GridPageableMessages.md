@@ -1,8 +1,5 @@
 ---
-title: GridPageableMessages
-slug: php-ui-gridpageablemessages
-tags: api, php
-publish: true
+nav_title: GridPageableMessages
 ---
 
 # \Kendo\UI\GridPageableMessages

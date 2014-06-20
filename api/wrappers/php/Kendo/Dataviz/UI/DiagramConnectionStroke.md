@@ -1,8 +1,5 @@
 ---
-title: DiagramConnectionStroke
-slug: php-dataviz-ui-diagramconnectionstroke
-tags: api, php
-publish: true
+nav_title: DiagramConnectionStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionStroke

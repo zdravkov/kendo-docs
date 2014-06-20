@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-transport-destroy
-slug: jsp-editor-imageBrowser-transport-destroy
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-transport-destroy
 ---
 
 # \<kendo:editor-imageBrowser-transport-destroy\>

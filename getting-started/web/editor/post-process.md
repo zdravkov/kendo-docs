@@ -1,12 +1,8 @@
 ---
-title: Post-processing
-meta_title: Post-processing the editor content | Kendo UI Documentation
-meta_description: The documentation guide will show how to post-process the Editor content so that it fits your needs.
-slug: gs-web-editor-post-process
-relatedDocs: api-web-editor
-tags: getting-started,web
-ordinal: 3
-publish: true
+nav_title: Post-processing
+title: Post-processing the editor content | Kendo UI Documentation
+description: The documentation guide will show how to post-process the Editor content so that it fits your needs.
+nav_position: 3
 ---
 
 # Post-processing the editor content
@@ -32,8 +28,8 @@ If the editor is within a `<form>` element, a good moment to post-process its co
 
       // strip all paragraphs
       value = value
-        .replace(/kendo-ui/<p[^>]*>/g, "")
-        .replace(/kendo-ui/<\/p>/g, "<br />");
+        .replace(/<p[^>]*>/g, "")
+        .replace(/<\/p>/g, "<br />");
 
       comments.val(value);
     });

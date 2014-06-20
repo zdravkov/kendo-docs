@@ -1,30 +1,27 @@
 ---
-title: Overview
-meta_title: How to use the FlatColorPicker PHP class, server-side wrapper for Kendo UI FlatColorPicker widget
-meta_description: Getting started with Kendo UI FlatColorPicker for PHP in quick steps - configure Kendo UI FlatColorPicker widget and operate Kendo UI FlatColorPicker events.
-slug: php-flatcolorpicker-overview
-publish: true
-relatedDocs: php-ui-flatcolorpicker
+nav_title: Overview
+title: How to use the FlatColorPicker PHP class, server-side wrapper for Kendo UI FlatColorPicker widget
+description: Getting started with Kendo UI FlatColorPicker for PHP in quick steps - configure Kendo UI FlatColorPicker widget and operate Kendo UI FlatColorPicker events.
 ---
 
 # FlatColorPicker
 
-The Kendo FlatColorPicker for PHP is a server-side wrapper for the [Kendo UI FlatColorPicker](/kendo-ui/api/web/flatcolorpicker) widget.
+The Kendo FlatColorPicker for PHP is a server-side wrapper for the [Kendo UI FlatColorPicker](/api/web/flatcolorpicker) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo FlatColorPicker:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 
-2. Create a [flatcolorpicker](/kendo-ui/api/wrappers/php/Kendo/UI/FlatColorPicker).
+2. Create a [flatcolorpicker](/api/wrappers/php/Kendo/UI/FlatColorPicker).
 
         <?php
         $flatcolorpicker = new \Kendo\UI\FlatColorPicker('flatcolorpicker');
         $flatcolorpicker->value('#ff0000');
         ?>
 
-3. Output the flatcolorpicker by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the flatcolorpicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $flatcolorpicker->render();
@@ -33,7 +30,7 @@ Here is how to configure a simple Kendo FlatColorPicker:
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo FlatColorPicker instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/flatcolorpicker#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/flatcolorpicker#methods) to control its behavior.
 
 
 ### Example
@@ -51,7 +48,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/f
 
 ## Handling Events
 
-You can subscribe to all flatcolorpicker [events](/kendo-ui/api/web/flatcolorpicker#events).
+You can subscribe to all flatcolorpicker [events](/api/web/flatcolorpicker#events).
 
 ### Example - subscribing by specifying JavaScript function name
 

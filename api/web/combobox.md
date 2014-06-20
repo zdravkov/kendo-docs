@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.ComboBox
-meta_title: Configuration, methods and events of Kendo UI ComboBox
-meta_description: Learn to configure Kendo UI ComboBox widget, use the documentation guide to operate different types of methods and get familiar with all events, used in ComboBox UI widget.
-slug: api-web-combobox
-relatedDocs: gs-web-combobox-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.ComboBox
+title: Configuration, methods and events of Kendo UI ComboBox
+description: Learn to configure Kendo UI ComboBox widget, use the documentation guide to operate different types of methods and get familiar with all events, used in ComboBox UI widget.
 ---
 
 # kendo.ui.ComboBox
 
-Represents the Kendo UI ComboBox widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI ComboBox widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
@@ -65,7 +61,7 @@ Configures the opening and closing animations of the suggestion popup. Setting t
 
 The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.close.duration `Number` *(default: 100)*
 
@@ -93,7 +89,7 @@ The animation played when the suggestion popup is opened.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.open.duration `Number` *(default: 200)*
 
@@ -115,7 +111,7 @@ Controls whether to bind the widget to the data source on initialization.
 ### cascadeFrom `String`
 
 Use it to set the Id of the parent ComboBox widget.
-[Help topic showing how cascading functionality works](/kendo-ui/getting-started/web/combobox/cascading)
+[Help topic showing how cascading functionality works](/getting-started/web/combobox/cascading)
 
 #### Example
 
@@ -146,8 +142,8 @@ Use it to set the Id of the parent ComboBox widget.
 
 ### cascadeFromField `String`
 
-Defines the field to be used to filter the data source. If not defiend the [parent's dataValueField option will be used](/kendo-ui/api/web/combobox#configuration-dataValueField).
-[Help topic showing how cascading functionality works](/kendo-ui/web/combobox/cascading)
+Defines the field to be used to filter the data source. If not defiend the [parent's dataValueField option will be used](/api/web/combobox#configuration-dataValueField).
+[Help topic showing how cascading functionality works](/web/combobox/cascading)
 
 #### Example
 
@@ -179,12 +175,12 @@ Defines the field to be used to filter the data source. If not defiend the [pare
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
-The data source of the widget which is used to display a list of values. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/kendo-ui/api/framework/datasource)
+The data source of the widget which is used to display a list of values. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
 
-If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/kendo-ui/api/framework/datasource) instance using that value as data source configuration.
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/api/framework/datasource) instance using that value as data source configuration.
 
-If the `dataSource` option is an existing [kendo.data.DataSource](/kendo-ui/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
 
 #### Example - set dataSource as a JavaScript object
 
@@ -434,7 +430,7 @@ Specifies a static HTML content, which will be rendered as a header of the popup
 
 ### template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) used to render the items. By default the widget displays only the text of the data item (configured via `dataTextField`).
+The [template](/api/framework/kendo#methods-template) used to render the items. By default the widget displays only the text of the data item (configured via `dataTextField`).
 
 #### Example - specify template as a function
 
@@ -502,7 +498,7 @@ The value of the widget.
 
 ### valuePrimitive `Boolean`*(default: false)*
 
-Specifies the [value binding](/kendo-ui/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
+Specifies the [value binding](/getting-started/framework/mvvm/bindings/value) behavior for the widget when the initial model value is null. If set to true, the View-Model field will be updated with the selected item value field. If set to false, the View-Model field will be updated with the selected item.
 
 #### Example - specify that the View-Model field should be updated with the selected item value
 
@@ -530,7 +526,7 @@ Specifies the [value binding](/kendo-ui/getting-started/framework/mvvm/bindings/
 
 ### dataSource `kendo.data.DataSource`
 
-The [data source](/kendo-ui/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
+The [data source](/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
 
 > Changes of the data source will be reflected in the widget.
 
@@ -1034,7 +1030,7 @@ Fired when the value of the widget is changed by the user.
 The event handler function context (available via the `this` keyword) will be set to the widget instance.
 
 > **Important:** The event is not fired when the value of the widget is changed from code.
-> **Important:** The event is not fired when the value of the widget is changed programmatically. If you need to handle changes made by API, wire the [cascade](/kendo-ui/api/web/combobox#events-cascade) event.
+> **Important:** The event is not fired when the value of the widget is changed programmatically. If you need to handle changes made by API, wire the [cascade](/api/web/combobox#events-cascade) event.
 
 #### Event Data
 

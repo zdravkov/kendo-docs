@@ -1,9 +1,6 @@
 ---
-title: Overview
-slug: gs-dataviz-stockchart-overview
-relatedDocs: api-dataviz-stockchart
+nav_title: Overview
 related: chart-overview
-publish: true
 ---
 
 # Stock Chart Overview
@@ -14,7 +11,7 @@ The Stock Chart is a specialized widget for visualizing stock price and related 
 
 It includes extensive touch support and a navigator pane for easy browsing of extended time periods.
 
-The widget extends the [Chart widget](/kendo-ui/getting-started/dataviz/chart/overview) and shares most if its features. 
+The widget extends the [Chart widget](/getting-started/dataviz/chart/overview) and shares most if its features. 
 
 ![Stock Chart](/getting-started/dataviz/stockchart/stock-chart.png)
 
@@ -75,7 +72,7 @@ The name of the field is specified using the `dateField` option:
 	
 It can be omitted if the field name is "date" (the default value).
 
-> Note: Data points must be sorted in ascending order by date. Consider sorting the data on the server or use the DataSource [sort option](/kendo-ui/api/framework/datasource#sort-array--objectdefault).
+> Note: Data points must be sorted in ascending order by date. Consider sorting the data on the server or use the DataSource [sort option](/api/framework/datasource#sort-array--objectdefault).
 
 #### Navigator binding
 

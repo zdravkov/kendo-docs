@@ -1,8 +1,5 @@
 ---
-title: linearGauge-pointer-border
-slug: jsp-linearGauge-pointer-border
-tags: api, java
-publish: true
+nav_title: linearGauge-pointer-border
 ---
 
 # \<kendo:linearGauge-pointer-border\>

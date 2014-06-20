@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-extremes
-slug: jsp-chart-seriesItem-extremes
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-extremes
 ---
 
 # \<kendo:chart-seriesItem-extremes\>
@@ -67,7 +64,7 @@ The extremes shape.The supported values are:
 
 The border of the extremes.
 
-More documentation is available at [kendo:chart-seriesItem-extremes-border](/kendo-ui/api/wrappers/jsp/chart/seriesitem-extremes-border).
+More documentation is available at [kendo:chart-seriesItem-extremes-border](/api/wrappers/jsp/chart/seriesitem-extremes-border).
 
 #### Example
 

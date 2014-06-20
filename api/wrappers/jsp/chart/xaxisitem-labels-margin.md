@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-labels-margin
-slug: jsp-chart-xAxisItem-labels-margin
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-labels-margin
 ---
 
 # \<kendo:chart-xAxisItem-labels-margin\>

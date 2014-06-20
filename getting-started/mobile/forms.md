@@ -1,9 +1,7 @@
 ---
-title: Forms
-meta_title: User guide to supported and styled Kendo UI Mobile forms
-meta_description: Detailed steps how to use Kendo UI Mobile Forms in mobile app development.
-slug: mobile-forms
-publish: true
+nav_title: Forms
+title: User guide to supported and styled Kendo UI Mobile forms
+description: Detailed steps how to use Kendo UI Mobile Forms in mobile app development.
 ---
 
 # Mobile forms support

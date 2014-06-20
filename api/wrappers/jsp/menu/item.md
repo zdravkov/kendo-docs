@@ -1,8 +1,5 @@
 ---
-title: menu-item
-slug: jsp-menu-item
-tags: api, java
-publish: true
+nav_title: menu-item
 ---
 
 # \<kendo:menu-item\>

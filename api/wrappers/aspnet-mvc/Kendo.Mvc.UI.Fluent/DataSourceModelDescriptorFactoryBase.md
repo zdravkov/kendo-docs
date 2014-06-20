@@ -1,7 +1,5 @@
 ---
-title:DataSourceModelDescriptorFactoryBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.datasourcemodeldescriptorfactorybase
-publish:true
+nav_title: DataSourceModelDescriptorFactoryBase
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactoryBase
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the DataSource Model definition.
 
 
 
+
 ## Methods
 
-### Id(`System.String`)
+
+### Id(System.String)
 Specify the member used to identify an unique Model instance.
 
 

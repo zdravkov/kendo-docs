@@ -1,18 +1,14 @@
 ---
-title: Overview
-meta_title: Summary of Kendo UI Notification functionality
-meta_description: Find out how to use the Kendo UI Notification widget
-slug: gs-web-notification-overview
-relatedDocs: api-web-notification
-tags: getting-started,web,notification
-publish: true
+nav_title: Overview
+title: Summary of Kendo UI Notification functionality
+description: Find out how to use the Kendo UI Notification widget
 ---
 
 # Notification Overview
 
 The **Kendo UI Notification** provides a styled UI widget with arbitrary content, which can provide information to the user on various occasions.
 
-*It is assumed that the reader of this page is familiar with the [fundamental Kendo UI widget concepts](/kendo-ui/getting-started/widgets).*
+*It is assumed that the reader of this page is familiar with the [fundamental Kendo UI widget concepts](/getting-started/widgets).*
 
 ## Getting Started
 
@@ -163,7 +159,7 @@ and manage its own currently visible notifications independently.
 
 ## Templates
 
-*This documentation section assumes that you are familiar with [Kendo UI templates](/kendo-ui/getting-started/framework/templates/overview)*.
+*This documentation section assumes that you are familiar with [Kendo UI templates](/getting-started/framework/templates/overview)*.
 
 The **Notification** widget allows configuring multiple templates. Each template will be used together with its corresponding [notification type](#notification-types) (either build-in or custom).
 If you define a custom template for a built-in notification type, you will no longer be able to use the corresponding built-in template,
@@ -246,6 +242,6 @@ The **Notification** widgets exposes two events - `show` and `hide`. The `show` 
 ## Accessing the Notification instance
 
 Similar to all other Kendo UI widgets, an existing **Notification** instance is accessed via the `.data("kendoNotification")` jQuery method, executed by the jQuery object of the originating element.
-See [Getting reference to a Kendo UI widget](/kendo-ui/getting-started/widgets#getting-reference-to-a-kendo-ui-widget).
+See [Getting reference to a Kendo UI widget](/getting-started/widgets#getting-reference-to-a-kendo-ui-widget).
 
-For further reading and related information, please refer to the [Notification API](/kendo-ui/api/web/notification/).
+For further reading and related information, please refer to the [Notification API](/api/web/notification/).

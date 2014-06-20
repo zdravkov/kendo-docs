@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Line
-slug:api-dataviz-diagram-line
-publish: true
+nav_title: kendo.dataviz.diagram.Line
 ---
 
 # kendo.dataviz.diagram.Line

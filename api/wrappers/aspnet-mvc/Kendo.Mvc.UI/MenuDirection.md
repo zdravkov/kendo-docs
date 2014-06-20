@@ -1,20 +1,28 @@
 ---
-title:MenuDirection
-slug:aspnetmvc-kendo.mvc.ui.menudirection
-publish:true
+nav_title: MenuDirection
 ---
 
 # Kendo.Mvc.UI.MenuDirection
 Represents the menu item opening direction.
 
+
 ## Fields
+
+
 ### Bottom
+#
 Bottom direction
+
 ### Left
+#
 Left direction
+
 ### Right
+#
 Right direction
+
 ### Top
+#
 Top direction
 
 

@@ -1,15 +1,12 @@
 ---
-title: Use the ListView of Kendo UI Web
-meta_title: Using Kendo UI ListView widget in your app | Kendo UI Documentation
-meta_description: Learn how to display a custom layout of data-bound items through templates and easily implement Kendo UI Listview widget in your application.
-slug: howto-use-the-listview-of-kendo-ui-web
-tags: How-To
-publish: true
+nav_title: Use the ListView of Kendo UI Web
+title: Using Kendo UI ListView widget in your app | Kendo UI Documentation
+description: Learn how to display a custom layout of data-bound items through templates and easily implement Kendo UI Listview widget in your application.
 ---
 
 # How-To: Use the ListView of Kendo UI Web
 
-In this how-to, we'll examine how to use the [ListView](/kendo-ui/api/web/listview) of Kendo UI Web.
+In this how-to, we'll examine how to use the [ListView](/api/web/listview) of Kendo UI Web.
 
 The ListView is a widget that was recently introduced in the March 2012 release of Kendo UI Web. Its purpose is to display a custom layout of data-bound items through templates. The ListView is ideally suited for scenarios where you wish to display a list of items in a consistent manner. Examples of its use can be seen in commonplace design structures applied on the Internet today; search engine results, tweets from Twitter, Facebook updates, inbox items in Gmail, card lists in Trello, and so on.
 

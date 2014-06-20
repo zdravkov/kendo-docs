@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-minorTicks
-slug: jsp-chart-categoryAxisItem-minorTicks
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-minorTicks
 ---
 
 # \<kendo:chart-categoryAxisItem-minorTicks\>

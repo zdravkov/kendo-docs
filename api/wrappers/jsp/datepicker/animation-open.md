@@ -1,8 +1,5 @@
 ---
-title: datePicker-animation-open
-slug: jsp-datePicker-animation-open
-tags: api, java
-publish: true
+nav_title: datePicker-animation-open
 ---
 
 # \<kendo:datePicker-animation-open\>

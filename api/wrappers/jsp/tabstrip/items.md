@@ -1,8 +1,5 @@
 ---
-title: tabStrip-items
-slug: jsp-tabStrip-items
-tags: api, java
-publish: true
+nav_title: tabStrip-items
 ---
 
 # \<kendo:tabStrip-items\>
@@ -23,7 +20,7 @@ Contains the items of the tabstrip widget
 
 Contains the items of the tabstrip widget
 
-More documentation is available at [kendo:tabStrip-item](/kendo-ui/api/wrappers/jsp/tabstrip/item).
+More documentation is available at [kendo:tabStrip-item](/api/wrappers/jsp/tabstrip/item).
 
 #### Example
 

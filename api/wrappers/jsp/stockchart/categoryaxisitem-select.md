@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-select
-slug: jsp-stockChart-categoryAxisItem-select
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-select
 ---
 
 # \<kendo:stockChart-categoryAxisItem-select\>
@@ -59,7 +56,7 @@ a value larger than the last category index (date).
 
 Mousewheel zoom settings for the selection.
 
-More documentation is available at [kendo:stockChart-categoryAxisItem-select-mousewheel](/kendo-ui/api/wrappers/jsp/stockchart/categoryaxisitem-select-mousewheel).
+More documentation is available at [kendo:stockChart-categoryAxisItem-select-mousewheel](/api/wrappers/jsp/stockchart/categoryaxisitem-select-mousewheel).
 
 #### Example
 

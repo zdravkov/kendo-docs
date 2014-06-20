@@ -1,8 +1,5 @@
 ---
-title: calendar-month
-slug: jsp-calendar-month
-tags: api, java
-publish: true
+nav_title: calendar-month
 ---
 
 # \<kendo:calendar-month\>

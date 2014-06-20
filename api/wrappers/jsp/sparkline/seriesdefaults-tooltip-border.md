@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesDefaults-tooltip-border
-slug: jsp-sparkline-seriesDefaults-tooltip-border
-tags: api, java
-publish: true
+nav_title: sparkline-seriesDefaults-tooltip-border
 ---
 
 # \<kendo:sparkline-seriesDefaults-tooltip-border\>

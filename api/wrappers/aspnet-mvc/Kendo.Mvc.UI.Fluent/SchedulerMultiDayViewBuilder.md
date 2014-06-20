@@ -1,7 +1,5 @@
 ---
-title:SchedulerMultiDayViewBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulermultidayviewbuilder
-publish:true
+nav_title: SchedulerMultiDayViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerMultiDayViewBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the SchedulerMultiDayView.
 
 
 
+
 ## Methods
 
-### AllDayEventTemplate(`System.String`)
+
+### AllDayEventTemplate(System.String)
 The template used to render the "all day" scheduler events.
 
 
@@ -24,7 +24,7 @@ The allDayEventTemplate
 
 
 
-### AllDayEventTemplateId(`System.String`)
+### AllDayEventTemplateId(System.String)
 The Id of the template used to render the "all day" scheduler events.
 
 
@@ -37,7 +37,7 @@ The allDayEventTemplateId
 
 
 
-### AllDaySlot(`System.Boolean`)
+### AllDaySlot(System.Boolean)
 If set to true the scheduler will display a slot for "all day" events. Default value is true.
 
 
@@ -50,7 +50,7 @@ The allDaySlot
 
 
 
-### DateHeaderTemplate(`System.String`)
+### DateHeaderTemplate(System.String)
 The template used to render the date header cells.
 
 
@@ -63,7 +63,7 @@ The dateHeaderTemplate
 
 
 
-### DateHeaderTemplateId(`System.String`)
+### DateHeaderTemplateId(System.String)
 The Id of the template used to render the date header cells.
 
 
@@ -76,7 +76,7 @@ The dateHeaderTemplateId
 
 
 
-### MajorTick(`System.Int32`)
+### MajorTick(System.Int32)
 The number of minutes represented by a major tick.
 
 
@@ -89,7 +89,7 @@ The majorTick
 
 
 
-### AllDaySlotTemplate(`System.String`)
+### AllDaySlotTemplate(System.String)
 The template used to render the all day slot content
 
 
@@ -102,7 +102,7 @@ The slotTemplate
 
 
 
-### AllDaySlotTemplateId(`System.String`)
+### AllDaySlotTemplateId(System.String)
 The Id of the template used to render the all day slot content.
 
 
@@ -115,7 +115,7 @@ The id of template
 
 
 
-### SlotTemplate(`System.String`)
+### SlotTemplate(System.String)
 The template used to render the slot content
 
 
@@ -128,7 +128,7 @@ The slotTemplate
 
 
 
-### SlotTemplateId(`System.String`)
+### SlotTemplateId(System.String)
 The Id of the template used to render the slot content.
 
 
@@ -141,7 +141,7 @@ The id of template
 
 
 
-### MajorTimeHeaderTemplate(`System.String`)
+### MajorTimeHeaderTemplate(System.String)
 The template used to render the major ticks.
 
 
@@ -154,7 +154,7 @@ The majorTimeHeaderTemplate
 
 
 
-### MajorTimeHeaderTemplateId(`System.String`)
+### MajorTimeHeaderTemplateId(System.String)
 The Id of the template used to render the major ticks.
 
 
@@ -167,7 +167,7 @@ The majorTimeHeaderTemplateId
 
 
 
-### MinorTickCount(`System.Int32`)
+### MinorTickCount(System.Int32)
 The number of time slots to display per major tick.
 
 
@@ -180,7 +180,7 @@ The minorTickCount
 
 
 
-### MinorTimeHeaderTemplate(`System.String`)
+### MinorTimeHeaderTemplate(System.String)
 The template used to render the minor ticks.
 
 
@@ -193,7 +193,7 @@ The minorTimeHeaderTemplate
 
 
 
-### MinorTimeHeaderTemplateId(`System.String`)
+### MinorTimeHeaderTemplateId(System.String)
 The Id of the template used to render the minor ticks.
 
 
@@ -206,7 +206,7 @@ The minorTimeHeaderTemplateId
 
 
 
-### StartTime(`System.DateTime`)
+### StartTime(System.DateTime)
 The start time of the view. The scheduler will display events starting after the startTime.
 
 
@@ -240,7 +240,7 @@ The startTime
         )
 
 
-### StartTime(`System.Int32,System.Int32,System.Int32`)
+### StartTime(System.Int32,System.Int32,System.Int32)
 The start time of the view. The scheduler will display events starting after the startTime.
 
 
@@ -280,7 +280,7 @@ The seconds
         )
 
 
-### EndTime(`System.DateTime`)
+### EndTime(System.DateTime)
 The end time of the view. The scheduler will display events ending before the endTime.
 
 
@@ -314,7 +314,7 @@ The endTime
         )
 
 
-### EndTime(`System.Int32,System.Int32,System.Int32`)
+### EndTime(System.Int32,System.Int32,System.Int32)
 The end time of the view. The scheduler will display events ending before the endTime.
 
 
@@ -354,7 +354,7 @@ The seconds
         )
 
 
-### WorkDayStart(`System.DateTime`)
+### WorkDayStart(System.DateTime)
 The start time of the business hours. The scheduler will display events after the workDayStart if "WorkDayCommand" button is clicked.
 
 
@@ -367,7 +367,7 @@ The WorkDayStart
 
 
 
-### WorkDayStart(`System.Int32,System.Int32,System.Int32`)
+### WorkDayStart(System.Int32,System.Int32,System.Int32)
 The start time of the business hours. The scheduler will display events after the workDayStart if "WorkDayCommand" button is clicked.
 
 
@@ -386,7 +386,7 @@ The seconds
 
 
 
-### WorkDayEnd(`System.DateTime`)
+### WorkDayEnd(System.DateTime)
 The end time of the business hours. The scheduler will display events before the workDayEnd if "WorkDayCommand" button is clicked.
 
 
@@ -399,7 +399,7 @@ The WorkDayEnd
 
 
 
-### WorkDayEnd(`System.Int32,System.Int32,System.Int32`)
+### WorkDayEnd(System.Int32,System.Int32,System.Int32)
 The end time of the business hours. The scheduler will display events before the workDayEnd if "WorkDayCommand" button is clicked.
 
 
@@ -418,7 +418,7 @@ The seconds
 
 
 
-### WorkDayCommand(`System.Boolean`)
+### WorkDayCommand(System.Boolean)
 If set to false the scheduler will not display the "WorkDayCommand" button. Default value is true.
 
 
@@ -431,7 +431,7 @@ The showWorkDayCommand
 
 
 
-### ShowWorkHours(`System.Boolean`)
+### ShowWorkHours(System.Boolean)
 If set to true the view will be initially shown in business hours mode.
 
 
@@ -451,7 +451,7 @@ If set the view will be initially shown in business hours mode.
 
 
 
-### Footer(`System.Boolean`)
+### Footer(System.Boolean)
 If set to false the scheduler will not display the "footer" area. Default value is true.
 
 
@@ -464,7 +464,7 @@ The footer
 
 
 
-### WorkWeekStart(`System.Int32`)
+### WorkWeekStart(System.Int32)
 Sets the start day of work week by index.
 
 
@@ -477,7 +477,7 @@ The workWeekStartDay
 
 
 
-### WorkWeekEnd(`System.Int32`)
+### WorkWeekEnd(System.Int32)
 Sets the end day of work week by index.
 
 

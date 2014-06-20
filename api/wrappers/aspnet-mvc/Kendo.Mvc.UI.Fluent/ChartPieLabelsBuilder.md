@@ -1,7 +1,5 @@
 ---
-title:ChartPieLabelsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartpielabelsbuilder
-publish:true
+nav_title: ChartPieLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring the chart data labels.
 
 
 
+
 ## Methods
 
-### Align(`Kendo.Mvc.UI.ChartPieLabelsAlign`)
+
+### Align(Kendo.Mvc.UI.ChartPieLabelsAlign)
 Sets the labels align
 
 
 #### Parameters
 
-##### align [Kendo.Mvc.UI.ChartPieLabelsAlign](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieLabelsAlign)
+##### align [Kendo.Mvc.UI.ChartPieLabelsAlign](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieLabelsAlign)
 The labels align.
 
 
@@ -37,7 +37,7 @@ The labels align.
             %>
 
 
-### Distance(`System.Int32`)
+### Distance(System.Int32)
 Sets the labels distance
 
 
@@ -63,13 +63,13 @@ The labels distance.
             %>
 
 
-### Position(`Kendo.Mvc.UI.ChartPieLabelsPosition`)
+### Position(Kendo.Mvc.UI.ChartPieLabelsPosition)
 Sets the labels position
 
 
 #### Parameters
 
-##### position [Kendo.Mvc.UI.ChartPieLabelsPosition](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieLabelsPosition)
+##### position [Kendo.Mvc.UI.ChartPieLabelsPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartPieLabelsPosition)
 The labels position.
 
 

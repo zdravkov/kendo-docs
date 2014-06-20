@@ -1,22 +1,26 @@
 ---
-title:GaugeLinearScaleBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugelinearscalebuilder
-publish:true
+nav_title: GaugeLinearScaleBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder
 Defines the fluent interface for configuring the gauge scale.
 
 
+
 ## Properties
+
+
 ### linearGauge
+
 The parent Guage
+
 
 
 
 ## Methods
 
-### Mirror(`System.Boolean`)
+
+### Mirror(System.Boolean)
 Sets the mirror of the gauge
 
 
@@ -37,7 +41,7 @@ The mirror.
     %>
 
 
-### Vertical(`System.Boolean`)
+### Vertical(System.Boolean)
 Sets the orientation of the gauge
 
 
@@ -58,13 +62,13 @@ The vertical.
     %>
 
 
-### Labels(`System.Action<Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder>`)
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder\>)
 Configures the labels.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearScaleLabelsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeLinearScaleLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeLinearScaleLabelsBuilder)>
 The configuration action.
 
 

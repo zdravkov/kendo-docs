@@ -1,12 +1,8 @@
 ---
-title: Working with selection
-meta_title: Working with selection and ranges in the Editor UI widget | Kendo UI Documentation
-meta_description: This help topic explains how to use the Editor range objects.
-slug: gs-web-editor-selection
-relatedDocs: api-web-editor, gs-web-editor-overview
-tags: getting-started,web
-ordinal: 4
-publish: true
+nav_title: Working with selection
+title: Working with selection and ranges in the Editor UI widget | Kendo UI Documentation
+description: This help topic explains how to use the Editor range objects.
+nav_position: 4
 ---
 
 # Overview

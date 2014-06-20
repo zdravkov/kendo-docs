@@ -1,8 +1,5 @@
 ---
-title: stockChart-seriesDefaults-labels
-slug: jsp-stockChart-seriesDefaults-labels
-tags: api, java
-publish: true
+nav_title: stockChart-seriesDefaults-labels
 ---
 
 # \<kendo:stockChart-seriesDefaults-labels\>
@@ -91,7 +88,7 @@ The visibility of the labels.
 
 The border of the labels.
 
-More documentation is available at [kendo:stockChart-seriesDefaults-labels-border](/kendo-ui/api/wrappers/jsp/stockchart/seriesdefaults-labels-border).
+More documentation is available at [kendo:stockChart-seriesDefaults-labels-border](/api/wrappers/jsp/stockchart/seriesdefaults-labels-border).
 
 #### Example
 

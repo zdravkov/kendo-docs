@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxis
-slug: jsp-stockChart-navigator-categoryAxis
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxis
 ---
 
 # \<kendo:stockChart-navigator-categoryAxis\>
@@ -23,7 +20,7 @@ The category axis configuration options.
 
 The category axis configuration options.
 
-More documentation is available at [kendo:stockChart-navigator-categoryAxisItem](/kendo-ui/api/wrappers/jsp/stockchart/navigator-categoryaxisitem).
+More documentation is available at [kendo:stockChart-navigator-categoryAxisItem](/api/wrappers/jsp/stockchart/navigator-categoryaxisitem).
 
 #### Example
 

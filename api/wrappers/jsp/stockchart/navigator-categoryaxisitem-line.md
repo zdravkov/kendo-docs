@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-line
-slug: jsp-stockChart-navigator-categoryAxisItem-line
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-line
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-line\>

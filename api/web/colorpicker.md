@@ -1,10 +1,6 @@
 ---
-title: kendo.ui.ColorPicker
-meta_title: Configuration, methods and events of Kendo UI ColorPicker
-slug: api-web-colorpicker
-relatedDocs: gs-web-colorpicker-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.ColorPicker
+title: Configuration, methods and events of Kendo UI ColorPicker
 ---
 
 # kendo.ui.ColorPicker
@@ -283,7 +279,7 @@ This does not trigger the "change" event.
 
 ### color
 
-Get or set the selected color. If no argument is given, this returns the currently selected color as a [`kendo.Color` object](/kendo-ui/api/framework/color).
+Get or set the selected color. If no argument is given, this returns the currently selected color as a [`kendo.Color` object](/api/framework/color).
 
 #### Parameters
 

@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-negativeValues
-slug: jsp-chart-seriesItem-negativeValues
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-negativeValues
 ---
 
 # \<kendo:chart-seriesItem-negativeValues\>

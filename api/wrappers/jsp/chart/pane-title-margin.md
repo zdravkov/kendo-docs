@@ -1,8 +1,5 @@
 ---
-title: chart-pane-title-margin
-slug: jsp-chart-pane-title-margin
-tags: api, java
-publish: true
+nav_title: chart-pane-title-margin
 ---
 
 # \<kendo:chart-pane-title-margin\>

@@ -1,8 +1,5 @@
 ---
-title: DiagramConnectionPoint
-slug: php-dataviz-ui-diagramconnectionpoint
-tags: api, php
-publish: true
+nav_title: DiagramConnectionPoint
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionPoint

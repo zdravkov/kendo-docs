@@ -1,12 +1,10 @@
 ---
-title: Overview
-slug: mvc-sortable-overview
-publish: true
+nav_title: Overview
 ---
 
 # Sortable
 
-The Sortable HtmlHelper extension is a server-side wrapper for the [Kendo UI Sortable](/kendo-ui/api/web/sortable) widget.
+The Sortable HtmlHelper extension is a server-side wrapper for the [Kendo UI Sortable](/api/web/sortable) widget.
 
 ## Getting Started
 
@@ -16,7 +14,7 @@ Unlike most of the HtmlHelpers the Sortable one does not render HTML mark-up. **
 
 Here is how to configure the Kendo Sortable:
 
- 1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+ 1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
  2.  Create a new action method:
 
         public ActionResult Index()
@@ -81,7 +79,7 @@ Here is how to configure the Kendo Sortable:
 ## Accessing an Existing Sortable
 
 You can reference an existing Sortable instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/sortable#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/sortable#methods) to control its behavior.
 
 ### Accessing an existing Sortable instance
 
@@ -96,7 +94,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/s
 
 ## Handling Kendo UI Sortable events
 
-You can subscribe to all [events](/kendo-ui/api/web/sortable#events) exposed by Kendo UI Sortable:
+You can subscribe to all [events](/api/web/sortable#events) exposed by Kendo UI Sortable:
 
 ### WebForms - subscribe by handler name
 

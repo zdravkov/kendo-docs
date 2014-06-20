@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-notes-icon
-slug: jsp-chart-yAxisItem-notes-icon
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-notes-icon
 ---
 
 # \<kendo:chart-yAxisItem-notes-icon\>
@@ -59,7 +56,7 @@ The icon visibility.
 
 The border of the icon.
 
-More documentation is available at [kendo:chart-yAxisItem-notes-icon-border](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-notes-icon-border).
+More documentation is available at [kendo:chart-yAxisItem-notes-icon-border](/api/wrappers/jsp/chart/yaxisitem-notes-icon-border).
 
 #### Example
 

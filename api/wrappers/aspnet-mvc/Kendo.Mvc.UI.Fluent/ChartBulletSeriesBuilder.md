@@ -1,22 +1,26 @@
 ---
-title:ChartBulletSeriesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartbulletseriesbuilder
-publish:true
+nav_title: ChartBulletSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBulletSeriesBuilder
 Defines the fluent interface for configuring bullet series.
 
 
+
 ## Properties
+
+
 ### Series
+
 Gets or sets the series.
+
 
 
 
 ## Methods
 
-### Gap(`System.Double`)
+
+### Gap(System.Double)
 Set distance between category clusters. 
             
             A value of 1 means that there is a total of 1 bullet width / vertical bullet height between categories.
@@ -33,7 +37,7 @@ Set distance between category clusters.
     %>
 
 
-### Spacing(`System.Double`)
+### Spacing(System.Double)
 Sets a value indicating the distance between bullets / categories.
 
 
@@ -53,7 +57,7 @@ Value of 1 means that the distance between bullets is equal to their width.
     %>
 
 
-### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the bullets border.
 
 
@@ -65,7 +69,7 @@ The bullets border width.
 ##### color `System.String`
 The bullets border color (CSS syntax).
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The bullets border dash type.
 
 
@@ -79,13 +83,13 @@ The bullets border dash type.
     %>
 
 
-### Overlay(`Kendo.Mvc.UI.ChartBarSeriesOverlay`)
+### Overlay(Kendo.Mvc.UI.ChartBarSeriesOverlay)
 Sets the bullet effects overlay
 
 
 #### Parameters
 
-##### overlay [Kendo.Mvc.UI.ChartBarSeriesOverlay](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarSeriesOverlay)
+##### overlay [Kendo.Mvc.UI.ChartBarSeriesOverlay](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarSeriesOverlay)
 The bullet effects overlay. The default is ChartBarSeriesOverlay.Glass
 
 
@@ -99,7 +103,7 @@ The bullet effects overlay. The default is ChartBarSeriesOverlay.Glass
     %>
 
 
-### Name(`System.String`)
+### Name(System.String)
 Sets the series title displayed in the legend.
 
 
@@ -118,7 +122,7 @@ The title.
     %>
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the series opacity.
 
 
@@ -138,7 +142,7 @@ The series opacity in the range from 0 (transparent) to 1 (opaque).
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the bullet fill color
 
 
@@ -158,13 +162,13 @@ The bar bullet color (CSS syntax).
     %>
 
 
-### Tooltip(`System.Action<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder>`)
+### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartTooltipBuilder\>)
 Configure the data point tooltip for the series.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartTooltipBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartTooltipBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartTooltipBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartTooltipBuilder)>
 Use the configurator to set data tooltip options.
 
 
@@ -182,7 +186,7 @@ Use the configurator to set data tooltip options.
     %>
 
 
-### Tooltip(`System.Boolean`)
+### Tooltip(System.Boolean)
 Sets the data point tooltip visibility.
 
 
@@ -202,7 +206,7 @@ A value indicating if the data point tooltip should be displayed.
     %>
 
 
-### Axis(`System.String`)
+### Axis(System.String)
 Sets the axis name to use for this series.
 
 
@@ -224,13 +228,13 @@ The axis name for this series.
     %>
 
 
-### Target(`System.Action<Kendo.Mvc.UI.Fluent.ChartBulletTargetBuilder>`)
+### Target(System.Action\<Kendo.Mvc.UI.Fluent.ChartBulletTargetBuilder\>)
 Configure the data point tooltip for the series.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBulletTargetBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBulletTargetBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBulletTargetBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBulletTargetBuilder)>
 Use the configurator to set data tooltip options.
 
 
@@ -245,6 +249,86 @@ Use the configurator to set data tooltip options.
             tooltip.Visible(true).Format("{0:C}");
         })
     )
+    %>
+
+
+### CurrentField(System.String)
+Sets the current field for the series
+
+
+#### Parameters
+
+##### currentField `System.String`
+The current field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Bullter(Model.Records).CurrentField("Current").TargetField("Target"))
+        .Render();
+    %>
+
+
+### TargetField(System.String)
+Sets the target field for the series
+
+
+#### Parameters
+
+##### targetField `System.String`
+The target field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Bullter(Model.Records).CurrentField("Current").TargetField("Target"))
+        .Render();
+    %>
+
+
+### ColorField(System.String)
+Sets the color field for the series
+
+
+#### Parameters
+
+##### colorField `System.String`
+The color field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Bar(Model.Records).Field("Value").ColorField("Color"))
+        .Render();
+    %>
+
+
+### NoteTextField(System.String)
+Sets the note text field for the series
+
+
+#### Parameters
+
+##### noteTextField `System.String`
+The note text field for the series
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Chart()
+        .Name("Chart")
+        .Series(series => series.Bar(Model.Records).Field("Value").NoteTextField("NoteText"))
+        .Render();
     %>
 
 

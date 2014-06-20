@@ -1,15 +1,11 @@
 ---
-title: kendo.ui.Notification
-meta_description: Configuration, methods and events of the Kendo UI Notification
-slug: api-web-notification
-relatedDocs: gs-web-notification-overview
-tags: api,web,notification
-publish: true
+nav_title: kendo.ui.Notification
+description: Configuration, methods and events of the Kendo UI Notification
 ---
 
 # kendo.ui.Notification
 
-*It is assumed that the reader of this page is familiar with the [Notification widget Overview](/kendo-ui/getting-started/web/notification/overview/).*
+*It is assumed that the reader of this page is familiar with the [Notification widget Overview](/getting-started/web/notification/overview/).*
 
 ## Configuration
 
@@ -262,7 +258,7 @@ The `"default"` setting takes into consideration the applied `position` settings
 
 Describes the HTML markup of the different notification types as Kendo UI template strings. The built-in types are `"info"`, `"success"`, `"warning"` and `"error"`.
 
-*This documentation section assumes that you are familiar with [Kendo UI templates](/kendo-ui/getting-started/framework/templates/overview)*.
+*This documentation section assumes that you are familiar with [Kendo UI templates](/getting-started/framework/templates/overview)*.
 
 #### Example - define several custom templates
 

@@ -1,8 +1,5 @@
 ---
-title: TimePickerAnimationClose
-slug: php-ui-timepickeranimationclose
-tags: api, php
-publish: true
+nav_title: TimePickerAnimationClose
 ---
 
 # \Kendo\UI\TimePickerAnimationClose

@@ -1,8 +1,5 @@
 ---
-title: StockChartCategoryAxisItemNotesLabelBorder
-slug: php-dataviz-ui-stockchartcategoryaxisitemnoteslabelborder
-tags: api, php
-publish: true
+nav_title: StockChartCategoryAxisItemNotesLabelBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesLabelBorder

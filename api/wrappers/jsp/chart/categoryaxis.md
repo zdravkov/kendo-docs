@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxis
-slug: jsp-chart-categoryAxis
-tags: api, java
-publish: true
+nav_title: chart-categoryAxis
 ---
 
 # \<kendo:chart-categoryAxis\>
@@ -23,7 +20,7 @@ The category axis configuration options.
 
 The category axis configuration options.
 
-More documentation is available at [kendo:chart-categoryAxisItem](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem).
+More documentation is available at [kendo:chart-categoryAxisItem](/api/wrappers/jsp/chart/categoryaxisitem).
 
 #### Example
 

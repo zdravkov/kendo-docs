@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-crosshair-tooltip
-slug: jsp-sparkline-valueAxisItem-crosshair-tooltip
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-crosshair-tooltip
 ---
 
 # \<kendo:sparkline-valueAxisItem-crosshair-tooltip\>
@@ -80,7 +77,7 @@ A value indicating if the tooltip should be displayed.
 
 The border configuration options.
 
-More documentation is available at [kendo:sparkline-valueAxisItem-crosshair-tooltip-border](/kendo-ui/api/wrappers/jsp/sparkline/valueaxisitem-crosshair-tooltip-border).
+More documentation is available at [kendo:sparkline-valueAxisItem-crosshair-tooltip-border](/api/wrappers/jsp/sparkline/valueaxisitem-crosshair-tooltip-border).
 
 #### Example
 

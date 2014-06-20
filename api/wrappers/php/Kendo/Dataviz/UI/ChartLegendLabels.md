@@ -1,8 +1,5 @@
 ---
-title: ChartLegendLabels
-slug: php-dataviz-ui-chartlegendlabels
-tags: api, php
-publish: true
+nav_title: ChartLegendLabels
 ---
 
 # \Kendo\Dataviz\UI\ChartLegendLabels
@@ -69,7 +66,7 @@ The margin of the labels. A numeric value will set all margins.
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartLegendLabelsMargin](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartLegendLabelsMargin)
+#### Example - using [\Kendo\Dataviz\UI\ChartLegendLabelsMargin](/api/wrappers/php/Kendo/Dataviz/UI/ChartLegendLabelsMargin)
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartLegendLabels();
     $margin = new \Kendo\Dataviz\UI\ChartLegendLabelsMargin();

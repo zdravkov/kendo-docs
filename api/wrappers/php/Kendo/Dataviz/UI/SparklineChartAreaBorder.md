@@ -1,8 +1,5 @@
 ---
-title: SparklineChartAreaBorder
-slug: php-dataviz-ui-sparklinechartareaborder
-tags: api, php
-publish: true
+nav_title: SparklineChartAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineChartAreaBorder

@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemSelect
-slug: php-dataviz-ui-chartcategoryaxisitemselect
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemSelect
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemSelect
@@ -60,7 +57,7 @@ The mouse wheel configuration of the selection.
 ##### $value `\Kendo\Dataviz\UI\ChartCategoryAxisItemSelectMousewheel|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemSelectMousewheel](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemSelectMousewheel)
+#### Example - using [\Kendo\Dataviz\UI\ChartCategoryAxisItemSelectMousewheel](/api/wrappers/php/Kendo/Dataviz/UI/ChartCategoryAxisItemSelectMousewheel)
     <?php
     $select = new \Kendo\Dataviz\UI\ChartCategoryAxisItemSelect();
     $mousewheel = new \Kendo\Dataviz\UI\ChartCategoryAxisItemSelectMousewheel();

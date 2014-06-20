@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.DateTimePicker
-meta_title: Configuration, methods and events of Kendo UI DateTimePicker
-meta_description: Learn how to configure the UI DateTimePicker widget. Use methods to open, close, remove, enable, disable, set maximum or minimum values and more.
-slug: api-web-datetimepicker
-relatedDocs: gs-web-datetimepicker-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.DateTimePicker
+title: Configuration, methods and events of Kendo UI DateTimePicker
+description: Learn how to configure the UI DateTimePicker widget. Use methods to open, close, remove, enable, disable, set maximum or minimum values and more.
 ---
 
 # kendo.ui.DateTimePicker
 
-Represents the Kendo UI DateTimePicker widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI DateTimePicker widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
@@ -67,7 +63,7 @@ The animation played when a popup is closed.
 
 The effect(s) to use when playing the close animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.close.duration `Number`
 
@@ -95,7 +91,7 @@ The animation played when the popup is opened.
 
 The effect(s) to use when playing the open animation. Multiple effects should be separated with a space.
 
-[Complete list of available animations](/kendo-ui/api/framework/fx/common)
+[Complete list of available animations](/api/framework/fx/common)
 
 ### animation.open.duration `Number`
 
@@ -179,7 +175,7 @@ shows the decades from the century
 
 ### footer `String`
 
- The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the footer of the calendar. If false, the footer will not be rendered.
+ The [template](/api/framework/kendo#methods-template) which renders the footer of the calendar. If false, the footer will not be rendered.
 
 #### Example - specify footer template as a function
 

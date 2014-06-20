@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemCrosshair
-slug: php-dataviz-ui-chartvalueaxisitemcrosshair
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemCrosshair
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemCrosshair
@@ -60,7 +57,7 @@ The crosshar tooltip options.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemCrosshairTooltip|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemCrosshairTooltip](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemCrosshairTooltip)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemCrosshairTooltip](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemCrosshairTooltip)
     <?php
     $crosshair = new \Kendo\Dataviz\UI\ChartValueAxisItemCrosshair();
     $tooltip = new \Kendo\Dataviz\UI\ChartValueAxisItemCrosshairTooltip();

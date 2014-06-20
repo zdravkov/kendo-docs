@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-recurrenceEditor-end
-slug: jsp-scheduler-messages-recurrenceEditor-end
-tags: api, java
-publish: true
+nav_title: scheduler-messages-recurrenceEditor-end
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-end\>

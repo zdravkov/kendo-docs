@@ -1,22 +1,26 @@
 ---
-title:ChartDonutSeriesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartdonutseriesbuilder
-publish:true
+nav_title: ChartDonutSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartDonutSeriesBuilder
 Defines the fluent interface for configuring donut series.
 
 
+
 ## Properties
+
+
 ### Series
+
 Gets or sets the series.
+
 
 
 
 ## Methods
 
-### Margin(`System.Int32`)
+
+### Margin(System.Int32)
 Sets the margin of the donut series.
 
 
@@ -30,7 +34,7 @@ Sets the margin of the donut series.
     %>
 
 
-### HoleSize(`System.Int32`)
+### HoleSize(System.Int32)
 Sets the the size of the donut hole.
 
 
@@ -44,7 +48,7 @@ Sets the the size of the donut hole.
     %>
 
 
-### Size(`System.Int32`)
+### Size(System.Int32)
 Sets the size of the donut series.
 
 

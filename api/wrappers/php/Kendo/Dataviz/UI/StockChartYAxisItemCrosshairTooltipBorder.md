@@ -1,8 +1,5 @@
 ---
-title: StockChartYAxisItemCrosshairTooltipBorder
-slug: php-dataviz-ui-stockchartyaxisitemcrosshairtooltipborder
-tags: api, php
-publish: true
+nav_title: StockChartYAxisItemCrosshairTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartYAxisItemCrosshairTooltipBorder

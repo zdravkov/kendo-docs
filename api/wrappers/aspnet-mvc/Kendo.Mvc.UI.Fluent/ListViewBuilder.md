@@ -1,7 +1,5 @@
 ---
-title:ListViewBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.listviewbuilder
-publish:true
+nav_title: ListViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the 1.
 
 
 
+
 ## Methods
 
-### BindTo(`System.Collections.Generic.IEnumerable<T>`)
+
+### BindTo(System.Collections.Generic.IEnumerable\<T\>)
 Binds the ListView to a list of objects
 
 
@@ -30,7 +30,7 @@ The data source.
     %>
 
 
-### BindTo(`System.Collections.IEnumerable`)
+### BindTo(System.Collections.IEnumerable)
 Binds the ListView to a list of objects
 
 
@@ -49,7 +49,7 @@ The data source.
     %>
 
 
-### ClientTemplateId(`System.String`)
+### ClientTemplateId(System.String)
 Specifies ListView item template.
 
 
@@ -82,13 +82,13 @@ Allows paging of the data.
     %>
 
 
-### Pageable(`System.Action<Kendo.Mvc.UI.Fluent.PageableBuilder>`)
+### Pageable(System.Action\<Kendo.Mvc.UI.Fluent.PageableBuilder\>)
 Allows paging of the data.
 
 
 #### Parameters
 
-##### pagerAction System.Action<[Kendo.Mvc.UI.Fluent.PageableBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PageableBuilder)>
+##### pagerAction System.Action<[Kendo.Mvc.UI.Fluent.PageableBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/PageableBuilder)>
 Use builder to define paging settings.
 
 
@@ -129,13 +129,13 @@ Enables single item selection.
     %>
 
 
-### Selectable(`System.Action<Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder>`)
+### Selectable(System.Action\<Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder\>)
 Enables item selection.
 
 
 #### Parameters
 
-##### selectionAction System.Action<[Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ListViewSelectionSettingsBuilder)>
+##### selectionAction System.Action<[Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ListViewSelectionSettingsBuilder)>
 Use builder to define the selection mode.
 
 
@@ -151,7 +151,7 @@ Use builder to define the selection mode.
     %>
 
 
-### AutoBind(`System.Boolean`)
+### AutoBind(System.Boolean)
 Specifies if the ListView should be automatically bound on initial load. 
             This is only possible if AJAX binding is used, and widget is not initialy populated on the server.
 
@@ -165,7 +165,7 @@ If true ListView will be automatically data bound, otherwise false
 
 
 
-### TagName(`System.String`)
+### TagName(System.String)
 Specifies ListView wrapper element tag name.
 
 
@@ -178,7 +178,7 @@ Specifies ListView wrapper element tag name.
     %>
 
 
-### Editable(`System.Action<Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder<T>>`)
+### Editable(System.Action\<Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder\<T\>\>)
 Configures the ListView editing settings.
 
 
@@ -204,13 +204,13 @@ Enables ListView editing.
     %>
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.ListViewEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.ListViewEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ListViewEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ListViewEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ListViewEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ListViewEventBuilder)>
 The client events action.
 
 

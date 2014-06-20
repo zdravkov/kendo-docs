@@ -1,8 +1,5 @@
 ---
-title: chart-seriesDefaults-notes-line
-slug: jsp-chart-seriesDefaults-notes-line
-tags: api, java
-publish: true
+nav_title: chart-seriesDefaults-notes-line
 ---
 
 # \<kendo:chart-seriesDefaults-notes-line\>

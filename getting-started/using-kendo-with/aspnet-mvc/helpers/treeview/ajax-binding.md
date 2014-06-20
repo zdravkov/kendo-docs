@@ -1,9 +1,7 @@
 ---
-title: Ajax Binding
-meta_title: Configure Kendo UI TreeView for ASP.NET MVC for Ajax binding
-meta_description: Kendo UI TreeView for ASP.NET MVC makes Ajax requests to populate with nodes.
-slug: mvc-treeview-ajax-binding
-publish: true
+nav_title: Ajax Binding
+title: Configure Kendo UI TreeView for ASP.NET MVC for Ajax binding
+description: Kendo UI TreeView for ASP.NET MVC makes Ajax requests to populate with nodes.
 ---
 
 # Ajax Binding
@@ -13,9 +11,9 @@ publish: true
 The following tutorial shows how to configure Kendo UI TreeView for ASP.NET MVC to do ajax binding using Entity Framework and the Northwind database.
 
 1. Create a new ASP.NET MVC application (or Telerik UI for ASP.NET MVC application if you have installed the
-[Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+[Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
 1. Name the application **KendoTreeViewAjaxBinding**. If you decided not to use the Visual Studio extensions follow the procedure for adding Telerik UI for ASP.NET MVC to existing application:
-[ASP.NET MVC 4](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/aspnet-mvc-4.md), [ASP.NET MVC 5](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/aspnet-mvc-5.md)
+[ASP.NET MVC 4](/getting-started/using-kendo-with/aspnet-mvc/aspnet-mvc-4.md), [ASP.NET MVC 5](/getting-started/using-kendo-with/aspnet-mvc/aspnet-mvc-5.md)
 1. Add a new **Entity Framework DataM Model**. Right-click the **Models** folder in Visual Studio solution explorer and select **Add->New Item**. Choose **Data-> ADO.NET Data Model** from the **Add New Item** dialog.
 1. Name the model **Northwind.edmx** and click **Next**. This starts the **Entity Data Model Wizard**.
 1. Select **Generate from database** and click **Next**. Configure a connection to the Northwind database and click **Next**.

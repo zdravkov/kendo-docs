@@ -1,7 +1,5 @@
 ---
-title:ChartBarLabelsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartbarlabelsbuilder
-publish:true
+nav_title: ChartBarLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring the chart data labels.
 
 
 
+
 ## Methods
 
-### Position(`Kendo.Mvc.UI.ChartBarLabelsPosition`)
+
+### Position(Kendo.Mvc.UI.ChartBarLabelsPosition)
 Sets the labels position
 
 
 #### Parameters
 
-##### position [Kendo.Mvc.UI.ChartBarLabelsPosition](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarLabelsPosition)
+##### position [Kendo.Mvc.UI.ChartBarLabelsPosition](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartBarLabelsPosition)
 The labels position.
 
 

@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesDefaults-labels-border
-slug: jsp-sparkline-seriesDefaults-labels-border
-tags: api, java
-publish: true
+nav_title: sparkline-seriesDefaults-labels-border
 ---
 
 # \<kendo:sparkline-seriesDefaults-labels-border\>

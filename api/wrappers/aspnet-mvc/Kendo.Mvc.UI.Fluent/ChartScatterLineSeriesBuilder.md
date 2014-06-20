@@ -1,7 +1,5 @@
 ---
-title:ChartScatterLineSeriesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartscatterlineseriesbuilder
-publish:true
+nav_title: ChartScatterLineSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartScatterLineSeriesBuilder
@@ -9,56 +7,18 @@ Defines the fluent interface for configuring scatter line series.
 
 
 
+
 ## Methods
 
-### Width(`System.Double`)
-Sets the chart line width.
+
+### ErrorBars(System.Action\<Kendo.Mvc.UI.Fluent.ScatterErrorBarsBuilder\>)
+Configures the scatter line series error bars.
 
 
 #### Parameters
 
-##### width `System.Double`
-The line width.
-
-
-
-
-#### Example (ASPX)
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.ScatterLine(s => s.x, s => s.y).Width(2))
-        .Render();
-    %>
-
-
-### DashType(`Kendo.Mvc.UI.ChartDashType`)
-Sets the chart line dash type.
-
-
-#### Parameters
-
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
-The line dash type.
-
-
-
-
-#### Example (ASPX)
-    <% Html.Kendo().Chart()
-        .Name("Chart")
-        .Series(series => series.ScatterLine(s => s.x, s => s.y).DashType(ChartDashType.Dot))
-        .Render();
-    %>
-
-
-### MissingValues(`Kendo.Mvc.UI.ChartScatterLineMissingValues`)
-Configures the behavior for handling missing values in scatter line series.
-
-
-#### Parameters
-
-##### missingValues [Kendo.Mvc.UI.ChartScatterLineMissingValues](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartScatterLineMissingValues)
-The missing values behavior. The default is to leave gaps.
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ScatterErrorBarsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ScatterErrorBarsBuilder)>
+The configuration action.
 
 
 
@@ -68,7 +28,29 @@ The missing values behavior. The default is to leave gaps.
     .Name("Chart")
     .Series(series => series
         .ScatterLine(s => s.x, s => s.y)
-        .MissingValues(ChartScatterLineMissingValues.Interpolate);
+        .ErrorBars(e => e.XValue(1))
+    )
+    %>
+
+
+### Style(Kendo.Mvc.UI.ChartScatterLineStyle)
+Configures the style for scatterLine series.
+
+
+#### Parameters
+
+##### style [Kendo.Mvc.UI.ChartScatterLineStyle](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartScatterLineStyle)
+The style. The default is normal.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Chart()
+    .Name("Chart")
+    .Series(series => series
+        .ScatterLine(s => s.x, s => s.y)
+        .Style(ChartScatterLineStyle.Smooth);
     )
     %>
 

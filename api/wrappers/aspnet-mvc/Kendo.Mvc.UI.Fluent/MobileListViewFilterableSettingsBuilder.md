@@ -1,7 +1,5 @@
 ---
-title:MobileListViewFilterableSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilelistviewfilterablesettingsbuilder
-publish:true
+nav_title: MobileListViewFilterableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileListViewFilterableSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobileListViewFilterableSettings sett
 
 
 
+
 ## Methods
 
-### Placeholder(`System.String`)
+
+### Placeholder(System.String)
 Placeholder text for search input.
 
 
@@ -24,7 +24,7 @@ The value that configures the placeholder.
 
 
 
-### AutoFilter(`System.Boolean`)
+### AutoFilter(System.Boolean)
 Indicates whether filtering should be performed on every key up event or not.
 
 
@@ -37,7 +37,7 @@ The value that configures the autofilter.
 
 
 
-### Field(`System.String`)
+### Field(System.String)
 Specifies the field which will be used in the filter expression.
 
 
@@ -50,7 +50,7 @@ The value that configures the field.
 
 
 
-### IgnoreCase(`System.Boolean`)
+### IgnoreCase(System.Boolean)
 Specifies whether the filter expression must be case sensitive or not.
 
 
@@ -63,7 +63,7 @@ The value that configures the ignorecase.
 
 
 
-### Operator(`System.String`)
+### Operator(System.String)
 Specifies the comparison operator used in the filter expression.
 
 

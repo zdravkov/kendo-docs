@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-editor
-slug: jsp-scheduler-messages-editor
-tags: api, java
-publish: true
+nav_title: scheduler-messages-editor
 ---
 
 # \<kendo:scheduler-messages-editor\>

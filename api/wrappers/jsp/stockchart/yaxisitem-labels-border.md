@@ -1,8 +1,5 @@
 ---
-title: stockChart-yAxisItem-labels-border
-slug: jsp-stockChart-yAxisItem-labels-border
-tags: api, java
-publish: true
+nav_title: stockChart-yAxisItem-labels-border
 ---
 
 # \<kendo:stockChart-yAxisItem-labels-border\>

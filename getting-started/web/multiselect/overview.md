@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Overview of jQuery UI multiselect | Kendo UI Documentation
-meta_description: Create MultiSelect UI widget, use Kendo UI templates, instructions how to use MultiSelect.
-slug: gs-web-multiselect-overview
-relatedDocs: api-web-multiselect
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Overview of jQuery UI multiselect | Kendo UI Documentation
+description: Create MultiSelect UI widget, use Kendo UI templates, instructions how to use MultiSelect.
 ---
 
 # MultiSelect Overview
@@ -102,7 +98,7 @@ such as
 
 The **MultiSelect** uses Kendo UI templates to enable you to control how item, tag or header is rendered. For a
 detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
-[documentation](/kendo-ui/getting-started/framework/templates/overview).
+[documentation](/getting-started/framework/templates/overview).
 
 ### Item template customization
 

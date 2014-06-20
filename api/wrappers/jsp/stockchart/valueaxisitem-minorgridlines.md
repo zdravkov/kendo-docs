@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-minorGridLines
-slug: jsp-stockChart-valueAxisItem-minorGridLines
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-minorGridLines
 ---
 
 # \<kendo:stockChart-valueAxisItem-minorGridLines\>

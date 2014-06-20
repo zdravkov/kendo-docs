@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemLabelsMargin
-slug: php-dataviz-ui-chartvalueaxisitemlabelsmargin
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemLabelsMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemLabelsMargin

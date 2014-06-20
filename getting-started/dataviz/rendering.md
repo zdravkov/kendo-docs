@@ -1,9 +1,7 @@
 ---
-title: Rendering
-meta_title: Understanding the different rendering modes in Kendo UI Javascript DataViz suite
-meta_description: How to configure the rendering modes in the Kendo UI DataViz suite.
-slug: dataviz-rendering
-publish: true
+nav_title: Rendering
+title: Understanding the different rendering modes in Kendo UI Javascript DataViz suite
+description: How to configure the rendering modes in the Kendo UI DataViz suite.
 ---
 
 # Notes on rendering
@@ -22,7 +20,7 @@ The order is SVG -> VML -> Canvas for all widgets except Barcode and QRCode.
 These components do not require interactivity and will default to Canvas rendering.
 
 You can set the preferred rendering mode in the
-[renderAs](/kendo-ui/api/dataviz/chart#configuration-renderAs) option.
+[renderAs](/api/dataviz/chart#configuration-renderAs) option.
 
 ### Example: Set preferred rendering mode to Canvas
 
@@ -47,11 +45,11 @@ The rendering modules are available as separate files:
 
 You must include at least one, the rest are optional.
 
-> The Canvas and SVG modules are required by the [imageDataURL](/kendo-ui/api/dataviz/chart#methods-imageDataURL) and [svg](/kendo-ui/api/dataviz/chart#methods-svg) methods.
+> The Canvas and SVG modules are required by the [imageDataURL](/api/dataviz/chart#methods-imageDataURL) and [svg](/api/dataviz/chart#methods-svg) methods.
 
 See also:
 
-* [JavaScript dependencies](/kendo-ui/getting-started/javascript-dependencies)
+* [JavaScript dependencies](/getting-started/javascript-dependencies)
 * [Custom Download Builder](http://www.telerik.com/download/custom-download) (requires login)
 
 ## Limitations

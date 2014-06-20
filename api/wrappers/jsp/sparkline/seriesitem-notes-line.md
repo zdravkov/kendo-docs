@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-notes-line
-slug: jsp-sparkline-seriesItem-notes-line
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-notes-line
 ---
 
 # \<kendo:sparkline-seriesItem-notes-line\>

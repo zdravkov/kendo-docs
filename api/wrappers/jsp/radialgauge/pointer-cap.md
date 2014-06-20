@@ -1,8 +1,5 @@
 ---
-title: radialGauge-pointer-cap
-slug: jsp-radialGauge-pointer-cap
-tags: api, java
-publish: true
+nav_title: radialGauge-pointer-cap
 ---
 
 # \<kendo:radialGauge-pointer-cap\>

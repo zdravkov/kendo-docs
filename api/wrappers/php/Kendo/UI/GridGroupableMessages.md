@@ -1,8 +1,5 @@
 ---
-title: GridGroupableMessages
-slug: php-ui-gridgroupablemessages
-tags: api, php
-publish: true
+nav_title: GridGroupableMessages
 ---
 
 # \Kendo\UI\GridGroupableMessages

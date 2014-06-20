@@ -1,7 +1,5 @@
 ---
-title:CustomDataSourceModelDescriptorFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.customdatasourcemodeldescriptorfactory
-publish:true
+nav_title: CustomDataSourceModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceModelDescriptorFactory
@@ -9,9 +7,24 @@ Defines the fluent interface for configuring the DataSource Model definition.
 
 
 
+
 ## Methods
 
-### Id(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+
+### Id(System.String)
+Specify the member used to identify an unique Model instance.
+
+
+#### Parameters
+
+##### fieldName `System.String`
+The member name.
+
+
+
+
+
+### Id(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Specify the member used to identify an unique Model instance.
 
 
@@ -24,7 +37,7 @@ Member access expression which describes the member
 
 
 
-### Field(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+### Field(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Describes a Model field
 
 
@@ -37,7 +50,7 @@ Member access expression which describes the field
 
 
 
-### Field(`System.String,System.Type`)
+### Field(System.String,System.Type)
 Describes a Model field
 
 
@@ -53,7 +66,7 @@ Field type
 
 
 
-### Field(`System.String`)
+### Field(System.String)
 Describes a Model field
 
 

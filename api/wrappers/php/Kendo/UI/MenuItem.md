@@ -1,8 +1,5 @@
 ---
-title: MenuItem
-slug: php-ui-menuitem
-tags: api, php
-publish: true
+nav_title: MenuItem
 ---
 
 # \Kendo\UI\MenuItem

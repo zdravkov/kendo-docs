@@ -1,7 +1,5 @@
 ---
-title:NotificationEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.notificationeventbuilder
-publish:true
+nav_title: NotificationEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.NotificationEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent interface for configuring the Notification events.
 
 
 
+
 ## Methods
 
-### Hide(`System.Func<System.Object,System.Object>`)
+
+### Hide(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Hide client-side event
 
-For additional information check the [hide](/kendo-ui/api/web/notification#events-hide) event documentation.
+For additional information check the [hide](/api/web/notification#events-hide) event documentation.
 
 
 #### Parameters
@@ -39,10 +39,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Hide(`System.String`)
+### Hide(System.String)
 Defines the name of the JavaScript function that will handle the the Hide client-side event.
 
-For additional information check the [hide](/kendo-ui/api/web/notification#events-hide) event documentation.
+For additional information check the [hide](/api/web/notification#events-hide) event documentation.
 
 
 #### Parameters
@@ -60,10 +60,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Show(`System.Func<System.Object,System.Object>`)
+### Show(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Show client-side event
 
-For additional information check the [show](/kendo-ui/api/web/notification#events-show) event documentation.
+For additional information check the [show](/api/web/notification#events-show) event documentation.
 
 
 #### Parameters
@@ -88,10 +88,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Show(`System.String`)
+### Show(System.String)
 Defines the name of the JavaScript function that will handle the the Show client-side event.
 
-For additional information check the [show](/kendo-ui/api/web/notification#events-show) event documentation.
+For additional information check the [show](/api/web/notification#events-show) event documentation.
 
 
 #### Parameters

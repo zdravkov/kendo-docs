@@ -1,8 +1,5 @@
 ---
-title: MapLayerDefaultsShapeStyle
-slug: php-dataviz-ui-maplayerdefaultsshapestyle
-tags: api, php
-publish: true
+nav_title: MapLayerDefaultsShapeStyle
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyle
@@ -25,7 +22,7 @@ Accepts a valid CSS color string or object with detailed configuration.
 ##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleFill|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleFill](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsShapeStyleFill)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleFill](/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsShapeStyleFill)
     <?php
     $style = new \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyle();
     $fill = new \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleFill();
@@ -55,7 +52,7 @@ Accepts a valid CSS color string or object with detailed configuration.
 ##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleStroke|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleStroke](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsShapeStyleStroke)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleStroke](/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsShapeStyleStroke)
     <?php
     $style = new \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyle();
     $stroke = new \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleStroke();

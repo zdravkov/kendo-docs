@@ -1,8 +1,5 @@
 ---
-title: upload-async
-slug: jsp-upload-async
-tags: api, java
-publish: true
+nav_title: upload-async
 ---
 
 # \<kendo:upload-async\>

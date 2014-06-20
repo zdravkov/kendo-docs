@@ -1,8 +1,5 @@
 ---
-title: LinearGaugeGaugeAreaBorder
-slug: php-dataviz-ui-lineargaugegaugeareaborder
-tags: api, php
-publish: true
+nav_title: LinearGaugeGaugeAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeGaugeAreaBorder

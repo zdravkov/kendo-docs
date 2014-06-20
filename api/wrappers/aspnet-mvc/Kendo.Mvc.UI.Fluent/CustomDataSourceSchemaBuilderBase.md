@@ -1,7 +1,5 @@
 ---
-title:CustomDataSourceSchemaBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.customdatasourceschemabuilderbase
-publish:true
+nav_title: CustomDataSourceSchemaBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceSchemaBuilderBase
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Schema options.
 
 
 
+
 ## Methods
 
-### Aggregates(`System.String`)
+
+### Aggregates(System.String)
 Sets Aggregates option.
 
 
@@ -24,14 +24,14 @@ Aggregates option
 
 
 
-### Aggregates(`System.Func<System.Object,System.Object>`)
+### Aggregates(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return aggregates.
 
 
 
 
 
-### Groups(`System.String`)
+### Groups(System.String)
 Sets Groups option.
 
 
@@ -44,14 +44,14 @@ Groups option
 
 
 
-### Groups(`System.Func<System.Object,System.Object>`)
+### Groups(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return groups.
 
 
 
 
 
-### Data(`System.String`)
+### Data(System.String)
 Sets Data option.
 
 
@@ -64,14 +64,14 @@ Data option
 
 
 
-### Data(`System.Func<System.Object,System.Object>`)
+### Data(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return data.
 
 
 
 
 
-### Total(`System.String`)
+### Total(System.String)
 Sets Total option.
 
 
@@ -84,14 +84,14 @@ Total option
 
 
 
-### Total(`System.Func<System.Object,System.Object>`)
+### Total(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return total.
 
 
 
 
 
-### Errors(`System.String`)
+### Errors(System.String)
 Sets Errors option
 
 
@@ -104,21 +104,21 @@ Errors option
 
 
 
-### Errors(`System.Func<System.Object,System.Object>`)
+### Errors(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return the errors.
 
 
 
 
 
-### Parse(`System.Func<System.Object,System.Object>`)
+### Parse(System.Func\<System.Object,System.Object\>)
 Sets JavaScript function which to return data.
 
 
 
 
 
-### Type(`System.String`)
+### Type(System.String)
 Sets Schema Type option
 
 

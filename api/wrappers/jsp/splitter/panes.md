@@ -1,8 +1,5 @@
 ---
-title: splitter-panes
-slug: jsp-splitter-panes
-tags: api, java
-publish: true
+nav_title: splitter-panes
 ---
 
 # \<kendo:splitter-panes\>
@@ -23,7 +20,7 @@ Defines the panes of the splitter
 
 Defines the panes of the splitter
 
-More documentation is available at [kendo:splitter-pane](/kendo-ui/api/wrappers/jsp/splitter/pane).
+More documentation is available at [kendo:splitter-pane](/api/wrappers/jsp/splitter/pane).
 
 #### Example
 

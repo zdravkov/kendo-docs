@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemMarkers
-slug: php-dataviz-ui-sparklineseriesitemmarkers
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemMarkers
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemMarkers
@@ -57,7 +54,7 @@ The border of the markers.
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemMarkersBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemMarkersBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemMarkersBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemMarkersBorder)
     <?php
     $markers = new \Kendo\Dataviz\UI\SparklineSeriesItemMarkers();
     $border = new \Kendo\Dataviz\UI\SparklineSeriesItemMarkersBorder();

@@ -1,8 +1,5 @@
 ---
-title: MapLayerTooltipAnimationOpen
-slug: php-dataviz-ui-maplayertooltipanimationopen
-tags: api, php
-publish: true
+nav_title: MapLayerTooltipAnimationOpen
 ---
 
 # \Kendo\Dataviz\UI\MapLayerTooltipAnimationOpen

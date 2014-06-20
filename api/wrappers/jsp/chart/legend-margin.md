@@ -1,8 +1,5 @@
 ---
-title: chart-legend-margin
-slug: jsp-chart-legend-margin
-tags: api, java
-publish: true
+nav_title: chart-legend-margin
 ---
 
 # \<kendo:chart-legend-margin\>

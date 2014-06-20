@@ -1,14 +1,12 @@
 ---
-title: Overview
-meta_title: How to use Diagram JSP tag | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI Diagram for JSP.
-slug: jsp-diagram-overview
-publish: true
+nav_title: Overview
+title: How to use Diagram JSP tag | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI Diagram for JSP.
 ---
 
 # Diagram
 
-The Diagram tag is a server-side wrapper for the [Kendo UI Diagram](/kendo-ui/api/dataviz/diagram) widget.
+The Diagram tag is a server-side wrapper for the [Kendo UI Diagram](/api/dataviz/diagram) widget.
 
 ## Getting Started
 
@@ -16,7 +14,7 @@ You can bind a Kendo Diagram for JSP via ajax binding(the diagram will make ajax
 
 Here is how to configure the Kendo Diagram with ajax binding:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/jsp/introduction) help topic.
 
 2.  Create a new action method to render the view:
 
@@ -51,7 +49,7 @@ Here is how to configure the Kendo Diagram with ajax binding:
 ## Accessing an Existing Diagram
 
 You can reference an existing diagram instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/dataviz/diagram#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/dataviz/diagram#methods) to control its behavior.
 
 ### Accessing an existing Diagram instance
 
@@ -66,7 +64,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/datav
 
 ## Handling Kendo UI Diagram events
 
-You can subscribe to all [events](/kendo-ui/api/dataviz/diagram#events) exposed by Kendo UI Diagram:
+You can subscribe to all [events](/api/dataviz/diagram#events) exposed by Kendo UI Diagram:
 
 ### Subscribe by handler name
 

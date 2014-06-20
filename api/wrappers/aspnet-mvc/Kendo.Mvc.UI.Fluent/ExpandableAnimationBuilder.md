@@ -1,7 +1,5 @@
 ---
-title:ExpandableAnimationBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.expandableanimationbuilder
-publish:true
+nav_title: ExpandableAnimationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder

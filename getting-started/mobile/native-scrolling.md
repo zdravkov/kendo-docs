@@ -1,11 +1,7 @@
 ---
-title: Native Scrolling Support
-meta_title: Documentation for Kendo UI Mobile Application Native Scrolling configuration option
-meta_description: Kendo UI Mobile Application Native Scrolling specifics described
-slug: gs-mobile-application-native-scrolling
-relatedDocs: api-mobile-application, gs-mobile-application
-tags: getting-started, mobile
-publish: true
+nav_title: Native Scrolling Support
+title: Documentation for Kendo UI Mobile Application Native Scrolling configuration option
+description: Kendo UI Mobile Application Native Scrolling specifics described
 ---
 
 Since Q3 2013, the mobile application introduces a new configuration option – `useNativeScrolling` (false by default). The change is mostly due to the browser behavior changes introduced

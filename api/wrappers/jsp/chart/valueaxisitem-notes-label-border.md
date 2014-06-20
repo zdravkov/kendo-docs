@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-notes-label-border
-slug: jsp-chart-valueAxisItem-notes-label-border
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-notes-label-border
 ---
 
 # \<kendo:chart-valueAxisItem-notes-label-border\>

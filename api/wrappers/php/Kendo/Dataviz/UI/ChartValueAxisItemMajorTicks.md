@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemMajorTicks
-slug: php-dataviz-ui-chartvalueaxisitemmajorticks
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks

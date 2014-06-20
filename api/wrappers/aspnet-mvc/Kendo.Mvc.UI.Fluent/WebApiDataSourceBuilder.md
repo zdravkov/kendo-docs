@@ -1,7 +1,5 @@
 ---
-title:WebApiDataSourceBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.webapidatasourcebuilder
-publish:true
+nav_title: WebApiDataSourceBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WebApiDataSourceBuilder
@@ -9,16 +7,18 @@ Defines the fluent interface for configuring the DataSource WebApi create/update
 
 
 
+
 ## Methods
 
-### Update(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
+
+### Update(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Update operation.
 
 
 
 
 
-### Update(`System.String`)
+### Update(System.String)
 Sets controller, action and routeValues for Update operation.
 
 
@@ -31,14 +31,14 @@ Absolute or relative URL for the operation
 
 
 
-### Create(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
+### Create(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Create operation.
 
 
 
 
 
-### Create(`System.String`)
+### Create(System.String)
 Sets controller, action and routeValues for Create operation.
 
 
@@ -51,14 +51,14 @@ Absolute or relative URL for the operation
 
 
 
-### Destroy(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
+### Destroy(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Destroy operation.
 
 
 
 
 
-### Destroy(`System.String`)
+### Destroy(System.String)
 Sets controller and action for Destroy operation.
 
 
@@ -71,7 +71,7 @@ Absolute or relative URL for the operation
 
 
 
-### AutoSync(`System.Boolean`)
+### AutoSync(System.Boolean)
 Determines if data source would automatically sync any changes to its data items. By default changes are not automatically sync-ed.
 
 

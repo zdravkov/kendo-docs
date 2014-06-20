@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemTarget
-slug: php-dataviz-ui-sparklineseriesitemtarget
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemTarget
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemTarget
@@ -33,7 +30,7 @@ The border of the target.
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemTargetBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemTargetBorder)
     <?php
     $target = new \Kendo\Dataviz\UI\SparklineSeriesItemTarget();
     $border = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder();
@@ -86,7 +83,7 @@ The target line.
 ##### $value `\Kendo\Dataviz\UI\SparklineSeriesItemTargetLine|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemTargetLine](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemTargetLine)
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemTargetLine](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemTargetLine)
     <?php
     $target = new \Kendo\Dataviz\UI\SparklineSeriesItemTarget();
     $line = new \Kendo\Dataviz\UI\SparklineSeriesItemTargetLine();

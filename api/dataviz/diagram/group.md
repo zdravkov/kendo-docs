@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Group
-slug:api-dataviz-diagram-group
-publish: true
+nav_title: kendo.dataviz.diagram.Group
 ---
 
 # kendo.dataviz.diagram.Group

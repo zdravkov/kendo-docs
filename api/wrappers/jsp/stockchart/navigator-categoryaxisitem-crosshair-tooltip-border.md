@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-crosshair-tooltip-border
-slug: jsp-stockChart-navigator-categoryAxisItem-crosshair-tooltip-border
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-crosshair-tooltip-border
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-crosshair-tooltip-border\>

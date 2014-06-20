@@ -1,7 +1,5 @@
 ---
-title:DataSourceAggregatesFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.datasourceaggregatesfactory
-publish:true
+nav_title: DataSourceAggregatesFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceAggregatesFactory
@@ -9,7 +7,9 @@ Defines the fluent interface for configuring aggregates for a given field.
 
 
 
+
 ## Methods
+
 
 ### Min
 Applies the Min aggregate function.

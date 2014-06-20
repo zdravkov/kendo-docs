@@ -1,8 +1,5 @@
 ---
-title: diagram-connectionDefaults-hover-stroke
-slug: jsp-diagram-connectionDefaults-hover-stroke
-tags: api, java
-publish: true
+nav_title: diagram-connectionDefaults-hover-stroke
 ---
 
 # \<kendo:diagram-connectionDefaults-hover-stroke\>

@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-notes-label
-slug: jsp-stockChart-categoryAxisItem-notes-label
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-notes-label
 ---
 
 # \<kendo:stockChart-categoryAxisItem-notes-label\>
@@ -87,7 +84,7 @@ If set to true the chart will display the category notes label. By default the c
 
 The border of the label.
 
-More documentation is available at [kendo:stockChart-categoryAxisItem-notes-label-border](/kendo-ui/api/wrappers/jsp/stockchart/categoryaxisitem-notes-label-border).
+More documentation is available at [kendo:stockChart-categoryAxisItem-notes-label-border](/api/wrappers/jsp/stockchart/categoryaxisitem-notes-label-border).
 
 #### Example
 

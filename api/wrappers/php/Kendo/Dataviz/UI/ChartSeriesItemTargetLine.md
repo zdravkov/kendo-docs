@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemTargetLine
-slug: php-dataviz-ui-chartseriesitemtargetline
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemTargetLine
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemTargetLine

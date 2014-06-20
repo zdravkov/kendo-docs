@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-notes-icon-border
-slug: jsp-chart-yAxisItem-notes-icon-border
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-notes-icon-border
 ---
 
 # \<kendo:chart-yAxisItem-notes-icon-border\>

@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-target-line
-slug: jsp-sparkline-seriesItem-target-line
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-target-line
 ---
 
 # \<kendo:sparkline-seriesItem-target-line\>

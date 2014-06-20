@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorSeriesItemMarkers
-slug: php-dataviz-ui-stockchartnavigatorseriesitemmarkers
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorSeriesItemMarkers
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkers
@@ -42,7 +39,7 @@ The border of the markers.
 ##### $value `\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkersBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkersBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/StockChartNavigatorSeriesItemMarkersBorder)
+#### Example - using [\Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkersBorder](/api/wrappers/php/Kendo/Dataviz/UI/StockChartNavigatorSeriesItemMarkersBorder)
     <?php
     $markers = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkers();
     $border = new \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemMarkersBorder();

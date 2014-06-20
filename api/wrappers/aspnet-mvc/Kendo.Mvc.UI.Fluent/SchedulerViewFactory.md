@@ -1,7 +1,5 @@
 ---
-title:SchedulerViewFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerviewfactory
-publish:true
+nav_title: SchedulerViewFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewFactory
@@ -9,9 +7,11 @@ Creates views for the 1 class.
 
 
 
+
 ## Methods
 
-### DayView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerDayViewBuilder<Kendo.Mvc.UI.SchedulerDayView>>`)
+
+### DayView(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerDayViewBuilder\<Kendo.Mvc.UI.SchedulerDayView\>\>)
 Defines a Scheduler day view.
 
 
@@ -31,7 +31,7 @@ Enables a Scheduler day view.
 
 
 
-### CustomView(`System.String`)
+### CustomView(System.String)
 Defines a custom view
 
 
@@ -44,7 +44,7 @@ The JavaScript type name
 
 
 
-### CustomView(`System.String,System.Action<Kendo.Mvc.UI.Fluent.SchedulerCustomViewBuilder<Kendo.Mvc.UI.SchedulerCustomView>>`)
+### CustomView(System.String,System.Action\<Kendo.Mvc.UI.Fluent.SchedulerCustomViewBuilder\<Kendo.Mvc.UI.SchedulerCustomView\>\>)
 Defines a custom view
 
 
@@ -53,14 +53,14 @@ Defines a custom view
 ##### type `System.String`
 The JavaScript type name
 
-##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerCustomViewBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerCustomViewBuilder)<Kendo.Mvc.UI.SchedulerCustomView>>
+##### addViewAction System.Action<[Kendo.Mvc.UI.Fluent.SchedulerCustomViewBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerCustomViewBuilder)<Kendo.Mvc.UI.SchedulerCustomView>>
 The action for configuring the custom view
 
 
 
 
 
-### WorkWeekView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerWorkWeekViewBuilder<Kendo.Mvc.UI.SchedulerWorkWeekView>>`)
+### WorkWeekView(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerWorkWeekViewBuilder\<Kendo.Mvc.UI.SchedulerWorkWeekView\>\>)
 Defines a Scheduler workWeek view.
 
 
@@ -80,7 +80,7 @@ Enables a Scheduler workWeek view.
 
 
 
-### WeekView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerWeekViewBuilder<Kendo.Mvc.UI.SchedulerWeekView>>`)
+### WeekView(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerWeekViewBuilder\<Kendo.Mvc.UI.SchedulerWeekView\>\>)
 Defines a Scheduler week view.
 
 
@@ -100,7 +100,7 @@ Enables a Scheduler week view.
 
 
 
-### MonthView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerMonthViewBuilder<Kendo.Mvc.UI.SchedulerMonthView>>`)
+### MonthView(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerMonthViewBuilder\<Kendo.Mvc.UI.SchedulerMonthView\>\>)
 Defines a Scheduler month view.
 
 
@@ -120,7 +120,7 @@ Enables a Scheduler month view.
 
 
 
-### AgendaView(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerAgendaViewBuilder<Kendo.Mvc.UI.SchedulerAgendaView>>`)
+### AgendaView(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerAgendaViewBuilder\<Kendo.Mvc.UI.SchedulerAgendaView\>\>)
 Defines a Scheduler agenda view.
 
 

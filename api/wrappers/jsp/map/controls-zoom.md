@@ -1,8 +1,5 @@
 ---
-title: map-controls-zoom
-slug: jsp-map-controls-zoom
-tags: api, java
-publish: true
+nav_title: map-controls-zoom
 ---
 
 # \<kendo:map-controls-zoom\>

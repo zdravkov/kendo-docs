@@ -1,8 +1,5 @@
 ---
-title: menu-items
-slug: jsp-menu-items
-tags: api, java
-publish: true
+nav_title: menu-items
 ---
 
 # \<kendo:menu-items\>
@@ -23,7 +20,7 @@ Contains the items of the menu widget
 
 Contains the items of the menu widget
 
-More documentation is available at [kendo:menu-item](/kendo-ui/api/wrappers/jsp/menu/item).
+More documentation is available at [kendo:menu-item](/api/wrappers/jsp/menu/item).
 
 #### Example
 

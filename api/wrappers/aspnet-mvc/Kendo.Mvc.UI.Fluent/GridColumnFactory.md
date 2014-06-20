@@ -1,7 +1,5 @@
 ---
-title:GridColumnFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.gridcolumnfactory
-publish:true
+nav_title: GridColumnFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnFactory
@@ -9,9 +7,11 @@ Creates columns for the 1.
 
 
 
+
 ## Methods
 
-### Bound(`System.Linq.Expressions.Expression<System.Func<T,T1>>`)
+
+### Bound(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
 Defines a bound column.
 
 
@@ -27,21 +27,21 @@ Defines a bound column.
 
 
 
-### Bound(`System.String`)
+### Bound(System.String)
 Defines a bound column.
 
 
 
 
 
-### Bound(`System.Type,System.String`)
+### Bound(System.Type,System.String)
 Defines a bound column.
 
 
 
 
 
-### ForeignKey(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Collections.IEnumerable,System.String,System.String`)
+### ForeignKey(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Collections.IEnumerable,System.String,System.String)
 Defines a foreign key column.
 
 
@@ -66,7 +66,7 @@ The data text field
 
 
 
-### ForeignKey(`System.Linq.Expressions.Expression<System.Func<T,T1>>,System.Web.Mvc.SelectList`)
+### ForeignKey(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Web.Mvc.SelectList)
 Defines a foreign key column.
 
 
@@ -85,7 +85,7 @@ The foreign data
 
 
 
-### AutoGenerate(`System.Boolean`)
+### AutoGenerate(System.Boolean)
 Determines if columns should be automatically generated.
 
 
@@ -98,20 +98,20 @@ If true columns should be generated, otherwise false.
 
 
 
-### AutoGenerate(`System.Action<Kendo.Mvc.UI.GridColumnBase<T>>`)
+### AutoGenerate(System.Action\<Kendo.Mvc.UI.GridColumnBase\<T\>\>)
 Determines if columns should be automatically generated.
 
 
 #### Parameters
 
-##### columnAction System.Action<[Kendo.Mvc.UI.GridColumnBase](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridColumnBase)<T>>
+##### columnAction System.Action<[Kendo.Mvc.UI.GridColumnBase](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridColumnBase)<T>>
 Action which will be executed for each generated column.
 
 
 
 
 
-### Template(`System.Action<T>`)
+### Template(System.Action\<T\>)
 Defines a template column.
 
 
@@ -127,13 +127,13 @@ Defines a template column.
 
 
 
-### Command(`System.Action<Kendo.Mvc.UI.Fluent.GridActionCommandFactory<T>>`)
+### Command(System.Action\<Kendo.Mvc.UI.Fluent.GridActionCommandFactory\<T\>\>)
 Defines a command column.
 
 
 #### Parameters
 
-##### commandAction System.Action<[Kendo.Mvc.UI.Fluent.GridActionCommandFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridActionCommandFactory)<T>>
+##### commandAction System.Action<[Kendo.Mvc.UI.Fluent.GridActionCommandFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GridActionCommandFactory)<T>>
 
 
 

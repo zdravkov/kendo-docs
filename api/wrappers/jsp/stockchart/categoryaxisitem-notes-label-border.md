@@ -1,8 +1,5 @@
 ---
-title: stockChart-categoryAxisItem-notes-label-border
-slug: jsp-stockChart-categoryAxisItem-notes-label-border
-tags: api, java
-publish: true
+nav_title: stockChart-categoryAxisItem-notes-label-border
 ---
 
 # \<kendo:stockChart-categoryAxisItem-notes-label-border\>

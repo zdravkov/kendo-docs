@@ -1,7 +1,5 @@
 ---
-title:ChartLineBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartlinebuilder
-publish:true
+nav_title: ChartLineBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartLineBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartLine.
 
 
 
+
 ## Methods
 
-### Visible(`System.Boolean`)
+
+### Visible(System.Boolean)
 Sets the line visibility
 
 

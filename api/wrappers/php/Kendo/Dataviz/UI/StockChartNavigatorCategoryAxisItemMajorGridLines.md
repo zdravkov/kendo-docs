@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemMajorGridLines
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemmajorgridlines
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMajorGridLines

@@ -1,8 +1,5 @@
 ---
-title: map-layer-tooltip-animation-close
-slug: jsp-map-layer-tooltip-animation-close
-tags: api, java
-publish: true
+nav_title: map-layer-tooltip-animation-close
 ---
 
 # \<kendo:map-layer-tooltip-animation-close\>

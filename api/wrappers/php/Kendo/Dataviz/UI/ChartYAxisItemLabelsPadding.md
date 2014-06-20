@@ -1,8 +1,5 @@
 ---
-title: ChartYAxisItemLabelsPadding
-slug: php-dataviz-ui-chartyaxisitemlabelspadding
-tags: api, php
-publish: true
+nav_title: ChartYAxisItemLabelsPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemLabelsPadding

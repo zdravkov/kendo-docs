@@ -1,8 +1,5 @@
 ---
-title: chart-pane-padding
-slug: jsp-chart-pane-padding
-tags: api, java
-publish: true
+nav_title: chart-pane-padding
 ---
 
 # \<kendo:chart-pane-padding\>

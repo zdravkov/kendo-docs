@@ -1,8 +1,5 @@
 ---
-title: DateTimePickerAnimationClose
-slug: php-ui-datetimepickeranimationclose
-tags: api, php
-publish: true
+nav_title: DateTimePickerAnimationClose
 ---
 
 # \Kendo\UI\DateTimePickerAnimationClose

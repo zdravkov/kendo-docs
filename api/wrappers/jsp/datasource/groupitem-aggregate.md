@@ -1,8 +1,5 @@
 ---
-title: dataSource-groupItem-aggregate
-slug: jsp-dataSource-groupItem-aggregate
-tags: api, java
-publish: true
+nav_title: dataSource-groupItem-aggregate
 ---
 
 # \<kendo:dataSource-groupItem-aggregate\>

@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-notes-data
-slug: jsp-sparkline-valueAxisItem-notes-data
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-notes-data
 ---
 
 # \<kendo:sparkline-valueAxisItem-notes-data\>
@@ -23,7 +20,7 @@ The items of the notes.
 
 The items of the notes.
 
-More documentation is available at [kendo:sparkline-valueAxisItem-notes-dataItem](/kendo-ui/api/wrappers/jsp/sparkline/valueaxisitem-notes-dataitem).
+More documentation is available at [kendo:sparkline-valueAxisItem-notes-dataItem](/api/wrappers/jsp/sparkline/valueaxisitem-notes-dataitem).
 
 #### Example
 

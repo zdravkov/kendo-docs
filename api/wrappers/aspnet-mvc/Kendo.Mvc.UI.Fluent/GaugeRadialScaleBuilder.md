@@ -1,22 +1,26 @@
 ---
-title:GaugeRadialScaleBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeradialscalebuilder
-publish:true
+nav_title: GaugeRadialScaleBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialScaleBuilder
 Defines the fluent interface for configuring the gauge scale.
 
 
+
 ## Properties
+
+
 ### radialGauge
+
 The parent Guage
+
 
 
 
 ## Methods
 
-### EndAngle(`System.Double`)
+
+### EndAngle(System.Double)
 Sets the end angle of the gauge
 
 
@@ -37,7 +41,7 @@ The end angle.
     %>
 
 
-### StartAngle(`System.Double`)
+### StartAngle(System.Double)
 Sets the start angle of the gauge
 
 
@@ -58,13 +62,13 @@ The start Angle.
     %>
 
 
-### Labels(`System.Action<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder>`)
+### Labels(System.Action\<Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder\>)
 Configures the labels.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleLabelsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.GaugeRadialScaleLabelsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/GaugeRadialScaleLabelsBuilder)>
 The configuration action.
 
 
@@ -81,7 +85,7 @@ The configuration action.
     %>
 
 
-### RangeSize(`System.Double`)
+### RangeSize(System.Double)
 Sets the width of the range indicators.
 
 
@@ -102,7 +106,7 @@ The width of the range indicators.
     %>
 
 
-### RangeDistance(`System.Double`)
+### RangeDistance(System.Double)
 Sets the distance from the range indicators to the ticks.
 
 

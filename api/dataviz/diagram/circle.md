@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Circle
-slug:api-dataviz-diagram-circle
-publish: true
+nav_title: kendo.dataviz.diagram.Circle
 ---
 
 # kendo.dataviz.diagram.Circle

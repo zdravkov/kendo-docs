@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemNotesLabelBorder
-slug: php-dataviz-ui-chartseriesitemnoteslabelborder
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemNotesLabelBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemNotesLabelBorder

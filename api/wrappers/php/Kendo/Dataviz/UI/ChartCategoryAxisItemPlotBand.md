@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemPlotBand
-slug: php-dataviz-ui-chartcategoryaxisitemplotband
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemPlotBand
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemPlotBand

@@ -1,7 +1,5 @@
 ---
-title:ListViewEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.listvieweventbuilder
-publish:true
+nav_title: ListViewEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewEventBuilder

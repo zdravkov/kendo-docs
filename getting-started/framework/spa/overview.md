@@ -1,8 +1,6 @@
 ---
-title: Overview
-slug: spa-overview
-ordinal: 1
-publish: true
+nav_title: Overview
+nav_position: 1
 ---
 # Kendo Single Page Application Overview
 

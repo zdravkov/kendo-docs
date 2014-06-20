@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemNotesIconBorder
-slug: php-dataviz-ui-sparklineseriesitemnotesiconborder
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemNotesIconBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemNotesIconBorder

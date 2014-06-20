@@ -1,8 +1,5 @@
 ---
-title: chart-legend-inactiveItems-labels
-slug: jsp-chart-legend-inactiveItems-labels
-tags: api, java
-publish: true
+nav_title: chart-legend-inactiveItems-labels
 ---
 
 # \<kendo:chart-legend-inactiveItems-labels\>

@@ -1,8 +1,5 @@
 ---
-title: dataSource-transport-destroy
-slug: jsp-dataSource-transport-destroy
-tags: api, java
-publish: true
+nav_title: dataSource-transport-destroy
 ---
 
 # \<kendo:dataSource-transport-destroy\>

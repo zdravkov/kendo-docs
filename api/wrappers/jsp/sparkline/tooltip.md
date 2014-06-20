@@ -1,8 +1,5 @@
 ---
-title: sparkline-tooltip
-slug: jsp-sparkline-tooltip
-tags: api, java
-publish: true
+nav_title: sparkline-tooltip
 ---
 
 # \<kendo:sparkline-tooltip\>
@@ -97,7 +94,7 @@ A value indicating if the tooltip should be displayed.
 
 The border configuration options.
 
-More documentation is available at [kendo:sparkline-tooltip-border](/kendo-ui/api/wrappers/jsp/sparkline/tooltip-border).
+More documentation is available at [kendo:sparkline-tooltip-border](/api/wrappers/jsp/sparkline/tooltip-border).
 
 #### Example
 

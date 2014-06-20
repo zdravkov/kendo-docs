@@ -1,7 +1,5 @@
 ---
-title:ListViewSelectionSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.listviewselectionsettingsbuilder
-publish:true
+nav_title: ListViewSelectionSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring Selectable
 
 
 
+
 ## Methods
 
-### Enabled(`System.Boolean`)
+
+### Enabled(System.Boolean)
 Enables or disables selection.
 
 
@@ -24,7 +24,7 @@ Enables or disables selection.
     %>
 
 
-### Mode(`Kendo.Mvc.UI.ListViewSelectionMode`)
+### Mode(Kendo.Mvc.UI.ListViewSelectionMode)
 Specifies whether multiple or single selection is allowed.
 
 

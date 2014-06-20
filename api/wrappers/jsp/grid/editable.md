@@ -1,8 +1,5 @@
 ---
-title: grid-editable
-slug: jsp-grid-editable
-tags: api, java
-publish: true
+nav_title: grid-editable
 ---
 
 # \<kendo:grid-editable\>

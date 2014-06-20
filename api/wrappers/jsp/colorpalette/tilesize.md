@@ -1,8 +1,5 @@
 ---
-title: colorPalette-tileSize
-slug: jsp-colorPalette-tileSize
-tags: api, java
-publish: true
+nav_title: colorPalette-tileSize
 ---
 
 # \<kendo:colorPalette-tileSize\>

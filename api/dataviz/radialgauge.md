@@ -1,11 +1,7 @@
 ---
-title: kendo.dataviz.ui.RadialGauge
-meta_title: Configuration, methods and events of Kendo UI DataViz RadialGauge
-meta_description: Learn the configuration options for Radial Gauge widget, set the color and size of the border, use methods properly.
-slug: api-dataviz-radialgauge
-relatedDocs: gs-dataviz-radialgauge-overview
-tags: api,dataviz
-publish: true
+nav_title: kendo.dataviz.ui.RadialGauge
+title: Configuration, methods and events of Kendo UI DataViz RadialGauge
+description: Learn the configuration options for Radial Gauge widget, set the color and size of the border, use methods properly.
 ---
 
 # kendo.dataviz.ui.RadialGauge

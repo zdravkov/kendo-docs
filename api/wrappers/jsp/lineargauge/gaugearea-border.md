@@ -1,8 +1,5 @@
 ---
-title: linearGauge-gaugeArea-border
-slug: jsp-linearGauge-gaugeArea-border
-tags: api, java
-publish: true
+nav_title: linearGauge-gaugeArea-border
 ---
 
 # \<kendo:linearGauge-gaugeArea-border\>

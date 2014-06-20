@@ -1,7 +1,5 @@
 ---
-title: Introduction
-slug: mvc-vsx-introduction
-publish: true
+nav_title: Introduction
 ---
 
 #Introduction

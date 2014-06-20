@@ -1,7 +1,5 @@
 ---
-title:SplitterBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.splitterbuilder
-publish:true
+nav_title: SplitterBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SplitterBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring the Splitter component.
 
 
 
+
 ## Methods
 
-### Orientation(`Kendo.Mvc.UI.SplitterOrientation`)
+
+### Orientation(Kendo.Mvc.UI.SplitterOrientation)
 Sets the splitter orientation.
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.SplitterOrientation](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SplitterOrientation)
+##### value [Kendo.Mvc.UI.SplitterOrientation](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SplitterOrientation)
 The desired orientation.
 
 
@@ -30,13 +30,13 @@ The desired orientation.
     %>
 
 
-### Panes(`System.Action<Kendo.Mvc.UI.Fluent.SplitterPaneFactory>`)
+### Panes(System.Action\<Kendo.Mvc.UI.Fluent.SplitterPaneFactory\>)
 Defines the panes in the splitter.
 
 
 #### Parameters
 
-##### configurePanes System.Action<[Kendo.Mvc.UI.Fluent.SplitterPaneFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SplitterPaneFactory)>
+##### configurePanes System.Action<[Kendo.Mvc.UI.Fluent.SplitterPaneFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SplitterPaneFactory)>
 The action that configures the panes.
 
 
@@ -52,13 +52,13 @@ The action that configures the panes.
     %>
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.SplitterEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.SplitterEventBuilder\>)
 Configures the client events for the splitter.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SplitterEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SplitterEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SplitterEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SplitterEventBuilder)>
 The action that configures the client events.
 
 

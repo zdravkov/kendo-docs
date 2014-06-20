@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: Code and examples how to use Kendo UI Splitter for PHP | Kendo UI documentation
-meta_description: Easy to follow steps to explore the capabilities of Splitter class for Kendo UI Splitter for PHP.
-slug: php-splitter-overview
-publish: true
+nav_title: Overview
+title: Code and examples how to use Kendo UI Splitter for PHP | Kendo UI documentation
+description: Easy to follow steps to explore the capabilities of Splitter class for Kendo UI Splitter for PHP.
 ---
 
 # Splitter
 
-Kendo Splitter for PHP is a server-side wrapper for the [Kendo UI Splitter](/kendo-ui/api/web/splitter) widget.
+Kendo Splitter for PHP is a server-side wrapper for the [Kendo UI Splitter](/api/web/splitter) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo Splitter:
 
-1.  Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1.  Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1.  Add a simple splitter:
     
 		<?php
@@ -111,7 +109,7 @@ Here is how to configure a simple Kendo Splitter:
 		$splitter->addPane($topPane, $middlePane, $bottomPane);
 		?>
 
-1. Output the splitter by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+1. Output the splitter by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $splitter->render();
@@ -120,7 +118,7 @@ Here is how to configure a simple Kendo Splitter:
 ## Accessing an Existing Splitter
 
 You can reference an existing Splitter instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/splitter#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/splitter#methods) to control its behavior.
 
 
 ### Accessing an existing Splitter instance
@@ -136,7 +134,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/s
 
 ## Handling Kendo UI Splitter events
 
-You can subscribe to all [events](/kendo-ui/api/web/splitter#events) exposed by Kendo UI Splitter:
+You can subscribe to all [events](/api/web/splitter#events) exposed by Kendo UI Splitter:
 
 
 ### Example - subscribing by specifying JavaScript function name

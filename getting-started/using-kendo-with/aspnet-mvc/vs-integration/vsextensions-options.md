@@ -1,7 +1,5 @@
 ---
-title: Visual Studio Extensions Options
-slug: mvc-vsx-options
-publish: true
+nav_title: Visual Studio Extensions Options
 ---
 
 #Visual Studio Extensions Options

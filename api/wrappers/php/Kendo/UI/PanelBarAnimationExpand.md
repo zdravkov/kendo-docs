@@ -1,8 +1,5 @@
 ---
-title: PanelBarAnimationExpand
-slug: php-ui-panelbaranimationexpand
-tags: api, php
-publish: true
+nav_title: PanelBarAnimationExpand
 ---
 
 # \Kendo\UI\PanelBarAnimationExpand

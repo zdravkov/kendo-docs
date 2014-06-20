@@ -1,10 +1,7 @@
 ---
-title: Interact With an Existing DB
-meta_title: Interact with an existing database |Kendo UI DataSource Documentation
-meta_description: Learn how to interact with an existing database via the DataSource, included in Kendo UI framework.
-slug: howto-interact-with-an-existing-db
-tags: How-To
-publish: true
+nav_title: Interact With an Existing DB
+title: Interact with an existing database |Kendo UI DataSource Documentation
+description: Learn how to interact with an existing database via the DataSource, included in Kendo UI framework.
 ---
 
 # How-To: Interact With An Existing Database
@@ -23,7 +20,7 @@ The DataSource plays a central role in the applications and sites built with Ken
 * calculating and maintaining aggregates, sorting order, and page sizes;
 * and, providing a query mechanism via filter expressions.
 
-> To learn more about the capabilities of the DataSource, make sure to check out its [API reference](/kendo-ui/api/framework/datasource) or [demos](http://demos.telerik.com/kendo-ui/web/datasource/index.html).
+> To learn more about the capabilities of the DataSource, make sure to check out its [API reference](/api/framework/datasource) or [demos](http://demos.telerik.com/kendo-ui/web/datasource/index.html).
 
 ## Exposing Data via HTTP(S)
 
@@ -55,4 +52,4 @@ The DataSource may query a remote endpoint that provides data stored in a remote
 
 In this example, the DataSource is initialized to represent an in-memory cache of tweets from the search service for Twitter. Setting the `dataType` configuration property is required to instruct the DataSource to access the endpoint.
 
-> Refer to the how-to article entitled, [How To: Use CORS with All (Modern) Browsers](/kendo-ui/howto/use-cors-with-all-modern-browsers) for more information about Cross-Origin Resource Sharing (CORS).
+> Refer to the how-to article entitled, [How To: Use CORS with All (Modern) Browsers](/howto/use-cors-with-all-modern-browsers) for more information about Cross-Origin Resource Sharing (CORS).

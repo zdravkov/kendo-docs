@@ -1,12 +1,9 @@
 ---
-title: editor
-slug: jsp-editor
-tags: api, java
-publish: true
+nav_title: editor
 ---
 
 # \<kendo:editor\>
-A JSP wrapper for Kendo UI [Editor](/kendo-ui/api/web/editor).
+A JSP wrapper for Kendo UI [Editor](/api/web/editor).
 
 ## Configuration Attributes
 
@@ -69,7 +66,7 @@ The tag that will be rendered. Defaults to "textarea". Triggers the inline edit 
 
 Configuration for image browser dialog.
 
-More documentation is available at [kendo:editor-imageBrowser](/kendo-ui/api/wrappers/jsp/editor/imagebrowser).
+More documentation is available at [kendo:editor-imageBrowser](/api/wrappers/jsp/editor/imagebrowser).
 
 #### Example
 
@@ -81,7 +78,7 @@ More documentation is available at [kendo:editor-imageBrowser](/kendo-ui/api/wra
 
 Allows setting of serialization options.
 
-More documentation is available at [kendo:editor-serialization](/kendo-ui/api/wrappers/jsp/editor/serialization).
+More documentation is available at [kendo:editor-serialization](/api/wrappers/jsp/editor/serialization).
 
 #### Example
 
@@ -95,7 +92,7 @@ A collection of tools that are used to interact with the Editor.
 Tools may be switched on by specifying their name.
 Custom tools and tools that require configuration are defined as objects.The available editor commands are:
 
-More documentation is available at [kendo:editor-tools](/kendo-ui/api/wrappers/jsp/editor/tools).
+More documentation is available at [kendo:editor-tools](/api/wrappers/jsp/editor/tools).
 
 #### Example
 
@@ -111,7 +108,7 @@ More documentation is available at [kendo:editor-tools](/kendo-ui/api/wrappers/j
 Fires when Editor is blurred and its content has changed.
 
 
-For additional information check the [change](/kendo-ui/api/web/editor#events-change) event documentation.
+For additional information check the [change](/api/web/editor#events-change) event documentation.
 
 #### Example
     <kendo:editor change="handle_change">
@@ -127,7 +124,7 @@ For additional information check the [change](/kendo-ui/api/web/editor#events-ch
 Fires when an Editor command is executed.
 
 
-For additional information check the [execute](/kendo-ui/api/web/editor#events-execute) event documentation.
+For additional information check the [execute](/api/web/editor#events-execute) event documentation.
 
 #### Example
     <kendo:editor execute="handle_execute">
@@ -143,7 +140,7 @@ For additional information check the [execute](/kendo-ui/api/web/editor#events-e
 Fires when the user depresses a keyboard key. Triggered multiple times if the user holds the key down.
 
 
-For additional information check the [keydown](/kendo-ui/api/web/editor#events-keydown) event documentation.
+For additional information check the [keydown](/api/web/editor#events-keydown) event documentation.
 
 #### Example
     <kendo:editor keydown="handle_keydown">
@@ -159,7 +156,7 @@ For additional information check the [keydown](/kendo-ui/api/web/editor#events-k
 Fires when the user releases a keyboard key.
 
 
-For additional information check the [keyup](/kendo-ui/api/web/editor#events-keyup) event documentation.
+For additional information check the [keyup](/api/web/editor#events-keyup) event documentation.
 
 #### Example
     <kendo:editor keyup="handle_keyup">
@@ -175,7 +172,7 @@ For additional information check the [keyup](/kendo-ui/api/web/editor#events-key
 Fires before the content is pasted in the Editor.
 
 
-For additional information check the [paste](/kendo-ui/api/web/editor#events-paste) event documentation.
+For additional information check the [paste](/api/web/editor#events-paste) event documentation.
 
 #### Example
     <kendo:editor paste="handle_paste">
@@ -191,7 +188,7 @@ For additional information check the [paste](/kendo-ui/api/web/editor#events-pas
 Fires when the Editor selection has changed.
 
 
-For additional information check the [select](/kendo-ui/api/web/editor#events-select) event documentation.
+For additional information check the [select](/api/web/editor#events-select) event documentation.
 
 #### Example
     <kendo:editor select="handle_select">
@@ -209,7 +206,7 @@ For additional information check the [select](/kendo-ui/api/web/editor#events-se
 Fires when Editor is blurred and its content has changed.
 
 
-For additional information check the [change](/kendo-ui/api/web/editor#events-change) event documentation.
+For additional information check the [change](/api/web/editor#events-change) event documentation.
 
 #### Example
     <kendo:editor>
@@ -227,7 +224,7 @@ For additional information check the [change](/kendo-ui/api/web/editor#events-ch
 Fires when an Editor command is executed.
 
 
-For additional information check the [execute](/kendo-ui/api/web/editor#events-execute) event documentation.
+For additional information check the [execute](/api/web/editor#events-execute) event documentation.
 
 #### Example
     <kendo:editor>
@@ -245,7 +242,7 @@ For additional information check the [execute](/kendo-ui/api/web/editor#events-e
 Fires when the user depresses a keyboard key. Triggered multiple times if the user holds the key down.
 
 
-For additional information check the [keydown](/kendo-ui/api/web/editor#events-keydown) event documentation.
+For additional information check the [keydown](/api/web/editor#events-keydown) event documentation.
 
 #### Example
     <kendo:editor>
@@ -263,7 +260,7 @@ For additional information check the [keydown](/kendo-ui/api/web/editor#events-k
 Fires when the user releases a keyboard key.
 
 
-For additional information check the [keyup](/kendo-ui/api/web/editor#events-keyup) event documentation.
+For additional information check the [keyup](/api/web/editor#events-keyup) event documentation.
 
 #### Example
     <kendo:editor>
@@ -281,7 +278,7 @@ For additional information check the [keyup](/kendo-ui/api/web/editor#events-key
 Fires before the content is pasted in the Editor.
 
 
-For additional information check the [paste](/kendo-ui/api/web/editor#events-paste) event documentation.
+For additional information check the [paste](/api/web/editor#events-paste) event documentation.
 
 #### Example
     <kendo:editor>
@@ -299,7 +296,7 @@ For additional information check the [paste](/kendo-ui/api/web/editor#events-pas
 Fires when the Editor selection has changed.
 
 
-For additional information check the [select](/kendo-ui/api/web/editor#events-select) event documentation.
+For additional information check the [select](/api/web/editor#events-select) event documentation.
 
 #### Example
     <kendo:editor>

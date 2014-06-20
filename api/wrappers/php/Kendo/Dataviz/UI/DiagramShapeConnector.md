@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeConnector
-slug: php-dataviz-ui-diagramshapeconnector
-tags: api, php
-publish: true
+nav_title: DiagramShapeConnector
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeConnector

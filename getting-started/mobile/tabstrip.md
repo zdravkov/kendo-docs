@@ -1,11 +1,7 @@
 ---
-title: TabStrip
-meta_title: General documentation for Kendo UI Mobile Tabstrip widget
-meta_description: How to initialize Kendo Mobile TabStrip widget and create custom icons.
-slug: gs-mobile-tabstrip
-relatedDocs: api-mobile-tabstrip
-tags: getting-started,mobile
-publish: true
+nav_title: TabStrip
+title: General documentation for Kendo UI Mobile Tabstrip widget
+description: How to initialize Kendo Mobile TabStrip widget and create custom icons.
 ---
 
 # TabStrip

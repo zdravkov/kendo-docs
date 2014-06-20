@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-crosshair
-slug: jsp-sparkline-categoryAxisItem-crosshair
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-crosshair
 ---
 
 # \<kendo:sparkline-categoryAxisItem-crosshair\>
@@ -63,7 +60,7 @@ The width of the crosshair.
 
 The crosshar tooltip configuration options.
 
-More documentation is available at [kendo:sparkline-categoryAxisItem-crosshair-tooltip](/kendo-ui/api/wrappers/jsp/sparkline/categoryaxisitem-crosshair-tooltip).
+More documentation is available at [kendo:sparkline-categoryAxisItem-crosshair-tooltip](/api/wrappers/jsp/sparkline/categoryaxisitem-crosshair-tooltip).
 
 #### Example
 

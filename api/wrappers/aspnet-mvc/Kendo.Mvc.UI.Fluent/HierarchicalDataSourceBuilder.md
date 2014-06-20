@@ -1,7 +1,5 @@
 ---
-title:HierarchicalDataSourceBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.hierarchicaldatasourcebuilder
-publish:true
+nav_title: HierarchicalDataSourceBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.HierarchicalDataSourceBuilder
@@ -9,16 +7,32 @@ Defines the fluent interface for configuring the HierarchicalDataSource.
 
 
 
+
 ## Methods
 
-### Read(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
+
+### Custom
+Use it to configure Custom binding.
+
+
+
+
+
+### SignalR
+Use it to configure SignalR binding.
+
+
+
+
+
+### Read(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Read operation.
 
 
 
 
 
-### Read(`System.String,System.String,System.Object`)
+### Read(System.String,System.String,System.Object)
 Sets controller, action and routeValues for Read operation.
 
 
@@ -37,7 +51,7 @@ Route values
 
 
 
-### Read(`System.String,System.String`)
+### Read(System.String,System.String)
 Sets controller and action for Read operation.
 
 
@@ -53,14 +67,14 @@ Controller Name
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceEventBuilder\>)
 Configures the client-side events
 
 
 
 
 
-### Model(`System.Action<Kendo.Mvc.UI.Fluent.HierarchicalModelDescriptorBuilder>`)
+### Model(System.Action\<Kendo.Mvc.UI.Fluent.HierarchicalModelDescriptorBuilder\<System.Object\>\>)
 Configures the model
 
 
@@ -74,7 +88,7 @@ Specifies if filtering should be handled by the server.
 
 
 
-### ServerFiltering(`System.Boolean`)
+### ServerFiltering(System.Boolean)
 Specifies if filtering should be handled by the server.
 
 

@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: How to use QRCode HtmlHelper extension | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI QRCode for ASP.NET MVC widget.
-slug: mvc-qrcode-overview
-publish: true
+nav_title: Overview
+title: How to use QRCode HtmlHelper extension | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI QRCode for ASP.NET MVC widget.
 ---
 
 # QRCode
 
-The QRCode HtmlHelper extension is a server-side wrapper for the [Kendo UI QRCode](/kendo-ui/api/web/qrcode) widget.
+The QRCode HtmlHelper extension is a server-side wrapper for the [Kendo UI QRCode](/api/web/qrcode) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo QRCode:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -56,7 +54,7 @@ Here is how to configure a simple Kendo QRCode:
 ## Accessing an Existing QRCode
 
 You can reference an existing QRCode instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/qrcode#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/qrcode#methods) to control its behavior.
 
 
 ### Accessing an existing QRCode instance

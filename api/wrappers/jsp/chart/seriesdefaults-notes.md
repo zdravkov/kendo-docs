@@ -1,8 +1,5 @@
 ---
-title: chart-seriesDefaults-notes
-slug: jsp-chart-seriesDefaults-notes
-tags: api, java
-publish: true
+nav_title: chart-seriesDefaults-notes
 ---
 
 # \<kendo:chart-seriesDefaults-notes\>
@@ -23,7 +20,7 @@ The seriesDefaults notes configuration.
 
 The icon of the notes.
 
-More documentation is available at [kendo:chart-seriesDefaults-notes-icon](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-notes-icon).
+More documentation is available at [kendo:chart-seriesDefaults-notes-icon](/api/wrappers/jsp/chart/seriesdefaults-notes-icon).
 
 #### Example
 
@@ -35,7 +32,7 @@ More documentation is available at [kendo:chart-seriesDefaults-notes-icon](/kend
 
 The label of the notes.
 
-More documentation is available at [kendo:chart-seriesDefaults-notes-label](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-notes-label).
+More documentation is available at [kendo:chart-seriesDefaults-notes-label](/api/wrappers/jsp/chart/seriesdefaults-notes-label).
 
 #### Example
 
@@ -47,7 +44,7 @@ More documentation is available at [kendo:chart-seriesDefaults-notes-label](/ken
 
 The line of the notes.
 
-More documentation is available at [kendo:chart-seriesDefaults-notes-line](/kendo-ui/api/wrappers/jsp/chart/seriesdefaults-notes-line).
+More documentation is available at [kendo:chart-seriesDefaults-notes-line](/api/wrappers/jsp/chart/seriesdefaults-notes-line).
 
 #### Example
 

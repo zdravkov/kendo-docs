@@ -1,9 +1,7 @@
 ---
-title: Menu
-meta_title: API documentation for Kendo UI jQuery Menu control with ASP.NET MVC
-meta_description: Documentation and code examples about server-side and client-side API for Kendo UI Menu component.
-slug: menu
-publish: true
+nav_title: Menu
+title: API documentation for Kendo UI jQuery Menu control with ASP.NET MVC
+description: Documentation and code examples about server-side and client-side API for Kendo UI Menu component.
 ---
 
 # Server-side API

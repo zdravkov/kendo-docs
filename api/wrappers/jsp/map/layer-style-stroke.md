@@ -1,8 +1,5 @@
 ---
-title: map-layer-style-stroke
-slug: jsp-map-layer-style-stroke
-tags: api, java
-publish: true
+nav_title: map-layer-style-stroke
 ---
 
 # \<kendo:map-layer-style-stroke\>

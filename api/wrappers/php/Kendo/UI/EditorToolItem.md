@@ -1,8 +1,5 @@
 ---
-title: EditorToolItem
-slug: php-ui-editortoolitem
-tags: api, php
-publish: true
+nav_title: EditorToolItem
 ---
 
 # \Kendo\UI\EditorToolItem

@@ -1,14 +1,11 @@
 ---
-title: kendo.ui.Sortable
-meta_title: Configuration, methods and events of Kendo UI Sortable
-slug: api-web-sortable
-tags: api,web
-publish: true
+nav_title: kendo.ui.Sortable
+title: Configuration, methods and events of Kendo UI Sortable
 ---
 
 # kendo.ui.Sortable
 
-Represents the Kendo UI Sortable. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Sortable. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

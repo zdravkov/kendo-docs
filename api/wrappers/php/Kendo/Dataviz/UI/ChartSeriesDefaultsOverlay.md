@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesDefaultsOverlay
-slug: php-dataviz-ui-chartseriesdefaultsoverlay
-tags: api, php
-publish: true
+nav_title: ChartSeriesDefaultsOverlay
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsOverlay

@@ -1,8 +1,5 @@
 ---
-title: radialGauge-scale-labels
-slug: jsp-radialGauge-scale-labels
-tags: api, java
-publish: true
+nav_title: radialGauge-scale-labels
 ---
 
 # \<kendo:radialGauge-scale-labels\>
@@ -98,7 +95,7 @@ The visibility of the labels.
 
 The border of the labels.
 
-More documentation is available at [kendo:radialGauge-scale-labels-border](/kendo-ui/api/wrappers/jsp/radialgauge/scale-labels-border).
+More documentation is available at [kendo:radialGauge-scale-labels-border](/api/wrappers/jsp/radialgauge/scale-labels-border).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-recurrenceEditor-frequencies
-slug: jsp-scheduler-messages-recurrenceEditor-frequencies
-tags: api, java
-publish: true
+nav_title: scheduler-messages-recurrenceEditor-frequencies
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-frequencies\>

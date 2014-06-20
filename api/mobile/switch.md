@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.Switch
-meta_title: Configuration, methods and events of Kendo UI Mobile Switch
-meta_description: How to quickly configure the checked and unchecked state of Mobile Switch widget.
-slug: api-mobile-switch
-relatedDocs: gs-mobile-switch
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.Switch
+title: Configuration, methods and events of Kendo UI Mobile Switch
+description: How to quickly configure the checked and unchecked state of Mobile Switch widget.
 ---
 
 # kendo.mobile.ui.Switch
 
-Represents the Kendo UI Mobile Switch widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile Switch widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 

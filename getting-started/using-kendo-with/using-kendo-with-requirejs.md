@@ -1,8 +1,5 @@
 ---
-title: Using Kendo With RequireJS
-slug: gs-using-kendo-with-requirejs
-tags: 101, Getting Started, RequireJS
-publish: true
+nav_title: Using Kendo With RequireJS
 ---
 
 # Using Kendo with RequireJS

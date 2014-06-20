@@ -1,8 +1,5 @@
 ---
-title: map-marker-tooltip
-slug: jsp-map-marker-tooltip
-tags: api, java
-publish: true
+nav_title: map-marker-tooltip
 ---
 
 # \<kendo:map-marker-tooltip\>
@@ -96,7 +93,7 @@ The width (in pixels) of the tooltip.
 A collection of {Animation} objects, used to change default animations. A value of false
 will disable all animations in the widget.
 
-More documentation is available at [kendo:map-marker-tooltip-animation](/kendo-ui/api/wrappers/jsp/map/marker-tooltip-animation).
+More documentation is available at [kendo:map-marker-tooltip-animation](/api/wrappers/jsp/map/marker-tooltip-animation).
 
 #### Example
 

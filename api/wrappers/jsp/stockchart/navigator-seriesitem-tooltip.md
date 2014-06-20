@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-seriesItem-tooltip
-slug: jsp-stockChart-navigator-seriesItem-tooltip
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-seriesItem-tooltip
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-tooltip\>
@@ -80,7 +77,7 @@ A value indicating if the tooltip should be displayed.
 
 The border configuration options.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-tooltip-border](/kendo-ui/api/wrappers/jsp/stockchart/navigator-seriesitem-tooltip-border).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-tooltip-border](/api/wrappers/jsp/stockchart/navigator-seriesitem-tooltip-border).
 
 #### Example
 

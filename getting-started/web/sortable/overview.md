@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Documentation for Sortable widget in Kendo UI framework
-meta_description: How to use the Sortable widget.
-slug: gs-web-sortable-overview
-relatedDocs: api-web-sortable
-tags: getting-started, web
-publish: true
+nav_title: Overview
+title: Documentation for Sortable widget in Kendo UI framework
+description: How to use the Sortable widget.
 ---
 
 # Sortable Overview

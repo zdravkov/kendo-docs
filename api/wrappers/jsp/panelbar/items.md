@@ -1,8 +1,5 @@
 ---
-title: panelBar-items
-slug: jsp-panelBar-items
-tags: api, java
-publish: true
+nav_title: panelBar-items
 ---
 
 # \<kendo:panelBar-items\>
@@ -23,7 +20,7 @@ Contains the items of the panelbar widget
 
 Contains the items of the panelbar widget
 
-More documentation is available at [kendo:panelBar-item](/kendo-ui/api/wrappers/jsp/panelbar/item).
+More documentation is available at [kendo:panelBar-item](/api/wrappers/jsp/panelbar/item).
 
 #### Example
 

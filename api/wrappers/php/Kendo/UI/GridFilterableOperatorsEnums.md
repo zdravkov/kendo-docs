@@ -1,8 +1,5 @@
 ---
-title: GridFilterableOperatorsEnums
-slug: php-ui-gridfilterableoperatorsenums
-tags: api, php
-publish: true
+nav_title: GridFilterableOperatorsEnums
 ---
 
 # \Kendo\UI\GridFilterableOperatorsEnums

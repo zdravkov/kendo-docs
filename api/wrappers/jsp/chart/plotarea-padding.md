@@ -1,8 +1,5 @@
 ---
-title: chart-plotArea-padding
-slug: jsp-chart-plotArea-padding
-tags: api, java
-publish: true
+nav_title: chart-plotArea-padding
 ---
 
 # \<kendo:chart-plotArea-padding\>

@@ -1,7 +1,5 @@
 ---
-title:MenuItemFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.menuitemfactory
-publish:true
+nav_title: MenuItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.MenuItemFactory

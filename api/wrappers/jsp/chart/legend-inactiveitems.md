@@ -1,8 +1,5 @@
 ---
-title: chart-legend-inactiveItems
-slug: jsp-chart-legend-inactiveItems
-tags: api, java
-publish: true
+nav_title: chart-legend-inactiveItems
 ---
 
 # \<kendo:chart-legend-inactiveItems\>
@@ -23,7 +20,7 @@ The chart inactive legend items configuration.
 
 The chart legend label configuration.
 
-More documentation is available at [kendo:chart-legend-inactiveItems-labels](/kendo-ui/api/wrappers/jsp/chart/legend-inactiveitems-labels).
+More documentation is available at [kendo:chart-legend-inactiveItems-labels](/api/wrappers/jsp/chart/legend-inactiveitems-labels).
 
 #### Example
 

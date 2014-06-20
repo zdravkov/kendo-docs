@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-minorGridLines
-slug: jsp-chart-yAxisItem-minorGridLines
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-minorGridLines
 ---
 
 # \<kendo:chart-yAxisItem-minorGridLines\>

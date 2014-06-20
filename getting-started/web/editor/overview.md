@@ -1,12 +1,8 @@
 ---
-title: Overview
-meta_title: Overview of Editor UI widget | Kendo UI Documentation
-meta_description: The documentation guide will help you initialize Kendo web editor and proceed with its configuration.
-slug: gs-web-editor-overview
-relatedDocs: api-web-editor
-tags: getting-started,web
-ordinal: 1
-publish: true
+nav_title: Overview
+title: Overview of Editor UI widget | Kendo UI Documentation
+description: The documentation guide will help you initialize Kendo web editor and proceed with its configuration.
+nav_position: 1
 ---
 
 # Editor Overview
@@ -37,15 +33,15 @@ The originating element will be made **contenteditable** and it will be used by 
 The major differences between the two modes are:
 
 * The classic Editor is able to post its value automatically, because it is based on a form element. The Editor tools are always visible. The Editor's content does not reside on the main web page, so the page styling does not
-influence the editable content. If custom styles need to be applied to the editable content, they should be [injected via the Editor's configuration](/kendo-ui/api/web/editor#configuration-stylesheets).
+influence the editable content. If custom styles need to be applied to the editable content, they should be [injected via the Editor's configuration](/api/web/editor#configuration-stylesheets).
 [Classic Editor Demo](http://demos.telerik.com/kendo-ui/web/editor/index.html)
-* The inline Editor is not able to post its value and [this should be taken care of by the developer](/kendo-ui/getting-started/web/editor/troubleshooting).
+* The inline Editor is not able to post its value and [this should be taken care of by the developer](/getting-started/web/editor/troubleshooting).
 The Editor tools are only visible when the widget is focused. The Editor's content resides on the main web page, so the page styling can influence the editable content.
 [Inline Editor Demo](http://demos.telerik.com/kendo-ui/web/editor/inline-editing.html)
 
 ## Configuring the Editor
 
-The editor tools can be configured through the [`tools` configuration option](/kendo-ui/api/web/editor#tools).
+The editor tools can be configured through the [`tools` configuration option](/api/web/editor#tools).
 
 ### Specifying a set of Editor tools
 

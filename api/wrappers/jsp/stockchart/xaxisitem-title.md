@@ -1,8 +1,5 @@
 ---
-title: stockChart-xAxisItem-title
-slug: jsp-stockChart-xAxisItem-title
-tags: api, java
-publish: true
+nav_title: stockChart-xAxisItem-title
 ---
 
 # \<kendo:stockChart-xAxisItem-title\>

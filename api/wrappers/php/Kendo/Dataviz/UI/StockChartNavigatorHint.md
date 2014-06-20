@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorHint
-slug: php-dataviz-ui-stockchartnavigatorhint
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorHint
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorHint

@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-pane-title
-slug: jsp-stockChart-navigator-pane-title
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-pane-title
 ---
 
 # \<kendo:stockChart-navigator-pane-title\>
@@ -79,7 +76,7 @@ If set to true the chart will display the pane title. By default the pane title 
 
 The border of the title.
 
-More documentation is available at [kendo:stockChart-navigator-pane-title-border](/kendo-ui/api/wrappers/jsp/stockchart/navigator-pane-title-border).
+More documentation is available at [kendo:stockChart-navigator-pane-title-border](/api/wrappers/jsp/stockchart/navigator-pane-title-border).
 
 #### Example
 
@@ -91,7 +88,7 @@ More documentation is available at [kendo:stockChart-navigator-pane-title-border
 
 The margin of the title. A numeric value will set all margins.
 
-More documentation is available at [kendo:stockChart-navigator-pane-title-margin](/kendo-ui/api/wrappers/jsp/stockchart/navigator-pane-title-margin).
+More documentation is available at [kendo:stockChart-navigator-pane-title-margin](/api/wrappers/jsp/stockchart/navigator-pane-title-margin).
 
 #### Example
 

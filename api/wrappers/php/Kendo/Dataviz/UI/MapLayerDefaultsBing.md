@@ -1,8 +1,5 @@
 ---
-title: MapLayerDefaultsBing
-slug: php-dataviz-ui-maplayerdefaultsbing
-tags: api, php
-publish: true
+nav_title: MapLayerDefaultsBing
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsBing

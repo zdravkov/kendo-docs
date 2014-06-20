@@ -1,7 +1,5 @@
 ---
-title:MobileButtonGroupBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilebuttongroupbuilder
-publish:true
+nav_title: MobileButtonGroupBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileButtonGroupBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo MobileButtonGroup for ASP.NET M
 
 
 
+
 ## Methods
 
-### Index(`System.Int32`)
+
+### Index(System.Int32)
 Defines the initially selected Button (zero based index).
 
 
@@ -24,7 +24,7 @@ The value that configures the index.
 
 
 
-### SelectOn(`System.String`)
+### SelectOn(System.String)
 Sets the DOM event used to select the button. Accepts "up" as an alias for touchend, mouseup and MSPointerUp vendor specific events.By default, buttons are selected immediately after the user presses the button (on touchstart or mousedown or MSPointerDown, depending on the mobile device).
             However, if the widget is placed in a scrollable view, the user may accidentally press the button when scrolling. In such cases, it is recommended to set this option to "up".
 
@@ -38,26 +38,26 @@ The value that configures the selecton.
 
 
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.MobileButtonGroupItemFactory>`)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.MobileButtonGroupItemFactory\>)
 Contains the items of the button group widget
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileButtonGroupItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileButtonGroupItemFactory)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileButtonGroupItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileButtonGroupItemFactory)>
 The action that configures the items.
 
 
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.MobileButtonGroupEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.MobileButtonGroupEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileButtonGroupEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileButtonGroupEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MobileButtonGroupEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MobileButtonGroupEventBuilder)>
 The client events action.
 
 

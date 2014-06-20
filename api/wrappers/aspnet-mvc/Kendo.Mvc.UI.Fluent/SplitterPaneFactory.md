@@ -1,7 +1,5 @@
 ---
-title:SplitterPaneFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.splitterpanefactory
-publish:true
+nav_title: SplitterPaneFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.SplitterPaneFactory

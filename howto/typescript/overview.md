@@ -1,8 +1,5 @@
 ---
-title: Kendo UI and TypeScript
-slug: howto-using-typescript
-tags: How-To, TypeScript
-publish: true
+nav_title: Kendo UI and TypeScript
 ---
 
 # Kendo UI TypeScript Support

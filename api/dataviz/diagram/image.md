@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Image
-slug:api-dataviz-diagram-image
-publish: true
+nav_title: kendo.dataviz.diagram.Image
 ---
 
 # kendo.dataviz.diagram.Image

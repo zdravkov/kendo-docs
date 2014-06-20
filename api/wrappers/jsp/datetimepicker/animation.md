@@ -1,8 +1,5 @@
 ---
-title: dateTimePicker-animation
-slug: jsp-dateTimePicker-animation
-tags: api, java
-publish: true
+nav_title: dateTimePicker-animation
 ---
 
 # \<kendo:dateTimePicker-animation\>
@@ -23,7 +20,7 @@ Configures the opening and closing animations of the popups. Setting the animati
 
 The animation played when a popup is closed.
 
-More documentation is available at [kendo:dateTimePicker-animation-close](/kendo-ui/api/wrappers/jsp/datetimepicker/animation-close).
+More documentation is available at [kendo:dateTimePicker-animation-close](/api/wrappers/jsp/datetimepicker/animation-close).
 
 #### Example
 
@@ -35,7 +32,7 @@ More documentation is available at [kendo:dateTimePicker-animation-close](/kendo
 
 The animation played when the popup is opened.
 
-More documentation is available at [kendo:dateTimePicker-animation-open](/kendo-ui/api/wrappers/jsp/datetimepicker/animation-open).
+More documentation is available at [kendo:dateTimePicker-animation-open](/api/wrappers/jsp/datetimepicker/animation-open).
 
 #### Example
 

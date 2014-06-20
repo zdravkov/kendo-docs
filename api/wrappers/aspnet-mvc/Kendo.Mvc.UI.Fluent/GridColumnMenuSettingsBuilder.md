@@ -1,7 +1,5 @@
 ---
-title:GridColumnMenuSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gridcolumnmenusettingsbuilder
-publish:true
+nav_title: GridColumnMenuSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnMenuSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ColumnMenu.
 
 
 
+
 ## Methods
 
-### Enabled(`System.Boolean`)
+
+### Enabled(System.Boolean)
 Enables/disables header column menu.
 
 
@@ -24,7 +24,7 @@ Enables/disables header column menu.
     %>
 
 
-### Sortable(`System.Boolean`)
+### Sortable(System.Boolean)
 Enables/disables sort section in header column menu.
 
 
@@ -37,7 +37,7 @@ Enables/disables sort section in header column menu.
     %>
 
 
-### Filterable(`System.Boolean`)
+### Filterable(System.Boolean)
 Enables/disables filter section in header column menu.
 
 
@@ -50,7 +50,7 @@ Enables/disables filter section in header column menu.
     %>
 
 
-### Columns(`System.Boolean`)
+### Columns(System.Boolean)
 Enables/disables columns section in header column menu.
 
 
@@ -63,7 +63,7 @@ Enables/disables columns section in header column menu.
     %>
 
 
-### Messages(`System.Action<Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder>`)
+### Messages(System.Action\<Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder\>)
 Enables you to define custom messages in grid column menu.
 
 

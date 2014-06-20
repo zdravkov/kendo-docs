@@ -1,9 +1,7 @@
 ---
-title: Invisible
-meta_title: Invisible binding in Kendo UI MVVM | Kendo UI Documentation
-meta_description: How to hide or show the target DOM element, depending on the View-Model Value by using the invisible binding.
-slug: mvvm-invisible-binding
-publish: true
+nav_title: Invisible
+title: Invisible binding in Kendo UI MVVM | Kendo UI Documentation
+description: How to hide or show the target DOM element, depending on the View-Model Value by using the invisible binding.
 ---
 
 ## Invisible binding

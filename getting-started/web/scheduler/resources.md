@@ -1,11 +1,7 @@
 ---
-title: Resources
-meta_title: Resources and the Kendo UI Scheduler widget
-meta_description: How to use resources with Kendo UI Scheduler.
-slug: gs-web-scheduler-resources
-relatedDocs: api-web-scheduler
-tags: getting-started,web
-publish: true
+nav_title: Resources
+title: Resources and the Kendo UI Scheduler widget
+description: How to use resources with Kendo UI Scheduler.
 ---
 
 # Scheduler Resources
@@ -174,6 +170,6 @@ Kendo UI Scheduler supports unlimited resource types. For example we can combine
 
 ## Further reading
 
-Additional information about Kendo UI resources can be found in the documentation of the [resources](/kendo-ui/api/web/scheduler#configuration-resources) option.
+Additional information about Kendo UI resources can be found in the documentation of the [resources](/api/web/scheduler#configuration-resources) option.
 
 In addition you can check the [Resources](http://demos.telerik.com/kendo-ui/web/scheduler/resources.html) online demo.

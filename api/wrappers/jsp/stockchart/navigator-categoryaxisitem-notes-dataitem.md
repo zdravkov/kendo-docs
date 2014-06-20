@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-notes-dataItem
-slug: jsp-stockChart-navigator-categoryAxisItem-notes-dataItem
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-notes-dataItem
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-notes-dataItem\>
@@ -39,7 +36,7 @@ The value of the note.
 
 The icon of the note.
 
-More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-icon](/kendo-ui/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-icon).
+More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-icon](/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-icon).
 
 #### Example
 
@@ -51,7 +48,7 @@ More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-
 
 The label of the note.
 
-More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-label](/kendo-ui/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-label).
+More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-label](/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-label).
 
 #### Example
 
@@ -63,7 +60,7 @@ More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-
 
 The line of the note.
 
-More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-line](/kendo-ui/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-line).
+More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem-line](/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem-line).
 
 #### Example
 

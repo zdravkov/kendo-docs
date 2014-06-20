@@ -1,20 +1,24 @@
 ---
-title:ChartPanesFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartpanesfactory
-publish:true
+nav_title: ChartPanesFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPanesFactory
 Creates panes for the 1.
 
 
+
 ## Properties
+
+
 ### Container
+
 The parent Chart
 
 
 
+
 ## Methods
+
 
 ### Add
 Defines a chart pane.
@@ -23,7 +27,7 @@ Defines a chart pane.
 
 
 
-### Add(`System.String`)
+### Add(System.String)
 Defines a named chart pane.
 
 

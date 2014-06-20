@@ -1,7 +1,5 @@
 ---
-title:ChartBorderBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartborderbuilder
-publish:true
+nav_title: ChartBorderBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBorderBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartElementBorder.
 
 
 
+
 ## Methods
 
-### Color(`System.String`)
+
+### Color(System.String)
 Sets the border color.
 
 
@@ -31,7 +31,7 @@ The border color (CSS format).
     %>
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the border opacity
 
 
@@ -51,7 +51,7 @@ The border opacity (CSS format).
     %>
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 Sets the border width.
 
 
@@ -71,13 +71,13 @@ The border width.
     %>
 
 
-### DashType(`Kendo.Mvc.UI.ChartDashType`)
+### DashType(Kendo.Mvc.UI.ChartDashType)
 Sets the border dashType.
 
 
 #### Parameters
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The border dashType.
 
 

@@ -1,22 +1,26 @@
 ---
-title:ChartSeriesHighlightBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartserieshighlightbuilder
-publish:true
+nav_title: ChartSeriesHighlightBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartSeriesHighlightBuilder
 Defines the fluent interface for configuring series highlight.
 
 
+
 ## Properties
+
+
 ### Highlight
+
 Gets or sets the highlight
+
 
 
 
 ## Methods
 
-### Visible(`System.Boolean`)
+
+### Visible(System.Boolean)
 Sets the highlight visibility
 
 

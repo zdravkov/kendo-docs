@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-notes-line
-slug: jsp-sparkline-categoryAxisItem-notes-line
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-notes-line
 ---
 
 # \<kendo:sparkline-categoryAxisItem-notes-line\>

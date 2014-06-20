@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorSeriesItemLine
-slug: php-dataviz-ui-stockchartnavigatorseriesitemline
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorSeriesItemLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLine

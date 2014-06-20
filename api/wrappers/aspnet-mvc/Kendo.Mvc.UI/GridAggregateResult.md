@@ -1,7 +1,5 @@
 ---
-title:GridAggregateResult
-slug:aspnetmvc-kendo.mvc.ui.gridaggregateresult
-publish:true
+nav_title: GridAggregateResult
 ---
 
 # Kendo.Mvc.UI.GridAggregateResult

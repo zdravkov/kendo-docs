@@ -1,11 +1,8 @@
 ---
-title: Introduction
-meta_title: HTML5, jQuery-based framework | Kendo UI
-meta_description: Kendo UI framework overview: UI components, rich data vizualization framework, auto-adaptive mobile widgets and all tools for building rich web apps.
-slug: gs-introduction
-tags: 101, Getting Started, internals
-publish: true
-ordinal: 01
+nav_title: Introduction
+title: HTML5, jQuery-based framework | Kendo UI
+description: "Kendo UI framework overview: UI components, rich data vizualization framework, auto-adaptive mobile widgets and all tools for building rich web apps."
+nav_position: 1
 ---
 
 # What is Kendo UI
@@ -45,7 +42,7 @@ To use Kendo UI in your HTML page you need to include the required JavaScript an
 1. Download Kendo UI Web and extract the distribution zip file to a convenient location.
 1. Copy the **/js** and **/styles** directories of the Kendo UI Web distribution to your web application root directory.
 1. Include the Kendo UI Web JavaScript and CSS files in the `head` tag of your HTML page. **Make sure the common CSS file is registered before the theme CSS file.
-Also make sure only one combined script file is registered. For more information, please refer to the [Javascript Dependencies page](/kendo-ui/getting-started/javascript-dependencies).**
+Also make sure only one combined script file is registered. For more information, please refer to the [Javascript Dependencies page](/getting-started/javascript-dependencies).**
 
         <!-- Common Kendo UI Web CSS -->
         <link href="styles/kendo.common.min.css" rel="stylesheet" />
@@ -86,6 +83,7 @@ Here is the complete example:
             </script>
         </body>
     </html>
+
 ### Kendo UI DataViz
 
 1. Download Kendo UI DataViz and extract the distribution zip file to a convenient location.
@@ -127,6 +125,7 @@ Here is the complete example:
             </script>
         </body>
     </html>
+
 ### Kendo UI Mobile
 
 1. Download Kendo UI Mobile and extract the distribution zip file to a convenient location.
@@ -210,9 +209,9 @@ which allow configuring the Kendo UI widgets with server-side code.
 
 You can find more info about the server-side wrappers here:
 
-- [Get Started with Telerik UI for ASP.NET MVC](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction)
-- [Get Started with Telerik UI for JSP](/kendo-ui/getting-started/using-kendo-with/jsp/introduction)
-- [Get Started with Telerik UI for PHP](/kendo-ui/getting-started/using-kendo-with/php/introduction)
+- [Get Started with Telerik UI for ASP.NET MVC](/getting-started/using-kendo-with/aspnet-mvc/introduction)
+- [Get Started with Telerik UI for JSP](/getting-started/using-kendo-with/jsp/introduction)
+- [Get Started with Telerik UI for PHP](/getting-started/using-kendo-with/php/introduction)
 
 ## Next Steps
 
@@ -226,9 +225,9 @@ A lot of interactive tutorials are available in the [Kendo UI Dojo](http://tryke
 
 ### Further reading
 
-1. [Kendo UI Widgets](/kendo-ui/getting-started/widgets)
-1. [Data Attribute Initialization](/kendo-ui/getting-started/data-attribute-initialization)
-1. [Requirements](/kendo-ui/getting-started/technical-requirements)
+1. [Kendo UI Widgets](/getting-started/widgets)
+1. [Data Attribute Initialization](/getting-started/data-attribute-initialization)
+1. [Requirements](/getting-started/technical-requirements)
 
 ### Examples
 
@@ -237,7 +236,7 @@ A lot of interactive tutorials are available in the [Kendo UI Dojo](http://tryke
 1. Examples available on github
 -   [ASP.NET MVC examples](https://github.com/telerik/kendo-examples-asp-net-mvc/)
 -   [ASP.NET MVC Kendo UI Music Store](https://github.com/telerik/kendo-music-store)
--   [ASP.NET WebForms examples](https://github.com/telerik/kendo-examples-asp-net/)
+-   [ASP.NET WebForms examples](https://github.com/telerik/kendo-examples-asp.net/)
 -   [JSP examples](https://github.com/telerik/kendo-examples-java)
 -   [Kendo Mobile Sushi](https://github.com/telerik/kendo-mobile-sushi)
 -   [PHP examples](https://github.com/telerik/kendo-examples-php)

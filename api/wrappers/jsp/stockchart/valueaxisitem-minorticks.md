@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-minorTicks
-slug: jsp-stockChart-valueAxisItem-minorTicks
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-minorTicks
 ---
 
 # \<kendo:stockChart-valueAxisItem-minorTicks\>

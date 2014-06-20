@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-labels-dateFormats
-slug: jsp-stockChart-navigator-categoryAxisItem-labels-dateFormats
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-labels-dateFormats
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-labels-dateFormats\>

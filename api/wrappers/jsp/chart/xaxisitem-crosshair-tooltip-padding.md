@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-crosshair-tooltip-padding
-slug: jsp-chart-xAxisItem-crosshair-tooltip-padding
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-crosshair-tooltip-padding
 ---
 
 # \<kendo:chart-xAxisItem-crosshair-tooltip-padding\>

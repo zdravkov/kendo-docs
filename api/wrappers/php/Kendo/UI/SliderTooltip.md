@@ -1,8 +1,5 @@
 ---
-title: SliderTooltip
-slug: php-ui-slidertooltip
-tags: api, php
-publish: true
+nav_title: SliderTooltip
 ---
 
 # \Kendo\UI\SliderTooltip

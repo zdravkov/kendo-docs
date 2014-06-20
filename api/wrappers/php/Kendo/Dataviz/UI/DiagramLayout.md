@@ -1,8 +1,5 @@
 ---
-title: DiagramLayout
-slug: php-dataviz-ui-diagramlayout
-tags: api, php
-publish: true
+nav_title: DiagramLayout
 ---
 
 # \Kendo\Dataviz\UI\DiagramLayout
@@ -43,7 +40,7 @@ A diagram can have in general disconnected pieces, known as components, which ca
 ##### $value `\Kendo\Dataviz\UI\DiagramLayoutGrid|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\DiagramLayoutGrid](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/DiagramLayoutGrid)
+#### Example - using [\Kendo\Dataviz\UI\DiagramLayoutGrid](/api/wrappers/php/Kendo/Dataviz/UI/DiagramLayoutGrid)
     <?php
     $layout = new \Kendo\Dataviz\UI\DiagramLayout();
     $grid = new \Kendo\Dataviz\UI\DiagramLayoutGrid();

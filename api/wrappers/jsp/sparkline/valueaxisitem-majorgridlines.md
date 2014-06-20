@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-majorGridLines
-slug: jsp-sparkline-valueAxisItem-majorGridLines
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-majorGridLines
 ---
 
 # \<kendo:sparkline-valueAxisItem-majorGridLines\>

@@ -1,8 +1,6 @@
 ---
-title: View
-slug: spa-view
-ordinal: 4
-publish: true
+nav_title: View
+nav_position: 4
 ---
 
 # View Overview
@@ -61,7 +59,7 @@ or return a reference to the existing view element if no container is provided.
 ## MVVM Integration
 
 If an observable object is passed as a `model` configuration option to the view constructor, the view will bind it to the element when instantiated.
-If no model is present, the content will be processed using [Data Attribute Initialization](/kendo-ui/getting-started/data-attribute-initialization).
+If no model is present, the content will be processed using [Data Attribute Initialization](/getting-started/data-attribute-initialization).
 
 ## MVVM Bound View
     <script id="index" type="text/x-kendo-template">

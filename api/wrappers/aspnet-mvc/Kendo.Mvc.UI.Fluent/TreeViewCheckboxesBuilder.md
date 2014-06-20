@@ -1,7 +1,5 @@
 ---
-title:TreeViewCheckboxesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.treeviewcheckboxesbuilder
-publish:true
+nav_title: TreeViewCheckboxesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewCheckboxesBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring child TreeView items.
 
 
 
+
 ## Methods
 
-### Enabled(`System.Boolean`)
+
+### Enabled(System.Boolean)
 Enable/disable rendering of checkboxes in the treeview.
 
 
@@ -32,7 +32,7 @@ Whether checkboxes should be rendered.
     %>
 
 
-### CheckChildren(`System.Boolean`)
+### CheckChildren(System.Boolean)
 Enable/disable checking of child checkboxes in the treeview.
 
 
@@ -53,7 +53,7 @@ Whether checking of parent checkboxes should check child checkboxes.
     %>
 
 
-### Template(`System.String`)
+### Template(System.String)
 Client-side template to be used for rendering the items in the treeview.
 
 
@@ -68,7 +68,7 @@ Client-side template to be used for rendering the items in the treeview.
     %>
 
 
-### TemplateId(`System.String`)
+### TemplateId(System.String)
 Id of the element that holds the client-side template to be used for rendering the items in the treeview.
 
 
@@ -83,7 +83,7 @@ Id of the element that holds the client-side template to be used for rendering t
     %>
 
 
-### Name(`System.String`)
+### Name(System.String)
 The name attribute of the checkbox fields. This will correlate to the name of the action method parameter that the nodes are posted to.
 
 

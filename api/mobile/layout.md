@@ -1,11 +1,7 @@
 ---
-title: kendo.mobile.ui.Layout
-meta_title: Configuration, methods and events of Kendo UI Mobile Layout
-meta_description: Layout configuration in Kendo UI mobile JavaScript framework, supported methods to control behavior, events that hide and initialize child widgets.
-slug: api-mobile-layout
-relatedDocs: gs-mobile-layout
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.Layout
+title: Configuration, methods and events of Kendo UI Mobile Layout
+description: Layout configuration in Kendo UI mobile JavaScript framework, supported methods to control behavior, events that hide and initialize child widgets.
 ---
 
 # kendo.mobile.ui.Layout

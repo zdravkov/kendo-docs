@@ -1,8 +1,5 @@
 ---
-title: NotificationTemplate
-slug: php-ui-notificationtemplate
-tags: api, php
-publish: true
+nav_title: NotificationTemplate
 ---
 
 # \Kendo\UI\NotificationTemplate

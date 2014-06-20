@@ -1,14 +1,12 @@
 ---
-title: Number Formatting
-meta_title: Number Formatting | Kendo UI Framework Globalization documentation
-meta_description: Use number formatting methods to convert a Number object to a human readable string using culture's specific settings.
-slug: number-formatting
-publish: true
+nav_title: Number Formatting
+title: Number Formatting | Kendo UI Framework Globalization documentation
+description: Use number formatting methods to convert a Number object to a human readable string using culture's specific settings.
 ---
 
 # Number Formatting
 
-The purpose of number formatting is to convert a Number object to a human readable string using culture's specific settings. [kendo.format](/kendo-ui/api/framework/kendo#format) and [kendo.toString](/kendo-ui/api/framework/kendo#tostring) methods support standard and custom numeric formats:
+The purpose of number formatting is to convert a Number object to a human readable string using culture's specific settings. [kendo.format](/api/framework/kendo#format) and [kendo.toString](/api/framework/kendo#tostring) methods support standard and custom numeric formats:
 
 ## Standard numeric formats
 

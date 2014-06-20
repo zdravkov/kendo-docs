@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.Window
-meta_title: Configuration, methods and events of Kendo UI Window
-meta_description: How to initialize a Window UI widget and configure its behaviors, center a window, set its content and toggle the state of the UI widget.
-slug: api-web-window
-relatedDocs: gs-web-window-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.Window
+title: Configuration, methods and events of Kendo UI Window
+description: How to initialize a Window UI widget and configure its behaviors, center a window, set its content and toggle the state of the UI widget.
 ---
 
 # kendo.ui.Window
 
-Represents the Kendo UI Window. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Window. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
@@ -148,7 +144,7 @@ Defines the open animation duration.
 
 ### appendTo `Object|String` *(default: document.body)*
 
-The element that the Window will be appended to. Beneficial if the [Window is used together with a form](/kendo-ui/getting-started/web/window/overview#using-kendo-ui-window-with-a-form).
+The element that the Window will be appended to. Beneficial if the [Window is used together with a form](/getting-started/web/window/overview#using-kendo-ui-window-with-a-form).
 Note that this *does not* constrain the window dragging within the given element.
 
 #### Example - set the window container to be the form with id="mainForm"
@@ -576,7 +572,7 @@ The user will still be able to move the Window with the mouse or keyboard.
 
 ### refresh
 
-Refreshes the content of a Window from a remote URL or the initially defined [content template](/kendo-ui/api/web/window#configuration-content.template).
+Refreshes the content of a Window from a remote URL or the initially defined [content template](/api/web/window#configuration-content.template).
 **Note that passing `data` and non-GET requests cannot be sent to an iframe**, as they require a form with a target attribute.
 
 #### Parameters

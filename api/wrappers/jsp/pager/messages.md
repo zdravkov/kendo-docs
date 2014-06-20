@@ -1,8 +1,5 @@
 ---
-title: pager-messages
-slug: jsp-pager-messages
-tags: api, java
-publish: true
+nav_title: pager-messages
 ---
 
 # \<kendo:pager-messages\>

@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.NavBar
-meta_title: Configuration, methods and events of Kendo UI Mobile NavBar
-meta_description: How to use methods in Mobile NavBar widget.
-slug: api-mobile-navbar
-relatedDocs: gs-mobile-navbar
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.NavBar
+title: Configuration, methods and events of Kendo UI Mobile NavBar
+description: How to use methods in Mobile NavBar widget.
 ---
 
 # kendo.mobile.ui.NavBar
 
-Represents the Kendo UI Mobile NavBar widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile NavBar widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Methods
 

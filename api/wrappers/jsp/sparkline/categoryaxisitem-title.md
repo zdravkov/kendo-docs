@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-title
-slug: jsp-sparkline-categoryAxisItem-title
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-title
 ---
 
 # \<kendo:sparkline-categoryAxisItem-title\>
@@ -88,7 +85,7 @@ The visibility of the title.
 
 The border of the title.
 
-More documentation is available at [kendo:sparkline-categoryAxisItem-title-border](/kendo-ui/api/wrappers/jsp/sparkline/categoryaxisitem-title-border).
+More documentation is available at [kendo:sparkline-categoryAxisItem-title-border](/api/wrappers/jsp/sparkline/categoryaxisitem-title-border).
 
 #### Example
 

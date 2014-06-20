@@ -1,8 +1,5 @@
 ---
-title: map-markers
-slug: jsp-map-markers
-tags: api, java
-publish: true
+nav_title: map-markers
 ---
 
 # \<kendo:map-markers\>
@@ -23,7 +20,7 @@ Static markers to display on the map.
 
 Static markers to display on the map.
 
-More documentation is available at [kendo:map-marker](/kendo-ui/api/wrappers/jsp/map/marker).
+More documentation is available at [kendo:map-marker](/api/wrappers/jsp/map/marker).
 
 #### Example
 

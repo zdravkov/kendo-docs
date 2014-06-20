@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-highlight
-slug: jsp-chart-seriesItem-highlight
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-highlight
 ---
 
 # \<kendo:chart-seriesItem-highlight\>
@@ -48,7 +45,7 @@ By default chart series highlighting is enabled.
 
 The border of the highlighted chart series. The color is computed automatically from the base point color.
 
-More documentation is available at [kendo:chart-seriesItem-highlight-border](/kendo-ui/api/wrappers/jsp/chart/seriesitem-highlight-border).
+More documentation is available at [kendo:chart-seriesItem-highlight-border](/api/wrappers/jsp/chart/seriesitem-highlight-border).
 
 #### Example
 
@@ -60,7 +57,7 @@ More documentation is available at [kendo:chart-seriesItem-highlight-border](/ke
 
 The line of the highlighted chart series. The color is computed automatically from the base point color.
 
-More documentation is available at [kendo:chart-seriesItem-highlight-line](/kendo-ui/api/wrappers/jsp/chart/seriesitem-highlight-line).
+More documentation is available at [kendo:chart-seriesItem-highlight-line](/api/wrappers/jsp/chart/seriesitem-highlight-line).
 
 #### Example
 

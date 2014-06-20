@@ -1,7 +1,5 @@
 ---
-title:CrudOperationBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.crudoperationbuilder
-publish:true
+nav_title: CrudOperationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CrudOperationBuilder

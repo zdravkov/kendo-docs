@@ -1,12 +1,8 @@
 ---
-title: Overview
-meta_title: Overview of jQuery UI combobox | Kendo UI Documentation
-meta_description: Create ComboBox UI widget, use Kendo UI templates, instructions how to use ComboBox.
-slug: gs-web-combobox-overview
-relatedDocs: api-web-combobox
-tags: getting-started,web
-ordinal: 1
-publish: true
+nav_title: Overview
+title: Overview of jQuery UI combobox | Kendo UI Documentation
+description: Create ComboBox UI widget, use Kendo UI templates, instructions how to use ComboBox.
+nav_position: 1
 ---
 
 # ComboBox Overview
@@ -102,7 +98,7 @@ such as
 
 The **ComboBox** uses Kendo UI templates to enable control over how item and popup header is rendered. For a
 detailed description of the capabilities and syntax of the Kendo UI templates, please refer to the
-[documentation](/kendo-ui/getting-started/framework/templates/overview).
+[documentation](/getting-started/framework/templates/overview).
 
 ### Item template customization
 

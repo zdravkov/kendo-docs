@@ -1,7 +1,5 @@
 ---
-title:SchedulerBaseViewBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerbaseviewbuilder
-publish:true
+nav_title: SchedulerBaseViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerBaseViewBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the 2.
 
 
 
+
 ## Methods
 
-### Title(`System.String`)
+
+### Title(System.String)
 The user-friendly title of the view displayed by the scheduler.
 
 
@@ -43,20 +43,20 @@ The title
         )
 
 
-### Editable(`System.Action<Kendo.Mvc.UI.Fluent.SchedulerViewEditableSettingsBuilder>`)
+### Editable(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerViewEditableSettingsBuilder\>)
 Sets the editing configuration of the current scheduler view.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerViewEditableSettingsBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerViewEditableSettingsBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerViewEditableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerViewEditableSettingsBuilder)>
 The lambda which configures the editing
 
 
 
 
 
-### Editable(`System.Boolean`)
+### Editable(System.Boolean)
 If set to true the user would be able to create new scheduler events and modify or delete existing ones. Default value is true.
 
 
@@ -90,7 +90,7 @@ The isEditable
         )
 
 
-### EventTemplate(`System.String`)
+### EventTemplate(System.String)
 The template used by the view to render the scheduler events.
 
 
@@ -103,7 +103,7 @@ The eventTemplate.
 
 
 
-### EventTemplateId(`System.String`)
+### EventTemplateId(System.String)
 The Id of the template used by the view to render the scheduler events.
 
 
@@ -116,7 +116,7 @@ The eventTemplateId
 
 
 
-### SelectedDateFormat(`System.String`)
+### SelectedDateFormat(System.String)
 The format used to display the selected date. Uses kendo.format.
             Contains two placeholders - "{0}" and "{1}" which represent the start and end date displayed by the view.
 
@@ -152,7 +152,7 @@ The selectedDateFormat.
         )
 
 
-### Selected(`System.Boolean`)
+### Selected(System.Boolean)
 If set to true the view will be initially selected by the scheduler widget. Default value is false.
 
 
@@ -188,13 +188,13 @@ The isSelected
         )
 
 
-### Groups(`Kendo.Mvc.UI.SchedulerGroupOrientation`)
+### Groups(Kendo.Mvc.UI.SchedulerGroupOrientation)
 Sets the orientation of the group headers
 
 
 #### Parameters
 
-##### orientation [Kendo.Mvc.UI.SchedulerGroupOrientation](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SchedulerGroupOrientation)
+##### orientation [Kendo.Mvc.UI.SchedulerGroupOrientation](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/SchedulerGroupOrientation)
 The orientation
 
 

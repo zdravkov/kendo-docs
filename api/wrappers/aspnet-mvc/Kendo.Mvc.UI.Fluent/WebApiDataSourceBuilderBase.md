@@ -1,7 +1,5 @@
 ---
-title:WebApiDataSourceBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.webapidatasourcebuilderbase
-publish:true
+nav_title: WebApiDataSourceBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.WebApiDataSourceBuilderBase
@@ -9,23 +7,25 @@ Defines the fluent interface for configuring the DataSource options.
 
 
 
+
 ## Methods
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceEventBuilder>`)
+
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceEventBuilder\>)
 Configures the client-side events
 
 
 
 
 
-### Read(`System.Action<Kendo.Mvc.UI.Fluent.CrudOperationBuilder>`)
+### Read(System.Action\<Kendo.Mvc.UI.Fluent.CrudOperationBuilder\>)
 Configures the URL for Read operation.
 
 
 
 
 
-### Read(`System.String`)
+### Read(System.String)
 Sets controller and action for Read operation.
 
 
@@ -38,7 +38,7 @@ Absolute or relative URL for the operation
 
 
 
-### Total(`System.Int32`)
+### Total(System.Int32)
 Sets the total number of records in the data source. Required during Custom binding.
 
 
@@ -51,7 +51,7 @@ Number of records
 
 
 
-### PageSize(`System.Int32`)
+### PageSize(System.Int32)
 Sets the number of records displayed on a single page.
 
 
@@ -64,7 +64,7 @@ Sets the number of records displayed on a single page.
 
 
 
-### ServerOperation(`System.Boolean`)
+### ServerOperation(System.Boolean)
 Sets the operation mode of the DataSource. 
             By default the DataSource will make a request to the server when data for paging, sorting, 
             filtering or grouping is needed. If set to false all data will be requested through single request. 
@@ -80,35 +80,35 @@ True(default) if server operation mode is enabled, otherwise false.
 
 
 
-### Sort(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceSortDescriptorFactory<T>>`)
+### Sort(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceSortDescriptorFactory\<T\>\>)
 Configures the initial sorting.
 
 
 
 
 
-### Group(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceGroupDescriptorFactory<T>>`)
+### Group(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceGroupDescriptorFactory\<T\>\>)
 Configures the initial grouping.
 
 
 
 
 
-### Aggregates(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory<T>>`)
+### Aggregates(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory\<T\>\>)
 Configures the initial aggregates.
 
 
 
 
 
-### Filter(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceFilterDescriptorFactory<T>>`)
+### Filter(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceFilterDescriptorFactory\<T\>\>)
 Configures the initial filter.
 
 
 
 
 
-### Model(`System.Action<Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactory<T>>`)
+### Model(System.Action\<Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactory\<T\>\>)
 Configures Model properties
 
 

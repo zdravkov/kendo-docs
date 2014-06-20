@@ -1,8 +1,5 @@
 ---
-title: GridScrollable
-slug: php-ui-gridscrollable
-tags: api, php
-publish: true
+nav_title: GridScrollable
 ---
 
 # \Kendo\UI\GridScrollable

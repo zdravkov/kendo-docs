@@ -1,7 +1,5 @@
 ---
-title:SchedulerViewAgendaBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerviewagendabuilder
-publish:true
+nav_title: SchedulerViewAgendaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewAgendaBuilder

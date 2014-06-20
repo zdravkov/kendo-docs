@@ -1,30 +1,27 @@
 ---
-title: Overview
-meta_title: How to use the ColorPicker PHP class, server-side wrapper for Kendo UI ColorPicker widget
-meta_description: Getting started with Kendo UI ColorPicker for PHP in quick steps - configure Kendo UI ColorPicker widget and operate Kendo UI ColorPicker events.
-slug: php-colorpicker-overview
-publish: true
-relatedDocs: php-ui-colorpicker
+nav_title: Overview
+title: How to use the ColorPicker PHP class, server-side wrapper for Kendo UI ColorPicker widget
+description: Getting started with Kendo UI ColorPicker for PHP in quick steps - configure Kendo UI ColorPicker widget and operate Kendo UI ColorPicker events.
 ---
 
 # ColorPicker
 
-The Kendo ColorPicker for PHP is a server-side wrapper for the [Kendo UI ColorPicker](/kendo-ui/api/web/colorpicker) widget.
+The Kendo ColorPicker for PHP is a server-side wrapper for the [Kendo UI ColorPicker](/api/web/colorpicker) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo ColorPicker:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 
-2. Create a [colorpicker](/kendo-ui/api/wrappers/php/Kendo/UI/ColorPicker).
+2. Create a [colorpicker](/api/wrappers/php/Kendo/UI/ColorPicker).
 
         <?php
         $colorpicker = new \Kendo\UI\ColorPicker('colorpicker');
         $colorpicker->value('#ff0000');
         ?>
 
-3. Output the colorpicker by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+3. Output the colorpicker by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $colorpicker->render();
@@ -33,7 +30,7 @@ Here is how to configure a simple Kendo ColorPicker:
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo ColorPicker instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/colorpicker#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/colorpicker#methods) to control its behavior.
 
 
 ### Example
@@ -51,7 +48,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/c
 
 ## Handling Events
 
-You can subscribe to all colorpicker [events](/kendo-ui/api/web/colorpicker#events).
+You can subscribe to all colorpicker [events](/api/web/colorpicker#events).
 
 ### Example - subscribing by specifying JavaScript function name
 

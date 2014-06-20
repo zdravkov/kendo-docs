@@ -1,9 +1,5 @@
 ---
-title: Overview
-slug: gs-web-colorpicker-overview
-relatedDocs: api-web-colorpicker
-tags: getting-started,web
-publish: true
+nav_title: Overview
 ---
 
 # ColorPicker Overview

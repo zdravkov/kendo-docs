@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxis-labels
-slug: jsp-chart-valueAxis-labels
-tags: api, java
-publish: true
+nav_title: chart-valueAxis-labels
 ---
 
 # \<kendo:chart-valueAxis-labels\>
@@ -149,7 +146,7 @@ The visibility of the labels.
 
 The border of the labels.
 
-More documentation is available at [kendo:chart-valueAxis-labels-border](/kendo-ui/api/wrappers/jsp/chart/valueaxis-labels-border).
+More documentation is available at [kendo:chart-valueAxis-labels-border](/api/wrappers/jsp/chart/valueaxis-labels-border).
 
 #### Example
 

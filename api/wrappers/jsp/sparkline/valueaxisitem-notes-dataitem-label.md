@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-notes-dataItem-label
-slug: jsp-sparkline-valueAxisItem-notes-dataItem-label
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-notes-dataItem-label
 ---
 
 # \<kendo:sparkline-valueAxisItem-notes-dataItem-label\>
@@ -95,7 +92,7 @@ If set to true the chart will display the value axis notes label. By default the
 
 The border of the label.
 
-More documentation is available at [kendo:sparkline-valueAxisItem-notes-dataItem-label-border](/kendo-ui/api/wrappers/jsp/sparkline/valueaxisitem-notes-dataitem-label-border).
+More documentation is available at [kendo:sparkline-valueAxisItem-notes-dataItem-label-border](/api/wrappers/jsp/sparkline/valueaxisitem-notes-dataitem-label-border).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeStroke
-slug: php-dataviz-ui-diagramshapestroke
-tags: api, php
-publish: true
+nav_title: DiagramShapeStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeStroke

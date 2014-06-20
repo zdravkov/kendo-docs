@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-labels-padding
-slug: jsp-chart-categoryAxisItem-labels-padding
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-labels-padding
 ---
 
 # \<kendo:chart-categoryAxisItem-labels-padding\>

@@ -1,7 +1,5 @@
 ---
-title:ComboBoxBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.comboboxbuilder
-publish:true
+nav_title: ComboBoxBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ComboBoxBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the ComboBox component.
 
 
 
+
 ## Methods
 
-### AutoBind(`System.Boolean`)
+
+### AutoBind(System.Boolean)
 Controls whether to bind the widget to the DataSource on initialization.
 
 
@@ -24,7 +24,7 @@ Controls whether to bind the widget to the DataSource on initialization.
     %>
 
 
-### DataValueField(`System.String`)
+### DataValueField(System.String)
 Sets the field of the data item that provides the value content of the list items.
 
 
@@ -38,13 +38,13 @@ Sets the field of the data item that provides the value content of the list item
     %>
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.ComboBoxEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.ComboBoxEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.ComboBoxEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ComboBoxEventBuilder)>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.ComboBoxEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ComboBoxEventBuilder)>
 The client events action.
 
 
@@ -59,7 +59,7 @@ The client events action.
     %>
 
 
-### Filter(`System.String`)
+### Filter(System.String)
 Use it to enable filtering of items.
 
 
@@ -72,7 +72,7 @@ Use it to enable filtering of items.
     %>
 
 
-### Filter(`Kendo.Mvc.UI.FilterType`)
+### Filter(Kendo.Mvc.UI.FilterType)
 Use it to enable filtering of items.
 
 
@@ -85,13 +85,13 @@ Use it to enable filtering of items.
     %>
 
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.DropDownListItemFactory>`)
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListItemFactory\>)
 Defines the items in the ComboBox
 
 
 #### Parameters
 
-##### addAction System.Action<[Kendo.Mvc.UI.Fluent.DropDownListItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListItemFactory)>
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.DropDownListItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DropDownListItemFactory)>
 The add action.
 
 
@@ -108,7 +108,7 @@ The add action.
     %>
 
 
-### HighlightFirst(`System.Boolean`)
+### HighlightFirst(System.Boolean)
 Use it to enable highlighting of first matched item.
 
 
@@ -121,7 +121,7 @@ Use it to enable highlighting of first matched item.
     %>
 
 
-### MinLength(`System.Int32`)
+### MinLength(System.Int32)
 Specifies the minimum number of characters that should be typed before the widget queries the dataSource.
 
 
@@ -134,7 +134,7 @@ Specifies the minimum number of characters that should be typed before the widge
     %>
 
 
-### SelectedIndex(`System.Int32`)
+### SelectedIndex(System.Int32)
 Use it to set selected item index
 
 
@@ -153,7 +153,7 @@ Item index.
     %>
 
 
-### Suggest(`System.Boolean`)
+### Suggest(System.Boolean)
 Controls whether the ComboBox should automatically auto-type the rest of text.
 
 
@@ -166,7 +166,7 @@ Controls whether the ComboBox should automatically auto-type the rest of text.
     %>
 
 
-### Placeholder(`System.String`)
+### Placeholder(System.String)
 A string that appears in the textbox when it has no value.
 
 
@@ -179,7 +179,7 @@ A string that appears in the textbox when it has no value.
     %>
 
 
-### CascadeFrom(`System.String`)
+### CascadeFrom(System.String)
 Use it to set the Id of the parent ComboBox.
 
 
@@ -192,7 +192,7 @@ Use it to set the Id of the parent ComboBox.
     %>
 
 
-### CascadeFromField(`System.String`)
+### CascadeFromField(System.String)
 Use it to set the field used to filter the data source.
 
 
@@ -206,7 +206,7 @@ Use it to set the field used to filter the data source.
     %>
 
 
-### Text(`System.String`)
+### Text(System.String)
 Define the text of the widget, when the autoBind is set to false.
 
 

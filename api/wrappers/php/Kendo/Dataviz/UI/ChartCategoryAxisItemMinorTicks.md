@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemMinorTicks
-slug: php-dataviz-ui-chartcategoryaxisitemminorticks
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemMinorTicks

@@ -1,8 +1,5 @@
 ---
-title: AutoCompleteAnimationOpen
-slug: php-ui-autocompleteanimationopen
-tags: api, php
-publish: true
+nav_title: AutoCompleteAnimationOpen
 ---
 
 # \Kendo\UI\AutoCompleteAnimationOpen

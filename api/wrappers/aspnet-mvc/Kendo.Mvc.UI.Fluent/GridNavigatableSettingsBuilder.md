@@ -1,7 +1,5 @@
 ---
-title:GridNavigatableSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gridnavigatablesettingsbuilder
-publish:true
+nav_title: GridNavigatableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring Navigatable
 
 
 
+
 ## Methods
 
-### Enabled(`System.Boolean`)
+
+### Enabled(System.Boolean)
 Enables or disables keyboard navigation.
 
 

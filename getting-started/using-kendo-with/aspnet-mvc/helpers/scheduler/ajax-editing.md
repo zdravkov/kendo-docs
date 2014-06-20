@@ -1,9 +1,7 @@
 ---
-title: Ajax Editing
-meta_title: Ajax Editing in Kendo UI Scheduler for ASP.NET MVC | Kendo UI Documentation
-meta_description: Documentation how to define commands and set the editing mode to configure Kendo UI Scheduler for ASP.NET MVC for Ajax editing.
-slug: mvc-scheduler-ajax-editing
-publish: true
+nav_title: Ajax Editing
+title: Ajax Editing in Kendo UI Scheduler for ASP.NET MVC | Kendo UI Documentation
+description: Documentation how to define commands and set the editing mode to configure Kendo UI Scheduler for ASP.NET MVC for Ajax editing.
 ---
 
 # Ajax Editing
@@ -14,8 +12,8 @@ publish: true
 
 The following tutorial shows how to configure Kendo UI Scheduler for ASP.NET MVC to do ajax editing of the Sample  database (the Tasks table) included in the offline demos.
 
-1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-Name the application "KendoSchedulerAjaxEditing". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
+1.  Create a new ASP.NET MVC 4 application (or Telerik UI for ASP.NET MVC application if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+Name the application "KendoSchedulerAjaxEditing". If you decided not to use the Telerik UI for ASP.NET MVC Visual Studio Extensions follow the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic in order
 to add Telerik UI for ASP.NET MVC to the application.
 1.  Add a new "Entity Framework Data Model". Right click the `~/Models` folder in the solution explorer and pick "Add ->  New Item". Choose "Data -> ADO.NET Entity Data Model" in the "Add New Item" dialog.
 Name the model "Sample.edmx" and click "Next". This will start the "Entity Data Model Wizard".

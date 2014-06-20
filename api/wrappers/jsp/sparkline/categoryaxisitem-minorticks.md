@@ -1,8 +1,5 @@
 ---
-title: sparkline-categoryAxisItem-minorTicks
-slug: jsp-sparkline-categoryAxisItem-minorTicks
-tags: api, java
-publish: true
+nav_title: sparkline-categoryAxisItem-minorTicks
 ---
 
 # \<kendo:sparkline-categoryAxisItem-minorTicks\>

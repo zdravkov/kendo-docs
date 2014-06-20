@@ -1,8 +1,5 @@
 ---
-title: GridEditable
-slug: php-ui-grideditable
-tags: api, php
-publish: true
+nav_title: GridEditable
 ---
 
 # \Kendo\UI\GridEditable

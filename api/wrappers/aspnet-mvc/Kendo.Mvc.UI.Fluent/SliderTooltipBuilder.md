@@ -1,7 +1,5 @@
 ---
-title:SliderTooltipBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.slidertooltipbuilder
-publish:true
+nav_title: SliderTooltipBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SliderTooltipBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the Kendo Slider for ASP.NET MVC tooltip
 
 
 
+
 ## Methods
 
-### Format(`System.String`)
+
+### Format(System.String)
 Gets or sets the format for displaying the value in the tooltip.
 
 
@@ -30,7 +30,7 @@ The value.
     %>
 
 
-### Enabled(`System.Boolean`)
+### Enabled(System.Boolean)
 Display tooltip while drag.
 
 
@@ -49,7 +49,7 @@ The value.
     %>
 
 
-### Template(`System.String`)
+### Template(System.String)
 Gets or sets the template for displaying the value in the tooltip.
 
 

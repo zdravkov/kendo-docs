@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-seriesItem-stack
-slug: jsp-stockChart-navigator-seriesItem-stack
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-seriesItem-stack
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-stack\>

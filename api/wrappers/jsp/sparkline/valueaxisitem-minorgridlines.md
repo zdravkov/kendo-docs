@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-minorGridLines
-slug: jsp-sparkline-valueAxisItem-minorGridLines
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-minorGridLines
 ---
 
 # \<kendo:sparkline-valueAxisItem-minorGridLines\>

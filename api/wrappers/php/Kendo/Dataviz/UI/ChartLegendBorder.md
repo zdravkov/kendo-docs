@@ -1,8 +1,5 @@
 ---
-title: ChartLegendBorder
-slug: php-dataviz-ui-chartlegendborder
-tags: api, php
-publish: true
+nav_title: ChartLegendBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartLegendBorder

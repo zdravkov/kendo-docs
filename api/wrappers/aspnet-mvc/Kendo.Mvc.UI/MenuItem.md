@@ -1,7 +1,5 @@
 ---
-title:MenuItem
-slug:aspnetmvc-kendo.mvc.ui.menuitem
-publish:true
+nav_title: MenuItem
 ---
 
 # Kendo.Mvc.UI.MenuItem

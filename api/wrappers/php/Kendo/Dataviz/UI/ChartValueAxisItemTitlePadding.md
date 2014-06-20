@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemTitlePadding
-slug: php-dataviz-ui-chartvalueaxisitemtitlepadding
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemTitlePadding
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemTitlePadding

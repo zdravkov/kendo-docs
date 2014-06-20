@@ -1,11 +1,7 @@
 ---
-title: kendo.mobile.ui.Pane
-meta_title: Configuration, methods and events of Kendo UI Mobile Pane
-meta_description: See how to easily configure the id of the initial mobile View to display, the default Pane layout, loading popup text, default View transition and more.
-slug: api-mobile-pane
-relatedDocs: gs-mobile-pane
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.Pane
+title: Configuration, methods and events of Kendo UI Mobile Pane
+description: See how to easily configure the id of the initial mobile View to display, the default Pane layout, loading popup text, default View transition and more.
 ---
 
 # kendo.mobile.ui.Pane
@@ -14,7 +10,7 @@ publish: true
 
 ### collapsible `Boolean` *(default: false)*
 
-Applicable when the pane is inside a SplitView. If set to `true`, the pane will be hidden when the device is in portrait position. The [expandPanes](/kendo-ui/api/mobile/splitview#methods-expandPanes) SplitView method displays the hidden panes.
+Applicable when the pane is inside a SplitView. If set to `true`, the pane will be hidden when the device is in portrait position. The [expandPanes](/api/mobile/splitview#methods-expandPanes) SplitView method displays the hidden panes.
 
 > In order for the collapsible to size itself correctly, the `portraitWidth` configuration option should be set too.
 
@@ -193,7 +189,7 @@ The id or URL of the view.
 
 ##### transition `String`
 
-The transition to apply when navigating. See [View Transitions](/kendo-ui/getting-started/mobile/application#view-transitions) for more information.
+The transition to apply when navigating. See [View Transitions](/getting-started/mobile/application#view-transitions) for more information.
 
 ### replace
 
@@ -207,7 +203,7 @@ The id or URL of the view.
 
 ##### transition `String`
 
-The transition to apply when navigating. See [View Transitions](/kendo-ui/getting-started/mobile/application#view-transitions) for more information.
+The transition to apply when navigating. See [View Transitions](/getting-started/mobile/application#view-transitions) for more information.
 
 ### Example
 

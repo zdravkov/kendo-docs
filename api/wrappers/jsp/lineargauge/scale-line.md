@@ -1,8 +1,5 @@
 ---
-title: linearGauge-scale-line
-slug: jsp-linearGauge-scale-line
-tags: api, java
-publish: true
+nav_title: linearGauge-scale-line
 ---
 
 # \<kendo:linearGauge-scale-line\>

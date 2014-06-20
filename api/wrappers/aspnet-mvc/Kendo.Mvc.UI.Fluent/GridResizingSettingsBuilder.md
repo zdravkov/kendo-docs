@@ -1,7 +1,5 @@
 ---
-title:GridResizingSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gridresizingsettingsbuilder
-publish:true
+nav_title: GridResizingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring Resizable
 
 
 
+
 ## Methods
 
-### Columns(`System.Boolean`)
+
+### Columns(System.Boolean)
 Enables or disables column resizing.
 
 

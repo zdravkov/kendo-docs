@@ -1,7 +1,5 @@
 ---
-title:GaugeAreaBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gaugeareabuilder
-publish:true
+nav_title: GaugeAreaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeAreaBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the GaugeArea.
 
 
 
+
 ## Methods
 
-### Background(`System.String`)
+
+### Background(System.String)
 Sets the chart area background color.
 
 
@@ -31,7 +31,7 @@ The background color.
     %>
 
 
-### Margin(`System.Int32,System.Int32,System.Int32,System.Int32`)
+### Margin(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the gauge area margin.
 
 
@@ -60,7 +60,7 @@ The gauge area left margin.
     %>
 
 
-### Margin(`System.Int32`)
+### Margin(System.Int32)
 Sets the gauge area margin.
 
 
@@ -80,7 +80,7 @@ The gauge area margin.
     %>
 
 
-### Border(`System.Int32,System.String,Kendo.Mvc.UI.ChartDashType`)
+### Border(System.Int32,System.String,Kendo.Mvc.UI.ChartDashType)
 Sets the gauge area border.
 
 
@@ -92,7 +92,7 @@ The border width.
 ##### color `System.String`
 The border color (CSS syntax).
 
-##### dashType [Kendo.Mvc.UI.ChartDashType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
+##### dashType [Kendo.Mvc.UI.ChartDashType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartDashType)
 The border dash type.
 
 
@@ -106,13 +106,13 @@ The border dash type.
     %>
 
 
-### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the gauge area border
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 The border configuration action
 
 

@@ -1,8 +1,5 @@
 ---
-title: dateTimePicker-animation-close
-slug: jsp-dateTimePicker-animation-close
-tags: api, java
-publish: true
+nav_title: dateTimePicker-animation-close
 ---
 
 # \<kendo:dateTimePicker-animation-close\>

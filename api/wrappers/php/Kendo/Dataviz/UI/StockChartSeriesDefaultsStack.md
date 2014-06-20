@@ -1,8 +1,5 @@
 ---
-title: StockChartSeriesDefaultsStack
-slug: php-dataviz-ui-stockchartseriesdefaultsstack
-tags: api, php
-publish: true
+nav_title: StockChartSeriesDefaultsStack
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesDefaultsStack

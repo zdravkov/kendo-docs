@@ -1,8 +1,5 @@
 ---
-title: tabStrip-animation-close
-slug: jsp-tabStrip-animation-close
-tags: api, java
-publish: true
+nav_title: tabStrip-animation-close
 ---
 
 # \<kendo:tabStrip-animation-close\>

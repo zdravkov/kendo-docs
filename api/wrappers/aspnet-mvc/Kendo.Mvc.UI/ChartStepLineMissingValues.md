@@ -1,7 +1,5 @@
 ---
-title:ChartStepLineMissingValues
-slug:aspnetmvc-kendo.mvc.ui.chartsteplinemissingvalues
-publish:true
+nav_title: ChartStepLineMissingValues
 ---
 
 # Kendo.Mvc.UI.ChartStepLineMissingValues

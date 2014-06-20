@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.PanelBar
-meta_title: Configuration, methods and events of Kendo UI PanelBar
-meta_description: Configure the PanelBar UI widget, use methods and explore the events which are triggered upon certain behaviors.
-slug: api-web-panelbar
-relatedDocs: gs-web-panelbar-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.PanelBar
+title: Configuration, methods and events of Kendo UI PanelBar
+description: Configure the PanelBar UI widget, use methods and explore the events which are triggered upon certain behaviors.
 ---
 
 # kendo.ui.PanelBar
 
-Represents the Kendo UI PanelBar widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI PanelBar widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

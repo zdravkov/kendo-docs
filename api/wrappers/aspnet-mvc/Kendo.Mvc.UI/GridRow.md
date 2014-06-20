@@ -1,7 +1,5 @@
 ---
-title:GridRow
-slug:aspnetmvc-kendo.mvc.ui.gridrow
-publish:true
+nav_title: GridRow
 ---
 
 # Kendo.Mvc.UI.GridRow

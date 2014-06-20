@@ -1,7 +1,5 @@
 ---
-title:SparklineSeriesDefaultsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.sparklineseriesdefaultsbuilder
-publish:true
+nav_title: SparklineSeriesDefaultsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SparklineSeriesDefaultsBuilder
@@ -9,7 +7,9 @@ Defines the fluent API for configuring the sparkline series defaults.
 
 
 
+
 ## Methods
+
 
 ### Bar
 Defines the default settings for bar series.

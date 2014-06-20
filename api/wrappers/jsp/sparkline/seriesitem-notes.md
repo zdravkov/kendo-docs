@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesItem-notes
-slug: jsp-sparkline-seriesItem-notes
-tags: api, java
-publish: true
+nav_title: sparkline-seriesItem-notes
 ---
 
 # \<kendo:sparkline-seriesItem-notes\>
@@ -31,7 +28,7 @@ The position of the series note.
 
 The icon of the notes.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-icon](/kendo-ui/api/wrappers/jsp/sparkline/seriesitem-notes-icon).
+More documentation is available at [kendo:sparkline-seriesItem-notes-icon](/api/wrappers/jsp/sparkline/seriesitem-notes-icon).
 
 #### Example
 
@@ -43,7 +40,7 @@ More documentation is available at [kendo:sparkline-seriesItem-notes-icon](/kend
 
 The label of the notes.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-label](/kendo-ui/api/wrappers/jsp/sparkline/seriesitem-notes-label).
+More documentation is available at [kendo:sparkline-seriesItem-notes-label](/api/wrappers/jsp/sparkline/seriesitem-notes-label).
 
 #### Example
 
@@ -55,7 +52,7 @@ More documentation is available at [kendo:sparkline-seriesItem-notes-label](/ken
 
 The line of the notes.
 
-More documentation is available at [kendo:sparkline-seriesItem-notes-line](/kendo-ui/api/wrappers/jsp/sparkline/seriesitem-notes-line).
+More documentation is available at [kendo:sparkline-seriesItem-notes-line](/api/wrappers/jsp/sparkline/seriesitem-notes-line).
 
 #### Example
 

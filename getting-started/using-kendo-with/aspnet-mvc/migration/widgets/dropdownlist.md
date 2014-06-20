@@ -1,9 +1,7 @@
 ---
-title: DropDownList
-meta_title: Server-side API documentation for Kendo UI jQuery ComboBox widget
-meta_description: Notes about server-side API for Kendo UI ComboBox component.
-slug: drowpdownlist
-publish: true
+nav_title: DropDownList
+title: Server-side API documentation for Kendo UI jQuery ComboBox widget
+description: Notes about server-side API for Kendo UI ComboBox component.
 ---
 
 # Server-Side API

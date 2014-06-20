@@ -1,7 +1,5 @@
 ---
-title: Ajax Binding
-slug: jsp-dropdownlist-ajax-binding
-publish: true
+nav_title: Ajax Binding
 ---
 
 # Ajax Binding

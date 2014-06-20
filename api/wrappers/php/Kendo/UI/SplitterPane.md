@@ -1,8 +1,5 @@
 ---
-title: SplitterPane
-slug: php-ui-splitterpane
-tags: api, php
-publish: true
+nav_title: SplitterPane
 ---
 
 # \Kendo\UI\SplitterPane

@@ -1,8 +1,5 @@
 ---
-title: DataSourceTransportRead
-slug: php-data-datasourcetransportread
-tags: api, php
-publish: true
+nav_title: DataSourceTransportRead
 ---
 
 # \Kendo\Data\DataSourceTransportRead

@@ -1,10 +1,8 @@
 ---
-title: Adaptive rendering
-meta_title: Detailed documentation for Kendo UI Grid Adaptive rendering
-meta_description: This help article explains the specifications of Grid's adaptive rendering feature
-slug: grid-adaptive
-ordinal: 5
-publish: true
+nav_title: Adaptive rendering
+title: Detailed documentation for Kendo UI Grid Adaptive rendering
+description: This help article explains the specifications of Grid's adaptive rendering feature
+nav_position: 5
 ---
 
 # Grid adaptive rendering
@@ -15,7 +13,7 @@ In order to see those features in action please check the [adaptive rendering de
 
 ## Enabling the adaptive rendering feature
 
-To enable the adaptive rendering feature the developer should set [mobile](/kendo-ui/api/web/grid#configuration-mobile) propery to `true`, `phone` or `tablet`.
+To enable the adaptive rendering feature the developer should set [mobile](/api/web/grid#configuration-mobile) propery to `true`, `phone` or `tablet`.
 
 #### Example
     <div id="grid"></div>

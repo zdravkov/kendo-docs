@@ -1,7 +1,5 @@
 ---
-title:GridDataKeyBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.griddatakeybuilder
-publish:true
+nav_title: GridDataKeyBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridDataKeyBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the data key.
 
 
 
+
 ## Methods
 
-### RouteKey(`System.String`)
+
+### RouteKey(System.String)
 Sets the RouteKey.
 
 

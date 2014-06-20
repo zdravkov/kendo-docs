@@ -1,7 +1,5 @@
 ---
-title:MobileButtonGroupItemBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilebuttongroupitembuilder
-publish:true
+nav_title: MobileButtonGroupItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileButtonGroupItemBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobileButtonGroupItem settings.
 
 
 
+
 ## Methods
 
-### Icon(`System.String`)
+
+### Icon(System.String)
 The icon of the button. It can be either one of the built-in icons, or a custom one
 
 
@@ -24,7 +24,7 @@ The value that configures the icon.
 
 
 
-### Text(`System.String`)
+### Text(System.String)
 Specifies the text of the item
 
 
@@ -37,7 +37,7 @@ The value that configures the text.
 
 
 
-### Badge(`System.String`)
+### Badge(System.String)
 Specifies the value shown in badge icon
 
 
@@ -50,7 +50,7 @@ The value that configures the badge.
 
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
 
@@ -66,7 +66,7 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes.
 
 

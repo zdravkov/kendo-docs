@@ -1,8 +1,5 @@
 ---
-title: Using Kendo with AngularJS
-slug: gs-using-kendo-with-angularjs
-tags: 101, Getting Started, AngularJS
-publish: true
+nav_title: Using Kendo with AngularJS
 ---
 
 # Using Kendo with AngularJS

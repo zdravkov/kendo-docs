@@ -1,8 +1,5 @@
 ---
-title: TreeViewAnimationCollapse
-slug: php-ui-treeviewanimationcollapse
-tags: api, php
-publish: true
+nav_title: TreeViewAnimationCollapse
 ---
 
 # \Kendo\UI\TreeViewAnimationCollapse

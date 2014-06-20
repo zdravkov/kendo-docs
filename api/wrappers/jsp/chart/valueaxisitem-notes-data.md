@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-notes-data
-slug: jsp-chart-valueAxisItem-notes-data
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-notes-data
 ---
 
 # \<kendo:chart-valueAxisItem-notes-data\>
@@ -23,7 +20,7 @@ The items of the notes.
 
 The items of the notes.
 
-More documentation is available at [kendo:chart-valueAxisItem-notes-dataItem](/kendo-ui/api/wrappers/jsp/chart/valueaxisitem-notes-dataitem).
+More documentation is available at [kendo:chart-valueAxisItem-notes-dataItem](/api/wrappers/jsp/chart/valueaxisitem-notes-dataitem).
 
 #### Example
 

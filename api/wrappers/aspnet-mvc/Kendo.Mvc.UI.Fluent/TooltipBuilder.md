@@ -1,7 +1,5 @@
 ---
-title:TooltipBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.tooltipbuilder
-publish:true
+nav_title: TooltipBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TooltipBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Tooltip component.
 
 
 
+
 ## Methods
 
-### For(`System.String`)
+
+### For(System.String)
 The selector which to match the DOM element to which the Tooltip widget will be instantiated
 
 
@@ -27,7 +27,7 @@ jQuery selector
 
 
 
-### Filter(`System.String`)
+### Filter(System.String)
 The selector which to match target child elements for which the Tooltip will be shown
 
 

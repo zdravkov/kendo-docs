@@ -1,7 +1,5 @@
 ---
-title: Ajax Binding
-slug: mav-stockchart-ajax-binding
-publish: true
+nav_title: Ajax Binding
 ---
 
 ## Ajax Binding

@@ -1,8 +1,5 @@
 ---
-title: UploadLocalization
-slug: php-ui-uploadlocalization
-tags: api, php
-publish: true
+nav_title: UploadLocalization
 ---
 
 # \Kendo\UI\UploadLocalization

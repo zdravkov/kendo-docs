@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: Help Guide for ProgressBar HtmlHelper extension | Kendo UI documentation
-meta_description: Step-by-step instructions how to configure Kendo UI ProgressBar for ASP.NET MVC widget and add ProgressBar HtmlHelper extension.
-slug: mvc-progressbar-overview
-publish: true
+nav_title: Overview
+title: Help Guide for ProgressBar HtmlHelper extension | Kendo UI documentation
+description: Step-by-step instructions how to configure Kendo UI ProgressBar for ASP.NET MVC widget and add ProgressBar HtmlHelper extension.
 ---
 
 # ProgressBar
 
-The ProgressBar HtmlHelper extension is a server-side wrapper for the&nbsp;[Kendo UI ProgressBar](/kendo-ui/api/web/progressbar)&nbsp;widget.
+The ProgressBar HtmlHelper extension is a server-side wrapper for the&nbsp;[Kendo UI ProgressBar](/api/web/progressbar)&nbsp;widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo ProgressBar:
 
-1. Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1. Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 2. Create a new action method which renders the view:
 
 		 public ActionResult Index()
@@ -40,7 +38,7 @@ Here is how to configure a simple Kendo ProgressBar:
 ## Getting Client-side Reference
 
 You can reference the client-side Kendo ProgressBar instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/progressbar#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/progressbar#methods) to control its behavior.
 
 ### Example - accessing an Existing ProgressBar
 
@@ -54,7 +52,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/p
 
 ## Handling Events
 
-You can subscribe to all ProgressBar [events](/kendo-ui/api/web/progressbar#events).
+You can subscribe to all ProgressBar [events](/api/web/progressbar#events).
 
 ### Example - subscribe to event by handler name (ASPX)
 

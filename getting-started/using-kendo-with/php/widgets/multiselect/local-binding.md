@@ -1,10 +1,7 @@
 ---
-title: Local binding
-meta_title: How to bind Kendo MultiSelect for PHP to PHP array
-meta_description: Learn how to bind Kendo UI MultiSelect for PHP to array of data
-slug: php-multiselect-local-binding
-publish: true
-relatedDocs: php-ui-multiselect, php-multiselect-overview
+nav_title: Local binding
+title: How to bind Kendo MultiSelect for PHP to PHP array
+description: Learn how to bind Kendo UI MultiSelect for PHP to array of data
 ---
 
 # Local Binding to Array
@@ -19,7 +16,7 @@ returned by PDO.
 
 > The following demo is using the sample SQLite database shipped with the Telerik UI for PHP** demos (**/wrappers/php/sample.db).
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Create a PDO connection
 
         <?php
@@ -31,7 +28,7 @@ returned by PDO.
         $statement = $db->prepare('SELECT * FROM Products');
         $products = $statement->fetchAll(PDO::FETCH_ASSOC);
         ?>
-1. Create a [data source](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource#data) and [schema](/kendo-ui/api/wrappers/php/Kendo/Data/DataSource#schema). Setting the schema is required
+1. Create a [data source](/api/wrappers/php/Kendo/Data/DataSource) and set its [data](/api/wrappers/php/Kendo/Data/DataSource#data) and [schema](/api/wrappers/php/Kendo/Data/DataSource#schema). Setting the schema is required
 to specify the model fields. Those fields are required for filtering.
 
         <?php
@@ -61,8 +58,8 @@ to specify the model fields. Those fields are required for filtering.
         $dataSource->data($products)
                    ->schema($schema);
         ?>
-4. Create a [multiselect](/kendo-ui/api/wrappers/php/Kendo/UI/MultiSelect), configure its [dataTextField](/kendo-ui/api/wrappers/php/Kendo/UI/MultiSelect#datatextfield) and
-[dataValueField](/kendo-ui/api/wrappers/php/Kendo/UI/MultiSelect#datavaluefield) options and set its [data source](/kendo-ui/api/wrappers/php/Kendo/UI/MultiSelect#datasource).
+4. Create a [multiselect](/api/wrappers/php/Kendo/UI/MultiSelect), configure its [dataTextField](/api/wrappers/php/Kendo/UI/MultiSelect#datatextfield) and
+[dataValueField](/api/wrappers/php/Kendo/UI/MultiSelect#datavaluefield) options and set its [data source](/api/wrappers/php/Kendo/UI/MultiSelect#datasource).
 
         <?php
         $multiSelect = new \Kendo\UI\MultiSelect('MultiSelect');
@@ -70,7 +67,7 @@ to specify the model fields. Those fields are required for filtering.
         $multiSelect->dataTextField('ProductName');
         $multiSelect->dataValueField('ProductID');
         ?>
-5. Output the multiselect by echo-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+5. Output the multiselect by echo-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
         <?php
         echo $multiSelect->render();
@@ -82,7 +79,7 @@ to specify the model fields. Those fields are required for filtering.
 The `DataSourceResult` class is a helper utility on top of PDO which simplifies common CRUD operations.
 It is distributed with the Telerik UI for PHP** demos and can be found in the **/wrappers/php/lib/** directory of the **Telerik UI for PHP distribution.
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 1. Copy **/wrappers/php/lib/DataSourceResult.php** to your web site root and include it.
 
         <?php require_once 'lib/DataSourceResult.php'; ?>

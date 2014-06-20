@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemConnectors
-slug: php-dataviz-ui-sparklineseriesitemconnectors
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemConnectors
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemConnectors

@@ -1,8 +1,5 @@
 ---
-title: diagram-connection
-slug: jsp-diagram-connection
-tags: api, java
-publish: true
+nav_title: diagram-connection
 ---
 
 # \<kendo:diagram-connection\>
@@ -39,7 +36,7 @@ The start cap (arrow, head or decoration) of the connection:
 
 Defines the hover configuration.
 
-More documentation is available at [kendo:diagram-connection-hover](/kendo-ui/api/wrappers/jsp/diagram/connection-hover).
+More documentation is available at [kendo:diagram-connection-hover](/api/wrappers/jsp/diagram/connection-hover).
 
 #### Example
 
@@ -51,7 +48,7 @@ More documentation is available at [kendo:diagram-connection-hover](/kendo-ui/ap
 
 Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
 
-More documentation is available at [kendo:diagram-connection-points](/kendo-ui/api/wrappers/jsp/diagram/connection-points).
+More documentation is available at [kendo:diagram-connection-points](/api/wrappers/jsp/diagram/connection-points).
 
 #### Example
 
@@ -63,7 +60,7 @@ More documentation is available at [kendo:diagram-connection-points](/kendo-ui/a
 
 Defines the stroke configuration.
 
-More documentation is available at [kendo:diagram-connection-stroke](/kendo-ui/api/wrappers/jsp/diagram/connection-stroke).
+More documentation is available at [kendo:diagram-connection-stroke](/api/wrappers/jsp/diagram/connection-stroke).
 
 #### Example
 

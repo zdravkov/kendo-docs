@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-labels-padding
-slug: jsp-chart-seriesItem-labels-padding
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-labels-padding
 ---
 
 # \<kendo:chart-seriesItem-labels-padding\>

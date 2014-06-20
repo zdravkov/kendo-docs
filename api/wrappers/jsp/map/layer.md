@@ -1,8 +1,5 @@
 ---
-title: map-layer
-slug: jsp-map-layer
-tags: api, java
-publish: true
+nav_title: map-layer
 ---
 
 # \<kendo:map-layer\>
@@ -159,7 +156,7 @@ The data item field should be a number.
 
 The default style for shapes.
 
-More documentation is available at [kendo:map-layer-style](/kendo-ui/api/wrappers/jsp/map/layer-style).
+More documentation is available at [kendo:map-layer-style](/api/wrappers/jsp/map/layer-style).
 
 #### Example
 
@@ -171,7 +168,7 @@ More documentation is available at [kendo:map-layer-style](/kendo-ui/api/wrapper
 
 The default Kendo UI Tooltip options for data-bound markers.
 
-More documentation is available at [kendo:map-layer-tooltip](/kendo-ui/api/wrappers/jsp/map/layer-tooltip).
+More documentation is available at [kendo:map-layer-tooltip](/api/wrappers/jsp/map/layer-tooltip).
 
 #### Example
 

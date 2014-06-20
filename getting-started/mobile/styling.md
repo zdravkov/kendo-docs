@@ -1,9 +1,7 @@
 ---
-title: Styling
-meta_title: User guide to styling Kendo UI Mobile applications
-meta_description: How to style Kendo UI Mobile applications with CSS.
-slug: mobile-styling
-publish: true
+nav_title: Styling
+title: User guide to styling Kendo UI Mobile applications
+description: How to style Kendo UI Mobile applications with CSS.
 ---
 
 # Styling Kendo UI Mobile

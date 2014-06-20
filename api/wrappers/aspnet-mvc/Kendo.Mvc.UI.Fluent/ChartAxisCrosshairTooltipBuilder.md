@@ -1,7 +1,5 @@
 ---
-title:ChartAxisCrosshairTooltipBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxiscrosshairtooltipbuilder
-publish:true
+nav_title: ChartAxisCrosshairTooltipBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisCrosshairTooltipBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartAxisCrosshairTooltipBuilder.
 
 
 
+
 ## Methods
 
-### Font(`System.String`)
+
+### Font(System.String)
 Sets the tooltip font
 
 
@@ -44,7 +44,7 @@ The tooltip font (CSS format).
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the tooltip visible
 
 
@@ -76,7 +76,7 @@ The tooltip visible.
     %>
 
 
-### Background(`System.String`)
+### Background(System.String)
 Sets the tooltip background
 
 
@@ -109,7 +109,7 @@ The tooltip background.
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the tooltip text color
 
 
@@ -143,7 +143,7 @@ The tooltip text color.
     %>
 
 
-### Padding(`System.Int32,System.Int32,System.Int32,System.Int32`)
+### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
 Sets the tooltip padding
 
 
@@ -185,7 +185,7 @@ The tooltip left padding.
     %>
 
 
-### Padding(`System.Int32`)
+### Padding(System.Int32)
 Sets the tooltip padding
 
 
@@ -218,7 +218,7 @@ The tooltip padding.
     %>
 
 
-### Border(`System.Int32,System.String`)
+### Border(System.Int32,System.String)
 Sets the tooltip border
 
 
@@ -254,20 +254,20 @@ The tooltip border color (CSS syntax).
     %>
 
 
-### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the tooltip border
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 The border configuration action
 
 
 
 
 
-### Format(`System.String`)
+### Format(System.String)
 Sets the tooltip format
 
 
@@ -300,7 +300,7 @@ The tooltip format.
     %>
 
 
-### Template(`System.String`)
+### Template(System.String)
 Sets the tooltip template
 
 
@@ -333,7 +333,7 @@ The tooltip template.
     %>
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the tooltip opacity.
 
 

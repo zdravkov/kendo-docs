@@ -1,7 +1,5 @@
 ---
-title:ChartAxisNoteItemBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxisnoteitembuilder
-publish:true
+nav_title: ChartAxisNoteItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisNoteItemBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the chart note.
 
 
 
+
 ## Methods
 
-### Value(`System.Object`)
+
+### Value(System.Object)
 Sets the note value.
 
 

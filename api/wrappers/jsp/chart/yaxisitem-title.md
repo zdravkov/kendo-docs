@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-title
-slug: jsp-chart-yAxisItem-title
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-title
 ---
 
 # \<kendo:chart-yAxisItem-title\>
@@ -95,7 +92,7 @@ If set to true the chart will display the scatter chart y axis title. By default
 
 The border of the title.
 
-More documentation is available at [kendo:chart-yAxisItem-title-border](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-title-border).
+More documentation is available at [kendo:chart-yAxisItem-title-border](/api/wrappers/jsp/chart/yaxisitem-title-border).
 
 #### Example
 
@@ -107,7 +104,7 @@ More documentation is available at [kendo:chart-yAxisItem-title-border](/kendo-u
 
 The margin of the title. A numeric value will set all margins.
 
-More documentation is available at [kendo:chart-yAxisItem-title-margin](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-title-margin).
+More documentation is available at [kendo:chart-yAxisItem-title-margin](/api/wrappers/jsp/chart/yaxisitem-title-margin).
 
 #### Example
 
@@ -119,7 +116,7 @@ More documentation is available at [kendo:chart-yAxisItem-title-margin](/kendo-u
 
 The padding of the title. A numeric value will set all paddings.
 
-More documentation is available at [kendo:chart-yAxisItem-title-padding](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-title-padding).
+More documentation is available at [kendo:chart-yAxisItem-title-padding](/api/wrappers/jsp/chart/yaxisitem-title-padding).
 
 #### Example
 

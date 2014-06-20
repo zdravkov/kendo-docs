@@ -1,8 +1,5 @@
 ---
-title: diagram-shape-stroke
-slug: jsp-diagram-shape-stroke
-tags: api, java
-publish: true
+nav_title: diagram-shape-stroke
 ---
 
 # \<kendo:diagram-shape-stroke\>

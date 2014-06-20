@@ -1,8 +1,5 @@
 ---
-title: diagram-shapes
-slug: jsp-diagram-shapes
-tags: api, java
-publish: true
+nav_title: diagram-shapes
 ---
 
 # \<kendo:diagram-shapes\>
@@ -23,7 +20,7 @@ Defines the shape options.
 
 Defines the shape options.
 
-More documentation is available at [kendo:diagram-shape](/kendo-ui/api/wrappers/jsp/diagram/shape).
+More documentation is available at [kendo:diagram-shape](/api/wrappers/jsp/diagram/shape).
 
 #### Example
 

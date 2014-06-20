@@ -1,8 +1,5 @@
 ---
-title: map-layers
-slug: jsp-map-layers
-tags: api, java
-publish: true
+nav_title: map-layers
 ---
 
 # \<kendo:map-layers\>
@@ -25,7 +22,7 @@ The layer type is determined by the value of the type field.
 The configuration of the map layers.
 The layer type is determined by the value of the type field.
 
-More documentation is available at [kendo:map-layer](/kendo-ui/api/wrappers/jsp/map/layer).
+More documentation is available at [kendo:map-layer](/api/wrappers/jsp/map/layer).
 
 #### Example
 

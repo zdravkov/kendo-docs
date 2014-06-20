@@ -1,8 +1,5 @@
 ---
-title: ChartValueAxisItemNotesLabel
-slug: php-dataviz-ui-chartvalueaxisitemnoteslabel
-tags: api, php
-publish: true
+nav_title: ChartValueAxisItemNotesLabel
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemNotesLabel
@@ -42,7 +39,7 @@ The border of the label.
 ##### $value `\Kendo\Dataviz\UI\ChartValueAxisItemNotesLabelBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemNotesLabelBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemNotesLabelBorder)
+#### Example - using [\Kendo\Dataviz\UI\ChartValueAxisItemNotesLabelBorder](/api/wrappers/php/Kendo/Dataviz/UI/ChartValueAxisItemNotesLabelBorder)
     <?php
     $label = new \Kendo\Dataviz\UI\ChartValueAxisItemNotesLabel();
     $border = new \Kendo\Dataviz\UI\ChartValueAxisItemNotesLabelBorder();

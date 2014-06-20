@@ -1,7 +1,5 @@
 ---
-title:NavigationBindingFactory
-slug:aspnetmvc-kendo.mvc.ui.fluent.navigationbindingfactory
-publish:true
+nav_title: NavigationBindingFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.NavigationBindingFactory

@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemNotesLabelBorder
-slug: php-dataviz-ui-sparklinecategoryaxisitemnoteslabelborder
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemNotesLabelBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabelBorder

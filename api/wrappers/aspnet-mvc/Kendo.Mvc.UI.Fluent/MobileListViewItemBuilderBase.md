@@ -1,7 +1,5 @@
 ---
-title:MobileListViewItemBuilderBase
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilelistviewitembuilderbase
-publish:true
+nav_title: MobileListViewItemBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileListViewItemBuilderBase
@@ -9,9 +7,11 @@ Defines the base fluent API for configuring the MobileListViewItem.
 
 
 
+
 ## Methods
 
-### Text(`System.String`)
+
+### Text(System.String)
 Sets the text of the item.
 
 
@@ -27,7 +27,7 @@ Sets the text of the item.
 
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes.
 
 
@@ -43,7 +43,7 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
 
@@ -59,7 +59,7 @@ The HTML attributes.
 
 
 
-### Content(`System.Action`)
+### Content(System.Action)
 Sets the HTML content which the item should display.
 
 
@@ -72,7 +72,7 @@ The action which renders the item content.
 
 
 
-### Content(`System.Func<System.Object,System.Object>`)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the item should display.
 
 
@@ -85,7 +85,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Icon(`System.String`)
+### Icon(System.String)
 The icon of the link item. It can be either one of the built-in icons, or a custom one.
 
 

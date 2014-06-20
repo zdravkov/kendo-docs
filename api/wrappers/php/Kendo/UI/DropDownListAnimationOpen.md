@@ -1,8 +1,5 @@
 ---
-title: DropDownListAnimationOpen
-slug: php-ui-dropdownlistanimationopen
-tags: api, php
-publish: true
+nav_title: DropDownListAnimationOpen
 ---
 
 # \Kendo\UI\DropDownListAnimationOpen

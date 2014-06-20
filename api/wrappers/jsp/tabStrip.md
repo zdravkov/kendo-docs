@@ -1,12 +1,9 @@
 ---
-title: tabStrip
-slug: jsp-tabStrip
-tags: api, java
-publish: true
+nav_title: tabStrip
 ---
 
 # \<kendo:tabStrip\>
-A JSP wrapper for Kendo UI [TabStrip](/kendo-ui/api/web/tabstrip).
+A JSP wrapper for Kendo UI [TabStrip](/api/web/tabstrip).
 
 ## Configuration Attributes
 
@@ -104,7 +101,7 @@ Specifies whether the TabStrip should be keyboard navigatable.
 A collection of visual animations used when TabStrip tab are selected through
 user interactions. Setting this option to false will disable all animations.
 
-More documentation is available at [kendo:tabStrip-animation](/kendo-ui/api/wrappers/jsp/tabstrip/animation).
+More documentation is available at [kendo:tabStrip-animation](/api/wrappers/jsp/tabstrip/animation).
 
 #### Example
 
@@ -116,7 +113,7 @@ More documentation is available at [kendo:tabStrip-animation](/kendo-ui/api/wrap
 
 Contains the items of the tabstrip widget
 
-More documentation is available at [kendo:tabStrip-items](/kendo-ui/api/wrappers/jsp/tabstrip/items).
+More documentation is available at [kendo:tabStrip-items](/api/wrappers/jsp/tabstrip/items).
 
 #### Example
 
@@ -132,7 +129,7 @@ More documentation is available at [kendo:tabStrip-items](/kendo-ui/api/wrappers
 Triggered just after a tab is being made visible, but before the end of the animation
 
 
-For additional information check the [activate](/kendo-ui/api/web/tabstrip#events-activate) event documentation.
+For additional information check the [activate](/api/web/tabstrip#events-activate) event documentation.
 
 #### Example
     <kendo:tabStrip activate="handle_activate">
@@ -148,7 +145,7 @@ For additional information check the [activate](/kendo-ui/api/web/tabstrip#event
 Triggered when content is fetched from an AJAX request.
 
 
-For additional information check the [contentLoad](/kendo-ui/api/web/tabstrip#events-contentLoad) event documentation.
+For additional information check the [contentLoad](/api/web/tabstrip#events-contentLoad) event documentation.
 
 #### Example
     <kendo:tabStrip contentLoad="handle_contentLoad">
@@ -164,7 +161,7 @@ For additional information check the [contentLoad](/kendo-ui/api/web/tabstrip#ev
 Triggered when an AJAX request results in an error.
 
 
-For additional information check the [error](/kendo-ui/api/web/tabstrip#events-error) event documentation.
+For additional information check the [error](/api/web/tabstrip#events-error) event documentation.
 
 #### Example
     <kendo:tabStrip error="handle_error">
@@ -180,7 +177,7 @@ For additional information check the [error](/kendo-ui/api/web/tabstrip#events-e
 Triggered before a tab is selected.
 
 
-For additional information check the [select](/kendo-ui/api/web/tabstrip#events-select) event documentation.
+For additional information check the [select](/api/web/tabstrip#events-select) event documentation.
 
 #### Example
     <kendo:tabStrip select="handle_select">
@@ -198,7 +195,7 @@ For additional information check the [select](/kendo-ui/api/web/tabstrip#events-
 Triggered just after a tab is being made visible, but before the end of the animation
 
 
-For additional information check the [activate](/kendo-ui/api/web/tabstrip#events-activate) event documentation.
+For additional information check the [activate](/api/web/tabstrip#events-activate) event documentation.
 
 #### Example
     <kendo:tabStrip>
@@ -216,7 +213,7 @@ For additional information check the [activate](/kendo-ui/api/web/tabstrip#event
 Triggered when content is fetched from an AJAX request.
 
 
-For additional information check the [contentLoad](/kendo-ui/api/web/tabstrip#events-contentLoad) event documentation.
+For additional information check the [contentLoad](/api/web/tabstrip#events-contentLoad) event documentation.
 
 #### Example
     <kendo:tabStrip>
@@ -234,7 +231,7 @@ For additional information check the [contentLoad](/kendo-ui/api/web/tabstrip#ev
 Triggered when an AJAX request results in an error.
 
 
-For additional information check the [error](/kendo-ui/api/web/tabstrip#events-error) event documentation.
+For additional information check the [error](/api/web/tabstrip#events-error) event documentation.
 
 #### Example
     <kendo:tabStrip>
@@ -252,7 +249,7 @@ For additional information check the [error](/kendo-ui/api/web/tabstrip#events-e
 Triggered before a tab is selected.
 
 
-For additional information check the [select](/kendo-ui/api/web/tabstrip#events-select) event documentation.
+For additional information check the [select](/api/web/tabstrip#events-select) event documentation.
 
 #### Example
     <kendo:tabStrip>

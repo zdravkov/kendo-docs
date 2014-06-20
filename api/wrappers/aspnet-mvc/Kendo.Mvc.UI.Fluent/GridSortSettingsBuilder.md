@@ -1,7 +1,5 @@
 ---
-title:GridSortSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.gridsortsettingsbuilder
-publish:true
+nav_title: GridSortSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the Sortable.
 
 
 
+
 ## Methods
 
-### Enabled(`System.Boolean`)
+
+### Enabled(System.Boolean)
 Enables or disables sorting.
 
 
@@ -24,13 +24,13 @@ Enables or disables sorting.
     %>
 
 
-### SortMode(`Kendo.Mvc.UI.GridSortMode`)
+### SortMode(Kendo.Mvc.UI.GridSortMode)
 Sets the sort mode of the grid.
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.GridSortMode](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridSortMode)
+##### value [Kendo.Mvc.UI.GridSortMode](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/GridSortMode)
 The value.
 
 
@@ -43,7 +43,7 @@ The value.
     %>
 
 
-### AllowUnsort(`System.Boolean`)
+### AllowUnsort(System.Boolean)
 Enables or disables unsorted mode.
 
 

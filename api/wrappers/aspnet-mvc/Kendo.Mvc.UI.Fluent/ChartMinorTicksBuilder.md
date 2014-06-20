@@ -1,7 +1,5 @@
 ---
-title:ChartMinorTicksBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartminorticksbuilder
-publish:true
+nav_title: ChartMinorTicksBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMinorTicksBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartMinorTicksBuilder.
 
 
 
+
 ## Methods
 
-### Skip(`System.Int32`)
+
+### Skip(System.Int32)
 Sets the line skip
 
 
@@ -31,7 +31,7 @@ The line skip.
     %>
 
 
-### Step(`System.Int32`)
+### Step(System.Int32)
 Sets the line step
 
 

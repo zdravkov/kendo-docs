@@ -1,20 +1,17 @@
 ---
-title: Menu
-slug: php-ui-menu
-tags: api, php
-publish: true
+nav_title: Menu
 ---
 
 # \Kendo\UI\Menu
 
-A PHP wrapper for Kendo UI [Menu](/kendo-ui/api/web/menu).
+A PHP wrapper for Kendo UI [Menu](/api/web/menu).
 
-Inherits from [\Kendo\UI\Widget](/kendo-ui/api/wrappers/php/Kendo/UI/Widget).
+Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
 ## Usage
 
 To use Menu in a PHP page instantiate a new instance, configure it via the available
-configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
 ### Using Kendo Menu
 
@@ -35,7 +32,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 ### activate
 Fires when a sub menu gets opened and its animation finished.
-For additional information check the [activate](/kendo-ui/api/web/menu#events-activate) event documentation.
+For additional information check the [activate](/api/web/menu#events-activate) event documentation.
 
 #### Returns
 `\Kendo\UI\Menu`
@@ -62,7 +59,7 @@ For additional information check the [activate](/kendo-ui/api/web/menu#events-ac
     $menu->activate('onActivate');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $menu = new \Kendo\UI\Menu('Menu');
@@ -82,7 +79,7 @@ by setting the close animation.  Each animation also has a direction which can b
 ##### $value `\Kendo\UI\MenuAnimation|array`
 
 
-#### Example - using [\Kendo\UI\MenuAnimation](/kendo-ui/api/wrappers/php/Kendo/UI/MenuAnimation)
+#### Example - using [\Kendo\UI\MenuAnimation](/api/wrappers/php/Kendo/UI/MenuAnimation)
     <?php
     $menu = new \Kendo\UI\Menu('Menu');
     $animation = new \Kendo\UI\MenuAnimation();
@@ -101,7 +98,7 @@ by setting the close animation.  Each animation also has a direction which can b
 
 ### close
 Fires before a sub menu gets closed. You can cancel this event to prevent closure.
-For additional information check the [close](/kendo-ui/api/web/menu#events-close) event documentation.
+For additional information check the [close](/api/web/menu#events-close) event documentation.
 
 #### Returns
 `\Kendo\UI\Menu`
@@ -128,7 +125,7 @@ For additional information check the [close](/kendo-ui/api/web/menu#events-close
     $menu->close('onClose');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $menu = new \Kendo\UI\Menu('Menu');
@@ -164,7 +161,7 @@ Sets the data source of the dataSource.
 
 ##### $value `\Kendo\Data\DataSource|array`
 
-#### Example - using [\Kendo\Data\DataSource](/kendo-ui/api/wrappers/php/kendo/data/datasource)
+#### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
     <?php
     $menu = new \Kendo\UI\Menu('Menu');
@@ -182,7 +179,7 @@ Sets the data source of the dataSource.
 
 ### deactivate
 Fires when a sub menu gets closed and its animation finished.
-For additional information check the [deactivate](/kendo-ui/api/web/menu#events-deactivate) event documentation.
+For additional information check the [deactivate](/api/web/menu#events-deactivate) event documentation.
 
 #### Returns
 `\Kendo\UI\Menu`
@@ -209,7 +206,7 @@ For additional information check the [deactivate](/kendo-ui/api/web/menu#events-
     $menu->deactivate('onDeactivate');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $menu = new \Kendo\UI\Menu('Menu');
@@ -294,7 +291,7 @@ Adds one or more MenuItem to the Menu.
 
 ### open
 Fires before a sub menu gets opened. You can cancel this event to prevent opening the sub menu.
-For additional information check the [open](/kendo-ui/api/web/menu#events-open) event documentation.
+For additional information check the [open](/api/web/menu#events-open) event documentation.
 
 #### Returns
 `\Kendo\UI\Menu`
@@ -321,7 +318,7 @@ For additional information check the [open](/kendo-ui/api/web/menu#events-open) 
     $menu->open('onOpen');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $menu = new \Kendo\UI\Menu('Menu');
@@ -386,7 +383,7 @@ its parent horizontally. You can also switch off the screen boundary detection c
 
 ### select
 Fires when a menu item gets selected.
-For additional information check the [select](/kendo-ui/api/web/menu#events-select) event documentation.
+For additional information check the [select](/api/web/menu#events-select) event documentation.
 
 #### Returns
 `\Kendo\UI\Menu`
@@ -413,7 +410,7 @@ For additional information check the [select](/kendo-ui/api/web/menu#events-sele
     $menu->select('onSelect');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $menu = new \Kendo\UI\Menu('Menu');

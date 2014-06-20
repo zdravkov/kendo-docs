@@ -1,7 +1,5 @@
 ---
-title:SortableEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.sortableeventbuilder
-publish:true
+nav_title: SortableEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SortableEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent interface for configuring sortable client events.
 
 
 
+
 ## Methods
 
-### Start(`System.Func<System.Object,System.Object>`)
+
+### Start(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Start client-side event
 
-For additional information check the [start](/kendo-ui/api/web/sortable#events-start) event documentation.
+For additional information check the [start](/api/web/sortable#events-start) event documentation.
 
 
 #### Parameters
@@ -38,10 +38,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### Start(`System.String`)
+### Start(System.String)
 Defines the name of the JavaScript function that will handle the the Start client-side event.
 
-For additional information check the [start](/kendo-ui/api/web/sortable#events-start) event documentation.
+For additional information check the [start](/api/web/sortable#events-start) event documentation.
 
 
 #### Parameters
@@ -59,10 +59,10 @@ The name of the JavaScript function that will handle the event.
     )
 
 
-### Move(`System.Func<System.Object,System.Object>`)
+### Move(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Move client-side event
 
-For additional information check the [move](/kendo-ui/api/web/sortable#events-move) event documentation.
+For additional information check the [move](/api/web/sortable#events-move) event documentation.
 
 
 #### Parameters
@@ -86,10 +86,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### Move(`System.String`)
+### Move(System.String)
 Defines the name of the JavaScript function that will handle the the Move client-side event.
 
-For additional information check the [move](/kendo-ui/api/web/sortable#events-move) event documentation.
+For additional information check the [move](/api/web/sortable#events-move) event documentation.
 
 
 #### Parameters
@@ -107,10 +107,10 @@ The name of the JavaScript function that will handle the event.
     )
 
 
-### End(`System.Func<System.Object,System.Object>`)
+### End(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the End client-side event
 
-For additional information check the [end](/kendo-ui/api/web/sortable#events-end) event documentation.
+For additional information check the [end](/api/web/sortable#events-end) event documentation.
 
 
 #### Parameters
@@ -134,10 +134,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### End(`System.String`)
+### End(System.String)
 Defines the name of the JavaScript function that will handle the the End client-side event.
 
-For additional information check the [end](/kendo-ui/api/web/sortable#events-end) event documentation.
+For additional information check the [end](/api/web/sortable#events-end) event documentation.
 
 
 #### Parameters
@@ -155,10 +155,10 @@ The name of the JavaScript function that will handle the event.
     )
 
 
-### Change(`System.Func<System.Object,System.Object>`)
+### Change(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Change client-side event
 
-For additional information check the [change](/kendo-ui/api/web/sortable#events-change) event documentation.
+For additional information check the [change](/api/web/sortable#events-change) event documentation.
 
 
 #### Parameters
@@ -182,10 +182,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### Change(`System.String`)
+### Change(System.String)
 Defines the name of the JavaScript function that will handle the the Change client-side event.
 
-For additional information check the [change](/kendo-ui/api/web/sortable#events-change) event documentation.
+For additional information check the [change](/api/web/sortable#events-change) event documentation.
 
 
 #### Parameters
@@ -203,10 +203,10 @@ The name of the JavaScript function that will handle the event.
     )
 
 
-### Cancel(`System.Func<System.Object,System.Object>`)
+### Cancel(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Cancel client-side event
 
-For additional information check the [cancel](/kendo-ui/api/web/sortable#events-cancel) event documentation.
+For additional information check the [cancel](/api/web/sortable#events-cancel) event documentation.
 
 
 #### Parameters
@@ -230,10 +230,10 @@ The handler code wrapped in a text tag (Razor syntax).
                 )
 
 
-### Cancel(`System.String`)
+### Cancel(System.String)
 Defines the name of the JavaScript function that will handle the the Cancel client-side event.
 
-For additional information check the [cancel](/kendo-ui/api/web/sortable#events-cancel) event documentation.
+For additional information check the [cancel](/api/web/sortable#events-cancel) event documentation.
 
 
 #### Parameters

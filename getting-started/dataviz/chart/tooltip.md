@@ -1,10 +1,8 @@
 ---
-title: Tooltip
-meta_title: Configuration guide for the chart tooltip
-meta_description: How to configure the tooltip of a chart, make it visible and set its properties upon your preferences.
-slug: chart-tooltip
-ordinal: 4
-publish: true
+nav_title: Tooltip
+title: Configuration guide for the chart tooltip
+description: How to configure the tooltip of a chart, make it visible and set its properties upon your preferences.
+nav_position: 4
 ---
 
 # Tooltip

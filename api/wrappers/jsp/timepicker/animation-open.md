@@ -1,8 +1,5 @@
 ---
-title: timePicker-animation-open
-slug: jsp-timePicker-animation-open
-tags: api, java
-publish: true
+nav_title: timePicker-animation-open
 ---
 
 # \<kendo:timePicker-animation-open\>

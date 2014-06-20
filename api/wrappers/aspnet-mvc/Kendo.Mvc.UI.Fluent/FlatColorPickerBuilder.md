@@ -1,7 +1,5 @@
 ---
-title:FlatColorPickerBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.flatcolorpickerbuilder
-publish:true
+nav_title: FlatColorPickerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.FlatColorPickerBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring the DatePickerBase component.
 
 
 
+
 ## Methods
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.SimpleColorPickerEventBuilder>`)
+
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.SimpleColorPickerEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.SimpleColorPickerEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SimpleColorPickerEventBuilder)>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.SimpleColorPickerEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SimpleColorPickerEventBuilder)>
 The client events action.
 
 
@@ -32,7 +32,7 @@ The client events action.
     %>
 
 
-### Value(`System.String`)
+### Value(System.String)
 Sets the value of the picker input
 
 
@@ -51,7 +51,7 @@ The initially selected color
     %>
 
 
-### Opacity(`System.Boolean`)
+### Opacity(System.Boolean)
 Indicates whether the picker will allow transparent colors to be picked.
 
 
@@ -70,7 +70,7 @@ Whether the user is allowed to change the color opacity.
     %>
 
 
-### Input(`System.Boolean`)
+### Input(System.Boolean)
 Indicates whether the picker will show an input for entering colors.
 
 
@@ -89,7 +89,7 @@ Whether the input field should be shown.
     %>
 
 
-### Preview(`System.Boolean`)
+### Preview(System.Boolean)
 Indicates whether the picker will show a preview of the selected color.
 
 
@@ -108,7 +108,7 @@ Whether the preview area should be shown.
     %>
 
 
-### Buttons(`System.Boolean`)
+### Buttons(System.Boolean)
 Indicates whether the picker will show apply / cancel buttons.
 
 

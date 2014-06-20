@@ -1,8 +1,5 @@
 ---
-title: dataSource-group
-slug: jsp-dataSource-group
-tags: api, java
-publish: true
+nav_title: dataSource-group
 ---
 
 # \<kendo:dataSource-group\>
@@ -23,7 +20,7 @@ The grouping configuration of the data source. If set the data items will be gro
 
 The grouping configuration of the data source. If set the data items will be grouped when the data source is populated. By default grouping is not applied.
 
-More documentation is available at [kendo:dataSource-groupItem](/kendo-ui/api/wrappers/jsp/datasource/groupitem).
+More documentation is available at [kendo:dataSource-groupItem](/api/wrappers/jsp/datasource/groupitem).
 
 #### Example
 

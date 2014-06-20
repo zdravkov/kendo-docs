@@ -1,8 +1,5 @@
 ---
-title: chart-pane-border
-slug: jsp-chart-pane-border
-tags: api, java
-publish: true
+nav_title: chart-pane-border
 ---
 
 # \<kendo:chart-pane-border\>

@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-crosshair-tooltip-border
-slug: jsp-chart-xAxisItem-crosshair-tooltip-border
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-crosshair-tooltip-border
 ---
 
 # \<kendo:chart-xAxisItem-crosshair-tooltip-border\>

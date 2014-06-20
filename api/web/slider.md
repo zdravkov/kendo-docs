@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.Slider
-meta_title: Configuration, methods and events of Kendo UI Slider
-meta_description: Configuration of Slider UI control, different methods, and events, triggered when the slider value changes upon specific conditions.
-slug: api-web-slider
-relatedDocs: gs-web-slider-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.Slider
+title: Configuration, methods and events of Kendo UI Slider
+description: Configuration of Slider UI control, different methods, and events, triggered when the slider value changes upon specific conditions.
 ---
 
 # kendo.ui.Slider
 
-Represents the Kendo UI Slider widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Slider widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

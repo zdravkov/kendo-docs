@@ -1,8 +1,5 @@
 ---
-title: SparklineTooltip
-slug: php-dataviz-ui-sparklinetooltip
-tags: api, php
-publish: true
+nav_title: SparklineTooltip
 ---
 
 # \Kendo\Dataviz\UI\SparklineTooltip
@@ -42,7 +39,7 @@ The border configuration options.
 ##### $value `\Kendo\Dataviz\UI\SparklineTooltipBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineTooltipBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineTooltipBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineTooltipBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineTooltipBorder)
     <?php
     $tooltip = new \Kendo\Dataviz\UI\SparklineTooltip();
     $border = new \Kendo\Dataviz\UI\SparklineTooltipBorder();

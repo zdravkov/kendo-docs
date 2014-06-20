@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: Upload HtmlHelper extension | Kendo UI Upload widget documentation
-meta_description: Get familiar with Upload HtmlHelper server-side wrapper, learn how to setup an asynchronous upload and handle Kendo UI Upload events.
-slug: mvc-upload-overview
-publish: true
+nav_title: Overview
+title: Upload HtmlHelper extension | Kendo UI Upload widget documentation
+description: Get familiar with Upload HtmlHelper server-side wrapper, learn how to setup an asynchronous upload and handle Kendo UI Upload events.
 ---
 
 # Upload
 
-The Upload HtmlHelper extension is a server-side wrapper for the [Kendo UI Upload](/kendo-ui/getting-started/web/upload/overview) widget.
+The Upload HtmlHelper extension is a server-side wrapper for the [Kendo UI Upload](/getting-started/web/upload/overview) widget.
 
 ## Getting Started
 
 The following example shows how to setup an asynchronous upload that saves the uploaded files in the App_Data folder.:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -67,7 +65,7 @@ The following example shows how to setup an asynchronous upload that saves the u
 ## Accessing an Existing Upload
 
 You can reference an existing Upload instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/upload#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/upload#methods) to control its behavior.
 
 ### Accessing an existing Upload instance
 
@@ -82,7 +80,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/u
 
 ## Handling Kendo UI Upload events
 
-You can subscribe to all [events](/kendo-ui/api/web/upload) exposed by Kendo UI Upload:
+You can subscribe to all [events](/api/web/upload) exposed by Kendo UI Upload:
 
 ### WebForms - subscribe by handler name
 

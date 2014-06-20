@@ -1,7 +1,5 @@
 ---
-title: New Project Wizard
-slug: mvc-vsx-new-project
-publish: true
+nav_title: New Project Wizard
 ---
 
 #New Project Wizard
@@ -22,7 +20,7 @@ Using the options in the Telerik UI for ASP.NET MVC Project Settings page you ca
 -   **View Engine** - Choose between Razor and WebForms
 -   **Theme** – Choose the visual theme for your Telerik UI for ASP.NET MVC Application
 -   **Copy Editor Templates** - Copy the predefined editor templates to ~/Views/Shared/EditorTemplates
--   **Use CDN Support** - Enable or disable [CDN](/kendo-ui/getting-started/javascript-dependencies#cdn) support.
+-   **Use CDN Support** - Enable or disable [CDN](/getting-started/javascript-dependencies#cdn) support.
 -   **Copy Global Resources** - Copy the localization files to ~/Scripts/kendo/{version}/cultures
 -   **Add Test Project** - Choose whether to add a test project to the solution.
 

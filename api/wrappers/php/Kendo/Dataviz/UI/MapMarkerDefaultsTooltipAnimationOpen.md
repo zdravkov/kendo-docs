@@ -1,8 +1,5 @@
 ---
-title: MapMarkerDefaultsTooltipAnimationOpen
-slug: php-dataviz-ui-mapmarkerdefaultstooltipanimationopen
-tags: api, php
-publish: true
+nav_title: MapMarkerDefaultsTooltipAnimationOpen
 ---
 
 # \Kendo\Dataviz\UI\MapMarkerDefaultsTooltipAnimationOpen

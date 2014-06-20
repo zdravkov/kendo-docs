@@ -1,7 +1,5 @@
 ---
-title:EnumOperatorsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.enumoperatorsbuilder
-publish:true
+nav_title: EnumOperatorsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.EnumOperatorsBuilder
@@ -9,7 +7,9 @@ Defines the fluent interface for configuring the Filter menu EnumOperators DropD
 
 
 
+
 ## Methods
+
 
 ### Clear
 Clears the options. Supported only in conjunction with custom messages.
@@ -18,7 +18,7 @@ Clears the options. Supported only in conjunction with custom messages.
 
 
 
-### IsEqualTo(`System.String`)
+### IsEqualTo(System.String)
 Sets the text for IsEqualTo operator filter menu item.
 
 
@@ -31,7 +31,7 @@ The message
 
 
 
-### IsNotEqualTo(`System.String`)
+### IsNotEqualTo(System.String)
 Sets the text for IsNotEqualTo operator filter menu item.
 
 

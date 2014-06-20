@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-crosshair-tooltip-border
-slug: jsp-sparkline-valueAxisItem-crosshair-tooltip-border
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-crosshair-tooltip-border
 ---
 
 # \<kendo:sparkline-valueAxisItem-crosshair-tooltip-border\>

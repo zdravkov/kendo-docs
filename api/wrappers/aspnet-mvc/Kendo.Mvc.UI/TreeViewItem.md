@@ -1,7 +1,5 @@
 ---
-title:TreeViewItem
-slug:aspnetmvc-kendo.mvc.ui.treeviewitem
-publish:true
+nav_title: TreeViewItem
 ---
 
 # Kendo.Mvc.UI.TreeViewItem

@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesDefaults-tooltip
-slug: jsp-sparkline-seriesDefaults-tooltip
-tags: api, java
-publish: true
+nav_title: sparkline-seriesDefaults-tooltip
 ---
 
 # \<kendo:sparkline-seriesDefaults-tooltip\>
@@ -80,7 +77,7 @@ A value indicating if the tooltip should be displayed.
 
 The border configuration options.
 
-More documentation is available at [kendo:sparkline-seriesDefaults-tooltip-border](/kendo-ui/api/wrappers/jsp/sparkline/seriesdefaults-tooltip-border).
+More documentation is available at [kendo:sparkline-seriesDefaults-tooltip-border](/api/wrappers/jsp/sparkline/seriesdefaults-tooltip-border).
 
 #### Example
 

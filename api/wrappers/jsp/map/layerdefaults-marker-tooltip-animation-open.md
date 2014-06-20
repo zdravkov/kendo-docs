@@ -1,8 +1,5 @@
 ---
-title: map-layerDefaults-marker-tooltip-animation-open
-slug: jsp-map-layerDefaults-marker-tooltip-animation-open
-tags: api, java
-publish: true
+nav_title: map-layerDefaults-marker-tooltip-animation-open
 ---
 
 # \<kendo:map-layerDefaults-marker-tooltip-animation-open\>

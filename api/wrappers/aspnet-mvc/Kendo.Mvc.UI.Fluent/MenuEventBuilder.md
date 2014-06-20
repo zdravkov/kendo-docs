@@ -1,7 +1,5 @@
 ---
-title:MenuEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.menueventbuilder
-publish:true
+nav_title: MenuEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MenuEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent interface for configuring the Menu events.
 
 
 
+
 ## Methods
 
-### Open(`System.Func<System.Object,System.Object>`)
+
+### Open(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Open client-side event
 
-For additional information check the [open](/kendo-ui/api/web/menu#events-open) event documentation.
+For additional information check the [open](/api/web/menu#events-open) event documentation.
 
 
 #### Parameters
@@ -39,10 +39,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Open(`System.String`)
+### Open(System.String)
 Defines the name of the JavaScript function that will handle the the Open client-side event.
 
-For additional information check the [open](/kendo-ui/api/web/menu#events-open) event documentation.
+For additional information check the [open](/api/web/menu#events-open) event documentation.
 
 
 #### Parameters
@@ -60,10 +60,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Close(`System.Func<System.Object,System.Object>`)
+### Close(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Close client-side event
 
-For additional information check the [close](/kendo-ui/api/web/menu#events-close) event documentation.
+For additional information check the [close](/api/web/menu#events-close) event documentation.
 
 
 #### Parameters
@@ -88,10 +88,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Close(`System.String`)
+### Close(System.String)
 Defines the name of the JavaScript function that will handle the the Close client-side event.
 
-For additional information check the [close](/kendo-ui/api/web/menu#events-close) event documentation.
+For additional information check the [close](/api/web/menu#events-close) event documentation.
 
 
 #### Parameters
@@ -109,10 +109,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Activate(`System.Func<System.Object,System.Object>`)
+### Activate(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Activate client-side event
 
-For additional information check the [activate](/kendo-ui/api/web/menu#events-activate) event documentation.
+For additional information check the [activate](/api/web/menu#events-activate) event documentation.
 
 
 #### Parameters
@@ -137,10 +137,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Activate(`System.String`)
+### Activate(System.String)
 Defines the name of the JavaScript function that will handle the the Activate client-side event.
 
-For additional information check the [activate](/kendo-ui/api/web/menu#events-activate) event documentation.
+For additional information check the [activate](/api/web/menu#events-activate) event documentation.
 
 
 #### Parameters
@@ -158,10 +158,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Deactivate(`System.Func<System.Object,System.Object>`)
+### Deactivate(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Deactivate client-side event
 
-For additional information check the [deactivate](/kendo-ui/api/web/menu#events-deactivate) event documentation.
+For additional information check the [deactivate](/api/web/menu#events-deactivate) event documentation.
 
 
 #### Parameters
@@ -186,10 +186,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Deactivate(`System.String`)
+### Deactivate(System.String)
 Defines the name of the JavaScript function that will handle the the Deactivate client-side event.
 
-For additional information check the [deactivate](/kendo-ui/api/web/menu#events-deactivate) event documentation.
+For additional information check the [deactivate](/api/web/menu#events-deactivate) event documentation.
 
 
 #### Parameters
@@ -207,10 +207,10 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
-### Select(`System.Func<System.Object,System.Object>`)
+### Select(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Select client-side event
 
-For additional information check the [select](/kendo-ui/api/web/menu#events-select) event documentation.
+For additional information check the [select](/api/web/menu#events-select) event documentation.
 
 
 #### Parameters
@@ -235,10 +235,10 @@ The handler code wrapped in a text tag (Razor syntax).
                     %>
 
 
-### Select(`System.String`)
+### Select(System.String)
 Defines the name of the JavaScript function that will handle the the Select client-side event.
 
-For additional information check the [select](/kendo-ui/api/web/menu#events-select) event documentation.
+For additional information check the [select](/api/web/menu#events-select) event documentation.
 
 
 #### Parameters

@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesDefaultsBorder
-slug: php-dataviz-ui-chartseriesdefaultsborder
-tags: api, php
-publish: true
+nav_title: ChartSeriesDefaultsBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsBorder

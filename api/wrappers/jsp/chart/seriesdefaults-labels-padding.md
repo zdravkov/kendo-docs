@@ -1,8 +1,5 @@
 ---
-title: chart-seriesDefaults-labels-padding
-slug: jsp-chart-seriesDefaults-labels-padding
-tags: api, java
-publish: true
+nav_title: chart-seriesDefaults-labels-padding
 ---
 
 # \<kendo:chart-seriesDefaults-labels-padding\>

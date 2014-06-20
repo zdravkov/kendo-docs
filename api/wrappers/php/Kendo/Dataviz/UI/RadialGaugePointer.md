@@ -1,8 +1,5 @@
 ---
-title: RadialGaugePointer
-slug: php-dataviz-ui-radialgaugepointer
-tags: api, php
-publish: true
+nav_title: RadialGaugePointer
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugePointer
@@ -24,7 +21,7 @@ The cap configuration options.
 ##### $value `\Kendo\Dataviz\UI\RadialGaugePointerCap|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\RadialGaugePointerCap](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugePointerCap)
+#### Example - using [\Kendo\Dataviz\UI\RadialGaugePointerCap](/api/wrappers/php/Kendo/Dataviz/UI/RadialGaugePointerCap)
     <?php
     $pointer = new \Kendo\Dataviz\UI\RadialGaugePointer();
     $cap = new \Kendo\Dataviz\UI\RadialGaugePointerCap();

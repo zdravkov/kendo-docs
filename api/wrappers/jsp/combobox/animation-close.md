@@ -1,8 +1,5 @@
 ---
-title: comboBox-animation-close
-slug: jsp-comboBox-animation-close
-tags: api, java
-publish: true
+nav_title: comboBox-animation-close
 ---
 
 # \<kendo:comboBox-animation-close\>

@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxis-majorTicks
-slug: jsp-chart-categoryAxis-majorTicks
-tags: api, java
-publish: true
+nav_title: chart-categoryAxis-majorTicks
 ---
 
 # \<kendo:chart-categoryAxis-majorTicks\>

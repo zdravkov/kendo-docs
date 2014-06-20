@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-notes-icon-border
-slug: jsp-chart-categoryAxisItem-notes-icon-border
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-notes-icon-border
 ---
 
 # \<kendo:chart-categoryAxisItem-notes-icon-border\>

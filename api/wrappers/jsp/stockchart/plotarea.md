@@ -1,8 +1,5 @@
 ---
-title: stockChart-plotArea
-slug: jsp-stockChart-plotArea
-tags: api, java
-publish: true
+nav_title: stockChart-plotArea
 ---
 
 # \<kendo:stockChart-plotArea\>
@@ -47,7 +44,7 @@ The background opacity of the plot area.
 
 The border of the plot area.
 
-More documentation is available at [kendo:stockChart-plotArea-border](/kendo-ui/api/wrappers/jsp/stockchart/plotarea-border).
+More documentation is available at [kendo:stockChart-plotArea-border](/api/wrappers/jsp/stockchart/plotarea-border).
 
 #### Example
 

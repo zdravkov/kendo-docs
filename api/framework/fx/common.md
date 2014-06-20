@@ -1,7 +1,5 @@
 ---
-title: FX Common API
-slug: api-fx-common-api
-publish: true
+nav_title: FX Common API
 ---
 
 # Common Effects API

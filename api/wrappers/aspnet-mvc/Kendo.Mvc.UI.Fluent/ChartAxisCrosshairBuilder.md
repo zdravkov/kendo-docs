@@ -1,7 +1,5 @@
 ---
-title:ChartAxisCrosshairBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartaxiscrosshairbuilder
-publish:true
+nav_title: ChartAxisCrosshairBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisCrosshairBuilder
@@ -9,22 +7,24 @@ Defines the fluent interface for configuring ChartLine.
 
 
 
+
 ## Methods
 
-### Tooltip(`System.Action<Kendo.Mvc.UI.Fluent.ChartAxisCrosshairTooltipBuilder>`)
+
+### Tooltip(System.Action\<Kendo.Mvc.UI.Fluent.ChartAxisCrosshairTooltipBuilder\>)
 Configures the crosshair tooltip
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisCrosshairTooltipBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisCrosshairTooltipBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAxisCrosshairTooltipBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAxisCrosshairTooltipBuilder)>
 The tooltip configuration action
 
 
 
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the crosshair visible
 
 

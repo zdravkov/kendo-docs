@@ -1,9 +1,7 @@
 ---
-title: Web API Editing
-meta_title: Web API Controller Editing with Kendo UI Grid for ASP.NET MVC
-meta_description: Tutorial showing how to implement CRUD operations with a Web API controller.
-slug: mvc-grid-webapi-editing
-publish: true
+nav_title: Web API Editing
+title: Web API Controller Editing with Kendo UI Grid for ASP.NET MVC
+description: Tutorial showing how to implement CRUD operations with a Web API controller.
 ---
 
 # Web API Editing
@@ -11,8 +9,8 @@ publish: true
 This tutorial shows how to implement CRUD (Create, Read, Update, Destroy) with Kendo UI Grid for ASP.NET MVC and a [Web API](http://www.asp.net/web-api) controller.
 The example uses the Products table from the Northwind database.
 
-1. Create a new **ASP.NET MVC 4 Web Application** (or **Telerik MVC Web Application** if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
-Name the application "KendoGridWebApiCRUD". If you decided not to use the Visual Studio Extensions follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/asp-net-mvc-4) help topic in order
+1. Create a new **ASP.NET MVC 4 Web Application** (or **Telerik MVC Web Application** if you have installed the [Telerik UI for ASP.NET MVC Visual Studio Extensions](/getting-started/using-kendo-with/aspnet-mvc/introduction#kendo-ui-for-asp.net-mvc-visual-studio-extensions)).
+Name the application "KendoGridWebApiCRUD". If you decided not to use the Visual Studio Extensions follow the steps from the [introduction](/getting-started/using-kendo-with/aspnet-mvc/asp-net-mvc-4) help topic in order
 to add Telerik UI for ASP.NET MVC to the application.
 1. Add a new "Entity Framework Data Model". Right click the **Models** folder in Visual Studio solution explorer and pick **Add -> New Item**. Choose **Data -> ADO.NET Entity Data Model** from the **Add New Item** dialog.
 Name the model "Northwind.edmx" and click **Next**. This will start the **Entity Data Model Wizard**.

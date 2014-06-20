@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Overview of Kendo UI Window widget
-meta_description: Learn how to get started with Kendo UI Window widget, load content via Ajax, access an existing window.
-slug: gs-web-window-overview
-relatedDocs: api-web-window
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Overview of Kendo UI Window widget
+description: Learn how to get started with Kendo UI Window widget, load content via Ajax, access an existing window.
 ---
 
 # Window Overview
@@ -38,7 +34,7 @@ DOM element that was used to initialize the content.
 ### HTML structure and DOM Placement
 
 By default, the Window is created as a child of the `&lt;body&gt;` element. This behavior should be taken into account with regard to CSS selectors or element discovery via Javascript.
-The behavior is configurable via the [`appendTo` setting](/kendo-ui/api/web/window#configuration-appendTo).
+The behavior is configurable via the [`appendTo` setting](/api/web/window#configuration-appendTo).
 
 #### Before initialization
 
@@ -235,7 +231,7 @@ By default, the Window widget is moved in the DOM and placed as a child of the `
 but may lead to undesired side effects if the Window is created from an element inside a form, as the moved form fields will not be submitted. There are two ways to avoid this:
 
 1. the whole form including its opening and closing tags should be inside the element, from which the Window is created;
-1. if the Window is created from an element inside the form, then the [appendTo](/kendo-ui/api/web/window#configuration-appendTo) property should be used, so that the Window is not moved outside the form;
+1. if the Window is created from an element inside the form, then the [appendTo](/api/web/window#configuration-appendTo) property should be used, so that the Window is not moved outside the form;
 
 If form data is validated on the server, we recommend submitting via AJAX, so that the Window remains visible and any validation messages are displayed seamlessly.
 
@@ -243,7 +239,7 @@ The above remarks only apply to the case when the Window is *not* using an `ifra
 
 ## Destroying a Kendo UI Window
 
-Unlike most other widgets, the Kendo UI Window is **completely removed from the DOM** when [destroyed](/kendo-ui/getting-started/widgets#destroying-kendo-ui-widgets).
+Unlike most other widgets, the Kendo UI Window is **completely removed from the DOM** when [destroyed](/getting-started/widgets#destroying-kendo-ui-widgets).
 This means that the element, from which it was initialized, no longer exists on the page, so a new Window instance can be created only from another element.
 
 ## Printing the Window contents

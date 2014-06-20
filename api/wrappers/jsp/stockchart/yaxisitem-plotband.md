@@ -1,8 +1,5 @@
 ---
-title: stockChart-yAxisItem-plotBand
-slug: jsp-stockChart-yAxisItem-plotBand
-tags: api, java
-publish: true
+nav_title: stockChart-yAxisItem-plotBand
 ---
 
 # \<kendo:stockChart-yAxisItem-plotBand\>

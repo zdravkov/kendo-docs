@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-plotBand
-slug: jsp-stockChart-navigator-categoryAxisItem-plotBand
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-plotBand
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-plotBand\>

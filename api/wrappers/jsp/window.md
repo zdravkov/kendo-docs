@@ -1,12 +1,9 @@
 ---
-title: window
-slug: jsp-window
-tags: api, java
-publish: true
+nav_title: window
 ---
 
 # \<kendo:window\>
-A JSP wrapper for Kendo UI [Window](/kendo-ui/api/web/window).
+A JSP wrapper for Kendo UI [Window](/api/web/window).
 
 ## Configuration Attributes
 
@@ -148,7 +145,7 @@ Specifies width of the window.
 A collection of {Animation} objects, used to change default animations. A value of false
 will disable all animations in the widget.
 
-More documentation is available at [kendo:window-animation](/kendo-ui/api/wrappers/jsp/window/animation).
+More documentation is available at [kendo:window-animation](/api/wrappers/jsp/window/animation).
 
 #### Example
 
@@ -160,7 +157,7 @@ More documentation is available at [kendo:window-animation](/kendo-ui/api/wrappe
 
 A collection of one or two members, which define the initial Window's top and/or left position on the page.
 
-More documentation is available at [kendo:window-position](/kendo-ui/api/wrappers/jsp/window/position).
+More documentation is available at [kendo:window-position](/api/wrappers/jsp/window/position).
 
 #### Example
 
@@ -176,7 +173,7 @@ More documentation is available at [kendo:window-position](/kendo-ui/api/wrapper
 Triggered when a Window has finished its opening animation.
 
 
-For additional information check the [activate](/kendo-ui/api/web/window#events-activate) event documentation.
+For additional information check the [activate](/api/web/window#events-activate) event documentation.
 
 #### Example
     <kendo:window activate="handle_activate">
@@ -192,7 +189,7 @@ For additional information check the [activate](/kendo-ui/api/web/window#events-
 Triggered when a Window is closed (by a user or through the close() method).
 
 
-For additional information check the [close](/kendo-ui/api/web/window#events-close) event documentation.
+For additional information check the [close](/api/web/window#events-close) event documentation.
 
 #### Example
     <kendo:window close="handle_close">
@@ -208,7 +205,7 @@ For additional information check the [close](/kendo-ui/api/web/window#events-clo
 Triggered when a Window has finished its closing animation.
 
 
-For additional information check the [deactivate](/kendo-ui/api/web/window#events-deactivate) event documentation.
+For additional information check the [deactivate](/api/web/window#events-deactivate) event documentation.
 
 #### Example
     <kendo:window deactivate="handle_deactivate">
@@ -224,7 +221,7 @@ For additional information check the [deactivate](/kendo-ui/api/web/window#event
 Triggered when a Window has been moved by a user.
 
 
-For additional information check the [dragend](/kendo-ui/api/web/window#events-dragend) event documentation.
+For additional information check the [dragend](/api/web/window#events-dragend) event documentation.
 
 #### Example
     <kendo:window dragend="handle_dragend">
@@ -240,7 +237,7 @@ For additional information check the [dragend](/kendo-ui/api/web/window#events-d
 Triggered when the user starts to move the window.
 
 
-For additional information check the [dragstart](/kendo-ui/api/web/window#events-dragstart) event documentation.
+For additional information check the [dragstart](/api/web/window#events-dragstart) event documentation.
 
 #### Example
     <kendo:window dragstart="handle_dragstart">
@@ -256,7 +253,7 @@ For additional information check the [dragstart](/kendo-ui/api/web/window#events
 Triggered when an AJAX request for content fails.
 
 
-For additional information check the [error](/kendo-ui/api/web/window#events-error) event documentation.
+For additional information check the [error](/api/web/window#events-error) event documentation.
 
 #### Example
     <kendo:window error="handle_error">
@@ -272,7 +269,7 @@ For additional information check the [error](/kendo-ui/api/web/window#events-err
 Triggered when a Window is opened (i.e. the open() method is called).
 
 
-For additional information check the [open](/kendo-ui/api/web/window#events-open) event documentation.
+For additional information check the [open](/api/web/window#events-open) event documentation.
 
 #### Example
     <kendo:window open="handle_open">
@@ -290,7 +287,7 @@ when the window iframe has finished loading, or when the refresh button
 has been clicked on a window with static content.
 
 
-For additional information check the [refresh](/kendo-ui/api/web/window#events-refresh) event documentation.
+For additional information check the [refresh](/api/web/window#events-refresh) event documentation.
 
 #### Example
     <kendo:window refresh="handle_refresh">
@@ -306,7 +303,7 @@ For additional information check the [refresh](/kendo-ui/api/web/window#events-r
 Triggered when a window has been resized by a user.
 
 
-For additional information check the [resize](/kendo-ui/api/web/window#events-resize) event documentation.
+For additional information check the [resize](/api/web/window#events-resize) event documentation.
 
 #### Example
     <kendo:window resize="handle_resize">
@@ -324,7 +321,7 @@ For additional information check the [resize](/kendo-ui/api/web/window#events-re
 Triggered when a Window has finished its opening animation.
 
 
-For additional information check the [activate](/kendo-ui/api/web/window#events-activate) event documentation.
+For additional information check the [activate](/api/web/window#events-activate) event documentation.
 
 #### Example
     <kendo:window>
@@ -342,7 +339,7 @@ For additional information check the [activate](/kendo-ui/api/web/window#events-
 Triggered when a Window is closed (by a user or through the close() method).
 
 
-For additional information check the [close](/kendo-ui/api/web/window#events-close) event documentation.
+For additional information check the [close](/api/web/window#events-close) event documentation.
 
 #### Example
     <kendo:window>
@@ -360,7 +357,7 @@ For additional information check the [close](/kendo-ui/api/web/window#events-clo
 Triggered when a Window has finished its closing animation.
 
 
-For additional information check the [deactivate](/kendo-ui/api/web/window#events-deactivate) event documentation.
+For additional information check the [deactivate](/api/web/window#events-deactivate) event documentation.
 
 #### Example
     <kendo:window>
@@ -378,7 +375,7 @@ For additional information check the [deactivate](/kendo-ui/api/web/window#event
 Triggered when a Window has been moved by a user.
 
 
-For additional information check the [dragend](/kendo-ui/api/web/window#events-dragend) event documentation.
+For additional information check the [dragend](/api/web/window#events-dragend) event documentation.
 
 #### Example
     <kendo:window>
@@ -396,7 +393,7 @@ For additional information check the [dragend](/kendo-ui/api/web/window#events-d
 Triggered when the user starts to move the window.
 
 
-For additional information check the [dragstart](/kendo-ui/api/web/window#events-dragstart) event documentation.
+For additional information check the [dragstart](/api/web/window#events-dragstart) event documentation.
 
 #### Example
     <kendo:window>
@@ -414,7 +411,7 @@ For additional information check the [dragstart](/kendo-ui/api/web/window#events
 Triggered when an AJAX request for content fails.
 
 
-For additional information check the [error](/kendo-ui/api/web/window#events-error) event documentation.
+For additional information check the [error](/api/web/window#events-error) event documentation.
 
 #### Example
     <kendo:window>
@@ -432,7 +429,7 @@ For additional information check the [error](/kendo-ui/api/web/window#events-err
 Triggered when a Window is opened (i.e. the open() method is called).
 
 
-For additional information check the [open](/kendo-ui/api/web/window#events-open) event documentation.
+For additional information check the [open](/api/web/window#events-open) event documentation.
 
 #### Example
     <kendo:window>
@@ -452,7 +449,7 @@ when the window iframe has finished loading, or when the refresh button
 has been clicked on a window with static content.
 
 
-For additional information check the [refresh](/kendo-ui/api/web/window#events-refresh) event documentation.
+For additional information check the [refresh](/api/web/window#events-refresh) event documentation.
 
 #### Example
     <kendo:window>
@@ -470,7 +467,7 @@ For additional information check the [refresh](/kendo-ui/api/web/window#events-r
 Triggered when a window has been resized by a user.
 
 
-For additional information check the [resize](/kendo-ui/api/web/window#events-resize) event documentation.
+For additional information check the [resize](/api/web/window#events-resize) event documentation.
 
 #### Example
     <kendo:window>

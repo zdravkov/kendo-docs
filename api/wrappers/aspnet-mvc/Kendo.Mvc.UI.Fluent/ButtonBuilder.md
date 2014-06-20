@@ -1,7 +1,5 @@
 ---
-title:ButtonBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.buttonbuilder
-publish:true
+nav_title: ButtonBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ButtonBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the !:Button<T>component.
 
 
 
+
 ## Methods
 
-### Content(`System.Action`)
+
+### Content(System.Action)
 Sets the HTML content of the Button.
 
 
@@ -24,7 +24,7 @@ The action which renders the HTML content.
 
 
 
-### Content(`System.Func<System.Object,System.Object>`)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content of the Button.
 
 
@@ -37,7 +37,7 @@ The Razor template for the HTML content.
 
 
 
-### Content(`System.String`)
+### Content(System.String)
 Sets the HTML content of the Button.
 
 
@@ -50,41 +50,41 @@ The HTML content.
 
 
 
-### Enable(`System.Boolean`)
+### Enable(System.Boolean)
 Sets whether Button should be enabled.
 
 
 
 
 
-### Icon(`System.String`)
+### Icon(System.String)
 Sets the icon name of the Button.
 
 
 
 
 
-### ImageUrl(`System.String`)
+### ImageUrl(System.String)
 Sets the image URL of the Button.
 
 
 
 
 
-### SpriteCssClass(`System.String`)
+### SpriteCssClass(System.String)
 Sets the sprite CSS class(es) of the Button.
 
 
 
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.ButtonEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.ButtonEventBuilder\>)
 Configures the client-side events.
 
 
 #### Parameters
 
-##### events System.Action<[Kendo.Mvc.UI.Fluent.ButtonEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ButtonEventBuilder)>
+##### events System.Action<[Kendo.Mvc.UI.Fluent.ButtonEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ButtonEventBuilder)>
 The client events action.
 
 
@@ -98,7 +98,7 @@ The client events action.
     %>
 
 
-### Tag(`System.String`)
+### Tag(System.String)
 Sets the Button HTML tag. A button tag is used by default.
 
 

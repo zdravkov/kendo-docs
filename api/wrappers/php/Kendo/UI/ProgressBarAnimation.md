@@ -1,8 +1,5 @@
 ---
-title: ProgressBarAnimation
-slug: php-ui-progressbaranimation
-tags: api, php
-publish: true
+nav_title: ProgressBarAnimation
 ---
 
 # \Kendo\UI\ProgressBarAnimation

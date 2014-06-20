@@ -1,8 +1,5 @@
 ---
-title: DiagramLayoutGrid
-slug: php-dataviz-ui-diagramlayoutgrid
-tags: api, php
-publish: true
+nav_title: DiagramLayoutGrid
 ---
 
 # \Kendo\Dataviz\UI\DiagramLayoutGrid

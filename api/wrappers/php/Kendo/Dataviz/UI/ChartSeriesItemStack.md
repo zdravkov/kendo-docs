@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemStack
-slug: php-dataviz-ui-chartseriesitemstack
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemStack
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemStack

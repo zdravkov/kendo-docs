@@ -1,8 +1,5 @@
 ---
-title: SchedulerMessagesViews
-slug: php-ui-schedulermessagesviews
-tags: api, php
-publish: true
+nav_title: SchedulerMessagesViews
 ---
 
 # \Kendo\UI\SchedulerMessagesViews

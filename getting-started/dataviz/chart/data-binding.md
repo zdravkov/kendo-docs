@@ -1,10 +1,8 @@
 ---
-title: Data Binding
-meta_title: Overview of data binding in Kendo UI Javascript Chart widget
-meta_description: How to handle binding to inline data, binding to a data source in Chart UI widget.
-slug: chart-data-binding
-ordinal: 2
-publish: true
+nav_title: Data Binding
+title: Overview of data binding in Kendo UI Javascript Chart widget
+description: How to handle binding to inline data, binding to a data source in Chart UI widget.
+nav_position: 2
 ---
 
 # Data Binding
@@ -195,7 +193,7 @@ In addition to value field(s), each series can specify a category field.
 The category values from all series will be concatenated and each point will be mapped to its category.
 Point order is not significant.
 
-Series points will be [aggregated](/kendo-ui/api/dataviz/chart#configuration-series.aggregate) to produce one value per category.
+Series points will be [aggregated](/api/dataviz/chart#configuration-series.aggregate) to produce one value per category.
 
 ##### Example: Binding with categoryField
     <div id="chart"></div>

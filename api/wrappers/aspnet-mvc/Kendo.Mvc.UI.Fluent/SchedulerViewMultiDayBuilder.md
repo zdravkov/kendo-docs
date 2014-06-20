@@ -1,7 +1,5 @@
 ---
-title:SchedulerViewMultiDayBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.schedulerviewmultidaybuilder
-publish:true
+nav_title: SchedulerViewMultiDayBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewMultiDayBuilder

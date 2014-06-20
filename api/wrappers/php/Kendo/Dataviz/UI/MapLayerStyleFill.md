@@ -1,8 +1,5 @@
 ---
-title: MapLayerStyleFill
-slug: php-dataviz-ui-maplayerstylefill
-tags: api, php
-publish: true
+nav_title: MapLayerStyleFill
 ---
 
 # \Kendo\Dataviz\UI\MapLayerStyleFill

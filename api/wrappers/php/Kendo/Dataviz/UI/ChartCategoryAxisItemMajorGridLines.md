@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemMajorGridLines
-slug: php-dataviz-ui-chartcategoryaxisitemmajorgridlines
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines

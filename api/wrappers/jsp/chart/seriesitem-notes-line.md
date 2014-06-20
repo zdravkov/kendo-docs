@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-notes-line
-slug: jsp-chart-seriesItem-notes-line
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-notes-line
 ---
 
 # \<kendo:chart-seriesItem-notes-line\>

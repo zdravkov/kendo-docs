@@ -1,8 +1,5 @@
 ---
-title: GridToolbarItem
-slug: php-ui-gridtoolbaritem
-tags: api, php
-publish: true
+nav_title: GridToolbarItem
 ---
 
 # \Kendo\UI\GridToolbarItem

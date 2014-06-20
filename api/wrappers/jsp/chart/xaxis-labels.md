@@ -1,8 +1,5 @@
 ---
-title: chart-xAxis-labels
-slug: jsp-chart-xAxis-labels
-tags: api, java
-publish: true
+nav_title: chart-xAxis-labels
 ---
 
 # \<kendo:chart-xAxis-labels\>

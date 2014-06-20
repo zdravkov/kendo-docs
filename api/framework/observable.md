@@ -1,14 +1,11 @@
 ---
-title: kendo.Observable
-slug: api-framework-Observable
-tags: api,framework
-publish: true
+nav_title: kendo.Observable
 ---
 
 
 # kendo.Observable
 
-Provides support for firing events. Inherits from [kendo.Class](/kendo-ui/api/framework/class).
+Provides support for firing events. Inherits from [kendo.Class](/api/framework/class).
 
 ## Methods
 

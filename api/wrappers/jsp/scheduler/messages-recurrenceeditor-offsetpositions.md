@@ -1,8 +1,5 @@
 ---
-title: scheduler-messages-recurrenceEditor-offsetPositions
-slug: jsp-scheduler-messages-recurrenceEditor-offsetPositions
-tags: api, java
-publish: true
+nav_title: scheduler-messages-recurrenceEditor-offsetPositions
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-offsetPositions\>

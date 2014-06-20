@@ -1,8 +1,5 @@
 ---
-title: ListViewPageable
-slug: php-ui-listviewpageable
-tags: api, php
-publish: true
+nav_title: ListViewPageable
 ---
 
 # \Kendo\UI\ListViewPageable
@@ -78,7 +75,7 @@ Defines texts shown within the pager.
 ##### $value `\Kendo\UI\ListViewPageableMessages|array`
 
 
-#### Example - using [\Kendo\UI\ListViewPageableMessages](/kendo-ui/api/wrappers/php/Kendo/UI/ListViewPageableMessages)
+#### Example - using [\Kendo\UI\ListViewPageableMessages](/api/wrappers/php/Kendo/UI/ListViewPageableMessages)
     <?php
     $pageable = new \Kendo\UI\ListViewPageable();
     $messages = new \Kendo\UI\ListViewPageableMessages();

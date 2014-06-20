@@ -1,8 +1,5 @@
 ---
-title: linearGauge-scale-labels-border
-slug: jsp-linearGauge-scale-labels-border
-tags: api, java
-publish: true
+nav_title: linearGauge-scale-labels-border
 ---
 
 # \<kendo:linearGauge-scale-labels-border\>

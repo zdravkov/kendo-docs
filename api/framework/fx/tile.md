@@ -1,7 +1,5 @@
 ---
-title: FX Tile
-slug: api-fx-tile
-publish: true
+nav_title: FX Tile
 ---
 
 # Tile

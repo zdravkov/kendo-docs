@@ -1,8 +1,5 @@
 ---
-title: SparklineSeriesItemNotes
-slug: php-dataviz-ui-sparklineseriesitemnotes
-tags: api, php
-publish: true
+nav_title: SparklineSeriesItemNotes
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemNotes
@@ -24,7 +21,7 @@ The icon of the notes.
 ##### $value `\Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemNotesIcon)
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemNotesIcon)
     <?php
     $notes = new \Kendo\Dataviz\UI\SparklineSeriesItemNotes();
     $icon = new \Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon();
@@ -53,7 +50,7 @@ The label of the notes.
 ##### $value `\Kendo\Dataviz\UI\SparklineSeriesItemNotesLabel|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemNotesLabel](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemNotesLabel)
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemNotesLabel](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemNotesLabel)
     <?php
     $notes = new \Kendo\Dataviz\UI\SparklineSeriesItemNotes();
     $label = new \Kendo\Dataviz\UI\SparklineSeriesItemNotesLabel();
@@ -82,7 +79,7 @@ The line of the notes.
 ##### $value `\Kendo\Dataviz\UI\SparklineSeriesItemNotesLine|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemNotesLine](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemNotesLine)
+#### Example - using [\Kendo\Dataviz\UI\SparklineSeriesItemNotesLine](/api/wrappers/php/Kendo/Dataviz/UI/SparklineSeriesItemNotesLine)
     <?php
     $notes = new \Kendo\Dataviz\UI\SparklineSeriesItemNotes();
     $line = new \Kendo\Dataviz\UI\SparklineSeriesItemNotesLine();

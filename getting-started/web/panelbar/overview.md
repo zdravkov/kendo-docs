@@ -1,11 +1,7 @@
 ---
-title: Overview
-meta_title: Overview of PanelBar UI widget documentation
-meta_description: Read when the initialization of PanelBar UI widget should occur and how to load the content with AJAX.
-slug: gs-web-panelbar-overview
-relatedDocs: api-web-panelbar
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Overview of PanelBar UI widget documentation
+description: Read when the initialization of PanelBar UI widget should occur and how to load the content with AJAX.
 ---
 
 # PanelBar Overview

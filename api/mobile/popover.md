@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.PopOver
-meta_title: Configuration, methods and events of Kendo UI Mobile PopOver
-meta_description: Guide to Kendo UI Mobile PopOver configuration options: set width and height of the popup in pixels and direction to which the popup will expand.
-slug: api-mobile-popover
-relatedDocs: gs-mobile-popover
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.PopOver
+title: Configuration, methods and events of Kendo UI Mobile PopOver
+description: 'Guide to Kendo UI Mobile PopOver configuration options: set width and height of the popup in pixels and direction to which the popup will expand.'
 ---
 
 # kendo.mobile.ui.PopOver
 
-Represents the Kendo UI Mobile PopOver widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile PopOver widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 

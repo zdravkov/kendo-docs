@@ -1,8 +1,5 @@
 ---
-title: MapLayerDefaultsMarkerTooltipAnimation
-slug: php-dataviz-ui-maplayerdefaultsmarkertooltipanimation
-tags: api, php
-publish: true
+nav_title: MapLayerDefaultsMarkerTooltipAnimation
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimation
@@ -24,7 +21,7 @@ The animation that will be used when a Tooltip closes.
 ##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationClose|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationClose](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsMarkerTooltipAnimationClose)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationClose](/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsMarkerTooltipAnimationClose)
     <?php
     $animation = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimation();
     $close = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationClose();
@@ -53,7 +50,7 @@ The animation that will be used when a Tooltip opens.
 ##### $value `\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationOpen|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationOpen](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsMarkerTooltipAnimationOpen)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationOpen](/api/wrappers/php/Kendo/Dataviz/UI/MapLayerDefaultsMarkerTooltipAnimationOpen)
     <?php
     $animation = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimation();
     $open = new \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationOpen();

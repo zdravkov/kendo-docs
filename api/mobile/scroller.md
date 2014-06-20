@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.Scroller
-meta_title: Configuration, methods and events of Kendo UI Mobile Scroller
-meta_description: How to configure a mobile scroller in Kendo UI HTML5 mobile framework, use methods to scroll the container to a specified location and control behavior with events.
-slug: api-mobile-scroller
-relatedDocs: gs-mobile-scroller
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.Scroller
+title: Configuration, methods and events of Kendo UI Mobile Scroller
+description: How to configure a mobile scroller in Kendo UI HTML5 mobile framework, use methods to scroll the container to a specified location and control behavior with events.
 ---
 
 # kendo.mobile.ui.Scroller
 
-Represents the Kendo UI Mobile Scroller widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile Scroller widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 

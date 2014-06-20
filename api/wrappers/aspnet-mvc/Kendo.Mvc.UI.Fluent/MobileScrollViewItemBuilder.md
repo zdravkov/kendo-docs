@@ -1,7 +1,5 @@
 ---
-title:MobileScrollViewItemBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilescrollviewitembuilder
-publish:true
+nav_title: MobileScrollViewItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileScrollViewItemBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobileScrollViewItem settings.
 
 
 
+
 ## Methods
 
-### HtmlAttributes(`System.Object`)
+
+### HtmlAttributes(System.Object)
 Sets the HTML attributes.
 
 
@@ -27,7 +27,7 @@ The HTML attributes.
 
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes.
 
 
@@ -43,7 +43,7 @@ The HTML attributes.
 
 
 
-### Content(`System.Action`)
+### Content(System.Action)
 Sets the HTML content which the content should display.
 
 
@@ -56,7 +56,7 @@ The action which renders the content.
 
 
 
-### Content(`System.Func<System.Object,System.Object>`)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the content should display.
 
 
@@ -69,7 +69,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Content(`System.String`)
+### Content(System.String)
 Sets the HTML content which the view content should display as a string.
 
 

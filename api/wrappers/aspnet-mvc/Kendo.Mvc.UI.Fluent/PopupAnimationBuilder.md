@@ -1,7 +1,5 @@
 ---
-title:PopupAnimationBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.popupanimationbuilder
-publish:true
+nav_title: PopupAnimationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PopupAnimationBuilder

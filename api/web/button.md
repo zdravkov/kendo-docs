@@ -1,10 +1,6 @@
 ---
-title: kendo.ui.Button
-meta_description: Configuration, methods and events of the Kendo UI Button
-slug: api-web-button
-relatedDocs: gs-web-button-overview
-tags: api,web,button
-publish: true
+nav_title: kendo.ui.Button
+description: Configuration, methods and events of the Kendo UI Button
 ---
 
 # kendo.ui.Button

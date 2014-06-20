@@ -1,7 +1,5 @@
 ---
-title:MenuItemBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.menuitembuilder
-publish:true
+nav_title: MenuItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MenuItemBuilder
@@ -9,15 +7,17 @@ Defines the fluent interface for configuring child menu items.
 
 
 
+
 ## Methods
 
-### Items(`System.Action<Kendo.Mvc.UI.Fluent.MenuItemFactory>`)
+
+### Items(System.Action\<Kendo.Mvc.UI.Fluent.MenuItemFactory\>)
 Configures the child items of a MenuItem.
 
 
 #### Parameters
 
-##### addAction System.Action<[Kendo.Mvc.UI.Fluent.MenuItemFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MenuItemFactory)>
+##### addAction System.Action<[Kendo.Mvc.UI.Fluent.MenuItemFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MenuItemFactory)>
 The add action.
 
 

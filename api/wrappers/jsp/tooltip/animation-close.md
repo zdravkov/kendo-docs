@@ -1,8 +1,5 @@
 ---
-title: tooltip-animation-close
-slug: jsp-tooltip-animation-close
-tags: api, java
-publish: true
+nav_title: tooltip-animation-close
 ---
 
 # \<kendo:tooltip-animation-close\>

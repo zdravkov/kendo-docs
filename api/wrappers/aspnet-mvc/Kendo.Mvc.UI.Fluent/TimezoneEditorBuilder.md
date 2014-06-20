@@ -1,7 +1,5 @@
 ---
-title:TimezoneEditorBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.timezoneeditorbuilder
-publish:true
+nav_title: TimezoneEditorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TimezoneEditorBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the TimezoneEditor.
 
 
 
+
 ## Methods
 
-### Value(`System.String`)
+
+### Value(System.String)
 The value of the TimezoneEditor. Must be valid recurrence rule.
 
 
@@ -30,13 +30,13 @@ The value
     )
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.TimezoneEditorEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.TimezoneEditorEventBuilder\>)
 Sets the events configuration of the scheduler.
 
 
 #### Parameters
 
-##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.TimezoneEditorEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TimezoneEditorEventBuilder)>
+##### clientEventsAction System.Action<[Kendo.Mvc.UI.Fluent.TimezoneEditorEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/TimezoneEditorEventBuilder)>
 The lambda which configures the timezoneEditor events
 
 

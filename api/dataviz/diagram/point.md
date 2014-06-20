@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.Point
-slug:api-dataviz-diagram-point
-publish: true
+nav_title: kendo.dataviz.diagram.Point
 ---
 
 # kendo.dataviz.diagram.Point

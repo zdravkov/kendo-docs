@@ -1,7 +1,5 @@
 ---
-title:MobileActionSheetPopupSettingsBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobileactionsheetpopupsettingsbuilder
-publish:true
+nav_title: MobileActionSheetPopupSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileActionSheetPopupSettingsBuilder
@@ -9,9 +7,11 @@ Defines the fluent API for configuring the MobileActionSheetPopupSettings settin
 
 
 
+
 ## Methods
 
-### Height(`System.String`)
+
+### Height(System.String)
 The height of the popup in pixels.
 
 
@@ -24,7 +24,7 @@ The value that configures the height.
 
 
 
-### Width(`System.String`)
+### Width(System.String)
 The width of the popup in pixels
 
 
@@ -37,7 +37,7 @@ The value that configures the width.
 
 
 
-### Height(`System.Int32`)
+### Height(System.Int32)
 The height of the popup in pixels.
 
 
@@ -50,7 +50,7 @@ The value that configures the height.
 
 
 
-### Width(`System.Int32`)
+### Width(System.Int32)
 The width of the popup in pixels
 
 
@@ -63,13 +63,13 @@ The value that configures the width.
 
 
 
-### Direction(`Kendo.Mvc.UI.MobilePopupDirection`)
+### Direction(Kendo.Mvc.UI.MobilePopupDirection)
 The direction to which the popup will expand, relative to the target that opened it
 
 
 #### Parameters
 
-##### value [Kendo.Mvc.UI.MobilePopupDirection](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobilePopupDirection)
+##### value [Kendo.Mvc.UI.MobilePopupDirection](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MobilePopupDirection)
 The value that configures the direction.
 
 

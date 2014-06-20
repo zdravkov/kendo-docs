@@ -1,8 +1,5 @@
 ---
-title: Widget
-slug: php-ui-widget
-tags: api, php
-publish: true
+nav_title: Widget
 ---
 
 # \Kendo\UI\Widget

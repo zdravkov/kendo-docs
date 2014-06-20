@@ -1,8 +1,5 @@
 ---
-title: stockChart-seriesItem-highlight
-slug: jsp-stockChart-seriesItem-highlight
-tags: api, java
-publish: true
+nav_title: stockChart-seriesItem-highlight
 ---
 
 # \<kendo:stockChart-seriesItem-highlight\>
@@ -47,7 +44,7 @@ A value indicating if the series points should be highlighted.
 
 The border of highlighted points. The color is computed automatically from the base point color.** Applicable to bubble, pie, candlestick and ohlc series. **
 
-More documentation is available at [kendo:stockChart-seriesItem-highlight-border](/kendo-ui/api/wrappers/jsp/stockchart/seriesitem-highlight-border).
+More documentation is available at [kendo:stockChart-seriesItem-highlight-border](/api/wrappers/jsp/stockchart/seriesitem-highlight-border).
 
 #### Example
 
@@ -59,7 +56,7 @@ More documentation is available at [kendo:stockChart-seriesItem-highlight-border
 
 Line options for highlighted points. The color is computed automatically from the base point color.** Available only for candlestick series **
 
-More documentation is available at [kendo:stockChart-seriesItem-highlight-line](/kendo-ui/api/wrappers/jsp/stockchart/seriesitem-highlight-line).
+More documentation is available at [kendo:stockChart-seriesItem-highlight-line](/api/wrappers/jsp/stockchart/seriesitem-highlight-line).
 
 #### Example
 

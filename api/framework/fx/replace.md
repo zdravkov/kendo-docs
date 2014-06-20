@@ -1,7 +1,5 @@
 ---
-title: FX Replace
-slug: api-fx-replace
-publish: true
+nav_title: FX Replace
 related: fx-replace
 ---
 

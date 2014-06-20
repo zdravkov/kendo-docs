@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesDefaults-stack
-slug: jsp-sparkline-seriesDefaults-stack
-tags: api, java
-publish: true
+nav_title: sparkline-seriesDefaults-stack
 ---
 
 # \<kendo:sparkline-seriesDefaults-stack\>

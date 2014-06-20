@@ -1,8 +1,5 @@
 ---
-title: progressBar-animation
-slug: jsp-progressBar-animation
-tags: api, java
-publish: true
+nav_title: progressBar-animation
 ---
 
 # \<kendo:progressBar-animation\>

@@ -1,8 +1,5 @@
 ---
-title: diagram-connectionDefaults-hover
-slug: jsp-diagram-connectionDefaults-hover
-tags: api, java
-publish: true
+nav_title: diagram-connectionDefaults-hover
 ---
 
 # \<kendo:diagram-connectionDefaults-hover\>
@@ -23,7 +20,7 @@ Defines the hover configuration.
 
 Defines the hover stroke configuration.
 
-More documentation is available at [kendo:diagram-connectionDefaults-hover-stroke](/kendo-ui/api/wrappers/jsp/diagram/connectiondefaults-hover-stroke).
+More documentation is available at [kendo:diagram-connectionDefaults-hover-stroke](/api/wrappers/jsp/diagram/connectiondefaults-hover-stroke).
 
 #### Example
 

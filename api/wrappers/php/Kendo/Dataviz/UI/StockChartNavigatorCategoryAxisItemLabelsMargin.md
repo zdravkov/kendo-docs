@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemLabelsMargin
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemlabelsmargin
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemLabelsMargin
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemLabelsMargin

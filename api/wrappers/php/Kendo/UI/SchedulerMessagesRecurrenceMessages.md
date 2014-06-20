@@ -1,8 +1,5 @@
 ---
-title: SchedulerMessagesRecurrenceMessages
-slug: php-ui-schedulermessagesrecurrencemessages
-tags: api, php
-publish: true
+nav_title: SchedulerMessagesRecurrenceMessages
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceMessages

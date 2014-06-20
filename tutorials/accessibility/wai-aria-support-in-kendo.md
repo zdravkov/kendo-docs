@@ -1,9 +1,6 @@
 ---
-title: WAI-ARIA Support in Kendo UI Web
-slug: a11y-wai-aria-support-in-kendo
-tags: Tutorial, Accessibility
+nav_title: WAI-ARIA Support in Kendo UI Web
 related: a11y-accessibility-overview, a11y-keyboard-support
-publish: true
 ---
 
 # WAI-ARIA Support in Kendo UI Web

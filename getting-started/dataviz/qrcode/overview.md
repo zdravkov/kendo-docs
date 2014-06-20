@@ -1,10 +1,7 @@
 ---
-title: Overview
-meta_title: Documentation Guide for Kendo UI QRCode widget
-meta_description: How to create and set a QRCode widget in Kendo UI DataViz.
-slug: gs-dataviz-qrcode-overview
-relatedDocs: api-dataviz-qrcode
-publish: true
+nav_title: Overview
+title: Documentation Guide for Kendo UI QRCode widget
+description: How to create and set a QRCode widget in Kendo UI DataViz.
 ---
 
 # QRCode Overview
@@ -74,4 +71,4 @@ A reader might open a local mapping application like Google Maps to this locatio
 
 ### Configure the border, color, background, encoding.
 
-Refer to the complete [API reference](/kendo-ui/api/dataviz/qrcode) for examples and complete list of settings/methods that the QRCode provides.
+Refer to the complete [API reference](/api/dataviz/qrcode) for examples and complete list of settings/methods that the QRCode provides.

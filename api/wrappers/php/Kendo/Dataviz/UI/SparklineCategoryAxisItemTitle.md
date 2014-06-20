@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemTitle
-slug: php-dataviz-ui-sparklinecategoryaxisitemtitle
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemTitle
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemTitle
@@ -43,7 +40,7 @@ The border of the title.
 ##### $value `\Kendo\Dataviz\UI\SparklineCategoryAxisItemTitleBorder|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemTitleBorder](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemTitleBorder)
+#### Example - using [\Kendo\Dataviz\UI\SparklineCategoryAxisItemTitleBorder](/api/wrappers/php/Kendo/Dataviz/UI/SparklineCategoryAxisItemTitleBorder)
     <?php
     $title = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemTitle();
     $border = new \Kendo\Dataviz\UI\SparklineCategoryAxisItemTitleBorder();

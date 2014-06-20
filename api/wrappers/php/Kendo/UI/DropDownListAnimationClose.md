@@ -1,8 +1,5 @@
 ---
-title: DropDownListAnimationClose
-slug: php-ui-dropdownlistanimationclose
-tags: api, php
-publish: true
+nav_title: DropDownListAnimationClose
 ---
 
 # \Kendo\UI\DropDownListAnimationClose

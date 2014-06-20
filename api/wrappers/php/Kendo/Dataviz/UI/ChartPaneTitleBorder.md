@@ -1,8 +1,5 @@
 ---
-title: ChartPaneTitleBorder
-slug: php-dataviz-ui-chartpanetitleborder
-tags: api, php
-publish: true
+nav_title: ChartPaneTitleBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartPaneTitleBorder

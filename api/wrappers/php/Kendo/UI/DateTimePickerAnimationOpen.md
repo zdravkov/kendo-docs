@@ -1,8 +1,5 @@
 ---
-title: DateTimePickerAnimationOpen
-slug: php-ui-datetimepickeranimationopen
-tags: api, php
-publish: true
+nav_title: DateTimePickerAnimationOpen
 ---
 
 # \Kendo\UI\DateTimePickerAnimationOpen

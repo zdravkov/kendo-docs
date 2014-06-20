@@ -1,8 +1,5 @@
 ---
-title: sortable-cursorOffset
-slug: jsp-sortable-cursorOffset
-tags: api, java
-publish: true
+nav_title: sortable-cursorOffset
 ---
 
 # \<kendo:sortable-cursorOffset\>

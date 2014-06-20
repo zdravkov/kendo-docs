@@ -1,7 +1,5 @@
 ---
-title:kendo.dataviz.diagram.TextBlock
-slug:api-dataviz-diagram-text-block
-publish: true
+nav_title: kendo.dataviz.diagram.TextBlock
 ---
 
 # kendo.dataviz.diagram.TextBlock

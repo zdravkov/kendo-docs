@@ -1,7 +1,5 @@
 ---
-title:ChartCandlestickSeriesHighlightBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartcandlestickserieshighlightbuilder
-publish:true
+nav_title: ChartCandlestickSeriesHighlightBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring candlestick series highlight.
 
 
 
+
 ## Methods
 
-### Border(`System.Int32`)
+
+### Border(System.Int32)
 Sets the bubble highlight border width.
             The color is computed automatically from the base point color.
 
@@ -25,7 +25,7 @@ The bubble highlight border width.
 
 
 
-### Border(`System.Int32,System.String`)
+### Border(System.Int32,System.String)
 Sets the bubble highlight border width.
 
 
@@ -41,13 +41,13 @@ The border color
 
 
 
-### Border(`System.Action<Kendo.Mvc.UI.Fluent.ChartBorderBuilder>`)
+### Border(System.Action\<Kendo.Mvc.UI.Fluent.ChartBorderBuilder\>)
 Configures the highlight border
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartBorderBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartBorderBuilder)>
 
 
 
@@ -57,7 +57,7 @@ Configures the highlight border
 
 
 
-### Opacity(`System.Double`)
+### Opacity(System.Double)
 Sets the bubble highlight opacity.
 
 
@@ -70,7 +70,7 @@ The bubble highlight opacity.
 
 
 
-### Line(`System.Int32`)
+### Line(System.Int32)
 Configures the candlestick highlight line width.
 
 
@@ -83,7 +83,7 @@ The lines width.
 
 
 
-### Line(`System.Int32,System.String`)
+### Line(System.Int32,System.String)
 Configures the candlestick highlight lines.
 
 
@@ -99,13 +99,13 @@ The lines color.
 
 
 
-### Line(`System.Action<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder>`)
+### Line(System.Action\<Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder\>)
 Configures the candlestick highlight chart lines.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAreaLineBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartAreaLineBuilder)>
 The configuration action.
 
 

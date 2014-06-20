@@ -1,8 +1,5 @@
 ---
-title: MultiSelectAnimationClose
-slug: php-ui-multiselectanimationclose
-tags: api, php
-publish: true
+nav_title: MultiSelectAnimationClose
 ---
 
 # \Kendo\UI\MultiSelectAnimationClose

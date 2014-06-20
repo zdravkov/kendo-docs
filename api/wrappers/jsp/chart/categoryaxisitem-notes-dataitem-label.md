@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-notes-dataItem-label
-slug: jsp-chart-categoryAxisItem-notes-dataItem-label
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-notes-dataItem-label
 ---
 
 # \<kendo:chart-categoryAxisItem-notes-dataItem-label\>
@@ -95,7 +92,7 @@ If set to true the chart will display the category notes label. By default the c
 
 The border of the label.
 
-More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-label-border](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-label-border).
+More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-label-border](/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-label-border).
 
 #### Example
 

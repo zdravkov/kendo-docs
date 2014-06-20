@@ -1,8 +1,5 @@
 ---
-title: diagram-connectionDefaults
-slug: jsp-diagram-connectionDefaults
-tags: api, java
-publish: true
+nav_title: diagram-connectionDefaults
 ---
 
 # \<kendo:diagram-connectionDefaults\>
@@ -39,7 +36,7 @@ The start cap (arrow, head or decoration) of the connection:
 
 Defines the hover configuration.
 
-More documentation is available at [kendo:diagram-connectionDefaults-hover](/kendo-ui/api/wrappers/jsp/diagram/connectiondefaults-hover).
+More documentation is available at [kendo:diagram-connectionDefaults-hover](/api/wrappers/jsp/diagram/connectiondefaults-hover).
 
 #### Example
 
@@ -51,7 +48,7 @@ More documentation is available at [kendo:diagram-connectionDefaults-hover](/ken
 
 Defines the stroke configuration.
 
-More documentation is available at [kendo:diagram-connectionDefaults-stroke](/kendo-ui/api/wrappers/jsp/diagram/connectiondefaults-stroke).
+More documentation is available at [kendo:diagram-connectionDefaults-stroke](/api/wrappers/jsp/diagram/connectiondefaults-stroke).
 
 #### Example
 

@@ -1,7 +1,5 @@
 ---
-title:ChartSelectionMousewheelBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartselectionmousewheelbuilder
-publish:true
+nav_title: ChartSelectionMousewheelBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder
@@ -9,7 +7,9 @@ Defines the fluent interface for configuring the ChartSelectionMousewheelBuilder
 
 
 
+
 ## Methods
+
 
 ### Reverse
 Reverses the mousewheel direction.
@@ -29,7 +29,7 @@ Reverses the mousewheel direction.
             %>
 
 
-### Reverse(`System.Boolean`)
+### Reverse(System.Boolean)
 Sets a value indicating if the mousewheel should be reversed.
 
 
@@ -53,13 +53,13 @@ true: scrolling up shrinks the selection.
             %>
 
 
-### Zoom(`Kendo.Mvc.UI.ChartZoomDirection`)
+### Zoom(Kendo.Mvc.UI.ChartZoomDirection)
 Sets the mousehweel zoom type
 
 
 #### Parameters
 
-##### fromDate [Kendo.Mvc.UI.ChartZoomDirection](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartZoomDirection)
+##### fromDate [Kendo.Mvc.UI.ChartZoomDirection](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartZoomDirection)
 The mousehweel zoom type. Default value is ChartZoomDirection.Both
 
 

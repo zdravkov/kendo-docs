@@ -1,8 +1,5 @@
 ---
-title: sparkline-valueAxisItem-majorTicks
-slug: jsp-sparkline-valueAxisItem-majorTicks
-tags: api, java
-publish: true
+nav_title: sparkline-valueAxisItem-majorTicks
 ---
 
 # \<kendo:sparkline-valueAxisItem-majorTicks\>

@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxisItem-notes-dataItem-line
-slug: jsp-chart-valueAxisItem-notes-dataItem-line
-tags: api, java
-publish: true
+nav_title: chart-valueAxisItem-notes-dataItem-line
 ---
 
 # \<kendo:chart-valueAxisItem-notes-dataItem-line\>

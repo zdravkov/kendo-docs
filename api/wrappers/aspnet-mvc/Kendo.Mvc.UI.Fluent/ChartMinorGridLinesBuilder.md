@@ -1,7 +1,5 @@
 ---
-title:ChartMinorGridLinesBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartminorgridlinesbuilder
-publish:true
+nav_title: ChartMinorGridLinesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMinorGridLinesBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring ChartMinorGridLinesBuilder.
 
 
 
+
 ## Methods
 
-### Skip(`System.Int32`)
+
+### Skip(System.Int32)
 Sets the line skip
 
 
@@ -31,7 +31,7 @@ The line skip.
     %>
 
 
-### Step(`System.Int32`)
+### Step(System.Int32)
 Sets the line step
 
 

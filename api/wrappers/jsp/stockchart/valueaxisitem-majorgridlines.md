@@ -1,8 +1,5 @@
 ---
-title: stockChart-valueAxisItem-majorGridLines
-slug: jsp-stockChart-valueAxisItem-majorGridLines
-tags: api, java
-publish: true
+nav_title: stockChart-valueAxisItem-majorGridLines
 ---
 
 # \<kendo:stockChart-valueAxisItem-majorGridLines\>

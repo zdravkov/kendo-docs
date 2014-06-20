@@ -1,8 +1,5 @@
 ---
-title: RadialGaugeScaleRange
-slug: php-dataviz-ui-radialgaugescalerange
-tags: api, php
-publish: true
+nav_title: RadialGaugeScaleRange
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugeScaleRange

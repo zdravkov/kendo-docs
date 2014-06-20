@@ -1,8 +1,5 @@
 ---
-title: ChartSeriesItemNegativeValues
-slug: php-dataviz-ui-chartseriesitemnegativevalues
-tags: api, php
-publish: true
+nav_title: ChartSeriesItemNegativeValues
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemNegativeValues

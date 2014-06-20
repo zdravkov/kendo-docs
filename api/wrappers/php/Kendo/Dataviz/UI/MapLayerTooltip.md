@@ -1,8 +1,5 @@
 ---
-title: MapLayerTooltip
-slug: php-dataviz-ui-maplayertooltip
-tags: api, php
-publish: true
+nav_title: MapLayerTooltip
 ---
 
 # \Kendo\Dataviz\UI\MapLayerTooltip
@@ -25,7 +22,7 @@ will disable all animations in the widget.
 ##### $value `\Kendo\Dataviz\UI\MapLayerTooltipAnimation|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapLayerTooltipAnimation](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerTooltipAnimation)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerTooltipAnimation](/api/wrappers/php/Kendo/Dataviz/UI/MapLayerTooltipAnimation)
     <?php
     $tooltip = new \Kendo\Dataviz\UI\MapLayerTooltip();
     $animation = new \Kendo\Dataviz\UI\MapLayerTooltipAnimation();
@@ -106,7 +103,7 @@ By default the tooltip will display the target element title attribute content.
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapLayerTooltipContent](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapLayerTooltipContent)
+#### Example - using [\Kendo\Dataviz\UI\MapLayerTooltipContent](/api/wrappers/php/Kendo/Dataviz/UI/MapLayerTooltipContent)
     <?php
     $tooltip = new \Kendo\Dataviz\UI\MapLayerTooltip();
     $content = new \Kendo\Dataviz\UI\MapLayerTooltipContent();

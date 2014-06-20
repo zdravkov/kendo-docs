@@ -1,10 +1,8 @@
 ---
-title: Overview
-meta_title: Kendo UI MVVM pattern, integrated with Kendo UI jQuery-powered framework
-meta_description: Kendo UI Model View ViewModel is an implementation of the MVVM pattern, integrated with Kendo UI framework.
-slug: mvvm-overview
-ordinal: 1
-publish: true
+nav_title: Overview
+title: Kendo UI MVVM pattern, integrated with Kendo UI jQuery-powered framework
+description: Kendo UI Model View ViewModel is an implementation of the MVVM pattern, integrated with Kendo UI framework.
+nav_position: 1
 ---
 # Kendo MVVM Overview
 

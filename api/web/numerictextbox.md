@@ -1,16 +1,12 @@
 ---
-title: kendo.ui.NumericTextBox
-meta_title: Configuration, methods and events of Kendo UI NumericTextBox
-meta_description: Code examples and tips how to configure NumericTextBox widget, use available methods and events.
-slug: api-web-numerictextbox
-relatedDocs: gs-web-numerictextbox-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.NumericTextBox
+title: Configuration, methods and events of Kendo UI NumericTextBox
+description: Code examples and tips how to configure NumericTextBox widget, use available methods and events.
 ---
 
 # kendo.ui.NumericTextBox
 
-Represents the Kendo UI NumericTextBox widget. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI NumericTextBox widget. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 
@@ -55,7 +51,7 @@ Represents the Kendo UI NumericTextBox widget. Inherits from [Widget](/kendo-ui/
 
 ### format `String`*(default: "n")*
 
- Specifies the format of the number. Any [valid number format](/kendo-ui/getting-started/framework/globalization/numberformatting) is allowed.
+ Specifies the format of the number. Any [valid number format](/getting-started/framework/globalization/numberformatting) is allowed.
 
 #### Example
 

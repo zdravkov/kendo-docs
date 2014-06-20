@@ -1,8 +1,5 @@
 ---
-title: sparkline-chartArea
-slug: jsp-sparkline-chartArea
-tags: api, java
-publish: true
+nav_title: sparkline-chartArea
 ---
 
 # \<kendo:sparkline-chartArea\>
@@ -64,7 +61,7 @@ The width of the chart area.
 
 The border of the chart area.
 
-More documentation is available at [kendo:sparkline-chartArea-border](/kendo-ui/api/wrappers/jsp/sparkline/chartarea-border).
+More documentation is available at [kendo:sparkline-chartArea-border](/api/wrappers/jsp/sparkline/chartarea-border).
 
 #### Example
 

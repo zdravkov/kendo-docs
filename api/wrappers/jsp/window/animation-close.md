@@ -1,8 +1,5 @@
 ---
-title: window-animation-close
-slug: jsp-window-animation-close
-tags: api, java
-publish: true
+nav_title: window-animation-close
 ---
 
 # \<kendo:window-animation-close\>

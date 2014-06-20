@@ -1,8 +1,5 @@
 ---
-title: ChartCategoryAxisItemTitleMargin
-slug: php-dataviz-ui-chartcategoryaxisitemtitlemargin
-tags: api, php
-publish: true
+nav_title: ChartCategoryAxisItemTitleMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemTitleMargin

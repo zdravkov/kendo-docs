@@ -1,8 +1,5 @@
 ---
-title: WindowPosition
-slug: php-ui-windowposition
-tags: api, php
-publish: true
+nav_title: WindowPosition
 ---
 
 # \Kendo\UI\WindowPosition

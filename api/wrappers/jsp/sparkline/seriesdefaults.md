@@ -1,8 +1,5 @@
 ---
-title: sparkline-seriesDefaults
-slug: jsp-sparkline-seriesDefaults
-tags: api, java
-publish: true
+nav_title: sparkline-seriesDefaults
 ---
 
 # \<kendo:sparkline-seriesDefaults\>
@@ -107,7 +104,7 @@ The type of the series. Available types:
 
 The border of the series.
 
-More documentation is available at [kendo:sparkline-seriesDefaults-border](/kendo-ui/api/wrappers/jsp/sparkline/seriesdefaults-border).
+More documentation is available at [kendo:sparkline-seriesDefaults-border](/api/wrappers/jsp/sparkline/seriesdefaults-border).
 
 #### Example
 
@@ -119,7 +116,7 @@ More documentation is available at [kendo:sparkline-seriesDefaults-border](/kend
 
 Configures the series data labels.
 
-More documentation is available at [kendo:sparkline-seriesDefaults-labels](/kendo-ui/api/wrappers/jsp/sparkline/seriesdefaults-labels).
+More documentation is available at [kendo:sparkline-seriesDefaults-labels](/api/wrappers/jsp/sparkline/seriesdefaults-labels).
 
 #### Example
 
@@ -131,7 +128,7 @@ More documentation is available at [kendo:sparkline-seriesDefaults-labels](/kend
 
 A boolean value indicating if the series should be stacked.
 
-More documentation is available at [kendo:sparkline-seriesDefaults-stack](/kendo-ui/api/wrappers/jsp/sparkline/seriesdefaults-stack).
+More documentation is available at [kendo:sparkline-seriesDefaults-stack](/api/wrappers/jsp/sparkline/seriesdefaults-stack).
 
 #### Example
 
@@ -143,7 +140,7 @@ More documentation is available at [kendo:sparkline-seriesDefaults-stack](/kendo
 
 The data point tooltip configuration options.
 
-More documentation is available at [kendo:sparkline-seriesDefaults-tooltip](/kendo-ui/api/wrappers/jsp/sparkline/seriesdefaults-tooltip).
+More documentation is available at [kendo:sparkline-seriesDefaults-tooltip](/api/wrappers/jsp/sparkline/seriesdefaults-tooltip).
 
 #### Example
 

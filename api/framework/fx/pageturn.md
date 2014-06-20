@@ -1,7 +1,5 @@
 ---
-title: FX PageTurn
-slug: api-fx-pageturn
-publish: true
+nav_title: FX PageTurn
 ---
 
 # PageTurn

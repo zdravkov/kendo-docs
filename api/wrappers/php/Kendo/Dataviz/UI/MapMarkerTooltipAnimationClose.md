@@ -1,8 +1,5 @@
 ---
-title: MapMarkerTooltipAnimationClose
-slug: php-dataviz-ui-mapmarkertooltipanimationclose
-tags: api, php
-publish: true
+nav_title: MapMarkerTooltipAnimationClose
 ---
 
 # \Kendo\Dataviz\UI\MapMarkerTooltipAnimationClose

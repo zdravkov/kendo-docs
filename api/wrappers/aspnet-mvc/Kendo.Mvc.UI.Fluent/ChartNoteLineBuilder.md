@@ -1,7 +1,5 @@
 ---
-title:ChartNoteLineBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartnotelinebuilder
-publish:true
+nav_title: ChartNoteLineBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNoteLineBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the chart note line.
 
 
 
+
 ## Methods
 
-### Width(`System.Int32`)
+
+### Width(System.Int32)
 Sets the line width
 
 
@@ -34,7 +34,7 @@ The line width.
     %>
 
 
-### Color(`System.String`)
+### Color(System.String)
 Sets the line color
 
 
@@ -57,7 +57,7 @@ The line color.
     %>
 
 
-### Length(`System.Int32`)
+### Length(System.Int32)
 Sets the connectors padding
 
 

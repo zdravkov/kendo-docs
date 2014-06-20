@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-seriesItem-markers
-slug: jsp-stockChart-navigator-seriesItem-markers
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-seriesItem-markers
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-markers\>
@@ -63,7 +60,7 @@ The markers visibility.
 
 The border of the markers.
 
-More documentation is available at [kendo:stockChart-navigator-seriesItem-markers-border](/kendo-ui/api/wrappers/jsp/stockchart/navigator-seriesitem-markers-border).
+More documentation is available at [kendo:stockChart-navigator-seriesItem-markers-border](/api/wrappers/jsp/stockchart/navigator-seriesitem-markers-border).
 
 #### Example
 

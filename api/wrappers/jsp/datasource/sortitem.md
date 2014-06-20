@@ -1,8 +1,5 @@
 ---
-title: dataSource-sortItem
-slug: jsp-dataSource-sortItem
-tags: api, java
-publish: true
+nav_title: dataSource-sortItem
 ---
 
 # \<kendo:dataSource-sortItem\>

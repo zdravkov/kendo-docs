@@ -1,7 +1,5 @@
 ---
-title:MobileDetailButtonEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobiledetailbuttoneventbuilder
-publish:true
+nav_title: MobileDetailButtonEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileDetailButtonEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent API for configuring the Kendo MobileDetailButton for ASP.NET 
 
 
 
+
 ## Methods
 
-### Click(`System.String`)
+
+### Click(System.String)
 Fires when the user taps the button.
 
-For additional information check the [click](/kendo-ui/api/web/mobiledetailbutton#events-click) event documentation.
+For additional information check the [click](/api/web/mobiledetailbutton#events-click) event documentation.
 
 
 #### Parameters

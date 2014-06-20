@@ -1,8 +1,5 @@
 ---
-title: map-marker-tooltip-animation-open
-slug: jsp-map-marker-tooltip-animation-open
-tags: api, java
-publish: true
+nav_title: map-marker-tooltip-animation-open
 ---
 
 # \<kendo:map-marker-tooltip-animation-open\>

@@ -1,8 +1,5 @@
 ---
-title: rangeSlider-tooltip
-slug: jsp-rangeSlider-tooltip
-tags: api, java
-publish: true
+nav_title: rangeSlider-tooltip
 ---
 
 # \<kendo:rangeSlider-tooltip\>

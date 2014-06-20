@@ -1,13 +1,11 @@
 ---
-title:kendo.dataviz.diagram.Connection
-slug:api-dataviz-diagram-connection
-publish: true
+nav_title: kendo.dataviz.diagram.Connection
 ---
 
 # kendo.dataviz.diagram.Connection
 
 The Connection object is a visual link or connection in the graph or diagram.
-Connections are usually created by calling [connect](/kendo-ui/api/dataviz/diagram#methods-connect) on a Diagram instance.
+Connections are usually created by calling [connect](/api/dataviz/diagram#methods-connect) on a Diagram instance.
 
 ## Configuration
 

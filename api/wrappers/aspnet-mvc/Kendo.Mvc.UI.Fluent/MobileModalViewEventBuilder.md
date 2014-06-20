@@ -1,7 +1,5 @@
 ---
-title:MobileModalViewEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobilemodalvieweventbuilder
-publish:true
+nav_title: MobileModalViewEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileModalViewEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent API for configuring the Kendo MobileModalView for ASP.NET MVC
 
 
 
+
 ## Methods
 
-### Close(`System.String`)
+
+### Close(System.String)
 Fired when the mobile ModalView is closed by the user.
 
-For additional information check the [close](/kendo-ui/api/web/mobilemodalview#events-close) event documentation.
+For additional information check the [close](/api/web/mobilemodalview#events-close) event documentation.
 
 
 #### Parameters
@@ -26,10 +26,10 @@ The name of the JavaScript function that will handle the close event.
 
 
 
-### Init(`System.String`)
+### Init(System.String)
 Fired when the mobile ModalView and its child widgets are initialized.
 
-For additional information check the [init](/kendo-ui/api/web/mobilemodalview#events-init) event documentation.
+For additional information check the [init](/api/web/mobilemodalview#events-init) event documentation.
 
 
 #### Parameters
@@ -41,10 +41,10 @@ The name of the JavaScript function that will handle the init event.
 
 
 
-### Open(`System.String`)
+### Open(System.String)
 Fires when the ModalView is shown.
 
-For additional information check the [open](/kendo-ui/api/web/mobilemodalview#events-open) event documentation.
+For additional information check the [open](/api/web/mobilemodalview#events-open) event documentation.
 
 
 #### Parameters

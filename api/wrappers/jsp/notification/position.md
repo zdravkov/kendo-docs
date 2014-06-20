@@ -1,8 +1,5 @@
 ---
-title: notification-position
-slug: jsp-notification-position
-tags: api, java
-publish: true
+nav_title: notification-position
 ---
 
 # \<kendo:notification-position\>

@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemMinorGridLines
-slug: php-dataviz-ui-sparklinecategoryaxisitemminorgridlines
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemMinorGridLines
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemMinorGridLines

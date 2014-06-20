@@ -1,7 +1,5 @@
 ---
-title:MobileTabStripEventBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.mobiletabstripeventbuilder
-publish:true
+nav_title: MobileTabStripEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileTabStripEventBuilder
@@ -9,12 +7,14 @@ Defines the fluent API for configuring the Kendo MobileTabStrip for ASP.NET MVC 
 
 
 
+
 ## Methods
 
-### Select(`System.String`)
+
+### Select(System.String)
 Fires when tab is selected.
 
-For additional information check the [select](/kendo-ui/api/web/mobiletabstrip#events-select) event documentation.
+For additional information check the [select](/api/web/mobiletabstrip#events-select) event documentation.
 
 
 #### Parameters

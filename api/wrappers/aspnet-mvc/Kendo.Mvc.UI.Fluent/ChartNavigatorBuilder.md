@@ -1,7 +1,5 @@
 ---
-title:ChartNavigatorBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.chartnavigatorbuilder
-publish:true
+nav_title: ChartNavigatorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNavigatorBuilder
@@ -9,9 +7,11 @@ Defines the fluent interface for configuring the 1.
 
 
 
+
 ## Methods
 
-### Select(`System.Nullable<System.DateTime>,System.Nullable<System.DateTime>`)
+
+### Select(System.Nullable\<System.DateTime\>,System.Nullable\<System.DateTime\>)
 Sets the selection range
 
 
@@ -33,13 +33,13 @@ The selection range end.
     %>
 
 
-### Series(`System.Action<Kendo.Mvc.UI.Fluent.ChartSeriesFactory<T>>`)
+### Series(System.Action\<Kendo.Mvc.UI.Fluent.ChartSeriesFactory\<T\>\>)
 Defines the navigator series. At least one series should be configured.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSeriesFactory](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSeriesFactory)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartSeriesFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartSeriesFactory)<T>>
 The add action.
 
 
@@ -57,7 +57,7 @@ The add action.
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Sets the navigator visibility
 
 
@@ -82,13 +82,13 @@ The navigator visibility.
     %>
 
 
-### Hint(`System.Action<Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder>`)
+### Hint(System.Action\<Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder\>)
 Defines the navigator hint.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartNavigatorHintBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartNavigatorHintBuilder)>
 The add action.
 
 
@@ -106,14 +106,14 @@ The add action.
     %>
 
 
-### DataSource(`System.Action<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder<T>>`)
+### DataSource(System.Action\<Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder\<T\>\>)
 Data Source configuration for the Navigator.
             When configured, the Navigator will filter the main StockChart data source to the selected range.
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyAjaxDataSourceBuilder)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ReadOnlyAjaxDataSourceBuilder)<T>>
 Use the configurator to set different data binding options.
 
 
@@ -131,7 +131,7 @@ Use the configurator to set different data binding options.
     %>
 
 
-### DateField(`System.String`)
+### DateField(System.String)
 Sets the field used by the navigator date axes.
 
 
@@ -152,7 +152,7 @@ The date field.
     %>
 
 
-### AutoBind(`System.Boolean`)
+### AutoBind(System.Boolean)
 Enables or disables automatic binding.
 
 
@@ -179,20 +179,20 @@ Gets or sets a value indicating if the navigator
     %>
 
 
-### CategoryAxis(`System.Action<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder<T>>`)
+### CategoryAxis(System.Action\<Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder\<T\>\>)
 Configures the navigator category axis
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartCategoryAxisBuilder)<T>>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ChartCategoryAxisBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ChartCategoryAxisBuilder)<T>>
 The configurator
 
 
 
 
 
-### Pane(`System.Action<Kendo.Mvc.UI.Fluent.ChartPaneBuilder>`)
+### Pane(System.Action\<Kendo.Mvc.UI.Fluent.ChartPaneBuilder\>)
 Configures the a navigator pane.
 
 

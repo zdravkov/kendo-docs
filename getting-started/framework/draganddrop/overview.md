@@ -1,10 +1,7 @@
 ---
-title: Overview
-meta_title: Overview of DOM element Draggable functionality | Kendo UI Docs
-meta_description: Lear more for the draggable functionality on any DOM element and how to enable and initialize it. We guide you how to enable DOM to be a target for draggable elements.
-slug: gs-web-draggable-overview
-tags: getting-started,web
-publish: true
+nav_title: Overview
+title: Overview of DOM element Draggable functionality | Kendo UI Docs
+description: Lear more for the draggable functionality on any DOM element and how to enable and initialize it. We guide you how to enable DOM to be a target for draggable elements.
 ---
 
 # Draggable Overview

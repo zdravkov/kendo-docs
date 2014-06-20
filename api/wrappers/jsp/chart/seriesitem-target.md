@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-target
-slug: jsp-chart-seriesItem-target
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-target
 ---
 
 # \<kendo:chart-seriesItem-target\>
@@ -39,7 +36,7 @@ The target color.
 
 The border of the target.
 
-More documentation is available at [kendo:chart-seriesItem-target-border](/kendo-ui/api/wrappers/jsp/chart/seriesitem-target-border).
+More documentation is available at [kendo:chart-seriesItem-target-border](/api/wrappers/jsp/chart/seriesitem-target-border).
 
 #### Example
 
@@ -51,7 +48,7 @@ More documentation is available at [kendo:chart-seriesItem-target-border](/kendo
 
 The target line options.
 
-More documentation is available at [kendo:chart-seriesItem-target-line](/kendo-ui/api/wrappers/jsp/chart/seriesitem-target-line).
+More documentation is available at [kendo:chart-seriesItem-target-line](/api/wrappers/jsp/chart/seriesitem-target-line).
 
 #### Example
 

@@ -1,8 +1,5 @@
 ---
-title: stockChart-navigator-categoryAxisItem-notes-data
-slug: jsp-stockChart-navigator-categoryAxisItem-notes-data
-tags: api, java
-publish: true
+nav_title: stockChart-navigator-categoryAxisItem-notes-data
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-notes-data\>
@@ -23,7 +20,7 @@ The items of the notes.
 
 The items of the notes.
 
-More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem](/kendo-ui/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem).
+More documentation is available at [kendo:stockChart-navigator-categoryAxisItem-notes-dataItem](/api/wrappers/jsp/stockchart/navigator-categoryaxisitem-notes-dataitem).
 
 #### Example
 

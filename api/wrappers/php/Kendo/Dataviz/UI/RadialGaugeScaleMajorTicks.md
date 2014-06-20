@@ -1,8 +1,5 @@
 ---
-title: RadialGaugeScaleMajorTicks
-slug: php-dataviz-ui-radialgaugescalemajorticks
-tags: api, php
-publish: true
+nav_title: RadialGaugeScaleMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks

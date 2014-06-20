@@ -1,8 +1,5 @@
 ---
-title: panelBar-animation-expand
-slug: jsp-panelBar-animation-expand
-tags: api, java
-publish: true
+nav_title: panelBar-animation-expand
 ---
 
 # \<kendo:panelBar-animation-expand\>

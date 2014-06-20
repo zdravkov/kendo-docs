@@ -1,8 +1,5 @@
 ---
-title: MapControlsAttribution
-slug: php-dataviz-ui-mapcontrolsattribution
-tags: api, php
-publish: true
+nav_title: MapControlsAttribution
 ---
 
 # \Kendo\Dataviz\UI\MapControlsAttribution

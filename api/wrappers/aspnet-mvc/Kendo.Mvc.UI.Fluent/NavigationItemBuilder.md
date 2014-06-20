@@ -1,7 +1,5 @@
 ---
-title:NavigationItemBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.navigationitembuilder
-publish:true
+nav_title: NavigationItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.NavigationItemBuilder
@@ -9,7 +7,9 @@ Defines the fluent interface for configuring navigation items
 
 
 
+
 ## Methods
+
 
 ### ToItem
 Returns the inner navigation item
@@ -21,7 +21,7 @@ Returns the inner navigation item
 
 
 
-### HtmlAttributes(`System.Object`)
+### HtmlAttributes(System.Object)
 Sets the HTML attributes applied to the outer HTML element rendered for the item
 
 
@@ -40,7 +40,7 @@ The attributes.
     %>
 
 
-### HtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### HtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes applied to the outer HTML element rendered for the item
 
 
@@ -53,7 +53,7 @@ The attributes.
 
 
 
-### Text(`System.String`)
+### Text(System.String)
 Sets the text displayed by the item.
 
 
@@ -72,7 +72,7 @@ The value.
     %>
 
 
-### Visible(`System.Boolean`)
+### Visible(System.Boolean)
 Makes the item visible or not. Invisible items are not rendered in the output HTML.
 
 
@@ -91,7 +91,7 @@ The value.
     %>
 
 
-### Enabled(`System.Boolean`)
+### Enabled(System.Boolean)
 Enables or disables the item. Disabled item cannot be clicked, expanded or open (depending on the item type - menu, tabstrip, panelbar).
 
 
@@ -104,7 +104,7 @@ Enables or disables the item. Disabled item cannot be clicked, expanded or open 
     %>
 
 
-### Selected(`System.Boolean`)
+### Selected(System.Boolean)
 Selects or unselects the item. By default items are not selected.
 
 
@@ -117,7 +117,7 @@ Selects or unselects the item. By default items are not selected.
     %>
 
 
-### Route(`System.String,System.Web.Routing.RouteValueDictionary`)
+### Route(System.String,System.Web.Routing.RouteValueDictionary)
 Sets the route to which the item should navigate.
 
 
@@ -139,7 +139,7 @@ The route values.
     %>
 
 
-### Route(`System.String,System.Object`)
+### Route(System.String,System.Object)
 Sets the route to which the item should navigate.
 
 
@@ -161,7 +161,7 @@ The route values.
     %>
 
 
-### Route(`System.String`)
+### Route(System.String)
 Sets the route to which the item should navigate.
 
 
@@ -180,7 +180,7 @@ Name of the route.
     %>
 
 
-### Action(`System.Web.Routing.RouteValueDictionary`)
+### Action(System.Web.Routing.RouteValueDictionary)
 Sets the action to which the item should navigate
 
 
@@ -199,7 +199,7 @@ The route values of the Action method.
     %>
 
 
-### Action(`System.String,System.String,System.Web.Routing.RouteValueDictionary`)
+### Action(System.String,System.String,System.Web.Routing.RouteValueDictionary)
 Sets the action to which the item should navigate
 
 
@@ -224,7 +224,7 @@ The route values.
     %>
 
 
-### Action(`System.String,System.String,System.Object`)
+### Action(System.String,System.String,System.Object)
 Sets the action to which the item should navigate
 
 
@@ -249,7 +249,7 @@ The route values.
     %>
 
 
-### Action(`System.String,System.String`)
+### Action(System.String,System.String)
 Sets the action to which the item should navigate
 
 
@@ -271,7 +271,7 @@ Name of the controller.
     %>
 
 
-### Url(`System.String`)
+### Url(System.String)
 Sets the URL to which the item should navigate
 
 
@@ -290,7 +290,7 @@ The value.
     %>
 
 
-### ImageUrl(`System.String`)
+### ImageUrl(System.String)
 Sets the URL of the image that should be displayed by the item.
 
 
@@ -309,7 +309,7 @@ The value.
     %>
 
 
-### ImageHtmlAttributes(`System.Object`)
+### ImageHtmlAttributes(System.Object)
 Sets the HTML attributes for the item image.
 
 
@@ -331,7 +331,7 @@ The attributes.
     %>
 
 
-### ImageHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### ImageHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes for the item image.
 
 
@@ -344,7 +344,7 @@ The attributes.
 
 
 
-### SpriteCssClasses(`System.String[]`)
+### SpriteCssClasses(System.String[])
 Sets the sprite CSS class names.
 
 
@@ -365,7 +365,7 @@ The CSS classes.
     %>
 
 
-### Content(`System.Action`)
+### Content(System.Action)
 Sets the HTML content which the item should display.
 
 
@@ -378,7 +378,7 @@ The action which renders the content.
 
 
 
-### Content(`System.Func<System.Object,System.Object>`)
+### Content(System.Func\<System.Object,System.Object\>)
 Sets the HTML content which the item should display.
 
 
@@ -391,7 +391,7 @@ The content wrapped in a regular HTML tag or text tag (Razor syntax).
 
 
 
-### Content(`System.String`)
+### Content(System.String)
 Sets the HTML content which the item should display as a string.
 
 
@@ -404,7 +404,7 @@ The action which renders the content.
 
 
 
-### ContentHtmlAttributes(`System.Object`)
+### ContentHtmlAttributes(System.Object)
 Sets the HTML attributes of the content element of the item.
 
 
@@ -427,7 +427,7 @@ The attributes.
     %>
 
 
-### ContentHtmlAttributes(`System.Collections.Generic.IDictionary<System.String,System.Object>`)
+### ContentHtmlAttributes(System.Collections.Generic.IDictionary\<System.String,System.Object\>)
 Sets the HTML attributes of the content element of the item.
 
 
@@ -440,7 +440,7 @@ The attributes.
 
 
 
-### Action(`System.Linq.Expressions.Expression<System.Action<T1>>`)
+### Action(System.Linq.Expressions.Expression\<System.Action\<T1\>\>)
 Makes the item navigate to the specified controllerAction method.
 
 
@@ -462,7 +462,7 @@ The action.
     %>
 
 
-### Encoded(`System.Boolean`)
+### Encoded(System.Boolean)
 Sets whether the Text property should be encoded when the item is rendered.
 
 

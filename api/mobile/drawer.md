@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.Drawer
-meta_title: Configuration, methods and events of Kendo UI Mobile Drawer
-meta_description: Set direction of the Kendo UI Mobile Drawer container, use methods to show and hide it.
-slug: api-mobile-drawer
-relatedDocs: gs-mobile-drawer
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.Drawer
+title: Configuration, methods and events of Kendo UI Mobile Drawer
+description: Set direction of the Kendo UI Mobile Drawer container, use methods to show and hide it.
 ---
 
 # kendo.mobile.ui.Drawer
 
-Represents the Kendo UI Mobile Drawer widget. Inherits from [kendo.mobile.ui.View](/kendo-ui/api/framework/view).
+Represents the Kendo UI Mobile Drawer widget. Inherits from [kendo.mobile.ui.View](/api/framework/view).
 
 ## Configuration
 

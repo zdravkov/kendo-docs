@@ -1,8 +1,5 @@
 ---
-title: map-layer-style-fill
-slug: jsp-map-layer-style-fill
-tags: api, java
-publish: true
+nav_title: map-layer-style-fill
 ---
 
 # \<kendo:map-layer-style-fill\>

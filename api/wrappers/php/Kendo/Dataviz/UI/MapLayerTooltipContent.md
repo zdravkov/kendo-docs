@@ -1,8 +1,5 @@
 ---
-title: MapLayerTooltipContent
-slug: php-dataviz-ui-maplayertooltipcontent
-tags: api, php
-publish: true
+nav_title: MapLayerTooltipContent
 ---
 
 # \Kendo\Dataviz\UI\MapLayerTooltipContent

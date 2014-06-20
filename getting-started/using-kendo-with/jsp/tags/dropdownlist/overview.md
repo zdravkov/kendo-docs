@@ -1,23 +1,21 @@
 ---
-title: Overview
-slug: jsp-dropdownlist-overview
-publish: true
+nav_title: Overview
 ---
 
 # DropDownList
 
-The DropDownList JSP tag is a server-side wrapper for the [Kendo UI DropDownList](/kendo-ui/api/web/dropdownlist) widget.
+The DropDownList JSP tag is a server-side wrapper for the [Kendo UI DropDownList](/api/web/dropdownlist) widget.
 
 ## Getting Started
 
 There are two ways to bind a Kendo DropDownList:
 
 *   **server** - the data will be serialized to the client. No Ajax requests will be made.
-*   **ajax** - the dropdownlist will make ajax request to get the data. [Here](/kendo-ui/getting-started/using-kendo-with/jsp/tags/dropdownlist/ajax-binding) you can find more information about this binding.
+*   **ajax** - the dropdownlist will make ajax request to get the data. [Here](/getting-started/using-kendo-with/jsp/tags/dropdownlist/ajax-binding) you can find more information about this binding.
 
 Here is how to configure the Kendo DropDownList for binding to a data passed as model attribute in Spring MVC:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/jsp/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/jsp/introduction) help topic.
 
 2.  Create a new action method and pass the Products table to the View:
 
@@ -41,7 +39,7 @@ Here is how to configure the Kendo DropDownList for binding to a data passed as 
 ## Accessing an Existing DropDownList
 
 You can reference an existing DropDownList instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/dropdownlist#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/dropdownlist#methods) to control its behavior.
 
 ### Accessing an existing DropDownList instance
 
@@ -55,7 +53,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/d
 
 ## Handling Kendo UI DropDownList events
 
-You can subscribe to all [events](/kendo-ui/api/web/dropdownlist#events) exposed by Kendo UI dropdownlist:
+You can subscribe to all [events](/api/web/dropdownlist#events) exposed by Kendo UI dropdownlist:
 
 ### Subscribe by handler name
 

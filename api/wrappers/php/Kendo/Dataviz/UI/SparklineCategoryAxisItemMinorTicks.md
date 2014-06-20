@@ -1,8 +1,5 @@
 ---
-title: SparklineCategoryAxisItemMinorTicks
-slug: php-dataviz-ui-sparklinecategoryaxisitemminorticks
-tags: api, php
-publish: true
+nav_title: SparklineCategoryAxisItemMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemMinorTicks

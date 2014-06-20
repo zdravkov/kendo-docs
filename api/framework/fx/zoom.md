@@ -1,7 +1,5 @@
 ---
-title: FX Zoom
-slug: api-fx-zoom
-publish: true
+nav_title: FX Zoom
 ---
 
 # Zoom

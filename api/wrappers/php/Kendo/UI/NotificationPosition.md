@@ -1,8 +1,5 @@
 ---
-title: NotificationPosition
-slug: php-ui-notificationposition
-tags: api, php
-publish: true
+nav_title: NotificationPosition
 ---
 
 # \Kendo\UI\NotificationPosition

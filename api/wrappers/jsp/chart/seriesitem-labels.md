@@ -1,8 +1,5 @@
 ---
-title: chart-seriesItem-labels
-slug: jsp-chart-seriesItem-labels
-tags: api, java
-publish: true
+nav_title: chart-seriesItem-labels
 ---
 
 # \<kendo:chart-seriesItem-labels\>
@@ -111,7 +108,7 @@ If set to true the chart will display the series labels. By default chart series
 
 The border of the labels.
 
-More documentation is available at [kendo:chart-seriesItem-labels-border](/kendo-ui/api/wrappers/jsp/chart/seriesitem-labels-border).
+More documentation is available at [kendo:chart-seriesItem-labels-border](/api/wrappers/jsp/chart/seriesitem-labels-border).
 
 #### Example
 
@@ -123,7 +120,7 @@ More documentation is available at [kendo:chart-seriesItem-labels-border](/kendo
 
 The margin of the labels. A numeric value will set all margins.
 
-More documentation is available at [kendo:chart-seriesItem-labels-margin](/kendo-ui/api/wrappers/jsp/chart/seriesitem-labels-margin).
+More documentation is available at [kendo:chart-seriesItem-labels-margin](/api/wrappers/jsp/chart/seriesitem-labels-margin).
 
 #### Example
 
@@ -135,7 +132,7 @@ More documentation is available at [kendo:chart-seriesItem-labels-margin](/kendo
 
 The padding of the labels. A numeric value will set all paddings.
 
-More documentation is available at [kendo:chart-seriesItem-labels-padding](/kendo-ui/api/wrappers/jsp/chart/seriesitem-labels-padding).
+More documentation is available at [kendo:chart-seriesItem-labels-padding](/api/wrappers/jsp/chart/seriesitem-labels-padding).
 
 #### Example
 

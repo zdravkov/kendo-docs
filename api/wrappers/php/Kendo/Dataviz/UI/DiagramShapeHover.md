@@ -1,8 +1,5 @@
 ---
-title: DiagramShapeHover
-slug: php-dataviz-ui-diagramshapehover
-tags: api, php
-publish: true
+nav_title: DiagramShapeHover
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeHover

@@ -1,7 +1,5 @@
 ---
-title:ProgressBarBuilder
-slug:aspnetmvc-kendo.mvc.ui.fluent.progressbarbuilder
-publish:true
+nav_title: ProgressBarBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ProgressBarBuilder
@@ -9,9 +7,11 @@ Define the fluent interface for configuring the ProgressBar component.
 
 
 
+
 ## Methods
 
-### Animation(`System.Boolean`)
+
+### Animation(System.Boolean)
 Use to enable or disable the animation.
 
 
@@ -30,13 +30,13 @@ The boolean value.
     %>
 
 
-### Animation(`System.Action<Kendo.Mvc.UI.Fluent.ProgressBarAnimationBuilder>`)
+### Animation(System.Action\<Kendo.Mvc.UI.Fluent.ProgressBarAnimationBuilder\>)
 Configures the animation effects.
 
 
 #### Parameters
 
-##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.ProgressBarAnimationBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ProgressBarAnimationBuilder)>
+##### animationAction System.Action<[Kendo.Mvc.UI.Fluent.ProgressBarAnimationBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ProgressBarAnimationBuilder)>
 The action which configures the animation effects.
 
 
@@ -49,7 +49,7 @@ The action which configures the animation effects.
     %>
 
 
-### ChunkCount(`System.Int32`)
+### ChunkCount(System.Int32)
 Sets the number of chunks to which the ProgressBar will be divided (applies only when type is "chunk")
 
 
@@ -69,7 +69,7 @@ The number of chunks
     %>
 
 
-### Enable(`System.Boolean`)
+### Enable(System.Boolean)
 Enables or disables the component
 
 
@@ -88,13 +88,13 @@ true if the component should be enabled, false otherwise; the default is true.
     %>
 
 
-### Events(`System.Action<Kendo.Mvc.UI.Fluent.ProgressBarEventBuilder>`)
+### Events(System.Action\<Kendo.Mvc.UI.Fluent.ProgressBarEventBuilder\>)
 Configures the client-side events
 
 
 #### Parameters
 
-##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ProgressBarEventBuilder](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ProgressBarEventBuilder)>
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.ProgressBarEventBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/ProgressBarEventBuilder)>
 The client events configuration action.
 
 
@@ -108,7 +108,7 @@ The client events configuration action.
     %>
 
 
-### Max(`System.Double`)
+### Max(System.Double)
 Sets the maximum value of the ProgressBar
 
 
@@ -127,7 +127,7 @@ Number specifying the maximum value
     %>
 
 
-### Min(`System.Double`)
+### Min(System.Double)
 Sets the minimum value of the ProgressBar
 
 
@@ -146,13 +146,13 @@ Number specifying the minimum value
     %>
 
 
-### Orientation(`Kendo.Mvc.UI.ProgressBarOrientation`)
+### Orientation(Kendo.Mvc.UI.ProgressBarOrientation)
 Sets the orientation of the ProgressBar
 
 
 #### Parameters
 
-##### orientation [Kendo.Mvc.UI.ProgressBarOrientation](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ProgressBarOrientation)
+##### orientation [Kendo.Mvc.UI.ProgressBarOrientation](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ProgressBarOrientation)
 ProgressBarOrientation enumeration specifying the orientation
 
 
@@ -165,7 +165,7 @@ ProgressBarOrientation enumeration specifying the orientation
     %>
 
 
-### Reverse(`System.Boolean`)
+### Reverse(System.Boolean)
 Specifies if the ProgressBar direction will be reversed
 
 
@@ -184,7 +184,7 @@ The boolean value
     %>
 
 
-### ShowStatus(`System.Boolean`)
+### ShowStatus(System.Boolean)
 Specifies if the Progress status will be displayed
 
 
@@ -203,13 +203,13 @@ The boolean value
     %>
 
 
-### Type(`Kendo.Mvc.UI.ProgressBarType`)
+### Type(Kendo.Mvc.UI.ProgressBarType)
 Specifies the type of the ProgressBar
 
 
 #### Parameters
 
-##### type [Kendo.Mvc.UI.ProgressBarType](/kendo-ui/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ProgressBarType)
+##### type [Kendo.Mvc.UI.ProgressBarType](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ProgressBarType)
 ProgressBarType enumeration specifying the type
 
 
@@ -222,7 +222,7 @@ ProgressBarType enumeration specifying the type
     %>
 
 
-### Value(`System.Double`)
+### Value(System.Double)
 Sets the initial value of the ProgressBar
 
 
@@ -243,7 +243,7 @@ Number specifying the value
     %>
 
 
-### Value(`System.Boolean`)
+### Value(System.Boolean)
 Sets the initial value of the ProgressBar
 
 

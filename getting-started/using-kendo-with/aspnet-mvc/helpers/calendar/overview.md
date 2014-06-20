@@ -1,20 +1,18 @@
 ---
-title: Overview
-meta_title: Calendar HtmlHelper extension for Kendo UI Calendar widget | Kendo UI documentation
-meta_description: Getting started with Calendar HtmlHelper extension in quick steps - configure Kendo UI Calendar widget and operate Kendo UI Calendar events.
-slug: mvc-calendar-overview
-publish: true
+nav_title: Overview
+title: Calendar HtmlHelper extension for Kendo UI Calendar widget | Kendo UI documentation
+description: Getting started with Calendar HtmlHelper extension in quick steps - configure Kendo UI Calendar widget and operate Kendo UI Calendar events.
 ---
 
 # Calendar
 
-The Calendar HtmlHelper extension is a server-side wrapper for the [Kendo UI Calendar](/kendo-ui/api/web/calendar) widget.
+The Calendar HtmlHelper extension is a server-side wrapper for the [Kendo UI Calendar](/api/web/calendar) widget.
 
 ## Getting Started
 
 Here is how to configure a simple Kendo Calendar:
 
-1.  Make sure you have followed all the steps from the [Introduction](/kendo-ui/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
+1.  Make sure you have followed all the steps from the [Introduction](/getting-started/using-kendo-with/aspnet-mvc/introduction) help topic.
 
 2.  Create a new action method which renders the view:
 
@@ -43,7 +41,7 @@ Here is how to configure a simple Kendo Calendar:
 ## Accessing an Existing Calendar
 
 You can reference an existing Calendar instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/web/calendar#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/web/calendar#methods) to control its behavior.
 
 
 
@@ -60,7 +58,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/web/c
 
 ## Handling Kendo UI Calendar events
 
-You can subscribe to all [events](/kendo-ui/api/web/calendar#events) exposed by Kendo UI Calendar:
+You can subscribe to all [events](/api/web/calendar#events) exposed by Kendo UI Calendar:
 
 
 

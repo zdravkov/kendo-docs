@@ -1,8 +1,5 @@
 ---
-title: chart-yAxisItem-notes-dataItem-label
-slug: jsp-chart-yAxisItem-notes-dataItem-label
-tags: api, java
-publish: true
+nav_title: chart-yAxisItem-notes-dataItem-label
 ---
 
 # \<kendo:chart-yAxisItem-notes-dataItem-label\>
@@ -95,7 +92,7 @@ If set to true the chart will display the y axis notes label. By default the y a
 
 The border of the label.
 
-More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-label-border](/kendo-ui/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-label-border).
+More documentation is available at [kendo:chart-yAxisItem-notes-dataItem-label-border](/api/wrappers/jsp/chart/yaxisitem-notes-dataitem-label-border).
 
 #### Example
 

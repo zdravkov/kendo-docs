@@ -1,8 +1,5 @@
 ---
-title: TreeViewCheckboxes
-slug: php-ui-treeviewcheckboxes
-tags: api, php
-publish: true
+nav_title: TreeViewCheckboxes
 ---
 
 # \Kendo\UI\TreeViewCheckboxes

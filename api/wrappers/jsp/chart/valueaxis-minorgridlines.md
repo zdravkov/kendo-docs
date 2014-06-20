@@ -1,8 +1,5 @@
 ---
-title: chart-valueAxis-minorGridLines
-slug: jsp-chart-valueAxis-minorGridLines
-tags: api, java
-publish: true
+nav_title: chart-valueAxis-minorGridLines
 ---
 
 # \<kendo:chart-valueAxis-minorGridLines\>

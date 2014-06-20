@@ -1,8 +1,5 @@
 ---
-title: DataSourceTransportCreate
-slug: php-data-datasourcetransportcreate
-tags: api, php
-publish: true
+nav_title: DataSourceTransportCreate
 ---
 
 # \Kendo\Data\DataSourceTransportCreate

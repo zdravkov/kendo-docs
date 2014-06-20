@@ -1,8 +1,5 @@
 ---
-title: ChartPlotAreaMargin
-slug: php-dataviz-ui-chartplotareamargin
-tags: api, php
-publish: true
+nav_title: ChartPlotAreaMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartPlotAreaMargin

@@ -1,8 +1,5 @@
 ---
-title: ChartLegendInactiveItems
-slug: php-dataviz-ui-chartlegendinactiveitems
-tags: api, php
-publish: true
+nav_title: ChartLegendInactiveItems
 ---
 
 # \Kendo\Dataviz\UI\ChartLegendInactiveItems
@@ -24,7 +21,7 @@ The chart legend label configuration.
 ##### $value `\Kendo\Dataviz\UI\ChartLegendInactiveItemsLabels|array`
 
 
-#### Example - using [\Kendo\Dataviz\UI\ChartLegendInactiveItemsLabels](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/ChartLegendInactiveItemsLabels)
+#### Example - using [\Kendo\Dataviz\UI\ChartLegendInactiveItemsLabels](/api/wrappers/php/Kendo/Dataviz/UI/ChartLegendInactiveItemsLabels)
     <?php
     $inactiveItems = new \Kendo\Dataviz\UI\ChartLegendInactiveItems();
     $labels = new \Kendo\Dataviz\UI\ChartLegendInactiveItemsLabels();

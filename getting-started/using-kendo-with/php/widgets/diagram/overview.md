@@ -1,22 +1,20 @@
 ---
-title: Overview
-meta_title: How to use Diagram PHP class | Kendo UI documentation
-meta_description: User Guide for server-side wrapper for Kendo UI Diagram for PHP.
-slug: php-diagram-overview
-publish: true
+nav_title: Overview
+title: How to use Diagram PHP class | Kendo UI documentation
+description: User Guide for server-side wrapper for Kendo UI Diagram for PHP.
 ---
 
 # Diagram
 
-The Diagram for PHP is a server-side wrapper for the [Kendo UI Diagram](/kendo-ui/api/dataviz/diagram) widget.
+The Diagram for PHP is a server-side wrapper for the [Kendo UI Diagram](/api/dataviz/diagram) widget.
 
 ## Getting Started
 
-You can populate a Kendo Diagram for PHP with [remote binding](/kendo-ui/getting-started/using-kendo-with/php/widgets/chart/remote-binding). The Diagram makes AJAX requests and is bound to JSON result
+You can populate a Kendo Diagram for PHP with [remote binding](/getting-started/using-kendo-with/php/widgets/chart/remote-binding). The Diagram makes AJAX requests and is bound to JSON result
 
 Here is how to configure the Kendo Diagram with ajax binding:
 
-1. Follow the steps from the [introduction](/kendo-ui/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
+1. Follow the steps from the [introduction](/getting-started/using-kendo-with/php/introduction) - include the autoloader, JavaScript and CSS files.
 
 1. Create a data source and configure it:
 
@@ -57,7 +55,7 @@ Here is how to configure the Kendo Diagram with ajax binding:
 ## Accessing an Existing Diagram
 
 You can reference an existing diagram instance via [jQuery.data()](http://api.jquery.com/jQuery.data/).
-Once a reference has been established, you can use the [API](/kendo-ui/api/dataviz/diagram#methods) to control its behavior.
+Once a reference has been established, you can use the [API](/api/dataviz/diagram#methods) to control its behavior.
 
 ### Accessing an existing Diagram instance
 
@@ -72,7 +70,7 @@ Once a reference has been established, you can use the [API](/kendo-ui/api/datav
 
 ## Handling Kendo UI Diagram events
 
-You can subscribe to all [events](/kendo-ui/api/dataviz/diagram#events) exposed by Kendo UI Diagram:
+You can subscribe to all [events](/api/dataviz/diagram#events) exposed by Kendo UI Diagram:
 
 ### Example - subscribing by specifying JavaScript function name
 

@@ -1,8 +1,5 @@
 ---
-title: chart-categoryAxisItem-notes-dataItem
-slug: jsp-chart-categoryAxisItem-notes-dataItem
-tags: api, java
-publish: true
+nav_title: chart-categoryAxisItem-notes-dataItem
 ---
 
 # \<kendo:chart-categoryAxisItem-notes-dataItem\>
@@ -39,7 +36,7 @@ The value of the note.
 
 The icon of the note.
 
-More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-icon](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-icon).
+More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-icon](/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-icon).
 
 #### Example
 
@@ -51,7 +48,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-
 
 The label of the note.
 
-More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-label](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-label).
+More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-label](/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-label).
 
 #### Example
 
@@ -63,7 +60,7 @@ More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-
 
 The line of the note.
 
-More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-line](/kendo-ui/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-line).
+More documentation is available at [kendo:chart-categoryAxisItem-notes-dataItem-line](/api/wrappers/jsp/chart/categoryaxisitem-notes-dataitem-line).
 
 #### Example
 

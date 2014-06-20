@@ -1,7 +1,5 @@
 ---
-title: Appearance and styling
-slug: dataviz-appearance-and-styling
-publish: true
+nav_title: Appearance and styling
 ---
 
 # Appearance and Styling

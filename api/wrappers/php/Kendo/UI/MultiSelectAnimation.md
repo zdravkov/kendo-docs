@@ -1,8 +1,5 @@
 ---
-title: MultiSelectAnimation
-slug: php-ui-multiselectanimation
-tags: api, php
-publish: true
+nav_title: MultiSelectAnimation
 ---
 
 # \Kendo\UI\MultiSelectAnimation
@@ -24,7 +21,7 @@ A PHP class representing the animation setting of MultiSelect.
 ##### $value `\Kendo\UI\MultiSelectAnimationClose|array`
 
 
-#### Example - using [\Kendo\UI\MultiSelectAnimationClose](/kendo-ui/api/wrappers/php/Kendo/UI/MultiSelectAnimationClose)
+#### Example - using [\Kendo\UI\MultiSelectAnimationClose](/api/wrappers/php/Kendo/UI/MultiSelectAnimationClose)
     <?php
     $animation = new \Kendo\UI\MultiSelectAnimation();
     $close = new \Kendo\UI\MultiSelectAnimationClose();
@@ -53,7 +50,7 @@ The animation played when the suggestion popup is opened.
 ##### $value `\Kendo\UI\MultiSelectAnimationOpen|array`
 
 
-#### Example - using [\Kendo\UI\MultiSelectAnimationOpen](/kendo-ui/api/wrappers/php/Kendo/UI/MultiSelectAnimationOpen)
+#### Example - using [\Kendo\UI\MultiSelectAnimationOpen](/api/wrappers/php/Kendo/UI/MultiSelectAnimationOpen)
     <?php
     $animation = new \Kendo\UI\MultiSelectAnimation();
     $open = new \Kendo\UI\MultiSelectAnimationOpen();

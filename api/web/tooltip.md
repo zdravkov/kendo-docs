@@ -1,15 +1,11 @@
 ---
-title: kendo.ui.Tooltip
-meta_title: Configuration, methods and events of Kendo UI Tooltip
-slug: api-web-tooltip
-relatedDocs: gs-web-tooltip-overview
-tags: api,web
-publish: true
+nav_title: kendo.ui.Tooltip
+title: Configuration, methods and events of Kendo UI Tooltip
 ---
 
 # kendo.ui.Tooltip
 
-Represents the Kendo UI Tooltip. Inherits from [Widget](/kendo-ui/api/framework/widget).
+Represents the Kendo UI Tooltip. Inherits from [Widget](/api/framework/widget).
 
 ## Configuration
 

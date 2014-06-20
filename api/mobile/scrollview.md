@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.ScrollView
-meta_title: Configuration, methods and events of Kendo UI Mobile ScrollView
-meta_description: You will learn how to configure Mobile ScrollView widget, update the scrollview HTML content and scroll to a given page by using methods.
-slug: api-mobile-scrollview
-relatedDocs: gs-mobile-scrollview
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.ScrollView
+title: Configuration, methods and events of Kendo UI Mobile ScrollView
+description: You will learn how to configure Mobile ScrollView widget, update the scrollview HTML content and scroll to a given page by using methods.
 ---
 
 # kendo.mobile.ui.ScrollView
 
-Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile ScrollView widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 

@@ -1,8 +1,5 @@
 ---
-title: StockChartNavigatorCategoryAxisItemAutoBaseUnitSteps
-slug: php-dataviz-ui-stockchartnavigatorcategoryaxisitemautobaseunitsteps
-tags: api, php
-publish: true
+nav_title: StockChartNavigatorCategoryAxisItemAutoBaseUnitSteps
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemAutoBaseUnitSteps

@@ -1,13 +1,10 @@
 ---
-title: kendo.ui.Touch
-slug: mobile-kendo.ui.touch
-tags: api,mobile
-publish: true
+nav_title: kendo.ui.Touch
 ---
 
 # kendo.ui.Touch
 
-The kendo Touch widget exposes a cross-platform compatible API for handling user-initiated touch events, multi-touch gestures and event sequences (drag, swipe, etc.). Inherits from [Widget](/kendo-ui/api/framework/widget).
+The kendo Touch widget exposes a cross-platform compatible API for handling user-initiated touch events, multi-touch gestures and event sequences (drag, swipe, etc.). Inherits from [Widget](/api/framework/widget).
 
 > Unlike most mobile widgets, the Touch widget does not need an active mobile application instance.
 

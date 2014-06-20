@@ -1,8 +1,5 @@
 ---
-title: ChartPaneBorder
-slug: php-dataviz-ui-chartpaneborder
-tags: api, php
-publish: true
+nav_title: ChartPaneBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartPaneBorder

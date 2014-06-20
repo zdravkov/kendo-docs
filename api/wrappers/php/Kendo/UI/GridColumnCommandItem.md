@@ -1,8 +1,5 @@
 ---
-title: GridColumnCommandItem
-slug: php-ui-gridcolumncommanditem
-tags: api, php
-publish: true
+nav_title: GridColumnCommandItem
 ---
 
 # \Kendo\UI\GridColumnCommandItem

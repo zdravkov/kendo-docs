@@ -1,8 +1,5 @@
 ---
-title: radialGauge-gaugeArea
-slug: jsp-radialGauge-gaugeArea
-tags: api, java
-publish: true
+nav_title: radialGauge-gaugeArea
 ---
 
 # \<kendo:radialGauge-gaugeArea\>
@@ -59,7 +56,7 @@ and horizontal gauge is 200px.
 
 The border of the gauge area.
 
-More documentation is available at [kendo:radialGauge-gaugeArea-border](/kendo-ui/api/wrappers/jsp/radialgauge/gaugearea-border).
+More documentation is available at [kendo:radialGauge-gaugeArea-border](/api/wrappers/jsp/radialgauge/gaugearea-border).
 
 #### Example
 

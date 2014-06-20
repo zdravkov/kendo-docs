@@ -1,8 +1,5 @@
 ---
-title: grid-filterable-operators-enums
-slug: jsp-grid-filterable-operators-enums
-tags: api, java
-publish: true
+nav_title: grid-filterable-operators-enums
 ---
 
 # \<kendo:grid-filterable-operators-enums\>

@@ -1,8 +1,5 @@
 ---
-title: chart-xAxisItem-majorTicks
-slug: jsp-chart-xAxisItem-majorTicks
-tags: api, java
-publish: true
+nav_title: chart-xAxisItem-majorTicks
 ---
 
 # \<kendo:chart-xAxisItem-majorTicks\>

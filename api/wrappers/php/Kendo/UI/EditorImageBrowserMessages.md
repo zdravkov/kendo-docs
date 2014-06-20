@@ -1,8 +1,5 @@
 ---
-title: EditorImageBrowserMessages
-slug: php-ui-editorimagebrowsermessages
-tags: api, php
-publish: true
+nav_title: EditorImageBrowserMessages
 ---
 
 # \Kendo\UI\EditorImageBrowserMessages

@@ -1,8 +1,5 @@
 ---
-title: editor-imageBrowser-transport-create
-slug: jsp-editor-imageBrowser-transport-create
-tags: api, java
-publish: true
+nav_title: editor-imageBrowser-transport-create
 ---
 
 # \<kendo:editor-imageBrowser-transport-create\>

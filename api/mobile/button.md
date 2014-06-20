@@ -1,16 +1,12 @@
 ---
-title: kendo.mobile.ui.Button
-meta_title: Configuration, methods and events of Kendo UI Mobile Button
-meta_description: Find which events to use in Mobile Button Widget.
-slug: api-mobile-button
-relatedDocs: gs-mobile-button
-tags: api,mobile
-publish: true
+nav_title: kendo.mobile.ui.Button
+title: Configuration, methods and events of Kendo UI Mobile Button
+description: Find which events to use in Mobile Button Widget.
 ---
 
 # kendo.mobile.ui.Button
 
-Represents the Kendo UI Mobile Button widget. Inherits from [kendo.mobile.ui.Widget](/kendo-ui/api/framework/mobilewidget).
+Represents the Kendo UI Mobile Button widget. Inherits from [kendo.mobile.ui.Widget](/api/framework/mobilewidget).
 
 ## Configuration
 

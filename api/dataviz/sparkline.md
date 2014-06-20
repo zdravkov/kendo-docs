@@ -1,11 +1,7 @@
 ---
-title: kendo.dataviz.ui.Sparkline
-meta_title: Configuration, methods and events of Kendo UI DataViz Sparkline
-meta_description: Learn how to configure Kendo UI Javascript sparkline widget in a few easy steps, use and change methods and events.
-slug: api-dataviz-sparkline
-relatedDocs: gs-dataviz-sparkline-overview
-tags: api,dataviz,sparklines
-publish: true
+nav_title: kendo.dataviz.ui.Sparkline
+title: Configuration, methods and events of Kendo UI DataViz Sparkline
+description: Learn how to configure Kendo UI Javascript sparkline widget in a few easy steps, use and change methods and events.
 ---
 
 # kendo.dataviz.ui.Sparkline
@@ -160,7 +156,7 @@ Every n-th label is rendered where n is the step
 
 ### categoryAxis.labels.template `String | Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -609,7 +605,7 @@ This option is ignored if **baseUnit** is set to "fit".
 
 ### categoryAxis.labels.culture `String`
 
-Culture to use for formatting the dates. See [Globalization](/kendo-ui/getting-started/framework/globalization/overview) for more information.
+Culture to use for formatting the dates. See [Globalization](/getting-started/framework/globalization/overview) for more information.
 It uses the global culture by default.
 
 ### categoryAxis.labels.dateFormats `Object`
@@ -1166,7 +1162,7 @@ The font style of the label.
 
 ### categoryAxis.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -1239,7 +1235,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### categoryAxis.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the category axis notes label format
 
@@ -1752,7 +1748,7 @@ The font style of the note label.
 
 ### categoryAxis.notes.data.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -1831,7 +1827,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### categoryAxis.notes.data.label.format `String` *(default: "{0}")*
 
-The format used to display the note label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the category value.
 
 #### Example - set the category axis note label format
 
@@ -2296,7 +2292,7 @@ The data field containing the series value.
 
 The series name.
 
-The name can also be a [template](/kendo-ui/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
+The name can also be a [template](/api/framework/kendo#methods-template) which sets the name of the series when bound to grouped data source.
 
 The fields which can be used in the template are:
 
@@ -2657,7 +2653,7 @@ The label is positioned to the left of the marker.
 
 ### series.labels.template `String | Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the chart series label.
+The [template](/api/framework/kendo#methods-template) which renders the chart series label.
 
 The fields which can be used in the template are:
 
@@ -3483,7 +3479,7 @@ The font style of the label.
 
 ### series.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -3568,7 +3564,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### series.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the series notes label format
 
@@ -5137,7 +5133,7 @@ The font style of the label.
 
 ### valueAxis.notes.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -5210,7 +5206,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### valueAxis.notes.label.format `String` *(default: "{0}")*
 
-The format used to display the notes label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the value axis notes label format
 
@@ -5723,7 +5719,7 @@ The font style of the note label.
 
 ### valueAxis.notes.data.label.template `String|Function`
 
-The [template](/kendo-ui/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -5802,7 +5798,7 @@ The rotation angle of the label. By default the label are not rotated.
 
 ### valueAxis.notes.data.label.format `String` *(default: "{0}")*
 
-The format used to display the note label. Uses [kendo.format](/kendo-ui/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
+The format used to display the note label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 #### Example - set the value axis note label format
 

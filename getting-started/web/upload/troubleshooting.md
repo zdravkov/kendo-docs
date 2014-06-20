@@ -1,10 +1,8 @@
 ---
-title: Troubleshooting
-meta_title: Troubleshooting guide for Upload UI widget | Kendo UI Documentation
-meta_description: Most common issues, associated with Upload UI Widget and suggested solutions in quick steps.
-slug: upload-troubleshooting
-ordinal: 6
-publish: true
+nav_title: Troubleshooting
+title: Troubleshooting guide for Upload UI widget | Kendo UI Documentation
+description: Most common issues, associated with Upload UI Widget and suggested solutions in quick steps.
+nav_position: 6
 ---
 
 ## Problem: The "Select..." button is partially visible and has no text
