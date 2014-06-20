@@ -1,7 +1,7 @@
 
 nav_title: kendo.ui.Gantt
 title: Configuration, methods and events of Kendo UI Gantt
-meta_description: Code examples for Gantt UI widget configuration, learn how to use methods and which events to set once the gantt UI widget detail is initialized.
+description: Code examples for Gantt UI widget configuration, learn how to use methods and which events to set once the gantt UI widget detail is initialized.
 relatedDocs: gs-web-gantt-overview
 ---
 

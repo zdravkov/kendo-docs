@@ -1,7 +1,7 @@
 ---
 nav_title: Overview
 title: Summary of Kendo UI ToolBar functionality
-meta_description: Find out how to use the Kendo UI ToolBar widget
+description: Find out how to use the Kendo UI ToolBar widget
 relatedDocs: api-web-toolbar
 ---
 
