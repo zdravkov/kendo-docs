@@ -75,3 +75,534 @@ The model configuration of the GanttDataSource. See [GanttTask](/kendo-ui/api/fr
 
 See the [DataSource methods](/kendo-ui/api/framework/datasource#methods) for all inherited methods.
 
+### taskAllChildren
+
+Returns a list of all child tasks. The search is recursive.
+
+#### Parameters
+
+##### task `kendo.data.GanttTask` *(optional)*
+
+The parent task. If this parameter is not specified, all gantt tasks will be returned.
+
+#### Returns
+
+`Array` the list of all child tasks.
+
+#### Example - get all children of a task
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 3,
+            orderId: 0,
+            parentId: 2,
+            title: "Task3",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list of the two child tasks.
+      var childTasks = dataSource.taskAllChildren(dataSource.at(0));
+    </script>
+
+#### Example - get all gantt tasks
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 3,
+            orderId: 0,
+            parentId: 2,
+            title: "Task3",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list of all three tasks.
+      var childTasks = dataSource.taskAllChildren();
+    </script>
+
+### taskChildren
+
+Returns a list of all direct child tasks.
+
+#### Parameters
+
+##### task `kendo.data.GanttTask` *(optional)*
+
+The parent task. If this parameter is not specified, all root level tasks will be returned.
+
+#### Returns
+
+`Array` the list of all direct child tasks.
+
+#### Example - get direct children of a task
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 3,
+            orderId: 0,
+            parentId: 2,
+            title: "Task3",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list with all child tasks of Task1.
+      var childTasks = dataSource.taskChildren(dataSource.at(0));
+    </script>
+
+#### Example - get root level tasks
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list with all root level tasks.
+      var childTasks = dataSource.taskChildren();
+    </script>
+
+### taskLevel
+
+Returns the level of the task in the hierrarchy. 0 for root level taks.
+
+#### Parameters
+
+##### task `kendo.data.GanttTask`
+
+The reference task.
+
+#### Returns
+
+`Number` the level of the task in the hierarchy.
+
+#### Example - get the level of a task
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      console.log(dataSource.taskLevel(dataSource.at(1))) // outputs "1"
+    </script>
+
+### taskParent
+
+Returns the parent task of a certain task.
+
+#### Parameters
+
+##### task `kendo.data.GanttTask`
+
+The reference task.
+
+#### Returns
+
+`kendo.data.GanttTask` the parent task.
+
+#### Example - get the parent of a task
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      console.log(dataSource.taskParent(dataSource.at(1)).title) // outputs "Task1"
+    </script>
+
+#### Example - get the parent of a root level task
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      console.log(dataSource.taskParent(dataSource.at(0))) // outputs "null"`
+    </script>
+
+### taskSiblings
+
+Returns a list of all tasks that have the same parent.
+
+#### Parameters
+
+##### task `kendo.data.GanttTask`
+
+The reference task.
+
+#### Returns
+
+`Array` the list of all tasks with the same parent as the parameter task. If the parameter task is a root level task, all root level tasks are returned.
+
+#### Example - get the siblings of a task
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 3,
+            orderId: 1,
+            parentId: 1,
+            title: "Task3",
+            start: new Date("2014/6/17 12:00"),
+            end: new Date("2014/6/17 13:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list with the two sibling tasks.
+      var childTasks = dataSource.taskSiblings(dataSource.at(1));
+    </script>
+
+### taskTree
+
+Returns a list of all child gantt tasks, ordered by their hierarchical index (Depth-First). a parent is collapsed, it's children are not returned.
+
+#### Parameters
+
+##### task `kendo.data.GanttTask` *(optional)*
+
+The reference task. If this parameter is specified, the result will be all child tasks of this task, ordered by their hierarchical index. 
+
+#### Returns
+
+`Array` the list of all child gantt tasks, ordered by their hierarchical index (Depth-First).
+
+#### Example - get all gantt tasks
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            expanded: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 1,
+            parentId: null,
+            title: "Task2",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 3,
+            orderId: 0,
+            parentId: 1,
+            title: "Task3",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list with all tasks in the following order: [Task1, Task3, Task2]
+      var childTasks = dataSource.taskTree();
+    </script>
+
+#### Example - get all gantt tasks, when parent is collapsed
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            expanded: false,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 1,
+            parentId: null,
+            title: "Task2",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 3,
+            orderId: 0,
+            parentId: 1,
+            title: "Task3",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list with two tasks in the following order: [Task1, Task2]
+      var childTasks = dataSource.taskTree();
+    </script>
+
+#### Example - get all child tasks of the first task, ordered by their hierarchical index
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            expanded: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 2,
+            orderId: 0,
+            parentId: 1,
+            title: "Task2",
+            summary: true,
+            expanded: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 3,
+            orderId: 1,
+            parentId: 1,
+            title: "Task3",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          },
+          {
+            id: 4,
+            orderId: 0,
+            parentId: 2,
+            title: "Task4",
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      // returns a list with all tasks in the following order: [Task2, Task4, Task3]
+      var childTasks = dataSource.taskTree(dataSource.at(0));
+    </script>
+
+### update
+
+Updates a gantt task.
+
+#### Parameters
+
+##### task `kendo.data.GanttTask`
+
+The task to be updated.
+
+##### taskInfo `Object`
+
+The new values, which will be used to update the task.
+
+#### Example - update a task's title
+
+    <script>
+      var dataSource = new kendo.data.GanttDataSource({
+        data: [
+          {
+            id: 1,
+            orderId: 0,
+            parentId: null,
+            title: "Task1",
+            summary: true,
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
+          }
+        ]
+      });
+      
+      dataSource.fetch();
+      
+      var task = dataSource.at(0);
+      dataSource.update(task, { title: "New Title" });
+      console.log(task.title); // outputs "New Title"
+    </script>
