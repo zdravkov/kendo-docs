@@ -1,8 +1,5 @@
 ---
-title: ToolBarItem
-slug: php-ui-toolbaritem
-tags: api, php
-publish: true
+nav_title: ToolBarItem
 ---
 
 # \Kendo\UI\ToolBarItem
@@ -51,7 +48,7 @@ Adds one or more ToolBarItemButton to the ToolBarItem.
     ?>
 
 ### click
-Specifies the click event handler of the button. Applicable only for commands of type Button and SplitButton.
+Specifies the click event handler of the button. Applicable only for commands of type button and splitButton.
 
 #### Returns
 `\Kendo\UI\ToolBarItem`
@@ -69,7 +66,7 @@ Specifies the click event handler of the button. Applicable only for commands of
     ?>
 
 ### enable
-Specifies whether the control is initially enabled or disabled.
+Specifies whether the control is initially enabled or disabled. Default value is "true".
 
 #### Returns
 `\Kendo\UI\ToolBarItem`
@@ -87,7 +84,7 @@ Specifies whether the control is initially enabled or disabled.
     ?>
 
 ### group
-Assigns the button to a group. Applicable only for buttons with togglable true.
+Assigns the button to a group. Applicable only for buttons with togglable: true.
 
 #### Returns
 `\Kendo\UI\ToolBarItem`
@@ -222,14 +219,20 @@ Specifies what element will be added in the command overflow popup. Applicable o
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $item = new \Kendo\UI\ToolBarItem();
     $item->overflowTemplate('value');
+    ?>
+
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $item = new \Kendo\UI\ToolBarItem();
+    $item->overflowTemplate(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
 ### primary
@@ -250,8 +253,8 @@ Specifies whether the button is primary. Primary buttons receive different styli
     $item->primary(true);
     ?>
 
-### selected
-Specifies if the toggle button is initially selected. Applicable only for buttons with togglable true.
+### selectable
+Specifies if the toggle button is initially selected. Applicable only for buttons with togglable: true.
 
 #### Returns
 `\Kendo\UI\ToolBarItem`
@@ -265,7 +268,7 @@ Specifies if the toggle button is initially selected. Applicable only for button
 #### Example 
     <?php
     $item = new \Kendo\UI\ToolBarItem();
-    $item->selected(true);
+    $item->selectable(true);
     ?>
 
 ### showIcon
@@ -330,18 +333,24 @@ Specifies what element will be added in the ToolBar wrapper. Items with template
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\JavaScriptFunction`
 
 
 
-#### Example 
+#### Example  - using string
     <?php
     $item = new \Kendo\UI\ToolBarItem();
     $item->template('value');
     ?>
 
+#### Example  - using \Kendo\JavaScriptFunction
+    <?php
+    $item = new \Kendo\UI\ToolBarItem();
+    $item->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
 ### text
-Specifies the text of the button.
+Sets the text of the button.
 
 #### Returns
 `\Kendo\UI\ToolBarItem`
@@ -377,7 +386,7 @@ Specifies if the button is togglable, e.g. has a selected and unselected state.
     ?>
 
 ### toggle
-Specifies the toggle event handler of the button. Applicable only for commands of type Button and togglable true.
+Specifies the toggle event handler of the button. Applicable only for commands of type button and togglable: true.
 
 #### Returns
 `\Kendo\UI\ToolBarItem`

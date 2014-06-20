@@ -1,8 +1,5 @@
 ---
-title: ToolBarItemMenuButton
-slug: php-ui-toolbaritemmenubutton
-tags: api, php
-publish: true
+nav_title: ToolBarItemMenuButton
 ---
 
 # \Kendo\UI\ToolBarItemMenuButton

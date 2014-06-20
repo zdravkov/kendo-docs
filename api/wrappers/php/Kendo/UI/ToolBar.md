@@ -1,8 +1,5 @@
 ---
-title: ToolBar
-slug: php-ui-toolbar
-tags: api, php
-publish: true
+nav_title: ToolBar
 ---
 
 # \Kendo\UI\ToolBar
