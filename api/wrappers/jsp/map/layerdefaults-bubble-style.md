@@ -1,6 +1,5 @@
 ---
 title: map-layerDefaults-bubble-style
-slug: jsp-map-layerDefaults-bubble-style
 ---
 
 # \<kendo:map-layerDefaults-bubble-style\>

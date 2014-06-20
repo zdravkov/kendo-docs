@@ -2,7 +2,6 @@
 title: kendo.data.GanttTask
 meta_title: API Reference for Kendo Data GanttTask
 meta_description: Documentation how to get started with the GanttTask.
-slug: api-framework-gantttask
 ---
 
 # kendo.data.GanttTask

@@ -1,6 +1,5 @@
 ---
 title: map-layerDefaults-bubble-style-stroke
-slug: jsp-map-layerDefaults-bubble-style-stroke
 ---
 
 # \<kendo:map-layerDefaults-bubble-style-stroke\>

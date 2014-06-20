@@ -1,6 +1,5 @@
 ---
 title: DataSource vs. Angular scope
-slug: gs-data-source-vs-angular-scope
 ---
 
 # Kendo DataSource vs. Angular scope

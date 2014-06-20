@@ -1,6 +1,5 @@
 ---
 title: chart-legend-labels-padding
-slug: jsp-chart-legend-labels-padding
 ---
 
 # \<kendo:chart-legend-labels-padding\>

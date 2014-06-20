@@ -1,6 +1,5 @@
 ---
 title: The Grid widget in Angular-Kendo
-slug: gs-the-grid-widget-in-angular-kendo
 ---
 
 # The Grid widget in Angular-Kendo

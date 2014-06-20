@@ -1,6 +1,5 @@
 ---
 title: DiagramEditableSelectStroke
-slug: php-dataviz-ui-diagrameditableselectstroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableSelectStroke

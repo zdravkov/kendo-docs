@@ -2,7 +2,6 @@
 title: kendo.data.GanttDependency
 meta_title: API Reference for Kendo Data GanttDependency
 meta_description: Documentation how to get started with the GanttDependency.
-slug: api-framework-ganttdependency
 ---
 
 # kendo.data.GanttDependency

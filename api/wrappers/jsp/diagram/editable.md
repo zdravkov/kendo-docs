@@ -1,6 +1,5 @@
 ---
 title: diagram-editable
-slug: jsp-diagram-editable
 ---
 
 # \<kendo:diagram-editable\>

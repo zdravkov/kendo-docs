@@ -1,6 +1,5 @@
 ---
 title: Notes on ng-repeat
-slug: gs-notes-on-ng-repeat
 ---
 
 # Notes on `ng-repeat`

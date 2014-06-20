@@ -1,6 +1,5 @@
 ---
 title: diagram-editable-resize-handles-hover
-slug: jsp-diagram-editable-resize-handles-hover
 ---
 
 # \<kendo:diagram-editable-resize-handles-hover\>

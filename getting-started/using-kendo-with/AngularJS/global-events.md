@@ -1,6 +1,5 @@
 ---
 title: Global events in Angular-Kendo
-slug: gs-global-events-in-angular-kendo
 ---
 
 # Global events in Angular-Kendo

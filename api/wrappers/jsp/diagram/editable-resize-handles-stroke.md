@@ -1,6 +1,5 @@
 ---
 title: diagram-editable-resize-handles-stroke
-slug: jsp-diagram-editable-resize-handles-stroke
 ---
 
 # \<kendo:diagram-editable-resize-handles-stroke\>

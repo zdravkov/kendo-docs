@@ -1,6 +1,5 @@
 ---
 title: diagram-editable-select-stroke
-slug: jsp-diagram-editable-select-stroke
 ---
 
 # \<kendo:diagram-editable-select-stroke\>
