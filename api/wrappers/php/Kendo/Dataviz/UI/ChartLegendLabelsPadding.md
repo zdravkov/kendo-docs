@@ -2,7 +2,6 @@
 title: ChartLegendLabelsPadding
 slug: php-dataviz-ui-chartlegendlabelspadding
 tags: api, php
-publish: true
 ---
 
 # \Kendo\Dataviz\UI\ChartLegendLabelsPadding

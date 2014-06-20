@@ -2,7 +2,6 @@
 title: DiagramEditableRotate
 slug: php-dataviz-ui-diagrameditablerotate
 tags: api, php
-publish: true
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableRotate

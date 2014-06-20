@@ -2,7 +2,6 @@
 title: DiagramEditableResizeHandlesHoverStroke
 slug: php-dataviz-ui-diagrameditableresizehandleshoverstroke
 tags: api, php
-publish: true
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableResizeHandlesHoverStroke

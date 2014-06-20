@@ -2,7 +2,6 @@
 title: MapLayerDefaultsBubble
 slug: php-dataviz-ui-maplayerdefaultsbubble
 tags: api, php
-publish: true
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsBubble

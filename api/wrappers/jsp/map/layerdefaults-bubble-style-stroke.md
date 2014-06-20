@@ -2,7 +2,6 @@
 title: map-layerDefaults-bubble-style-stroke
 slug: jsp-map-layerDefaults-bubble-style-stroke
 tags: api, java
-publish: true
 ---
 
 # \<kendo:map-layerDefaults-bubble-style-stroke\>

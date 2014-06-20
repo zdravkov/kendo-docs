@@ -4,7 +4,6 @@ meta_title: Configuration, methods and events of Kendo UI ToolBar
 slug: api-web-toolbar
 relatedDocs: gs-web-toolbar-overview
 tags: api,web
-publish: true
 ---
 
 # kendo.ui.ToolBar

@@ -2,7 +2,6 @@
 title: DiagramEditable
 slug: php-dataviz-ui-diagrameditable
 tags: api, php
-publish: true
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditable

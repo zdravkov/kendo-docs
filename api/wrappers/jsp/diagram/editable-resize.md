@@ -2,7 +2,6 @@
 title: diagram-editable-resize
 slug: jsp-diagram-editable-resize
 tags: api, java
-publish: true
 ---
 
 # \<kendo:diagram-editable-resize\>

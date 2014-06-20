@@ -2,7 +2,6 @@
 title: MapLayerDefaultsBubbleStyleFill
 slug: php-dataviz-ui-maplayerdefaultsbubblestylefill
 tags: api, php
-publish: true
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsBubbleStyleFill

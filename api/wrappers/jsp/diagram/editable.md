@@ -2,7 +2,6 @@
 title: diagram-editable
 slug: jsp-diagram-editable
 tags: api, java
-publish: true
 ---
 
 # \<kendo:diagram-editable\>

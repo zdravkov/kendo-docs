@@ -2,7 +2,6 @@
 title: diagram-editable-select-stroke
 slug: jsp-diagram-editable-select-stroke
 tags: api, java
-publish: true
 ---
 
 # \<kendo:diagram-editable-select-stroke\>

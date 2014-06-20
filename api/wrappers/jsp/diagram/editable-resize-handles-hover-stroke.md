@@ -2,7 +2,6 @@
 title: diagram-editable-resize-handles-hover-stroke
 slug: jsp-diagram-editable-resize-handles-hover-stroke
 tags: api, java
-publish: true
 ---
 
 # \<kendo:diagram-editable-resize-handles-hover-stroke\>

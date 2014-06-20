@@ -4,7 +4,6 @@ meta_title: API Reference for Kendo UI GanttDataSource
 meta_description: Learn more about the configuration of Kendo UI GanttDataSource, methods and events.
 slug: api-framework-ganttdatasource
 tags: api,framework
-publish: true
 ---
 
 # kendo.data.GanttDataSource

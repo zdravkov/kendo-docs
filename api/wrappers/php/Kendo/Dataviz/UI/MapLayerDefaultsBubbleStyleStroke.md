@@ -2,7 +2,6 @@
 title: MapLayerDefaultsBubbleStyleStroke
 slug: php-dataviz-ui-maplayerdefaultsbubblestylestroke
 tags: api, php
-publish: true
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsBubbleStyleStroke
