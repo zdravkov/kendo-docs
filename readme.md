@@ -35,15 +35,9 @@ There are two ways you can contribute to the public Kendo UI documentation: eith
     - Each document in this repo contains a section of YAML Front Matter at the very top. This content, which looks like the text below, is used by our auto-import tool when content is processed for the live documentation site. Please don't edit the content in this section of a document.
 
          ---
-
-        title: kendo.dataviz.ui.Chart
-
-        slug: api-dataviz-chart
-
-        tags: api,dataviz
-
-        publish: true
-
+        nav_title: kendo.dataviz.ui.Chart
+        nav_position: 1
+        title: Configuration API and events of Kendo UI Chart
          ---
 
     - When adding content or making changes, please use only standard Markdown syntax, and make to preview your additions or changes before sending us a pull request. You can use an online tool like [Dillinger.io](http://dillinger.io/) or [Marked](http://markedapp.com/) on OSX to view what your changes will look like when ported to HTML.
