@@ -42,7 +42,7 @@ A JavaScript array that contains the ToolBar's commands configuration.
         $("#toolbar").kendoToolBar({
             items: [
                 { type: "button", text: "Button" },
-                { type: "button", text: "Toggle", toggable: true },
+                { type: "button", text: "Toggle", togglable: true },
                 { type: "splitButton", text: "SplitButton", items: [{text: "Option 1"}, {text: "Option 2"}] }
             ]
         });
@@ -74,7 +74,7 @@ An object with valid command configuration options.
         toolbar.add({
             type: "button",
             text: "Just added",
-            toggable: true
+            togglable: true
         });)
     </script>
 
@@ -158,9 +158,9 @@ The name of the group.
                 { 
                     type: "buttonGroup",
                     items: [
-                        { type: "button", id: "btn1", text: "Button 1", toggable: true, group: "radio" },
-                        { type: "button", id: "btn1", text: "Button 1", toggable: true, group: "radio", selected: true },
-                        { type: "button", id: "btn1", text: "Button 1", toggable: true, group: "radio" }
+                        { type: "button", id: "btn1", text: "Button 1", togglable: true, group: "radio" },
+                        { type: "button", id: "btn1", text: "Button 1", togglable: true, group: "radio", selected: true },
+                        { type: "button", id: "btn1", text: "Button 1", togglable: true, group: "radio" }
                     ]
                 }
             ]
@@ -203,7 +203,7 @@ A string, DOM element or jQuery object which represents the command to be remove
 
 Fires when the user clicks a command button.
 
-> The event does not fire for toggable buttons. If the button has `toggable: true` use the `toggle` event.
+> The event does not fire for togglable buttons. If the button has `togglable: true` use the `toggle` event.
 
 #### Event Data
 
@@ -371,7 +371,7 @@ The widget instance which fired the event.
 
 Fires when the user changes the checked state of a toggle button.
 
-> **Important** `click` event does not fire for buttons that have `toggable: true`
+> **Important** `click` event does not fire for buttons that have `togglable: true`
 
 #### Event Data
 
@@ -397,8 +397,8 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "button", id: "btn1", text: "Button 1", toggable: true },
-                { type: "button", id: "btn2", text: "Button 2", toggable: true }
+                { type: "button", id: "btn1", text: "Button 1", togglable: true },
+                { type: "button", id: "btn2", text: "Button 2", togglable: true }
             ],
             toggle: function(e) {
                 console.log("toggle", e.target.text(), e.checked);
@@ -412,8 +412,8 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "button", id: "btn1", text: "Button 1", toggable: true },
-                { type: "button", id: "btn2", text: "Button 2", toggable: true }
+                { type: "button", id: "btn1", text: "Button 1", togglable: true },
+                { type: "button", id: "btn2", text: "Button 2", togglable: true }
             ]
         });
 

@@ -114,7 +114,7 @@ Each button item can have the following properties:
                 //specifies how the button behaves when the ToolBar is resized. Possible values are: "always", "never" or "auto" (default).
                 overflow: "auto",
 
-                //specifies if the button is toggable, e.g. has a selected and unselected state.
+                //specifies if the button is togglable, e.g. has a selected and unselected state.
                 toggle: true,
 
                 //specifies if the toggle button is initially selected. Applicable only for buttons with toggle: true.
