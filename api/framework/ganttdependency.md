@@ -1,5 +1,5 @@
 ---
-title: kendo.data.GanttDependency
+nav_title: kendo.data.GanttDependency
 meta_title: API Reference for Kendo Data GanttDependency
 meta_description: Documentation how to get started with the GanttDependency.
 ---
