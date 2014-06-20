@@ -1,7 +1,6 @@
 ---
 title: diagram-editable-resize-handles-hover
 slug: jsp-diagram-editable-resize-handles-hover
-tags: api, java
 ---
 
 # \<kendo:diagram-editable-resize-handles-hover\>

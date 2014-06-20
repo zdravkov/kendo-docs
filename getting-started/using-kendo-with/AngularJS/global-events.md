@@ -1,7 +1,6 @@
 ---
 title: Global events in Angular-Kendo
 slug: gs-global-events-in-angular-kendo
-tags: 101, Getting Started, AngularJS
 ---
 
 # Global events in Angular-Kendo

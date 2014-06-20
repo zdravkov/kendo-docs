@@ -1,7 +1,6 @@
 ---
 title: DataSource vs. Angular scope
 slug: gs-data-source-vs-angular-scope
-tags: 101, Getting Started, AngularJS
 ---
 
 # Kendo DataSource vs. Angular scope

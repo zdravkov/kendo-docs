@@ -4,7 +4,6 @@ meta_title: Summary of Kendo UI ToolBar functionality
 meta_description: Find out how to use the Kendo UI ToolBar widget
 slug: gs-web-toolbar-overview
 relatedDocs: api-web-toolbar
-tags: getting-started,web,toolbar
 ---
 
 # ToolBar Overview

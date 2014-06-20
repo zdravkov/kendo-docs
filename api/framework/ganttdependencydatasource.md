@@ -3,7 +3,6 @@ title: kendo.data.GanttDependencyDataSource
 meta_title: API Reference for Kendo UI GanttDependencyDataSource
 meta_description: Learn more about the configuration of Kendo UI GanttDependencyDataSource, methods and events.
 slug: api-framework-ganttdependencydatasource
-tags: api,framework
 ---
 
 # kendo.data.GanttDependencyDataSource

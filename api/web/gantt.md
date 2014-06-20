@@ -4,7 +4,6 @@ meta_title: Configuration, methods and events of Kendo UI Gantt
 meta_description: Code examples for Gantt UI widget configuration, learn how to use methods and which events to set once the gantt UI widget detail is initialized.
 slug: api-web-gantt
 relatedDocs: gs-web-gantt-overview
-tags: api,web
 ---
 
 # kendo.ui.Gantt

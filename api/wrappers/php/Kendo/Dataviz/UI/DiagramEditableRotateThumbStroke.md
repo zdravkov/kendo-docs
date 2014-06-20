@@ -1,7 +1,6 @@
 ---
 title: DiagramEditableRotateThumbStroke
 slug: php-dataviz-ui-diagrameditablerotatethumbstroke
-tags: api, php
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableRotateThumbStroke

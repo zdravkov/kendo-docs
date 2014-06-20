@@ -1,7 +1,6 @@
 ---
 title: diagram-editable-rotate
 slug: jsp-diagram-editable-rotate
-tags: api, java
 ---
 
 # \<kendo:diagram-editable-rotate\>

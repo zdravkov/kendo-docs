@@ -1,7 +1,6 @@
 ---
 title: map-layerDefaults-bubble-style-fill
 slug: jsp-map-layerDefaults-bubble-style-fill
-tags: api, java
 ---
 
 # \<kendo:map-layerDefaults-bubble-style-fill\>

@@ -1,7 +1,6 @@
 ---
 title: Notes on ng-repeat
 slug: gs-notes-on-ng-repeat
-tags: 101, Getting Started, AngularJS
 ---
 
 # Notes on `ng-repeat`

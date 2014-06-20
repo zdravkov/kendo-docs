@@ -1,7 +1,6 @@
 ---
 title: DiagramEditableSelect
 slug: php-dataviz-ui-diagrameditableselect
-tags: api, php
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableSelect

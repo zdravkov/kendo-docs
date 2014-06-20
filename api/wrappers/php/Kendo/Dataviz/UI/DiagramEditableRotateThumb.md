@@ -1,7 +1,6 @@
 ---
 title: DiagramEditableRotateThumb
 slug: php-dataviz-ui-diagrameditablerotatethumb
-tags: api, php
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableRotateThumb

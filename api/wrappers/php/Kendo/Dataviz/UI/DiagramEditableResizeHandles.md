@@ -1,7 +1,6 @@
 ---
 title: DiagramEditableResizeHandles
 slug: php-dataviz-ui-diagrameditableresizehandles
-tags: api, php
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableResizeHandles

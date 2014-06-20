@@ -1,7 +1,6 @@
 ---
 title: diagram-editable-resize-handles-stroke
 slug: jsp-diagram-editable-resize-handles-stroke
-tags: api, java
 ---
 
 # \<kendo:diagram-editable-resize-handles-stroke\>

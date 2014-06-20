@@ -1,7 +1,6 @@
 ---
 title: The Grid widget in Angular-Kendo
 slug: gs-the-grid-widget-in-angular-kendo
-tags: 101, Getting Started, AngularJS
 ---
 
 # The Grid widget in Angular-Kendo

@@ -1,7 +1,6 @@
 ---
 title: chart-legend-padding
 slug: jsp-chart-legend-padding
-tags: api, java
 ---
 
 # \<kendo:chart-legend-padding\>
