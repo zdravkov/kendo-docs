@@ -779,3 +779,340 @@ The result should have the following format:
 
 See the [DataSource methods](/kendo-ui/api/framework/datasource#methods) for all inherited methods.
 
+### axes
+
+Get the parsed axes data
+
+#### Returns
+
+`Object` the parsed axes data
+
+#### Example - get the axes data
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.fetch();
+
+    var axes = dataSource.axes();
+    </script>
+
+### catalog
+
+Get or sets the current catalog name.
+
+#### Parameters
+
+##### name `String`
+
+The name of the catalog.
+
+#### Returns
+
+`String` the current catalog name.
+
+#### Example - set the catalog
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: ["[Date].[Calendar]"],
+      transport: {
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.catalog("Adventure Works DW 2008R2");
+    </script>
+
+#### Example - get the catalog name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var catalogName = dataSource.catalog();
+    console.log(catalogName);// prints "Adventure Works DW 2008R2"
+    </script>
+
+### columns
+
+Get or sets the columns configuration.
+
+#### Parameters
+
+##### val `Array`
+
+The columns configuration. Accepts the same values as the [columns](#configuration-columns) option.
+
+#### Returns
+
+`Array` the current columns configuration.
+
+#### Example - set the columns
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.columns(["[Date].[Calendar]"]);
+    </script>
+
+#### Example - get the columns name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var columns = dataSource.columns();
+    console.log(columns);// ["[Date].[Calendar]"]
+    </script>
+
+### cube
+
+Get or sets the current cube name.
+
+#### Parameters
+
+##### name `String`
+
+The name of the cube.
+
+#### Returns
+
+`String` the current cube name.
+
+#### Example - set the cube
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.cube("Adventure Works");
+
+    dataSource.fetch();
+    </script>
+
+#### Example - get the cube name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var cubeName = dataSource.cube();
+    console.log(cubeName);// prints "Adventure Works"
+    </script>
+
+### measures
+
+Get or sets the measures configuration.
+
+#### Parameters
+
+##### val `Array`
+
+The measures configuration. Accepts the same values as the [measures](#configuration-measures-values) option.
+
+#### Returns
+
+`Array` the current measures configuration.
+
+#### Example - set the measures
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.measures(["[Measures].[Internet Order Lines Count]"]);
+    </script>
+
+#### Example - get the measures
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      measures: ["[Measures].[Internet Order Lines Count]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var measures = dataSource.measures();
+    console.log(measures);// ["[Measures].[Internet Order Lines Count]"]
+    </script>
+
+### measuresAxis
+
+Get the name of the axis on which measures are displayed.
+
+#### Returns
+
+`String` the axis name.
+
+#### Example - set the measures
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      measures: {
+          values: ["[Measures].[Internet Order Lines Count]", "[Measures].[Days Current Quarter to Date]"],
+          axis: "rows"
+      },
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var axis = dataSource.measuresAxis();
+    console.log(axis); // "rows"
+    </script>
+
+### rows
+
+Get or sets the rows configuration.
+
+#### Parameters
+
+##### val `Array`
+
+The rows configuration. Accepts the same values as the [row](#configuration-rows) option.
+
+#### Returns
+
+`Array` the current rows configuration.
+
+#### Example - set the rows
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.rows(["[Date].[Calendar]"]);
+    </script>
+
+#### Example - get the rows name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      rows: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var rows = dataSource.rows();
+    console.log(rows);// ["[Date].[Calendar]"]
+    </script>
