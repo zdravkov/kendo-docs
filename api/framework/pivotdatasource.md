@@ -974,6 +974,48 @@ The name of the cube.
     console.log(cubeName);// prints "Adventure Works"
     </script>
 
+### discover
+
+Starts discover request with given options.
+
+#### Parameters
+
+##### options `String`
+
+The options of the discover request
+
+#### Returns
+
+`Object` Deferred object
+
+#### Example
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.discover({
+        data: {
+          command: "schemaMeasures",
+          restrictions: {
+            catalogName: dataSource.catalog(),
+            cubeName: dataSource.cube()
+          }
+        }).done(function(response) {
+            console.log(response);
+        });
+    </script>
+
 ### measures
 
 Get or sets the measures configuration.
@@ -1116,3 +1158,198 @@ The rows configuration. Accepts the same values as the [row](#configuration-rows
     var rows = dataSource.rows();
     console.log(rows);// ["[Date].[Calendar]"]
     </script>
+
+### schemaCatalogs
+
+Request catalogs information.
+
+#### Returns
+
+`Object` Deferred object
+
+#### Example
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.schemaCatalogs()
+        .done(function(catalogs) {
+            console.log(catalogs);
+        });
+    </script>
+
+### schemaCubes
+
+Request cubes schema information.
+
+#### Returns
+
+`Object` Deferred object
+
+#### Example
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.schemaCubes()
+        .done(function(cubes) {
+            console.log(cubes);
+        });
+    </script>
+
+### schemaDimensions
+
+Request dimensions schema information.
+
+#### Returns
+
+`Object` Deferred object
+
+#### Example
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.schemaDimensions()
+        .done(function(dimensions) {
+            console.log(dimensions);
+        });
+    </script>
+
+### schemaHierarchies
+
+Request hierarchies schema information.
+
+#### Parameters
+
+##### dimensionName `String`
+
+The name of the dimensions which is 'owner' of the hierarchy.
+
+#### Returns
+
+`Object` Deferred object
+
+#### Example
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var dimensionName = "[Customer]";
+
+    dataSource.schemaHierarchies(dimensionName)
+        .done(function(dimensions) {
+            console.log(dimensions);
+        });
+    </script>
+
+### schemaLevels
+
+Request levels schema information.
+
+#### Parameters
+
+##### hierarchyName `String`
+
+The name of the hierarchy which is 'owner' of the level.
+
+#### Returns
+
+`Object` Deferred object
+
+#### Example
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    var hierarchyName = "[Georgaphy].[City]";
+
+    dataSource.schemaLevels(hierarchyName)
+        .done(function(levels) {
+            console.log(levels);
+        });
+    </script>
+
+### schemaMeasures
+
+Request measures schema information.
+
+#### Returns
+
+`Object` Deferred object
+
+#### Example
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+
+    dataSource.schemaMeasures()
+        .done(function(measures) {
+            console.log(measures);
+        });
+    </script>
+
+
