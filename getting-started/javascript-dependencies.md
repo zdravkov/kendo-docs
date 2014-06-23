@@ -53,7 +53,6 @@ To access the combined minified javascript for Kendo UI Core (available since Q1
     https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js
     https://da7xgjtj801h2.cloudfront.net/<version>/styles/<filename>.min.css
 
-or 
 ### CDN Fallback and Troubleshooting
 
 Although the Amazon cloud service provides a very reliable level of uptime, disruptions or connection problems are theoretically possible.
