@@ -1339,6 +1339,104 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 
 > Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
 
+#### Example - add a gantt task to the data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/17 11:00")
+      }]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.dataSource.add({ 
+      parentId: null,
+      start: new Date("2014/6/17 12:00"), 
+      end: new Date("2014/6/17 14:00"), 
+      title: "New Task"  
+    });          
+    </script>
+    
+#### Example - update a gantt task in the data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataSource.at(0);
+    task.set("title", "Project start");
+    </script>
+    
+#### Example - update multiple gantt task fields with the update method
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataSource.at(0);
+    gantt.dataSource.update(task, { 
+      title: "Project start",
+      start: new Date("2014/6/17 12:00"),
+      end: new Date("2014/6/17 14:00")
+    });
+    </script>   
+    
+#### Example - remove a gantt task from the data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataSource.at(0);
+    gantt.dataSource.remove(task);
+    </script>
+
 ### dependencies `kendo.data.GanttDependencyDataSource`
 
 The [dependencies data source](/kendo-ui/api/framework/ganttdependencydatasource) of the widget. Configured via the [dependencies](#configuration-dependencies) option.
@@ -1346,6 +1444,74 @@ The [dependencies data source](/kendo-ui/api/framework/ganttdependencydatasource
 > Changes of the data source will be reflected in the widget.
 
 > Assigning a new data source would have no effect. Use the [setDependenciesDataSource](#methods-setDependenciesDataSource) method instead.
+
+#### Example - add a dependency to the dependencies data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.dependencies.add({
+      predecessorId: 1,
+      successorId: 2,
+      type: 1
+    });
+    </script>
+
+#### Example - remove a dependency from the dependencies data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var dependency = gantt.dependencies.at(0);
+    gantt.dependencies.remove(dependency);
+    </script>
 
 ## Methods
 
