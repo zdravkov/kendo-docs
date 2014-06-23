@@ -17,6 +17,315 @@ Inherits from [kendo.data.DataSource](/kendo-ui/api/framework/datasource).
 
 See the [DataSource configuration](/kendo-ui/api/framework/datasource#configuration) for all inherited configuration options.
 
+### columns `Array`
+
+The configuration of columns axis members. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column descriptors. Strings are interpreted as the hierarchal name of the member.
+
+#### Example - set the columns
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### columns.expand `Boolean`
+
+If set to true the member will be exapnded.
+
+#### Example - set the column as expanded
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: [{ name: "[Date].[Calendar]", expand: true }],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### columns.name `String`
+
+The hierarchal name of the column
+
+#### Example - set the column name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: [{ name: "[Date].[Calendar]", expand: false }],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+
+    });
+    dataSource.fetch();
+    </script>
+
+### measures `Array|Obejct`
+
+The configuration of measures. An string array which values are interpreted as the name of the measures to be loaded.
+
+#### Example - set the measures
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      measures: ["[Measures].[Internet Order Lines Count]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### measures.values `Array`
+
+An string array which values are interpreted as the name of the measures to be loaded.
+
+#### Example - set the measures
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      measures: {
+          values: ["[Measures].[Internet Order Lines Count]"]
+      },
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### measures.axis `String` *(default: columns)*
+
+The name of the axis on which the measures will be displayed. Supported values are rows or columns. This option is applicable if multiple measures are used.
+
+#### Example - set the measures axis
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      measures: {
+          values: ["[Measures].[Internet Order Lines Count]", "[Measures].[Days Current Quarter to Date]"],
+          axis: "rows"
+      },
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### rows `Array`
+
+The configuration of rows axis members. An array of JavaScript objects or strings. A JavaScript objects are interpreted as rows descriptors. Strings are interpreted as the hierarchal name of the member.
+
+#### Example - set the columns
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      rows: ["[Date].[Calendar]"],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### rows.expand `Boolean`
+
+If set to true the member will be exapnded.
+
+#### Example - set the rows as expanded
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      columns: [{ name: "[Date].[Calendar]", expand: true }],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### rows.name `String`
+
+The hierarchal name of the rows
+
+#### Example - set the rows name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      rows: [{ name: "[Date].[Calendar]", expand: false }],
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.fetch();
+    </script>
+
+### transport `Object`
+
+The configuration used to load data items and discover schema information.
+
+### transport.discover `Object|String|Function`
+
+The configuration used when the data source discovers schema information about the current cube.
+
+> The data source uses [jQuery.ajax](http://api.jquery.com/jQuery.ajax) to make a HTTP request to the remote service. The value configured via `transport.discover` is passed to `jQuery.ajax`. This means that you can set
+all options supported by `jQuery.ajax` via `transport.read` except the `success` and `error` callback functions which are used by the transport.
+
+If the value of `transport.discover` is a function, the data source invokes that function instead of `jQuery.ajax`.
+
+If the value of `transport.discover` is a string the data source uses this string as the URL of the remote service.
+
+If the value of `transport.discover` is ommited the data source uses `transport.read` for schema discover.
+
+#### Example - set the discover remote service
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        discover: "http://demos.telerik.com/olap/msmdpump.dll",
+        read: "http://demos.telerik.com/olap/msmdpump.dll"
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    dataSource.schemaDimensions().done(function(dimensions) {
+      console.log(dimensions.length);
+    });
+    </script>
+
+### transport.connection `Object`
+
+The configuration used for setting connection options.
+
+### transport.connection.catalog `String`
+
+The catalog name.
+
+#### Example - set the connection catalog name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll",
+      },
+      schema: {
+        type: "xmla"
+      }
+
+    });
+    </script>
+
+### transport.connection.cube `String`
+
+The cube name in the current data source.
+
+#### Example - set the cube catalog name
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      type: "xmla",
+      transport: {
+        connection: {
+            catalog: "Adventure Works DW 2008R2",
+            cube: "Adventure Works"
+        },
+        read: "http://demos.telerik.com/olap/msmdpump.dll",
+      },
+      schema: {
+        type: "xmla"
+      }
+    });
+    </script>
+
 ### schema `Object`
 
 The schema configuration of the PivotDataSource.
