@@ -1,5 +1,5 @@
 ---
-title: MapLayerDefaultsBubbleStyleStroke
+nav_title: MapLayerDefaultsBubbleStyleStroke
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsBubbleStyleStroke

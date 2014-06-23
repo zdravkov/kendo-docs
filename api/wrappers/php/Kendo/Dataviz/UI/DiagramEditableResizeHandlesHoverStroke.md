@@ -1,5 +1,5 @@
 ---
-title: DiagramEditableResizeHandlesHoverStroke
+nav_title: DiagramEditableResizeHandlesHoverStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableResizeHandlesHoverStroke

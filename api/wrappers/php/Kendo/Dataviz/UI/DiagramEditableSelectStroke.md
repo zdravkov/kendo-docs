@@ -1,5 +1,5 @@
 ---
-title: DiagramEditableSelectStroke
+nav_title: DiagramEditableSelectStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableSelectStroke
