@@ -259,7 +259,7 @@ The text messages displayed in the fields sections.
     });
     </script>
 
-### message.measureFields `String` *(default: "Drop Measure Here")*
+### messages.measureFields `String` *(default: "Drop Measure Here")*
 
 The text messages displayed in the measure fields sections.
 
@@ -296,7 +296,7 @@ The text messages displayed in the measure fields sections.
     });
     </script>
 
-### message.columnFields `String` *(default: "Drop Column Here")*
+### messages.columnFields `String` *(default: "Drop Column Here")*
 
 The text messages displayed in the column fields sections.
 
@@ -333,7 +333,7 @@ The text messages displayed in the column fields sections.
     });
     </script>
 
-### message.rowFields `String` *(default: "Drop Rows Here")*
+### messages.rowFields `String` *(default: "Drop Rows Here")*
 
 The text messages displayed in the row fields sections.
 
