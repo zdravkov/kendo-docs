@@ -48,11 +48,12 @@ To access the combined minified javascript for Kendo UI Core (available since Q1
 
     http://cdn.kendostatic.com/2014.1.416/js/kendo.ui.core.min.js
 
-> **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN
+> **Important:** in order to use HTTPS, you need to directly access the CloudFront CDN as shown below, or use your own domain and SSL certificate as depicted here: http://aws.amazon.com/cloudfront/custom-ssl-domains/
 
     https://da7xgjtj801h2.cloudfront.net/<version>/js/<filename>.min.js
     https://da7xgjtj801h2.cloudfront.net/<version>/styles/<filename>.min.css
 
+or 
 ### CDN Fallback and Troubleshooting
 
 Although the Amazon cloud service provides a very reliable level of uptime, disruptions or connection problems are theoretically possible.
