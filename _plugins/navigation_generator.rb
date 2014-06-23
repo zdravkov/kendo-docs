@@ -23,8 +23,6 @@ module Jekyll
 
                 segments = url.split('/')
 
-                segments.shift
-
                 segments.each_with_index do |segment, index|
                     item = node.find { |n| n['path'] == segment }
 

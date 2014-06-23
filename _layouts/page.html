@@ -50,8 +50,8 @@ layout: index
                 }
             },
             select: preventParentSelection,
-            template: navigationTemplate("{{site.baseurl}}/{{page.category}}/"),
-            dataBound: expandNavigation("{{page.url | remove_first: '/' | remove_first: page.category | remove_first: '/'}}")
+            template: navigationTemplate("{{site.baseurl}}/"),
+            dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
         });
         </script>
     </div>
