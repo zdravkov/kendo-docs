@@ -805,7 +805,7 @@ Target item selector.
 
 ### close
 
-Fires before a sub menu gets closed. You can cancel this event to prevent closure.
+Fires before a sub menu or the ContextMenu gets closed. You can cancel this event to prevent closure.
 
 #### Event Data
 
@@ -868,7 +868,7 @@ The closed item
 
 ### open
 
-Fires before a sub menu gets opened. You can cancel this event to prevent opening the sub menu.
+Fires before a sub menu or the ContextMenu gets opened. You can cancel this event to prevent opening the sub menu.
 
 #### Event Data
 
@@ -931,7 +931,7 @@ The opened item
 
 ### activate
 
-Fires when a sub menu gets opened and its animation finished.
+Fires when a sub menu or the ContextMenu gets opened and its animation finished.
 
 #### Event Data
 
@@ -994,7 +994,7 @@ The activated item
 
 ### deactivate
 
-Fires when a sub menu gets closed and its animation finished.
+Fires when a sub menu or the ContextMenu gets closed and its animation finished.
 
 #### Event Data
 
