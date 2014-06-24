@@ -70,6 +70,7 @@ Defines the text of the labels that are shown within the editor. Used primarily 
         createLink: "Insert hyperlink",
         unlink: "Remove hyperlink",
         insertImage: "Insert image",
+        insertFile: "Insert file",
         insertHtml: "Insert HTML",
         fontName: "Select font family",
         fontNameInherit: "(inherited font)",
@@ -90,6 +91,8 @@ Defines the text of the labels that are shown within the editor. Used primarily 
         directoryNotFound: "A directory with this name was not found.",
         imageWebAddress: "Web address",
         imageAltText: "Alternate text",
+        fileWebAddress: "Web address",
+        fileTitle: "Title",
         linkWebAddress: "Web address",
         linkText: "Text",
         linkToolTip: "ToolTip",
@@ -97,7 +100,15 @@ Defines the text of the labels that are shown within the editor. Used primarily 
         dialogInsert: "Insert",
         dialogUpdate: "Update",
         dialogButtonSeparator: "or",
-        dialogCancel: "Cancel"
+        dialogCancel: "Cancel",
+        dialogCancel: "Cancel",
+        createTable: "Create table",
+        addColumnLeft: "Add column on the left",
+        addColumnRight: "Add column on the right",
+        addRowAbove: "Add row above",
+        addRowBelow: "Add row below",
+        deleteRow: "Delete row",
+        deleteColumn: "Delete column"
       }
     });
     </script>
@@ -156,8 +167,8 @@ The available editor commands are:
         - **justifyLeft**, **justifyCenter**, **justifyRight**, **justifyFull**
 *   Lists
         - **insertUnorderedList**, **insertOrderedList**, **indent**, **outdent**
-*   Links and images
-        - **createLink**, **unlink**, **insertImage**
+*   Links, images and files
+        - **createLink**, **unlink**, **insertImage**, **insertFile**
 *   Table editing
         - **createTable**, **addColumnLeft**, **addColumnRight**, **addRowAbove**, **addRowBelow**, **deleteRow**, **deleteColumn**
 *   Structural markup and styles
@@ -1158,6 +1169,799 @@ Defines text for search box pleaceholder.
     <script>
     $("#editor").kendoEditor({
       imageBrowser: {
+        messages: {
+          search: "Find"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser `Object`
+
+Configuration for file browser dialog.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: "filebrowser/read",
+          destroy: "filebrowser/destroy",
+          create: "filebrowser/createDirectory",
+          uploadUrl: "filebrowser/upload",
+          fileUrl: "/content/files/{0}",
+        },
+        path: "/myInitialPath/"
+      }
+    });
+    </script>
+
+### fileBrowser.fileTypes `String` *(default: "*.*")*
+
+Defines the allowed file extensions.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        /* omitted for brevity */
+        fileTypes: "*.zip"
+      }
+    });
+    </script>
+
+### fileBrowser.path `String` *(default: "/")*
+
+Defines the initial folder to display, relative to the root.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        /* omitted for brevity */
+        path: "/uploads/"
+      }
+    });
+    </script>
+
+### fileBrowser.transport `Object`
+
+Specifies the settings for loading and saving data.
+
+### fileBrowser.transport.read `Object|String`
+
+Options or URL for remote file retrieval.
+
+> **Important:** The value of `transport.read` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+
+#### Example - specify a read URL
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: "/filebrowser/read"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.read.contentType `String` *(default: "application/x-www-form-urlencoded")*
+
+The content-type HTTP header sent to the server. Use `"application/json"` if the content is JSON.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: {
+            /* omitted for brevity */
+            contentType: "application/json"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.read.data `Object|String|Function`
+
+Data to be send to the server.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example - specify Data As Object
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: {
+            data: {
+              id: 42,
+              name: "John Doe"
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+#### Example - specify Data As Function
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: {
+            data: function() {
+              return { id: 42, name: "John Doe" };
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.read.dataType `String`
+
+The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: {
+            dataType: "json"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.read.type `String`
+
+The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: {
+            type: "POST"
+          }
+        }
+      }
+    });
+    </script>
+
+
+### fileBrowser.transport.read.url `String|Function`
+
+The remote url to call when fetching list of items.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: {
+            url: "/read"
+          }
+        }
+      }
+    });
+    </script>
+
+#### Example - specify Read URL As Function
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          read: {
+            url: function(params) {
+              // build url
+              return "/read?t=" + new Date().getTime();
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.uploadUrl `String`
+
+The URL which will handle the upload of the new files. If not specified the Upload button will not be displayed.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          uploadUrl: "/upload"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.fileUrl `String|Function`
+
+The URL responsible for serving the original file. A file name placeholder should be specified.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          fileUrl: "/content/files/{0}" //the placeholder will be replaced with the current virtual path and selected file name
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.destroy `Object|String`
+
+Options or URL which will handle the file and directory deletion. If not specified the delete button will not be present.
+
+> **Important:** The value of `transport.destroy` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: "/destroy"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.destroy.contentType `String`
+
+The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: {
+            contentType: "application/json"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.destroy.data `Object|String|Function`
+
+Data to be send to the server.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example - specify Data As Object
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: {
+            data: {
+              id: 42,
+              name: "John Doe"
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+#### Example - specify Data As Function
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: {
+            data: function() {
+              return {
+                id: 42,
+                name: "John Doe"
+              };
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.destroy.dataType `String`
+
+The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: {
+            dataType: "json"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.destroy.type `String`
+
+The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: {
+            type: "POST"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.destroy.url `String|Function`
+
+The remote url to call when creating a new record.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: {
+            url: "/destroy"
+          }
+        }
+      }
+    });
+    </script>
+
+#### Example - specify Destroy URL As Function
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          destroy: {
+            url: function(params) {
+              // build url
+              return "/destroy?t=" + new Date().getTime();
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.create `Object|String`
+
+Options or URL which will handle the directory creation. If not specified that create new folder button will not be present.
+
+> **Important:** The value of `transport.create` is passed to [jQuery.ajax](http://api.jquery.com/jQuery.ajax).
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: "/create"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.create.contentType `String`
+
+The content-type HTTP header sent to the server. Default is `"application/x-www-form-urlencoded"`. Use `"application/json"` if the content is JSON.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: {
+            contentType: "application/json"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.create.data `Object|String|Function`
+
+Data to be send to the server.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example - specify data as object
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: {
+            data: {
+              id: 42,
+              name: "John Doe"
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+#### Example - specify data as function
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: {
+            data: function() {
+              return {
+                id: 42,
+                name: "John Doe"
+              };
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.create.dataType `String`
+
+The type of data that you're expecting back from the server. Commonly used values are `"json"` and `"jsonp"`.
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: {
+            dataType: "json"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.create.type `String`
+
+The type of request to make (`"POST"`, `"GET`", `"PUT"` or `"DELETE"`), default is "GET".
+Refer to the [jQuery.ajax](http://api.jquery.com/jQuery.ajax) documentation for further info.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: {
+            type: "POST"
+          }
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.transport.create.url `String|Function`
+
+The remote url to call when creating a new record.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: {
+            url: "/create"
+          }
+        }
+      }
+    });
+    </script>
+
+#### Example - specify create url as function
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          create: {
+            url: function(params) {
+              // build url
+              return "/create?t=" + new Date().getTime();
+            }
+          }
+        }
+      }
+    });
+    </script>
+
+
+### fileBrowser.schema `Object`
+
+Set the object responsible for describing the file raw data format.
+
+### fileBrowser.schema.model `Object`
+
+Set the object which describes the file/directory entry fields. Note that a name, type and size fields should be set.
+
+### fileBrowser.schema.model.id `String`
+
+The name of the field which acts as an identifier.
+
+### fileBrowser.schema.model.fields `Object`
+
+### fileBrowser.schema.model.fields.name `Object|String`
+
+The field which contains the name of the file/directory
+
+### fileBrowser.schema.model.fields.name.field `String`
+
+The name of the field.
+
+### fileBrowser.schema.model.fields.name.parse `Function`
+
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+### fileBrowser.schema.model.fields.type `Object|String`
+
+The field which contains the type of the entry. Either *f* for file or *d* for directory.
+
+### fileBrowser.schema.model.fields.type.parse `Function`
+
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+### fileBrowser.schema.model.fields.type.field `String`
+
+The name of the field.
+
+### fileBrowser.schema.model.fields.size `Object|String`
+
+The field which contains the size of file.
+
+### fileBrowser.schema.model.fields.size.field `String`
+
+The name of the field.
+
+### fileBrowser.schema.model.fields.size.parse `Function`
+
+Specifies the function which will parse the field value. If not set default parsers will be used.
+
+### fileBrowser.messages `Object`
+
+Defines texts shown within the file browser.
+
+### fileBrowser.messages.uploadFile `String` *(default: "Upload")*
+
+Defines text for upload button.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          uploadFile: "Upload a file"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.orderBy `String` *(default: "Arrange by")*
+
+Defines text for order by label.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          orderBy: "Order by"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.orderByName `String` *(default: "Name")*
+
+Defines text for Name item of order by drop down list.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          orderByName: "Filename"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.orderBySize `String` *(default: "Size")*
+
+Defines text for Size item of order by drop down list.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          orderBySize: "File size"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.directoryNotFound `String` *(default: "A directory with this name was not found.")*
+
+Defines text for dialog shown when the directory not found error occurs.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          directoryNotFound: "Directory not found!"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.emptyFolder `String` *(default: "Empty Folder")*
+
+Defines text displayed when folder does not contain items.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          emptyFolder: "Folder is empty"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.deleteFile `String` *(default: "Are you sure you want to delete {0}?")*
+
+Defines text for dialog shown when the file or directory is deleted.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          deleteFile: "Are you sure? This action cannot be undone."
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.invalidFileType `String` *(default: "The selected file '{0}' is not valid. Supported file types are {1}.")*
+
+Defines text for dialog shown when an invalid file is set for upload.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          invalidFileType: "Supported file types are {1}. Please retry your upload."
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.overwriteFile `String` *(default: "A file with name '{0}' already exists in the current directory. Do you want to overwrite it?")*
+
+Defines text for dialog shown when an already existing file is set for upload.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        messages: {
+          overwriteFile: "Do you want to overwrite the file with name '{0}'?"
+        }
+      }
+    });
+    </script>
+
+### fileBrowser.messages.search `String` *(default: "Search")*
+
+Defines text for search box pleaceholder.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
         messages: {
           search: "Find"
         }
