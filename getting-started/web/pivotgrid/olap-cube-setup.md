@@ -6,7 +6,7 @@ description: A list of steps for OLAP cube setup and HTTP access
 
 #OLAP Cube setup steps
 
-This topic will show the required steps for OLAP cube setup using the MS [SSAS](http://technet.microsoft.com/en-us/library/ms175609(v=sql.90).aspx) tools.
+This topic shows the required steps for the OLAP cube setup using MS [SSAS](http://technet.microsoft.com/en-us/library/ms175609(v=sql.90).aspx).
 
 ## Install SQL Server Analysis Services
 
@@ -20,9 +20,13 @@ HTTP access to SQL Server Analysis Services can be enabled using a MSMDPUMP.ddl 
 
 ## Enable cross-domain access to the OLAP service
 
-To understand what CORS is check this [article](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
+For deeper understanding about **CORS** check this [article](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
 
-If you want to allow cross-domain requests to the OLAP servicem, then you will need to enable CORS behavior of your server. This topic will examine how to enable CORS of [IIS](http://www.iis.net/).
+>This step is **not** required if the cube will **not** be requested from different domains.
+
+If you want to allow cross-domain requests to the OLAP service, then you will need to enable CORS behavior of your server.
+
+*This topic will examine how to enable CORS of [IIS](http://www.iis.net/)* server.
 
 Cross-domain access requires to specify:
 
@@ -32,14 +36,14 @@ Cross-domain access requires to specify:
 - *User credentials*,  required if an authenticated access needs to be used
 - The server response to the *OPTIONS method* requests
 
-The above points can be combined in a two general steps:
+The above points can be combined in two general steps:
 
 1. Configure HTTP Response Headers (point 1 to 4)
 2. Configure OPTIONS method server response (point 5)
 
 ### Configure HTTP Response Headers
 
-The following list of HTTP Response Headers shows the settings required for enabling the IIS CORS behavior:
+The following list of HTTP Response Headers shows the settings required to enable the IIS CORS behavior:
 
 <table>
     <tbody>
@@ -117,3 +121,6 @@ In IIS OPTIONS method behavior should be configured via **OPTIONSVerbHandler** m
         </tr>
     </tbody>
 </table>
+
+## Next steps:
+- [Getting started](/getting-started/web/pivotgrid/overview)
