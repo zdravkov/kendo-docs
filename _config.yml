@@ -33,6 +33,7 @@ mapping:
     datetimepicker: "DateTimePicker"
     dropdownlist: "DropDownList"
     editor: "Editor"
+    gantt: "Gantt"
     grid: "Grid"
     listview: "ListView"
     maskedtextbox: "MaskedTextBox"
