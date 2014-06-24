@@ -148,6 +148,42 @@ Sets the data source of the dataSource.
     $treeMap->dataSource(array('schema' => $schema));
     ?>
 
+### itemCreated
+Fired when a tile has been created.
+For additional information check the [itemCreated](/kendo-ui/api/dataviz/treemap#events-itemCreated) event documentation.
+
+#### Returns
+`\Kendo\Dataviz\UI\TreeMap`
+
+#### Parameters
+
+##### $value `string|\Kendo\JavaScriptFunction`
+
+#### Example - using string which defines a JavaScript function
+
+    <?php
+    $treeMap = new \Kendo\Dataviz\UI\TreeMap('TreeMap');
+    $treeMap->itemCreated('function(e) { }');
+    ?>
+
+#### Example - using string which defines a JavaScript name
+    <script>
+        function onItemCreated(e) {
+            // handle the itemCreated event.
+        }
+    </script>
+    <?php
+    $treeMap = new \Kendo\Dataviz\UI\TreeMap('TreeMap');
+    $treeMap->itemCreated('onItemCreated');
+    ?>
+
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+
+    <?php
+    $treeMap = new \Kendo\Dataviz\UI\TreeMap('TreeMap');
+    $treeMap->itemCreated(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
 ### template
 The template which renders the treeMap tile content.The fields which can be used in the template are:
 
