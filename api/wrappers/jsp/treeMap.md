@@ -59,6 +59,22 @@ The data item field which contains the tile value.
 
 ## Event Attributes
 
+### itemCreated `String`
+
+Fired when a tile has been created.
+
+
+For additional information check the [itemCreated](/kendo-ui/api/dataviz/treemap#events-itemCreated) event documentation.
+
+#### Example
+    <kendo:treeMap itemCreated="handle_itemCreated">
+    </kendo:treeMap>
+    <script>
+        function handle_itemCreated(e) {
+            // Code to handle the itemCreated event.
+        }
+    </script>
+
 ### dataBound `String`
 
 Fired when the widget is bound to data from its dataSource.
@@ -76,6 +92,24 @@ For additional information check the [dataBound](/kendo-ui/api/dataviz/treemap#e
     </script>
 
 ## Event Tags
+
+### kendo:treeMap-itemCreated
+
+Fired when a tile has been created.
+
+
+For additional information check the [itemCreated](/kendo-ui/api/dataviz/treemap#events-itemCreated) event documentation.
+
+#### Example
+    <kendo:treeMap>
+        <kendo:treeMap-itemCreated>
+            <script>
+                function(e) {
+                    // Code to handle the itemCreated event.
+                }
+            </script>
+        </kendo:treeMap-itemCreated>
+    </kendo:treeMap>
 
 ### kendo:treeMap-dataBound
 
