@@ -1,5 +1,5 @@
 ---
-title: diagram-editable-rotate
+nav_title: diagram-editable-rotate
 ---
 
 # \<kendo:diagram-editable-rotate\>

@@ -1,5 +1,5 @@
 ---
-title: map-layerDefaults-bubble-style-stroke
+nav_title: map-layerDefaults-bubble-style-stroke
 ---
 
 # \<kendo:map-layerDefaults-bubble-style-stroke\>

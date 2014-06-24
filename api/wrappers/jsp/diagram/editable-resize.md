@@ -1,5 +1,5 @@
 ---
-title: diagram-editable-resize
+nav_title: diagram-editable-resize
 ---
 
 # \<kendo:diagram-editable-resize\>
