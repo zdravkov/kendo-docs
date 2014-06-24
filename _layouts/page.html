@@ -56,9 +56,9 @@ layout: index
         </script>
     </div>
     <div id="page-article">
+    {% breadcrumb %}
     {% if page.category == "api" %}<div id="markdown-toc"></div>{% endif %}
     {{ content }}
     </div>
-
     {% include footer.html %}
 </div>
