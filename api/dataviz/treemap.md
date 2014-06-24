@@ -97,7 +97,7 @@ Fired when a tile has been created.
 
 #### Event Data
 
-##### e.element `JQuery`
+##### e.element `jQuery|Element`
 
 The item html instance.
 
