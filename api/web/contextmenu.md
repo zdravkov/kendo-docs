@@ -10,6 +10,36 @@ Represents the Kendo UI ContextMenu widget. Inherits from [Widget](/api/framewor
 
 ## Configuration
 
+### alignToAnchor `Boolean`*(default: false)*
+
+Specifies that ContextMenu should be shown aligned to the target or the filter element if specified.
+
+#### Example
+
+    <div id="target">Target</div>
+    <ul id="context-menu">
+        <li>Item 1
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
+            alignToAnchor: true
+        });
+    </script>
+
 ### animation `Object`
 
 A collection of **Animation** objects, used to change default animations. A value of false will disable all animations in the widget.
@@ -31,6 +61,7 @@ ContextMenu content expands from the top down. Similar to slideIn.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -49,6 +80,7 @@ ContextMenu content expands from the top down. Similar to slideIn.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             animation: { 
                 open: { 
                     effects: "fadeIn" 
@@ -61,6 +93,7 @@ ContextMenu content expands from the top down. Similar to slideIn.
 
 The animation that will be used when closing sub menus.
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -79,6 +112,7 @@ The animation that will be used when closing sub menus.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             animation: { 
                 close: { 
                     effects: "slideIn:up" 
@@ -91,6 +125,7 @@ The animation that will be used when closing sub menus.
 
 Effect to be used when closing the popup.
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -109,6 +144,7 @@ Effect to be used when closing the popup.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             animation: { 
                 close: { 
                     effects: "slideIn:up" 
@@ -121,6 +157,7 @@ Effect to be used when closing the popup.
 
 Defines the close animation duration in milliseconds.
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -139,12 +176,13 @@ Defines the close animation duration in milliseconds.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
-             animation: { 
-                 open: {
-                     effects: "slideIn:down",
-                     duration: 100
-                 } 
-             }
+            target: "#target",
+            animation: { 
+                open: {
+                    effects: "slideIn:down",
+                    duration: 100
+                } 
+            }
          });
     </script>
 
@@ -152,6 +190,7 @@ Defines the close animation duration in milliseconds.
 
 The animation that will be used when opening sub menus.
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -170,6 +209,7 @@ The animation that will be used when opening sub menus.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             animation: { 
                 open: { 
                     effects: "slideIn:down" 
@@ -182,6 +222,7 @@ The animation that will be used when opening sub menus.
 
 Effect to be used when opening the popup.
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -200,6 +241,7 @@ Effect to be used when opening the popup.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             animation: { 
                 open: { 
                     effects: "slideIn:down" 
@@ -212,6 +254,7 @@ Effect to be used when opening the popup.
 
 Defines the open animation duration in milliseconds.
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -230,6 +273,7 @@ Defines the open animation duration in milliseconds.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             animation: { 
                 open: {
                     effects: "zoomIn",
@@ -245,6 +289,7 @@ Defines the open animation duration in milliseconds.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -263,6 +308,7 @@ Defines the open animation duration in milliseconds.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             closeOnClick: false
         });
     </script>
@@ -274,35 +320,55 @@ Refer to the example below for a list of the supported properties.
 
 #### Example
 
-    $(document).ready(function() {
-        $("#context-menu").kendoContextMenu({
-            dataSource:
-                [{
-                    text: "Item 1",
-                    cssClass: "myClass",                         // Add custom CSS class to the item, optional, added 2012 Q3 SP1.
-                    url: "http://www.kendoui.com"                // Link URL if navigation is needed, optional.
-                },
-                {
-                    text: "<b>Item 2</b>",
-                    encoded: false,                              // Allows use of HTML for item text
-                    content: "text"                              // content within an item
-                },
-                {
-                    text: "Item 3",
-                    imageUrl: "http://www.kendoui.com/test.jpg", // Item image URL, optional.
-                    items: [{                                    // Sub item collection
-                         text: "Sub Item 1"
+    <div id="target">Target</div>
+    <ul id="context-menu">
+        <li>Item 1
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $(document).ready(function() {
+            $("#context-menu").kendoContextMenu({
+                target: "#target",
+                dataSource:
+                    [{
+                        text: "Item 1",
+                        cssClass: "myClass",                         // Add custom CSS class to the item, optional, added 2012 Q3 SP1.
+                        url: "http://www.kendoui.com"                // Link URL if navigation is needed, optional.
                     },
                     {
-                         text: "Sub Item 2"
+                        text: "<b>Item 2</b>",
+                        encoded: false,                              // Allows use of HTML for item text
+                        content: "text"                              // content within an item
+                    },
+                    {
+                        text: "Item 3",
+                        imageUrl: "http://www.kendoui.com/test.jpg", // Item image URL, optional.
+                        items: [{                                    // Sub item collection
+                             text: "Sub Item 1"
+                        },
+                        {
+                             text: "Sub Item 2"
+                        }]
+                    },
+                    {
+                        text: "Item 4",
+                        spriteCssClass: "imageClass3"                // Item image sprite CSS class, optional.
                     }]
-                },
-                {
-                    text: "Item 4",
-                    spriteCssClass: "imageClass3"                // Item image sprite CSS class, optional.
-                }]
-        })
-    });
+            })
+        });
+    </script>
 
 ### direction `String`*(default: "default")*
 
@@ -311,6 +377,7 @@ The example below will initialize the sub menus to open to the left.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -329,7 +396,42 @@ The example below will initialize the sub menus to open to the left.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             direction: "left"
+        });
+    </script>
+
+### filter `String`
+
+Specifies ContextMenu filter selector - the ContextMenu will only be shown on items that satisfy the provided selector. 
+
+#### Show the ContextMenu on some elements inside the target 
+
+    <div id="target">Target
+        <div class="box"></div>
+        <div></div>
+        <div class="box"></div>
+    </div>
+    <ul id="context-menu">
+        <li>Item 1
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
+            filter: ".box"
         });
     </script>
 
@@ -339,6 +441,7 @@ Specifies the delay in ms before the sub menus are opened/closed - used to avoid
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -357,6 +460,7 @@ Specifies the delay in ms before the sub menus are opened/closed - used to avoid
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             hoverDelay: 200
         });
     </script>
@@ -367,6 +471,7 @@ Root menu orientation. Could be horizontal or vertical.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -385,6 +490,7 @@ Root menu orientation. Could be horizontal or vertical.
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             orientation: "horizontal"
         });
     </script>
@@ -397,6 +503,7 @@ its parent horizontally. You can also switch off the screen boundary detection c
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -415,7 +522,68 @@ its parent horizontally. You can also switch off the screen boundary detection c
     </ul>
     <script>
         $("#context-menu").kendoContextMenu({
+            target: "#target",
             popupCollision: false
+        });
+    </script>
+
+### showOn `String`
+
+Specifies the event or events on which ContextMenu should open. By default ContextMenu will show on *contextmenu* event on desktop and *hold* event on touch devices.
+Could be any pointer/mouse/touch event, also several, separated by spaces.
+
+#### Show the ContextMenu on left click 
+
+    <div id="target">Target</div>
+    <ul id="context-menu">
+        <li>Item 1
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
+            showOn: "click"
+        });
+    </script>
+
+### target `String|jQuery`*(default: "body")*
+
+Specifies the element on which ContextMenu should open. The default element is the document body.
+
+#### Show the ContextMenu on element with ID target
+
+    <div id="target">Target</div>
+    <ul id="context-menu">
+        <li>Item 1
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        $("#context-menu").kendoContextMenu({
+            target: "#target"
         });
     </script>
 
@@ -427,9 +595,10 @@ Appends an item to a **ContextMenu** in the specified referenceItem's sub menu (
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu"></ul>
     <script>
-        // get a reference to the ContextMenu widget
+        // get a reference to already initialized ContextMenu widget
         var contextMenu = $("#context-menu").data("kendoContextMenu");
         //
         contextMenu.append(
@@ -480,6 +649,7 @@ Closes a sub menu of a specified item(s) in a **ContextMenu**.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li id="Item1">Item 1
             <ul>
@@ -520,6 +690,7 @@ Prepares the **ContextMenu** for safe removal from DOM. Detaches all event handl
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -550,6 +721,7 @@ initialization by setting the **disabled="disabled"** on the desired menu item h
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -593,6 +765,7 @@ Inserts an item into a **ContextMenu** after the specified referenceItem.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -661,6 +834,7 @@ Inserts an item into a **ContextMenu** before the specified referenceItem.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -729,6 +903,7 @@ Opens a sub menu of a specified item(s) in a **ContextMenu**.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li id="Item1">Item 1
             <ul>
@@ -768,6 +943,7 @@ Removes a specified item(s) from a **ContextMenu**.
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li id="Item1">Item 1
             <ul>
@@ -801,11 +977,55 @@ Target item selector.
 
 `kendo.ui.ContextMenu` Returns the ContextMenu object to support chaining.
 
+### show
+
+Shows the **ContextMenu** at the specified coordinates in pixels or aligned to the specified anchor.
+
+#### Example
+
+    <div id="target">Target</div>
+    <ul id="context-menu">
+        <li id="Item1">Item 1
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        // get a reference to the ContextMenu widget
+        var contextMenu = $("#context-menu").data("kendoContextMenu");
+        // show the ContextMenu at 100px, 100px
+        contextMenu.show(100, 100);
+    </script>
+
+#### Parameters
+
+##### x `Number|Element|jQuery`
+
+X coordinate in pixels or the anchor element to which to align.
+
+##### y `Number`
+
+Y coordinate in pixels. If not specified, ContextMenu will assume the first parameter is an anchor element.
+
+#### Returns
+
+`kendo.ui.ContextMenu` Returns the ContextMenu object to support chaining.
+
 ## Events
 
 ### close
 
-Fires before a sub menu gets closed. You can cancel this event to prevent closure.
+Fires before a sub menu or the ContextMenu gets closed. You can cancel this event to prevent closure.
 
 #### Event Data
 
@@ -815,6 +1035,7 @@ The closed item
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -832,15 +1053,17 @@ The closed item
         </li>
     </ul>
     <script>
-         $("#context-menu").kendoContextMenu({
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
              close: function(e) {
                  // handle event
              }
-         });
+        });
     </script>
 
 #### To set after initialization
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -868,7 +1091,7 @@ The closed item
 
 ### open
 
-Fires before a sub menu gets opened. You can cancel this event to prevent opening the sub menu.
+Fires before a sub menu or the ContextMenu gets opened. You can cancel this event to prevent opening the sub menu.
 
 #### Event Data
 
@@ -878,6 +1101,7 @@ The opened item
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -895,15 +1119,17 @@ The opened item
         </li>
     </ul>
     <script>
-         $("#context-menu").kendoContextMenu({
-             open: function(e) {
-                 // handle event
-             }
-         });
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
+            open: function(e) {
+                // handle event
+            }
+        });
     </script>
 
 #### To set after initialization
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -931,7 +1157,7 @@ The opened item
 
 ### activate
 
-Fires when a sub menu gets opened and its animation finished.
+Fires when a sub menu or the ContextMenu gets opened and its animation finished.
 
 #### Event Data
 
@@ -941,6 +1167,7 @@ The activated item
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -958,15 +1185,17 @@ The activated item
         </li>
     </ul>
     <script>
-         $("#context-menu").kendoContextMenu({
-             activate: function(e) {
-                 // handle event
-             }
-         });
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
+            activate: function(e) {
+                // handle event
+            }
+        });
     </script>
 
 #### To set after initialization
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -994,7 +1223,7 @@ The activated item
 
 ### deactivate
 
-Fires when a sub menu gets closed and its animation finished.
+Fires when a sub menu or the ContextMenu gets closed and its animation finished.
 
 #### Event Data
 
@@ -1004,6 +1233,7 @@ The deactivated item
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -1021,15 +1251,17 @@ The deactivated item
         </li>
     </ul>
     <script>
-         $("#context-menu").kendoContextMenu({
-             deactivate: function(e) {
-                 // handle event
-             }
-         });
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
+            deactivate: function(e) {
+                // handle event
+            }
+        });
     </script>
 
 #### To set after initialization
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -1067,6 +1299,7 @@ The selected item
 
 #### Example
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>
@@ -1084,15 +1317,17 @@ The selected item
         </li>
     </ul>
     <script>
-         $("#context-menu").kendoContextMenu({
-             select: function(e) {
-                 // handle event
-             }
-         });
+        $("#context-menu").kendoContextMenu({
+            target: "#target",
+            select: function(e) {
+                // handle event
+            }
+        });
     </script>
 
 #### To set after initialization
 
+    <div id="target">Target</div>
     <ul id="context-menu">
         <li>Item 1
             <ul>

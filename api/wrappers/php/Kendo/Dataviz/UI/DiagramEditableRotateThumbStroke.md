@@ -1,5 +1,5 @@
 ---
-title: DiagramEditableRotateThumbStroke
+nav_title: DiagramEditableRotateThumbStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableRotateThumbStroke

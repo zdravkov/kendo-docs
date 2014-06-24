@@ -4,14 +4,14 @@ nav_title: Editor
 
 # \Kendo\UI\Editor
 
-A PHP wrapper for Kendo UI [Editor](/api/web/editor).
+A PHP wrapper for Kendo UI [Editor](/kendo-ui/api/web/editor).
 
-Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
+Inherits from [\Kendo\UI\Widget](/kendo-ui/api/wrappers/php/Kendo/UI/Widget).
 
 ## Usage
 
 To use Editor in a PHP page instantiate a new instance, configure it via the available
-configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
+configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
 
 ### Using Kendo Editor
 
@@ -32,7 +32,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
 
 ### change
 Fires when Editor is blurred and its content has changed.
-For additional information check the [change](/api/web/editor#events-change) event documentation.
+For additional information check the [change](/kendo-ui/api/web/editor#events-change) event documentation.
 
 #### Returns
 `\Kendo\UI\Editor`
@@ -59,7 +59,7 @@ For additional information check the [change](/api/web/editor#events-change) eve
     $editor->change('onChange');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
@@ -140,7 +140,7 @@ Stops output bufferring and sets the preceding markup as the content of the Edit
 
 ### execute
 Fires when an Editor command is executed.
-For additional information check the [execute](/api/web/editor#events-execute) event documentation.
+For additional information check the [execute](/kendo-ui/api/web/editor#events-execute) event documentation.
 
 #### Returns
 `\Kendo\UI\Editor`
@@ -167,11 +167,40 @@ For additional information check the [execute](/api/web/editor#events-execute) e
     $editor->execute('onExecute');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
     $editor->execute(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### fileBrowser
+
+Configuration for file browser dialog.
+
+#### Returns
+`\Kendo\UI\Editor`
+
+#### Parameters
+
+##### $value `\Kendo\UI\EditorFileBrowser|array`
+
+
+#### Example - using [\Kendo\UI\EditorFileBrowser](/kendo-ui/api/wrappers/php/Kendo/UI/EditorFileBrowser)
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $fileBrowser = new \Kendo\UI\EditorFileBrowser();
+    $fileTypes = 'value';
+    $fileBrowser->fileTypes($fileTypes);
+    $editor->fileBrowser($fileBrowser);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $fileTypes = 'value';
+    $editor->fileBrowser(array('fileTypes' => $fileTypes));
     ?>
 
 ### imageBrowser
@@ -186,7 +215,7 @@ Configuration for image browser dialog.
 ##### $value `\Kendo\UI\EditorImageBrowser|array`
 
 
-#### Example - using [\Kendo\UI\EditorImageBrowser](/api/wrappers/php/Kendo/UI/EditorImageBrowser)
+#### Example - using [\Kendo\UI\EditorImageBrowser](/kendo-ui/api/wrappers/php/Kendo/UI/EditorImageBrowser)
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
     $imageBrowser = new \Kendo\UI\EditorImageBrowser();
@@ -205,7 +234,7 @@ Configuration for image browser dialog.
 
 ### keydown
 Fires when the user depresses a keyboard key. Triggered multiple times if the user holds the key down.
-For additional information check the [keydown](/api/web/editor#events-keydown) event documentation.
+For additional information check the [keydown](/kendo-ui/api/web/editor#events-keydown) event documentation.
 
 #### Returns
 `\Kendo\UI\Editor`
@@ -232,7 +261,7 @@ For additional information check the [keydown](/api/web/editor#events-keydown) e
     $editor->keydown('onKeydown');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
@@ -241,7 +270,7 @@ For additional information check the [keydown](/api/web/editor#events-keydown) e
 
 ### keyup
 Fires when the user releases a keyboard key.
-For additional information check the [keyup](/api/web/editor#events-keyup) event documentation.
+For additional information check the [keyup](/kendo-ui/api/web/editor#events-keyup) event documentation.
 
 #### Returns
 `\Kendo\UI\Editor`
@@ -268,7 +297,7 @@ For additional information check the [keyup](/api/web/editor#events-keyup) event
     $editor->keyup('onKeyup');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
@@ -289,7 +318,7 @@ Defines the text of the labels that are shown within the editor. Used primarily 
 
 ### paste
 Fires before the content is pasted in the Editor.
-For additional information check the [paste](/api/web/editor#events-paste) event documentation.
+For additional information check the [paste](/kendo-ui/api/web/editor#events-paste) event documentation.
 
 #### Returns
 `\Kendo\UI\Editor`
@@ -316,7 +345,7 @@ For additional information check the [paste](/api/web/editor#events-paste) event
     $editor->paste('onPaste');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
@@ -325,7 +354,7 @@ For additional information check the [paste](/api/web/editor#events-paste) event
 
 ### select
 Fires when the Editor selection has changed.
-For additional information check the [select](/api/web/editor#events-select) event documentation.
+For additional information check the [select](/kendo-ui/api/web/editor#events-select) event documentation.
 
 #### Returns
 `\Kendo\UI\Editor`
@@ -352,7 +381,7 @@ For additional information check the [select](/api/web/editor#events-select) eve
     $editor->select('onSelect');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
@@ -371,7 +400,7 @@ Allows setting of serialization options.
 ##### $value `\Kendo\UI\EditorSerialization|array`
 
 
-#### Example - using [\Kendo\UI\EditorSerialization](/api/wrappers/php/Kendo/UI/EditorSerialization)
+#### Example - using [\Kendo\UI\EditorSerialization](/kendo-ui/api/wrappers/php/Kendo/UI/EditorSerialization)
     <?php
     $editor = new \Kendo\UI\Editor('Editor');
     $serialization = new \Kendo\UI\EditorSerialization();

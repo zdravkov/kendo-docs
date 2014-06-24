@@ -1,5 +1,5 @@
 ---
-title: DiagramEditableResize
+nav_title: DiagramEditableResize
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableResize

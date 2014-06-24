@@ -394,7 +394,7 @@ Appends an item/s to the PanelBar.
 
 #### Parameters
 
-##### item `String|Element|jQuery`
+##### item `String|Element|jQuery|Array`
 
 Target item, specified as the JSON representation of an object. You can pass item text, content or
 contentUrl here. Can handle an HTML string or array of such strings or JSON.
@@ -664,7 +664,7 @@ Inserts a PanelBar item after the specified referenceItem
 
 #### Parameters
 
-##### item `String|Element|jQuery`
+##### item `String|Element|jQuery|Array`
 
 Target item, specified as a JSON object. You can pass item text, content or contentUrl here. Can handle an HTML string or array of such strings or JSON.
 
@@ -730,7 +730,7 @@ Inserts a PanelBar item before the specified referenceItem
 
 #### Parameters
 
-##### item `String|Element|jQuery`
+##### item `String|Element|jQuery|Array`
 
 Target item, specified as a JSON object. You can pass item text, content or contentUrl here. Can handle an
 TML string or array of such strings or JSON.

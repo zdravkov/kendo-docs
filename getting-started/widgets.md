@@ -32,6 +32,8 @@ You can use any valid [jQuery selector](http://api.jquery.com/category/selectors
 
 > **Note:** A Kendo UI widget will be initialized for every element that matches the specified jQuery selector.
 
+> All Kendo UI widgets, which are defined with a **server wrapper**, are **initialized automatically**. If a widget is initialized again, this can cause unexpected side effects.
+
 ## Configuring Kendo UI widgets
 
 You can configure a Kendo UI widget by passing a configuration object as an argument of the jQuery plugin. That object is a set of key/value pairs which configure the Kendo UI widget.
@@ -81,7 +83,10 @@ To get a reference to a widget instance, use the [jQuery data](http://api.jquery
 
     <input id="autocomplete" />
     <script>
+    // initialization code here...
     $("#autocomplete").kendoAutoComplete(["Apples", "Oranges", "Grapes"]);
+    // ...
+    // get the widget instance / object
     var autocomplete = $("#autocomplete").data("kendoAutoComplete");
     </script>
 
@@ -89,6 +94,20 @@ The `$("#autocomplete").data("kendoAutoComplete")` statement returns the Kendo A
 
 > Kendo UI widget instances are associated with their elements via the [jQuery data](http://api.jquery.com/data/) method. The key passed to the jQuery data method
 is the name of the jQuery plugin itself - "kendoAutoComplete", "kendoGrid" etc.
+
+Please be careful **not** to initialize an existing Kendo UI widget instance again. This is especially applicable to Kendo UI server wrappers, or scenarios in which a widget is created in an event handler that can be
+executed multiple times. Duplicate initialization can lead to unexpected side effects. For example:
+
+    <input id="autocomplete" />
+    <script>
+    // initialization code here...
+    $("#autocomplete").kendoAutoComplete(["Apples", "Oranges", "Grapes"]);
+    // ...
+    // correct:
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+    // incorrect:
+    var autocomplete = $("#autocomplete").kendoAutoComplete().data("kendoAutoComplete");
+    </script>
 
 ## Getting reference to an unknown Kendo UI widget
 

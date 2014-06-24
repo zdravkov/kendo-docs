@@ -5,8 +5,17 @@ function expandNavigation(url) {
         var tree = this;
 
         if (segments.length > 1) {
+            var path = segments.slice();
             tree.expandPath(segments, function() {
-                tree.dataSource.get(page).set("selected", true);
+                var dataSource = tree.dataSource;
+                var node;
+
+                for (var idx = 0; idx < path.length; idx++) {
+                   node = dataSource.get(path[idx]);
+                   dataSource = node.children;
+                }
+
+                node.set("selected", true);
             });
         } else {
             tree.dataSource.get(page).set("selected", true);

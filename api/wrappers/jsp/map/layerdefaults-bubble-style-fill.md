@@ -1,5 +1,5 @@
 ---
-title: map-layerDefaults-bubble-style-fill
+nav_title: map-layerDefaults-bubble-style-fill
 ---
 
 # \<kendo:map-layerDefaults-bubble-style-fill\>

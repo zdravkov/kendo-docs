@@ -855,7 +855,7 @@ The target tab(s), specified as a selector, jQuery object or index in the tab gr
 
 ### activate
 
-Triggered just after a tab is being made visible, but before the end of the animation
+Triggered after a tab is being made visible and its animation complete. Before *Q2 2014* this event was invoked *after tab show*, but *before* the end of the animation.
 
 #### Event Data
 
@@ -1064,3 +1064,69 @@ The content element of the tab going to be selected.
         var tabStrip = $("#tabstrip").kendoTabStrip().data("kendoTabStrip");
         tabStrip.bind("select", onSelect);
     </script>
+
+### show
+
+Triggered just after a tab is being made visible, but before the end of the animation. Before *Q2 2014* this event was called *activate*.
+
+#### Event Data
+
+##### e.item `Element`
+
+The activated tab.
+
+##### e.contentElement `Element`
+
+The content element of the activated tab.
+
+#### Attach show event handler during initialization; detach via unbind()
+
+    <div id="tabstrip">
+        <ul>
+            <li>Tab 1</li>
+            <li>Tab 2</li>
+        </ul>
+        <div>Content 1</div>
+        <div>Content 2</div>
+    </div>
+
+    <script>
+        // event handler for show
+        var onShow = function(e) {
+            // access the shown item via e.item (Element)
+
+            // detach show event handler via unbind()
+            tabStrip.unbind("show", onShow);
+        };
+
+        // attach show event handler during initialization
+        var tabStrip = $("#tabStrip").kendoTabStrip({
+            show: onShow
+        }).data("kendoTabStrip");
+    </script>
+
+#### Attach show event handler via bind(); detach via unbind()
+
+    <div id="tabstrip">
+        <ul>
+            <li>Tab 1</li>
+            <li>Tab 2</li>
+        </ul>
+        <div>Content 1</div>
+        <div>Content 2</div>
+    </div>
+
+    <script>
+        // event handler for show
+        var onShow = function(e) {
+            // access the shown item via e.item (Element)
+
+            // detach show event handler via unbind()
+            tabStrip.unbind("show", onShow);
+        };
+
+        // attach show event handler via bind()
+        var tabStrip = $("#tabStrip").kendoTabStrip().data("kendoTabStrip");
+        tabStrip.bind("show", onShow);
+    </script>
+

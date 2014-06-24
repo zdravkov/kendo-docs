@@ -1,8 +1,7 @@
-
+---
 nav_title: kendo.ui.Gantt
 title: Configuration, methods and events of Kendo UI Gantt
 description: Code examples for Gantt UI widget configuration, learn how to use methods and which events to set once the gantt UI widget detail is initialized.
-relatedDocs: gs-web-gantt-overview
 ---
 
 # kendo.ui.Gantt
@@ -18,6 +17,25 @@ data source is fired. By default the widget will bind to the data source specifi
 
 > Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ],
+      autoBind: false
+    });
+    </script>
+
 ### columns `Array`
 
 The configuration of the gantt columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
@@ -25,14 +43,116 @@ The configuration of the gantt columns. An array of JavaScript objects or string
 
 > If this setting is **not** specified the gantt will create a single column for the task title.
 
+#### Example - two columns bound to the "title" and "start" fields
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: ["title" , "start"]
+    });
+    </script>
+
 ### columns.field `String`
 
 The field to which the column is bound. The value of this field is displayed by the column during data binding.
 **The field name should be a valid Javascript identifier and should contain no spaces, no special characters, and the first character should be a letter.**
 
+#### Example - three columns bound to the "title", "start" and "end" fields
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: ["title" , "start", "end"]
+    });
+    </script>
+
 ### columns.title `String`
 
 The text that is displayed in the column header cell. If not set the [field](#configuration-columns.field) is used.
+
+#### Example - set the title of a column
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: [ { field: "title", title: "Task Title" } ]
+    });
+    </script>
 
 ### columns.format `String`
 
@@ -41,13 +161,219 @@ The format that is applied to the value before it is displayed. Takes the form "
 
 > The [kendo.format](/kendo-ui/api/framework/kendo#methods-format) function is used to format the value.
 
+#### Example - set format for the start and end column
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 3,
+          orderId: 2,
+          parentId: null,
+          title: "Task3",
+          start: new Date("2014/6/17 13:00"),
+          end: new Date("2014/6/17 15:00")
+        }
+        
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: [ 
+        { field: "start", title: "Start Time", format: "{0:MM/dd hh:mm}" },
+        { field: "end", title: "End Time", format: "{0:MM/dd hh:mm}" }
+      ]
+    });
+    </script>
+
 ### columns.width `String|Number`
 
 The width of the column. Numeric values are treated as pixels.
 
+#### Example - set the column width as a string
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: [ 
+        { field: "title", title: "Title", width: "200px" },
+        { field: "start", title: "Task Start Time", width: "200px" },
+        { field: "end", title: "Task End Time", width: "200px" }
+      ]
+    });
+    </script>
+
+#### Example - set the column width as a number
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: [ 
+        { field: "title", title: "Title", width: 200 },
+        { field: "start", title: "Task Start Time", width: 200 },
+        { field: "end", title: "Task End Time", width: 200 }
+      ]
+    });
+    </script>
+
 ### columns.editable `Boolean` *(default: false)*
 
 Specifies whether this column can be edited by the user.
+
+#### Example - set "title" column as editable
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: [ 
+        { field: "title", title: "Title", editable: true }
+      ]
+    });
+    </script>
+  
+### columns.sortable `Boolean` *(default: false)*
+
+If set to `true` the user could sort this column by clicking its header cells. By default sorting is disabled.
+
+#### Example - set "start" column as sortable
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 3,
+          orderId: 2,
+          parentId: null,
+          title: "Task3",
+          start: new Date("2014/6/17 13:00"),
+          end: new Date("2014/6/17 15:00")
+        }      
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      columns: [ 
+        { field: "title", title: "Title", sortable: true }
+      ]
+    });
+    </script>
 
 ### dataSource `Object|Array|kendo.data.GanttDataSource`
 
@@ -60,41 +386,478 @@ If the `dataSource` option is an existing [kendo.data.GanttDataSource](/kendo-ui
 
 > The Kendo UI Gantt widget can be bound *only* to a `kendo.data.GanttDataSource`. An exception will be thrown if the `dataSource` option is set to a `kendo.data.DataSource` instance.
 
+#### Example - set dataSource as a JavaScript object
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: {
+        transport: {
+          read: {
+            url: "http://demos.telerik.com/kendo-ui/service/gantttasks",
+            dataType: "jsonp"
+          }
+        },
+        schema: {
+          model: {
+            id: "id",
+            fields: {
+              id: { from: "ID", type: "number" },
+              orderId: { from: "OrderID", type: "number", validation: { required: true } },
+              parentId: { from: "ParentID", type: "number", validation: { required: true } },
+              start: { from: "Start", type: "date" },
+              end: { from: "End", type: "date" },
+              title: { from: "Title", defaultValue: "", type: "string" },
+              percentComplete: { from: "PercentComplete", type: "number" },
+              summary: { from: "Summary" },
+              expanded: { from: "Expanded" }
+            }
+          }
+        }
+      },
+      editable: false
+    });
+    </script>
+
+#### Example - set dataSource as a JavaScript array
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        },
+        {
+          id: 3,
+          orderId: 2,
+          parentId: null,
+          title: "Task3",
+          start: new Date("2014/6/17 13:00"),
+          end: new Date("2014/6/17 15:00")
+        }      
+      ],
+      editable: false
+    });
+    </script>
+
+#### Example - set dataSource as an existing `kendo.data.GanttDataSource` instance
+
+    <div id="gantt"></div>
+    <script>   
+    var dataSource = new kendo.data.GanttDataSource({
+      transport: {
+        read: {
+          url: "http://demos.telerik.com/kendo-ui/service/gantttasks",
+          dataType: "jsonp"
+        }
+      },
+      schema: {
+        model: {
+          id: "id",
+          fields: {
+            id: { from: "ID", type: "number" },
+            orderId: { from: "OrderID", type: "number", validation: { required: true } },
+            parentId: { from: "ParentID", type: "number", validation: { required: true } },
+            start: { from: "Start", type: "date" },
+            end: { from: "End", type: "date" },
+            title: { from: "Title", defaultValue: "", type: "string" },
+            percentComplete: { from: "PercentComplete", type: "number" },
+            summary: { from: "Summary" },
+            expanded: { from: "Expanded" }
+          }
+        }
+      }
+    });    
+    $("#gantt").kendoGantt({
+      dataSource:dataSource,
+      editable: false
+    });
+    </script>
+  
+### dependencies `Object|Array|kendo.data.GanttDependencyDataSource`
+
+The data source of the widget which contains the dependencies. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.GanttDependencyDataSource](/kendo-ui/api/framework/ganttdependencydatasource)
+instance.
+
+If the `dependencies` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.GanttDependencyDataSource](/kendo-ui/api/framework/ganttdependencydatasource) instance using that value as data source configuration.
+
+If the `dependencies` option is an existing [kendo.data.GanttDependencyDataSource](/kendo-ui/api/framework/ganttdependencydatasource) instance the widget will use that instance and will **not** initialize a new one.
+
+> The Kendo UI Gantt dependencies can be bound *only* to a `kendo.data.GanttDependencyDataSource`. An exception will be thrown if the `dataSource` option is set to a `kendo.data.DataSource` instance.
+
+#### Example - set `dependencies` as a JavaScript object
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: {
+        transport: {
+          read: {
+            url: "http://demos.telerik.com/kendo-ui/service/gantttasks",
+            dataType: "jsonp"
+          }
+        },
+        schema: {
+          model: {
+            id: "id",
+            fields: {
+              id: { from: "ID", type: "number" },
+              orderId: { from: "OrderID", type: "number", validation: { required: true } },
+              parentId: { from: "ParentID", type: "number", validation: { required: true } },
+              start: { from: "Start", type: "date" },
+              end: { from: "End", type: "date" },
+              title: { from: "Title", defaultValue: "", type: "string" },
+              percentComplete: { from: "PercentComplete", type: "number" },
+              summary: { from: "Summary" },
+              expanded: { from: "Expanded" }
+            }
+          }
+        }
+      },
+      dependencies: {
+        transport: {
+          read: {
+            url: "http://demos.telerik.com/kendo-ui/service/ganttdependencies",
+            dataType: "jsonp"
+          }
+        },
+        schema: {
+          model: {
+            id: "id",
+            fields: {
+              predecessorId: { from: "PredecessorID", type: "number" },
+              successorId: { from: "SuccessorID", type: "number" },
+              type: { from: "Type", type: "number" }
+            }
+          }
+        }
+      },
+      views: [{ type: "week", selected: true }],
+      editable: false
+    });
+    </script>
+  
+#### Example - set `dependencies` as a JavaScript array
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      editable: false
+    });
+    </script>
+  
+#### Example - set `dependencies` as an existing `kendo.data.GanttDependencyDataSource` instance  
+
+    <div id="gantt"></div>  
+    <script>   
+    var dataSource = new kendo.data.GanttDataSource({
+      transport: {
+        read: {
+          url: "http://demos.telerik.com/kendo-ui/service/gantttasks",
+          dataType: "jsonp"
+        }
+      },
+      schema: {
+        model: {
+          id: "id",
+          fields: {
+            id: { from: "ID", type: "number" },
+            orderId: { from: "OrderID", type: "number", validation: { required: true } },
+            parentId: { from: "ParentID", type: "number", validation: { required: true } },
+            start: { from: "Start", type: "date" },
+            end: { from: "End", type: "date" },
+            title: { from: "Title", defaultValue: "", type: "string" },
+            percentComplete: { from: "PercentComplete", type: "number" },
+            summary: { from: "Summary" },
+            expanded: { from: "Expanded" }
+          }
+        }
+      }
+    });
+    var dependencyDataSource = new kendo.data.GanttDependencyDataSource({
+      transport: {
+        read: {
+          url: "http://demos.telerik.com/kendo-ui/service/ganttdependencies",
+          dataType: "jsonp"
+        }
+      },
+      schema: {
+        model: {
+          id: "id",
+          fields: {
+            predecessorId: { from: "PredecessorID", type: "number" },
+            successorId: { from: "SuccessorID", type: "number" },
+            type: { from: "Type", type: "number" }
+          }
+        }
+      }
+    });
+    $("#gantt").kendoGantt({
+      dataSource:dataSource,
+      dependencies: dependencyDataSource,
+      views: [{ type: "week", selected: true }],
+      editable: false
+    });
+    </script>
+
 ### editable `Boolean` *(default: true)*
 
-If set to `true` the user would be able to create new tasks and modify or delete existing ones.
+If set to `false` the user won't be able to create, modify or delete tasks and dependencies.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      editable: false
+    });
+    </script>
 
 ### workDayStart `Date`
 
 Sets the start of the work day.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ],
+      workDayStart: new Date("2014/6/17 10:00")
+    });
+    </script>
+
 ### workDayEnd `Date`
 
 Sets the end of the work day.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ],
+      workDayEnd: new Date("2014/6/17 15:00")
+    });
+    </script>
 
 ### workWeekStart `Number` *(default: 1)*
 
 The start of working week (index based).
 
+> The `workWeekEnd` option is supported when [showWorkDays](#configuration-showWorkDays) is `true`.
+
+#### Example 
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/24 11:00")
+        }
+      ],
+      workWeekStart: 2
+    });
+    </script>
+
 ### workWeekEnd `Number` *(default: 5)*
 
 The end of working week (index based).
+
+> The `workWeekEnd` option is supported when [showWorkDays](#configuration-showWorkDays) is `true`.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/24 11:00")
+        }
+      ],
+      workWeekEnd: 4
+    });
+    </script>
 
 ### hourSpan `Number` *(default: 1)*
 
 The span of an hour slot.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+        dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 15:00")
+        }
+      ],
+      hourSpan: 2
+    });
+    </script>
+
 ### snap `Boolean` *(default: true)*
 
-If `true`, tasks snap to time slots, otherwise tasks can have arbitrary duration.
+If set to true the gantt will snap tasks to the nearest slot during dragging (resizing or moving). Set it to false to allow free moving and resizing of tasks.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+         orderId: 0,
+         parentId: null,
+        title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      snap: false
+    });
+    </script>
 
 ### height `Number|String` *(default: 600)*
 
 The height of the widget. Numeric values are treated as pixels.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      height: 400    
+    });
+    </script>
+
 ### listWidth `String|Number` *(default: "30%")*
 
 The width of the task list. Numeric values are treated as pixels.
+
+##### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      listWidth: 400    
+    });
+    </script>
 
 ### messages `Object`
 
@@ -108,13 +871,76 @@ The configuration of the gantt view messages. Use this option to customize or lo
 
 The text similar to "Day" displayed as gantt "day" view title.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          day: "Day view"
+        }
+      }
+    });
+    </script>
+
 ### messages.views.week `String` *(default: "Week")*
 
 The text similar to "Week" displayed as gantt "week" view title.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          week: "Week view"
+        }
+      }
+    });
+    </script>
+
 ### messages.views.month `String` *(default: "Month")*
 
 The text similar to "Month" displayed as gantt "month" view title.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          month: "Month view"
+        }
+      }
+    });
+    </script>
 
 ### messages.actions `Object`
 
@@ -124,44 +950,384 @@ The configuration of the gantt action messages. Use this option to customize or 
 
 The text similar to "Append" displayed as gantt "append" buttons.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        actions: {
+          append: "Add new Task"
+        }
+      }
+    });
+    </script>
+
 ### messages.actions.addChild `String` *(default: "Add Child")*
 
 The text similar to "Add child" displayed as gantt "add child" buttons.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        actions: {
+          addChild: "Add new Child"
+        }
+      }
+    });
+    </script>
 
 ### messages.actions.insertBefore `String` *(default: "Add Above")*
 
 The text similar to "Add above" displayed as gantt "add above" buttons.
 
-### messages.actions.insetAfter `String` *(default: "Add Below")*
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        actions: {
+          insertBefore: "Add Task Above"
+        }
+      }
+    });
+    </script>
+
+### messages.actions.insertAfter `String` *(default: "Add Below")*
 
 The text similar to "Add below" displayed as gantt "add below" buttons.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        actions: {
+          insertAfter: "Add Task Below"
+        }
+      }
+    });
+    </script>
+
 ### selectable `Boolean` *(default: true)*
 
-If set to `true` the user would be able to select tasks in the gantt. This triggers the [change event](#events-change).
+If set to `false` the user won't be able to select tasks in the gantt. By default selection is enabled and triggers the [change event](#events-change).
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      selectable: false
+    });
+    </script>
 
 ### showWorkDays `Boolean` *(default: true)*
 
-If set to `false`, the week and month views will show all days of the week. By default these views display only business days.
+If set to `false`, gantt views will show all days of the week. By default the views display only business days.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/23 11:00")
+      }],
+      showWorkDays: false
+    });
+    </script>
 
 ### showWorkHours `Boolean` *(default: true)*
 
 If set to `false`, the day view will show all hours of the day. By default the view displays only business hours.
 
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+         orderId: 0,
+         parentId: null,
+        title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 18:00")
+      }],
+      showWorkHours: false
+    });
+    </script>
+
 ### views `Array`
 
 The views displayed by the gantt and their configuration. The array items can be either objects specifying the view configuration or strings representing the view types (assuming default configuration).
-By default the Kendo UI Gantt widget displays the "day" and "week" views.
-
-### views.selected `Boolean` *(default: false)*
-
-If set to `true` the view will be initially selected by the gantt widget.
-
-> If more than one view is selected then last of them will prevail.
+By default the Kendo UI Gantt widget displays all three ("day", "week", and "month") views.
 
 ### views.type `String`
 
 The type of the view. The built-in views are: "day", "week", and "month".
+
+### views.selected `Boolean` *(default: false)*
+
+If set to `true` the view will be initially selected by the gantt widget. The default selected view is "day".
+
+> If more than one view is selected then last of them will prevail.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/20 11:00")
+      }],
+      views: [
+        { type: "day" },
+        { type: "week", selected: true },
+        { type: "month" }
+      ]
+    });
+    </script>
+  
+### views.slotSize `Number|String` *(default: 100)*
+
+The size of the time slot headers. Values are treated as pixels.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/20 11:00")
+      }],
+      views: [
+        { type: "day" },
+        { type: "week", selected: true, slotSize: 130 },
+        { type: "month" }
+      ]
+    });
+    </script>
+  
+### views.timeHeaderTemplate `String|Function`
+
+The [template](/kendo-ui/api/framework/kendo#methods-template used to render the time slots in "day" view
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/17 11:00")
+      }],
+      views: [
+        { type: "day", timeHeaderTemplate: kendo.template("#=kendo.toString(start, 'T')#") },
+        { type: "week" },
+        { type: "month" }
+      ]
+    });
+    </script>
+  
+### views.dayHeaderTemplate `String|Function`  
+
+The [template](/kendo-ui/api/framework/kendo#methods-template used to render the day slots in "day" and "week" views.
+
+#### Example - dayHeaderTemplate set for "day" view.
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/17 11:00")
+      }],
+      views: [
+        { 
+          type: "day", 
+          dayHeaderTemplate: kendo.template("#=kendo.toString(start, 'D')#") 
+        },
+        { type: "week" },
+        { type: "month" }
+      ]
+    });
+    </script>
+  
+#### Example - dayHeaderTemplate set for "day" view.
+
+    <div id="gantt"></div>
+    <script>      
+      $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/22 11:00")
+      }],
+      views: [
+        { type: "day"},
+        { type: "week", 
+          dayHeaderTemplate: kendo.template("#=kendo.toString(start, 'd')#"), 
+          selected: true 
+        },
+        { type: "month" }
+      ]
+    });
+    </script>
+  
+### views.weekHeaderTemplate `String|Function`  
+
+The [template](/kendo-ui/api/framework/kendo#methods-template used to render the week slots in "week" and "month" views.
+
+#### Example - weekHeaderTemplate set for "week" view
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/22 11:00")
+      }],
+      views: [
+        { type: "day"},
+        { type: "week", 
+          weekHeaderTemplate: "#=kendo.toString(start, 'D')# - #=kendo.toString(kendo.date.addDays(end, -1), 'D')#", 
+          selected: true 
+        },
+        { type: "month" }
+      ]
+    });
+    </script>
+
+#### Example - weekHeaderTemplate set for "month" view
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      views: [
+        { type: "day"},
+        { type: "week"},
+        { 
+          type: "month",         
+          weekHeaderTemplate: "#=kendo.toString(start, 'M/dd')# - #=kendo.toString(kendo.date.addDays(end, -1), 'M/dd')#", 
+          selected: true
+        }
+      ]
+    });
+    </script>
+  
+### views.monthHeaderTemplate `String|Function`  
+
+The [template](/kendo-ui/api/framework/kendo#methods-template used to render the month slots in "month" views.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      views: [
+        { type: "day"},
+        { type: "week"},
+        { 
+          type: "month",         
+          monthHeaderTemplate: "#=kendo.toString(start, 'MMMM, yyyy')#",    
+          selected: true
+        }
+      ]
+    });
+    </script>
 
 ## Fields
 
@@ -173,6 +1339,180 @@ The [data source](/kendo-ui/api/framework/ganttdatasource) of the widget. Config
 
 > Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
 
+#### Example - add a gantt task to the data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/6/17 11:00")
+      }]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.dataSource.add({ 
+      parentId: null,
+      start: new Date("2014/6/17 12:00"), 
+      end: new Date("2014/6/17 14:00"), 
+      title: "New Task"  
+    });          
+    </script>
+    
+#### Example - update a gantt task in the data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataSource.at(0);
+    task.set("title", "Project start");
+    </script>
+    
+#### Example - update multiple gantt task fields with the update method
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataSource.at(0);
+    gantt.dataSource.update(task, { 
+      title: "Project start",
+      start: new Date("2014/6/17 12:00"),
+      end: new Date("2014/6/17 14:00")
+    });
+    </script>   
+    
+#### Example - remove a gantt task from the data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataSource.at(0);
+    gantt.dataSource.remove(task);
+    </script>
+
+### dependencies `kendo.data.GanttDependencyDataSource`
+
+The [dependencies data source](/kendo-ui/api/framework/ganttdependencydatasource) of the widget. Configured via the [dependencies](#configuration-dependencies) option.
+
+> Changes of the data source will be reflected in the widget.
+
+> Assigning a new data source would have no effect. Use the [setDependenciesDataSource](#methods-setDependenciesDataSource) method instead.
+
+#### Example - add a dependency to the dependencies data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.dependencies.add({
+      predecessorId: 1,
+      successorId: 2,
+      type: 1
+    });
+    </script>
+
+#### Example - remove a dependency from the dependencies data source
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var dependency = gantt.dependencies.at(0);
+    gantt.dependencies.remove(dependency);
+    </script>
+
 ## Methods
 
 ### clearSelection
@@ -183,22 +1523,22 @@ Clears the currently selected task or dependency.
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      // select the first task
-      gantt.select("tr:eq(0)");
-      gantt.clearSelection();
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    // select the first task
+    gantt.select("tr:eq(0)");
+    gantt.clearSelection();
     </script>
 
 ### dataItem
@@ -219,21 +1559,21 @@ A string, DOM element or jQuery object which represents the table row. A string 
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      var task = gantt.dataItem("tr:eq(0)");
-      console.log(task.title); // displays "Task1"
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataItem("tr:eq(0)");
+    console.log(task.title); // displays "Task1"
     </script>
 
 ### destroy
@@ -246,20 +1586,20 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      gantt.destroy();
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.destroy();
     </script>
 
 ### refresh
@@ -270,20 +1610,20 @@ Renders all tasks and dependencies using the current data items.
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      gantt.refresh();
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.refresh();
     </script>
 
 ### refreshDependencies
@@ -294,35 +1634,35 @@ Renders all dependencies using the current data items.
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          },
-          {
-            id: 2,
-            orderId: 1,
-            parentId: null,
-            title: "Task2",
-            start: new Date("2014/6/17 12:00"),
-            end: new Date("2014/6/17 14:00")
-          }
-        ],
-        dependencies: [
-          {
-            predecessorId: 1,
-            successorId: 2,
-            type: 1
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      gantt.refreshDependencies();
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.refreshDependencies();
     </script>
 
 ### removeDependency
@@ -339,36 +1679,36 @@ The dependency which should be removed. Also accepts a string which is the `uid`
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          },
-          {
-            id: 2,
-            orderId: 1,
-            parentId: null,
-            title: "Task2",
-            start: new Date("2014/6/17 12:00"),
-            end: new Date("2014/6/17 14:00")
-          }
-        ],
-        dependencies: [
-          {
-            predecessorId: 1,
-            successorId: 2,
-            type: 1
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      var dependency = gantt.dependencies.at(0);
-      gantt.removeDependency(dependency);
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var dependency = gantt.dependencies.at(0);
+    gantt.removeDependency(dependency);
     </script>
 
 ### removeTask
@@ -385,21 +1725,21 @@ The task which should be removed. Also accepts a string which is the `uid` of th
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      var task = gantt.dataSource.at(0);
-      gantt.removeTask(task);
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var task = gantt.dataSource.at(0);
+    gantt.removeTask(task);
     </script>
 
 ### select
@@ -420,20 +1760,20 @@ A string, DOM element or jQuery object which represents the table row. A string 
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      gantt.select("tr:first");
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.select("tr:first");
     </script>
 
 ### setDataSource
@@ -450,21 +1790,21 @@ The tasks data source to which the widget should be bound.
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt();
-      var gantt = $("#gantt").data("kendoGantt");
-      var dataSource = new kendo.data.GanttDataSource({
-        data: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      gantt.setDataSource(dataSource);
+    $("#gantt").kendoGantt();
+    var gantt = $("#gantt").data("kendoGantt");
+    var dataSource = new kendo.data.GanttDataSource({
+      data: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    gantt.setDataSource(dataSource);
     </script>
 
 ### setDependenciesDataSource
@@ -481,37 +1821,37 @@ The dependencies data source to which the widget should be bound.
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          },
-          {
-            id: 2,
-            orderId: 1,
-            parentId: null,
-            title: "Task2",
-            start: new Date("2014/6/17 12:00"),
-            end: new Date("2014/6/17 14:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      var dependenciesDataSource = new kendo.data.GanttDependencyDataSource({
-        data: [
-          {
-            predecessorId: 1,
-            successorId: 2,
-            type: 1
-          }
-        ]
-      });
-      gantt.setDependenciesDataSource(dependenciesDataSource);
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    var dependenciesDataSource = new kendo.data.GanttDependencyDataSource({
+      data: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ]
+    });
+    gantt.setDependenciesDataSource(dependenciesDataSource);
     </script>
 
 ### view
@@ -532,20 +1872,20 @@ The view type to select.
 
     <div id="gantt"></div>
     <script>      
-      $("#gantt").kendoGantt({
-        dataSource: [
-          {
-            id: 1,
-            orderId: 0,
-            parentId: null,
-            title: "Task1",
-            start: new Date("2014/6/17 9:00"),
-            end: new Date("2014/6/17 11:00")
-          }
-        ]
-      });
-      var gantt = $("#gantt").data("kendoGantt");
-      gantt.view("month");
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.view("month");
     </script>
     
 ## Events
@@ -577,8 +1917,8 @@ If invoked prevents the data bind action and `dataBound` event will not fire.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       dataBinding: function(e) {
@@ -601,8 +1941,8 @@ If invoked prevents the data bind action and `dataBound` event will not fire.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]
     });
@@ -633,8 +1973,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       dataBound: function(e) {
@@ -657,8 +1997,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]
     });
@@ -699,8 +2039,8 @@ If invoked prevents the add action.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       add: function(e) {
@@ -722,8 +2062,8 @@ If invoked prevents the add action.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]
     });
@@ -766,8 +2106,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       columns: [ { field: "title", title: "Title", editable: true } ],
@@ -791,8 +2131,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       columns: [ { field: "title", title: "Title", editable: true } ]
@@ -971,8 +2311,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       columns: [ { field: "title", title: "Title", editable: true } ]
@@ -1016,8 +2356,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       save: function(e) {
@@ -1040,8 +2380,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]
     });
@@ -1072,16 +2412,16 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         },
         {
           id: 2,
           orderId: 1,
           parentId: null,
           title: "Task2",
-          start: new Date("2014/6/17 15:00"),
-          end: new Date("2014/6/17 16:00")
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
         }
       ],
       change: function(e) {
@@ -1116,16 +2456,16 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         },
         {
           id: 2,
           orderId: 1,
           parentId: null,
           title: "Task2",
-          start: new Date("2014/6/17 15:00"),
-          end: new Date("2014/6/17 16:00")
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
         }
       ]        
     }); 
@@ -1168,16 +2508,16 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         },
         {
           id: 2,
           orderId: 1,
           parentId: null,
           title: "Task2",
-          start: new Date("2014/6/17 15:00"),
-          end: new Date("2014/6/17 16:00")
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
         }
       ],
       navigate: function(e) {
@@ -1200,16 +2540,16 @@ The widget instance which fired the event.
             orderId: 0,
             parentId: null,
             title: "Task1",
-            start: new Date("2014/6/17 11:00"),
-            end: new Date("2014/6/17 14:00")
+            start: new Date("2014/6/17 9:00"),
+            end: new Date("2014/6/17 11:00")
           },
           {
             id: 2,
             orderId: 1,
             parentId: null,
             title: "Task2",
-            start: new Date("2014/6/17 15:00"),
-            end: new Date("2014/6/17 16:00")
+            start: new Date("2014/6/17 12:00"),
+            end: new Date("2014/6/17 14:00")
           }
         ]        
       }); 
@@ -1227,7 +2567,7 @@ The event handler function context (available via the this keyword) will be set 
 
 ##### e.task `kendo.data.GanttTask`
 
-The event which is being moved.
+The task which is being moved.
 
 ##### e.preventDefault `Function`
 
@@ -1248,8 +2588,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       moveStart: function(e) {
@@ -1272,8 +2612,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]  
     }); 
@@ -1291,15 +2631,15 @@ The event handler function context (available via the this keyword) will be set 
 
 ##### e.task `kendo.data.GanttTask`
 
-The event which is being moved.
+The task which is being moved.
 
 ##### e.start `Date`
 
-The current event start date.
+The current task start date.
 
 ##### e.end `Date`
 
-The current event end date.
+The current task end date.
 
 ##### e.preventDefault `Function`
 
@@ -1320,8 +2660,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       move: function(e) {
@@ -1346,8 +2686,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]  
     }); 
@@ -1365,15 +2705,15 @@ The event handler function context (available via the this keyword) will be set 
 
 ##### e.task `kendo.data.GanttTask`
 
-The event which is being moved.
+The task which is being moved.
 
 ##### e.start `Date`
 
-The new event start date.
+The new task start date.
 
 ##### e.end `Date`
 
-The new event end date.
+The new task end date.
 
 ##### e.preventDefault `Function`
 
@@ -1394,8 +2734,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       moveEnd: function(e) {
@@ -1420,8 +2760,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]  
     }); 
@@ -1439,7 +2779,7 @@ The event handler function context (available via the this keyword) will be set 
 
 ##### e.task `kendo.data.GanttTask`
 
-The event which is being resized.
+The task which is being resized.
 
 ##### e.preventDefault `Function`
 
@@ -1460,8 +2800,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       resizeStart: function(e) {
@@ -1484,8 +2824,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]  
     }); 
@@ -1501,15 +2841,15 @@ The event handler function context (available via the this keyword) will be set 
 
 ##### e.task `kendo.data.GanttTask`
 
-The event which is being moved.
+The task which is being moved.
 
 ##### e.start `Date`
 
-The current event start date.
+The current task start date.
 
 ##### e.end `Date`
 
-The current event end date.
+The current task end date.
 
 ##### e.preventDefault `Function`
 
@@ -1530,8 +2870,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       resize: function(e) {
@@ -1556,8 +2896,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]
     }); 
@@ -1575,15 +2915,15 @@ The event handler function context (available via the this keyword) will be set 
 
 ##### e.task `kendo.data.GanttTask`
 
-The event which is being resized.
+The task which is being resized.
 
 ##### e.start `Date`
 
-The new event start date.
+The new task start date.
 
 ##### e.end `Date`
 
-The new event end date.
+The new task end date.
 
 ##### e.preventDefault `Function`
 
@@ -1604,8 +2944,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ],
       resizeEnd: function(e) {
@@ -1630,8 +2970,8 @@ The widget instance which fired the event.
           orderId: 0,
           parentId: null,
           title: "Task1",
-          start: new Date("2014/6/17 11:00"),
-          end: new Date("2014/6/17 14:00")
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
         }
       ]
     }); 
