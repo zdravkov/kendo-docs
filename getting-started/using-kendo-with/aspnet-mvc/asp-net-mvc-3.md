@@ -1,7 +1,7 @@
 ---
 nav_title: ASP.NET MVC 3
 title: Using Kendo UI with ASP.NET MVC 3
-description: How to use Kendo UI Complete for ASP.NET in ASP.NET MVC 3 applications
+description: How to use Telerik UI  for ASP.NET in ASP.NET MVC 3 applications
 ---
 
 # Kendo UI in ASP.NET MVC 3 applications
