@@ -41,6 +41,7 @@ mapping:
     notification: "Notification"
     numerictextbox: "NumericTextBox"
     panelbar: "PanelBar"
+    pivotgrid: "PivotGrid"
     progressbar: "ProgressBar"
     rangeslider: "RangeSlider"
     scheduler: "Scheduler"
