@@ -25,7 +25,7 @@ OLAP cube is a data-set organized in a multi-dimensional manner. Every cube has 
 OLAP cube introduces concepts for **facts**, **measures**, **dimensions**.
 
 ### What is a Fact?
-[Fact](http:// "http://social.technet.microsoft.com/wiki/contents/articles/1236.fact-olap.aspx") is most detailed information that can be measured.
+[Fact](http://social.technet.microsoft.com/wiki/contents/articles/1236.fact-olap.aspx) is most detailed information that can be measured.
 
 ### What is a Measure?
 
@@ -39,7 +39,7 @@ In short, dimension is a categorical view of data. For a detailed explanation vi
 
 [XML for Analysis (XMLA)](http://en.wikipedia.org/wiki/XML_for_Analysis) is a protocol designed for universal data access to a multi-dimensional data source, which resides on the Web. A detailed explanation can be found [here](http://technet.microsoft.com/en-us/library/ms187178(v=sql.90).aspx).
 
-[Kendo UI PivotDataSource](http://docs.telerik.com/kendo-ui/api/framework/pivotdatasource) component has a built-in support for **XMLA** using a specific XMLA type transport and schema. The supported format of [Execute](http://msdn.microsoft.com/en-us/library/ms186691.Aspx) method is **Multidimensional**:
+[Kendo UI PivotDataSource](/api/framework/pivotdatasource) component has a built-in support for **XMLA** using a specific XMLA type transport and schema. The supported format of [Execute](http://msdn.microsoft.com/en-us/library/ms186691.Aspx) method is **Multidimensional**:
 
 	<PropertyList>
        <Format>Multidimensional</Format>

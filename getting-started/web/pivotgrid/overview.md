@@ -6,12 +6,12 @@ description: Quick steps to help you create a Kendo UI PivotGrid.
 
 # PivotGrid Overview
 
-The Kendo UI PivotGrid widget represents a multi-dimensional data in a cross-tabular format. It allows the user to perform a complex analysis on visualized data. The Kendo UI PivotGrid uses the *Online Analytical Processing* ([OLAP](http://en.wikipedia.org/wiki/Online_analytical_processing)) approach to present the result of a multi-dimensional queries in a comprehensive way. It also supports a drill-down functionality for representing the underlying data for calculated cells. The widget uses an instance of [kendo.data.PivotDataSource](http://docs.telerik.com/kendo-ui/api/framework/pivotdatasource) component as a data source. The PivotDataSource component comunicates with OLAP [cube](http://en.wikipedia.org/wiki/OLAP_cube) instance via [XMLA](http://en.wikipedia.org/wiki/XML_for_Analysis) protocol.
+The Kendo UI PivotGrid widget represents a multi-dimensional data in a cross-tabular format. It allows the user to perform a complex analysis on visualized data. The Kendo UI PivotGrid uses the *Online Analytical Processing* ([OLAP](http://en.wikipedia.org/wiki/Online_analytical_processing)) approach to present the result of a multi-dimensional queries in a comprehensive way. It also supports a drill-down functionality for representing the underlying data for calculated cells. The widget uses an instance of [kendo.data.PivotDataSource](/api/framework/pivotdatasource) component as a data source. The PivotDataSource component comunicates with OLAP [cube](http://en.wikipedia.org/wiki/OLAP_cube) instance via [XMLA](http://en.wikipedia.org/wiki/XML_for_Analysis) protocol.
 
 ## Prerequisites:
 
-- [PivotGrid Fundamentals](http://docs.telerik.com/kendo-ui/getting-started/web/pivotgrid/fundamentals)
-- [Setup an OLAP cube](http://docs.telerik.com/kendo-ui/getting-started/web/pivotgrid/olap-cube-setup) or use our OLAP service ([http://demos.telerik.com/olap/msmdpump.dll](http://demos.telerik.com/olap/msmdpump.dll))
+- [PivotGrid Fundamentals](/getting-started/web/pivotgrid/fundamentals)
+- [Setup an OLAP cube](/getting-started/web/pivotgrid/olap-cube-setup) or use our OLAP service ([http://demos.telerik.com/olap/msmdpump.dll](http://demos.telerik.com/olap/msmdpump.dll))
 
 ## Getting started
 
