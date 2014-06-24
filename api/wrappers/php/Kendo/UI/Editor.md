@@ -174,6 +174,35 @@ For additional information check the [execute](/kendo-ui/api/web/editor#events-e
     $editor->execute(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### fileBrowser
+
+Configuration for file browser dialog.
+
+#### Returns
+`\Kendo\UI\Editor`
+
+#### Parameters
+
+##### $value `\Kendo\UI\EditorFileBrowser|array`
+
+
+#### Example - using [\Kendo\UI\EditorFileBrowser](/kendo-ui/api/wrappers/php/Kendo/UI/EditorFileBrowser)
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $fileBrowser = new \Kendo\UI\EditorFileBrowser();
+    $fileTypes = 'value';
+    $fileBrowser->fileTypes($fileTypes);
+    $editor->fileBrowser($fileBrowser);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $editor = new \Kendo\UI\Editor('Editor');
+    $fileTypes = 'value';
+    $editor->fileBrowser(array('fileTypes' => $fileTypes));
+    ?>
+
 ### imageBrowser
 
 Configuration for image browser dialog.
