@@ -50,7 +50,7 @@ If the `dataSource` option is an existing [kendo.data.PivotDataSource](/api/fram
 
 #### Example - set dataSource as an existing kendo.data.PivotDataSource instance
 
-    <div id="pivotgrid"></div>
+    <div id="configurator"></div>
     <script>
     var dataSource = new kendo.data.PivotDataSource({
         type: "xmla",
