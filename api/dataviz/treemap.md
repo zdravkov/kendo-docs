@@ -42,7 +42,7 @@ data source is fired. By default the widget will bind to the data source specifi
     $("#treemap").kendoTreeMap({
         autoBind: false,
         dataSource: dataSource,
-	    valueFied: "value",
+        valueFied: "value",
         textField: "name"
     });
     dataSource.read(); // "read()" will fire the "change" event of the dataSource and the widget will be bound
@@ -85,11 +85,45 @@ The default colors for the treemap tiles. When all colors are used, new colors a
         },
         valueField: "value",
         textField: "name",
-		colors: ["red", "green"]
+        colors: ["red", "green"]
     });
     </script>
 
 ## Events
+
+### itemCreated
+
+Fired when a tile has been created.
+
+#### Event Data
+
+##### e.element `JQuery`
+
+The item html instance.
+
+##### e.sender `kendo.dataviz.ui.TreeMap`
+
+The source widget instance.
+
+#### Example - Change color of the tile
+    <div id="treeMap"></div>
+    <script>
+        $("#treeMap").kendoTreeMap({
+            dataSource: {
+                data: [{
+                    name: "foo",
+                    value: 1,
+                    color: "red"
+                }]
+            },
+            valueField: "value",
+            textField: "name",
+            colorField: "color",
+            itemCreated: function(e) {
+                e.element.css("background-color", "blue");
+            }
+        });
+    </script>
 
 ### dataBound
 
@@ -97,39 +131,39 @@ Fired when the widget is bound to data from its dataSource.
 
 #### Event Data
 
-##### e.node `jQuery`
+##### e.sender `kendo.dataviz.ui.TreeMap`
 
-The node whose children have been changed. If the changes have occurred on the root level, this parameter is undefined.
+The source widget instance.
 
 #### Example - subscribe to the "dataBound" event during initialization
 
     <div id="treemap"></div>
     <script>
     $("#treemap").kendoTreeMap({
-		dataSource: {
-			data: [{
-				name: "foo",
-				value: 1,
-				color: "red"
-			}]
-		},
-		valueField: "value",
-		textField: "name",
-		colorField: "color",
-		dataBound: function(e) {
-			console.log("DataBound", e.node);
-		}
+        dataSource: {
+            data: [{
+                name: "foo",
+                value: 1,
+                color: "red"
+            }]
+        },
+        valueField: "value",
+        textField: "name",
+        colorField: "color",
+        dataBound: function(e) {
+            console.log("DataBound");
+        }
     });
     </script>
 
 #### Example - subscribe to the "dataBound" event after initialization
-	<div id="treemap"></div>
+    <div id="treemap"></div>
     <script>
- 	function dataBund(e) {
-      console.log("DataBound", e.node);
+    function dataBund(e) {
+      console.log("DataBound");
     }
-	
-	$("#treemap").kendoTreeMap({
+
+    $("#treemap").kendoTreeMap({
         dataSource: {
             data: [{
                 name: "foo",
@@ -141,7 +175,7 @@ The node whose children have been changed. If the changes have occurred on the r
         textField: "name",
         colorField: "color"
     });
-    var treemap = $("#treemap").getKendoTreeMap();       
+    var treemap = $("#treemap").getKendoTreeMap();
     treemap.bind("dataBound", dataBund);
     </script>
 
@@ -155,9 +189,9 @@ Detaches event handlers and removes data entries in order to avoid memory leaks.
 
 ### findByUid
 
-Searches for a tile with the given unique identifier.
+Searches for an item with the given unique identifier.
 Applicable when the widget is bound to a [HierarchicalDataSource](/api/framework/hierarchicaldatasource).
-If you want to find a tile by its `id`, use the [dataSource.get()](/api/framework/datasource#get) method and supply its uid to the `findByUid` method.
+If you want to find an item by its `id`, use the [dataSource.get()](/api/framework/datasource#get) method and supply its uid to the `findByUid` method.
 
 #### Parameters
 
