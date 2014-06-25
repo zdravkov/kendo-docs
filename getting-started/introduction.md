@@ -8,18 +8,16 @@ position: 1
 # What is Kendo UI
 
 Kendo UI is an HTML5, jQuery-based framework for building modern web apps. The framework features lots of UI widgets, a rich data vizualization framework,
-an auto-adaptive Mobile framework, and all of the tools needed for HTML5 app development, such as Data Binding, Templating, Drag-and-Drop API, and more.
+an auto-adaptive Mobile framework, and all of the tools needed for HTML5 app development, such as Data Source, Templating, MVVM, Drag-and-Drop API, and more.
 
 Kendo UI comes in different bundles:
+* Kendo UI Core - free open source version of Kendo UI licensed under Apache 2.0. Including web and mobile widgets and framework features. 
+* Kendo UI Professional - includes web, dataviz and mobile widgets and framework features. 
+* Telerik UI for ASP.NET MVC - Kendo UI Professional plus ASP.NET MVC wrappers for all available widgets.
+* Telerik UI for JSP - Kendo UI Professional plus JSP wrappers for the available web and dataviz widgets.
+* Telerik UI for PHP - Kendo UI Professional plus PHP wrappers for the available web and dataviz widgets.
 
-* Kendo UI Web - HTML5 widgets for desktop browsing experience.
-* Kendo UI DataViz - HTML5 data vizualization widgets.
-* Kendo UI Mobile - HTML5 framework for building hybrid mobile applications.
-* Kendo UI Complete - includes Kendo UI Web, Kendo UI DataViz and Kendo UI Mobile.
-* Telerik UI for ASP.NET MVC - Kendo UI Complete plus ASP.NET MVC wrappers for Kendo UI Web, DataViz and Mobile.
-* Telerik UI for JSP - Kendo UI Complete plus JSP wrappers for Kendo UI Web and Kendo UI DataViz.
-* Telerik UI for PHP - Kendo UI Complete plus PHP wrappers for Kendo UI Web and Kendo UI DataViz.
-
+** See comparison between Kendo UI Professional and Kendo UI Core here: http://www.telerik.com/kendo-ui/comparison
 # Installing and Getting Started with Kendo UI
 
 You can download all Kendo UI bundles from the [download page](http://www.telerik.com/download/kendo-ui-complete).
@@ -39,8 +37,8 @@ To use Kendo UI in your HTML page you need to include the required JavaScript an
 
 ### Kendo UI Web
 
-1. Download Kendo UI Web and extract the distribution zip file to a convenient location.
-1. Copy the **/js** and **/styles** directories of the Kendo UI Web distribution to your web application root directory.
+1. Download Kendo UI Professional and extract the distribution zip file to a convenient location.
+1. Copy the **/js** and **/styles** directories of the Kendo UI Professional distribution to your web application root directory.
 1. Include the Kendo UI Web JavaScript and CSS files in the `head` tag of your HTML page. **Make sure the common CSS file is registered before the theme CSS file.
 Also make sure only one combined script file is registered. For more information, please refer to the [Javascript Dependencies page](/getting-started/javascript-dependencies).**
 
@@ -86,8 +84,8 @@ Here is the complete example:
 
 ### Kendo UI DataViz
 
-1. Download Kendo UI DataViz and extract the distribution zip file to a convenient location.
-1. Copy the **/js** and **/styles** directories of the Kendo UI DataViz distribution to your web application root directory.
+1. Download Kendo UI Professional and extract the distribution zip file to a convenient location.
+1. Copy the **/js** and **/styles** directories of the Kendo UI Professional distribution to your web application root directory.
 1. Include the Kendo UI DataViz JavaScript and CSS files in the `head` tag of your HTML page:
 
         <!-- Kendo UI DataViz CSS -->
@@ -128,8 +126,8 @@ Here is the complete example:
 
 ### Kendo UI Mobile
 
-1. Download Kendo UI Mobile and extract the distribution zip file to a convenient location.
-1. Copy the **/js** and **/styles** directories of the Kendo UI Mobile distribution to your web application root directory.
+1. Download Kendo UI Professional and extract the distribution zip file to a convenient location.
+1. Copy the **/js** and **/styles** directories of the Kendo UI Professional distribution to your web application root directory.
 1. Include the Kendo UI Mobile JavaScript and CSS files in the `head` tag of your HTML page:
 
         <!-- Kendo UI Mobile CSS -->
