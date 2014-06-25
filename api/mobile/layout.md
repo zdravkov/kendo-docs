@@ -1,5 +1,5 @@
 ---
-title: kendo.mobile.ui.Layout
+title: Layout
 page_title: Configuration, methods and events of Kendo UI Mobile Layout
 description: Layout configuration in Kendo UI mobile JavaScript framework, supported methods to control behavior, events that hide and initialize child widgets.
 ---

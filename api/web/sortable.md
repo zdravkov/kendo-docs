@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Sortable
+title: Sortable
 page_title: Configuration, methods and events of Kendo UI Sortable
 ---
 

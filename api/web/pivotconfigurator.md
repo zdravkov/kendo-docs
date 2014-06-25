@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.PivotConfigurator
+title: PivotConfigurator
 page_title: Configuration, methods and events of Kendo UI PivotConfigurator
 description: Code examples for PivotConfigurator UI widget configuration, learn how to use it.
 ---

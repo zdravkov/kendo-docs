@@ -1,5 +1,5 @@
 ---
-title: kendo.Observable
+title: Observable
 ---
 
 

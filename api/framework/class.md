@@ -1,5 +1,5 @@
 ---
-title: kendo.Class
+title: Class
 ---
 
 

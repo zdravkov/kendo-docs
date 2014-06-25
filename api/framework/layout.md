@@ -1,5 +1,5 @@
 ---
-title: kendo.Layout
+title: Layout
 ---
 
 # kendo.Layout

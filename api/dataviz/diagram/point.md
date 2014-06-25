@@ -1,5 +1,5 @@
 ---
-title: kendo.dataviz.diagram.Point
+title: Point
 ---
 
 # kendo.dataviz.diagram.Point

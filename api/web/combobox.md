@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.ComboBox
+title: ComboBox
 page_title: Configuration, methods and events of Kendo UI ComboBox
 description: Learn to configure Kendo UI ComboBox widget, use the documentation guide to operate different types of methods and get familiar with all events, used in ComboBox UI widget.
 ---

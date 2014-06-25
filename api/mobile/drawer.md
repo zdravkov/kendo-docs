@@ -1,5 +1,5 @@
 ---
-title: kendo.mobile.ui.Drawer
+title: Drawer
 page_title: Configuration, methods and events of Kendo UI Mobile Drawer
 description: Set direction of the Kendo UI Mobile Drawer container, use methods to show and hide it.
 ---

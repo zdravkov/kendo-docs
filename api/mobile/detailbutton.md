@@ -1,5 +1,5 @@
 ---
-title: kendo.mobile.ui.DetailButton
+title: DetailButton
 page_title: Configuration, methods and events of Kendo UI Mobile DetailButton
 description: Documentation on how to initialize Kendo UI mobile DetailButton.
 ---

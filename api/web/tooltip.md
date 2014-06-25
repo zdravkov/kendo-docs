@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Tooltip
+title: Tooltip
 page_title: Configuration, methods and events of Kendo UI Tooltip
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: kendo.dataviz.ui.StockChart
+title: StockChart
 page_title: Configuration, methods and events of Kendo UI DataViz StockChart
 ---
 

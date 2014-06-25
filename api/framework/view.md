@@ -1,5 +1,5 @@
 ---
-title: kendo.View
+title: View
 ---
 
 # kendo.View

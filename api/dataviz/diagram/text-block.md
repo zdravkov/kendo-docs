@@ -1,5 +1,5 @@
 ---
-title: kendo.dataviz.diagram.TextBlock
+title: TextBlock
 ---
 
 # kendo.dataviz.diagram.TextBlock

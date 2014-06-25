@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Grid
+title: Grid
 page_title: Configuration, methods and events of Kendo UI Grid
 description: Code examples for Grid UI widget configuration, learn how to use methods and which events to set once the grid UI widget detail is initialized and expanded.
 ---

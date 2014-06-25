@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Touch
+title: Touch
 ---
 
 # kendo.ui.Touch

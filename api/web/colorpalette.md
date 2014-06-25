@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.ColorPalette
+title: ColorPalette
 page_title: Configuration, methods and events of Kendo UI ColorPalette
 ---
 

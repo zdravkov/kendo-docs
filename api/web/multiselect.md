@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.MultiSelect
+title: MultiSelect
 page_title: Configuration, methods and events of Kendo UI MultiSelect
 ---
 

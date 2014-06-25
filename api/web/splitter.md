@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Splitter
+title: Splitter
 page_title: Configuration, methods and events of Kendo UI Splitter
 description: Step by step guide and code examples for successful configuration of Splitter UI widget, supported methods and events types.
 ---

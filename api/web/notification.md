@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Notification
+title: Notification
 description: Configuration, methods and events of the Kendo UI Notification
 ---
 

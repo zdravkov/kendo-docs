@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.NumericTextBox
+title: NumericTextBox
 page_title: Configuration, methods and events of Kendo UI NumericTextBox
 description: Code examples and tips how to configure NumericTextBox widget, use available methods and events.
 ---

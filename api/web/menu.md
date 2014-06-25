@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Menu
+title: Menu
 page_title: Configuration, methods and events of Kendo UI Menu
 description: How to configure all animations in Menu UI widget, enable and disable, remove specified items and use code examples for all methods and events supported.
 ---

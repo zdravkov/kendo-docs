@@ -1,5 +1,5 @@
 ---
-title: kendo.dataviz.ui.TreeMap
+title: TreeMap
 page_title: Configuration, methods and events of Kendo UI DataViz TreeMap
 description: Learn how to configure Kendo UI Javascript TreeMap widget in a few easy steps, use and change methods and events.
 ---

@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.Validator
+title: Validator
 page_title: Validator configuration and methods | Kendo UI Framework
 description: How to configure the Validator in Kendo UI Framework, get error messages and ensure the validation of the input elements in supported methods.
 ---

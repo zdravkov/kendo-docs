@@ -1,5 +1,5 @@
 ---
-title: kendo.ui.AutoComplete
+title: AutoComplete
 page_title: Configuration, methods and events of Kendo UI AutoComplete
 description: How to configure and control methods in Autocomplete UI widget, which events to use to open, close, change, select.
 ---

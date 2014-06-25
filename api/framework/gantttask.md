@@ -1,5 +1,5 @@
 ---
-title: kendo.data.GanttTask
+title: GanttTask
 page_title: API Reference for Kendo Data GanttTask
 description: Documentation how to get started with the GanttTask.
 ---
