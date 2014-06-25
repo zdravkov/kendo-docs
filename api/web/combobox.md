@@ -808,7 +808,7 @@ The filter value.
 
 ### select
 
-Selects the item provided as an argument and updates the value and text of the widget.
+Gets or sets the selected item. Slects the item provided as an argument and updates the value and text of the widget.
 
 #### Parameters
 
