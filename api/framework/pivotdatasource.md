@@ -1,10 +1,7 @@
 ---
-title: kendo.data.PivotDataSource
-meta_title: API Reference for Kendo UI PivotDataSource
-meta_description: Learn more about the configuration of Kendo UI PivotDataSource, methods and events.
-slug: api-framework-pivotdatasource
-tags: api,framework
-publish: true
+nav_title: kendo.data.PivotDataSource
+title: API Reference for Kendo UI PivotDataSource
+description: Learn more about the configuration of Kendo UI PivotDataSource, methods and events.
 ---
 
 # kendo.data.PivotDataSource
