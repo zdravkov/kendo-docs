@@ -22,12 +22,6 @@ The TollBar wrapper holds all commands that can be placed within the available c
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                //custom template
-                {
-                    template: '<div class="toolbar-logo"><img src="../content/logo.png" alt="logo" /></div>",
-                    overflow: "never"
-                },
-
                 //regular button
                 {
                     type: "button",
@@ -64,6 +58,17 @@ The TollBar wrapper holds all commands that can be placed within the available c
                         { text: "center", showText: "overflow", icon: "justifyCenter", showIcon: "toolbar" },
                         { text: "right",  showText: "overflow", icon: "justifyRight",  showIcon: "toolbar" }
                     ]
+                },
+
+                //separator
+                {
+                    type: "separator"
+                },
+
+                //custom template
+                {
+                    template: "<label>Custom template: <input type='text' id='textbox' /></label>",
+                    overflowTemplate: "<span></span>"
                 }
             ]
         });
@@ -118,7 +123,17 @@ Each button item can have the following properties:
                 selected: true,
 
                 //assigns the button to a group. Applicable only for buttons with toggle: true.
-                group: "myGroup"
+                group: "myGroup",
+
+                //specifies the click event handler
+                click: function(e) {
+                    //handle click event
+                },
+
+                //specifies the toggle event handler (for buttons with togglable: true)
+                toggle: function(e) {
+                    //handle toggle event
+                }
             }
         ]
     });
@@ -301,6 +316,24 @@ In the command overflow popup the Button Group is rendered as list of commands.
         });
     </script>
 
+### Separator
+
+The separator can act as a delimiter between the ToolBar commands.
+
+##### Example - define a separator
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", text: "Button 1" },
+                { type: "separator" },
+                { type: "button", text: "Button 2" }
+            ]
+        });
+    </script>
+
 ### Custom Templates
 
 The ToolBar widget allows the developer to define custom items.
@@ -309,6 +342,8 @@ Unlike all other commands the template command does not need a type set.
 If a template is provided the type property will be ignored.
 By default, you should define both `template` and `overflowTemplate` in order to specify how the command will be rendered in the command overflow popup.
 If the command should not appear in the command overflow popup its `overflow` property should be set to `"never"`.
+
+> By default a custom template command without overflowTemplate will not be shown in the command overflow popup e.g. it will be considered as `overflow: never`.
 
 ##### Example - add a template command
 
@@ -393,3 +428,50 @@ The developer can control how a given command will behave on resizing with its `
     </script>
 
 ## Mobile rendering
+
+Widget provides a mobile specific stylization when placed in header or footer of a mobile View. For more information please check the ["ToolBar as ActionBar" demo page](http://demos.telerik.com/kendo-ui/navbar/adaptive-toolbar).
+
+## Event handling
+
+The ToolBar widget exposes the following events:
+
+* `click` - fires when button is clicked.
+* `toggle` - fires when the selected state of Toggle button is changed.
+* `open` - fires when the drop down container of a SplitButton opens.
+* `close` - fires when the drop down container of a SplitButton closes.
+* `overflowOpen` - fires when the command overflow popup of the ToolBar opens.
+* `overflowClose` - fires when the command overflow popup of the ToolBar closes.
+
+In addition the developer has ability to attach `click` and `toggle` event handlers to the buttons through the config options.
+
+##### Example - using events
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                {
+                    type: "button",
+                    text: "Button 1",
+                    click: function(e) {
+                        //this click event handler will fire first
+                    }
+                },
+                {
+                    type: "button",
+                    togglable: true,
+                    text: "Toggle Button",
+                    toggle: function(e) {
+                        //this toggle event handler will fire first
+                    }
+                }
+            ],
+            click: function(e) {
+                //this click event handler will fire second
+            },
+            toggle: function(e) {
+                //this toggle event handler will fire second
+            }
+        });
+    </script>
