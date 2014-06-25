@@ -1,5 +1,5 @@
 ---
-page_title: The Grid widget in Angular-Kendo
+title: The Grid widget in Angular-Kendo
 ---
 
 # The Grid widget in Angular-Kendo

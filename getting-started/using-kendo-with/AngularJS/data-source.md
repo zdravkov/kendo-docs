@@ -1,5 +1,5 @@
 ---
-page_title: DataSource vs. Angular scope
+title: DataSource vs. Angular scope
 ---
 
 # Kendo DataSource vs. Angular scope

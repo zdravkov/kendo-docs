@@ -1,5 +1,5 @@
 ---
-page_title: Global events in Angular-Kendo
+title: Global events in Angular-Kendo
 ---
 
 # Global events in Angular-Kendo
