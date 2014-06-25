@@ -1,5 +1,5 @@
 ---
-nav_title: WindowPositionSettingsBuilder
+title: WindowPositionSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowPositionSettingsBuilder

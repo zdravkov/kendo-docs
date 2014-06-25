@@ -1,5 +1,5 @@
 ---
-nav_title: menu-item
+title: menu-item
 ---
 
 # \<kendo:menu-item\>

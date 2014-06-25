@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerMessagesRecurrenceEditorOffsetPositions
+title: SchedulerMessagesRecurrenceEditorOffsetPositions
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceEditorOffsetPositions

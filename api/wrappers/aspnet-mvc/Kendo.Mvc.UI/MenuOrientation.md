@@ -1,5 +1,5 @@
 ---
-nav_title: MenuOrientation
+title: MenuOrientation
 ---
 
 # Kendo.Mvc.UI.MenuOrientation

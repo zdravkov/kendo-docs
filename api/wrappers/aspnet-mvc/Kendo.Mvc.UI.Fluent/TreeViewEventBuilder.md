@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewEventBuilder
+title: TreeViewEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewEventBuilder

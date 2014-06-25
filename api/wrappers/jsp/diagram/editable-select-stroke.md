@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-editable-select-stroke
+title: diagram-editable-select-stroke
 ---
 
 # \<kendo:diagram-editable-select-stroke\>

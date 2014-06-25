@@ -1,5 +1,5 @@
 ---
-nav_title: GridEditingSettingsBuilder
+title: GridEditingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridEditingSettingsBuilder

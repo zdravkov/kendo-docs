@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeLinearPointerBuilder
+title: GaugeLinearPointerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearPointerBuilder

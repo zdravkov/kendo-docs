@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemOutliersBorder
+title: ChartSeriesItemOutliersBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemOutliersBorder

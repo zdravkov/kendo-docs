@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeLinearPointerShape
+title: GaugeLinearPointerShape
 ---
 
 # Kendo.Mvc.UI.GaugeLinearPointerShape

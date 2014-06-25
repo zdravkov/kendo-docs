@@ -1,5 +1,5 @@
 ---
-nav_title: map-controls-zoom
+title: map-controls-zoom
 ---
 
 # \<kendo:map-controls-zoom\>

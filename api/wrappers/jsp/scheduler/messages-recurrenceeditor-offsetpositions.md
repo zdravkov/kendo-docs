@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-messages-recurrenceEditor-offsetPositions
+title: scheduler-messages-recurrenceEditor-offsetPositions
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-offsetPositions\>

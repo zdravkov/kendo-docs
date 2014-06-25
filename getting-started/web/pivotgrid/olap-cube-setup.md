@@ -1,6 +1,6 @@
 ---
-nav_title: Setup OLAP cube
-title: Quick steps for OLAP cube setup
+title: Setup OLAP cube
+page_title: Quick steps for OLAP cube setup
 description: A list of steps for OLAP cube setup and HTTP access
 ---
 

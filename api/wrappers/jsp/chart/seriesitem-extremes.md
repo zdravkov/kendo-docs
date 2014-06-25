@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-extremes
+title: chart-seriesItem-extremes
 ---
 
 # \<kendo:chart-seriesItem-extremes\>

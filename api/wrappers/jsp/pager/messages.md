@@ -1,5 +1,5 @@
 ---
-nav_title: pager-messages
+title: pager-messages
 ---
 
 # \<kendo:pager-messages\>

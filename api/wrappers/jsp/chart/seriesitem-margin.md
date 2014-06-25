@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-margin
+title: chart-seriesItem-margin
 ---
 
 # \<kendo:chart-seriesItem-margin\>

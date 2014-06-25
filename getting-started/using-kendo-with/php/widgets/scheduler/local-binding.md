@@ -1,6 +1,6 @@
 ---
-nav_title: Local binding
-title: How to bind Kendo Scheduler for PHP to PHP array
+title: Local binding
+page_title: How to bind Kendo Scheduler for PHP to PHP array
 description: Learn how to bind Kendo UI Scheduler for PHP to array of data
 ---
 

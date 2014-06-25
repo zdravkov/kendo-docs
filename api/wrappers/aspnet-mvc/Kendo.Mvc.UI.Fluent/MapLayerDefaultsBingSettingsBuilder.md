@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsBingSettingsBuilder
+title: MapLayerDefaultsBingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapLayerDefaultsBingSettingsBuilder

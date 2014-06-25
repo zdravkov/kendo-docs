@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerResourceBuilder
+title: SchedulerResourceBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerResourceBuilder

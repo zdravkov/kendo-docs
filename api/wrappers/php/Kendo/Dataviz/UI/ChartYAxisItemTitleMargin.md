@@ -1,5 +1,5 @@
 ---
-nav_title: ChartYAxisItemTitleMargin
+title: ChartYAxisItemTitleMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemTitleMargin

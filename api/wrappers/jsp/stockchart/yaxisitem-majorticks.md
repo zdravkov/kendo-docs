@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-yAxisItem-majorTicks
+title: stockChart-yAxisItem-majorTicks
 ---
 
 # \<kendo:stockChart-yAxisItem-majorTicks\>

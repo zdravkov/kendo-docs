@@ -1,5 +1,5 @@
 ---
-nav_title: DropDownListAnimationClose
+title: DropDownListAnimationClose
 ---
 
 # \Kendo\UI\DropDownListAnimationClose

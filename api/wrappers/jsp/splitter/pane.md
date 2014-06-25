@@ -1,5 +1,5 @@
 ---
-nav_title: splitter-pane
+title: splitter-pane
 ---
 
 # \<kendo:splitter-pane\>

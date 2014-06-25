@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-notes-icon-border
+title: chart-seriesItem-notes-icon-border
 ---
 
 # \<kendo:chart-seriesItem-notes-icon-border\>

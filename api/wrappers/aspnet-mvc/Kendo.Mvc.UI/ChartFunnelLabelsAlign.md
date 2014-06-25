@@ -1,5 +1,5 @@
 ---
-nav_title: ChartFunnelLabelsAlign
+title: ChartFunnelLabelsAlign
 ---
 
 # Kendo.Mvc.UI.ChartFunnelLabelsAlign

@@ -1,5 +1,5 @@
 ---
-nav_title: gantt-messages-views
+title: gantt-messages-views
 ---
 
 # \<kendo:gantt-messages-views\>

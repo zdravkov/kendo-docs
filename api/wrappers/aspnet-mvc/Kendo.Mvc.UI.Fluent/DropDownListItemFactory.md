@@ -1,5 +1,5 @@
 ---
-nav_title: DropDownListItemFactory
+title: DropDownListItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DropDownListItemFactory

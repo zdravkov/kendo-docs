@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-crosshair-tooltip-border
+title: chart-yAxisItem-crosshair-tooltip-border
 ---
 
 # \<kendo:chart-yAxisItem-crosshair-tooltip-border\>

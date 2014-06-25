@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.TreeView
-title: Configuration, methods and events of Kendo UI TreeView
+title: kendo.ui.TreeView
+page_title: Configuration, methods and events of Kendo UI TreeView
 description: Documentation guide that helps the developer configure TreeView UI widget in a few quick steps, apply methdos and trigger events.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: map-layer-tooltip
+title: map-layer-tooltip
 ---
 
 # \<kendo:map-layer-tooltip\>

@@ -1,5 +1,5 @@
 ---
-nav_title: GridColumnBuilderBase
+title: GridColumnBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnBuilderBase

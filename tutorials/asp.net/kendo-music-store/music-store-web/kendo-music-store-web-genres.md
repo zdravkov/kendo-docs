@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Genre Page
+title: Creating the Genre Page
 ---
 
 # Creating the Genre Page - Kendo Music Store

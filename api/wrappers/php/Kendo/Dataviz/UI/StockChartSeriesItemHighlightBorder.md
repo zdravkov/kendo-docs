@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartSeriesItemHighlightBorder
+title: StockChartSeriesItemHighlightBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemHighlightBorder

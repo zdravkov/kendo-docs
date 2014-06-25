@@ -1,5 +1,5 @@
 ---
-nav_title: MobileNavigatableSettingsBuilder
+title: MobileNavigatableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileNavigatableSettingsBuilder

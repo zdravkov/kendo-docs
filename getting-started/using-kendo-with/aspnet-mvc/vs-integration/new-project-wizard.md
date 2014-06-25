@@ -1,5 +1,5 @@
 ---
-nav_title: New Project Wizard
+title: New Project Wizard
 ---
 
 #New Project Wizard

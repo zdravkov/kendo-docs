@@ -1,5 +1,5 @@
 ---
-nav_title: Editor
+title: Editor
 ---
 
 # \Kendo\UI\Editor

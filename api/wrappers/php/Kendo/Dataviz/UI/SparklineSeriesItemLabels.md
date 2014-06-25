@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesItemLabels
+title: SparklineSeriesItemLabels
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemLabels

@@ -1,5 +1,5 @@
 ---
-nav_title: GridGroupingSettingsBuilder
+title: GridGroupingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridGroupingSettingsBuilder

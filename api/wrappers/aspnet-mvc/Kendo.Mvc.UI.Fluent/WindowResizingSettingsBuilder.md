@@ -1,5 +1,5 @@
 ---
-nav_title: WindowResizingSettingsBuilder
+title: WindowResizingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowResizingSettingsBuilder

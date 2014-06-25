@@ -1,5 +1,5 @@
 ---
-nav_title: GridCell
+title: GridCell
 ---
 
 # Kendo.Mvc.UI.GridCell

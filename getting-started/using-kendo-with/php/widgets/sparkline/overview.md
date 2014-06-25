@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Sparkline PHP class, server-side wrapper for Kendo UI Sparkline widget
+title: Overview
+page_title: How to use the Sparkline PHP class, server-side wrapper for Kendo UI Sparkline widget
 description: Learn how to bind Kendo UI Sparkline for PHP, handle Kendo UI Sparkline Events, access an existing sparkline.
 ---
 

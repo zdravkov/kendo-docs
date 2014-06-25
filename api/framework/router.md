@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.Router
+title: kendo.Router
 ---
 
 # kendo.Router

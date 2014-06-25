@@ -1,5 +1,5 @@
 ---
-nav_title: Kendo UI Documentation Repo
+title: Kendo UI Documentation Repo
 ---
 
 # Kendo UI Public Documentation

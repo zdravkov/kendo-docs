@@ -1,5 +1,5 @@
 ---
-nav_title: MobileMode
+title: MobileMode
 ---
 
 # Kendo.Mvc.UI.MobileMode

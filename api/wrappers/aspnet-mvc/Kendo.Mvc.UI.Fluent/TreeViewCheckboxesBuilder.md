@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewCheckboxesBuilder
+title: TreeViewCheckboxesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewCheckboxesBuilder

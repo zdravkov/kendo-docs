@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemLabels
+title: ChartCategoryAxisItemLabels
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemLabels

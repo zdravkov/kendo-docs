@@ -1,6 +1,6 @@
 ---
-nav_title: Migrating to Kendo UI
-title: Migrating from Telerik Extensions for ASP.NET MVC to Telerik UI for ASP.NET MVC
+title: Migrating to Kendo UI
+page_title: Migrating from Telerik Extensions for ASP.NET MVC to Telerik UI for ASP.NET MVC
 description: What’s the difference between Telerik Extensions for ASP.NET MVC and Telerik UI for ASP.NET MVC, learn how to migrate, handle data-binding, set stylesheets.
 ---
 

@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.DropDownList
-title: Configuration, methods and events of Kendo UI DropDownList
+title: kendo.ui.DropDownList
+page_title: Configuration, methods and events of Kendo UI DropDownList
 description: "Learn how to control your DropDown UI widget's behavior to suit your needs: open, close, enable, disable the widget. Events data and code examples available."
 ---
 

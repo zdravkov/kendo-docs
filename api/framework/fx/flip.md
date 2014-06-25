@@ -1,5 +1,5 @@
 ---
-nav_title: FX Flip
+title: FX Flip
 ---
 
 # Flip

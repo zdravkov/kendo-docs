@@ -1,5 +1,5 @@
 ---
-nav_title: ChartXAxisItemCrosshairTooltip
+title: ChartXAxisItemCrosshairTooltip
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemCrosshairTooltip

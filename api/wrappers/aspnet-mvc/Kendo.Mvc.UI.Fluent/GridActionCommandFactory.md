@@ -1,5 +1,5 @@
 ---
-nav_title: GridActionCommandFactory
+title: GridActionCommandFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.GridActionCommandFactory

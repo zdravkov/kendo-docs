@@ -1,5 +1,5 @@
 ---
-nav_title: ChartMajorGridLinesBuilder
+title: ChartMajorGridLinesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMajorGridLinesBuilder

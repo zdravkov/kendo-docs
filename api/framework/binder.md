@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.data.Binder
+title: kendo.data.Binder
 ---
 
 # kendo.data.Binder

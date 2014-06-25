@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesDefaultsTooltipPadding
+title: ChartSeriesDefaultsTooltipPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsTooltipPadding

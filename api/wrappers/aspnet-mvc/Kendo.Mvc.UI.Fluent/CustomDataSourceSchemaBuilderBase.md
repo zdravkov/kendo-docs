@@ -1,5 +1,5 @@
 ---
-nav_title: CustomDataSourceSchemaBuilderBase
+title: CustomDataSourceSchemaBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceSchemaBuilderBase

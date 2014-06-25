@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerStyle
+title: MapLayerStyle
 ---
 
 # \Kendo\Dataviz\UI\MapLayerStyle

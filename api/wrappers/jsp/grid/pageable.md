@@ -1,5 +1,5 @@
 ---
-nav_title: grid-pageable
+title: grid-pageable
 ---
 
 # \<kendo:grid-pageable\>

@@ -1,5 +1,5 @@
 ---
-nav_title: treeView-messages
+title: treeView-messages
 ---
 
 # \<kendo:treeView-messages\>

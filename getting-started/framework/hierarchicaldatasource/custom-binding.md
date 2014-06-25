@@ -1,6 +1,6 @@
 ---
-nav_title: Custom binding
-title: Binding a Kendo UI HierarchicalDataSource component
+title: Custom binding
+page_title: Binding a Kendo UI HierarchicalDataSource component
 description: See how to fetch custom hierarchical data and represent it in a HierarchicalDataSource.
 ---
 

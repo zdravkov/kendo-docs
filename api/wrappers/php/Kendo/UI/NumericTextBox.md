@@ -1,5 +1,5 @@
 ---
-nav_title: NumericTextBox
+title: NumericTextBox
 ---
 
 # \Kendo\UI\NumericTextBox

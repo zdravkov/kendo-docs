@@ -1,6 +1,6 @@
 ---
-nav_title: Area
-title: Area Charts in Kendo UI DataViz
+title: Area
+page_title: Area Charts in Kendo UI DataViz
 description: Learn how to define area charts in Kendo UI DataViz HTML5 charting widget.
 ---
 

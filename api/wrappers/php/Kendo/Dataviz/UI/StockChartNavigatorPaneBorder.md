@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorPaneBorder
+title: StockChartNavigatorPaneBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorPaneBorder

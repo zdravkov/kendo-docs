@@ -1,5 +1,5 @@
 ---
-nav_title: Working with the High Contrast Theme in Kendo UI
+title: Working with the High Contrast Theme in Kendo UI
 related: a11y-accessibility-overview
 ---
 

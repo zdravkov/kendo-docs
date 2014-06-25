@@ -1,5 +1,5 @@
 ---
-nav_title: pivotGrid-messages
+title: pivotGrid-messages
 ---
 
 # \<kendo:pivotGrid-messages\>

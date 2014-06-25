@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceTransportCreate
+title: DataSourceTransportCreate
 ---
 
 # \Kendo\Data\DataSourceTransportCreate

@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramEditableSelect
+title: DiagramEditableSelect
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableSelect

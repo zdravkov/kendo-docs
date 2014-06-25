@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorPanePadding
+title: StockChartNavigatorPanePadding
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorPanePadding

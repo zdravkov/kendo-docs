@@ -1,5 +1,5 @@
 ---
-nav_title: comboBox-animation-open
+title: comboBox-animation-open
 ---
 
 # \<kendo:comboBox-animation-open\>

@@ -1,5 +1,5 @@
 ---
-nav_title: TabStripEventBuilder
+title: TabStripEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TabStripEventBuilder

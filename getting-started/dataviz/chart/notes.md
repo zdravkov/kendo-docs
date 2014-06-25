@@ -1,8 +1,8 @@
 ---
-nav_title: Notes
-title: Configuration guide for the chart notes
+title: Notes
+page_title: Configuration guide for the chart notes
 description: How to configure the notes of a chart.
-nav_position: 4
+position: 4
 ---
 
 # Notes

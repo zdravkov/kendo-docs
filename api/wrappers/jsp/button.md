@@ -1,5 +1,5 @@
 ---
-nav_title: button
+title: button
 ---
 
 # \<kendo:button\>

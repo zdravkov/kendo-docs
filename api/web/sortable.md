@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Sortable
-title: Configuration, methods and events of Kendo UI Sortable
+title: kendo.ui.Sortable
+page_title: Configuration, methods and events of Kendo UI Sortable
 ---
 
 # kendo.ui.Sortable

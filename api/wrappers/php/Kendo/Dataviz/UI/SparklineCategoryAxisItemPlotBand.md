@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemPlotBand
+title: SparklineCategoryAxisItemPlotBand
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemPlotBand

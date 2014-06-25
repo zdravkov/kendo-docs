@@ -1,5 +1,5 @@
 ---
-nav_title: Widget
+title: Widget
 ---
 
 # \Kendo\UI\Widget

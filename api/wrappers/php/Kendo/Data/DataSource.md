@@ -1,5 +1,5 @@
 ---
-nav_title: DataSource
+title: DataSource
 ---
 
 # \Kendo\Data\DataSource

@@ -1,5 +1,5 @@
 ---
-nav_title: QueryableExtensions
+title: QueryableExtensions
 ---
 
 # Kendo.Mvc.Extensions.QueryableExtensions

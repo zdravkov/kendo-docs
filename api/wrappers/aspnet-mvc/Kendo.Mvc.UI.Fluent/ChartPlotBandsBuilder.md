@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPlotBandsBuilder
+title: ChartPlotBandsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPlotBandsBuilder

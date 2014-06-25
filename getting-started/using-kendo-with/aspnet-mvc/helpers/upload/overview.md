@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Upload HtmlHelper extension | Kendo UI Upload widget documentation
+title: Overview
+page_title: Upload HtmlHelper extension | Kendo UI Upload widget documentation
 description: Get familiar with Upload HtmlHelper server-side wrapper, learn how to setup an asynchronous upload and handle Kendo UI Upload events.
 ---
 

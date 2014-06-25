@@ -1,5 +1,5 @@
 ---
-nav_title: dropDownList-animation-close
+title: dropDownList-animation-close
 ---
 
 # \<kendo:dropDownList-animation-close\>

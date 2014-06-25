@@ -1,5 +1,5 @@
 ---
-nav_title: editor-serialization
+title: editor-serialization
 ---
 
 # \<kendo:editor-serialization\>

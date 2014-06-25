@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionDefaults
+title: DiagramConnectionDefaults
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionDefaults

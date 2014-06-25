@@ -1,8 +1,8 @@
 ---
-nav_title: Data Binding
-title: Overview of data binding in Kendo UI Javascript Chart widget
+title: Data Binding
+page_title: Overview of data binding in Kendo UI Javascript Chart widget
 description: How to handle binding to inline data, binding to a data source in Chart UI widget.
-nav_position: 2
+position: 2
 ---
 
 # Data Binding

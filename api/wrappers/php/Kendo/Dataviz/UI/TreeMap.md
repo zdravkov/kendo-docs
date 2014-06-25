@@ -1,5 +1,5 @@
 ---
-nav_title: TreeMap
+title: TreeMap
 ---
 
 # \Kendo\Dataviz\UI\TreeMap

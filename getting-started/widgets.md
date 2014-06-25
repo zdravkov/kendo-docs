@@ -1,6 +1,6 @@
 ---
-nav_title: Widgets
-title: Kendo UI widgets
+title: Widgets
+page_title: Kendo UI widgets
 description: Initialize Kendo UI widgets, set configuration, get the client object, use event binding.
 ---
 

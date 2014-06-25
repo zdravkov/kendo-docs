@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-negativeValues
+title: chart-seriesItem-negativeValues
 ---
 
 # \<kendo:chart-seriesItem-negativeValues\>

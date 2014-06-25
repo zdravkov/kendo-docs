@@ -1,5 +1,5 @@
 ---
-nav_title: WindowAnimationClose
+title: WindowAnimationClose
 ---
 
 # \Kendo\UI\WindowAnimationClose

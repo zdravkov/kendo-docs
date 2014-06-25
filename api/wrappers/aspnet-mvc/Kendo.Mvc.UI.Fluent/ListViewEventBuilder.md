@@ -1,5 +1,5 @@
 ---
-nav_title: ListViewEventBuilder
+title: ListViewEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewEventBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartValueAxisItemMajorGridLines
+title: StockChartValueAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\StockChartValueAxisItemMajorGridLines

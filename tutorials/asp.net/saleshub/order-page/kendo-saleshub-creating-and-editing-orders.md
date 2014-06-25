@@ -1,6 +1,6 @@
 ---
-nav_title: Creating and Editing Orders
-nav_position: 0
+title: Creating and Editing Orders
+position: 0
 ---
 
 # Creating and Editing Orders - SalesHub

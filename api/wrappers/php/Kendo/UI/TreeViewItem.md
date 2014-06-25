@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewItem
+title: TreeViewItem
 ---
 
 # \Kendo\UI\TreeViewItem

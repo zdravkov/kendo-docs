@@ -1,5 +1,5 @@
 ---
-nav_title: ChartStepAreaMissingValues
+title: ChartStepAreaMissingValues
 ---
 
 # Kendo.Mvc.UI.ChartStepAreaMissingValues

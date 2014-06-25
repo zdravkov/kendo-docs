@@ -1,5 +1,5 @@
 ---
-nav_title: TooltipAnimationClose
+title: TooltipAnimationClose
 ---
 
 # \Kendo\UI\TooltipAnimationClose

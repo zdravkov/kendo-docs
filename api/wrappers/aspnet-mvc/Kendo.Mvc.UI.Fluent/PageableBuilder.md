@@ -1,5 +1,5 @@
 ---
-nav_title: PageableBuilder
+title: PageableBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PageableBuilder

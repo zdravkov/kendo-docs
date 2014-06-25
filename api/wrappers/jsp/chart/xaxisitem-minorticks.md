@@ -1,5 +1,5 @@
 ---
-nav_title: chart-xAxisItem-minorTicks
+title: chart-xAxisItem-minorTicks
 ---
 
 # \<kendo:chart-xAxisItem-minorTicks\>

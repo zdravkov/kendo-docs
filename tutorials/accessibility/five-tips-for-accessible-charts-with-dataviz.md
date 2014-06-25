@@ -1,5 +1,5 @@
 ---
-nav_title: Tips for Creating Accessible Charts with Kendo UI DataViz
+title: Tips for Creating Accessible Charts with Kendo UI DataViz
 ---
 
 # Tutorial: Tips for Creating Accessible Charts with Kendo UI DataViz

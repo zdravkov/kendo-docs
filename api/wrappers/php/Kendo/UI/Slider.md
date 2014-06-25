@@ -1,5 +1,5 @@
 ---
-nav_title: Slider
+title: Slider
 ---
 
 # \Kendo\UI\Slider

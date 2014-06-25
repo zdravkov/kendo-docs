@@ -1,5 +1,5 @@
 ---
-nav_title: chart-series
+title: chart-series
 ---
 
 # \<kendo:chart-series\>

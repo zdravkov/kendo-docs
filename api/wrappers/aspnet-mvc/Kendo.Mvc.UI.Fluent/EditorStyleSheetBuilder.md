@@ -1,5 +1,5 @@
 ---
-nav_title: EditorStyleSheetBuilder
+title: EditorStyleSheetBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.EditorStyleSheetBuilder

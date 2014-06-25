@@ -1,5 +1,5 @@
 ---
-nav_title: WidgetFactory
+title: WidgetFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.WidgetFactory

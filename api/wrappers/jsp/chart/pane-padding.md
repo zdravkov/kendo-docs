@@ -1,5 +1,5 @@
 ---
-nav_title: chart-pane-padding
+title: chart-pane-padding
 ---
 
 # \<kendo:chart-pane-padding\>

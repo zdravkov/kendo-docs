@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGaugePointerTrack
+title: LinearGaugePointerTrack
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugePointerTrack

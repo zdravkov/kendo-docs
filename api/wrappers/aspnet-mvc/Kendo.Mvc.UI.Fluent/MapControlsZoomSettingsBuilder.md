@@ -1,5 +1,5 @@
 ---
-nav_title: MapControlsZoomSettingsBuilder
+title: MapControlsZoomSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapControlsZoomSettingsBuilder

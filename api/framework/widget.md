@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.ui.Widget
+title: kendo.ui.Widget
 ---
 
 # kendo.ui.Widget

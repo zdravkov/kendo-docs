@@ -1,8 +1,8 @@
 ---
-nav_title: Working with selection
-title: Working with selection and ranges in the Editor UI widget | Kendo UI Documentation
+title: Working with selection
+page_title: Working with selection and ranges in the Editor UI widget | Kendo UI Documentation
 description: This help topic explains how to use the Editor range objects.
-nav_position: 4
+position: 4
 ---
 
 # Overview

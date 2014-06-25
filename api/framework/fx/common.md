@@ -1,5 +1,5 @@
 ---
-nav_title: FX Common API
+title: FX Common API
 ---
 
 # Common Effects API

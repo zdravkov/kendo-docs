@@ -1,5 +1,5 @@
 ---
-nav_title: editor-imageBrowser-transport-destroy
+title: editor-imageBrowser-transport-destroy
 ---
 
 # \<kendo:editor-imageBrowser-transport-destroy\>

@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-messages-editor
+title: scheduler-messages-editor
 ---
 
 # \<kendo:scheduler-messages-editor\>

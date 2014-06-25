@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartPane
+title: StockChartPane
 ---
 
 # \Kendo\Dataviz\UI\StockChartPane

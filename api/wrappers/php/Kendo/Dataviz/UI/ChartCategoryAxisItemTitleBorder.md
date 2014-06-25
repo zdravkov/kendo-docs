@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemTitleBorder
+title: ChartCategoryAxisItemTitleBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemTitleBorder

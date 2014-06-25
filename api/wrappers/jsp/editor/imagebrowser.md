@@ -1,5 +1,5 @@
 ---
-nav_title: editor-imageBrowser
+title: editor-imageBrowser
 ---
 
 # \<kendo:editor-imageBrowser\>

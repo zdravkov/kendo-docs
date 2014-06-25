@@ -1,5 +1,5 @@
 ---
-nav_title: GridPageableMessages
+title: GridPageableMessages
 ---
 
 # \Kendo\UI\GridPageableMessages

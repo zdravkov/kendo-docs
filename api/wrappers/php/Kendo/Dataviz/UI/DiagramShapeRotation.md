@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeRotation
+title: DiagramShapeRotation
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeRotation

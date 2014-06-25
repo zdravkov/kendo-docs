@@ -1,5 +1,5 @@
 ---
-nav_title: Pager
+title: Pager
 ---
 
 # \Kendo\UI\Pager

@@ -1,5 +1,5 @@
 ---
-nav_title: SortableCursorOffsetSettingsBuilder
+title: SortableCursorOffsetSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SortableCursorOffsetSettingsBuilder

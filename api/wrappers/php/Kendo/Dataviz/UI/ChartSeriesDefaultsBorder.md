@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesDefaultsBorder
+title: ChartSeriesDefaultsBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsBorder

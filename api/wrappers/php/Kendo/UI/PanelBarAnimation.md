@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBarAnimation
+title: PanelBarAnimation
 ---
 
 # \Kendo\UI\PanelBarAnimation

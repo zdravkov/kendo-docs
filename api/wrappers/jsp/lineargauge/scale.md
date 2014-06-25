@@ -1,5 +1,5 @@
 ---
-nav_title: linearGauge-scale
+title: linearGauge-scale
 ---
 
 # \<kendo:linearGauge-scale\>

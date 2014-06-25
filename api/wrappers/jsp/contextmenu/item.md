@@ -1,5 +1,5 @@
 ---
-nav_title: contextMenu-item
+title: contextMenu-item
 ---
 
 # \<kendo:contextMenu-item\>

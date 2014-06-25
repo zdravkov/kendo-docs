@@ -1,6 +1,6 @@
 ---
-nav_title: Kendo Widget CSS Styles
-title: Appearance and Styling of Kendo UI HTML5 widgets
+title: Kendo Widget CSS Styles
+page_title: Appearance and Styling of Kendo UI HTML5 widgets
 description: Define CSS classes of Kendo UI Widgets to change their appearance. Learn how to easily customize Kendo components by overriding the styling of a given widget.
 ---
 

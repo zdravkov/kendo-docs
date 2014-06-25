@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemSelect
+title: ChartCategoryAxisItemSelect
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemSelect

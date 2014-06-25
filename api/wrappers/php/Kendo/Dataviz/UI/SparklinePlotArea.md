@@ -1,5 +1,5 @@
 ---
-nav_title: SparklinePlotArea
+title: SparklinePlotArea
 ---
 
 # \Kendo\Dataviz\UI\SparklinePlotArea

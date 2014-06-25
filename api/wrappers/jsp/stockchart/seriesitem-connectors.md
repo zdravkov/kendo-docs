@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-seriesItem-connectors
+title: stockChart-seriesItem-connectors
 ---
 
 # \<kendo:stockChart-seriesItem-connectors\>

@@ -1,6 +1,6 @@
 ---
-nav_title: Kendo UI Accessibility Overview
 title: Kendo UI Accessibility Overview
+page_title: Kendo UI Accessibility Overview
 description: An overview of Kendo UI Accessibility support
 related: tips-for-accessible-charts-with-dataviz
 ---

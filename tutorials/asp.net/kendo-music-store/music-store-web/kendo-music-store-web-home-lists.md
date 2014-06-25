@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Home Page
+title: Creating the Home Page
 ---
 
 # Creating the Home Page - Kendo Music Store

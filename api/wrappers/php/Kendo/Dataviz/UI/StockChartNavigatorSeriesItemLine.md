@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorSeriesItemLine
+title: StockChartNavigatorSeriesItemLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemLine

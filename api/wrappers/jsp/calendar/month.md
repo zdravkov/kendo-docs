@@ -1,5 +1,5 @@
 ---
-nav_title: calendar-month
+title: calendar-month
 ---
 
 # \<kendo:calendar-month\>

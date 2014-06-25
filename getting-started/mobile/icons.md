@@ -1,5 +1,5 @@
 ---
-nav_title: Icons
+title: Icons
 ---
 
 # Icons in Kendo UI Mobile

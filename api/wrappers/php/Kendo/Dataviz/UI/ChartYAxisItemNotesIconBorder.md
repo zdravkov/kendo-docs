@@ -1,5 +1,5 @@
 ---
-nav_title: ChartYAxisItemNotesIconBorder
+title: ChartYAxisItemNotesIconBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemNotesIconBorder

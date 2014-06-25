@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the PanelBar PHP class, server-side wrapper for Kendo UI PanelBar widget
+title: Overview
+page_title: How to use the PanelBar PHP class, server-side wrapper for Kendo UI PanelBar widget
 description: Learn how to create Kendo UI PanelBar for PHP, handle Kendo UI PanelBar Events, access an existing panelbar.
 ---
 

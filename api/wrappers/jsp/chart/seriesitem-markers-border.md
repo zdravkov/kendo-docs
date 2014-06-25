@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-markers-border
+title: chart-seriesItem-markers-border
 ---
 
 # \<kendo:chart-seriesItem-markers-border\>

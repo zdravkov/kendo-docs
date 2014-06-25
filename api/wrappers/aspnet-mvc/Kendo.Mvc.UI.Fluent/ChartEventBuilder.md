@@ -1,5 +1,5 @@
 ---
-nav_title: ChartEventBuilder
+title: ChartEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartEventBuilder

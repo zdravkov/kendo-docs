@@ -1,5 +1,5 @@
 ---
-nav_title: ChartDonutSeriesBuilder
+title: ChartDonutSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartDonutSeriesBuilder

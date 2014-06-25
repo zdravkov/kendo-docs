@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsShapeStyleFill
+title: MapLayerDefaultsShapeStyleFill
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleFill

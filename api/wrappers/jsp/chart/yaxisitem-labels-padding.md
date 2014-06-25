@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-labels-padding
+title: chart-yAxisItem-labels-padding
 ---
 
 # \<kendo:chart-yAxisItem-labels-padding\>

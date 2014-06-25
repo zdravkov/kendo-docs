@@ -1,5 +1,5 @@
 ---
-nav_title: Menu
+title: Menu
 ---
 
 # \Kendo\UI\Menu

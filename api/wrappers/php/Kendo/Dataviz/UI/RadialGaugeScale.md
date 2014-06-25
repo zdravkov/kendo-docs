@@ -1,5 +1,5 @@
 ---
-nav_title: RadialGaugeScale
+title: RadialGaugeScale
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugeScale

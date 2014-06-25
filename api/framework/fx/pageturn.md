@@ -1,5 +1,5 @@
 ---
-nav_title: FX PageTurn
+title: FX PageTurn
 ---
 
 # PageTurn

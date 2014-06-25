@@ -1,5 +1,5 @@
 ---
-nav_title: ColorPalette
+title: ColorPalette
 ---
 
 # \Kendo\UI\ColorPalette

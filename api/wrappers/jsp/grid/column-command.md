@@ -1,5 +1,5 @@
 ---
-nav_title: grid-column-command
+title: grid-column-command
 ---
 
 # \<kendo:grid-column-command\>

@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxisItem-labels-margin
+title: chart-categoryAxisItem-labels-margin
 ---
 
 # \<kendo:chart-categoryAxisItem-labels-margin\>

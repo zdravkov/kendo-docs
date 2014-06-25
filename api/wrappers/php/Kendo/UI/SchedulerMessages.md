@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerMessages
+title: SchedulerMessages
 ---
 
 # \Kendo\UI\SchedulerMessages

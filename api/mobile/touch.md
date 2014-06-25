@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.ui.Touch
+title: kendo.ui.Touch
 ---
 
 # kendo.ui.Touch

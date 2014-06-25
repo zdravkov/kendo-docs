@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.ColorPalette
-title: Configuration, methods and events of Kendo UI ColorPalette
+title: kendo.ui.ColorPalette
+page_title: Configuration, methods and events of Kendo UI ColorPalette
 ---
 
 # kendo.ui.ColorPalette

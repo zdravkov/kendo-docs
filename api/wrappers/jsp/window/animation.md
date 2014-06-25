@@ -1,5 +1,5 @@
 ---
-nav_title: window-animation
+title: window-animation
 ---
 
 # \<kendo:window-animation\>

@@ -1,6 +1,6 @@
 ---
-nav_title: Add Charts and Gauges
-title: How to add charts to a web app | Kendo UI DataViz Documentation
+title: Add Charts and Gauges
+page_title: How to add charts to a web app | Kendo UI DataViz Documentation
 description: This documentation will guide you through the process of adding charts and implementing Kendo UI DataViz gauges to your web application.
 ---
 

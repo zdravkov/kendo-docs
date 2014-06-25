@@ -1,5 +1,5 @@
 ---
-nav_title: FX Fade
+title: FX Fade
 ---
 
 # Fade

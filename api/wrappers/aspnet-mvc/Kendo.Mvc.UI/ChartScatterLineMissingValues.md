@@ -1,5 +1,5 @@
 ---
-nav_title: ChartScatterLineMissingValues
+title: ChartScatterLineMissingValues
 ---
 
 # Kendo.Mvc.UI.ChartScatterLineMissingValues

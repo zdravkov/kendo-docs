@@ -1,5 +1,5 @@
 ---
-nav_title: FX Expand
+title: FX Expand
 ---
 
 # Expand

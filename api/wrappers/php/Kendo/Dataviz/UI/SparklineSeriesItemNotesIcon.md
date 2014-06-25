@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesItemNotesIcon
+title: SparklineSeriesItemNotesIcon
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemNotesIcon

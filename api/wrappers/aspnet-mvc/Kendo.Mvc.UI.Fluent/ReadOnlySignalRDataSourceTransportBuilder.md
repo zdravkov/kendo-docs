@@ -1,5 +1,5 @@
 ---
-nav_title: ReadOnlySignalRDataSourceTransportBuilder
+title: ReadOnlySignalRDataSourceTransportBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ReadOnlySignalRDataSourceTransportBuilder

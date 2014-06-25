@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsStrokeSettingsBuilder
+title: DiagramShapeDefaultsStrokeSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramShapeDefaultsStrokeSettingsBuilder

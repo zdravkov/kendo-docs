@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-categoryAxisItem-labels-margin
+title: stockChart-navigator-categoryAxisItem-labels-margin
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-labels-margin\>

@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemCrosshair
+title: SparklineCategoryAxisItemCrosshair
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemCrosshair

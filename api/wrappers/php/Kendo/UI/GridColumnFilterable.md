@@ -1,5 +1,5 @@
 ---
-nav_title: GridColumnFilterable
+title: GridColumnFilterable
 ---
 
 # \Kendo\UI\GridColumnFilterable

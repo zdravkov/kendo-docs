@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBulletSeriesBuilder
+title: ChartBulletSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBulletSeriesBuilder

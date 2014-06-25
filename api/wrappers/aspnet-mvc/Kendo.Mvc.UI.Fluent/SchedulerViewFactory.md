@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerViewFactory
+title: SchedulerViewFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewFactory

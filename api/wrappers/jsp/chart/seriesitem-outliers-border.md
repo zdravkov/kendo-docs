@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-outliers-border
+title: chart-seriesItem-outliers-border
 ---
 
 # \<kendo:chart-seriesItem-outliers-border\>

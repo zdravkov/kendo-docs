@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineType
+title: SparklineType
 ---
 
 # Kendo.Mvc.UI.SparklineType

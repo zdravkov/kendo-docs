@@ -1,6 +1,6 @@
 ---
-nav_title: Binding
-title: Ajax Binding of Kendo jQuery ListView widget
+title: Binding
+page_title: Ajax Binding of Kendo jQuery ListView widget
 description: Learn the steps to configure Kendo UI ListView component for AJAX binding and easily enable client data processing during AJAX binding.
 ---
 

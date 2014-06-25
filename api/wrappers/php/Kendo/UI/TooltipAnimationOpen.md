@@ -1,5 +1,5 @@
 ---
-nav_title: TooltipAnimationOpen
+title: TooltipAnimationOpen
 ---
 
 # \Kendo\UI\TooltipAnimationOpen

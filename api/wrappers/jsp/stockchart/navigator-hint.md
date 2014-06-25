@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-hint
+title: stockChart-navigator-hint
 ---
 
 # \<kendo:stockChart-navigator-hint\>

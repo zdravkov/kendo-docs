@@ -1,5 +1,5 @@
 ---
-nav_title: ChartOHLCSeriesBuilder
+title: ChartOHLCSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartOHLCSeriesBuilder

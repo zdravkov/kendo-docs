@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBarEventBuilder
+title: PanelBarEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PanelBarEventBuilder

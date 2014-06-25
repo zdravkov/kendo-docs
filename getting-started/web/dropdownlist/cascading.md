@@ -1,8 +1,8 @@
 ---
-nav_title: Cascading DropDownLists
-title: jQuery Cascading DropDown Lists with Kendo UI Web
+title: Cascading DropDownLists
+page_title: jQuery Cascading DropDown Lists with Kendo UI Web
 description: How to get started using the cascading functionality of Kendo UI DropDownList widget.
-nav_position: 2
+position: 2
 ---
 
 # Cascading DropDownLists

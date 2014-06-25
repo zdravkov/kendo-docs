@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionDefaultsHoverStroke
+title: DiagramConnectionDefaultsHoverStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionDefaultsHoverStroke

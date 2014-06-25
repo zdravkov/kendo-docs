@@ -1,5 +1,5 @@
 ---
-nav_title: map-controls-navigator
+title: map-controls-navigator
 ---
 
 # \<kendo:map-controls-navigator\>

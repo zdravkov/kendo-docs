@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.ui.Button
+title: kendo.ui.Button
 description: Configuration, methods and events of the Kendo UI Button
 ---
 

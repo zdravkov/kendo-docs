@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemNotesIconBorder
+title: ChartCategoryAxisItemNotesIconBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesIconBorder

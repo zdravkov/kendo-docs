@@ -1,5 +1,5 @@
 ---
-nav_title: maskedTextBox
+title: maskedTextBox
 ---
 
 # \<kendo:maskedTextBox\>

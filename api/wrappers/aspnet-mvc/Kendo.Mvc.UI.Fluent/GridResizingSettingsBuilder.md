@@ -1,5 +1,5 @@
 ---
-nav_title: GridResizingSettingsBuilder
+title: GridResizingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridResizingSettingsBuilder

@@ -1,6 +1,6 @@
 ---
-nav_title: View
-nav_position: 4
+title: View
+position: 4
 ---
 
 # View Overview

@@ -1,5 +1,5 @@
 ---
-nav_title: PivotGridMessages
+title: PivotGridMessages
 ---
 
 # \Kendo\UI\PivotGridMessages

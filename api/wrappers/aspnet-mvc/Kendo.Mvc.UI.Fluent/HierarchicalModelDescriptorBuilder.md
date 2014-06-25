@@ -1,5 +1,5 @@
 ---
-nav_title: HierarchicalModelDescriptorBuilder
+title: HierarchicalModelDescriptorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.HierarchicalModelDescriptorBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceGroupItem
+title: DataSourceGroupItem
 ---
 
 # \Kendo\Data\DataSourceGroupItem

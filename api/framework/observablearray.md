@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.data.ObservableArray
-title: API Reference for ObservableArray wrap in Kendo MVVM and Kendo DataSource
+title: kendo.data.ObservableArray
+page_title: API Reference for ObservableArray wrap in Kendo MVVM and Kendo DataSource
 description: How to create a new ObservableArray, explanations how to use kendo.observable methods, fields and events.
 ---
 

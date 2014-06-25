@@ -1,5 +1,5 @@
 ---
-nav_title: timePicker-animation-open
+title: timePicker-animation-open
 ---
 
 # \<kendo:timePicker-animation-open\>

@@ -1,5 +1,5 @@
 ---
-nav_title: NumberOperatorsBuilder
+title: NumberOperatorsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.NumberOperatorsBuilder

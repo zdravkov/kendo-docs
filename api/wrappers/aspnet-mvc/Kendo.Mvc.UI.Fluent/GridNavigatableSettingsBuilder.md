@@ -1,5 +1,5 @@
 ---
-nav_title: GridNavigatableSettingsBuilder
+title: GridNavigatableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridNavigatableSettingsBuilder

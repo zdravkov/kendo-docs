@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Dashboard Main Page
+title: Creating the Dashboard Main Page
 ---
 
 # Creating the Dashboard Main Page - Music Dashboard

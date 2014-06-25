@@ -1,5 +1,5 @@
 ---
-nav_title: Editing
+title: Editing
 ---
 
 # Editing

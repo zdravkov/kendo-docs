@@ -1,5 +1,5 @@
 ---
-nav_title: FilterableOperatorsBuilder
+title: FilterableOperatorsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.FilterableOperatorsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: progressBar-animation
+title: progressBar-animation
 ---
 
 # \<kendo:progressBar-animation\>

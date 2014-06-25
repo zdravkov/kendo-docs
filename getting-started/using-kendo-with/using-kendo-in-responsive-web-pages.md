@@ -1,5 +1,5 @@
 ---
-nav_title: Using Kendo In Responsive Web Pages
+title: Using Kendo In Responsive Web Pages
 description: How to auto-resize kendo widgets when put in resizable containers (splitter or window).
 ---
 

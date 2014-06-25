@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxis-minorGridLines
+title: chart-categoryAxis-minorGridLines
 ---
 
 # \<kendo:chart-categoryAxis-minorGridLines\>

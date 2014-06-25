@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Documentation for Autocomplete UI widget in Kendo UI framework
+title: Overview
+page_title: Documentation for Autocomplete UI widget in Kendo UI framework
 description: How to provide AutoComplete Suggestions, guide to Autocomplete UI widget.
 ---
 

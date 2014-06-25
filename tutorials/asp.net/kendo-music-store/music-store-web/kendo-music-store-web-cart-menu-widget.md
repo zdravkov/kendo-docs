@@ -1,5 +1,5 @@
 ---
-nav_title: Custom Shopping Cart Menu Widget
+title: Custom Shopping Cart Menu Widget
 ---
 
 # Custom Shopping Cart Menu Widget - Kendo Music Store

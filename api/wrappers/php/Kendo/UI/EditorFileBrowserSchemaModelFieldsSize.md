@@ -1,5 +1,5 @@
 ---
-nav_title: EditorFileBrowserSchemaModelFieldsSize
+title: EditorFileBrowserSchemaModelFieldsSize
 ---
 
 # \Kendo\UI\EditorFileBrowserSchemaModelFieldsSize

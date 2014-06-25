@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxis-labels
+title: chart-categoryAxis-labels
 ---
 
 # \<kendo:chart-categoryAxis-labels\>

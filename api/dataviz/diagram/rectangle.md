@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Rectangle
+title: kendo.dataviz.diagram.Rectangle
 ---
 
 # kendo.dataviz.diagram.Rectangle

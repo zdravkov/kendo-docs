@@ -1,6 +1,6 @@
 ---
-nav_title: Remote binding
-title: How to bind Kendo ListView for PHP to remote service which returns JSON
+title: Remote binding
+page_title: How to bind Kendo ListView for PHP to remote service which returns JSON
 description: Learn how to bind Kendo UI ListView for PHP to JSON
 ---
 # Remote Binding

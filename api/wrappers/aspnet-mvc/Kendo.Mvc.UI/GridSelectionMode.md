@@ -1,5 +1,5 @@
 ---
-nav_title: GridSelectionMode
+title: GridSelectionMode
 ---
 
 # Kendo.Mvc.UI.GridSelectionMode

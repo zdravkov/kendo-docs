@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisPlotBandsFactory
+title: ChartAxisPlotBandsFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisPlotBandsFactory

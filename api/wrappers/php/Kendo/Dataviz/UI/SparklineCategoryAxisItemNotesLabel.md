@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemNotesLabel
+title: SparklineCategoryAxisItemNotesLabel
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemNotesLabel

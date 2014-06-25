@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of TimePicker UI widget
+title: Overview
+page_title: Overview of TimePicker UI widget
 description: How to create, initialize and use TimePicker UI widget.
 ---
 

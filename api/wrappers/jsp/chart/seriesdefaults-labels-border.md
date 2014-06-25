@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesDefaults-labels-border
+title: chart-seriesDefaults-labels-border
 ---
 
 # \<kendo:chart-seriesDefaults-labels-border\>

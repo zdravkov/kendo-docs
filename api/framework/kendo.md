@@ -1,6 +1,6 @@
 ---
-nav_title: kendo
-title: API Reference for methods and properties in Kendo UI Framework
+title: kendo
+page_title: API Reference for methods and properties in Kendo UI Framework
 description: Examples and detailed explanation of Kendo UI methods and properties.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceModelDescriptorFactory
+title: DataSourceModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactory

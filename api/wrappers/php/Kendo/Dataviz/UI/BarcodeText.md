@@ -1,5 +1,5 @@
 ---
-nav_title: BarcodeText
+title: BarcodeText
 ---
 
 # \Kendo\Dataviz\UI\BarcodeText

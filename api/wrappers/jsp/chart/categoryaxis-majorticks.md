@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxis-majorTicks
+title: chart-categoryAxis-majorTicks
 ---
 
 # \<kendo:chart-categoryAxis-majorTicks\>

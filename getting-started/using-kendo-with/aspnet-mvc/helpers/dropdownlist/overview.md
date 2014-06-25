@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: DropDownList HtmlHelper extension for Kendo UI DropDownList | Kendo UI documentation
+title: Overview
+page_title: DropDownList HtmlHelper extension for Kendo UI DropDownList | Kendo UI documentation
 description: How to bind a Kendo UI DropDownList for ASP.NET MVC, configure a server-side wrapper for Kendo UI DropDownlist Widget.
 ---
 

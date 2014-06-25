@@ -1,5 +1,5 @@
 ---
-nav_title: ChartMinorTicksBuilder
+title: ChartMinorTicksBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMinorTicksBuilder

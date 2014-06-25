@@ -1,6 +1,6 @@
 ---
-nav_title: Scatter Chart
-title: Guide for using HTML5 Scatter Charts 
+title: Scatter Chart
+page_title: Guide for using HTML5 Scatter Charts 
 description: How to use Scatter and Scatter Line charts in Kendo UI DataViz.
 ---
 

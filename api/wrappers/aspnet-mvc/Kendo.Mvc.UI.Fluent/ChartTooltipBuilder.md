@@ -1,5 +1,5 @@
 ---
-nav_title: ChartTooltipBuilder
+title: ChartTooltipBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartTooltipBuilder

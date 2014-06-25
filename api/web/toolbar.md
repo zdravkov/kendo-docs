@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.ToolBar
-title: Configuration, methods and events of Kendo UI ToolBar
+title: kendo.ui.ToolBar
+page_title: Configuration, methods and events of Kendo UI ToolBar
 relatedDocs: gs-web-toolbar-overview
 ---
 

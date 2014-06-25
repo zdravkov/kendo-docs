@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-xAxisItem-crosshair
+title: stockChart-xAxisItem-crosshair
 ---
 
 # \<kendo:stockChart-xAxisItem-crosshair\>

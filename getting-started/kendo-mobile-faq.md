@@ -1,6 +1,6 @@
 ---
-nav_title: Kendo UI Mobile FAQ
-title: Kendo UI Mobile Frequently Asked Questions
+title: Kendo UI Mobile FAQ
+page_title: Kendo UI Mobile Frequently Asked Questions
 description: Answers to Frequently Asked Questions about how Kendo UI Mobile works and behaves
 ---
 

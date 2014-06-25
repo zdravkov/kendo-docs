@@ -1,5 +1,5 @@
 ---
-nav_title: editor-fileBrowser-schema-model-fields-type
+title: editor-fileBrowser-schema-model-fields-type
 ---
 
 # \<kendo:editor-fileBrowser-schema-model-fields-type\>

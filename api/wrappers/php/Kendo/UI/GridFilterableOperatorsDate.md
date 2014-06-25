@@ -1,5 +1,5 @@
 ---
-nav_title: GridFilterableOperatorsDate
+title: GridFilterableOperatorsDate
 ---
 
 # \Kendo\UI\GridFilterableOperatorsDate

@@ -1,5 +1,5 @@
 ---
-nav_title: GanttMessagesViews
+title: GanttMessagesViews
 ---
 
 # \Kendo\UI\GanttMessagesViews

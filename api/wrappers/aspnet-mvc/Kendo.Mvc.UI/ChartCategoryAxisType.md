@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisType
+title: ChartCategoryAxisType
 ---
 
 # Kendo.Mvc.UI.ChartCategoryAxisType

@@ -1,5 +1,5 @@
 ---
-nav_title: GridScrollSettingsBuilder
+title: GridScrollSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridScrollSettingsBuilder

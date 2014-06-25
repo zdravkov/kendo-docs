@@ -1,5 +1,5 @@
 ---
-nav_title: ChartMarkerShape
+title: ChartMarkerShape
 ---
 
 # Kendo.Mvc.UI.ChartMarkerShape

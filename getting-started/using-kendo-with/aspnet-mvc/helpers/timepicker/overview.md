@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: User Guide for TimePicker HtmlHelper | Kendo UI documentation
+title: Overview
+page_title: User Guide for TimePicker HtmlHelper | Kendo UI documentation
 description: How to add TimePicker HtmlHelper extension and handle Kendo UI TimePicker events.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemNotesLabel
+title: ChartSeriesItemNotesLabel
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemNotesLabel

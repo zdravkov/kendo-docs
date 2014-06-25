@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the DatePicker PHP class, server-side wrapper for Kendo UI DatePicker widget
+title: Overview
+page_title: How to use the DatePicker PHP class, server-side wrapper for Kendo UI DatePicker widget
 description: Getting started with Kendo UI DatePicker for PHP in quick steps - configure Kendo UI DatePicker widget and operate Kendo UI DatePicker events.
 ---
 

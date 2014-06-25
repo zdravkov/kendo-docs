@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Store Management Charts
+title: Creating the Store Management Charts
 ---
 
 # Creating the Store Management Charts - Kendo Music Store

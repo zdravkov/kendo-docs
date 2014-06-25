@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineBuilder
+title: SparklineBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SparklineBuilder

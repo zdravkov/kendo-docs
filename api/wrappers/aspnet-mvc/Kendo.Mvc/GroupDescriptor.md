@@ -1,5 +1,5 @@
 ---
-nav_title: GroupDescriptor
+title: GroupDescriptor
 ---
 
 # Kendo.Mvc.GroupDescriptor

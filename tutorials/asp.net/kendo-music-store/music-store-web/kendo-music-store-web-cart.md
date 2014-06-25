@@ -1,5 +1,5 @@
 ---
-nav_title: Shopping Cart Implementation
+title: Shopping Cart Implementation
 ---
 
 # Shopping Cart Implementation - Kendo Music Store

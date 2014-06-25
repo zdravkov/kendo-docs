@@ -1,5 +1,5 @@
 ---
-nav_title: ComboBoxAnimationOpen
+title: ComboBoxAnimationOpen
 ---
 
 # \Kendo\UI\ComboBoxAnimationOpen

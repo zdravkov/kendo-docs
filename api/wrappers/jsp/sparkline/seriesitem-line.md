@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-seriesItem-line
+title: sparkline-seriesItem-line
 ---
 
 # \<kendo:sparkline-seriesItem-line\>

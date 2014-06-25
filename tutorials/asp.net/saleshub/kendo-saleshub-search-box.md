@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Search Box
+title: Creating the Search Box
 ---
 
 # Creating the Search Box - SalesHub

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemConnectors
+title: ChartSeriesItemConnectors
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemConnectors

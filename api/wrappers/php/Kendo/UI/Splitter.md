@@ -1,5 +1,5 @@
 ---
-nav_title: Splitter
+title: Splitter
 ---
 
 # \Kendo\UI\Splitter

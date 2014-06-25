@@ -1,5 +1,5 @@
 ---
-nav_title: radialGauge-scale-range
+title: radialGauge-scale-range
 ---
 
 # \<kendo:radialGauge-scale-range\>

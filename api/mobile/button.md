@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.mobile.ui.Button
-title: Configuration, methods and events of Kendo UI Mobile Button
+title: kendo.mobile.ui.Button
+page_title: Configuration, methods and events of Kendo UI Mobile Button
 description: Find which events to use in Mobile Button Widget.
 ---
 

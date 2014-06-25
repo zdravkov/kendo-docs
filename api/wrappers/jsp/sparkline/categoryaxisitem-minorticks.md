@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-categoryAxisItem-minorTicks
+title: sparkline-categoryAxisItem-minorTicks
 ---
 
 # \<kendo:sparkline-categoryAxisItem-minorTicks\>

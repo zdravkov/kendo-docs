@@ -1,5 +1,5 @@
 ---
-nav_title: Project Setup
+title: Project Setup
 ---
 
 # Project Setup - Kendo Music Store Dashboard

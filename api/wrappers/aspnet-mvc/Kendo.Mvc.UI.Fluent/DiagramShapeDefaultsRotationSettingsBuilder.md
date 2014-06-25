@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsRotationSettingsBuilder
+title: DiagramShapeDefaultsRotationSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramShapeDefaultsRotationSettingsBuilder

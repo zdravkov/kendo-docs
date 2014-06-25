@@ -1,5 +1,5 @@
 ---
-nav_title: GridColumnCommandItem
+title: GridColumnCommandItem
 ---
 
 # \Kendo\UI\GridColumnCommandItem

@@ -1,5 +1,5 @@
 ---
-nav_title: GanttMessagesActions
+title: GanttMessagesActions
 ---
 
 # \Kendo\UI\GanttMessagesActions

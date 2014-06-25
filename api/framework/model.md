@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.data.Model
-title: API Reference for kendo.data.Model
+title: kendo.data.Model
+page_title: API Reference for kendo.data.Model
 description: The documentation for kendo.data.Model will help you define a new model, then introduce different methods and guide you to change, get or set an event.
 ---
 

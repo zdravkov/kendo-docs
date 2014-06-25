@@ -1,5 +1,5 @@
 ---
-nav_title: ChartLegendLabelsMargin
+title: ChartLegendLabelsMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartLegendLabelsMargin

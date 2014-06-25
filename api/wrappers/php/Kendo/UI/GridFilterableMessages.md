@@ -1,5 +1,5 @@
 ---
-nav_title: GridFilterableMessages
+title: GridFilterableMessages
 ---
 
 # \Kendo\UI\GridFilterableMessages

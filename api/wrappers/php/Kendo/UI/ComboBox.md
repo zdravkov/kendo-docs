@@ -1,5 +1,5 @@
 ---
-nav_title: ComboBox
+title: ComboBox
 ---
 
 # \Kendo\UI\ComboBox

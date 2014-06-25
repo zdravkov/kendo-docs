@@ -1,5 +1,5 @@
 ---
-nav_title: ChartNoteLabelBuilder
+title: ChartNoteLabelBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNoteLabelBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: ReadOnlyCustomDataSourceSchemaBuilder
+title: ReadOnlyCustomDataSourceSchemaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ReadOnlyCustomDataSourceSchemaBuilder

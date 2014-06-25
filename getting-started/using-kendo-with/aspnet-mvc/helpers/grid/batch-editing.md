@@ -1,6 +1,6 @@
 ---
-nav_title: Batch Editing
-title: Cell editing mode and Batch Updates for Kendo UI Grid for ASP.NET MVC
+title: Batch Editing
+page_title: Cell editing mode and Batch Updates for Kendo UI Grid for ASP.NET MVC
 description: Step by step guide how to enable cell editing mode and batch updates in Kendo UI Grid for ASP.NET MVC.
 ---
 

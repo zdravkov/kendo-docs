@@ -1,5 +1,5 @@
 ---
-nav_title: editor-fileBrowser-messages
+title: editor-fileBrowser-messages
 ---
 
 # \<kendo:editor-fileBrowser-messages\>

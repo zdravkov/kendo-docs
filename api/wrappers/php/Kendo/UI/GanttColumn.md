@@ -1,5 +1,5 @@
 ---
-nav_title: GanttColumn
+title: GanttColumn
 ---
 
 # \Kendo\UI\GanttColumn

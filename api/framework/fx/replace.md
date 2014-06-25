@@ -1,5 +1,5 @@
 ---
-nav_title: FX Replace
+title: FX Replace
 related: fx-replace
 ---
 

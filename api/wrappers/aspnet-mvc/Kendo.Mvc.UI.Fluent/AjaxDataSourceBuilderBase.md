@@ -1,5 +1,5 @@
 ---
-nav_title: AjaxDataSourceBuilderBase
+title: AjaxDataSourceBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.AjaxDataSourceBuilderBase

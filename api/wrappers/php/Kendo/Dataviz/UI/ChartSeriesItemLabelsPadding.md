@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemLabelsPadding
+title: ChartSeriesItemLabelsPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemLabelsPadding

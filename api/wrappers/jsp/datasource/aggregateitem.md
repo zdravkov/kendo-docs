@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-aggregateItem
+title: dataSource-aggregateItem
 ---
 
 # \<kendo:dataSource-aggregateItem\>

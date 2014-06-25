@@ -1,5 +1,5 @@
 ---
-nav_title: colorPicker
+title: colorPicker
 ---
 
 # \<kendo:colorPicker\>

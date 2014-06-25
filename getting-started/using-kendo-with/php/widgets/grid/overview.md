@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Grid PHP class, server-side wrapper for Kendo UI Grid widget
+title: Overview
+page_title: How to use the Grid PHP class, server-side wrapper for Kendo UI Grid widget
 description: Learn how to bind Kendo UI Grid for PHP, handle Kendo UI Grid Events, access an existing grid.
 ---
 

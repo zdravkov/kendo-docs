@@ -1,5 +1,5 @@
 ---
-nav_title: MenuAnimationOpen
+title: MenuAnimationOpen
 ---
 
 # \Kendo\UI\MenuAnimationOpen

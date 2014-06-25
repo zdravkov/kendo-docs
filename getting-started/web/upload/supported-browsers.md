@@ -1,8 +1,8 @@
 ---
-nav_title: Supported Browsers
-title: Supported browsers for Kendo UI Upload widget
+title: Supported Browsers
+page_title: Supported browsers for Kendo UI Upload widget
 description: Detailed browser requirements for the Upload widget.
-nav_position: 5
+position: 5
 ---
 
 # Supported features

@@ -1,5 +1,5 @@
 ---
-nav_title: NotificationEventBuilder
+title: NotificationEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.NotificationEventBuilder

@@ -1,6 +1,6 @@
 ---
-nav_title: Visible
-title: Visible binding in Kendo UI MVVM | Kendo UI Documentation
+title: Visible
+page_title: Visible binding in Kendo UI MVVM | Kendo UI Documentation
 description: Visible binding hides or makes visible the target DOM element or widget in correspondence with the View-model value.
 ---
 

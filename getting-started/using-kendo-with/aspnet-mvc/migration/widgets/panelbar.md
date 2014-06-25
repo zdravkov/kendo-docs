@@ -1,6 +1,6 @@
 ---
-nav_title: PanelBar
-title: Help guide for Kendo UI PanelBar widget server-side API
+title: PanelBar
+page_title: Help guide for Kendo UI PanelBar widget server-side API
 description: Learn more about animations and events in the API for Kendo UI PanelBar component with ASP.NET MVC.
 ---
 

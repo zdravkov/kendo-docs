@@ -1,5 +1,5 @@
 ---
-nav_title: RenderingMode
+title: RenderingMode
 ---
 
 # Kendo.Mvc.UI.RenderingMode

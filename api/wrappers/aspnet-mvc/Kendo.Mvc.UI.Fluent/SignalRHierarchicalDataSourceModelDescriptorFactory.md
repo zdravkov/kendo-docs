@@ -1,5 +1,5 @@
 ---
-nav_title: SignalRHierarchicalDataSourceModelDescriptorFactory
+title: SignalRHierarchicalDataSourceModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.SignalRHierarchicalDataSourceModelDescriptorFactory

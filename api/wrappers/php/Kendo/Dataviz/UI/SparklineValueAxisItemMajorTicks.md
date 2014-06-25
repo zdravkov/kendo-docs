@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineValueAxisItemMajorTicks
+title: SparklineValueAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\SparklineValueAxisItemMajorTicks

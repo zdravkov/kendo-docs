@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisTickType
+title: ChartAxisTickType
 ---
 
 # Kendo.Mvc.UI.ChartAxisTickType

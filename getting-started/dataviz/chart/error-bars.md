@@ -1,6 +1,6 @@
 ---
-nav_title: Error Bars
-title: Configuration guide for the chart ErrorBars
+title: Error Bars
+page_title: Configuration guide for the chart ErrorBars
 description: How to configure the error bars of a chart, bind them to the series data and set the value.
 ---
 

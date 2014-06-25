@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramEditable
+title: DiagramEditable
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditable

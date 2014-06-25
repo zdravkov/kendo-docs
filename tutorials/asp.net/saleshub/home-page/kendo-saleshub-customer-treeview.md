@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Customer TreeView
+title: Creating the Customer TreeView
 ---
 
 # Creating the Customer TreeView - SalesHub

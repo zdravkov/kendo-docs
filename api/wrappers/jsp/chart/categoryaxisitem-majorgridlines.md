@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxisItem-majorGridLines
+title: chart-categoryAxisItem-majorGridLines
 ---
 
 # \<kendo:chart-categoryAxisItem-majorGridLines\>

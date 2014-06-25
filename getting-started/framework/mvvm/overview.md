@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Kendo UI MVVM pattern, integrated with Kendo UI jQuery-powered framework
+title: Overview
+page_title: Kendo UI MVVM pattern, integrated with Kendo UI jQuery-powered framework
 description: Kendo UI Model View ViewModel is an implementation of the MVVM pattern, integrated with Kendo UI framework.
-nav_position: 1
+position: 1
 ---
 # Kendo MVVM Overview
 

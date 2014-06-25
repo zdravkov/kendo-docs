@@ -1,8 +1,8 @@
 ---
-nav_title: Preventing XSS
-title: Preventing Cross-site scripting (XSS) attacks with Editor UI widget | Kendo UI Documentation
+title: Preventing XSS
+page_title: Preventing Cross-site scripting (XSS) attacks with Editor UI widget | Kendo UI Documentation
 description: This help topic explains the security implications of allowing HTML editing in your pages and provide guidelines on how to secure them.
-nav_position: 5
+position: 5
 ---
 
 # Overview

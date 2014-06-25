@@ -1,5 +1,5 @@
 ---
-nav_title: MaskedTextBox
+title: MaskedTextBox
 ---
 
 # \Kendo\UI\MaskedTextBox

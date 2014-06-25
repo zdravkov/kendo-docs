@@ -1,5 +1,5 @@
 ---
-nav_title: MobileDetailButtonEventBuilder
+title: MobileDetailButtonEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileDetailButtonEventBuilder

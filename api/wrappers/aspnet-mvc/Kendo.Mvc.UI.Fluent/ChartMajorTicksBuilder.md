@@ -1,5 +1,5 @@
 ---
-nav_title: ChartMajorTicksBuilder
+title: ChartMajorTicksBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMajorTicksBuilder

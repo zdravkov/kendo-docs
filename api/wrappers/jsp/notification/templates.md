@@ -1,5 +1,5 @@
 ---
-nav_title: notification-templates
+title: notification-templates
 ---
 
 # \<kendo:notification-templates\>

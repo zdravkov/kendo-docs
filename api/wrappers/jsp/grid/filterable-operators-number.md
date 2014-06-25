@@ -1,5 +1,5 @@
 ---
-nav_title: grid-filterable-operators-number
+title: grid-filterable-operators-number
 ---
 
 # \<kendo:grid-filterable-operators-number\>

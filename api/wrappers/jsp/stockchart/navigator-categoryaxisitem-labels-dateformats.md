@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-categoryAxisItem-labels-dateFormats
+title: stockChart-navigator-categoryAxisItem-labels-dateFormats
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-labels-dateFormats\>

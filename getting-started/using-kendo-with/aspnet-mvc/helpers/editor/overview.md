@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use Editor HtmlHelper extension | Kendo UI documentation
+title: Overview
+page_title: How to use Editor HtmlHelper extension | Kendo UI documentation
 description: User Guide for server-side wrapper for Kendo UI Editor for ASP.NET MVC widget.
 ---
 

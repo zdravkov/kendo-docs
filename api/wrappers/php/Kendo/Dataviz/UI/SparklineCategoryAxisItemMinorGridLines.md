@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemMinorGridLines
+title: SparklineCategoryAxisItemMinorGridLines
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemMinorGridLines

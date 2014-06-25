@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the ProgressBar PHP class, server-side wrapper for Kendo UI ProgressBar widget
+title: Overview
+page_title: How to use the ProgressBar PHP class, server-side wrapper for Kendo UI ProgressBar widget
 description: Learn how to create Kendo UI ProgressBar for PHP, handle Kendo UI ProgressBar Events, access an existing ProgressBar.
 ---
 

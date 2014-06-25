@@ -1,5 +1,5 @@
 ---
-nav_title: FlatColorPickerBuilder
+title: FlatColorPickerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.FlatColorPickerBuilder

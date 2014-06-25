@@ -1,5 +1,5 @@
 ---
-nav_title: MobileModalViewBuilder
+title: MobileModalViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileModalViewBuilder

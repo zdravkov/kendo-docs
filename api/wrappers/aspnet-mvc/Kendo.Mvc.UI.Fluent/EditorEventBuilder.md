@@ -1,5 +1,5 @@
 ---
-nav_title: EditorEventBuilder
+title: EditorEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.EditorEventBuilder

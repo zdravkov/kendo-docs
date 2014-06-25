@@ -1,5 +1,5 @@
 ---
-nav_title: Grid
+title: Grid
 ---
 
 # Kendo.Mvc.UI.Grid

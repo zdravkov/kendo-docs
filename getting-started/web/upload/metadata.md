@@ -1,8 +1,8 @@
 ---
-nav_title: Metadata
-title: Documentation guide for using metadata in File Upload UI widget
+title: Metadata
+page_title: Documentation guide for using metadata in File Upload UI widget
 description: How to send metadata to the save handler and receive metadata in Kendo UI Upload widget.
-nav_position: 3
+position: 3
 ---
 
 Asynchronous uploading usually means that you lose the association betwen the files and the context that they originate from.

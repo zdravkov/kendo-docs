@@ -1,6 +1,6 @@
 ---
-nav_title: Click
-title: Click binding in Kendo UI MVVM | Kendo UI Documentation
+title: Click
+page_title: Click binding in Kendo UI MVVM | Kendo UI Documentation
 description: Once the user clicks the target DOM element, methods, attached by using the click binding in Kendo UI MVVM, are automatically triggered.
 ---
 

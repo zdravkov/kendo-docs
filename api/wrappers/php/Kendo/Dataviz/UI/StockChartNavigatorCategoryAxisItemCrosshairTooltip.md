@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemCrosshairTooltip
+title: StockChartNavigatorCategoryAxisItemCrosshairTooltip
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemCrosshairTooltip

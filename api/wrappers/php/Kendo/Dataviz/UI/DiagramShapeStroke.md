@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeStroke
+title: DiagramShapeStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeStroke

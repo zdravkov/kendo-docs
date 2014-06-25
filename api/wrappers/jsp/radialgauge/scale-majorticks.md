@@ -1,5 +1,5 @@
 ---
-nav_title: radialGauge-scale-majorTicks
+title: radialGauge-scale-majorTicks
 ---
 
 # \<kendo:radialGauge-scale-majorTicks\>

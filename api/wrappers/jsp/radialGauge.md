@@ -1,5 +1,5 @@
 ---
-nav_title: radialGauge
+title: radialGauge
 ---
 
 # \<kendo:radialGauge\>

@@ -1,5 +1,5 @@
 ---
-nav_title: GridAggregateResult
+title: GridAggregateResult
 ---
 
 # Kendo.Mvc.UI.GridAggregateResult

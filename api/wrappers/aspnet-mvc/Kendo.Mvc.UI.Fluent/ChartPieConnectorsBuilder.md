@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPieConnectorsBuilder
+title: ChartPieConnectorsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPieConnectorsBuilder

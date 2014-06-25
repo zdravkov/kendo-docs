@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartLegendInactiveItems
+title: StockChartLegendInactiveItems
 ---
 
 # \Kendo\Dataviz\UI\StockChartLegendInactiveItems

@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineChartAreaBorder
+title: SparklineChartAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineChartAreaBorder

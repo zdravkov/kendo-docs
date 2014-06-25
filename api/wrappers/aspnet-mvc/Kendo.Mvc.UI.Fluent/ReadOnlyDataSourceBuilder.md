@@ -1,5 +1,5 @@
 ---
-nav_title: ReadOnlyDataSourceBuilder
+title: ReadOnlyDataSourceBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ReadOnlyDataSourceBuilder

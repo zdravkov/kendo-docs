@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-categoryAxisItem-minorGridLines
+title: sparkline-categoryAxisItem-minorGridLines
 ---
 
 # \<kendo:sparkline-categoryAxisItem-minorGridLines\>

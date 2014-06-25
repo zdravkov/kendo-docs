@@ -1,5 +1,5 @@
 ---
-nav_title: CalendarView
+title: CalendarView
 ---
 
 # Kendo.Mvc.UI.CalendarView

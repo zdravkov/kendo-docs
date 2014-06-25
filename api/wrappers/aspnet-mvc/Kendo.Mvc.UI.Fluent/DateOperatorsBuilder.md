@@ -1,5 +1,5 @@
 ---
-nav_title: DateOperatorsBuilder
+title: DateOperatorsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DateOperatorsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: FilterOperator
+title: FilterOperator
 ---
 
 # Kendo.Mvc.FilterOperator

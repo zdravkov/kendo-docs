@@ -1,5 +1,5 @@
 ---
-nav_title: TooltipAnimation
+title: TooltipAnimation
 ---
 
 # \Kendo\UI\TooltipAnimation

@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Documentation Guide for Kendo UI Barcode widget
+title: Overview
+page_title: Documentation Guide for Kendo UI Barcode widget
 description: How to create and set a Barcode widget in Kendo UI DataViz.
-nav_position: 1
+position: 1
 ---
 
 # Barcode Overview

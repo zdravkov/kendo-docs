@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartPlotAreaBorder
+title: StockChartPlotAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartPlotAreaBorder

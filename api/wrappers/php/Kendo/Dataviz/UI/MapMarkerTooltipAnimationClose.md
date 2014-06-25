@@ -1,5 +1,5 @@
 ---
-nav_title: MapMarkerTooltipAnimationClose
+title: MapMarkerTooltipAnimationClose
 ---
 
 # \Kendo\Dataviz\UI\MapMarkerTooltipAnimationClose

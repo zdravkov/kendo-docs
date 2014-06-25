@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of the Map widget in Kendo UI DataViz
+title: Overview
+page_title: Overview of the Map widget in Kendo UI DataViz
 description: How to create a map, create and bind layers, explore the quick overview of Map widget major features.
-nav_position: 1
+position: 1
 ---
 
 # Map Overview

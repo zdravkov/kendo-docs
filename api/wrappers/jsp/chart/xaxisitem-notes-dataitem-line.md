@@ -1,5 +1,5 @@
 ---
-nav_title: chart-xAxisItem-notes-dataItem-line
+title: chart-xAxisItem-notes-dataItem-line
 ---
 
 # \<kendo:chart-xAxisItem-notes-dataItem-line\>

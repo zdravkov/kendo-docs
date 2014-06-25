@@ -1,5 +1,5 @@
 ---
-nav_title: EditorSerialization
+title: EditorSerialization
 ---
 
 # \Kendo\UI\EditorSerialization

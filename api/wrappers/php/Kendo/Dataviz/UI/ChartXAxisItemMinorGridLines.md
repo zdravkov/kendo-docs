@@ -1,5 +1,5 @@
 ---
-nav_title: ChartXAxisItemMinorGridLines
+title: ChartXAxisItemMinorGridLines
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemMinorGridLines

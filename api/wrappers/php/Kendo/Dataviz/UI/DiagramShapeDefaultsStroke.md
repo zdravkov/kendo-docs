@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsStroke
+title: DiagramShapeDefaultsStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsStroke

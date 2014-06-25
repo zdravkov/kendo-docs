@@ -1,5 +1,5 @@
 ---
-nav_title: ChartFunnelSeriesBuilder
+title: ChartFunnelSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartFunnelSeriesBuilder

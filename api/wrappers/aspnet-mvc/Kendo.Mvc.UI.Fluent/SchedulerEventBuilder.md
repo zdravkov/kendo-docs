@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerEventBuilder
+title: SchedulerEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerEventBuilder

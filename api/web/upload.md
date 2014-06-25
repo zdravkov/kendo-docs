@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Upload
-title: Configuration, methods and events of Kendo UI Upload
+title: kendo.ui.Upload
+page_title: Configuration, methods and events of Kendo UI Upload
 description: How to configure the ability to upload files in an asynchronous manner in Upload UI widget.
 ---
 

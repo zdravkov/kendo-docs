@@ -1,5 +1,5 @@
 ---
-nav_title: editor-imageBrowser-transport-create
+title: editor-imageBrowser-transport-create
 ---
 
 # \<kendo:editor-imageBrowser-transport-create\>

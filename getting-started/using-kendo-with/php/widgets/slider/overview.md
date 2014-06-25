@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Slider PHP class, server-side wrapper for Kendo UI Slider widget
+title: Overview
+page_title: How to use the Slider PHP class, server-side wrapper for Kendo UI Slider widget
 description: Learn how to create Kendo UI Slider for PHP, handle Kendo UI Slider Events, access an existing Slider.
 ---
 

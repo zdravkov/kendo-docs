@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartCategoryAxisItemAutoBaseUnitSteps
+title: StockChartCategoryAxisItemAutoBaseUnitSteps
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemAutoBaseUnitSteps

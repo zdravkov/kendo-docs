@@ -1,5 +1,5 @@
 ---
-nav_title: ButtonEventBuilder
+title: ButtonEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ButtonEventBuilder

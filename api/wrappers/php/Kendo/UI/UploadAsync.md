@@ -1,5 +1,5 @@
 ---
-nav_title: UploadAsync
+title: UploadAsync
 ---
 
 # \Kendo\UI\UploadAsync

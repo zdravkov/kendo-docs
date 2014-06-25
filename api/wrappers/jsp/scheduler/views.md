@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-views
+title: scheduler-views
 ---
 
 # \<kendo:scheduler-views\>

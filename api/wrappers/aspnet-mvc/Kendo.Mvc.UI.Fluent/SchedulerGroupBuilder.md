@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerGroupBuilder
+title: SchedulerGroupBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerGroupBuilder

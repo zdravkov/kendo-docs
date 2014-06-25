@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-categoryAxisItem-majorTicks
+title: stockChart-categoryAxisItem-majorTicks
 ---
 
 # \<kendo:stockChart-categoryAxisItem-majorTicks\>

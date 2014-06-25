@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: User Guide for TreeView HtmlHelper extension for Kendo UI TreeView widget
+title: Overview
+page_title: User Guide for TreeView HtmlHelper extension for Kendo UI TreeView widget
 description: Instructions and examples for TreeView HtmlHelper extension for Kendo UI TreeView for ASP.NET MVC.
 ---
 

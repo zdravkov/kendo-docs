@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.Class
+title: kendo.Class
 ---
 
 

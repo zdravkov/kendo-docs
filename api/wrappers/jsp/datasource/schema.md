@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-schema
+title: dataSource-schema
 ---
 
 # \<kendo:dataSource-schema\>

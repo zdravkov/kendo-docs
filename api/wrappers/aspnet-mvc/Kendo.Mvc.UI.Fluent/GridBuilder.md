@@ -1,5 +1,5 @@
 ---
-nav_title: GridBuilder
+title: GridBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridBuilder

@@ -1,6 +1,6 @@
 ---
-nav_title: Using Kendo With Open Access ORM
-title: Examples of using Kendo UI With The Open Access ORM Tool
+title: Using Kendo With Open Access ORM
+page_title: Examples of using Kendo UI With The Open Access ORM Tool
 description: Learn how to retrieve data from a database with OpenAccess and consume it with Kendo UI.
 related: gs-what-is-kendo, gs-downloading-kendo
 ---

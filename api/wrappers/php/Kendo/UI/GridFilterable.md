@@ -1,5 +1,5 @@
 ---
-nav_title: GridFilterable
+title: GridFilterable
 ---
 
 # \Kendo\UI\GridFilterable

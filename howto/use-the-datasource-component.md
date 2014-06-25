@@ -1,6 +1,6 @@
 ---
-nav_title: Use the DataSource
-title: Using DataSource component in Kendo UI framework | Kendo UI Documentation
+title: Use the DataSource
+page_title: Using DataSource component in Kendo UI framework | Kendo UI Documentation
 description: In this how-to tutorial we provide a quick introduction of Kendo UI DataSource component and guide you how to use it in your project.
 ---
 

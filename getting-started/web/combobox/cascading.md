@@ -1,8 +1,8 @@
 ---
-nav_title: Cascading ComboBoxes
-title: jQuery-powered Cascading ComboBox in Kendo UI Web
+title: Cascading ComboBoxes
+page_title: jQuery-powered Cascading ComboBox in Kendo UI Web
 description: This document provides information how Kendo UI cascading ComboBox works and helps you handle most common scenarios with illustrative examples and FAQ.
-nav_position: 2
+position: 2
 ---
 
 # Cascading ComboBoxes

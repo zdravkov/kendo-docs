@@ -1,5 +1,5 @@
 ---
-nav_title: chart-xAxisItem-title
+title: chart-xAxisItem-title
 ---
 
 # \<kendo:chart-xAxisItem-title\>

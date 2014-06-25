@@ -1,5 +1,5 @@
 ---
-nav_title: ToolBar
+title: ToolBar
 ---
 
 # \Kendo\UI\ToolBar

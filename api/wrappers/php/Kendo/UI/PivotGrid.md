@@ -1,5 +1,5 @@
 ---
-nav_title: PivotGrid
+title: PivotGrid
 ---
 
 # \Kendo\UI\PivotGrid

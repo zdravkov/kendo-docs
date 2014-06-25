@@ -1,5 +1,5 @@
 ---
-nav_title: MobileDrawerBuilder
+title: MobileDrawerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileDrawerBuilder

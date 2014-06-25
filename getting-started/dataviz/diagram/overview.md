@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of the Diagram widget in Kendo UI DataViz
+title: Overview
+page_title: Overview of the Diagram widget in Kendo UI DataViz
 description: How to create a diagram, add diagram elements, change properties, an overview of the widget's major features.
-nav_position: 1
+position: 1
 ---
 
 # Kendo Diagramming Overview

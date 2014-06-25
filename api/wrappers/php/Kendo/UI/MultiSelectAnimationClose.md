@@ -1,5 +1,5 @@
 ---
-nav_title: MultiSelectAnimationClose
+title: MultiSelectAnimationClose
 ---
 
 # \Kendo\UI\MultiSelectAnimationClose

@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewCheckboxes
+title: TreeViewCheckboxes
 ---
 
 # \Kendo\UI\TreeViewCheckboxes

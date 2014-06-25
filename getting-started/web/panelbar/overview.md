@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of PanelBar UI widget documentation
+title: Overview
+page_title: Overview of PanelBar UI widget documentation
 description: Read when the initialization of PanelBar UI widget should occur and how to load the content with AJAX.
 ---
 

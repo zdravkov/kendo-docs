@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-valueAxisItem-majorTicks
+title: sparkline-valueAxisItem-majorTicks
 ---
 
 # \<kendo:sparkline-valueAxisItem-majorTicks\>

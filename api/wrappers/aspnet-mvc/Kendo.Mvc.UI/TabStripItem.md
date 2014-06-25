@@ -1,5 +1,5 @@
 ---
-nav_title: TabStripItem
+title: TabStripItem
 ---
 
 # Kendo.Mvc.UI.TabStripItem

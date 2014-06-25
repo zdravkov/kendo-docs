@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemStack
+title: ChartSeriesItemStack
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemStack

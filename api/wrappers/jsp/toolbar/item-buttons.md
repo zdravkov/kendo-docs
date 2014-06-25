@@ -1,5 +1,5 @@
 ---
-nav_title: toolBar-item-buttons
+title: toolBar-item-buttons
 ---
 
 # \<kendo:toolBar-item-buttons\>

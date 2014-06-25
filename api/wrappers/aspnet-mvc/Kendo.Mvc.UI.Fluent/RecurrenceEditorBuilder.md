@@ -1,5 +1,5 @@
 ---
-nav_title: RecurrenceEditorBuilder
+title: RecurrenceEditorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.RecurrenceEditorBuilder

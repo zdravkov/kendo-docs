@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGauge
+title: LinearGauge
 ---
 
 # \Kendo\Dataviz\UI\LinearGauge

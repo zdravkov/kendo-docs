@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPlotAreaPadding
+title: ChartPlotAreaPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartPlotAreaPadding

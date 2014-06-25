@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesDefaultsNotesLabelBorder
+title: ChartSeriesDefaultsNotesLabelBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsNotesLabelBorder

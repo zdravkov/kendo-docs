@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsConnector
+title: DiagramShapeDefaultsConnector
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsConnector

@@ -1,5 +1,5 @@
 ---
-nav_title: BarcodeBorder
+title: BarcodeBorder
 ---
 
 # \Kendo\Dataviz\UI\BarcodeBorder

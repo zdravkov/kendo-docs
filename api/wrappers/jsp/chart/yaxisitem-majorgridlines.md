@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-majorGridLines
+title: chart-yAxisItem-majorGridLines
 ---
 
 # \<kendo:chart-yAxisItem-majorGridLines\>

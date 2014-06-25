@@ -1,5 +1,5 @@
 ---
-nav_title: ChartXAxisItemPlotBand
+title: ChartXAxisItemPlotBand
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemPlotBand

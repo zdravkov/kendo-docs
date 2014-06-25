@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerEditable
+title: SchedulerEditable
 ---
 
 # \Kendo\UI\SchedulerEditable

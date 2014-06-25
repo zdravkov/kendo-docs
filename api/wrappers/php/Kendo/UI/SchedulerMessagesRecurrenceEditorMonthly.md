@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerMessagesRecurrenceEditorMonthly
+title: SchedulerMessagesRecurrenceEditorMonthly
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceEditorMonthly

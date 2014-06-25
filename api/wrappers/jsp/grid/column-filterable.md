@@ -1,5 +1,5 @@
 ---
-nav_title: grid-column-filterable
+title: grid-column-filterable
 ---
 
 # \<kendo:grid-column-filterable\>

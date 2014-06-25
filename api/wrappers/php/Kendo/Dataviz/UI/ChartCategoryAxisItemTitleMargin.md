@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemTitleMargin
+title: ChartCategoryAxisItemTitleMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemTitleMargin

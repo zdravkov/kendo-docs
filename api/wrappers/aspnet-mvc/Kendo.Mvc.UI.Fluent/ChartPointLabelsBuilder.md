@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPointLabelsBuilder
+title: ChartPointLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPointLabelsBuilder

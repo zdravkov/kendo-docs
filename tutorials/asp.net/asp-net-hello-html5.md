@@ -1,6 +1,6 @@
 ---
-nav_title: Part 3 - Hello HTML5
-title: Tutorial for HTML5 Development in Visual Studio 
+title: Part 3 - Hello HTML5
+page_title: Tutorial for HTML5 Development in Visual Studio 
 description: This tutorial will introduce you to HTML5 development with ASP.NET. Learn the theory and look at the implementation of HTML5 development in Visual Studio.
 ---
 

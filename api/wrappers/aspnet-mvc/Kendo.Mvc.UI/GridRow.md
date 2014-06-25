@@ -1,5 +1,5 @@
 ---
-nav_title: GridRow
+title: GridRow
 ---
 
 # Kendo.Mvc.UI.GridRow

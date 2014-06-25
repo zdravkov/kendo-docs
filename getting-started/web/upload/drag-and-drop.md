@@ -1,8 +1,8 @@
 ---
-nav_title: Drag and drop
-title: Drag and drop feature in async mode of Kendo UI Upload widget
+title: Drag and drop
+page_title: Drag and drop feature in async mode of Kendo UI Upload widget
 description: Step-by-step instructions how to upload files with drag and drop feature in async mode in File Upload UI widget.
-nav_position: 2
+position: 2
 ---
 
 Users can select files by dropping them over the Upload.

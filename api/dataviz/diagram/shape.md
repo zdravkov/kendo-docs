@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Shape
+title: kendo.dataviz.diagram.Shape
 ---
 
 # kendo.dataviz.diagram.Shape

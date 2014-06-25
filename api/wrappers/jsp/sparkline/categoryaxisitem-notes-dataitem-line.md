@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-categoryAxisItem-notes-dataItem-line
+title: sparkline-categoryAxisItem-notes-dataItem-line
 ---
 
 # \<kendo:sparkline-categoryAxisItem-notes-dataItem-line\>

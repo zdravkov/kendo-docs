@@ -1,5 +1,5 @@
 ---
-nav_title: GridToolBarCommandBuilderBase
+title: GridToolBarCommandBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.GridToolBarCommandBuilderBase

@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-categoryAxisItem-autoBaseUnitSteps
+title: stockChart-categoryAxisItem-autoBaseUnitSteps
 ---
 
 # \<kendo:stockChart-categoryAxisItem-autoBaseUnitSteps\>

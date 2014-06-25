@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-transport-destroy
+title: dataSource-transport-destroy
 ---
 
 # \<kendo:dataSource-transport-destroy\>

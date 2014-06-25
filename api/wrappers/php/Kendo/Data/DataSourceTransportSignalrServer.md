@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceTransportSignalrServer
+title: DataSourceTransportSignalrServer
 ---
 
 # \Kendo\Data\DataSourceTransportSignalrServer

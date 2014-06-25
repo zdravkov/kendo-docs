@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceFilterStringDescriptorBuilder
+title: DataSourceFilterStringDescriptorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceFilterStringDescriptorBuilder

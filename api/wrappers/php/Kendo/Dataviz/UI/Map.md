@@ -1,5 +1,5 @@
 ---
-nav_title: Map
+title: Map
 ---
 
 # \Kendo\Dataviz\UI\Map

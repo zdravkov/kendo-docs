@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Album Search Box
+title: Creating the Album Search Box
 ---
 
 # Album Search - Kendo Music Store

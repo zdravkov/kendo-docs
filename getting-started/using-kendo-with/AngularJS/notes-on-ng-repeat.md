@@ -1,5 +1,5 @@
 ---
-title: Notes on ng-repeat
+page_title: Notes on ng-repeat
 ---
 
 # Notes on `ng-repeat`

@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Button PHP wrapper for Kendo UI Button widget | Kendo UI documentation
+title: Overview
+page_title: Button PHP wrapper for Kendo UI Button widget | Kendo UI documentation
 description: Getting started with Button PHP wrapper in quick steps - configure Kendo UI Button widget and operate Kendo UI Button events.
 ---
 

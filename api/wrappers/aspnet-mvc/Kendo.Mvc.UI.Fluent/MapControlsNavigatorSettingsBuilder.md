@@ -1,5 +1,5 @@
 ---
-nav_title: MapControlsNavigatorSettingsBuilder
+title: MapControlsNavigatorSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapControlsNavigatorSettingsBuilder

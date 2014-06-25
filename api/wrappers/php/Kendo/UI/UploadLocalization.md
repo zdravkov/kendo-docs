@@ -1,5 +1,5 @@
 ---
-nav_title: UploadLocalization
+title: UploadLocalization
 ---
 
 # \Kendo\UI\UploadLocalization

@@ -1,5 +1,5 @@
 ---
-nav_title: SignalRDataSourceTransportBuilderBase
+title: SignalRDataSourceTransportBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.SignalRDataSourceTransportBuilderBase

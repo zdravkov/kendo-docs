@@ -1,5 +1,5 @@
 ---
-nav_title: GridGroupableMessages
+title: GridGroupableMessages
 ---
 
 # \Kendo\UI\GridGroupableMessages

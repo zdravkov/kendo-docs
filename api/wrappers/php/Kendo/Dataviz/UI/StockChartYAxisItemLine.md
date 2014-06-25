@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartYAxisItemLine
+title: StockChartYAxisItemLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartYAxisItemLine

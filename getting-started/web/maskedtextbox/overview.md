@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: MaskedTextBox UI widget - documentation overview
+title: Overview
+page_title: MaskedTextBox UI widget - documentation overview
 description: How to create MaskedTextBox widget and deal with proper configuration of its behaviors.
 ---
 

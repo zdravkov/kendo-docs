@@ -1,5 +1,5 @@
 ---
-nav_title: ScatterErrorBarsBuilder
+title: ScatterErrorBarsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ScatterErrorBarsBuilder

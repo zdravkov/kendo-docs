@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.mobile.ui.PopOver
-title: Configuration, methods and events of Kendo UI Mobile PopOver
+title: kendo.mobile.ui.PopOver
+page_title: Configuration, methods and events of Kendo UI Mobile PopOver
 description: 'Guide to Kendo UI Mobile PopOver configuration options: set width and height of the popup in pixels and direction to which the popup will expand.'
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: slider-tooltip
+title: slider-tooltip
 ---
 
 # \<kendo:slider-tooltip\>

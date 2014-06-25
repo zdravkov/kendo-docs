@@ -1,5 +1,5 @@
 ---
-nav_title: listView-pageable
+title: listView-pageable
 ---
 
 # \<kendo:listView-pageable\>

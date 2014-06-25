@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceSchema
+title: DataSourceSchema
 ---
 
 # \Kendo\Data\DataSourceSchema

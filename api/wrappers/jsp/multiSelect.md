@@ -1,5 +1,5 @@
 ---
-nav_title: multiSelect
+title: multiSelect
 ---
 
 # \<kendo:multiSelect\>

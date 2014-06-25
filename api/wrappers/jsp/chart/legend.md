@@ -1,5 +1,5 @@
 ---
-nav_title: chart-legend
+title: chart-legend
 ---
 
 # \<kendo:chart-legend\>

@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeLabelsBuilder
+title: GaugeLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLabelsBuilder

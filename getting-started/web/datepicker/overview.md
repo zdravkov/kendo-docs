@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of DatePicker UI widget
+title: Overview
+page_title: Overview of DatePicker UI widget
 description: Help guide for the basics of Kendo UI DatePicker widget.
 ---
 

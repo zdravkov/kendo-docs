@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBar
+title: PanelBar
 ---
 
 # \Kendo\UI\PanelBar

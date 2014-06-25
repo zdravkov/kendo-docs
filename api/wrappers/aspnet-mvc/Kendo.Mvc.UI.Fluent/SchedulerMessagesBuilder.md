@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerMessagesBuilder
+title: SchedulerMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerMessagesBuilder

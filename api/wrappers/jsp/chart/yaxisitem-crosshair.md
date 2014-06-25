@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-crosshair
+title: chart-yAxisItem-crosshair
 ---
 
 # \<kendo:chart-yAxisItem-crosshair\>

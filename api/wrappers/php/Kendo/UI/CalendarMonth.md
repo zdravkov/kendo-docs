@@ -1,5 +1,5 @@
 ---
-nav_title: CalendarMonth
+title: CalendarMonth
 ---
 
 # \Kendo\UI\CalendarMonth

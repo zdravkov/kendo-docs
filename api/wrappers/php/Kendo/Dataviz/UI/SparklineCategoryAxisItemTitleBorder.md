@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemTitleBorder
+title: SparklineCategoryAxisItemTitleBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemTitleBorder

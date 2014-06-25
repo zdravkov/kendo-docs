@@ -1,5 +1,5 @@
 ---
-nav_title: ChartYAxisItemMajorGridLines
+title: ChartYAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemMajorGridLines

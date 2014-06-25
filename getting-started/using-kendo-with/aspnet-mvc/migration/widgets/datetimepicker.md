@@ -1,6 +1,6 @@
 ---
-nav_title: DateTimePicker
-title: Server-side API documentation for Kendo UI jQuery DateTimePicker widget with ASP.NET MVC
+title: DateTimePicker
+page_title: Server-side API documentation for Kendo UI jQuery DateTimePicker widget with ASP.NET MVC
 description: How to define min and max dates, as well as start/end time in the server-side API of Kendo UI DateTimePicker component.
 ---
 

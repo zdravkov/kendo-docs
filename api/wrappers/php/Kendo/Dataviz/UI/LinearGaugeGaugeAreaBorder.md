@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGaugeGaugeAreaBorder
+title: LinearGaugeGaugeAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeGaugeAreaBorder

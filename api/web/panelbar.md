@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.PanelBar
-title: Configuration, methods and events of Kendo UI PanelBar
+title: kendo.ui.PanelBar
+page_title: Configuration, methods and events of Kendo UI PanelBar
 description: Configure the PanelBar UI widget, use methods and explore the events which are triggered upon certain behaviors.
 ---
 

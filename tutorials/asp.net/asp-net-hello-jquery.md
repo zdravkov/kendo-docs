@@ -1,6 +1,6 @@
 ---
-nav_title: Part 1 - Hello jQuery
-title: "Tutorial series for HTML5 development with ASP.NET: Hello jQuery"
+title: Part 1 - Hello jQuery
+page_title: "Tutorial series for HTML5 development with ASP.NET: Hello jQuery"
 description: This tutorial for HTML5 development with ASP.NET will help you learn how to install jQuery, then use it with WebForms and IE F12 Developer Tools.
 ---
 

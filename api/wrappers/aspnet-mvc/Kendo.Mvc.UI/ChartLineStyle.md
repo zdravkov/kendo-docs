@@ -1,5 +1,5 @@
 ---
-nav_title: ChartLineStyle
+title: ChartLineStyle
 ---
 
 # Kendo.Mvc.UI.ChartLineStyle

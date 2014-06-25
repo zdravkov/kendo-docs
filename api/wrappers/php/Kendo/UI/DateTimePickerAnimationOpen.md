@@ -1,5 +1,5 @@
 ---
-nav_title: DateTimePickerAnimationOpen
+title: DateTimePickerAnimationOpen
 ---
 
 # \Kendo\UI\DateTimePickerAnimationOpen

@@ -1,8 +1,8 @@
 ---
-nav_title: Date Series
-title: Working with date series in Kendo UI Javascript Chart widget
+title: Date Series
+page_title: Working with date series in Kendo UI Javascript Chart widget
 description: How to handle date series and date grouping in Chart UI widget.
-nav_position: 3
+position: 3
 ---
 
 # Date Series

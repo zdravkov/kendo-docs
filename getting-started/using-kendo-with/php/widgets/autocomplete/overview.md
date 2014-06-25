@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the AutoComplete PHP class, server-side wrapper for Kendo UI AutoComplete widget
+title: Overview
+page_title: How to use the AutoComplete PHP class, server-side wrapper for Kendo UI AutoComplete widget
 description: Learn how to bind Kendo UI AutoComplete for PHP, handle Kendo UI AutoComplete Events, access an existing autocomplete.
 ---
 

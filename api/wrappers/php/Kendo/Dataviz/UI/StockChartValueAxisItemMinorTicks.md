@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartValueAxisItemMinorTicks
+title: StockChartValueAxisItemMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\StockChartValueAxisItemMinorTicks

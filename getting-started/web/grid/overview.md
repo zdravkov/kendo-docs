@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of Grid UI widget | Kendo UI Documentation
+title: Overview
+page_title: Overview of Grid UI widget | Kendo UI Documentation
 description: Quick steps to help you create Kendo UI Grid, initialization and enabling of Grid UI virtualization.
-nav_position: 1
+position: 1
 ---
 
 # Grid Overview

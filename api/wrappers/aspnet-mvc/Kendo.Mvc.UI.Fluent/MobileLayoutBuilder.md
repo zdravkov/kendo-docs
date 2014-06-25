@@ -1,5 +1,5 @@
 ---
-nav_title: MobileLayoutBuilder
+title: MobileLayoutBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileLayoutBuilder

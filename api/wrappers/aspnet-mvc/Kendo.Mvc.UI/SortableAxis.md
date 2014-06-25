@@ -1,5 +1,5 @@
 ---
-nav_title: SortableAxis
+title: SortableAxis
 ---
 
 # Kendo.Mvc.UI.SortableAxis

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSelectionMousewheelBuilder
+title: ChartSelectionMousewheelBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartSelectionMousewheelBuilder

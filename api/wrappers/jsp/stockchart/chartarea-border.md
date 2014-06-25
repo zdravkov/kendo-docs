@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-chartArea-border
+title: stockChart-chartArea-border
 ---
 
 # \<kendo:stockChart-chartArea-border\>

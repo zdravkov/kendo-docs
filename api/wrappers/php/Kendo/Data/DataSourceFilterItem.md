@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceFilterItem
+title: DataSourceFilterItem
 ---
 
 # \Kendo\Data\DataSourceFilterItem

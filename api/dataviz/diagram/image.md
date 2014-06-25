@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Image
+title: kendo.dataviz.diagram.Image
 ---
 
 # kendo.dataviz.diagram.Image

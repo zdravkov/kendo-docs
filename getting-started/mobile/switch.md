@@ -1,6 +1,6 @@
 ---
-nav_title: Switch
-title: User Manual for Kendo UI Mobile Switch widget
+title: Switch
+page_title: User Manual for Kendo UI Mobile Switch widget
 description: How to display two exclusive choices with Mobile Switch widget, check/uncheck the mobile switch and tailor on/off labels of the mobile switch.
 ---
 

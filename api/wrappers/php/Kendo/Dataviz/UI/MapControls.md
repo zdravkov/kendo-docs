@@ -1,5 +1,5 @@
 ---
-nav_title: MapControls
+title: MapControls
 ---
 
 # \Kendo\Dataviz\UI\MapControls

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCandlestickSeriesHighlightBuilder
+title: ChartCandlestickSeriesHighlightBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartCandlestickSeriesHighlightBuilder

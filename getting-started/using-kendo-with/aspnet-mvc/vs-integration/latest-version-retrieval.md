@@ -1,5 +1,5 @@
 ---
-nav_title: Latest Version Retrieval
+title: Latest Version Retrieval
 ---
 
 #Automatic Latest Version Retrieval

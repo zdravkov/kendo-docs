@@ -1,5 +1,5 @@
 ---
-nav_title: Sortable
+title: Sortable
 ---
 
 # \Kendo\UI\Sortable

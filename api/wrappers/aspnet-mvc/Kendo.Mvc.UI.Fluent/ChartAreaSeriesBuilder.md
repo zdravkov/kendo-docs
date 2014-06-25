@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAreaSeriesBuilder
+title: ChartAreaSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAreaSeriesBuilder

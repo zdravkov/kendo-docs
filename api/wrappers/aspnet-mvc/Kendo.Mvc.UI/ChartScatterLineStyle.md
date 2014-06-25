@@ -1,5 +1,5 @@
 ---
-nav_title: ChartScatterLineStyle
+title: ChartScatterLineStyle
 ---
 
 # Kendo.Mvc.UI.ChartScatterLineStyle

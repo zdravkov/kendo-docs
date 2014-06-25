@@ -1,5 +1,5 @@
 ---
-nav_title: ChartTextAlignment
+title: ChartTextAlignment
 ---
 
 # Kendo.Mvc.UI.ChartTextAlignment

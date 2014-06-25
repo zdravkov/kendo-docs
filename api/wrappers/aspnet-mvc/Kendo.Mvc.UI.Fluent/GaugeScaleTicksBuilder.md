@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeScaleTicksBuilder
+title: GaugeScaleTicksBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeScaleTicksBuilder

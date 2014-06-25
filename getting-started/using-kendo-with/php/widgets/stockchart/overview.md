@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Stock Chart PHP class, server-side wrapper for Kendo UI Stock Chart widget
+title: Overview
+page_title: How to use the Stock Chart PHP class, server-side wrapper for Kendo UI Stock Chart widget
 description: Learn how to bind Kendo UI Stock Chart for PHP, handle Kendo UI Stock Chart Events, access an existing chart.
 ---
 

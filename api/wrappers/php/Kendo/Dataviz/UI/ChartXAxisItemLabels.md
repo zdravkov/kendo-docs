@@ -1,5 +1,5 @@
 ---
-nav_title: ChartXAxisItemLabels
+title: ChartXAxisItemLabels
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemLabels

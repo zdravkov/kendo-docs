@@ -1,5 +1,5 @@
 ---
-nav_title: QREncoding
+title: QREncoding
 ---
 
 # Kendo.Mvc.UI.QREncoding

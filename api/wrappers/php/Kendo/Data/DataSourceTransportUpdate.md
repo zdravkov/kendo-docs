@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceTransportUpdate
+title: DataSourceTransportUpdate
 ---
 
 # \Kendo\Data\DataSourceTransportUpdate

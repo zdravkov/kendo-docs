@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemNegativeValues
+title: ChartSeriesItemNegativeValues
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemNegativeValues

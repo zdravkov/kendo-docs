@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesFactory
+title: SparklineSeriesFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.SparklineSeriesFactory

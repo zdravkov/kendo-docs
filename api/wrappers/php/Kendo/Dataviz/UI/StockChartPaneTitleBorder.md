@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartPaneTitleBorder
+title: StockChartPaneTitleBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartPaneTitleBorder

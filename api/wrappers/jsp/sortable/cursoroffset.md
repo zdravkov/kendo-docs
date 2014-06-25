@@ -1,5 +1,5 @@
 ---
-nav_title: sortable-cursorOffset
+title: sortable-cursorOffset
 ---
 
 # \<kendo:sortable-cursorOffset\>

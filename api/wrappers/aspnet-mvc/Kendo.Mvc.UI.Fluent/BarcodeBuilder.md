@@ -1,5 +1,5 @@
 ---
-nav_title: BarcodeBuilder
+title: BarcodeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.BarcodeBuilder

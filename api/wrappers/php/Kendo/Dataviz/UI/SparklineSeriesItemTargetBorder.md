@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesItemTargetBorder
+title: SparklineSeriesItemTargetBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemTargetBorder

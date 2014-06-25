@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.View
+title: kendo.View
 ---
 
 # kendo.View

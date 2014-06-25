@@ -1,8 +1,8 @@
 ---
-nav_title: Troubleshooting
-title: Troubleshooting of Kendo UI Editor widget
+title: Troubleshooting
+page_title: Troubleshooting of Kendo UI Editor widget
 description: How to deal with the troubleshooting of Editor UI widget.
-nav_position: 6
+position: 6
 ---
 
 # Editor troubleshooting

@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-overlay
+title: chart-seriesItem-overlay
 ---
 
 # \<kendo:chart-seriesItem-overlay\>

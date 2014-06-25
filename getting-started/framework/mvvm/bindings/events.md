@@ -1,5 +1,5 @@
 ---
-nav_title: Events
+title: Events
 ---
 
 # Events binding

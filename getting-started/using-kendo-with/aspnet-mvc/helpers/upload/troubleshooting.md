@@ -1,6 +1,6 @@
 ---
-nav_title: Troubleshooting
-title: Troubleshooting guide for Kendo UI Upload HtmlHelper server-side wrapper
+title: Troubleshooting
+page_title: Troubleshooting guide for Kendo UI Upload HtmlHelper server-side wrapper
 description: Find suggested solutions and explanations for most common issues which may occur while using Kendo UI Upload HtmlHelper extension.
 ---
 

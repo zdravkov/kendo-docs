@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesDefaultsTooltip
+title: SparklineSeriesDefaultsTooltip
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsTooltip

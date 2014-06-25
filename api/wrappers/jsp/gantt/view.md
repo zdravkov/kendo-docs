@@ -1,5 +1,5 @@
 ---
-nav_title: gantt-view
+title: gantt-view
 ---
 
 # \<kendo:gantt-view\>

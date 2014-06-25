@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewMessages
+title: TreeViewMessages
 ---
 
 # \Kendo\UI\TreeViewMessages

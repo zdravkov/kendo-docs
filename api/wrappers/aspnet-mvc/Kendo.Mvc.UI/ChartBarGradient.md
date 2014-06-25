@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBarGradient
+title: ChartBarGradient
 ---
 
 # Kendo.Mvc.UI.ChartBarGradient

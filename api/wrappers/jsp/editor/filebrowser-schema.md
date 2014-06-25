@@ -1,5 +1,5 @@
 ---
-nav_title: editor-fileBrowser-schema
+title: editor-fileBrowser-schema
 ---
 
 # \<kendo:editor-fileBrowser-schema\>

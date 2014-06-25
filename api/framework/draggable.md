@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Draggable
-title: Draggable UI Widget | Kendo UI API Documentation
+title: kendo.ui.Draggable
+page_title: Draggable UI Widget | Kendo UI API Documentation
 description: Configuration steps and types of events which are triggered in Kendo UI Draggable.
 ---
 

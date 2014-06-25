@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Notification HtmlHelper extension for Kendo UI Notification widget | Kendo UI documentation
+title: Overview
+page_title: Notification HtmlHelper extension for Kendo UI Notification widget | Kendo UI documentation
 description: Getting started with Notification HtmlHelper extension in quick steps - configure Kendo UI Notification widget and operate Kendo UI Notification events.
 ---
 

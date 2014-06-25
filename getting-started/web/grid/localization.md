@@ -1,6 +1,6 @@
 ---
-nav_title: Localization
-nav_position: 4
+title: Localization
+position: 4
 ---
 
 # Grid Localization

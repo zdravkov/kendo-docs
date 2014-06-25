@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesItemMarkersBorder
+title: SparklineSeriesItemMarkersBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemMarkersBorder

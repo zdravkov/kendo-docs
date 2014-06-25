@@ -1,5 +1,5 @@
 ---
-nav_title: MultiSelect
+title: MultiSelect
 ---
 
 # \Kendo\UI\MultiSelect

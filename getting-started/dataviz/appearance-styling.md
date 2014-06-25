@@ -1,5 +1,5 @@
 ---
-nav_title: Appearance and styling
+title: Appearance and styling
 ---
 
 # Appearance and Styling

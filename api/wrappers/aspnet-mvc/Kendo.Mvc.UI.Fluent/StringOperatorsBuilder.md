@@ -1,5 +1,5 @@
 ---
-nav_title: StringOperatorsBuilder
+title: StringOperatorsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.StringOperatorsBuilder

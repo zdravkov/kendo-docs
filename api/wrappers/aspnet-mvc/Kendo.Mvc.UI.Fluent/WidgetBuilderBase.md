@@ -1,5 +1,5 @@
 ---
-nav_title: WidgetBuilderBase
+title: WidgetBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.WidgetBuilderBase

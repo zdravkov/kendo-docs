@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerTooltip
+title: MapLayerTooltip
 ---
 
 # \Kendo\Dataviz\UI\MapLayerTooltip

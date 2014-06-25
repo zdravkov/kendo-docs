@@ -1,6 +1,6 @@
 ---
-nav_title: Local binding
-title: How to bind Kendo Sparkline for PHP to PHP array
+title: Local binding
+page_title: How to bind Kendo Sparkline for PHP to PHP array
 description: Learn how to bind Kendo UI Sparkline for PHP to array of data
 ---
 

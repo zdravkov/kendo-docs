@@ -1,5 +1,5 @@
 ---
-nav_title: Gantt
+title: Gantt
 ---
 
 # \Kendo\UI\Gantt

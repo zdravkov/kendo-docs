@@ -1,5 +1,5 @@
 ---
-nav_title: GridColumnMenuSettingsBuilder
+title: GridColumnMenuSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnMenuSettingsBuilder

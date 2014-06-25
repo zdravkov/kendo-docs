@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemMajorGridLines
+title: ChartCategoryAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemMajorGridLines

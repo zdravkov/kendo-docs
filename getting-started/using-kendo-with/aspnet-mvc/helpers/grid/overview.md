@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: How to use the Kendo UI Grid HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Grid widget
+title: Overview
+page_title: How to use the Kendo UI Grid HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Grid widget
 description: Learn how to bind Kendo UI Grid for ASP.NET MVC, handle Kendo UI Grid Events, access an existing grid with Grid HtmlHelper extension documentation.
-nav_position: 1
+position: 1
 ---
 
 # Grid

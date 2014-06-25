@@ -1,5 +1,5 @@
 ---
-nav_title: map-controls-attribution
+title: map-controls-attribution
 ---
 
 # \<kendo:map-controls-attribution\>

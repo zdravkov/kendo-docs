@@ -1,5 +1,5 @@
 ---
-nav_title: dropDownList
+title: dropDownList
 ---
 
 # \<kendo:dropDownList\>

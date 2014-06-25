@@ -1,5 +1,5 @@
 ---
-nav_title: menu-animation-close
+title: menu-animation-close
 ---
 
 # \<kendo:menu-animation-close\>

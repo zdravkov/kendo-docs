@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-seriesItem-connectors
+title: sparkline-seriesItem-connectors
 ---
 
 # \<kendo:sparkline-seriesItem-connectors\>

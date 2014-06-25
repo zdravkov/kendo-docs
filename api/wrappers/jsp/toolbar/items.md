@@ -1,5 +1,5 @@
 ---
-nav_title: toolBar-items
+title: toolBar-items
 ---
 
 # \<kendo:toolBar-items\>

@@ -1,5 +1,5 @@
 ---
-nav_title: TimePickerAnimationClose
+title: TimePickerAnimationClose
 ---
 
 # \Kendo\UI\TimePickerAnimationClose

@@ -1,5 +1,5 @@
 ---
-nav_title: MapBuilder
+title: MapBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapBuilder

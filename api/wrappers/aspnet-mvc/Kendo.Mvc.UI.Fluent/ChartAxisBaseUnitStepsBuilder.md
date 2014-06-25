@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisBaseUnitStepsBuilder
+title: ChartAxisBaseUnitStepsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisBaseUnitStepsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: SimpleColorPickerEventBuilder
+title: SimpleColorPickerEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SimpleColorPickerEventBuilder

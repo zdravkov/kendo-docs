@@ -1,5 +1,5 @@
 ---
-nav_title: editor-fileBrowser-transport-read
+title: editor-fileBrowser-transport-read
 ---
 
 # \<kendo:editor-fileBrowser-transport-read\>

@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-resource
+title: scheduler-resource
 ---
 
 # \<kendo:scheduler-resource\>

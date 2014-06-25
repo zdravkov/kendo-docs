@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of Kendo UI jQuery TreeView widget
+title: Overview
+page_title: Overview of Kendo UI jQuery TreeView widget
 description: Documentation for Kendo UI TreeView widget.
-nav_position: 1
+position: 1
 ---
 
 # Overview

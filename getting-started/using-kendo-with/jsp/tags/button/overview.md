@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Button JSP tag for Kendo UI Button widget | Kendo UI documentation
+title: Overview
+page_title: Button JSP tag for Kendo UI Button widget | Kendo UI documentation
 description: Getting started with Button JSP tag extension in quick steps - configure Kendo UI Button widget and operate Kendo UI Button events.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartLegend
+title: StockChartLegend
 ---
 
 # \Kendo\Dataviz\UI\StockChartLegend

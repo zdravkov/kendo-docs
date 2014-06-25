@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-seriesDefaults-stack
+title: stockChart-seriesDefaults-stack
 ---
 
 # \<kendo:stockChart-seriesDefaults-stack\>

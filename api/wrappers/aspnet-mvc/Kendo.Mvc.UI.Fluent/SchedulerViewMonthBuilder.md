@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerViewMonthBuilder
+title: SchedulerViewMonthBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerViewMonthBuilder

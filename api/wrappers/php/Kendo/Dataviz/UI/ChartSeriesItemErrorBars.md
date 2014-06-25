@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemErrorBars
+title: ChartSeriesItemErrorBars
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemErrorBars

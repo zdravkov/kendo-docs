@@ -1,5 +1,5 @@
 ---
-nav_title: TimePickerBuilder
+title: TimePickerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TimePickerBuilder

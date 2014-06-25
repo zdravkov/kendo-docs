@@ -1,5 +1,5 @@
 ---
-nav_title: menu-animation
+title: menu-animation
 ---
 
 # \<kendo:menu-animation\>

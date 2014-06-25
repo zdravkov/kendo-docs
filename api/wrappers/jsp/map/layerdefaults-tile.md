@@ -1,5 +1,5 @@
 ---
-nav_title: map-layerDefaults-tile
+title: map-layerDefaults-tile
 ---
 
 # \<kendo:map-layerDefaults-tile\>

@@ -1,5 +1,5 @@
 ---
-nav_title: HierarchicalDataSourceBuilder
+title: HierarchicalDataSourceBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.HierarchicalDataSourceBuilder

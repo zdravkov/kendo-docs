@@ -1,6 +1,6 @@
 ---
-nav_title: Kendo UI PivotGrid FAQ
-title: Kendo UI PivotGrid Frequently Asked Questions
+title: Kendo UI PivotGrid FAQ
+page_title: Kendo UI PivotGrid Frequently Asked Questions
 description: Answers to Frequently Asked Questions about what Kendo UI PivotGrid supports
 ---
 

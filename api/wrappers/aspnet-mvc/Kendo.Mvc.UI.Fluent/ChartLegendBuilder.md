@@ -1,5 +1,5 @@
 ---
-nav_title: ChartLegendBuilder
+title: ChartLegendBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartLegendBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: WindowPosition
+title: WindowPosition
 ---
 
 # \Kendo\UI\WindowPosition

@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the ColorPalette PHP class, server-side wrapper for Kendo UI ColorPalette widget
+title: Overview
+page_title: How to use the ColorPalette PHP class, server-side wrapper for Kendo UI ColorPalette widget
 description: Getting started with Kendo UI ColorPalette for PHP in quick steps - configure Kendo UI ColorPalette widget and operate Kendo UI ColorPalette events.
 ---
 

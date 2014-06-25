@@ -1,6 +1,6 @@
 ---
-nav_title: View
-title: Kendo UI Mobile View Widget Documentation
+title: View
+page_title: Kendo UI Mobile View Widget Documentation
 description: Discover how to use Kendo UI Mobile View widget, mark header and footer elements, view parameters of navigational widgets and view DOM elements.
 ---
 

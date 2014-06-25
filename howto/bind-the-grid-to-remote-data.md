@@ -1,6 +1,6 @@
 ---
-nav_title: Bind the Grid to Remote Data
-title: Bind Kendo UI jQuery grid to remote data | Kendo UI Grid Documentation
+title: Bind the Grid to Remote Data
+page_title: Bind Kendo UI jQuery grid to remote data | Kendo UI Grid Documentation
 description: This article will explain how to use Kendo UI Grid widget in your web application and bind it to remote data.
 ---
 

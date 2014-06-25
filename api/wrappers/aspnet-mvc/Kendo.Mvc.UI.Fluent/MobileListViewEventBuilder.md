@@ -1,5 +1,5 @@
 ---
-nav_title: MobileListViewEventBuilder
+title: MobileListViewEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileListViewEventBuilder

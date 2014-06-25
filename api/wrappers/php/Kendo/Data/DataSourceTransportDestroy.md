@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceTransportDestroy
+title: DataSourceTransportDestroy
 ---
 
 # \Kendo\Data\DataSourceTransportDestroy

@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-seriesDefaults-border
+title: sparkline-seriesDefaults-border
 ---
 
 # \<kendo:sparkline-seriesDefaults-border\>

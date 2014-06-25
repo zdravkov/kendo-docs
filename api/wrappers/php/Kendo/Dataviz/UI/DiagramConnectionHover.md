@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionHover
+title: DiagramConnectionHover
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionHover

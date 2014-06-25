@@ -1,6 +1,6 @@
 ---
-nav_title: Text
-title: Text binding in Kendo UI MVVM | Kendo UI Documentation
+title: Text
+page_title: Text binding in Kendo UI MVVM | Kendo UI Documentation
 description: Update the text of the DOM element to a View-Model value with text binding in Kendo UI MVVM.
 ---
 

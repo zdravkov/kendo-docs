@@ -1,5 +1,5 @@
 ---
-nav_title: map-layerDefaults-shape-style-stroke
+title: map-layerDefaults-shape-style-stroke
 ---
 
 # \<kendo:map-layerDefaults-shape-style-stroke\>

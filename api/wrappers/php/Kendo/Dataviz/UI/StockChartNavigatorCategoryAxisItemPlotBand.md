@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemPlotBand
+title: StockChartNavigatorCategoryAxisItemPlotBand
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemPlotBand

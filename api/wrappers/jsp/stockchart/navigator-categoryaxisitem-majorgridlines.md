@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-categoryAxisItem-majorGridLines
+title: stockChart-navigator-categoryAxisItem-majorGridLines
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-majorGridLines\>

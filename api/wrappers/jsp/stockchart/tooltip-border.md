@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-tooltip-border
+title: stockChart-tooltip-border
 ---
 
 # \<kendo:stockChart-tooltip-border\>

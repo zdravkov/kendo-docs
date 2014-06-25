@@ -1,5 +1,5 @@
 ---
-nav_title: upload-async
+title: upload-async
 ---
 
 # \<kendo:upload-async\>

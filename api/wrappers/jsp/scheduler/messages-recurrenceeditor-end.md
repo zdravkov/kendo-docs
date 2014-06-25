@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-messages-recurrenceEditor-end
+title: scheduler-messages-recurrenceEditor-end
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-end\>

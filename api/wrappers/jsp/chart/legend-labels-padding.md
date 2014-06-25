@@ -1,5 +1,5 @@
 ---
-nav_title: chart-legend-labels-padding
+title: chart-legend-labels-padding
 ---
 
 # \<kendo:chart-legend-labels-padding\>

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPieLabelsBuilder
+title: ChartPieLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPieLabelsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: timePicker
+title: timePicker
 ---
 
 # \<kendo:timePicker\>

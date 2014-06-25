@@ -1,6 +1,6 @@
 ---
-nav_title: TabStrip
-title: General documentation for Kendo UI Mobile Tabstrip widget
+title: TabStrip
+page_title: General documentation for Kendo UI Mobile Tabstrip widget
 description: How to initialize Kendo Mobile TabStrip widget and create custom icons.
 ---
 

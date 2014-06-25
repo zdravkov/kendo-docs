@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGaugeScaleMinorTicks
+title: LinearGaugeScaleMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeScaleMinorTicks

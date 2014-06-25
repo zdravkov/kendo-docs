@@ -1,5 +1,5 @@
 ---
-nav_title: GridSortable
+title: GridSortable
 ---
 
 # \Kendo\UI\GridSortable

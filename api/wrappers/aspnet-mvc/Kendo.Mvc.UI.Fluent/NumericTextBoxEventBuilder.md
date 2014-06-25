@@ -1,5 +1,5 @@
 ---
-nav_title: NumericTextBoxEventBuilder
+title: NumericTextBoxEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.NumericTextBoxEventBuilder

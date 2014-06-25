@@ -1,5 +1,5 @@
 ---
-nav_title: GridSelectionType
+title: GridSelectionType
 ---
 
 # Kendo.Mvc.UI.GridSelectionType

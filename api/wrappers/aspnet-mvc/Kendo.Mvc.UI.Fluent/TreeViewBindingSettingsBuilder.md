@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewBindingSettingsBuilder
+title: TreeViewBindingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewBindingSettingsBuilder

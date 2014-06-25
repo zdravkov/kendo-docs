@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerTooltipAnimation
+title: MapLayerTooltipAnimation
 ---
 
 # \Kendo\Dataviz\UI\MapLayerTooltipAnimation

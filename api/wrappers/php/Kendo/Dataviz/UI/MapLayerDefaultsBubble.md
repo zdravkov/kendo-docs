@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsBubble
+title: MapLayerDefaultsBubble
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsBubble

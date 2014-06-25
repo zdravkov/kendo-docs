@@ -1,5 +1,5 @@
 ---
-nav_title: autoComplete-animation
+title: autoComplete-animation
 ---
 
 # \<kendo:autoComplete-animation\>

@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsMarker
+title: MapLayerDefaultsMarker
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsMarker

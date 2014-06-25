@@ -1,5 +1,5 @@
 ---
-nav_title: chart-xAxisItem-notes-label-border
+title: chart-xAxisItem-notes-label-border
 ---
 
 # \<kendo:chart-xAxisItem-notes-label-border\>

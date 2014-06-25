@@ -1,5 +1,5 @@
 ---
-nav_title: ListView
+title: ListView
 ---
 
 # \Kendo\UI\ListView

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartZoomDirection
+title: ChartZoomDirection
 ---
 
 # Kendo.Mvc.UI.ChartZoomDirection

@@ -1,5 +1,5 @@
 ---
-nav_title: GridToolbarItem
+title: GridToolbarItem
 ---
 
 # \Kendo\UI\GridToolbarItem

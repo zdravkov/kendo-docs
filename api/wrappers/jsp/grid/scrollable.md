@@ -1,5 +1,5 @@
 ---
-nav_title: grid-scrollable
+title: grid-scrollable
 ---
 
 # \<kendo:grid-scrollable\>

@@ -1,6 +1,6 @@
 ---
-nav_title: Performance tips
-title: Performance guide for Kendo UI DataViz
+title: Performance tips
+page_title: Performance guide for Kendo UI DataViz
 description: Find valuable tips for making the most performance out of the Kendo UI DataViz suite.
 ---
 

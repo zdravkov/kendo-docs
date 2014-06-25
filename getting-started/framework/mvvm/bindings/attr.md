@@ -1,6 +1,6 @@
 ---
-nav_title: Attr
-title: Attr binding in Kendo UI MVVM to populate DOM element attributes
+title: Attr
+page_title: Attr binding in Kendo UI MVVM to populate DOM element attributes
 description: Populate and update DOM element attributes from View-model fields or methods through attr binding in Kendo UI MVVM.
 ---
 

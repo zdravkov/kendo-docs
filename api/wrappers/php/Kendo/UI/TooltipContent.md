@@ -1,5 +1,5 @@
 ---
-nav_title: TooltipContent
+title: TooltipContent
 ---
 
 # \Kendo\UI\TooltipContent

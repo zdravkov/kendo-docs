@@ -1,5 +1,5 @@
 ---
-nav_title: GroupingMessagesBuilder
+title: GroupingMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GroupingMessagesBuilder

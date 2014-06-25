@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewAnimation
+title: TreeViewAnimation
 ---
 
 # \Kendo\UI\TreeViewAnimation

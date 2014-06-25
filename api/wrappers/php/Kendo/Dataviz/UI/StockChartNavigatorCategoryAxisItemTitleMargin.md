@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemTitleMargin
+title: StockChartNavigatorCategoryAxisItemTitleMargin
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemTitleMargin

@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.mobile.ui.NavBar
-title: Configuration, methods and events of Kendo UI Mobile NavBar
+title: kendo.mobile.ui.NavBar
+page_title: Configuration, methods and events of Kendo UI Mobile NavBar
 description: How to use methods in Mobile NavBar widget.
 ---
 

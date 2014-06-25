@@ -1,6 +1,6 @@
 ---
-nav_title: Resources
-title: Resources and Scheduler HtmlHelper extension | Kendo UI documentation
+title: Resources
+page_title: Resources and Scheduler HtmlHelper extension | Kendo UI documentation
 description: How to add Resources to Scheduler HtmlHelper extension for Kendo UI Scheduler widget.
 ---
 

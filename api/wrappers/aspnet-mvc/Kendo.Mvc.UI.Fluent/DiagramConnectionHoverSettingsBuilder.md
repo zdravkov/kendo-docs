@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionHoverSettingsBuilder
+title: DiagramConnectionHoverSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramConnectionHoverSettingsBuilder

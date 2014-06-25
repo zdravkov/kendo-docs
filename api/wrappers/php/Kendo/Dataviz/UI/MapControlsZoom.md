@@ -1,5 +1,5 @@
 ---
-nav_title: MapControlsZoom
+title: MapControlsZoom
 ---
 
 # \Kendo\Dataviz\UI\MapControlsZoom

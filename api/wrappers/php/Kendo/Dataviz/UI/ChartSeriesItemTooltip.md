@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemTooltip
+title: ChartSeriesItemTooltip
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemTooltip

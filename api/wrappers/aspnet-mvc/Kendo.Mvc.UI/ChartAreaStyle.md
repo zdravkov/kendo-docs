@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAreaStyle
+title: ChartAreaStyle
 ---
 
 # Kendo.Mvc.UI.ChartAreaStyle

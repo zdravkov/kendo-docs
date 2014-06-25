@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartCategoryAxisItemMajorTicks
+title: StockChartCategoryAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemMajorTicks

@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-legend-inactiveItems
+title: stockChart-legend-inactiveItems
 ---
 
 # \<kendo:stockChart-legend-inactiveItems\>

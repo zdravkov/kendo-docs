@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisFactory
+title: ChartValueAxisFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartValueAxisFactory

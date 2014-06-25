@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAreaLineBuilder
+title: ChartAreaLineBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAreaLineBuilder

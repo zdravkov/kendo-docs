@@ -1,5 +1,5 @@
 ---
-nav_title: contextMenu-animation
+title: contextMenu-animation
 ---
 
 # \<kendo:contextMenu-animation\>

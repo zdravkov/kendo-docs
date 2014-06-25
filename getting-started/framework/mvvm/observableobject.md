@@ -1,8 +1,8 @@
 ---
-nav_title: ObservableObject
-title: ObservableObject in Kendo UI MVVM framework | Kendo UI Documentation
+title: ObservableObject
+page_title: ObservableObject in Kendo UI MVVM framework | Kendo UI Documentation
 description: Initialize ObservableObject in Kendo UI MVVM framework, get a field value, set a field value to change tracking and notify any subscribers when a change occurs.
-nav_position: 2
+position: 2
 ---
 
 # ObservableObject

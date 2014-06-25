@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceModelDescriptorFactoryBase
+title: DataSourceModelDescriptorFactoryBase
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceModelDescriptorFactoryBase

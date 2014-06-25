@@ -1,6 +1,6 @@
 ---
-nav_title: ListView
-title: User guide for Kendo UI Mobile ListView Widget
+title: ListView
+page_title: User guide for Kendo UI Mobile ListView Widget
 description: Documentation how to use capabilities of Kendo UI Mobile ListVeiw widget.
 ---
 

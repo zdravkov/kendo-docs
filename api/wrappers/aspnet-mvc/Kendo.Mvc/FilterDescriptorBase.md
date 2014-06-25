@@ -1,5 +1,5 @@
 ---
-nav_title: FilterDescriptorBase
+title: FilterDescriptorBase
 ---
 
 # Kendo.Mvc.FilterDescriptorBase

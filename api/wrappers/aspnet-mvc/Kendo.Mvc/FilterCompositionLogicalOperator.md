@@ -1,5 +1,5 @@
 ---
-nav_title: FilterCompositionLogicalOperator
+title: FilterCompositionLogicalOperator
 ---
 
 # Kendo.Mvc.FilterCompositionLogicalOperator

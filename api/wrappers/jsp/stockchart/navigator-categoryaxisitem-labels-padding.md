@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-categoryAxisItem-labels-padding
+title: stockChart-navigator-categoryAxisItem-labels-padding
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-labels-padding\>

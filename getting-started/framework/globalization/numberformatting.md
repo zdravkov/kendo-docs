@@ -1,6 +1,6 @@
 ---
-nav_title: Number Formatting
-title: Number Formatting | Kendo UI Framework Globalization documentation
+title: Number Formatting
+page_title: Number Formatting | Kendo UI Framework Globalization documentation
 description: Use number formatting methods to convert a Number object to a human readable string using culture's specific settings.
 ---
 

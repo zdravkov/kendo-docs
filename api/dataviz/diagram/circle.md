@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Circle
+title: kendo.dataviz.diagram.Circle
 ---
 
 # kendo.dataviz.diagram.Circle

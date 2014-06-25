@@ -1,5 +1,5 @@
 ---
-nav_title: PopupAnimationBuilder
+title: PopupAnimationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PopupAnimationBuilder

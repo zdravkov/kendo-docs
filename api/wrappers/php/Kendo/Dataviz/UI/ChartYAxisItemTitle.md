@@ -1,5 +1,5 @@
 ---
-nav_title: ChartYAxisItemTitle
+title: ChartYAxisItemTitle
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemTitle

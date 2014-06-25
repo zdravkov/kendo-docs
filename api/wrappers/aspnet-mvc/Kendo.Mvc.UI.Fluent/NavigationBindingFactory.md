@@ -1,5 +1,5 @@
 ---
-nav_title: NavigationBindingFactory
+title: NavigationBindingFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.NavigationBindingFactory

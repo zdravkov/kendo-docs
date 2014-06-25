@@ -1,5 +1,5 @@
 ---
-nav_title: ChartFunnelLabelsPosition
+title: ChartFunnelLabelsPosition
 ---
 
 # Kendo.Mvc.UI.ChartFunnelLabelsPosition

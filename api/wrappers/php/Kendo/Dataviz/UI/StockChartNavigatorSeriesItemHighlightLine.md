@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorSeriesItemHighlightLine
+title: StockChartNavigatorSeriesItemHighlightLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorSeriesItemHighlightLine

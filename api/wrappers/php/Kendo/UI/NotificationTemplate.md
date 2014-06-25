@@ -1,5 +1,5 @@
 ---
-nav_title: NotificationTemplate
+title: NotificationTemplate
 ---
 
 # \Kendo\UI\NotificationTemplate

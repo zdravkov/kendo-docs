@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisSelectionBuilder
+title: ChartAxisSelectionBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisSelectionBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItemMinorGridLines
+title: ChartValueAxisItemMinorGridLines
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemMinorGridLines

@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceSchedulerModelDescriptorFactory
+title: DataSourceSchedulerModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceSchedulerModelDescriptorFactory

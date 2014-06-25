@@ -1,5 +1,5 @@
 ---
-nav_title: ChartLineBuilderBase
+title: ChartLineBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartLineBuilderBase

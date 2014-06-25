@@ -1,6 +1,6 @@
 ---
-nav_title: Authoring Maps
-title: Authoring maps for the Map widget in Kendo UI DataViz
+title: Authoring Maps
+page_title: Authoring maps for the Map widget in Kendo UI DataViz
 description: How to process and transform maps from external sources to use with the Map widget.
 ---
 

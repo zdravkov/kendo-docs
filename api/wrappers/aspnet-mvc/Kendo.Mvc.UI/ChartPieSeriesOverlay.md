@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPieSeriesOverlay
+title: ChartPieSeriesOverlay
 ---
 
 # Kendo.Mvc.UI.ChartPieSeriesOverlay

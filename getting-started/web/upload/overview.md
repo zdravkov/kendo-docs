@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of Kendo UI Upload widget
+title: Overview
+page_title: Overview of Kendo UI Upload widget
 description: How to use File Upload UI widget, initialize Upload and access and existing Upload instance.
-nav_position: 1
+position: 1
 ---
 
 # Upload Overview

@@ -1,5 +1,5 @@
 ---
-nav_title: editor-fileBrowser-transport-create
+title: editor-fileBrowser-transport-create
 ---
 
 # \<kendo:editor-fileBrowser-transport-create\>

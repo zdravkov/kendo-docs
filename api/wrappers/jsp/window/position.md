@@ -1,5 +1,5 @@
 ---
-nav_title: window-position
+title: window-position
 ---
 
 # \<kendo:window-position\>

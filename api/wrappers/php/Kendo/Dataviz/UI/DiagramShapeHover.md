@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeHover
+title: DiagramShapeHover
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeHover

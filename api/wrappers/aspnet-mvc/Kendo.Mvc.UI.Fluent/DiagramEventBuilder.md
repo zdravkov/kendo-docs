@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramEventBuilder
+title: DiagramEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramEventBuilder

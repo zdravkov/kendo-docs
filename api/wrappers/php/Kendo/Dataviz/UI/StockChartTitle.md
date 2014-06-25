@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartTitle
+title: StockChartTitle
 ---
 
 # \Kendo\Dataviz\UI\StockChartTitle

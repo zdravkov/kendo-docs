@@ -1,5 +1,5 @@
 ---
-nav_title: GridDataKeyFactory
+title: GridDataKeyFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.GridDataKeyFactory

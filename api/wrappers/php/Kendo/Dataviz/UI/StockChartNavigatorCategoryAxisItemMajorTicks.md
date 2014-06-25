@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemMajorTicks
+title: StockChartNavigatorCategoryAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMajorTicks

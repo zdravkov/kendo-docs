@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsBing
+title: MapLayerDefaultsBing
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsBing

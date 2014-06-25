@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Checkout Page
+title: Creating the Checkout Page
 ---
 
 # Creating the Checkout Page - Kendo Music Store

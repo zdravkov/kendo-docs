@@ -1,5 +1,5 @@
 ---
-nav_title: MenuItemFactory
+title: MenuItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.MenuItemFactory

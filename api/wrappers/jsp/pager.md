@@ -1,5 +1,5 @@
 ---
-nav_title: pager
+title: pager
 ---
 
 # \<kendo:pager\>

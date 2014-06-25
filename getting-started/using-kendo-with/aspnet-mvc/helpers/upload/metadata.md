@@ -1,6 +1,6 @@
 ---
-nav_title: Metadata
-title: Asynchronous uploading of metadata | Kendo UI Helpers for ASP.NET MVC
+title: Metadata
+page_title: Asynchronous uploading of metadata | Kendo UI Helpers for ASP.NET MVC
 description: Explanatory notes about asynchronous uploading of metadata in Telerik UI for ASP.NET MVC Helpers.
 ---
 

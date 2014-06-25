@@ -1,5 +1,5 @@
 ---
-nav_title: SortableBuilder
+title: SortableBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SortableBuilder

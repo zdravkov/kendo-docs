@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-yAxisItem-line
+title: stockChart-yAxisItem-line
 ---
 
 # \<kendo:stockChart-yAxisItem-line\>

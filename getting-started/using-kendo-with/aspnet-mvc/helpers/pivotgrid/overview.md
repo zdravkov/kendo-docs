@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: How to use the Kendo UI PivotGrid HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI PivotGrid widget
+title: Overview
+page_title: How to use the Kendo UI PivotGrid HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI PivotGrid widget
 description: Learn how to bind Kendo UI PivotGrid for ASP.NET MVC, handle Kendo UI PivotGrid Events, access an existing pivotgrid with PivotGrid HtmlHelper extension documentation.
-nav_position: 1
+position: 1
 ---
 
 # PivotGrid

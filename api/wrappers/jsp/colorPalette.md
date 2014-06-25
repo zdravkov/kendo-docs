@@ -1,5 +1,5 @@
 ---
-nav_title: colorPalette
+title: colorPalette
 ---
 
 # \<kendo:colorPalette\>

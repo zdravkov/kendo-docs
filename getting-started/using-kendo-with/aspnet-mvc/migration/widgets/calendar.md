@@ -1,6 +1,6 @@
 ---
-nav_title: Calendar
-title: Server-side API for Kendo UI Calendar widget with ASP.NET MVC
+title: Calendar
+page_title: Server-side API for Kendo UI Calendar widget with ASP.NET MVC
 description: This documentation provides information about events and options such as min/max date in the server-side API of Kendo UI Calendar widget.
 ---
 

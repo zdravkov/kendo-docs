@@ -1,5 +1,5 @@
 ---
-nav_title: Building the Store Sales page
+title: Building the Store Sales page
 ---
 
 

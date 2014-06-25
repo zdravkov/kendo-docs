@@ -1,6 +1,6 @@
 ---
-nav_title: Image Browser
-nav_position: 2
+title: Image Browser
+position: 2
 ---
 
 # Image Browser

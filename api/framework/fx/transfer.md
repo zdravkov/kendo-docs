@@ -1,5 +1,5 @@
 ---
-nav_title: FX Transfer
+title: FX Transfer
 ---
 
 # Transfer

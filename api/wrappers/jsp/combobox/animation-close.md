@@ -1,5 +1,5 @@
 ---
-nav_title: comboBox-animation-close
+title: comboBox-animation-close
 ---
 
 # \<kendo:comboBox-animation-close\>

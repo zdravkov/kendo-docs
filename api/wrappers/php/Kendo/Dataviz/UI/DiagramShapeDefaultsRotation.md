@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsRotation
+title: DiagramShapeDefaultsRotation
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsRotation

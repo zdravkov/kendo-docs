@@ -1,5 +1,5 @@
 ---
-nav_title: TooltipSettingsBuilder
+title: TooltipSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TooltipSettingsBuilder

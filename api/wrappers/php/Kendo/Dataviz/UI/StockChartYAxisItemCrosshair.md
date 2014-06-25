@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartYAxisItemCrosshair
+title: StockChartYAxisItemCrosshair
 ---
 
 # \Kendo\Dataviz\UI\StockChartYAxisItemCrosshair

@@ -1,5 +1,5 @@
 ---
-nav_title: RadialGaugeScaleMajorTicks
+title: RadialGaugeScaleMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugeScaleMajorTicks

@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-nav_position: 1
+title: Overview
+position: 1
 ---
 # Kendo Single Page Application Overview
 

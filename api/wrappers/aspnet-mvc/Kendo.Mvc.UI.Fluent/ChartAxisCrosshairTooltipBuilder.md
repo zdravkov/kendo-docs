@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisCrosshairTooltipBuilder
+title: ChartAxisCrosshairTooltipBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisCrosshairTooltipBuilder

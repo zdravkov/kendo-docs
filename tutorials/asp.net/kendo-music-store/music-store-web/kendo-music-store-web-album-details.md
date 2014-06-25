@@ -1,5 +1,5 @@
 ---
-nav_title: Displaying Album Details
+title: Displaying Album Details
 ---
 
 # Displaying Album Details - Kendo Music Store

@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewAnimationCollapse
+title: TreeViewAnimationCollapse
 ---
 
 # \Kendo\UI\TreeViewAnimationCollapse

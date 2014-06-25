@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the FlatColorPicker PHP class, server-side wrapper for Kendo UI FlatColorPicker widget
+title: Overview
+page_title: How to use the FlatColorPicker PHP class, server-side wrapper for Kendo UI FlatColorPicker widget
 description: Getting started with Kendo UI FlatColorPicker for PHP in quick steps - configure Kendo UI FlatColorPicker widget and operate Kendo UI FlatColorPicker events.
 ---
 

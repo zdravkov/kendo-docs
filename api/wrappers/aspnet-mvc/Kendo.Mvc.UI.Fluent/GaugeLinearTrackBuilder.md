@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeLinearTrackBuilder
+title: GaugeLinearTrackBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearTrackBuilder

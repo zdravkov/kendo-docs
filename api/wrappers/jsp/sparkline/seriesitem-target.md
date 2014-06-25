@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-seriesItem-target
+title: sparkline-seriesItem-target
 ---
 
 # \<kendo:sparkline-seriesItem-target\>

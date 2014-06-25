@@ -1,5 +1,5 @@
 ---
-nav_title: MapMarkerTooltipContent
+title: MapMarkerTooltipContent
 ---
 
 # \Kendo\Dataviz\UI\MapMarkerTooltipContent

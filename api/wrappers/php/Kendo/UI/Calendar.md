@@ -1,5 +1,5 @@
 ---
-nav_title: Calendar
+title: Calendar
 ---
 
 # \Kendo\UI\Calendar

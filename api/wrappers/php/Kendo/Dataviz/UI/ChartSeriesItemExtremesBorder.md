@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemExtremesBorder
+title: ChartSeriesItemExtremesBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemExtremesBorder

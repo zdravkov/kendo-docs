@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-editable
+title: scheduler-editable
 ---
 
 # \<kendo:scheduler-editable\>

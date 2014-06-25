@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerResource
+title: SchedulerResource
 ---
 
 # \Kendo\UI\SchedulerResource

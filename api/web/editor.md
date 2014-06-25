@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Editor
-title: Configuration, methods and events of Kendo UI Editor
+title: kendo.ui.Editor
+page_title: Configuration, methods and events of Kendo UI Editor
 description: Help guide for proper configuration of Editor UI widget, and how to use methods and events.
 ---
 

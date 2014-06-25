@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerStyleFillSettingsBuilder
+title: MapLayerStyleFillSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapLayerStyleFillSettingsBuilder

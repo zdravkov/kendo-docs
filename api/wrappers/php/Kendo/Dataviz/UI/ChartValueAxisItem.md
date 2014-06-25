@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItem
+title: ChartValueAxisItem
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItem

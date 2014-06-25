@@ -1,5 +1,5 @@
 ---
-nav_title: GridSortMode
+title: GridSortMode
 ---
 
 # Kendo.Mvc.UI.GridSortMode

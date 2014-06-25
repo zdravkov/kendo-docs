@@ -1,5 +1,5 @@
 ---
-nav_title: ExpandableAnimationBuilder
+title: ExpandableAnimationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ExpandableAnimationBuilder

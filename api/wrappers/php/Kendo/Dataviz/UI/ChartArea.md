@@ -1,5 +1,5 @@
 ---
-nav_title: ChartArea
+title: ChartArea
 ---
 
 # \Kendo\Dataviz\UI\ChartArea

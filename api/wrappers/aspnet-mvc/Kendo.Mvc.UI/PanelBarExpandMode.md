@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBarExpandMode
+title: PanelBarExpandMode
 ---
 
 # Kendo.Mvc.UI.PanelBarExpandMode

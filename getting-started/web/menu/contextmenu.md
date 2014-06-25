@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.ContextMenu
-title: Overview of Kendo UI ContextMenu widget
+title: kendo.ui.ContextMenu
+page_title: Overview of Kendo UI ContextMenu widget
 description: Steps that help you initialize the ContextMenu widget using JSON data object.
 ---
 

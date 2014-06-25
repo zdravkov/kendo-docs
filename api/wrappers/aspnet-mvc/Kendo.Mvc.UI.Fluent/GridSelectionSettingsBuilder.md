@@ -1,5 +1,5 @@
 ---
-nav_title: GridSelectionSettingsBuilder
+title: GridSelectionSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridSelectionSettingsBuilder

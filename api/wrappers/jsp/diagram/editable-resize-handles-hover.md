@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-editable-resize-handles-hover
+title: diagram-editable-resize-handles-hover
 ---
 
 # \<kendo:diagram-editable-resize-handles-hover\>

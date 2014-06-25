@@ -1,5 +1,5 @@
 ---
-nav_title: AutoCompleteEventBuilder
+title: AutoCompleteEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.AutoCompleteEventBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: WindowBuilder
+title: WindowBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowBuilder

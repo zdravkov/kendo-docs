@@ -1,5 +1,5 @@
 ---
-nav_title: barcode-padding
+title: barcode-padding
 ---
 
 # \<kendo:barcode-padding\>

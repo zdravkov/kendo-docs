@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartSeriesItemLabels
+title: StockChartSeriesItemLabels
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemLabels

@@ -1,5 +1,5 @@
 ---
-nav_title: Custom
+title: Custom
 ---
 
 # Custom binding

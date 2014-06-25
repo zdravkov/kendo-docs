@@ -1,5 +1,5 @@
 ---
-nav_title: map-marker-tooltip
+title: map-marker-tooltip
 ---
 
 # \<kendo:map-marker-tooltip\>

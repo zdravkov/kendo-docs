@@ -1,5 +1,5 @@
 ---
-nav_title: Diagram
+title: Diagram
 ---
 
 # \Kendo\Dataviz\UI\Diagram

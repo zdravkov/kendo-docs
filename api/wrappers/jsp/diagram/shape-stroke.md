@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-shape-stroke
+title: diagram-shape-stroke
 ---
 
 # \<kendo:diagram-shape-stroke\>

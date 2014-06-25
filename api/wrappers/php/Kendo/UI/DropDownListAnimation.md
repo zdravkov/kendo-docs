@@ -1,5 +1,5 @@
 ---
-nav_title: DropDownListAnimation
+title: DropDownListAnimation
 ---
 
 # \Kendo\UI\DropDownListAnimation

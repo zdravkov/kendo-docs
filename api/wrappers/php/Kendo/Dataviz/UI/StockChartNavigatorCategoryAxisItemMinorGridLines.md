@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemMinorGridLines
+title: StockChartNavigatorCategoryAxisItemMinorGridLines
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemMinorGridLines

@@ -1,5 +1,5 @@
 ---
-nav_title: EnumOperatorsBuilder
+title: EnumOperatorsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.EnumOperatorsBuilder

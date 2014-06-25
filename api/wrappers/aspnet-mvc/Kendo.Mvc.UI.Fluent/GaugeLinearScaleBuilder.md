@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeLinearScaleBuilder
+title: GaugeLinearScaleBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLinearScaleBuilder

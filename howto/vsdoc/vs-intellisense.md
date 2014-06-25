@@ -1,6 +1,6 @@
 ---
-nav_title: VS Intellisense
-title: Kendo UI Visual Studio Intellisense Documentation
+title: VS Intellisense
+page_title: Kendo UI Visual Studio Intellisense Documentation
 description: Learn how to reference Kendo UI Visual Studio Intellisense by using an additional vsdoc Javascript file.
 ---
 

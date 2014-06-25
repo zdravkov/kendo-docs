@@ -1,5 +1,5 @@
 ---
-nav_title: SortableCursorOffset
+title: SortableCursorOffset
 ---
 
 # \Kendo\UI\SortableCursorOffset

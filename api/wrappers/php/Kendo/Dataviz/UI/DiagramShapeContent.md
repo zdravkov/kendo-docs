@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeContent
+title: DiagramShapeContent
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeContent

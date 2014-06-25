@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of jQuery UI multiselect | Kendo UI Documentation
+title: Overview
+page_title: Overview of jQuery UI multiselect | Kendo UI Documentation
 description: Create MultiSelect UI widget, use Kendo UI templates, instructions how to use MultiSelect.
 ---
 

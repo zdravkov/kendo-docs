@@ -1,5 +1,5 @@
 ---
-nav_title: pivotConfigurator
+title: pivotConfigurator
 ---
 
 # \<kendo:pivotConfigurator\>

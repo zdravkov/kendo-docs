@@ -1,6 +1,6 @@
 ---
-nav_title: ASP.NET MVC 4
-title: Using Kendo UI with ASP.NET MVC 4
+title: ASP.NET MVC 4
+page_title: Using Kendo UI with ASP.NET MVC 4
 description: How to use Telerik UI for ASP.NET MVC in ASP.NET MVC 4 applications
 ---
 

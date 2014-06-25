@@ -1,5 +1,5 @@
 ---
-nav_title: colorPalette-tileSize
+title: colorPalette-tileSize
 ---
 
 # \<kendo:colorPalette-tileSize\>

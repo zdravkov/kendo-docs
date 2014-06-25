@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceGroupDescriptorFactory
+title: DataSourceGroupDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceGroupDescriptorFactory

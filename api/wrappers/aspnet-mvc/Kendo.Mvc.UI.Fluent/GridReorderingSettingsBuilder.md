@@ -1,5 +1,5 @@
 ---
-nav_title: GridReorderingSettingsBuilder
+title: GridReorderingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridReorderingSettingsBuilder

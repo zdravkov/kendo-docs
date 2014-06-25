@@ -1,5 +1,5 @@
 ---
-nav_title: chart-legend-labels-margin
+title: chart-legend-labels-margin
 ---
 
 # \<kendo:chart-legend-labels-margin\>

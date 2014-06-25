@@ -1,5 +1,5 @@
 ---
-nav_title: Metadata
+title: Metadata
 ---
 
 Asynchronous uploading usually means that you lose the association betwen the files and the context that they originate from.

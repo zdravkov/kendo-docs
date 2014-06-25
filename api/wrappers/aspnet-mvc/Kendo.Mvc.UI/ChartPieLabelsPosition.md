@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPieLabelsPosition
+title: ChartPieLabelsPosition
 ---
 
 # Kendo.Mvc.UI.ChartPieLabelsPosition

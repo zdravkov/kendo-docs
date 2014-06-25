@@ -1,5 +1,5 @@
 ---
-nav_title: AutoCompleteAnimationOpen
+title: AutoCompleteAnimationOpen
 ---
 
 # \Kendo\UI\AutoCompleteAnimationOpen

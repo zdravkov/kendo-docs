@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Connection
+title: kendo.dataviz.diagram.Connection
 ---
 
 # kendo.dataviz.diagram.Connection

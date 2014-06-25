@@ -1,5 +1,5 @@
 ---
-nav_title: RadialGauge
+title: RadialGauge
 ---
 
 # \Kendo\Dataviz\UI\RadialGauge

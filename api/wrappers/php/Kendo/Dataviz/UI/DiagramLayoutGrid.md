@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramLayoutGrid
+title: DiagramLayoutGrid
 ---
 
 # \Kendo\Dataviz\UI\DiagramLayoutGrid

@@ -1,5 +1,5 @@
 ---
-nav_title: FX Zoom
+title: FX Zoom
 ---
 
 # Zoom

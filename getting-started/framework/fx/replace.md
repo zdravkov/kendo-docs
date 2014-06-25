@@ -1,5 +1,5 @@
 ---
-nav_title: Replace Effect
+title: Replace Effect
 ---
 # Kendo UI Replace Effect
 

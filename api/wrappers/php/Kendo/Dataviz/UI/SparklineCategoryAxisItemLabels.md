@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemLabels
+title: SparklineCategoryAxisItemLabels
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemLabels

@@ -1,5 +1,5 @@
 ---
-nav_title: GridGroupable
+title: GridGroupable
 ---
 
 # \Kendo\UI\GridGroupable

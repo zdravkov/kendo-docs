@@ -1,5 +1,5 @@
 ---
-nav_title: CustomDataSourceModelFieldDescriptorBuilder
+title: CustomDataSourceModelFieldDescriptorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceModelFieldDescriptorBuilder

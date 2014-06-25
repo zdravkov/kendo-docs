@@ -1,5 +1,5 @@
 ---
-nav_title: radialGauge-pointer-cap
+title: radialGauge-pointer-cap
 ---
 
 # \<kendo:radialGauge-pointer-cap\>

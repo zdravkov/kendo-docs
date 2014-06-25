@@ -1,5 +1,5 @@
 ---
-nav_title: GridBoundColumnFilterableBuilder
+title: GridBoundColumnFilterableBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridBoundColumnFilterableBuilder

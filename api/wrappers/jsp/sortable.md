@@ -1,5 +1,5 @@
 ---
-nav_title: sortable
+title: sortable
 ---
 
 # \<kendo:sortable\>

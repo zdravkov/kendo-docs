@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramLayoutGridSettingsBuilder
+title: DiagramLayoutGridSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramLayoutGridSettingsBuilder

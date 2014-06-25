@@ -1,5 +1,5 @@
 ---
-nav_title: SplitterOrientation
+title: SplitterOrientation
 ---
 
 # Kendo.Mvc.UI.SplitterOrientation

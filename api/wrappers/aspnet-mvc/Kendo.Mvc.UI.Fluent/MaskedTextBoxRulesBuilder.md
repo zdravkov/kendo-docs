@@ -1,5 +1,5 @@
 ---
-nav_title: MaskedTextBoxRulesBuilder
+title: MaskedTextBoxRulesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MaskedTextBoxRulesBuilder

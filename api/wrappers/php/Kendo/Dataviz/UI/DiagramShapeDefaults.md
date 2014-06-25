@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaults
+title: DiagramShapeDefaults
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaults

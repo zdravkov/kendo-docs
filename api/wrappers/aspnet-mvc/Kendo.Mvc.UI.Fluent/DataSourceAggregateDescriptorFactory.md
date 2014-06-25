@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceAggregateDescriptorFactory
+title: DataSourceAggregateDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceAggregateDescriptorFactory

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBarLabelsPosition
+title: ChartBarLabelsPosition
 ---
 
 # Kendo.Mvc.UI.ChartBarLabelsPosition

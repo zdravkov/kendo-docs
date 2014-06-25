@@ -1,5 +1,5 @@
 ---
-nav_title: JavaScriptFunction
+title: JavaScriptFunction
 ---
 
 # \Kendo\JavaScriptFunction

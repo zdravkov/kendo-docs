@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of jQuery UI combobox | Kendo UI Documentation
+title: Overview
+page_title: Overview of jQuery UI combobox | Kendo UI Documentation
 description: Create ComboBox UI widget, use Kendo UI templates, instructions how to use ComboBox.
-nav_position: 1
+position: 1
 ---
 
 # ComboBox Overview

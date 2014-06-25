@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesDefaultsLabelsPadding
+title: ChartSeriesDefaultsLabelsPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsLabelsPadding

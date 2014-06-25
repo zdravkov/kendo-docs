@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-tooltip
+title: sparkline-tooltip
 ---
 
 # \<kendo:sparkline-tooltip\>

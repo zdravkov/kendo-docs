@@ -1,5 +1,5 @@
 ---
-nav_title: chart-xAxisItem-crosshair-tooltip-padding
+title: chart-xAxisItem-crosshair-tooltip-padding
 ---
 
 # \<kendo:chart-xAxisItem-crosshair-tooltip-padding\>

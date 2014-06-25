@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGaugePointerBorder
+title: LinearGaugePointerBorder
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugePointerBorder

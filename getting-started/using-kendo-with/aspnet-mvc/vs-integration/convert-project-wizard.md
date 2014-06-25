@@ -1,5 +1,5 @@
 ---
-nav_title: Convert Project Wizard
+title: Convert Project Wizard
 ---
 
 #Convert Project Wizard

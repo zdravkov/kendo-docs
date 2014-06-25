@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItemLabelsMargin
+title: ChartValueAxisItemLabelsMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemLabelsMargin

@@ -1,5 +1,5 @@
 ---
-nav_title: EditorImageBrowser
+title: EditorImageBrowser
 ---
 
 # \Kendo\UI\EditorImageBrowser

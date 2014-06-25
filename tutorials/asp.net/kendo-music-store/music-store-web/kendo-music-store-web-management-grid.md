@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Store Management Grid
+title: Creating the Store Management Grid
 ---
 
 # Creating the Store Management Grid - Kendo Music Store

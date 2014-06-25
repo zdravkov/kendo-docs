@@ -1,5 +1,5 @@
 ---
-nav_title: GridColumn
+title: GridColumn
 ---
 
 # \Kendo\UI\GridColumn

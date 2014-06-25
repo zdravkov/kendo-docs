@@ -1,5 +1,5 @@
 ---
-nav_title: TooltipEventBuilder
+title: TooltipEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TooltipEventBuilder

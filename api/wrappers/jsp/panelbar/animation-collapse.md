@@ -1,5 +1,5 @@
 ---
-nav_title: panelBar-animation-collapse
+title: panelBar-animation-collapse
 ---
 
 # \<kendo:panelBar-animation-collapse\>

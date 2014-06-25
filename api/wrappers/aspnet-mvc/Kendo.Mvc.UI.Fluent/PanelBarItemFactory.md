@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBarItemFactory
+title: PanelBarItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.PanelBarItemFactory

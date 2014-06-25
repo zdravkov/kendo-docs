@@ -1,6 +1,6 @@
 ---
-nav_title: Line Chart
-title: Line chart widget in Kendo UI DataViz
+title: Line Chart
+page_title: Line chart widget in Kendo UI DataViz
 description: Step-by-step instructions how to create a line chart in Kendo UI DataViz, configuration of a line chart.
 ---
 

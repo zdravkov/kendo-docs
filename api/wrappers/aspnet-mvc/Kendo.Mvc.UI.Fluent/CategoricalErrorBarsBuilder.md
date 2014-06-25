@@ -1,5 +1,5 @@
 ---
-nav_title: CategoricalErrorBarsBuilder
+title: CategoricalErrorBarsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CategoricalErrorBarsBuilder

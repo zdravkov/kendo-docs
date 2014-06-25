@@ -1,5 +1,5 @@
 ---
-nav_title: EditorFileBrowser
+title: EditorFileBrowser
 ---
 
 # \Kendo\UI\EditorFileBrowser
