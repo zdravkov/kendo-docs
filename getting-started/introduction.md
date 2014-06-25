@@ -11,13 +11,15 @@ Kendo UI is an HTML5, jQuery-based framework for building modern web apps. The f
 an auto-adaptive Mobile framework, and all of the tools needed for HTML5 app development, such as Data Source, Templating, MVVM, Drag-and-Drop API, and more.
 
 Kendo UI comes in different bundles:
+
 * Kendo UI Core - free open source version of Kendo UI licensed under Apache 2.0, including web and mobile widgets and framework features. 
 * Kendo UI Professional - includes web, dataviz and mobile widgets and framework features. 
 * Telerik UI for ASP.NET MVC - Kendo UI Professional plus ASP.NET MVC wrappers for all available widgets.
 * Telerik UI for JSP - Kendo UI Professional plus JSP wrappers for the available web and dataviz widgets.
 * Telerik UI for PHP - Kendo UI Professional plus PHP wrappers for the available web and dataviz widgets.
 
-See comparison between Kendo UI Professional and Kendo UI Core here: http://www.telerik.com/kendo-ui/comparison
+*See comparison between Kendo UI Professional and Kendo UI Core here: http://www.telerik.com/kendo-ui/comparison
+
 # Installing and Getting Started with Kendo UI
 
 You can download all Kendo UI bundles from the [download page](http://www.telerik.com/download/kendo-ui-complete).
