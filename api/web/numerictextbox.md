@@ -228,11 +228,9 @@ If set to `true` the widget will be enabled. If set to `false` the widget will b
 
 #### Example - enable the widget
 
-    <input id="numerictextbox" />
+    <input id="numerictextbox" disabled="disabled" />
     <script>
-    $("#numerictextbox").kendoNumericTextBox({
-      enable: false
-    });
+    $("#numerictextbox").kendoNumericTextBox();
 
     var numerictextbox = $("#numerictextbox").data("kendoNumericTextBox");
     numerictextbox.enable(true);
