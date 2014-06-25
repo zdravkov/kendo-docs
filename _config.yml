@@ -5,127 +5,143 @@ url: "http://docs.telerik.com/kendo-ui"
 exclude: [readme.md, Gemfile, Gemfile.lock,api_sort.rb]
 navigation:
 ## List your directory names and order here, like this:
-    using-kendo-with:
+    "*dataviz":
+        title: "DataViz"
+    "*wrappers":
+        title: "Wrappers"
+    "*framework":
+        title: "Framework"
+    "*mobile":
+        title: "Mobile"
+    "*web":
+        title: "Web"
+    "*typescript":
+        title: "TypeScript"
+    "*using-kendo-with":
         title: "Using Kendo With"
-    aspnet-mvc:
+    "*asp.net":
+        title: "ASP.NET"
+    "*accessibility":
+        title: "Accessibility"
+    "*aspnet-mvc":
         title: "ASP.NET MVC"
-    php:
+    "*php":
         title: "PHP"
-    jsp:
+    "*jsp":
         title: "JSP"
-    barcode:
+    "*barcode":
         title: "Barcode"
-    chart:
+    "*chart":
         title: "Chart"
-    diagram:
+    "*diagram":
         title: "Diagram"
-    lineargauge:
+    "*lineargauge":
         title: "LinearGauge"
-    map:
+    "*map":
         title: "Map"
-    qrcode:
+    "*qrcode":
         title: "QRCode"
-    radialgauge:
+    "*radialgauge":
         title: "RadialGauge"
-    sparkline:
+    "*sparkline":
         title: "Sparkline"
-    stockchart:
+    "*stockchart":
         title: "StockChart"
-    datasource:
+    "*datasource":
         title: "DataSource"
-    draganddrop:
+    "*draganddrop":
         title: "Drag and Drop"
-    fx:
+    "*fx":
         title: "FX"
-    globalization:
+    "*globalization":
         title: "Globalization"
-    hierarchicaldatasource:
+    "*hierarchicaldatasource":
         title: "HierarchicalDataSource"
-    mvvm:
+    "*mvvm":
         title: "MVVM"
-    spa:
+    "*spa":
         title: "SPA"
-    templates:
+    "*templates":
         title: "Templates"
-    validator:
+    "*validator":
         title: "Validator"
-    autocomplete:
+    "*autocomplete":
         title: "AutoComplete"
-    button:
+    "*button":
         title: "Button"
-    calendar:
+    "*calendar":
         title: "Calendar"
-    colorpicker:
+    "*colorpicker":
         title: "ColorPicker"
-    combobox:
+    "*combobox":
         title: "ComboBox"
-    datepicker:
+    "*datepicker":
         title: "DatePicker"
-    datetimepicker:
+    "*datetimepicker":
         title: "DateTimePicker"
-    dropdownlist:
+    "*dropdownlist":
         title: "DropDownList"
-    editor:
+    "*editor":
         title: "Editor"
-    gantt:
+    "*gantt":
         title: "Gantt"
-    grid:
+    "*grid":
         title: "Grid"
-    listview:
+    "*listview":
         title: "ListView"
-    maskedtextbox:
+    "*maskedtextbox":
         title: "MaskedTextBox"
-    menu:
+    "*menu":
         title: "Menu"
-    multiselect:
+    "*multiselect":
         title: "MultiSelect"
-    notification:
+    "*notification":
         title: "Notification"
-    numerictextbox:
+    "*numerictextbox":
         title: "NumericTextBox"
-    panelbar:
+    "*panelbar":
         title: "PanelBar"
-    pivotdatasource:
+    "*pivotdatasource":
         title: "PivotDataSource"
-    pivotgrid:
+    "*pivotgrid":
         title: "PivotGrid"
-    progressbar:
+    "*progressbar":
         title: "ProgressBar"
-    rangeslider:
+    "*rangeslider":
         title: "RangeSlider"
-    scheduler:
+    "*scheduler":
         title: "Scheduler"
-    slider:
+    "*slider":
         title: "Slider"
-    sortable:
+    "*sortable":
         title: "Sortable"
-    splitter:
+    "*splitter":
         title: "Splitter"
-    tabstrip:
+    "*tabstrip":
         title: "TabStrip"
-    timepicker:
+    "*timepicker":
         title: "TimePicker"
-    tooltip:
+    "*tooltip":
         title: "Tooltip"
-    treeview:
+    "*treeview":
         title: "TreeView"
-    upload:
+    "*upload":
         title: "Upload"
-    window:
+    "*window":
         title: "Window"
-    hello-kendo-ui:
+    "*hello-kendo-ui":
         title: "Hello Kendo UI"
-    kendo-music-store:
+    "*kendo-music-store":
         title: "Kendo UI Music Store"
-    music-store-dashboard:
+    "*music-store-dashboard":
         title: "Music Store Dashboard"
-    music-store-web:
+    "*music-store-web":
         title: "Musict Store Web"
-    saleshub:
+    "*saleshub":
         title: "Sales Hub"
-    home-page:
+    "*home-page":
         title: "Home Page"
-    order-page:
+    "*order-page":
         title: "Order Page"
 
 ## The application virtual path
