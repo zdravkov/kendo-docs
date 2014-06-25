@@ -34,18 +34,21 @@ a img {
     font-size: 12px;
 }
 
+#page-header:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
 #page-header a {
     text-decoration: none;
 }
 
 #logo-bar {
-    background: #2d3e50;
-    height: 40px;
-    font-size: 14px;
-}
-
-#logo-bar a {
-    color: #fff;
+    float: left;
+    margin-top: 1.617em;
+    margin-bottom: 1.717em;
+    margin-left: 1.833em;
 }
 
 .nav-buttons {
@@ -91,7 +94,6 @@ a img {
 
 #page-top {
     position: relative;
-    height: 80px;
     border-bottom: 1px solid #ebecee;
 }
 
@@ -138,20 +140,6 @@ a img {
 
 #page-search table.gsc-search-box td {
     background-color: #fff;
-}
-
-#page-breadcrumb ul {
-    list-style: none;
-    padding: 0;
-}
-
-#page-breadcrumb li {
-    display: inline-block;
-}
-
-#page-breadcrumb .link::after {
-    content: ">";
-    margin: 0 8px;
 }
 
 #page-top #page-search {
