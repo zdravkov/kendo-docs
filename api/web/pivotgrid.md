@@ -28,8 +28,8 @@ If the `dataSource` option is an existing [kendo.data.PivotDataSource](/api/fram
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -56,8 +56,8 @@ If the `dataSource` option is an existing [kendo.data.PivotDataSource](/api/fram
     var dataSource = new kendo.data.PivotDataSource({
         type: "xmla",
         columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-        rows: [{ name: "[Product].[Product Name].[All]" }],
-        measures: ["[Measures].[Internet Order Lines Count]"],
+        rows: [{ name: "[Product].[Product]" }],
+        measures: ["[Measures].[Internet Sales Amount]"],
         transport: {
             connection: {
                 catalog: "Adventure Works DW 2008R2",
@@ -98,8 +98,8 @@ data source is fired. By default the widget will bind to the data source specifi
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -135,8 +135,8 @@ If set to `false` the user will not be able to add/close/reorder current fields 
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -169,8 +169,8 @@ The height of the pivotgrid. Numeric values are treated as pixels.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -199,8 +199,8 @@ The height of the pivotgrid. Numeric values are treated as pixels.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -238,8 +238,8 @@ The text messages displayed in the fields sections.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -275,8 +275,8 @@ The text messages displayed in the measure fields sections.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -312,8 +312,8 @@ The text messages displayed in the column fields sections.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -349,8 +349,8 @@ The text messages displayed in the row fields sections.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -389,8 +389,8 @@ The [data source](/api/framework/pivotdatasource) of the widget. Configured via 
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -430,8 +430,8 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -466,8 +466,8 @@ Renders all content using the current data items.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -508,8 +508,8 @@ The data source to which the widget should be bound.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -530,8 +530,8 @@ The data source to which the widget should be bound.
     var dataSource = kendo.data.PivotDataSource({
         type: "xmla",
         columns: [{ name: "[Date].[Calendar]", expand: true }],
-        rows: [{ name: "[Product].[Product Name].[All]" }],
-        measures: ["[Measures].[Internet Order Lines Count]"],
+        rows: [{ name: "[Product].[Product]" }],
+        measures: ["[Measures].[Internet Sales Amount]"],
         transport: {
             connection: {
                 catalog: "Adventure Works DW 2008R2",
@@ -582,8 +582,8 @@ The widget instance which fired the event.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -616,8 +616,8 @@ The widget instance which fired the event.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -663,8 +663,8 @@ The widget instance which fired the event.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -697,8 +697,8 @@ The widget instance which fired the event.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -756,8 +756,8 @@ The path to the field that will be expanded.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -790,8 +790,8 @@ The path to the field that will be expanded.
         dataSource: {
             type: "xmla",
             columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -848,9 +848,9 @@ The path to the field that will be collapseed.
         },
         dataSource: {
             type: "xmla",
-            columns: [{ name: "[Date].[Calendar]", collapse: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
@@ -882,9 +882,9 @@ The path to the field that will be collapseed.
         height: 550,
         dataSource: {
             type: "xmla",
-            columns: [{ name: "[Date].[Calendar]", collapse: true }, { name: "[Geography].[City]" } ],
-            rows: [{ name: "[Product].[Product Name].[All]" }],
-            measures: ["[Measures].[Internet Order Lines Count]"],
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
             transport: {
                 connection: {
                     catalog: "Adventure Works DW 2008R2",
