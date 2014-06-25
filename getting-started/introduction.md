@@ -17,7 +17,7 @@ Kendo UI comes in different bundles:
 * Telerik UI for JSP - Kendo UI Professional plus JSP wrappers for the available web and dataviz widgets.
 * Telerik UI for PHP - Kendo UI Professional plus PHP wrappers for the available web and dataviz widgets.
 
-** See comparison between Kendo UI Professional and Kendo UI Core here: http://www.telerik.com/kendo-ui/comparison
+See comparison between Kendo UI Professional and Kendo UI Core here: http://www.telerik.com/kendo-ui/comparison
 # Installing and Getting Started with Kendo UI
 
 You can download all Kendo UI bundles from the [download page](http://www.telerik.com/download/kendo-ui-complete).
