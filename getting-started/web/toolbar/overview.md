@@ -39,7 +39,7 @@ The TollBar wrapper holds all commands that can be placed within the available c
                 //toggle button
                 {
                     type: "button",
-                    toggle: true,
+                    togglable: true,
                     text: "Toggle Button",
                     icon: "tick",
                     selected: true
@@ -112,7 +112,7 @@ Each button item can have the following properties:
                 overflow: "auto",
 
                 //specifies if the button is togglable, e.g. has a selected and unselected state.
-                toggle: true,
+                togglable: true,
 
                 //specifies if the toggle button is initially selected. Applicable only for buttons with toggle: true.
                 selected: true,
@@ -185,7 +185,7 @@ The `showText` property accepts the following values:
 
 ### Toggle Button
 
-The Toggle Button allows the user to change a setting between two states. To define a Toggle Button, set the button `toggle` property to `"true"`. The Toggle Button supports the same configuration options as the standard button.
+The Toggle Button allows the user to change a setting between two states. To define a Toggle Button, set the button `togglable` property to `true`. The Toggle Button supports the same configuration options as the standard button.
 
 > Clicking on a Toggle Button triggers the `toggle` event. Clicking on a Toggle Button does **not** trigger the `click` event.
 
@@ -198,7 +198,7 @@ The Toggle Button allows the user to change a setting between two states. To def
             items: [
                 {
                     type: "button",
-                    toggle: true,
+                    togglable: true,
                     text: "My Toggle Button",
                     spriteCssClass: "myIcon",
                     showIcon: "toolbar",
@@ -219,9 +219,9 @@ Only a one Button from a group may be selected at a time. This is useful if you 
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "button", text: "foo", toggle: true, group: "controlGroup" },
-                { type: "button", text: "bar", toggle: true, group: "controlGroup" },
-                { type: "button", text: "baz", toggle: true, group: "controlGroup" }
+                { type: "button", text: "foo", togglable: true, group: "controlGroup" },
+                { type: "button", text: "bar", togglable: true, group: "controlGroup" },
+                { type: "button", text: "baz", togglable: true, group: "controlGroup" }
             ]
         });
     </script>
@@ -292,9 +292,9 @@ In the command overflow popup the Button Group is rendered as list of commands.
                     id: "btnGroup",
                     //ButtonGroup's items accept the same appearance configration optinos as the button control
                     items: [
-                        { text: "foo", toggle: true, group: "controlGroup" },
-                        { text: "bar", toggle: true, group: "controlGroup" },
-                        { text: "baz", toggle: true, group: "controlGroup" }
+                        { text: "foo", togglable: true, group: "controlGroup" },
+                        { text: "bar", togglable: true, group: "controlGroup" },
+                        { text: "baz", togglable: true, group: "controlGroup" }
                     ]
                 }
             ]
