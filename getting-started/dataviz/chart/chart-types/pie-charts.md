@@ -1,6 +1,6 @@
 ---
-nav_title: Pie Chart
-title: Pie charts in Kendo UI DataViz
+title: Pie Chart
+page_title: Pie charts in Kendo UI DataViz
 description: How to create a pie chart and specify the point value, category label and other properties of the chart.
 ---
 

@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: LinearGauge HtmlHelper extension for Kendo UI DataViz LinearGauge documentation
+title: Overview
+page_title: LinearGauge HtmlHelper extension for Kendo UI DataViz LinearGauge documentation
 description: Getting started with LinearGauge HtmlHelper extension for Kendo UI DataViz LinearGauge for ASP.NET MVC.
 ---
 

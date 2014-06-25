@@ -1,5 +1,5 @@
 ---
-nav_title: numericTextBox
+title: numericTextBox
 ---
 
 # \<kendo:numericTextBox\>

@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerView
+title: SchedulerView
 ---
 
 # \Kendo\UI\SchedulerView

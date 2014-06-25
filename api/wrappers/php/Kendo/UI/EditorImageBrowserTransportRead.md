@@ -1,5 +1,5 @@
 ---
-nav_title: EditorImageBrowserTransportRead
+title: EditorImageBrowserTransportRead
 ---
 
 # \Kendo\UI\EditorImageBrowserTransportRead

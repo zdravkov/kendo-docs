@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: HTML5 Range Input in Kendo UI RangeSlider Widget
+title: Overview
+page_title: HTML5 Range Input in Kendo UI RangeSlider Widget
 description: Learn how to display range of values, select them in Kendo UI RangeSlider widget and learn how to customize behaviors of the component to ensure a consistent experience.
 ---
 

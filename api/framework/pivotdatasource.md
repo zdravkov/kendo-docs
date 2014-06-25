@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.data.PivotDataSource
-title: API Reference for Kendo UI PivotDataSource
+title: PivotDataSource
+page_title: API Reference for Kendo UI PivotDataSource
 description: Learn more about the configuration of Kendo UI PivotDataSource, methods and events.
 ---
 

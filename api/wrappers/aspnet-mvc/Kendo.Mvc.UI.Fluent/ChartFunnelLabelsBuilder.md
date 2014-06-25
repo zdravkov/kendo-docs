@@ -1,5 +1,5 @@
 ---
-nav_title: ChartFunnelLabelsBuilder
+title: ChartFunnelLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartFunnelLabelsBuilder

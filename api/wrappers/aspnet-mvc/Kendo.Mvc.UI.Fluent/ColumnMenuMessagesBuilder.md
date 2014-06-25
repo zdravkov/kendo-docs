@@ -1,5 +1,5 @@
 ---
-nav_title: ColumnMenuMessagesBuilder
+title: ColumnMenuMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ColumnMenuMessagesBuilder

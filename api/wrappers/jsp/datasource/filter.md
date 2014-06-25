@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-filter
+title: dataSource-filter
 ---
 
 # \<kendo:dataSource-filter\>

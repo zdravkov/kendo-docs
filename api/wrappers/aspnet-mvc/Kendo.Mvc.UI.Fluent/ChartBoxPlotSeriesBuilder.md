@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBoxPlotSeriesBuilder
+title: ChartBoxPlotSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBoxPlotSeriesBuilder

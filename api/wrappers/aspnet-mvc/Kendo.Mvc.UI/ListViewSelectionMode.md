@@ -1,5 +1,5 @@
 ---
-nav_title: ListViewSelectionMode
+title: ListViewSelectionMode
 ---
 
 # Kendo.Mvc.UI.ListViewSelectionMode

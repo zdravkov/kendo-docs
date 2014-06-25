@@ -1,5 +1,5 @@
 ---
-nav_title: QRErrorCorrectionLevel
+title: QRErrorCorrectionLevel
 ---
 
 # Kendo.Mvc.UI.QRErrorCorrectionLevel

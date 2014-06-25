@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Calendar HtmlHelper extension for Kendo UI Calendar widget | Kendo UI documentation
+title: Overview
+page_title: Calendar HtmlHelper extension for Kendo UI Calendar widget | Kendo UI documentation
 description: Getting started with Calendar HtmlHelper extension in quick steps - configure Kendo UI Calendar widget and operate Kendo UI Calendar events.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: CalendarBuilder
+title: CalendarBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CalendarBuilder

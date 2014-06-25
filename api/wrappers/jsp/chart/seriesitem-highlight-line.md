@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-highlight-line
+title: chart-seriesItem-highlight-line
 ---
 
 # \<kendo:chart-seriesItem-highlight-line\>

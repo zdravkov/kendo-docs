@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisNotesBuilder
+title: ChartAxisNotesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisNotesBuilder

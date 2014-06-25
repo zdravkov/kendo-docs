@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemLabelsPadding
+title: StockChartNavigatorCategoryAxisItemLabelsPadding
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemLabelsPadding

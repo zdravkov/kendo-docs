@@ -1,6 +1,6 @@
 ---
-nav_title: Introduction
-title: Documentation guide for Telerik UI for PHP
+title: Introduction
+page_title: Documentation guide for Telerik UI for PHP
 description: How to download, install Telerik UI for PHP and run the sample application.
 ---
 

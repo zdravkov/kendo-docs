@@ -1,5 +1,5 @@
 ---
-nav_title: grid-editable
+title: grid-editable
 ---
 
 # \<kendo:grid-editable\>

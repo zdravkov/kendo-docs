@@ -1,5 +1,5 @@
 ---
-nav_title: GridEditable
+title: GridEditable
 ---
 
 # \Kendo\UI\GridEditable

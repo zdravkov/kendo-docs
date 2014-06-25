@@ -1,5 +1,5 @@
 ---
-nav_title: grid-sortable
+title: grid-sortable
 ---
 
 # \<kendo:grid-sortable\>

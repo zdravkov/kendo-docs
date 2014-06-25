@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartSeriesDefaultsTooltipBorder
+title: StockChartSeriesDefaultsTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesDefaultsTooltipBorder

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartTitleMargin
+title: ChartTitleMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartTitleMargin

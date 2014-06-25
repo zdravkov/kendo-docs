@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Window PHP class, server-side wrapper for Kendo UI Window widget
+title: Overview
+page_title: How to use the Window PHP class, server-side wrapper for Kendo UI Window widget
 description: Learn how to create Kendo UI Window for PHP, handle Kendo UI Window Events, access an existing window.
 ---
 

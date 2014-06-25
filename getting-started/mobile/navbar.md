@@ -1,6 +1,6 @@
 ---
-nav_title: NavBar
-title: User Guide for Kendo UI Mobile NavBar widget
+title: NavBar
+page_title: User Guide for Kendo UI Mobile NavBar widget
 description: Step-by-step instructions how to use Mobile NavBar widget, align the widgets inside the NavBar and customize Mobile NavBar appearance.
 ---
 

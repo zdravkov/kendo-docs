@@ -1,5 +1,5 @@
 ---
-nav_title: map-marker-tooltip-animation-open
+title: map-marker-tooltip-animation-open
 ---
 
 # \<kendo:map-marker-tooltip-animation-open\>

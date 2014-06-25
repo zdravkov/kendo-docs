@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.ColorPicker
-title: Configuration, methods and events of Kendo UI ColorPicker
+title: ColorPicker
+page_title: Configuration, methods and events of Kendo UI ColorPicker
 ---
 
 # kendo.ui.ColorPicker

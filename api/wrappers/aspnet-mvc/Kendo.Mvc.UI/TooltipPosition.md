@@ -1,5 +1,5 @@
 ---
-nav_title: TooltipPosition
+title: TooltipPosition
 ---
 
 # Kendo.Mvc.UI.TooltipPosition

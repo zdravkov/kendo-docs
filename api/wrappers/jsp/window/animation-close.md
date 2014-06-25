@@ -1,5 +1,5 @@
 ---
-nav_title: window-animation-close
+title: window-animation-close
 ---
 
 # \<kendo:window-animation-close\>

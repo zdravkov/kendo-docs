@@ -1,5 +1,5 @@
 ---
-nav_title: ChartMinorGridLinesBuilder
+title: ChartMinorGridLinesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartMinorGridLinesBuilder

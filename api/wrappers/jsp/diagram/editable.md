@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-editable
+title: diagram-editable
 ---
 
 # \<kendo:diagram-editable\>

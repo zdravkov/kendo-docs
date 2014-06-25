@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Tooltip
-title: Configuration, methods and events of Kendo UI Tooltip
+title: Tooltip
+page_title: Configuration, methods and events of Kendo UI Tooltip
 ---
 
 # kendo.ui.Tooltip

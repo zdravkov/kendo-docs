@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-target
+title: chart-seriesItem-target
 ---
 
 # \<kendo:chart-seriesItem-target\>

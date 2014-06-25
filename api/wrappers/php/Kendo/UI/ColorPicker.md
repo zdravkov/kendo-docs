@@ -1,5 +1,5 @@
 ---
-nav_title: ColorPicker
+title: ColorPicker
 ---
 
 # \Kendo\UI\ColorPicker

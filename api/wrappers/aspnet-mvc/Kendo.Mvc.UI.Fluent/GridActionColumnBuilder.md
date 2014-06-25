@@ -1,5 +1,5 @@
 ---
-nav_title: GridActionColumnBuilder
+title: GridActionColumnBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridActionColumnBuilder

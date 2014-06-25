@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemNotes
+title: StockChartNavigatorCategoryAxisItemNotes
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemNotes

@@ -1,5 +1,5 @@
 ---
-nav_title: MobileActionSheetEventBuilder
+title: MobileActionSheetEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileActionSheetEventBuilder

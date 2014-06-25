@@ -1,5 +1,5 @@
 ---
-nav_title: grid-columnMenu-messages
+title: grid-columnMenu-messages
 ---
 
 # \<kendo:grid-columnMenu-messages\>

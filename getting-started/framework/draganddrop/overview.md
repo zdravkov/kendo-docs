@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of DOM element Draggable functionality | Kendo UI Docs
+title: Overview
+page_title: Overview of DOM element Draggable functionality | Kendo UI Docs
 description: Lear more for the draggable functionality on any DOM element and how to enable and initialize it. We guide you how to enable DOM to be a target for draggable elements.
 ---
 

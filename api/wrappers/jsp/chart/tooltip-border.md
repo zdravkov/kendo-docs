@@ -1,5 +1,5 @@
 ---
-nav_title: chart-tooltip-border
+title: chart-tooltip-border
 ---
 
 # \<kendo:chart-tooltip-border\>

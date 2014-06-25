@@ -1,5 +1,5 @@
 ---
-nav_title: EditorImageBrowserTransportCreate
+title: EditorImageBrowserTransportCreate
 ---
 
 # \Kendo\UI\EditorImageBrowserTransportCreate

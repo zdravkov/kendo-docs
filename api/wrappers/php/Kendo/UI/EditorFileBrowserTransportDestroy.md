@@ -1,5 +1,5 @@
 ---
-nav_title: EditorFileBrowserTransportDestroy
+title: EditorFileBrowserTransportDestroy
 ---
 
 # \Kendo\UI\EditorFileBrowserTransportDestroy

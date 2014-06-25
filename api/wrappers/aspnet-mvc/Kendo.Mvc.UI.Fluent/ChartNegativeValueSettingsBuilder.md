@@ -1,5 +1,5 @@
 ---
-nav_title: ChartNegativeValueSettingsBuilder
+title: ChartNegativeValueSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNegativeValueSettingsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: Create A Custom Kendo UI Widget
+title: Create A Custom Kendo UI Widget
 ---
 
 # How-To: Add Widgets with Kendo UI Web

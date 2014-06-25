@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Kendo UI Menu for PHP widget documentation
+title: Overview
+page_title: Kendo UI Menu for PHP widget documentation
 description: How to add and bind Kendo UI Menu for PHP widget.
 ---
 

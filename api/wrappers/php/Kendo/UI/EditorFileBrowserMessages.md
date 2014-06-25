@@ -1,5 +1,5 @@
 ---
-nav_title: EditorFileBrowserMessages
+title: EditorFileBrowserMessages
 ---
 
 # \Kendo\UI\EditorFileBrowserMessages

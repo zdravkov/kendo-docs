@@ -1,5 +1,5 @@
 ---
-nav_title: GridBoundColumnBuilder
+title: GridBoundColumnBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridBoundColumnBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: ColorPickerBuilder
+title: ColorPickerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ColorPickerBuilder

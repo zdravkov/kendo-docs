@@ -1,5 +1,5 @@
 ---
-nav_title: SplitterPane
+title: SplitterPane
 ---
 
 # \Kendo\UI\SplitterPane

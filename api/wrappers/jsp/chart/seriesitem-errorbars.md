@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-errorBars
+title: chart-seriesItem-errorBars
 ---
 
 # \<kendo:chart-seriesItem-errorBars\>

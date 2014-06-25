@@ -1,5 +1,5 @@
 ---
-nav_title: MobileSwitchEventBuilder
+title: MobileSwitchEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileSwitchEventBuilder

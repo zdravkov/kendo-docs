@@ -1,5 +1,5 @@
 ---
-nav_title: ComboBoxEventBuilder
+title: ComboBoxEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ComboBoxEventBuilder

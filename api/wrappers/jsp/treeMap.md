@@ -1,5 +1,5 @@
 ---
-nav_title: treeMap
+title: treeMap
 ---
 
 # \<kendo:treeMap\>

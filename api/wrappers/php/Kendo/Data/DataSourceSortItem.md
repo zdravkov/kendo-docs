@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceSortItem
+title: DataSourceSortItem
 ---
 
 # \Kendo\Data\DataSourceSortItem

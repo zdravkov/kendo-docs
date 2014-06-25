@@ -1,6 +1,6 @@
 ---
-nav_title:  Data Attribute Initialization
-title: Data Attribute Initialization and Configuration
+title:  Data Attribute Initialization
+page_title: Data Attribute Initialization and Configuration
 description: Learn how to initialize and configure each Kendo UI widget by setting a data attribute.
 Publish: true
 related: gs-widgets

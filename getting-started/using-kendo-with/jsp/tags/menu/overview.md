@@ -1,5 +1,5 @@
 ---
-nav_title: Overview
+title: Overview
 ---
 
 # Menu

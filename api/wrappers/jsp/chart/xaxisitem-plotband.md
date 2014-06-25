@@ -1,5 +1,5 @@
 ---
-nav_title: chart-xAxisItem-plotBand
+title: chart-xAxisItem-plotBand
 ---
 
 # \<kendo:chart-xAxisItem-plotBand\>

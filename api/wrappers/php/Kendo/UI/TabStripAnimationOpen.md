@@ -1,5 +1,5 @@
 ---
-nav_title: TabStripAnimationOpen
+title: TabStripAnimationOpen
 ---
 
 # \Kendo\UI\TabStripAnimationOpen

@@ -1,5 +1,5 @@
 ---
-nav_title: grid-column-commandItem
+title: grid-column-commandItem
 ---
 
 # \<kendo:grid-column-commandItem\>

@@ -1,6 +1,6 @@
 ---
-nav_title: Modes
-title: Upload Modes in Telerik UI for ASP.NET MVC helper for Kendo UI Upload component
+title: Modes
+page_title: Upload Modes in Telerik UI for ASP.NET MVC helper for Kendo UI Upload component
 description: Explanation about synchronous and asynchronous operation modes of Telerik UI for ASP.NET MVC wrappers for Kendo UI Upload widget.
 ---
 # Upload Modes

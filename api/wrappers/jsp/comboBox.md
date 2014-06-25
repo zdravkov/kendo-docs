@@ -1,5 +1,5 @@
 ---
-nav_title: comboBox
+title: comboBox
 ---
 
 # \<kendo:comboBox\>

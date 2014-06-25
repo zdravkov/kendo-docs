@@ -1,8 +1,8 @@
 ---
-nav_title: Appearance
-title: Instructions for Kendo UI DataViz Chart Widget appearance
+title: Appearance
+page_title: Instructions for Kendo UI DataViz Chart Widget appearance
 description: How to control the appearance of the chart, change the theme of the widget and manage the animated transitions.
-nav_position: 5
+position: 5
 ---
 
 ## Chart Appearance

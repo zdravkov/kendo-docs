@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesDefaultsBuilder
+title: SparklineSeriesDefaultsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SparklineSeriesDefaultsBuilder

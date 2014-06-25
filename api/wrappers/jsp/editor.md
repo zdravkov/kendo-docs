@@ -1,5 +1,5 @@
 ---
-nav_title: editor
+title: editor
 ---
 
 # \<kendo:editor\>

@@ -1,6 +1,6 @@
 ---
-nav_title: Intro to Building Apps with Kendo UI And PHP Part 1
-title: Intro tutorial for Kendo UI PHP app development
+title: Intro to Building Apps with Kendo UI And PHP Part 1
+page_title: Intro tutorial for Kendo UI PHP app development
 description: Learn step-by-step how to build your first Kendo UI PHP application.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: FX SlideIn
+title: FX SlideIn
 ---
 
 # SlideIn

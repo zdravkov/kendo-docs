@@ -1,5 +1,5 @@
 ---
-nav_title: Creating and Editing Orders Details
+title: Creating and Editing Orders Details
 ---
 
 # Creating and Editing Order Details - SalesHub

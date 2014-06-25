@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-pane-margin
+title: stockChart-navigator-pane-margin
 ---
 
 # \<kendo:stockChart-navigator-pane-margin\>

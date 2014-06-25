@@ -1,5 +1,5 @@
 ---
-nav_title: DropDownListEventBuilder
+title: DropDownListEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DropDownListEventBuilder

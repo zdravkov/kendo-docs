@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-valueAxisItem-majorGridLines
+title: sparkline-valueAxisItem-majorGridLines
 ---
 
 # \<kendo:sparkline-valueAxisItem-majorGridLines\>

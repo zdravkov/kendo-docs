@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-shape
+title: diagram-shape
 ---
 
 # \<kendo:diagram-shape\>

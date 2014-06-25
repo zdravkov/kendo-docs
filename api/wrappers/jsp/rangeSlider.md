@@ -1,5 +1,5 @@
 ---
-nav_title: rangeSlider
+title: rangeSlider
 ---
 
 # \<kendo:rangeSlider\>

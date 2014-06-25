@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerCurrentTimeMarker
+title: SchedulerCurrentTimeMarker
 ---
 
 # \Kendo\UI\SchedulerCurrentTimeMarker

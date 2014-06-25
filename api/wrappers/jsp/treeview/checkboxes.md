@@ -1,5 +1,5 @@
 ---
-nav_title: treeView-checkboxes
+title: treeView-checkboxes
 ---
 
 # \<kendo:treeView-checkboxes\>

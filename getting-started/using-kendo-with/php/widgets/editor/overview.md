@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Editor PHP class, server-side wrapper for Kendo UI Editor widget
+title: Overview
+page_title: How to use the Editor PHP class, server-side wrapper for Kendo UI Editor widget
 description: Getting started with Kendo UI Editor for PHP in quick steps - configure Kendo UI Editor widget and operate Kendo UI Editor events.
 ---
 

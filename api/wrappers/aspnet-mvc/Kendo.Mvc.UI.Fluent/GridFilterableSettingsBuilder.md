@@ -1,5 +1,5 @@
 ---
-nav_title: GridFilterableSettingsBuilder
+title: GridFilterableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridFilterableSettingsBuilder

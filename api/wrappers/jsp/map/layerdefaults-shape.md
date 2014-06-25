@@ -1,5 +1,5 @@
 ---
-nav_title: map-layerDefaults-shape
+title: map-layerDefaults-shape
 ---
 
 # \<kendo:map-layerDefaults-shape\>

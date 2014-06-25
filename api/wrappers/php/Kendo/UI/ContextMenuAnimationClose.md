@@ -1,5 +1,5 @@
 ---
-nav_title: ContextMenuAnimationClose
+title: ContextMenuAnimationClose
 ---
 
 # \Kendo\UI\ContextMenuAnimationClose

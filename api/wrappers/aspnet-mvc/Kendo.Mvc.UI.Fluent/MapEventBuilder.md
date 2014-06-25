@@ -1,5 +1,5 @@
 ---
-nav_title: MapEventBuilder
+title: MapEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapEventBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesDefaults-notes-label
+title: chart-seriesDefaults-notes-label
 ---
 
 # \<kendo:chart-seriesDefaults-notes-label\>

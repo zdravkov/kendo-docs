@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Kendo UI MobileSwitch HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile Switch widget
+title: Overview
+page_title: How to use the Kendo UI MobileSwitch HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile Switch widget
 description: Learn how to initialize Kendo UI MobileSwitch for ASP.NET MVC, handle Kendo UI MobileSwitch Events, access an existing switch with MobileSwitch HtmlHelper extension documentation.
 ---
 

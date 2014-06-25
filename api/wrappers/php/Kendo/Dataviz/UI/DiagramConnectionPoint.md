@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionPoint
+title: DiagramConnectionPoint
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionPoint

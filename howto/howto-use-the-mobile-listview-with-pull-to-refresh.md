@@ -1,5 +1,5 @@
 ---
-nav_title: Use the ListView of Kendo UI Mobile with pull-to-refresh
+title: Use the ListView of Kendo UI Mobile with pull-to-refresh
 ---
 
 # How-To: Use the ListView of Kendo UI Mobile with pull-to-refresh

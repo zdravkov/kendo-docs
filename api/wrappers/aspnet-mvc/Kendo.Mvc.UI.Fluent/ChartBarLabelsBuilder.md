@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBarLabelsBuilder
+title: ChartBarLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBarLabelsBuilder

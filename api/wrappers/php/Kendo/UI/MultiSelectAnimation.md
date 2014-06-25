@@ -1,5 +1,5 @@
 ---
-nav_title: MultiSelectAnimation
+title: MultiSelectAnimation
 ---
 
 # \Kendo\UI\MultiSelectAnimation

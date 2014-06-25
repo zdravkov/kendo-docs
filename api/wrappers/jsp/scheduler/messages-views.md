@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-messages-views
+title: scheduler-messages-views
 ---
 
 # \<kendo:scheduler-messages-views\>

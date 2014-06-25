@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-valueAxisItem-notes-label-border
+title: sparkline-valueAxisItem-notes-label-border
 ---
 
 # \<kendo:sparkline-valueAxisItem-notes-label-border\>

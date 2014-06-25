@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItemNotesIcon
+title: ChartValueAxisItemNotesIcon
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemNotesIcon

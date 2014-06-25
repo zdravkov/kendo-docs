@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Upload PHP class, server-side wrapper for Kendo UI Upload widget
+title: Overview
+page_title: How to use the Upload PHP class, server-side wrapper for Kendo UI Upload widget
 description: Learn how to bind Kendo UI Upload for PHP, handle Kendo UI Upload Events, access an existing upload.
 ---
 

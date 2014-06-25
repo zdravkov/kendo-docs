@@ -1,5 +1,5 @@
 ---
-nav_title: PagerMessages
+title: PagerMessages
 ---
 
 # \Kendo\UI\PagerMessages

@@ -1,5 +1,5 @@
 ---
-nav_title: TimePicker
+title: TimePicker
 ---
 
 # \Kendo\UI\TimePicker

@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceTransportRead
+title: DataSourceTransportRead
 ---
 
 # \Kendo\Data\DataSourceTransportRead

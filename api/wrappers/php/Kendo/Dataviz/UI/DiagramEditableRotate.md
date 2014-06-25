@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramEditableRotate
+title: DiagramEditableRotate
 ---
 
 # \Kendo\Dataviz\UI\DiagramEditableRotate

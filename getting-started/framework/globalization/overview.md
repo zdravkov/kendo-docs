@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of Globalization in Kendo UI framework
+title: Overview
+page_title: Overview of Globalization in Kendo UI framework
 description: Documentation how to define current culture settings, format number or date objects in the process of globalization.
-nav_position: 1
+position: 1
 ---
 # Kendo Globalization Overview
 

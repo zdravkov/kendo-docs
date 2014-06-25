@@ -1,5 +1,5 @@
 ---
-nav_title: Using Kendo with AngularJS
+title: Using Kendo with AngularJS
 ---
 
 # Using Kendo with AngularJS

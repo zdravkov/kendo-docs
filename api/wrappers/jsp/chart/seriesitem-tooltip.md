@@ -1,5 +1,5 @@
 ---
-nav_title: chart-seriesItem-tooltip
+title: chart-seriesItem-tooltip
 ---
 
 # \<kendo:chart-seriesItem-tooltip\>

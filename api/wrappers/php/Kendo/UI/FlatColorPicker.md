@@ -1,5 +1,5 @@
 ---
-nav_title: FlatColorPicker
+title: FlatColorPicker
 ---
 
 # \Kendo\UI\FlatColorPicker

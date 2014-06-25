@@ -1,5 +1,5 @@
 ---
-nav_title: linearGauge-scale-minorTicks
+title: linearGauge-scale-minorTicks
 ---
 
 # \<kendo:linearGauge-scale-minorTicks\>

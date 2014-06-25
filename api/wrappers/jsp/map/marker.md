@@ -1,5 +1,5 @@
 ---
-nav_title: map-marker
+title: map-marker
 ---
 
 # \<kendo:map-marker\>

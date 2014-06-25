@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemMinorTicks
+title: SparklineCategoryAxisItemMinorTicks
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemMinorTicks

@@ -1,6 +1,6 @@
 ---
-nav_title: Validation
-title: Validation guide for Telerik UI for ASP.NET MVC
+title: Validation
+page_title: Validation guide for Telerik UI for ASP.NET MVC
 description: Using Validation in MVC
 ---
 

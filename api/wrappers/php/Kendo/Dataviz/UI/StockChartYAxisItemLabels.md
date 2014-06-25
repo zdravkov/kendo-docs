@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartYAxisItemLabels
+title: StockChartYAxisItemLabels
 ---
 
 # \Kendo\Dataviz\UI\StockChartYAxisItemLabels

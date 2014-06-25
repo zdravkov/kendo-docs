@@ -1,6 +1,6 @@
 ---
-nav_title: Scroller
-title: Documentation for Kendo UI Mobile Scroller widget 
+title: Scroller
+page_title: Documentation for Kendo UI Mobile Scroller widget 
 description: How to achieve touch-friendly scrolling of the contents of a given DOM element by using Kendo UI Mobile Scroller Widget.
 ---
 

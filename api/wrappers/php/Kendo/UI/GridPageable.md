@@ -1,5 +1,5 @@
 ---
-nav_title: GridPageable
+title: GridPageable
 ---
 
 # \Kendo\UI\GridPageable

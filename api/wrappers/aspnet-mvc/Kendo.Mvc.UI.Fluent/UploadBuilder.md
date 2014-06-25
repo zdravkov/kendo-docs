@@ -1,5 +1,5 @@
 ---
-nav_title: UploadBuilder
+title: UploadBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.UploadBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: PivotConfigurator
+title: PivotConfigurator
 ---
 
 # \Kendo\UI\PivotConfigurator

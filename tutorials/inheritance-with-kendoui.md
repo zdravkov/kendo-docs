@@ -1,6 +1,6 @@
 ---
-nav_title: Inheritance With Kendo UI
-title: Intro tutorial to Javascript Inheritance with Kendo UI
+title: Inheritance With Kendo UI
+page_title: Intro tutorial to Javascript Inheritance with Kendo UI
 description: This tutorial will help you learn how to use Kendo UI Classes and master the basics of Javascript Inheritance with Kendo UI framework.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-seriesItem-target
+title: stockChart-seriesItem-target
 ---
 
 # \<kendo:stockChart-seriesItem-target\>

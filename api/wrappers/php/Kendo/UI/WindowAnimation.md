@@ -1,5 +1,5 @@
 ---
-nav_title: WindowAnimation
+title: WindowAnimation
 ---
 
 # \Kendo\UI\WindowAnimation

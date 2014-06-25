@@ -1,5 +1,5 @@
 ---
-nav_title: SplitterEventBuilder
+title: SplitterEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SplitterEventBuilder

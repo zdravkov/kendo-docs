@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-messages-recurrenceMessages
+title: scheduler-messages-recurrenceMessages
 ---
 
 # \<kendo:scheduler-messages-recurrenceMessages\>

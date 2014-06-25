@@ -1,5 +1,5 @@
 ---
-nav_title: CustomHierarchicalDataSourceSchemaBuilder
+title: CustomHierarchicalDataSourceSchemaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomHierarchicalDataSourceSchemaBuilder

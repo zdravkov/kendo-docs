@@ -1,6 +1,6 @@
 ---
-nav_title: Grid
-title: Server-side API documentation for Kendo UI jQuery Grid widget for ASP.NET MVC
+title: Grid
+page_title: Server-side API documentation for Kendo UI jQuery Grid widget for ASP.NET MVC
 description: Documentation and code examples about server-side and client-side API for Kendo UI Grid component.
 ---
 

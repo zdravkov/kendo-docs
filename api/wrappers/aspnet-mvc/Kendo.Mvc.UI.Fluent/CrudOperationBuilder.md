@@ -1,5 +1,5 @@
 ---
-nav_title: CrudOperationBuilder
+title: CrudOperationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CrudOperationBuilder

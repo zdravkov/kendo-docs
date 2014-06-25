@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesDefaultsBorder
+title: SparklineSeriesDefaultsBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsBorder

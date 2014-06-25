@@ -1,5 +1,5 @@
 ---
-nav_title: ServerCrudOperationBuilder
+title: ServerCrudOperationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ServerCrudOperationBuilder

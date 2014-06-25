@@ -1,5 +1,5 @@
 ---
-nav_title: tooltip-animation-close
+title: tooltip-animation-close
 ---
 
 # \<kendo:tooltip-animation-close\>

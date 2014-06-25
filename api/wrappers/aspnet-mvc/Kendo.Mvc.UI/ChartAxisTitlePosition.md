@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisTitlePosition
+title: ChartAxisTitlePosition
 ---
 
 # Kendo.Mvc.UI.ChartAxisTitlePosition

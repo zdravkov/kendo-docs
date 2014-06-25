@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-seriesDefaults-labels
+title: sparkline-seriesDefaults-labels
 ---
 
 # \<kendo:sparkline-seriesDefaults-labels\>

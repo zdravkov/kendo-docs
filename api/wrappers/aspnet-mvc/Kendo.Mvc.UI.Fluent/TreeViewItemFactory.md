@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewItemFactory
+title: TreeViewItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewItemFactory

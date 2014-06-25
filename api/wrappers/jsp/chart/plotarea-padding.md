@@ -1,5 +1,5 @@
 ---
-nav_title: chart-plotArea-padding
+title: chart-plotArea-padding
 ---
 
 # \<kendo:chart-plotArea-padding\>

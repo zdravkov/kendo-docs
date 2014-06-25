@@ -1,5 +1,5 @@
 ---
-nav_title: ChartNotePosition
+title: ChartNotePosition
 ---
 
 # Kendo.Mvc.UI.ChartNotePosition

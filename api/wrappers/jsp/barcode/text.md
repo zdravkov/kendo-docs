@@ -1,5 +1,5 @@
 ---
-nav_title: barcode-text
+title: barcode-text
 ---
 
 # \<kendo:barcode-text\>

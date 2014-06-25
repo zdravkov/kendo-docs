@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-yAxisItem-majorGridLines
+title: stockChart-yAxisItem-majorGridLines
 ---
 
 # \<kendo:stockChart-yAxisItem-majorGridLines\>

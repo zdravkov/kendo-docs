@@ -1,5 +1,5 @@
 ---
-nav_title: Introduction
+title: Introduction
 ---
 
 ## Downloading and Installing Telerik UI for JSP

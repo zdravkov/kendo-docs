@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.RangeSlider
-title: Configuration, methods and events of Kendo UI RangeSlider
+title: RangeSlider
+page_title: Configuration, methods and events of Kendo UI RangeSlider
 description: Easy configuration guide for the Range Slider widget and methods to enable/disable, set start and end value, or safely remove the widget from the DOM.
 ---
 

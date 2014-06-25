@@ -1,5 +1,5 @@
 ---
-nav_title: ChartScatterLineSeriesBuilder
+title: ChartScatterLineSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartScatterLineSeriesBuilder

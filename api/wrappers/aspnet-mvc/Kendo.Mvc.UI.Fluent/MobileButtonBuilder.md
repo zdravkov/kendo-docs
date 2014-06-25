@@ -1,5 +1,5 @@
 ---
-nav_title: MobileButtonBuilder
+title: MobileButtonBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileButtonBuilder

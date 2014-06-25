@@ -1,5 +1,5 @@
 ---
-nav_title: ChartLegendPosition
+title: ChartLegendPosition
 ---
 
 # Kendo.Mvc.UI.ChartLegendPosition

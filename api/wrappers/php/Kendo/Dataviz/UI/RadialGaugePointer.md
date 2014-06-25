@@ -1,5 +1,5 @@
 ---
-nav_title: RadialGaugePointer
+title: RadialGaugePointer
 ---
 
 # \Kendo\Dataviz\UI\RadialGaugePointer

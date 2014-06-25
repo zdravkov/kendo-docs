@@ -1,5 +1,5 @@
 ---
-nav_title: ClientHandlerDescriptor
+title: ClientHandlerDescriptor
 ---
 
 # Kendo.Mvc.ClientHandlerDescriptor

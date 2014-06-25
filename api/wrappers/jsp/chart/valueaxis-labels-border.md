@@ -1,5 +1,5 @@
 ---
-nav_title: chart-valueAxis-labels-border
+title: chart-valueAxis-labels-border
 ---
 
 # \<kendo:chart-valueAxis-labels-border\>

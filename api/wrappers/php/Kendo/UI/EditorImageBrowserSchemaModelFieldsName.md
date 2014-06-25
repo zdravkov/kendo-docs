@@ -1,5 +1,5 @@
 ---
-nav_title: EditorImageBrowserSchemaModelFieldsName
+title: EditorImageBrowserSchemaModelFieldsName
 ---
 
 # \Kendo\UI\EditorImageBrowserSchemaModelFieldsName

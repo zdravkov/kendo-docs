@@ -1,5 +1,5 @@
 ---
-nav_title: Ajax Editing
+title: Ajax Editing
 ---
 
 # Editing

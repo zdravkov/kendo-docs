@@ -1,5 +1,5 @@
 ---
-nav_title: SliderTooltip
+title: SliderTooltip
 ---
 
 # \Kendo\UI\SliderTooltip

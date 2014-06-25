@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxisItem-labels-dateFormats
+title: chart-categoryAxisItem-labels-dateFormats
 ---
 
 # \<kendo:chart-categoryAxisItem-labels-dateFormats\>

@@ -1,5 +1,5 @@
 ---
-nav_title: DateTimePicker
+title: DateTimePicker
 ---
 
 # \Kendo\UI\DateTimePicker

@@ -1,5 +1,5 @@
 ---
-nav_title: RadialGaugeBuilder
+title: RadialGaugeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.RadialGaugeBuilder

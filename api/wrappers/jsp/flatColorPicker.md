@@ -1,5 +1,5 @@
 ---
-nav_title: flatColorPicker
+title: flatColorPicker
 ---
 
 # \<kendo:flatColorPicker\>

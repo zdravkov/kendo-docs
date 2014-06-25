@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisLabelsBuilder
+title: ChartAxisLabelsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisLabelsBuilder

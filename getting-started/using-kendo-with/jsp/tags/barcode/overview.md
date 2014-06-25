@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use Barcode JSP tag | Kendo UI documentation
+title: Overview
+page_title: How to use Barcode JSP tag | Kendo UI documentation
 description: User Guide for server-side wrapper for Kendo UI Barcode for JSP.
 ---
 

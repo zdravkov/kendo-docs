@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeConnectorBuilder
+title: DiagramShapeConnectorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramShapeConnectorBuilder

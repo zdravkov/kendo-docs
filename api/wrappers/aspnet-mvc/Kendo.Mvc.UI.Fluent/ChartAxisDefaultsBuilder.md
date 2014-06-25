@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisDefaultsBuilder
+title: ChartAxisDefaultsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisDefaultsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionPointBuilder
+title: DiagramConnectionPointBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramConnectionPointBuilder

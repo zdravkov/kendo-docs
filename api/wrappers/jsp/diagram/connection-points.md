@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-connection-points
+title: diagram-connection-points
 ---
 
 # \<kendo:diagram-connection-points\>

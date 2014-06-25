@@ -1,5 +1,5 @@
 ---
-nav_title: Configure Project Wizard
+title: Configure Project Wizard
 ---
 
 #Configure Project Wizard

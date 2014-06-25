@@ -1,6 +1,6 @@
 ---
-nav_title: Checked
-title: Checked binding in Kendo UI MVVM | Kendo UI Documentation
+title: Checked
+page_title: Checked binding in Kendo UI MVVM | Kendo UI Documentation
 description: Based on the value from the View-model, checked binding in Kendo UI MVVM changes the behaviour of a checkbox or a radio button.
 ---
 

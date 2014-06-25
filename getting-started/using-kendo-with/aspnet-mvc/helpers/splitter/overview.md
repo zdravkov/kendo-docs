@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Code and examples how to use Splitter HtmlHelper extension | Kendo UI documentation
+title: Overview
+page_title: Code and examples how to use Splitter HtmlHelper extension | Kendo UI documentation
 description: Easy to follow steps to explore the capabilities of Splitter HtmlHelper extension for Kendo UI Splitter for ASP.NET MVC Widget.
 ---
 

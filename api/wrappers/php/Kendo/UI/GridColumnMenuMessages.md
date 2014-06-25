@@ -1,5 +1,5 @@
 ---
-nav_title: GridColumnMenuMessages
+title: GridColumnMenuMessages
 ---
 
 # \Kendo\UI\GridColumnMenuMessages

@@ -1,5 +1,5 @@
 ---
-nav_title: slider
+title: slider
 ---
 
 # \<kendo:slider\>

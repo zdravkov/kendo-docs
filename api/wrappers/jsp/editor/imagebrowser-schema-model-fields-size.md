@@ -1,5 +1,5 @@
 ---
-nav_title: editor-imageBrowser-schema-model-fields-size
+title: editor-imageBrowser-schema-model-fields-size
 ---
 
 # \<kendo:editor-imageBrowser-schema-model-fields-size\>

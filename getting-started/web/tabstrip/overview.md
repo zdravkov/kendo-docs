@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of Tabstrip UI widget | Kendo UI Documentation
+title: Overview
+page_title: Overview of Tabstrip UI widget | Kendo UI Documentation
 description: This documentation helps you get started with TabStrip, initialize the widget and how to load the content with AJAX.
 ---
 

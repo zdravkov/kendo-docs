@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemNotesDataItemIcon
+title: ChartCategoryAxisItemNotesDataItemIcon
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemNotesDataItemIcon

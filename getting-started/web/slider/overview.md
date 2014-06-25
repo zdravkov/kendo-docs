@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of HTML5 Slider UI widget in Kendo UI framework
+title: Overview
+page_title: Overview of HTML5 Slider UI widget in Kendo UI framework
 description: Use Slider widget in Kendo UI framework to present cross-browser consistent experiences, read the documentation to get started.
 ---
 

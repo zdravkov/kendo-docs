@@ -1,8 +1,8 @@
 ---
-nav_title: Walkthrough
-title: Detailed documentation for Kendo UI Grid Widget
+title: Walkthrough
+page_title: Detailed documentation for Kendo UI Grid Widget
 description: This walkthrough section will guide you how to create a grid, add HTML table and control grid widget's features.
-nav_position: 2
+position: 2
 ---
 
 The Kendo UI Grid is a powerful piece of the Kendo UI framework and an essential part of almost any user interface.  Kendo UI provides a grid component that is quick to setup and packed with features like sorting, grouping, paging and editing.

@@ -1,6 +1,6 @@
 ---
-nav_title: Introduction
-nav_position: 1
+title: Introduction
+position: 1
 ---
 
 # Tutorial: Kendo Music Store: Introduction

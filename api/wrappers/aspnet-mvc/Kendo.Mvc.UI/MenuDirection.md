@@ -1,5 +1,5 @@
 ---
-nav_title: MenuDirection
+title: MenuDirection
 ---
 
 # Kendo.Mvc.UI.MenuDirection

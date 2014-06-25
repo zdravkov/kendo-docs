@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Window
-title: Configuration, methods and events of Kendo UI Window
+title: Window
+page_title: Configuration, methods and events of Kendo UI Window
 description: How to initialize a Window UI widget and configure its behaviors, center a window, set its content and toggle the state of the UI widget.
 ---
 

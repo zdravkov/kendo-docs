@@ -1,5 +1,5 @@
 ---
-nav_title: CustomHierarchicalDataSourceModelDescriptorFactory
+title: CustomHierarchicalDataSourceModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomHierarchicalDataSourceModelDescriptorFactory

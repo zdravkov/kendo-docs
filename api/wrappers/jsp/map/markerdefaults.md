@@ -1,5 +1,5 @@
 ---
-nav_title: map-markerDefaults
+title: map-markerDefaults
 ---
 
 # \<kendo:map-markerDefaults\>

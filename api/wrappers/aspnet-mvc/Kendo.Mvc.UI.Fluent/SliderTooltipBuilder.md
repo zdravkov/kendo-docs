@@ -1,5 +1,5 @@
 ---
-nav_title: SliderTooltipBuilder
+title: SliderTooltipBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SliderTooltipBuilder

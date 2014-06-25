@@ -1,5 +1,5 @@
 ---
-nav_title: multiSelect-animation
+title: multiSelect-animation
 ---
 
 # \<kendo:multiSelect-animation\>

@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerStyleStrokeSettingsBuilder
+title: MapLayerStyleStrokeSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapLayerStyleStrokeSettingsBuilder

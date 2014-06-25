@@ -1,5 +1,5 @@
 ---
-nav_title: ProgressBarBuilder
+title: ProgressBarBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ProgressBarBuilder

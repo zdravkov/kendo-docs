@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPlotAreaBorder
+title: ChartPlotAreaBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartPlotAreaBorder

@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Scheduler
-title: Configuration, methods and events of Kendo UI Scheduler
+title: Scheduler
+page_title: Configuration, methods and events of Kendo UI Scheduler
 description: How to configure and control methods in Scheduler UI widget, which events to use to open, close, change, select.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: Using Kendo With Twitter Bootstrap
+title: Using Kendo With Twitter Bootstrap
 ---
 
 # Using Kendo with Twitter Bootstrap

@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-xAxis
+title: stockChart-xAxis
 ---
 
 # \<kendo:stockChart-xAxis\>

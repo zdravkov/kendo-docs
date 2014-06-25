@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPanePadding
+title: ChartPanePadding
 ---
 
 # \Kendo\Dataviz\UI\ChartPanePadding

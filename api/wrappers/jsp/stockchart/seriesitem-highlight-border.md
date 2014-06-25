@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-seriesItem-highlight-border
+title: stockChart-seriesItem-highlight-border
 ---
 
 # \<kendo:stockChart-seriesItem-highlight-border\>

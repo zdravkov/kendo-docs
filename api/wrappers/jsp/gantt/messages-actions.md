@@ -1,5 +1,5 @@
 ---
-nav_title: gantt-messages-actions
+title: gantt-messages-actions
 ---
 
 # \<kendo:gantt-messages-actions\>

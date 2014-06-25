@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-valueAxisItem-crosshair-tooltip-border
+title: stockChart-valueAxisItem-crosshair-tooltip-border
 ---
 
 # \<kendo:stockChart-valueAxisItem-crosshair-tooltip-border\>

@@ -1,6 +1,6 @@
 ---
-nav_title: Globalization
-title: Globalization guide for Telerik UI for ASP.NET MVC
+title: Globalization
+page_title: Globalization guide for Telerik UI for ASP.NET MVC
 description: Globalize, internationalize a Telerik UI for ASP.NET MVC application
 ---
 

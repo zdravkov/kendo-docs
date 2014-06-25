@@ -1,5 +1,5 @@
 ---
-nav_title: listView
+title: listView
 ---
 
 # \<kendo:listView\>

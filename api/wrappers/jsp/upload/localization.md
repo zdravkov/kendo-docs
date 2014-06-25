@@ -1,5 +1,5 @@
 ---
-nav_title: upload-localization
+title: upload-localization
 ---
 
 # \<kendo:upload-localization\>

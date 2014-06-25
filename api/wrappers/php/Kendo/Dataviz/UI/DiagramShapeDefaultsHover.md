@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsHover
+title: DiagramShapeDefaultsHover
 ---
 
 # \Kendo\Dataviz\UI\DiagramShapeDefaultsHover

@@ -1,5 +1,5 @@
 ---
-nav_title: map-layer
+title: map-layer
 ---
 
 # \<kendo:map-layer\>

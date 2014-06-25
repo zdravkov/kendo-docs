@@ -1,5 +1,5 @@
 ---
-nav_title: Sparkline
+title: Sparkline
 ---
 
 # \Kendo\Dataviz\UI\Sparkline

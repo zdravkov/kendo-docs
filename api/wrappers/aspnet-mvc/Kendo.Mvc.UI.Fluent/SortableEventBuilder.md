@@ -1,5 +1,5 @@
 ---
-nav_title: SortableEventBuilder
+title: SortableEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SortableEventBuilder

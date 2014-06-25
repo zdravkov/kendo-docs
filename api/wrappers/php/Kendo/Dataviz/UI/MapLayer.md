@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayer
+title: MapLayer
 ---
 
 # \Kendo\Dataviz\UI\MapLayer

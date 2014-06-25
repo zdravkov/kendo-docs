@@ -1,5 +1,5 @@
 ---
-nav_title: chart-pane-border
+title: chart-pane-border
 ---
 
 # \<kendo:chart-pane-border\>

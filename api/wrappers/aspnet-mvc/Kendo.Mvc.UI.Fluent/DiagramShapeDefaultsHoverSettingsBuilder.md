@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsHoverSettingsBuilder
+title: DiagramShapeDefaultsHoverSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramShapeDefaultsHoverSettingsBuilder

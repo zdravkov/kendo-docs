@@ -1,5 +1,5 @@
 ---
-nav_title: QRCode
+title: QRCode
 ---
 
 # \Kendo\Dataviz\UI\QRCode

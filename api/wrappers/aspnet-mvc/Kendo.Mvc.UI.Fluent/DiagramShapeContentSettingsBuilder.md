@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeContentSettingsBuilder
+title: DiagramShapeContentSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramShapeContentSettingsBuilder

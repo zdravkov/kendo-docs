@@ -1,5 +1,5 @@
 ---
-nav_title: grid-filterable-messages
+title: grid-filterable-messages
 ---
 
 # \<kendo:grid-filterable-messages\>

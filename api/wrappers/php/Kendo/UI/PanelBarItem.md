@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBarItem
+title: PanelBarItem
 ---
 
 # \Kendo\UI\PanelBarItem

@@ -1,6 +1,6 @@
 ---
-nav_title: Native Scrolling Support
-title: Documentation for Kendo UI Mobile Application Native Scrolling configuration option
+title: Native Scrolling Support
+page_title: Documentation for Kendo UI Mobile Application Native Scrolling configuration option
 description: Kendo UI Mobile Application Native Scrolling specifics described
 ---
 

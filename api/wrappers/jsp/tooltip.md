@@ -1,5 +1,5 @@
 ---
-nav_title: tooltip
+title: tooltip
 ---
 
 # \<kendo:tooltip\>

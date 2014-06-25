@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the DropDownList PHP class, server-side wrapper for Kendo UI DropDownList widget
+title: Overview
+page_title: How to use the DropDownList PHP class, server-side wrapper for Kendo UI DropDownList widget
 description: Learn how to bind Kendo UI DropDownList for PHP, handle Kendo UI DropDownList Events, access an existing dropdownlist.
 ---
 

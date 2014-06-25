@@ -1,5 +1,5 @@
 ---
-nav_title: GridColumnFactory
+title: GridColumnFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.GridColumnFactory

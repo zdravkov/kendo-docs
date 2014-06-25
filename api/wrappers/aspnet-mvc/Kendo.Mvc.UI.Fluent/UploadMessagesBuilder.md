@@ -1,5 +1,5 @@
 ---
-nav_title: UploadMessagesBuilder
+title: UploadMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.UploadMessagesBuilder

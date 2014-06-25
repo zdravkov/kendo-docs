@@ -1,5 +1,5 @@
 ---
-nav_title: Upload
+title: Upload
 ---
 
 # \Kendo\UI\Upload

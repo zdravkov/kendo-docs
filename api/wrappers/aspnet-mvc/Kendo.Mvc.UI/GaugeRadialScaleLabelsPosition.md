@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeRadialScaleLabelsPosition
+title: GaugeRadialScaleLabelsPosition
 ---
 
 # Kendo.Mvc.UI.GaugeRadialScaleLabelsPosition

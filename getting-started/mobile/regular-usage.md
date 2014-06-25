@@ -1,6 +1,6 @@
 ---
-nav_title: Using with Kendo UI Web
-title: How to guide on using mobile widgets outside of a Kendo UI Mobile application container
+title: Using with Kendo UI Web
+page_title: How to guide on using mobile widgets outside of a Kendo UI Mobile application container
 ---
 
 Starting with the 2014 Q1 release, the Kendo UI Mobile widgets can be used alongside the Kendo UI Web widgets in a regular web page, *without an active mobile application instance*.

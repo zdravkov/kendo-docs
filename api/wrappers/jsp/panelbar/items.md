@@ -1,5 +1,5 @@
 ---
-nav_title: panelBar-items
+title: panelBar-items
 ---
 
 # \<kendo:panelBar-items\>

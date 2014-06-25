@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of Editor UI widget | Kendo UI Documentation
+title: Overview
+page_title: Overview of Editor UI widget | Kendo UI Documentation
 description: The documentation guide will help you initialize Kendo web editor and proceed with its configuration.
-nav_position: 1
+position: 1
 ---
 
 # Editor Overview

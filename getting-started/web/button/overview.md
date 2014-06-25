@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Summary of Kendo UI Button functionality
+title: Overview
+page_title: Summary of Kendo UI Button functionality
 description: Find out how to use the Kendo UI Button widget
 ---
 

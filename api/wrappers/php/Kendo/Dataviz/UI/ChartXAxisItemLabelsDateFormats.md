@@ -1,5 +1,5 @@
 ---
-nav_title: ChartXAxisItemLabelsDateFormats
+title: ChartXAxisItemLabelsDateFormats
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemLabelsDateFormats

@@ -1,6 +1,6 @@
 ---
-nav_title: Use CORS with All Browsers
-title: Using Cross-origin resource sharing with modern browsers | Kendo UI Docs
+title: Use CORS with All Browsers
+page_title: Using Cross-origin resource sharing with modern browsers | Kendo UI Docs
 description: This how-to article explains how you can use CORS technology for the web.
 ---
 # How To: Use CORS with All (Modern) Browsers

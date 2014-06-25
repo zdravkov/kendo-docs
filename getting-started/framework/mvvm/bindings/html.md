@@ -1,6 +1,6 @@
 ---
-nav_title: Html
-title: HTML binding in Kendo UI MVVM | Kendo UI Documentation
+title: Html
+page_title: HTML binding in Kendo UI MVVM | Kendo UI Documentation
 description: HTML binding in Kendo UI MVVM, update and set the HTML of the target DOM element by changing the View-Model value.
 ---
 

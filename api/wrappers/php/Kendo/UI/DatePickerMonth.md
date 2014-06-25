@@ -1,5 +1,5 @@
 ---
-nav_title: DatePickerMonth
+title: DatePickerMonth
 ---
 
 # \Kendo\UI\DatePickerMonth

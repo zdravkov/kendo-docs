@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Group
+title: Group
 ---
 
 # kendo.dataviz.diagram.Group

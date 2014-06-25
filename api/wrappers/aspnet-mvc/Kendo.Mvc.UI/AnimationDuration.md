@@ -1,5 +1,5 @@
 ---
-nav_title: AnimationDuration
+title: AnimationDuration
 ---
 
 # Kendo.Mvc.UI.AnimationDuration

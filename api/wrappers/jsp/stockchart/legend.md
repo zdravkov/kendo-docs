@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-legend
+title: stockChart-legend
 ---
 
 # \<kendo:stockChart-legend\>

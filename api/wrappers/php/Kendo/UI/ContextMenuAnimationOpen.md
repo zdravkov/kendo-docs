@@ -1,5 +1,5 @@
 ---
-nav_title: ContextMenuAnimationOpen
+title: ContextMenuAnimationOpen
 ---
 
 # \Kendo\UI\ContextMenuAnimationOpen

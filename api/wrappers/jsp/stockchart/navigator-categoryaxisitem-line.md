@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-categoryAxisItem-line
+title: stockChart-navigator-categoryAxisItem-line
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-line\>

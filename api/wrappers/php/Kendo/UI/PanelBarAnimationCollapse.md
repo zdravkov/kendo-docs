@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBarAnimationCollapse
+title: PanelBarAnimationCollapse
 ---
 
 # \Kendo\UI\PanelBarAnimationCollapse

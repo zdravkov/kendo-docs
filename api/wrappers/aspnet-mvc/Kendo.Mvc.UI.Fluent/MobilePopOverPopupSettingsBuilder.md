@@ -1,5 +1,5 @@
 ---
-nav_title: MobilePopOverPopupSettingsBuilder
+title: MobilePopOverPopupSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobilePopOverPopupSettingsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: GridDataKeyBuilder
+title: GridDataKeyBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridDataKeyBuilder

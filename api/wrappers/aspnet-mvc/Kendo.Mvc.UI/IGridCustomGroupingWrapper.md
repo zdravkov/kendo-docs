@@ -1,5 +1,5 @@
 ---
-nav_title: IGridCustomGroupingWrapper
+title: IGridCustomGroupingWrapper
 ---
 
 # Kendo.Mvc.UI.IGridCustomGroupingWrapper

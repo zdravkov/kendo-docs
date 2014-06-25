@@ -1,5 +1,5 @@
 ---
-nav_title: UploadAsyncSettingsBuilder
+title: UploadAsyncSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.UploadAsyncSettingsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: ReadOnlyAjaxDataSourceBuilder
+title: ReadOnlyAjaxDataSourceBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ReadOnlyAjaxDataSourceBuilder

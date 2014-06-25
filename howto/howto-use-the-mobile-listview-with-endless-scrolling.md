@@ -1,5 +1,5 @@
 ---
-nav_title: Use the ListView of Kendo UI Mobile with endless scrolling
+title: Use the ListView of Kendo UI Mobile with endless scrolling
 ---
 
 # How-To: Use the ListView of Kendo UI Mobile with endless scrolling

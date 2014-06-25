@@ -2,7 +2,7 @@ module Jekyll
 
     class NavigationGenerator < Generator
         def initialize(config)
-            @mapping = config['mapping'] || {}
+            @navigation = Hash[(config['navigation'] || {}).map { |key, value| [/^#{key.gsub('*', '.*?')}$/, value] }]
         end
 
         def generate(site)
@@ -27,13 +27,19 @@ module Jekyll
                     item = node.find { |n| n['path'] == segment }
 
                     unless item
-                        item = { 'path' => segment, 'text' => @mapping[segment] || segment }
+
+                        item = { 'path' => segment }
 
                         if index == segments.size - 1
-                            item['position'] = page.data['nav_position'] if page.data['nav_position']
-                            item['text'] = page.data['nav_title'].split('.').last if page.data['nav_title']
+                            item['position'] = page.data['position'] if page.data['position']
+                            item['text'] = page.data['title']
                         else
+                            path = segments.slice(1,index).join('/')
+                            navigation_entry =  @navigation.find { |key, value| path =~ key }
+                            mapping = navigation_entry ? navigation_entry[1] : {}
+                            item['text'] = mapping['title'] || segment
                             item['items'] = []
+                            item['position'] = mapping['position'] if mapping.has_key?('position')
                         end
 
                         node << item
@@ -64,7 +70,8 @@ module Jekyll
         def sort!(items)
             items.each {|item| sort!(item['items']) if item['items'] }
 
-            items.sort_by! {|a| [a.has_key?('items') ? -1:1, a['position'] || 1000000, a['text'].downcase]}
+            # sorty by position, directory or file and then title (ignoring case)
+            items.sort_by! {|a| [a['position'] || 1000000, a.has_key?('items') ? -1 : 1,  a['text'].downcase]}
         end
 
     end

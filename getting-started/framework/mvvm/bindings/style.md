@@ -1,6 +1,6 @@
 ---
-nav_title: Style
-title: Style binding in Kendo UI MVVM | Kendo UI Documentation
+title: Style
+page_title: Style binding in Kendo UI MVVM | Kendo UI Documentation
 description: How to set the style attributes of the target DOM element by using the style binding in Kendo UI MVVM.
 ---
 

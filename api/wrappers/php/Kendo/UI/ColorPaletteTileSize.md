@@ -1,5 +1,5 @@
 ---
-nav_title: ColorPaletteTileSize
+title: ColorPaletteTileSize
 ---
 
 # \Kendo\UI\ColorPaletteTileSize

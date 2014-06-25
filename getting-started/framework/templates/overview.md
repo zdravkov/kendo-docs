@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of templates component in Kendo UI framework
+title: Overview
+page_title: Overview of templates component in Kendo UI framework
 description: How to use HTML encoding and compilation in Templates component in Kendo UI framework.
-nav_position: 1
+position: 1
 ---
 
 # Kendo UI Templates Overview

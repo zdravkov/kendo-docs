@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesDefaultsNotes
+title: ChartSeriesDefaultsNotes
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesDefaultsNotes

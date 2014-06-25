@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-footer
+title: scheduler-footer
 ---
 
 # \<kendo:scheduler-footer\>

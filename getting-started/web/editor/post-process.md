@@ -1,8 +1,8 @@
 ---
-nav_title: Post-processing
-title: Post-processing the editor content | Kendo UI Documentation
+title: Post-processing
+page_title: Post-processing the editor content | Kendo UI Documentation
 description: The documentation guide will show how to post-process the Editor content so that it fits your needs.
-nav_position: 3
+position: 3
 ---
 
 # Post-processing the editor content

@@ -1,5 +1,5 @@
 ---
-nav_title: Upgrade Wizard
+title: Upgrade Wizard
 ---
 
 #Upgrade Wizard

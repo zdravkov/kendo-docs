@@ -1,5 +1,5 @@
 ---
-nav_title: Keyboard Support in Kendo UI Web
+title: Keyboard Support in Kendo UI Web
 related: a11y-accessibility-overview, a11y-wai-aria-support-in-kendo
 ---
 

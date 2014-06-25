@@ -1,5 +1,5 @@
 ---
-nav_title: pivotConfigurator-messages
+title: pivotConfigurator-messages
 ---
 
 # \<kendo:pivotConfigurator-messages\>

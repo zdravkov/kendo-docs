@@ -1,5 +1,5 @@
 ---
-nav_title: map-layer-tooltip-animation-close
+title: map-layer-tooltip-animation-close
 ---
 
 # \<kendo:map-layer-tooltip-animation-close\>

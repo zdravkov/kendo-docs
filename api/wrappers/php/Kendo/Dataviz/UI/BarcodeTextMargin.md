@@ -1,5 +1,5 @@
 ---
-nav_title: BarcodeTextMargin
+title: BarcodeTextMargin
 ---
 
 # \Kendo\Dataviz\UI\BarcodeTextMargin

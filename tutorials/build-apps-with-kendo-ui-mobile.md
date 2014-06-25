@@ -1,6 +1,6 @@
 ---
-nav_title: Intro to Building Apps with Kendo UI Mobile
-title: Tutorial for building mobile apps with Kendo UI HTML5 Mobile framework
+title: Intro to Building Apps with Kendo UI Mobile
+page_title: Tutorial for building mobile apps with Kendo UI HTML5 Mobile framework
 description: This tutorial helps you get familiar with the principles of building apps with Kendo UI Mobile framework.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: notification-position
+title: notification-position
 ---
 
 # \<kendo:notification-position\>

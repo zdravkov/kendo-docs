@@ -1,5 +1,5 @@
 ---
-nav_title: ReadOnlyCustomDataSourceModelDescriptorFactory
+title: ReadOnlyCustomDataSourceModelDescriptorFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.ReadOnlyCustomDataSourceModelDescriptorFactory

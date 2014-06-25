@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: HierarchicalDataSource component in Kendo UI framework
+title: Overview
+page_title: HierarchicalDataSource component in Kendo UI framework
 description: See how to represent hierarchical data using HierarchicalDataSource component, an extension of Kendo UI DataSource.
 ---
 

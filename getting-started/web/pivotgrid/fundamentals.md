@@ -1,6 +1,6 @@
 ---
-nav_title: PivotGrid Fundamentals
-title: Fundamental concepts related to the PivotGrid widget
+title: PivotGrid Fundamentals
+page_title: Fundamental concepts related to the PivotGrid widget
 description: Review of all fundamental contepts related to the PivotGrid widget
 ---
 

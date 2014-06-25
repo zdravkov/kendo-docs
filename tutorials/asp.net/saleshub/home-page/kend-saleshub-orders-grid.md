@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Orders Grid
+title: Creating the Orders Grid
 ---
 
 # Creating the Orders Grid - SalesHub

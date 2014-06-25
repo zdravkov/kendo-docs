@@ -1,5 +1,5 @@
 ---
-nav_title: CalendarSelectionSettingsBuilder
+title: CalendarSelectionSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CalendarSelectionSettingsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: window
+title: window
 ---
 
 # \<kendo:window\>

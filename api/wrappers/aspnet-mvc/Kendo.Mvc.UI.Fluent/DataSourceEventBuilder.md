@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceEventBuilder
+title: DataSourceEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceEventBuilder

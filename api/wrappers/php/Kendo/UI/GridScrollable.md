@@ -1,5 +1,5 @@
 ---
-nav_title: GridScrollable
+title: GridScrollable
 ---
 
 # \Kendo\UI\GridScrollable

@@ -1,5 +1,5 @@
 ---
-nav_title: MobileActionSheetItemBuilder
+title: MobileActionSheetItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileActionSheetItemBuilder

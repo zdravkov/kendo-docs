@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the TabStrip PHP class, server-side wrapper for Kendo UI TabStrip widget
+title: Overview
+page_title: How to use the TabStrip PHP class, server-side wrapper for Kendo UI TabStrip widget
 description: Learn how to create Kendo UI TabStrip for PHP, handle Kendo UI TabStrip Events, access an existing tabstrip.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartCategoryAxisItemNotesDataItemLabelBorder
+title: StockChartCategoryAxisItemNotesDataItemLabelBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemNotesDataItemLabelBorder

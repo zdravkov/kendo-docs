@@ -1,5 +1,5 @@
 ---
-nav_title: map
+title: map
 ---
 
 # \<kendo:map\>

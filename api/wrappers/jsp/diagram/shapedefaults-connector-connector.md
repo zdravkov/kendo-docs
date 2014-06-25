@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-shapeDefaults-connector-connector
+title: diagram-shapeDefaults-connector-connector
 ---
 
 # \<kendo:diagram-shapeDefaults-connector-connector\>

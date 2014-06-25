@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Summary of Splitter UI widget primary functions
+title: Overview
+page_title: Summary of Splitter UI widget primary functions
 description: Find out how to use the Splitter UI widget and achieve complex layouts.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: GridEventBuilder
+title: GridEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridEventBuilder

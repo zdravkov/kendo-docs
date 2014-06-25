@@ -1,5 +1,5 @@
 ---
-nav_title: gantt
+title: gantt
 ---
 
 # \<kendo:gantt\>

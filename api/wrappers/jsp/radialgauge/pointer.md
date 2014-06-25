@@ -1,5 +1,5 @@
 ---
-nav_title: radialGauge-pointer
+title: radialGauge-pointer
 ---
 
 # \<kendo:radialGauge-pointer\>

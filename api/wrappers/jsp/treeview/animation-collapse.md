@@ -1,5 +1,5 @@
 ---
-nav_title: treeView-animation-collapse
+title: treeView-animation-collapse
 ---
 
 # \<kendo:treeView-animation-collapse\>

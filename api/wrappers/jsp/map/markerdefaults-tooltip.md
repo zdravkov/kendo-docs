@@ -1,5 +1,5 @@
 ---
-nav_title: map-markerDefaults-tooltip
+title: map-markerDefaults-tooltip
 ---
 
 # \<kendo:map-markerDefaults-tooltip\>

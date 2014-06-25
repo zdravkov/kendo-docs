@@ -1,5 +1,5 @@
 ---
-nav_title: MobileApplicationBuilder
+title: MobileApplicationBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileApplicationBuilder

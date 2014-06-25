@@ -1,5 +1,5 @@
 ---
-nav_title: MobileScrollViewEventBuilder
+title: MobileScrollViewEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileScrollViewEventBuilder

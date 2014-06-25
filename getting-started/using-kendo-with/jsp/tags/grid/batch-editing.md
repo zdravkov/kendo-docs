@@ -1,5 +1,5 @@
 ---
-nav_title: Batch Editing
+title: Batch Editing
 ---
 
 # Cell Editing and Batch Updates

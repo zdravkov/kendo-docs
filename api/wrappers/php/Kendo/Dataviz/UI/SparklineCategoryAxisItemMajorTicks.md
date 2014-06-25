@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemMajorTicks
+title: SparklineCategoryAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemMajorTicks

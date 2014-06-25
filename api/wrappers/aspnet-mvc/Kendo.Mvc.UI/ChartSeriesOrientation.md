@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesOrientation
+title: ChartSeriesOrientation
 ---
 
 # Kendo.Mvc.UI.ChartSeriesOrientation

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemMarkersBorder
+title: ChartSeriesItemMarkersBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemMarkersBorder

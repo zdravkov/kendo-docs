@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGaugeScaleMajorTicks
+title: LinearGaugeScaleMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeScaleMajorTicks

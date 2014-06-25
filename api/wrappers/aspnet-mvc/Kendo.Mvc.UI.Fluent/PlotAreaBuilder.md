@@ -1,5 +1,5 @@
 ---
-nav_title: PlotAreaBuilder
+title: PlotAreaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PlotAreaBuilder

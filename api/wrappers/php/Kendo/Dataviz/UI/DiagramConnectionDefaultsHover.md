@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionDefaultsHover
+title: DiagramConnectionDefaultsHover
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionDefaultsHover

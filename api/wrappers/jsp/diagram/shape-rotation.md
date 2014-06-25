@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-shape-rotation
+title: diagram-shape-rotation
 ---
 
 # \<kendo:diagram-shape-rotation\>

@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-pane-title-border
+title: stockChart-pane-title-border
 ---
 
 # \<kendo:stockChart-pane-title-border\>

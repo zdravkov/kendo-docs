@@ -1,5 +1,5 @@
 ---
-nav_title: GridToolBarSaveCommandBuilder
+title: GridToolBarSaveCommandBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridToolBarSaveCommandBuilder

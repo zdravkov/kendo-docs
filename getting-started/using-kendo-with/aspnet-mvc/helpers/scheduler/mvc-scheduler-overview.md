@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Scheduler HtmlHelper extension | Kendo UI documentation
+title: Overview
+page_title: Scheduler HtmlHelper extension | Kendo UI documentation
 description: How to add Scheduler HtmlHelper extension for Kendo UI Scheduler widget and operate values, access and existing server-side wrapper.
 ---
 

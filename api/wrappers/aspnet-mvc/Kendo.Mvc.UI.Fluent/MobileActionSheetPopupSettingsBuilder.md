@@ -1,5 +1,5 @@
 ---
-nav_title: MobileActionSheetPopupSettingsBuilder
+title: MobileActionSheetPopupSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileActionSheetPopupSettingsBuilder

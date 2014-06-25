@@ -1,8 +1,8 @@
 ---
-nav_title: Editing
-title: Documentation for enabling editing in Grid UI widget
+title: Editing
+page_title: Documentation for enabling editing in Grid UI widget
 description: Which steps to follow in order to enable the editing support of Kendo UI jQuery grid widget.
-nav_position: 3
+position: 3
 ---
 
 # Grid Editing

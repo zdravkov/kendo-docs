@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGaugeScaleLabelsBorder
+title: LinearGaugeScaleLabelsBorder
 ---
 
 # \Kendo\Dataviz\UI\LinearGaugeScaleLabelsBorder

@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-categoryAxisItem-minorTicks
+title: stockChart-navigator-categoryAxisItem-minorTicks
 ---
 
 # \<kendo:stockChart-navigator-categoryAxisItem-minorTicks\>

@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramBuilder
+title: DiagramBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramBuilder

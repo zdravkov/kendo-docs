@@ -1,5 +1,5 @@
 ---
-nav_title: GridEditActionCommandBuilder
+title: GridEditActionCommandBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridEditActionCommandBuilder

@@ -1,8 +1,8 @@
 ---
-nav_title: Tile layers
-title: Documentation for Map widget in Kendo UI DataViz
+title: Tile layers
+page_title: Documentation for Map widget in Kendo UI DataViz
 description: How to create and configure tile layers for the Kendo UI Map widgets.
-nav_position: 1
+position: 1
 ---
 
 # Map layers

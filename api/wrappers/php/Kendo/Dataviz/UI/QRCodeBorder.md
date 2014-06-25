@@ -1,5 +1,5 @@
 ---
-nav_title: QRCodeBorder
+title: QRCodeBorder
 ---
 
 # \Kendo\Dataviz\UI\QRCodeBorder

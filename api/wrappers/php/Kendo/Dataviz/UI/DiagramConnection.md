@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnection
+title: DiagramConnection
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnection

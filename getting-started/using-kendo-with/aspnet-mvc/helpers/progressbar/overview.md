@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Help Guide for ProgressBar HtmlHelper extension | Kendo UI documentation
+title: Overview
+page_title: Help Guide for ProgressBar HtmlHelper extension | Kendo UI documentation
 description: Step-by-step instructions how to configure Kendo UI ProgressBar for ASP.NET MVC widget and add ProgressBar HtmlHelper extension.
 ---
 

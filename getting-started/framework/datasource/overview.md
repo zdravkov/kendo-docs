@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: DataSource component for data binding in Kendo UI framework
+title: Overview
+page_title: DataSource component for data binding in Kendo UI framework
 description: How to get started using DataSource component in Kendo UI framework to simplify data binding and operations.
 ---
 

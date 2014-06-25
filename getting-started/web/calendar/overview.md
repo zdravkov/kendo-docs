@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Calendar UI widget for web app development | Kendo UI Documentation
+title: Overview
+page_title: Calendar UI widget for web app development | Kendo UI Documentation
 description: Initialize Calendar UI widget, configure the behaviour of the control and use a custom template.
 ---
 

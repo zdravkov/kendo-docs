@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-seriesItem-tooltip
+title: stockChart-seriesItem-tooltip
 ---
 
 # \<kendo:stockChart-seriesItem-tooltip\>

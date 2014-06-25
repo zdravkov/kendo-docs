@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Calendar
-title: Configuration, methods and events of Kendo UI Calendar
+title: Calendar
+page_title: Configuration, methods and events of Kendo UI Calendar
 description: Find out how to successfully configure calendar UI component, how to use methods to get the max value of the calendar and navigate easily.
 ---
 

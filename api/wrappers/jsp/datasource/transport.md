@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-transport
+title: dataSource-transport
 ---
 
 # \<kendo:dataSource-transport\>

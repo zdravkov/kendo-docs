@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerMessagesRecurrenceEditorWeekdays
+title: SchedulerMessagesRecurrenceEditorWeekdays
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceEditorWeekdays

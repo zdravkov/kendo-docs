@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-currentTimeMarker
+title: scheduler-currentTimeMarker
 ---
 
 # \<kendo:scheduler-currentTimeMarker\>

@@ -1,74 +1,153 @@
-safe: false
+# The public documentation URL, used for sitemap.xml
 url: "http://docs.telerik.com/kendo-ui"
+
+# Exclude files which should not be in the output
 exclude: [readme.md, Gemfile, Gemfile.lock,api_sort.rb]
-mapping:
-    using-kendo-with: "Using Kendo With"
-    aspnet-mvc: "ASP.NET MVC"
-    php: "PHP"
-    jsp: "JSP"
-    barcode: "Barcode"
-    chart: "Chart"
-    diagram: "Diagram"
-    lineargauge: "LinearGauge"
-    map: "Map"
-    qrcode: "QRCode"
-    radialgauge: "RadialGauge"
-    sparkline: "Sparkline"
-    stockchart: "StockChart"
-    datasource: "DataSource"
-    draganddrop: "Drag and Drop"
-    fx: "FX"
-    globalization: "Globalization"
-    hierarchicaldatasource: "HierarchicalDataSource"
-    mvvm: "MVVM"
-    spa: "SPA"
-    templates: "Templates"
-    validator: "Validator"
-    autocomplete: "AutoComplete"
-    button: "Button"
-    calendar: "Calendar"
-    colorpicker: "ColorPicker"
-    combobox: "ComboBox"
-    datepicker: "DatePicker"
-    datetimepicker: "DateTimePicker"
-    dropdownlist: "DropDownList"
-    editor: "Editor"
-    gantt: "Gantt"
-    grid: "Grid"
-    listview: "ListView"
-    maskedtextbox: "MaskedTextBox"
-    menu: "Menu"
-    multiselect: "MultiSelect"
-    notification: "Notification"
-    numerictextbox: "NumericTextBox"
-    panelbar: "PanelBar"
-    pivotdatasource: "PivotDataSource"
-    pivotgrid: "PivotGrid"
-    progressbar: "ProgressBar"
-    rangeslider: "RangeSlider"
-    scheduler: "Scheduler"
-    slider: "Slider"
-    sortable: "Sortable"
-    splitter: "Splitter"
-    tabstrip: "TabStrip"
-    timepicker: "TimePicker"
-    tooltip: "Tooltip"
-    treeview: "TreeView"
-    upload: "Upload"
-    window: "Window"
-    hello-kendo-ui: "Hello Kendo UI"
-    kendo-music-store: "Kendo UI Music Store"
-    music-store-dashboard: "Music Store Dashboard"
-    music-store-web: "Musict Store Web"
-    saleshub: "Sales Hub"
-    home-page: "Home Page"
-    order-page: "Order Page"
-markdown: MarkdownProcessor
-kramdown:
-    toc_levels: 2..3
-    smart_quotes: ["quot", "quot", "quot", "quot"]
-    input: GFM
+navigation:
+## List your directory names and order here, like this:
+    "*dataviz":
+        title: "DataViz"
+    "*wrappers":
+        title: "Wrappers"
+    "*framework":
+        title: "Framework"
+    "*mobile":
+        title: "Mobile"
+    "*web":
+        title: "Web"
+    "*typescript":
+        title: "TypeScript"
+    "*using-kendo-with":
+        title: "Using Kendo With"
+    "*asp.net":
+        title: "ASP.NET"
+    "*accessibility":
+        title: "Accessibility"
+    "*aspnet-mvc":
+        title: "ASP.NET MVC"
+    "*php":
+        title: "PHP"
+    "*jsp":
+        title: "JSP"
+    "*barcode":
+        title: "Barcode"
+    "*chart":
+        title: "Chart"
+    "*diagram":
+        title: "Diagram"
+    "*lineargauge":
+        title: "LinearGauge"
+    "*map":
+        title: "Map"
+    "*qrcode":
+        title: "QRCode"
+    "*radialgauge":
+        title: "RadialGauge"
+    "*sparkline":
+        title: "Sparkline"
+    "*stockchart":
+        title: "StockChart"
+    "*datasource":
+        title: "DataSource"
+    "*draganddrop":
+        title: "Drag and Drop"
+    "*fx":
+        title: "FX"
+    "*globalization":
+        title: "Globalization"
+    "*hierarchicaldatasource":
+        title: "HierarchicalDataSource"
+    "*mvvm":
+        title: "MVVM"
+    "*spa":
+        title: "SPA"
+    "*templates":
+        title: "Templates"
+    "*validator":
+        title: "Validator"
+    "*autocomplete":
+        title: "AutoComplete"
+    "*button":
+        title: "Button"
+    "*calendar":
+        title: "Calendar"
+    "*colorpicker":
+        title: "ColorPicker"
+    "*combobox":
+        title: "ComboBox"
+    "*datepicker":
+        title: "DatePicker"
+    "*datetimepicker":
+        title: "DateTimePicker"
+    "*dropdownlist":
+        title: "DropDownList"
+    "*editor":
+        title: "Editor"
+    "*gantt":
+        title: "Gantt"
+    "*grid":
+        title: "Grid"
+    "*listview":
+        title: "ListView"
+    "*maskedtextbox":
+        title: "MaskedTextBox"
+    "*menu":
+        title: "Menu"
+    "*multiselect":
+        title: "MultiSelect"
+    "*notification":
+        title: "Notification"
+    "*numerictextbox":
+        title: "NumericTextBox"
+    "*panelbar":
+        title: "PanelBar"
+    "*pivotdatasource":
+        title: "PivotDataSource"
+    "*pivotgrid":
+        title: "PivotGrid"
+    "*progressbar":
+        title: "ProgressBar"
+    "*rangeslider":
+        title: "RangeSlider"
+    "*scheduler":
+        title: "Scheduler"
+    "*slider":
+        title: "Slider"
+    "*sortable":
+        title: "Sortable"
+    "*splitter":
+        title: "Splitter"
+    "*tabstrip":
+        title: "TabStrip"
+    "*timepicker":
+        title: "TimePicker"
+    "*tooltip":
+        title: "Tooltip"
+    "*treeview":
+        title: "TreeView"
+    "*upload":
+        title: "Upload"
+    "*window":
+        title: "Window"
+    "*hello-kendo-ui":
+        title: "Hello Kendo UI"
+    "*kendo-music-store":
+        title: "Kendo UI Music Store"
+    "*music-store-dashboard":
+        title: "Music Store Dashboard"
+    "*music-store-web":
+        title: "Musict Store Web"
+    "*saleshub":
+        title: "Sales Hub"
+    "*home-page":
+        title: "Home Page"
+    "*order-page":
+        title: "Order Page"
+
+## The application virtual path
 baseurl: /kendo-ui
+
+## Assign layout and category per different paths
 defaults:
 -
     scope:
@@ -94,3 +173,19 @@ defaults:
     values:
         layout: "page"
         category: "tutorials"
+
+# Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
+# "foo": "Bar"
+
+# The google services configuration
+google_analytics: UA-111455-1
+google_tag_manager: GTM-6X92
+google_custom_search: '001595215763381649090:eblhnfskwrk'
+
+## Do not edit below this line
+safe: false
+markdown: MarkdownProcessor
+kramdown:
+    toc_levels: 2..3
+    smart_quotes: ["quot", "quot", "quot", "quot"]
+    input: GFM

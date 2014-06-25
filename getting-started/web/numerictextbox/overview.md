@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: NumericTextBox UI widget - documentation overview
+title: Overview
+page_title: NumericTextBox UI widget - documentation overview
 description: How to create NumericTextBox widget and deal with proper configuration of its behaviors.
 ---
 

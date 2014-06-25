@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: PanelBar HtmlHelper extension, server-side wrapper for Kendo UI PanelBar widget | Kendo UI Documentation
+title: Overview
+page_title: PanelBar HtmlHelper extension, server-side wrapper for Kendo UI PanelBar widget | Kendo UI Documentation
 description: How to define items of the Kendo UI PanelBar for ASP.NET MVC in PanelBar HtmlHelper extension, handle Kendo UI PanelBar events.
 ---
 

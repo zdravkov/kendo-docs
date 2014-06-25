@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the NumericTextBox PHP class, server-side wrapper for Kendo UI NumericTextBox widget
+title: Overview
+page_title: How to use the NumericTextBox PHP class, server-side wrapper for Kendo UI NumericTextBox widget
 description: Getting started with Kendo UI NumericTextBox for PHP in quick steps - configure Kendo UI NumericTextBox widget and operate Kendo UI NumericTextBox events.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPaneBuilder
+title: ChartPaneBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPaneBuilder

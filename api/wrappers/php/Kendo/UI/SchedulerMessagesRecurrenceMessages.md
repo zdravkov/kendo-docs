@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerMessagesRecurrenceMessages
+title: SchedulerMessagesRecurrenceMessages
 ---
 
 # \Kendo\UI\SchedulerMessagesRecurrenceMessages

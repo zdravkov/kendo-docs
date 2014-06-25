@@ -1,6 +1,6 @@
 ---
-nav_title: Performance
-title: Mobile performance tips and tricks | Kendo UI Mobile framework Docs
+title: Performance
+page_title: Mobile performance tips and tricks | Kendo UI Mobile framework Docs
 description: Tricks and tips which help you use efficiently Kendo UI Mobile app development framework. Handle performance issues and speed up View transitions.
 ---
 

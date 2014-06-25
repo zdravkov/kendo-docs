@@ -1,5 +1,5 @@
 ---
-nav_title: grid-toolbar
+title: grid-toolbar
 ---
 
 # \<kendo:grid-toolbar\>

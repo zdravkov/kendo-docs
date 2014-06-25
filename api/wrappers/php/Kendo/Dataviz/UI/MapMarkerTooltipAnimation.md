@@ -1,5 +1,5 @@
 ---
-nav_title: MapMarkerTooltipAnimation
+title: MapMarkerTooltipAnimation
 ---
 
 # \Kendo\Dataviz\UI\MapMarkerTooltipAnimation

@@ -1,5 +1,5 @@
 ---
-nav_title: MobileListViewFilterableSettingsBuilder
+title: MobileListViewFilterableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileListViewFilterableSettingsBuilder

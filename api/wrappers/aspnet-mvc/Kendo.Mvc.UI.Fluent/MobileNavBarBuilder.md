@@ -1,5 +1,5 @@
 ---
-nav_title: MobileNavBarBuilder
+title: MobileNavBarBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileNavBarBuilder

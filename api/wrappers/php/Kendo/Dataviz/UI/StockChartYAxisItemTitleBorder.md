@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartYAxisItemTitleBorder
+title: StockChartYAxisItemTitleBorder
 ---
 
 # \Kendo\Dataviz\UI\StockChartYAxisItemTitleBorder

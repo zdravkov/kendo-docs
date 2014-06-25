@@ -1,5 +1,5 @@
 ---
-nav_title: treeView
+title: treeView
 ---
 
 # \<kendo:treeView\>

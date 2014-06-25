@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Timepicker PHP class, server-side wrapper for Kendo UI Timepicker widget
+title: Overview
+page_title: How to use the Timepicker PHP class, server-side wrapper for Kendo UI Timepicker widget
 description: Learn how to create Kendo UI Timepicker for PHP, handle Kendo UI Timepicker Events, access an existing Timepicker.
 ---
 

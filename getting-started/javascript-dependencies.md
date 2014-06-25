@@ -1,6 +1,6 @@
 ---
-nav_title: Javascript Dependencies
 title: Javascript Dependencies
+page_title: Javascript Dependencies
 description: A list of scripts that Kendo UI widgets require to work, detailed explanation about all JavaScript files
 ---
 

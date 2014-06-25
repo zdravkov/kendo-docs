@@ -1,5 +1,5 @@
 ---
-nav_title: MobileSplitViewPaneBuilder
+title: MobileSplitViewPaneBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileSplitViewPaneBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler
+title: scheduler
 ---
 
 # \<kendo:scheduler\>

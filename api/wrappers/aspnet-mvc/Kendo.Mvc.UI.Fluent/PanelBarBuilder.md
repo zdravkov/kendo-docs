@@ -1,5 +1,5 @@
 ---
-nav_title: PanelBarBuilder
+title: PanelBarBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PanelBarBuilder

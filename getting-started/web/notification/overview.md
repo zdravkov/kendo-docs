@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Summary of Kendo UI Notification functionality
+title: Overview
+page_title: Summary of Kendo UI Notification functionality
 description: Find out how to use the Kendo UI Notification widget
 ---
 

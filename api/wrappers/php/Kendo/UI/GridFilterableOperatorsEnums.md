@@ -1,5 +1,5 @@
 ---
-nav_title: GridFilterableOperatorsEnums
+title: GridFilterableOperatorsEnums
 ---
 
 # \Kendo\UI\GridFilterableOperatorsEnums

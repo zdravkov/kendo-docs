@@ -1,6 +1,6 @@
 ---
-nav_title: Bubble Charts
-title: jQuery Bubble Chart UI in Kendo UI DataViz
+title: Bubble Charts
+page_title: jQuery Bubble Chart UI in Kendo UI DataViz
 description: Overview of Kendo jQuery Bubble Chart with Bubble Series, positioned on an X and Y axis. Learn how to create a chart to visualize data points in the charting widget.
 ---
 

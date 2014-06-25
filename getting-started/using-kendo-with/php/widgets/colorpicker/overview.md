@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the ColorPicker PHP class, server-side wrapper for Kendo UI ColorPicker widget
+title: Overview
+page_title: How to use the ColorPicker PHP class, server-side wrapper for Kendo UI ColorPicker widget
 description: Getting started with Kendo UI ColorPicker for PHP in quick steps - configure Kendo UI ColorPicker widget and operate Kendo UI ColorPicker events.
 ---
 

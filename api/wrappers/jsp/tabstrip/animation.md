@@ -1,5 +1,5 @@
 ---
-nav_title: tabStrip-animation
+title: tabStrip-animation
 ---
 
 # \<kendo:tabStrip-animation\>

@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesItemConnectors
+title: SparklineSeriesItemConnectors
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemConnectors

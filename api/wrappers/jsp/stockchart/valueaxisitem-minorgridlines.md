@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-valueAxisItem-minorGridLines
+title: stockChart-valueAxisItem-minorGridLines
 ---
 
 # \<kendo:stockChart-valueAxisItem-minorGridLines\>

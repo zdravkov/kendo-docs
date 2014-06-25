@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Documentation for Kendo UI ListView HtmlHelper server-side wrapper
+title: Overview
+page_title: Documentation for Kendo UI ListView HtmlHelper server-side wrapper
 description: Learn how to configure Kendo UI ListView for server binding and handle events.
 ---
 

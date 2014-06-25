@@ -1,5 +1,5 @@
 ---
-nav_title: chart-title-margin
+title: chart-title-margin
 ---
 
 # \<kendo:chart-title-margin\>

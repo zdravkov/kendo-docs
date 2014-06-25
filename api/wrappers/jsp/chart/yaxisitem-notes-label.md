@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-notes-label
+title: chart-yAxisItem-notes-label
 ---
 
 # \<kendo:chart-yAxisItem-notes-label\>

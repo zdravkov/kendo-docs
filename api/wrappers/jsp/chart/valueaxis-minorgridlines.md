@@ -1,5 +1,5 @@
 ---
-nav_title: chart-valueAxis-minorGridLines
+title: chart-valueAxis-minorGridLines
 ---
 
 # \<kendo:chart-valueAxis-minorGridLines\>

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartDashType
+title: ChartDashType
 ---
 
 # Kendo.Mvc.UI.ChartDashType

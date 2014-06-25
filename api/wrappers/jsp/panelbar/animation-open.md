@@ -1,5 +1,5 @@
 ---
-nav_title: panelBar-animation-open
+title: panelBar-animation-open
 ---
 
 # \<kendo:panelBar-animation-open\>

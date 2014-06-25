@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBarSeriesOverlay
+title: ChartBarSeriesOverlay
 ---
 
 # Kendo.Mvc.UI.ChartBarSeriesOverlay

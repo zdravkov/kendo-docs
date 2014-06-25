@@ -1,5 +1,5 @@
 ---
-nav_title: Supporting Right-to-Left Languages in Kendo UI
+title: Supporting Right-to-Left Languages in Kendo UI
 related: a11y-accessibility-overview, widget-appearance-rtl
 ---
 

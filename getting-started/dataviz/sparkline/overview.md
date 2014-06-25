@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Documentation for Sparkline widget in Kendo UI DataViz
+title: Overview
+page_title: Documentation for Sparkline widget in Kendo UI DataViz
 description: How to create a sparkline, enable the visualization of a series that displays inline data, explore the quick overview of Sparkline widget major features.
 ---
 

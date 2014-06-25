@@ -1,5 +1,5 @@
 ---
-nav_title: linearGauge-gaugeArea
+title: linearGauge-gaugeArea
 ---
 
 # \<kendo:linearGauge-gaugeArea\>

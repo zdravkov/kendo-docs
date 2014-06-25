@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.MultiSelect
-title: Configuration, methods and events of Kendo UI MultiSelect
+title: MultiSelect
+page_title: Configuration, methods and events of Kendo UI MultiSelect
 ---
 
 # kendo.ui.MultiSelect

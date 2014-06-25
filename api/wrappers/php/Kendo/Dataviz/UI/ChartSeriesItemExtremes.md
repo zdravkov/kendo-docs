@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemExtremes
+title: ChartSeriesItemExtremes
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemExtremes

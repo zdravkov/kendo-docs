@@ -1,5 +1,5 @@
 ---
-nav_title: ChartTooltip
+title: ChartTooltip
 ---
 
 # \Kendo\Dataviz\UI\ChartTooltip

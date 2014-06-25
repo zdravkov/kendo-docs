@@ -1,5 +1,5 @@
 ---
-nav_title: radialGauge-scale-minorTicks
+title: radialGauge-scale-minorTicks
 ---
 
 # \<kendo:radialGauge-scale-minorTicks\>

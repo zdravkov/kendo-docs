@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Overview of DropDownList widget - primary uses
+title: Overview
+page_title: Overview of DropDownList widget - primary uses
 description: Quickly explore all features of Kendo UI DropDown control and how to use them.
-nav_position: 1
+position: 1
 ---
 
 # DropDownList Overview

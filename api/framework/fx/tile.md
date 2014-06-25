@@ -1,5 +1,5 @@
 ---
-nav_title: FX Tile
+title: FX Tile
 ---
 
 # Tile

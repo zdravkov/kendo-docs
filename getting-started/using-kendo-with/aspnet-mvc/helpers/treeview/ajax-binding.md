@@ -1,6 +1,6 @@
 ---
-nav_title: Ajax Binding
-title: Configure Kendo UI TreeView for ASP.NET MVC for Ajax binding
+title: Ajax Binding
+page_title: Configure Kendo UI TreeView for ASP.NET MVC for Ajax binding
 description: Kendo UI TreeView for ASP.NET MVC makes Ajax requests to populate with nodes.
 ---
 

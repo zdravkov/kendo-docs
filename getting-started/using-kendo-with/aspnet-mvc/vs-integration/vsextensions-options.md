@@ -1,5 +1,5 @@
 ---
-nav_title: Visual Studio Extensions Options
+title: Visual Studio Extensions Options
 ---
 
 #Visual Studio Extensions Options

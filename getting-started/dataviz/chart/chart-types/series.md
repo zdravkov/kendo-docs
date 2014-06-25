@@ -1,6 +1,6 @@
 ---
-nav_title: Series Chart
-title: Series in Kendo UI Chart  widget
+title: Series Chart
+page_title: Series in Kendo UI Chart  widget
 description: How to use different series of data of a specified type, combine series to be shown in a single chart.
 ---
 

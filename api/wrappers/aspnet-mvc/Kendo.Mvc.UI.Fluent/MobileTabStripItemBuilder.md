@@ -1,5 +1,5 @@
 ---
-nav_title: MobileTabStripItemBuilder
+title: MobileTabStripItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileTabStripItemBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsTileSettingsBuilder
+title: MapLayerDefaultsTileSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapLayerDefaultsTileSettingsBuilder

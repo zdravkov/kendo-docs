@@ -1,5 +1,5 @@
 ---
-nav_title: GridEditMode
+title: GridEditMode
 ---
 
 # Kendo.Mvc.UI.GridEditMode

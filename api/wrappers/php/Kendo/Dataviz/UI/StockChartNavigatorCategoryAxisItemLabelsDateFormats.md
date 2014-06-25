@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigatorCategoryAxisItemLabelsDateFormats
+title: StockChartNavigatorCategoryAxisItemLabelsDateFormats
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigatorCategoryAxisItemLabelsDateFormats

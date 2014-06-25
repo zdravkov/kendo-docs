@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Chart PHP class, server-side wrapper for Kendo UI Chart widget
+title: Overview
+page_title: How to use the Chart PHP class, server-side wrapper for Kendo UI Chart widget
 description: Learn how to bind Kendo UI Chart for PHP, handle Kendo UI Chart Events, access an existing chart.
 ---
 

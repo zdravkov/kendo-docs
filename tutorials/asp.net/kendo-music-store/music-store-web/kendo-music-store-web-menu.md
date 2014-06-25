@@ -1,5 +1,5 @@
 ---
-nav_title: Creating the Main Menu
+title: Creating the Main Menu
 ---
 
 # Creating the Main Menu - Kendo Music Store

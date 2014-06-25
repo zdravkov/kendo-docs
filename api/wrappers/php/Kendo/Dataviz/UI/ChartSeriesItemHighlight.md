@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemHighlight
+title: ChartSeriesItemHighlight
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemHighlight

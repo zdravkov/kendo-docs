@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Sortable PHP class, server-side wrapper for Kendo UI Sortable widget
+title: Overview
+page_title: How to use the Sortable PHP class, server-side wrapper for Kendo UI Sortable widget
 description: Learn how to create Kendo UI Sortable for PHP, handle Kendo UI Sortable Events, access an existing sortable.
 ---
 

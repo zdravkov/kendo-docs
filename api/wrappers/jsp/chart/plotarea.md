@@ -1,5 +1,5 @@
 ---
-nav_title: chart-plotArea
+title: chart-plotArea
 ---
 
 # \<kendo:chart-plotArea\>

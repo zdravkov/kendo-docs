@@ -1,6 +1,6 @@
 ---
-nav_title: Funnel Charts
-title: jQuery Funnel Chart UI in Kendo UI DataViz
+title: Funnel Charts
+page_title: jQuery Funnel Chart UI in Kendo UI DataViz
 description: Overview of Kendo jQuery Funnel Chart with Funnel Series. How to create it and use the different options it provides.
 ---
 

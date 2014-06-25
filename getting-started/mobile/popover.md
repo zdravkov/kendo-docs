@@ -1,6 +1,6 @@
 ---
-nav_title: PopOver
-title: Kendo UI Mobile PopOver Widget for mobile websites and apps
+title: PopOver
+page_title: Kendo UI Mobile PopOver Widget for mobile websites and apps
 description: How to open the mobile PopOver widget by tapping jQuery-based mobile navigational widget, and then configure popover dimensions and direction.
 ---
 

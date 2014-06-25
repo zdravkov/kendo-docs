@@ -1,5 +1,5 @@
 ---
-nav_title: radialGauge-gaugeArea-border
+title: radialGauge-gaugeArea-border
 ---
 
 # \<kendo:radialGauge-gaugeArea-border\>

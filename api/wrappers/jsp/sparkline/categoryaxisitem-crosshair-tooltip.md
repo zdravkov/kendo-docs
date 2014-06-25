@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-categoryAxisItem-crosshair-tooltip
+title: sparkline-categoryAxisItem-crosshair-tooltip
 ---
 
 # \<kendo:sparkline-categoryAxisItem-crosshair-tooltip\>

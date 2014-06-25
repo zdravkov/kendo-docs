@@ -1,5 +1,5 @@
 ---
-nav_title: ComboBoxBuilder
+title: ComboBoxBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ComboBoxBuilder

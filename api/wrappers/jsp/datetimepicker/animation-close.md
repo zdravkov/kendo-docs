@@ -1,5 +1,5 @@
 ---
-nav_title: dateTimePicker-animation-close
+title: dateTimePicker-animation-close
 ---
 
 # \<kendo:dateTimePicker-animation-close\>

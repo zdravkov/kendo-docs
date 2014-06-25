@@ -1,5 +1,5 @@
 ---
-nav_title: PaletteSizeBuilder
+title: PaletteSizeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.PaletteSizeBuilder

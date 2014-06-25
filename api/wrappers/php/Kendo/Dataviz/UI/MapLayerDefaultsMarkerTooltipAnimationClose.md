@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsMarkerTooltipAnimationClose
+title: MapLayerDefaultsMarkerTooltipAnimationClose
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsMarkerTooltipAnimationClose

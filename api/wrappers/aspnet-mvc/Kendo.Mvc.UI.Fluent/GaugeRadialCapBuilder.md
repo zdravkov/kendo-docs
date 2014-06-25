@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeRadialCapBuilder
+title: GaugeRadialCapBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialCapBuilder

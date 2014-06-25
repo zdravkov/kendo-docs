@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewItemModel
+title: TreeViewItemModel
 ---
 
 # Kendo.Mvc.UI.TreeViewItemModel

@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesDefaultsStack
+title: SparklineSeriesDefaultsStack
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesDefaultsStack

@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeLineBuilder
+title: GaugeLineBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeLineBuilder

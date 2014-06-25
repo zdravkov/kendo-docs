@@ -1,5 +1,5 @@
 ---
-nav_title: ChartStepLineSeriesBuilder
+title: ChartStepLineSeriesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartStepLineSeriesBuilder

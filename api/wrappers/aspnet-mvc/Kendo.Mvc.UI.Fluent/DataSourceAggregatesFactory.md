@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceAggregatesFactory
+title: DataSourceAggregatesFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceAggregatesFactory

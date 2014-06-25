@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: User guide for Kendo UI MaskedTextBox widget | Kendo UI documentation
+title: Overview
+page_title: User guide for Kendo UI MaskedTextBox widget | Kendo UI documentation
 description: How to configure a simple Kendo UI MaskedTextBox widget, add MaskedTextBox, handle events to control widget's behavior.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Rect
+title: Rect
 ---
 
 # kendo.dataviz.diagram.Rect

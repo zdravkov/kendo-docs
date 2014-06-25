@@ -1,5 +1,5 @@
 ---
-nav_title: Window
+title: Window
 ---
 
 # \Kendo\UI\Window

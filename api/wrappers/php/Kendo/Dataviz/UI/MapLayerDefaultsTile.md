@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsTile
+title: MapLayerDefaultsTile
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsTile

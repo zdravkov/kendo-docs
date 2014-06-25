@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerResourceFactory
+title: SchedulerResourceFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerResourceFactory

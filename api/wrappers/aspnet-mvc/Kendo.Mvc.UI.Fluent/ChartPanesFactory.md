@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPanesFactory
+title: ChartPanesFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPanesFactory

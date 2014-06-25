@@ -1,5 +1,5 @@
 ---
-nav_title: MobileScrollViewItemBuilder
+title: MobileScrollViewItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileScrollViewItemBuilder

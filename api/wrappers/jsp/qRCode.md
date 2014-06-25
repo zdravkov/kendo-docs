@@ -1,5 +1,5 @@
 ---
-nav_title: qRCode
+title: qRCode
 ---
 
 # \<kendo:qRCode\>

@@ -1,5 +1,5 @@
 ---
-nav_title: kendo.dataviz.diagram.Line
+title: Line
 ---
 
 # kendo.dataviz.diagram.Line

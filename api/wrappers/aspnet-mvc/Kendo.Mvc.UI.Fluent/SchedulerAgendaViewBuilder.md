@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerAgendaViewBuilder
+title: SchedulerAgendaViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerAgendaViewBuilder

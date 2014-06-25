@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartBuilder
+title: StockChartBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.StockChartBuilder

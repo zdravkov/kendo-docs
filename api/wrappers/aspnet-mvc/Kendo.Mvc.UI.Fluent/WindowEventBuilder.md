@@ -1,5 +1,5 @@
 ---
-nav_title: WindowEventBuilder
+title: WindowEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowEventBuilder

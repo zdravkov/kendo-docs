@@ -1,6 +1,6 @@
 ---
-nav_title: Date Formatting
-title: Date Formatting | Kendo UI Framework Globalization documentation
+title: Date Formatting
+page_title: Date Formatting | Kendo UI Framework Globalization documentation
 description: Learn how with date formatting you can convert Date object to human readable string, supporting standard and custom date formats.
 ---
 

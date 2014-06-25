@@ -1,6 +1,6 @@
 ---
-nav_title: Bar Chart
-title: Bar charts in Kendo UI DataViz
+title: Bar Chart
+page_title: Bar charts in Kendo UI DataViz
 description: How to set the properties of Kendo UI Bar Chart.
 ---
 

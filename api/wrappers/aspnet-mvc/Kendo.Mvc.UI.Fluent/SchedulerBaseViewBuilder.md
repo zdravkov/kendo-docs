@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerBaseViewBuilder
+title: SchedulerBaseViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerBaseViewBuilder

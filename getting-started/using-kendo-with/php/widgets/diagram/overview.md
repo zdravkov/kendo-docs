@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use Diagram PHP class | Kendo UI documentation
+title: Overview
+page_title: How to use Diagram PHP class | Kendo UI documentation
 description: User Guide for server-side wrapper for Kendo UI Diagram for PHP.
 ---
 

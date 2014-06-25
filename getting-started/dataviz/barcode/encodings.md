@@ -1,8 +1,8 @@
 ---
-nav_title: Encodings
-title: Specific characteristics of the different symbologies of the Barcode widget
+title: Encodings
+page_title: Specific characteristics of the different symbologies of the Barcode widget
 description: Check information about the character set, length and check digit of the Barcode symbologies.
-nav_position: 2
+position: 2
 ---
 
 ## What is Encoding/Symbology?

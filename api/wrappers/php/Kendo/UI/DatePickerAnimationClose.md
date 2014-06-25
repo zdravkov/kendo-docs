@@ -1,5 +1,5 @@
 ---
-nav_title: DatePickerAnimationClose
+title: DatePickerAnimationClose
 ---
 
 # \Kendo\UI\DatePickerAnimationClose

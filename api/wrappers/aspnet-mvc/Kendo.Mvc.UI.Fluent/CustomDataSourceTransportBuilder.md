@@ -1,5 +1,5 @@
 ---
-nav_title: CustomDataSourceTransportBuilder
+title: CustomDataSourceTransportBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.CustomDataSourceTransportBuilder

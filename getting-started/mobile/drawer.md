@@ -1,6 +1,6 @@
 ---
-nav_title: Drawer
-title: Documentation for Kendo UI Drawer mobile widget
+title: Drawer
+page_title: Documentation for Kendo UI Drawer mobile widget
 description: How to initialize and use a mobile Drawer component in Kendo UI Mobile framework.
 ---
 

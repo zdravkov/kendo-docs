@@ -1,5 +1,5 @@
 ---
-nav_title: ColorPickerTileSize
+title: ColorPickerTileSize
 ---
 
 # \Kendo\UI\ColorPickerTileSize

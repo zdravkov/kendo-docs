@@ -1,5 +1,5 @@
 ---
-nav_title: MultiSelectEventBuilder
+title: MultiSelectEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MultiSelectEventBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: map-layerDefaults-bing
+title: map-layerDefaults-bing
 ---
 
 # \<kendo:map-layerDefaults-bing\>

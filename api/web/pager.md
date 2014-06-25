@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.Pager
-title: Configuration, methods and events of Kendo UI Pager
+title: Pager
+page_title: Configuration, methods and events of Kendo UI Pager
 description: 'Configuration steps for the Pager widget and methods for different actions: return number of pages, page size, specified page, update all values.'
 ---
 

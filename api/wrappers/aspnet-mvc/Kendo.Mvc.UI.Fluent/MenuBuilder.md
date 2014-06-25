@@ -1,5 +1,5 @@
 ---
-nav_title: MenuBuilder
+title: MenuBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MenuBuilder

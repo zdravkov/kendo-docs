@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartNavigator
+title: StockChartNavigator
 ---
 
 # \Kendo\Dataviz\UI\StockChartNavigator

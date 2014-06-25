@@ -1,6 +1,6 @@
 ---
-nav_title: AutoComplete
-title: ASP.NET MVC server-side API for Kendo UI AutoComplete widget
+title: AutoComplete
+page_title: ASP.NET MVC server-side API for Kendo UI AutoComplete widget
 description: How to handle options in server-side API for Kendo UI AutoComplete with ASP.NET MVC.
 ---
 

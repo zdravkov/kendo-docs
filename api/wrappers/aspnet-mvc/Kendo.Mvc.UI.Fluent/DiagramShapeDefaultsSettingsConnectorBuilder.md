@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeDefaultsSettingsConnectorBuilder
+title: DiagramShapeDefaultsSettingsConnectorBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramShapeDefaultsSettingsConnectorBuilder

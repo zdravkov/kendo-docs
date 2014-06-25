@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemTitlePadding
+title: ChartCategoryAxisItemTitlePadding
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemTitlePadding

@@ -1,5 +1,5 @@
 ---
-nav_title: EditorImageBrowserMessages
+title: EditorImageBrowserMessages
 ---
 
 # \Kendo\UI\EditorImageBrowserMessages

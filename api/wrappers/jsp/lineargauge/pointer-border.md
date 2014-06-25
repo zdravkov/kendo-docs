@@ -1,5 +1,5 @@
 ---
-nav_title: linearGauge-pointer-border
+title: linearGauge-pointer-border
 ---
 
 # \<kendo:linearGauge-pointer-border\>

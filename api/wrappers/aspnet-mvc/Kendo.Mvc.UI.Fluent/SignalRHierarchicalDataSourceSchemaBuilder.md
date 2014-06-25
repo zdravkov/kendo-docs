@@ -1,5 +1,5 @@
 ---
-nav_title: SignalRHierarchicalDataSourceSchemaBuilder
+title: SignalRHierarchicalDataSourceSchemaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SignalRHierarchicalDataSourceSchemaBuilder

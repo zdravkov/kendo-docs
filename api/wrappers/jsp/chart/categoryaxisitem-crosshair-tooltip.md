@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxisItem-crosshair-tooltip
+title: chart-categoryAxisItem-crosshair-tooltip
 ---
 
 # \<kendo:chart-categoryAxisItem-crosshair-tooltip\>

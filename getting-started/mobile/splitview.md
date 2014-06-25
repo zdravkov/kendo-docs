@@ -1,6 +1,6 @@
 ---
-nav_title: SplitView
-title: Kendo UI jQuery Mobile SplitView widget documentation
+title: SplitView
+page_title: Kendo UI jQuery Mobile SplitView widget documentation
 description: Overview of jQuery-based Kendo tablet UI pane widget. Quick tips for the customization of Kendo UI SplitView component.
 ---
 

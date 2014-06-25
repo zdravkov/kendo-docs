@@ -1,5 +1,5 @@
 ---
-nav_title: NavigationItemBuilder
+title: NavigationItemBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.NavigationItemBuilder

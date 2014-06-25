@@ -1,5 +1,5 @@
 ---
-nav_title: ChartCategoryAxisItemSelectMousewheel
+title: ChartCategoryAxisItemSelectMousewheel
 ---
 
 # \Kendo\Dataviz\UI\ChartCategoryAxisItemSelectMousewheel

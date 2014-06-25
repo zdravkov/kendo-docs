@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemOverlay
+title: ChartSeriesItemOverlay
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemOverlay

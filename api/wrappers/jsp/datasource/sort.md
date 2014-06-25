@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-sort
+title: dataSource-sort
 ---
 
 # \<kendo:dataSource-sort\>

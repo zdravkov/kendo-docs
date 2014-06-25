@@ -1,5 +1,5 @@
 ---
-nav_title: Modes
+title: Modes
 ---
 # Upload Modes
 

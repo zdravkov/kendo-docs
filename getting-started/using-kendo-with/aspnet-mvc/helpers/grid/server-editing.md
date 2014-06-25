@@ -1,6 +1,6 @@
 ---
-nav_title: Server Editing
-title: Configuration of Kendo UI Grid for ASP.NET MVC for server editing
+title: Server Editing
+page_title: Configuration of Kendo UI Grid for ASP.NET MVC for server editing
 description: Guidance how to configure server editing of Kendo UI Grid for ASP.NET MVC.
 ---
 

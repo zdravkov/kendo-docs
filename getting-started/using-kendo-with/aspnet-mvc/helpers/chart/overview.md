@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Chart HtmlHelper extension | Kendo UI documentation
+title: Overview
+page_title: Chart HtmlHelper extension | Kendo UI documentation
 description: Configuration of Kendo UI Chart widget for server binding in quick steps, add Chart HtmlHelper extension, manipulate Kendo UI chart events.
 ---
 

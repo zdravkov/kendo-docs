@@ -1,5 +1,5 @@
 ---
-nav_title: grid-groupable
+title: grid-groupable
 ---
 
 # \<kendo:grid-groupable\>

@@ -1,5 +1,5 @@
 ---
-nav_title: Kendo UI and TypeScript
+title: Kendo UI and TypeScript
 ---
 
 # Kendo UI TypeScript Support

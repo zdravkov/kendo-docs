@@ -1,5 +1,5 @@
 ---
-nav_title: ChartTooltipBorder
+title: ChartTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartTooltipBorder

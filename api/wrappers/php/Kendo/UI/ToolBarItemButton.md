@@ -1,5 +1,5 @@
 ---
-nav_title: ToolBarItemButton
+title: ToolBarItemButton
 ---
 
 # \Kendo\UI\ToolBarItemButton

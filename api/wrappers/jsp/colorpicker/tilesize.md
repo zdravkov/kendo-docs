@@ -1,5 +1,5 @@
 ---
-nav_title: colorPicker-tileSize
+title: colorPicker-tileSize
 ---
 
 # \<kendo:colorPicker-tileSize\>

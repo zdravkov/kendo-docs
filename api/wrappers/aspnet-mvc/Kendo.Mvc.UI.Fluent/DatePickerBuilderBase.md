@@ -1,5 +1,5 @@
 ---
-nav_title: DatePickerBuilderBase
+title: DatePickerBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.DatePickerBuilderBase

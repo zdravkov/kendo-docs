@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the ListView PHP class, server-side wrapper for Kendo UI ListView widget
+title: Overview
+page_title: How to use the ListView PHP class, server-side wrapper for Kendo UI ListView widget
 description: Learn how to bind Kendo UI ListView for PHP, handle Kendo UI ListView Events, access an existing listview.
 ---
 

@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of Kendo UI Window widget
+title: Overview
+page_title: Overview of Kendo UI Window widget
 description: Learn how to get started with Kendo UI Window widget, load content via Ajax, access an existing window.
 ---
 

@@ -1,6 +1,6 @@
 ---
-nav_title: Part 4 - Hello Kendo UI
-title: First tutorial for HTML5 development with ASP.NET - Kendo UI Grid
+title: Part 4 - Hello Kendo UI
+page_title: First tutorial for HTML5 development with ASP.NET - Kendo UI Grid
 description: This tutorial will help you get used to working with Kendo UI Grid widget and Kendo UI DataSource component. Learn how to use them together in your web app.
 ---
 

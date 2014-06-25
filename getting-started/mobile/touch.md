@@ -1,5 +1,5 @@
 ---
-nav_title: Touch
+title: Touch
 ---
 
 # Touch

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartStackType
+title: ChartStackType
 ---
 
 # Kendo.Mvc.UI.ChartStackType

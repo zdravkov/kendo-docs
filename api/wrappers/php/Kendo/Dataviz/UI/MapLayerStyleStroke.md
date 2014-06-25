@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerStyleStroke
+title: MapLayerStyleStroke
 ---
 
 # \Kendo\Dataviz\UI\MapLayerStyleStroke

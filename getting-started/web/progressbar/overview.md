@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of ProgressBar UI widget | Kendo UI Documentation
+title: Overview
+page_title: Overview of ProgressBar UI widget | Kendo UI Documentation
 description: Quick steps to help you create Kendo UI ProgressBar, read the documentation to get started.
 ---
 

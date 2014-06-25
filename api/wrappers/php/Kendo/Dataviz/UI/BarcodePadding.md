@@ -1,5 +1,5 @@
 ---
-nav_title: BarcodePadding
+title: BarcodePadding
 ---
 
 # \Kendo\Dataviz\UI\BarcodePadding

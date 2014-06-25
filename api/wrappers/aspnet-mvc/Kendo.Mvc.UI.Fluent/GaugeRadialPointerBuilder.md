@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeRadialPointerBuilder
+title: GaugeRadialPointerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeRadialPointerBuilder

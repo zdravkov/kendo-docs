@@ -1,5 +1,5 @@
 ---
-nav_title: EditorFileBrowserTransport
+title: EditorFileBrowserTransport
 ---
 
 # \Kendo\UI\EditorFileBrowserTransport

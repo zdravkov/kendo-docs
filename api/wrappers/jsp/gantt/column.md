@@ -1,5 +1,5 @@
 ---
-nav_title: gantt-column
+title: gantt-column
 ---
 
 # \<kendo:gantt-column\>

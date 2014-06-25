@@ -1,5 +1,5 @@
 ---
-nav_title: grid-filterable-operators-date
+title: grid-filterable-operators-date
 ---
 
 # \<kendo:grid-filterable-operators-date\>

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBorderBuilder
+title: ChartBorderBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBorderBuilder

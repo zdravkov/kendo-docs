@@ -1,6 +1,6 @@
 ---
-nav_title: Layout
-nav_position: 3
+title: Layout
+position: 3
 ---
 
 # Layout Overview

@@ -1,5 +1,5 @@
 ---
-nav_title: GridFilterableOperatorsNumber
+title: GridFilterableOperatorsNumber
 ---
 
 # \Kendo\UI\GridFilterableOperatorsNumber

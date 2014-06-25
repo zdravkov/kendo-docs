@@ -1,8 +1,8 @@
 ---
-nav_title: Adaptive rendering
-title: Detailed documentation for Kendo UI Grid Adaptive rendering
+title: Adaptive rendering
+page_title: Detailed documentation for Kendo UI Grid Adaptive rendering
 description: This help article explains the specifications of Grid's adaptive rendering feature
-nav_position: 5
+position: 5
 ---
 
 # Grid adaptive rendering

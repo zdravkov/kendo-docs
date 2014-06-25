@@ -1,5 +1,5 @@
 ---
-nav_title: TabStripItemFactory
+title: TabStripItemFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.TabStripItemFactory

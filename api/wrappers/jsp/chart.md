@@ -1,5 +1,5 @@
 ---
-nav_title: chart
+title: chart
 ---
 
 # \<kendo:chart\>

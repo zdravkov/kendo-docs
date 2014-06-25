@@ -1,5 +1,5 @@
 ---
-nav_title: ChartTooltipPadding
+title: ChartTooltipPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartTooltipPadding

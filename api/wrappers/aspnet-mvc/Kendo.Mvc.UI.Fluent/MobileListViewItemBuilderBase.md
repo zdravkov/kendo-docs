@@ -1,5 +1,5 @@
 ---
-nav_title: MobileListViewItemBuilderBase
+title: MobileListViewItemBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileListViewItemBuilderBase

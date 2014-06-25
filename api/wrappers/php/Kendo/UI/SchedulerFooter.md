@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerFooter
+title: SchedulerFooter
 ---
 
 # \Kendo\UI\SchedulerFooter

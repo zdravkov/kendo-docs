@@ -1,5 +1,5 @@
 ---
-nav_title: grid-groupable-messages
+title: grid-groupable-messages
 ---
 
 # \<kendo:grid-groupable-messages\>

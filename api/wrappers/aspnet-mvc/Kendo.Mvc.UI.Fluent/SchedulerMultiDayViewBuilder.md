@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerMultiDayViewBuilder
+title: SchedulerMultiDayViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerMultiDayViewBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: ListViewBuilder
+title: ListViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewBuilder

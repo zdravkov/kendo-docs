@@ -1,5 +1,5 @@
 ---
-nav_title: SortDescriptor
+title: SortDescriptor
 ---
 
 # Kendo.Mvc.SortDescriptor

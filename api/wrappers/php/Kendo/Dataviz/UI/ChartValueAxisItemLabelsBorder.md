@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItemLabelsBorder
+title: ChartValueAxisItemLabelsBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemLabelsBorder

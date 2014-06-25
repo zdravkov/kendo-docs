@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItemCrosshairTooltipPadding
+title: ChartValueAxisItemCrosshairTooltipPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemCrosshairTooltipPadding

@@ -1,5 +1,5 @@
 ---
-nav_title: AggregateFunction
+title: AggregateFunction
 ---
 
 # Kendo.Mvc.AggregateFunction

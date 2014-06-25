@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerEditableSettingsBuilder
+title: SchedulerEditableSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerEditableSettingsBuilder

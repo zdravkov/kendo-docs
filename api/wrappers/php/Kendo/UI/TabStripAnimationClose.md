@@ -1,5 +1,5 @@
 ---
-nav_title: TabStripAnimationClose
+title: TabStripAnimationClose
 ---
 
 # \Kendo\UI\TabStripAnimationClose

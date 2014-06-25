@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of Validator UI in Kendo UI framework
+title: Overview
+page_title: Overview of Validator UI in Kendo UI framework
 description: How to initialize jQuery Validator UI and trigger elements' validation.
 ---
 

@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the TreeView PHP class, server-side wrapper for Kendo UI TreeView widget
+title: Overview
+page_title: How to use the TreeView PHP class, server-side wrapper for Kendo UI TreeView widget
 description: Learn how to bind Kendo UI TreeView for PHP, handle Kendo UI TreeView Events, access an existing treeview.
 ---
 

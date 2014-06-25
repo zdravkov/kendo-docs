@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-plotBand
+title: chart-yAxisItem-plotBand
 ---
 
 # \<kendo:chart-yAxisItem-plotBand\>

@@ -1,5 +1,5 @@
 ---
-nav_title: Using Kendo With RequireJS
+title: Using Kendo With RequireJS
 ---
 
 # Using Kendo with RequireJS

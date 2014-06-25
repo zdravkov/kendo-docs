@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.TimePicker
-title: Configuration, methods and events of Kendo UI TimePicker
+title: TimePicker
+page_title: Configuration, methods and events of Kendo UI TimePicker
 description: What type of animations you can use in TimePicker UI widget, find supported methods and see which events are triggered once the value is changed.
 ---
 

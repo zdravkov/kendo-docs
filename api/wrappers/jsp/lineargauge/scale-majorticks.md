@@ -1,5 +1,5 @@
 ---
-nav_title: linearGauge-scale-majorTicks
+title: linearGauge-scale-majorTicks
 ---
 
 # \<kendo:linearGauge-scale-majorTicks\>

@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceGroupItemAggregate
+title: DataSourceGroupItemAggregate
 ---
 
 # \Kendo\Data\DataSourceGroupItemAggregate

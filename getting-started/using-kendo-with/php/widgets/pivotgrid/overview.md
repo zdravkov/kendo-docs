@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the PivotGrid PHP class, server-side wrapper for Kendo UI PivotGrid widget
+title: Overview
+page_title: How to use the PivotGrid PHP class, server-side wrapper for Kendo UI PivotGrid widget
 description: Learn how to bind Kendo UI PivotGrid for PHP, handle Kendo UI PivotGrid Events, access an existing pivotgrid.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPane
+title: ChartPane
 ---
 
 # \Kendo\Dataviz\UI\ChartPane

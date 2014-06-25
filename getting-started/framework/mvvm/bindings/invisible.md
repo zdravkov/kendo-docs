@@ -1,6 +1,6 @@
 ---
-nav_title: Invisible
-title: Invisible binding in Kendo UI MVVM | Kendo UI Documentation
+title: Invisible
+page_title: Invisible binding in Kendo UI MVVM | Kendo UI Documentation
 description: How to hide or show the target DOM element, depending on the View-Model Value by using the invisible binding.
 ---
 

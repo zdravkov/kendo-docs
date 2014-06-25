@@ -1,5 +1,5 @@
 ---
-nav_title: dateTimePicker-month
+title: dateTimePicker-month
 ---
 
 # \<kendo:dateTimePicker-month\>

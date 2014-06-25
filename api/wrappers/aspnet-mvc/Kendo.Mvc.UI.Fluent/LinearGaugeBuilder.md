@@ -1,5 +1,5 @@
 ---
-nav_title: LinearGaugeBuilder
+title: LinearGaugeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.LinearGaugeBuilder

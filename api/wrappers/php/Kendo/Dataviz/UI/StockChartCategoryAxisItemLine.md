@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartCategoryAxisItemLine
+title: StockChartCategoryAxisItemLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartCategoryAxisItemLine

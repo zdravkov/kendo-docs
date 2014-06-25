@@ -1,5 +1,5 @@
 ---
-nav_title: chart-plotArea-border
+title: chart-plotArea-border
 ---
 
 # \<kendo:chart-plotArea-border\>

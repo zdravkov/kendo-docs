@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-minorGridLines
+title: chart-yAxisItem-minorGridLines
 ---
 
 # \<kendo:chart-yAxisItem-minorGridLines\>

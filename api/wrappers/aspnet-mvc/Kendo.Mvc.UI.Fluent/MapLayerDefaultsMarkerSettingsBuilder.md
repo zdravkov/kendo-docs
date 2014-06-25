@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsMarkerSettingsBuilder
+title: MapLayerDefaultsMarkerSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MapLayerDefaultsMarkerSettingsBuilder

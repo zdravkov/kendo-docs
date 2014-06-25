@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesAggregate
+title: ChartSeriesAggregate
 ---
 
 # Kendo.Mvc.UI.ChartSeriesAggregate

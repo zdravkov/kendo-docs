@@ -1,5 +1,5 @@
 ---
-nav_title: ColorPaletteBuilder
+title: ColorPaletteBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ColorPaletteBuilder

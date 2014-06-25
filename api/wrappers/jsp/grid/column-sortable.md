@@ -1,5 +1,5 @@
 ---
-nav_title: grid-column-sortable
+title: grid-column-sortable
 ---
 
 # \<kendo:grid-column-sortable\>

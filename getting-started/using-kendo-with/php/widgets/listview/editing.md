@@ -1,6 +1,6 @@
 ---
-nav_title: Editing
-title: How to perform CRUD with Kendo ListView for PHP
+title: Editing
+page_title: How to perform CRUD with Kendo ListView for PHP
 description: Learn how to do create, update and destroy with Kendo UI ListView for PHP
 ---
 

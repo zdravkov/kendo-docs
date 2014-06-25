@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-editable-rotate-thumb-stroke
+title: diagram-editable-rotate-thumb-stroke
 ---
 
 # \<kendo:diagram-editable-rotate-thumb-stroke\>

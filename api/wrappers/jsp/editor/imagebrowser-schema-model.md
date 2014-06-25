@@ -1,5 +1,5 @@
 ---
-nav_title: editor-imageBrowser-schema-model
+title: editor-imageBrowser-schema-model
 ---
 
 # \<kendo:editor-imageBrowser-schema-model\>

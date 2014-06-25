@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPieLabelsAlign
+title: ChartPieLabelsAlign
 ---
 
 # Kendo.Mvc.UI.ChartPieLabelsAlign

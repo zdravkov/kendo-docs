@@ -1,5 +1,5 @@
 ---
-nav_title: Building the Social Stats Page
+title: Building the Social Stats Page
 ---
 
 # Building the Social Stats Page

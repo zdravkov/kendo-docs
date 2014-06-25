@@ -1,5 +1,5 @@
 ---
-nav_title: ComboBoxAnimationClose
+title: ComboBoxAnimationClose
 ---
 
 # \Kendo\UI\ComboBoxAnimationClose

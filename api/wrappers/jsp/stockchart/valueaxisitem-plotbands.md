@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-valueAxisItem-plotBands
+title: stockChart-valueAxisItem-plotBands
 ---
 
 # \<kendo:stockChart-valueAxisItem-plotBands\>

@@ -1,5 +1,5 @@
 ---
-nav_title: Button
+title: Button
 ---
 
 # \Kendo\UI\Button

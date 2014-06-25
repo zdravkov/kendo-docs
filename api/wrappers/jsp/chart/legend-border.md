@@ -1,5 +1,5 @@
 ---
-nav_title: chart-legend-border
+title: chart-legend-border
 ---
 
 # \<kendo:chart-legend-border\>

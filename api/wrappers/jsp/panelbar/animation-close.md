@@ -1,5 +1,5 @@
 ---
-nav_title: panelBar-animation-close
+title: panelBar-animation-close
 ---
 
 # \<kendo:panelBar-animation-close\>

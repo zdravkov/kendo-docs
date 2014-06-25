@@ -1,5 +1,5 @@
 ---
-nav_title: ComboBoxAnimation
+title: ComboBoxAnimation
 ---
 
 # \Kendo\UI\ComboBoxAnimation

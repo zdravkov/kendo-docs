@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerGroup
+title: SchedulerGroup
 ---
 
 # \Kendo\UI\SchedulerGroup

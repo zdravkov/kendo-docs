@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the Kendo UI MobileView HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile View widget
+title: Overview
+page_title: How to use the Kendo UI MobileView HtmlHelper extension, server-side ASP.NET MVC wrapper for Kendo UI Mobile View widget
 description: Learn how to initialize Kendo UI MobileView for ASP.NET MVC, handle Kendo UI MobileView Events, access an existing view with MobileView HtmlHelper extension documentation.
 ---
 

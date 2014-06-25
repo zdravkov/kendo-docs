@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-layout
+title: diagram-layout
 ---
 
 # \<kendo:diagram-layout\>

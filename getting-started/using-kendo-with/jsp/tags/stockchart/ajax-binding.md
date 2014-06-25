@@ -1,5 +1,5 @@
 ---
-nav_title: Ajax Binding
+title: Ajax Binding
 ---
 
 ## Ajax Binding

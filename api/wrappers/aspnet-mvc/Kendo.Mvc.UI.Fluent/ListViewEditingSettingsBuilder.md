@@ -1,5 +1,5 @@
 ---
-nav_title: ListViewEditingSettingsBuilder
+title: ListViewEditingSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewEditingSettingsBuilder

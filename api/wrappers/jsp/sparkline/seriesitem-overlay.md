@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-seriesItem-overlay
+title: sparkline-seriesItem-overlay
 ---
 
 # \<kendo:sparkline-seriesItem-overlay\>

@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsShapeStyleStroke
+title: MapLayerDefaultsShapeStyleStroke
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsShapeStyleStroke

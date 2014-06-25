@@ -1,5 +1,5 @@
 ---
-nav_title: qRCode-border
+title: qRCode-border
 ---
 
 # \<kendo:qRCode-border\>

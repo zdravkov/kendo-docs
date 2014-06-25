@@ -1,5 +1,5 @@
 ---
-nav_title: editor-fileBrowser
+title: editor-fileBrowser
 ---
 
 # \<kendo:editor-fileBrowser\>

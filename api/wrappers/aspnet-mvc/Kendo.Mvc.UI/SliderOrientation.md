@@ -1,5 +1,5 @@
 ---
-nav_title: SliderOrientation
+title: SliderOrientation
 ---
 
 # Kendo.Mvc.UI.SliderOrientation

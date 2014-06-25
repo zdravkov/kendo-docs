@@ -1,6 +1,6 @@
 ---
-nav_title: Interact With an Existing DB
-title: Interact with an existing database |Kendo UI DataSource Documentation
+title: Interact With an Existing DB
+page_title: Interact with an existing database |Kendo UI DataSource Documentation
 description: Learn how to interact with an existing database via the DataSource, included in Kendo UI framework.
 ---
 

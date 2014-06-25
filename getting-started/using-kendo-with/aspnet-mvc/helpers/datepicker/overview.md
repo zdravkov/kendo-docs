@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: DatePicker HtmlHelper extension | Kendo UI documentation
+title: Overview
+page_title: DatePicker HtmlHelper extension | Kendo UI documentation
 description: How to add DatePicker HtmlHelper extension for Kendo UI DatePicker widget and operate values, access and existing server-side wrapper.
 ---
 

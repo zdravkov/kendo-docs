@@ -1,5 +1,5 @@
 ---
-nav_title: GanttMessages
+title: GanttMessages
 ---
 
 # \Kendo\UI\GanttMessages

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPieSeriesHighlightBuilder
+title: ChartPieSeriesHighlightBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartPieSeriesHighlightBuilder

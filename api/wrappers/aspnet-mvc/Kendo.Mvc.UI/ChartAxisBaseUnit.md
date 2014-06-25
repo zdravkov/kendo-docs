@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisBaseUnit
+title: ChartAxisBaseUnit
 ---
 
 # Kendo.Mvc.UI.ChartAxisBaseUnit

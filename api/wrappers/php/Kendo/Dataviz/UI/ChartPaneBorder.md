@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPaneBorder
+title: ChartPaneBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartPaneBorder

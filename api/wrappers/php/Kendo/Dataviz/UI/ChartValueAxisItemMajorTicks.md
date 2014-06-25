@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItemMajorTicks
+title: ChartValueAxisItemMajorTicks
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemMajorTicks

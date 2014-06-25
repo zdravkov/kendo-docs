@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Button HtmlHelper extension for Kendo UI Button widget | Kendo UI documentation
+title: Overview
+page_title: Button HtmlHelper extension for Kendo UI Button widget | Kendo UI documentation
 description: Getting started with Button HtmlHelper extension in quick steps - configure Kendo UI Button widget and operate Kendo UI Button events.
 ---
 

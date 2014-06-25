@@ -1,5 +1,5 @@
 ---
-nav_title: ChartAxisCrosshairBuilder
+title: ChartAxisCrosshairBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartAxisCrosshairBuilder

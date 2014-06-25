@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineValueAxisItemTitle
+title: SparklineValueAxisItemTitle
 ---
 
 # \Kendo\Dataviz\UI\SparklineValueAxisItemTitle

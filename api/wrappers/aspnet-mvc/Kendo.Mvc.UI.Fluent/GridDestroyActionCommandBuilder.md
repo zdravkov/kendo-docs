@@ -1,5 +1,5 @@
 ---
-nav_title: GridDestroyActionCommandBuilder
+title: GridDestroyActionCommandBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridDestroyActionCommandBuilder

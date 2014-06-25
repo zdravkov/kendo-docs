@@ -1,5 +1,5 @@
 ---
-nav_title: CompositeFilterDescriptor
+title: CompositeFilterDescriptor
 ---
 
 # Kendo.Mvc.CompositeFilterDescriptor

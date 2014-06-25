@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: User guide for Kendo UI NumericTextBox widget | Kendo UI documentation
+title: Overview
+page_title: User guide for Kendo UI NumericTextBox widget | Kendo UI documentation
 description: How to configure a simple Kendo UI NumericTextBox widget, add NumericTextBox, handle events to control widget's behavior.
 ---
 

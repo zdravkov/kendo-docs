@@ -1,5 +1,5 @@
 ---
-nav_title: ChartYAxisItemNotes
+title: ChartYAxisItemNotes
 ---
 
 # \Kendo\Dataviz\UI\ChartYAxisItemNotes

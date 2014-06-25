@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineCategoryAxisItemMajorGridLines
+title: SparklineCategoryAxisItemMajorGridLines
 ---
 
 # \Kendo\Dataviz\UI\SparklineCategoryAxisItemMajorGridLines

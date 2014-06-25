@@ -1,5 +1,5 @@
 ---
-nav_title: RangeSliderEventBuilder
+title: RangeSliderEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.RangeSliderEventBuilder

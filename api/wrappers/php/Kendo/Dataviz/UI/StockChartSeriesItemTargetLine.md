@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartSeriesItemTargetLine
+title: StockChartSeriesItemTargetLine
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesItemTargetLine

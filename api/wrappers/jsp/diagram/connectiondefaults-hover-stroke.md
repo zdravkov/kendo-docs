@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-connectionDefaults-hover-stroke
+title: diagram-connectionDefaults-hover-stroke
 ---
 
 # \<kendo:diagram-connectionDefaults-hover-stroke\>

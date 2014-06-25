@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Diagram HtmlHelper extension | Kendo UI documentation
+title: Overview
+page_title: Diagram HtmlHelper extension | Kendo UI documentation
 description: Configuration of Kendo UI Diagram widget for server binding in quick steps, add Diagram HtmlHelper extension, manipulate Kendo UI diagram events.
 ---
 

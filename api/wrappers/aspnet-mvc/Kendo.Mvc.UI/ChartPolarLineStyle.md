@@ -1,5 +1,5 @@
 ---
-nav_title: ChartPolarLineStyle
+title: ChartPolarLineStyle
 ---
 
 # Kendo.Mvc.UI.ChartPolarLineStyle

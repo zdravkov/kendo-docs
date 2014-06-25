@@ -1,6 +1,6 @@
 ---
-nav_title: Value
-title: Value binding in Kendo UI MVVM | Kendo UI Documentation
+title: Value
+page_title: Value binding in Kendo UI MVVM | Kendo UI Documentation
 description: Keep the value of a DOM widget and the value of a View-Model field in sync by using value binding in Kendo UI MVVM.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: TimezoneEditorEventBuilder
+title: TimezoneEditorEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TimezoneEditorEventBuilder

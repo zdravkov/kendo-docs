@@ -1,5 +1,5 @@
 ---
-nav_title: TreeViewBuilder
+title: TreeViewBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.TreeViewBuilder

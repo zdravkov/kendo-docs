@@ -1,5 +1,5 @@
 ---
-nav_title: ChartValueAxisItemNotesLabelBorder
+title: ChartValueAxisItemNotesLabelBorder
 ---
 
 # \Kendo\Dataviz\UI\ChartValueAxisItemNotesLabelBorder

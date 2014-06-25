@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Notification PHP wrapper for Kendo UI Notification widget | Kendo UI documentation
+title: Overview
+page_title: Notification PHP wrapper for Kendo UI Notification widget | Kendo UI documentation
 description: Getting started with Notification PHP wrapper in quick steps - configure Kendo UI Notification widget and operate Kendo UI Notification events.
 ---
 

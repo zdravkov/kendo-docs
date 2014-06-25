@@ -1,5 +1,5 @@
 ---
-nav_title: editor-imageBrowser-messages
+title: editor-imageBrowser-messages
 ---
 
 # \<kendo:editor-imageBrowser-messages\>

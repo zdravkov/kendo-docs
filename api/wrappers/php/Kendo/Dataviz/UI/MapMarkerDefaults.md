@@ -1,5 +1,5 @@
 ---
-nav_title: MapMarkerDefaults
+title: MapMarkerDefaults
 ---
 
 # \Kendo\Dataviz\UI\MapMarkerDefaults

@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-connection-hover
+title: diagram-connection-hover
 ---
 
 # \<kendo:diagram-connection-hover\>

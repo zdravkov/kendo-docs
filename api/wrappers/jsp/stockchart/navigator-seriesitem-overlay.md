@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-seriesItem-overlay
+title: stockChart-navigator-seriesItem-overlay
 ---
 
 # \<kendo:stockChart-navigator-seriesItem-overlay\>

@@ -1,5 +1,5 @@
 ---
-nav_title: EditorFileBrowserSchema
+title: EditorFileBrowserSchema
 ---
 
 # \Kendo\UI\EditorFileBrowserSchema

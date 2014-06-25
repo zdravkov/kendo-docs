@@ -1,5 +1,5 @@
 ---
-nav_title: UploadEventBuilder
+title: UploadEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.UploadEventBuilder

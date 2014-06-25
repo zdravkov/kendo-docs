@@ -1,5 +1,5 @@
 ---
-nav_title: GridToolBarCommandFactory
+title: GridToolBarCommandFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.GridToolBarCommandFactory

@@ -1,5 +1,5 @@
 ---
-nav_title: ColorPickerPalette
+title: ColorPickerPalette
 ---
 
 # Kendo.Mvc.UI.ColorPickerPalette

@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.data.SchedulerDataSource
-title: API Reference for Kendo UI SchedulerDataSource
+title: SchedulerDataSource
+page_title: API Reference for Kendo UI SchedulerDataSource
 description: Learn more about the configuration of Kendo UI SchedulerDataSource, methods and events.
 ---
 

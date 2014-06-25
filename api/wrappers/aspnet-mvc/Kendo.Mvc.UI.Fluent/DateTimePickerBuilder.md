@@ -1,5 +1,5 @@
 ---
-nav_title: DateTimePickerBuilder
+title: DateTimePickerBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DateTimePickerBuilder

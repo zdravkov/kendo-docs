@@ -1,5 +1,5 @@
 ---
-nav_title: upload
+title: upload
 ---
 
 # \<kendo:upload\>

@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-yAxisItem-labels-border
+title: stockChart-yAxisItem-labels-border
 ---
 
 # \<kendo:stockChart-yAxisItem-labels-border\>

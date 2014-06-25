@@ -1,5 +1,5 @@
 ---
-nav_title: chart-valueAxis-majorTicks
+title: chart-valueAxis-majorTicks
 ---
 
 # \<kendo:chart-valueAxis-majorTicks\>

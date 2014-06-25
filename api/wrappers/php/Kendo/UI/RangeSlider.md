@@ -1,5 +1,5 @@
 ---
-nav_title: RangeSlider
+title: RangeSlider
 ---
 
 # \Kendo\UI\RangeSlider

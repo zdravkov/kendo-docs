@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-chartArea
+title: sparkline-chartArea
 ---
 
 # \<kendo:sparkline-chartArea\>

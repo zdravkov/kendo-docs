@@ -1,5 +1,5 @@
 ---
-nav_title: AutoComplete
+title: AutoComplete
 ---
 
 # \Kendo\UI\AutoComplete

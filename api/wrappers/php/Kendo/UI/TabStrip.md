@@ -1,5 +1,5 @@
 ---
-nav_title: TabStrip
+title: TabStrip
 ---
 
 # \Kendo\UI\TabStrip

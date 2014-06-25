@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramShapeHoverSettingsBuilder
+title: DiagramShapeHoverSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramShapeHoverSettingsBuilder

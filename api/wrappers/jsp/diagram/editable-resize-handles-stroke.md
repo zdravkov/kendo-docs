@@ -1,5 +1,5 @@
 ---
-nav_title: diagram-editable-resize-handles-stroke
+title: diagram-editable-resize-handles-stroke
 ---
 
 # \<kendo:diagram-editable-resize-handles-stroke\>

@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemTarget
+title: ChartSeriesItemTarget
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemTarget

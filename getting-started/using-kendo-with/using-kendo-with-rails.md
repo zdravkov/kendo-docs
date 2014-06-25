@@ -1,6 +1,6 @@
 ---
-nav_title: Using Kendo With Rails
-title: Examples of using Kendo UI in Ruby on Rails apps
+title: Using Kendo With Rails
+page_title: Examples of using Kendo UI in Ruby on Rails apps
 description: Learn how to quickly add Kendo UI to your Ruby on Rails application with the kendoui-rails Gem.
 related: gs-what-is-kendo, gs-downloading-kendo
 ---

@@ -1,5 +1,5 @@
 ---
-nav_title: tabStrip-item
+title: tabStrip-item
 ---
 
 # \<kendo:tabStrip-item\>

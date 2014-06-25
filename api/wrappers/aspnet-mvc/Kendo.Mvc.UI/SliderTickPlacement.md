@@ -1,5 +1,5 @@
 ---
-nav_title: SliderTickPlacement
+title: SliderTickPlacement
 ---
 
 # Kendo.Mvc.UI.SliderTickPlacement

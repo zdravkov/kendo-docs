@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
-title: Documentation for Chart widget in Kendo UI DataViz
+title: Overview
+page_title: Documentation for Chart widget in Kendo UI DataViz
 description: How to create a chart, enable the visualization of a series that displays inline data, explore the quick overview of Chart widget major features.
-nav_position: 1
+position: 1
 ---
 
 # Chart Overview

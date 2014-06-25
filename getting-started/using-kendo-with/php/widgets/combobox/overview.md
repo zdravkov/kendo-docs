@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: How to use the ComboBox PHP class, server-side wrapper for Kendo UI ComboBox widget
+title: Overview
+page_title: How to use the ComboBox PHP class, server-side wrapper for Kendo UI ComboBox widget
 description: Learn how to bind Kendo UI ComboBox for PHP, handle Kendo UI ComboBox Events, access an existing combobox.
 ---
 

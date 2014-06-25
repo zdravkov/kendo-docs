@@ -1,5 +1,5 @@
 ---
-nav_title: GridActionCommandBuilderBase
+title: GridActionCommandBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.GridActionCommandBuilderBase

@@ -1,8 +1,8 @@
 ---
-nav_title: Modes
-title: Modes in Kendo UI jQuery-based file Upload widget
+title: Modes
+page_title: Modes in Kendo UI jQuery-based file Upload widget
 description: How to use different modes in Kendo UI Upload widget, initialization of the Upload from an existing file and further async, implemented by using the HTML5 File API.
-nav_position: 4
+position: 4
 ---
 # Upload Modes
 

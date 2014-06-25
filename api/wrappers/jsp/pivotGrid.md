@@ -1,5 +1,5 @@
 ---
-nav_title: pivotGrid
+title: pivotGrid
 ---
 
 # \<kendo:pivotGrid\>

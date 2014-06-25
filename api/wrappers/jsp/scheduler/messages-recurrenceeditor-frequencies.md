@@ -1,5 +1,5 @@
 ---
-nav_title: scheduler-messages-recurrenceEditor-frequencies
+title: scheduler-messages-recurrenceEditor-frequencies
 ---
 
 # \<kendo:scheduler-messages-recurrenceEditor-frequencies\>

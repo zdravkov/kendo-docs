@@ -1,5 +1,5 @@
 ---
-nav_title: GridSortSettingsBuilder
+title: GridSortSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GridSortSettingsBuilder

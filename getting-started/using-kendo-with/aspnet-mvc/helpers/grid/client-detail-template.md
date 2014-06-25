@@ -1,6 +1,6 @@
 ---
-nav_title: Client Detail Template
-title: Configure Kendo UI Grid Client Detail Template
+title: Client Detail Template
+page_title: Configure Kendo UI Grid Client Detail Template
 description: Set the detail template of Kendo UI Grid used during ajax binding
 ---
 

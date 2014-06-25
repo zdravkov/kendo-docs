@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-chartArea-border
+title: sparkline-chartArea-border
 ---
 
 # \<kendo:sparkline-chartArea-border\>

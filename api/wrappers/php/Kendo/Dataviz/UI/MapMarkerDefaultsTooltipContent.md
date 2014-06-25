@@ -1,5 +1,5 @@
 ---
-nav_title: MapMarkerDefaultsTooltipContent
+title: MapMarkerDefaultsTooltipContent
 ---
 
 # \Kendo\Dataviz\UI\MapMarkerDefaultsTooltipContent

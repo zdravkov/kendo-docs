@@ -1,5 +1,5 @@
 ---
-nav_title: SparklineSeriesItemTooltipBorder
+title: SparklineSeriesItemTooltipBorder
 ---
 
 # \Kendo\Dataviz\UI\SparklineSeriesItemTooltipBorder

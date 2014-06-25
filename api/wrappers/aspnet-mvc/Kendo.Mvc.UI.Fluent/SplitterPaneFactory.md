@@ -1,5 +1,5 @@
 ---
-nav_title: SplitterPaneFactory
+title: SplitterPaneFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.SplitterPaneFactory

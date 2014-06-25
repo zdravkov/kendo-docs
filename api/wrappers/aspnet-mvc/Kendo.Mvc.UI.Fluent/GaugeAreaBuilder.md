@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeAreaBuilder
+title: GaugeAreaBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeAreaBuilder

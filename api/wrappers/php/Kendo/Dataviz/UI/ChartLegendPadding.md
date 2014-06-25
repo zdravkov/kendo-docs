@@ -1,5 +1,5 @@
 ---
-nav_title: ChartLegendPadding
+title: ChartLegendPadding
 ---
 
 # \Kendo\Dataviz\UI\ChartLegendPadding

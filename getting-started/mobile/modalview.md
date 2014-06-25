@@ -1,6 +1,6 @@
 ---
-nav_title: ModalView
-title: Documentation for Kendo UI ModalView mobile widget
+title: ModalView
+page_title: Documentation for Kendo UI ModalView mobile widget
 description: How to initialize and use a mobile ModalView component in Kendo UI Mobile framework. Quick steps that help you open the ModalView with any mobile navigation widget.
 ---
 

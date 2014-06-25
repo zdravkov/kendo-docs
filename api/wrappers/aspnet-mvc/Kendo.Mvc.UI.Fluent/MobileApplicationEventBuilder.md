@@ -1,5 +1,5 @@
 ---
-nav_title: MobileApplicationEventBuilder
+title: MobileApplicationEventBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MobileApplicationEventBuilder

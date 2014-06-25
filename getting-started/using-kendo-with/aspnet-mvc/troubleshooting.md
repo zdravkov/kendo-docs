@@ -1,6 +1,6 @@
 ---
-nav_title: Troubleshooting
-title: Troubleshooting guide for Telerik UI for ASP.NET MVC
+title: Troubleshooting
+page_title: Troubleshooting guide for Telerik UI for ASP.NET MVC
 description: Find solutions for common problems which you may face while using Telerik UI for ASP.NET MVC
 ---
 

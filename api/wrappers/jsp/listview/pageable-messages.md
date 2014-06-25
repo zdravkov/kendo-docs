@@ -1,5 +1,5 @@
 ---
-nav_title: listView-pageable-messages
+title: listView-pageable-messages
 ---
 
 # \<kendo:listView-pageable-messages\>

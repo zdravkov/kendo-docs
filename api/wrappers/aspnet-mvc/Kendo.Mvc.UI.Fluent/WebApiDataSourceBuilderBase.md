@@ -1,5 +1,5 @@
 ---
-nav_title: WebApiDataSourceBuilderBase
+title: WebApiDataSourceBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.WebApiDataSourceBuilderBase

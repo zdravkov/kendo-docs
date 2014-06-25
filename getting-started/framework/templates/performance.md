@@ -1,8 +1,8 @@
 ---
-nav_title: Performance
-title: Template Performance in Kendo UI Framework
+title: Performance
+page_title: Template Performance in Kendo UI Framework
 description: Kendo UI templates use several techniques to achieve high performance and be up to 60 times faster than jQuery Templates.
-nav_position: 2
+position: 2
 ---
 
 # Kendo UI Template Performance

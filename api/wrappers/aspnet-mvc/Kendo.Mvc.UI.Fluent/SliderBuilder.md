@@ -1,5 +1,5 @@
 ---
-nav_title: SliderBuilder
+title: SliderBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SliderBuilder

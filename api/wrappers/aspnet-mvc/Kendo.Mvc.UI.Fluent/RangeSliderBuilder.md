@@ -1,5 +1,5 @@
 ---
-nav_title: RangeSliderBuilder
+title: RangeSliderBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.RangeSliderBuilder

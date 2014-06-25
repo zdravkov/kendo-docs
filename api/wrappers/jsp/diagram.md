@@ -1,5 +1,5 @@
 ---
-nav_title: diagram
+title: diagram
 ---
 
 # \<kendo:diagram\>

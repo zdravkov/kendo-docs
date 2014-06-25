@@ -1,6 +1,6 @@
 ---
-nav_title: ASP.NET MVC 5
-title: Using Kendo UI with ASP.NET MVC 5
+title: ASP.NET MVC 5
+page_title: Using Kendo UI with ASP.NET MVC 5
 description: How to use Telerik UI  for ASP.NET MVC in ASP.NET MVC 5 applications
 ---
 # Kendo UI in ASP.NET MVC 5 applications

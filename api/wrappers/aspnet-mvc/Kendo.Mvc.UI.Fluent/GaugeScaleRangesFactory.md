@@ -1,5 +1,5 @@
 ---
-nav_title: GaugeScaleRangesFactory
+title: GaugeScaleRangesFactory
 ---
 
 # Kendo.Mvc.UI.Fluent.GaugeScaleRangesFactory

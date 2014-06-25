@@ -1,5 +1,5 @@
 ---
-nav_title: StockChartSeriesDefaultsStack
+title: StockChartSeriesDefaultsStack
 ---
 
 # \Kendo\Dataviz\UI\StockChartSeriesDefaultsStack

@@ -1,5 +1,5 @@
 ---
-nav_title: MobileWidget
+title: MobileWidget
 ---
 
 # kendo.mobile.ui.Widget

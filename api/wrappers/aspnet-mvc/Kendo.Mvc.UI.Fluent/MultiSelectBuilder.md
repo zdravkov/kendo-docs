@@ -1,5 +1,5 @@
 ---
-nav_title: MultiSelectBuilder
+title: MultiSelectBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.MultiSelectBuilder

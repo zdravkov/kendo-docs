@@ -1,5 +1,5 @@
 ---
-nav_title: DataSourceFilterComparisonDescriptorBuilderBase
+title: DataSourceFilterComparisonDescriptorBuilderBase
 ---
 
 # Kendo.Mvc.UI.Fluent.DataSourceFilterComparisonDescriptorBuilderBase

@@ -1,6 +1,6 @@
 ---
-nav_title: Rendering
-title: Understanding the different rendering modes in Kendo UI Javascript DataViz suite
+title: Rendering
+page_title: Understanding the different rendering modes in Kendo UI Javascript DataViz suite
 description: How to configure the rendering modes in the Kendo UI DataViz suite.
 ---
 

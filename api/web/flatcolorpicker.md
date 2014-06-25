@@ -1,6 +1,6 @@
 ---
-nav_title: kendo.ui.FlatColorPicker
-title: Configuration, methods and events of Kendo UI FlatColorPicker
+title: FlatColorPicker
+page_title: Configuration, methods and events of Kendo UI FlatColorPicker
 ---
 
 # kendo.ui.FlatColorPicker

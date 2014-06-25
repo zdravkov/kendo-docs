@@ -1,5 +1,5 @@
 ---
-nav_title: QRBorderBuilder
+title: QRBorderBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.QRBorderBuilder

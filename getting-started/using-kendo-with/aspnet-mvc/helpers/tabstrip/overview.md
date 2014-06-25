@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Support for TabStip HtmlHelper extension for Kendo UI TabStrip for ASP.NET MVC widget
+title: Overview
+page_title: Support for TabStip HtmlHelper extension for Kendo UI TabStrip for ASP.NET MVC widget
 description: How to define items of the Kendo UI TabStrip widget for ASP.NET MVC, reference an existing TabStrip instance and handle TabStrip events.
 ---
 

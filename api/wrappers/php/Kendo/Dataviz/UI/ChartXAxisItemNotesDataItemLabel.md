@@ -1,5 +1,5 @@
 ---
-nav_title: ChartXAxisItemNotesDataItemLabel
+title: ChartXAxisItemNotesDataItemLabel
 ---
 
 # \Kendo\Dataviz\UI\ChartXAxisItemNotesDataItemLabel

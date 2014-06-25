@@ -1,6 +1,6 @@
 ---
-nav_title: Resources
-title: Resources and the Kendo UI Scheduler widget
+title: Resources
+page_title: Resources and the Kendo UI Scheduler widget
 description: How to use resources with Kendo UI Scheduler.
 ---
 

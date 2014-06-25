@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxisItem-notes-dataItem-label
+title: chart-categoryAxisItem-notes-dataItem-label
 ---
 
 # \<kendo:chart-categoryAxisItem-notes-dataItem-label\>

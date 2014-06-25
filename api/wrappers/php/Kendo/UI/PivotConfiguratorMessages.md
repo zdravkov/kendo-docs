@@ -1,5 +1,5 @@
 ---
-nav_title: PivotConfiguratorMessages
+title: PivotConfiguratorMessages
 ---
 
 # \Kendo\UI\PivotConfiguratorMessages

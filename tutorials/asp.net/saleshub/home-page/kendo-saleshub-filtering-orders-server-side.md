@@ -1,5 +1,5 @@
 ---
-nav_title: Filtering Order's Server-Side
+title: Filtering Order's Server-Side
 ---
 
 # Filtering Orders Server-Side - SalesHub

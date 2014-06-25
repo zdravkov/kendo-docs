@@ -1,5 +1,5 @@
 ---
-nav_title: MapLayerDefaultsShape
+title: MapLayerDefaultsShape
 ---
 
 # \Kendo\Dataviz\UI\MapLayerDefaultsShape

@@ -1,6 +1,6 @@
 ---
-nav_title: Configuration
-title: Configuration of Kendo jQuery ListView widget for ASP.NET MVC
+title: Configuration
+page_title: Configuration of Kendo jQuery ListView widget for ASP.NET MVC
 description: How to configure the TagName of Kendo ListView for ASP.NET MVC and set Client Template ID of the script element.
 ---
 

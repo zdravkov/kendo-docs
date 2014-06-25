@@ -1,6 +1,6 @@
 ---
-nav_title: Editing
-title: Editing of Kendo jQuery ListView for ASP.NET MVC
+title: Editing
+page_title: Editing of Kendo jQuery ListView for ASP.NET MVC
 description: Find which steps to follow in order to configure Kendo UI ListView for ASP.NET MVC for editing.
 ---
 

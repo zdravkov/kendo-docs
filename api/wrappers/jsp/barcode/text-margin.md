@@ -1,5 +1,5 @@
 ---
-nav_title: barcode-text-margin
+title: barcode-text-margin
 ---
 
 # \<kendo:barcode-text-margin\>

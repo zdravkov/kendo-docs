@@ -1,5 +1,5 @@
 ---
-nav_title: ListViewPageable
+title: ListViewPageable
 ---
 
 # \Kendo\UI\ListViewPageable

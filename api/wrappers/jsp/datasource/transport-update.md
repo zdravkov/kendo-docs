@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-transport-update
+title: dataSource-transport-update
 ---
 
 # \<kendo:dataSource-transport-update\>

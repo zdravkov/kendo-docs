@@ -1,5 +1,5 @@
 ---
-nav_title: EditorToolItem
+title: EditorToolItem
 ---
 
 # \Kendo\UI\EditorToolItem

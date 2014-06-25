@@ -1,5 +1,5 @@
 ---
-nav_title: GanttView
+title: GanttView
 ---
 
 # \Kendo\UI\GanttView

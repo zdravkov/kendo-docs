@@ -1,5 +1,5 @@
 ---
-nav_title: TabStripAnimation
+title: TabStripAnimation
 ---
 
 # \Kendo\UI\TabStripAnimation

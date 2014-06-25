@@ -1,6 +1,6 @@
 ---
-nav_title: VB Syntax
-title: Visual Basic syntax in Kendo UI MVC wrapper declarations
+title: VB Syntax
+page_title: Visual Basic syntax in Kendo UI MVC wrapper declarations
 description: Example of correct VB Syntax which is applicable to anonymous types and lambda expressions in Kendo UI MVC wrapper declarations.
 ---
 

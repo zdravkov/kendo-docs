@@ -1,5 +1,5 @@
 ---
-nav_title: SecurityTrimmingBuilder
+title: SecurityTrimmingBuilder
 ---
 
 # Kendo.Mvc.UI.SecurityTrimmingBuilder

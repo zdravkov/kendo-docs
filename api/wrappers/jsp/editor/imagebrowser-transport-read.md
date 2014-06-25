@@ -1,5 +1,5 @@
 ---
-nav_title: editor-imageBrowser-transport-read
+title: editor-imageBrowser-transport-read
 ---
 
 # \<kendo:editor-imageBrowser-transport-read\>

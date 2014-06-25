@@ -1,5 +1,5 @@
 ---
-nav_title: chart-categoryAxisItem-select-mousewheel
+title: chart-categoryAxisItem-select-mousewheel
 ---
 
 # \<kendo:chart-categoryAxisItem-select-mousewheel\>

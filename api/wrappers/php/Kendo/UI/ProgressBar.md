@@ -1,5 +1,5 @@
 ---
-nav_title: ProgressBar
+title: ProgressBar
 ---
 
 # \Kendo\UI\ProgressBar

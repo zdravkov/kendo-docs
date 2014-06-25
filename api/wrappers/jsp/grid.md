@@ -1,5 +1,5 @@
 ---
-nav_title: grid
+title: grid
 ---
 
 # \<kendo:grid\>

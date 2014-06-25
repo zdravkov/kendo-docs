@@ -1,5 +1,5 @@
 ---
-nav_title: chart-valueAxisItem-plotBand
+title: chart-valueAxisItem-plotBand
 ---
 
 # \<kendo:chart-valueAxisItem-plotBand\>

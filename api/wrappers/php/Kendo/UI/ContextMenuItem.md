@@ -1,5 +1,5 @@
 ---
-nav_title: ContextMenuItem
+title: ContextMenuItem
 ---
 
 # \Kendo\UI\ContextMenuItem

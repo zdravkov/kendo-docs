@@ -1,5 +1,5 @@
 ---
-nav_title: linearGauge-pointer-track
+title: linearGauge-pointer-track
 ---
 
 # \<kendo:linearGauge-pointer-track\>

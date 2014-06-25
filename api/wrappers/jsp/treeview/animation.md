@@ -1,5 +1,5 @@
 ---
-nav_title: treeView-animation
+title: treeView-animation
 ---
 
 # \<kendo:treeView-animation\>

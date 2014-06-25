@@ -1,5 +1,5 @@
 ---
-nav_title: ListViewSelectionSettingsBuilder
+title: ListViewSelectionSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ListViewSelectionSettingsBuilder

@@ -1,5 +1,5 @@
 ---
-nav_title: dataSource-groupItem
+title: dataSource-groupItem
 ---
 
 # \<kendo:dataSource-groupItem\>

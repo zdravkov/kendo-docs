@@ -1,5 +1,5 @@
 ---
-nav_title: ChartLegend
+title: ChartLegend
 ---
 
 # \Kendo\Dataviz\UI\ChartLegend

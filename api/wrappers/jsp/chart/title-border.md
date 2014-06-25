@@ -1,5 +1,5 @@
 ---
-nav_title: chart-title-border
+title: chart-title-border
 ---
 
 # \<kendo:chart-title-border\>

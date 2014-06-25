@@ -1,5 +1,5 @@
 ---
-nav_title: stockChart-navigator-pane-padding
+title: stockChart-navigator-pane-padding
 ---
 
 # \<kendo:stockChart-navigator-pane-padding\>

@@ -1,5 +1,5 @@
 ---
-nav_title: FilterableMessagesBuilder
+title: FilterableMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.FilterableMessagesBuilder

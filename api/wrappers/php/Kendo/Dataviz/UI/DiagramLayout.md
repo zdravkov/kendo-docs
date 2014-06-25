@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramLayout
+title: DiagramLayout
 ---
 
 # \Kendo\Dataviz\UI\DiagramLayout

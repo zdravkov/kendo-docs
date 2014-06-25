@@ -1,5 +1,5 @@
 ---
-nav_title: ChartNavigatorHintBuilder
+title: ChartNavigatorHintBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartNavigatorHintBuilder

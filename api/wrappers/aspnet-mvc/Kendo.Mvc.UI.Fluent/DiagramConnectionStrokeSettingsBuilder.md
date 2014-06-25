@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionStrokeSettingsBuilder
+title: DiagramConnectionStrokeSettingsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.DiagramConnectionStrokeSettingsBuilder

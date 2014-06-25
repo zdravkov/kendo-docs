@@ -1,5 +1,5 @@
 ---
-nav_title: ChartSeriesItemLabelsMargin
+title: ChartSeriesItemLabelsMargin
 ---
 
 # \Kendo\Dataviz\UI\ChartSeriesItemLabelsMargin

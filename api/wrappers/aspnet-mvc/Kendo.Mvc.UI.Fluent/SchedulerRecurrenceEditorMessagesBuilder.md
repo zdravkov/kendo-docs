@@ -1,5 +1,5 @@
 ---
-nav_title: SchedulerRecurrenceEditorMessagesBuilder
+title: SchedulerRecurrenceEditorMessagesBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.SchedulerRecurrenceEditorMessagesBuilder

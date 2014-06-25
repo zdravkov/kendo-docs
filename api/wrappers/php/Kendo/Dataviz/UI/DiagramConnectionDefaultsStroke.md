@@ -1,5 +1,5 @@
 ---
-nav_title: DiagramConnectionDefaultsStroke
+title: DiagramConnectionDefaultsStroke
 ---
 
 # \Kendo\Dataviz\UI\DiagramConnectionDefaultsStroke

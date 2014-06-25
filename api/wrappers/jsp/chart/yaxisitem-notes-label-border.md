@@ -1,5 +1,5 @@
 ---
-nav_title: chart-yAxisItem-notes-label-border
+title: chart-yAxisItem-notes-label-border
 ---
 
 # \<kendo:chart-yAxisItem-notes-label-border\>

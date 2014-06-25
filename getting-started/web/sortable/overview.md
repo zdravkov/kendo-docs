@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Documentation for Sortable widget in Kendo UI framework
+title: Overview
+page_title: Documentation for Sortable widget in Kendo UI framework
 description: How to use the Sortable widget.
 ---
 

@@ -1,5 +1,5 @@
 ---
-nav_title: QRCodeBuilder
+title: QRCodeBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.QRCodeBuilder

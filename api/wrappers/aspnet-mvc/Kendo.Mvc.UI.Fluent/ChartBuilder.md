@@ -1,5 +1,5 @@
 ---
-nav_title: ChartBuilder
+title: ChartBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.ChartBuilder

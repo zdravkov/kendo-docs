@@ -1,5 +1,5 @@
 ---
-nav_title: WindowActionsBuilder
+title: WindowActionsBuilder
 ---
 
 # Kendo.Mvc.UI.Fluent.WindowActionsBuilder

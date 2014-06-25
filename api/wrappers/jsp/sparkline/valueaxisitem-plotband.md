@@ -1,5 +1,5 @@
 ---
-nav_title: sparkline-valueAxisItem-plotBand
+title: sparkline-valueAxisItem-plotBand
 ---
 
 # \<kendo:sparkline-valueAxisItem-plotBand\>

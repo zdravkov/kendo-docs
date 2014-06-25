@@ -1,6 +1,6 @@
 ---
-nav_title: Server Detail Template
-title: Configure Kendo UI Grid Server Detail Template
+title: Server Detail Template
+page_title: Configure Kendo UI Grid Server Detail Template
 description: Set the detail template of Kendo UI Grid used during server binding
 ---
 

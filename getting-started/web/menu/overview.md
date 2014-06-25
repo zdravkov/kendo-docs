@@ -1,6 +1,6 @@
 ---
-nav_title: Overview
-title: Overview of Menu UI widget | Kendo UI Documentation
+title: Overview
+page_title: Overview of Menu UI widget | Kendo UI Documentation
 description: Steps that help you initialize the Menu widget using JSON data object and customize animation.
 ---
 
