@@ -4,14 +4,14 @@ title: PivotGrid
 
 # \Kendo\UI\PivotGrid
 
-A PHP wrapper for Kendo UI [PivotGrid](/kendo-ui/api/web/pivotgrid).
+A PHP wrapper for Kendo UI [PivotGrid](/api/web/pivotgrid).
 
-Inherits from [\Kendo\UI\Widget](/kendo-ui/api/wrappers/php/Kendo/UI/Widget).
+Inherits from [\Kendo\UI\Widget](/api/wrappers/php/Kendo/UI/Widget).
 
 ## Usage
 
 To use PivotGrid in a PHP page instantiate a new instance, configure it via the available
-configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/kendo-ui/api/wrappers/php/Kendo/UI/Widget#render) method.
+configuration [methods](#methods) and output it by `echo`-ing the result of the [render](/api/wrappers/php/Kendo/UI/Widget#render) method.
 
 ### Using Kendo PivotGrid
 
@@ -51,7 +51,7 @@ data source is fired. By default the widget will bind to the data source specifi
 
 ### collapseMember
 Fired before column or row field is collapsed.The event handler function context (available via the this keyword) will be set to the widget instance.
-For additional information check the [collapseMember](/kendo-ui/api/web/pivotgrid#events-collapseMember) event documentation.
+For additional information check the [collapseMember](/api/web/pivotgrid#events-collapseMember) event documentation.
 
 #### Returns
 `\Kendo\UI\PivotGrid`
@@ -78,7 +78,7 @@ For additional information check the [collapseMember](/kendo-ui/api/web/pivotgri
     $pivotGrid->collapseMember('onCollapseMember');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
@@ -105,7 +105,7 @@ The width of the table columns. Value is treated as pixels.
 
 ### dataBinding
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
-For additional information check the [dataBinding](/kendo-ui/api/web/pivotgrid#events-dataBinding) event documentation.
+For additional information check the [dataBinding](/api/web/pivotgrid#events-dataBinding) event documentation.
 
 #### Returns
 `\Kendo\UI\PivotGrid`
@@ -132,7 +132,7 @@ For additional information check the [dataBinding](/kendo-ui/api/web/pivotgrid#e
     $pivotGrid->dataBinding('onDataBinding');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
@@ -141,7 +141,7 @@ For additional information check the [dataBinding](/kendo-ui/api/web/pivotgrid#e
 
 ### dataBound
 Fired after the widget is bound to the data from its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
-For additional information check the [dataBound](/kendo-ui/api/web/pivotgrid#events-dataBound) event documentation.
+For additional information check the [dataBound](/api/web/pivotgrid#events-dataBound) event documentation.
 
 #### Returns
 `\Kendo\UI\PivotGrid`
@@ -168,7 +168,7 @@ For additional information check the [dataBound](/kendo-ui/api/web/pivotgrid#eve
     $pivotGrid->dataBound('onDataBound');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
@@ -186,7 +186,7 @@ Sets the data source of the dataSource.
 
 ##### $value `\Kendo\Data\DataSource|array`
 
-#### Example - using [\Kendo\Data\DataSource](/kendo-ui/api/wrappers/php/kendo/data/datasource)
+#### Example - using [\Kendo\Data\DataSource](/api/wrappers/php/kendo/data/datasource)
 
     <?php
     $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
@@ -204,7 +204,7 @@ Sets the data source of the dataSource.
 
 ### expandMember
 Fired before column or row field is expaneded.The event handler function context (available via the this keyword) will be set to the widget instance.
-For additional information check the [expandMember](/kendo-ui/api/web/pivotgrid#events-expandMember) event documentation.
+For additional information check the [expandMember](/api/web/pivotgrid#events-expandMember) event documentation.
 
 #### Returns
 `\Kendo\UI\PivotGrid`
@@ -231,7 +231,7 @@ For additional information check the [expandMember](/kendo-ui/api/web/pivotgrid#
     $pivotGrid->expandMember('onExpandMember');
     ?>
 
-#### Example - using [\Kendo\JavaScriptFunction](/kendo-ui/api/wrappers/php/kendo/javascriptfunction)
+#### Example - using [\Kendo\JavaScriptFunction](/api/wrappers/php/kendo/javascriptfunction)
 
     <?php
     $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
@@ -274,7 +274,7 @@ The text messages displayed in the fields sections.
 ##### $value `\Kendo\UI\PivotGridMessages|array`
 
 
-#### Example - using [\Kendo\UI\PivotGridMessages](/kendo-ui/api/wrappers/php/Kendo/UI/PivotGridMessages)
+#### Example - using [\Kendo\UI\PivotGridMessages](/api/wrappers/php/Kendo/UI/PivotGridMessages)
     <?php
     $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
     $messages = new \Kendo\UI\PivotGridMessages();
