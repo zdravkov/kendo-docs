@@ -156,6 +156,40 @@ If set to `false` the user will not be able to add/close/reorder current fields 
     });
     </script>
 
+### columnWidth `Number`
+
+The width of the table columns. Value is treated as pixels.
+
+#### Example - set the column width as a number
+
+    <div id="pivotgrid"></div>
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        columnWidth: 200,
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
 ### height `Number|String`
 
 The height of the pivotgrid. Numeric values are treated as pixels.
