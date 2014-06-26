@@ -16,6 +16,14 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:pivotGrid autoBind="autoBind">
     </kendo:pivotGrid>
 
+### columnWidth `float`
+
+The width of the table columns. Value is treated as pixels.
+
+#### Example
+    <kendo:pivotGrid columnWidth="columnWidth">
+    </kendo:pivotGrid>
+
 ### height `java.lang.Object`
 
 The height of the pivotgrid. Numeric values are treated as pixels.
