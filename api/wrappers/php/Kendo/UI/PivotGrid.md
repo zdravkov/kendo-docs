@@ -85,6 +85,24 @@ For additional information check the [collapseMember](/kendo-ui/api/web/pivotgri
     $pivotGrid->collapseMember(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### columnWidth
+The width of the table columns. Value is treated as pixels.
+
+#### Returns
+`\Kendo\UI\PivotGrid`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
+    $pivotGrid->columnWidth(1);
+    ?>
+
 ### dataBinding
 Fired before the widget binds to its data source.The event handler function context (available via the this keyword) will be set to the widget instance.
 For additional information check the [dataBinding](/kendo-ui/api/web/pivotgrid#events-dataBinding) event documentation.
