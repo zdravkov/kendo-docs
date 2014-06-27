@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
+title: Overview
 ---
 
-# Tooltip
+# ToolBar
 
 The ToolBar HtmlHelper extension is a server-side wrapper for the [Kendo UI ToolBar](/api/web/toolbar) widget.
 
@@ -56,7 +56,7 @@ Here is how to configure the Kendo AutoComplete:
             return View();
         }
 
- 3.  Add a tooltip:
+ 3.  Add a toolbar:
      - WebForms
 
              <%: Html.Kendo().ToolBar()
@@ -84,7 +84,7 @@ You can reference an existing ToolBar instance via [jQuery.data()](http://api.jq
 
 ### Accessing an existing ToolBar instance
 
-    //Put this after your Kendo Tooltip for ASP.NET MVC declaration
+    //Put this after your Kendo ToolBar for ASP.NET MVC declaration
     <script>
     $(function() {
         var toolbar = $("#container").data("kendoToolBar");
@@ -94,7 +94,7 @@ You can reference an existing ToolBar instance via [jQuery.data()](http://api.jq
 
 ## Handling Kendo UI ToolBar events
 
-You can subscribe to all [events](/api/web/toolbar#events) exposed by Kendo UI Tooltip:
+You can subscribe to all [events](/api/web/toolbar#events) exposed by Kendo UI ToolBar:
 
 ### WebForms - subscribe by handler name
 

@@ -1,5 +1,5 @@
 ---
-nav_title: Overview
+title: Overview
 title: How to use the ToolBar PHP class, server-side wrapper for Kendo UI ToolBar widget
 description: Learn how to create Kendo UI ToolBar for PHP, handle Kendo UI ToolBar Events, access an existing toolbar.
 ---

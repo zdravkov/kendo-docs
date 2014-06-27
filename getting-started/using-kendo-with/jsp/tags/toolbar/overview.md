@@ -1,8 +1,8 @@
 ---
-nav_title: Overview
+title: Overview
 ---
 
-# Tooltip
+# ToolBar
 
 The ToolBar HtmlHelper extension is a server-side wrapper for the [Kendo UI ToolBar](/api/web/toolbar) widget.
 
@@ -89,7 +89,7 @@ You can reference an existing ToolBar instance via [jQuery.data()](http://api.jq
 
 ## Handling Kendo UI ToolBar events
 
-You can subscribe to all [events](/api/web/toolbar#events) exposed by Kendo UI Tooltip:
+You can subscribe to all [events](/api/web/toolbar#events) exposed by Kendo UI ToolBar:
 
 ### WebForms - subscribe by handler name
 
