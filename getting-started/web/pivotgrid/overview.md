@@ -66,3 +66,6 @@ Once a reference has been established, you can use the [PivotGrid API](/api/web/
 ### Accessing an existing PivotGrid instance
 
     var pivotgrid = $("#pivotgrid").data("kendoPivotGrid");
+
+## Next steps:
+- [PivotConfigurator Overview](/getting-started/web/pivotgrid/configurator)
