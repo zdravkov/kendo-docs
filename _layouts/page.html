@@ -55,9 +55,14 @@ layout: index
         });
         </script>
     </div>
+
     <div id="page-article">
-    {% if page.category == "api" %}<div id="markdown-toc"></div>{% endif %}
-    {{ content }}
+        {% if page.category == "api" %}<div id="markdown-toc"></div>{% endif %}
+
+        <article>
+            {{ content }}
+        </article>
     </div>
-    {% include footer.html %}
 </div>
+
+{% include footer.html %}
