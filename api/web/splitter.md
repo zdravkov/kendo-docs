@@ -330,6 +330,10 @@ The existing pane after which the new one will be inserted.
     newPane.html("foo");
     </script>
 
+#### Returns
+
+`jQuery` the pane element.
+
 ### insertBefore
 
 Inserts a new pane before the specified one. The method returns the pane element, so it can be populated with arbitrary content, if `contentUrl` is not set.
@@ -361,6 +365,10 @@ The existing pane before which the new one will be inserted.
     // set the content of the new pane to "foo"
     newPane.html("foo");
     </script>
+
+#### Returns
+
+`jQuery` the pane element.
 
 ### max
 
