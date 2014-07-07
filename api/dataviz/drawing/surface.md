@@ -1,7 +1,6 @@
 ---
-title:kendo.dataviz.drawing.Surface
-slug:api-dataviz-drawing-Surface
-publish: true
+title: kendo.dataviz.drawing.Surface
+page_title: Configuration, methods and events of Kendo UI DataViz Drawing Surface
 ---
 
 # kendo.dataviz.drawing.Surface

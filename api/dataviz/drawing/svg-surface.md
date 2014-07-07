@@ -1,7 +1,6 @@
 ---
-title:kendo.dataviz.drawing.svg.Surface
-slug:api-dataviz-drawing-svg-Surface
-publish: true
+title: kendo.dataviz.drawing.svg.Surface
+page_title: Configuration, methods and events of Kendo UI DataViz SVG Drawing Surface
 ---
 
 # kendo.dataviz.drawing.svg.Surface

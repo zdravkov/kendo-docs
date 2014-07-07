@@ -1,7 +1,6 @@
 ---
-title:kendo.dataviz.geometry.Point
-slug:api-dataviz-geometry-Point
-publish: true
+title: kendo.dataviz.geometry.Point
+page_title: Configuration, methods and events of Kendo UI DataViz Geometry Point
 ---
 
 # kendo.dataviz.geometry.Point
