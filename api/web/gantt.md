@@ -681,7 +681,7 @@ If set to `false` the user won't be able to create, modify or delete tasks and d
 
 If set to `true` the user could navigate the widget using the keyboard. By default keyboard navigation is disabled. 
 
-> Even when the keyboard navigation is disabled the user could delete selected tasks or dependencies with the 'Del' key.
+> Even when the keyboard navigation is disabled the user could delete selected tasks or dependencies with the `Del` key.
 
 #### Example - enable keyboard navigation
 
