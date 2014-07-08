@@ -65,6 +65,15 @@ If set to false the widget will be disabled and will not allow user input. The w
     <kendo:dropDownList enable="enable">
     </kendo:dropDownList>
 
+### filter `java.lang.String`
+
+The filtering method used to determine the suggestions for the current value. Filtration is turned off by default.
+The supported filter values are startswith, endswith and contains.
+
+#### Example
+    <kendo:dropDownList filter="filter">
+    </kendo:dropDownList>
+
 ### headerTemplate `java.lang.String`
 
 Specifies a static HTML content, which will be rendered as a header of the popup element.
@@ -95,6 +104,14 @@ The index of the initially selected item. The index is 0 based.
 
 #### Example
     <kendo:dropDownList index="index">
+    </kendo:dropDownList>
+
+### minLength `float`
+
+The minimum number of characters the user must type before a filter is performed. Set to higher value than 1 if the search could match a lot of items.
+
+#### Example
+    <kendo:dropDownList minLength="minLength">
     </kendo:dropDownList>
 
 ### optionLabel `java.lang.Object`
