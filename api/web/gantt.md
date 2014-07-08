@@ -676,6 +676,46 @@ If set to `false` the user won't be able to create, modify or delete tasks and d
       editable: false
     });
     </script>
+    
+### navigatable `Boolean` *(default: false)*
+
+If set to `true` the user could navigate the widget using the keyboard. By default keyboard navigation is disabled. 
+
+> Even when the keyboard navigation is disabled the user could delete selected tasks or dependencies with the 'Del' key.
+
+#### Example - enable keyboard navigation
+
+    <div id="gantt"></div>
+    <script>      
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      navigatable: true
+    });
+    </script>
 
 ### workDayStart `Date`
 
