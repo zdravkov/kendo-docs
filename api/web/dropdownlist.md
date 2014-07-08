@@ -288,6 +288,21 @@ If set to `false` the widget will be disabled and will not allow user input. The
     });
     </script>
 
+### filter `String`*(default: "none")*
+
+The filtering method used to determine the suggestions for the current value. Filtration is turned off by default.
+The supported filter values are `startswith`, `endswith` and `contains`.
+
+#### Example - set the filter
+
+    <input id="dropdownlist" />
+    <script>
+    $("#dropdownlist").kendoDropDownList({
+      dataSource: ["Chai", "Chang", "Tofu"],
+      filter: "contains"
+    });
+    </script>
+
 ### height `Number`*(default: 200)*
 
 The height of the suggestion popup in pixels. The default value is 200 pixels.
@@ -328,6 +343,21 @@ The index of the initially selected item. The index is `0` based.
         dataValueField: "value",
         dataSource: items,
         index: 1
+    });
+    </script>
+
+### minLength `Number`*(default: 1)*
+
+The minimum number of characters the user must type before a filter is performed. Set to higher value than `1` if the search could match a lot of items.
+
+#### Example - set minLength
+
+    <input id="dropdownlist" />
+    <script>
+    $("#dropdownlist").kendoDropDownList({
+      dataSource: ["Chai", "Chang", "Tofu"],
+      filter: "contains",
+      minLength: 3
     });
     </script>
 
