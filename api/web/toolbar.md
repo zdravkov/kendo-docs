@@ -49,161 +49,863 @@ A JavaScript array that contains the ToolBar's commands configuration.
 
 Specifies the buttons of ButtonGroup.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo" },
+            { text: "bar" },
+            { text: "baz" }
+          ]
+        }
+      ]
+    });
+    </script>
+
 ### items.buttons.click `Function`
 
 Specifies the click event handler of the button. Applicable only for the children of a ButtonGroup.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    function onClick() {
+      console.log("click");
+    }
+
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo", click: onClick },
+            { text: "bar", click: onClick },
+            { text: "baz", click: onClick }
+          ]
+        }
+      ]
+    });
+    </script>
 
 ### items.buttons.enable `Boolean` *(default: true)*
 
 Specifies whether the button is initially enabled or disabled.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo", enable: false },
+            { text: "bar" },
+            { text: "baz" }
+          ]
+        }
+      ]
+    });
+    </script>
+
 ### items.buttons.group `String`
 
 Assigns the button to a group. Applicable only for the children of a ButtonGroup that has togglable true.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo", togglable: true, group: "myGroup" },
+            { text: "bar", togglable: true, group: "myGroup" },
+            { text: "baz", togglable: true, group: "myGroup" }
+          ]
+        }
+      ]
+    });
+    </script>
 
 ### items.buttons.icon `String`
 
 Sets icon for the menu button. The icon should be one of the existing in the Kendo UI theme sprite.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo", icon: "clock" },
+            { text: "bar", icon: "note" },
+            { text: "baz", icon: "refresh" }
+          ]
+        }
+      ]
+    });
+    </script>
+
 ### items.buttons.id `String`
 
 Specifies the ID of the button.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo", id: "foo" },
+            { text: "bar", id: "bar" },
+            { text: "baz", id: "baz" }
+          ]
+        }
+      ]
+    });
+    </script>
 
 ### items.buttons.imageUrl `String`
 
 If set, the ToolBar will render an image with the specified URL in the button.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo", imageUrl: "foo.png" },
+            { text: "bar", imageUrl: "bar.png" },
+            { text: "baz", imageUrl: "baz.png" }
+          ]
+        }
+      ]
+    });
+
 ### items.buttons.selected `Boolean` *(default: false)*
 
 Specifies if the toggle button is initially selected. Applicable only for the children of a ButtonGroup that has togglable true.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "buttonGroup",
+                buttons: [
+                { text: "foo", togglable: true, selected: true },
+                { text: "bar", togglable: true },
+                ]
+            }
+            ]
+        });
+    </script>
 
 ### items.buttons.showIcon `String` *(default: "both")*
 
 Specifies where the icon of the button will be displayed. Applicable only for the children of a ButtonGroup.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "buttonGroup",
+                buttons: [
+                { text: "foo", icon: "clock", showIcon: "toolbar" },
+                { text: "bar", icon: "note", showIcon: "toolbar" },
+                { text: "baz", icon: "refresh", showIcon: "toolbar" }
+                ]
+            }
+            ]
+        });
+    </script>
+
 ### items.buttons.showText `String` *(default: "both")*
 
 Specifies where the text of the menu button will be displayed. Applicable only for the buttons of a ButtonGroup.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "buttonGroup",
+                buttons: [
+                { text: "foo", icon: "clock", showText: "overflow" },
+                { text: "bar", icon: "note", showText: "overflow" },
+                { text: "baz", icon: "refresh",showText: "overflow" }
+                ]
+            }
+            ]
+        });
+    </script>
 
 ### items.buttons.spriteCssClass `String`
 
 Defines a CSS class (or multiple classes separated by spaces) which will be used for button icon.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+    $("#toolbar").kendoToolBar({
+      items: [
+        {
+          type: "buttonGroup",
+          buttons: [
+            { text: "foo", spriteCssClass: "foo, bar" },
+            { text: "bar", spriteCssClass: "bar" },
+            { text: "baz", spriteCssClass: "baz" }
+          ]
+        }
+      ]
+    });
+
 ### items.buttons.toggle `Function`
 
 Specifies the toggle event handler of the button. Applicable only for the children of a ButtonGroup.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        function toggle(e) {
+            console.log(e.group);
+        }
+
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "buttonGroup",
+                buttons: [
+                { text: "foo", togglable: true, group: "myGroup", toggle: toggle },
+                { text: "bar", togglable: true, group: "myGroup", toggle: toggle }
+                ]
+            }
+            ]
+        });
+    </script>
 
 ### items.buttons.togglable `Boolean`
 
 Specifies if the button is togglable, e.g. has a selected and unselected state. Applicable only for the children of a ButtonGroup.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "buttonGroup",
+                buttons: [
+                { text: "foo", togglable: true },
+                { text: "bar", togglable: true }
+                ]
+            }
+            ]
+        });
+    </script>
+
 ### items.buttons.text `String`
 
 Specifies the text of the menu button.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "buttonGroup",
+                buttons: [
+                { text: "foo" },
+                { text: "bar" }
+                ]
+            }
+            ]
+        });
+    </script>
 
 ### items.buttons.url `String`
 
 Specifies the url of the button to navigate to.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "buttonGroup",
+                buttons: [
+                { text: "foo", url: "http://www.telerik.com" },
+                { text: "bar", url: "http://www.google.com" },
+                ]
+            }
+            ]
+        });
+    </script>
+
 ### items.click `Function`
 
 Specifies the click event handler of the button. Applicable only for commands of type `button` and `splitButton`.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "button",
+                text: "foo",
+                click: function(e) {
+                    console.log(e.target.text() + " is clicked");
+                }
+            }
+            ]
+        });
+    </script>
 
 ### items.enable `Boolean` *(default: true)*
 
 Specifies whether the control is initially enabled or disabled. Default value is "true".
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "button",
+                text: "foo",
+                enable: false
+            }
+            ]
+        });
+    </script>
+
 ### items.group `String`
 
 Assigns the button to a group. Applicable only for buttons with `togglable: true`.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            { type: "button", text: "foo", togglable: true, group: "myGroup" },
+            { type: "button", text: "bar", togglable: true, group: "myGroup" },
+            { type: "button", text: "baz", togglable: true, group: "myGroup" }
+            ]
+        });
+    </script>
 
 ### items.icon `String`
 
 Sets icon for the item. The icon should be one of the existing in the Kendo UI theme sprite.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            { type: "button", text: "foo", icon: "clock" },
+            { type: "button", text: "bar", icon: "note" },
+            { type: "button", text: "baz", icon: "refresh" }
+            ]
+        });
+    </script>
+
 ### items.id `String`
 
 Specifies the ID of the button.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            { type: "button", text: "foo", id: "foo" },
+            { type: "button", text: "bar", id: "bar" },
+            { type: "button", text: "baz", id: "baz" }
+            ]
+        });
+    </script>
 
 ### items.imageUrl `String`
 
 If set, the ToolBar will render an image with the specified URL in the button.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+          items: [
+          { type: "button", text: "foo", imageUrl: "foo.png" },
+          { type: "button", text: "bar", imageUrl: "bar.png" },
+          { type: "button", text: "baz", imageUrl: "baz.png" }
+          ]
+        });
+    </script>
+
 ### items.menuButtons `Array`
 
 Specifies the menu buttons of a SplitButton.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [ {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Foo" },
+                    { id: "bar", text: "Bar" },
+                    { id: "baz", text: "Baz" }
+                ]
+            } ]
+        });
+    </script>
 
 ### items.menuButtons.enable `Boolean`
 
 Specifies whether the menu button is initially enabled or disabled.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Foo", enable: false },
+                    { id: "bar", text: "Bar" },
+                    { id: "baz", text: "Baz" }
+                ]
+            }
+            ]
+        });
+    </script>
+
 ### items.menuButtons.icon `String`
 
 Sets icon for the menu buttons. The icon should be one of the existing in the Kendo UI theme sprite.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Foo", icon: "tick" },
+                    { id: "bar", text: "Bar", icon: "note" },
+                    { id: "baz", text: "Baz", icon: "clock" }
+                ]
+            }
+            ]
+        });
+    </script>
 
 ### items.menuButtons.id `String`
 
 Specifies the ID of the menu buttons.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [ {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Foo" },
+                    { id: "bar", text: "Bar" },
+                    { id: "baz", text: "Baz" }
+                ]
+            } ]
+        });
+    </script>
+
 ### items.menuButtons.imageUrl `String`
 
 If set, the ToolBar will render an image with the specified URL in the menu button.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Foo", imageUrl: "foo.png" },
+                    { id: "bar", text: "Bar", imageUrl: "bar.png" },
+                    { id: "baz", text: "Baz", imageUrl: "baz.png" }
+                ]
+            }
+            ]
+        });
+    </script>
 
 ### items.menuButtons.spriteCssClass `String`
 
 Defines a CSS class (or multiple classes separated by spaces) which will be used for menu button icon.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Foo", spriteCssClass: "foo" },
+                    { id: "bar", text: "Bar", spriteCssClass: "bar" },
+                    { id: "baz", text: "Baz", spriteCssClass: "baz" }
+                ]
+            }
+            ]
+        });
+    </script>
+
 ### items.menuButtons.text `String`
 
 Specifies the text of the menu buttons.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Foo" },
+                    { id: "bar", text: "Bar" },
+                    { id: "baz", text: "Baz" }
+                ]
+            }
+            ]
+        });
+    </script>
 
 ### items.menuButtons.url `String`
 
 Specifies the url of the menu button to navigate to.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "splitButton",
+                text: "splitButton",
+                menuButtons: [
+                    { id: "foo", text: "Telerik", url: "http://www.telerik.com" },
+                    { id: "bar", text: "Google", url: "http://www.google.com" }
+                ]
+            }
+            ]
+        });
+    </script>
+
 ### items.overflow `String` *(default: "auto")*
 
 Specifies how the button behaves when the ToolBar is resized. Possible values are: "always", "never" or "auto" (default).
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                {
+                    type: "splitButton",
+                    text: "splitButton",
+                    menuButtons: [
+                        { id: "foo", text: "Foo" },
+                        { id: "bar", text: "Bar" }
+                    ],
+                    overflow: "never"
+                },
+                {
+                    type: "button",
+                    text: "Button",
+                    overflow: "auto"
+                },
+                {
+                    type: "buttonGroup",
+                    buttons: [
+                        { text: "Option 1", togglable: true },
+                        { text: "Option 2", togglable: true },
+                        { text: "Option 3", togglable: true }
+                    ],
+                    overflow: "always"
+                }
+            ]
+        });
+    </script>
 
 ### items.overflowTemplate `String|Function`
 
 Specifies what element will be added in the command overflow popup. Applicable only for items that have a template.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                {
+                    template: "<span>Toolbar template</span>",
+                    overflowTemplate: "<span>Overflow template</span>"
+                }
+            ]
+        });
+    </script>
+
 ### items.primary `Boolean` *(default: false)*
 
 Specifies whether the button is primary. Primary buttons receive different styling.
 
-### items.selectable `Boolean` *(default: false)*
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            { type: "button", text: "Primary", primary: true },
+            { type: "button", text: "Standard" }
+            ]
+        });
+    </script>
+
+### items.selected `Boolean` *(default: false)*
 
 Specifies if the toggle button is initially selected. Applicable only for buttons with `togglable: true`.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            { type: "button", text: "Foo", togglable: true, selected: true }
+            ]
+        });
+    </script>
 
 ### items.showIcon `String` *(default: "both")*
 
 Specifies where the button icon will be displayed. Possible values are: "toolbar", "overflow" or "both" (default).
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", text: "Foo", icon: "tick", showIcon: "toolbar" }
+            ]
+        });
+    </script>
+
 ### items.showText `String` *(default: "both")*
 
 Specifies where the text will be displayed. Possible values are: "toolbar", "overflow" or "both" (default).
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", text: "Foo", icon: "tick", showText: "overflow" }
+            ]
+        });
+    </script>
 
 ### items.spriteCssClass `String`
 
 Defines a CSS class (or multiple classes separated by spaces) which will be used for button icon.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", text: "Foo", spriteCssClass: "tick" }
+            ]
+        });
+    </script>
+
 ### items.template `String|Function`
 
 Specifies what element will be added in the ToolBar wrapper. Items with template does not have a type.
+
+> If `overflowTemplate` is not defined for a template command, than the command will be threated as `overflow: "never"`.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                {
+                    template: "<span>Toolbar template</span>"
+                }
+            ]
+        });
+    </script>
 
 ### items.text `String`
 
 Sets the text of the button.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", text: "Foo" }
+            ]
+        });
+    </script>
+
 ### items.togglable `Boolean` *(default: false)*
 
 Specifies if the button is togglable, e.g. has a selected and unselected state.
 
+> Buttons with `togglable: true` will fire the `toggle` event. `click` event will **not** be fired.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                { type: "button", text: "Foo", togglable: true }
+            ]
+        });
+    </script>
+
 ### items.toggle `Function`
 
 Specifies the toggle event handler of the button. Applicable only for commands of type `button` and `togglable: true`.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "button",
+                text: "Foo",
+                togglable: true,
+                toggle: function() {
+                    console.log("toggle!");
+                }
+            }
+            ]
+        });
+    </script>
 
 ### items.type `String`
 
@@ -211,9 +913,59 @@ Specifies the command type. Supported types are "button", "splitButton", "button
 
 > Specifying the type is **mandatory**. Only commands that have a `template` does not need `type`.
 
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+                {
+                    type: "splitButton",
+                    text: "splitButton",
+                    menuButtons: [
+                        { id: "foo", text: "Foo" },
+                        { id: "bar", text: "Bar" }
+                    ]
+                },
+                {
+                    type: "separator"
+                },
+                {
+                    type: "button",
+                    text: "Button"
+                },
+                {
+                    type: "buttonGroup",
+                    buttons: [
+                        { text: "Option 1", togglable: true },
+                        { text: "Option 2", togglable: true },
+                        { text: "Option 3", togglable: true }
+                    ]
+                }
+            ]
+        });
+    </script>
+
 ### items.url `String`
 
 Specifies the url to navigate to.
+
+#### Example
+
+    <div id="toolbar"></div>
+
+    <script>
+        $("#toolbar").kendoToolBar({
+            items: [
+            {
+                type: "button",
+                text: "Foo",
+                url: "http://www.google.com"
+            }
+            ]
+        });
+    </script>
 
 ## Methods
 
