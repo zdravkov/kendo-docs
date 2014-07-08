@@ -358,6 +358,25 @@ If set to false the widget will be disabled and will not allow user input. The w
     $dropDownList->enable(true);
     ?>
 
+### filter
+The filtering method used to determine the suggestions for the current value. Filtration is turned off by default.
+The supported filter values are startswith, endswith and contains.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+    $dropDownList->filter('value');
+    ?>
+
 ### headerTemplate
 Specifies a static HTML content, which will be rendered as a header of the popup element.
 
@@ -434,6 +453,24 @@ The index of the initially selected item. The index is 0 based.
     <?php
     $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
     $dropDownList->index(1);
+    ?>
+
+### minLength
+The minimum number of characters the user must type before a filter is performed. Set to higher value than 1 if the search could match a lot of items.
+
+#### Returns
+`\Kendo\UI\DropDownList`
+
+#### Parameters
+
+##### $value `float`
+
+
+
+#### Example 
+    <?php
+    $dropDownList = new \Kendo\UI\DropDownList('DropDownList');
+    $dropDownList->minLength(1);
     ?>
 
 ### open

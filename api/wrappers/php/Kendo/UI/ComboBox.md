@@ -359,7 +359,7 @@ If set to false the widget will be disabled and will not allow user input. The w
     ?>
 
 ### filter
-The filtering method used to determine the suggestions for the current value. Filtration is turned of by default.
+The filtering method used to determine the suggestions for the current value. Filtration is turned off by default.
 The supported filter values are startswith, endswith and contains.
 
 #### Returns
