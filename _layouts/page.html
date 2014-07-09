@@ -29,6 +29,7 @@ layout: index
         {% include search.html %}
     </div>
 </div>
+
 <div id="page-inner-content">
     <div id="page-nav">
         <div id="page-tree"></div>
@@ -56,8 +57,12 @@ layout: index
         </script>
     </div>
     <div id="page-article">
-    {% if page.category == "api" %}<div id="markdown-toc"></div>{% endif %}
-    {{ content }}
+        {% if page.category == "api" %}
+        <div id="markdown-toc"></div>
+        {% endif %}
+
+        {{ content }}
     </div>
-    {% include footer.html %}
 </div>
+
+{% include footer.html %}
