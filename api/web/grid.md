@@ -3382,6 +3382,263 @@ The height of the grid. Numeric values are treated as pixels.
     });
     </script>
 
+### messages `Object`
+
+Defines the text of the command buttons that are shown within the Grid. Used primarily for localization.
+
+#### Example - change the messages
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          cancel: "Cancel changes",
+          canceledit: "Cancel",
+          create: "Add new record",
+          destroy: "Delete",
+          edit: "Edit",
+          save: "Save changes",
+          select: "Select",
+          update: "Update"
+        }
+      }
+    });
+  </script>
+
+### messages.commands `Object`
+
+Defines the text of the command buttons that are shown within the Grid. Used primarily for localization.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          cancel: "Cancel changes",
+          canceledit: "Cancel",
+          create: "Add new record",
+          destroy: "Delete",
+          edit: "Edit",
+          save: "Save changes",
+          select: "Select",
+          update: "Update"
+        }
+      }
+    });
+  </script>
+
+### messages.commands.cancel `String`
+
+Defines the text of "Cancel Changes" button located in the ToolBar of the widget.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          cancel: "Cancel changes"
+        }
+      }
+    });
+  </script>
+
+### messages.commands.canceledit `String`
+
+Defines the text of "Cancel" button that is rendered in `inline` or `popup` editing mode.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          canceledit: "Cancel"
+        }
+      }
+    });
+  </script>
+
+### messages.commands.create `String`
+
+Defines the text of "Add new record" button located in the ToolBar of the widget.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          create: "Add new record"
+        }
+      }
+    });
+  </script>
+
+### messages.commands.destroy `String`
+
+Defines the text of "Delete" button rendered in `inline` or `popup` editing mode.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          destroy: "Delete"
+        }
+      }
+    });
+  </script>
+
+### messages.commands.edit `String`
+
+Defines the text of "Edit" button that is rendered in `inline` or `popup` editing mode.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          edit: "Edit"
+        }
+      }
+    });
+  </script>
+
+### messages.commands.save `String`
+
+Defines the text of "Save Changes" button located in the ToolBar of the widget.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          save: "Save changes"
+        }
+      }
+    });
+  </script>
+
+### messages.commands.update `String`
+
+Defines the text of "Update" button that is rendered in `inline` or `popup` editing mode.
+
+#### Example
+
+  <div id="grid"></div>
+  <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" },
+        { command: ["edit", "destroy"] }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      toolbar: ["create", "save", "cancel"],
+      messages: {
+        commands: {
+          update: "Update"
+        }
+      }
+    });
+  </script>
+
 ### mobile `Boolean|String` *(default: false)*
 
 If set to `true` and the grid is viewed on mobile browser it will use adaptive rendering.
