@@ -494,6 +494,221 @@ Can be set to a JavaScript object which represents the filter menu configuration
     });
     </script>
 
+### columns.filterable.cell `Object`
+
+Specifies options for the filter cell when enabled.
+
+Can be set to a JavaScript object which represents the filter cell configuration.
+
+#### Example - cell filtering options
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        {
+            field: "name",
+            filterable: {
+                cell: {
+                    enabled: true,
+                    delay: 1500
+                }
+            },
+        },
+        { field: "age" }
+      ],
+      filterable: {
+          mode: "row"
+      },
+      dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }]
+    });
+    </script>
+
+### columns.filterable.cell.dataSource `Object|kendo.data.DataSource`
+
+Specifies custom dataSource for the AutoComplete when type of the column is string.  Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
+instance.
+If the `dataSource` options is missing the options of the Grid's dataSource will be used.
+
+If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+
+#### Example - custom cell filter autocomplete dataSource
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        {
+            field: "name",
+            filterable: {
+                cell: {
+                    dataSource: new kendo.data.DataSource({
+                        data: [
+                            { someField: "Jane" },
+                            { someField: "Jake" },
+                            { someField: "John" }
+                        ]
+                    }),
+                    dataTextField: "someField"
+                }
+            }
+        },
+        { field: "age" }
+      ],
+      filterable: {
+          mode: "row"
+      },
+      dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }]
+    });
+    </script>
+
+### columns.filterable.cell.dataTextField `String`
+
+Specifies the name of the field which will provide the text representation for the AutoComplete suggestion (when using String type column) when CustomDataSource is provided. By default the name of the field bound to the column will be used.
+
+#### Example - Using custom dataSource and providing dataTextField option
+
+    <div id="grid"></div>
+    <script>
+          $("#grid").kendoGrid({
+              columns: [
+                {
+                    field: "name",
+                    filterable: {
+                        cell: {
+                            dataSource: new kendo.data.DataSource({ data: [
+                                { someField: "Jane" },
+                                { someField: "Jake" },
+                                { someField: "John" }
+                            ] }),
+                            dataTextField: "someField"
+                        }
+                    }
+                },
+                { field: "age" } ],
+            filterable: { mode: "row" },
+            dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }] });
+    </script>
+
+### columns.filterable.cell.delay `Number` *(default: 200)*
+
+Specifies the delay of the AutoComplete widget which will provide the suggest functionality (when using String type column).
+
+#### Example - Specifying delay option for the AutoComplete widget used to make suggestions while filtering.
+
+    <div id="grid"></div>
+    <script>
+          $("#grid").kendoGrid({
+              columns: [
+                {
+                    field: "name",
+                    filterable: {
+                        cell: {
+                            delay: 1500
+                        }
+                    }
+                },
+                { field: "age" } ],
+            filterable: { mode: "row" },
+            dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }] });
+    </script>
+
+### columns.filterable.cell.enabled `Boolean` *(default: true)*
+
+When set to false the Grid will not render the cell filtering widget for that specific column.
+
+#### Example - Disable the cell filtering for a specific column.
+
+    <div id="grid"></div>
+    <script>
+          $("#grid").kendoGrid({
+              columns: [
+                {
+                    field: "name",
+                    filterable: {
+                        cell: {
+                            enabled: false
+                        }
+                    }
+                },
+                { field: "age" } ],
+            filterable: { mode: "row" },
+            dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }] });
+    </script>
+
+### columns.filterable.cell.operator `String` *(default: "eq")*
+
+Specifies the default operator that will be used for the cell filtering.
+
+#### Example - Specifying default operator for cell filtering.
+
+    <div id="grid"></div>
+    <script>
+          $("#grid").kendoGrid({
+              columns: [
+                {
+                    field: "name",
+                    filterable: {
+                        cell: {
+                            operator: "neq"
+                        }
+                    }
+                },
+                { field: "age" } ],
+            filterable: { mode: "row" },
+            dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }] });
+    </script>
+
+### columns.filterable.cell.showOperators `Boolean` *(default: true)*
+
+Specifies whether to show or hide the DropDownList with the operators.
+
+#### Example - Hide the operators dropdownlist for cell filtering.
+
+    <div id="grid"></div>
+    <script>
+          $("#grid").kendoGrid({
+              columns: [
+                {
+                    field: "name",
+                    filterable: {
+                        cell: {
+                            showOperators: false,
+                            operator: "contains"
+                        }
+                    }
+                },
+                { field: "age" } ],
+            filterable: { mode: "row" },
+            dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }] });
+    </script>
+
+### columns.filterable.cell.template `Function`
+
+JavaScript function which will customize how the input for the filter value is customized.
+
+#### Example - Using template for the filter cell
+
+    <div id="grid"></div>
+    <script>
+          $("#grid").kendoGrid({
+              columns: [
+                {
+                    field: "color",
+                    filterable: {
+                        cell: {
+                            template: function (input) {
+                                input.kendoColorPicker();
+                            },
+                            showOperators: false
+                        }
+                    }
+                },
+                { field: "age" } ],
+            filterable: { mode: "row" },
+            dataSource: [ { color: "#ff0000", size: 30 }, { color: "#000000", size: 33 }] });
+    </script>
+
 ### columns.filterable.ui `String|Function`
 
 The role data attribute of the widget used in the filter menu or a JavaScript function which initializes that widget.
@@ -1873,20 +2088,20 @@ Can be set to a JavaScript object which represents the filter menu configuration
 
 #### Example - enable the filtering
 
-    <div id="grid"></div>
-    <script>
-    $("#grid").kendoGrid({
-      columns: [
-        { field: "name" },
-        { field: "age" }
-      ],
-      filterable: true,
-      dataSource: [
-        { name: "Jane Doe", age: 30 },
-        { name: "John Doe", age: 33 }
-      ]
-    });
-    </script>
+        <div id="grid"></div>
+        <script>
+            $("#grid").kendoGrid({
+                columns: [
+                    { field: "name" },
+                    { field: "age" }
+                ],
+                filterable: true,
+                dataSource: [
+                    { name: "Jane Doe", age: 30 },
+                    { name: "John Doe", age: 33 }
+                ]
+          });
+        </script>
 
 ### filterable.extra `Boolean` *(default: true)*
 
@@ -3038,6 +3253,35 @@ The text of the "not equal" filter operator.
       }
     });
     </script>
+
+### filterable.mode `String` *(default: "menu")*
+
+If set to `row` the user would be able to filter via extra row added below the headers. By default filtering is using the `menu` mode.
+
+Can also be set to the following string values:
+
+- "row" - the user can filter via extra row within the header.
+- "menu" - the user can filter via the menu after clicking the filter icon.
+- "menu, row" - the user can filter with both modes above enabled.
+
+#### Example - set mode option to use both "menu" and "row" modes simultaneously
+
+        <div id="grid"></div>
+        <script>
+            $("#grid").kendoGrid({
+                columns: [
+                    { field: "name" },
+                    { field: "age" }
+                ],
+                filterable: {
+                    mode: "cell, menu"
+                },
+                dataSource: [
+                    { name: "Jane Doe", age: 30 },
+                    { name: "John Doe", age: 33 }
+                ]
+          });
+        </script>
 
 ### groupable `Boolean|Object` *(default: false)*
 
