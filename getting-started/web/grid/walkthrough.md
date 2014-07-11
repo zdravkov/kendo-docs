@@ -69,6 +69,7 @@ At this point, either way the grid was created you will have an empty grid.
 ### Data Binding - Local
 
 The next step is to bind the grid to data.  The grid can be bound to local data very simply by setting the `dataSource` option of the kendoGrid object.
+
     var people = [ { firstName: "John",
                      lastName: "Smith",
                      email: "john.smith@telerik.com" },
@@ -91,6 +92,7 @@ The next step is to bind the grid to data.  The grid can be bound to local data 
 ### Data Binding – Remote
 
 The grid can bound to remote data by specifying the dataSource option.  The data source can either be created outside of the grid or passed in.  If you have multiple widgets bound to the same set of data, you would create the data source as an object that you could reference in different widgets.  if the grid is the only item bound to the data, it makes more sense to simply create it inline.
+
     $("#grid").kendoGrid({
          dataSource: {
              transport: {
@@ -106,6 +108,7 @@ The grid can bound to remote data by specifying the dataSource option.  The data
 
 The grid is set to automatically bind to data by default, meaning it will cause the data source to query as soon as it’s loaded and data will be loaded into the grid.
 This can be disabled by setting the `autoBind` option of the grid to `false`.
+
     $("#grid").kendoGrid({
         autoBind: false,
         // other configuration
@@ -338,6 +341,7 @@ This requirement ensures that at least one non-locked column is always visible a
 Selection can be enabled in the grid simply by setting the `selectable` option to `true`.
 
 This will by default enable single row selection in the grid.
+
     $("#grid").kendoGrid({
         selectable: true,
         // other configuration
@@ -480,6 +484,7 @@ Sorting is also a function that can be pushed to the server for increased perfor
 Keyboard navigation within the grid is supported by the `navigatable` option.  When set to `true`, you will be able to move through the grid using the arrow keys after you have initially selected a row/cell.   The navigation occurs at a cell level regardless of what `selectable` mode is specified. The current row/cell will be selected when the space bar is pressed.
 
 #### Enable keyboard navigation
+
     $("#grid").kendoGrid({
          navigatable: true
          // other configuration
@@ -509,7 +514,8 @@ Then, the row model, the model UID and the Grid table row can be retrieved conse
 
 Using templates within either a script tag, or the template option on the column object if the grid is being initialized from a div can format each cell in the grid.
 
-In this example, a template is used to format the email address as a hyperlink by using a template declared in a script block
+In this example, a template is used to format the email address as a hyperlink by using a template declared in a script block.
+
     <script id="template" type="text/x-kendo-tmpl">
         <tr>
             <td>
