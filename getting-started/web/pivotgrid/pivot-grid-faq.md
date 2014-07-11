@@ -28,7 +28,7 @@ and value of the *Axis format* should be **TupleFormat**:
 
 ## Q: I don't have OLAP cube, can I still use Kendo UI PivotGrid?
 
-A: _**No, because the Kendo PivotDataSource expects the result data to meet the [XMLA](http://en.wikipedia.org/wiki/XML_for_Analysis) standard.**_ Currently, **Kendo PivotDataSource** provides only a 'xmla' transport and schema. If the supplied data has the format defined by [XMLA](http://en.wikipedia.org/wiki/XML_for_Analysis) standard, then the widget will work out-of-the-box.
+A: Currently, the Kendo UI PivotDataSource has limited support for [binding to flat data](http://demos.telerik.com/kendo-ui/pivotgrid/local-flat-data-binding). Note that in this scenario not all of the features avialable when bound to a OLAP cube are supported. Those includes filtering, hierarchies, multiple measures etc.
 
 ## Next steps:
 - [Getting started](/getting-started/web/pivotgrid/overview)
