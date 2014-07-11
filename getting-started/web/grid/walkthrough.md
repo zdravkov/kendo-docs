@@ -17,6 +17,7 @@ First start with an empty div that has an ID.
     <div id="grid"></div>
 
 Now turn the div into a grid by selecting the div with a jQuery selector, and calling the kendoGrid() function. Since the grid is being created off of an empty div, you must specify the column layout by passing an array of column definition objects to the columns option of the grid.
+
     $("#grid").kendoGrid({
         columns: [ { title: "First Name", field: "firstName" },
                    { title: "Last Name", field: "lastName"}
@@ -531,6 +532,7 @@ In this example, a template is used to format the email address as a hyperlink b
     </script>
 
 This is then specified as the template for each row by passing it in to the `rowTemplate` option on the grid and initializing it with the `kendo.template` function.
+
     $("#grid").kendoGrid({
         rowTemplate: kendo.template($("#template").html()),
        // other configuration
