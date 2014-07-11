@@ -645,7 +645,7 @@ A reference item to append the new item in. Root context menu if not specified.
 
 ### close
 
-Closes a sub menu of a specified item(s) in a **ContextMenu**.
+Closes the **ContextMenu**. This method can be prevented to stop the closure.
 
 #### Example
 
@@ -669,15 +669,15 @@ Closes a sub menu of a specified item(s) in a **ContextMenu**.
     <script>
         // get a reference to the ContextMenu widget
         var contextMenu = $("#context-menu").data("kendoContextMenu");
-        // close the sub menu of "Item1"
-        contextMenu.close("#Item1");
+        // close the ContextMenu
+        contextMenu.close(100, 100);
     </script>
 
 #### Parameters
 
-##### element `String|Element|jQuery`
+##### element `Element|jQuery`
 
-Target item selector.
+If called without arguments, will close the ContextMenu. If passed an item, it will be closed (if opened).
 
 #### Returns
 
@@ -899,86 +899,6 @@ A reference item to insert the new item before
 
 ### open
 
-Opens a sub menu of a specified item(s) in a **ContextMenu**.
-
-#### Example
-
-    <div id="target">Target</div>
-    <ul id="context-menu">
-        <li id="Item1">Item 1
-            <ul>
-                <li>Sub Item 1</li>
-                <li>Sub Item 2</li>
-                <li>Sub Item 3</li>
-            </ul>
-        </li>
-        <li>Item 2
-            <ul>
-                <li>Sub Item 1</li>
-                <li>Sub Item 2</li>
-                <li>Sub Item 3</li>
-            </ul>
-        </li>
-    </ul>
-    <script>
-        // get a reference to the ContextMenu widget
-        var contextMenu = $("#context-menu").data("kendoContextMenu");
-        // open the sub menu of "Item1"
-        contextMenu.open("#Item1");
-    </script>
-
-#### Parameters
-
-##### element `String|Element|jQuery`
-
-Target item selector.
-
-#### Returns
-
-`kendo.ui.ContextMenu` Returns the ContextMenu object to support chaining.
-
-### remove
-
-Removes a specified item(s) from a **ContextMenu**.
-
-#### Example
-
-    <div id="target">Target</div>
-    <ul id="context-menu">
-        <li id="Item1">Item 1
-            <ul>
-                <li>Sub Item 1</li>
-                <li>Sub Item 2</li>
-                <li>Sub Item 3</li>
-            </ul>
-        </li>
-        <li>Item 2
-            <ul>
-                <li>Sub Item 1</li>
-                <li>Sub Item 2</li>
-                <li>Sub Item 3</li>
-            </ul>
-        </li>
-    </ul>
-    <script>
-        // get a reference to the ContextMenu widget
-        var contextMenu = $("#context-menu").data("kendoContextMenu");
-        // remove the item with the id "Item1"
-        contextMenu.remove("#Item1");
-    </script>
-
-#### Parameters
-
-##### element `String|Element|jQuery`
-
-Target item selector.
-
-#### Returns
-
-`kendo.ui.ContextMenu` Returns the ContextMenu object to support chaining.
-
-### open
-
 Shows the **ContextMenu** at the specified coordinates in pixels or aligned to the specified anchor. If passed an item, it will be opened. This method can be prevented to stop the ContextMenu from opening.
 
 #### Example
@@ -1021,9 +941,9 @@ Y coordinate in pixels. If not specified, ContextMenu will assume the first para
 
 `kendo.ui.ContextMenu` Returns the ContextMenu object to support chaining.
 
-### close
+### remove
 
-Closes the **ContextMenu**. This method can be prevented to stop the closure.
+Removes a specified item(s) from a **ContextMenu**.
 
 #### Example
 
@@ -1047,15 +967,15 @@ Closes the **ContextMenu**. This method can be prevented to stop the closure.
     <script>
         // get a reference to the ContextMenu widget
         var contextMenu = $("#context-menu").data("kendoContextMenu");
-        // close the ContextMenu
-        contextMenu.close(100, 100);
+        // remove the item with the id "Item1"
+        contextMenu.remove("#Item1");
     </script>
 
 #### Parameters
 
-##### item `Element|jQuery`
+##### element `String|Element|jQuery`
 
-If called without arguments, will close the ContextMenu. If passed an item, it will be closed (if opened).
+Target item selector.
 
 #### Returns
 
