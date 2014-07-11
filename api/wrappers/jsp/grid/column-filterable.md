@@ -23,6 +23,21 @@ The role data attribute of the widget used in the filter menu or a JavaScript fu
     </kendo:grid-column-filterable>
 
 
+##  Configuration JSP Tags
+
+### kendo:grid-column-filterable-cell
+
+Specifies options for the filter cell when enabled.Can be set to a JavaScript object which represents the filter cell configuration.
+
+More documentation is available at [kendo:grid-column-filterable-cell](/api/wrappers/jsp/grid/column-filterable-cell).
+
+#### Example
+
+    <kendo:grid-column-filterable>
+        <kendo:grid-column-filterable-cell></kendo:grid-column-filterable-cell>
+    </kendo:grid-column-filterable>
+
+
 ## Event Attributes
 
 ### ui `String`

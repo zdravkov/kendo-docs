@@ -21,6 +21,14 @@ If set to true the filter menu allows the user to input a second criteria.
     <kendo:grid-filterable extra="extra">
     </kendo:grid-filterable>
 
+### mode `java.lang.String`
+
+If set to row the user would be able to filter via extra row added below the headers. By default filtering is using the menu mode.Can also be set to the following string values:
+
+#### Example
+    <kendo:grid-filterable mode="mode">
+    </kendo:grid-filterable>
+
 
 ##  Configuration JSP Tags
 
