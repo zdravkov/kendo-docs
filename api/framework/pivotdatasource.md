@@ -491,6 +491,96 @@ The result should have the following format and attributes:
     });
     </script>
 
+### schema.cube `Object`
+
+The cube declaration. If configured this option will enable the client cube processing, usefull for binding to flat data. Note: This is only applicable if client cube processing is used.
+
+### schema.cube.dimensions `Object`
+
+A set of key/value pairs which specify the field-dimension mapping for the available for processing dimensions. The key specifies the name of the field to which the dimension will be mapped. Note: The key should match the column name used in the columns definition.
+
+#### Example - define cube dimentions
+
+    <script>
+      var dataSource = new kendo.data.PivotDataSource({
+        columns: ["ProductName" ],
+        rows: ["Category"],
+        data: [{ ProductName: "Chai", UnitPrice: 42, Cateogry: "Beverages" } ],
+        schema: {
+          cube: {
+            dimensions: {
+              ProductName: { caption: "All Products" },
+              Category: { caption: "All Cateogries" }
+            }
+          }
+        }
+      });
+
+      dataSource.fetch(function() {
+        console.log(dataSource.data(), dataSource.axes());
+      });
+    </script>
+
+### schema.cube.dimension.dimensionName.caption `String`
+
+A user-friendly name of the dimension.
+
+### schema.cube.measures `Object`
+
+A set of key/value pairs which specify the available measures. The key specifies the name of measure.Note: The key should match the measure name used in the measures definition of the PivotDataSource
+
+#### Example - define cube measures which calculates the sum of products price
+
+    <script>
+      var dataSource = new kendo.data.PivotDataSource({
+        columns: ["ProductName" ],
+        rows: ["Category"],
+        measures: ["Sum"],
+        data: [{ ProductName: "Chai", UnitPrice: 42, Cateogry: "Beverages" } ],
+        schema: {
+          cube: {
+            dimensions: {
+              ProductName: { caption: "All Products" },
+              Category: { caption: "All Cateogries" }
+            },
+            measures: {
+              "Sum": { field: "UnitPrice", format: "{0:c}", aggregate: function(value, state) { return value + state; } }
+            }
+          }
+        }
+      });
+
+      dataSource.fetch(function() {
+        console.log(dataSource.data(), dataSource.axes());
+      });
+    </script>
+
+### schema.cube.measure.measureName.field `String`
+
+The field name which value is used to calculations.
+
+### schema.cube.measure.measureName.format `String`
+
+The format which to be applied on the calcualted measure value.
+
+### schema.cube.measure.measureName.aggregate `Function`
+
+The function used to aggregate the measure value.
+
+#### Returns
+
+`Object` The result of the calculation
+
+#### Parameters
+
+##### value `Object`
+
+The value of the specified field of the current processed record.
+
+##### state `Object`
+
+The current aggregated result of the function for already processed records.
+
 ### schema.data `Function|String`
 
 The field from the server response which contains the cells data. Can be set to a function which is called to
