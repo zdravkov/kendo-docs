@@ -10301,6 +10301,236 @@ If set to `true` the chart will display the series labels. By default chart seri
     });
     </script>
 
+### series.labels.from `Object`
+
+The chart series **from** label configuration.
+
+> The chart displays the series **from** labels when the [series.labels.visible](#configuration-series.labels.visible) option is set to `true` or when the [series.labels.from.visible](#configuration-series.labels.from.visible) option is set to `true`.
+
+### series.labels.from.background `String|Function`
+
+The background color of the **from** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### series.labels.from.border `Object`
+
+The border of the **from** labels.
+
+### series.labels.from.border.color `String|Function` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+### series.labels.from.border.dashType `String|Function` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### series.labels.from.border.width `Number|Function` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+### series.labels.from.color `String|Function`
+
+The text color of the **from** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### series.labels.from.font `String|Function` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the **from** labels.
+
+### series.labels.from.format `String|Function` *(default: "{0}")*
+
+The format of the **from** labels. Uses [kendo.format](/api/framework/kendo#methods-format).
+
+### series.labels.from.margin `Number|Object` *(default: 5)*
+
+The margin of the **from** labels. A numeric value will set all margins.
+
+### series.labels.from.margin.bottom `Number` *(default: 0)*
+
+The bottom margin of the **from** labels.
+
+### series.labels.from.margin.left `Number` *(default: 0)*
+
+The left margin of the **from** labels.
+
+### series.labels.from.margin.right `Number` *(default: 0)*
+
+The right margin of the **from** labels.
+
+### series.labels.from.margin.top `Number` *(default: 0)*
+
+The top margin of the **from** labels.
+
+### series.labels.from.padding `Number|Object` *(default: 0)*
+
+The padding of the **from** labels. A numeric value will set all paddings.
+
+### series.labels.from.padding.bottom `Number` *(default: 0)*
+
+The bottom padding of the **from** labels.
+
+### series.labels.from.padding.left `Number` *(default: 0)*
+
+The left padding of the **from** labels.
+
+### series.labels.from.padding.right `Number` *(default: 0)*
+
+The right padding of the **from** labels.
+
+### series.labels.from.padding.top `Number` *(default: 0)*
+
+The top padding of the **from** labels.
+
+### series.labels.from.position `String|Function`
+
+The position of the **from** labels.
+
+* "center" - the label is positioned at the point center.
+* "insideBase" - the label is positioned inside, near the base of the bar.
+* "insideEnd" - the label is positioned inside, near the end of the point.
+* "outsideEnd" - the label is positioned outside, near the end of the point.
+
+### series.labels.from.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the chart series **from** label.
+
+The fields which can be used in the template are:
+
+* category - the category name. Available for area, bar, column, bubble, donut, line, pie and waterfall series.
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+* series - the data series
+* value - the point value. Can be a number or object containing each bound field.
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* total - the sum of all previous series values. Available for waterfall series.
+
+### series.labels.from.visible `Boolean|Function` *(default: false)*
+
+If set to `true` the chart will display the series **from** labels. By default chart series **from** labels are not displayed.
+
+### series.labels.to `Object`
+
+The chart series **to** label configuration.
+
+> The chart displays the series **to** labels when the [series.labels.visible](#configuration-series.labels.visible) option is set to `true` or when the [series.labels.to.visible](#configuration-series.labels.to.visible) option is set to `true`.
+
+### series.labels.to.background `String|Function`
+
+The background color of the **to** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### series.labels.to.border `Object`
+
+The border of the **to** labels.
+
+### series.labels.to.border.color `String|Function` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+### series.labels.to.border.dashType `String|Function` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### series.labels.to.border.width `Number|Function` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+### series.labels.to.color `String|Function`
+
+The text color of the **to** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### series.labels.to.font `String|Function` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the **to** labels.
+
+### series.labels.to.format `String|Function` *(default: "{0}")*
+
+The format of the **to** labels. Uses [kendo.format](/api/framework/kendo#methods-format).
+
+### series.labels.to.margin `Number|Object` *(default: 5)*
+
+The margin of the **to** labels. A numeric value will set all margins.
+
+### series.labels.to.margin.bottom `Number` *(default: 0)*
+
+The bottom margin of the **to** labels.
+
+### series.labels.to.margin.left `Number` *(default: 0)*
+
+The left margin of the **to** labels.
+
+### series.labels.to.margin.right `Number` *(default: 0)*
+
+The right margin of the **to** labels.
+
+### series.labels.to.margin.top `Number` *(default: 0)*
+
+The top margin of the **to** labels.
+
+### series.labels.to.padding `Number|Object` *(default: 0)*
+
+The padding of the **to** labels. A numeric value will set all paddings.
+
+### series.labels.to.padding.bottom `Number` *(default: 0)*
+
+The bottom padding of the **to** labels.
+
+### series.labels.to.padding.left `Number` *(default: 0)*
+
+The left padding of the **to** labels.
+
+### series.labels.to.padding.right `Number` *(default: 0)*
+
+The right padding of the **to** labels.
+
+### series.labels.to.padding.top `Number` *(default: 0)*
+
+The top padding of the **to** labels.
+
+### series.labels.to.position `String|Function`
+
+The position of the **to** labels.
+
+* "center" - the label is positioned at the point center.
+* "insideBase" - the label is positioned inside, near the base of the bar.
+* "insideEnd" - the label is positioned inside, near the end of the point.
+* "outsideEnd" - the label is positioned outside, near the end of the point.
+
+### series.labels.to.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the chart series **to** label.
+
+The fields which can be used in the template are:
+
+* category - the category name. Available for area, bar, column, bubble, donut, line, pie and waterfall series.
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
+* series - the data series
+* value - the point value. Can be a number or object containing each bound field.
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* total - the sum of all previous series values. Available for waterfall series.
+
+### series.labels.to.visible `Boolean|Function` *(default: false)*
+
+If set to `true` the chart will display the series **to** labels. By default chart series **to** labels are not displayed.
+
 ### series.line `String|Object`
 
 The chart line configuration options.
@@ -13787,6 +14017,218 @@ If set to `true` the chart will display the series labels. By default chart seri
       }]
     });
     </script>
+
+### seriesDefaults.labels.from `Object`
+
+The chart series **from** label configuration.
+
+> The chart displays the series labels when the [seriesDefaults.labels.visible](#configuration-seriesDefaults.labels.visible) option is set to `true` or when the [seriesDefaults.labels.from.visible](#configuration-seriesDefaults.labels.from.visible) option is set to `true`.
+
+### seriesDefaults.labels.from.background `String`
+
+The background color of the **from** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### seriesDefaults.labels.from.border `Object`
+
+The border of the **from** labels.
+
+### seriesDefaults.labels.from.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+### seriesDefaults.labels.from.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### seriesDefaults.labels.from.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+### seriesDefaults.labels.from.color `String`
+
+The text color of the **from** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### seriesDefaults.labels.from.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the **from** labels.
+
+### seriesDefaults.labels.from.format `String` *(default: "{0}")*
+
+The format of the **from** labels. Uses [kendo.format](/api/framework/kendo#methods-format).
+
+### seriesDefaults.labels.from.margin `Number|Object` *(default: 0)*
+
+The margin of the **from** labels. A numeric value will set all margins.
+
+### seriesDefaults.labels.from.margin.bottom `Number` *(default: 0)*
+
+The bottom margin of the **from** labels.
+
+### seriesDefaults.labels.from.margin.left `Number` *(default: 0)*
+
+The left margin of the **from** labels.
+
+### seriesDefaults.labels.from.margin.right `Number` *(default: 0)*
+
+The right margin of the **from** labels.
+
+### seriesDefaults.labels.from.margin.top `Number` *(default: 0)*
+
+The top margin of the **from** labels.
+
+### seriesDefaults.labels.from.padding `Number|Object` *(default: 0)*
+
+The padding of the **from** labels. A numeric value will set all paddings.
+
+### seriesDefaults.labels.from.padding.bottom `Number` *(default: 0)*
+
+The bottom padding of the **from** labels.
+
+### seriesDefaults.labels.from.padding.left `Number` *(default: 0)*
+
+The left padding of the **from** labels.
+
+### seriesDefaults.labels.from.padding.right `Number` *(default: 0)*
+
+The right padding of the **from** labels.
+
+### seriesDefaults.labels.from.padding.top `Number` *(default: 0)*
+
+The top padding of the **from** labels.
+
+### seriesDefaults.labels.from.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the chart series **from** label.
+
+The fields which can be used in the template are:
+
+* category - the category name. Available for area, bar, column, bubble, donut, funnel, line and pie series.
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* percentage - the point value represented as a percentage value. Available for donut, funnel and pie series.
+* series - the data series
+* value - the point value. Can be a number or object containing each bound field.
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* total - the sum of all previous series values. Available for waterfall series.
+
+### seriesDefaults.labels.from.visible `Boolean` *(default: false)*
+
+If set to `true` the chart will display the series **from** labels. By default chart series **from** labels are not displayed.
+
+### seriesDefaults.labels.to `Object`
+
+The chart series **to** label configuration.
+
+> The chart displays the series labels when the [seriesDefaults.labels.visible](#configuration-seriesDefaults.labels.visible) option is set to `true` or when the [seriesDefaults.labels.to.visible](#configuration-seriesDefaults.labels.to.visible) option is set to `true`.
+
+### seriesDefaults.labels.to.background `String`
+
+The background color of the **to** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### seriesDefaults.labels.to.border `Object`
+
+The border of the **to** labels.
+
+### seriesDefaults.labels.to.border.color `String` *(default: "black")*
+
+The color of the border. Accepts a valid CSS color string, including hex and rgb.
+
+### seriesDefaults.labels.to.border.dashType `String` *(default: "solid")*
+
+The dash type of the border.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### seriesDefaults.labels.to.border.width `Number` *(default: 0)*
+
+The width of the border in pixels. By default the border width is set to zero which means that the border will not appear.
+
+### seriesDefaults.labels.to.color `String`
+
+The text color of the **to** labels. Accepts a valid CSS color string, including hex and rgb.
+
+### seriesDefaults.labels.to.font `String` *(default: "12px Arial,Helvetica,sans-serif")*
+
+The font style of the **to** labels.
+
+### seriesDefaults.labels.to.format `String` *(default: "{0}")*
+
+The format of the **to** labels. Uses [kendo.format](/api/framework/kendo#methods-format).
+
+### seriesDefaults.labels.to.margin `Number|Object` *(default: 0)*
+
+The margin of the **to** labels. A numeric value will set all margins.
+
+### seriesDefaults.labels.to.margin.bottom `Number` *(default: 0)*
+
+The bottom margin of the **to** labels.
+
+### seriesDefaults.labels.to.margin.left `Number` *(default: 0)*
+
+The left margin of the **to** labels.
+
+### seriesDefaults.labels.to.margin.right `Number` *(default: 0)*
+
+The right margin of the **to** labels.
+
+### seriesDefaults.labels.to.margin.top `Number` *(default: 0)*
+
+The top margin of the **to** labels.
+
+### seriesDefaults.labels.to.padding `Number|Object` *(default: 0)*
+
+The padding of the **to** labels. A numeric value will set all paddings.
+
+### seriesDefaults.labels.to.padding.bottom `Number` *(default: 0)*
+
+The bottom padding of the **to** labels.
+
+### seriesDefaults.labels.to.padding.left `Number` *(default: 0)*
+
+The left padding of the **to** labels.
+
+### seriesDefaults.labels.to.padding.right `Number` *(default: 0)*
+
+The right padding of the **to** labels.
+
+### seriesDefaults.labels.to.padding.top `Number` *(default: 0)*
+
+The top padding of the **to** labels.
+
+### seriesDefaults.labels.to.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the chart series **to** label.
+
+The fields which can be used in the template are:
+
+* category - the category name. Available for area, bar, column, bubble, donut, funnel, line and pie series.
+* dataItem - the original data item used to construct the point. Will be null if binding to array.
+* percentage - the point value represented as a percentage value. Available for donut, funnel and pie series.
+* series - the data series
+* value - the point value. Can be a number or object containing each bound field.
+* runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
+* total - the sum of all previous series values. Available for waterfall series.
+
+### seriesDefaults.labels.to.visible `Boolean` *(default: false)*
+
+If set to `true` the chart will display the series **to** labels. By default chart series **to** labels are not displayed.
 
 ### seriesDefaults.line `Object`
 
