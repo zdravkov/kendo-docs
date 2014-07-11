@@ -120,6 +120,8 @@ Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
  -  `end.endUntilOn` becomes `end.on`
 
 * **MVC DataSource**: The MVC DataSource transport now serializes numbers based on the used Kendo culture. As a result, if you are using an invariant culture number model binder, the numbers will not be parsed correctly. You should either use the the same culture to parse the numbers in the model binder or remove the model binder in order for numbers with a decimal separator to be parsed correctly.
+* **ModalView**: The ModalView now supports autosizing when its content changes and when no height is set. Unfortunately we were able to implement this at the expense of 
+the possibility to set the ModalView size in a CSS stylesheet. As a workaround please use the ModalView width and height options or set them through inline CSS instead.
 
 ## Kendo UI 2013 Q2
 
