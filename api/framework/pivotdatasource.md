@@ -495,11 +495,11 @@ The result should have the following format and attributes:
 
 The cube declaration. If configured this option will enable the client cube processing, usefull for binding to flat data. Note: This is only applicable if client cube processing is used.
 
-### schema.cube.dimensions `Object`
+#### schema.cube.dimensions `Object`
 
 A set of key/value pairs which specify the field-dimension mapping for the available for processing dimensions. The key specifies the name of the field to which the dimension will be mapped. Note: The key should match the column name used in the columns definition.
 
-#### Example - define cube dimentions
+##### Example - define cube dimentions
 
     <script>
       var dataSource = new kendo.data.PivotDataSource({
@@ -521,11 +521,15 @@ A set of key/value pairs which specify the field-dimension mapping for the avail
       });
     </script>
 
-### schema.cube.dimension.dimensionName.caption `String`
+##### schema.cube.dimensions.dimensionName `String`
+
+The name of the field which map to the dimension.
+
+##### schema.cube.dimensions.dimensionName.caption `String`
 
 A user-friendly name of the dimension.
 
-### schema.cube.measures `Object`
+#### schema.cube.measures `Object`
 
 A set of key/value pairs which specify the available measures. The key specifies the name of measure.Note: The key should match the measure name used in the measures definition of the PivotDataSource
 
@@ -555,29 +559,29 @@ A set of key/value pairs which specify the available measures. The key specifies
       });
     </script>
 
-### schema.cube.measure.measureName.field `String`
+##### schema.cube.measures.measureName.field `String`
 
 The field name which value is used to calculations.
 
-### schema.cube.measure.measureName.format `String`
+##### schema.cube.measures.measureName.format `String`
 
 The format which to be applied on the calcualted measure value.
 
-### schema.cube.measure.measureName.aggregate `Function`
+##### schema.cube.measures.measureName.aggregate `Function`
 
 The function used to aggregate the measure value.
 
-#### Returns
+###### Returns
 
 `Object` The result of the calculation
 
-#### Parameters
+###### Parameters
 
-##### value `Object`
+####### value `Object`
 
 The value of the specified field of the current processed record.
 
-##### state `Object`
+####### state `Object`
 
 The current aggregated result of the function for already processed records.
 
