@@ -5,6 +5,8 @@ description: This walkthrough section will guide you how to create a grid, add H
 position: 2
 ---
 
+# Walkthrough of the Grid Features and Behavior
+
 The Kendo UI Grid is a powerful piece of the Kendo UI framework and an essential part of almost any user interface.  Kendo UI provides a grid component that is quick to setup and packed with features like sorting, grouping, paging and editing.
 
 ## Creating A Grid
