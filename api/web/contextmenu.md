@@ -977,9 +977,9 @@ Target item selector.
 
 `kendo.ui.ContextMenu` Returns the ContextMenu object to support chaining.
 
-### show
+### open
 
-Shows the **ContextMenu** at the specified coordinates in pixels or aligned to the specified anchor.
+Shows the **ContextMenu** at the specified coordinates in pixels or aligned to the specified anchor. If passed an item, it will be opened. This method can be prevented to stop the ContextMenu from opening.
 
 #### Example
 
@@ -1003,19 +1003,59 @@ Shows the **ContextMenu** at the specified coordinates in pixels or aligned to t
     <script>
         // get a reference to the ContextMenu widget
         var contextMenu = $("#context-menu").data("kendoContextMenu");
-        // show the ContextMenu at 100px, 100px
-        contextMenu.show(100, 100);
+        // open the ContextMenu at 100px, 100px
+        contextMenu.open(100, 100);
     </script>
 
 #### Parameters
 
 ##### x `Number|Element|jQuery`
 
-X coordinate in pixels or the anchor element to which to align.
+X coordinate in pixels or the anchor element to which to align. If passed an item - jQuery object or element - it will be opened.
 
 ##### y `Number`
 
 Y coordinate in pixels. If not specified, ContextMenu will assume the first parameter is an anchor element.
+
+#### Returns
+
+`kendo.ui.ContextMenu` Returns the ContextMenu object to support chaining.
+
+### close
+
+Closes the **ContextMenu**. This method can be prevented to stop the closure.
+
+#### Example
+
+    <div id="target">Target</div>
+    <ul id="context-menu">
+        <li id="Item1">Item 1
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Sub Item 1</li>
+                <li>Sub Item 2</li>
+                <li>Sub Item 3</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        // get a reference to the ContextMenu widget
+        var contextMenu = $("#context-menu").data("kendoContextMenu");
+        // close the ContextMenu
+        contextMenu.close(100, 100);
+    </script>
+
+#### Parameters
+
+##### item `Element|jQuery`
+
+If called without arguments, will close the ContextMenu. If passed an item, it will be closed (if opened).
 
 #### Returns
 
