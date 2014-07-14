@@ -80,6 +80,10 @@ Note that we had to 'quote' the string attribute.  This is because the `k-` attr
     <!-- in HTML: -->
     <input kendo-date-picker k-format="dateFormat" />
 
+You can use declarative binding for array and object configuration options, too.
+
+    <textarea kendo-editor k-tools="[ 'bold', 'italic', 'undeline' ]"></textarea>
+
 ### Widget configuration in controller
 
 If you'd like to store all widget configuration in the controller, you can use the special `k-options` attribute:
