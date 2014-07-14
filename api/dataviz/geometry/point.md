@@ -1,5 +1,5 @@
 ---
-title: kendo.dataviz.geometry.Point
+title: Point
 page_title: Configuration, methods and events of Kendo UI DataViz Geometry Point
 ---
 
