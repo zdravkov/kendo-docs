@@ -51,7 +51,7 @@ Required only if the first argument is a number.
 
 ### min
 
-Returns a new Point with the minimum x and y coordinates of all supplied Point instances.
+Returns a new Point with the minimum x and y coordinates of all Point arguments.
 
 #### Returns
 
@@ -60,7 +60,7 @@ Returns a new Point with the minimum x and y coordinates of all supplied Point i
 
 ### max
 
-Returns a new Point with the maximum x and y coordinates of all supplied Point instances.
+Returns a new Point with the maximum x and y coordinates of all Point arguments.
 
 #### Returns
 
