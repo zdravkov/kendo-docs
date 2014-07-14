@@ -24,6 +24,66 @@ The x coordinate of the point.
 
 The y coordinate of the point.
 
+## Class methods
+
+### create
+
+Creates a Point instance from various parameters.
+
+#### Parameters
+
+##### x `Number|Array|kendo.dataviz.geometry.Point`
+
+Any of the following values:
+
+* The x coordinate of the point.
+* An array of x and y coordinates.
+* An existing Point instance.
+
+##### y `Number`
+
+The y coordinate of the point.
+Required only if the first argument is a number.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The new or supplied Point instance.
+
+### min
+
+Returns a new Point with the minimum x and y coordinates of all supplied Point instances.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` A new Point instance.
+
+
+### max
+
+Returns a new Point with the maximum x and y coordinates of all supplied Point instances.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` A new Point instance.
+
+
+### minPoint
+
+Returns a Point with the smallest representable coordinates.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` A new Point instance with minimum coordinates.
+
+
+### maxPoint
+
+Returns a Point with the largest representable coordinates.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` A new Point instance with maximum coordinates.
+
 
 ## Methods
 
