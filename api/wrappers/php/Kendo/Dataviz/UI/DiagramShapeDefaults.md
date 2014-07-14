@@ -9,24 +9,6 @@ A PHP class representing the shapeDefaults setting of Diagram.
 
 ## Methods
 
-### background
-Defines the fill-color of the shape.
-
-#### Returns
-`\Kendo\Dataviz\UI\DiagramShapeDefaults`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
-    $shapeDefaults->background('value');
-    ?>
-
 ### addConnector
 
 Adds one or more DiagramShapeDefaultsConnector to the DiagramShapeDefaults.
@@ -94,6 +76,82 @@ Defines the shapes content settings.
     $shapeDefaults->content(array('align' => $align));
     ?>
 
+### editable
+
+Defines the shape editable options.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShapeDefaults`
+
+#### Parameters
+
+##### $value `boolean|\Kendo\Dataviz\UI\DiagramShapeDefaultsEditable|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $shapeDefaults->editable(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramShapeDefaultsEditable](/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeDefaultsEditable)
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $editable = new \Kendo\Dataviz\UI\DiagramShapeDefaultsEditable();
+    $connect = true;
+    $editable->connect($connect);
+    $shapeDefaults->editable($editable);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $connect = true;
+    $shapeDefaults->editable(array('connect' => $connect));
+    ?>
+
+### fill
+
+Defines the fill options of the shape.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShapeDefaults`
+
+#### Parameters
+
+##### $value `string|\Kendo\Dataviz\UI\DiagramShapeDefaultsFill|array`
+
+
+
+
+#### Example  - using string
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $shapeDefaults->fill('value');
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramShapeDefaultsFill](/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeDefaultsFill)
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $fill = new \Kendo\Dataviz\UI\DiagramShapeDefaultsFill();
+    $color = 'value';
+    $fill->color($color);
+    $shapeDefaults->fill($fill);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $color = 'value';
+    $shapeDefaults->fill(array('color' => $color));
+    ?>
+
 ### height
 Defines the height of the shape when added to the diagram.
 
@@ -128,8 +186,8 @@ Defines the hover configuration.
     <?php
     $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
     $hover = new \Kendo\Dataviz\UI\DiagramShapeDefaultsHover();
-    $background = 'value';
-    $hover->background($background);
+    $fill = 'value';
+    $hover->fill($fill);
     $shapeDefaults->hover($hover);
     ?>
 
@@ -137,8 +195,8 @@ Defines the hover configuration.
 
     <?php
     $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
-    $background = 'value';
-    $shapeDefaults->hover(array('background' => $background));
+    $fill = 'value';
+    $shapeDefaults->hover(array('fill' => $fill));
     ?>
 
 ### minHeight
@@ -222,6 +280,24 @@ The path option of a Shape is a description of a custom geometry. The format fol
     $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
     $angle = 1;
     $shapeDefaults->rotation(array('angle' => $angle));
+    ?>
+
+### source
+The source of the shape image. Applicable when the type is set to "image".
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShapeDefaults`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
+    $shapeDefaults->source('value');
     ?>
 
 ### stroke

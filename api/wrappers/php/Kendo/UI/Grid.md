@@ -921,6 +921,35 @@ The height of the grid. Numeric values are treated as pixels.
     $grid->height('value');
     ?>
 
+### messages
+
+Defines the text of the command buttons that are shown within the Grid. Used primarily for localization.
+
+#### Returns
+`\Kendo\UI\Grid`
+
+#### Parameters
+
+##### $value `\Kendo\UI\GridMessages|array`
+
+
+#### Example - using [\Kendo\UI\GridMessages](/api/wrappers/php/Kendo/UI/GridMessages)
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $messages = new \Kendo\UI\GridMessages();
+    $commands = new \Kendo\UI\GridMessagesCommands();
+    $messages->commands($commands);
+    $grid->messages($messages);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $grid = new \Kendo\UI\Grid('Grid');
+    $commands = new \Kendo\UI\GridMessagesCommands();
+    $grid->messages(array('commands' => $commands));
+    ?>
+
 ### mobile
 If set to true and the grid is viewed on mobile browser it will use adaptive rendering.Can be set to a string phone or tablet which will force the widget to use adaptive rendering regardless of browser type.
 The grid uses same layout for both phone and tablet.

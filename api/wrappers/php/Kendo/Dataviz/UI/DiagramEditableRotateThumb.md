@@ -9,22 +9,42 @@ A PHP class representing the thumb setting of DiagramEditableRotate.
 
 ## Methods
 
-### background
-Set the thumb backgorund.
+### fill
+
+Set the thumb fill options.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramEditableRotateThumb`
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\Dataviz\UI\DiagramEditableRotateThumbFill|array`
 
 
 
-#### Example 
+
+#### Example  - using string
     <?php
     $thumb = new \Kendo\Dataviz\UI\DiagramEditableRotateThumb();
-    $thumb->background('value');
+    $thumb->fill('value');
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramEditableRotateThumbFill](/api/wrappers/php/Kendo/Dataviz/UI/DiagramEditableRotateThumbFill)
+    <?php
+    $thumb = new \Kendo\Dataviz\UI\DiagramEditableRotateThumb();
+    $fill = new \Kendo\Dataviz\UI\DiagramEditableRotateThumbFill();
+    $color = 'value';
+    $fill->color($color);
+    $thumb->fill($fill);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $thumb = new \Kendo\Dataviz\UI\DiagramEditableRotateThumb();
+    $color = 'value';
+    $thumb->fill(array('color' => $color));
     ?>
 
 ### stroke

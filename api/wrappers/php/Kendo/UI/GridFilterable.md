@@ -56,6 +56,24 @@ The text messages displayed in the filter menu. Use it to customize or localize 
     $filterable->messages(array('and' => $and));
     ?>
 
+### mode
+If set to row the user would be able to filter via extra row added below the headers. By default filtering is using the menu mode.Can also be set to the following string values:
+
+#### Returns
+`\Kendo\UI\GridFilterable`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $filterable = new \Kendo\UI\GridFilterable();
+    $filterable->mode('value');
+    ?>
+
 ### operators
 
 The text of the filter operators displayed in the filter menu.

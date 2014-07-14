@@ -9,22 +9,42 @@ A PHP class representing the hover setting of DiagramEditableResizeHandles.
 
 ## Methods
 
-### background
-Set the handles backgorund.
+### fill
+
+Set the handles hover fill options.
 
 #### Returns
 `\Kendo\Dataviz\UI\DiagramEditableResizeHandlesHover`
 
 #### Parameters
 
-##### $value `string`
+##### $value `string|\Kendo\Dataviz\UI\DiagramEditableResizeHandlesHoverFill|array`
 
 
 
-#### Example 
+
+#### Example  - using string
     <?php
     $hover = new \Kendo\Dataviz\UI\DiagramEditableResizeHandlesHover();
-    $hover->background('value');
+    $hover->fill('value');
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramEditableResizeHandlesHoverFill](/api/wrappers/php/Kendo/Dataviz/UI/DiagramEditableResizeHandlesHoverFill)
+    <?php
+    $hover = new \Kendo\Dataviz\UI\DiagramEditableResizeHandlesHover();
+    $fill = new \Kendo\Dataviz\UI\DiagramEditableResizeHandlesHoverFill();
+    $color = 'value';
+    $fill->color($color);
+    $hover->fill($fill);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $hover = new \Kendo\Dataviz\UI\DiagramEditableResizeHandlesHover();
+    $color = 'value';
+    $hover->fill(array('color' => $color));
     ?>
 
 ### stroke

@@ -25,8 +25,8 @@ Specifies the handles style.
     <?php
     $resize = new \Kendo\Dataviz\UI\DiagramEditableResize();
     $handles = new \Kendo\Dataviz\UI\DiagramEditableResizeHandles();
-    $background = 'value';
-    $handles->background($background);
+    $fill = 'value';
+    $handles->fill($fill);
     $resize->handles($handles);
     ?>
 
@@ -34,7 +34,7 @@ Specifies the handles style.
 
     <?php
     $resize = new \Kendo\Dataviz\UI\DiagramEditableResize();
-    $background = 'value';
-    $resize->handles(array('background' => $background));
+    $fill = 'value';
+    $resize->handles(array('fill' => $fill));
     ?>
 

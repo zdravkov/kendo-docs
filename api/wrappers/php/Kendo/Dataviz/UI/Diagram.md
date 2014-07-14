@@ -215,24 +215,6 @@ Sets the data source of the dataSource.
     $diagram->dataSource(array('schema' => $schema));
     ?>
 
-### draggable
-Defines whether items can be dropped on the diagram.
-
-#### Returns
-`\Kendo\Dataviz\UI\Diagram`
-
-#### Parameters
-
-##### $value `boolean`
-
-
-
-#### Example 
-    <?php
-    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $diagram->draggable(true);
-    ?>
-
 ### editable
 
 Specifies the shape editable.
@@ -444,6 +426,44 @@ For additional information check the [select](/api/dataviz/diagram#events-select
     $diagram->select(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### selectable
+
+Defines the selectable options.
+
+#### Returns
+`\Kendo\Dataviz\UI\Diagram`
+
+#### Parameters
+
+##### $value `boolean|\Kendo\Dataviz\UI\DiagramSelectable|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $diagram->selectable(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramSelectable](/api/wrappers/php/Kendo/Dataviz/UI/DiagramSelectable)
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $selectable = new \Kendo\Dataviz\UI\DiagramSelectable();
+    $stroke = new \Kendo\Dataviz\UI\DiagramSelectableStroke();
+    $selectable->stroke($stroke);
+    $diagram->selectable($selectable);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
+    $stroke = new \Kendo\Dataviz\UI\DiagramSelectableStroke();
+    $diagram->selectable(array('stroke' => $stroke));
+    ?>
+
 ### shapeDefaults
 
 Defines the shape options.
@@ -460,8 +480,8 @@ Defines the shape options.
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $shapeDefaults = new \Kendo\Dataviz\UI\DiagramShapeDefaults();
-    $background = 'value';
-    $shapeDefaults->background($background);
+    $editable = true;
+    $shapeDefaults->editable($editable);
     $diagram->shapeDefaults($shapeDefaults);
     ?>
 
@@ -469,8 +489,8 @@ Defines the shape options.
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $background = 'value';
-    $diagram->shapeDefaults(array('background' => $background));
+    $editable = true;
+    $diagram->shapeDefaults(array('editable' => $editable));
     ?>
 
 ### addShape
@@ -489,8 +509,8 @@ Adds one or more DiagramShape to the Diagram.
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
     $shape = new \Kendo\Dataviz\UI\DiagramShape();
-    $background = 'value';
-    $shape->background($background);
+    $editable = true;
+    $shape->editable($editable);
     $diagram->addShape($shape);
     ?>
 
@@ -498,8 +518,8 @@ Adds one or more DiagramShape to the Diagram.
 
     <?php
     $diagram = new \Kendo\Dataviz\UI\Diagram('Diagram');
-    $background = 'value';
-    $diagram->addShape(array('background' => $background));
+    $editable = true;
+    $diagram->addShape(array('editable' => $editable));
     ?>
 
 #### Example - adding more than one DiagramShape

@@ -56,6 +56,35 @@ Defines the hover configuration.
     $connectionDefaults->hover(array('stroke' => $stroke));
     ?>
 
+### selection
+
+Defines the connection selection configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramConnectionDefaults`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\DiagramConnectionDefaultsSelection|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramConnectionDefaultsSelection](/api/wrappers/php/Kendo/Dataviz/UI/DiagramConnectionDefaultsSelection)
+    <?php
+    $connectionDefaults = new \Kendo\Dataviz\UI\DiagramConnectionDefaults();
+    $selection = new \Kendo\Dataviz\UI\DiagramConnectionDefaultsSelection();
+    $handles = new \Kendo\Dataviz\UI\DiagramConnectionDefaultsSelectionHandles();
+    $selection->handles($handles);
+    $connectionDefaults->selection($selection);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $connectionDefaults = new \Kendo\Dataviz\UI\DiagramConnectionDefaults();
+    $handles = new \Kendo\Dataviz\UI\DiagramConnectionDefaultsSelectionHandles();
+    $connectionDefaults->selection(array('handles' => $handles));
+    ?>
+
 ### startCap
 The start cap (arrow, head or decoration) of the connection:
 

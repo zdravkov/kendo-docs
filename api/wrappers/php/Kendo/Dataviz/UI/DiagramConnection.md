@@ -94,6 +94,35 @@ Adds one or more DiagramConnectionPoint to the DiagramConnection.
     $connection->addPoint($first, $second);
     ?>
 
+### selection
+
+Defines the connection selection configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramConnection`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\DiagramConnectionSelection|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramConnectionSelection](/api/wrappers/php/Kendo/Dataviz/UI/DiagramConnectionSelection)
+    <?php
+    $connection = new \Kendo\Dataviz\UI\DiagramConnection();
+    $selection = new \Kendo\Dataviz\UI\DiagramConnectionSelection();
+    $handles = new \Kendo\Dataviz\UI\DiagramConnectionSelectionHandles();
+    $selection->handles($handles);
+    $connection->selection($selection);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $connection = new \Kendo\Dataviz\UI\DiagramConnection();
+    $handles = new \Kendo\Dataviz\UI\DiagramConnectionSelectionHandles();
+    $connection->selection(array('handles' => $handles));
+    ?>
+
 ### startCap
 The start cap (arrow, head or decoration) of the connection:
 

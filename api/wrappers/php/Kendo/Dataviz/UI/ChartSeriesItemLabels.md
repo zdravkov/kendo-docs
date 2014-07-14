@@ -170,6 +170,35 @@ The format of the labels. Uses kendo.format.
     $labels->format(new \Kendo\JavaScriptFunction('function() { }'));
     ?>
 
+### from
+
+The chart series from label configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesItemLabelsFrom|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLabelsFrom](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemLabelsFrom)
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $from = new \Kendo\Dataviz\UI\ChartSeriesItemLabelsFrom();
+    $background = 'value';
+    $from->background($background);
+    $labels->from($from);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $background = 'value';
+    $labels->from(array('background' => $background));
+    ?>
+
 ### margin
 
 The margin of the labels. A numeric value will set all margins.
@@ -292,6 +321,35 @@ The template which renders the chart series label.The fields which can be used i
     <?php
     $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
     $labels->template(new \Kendo\JavaScriptFunction('function() { }'));
+    ?>
+
+### to
+
+The chart series to label configuration.
+
+#### Returns
+`\Kendo\Dataviz\UI\ChartSeriesItemLabels`
+
+#### Parameters
+
+##### $value `\Kendo\Dataviz\UI\ChartSeriesItemLabelsTo|array`
+
+
+#### Example - using [\Kendo\Dataviz\UI\ChartSeriesItemLabelsTo](/api/wrappers/php/Kendo/Dataviz/UI/ChartSeriesItemLabelsTo)
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $to = new \Kendo\Dataviz\UI\ChartSeriesItemLabelsTo();
+    $background = 'value';
+    $to->background($background);
+    $labels->to($to);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $labels = new \Kendo\Dataviz\UI\ChartSeriesItemLabels();
+    $background = 'value';
+    $labels->to(array('background' => $background));
     ?>
 
 ### visible

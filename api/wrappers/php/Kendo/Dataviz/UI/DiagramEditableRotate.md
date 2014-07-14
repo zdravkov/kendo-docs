@@ -25,8 +25,8 @@ Specifyes the thumb style.
     <?php
     $rotate = new \Kendo\Dataviz\UI\DiagramEditableRotate();
     $thumb = new \Kendo\Dataviz\UI\DiagramEditableRotateThumb();
-    $background = 'value';
-    $thumb->background($background);
+    $fill = 'value';
+    $thumb->fill($fill);
     $rotate->thumb($thumb);
     ?>
 
@@ -34,7 +34,7 @@ Specifyes the thumb style.
 
     <?php
     $rotate = new \Kendo\Dataviz\UI\DiagramEditableRotate();
-    $background = 'value';
-    $rotate->thumb(array('background' => $background));
+    $fill = 'value';
+    $rotate->thumb(array('fill' => $fill));
     ?>
 

@@ -9,24 +9,6 @@ A PHP class representing the shape setting of DiagramShapes.
 
 ## Methods
 
-### background
-Defines the fill-color of the shape.
-
-#### Returns
-`\Kendo\Dataviz\UI\DiagramShape`
-
-#### Parameters
-
-##### $value `string`
-
-
-
-#### Example 
-    <?php
-    $shape = new \Kendo\Dataviz\UI\DiagramShape();
-    $shape->background('value');
-    ?>
-
 ### addConnector
 
 Adds one or more DiagramShapeConnector to the DiagramShape.
@@ -94,6 +76,82 @@ Defines the shapes content settings.
     $shape->content(array('align' => $align));
     ?>
 
+### editable
+
+Defines the shape editable options.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShape`
+
+#### Parameters
+
+##### $value `boolean|\Kendo\Dataviz\UI\DiagramShapeEditable|array`
+
+
+
+
+#### Example  - using boolean
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $shape->editable(true);
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramShapeEditable](/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeEditable)
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $editable = new \Kendo\Dataviz\UI\DiagramShapeEditable();
+    $connect = true;
+    $editable->connect($connect);
+    $shape->editable($editable);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $connect = true;
+    $shape->editable(array('connect' => $connect));
+    ?>
+
+### fill
+
+Defines the fill options of the shape.
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShape`
+
+#### Parameters
+
+##### $value `string|\Kendo\Dataviz\UI\DiagramShapeFill|array`
+
+
+
+
+#### Example  - using string
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $shape->fill('value');
+    ?>
+
+
+#### Example - using [\Kendo\Dataviz\UI\DiagramShapeFill](/api/wrappers/php/Kendo/Dataviz/UI/DiagramShapeFill)
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $fill = new \Kendo\Dataviz\UI\DiagramShapeFill();
+    $color = 'value';
+    $fill->color($color);
+    $shape->fill($fill);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $color = 'value';
+    $shape->fill(array('color' => $color));
+    ?>
+
 ### height
 Defines the height of the shape when added to the diagram.
 
@@ -128,8 +186,8 @@ Defines the hover configuration.
     <?php
     $shape = new \Kendo\Dataviz\UI\DiagramShape();
     $hover = new \Kendo\Dataviz\UI\DiagramShapeHover();
-    $background = 'value';
-    $hover->background($background);
+    $fill = 'value';
+    $hover->fill($fill);
     $shape->hover($hover);
     ?>
 
@@ -137,8 +195,8 @@ Defines the hover configuration.
 
     <?php
     $shape = new \Kendo\Dataviz\UI\DiagramShape();
-    $background = 'value';
-    $shape->hover(array('background' => $background));
+    $fill = 'value';
+    $shape->hover(array('fill' => $fill));
     ?>
 
 ### id
@@ -240,6 +298,24 @@ The function that positions the connector.
     $shape = new \Kendo\Dataviz\UI\DiagramShape();
     $angle = 1;
     $shape->rotation(array('angle' => $angle));
+    ?>
+
+### source
+The source of the shape image. Applicable when the type is set to "image".
+
+#### Returns
+`\Kendo\Dataviz\UI\DiagramShape`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $shape = new \Kendo\Dataviz\UI\DiagramShape();
+    $shape->source('value');
     ?>
 
 ### stroke
