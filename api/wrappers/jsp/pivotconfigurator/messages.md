@@ -69,3 +69,18 @@ The text messages displayed for rows label.
     <kendo:pivotConfigurator-messages rowsLabel="rowsLabel">
     </kendo:pivotConfigurator-messages>
 
+
+##  Configuration JSP Tags
+
+### kendo:pivotConfigurator-messages-fieldMenu
+
+The text messages displayed in the field menu.
+
+More documentation is available at [kendo:pivotConfigurator-messages-fieldMenu](/api/wrappers/jsp/pivotconfigurator/messages-fieldmenu).
+
+#### Example
+
+    <kendo:pivotConfigurator-messages>
+        <kendo:pivotConfigurator-messages-fieldMenu></kendo:pivotConfigurator-messages-fieldMenu>
+    </kendo:pivotConfigurator-messages>
+

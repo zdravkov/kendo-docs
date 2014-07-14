@@ -37,3 +37,18 @@ The text messages displayed in the row fields sections.
     <kendo:pivotGrid-messages rowFields="rowFields">
     </kendo:pivotGrid-messages>
 
+
+##  Configuration JSP Tags
+
+### kendo:pivotGrid-messages-fieldMenu
+
+The text messages displayed in the field menu.
+
+More documentation is available at [kendo:pivotGrid-messages-fieldMenu](/api/wrappers/jsp/pivotgrid/messages-fieldmenu).
+
+#### Example
+
+    <kendo:pivotGrid-messages>
+        <kendo:pivotGrid-messages-fieldMenu></kendo:pivotGrid-messages-fieldMenu>
+    </kendo:pivotGrid-messages>
+

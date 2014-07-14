@@ -7,6 +7,14 @@ A JSP wrapper for Kendo UI [PivotConfigurator](/api/web/pivotconfigurator).
 
 ## Configuration Attributes
 
+### filterable `boolean`
+
+If set to true the user will be able to filter by using the field menu.
+
+#### Example
+    <kendo:pivotConfigurator filterable="filterable">
+    </kendo:pivotConfigurator>
+
 
 ##  Configuration JSP Tags
 

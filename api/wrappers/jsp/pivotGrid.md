@@ -24,6 +24,14 @@ The width of the table columns. Value is treated as pixels.
     <kendo:pivotGrid columnWidth="columnWidth">
     </kendo:pivotGrid>
 
+### filterable `boolean`
+
+If set to true the user will be able to filter by using the field menu.
+
+#### Example
+    <kendo:pivotGrid filterable="filterable">
+    </kendo:pivotGrid>
+
 ### height `java.lang.Object`
 
 The height of the pivotgrid. Numeric values are treated as pixels.
