@@ -13,6 +13,18 @@ A point representing a location (x, y) in two-dimensional coordinate space.
             var point = new geo.Point(10, 20);
         </script>
 
+## Fields
+
+### x `Number`
+
+The x coordinate of the point.
+
+
+### y `Number`
+
+The y coordinate of the point.
+
+
 ## Methods
 
 ### clone
@@ -54,50 +66,67 @@ The point to compare with.
 `Boolean` true if the point coordinates match; false otherwise.
 
 
-### get
+### getX
 
-Gets the specified coordinate value.
+Gets the x coordinate value.
 
 #### Parameters
-
-##### field `String`
-
-The coordinate field name - "x" or "y".
 
 #### Returns
 
-`Number` The current coordinate value.
+`Number` The current x coordinate value.
 
 
-### multiply
+### getY
 
-Multiplies the point coordinates by a given value.
+Gets the y coordinate value.
 
 #### Parameters
 
-##### value `Number`
+#### Returns
 
-The value to multiply the coordinates with.
+`Number` The current y coordinate value.
+
+
+### move
+
+Moves the point to the specified x and y coordinates.
+
+#### Parameters
+
+##### x `Number`
+
+The new X coordinate.
+
+##### y `Number`
+
+The new Y coordinate.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The current point instance.
+
+
+### rotate
+
+Rotates the point around the given center.
+
+#### Parameters
+
+##### angle `Number`
+
+Angle of rotation in decimal degrees, measured in the clockwise direction.
+Zero corresponds to "up".
+
+Negative values or values greater than 360 will be normalized.
+
+##### center `kendo.dataviz.geometry.Point|Array` *(default: [0, 0])*
+
+The rotation center. Can be a Point instance or an [x, y] array.
 
 #### Returns
 
 `kendo.dataviz.geometry.Point` The current Point instance.
-
-
-### multiplyCopy
-
-Multiplies the coordinates of a copy of the point by a given value.
-The callee coordinates will remain unchanged.
-
-#### Parameters
-
-##### value `Number`
-
-The value to multiply the coordinates with.
-
-#### Returns
-
-`kendo.dataviz.geometry.Point` The new Point instance.
 
 
 ### round
@@ -114,24 +143,88 @@ Number of fractional digits.
 
 `kendo.dataviz.geometry.Point` The current Point instance.
 
+### scale
 
-### set
-
-Sets the specified coordinate to a new value.
+Scales the point coordinates along the x and y axis.
 
 #### Parameters
 
-##### field `String`
+##### scaleX `Number`
 
-The coordinate field name - "x" or "y".
+The x scale multiplier.
+
+##### scaleY `Number`
+
+The y scale multiplier.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The current point instance.
+
+
+### scaleCopy
+
+Scales the point coordinates on a copy of the current point.
+The callee coordinates will remain unchanged.
+
+#### Parameters
+
+##### scaleX `Number`
+
+The x scale multiplier.
+
+##### scaleY `Number`
+
+The y scale multiplier.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The new Point instance.
+
+
+### setX
+
+Sets the x coordinate to a new value.
+
+#### Parameters
 
 ##### value `Number`
 
-The new coordinate value.
+The new x coordinate value.
 
 #### Returns
 
 `kendo.dataviz.geometry.Point` The current Point instance.
+
+
+### setY
+
+Sets the y coordinate to a new value.
+
+#### Parameters
+
+##### value `Number`
+
+The new y coordinate value.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The current Point instance.
+
+
+### toArray
+
+Formats the point value to an [x, y] array.
+
+#### Parameters
+
+##### digits `Number`
+
+(Optional) Number of fractional digits.
+
+#### Returns
+
+`Array` An array representation of the point, e.g. [10, 20]
 
 
 ### toString
@@ -160,7 +253,7 @@ The current coordinates will be overriden.
 
 #### Parameters
 
-##### tansformation `kendo.dataviz.geometry.Transformation|kendo.dataviz.geometry.TransformationMatrix`
+##### tansformation `kendo.dataviz.geometry.Transformation`
 
 The transformation to apply.
 
@@ -176,11 +269,44 @@ The callee coordinates will remain unchanged.
 
 #### Parameters
 
-##### tansformation `kendo.dataviz.geometry.Transformation|kendo.dataviz.geometry.TransformationMatrix`
+##### tansformation `kendo.dataviz.geometry.Transformation`
 
 The transformation to apply.
 
 #### Returns
 
 `kendo.dataviz.geometry.Point` The new Point instance.
+
+
+### translate
+
+Translates the point along the x and y axis.
+
+#### Parameters
+
+##### dx `Number`
+
+The distance to move along the X axis.
+
+##### dy `Number`
+
+The distance to move along the Y axis.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The current point instance.
+
+### translateWith
+
+Translates the point by using a Point instance as a vector of translation.
+
+#### Parameters
+
+##### vector `kendo.dataviz.geometry.Point|Array`
+
+The vector of translation. Can be either a Point instance or an [x, y] array.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The current point instance.
 
