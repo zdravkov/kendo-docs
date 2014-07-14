@@ -260,3 +260,125 @@ A string, DOM element or jQuery object which represents the tile. A string is tr
     console.log(dataItem.name); // displays "foo"
     </script>
 
+### resize
+
+Adjusts the treeMap layout to match the size of the container.
+
+#### Example
+    <div id="treeMap" style="width: 400px;"></div>
+    <script>
+        $(function(){
+            $("#treeMap").kendoTreeMap({
+                dataSource: {
+                    data: [{
+                        name: "foo",
+                        value: 1,
+                        color: "red",
+                        id: 1
+                    }]
+                },
+                valueField: "value",
+                textField: "name",
+                colorField: "color"
+            });
+
+            $("#treeMap").css("width", "800px");
+            var treeMap = $("#treeMap").getKendoTreeMap();
+            treeMap.resize();
+        });
+    </script>
+
+#### Parameters
+
+##### force `Boolean` *optional*
+
+Defines whether the widget should proceed with resizing even if the element dimensions have not changed.
+
+### setDataSource
+
+Sets the data source of the widget.
+
+#### Parameters
+
+##### dataSource `kendo.data.HierarchicalDataSource`
+
+The data source to which the widget should be bound.
+
+#### Example - set the data source
+    <div id="treeMap"></div>
+    <script>
+    $("#treeMap").kendoTreeMap({
+        dataSource: {
+            data: [{
+                name: "foo",
+                value: 1,
+                color: "red"
+            }]
+        },
+        valueField: "value",
+        textField: "name",
+        colorField: "color"
+    });
+
+    var dataSource = new kendo.data.HierarchicalDataSource({
+        data: [{
+            name: "foo",
+            value: 1,
+            items: [{
+                name: "bar",
+                value: 1
+            },{
+                name: "baz",
+                value: 1
+            }]
+        }],
+        schema: {
+            model: {
+                children: "items"
+            }
+        }
+    });
+
+    var treeMap = $("#treeMap").getKendoTreeMap();
+    treeMap.setDataSource(dataSource);
+    </script>
+
+### setOptions
+
+Sets the widget options. Changes are cumulative.
+
+#### Parameters
+
+##### options `Object`
+
+The treeMap settings to update.
+
+#### Example - change the treeMap theme
+    <div id="treeMap"></div>
+    <script>
+    $("#treeMap").kendoTreeMap({
+        dataSource: {
+            data: [{
+                name: "foo",
+                value: 1,
+                items: [{
+                    name: "bar",
+                    value: 1
+                },{
+                    name: "baz",
+                    value: 1
+                }]
+            }],
+            schema: {
+                model: {
+                    children: "items"
+                }
+            }
+        },
+        valueField: "value",
+        textField: "name"
+    });
+
+    var treeMap = $("#treeMap").getKendoTreeMap();
+    treeMap.setOptions({ type: "horizontal" });
+    </script>
