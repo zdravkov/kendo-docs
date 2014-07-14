@@ -452,6 +452,26 @@ Sets the X coordinate of the point.
 
 Sets the Y coordinate of the point.
 
+### selectable `Boolean|Object`
+
+Defines the selectable options.
+
+### selectable.stroke `Object`
+
+Defines the selection stroke configuration.
+
+### selectable.stroke.color `String`
+
+Defines the selection stroke color.
+
+### selectable.stroke.width `Number`
+
+Defines the selection stroke width.
+
+### selectable.stroke.dashType `String`
+
+Defines the selection dash type.
+
 ### shapeDefaults `Object`
 
 Defines the shape options.
