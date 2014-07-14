@@ -85,12 +85,12 @@ Specifies whether the button is primary. Primary buttons receive different styli
     <kendo:toolBar-item primary="primary">
     </kendo:toolBar-item>
 
-### selectable `boolean`
+### selected `boolean`
 
 Specifies if the toggle button is initially selected. Applicable only for buttons with togglable: true.
 
 #### Example
-    <kendo:toolBar-item selectable="selectable">
+    <kendo:toolBar-item selected="selected">
     </kendo:toolBar-item>
 
 ### showIcon `java.lang.String`

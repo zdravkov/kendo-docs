@@ -16,20 +16,20 @@ data source is fired. By default the widget will bind to the data source specifi
     <kendo:diagram autoBind="autoBind">
     </kendo:diagram>
 
-### draggable `boolean`
-
-Defines whether items can be dropped on the diagram.
-
-#### Example
-    <kendo:diagram draggable="draggable">
-    </kendo:diagram>
-
 ### editable `boolean`
 
 Specifies the shape editable. Further configuration is available via [kendo:diagram-editable](#kendo-diagram-editable). 
 
 #### Example
     <kendo:diagram editable="editable">
+    </kendo:diagram>
+
+### selectable `boolean`
+
+Defines the selectable options. Further configuration is available via [kendo:diagram-selectable](#kendo-diagram-selectable). 
+
+#### Example
+    <kendo:diagram selectable="selectable">
     </kendo:diagram>
 
 ### template `java.lang.String`
@@ -121,6 +121,18 @@ More documentation is available at [kendo:diagram-layout](/api/wrappers/jsp/diag
 
     <kendo:diagram>
         <kendo:diagram-layout></kendo:diagram-layout>
+    </kendo:diagram>
+
+### kendo:diagram-selectable
+
+Defines the selectable options.
+
+More documentation is available at [kendo:diagram-selectable](/api/wrappers/jsp/diagram/selectable).
+
+#### Example
+
+    <kendo:diagram>
+        <kendo:diagram-selectable></kendo:diagram-selectable>
     </kendo:diagram>
 
 ### kendo:diagram-shapeDefaults

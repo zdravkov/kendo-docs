@@ -57,6 +57,14 @@ The width of the task list. Numeric values are treated as pixels.
     <kendo:gantt listWidth="listWidth">
     </kendo:gantt>
 
+### navigatable `boolean`
+
+If set to true the user could navigate the widget using the keyboard. By default keyboard navigation is disabled.
+
+#### Example
+    <kendo:gantt navigatable="navigatable">
+    </kendo:gantt>
+
 ### selectable `boolean`
 
 If set to false the user won't be able to select tasks in the gantt. By default selection is enabled and triggers the change event.

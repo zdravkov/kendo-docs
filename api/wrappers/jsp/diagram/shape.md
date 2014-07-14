@@ -13,12 +13,20 @@ Defines the shape options.
 
 ## Configuration Attributes
 
-### background `java.lang.String`
+### editable `boolean`
 
-Defines the fill-color of the shape.
+Defines the shape editable options. Further configuration is available via [kendo:diagram-shape-editable](#kendo-diagram-shape-editable). 
 
 #### Example
-    <kendo:diagram-shape background="background">
+    <kendo:diagram-shape editable="editable">
+    </kendo:diagram-shape>
+
+### fill `java.lang.String`
+
+Defines the fill options of the shape. Further configuration is available via [kendo:diagram-shape-fill](#kendo-diagram-shape-fill). 
+
+#### Example
+    <kendo:diagram-shape fill="fill">
     </kendo:diagram-shape>
 
 ### height `float`
@@ -59,6 +67,14 @@ The path option of a Shape is a description of a custom geometry. The format fol
 
 #### Example
     <kendo:diagram-shape path="path">
+    </kendo:diagram-shape>
+
+### source `java.lang.String`
+
+The source of the shape image. Applicable when the type is set to "image".
+
+#### Example
+    <kendo:diagram-shape source="source">
     </kendo:diagram-shape>
 
 ### type `java.lang.String`
@@ -127,6 +143,30 @@ More documentation is available at [kendo:diagram-shape-content](/api/wrappers/j
 
     <kendo:diagram-shape>
         <kendo:diagram-shape-content></kendo:diagram-shape-content>
+    </kendo:diagram-shape>
+
+### kendo:diagram-shape-editable
+
+Defines the shape editable options.
+
+More documentation is available at [kendo:diagram-shape-editable](/api/wrappers/jsp/diagram/shape-editable).
+
+#### Example
+
+    <kendo:diagram-shape>
+        <kendo:diagram-shape-editable></kendo:diagram-shape-editable>
+    </kendo:diagram-shape>
+
+### kendo:diagram-shape-fill
+
+Defines the fill options of the shape.
+
+More documentation is available at [kendo:diagram-shape-fill](/api/wrappers/jsp/diagram/shape-fill).
+
+#### Example
+
+    <kendo:diagram-shape>
+        <kendo:diagram-shape-fill></kendo:diagram-shape-fill>
     </kendo:diagram-shape>
 
 ### kendo:diagram-shape-hover

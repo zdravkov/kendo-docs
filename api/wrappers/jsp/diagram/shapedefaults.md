@@ -13,12 +13,20 @@ Defines the shape options.
 
 ## Configuration Attributes
 
-### background `java.lang.String`
+### editable `boolean`
 
-Defines the fill-color of the shape.
+Defines the shape editable options. Further configuration is available via [kendo:diagram-shapeDefaults-editable](#kendo-diagram-shapeDefaults-editable). 
 
 #### Example
-    <kendo:diagram-shapeDefaults background="background">
+    <kendo:diagram-shapeDefaults editable="editable">
+    </kendo:diagram-shapeDefaults>
+
+### fill `java.lang.String`
+
+Defines the fill options of the shape. Further configuration is available via [kendo:diagram-shapeDefaults-fill](#kendo-diagram-shapeDefaults-fill). 
+
+#### Example
+    <kendo:diagram-shapeDefaults fill="fill">
     </kendo:diagram-shapeDefaults>
 
 ### height `float`
@@ -51,6 +59,14 @@ The path option of a Shape is a description of a custom geometry. The format fol
 
 #### Example
     <kendo:diagram-shapeDefaults path="path">
+    </kendo:diagram-shapeDefaults>
+
+### source `java.lang.String`
+
+The source of the shape image. Applicable when the type is set to "image".
+
+#### Example
+    <kendo:diagram-shapeDefaults source="source">
     </kendo:diagram-shapeDefaults>
 
 ### type `java.lang.String`
@@ -118,6 +134,30 @@ More documentation is available at [kendo:diagram-shapeDefaults-content](/api/wr
 
     <kendo:diagram-shapeDefaults>
         <kendo:diagram-shapeDefaults-content></kendo:diagram-shapeDefaults-content>
+    </kendo:diagram-shapeDefaults>
+
+### kendo:diagram-shapeDefaults-editable
+
+Defines the shape editable options.
+
+More documentation is available at [kendo:diagram-shapeDefaults-editable](/api/wrappers/jsp/diagram/shapedefaults-editable).
+
+#### Example
+
+    <kendo:diagram-shapeDefaults>
+        <kendo:diagram-shapeDefaults-editable></kendo:diagram-shapeDefaults-editable>
+    </kendo:diagram-shapeDefaults>
+
+### kendo:diagram-shapeDefaults-fill
+
+Defines the fill options of the shape.
+
+More documentation is available at [kendo:diagram-shapeDefaults-fill](/api/wrappers/jsp/diagram/shapedefaults-fill).
+
+#### Example
+
+    <kendo:diagram-shapeDefaults>
+        <kendo:diagram-shapeDefaults-fill></kendo:diagram-shapeDefaults-fill>
     </kendo:diagram-shapeDefaults>
 
 ### kendo:diagram-shapeDefaults-hover

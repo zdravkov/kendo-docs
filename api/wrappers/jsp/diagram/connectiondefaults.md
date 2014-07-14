@@ -44,6 +44,18 @@ More documentation is available at [kendo:diagram-connectionDefaults-hover](/api
         <kendo:diagram-connectionDefaults-hover></kendo:diagram-connectionDefaults-hover>
     </kendo:diagram-connectionDefaults>
 
+### kendo:diagram-connectionDefaults-selection
+
+Defines the connection selection configuration.
+
+More documentation is available at [kendo:diagram-connectionDefaults-selection](/api/wrappers/jsp/diagram/connectiondefaults-selection).
+
+#### Example
+
+    <kendo:diagram-connectionDefaults>
+        <kendo:diagram-connectionDefaults-selection></kendo:diagram-connectionDefaults-selection>
+    </kendo:diagram-connectionDefaults>
+
 ### kendo:diagram-connectionDefaults-stroke
 
 Defines the stroke configuration.

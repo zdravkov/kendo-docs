@@ -116,6 +116,18 @@ More documentation is available at [kendo:chart-seriesItem-labels-border](/api/w
         <kendo:chart-seriesItem-labels-border></kendo:chart-seriesItem-labels-border>
     </kendo:chart-seriesItem-labels>
 
+### kendo:chart-seriesItem-labels-from
+
+The chart series from label configuration.
+
+More documentation is available at [kendo:chart-seriesItem-labels-from](/api/wrappers/jsp/chart/seriesitem-labels-from).
+
+#### Example
+
+    <kendo:chart-seriesItem-labels>
+        <kendo:chart-seriesItem-labels-from></kendo:chart-seriesItem-labels-from>
+    </kendo:chart-seriesItem-labels>
+
 ### kendo:chart-seriesItem-labels-margin
 
 The margin of the labels. A numeric value will set all margins.
@@ -138,6 +150,18 @@ More documentation is available at [kendo:chart-seriesItem-labels-padding](/api/
 
     <kendo:chart-seriesItem-labels>
         <kendo:chart-seriesItem-labels-padding></kendo:chart-seriesItem-labels-padding>
+    </kendo:chart-seriesItem-labels>
+
+### kendo:chart-seriesItem-labels-to
+
+The chart series to label configuration.
+
+More documentation is available at [kendo:chart-seriesItem-labels-to](/api/wrappers/jsp/chart/seriesitem-labels-to).
+
+#### Example
+
+    <kendo:chart-seriesItem-labels>
+        <kendo:chart-seriesItem-labels-to></kendo:chart-seriesItem-labels-to>
     </kendo:chart-seriesItem-labels>
 
 

@@ -219,6 +219,18 @@ More documentation is available at [kendo:grid-groupable](/api/wrappers/jsp/grid
         <kendo:grid-groupable></kendo:grid-groupable>
     </kendo:grid>
 
+### kendo:grid-messages
+
+Defines the text of the command buttons that are shown within the Grid. Used primarily for localization.
+
+More documentation is available at [kendo:grid-messages](/api/wrappers/jsp/grid/messages).
+
+#### Example
+
+    <kendo:grid>
+        <kendo:grid-messages></kendo:grid-messages>
+    </kendo:grid>
+
 ### kendo:grid-pageable
 
 If set to true the grid will display a pager. By default paging is disabled.Can be set to a JavaScript object which represents the pager configuration.

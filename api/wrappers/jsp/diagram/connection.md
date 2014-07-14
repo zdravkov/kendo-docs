@@ -56,6 +56,18 @@ More documentation is available at [kendo:diagram-connection-points](/api/wrappe
         <kendo:diagram-connection-points></kendo:diagram-connection-points>
     </kendo:diagram-connection>
 
+### kendo:diagram-connection-selection
+
+Defines the connection selection configuration.
+
+More documentation is available at [kendo:diagram-connection-selection](/api/wrappers/jsp/diagram/connection-selection).
+
+#### Example
+
+    <kendo:diagram-connection>
+        <kendo:diagram-connection-selection></kendo:diagram-connection-selection>
+    </kendo:diagram-connection>
+
 ### kendo:diagram-connection-stroke
 
 Defines the stroke configuration.

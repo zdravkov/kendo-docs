@@ -29,14 +29,6 @@ Specifyes the rotate style. Further configuration is available via [kendo:diagra
     <kendo:diagram-editable rotate="rotate">
     </kendo:diagram-editable>
 
-### select `boolean`
-
-Specifyes the select style. Further configuration is available via [kendo:diagram-editable-select](#kendo-diagram-editable-select). 
-
-#### Example
-    <kendo:diagram-editable select="select">
-    </kendo:diagram-editable>
-
 
 ##  Configuration JSP Tags
 
@@ -62,17 +54,5 @@ More documentation is available at [kendo:diagram-editable-rotate](/api/wrappers
 
     <kendo:diagram-editable>
         <kendo:diagram-editable-rotate></kendo:diagram-editable-rotate>
-    </kendo:diagram-editable>
-
-### kendo:diagram-editable-select
-
-Specifyes the select style.
-
-More documentation is available at [kendo:diagram-editable-select](/api/wrappers/jsp/diagram/editable-select).
-
-#### Example
-
-    <kendo:diagram-editable>
-        <kendo:diagram-editable-select></kendo:diagram-editable-select>
     </kendo:diagram-editable>
 

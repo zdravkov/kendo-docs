@@ -92,6 +92,18 @@ More documentation is available at [kendo:chart-seriesDefaults-labels-border](/a
         <kendo:chart-seriesDefaults-labels-border></kendo:chart-seriesDefaults-labels-border>
     </kendo:chart-seriesDefaults-labels>
 
+### kendo:chart-seriesDefaults-labels-from
+
+The chart series from label configuration.
+
+More documentation is available at [kendo:chart-seriesDefaults-labels-from](/api/wrappers/jsp/chart/seriesdefaults-labels-from).
+
+#### Example
+
+    <kendo:chart-seriesDefaults-labels>
+        <kendo:chart-seriesDefaults-labels-from></kendo:chart-seriesDefaults-labels-from>
+    </kendo:chart-seriesDefaults-labels>
+
 ### kendo:chart-seriesDefaults-labels-margin
 
 The margin of the labels. A numeric value will set all margins.
@@ -114,6 +126,18 @@ More documentation is available at [kendo:chart-seriesDefaults-labels-padding](/
 
     <kendo:chart-seriesDefaults-labels>
         <kendo:chart-seriesDefaults-labels-padding></kendo:chart-seriesDefaults-labels-padding>
+    </kendo:chart-seriesDefaults-labels>
+
+### kendo:chart-seriesDefaults-labels-to
+
+The chart series to label configuration.
+
+More documentation is available at [kendo:chart-seriesDefaults-labels-to](/api/wrappers/jsp/chart/seriesdefaults-labels-to).
+
+#### Example
+
+    <kendo:chart-seriesDefaults-labels>
+        <kendo:chart-seriesDefaults-labels-to></kendo:chart-seriesDefaults-labels-to>
     </kendo:chart-seriesDefaults-labels>
 
 

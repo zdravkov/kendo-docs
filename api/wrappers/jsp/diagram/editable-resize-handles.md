@@ -13,12 +13,12 @@ Specifies the handles style.
 
 ## Configuration Attributes
 
-### background `java.lang.String`
+### fill `java.lang.String`
 
-Set the handles backgorund.
+Specifies the handles fill options. Further configuration is available via [kendo:diagram-editable-resize-handles-fill](#kendo-diagram-editable-resize-handles-fill). 
 
 #### Example
-    <kendo:diagram-editable-resize-handles background="background">
+    <kendo:diagram-editable-resize-handles fill="fill">
     </kendo:diagram-editable-resize-handles>
 
 ### height `float`
@@ -39,6 +39,18 @@ The hangles width.
 
 
 ##  Configuration JSP Tags
+
+### kendo:diagram-editable-resize-handles-fill
+
+Specifies the handles fill options.
+
+More documentation is available at [kendo:diagram-editable-resize-handles-fill](/api/wrappers/jsp/diagram/editable-resize-handles-fill).
+
+#### Example
+
+    <kendo:diagram-editable-resize-handles>
+        <kendo:diagram-editable-resize-handles-fill></kendo:diagram-editable-resize-handles-fill>
+    </kendo:diagram-editable-resize-handles>
 
 ### kendo:diagram-editable-resize-handles-hover
 
