@@ -390,6 +390,30 @@ The start cap (arrow, head or decoration) of the connection:
 
 Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
 
+### connectionDefaults.selection `Object`
+
+Defines the connection selection configuration.
+
+### connectionDefaults.selection.handles `Object`
+
+Defines the connection selection handles configuration.
+
+### connectionDefaults.selection.handles.fill `String|Object`
+
+Defines the handles fill options.
+
+### connectionDefaults.selection.handles.fill.color `String`
+
+Defines the handles fill color.
+
+### connectionDefaults.selection.handles.stroke `Object`
+
+Defines the handles stroke options.
+
+### connectionDefaults.selection.handles.stroke.color `String`
+
+Defines the handles stroke color.
+
 ### connections `Array`
 
 Defines the connections configuration.
@@ -451,6 +475,30 @@ Sets the X coordinate of the point.
 ### connections.points.y `Number`
 
 Sets the Y coordinate of the point.
+
+### connections.selection `Object`
+
+Defines the connection selection configuration.
+
+### connections.selection.handles `Object`
+
+Defines the connection selection handles configuration.
+
+### connections.selection.handles.fill `String|Object`
+
+Defines the handles fill options.
+
+### connections.selection.handles.fill.color `String`
+
+Defines the handles fill color.
+
+### connections.selection.handles.stroke `Object`
+
+Defines the handles stroke options.
+
+### connections.selection.handles.stroke.color `String`
+
+Defines the handles stroke color.
 
 ### selectable `Boolean|Object`
 
