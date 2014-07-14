@@ -901,7 +901,7 @@ Zooms in or out of the diagram.
 
 The zoom factor.
 
-##### staticPoint `Object`
+##### point `Object`
 
 The point to zoom into or out of.
 
