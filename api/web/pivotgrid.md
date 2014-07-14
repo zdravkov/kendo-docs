@@ -448,6 +448,7 @@ The text messages displayed in the field menu.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -494,6 +495,7 @@ The text messages displayed in fields filter.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -533,6 +535,7 @@ The text messages of the fields filter menu item.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -572,6 +575,7 @@ The text messages of the filter button.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -611,6 +615,7 @@ The text messages of the include menu item.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -650,6 +655,7 @@ The title of the include fields dialog.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -689,6 +695,7 @@ The text of the clear filter expressions button.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -728,6 +735,7 @@ The text of the ok button in the include fields dialog.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
@@ -767,6 +775,7 @@ The text of the cancel button in the include fields dialog.
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
+        filterable: true,
         height: 550,
         messages: {
             fieldMenu: {
