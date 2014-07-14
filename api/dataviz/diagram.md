@@ -567,7 +567,8 @@ The following dash types are supported:
 Specifies the type of the Shape using any of the built-in shape type.
 
 * "rectangle": this is the default option
-* "circle" : a circle/ellipse
+* "circle": a circle/ellipse
+* "image": an image
 
 ### shapeDefaults.x `Number` *(default: 0)*
 
@@ -696,6 +697,10 @@ The font size of the shape content text.
 
 The color of the shape content text.
 
+### shapeDefaults.source `String`
+
+The source of the shape image. Applicable when the type is set to "image".
+
 ### shapeDefaults.visual `Function`
 
 A function returning a visual element to render for a given shape. The following primitives can be used to construct a composite visual:
@@ -798,6 +803,7 @@ Specifies the type of the Shape using any of the built-in shape type.
 
 * "rectangle": this is the default option
 * "circle" : a circle/ellipse
+* "image": an image
 
 ### shapes.x `Number` *(default: 0)*
 
@@ -905,6 +911,10 @@ The font size of the shape content text.
 ### shapes.content.color `String`
 
 The color of the shape content text.
+
+### shapes.source `String`
+
+The source of the shape image. Applicable when the type is set to "image".
 
 ### shapes.visual `Function`
 
