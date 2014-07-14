@@ -1,6 +1,6 @@
 ---
 title: Point
-page_title: Configuration, methods and events of Kendo UI DataViz Geometry Point
+page_title: API reference for methods and fields of Kendo UI DataViz Geometry Point
 ---
 
 # kendo.dataviz.geometry.Point
