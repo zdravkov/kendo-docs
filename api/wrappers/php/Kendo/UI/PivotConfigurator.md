@@ -20,7 +20,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
     $pivotConfigurator = new \Kendo\UI\PivotConfigurator('PivotConfigurator');
 
     // Configure it
-    $pivotConfigurator->dataSource(new ())
+    $pivotConfigurator->filterable(true)
 
     // Output it
 
@@ -55,6 +55,24 @@ Sets the data source of the dataSource.
     $pivotConfigurator = new \Kendo\UI\PivotConfigurator('PivotConfigurator');
     $schema = new \Kendo\Data\DataSourceSchema();
     $pivotConfigurator->dataSource(array('schema' => $schema));
+    ?>
+
+### filterable
+If set to true the user will be able to filter by using the field menu.
+
+#### Returns
+`\Kendo\UI\PivotConfigurator`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $pivotConfigurator = new \Kendo\UI\PivotConfigurator('PivotConfigurator');
+    $pivotConfigurator->filterable(true);
     ?>
 
 ### messages

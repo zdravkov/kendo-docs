@@ -45,6 +45,35 @@ The text messages displayed for column label.
     $messages->columnsLabel('value');
     ?>
 
+### fieldMenu
+
+The text messages displayed in the field menu.
+
+#### Returns
+`\Kendo\UI\PivotConfiguratorMessages`
+
+#### Parameters
+
+##### $value `\Kendo\UI\PivotConfiguratorMessagesFieldMenu|array`
+
+
+#### Example - using [\Kendo\UI\PivotConfiguratorMessagesFieldMenu](/api/wrappers/php/Kendo/UI/PivotConfiguratorMessagesFieldMenu)
+    <?php
+    $messages = new \Kendo\UI\PivotConfiguratorMessages();
+    $fieldMenu = new \Kendo\UI\PivotConfiguratorMessagesFieldMenu();
+    $cancel = 'value';
+    $fieldMenu->cancel($cancel);
+    $messages->fieldMenu($fieldMenu);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $messages = new \Kendo\UI\PivotConfiguratorMessages();
+    $cancel = 'value';
+    $messages->fieldMenu(array('cancel' => $cancel));
+    ?>
+
 ### fieldsLabel
 The text messages displayed for fields label.
 

@@ -238,6 +238,24 @@ For additional information check the [expandMember](/api/web/pivotgrid#events-ex
     $pivotGrid->expandMember(new \Kendo\JavaScriptFunction('function(e) { }'));
     ?>
 
+### filterable
+If set to true the user will be able to filter by using the field menu.
+
+#### Returns
+`\Kendo\UI\PivotGrid`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $pivotGrid = new \Kendo\UI\PivotGrid('PivotGrid');
+    $pivotGrid->filterable(true);
+    ?>
+
 ### height
 The height of the pivotgrid. Numeric values are treated as pixels.
 

@@ -27,6 +27,35 @@ The text messages displayed in the column fields sections.
     $messages->columnFields('value');
     ?>
 
+### fieldMenu
+
+The text messages displayed in the field menu.
+
+#### Returns
+`\Kendo\UI\PivotGridMessages`
+
+#### Parameters
+
+##### $value `\Kendo\UI\PivotGridMessagesFieldMenu|array`
+
+
+#### Example - using [\Kendo\UI\PivotGridMessagesFieldMenu](/api/wrappers/php/Kendo/UI/PivotGridMessagesFieldMenu)
+    <?php
+    $messages = new \Kendo\UI\PivotGridMessages();
+    $fieldMenu = new \Kendo\UI\PivotGridMessagesFieldMenu();
+    $cancel = 'value';
+    $fieldMenu->cancel($cancel);
+    $messages->fieldMenu($fieldMenu);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $messages = new \Kendo\UI\PivotGridMessages();
+    $cancel = 'value';
+    $messages->fieldMenu(array('cancel' => $cancel));
+    ?>
+
 ### measureFields
 The text messages displayed in the measure fields sections.
 
