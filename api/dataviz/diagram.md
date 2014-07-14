@@ -63,9 +63,17 @@ Specifies the shape resizing.
 
 Specifies the handles style.
 
-### editable.resize.handles.background `String`
+### editable.resize.handles.fill `String|Object`
 
-Set the handles backgorund.
+Specifies the handles fill options.
+
+### editable.resize.handles.fill.color `String`
+
+Specifies the handles fill color.
+
+### editable.resize.handles.fill.opacity `Number` *(default: 1)*
+
+Specifies the handles fill opacity.
 
 ### editable.resize.handles.stroke `Object`
 
@@ -87,9 +95,17 @@ Specifies the handles stroke dash type.
 
 Set the handles hover styles.
 
-### editable.resize.handles.hover.background `String`
+### editable.resize.handles.hover.fill `String|Object`
 
-Set the handles backgorund.
+Set the handles hover fill options.
+
+### editable.resize.handles.hover.fill.color `String`
+
+Set the handles hover fill color.
+
+### editable.resize.handles.hover.fill.opacity `Number` *(default: 1)*
+
+Set the handles hover fill opacity.
 
 ### editable.resize.handles.hover.stroke `Object`
 
@@ -123,9 +139,17 @@ Specifyes the rotate style.
 
 Specifyes the thumb style.
 
-### editable.rotate.thumb.background `String`
+### editable.rotate.thumb.fill `String|Object`
 
-Set the thumb backgorund.
+Set the thumb fill options.
+
+### editable.rotate.thumb.fill.color `String`
+
+Set the thumb fill color.
+
+### editable.rotate.thumb.fill.opacity `Number` *(default: 1)*
+
+Set the thumb fill opacity.
 
 ### editable.rotate.thumb.stroke `Object`
 
@@ -143,37 +167,9 @@ Specifies the thumb stroke width.
 
 Specifies the thumb stroke dash type.
 
-### editable.select `Boolean|Object`
-
-Specifyes the select style.
-
-### editable.select.background `String`
-
-Set the thumb backgorund.
-
-### editable.select.stroke `Object`
-
-Specifies the select stroke styles.
-
-### editable.select.stroke.color `String`
-
-Specifies the select stroke color.
-
-### editable.select.stroke.width `Number`
-
-Specifies the select stroke width.
-
-### editable.select.stroke.dashType `String`
-
-Specifies the select stroke dash type.
-
 ### dataSource `Object|Array|kendo.data.DataSource`
 
 See the [dataSource field](#fields-dataSource).
-
-### draggable `Boolean` *(default: true)*
-
-Defines whether items can be dropped on the diagram.
 
 ### layout `Object`
 The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.
@@ -521,17 +517,33 @@ Defines the width of the shape when added to the diagram.
 
 Defines the height of the shape when added to the diagram.
 
-### shapeDefaults.background `String`
+### shapeDefaults.fill `String|Object`
 
-Defines the fill-color of the shape.
+Defines the fill options of the shape.
+
+### shapeDefaults.fill.color `String`
+
+Defines the fill color of the shape.
+
+### shapeDefaults.fill.opacity `Number` *(default: 1)*
+
+Defines the fill opacity of the shape.
 
 ### shapeDefaults.hover `Object`
 
 Defines the hover configuration.
 
-### shapeDefaults.hover.background `String` *(default: "#70CAFF")*
+### shapeDefaults.hover.fill `String|Object`
 
-Hover's background color.
+Hover's fill options.
+
+### shapeDefaults.hover.fill.color `String`
+
+Hover's fill color.
+
+### shapeDefaults.hover.fill.opacity `Number` *(default: 1)*
+
+Hover's fill opacity.
 
 ### shapeDefaults.connectors `Array`
 
@@ -618,7 +630,7 @@ A function returning a visual element to render for a given shape. The following
         var r = new diagram.Circle({
             width : 100,
             height: 60,
-            background: "LimeGreen"
+            fill: "LimeGreen"
         });
         g.append(r);
         var fn = new diagram.TextBlock({
@@ -715,17 +727,33 @@ Defines the width of the shape when added to the diagram.
 
 Defines the height of the shape when added to the diagram.
 
-### shapes.background `String`
+### shapes.fill `String|Object`
 
-Defines the fill-color of the shape.
+Defines the fill options of the shape.
+
+### shapes.fill.color `String`
+
+Defines the fill color of the shape.
+
+### shapes.fill.opacity `Number` *(default: 1)*
+
+Defines the fill opacity of the shape.
 
 ### shapes.hover `Object`
 
 Defines the hover configuration.
 
-### shapes.hover.background `String`
+### shapes.hover.fill `String|Object`
 
-Hover's background color.
+Hover's fill options.
+
+### shapes.hover.fill.color `String`
+
+Hover's fill color.
+
+### shapes.hover.fill.opacity `Number` *(default: 1)*
+
+Hover's fill opacity.
 
 ### shapes.connectors `Array`
 
@@ -1108,7 +1136,7 @@ Whether the addition should be recorded in the undo-redo stack.
     var diagram = $("#diagram").data("kendoDiagram");
 
      diagram.addShape(new Point(100, 100));
-     var shape = new kendo.diagram.Shape({x:500, y:100, background: "red"});
+     var shape = new kendo.diagram.Shape({x:500, y:100, fill: "red"});
      diagram.addShape(shape);
     </script>
 
