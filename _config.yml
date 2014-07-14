@@ -81,6 +81,10 @@ navigation:
         title: "Chart"
     "*diagram":
         title: "Diagram"
+    "*geometry":
+        title: "Geometry"
+    "*drawing":
+        title: "Drawing"
     "*lineargauge":
         title: "LinearGauge"
     "*treemap":
