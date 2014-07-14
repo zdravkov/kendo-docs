@@ -608,6 +608,18 @@ The text displayed in the shape.
 
 The alignment of the text inside the shape.
 
+### shapeDefaults.content.fontFamily `String`
+
+The font family of the shape content text.
+
+### shapeDefaults.content.fontSize `Number`
+
+The font size of the shape content text.
+
+### shapeDefaults.content.color `String`
+
+The color of the shape content text.
+
 ### shapeDefaults.visual `Function`
 
 A function returning a visual element to render for a given shape. The following primitives can be used to construct a composite visual:
@@ -797,6 +809,18 @@ The text displayed in the shape.
 ### shapes.content.align `String`
 
 The alignment of the text inside the shape.
+
+### shapes.content.fontFamily `String`
+
+The font family of the shape content text.
+
+### shapes.content.fontSize `Number`
+
+The font size of the shape content text.
+
+### shapes.content.color `String`
+
+The color of the shape content text.
 
 ### shapes.visual `Function`
 
