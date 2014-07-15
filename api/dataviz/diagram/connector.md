@@ -16,13 +16,17 @@ Defines the width of the connector.
 
 Defines the height of the connector.
 
-### background `String`
+### fill `String|Object`
 
-Defines the background color of the Connector.
+Defines the fill options of the connector.
 
-### hoveredBackground `String`
+### fill.color `String`
 
-Defines the color of the Connector when the pointer hovers over it.
+Defines the fill color of the connector.
+
+### fill.opacity `Number` *(default: 1)*
+
+Defines the fill opacity of the connector.
 
 ## Methods
 
