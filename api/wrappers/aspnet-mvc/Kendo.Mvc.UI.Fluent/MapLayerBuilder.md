@@ -96,8 +96,8 @@ The value that configures the key.
 
 
 ### LocationField(System.String)
-The data item field which contains the marker location.
-            The field should be an array with two numbers - latitude and longitude.Requires the dataSource option to be set.
+The data item field which contains the marker (symbol) location.
+            The field should be an array with two numbers - latitude and longitude in decimal degrees.Requires the dataSource option to be set.Only applicable to "marker" and "bubble" layers.
 
 
 #### Parameters
@@ -118,6 +118,32 @@ The data item field which contains the marker title.
 
 ##### value `System.String`
 The value that configures the titlefield.
+
+
+
+
+
+### MaxSize(System.Double)
+The maximum symbol size for bubble layer symbols.
+
+
+#### Parameters
+
+##### value `System.Double`
+The value that configures the maxsize.
+
+
+
+
+
+### MinSize(System.Double)
+The minimum symbol size for bubble layer symbols.
+
+
+#### Parameters
+
+##### value `System.Double`
+The value that configures the minsize.
 
 
 
@@ -162,8 +188,22 @@ The value that configures the urltemplateid.
 
 
 
+### ValueField(System.String)
+The value field for bubble layer symbols.
+            The data item field should be a number.
+
+
+#### Parameters
+
+##### value `System.String`
+The value that configures the valuefield.
+
+
+
+
+
 ### Type(Kendo.Mvc.UI.MapLayerType)
-The layer type. Supported types are "tile" and "shape".
+The layer type. Supported types are "tile", "bing", "shape", "marker" and "bubble".
 
 
 #### Parameters
@@ -201,6 +241,19 @@ The value that configures the shape.
 
 
 
+### Symbol(Kendo.Mvc.UI.MapSymbol)
+The bubble layer symbol type. Supported symbols are "circle" and "square".
+
+
+#### Parameters
+
+##### value [Kendo.Mvc.UI.MapSymbol](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/MapSymbol)
+The value that configures the symbol.
+
+
+
+
+
 ### Shape(System.String)
 The marker shape name. The "pin" and "pinTarget" shapes are predefined.
 
@@ -209,6 +262,32 @@ The marker shape name. The "pin" and "pinTarget" shapes are predefined.
 
 ##### value `System.String`
 The name of the shape.
+
+
+
+
+
+### Symbol(System.String)
+The bubble layer symbol type. The "circle" and "square" symbols are predefined.
+
+
+#### Parameters
+
+##### value `System.String`
+The value that configures the symbol.
+
+
+
+
+
+### SymbolHandler(System.String)
+A client-side function to invoke that will draw the symbol.
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will draw the symbol.
 
 
 

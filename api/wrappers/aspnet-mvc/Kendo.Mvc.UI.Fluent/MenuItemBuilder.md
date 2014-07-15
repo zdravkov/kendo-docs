@@ -37,4 +37,20 @@ The add action.
     %>
 
 
+### Separator(System.Boolean)
+Renders a separator item
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items =>
+    {
+        items.Add().Separator(true);
+    })
+    %>
+
+
 

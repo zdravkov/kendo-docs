@@ -37,6 +37,19 @@ The action that configures the shape.
 
 
 
+### Bubble(System.Action\<Kendo.Mvc.UI.Fluent.MapLayerDefaultsBubbleSettingsBuilder\>)
+The default configuration for bubble layers.
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.MapLayerDefaultsBubbleSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/MapLayerDefaultsBubbleSettingsBuilder)>
+The action that configures the bubble.
+
+
+
+
+
 ### Tile(System.Action\<Kendo.Mvc.UI.Fluent.MapLayerDefaultsTileSettingsBuilder\>)
 The default configuration for tile layers.
 

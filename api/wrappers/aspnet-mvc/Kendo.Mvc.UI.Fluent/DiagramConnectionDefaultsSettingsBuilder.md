@@ -63,4 +63,17 @@ The value that configures the endcap.
 
 
 
+### Selection(System.Action\<Kendo.Mvc.UI.Fluent.DiagramConnectionDefaultsSelectionSettingsBuilder\>)
+Defines the connection selection configuration.
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramConnectionDefaultsSelectionSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramConnectionDefaultsSelectionSettingsBuilder)>
+The action that configures the selection.
+
+
+
+
+
 

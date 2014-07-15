@@ -81,7 +81,7 @@ Sets the Read operation using anonymous object.
 
 
 ### Read(System.String)
-Sets JavaScript function which to return additional parameters which to be sent the server.
+Sets the Read operation to JavaScript function or object.
 
 
 #### Parameters

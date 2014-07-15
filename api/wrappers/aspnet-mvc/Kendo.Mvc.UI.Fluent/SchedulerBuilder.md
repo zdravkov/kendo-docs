@@ -951,4 +951,59 @@ The DataSource configurator action.
     %>
 
 
+### CurrentTimeMarker(System.Action\<Kendo.Mvc.UI.Fluent.SchedulerCurrentTimeMarkerSettingsBuilder\>)
+Sets the currentTimeMarker configuration of the scheduler.
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.SchedulerCurrentTimeMarkerSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/SchedulerCurrentTimeMarkerSettingsBuilder)>
+The lambda which configures the currentTimeMarker
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Task>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .CurrentTimeMarker(marker =>
+        {
+            marker.UpdateInterval(100);
+            marker.UseLocalTimezone(false);
+        })
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+            .Create("Create", "Scheduler")
+            .Destroy("Destroy", "Scheduler")
+            .Update("Update", "Scheduler")
+        )
+    )
+
+
+### CurrentTimeMarker(System.Boolean)
+If set to false the "current time" marker would be disabled.
+
+
+#### Parameters
+
+##### enabled `System.Boolean`
+The enabled
+
+
+
+
+#### Example (Razor)
+    @(Html.Kendo().Scheduler<Kendo.Mvc.Examples.Models.Scheduler.Task>()
+        .Name("scheduler")
+        .Date(new DateTime(2013, 6, 13))
+        .CurrentTimeMarker(false)
+        .DataSource(d => d
+            .Model(m => m.Id(f => f.TaskID))
+            .Read("Read", "Scheduler")
+        )
+    )
+
+
 

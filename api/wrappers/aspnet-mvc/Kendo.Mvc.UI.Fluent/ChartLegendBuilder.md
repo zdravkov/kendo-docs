@@ -284,4 +284,43 @@ The labels configuration action
 
 
 
+### Orientation(Kendo.Mvc.UI.ChartLegendOrientation)
+Sets the legend orientation
+
+
+#### Parameters
+
+##### orientation [Kendo.Mvc.UI.ChartLegendOrientation](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI/ChartLegendOrientation)
+The legend orientation.
+
+
+
+
+
+### Width(System.Int32)
+Sets the legend width
+
+
+#### Parameters
+
+##### width `System.Int32`
+The legend width.
+
+
+
+
+
+### Height(System.Int32)
+Sets the legend height
+
+
+#### Parameters
+
+##### height `System.Int32`
+The legend height.
+
+
+
+
+
 

@@ -226,6 +226,25 @@ If true the item will be highlighted.
     %>
 
 
+### Navigatable(System.Boolean)
+Enable/disable TabStrip keyboard navigation.
+
+
+#### Parameters
+
+##### value `System.Boolean`
+If true the TabStrip will have keyboard navigation.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TabStrip()
+    .Name("TabStrip")
+    .Navigatable(false)
+    %>
+
+
 ### SecurityTrimming(System.Boolean)
 Enable/disable security trimming functionality of the component.
 

@@ -11,19 +11,6 @@ Defines the fluent API for configuring the DiagramShape settings.
 ## Methods
 
 
-### Editable(System.Boolean)
-Specifies if the shape is editable by the user.
-
-
-#### Parameters
-
-##### value `System.Boolean`
-The value that configures the editable.
-
-
-
-
-
 ### Id(System.String)
 The unique identifier for a Shape.
 
@@ -37,27 +24,14 @@ The value that configures the id.
 
 
 
-### Rotatable(System.Boolean)
-Specifies if the user is allowed to rotate the shape.
+### Editable(System.Action\<Kendo.Mvc.UI.Fluent.DiagramShapeEditableSettingsBuilder\>)
+Defines the shape editable options.
 
 
 #### Parameters
 
-##### value `System.Boolean`
-The value that configures the rotatable.
-
-
-
-
-
-### Resizable(System.Boolean)
-Specifies if the shape is resizable.
-
-
-#### Parameters
-
-##### value `System.Boolean`
-The value that configures the resizable.
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramShapeEditableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramShapeEditableSettingsBuilder)>
+The action that configures the editable.
 
 
 
@@ -180,14 +154,14 @@ The value that configures the height.
 
 
 
-### Background(System.String)
-Defines the fill-color of the shape.
+### Fill(System.Action\<Kendo.Mvc.UI.Fluent.DiagramShapeFillSettingsBuilder\>)
+Defines the fill options of the shape.
 
 
 #### Parameters
 
-##### value `System.String`
-The value that configures the background.
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramShapeFillSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramShapeFillSettingsBuilder)>
+The action that configures the fill.
 
 
 
@@ -240,6 +214,19 @@ Defines the shapes content settings.
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramShapeContentSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramShapeContentSettingsBuilder)>
 The action that configures the content.
+
+
+
+
+
+### Source(System.String)
+The source of the shape image. Applicable when the type is set to "image".
+
+
+#### Parameters
+
+##### value `System.String`
+The value that configures the source.
 
 
 

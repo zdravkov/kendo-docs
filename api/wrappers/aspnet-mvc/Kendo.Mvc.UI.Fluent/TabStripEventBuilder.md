@@ -11,6 +11,55 @@ Defines the fluent interface for configuring the TabStrip events.
 ## Methods
 
 
+### Show(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Show client-side event
+
+For additional information check the [show](/api/web/tabstrip#events-show) event documentation.
+
+
+#### Parameters
+
+##### onSelectAction `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().TabStrip()
+        .Name("TabStrip")
+        .Events(events => events.Show(
+                @<text>
+                    function(e) {
+                    //event handling code
+                    }
+                    </text>
+                    ))
+                    .Render();
+                    %>
+
+
+### Show(System.String)
+Defines the name of the JavaScript function that will handle the the Show client-side event.
+
+For additional information check the [show](/api/web/tabstrip#events-show) event documentation.
+
+
+#### Parameters
+
+##### onSelectHandlerName `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TabStrip()
+    .Name("TabStrip")
+    .Events(events => events.Show("onActivate"))
+    %>
+
+
 ### Activate(System.Func\<System.Object,System.Object\>)
 Defines the inline handler of the Activate client-side event
 

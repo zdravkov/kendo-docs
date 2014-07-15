@@ -11,14 +11,14 @@ Defines the fluent API for configuring the DiagramShapeDefaultsHoverSettings set
 ## Methods
 
 
-### Background(System.String)
-Hover's background color.
+### Fill(System.Action\<Kendo.Mvc.UI.Fluent.DiagramShapeDefaultsHoverFillSettingsBuilder\>)
+Hover's fill options.
 
 
 #### Parameters
 
-##### value `System.String`
-The value that configures the background.
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramShapeDefaultsHoverFillSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramShapeDefaultsHoverFillSettingsBuilder)>
+The action that configures the fill.
 
 
 

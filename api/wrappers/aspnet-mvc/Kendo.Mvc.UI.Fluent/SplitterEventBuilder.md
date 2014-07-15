@@ -207,4 +207,53 @@ The name of the JavaScript function that will handle the event.
     %>
 
 
+### Error(System.Func\<System.Object,System.Object\>)
+Defines the inline handler of the Error client-side event
+
+For additional information check the [error](/api/web/splitter#events-error) event documentation.
+
+
+#### Parameters
+
+##### handler `System.Func<System.Object,System.Object>`
+The handler code wrapped in a text tag (Razor syntax).
+
+
+
+
+#### Example (ASPX)
+    <% Html.Kendo().Splitter()
+        .Name("Splitter")
+        .Events(events => events.Error(
+                @<text>
+                    function(e) {
+                    //event handling code
+                    }
+                    </text>
+                    ))
+                    .Render();
+                    %>
+
+
+### Error(System.String)
+Defines the name of the JavaScript function that will handle the the Error client-side event.
+
+For additional information check the [error](/api/web/splitter#events-error) event documentation.
+
+
+#### Parameters
+
+##### handler `System.String`
+The name of the JavaScript function that will handle the event.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Splitter()
+    .Name("Splitter")
+    .Events(events => events.Error("onError"))
+    %>
+
+
 

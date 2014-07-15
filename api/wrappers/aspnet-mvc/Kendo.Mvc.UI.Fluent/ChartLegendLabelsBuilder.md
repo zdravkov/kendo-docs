@@ -83,4 +83,39 @@ The labels template.
     %>
 
 
+### Padding(System.Int32,System.Int32,System.Int32,System.Int32)
+Sets the labels padding
+
+
+#### Parameters
+
+##### top `System.Int32`
+The labels top padding.
+
+##### right `System.Int32`
+The labels right padding.
+
+##### bottom `System.Int32`
+The labels bottom padding.
+
+##### left `System.Int32`
+The labels left padding.
+
+
+
+
+
+### Padding(System.Int32)
+Sets the labels padding
+
+
+#### Parameters
+
+##### padding `System.Int32`
+The labels padding.
+
+
+
+
+
 

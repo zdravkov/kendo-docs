@@ -1693,4 +1693,176 @@ The data to bind to
 
 
 
+### Waterfall(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+Defines bound waterfall series.
+
+
+#### Parameters
+
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point value from the chart model
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point category from the chart model
+
+##### summaryExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point summary type from the chart model
+
+
+
+
+
+### Waterfall(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+Defines bound waterfall series.
+
+
+#### Parameters
+
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point value from the chart model
+
+
+
+
+
+### Waterfall(System.String,System.String,System.String)
+Defines bound waterfall series.
+
+
+#### Parameters
+
+##### valueMemberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### summaryMemberName `System.String`
+The name of the note summary type member.
+
+
+
+
+
+### Waterfall(System.Type,System.String,System.String,System.String)
+Defines bound waterfall series.
+
+
+#### Parameters
+
+##### memberType `System.Type`
+The type of the value member.
+
+##### valueMemberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### summaryMemberName `System.String`
+The name of the note summary type member.
+
+
+
+
+
+### Waterfall(System.Collections.IEnumerable)
+Defines waterfall series bound to inline data.
+
+
+#### Parameters
+
+##### data `System.Collections.IEnumerable`
+The data to bind to.
+
+
+
+
+
+### HorizontalWaterfall(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>,System.Linq.Expressions.Expression\<System.Func\<T,System.String\>\>)
+Defines bound horizontal waterfall series.
+
+
+#### Parameters
+
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point value from the chart model
+
+##### categoryExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point category from the chart model
+
+##### summaryExpression `System.Linq.Expressions.Expression<System.Func<T,System.String>>`
+The expression used to extract the point summary type from the chart model
+
+
+
+
+
+### HorizontalWaterfall(System.Linq.Expressions.Expression\<System.Func\<T,T1\>\>)
+Defines bound horizontal waterfall series.
+
+
+#### Parameters
+
+##### valueExpression `System.Linq.Expressions.Expression<System.Func<T,T1>>`
+The expression used to extract the point value from the chart model
+
+
+
+
+
+### HorizontalWaterfall(System.String,System.String,System.String)
+Defines bound horizontal waterfall series.
+
+
+#### Parameters
+
+##### valueMemberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### summaryMemberName `System.String`
+The name of the note summary type member.
+
+
+
+
+
+### HorizontalWaterfall(System.Type,System.String,System.String,System.String)
+Defines bound horizontal waterfall series.
+
+
+#### Parameters
+
+##### memberType `System.Type`
+The type of the value member.
+
+##### valueMemberName `System.String`
+The name of the value member.
+
+##### categoryMemberName `System.String`
+The name of the category member.
+
+##### summaryMemberName `System.String`
+The name of the note summary type member.
+
+
+
+
+
+### HorizontalWaterfall(System.Collections.IEnumerable)
+Defines horizontal waterfall series bound to inline data.
+
+
+#### Parameters
+
+##### data `System.Collections.IEnumerable`
+The data to bind to.
+
+
+
+
+
 

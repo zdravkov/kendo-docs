@@ -46,6 +46,32 @@ The client events action.
     %>
 
 
+### Filter(System.String)
+Use it to enable filtering of items.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .Filter("startswith");
+    %>
+
+
+### Filter(Kendo.Mvc.UI.FilterType)
+Use it to enable filtering of items.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .Filter(FilterType.Contains);
+    %>
+
+
 ### Items(System.Action\<Kendo.Mvc.UI.Fluent.DropDownListItemFactory\>)
 Defines the items in the DropDownList
 
@@ -94,6 +120,19 @@ Define the object of the default empty item.
     .DataTextField("Text")
     .DataValueField("Value")
     .OptionLabel(new { Text = "Text1", Value = "Value1" })
+    %>
+
+
+### MinLength(System.Int32)
+Specifies the minimum number of characters that should be typed before the widget queries the dataSource.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().DropDownList()
+    .Name("DropDownList")
+    .MinLength(3)
     %>
 
 

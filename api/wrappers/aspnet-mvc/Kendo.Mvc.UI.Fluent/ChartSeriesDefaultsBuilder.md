@@ -25,6 +25,26 @@ Defines the default settings for column series.
 
 
 
+### RangeBar
+Defines the default settings range bar series
+
+
+
+#### Returns
+
+
+
+
+### RangeColumn
+Defines the default settings range column series
+
+
+
+#### Returns
+
+
+
+
 ### Line
 Defines the default settings for line series.
 

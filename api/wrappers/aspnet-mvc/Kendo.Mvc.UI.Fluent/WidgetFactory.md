@@ -426,8 +426,44 @@ Creates a new 1.
 
 
 #### Example (ASPX)
-    <%= Html.Kendo().Scheduler()
+    <%= Html.Kendo().Scheduler<SchedulerEvent>()
     .Name("Scheduler")
+    %>
+
+
+### PivotGrid
+Creates a new 1.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().PivotGrid()
+    .Name("PivotGrid")
+    %>
+
+
+### PivotGridT1
+Creates a new 1.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().PivotGrid<EventData>()
+    .Name("PivotGrid")
+    %>
+
+
+### PivotConfigurator
+Creates a new PivotConfigurator.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().PivotConfigurator()
+    .Name("PivotConfigurator")
     %>
 
 
@@ -513,6 +549,30 @@ Creates a new MaskedTextBox.
 #### Example (ASPX)
     <%= Html.Kendo().MaskedTextBox()
     .Name("MaskedTextBox")
+    %>
+
+
+### TextBox
+Creates a new TextBox.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TextBox()
+    .Name("TextBox")
+    %>
+
+
+### TextBoxT1
+Creates a new 1.
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TextBox<double>()
+    .Name("TextBox")
     %>
 
 
@@ -957,6 +1017,19 @@ Determines if the script should be rendered within a script tag
 
 
 
+### ContextMenu
+Creates a Menu
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Menu()
+    .Name("Menu")
+    .Items(items => { /* add items here */ });
+    %>
+
+
 ### Diagram
 Creates a Diagram
 
@@ -969,6 +1042,18 @@ Creates a Diagram
     %>
 
 
+### GanttT1
+Creates a 2
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().Gantt()
+    .Name("Gantt")
+    %>
+
+
 ### Map
 Creates a Map
 
@@ -978,6 +1063,30 @@ Creates a Map
 #### Example (ASPX)
     <%= Html.Kendo().Map()
     .Name("Map")
+    %>
+
+
+### ToolBar
+Creates a ToolBar
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().ToolBar()
+    .Name("ToolBar")
+    %>
+
+
+### TreeMap
+Creates a TreeMap
+
+
+
+
+#### Example (ASPX)
+    <%= Html.Kendo().TreeMap()
+    .Name("TreeMap")
     %>
 
 

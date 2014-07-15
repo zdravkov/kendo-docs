@@ -76,4 +76,17 @@ The action that configures the points.
 
 
 
+### Selection(System.Action\<Kendo.Mvc.UI.Fluent.DiagramConnectionSelectionSettingsBuilder\>)
+Defines the connection selection configuration.
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramConnectionSelectionSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramConnectionSelectionSettingsBuilder)>
+The action that configures the selection.
+
+
+
+
+
 

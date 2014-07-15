@@ -26,8 +26,7 @@ The value that configures the autobind.
 
 
 ### ZoomRate(System.Double)
-The scaling factor or the zoom when using the mouse-wheel to zoom in or out.
-            If zoomRate is less than 1, zooming will be reversed.
+The zoom step when using the mouse-wheel to zoom in or out.
 
 
 #### Parameters
@@ -39,14 +38,53 @@ The value that configures the zoomrate.
 
 
 
-### Draggable(System.Boolean)
-Defines whether items can be dropped on the diagram.
+### Zoom(System.Double)
+The zoom level in percentages.
 
 
 #### Parameters
 
-##### value `System.Boolean`
-The value that configures the draggable.
+##### value `System.Double`
+The value that configures the zoom.
+
+
+
+
+
+### ZoomMin(System.Double)
+The zoom min level in percentages.
+
+
+#### Parameters
+
+##### value `System.Double`
+The value that configures the zoommin.
+
+
+
+
+
+### ZoomMax(System.Double)
+The zoom max level in percentages.
+
+
+#### Parameters
+
+##### value `System.Double`
+The value that configures the zoommax.
+
+
+
+
+
+### Editable(System.Action\<Kendo.Mvc.UI.Fluent.DiagramEditableSettingsBuilder\>)
+Specifies the shape editable.
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramEditableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramEditableSettingsBuilder)>
+The action that configures the editable.
 
 
 
@@ -65,6 +103,19 @@ The action that configures the layout.
 
 
 
+### Template(System.String)
+The template which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
+
+
+#### Parameters
+
+##### value `System.String`
+The value that configures the template.
+
+
+
+
+
 ### TemplateId(System.String)
 The template which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
 
@@ -72,33 +123,7 @@ The template which renders the content of the shape when bound to a dataSource. 
 #### Parameters
 
 ##### value `System.String`
-The value that configures the templateid.
-
-
-
-
-
-### Resizable(System.Boolean)
-This defines whether the shapes can be resized. If set to false the adorner will not show the resizing thumbs, as can be seen below;
-
-
-#### Parameters
-
-##### value `System.Boolean`
-The value that configures the resizable.
-
-
-
-
-
-### Rotatable(System.Boolean)
-This defines whether the shapes can be rotated. If set to false the adorner will not show the rotating thumb, as can be seen below;
-
-
-#### Parameters
-
-##### value `System.Boolean`
-The value that configures the rotatable.
+The value that configures the template.
 
 
 
@@ -125,6 +150,19 @@ Defines the connections configuration.
 
 ##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramConnectionFactory](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramConnectionFactory)>
 The action that configures the connections.
+
+
+
+
+
+### Selectable(System.Action\<Kendo.Mvc.UI.Fluent.DiagramSelectableSettingsBuilder\>)
+Defines the selectable options.
+
+
+#### Parameters
+
+##### configurator System.Action<[Kendo.Mvc.UI.Fluent.DiagramSelectableSettingsBuilder](/api/wrappers/aspnet-mvc/Kendo.Mvc.UI.Fluent/DiagramSelectableSettingsBuilder)>
+The action that configures the selectable.
 
 
 
@@ -198,6 +236,19 @@ The client events action.
         .Click("onClick")
     )
     %>
+
+
+### Editable(System.Boolean)
+Specifies the shape editable.
+
+
+#### Parameters
+
+##### visible `System.Boolean`
+A value indicating if the editable will be available.
+
+
+
 
 
 
