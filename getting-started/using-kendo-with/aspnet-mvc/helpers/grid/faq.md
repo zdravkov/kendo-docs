@@ -68,7 +68,7 @@ A Kendo Template may contain arbitrary JavaScript code. The `#` symbol is used t
 
 #### Example: Conditions In ClientTemplate
 
-    colums.Bound(p => p.ProductName).ClientTemplate(
+    columns.Bound(p => p.ProductName).ClientTemplate(
         "# if (HasIcon == true) { #" +
             "<img src='" + Url.Content("~/Content/icons/") + "#= ProductID #.png' alt='#= ProductName # icon' />" +
         "# } else { #" +
