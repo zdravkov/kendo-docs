@@ -8,9 +8,17 @@ Represents a rectangle.
 
 ## Configuration
 
-### background `String`
+### fill `String|Object`
+
+Defines the fill options of the rectangle.
+
+### fill.color `String`
 
 Defines the fill color of the rectangle.
+
+### fill.opacity `Number` *(default: 1)*
+
+Defines the fill opacity of the rectangle.
 
 ### height `Number`
 
