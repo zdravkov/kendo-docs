@@ -3,7 +3,7 @@ title: Transformation
 page_title: API reference for methods and fields of Kendo UI DataViz Geometry Transformation
 ---
 
-# kendo.dataviz.geometry.Matrix
+# kendo.dataviz.geometry.Transformation
 
 An utility class for building transformation matrices.
 
