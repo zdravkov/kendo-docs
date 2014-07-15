@@ -135,6 +135,35 @@ The text of the ok button in the include fields dialog.
     $fieldMenu->ok('value');
     ?>
 
+### operators
+
+The text of the filter operators displayed in the filter menu.
+
+#### Returns
+`\Kendo\UI\PivotGridMessagesFieldMenu`
+
+#### Parameters
+
+##### $value `\Kendo\UI\PivotGridMessagesFieldMenuOperators|array`
+
+
+#### Example - using [\Kendo\UI\PivotGridMessagesFieldMenuOperators](/api/wrappers/php/Kendo/UI/PivotGridMessagesFieldMenuOperators)
+    <?php
+    $fieldMenu = new \Kendo\UI\PivotGridMessagesFieldMenu();
+    $operators = new \Kendo\UI\PivotGridMessagesFieldMenuOperators();
+    $contains = 'value';
+    $operators->contains($contains);
+    $fieldMenu->operators($operators);
+    ?>
+
+#### Example - using array
+
+    <?php
+    $fieldMenu = new \Kendo\UI\PivotGridMessagesFieldMenu();
+    $contains = 'value';
+    $fieldMenu->operators(array('contains' => $contains));
+    ?>
+
 ### title
 The title of the include fields dialog.
 
