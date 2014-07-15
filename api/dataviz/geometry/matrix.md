@@ -7,9 +7,11 @@ page_title: API reference for methods and fields of Kendo UI DataViz Geometry Ma
 
 Represents a 3x3 transformation matrix in the following form:
 
-  a c e
-( b d f )
-  0 0 1
+`a c e`
+
+`( b d f )`
+
+`0 0 1`
 
 ## Example - Creating a transformation matrix
         <script>
