@@ -8,10 +8,6 @@ A non-wrapping text element with optional background.
 
 ## Configuration
 
-### background `String`
-
-The background color of the text block.
-
 ### color `String`
 
 The text color of the text block.
