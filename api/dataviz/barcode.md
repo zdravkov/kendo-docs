@@ -26,6 +26,7 @@ The supported values are:
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
+      width: 300,
       value:"123456",
       renderAs: "svg"
     });
@@ -41,6 +42,7 @@ Any valid CSS color string will work here, including hex and rgb.
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
+      width: 300,
       value: "HELLO WORLD",
       background: "#2eb3a6"
     });
@@ -56,6 +58,7 @@ The border of the barcode area.
     <script>
     $("#barcode").kendoBarcode({
       value:"123456",
+      width: 300,
       border: {
         width: 2,
         dashType: "solid",
@@ -119,7 +122,7 @@ The height of the barcode in pixels.  By default the height is 100.
       type: "ean13",
       value: "123456789987",
       color: "#10c4b2",
-      height: 200
+      width: 300
     });
     </script>
 
@@ -133,6 +136,7 @@ The padding of the barcode.
     <script>
     $("#barcode").kendoBarcode({
       value:"123456",
+      width: 300,
       padding: {
         top: 20,
         left: 5,
@@ -168,6 +172,7 @@ Can be set to a JavaScript object which represents the text configuration.
     <script>
     $("#barcode").kendoBarcode({
       value:"123456",
+      width: 300,
       text:{
         color: "red",
         font: "20px sans-serif"
@@ -193,6 +198,7 @@ The margin of the text
     <script>
     $("#barcode").kendoBarcode({
       value:"123456",
+      width: 300,
       text:{
         margin : {
           top: 3
@@ -279,7 +285,8 @@ The initial value of the Barcode
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-      value:"12345"
+      value:"12345",
+      width: 300
     });
     </script>
 
@@ -313,7 +320,8 @@ Returns a PNG image of the barcode encoded as a [Data URL](https://developer.moz
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-      value: "FOO"
+      value: "FOO",
+      width: 300
     });
     var barcode = $("#barcode").data("kendoBarcode");
     var image = barcode.imageDataURL();
@@ -328,8 +336,16 @@ Redraws the barcode.
 
 #### Example
 
-    var barcode = $("#barcode").data("kendoBarcode");
-    barcode.redraw();
+    <div id="barcode"></div>
+    <script>
+    $("#barcode").kendoBarcode({
+      value: "FOO",
+      width: 300
+    });
+
+    $("#barcode")
+       .data("kendoBarcode").redraw();
+    </script>
 
 ### resize
 
@@ -340,7 +356,8 @@ Adjusts the widget layout to match the size of the container.
     <div id="barcode" style="width: 300px; height: 150px;"></div>
     <script>
     $("#barcode").kendoBarcode({
-      value: "FOO"
+      value: "FOO",
+      width: 300
     });
 
     $("#barcode")
@@ -368,7 +385,8 @@ Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the barcode
     <div id="barcode"></div>
     <script>
     $("#barcode").kendoBarcode({
-      value:"FOO"
+      value: "FOO",
+      width: 300
     });
     var barcode = $("#barcode").data("kendoBarcode");
     var svg = barcode.svg();
@@ -381,14 +399,22 @@ Gets/Sets the value of the barcode.
 
 #### Example
 
+    <div id="barcode"></div>
+    <script>
+    $('#barcode').kendoBarcode({
+        width: 300,
+        value: "123456"
+    });
     // get a reference to the barcode widget
     var barcode = $("#barcode").data("kendoBarcode");
 
     // get the value of the barcode.
     var value = barcode.value();
+    console.log(value);
 
     // sets the value of the barcode and redraws it.
     barcode.value("1234567");
+    </script>
 
 #### Parameters
 
