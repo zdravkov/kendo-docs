@@ -179,9 +179,12 @@ a img {
 
 #markdown-toc {
     border-bottom: 1px solid #ebecee;
-    font-size: 12px;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    right: 0;
+    font-size: 12px;
+    padding-left: 28px;
+    box-sizing: border-box;
 }
 
 #markdown-toc > ul > li {
@@ -256,11 +259,20 @@ a img {
     position: absolute;
     top: 0;
     right: 0;
-    width: 80%;
     height: 100%;
     overflow: auto;
     padding: 15px 1em 15px 3em;
     box-sizing: border-box;
+}
+
+#markdown-toc,
+#page-article {
+    width: 80%;
+}
+
+#markdown-toc + #page-article {
+    top: 51px; /* height of TOC */
+    height: calc(100% - 51px);
 }
 
 #page-article article {
@@ -300,9 +312,21 @@ h2 {
 }
 
 h3 {
-    border-top: 2px solid #ebecee;
     padding-top: 20px;
     margin-top: 40px;
+    position: relative;
+}
+
+h3:before {
+    content: " ";
+    display: block;
+    font-size: 0;
+    font-height: 0;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: -3px;
+    border-top: 2px solid #ebecee;
 }
 
 h2 + h3 {
@@ -345,6 +369,7 @@ blockquote th, blockquote td {
     border: 1px solid transparent;
     overflow: hidden;
     word-break: break-word;
+    clear: both;
 }
 
 .prettyprint code {
@@ -374,6 +399,7 @@ footer
 
 @media (max-width: 1024px) {
     #page-nav { width: 30%; }
+    #markdown-toc,
     #page-article { width: 70%; }
 }
 

@@ -27,9 +27,9 @@ var dojoApi = (function($) {
                 .css({
                     opacity: .8,
                     "float": "right",
-                    margin: 0
+                    margin: "1em 1em -4em 0"
                 })
-                .prependTo(element);
+                .insertBefore(element);
         },
         wrapInHtml: function(snippet) {
             var result = ('<!DOCTYPE html>\n'+

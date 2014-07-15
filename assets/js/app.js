@@ -60,7 +60,11 @@ $(function(){
 
     prettyPrint();
 
-    $("#markdown-toc").each(function() {
+    $("#markdown-toc")
+        .on("click", "a", function() {
+            $(".section > ul").hide();
+        })
+    .each(function() {
         var ul = $("<ul>");
 
         $("#page-article h2").each(function() {
