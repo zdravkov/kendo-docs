@@ -12742,7 +12742,7 @@ The border width of the icon.
 
 #### Example - set the series notes icon border width
 
-   <div id="chart"></div>
+    <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
       dataSource: {
@@ -15016,7 +15016,7 @@ The border width of the icon.
 
 #### Example - set the seriesDefaults notes icon border width
 
-   <div id="chart"></div>
+    <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
       dataSource: {
