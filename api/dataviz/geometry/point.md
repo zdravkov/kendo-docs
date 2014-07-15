@@ -117,7 +117,7 @@ Compares this point with another instance.
 
 #### Parameters
 
-##### point `kendo.dataviz.geometry.Point`
+##### other `kendo.dataviz.geometry.Point`
 
 The point to compare with.
 
@@ -130,8 +130,6 @@ The point to compare with.
 
 Gets the x coordinate value.
 
-#### Parameters
-
 #### Returns
 
 `Number` The current x coordinate value.
@@ -140,8 +138,6 @@ Gets the x coordinate value.
 ### getY
 
 Gets the y coordinate value.
-
-#### Parameters
 
 #### Returns
 
@@ -175,9 +171,7 @@ Rotates the point around the given center.
 
 ##### angle `Number`
 
-Angle of rotation in decimal degrees, measured in the clockwise direction.
-Zero corresponds to "up".
-
+Angle in decimal degrees. Measured in clockwise direction with 0 pointing "up".
 Negative values or values greater than 360 will be normalized.
 
 ##### center `kendo.dataviz.geometry.Point|Array` *(default: [0, 0])*

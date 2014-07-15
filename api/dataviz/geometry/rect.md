@@ -58,6 +58,22 @@ Multiple arguments are accepted.
 
 ## Methods
 
+### bbox
+
+Returns the bounding box of this rectangle after applying the
+specified transformation matrix.
+
+#### Parameters
+
+##### matrix `kendo.dataviz.geometry.Matrix`
+
+Transformation matrix to apply.
+
+#### Returns
+
+`kendo.dataviz.geometry.Rect` The bounding box after applying the transformation matrix.
+
+
 ### bottomLeft
 
 Gets the position of the bottom-left corner of the rectangle.
@@ -90,8 +106,6 @@ Gets the position of the center of the rectangle.
 
 Gets the origin (top-left point) of the rectangle.
 
-#### Parameters
-
 #### Returns
 
 `kendo.dataviz.geometry.Point` The origin (top-left point).
@@ -101,11 +115,9 @@ Gets the origin (top-left point) of the rectangle.
 
 Gets the rectangle size.
 
-#### Parameters
-
 #### Returns
 
-`Number` The current height value.
+`kendo.dataviz.geometry.Size` The current rectangle Size.
 
 
 ### height
@@ -129,7 +141,7 @@ The new origin Point or equivalent [x, y] array.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current origin Point.
+`kendo.dataviz.geometry.Rect` The current rectangle instance.
 
 
 ### setSize
@@ -144,7 +156,7 @@ The new rectangle Size or equivalent [width, height] array.
 
 #### Returns
 
-`kendo.dataviz.geometry.Size` The current rectangle Size.
+`kendo.dataviz.geometry.Rect` The current rectangle instance.
 
 
 ### topLeft
@@ -173,20 +185,4 @@ Gets the rectangle width.
 #### Returns
 
 `Number` The rectangle width.
-
-
-### bbox
-
-Returns the bounding box of this rectangle after applying the
-specified transformation matrix.
-
-#### Parameters
-
-##### matrix `kendo.dataviz.geometry.Matrix`
-
-Transformation matrix to apply.
-
-#### Returns
-
-`kendo.dataviz.geometry.Rect` The bounding box after applying the transformation matrix.
 

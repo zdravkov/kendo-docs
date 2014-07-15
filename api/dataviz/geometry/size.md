@@ -66,7 +66,7 @@ Compares this Size with another instance.
 
 #### Parameters
 
-##### size `kendo.dataviz.geometry.Size`
+##### other `kendo.dataviz.geometry.Size`
 
 The Size to compare with.
 
@@ -79,8 +79,6 @@ The Size to compare with.
 
 Gets the width value.
 
-#### Parameters
-
 #### Returns
 
 `Number` The current width value.
@@ -89,8 +87,6 @@ Gets the width value.
 ### getHeight
 
 Gets the height value.
-
-#### Parameters
 
 #### Returns
 
