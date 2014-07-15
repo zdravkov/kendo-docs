@@ -8,9 +8,17 @@ Represents a circle.
 
 ## Configuration
 
-### background `String`
+### fill `String|Object`
 
-The fill color of the circle.
+Defines the fill options of the circle.
+
+### fill.color `String`
+
+Defines the fill color of the circle.
+
+### fill.opacity `Number` *(default: 1)*
+
+Defines the fill opacity of the circle.
 
 ### stroke `Object`
 
