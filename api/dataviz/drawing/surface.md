@@ -19,17 +19,64 @@ The implementations for SVG, Canvas and VML inherit from this base class.
             var surface = d.Surface.create($("#container"));
         </script>
 
+## Class methods
+
+### create
+
+Creates a drawing surface matching the browser capabilities.
+
+#### Example - Creating a surface with any available type
+
+        <div id="container"></div>
+        <script>
+            var d = kendo.dataviz.drawing;
+            var surface = d.Surface.create($("#container"));
+        </script>
+
+#### Example - Specifying a preferred type and size
+
+        <div id="container"></div>
+        <script>
+            var d = kendo.dataviz.drawing;
+            var surface = d.Surface.create($("#container"), {
+                type: "canvas",
+                width: "600px",
+                height: "400px"
+            });
+        </script>
+
+#### Parameters
+
+##### element `Element`
+
+The DOM (or jQuery) element that will host the surface.
+
+##### options `Object`
+
+The options to pass to the surface.
+This parameter can be omitted.
+
+#### Returns
+
+`kendo.dataviz.drawing.Surface` An implementation matching the browser capabilities or caller preference; undefined if none is available.
+
+
 ## Configuration
 
-### width `String` *(default: "100%")*
+### type `String`
 
-The width of the surface element.
-By default the surface will expand to fill the width of the first positioned container.
+The preferred type of surface to create.
+Used only by Surface.create, will be ignored by the actual Surface implementation.
 
 ### height `String` *(default: "100%")*
 
 The height of the surface element.
 By default the surface will expand to fill the height of the first positioned container.
+
+### width `String` *(default: "100%")*
+
+The width of the surface element.
+By default the surface will expand to fill the width of the first positioned container.
 
 ## Events
 
@@ -122,60 +169,6 @@ The browser event that triggered the click.
 ### clear
 
 Clears the drawing surface.
-
-### create
-
-Creates a drawing surface matching the browser capabilities.
-
-> This is a static method exposed as Surface.create
-
-#### Example - Creating a surface with any available implementation
-
-        <div id="container"></div>
-        <script>
-            var d = kendo.dataviz.drawing;
-            var surface = d.Surface.create($("#container"));
-        </script>
-
-#### Example - Specifying a preferred implementation
-
-        <div id="container"></div>
-        <script>
-            var d = kendo.dataviz.drawing;
-            var surface = d.Surface.create($("#container"), "canvas");
-        </script>
-
-#### Example - Specifying user options and preferred implementation
-
-        <div id="container"></div>
-        <script>
-            var d = kendo.dataviz.drawing;
-            var surface = d.Surface.create(
-                $("#container"),
-                { width: "600px", height: "400px" },
-                "canvas"
-            );
-        </script>
-
-#### Parameters
-
-##### element `Element`
-
-The DOM element that will host the surface.
-
-##### options `Object`
-
-The options to pass to the surface.
-This parameter can be omitted.
-
-##### preferred `String`
-
-The ID of the preferred surface. Currently the supported values are "svg", "canvas" and "vml".
-This parameter will be ignored if the preferred surface is unavailable.
-
-#### Returns
-
-`kendo.dataviz.drawing.Surface` An implementation matching the browser capabilities or caller preference; undefined if none is available.
 
 ### draw
 
