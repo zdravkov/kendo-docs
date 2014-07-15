@@ -24,6 +24,10 @@ The X position of the top-left corner of the element.
 
 The Y position of the top-left corner of the element.
 
+### source `String`
+
+The source URL of the image.
+
 ## Methods
 
 ### visible
