@@ -949,6 +949,10 @@ Prepares the widget for safe removal from the DOM. Detaches all event handlers a
     diagram.destroy();
     </script>
 
+### resize
+
+Adjusts the diagram size to match the size of the container.
+
 ### zoom
 
 Zooms in or out of the diagram.
