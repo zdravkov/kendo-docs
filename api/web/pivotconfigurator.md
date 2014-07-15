@@ -1,4 +1,4 @@
----
+Not e--
 title: PivotConfigurator
 page_title: Configuration, methods and events of Kendo UI PivotConfigurator
 description: Code examples for PivotConfigurator UI widget configuration, learn how to use it.
@@ -739,6 +739,298 @@ The text of the cancel button in the include fields dialog.
         messages: {
             fieldMenu: {
                 cancel: "Close"
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.operators `Object`
+
+The text of the filter operators displayed in the filter menu.
+
+#### Example
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        filterable: true,
+        messages: {
+            fieldMenu: {
+                operators: {
+                    contains: "Contains",
+                    doesnotcontain: "Does not contain",
+                    startswith: "Starts with",
+                    endswith: "Ends with",
+                    eq: "Is equal to",
+                    neq: "Is not equal to"
+                }
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.operators.contains `String` *(default: "Contains")*
+
+The text of the "contains" filter operator.
+
+#### Example
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        filterable: true,
+        messages: {
+            fieldMenu: {
+                operators: {
+                    contains: "Contains"
+                }
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.operators.doesnotcontain `String` *(default: "Does not contain")*
+
+The text of the "Does not contain" filter operator.
+
+#### Example
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        filterable: true,
+        messages: {
+            fieldMenu: {
+                operators: {
+                    doesnotcontain: "Doesn't contain"
+                }
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.operators.startswith `String` *(default: "Starts with")*
+
+The text of the "Starts with" filter operator.
+
+#### Example
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        filterable: true,
+        messages: {
+            fieldMenu: {
+                operators: {
+                    startswith: "Starts"
+                }
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.operators.endswith `String` *(default: "Ends with")*
+
+The text of the "Ends with" filter operator.
+
+#### Example
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        filterable: true,
+        messages: {
+            fieldMenu: {
+                operators: {
+                    endswith: "Ends"
+                }
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.operators.eq `String` *(default: "Is equal to")*
+
+The text of the "equal" filter operator.
+
+#### Example
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        filterable: true,
+        messages: {
+            fieldMenu: {
+                operators: {
+                    eq: "Equal to"
+                }
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.operators.neq `String` *(default: "Is not equal to")*
+
+The text of the "not equal" filter operator.
+
+#### Example
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        filterable: true,
+        messages: {
+            fieldMenu: {
+                operators: {
+                    neq: "Not equal to"
+                }
             }
         },
         dataSource: {
