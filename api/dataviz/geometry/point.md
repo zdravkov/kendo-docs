@@ -268,7 +268,7 @@ The new y coordinate value.
 
 ### toArray
 
-Formats the point value to an [x, y] array.
+Returns the point coordinates as an [x, y] array.
 
 #### Parameters
 
