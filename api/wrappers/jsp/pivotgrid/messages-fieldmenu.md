@@ -77,3 +77,18 @@ The title of the include fields dialog.
     <kendo:pivotGrid-messages-fieldMenu title="title">
     </kendo:pivotGrid-messages-fieldMenu>
 
+
+##  Configuration JSP Tags
+
+### kendo:pivotGrid-messages-fieldMenu-operators
+
+The text of the filter operators displayed in the filter menu.
+
+More documentation is available at [kendo:pivotGrid-messages-fieldMenu-operators](/api/wrappers/jsp/pivotgrid/messages-fieldmenu-operators).
+
+#### Example
+
+    <kendo:pivotGrid-messages-fieldMenu>
+        <kendo:pivotGrid-messages-fieldMenu-operators></kendo:pivotGrid-messages-fieldMenu-operators>
+    </kendo:pivotGrid-messages-fieldMenu>
+
