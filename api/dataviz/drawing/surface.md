@@ -1,5 +1,5 @@
 ---
-title: kendo.dataviz.drawing.Surface
+title: Surface
 page_title: Configuration, methods and events of Kendo UI DataViz Drawing Surface
 ---
 
