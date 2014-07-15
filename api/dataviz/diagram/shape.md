@@ -73,17 +73,33 @@ Defines the width of the shape when added to the diagram.
 
 Defines the height of the shape when added to the diagram.
 
-### background `String` *(default: "SteelBlue")*
+### fill `String|Object`
 
-Defines the fill-color of the shape.
+Defines the fill options of the shape.
+
+### fill.color `String`
+
+Defines the fill color of the shape.
+
+### fill.opacity `Number` *(default: 1)*
+
+Defines the fill opacity of the shape.
 
 ### hover `Object`
 
 Defines the hover configuration.
 
-### hover.background `String` *(default: "#70CAFF")*
+### hover.fill `String|Object`
 
-Hover's background color.
+Defines the hover fill options of the shape.
+
+### hover.fill.color `String`
+
+Defines the hover fill color of the shape.
+
+### hover.fill.opacity `Number` *(default: 1)*
+
+Defines the hover fill opacity of the shape.
 
 ### connectors `Array`
 
