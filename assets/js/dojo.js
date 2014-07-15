@@ -25,11 +25,11 @@ var dojoApi = (function($) {
                 .text(text)
                 .addClass("btn btn-primary dojo-submit-button")
                 .css({
-                    margin: "1em",
-                    "opacity": .8,
-                    "float": "right"
+                    opacity: .8,
+                    "float": "right",
+                    margin: 0
                 })
-                .insertBefore(element);
+                .prependTo(element);
         },
         wrapInHtml: function(snippet) {
             var result = ('<!DOCTYPE html>\n'+
