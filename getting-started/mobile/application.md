@@ -357,7 +357,8 @@ This allows fine-grained tuning of the application look and behavior. A sample o
                 majorVersion: 5,      // Major OS version
                 minorVersion: "0.0",  // Minor OS versions
                 flatVersion: "500",   // Flat OS version for easier comparison
-                appMode: false,       // Whether running in browser or in AppMode/PhoneGap/Icenium.
+                appMode: false,       // Whether running in browser or in AppMode/Cordova/PhoneGap/Telerik AppBuilder.
+                cordova: false,       // Whether running in Cordova/PhoneGap/Telerik AppBuilder.
                 tablet: "ipad"        // If a tablet - tablet name or false for a phone.
             }
         });

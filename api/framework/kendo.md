@@ -834,6 +834,9 @@ A convenience property to allow easier version checks, for instance:
 ##### appMode `Boolean`
 Returns true if running in application mode - pinned to desktop in iOS or running in PhoneGap/WebView.
 
+##### cordova `Boolean`
+Returns true if running in a Cordova/PhoneGap/Telerik AppBuilder application.
+
 ### version `String`
 
 Returns the Kendo UI version as a string, for example `"2013.3.1119"` or `"2013.2.918"`, etc. In general, Kendo UI version identifiers provide the following information:
