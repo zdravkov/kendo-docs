@@ -7,6 +7,14 @@ A JSP wrapper for Kendo UI [MaskedTextBox](/api/web/maskedtextbox).
 
 ## Configuration Attributes
 
+### clearPromptChar `boolean`
+
+Specifies whether the widget will replace the prompt characters with spaces on blur. Prompt chars will be shown again on focus.
+
+#### Example
+    <kendo:maskedTextBox clearPromptChar="clearPromptChar">
+    </kendo:maskedTextBox>
+
 ### culture `java.lang.String`
 
 Specifies the culture info used by the widget.
