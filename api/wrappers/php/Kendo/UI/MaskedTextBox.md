@@ -20,7 +20,7 @@ configuration [methods](#methods) and output it by `echo`-ing the result of the 
     $maskedTextBox = new \Kendo\UI\MaskedTextBox('MaskedTextBox');
 
     // Configure it
-    $maskedTextBox->culture('value')
+    $maskedTextBox->clearPromptChar(true)
 
     // Output it
 
@@ -64,6 +64,24 @@ For additional information check the [change](/api/web/maskedtextbox#events-chan
     <?php
     $maskedTextBox = new \Kendo\UI\MaskedTextBox('MaskedTextBox');
     $maskedTextBox->change(new \Kendo\JavaScriptFunction('function(e) { }'));
+    ?>
+
+### clearPromptChar
+Specifies whether the widget will replace the prompt characters with spaces on blur. Prompt chars will be shown again on focus.
+
+#### Returns
+`\Kendo\UI\MaskedTextBox`
+
+#### Parameters
+
+##### $value `boolean`
+
+
+
+#### Example 
+    <?php
+    $maskedTextBox = new \Kendo\UI\MaskedTextBox('MaskedTextBox');
+    $maskedTextBox->clearPromptChar(true);
     ?>
 
 ### culture
