@@ -3,7 +3,7 @@ title: OptionsStore
 page_title: API reference for methods and fields of Kendo UI DataViz Options Store
 ---
 
-# kendo.dataviz.drawing.OptionsStore : Class
+# kendo.dataviz.drawing.OptionsStore : kendo.Class
 Stores nested settings and notifies an (optional) observer of changes.
 
 ###### Example - initializing an options store

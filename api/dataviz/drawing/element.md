@@ -3,7 +3,7 @@ title: Element
 page_title: Configuration, methods and events of Kendo UI DataViz Drawing Element
 ---
 
-# kendo.dataviz.drawing.Element
+# kendo.dataviz.drawing.Element : kendo.Class
 
 An abstract base class representing common members of all drawing elements.
 

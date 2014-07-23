@@ -3,7 +3,7 @@ title: Group
 page_title: API reference for methods and fields of Kendo UI DataViz Drawing Group
 ---
 
-# kendo.dataviz.drawing.Group : Element
+# kendo.dataviz.drawing.Group : kendo.dataviz.drawing.Element
 Represents a set of drawing elements, possibly including other groups.
 
 #### Example - creating a group
