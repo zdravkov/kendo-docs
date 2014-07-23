@@ -3,7 +3,7 @@ title: Surface
 page_title: Configuration, methods and events of Kendo UI DataViz Drawing Surface
 ---
 
-# kendo.dataviz.drawing.Surface
+# kendo.dataviz.drawing.Surface : Observable
 
 An abstract class representing the top-level drawing surface.
 This class can't be instantiated directly.
