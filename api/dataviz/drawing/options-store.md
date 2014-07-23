@@ -51,7 +51,7 @@ Gets the value of the specified option.
 The field name to retrieve.
 Must be a fully qualified name (e.g. "foo.bar") for nested options.
 
-##### Returns
+#### Returns
 `Object` The current option value.
 
 
