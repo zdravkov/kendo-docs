@@ -1734,7 +1734,7 @@ The fields which can be used in the template are:
 * format - the default format of the label
 * culture - the default culture (if set) on the label
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the category axis template as a string
 
@@ -3641,7 +3641,7 @@ The rotation angle of the title. By default the title is not rotated.
 
 The text of the title.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the category axis title text
 
@@ -4132,7 +4132,7 @@ The fields which can be used in the template are:
 
 * value - the category value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the category axis notes label template as a string
 
@@ -4721,7 +4721,7 @@ The fields which can be used in the template are:
 
 * value - the category value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the category axis note label template as a string
 
@@ -5611,7 +5611,7 @@ The fields which can be used in the template are:
 *   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 *   dataItem - the original data item used to construct the point.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the chart legend label template as a string
     <div id="chart"></div>
@@ -5981,7 +5981,7 @@ The fields which can be used in the template are:
 *   percentage - the point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 *   dataItem - the original data item used to construct the point.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the chart legend label template as a string
     <div id="chart"></div>
@@ -7574,7 +7574,7 @@ The supported values are:
 
 The text of the title.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the chart pane title text
 
@@ -10284,7 +10284,7 @@ The fields which can be used in the template are:
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 * total - the sum of all previous series values. Available for waterfall series.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the chart series label template
 
@@ -10430,7 +10430,7 @@ The fields which can be used in the template are:
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 * total - the sum of all previous series values. Available for waterfall series.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 ### series.labels.from.visible `Boolean|Function` *(default: false)*
 
@@ -10547,7 +10547,7 @@ The fields which can be used in the template are:
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 * total - the sum of all previous series values. Available for waterfall series.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 ### series.labels.to.visible `Boolean|Function` *(default: false)*
 
@@ -13077,7 +13077,7 @@ The fields which can be used in the template are:
 
 * value - the point value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the series notes label template as a string
 
@@ -14005,7 +14005,7 @@ The fields which can be used in the template are:
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 * total - the sum of all previous series values. Available for waterfall series.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the chart series label template
 
@@ -14146,7 +14146,7 @@ The fields which can be used in the template are:
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 * total - the sum of all previous series values. Available for waterfall series.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 ### seriesDefaults.labels.from.visible `Boolean` *(default: false)*
 
@@ -14254,7 +14254,7 @@ The fields which can be used in the template are:
 * runningTotal - the sum of point values since the last "runningTotal" [summary point](#configuration-series.summaryField). Available for waterfall series.
 * total - the sum of all previous series values. Available for waterfall series.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 ### seriesDefaults.labels.to.visible `Boolean` *(default: false)*
 
@@ -15373,7 +15373,7 @@ The fields which can be used in the template are:
 
 * value - the point value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the seriesDefaults notes label template as a string
 
@@ -16019,7 +16019,7 @@ The position of the title.
 
 The text of the chart title. You can also set the text directly for a title with default options.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the chart title position
 
@@ -17065,7 +17065,7 @@ The fields which can be used in the template are:
 
 * value - the value value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the value axis crosshair tooltip template as a string
 
@@ -17744,7 +17744,7 @@ The fields which can be used in the template are:
 
 * value - the value value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the value axis template as a string
 
@@ -19499,7 +19499,7 @@ The rotation angle of the title. By default the title is not rotated.
 
 The text of the title.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the value axis title text
 
@@ -19966,7 +19966,7 @@ The fields which can be used in the template are:
 
 * value - the value value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the value axis notes label template as a string
 
@@ -20555,7 +20555,7 @@ The fields which can be used in the template are:
 
 * value - the axis value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the value axis note label template as a string
 
@@ -21394,7 +21394,7 @@ The fields which can be used in the template are:
 
 * value - the value value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the scatter chart x axis crosshair tooltip template as a string
 
@@ -22257,7 +22257,7 @@ The fields which can be used in the template are:
 
 * value - the category value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the scatter chart x axis label template as a string
     <div id="chart"></div>
@@ -24022,7 +24022,7 @@ The rotation angle of the title. By default the title is not rotated.
 
 The text of the title.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the scatter chart x axis title text
 
@@ -24519,7 +24519,7 @@ The fields which can be used in the template are:
 
 * value - the axis value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the x axis notes label template as a string
 
@@ -25108,7 +25108,7 @@ The fields which can be used in the template are:
 
 * value - the axis value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the value axis note label template as a string
 
@@ -26808,7 +26808,7 @@ The fields which can be used in the template are:
 
 * value - the category value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the scatter chart y axis label template as a string
     <div id="chart"></div>
@@ -28567,7 +28567,7 @@ The rotation angle of the title. By default the title is not rotated.
 
 The text of the title.
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the scatter chart y axis title text
 
@@ -29064,7 +29064,7 @@ The fields which can be used in the template are:
 
 * value - the axis value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the y axis notes label template as a string
 
@@ -29653,7 +29653,7 @@ The fields which can be used in the template are:
 
 * value - the axis value
 
-> Note: To split the text into multiple lines, you can use a line feed character(\n).
+> The text can be split into multiple lines by using line feed characters ("\n").
 
 #### Example - set the value axis note label template as a string
 
