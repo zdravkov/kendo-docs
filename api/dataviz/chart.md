@@ -1731,6 +1731,8 @@ The fields which can be used in the template are:
 
 * value - the category value
 * dataItem - the data item, in case a field has been specified
+* format - the default format of the label
+* culture - the default culture (if set) on the label
 
 > Note: To split the text into multiple lines, you can use a line feed character(\n).
 
