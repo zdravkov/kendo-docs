@@ -15,7 +15,6 @@ The configuration of this Group.
 ## Fields
 
 ### options `kendo.dataviz.drawing.OptionsStore`
-
 The configuration options of the drawing element.
 
 ## Configuration
@@ -29,17 +28,23 @@ A flag, indicating if the element is visible.
 ## Methods
 
 ### bbox
-Returns the bounding box of the element.
-
-Transformations on the parent, or the element itself are applied
-before calculating the bounding box.
+Returns the bounding box of the element with transformations applied.
 
 #### Returns
-`kendo.dataviz.geometry.Rect` The bounding box of the element with all transformations applied.
+`kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
 
 
 ### transform
 Gets or sets the transformation of the element.
+
+#### Example - setting transformation on an element
+        var d = kendo.dataviz.drawing;
+        var geo = kendo.dataviz.geometry;
+
+        var path = new d.Path();
+        path.moveTo(0, 0).lineTo(100, 100);
+
+        path.transform(geo.transform().scale(2, 1));
 
 #### Parameters
 
