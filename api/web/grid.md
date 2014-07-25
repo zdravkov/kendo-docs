@@ -755,7 +755,7 @@ Specifies whether to show or hide the DropDownList with the operators.
 
 ### columns.filterable.cell.template `Function`
 
-JavaScript function which will customize how the input for the filter value is customized.
+JavaScript function which will customize how the input for the filter value is rendered.
 
 #### Example - Using template for the filter cell
 
