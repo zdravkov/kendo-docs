@@ -5394,6 +5394,24 @@ The source widget instance.
         });
     </script>
 
+### markerClick
+
+Fired when a marker has been clicked or tapped.
+
+#### Event Data
+
+##### e.marker `kendo.dataviz.map.Marker`
+
+The marker instance.
+
+##### e.layer `kendo.dataviz.map.Marker`
+
+The marker layer instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
 ### pan
 
 Fired while the map viewport is being moved.
