@@ -5309,6 +5309,47 @@ The source jQuery event instance
         });
     </script>
 
+### markerActivate
+
+Fired when a marker has been displayed.
+
+#### Event Data
+
+##### e.marker `kendo.dataviz.map.Marker`
+
+The marker instance.
+
+##### e.layer `kendo.dataviz.map.Marker`
+
+The marker layer instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+#### Example - Customize the marker DOM element
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "shape",
+                dataSource: {
+                    type: "geojson",
+                    data: [{
+                        "type": "Point",
+                        "coordinates": [
+                            [30, 10]
+                        ]
+                    }]
+                }
+            }],
+            markerCreated: function(e) {
+                e.marker.element.addClass("foo");
+            }
+        });
+    </script>
+
+
 ### markerCreated
 
 Fired when a marker has been created and is about to be displayed.
