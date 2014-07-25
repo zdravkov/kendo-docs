@@ -5322,6 +5322,10 @@ Cancelling the event will prevent the marker from being shown.
 
 The marker instance.
 
+##### e.layer `kendo.dataviz.map.Marker`
+
+The marker layer instance.
+
 ##### e.sender `kendo.dataviz.ui.Map`
 
 The source widget instance.
