@@ -226,8 +226,26 @@ The data item field which contains the tile title.
     $treeMap->textField('value');
     ?>
 
+### theme
+The theme of the TreeMap.
+
+#### Returns
+`\Kendo\Dataviz\UI\TreeMap`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $treeMap = new \Kendo\Dataviz\UI\TreeMap('TreeMap');
+    $treeMap->theme('value');
+    ?>
+
 ### type
-The layout type for the Treemap.The Supported values are:
+The layout type for the Treemap.
 
 #### Returns
 `\Kendo\Dataviz\UI\TreeMap`
