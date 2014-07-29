@@ -48,9 +48,17 @@ The data item field which contains the tile title.
     <kendo:treeMap textField="textField">
     </kendo:treeMap>
 
+### theme `java.lang.String`
+
+The theme of the TreeMap.
+
+#### Example
+    <kendo:treeMap theme="theme">
+    </kendo:treeMap>
+
 ### type `java.lang.String`
 
-The layout type for the Treemap.The Supported values are:
+The layout type for the Treemap.
 
 #### Example
     <kendo:treeMap type="type">
