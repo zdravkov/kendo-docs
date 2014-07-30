@@ -70,7 +70,7 @@ module Jekyll
 
         PUNCTUATION_REGEXP = RUBY_VERSION > "1.9" ? /[^\p{Word}\- ]/u : /[^\w\- ]/
 
-        def call
+        def call()
 
             doc.css('h1, h2, h3').each do |node|
 
@@ -86,11 +86,54 @@ module Jekyll
 
                 a = Nokogiri::XML::Node.new('a', doc)
                 a['href'] = "##{id}"
-                a.children = node.children
-                node.add_child a
+                a.children = node.children.first()
+
+                a_type = Nokogiri::XML::Node.new('a', doc)
+                a_type.set_attribute('class', 'type-link')
+
+                link_node = a.children.first()
+                if m = /(?<class>[a-zA-Z.].*) : (?<base>[a-zA-Z.].*)/.match(link_node.text)
+                    node.add_child a
+
+                    if base_link = type_link(m[:base])
+                        link_node.content = m[:class]
+                        a_type.content = m[:base]
+                        a_type['href'] = base_link
+
+                        base_p = Nokogiri::XML::Node.new('span', doc)
+                        base_p.set_attribute('class', 'type-link')
+                        base_p.content = 'Inherits '
+                        base_p.add_child a_type
+                        node.add_child base_p
+                    end
+                else
+                    if type_node = node.children.first()
+                        type_node.before(a)
+                        if base_link = type_link(type_node.text)
+                            a_type['href'] = base_link
+
+                            a.after(a_type)
+                            a_type.children = type_node
+                        end
+                    else
+                        node.add_child a
+                    end
+                end
+
             end
 
             doc
+        end
+
+        def type_link(type)
+            type_links = context[:type_links]
+            link = type_links[type];
+
+            if link && link.start_with?('/')
+                link = context[:baseurl] + link
+            end
+
+            link
         end
     end
 
@@ -100,7 +143,8 @@ module Jekyll
 
             context = {
                 :gfm => false,
-                :baseurl => @config['baseurl']
+                :baseurl => @config['baseurl'],
+                :type_links => @config['type_links']
             }
 
             @pipeline = HTML::Pipeline.new [

@@ -232,6 +232,10 @@ defaults:
         layout: "page"
         category: "tutorials"
 
+type_links:
+    "kendo.Class": "/api/framework/class"
+    "String": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 
