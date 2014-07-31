@@ -137,6 +137,7 @@ module Jekyll
             if node && type_link = type_link(node.text)
                 a = Nokogiri::XML::Node.new('a', doc)
                 a['href'] = type_link
+                a.set_attribute('class', 'type-link')
 
                 node.replace a
                 a.children = node

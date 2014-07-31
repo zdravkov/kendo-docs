@@ -338,10 +338,18 @@ h1 span.type-link {
     font-size: 12px;
 }
 
+a.type-link {
+    text-decoration: none;
+}
+
 a.type-link:hover {
     background: none;
     padding: 0;
     margin: 0;
+}
+
+a.type-link code {
+    color: #666;
 }
 
 a.type-link:hover code {
