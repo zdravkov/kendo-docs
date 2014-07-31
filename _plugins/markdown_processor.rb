@@ -102,12 +102,12 @@ module Jekyll
 
                         base_p = Nokogiri::XML::Node.new('span', doc)
                         base_p.set_attribute('class', 'type-link')
-                        base_p.content = 'Inherits '
+                        base_p.content = 'Inherits from '
                         base_p.add_child a_type
                         node.add_child base_p
                     end
                 else
-                    if type_node = node.children.first()
+                    if type_node = node.first_element_child
                         type_node.before(a)
                         if base_link = type_link(type_node.text)
                             a_type['href'] = base_link
@@ -122,7 +122,25 @@ module Jekyll
 
             end
 
+            doc.css('h4').each do |node|
+                if node.content =~ /^Returns$/i && para = node.next_element
+                    try_link_node para.first_element_child
+                end
+            end
+
+            doc.css('h5 code').each { |node| try_link_node node }
+
             doc
+        end
+
+        def try_link_node(node)
+            if node && type_link = type_link(node.text)
+                a = Nokogiri::XML::Node.new('a', doc)
+                a['href'] = type_link
+
+                node.replace a
+                a.children = node
+            end
         end
 
         def type_link(type)
