@@ -234,8 +234,15 @@ defaults:
 
 type_links:
     "kendo.Class": "/api/framework/class"
+    "kendo.dataviz.drawing.Element": "/api/dataviz/drawing/element"
+    "kendo.dataviz.drawing.Group": "/api/dataviz/drawing/group"
+    "kendo.dataviz.geometry.Point": "/api/dataviz/geometry/point"
+    "kendo.dataviz.geometry.Rect": "/api/dataviz/geometry/rect"
+    "kendo.dataviz.geometry.Size": "/api/dataviz/geometry/size"
+    "kendo.dataviz.geometry.Transformation": "/api/dataviz/geometry/transformation"
     "Array": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
     "Boolean": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"
+    "Function": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function"
     "Object": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
     "Number": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
     "String": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"

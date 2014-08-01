@@ -107,41 +107,58 @@ module Jekyll
                         node.add_child base_p
                     end
                 else
-                    if type_node = node.first_element_child
-                        type_node.before(a)
-                        if base_link = type_link(type_node.text)
-                            a_type['href'] = base_link
-
-                            a.after(a_type)
-                            a_type.children = type_node
-                        end
+                    if first_child = node.children.first()
+                        first_child.before(a)
                     else
                         node.add_child a
+                    end
+
+                    # Link Configuration types
+                    node.css('code').each do |type_node|
+                        try_link_node type_node
                     end
                 end
 
             end
 
+            # Link Return variables
             doc.css('h4').each do |node|
                 if node.content =~ /^Returns$/i && para = node.next_element
                     try_link_node para.first_element_child
                 end
             end
 
+            # Link parameter types
             doc.css('h5 code').each { |node| try_link_node node }
 
             doc
         end
 
         def try_link_node(node)
-            if node && type_link = type_link(node.text)
-                a = Nokogiri::XML::Node.new('a', doc)
-                a['href'] = type_link
-                a.set_attribute('class', 'type-link')
+            return if node.nil?
 
-                node.replace a
-                a.children = node
+            links = Nokogiri::XML::NodeSet.new(node.document)
+            all_types = node.text.split('|')
+            all_types.each_with_index do |type, index|
+                code = Nokogiri::XML::Node.new('code', doc)
+                code.content = type
+                if index < (all_types.size - 1)
+                    code.content += " |";
+                end
+
+                if type_link = type_link(type)
+                    a = Nokogiri::XML::Node.new('a', doc)
+                    a['href'] = type_link
+                    a.set_attribute('class', 'type-link')
+                    a.add_child code
+
+                    links.push a
+                else
+                    links.push code
+                end
             end
+
+            node.replace links
         end
 
         def type_link(type)
