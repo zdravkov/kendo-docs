@@ -1,8 +1,8 @@
-* Introduction
+* Introduction (y)
 * Installation and upgrade
-  * Kendo UI external dependencies
-  * Use Kendo UI CDN
-  * Host Kendo UI in your project
+  * Kendo UI JavaScript prerequisites (y)
+  * Use Kendo UI CDN (y)
+  * Host Kendo UI in your project (y)
   * Include only what you need
 * Your first Kendo UI Project
 * Fundamentals

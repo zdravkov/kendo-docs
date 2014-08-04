@@ -5,6 +5,9 @@ url: "http://docs.telerik.com/kendo-ui"
 exclude: [readme.md, Gemfile, Gemfile.lock,api_sort.rb]
 navigation:
 ## List your directory names and order here, like this:
+    "*install":
+        title: "Installation and Upgrade"
+        position: 2
     "*api":
         title: "API"
     "*getting-started":
@@ -209,28 +212,16 @@ baseurl: /kendo-ui
 defaults:
 -
     scope:
-        path: "getting-started"
+        path: ""
     values:
         layout: "page"
-        category: "getting-started"
+        category: "default"
 -
     scope:
         path: "api"
     values:
-        layout: "page"
-        category: "api"
--
-    scope:
-        path: "howto"
-    values:
-        layout: "page"
-        category: "howto"
--
-    scope:
-        path: "tutorials"
-    values:
-        layout: "page"
-        category: "tutorials"
+        kind: "api"
+
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
