@@ -17,12 +17,12 @@ The stroke opacity.
 ### dashType `String` *(default: "solid")*
 The stroke dash type.
 
-| Value            | Description
-| ---              | ---
-| `dash`           | a line consisting of dashes
-| `dashDot`        | a line consisting of a repeating pattern of dash-dot
-| `dot`            | a line consisting of dots
-| `longDash`       | a line consisting of a repeating pattern of long-dash
-| `longDashDot`    | a line consisting of a repeating pattern of long-dash dot
-| `longDashDotDot` | a line consisting of a repeating pattern of long-dash dot-dot
-| `solid`          | a solid line
+| Value            |                                              | Description
+| ---              | ---                                          | ---
+| `dash`           | ![dash](images/stroke-dash.png)              | a line consisting of dashes
+| `dashDot`        | ![dash](images/stroke-dash-dot.png)          | a line consisting of a repeating pattern of dash-dot
+| `dot`            | ![dash](images/stroke-dot.png)               | a line consisting of dots
+| `longDash`       | ![dash](images/stroke-long-dash.png)         | a line consisting of a repeating pattern of long-dash
+| `longDashDot`    | ![dash](images/stroke-long-dash-dot.png)     | a line consisting of a repeating pattern of long-dash dot
+| `longDashDotDot` | ![dash](images/stroke-long-dash-dot-dot.png) | a line consisting of a repeating pattern of long-dash dot-dot
+| `solid`          | ![dash](images/stroke-solid.png)             | a solid line
