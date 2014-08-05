@@ -30,7 +30,7 @@ module Jekyll
 
     end
 
-    class SettingsTitleFilter < HTML::Pipeline::Filter
+    class OptionsTitleFilter < HTML::Pipeline::Filter
 
         def call
 
@@ -201,9 +201,9 @@ module Jekyll
 
             @pipeline = HTML::Pipeline.new [
                 HTML::Pipeline::MarkdownFilter,
-                SettingsTitleFilter,
+                RootRelativeFilter,
                 ApiHeaderIdFilter,
-                ApiHeaderIdFilter,
+                OptionsTitleFilter,
                 HeaderLinkFilter
             ], context
 
