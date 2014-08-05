@@ -3,10 +3,10 @@
   * Kendo UI JavaScript prerequisites (y)
   * Use Kendo UI CDN (y)
   * Host Kendo UI in your project (y)
-  * Include only what you need
-* Your first Kendo UI Project
-* Fundamentals
-  * Initialise a widget with jQuery
+  * Include only what you need (y)
+  * Changes and Backward Compatibility (y)
+* The basics
+  * Initialise a widget with jQuery (y)
   * Initialise a widget from markup
   * Use the widget events and methods
   * Two way data binding with MVVM
@@ -100,7 +100,6 @@
 * UI for PHP
 * Use the Kendo UI Bootstrapper toolkit
 * Troubleshooting
-* Changes and Backward Compatibility
 * API Reference
   * JavaScript
   * ASP.NET MVC

@@ -8,6 +8,9 @@ navigation:
     "*install":
         title: "Installation and Upgrade"
         position: 2
+    "*basics":
+        title: "The basics"
+        position: 3
     "*api":
         title: "API"
     "*getting-started":
