@@ -30605,7 +30605,7 @@ The data item of the point's note.
 
 Fired when the user clicks the plot area.
 
-The event handler function context (available via the `this` keyword) will be set to the widget instance.
+> The click event will be triggered by tap and contextmenu events. The e.originalEvent.type field can be inspected to distinguish between the original events.
 
 #### Event Data
 
@@ -30621,6 +30621,10 @@ The DOM element of the plot area.
 
 The widget instance which fired the event.
 
+##### e.originalEvent `Object`
+
+The original browser event that triggered the click action.
+
 ##### e.value `Object`
 
 The data point value. Available only for categorical charts (bar, line, area and similar).
@@ -30632,6 +30636,22 @@ The X axis value or array of values for multi-axis charts.
 ##### e.y `Object`
 
 The X axis value or array of values for multi-axis charts.
+
+#### Example - handle right click on plot area and disable context menu
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+        series: [
+            { data: [1, 2] }
+        ],
+        plotAreaClick: function(e) {
+            if (e.originalEvent.type === "contextmenu") {
+              // Disable browser context menu
+              e.originalEvent.preventDefault();
+            }
+        }
+    });
+    </script>
 
 #### Example - subscribe to the "plotAreaClick" event during initialization
     <div id="chart"></div>
@@ -30886,7 +30906,7 @@ The last selected category is at index [to - 1] unless the axis is justified. In
 
 Fired when the user clicks the chart series.
 
-The event handler function context (available via the `this` keyword) will be set to the widget instance.
+> The click event will be triggered by tap and contextmenu events. The e.originalEvent.type field can be inspected to distinguish between the original events.
 
 #### Event Data
 
@@ -30897,6 +30917,10 @@ The data point category
 ##### e.element `Object`
 
 The DOM element of the data point.
+
+##### e.originalEvent `Object`
+
+The original browser event that triggered the click action.
 
 ##### e.series `Object`
 
@@ -30930,6 +30954,22 @@ The data point value.
 
 The point value represented as a percentage value. Available only for donut, pie and 100% stacked charts.
 
+#### Example - handle right click on series and disable context menu
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+        series: [
+            { data: [1, 2] }
+        ],
+        seriesClick: function(e) {
+            if (e.originalEvent.type === "contextmenu") {
+              // Disable browser context menu
+              e.originalEvent.preventDefault();
+            }
+        }
+    });
+    </script>
+
 #### Example - subscribe to the "seriesClick" event during initialization
     <div id="chart"></div>
     <script>
@@ -30945,15 +30985,17 @@ The point value represented as a percentage value. Available only for donut, pie
 
 #### Example - subscribe to the "seriesClick" event after initialization
     <div id="chart"></div>
-    functino chart_seriesClick(e) {
-      console.log(e.value);
-    }
     <script>
     $("#chart").kendoChart({
       series: [
         { data: [1, 2] }
       ]
     });
+
+    functino chart_seriesClick(e) {
+      console.log(e.value);
+    }
+
     var chart = $("#chart").data("kendoChart");
     chart.bind("seriesClick", chart_seriesClick);
     </script>
@@ -30973,6 +31015,10 @@ The data point category
 ##### e.element `Object`
 
 The DOM element of the data point.
+
+##### e.originalEvent `Object`
+
+The original browser event that triggered the hover action.
 
 ##### e.series `Object`
 
@@ -31049,6 +31095,7 @@ A hastable containing the initial range (min and max values) of *named* axes. Th
 ##### e.delta `Number`
 
 A number that indicates the zoom amount and direction. A negative value indicates "zoom in", while a positive "zoom out".
+
 ##### e.originalEvent `Object`
 
 The original user event that triggered the drag action.
