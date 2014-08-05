@@ -15,11 +15,11 @@ description: Find all changes which are effective in Kendo UI 2012 Q2 from previ
 **TabStrip**:
 
 * Q2 2014 introduces an additional TabStrip wrapper div which makes sure that the TabStrip changes in height won't affect the page scrolling position.
-* TabStrip's **activate** event has been renamed to [**show**](../api/web/tabstrip#events-show) event - 
-    which fires at the beginning of the open animation. A new [**activate**](../api/web/tabstrip#events-activate) event has been introduced, which is fired at the end of the 
+* TabStrip's **activate** event has been renamed to [**show**](../api/web/tabstrip#events-show) event -
+    which fires at the beginning of the open animation. A new [**activate**](../api/web/tabstrip#events-activate) event has been introduced, which is fired at the end of the
     open animation. This is done for consistency with the rest of the widgets.
-* TabStrip automatically calls [**kendo.resize**](../api/framework/kendo#methods-resize) to its contents in both [**show**](../api/web/tabstrip#events-show) and 
-    [**activate**](../api/web/tabstrip#events-activate) events. 
+* TabStrip automatically calls [**kendo.resize**](../api/framework/kendo#methods-resize) to its contents in both [**show**](../api/web/tabstrip#events-show) and
+    [**activate**](../api/web/tabstrip#events-activate) events.
 
 **TreeView**: The deprecated `checkboxTemplate` configuration option has been removed.
 If you don't need a highly specific checkbox template, consider using the default one (using checkboxes: true).
@@ -132,7 +132,7 @@ Also see [`kendo.resize()`](/api/framework/kendo/#methods-resize).
  -  `end.endUntilOn` becomes `end.on`
 
 * **MVC DataSource**: The MVC DataSource transport now serializes numbers based on the used Kendo culture. As a result, if you are using an invariant culture number model binder, the numbers will not be parsed correctly. You should either use the the same culture to parse the numbers in the model binder or remove the model binder in order for numbers with a decimal separator to be parsed correctly.
-* **ModalView**: The ModalView now supports autosizing when its content changes and when no height is set. Unfortunately we were able to implement this at the expense of 
+* **ModalView**: The ModalView now supports autosizing when its content changes and when no height is set. Unfortunately we were able to implement this at the expense of
 the possibility to set the ModalView size in a CSS stylesheet. As a workaround please use the ModalView width and height options or set them through inline CSS instead.
 
 ## Kendo UI 2013 Q2

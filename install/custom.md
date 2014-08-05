@@ -30,11 +30,11 @@ In addition, each of the combined script files should not be registered together
 Users who own a commercial license can use the [custom download builder tool](http://www.telerik.com/download/custom-download)
 to create a single JavaScript file which contains only the required widgets and features.
 
-## Use grunt to build a custom script
+## Use Grunt to build a custom script
 
 If you use Kendo UI Core, you may build a custom distribution using the grunt build tool by following the [instructions in the README](https://github.com/telerik/kendo-ui-core#building-only-what-you-need).
 
-## Include Individual widget scripts
+## Include individual widget scripts
 
 The following script files, either minified or not, can be included on a per-widget basis.
 
