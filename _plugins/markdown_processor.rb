@@ -30,6 +30,22 @@ module Jekyll
 
     end
 
+    class SettingsTitleFilter < HTML::Pipeline::Filter
+
+        def call
+
+            doc.css('h1').each do |node|
+                text = node.text
+                if text =~ /Options$/
+                    node.content = node.text.split('.').last
+                end
+            end
+
+            doc
+        end
+
+    end
+
     class ApiHeaderIdFilter < HTML::Pipeline::Filter
 
         def call
@@ -185,7 +201,8 @@ module Jekyll
 
             @pipeline = HTML::Pipeline.new [
                 HTML::Pipeline::MarkdownFilter,
-                RootRelativeFilter,
+                SettingsTitleFilter,
+                ApiHeaderIdFilter,
                 ApiHeaderIdFilter,
                 HeaderLinkFilter
             ], context
