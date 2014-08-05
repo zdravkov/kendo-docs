@@ -15,7 +15,7 @@ Draws a single line of text at the given position.
 
 ## Constructor Parameters
 
-##### content `String`
+### content `String`
 The content of the text. Special characters are not supported.
 
 ### options `Object`
@@ -23,10 +23,10 @@ The configuration options.
 
 ## Configuration
 
-### fill `kendo.dataviz.drawing.IFill`
+### fill `kendo.dataviz.drawing.FillOptions`
 The fill options of the text.
 
-### stroke `kendo.dataviz.drawing.IStroke`
+### stroke `kendo.dataviz.drawing.StrokeOptions`
 The stroke options of the text.
 
 ## Methods
