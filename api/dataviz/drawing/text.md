@@ -23,6 +23,10 @@ The configuration options.
 
 ## Configuration
 
+Inherited from [Element](element):
+* [transform](element#configuration-transform)
+* [visible](element#configuration-visible)
+
 ### fill `kendo.dataviz.drawing.FillOptions`
 The fill options of the text.
 
@@ -30,6 +34,11 @@ The fill options of the text.
 The stroke options of the text.
 
 ## Methods
+
+Inherited from [Element](element):
+* [bbox](element#methods-bbox)
+* [transform](element#methods-transform)
+* [visible](element#methods-visible)
 
 ### content
 Gets or sets the text content.
@@ -43,6 +52,23 @@ The new text content to set.
 `String` The current content of the text.
 
 
+### fill
+Sets the text [fill](#configuration-fill).
+
+#### Parameters
+
+##### color `String`
+The [fill color](fill-options#fields-color) to set.
+
+##### opacity `Number`
+The [fill opacity](fill-options#fields-opacity) to set.
+
+Optional.
+
+#### Returns
+`kendo.dataviz.drawing.Text` The current instance to allow chaining.
+
+
 ### position
 Gets or sets the position of the text upper left corner.
 
@@ -54,3 +80,24 @@ The new position of the text upper left corner.
 #### Returns
 `kendo.dataviz.geometry.Point` The current position of the text upper left corner.
 
+
+### stroke
+Sets the text [stroke](#configuration-stroke).
+
+#### Parameters
+
+##### color `String`
+The [stroke color](stroke-options#fields-color) to set.
+
+##### width `Number`
+The [stroke width](stroke-options#fields-width) to set.
+
+Optional.
+
+##### opacity `Number`
+The [stroke opacity](stroke-options#fields-opacity) to set.
+
+Optional.
+
+#### Returns
+`kendo.dataviz.drawing.Text` The current instance to allow chaining.
