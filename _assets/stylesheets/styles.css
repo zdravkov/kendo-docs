@@ -331,6 +331,7 @@ h4 a:hover, h5 a:hover, h6 a:hover {
 h1 a.type-link, h1 a.type-link:hover,
 h3 a.type-link, h3 a.type-link:hover,
 h5 a.type-link, h5 a.type-link:hover {
+    background: none;
     padding: 0;
     margin: 0;
 }
