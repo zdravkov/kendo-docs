@@ -4,7 +4,6 @@ page_title: Configuration, methods and events of Kendo UI DataViz Drawing Elemen
 ---
 
 # kendo.dataviz.drawing.Element : kendo.Class
-
 An abstract base class representing common members of all drawing elements.
 
 ## Constructor Parameters
