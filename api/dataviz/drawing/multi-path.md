@@ -4,12 +4,11 @@ page_title: API reference for methods and fields of Kendo UI DataViz Drawing Mul
 ---
 
 # kendo.dataviz.drawing.MultiPath : kendo.dataviz.drawing.Element
-Draws a composite path consisting of multiple [Paths](path).
+Draws a composite path consisting of multiple sub-paths.
+Using composite paths is more efficient than drawing the paths individually.
 
 The interface of MultiPath mirrors that of [Path](path),
 but each moveTo command starts a new sub-path.
-
-Using composite paths is more efficient than drawing the paths individually.
 
 #### Example - drawng a multi-path
     <div id="surface"></div>
@@ -28,6 +27,11 @@ Using composite paths is more efficient than drawing the paths individually.
 
 ### options `Object`
 The configuration options.
+
+## Fields
+
+### paths `Array`
+A collection of sub-[paths](path).
 
 ## Configuration
 

@@ -25,6 +25,11 @@ Draws a path consisting of linear or cubic Bézier curve segments.
 ### options `Object`
 The configuration options.
 
+## Fields
+
+### segments `Array`
+A collection of the path [segments](segment).
+
 ## Configuration
 
 ### fill `kendo.dataviz.drawing.FillOptions`
