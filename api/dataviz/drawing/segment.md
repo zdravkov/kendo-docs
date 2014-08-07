@@ -69,7 +69,7 @@ The new control point.
 `kendo.dataviz.geometry.Point` The current control point.
 
 
-### controlIn
+### controlOut
 Gets or sets the second curve control point of this segment.
 
 The setter returns the current Segment to allow chaining.

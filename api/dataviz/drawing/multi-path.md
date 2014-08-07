@@ -105,10 +105,10 @@ A quadratic Bézier curve (with one control point) can be plotted by making the 
 
 #### Parameters
 
-##### controlOut `Array|kendo.dataviz.Point`
+##### controlOut `Array|kendo.dataviz.geometry.Point`
 The first control point for the curve.
 
-##### controlIn `Array|kendo.dataviz.Point`
+##### controlIn `Array|kendo.dataviz.geometry.Point`
 The second control point for the curve.
 
 #### Returns
@@ -155,10 +155,10 @@ Draws a straight line to the specified absolute coordinates.
 
 #### Parameters
 
-##### x `Number|Array|kendo.dataviz.Point`
+##### x `Number|Array|kendo.dataviz.geometry.Point`
 The line end X coordinate or a Point/Array with X and Y coordinates.
 
-##### x `Number` *optional*
+##### y `Number` *optional*
 The line end Y coordinate.
 
 Optional if the first parameter is a Point/Array.
@@ -192,10 +192,10 @@ Creates a new sub-path or clears all segments and moves the starting point to th
 
 #### Parameters
 
-##### x `Number|Array|kendo.dataviz.Point`
+##### x `Number|Array|kendo.dataviz.geometry.Point`
 The starting X coordinate or a Point/Array with X and Y coordinates.
 
-##### x `Number` *optional*
+##### y `Number` *optional*
 The starting Y coordinate.
 
 Optional if the first parameter is a Point/Array.
