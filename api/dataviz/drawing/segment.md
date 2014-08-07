@@ -1,6 +1,6 @@
 ---
 title: Segment
-page_title: API reference for methods and fields of Kendo UI DataViz Drawing Path Segment
+page_title: API reference for Kendo UI Drawing API Segment
 ---
 
 # kendo.dataviz.drawing.Segment : kendo.Class
@@ -9,6 +9,8 @@ Defines a path segment with an anchor point and optional curve control points.
 Segments are created implicitly by the [Path](path) lineTo and curveTo commands.
 
 #### Example - accessing path segments
+    <div id="surface"></div>
+    <script>
         var d = kendo.dataviz.drawing;
         var geo = kendo.dataviz.geometry;
 
@@ -19,6 +21,10 @@ Segments are created implicitly by the [Path](path) lineTo and curveTo commands.
 
         // Moves the line starting point 50px to the left
         path.segments[0].anchor().translate(50, 0);
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(path);
+    </script>
 
 ## Constructor Parameters
 

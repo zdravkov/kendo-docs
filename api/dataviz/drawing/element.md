@@ -1,6 +1,6 @@
 ---
 title: Element
-page_title: Configuration, methods and events of Kendo UI DataViz Drawing Element
+page_title: API reference for Kendo UI Drawing API Element
 ---
 
 # kendo.dataviz.drawing.Element : kendo.Class
@@ -37,6 +37,8 @@ Returns the bounding box of the element with transformations applied.
 Gets or sets the transformation of the element.
 
 #### Example - setting transformation on an element
+    <div id="surface"></div>
+    <script>
         var d = kendo.dataviz.drawing;
         var geo = kendo.dataviz.geometry;
 
@@ -44,6 +46,10 @@ Gets or sets the transformation of the element.
         path.moveTo(0, 0).lineTo(100, 100);
 
         path.transform(geo.transform().scale(2, 1));
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(path);
+    </script>
 
 #### Parameters
 

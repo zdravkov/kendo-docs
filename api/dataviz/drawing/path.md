@@ -1,22 +1,22 @@
 ---
 title: Path
-page_title: API reference for methods and fields of Kendo UI DataViz Drawing Path
+page_title: API reference for Kendo UI Drawing API Path
 ---
 
 # kendo.dataviz.drawing.Path : kendo.dataviz.drawing.Element
 Draws a path consisting of linear or cubic Bézier curve segments.
 
 #### Example - draw a path
-    <div id="surface"></div>
+    <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
         var d = kendo.dataviz.drawing;
 
-        var surface = d.Surface.create($("#surface"));
         var path = new d.Path()
             .moveTo(100, 200)
             .curveTo([100, 100], [250, 100], [250, 200])
             .lineTo(100, 200);
 
+        var surface = d.Surface.create($("#surface"));
         surface.draw(path);
     </script>
 
@@ -60,11 +60,10 @@ Inherited from [Element.bbox](element#methods-bbox)
 Closes the path by linking the current end point with the start point.
 
 #### Example - Draw a closed path
-    <div id="surface"></div>
+    <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
         var d = kendo.dataviz.drawing;
 
-        var surface = d.Surface.create($("#surface"));
         var path = new d.Path()
             .moveTo(100, 200)
             .curveTo([100, 100], [250, 100], [250, 200]);
@@ -73,6 +72,7 @@ Closes the path by linking the current end point with the start point.
         path.close();
         path.lineTo(100, 200);
 
+        var surface = d.Surface.create($("#surface"));
         surface.draw(path);
     </script>
 
@@ -86,16 +86,16 @@ Draws a cubic Bézier curve (with two control points).
 A quadratic Bézier curve (with one control point) can be plotted by making the control point equal.
 
 #### Example - Draw a curved path
-    <div id="surface"></div>
+    <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
         var d = kendo.dataviz.drawing;
 
-        var surface = d.Surface.create($("#surface"));
         var path = new d.Path()
             .moveTo(100, 200)
             .curveTo([100, 100], [250, 100], [250, 200])
             .lineTo(100, 200);
 
+        var surface = d.Surface.create($("#surface"));
         surface.draw(path);
     </script>
 
@@ -130,12 +130,11 @@ The [fill opacity](fill-options#fields-opacity) to set.
 Draws a straight line to the specified absolute coordinates.
 
 #### Example - Draw a straight path
-    <div id="surface"></div>
+    <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
         var d = kendo.dataviz.drawing;
         var geo = kendo.dataviz.geometry;
 
-        var surface = d.Surface.create($("#surface"));
         var path = new d.Path()
             .moveTo(100, 200);
 
@@ -144,6 +143,7 @@ Draws a straight line to the specified absolute coordinates.
         path.lineTo([200, 200]);
         path.lineTo(new geo.Point(200, 200));
 
+        var surface = d.Surface.create($("#surface"));
         surface.draw(path);
     </script>
 
@@ -165,12 +165,11 @@ Optional if the first parameter is a Point/Array.
 Clears all existing segments and moves the starting point to the specified absolute coordinates.
 
 #### Example - Set the path start coordinates
-    <div id="surface"></div>
+    <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
         var d = kendo.dataviz.drawing;
         var geo = kendo.dataviz.geometry;
 
-        var surface = d.Surface.create($("#surface"));
         var path = new d.Path();
 
         // The following commands are interchangeable
@@ -180,6 +179,7 @@ Clears all existing segments and moves the starting point to the specified absol
 
         path.lineTo(200, 200);
 
+        var surface = d.Surface.create($("#surface"));
         surface.draw(path);
     </script>
 

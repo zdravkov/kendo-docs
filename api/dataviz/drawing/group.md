@@ -1,19 +1,25 @@
 ---
 title: Group
-page_title: API reference for methods and fields of Kendo UI DataViz Drawing Group
+page_title: API reference for Kendo UI Drawing API Group
 ---
 
 # kendo.dataviz.drawing.Group : kendo.dataviz.drawing.Element
 Represents a set of drawing elements, possibly including other groups.
 
 #### Example - creating a group
+    <div id="surface"></div>
+    <script>
         var d = kendo.dataviz.drawing;
         var group = new d.Group();
 
-        var pathA = new d.Path();
-        var pathB = new d.Path();
+        var pathA = new d.Path().moveTo(0, 0).lineTo(100, 100);
+        var pathB = new d.Path().moveTo(0, 100).lineTo(100, 0);
 
         group.append(pathA, pathB);
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(group);
+    </script>
 
 ## Constructor Parameters
 

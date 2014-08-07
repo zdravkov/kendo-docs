@@ -7,11 +7,17 @@ page_title: API reference for methods and fields of Kendo UI DataViz Drawing Tex
 Draws a single line of text at the given position.
 
 #### Example - creating a text
+    <div id="surface"></div>
+    <script>
         var d = kendo.dataviz.drawing;
         var geo = kendo.dataviz.geometry;
 
-        var position = new geo.Point(100, 100);
+        var position = new geo.Point(10, 10);
         var text = new d.Text("Foo", position);
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(text);
+    </script>
 
 ## Constructor Parameters
 
@@ -50,6 +56,23 @@ Inherited from [Element.bbox](element#methods-bbox)
 ### content
 Gets or sets the text content.
 
+#### Example - change content
+    <div id="surface"></div>
+    <script>
+        var d = kendo.dataviz.drawing;
+        var geo = kendo.dataviz.geometry;
+
+        var position = new geo.Point(10, 10);
+        var text = new d.Text("", position);
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(text);
+
+        setInterval(function() {
+            text.content(kendo.toString(new Date(), "T"));
+        }, 1000);
+    </script>
+
 #### Parameters
 
 ##### value `String`
@@ -76,6 +99,23 @@ The [fill opacity](fill-options#fields-opacity) to set.
 
 ### position
 Gets or sets the position of the text upper left corner.
+
+#### Example - change position
+    <div id="surface"></div>
+    <script>
+        var d = kendo.dataviz.drawing;
+        var geo = kendo.dataviz.geometry;
+
+        var position = new geo.Point(10, 10);
+        var text = new d.Text("Foo", position);
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(text);
+
+        setTimeout(function() {
+            text.position([20, 20]);
+        }, 1000);
+    </script>
 
 #### Parameters
 

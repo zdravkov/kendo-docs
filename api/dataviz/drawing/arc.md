@@ -1,12 +1,14 @@
 ---
 title: Arc
-page_title: API reference for methods and fields of Kendo UI DataViz Drawing Arc
+page_title: API reference for Kendo UI Drawing API Arc
 ---
 
 # kendo.dataviz.drawing.Arc : kendo.dataviz.drawing.Element
 Draws an arc with set geometry, fill and stroke.
 
 #### Example - creating an arc
+    <div id="surface"></div>
+    <script>
         var d = kendo.dataviz.drawing;
         var geo = kendo.dataviz.geometry;
 
@@ -17,6 +19,10 @@ Draws an arc with set geometry, fill and stroke.
             endAngle: 135
         });
         var arc = new d.Arc(arcGeometry).stroke("red", 1);
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(arc);
+    </script>
 
 ## Constructor Parameters
 

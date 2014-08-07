@@ -1,17 +1,23 @@
 ---
 title: Circle
-page_title: API reference for methods and fields of Kendo UI DataViz Drawing Circle
+page_title: API reference for Kendo UI Drawing API Circle
 ---
 
 # kendo.dataviz.drawing.Circle : kendo.dataviz.drawing.Element
 Draws a circle with set geometry, fill and stroke.
 
 #### Example - creating a circle
+    <div id="surface"></div>
+    <script>
         var d = kendo.dataviz.drawing;
         var geo = kendo.dataviz.geometry;
 
         var circleGeometry = new geo.Circle([100, 100], 20);
         var circle = new d.Circle(circleGeometry).stroke("red", 1);
+
+        var surface = d.Surface.create($("#surface"));
+        surface.draw(circle);
+    </script>
 
 ## Constructor Parameters
 
