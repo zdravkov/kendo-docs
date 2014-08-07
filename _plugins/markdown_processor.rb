@@ -181,6 +181,14 @@ module Jekyll
             type_links = context[:type_links]
             link = type_links[type];
 
+            # White-list namespaces with auto-linking enabled
+            if !link && type =~ /^kendo\.dataviz\.(drawing|geometry)/
+                link = type.gsub('kendo.', '/api/')
+                link.gsub!(/[a-z][A-Z]/) { |c| c[0] + '-' + c[1] }
+                link.gsub!('.', '/')
+                link.downcase!
+            end
+
             if link && link.start_with?('/')
                 link = context[:baseurl] + link
             end
