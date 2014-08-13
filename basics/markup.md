@@ -65,7 +65,6 @@ More information about the Kendo UI Mobile Application is available in the Build
 In addition to the `data-role` attribute, the declarative initialization process parses other data attributes and passes them as configuration options to the widget.
 You can find out more about the supported data attributes and how to bind to widget events in the data attributes explained section.  (TODO: link to data attributes explained).
 
-
 ## KendoUI AngularJS autocomplete directive
 
     <div ng-app>
