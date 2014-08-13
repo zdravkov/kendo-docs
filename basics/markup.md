@@ -58,7 +58,9 @@ The data-bind attribute syntax establishes a two-way binding between the widget 
     </script>
 
 
-More information about the Kendo UI Mobile Application is available in the Buliding Hybrid Mobile Applications topic (TODO: Link).
+More information about the Kendo UI Mobile Application is available in the Building Hybrid Mobile Applications topic (TODO: Link).
+
+## Specify widget configuration options and event handlers with data attributes
 
 In addition to the `data-role` attribute, the declarative initialization process parses other data attributes and passes them as configuration options to the widget.
 You can find out more about the supported data attributes and how to bind to widget events in the data attributes explained section.  (TODO: link to data attributes explained).
