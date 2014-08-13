@@ -7,7 +7,7 @@
   * Changes and Backward Compatibility (y)
 * The basics
   * Initialise a widget with jQuery (y)
-  * Initialise a widget from markup
+  * Initialise a widget from markup (y)
   * Use the widget events and methods
   * Two way data binding with MVVM
 * Supported browsers
@@ -85,10 +85,12 @@
      * Fetch data from another domain (CORS)
   * Bind data with MVVM
      * Introduction
+     * data attributes explained
      * Build and submit a form using MVVM
   * Use the Kendo UI class based inheritance model
   * Create a custom Kendo UI Widget
 * Use Kendo UI with AngularJS
+    * Combine the datasource with the $http service (http://admin.telerik.com/?Context=Support&Control=~/UserControls/Support/ThreadReply.ascx&ST=848812&SM=0)
 * Use the Kendo UI TypeScript definitions
 * Integrate with Twitter Bootstrap
 * Use Kendo UI with RequireJS
