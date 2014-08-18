@@ -1,11 +1,11 @@
+# Put on your writer's hat
+
+Think about **tasks which the clients will be able to accomplish** with the features you are documenting. For example,
+the reader's task is to build a form which allows the users to pick a choice from a list of existing database records.
+He is not aware of the `DataSource` component, the `DropDownList` and the MVVM pattern - yet. Your goal as an author is
+to **link the task** in the reader's mind to the **features we offer**.
+
 # Before you start
-
-## Re-frame your mindset
-
-Stop thinking about the **features you implemented**. You must describe the **tasks which the clients will be able to
-accomplish** based on what you did. For example, the reader's task is to build a form for his users to pick a choice
-from a list of existing database records. He is not aware of the DataSource component, the DropDownList and the MVVM
-pattern - yet. Your goal as an author is to **link the task** in the reader's mind to the **features we offer**.
 
 ## Warm up
 
@@ -17,7 +17,7 @@ pattern - yet. Your goal as an author is to **link the task** in the reader's mi
 ## Do not repeat yourself (or others!)
 
 Check if the content (or parts of it) are not already documented some place else. **Do not duplicate
-stuff**!  Instead, re-structure and extract common content to standalone topics. List the common topics as *prerequisites*,
+stuff**. Instead, re-structure and extract common content to standalone topics. List the common topics as *prerequisites*,
 *related sections*, or *next steps*.
 
 # Start a new article
@@ -34,10 +34,9 @@ stuff**!  Instead, re-structure and extract common content to standalone topics.
 - Avoid passive voice. Usually people use it when they can't explain something well enough.
 - **Present simple tense is just fine**. Stick to it (this article is written in it).
 - Avoid gerund, unless you really need it.
-- Don't be afraid to refer to the user with "you". Don't go too informal, though.
-- **Do not avoid repetition of terms**. Repeating the noun is *recommended in technical writing*. This will avoid
-  ambiguity (what "it" refers to in this sentence?).
-- Stay consistent with your terms and the way they are capitalized (DataSource VS datasource VS data source). When in
+- Don't be afraid to refer to the user with "you", but don't go too informal.
+- **Repeat nouns**. Repeating the noun is *recommended in technical writing*. It removes ambiguity (what "it" refers to in this sentence?).
+- Stay consistent with your terms and how they are capitalized (DataSource VS datasource VS data source). When in
   doubt, check how they are used in articles related to yours.
 - Avoid too much nested sentences (this is nesting).
 - Use *must* for required steps and *should* for recommended ones.
