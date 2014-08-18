@@ -150,7 +150,7 @@ If set to false the column will remain in the side of the grid into which its ow
 
 ### locked `boolean`
 
-If set to true the column will be displayed as locked in the grid. Also see Frozen Columns.
+If set to true the column will be displayed as locked in the grid. Also see [Frozen Columns] (http://demos.telerik.com/kendo-ui/grid/frozen-columns).
 
 #### Example
     <kendo:grid-column locked="locked">
