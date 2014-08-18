@@ -1,6 +1,6 @@
 ---
-title: Call widget methods and bind to widget methods
-page_title: Call widget methods and bind to widget methods
+title: Call widget methods and bind to widget events
+page_title: Call widget methods and bind to widget events
 description: Learn how to obtain a reference to an initialized Kendo UI widget instance and call its methods and events
 position: 3
 ---
@@ -68,10 +68,13 @@ All event objects have the `sender` field, a reference to the widget instance wh
 
 > A comprehensive list and examples of the widget events and the fields available in the event objects is available in the [API reference](/api/javascript) section.
 
+In addition to the `bind` method, the widget instance also exposes `one` method. It works in the same way, but the
+event handler will be executed **only once**.
+
 ### Prevent the effect of certain events
 
 Certain widget events may be prevented by calling the `preventDefault` method of the **event object**.
-The effect of the event prevention is specific to each event and is documented in the API reference.
+The effect of the event prevention is specific for each event and is documented in the API reference.
 
     <p>Animal: <input id="animal" /></p>
 
@@ -88,5 +91,29 @@ The effect of the event prevention is specific to each event and is documented i
         });
     </script>
 
-TODO: (document the `one` method bind method)
-TODO: (document the `unbind`)
+### Unbind from a widget event
+
+To unbind from a given event, you should keep a reference to the event handler function and invoke the `unbind` method with it.
+
+
+    <p>Animal: <input id="animal" /></p>
+
+    <button>Unbind event</button>
+
+    <script>
+        $(function() {
+          var handler = function(e) { console.log(e); };
+          $("#animal").kendoAutoComplete({ dataSource: [ "Ant", "Antilope", "Badger", "Beaver", "Bird" ] });
+
+          var autoComplete = $("#animal").data("kendoAutoComplete");
+
+          // prevent the autocomplete from opening the suggestions list
+          autoComplete.bind("open", handler);
+
+          $("button").on("click", function() {
+              autoComplete.unbind("open", handler);
+          });
+        });
+    </script>
+
+> Calling the `unbind` method without a second argument **unbinds all event handlers** from the event.
