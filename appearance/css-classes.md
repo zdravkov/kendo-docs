@@ -1,18 +1,12 @@
 ---
-title: Kendo Widget CSS Styles
-page_title: Appearance and Styling of Kendo UI HTML5 widgets
+title: Kendo Widgets CSS classes
+page_title: Customize the Appearance of Kendo UI Widgets using CSS classes
 description: Define CSS classes of Kendo UI Widgets to change their appearance. Learn how to easily customize Kendo components by overriding the styling of a given widget.
 ---
 
 # Appearance and Styling
 The appearance of the **Kendo UI** widgets depends entirely on styles defined by the applied CSS classes. No inline styles are used, except for some very specific cases in which these styles must be set with Javascript, depending on the browser or configuration.
 
-## Common and theme StyleSheets
- The Kendo UI **Web** widgets (i.e. excluding Mobile and DataViz) require two stylesheets: **kendo.common.css** and **kendo.[theme].css**.
- The common (base) stylesheet applies styles related to positioning and size, but which are not related to the color scheme and are always required for the widget to
- look correct and function properly. The theme stylesheet applies theme-specific styles like colors and backgrounds.
-
-> Be sure to include the common CSS file before the theme CSS file. In some cases, the theme CSS file may override base styles as it uses selectors with the same specificity.
 
 ## Primitives
 
@@ -42,6 +36,15 @@ The appearance of a component may also depend on its state, which is also tied t
 *   **k-state-active** - a class set on activated **k-link** elements
 *   **k-state-selected** - selected items receive this class to apply their selected look, like in PanelBar and TabStrip
 *   **k-state-disabled** - this class is set on disabled items
+
+TODO: Move this to another section
+
+## Common and theme StyleSheets
+ The Kendo UI **Web** widgets (i.e. excluding Mobile and DataViz) require two stylesheets: **kendo.common.css** and **kendo.[theme].css**.
+ The common (base) stylesheet applies styles related to positioning and size, but which are not related to the color scheme and are always required for the widget to
+ look correct and function properly. The theme stylesheet applies theme-specific styles like colors and backgrounds.
+
+> Be sure to include the common CSS file before the theme CSS file. In some cases, the theme CSS file may override base styles as it uses selectors with the same specificity.
 
 ## LESS structure
 
@@ -102,7 +105,7 @@ In order to customize the appearance of a **particular widget instance**, you wi
 	<ul id="menu1" class="k-widget k-menu">
 		<!-- menu items here -->
 	</ul>
-	
+
 can be styled by using its ID:
 
 	#menu1 .k-link
@@ -111,7 +114,7 @@ can be styled by using its ID:
 	}
 
 The above CSS rule will not affect any other widget instances, which are outside `#menu1`.
-	
+
 ## Browser-specific CSS
 
 While most of the CSS code is cross-browser compatible, some layouts require different styles for different browsers. Kendo UI targets specific browsers by adding browser-specific classes to the document root element instead of relying on CSS parsing hacks. You can take advantage of these classes in the following manner:

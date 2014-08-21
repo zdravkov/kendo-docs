@@ -4,7 +4,7 @@
 
 
    * [X]Fundamentals (same, maybe should be renamed) (break apart in a couple of sections)
-      * [X]Technical Requirements (rename?) rename to supported browsers
+   * [X]Technical Requirements (rename?) rename to supported browsers
 
 
    * [X]Javascript Dependencies (rename?) move half to initialization, rest to Including only what you need
