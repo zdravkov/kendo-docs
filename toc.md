@@ -13,7 +13,7 @@
 * Customise the widgets’ appearance
   * Kendo UI ThemeBuilder overview
   * Using font icons (???)
-  * Use the built-in CSS classes
+  * Use the built-in CSS classes (y)
   * Overriding the widget elements’ CSS classes
 * Manage data / implement CRUD UI
   * Display tabular data with the Grid widget

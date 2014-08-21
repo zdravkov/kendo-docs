@@ -2,6 +2,7 @@
 title: Kendo Widgets CSS classes
 page_title: Customize the Appearance of Kendo UI Widgets using CSS classes
 description: Define CSS classes of Kendo UI Widgets to change their appearance. Learn how to easily customize Kendo components by overriding the styling of a given widget.
+position: 2
 ---
 
 # Appearance and Styling
