@@ -9,8 +9,11 @@ navigation:
         title: "Installation and Upgrade"
         position: 2
     "*basics":
-        title: "The basics"
+        title: "The Basics"
         position: 3
+    "*appearance":
+        title: "Customise the Widgets’ Appearance"
+        position: 5
     "*api":
         title: "API"
     "*getting-started":

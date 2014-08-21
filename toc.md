@@ -9,8 +9,7 @@
   * Initialise a widget with jQuery (y)
   * Initialise a widget from markup (y)
   * Use the widget events and methods (y)
-  * Two way data binding with MVVM
-* Supported browsers
+* Supported browsers (y)
 * Customise the widgets’ appearance
   * Kendo UI ThemeBuilder overview
   * Using font icons (???)
