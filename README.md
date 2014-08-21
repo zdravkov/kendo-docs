@@ -1,5 +1,6 @@
 ---
 title: Kendo UI Documentation Repo
+published: false
 ---
 
 # Kendo UI Public Documentation
