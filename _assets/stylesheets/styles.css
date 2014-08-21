@@ -50,6 +50,11 @@ a img {
     float: right;
 }
 
+#page-search {
+    float: right;
+    width: 400px;
+}
+
 #page-search form {
     margin-bottom: 0;
 }
