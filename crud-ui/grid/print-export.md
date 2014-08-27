@@ -116,15 +116,15 @@ Since the browser cannot understand the relationship between the two Grid tables
 
 There are two ways to export the Grid:
 
-* Use a third-party server-side library (or a custom implementation) to directly export the data that is otherwise displayed by the Grid.
-* Use a third-party client-side library (or a custom implementation) to export the Grid table or its dataSource items.
+* Use a server-side implementation to directly export the data that is otherwise displayed by the Grid.
+* Use a client-side implementation to export the Grid table's HTML markup or the Grid dataSource items.
 
 The Kendo UI Code Library provides several examples of exporting the Grid to CSV, Excel and PDF formats.
 
-* [http://www.telerik.com/support/code-library/export-grid-to-excel-8d91dd145501](Export Kendo UI Grid to Excel)
-* [http://www.telerik.com/support/code-library/export-grid-to-excel](Export MVC Grid to Excel)
-* [http://www.telerik.com/support/code-library/export-grid-to-pdf](Export MVC Grid to PDF)
-* [http://www.telerik.com/support/code-library/export-grid-to-csv](Export MVC Grid to CSV)
+* [Export Kendo UI Grid to Excel](http://www.telerik.com/support/code-library/export-grid-to-excel-8d91dd145501)
+* [Export MVC Grid to Excel](http://www.telerik.com/support/code-library/export-grid-to-excel)
+* [Export MVC Grid to PDF](http://www.telerik.com/support/code-library/export-grid-to-pdf)
+* [Export MVC Grid to CSV](http://www.telerik.com/support/code-library/export-grid-to-csv)
 
 A thing to keep in mind during client-side export is that the Grid and its dataSource contain only the data items from the current page.
 As a result, exporting should be made in chunks, or paging should be disabled.
