@@ -486,7 +486,7 @@ Switches to the previous page with animation.
     <script>
     var app = new kendo.mobile.Application();
 
-    function next() {
+    function prev() {
       var scrollview = $("#scrollView").data("kendoMobileScrollView");
       scrollview.prev();
     }
