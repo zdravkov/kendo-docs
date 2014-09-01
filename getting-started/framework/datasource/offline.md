@@ -2,6 +2,7 @@
 title: Work Offline
 page_title: Work offline with the Kendo DataSource
 description: Kendo offline support
+position: 3
 ---
 
 # Work offline with the Kendo DataSource
