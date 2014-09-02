@@ -9,6 +9,10 @@ Connections are usually created by calling [connect](/api/dataviz/diagram#method
 
 ## Configuration
 
+### id `String`
+
+Defines the ID of the connection
+
 ### stroke `Object`
 
 Defines the stroke configuration.
