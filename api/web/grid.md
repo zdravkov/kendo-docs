@@ -3386,7 +3386,27 @@ When set  to false grouping is considered disabled.
 
 ### groupable.showFooter `Boolean` *(default: false)*
 
-When enabled the footer will remain visible when the gruop is collapsed.
+When enabled the group footer rows will remain visible when the corresponding gruop is collapsed.
+
+#### Example - show footer when groups are collapsed
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "productName", groupFooterTemplate: "this is a footer" },
+        { field: "category" }
+      ],
+      dataSource: [
+        { productName: "Tea", category: "Beverages" },
+        { productName: "Beer", category: "Beverages" },
+        { productName: "Cheese", category: "Food" },
+      ],
+      groupable: {
+        showFooter: true
+      }
+    });
+    </script>
 
 ### groupable.messages `Object`
 
