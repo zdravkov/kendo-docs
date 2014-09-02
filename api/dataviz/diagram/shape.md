@@ -24,6 +24,10 @@ Specifies whether the connectors should appear on hover.
 
 The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
 
+### source `String`
+
+The URL as a SRC for a shape of type Image
+
 ### stroke `Object`
 
 Defines the stroke configuration.
