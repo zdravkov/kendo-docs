@@ -3380,6 +3380,14 @@ Can be set to a JavaScript object which represents the grouping configuration.
 
 > Check [Basic usage](http://demos.telerik.com/kendo-ui/web/grid/index.html) for a live demo.
 
+### groupable.enabled `Boolean` *(default: true)*
+
+When set  to false grouping is considered disabled.
+
+### groupable.showFooter `Boolean` *(default: false)*
+
+When enabled the footer will remain visible when the gruop is collapsed.
+
 ### groupable.messages `Object`
 
 The text messages displayed during grouping.
