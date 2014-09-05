@@ -639,7 +639,7 @@ If the `dependencies` option is an existing [kendo.data.GanttDependencyDataSourc
     });
     </script>
 
-### editable `Boolean` *(default: true)*
+### editable `Boolean|Object` *(default: true)*
 
 If set to `false` the user won't be able to create, modify or delete tasks and dependencies.
 
@@ -674,6 +674,45 @@ If set to `false` the user won't be able to create, modify or delete tasks and d
         }
       ],
       editable: false
+    });
+    </script>
+
+### editable.confirmation `Boolean` *(default: true)*
+
+If set to `true` the gantt will display a confirmation dialog when the user deletes a task or a dependency.
+
+#### Example - disable delete confirmation
+    <div id="scheduler"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        },
+        {
+          id: 2,
+          orderId: 1,
+          parentId: null,
+          title: "Task2",
+          start: new Date("2014/6/17 12:00"),
+          end: new Date("2014/6/17 14:00")
+        }
+      ],
+      dependencies: [
+        {
+          predecessorId: 1,
+          successorId: 2,
+          type: 1
+        }
+      ],
+      editable: {
+      	confirmation: false
+      }
     });
     </script>
 
