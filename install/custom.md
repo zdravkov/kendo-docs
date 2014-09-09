@@ -206,6 +206,7 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.validator.js
 1. kendo.binder.js
 1. kendo.editable.js
+1. kendo.window.js
 1. kendo.gantt.list.js
 1. kendo.gantt.timeline.js
 1. kendo.gantt.js
