@@ -98,3 +98,17 @@ $(function(){
         ul.appendTo(this);
     });
 });
+
+$(function(){
+    $(".toggle-nav-wrapper").click(function() {
+        console.log($( "#page-nav" ).hasClass("nav-visibility"));
+        $( "#page-nav" ).toggleClass("nav-visibility");
+    });
+});
+
+$(function(){
+    $(".show-search").click(function() {
+        console.log($( "#page-search" ).hasClass("search-visibility"));
+        $( "#page-search" ).toggleClass("search-visibility");
+    });
+});

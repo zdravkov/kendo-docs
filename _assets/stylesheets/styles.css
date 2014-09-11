@@ -447,14 +447,6 @@ footer
     padding: 0 1em 0 0;
 }
 
-/* Responsive styles */
-
-@media (max-width: 1024px) {
-    #page-nav { width: 30%; }
-    #markdown-toc,
-    #page-article { width: 70%; }
-}
-
 /* Search */
 
 #page-search {
@@ -533,6 +525,61 @@ footer
     padding: 8px 7px 7px;
 }
 
+
+.toggle-nav-wrapper {
+    width: 24px; 
+    height: 24px;
+    background: transparent; 
+    display: none; 
+    position: relative;
+    margin-left: 1.833em;
+    vertical-align: middle;
+}
+
+#page-nav.nav-visibility {
+    display: block;
+}
+
+#page-search.search-visibility {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 78px;
+    right: 0;
+}
+
+.show-search {
+    display: inline-block;
+    min-width: 24px;
+    min-height: 24px;
+    background: url(../images/search-24.png) 0 0 no-repeat;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    #page-nav {
+       width: 30%; 
+    }
+    
+    #markdown-toc,
+    #page-article { 
+        width: 70%; 
+    }
+    
+    #page-search {
+        left: 30%;
+    }
+
+    .btn.pricing-btn {
+        display: none;
+    }
+
+    #page-search {
+        right: 390px;
+    }
+}
+
+/* Responsive styles */
 @media (max-width: 800px) {
     body {
         min-width: initial;
@@ -542,15 +589,15 @@ footer
         background-image: none;
     }
 
+    #markdown-toc {
+        border-bottom: none;
+    }
+
     .nav-buttons,
     #page-nav,
     #page-tabs,
     #page-top #page-search {
         display: none;
-    }
-
-    #page-nav {
-        float: none;
     }
 
     #page-article {
@@ -564,7 +611,65 @@ footer
         margin-top: 1em;
     }
 
-    #page-inner-content {
-        top: 79px;
+    .toggle-nav-wrapper {
+        display: inline-block;
+    }
+
+    #logo-bar {
+        float: none;
+        display: inline-block;
+       /* width: 40%;*/
+       margin-left: 1em;
+    }
+
+    #page-search {
+        width: 30%;
+        right: 1.833em;
+        left: auto;
+        display: none;
+        background-color: #2a2d33;
+    }
+
+    #page-search > div {
+        padding: 0 15px;
+        right: 15px;
+        width: auto;
+    }
+
+    .toggle-nav span { 
+        position: absolute; 
+    }
+    
+    .toggle-nav span, 
+    .toggle-nav span:before,
+    .toggle-nav span:after {
+      cursor: pointer;
+      border-radius: 1px;
+      height: 3px;
+      width: 24px;
+      background: #fff;
+      position: absolute;
+      display: block;
+      content: '';
+    }
+
+    .toggle-nav span:before {
+      top: -8px;
+    }
+
+    .toggle-nav span:after {
+      bottom: -8px; 
+    }
+        
+    .show-search {
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 27px;
+        padding: 0;
+        right: 1.833em;
+        text-align: right;
+        left: auto;
+        cursor: pointer;
     }
 }
