@@ -682,7 +682,7 @@ If set to `false` the user won't be able to create, modify or delete tasks and d
 If set to `true` the gantt will display a confirmation dialog when the user deletes a task or a dependency.
 
 #### Example - disable delete confirmation
-    <div id="scheduler"></div>
+    <div id="gantt"></div>
     <script>
     $("#gantt").kendoGantt({
       dataSource: [
@@ -712,6 +712,80 @@ If set to `true` the gantt will display a confirmation dialog when the user dele
       ],
       editable: {
       	confirmation: false
+      }
+    });
+    </script>
+
+### editable.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the editor.
+
+The template should contain elements whose `name` HTML attributes are set as the editable fields. This is how the Gantt will know
+which field to update. The other option is to use [MVVM](/framework/mvvm/overview) bindings in order to bind HTML elements to data item fields.
+
+> Use the `role` data attribute to initialize Kendo UI widgets in the template. Check [data attribute initialization](/data-attribute-initialization) for more info.
+
+#### Example - customize the popup editor
+
+    <script id="editor" type="text/x-kendo-template">
+       <h3>Edit meeting</h3>
+       <p>
+           <label>Title: <input name="title" /></label>
+       </p>
+       <p>
+           <label>Start: <input data-role="datetimepicker" name="start" /></label>
+       </p>
+       <p>
+           <label>End: <input data-role="datetimepicker" name="end" /></label>
+       </p>
+    </script>
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+      editable: {
+      	template: $("#editor").html()
+      }
+    });
+    </script>
+
+#### Example - using MVVM in the popup editor template
+    <script id="editor" type="text/x-kendo-template">
+       <h3>Edit meeting</h3>
+       <p>
+           <label>Title: <input data-bind="value: title" /></label>
+       </p>
+       <p>
+           <label>Start: <input data-role="datetimepicker" data-bind="value: start" /></label>
+       </p>
+       <p>
+           <label>End: <input data-role="datetimepicker" data-bind="value: end" /></label>
+       </p>
+    </script>
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+      editable: {
+      	template: $("#editor").html()
       }
     });
     </script>
