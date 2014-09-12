@@ -12,6 +12,10 @@
     width: 100%;
 }
 
+#page-inner-content.move-inner-content {
+    top: 126px;
+}
+
 #page-header,
 footer {
     background-color: #2a2d33;

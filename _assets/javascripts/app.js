@@ -101,14 +101,24 @@ $(function(){
 
 $(function(){
     $(".toggle-nav-wrapper").click(function() {
-        console.log($( "#page-nav" ).hasClass("nav-visibility"));
-        $( "#page-nav" ).toggleClass("nav-visibility");
+        if($("#page-search").hasClass("search-visibility")){
+            $("#page-search").removeClass("search-visibility");                  
+        }
+        if($("#page-inner-content").hasClass("move-inner-content")){
+            $("#page-inner-content").removeClass("move-inner-content");                  
+        }
+        $("#page-nav").toggleClass("nav-visibility");
     });
 });
 
 $(function(){
     $(".show-search").click(function() {
-        console.log($( "#page-search" ).hasClass("search-visibility"));
-        $( "#page-search" ).toggleClass("search-visibility");
+        if($("#page-nav").hasClass("nav-visibility")){
+            $("#page-nav").removeClass("nav-visibility");
+        }
+        $("#page-search").toggleClass("search-visibility");
+        $("#page-inner-content").toggleClass("move-inner-content");
     });
 });
+
+$
