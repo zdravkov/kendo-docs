@@ -1455,9 +1455,9 @@ The [template](/api/framework/kendo#methods-template) used to render the week sl
 
 ### views.monthHeaderTemplate `String|Function`
 
-The [template](/api/framework/kendo#methods-template) used to render the month slots in "month" views.
+The [template](/api/framework/kendo#methods-template) used to render the month slots in "month" and "year" views.
 
-#### Example
+#### Example - monthHeaderTemplate set for "month" view
 
     <div id="gantt"></div>
     <script>
@@ -1476,6 +1476,62 @@ The [template](/api/framework/kendo#methods-template) used to render the month s
         {
           type: "month",
           monthHeaderTemplate: "#=kendo.toString(start, 'MMMM, yyyy')#",
+          selected: true
+        }
+      ]
+    });
+    </script>
+
+#### Example - monthHeaderTemplate set for "year" view
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      views: [
+        { type: "day"},
+        { type: "week"},
+        { type: "month"},
+        {
+          type: "year",
+          monthHeaderTemplate: "#=kendo.toString(start, 'MMMM, yyyy')#",
+          selected: true
+        }
+      ]
+    });
+    </script>
+
+### views.yearHeaderTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) used to render the year slots in "year" view.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      views: [
+        { type: "day"},
+        { type: "week"},
+        { type: "month"},
+        {
+          type: "year",
+          yearHeaderTemplate: "#=kendo.toString(start, 'yyyy')#",
           selected: true
         }
       ]
