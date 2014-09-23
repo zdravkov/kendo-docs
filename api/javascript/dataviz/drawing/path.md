@@ -27,6 +27,18 @@ The configuration options.
 
 ## Class methods
 
+### fromRect
+
+Constructs a path from the given rectangle.
+
+#### Parameters
+
+##### rect `kendo.dataviz.geometry.Rect`
+The source rectangle.
+
+#### Returns
+`kendo.dataviz.drawing.Path` A path enclosing the supplied rectangle.
+
 ### parse
 
 Parses a path encoded in [SVG Path Data format](http://www.w3.org/TR/SVG/paths.html#PathData).
@@ -54,10 +66,10 @@ Parses a path encoded in [SVG Path Data format](http://www.w3.org/TR/SVG/paths.h
 The path encoded in [SVG Path Data format](http://www.w3.org/TR/SVG/paths.html#PathData).
 
 ##### options `Object` *optional*
-The [configuration](http://docs.telerik.com/kendo-ui/api/dataviz/drawing/path#configuration) options for the path.
+The [configuration](/api/dataviz/drawing/path#configuration) options for the path.
 
 #### Returns
-`kendo.dataviz.drawing.Surface` An implementation matching the browser capabilities or caller preference; undefined if none is available.
+`kendo.dataviz.drawing.Path` A path matching the supplied SVG data.
 
 ## Configuration
 
