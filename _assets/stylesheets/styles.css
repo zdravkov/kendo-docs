@@ -40,12 +40,6 @@ article, aside, footer {
    display:block;
 }
 
-#page-top,
-#page-inner-content {
-    min-width: 800px;
-}
-
-
 /* Header */
 
 #page-header {
@@ -79,6 +73,7 @@ article, aside, footer {
     position: absolute;
     top: 0;
     left: 0;
+    min-width: 300px;
     width: 20%;
     height: 100%;
     overflow: auto;
@@ -525,14 +520,13 @@ footer
 }
 
 
-.toggle-nav-wrapper {
+.toggle-nav {
     width: 24px; 
     height: 24px;
     background: transparent; 
     display: none; 
     position: relative;
     margin-left: 1.833em;
-    vertical-align: middle;
     cursor: pointer;
 }
 
@@ -619,7 +613,7 @@ footer
         margin-top: 1em;
     }
 
-    .toggle-nav-wrapper {
+    .toggle-nav {
         display: inline-block;
     }
 
@@ -657,7 +651,7 @@ footer
     }
 
     .toggle-nav span:before {
-      top: -8px;
+      top: 16px;
     }
 
     .toggle-nav span:after {
