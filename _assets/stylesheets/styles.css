@@ -40,7 +40,6 @@ article, aside, footer {
    display:block;
 }
 
-#page-header,
 #page-top,
 #page-inner-content {
     min-width: 800px;
@@ -542,20 +541,15 @@ footer
 }
 
 #page-search.search-visibility {
-/*    display: block;
-    width: 100%;
-    position: absolute;
-    top: 78px;
-    right: 0;*/
     display: block;
-/*    width: 70%;*/
     position: relative;
     margin-top: 0;
-  /*  padding-left: 1.83em;*/
-  /*  right: 0;*/
     top: 0;
     left: 1.83em;
-    padding-right: 1.83em;
+    right: 1.83em;
+    background-color: #2a2d33;
+    width: 70%;
+    width: calc(100% - 3.666em);
 }
 
 .show-search {
@@ -636,10 +630,6 @@ footer
     }
 
     #page-search {
-    /*   
-        right: 1.833em;
-    
-        */
         width: 30%;
         left: auto;
         display: none;
@@ -647,9 +637,7 @@ footer
     }
 
     #page-search > div {
-        padding: 0 3.83em 0 0;
-     /*   right: 15px;*/
-        width: auto;
+        padding: 0 3.83em 0 0;    
     }
 
     .toggle-nav span { 
