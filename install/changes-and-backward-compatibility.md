@@ -7,6 +7,68 @@ previous_url: /changes-and-backward-compatibility
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## Kendo UI 2014 Q3
+
+### Changes from 2014 Q3
+
+#### Breaking changes
+
+**Mobile ListView**
+
+* All text customization configuration options are nested in a `messages` object
+
+-Old:
+
+    $("#listview").kendoMobileListView({
+        dataSource: dataSource,
+        template: kendo.template($("#tmp").html()),
+        loadMore: true,
+        pullToRefresh: true,
+        loadMoreText: "Press to load more",
+        pullTemplate: "Pull to refresh",
+        releaseTemplate: "Release to refresh",
+        refreshTemplate: "Refreshing"
+    });
+
+-New:
+
+    $("#listview").kendoMobileListView({
+        dataSource: dataSource,
+        template: kendo.template($("#tmp").html()),
+        loadMore: true,
+        pullToRefresh: true,
+        messages: {
+            loadMoreText: "Press to load more",
+            pullTemplate: "Pull to refresh",
+            releaseTemplate: "Release to refresh",
+            refreshTemplate: "Refreshing"
+        }
+    });
+
+**Mobile Scroller**
+
+* All text customization configuration options are nested in a `messages` object
+
+-Old:
+
+    $("#scroller").kendoMobileScroller({
+        pullToRefresh: true,
+        pullTemplate: "Pull to refresh",
+        releaseTemplate: "Release to refresh",
+        refreshTemplate: "Refreshing"
+    });
+
+-New:
+
+    $("#scroller").kendoMobileScroller({
+        pullToRefresh: true,
+        messages: {
+            pullTemplate: "Pull to refresh",
+            releaseTemplate: "Release to refresh",
+            refreshTemplate: "Refreshing"
+        }
+    });
+
 ## Kendo UI 2014 Q2
 
 ### Changes from 2014 Q1 SP2 (2014.1.528)

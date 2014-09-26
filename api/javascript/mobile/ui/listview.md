@@ -39,7 +39,7 @@ Used in combination with `pullToRefresh`. If set to `true`, newly loaded data wi
           }
           // illustration purposes only
           setTimeout(function() {
-                      options.success(data);
+              options.success(data);
           }, 1000);
 
         }
@@ -255,14 +255,144 @@ If set to `true`, a button is rendered at the bottom of the listview. Tapping it
     new kendo.mobile.Application();
     </script>
 
-### loadMoreText `String`*(default: "Press to load more")*
+### messages `Object`
 
- The text of the rendered load-more button (applies only if `loadMore` is set to true).
+Defines the text of the ListView messages. Used primary for localization.
+
+### messages.loadMoreText `String`*(default: "Press to load more")*
+
+The text of the rendered load-more button (applies only if `loadMore` is set to `true`).
 
 #### Example
 
     <div data-role="view">
-      <ul data-role="listview" data-source="foo" data-load-more="true" data-load-more-text="Show more" data-template="foo-template">
+      <ul data-role="listview" data-source="foo" data-load-more="true" data-messages='{ "loadMoreText": "Show more" }' data-template="foo-template">
+      </ul>
+    </div>
+
+    <script type="text/x-kendo-template" id="foo-template">
+        #: name # - #: modified #
+    </script>
+
+    <script>
+    var i = 0, pageSize = 100;
+
+    // datasource below is customized for demo purposes.
+    var foo = new kendo.data.DataSource({
+      transport: {
+        read: function(options) {
+          var max = i + pageSize;
+          var data = [];
+          for (; i < max; i ++) {
+            data.push({ name: "record" + i, modified: +new Date() });
+          }
+
+          options.success(data);
+        }
+      },
+
+      pageSize: pageSize,
+      serverPaging: true,
+      schema: {
+        total: function() { return 500; }
+      }
+    });
+
+    new kendo.mobile.Application();
+    </script>
+
+### messages.pullTemplate `String` *(default: "Pull to refresh")*
+
+Text that appears when scroller is pulled (applies only if `pullToRefresh` is set to `true`).
+
+#### Example
+
+    <div data-role="view">
+      <ul data-role="listview" data-source="foo" data-pull-to-refresh="true" data-messages='{ "pullTemplate": "Pull to refresh!" }' data-template="foo-template">
+      </ul>
+    </div>
+
+    <script type="text/x-kendo-template" id="foo-template">
+        #: name # - #: modified #
+    </script>
+
+    <script>
+    var i = 0, pageSize = 100;
+
+    // datasource below is customized for demo purposes.
+    var foo = new kendo.data.DataSource({
+      transport: {
+        read: function(options) {
+          var max = i + pageSize;
+          var data = [];
+          for (; i < max; i ++) {
+            data.push({ name: "record" + i, modified: +new Date() });
+          }
+
+          options.success(data);
+        }
+      },
+
+      pageSize: pageSize,
+      serverPaging: true,
+      schema: {
+        total: function() { return 500; }
+      }
+    });
+
+    new kendo.mobile.Application();
+    </script>
+
+### messages.refreshTemplate `String`*(default: "Refreshing")*
+
+Text that appears when ListView is refreshing (applies only if `pullToRefresh` is set to `true`).
+
+#### Example
+
+    <div data-role="view">
+      <ul data-role="listview" data-source="foo" data-pull-to-refresh="true" data-messages='{ "refreshTemplate": "Refreshing!" }' data-template="foo-template">
+      </ul>
+    </div>
+
+    <script type="text/x-kendo-template" id="foo-template">
+        #: name # - #: modified #
+    </script>
+
+    <script>
+    var i = 0, pageSize = 100;
+
+    // datasource below is customized for demo purposes.
+    var foo = new kendo.data.DataSource({
+      transport: {
+        read: function(options) {
+          var max = i + pageSize;
+          var data = [];
+          for (; i < max; i ++) {
+            data.push({ name: "record" + i, modified: +new Date() });
+          }
+
+          options.success(data);
+        }
+      },
+
+      pageSize: pageSize,
+      serverPaging: true,
+      schema: {
+        total: function() { return 500; }
+      }
+    });
+
+    new kendo.mobile.Application();
+    </script>
+
+### messages.releaseTemplate `String` *(default: "Release to refresh")*
+
+Text that appears when scroller is pulled beyound the threshold (applies only if `pullToRefresh` is set to `true`).
+
+#### Example
+
+    <div data-role="view">
+      <ul data-role="listview" data-source="foo" data-pull-to-refresh="true" data-messages='{ "releaseTemplate": "Release to refresh!" }' data-template="foo-template">
       </ul>
     </div>
 

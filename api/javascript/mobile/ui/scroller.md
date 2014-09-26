@@ -27,6 +27,82 @@ Weather or not to allow out of bounds dragging and easing.
     new kendo.mobile.Application();
     </script>
 
+### messages `Object`
+
+Defines the text of the Scroller pull to refresh messages. Used primary for localization.
+
+### messages.pullTemplate `String` *(default: "Pull to refresh")*
+
+The message template displayed when the user pulls the scroller.
+Has effect only when the `pullToRefresh` option is set to `true`.
+
+#### Example
+    <div data-role="view">
+        foo
+        <div data-role="scroller" style="width: 200px; height: 200px" data-pull-to-refresh="true" data-messages='{ "pullTemplate": "Go" }'>
+            <div style="height: 500px">
+                Content
+            </div>
+        </div>
+        bar
+    </div>
+
+    <script id="go" type="text/x-kendo-template">
+        Go!
+    </script>
+
+    <script>
+    new kendo.mobile.Application();
+    </script>
+
+### messages.refreshTemplate `String` *(default: "Refreshing")*
+
+The message template displayed during the refresh.
+Has effect only when the `pullToRefresh` option is set to `true`.
+
+#### Example
+    <div data-role="view">
+        foo
+        <div data-role="scroller" style="width: 200px; height: 200px" data-pull-to-refresh="true" data-messages='{ "refreshTemplate": "progress" }'>
+            <div style="height: 500px">
+                Content
+            </div>
+        </div>
+        bar
+    </div>
+
+    <script id="progress" type="text/x-kendo-template">
+        In progress...
+    </script>
+
+    <script>
+    new kendo.mobile.Application();
+    </script>
+
+### messages.releaseTemplate `String` *(default: "Release to refresh")*
+
+The message template displayed when the user pulls the scroller below the `pullOffset`, indicating that `pullToRefresh` will occur.
+Has effect only when the `pullToRefresh` option is set to `true`.
+
+#### Example
+    <div data-role="view">
+        foo
+        <div data-role="scroller" style="width: 200px; height: 200px" data-pull-to-refresh="true" data-messages='{ "releaseTemplate": "release" }'>
+            <div style="height: 500px">
+                Content
+            </div>
+        </div>
+        bar
+    </div>
+
+    <script id="progress" type="text/x-kendo-template">
+        Let it go now...
+    </script>
+
+    <script>
+    new kendo.mobile.Application();
+    </script>
+
 ### pullOffset `Number`*(default: 140)*
 
 The threshold below which releasing the scroller will trigger the pull event.
@@ -47,31 +123,6 @@ Has effect only when the `pullToRefresh` option is set to true.
     new kendo.mobile.Application();
     </script>
 
-
-### pullTemplate `String`*(default: "Pull to refresh")*
-
-The message template displayed when the user pulls the scroller.
-Has effect only when the `pullToRefresh` option is set to true.
-
-#### Example
-    <div data-role="view">
-        foo
-        <div data-role="scroller" style="width: 200px; height: 200px" data-pull-to-refresh="true" data-pull-template="go">
-            <div style="height: 500px">
-                Content
-            </div>
-        </div>
-        bar
-    </div>
-
-    <script id="go" type="text/x-kendo-template">
-        Go!
-    </script>
-
-    <script>
-    new kendo.mobile.Application();
-    </script>
-
 ### pullToRefresh `Boolean`*(default: false)*
 
 If set to true, the scroller will display a hint when the user pulls the container beyond its top limit.
@@ -87,54 +138,6 @@ If a pull beyond the specified `pullOffset` occurs, a pull event will be trigger
         </div>
         bar
     </div>
-
-    <script>
-    new kendo.mobile.Application();
-    </script>
-
-### refreshTemplate `String`*(default: "Refreshing")*
-
-The message template displayed during the refresh.
-Has effect only when the `pullToRefresh` option is set to true.
-
-#### Example
-    <div data-role="view">
-        foo
-        <div data-role="scroller" style="width: 200px; height: 200px" data-pull-to-refresh="true" data-refresh-template="progress">
-            <div style="height: 500px">
-                Content
-            </div>
-        </div>
-        bar
-    </div>
-
-    <script id="progress" type="text/x-kendo-template">
-        In progress...
-    </script>
-
-    <script>
-    new kendo.mobile.Application();
-    </script>
-
-### releaseTemplate `String`*(default: "Release to refresh")*
-
-The message template displayed when the user pulls the scroller below the `pullOffset`, indicating that `pullToRefresh` will occur.
-Has effect only when the `pullToRefresh` option is set to true.
-
-#### Example
-    <div data-role="view">
-        foo
-        <div data-role="scroller" style="width: 200px; height: 200px" data-pull-to-refresh="true" data-release-template="release">
-            <div style="height: 500px">
-                Content
-            </div>
-        </div>
-        bar
-    </div>
-
-    <script id="progress" type="text/x-kendo-template">
-        Let it go now...
-    </script>
 
     <script>
     new kendo.mobile.Application();
