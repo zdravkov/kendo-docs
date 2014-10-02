@@ -9,16 +9,16 @@ Draws a bitmap image with a given source URL into the specified [rectangle](../g
 #### Example - draw an image
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var rect = new geo.Rect(
+        var rect = new geom.Rect(
             [10, 10],  // Position of the top left corner
             [249, 240] // Size of the rectangle
         );
-        var image = new d.Image("http://goo.gl/6ov8Gw", rect);
+        var image = new draw.Image("http://goo.gl/6ov8Gw", rect);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(image);
     </script>
 
@@ -73,16 +73,16 @@ Gets or sets the image source URL.
 #### Example - changing the image source
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var rect = new geo.Rect(
+        var rect = new geom.Rect(
             [10, 10],  // Position of the top left corner
             [240, 240] // Size of the rectangle
         );
-        var image = new d.Image("http://goo.gl/6ov8Gw", rect);
+        var image = new draw.Image("http://goo.gl/6ov8Gw", rect);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(image);
 
         setTimeout(function() {
@@ -105,16 +105,16 @@ Gets or sets the rectangle defines the image position and size.
 #### Example - resizing the image
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var rect = new geo.Rect(
+        var rect = new geom.Rect(
             [10, 10],  // Position of the top left corner
             [240, 240] // Size of the rectangle
         );
-        var image = new d.Image("http://goo.gl/6ov8Gw", rect);
+        var image = new draw.Image("http://goo.gl/6ov8Gw", rect);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(image);
 
         setTimeout(function() {

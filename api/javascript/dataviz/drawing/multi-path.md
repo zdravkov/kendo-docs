@@ -13,13 +13,13 @@ but each moveTo command starts a new sub-path.
 #### Example - drawng a multi-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
+        var draw = kendo.dataviz.drawing;
 
-        var multiPath = new d.MultiPath()
+        var multiPath = new draw.MultiPath()
             .moveTo(100, 200).curveTo([100, 100], [250, 100], [250, 200]).close()
             .moveTo(150, 150).lineTo(200, 150).close();
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(multiPath);
     </script>
 
@@ -69,9 +69,9 @@ Closes the current sub-path by linking its current end point with its start poin
 #### Example - Draw a closed sub-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
+        var draw = kendo.dataviz.drawing;
 
-        var multiPath = new d.MultiPath()
+        var multiPath = new draw.MultiPath()
             .moveTo(100, 200).curveTo([100, 100], [250, 100], [250, 200]);
 
         // The following commands are interchangable
@@ -81,7 +81,7 @@ Closes the current sub-path by linking its current end point with its start poin
         // Draw the next sub-path
         multiPath.moveTo(150, 150).lineTo(200, 150).close();
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(multiPath);
     </script>
 
@@ -97,13 +97,13 @@ A quadratic Bézier curve (with one control point) can be plotted by making the 
 #### Example - Draw a curved sub-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
+        var draw = kendo.dataviz.drawing;
 
-        var multiPath = new d.MultiPath()
+        var multiPath = new draw.MultiPath()
             .moveTo(100, 200).curveTo([100, 100], [250, 100], [250, 200]).close()
             .moveTo(150, 150).lineTo(200, 150).close();
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(multiPath);
     </script>
 
@@ -140,20 +140,20 @@ Draws a straight line to the specified absolute coordinates.
 #### Example - Draw a straight sub-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var multiPath = new d.MultiPath()
+        var multiPath = new draw.MultiPath()
             .moveTo(100, 200);
 
         // The following commands are interchangeable
         multiPath.lineTo(200, 200);
         multiPath.lineTo([200, 200]);
-        multiPath.lineTo(new geo.Point(200, 200));
+        multiPath.lineTo(new geom.Point(200, 200));
 
         multiPath.moveTo(150, 150).lineTo(200, 150).close();
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(multiPath);
     </script>
 
@@ -177,20 +177,20 @@ Creates a new sub-path or clears all segments and moves the starting point to th
 #### Example - Set the sub-path start coordinates
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var multiPath = new d.MultiPath();
+        var multiPath = new draw.MultiPath();
 
         // The following commands are interchangeable
         multiPath.moveTo(100, 200);
         multiPath.moveTo([100, 200]);
-        multiPath.moveTo(new geo.Point(100, 200));
+        multiPath.moveTo(new geom.Point(100, 200));
 
         multiPath.lineTo(200, 200).close();
         multiPath.moveTo(150, 150).lineTo(200, 150).close();
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(multiPath);
     </script>
 

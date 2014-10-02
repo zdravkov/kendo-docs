@@ -9,18 +9,18 @@ Draws an arc with set geometry, fill and stroke.
 #### Example - creating an arc
     <div id="surface"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var arcGeometry = new geo.Arc([100, 100], {
+        var arcGeometry = new geom.Arc([100, 100], {
             radiusX: 10,
             radiusY: 10,
             startAngle: 45,
             endAngle: 135
         });
-        var arc = new d.Arc(arcGeometry).stroke("red", 1);
+        var arc = new draw.Arc(arcGeometry).stroke("red", 1);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(arc);
     </script>
 

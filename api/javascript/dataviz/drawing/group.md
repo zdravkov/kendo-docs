@@ -9,15 +9,15 @@ Represents a set of drawing elements, possibly including other groups.
 #### Example - creating a group
     <div id="surface"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var group = new d.Group();
+        var draw = kendo.dataviz.drawing;
+        var group = new draw.Group();
 
-        var pathA = new d.Path().moveTo(0, 0).lineTo(100, 100);
-        var pathB = new d.Path().moveTo(0, 100).lineTo(100, 0);
+        var pathA = new draw.Path().moveTo(0, 0).lineTo(100, 100);
+        var pathB = new draw.Path().moveTo(0, 100).lineTo(100, 0);
 
         group.append(pathA, pathB);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(group);
     </script>
 

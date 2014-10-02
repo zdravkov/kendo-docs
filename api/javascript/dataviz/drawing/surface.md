@@ -13,15 +13,10 @@ The implementations for SVG, Canvas and VML inherit from this base class.
 ## Example - Creating a drawing surface
     <div id="container" style="position: relative; width: 600px; height: 400px;"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var surface = d.Surface.create($("#container"));
+        var draw = kendo.dataviz.drawing;
+        var surface = draw.Surface.create($("#container"));
 
-        var path = new d.Path().fill("red")
-            .moveTo(50, 0).lineTo(100, 50).lineTo(0, 50).close();
-
-        surface.draw(path);
-
-        var path = new d.Path().fill("red")
+        var path = new draw.Path().fill("red")
             .moveTo(50, 0).lineTo(100, 50).lineTo(0, 50).close();
 
         surface.draw(path);
@@ -33,29 +28,17 @@ The implementations for SVG, Canvas and VML inherit from this base class.
 
 Creates a drawing surface matching the browser capabilities.
 
-#### Example - Creating a surface with any available type
-    <div id="container"></div>
-    <script>
-        var d = kendo.dataviz.drawing;
-        var surface = d.Surface.create($("#container"));
-
-        var path = new d.Path().fill("red")
-            .moveTo(50, 0).lineTo(100, 50).lineTo(0, 50).close();
-
-        surface.draw(path);
-    </script>
-
 #### Example - Specifying a preferred type and size
     <div id="container"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var surface = d.Surface.create($("#container"), {
+        var draw = kendo.dataviz.drawing;
+        var surface = draw.Surface.create($("#container"), {
             type: "canvas",
             width: "600px",
             height: "400px"
         });
 
-        var path = new d.Path().fill("red")
+        var path = new draw.Path().fill("red")
             .moveTo(50, 0).lineTo(100, 50).lineTo(0, 50).close();
 
         surface.draw(path);
@@ -103,14 +86,14 @@ Triggered when an element has been clicked.
 #### Example - subscribe to the "click" event during initialization
     <div id="container"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var surface = d.Surface.create($("#container"), {
+        var draw = kendo.dataviz.drawing;
+        var surface = draw.Surface.create($("#container"), {
             click: function(e) {
                 console.log("Click");
             }
         });
 
-        var path = new d.Path().fill("red")
+        var path = new draw.Path().fill("red")
             .moveTo(50, 0).lineTo(100, 50).lineTo(0, 50).close();
 
         surface.draw(path);
@@ -132,14 +115,14 @@ Triggered when the mouse is moved over an element.
 #### Example - subscribe to the "mouseenter" event during initialization
     <div id="container"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var surface = d.Surface.create($("#container"), {
+        var draw = kendo.dataviz.drawing;
+        var surface = draw.Surface.create($("#container"), {
             mouseenter: function(e) {
-                console.log("Mouseover");
+                console.log("Mouse enter");
             }
         });
 
-        var path = new d.Path().fill("red")
+        var path = new draw.Path().fill("red")
             .moveTo(50, 0).lineTo(100, 50).lineTo(0, 50).close();
 
         surface.draw(path);
@@ -161,14 +144,14 @@ Triggered when the mouse is leaves an element.
 #### Example - subscribe to the "mouseleave" event during initialization
     <div id="container"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var surface = d.Surface.create($("#container"), {
+        var draw = kendo.dataviz.drawing;
+        var surface = draw.Surface.create($("#container"), {
             mouseleave: function(e) {
-                console.log("Mouseleave");
+                console.log("Mouse leave");
             }
         });
 
-        var path = new d.Path().fill("red")
+        var path = new draw.Path().fill("red")
             .moveTo(50, 0).lineTo(100, 50).lineTo(0, 50).close();
 
         surface.draw(path);

@@ -9,13 +9,13 @@ Draws a single line of text at the given position.
 #### Example - creating a text
     <div id="surface"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var position = new geo.Point(10, 10);
-        var text = new d.Text("Foo", position);
+        var position = new geom.Point(10, 10);
+        var text = new draw.Text("Foo", position);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(text);
     </script>
 
@@ -66,13 +66,13 @@ Gets or sets the text content.
 #### Example - change content
     <div id="surface"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var position = new geo.Point(10, 10);
-        var text = new d.Text("", position);
+        var position = new geom.Point(10, 10);
+        var text = new draw.Text("", position);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(text);
 
         setInterval(function() {
@@ -125,13 +125,13 @@ Gets or sets the position of the text upper left corner.
 #### Example - change position
     <div id="surface"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var position = new geo.Point(10, 10);
-        var text = new d.Text("Foo", position);
+        var position = new geom.Point(10, 10);
+        var text = new draw.Text("Foo", position);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(text);
 
         setTimeout(function() {

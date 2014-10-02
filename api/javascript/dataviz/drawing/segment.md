@@ -11,10 +11,9 @@ Segments are created implicitly by the [Path](path) lineTo and curveTo commands.
 #### Example - accessing path segments
     <div id="surface"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
 
-        var path = new d.Path()
+        var path = new draw.Path()
             .moveTo(100, 100)  // Creates segment #0
             .lineTo(200, 100)  // Creates segment #1
             .stroke("red", 1);
@@ -22,7 +21,7 @@ Segments are created implicitly by the [Path](path) lineTo and curveTo commands.
         // Moves the line starting point 50px to the left
         path.segments[0].anchor().translate(50, 0);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(path);
     </script>
 

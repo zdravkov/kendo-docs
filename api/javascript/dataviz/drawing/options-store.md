@@ -63,7 +63,7 @@ Must be a fully qualified name (e.g. "foo.bar") for nested options.
 Sets the value of the specified option.
 
 #### Example - retrieving an option value
-    <div id="surface"></div>
+    <script>
         var options = new kendo.dataviz.drawing.OptionsStore({
             foo: {
                 bar: true

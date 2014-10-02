@@ -9,13 +9,13 @@ Draws a circle with set geometry, fill and stroke.
 #### Example - creating a circle
     <div id="surface"></div>
     <script>
-        var d = kendo.dataviz.drawing;
-        var geo = kendo.dataviz.geometry;
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
 
-        var circleGeometry = new geo.Circle([100, 100], 20);
-        var circle = new d.Circle(circleGeometry).stroke("red", 1);
+        var circleGeometry = new geom.Circle([100, 100], 20);
+        var circle = new draw.Circle(circleGeometry).stroke("red", 1);
 
-        var surface = d.Surface.create($("#surface"));
+        var surface = draw.Surface.create($("#surface"));
         surface.draw(circle);
     </script>
 
