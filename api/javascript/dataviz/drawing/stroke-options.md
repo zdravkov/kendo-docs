@@ -9,15 +9,15 @@ Shape stroke configuration options.
 ## Fields
 
 ### color `String`
-The stroke color.
+The stroke color in any of the following formats.
 
 | Value          | Description
 | ---            | --- | ---
 | red            | [Basic](http://www.w3.org/TR/css3-color/#html4) or [Extended](http://www.w3.org/TR/css3-color/#svg-color) CSS Color name
 | #ff0000        | Hex RGB value
 | rgb(255, 0, 0) | RGB value
-| transparent    | Entirely transparent fill
-| none           | Alias for transparent
+
+Specifying 'none', 'transparent' or '' (empty string) will clear the stroke.
 
 ### dashType `String` *(default: "solid")*
 The stroke dash type.
