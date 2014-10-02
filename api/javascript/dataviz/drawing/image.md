@@ -32,6 +32,10 @@ A rectange defining the position and size of the image.
 
 ## Configuration
 
+### opacity `Number`
+The element opacity.
+Inherited from [Element.opacity](element#configuration-opacity)
+
 ### transform `kendo.dataviz.geometry.Transformation`
 The transformation to apply to this element.
 Inherited from [Element.transform](element#configuration-transform)
@@ -48,6 +52,19 @@ Inherited from [Element.bbox](element#methods-bbox)
 
 #### Returns
 `kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+
+
+### opacity
+Gets or sets the element opacity.
+Inherited from [Element.opacity](element#methods-opacity)
+
+#### Parameters
+
+##### opacity `Number`
+The element opacity. Ranges from 0 (completely transparent) to 1 (completely opaque).
+
+#### Returns
+`Number` The current element opacity.
 
 
 ### src

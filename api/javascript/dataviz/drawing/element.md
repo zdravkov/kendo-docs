@@ -13,6 +13,9 @@ The configuration of this Group.
 
 ## Configuration
 
+### opacity `Number`
+The element opacity.
+
 ### transform `kendo.dataviz.geometry.Transformation`
 The transformation to apply to this element.
 
@@ -31,6 +34,31 @@ Returns the bounding box of the element with transformations applied.
 
 #### Returns
 `kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+
+
+### opacity
+Gets or sets the element opacity.
+
+#### Example - setting transformation on an element
+    <div id="surface"></div>
+    <script>
+        var draw = kendo.dataviz.drawing;
+
+        var path = new draw.Path();
+        path.moveTo(0, 0).lineTo(100, 100);
+        path.opacity(0.5);
+
+        var surface = draw.Surface.create($("#surface"));
+        surface.draw(path);
+    </script>
+
+#### Parameters
+
+##### opacity `Number`
+The element opacity. Ranges from 0 (completely transparent) to 1 (completely opaque).
+
+#### Returns
+`Number` The current element opacity.
 
 
 ### transform

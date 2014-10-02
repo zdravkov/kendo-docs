@@ -26,6 +26,22 @@ Represents a set of drawing elements, possibly including other groups.
 ### options `Object`
 The configuration of this Group.
 
+## Configuration
+
+### opacity `Number`
+The group opacity.
+Inherited from [Element.opacity](element#configuration-opacity)
+
+The opacity of any child groups and elements will be multiplied by this value.
+
+### transform `kendo.dataviz.geometry.Transformation`
+The transformation to apply to this group and its children.
+Inherited from [Element.transform](element#configuration-transform)
+
+### visible `Boolean`
+A flag, indicating if the group and its children are visible.
+Inherited from [Element.visible](element#configuration-visible)
+
 ## Fields
 
 ### children `Array`
@@ -44,6 +60,21 @@ The element to append. Multiple parameters are accepted.
 
 ### clear
 Removes all child elements from the group.
+
+
+### opacity
+Gets or sets the group opacity.
+Inherited from [Element.opacity](element#methods-opacity)
+
+The opacity of any child groups and elements will be multiplied by this value.
+
+#### Parameters
+
+##### opacity `Number`
+The group opacity. Ranges from 0 (completely transparent) to 1 (completely opaque).
+
+#### Returns
+`Number` The current group opacity.
 
 
 ### remove

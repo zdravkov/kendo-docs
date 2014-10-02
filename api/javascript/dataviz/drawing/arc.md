@@ -37,6 +37,10 @@ The configuration options.
 ### fill `kendo.dataviz.drawing.FillOptions`
 The fill options of the shape.
 
+### opacity `Number`
+The element opacity.
+Inherited from [Element.opacity](element#configuration-opacity)
+
 ### stroke `kendo.dataviz.drawing.StrokeOptions`
 The stroke options of the shape.
 
@@ -83,6 +87,21 @@ The [fill opacity](fill-options#fields-opacity) to set.
 
 #### Returns
 `kendo.dataviz.drawing.Arc` The current instance to allow chaining.
+
+
+### opacity
+Gets or sets the element opacity.
+Inherited from [Element.opacity](element#methods-opacity)
+
+If set, the stroke and fill opacity will be multiplied by the element opacity.
+
+#### Parameters
+
+##### opacity `Number`
+The element opacity. Ranges from 0 (completely transparent) to 1 (completely opaque).
+
+#### Returns
+`Number` The current element opacity.
 
 
 ### stroke
