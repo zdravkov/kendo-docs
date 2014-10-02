@@ -28,6 +28,10 @@ The configuration of this Group.
 
 ## Configuration
 
+### clip `kendo.dataviz.drawing.Path`
+The group clipping path.
+Inherited from [Element.clip](element#configuration-clip)
+
 ### opacity `Number`
 The group opacity.
 Inherited from [Element.opacity](element#configuration-opacity)
@@ -60,6 +64,19 @@ The element to append. Multiple parameters are accepted.
 
 ### clear
 Removes all child elements from the group.
+
+
+### clip
+Gets or sets the group clipping path.
+Inherited from [Element.clip](element#methods-clip)
+
+#### Parameters
+
+##### clip `kendo.dataviz.drawing.Path`
+The group clipping path.
+
+#### Returns
+`kendo.dataviz.drawing.Path` The current group clipping path.
 
 
 ### opacity

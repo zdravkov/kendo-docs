@@ -32,6 +32,10 @@ The configuration options.
 
 ## Configuration
 
+### clip `kendo.dataviz.drawing.Path`
+The element clipping path.
+Inherited from [Element.clip](element#configuration-clip)
+
 ### fill `kendo.dataviz.drawing.FillOptions`
 The fill options of the text.
 
@@ -58,6 +62,19 @@ Inherited from [Element.bbox](element#methods-bbox)
 
 #### Returns
 `kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+
+
+### clip
+Gets or sets the element clipping path.
+Inherited from [Element.clip](element#methods-clip)
+
+#### Parameters
+
+##### clip `kendo.dataviz.drawing.Path`
+The element clipping path.
+
+#### Returns
+`kendo.dataviz.drawing.Path` The current element clipping path.
 
 
 ### content

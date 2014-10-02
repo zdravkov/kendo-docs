@@ -32,6 +32,10 @@ A rectange defining the position and size of the image.
 
 ## Configuration
 
+### clip `kendo.dataviz.drawing.Path`
+The element clipping path.
+Inherited from [Element.clip](element#configuration-clip)
+
 ### opacity `Number`
 The element opacity.
 Inherited from [Element.opacity](element#configuration-opacity)
@@ -52,6 +56,19 @@ Inherited from [Element.bbox](element#methods-bbox)
 
 #### Returns
 `kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+
+
+### clip
+Gets or sets the element clipping path.
+Inherited from [Element.clip](element#methods-clip)
+
+#### Parameters
+
+##### clip `kendo.dataviz.drawing.Path`
+The element clipping path.
+
+#### Returns
+`kendo.dataviz.drawing.Path` The current element clipping path.
 
 
 ### opacity

@@ -13,6 +13,32 @@ The configuration of this Group.
 
 ## Configuration
 
+### clip `kendo.dataviz.drawing.Path`
+The clipping path for this element.
+
+The path instance will be monitored for changes.
+It can be replaced by calling the [clip](#methods-clip) method.
+
+> The VML surface (IE 8 and earlier) will clip to the path bounding rectangle.
+
+#### Example - setting clipping path on an element
+    <div id="surface"></div>
+    <script>
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
+
+        var clipPath = new draw.Path();
+        clipPath.moveTo(0, 0).lineTo(100, 100).lineTo(100, 0).close();
+
+        var circle = new draw.Circle(new geom.Circle([100, 100], 80), {
+            clip: clipPath,
+            stroke: { color: "red", width: 1 }
+        });
+
+        var surface = draw.Surface.create($("#surface"));
+        surface.draw(circle);
+    </script>
+
 ### opacity `Number`
 The element opacity.
 
@@ -34,6 +60,61 @@ Returns the bounding box of the element with transformations applied.
 
 #### Returns
 `kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+
+
+### clip
+Gets or sets the element clipping path.
+
+> The VML surface (IE 8 and earlier) will clip to the path bounding rectangle.
+
+#### Example - setting clipping path on an element
+    <div id="surface"></div>
+    <script>
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
+
+        var circle = new draw.Circle(new geom.Circle([100, 100], 80), {
+            stroke: { color: "red", width: 1 }
+        });
+
+        var clipPath = new draw.Path();
+        clipPath.moveTo(0, 0).lineTo(100, 100).lineTo(100, 0).close();
+
+        circle.clip(clipPath);
+
+        var surface = draw.Surface.create($("#surface"));
+        surface.draw(circle);
+    </script>
+
+#### Example - clear clipping path
+    <div id="surface"></div>
+    <script>
+        var draw = kendo.dataviz.drawing;
+        var geom = kendo.dataviz.geometry;
+
+        var clipPath = new draw.Path();
+        clipPath.moveTo(0, 0).lineTo(100, 100).lineTo(100, 0).close();
+
+        var circle = new draw.Circle(new geom.Circle([80, 80], 60), {
+          clip: clipPath,
+          stroke: { color: "red", width: 1 }
+        });
+
+        var surface = draw.Surface.create($("#surface"));
+        surface.draw(circle);
+
+        setTimeout(function() {
+                circle.clip(null);
+        }, 2000);
+    </script>
+
+#### Parameters
+
+##### clip `kendo.dataviz.drawing.Path`
+The element clipping path.
+
+#### Returns
+`kendo.dataviz.drawing.Path` The current element clipping path.
 
 
 ### opacity
