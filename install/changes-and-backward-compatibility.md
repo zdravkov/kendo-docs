@@ -69,11 +69,7 @@ previous_url: /changes-and-backward-compatibility
         }
     });
 
-## Kendo UI 2014 Q2 SP2
-
-### Changes from 2014 Q2 SP1 (2014.2.903)
-
-**Editor**:
+**Editor**
 
 * Due to security precautions, scripts are no longer posted to the server by default. If you need to allow scripts to be posted to the server, set the [serialization.scripts configuration option]() to `true`. Note that for true protection from cross-site scripting, you still need server-side sanitization, as noted in the [preventing cross-site scripting](/web/editor/preventing-xss) help topic.
 
