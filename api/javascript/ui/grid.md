@@ -2150,13 +2150,123 @@ For more information, please refer to the [Window configuration API](/api/web/wi
     });
     </script>
 
+### excel `Object`
+
+Configures the Kendo UI Grid export settings.
+
+### excel.allPages `Boolean` *(default: false)*
+
+If set to `true` the grid will export all pages of data. By default the grid exports only the current page.
+
+> If the grid is bound to remote data and `allPages` is set to `true` it will request **all** data items from the remote service. Be careful if you have a lot of data.
+
+#### Example - export all pages of data
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["excel"],
+        excel: {
+            allPages: true
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### excel.fileName `String` *(default: "Export.xslx")*
+
+Specifies the file name of the exported Excel file.
+
+#### Example - set the default Excel file name
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["excel"],
+        excel: {
+            fileName: "Products.xlsx"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### excel.filterable `Boolean` *(default: false)*
+
+Enables or disables column filtering in the Excel file. Not to be mistaken with the grid filtering feature.
+
+#### Example - enable filtering in the output Excel file
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["excel"],
+        excel: {
+            filterable: false
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### excel.proxyURL `String` *(default: null)*
+
+The URL of the server side proxy which will stream the Excel file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
+The developer is responsible for implementing the server-side proxy. Implementation instructions are available here.
+
+#### Example - set the server proxy URL
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["excel"],
+        excel: {
+            proxyURL: "/save"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
 ### filterable `Boolean|Object` *(default: false)*
 
 If set to `true` the user can filter the data source using the grid filter menu. Filtering is disabled by default.
 
 Can be set to a JavaScript object which represents the filter menu configuration.
 
-#### Example - enable the filtering
+#### Example - enable filtering
 
         <div id="grid"></div>
         <script>
@@ -3683,6 +3793,32 @@ Defines the text of "Edit" button that is rendered in `inline` or `popup` editin
     });
     </script>
 
+### messages.commands.excel `String`
+
+Defines the text of "Export to Excel" button of the grid toolbar.
+
+#### Example
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      toolbar: [ "excel" ],
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ],
+      messages: {
+        commands: {
+          excel: "Excel export"
+        }
+      }
+    });
+    </script>
+
 ### messages.commands.save `String`
 
 Defines the text of "Save Changes" button located in the ToolBar of the widget.
@@ -4619,13 +4755,15 @@ and the string value will be passed as an argument to a [`kendo.template()`](/ap
 
 If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the Grid Toolbar contents.
 
-If an `Array` value is assigned, it will be treated as the list of commands displayed in the Grid Toolbar. Commands can be custom or built-in ("cancel", "create", "save").
+If an `Array` value is assigned, it will be treated as the list of commands displayed in the Grid Toolbar. Commands can be custom or built-in ("cancel", "create", "save", "excel").
 
 The "cancel" built-in command reverts any data changes done by the end user.
 
 The "create" command adds an empty data item to the grid.
 
 The "save" command persists any data changes done by the end user.
+
+The "excel" command exports the grid data in MS Excel format.
 
 #### Example - configure the Grid Toolbar as a string template
     <div id="grid"></div>
@@ -4699,7 +4837,7 @@ The "save" command persists any data changes done by the end user.
 
 ### toolbar.name `String`
 
-The name of the toolbar command. Either a built-in ("cancel", "create" and "save") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
+The name of the toolbar command. Either a built-in ("cancel", "create", "save" and "excel") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
 This class can be used to obtain reference to the button after Grid initialization and attach click handlers.
 
 #### Example - specify the name of the command
@@ -5449,6 +5587,33 @@ Expands specified master row.
     });
     var grid = $("#grid").data("kendoGrid");
     grid.expandRow(".k-master-row:first");
+    </script>
+
+### exportToExcel
+
+Initiates the Excel export. Also fires the "excelExport" event.
+
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+
+#### Example - manually initiate Excel export
+
+    <button id="export">Export to Excel</button>
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      dataSource: [
+          { name: "Jane Doe", age: 30 },
+          { name: "John Doe", age: 33 }
+      ],
+    });
+    $("#export").click(function(e) {
+        var grid = $("#grid").data("kendoGrid");
+        grid.exportToExcel();
+    });
     </script>
 
 ### hideColumn
@@ -6753,6 +6918,68 @@ The widget instance which fired the event.
     var grid = $("#grid").data("kendoGrid");
     grid.bind("edit", grid_edit);
     </script>
+
+### excelExport
+
+Fired when the user clicks the "Export to Excel" toolbar button.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Grid`
+
+The widget instance which fired the event.
+
+##### e.workbook `Object`
+
+The Excel workbook configuration object.
+
+##### e.preventDefault `Function`
+
+If invoked the grid will not save the generated file.
+
+#### Example - subscribe to the "excelExport" event during initialization
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      toolbar: ["excel"],
+      columns: [
+        { field: "name" }
+      ],
+      dataSource: [
+        { name: "Jane Doe"},
+        { name: "John Doe"}
+      ],
+      excelExport: function(e) {
+        e.workbook.fileName = "Grid.xslx";
+      }
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.exportToExcel();
+    </script>
+
+#### Example - subscribe to the "excelExport" event after initialization
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      toolbar: ["excel"],
+      columns: [
+        { field: "name" }
+      ],
+      dataSource: [
+        { name: "Jane Doe"},
+        { name: "John Doe"}
+      ]
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.bind("excelExport", function(e) {
+        e.workbook.fileName = "Grid.xslx";
+    });
+    grid.exportToExcel();
+    </script>
+
+#### Example - subscribe to the "excelExport" event after initialization
 
 ### filterMenuInit
 
