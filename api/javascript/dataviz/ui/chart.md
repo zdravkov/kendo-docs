@@ -8071,8 +8071,8 @@ The supported values are:
 * "count" - the number of values for the date period.
 * "max" - the highest value for the date period.
 * "min" - the lowest value for the date period.
-* "sum" - the sum of all values for the date period.
-* "sumOrNull" - the sum of all values for the date period. If there are not data for the current period of time the aggregate will return 'null'(instead of 'zero' for the sum aggregate).
+* "sum" - the sum of all values for the date period. Defaults to 0 if no data points are defined.
+* "sumOrNull" - the sum of all values for the date period. Defaults to `null` if no data points are defined.
 * "first" - the first value
 * function(values, series, dataItems, category) - user-defined aggregate function. Returns single value or data item.
 * object  - (compound aggregate) **Applicable to "candlestick", "boxPlot"  and ohlc "series"**. Specifies the aggregate for each data item field.
