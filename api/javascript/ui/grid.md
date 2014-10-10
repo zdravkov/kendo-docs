@@ -5589,33 +5589,6 @@ Expands specified master row.
     grid.expandRow(".k-master-row:first");
     </script>
 
-### exportToExcel
-
-Initiates the Excel export. Also fires the "excelExport" event.
-
-> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
-
-#### Example - manually initiate Excel export
-
-    <button id="export">Export to Excel</button>
-    <div id="grid"></div>
-    <script>
-    $("#grid").kendoGrid({
-      columns: [
-        { field: "name" },
-        { field: "age" }
-      ],
-      dataSource: [
-          { name: "Jane Doe", age: 30 },
-          { name: "John Doe", age: 33 }
-      ],
-    });
-    $("#export").click(function(e) {
-        var grid = $("#grid").data("kendoGrid");
-        grid.exportToExcel();
-    });
-    </script>
-
 ### hideColumn
 
 Hides the specified grid column.
@@ -5781,6 +5754,33 @@ The column whose position should be changed.
     });
     var grid = $("#grid").data("kendoGrid");
     grid.reorderColumn(1, grid.columns[0]);
+    </script>
+
+### saveAsExcel
+
+Initiates the Excel export. Also fires the "excelExport" event.
+
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+
+#### Example - manually initiate Excel export
+
+    <button id="export">Export to Excel</button>
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      dataSource: [
+          { name: "Jane Doe", age: 30 },
+          { name: "John Doe", age: 33 }
+      ],
+    });
+    $("#export").click(function(e) {
+        var grid = $("#grid").data("kendoGrid");
+        grid.saveAsExcel();
+    });
     </script>
 
 ### saveChanges
@@ -6955,7 +6955,7 @@ If invoked the grid will not save the generated file.
       }
     });
     var grid = $("#grid").data("kendoGrid");
-    grid.exportToExcel();
+    grid.saveAsExcel();
     </script>
 
 #### Example - subscribe to the "excelExport" event after initialization
@@ -6976,7 +6976,7 @@ If invoked the grid will not save the generated file.
     grid.bind("excelExport", function(e) {
         e.workbook.fileName = "Grid.xslx";
     });
-    grid.exportToExcel();
+    grid.saveAsExcel();
     </script>
 
 #### Example - subscribe to the "excelExport" event after initialization
