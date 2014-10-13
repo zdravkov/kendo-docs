@@ -170,14 +170,27 @@ The browser event that triggered the click.
 ### clear
 Clears the drawing surface.
 
+
 ### draw
 Draws the element and its children on the surface.
-Existings elements will remain visible.
+Existing elements will remain visible.
 
 #### Parameters
 
 ##### element `kendo.dataviz.drawing.Element`
 The element to draw.
+
+
+### eventTarget
+Returns the target drawing element of a DOM event.
+
+#### Parameters
+
+##### e `Object`
+The original DOM or jQuery event object.
+
+#### Returns
+`kendo.dataviz.drawing.Element` The target drawing element, if any.
 
 
 ### resize
