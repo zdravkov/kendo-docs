@@ -27,17 +27,27 @@ The configuration options.
 
 ## Class methods
 
-### fromRect
-
-Constructs a path from the given rectangle.
+### fromPoints
+Create a straight path from the given points.
 
 #### Parameters
-
-##### rect `kendo.dataviz.geometry.Rect`
-The source rectangle.
+##### points `Array`
+Array of [kendo.dataviz.geometry.Point](../geometry/point) objects or [x, y] arrays.
 
 #### Returns
-`kendo.dataviz.drawing.Path` A path enclosing the supplied rectangle.
+`kendo.dataviz.drawing.Path` The newly constructed path.
+
+
+### fromRect
+Create a straight path from the given rectangle.
+
+#### Parameters
+##### rect `kendo.dataviz.geometry.Rect`
+The source rectangle to trace.
+
+#### Returns
+`kendo.dataviz.drawing.Path` The newly constructed path.
+
 
 ### parse
 
