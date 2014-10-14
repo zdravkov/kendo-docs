@@ -3,14 +3,14 @@ title: Circle
 page_title: API reference for Kendo UI Drawing API Circle
 ---
 
-# kendo.dataviz.drawing.Circle : kendo.dataviz.drawing.Element
+# kendo.drawing.Circle : kendo.drawing.Element
 Draws a circle with set geometry, fill and stroke.
 
 #### Example - creating a circle
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var circleGeometry = new geom.Circle([100, 100], 20);
         var circle = new draw.Circle(circleGeometry).stroke("red", 1);
@@ -21,7 +21,7 @@ Draws a circle with set geometry, fill and stroke.
 
 ## Constructor Parameters
 
-### geometry `kendo.dataviz.geometry.Circle`
+### geometry `kendo.geometry.Circle`
 The geometric object that defines the circle center and radius.
 
 ### options `Object`
@@ -29,21 +29,21 @@ The configuration options.
 
 ## Configuration
 
-### clip `kendo.dataviz.drawing.Path`
+### clip `kendo.drawing.Path`
 The element clipping path.
 Inherited from [Element.clip](element#configuration-clip)
 
-### fill `kendo.dataviz.drawing.FillOptions`
+### fill `kendo.drawing.FillOptions`
 The fill options of the shape.
 
 ### opacity `Number`
 The element opacity.
 Inherited from [Element.opacity](element#configuration-opacity)
 
-### stroke `kendo.dataviz.drawing.StrokeOptions`
+### stroke `kendo.drawing.StrokeOptions`
 The stroke options of the shape.
 
-### transform `kendo.dataviz.geometry.Transformation`
+### transform `kendo.geometry.Transformation`
 The transformation to apply to this element.
 Inherited from [Element.transform](element#configuration-transform)
 
@@ -58,7 +58,7 @@ Returns the bounding box of the element with transformations applied.
 Inherited from [Element.bbox](element#methods-bbox)
 
 #### Returns
-`kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+`kendo.geometry.Rect` The bounding box of the element with transformations applied.
 
 
 ### clip
@@ -67,11 +67,11 @@ Inherited from [Element.clip](element#methods-clip)
 
 #### Parameters
 
-##### clip `kendo.dataviz.drawing.Path`
+##### clip `kendo.drawing.Path`
 The element clipping path.
 
 #### Returns
-`kendo.dataviz.drawing.Path` The current element clipping path.
+`kendo.drawing.Path` The current element clipping path.
 
 
 ### geometry
@@ -79,11 +79,11 @@ Gets or sets the circle geometry.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Circle`
+##### value `kendo.geometry.Circle`
 The new geometry to use.
 
 #### Returns
-`kendo.dataviz.geometry.Circle` The current circle geometry.
+`kendo.geometry.Circle` The current circle geometry.
 
 
 ### fill
@@ -98,7 +98,7 @@ The [fill color](fill-options#fields-color) to set.
 The [fill opacity](fill-options#fields-opacity) to set.
 
 #### Returns
-`kendo.dataviz.drawing.Circle` The current instance to allow chaining.
+`kendo.drawing.Circle` The current instance to allow chaining.
 
 
 ### opacity
@@ -131,7 +131,7 @@ The [stroke width](stroke-options#fields-width) to set.
 The [stroke opacity](stroke-options#fields-opacity) to set.
 
 #### Returns
-`kendo.dataviz.drawing.Circle` The current instance to allow chaining.
+`kendo.drawing.Circle` The current instance to allow chaining.
 
 
 ### transform
@@ -140,11 +140,11 @@ Inherited from [Element.transform](element#methods-transform)
 
 #### Parameters
 
-##### transform `kendo.dataviz.geometry.Transformation`
+##### transform `kendo.geometry.Transformation`
 The transformation to apply to the element.
 
 #### Returns
-`kendo.dataviz.geometry.Transformation` The current transformation on the element.
+`kendo.geometry.Transformation` The current transformation on the element.
 
 
 ### visible

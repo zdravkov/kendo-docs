@@ -3,7 +3,7 @@ title: Element
 page_title: API reference for Kendo UI Drawing API Element
 ---
 
-# kendo.dataviz.drawing.Element : kendo.Class
+# kendo.drawing.Element : kendo.Class
 An abstract base class representing common members of all drawing elements.
 
 ## Constructor Parameters
@@ -13,7 +13,7 @@ The configuration of this Group.
 
 ## Configuration
 
-### clip `kendo.dataviz.drawing.Path`
+### clip `kendo.drawing.Path`
 The clipping path for this element.
 
 The path instance will be monitored for changes.
@@ -24,8 +24,8 @@ It can be replaced by calling the [clip](#methods-clip) method.
 #### Example - setting clipping path on an element
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var clipPath = new draw.Path();
         clipPath.moveTo(0, 0).lineTo(100, 100).lineTo(100, 0).close();
@@ -42,7 +42,7 @@ It can be replaced by calling the [clip](#methods-clip) method.
 ### opacity `Number`
 The element opacity.
 
-### transform `kendo.dataviz.geometry.Transformation`
+### transform `kendo.geometry.Transformation`
 The transformation to apply to this element.
 
 ### visible `Boolean`
@@ -50,7 +50,7 @@ A flag, indicating if the element is visible.
 
 ## Fields
 
-### options `kendo.dataviz.drawing.OptionsStore`
+### options `kendo.drawing.OptionsStore`
 The configuration options of the drawing element.
 
 ## Methods
@@ -59,7 +59,7 @@ The configuration options of the drawing element.
 Returns the bounding box of the element with transformations applied.
 
 #### Returns
-`kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+`kendo.geometry.Rect` The bounding box of the element with transformations applied.
 
 
 ### clip
@@ -70,8 +70,8 @@ Gets or sets the element clipping path.
 #### Example - setting clipping path on an element
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var circle = new draw.Circle(new geom.Circle([100, 100], 80), {
             stroke: { color: "red", width: 1 }
@@ -89,8 +89,8 @@ Gets or sets the element clipping path.
 #### Example - clear clipping path
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var clipPath = new draw.Path();
         clipPath.moveTo(0, 0).lineTo(100, 100).lineTo(100, 0).close();
@@ -110,11 +110,11 @@ Gets or sets the element clipping path.
 
 #### Parameters
 
-##### clip `kendo.dataviz.drawing.Path`
+##### clip `kendo.drawing.Path`
 The element clipping path.
 
 #### Returns
-`kendo.dataviz.drawing.Path` The current element clipping path.
+`kendo.drawing.Path` The current element clipping path.
 
 
 ### opacity
@@ -123,7 +123,7 @@ Gets or sets the element opacity.
 #### Example - setting transformation on an element
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
 
         var path = new draw.Path();
         path.moveTo(0, 0).lineTo(100, 100);
@@ -148,8 +148,8 @@ Gets or sets the transformation of the element.
 #### Example - setting transformation on an element
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var path = new draw.Path();
         path.moveTo(0, 0).lineTo(100, 100);
@@ -162,11 +162,11 @@ Gets or sets the transformation of the element.
 
 #### Parameters
 
-##### transform `kendo.dataviz.geometry.Transformation`
+##### transform `kendo.geometry.Transformation`
 The transformation to apply to the element.
 
 #### Returns
-`kendo.dataviz.geometry.Transformation` The current transformation on the element.
+`kendo.geometry.Transformation` The current transformation on the element.
 
 
 ### visible

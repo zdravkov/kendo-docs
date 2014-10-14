@@ -3,7 +3,7 @@ title: Segment
 page_title: API reference for Kendo UI Drawing API Segment
 ---
 
-# kendo.dataviz.drawing.Segment : kendo.Class
+# kendo.drawing.Segment : kendo.Class
 Defines a path segment with an anchor point and optional curve control points.
 
 Segments are created implicitly by the [Path](path) lineTo and curveTo commands.
@@ -11,7 +11,7 @@ Segments are created implicitly by the [Path](path) lineTo and curveTo commands.
 #### Example - accessing path segments
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
 
         var path = new draw.Path()
             .moveTo(100, 100)  // Creates segment #0
@@ -27,15 +27,15 @@ Segments are created implicitly by the [Path](path) lineTo and curveTo commands.
 
 ## Constructor Parameters
 
-### anchor `kendo.dataviz.geometry.Point`
+### anchor `kendo.geometry.Point`
 The anchor point of this segment.
 
 If no control points are defined the path will pass through this point.
 
-### controlIn `kendo.dataviz.geometry.Point` *optional*
+### controlIn `kendo.geometry.Point` *optional*
 The first curve control point of this segment, if any.
 
-### controlOut `kendo.dataviz.geometry.Point` *optional*
+### controlOut `kendo.geometry.Point` *optional*
 The second curve control point of this segment, if any.
 
 ## Methods
@@ -47,11 +47,11 @@ The setter returns the current Segment to allow chaining.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Point`
+##### value `kendo.geometry.Point`
 The new anchor point.
 
 #### Returns
-`kendo.dataviz.geometry.Point` The current anchor point.
+`kendo.geometry.Point` The current anchor point.
 
 
 ### controlIn
@@ -61,11 +61,11 @@ The setter returns the current Segment to allow chaining.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Point`
+##### value `kendo.geometry.Point`
 The new control point.
 
 #### Returns
-`kendo.dataviz.geometry.Point` The current control point.
+`kendo.geometry.Point` The current control point.
 
 
 ### controlOut
@@ -75,9 +75,9 @@ The setter returns the current Segment to allow chaining.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Point`
+##### value `kendo.geometry.Point`
 The new control point.
 
 #### Returns
-`kendo.dataviz.geometry.Point` The current control point.
+`kendo.geometry.Point` The current control point.
 

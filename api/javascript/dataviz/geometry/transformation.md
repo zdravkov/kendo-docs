@@ -1,24 +1,24 @@
 ---
 title: Transformation
-page_title: API reference for methods and fields of Kendo UI DataViz Geometry Transformation
+page_title: API reference for methods and fields of Kendo UI Geometry Transformation
 ---
 
-# kendo.dataviz.geometry.Transformation
+# kendo.geometry.Transformation
 
 An utility class for building transformation matrices.
 
 ## Example - Creating a transformation
         <script>
-            var geo = kendo.dataviz.geometry;
-            var tr = new geo.Transformation();
+            var geom = kendo.geometry;
+            var tr = new geom.Transformation();
             tr.translate(10, 20);
             tr.scale(1, 1.5);
         </script>
 
 ## Example - Creating a transformation (short syntax)
         <script>
-            var geo = kendo.dataviz.geometry;
-            var tr = geo.transform().translate(10, 20).scale(1, 1.5);
+            var geom = kendo.geometry;
+            var tr = geom.transform().translate(10, 20).scale(1, 1.5);
         </script>
 
 ## Methods
@@ -29,7 +29,7 @@ Creates a new instance with the same transformation matrix.
 
 #### Returns
 
-`kendo.dataviz.geometry.Transformation` A new Transformation instance with the same matrix.
+`kendo.geometry.Transformation` A new Transformation instance with the same matrix.
 
 
 ### equals
@@ -38,7 +38,7 @@ Compares this transformation with another instance.
 
 #### Parameters
 
-##### other `kendo.dataviz.geometry.Transformation`
+##### other `kendo.geometry.Transformation`
 
 The transformation to compare with.
 
@@ -53,7 +53,7 @@ Gets the current transformation matrix for this transformation.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` The current transformation matrix.
+`kendo.geometry.Matrix` The current transformation matrix.
 
 
 ### multiply
@@ -63,13 +63,13 @@ The underlying transformation matrix is updated in-place.
 
 #### Parameters
 
-##### transformation `kendo.dataviz.geometry.Transformation`
+##### transformation `kendo.geometry.Transformation`
 
 The transformation to multiply by.
 
 #### Returns
 
-`kendo.dataviz.geometry.Transformation` The current transformation instance.
+`kendo.geometry.Transformation` The current transformation instance.
 
 
 ### rotate
@@ -94,7 +94,7 @@ The center of rotation on the Y axis.
 
 #### Returns
 
-`kendo.dataviz.geometry.Transformation` The current transformation instance.
+`kendo.geometry.Transformation` The current transformation instance.
 
 
 ### scale
@@ -113,7 +113,7 @@ The scale factor on the Y axis.
 
 #### Returns
 
-`kendo.dataviz.geometry.Transformation` The current transformation instance.
+`kendo.geometry.Transformation` The current transformation instance.
 
 
 ### translate
@@ -132,6 +132,6 @@ The distance to translate along the Y axis.
 
 #### Returns
 
-`kendo.dataviz.geometry.Transformation` The current transformation instance.
+`kendo.geometry.Transformation` The current transformation instance.
 
 

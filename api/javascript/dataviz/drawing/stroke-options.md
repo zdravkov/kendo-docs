@@ -3,7 +3,7 @@ title: StrokeOptions
 page_title: API reference for Kendo UI Drawing API Stroke options
 ---
 
-# kendo.dataviz.drawing.StrokeOptions
+# kendo.drawing.StrokeOptions
 Shape stroke configuration options.
 
 ## Fields

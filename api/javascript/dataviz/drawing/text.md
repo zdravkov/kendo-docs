@@ -1,16 +1,16 @@
 ---
 title: Text
-page_title: API reference for methods and fields of Kendo UI DataViz Drawing Text
+page_title: API reference for methods and fields of Kendo UI Drawing Text
 ---
 
-# kendo.dataviz.drawing.Text : kendo.dataviz.drawing.Element
+# kendo.drawing.Text : kendo.drawing.Element
 Draws a single line of text at the given position.
 
 #### Example - creating a text
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var position = new geom.Point(10, 10);
         var text = new draw.Text("Foo", position);
@@ -24,7 +24,7 @@ Draws a single line of text at the given position.
 ### content `String`
 The content of the text. Special characters are not supported.
 
-### position `kendo.dataviz.geometry.Point`
+### position `kendo.geometry.Point`
 The position of the text upper left corner.
 
 ### options `Object`
@@ -32,21 +32,21 @@ The configuration options.
 
 ## Configuration
 
-### clip `kendo.dataviz.drawing.Path`
+### clip `kendo.drawing.Path`
 The element clipping path.
 Inherited from [Element.clip](element#configuration-clip)
 
-### fill `kendo.dataviz.drawing.FillOptions`
+### fill `kendo.drawing.FillOptions`
 The fill options of the text.
 
 ### opacity `Number`
 The element opacity.
 Inherited from [Element.opacity](element#configuration-opacity)
 
-### stroke `kendo.dataviz.drawing.StrokeOptions`
+### stroke `kendo.drawing.StrokeOptions`
 The stroke options of the text.
 
-### transform `kendo.dataviz.geometry.Transformation`
+### transform `kendo.geometry.Transformation`
 The transformation to apply to this element.
 Inherited from [Element.transform](element#configuration-transform)
 
@@ -61,7 +61,7 @@ Returns the bounding box of the element with transformations applied.
 Inherited from [Element.bbox](element#methods-bbox)
 
 #### Returns
-`kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+`kendo.geometry.Rect` The bounding box of the element with transformations applied.
 
 
 ### clip
@@ -70,11 +70,11 @@ Inherited from [Element.clip](element#methods-clip)
 
 #### Parameters
 
-##### clip `kendo.dataviz.drawing.Path`
+##### clip `kendo.drawing.Path`
 The element clipping path.
 
 #### Returns
-`kendo.dataviz.drawing.Path` The current element clipping path.
+`kendo.drawing.Path` The current element clipping path.
 
 
 ### content
@@ -83,8 +83,8 @@ Gets or sets the text content.
 #### Example - change content
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var position = new geom.Point(10, 10);
         var text = new draw.Text("", position);
@@ -118,7 +118,7 @@ The [fill color](fill-options#fields-color) to set.
 The [fill opacity](fill-options#fields-opacity) to set.
 
 #### Returns
-`kendo.dataviz.drawing.Text` The current instance to allow chaining.
+`kendo.drawing.Text` The current instance to allow chaining.
 
 
 ### opacity
@@ -142,8 +142,8 @@ Gets or sets the position of the text upper left corner.
 #### Example - change position
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var position = new geom.Point(10, 10);
         var text = new draw.Text("Foo", position);
@@ -158,11 +158,11 @@ Gets or sets the position of the text upper left corner.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Point`
+##### value `kendo.geometry.Point`
 The new position of the text upper left corner.
 
 #### Returns
-`kendo.dataviz.geometry.Point` The current position of the text upper left corner.
+`kendo.geometry.Point` The current position of the text upper left corner.
 
 
 ### stroke
@@ -180,7 +180,7 @@ The [stroke width](stroke-options#fields-width) to set.
 The [stroke opacity](stroke-options#fields-opacity) to set.
 
 #### Returns
-`kendo.dataviz.drawing.Text` The current instance to allow chaining.
+`kendo.drawing.Text` The current instance to allow chaining.
 
 
 ### transform
@@ -189,11 +189,11 @@ Inherited from [Element.transform](element#methods-transform)
 
 #### Parameters
 
-##### transform `kendo.dataviz.geometry.Transformation`
+##### transform `kendo.geometry.Transformation`
 The transformation to apply to the element.
 
 #### Returns
-`kendo.dataviz.geometry.Transformation` The current transformation on the element.
+`kendo.geometry.Transformation` The current transformation on the element.
 
 
 ### visible

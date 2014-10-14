@@ -3,14 +3,14 @@ title: Image
 page_title: API reference for Kendo UI Drawing API Image
 ---
 
-# kendo.dataviz.drawing.Image : kendo.dataviz.drawing.Element
+# kendo.drawing.Image : kendo.drawing.Element
 Draws a bitmap image with a given source URL into the specified [rectangle](../geometry/rect).
 
 #### Example - draw an image
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var rect = new geom.Rect(
             [10, 10],  // Position of the top left corner
@@ -27,12 +27,12 @@ Draws a bitmap image with a given source URL into the specified [rectangle](../g
 ### src `String`
 The source URL of the image.
 
-### rect `kendo.dataviz.geometry.Rect`
+### rect `kendo.geometry.Rect`
 A rectange defining the position and size of the image.
 
 ## Configuration
 
-### clip `kendo.dataviz.drawing.Path`
+### clip `kendo.drawing.Path`
 The element clipping path.
 Inherited from [Element.clip](element#configuration-clip)
 
@@ -40,7 +40,7 @@ Inherited from [Element.clip](element#configuration-clip)
 The element opacity.
 Inherited from [Element.opacity](element#configuration-opacity)
 
-### transform `kendo.dataviz.geometry.Transformation`
+### transform `kendo.geometry.Transformation`
 The transformation to apply to this element.
 Inherited from [Element.transform](element#configuration-transform)
 
@@ -55,7 +55,7 @@ Returns the bounding box of the element with transformations applied.
 Inherited from [Element.bbox](element#methods-bbox)
 
 #### Returns
-`kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+`kendo.geometry.Rect` The bounding box of the element with transformations applied.
 
 
 ### clip
@@ -64,11 +64,11 @@ Inherited from [Element.clip](element#methods-clip)
 
 #### Parameters
 
-##### clip `kendo.dataviz.drawing.Path`
+##### clip `kendo.drawing.Path`
 The element clipping path.
 
 #### Returns
-`kendo.dataviz.drawing.Path` The current element clipping path.
+`kendo.drawing.Path` The current element clipping path.
 
 
 ### opacity
@@ -90,8 +90,8 @@ Gets or sets the image source URL.
 #### Example - changing the image source
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var rect = new geom.Rect(
             [10, 10],  // Position of the top left corner
@@ -122,8 +122,8 @@ Gets or sets the rectangle defines the image position and size.
 #### Example - resizing the image
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var rect = new geom.Rect(
             [10, 10],  // Position of the top left corner
@@ -141,11 +141,11 @@ Gets or sets the rectangle defines the image position and size.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Rect`
+##### value `kendo.geometry.Rect`
 The new image rectangle.
 
 #### Returns
-`kendo.dataviz.geometry.Rect` The current image rectangle.
+`kendo.geometry.Rect` The current image rectangle.
 
 
 ### transform
@@ -154,11 +154,11 @@ Inherited from [Element.transform](element#methods-transform)
 
 #### Parameters
 
-##### transform `kendo.dataviz.geometry.Transformation`
+##### transform `kendo.geometry.Transformation`
 The transformation to apply to the element.
 
 #### Returns
-`kendo.dataviz.geometry.Transformation` The current transformation on the element.
+`kendo.geometry.Transformation` The current transformation on the element.
 
 
 ### visible

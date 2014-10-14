@@ -1,9 +1,9 @@
 ---
 title: Matrix
-page_title: API reference for methods and fields of Kendo UI DataViz Geometry Matrix
+page_title: API reference for methods and fields of Kendo UI Geometry Matrix
 ---
 
-# kendo.dataviz.geometry.Matrix
+# kendo.geometry.Matrix
 
 Represents a 3x3 transformation matrix in the following form:
 
@@ -15,8 +15,8 @@ Represents a 3x3 transformation matrix in the following form:
 
 ## Example - Creating a transformation matrix
         <script>
-            var geo = kendo.dataviz.geometry;
-            var mx = new geo.Matrix(1, 0, 0, 1, 0, 0);
+            var geom = kendo.geometry;
+            var mx = new geom.Matrix(1, 0, 0, 1, 0, 0);
         </script>
 
 ## Fields
@@ -75,7 +75,7 @@ The center of rotation on the Y axis.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` The transformation matrix for the specified rotation.
+`kendo.geometry.Matrix` The transformation matrix for the specified rotation.
 
 
 ### scale
@@ -94,7 +94,7 @@ The scale factor on the Y axis.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` The transformation matrix for the specified scale.
+`kendo.geometry.Matrix` The transformation matrix for the specified scale.
 
 
 ### translate
@@ -113,7 +113,7 @@ The distance to translate along the Y axis.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` The transformation matrix for the specified translation.
+`kendo.geometry.Matrix` The transformation matrix for the specified translation.
 
 
 ### unit
@@ -122,7 +122,7 @@ Returns the unit (identity) transformation matrix.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` The unit (identity) matrix.
+`kendo.geometry.Matrix` The unit (identity) matrix.
 
 
 ## Methods
@@ -133,7 +133,7 @@ Creates a new instance with the same element values.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` A new Matrix instance with the same element values.
+`kendo.geometry.Matrix` A new Matrix instance with the same element values.
 
 
 ### equals
@@ -142,7 +142,7 @@ Compares this matrix with another instance.
 
 #### Parameters
 
-##### other `kendo.dataviz.geometry.Matrix`
+##### other `kendo.geometry.Matrix`
 
 The matrix instance to compare with.
 
@@ -163,7 +163,7 @@ Number of fractional digits.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` The current matrix instance.
+`kendo.geometry.Matrix` The current matrix instance.
 
 
 ### multiplyCopy
@@ -173,13 +173,13 @@ The current instance elements are not altered.
 
 #### Parameters
 
-##### matrix `kendo.dataviz.geometry.Matrix`
+##### matrix `kendo.geometry.Matrix`
 
 The matrix to multiply by.
 
 #### Returns
 
-`kendo.dataviz.geometry.Matrix` The result of the multiplication.
+`kendo.geometry.Matrix` The result of the multiplication.
 
 
 ### toArray

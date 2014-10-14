@@ -3,12 +3,12 @@ title: OptionsStore
 page_title: API reference for Kendo UI Drawing API Options Store
 ---
 
-# kendo.dataviz.drawing.OptionsStore : kendo.Class
+# kendo.drawing.OptionsStore : kendo.Class
 Stores nested settings and notifies an (optional) observer of changes.
 
 ###### Example - initializing an options store
     <script>
-        var options = new kendo.dataviz.drawing.OptionsStore({
+        var options = new kendo.drawing.OptionsStore({
             foo: {
                 bar: true
             }
@@ -37,7 +37,7 @@ Gets the value of the specified option.
 
 #### Example - retrieving an option value
     <script>
-        var options = new kendo.dataviz.drawing.OptionsStore({
+        var options = new kendo.drawing.OptionsStore({
             foo: {
                 bar: true
             }
@@ -64,7 +64,7 @@ Sets the value of the specified option.
 
 #### Example - retrieving an option value
     <script>
-        var options = new kendo.dataviz.drawing.OptionsStore({
+        var options = new kendo.drawing.OptionsStore({
             foo: {
                 bar: true
             }

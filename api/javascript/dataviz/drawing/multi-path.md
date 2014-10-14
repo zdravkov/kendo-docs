@@ -3,7 +3,7 @@ title: MultiPath
 page_title: API reference for methods and fields of Kendo UI DataViz Drawing MultiPath
 ---
 
-# kendo.dataviz.drawing.MultiPath : kendo.dataviz.drawing.Element
+# kendo.drawing.MultiPath : kendo.drawing.Element
 Draws a composite path consisting of multiple sub-paths.
 Using composite paths is more efficient than drawing the paths individually.
 
@@ -13,7 +13,7 @@ but each moveTo command starts a new sub-path.
 #### Example - drawng a multi-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
 
         var multiPath = new draw.MultiPath()
             .moveTo(100, 200).curveTo([100, 100], [250, 100], [250, 200]).close()
@@ -30,21 +30,21 @@ The configuration options.
 
 ## Configuration
 
-### clip `kendo.dataviz.drawing.Path`
+### clip `kendo.drawing.Path`
 The element clipping path.
 Inherited from [Element.clip](element#configuration-clip)
 
-### fill `kendo.dataviz.drawing.FillOptions`
+### fill `kendo.drawing.FillOptions`
 The fill options of the shape.
 
 ### opacity `Number`
 The element opacity.
 Inherited from [Element.opacity](element#configuration-opacity)
 
-### stroke `kendo.dataviz.drawing.StrokeOptions`
+### stroke `kendo.drawing.StrokeOptions`
 The stroke options of the shape.
 
-### transform `kendo.dataviz.geometry.Transformation`
+### transform `kendo.geometry.Transformation`
 The transformation to apply to this element.
 Inherited from [Element.transform](element#configuration-transform)
 
@@ -64,7 +64,7 @@ Returns the bounding box of the element with transformations applied.
 Inherited from [Element.bbox](element#methods-bbox)
 
 #### Returns
-`kendo.dataviz.geometry.Rect` The bounding box of the element with transformations applied.
+`kendo.geometry.Rect` The bounding box of the element with transformations applied.
 
 
 ### clip
@@ -73,11 +73,11 @@ Inherited from [Element.clip](element#methods-clip)
 
 #### Parameters
 
-##### clip `kendo.dataviz.drawing.Path`
+##### clip `kendo.drawing.Path`
 The element clipping path.
 
 #### Returns
-`kendo.dataviz.drawing.Path` The current element clipping path.
+`kendo.drawing.Path` The current element clipping path.
 
 
 ### close
@@ -86,7 +86,7 @@ Closes the current sub-path by linking its current end point with its start poin
 #### Example - Draw a closed sub-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
 
         var multiPath = new draw.MultiPath()
             .moveTo(100, 200).curveTo([100, 100], [250, 100], [250, 200]);
@@ -103,7 +103,7 @@ Closes the current sub-path by linking its current end point with its start poin
     </script>
 
 #### Returns
-`kendo.dataviz.drawing.MultiPath` The current instance to allow chaining.
+`kendo.drawing.MultiPath` The current instance to allow chaining.
 
 
 ### curveTo
@@ -114,7 +114,7 @@ A quadratic Bézier curve (with one control point) can be plotted by making the 
 #### Example - Draw a curved sub-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
 
         var multiPath = new draw.MultiPath()
             .moveTo(100, 200).curveTo([100, 100], [250, 100], [250, 200]).close()
@@ -126,14 +126,14 @@ A quadratic Bézier curve (with one control point) can be plotted by making the 
 
 #### Parameters
 
-##### controlOut `Array|kendo.dataviz.geometry.Point`
+##### controlOut `Array|kendo.geometry.Point`
 The first control point for the curve.
 
-##### controlIn `Array|kendo.dataviz.geometry.Point`
+##### controlIn `Array|kendo.geometry.Point`
 The second control point for the curve.
 
 #### Returns
-`kendo.dataviz.drawing.MultiPath` The current instance to allow chaining.
+`kendo.drawing.MultiPath` The current instance to allow chaining.
 
 
 ### fill
@@ -148,7 +148,7 @@ The [fill color](fill-options#fields-color) to set.
 The [fill opacity](fill-options#fields-opacity) to set.
 
 #### Returns
-`kendo.dataviz.drawing.MultiPath` The current instance to allow chaining.
+`kendo.drawing.MultiPath` The current instance to allow chaining.
 
 
 ### lineTo
@@ -157,8 +157,8 @@ Draws a straight line to the specified absolute coordinates.
 #### Example - Draw a straight sub-path
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var multiPath = new draw.MultiPath()
             .moveTo(100, 200);
@@ -176,7 +176,7 @@ Draws a straight line to the specified absolute coordinates.
 
 #### Parameters
 
-##### x `Number|Array|kendo.dataviz.geometry.Point`
+##### x `Number|Array|kendo.geometry.Point`
 The line end X coordinate or a Point/Array with X and Y coordinates.
 
 ##### y `Number` *optional*
@@ -185,7 +185,7 @@ The line end Y coordinate.
 Optional if the first parameter is a Point/Array.
 
 #### Returns
-`kendo.dataviz.drawing.MultiPath` The current instance to allow chaining.
+`kendo.drawing.MultiPath` The current instance to allow chaining.
 
 
 ### moveTo
@@ -194,8 +194,8 @@ Creates a new sub-path or clears all segments and moves the starting point to th
 #### Example - Set the sub-path start coordinates
     <div id="surface" style="width: 250px; height: 250px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
-        var geom = kendo.dataviz.geometry;
+        var draw = kendo.drawing;
+        var geom = kendo.geometry;
 
         var multiPath = new draw.MultiPath();
 
@@ -213,7 +213,7 @@ Creates a new sub-path or clears all segments and moves the starting point to th
 
 #### Parameters
 
-##### x `Number|Array|kendo.dataviz.geometry.Point`
+##### x `Number|Array|kendo.geometry.Point`
 The starting X coordinate or a Point/Array with X and Y coordinates.
 
 ##### y `Number` *optional*
@@ -222,7 +222,7 @@ The starting Y coordinate.
 Optional if the first parameter is a Point/Array.
 
 #### Returns
-`kendo.dataviz.drawing.MultiPath` The current instance to allow chaining.
+`kendo.drawing.MultiPath` The current instance to allow chaining.
 
 
 ### opacity
@@ -255,7 +255,7 @@ The [stroke width](stroke-options#fields-width) to set.
 The [stroke opacity](stroke-options#fields-opacity) to set.
 
 #### Returns
-`kendo.dataviz.drawing.MultiPath` The current instance to allow chaining.
+`kendo.drawing.MultiPath` The current instance to allow chaining.
 
 
 ### transform
@@ -264,11 +264,11 @@ Inherited from [Element.transform](element#methods-transform)
 
 #### Parameters
 
-##### transform `kendo.dataviz.geometry.Transformation`
+##### transform `kendo.geometry.Transformation`
 The transformation to apply to the element.
 
 #### Returns
-`kendo.dataviz.geometry.Transformation` The current transformation on the element.
+`kendo.geometry.Transformation` The current transformation on the element.
 
 
 ### visible

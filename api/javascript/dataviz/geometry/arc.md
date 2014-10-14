@@ -1,17 +1,17 @@
 ---
 title: Arc
-page_title: API reference for methods and fields of Kendo UI DataViz Geometry Arc
+page_title: API reference for methods and fields of Kendo UI Geometry Arc
 ---
 
-# kendo.dataviz.geometry.Arc
+# kendo.geometry.Arc
 
 Represents an arc with set center, direction, angular range and x/y radius.
 
 ## Example - Creating an arc
         <script>
-            var geo = kendo.dataviz.geometry;
+            var geom = kendo.geometry;
             var center = [10, 10];
-            var arc = new geo.Arc(center, {
+            var arc = new geom.Arc(center, {
                 radiusX: 10,
                 radiusY: 5,
                 startAngle: 90,
@@ -28,7 +28,7 @@ A flag indicating if the arc should be drawn in clockwise or anticlockwise direc
 Defaults to clockwise direction.
 
 
-### center `kendo.dataviz.geometry.Point`
+### center `kendo.geometry.Point`
 
 The location of the arc center.
 
@@ -65,13 +65,13 @@ Returns the bounding box of this arc after applying the specified transformation
 
 #### Parameters
 
-##### matrix `kendo.dataviz.geometry.Matrix`
+##### matrix `kendo.geometry.Matrix`
 
 Transformation matrix to apply.
 
 #### Returns
 
-`kendo.dataviz.geometry.Rect` The bounding box after applying the transformation matrix.
+`kendo.geometry.Rect` The bounding box after applying the transformation matrix.
 
 
 ### getAnticlockwise
@@ -89,7 +89,7 @@ Gets the arc center location.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The location of the arc center.
+`kendo.geometry.Point` The location of the arc center.
 
 
 ### getEndAngle
@@ -143,7 +143,7 @@ Negative values or values greater than 360 will be normalized.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The point on the arc's circumference.
+`kendo.geometry.Point` The point on the arc's circumference.
 
 
 ### setAnticlockwise
@@ -158,7 +158,7 @@ The new anticlockwise value.
 
 #### Returns
 
-`kendo.dataviz.geometry.Arc` The current arc instance.
+`kendo.geometry.Arc` The current arc instance.
 
 
 ### setCenter
@@ -167,13 +167,13 @@ Sets the arc center location.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Point`
+##### value `kendo.geometry.Point`
 
 The new arc center.
 
 #### Returns
 
-`kendo.dataviz.geometry.Arc` The current arc instance.
+`kendo.geometry.Arc` The current arc instance.
 
 
 ### setEndAngle
@@ -189,7 +189,7 @@ The new arc end angle.
 
 #### Returns
 
-`kendo.dataviz.geometry.Arc` The current arc instance.
+`kendo.geometry.Arc` The current arc instance.
 
 
 ### setRadiusX
@@ -204,7 +204,7 @@ The new arc x radius.
 
 #### Returns
 
-`kendo.dataviz.geometry.Arc` The current arc instance.
+`kendo.geometry.Arc` The current arc instance.
 
 
 ### setRadiusY
@@ -219,7 +219,7 @@ The new arc y radius.
 
 #### Returns
 
-`kendo.dataviz.geometry.Arc` The current arc instance.
+`kendo.geometry.Arc` The current arc instance.
 
 
 ### setStartAngle
@@ -235,5 +235,5 @@ The new arc atart angle.
 
 #### Returns
 
-`kendo.dataviz.geometry.Arc` The current arc instance.
+`kendo.geometry.Arc` The current arc instance.
 

@@ -3,13 +3,13 @@ title: Group
 page_title: API reference for Kendo UI Drawing API Group
 ---
 
-# kendo.dataviz.drawing.Group : kendo.dataviz.drawing.Element
+# kendo.drawing.Group : kendo.drawing.Element
 Represents a set of drawing elements, possibly including other groups.
 
 #### Example - creating a group
     <div id="surface"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
         var group = new draw.Group();
 
         var pathA = new draw.Path().moveTo(0, 0).lineTo(100, 100);
@@ -28,7 +28,7 @@ The configuration of this Group.
 
 ## Configuration
 
-### clip `kendo.dataviz.drawing.Path`
+### clip `kendo.drawing.Path`
 The group clipping path.
 Inherited from [Element.clip](element#configuration-clip)
 
@@ -38,7 +38,7 @@ Inherited from [Element.opacity](element#configuration-opacity)
 
 The opacity of any child groups and elements will be multiplied by this value.
 
-### transform `kendo.dataviz.geometry.Transformation`
+### transform `kendo.geometry.Transformation`
 The transformation to apply to this group and its children.
 Inherited from [Element.transform](element#configuration-transform)
 
@@ -58,7 +58,7 @@ Appends the specified element as a last child of the group.
 
 #### Parameters
 
-##### element `kendo.dataviz.drawing.Element`
+##### element `kendo.drawing.Element`
 The element to append. Multiple parameters are accepted.
 
 
@@ -72,11 +72,11 @@ Inherited from [Element.clip](element#methods-clip)
 
 #### Parameters
 
-##### clip `kendo.dataviz.drawing.Path`
+##### clip `kendo.drawing.Path`
 The group clipping path.
 
 #### Returns
-`kendo.dataviz.drawing.Path` The current group clipping path.
+`kendo.drawing.Path` The current group clipping path.
 
 
 ### opacity
@@ -99,7 +99,7 @@ Removes the specified element from the group.
 
 #### Parameters
 
-##### element `kendo.dataviz.drawing.Element`
+##### element `kendo.drawing.Element`
 The element to remove.
 
 

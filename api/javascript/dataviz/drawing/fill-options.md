@@ -3,7 +3,7 @@ title: FillOptions
 page_title: API reference for methods and fields of the Fill options
 ---
 
-# kendo.dataviz.drawing.FillOptions
+# kendo.drawing.FillOptions
 Shape fill configuration options.
 
 ## Fields

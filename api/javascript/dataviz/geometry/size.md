@@ -1,16 +1,16 @@
 ---
 title: Size
-page_title: API reference for methods and fields of Kendo UI DataViz Geometry Size
+page_title: API reference for methods and fields of Kendo UI Geometry Size
 ---
 
-# kendo.dataviz.geometry.Size
+# kendo.geometry.Size
 
 Represents the width and height of an entity.
 
 ## Example - Creating a size
         <script>
-            var geo = kendo.dataviz.geometry;
-            var size = new geo.Size(10, 20);
+            var geom = kendo.geometry;
+            var size = new geom.Size(10, 20);
         </script>
 
 ## Fields
@@ -32,7 +32,7 @@ Creates a Size instance from various parameters.
 
 #### Parameters
 
-##### width `Number|Array|kendo.dataviz.geometry.Size`
+##### width `Number|Array|kendo.geometry.Size`
 
 Any of the following values:
 
@@ -46,7 +46,7 @@ The height value. Required only if the first argument is a number.
 
 #### Returns
 
-`kendo.dataviz.geometry.Size` The new or supplied Size instance.
+`kendo.geometry.Size` The new or supplied Size instance.
 
 
 ## Methods
@@ -57,7 +57,7 @@ Creates a new instance with the same width and height.
 
 #### Returns
 
-`kendo.dataviz.geometry.Size` A new Size instance with the same coordinates.
+`kendo.geometry.Size` A new Size instance with the same coordinates.
 
 
 ### equals
@@ -66,7 +66,7 @@ Compares this Size with another instance.
 
 #### Parameters
 
-##### other `kendo.dataviz.geometry.Size`
+##### other `kendo.geometry.Size`
 
 The Size to compare with.
 
@@ -105,7 +105,7 @@ The new width value.
 
 #### Returns
 
-`kendo.dataviz.geometry.Size` The current Size instance.
+`kendo.geometry.Size` The current Size instance.
 
 
 ### setHeight
@@ -120,5 +120,5 @@ The new height value.
 
 #### Returns
 
-`kendo.dataviz.geometry.Size` The current Size instance.
+`kendo.geometry.Size` The current Size instance.
 

@@ -3,7 +3,7 @@ title: Surface
 page_title: API reference for Kendo UI Drawing API Surface
 ---
 
-# kendo.dataviz.drawing.Surface : kendo.Observable
+# kendo.drawing.Surface : kendo.Observable
 An abstract class representing the top-level drawing surface.
 This class can't be instantiated directly.
 
@@ -13,7 +13,7 @@ The implementations for SVG, Canvas and VML inherit from this base class.
 ## Example - Creating a drawing surface
     <div id="container" style="position: relative; width: 600px; height: 400px;"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
         var surface = draw.Surface.create($("#container"));
 
         var path = new draw.Path().fill("red")
@@ -31,7 +31,7 @@ Creates a drawing surface matching the browser capabilities.
 #### Example - Specifying a preferred type and size
     <div id="container"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
         var surface = draw.Surface.create($("#container"), {
             type: "canvas",
             width: "600px",
@@ -53,7 +53,7 @@ The DOM (or jQuery) element that will host the surface.
 The options to pass to the surface.
 
 #### Returns
-`kendo.dataviz.drawing.Surface` An implementation matching the browser capabilities or caller preference; undefined if none is available.
+`kendo.drawing.Surface` An implementation matching the browser capabilities or caller preference; undefined if none is available.
 
 
 ## Configuration
@@ -86,7 +86,7 @@ Triggered when an element has been clicked.
 #### Example - subscribe to the "click" event during initialization
     <div id="container"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
         var surface = draw.Surface.create($("#container"), {
             click: function(e) {
                 console.log("Click");
@@ -101,7 +101,7 @@ Triggered when an element has been clicked.
 
 #### Event Data
 
-##### e.element `kendo.dataviz.drawing.Element`
+##### e.element `kendo.drawing.Element`
 The clicked element.
 
 ##### e.originalEvent `Object`
@@ -115,7 +115,7 @@ Triggered when the mouse is moved over an element.
 #### Example - subscribe to the "mouseenter" event during initialization
     <div id="container"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
         var surface = draw.Surface.create($("#container"), {
             mouseenter: function(e) {
                 console.log("Mouse enter");
@@ -130,7 +130,7 @@ Triggered when the mouse is moved over an element.
 
 #### Event Data
 
-##### e.element `kendo.dataviz.drawing.Element`
+##### e.element `kendo.drawing.Element`
 The target element.
 
 ##### e.originalEvent `Object`
@@ -144,7 +144,7 @@ Triggered when the mouse is leaves an element.
 #### Example - subscribe to the "mouseleave" event during initialization
     <div id="container"></div>
     <script>
-        var draw = kendo.dataviz.drawing;
+        var draw = kendo.drawing;
         var surface = draw.Surface.create($("#container"), {
             mouseleave: function(e) {
                 console.log("Mouse leave");
@@ -159,7 +159,7 @@ Triggered when the mouse is leaves an element.
 
 #### Event Data
 
-##### e.element `kendo.dataviz.drawing.Element`
+##### e.element `kendo.drawing.Element`
 The target element.
 
 ##### e.originalEvent `Object`
@@ -177,7 +177,7 @@ Existing elements will remain visible.
 
 #### Parameters
 
-##### element `kendo.dataviz.drawing.Element`
+##### element `kendo.drawing.Element`
 The element to draw.
 
 
@@ -190,7 +190,7 @@ Returns the target drawing element of a DOM event.
 The original DOM or jQuery event object.
 
 #### Returns
-`kendo.dataviz.drawing.Element` The target drawing element, if any.
+`kendo.drawing.Element` The target drawing element, if any.
 
 
 ### resize

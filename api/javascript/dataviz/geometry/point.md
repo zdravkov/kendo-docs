@@ -1,16 +1,16 @@
 ---
 title: Point
-page_title: API reference for methods and fields of Kendo UI DataViz Geometry Point
+page_title: API reference for methods and fields of Kendo UI Geometry Point
 ---
 
-# kendo.dataviz.geometry.Point
+# kendo.geometry.Point
 
 A point representing a location (x, y) in two-dimensional coordinate space.
 
 ## Example - Creating a point
         <script>
-            var geo = kendo.dataviz.geometry;
-            var point = new geo.Point(10, 20);
+            var geom = kendo.geometry;
+            var point = new geom.Point(10, 20);
         </script>
 
 ## Fields
@@ -32,7 +32,7 @@ Creates a Point instance from various parameters.
 
 #### Parameters
 
-##### x `Number|Array|kendo.dataviz.geometry.Point`
+##### x `Number|Array|kendo.geometry.Point`
 
 Any of the following values:
 
@@ -47,7 +47,7 @@ Required only if the first argument is a number.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The new or supplied Point instance.
+`kendo.geometry.Point` The new or supplied Point instance.
 
 ### min
 
@@ -55,7 +55,7 @@ Returns a new Point with the minimum x and y coordinates of all Point arguments.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` A new Point instance.
+`kendo.geometry.Point` A new Point instance.
 
 
 ### max
@@ -64,7 +64,7 @@ Returns a new Point with the maximum x and y coordinates of all Point arguments.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` A new Point instance.
+`kendo.geometry.Point` A new Point instance.
 
 
 ### minPoint
@@ -73,7 +73,7 @@ Returns a Point with the smallest representable coordinates.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` A new Point instance with minimum coordinates.
+`kendo.geometry.Point` A new Point instance with minimum coordinates.
 
 
 ### maxPoint
@@ -82,7 +82,7 @@ Returns a Point with the largest representable coordinates.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` A new Point instance with maximum coordinates.
+`kendo.geometry.Point` A new Point instance with maximum coordinates.
 
 
 ## Methods
@@ -93,7 +93,7 @@ Creates a new instance with the same coordinates.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` A new Point instance with the same coordinates.
+`kendo.geometry.Point` A new Point instance with the same coordinates.
 
 
 ### distanceTo
@@ -102,7 +102,7 @@ Calculates the distance to another point.
 
 #### Parameters
 
-##### point `kendo.dataviz.geometry.Point`
+##### point `kendo.geometry.Point`
 
 The point to calculate the distance to.
 
@@ -117,7 +117,7 @@ Compares this point with another instance.
 
 #### Parameters
 
-##### other `kendo.dataviz.geometry.Point`
+##### other `kendo.geometry.Point`
 
 The point to compare with.
 
@@ -160,7 +160,7 @@ The new Y coordinate.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current point instance.
+`kendo.geometry.Point` The current point instance.
 
 
 ### rotate
@@ -174,13 +174,13 @@ Rotates the point around the given center.
 Angle in decimal degrees. Measured in clockwise direction with 0 pointing "right".
 Negative values or values greater than 360 will be normalized.
 
-##### center `kendo.dataviz.geometry.Point|Array` *(default: [0, 0])*
+##### center `kendo.geometry.Point|Array` *(default: [0, 0])*
 
 The rotation center. Can be a Point instance or an [x, y] array.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current Point instance.
+`kendo.geometry.Point` The current Point instance.
 
 
 ### round
@@ -195,7 +195,7 @@ Number of fractional digits.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current Point instance.
+`kendo.geometry.Point` The current Point instance.
 
 ### scale
 
@@ -213,7 +213,7 @@ The y scale multiplier.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current point instance.
+`kendo.geometry.Point` The current point instance.
 
 
 ### scaleCopy
@@ -233,7 +233,7 @@ The y scale multiplier.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The new Point instance.
+`kendo.geometry.Point` The new Point instance.
 
 
 ### setX
@@ -248,7 +248,7 @@ The new x coordinate value.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current Point instance.
+`kendo.geometry.Point` The current Point instance.
 
 
 ### setY
@@ -263,7 +263,7 @@ The new y coordinate value.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current Point instance.
+`kendo.geometry.Point` The current Point instance.
 
 
 ### toArray
@@ -307,13 +307,13 @@ The current coordinates will be overriden.
 
 #### Parameters
 
-##### tansformation `kendo.dataviz.geometry.Transformation`
+##### tansformation `kendo.geometry.Transformation`
 
 The transformation to apply.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current Point instance.
+`kendo.geometry.Point` The current Point instance.
 
 
 ### transformCopy
@@ -323,13 +323,13 @@ The callee coordinates will remain unchanged.
 
 #### Parameters
 
-##### tansformation `kendo.dataviz.geometry.Transformation`
+##### tansformation `kendo.geometry.Transformation`
 
 The transformation to apply.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The new Point instance.
+`kendo.geometry.Point` The new Point instance.
 
 
 ### translate
@@ -348,7 +348,7 @@ The distance to move along the Y axis.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current point instance.
+`kendo.geometry.Point` The current point instance.
 
 ### translateWith
 
@@ -356,11 +356,11 @@ Translates the point by using a Point instance as a vector of translation.
 
 #### Parameters
 
-##### vector `kendo.dataviz.geometry.Point|Array`
+##### vector `kendo.geometry.Point|Array`
 
 The vector of translation. Can be either a Point instance or an [x, y] array.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The current point instance.
+`kendo.geometry.Point` The current point instance.
 

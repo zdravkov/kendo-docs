@@ -1,28 +1,28 @@
 ---
 title: Circle
-page_title: API reference for methods and fields of Kendo UI DataViz Geometry Circle
+page_title: API reference for methods and fields of Kendo UI Geometry Circle
 ---
 
-# kendo.dataviz.geometry.Circle
+# kendo.geometry.Circle
 
 A circle with set center and radius.
 
 ## Example - Creating a circle
         <script>
-            var geo = kendo.dataviz.geometry;
-            var center = new geo.Point(10, 10);
-            var rect = new geo.Circle(center, 20);
+            var geom = kendo.geometry;
+            var center = new geom.Point(10, 10);
+            var rect = new geom.Circle(center, 20);
         </script>
 
 ## Example - Creating a circle (short syntax)
         <script>
-            var geo = kendo.dataviz.geometry;
-            var rect = new geo.Circle([10, 10], 20);
+            var geom = kendo.geometry;
+            var rect = new geom.Circle([10, 10], 20);
         </script>
 
 ## Fields
 
-### center `kendo.dataviz.geometry.Point`
+### center `kendo.geometry.Point`
 
 The location of the circle center.
 
@@ -41,13 +41,13 @@ specified transformation matrix.
 
 #### Parameters
 
-##### matrix `kendo.dataviz.geometry.Matrix`
+##### matrix `kendo.geometry.Matrix`
 
 Transformation matrix to apply.
 
 #### Returns
 
-`kendo.dataviz.geometry.Rect` The bounding box after applying the transformation matrix.
+`kendo.geometry.Rect` The bounding box after applying the transformation matrix.
 
 
 ### clone
@@ -56,7 +56,7 @@ Creates a new instance with the same center and radius.
 
 #### Returns
 
-`kendo.dataviz.geometry.Circle` A new Circle instance with the same center and radius.
+`kendo.geometry.Circle` A new Circle instance with the same center and radius.
 
 
 ### equals
@@ -65,7 +65,7 @@ Compares this circle with another instance.
 
 #### Parameters
 
-##### other `kendo.dataviz.geometry.Circle`
+##### other `kendo.geometry.Circle`
 
 The circle to compare with.
 
@@ -80,7 +80,7 @@ Gets the circle center location.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The location of the circle center.
+`kendo.geometry.Point` The location of the circle center.
 
 
 ### getRadius
@@ -105,7 +105,7 @@ Negative values or values greater than 360 will be normalized.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The point on the circle's circumference.
+`kendo.geometry.Point` The point on the circle's circumference.
 
 
 ### setCenter
@@ -114,13 +114,13 @@ Sets the location of the circle center.
 
 #### Parameters
 
-##### value `kendo.dataviz.geometry.Point|Array`
+##### value `kendo.geometry.Point|Array`
 
 The new center Point or equivalent [x, y] array.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The location of the circle center.
+`kendo.geometry.Point` The location of the circle center.
 
 
 ### setRadius
@@ -135,5 +135,5 @@ The new circle radius.
 
 #### Returns
 
-`kendo.dataviz.geometry.Circle` The current circle instance.
+`kendo.geometry.Circle` The current circle instance.
 

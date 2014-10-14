@@ -34,8 +34,8 @@ We'll go into detail in the following sections.
     <div id="surface" style="width: 250px; height: 165px;"></div>
     <script>
         // Import the Drawing API namespaces
-        var geom = kendo.dataviz.geometry;
-        var draw = kendo.dataviz.drawing;
+        var geom = kendo.geometry;
+        var draw = kendo.drawing;
 
         // Create the square border by drawing a straight path
         var path = new draw.Path({
@@ -87,10 +87,10 @@ We'll go into detail in the following sections.
 
 We'll start by importing two name spaces:
 
-    var geom = kendo.dataviz.geometry;
-    var draw = kendo.dataviz.drawing;
+    var geom = kendo.geometry;
+    var draw = kendo.drawing;
 
-The `kendo.dataviz.geometry` namespace contains primitives such as
+The `kendo.geometry` namespace contains primitives such as
 [Point](/api/dataviz/geometry/point),
 [Rect](/api/dataviz/geometry/rect) and
 [Size](/api/dataviz/geometry/size).
@@ -99,7 +99,7 @@ Drawing elements such as
 [Path](/api/dataviz/drawing/path),
 [Image](/api/dataviz/drawing/image) and
 [Group](/api/dataviz/drawing/image)
-live in the `kendo.dataviz.drawing` namespace.
+live in the `kendo.drawing` namespace.
 
 ### Draw the path
 A [Path](/api/dataviz/drawing/path) element is used to

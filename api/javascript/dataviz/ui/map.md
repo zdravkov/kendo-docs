@@ -1745,7 +1745,7 @@ The function must accept an object with the following fields:
 * dataItem - The dataItem used to create the symbol.
 * location - The location of the data point.
 
-The function return value must be a `kendo.dataviz.drawing.Shape`.
+The function return value must be a `kendo.drawing.Shape`.
 
 #### Example - Set default symbol for all bubble layers
     <div id="map"></div>
@@ -2930,7 +2930,7 @@ The function must accept an object with the following fields:
 * dataItem - The dataItem used to create the symbol.
 * location - The location of the data point.
 
-The function return value must be a `kendo.dataviz.drawing.Shape`.
+The function return value must be a `kendo.drawing.Shape`.
 
 #### Example - Set symbol for bubble layer
     <div id="map"></div>
@@ -4722,7 +4722,7 @@ The DOM or jQuery mouse event.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The event coordinates relative to the map element.
+`kendo.geometry.Point` The event coordinates relative to the map element.
 
 #### Example - position elements over widget on click
     <style>
@@ -4767,7 +4767,7 @@ The DOM or jQuery mouse event.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The projected (layer) coordinates that correspond to this mouse event.
+`kendo.geometry.Point` The projected (layer) coordinates that correspond to this mouse event.
 
 #### Example - retrieve projected coordinates
     <div id="map"></div>
@@ -4799,7 +4799,7 @@ The DOM or jQuery mouse event.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The geographic location that correspond to this mouse event.
+`kendo.geometry.Point` The geographic location that correspond to this mouse event.
 
 #### Example - place marker on clicked location
     <div id="map"></div>
@@ -4839,7 +4839,7 @@ The DOM or jQuery mouse event.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The relative (view) coordinates that correspond to this mouse event.
+`kendo.geometry.Point` The relative (view) coordinates that correspond to this mouse event.
 
 #### Example - position elements over map on click
     <style>
@@ -4929,7 +4929,7 @@ Transforms layer (projected) coordinates to geographical location.
 
 #### Parameters
 
-##### point `Array|kendo.dataviz.geometry.Point`
+##### point `Array|kendo.geometry.Point`
 
 The layer (projected) coordinates.
 An array argument is assumed to be in x, y order.
@@ -4960,7 +4960,7 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
         // -180.000000,85.000000
     </script>
 
-#### Example - retrieve location of NW corner (kendo.dataviz.geometry.Point)
+#### Example - retrieve location of NW corner (kendo.geometry.Point)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
         $("#map").kendoMap({
@@ -4973,7 +4973,7 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
         });
 
         var map = $("#map").data("kendoMap");
-        var point = new kendo.dataviz.geometry.Point(0, 0);
+        var point = new kendo.geometry.Point(0, 0);
         var loc = map.layerToLocation(point).round();
         console.log(loc.toString());
         // -180.000000,85.000000
@@ -4996,7 +4996,7 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The layer (projected) coordinates.
+`kendo.geometry.Point` The layer (projected) coordinates.
 
 #### Example - retrieve the projected coordinates of a location (Array)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -5048,7 +5048,7 @@ An array argument is assumed to be in [Latitude, Lonigude] order.
 
 #### Returns
 
-`kendo.dataviz.geometry.Point` The view coordinates that correspond to a geographical location.
+`kendo.geometry.Point` The view coordinates that correspond to a geographical location.
 
 #### Retrieves the view coordinates of the map center (Array)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -5177,7 +5177,7 @@ Returns the geographical location that correspond to the view (relative) coordin
 
 #### Parameters
 
-##### point `Array|kendo.dataviz.geometry.Point`
+##### point `Array|kendo.geometry.Point`
 
 The view coordinates.
 An array argument is assumed to be in x, y order.
@@ -5209,7 +5209,7 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
         // 0.000000,0.000000
     </script>
 
-#### Example - retrieve location corresponding to view center (kendo.dataviz.geometry.Point)
+#### Example - retrieve location corresponding to view center (kendo.geometry.Point)
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
         $("#map").kendoMap({
@@ -5223,7 +5223,7 @@ Optional. Assumed zoom level. Defaults to the current zoom level.
         });
 
         var map = $("#map").data("kendoMap");
-        var view = new kendo.dataviz.geometry.Point(512, 512);
+        var view = new kendo.geometry.Point(512, 512);
         var loc = map.viewToLocation(view).round();
         console.log(loc.toString());
         // 0.000000,0.000000
@@ -5610,7 +5610,7 @@ Fired when a shape is clicked or tapped.
 
 The parent layer instance.
 
-##### e.shape `kendo.dataviz.drawing.Shape`
+##### e.shape `kendo.drawing.Element`
 
 The the shape instance.
 
@@ -5668,7 +5668,7 @@ Fired when a shape is created, but is not rendered yet.
 
 The parent layer instance.
 
-##### e.shape `kendo.dataviz.drawing.Shape`
+##### e.shape `kendo.drawing.Element`
 
 The the shape instance.
 
@@ -5726,7 +5726,7 @@ Fired when the mouse enters a shape.
 
 The parent layer instance.
 
-##### e.shape `kendo.dataviz.drawing.Shape`
+##### e.shape `kendo.drawing.Element`
 
 The the shape instance.
 
@@ -5784,7 +5784,7 @@ Fired when the mouse leaves a shape.
 
 The parent layer instance.
 
-##### e.shape `kendo.dataviz.drawing.Shape`
+##### e.shape `kendo.drawing.Element`
 
 The the shape instance.
 
