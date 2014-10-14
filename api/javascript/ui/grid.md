@@ -2152,7 +2152,7 @@ For more information, please refer to the [Window configuration API](/api/web/wi
 
 ### excel `Object`
 
-Configures the Kendo UI Grid export settings.
+Configures the Kendo UI Grid Excel export settings.
 
 ### excel.allPages `Boolean` *(default: false)*
 
@@ -4518,6 +4518,318 @@ The Tooltip of the ellipsis ("...") button, which appears when the number of pag
     });
     </script>
 
+### pdf `Object`
+
+Configures the Kendo UI Grid PDF export settings.
+
+### pdf.author `String` *(default: null)*
+
+The author of the PDF document.
+
+#### Example - set the author
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            author: "John Doe"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+
+The creator of the PDF document.
+
+#### Example - set the creator
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            creator: "John Doe"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.date `Date`
+
+The date when the PDF document is created. Defaults to `new Date()`.
+
+#### Example - set the date
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            date: new Date("2014/10/10")
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.fileName `String` *(default: "Export.pdf")*
+
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            fileName: "Products.pdf"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.keywords `String` *(default: null)*
+
+Specifies the keywords of the exported PDF file.
+
+#### Example - set the keywords
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            keywords: "northwind products"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.landscape `Boolean` *(default: false)*
+
+Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+
+#### Example - enable landscape mode
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            landscape: true
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.margin `Object`
+
+Specifies the margins of the page (numbers or strings with units). Supported
+units are "mm", "cm", "in" and "pt" (default).
+
+#### Example - set the margins
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            margin: {
+                left: 10,
+                right: "10pt",
+                top: "10mm",
+                bottom: "1in"
+            }
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.margin.bottom `Number|String` *(default: 0)*
+
+The bottom margin. Numbers are considered as "pt" units.
+
+### pdf.margin.left `Number|String` *(default: 0)*
+
+The left margin. Numbers are considered as "pt" units.
+
+### pdf.margin.right `Number|String` *(default: 0)*
+
+The right margin. Numbers are considered as "pt" units.
+
+### pdf.margin.top `Number|String` *(default: 0)*
+
+The top margin. Numbers are considered as "pt" units.
+
+### pdf.paperSize `String|Array` *(default: "auto")*
+
+Specifies the paper size of the PDF document. Can be set to a predefined size, i.e. "A4", "A3" etc,
+or an array of two Number-s specifying the width/height in points (1pt = 1/72in), or strings including unit, i.e. "10mm". Supported
+units are "mm", "cm", "in" and "pt".  The default "auto" means paper size is determined by content.
+
+#### Example - set custom paper size
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            paperSize: ["20mm", "20mm"]
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.proxyURL `String` *(default: null)*
+
+The URL of the server side proxy which will stream the PDF file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
+The developer is responsible for implementing the server-side proxy. Implementation instructions are available here.
+
+#### Example - set the server proxy URL
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            proxyURL: "/save"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.subject `String` *(default: null)*
+
+Sets the subject of the PDF file.
+
+#### Example - set the subject
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            subject: "Products"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
+### pdf.title `String` *(default: null)*
+
+Sets the title of the PDF file.
+
+#### Example - set the title
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            title: "Products"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
 ### reorderable `Boolean` *(default:false)*
 
 If set to `true` the user could reorder the columns by dragging their header cells. By default reordering is disabled.
@@ -5783,6 +6095,33 @@ Initiates the Excel export. Also fires the "excelExport" event.
     });
     </script>
 
+### saveAsPDF
+
+Initiates the PDF export. Also fires the "pdfExport" event.
+
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+
+#### Example - manually initiate PDF export
+
+    <button id="export">Export to PDF</button>
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      dataSource: [
+          { name: "Jane Doe", age: 30 },
+          { name: "John Doe", age: 33 }
+      ],
+    });
+    $("#export").click(function(e) {
+        var grid = $("#grid").data("kendoGrid");
+        grid.saveAsPdf();
+    });
+    </script>
+
 ### saveChanges
 
 Saves any pending changes by calling the [sync](/api/framework/datasource#methods-sync) method.
@@ -6979,7 +7318,59 @@ If invoked the grid will not save the generated file.
     grid.saveAsExcel();
     </script>
 
-#### Example - subscribe to the "excelExport" event after initialization
+### pdfExport
+
+Fired when the user clicks the "Export to PDF" toolbar button.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Grid`
+
+The widget instance which fired the event.
+
+##### e.preventDefault `Function`
+
+If invoked the grid will not save the generated file.
+
+#### Example - subscribe to the "pdfExport" event during initialization
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      toolbar: ["pdf"],
+      columns: [
+        { field: "name" }
+      ],
+      dataSource: [
+        { name: "Jane Doe"},
+        { name: "John Doe"}
+      ],
+      pdfExport: function(e) {
+      }
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.saveAsPdf();
+    </script>
+
+#### Example - subscribe to the "pdfExport" event after initialization
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      toolbar: ["pdf"],
+      columns: [
+        { field: "name" }
+      ],
+      dataSource: [
+        { name: "Jane Doe"},
+        { name: "John Doe"}
+      ]
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.bind("pdfExport", function(e) {
+    });
+    grid.saveAsPdf();
+    </script>
 
 ### filterMenuInit
 
