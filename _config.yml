@@ -94,8 +94,6 @@ navigation:
         title: "LinearGauge"
     "*treemap":
         title: "TreeMap"
-    "*map":
-        title: "Map"
     "*qrcode":
         title: "QRCode"
     "*radialgauge":
@@ -235,6 +233,10 @@ navigation:
     "api/php":
         title: "PHP"
         position: 5
+    "framework/drawing":
+        title: "Drawing API"
+    "framework/geometry":
+        title: "Geometry"
 
 ## The application virtual path
 baseurl: /kendo-ui
