@@ -76,7 +76,7 @@ Parses a path encoded in [SVG Path Data format](http://www.w3.org/TR/SVG/paths.h
 The path encoded in [SVG Path Data format](http://www.w3.org/TR/SVG/paths.html#PathData).
 
 ##### options `Object` *optional*
-The [configuration](/api/dataviz/drawing/path#configuration) options for the path.
+The [configuration](#configuration) options for the path.
 
 #### Returns
 `kendo.drawing.Path` A path matching the supplied SVG data.
