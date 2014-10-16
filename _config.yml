@@ -267,6 +267,7 @@ type_links:
     "Boolean": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"
     "Function": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function"
     "jQuery": "http://api.jquery.com/Types/#jQuery"
+    "Promise": "http://api.jquery.com/Types/#Promise"
     "Object": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
     "Number": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
     "String": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
