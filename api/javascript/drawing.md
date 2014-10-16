@@ -9,6 +9,40 @@ Helper functions declared in the kendo.drawing namespace.
 
 ## Methods
 
+### drawDOM
+Converts the given DOM element to a [Drawing API](/framework/drawing/overview) scene.
+
+The operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+
+The promise will be resolved with the root [Group](drawing/group) of the scene.
+
+#### Parameters
+##### element `Element`
+The root DOM element to draw.
+
+#### Returns
+`Promise` A promise that will be resolved with the root Group of the scene.
+
+#### Example - Exporting a DOM element to an image
+    <div id="calendar"></div>
+    <script>
+        $("#calendar").kendoCalendar();
+
+        var draw = kendo.drawing;
+
+        draw.drawDOM($("#calendar"))
+        .then(function(root) {
+            return draw.exportImage(root);
+        })
+        .done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "calendar.png"
+            });
+        });
+    </script>
+
+
 ### exportImage
 Exports a group of drawing elements as an image.
 
@@ -25,11 +59,11 @@ The root group containing all elements to export.
 ##### options `Object`
 Parameters for the exported image.
 
-##### options.width `String` *(default: "800px")*
-The width of the exported image.
+##### options.width `String`
+The width of the exported image. Defaults to the scene width.
 
-##### options.height `String` *(default: "600px")*
-The height of the exported image.
+##### options.height `String`
+The height of the exported image. Defaults to the scene height.
 
 #### Returns
 `Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
