@@ -419,6 +419,34 @@ Finds all Kendo widgets that are children of the specified element and calls the
 
 Determines whether the resizing routine should be executed even if the respective widget's outer dimensions have not changed. The parameter will be passed to the [widget's `resize` method](/using-kendo-in-responsive-web-pages#individual-widget-resizing).
 
+### saveAs
+Saves a file with the specified name and content.
+A server "echo" proxy might be required, depending on browser capabilities.
+
+#### Parameters
+##### options `Object`
+Configuration options for the save operation.
+
+##### options.dataURI `String`
+The file contents encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+Base64 encoding is mandatory for binary files.
+
+##### options.fileName `String`
+The desired file name.
+
+##### options.proxyURL `String` *(optional)*
+The URL of the server side proxy which will stream the file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
+The developer is responsible for implementing the server-side proxy.
+
+#### Example - Saving a text file
+    <script>
+        kendo.saveAs({
+            dataURI: "data:text/plain,Report title and text",
+            fileName: "report.txt"
+        });
+    </script>
+
 ### stringify
 
 Converts a JavaScript object to [JSON](http://en.wikipedia.org/wiki/JSON). Uses [JSON.stringify](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/stringify) in browsers that support it.
