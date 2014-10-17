@@ -138,7 +138,7 @@ A separate library, part of the drawing API, allows us to get a `drawing.Group` 
 
 You can draw it from JavaScript with the following call:
 
-    drawing.drawDOM(document.getElementById("drawMe"), function(group){
+    drawing.drawDOM(document.getElementById("drawMe")).then(function(group){
         // here group is a drawing.Group object
 
         // you can now draw it to SVG for example:
