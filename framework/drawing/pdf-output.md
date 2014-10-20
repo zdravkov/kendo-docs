@@ -64,7 +64,7 @@ The following options are currently supported:
 
 - `paperSize` — can be either a paper name (i.e. "A4"), an array of two numbers (paper width and height), or "auto".  By default it's "auto" which means the paper size will be just enough to fit the drawing.  If numbers are specified they are assumed to be in typographic points unit.  A point is 1/72 of an inch.  Strings of the form "297mm" can also be used.  The supported units are: "mm", "cm", "in" and "pt".
 
-- `margin` — paper margins.  Must be an object containing `top`, `left`, `right` and `bottom`, numbers which specify the paper margins.  Again, if numbers are passed they will be assumed to be in points; with strings you can specify units.  When `paperSize` is "auto", the dimensions will be adjusted to include the margin.
+- `margin` — paper margins.  Must be an object containing `top`, `left`, `right` and `bottom`, numbers which specify the paper margins.  Again, if numbers are passed they will be assumed to be in points; with strings you can specify units. When `paperSize` is "auto", the dimensions will be adjusted to include the margin.
 
 - `landscape` — (boolean, default `false`).  If `true` is specified the paper dimensions will be rotated if needed such that the width is the larger edge.
 
@@ -156,17 +156,13 @@ The same note about fonts apply.  If you want the PDF to match the browser layou
 
 ### Known limitations
 
-When generating PDF from a browser element (for example a widget) the output will be at most as good as the browser is able to display it.  For example Internet Explorer 9 does not support CSS `transform` property — so transforms won't be supported by PDF export either.
+- no rendering of shadow DOM
 
-Currently the following are *not supported:*
+- no rendering of list item bullets or numbers (a consequence of not rendering shadow DOM)
 
-- rendering of shadow DOM
+- no CSS box-shadow, text-shadow, gradients
 
-- rendering of list item bullets or numbers (a consequence of not rendering shadow DOM)
-
-- CSS box-shadow or text-shadow
-
-- CSS gradients
+- only `solid` border-style
 
 - the following elements are not rendered: `<iframe>`, `<svg>`.  A `<canvas>` will be rendered as an image, but only if it's “non-tainted” (does not display images from another domain).
 
@@ -177,6 +173,6 @@ Currently the following are *not supported:*
 
 ## Supported browsers
 
-Kendo PDF Generator has been tested in recent versions of Google Chrome, Firefox, Blink-based Opera, Internet Explorer 9 or later.  We use [typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) where available to improve speed (all browsers except IE9).
+Kendo PDF Generator has been tested in recent versions of Chrome, Firefox, Safari, Blink-based Opera, Internet Explorer 9 or later.  We use [typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) where available to improve speed (all browsers except IE9).
 
 Internet Explorer <= 8 is not supported.
