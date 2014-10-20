@@ -2542,7 +2542,7 @@ The event handler function context (available via the this keyword) will be set 
 
 The GanttTask which has been edited.
 
-##### e.value `Object`
+##### e.values `Object`
 
 The GantTask fields being updated with new values.
 
