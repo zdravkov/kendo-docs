@@ -13,6 +13,11 @@ previous_url: /changes-and-backward-compatibility
 
 #### Breaking changes
 
+**DataSource**
+
+The DataSource wraps the data items as `kendo.data.ObservableObject` on demand when paging is enabled (`pageSize` is set). In previous versions all data items were wrapped initially.
+This change will affect people using the private `_data` field of the data source as they will now get items that are not instances of `kendo.data.ObservableObject`. In such cases the `data()` method should be used instead.
+
 **Mobile ListView**
 
 * All text customization configuration options are nested in a `messages` object
