@@ -191,6 +191,80 @@ If set to `true` the user will be able to filter by using the field menu.
     });
     </script>
 
+### sortable `Boolean|Object` *(default: false)*
+
+If set to `true` the user could sort the pivotgrid by clicking the dimension fields. By default sorting is disabled.
+
+Can be set to a JavaScript object which represents the sorting configuration.
+
+#### Example - enable sorting
+
+    <div id="pivotgrid"></div>
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        height: 550,
+        sortable: true,
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### sortable.allowUnsort `Boolean` *(default: false)*
+
+If set to `true` the user can get the pivotgrid in unsorted state by clicking the sorted dimension field.
+
+#### Example - allow unsorting
+
+    <div id="pivotgrid"></div>
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        height: 550,
+        sortable: {
+            allowUnsort: true
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
 ### columnWidth `Number`
 
 The width of the table columns. Value is treated as pixels.
@@ -603,6 +677,8 @@ The text messages displayed in the field menu.
         messages: {
             fieldMenu: {
                 info: "Show items with value that:",
+                sortAscending: "Sort Ascending",
+                sortDescending: "Sort Descending",
                 filterFields: "Fields Filter",
                 filter: "Filter",
                 include: "Include Fields...",
@@ -650,6 +726,86 @@ The text messages displayed in fields filter.
         messages: {
             fieldMenu: {
                 info: "Filter items by field name:"
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.sortAscending `String` *(default: "Sort Ascending")*
+
+The text message displayed for the menu item which performs ascending sort.
+
+#### Example
+
+    <div id="pivotgrid"></div>
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        sortable: true,
+        height: 550,
+        messages: {
+            fieldMenu: {
+              sortAscending: "Sort (asc)"
+            }
+        },
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### messages.fieldMenu.sortDescending `String` *(default: "Sort Descending")*
+
+The text message displayed for the menu item which performs descending sort.
+
+#### Example
+
+    <div id="pivotgrid"></div>
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        sortable: true,
+        height: 550,
+        messages: {
+            fieldMenu: {
+              sortDescending: "Sort (desc)"
             }
         },
         dataSource: {
