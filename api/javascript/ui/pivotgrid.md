@@ -228,18 +228,18 @@ Can be set to a JavaScript object which represents the sorting configuration.
     });
     </script>
 
-### sortable.allowUnsort `Boolean` *(default: false)*
+### sortable.allowUnsort `Boolean` *(default: true)*
 
 If set to `true` the user can get the pivotgrid in unsorted state by clicking the sorted dimension field.
 
-#### Example - allow unsorting
+#### Example - disable unsorting
 
     <div id="pivotgrid"></div>
     <script>
     $("#pivotgrid").kendoPivotGrid({
         height: 550,
         sortable: {
-            allowUnsort: true
+            allowUnsort: false
         },
         dataSource: {
             type: "xmla",
