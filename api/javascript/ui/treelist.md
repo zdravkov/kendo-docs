@@ -1927,6 +1927,7 @@ The widget instance which fired the event.
     </script>
 
 #### Example - get the selected data item(s) when using cell selection
+
     <div id="treeList"></div>
     <script>
         function change(e) {
@@ -1953,4 +1954,83 @@ The widget instance which fired the event.
         });
         var treeList = $("#treeList").data("kendoTreeList");
         treeList.bind("change", change);
+    </script>
+
+### filterMenuInit
+
+Fired when the treelist filter menu is initialized.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing filter menu form element.
+
+##### e.field `String`
+
+The field of the column for which the filter menu is initialized.
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "filterMenuInit" event during initialization
+
+    <div id="treelist"></div>
+    <script>
+        $("#treelist").kendoTreeList({
+          columns: [
+            { field: "name" }
+          ],
+          dataSource: [
+            { name: "Jane Doe"},
+            { name: "John Doe"}
+          ],
+          filterable: true,
+          filterMenuInit: function(e) {
+            if (e.field == "name") {
+              var firstValueDropDown = e.container.find("select:eq(0)").data("kendoDropDownList");
+              firstValueDropDown.value("contains");
+              firstValueDropDown.trigger("change");
+
+              var logicDropDown = e.container.find("select:eq(1)").data("kendoDropDownList");
+              logicDropDown.value("or");
+              logicDropDown.trigger("change");
+
+              var secondValueDropDown = e.container.find("select:eq(2)").data("kendoDropDownList");
+              secondValueDropDown.value("contains");
+              secondValueDropDown.trigger("change");
+            }
+          }
+        });
+    </script>
+
+#### Example - subscribe to the "filterMenuInit" event after initialization
+
+    <div id="treelist"></div>
+    <script>
+        function treelist_filterMenuInit(e) {
+          if (e.field == "name") {
+            var firstValueDropDown = e.container.find("select:eq(0)").data("kendoDropDownList");
+            firstValueDropDown.value("contains");
+            var logicDropDown = e.container.find("select:eq(1)").data("kendoDropDownList");
+            logicDropDown.value("or");
+            var secondValueDropDown = e.container.find("select:eq(2)").data("kendoDropDownList");
+            secondValueDropDown.value("contains");
+          }
+        }
+        $("#treelist").kendoTreeList({
+          columns: [
+            { field: "name" }
+          ],
+          dataSource: [
+            { name: "Jane Doe"},
+            { name: "John Doe"}
+          ],
+          filterable: true
+        });
+        var treelist = $("#treelist").data("kendoTreeList");
+        treelist.bind("filterMenuInit", treelist_filterMenuInit);
     </script>
