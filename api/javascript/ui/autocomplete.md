@@ -829,6 +829,56 @@ The widget instance which fired the event.
     autocomplete.bind("dataBound", autocomplete_dataBound);
     </script>
 
+### filtering
+
+Fired when the widget is about to filter the data source.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.AutoComplete`
+
+The widget instance which fired the event.
+
+##### e.filter `Object`
+
+The filter descriptor that will be used to filter the data source.
+
+> The data source filters the data items client-side unless the [data source serverFiltering](/api/framework/datasource#configuration-serverFiltering) option is set to `true`.
+
+#### Example - subscribe to the "filtering" event during initialization
+
+    <input id="autocomplete" />
+    <script>
+    $("#autocomplete").kendoAutoComplete({
+      dataSource: [ "Apples", "Oranges" ],
+      filtering: function(e) {
+          //get filter descriptor
+          var filter = e.filter;
+
+          // handle the event
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "filtering" event after initialization
+
+    <input id="autocomplete" />
+    <script>
+    function autocomplete_filtering(e) {
+      //get filter descriptor
+      var filter = e.filter;
+
+      // handle the event
+    }
+    $("#autocomplete").kendoAutoComplete({
+      dataSource: [ "Apples", "Oranges" ]
+    });
+    var autocomplete = $("#autocomplete").data("kendoAutoComplete");
+    autocomplete.bind("filtering", autocomplete_filtering);
+    </script>
+
 ### open
 
 Fired when the suggestion popup of the widget is opened by the user.

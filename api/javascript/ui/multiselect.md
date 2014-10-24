@@ -831,7 +831,7 @@ The filter value.
 
 ### setDataSource
 
-Sets the dataSource of an existing DropDownList and rebinds it.
+Sets the dataSource of an existing MultiSelect and rebinds it.
 
 #### Parameters
 
@@ -1056,6 +1056,62 @@ The widget instance which fired the event.
     $("#multiselect").kendoMultiSelect();
     var multiselect = $("#multiselect").data("kendoMultiSelect");
     multiselect.bind("dataBound", multiselect_dataBound);
+    </script>
+
+### filtering
+
+Fired when the widget is about to filter the data source.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.MultiSelect`
+
+The widget instance which fired the event.
+
+##### e.filter `Object`
+
+The filter descriptor that will be used to filter the data source.
+
+> The data source filters the data items client-side unless the [data source serverFiltering](/api/framework/datasource#configuration-serverFiltering) option is set to `true`.
+
+#### Example - subscribe to the "filtering" event during initialization
+
+    <select id="multiselect" multiple="multiple">
+        <option>Item1</option>
+        <option>Item2</option>
+    </select>
+    <script>
+    $("#multiselect").kendoMultiSelect({
+      filter: "startswith",
+      filtering: function(e) {
+          //get filter descriptor
+          var filter = e.filter;
+
+          // handle the event
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "filtering" event after initialization
+
+    <select id="multiselect" multiple="multiple">
+        <option>Item1</option>
+        <option>Item2</option>
+    </select>
+    <script>
+    function multiselect_filtering(e) {
+      //get filter descriptor
+      var filter = e.filter;
+
+      // handle the event
+    }
+    $("#multiselect").kendoMultiSelect({
+      filter: "startswith"
+    });
+    var multiselect = $("#multiselect").data("kendoMultiSelect");
+    multiselect.bind("filtering", multiselect_filtering);
     </script>
 
 ### open

@@ -1142,6 +1142,58 @@ The widget instance which fired the event.
     combobox.bind("dataBound", combobox_dataBound);
     </script>
 
+### filtering
+
+Fired when the widget is about to filter the data source.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.ComboBox`
+
+The widget instance which fired the event.
+
+##### e.filter `Object`
+
+The filter descriptor that will be used to filter the data source.
+
+> The data source filters the data items client-side unless the [data source serverFiltering](/api/framework/datasource#configuration-serverFiltering) option is set to `true`.
+
+#### Example - subscribe to the "filtering" event during initialization
+
+    <input id="combobox" />
+    <script>
+    $("#combobox").kendoComboBox({
+      dataSource: [ "Apples", "Oranges" ],
+      filter: "startswith",
+      filtering: function(e) {
+          //get filter descriptor
+          var filter = e.filter;
+
+          // handle the event
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "filtering" event after initialization
+
+    <input id="combobox" />
+    <script>
+    function combobox_filtering(e) {
+      //get filter descriptor
+      var filter = e.filter;
+
+      // handle the event
+    }
+    $("#combobox").kendoComboBox({
+      dataSource: [ "Apples", "Oranges" ],
+      filter: "startswith"
+    });
+    var combobox = $("#combobox").data("kendoComboBox");
+    combobox.bind("filtering", combobox_filtering);
+    </script>
+
 ### open
 
 Fired when the popup of the widget is opened by the user.

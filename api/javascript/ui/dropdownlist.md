@@ -1171,6 +1171,58 @@ The widget instance which fired the event.
     dropdownlist.bind("dataBound", dropdownlist_dataBound);
     </script>
 
+### filtering
+
+Fired when the widget is about to filter the data source.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.DropDownList`
+
+The widget instance which fired the event.
+
+##### e.filter `Object`
+
+The filter descriptor that will be used to filter the data source.
+
+> The data source filters the data items client-side unless the [data source serverFiltering](/api/framework/datasource#configuration-serverFiltering) option is set to `true`.
+
+#### Example - subscribe to the "filtering" event during initialization
+
+    <input id="dropdownlist" />
+    <script>
+    $("#dropdownlist").kendoDropDownList({
+      dataSource: [ "Apples", "Oranges" ],
+      filter: "startswith",
+      filtering: function(e) {
+          //get filter descriptor
+          var filter = e.filter;
+
+          // handle the event
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "filtering" event after initialization
+
+    <input id="dropdownlist" />
+    <script>
+    function dropdownlist_filtering(e) {
+      //get filter descriptor
+      var filter = e.filter;
+
+      // handle the event
+    }
+    $("#dropdownlist").kendoDropDownList({
+      dataSource: [ "Apples", "Oranges" ],
+      filter: "startswith"
+    });
+    var dropdownlist = $("#dropdownlist").data("kendoDropDownList");
+    dropdownlist.bind("filtering", dropdownlist_filtering);
+    </script>
+
 ### open
 
 Fired when the popup of the widget is opened by the user.
