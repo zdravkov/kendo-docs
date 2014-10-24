@@ -189,16 +189,16 @@ The columns which should be rendered as child columns under this group column he
         {
             title: "Location",
             columns: [
-                { field: "City" },
-                { field: "Country" }
+                { field: "city" },
+                { field: "country" }
             ]
         },
         {
-            field: "Phone"
+            field: "phone"
         }
       ],
       editable: true,
-      dataSource: [ { name: "Jane Doe" } ]
+      dataSource: [ { name: "Jane Doe", birthdate: new Date("1995/05/04"), city: "London", country: "UK", phone: "555-444-333" } ]
     });
     </script>
 
