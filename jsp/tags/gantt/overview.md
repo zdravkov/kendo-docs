@@ -149,8 +149,8 @@ Here is how to configure the Kendo UI Gantt for displaying and editing gantt tas
         </kendo:gantt>
 1. Specify the action methods which will perform the "create", "read", "update" and "destroy" operations for the tasks and dependencies:
 
-        <kendo:scheduler name="scheduler" timezone="Etc/UTC" height="600" date="<%= date %>" startTime="<%= startTime %>">
-            <kendo:dataSource batch="true">
+        <kendo:gantt name="gantt" height="700" showWorkDays="false" showWorkHours="false" snap="false">
+            <kendo:dataSource batch="false">
                  <kendo:dataSource-schema>
                     <kendo:dataSource-schema-model id="id">
                         <kendo:dataSource-schema-model-fields>
@@ -205,7 +205,7 @@ Here is how to configure the Kendo UI Gantt for displaying and editing gantt tas
                     </kendo:dataSource-transport-parameterMap>              
                 </kendo:dataSource-transport>
             </kendo:dependencies>
-        </kendo:scheduler>
+        </kendo:gantt>
 1. Implement the "create_task" method.
 
         @Autowired
@@ -363,42 +363,43 @@ Here is how to configure the Kendo UI Gantt for displaying and editing gantt tas
 
             return deletedDependencies;
         }
-## Getting reference to a Kendo UI Scheduler
 
-To get a reference to a Kendo UI Scheduler instance, use the jQuery `data` and pass "kendoScheduler" as argument.
+## Getting reference to a Kendo UI Gantt
 
-### Example - get reference to a Kendo UI Scheduler
+To get a reference to a Kendo UI Gantt instance, use the jQuery `data` and pass "kendoGantt" as argument.
 
-    <kendo:scheduler name="scheduler">
+### Example - get reference to a Kendo UI Gantt
+
+    <kendo:gantt name="gantt">
         <!-- snip -->
-    </kendo:scheduler>
+    </kendo:gantt>
     <script>
-    // Get reference to the kendo.ui.Scheduler instance
-    var scheduler = $("#scheduler").data("kendoScheduler");
+    // Get reference to the kendo.ui.Gantt instance
+    var gantt = $("#gantt").data("kendoGantt");
     </script>
 
-## Subscribing to the events of Kendo UI Scheduler
+## Subscribing to the events of Kendo UI Gantt
 
-The scheduler widget supports a set of [events](/api/web/scheduler#events) which the developer can subscribe to. All events are exposed as attributes and nested tags of the scheduler JSP tag.
+The gantt widget supports a set of [events](/api/web/gantt#events) which the developer can subscribe to. All events are exposed as attributes and nested tags of the gantt JSP tag.
 
-### Example - handle scheduler events by setting their attributes
-    <kendo:scheduler name="scheduler" dataBound="scheduler_dataBound">
+### Example - handle gantt events by setting their attributes
+    <kendo:gantt name="gantt" dataBound="gantt_dataBound">
         <!-- snip -->
-    </kendo:scheduler>
+    </kendo:gantt>
     <script>
-    function scheduler_dataBound(e) {
+    function gantt_dataBound(e) {
         console.log("dataBound");
     }
     </script>
 
-### Example - handle scheduler events by setting a nested tag
-    <kendo:scheduler name="scheduler">
+### Example - handle gantt events by setting a nested tag
+    <kendo:gantt name="gantt">
         <!-- snip -->
-        <kendo:scheduler-dataBound>
+        <kendo:gantt-dataBound>
             <script>
-            function scheduler_dataBound(e) {
+            function gantt_dataBound(e) {
                 console.log("dataBound");
             }
             </script>
-        </kendo:scheduler-dataBound>
-    </kendo:scheduler>
+        </kendo:gantt-dataBound>
+    </kendo:gantt>
