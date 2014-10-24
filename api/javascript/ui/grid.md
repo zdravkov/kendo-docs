@@ -168,6 +168,40 @@ HTML attributes of the table cell (`<td>`) rendered for the column.
 
 The table cells would look like this: `<td class="table-cell" style="text-align: right; font-size: 14px">...</td>`.
 
+### columns.columns `Array`
+
+The columns which should be rendered as child columns under this group column header.
+
+**Note that group column cannot be data bound and supports limited number of bound column settings - such as title, headerTemplate, locked
+
+#### Example - set column group column for displaying multicolumn headers
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        columns: [
+        {
+            title: "Personal Info",
+            columns: [
+                { field: "name" },
+                { field: "birthdate" }
+            ]
+        },
+        {
+            title: "Location",
+            columns: [
+                { field: "City" },
+                { field: "Country" }
+            ]
+        },
+        {
+            field: "Phone"
+        }
+      ],
+      editable: true,
+      dataSource: [ { name: "Jane Doe" } ]
+    });
+    </script>
+
 ### columns.command `String|Array`
 
 The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit" or "destroy").
@@ -781,9 +815,9 @@ populated at the time the template function is called, if the Grid uses remote b
                                     dataValueField: "color",
                                     valuePrimitive: true
                                 });
-                                
+
                                 // or
-                                
+
                                 // create a ColorPicker
                                 // args.element.kendoColorPicker();
                             },
