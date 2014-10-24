@@ -10,6 +10,560 @@ Represents the Kendo UI TreeList widget. Inherits from [Widget](/api/framework/w
 
 ## Configuration
 
+### columns `Array`
+
+The configuration of the treelist columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
+[field](#configuration-columns.field) to which the column is bound. The treelist will create a column for every item of the array.
+
+#### Example - specify treelist columns as array of strings
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [ "name" ],
+          dataSource: dataSource
+        });
+    </script>
+
+#### Example - specify treelist columns as array of objects
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [
+              { field: "name", title: "Name" }
+          ],
+          dataSource: dataSource
+        });
+    </script>
+
+### columns.command `Array`
+
+The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit", "destroy" or "createchild").
+
+The "edit" built-in command switches the current table row in edit mode.
+
+The "createchild" built-in command adds new child item to the current table row and switches in edit mode.
+
+The "destroy" built-in command removes the data item to which the current table row is bound.
+
+Custom commands are supported by specifying the [click](#configuration-columns.command.click) option.
+
+> The built-in "edit", "destroy" and "createchild" commands work *only* if editing is enabled via the [editable](#configuration-editable) option. The "edit" command supports "inline" and "popup" editing modes.
+
+#### Example - set command as array of strings
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [
+              { field: "name" },
+              { command: ["edit", "destroy"] }
+          ],
+          editable: true,
+          dataSource: dataSource
+        });
+    </script>
+
+#### Example - set command as array of objects
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [
+            { field: "name" },
+            {
+                command: [
+                    {
+                        name: "details",
+                        text: "details",
+                        click: function(e) {
+                            // command button click handler
+                        }
+                    },
+                    { name: "destroy" } // built-in "destroy" command
+                ]
+            }
+          ],
+          editable: true,
+          dataSource: dataSource
+        });
+    </script>
+
+### columns.command.name `String`
+
+The name of the command. The built-in commands are "edit", "createchild" and "destroy". Can be set to a custom value.
+
+#### Example - set the command name
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [
+              { field: "name" },
+              { command: [{ name: "edit" }] }
+          ],
+          editable: true,
+          dataSource: dataSource
+        });
+    </script>
+
+### columns.command.text `String`
+
+The text displayed by the command button. If not set the [name](#configuration-columns.command.name) option is used as the button text.
+
+#### Example - customize the text of the command
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [
+              { field: "name" },
+              { command: [{ name: "edit", text: "Edit current item" }] }
+          ],
+          editable: true,
+          dataSource: dataSource
+        });
+    </script>
+
+### columns.command.className `String`
+
+The CSS class applied to the command button.
+
+#### Example - set the CSS class of the command
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [
+              { field: "name" },
+              { command: [{ name: "edit", className: "btn-edit" }] }
+          ],
+          editable: true,
+          dataSource: dataSource
+        });
+    </script>
+
+### columns.command.click `Function`
+
+The JavaScript function executed when the user clicks the command button. The function receives a [jQuery Event](http://api.jquery.com/category/events/event-object/) as an argument.
+
+The function context (available via the `this` keyword) will be set to the grid instance.
+
+#### Example - handle the click event of the custom command button
+
+    <div id="treeList"></div>
+    <script>
+        var dataSource = new kendo.data.TreeListDataSource({
+          data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+        });
+        $("#treeList").kendoTreeList({
+          columns: [
+              { field: "name" },
+              { command: [ {
+                    name: "details",
+                    text: "details",
+                    click: function(e) {
+                        // e.target is the DOM element representing the button
+                        var tr = $(e.target).closest("tr"); // get the current table row (tr)
+                        // get the data bound to the current table row
+                        var data = this.dataItem(tr);
+                        console.log("Details for: " + data.name);
+                    }
+                  } ]
+              }
+          ],
+          editable: true,
+          dataSource: dataSource
+        });
+    </script>
+
+### columns.editor `Function`
+
+Provides a way to specify a custom editing UI for the column. Use the `container` parameter to create the editing UI.
+
+> The editing UI should contain an element whose `name` HTML attribute is set as the column [field](#configuration-columns.field).
+
+> Validation settings defined in the `model.fields` configuration will **not** be applied automatically. In order the validation to work, **the developer is responsible for attaching the corresponding validation attributes to the editor input**. In case the custom editor is a widget, the developer should [customize the validation warning tooltip position](/framework/validator/overview#customizing-the-tooltip-position) in order to avoid visual issues.
+
+#### Parameters
+
+##### container `jQuery`
+
+The jQuery object representing the container element.
+
+##### options `Object`
+
+##### options.field `String`
+
+The name of the field to which the column is bound.
+
+##### options.format `String`
+
+The format string of the column specified via the [format](#configuration-columns.format) option.
+
+##### options.model `kendo.data.TreeListModel`
+
+The model instance to which the current table row is bound.
+
+#### Example - create a custom column editor using the Kendo UI AutoComplete
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                {
+                    field: "name",
+                    editor: function(container, options) {
+                        // create an input element
+                        var input = $("<input/>");
+                        // set its name to the field to which the column is bound ('name' in this case)
+                        input.attr("name", options.field);
+                        // append it to the container
+                        input.appendTo(container);
+                        // initialize a Kendo UI AutoComplete
+                        input.kendoAutoComplete({
+                            dataTextField: "name",
+                            dataSource: [
+                                { name: "Jane Doe" },
+                                { name: "Maria Anders" }
+                            ]
+                        });
+                    }
+                },
+                { command: [ "edit" ] }
+            ],
+            editable: true,
+            dataSource: {
+                data: [ { name: "Jane Doe" } ]
+            }
+        });
+    </script>
+
+#### Example - create a custom column editor with validation
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                {
+                    field: "name",
+                    editor: function(container, options) {
+                        //create input element and add the validation attribute
+                        var input = $('<input name="' + options.field + '" required="required" />');
+                        // set its name to the field to which the column is bound ('name' in this case)
+                        input.attr("name", options.field);
+                        // append it to the container
+                        input.appendTo(container);
+                        // initialize a Kendo UI AutoComplete
+                        input.kendoAutoComplete({
+                            dataTextField: "name",
+                            dataSource: [
+                                { name: "Jane Doe" },
+                                { name: "Maria Anders" }
+                            ]
+                        });
+
+                        //create tooltipElement element, NOTE: data-for attribute should match editor's name attribute
+                        var tooltipElement = $('<span class="k-invalid-msg" data-for="' + options.field + '"></span>');
+                        //append the tooltip element
+                        tooltipElement.appendTo(container);
+                    }
+                },
+                { command: [ "edit" ] }
+            ],
+            editable: true,
+            scrollable: false,
+            dataSource: {
+                data: [ { name: "Jane Doe" } ]
+            }
+        });
+    </script>
+
+### columns.encoded `Boolean` *(default: true)*
+
+If set to `true` the column value will be HTML-encoded before it is displayed. If set to `false` the column value will be displayed as is. By default the column value is HTML-encoded.
+
+#### Example - prevent HTML encoding
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name", encoded: false },
+            ],
+            dataSource: {
+                data: [ { name: "<strong>Jane Doe</strong>" } ]
+            }
+        });
+    </script>
+
+### columns.field `String`
+
+The field to which the column is bound. The value of this field is displayed by the column during data binding.
+**The field name should be a valid Javascript identifier and should contain no spaces, no special characters, and the first character should be a letter.**
+
+#### Example - specify the column field
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+            ],
+            dataSource: {
+                data: [ { name: "Jane Doe" } ]
+            }
+        });
+    </script>
+
+### columns.format `String`
+
+The format that is applied to the value before it is displayed. Takes the form "{0:format}" where "format" is a [standard number format](/api/framework/kendo#standard-number-formats),
+[custom number format](/api/framework/kendo#custom-number-formats), [standard date format](/api/framework/kendo#standard-date-formats) or a [custom date format](/api/framework/kendo#custom-date-formats).
+
+> The [kendo.format](/api/framework/kendo#methods-format) function is used to format the value.
+
+#### Example - specify the column format string
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [ {
+                field: "date",
+                format: "{0: yyyy-MM-dd HH:mm:ss}"
+            }, {
+                field: "number",
+                format: "{0:c}"
+            } ],
+            dataSource: [ { date: new Date(), number: 3.1415 } ]
+        });
+    </script>
+
+### columns.headerTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the column header content. By default the value of the [title](#configuration-columns.title) column option
+is displayed in the column header cell.
+
+> If sorting is enabled, the column header content will be wrapped in a `<a>` element. As a result the template **must** contain only inline elements.
+
+#### Example - column header template as a string
+
+    <div id="treelist"></div>
+    <script>
+        $("#treelist").kendotreelist({
+            columns: [ {
+                field: "name",
+                headerTemplate: '<input type="checkbox" id="check-all" /><label for="check-all">check all</label>'
+            }],
+            datasource: {
+                data: [ { name: "jane doe" } ]
+            }
+        });
+    </script>
+
+### columns.sortable `Boolean|Object` *(default: true)*
+
+If set to `true` the user can click the column header and sort the grid by the column [field](#configuration-columns.field) when sorting is enabled. If set to `false` sorting will
+be disabled for this column. By default all columns are sortable if sorting is enabled via the [sortable](#configuration-sortable) option.
+
+#### Example - disable sorting
+
+    <div id="treelist"></div>
+    <script>
+        $("#treelist").kendotreelist({
+            columns: [
+                { sortable: false, field: "id" },
+                { field: "name" }
+            ],
+            sortable: true,
+            dataSource: [ { id: 1, name: "Jane Doe" }, { id: 2, name: "John Doe" } ]
+        });
+    </script>
+
+### columns.sortable.compare `Function`
+
+A JavaScript function which is used to compare the values - should return -1 if first argument is less than second one, 0 if both are the same or +1 if the first one is greater than second one.
+
+#### Example - define custom compare function
+
+    <div id="treeList"></div>
+    <script>
+      var numbers = {
+        "one"  : 1,
+        "two"  : 2,
+        "three": 3
+      };
+
+
+      $("#treeList").kendoGrid({
+        dataSource: {
+          data: [
+                { id: 1, item: "two" },
+                { id: 2, item: "one" },
+                { id: 3, item: "three" }
+            ]
+        },
+        sortable: true,
+        columns: [{
+          field: "item",
+          sortable: {
+            compare: function(a, b) {
+              return numbers[a.item] - numbers[b.item];
+            }
+          }
+        }]
+      });
+    </script>
+
+### columns.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the column content. The treelist renders table rows (`<tr>`) which represent the data source items.
+Each table row consists of table cells (`<td>`) which represent the treelist columns. By default the HTML-encoded value of the [field](#configuration-columns.field) is displayed in the column.
+
+> Use the `template` to customize the way the column displays its value.
+
+#### Example - set the template as a string (wrap the column value in HTML)
+
+    <div id="treelist"></div>
+    <script>
+    $("#treelist").kendoTreeList({
+      columns: [ {
+        field: "name",
+        template: "<strong>#: name # </strong>"
+      }],
+      dataSource: [ { name: "Jane Doe" }, { name: "John Doe" } ]
+    });
+    </script>
+
+### columns.title `String`
+
+The text that is displayed in the column header cell. If not set the [field](#configuration-columns.field) is used.
+
+#### Example - set the title of the column
+
+    <div id="treelist"></div>
+    <script>
+    $("#treelist").kendoTreeList({
+      columns: [ { field: "name", title: "Name" } ],
+      dataSource: [ { name: "Jane Doe" }, { name: "John Doe" } ]
+    });
+    </script>
+
+### columns.width `String|Number`
+
+The width of the column. Numeric values are treated as pixels. **For more important information, please refer to [Column Widths](/web/treelist/walkthrough#column-widths)**.
+
+#### Example - set the column width as a string
+     <div id="treelist"></div>
+     <script>
+     $("#treelist").kendoTreeList({
+       columns: [
+         { field: "name", width: "200px" },
+         { field: "age" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ]
+     });
+     </script>
+
+#### Example - set the column width as a number
+     <div id="treelist"></div>
+     <script>
+     $("#treelist").kendoTreeList({
+       columns: [
+         { field: "name", width: 200 },
+         { field: "age" }
+       ],
+       dataSource: [
+         { name: "Jane Doe", age: 30 },
+         { name: "John Doe", age: 33 }
+       ]
+     });
+     </script>
+
+### columns.filterable `Boolean|Object` *(default: true)*
+
+If set to `true` a filter menu will be displayed for this column when filtering is enabled. If set to `false` the filter menu will not be displayed. By default a filter menu is displayed
+for all columns when filtering is enabled via the [filterable](#configuration-filterable) option.
+
+Can be set to a JavaScript object which represents the filter menu configuration.
+
+#### Example - disable filtering
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      columns: [
+        { field: "name", filterable: false },
+        { field: "age" }
+      ],
+      filterable: true,
+      dataSource: [ { name: "Jane", age: 30 }, { name: "John", age: 33 }]
+    });
+    </script>
+
+### columns.filterable.ui `String|Function`
+
+The role data attribute of the widget used in the filter menu or a JavaScript function which initializes that widget.
+
+#### Example - specify the filter UI as a string
+
+    <div id="treelist"></div>
+    <script>
+    $("#treelist").kendoTreeList({
+      columns: [ {
+        field: "date",
+        filterable: {
+          ui: "datetimepicker" // use Kendo UI DateTimePicker
+        }
+      } ],
+      filterable: true,
+      dataSource: [ { date: new Date() }, { date: new Date() } ]
+    });
+    </script>
+
+#### Example - initialize the filter UI
+
+    <div id="treelist"></div>
+    <script>
+    $("#treelist").kendoTreeList({
+      columns: [ {
+        field: "date",
+        filterable: {
+          ui: function(element) {
+            element.kendoDateTimePicker(); // initialize a Kendo UI DateTimePicker
+          }
+        }
+      } ],
+        filterable: true,
+        dataSource: [ { date: new Date() }, { date: new Date() } ]
+    });
+    </script>
+
 ### autoBind `Boolean` *(default: true)*
 
 If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
