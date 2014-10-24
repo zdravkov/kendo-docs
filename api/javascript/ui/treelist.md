@@ -1097,6 +1097,68 @@ For more information, please refer to the [Window configuration API](/api/web/wi
         });
     </script>
 
+### dataSource `Object|Array|kendo.data.TreeListDataSource`
+
+The data source of the widget which is used render table rows. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
+instance.
+
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/api/framework/datasource) instance using that value as data source configuration.
+
+If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+
+#### Example - set dataSource as a JavaScript object
+
+    <div id="treelist"></div>
+    <script>
+    $("#treelist").kendoTreeList({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      dataSource: {
+        data: [
+          { name: "Jane Doe", age: 30 },
+          { name: "John Doe", age: 33 }
+        ]
+      }
+    });
+    </script>
+
+#### Example - set dataSource as a JavaScript array
+
+    <div id="treelist"></div>
+    <script>
+    $("#treelist").kendoTreeList({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      dataSource: [
+        { name: "Jane Doe", age: 30 },
+        { name: "John Doe", age: 33 }
+      ]
+    });
+    </script>
+
+#### Example - set dataSource as an existing kendo.data.TreeListDataSource instance
+
+    <div id="treelist"></div>
+    <script>
+    var dataSource = new kendo.data.TreeListDataSource({
+      transport: {
+        read: {
+          url: "http://demos.telerik.com/kendo-ui/service/products",
+          dataType: "jsonp"
+        }
+      },
+      pageSize: 10
+    });
+    $("#treelist").kendoTreeList({
+      dataSource: dataSource,
+      pageable: true
+    });
+    </script>
+
 ## Methods
 
 ### refresh
