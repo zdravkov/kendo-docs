@@ -131,14 +131,20 @@ Exports a group of drawing elements as an SVG document.
 
 The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
 
-The promise will be resolved with a SVG document (as text).
+The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
 
 #### Parameters
 ##### group `kendo.drawing.Group`
 The root group containing all elements to export.
 
+##### options `Object` *optional*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
 #### Returns
-`Promise` A promise that will be resolved with a SVG document (as text).
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
 
 #### Example - Exporting a drawing to an SVG document
     <script>
@@ -151,8 +157,7 @@ The root group containing all elements to export.
         var root = new draw.Group();
         root.append(path);
 
-        draw.exportSVG(root).done(function(svg) {
-            var data = "data:image/svg+xml;utf8," + svg;
+        draw.exportSVG(root).done(function(data) {
             kendo.saveAs({
                 dataURI: data,
                 fileName: "frame.svg"
