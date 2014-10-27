@@ -5952,6 +5952,32 @@ Expands specified master row.
     grid.expandRow(".k-master-row:first");
     </script>
 
+### getOptions
+
+Retrieves the options that are currently enabled or disabled on the Grid, also gives the current state of the dataSource. Use this method if you want to save the state of the Grid into a variable.
+
+#### Parameters
+
+#### Example - expand the first master table row
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { field: "age" }
+      ],
+      sortable: true
+      dataSource: [
+          { name: "Jane Doe", age: 30 },
+          { name: "John Doe", age: 33 }
+      ],
+    });
+    var grid = $("#grid").data("kendoGrid");
+    var options = grid.getOptions();
+    console.log(options.sortable); //outputs true
+    </script>
+
 ### hideColumn
 
 Hides the specified grid column.
@@ -6337,6 +6363,36 @@ The data source to which the widget should be bound.
     });
     var grid = $("#grid").data("kendoGrid");
     grid.setDataSource(dataSource);
+    </script>
+
+### setOptions
+
+Sets the options of the Grid. Use this method if you want to enable/disable a particular feature/option or to loadcomplete state retrieved from the getOptions method.
+
+#### Parameters
+
+##### options `Object`
+
+The configuration options to be set.
+
+#### Example - set sortable feature of the Grid to true
+
+    <div id="grid"></div>
+    <script>
+        $("#grid").kendoGrid({
+            columns: [
+              { field: "name" },
+              { field: "age" }
+            ],
+            dataSource: [
+                { name: "Jane Doe", age: 30 },
+                { name: "John Doe", age: 33 }
+            ]
+        });
+        var grid = $("#grid").data("kendoGrid");
+        grid.setOptions({
+              sortable: true
+        });
     </script>
 
 ### showColumn
