@@ -29983,6 +29983,139 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
     chart.destroy();
     </script>
 
+
+### exportImage
+Exports the chart as an image.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PNG image encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Parameters for the exported image.
+
+##### options.width `String`
+The width of the exported image. Defaults to the chart width.
+
+##### options.height `String`
+The height of the exported image. Defaults to the chart height.
+
+#### Returns
+`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+
+#### Example - Exporting a chart to an image
+    <div id="chart"></div>
+    <script>
+        $("#chart").kendoChart({
+            series: [{
+                type: "column",
+                data: [1, 2, 3]
+            }, {
+                type: "line",
+                data: [2, 1, 3]
+            }, {
+                type: "area",
+                data: [3, 1, 2]
+            }]
+        });
+
+        var chart = $("#chart").getKendoChart();
+        chart.exportImage().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "chart.png"
+            });
+        });
+    </script>
+
+
+### exportPDF
+Exports the chart as a PDF file.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PDF file encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `kendo.drawing.PDFOptions` *(optional)*
+Parameters for the exported PDF file.
+
+#### Returns
+`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
+
+#### Example - Exporting a chart to a PDF file
+    <div id="chart"></div>
+    <script>
+        $("#chart").kendoChart({
+            series: [{
+                type: "column",
+                data: [1, 2, 3]
+            }, {
+                type: "line",
+                data: [2, 1, 3]
+            }, {
+                type: "area",
+                data: [3, 1, 2]
+            }]
+        });
+
+        var chart = $("#chart").getKendoChart();
+        chart.exportPDF({ paperSize: "A5", landscape: true }).done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "chart.pdf"
+            });
+        });
+    </script>
+
+
+### exportSVG
+Exports the chart as an SVG document.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
+#### Returns
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
+
+#### Example - Exporting a chart to an SVG document
+    <div id="chart"></div>
+    <script>
+        $("#chart").kendoChart({
+            series: [{
+                type: "column",
+                data: [1, 2, 3]
+            }, {
+                type: "line",
+                data: [2, 1, 3]
+            }, {
+                type: "area",
+                data: [3, 1, 2]
+            }]
+        });
+
+        var chart = $("#chart").getKendoChart();
+        chart.exportSVG().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "chart.svg"
+            });
+        });
+    </script>
+
+
 ### redraw
 
 Repaints the chart using the currently loaded data.
@@ -30106,6 +30239,8 @@ converted to other formats using tools like [Inkscape](http://inkscape.org/) and
 [ImageMagick](http://www.imagemagick.org/).
 Both programs provide command-line interface suitable for server-side processing.
 
+> This method is obsoleted by [exportSVG](#methods-exportSVG), but will remain fully functional.
+
 #### Returns
 
 `String` the SVG representation of the chart.
@@ -30127,6 +30262,8 @@ Both programs provide command-line interface suitable for server-side processing
 ### imageDataURL
 
 Returns a PNG image of the chart encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+> This method is deprecated and replaced by [exportImage](#methods-exportImage).
 
 #### Returns
 

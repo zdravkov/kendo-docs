@@ -305,9 +305,118 @@ The width of the barcode in pixels.  By default the width is 300.
 
 ## Methods
 
+### exportImage
+Exports the barcode as an image.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PNG image encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Parameters for the exported image.
+
+##### options.width `String`
+The width of the exported image. Defaults to the barcode width.
+
+##### options.height `String`
+The height of the exported image. Defaults to the barcode height.
+
+#### Returns
+`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+
+#### Example - Exporting a barcode to an image
+    <div id="barcode"></div>
+    <script>
+        $("#barcode").kendoBarcode({
+          value: "BAR",
+          width: 300
+        });
+
+        var barcode = $("#barcode").getKendoBarcode();
+        barcode.exportImage().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "barcode.png"
+            });
+        });
+    </script>
+
+
+### exportPDF
+Exports the barcode as a PDF file.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PDF file encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `kendo.drawing.PDFOptions` *(optional)*
+Parameters for the exported PDF file.
+
+#### Returns
+`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
+
+#### Example - Exporting a barcode to a PDF file
+    <div id="barcode"></div>
+    <script>
+        $("#barcode").kendoBarcode({
+          value: "BAR",
+          width: 300
+        });
+
+        var barcode = $("#barcode").getKendoBarcode();
+        barcode.exportPDF({ paperSize: "A5", landscape: true }).done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "barcode.pdf"
+            });
+        });
+    </script>
+
+
+### exportSVG
+Exports the barcode as an SVG document.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
+#### Returns
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
+
+#### Example - Exporting a barcode to an SVG document
+    <div id="barcode"></div>
+    <script>
+        $("#barcode").kendoBarcode({
+          value: "BAR",
+          width: 300
+        });
+
+        var barcode = $("#barcode").getKendoBarcode();
+        barcode.exportSVG().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "barcode.svg"
+            });
+        });
+    </script>
+
 ### imageDataURL
 
 Returns a PNG image of the barcode encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+> This method is deprecated and replaced by [exportImage](#methods-exportImage).
 
 #### Returns
 
@@ -394,6 +503,8 @@ Defines whether the widget should proceed with resizing even if the element dime
 
 Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the barcode. The returned string is a self-contained SVG document that can be used as is or converted to other formats using tools like [Inkscape](http://inkscape.org/) and
 [ImageMagick](http://www.imagemagick.org/). Both programs provide command-line interface suitable for server-side processing.
+
+> This method is obsoleted by [exportSVG](#methods-exportSVG), but will remain fully functional.
 
 #### Returns
 
