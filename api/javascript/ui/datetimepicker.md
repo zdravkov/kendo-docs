@@ -227,7 +227,7 @@ shows the decades from the century
 
 #### Example - specify a time interval
 
-    <input id="datetimepicker" />
+    <input id="dateTimePicker" />
     <script>
     $("#dateTimePicker").kendoDateTimePicker({
         interval: 15
