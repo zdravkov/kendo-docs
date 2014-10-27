@@ -3667,6 +3667,35 @@ The fields which can be used in the template are:
     })
     </script>
 
+### views.columnWidth `Number` *(default: 100)*
+
+The width of the table columns in timeline views. Value is treated as pixels.
+
+> The `columnWidth` option is supported when [views.type](#configuration-views.type) is set to "timeline", "timelineWeek" or "timelineWorkWeek".
+
+#### Example - set the event height in month view
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      views: [
+        {
+          type: "timelineWeek",
+          columnWidth: 50
+        }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### views.dateHeaderTemplate `String|Function`
 
 The [template](/api/framework/kendo#methods-template) used to render the date header cells.
@@ -3946,9 +3975,9 @@ The fields which can be used in the template are:
 
 ### views.eventHeight `Number` *(default: 25)*
 
-The height of the scheduler event rendered in month view.
+The height of the scheduler event rendered in month and timeline views.
 
-> The `eventHeight` option is supported when [views.type](#configuration-views.type) is set to "month".
+> The `eventHeight` option is supported when [views.type](#configuration-views.type) is set to "month", "timeline", "timelineWeek" or "timelineWorkWeek".
 
 #### Example - set the event height in month view
 
@@ -4458,7 +4487,7 @@ The user-friendly title of the view displayed by the scheduler.
 
 ### views.type `String`
 
-The type of the view. The built-in views are: "day", "week", "workWeek", "month" and "agenda".
+The type of the view. The built-in views are: "day", "week", "workWeek", "month", "agenda", "timeline", "timelineWeek" and "timelineWorkWeek".
 
 #### Example - set the view type
 
