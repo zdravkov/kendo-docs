@@ -1201,6 +1201,31 @@ A string, DOM element or jQuery object which represents the command to be remove
         toolbar.remove($("#btn2"));
     </script>
 
+### toggle
+
+Change the state of a togglable button.
+
+> This method does **not** trigger the `toggle` event!
+
+#### Example - change the state of togglable buttons using the API
+
+    <div id="toolbar"></div>
+    <script>
+        $("#toolbar").kendoToolBar({
+          items: [
+            { type: "buttonGroup", buttons: [
+              { type: "button", togglable: true, id: "foo", text: "foo", group: "group1" },
+              { type: "button", togglable: true, id: "bar", text: "bar", group: "group1" }
+              ]
+            }
+          ]
+        });
+        
+        var toolbar = $("#toolbar").data("kendoToolBar");
+        toolbar.toggle("#foo", true); //select button with id: "foo"
+        toolbar.toggle("#bar", true); //select button with id: "bar" (also deselects "#foo" as the buttons are from the same group
+    </script>
+
 ## Events
 
 ### click
