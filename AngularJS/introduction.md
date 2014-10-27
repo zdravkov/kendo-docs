@@ -228,26 +228,26 @@ The grid will be created only when the `gridOptions` variable becomes available.
 Or you can load the widget data with a $http call and initialize the widget when the data is available. Example:
 
     //the controller
-    function MyCtrl($scope, $http) {
+    angular.module("mine").controller("MyCtrl", [ '$scope', '$http', function($scope, $http) {
           $http({method: "GET", url: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products"})
           .success(function(result){
             $scope.customOptions.dataSource = new kendo.data.DataSource({
               data: result.d
-            })	
+            })
           })
         $scope.customOptions = {
           dataTextField: "ProductName",
           dataValueField: "ProductID"
         }
-      }
-      
+     }]);
+
       <!-- the HTML: -->
       <select id="customers"
                 kendo-drop-down-list
                 k-options="customOptions"
                 k-ng-delay="customOptions.dataSource"
                 ></select>
-    
+
 
 ### Getting widget references
 

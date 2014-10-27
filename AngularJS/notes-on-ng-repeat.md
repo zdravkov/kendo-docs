@@ -8,7 +8,7 @@ title: Notes on ng-repeat
 
 For widgets that are instantiated from plain HTML, it might be tempting to use `ng-repeat` to build that HTML. That works to initialize the widget, but it won't work properly to update the widget if the data changes later. It isn't possible to fix this; the widgets build their own DOM on initialization and that doesn't necessarily match the original HTML (which `ng-repeat` will generate). Here is an example of what to avoid:
 
-    function Ctrl1($scope) {
+    angular.module("mine").controller("Ctrl1", function($scope) {
       $scope.tree = [
         { text: "Foo", items: [
           { text: "Foo 1" },
@@ -23,7 +23,7 @@ For widgets that are instantiated from plain HTML, it might be tempting to use `
           items: [ { text: "Badly" } ]
         });
       };
-    }
+    });
 
     <button ng-click="add()">Add new</button>
     <ul kendo-tree-view>
@@ -41,7 +41,7 @@ When you click "Add new", a new item is pushed to the tree. `ng-repeat` does its
 
 To create a widget that needs to be updated you can use a data source and manipulate that:
 
-    function Ctrl2($scope) {
+    angular.module("mine").controller("Ctrl2", function($scope) {
       $scope.tree = new kendo.data.ObservableArray([
         { text: "Foo", items: [
           { text: "Foo 1" },
@@ -56,7 +56,7 @@ To create a widget that needs to be updated you can use a data source and manipu
           items: [ { text: "Sweet" } ]
         });
       };
-    }
+    });
 
     <button ng-click="add()">Add new</button>
     <ul kendo-tree-view k-data-source="tree"></ul>

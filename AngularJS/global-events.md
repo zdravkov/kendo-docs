@@ -13,7 +13,7 @@ Angular-Kendo emits a `"kendoWidgetCreated"` event for each widget which is crea
 For example, suppose we want to create a TreeView widget that automatically expands the checked items upon initialization. We can't easily do without "kendoWidgetCreated" because the widget is not instantiated at the time our controller function runs, but only after (that should be obvious, since the widget is built from data defined by the controller). Here is how we can do it with this event:
 
     // controller:
-    function Ctrl1($scope) {
+    angular.module("mine").controller("Ctrl1", function($scope) {
         $scope.treeOptions = {
             dataSource: makeData(),
             checkboxes: {
@@ -75,7 +75,7 @@ For example, suppose we want to create a TreeView widget that automatically expa
                         { text: "SubItem 3.3.3" }]}]},
             ]
         }
-    }
+    });
 
     <!-- markup -->
     <div kendo-tree-view="treeWidget" k-options="treeOptions"></div>

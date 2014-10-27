@@ -25,7 +25,7 @@ When cell selection is allowed, an additional `columns` variable will be present
 The following example allows you to choose the grid's selection mode and then select items in the grid and see what variables are available.
 
     // controller
-    function Ctrl1($scope) {
+    angular.module("mine").controller("Ctrl1", function($scope) {
       var data = new kendo.data.DataSource({
         data: [
           { text: "Foo", id: 1 },
@@ -46,7 +46,7 @@ The following example allows you to choose the grid's selection mode and then se
           { field: "id", title: "Id" }
         ]
       };
-    }
+    });
 
     <!-- markup -->
     <label>Select mode: <select kendo-dropdownlist ng-model="gridOptions.selectable">
@@ -71,7 +71,7 @@ The following example allows you to choose the grid's selection mode and then se
 When you need to, say, load columns definition from the server, you need to postpone the widget initialization until the data is available, because the Grid doesn't support defining columns after the widget is created. For this, the `k-ng-delay` attribute comes in handy. Here is an example (using `$timeout` to emulate networking — the data is set in scope asynchronously):
 
     // controller
-    function Ctrl2($scope, $timeout) {
+    angular.module("mine").controller("Ctrl2", function($scope) {
       $timeout(function(){
         $scope.gridOptions = {
           sortable: true,
@@ -86,7 +86,7 @@ When you need to, say, load columns definition from the server, you need to post
           ]
         };
       }, 500);
-    }
+    });
 
     <!-- markup -->
     <div kendo-grid k-options="gridOptions" k-ng-delay="gridOptions"></div>
@@ -96,7 +96,7 @@ When you need to, say, load columns definition from the server, you need to post
 The Grid supports a lot of user-customizable templates. You can define the `rowTemplate` if you want to completely customize how each row is displayed, or individual cell templates by adding a `template` property in your column definitions. The difference versus plain Kendo is that when the Grid is created with the Angular directive the templates can contain live `\{\{angular\}\}` bits. Both `rowTemplate` and `columns.template` are compiled with Angular in a scope containing a `dataItem` variable which points to the data model of the current item. Here is an example for `rowTemplate`:
 
     // controller
-    function Ctrl3($scope) {
+    angular.module("mine").controller("Ctrl3", function($scope) {
       var data = new kendo.data.DataSource({
         data: [
           { text: "Foo", id: 1 },
@@ -116,7 +116,7 @@ The Grid supports a lot of user-customizable templates. You can define the `rowT
           "This is <b>{{dataItem.text}}</b> and has ID={{dataItem.id}}" +
           "</td></tr>"
       };
-    }
+    });
 
     <!-- markup -->
     <p>Select an item to show editor:</p>
@@ -138,7 +138,8 @@ In order to take full control on the logic that performs the request to the serv
             <kendo-grid options="GridOptions"></kendo-grid>
         </div>
         <script>
-        function MyCtrl($scope, $http) {
+
+        angular.module("mine").controller("MyCtrl", function($scope) {
             $scope.mainGridOptions = {
                 dataSource: {
                     schema: {
@@ -161,7 +162,7 @@ In order to take full control on the logic that performs the request to the serv
                   serverSorting: true
                 }
             }
-        }
+        });
     </script>
 
 {% endraw %}
