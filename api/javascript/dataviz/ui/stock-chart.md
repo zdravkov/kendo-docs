@@ -9147,6 +9147,57 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
 
 > This method does not remove the widget element from DOM.
 
+### exportImage
+Exports the chart as an image.
+
+Inherited from [Chart.exportImage](chart#methods-exportImage)
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Parameters for the exported image.
+
+##### options.width `String`
+The width of the exported image. Defaults to the chart width.
+
+##### options.height `String`
+The height of the exported image. Defaults to the chart height.
+
+#### Returns
+`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+
+
+### exportPDF
+Exports the chart as a PDF file.
+
+Inherited from [Chart.exportPDF](chart#methods-exportPDF)
+
+#### Parameters
+
+##### options `kendo.drawing.PDFOptions` *(optional)*
+Parameters for the exported PDF file.
+
+#### Returns
+`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
+
+
+### exportSVG
+Exports the chart as an SVG document.
+
+Inherited from [Chart.exportSVG](chart#methods-exportSVG)
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
+#### Returns
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
+
+
 ### redraw
 
 Repaints the chart using the currently loaded data.
@@ -9183,8 +9234,9 @@ converted to other formats using tools like [Inkscape](http://inkscape.org/) and
 [ImageMagick](http://www.imagemagick.org/).
 Both programs provide command-line interface suitable for server-side processing.
 
-#### Returns
+> This method is obsoleted by [exportSVG](#methods-exportSVG), but will remain fully functional.
 
+#### Returns
 `String` the SVG representation of the chart.
 
 #### Example - get the SVG representation of the chart
@@ -9211,6 +9263,8 @@ Both programs provide command-line interface suitable for server-side processing
 ### imageDataURL
 
 Returns a PNG image of the chart encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+> This method is deprecated and replaced by [exportImage](#methods-exportImage).
 
 #### Returns
 
