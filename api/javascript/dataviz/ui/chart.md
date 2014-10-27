@@ -30046,7 +30046,8 @@ Parameters for the exported PDF file.
 #### Returns
 `Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
 
-#### Example - Exporting a drawing to a PDF file
+#### Example - Exporting a chart to a PDF file
+    <div id="chart"></div>
     <script>
         $("#chart").kendoChart({
             series: [{
@@ -30089,7 +30090,8 @@ Resolves the promise with the raw SVG document without the Data URI prefix.
 #### Returns
 `Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
 
-#### Example - Exporting a drawing to an SVG document
+#### Example - Exporting a chart to an SVG document
+    <div id="chart"></div>
     <script>
         $("#chart").kendoChart({
             series: [{
