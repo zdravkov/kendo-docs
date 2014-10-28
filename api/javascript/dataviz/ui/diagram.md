@@ -55,6 +55,14 @@ The zoom max level in percentages.
 
 Specifies the shape editable.
 
+### editable.shapeTemplate `String|Function`
+
+Specifies the shape editor template.
+
+### editable.connectionTemplate `String|Function`
+
+Specifies the connection editor template.
+
 ### editable.resize `Boolean|Object` *(default: true)*
 
 Specifies the shape resizing.
@@ -1489,6 +1497,90 @@ The unique identifier of the Shape or Connection
 `Object` the item that has the provided ID.
 
 ## Events
+
+### Edit
+
+Fired when the user edits a shape or connection.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+### Save
+
+Fired when the user a shape or connection da is saved.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+### cancel
+
+Fired when the user clicks the "cancel" button in the popup window.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+### remove
+
+Fired when the user delete a shape or connection.
+
+#### Event Data
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
 
 ### change
 
