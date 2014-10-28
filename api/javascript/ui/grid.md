@@ -672,7 +672,9 @@ Specifies the width of the input before it is initialized or turned into a widge
 
 ### columns.filterable.cell.suggestionOperator `String` *(default: "startswidth")*
 
-Specifies the AutoComplete filter option. Possible values are same as the one for the AutoComplete filter option- "startswidht", "endswith", "contains". Notice this operator is completely separate from the operator used for filtering on this column.
+Specifies the AutoComplete filter option. Possible values are same as the one for the AutoComplete filter option- "startswidht", "endswith", "contains".
+
+> Notice this operator is completely separate from the operator used for filtering on this column - check [operator](#configuration-columns.filterable.cell.operator).
 
 #### Example - Specifying inputWidth option for the filter cell of a column
 
@@ -743,6 +745,8 @@ When set to false the Grid will not render the cell filtering widget for that sp
 ### columns.filterable.cell.operator `String` *(default: "eq")*
 
 Specifies the default operator that will be used for the cell filtering.
+
+> If you want to change how the AutoComplete suggestions are filtered use [suggestionOperator](#configuration-columns.filterable.suggestionOperator).
 
 #### Example - Specifying default operator for cell filtering.
 
@@ -836,7 +840,7 @@ The role data attribute of the widget used in the filter menu or a JavaScript fu
 
 > This feature is not supported for columns which have their [values](#configuration-columns.values) option set.
 
-> If [filterable.mode](#configuration-filterable.mode) is set, [columns.filterable.cell.template](#configuration-columns.filterable.cell.template) should be used to customize the input.
+> If [filterable.mode](#configuration-filterable.mode) is set to 'row', [columns.filterable.cell.template](#configuration-columns.filterable.cell.template) should be used to customize the input.
 
 #### Example - specify the filter UI as a string
     <div id="grid"></div>
