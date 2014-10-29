@@ -128,49 +128,6 @@ The PDF generator supports compression via the JavaScript [pako library](https:/
 Compression can make a big difference in the output file size when you're using custom TTF fonts or images with alpha channel (i.e. PNGs with transparency).
 
 
-## HTML-drawing API
-
-A separate library, part of the drawing API, allows us to get a `drawing.Group` node for a DOM element. The respective DOM element must be appended to the document, and must be visible (i.e. you cannot draw an element which has `display: none` or `visibility: hidden`, or which is simply not in the DOM).  For example if you have this HTML in the page:
-
-    <div id="drawMe" class="...">
-      ... more HTML code here...
-    </div>
-
-You can draw it from JavaScript with the following call:
-
-    drawing.drawDOM(document.getElementById("drawMe")).then(function(group){
-        // here group is a drawing.Group object
-
-        // you can now draw it to SVG for example:
-        var svg = drawing.Surface.create($("#container"), { type: "svg" });
-        svg.draw(group);
-
-        // or you can save it as PDF.
-        // optionally:
-        group.options.set("pdf", {...pdf options...});
-        drawing.pdf.saveAs(group, "filename.pdf", proxyUrl);
-    });
-
-The same note about fonts apply.  If you want the PDF to match the browser layout as closely as possible, you must declare all fonts that may be used in the HTML, with the URLs to the respective TTF files.  To make sure the same fonts are used in the browser it's a good idea to include [CSS `font-face` declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) for your fonts as well.
-
-
-### Known limitations
-
-- no rendering of shadow DOM
-
-- no rendering of list item bullets or numbers (a consequence of not rendering shadow DOM)
-
-- no CSS box-shadow, text-shadow, gradients
-
-- only `solid` border-style
-
-- the following elements are not rendered: `<iframe>`, `<svg>`.  A `<canvas>` will be rendered as an image, but only if it's “non-tainted” (does not display images from another domain).
-
-- images hosted on different domains might not be rendered, unless permissive [Cross-Origin HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image) are provided by the server.  Similarly, fonts might not be possible to load cross-domain.
-
-- the output is always a single page (no page breaking is performed)
-
-
 ## Supported browsers
 
 Kendo PDF Generator has been tested in recent versions of Chrome, Firefox, Safari, Blink-based Opera, Internet Explorer 9 or later.  We use [typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) where available to improve speed (all browsers except IE9).
