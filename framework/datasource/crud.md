@@ -506,6 +506,11 @@ Here is a custom error example:
         }
     });
 
+When an error event is fired, the DataSource will not process any data items, which may also be part of the server response.
+For example, if an update action fails, because of conflicting edits, and the data needs to be refreshed from the server,
+you will need to call the `read` method of the DataSource in the error handler.
+Sending the new data together with the error response will not populate the DataSource with the new values.
+
 ### Examples: Remote CRUD Operations with the Kendo UI Grid
 
 Please refer to the [online Grid Editing demos](http://demos.telerik.com/kendo-ui/grid/editing-inline).
