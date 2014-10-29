@@ -186,6 +186,8 @@ navigation:
         title: "Tooltip"
     "*toolbar":
         title: "ToolBar"
+    "*treelist":
+        title: "TreeList"
     "*treeview":
         title: "TreeView"
     "*upload":
