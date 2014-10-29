@@ -1502,6 +1502,36 @@ The unique identifier of the Shape or Connection
 
 ## Events
 
+### dataBound
+
+Fired when the widget is bound to data from dataDource and connectionsDataSource.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Diagram`
+
+### Add
+
+Fired when the user add new shape or connection.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
 ### Edit
 
 Fired when the user edits a shape or connection.
