@@ -3676,7 +3676,10 @@ Optional data to pass to the remote service.
         console.log(view[0].ProductName); // displays "Chai"
       }
     });
-    dataSource.read();
+    
+    var optionalData = { myParam: 42 };
+    
+    dataSource.read(optionalData);
     </script>
 
 ### remove
