@@ -98,7 +98,7 @@ The `kendo.geometry` namespace contains primitives such as
 Drawing elements such as
 [Path](/api/dataviz/drawing/path),
 [Image](/api/dataviz/drawing/image) and
-[Group](/api/dataviz/drawing/image)
+[Group](/api/dataviz/drawing/group)
 live in the `kendo.drawing` namespace.
 
 ### Draw the path
