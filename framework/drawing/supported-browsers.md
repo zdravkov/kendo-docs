@@ -24,7 +24,7 @@ e.g. "canvas", if desired. The preference will be ignored if no support is provi
 | SVG     | 9+   | ✓     | ✓       | ✓      | ✓   | 4+
 | Canvas  | 10+  | ✓     | ✓       | ✓      | ✓   | ✓
 | VML     | 7+   | ✕     | ✕       | ✕      | ✕   | ✕
-| PDF     | 9+   | ✓     | ✓       | ?      | ?   | ?
+| PDF     | 9+   | ✓     | ✓       | ✓      | ?   | ?
 
 ## Known limitations
 

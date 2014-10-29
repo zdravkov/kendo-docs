@@ -39,7 +39,7 @@ The Kendo UI Drawing API can export your drawing to a PDF file.  However, becaus
     // you can offer the file for download now
     drawing.pdf.saveAs(group, "filename.pdf", proxyUrl, callback);
 
-The `proxyUrl` and `callback` arguments are optional.  `proxyUrl` is necessary for the download to work with Internet Explorer 9; it won't be used for IE >= 10 or other browsers.  The `callback` will be invoked when the file has been successfully generated (generation could be asynchronous).
+The `proxyUrl` and `callback` arguments are optional.  `proxyUrl` is necessary for the download to work with Internet Explorer 9 and Safari; it won't be used for other browsers.  See [kendo.saveAs](/api/javascript/kendo.html#methods-saveAs) for more information about the `proxyURL`.  The `callback` will be invoked when the file has been successfully generated (generation could be asynchronous).
 
     // or, you can get the PDF as Blob object in browsers that support it
     // (all except IE < 10).
