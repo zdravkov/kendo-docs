@@ -3660,6 +3660,7 @@ Reads data items from a remote service (if the [transport](#configuration-transp
 ##### data `Object` *(optional)*
 
 Optional data to pass to the remote service.
+If you need to **filter**, it is better to use the [`filter()`](#methods-filter) method or the [`query()`](#methods-query) method with a `filter` parameter.
 
 #### Example - read data from a remote service
 
@@ -3677,7 +3678,7 @@ Optional data to pass to the remote service.
       }
     });
     
-    var optionalData = { myParam: 42 };
+    var optionalData = { foo: 42, bar: "baz" };
     
     dataSource.read(optionalData);
     </script>
