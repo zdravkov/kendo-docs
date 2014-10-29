@@ -89,6 +89,35 @@ If you'd like to store all widget configuration in the controller, you can use t
     <!-- in HTML: -->
     <input kendo-date-picker k-options="monthPickerConfig" />
 
+### Template Directives
+
+The data-bound container widgets may have their template options specified as nested directives.
+
+``` html
+<div kendo-list-view id="listView" k-data-source="source">
+
+    <!-- the template (including the div tag itself) here will be assigned as a string to the `template` configuration option of the listview widget -->
+    <div class="product" k-template>
+        <img ng-src="../content/web/foods/{{dataItem.ProductID}}.jpg" alt=" {{dataItem.ProductName}} image" />
+        <h3>{{ dataItem.ProductName }}</h3>
+        <p>{{ kendo.toString(dataItem.UnitPrice, "c") }}</p>
+    </div>
+</div>
+```
+
+The following widgets support template directives
+
+* TreeMap -  `k-template`,
+* MobileListView -  `k-header-template`, `k-template`
+* MobileScrollView -  `k-empty-template`, `k-template`
+* Grid -  `k-alt-row-template`, `k-detail-template`, `k-row-template`
+* ListView -  `k-edit-template`, `k-template`, `k-alt-template`
+* Pager -  `k-select-template`, `k-link-template`
+* PivotGrid -  `k-column-header-template`, `k-data-cell-template`, `k-row-header-template`
+* Scheduler -  `k-all-day-event-template`, `k-date-header-template`, `k-event-template`, `k-major-time-header-template`, `k-minor-time-header-template`
+* TreeView -  `k-template`,
+* Validator -  `k-error-template`
+
 ### Scope bindings (`ng-model`)
 
 For all widgets which provide a `value()` method you can use the standard `ng-model` directive to bind their value into the AngularJS scope.  Example:
