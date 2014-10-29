@@ -179,6 +179,10 @@ Specifies the thumb stroke dash type.
 
 See the [dataSource field](#fields-dataSource).
 
+### connectionsDataSource `Object|Array|kendo.data.DataSource`
+
+See the [dataSource field](#fields-dataSource).
+
 ### layout `Object`
 The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.
 
