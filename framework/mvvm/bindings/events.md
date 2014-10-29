@@ -58,7 +58,7 @@ To prevent the default action use the [preventDefault](http://api.jquery.com/eve
 
 ### Prevent default event action
 
-    <a href="http://example.com" data-bind="events: { click: click }">Click</span>
+    <a href="http://example.com" data-bind="events: { click: click }">Click</a>
     <script>
         var viewModel = kendo.observable({
             click: function(e) {
