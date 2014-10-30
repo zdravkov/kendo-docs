@@ -43,6 +43,34 @@ The configuration of the treelist columns. An array of JavaScript objects or str
         });
     </script>
 
+### columns.attributes `Object`
+
+HTML attributes of the table cell (`<td>`) rendered for the column.
+
+> HTML attributes which are JavaScript keywords (e.g. *class*) must be quoted.
+
+#### Example - specify column HTML attributes
+
+    <div id="treeList"></div>
+    <script>
+      var dataSource = new kendo.data.TreeListDataSource({
+        data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+      });
+      $("#treeList").kendoTreeList({
+        columns: [ {
+          field: "name",
+          attributes: {
+            "class": "name-cell",
+            style: "text-align: right"
+          }
+        } ],
+        dataSource: dataSource
+      });
+    </script>
+
+The table cells would look like this: `<td class="table-cell" style="text-align: right">...</td>`.
+
+
 ### columns.command `Array`
 
 The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit", "destroy" or "createchild").
@@ -315,6 +343,28 @@ If set to `true` the column value will be HTML-encoded before it is displayed. I
             ],
             dataSource: {
                 data: [ { name: "<strong>Jane Doe</strong>" } ]
+            }
+        });
+    </script>
+
+### columns.expandable `Boolean` *(default: false)*
+
+If set to `true` the column will show the icons that are used for exapdning and collapsing of child rows. By default, the first column of the TreeList is expandable.
+
+#### Example - make the second column expandable
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age", expandable: true }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
             }
         });
     </script>
