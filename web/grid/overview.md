@@ -7,86 +7,6 @@ position: 1
 
 # Grid Overview
 
-The Grid widget displays tabular data and offers rich support interacting with data,
-including paging, sorting, grouping, and selection. Grid is a powerful widget with
-many configuration options. It can be bound to local JSON data or to remote data
-using the Kendo DataSource component.
-
-
-## Getting Started
-
-There are two primary ways to create a Kendo Grid:
-
-
-
-1.  From an existing HTML table element, defining columns, rows, and data in HTML
-2.  From an HTML div element, defining columns and rows with configuration, and binding to data
-
-### Creating a **Grid** from existing HTML Table element
-
-     <!-- Define the HTML table, with rows, columns, and data -->
-     <table id="grid">
-      <thead>
-          <tr>
-              <th data-field="title">Title</th>
-              <th data-field="year">Year</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>Star Wars: A New Hope</td>
-              <td>1977</td>
-          </tr>
-          <tr>
-              <td>Star Wars: The Empire Strikes Back</td>
-              <td>1980</td>
-          </tr>
-      </tbody>
-     </table>
-
-> The Grid data field names are either created from the header cell content or the `data-field` attributes.
-The data field names should be valid Javascript identifiers, that's why using data-field attributes is highly recommended.
-Otherwise there would be limitations imposed on the header cell content (e.g. no special characters and spaces).
-	 
-### Initialize the Kendo Grid
-
-      $(document).ready(function(){
-          $("#grid").kendoGrid();
-      });
-
-### Creating a **Grid** from existing HTML Div element
-
-     <!-- Define the HTML div that will hold the Grid -->
-     <div id="grid">
-     </div>
-
-### Initialize the Kendo Grid and configure columns & data binding
-
-       $(document).ready(function(){
-          $("#grid").kendoGrid({
-              columns:[
-                  {
-                      field: "FirstName",
-                      title: "First Name"
-                  },
-                  {
-                      field: "LastName",
-                      title: "Last Name"
-              }],
-              dataSource: {
-                  data: [
-                      {
-                          FirstName: "Joe",
-                          LastName: "Smith"
-                      },
-                      {
-                          FirstName: "Jane",
-                          LastName: "Smith"
-                  }]
-              }
-          });
-      });
-
 ## Configuring Grid Behavior
 
 Kendo Grid supports paging, sorting, grouping, and scrolling. Configuring any of
@@ -105,8 +25,6 @@ example, the follow snippet shows how to enable all of these behaviors.
       });
 
 By default, paging, grouping, and sorting are **disabled**. Scrolling is enabled by default.
-
-
 
 ## Performance with Virtual Scrolling
 
