@@ -430,14 +430,29 @@ Configuration options for the save operation.
 ##### options.dataURI `String`
 The file contents encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
 
-Base64 encoding is mandatory for binary files.
+Only base64-encoded Data URIs are supported.
 
 ##### options.fileName `String`
 The desired file name.
 
+##### options.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to proxyURL even if the browser supports saving files locally.
+
 ##### options.proxyURL `String` *(optional)*
-The URL of the server side proxy which will stream the file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally.
+Such browsers are IE version 9 and lower and Safari.
+
 The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
 
 #### Example - Saving a text file
     <script>
