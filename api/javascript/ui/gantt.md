@@ -1225,6 +1225,310 @@ The text of "Export to PDF" button of the gantt toolbar.
     });
     </script>
 
+### pdf `Object`
+
+Configures the Kendo UI Gantt PDF export settings.
+
+### pdf.author `String` *(default: null)*
+
+The author of the PDF document.
+
+#### Example - set the author
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            author: "John Doe"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+
+The creator of the PDF document.
+
+#### Example - set the creator
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            creator: "John Doe"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.date `Date`
+
+The date when the PDF document is created. Defaults to `new Date()`.
+
+#### Example - set the date
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            date: new Date("2014/11/03")
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.fileName `String` *(default: "Export.pdf")*
+
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            fileName: "Tasks.pdf"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.keywords `String` *(default: null)*
+
+Specifies the keywords of the exported PDF file.
+
+#### Example - set the keywords
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            keywords: "project tasks"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.landscape `Boolean` *(default: false)*
+
+Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+
+#### Example - enable landscape mode
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            landscape: true
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.margin `Object`
+
+Specifies the margins of the page (numbers or strings with units). Supported
+units are "mm", "cm", "in" and "pt" (default).
+
+#### Example - set the margins
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            margin: {
+                left: 10,
+                right: "10pt",
+                top: "10mm",
+                bottom: "1in"
+            }
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.margin.bottom `Number|String` *(default: 0)*
+
+The bottom margin. Numbers are considered as "pt" units.
+
+### pdf.margin.left `Number|String` *(default: 0)*
+
+The left margin. Numbers are considered as "pt" units.
+
+### pdf.margin.right `Number|String` *(default: 0)*
+
+The right margin. Numbers are considered as "pt" units.
+
+### pdf.margin.top `Number|String` *(default: 0)*
+
+The top margin. Numbers are considered as "pt" units.
+
+### pdf.paperSize `String|Array` *(default: "auto")*
+
+Specifies the paper size of the PDF document. Can be set to a predefined size, i.e. "A4", "A3" etc,
+or an array of two Number-s specifying the width/height in points (1pt = 1/72in), or strings including unit, i.e. "10mm". Supported
+units are "mm", "cm", "in" and "pt".  The default "auto" means paper size is determined by content.
+
+#### Example - set custom paper size
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            paperSize: ["20mm", "20mm"]
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.proxyURL `String` *(default: null)*
+
+The URL of the server side proxy which will stream the PDF file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
+The developer is responsible for implementing the server-side proxy. Implementation instructions are available here.
+
+#### Example - set the server proxy URL
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            proxyURL: "/save"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.subject `String` *(default: null)*
+
+Sets the subject of the PDF file.
+
+#### Example - set the subject
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            subject: "Tasks"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
+### pdf.title `String` *(default: null)*
+
+Sets the title of the PDF file.
+
+#### Example - set the title
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            title: "Tasks"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+	
 ### selectable `Boolean` *(default: true)*
 
 If set to `false` the user won't be able to select tasks in the Gantt. By default selection is enabled and triggers the [change event](#events-change).
@@ -1285,6 +1589,188 @@ If set to `false`, the day view will show all hours of the day. By default the v
          end: new Date("2014/6/17 18:00")
       }],
       showWorkHours: false
+    });
+    </script>
+
+### toolbar `String|Function|Array`
+
+If a `String` value is assigned to the `toolbar` configuration option, it will be treated as a single string template for the whole Gantt Toolbar,
+and the string value will be passed as an argument to a [`kendo.template()`](/api/framework/kendo#methods-template) function.
+
+If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the Gantt Toolbar contents.
+
+If an `Array` value is assigned, it will be treated as the list of commands displayed in the Gantt Toolbar. Commands can be custom or built-in ("append", "pdf").
+
+The "append" command adds a new task to the gantt.
+
+The "pdf" command exports the gantt in PDF format.
+
+#### Example - configure the Gantt Toolbar as a string template
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: "<p>My string template in a paragraph.</p>",
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+#### Example - configure the Gantt Toolbar template with a function
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: kendo.template("<p>My function template.</p>"),
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+#### Example - configure the Gantt Toolbar as an array of commands
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { name: "append" },
+        { name: "pdf" }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+### toolbar.name `String`
+
+The name of the toolbar command. Either a built-in ("append" and "pdf") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-gantt-name`.
+This class can be used to obtain reference to the button after Gantt initialization and attach click handlers.
+
+#### Example - specify the name of the command
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { name: "append" },
+        { name: "pdf" },
+        { name: "custom" }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+
+    $(".k-gantt-custom").click(function(e){
+        // handler body
+    });
+    </script>
+
+### toolbar.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the command. By default renders a button.
+
+#### Example - set the template as a function
+    <div id="gantt"></div>
+    <script id="template" type="text/x-kendo-template">
+    <a class="k-button" href="\#" onclick="return toolbar_click()">Command</a>
+    </script>
+    <script>
+    function toolbar_click() {
+      console.log("Toolbar command is clicked!");
+      return false;
+    }
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { template: kendo.template($("#template").html()) }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+#### Example - set the template as a string
+    <div id="gantt"></div>
+    <script>
+    function toolbar_click() {
+      console.log("Toolbar command is clicked!");
+      return false;
+    }
+    $("#gantt").kendoGantt({
+      toolbar: [
+        {
+          template: '<a class="k-button" href="\\#" onclick="return toolbar_click()">Command</a>'
+        }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+### toolbar.text `String`
+
+The text displayed by the command button. If not set the [name](#configuration-toolbar.name)` option would be used as the button text instead.
+
+#### Example - set the text of the toolbar button
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { name: "append", text: "Add new" }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
     });
     </script>
 
@@ -1559,188 +2045,6 @@ The [template](/api/framework/kendo#methods-template) used to render the year sl
           type: "year",
           yearHeaderTemplate: "#=kendo.toString(start, 'yyyy')#",
           selected: true
-        }
-      ]
-    });
-    </script>
-
-### toolbar `String|Function|Array`
-
-If a `String` value is assigned to the `toolbar` configuration option, it will be treated as a single string template for the whole Gantt Toolbar,
-and the string value will be passed as an argument to a [`kendo.template()`](/api/framework/kendo#methods-template) function.
-
-If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the Gantt Toolbar contents.
-
-If an `Array` value is assigned, it will be treated as the list of commands displayed in the Gantt Toolbar. Commands can be custom or built-in ("append", "pdf").
-
-The "append" command adds a new task to the gantt.
-
-The "pdf" command exports the gantt in PDF format.
-
-#### Example - configure the Gantt Toolbar as a string template
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      toolbar: "<p>My string template in a paragraph.</p>",
-      dataSource: [
-        {
-          id: 1,
-          orderId: 0,
-          parentId: null,
-          title: "Task1",
-          start: new Date("2014/6/17 9:00"),
-          end: new Date("2014/6/17 11:00")
-        }
-      ]
-    });
-    </script>
-
-#### Example - configure the Gantt Toolbar template with a function
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      toolbar: kendo.template("<p>My function template.</p>"),
-      dataSource: [
-        {
-          id: 1,
-          orderId: 0,
-          parentId: null,
-          title: "Task1",
-          start: new Date("2014/6/17 9:00"),
-          end: new Date("2014/6/17 11:00")
-        }
-      ]
-    });
-    </script>
-
-#### Example - configure the Gantt Toolbar as an array of commands
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      toolbar: [
-        { name: "append" },
-        { name: "pdf" }
-      ],
-      dataSource: [
-        {
-          id: 1,
-          orderId: 0,
-          parentId: null,
-          title: "Task1",
-          start: new Date("2014/6/17 9:00"),
-          end: new Date("2014/6/17 11:00")
-        }
-      ]
-    });
-    </script>
-
-### toolbar.name `String`
-
-The name of the toolbar command. Either a built-in ("append" and "pdf") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-gantt-name`.
-This class can be used to obtain reference to the button after Gantt initialization and attach click handlers.
-
-#### Example - specify the name of the command
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      toolbar: [
-        { name: "append" },
-        { name: "pdf" },
-        { name: "custom" }
-      ],
-      dataSource: [
-        {
-          id: 1,
-          orderId: 0,
-          parentId: null,
-          title: "Task1",
-          start: new Date("2014/6/17 9:00"),
-          end: new Date("2014/6/17 11:00")
-        }
-      ]
-    });
-
-    $(".k-gantt-custom").click(function(e){
-        // handler body
-    });
-    </script>
-
-### toolbar.template `String|Function`
-
-The [template](/api/framework/kendo#methods-template) which renders the command. By default renders a button.
-
-#### Example - set the template as a function
-    <div id="gantt"></div>
-    <script id="template" type="text/x-kendo-template">
-    <a class="k-button" href="\#" onclick="return toolbar_click()">Command</a>
-    </script>
-    <script>
-    function toolbar_click() {
-      console.log("Toolbar command is clicked!");
-      return false;
-    }
-    $("#gantt").kendoGantt({
-      toolbar: [
-        { template: kendo.template($("#template").html()) }
-      ],
-      dataSource: [
-        {
-          id: 1,
-          orderId: 0,
-          parentId: null,
-          title: "Task1",
-          start: new Date("2014/6/17 9:00"),
-          end: new Date("2014/6/17 11:00")
-        }
-      ]
-    });
-    </script>
-
-#### Example - set the template as a string
-    <div id="gantt"></div>
-    <script>
-    function toolbar_click() {
-      console.log("Toolbar command is clicked!");
-      return false;
-    }
-    $("#gantt").kendoGantt({
-      toolbar: [
-        {
-          template: '<a class="k-button" href="\\#" onclick="return toolbar_click()">Command</a>'
-        }
-      ],
-      dataSource: [
-        {
-          id: 1,
-          orderId: 0,
-          parentId: null,
-          title: "Task1",
-          start: new Date("2014/6/17 9:00"),
-          end: new Date("2014/6/17 11:00")
-        }
-      ]
-    });
-    </script>
-
-### toolbar.text `String`
-
-The text displayed by the command button. If not set the [name](#configuration-toolbar.name)` option would be used as the button text instead.
-
-#### Example - set the text of the toolbar button
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      toolbar: [
-        { name: "append", text: "Add new" }
-      ],
-      dataSource: [
-        {
-          id: 1,
-          orderId: 0,
-          parentId: null,
-          title: "Task1",
-          start: new Date("2014/6/17 9:00"),
-          end: new Date("2014/6/17 11:00")
         }
       ]
     });
@@ -2157,6 +2461,35 @@ The task which should be removed. Also accepts a string which is the `uid` of th
     var gantt = $("#gantt").data("kendoGantt");
     var task = gantt.dataSource.at(0);
     gantt.removeTask(task);
+    </script>
+
+### saveAsPDF
+
+Initiates the PDF export. Also fires the "pdfExport" event.
+
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+
+#### Example - manually initiate PDF export
+    <button id="export">Export to PDF</button>
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    
+    $("#export").click(function(e) {
+        var gantt = $("#gantt").data("kendoGantt");
+        gantt.saveAsPdf();
+    });
     </script>
 
 ### select
@@ -3184,6 +3517,64 @@ The widget instance which fired the event.
     });
     var gantt = $("#gantt").data("kendoGantt");
     gantt.bind("moveEnd", moveEnd);
+    </script>
+
+### pdfExport
+
+Fired when the user clicks the "Export to PDF" toolbar button.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Gantt`
+
+The widget instance which fired the event.
+
+##### e.preventDefault `Function`
+
+If invoked the gantt will not save the generated file.
+
+#### Example - subscribe to the "pdfExport" event during initialization
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ],
+        pdfExport: function(e) {
+        }
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.saveAsPdf();
+    </script>
+
+#### Example - subscribe to the "pdfExport" event after initialization
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    var gantt = $("#gantt").data("kendoGantt");
+    gantt.bind("pdfExport", function(e) {
+    });
+    gantt.saveAsPdf();
     </script>
 
 ### resizeStart
