@@ -1199,6 +1199,32 @@ The text similar to "Add below" displayed as Gantt "add below" buttons.
     });
     </script>
 
+### messages.actions.pdf `String` *(default: "Export to PDF")*
+
+The text of "Export to PDF" button of the gantt toolbar.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+	  toolbar: [ "pdf" ],
+      messages: {
+        actions: {
+          pdf: "PDF Export"
+        }
+      }
+    });
+    </script>
+
 ### selectable `Boolean` *(default: true)*
 
 If set to `false` the user won't be able to select tasks in the Gantt. By default selection is enabled and triggers the [change event](#events-change).
