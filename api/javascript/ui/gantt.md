@@ -1538,6 +1538,188 @@ The [template](/api/framework/kendo#methods-template) used to render the year sl
     });
     </script>
 
+### toolbar `String|Function|Array`
+
+If a `String` value is assigned to the `toolbar` configuration option, it will be treated as a single string template for the whole Gantt Toolbar,
+and the string value will be passed as an argument to a [`kendo.template()`](/api/framework/kendo#methods-template) function.
+
+If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the Gantt Toolbar contents.
+
+If an `Array` value is assigned, it will be treated as the list of commands displayed in the Gantt Toolbar. Commands can be custom or built-in ("append", "pdf").
+
+The "append" command adds a new task to the gantt.
+
+The "pdf" command exports the gantt in PDF format.
+
+#### Example - configure the Gantt Toolbar as a string template
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: "<p>My string template in a paragraph.</p>",
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+#### Example - configure the Gantt Toolbar template with a function
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: kendo.template("<p>My function template.</p>"),
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+#### Example - configure the Gantt Toolbar as an array of commands
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { name: "append" },
+        { name: "pdf" }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+### toolbar.name `String`
+
+The name of the toolbar command. Either a built-in ("append" and "pdf") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-gantt-name`.
+This class can be used to obtain reference to the button after Gantt initialization and attach click handlers.
+
+#### Example - specify the name of the command
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { name: "append" },
+        { name: "pdf" },
+        { name: "custom" }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+
+    $(".k-gantt-custom").click(function(e){
+        // handler body
+    });
+    </script>
+
+### toolbar.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the command. By default renders a button.
+
+#### Example - set the template as a function
+    <div id="gantt"></div>
+    <script id="template" type="text/x-kendo-template">
+    <a class="k-button" href="\#" onclick="return toolbar_click()">Command</a>
+    </script>
+    <script>
+    function toolbar_click() {
+      console.log("Toolbar command is clicked!");
+      return false;
+    }
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { template: kendo.template($("#template").html()) }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+#### Example - set the template as a string
+    <div id="gantt"></div>
+    <script>
+    function toolbar_click() {
+      console.log("Toolbar command is clicked!");
+      return false;
+    }
+    $("#gantt").kendoGantt({
+      toolbar: [
+        {
+          template: '<a class="k-button" href="\\#" onclick="return toolbar_click()">Command</a>'
+        }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+### toolbar.text `String`
+
+The text displayed by the command button. If not set the [name](#configuration-toolbar.name)` option would be used as the button text instead.
+
+#### Example - set the text of the toolbar button
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      toolbar: [
+        { name: "append", text: "Add new" }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
 ## Fields
 
 ### dataSource `kendo.data.GanttDataSource`
