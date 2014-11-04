@@ -1777,11 +1777,11 @@ The text displayed by the command button. If not set the [name](#configuration-t
 ### views `Array`
 
 The views displayed by the Gantt and their configuration. The array items can be either objects specifying the view configuration or strings representing the view types (assuming default configuration).
-By default the Kendo UI Gantt widget displays all three ("day", "week", and "month") views.
+By default the Kendo UI Gantt widget displays "day", "week", and "month" views.
 
 ### views.type `String`
 
-The type of the view. The built-in views are: "day", "week", and "month".
+The type of the view. The built-in views are: "day", "week", "month" and "year".
 
 ### views.selected `Boolean` *(default: false)*
 
