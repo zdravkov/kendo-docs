@@ -1095,6 +1095,31 @@ The text similar to "Month" displayed as Gantt "month" view title.
     });
     </script>
 
+### messages.views.year `String` *(default: "Year")*
+
+The text similar to "Year" displayed as Gantt "year" view title.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          Year: "Year view"
+        }
+      }
+    });
+    </script>
+
 ### messages.actions `Object`
 
 The configuration of the Gantt action messages. Use this option to customize or localize the Gantt action messages.
@@ -3238,6 +3263,7 @@ The name of the view which is about to be selected. The possible values are:
 * day
 * week
 * month
+* year
 
 ##### e.preventDefault `Function`
 
