@@ -6,7 +6,8 @@ description: Multiselect used for column filtering
 
 The following runnable sample demonstrates how to use a Kendo UI MultiSelect widget for column filter.
 ```html
-     <div id="grid"></div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <div id="grid"></div>
     <script>
       var data = [
         { id: 1, name: "Fred", key: 1, value: "Green" },
