@@ -347,8 +347,14 @@ A bound column is declared via the `Bound` method. It has the following settings
 
 ### ClientTemplate
 
-A [Kendo template](/framework/templates/overview) which specifies the way the column is displayed.
-> The `ClientTemplate` is used when he grid is configured for [ajax binding](/aspnet-mvc/helpers/grid/ajax-binding).
+A [Kendo UI template](/framework/templates/overview) which specifies the way the column is displayed.
+
+> The `ClientTemplate` is used when he grid is configured for **[ajax binding](/aspnet-mvc/helpers/grid/ajax-binding)**.
+
+Client templates defined in server-side code are URL encoded before sent to the client.
+As a result, a plus sign, which is used **inside a binding expression**, will be lost (e.g. `"#= 3 + 5 #"`).
+There are two possible workarounds - use an auxiliary Javascript function in the global scope, which returns the desired value (e.g. `"#= auxFunction(3, 5) #"`),
+or encode the plus sign (e.g. `"#= 3 %2b 5 #"`)
 
 #### Example - set the column client template
 
