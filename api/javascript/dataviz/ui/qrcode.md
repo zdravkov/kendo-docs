@@ -206,9 +206,115 @@ Removes data entries in order to avoid memory leaks.
     var qrCode = $("#qrCode").data("kendoQRCode");
     qrCode.destroy();
 
+### exportImage
+Exports the QRCode as an image.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PNG image encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Parameters for the exported image.
+
+##### options.width `String`
+The width of the exported image. Defaults to the QRCode width.
+
+##### options.height `String`
+The height of the exported image. Defaults to the QRCode height.
+
+#### Returns
+`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+
+#### Example - Exporting a QRCode to an image
+    <div id="qrCode"></div>
+    <script>
+        $("#qrCode").kendoQRCode({
+            value: "mailto:clientservice@kendoui.com"
+        });
+
+        var qrCode = $("#qrCode").getKendoQRCode();
+        qrCode.exportImage().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "QRCode.png"
+            });
+        });
+    </script>
+
+
+### exportPDF
+Exports the QRCode as a PDF file.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PDF file encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `kendo.drawing.PDFOptions` *(optional)*
+Parameters for the exported PDF file.
+
+#### Returns
+`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
+
+#### Example - Exporting a QRCode to a PDF file
+    <div id="qrCode"></div>
+    <script>
+        $("#qrCode").kendoQRCode({
+            value: "mailto:clientservice@kendoui.com"
+        });
+
+        var qrCode = $("#qrCode").getKendoQRCode();
+        qrCode.exportPDF({ paperSize: "A5", landscape: true }).done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "QRCode.pdf"
+            });
+        });
+    </script>
+
+
+### exportSVG
+Exports the QRCode as an SVG document.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
+#### Returns
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
+
+#### Example - Exporting a QRCode to an SVG document
+    <div id="qrCode"></div>
+    <script>
+        $("#qrCode").kendoQRCode({
+            value: "mailto:clientservice@kendoui.com"
+        });
+
+        var qrCode = $("#qrCode").getKendoQRCode();
+        qrCode.exportSVG().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "QRCode.svg"
+            });
+        });
+    </script>
+
 ### imageDataURL
 
 Returns a PNG image of the qrcode encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+> This method is deprecated and replaced by [exportImage](#methods-exportImage).
 
 #### Returns
 
@@ -309,6 +415,8 @@ An object with the new options. All [configuration](qrcode#configuration) option
 
 Returns the [SVG](http://www.w3.org/Graphics/SVG/) representation of the qrcode. The returned string is a self-contained SVG document that can be used as is or converted to other formats using tools like [Inkscape](http://inkscape.org/) and
 [ImageMagick](http://www.imagemagick.org/). Both programs provide command-line interface suitable for server-side processing.
+
+> This method is obsoleted by [exportSVG](#methods-exportSVG), but will remain fully functional.
 
 #### Returns
 
