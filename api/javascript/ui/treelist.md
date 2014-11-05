@@ -73,17 +73,17 @@ The table cells would look like this: `<td class="table-cell" style="text-align:
 
 ### columns.command `Array`
 
-The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit", "destroy" or "createchild").
+The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit", "destroy" or "createChild").
 
 The "edit" built-in command switches the current table row in edit mode.
 
-The "createchild" built-in command adds new child item to the current table row and switches in edit mode.
+The "createChild" built-in command adds new child item to the current table row and switches in edit mode.
 
 The "destroy" built-in command removes the data item to which the current table row is bound.
 
 Custom commands are supported by specifying the [click](#configuration-columns.command.click) option.
 
-> The built-in "edit", "destroy" and "createchild" commands work *only* if editing is enabled via the [editable](#configuration-editable) option. The "edit" command supports "inline" and "popup" editing modes.
+> The built-in "edit", "destroy" and "createChild" commands work *only* if editing is enabled via the [editable](#configuration-editable) option. The "edit" command supports "inline" and "popup" editing modes.
 
 #### Example - set command as array of strings
 
@@ -132,7 +132,7 @@ Custom commands are supported by specifying the [click](#configuration-columns.c
 
 ### columns.command.name `String`
 
-The name of the command. The built-in commands are "edit", "createchild" and "destroy". Can be set to a custom value.
+The name of the command. The built-in commands are "edit", "createChild" and "destroy". When set to a custom value, it is rendered as a `data-command` attribute.
 
 #### Example - set the command name
 
@@ -780,11 +780,13 @@ and the string value will be passed as an argument to a [`kendo.template()`](/ap
 
 If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the treelist Toolbar contents.
 
-If an `Array` value is assigned, it will be treated as the list of commands displayed in the treelist Toolbar. Commands can be custom or built-in ("cancel", "create", "save", "excel").
+If an `Array` value is assigned, it will be treated as the list of commands displayed in the treelist Toolbar. Commands can be custom or built-in ("create", "pdf", "excel").
 
 The "create" command adds an empty data item to the treelist.
 
 The "excel" command exports the treelist data in MS Excel format.
+
+The "pdf" command exports the treelist data in PDF format.
 
 #### Example - configure the TreeList Toolbar as a string template
 
@@ -841,7 +843,7 @@ The "excel" command exports the treelist data in MS Excel format.
 
 ### toolbar.name `String`
 
-The name of the toolbar command. Either a built-in ("create" and "excel") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
+The name of the toolbar command. Either a built-in ("create", "pdf", "excel") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
 This class can be used to obtain reference to the button after TreeList initialization and attach click handlers.
 
 #### Example - specify the name of the command
