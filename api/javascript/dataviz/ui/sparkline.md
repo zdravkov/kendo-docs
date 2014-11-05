@@ -3682,6 +3682,37 @@ The line length of the notes.
     });
     </script>
 
+### series.zIndex `Number`
+An optional Z-index that can be used to change the default stacking order of series.
+
+The series with the highest Z-index will be placed on top.
+
+Series with no Z-index will use the default stacking order based on series type.
+For example line series will be on top with bar and area following below.
+
+#### Example - Change the series stacking order
+    <div id="sparkline"></div>
+    <script>
+        $("#sparkline").kendoSparkline({
+          series: [{
+            type: "line",
+            zIndex: 1,
+            color: "grey",
+            data: [1, 2, 1, 1, 2, 1]
+          }, {
+            type: "line",
+            color: "blue",
+            zIndex: 3,
+            data: [2, 2, 2, 2, 2, 2]
+          }, {
+            type: "area",
+            color: "red",
+            zIndex: 2,
+            data: [0, 2, 0, 0, 2, 0]
+          }]
+        });
+    </script>
+
 ### seriesColors `Array`
 
 The default colors for the chart's series. When all colors are used, new colors are pulled from the start again.
