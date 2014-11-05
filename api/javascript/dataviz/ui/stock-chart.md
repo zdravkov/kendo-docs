@@ -5936,15 +5936,12 @@ Specifies a line consisting of a repeating pattern of long-dash-dot-dot.
 The width of the border.
 
 ### series.notes `Object`
-
 The series notes configuration.
 
 ### series.notes.icon `Object`
-
 The icon of the notes.
 
 ### series.notes.position `String`
-
 The position of the series note.
 
 * "top" - The note is positioned on the top.
@@ -5976,7 +5973,6 @@ The supported values are:
 * "square" - the marker shape is square.
 * "triangle" - the marker shape is triangle.
 * "cross" - the marker shape is cross.
-
 
 ### series.notes.icon.visible `Boolean` *(default: "true")*
 The icon visibility.
@@ -6032,14 +6028,12 @@ The rotation angle of the label. By default the label are not rotated.
 The format used to display the notes label. Uses [kendo.format](/api/framework/kendo#methods-format). Contains one placeholder ("{0}") which represents the axis value.
 
 ### series.notes.label.position `String` *(default: "inside")*
-
 The position of the labels.
 
 * "inside" - the label is positioned inside of the icon.
 * "outside" - the label is positioned outside of the icon.
 
 ### series.notes.line `Object`
-
 The line of the notes.
 
 ### series.notes.line.width `Number`
