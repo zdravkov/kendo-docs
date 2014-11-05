@@ -10,6 +10,206 @@ Represents the Kendo UI Gantt widget. Inherits from [Widget](/api/framework/widg
 
 ## Configuration
 
+### assignments `Object`
+
+The configuration of the assignments of the gantt resources. An assignment is a one-to-one mapping between a gantt task and a gantt resource containing the number of units for which a resource is assigned to a task.
+
+### assignments.dataSource `Object|Array|kendo.data.DataSource`
+
+The data source which contains assignment data items.  Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
+instance.
+
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/api/framework/datasource) instance using that value as data source configuration.
+
+If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+
+#### Example - set the assignments data source
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 0,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/7/01 11:00")
+        },
+         {
+           id: 1,
+           orderId: 1,
+           parentId: null,
+           title: "Task2",
+           start: new Date("2014/6/20 12:00"),
+           end: new Date("2014/7/02 14:00")
+         }],
+        resources: {
+          dataSource: [
+            { id: 0, name: "Resource 1", color: "green", format: "p0" },
+            { id: 1, name: "Resource 2", color: "#32cd32", format: "p0" }
+          ]
+        },
+      assignments: {
+        dataSource: [
+          { taskId: 0, resourceId: 0, value: 1 },
+          { taskId: 0, resourceId: 1, value: 1 },
+          { taskId: 1, resourceId: 1, value: 1 }
+        ]
+      },
+      views: ["week"],
+      columns: [
+        { field: "title", title: "Title" },
+        { field: "resources", title: "Task Resources" }
+      ]
+    });
+    </script>
+
+### assignments.dataResourceIdField `String` *(default: "resourceId")*
+
+The field of the assignment data item which represents the resource id.
+
+#### Example - set the assignments data resourceId field
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 0,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/7/01 11:00")
+        },
+         {
+           id: 1,
+           orderId: 1,
+           parentId: null,
+           title: "Task2",
+           start: new Date("2014/6/20 12:00"),
+           end: new Date("2014/7/02 14:00")
+         }],
+        resources: {
+          dataSource: [
+            { id: 0, name: "Resource 1", color: "green", format: "p0" },
+            { id: 1, name: "Resource 2", color: "#32cd32", format: "p0" }
+          ]
+        },
+      assignments: {
+        dataResourceIdField: "resource",
+        dataSource: [
+          { taskId: 0, resource: 0, value: 1 },
+          { taskId: 0, resource: 1, value: 1 },
+          { taskId: 1, resource: 1, value: 1 }
+        ]
+      },
+      views: ["week"],
+      columns: [
+        { field: "title", title: "Title" },
+        { field: "resources", title: "Task Resources" }
+      ]
+    });
+    </script>
+
+### assignments.dataTaskIdField `String` *(default: "taskId")*
+
+The field of the assignment data item which represents the task id.
+
+#### Example - set the assignments data taskId field
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 0,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/7/01 11:00")
+        },
+         {
+           id: 1,
+           orderId: 1,
+           parentId: null,
+           title: "Task2",
+           start: new Date("2014/6/20 12:00"),
+           end: new Date("2014/7/02 14:00")
+         }],
+        resources: {
+          dataSource: [
+            { id: 0, name: "Resource 1", color: "green", format: "p0" },
+            { id: 1, name: "Resource 2", color: "#32cd32", format: "p0" }
+          ]
+        },
+      assignments: {
+        dataTaskIdField: "id",
+        dataSource: [
+          { id: 0, resourceId: 0, value: 1 },
+          { id: 0, resourceId: 1, value: 1 },
+          { id: 1, resourceId: 1, value: 1 }
+        ]
+      },
+      views: ["week"],
+      columns: [
+        { field: "title", title: "Title" },
+        { field: "resources", title: "Task Resources" }
+      ]
+    });
+    </script>
+
+### assignments.dataValueField `String` *(default: "value")*
+
+The field of the assignment data item which represents the amount of the assigned resource.
+
+#### Example - set the assignments data value field
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [
+        {
+          id: 0,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/7/01 11:00")
+        },
+         {
+           id: 1,
+           orderId: 1,
+           parentId: null,
+           title: "Task2",
+           start: new Date("2014/6/20 12:00"),
+           end: new Date("2014/7/02 14:00")
+         }],
+        resources: {
+          dataSource: [
+            { id: 0, name: "Resource 1", color: "green", format: "p0" },
+            { id: 1, name: "Resource 2", color: "#32cd32", format: "p0" }
+          ]
+        },
+      assignments: {
+        dataValueField: "assignedValue",
+        dataSource: [
+          { taskId: 0, resourceId: 0, assignedValue: 1 },
+          { taskId: 0, resourceId: 1, assignedValue: 1 },
+          { taskId: 1, resourceId: 1, assignedValue: 1 }
+        ]
+      },
+      views: ["week"],
+      columns: [
+        { field: "title", title: "Title" },
+        { field: "resources", title: "Task Resources" }
+      ]
+    });
+    </script>
+
 ### autoBind `Boolean` *(default: true)*
 
 If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
@@ -2071,6 +2271,189 @@ The [template](/api/framework/kendo#methods-template) used to render the year sl
           yearHeaderTemplate: "#=kendo.toString(start, 'yyyy')#",
           selected: true
         }
+      ]
+    });
+    </script>
+
+### resources `Object`
+
+The configuration of the gantt resource(s). A gantt resource is optional metadata that can be associated
+with a gantt task.
+
+### resources.dataFormatField `String` *(default: "format")*
+
+The field of the resource data item containing the format of the resource value, which could be assigned to a gantt task.
+The data item format value could be any valid [kendo format](/api/javascript/kendo#methods-format).
+
+#### Example - set the resource data format field
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 0,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      resources: {
+        dataFormatField: "unit",
+        dataSource: [
+          { id: 0, name: "Resource 1", color: "green", unit: "p0" },
+          { id: 1, name: "Resource 2", color: "#32cd32", unit: "p0" }
+        ]
+      },
+      assignments: {
+        dataSource: [
+          { taskId: 0, resourceId: 1, value: 1 }
+        ]
+      },
+      views: ["week"],
+      columns: [
+        { field: "title", title: "Title" },
+        { field: "resources", title: "Task Resources" }
+      ]
+    });
+    </script>
+
+### resources.dataColorField `String` *(default: "color")*
+
+The field of the resource data item which contains the resource color.
+
+#### Example - set the resource data color field
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 0,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      resources: {
+        dataColorField: "key",
+        dataSource: [
+          { id: 0, name: "Resource 1", key: "green" },
+          { id: 1, name: "Resource 2", key: "#32cd32" }
+        ]
+      },
+      assignments: {
+        dataSource: [
+          { taskId: 0, resourceId: 1, value: 1 }
+        ]
+      },
+      views: ["week"]
+    });
+    </script>
+
+### resources.dataSource `Object|Array|kendo.data.DataSource`
+
+The data source which contains resource data items.  Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
+instance.
+
+If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/api/framework/datasource) instance using that value as data source configuration.
+
+If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+
+#### Example - set the resource data source
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 0,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      resources: {
+        dataSource: [
+          { id: 0, name: "Resource 1", color: "green" },
+          { id: 1, name: "Resource 2", color: "#32cd32" }
+        ]
+      },
+      assignments: {
+        dataSource: [
+          { taskId: 0, resourceId: 1, value: 1 }
+        ]
+      },
+      views: ["week"]
+    });
+    </script>
+
+### resources.dataTextField `String` *(default: "text")*
+
+The field of the resource data item which represents the resource text.
+
+#### Example - set the resource data text field
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 0,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      resources: {
+        dataTextField: "resource",
+        dataSource: [
+          { id: 0, resource: "Resource 1", color: "green" },
+          { id: 1, resource: "Resource 2", color: "#32cd32" }
+        ]
+      },
+      assignments: {
+        dataSource: [
+          { taskId: 0, resourceId: 1, value: 1 }
+        ]
+      },
+      views: ["week"]
+    });
+    </script>
+
+### resources.field `String` *(default: "resources")*
+
+The field of the gantt task which contains the assigned resource objects.
+
+#### Example - specify the resource field
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 0,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17 9:00"),
+        end: new Date("2014/7/01 11:00")
+      }],
+      resources: {
+        field: "taskResources",
+        dataSource: [
+          { id: 0, name: "Resource 1", color: "green", format: "p0" },
+          { id: 1, name: "Resource 2", color: "#32cd32", format: "p0" }
+        ]
+      },
+      assignments: {
+        dataSource: [
+          { taskId: 0, resourceId: 1, value: 1 }
+        ]
+      },
+      views: ["week"],
+      columns: [
+        { field: "title", title: "Title" },
+        { field: "taskResources", title: "Task Resources" }
       ]
     });
     </script>
