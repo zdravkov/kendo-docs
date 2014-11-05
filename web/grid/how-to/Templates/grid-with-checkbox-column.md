@@ -1,7 +1,7 @@
 ---
-title: Kendo UI Grid with checkbox column and editing
-page_title: Kendo UI Grid with checkbox column and editing
-description: Kendo UI Grid with checkbox column and editing
+title: Checkbox template column and editing
+page_title: Checkbox template column and editing
+description: Checkbox template column and editing
 ---
 
 The following runnable sample demonstrates how to use checkboxes in Kendo UI Grid column templates and perform editing.

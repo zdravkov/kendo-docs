@@ -1,7 +1,7 @@
 ---
-title: Change group header position on Kendo UI Grid with locked columns
-page_title: Change group header position on Kendo UI Grid with locked columns
-description: Change group header position on Kendo UI Grid with locked columns
+title: Change group header position with locked columns
+page_title: Change group header position with locked columns
+description: Change group header position with locked columns
 ---
 
 The following runnable sample demonstrates how to change the group header position, when locked columns are used, in order to show them on the right table.

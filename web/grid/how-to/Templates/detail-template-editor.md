@@ -1,7 +1,7 @@
 ---
-title: Custom editor in Kendo UI Grid detail template
-page_title: Custom editor in Kendo UI Grid detail template
-description: Custom editor in Kendo UI Grid detail template
+title: Custom editor in detail template
+page_title: Custom editor in detail template
+description: Custom editor in detail template
 ---
 
 The following runnable sample demonstrates how to create custom editor in a Kendo UI Grid detail template

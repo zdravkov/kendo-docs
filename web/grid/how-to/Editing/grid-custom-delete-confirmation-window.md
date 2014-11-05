@@ -1,7 +1,7 @@
 ---
-title: Custom confirmation window in Kendo UI Grid
-page_title: Custom confirmation window in Kendo UI Grid
-description: Custom confirmation window in Kendo UI Grid
+title: Custom confirmation window
+page_title: Custom confirmation window
+description: Custom confirmation window
 ---
 
 The following runnable sample demonstrates how to customize the default Kendo UI delete confirmation alert box using Kendo UI Window

@@ -1,10 +1,10 @@
 ---
-title: Kendo Grid CRUD operations with local storage as a database.
-page_title: Kendo Grid CRUD operations with local storage as a database.
-description: Kendo Grid example how to perform CRUD operations using the local storage as a database.
+title: CRUD operations with local storage as a database.
+page_title: Grid CRUD operations with local storage as a database.
+description: Grid example how to perform CRUD operations using the local storage as a database.
 ---
 
-# Kendo Grid CRUD operations with local storage as a database
+# CRUD operations with local storage as a database
 
 ```html
 <button onClick="reset()" class="k-button">Reset test data</button>

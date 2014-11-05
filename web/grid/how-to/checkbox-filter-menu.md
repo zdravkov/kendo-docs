@@ -1,7 +1,7 @@
 ---
-title: Checkbox filter menu filtering with Kendo UI Grid
-page_title: Checkbox filter menu filtering with Kendo UI Grid
-description: Checkbox filter menu filtering with Kendo UI Grid
+title: Checkbox filter menu filtering
+page_title: Checkbox filter menu filtering
+description: Checkbox filter menu filtering
 ---
 
 The following runnable sample demonstrates how to create checkbox filter menu functionality in a Kendo UI Grid

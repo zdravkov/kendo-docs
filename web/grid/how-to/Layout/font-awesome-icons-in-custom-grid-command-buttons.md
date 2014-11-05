@@ -1,7 +1,7 @@
 ---
-title: FontAwesome icons in custom Kendo UI Grid command buttons
-page_title: FontAwesome icons in custom Kendo UI Grid command buttons
-description: FontAwesome icons in custom Kendo UI Grid command buttons
+title: FontAwesome icons in custom command buttons
+page_title: FontAwesome icons in custom command buttons
+description: FontAwesome icons in custom command buttons
 ---
 
 The following runnable sample demonstrates how to use FontAwesome icons inside a Kendo UI Grid custom command button.

@@ -1,6 +1,6 @@
 ---
-title: Customize the delete confirmation dialog of Kendo UI Grid
-page_title: Customize the delete confirmation dialog of Kendo UI Grid
+title: Customize the delete confirmation dialog
+page_title: Customize the delete confirmation dialog
 description: Kendo UI Grid example that demonstrates how to customize the delete confirmation dialog using Kendo UI templates, Kendo UI Window widget and the remove method of the Grid's dataSource.
 ---
 

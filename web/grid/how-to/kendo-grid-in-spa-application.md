@@ -1,6 +1,6 @@
 ---
-title: Kendo UI Grid in a Kendo UI SPA application
-page_title: Kendo UI Grid in a Kendo UI SPA application
+title: Using Grid in a Kendo UI SPA application
+page_title: Using Grid in a Kendo UI SPA application
 description: This example shows how to use Kendo UI Grid widget in a Kendo UI SPA application.
 ---
 

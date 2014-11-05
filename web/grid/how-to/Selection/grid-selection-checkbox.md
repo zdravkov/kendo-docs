@@ -1,10 +1,10 @@
 ---
-title: Kendo Grid selection with checkbox column
-page_title: Kendo Grid selection with checkbox column
+title: Selection with checkbox column
+page_title: Selection with checkbox column
 description: Kendo Grid example how to select Kendo Grid rows with checkbox column and how to get the IDs of all selected items.
 ---
 
-# Kendo Grid selection with checkbox column
+# Kendo UI Grid selection with checkbox column
 
 This example demonstrates how to:
 - select grid row using a checkbox

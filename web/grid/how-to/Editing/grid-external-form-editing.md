@@ -1,6 +1,6 @@
 ---
-title: Edit Kendo UI Grid records using an external form
-page_title: Edit Kendo UI Grid records using an external form
+title: Edit records using an external form
+page_title: Edit records using an external form
 description: Kendo UI Grid example that demonstrates how to edit Grid records using an external form
 ---
 

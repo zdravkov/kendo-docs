@@ -1,7 +1,7 @@
 ---
-title: Copy from Excel to Kendo UI Grid
-page_title: Copy from Excel to Kendo UI Grid
-description: Copy from Excel to Kendo UI Grid
+title: Copy data from Excel
+page_title: Copy data from Excel
+description: Copy data from Excel
 ---
 
 The following runnable sample demonstrates how to create a Kendo UI Grid that supports pasting from Excel

@@ -1,7 +1,7 @@
 ---
-title: Editing using column template in Kendo UI Grid
-page_title: Editing using column template in Kendo UI Grid
-description: Editing using column template in Kendo UI Grid
+title: Editing using column template
+page_title: Editing using column template
+description: Editing using column template
 ---
 
 The following runnable sample demonstrates how to render input editor in a column template, and provide editing functionality.

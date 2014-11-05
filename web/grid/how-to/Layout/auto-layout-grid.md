@@ -1,7 +1,7 @@
 ---
-title: Auto layout for Kendo UI Grid
-page_title: Auto layout for Kendo UI Grid
-description: Auto layout for Kendo UI Grid
+title: Creating and using auto layout
+page_title: Creating and using auto layout
+description: Creating and using auto layout
 ---
 
 The following runnable sample demonstrates how to create auto layout for the Kendo UI Grid. Please note that the auto layout requires disabled Grid scrolling

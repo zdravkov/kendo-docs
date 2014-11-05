@@ -1,7 +1,7 @@
 ---
-title: Kendo UI Grid with custom number editor using Kendo UI NumericTextBox
-page_title: Kendo UI Grid with custom number editor using Kendo UI NumericTextBox
-description: Kendo UI Grid with custom number editor using Kendo UI NumericTextBox
+title: Custom number editor using Kendo UI NumericTextBox
+page_title: Custom number editor using Kendo UI NumericTextBox
+description: Custom number editor using Kendo UI NumericTextBox
 ---
 
 The following runnable sample demonstrates how to create Kendo UI Grid with custom number editor using Kendo UI NumericTextBox 

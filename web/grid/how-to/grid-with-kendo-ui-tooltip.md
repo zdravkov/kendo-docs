@@ -1,7 +1,7 @@
 ---
-title: Show Kendo UI Tooltip for Kendo UI Grid columns
-page_title: Show Kendo UI Tooltip for Kendo UI Grid columns
-description: Show Kendo UI Tooltip for Kendo UI Grid columns
+title: Show Kendo UI Tooltip for column records
+page_title: Show Kendo UI Tooltip for column records
+description: Show Kendo UI Tooltip for columns records
 ---
 
 The following runnable sample demonstrates how to show Kendo UI Tooltip for Kendo UI Grid columns.
