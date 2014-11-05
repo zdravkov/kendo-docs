@@ -6551,28 +6551,13 @@ The line color of the notes.
 
 The length of the connecting lines in pixels.
 
-#### Example - set the series notes color width
+### series.zIndex `Number`
+An optional Z-index that can be used to change the default stacking order of series.
 
-    <div id="chart"></div>
-    <script>
-    $("#chart").kendoChart({
-      dataSource: {
-        data: [{
-          value: 1,
-          noteText: "A"
-        }]
-      },
-      series: [{
-        field: "value",
-        noteTextField: "noteText",
-        notes: {
-          line: {
-            length: 20
-          }
-        }
-      }]
-    });
-    </script>
+The series with the highest Z-index will be placed on top.
+
+Series with no Z-index will use the default stacking order based on series type.
+For example line series will be on top with bar and area following below.
 
 ### seriesColors `Array`
 
