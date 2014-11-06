@@ -4,10 +4,14 @@ page_title: Apply minimum width during column resize
 description: Kendo Grid example that demonstrates how to apply minimum column width during column resize.
 ---
 
+# Apply minimum width during column resize
+
 The code snippet below demonstrates how to use the internal Grid column resizing API to enforce a minimum column width during column resize.
 When the user starts resizing, a "start" event is fired and some references are saved. Then they are used in the "resize" event, which is fired continuously during resizing. 
 The new column width is periodically checked and if decreases below the set minimum width, the minimum column width is enforced back.
 Since the Grid table(s) also receive a width style during resizing, it is overridden as well, when needed. A similar logic can be used to enforce a maximum width.
+
+#### Example
 
 ```html
     <div id="grid"></div>

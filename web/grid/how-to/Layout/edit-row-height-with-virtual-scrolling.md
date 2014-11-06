@@ -4,7 +4,11 @@ page_title: Adjust row height with virtual scrolling
 description: Adjust row height in with virtual scrolling
 ---
 
+# Adjust row height in with virtual scrolling
+
 The following runnable sample demonstrates how to adjust the row height of a Kendo UI Grid with virtual scrolling enabled.
+
+#### Example
 
 ```html
     <div id="grid" style="height: 380px"></div>

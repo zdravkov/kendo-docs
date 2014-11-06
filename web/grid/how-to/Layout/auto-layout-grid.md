@@ -4,7 +4,12 @@ page_title: Creating and using auto layout
 description: Creating and using auto layout
 ---
 
+# Creating and using auto layout
+
 The following runnable sample demonstrates how to create auto layout for the Kendo UI Grid. Please note that the auto layout requires disabled Grid scrolling
+
+#### Example
+
 ```html
     <style>
       html

@@ -4,7 +4,11 @@ page_title: FontAwesome icons in custom command buttons
 description: FontAwesome icons in custom command buttons
 ---
 
+# FontAwesome icons in custom command buttons
+
 The following runnable sample demonstrates how to use FontAwesome icons inside a Kendo UI Grid custom command button.
+
+#### Example
 
 ```html
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
