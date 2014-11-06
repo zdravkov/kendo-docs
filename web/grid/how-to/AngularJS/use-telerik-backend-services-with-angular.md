@@ -6,6 +6,7 @@ description: Kendo Grid example that demontrates how to bind the Grid widget to 
 
 The example below demonstrates how to use AngularJS directives to declare a grid bound to the Telerik Backend Services.
 
+#### Binding an Kendo UI Grid to Telerik Backend Services in AngularJS
 ```html
 <div id="example" ng-app="KendoDemos">
   <div ng-controller="MyCtrl">
