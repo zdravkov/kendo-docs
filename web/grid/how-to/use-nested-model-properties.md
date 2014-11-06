@@ -4,7 +4,12 @@ page_title: Use nested model properties
 description: Use nested model properties
 ---
 
+# Use nested model properties
+
 The following runnable sample demonstrates how to use nested model properties. CRUD operations are not fully configured.
+
+#### Example:
+
 ```html
     <div id="grid"></div>
     <script>

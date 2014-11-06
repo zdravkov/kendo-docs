@@ -4,7 +4,12 @@ page_title: Copy data from Excel
 description: Copy data from Excel
 ---
 
+# Copy data from Excel
+
 The following runnable sample demonstrates how to create a Kendo UI Grid that supports pasting from Excel
+
+#### Example:
+
 ```html
      <div id="grid" tabindex="0"></div>
     <script>

@@ -6,6 +6,10 @@ description: Grid example how to perform CRUD operations using the local storage
 
 # CRUD operations with local storage as a database
 
+The following runnable sample demonstrates how to perform CRUD operations with local storage data.
+
+#### Example:
+
 ```html
 <button onClick="reset()" class="k-button">Reset test data</button>
 <div id="grid"></div>

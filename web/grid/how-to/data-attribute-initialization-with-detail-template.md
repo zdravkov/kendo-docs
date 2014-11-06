@@ -4,7 +4,11 @@ page_title: Data attribute initialization with detail template
 description: Data attribute initialization with detail template
 ---
 
+# Data attribute initialization with detail template
+
 The following runnable sample demonstrates how to initialize a Kendo UI Grid using data attributes and include a detail template
+
+#### Example:
 
 ```html
      <div id="grid" 

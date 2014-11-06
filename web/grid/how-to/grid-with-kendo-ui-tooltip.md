@@ -4,7 +4,12 @@ page_title: Show Kendo UI Tooltip for column records
 description: Show Kendo UI Tooltip for columns records
 ---
 
+# Show Kendo UI Tooltip for columns records
+
 The following runnable sample demonstrates how to show Kendo UI Tooltip for Kendo UI Grid columns.
+
+#### Example:
+
 ```html
     <div id="grid"></div> 
     <style>

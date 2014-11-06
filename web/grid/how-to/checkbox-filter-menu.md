@@ -4,7 +4,12 @@ page_title: Checkbox filter menu filtering
 description: Checkbox filter menu filtering
 ---
 
+# Checkbox filter menu filtering
+
 The following runnable sample demonstrates how to create checkbox filter menu functionality in a Kendo UI Grid
+
+#### Example:
+
 ```html
      <div id="grid"></div>
 

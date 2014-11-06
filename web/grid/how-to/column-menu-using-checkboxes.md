@@ -4,7 +4,12 @@ page_title: Column menu using checkboxes
 description: Column menu using checkboxes
 ---
 
+# Column menu using checkboxes
+
 The following runnable sample demonstrates how to use checkboxes inside a Kendo UI Grid column menu.
+
+#### Example:
+
 ```html
      <div id="grid"></div>
     <script>

@@ -4,7 +4,11 @@ page_title: Hide the detail grid and indicator when the DataSource returns empty
 description: Hide the detail grid and indicator when the DataSource returns empty array
 ---
 
+# Hide the detail grid and indicator when the DataSource returns empty array
+
 The following runnable sample demonstrates how to hide the detail grid and indicator when the parent dataSource returns an empty array.
+
+#### Example:
 
 ```html
             <div id="example">

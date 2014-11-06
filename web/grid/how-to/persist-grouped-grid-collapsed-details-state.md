@@ -4,7 +4,12 @@ page_title: Persist grouped grid collapsed details state
 description: Persist grouped grid collapsed details state
 ---
 
+# Persist grouped grid collapsed details state
+
 The following runnable sample demonstrates how to persisted the collapsed state of grouped records in a Kendo UI Grid.
+
+#### Example:
+
 ```html
   <div id="grid"></div>
     <script>

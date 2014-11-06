@@ -4,7 +4,12 @@ page_title: Multiselect used for column filtering
 description: Multiselect used for column filtering
 ---
 
+# Multiselect used for column filtering
+
 The following runnable sample demonstrates how to use a Kendo UI MultiSelect widget for column filter.
+
+#### Example:
+
 ```html
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <div id="grid"></div>
