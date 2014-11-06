@@ -4,7 +4,11 @@ page_title: Prevent selection for checkbox cell
 description: Prevent selection for checkbox cell
 ---
 
+# Prevent selection for checkbox cell
+
 The following runnable sample demonstrates how to prevent the cell selection for checkbox cell or any cell.
+
+#### Example
 
 ```html
     <div id="grid"></div>

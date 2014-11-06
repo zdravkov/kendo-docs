@@ -4,7 +4,11 @@ page_title: Persist row selection while paging
 description: Persist row selection while paging
 ---
 
+# Persist row selection while paging
+
 The following runnable sample demonstrates how to persists row selection in a grid, while different pages of the dataSource are shown.
+
+#### Example
 
 ```html
     <div id="grid"></div>

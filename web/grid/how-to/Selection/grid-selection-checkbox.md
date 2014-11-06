@@ -11,6 +11,8 @@ This example demonstrates how to:
 - preserve that selection between pages
 - get the selected item IDs from all pages
 
+#### Example
+
 ```html
 <div id="grid"></div>
 <button id="showSelection">Show selected IDs</button>

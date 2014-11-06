@@ -4,7 +4,11 @@ page_title: Select multiple rows with checkboxes
 description: Select multiple rows with checkboxes
 ---
 
+# Select multiple rows with checkboxes
+
 The following runnable sample demonstrates how to select multiple rows using checkbox template.
+
+#### Example
 
 ```html
   <div id="grid"></div>
