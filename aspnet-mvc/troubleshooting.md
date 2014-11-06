@@ -283,3 +283,7 @@ To address this issue, add the following line to the bundleconfig.cs file:
 This will prevent the unobtrusive ajax script from loading twice (i.e. the minified and non-minified) in debug mode, which is what causes the double postback.
 
 Alternatively, just remove the non minified script from the project (this obviously has implications for debugging, if you're inclined to debug the scripts included in the project template).
+
+## Kendo UI Theme Images do not Appear when using CSS Bundling
+
+Refer to the [CSS Bundling](/aspnet-mvc/fundamentals#css-bundling) documentation.

@@ -49,7 +49,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
                     // "~/Scripts/kendo/kendo.timezones.min.js", // uncomment if using the Scheduler
                     "~/Scripts/kendo/kendo.aspnetmvc.min.js"));
 
-3. Add a style bundle for Kendo UI.
+3. Add a style bundle for Kendo UI. **It is important to read the [CSS Bundling](/aspnet-mvc/fundamentals#css-bundling) documentation**.
 
         bundles.Add(new StyleBundle("~/Content/kendo/css").Include(
                     "~/Content/kendo/kendo.common-bootstrap.min.css",

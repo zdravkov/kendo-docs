@@ -157,3 +157,40 @@ The `ToClientTemplate` method instructs the widget wrapper to escape its own scr
         })
     </script>
 
+## CSS Bundling
+
+ASP.NET bundling allows multiple stylesheets to be combined on the web server, so that the browser loads them as a single file.
+When using this feature with the Kendo UI stylesheets, the **virtual location of the bundle must match the physical location of the Kendo UI CSS files**.
+This is because the image URLs in the Kendo UI themes are **relative** and the browser will search for the theme images depending on the virtual URL.
+
+Imagine the following scenario:
+
+* The Kendo UI theme CSS file is located in `~/Content/kendo/...VERSION.../kendo.default.min.css`.
+* The images for the Kendo UI Default theme are located in `~/Content/kendo/...VERSION.../Default/`
+* The images in the Kendo UI Default theme CSS code are referenced like this: `"Default/sprite.png"`
+* The preferred StyleBundle virtual URL is `~/Content/kendo/css`.
+
+The above scenario will result in the following implementation, which is **incorrect**.
+
+    bundles.Add(new StyleBundle("~/Content/kendo/css").Include(
+        "~/Content/kendo/...VERSION.../kendo.common.min.css",
+        "~/Content/kendo/...VERSION.../kendo.default.min.css"));
+
+The specified virtual bundle URL will make the browser believe that it is registering a CSS file, which is named `css` and is located in the `~/Content/kendo/` folder.
+As a result, when the browser sees a `"Default/sprite.png"` image in the CSS code, it will make a request to `~/Content/kendo/Default/sprite.png`, but the image is not there.
+
+The following implementation is **correct** and the theme images will be loaded successfully.
+
+    bundles.Add(new StyleBundle("~/Content/kendo/...VERSION.../css").Include(
+        "~/Content/kendo/...VERSION.../kendo.common.min.css",
+        "~/Content/kendo/...VERSION.../kendo.default.min.css"));
+
+The following implementation is also **correct**, assuming that the Kendo UI Default theme images are located in folder `~/Content/kendo/Default/`:
+
+    bundles.Add(new StyleBundle("~/Content/kendo/css").Include(
+        "~/Content/kendo/kendo.common.min.css",
+        "~/Content/kendo/kendo.default.min.css"));
+
+The above explanation and requirements are applicable to all stylesheets that use relative image URLs. This is not a limitation of Kendo UI.
+Theoretically, CSS files can use absolute image URLs, and then the virtual bundle URL can be random, but such an implementation is suitable only
+for custom tailor-made stylesheets, which are intended to work in a specific application.
