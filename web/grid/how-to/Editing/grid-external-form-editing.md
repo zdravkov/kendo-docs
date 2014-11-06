@@ -8,6 +8,8 @@ description: Kendo UI Grid example that demonstrates how to edit Grid records us
 
 This example demonstrates how to configure editing with custom UI form, create editors for `string`, `number` and `boolean` field and add validation.
 
+#### Example
+
 ```html
 <div id="grid"></div>
 <div id="editForm">

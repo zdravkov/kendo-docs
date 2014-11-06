@@ -4,7 +4,11 @@ page_title: Custom editor shown outside the Grid using the selected date item
 description: Custom editor shown outside the Grid using the selected date item
 ---
 
+# Custom editor shown outside the Grid using the selected date item
+
 The following runnable sample demonstrates how to use custom editor outside the Kendo UI Grid, that uses the currently selected item.
+
+#### Example: 
 
 ```html
      <form id="gridEditor">

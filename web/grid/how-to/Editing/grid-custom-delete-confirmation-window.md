@@ -4,7 +4,11 @@ page_title: Custom confirmation window
 description: Custom confirmation window
 ---
 
+# Custom confirmation window
+
 The following runnable sample demonstrates how to customize the default Kendo UI delete confirmation alert box using Kendo UI Window
+
+#### Example
 
 ```html
     <div id="grid"></div>

@@ -4,7 +4,11 @@ page_title: Use different editors based on data item property
 description: Use different editors based on data item property
 ---
 
+# Use different editors based on data item property
+
 The following runnable sample demonstrates how to use different editors based on a property from the current data item record.
+
+#### Example: 
 ```html
     <div id="example" class="k-content">
       <div id="grid"></div>

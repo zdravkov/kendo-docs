@@ -4,7 +4,11 @@ page_title: Prevent page navigation when in edit mode
 description: Prevent page navigation when in edit mode
 ---
 
+# Prevent page navigation when in edit mode
+
 The following runnable sample demonstrates how to prevent page navigation when Kendo UI Grid is in edit mode.    
+
+#### Example
 
 ```html
   <div id="example">

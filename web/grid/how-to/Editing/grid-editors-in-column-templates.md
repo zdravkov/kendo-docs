@@ -4,7 +4,11 @@ page_title: Editing using column template
 description: Editing using column template
 ---
 
+# Editing using column template
+
 The following runnable sample demonstrates how to render input editor in a column template, and provide editing functionality.
+
+#### Example: 
 
 ```html
     <div id="grid"></div>

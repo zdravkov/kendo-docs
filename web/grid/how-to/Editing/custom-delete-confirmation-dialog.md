@@ -6,6 +6,10 @@ description: Kendo UI Grid example that demonstrates how to customize the delete
 
 # Customize the delete confirmation dialog of Kendo UI Grid
 
+The following example demonstrates how customize the delete 
+
+#### Example:
+
 ```html
 <div id="grid"></div>
 <div id="window"></div>

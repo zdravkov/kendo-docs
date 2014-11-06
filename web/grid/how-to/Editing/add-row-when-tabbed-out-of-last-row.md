@@ -4,7 +4,12 @@ page_title: Add new row when tabbed out of the last row
 description: Add new row when tabbed out of the last row
 ---
 
+# Add new row when tabbed out of the last row
+
 The following runnable sample demonstrates how to add a new row when the user navigates out of the last row in the grid.
+
+#### Example:
+
 ```html
     <div id="grid"></div>
     <script>

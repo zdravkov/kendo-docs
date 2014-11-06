@@ -4,7 +4,11 @@ page_title: Prevent editing for records based on boolean value
 description: Prevent editing for records based on boolean value
 ---
 
+#Prevent editing for records based on boolean value
+
 The following runnable sample demonstrates how to prevent editing for a record based on a boolean field in the data item.
+
+#### Example
 ```html
     <h3>You are allowed to edit only products that are not discontinued</h3>
     <div id="grid"></div>

@@ -4,7 +4,11 @@ page_title: Custom number editor using Kendo UI NumericTextBox
 description: Custom number editor using Kendo UI NumericTextBox
 ---
 
+# Custom number editor using Kendo UI NumericTextBox
+
 The following runnable sample demonstrates how to create Kendo UI Grid with custom number editor using Kendo UI NumericTextBox 
+
+#### Example
 
 ```html
   <div>I want to change 11.11% discount to 22.22% via editing. But 22.00% is thrown back at input of 0.2222</div>

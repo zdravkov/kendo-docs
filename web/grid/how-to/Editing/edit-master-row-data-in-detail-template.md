@@ -4,7 +4,12 @@ page_title: Edit master row data in detail template
 description: Edit master row data in detail template
 ---
 
+# Edit master row data in detail template
+
 The following runnable sample demonstrates how to create edit functionality in a detail template for data that is part of the mater row record.
+
+#### Example: 
+
 ```html
   <div id="grid"></div>
   <script>

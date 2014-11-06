@@ -4,7 +4,11 @@ page_title: Build datasource with currying for a custom editor
 description: Build datasource with currying for a custom editor
 ---
 
+# Build datasource with currying for a custom editor
+
 The following runnable sample demonstrates how to create a custom dataSource based on the data in a custom editor.
+
+#### Example:
 ```html
     <script src="../content/shared/js/products.js"></script>
     <div id="example">

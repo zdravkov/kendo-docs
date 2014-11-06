@@ -4,7 +4,11 @@ page_title: Show edit buttons for editable recrods only
 description: Show edit buttons for editable recrods only
 ---
 
+# Show edit buttons for editable recrods only
+
 The following runnable sample demonstrates how to show edit buttons only for records that meet certain criteria.
+
+#### Example
 ```html
     <div id="example" class="k-content">
       <div id="grid"></div>

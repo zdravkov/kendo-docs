@@ -4,9 +4,11 @@ page_title: Use AngularJS in popup editor template
 description: Kendo UI Grid example that demontrates how to use AngularJS in Grid popup editor template.
 ---
 
-# The example below demonstrates how to use AngularJS directives in custom Grid popup editor template.
+# Use AngularJS in popup editor template
 
-#### Example
+The example below demonstrates how to use AngularJS directives in custom Grid popup editor template.
+
+#### Example:
 
 ```html
 <div id="example" ng-app="KendoDemos">

@@ -4,7 +4,12 @@ page_title: Delete multiple columns in Grid with checkboxes
 description: Delete multiple columns in Grid with checkboxes
 ---
 
+# Delete multiple columns in Grid with checkboxes
+
 The following runnable sample demonstrates how to delete multiple columns selected with checkboxes
+
+#### Example
+
 ```html
     <script src="http://demos.kendoui.com/content/shared/js/people.js"></script>
     <div id="example" class="k-content">
