@@ -5971,11 +5971,11 @@ Retrieves the options that are currently enabled or disabled on the Grid, also g
         { field: "name" },
         { field: "age" }
       ],
-      sortable: true
+      sortable: true,
       dataSource: [
           { name: "Jane Doe", age: 30 },
           { name: "John Doe", age: 33 }
-      ],
+      ]
     });
     var grid = $("#grid").data("kendoGrid");
     var options = grid.getOptions();
