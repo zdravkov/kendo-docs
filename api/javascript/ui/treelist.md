@@ -388,6 +388,44 @@ The field to which the column is bound. The value of this field is displayed by 
         });
     </script>
 
+### columns.footerTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the footer table cell for the column.
+
+The fields which can be used in the template are:
+
+* average - the value of the "average" aggregate (if specified)
+* count - the value of the "count" aggregate (if specified)
+* max - the value of the "max" aggregate (if specified)
+* min - the value of the "min" aggregate (if specified)
+* sum - the value of the "sum" aggregate (if specified)
+* data - provides access to all available aggregates, e.g. `data.fieldName1.sum` or `data.fieldName2.average`
+
+#### Example - specify column footer template
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+          columns: [
+            { field: "name" },
+            { field: "age",
+              footerTemplate: "Min: #: min # Max: #: max #"
+            }
+          ],
+          dataSource: {
+            data: [
+              { id: 1, parentId: null, name: "Jane Doe", age: 30 },
+              { id: 2, parentId: 1, name: "John Doe", age: 33 },
+              { id: 3, parentId: 1, name: "Joseph Doe", age: 42 }
+            ],
+            aggregate: [
+                { field: "age", aggregate: "min" },
+                { field: "age", aggregate: "max" }
+            ]
+          }
+        });
+    </script>
+
 ### columns.format `String`
 
 The format that is applied to the value before it is displayed. Takes the form "{0:format}" where "format" is a [standard number format](/api/framework/kendo#standard-number-formats),
