@@ -4,7 +4,11 @@ page_title: Row template using dates
 description: Row template using dates
 ---
 
+# Row template using dates
+
 The following runnable sample demonstrates how to use dates inside a Kendo UI Grid row template.
+
+#### Example
 ```html
      <div id="example">
       <table id="grid">

@@ -4,7 +4,11 @@ page_title: Refresh grid in detail template
 description: Refresh grid in detail template
 ---
 
+# Refresh grid in detail template
+
 The following runnable sample demonstrates how to refresh a child grid in a detail template using external button
+
+#### Example
 
 ```html
     <div id="grid"></div>

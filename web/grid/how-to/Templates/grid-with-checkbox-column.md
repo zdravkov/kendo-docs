@@ -4,7 +4,11 @@ page_title: Checkbox template column and editing
 description: Checkbox template column and editing
 ---
 
+# Checkbox template column and editing
+
 The following runnable sample demonstrates how to use checkboxes in Kendo UI Grid column templates and perform editing.
+
+#### Example
 
 ```html
    <div id="grid"></div>

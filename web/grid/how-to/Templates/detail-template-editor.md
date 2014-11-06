@@ -4,7 +4,11 @@ page_title: Custom editor in detail template
 description: Custom editor in detail template
 ---
 
+# Custom editor in detail template
+
 The following runnable sample demonstrates how to create custom editor in a Kendo UI Grid detail template
+
+#### Example
 
 ```html
     <div id="grid"></div>
