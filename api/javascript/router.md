@@ -6,6 +6,10 @@ title: Router
 
 ## Configuration
 
+### ignoreCase `Boolean` *(default: true)*
+
+Introduced with Q3 2014. If set to `false`, the router instance will perform case sensitive match of the url against the defined routes.
+
 ### pushState `Boolean` *(default: false)*
 
 If set to true, the router will use the [history pushState API](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history#The_pushState().C2.A0method).
