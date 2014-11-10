@@ -23,7 +23,8 @@ The "Sushi" application is a Single Page Application build with AngularJS and Ke
 - "About" - a remote view.
 
 The full source code of the application is available on GitHub: [https://github.com/telerik/kendo-mobile-sushi](https://github.com/telerik/kendo-mobile-sushi)
-For a live preview please [click here](http://demos.telerik.com/kendo-ui/mobile-apps/sushi).
+
+For a live preview of the application that we are going to build please [click here](http://demos.telerik.com/kendo-ui/mobile-apps/sushi).
 
 ## 1. Set up
 
@@ -106,7 +107,7 @@ The "Home" View will display a list of featured products. It will be also the ap
 
 Run the application. Now there should be no errors and the screen should display the index View.
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS)
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS).
 
 To include Kendo UI widgets in the application you may use **custom tags or standard tags with custom attributes**. Both syntaxes are valid.
 Check the following example:
@@ -210,9 +211,9 @@ It is mandatory to also define a template that determines how the data will be d
 At this step we will define a basic template to verify that the data is loaded and displayed correctly. Later we will enhance the template with image, button and link to details view.
 If you run the application now you should see a list of products.
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/3)
-
 ![products view](image-02.png)
+
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/3).
 
 ## 6. Add application layout
 
@@ -253,13 +254,14 @@ Because omitting the quotes is a common error, Angular-Kendo will emit a warning
 
 Reload the application and see the new look. Have in mind that at present the "Our menu", "Cart", "Account" and "About" views do not exists yet which is why clicking on any of the links will result in a JavaScript error.
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/4)
-
 ![index view with layout](image-03.png)
+
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/4).
 
 ## 7. Create "Our Menu" View
 
 The "Our Menu" View will display a list of all products grouped by their first letter in alphabetical order.
+
 Add a new mobile View called "Our Menu" and add a new ListView with ID "menuList" inside.
 Then create a new controlled called "menuController" that will handle the functionality in this view. Bind the ListView to the "productsDataSource".
 
@@ -316,7 +318,7 @@ The "filterFeatured" and "groupByCategory" event handlers should be declared in 
         }
     }])
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/5)
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/5).
 
 ## 9. Customize templates
 
@@ -378,9 +380,9 @@ Last we have to tell the ListViews to use the new template. Add `k-template="sus
     <kendo-mobile-list-view id="menuList" class="item-list" k-template="templates.menuTemplate" k-data-source="sushiCart.productsDataSource">
     </kendo-mobile-list-view>
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/6)
-
 ![grouped listview](image-04.png)
+
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/6).
 
 ## 10. Display details for each record
 
@@ -447,9 +449,9 @@ Implement the "setCurrentItem" method in the "sushiCart" service.
 
 Now if the user clicks on an item the application will navigate to a new View and displaying the product details.
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/7)
-
 ![product details](image-05.png)
+
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/7).
 
 ## 11. Create the "Cart" View
 
@@ -491,9 +493,9 @@ Add "cartController" with dependency to the "sushiCart" and "templates" services
         $scope.templates = templates;
     }])
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/8)
-
 ![empty cart](image-06.png)
+
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/8).
 
 ## 12. Add some functionality
 
@@ -605,7 +607,7 @@ The "showLabel" method is used to determine whether the ordered label should be 
 
     <span class="added" ng-show="sushiCart.showLabel()">{{sushiCart.currentItem.ordered}}</span>
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/9)
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/9).
 
 ## 13. Create "Account" View
 
@@ -635,7 +637,7 @@ Inside the View create a ListView widget, unlike other ListView widgets in the a
 Note that it is possible to include other widgets in the ListView items, the corresponding directives will be automatically executed.
 Since this View will not provide any extra functionality it does not need a controller.
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/10)
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/10).
 
 ## 14. Create "Done" View
 
@@ -656,7 +658,7 @@ The "Done" View will be shown after checkout and will indicate that the operatio
         </kendo-mobile-content>
     </kendo-mobile-view>
 
-For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/11)
+For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/11).
 
 ## 15. Remote Views
 
