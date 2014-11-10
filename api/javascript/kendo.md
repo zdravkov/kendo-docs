@@ -789,7 +789,8 @@ Determines the transform origin point based on two elements' boxes. The method i
 
 ### keys
 
-A collection of special keys' codes, which can be accessed by user-friendly names, instead of their numeric values.
+A dictionary of special keys' ASCII codes, which can be accessed by user-friendly names, instead of their numeric values.
+The collection includes only key codes, which are used by the Kendo UI widgets' source code.
 
     INSERT: 45,
     DELETE: 46,
