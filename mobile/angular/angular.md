@@ -1,7 +1,7 @@
 ---
 title: AngularJS Integration
 page_title: Kendo UI Mobile Application AngularJS Directive
-position: 100
+position: 1
 ---
 
 # AngularJS Integration

@@ -1,3 +1,9 @@
+---
+title: Building applications with Kendo UI Mobile and AngularJS
+page_title: Tutorial: Building 'Sushi'
+description: Tutorial: Building applications with Kendo UI Mobile and AngularJS
+position: 2
+---
 # Tutorial: Building applications with Kendo UI Mobile and AngularJS
 
 Since Q3 2014, Kendo UI includes AngularJS directives for the mobile Application and the mobile View, SplitView, and ModalView components.
