@@ -6489,7 +6489,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 ##### e.container `jQuery`
 
-The jQuery object that represents the edit form container element.
+The jQuery object that represents the edit container element. More information is available in the [edit event arguments' description](#events-edit).
 
 ##### e.model `kendo.data.Model`
 
@@ -7284,7 +7284,12 @@ The event handler function context (available via the `this` keyword) will be se
 
 ##### e.container `jQuery`
 
-The jQuery object representing the container element. That element contains the editing UI.
+The jQuery object of the edit container element, which wraps the editing UI. Depending on the [Grid edit mode](#configuration-editable.mode), the container is different:
+
+* "incell" edit mode - the container element is a table cell
+* "inline" edit mode - the container is a table row
+* "popup" edit mode - the container is a Kendo UI Window [element](/framework/widgets/wrapper-element), which provides an easy way to obtain a reference to the Window widget object,
+e.g. to [attach additional events](/basics/events-and-methods#bind-to-events-after-widget-initialization).
 
 ##### e.model `kendo.data.Model`
 
@@ -7650,7 +7655,7 @@ The data item to which the table row is bound.
 
 ##### e.container `jQuery`
 
-The jQuery object representing the current editor container element. If the [editable.mode](#configuration-editable.mode) is "incell", the container element will be the edited cell. If the mode is "inline", the container will be the edited row. If it is "popup" then the container element will be the window element.
+The jQuery object representing the current edit container element. More information is available in the [edit event arguments' description](#events-edit).
 
 ##### e.sender `kendo.ui.Grid`
 
