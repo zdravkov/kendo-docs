@@ -75,8 +75,9 @@ The example below demonstrates how to change ActionSheet options dynamically on 
       function onOpen(e) {
         var list = this.element;
         var cancel = list.children("li:last");
+        var person = e.target.parent().find('h3').eq(1).text();
 
-        list.html('<li><a data-action="call">Call</a><li>');
+        list.html('<li><a data-action="call">Call '+person+'</a><li>');
         list.append(cancel);
       }
 
