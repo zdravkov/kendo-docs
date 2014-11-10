@@ -1,9 +1,10 @@
 ---
-title: Building applications with Kendo UI Mobile and AngularJS
-page_title: Tutorial: Building 'Sushi'
-description: Tutorial: Building applications with Kendo UI Mobile and AngularJS
+title: "Building applications with Kendo UI Mobile and AngularJS"
+page_title: "Tutorial: Building Sushi sample app"
+description: "Tutorial: Building applications with Kendo UI Mobile and AngularJS"
 position: 2
 ---
+
 # Tutorial: Building applications with Kendo UI Mobile and AngularJS
 
 Since Q3 2014, Kendo UI includes AngularJS directives for the mobile Application and the mobile View, SplitView, and ModalView components.
@@ -12,7 +13,17 @@ This tutorial introduces the Kendo UI Mobile AngularJS integration and will walk
 
 ## Application description
 
-//explain what the application does
+The "Sushi" application is a Single Page Application build with AngularJS and Kendo UI Mobile. It has six different views:
+
+- "Home" - uses a ListView widget to show the featured Sushi products.
+- "Our menu" - shows all available Sushi products in a grouped ListView widget.
+- "Cart" - shows the added to cart Sushi products.
+- "Account" - shows a mock account information.
+- "Details" - shows details for a specific Sushi product. This view uses URL parameters to determine the Sushi product.
+- "About" - a remote view.
+
+The full source code of the application is available on GitHub: [https://github.com/telerik/kendo-mobile-sushi](https://github.com/telerik/kendo-mobile-sushi)
+For a live preview please [click here](http://demos.telerik.com/kendo-ui/mobile-apps/sushi).
 
 ## 1. Set up
 
@@ -141,7 +152,7 @@ Use the `ng-controller` directive to associate the "indexController" with the "i
 ### 5.2. Add service and application DataSource
 
 In this tutorial we will load the data from an external JSON file called "menu.json".
-The data is going to be used in multiple application Views which is why the DataSource instance should be shared across multiple controllers.
+The data is going to be used in multiple application Views which is why the DataSource instance should be shared across multiple controllers.
 To organize the code we will create an [AngularJS service](https://docs.angularjs.org/guide/services) called "sushiCart" that will hold the application DataSource and methods.
 The service will be later injected in the mobile View controllers.
 
