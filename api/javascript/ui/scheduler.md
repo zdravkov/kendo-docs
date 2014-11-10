@@ -1097,6 +1097,31 @@ The text similar to "Event" displayed in scheduler.
     });
     </script>
 
+### messages.pdf `String`
+
+The text displayed by the PDF export button.
+
+#### Example - set the "pdf" message
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      messages: {
+        pdf: "PDF Export"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### messages.save `String`
 
 The text similar to "Save" displayed in scheduler.
@@ -2886,6 +2911,8 @@ The fields which can be used in the template are:
     });
     </script>
 
+
+
 ### mobile `Boolean|String` *(default: false)*
 
 If set to `true` and the scheduler is viewed on mobile browser it will use adaptive rendering.
@@ -2926,6 +2953,309 @@ Can be set to a string `phone` or `tablet` which will force the widget to use ad
         });
     </script>
 
+### pdf `Object`
+
+Configures the Kendo UI Scheduler PDF export settings.
+
+### pdf.author `String` *(default: null)*
+
+The author of the PDF document.
+
+#### Example - set the author
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        author: "John Doe"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+
+The creator of the PDF document.
+
+#### Example - set the creator
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        creator: "John Doe"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.date `Date`
+
+The date when the PDF document is created. Defaults to `new Date()`.
+
+#### Example - set the date
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        date: new Date("2014/10/10")
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.fileName `String` *(default: "Export.pdf")*
+
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        fileName: "Events.pdf"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.keywords `String` *(default: null)*
+
+Specifies the keywords of the exported PDF file.
+
+#### Example - set the keywords
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        keywords: "events interviews"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.landscape `Boolean` *(default: false)*
+
+Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+
+#### Example - enable landscape mode
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        landscape: true
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.margin `Object`
+
+Specifies the margins of the page (numbers or strings with units). Supported
+units are "mm", "cm", "in" and "pt" (default).
+
+#### Example - set the margins
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        margin: {
+            left: 10,
+            right: "10pt",
+            top: "10mm",
+            bottom: "1in"
+        }
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.margin.bottom `Number|String` *(default: 0)*
+
+The bottom margin. Numbers are considered as "pt" units.
+
+### pdf.margin.left `Number|String` *(default: 0)*
+
+The left margin. Numbers are considered as "pt" units.
+
+### pdf.margin.right `Number|String` *(default: 0)*
+
+The right margin. Numbers are considered as "pt" units.
+
+### pdf.margin.top `Number|String` *(default: 0)*
+
+The top margin. Numbers are considered as "pt" units.
+
+### pdf.paperSize `String|Array` *(default: "auto")*
+
+Specifies the paper size of the PDF document. Can be set to a predefined size, i.e. "A4", "A3" etc,
+or an array of two Number-s specifying the width/height in points (1pt = 1/72in), or strings including unit, i.e. "10mm". Supported
+units are "mm", "cm", "in" and "pt".  The default "auto" means paper size is determined by content.
+
+#### Example - set custom paper size
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        paperSize: ["20mm", "20mm"]
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.proxyURL `String` *(default: null)*
+
+The URL of the server side proxy which will stream the PDF file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
+The developer is responsible for implementing the server-side proxy. Implementation instructions are available here.
+
+#### Example - set the server proxy URL
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        proxyURL: "/save"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.subject `String` *(default: null)*
+
+Sets the subject of the PDF file.
+
+#### Example - set the subject
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        subject: "Events"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### pdf.title `String` *(default: null)*
+
+Sets the title of the PDF file.
+
+#### Example - set the title
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      pdf: {
+        title: "Events"
+      },
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
 ### resources `Array`
 
 The configuration of the scheduler resource(s). A scheduler resource is optional metadata that can be associated
@@ -3458,6 +3788,53 @@ The complete list of the supported timezones is available in the [List of IANA t
         }
     });
     </script>
+
+### toolbar `Array`
+
+List of commands that the scheduler will display in its toolbar as buttons. Currently supports only the "pdf" command.
+
+The "pdf" command exports the scheduler in PDF format.
+
+#### Example - specify the toolbar commands as array of strings
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+#### Example - specify the toolbar commands as array of objects
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: [ { name: "pdf" } ],
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
+### toolbar.name `String`
+
+The name of the command.
+
 
 ### views `Array`
 
@@ -5038,6 +5415,35 @@ Get the relevant resources for a given slot.
 
     </script>
 
+### saveAsPDF
+
+Initiates the PDF export. Also fires the "pdfExport" event.
+
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+
+#### Example - manually initiate PDF export
+
+    <button id="export">Export to PDF</button>
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    $("#export").click(function(e) {
+        var scheduler = $("#scheduler").data("kendoScheduler");
+        scheduler.saveAsPDF();
+    });
+    </script>
+
 ### saveEvent
 
 Saves the scheduler event which is open in the edit form and closes it.
@@ -5884,6 +6290,62 @@ The widget instance which fired the event.
     });
     var scheduler = $("#scheduler").data("kendoScheduler");
     scheduler.bind("navigate", scheduler_navigate);
+    </script>
+
+### pdfExport
+
+Fired when the user clicks the "Export to PDF" toolbar button.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Scheduler`
+
+The widget instance which fired the event.
+
+##### e.preventDefault `Function`
+
+If invoked the scheduler will not save the generated file.
+
+#### Example - subscribe to the "pdfExport" event during initialization
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ],
+      pdfExport: function(e) {
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "pdfExport" event after initialization
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      toolbar: ["pdf"],
+      date: new Date("2013/6/6"),
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    var scheduler = $("#scheduler").data("kendoScheduler");
+    scheduler.bind("pdfExport", function(e) {
+    });
+    scheduler.saveAsPDF();
     </script>
 
 ### remove

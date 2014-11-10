@@ -3714,7 +3714,7 @@ Defines the text of the command buttons that are shown within the Grid. Used pri
 
 ### messages.commands.cancel `String`
 
-Defines the text of "Cancel Changes" button located in the ToolBar of the widget.
+Defines the text of "Cancel Changes" button located in the toolbar of the widget.
 
 #### Example
 
@@ -3768,7 +3768,7 @@ Defines the text of "Cancel" button that is rendered in `inline` or `popup` edit
 
 ### messages.commands.create `String`
 
-Defines the text of "Add new record" button located in the ToolBar of the widget.
+Defines the text of "Add new record" button located in the toolbar of the widget.
 
 #### Example
 
@@ -3875,7 +3875,7 @@ Defines the text of "Export to Excel" button of the grid toolbar.
 
 ### messages.commands.save `String`
 
-Defines the text of "Save Changes" button located in the ToolBar of the widget.
+Defines the text of "Save Changes" button located in the toolbar of the widget.
 
 #### Example
 
@@ -5121,7 +5121,7 @@ and the string value will be passed as an argument to a [`kendo.template()`](/ap
 
 If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the Grid Toolbar contents.
 
-If an `Array` value is assigned, it will be treated as the list of commands displayed in the Grid Toolbar. Commands can be custom or built-in ("cancel", "create", "save", "excel").
+If an `Array` value is assigned, it will be treated as the list of commands displayed in the Grid Toolbar. Commands can be custom or built-in ("cancel", "create", "save", "excel", "pdf").
 
 The "cancel" built-in command reverts any data changes done by the end user.
 
@@ -5130,6 +5130,8 @@ The "create" command adds an empty data item to the grid.
 The "save" command persists any data changes done by the end user.
 
 The "excel" command exports the grid data in MS Excel format.
+
+The "pdf" command exports the grid data in PDF format.
 
 #### Example - configure the Grid Toolbar as a string template
     <div id="grid"></div>
@@ -5203,7 +5205,7 @@ The "excel" command exports the grid data in MS Excel format.
 
 ### toolbar.name `String`
 
-The name of the toolbar command. Either a built-in ("cancel", "create", "save" and "excel") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
+The name of the toolbar command. Either a built-in ("cancel", "create", "save", "excel", "pdf") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
 This class can be used to obtain reference to the button after Grid initialization and attach click handlers.
 
 #### Example - specify the name of the command
@@ -6198,7 +6200,7 @@ Initiates the PDF export. Also fires the "pdfExport" event.
     });
     $("#export").click(function(e) {
         var grid = $("#grid").data("kendoGrid");
-        grid.saveAsPdf();
+        grid.saveAsPDF();
     });
     </script>
 
@@ -7464,7 +7466,7 @@ If invoked the grid will not save the generated file.
       }
     });
     var grid = $("#grid").data("kendoGrid");
-    grid.saveAsPdf();
+    grid.saveAsPDF();
     </script>
 
 #### Example - subscribe to the "pdfExport" event after initialization
@@ -7484,7 +7486,7 @@ If invoked the grid will not save the generated file.
     var grid = $("#grid").data("kendoGrid");
     grid.bind("pdfExport", function(e) {
     });
-    grid.saveAsPdf();
+    grid.saveAsPDF();
     </script>
 
 ### filterMenuInit
