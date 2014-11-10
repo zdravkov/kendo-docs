@@ -792,29 +792,35 @@ Determines the transform origin point based on two elements' boxes. The method i
 A dictionary of special keys' ASCII codes, which can be accessed by user-friendly names, instead of their numeric values.
 The collection includes only key codes, which are used by the Kendo UI widgets' source code.
 
-    INSERT: 45,
-    DELETE: 46,
-    BACKSPACE: 8,
-    TAB: 9,
-    ENTER: 13,
-    ESC: 27,
-    LEFT: 37,
-    UP: 38,
-    RIGHT: 39,
-    DOWN: 40,
-    END: 35,
-    HOME: 36,
-    SPACEBAR: 32,
-    PAGEUP: 33,
-    PAGEDOWN: 34,
-    F2: 113,
-    F10: 121,
-    F12: 123,
-    NUMPAD_PLUS: 107,
-    NUMPAD_MINUS: 109,
-    NUMPAD_DOT: 110
+#### kendo.keys collection
 
-The key codes are usually helpful in keydown, keyup and keypress events. For example:
+    kendo.keys = {
+        INSERT: 45,
+        DELETE: 46,
+        BACKSPACE: 8,
+        TAB: 9,
+        ENTER: 13,
+        ESC: 27,
+        LEFT: 37,
+        UP: 38,
+        RIGHT: 39,
+        DOWN: 40,
+        END: 35,
+        HOME: 36,
+        SPACEBAR: 32,
+        PAGEUP: 33,
+        PAGEDOWN: 34,
+        F2: 113,
+        F10: 121,
+        F12: 123,
+        NUMPAD_PLUS: 107,
+        NUMPAD_MINUS: 109,
+        NUMPAD_DOT: 110
+    }
+
+The key codes are especially helpful in keydown, keyup and keypress event handlers.
+
+#### kendo.keys usage example
 
     function onMyKeyPress(e) {
         // if ENTER key is pressed, do something
