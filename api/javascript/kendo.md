@@ -787,6 +787,41 @@ Determines the transform origin point based on two elements' boxes. The method i
         console.log(kendo.effects.transformOrigin(kendo.effects.box("#bar"), kendo.effects.box("#foo"))); // x: 101, y: 101
     </script>
 
+### keys
+
+A collection of special keys' codes, which can be accessed by user-friendly names, instead of their numeric values.
+
+    INSERT: 45,
+    DELETE: 46,
+    BACKSPACE: 8,
+    TAB: 9,
+    ENTER: 13,
+    ESC: 27,
+    LEFT: 37,
+    UP: 38,
+    RIGHT: 39,
+    DOWN: 40,
+    END: 35,
+    HOME: 36,
+    SPACEBAR: 32,
+    PAGEUP: 33,
+    PAGEDOWN: 34,
+    F2: 113,
+    F10: 121,
+    F12: 123,
+    NUMPAD_PLUS: 107,
+    NUMPAD_MINUS: 109,
+    NUMPAD_DOT: 110
+
+The key codes are usually helpful in keydown, keyup and keypress events. For example:
+
+    function onMyKeyPress(e) {
+        // if ENTER key is pressed, do something
+        if (e.keyCode == kendo.keys.ENTER) {
+            // .....
+        }
+    }
+
 ### support
 
 A range of useful supported by the current browser capabilities and features.
