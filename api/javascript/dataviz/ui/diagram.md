@@ -946,24 +946,152 @@ Prepares the widget for safe removal from the DOM. Detaches all event handlers a
 > This method does not remove the widget element from the DOM.
 
 #### Example
-
     <script>
     $("#diagram").kendoDiagram({
-      dataSource: [
-                      {
-
-                          "name" : "Telerik",
-                          "items": [
-                              {"name": "Kendo"},
-                              {"name": "Icenium"}
-                          ]
-                      }
-                  ],
-      template  : "#= item.name #"
+      dataSource: [{
+          "name" : "Telerik",
+          "items": [
+              {"name": "Kendo"},
+              {"name": "Icenium"}
+          ]
+      }],
+      template: "#= item.name #"
     });
     var diagram = $("#diagram").data("kendoDiagram");
     diagram.destroy();
     </script>
+
+### exportImage
+Exports the diagram content as an image.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The full content of the diagram will be exported in 1:1 scale.
+If exporting the current view is desired then the [kendo.drawing.drawDOM](/api/javascript/drawing#methods-drawDOM)
+method should be called on a container element.
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PNG image encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Parameters for the exported image.
+
+##### options.width `String`
+The width of the exported image. Defaults to the diagram content width.
+
+##### options.height `String`
+The height of the exported image. Defaults to the diagram content height.
+
+#### Returns
+`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+
+#### Example - Exporting a diagram to an image
+    <div id="diagram"></div>
+    <script>
+        $("#diagram").kendoDiagram({
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+        });
+
+        var diagram = $("#diagram").getKendoDiagram();
+        diagram.exportImage().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "diagram.png"
+            });
+        });
+    </script>
+
+
+### exportPDF
+Exports the diagram content as a PDF file.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PDF file encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `kendo.drawing.PDFOptions` *(optional)*
+Parameters for the exported PDF file.
+
+#### Returns
+`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
+
+#### Example - Exporting a diagram to a PDF file
+    <div id="diagram"></div>
+    <script>
+        $("#diagram").kendoDiagram({
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+        });
+
+        var diagram = $("#diagram").getKendoDiagram();
+        diagram.exportPDF().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "diagram.pdf"
+            });
+        });
+    </script>
+
+
+### exportSVG
+Exports the diagram content as an SVG document.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The full content of the diagram will be exported in 1:1 scale.
+If exporting the current view is desired then the [kendo.drawing.drawDOM](/api/javascript/drawing#methods-drawDOM)
+method should be called on a container element.
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
+#### Returns
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
+
+#### Example - Exporting a diagram to an SVG document
+    <div id="diagram"></div>
+    <script>
+        $("#diagram").kendoDiagram({
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+        });
+
+        var diagram = $("#diagram").getKendoDiagram();
+        diagram.exportSVG().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "diagram.svg"
+            });
+        });
+    </script>
+
+
 
 ### resize
 
