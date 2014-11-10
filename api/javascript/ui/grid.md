@@ -1785,7 +1785,9 @@ If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework
 ### detailTemplate `String|Function`
 
 The [template](/api/framework/kendo#methods-template) which renders the detail rows.
+Check [Detail Template](http://demos.telerik.com/kendo-ui/web/grid/detailtemplate.html) for a live demo.
 
+> The detail template content cannot be wider than the total width of all master columns, unless the detail template is scrollable.
 
 #### Example - specify detail template as a function
     <script id="detail-template">
@@ -1826,9 +1828,6 @@ The [template](/api/framework/kendo#methods-template) which renders the detail r
       detailTemplate: "<div>Name: #: name #</div><div>Age: #: age #</div>"
     });
     </script>
-
-> The detail template content cannot be wider than the total width of all master columns, unless the detail template is scrollable.
-Check [Detail Template](http://demos.telerik.com/kendo-ui/web/grid/detailtemplate.html) for a live demo.
 
 ### editable `Boolean|Object` *(default: false)*
 
