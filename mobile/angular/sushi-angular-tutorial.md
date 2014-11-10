@@ -27,7 +27,7 @@ For a live preview please [click here](http://demos.telerik.com/kendo-ui/mobile-
 
 ## 1. Set up
 
-Create a new empty HTML file and include jQuery, AngularJS and Kendo UI. In this tutorial I will [load the prerequisites from CDN](http://docs.telerik.com/kendo-ui/install/cdn).
+Create a new empty HTML file and include jQuery, AngularJS and Kendo UI. In this tutorial we will [load the prerequisites from CDN](http://docs.telerik.com/kendo-ui/install/cdn).
 Alternatively you may [download and host Kendo UI in your project](http://docs.telerik.com/kendo-ui/install/onsite).
 
     <!DOCTYPE html>
@@ -86,7 +86,7 @@ If you run the application at this point and open [Chrome Developer tools](https
 
 ![application error](image-01.png)
 
-This happens because we did not create a mobile View element yet. Let's add one.
+This happens because we have not created a mobile View element yet. Let's add one.
 
 ## 3. Create "Home" View
 
@@ -108,9 +108,8 @@ Run the application. Now there should be no errors and the screen should display
 
 For live preview please click [here](http://dojo.telerik.com/@valchev/exeS)
 
-> To include Kendo UI widgets in the application you may use custom tags or standard tags with custom attributes. Both syntaxes are valid.
-
-For example:
+To include Kendo UI widgets in the application you may use **custom tags or standard tags with custom attributes**. Both syntaxes are valid.
+Check the following example:
 
     <!-- custom tag -->
     <kendo-mobile-view id="index">
@@ -208,7 +207,7 @@ It is mandatory to also define a template that determines how the data will be d
             <div k-template>{{dataItem.name}}</div>
         </kendo-mobile-list-view>
 
-At this step we will define a very basic template to verify that the data is loaded and displayed correctly. Later we will enhance the template with image, button and link to details view.
+At this step we will define a basic template to verify that the data is loaded and displayed correctly. Later we will enhance the template with image, button and link to details view.
 If you run the application now you should see a list of products.
 
 For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/3)
@@ -252,7 +251,7 @@ To tell the "index" View to use the "default" layout we should set its `layout` 
 Without the single inside it will be interpreted as variable name and Angular-Kendo will look for $scope.default variable.
 Because omitting the quotes is a common error, Angular-Kendo will emit a warning in the JavaScript console when such variables are not found.
 
-Reload the application and observe the new look. Have in mind that at present the "Our menu", "Cart", "Account" and "About" views does not exists yet which is why clicking on any of the links will result in JavaScript error.
+Reload the application and see the new look. Have in mind that at present the "Our menu", "Cart", "Account" and "About" views do not exists yet which is why clicking on any of the links will result in a JavaScript error.
 
 For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/4)
 
@@ -261,7 +260,9 @@ For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/4)
 ## 7. Create "Our Menu" View
 
 The "Our Menu" View will display a list of all products grouped by their first letter in alphabetical order.
-Add a new mobile View called "Our Menu", inside it add a new ListView with ID "menuList" and create new controller called "menuController". Bind the ListView to the "productsDataSource".
+Add a new mobile View called "Our Menu" and add a new ListView with ID "menuList" inside.
+Then create a new controlled called "menuController" that will handle the functionality in this view. Bind the ListView to the "productsDataSource".
+
 
     <kendo-mobile-view id="menu" k-title="'Menu'" k-layout="'default'" ng-controller="menuController">
         <kendo-mobile-list-view id="menuList" class="item-list" k-data-source="sushiCart.productsDataSource">
@@ -320,7 +321,7 @@ For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/5)
 ## 9. Customize templates
 
 In this step we will customize the ListView item template - we will add image of the product, information about the price as well as a button that will allow the user to add it to the cart.
-Because both of the ListViews share the same template, we will extract it in a separate `<script>` tag to avoid code duplication.
+Because both ListViews share the same template, we will extract it in a separate `<script>` tag to avoid code duplication.
 
     <script id="menuTemplate" type="text/x-kendo-template">
         <kendo-mobile-button k-on-click="sushiCart.addToCart(kendoEvent, dataItem)" data-item-id="{{dataItem.id}}">
@@ -333,7 +334,7 @@ Because both of the ListViews share the same template, we will extract it in a s
         </a>
     </script>
 
-Inside the template we use AngularJS directives inside the template and the double curly brace notation `{{ }}` to bind expressions to elements.
+Inside the template we use AngularJS directives and the double curly brace notation `{{ }}` to bind expressions to elements.
 
 > It is important to note that this is still a Kendo UI Template so you [must escape the `#` symbols](http://docs.telerik.com/kendo-ui/framework/templates/overview#template-syntax).
 
@@ -452,7 +453,7 @@ For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/7)
 
 ## 11. Create the "Cart" View
 
-The "Cart" View will display a list of products that are already added products, the total price and a "checkout" button.
+The "Cart" View will show the added to cart Sushi products as well as the total price and a "checkout" button.
 
     <kendo-mobile-view id="cart" k-title="'Cart'" k-layout="'default'" ng-controller="cartController">
         <h2 id="total">{{sushiCart.showTotal()}}</h2>
@@ -638,7 +639,7 @@ For live preview please click [here](http://dojo.telerik.com/@valchev/exeS/10)
 
 ## 14. Create "Done" View
 
-The "Done" View will be shown after checkout and will indicate that the operation is successful.
+The "Done" View will be shown after checkout and will indicate that the operation was completed successfully.
 
     <kendo-mobile-view id="done">
         <kendo-mobile-header>
