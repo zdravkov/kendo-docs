@@ -3256,6 +3256,7 @@ Sets the title of the PDF file.
       ]
     });
     </script>
+
 ### resources `Array`
 
 The configuration of the scheduler resource(s). A scheduler resource is optional metadata that can be associated
