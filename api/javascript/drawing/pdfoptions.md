@@ -6,7 +6,7 @@ page_title: API reference for methods and fields of the PDF generation options
 # kendo.drawing.PDFOptions
 PDF generation options.
 
-## Fields
+## Configuration
 
 ### creator `String` *(default: "Kendo UI PDF Generator")*
 The creator of the PDF document.
