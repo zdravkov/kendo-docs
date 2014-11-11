@@ -516,6 +516,17 @@ Defines the handles stroke color.
 
 Defines the selectable options.
 
+### selectable.key `String` *(default: "none")*
+
+Defines the selectable key. The available values are:
+
+* "none" - No activation key
+* "ctrl" - The activation key will be "ctrl"
+* "shift" - The activation key will be "ctrl"
+* "alt" - The activation key will be "ctrl"
+
+> This option is not aplicable for mobile defices
+
 ### selectable.stroke `Object`
 
 Defines the selection stroke configuration.
@@ -531,6 +542,19 @@ Defines the selection stroke width.
 ### selectable.stroke.dashType `String`
 
 Defines the selection dash type.
+
+### pannable `Boolean|Object` *(default: true)*
+
+### pannable.key `String` *(default: "ctrl")*
+
+Defines the pannable key. The available values are:
+
+* "none" - No activation key
+* "ctrl" - The activation key will be "ctrl"
+* "shift" - The activation key will be "ctrl"
+* "alt" - The activation key will be "ctrl"
+
+> This option is not aplicable for mobile defices
 
 ### shapeDefaults `Object`
 
