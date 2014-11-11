@@ -21,12 +21,12 @@ data source is fired. By default the widget will bind to the data source specifi
     <script>
     $("#diagram").kendoDiagram({
         dataSource: [{
-	       "name": "Telerik",
-	       "items": [
-	           {"name": "Kendo"},
-	           {"name": "Icenium"}
-	       ]
-	    }],
+           "name": "Telerik",
+           "items": [
+               {"name": "Kendo"},
+               {"name": "Icenium"}
+           ]
+        }],
         template: "#= item.name #",
         autoBind: false
     });
@@ -1121,6 +1121,16 @@ Sets the data source of the diagram.
 
 The data source to which the widget should be bound.
 
+### setConnectionsDataSource
+
+Sets the connections data source of the diagram.
+
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+The data source to which the widget should be bound.
+
 ### save
 
 Saves the diagram.
@@ -1627,6 +1637,44 @@ The unique identifier of the Shape or Connection
 #### Returns
 
 `Object` the item that has the provided ID.
+
+### edit
+
+Edit diagram connection/shape.
+
+#### Parameters
+
+##### item `Object`
+
+A diagram item to edit.
+
+### cancelEdit
+
+Cancels edit and close the popup form.
+
+### saveEdit
+
+Saves any changes made by the user.
+
+### createShape
+
+Adds an empty shape data item and a popup window will be displayed.
+
+#### Parameters
+
+##### item `Object`
+
+A diagram shape item to edit.
+
+### createConnection
+
+Adds an empty connection data item and a popup window will be displayed.
+
+#### Parameters
+
+##### item `Object`
+
+A diagram shape item to edit.
 
 ## Events
 
