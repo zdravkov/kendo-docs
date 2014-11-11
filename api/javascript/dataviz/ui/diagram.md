@@ -377,7 +377,7 @@ Defines the connections configuration.
 
 Defines the shape editable options.
 
-### connectionsDefaults.editable.tools `Array`
+### connectionDefaults.editable.tools `Array`
 
 Specifies the the toolbar tools. Predefined tools are:
 
