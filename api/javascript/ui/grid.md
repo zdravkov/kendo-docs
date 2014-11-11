@@ -2288,10 +2288,25 @@ Enables or disables column filtering in the Excel file. Not to be mistaken with 
     });
     </script>
 
+### excel.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to [proxyURL](#configuration-excel.proxyURL) even if the browser supports saving files locally.
+
 ### excel.proxyURL `String` *(default: null)*
 
-The URL of the server side proxy which will stream the Excel file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
-The developer is responsible for implementing the server-side proxy. Implementation instructions are available here.
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally.
+Such browsers are IE version 9 and lower and Safari.
+
+The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
 
 #### Example - set the server proxy URL
     <div id="grid"></div>
