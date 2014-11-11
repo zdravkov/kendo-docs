@@ -3057,6 +3057,9 @@ Specifies the file name of the exported PDF file.
     });
     </script>
 
+### pdf.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.proxyURL) even if the browser supports saving files locally.
+
 ### pdf.keywords `String` *(default: null)*
 
 Specifies the keywords of the exported PDF file.
@@ -3156,9 +3159,17 @@ The top margin. Numbers are considered as "pt" units.
 
 ### pdf.paperSize `String|Array` *(default: "auto")*
 
-Specifies the paper size of the PDF document. Can be set to a predefined size, i.e. "A4", "A3" etc,
-or an array of two Number-s specifying the width/height in points (1pt = 1/72in), or strings including unit, i.e. "10mm". Supported
-units are "mm", "cm", "in" and "pt".  The default "auto" means paper size is determined by content.
+Specifies the paper size of the PDF document.
+The default "auto" means paper size is determined by content.
+
+> The size of the content in pixels will match the size of the output in points (1 pixel = 1/72 inch).
+
+Supported values:
+
+* A predefined size: "A4", "A3" etc
+* An array of two numbers specifying the width and height in points (1pt = 1/72in)
+* An array of two strings specifying the width and height in units.
+  Supported units are "mm", "cm", "in" and "pt".
 
 #### Example - set custom paper size
 
@@ -3183,8 +3194,20 @@ units are "mm", "cm", "in" and "pt".  The default "auto" means paper size is det
 
 ### pdf.proxyURL `String` *(default: null)*
 
-The URL of the server side proxy which will stream the PDF file to the end user. Used when the browser isn't capable of saving files from JavaScript. Such browsers are IE<10 and Safari.
-The developer is responsible for implementing the server-side proxy. Implementation instructions are available here.
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally.
+Such browsers are IE version 9 and lower and Safari.
+
+The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
 
 #### Example - set the server proxy URL
 
