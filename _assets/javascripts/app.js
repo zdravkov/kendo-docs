@@ -129,9 +129,14 @@ var dojoApi = (function($) {
         },
         wrapInHtml: function(snippet) {
             var angular = '    <script src="http://cdn.kendostatic.com/kendo-version/js/angular.min.js"></script>\n';
+            var jszip = '    <script src="http://cdn.kendostatic.com/kendo-version/js/jszip.min.js"></script>\n';
 
             if (!(/ng-app/i).test(snippet)) {
                 angular = '';
+            }
+
+            if (!(/ooxml|saveAsExcel/i).test(snippet)) {
+                jszip  = '';
             }
 
             var result = ('<!DOCTYPE html>\n'+
@@ -146,7 +151,7 @@ var dojoApi = (function($) {
             '    <link rel="stylesheet" href="http://cdn.kendostatic.com/kendo-version/styles/kendo.dataviz.default.min.css">\n'+
             '    <link rel="stylesheet" href="http://cdn.kendostatic.com/kendo-version/styles/kendo.mobile.all.min.css">\n\n'+
             '    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>\n'+
-            angular+
+            angular + jszip +
             '    <script src="http://cdn.kendostatic.com/kendo-version/js/kendo.all.min.js"></script>\n'+
             '</head>\n'+
             '<body>\n  \n'+

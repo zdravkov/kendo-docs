@@ -5,6 +5,17 @@ url: "http://docs.telerik.com/kendo-ui"
 exclude: [readme.md, Gemfile, Gemfile.lock,api_sort.rb]
 navigation:
 ## List your directory names and order here, like this:
+    "framework/datasource":
+        title: "DataSource"
+        position: 1
+    "framework/draganddrop":
+        title: "Drag and Drop"
+        position: 2
+    "framework/excel":
+        title: "Create Excel Documents"
+        position: 4
+    "framework/save-files":
+        title: "Save Files"
     "*install":
         title: "Install and Upgrade"
         position: 3
