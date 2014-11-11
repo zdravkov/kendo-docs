@@ -63,6 +63,19 @@ Specifies the shape editor template.
 
 Specifies the connection editor template.
 
+### editable.tools `String|Object`
+
+Specifies the the toolbar tools. Predefined tools are:
+
+* "edit" - Selected item can be edit.
+* "delete" - Selected items can be deleted.
+* "createShape" - Adds an empty shape data item and a popup window will be displayed.
+* "createConnection" - Adds an empty connection data item and a popup window will be displayed.
+* "undo" - Undoes the previous action.
+* "redo" - Executes again the previously undone action.
+* "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
+* "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
+
 ### editable.resize `Boolean|Object` *(default: true)*
 
 Specifies the shape resizing.
@@ -360,6 +373,17 @@ The [template](/api/framework/kendo#methods-template) which renders the content 
 
 Defines the connections configuration.
 
+### connectionDefaults.editable `Boolean|Object`
+
+Defines the shape editable options.
+
+### connectionsDefaults.editable.tools `Array`
+
+Specifies the the toolbar tools. Predefined tools are:
+
+* "edit" - Selected item can be edit.
+* "delete" - Selected items can be deleted.
+
 ### connectionDefaults.stroke `Object`
 
 Defines the stroke configuration.
@@ -429,6 +453,41 @@ Defines the handles stroke color.
 ### connections `Array`
 
 Defines the connections configuration.
+
+### connections.from `Object|String|Number`
+
+Defines the connection from.
+
+### connections.from.x `Number`
+
+Defines the point x value.
+
+### connections.from.y `Number`
+
+Defines the point y value.
+
+### connections.to `Object|String|Number`
+
+Defines the connection to.
+
+### connections.to.x `Number`
+
+Defines the point x value.
+
+### connections.to.y `Number`
+
+Defines the point y value.
+
+### connections.editable `Boolean|Object`
+
+Defines the shape editable options.
+
+### connections.editable.tools `Array`
+
+Specifies the the toolbar tools. Predefined tools are:
+
+* "edit" - Selected item can be edit.
+* "delete" - Selected items can be deleted.
 
 ### connections.stroke `Object`
 
@@ -567,6 +626,15 @@ Defines the shape editable options.
 ### shapeDefaults.editable.connect `Boolean`
 
 Specifies whether the connectors should appear on hover.
+
+### shapeDefaults.editable.tools `Array`
+
+Specifies the the toolbar tools. Predefined tools are:
+
+* "edit" - Selected item can be edit.
+* "delete" - Selected items can be deleted.
+* "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
+* "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
 
 ### shapeDefaults.path `String`
 
@@ -806,6 +874,15 @@ Defines the shape editable options.
 ### shapes.editable.connect `Boolean`
 
 Specifies whether the connectors should appear on hover.
+
+### shapes.editable.tools `Array`
+
+Specifies the the toolbar tools. Predefined tools are:
+
+* "edit" - Selected item can be edit.
+* "delete" - Selected items can be deleted.
+* "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
+* "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
 
 ### shapes.path `String`
 
