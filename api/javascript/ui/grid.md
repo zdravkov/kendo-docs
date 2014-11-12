@@ -7426,7 +7426,7 @@ The widget instance which fired the event.
 
 ##### e.workbook `Object`
 
-The Excel workbook configuration object.
+The Excel [workbook configuration object](/api/javascript/ooxml/workbook#configuration). Used to initialize a `kendo.ooxml.Workbook` class. Modifications of the workbook will reflect in the output Excel document.
 
 ##### e.preventDefault `Function`
 
