@@ -63,18 +63,25 @@ Specifies the shape editor template.
 
 Specifies the connection editor template.
 
-### editable.tools `String|Object`
+### editable.tools `Array`
 
 Specifies the the toolbar tools. Predefined tools are:
 
 * "edit" - Selected item can be edit.
-* "delete" - Selected items can be deleted.
 * "createShape" - Adds an empty shape data item and a popup window will be displayed.
 * "createConnection" - Adds an empty connection data item and a popup window will be displayed.
 * "undo" - Undoes the previous action.
 * "redo" - Executes again the previously undone action.
 * "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
 * "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
+
+### editable.tools.name `String`
+
+The name of the tool. The built-in tools are "edit", "createShape", "createConnection", "undo", "redo", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+
+### editable.tools.step `Number` *(default: 90)*
+
+The step of the rotateClockwise and rotateAnticlockwise tools.
 
 ### editable.resize `Boolean|Object` *(default: true)*
 
@@ -384,6 +391,10 @@ Specifies the the toolbar tools. Predefined tools are:
 * "edit" - Selected item can be edit.
 * "delete" - Selected items can be deleted.
 
+### connectionDefaults.editable.tools.name `String`
+
+The name of the tool. The built-in tools are "edit" and "delete". Can be set to a custom value.
+
 ### connectionDefaults.stroke `Object`
 
 Defines the stroke configuration.
@@ -488,6 +499,10 @@ Specifies the the toolbar tools. Predefined tools are:
 
 * "edit" - Selected item can be edit.
 * "delete" - Selected items can be deleted.
+
+### connections.editable.tools.name `String`
+
+The name of the tool. The built-in tools are "edit" and "delete". Can be set to a custom value.
 
 ### connections.stroke `Object`
 
@@ -637,6 +652,14 @@ Specifies the the toolbar tools. Predefined tools are:
 * "delete" - Selected items can be deleted.
 * "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
 * "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
+
+### shapeDefaults.editable.tools.name `String`
+
+The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+
+### shapeDefaults.editable.tools.step `Number` *(default: 90)*
+
+The step of the rotateClockwise and rotateAnticlockwise tools.
 
 ### shapeDefaults.path `String`
 
@@ -885,6 +908,14 @@ Specifies the the toolbar tools. Predefined tools are:
 * "delete" - Selected items can be deleted.
 * "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
 * "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
+
+### shapes.editable.tools.name `String`
+
+The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+
+### shapes.editable.tools.step `Number` *(default: 90)*
+
+The step of the rotateClockwise and rotateAnticlockwise tools.
 
 ### shapes.path `String`
 
