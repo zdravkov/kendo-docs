@@ -45,7 +45,7 @@ The value of the Model's ID. This field is available **only** if the `id` is def
 
 ### idField `String`
 
-The name of the Model's ID field. **This field is available **only** if the `id` is defined in the Model configuration.**
+The name of the Model's ID field. This field is available **only** if the `id` is defined in the Model configuration.
 
     <script>
     var Person = kendo.data.Model.define({
