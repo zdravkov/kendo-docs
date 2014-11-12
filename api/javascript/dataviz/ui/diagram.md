@@ -604,6 +604,8 @@ Defines the selection dash type.
 
 ### pannable `Boolean|Object` *(default: true)*
 
+Defines the pannable options.
+
 ### pannable.key `String` *(default: "ctrl")*
 
 Defines the pannable key. The available values are:
