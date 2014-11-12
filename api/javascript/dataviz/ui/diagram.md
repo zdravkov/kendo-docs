@@ -380,7 +380,7 @@ The [template](/api/framework/kendo#methods-template) which renders the content 
 
 Defines the connections configuration.
 
-### connectionDefaults.editable `Boolean|Object`
+### connectionDefaults.editable `Boolean|Object` *(default: true)*
 
 Defines the shape editable options.
 
@@ -489,7 +489,7 @@ Defines the point x value.
 
 Defines the point y value.
 
-### connections.editable `Boolean|Object`
+### connections.editable `Boolean|Object` *(default: true)*
 
 Defines the shape editable options.
 
@@ -640,7 +640,7 @@ Defines the shape options.
 
 Defines the shape editable options.
 
-### shapeDefaults.editable.connect `Boolean`
+### shapeDefaults.editable.connect `Boolean` *(default: true)*
 
 Specifies whether the connectors should appear on hover.
 
@@ -896,7 +896,7 @@ The unique identifier for a Shape.
 
 Defines the shape editable options.
 
-### shapes.editable.connect `Boolean`
+### shapes.editable.connect `Boolean` *(default: true)*
 
 Specifies whether the connectors should appear on hover.
 
