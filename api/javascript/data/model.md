@@ -13,9 +13,10 @@ The `Model` inherits from the [ObservableObject](/api/framework/observableobject
 
 To define a new model use the `Model.define` method.
 
-### Example - defining a model
+### Define a model
+
     <script>
-    var Person = kendo.data.Model.define( {
+    var Person = kendo.data.Model.define({
         id: "personId", // the identifier of the model
         fields: {
             "name": {
@@ -26,15 +27,48 @@ To define a new model use the `Model.define` method.
             }
         }
     });
-    var person = new Person( {
+    
+    var person = new Person({
         name: "John Doe",
         age: 42
     });
+    
     console.log(person.get("name")); // outputs "John Doe"
     console.log(person.get("age")); // outputs 42
     </script>
 
 ## Fields
+
+### id
+
+The value of the Model's ID. This field is available **only** if the `id` is defined in the Model configuration. See the example below.
+
+### idField `String`
+
+The name of the Model's ID field. **This field is available **only** if the `id` is defined in the Model configuration.**
+
+    <script>
+    var Person = kendo.data.Model.define({
+        id: "personId",
+        fields: {
+            "name": {
+                type: "string"
+            },
+            "age": {
+                type: "number"
+            }
+        }
+    });
+    
+    var person = new Person({
+        personId: 1,
+        name: "John Doe",
+        age: 42
+    });
+    
+    console.log(person.id); // outputs 1
+    console.log(person.idField); // outputs "personId"
+    </script>
 
 ### uid
 
@@ -51,6 +85,7 @@ Indicates whether the model is modified.
     var model = new kendo.data.Model({
         name: "John Doe"
     });
+    
     console.log(model.dirty); // outputs "false"
     model.set("name", "Jane Doe");
     console.log(model.dirty); // outputs "true"
