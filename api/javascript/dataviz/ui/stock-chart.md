@@ -4877,6 +4877,352 @@ The text of the title.
 
 The visibility of the title.
 
+### pdf `Object`
+Configures the export settings for the [saveAsPDF](#methods-saveAsPDF) method.
+
+### pdf.author `String` *(default: null)*
+The author of the PDF document.
+
+#### Example - set the author
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              author: "John Doe"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+The creator of the PDF document.
+
+#### Example - set the creator
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              creator: "John Doe"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.date `Date`
+The date when the PDF document is created. Defaults to `new Date()`.
+
+#### Example - set the date
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              date: new Date("2014/10/10")
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.proxyURL) even if the browser supports saving files locally.
+
+#### Example - use proxy
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              proxyURL: "/save",
+              forceProxy: true
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.fileName `String` *(default: "Export.pdf")*
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              fileName: "Products.pdf"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.keywords `String` *(default: null)*
+Specifies the keywords of the exported PDF file.
+
+#### Example - set the keywords
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              keywords: "monthly report"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.landscape `Boolean` *(default: false)*
+Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+
+#### Example - enable landscape mode
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              paperSize: "A4",
+              landscape: true
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.margin `Object`
+Specifies the margins of the page (numbers or strings with units). Supported
+units are "mm", "cm", "in" and "pt" (default).
+
+#### Example - set the margins
+    <div id="chart" style="width: 600px; height: 400px;"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              margin: {
+                  left: 10,
+                  right: "10pt",
+                  top: "10mm",
+                  bottom: "1in"
+              }
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.margin.bottom `Number|String` *(default: 0)*
+The bottom margin. Numbers are considered as "pt" units.
+
+### pdf.margin.left `Number|String` *(default: 0)*
+The left margin. Numbers are considered as "pt" units.
+
+### pdf.margin.right `Number|String` *(default: 0)*
+The right margin. Numbers are considered as "pt" units.
+
+### pdf.margin.top `Number|String` *(default: 0)*
+The top margin. Numbers are considered as "pt" units.
+
+### pdf.paperSize `String|Array` *(default: "auto")*
+Specifies the paper size of the PDF document.
+The default "auto" means paper size is determined by content.
+
+> The size of the content in pixels will match the size of the output in points (1 pixel = 1/72 inch).
+
+Supported values:
+
+* A predefined size: "A4", "A3" etc
+* An array of two numbers specifying the width and height in points (1pt = 1/72in)
+* An array of two strings specifying the width and height in units.
+  Supported units are "mm", "cm", "in" and "pt".
+
+#### Example - set custom paper size
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              paperSize: ["20cm", "20cm"]
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.proxyURL `String` *(default: null)*
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally.
+Such browsers are IE version 9 and lower and Safari.
+
+The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
+
+#### Example - set the server proxy URL
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              proxyURL: "/save"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.subject `String` *(default: null)*
+Sets the subject of the PDF file.
+
+#### Example - set the subject
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              subject: "Products"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
+### pdf.title `String` *(default: null)*
+Sets the title of the PDF file.
+
+#### Example - set the title
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              title: "Products"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
 ### plotArea `Object`
 
 The plot area configuration options. This is the area containing the plotted series.
