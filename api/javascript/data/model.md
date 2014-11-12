@@ -45,7 +45,7 @@ ObservableObject API reference.
 
 Indicates whether the model is modified.
 
-### Example - use the dirty field
+#### Example - using the dirty field
 
     <script>
     var model = new kendo.data.Model({
