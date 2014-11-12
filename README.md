@@ -57,7 +57,7 @@ There are two ways you can contribute to the public Kendo UI documentation: eith
 You can generate a static web site from the Kendo UI the documentation and browse it locally.
 
 1. Clone the repository `git clone git@github.com:telerik/kendo-docs.git`
-2. Run `bundle install` (you must have ruby and bundler isntalled beforehand)
+2. Run `bundle install` (you must have ruby and bundler installed beforehand)
 3. Run `jekyll serve`
 4. Open "http://localhost:4000/kendo-ui" in your browser
 
