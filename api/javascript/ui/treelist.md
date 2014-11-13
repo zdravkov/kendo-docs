@@ -674,6 +674,352 @@ data source is fired. By default the widget will bind to the data source specifi
         dataSource.read(); // "read()" will fire the "change" event of the dataSource and the widget will be bound
     </script>
 
+### messages `Object`
+
+Defines the text of the command buttons that are shown within the TreeList. Used primarily for localization.
+
+#### Example - change the messages
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        noRows: "No records",
+        loading: "Fetching records...",
+        requestFailed: "Fetching failed.",
+        retry: "Reload",
+        commands: {
+          edit: "Edit",
+          update: "Update",
+          canceledit: "Cancel",
+          create: "Add new record",
+          createchild: "Add child record",
+          destroy: "Delete",
+          excel: "Export to Excel",
+          pdf: "Export to PDF"
+        }
+      }
+    });
+    </script>
+
+### messages.noRows `String` *(default: "No records to display")*
+
+Defines the text of "No records to display" message when the widget does not show any items.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        noRows: "No records"
+      }
+    });
+    </script>
+
+### messages.loading `String` *(default: "Loading...")*
+
+Defines the text of "Loading..." message when the widget loads its root-level items.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        loading: "Fetching records..."
+      }
+    });
+    </script>
+
+### messages.requestFailed `String` *(default: "Request failed.")*
+
+Defines the text of "Request failed." message when the widget fails to load its root-level items.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        requestFailed: "Fetching failed."
+      }
+    });
+    </script>
+
+### messages.retry `String` *(default: "Retry")*
+
+Defines the text of "Retry" message assigned to the button that tries to load root-level items again.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        retry: "Reload"
+      }
+    });
+    </script>
+
+### messages.commands `Object`
+
+Defines the text for the command buttons used across the widget.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          edit: "Edit",
+          update: "Update",
+          canceledit: "Cancel",
+          create: "Add new record",
+          createchild: "Add child record",
+          destroy: "Delete",
+          excel: "Export to Excel",
+          pdf: "Export to PDF"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.edit `String` *(default: "Edit")*
+
+Defines the text of "Edit" button that shows the editable fields for the row.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          edit: "Edit"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.update `String` *(default: "Update")*
+
+Defines the text of "Update" button that applies the changes during editing.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          update: "Update"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.canceledit `String` *(default: "Cancel")*
+
+Defines the text of "Cancel" button that discards the changes during editing.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          canceledit: "Cancel"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.create `String` *(default: "Add new record")*
+
+Defines the text of "Add new record" button that adds new data rows.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          create: "Add new record"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.createchild `String` *(default: "Add child record")*
+
+Defines the text of "Add child record" button that adds new child data rows.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          createchild: "Add child record"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.destroy `String` *(default: "Delete")*
+
+Defines the text of "Delete" button that deletes a data row.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          destroy: "Delete"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.excel `String` *(default: "Export to Excel")*
+
+Defines the text of "Export to Excel" button that exports the widget data in spreadsheet format.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          excel: "Export to Excel"
+        }
+      }
+    });
+    </script>
+
+### messages.commands.pdf `String` *(default: "Export to PDF")*
+
+Defines the text of "Export to PDF" button that exports the widget data in PDF format.
+
+#### Example
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      dataSource: [
+        { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+        { id: 2, parentId: 1, name: "John Doe", age: 24 }
+      ],
+      toolbar: [ "create", "pdf", "excel" ],
+      columns: [ "name", "age", { command: [ "edit", "destroy", "createchild" ] } ],
+      editable: true,
+      messages: {
+        commands: {
+          pdf: "Export to PDF"
+        }
+      }
+    });
+    </script>
+
 ### scrollable `Boolean|Object` *(default: true)*
 
 If set to `true` the grid will display a scrollbar when the total row height (or width) exceeds the grid height (or width). By default scrolling is enabled.
