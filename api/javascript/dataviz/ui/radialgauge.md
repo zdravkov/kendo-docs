@@ -468,6 +468,128 @@ Detaches event handlers and removes data entries in order to avoid memory leaks.
     kendo.destroy($("#radial-gauge"));
     $("#radial-gauge").remove();
 
+### exportImage
+Exports the Gauge as an image.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PNG image encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Parameters for the exported image.
+
+##### options.width `String`
+The width of the exported image. Defaults to the Gauge width.
+
+##### options.height `String`
+The height of the exported image. Defaults to the Gauge height.
+
+#### Returns
+`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+
+#### Example - Exporting a Gauge to an image
+    <div id="gauge"></div>
+    <script>
+        $("#gauge").kendoRadialGauge({
+	        pointer: {
+	            value: 50
+	        },
+	        scale: {
+	            min: 0,
+	            max: 100
+	        }
+	    });
+
+        var gauge = $("#gauge").data("kendoRadialGauge");
+        gauge.exportImage().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "gauge.png"
+            });
+        });
+    </script>
+
+
+### exportPDF
+Exports the Gauge as a PDF file.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PDF file encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `kendo.drawing.PDFOptions` *(optional)*
+Parameters for the exported PDF file.
+
+#### Returns
+`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
+
+#### Example - Exporting a chart to a PDF file
+    <div id="gauge"></div>
+    <script>
+        $("#gauge").kendoRadialGauge({
+	        pointer: {
+	            value: 50
+	        },
+	        scale: {
+	            min: 0,
+	            max: 100
+	        }
+	    });
+
+        var gauge = $("#gauge").data("kendoRadialGauge");
+        gauge.exportPDF({ paperSize: "A5", landscape: true }).done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "gauge.pdf"
+            });
+        });
+    </script>
+
+
+### exportSVG
+Exports the Gauge as an SVG document.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
+#### Returns
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
+
+#### Example - Exporting a chart to an SVG document
+    <div id="gauge"></div>
+    <script>
+        $("#gauge").kendoRadialGauge({
+	        pointer: {
+	            value: 50
+	        },
+	        scale: {
+	            min: 0,
+	            max: 100
+	        }
+	    });
+
+        var gauge = $("#gauge").data("kendoRadialGauge");
+        gauge.exportSVG().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "gauge.svg"
+            });
+        });
+    </script>
+
 ### redraw
 
 Redraws the gauge.
@@ -514,6 +636,8 @@ converted to other formats using tools like [Inkscape](http://inkscape.org/) and
 [ImageMagick](http://www.imagemagick.org/).
 Both programs provide command-line interface suitable for server-side processing.
 
+> This method is obsoleted by [exportSVG](#methods-exportSVG), but will remain fully functional.
+
 #### Example
 
     <div id="gauge"></div>
@@ -535,6 +659,8 @@ Both programs provide command-line interface suitable for server-side processing
 ### imageDataURL
 
 Returns a PNG image of the gauge encoded as a [Data URL](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+> This method is obsoleted and replaced by [exportImage](#methods-exportImage), but will remain fully functional.
 
 #### Returns
 
