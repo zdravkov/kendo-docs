@@ -86,9 +86,31 @@ the horizontal one is 60px.
 The width of the gauge area.  By default the vertical gauge is 60px
 and horizontal gauge is 200px.
 
-### pointer `Object`
+### pointer `Object|Array`
 
-The pointer configuration options.
+The pointer configuration options. If an `Object` is passed, the Gauge will have a single pointer with the specified configuration. This option also accepts an `Array` of pointers, each with it's own configuration options.
+
+#### Example - specify single pointer
+    <div id="gauge"></div>
+    <script>
+	  $("#gauge").kendoRadialGauge({
+        pointer: {
+          value: 40
+        }
+      });
+    <script>
+
+#### Example - specify multiple pointers
+	<div id="gauge"></div>
+    <script>
+	  $("#gauge").kendoRadialGauge({
+        pointer: [{
+          value: 20
+        }, {
+          value: 40
+        }]
+      });
+    <script>
 
 ### pointer.cap `Object`
 
@@ -392,6 +414,48 @@ The gauge is rendered clockwise(0 degrees are the 180 degrees in the polar coord
 A value indicating if transition animations should be played.
 
 ## Methods
+
+### allValues
+
+Allows setting or getting multiple Gauge values at once.
+
+#### Parameters
+
+##### values `Array`
+An array of values to be set.
+
+#### Returns
+`Array` An array of the Gauge pointer values will be returned if no parameter is passed.
+
+#### Example - setting multiple values
+    <div id="gauge"></div>
+    <script>
+	  $("#gauge").kendoRadialGauge({
+        pointer: [{
+          value: 20
+        }, {
+          value: 40
+        }]
+      });
+
+      var gauge = $("#gauge").data("kendoRadialGauge");
+      gauge.allValues([60, 10]);
+    <script>
+
+#### Example - retrieving all values
+    <div id="gauge"></div>
+    <script>
+	  $("#gauge").kendoRadialGauge({
+        pointer: [{
+          value: 20
+        }, {
+          value: 40
+        }]
+      });
+
+      var gauge = $("#gauge").data("kendoRadialGauge");
+      var allValues = gauge.allValues();
+    <script>
 
 ### destroy
 
