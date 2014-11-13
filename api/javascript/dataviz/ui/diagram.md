@@ -1834,7 +1834,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 ##### e.sender `kendo.ui.Diagram`
 
-### Add
+### add
 
 Fired when the user add new shape or connection.
 
@@ -1854,7 +1854,7 @@ The dataItem to which shape is bound.
 
 The widget instance which fired the event.
 
-### Edit
+### edit
 
 Fired when the user edits a shape or connection.
 
@@ -1876,7 +1876,7 @@ The dataItem to which shape is bound.
 
 The widget instance which fired the event.
 
-### Save
+### save
 
 Fired when the user a shape or connection da is saved.
 
