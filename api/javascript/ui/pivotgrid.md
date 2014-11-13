@@ -464,6 +464,110 @@ About the data item structure review this [help topic](/api/framework/pivotdatas
     });
     </script>
 
+### kpiStatusTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the content of the `KPI Status` value. By default renders "open", "hold" and "denied" status icons.
+
+The fields which can be used in the template are:
+
+* columnTuple - the tuple of the corresponding column header cell
+* rowTuple - the tuple of the corresponding row header cell
+* measure - the value of the data cell measure
+* dataItem - the data item itself
+
+For information about the tuple structure check this [link](/api/framework/pivotdatasource#configuration-schema.axes).
+About the data item structure review this [help topic](/api/framework/pivotdatasource#configuration-schema.data).
+
+#### Example - specify a custom template for the KPI Status measure
+
+    <div id="pivotgrid"></div>
+
+    <script id="kpiStatusTemplate" type="text/x-kendo-template">
+        # if (dataItem.value !== 0) { #
+            <em>Open/Denied</em>
+        # } else { #
+            <strong>Hold</strong>
+        # } #
+    </script>
+
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        kpiStatusTemplate: $("#kpiStatusTemplate").html(),
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true } ],
+            measures: ["[Measures].[Internet Revenue Status]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+### kpiTrendTemplate `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the content of the `KPI Trend` value. By default renders "increase", "decrease" and "equal" status icons.
+
+The fields which can be used in the template are:
+
+* columnTuple - the tuple of the corresponding column header cell
+* rowTuple - the tuple of the corresponding row header cell
+* measure - the value of the data cell measure
+* dataItem - the data item itself
+
+For information about the tuple structure check this [link](/api/framework/pivotdatasource#configuration-schema.axes).
+About the data item structure review this [help topic](/api/framework/pivotdatasource#configuration-schema.data).
+
+#### Example - specify a custom template for the KPI Trend measure
+
+    <div id="pivotgrid"></div>
+
+    <script id="kpiTrendTemplate" type="text/x-kendo-template">
+        # if (dataItem.value !== 0) { #
+            <em>Increase/Decrease</em>
+        # } else { #
+            <strong>Equal</strong>
+        # } #
+    </script>
+
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        kpiTrendTemplate: $("#kpiTrendTemplate").html(),
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true } ],
+            measures: ["[Measures].[Internet Revenue Trend]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
 ### rowHeaderTemplate `String|Function`
 
 The [template](/api/framework/kendo#methods-template) which renders the content of the row header cell. By default it renders the *caption* of the tuple member.
