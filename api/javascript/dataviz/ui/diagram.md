@@ -159,42 +159,6 @@ The hangles width.
 
 The hangles height.
 
-### editable.rotate `Boolean|Object` *(default: true)*
-
-Specifyes the rotate style.
-
-### editable.rotate.thumb `Object`
-
-Specifyes the thumb style.
-
-### editable.rotate.thumb.fill `String|Object`
-
-Set the thumb fill options.
-
-### editable.rotate.thumb.fill.color `String`
-
-Set the thumb fill color.
-
-### editable.rotate.thumb.fill.opacity `Number` *(default: 1)*
-
-Set the thumb fill opacity.
-
-### editable.rotate.thumb.stroke `Object`
-
-Specifies the thumb stroke styles.
-
-### editable.rotate.thumb.stroke.color `String`
-
-Specifies the thumb stroke color.
-
-### editable.rotate.thumb.stroke.width `Number`
-
-Specifies the thumb stroke width.
-
-### editable.rotate.thumb.stroke.dashType `String`
-
-Specifies the thumb stroke dash type.
-
 ### dataSource `Object|Array|kendo.data.DataSource`
 
 See the [dataSource field](#fields-dataSource).
@@ -380,6 +344,22 @@ The [template](/api/framework/kendo#methods-template) which renders the content 
 
 Defines the connections configuration.
 
+### connectionDefaults.content `Object`
+
+Defines the shapes content settings.
+
+### connectionDefaults.content.text `String`
+
+The text displayed for the connection.
+
+### connectionDefaults.content.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* dataItem - the data item, in case a field has been specified
+
 ### connectionDefaults.editable `Boolean|Object` *(default: true)*
 
 Defines the shape editable options.
@@ -464,6 +444,22 @@ Defines the handles stroke color.
 ### connections `Array`
 
 Defines the connections configuration.
+
+### connections.content `Object`
+
+Defines the shapes content settings.
+
+### connections.content.text `String`
+
+The text displayed for the connection.
+
+### connections.content.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* dataItem - the data item, in case a field has been specified
 
 ### connections.from `Object|String|Number`
 
@@ -814,6 +810,14 @@ Defines the shapes content settings.
 
 The text displayed in the shape.
 
+### shapeDefaults.content.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* dataItem - the data item, in case a field has been specified
+
 ### shapeDefaults.content.align `String`
 
 The alignment of the text inside the shape.
@@ -1045,6 +1049,14 @@ Defines the shapes content settings.
 ### shapes.content.text `String`
 
 The text displayed in the shape.
+
+### shapes.content.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* dataItem - the data item, in case a field has been specified
 
 ### shapes.content.align `String`
 
