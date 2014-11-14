@@ -185,6 +185,70 @@ If set to `true` the user can get the widget in unsorted state by clicking the s
     });
     </script>
 
+### height `Number|String`
+
+The height of the PivotConfigurator. Numeric values are treated as pixels.
+
+#### Example - set the height as a number
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        height: 550,
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
+#### Example - set the height as a string
+
+    <div id="configurator"></div>
+    <script>
+    $("#configurator").kendoPivotConfigurator({
+        height: "500px",
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
 ### messages `Object`
 
 The text messages displayed in the fields sections.
