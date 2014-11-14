@@ -6,29 +6,42 @@ position: 1
 ---
 
 # Kendo UI Templates Overview
-Kendo UI Templates provide a simple to use, high-performance JavaScript templating engine in the Kendo UI Framework. Templates offer a way to create HTML chunks that can be automatially merged with JavaScript data. They are a substituate for traditional "HTML string building" in JavaScript.
+
+Kendo UI Templates provide a simple to use, high-performance JavaScript templating engine in the Kendo UI Framework.
+Templates offer a way to create HTML chunks that can be automatially merged with JavaScript data. They are a substituate for traditional "HTML string building" in JavaScript.
 
 ## Template Basics
-Kendo UI templates focus on providing essential templating features needed for common UI rendering scenarios, with a heavy emphasis on performance over feature glut. Kendo UI Templates will trade convenient "syntax sugar" for improved performance, which distinguishes from other JavaScript templating libraries.
+
+Kendo UI templates focus on providing essential templating features needed for common UI rendering scenarios,
+with a heavy emphasis on performance over feature glut.
+Kendo UI Templates will trade convenient "syntax sugar" for improved performance, which distinguishes from other JavaScript templating libraries.
 
 ### Template Syntax
-Kendo UI Templates use a simple templating syntax we call "hash templates." With this syntax, the "#" (or hash) symbol is used to mark areas in a template that should be replaced with data when the template is executed.
+
+Kendo UI Templates use a simple templating syntax we call "hash templates."
+With this syntax, the `#` (or hash) symbol is used to mark areas in a template that should be replaced with data when the template is executed.
+The `#` character is also used to signify the beginning and end of custom Javascript code inside the template.
 
 There are three ways to use the hash syntax:
 
-1. Render values as HTML: #= #
-2. Uses HTML encoding to display values: #: #
-3. Execute arbitrary JavaScript code: # if(...){# ... #}#
+1. Render values as HTML: `#= #`
+2. Uses HTML encoding to display values: `#: #`
+3. Execute arbitrary Javascript code: `# if (true) { # ... non-script content here ... # } #`
 
-> If your template includes a "#" that is not part of a binding expression, **you must** escape that character or it will cause a template compilation error
-(this is common in Kendo UI Mobile where # is often used for view navigation).
-Literal "#" in JavaScript strings are escaped with "\\\\#", while literal "#" in external HTML script templates are escaped with "\\#".
+### Escaping Hash Literals
 
-> "#" characters, which are part of a binding expression, but the expression is placed inside a nested Kendo UI template, must be escaped as well.
+> If your template includes a **literal `#` character**, which is not part of a binding expression and is not a script code marker,
+then you must escape that character or it will cause a template compilation error.
+For example, this can happen if a `#` is used inside a hyperlink URL or a CSS color value.
+Literal `#` in Javascript strings are escaped with `\\\\#`, while literal `#` in external HTML script templates are escaped with `\\#`.
+
+> If your template includes a `#` character, which is part of a binding expression of a **nested** template, then this character must be escaped as well.
+In this way the character will be ignored by the outer template, but will be handled correctly by the inner template.
 
 Let's take a closer look at how each of these Kendo UI Template syntaxes can be used in context.
 
 #### Rendering Raw Values
+
 One of the most basic templating tasks is rendering a value as-is in a template. With Kendo UI templates, this is done with the following code:
 
 
@@ -46,6 +59,7 @@ This approach will create a "compiled" in-line template that's ready for renderi
         </script>
 
 #### Rendering HTML-Encoded Values
+
 If you want to render an encoded HTML value in a template, Kendo UI templates can automatically handle the encoding. To do that, use a slightly different syntax:
 
         var template = kendo.template("<div id='box'>#: firstName #</div>");
@@ -73,6 +87,7 @@ If the HTML encoding is not used the output will be:
 > HTML encoding is useful when you want to avoid rendering HTML tags in your templates. It will escape the HTML tags in your data and render the tags as a string. You should use HTML encoding when working with data from unknown sources (such as user submitted values) in case users have included HTML markup in the content that could break the layout of your page.
 
 #### External Templates and Expressions
+
 It's common for templates to include expressions. Some templating frameworks invent their own re-implementation of JavaScript to provide expression sugar (at the cost of performance), but Kendo UI templates opt to simply allow the execution of "normal" JavaScript inside of templates, again favoring performance over expensive syntax sugar.
 
 For example, to display a list of items using JavaScript and Kendo UI templates, we use the following syntax:
@@ -126,6 +141,7 @@ e.g.
     <!-- #alert('it is executed!')# -->
 
 ### Internal vs. External Templates
+
 Kendo UI Templates can be defined in one of two ways:
 
 - **Inline** using JavaScript strings
@@ -134,6 +150,7 @@ Kendo UI Templates can be defined in one of two ways:
 Inline templates are good for small templates, but most larger templates that include logic or HTML markup should use external templates. Since external templates live in the HTML instead of JavaScript, this also makes them easier for designers to create and modify.
 
 #### Creating an inline template
+
 As you've already seen on this page, creating an inline template is as simple as creating a JavaScript string:
 
         var templateString = "Your name is #: myName #";
@@ -155,7 +172,8 @@ This will produce an anchor tag displayed on the page:
         </script>
 
 #### Creating an external template
-Extnernal templates do not live in JavaScript, but instead in special blocks in HTML. To define an external template, create a script block in your HTML with the type `text/x-kendo-template`, like this:
+
+External templates do not live in JavaScript, but instead in special blocks in HTML. To define an external template, create a script block in your HTML with the type `text/x-kendo-template`, like this:
 
         <script type="text/x-kendo-template" id="myTemplate">
             <!--Template content here-->
