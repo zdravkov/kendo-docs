@@ -4,7 +4,7 @@ page_title: How to guide on using mobile widgets outside of a Kendo UI Mobile ap
 ---
 
 Starting with the 2014 Q1 release, the Kendo UI Mobile widgets can be used alongside the Kendo UI Web widgets in a regular web page, *without an active mobile application instance*.
-This approach is suitable if you use Kendo UI Mobile with third-party SPA frameworks like Angular or Backbone, or if you develop a mobile verision of a web site which does not need native mobile app look.
+This approach is suitable if you use Kendo UI Mobile with third-party SPA frameworks like Angular or Backbone, or if you develop a mobile version of a web site which does not need native mobile app look.
 The Kendo UI Web CSS files contain the necessary rules, so that unified look can be achieved.
 
 > In addition to **kendo.common.css** and the skin stylesheet, the mobile widgets need one additional reference - **kendo.[skin].mobile.css** or **kendo.[skin].mobile.min.css**, where [skin] is your current Kendo UI Web skin name.
