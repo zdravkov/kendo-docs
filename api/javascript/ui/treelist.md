@@ -460,13 +460,13 @@ is displayed in the column header cell.
 
     <div id="treelist"></div>
     <script>
-        $("#treelist").kendotreelist({
+        $("#treelist").kendoTreeList({
             columns: [ {
                 field: "name",
                 headerTemplate: '<input type="checkbox" id="check-all" /><label for="check-all">check all</label>'
             }],
-            datasource: {
-                data: [ { name: "jane doe" } ]
+            dataSource: {
+                data: [ { name: "Jane Doe" } ]
             }
         });
     </script>
@@ -480,7 +480,7 @@ be disabled for this column. By default all columns are sortable if sorting is e
 
     <div id="treelist"></div>
     <script>
-        $("#treelist").kendotreelist({
+        $("#treelist").kendoTreeList({
             columns: [
                 { sortable: false, field: "id" },
                 { field: "name" }
