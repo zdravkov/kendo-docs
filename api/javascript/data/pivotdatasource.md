@@ -40,7 +40,7 @@ The configuration of columns axis members. An array of JavaScript objects or str
 
 ### columns.expand `Boolean`
 
-If set to true the member will be exapnded.
+If set to true the member will be expanded.
 
 #### Example - set the column as expanded
 
@@ -87,9 +87,19 @@ The hierarchal name of the column
     dataSource.fetch();
     </script>
 
-### measures `Array|Obejct`
+### measures `Array|Object`
 
 The configuration of measures. An string array which values are interpreted as the name of the measures to be loaded.
+Measures can be defined as a list of objects with `name` and `type` fields:
+
+    [{
+        name: "[Measures].[_Internet Current Quarter Sales Performance Status]",
+        type: "status"
+    }]
+
+> The `type` value can be defined to "status" or "trend" to render [kpiStatusTemplate](/api/javascript/ui/pivotgrid#configuration-kpiStatusTemplate)
+or [kpiTrendTemplate](/api/javascript/ui/pivotgrid#configuration-kpiTrendTemplate). If type is not defined, then the
+[dataCellTemplate](/api/javascript/ui/pivotgrid#configuration-dataCellTemplate) will be used.
 
 #### Example - set the measures
 
@@ -190,7 +200,7 @@ The configuration of rows axis members. An array of JavaScript objects or string
 
 ### rows.expand `Boolean`
 
-If set to true the member will be exapnded.
+If set to true the member will be expanded.
 
 #### Example - set the rows as expanded
 
@@ -251,7 +261,7 @@ If the value of `transport.discover` is a function, the data source invokes that
 
 If the value of `transport.discover` is a string the data source uses this string as the URL of the remote service.
 
-If the value of `transport.discover` is ommited the data source uses `transport.read` for schema discover.
+If the value of `transport.discover` is omitted the data source uses `transport.read` for schema discover.
 
 #### Example - set the discover remote service
 
@@ -565,11 +575,11 @@ The field name which value is used to calculations.
 
 ##### schema.cube.measures.measureName.format `String`
 
-The format which to be applied on the calcualted measure value.
+The format which to be applied on the calculated measure value.
 
-##### schema.cube.measures.measureName.aggregate `Function`
+##### schema.cube.measures.measureName.aggregate `Function|String`
 
-The function used to aggregate the measure value.
+The function used to aggregate the measure value. The built-in aggregates are "average", "count", "max", "min" and "sum".
 
 ###### Returns
 
@@ -584,6 +594,131 @@ The value of the specified field of the current processed record.
 ####### state `Object`
 
 The current aggregated result of the function for already processed records.
+
+> The `state` uses a predefined field named **accumulator**, where the last aggregated result is preserved.
+
+####### context `Object`
+
+The context for the current aggregate call. It includes the current data item and its index in the data:
+
+    {
+        dataItem: `data item`,
+        index: `data item index`
+    }
+
+###### Example - specify a built-in "average" aggregate function
+
+    <script>
+      var dataSource = new kendo.data.PivotDataSource({
+        columns: ["ProductName" ],
+        rows: ["Category"],
+        measures: ["Sum"],
+        data: [{ ProductName: "Chai", UnitPrice: 42, Cateogry: "Beverages" } ],
+        schema: {
+          cube: {
+            dimensions: {
+              ProductName: { caption: "All Products" },
+              Category: { caption: "All Cateogries" }
+            },
+            measures: {
+              "Average": {
+                field: "UnitPrice",
+                aggregate: "average"
+            }
+          }
+        }
+      });
+
+      dataSource.fetch(function() {
+        console.log(dataSource.data(), dataSource.axes());
+      });
+    </script>
+
+###### Example - specify an aggregate function for a value summing
+
+    <script>
+      var dataSource = new kendo.data.PivotDataSource({
+        columns: ["ProductName" ],
+        rows: ["Category"],
+        measures: ["Sum"],
+        data: [{ ProductName: "Chai", UnitPrice: 42, Cateogry: "Beverages" } ],
+        schema: {
+          cube: {
+            dimensions: {
+              ProductName: { caption: "All Products" },
+              Category: { caption: "All Cateogries" }
+            },
+            measures: {
+              "Average": {
+                field: "UnitPrice",
+                aggregate: function(value, state, context) {
+                    return (state.accumulator || 0) + value;
+                }
+            }
+          }
+        }
+      });
+
+      dataSource.fetch(function() {
+        console.log(dataSource.data(), dataSource.axes());
+      });
+    </script>
+
+##### schema.cube.measures.measureName.result `Function`
+
+The function that will be called at the end of tuple aggregation.
+
+> If it is not defined, the `state.accumulator` value set in the `aggregate` function will be used.
+
+###### Returns
+
+`Object` The result of the calculation
+
+###### Parameters
+
+####### state `Object`
+
+The last aggregated result of the function for already processed records.
+
+> The `state` uses a predefined field named **accumulator**, where the last aggregated result is preserved.
+
+###### Example - specify a result function calculating the final value
+
+    <script>
+      var dataSource = new kendo.data.PivotDataSource({
+        columns: ["ProductName" ],
+        rows: ["Category"],
+        measures: ["Sum"],
+        data: [{ ProductName: "Chai", UnitPrice: 42, Cateogry: "Beverages" } ],
+        schema: {
+          cube: {
+            dimensions: {
+              ProductName: { caption: "All Products" },
+              Category: { caption: "All Cateogries" }
+            },
+            measures: {
+              "Average": {
+                field: "UnitPrice",
+                aggregate: function(value, state, context) {
+                    if (!isNaN(value)) {
+                        state.count = (state.count || 0) + 1;
+                        return (state.accumulator || 0) + value;
+                    } else {
+                        return state.accumulator;
+                    }
+                },
+                result: function(state) {
+                    result state.accumulator / state.count;
+                }
+            }
+          }
+        }
+      });
+
+      dataSource.fetch(function() {
+        console.log(dataSource.data(), dataSource.axes());
+      });
+    </script>
 
 ### schema.data `Function|String`
 
@@ -1004,7 +1139,7 @@ The columns configuration. Accepts the same values as the [columns](#configurati
     });
 
     var columns = dataSource.columns();
-    console.log(columns);// ["[Date].[Calendar]"]
+    console.log(columns);// [{ name: ["[Date].[Calendar]"] }]
     </script>
 
 ### cube
@@ -1159,7 +1294,7 @@ The measures configuration. Accepts the same values as the [measures](#configura
     });
 
     var measures = dataSource.measures();
-    console.log(measures);// ["[Measures].[Internet Order Lines Count]"]
+    console.log(measures);// [{ name: "[Measures].[Internet Order Lines Count]" }]
     </script>
 
 ### measuresAxis
@@ -1247,7 +1382,7 @@ The rows configuration. Accepts the same values as the [row](#configuration-rows
     });
 
     var rows = dataSource.rows();
-    console.log(rows);// ["[Date].[Calendar]"]
+    console.log(rows);// [{ name: ["[Date].[Calendar]"] }]
     </script>
 
 ### schemaCatalogs
