@@ -505,7 +505,7 @@ A JavaScript function which is used to compare the values - should return -1 if 
       };
 
 
-      $("#treeList").kendoGrid({
+      $("#treeList").kendoTreeList({
         dataSource: {
           data: [
                 { id: 1, item: "two" },
@@ -1020,6 +1020,498 @@ Defines the text of "Export to PDF" button that exports the widget data in PDF f
     });
     </script>
 
+### pdf `Object`
+
+Configures the Kendo UI TreeList PDF export settings.
+
+### pdf.author `String` *(default: null)*
+
+The author of the PDF document.
+
+#### Example - set the author
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+            author: "John Doe"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+
+The creator of the PDF document.
+
+#### Example - set the creator
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          creator: "John Doe"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.date `Date`
+
+The date when the PDF document is created. Defaults to `new Date()`.
+
+#### Example - set the date
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          date: new Date("2014/10/10")
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.fileName `String` *(default: "Export.pdf")*
+
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          fileName: "Employees.pdf"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.proxyURL) even if the browser supports saving files locally.
+
+### pdf.keywords `String` *(default: null)*
+
+Specifies the keywords of the exported PDF file.
+
+#### Example - set the keywords
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          keywords: "northwind products"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.landscape `Boolean` *(default: false)*
+
+Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+
+#### Example - enable landscape mode
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          landscape: true
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.margin `Object`
+
+Specifies the margins of the page (numbers or strings with units). Supported
+units are "mm", "cm", "in" and "pt" (default).
+
+#### Example - set the margins
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          margin: {
+            left: 10,
+            right: "10pt",
+            top: "10mm",
+            bottom: "1in"
+          }
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.margin.bottom `Number|String` *(default: 0)*
+
+The bottom margin. Numbers are considered as "pt" units.
+
+### pdf.margin.left `Number|String` *(default: 0)*
+
+The left margin. Numbers are considered as "pt" units.
+
+### pdf.margin.right `Number|String` *(default: 0)*
+
+The right margin. Numbers are considered as "pt" units.
+
+### pdf.margin.top `Number|String` *(default: 0)*
+
+The top margin. Numbers are considered as "pt" units.
+
+### pdf.paperSize `String|Array` *(default: "auto")*
+
+Specifies the paper size of the PDF document.
+The default "auto" means paper size is determined by content.
+
+> The size of the content in pixels will match the size of the output in points (1 pixel = 1/72 inch).
+
+Supported values:
+
+* A predefined size: "A4", "A3" etc
+* An array of two numbers specifying the width and height in points (1pt = 1/72in)
+* An array of two strings specifying the width and height in units.
+  Supported units are "mm", "cm", "in" and "pt".
+
+#### Example - set custom paper size
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          paperSize: ["20mm", "20mm"]
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.proxyURL `String` *(default: null)*
+
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally.
+Such browsers are IE version 9 and lower and Safari.
+
+The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
+
+#### Example - set the server proxy URL
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          proxyURL: "/save"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.subject `String` *(default: null)*
+
+Sets the subject of the PDF file.
+
+#### Example - set the subject
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          subject: "Employees"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
+### pdf.title `String` *(default: null)*
+
+Sets the title of the PDF file.
+
+#### Example - set the title
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+          title: "Employees"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
 ### scrollable `Boolean|Object` *(default: true)*
 
 If set to `true` the grid will display a scrollbar when the total row height (or width) exceeds the grid height (or width). By default scrolling is enabled.
@@ -1206,7 +1698,7 @@ The "pdf" command exports the treelist data in PDF format.
         });
     </script>
 
-#### Example - configure the Grid Toolbar as an array of commands
+#### Example - configure the TreeList Toolbar as an array of commands
 
     <div id="treeList"></div>
     <script>
@@ -1531,6 +2023,143 @@ For more information, please refer to the [Window configuration API](/api/web/wi
               { name: "John Doe", age: 33 }
           ]
         });
+    </script>
+
+### excel `Object`
+
+Configures the Kendo UI TreeList Excel export settings.
+
+### excel.fileName `String` *(default: "Export.xslx")*
+
+Specifies the file name of the exported Excel file.
+
+#### Example - set the default Excel file name
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["excel"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        excel: {
+          fileName: "Employees.xlsx"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              }
+            }
+          }
+        }
+      });
+    </script>
+
+### excel.filterable `Boolean` *(default: false)*
+
+Enables or disables column filtering in the Excel file. Not to be mistaken with the treelist filtering feature.
+
+#### Example - enable filtering in the output Excel file
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["excel"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        excel: {
+          filterable: false
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              }
+            }
+          }
+        }
+      });
+    </script>
+
+### excel.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to [proxyURL](#configuration-excel.proxyURL) even if the browser supports saving files locally.
+
+### excel.proxyURL `String` *(default: null)*
+
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally.
+Such browsers are IE version 9 and lower and Safari.
+
+The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
+
+#### Example - set the server proxy URL
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["excel"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        excel: {
+          proxyURL: "/save"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              }
+            }
+          }
+        }
+      });
     </script>
 
 ### dataSource `Object|Array|kendo.data.TreeListDataSource`
@@ -2004,6 +2633,68 @@ A string, DOM element or jQuery object which represents the table row. A string 
 
 ## Events
 
+### collapse
+
+Fired when an item is about to be collapsed.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+##### e.model `kendo.data.TreeListModel`
+
+The data item to which the table row is bound.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the collapse action. The child table rows will not be hidden.
+
+#### Example - subscribe to the "collapse" event before initialization
+
+    <div id="treeList"></div>
+     <script>
+        $("#treeList").kendoTreeList({
+          columns: [
+            { field: "Name" },
+            { field: "Position" }
+          ],
+          dataSource: [
+            { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+            { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+          ],
+          collapse: function(e) {
+            console.log("collapse");
+          }
+        });
+    </script>
+
+#### Example - subscribe to the "collapse" event after initialization
+
+    <div id="treeList"></div>
+     <script>
+        function collapse(e) {
+            console.log("collapse");
+        }
+        $("#treeList").kendoTreeList({
+          columns: [
+            { field: "Name" },
+            { field: "Position" }
+          ],
+          dataSource: [
+            { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+            { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+          ]
+        });
+
+        var treeList = $("#treeList").data("kendoTreeList");
+        treeList.bind("collapse", collapse);
+        treeList.dataSource.fetch();
+    </script>
+
 ### dataBinding
 
 Fired before the widget binds to its data source.
@@ -2113,6 +2804,68 @@ The widget instance which fired the event.
 
         var treeList = $("#treeList").data("kendoTreeList");
         treeList.bind("dataBound", dataBound);
+        treeList.dataSource.fetch();
+    </script>
+
+### expand
+
+Fired when an item is about to be expanded.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+##### e.model `kendo.data.TreeListModel`
+
+The data item to which the table row is bound.
+
+##### e.preventDefault `Function`
+
+If invoked prevents the expand action. The child table rows will not be shown.
+
+#### Example - subscribe to the "expand" event before initialization
+
+    <div id="treeList"></div>
+     <script>
+        $("#treeList").kendoTreeList({
+          columns: [
+            { field: "Name" },
+            { field: "Position" }
+          ],
+          dataSource: [
+            { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+            { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+          ],
+          expand: function(e) {
+            console.log("expand");
+          }
+        });
+    </script>
+
+#### Example - subscribe to the "expand" event after initialization
+
+    <div id="treeList"></div>
+     <script>
+        function expand(e) {
+            console.log("expand");
+        }
+        $("#treeList").kendoTreeList({
+          columns: [
+            { field: "Name" },
+            { field: "Position" }
+          ],
+          dataSource: [
+            { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+            { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+          ]
+        });
+
+        var treeList = $("#treeList").data("kendoTreeList");
+        treeList.bind("expand", expand);
         treeList.dataSource.fetch();
     </script>
 
