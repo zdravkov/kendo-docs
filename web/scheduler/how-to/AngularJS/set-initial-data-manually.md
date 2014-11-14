@@ -6,7 +6,7 @@ description: Set initial data manually
 
 # Set initial data manually
 
-The example below demonstrates how set initial data manually using AngularJS
+The example below demonstrates how to set initial data manually using AngularJS
 
 #### Example:
 
