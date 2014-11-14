@@ -177,8 +177,8 @@ navigation:
         title: "PanelBar"
     "*pivotdatasource":
         title: "PivotDataSource"
-    "*pivotgrid":
-        title: "PivotGrid"
+    "*pivotconfigurator":
+        title: "PivotConfigurator"
     "*progressbar":
         title: "ProgressBar"
     "*rangeslider":
