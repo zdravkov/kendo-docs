@@ -628,6 +628,328 @@ Defines the pannable key. The available values are:
 
 > This option is not aplicable for mobile defices
 
+### pdf `Object`
+Configures the export settings for the [saveAsPDF](#methods-saveAsPDF) method.
+
+### pdf.author `String` *(default: null)*
+The author of the PDF document.
+
+#### Example - set the author
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              author: "John Doe"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+The creator of the PDF document.
+
+#### Example - set the creator
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              creator: "John Doe"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.date `Date`
+The date when the PDF document is created. Defaults to `new Date()`.
+
+#### Example - set the date
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              date: new Date("2014/10/10")
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.proxyURL) even if the browser supports saving files locally.
+
+#### Example - use proxy
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              proxyURL: "/save",
+              forceProxy: true
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.fileName `String` *(default: "Export.pdf")*
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              fileName: "Products.pdf"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.keywords `String` *(default: null)*
+Specifies the keywords of the exported PDF file.
+
+#### Example - set the keywords
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              keywords: "monthly report"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.landscape `Boolean` *(default: false)*
+Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+
+#### Example - enable landscape mode
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              paperSize: "A4",
+              landscape: true
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.margin `Object`
+Specifies the margins of the page (numbers or strings with units). Supported
+units are "mm", "cm", "in" and "pt" (default).
+
+#### Example - set the margins
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              margin: {
+                  left: 10,
+                  right: "10pt",
+                  top: "10mm",
+                  bottom: "1in"
+              }
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.margin.bottom `Number|String` *(default: 0)*
+The bottom margin. Numbers are considered as "pt" units.
+
+### pdf.margin.left `Number|String` *(default: 0)*
+The left margin. Numbers are considered as "pt" units.
+
+### pdf.margin.right `Number|String` *(default: 0)*
+The right margin. Numbers are considered as "pt" units.
+
+### pdf.margin.top `Number|String` *(default: 0)*
+The top margin. Numbers are considered as "pt" units.
+
+### pdf.paperSize `String|Array` *(default: "auto")*
+Specifies the paper size of the PDF document.
+The default "auto" means paper size is determined by content.
+
+> The size of the content in pixels will match the size of the output in points (1 pixel = 1/72 inch).
+
+Supported values:
+
+* A predefined size: "A4", "A3" etc
+* An array of two numbers specifying the width and height in points (1pt = 1/72in)
+* An array of two strings specifying the width and height in units.
+  Supported units are "mm", "cm", "in" and "pt".
+
+#### Example - set custom paper size
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              paperSize: ["20cm", "20cm"]
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.proxyURL `String` *(default: null)*
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally.
+Such browsers are IE version 9 and lower and Safari.
+
+The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with set "Content-Disposition" header.
+
+#### Example - set the server proxy URL
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              proxyURL: "/save"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.subject `String` *(default: null)*
+Sets the subject of the PDF file.
+
+#### Example - set the subject
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              subject: "Products"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
+### pdf.title `String` *(default: null)*
+Sets the title of the PDF file.
+
+#### Example - set the title
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              title: "Products"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
 ### shapeDefaults `Object`
 
 Defines the shape options.
