@@ -8,6 +8,10 @@ description: How to hide the browser address bar, set the platform which will fo
 
 ## Configuration
 
+### browserHistory `Boolean` *(default: true)*
+
+Introduced in the 2014 Q3 release. If set to `false`, the navigation will not **update or read** the browser location fragment.
+
 ### hashBang `Boolean` *(default: false)*
 
 Introduced in the 2014 Q1 Service Pack 1 release. If set to `true`, the navigation will parse and prefix the url fragment value with `!`,
