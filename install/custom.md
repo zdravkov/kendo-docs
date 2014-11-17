@@ -44,7 +44,7 @@ shipped source, run the following shell commands:
     cd src
     npm install -g grunt
     npm install
-    grunt custom:autcomplete,dropdownlist
+    grunt custom:autocomplete,dropdownlist
 ```
 
 list the components you want to be included in the custom build, separated with comma (`,`). The example above will build a custom minified script
