@@ -4072,7 +4072,7 @@ The fields which can be used in the template are:
 
 The width of the table columns in timeline views. Value is treated as pixels.
 
-> The `columnWidth` option is supported when [views.type](#configuration-views.type) is set to "timeline", "timelineWeek" or "timelineWorkWeek".
+> The `columnWidth` option is supported when [views.type](#configuration-views.type) is set to "timeline", "timelineWeek", "timelineWorkWeek" or "timelineMonth".
 
 #### Example - set the event height in month view
 
@@ -4378,7 +4378,7 @@ The fields which can be used in the template are:
 
 The height of the scheduler event rendered in month and timeline views.
 
-> The `eventHeight` option is supported when [views.type](#configuration-views.type) is set to "month", "timeline", "timelineWeek" or "timelineWorkWeek".
+> The `eventHeight` option is supported when [views.type](#configuration-views.type) is set to "month", "timeline", "timelineWeek", "timelineWorkWeek" or "timelineMonth".
 
 #### Example - set the event height in month view
 
@@ -4888,7 +4888,7 @@ The user-friendly title of the view displayed by the scheduler.
 
 ### views.type `String`
 
-The type of the view. The built-in views are: "day", "week", "workWeek", "month", "agenda", "timeline", "timelineWeek" and "timelineWorkWeek".
+The type of the view. The built-in views are: "day", "week", "workWeek", "month", "agenda", "timeline", "timelineWeek", "timelineWorkWeek" and "timelineMonth".
 
 #### Example - set the view type
 
