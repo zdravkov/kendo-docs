@@ -37,6 +37,23 @@ Users with a commercial license may use the [custom download builder tool](http:
 
 If you use **Kendo UI Core**, you may build a custom distribution using the `grunt` build tool by following the [instructions in the README](https://github.com/telerik/kendo-ui-core#building-only-what-you-need).
 
+Starting Q3 2014, the necessary build scripts are shipped in the `src/` directory of the downloadable bundles. To build a custom distribution from the
+shipped source, run the following shell commands:
+
+```sh
+    cd src
+    npm install -g grunt
+    npm install
+    grunt custom:autcomplete,dropdownlist
+```
+
+list the components you want to be included in the custom build, separated with comma (`,`). The example above will build a custom minified script
+which includes the AutoComplete and the DropDownList widgets.
+
+> When complete, the grunt command will output a `kendo.custom.min.js` file in the `src/dist` directory.
+
+> The grunt build task **automatically resolves** the needed dependencies for each component, so you don't have to list them.
+
 ## Include Individual Widget Scripts
 
 The following script files, either minified or not, can be included on a per-widget basis:
