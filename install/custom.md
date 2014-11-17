@@ -37,7 +37,7 @@ Users with a commercial license may use the [custom download builder tool](http:
 
 If you use **Kendo UI Core**, you may build a custom distribution using the `grunt` build tool by following the [instructions in the README](https://github.com/telerik/kendo-ui-core#building-only-what-you-need).
 
-Starting Q3 2014, the necessary build scripts are shipped in the `src/` directory of the downloadable bundles. To build a custom distribution from the
+Starting Q3 2014, the necessary build scripts are shipped in the `src/` directory of the downloadable commercial bundles. To build a custom distribution from the
 shipped source, run the following shell commands:
 
 ```sh
