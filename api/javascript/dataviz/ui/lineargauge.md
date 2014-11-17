@@ -86,9 +86,9 @@ the horizontal one is 60px.
 The width of the gauge area.  By default the vertical gauge is 60px and
 horizontal gauge is 200px.
 
-### pointer `Object|Array`
+### pointer `Array`
 
-The pointer configuration options. If an `Object` is passed, the Gauge will have a single pointer with the specified configuration. This option also accepts an `Array` of pointers, each with it's own configuration options.
+The pointer configuration options. It accepts an `Array` of pointers, each with it's own configuration options.
 
 #### Example - specify single pointer
     <div id="gauge"></div>
