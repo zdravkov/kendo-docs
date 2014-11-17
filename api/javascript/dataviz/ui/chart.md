@@ -31196,6 +31196,14 @@ The X axis value or array of values for multi-axis charts.
     chart.bind("plotAreaClick", chart_plotAreaClick);
     </script>
 
+### render
+
+Fired when the chart is ready to render on screen.
+
+Can be used, for example, to remove loading indicators. Changes to options will be ignored.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
 ### select
 
 Fired when the user modifies the selection.

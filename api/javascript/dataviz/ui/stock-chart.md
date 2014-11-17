@@ -9414,6 +9414,14 @@ The X axis value or array of values for multi-axis charts.
 
 The X axis value or array of values for multi-axis charts.
 
+### render
+
+Fired when the chart is ready to render on screen.
+
+Can be used, for example, to remove loading indicators. Changes to options will be ignored.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
 ### seriesClick
 
 Fires when chart series are clicked.
