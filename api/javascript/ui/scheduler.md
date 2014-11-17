@@ -1097,6 +1097,30 @@ The text similar to "Event" displayed in scheduler.
     });
     </script>
 
+### messages.defaultRowText `String`
+
+The text similar to "All events" displayed in timeline views when there is no vertical grouping.
+
+#### Example - set the "defaultRowText" scheduler message
+
+    <div id="scheduler"></div>
+    <script>
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      messages: {
+        defaultRowText: "Conference room"
+      },
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### messages.pdf `String`
 
 The text displayed by the PDF export button.
