@@ -387,6 +387,6 @@ Holds information about the current state of the Drawer. If it is currenlty open
     new kendo.mobile.Application();
     function onShow(){
         var isVisible = $('#my-drawer').getKendoMobileDrawer().visible;
-        console.log(isVisible); //will output false initially
+        console.log(isVisible); //will output false
     } 
     </script>
