@@ -1776,7 +1776,7 @@ Sets the title of the PDF file.
         ]
     });
     </script>
-	
+
 ### selectable `Boolean` *(default: true)*
 
 If set to `false` the user won't be able to select tasks in the Gantt. By default selection is enabled and triggers the [change event](#events-change).
@@ -2916,10 +2916,10 @@ Initiates the PDF export. Also fires the "pdfExport" event.
             }
         ]
     });
-    
+
     $("#export").click(function(e) {
         var gantt = $("#gantt").data("kendoGantt");
-        gantt.saveAsPdf();
+        gantt.saveAsPDF();
     });
     </script>
 
@@ -3984,7 +3984,7 @@ If invoked the gantt will not save the generated file.
         }
     });
     var gantt = $("#gantt").data("kendoGantt");
-    gantt.saveAsPdf();
+    gantt.saveAsPDF();
     </script>
 
 #### Example - subscribe to the "pdfExport" event after initialization
@@ -4006,7 +4006,7 @@ If invoked the gantt will not save the generated file.
     var gantt = $("#gantt").data("kendoGantt");
     gantt.bind("pdfExport", function(e) {
     });
-    gantt.saveAsPdf();
+    gantt.saveAsPDF();
     </script>
 
 ### resizeStart
