@@ -120,7 +120,7 @@ The following widgets support template directives
 
 ### Form validation
 
-AngularJS provides built-in form validation functionality, however k-ng-model does not update the internal $dirty and $pristine properties. This is why in order to use $dirty and $pristine you will need to update them when the value of the widget is changed. You can do this using $watch like this:
+AngularJS provides built-in form validation functionality, however `k-ng-model` does not update the internal [$dirty and $pristine properties](https://docs.angularjs.org/api/ng/type/form.FormController). This is why in order to use $dirty and $pristine you should manually update them when the value of the widget changes. You may do it using $watch like this:
 
 ``` html
     <div id="example" ng-app="KendoDemos">
