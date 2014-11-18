@@ -64,7 +64,8 @@ Possible resolutions to table overflowing include:
 
 * enable Grid scrolling (which is disabled by default when using the Kendo UI Grid MVC wrapper)
 * set a large-enough width or min-width style for the Grid wrapper - the `<div class="k-widget k-grid">` element
-* float the Grid wrapper and clear the float right after the widget. Floated elements expand and shrink automatically to enclose their content, when needed.
+* [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) the Grid wrapper and [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) the float right after the widget.
+Floated elements expand and shrink automatically to enclose their content, when needed.
 This approach should be used only if the previous two are unacceptable.
 
 When using hierarchy, the detail template content cannot be wider than the master table, unless the detail template is scrollable.
