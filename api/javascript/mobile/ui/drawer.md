@@ -366,3 +366,27 @@ Fires when the Drawer is shown.
 ##### e.sender `kendo.mobile.ui.Drawer`
 
 The widget instance which fired the event.
+
+## Fields
+
+### visible `Boolean`
+
+Holds information about the current state of the Drawer. If it is currenlty opened then the visible field will be set to true.
+
+#### Example - get the current Drawer state
+
+    <div data-role="view" id="drawer-settings" data-show="onShow">
+        <h1>Settings</h1>
+    </div>
+    
+    <div data-role="drawer" id="my-drawer">
+        Hi!
+    </div>
+    
+    <script>
+    new kendo.mobile.Application();
+    function onShow(){
+        var isVisible = $('#my-drawer').getKendoMobileDrawer().visible;
+        console.log(isVisible); //will output false initially
+    } 
+    </script>
