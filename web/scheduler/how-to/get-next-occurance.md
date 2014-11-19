@@ -4,7 +4,7 @@ page_title: Get next occurance
 description: Get next occurance
 ---
 
-# CGet next occurance
+# Get next occurance
 
 The example below demonstrates how to get next occurance of Kendo UI SchedulerEvent
 
