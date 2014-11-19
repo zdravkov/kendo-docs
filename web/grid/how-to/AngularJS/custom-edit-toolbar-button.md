@@ -1,7 +1,7 @@
 ---
-title: Custom edit toolbar button.
-page_title: Custom edit toolbar button.
-description: Custom edit toolbar button.
+title: Custom edit toolbar button
+page_title: Custom edit toolbar button
+description: Custom edit toolbar button
 ---
 
 # Custom edit toolbar button
