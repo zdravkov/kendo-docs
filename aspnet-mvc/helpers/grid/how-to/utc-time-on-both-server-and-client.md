@@ -3,7 +3,7 @@ title: using utc time on both client and server sides.
 description: Using UTC time on both client and server sides.
 ---
 
-# post-grid-with-form
+# Using UTC time on both server and client sides.
 
 This project shows how to keep a `DateTime` property in `UTC` format on both server and client sides when using a Grid with Ajax binding and editing.
 Every time a date is being retrieved from the database or received from the client, on the server side the DateTime Kind property is left unspecified. The .NET framework implicitly converts such dates to local format.
@@ -17,6 +17,7 @@ In order to keep time in UTC, explicit transformation should be applied to the d
 Hence there are two steps to be covered:
 
 1. Use a ViewModel with setter and getter that explicitly set the DateTime Kind to UTC.
+
     private DateTime birthDate;
     public DateTime BirthDate
     {
