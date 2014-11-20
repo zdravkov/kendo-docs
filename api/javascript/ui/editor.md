@@ -3018,13 +3018,21 @@ Gets a W3C-compatible **Selection** object form the editable area.
 
 ### paste
 
-Pastes HTML into the editable area. Cleans up MS Word formatting.
+Inserts HTML into the editable area. Cleans up MS Word formatting.
 
 #### Parameters
 
 ##### html `String`
 
-The HTML to be pasted.
+The HTML to be inserted.
+
+##### options `Object`
+
+Options that configure how the content is processed when pasting.
+
+##### options.split `Boolean` *(default: true)*
+
+Specifies whether the surrounding formatting should be split prior to inserting the HTML. If set to `false`, the inserted snippet will inherit styles from the surrounding content.
 
 #### Example
 
@@ -3033,6 +3041,23 @@ The HTML to be pasted.
     $("#editor").kendoEditor();
     var editor = $("#editor").data("kendoEditor");
     editor.paste("<p>New content</p>");
+    </script>
+
+#### Example - insert text content, preserving formatting
+
+    <textarea id="editor">&lt;em&gt;foo&lt;/em&gt;</textarea>
+    <script>
+    $("#editor").kendoEditor();
+    var editor = $("#editor").data("kendoEditor");
+
+    // set selection after 'f'
+    var range = editor.getRange();
+    range.setStart(editor.body.firstChild.firstChild, 1);
+    range.collapse(true);
+    editor.selectRange(range);
+
+    // insert content
+    editor.paste("bar", { split: false }); // <em>fbaroo</em>
     </script>
 
 ### selectedHtml
