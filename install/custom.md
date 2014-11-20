@@ -635,6 +635,7 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.core.js
 1. kendo.data.js
 1. kendo.userevents.js
+1. kendo.pdf.js (PDF export feature)
 1. kendo.drawing.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.themes.js
@@ -642,7 +643,6 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.dataviz.chart.polar.js (Polar & Radar feature)
 1. kendo.dataviz.chart.js (Funnel chart feature)
 1. kendo.dataviz.chart.funnel.js (Funnel chart feature)
-1. kendo.pdf.js (PDF export feature)
 1. kendo.dataviz.chart.js
 
 ### Diagram
@@ -654,8 +654,8 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
 1. kendo.dataviz.core.js
-1. kendo.drawing.js
 1. kendo.pdf.js (PDF export feature)
+1. kendo.drawing.js
 1. kendo.dataviz.diagram.js
 
 ### Gauge
