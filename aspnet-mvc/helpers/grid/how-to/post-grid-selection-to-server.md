@@ -8,4 +8,4 @@ description: Post Grid selection to server
 
 The example below demonstrates how to Post Grid selection to server
 
-[Ajax editing with Enumeration](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/post-grid-selection-to-server)
+[Post Grid selection to server](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/post-grid-selection-to-server)
