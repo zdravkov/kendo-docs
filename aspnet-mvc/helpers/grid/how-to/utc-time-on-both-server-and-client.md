@@ -18,6 +18,7 @@ Hence there are two steps to be covered:
 
 1. Use a ViewModel with setter and getter that explicitly set the DateTime Kind to UTC.
 
+```
     private DateTime birthDate;
     public DateTime BirthDate
     {
@@ -26,9 +27,11 @@ Hence there are two steps to be covered:
             this.birthDate = new DateTime(value.Ticks, DateTimeKind.Utc);
         }
     }
+```
 
 2. Use [requestEnd](http://docs.telerik.com/kendo-ui/api/javascript/data/datasource#requestend) event of the DataSource to intercept and replace the incoming Date field with the time difference.
 
+```
     window.onRequestEnd = function(e) {
         if (e.response.Data && e.response.Data.length) {
             var data = e.response.Data;
@@ -70,5 +73,6 @@ Hence there are two steps to be covered:
             }
         }
     }
+```
 
 [Project - UTC on both client and server sides](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/)
