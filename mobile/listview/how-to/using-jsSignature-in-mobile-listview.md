@@ -4,7 +4,7 @@ page_title: Using jsSignature in a Kendo UI Mobile ListView
 description: Using jsSignature in a Kendo UI Mobile ListView
 ---
 
-The following runnable sample demonstrates how to include singing functionality in a Kendo UI Mobile ListView using jsSignature.
+The following runnable sample demonstrates how to include signing functionality in a Kendo UI Mobile ListView using jsSignature.
 
 ```html
     <script src="http://willowsystems.github.io/jSignature/js/libs/jSignature.min.js"></script> 
