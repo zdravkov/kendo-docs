@@ -1,11 +1,11 @@
 ---
-title: External editor for batch editable grid
-page_title: External editor for batch editable grid
-description: External editor for batch editable grid
+title: Custom row styles based on model data
+page_title: Custom row styles based on model data
+description: Custom row styles based on model data
 ---
 
-# External editor for batch editable grid
+# Custom row styles based on model data
 
-The example below demonstrates how to create an external bound editor using MVVM and Kendo UI Grid in batch edit mode.
+The example below demonstrates how to 
 
-[External editor for batch editable grid](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/external-editing-container)
+[Custom row styles based on model data](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/custom-row-styles-based-on-data)
