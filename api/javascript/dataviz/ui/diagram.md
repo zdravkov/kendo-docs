@@ -35,311 +35,6 @@ data source is fired. By default the widget will bind to the data source specifi
     $("#diagram").getKendoDiagram().dataSource.fetch();
     </script>
 
-### zoomRate `Number` *(default: 0.1)*
-
-The zoom step when using the mouse-wheel to zoom in or out.
-
-### zoom `Number` *(default: 1)*
-
-The zoom level in percentages.
-
-### zoomMin `Number` *(default: 0.1)*
-
-The zoom min level in percentages.
-
-### zoomMax `Number` *(default: 2)*
-
-The zoom max level in percentages.
-
-### editable `Boolean|Object` *(default: true)*
-
-Specifies the shape editable.
-
-### editable.shapeTemplate `String|Function`
-
-Specifies the shape editor template.
-
-### editable.connectionTemplate `String|Function`
-
-Specifies the connection editor template.
-
-### editable.tools `Array`
-
-Specifies the the toolbar tools. Predefined tools are:
-
-* "edit" - Selected item can be edit.
-* "createShape" - Adds an empty shape data item and a popup window will be displayed.
-* "createConnection" - Adds an empty connection data item and a popup window will be displayed.
-* "undo" - Undoes the previous action.
-* "redo" - Executes again the previously undone action.
-* "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
-* "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
-
-### editable.tools.name `String`
-
-The name of the tool. The built-in tools are "edit", "createShape", "createConnection", "undo", "redo", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
-
-### editable.tools.step `Number` *(default: 90)*
-
-The step of the rotateClockwise and rotateAnticlockwise tools.
-
-### editable.resize `Boolean|Object` *(default: true)*
-
-Specifies the shape resizing.
-
-### editable.resize.handles `Object`
-
-Specifies the handles style.
-
-### editable.resize.handles.fill `String|Object`
-
-Specifies the handles fill options.
-
-### editable.resize.handles.fill.color `String`
-
-Specifies the handles fill color.
-
-### editable.resize.handles.fill.opacity `Number` *(default: 1)*
-
-Specifies the handles fill opacity.
-
-### editable.resize.handles.stroke `Object`
-
-Specifies the handles stroke styles.
-
-### editable.resize.handles.stroke.color `String`
-
-Specifies the handles stroke color.
-
-### editable.resize.handles.stroke.width `Number`
-
-Specifies the handles stroke width.
-
-### editable.resize.handles.stroke.dashType `String`
-
-Specifies the handles stroke dash type.
-
-### editable.resize.handles.hover `Object`
-
-Set the handles hover styles.
-
-### editable.resize.handles.hover.fill `String|Object`
-
-Set the handles hover fill options.
-
-### editable.resize.handles.hover.fill.color `String`
-
-Set the handles hover fill color.
-
-### editable.resize.handles.hover.fill.opacity `Number` *(default: 1)*
-
-Set the handles hover fill opacity.
-
-### editable.resize.handles.hover.stroke `Object`
-
-Specifies the handles stroke styles.
-
-### editable.resize.handles.hover.stroke.color `String`
-
-Specifies the handles stroke color.
-
-### editable.resize.handles.hover.stroke.width `Number`
-
-Specifies the handles stroke width.
-
-### editable.resize.handles.hover.stroke.dashType `String`
-
-Specifies the handles stroke dash type.
-
-### editable.resize.handles.width `Number`
-
-The hangles width.
-
-### editable.resize.handles.height `Number`
-
-The hangles height.
-
-### dataSource `Object|Array|kendo.data.DataSource`
-
-See the [dataSource field](#fields-dataSource).
-
-### connectionsDataSource `Object|Array|kendo.data.DataSource`
-
-See the [dataSource field](#fields-dataSource).
-
-### layout `Object`
-The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.
-
-On a technical level, layout consists of a multitude of algorithms and optimizations:
-
-* analysis of the relational structure (loops, multi-edge occurence...)
-* connectedness of the diagram and the splitting into disconnected components
-* crossings of connections
-* bends and length of links
-
-and various ad-hoc calculations which depend on the type of layout. The criteria on which an algorithm is based vary but the common denominator is:
-
-* a clean separation of connected components (subgraphs)
-* an orderly organization of the shapes in such a way that siblings are close to another, i.e. a tight packing of shapes which belong together (parent of child relationship)
-* a minimum of connection crossings
-
-Kendo diagram includes three of the most used layout algorithms which should cover most of your layout needs - **tree layout**, **force-directed layout** and **layered layout**. Please, check the type property for more details regarding each type.
-
-The generic way to apply a layout is by calling the **layout()** method on the diagram. The method has a single parameter **options**. It is an object, which can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.
-
-### layout.type `String` *(default: "tree")*
-
-The type of the layout algorythm to use. Predefined values are:
-
-* "tree" - Organizes a diagram in a hierarchical way and is typically used in organizational representations. This type includes the radial tree layout, mindmapping and the classic tree diagrams.
-* "force" - Force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node. This force-directed layout is **non-deterministic**; each layout pass will result in an unpredictable (and hence not reproducible) layout. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
-
-![Force-directed parameter](/api/dataviz/diagram/forcedirectedparameters.png)
-
-* "layered" - Organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream). Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
-
-There are several criteria on which this algorithm is based and which are respected in as far as the incidence structure allows it:
-* links have a preferred direction (the complementary direction of the subtype) and attempt to flow as much as possible in this way
-* linked nodes try to stay closed to one another (clustering of nodes)
-* links crossings should be minimized
-* links should be as short as possible (cross a few layers as possible)
-
-The construction of a layered graph drawing proceeds in a series of steps (assuming an horizontal layer from here on):
- + If the input graph is not already a directed acyclic graph, a set of edges is identified the reversal of which will make it acyclic.
- + The nodes of the directed acyclic graph resulting from the first step are assigned to layers, such that each link goes from a higher layer to a lower layer.
- + Edges that span multiple layers are replaced by paths of dummy vertices so that, after this step, each edge in the expanded graph connects two vertices on adjacent layers of the drawing.
- + The nodes within each layer are permuted in an attempt to reduce the number of crossings among the edges connecting it to the previous layer.
- + Each node is assigned a coordinate within its layer, consistent with the permutation calculated in the previous step.
- + The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.
-
-![Layered layout parameters.](/api/dataviz/diagram/layeredparameters.png)
-
-### layout.subtype `String` *(default: "down")*
-
-The subtype further defines the layout type by specifying in greater detail the behaviour expected by the layout algorithm. Possible predefined values are:
-
-* "down" - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the top and its children downwards. For the layered layout the links are directed downwards. This is the default subtype.
-
-![Tree down parameters](/api/dataviz/diagram/treedownparameters.png)
-
-* "up" - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the bottom and its children upwards. For the layered layout the links are directed upwards.
-* "left" - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the left and its children sideways to the right. For the layered layout the links are directed to the left.
-* "right" - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the right and its children sideways to the left. For the layered layout the links are directed downwards.
-
-![Tree right parameters](/api/dataviz/diagram/treerightparameters.png)
-
-* "mindmapHorizontal" - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
-* "mindmapVertical" - *tree layout* specific subtype. The root sits at the center and its children are spread equally above and below.
-
-![Mindmap parameters](/api/dataviz/diagram/mindmapparameters.png)
-
-* "radial" - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
-
-![Radial tree parameters](/api/dataviz/diagram/radialtreeparameters.png)
-![Radial layout angles.](/api/dataviz/diagram/radialangles.png)
-
-* "tipOver" - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example.
-
-![Tip-over parameters](/api/dataviz/diagram/tipoverparameters.png)
-
-* "horizontal" - *layered layout* specific subtype. The preferred direction of the links is horizontal.
-* "vertical" - *layered layout* specific subtype. The preferred direction of the links is vertical.
-
-### layout.horizontalSeparation `Number` *(default: 90)*
-
-Either the distance between the siblings if the tree is up/down or between levels if the tree is left/right. In *tipOver tree layout* this setting is used only for the direct children of the root
-
-![Tree parameters](/api/dataviz/diagram/treeparameters.png)
-
-### layout.verticalSeparation `Number` *(default: 50)*
-
-Either the distance between levels if the tree is up/down or between siblings if the tree is left/right. This property is **not used** in *tipOver tree layout* but rather replaced with three additional ones - **underneathVerticalTopOffset**, **underneathVerticalSeparation** and **underneathHorizontalOffset**
-
-### layout.radialFirstLevelSeparation `Number` *(default: 200)*
-
-Controls the distance between the root and the immediate children of the root. *This setting is specific to the radial tree layout.*
-
-### layout.radialSeparation `Number` *(default: 150)*
-
-Defines the radial separation between the levels (except the first one which is defined by the aforementioned radialFirstLevelSeparation). *This setting is specific to the radial tree layout.*
-
-### layout.startRadialAngle `Number` *(default: 0)*
-
-Defines where the circle/arc starts. The positive direction is **clockwise** and the angle is in **degrees**. *This setting is specific to the radial tree layout.*
-
-### layout.endRadialAngle `Number` *(default: 360)*
-
-Defines where the circle/arc ends. The positive direction is **clockwise** and the angle is in **degrees**. *This setting is specific to the radial tree layout.*
-
-### layout.underneathVerticalTopOffset `Number` *(default: 15)*
-
-Defines the vertical separation between a parent and its first child. This offsets the whole set of children with respect to its parent. *This setting is specific to the tipOver tree layout.*
-
-### layout.underneathVerticalSeparation `Number` *(default: 15)*
-
-Defines the vertical separation between siblings and sub-branches. *This setting is specific to the tipOver tree layout.*
-
-### layout.underneathHorizontalOffset `Number` *(default: 15)*
-
-Defines the horizontal offset from a child with respect to its parent. *This setting is specific to the tipOver tree layout.*
-
-### layout.iterations `Number` *(default: 300)*
-
-The number of times that all the forces in the diagram are being calculated and balanced. The default is set at 300, which should be enough for diagrams up to a hundred nodes. By increasing this parameter you increase the correctness of the simulation but it does not always lead to a more stable topology. In some situations a diagram simply does not have a stable minimum energy state and oscillates (globally or locally) between the minima. In such a situation increasing the iterations will not result in a better topology.
-
-In situations where there is enough symmetry in the diagram the increased number of iterations does lead to a better layout. In the example below the 100 iterations was not enough to bring the grid to a stable state while 300 iterations did bring all the nodes in such a position that the (virtual) energy of the diagram is a minimum.
-
-*This setting is specific to the force-directed layout*
-
-![Increasing iterations](/api/dataviz/diagram/forcedirectediterations.png)
-
-### layout.nodeDistance `Number` *(default: 50)*
-
-In the **force-directed layout** this setting defines the optimal length between 2 nodes, which directly correlates to the state of the link between them. If a link is longer than there will be a force pulling the nodes together, if the link is shorter the force will push the nodes apart. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
-
-In the **layered layout** it defines the minimum distance between nodes on the same level. Due to the nature of the algorithm this distance will only be respected if the the whole crossing of links and optimimzation does not induce a shift of the siblings.
-
-*This setting is specific to the force-directed layout and layered layout*
-
-### layout.grid `Object`
-
-Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
-![Diagram component](/api/dataviz/diagram/componentexample.png)
-
-A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components.
-
-When you apply a certain layout an analysis will first split the diagram in components, arrange each component individually and thereafter organize the components in a grid. The common parameters referred above deal with this grid layout, they define the width, margin and padding of the (invisible) grid used to organize the components.
-
-![Component parameters](/api/dataviz/diagram/componentparameters.png)
-
-### layout.grid.width `Number` *(default: 1500)*
-
-Defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
-
-### layout.grid.offsetX `Number` *(default: 50)*
-
-Defines the left offset of the grid layout. The default is 50.
-
-### layout.grid.offsetY `Number` *(default: 50)*
-
-Defines the top offset of the grid layout. The default is 50.
-
-### layout.grid.componentSpacingX `Number` *(default: 50)*
-
-Defines the horizontal spacing between each component. The default is 50.
-
-### layout.grid.componentSpacingY `Number` *(default: 50)*
-
-Defines the vertical spacing between each component. The default is 50.
-
-### layout.layerSeparation `Number` *(default: 50)*
-
-The height (in a vertical layout) or width (in a horizontal layout) between the layers.
-
-### template `String|Function` *(default: "")*
-
-The [template](/api/framework/kendo#methods-template) which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
-
 ### connectionDefaults `Object`
 
 Defines the connections configuration.
@@ -348,10 +43,6 @@ Defines the connections configuration.
 
 Defines the shapes content settings.
 
-### connectionDefaults.content.text `String`
-
-The text displayed for the connection.
-
 ### connectionDefaults.content.template `String|Function`
 
 The [template](/api/framework/kendo#methods-template) which renders the labels.
@@ -359,6 +50,10 @@ The [template](/api/framework/kendo#methods-template) which renders the labels.
 The fields which can be used in the template are:
 
 * dataItem - the data item, in case a field has been specified
+
+### connectionDefaults.content.text `String`
+
+The text displayed for the connection.
 
 ### connectionDefaults.editable `Boolean|Object` *(default: true)*
 
@@ -375,17 +70,15 @@ Specifies the the toolbar tools. Predefined tools are:
 
 The name of the tool. The built-in tools are "edit" and "delete". Can be set to a custom value.
 
-### connectionDefaults.stroke `Object`
+### connectionDefaults.endCap `String` *(default: "ArrowEnd")*
 
-Defines the stroke configuration.
+The start cap (arrow, head or decoration) of the connection:
 
-### connectionDefaults.stroke.color `String`
+* "none": no cap
+* "ArrowEnd": a filled arrow
+* "FilledCircle": a filled circle
 
-Defines the stroke or line color of the connection.
-
-### connectionDefaults.stroke.width `Number`
-
-Defines the stroke width of the connection.
+Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
 
 ### connectionDefaults.hover `Object`
 
@@ -398,24 +91,6 @@ Defines the hover stroke configuration.
 ### connectionDefaults.hover.stroke.color `String` *(default: "#70CAFF")*
 
 Defines the highlight color when the pointer is hovering over the connection.
-
-### connectionDefaults.startCap `String` *(default: "FilledCircle")*
-
-The start cap (arrow, head or decoration) of the connection:
-
-* "none": no cap
-* "ArrowStart": a filled arrow
-* "FilledCircle": a filled circle
-
-### connectionDefaults.endCap `String` *(default: "ArrowEnd")*
-
-The start cap (arrow, head or decoration) of the connection:
-
-* "none": no cap
-* "ArrowEnd": a filled arrow
-* "FilledCircle": a filled circle
-
-Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
 
 ### connectionDefaults.selection `Object`
 
@@ -441,6 +116,26 @@ Defines the handles stroke options.
 
 Defines the handles stroke color.
 
+### connectionDefaults.startCap `String` *(default: "FilledCircle")*
+
+The start cap (arrow, head or decoration) of the connection:
+
+* "none": no cap
+* "ArrowStart": a filled arrow
+* "FilledCircle": a filled circle
+
+### connectionDefaults.stroke `Object`
+
+Defines the stroke configuration.
+
+### connectionDefaults.stroke.color `String`
+
+Defines the stroke or line color of the connection.
+
+### connectionDefaults.stroke.width `Number`
+
+Defines the stroke width of the connection.
+
 ### connections `Array`
 
 Defines the connections configuration.
@@ -448,10 +143,6 @@ Defines the connections configuration.
 ### connections.content `Object`
 
 Defines the shapes content settings.
-
-### connections.content.text `String`
-
-The text displayed for the connection.
 
 ### connections.content.template `String|Function`
 
@@ -461,29 +152,9 @@ The fields which can be used in the template are:
 
 * dataItem - the data item, in case a field has been specified
 
-### connections.from `Object|String|Number`
+### connections.content.text `String`
 
-Defines the connection from.
-
-### connections.from.x `Number`
-
-Defines the point x value.
-
-### connections.from.y `Number`
-
-Defines the point y value.
-
-### connections.to `Object|String|Number`
-
-Defines the connection to.
-
-### connections.to.x `Number`
-
-Defines the point x value.
-
-### connections.to.y `Number`
-
-Defines the point y value.
+The text displayed for the connection.
 
 ### connections.editable `Boolean|Object` *(default: true)*
 
@@ -500,17 +171,27 @@ Specifies the the toolbar tools. Predefined tools are:
 
 The name of the tool. The built-in tools are "edit" and "delete". Can be set to a custom value.
 
-### connections.stroke `Object`
+### connections.endCap `String` *(default: "ArrowEnd")*
 
-Defines the stroke configuration.
+The start cap (arrow, head or decoration) of the connection:
 
-### connections.stroke.color `String`
+* "none": no cap
+* "ArrowEnd": a filled arrow
+* "FilledCircle": a filled circle
 
-Defines the stroke or line color of the connection.
+Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
 
-### connections.stroke.width `Number`
+### connections.from `Object|String|Number`
 
-Defines the stroke width of the connection.
+Defines the connection from.
+
+### connections.from.x `Number`
+
+Defines the point x value.
+
+### connections.from.y `Number`
+
+Defines the point y value.
 
 ### connections.hover `Object`
 
@@ -523,24 +204,6 @@ Defines the hover stroke configuration.
 ### connections.hover.stroke.color `String` *(default: "#70CAFF")*
 
 Defines the highlight color when the pointer is hovering over the connection.
-
-### connections.startCap `String` *(default: "FilledCircle")*
-
-The start cap (arrow, head or decoration) of the connection:
-
-* "none": no cap
-* "ArrowStart": a filled arrow
-* "FilledCircle": a filled circle
-
-### connections.endCap `String` *(default: "ArrowEnd")*
-
-The start cap (arrow, head or decoration) of the connection:
-
-* "none": no cap
-* "ArrowEnd": a filled arrow
-* "FilledCircle": a filled circle
-
-Note that you can also use the "ArrowStart" for the endCap but its direction will be inversed.
 
 ### connections.points `Array`
 
@@ -582,36 +245,323 @@ Defines the handles stroke options.
 
 Defines the handles stroke color.
 
-### selectable `Boolean|Object` *(default: true)*
+### connections.startCap `String` *(default: "FilledCircle")*
 
-Defines the selectable options.
+The start cap (arrow, head or decoration) of the connection:
 
-### selectable.key `String` *(default: "none")*
+* "none": no cap
+* "ArrowStart": a filled arrow
+* "FilledCircle": a filled circle
 
-Defines the selectable key. The available values are:
+### connections.stroke `Object`
 
-* "none" - No activation key
-* "ctrl" - The activation key will be "ctrl"
-* "shift" - The activation key will be "ctrl"
-* "alt" - The activation key will be "ctrl"
+Defines the stroke configuration.
 
-> This option is not aplicable for mobile defices
+### connections.stroke.color `String`
 
-### selectable.stroke `Object`
+Defines the stroke or line color of the connection.
 
-Defines the selection stroke configuration.
+### connections.stroke.width `Number`
 
-### selectable.stroke.color `String`
+Defines the stroke width of the connection.
 
-Defines the selection stroke color.
+### connections.to `Object|String|Number`
 
-### selectable.stroke.width `Number`
+Defines the connection to.
 
-Defines the selection stroke width.
+### connections.to.x `Number`
 
-### selectable.stroke.dashType `String`
+Defines the point x value.
 
-Defines the selection dash type.
+### connections.to.y `Number`
+
+Defines the point y value.
+
+### connectionsDataSource `Object|Array|kendo.data.DataSource`
+
+See the [dataSource field](#fields-dataSource).
+
+### dataSource `Object|Array|kendo.data.DataSource`
+
+See the [dataSource field](#fields-dataSource).
+
+### editable `Boolean|Object` *(default: true)*
+
+Specifies the shape editable.
+
+### editable.connectionTemplate `String|Function`
+
+Specifies the connection editor template.
+
+### editable.resize `Boolean|Object` *(default: true)*
+
+Specifies the shape resizing.
+
+### editable.resize.handles `Object`
+
+Specifies the handles style.
+
+### editable.resize.handles.fill `String|Object`
+
+Specifies the handles fill options.
+
+### editable.resize.handles.fill.color `String`
+
+Specifies the handles fill color.
+
+### editable.resize.handles.fill.opacity `Number` *(default: 1)*
+
+Specifies the handles fill opacity.
+
+### editable.resize.handles.height `Number`
+
+The hangles height.
+
+### editable.resize.handles.hover `Object`
+
+Set the handles hover styles.
+
+### editable.resize.handles.hover.fill `String|Object`
+
+Set the handles hover fill options.
+
+### editable.resize.handles.hover.fill.color `String`
+
+Set the handles hover fill color.
+
+### editable.resize.handles.hover.fill.opacity `Number` *(default: 1)*
+
+Set the handles hover fill opacity.
+
+### editable.resize.handles.hover.stroke `Object`
+
+Specifies the handles stroke styles.
+
+### editable.resize.handles.hover.stroke.color `String`
+
+Specifies the handles stroke color.
+
+### editable.resize.handles.hover.stroke.dashType `String`
+
+Specifies the handles stroke dash type.
+
+### editable.resize.handles.hover.stroke.width `Number`
+
+Specifies the handles stroke width.
+
+### editable.resize.handles.stroke `Object`
+
+Specifies the handles stroke styles.
+
+### editable.resize.handles.stroke.color `String`
+
+Specifies the handles stroke color.
+
+### editable.resize.handles.stroke.dashType `String`
+
+Specifies the handles stroke dash type.
+
+### editable.resize.handles.stroke.width `Number`
+
+Specifies the handles stroke width.
+
+### editable.resize.handles.width `Number`
+
+The hangles width.
+
+### editable.shapeTemplate `String|Function`
+
+Specifies the shape editor template.
+
+### editable.tools `Array`
+
+Specifies the the toolbar tools. Predefined tools are:
+
+* "edit" - Selected item can be edit.
+* "createShape" - Adds an empty shape data item and a popup window will be displayed.
+* "createConnection" - Adds an empty connection data item and a popup window will be displayed.
+* "undo" - Undoes the previous action.
+* "redo" - Executes again the previously undone action.
+* "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
+* "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
+
+### editable.tools.name `String`
+
+The name of the tool. The built-in tools are "edit", "createShape", "createConnection", "undo", "redo", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+
+### editable.tools.step `Number` *(default: 90)*
+
+The step of the rotateClockwise and rotateAnticlockwise tools.
+
+### layout `Object`
+
+The layout of a diagram consists in arranging the shapes (sometimes also the connections) in some fashion in order to achieve an aesthetically pleasing experience to the user. It aims at giving a more direct insight in the information contained within the diagram and its relational structure.
+
+On a technical level, layout consists of a multitude of algorithms and optimizations:
+
+* analysis of the relational structure (loops, multi-edge occurence...)
+* connectedness of the diagram and the splitting into disconnected components
+* crossings of connections
+* bends and length of links
+
+and various ad-hoc calculations which depend on the type of layout. The criteria on which an algorithm is based vary but the common denominator is:
+
+* a clean separation of connected components (subgraphs)
+* an orderly organization of the shapes in such a way that siblings are close to another, i.e. a tight packing of shapes which belong together (parent of child relationship)
+* a minimum of connection crossings
+
+Kendo diagram includes three of the most used layout algorithms which should cover most of your layout needs - **tree layout**, **force-directed layout** and **layered layout**. Please, check the type property for more details regarding each type.
+
+The generic way to apply a layout is by calling the **layout()** method on the diagram. The method has a single parameter **options**. It is an object, which can contain parameters which are specific to the layout as well as parameters customizing the global grid layout. Parameters which apply to other layout algorithms can be included but are overlooked if not applicable to the chose layout type. This means that you can define a set of parameters which cover all possible layout types and simply pass it in the method whatever the layout define in the first parameter.
+
+### layout.endRadialAngle `Number` *(default: 360)*
+
+Defines where the circle/arc ends. The positive direction is **clockwise** and the angle is in **degrees**. *This setting is specific to the radial tree layout.*
+
+### layout.grid `Object`
+
+Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
+![Diagram component](/api/dataviz/diagram/componentexample.png)
+
+A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components.
+
+When you apply a certain layout an analysis will first split the diagram in components, arrange each component individually and thereafter organize the components in a grid. The common parameters referred above deal with this grid layout, they define the width, margin and padding of the (invisible) grid used to organize the components.
+
+![Component parameters](/api/dataviz/diagram/componentparameters.png)
+
+### layout.grid.componentSpacingX `Number` *(default: 50)*
+
+Defines the horizontal spacing between each component. The default is 50.
+
+### layout.grid.componentSpacingY `Number` *(default: 50)*
+
+Defines the vertical spacing between each component. The default is 50.
+
+### layout.grid.offsetX `Number` *(default: 50)*
+
+Defines the left offset of the grid layout. The default is 50.
+
+### layout.grid.offsetY `Number` *(default: 50)*
+
+Defines the top offset of the grid layout. The default is 50.
+
+### layout.grid.width `Number` *(default: 1500)*
+
+Defines the width of the grid. The bigger this parameter the more components will be organized in an horizontal row. How many components really depends on your diagram and they type of layout applied to each component. The default is set to 800.
+
+### layout.horizontalSeparation `Number` *(default: 90)*
+
+Either the distance between the siblings if the tree is up/down or between levels if the tree is left/right. In *tipOver tree layout* this setting is used only for the direct children of the root
+
+![Tree parameters](/api/dataviz/diagram/treeparameters.png)
+
+### layout.iterations `Number` *(default: 300)*
+
+The number of times that all the forces in the diagram are being calculated and balanced. The default is set at 300, which should be enough for diagrams up to a hundred nodes. By increasing this parameter you increase the correctness of the simulation but it does not always lead to a more stable topology. In some situations a diagram simply does not have a stable minimum energy state and oscillates (globally or locally) between the minima. In such a situation increasing the iterations will not result in a better topology.
+
+In situations where there is enough symmetry in the diagram the increased number of iterations does lead to a better layout. In the example below the 100 iterations was not enough to bring the grid to a stable state while 300 iterations did bring all the nodes in such a position that the (virtual) energy of the diagram is a minimum.
+
+*This setting is specific to the force-directed layout*
+
+![Increasing iterations](/api/dataviz/diagram/forcedirectediterations.png)
+
+### layout.layerSeparation `Number` *(default: 50)*
+
+The height (in a vertical layout) or width (in a horizontal layout) between the layers.
+
+### layout.nodeDistance `Number` *(default: 50)*
+
+In the **force-directed layout** this setting defines the optimal length between 2 nodes, which directly correlates to the state of the link between them. If a link is longer than there will be a force pulling the nodes together, if the link is shorter the force will push the nodes apart. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
+
+In the **layered layout** it defines the minimum distance between nodes on the same level. Due to the nature of the algorithm this distance will only be respected if the the whole crossing of links and optimimzation does not induce a shift of the siblings.
+
+*This setting is specific to the force-directed layout and layered layout*
+
+### layout.radialFirstLevelSeparation `Number` *(default: 200)*
+
+Controls the distance between the root and the immediate children of the root. *This setting is specific to the radial tree layout.*
+
+### layout.radialSeparation `Number` *(default: 150)*
+
+Defines the radial separation between the levels (except the first one which is defined by the aforementioned radialFirstLevelSeparation). *This setting is specific to the radial tree layout.*
+
+### layout.startRadialAngle `Number` *(default: 0)*
+
+Defines where the circle/arc starts. The positive direction is **clockwise** and the angle is in **degrees**. *This setting is specific to the radial tree layout.*
+
+### layout.subtype `String` *(default: "down")*
+
+The subtype further defines the layout type by specifying in greater detail the behaviour expected by the layout algorithm. Possible predefined values are:
+
+* "down" - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the top and its children downwards. For the layered layout the links are directed downwards. This is the default subtype.
+
+![Tree down parameters](/api/dataviz/diagram/treedownparameters.png)
+
+* "up" - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the bottom and its children upwards. For the layered layout the links are directed upwards.
+* "left" - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the left and its children sideways to the right. For the layered layout the links are directed to the left.
+* "right" - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the right and its children sideways to the left. For the layered layout the links are directed downwards.
+
+![Tree right parameters](/api/dataviz/diagram/treerightparameters.png)
+
+* "mindmapHorizontal" - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
+* "mindmapVertical" - *tree layout* specific subtype. The root sits at the center and its children are spread equally above and below.
+
+![Mindmap parameters](/api/dataviz/diagram/mindmapparameters.png)
+
+* "radial" - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
+
+![Radial tree parameters](/api/dataviz/diagram/radialtreeparameters.png)
+![Radial layout angles.](/api/dataviz/diagram/radialangles.png)
+
+* "tipOver" - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example.
+
+![Tip-over parameters](/api/dataviz/diagram/tipoverparameters.png)
+
+* "horizontal" - *layered layout* specific subtype. The preferred direction of the links is horizontal.
+* "vertical" - *layered layout* specific subtype. The preferred direction of the links is vertical.
+
+### layout.type `String` *(default: "tree")*
+
+The type of the layout algorythm to use. Predefined values are:
+
+* "tree" - Organizes a diagram in a hierarchical way and is typically used in organizational representations. This type includes the radial tree layout, mindmapping and the classic tree diagrams.
+* "force" - Force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node. This force-directed layout is **non-deterministic**; each layout pass will result in an unpredictable (and hence not reproducible) layout. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
+
+![Force-directed parameter](/api/dataviz/diagram/forcedirectedparameters.png)
+
+* "layered" - Organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream). Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
+
+There are several criteria on which this algorithm is based and which are respected in as far as the incidence structure allows it:
+* links have a preferred direction (the complementary direction of the subtype) and attempt to flow as much as possible in this way
+* linked nodes try to stay closed to one another (clustering of nodes)
+* links crossings should be minimized
+* links should be as short as possible (cross a few layers as possible)
+
+The construction of a layered graph drawing proceeds in a series of steps (assuming an horizontal layer from here on):
+ + If the input graph is not already a directed acyclic graph, a set of edges is identified the reversal of which will make it acyclic.
+ + The nodes of the directed acyclic graph resulting from the first step are assigned to layers, such that each link goes from a higher layer to a lower layer.
+ + Edges that span multiple layers are replaced by paths of dummy vertices so that, after this step, each edge in the expanded graph connects two vertices on adjacent layers of the drawing.
+ + The nodes within each layer are permuted in an attempt to reduce the number of crossings among the edges connecting it to the previous layer.
+ + Each node is assigned a coordinate within its layer, consistent with the permutation calculated in the previous step.
+ + The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.
+
+![Layered layout parameters.](/api/dataviz/diagram/layeredparameters.png)
+
+### layout.underneathHorizontalOffset `Number` *(default: 15)*
+
+Defines the horizontal offset from a child with respect to its parent. *This setting is specific to the tipOver tree layout.*
+
+### layout.underneathVerticalSeparation `Number` *(default: 15)*
+
+Defines the vertical separation between siblings and sub-branches. *This setting is specific to the tipOver tree layout.*
+
+### layout.underneathVerticalTopOffset `Number` *(default: 15)*
+
+Defines the vertical separation between a parent and its first child. This offsets the whole set of children with respect to its parent. *This setting is specific to the tipOver tree layout.*
+
+### layout.verticalSeparation `Number` *(default: 50)*
+
+Either the distance between levels if the tree is up/down or between siblings if the tree is left/right. This property is **not used** in *tipOver tree layout* but rather replaced with three additional ones - **underneathVerticalTopOffset**, **underneathVerticalSeparation** and **underneathHorizontalOffset**
 
 ### pannable `Boolean|Object` *(default: true)*
 
@@ -629,9 +579,11 @@ Defines the pannable key. The available values are:
 > This option is not aplicable for mobile defices
 
 ### pdf `Object`
+
 Configures the export settings for the [saveAsPDF](#methods-saveAsPDF) method.
 
 ### pdf.author `String` *(default: null)*
+
 The author of the PDF document.
 
 #### Example - set the author
@@ -655,6 +607,7 @@ The author of the PDF document.
     </script>
 
 ### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+
 The creator of the PDF document.
 
 #### Example - set the creator
@@ -678,6 +631,7 @@ The creator of the PDF document.
     </script>
 
 ### pdf.date `Date`
+
 The date when the PDF document is created. Defaults to `new Date()`.
 
 #### Example - set the date
@@ -700,7 +654,32 @@ The date when the PDF document is created. Defaults to `new Date()`.
       diagram.saveAsPDF();
     </script>
 
+### pdf.fileName `String` *(default: "Export.pdf")*
+
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+    <div id="diagram"></div>
+    <script>
+      $("#diagram").kendoDiagram({
+          pdf: {
+              fileName: "Products.pdf"
+          },
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+      });
+
+      var diagram = $("#diagram").getKendoDiagram();
+      diagram.saveAsPDF();
+    </script>
+
 ### pdf.forceProxy `Boolean` *(default: false)*
+
 If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.proxyURL) even if the browser supports saving files locally.
 
 #### Example - use proxy
@@ -724,30 +703,8 @@ If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.p
       diagram.saveAsPDF();
     </script>
 
-### pdf.fileName `String` *(default: "Export.pdf")*
-Specifies the file name of the exported PDF file.
-
-#### Example - set the default PDF file name
-    <div id="diagram"></div>
-    <script>
-      $("#diagram").kendoDiagram({
-          pdf: {
-              fileName: "Products.pdf"
-          },
-          dataSource: {
-              data: [{ "items": [{ items: [{}] }] }],
-              schema: { model: { children: "items" } }
-          },
-          layout: {
-              type: "tree"
-          }
-      });
-
-      var diagram = $("#diagram").getKendoDiagram();
-      diagram.saveAsPDF();
-    </script>
-
 ### pdf.keywords `String` *(default: null)*
+
 Specifies the keywords of the exported PDF file.
 
 #### Example - set the keywords
@@ -771,6 +728,7 @@ Specifies the keywords of the exported PDF file.
     </script>
 
 ### pdf.landscape `Boolean` *(default: false)*
+
 Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
 
 #### Example - enable landscape mode
@@ -795,6 +753,7 @@ Set to `true` to reverse the paper dimensions if needed such that width is the l
     </script>
 
 ### pdf.margin `Object`
+
 Specifies the margins of the page (numbers or strings with units). Supported
 units are "mm", "cm", "in" and "pt" (default).
 
@@ -824,18 +783,23 @@ units are "mm", "cm", "in" and "pt" (default).
     </script>
 
 ### pdf.margin.bottom `Number|String` *(default: 0)*
+
 The bottom margin. Numbers are considered as "pt" units.
 
 ### pdf.margin.left `Number|String` *(default: 0)*
+
 The left margin. Numbers are considered as "pt" units.
 
 ### pdf.margin.right `Number|String` *(default: 0)*
+
 The right margin. Numbers are considered as "pt" units.
 
 ### pdf.margin.top `Number|String` *(default: 0)*
+
 The top margin. Numbers are considered as "pt" units.
 
 ### pdf.paperSize `String|Array` *(default: "auto")*
+
 Specifies the paper size of the PDF document.
 The default "auto" means paper size is determined by content.
 
@@ -869,6 +833,7 @@ Supported values:
     </script>
 
 ### pdf.proxyURL `String` *(default: null)*
+
 The URL of the server side proxy which will stream the file to the end user.
 
 A proxy will be used when the browser isn't capable of saving files locally.
@@ -905,6 +870,7 @@ The proxy should return the decoded file with set "Content-Disposition" header.
     </script>
 
 ### pdf.subject `String` *(default: null)*
+
 Sets the subject of the PDF file.
 
 #### Example - set the subject
@@ -928,6 +894,7 @@ Sets the subject of the PDF file.
     </script>
 
 ### pdf.title `String` *(default: null)*
+
 Sets the title of the PDF file.
 
 #### Example - set the title
@@ -950,124 +917,40 @@ Sets the title of the PDF file.
       diagram.saveAsPDF();
     </script>
 
+### selectable `Boolean|Object` *(default: true)*
+
+Defines the selectable options.
+
+### selectable.key `String` *(default: "none")*
+
+Defines the selectable key. The available values are:
+
+* "none" - No activation key
+* "ctrl" - The activation key will be "ctrl"
+* "shift" - The activation key will be "ctrl"
+* "alt" - The activation key will be "ctrl"
+
+> This option is not aplicable for mobile defices
+
+### selectable.stroke `Object`
+
+Defines the selection stroke configuration.
+
+### selectable.stroke.color `String`
+
+Defines the selection stroke color.
+
+### selectable.stroke.dashType `String`
+
+Defines the selection dash type.
+
+### selectable.stroke.width `Number`
+
+Defines the selection stroke width.
+
 ### shapeDefaults `Object`
 
 Defines the shape options.
-
-### shapeDefaults.editable `Boolean|Object` *(default: true)*
-
-Defines the shape editable options.
-
-### shapeDefaults.editable.connect `Boolean` *(default: true)*
-
-Specifies whether the connectors should appear on hover.
-
-### shapeDefaults.editable.tools `Array`
-
-Specifies the the toolbar tools. Predefined tools are:
-
-* "edit" - Selected item can be edit.
-* "delete" - Selected items can be deleted.
-* "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
-* "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
-
-### shapeDefaults.editable.tools.name `String`
-
-The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
-
-### shapeDefaults.editable.tools.step `Number` *(default: 90)*
-
-The step of the rotateClockwise and rotateAnticlockwise tools.
-
-### shapeDefaults.path `String`
-
-The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
-
-### shapeDefaults.stroke `Object`
-
-Defines the stroke configuration.
-
-### shapeDefaults.stroke.color `String` *(default: "Black")*
-
-Defines the color of the shape's stroke.
-
-### shapeDefaults.stroke.width `Number` *(default: 1)*
-
-Defines the thickness or width of the shape's stroke.
-
-### shapeDefaults.stroke.dashType `String`
-
-The dash type of the shape.
-
-The following dash types are supported:
-
-* "dash" - a line consisting of dashes
-* "dashDot" - a line consisting of a repeating pattern of dash-dot
-* "dot" - a line consisting of dots
-* "longDash" - a line consisting of a repeating pattern of long-dash
-* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
-* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
-* "solid" - a solid line
-
-### shapeDefaults.type `String` *(default: "rectangle")*
-
-Specifies the type of the Shape using any of the built-in shape type.
-
-* "rectangle": this is the default option
-* "circle": a circle/ellipse
-* "image": an image
-
-### shapeDefaults.x `Number` *(default: 0)*
-
-Defines the x-coordinate of the shape when added to the diagram.
-
-### shapeDefaults.y `Number` *(default: 0)*
-
-Defines the y-coordinate of the shape when added to the diagram.
-
-### shapeDefaults.minWidth `Number` *(default: 20)*
-
-Defines the minimum width the shape should have, i.e. it cannot be resized to a value smaller than the given one.
-
-### shapeDefaults.minHeight `Number` *(default: 20)*
-
-Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
-
-### shapeDefaults.width `Number` *(default: 100)*
-
-Defines the width of the shape when added to the diagram.
-
-### shapeDefaults.height `Number` *(default: 100)*
-
-Defines the height of the shape when added to the diagram.
-
-### shapeDefaults.fill `String|Object`
-
-Defines the fill options of the shape.
-
-### shapeDefaults.fill.color `String`
-
-Defines the fill color of the shape.
-
-### shapeDefaults.fill.opacity `Number` *(default: 1)*
-
-Defines the fill opacity of the shape.
-
-### shapeDefaults.hover `Object`
-
-Defines the hover configuration.
-
-### shapeDefaults.hover.fill `String|Object`
-
-Hover's fill options.
-
-### shapeDefaults.hover.fill.color `String`
-
-Hover's fill color.
-
-### shapeDefaults.hover.fill.opacity `Number` *(default: 1)*
-
-Hover's fill opacity.
 
 ### shapeDefaults.connectors `Array`
 
@@ -1114,35 +997,29 @@ The following defines a custom shape with connectors adapted to the shape's outl
       });
     </script>
 
+### shapeDefaults.connectors.description `String`
+
+
+
 ### shapeDefaults.connectors.name `String`
 
-### shapeDefaults.connectors.description `String`
+
 
 ### shapeDefaults.connectors.position `String|Function`
 
-### shapeDefaults.rotation `Object` *(default: null)*
 
-### shapeDefaults.rotation.angle `Number` *(default: 0)*
 
 ### shapeDefaults.content `Object`
 
 Defines the shapes content settings.
 
-### shapeDefaults.content.text `String`
-
-The text displayed in the shape.
-
-### shapeDefaults.content.template `String|Function`
-
-The [template](/api/framework/kendo#methods-template) which renders the labels.
-
-The fields which can be used in the template are:
-
-* dataItem - the data item, in case a field has been specified
-
 ### shapeDefaults.content.align `String`
 
 The alignment of the text inside the shape.
+
+### shapeDefaults.content.color `String`
+
+The color of the shape content text.
 
 ### shapeDefaults.content.fontFamily `String`
 
@@ -1152,13 +1029,132 @@ The font family of the shape content text.
 
 The font size of the shape content text.
 
-### shapeDefaults.content.color `String`
+### shapeDefaults.content.template `String|Function`
 
-The color of the shape content text.
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* dataItem - the data item, in case a field has been specified
+
+### shapeDefaults.content.text `String`
+
+The text displayed in the shape.
+
+### shapeDefaults.editable `Boolean|Object` *(default: true)*
+
+Defines the shape editable options.
+
+### shapeDefaults.editable.connect `Boolean` *(default: true)*
+
+Specifies whether the connectors should appear on hover.
+
+### shapeDefaults.editable.tools `Array`
+
+Specifies the the toolbar tools. Predefined tools are:
+
+* "edit" - Selected item can be edit.
+* "delete" - Selected items can be deleted.
+* "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
+* "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
+
+### shapeDefaults.editable.tools.name `String`
+
+The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+
+### shapeDefaults.editable.tools.step `Number` *(default: 90)*
+
+The step of the rotateClockwise and rotateAnticlockwise tools.
+
+### shapeDefaults.fill `String|Object`
+
+Defines the fill options of the shape.
+
+### shapeDefaults.fill.color `String`
+
+Defines the fill color of the shape.
+
+### shapeDefaults.fill.opacity `Number` *(default: 1)*
+
+Defines the fill opacity of the shape.
+
+### shapeDefaults.height `Number` *(default: 100)*
+
+Defines the height of the shape when added to the diagram.
+
+### shapeDefaults.hover `Object`
+
+Defines the hover configuration.
+
+### shapeDefaults.hover.fill `String|Object`
+
+Hover's fill options.
+
+### shapeDefaults.hover.fill.color `String`
+
+Hover's fill color.
+
+### shapeDefaults.hover.fill.opacity `Number` *(default: 1)*
+
+Hover's fill opacity.
+
+### shapeDefaults.minHeight `Number` *(default: 20)*
+
+Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
+
+### shapeDefaults.minWidth `Number` *(default: 20)*
+
+Defines the minimum width the shape should have, i.e. it cannot be resized to a value smaller than the given one.
+
+### shapeDefaults.path `String`
+
+The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
+
+### shapeDefaults.rotation `Object` *(default: null)*
+
+
+
+### shapeDefaults.rotation.angle `Number` *(default: 0)*
+
+
 
 ### shapeDefaults.source `String`
 
 The source of the shape image. Applicable when the type is set to "image".
+
+### shapeDefaults.stroke `Object`
+
+Defines the stroke configuration.
+
+### shapeDefaults.stroke.color `String` *(default: "Black")*
+
+Defines the color of the shape's stroke.
+
+### shapeDefaults.stroke.dashType `String`
+
+The dash type of the shape.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### shapeDefaults.stroke.width `Number` *(default: 1)*
+
+Defines the thickness or width of the shape's stroke.
+
+### shapeDefaults.type `String` *(default: "rectangle")*
+
+Specifies the type of the Shape using any of the built-in shape type.
+
+* "rectangle": this is the default option
+* "circle": a circle/ellipse
+* "image": an image
 
 ### shapeDefaults.visual `Function`
 
@@ -1210,13 +1206,76 @@ A function returning a visual element to render for a given shape. The following
 
     $("#diagram").getKendoDiagram().layout();
 
+### shapeDefaults.width `Number` *(default: 100)*
+
+Defines the width of the shape when added to the diagram.
+
+### shapeDefaults.x `Number` *(default: 0)*
+
+Defines the x-coordinate of the shape when added to the diagram.
+
+### shapeDefaults.y `Number` *(default: 0)*
+
+Defines the y-coordinate of the shape when added to the diagram.
+
 ### shapes `Array`
 
 Defines the shape options.
 
-### shapes.id `String`
+### shapes.connectors `Array`
 
-The unique identifier for a Shape.
+Defines the connectors the shape owns.
+
+### shapes.connectors.description `String`
+
+The connector description.
+
+### shapes.connectors.name `String`
+
+The connector name. Predefined names include:
+
+* "top" - top connector.
+* "right" - right connector.
+* "bottom" - bottom connector.
+* "bottomRight" - bottom right connector.
+* "left" - left connector.
+* "auto" - auto connector.
+
+### shapes.connectors.position `String|Function`
+
+The function that positions the connector.
+
+### shapes.content `Object`
+
+Defines the shapes content settings.
+
+### shapes.content.align `String`
+
+The alignment of the text inside the shape.
+
+### shapes.content.color `String`
+
+The color of the shape content text.
+
+### shapes.content.fontFamily `String`
+
+The font family of the shape content text.
+
+### shapes.content.fontSize `Number`
+
+The font size of the shape content text.
+
+### shapes.content.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the labels.
+
+The fields which can be used in the template are:
+
+* dataItem - the data item, in case a field has been specified
+
+### shapes.content.text `String`
+
+The text displayed in the shape.
 
 ### shapes.editable `Boolean|Object` *(default: true)*
 
@@ -1243,68 +1302,6 @@ The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise"
 
 The step of the rotateClockwise and rotateAnticlockwise tools.
 
-### shapes.path `String`
-
-The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
-
-### shapes.stroke `Object`
-
-Defines the stroke configuration.
-
-### shapes.stroke.color `String`
-
-Defines the color of the shape's stroke.
-
-### shapes.stroke.width `Number` *(default: 1)*
-
-Defines the thickness or width of the shape's stroke.
-
-### shapes.stroke.dashType `String`
-
-The dash type of the shape.
-
-The following dash types are supported:
-
-* "dash" - a line consisting of dashes
-* "dashDot" - a line consisting of a repeating pattern of dash-dot
-* "dot" - a line consisting of dots
-* "longDash" - a line consisting of a repeating pattern of long-dash
-* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
-* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
-* "solid" - a solid line
-
-### shapes.type `String` *(default: "rectangle")*
-
-Specifies the type of the Shape using any of the built-in shape type.
-
-* "rectangle": this is the default option
-* "circle" : a circle/ellipse
-* "image": an image
-
-### shapes.x `Number` *(default: 0)*
-
-Defines the x-coordinate of the shape when added to the diagram.
-
-### shapes.y `Number` *(default: 0)*
-
-Defines the y-coordinate of the shape when added to the diagram.
-
-### shapes.minWidth `Number` *(default: 20)*
-
-Defines the minimum width the shape should have, i.e. it cannot be resized to a value smaller than the given one.
-
-### shapes.minHeight `Number` *(default: 20)*
-
-Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
-
-### shapes.width `Number` *(default: 100)*
-
-Defines the width of the shape when added to the diagram.
-
-### shapes.height `Number` *(default: 100)*
-
-Defines the height of the shape when added to the diagram.
-
 ### shapes.fill `String|Object`
 
 Defines the fill options of the shape.
@@ -1316,6 +1313,10 @@ Defines the fill color of the shape.
 ### shapes.fill.opacity `Number` *(default: 1)*
 
 Defines the fill opacity of the shape.
+
+### shapes.height `Number` *(default: 100)*
+
+Defines the height of the shape when added to the diagram.
 
 ### shapes.hover `Object`
 
@@ -1333,28 +1334,21 @@ Hover's fill color.
 
 Hover's fill opacity.
 
-### shapes.connectors `Array`
+### shapes.id `String`
 
-Defines the connectors the shape owns.
+The unique identifier for a Shape.
 
-### shapes.connectors.name `String`
+### shapes.minHeight `Number` *(default: 20)*
 
-The connector name. Predefined names include:
+Defines the minimum height the shape should have, i.e. it cannot be resized to a value smaller than the given one.
 
-* "top" - top connector.
-* "right" - right connector.
-* "bottom" - bottom connector.
-* "bottomRight" - bottom right connector.
-* "left" - left connector.
-* "auto" - auto connector.
+### shapes.minWidth `Number` *(default: 20)*
 
-### shapes.connectors.description `String`
+Defines the minimum width the shape should have, i.e. it cannot be resized to a value smaller than the given one.
 
-The connector description.
+### shapes.path `String`
 
-### shapes.connectors.position `String|Function`
-
-The function that positions the connector.
+The path option of a Shape is a description of a custom geometry. The format follows the standard SVG format (http://www.w3.org/TR/SVG/paths.html#PathData "SVG Path data.").
 
 ### shapes.rotation `Object`
 
@@ -1364,404 +1358,227 @@ The function that positions the connector.
 
 The rotation angle.
 
-### shapes.content `Object`
-
-Defines the shapes content settings.
-
-### shapes.content.text `String`
-
-The text displayed in the shape.
-
-### shapes.content.template `String|Function`
-
-The [template](/api/framework/kendo#methods-template) which renders the labels.
-
-The fields which can be used in the template are:
-
-* dataItem - the data item, in case a field has been specified
-
-### shapes.content.align `String`
-
-The alignment of the text inside the shape.
-
-### shapes.content.fontFamily `String`
-
-The font family of the shape content text.
-
-### shapes.content.fontSize `Number`
-
-The font size of the shape content text.
-
-### shapes.content.color `String`
-
-The color of the shape content text.
-
 ### shapes.source `String`
 
 The source of the shape image. Applicable when the type is set to "image".
+
+### shapes.stroke `Object`
+
+Defines the stroke configuration.
+
+### shapes.stroke.color `String`
+
+Defines the color of the shape's stroke.
+
+### shapes.stroke.dashType `String`
+
+The dash type of the shape.
+
+The following dash types are supported:
+
+* "dash" - a line consisting of dashes
+* "dashDot" - a line consisting of a repeating pattern of dash-dot
+* "dot" - a line consisting of dots
+* "longDash" - a line consisting of a repeating pattern of long-dash
+* "longDashDot" - a line consisting of a repeating pattern of long-dash-dot
+* "longDashDotDot" - a line consisting of a repeating pattern of long-dash-dot-dot
+* "solid" - a solid line
+
+### shapes.stroke.width `Number` *(default: 1)*
+
+Defines the thickness or width of the shape's stroke.
+
+### shapes.type `String` *(default: "rectangle")*
+
+Specifies the type of the Shape using any of the built-in shape type.
+
+* "rectangle": this is the default option
+* "circle" : a circle/ellipse
+* "image": an image
 
 ### shapes.visual `Function`
 
 A function returning a visual element to render for this shape.
 See [visual](#configuration-shapeDefaults.visual).
 
+### shapes.width `Number` *(default: 100)*
+
+Defines the width of the shape when added to the diagram.
+
+### shapes.x `Number` *(default: 0)*
+
+Defines the x-coordinate of the shape when added to the diagram.
+
+### shapes.y `Number` *(default: 0)*
+
+Defines the y-coordinate of the shape when added to the diagram.
+
+### template `String|Function` *(default: "")*
+
+The [template](/api/framework/kendo#methods-template) which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
+
+### zoom `Number` *(default: 1)*
+
+The zoom level in percentages.
+
+### zoomMax `Number` *(default: 2)*
+
+The zoom max level in percentages.
+
+### zoomMin `Number` *(default: 0.1)*
+
+The zoom min level in percentages.
+
+### zoomRate `Number` *(default: 0.1)*
+
+The zoom step when using the mouse-wheel to zoom in or out.
+
 ## Methods
 
-### destroy
+### addConnection
 
-Prepares the widget for safe removal from the DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
+Adds the given Connection to the diagram.
 
-> This method does not remove the widget element from the DOM.
+#### Parameters
 
-#### Example
+##### connection `Object`
+
+The Connection instance to be added to the diagram.
+
+##### undoable `Boolean` *(default:true)*
+
+Whether the addition should be recorded in the undo-redo stack.
+
+#### Example - adding a Connection to the diagram
+
     <script>
-    $("#diagram").kendoDiagram({
-      dataSource: [{
-          "name" : "Telerik",
-          "items": [
-              {"name": "Kendo"},
-              {"name": "Icenium"}
-          ]
-      }],
-      template: "#= item.name #"
-    });
+    $("#diagram").kendoDiagram();
     var diagram = $("#diagram").data("kendoDiagram");
-    diagram.destroy();
+    var shape1 = diagram.addShape(new Point(100, 100));
+    var shape2 = diagram.addShape(new Point(300, 200));
+
+    var connection = new kendo.diagram.Connection(shape1, shape2, { stroke: { color: "red" } });
+    diagram.addConnection(connection);
     </script>
 
-### exportImage
-Exports the diagram content as an image.
-The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+### addShape
 
-The full content of the diagram will be exported in 1:1 scale.
-If exporting the current view is desired then the [kendo.drawing.drawDOM](/api/javascript/drawing#methods-drawDOM)
-method should be called on a container element.
-
-The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
-The promise will be resolved with a PNG image encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+Adds a new shape to the diagram.
 
 #### Parameters
 
-##### options `Object` *(optional)*
-Parameters for the exported image.
+##### obj `Object`
 
-##### options.width `String`
-The width of the exported image. Defaults to the diagram content width.
+A Shape instance or a Point where the default shape type will be added.
 
-##### options.height `String`
-The height of the exported image. Defaults to the diagram content height.
+##### undoable `Boolean` *(default:true)*
 
-#### Returns
-`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+Whether the addition should be recorded in the undo-redo stack.
 
-#### Example - Exporting a diagram to an image
-    <div id="diagram"></div>
+#### Example - adding a shape to the diagram
+
     <script>
-        $("#diagram").kendoDiagram({
-          dataSource: {
-              data: [{ "items": [{ items: [{}] }] }],
-              schema: { model: { children: "items" } }
-          },
-          layout: {
-              type: "tree"
-          }
-        });
+    $("#diagram").kendoDiagram();
+    var diagram = $("#diagram").data("kendoDiagram");
 
-        var diagram = $("#diagram").getKendoDiagram();
-        diagram.exportImage().done(function(data) {
-            kendo.saveAs({
-                dataURI: data,
-                fileName: "diagram.png"
-            });
-        });
+     diagram.addShape(new Point(100, 100));
+     var shape = new kendo.diagram.Shape({x:500, y:100, fill: "red"});
+     diagram.addShape(shape);
     </script>
 
+#### Returns
+`kendo.dataviz.diagram.Shape` The newly created diagram shape.
 
-### exportPDF
-Exports the diagram content as a PDF file.
-The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+### alignShapes
 
-The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
-The promise will be resolved with a PDF file encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+Aligns the edges (as defined by the bounding box) of the selected shapes.
 
 #### Parameters
 
-##### options `kendo.drawing.PDFOptions` *(optional)*
-Parameters for the exported PDF file.
+##### direction `String`
+
+This can be one of the four supported directions:
+
+* "left"
+* "right"
+* "top"
+* "bottom"
+
+### boundingBox
 
 #### Returns
-`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
 
-#### Example - Exporting a diagram to a PDF file
-    <div id="diagram"></div>
+`kendo.dataviz.diagram.Rect` The bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
+
+#### Parameters
+
+##### items `Array`
+
+The items (shapes and connections) to include in the bounding box.
+Defaults to all items if not specified.
+
+### bringIntoView
+
+Brings one or more items into the view in function of various criteria.
+
+#### Parameters
+
+##### obj `Array|Object`
+
+* a diagram item
+* an array of items
+* a rectangle: this defines a window which the view should contain
+
+##### options `Object`
+
+* animate
+* align
+
+#### Example - bring a portion of the diagram into view
+
+This will offset/pan the diagram to bring the rectangle at position (500,500) into view.
+
     <script>
-        $("#diagram").kendoDiagram({
-          dataSource: {
-              data: [{ "items": [{ items: [{}] }] }],
-              schema: { model: { children: "items" } }
-          },
-          layout: {
-              type: "tree"
-          }
-        });
+        $("#diagram").kendoDiagram();
+        var diagram = $("#diagram").data("kendoDiagram");
 
-        var diagram = $("#diagram").getKendoDiagram();
-        diagram.exportPDF().done(function(data) {
-            kendo.saveAs({
-                dataURI: data,
-                fileName: "diagram.pdf"
-            });
-        });
+        var shape1 = diagram.addShape(new Point(100, 100));
+        var shape2 = diagram.addShape(new Point(400, 100));
+        var con = diagram.connect(shape1,shape2);
+
+        diagram.bringIntoView(new kendo.diagram.Rect(500, 500, 10, 10));
     </script>
 
+#### Example - bring an item into view
 
-### exportSVG
-Exports the diagram content as an SVG document.
-The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+The second shape has a vertical position of 1000 and is off the screen at launch. Upon clicking the diagram this item will be in the view.
 
-The full content of the diagram will be exported in 1:1 scale.
-If exporting the current view is desired then the [kendo.drawing.drawDOM](/api/javascript/drawing#methods-drawDOM)
-method should be called on a container element.
-
-The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
-The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
-
-#### Parameters
-
-##### options `Object` *(optional)*
-Export options.
-
-##### options.raw `Boolean` *(default: false)*
-Resolves the promise with the raw SVG document without the Data URI prefix.
-
-#### Returns
-`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
-
-#### Example - Exporting a diagram to an SVG document
-    <div id="diagram"></div>
     <script>
-        $("#diagram").kendoDiagram({
-          dataSource: {
-              data: [{ "items": [{ items: [{}] }] }],
-              schema: { model: { children: "items" } }
-          },
-          layout: {
-              type: "tree"
-          }
-        });
-
-        var diagram = $("#diagram").getKendoDiagram();
-        diagram.exportSVG().done(function(data) {
-            kendo.saveAs({
-                dataURI: data,
-                fileName: "diagram.svg"
-            });
+        var shape2;
+        function init()
+        {
+            var diagramElement = $("#canvas").kendoDiagram();
+            diagram = diagramElement.data("kendoDiagram");
+            diagramElement.css("width", "1200");
+            diagramElement.css("height", "800");
+        }
+        $(document).ready(
+                function()
+                {
+                    init();
+                    var shape1 = diagram.addShape(new Point(100, 100));
+                    shape2 = diagram.addShape(new Point(400, 1000));
+                    var con = diagram.connect(shape1, shape2);
+                });
+        $(document).click(function()
+        {
+            diagram.bringIntoView(shape2);
         });
     </script>
 
+### cancelEdit
 
-
-### resize
-
-Adjusts the diagram size to match the size of the container.
-
-### zoom
-
-Zooms in or out of the diagram.
-
-#### Parameters
-
-##### zoom `Number`
-
-The zoom factor.
-
-##### point `Object`
-
-The point to zoom into or out of.
-
-### setDataSource
-
-Sets the data source of the diagram.
-
-#### Parameters
-
-##### dataSource `kendo.data.DataSource`
-
-The data source to which the widget should be bound.
-
-### setConnectionsDataSource
-
-Sets the connections data source of the diagram.
-
-#### Parameters
-
-##### dataSource `kendo.data.DataSource`
-
-The data source to which the widget should be bound.
-
-### save
-
-Saves the diagram.
-
-### load
-
-Loads a saved diagram.
-
-#### Parameters
-
-##### json `String`
-
-The serialized diagram in JSON format.
-
-### pan
-
-Pans the diagram with a specified delta (represented as a Point).
-
-#### Parameters
-
-##### pan `Object`
-
-The translation delta to apply to the diagram.
-
-### viewport
-
-The bounds of the diagramming canvas.
-
-### viewToDocument
-
-Transforms a point from View coordinates to Page document coordinates. View origin is the diagram container.
-
-#### Parameters
-
-##### point `Object`
-
-The point in Page document coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### documentToView
-
-Transforms a point from Page document coordinates to View coordinates. View origin is the diagram container.
-
-#### Parameters
-
-##### point `Object`
-
-The point in View coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### viewToModel
-
-Transforms a point from View coordinates to Model coordinates. Model coordinates are independent coordinates to define Shape bounds.
-
-#### Parameters
-
-##### point `Object`
-
-The point in View coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### modelToView
-
-Transforms a point from Model coordinates to View coordinates. Model coordinates are independent coordinates to define Shape bounds.
-
-#### Parameters
-
-##### point `Object`
-
-The point in Model coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### modelToLayer
-
-Transforms a point from Model coordinates to Layer coordinates. Layer coordinates are relative to the drawing surface.
-
-#### Parameters
-
-##### point `Object`
-
-The point in Model coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### layerToModel
-
-Transforms a point from Layer coordinates to Model coordinates. Layer coordinates are relative to the drawable surface.
-
-#### Parameters
-
-##### point `Object`
-
-The point in layer coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### documentToModel
-
-Transforms a point from Page document coordinates to Model coordinates. Shortcut for viewToModel(documentToView(point))
-
-#### Parameters
-
-##### point `Object`
-
-The point in Page document coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### modelToDocument
-
-Transforms a point from Model coordinates to Page document coordinates. Shortcut for viewToDocument(modelToView(point))
-
-#### Parameters
-
-##### point `Object`
-
-The point in Model coordinates.
-
-#### Returns
-
-`Object` the transformed point
-
-### transformPoint
-
-Transforms a point from the main canvas coordinates to the non-transformed origin.
-
-#### Parameters
-
-##### p `Object`
-
-An arbitrary point to transform to the diagram coordinate system.
-
-### transformRect
-
-Transforms a given rectangle to the diagram coordinate system.
-
-#### Parameters
-
-##### r `Object`
-
-The rectangle to be transformed.
-
-### focus
-
-Sets the focus on the diagram.
+Cancels edit and close the popup form.
 
 ### clear
 
@@ -1833,76 +1650,334 @@ A Shape in the diagram.
 
 A Shape in the diagram.
 
-### addConnection
+### copy
 
-Adds the given Connection to the diagram.
+Puts a copy of the currently selected diagram to an internal clipboard.
 
-#### Parameters
+### createConnection
 
-##### connection `Object`
-
-The Connection instance to be added to the diagram.
-
-##### undoable `Boolean` *(default:true)*
-
-Whether the addition should be recorded in the undo-redo stack.
-
-#### Example - adding a Connection to the diagram
-
-    <script>
-    $("#diagram").kendoDiagram();
-    var diagram = $("#diagram").data("kendoDiagram");
-    var shape1 = diagram.addShape(new Point(100, 100));
-    var shape2 = diagram.addShape(new Point(300, 200));
-
-    var connection = new kendo.diagram.Connection(shape1, shape2, { stroke: { color: "red" } });
-    diagram.addConnection(connection);
-    </script>
-
-### addShape
-
-Adds a new shape to the diagram.
+Adds an empty connection data item and a popup window will be displayed.
 
 #### Parameters
 
-##### obj `Object`
+##### item `Object`
 
-A Shape instance or a Point where the default shape type will be added.
+A diagram shape item to edit.
 
-##### undoable `Boolean` *(default:true)*
+### createShape
 
-Whether the addition should be recorded in the undo-redo stack.
+Adds an empty shape data item and a popup window will be displayed.
 
-#### Example - adding a shape to the diagram
+#### Parameters
 
+##### item `Object`
+
+A diagram shape item to edit.
+
+### cut
+
+Cuts the currently selected diagram items to an internal clipboard.
+
+### destroy
+
+Prepares the widget for safe removal from the DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
+
+> This method does not remove the widget element from the DOM.
+
+#### Example
     <script>
-    $("#diagram").kendoDiagram();
+    $("#diagram").kendoDiagram({
+      dataSource: [{
+          "name" : "Telerik",
+          "items": [
+              {"name": "Kendo"},
+              {"name": "Icenium"}
+          ]
+      }],
+      template: "#= item.name #"
+    });
     var diagram = $("#diagram").data("kendoDiagram");
-
-     diagram.addShape(new Point(100, 100));
-     var shape = new kendo.diagram.Shape({x:500, y:100, fill: "red"});
-     diagram.addShape(shape);
+    diagram.destroy();
     </script>
+
+### documentToModel
+
+Transforms a point from Page document coordinates to Model coordinates. Shortcut for viewToModel(documentToView(point))
+
+#### Parameters
+
+##### point `Object`
+
+The point in Page document coordinates.
 
 #### Returns
-`kendo.dataviz.diagram.Shape` The newly created diagram shape.
 
-### undo
+`Object` the transformed point
 
-Undoes the previous action.
+### documentToView
 
-#### Example - undoing items removal
+Transforms a point from Page document coordinates to View coordinates. View origin is the diagram container.
 
+#### Parameters
+
+##### point `Object`
+
+The point in View coordinates.
+
+#### Returns
+
+`Object` the transformed point
+
+### edit
+
+Edit diagram connection/shape.
+
+#### Parameters
+
+##### item `Object`
+
+A diagram item to edit.
+
+### exportImage
+
+Exports the diagram content as an image.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The full content of the diagram will be exported in 1:1 scale.
+If exporting the current view is desired then the [kendo.drawing.drawDOM](/api/javascript/drawing#methods-drawDOM)
+method should be called on a container element.
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PNG image encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Parameters for the exported image.
+
+##### options.width `String`
+The width of the exported image. Defaults to the diagram content width.
+
+##### options.height `String`
+The height of the exported image. Defaults to the diagram content height.
+
+#### Returns
+`Promise` A promise that will be resolved with a PNG image encoded as a Data URI.
+
+#### Example - Exporting a diagram to an image
+    <div id="diagram"></div>
     <script>
-        $("#diagram").kendoDiagram();
-        var diagram = $("#diagram").data("kendoDiagram");
+        $("#diagram").kendoDiagram({
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+        });
 
-        var shape1 = diagram.addShape(new Point(100, 100));
-        var shape2 = diagram.addShape(new Point(400, 100));
-        var con = diagram.connect(shape1,shape2);
-        diagram.remove([shape1, shape2], true);
-        diagram.undo();
+        var diagram = $("#diagram").getKendoDiagram();
+        diagram.exportImage().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "diagram.png"
+            });
+        });
     </script>
+
+### exportPDF
+
+Exports the diagram content as a PDF file.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a PDF file encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `kendo.drawing.PDFOptions` *(optional)*
+Parameters for the exported PDF file.
+
+#### Returns
+`Promise` A promise that will be resolved with a PDF file encoded as a Data URI.
+
+#### Example - Exporting a diagram to a PDF file
+    <div id="diagram"></div>
+    <script>
+        $("#diagram").kendoDiagram({
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+        });
+
+        var diagram = $("#diagram").getKendoDiagram();
+        diagram.exportPDF().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "diagram.pdf"
+            });
+        });
+    </script>
+
+### exportSVG
+
+Exports the diagram content as an SVG document.
+The result can be saved using [kendo.saveAs](/api/javascript/kendo#methods-saveAs).
+
+The full content of the diagram will be exported in 1:1 scale.
+If exporting the current view is desired then the [kendo.drawing.drawDOM](/api/javascript/drawing#methods-drawDOM)
+method should be called on a container element.
+
+The export operation is asynchronous and returns a [promise](http://api.jquery.com/Types/#Promise).
+The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
+
+#### Parameters
+
+##### options `Object` *(optional)*
+Export options.
+
+##### options.raw `Boolean` *(default: false)*
+Resolves the promise with the raw SVG document without the Data URI prefix.
+
+#### Returns
+`Promise` A promise that will be resolved with a SVG document encoded as a Data URI.
+
+#### Example - Exporting a diagram to an SVG document
+    <div id="diagram"></div>
+    <script>
+        $("#diagram").kendoDiagram({
+          dataSource: {
+              data: [{ "items": [{ items: [{}] }] }],
+              schema: { model: { children: "items" } }
+          },
+          layout: {
+              type: "tree"
+          }
+        });
+
+        var diagram = $("#diagram").getKendoDiagram();
+        diagram.exportSVG().done(function(data) {
+            kendo.saveAs({
+                dataURI: data,
+                fileName: "diagram.svg"
+            });
+        });
+    </script>
+
+### focus
+
+Sets the focus on the diagram.
+
+### getShapeById
+
+Returns the shape or connection with the specified identifier.
+
+#### Parameters
+
+##### id `String`
+
+The unique identifier of the Shape or Connection
+
+#### Returns
+
+`Object` the item that has the provided ID.
+
+### layerToModel
+
+Transforms a point from Layer coordinates to Model coordinates. Layer coordinates are relative to the drawable surface.
+
+#### Parameters
+
+##### point `Object`
+
+The point in layer coordinates.
+
+#### Returns
+
+`Object` the transformed point
+
+### layout
+
+Applies a layout algorithm on the current diagram.
+
+A more detailed overview of layout and graph analysis can be found below.
+
+#### Parameters
+
+##### options `Object`
+
+The layout options. See [options.layout](#configuration-layout) for a full reference.
+
+### load
+
+Loads a saved diagram.
+
+#### Parameters
+
+##### json `String`
+
+The serialized diagram in JSON format.
+
+### modelToDocument
+
+Transforms a point from Model coordinates to Page document coordinates. Shortcut for viewToDocument(modelToView(point))
+
+#### Parameters
+
+##### point `Object`
+
+The point in Model coordinates.
+
+#### Returns
+
+`Object` the transformed point
+
+### modelToLayer
+
+Transforms a point from Model coordinates to Layer coordinates. Layer coordinates are relative to the drawing surface.
+
+#### Parameters
+
+##### point `Object`
+
+The point in Model coordinates.
+
+#### Returns
+
+`Object` the transformed point
+
+### modelToView
+
+Transforms a point from Model coordinates to View coordinates. Model coordinates are independent coordinates to define Shape bounds.
+
+#### Parameters
+
+##### point `Object`
+
+The point in Model coordinates.
+
+#### Returns
+
+`Object` the transformed point
+
+### pan
+
+Pans the diagram with a specified delta (represented as a Point).
+
+#### Parameters
+
+##### pan `Object`
+
+The translation delta to apply to the diagram.
+
+### paste
+
+Pastes the content of the internal diagram clipboard.
 
 ### redo
 
@@ -1934,6 +2009,18 @@ Whether the removal should be recorded in the undo-redo stack.
         diagram.remove([shape1, shape2, con]);
     </script>
 
+### resize
+
+Adjusts the diagram size to match the size of the container.
+
+### save
+
+Saves the diagram.
+
+### saveEdit
+
+Saves any changes made by the user.
+
 ### select
 
 Gets the currently selected items is no parameter is specified. If a parameter is specified this selects items in the diagram on the basis of the given input.
@@ -1952,20 +2039,25 @@ Gets the currently selected items is no parameter is specified. If a parameter i
 
 Only one Boolean option is currently defined; addToSelection. If set to true the newly selected items will be added to the existing selection. Otherwise a new selection set is created. The default is false.
 
-### toFront
+### setConnectionsDataSource
 
-Brings the specified items in front, i.e. it's reordering items to ensure they are on top of the complementary items.
+Sets the connections data source of the diagram.
 
 #### Parameters
 
-##### items `Array`
+##### dataSource `kendo.data.DataSource`
 
-An array of diagram items.
+The data source to which the widget should be bound.
 
-##### undoable `Boolean`
+### setDataSource
 
-Whether the change should be recorded in the undo-redo stack.
+Sets the data source of the diagram.
 
+#### Parameters
+
+##### dataSource `kendo.data.DataSource`
+
+The data source to which the widget should be bound.
 
 ### toBack
 
@@ -1981,26 +2073,45 @@ An array of diagram items.
 
 Whether the change should be recorded in the undo-redo stack.
 
-### bringIntoView
+### toFront
 
-Brings one or more items into the view in function of various criteria.
+Brings the specified items in front, i.e. it's reordering items to ensure they are on top of the complementary items.
 
 #### Parameters
 
-##### obj `Array|Object`
+##### items `Array`
 
-* a diagram item
-* an array of items
-* a rectangle: this defines a window which the view should contain
+An array of diagram items.
 
-##### options `Object`
+##### undoable `Boolean`
 
-* animate
-* align
+Whether the change should be recorded in the undo-redo stack.
 
-#### Example - bring a portion of the diagram into view
+### transformPoint
 
-This will offset/pan the diagram to bring the rectangle at position (500,500) into view.
+Transforms a point from the main canvas coordinates to the non-transformed origin.
+
+#### Parameters
+
+##### p `Object`
+
+An arbitrary point to transform to the diagram coordinate system.
+
+### transformRect
+
+Transforms a given rectangle to the diagram coordinate system.
+
+#### Parameters
+
+##### r `Object`
+
+The rectangle to be transformed.
+
+### undo
+
+Undoes the previous action.
+
+#### Example - undoing items removal
 
     <script>
         $("#diagram").kendoDiagram();
@@ -2009,152 +2120,57 @@ This will offset/pan the diagram to bring the rectangle at position (500,500) in
         var shape1 = diagram.addShape(new Point(100, 100));
         var shape2 = diagram.addShape(new Point(400, 100));
         var con = diagram.connect(shape1,shape2);
-
-        diagram.bringIntoView(new kendo.diagram.Rect(500, 500, 10, 10));
+        diagram.remove([shape1, shape2], true);
+        diagram.undo();
     </script>
 
-#### Example - bring an item into view
+### viewToDocument
 
-The second shape has a vertical position of 1000 and is off the screen at launch. Upon clicking the diagram this item will be in the view.
+Transforms a point from View coordinates to Page document coordinates. View origin is the diagram container.
 
-    <script>
-        var shape2;
-        function init()
-        {
-            var diagramElement = $("#canvas").kendoDiagram();
-            diagram = diagramElement.data("kendoDiagram");
-            diagramElement.css("width", "1200");
-            diagramElement.css("height", "800");
-        }
-        $(document).ready(
-                function()
-                {
-                    init();
-                    var shape1 = diagram.addShape(new Point(100, 100));
-                    shape2 = diagram.addShape(new Point(400, 1000));
-                    var con = diagram.connect(shape1, shape2);
-                });
-        $(document).click(function()
-        {
-            diagram.bringIntoView(shape2);
-        });
-    </script>
+#### Parameters
 
-### boundingBox
+##### point `Object`
+
+The point in Page document coordinates.
 
 #### Returns
 
-`kendo.dataviz.diagram.Rect` The bounding rectangle of the specified items. If nothing is specified the bounding box of the all diagram will be returned.
+`Object` the transformed point
+
+### viewToModel
+
+Transforms a point from View coordinates to Model coordinates. Model coordinates are independent coordinates to define Shape bounds.
 
 #### Parameters
 
-##### items `Array`
+##### point `Object`
 
-The items (shapes and connections) to include in the bounding box.
-Defaults to all items if not specified.
-
-### copy
-
-Puts a copy of the currently selected diagram to an internal clipboard.
-
-### cut
-
-Cuts the currently selected diagram items to an internal clipboard.
-
-### paste
-
-Pastes the content of the internal diagram clipboard.
-
-### layout
-
-Applies a layout algorithm on the current diagram.
-
-A more detailed overview of layout and graph analysis can be found below.
-
-#### Parameters
-
-##### options `Object`
-
-The layout options. See [options.layout](#configuration-layout) for a full reference.
-
-### alignShapes
-
-Aligns the edges (as defined by the bounding box) of the selected shapes.
-
-#### Parameters
-
-##### direction `String`
-
-This can be one of the four supported directions:
-
-* "left"
-* "right"
-* "top"
-* "bottom"
-
-### getShapeById
-
-Returns the shape or connection with the specified identifier.
-
-#### Parameters
-
-##### id `String`
-
-The unique identifier of the Shape or Connection
+The point in View coordinates.
 
 #### Returns
 
-`Object` the item that has the provided ID.
+`Object` the transformed point
 
-### edit
+### viewport
 
-Edit diagram connection/shape.
+The bounds of the diagramming canvas.
 
-#### Parameters
+### zoom
 
-##### item `Object`
-
-A diagram item to edit.
-
-### cancelEdit
-
-Cancels edit and close the popup form.
-
-### saveEdit
-
-Saves any changes made by the user.
-
-### createShape
-
-Adds an empty shape data item and a popup window will be displayed.
+Zooms in or out of the diagram.
 
 #### Parameters
 
-##### item `Object`
+##### zoom `Number`
 
-A diagram shape item to edit.
+The zoom factor.
 
-### createConnection
+##### point `Object`
 
-Adds an empty connection data item and a popup window will be displayed.
-
-#### Parameters
-
-##### item `Object`
-
-A diagram shape item to edit.
+The point to zoom into or out of.
 
 ## Events
-
-### dataBound
-
-Fired when the widget is bound to data from dataDource and connectionsDataSource.
-
-The event handler function context (available via the `this` keyword) will be set to the widget instance.
-
-#### Event Data
-
-##### e.sender `kendo.ui.Diagram`
 
 ### add
 
@@ -2163,50 +2179,6 @@ Fired when the user add new shape or connection.
 The event handler function context (available via the `this` keyword) will be set to the widget instance.
 
 #### Event Data
-
-##### e.connection `kendo.data.Model`
-
-The dataItem to which connection is bound.
-
-##### e.shape `kendo.data.Model`
-
-The dataItem to which shape is bound.
-
-##### e.sender `kendo.ui.Diagram`
-
-The widget instance which fired the event.
-
-### edit
-
-Fired when the user edits a shape or connection.
-
-#### Event Data
-
-##### e.container `jQuery`
-
-The jQuery object representing the container element. That element contains the editing UI.
-
-##### e.connection `kendo.data.Model`
-
-The dataItem to which connection is bound.
-
-##### e.shape `kendo.data.Model`
-
-The dataItem to which shape is bound.
-
-##### e.sender `kendo.ui.Diagram`
-
-The widget instance which fired the event.
-
-### save
-
-Fired when the user a shape or connection da is saved.
-
-#### Event Data
-
-##### e.container `jQuery`
-
-The jQuery object representing the container element. That element contains the editing UI.
 
 ##### e.connection `kendo.data.Model`
 
@@ -2242,24 +2214,6 @@ The dataItem to which shape is bound.
 
 The widget instance which fired the event.
 
-### remove
-
-Fired when the user delete a shape or connection.
-
-#### Event Data
-
-##### e.connection `kendo.data.Model`
-
-The dataItem to which connection is bound.
-
-##### e.shape `kendo.data.Model`
-
-The dataItem to which shape is bound.
-
-##### e.sender `kendo.ui.Diagram`
-
-The widget instance which fired the event.
-
 ### change
 
 Fired when an item is added or removed to/from the diagram.
@@ -2273,6 +2227,56 @@ The removed items (shapes or connections).
 ##### e.removed `Array`
 
 The removed items (shapes or connections).
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+### click
+
+Fired when the user clicks on a shape or a connection.
+
+#### Event Data
+
+##### e.item `Object`
+
+The clicked shape or connection.
+
+##### e.point `kendo.dataviz.diagram.Point`
+
+The clicked location.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+### dataBound
+
+Fired when the widget is bound to data from dataDource and connectionsDataSource.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Diagram`
+
+### edit
+
+Fired when the user edits a shape or connection.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
 
 ##### e.sender `kendo.ui.Diagram`
 
@@ -2320,6 +2324,46 @@ Fired when the user pans the diagram.
 
 The widget instance which fired the event.
 
+### remove
+
+Fired when the user delete a shape or connection.
+
+#### Event Data
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
+### save
+
+Fired when the user a shape or connection da is saved.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing the container element. That element contains the editing UI.
+
+##### e.connection `kendo.data.Model`
+
+The dataItem to which connection is bound.
+
+##### e.shape `kendo.data.Model`
+
+The dataItem to which shape is bound.
+
+##### e.sender `kendo.ui.Diagram`
+
+The widget instance which fired the event.
+
 ### select
 
 Fired when the user selects one or more items.
@@ -2337,24 +2381,6 @@ The rest of the items (shapes and connections).
 ##### e.sender `kendo.ui.Diagram`
 
 The widget instance which fired the event.
-
-### zoomStart
-
-Fired when the user starts changing the diagram zoom level.
-
-#### Event Data
-
-##### e.point `kendo.dataviz.diagram.Point`
-
-The zoom center.
-
-##### e.sender `kendo.ui.Diagram`
-
-The widget instance which fired the event.
-
-##### e.zoom `Number`
-
-The current zoom level.
 
 ### zoomEnd
 
@@ -2374,20 +2400,21 @@ The widget instance which fired the event.
 
 The current zoom level.
 
-### click
+### zoomStart
 
-Fired when the user clicks on a shape or a connection.
+Fired when the user starts changing the diagram zoom level.
 
 #### Event Data
 
-##### e.item `Object`
-
-The clicked shape or connection.
-
 ##### e.point `kendo.dataviz.diagram.Point`
 
-The clicked location.
+The zoom center.
 
 ##### e.sender `kendo.ui.Diagram`
 
 The widget instance which fired the event.
+
+##### e.zoom `Number`
+
+The current zoom level.
+
