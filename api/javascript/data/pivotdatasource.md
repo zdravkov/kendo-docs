@@ -558,7 +558,13 @@ A set of key/value pairs which specify the available measures. The key specifies
               Category: { caption: "All Cateogries" }
             },
             measures: {
-              "Sum": { field: "UnitPrice", format: "{0:c}", aggregate: function(value, state) { return value + state; } }
+              "Sum": {
+                  field: "UnitPrice",
+                  format: "{0:c}",
+                  aggregate: function(value, state, context) {
+                      return (state.accumulator || 0) + value;
+                  }
+              }
             }
           }
         }
