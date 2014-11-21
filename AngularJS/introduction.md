@@ -171,21 +171,73 @@ If you need to get the actual `widget.value()` you can use `k-ng-model`:
 
 The directive will update the `birthday` variable with the selected `Date` object whenever the `change` event occurs on the widget.
 
-#### Changed in Kendo UI 2014.2.919
+#### Changed in Kendo UI 2014.3.1119
 
-Starting with internal version 2014.2.919, `k-ng-model` will also do the right thing for DropDownList, ComboBox, MultiSelect and AutoComplete widgets: instead of binding the widget's value (which would be a field as indicated by the `dataValueField` config option), for these widgets it will bind into the scope the currently selected data item(s) (for MultiSelect it will always be an array).
+Starting with the Q3 release - 2014.3.1119 the `k-value-primitve` attribue has been introduced for DropDownList, ComboBox, MultiSelect and AutoComplete widgets. With this option you can set the widget to either use primitive or object values. It will work in a similar way to `data-value-primitive` option in the [MVVM value binding](http://docs.telerik.com/kendo-ui/framework/mvvm/bindings/value#use-the-value-binding-with-a-select-widget-to-update-the-view-model-field-with-the-value-field-when-the-initial-value-is-null).
 
-A possibly surprising result is that when you initialize your widgets from plain HTML instead of using a DataSource you will still get an object in your scope:
+Setting the `k-value-primitive` to `false` will force the widget to accept/return an object, or an array of objects for the MultiSelect, holding the current value selected. Here is an example:
 
-    <select kendo-dropdownlist k-ng-model="data">
-      <option value="1">Foo</option>
-      <option value="2">Bar</option>
-    </select>
+    <div id="example" ng-app="KendoDemos">
+      <div class="demo-section k-content" ng-controller="MyCtrl">
+        <h4>Select product</h4>
+        <select kendo-multi-select k-options="selectOptions" k-ng-model="selectedIds" k-value-primitive="false"></select>
+        <p ng-show="selectedIds.length"><br />Selected: {{ selectedIds }}</p>
+      </div>
+    </div>
 
-When "Foo" is selected, `$scope.data` will contain `{ text: "Foo", value: 1 }`, instead of just `1`.
+    <script>
+      angular.module("KendoDemos", [ "kendo.directives" ])
+      .controller("MyCtrl", function($scope){
+        $scope.selectOptions = {
+          placeholder: "Select products...",
+          dataTextField: "ProductName",
+          dataValueField: "ProductID",
+          dataSource: {
+            type: "odata",
+            transport: {
+              read: {
+                url: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
+              }
+            }
+          }
+        };
+        $scope.selectedIds = [ {ProductName: "Chai", ProductID: 1} ];
+      })
+    </script>
 
-To get the previous behavior, just use `ng-model` instead of `k-ng-model` for these cases (`k-ng-model` doesn't really make sense for these widgets when there is no data source).
+Here the MultiSelect will display `Chai` as selected and the widget's value will be set to `[{"ProductName":"Chai","ProductID":1}]`
 
+In the other scenario, when `k-value-primitive` is set to true you can pass an array of primitive values holding the ID's of the elements that you want to select:
+
+    <div id="example" ng-app="KendoDemos">
+      <div class="demo-section k-content" ng-controller="MyCtrl">
+        <h4>Select product</h4>
+        <select kendo-multi-select k-options="selectOptions" k-ng-model="selectedIds" k-value-primitive="true"></select>
+        <p ng-show="selectedIds.length"><br />Selected: {{ selectedIds }}</p>
+      </div>
+    </div>
+
+    <script>
+      angular.module("KendoDemos", [ "kendo.directives" ])
+      .controller("MyCtrl", function($scope){
+        $scope.selectOptions = {
+          placeholder: "Select products...",
+          dataTextField: "ProductName",
+          dataValueField: "ProductID",
+          dataSource: {
+            type: "odata",
+            transport: {
+              read: {
+                url: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products",
+              }
+            }
+          }
+        };
+        $scope.selectedIds = [1, 9];
+      })
+    </script>
+
+In this case the widget will display `Chai` and `Mishi Kobe Niku` as selected and the widget's value will be set to `[1,9]`
 
 ### Event handlers
 
