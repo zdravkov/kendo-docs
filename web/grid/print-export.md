@@ -126,7 +126,7 @@ When using **Kendo UI Q3 2014 (2014.3.1119) and newer versions**, the Grid provi
 To make it work, one has to enable the corresponding Grid toolbar command(s) and to configure some export settings.
 
 * [PDF export configuration](/api/javascript/ui/grid#configuration-pdf) and [PDF export demo](http://demos.telerik.com/kendo-ui/grid/pdf-export)
-* [Excel export](/api/javascript/ui/grid#configuration-excel) and [Excel export demo](http://demos.telerik.com/kendo-ui/grid/excel-export)
+* [Excel export configuration](/api/javascript/ui/grid#configuration-excel) and [Excel export demo](http://demos.telerik.com/kendo-ui/grid/excel-export)
 * [Toolbar configuration](/api/javascript/ui/grid#configuration-toolbar)
 
 The most important thing to point out is that exporting in older browsers (IE9 and below, Safari) requires the implementation of a server proxy
