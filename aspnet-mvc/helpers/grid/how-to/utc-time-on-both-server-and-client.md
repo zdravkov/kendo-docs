@@ -1,5 +1,5 @@
 ---
-title: using utc time on both client and server sides.
+title: Using UTC time on both client and server sides.
 description: Using UTC time on both client and server sides.
 ---
 
