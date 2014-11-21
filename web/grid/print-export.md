@@ -132,7 +132,7 @@ To make it work, one has to enable the corresponding Grid toolbar command(s) and
 The most important thing to point out is that exporting in older browsers (IE9 and below, Safari) requires the implementation of a server proxy
 (more information is available in the `proxyUrl` configuration sections above).
 
-When using **Kendo UI Q2 2014 SP2 (2014.2.1008) or older versions**, there are two ways to export the Grid:
+When using **Kendo UI Q2 2014 SP2 (2014.2.1008) or older versions**, exporting requires a custom implementation and there are two ways to approach the task:
 
 * Use a server-side implementation to directly export the data that is otherwise displayed by the Grid.
 * Use a client-side implementation to export the Grid table's HTML markup or the Grid dataSource items.
