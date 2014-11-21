@@ -35,6 +35,23 @@ Defines custom show and hide animations via an Kendo UI Animation object. Settin
 	});
 	</script>
 
+#### Example - slide animations
+
+	<span id="notification"></span>
+	<script>
+	$("#notification").kendoNotification({
+		animation: {
+            open: {
+                effects: "slideIn:left"
+            },
+            close: {
+                effects: "slideIn:left",
+                reverse: true
+            }
+        }
+	});
+	</script>
+
 ### appendTo `String|Element|jQuery` *(default: null)*
 
 Defines the element to which the notifications will be appended or prepended (depending on the [stacking](#configuration-stacking) direction).
