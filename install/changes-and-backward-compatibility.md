@@ -90,6 +90,21 @@ This change will affect people using the private `_data` field of the data sourc
         }
     });
 
+**PivotDataSource**
+
+* The measure aggregator of the [client pivot cube](../api/javascript/data/pivotdatasource#configuration-schema.cube) uses **object** instead of number for the `state` argument. The field that should be set to accumulate the value is called `accumulator`.
+
+-Old:
+
+    aggregate: function(value, state) { return value + state; }
+
+-New (if you need scripts to be posted to the server):
+
+    aggregate: function(value, state) {
+        state.accumulator = state.accumulator || 0;
+        return state.accumulator + value;
+    }
+
 #### Breaking changes
 
 ## Kendo UI 2014 Q2
