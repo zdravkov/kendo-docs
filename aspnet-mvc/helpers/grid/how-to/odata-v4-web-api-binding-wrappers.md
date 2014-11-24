@@ -1,6 +1,7 @@
---- Odata v4 with WebAPI controller
-title: Odata v4 with WebAPI controller
-page_title: Odata v4 with WebAPI controller
+--- 
+title: oData v4 with WebAPI controller
+page_title: oData v4 with WebAPI controller
+description: oData v4 with WebAPI controller
 ---
 
 # Odata v4 with WebAPI controller
