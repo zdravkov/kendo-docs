@@ -67,6 +67,8 @@ navigation:
         title: "Widgets"
     "*tags":
         title: "Tags"
+    "*angular":
+        title: "AngularJS"
     "*mobileactionsheet":
         title: "MobileActionSheet"
     "*mobileapplication":
