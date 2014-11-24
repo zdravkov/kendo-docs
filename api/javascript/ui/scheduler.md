@@ -6173,10 +6173,6 @@ The slot's start date.
 
 The slot's end date.
 
-##### e.preventDefault `Function`
-
-If invoked prevents the move action.
-
 ##### e.sender `kendo.ui.Scheduler`
 
 The widget instance which fired the event.
