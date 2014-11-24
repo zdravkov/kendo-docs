@@ -1,10 +1,11 @@
 ---
-title: Drawing HTML (DOM)
+title: Drawing HTML elements
 page_title: Draw a piece of HTML available in the DOM
 position: 51
 ---
 
-# HTML-drawing API
+# Drawing HTML elements
+
 
 Using the `drawing.drawDOM` function you can draw a DOM element into a [drawing.Group](/api/dataviz/drawing/group), which you can then render with one of the supported backends into SVG, PDF, HTML5 `<canvas>` or VML.
 
