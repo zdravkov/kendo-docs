@@ -24,7 +24,10 @@ e.g. "canvas", if desired. The preference will be ignored if no support is provi
 | SVG     | 9+   | ✓     | ✓       | ✓      | ✓   | 4+
 | Canvas  | 10+  | ✓     | ✓       | ✓      | ✓   | ✓
 | VML     | 7+   | ✕     | ✕       | ✕      | ✕   | ✕
-| PDF     | 9+   | ✓     | ✓       | ✓      | ?   | ?
+
+## PDF Output
+
+Generating PDF files is supported in IE 9+ and all other major desktop browsers.
 
 ## Known limitations
 
