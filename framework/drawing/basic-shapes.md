@@ -124,12 +124,27 @@ We can now construct the path by issuing commands:
         .close();
 
 We set the line initial position with a
-[moveTo](http://localhost/kendo-ui/api/dataviz/drawing/path#methods-moveTo) command.
+[moveTo](/api/dataviz/drawing/path#methods-moveTo) command.
 The three sides are drawn using
-[lineTo](http://localhost/kendo-ui/api/dataviz/drawing/path#methods-lineTo) commands.
+[lineTo](/kendo-ui/api/dataviz/drawing/path#methods-lineTo) commands.
 The last command
-[closes](http://localhost/kendo-ui/api/dataviz/drawing/path#methods-close)
+[closes](/api/dataviz/drawing/path#methods-close)
 the path, drawing a straight line to the initial position.
+
+Since this is a rectangle we can use the alternative
+[fromRect](/api/dataviz/drawing/path#fromrect)
+static method:
+
+    var borderRect = new geom.Rect(
+        new geom.Point(0, 0),
+        new geom.Size(150, 65)
+    );
+    var path = draw.Path.fromRect(borderRect, {
+        stroke: {
+            color: "#9999b6",
+            width: 2
+        }
+    });
 
 ### Draw the image
 The [Image](/api/dataviz/drawing/image) element draws a bitmap image from a given URL.
