@@ -6,9 +6,9 @@ description: Use the column template in the output Excel document
 # Column Template Export
 
 This example shows how to use the column template as the value of corresponding cell in the output Excel document.
+For additional info check [Create Excel Documents](/framework/excel/introduction#create-excel-document).
 
-
-### Example - column template export
+#### Example - column template export
 
 ```html
 <div id="grid"></div>
