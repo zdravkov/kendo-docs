@@ -6,7 +6,7 @@ description: How to export master and detail grids in Excel
 # Detail Grid Excel Export
 
 This demo shows how to export the detail grids and merge their workbooks with the master grid workbook. The uses the [excelExport](/api/javascript/ui/grid#events-excelExport) event to get the
-workbook of the detail grids. The event is prevented to avoid saving an Excel file for every detail grid.
+workbook of the detail grids. The event is prevented to avoid saving an Excel file for every detail grid. For additional info check [Create Excel Documents](/framework/excel/introduction#create-excel-document).
 
 #### Example - detail grid Excel export
 
