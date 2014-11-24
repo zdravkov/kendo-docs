@@ -1,12 +1,12 @@
 ---
-title: Edit master row data in detail template
-page_title: Edit master row data in detail template
-description: Edit master row data in detail template
+title: Hierarchy with editable detail grid
+page_title: Hierarchy with editable detail grid
+description: Hierarchy with editable detail grid
 ---
 
-# Edit master row data in detail template
+# Hierarchy with editable detail grid
 
-The following runnable sample demonstrates how to create edit functionality in a detail template for data that is part of the mater row record.
+The following runnable sample demonstrates how to edit records in a child grid.
 
 #### Example: 
 
