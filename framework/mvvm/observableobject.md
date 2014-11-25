@@ -121,7 +121,6 @@ Setting nested fields is supported as well:
     var personName = viewModel.get("person.name");
     alert(personName); // shows "Jane Doe"
 
-
 ## Creating dependent methods (also known as calculated fields)
 
 There is often need to convert a View-Model field value to a format more suitable for display in the View. In such cases extending the View-Model with a dependent method is essential. Here is an example:
@@ -166,3 +165,28 @@ or `lastName` via the `set` method would **not** cause the change of `fullName`.
 This means that  **no** binding referring to `fullName` is going to be updated.
 
 Avoid using direct field access when implementing dependent methods. Always use the `get` method to obtain the field values.
+
+### Setting values of dependent properties
+
+    <p>Full Name: <input data-bind="value: fullName"></p>
+    <p>First Name: <span data-bind="text: firstName"></span></p>
+    <p>Last Name: <span data-bind="text: lastName"></span></p>
+
+    <script>
+      var vm = kendo.observable({
+        firstName: "John",
+        lastName: "Doe",
+        fullName: function(value) {
+          if (value !== undefined) {
+            var name = value.split(" ");
+
+            this.set("firstName", name[0]);
+            this.set("lastName", name[1]);
+          } else {
+            return this.get("firstName") + " " + this.get("lastName");
+          }
+        }
+      });
+
+      kendo.bind(document.body, vm);
+    </script>
