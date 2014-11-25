@@ -122,3 +122,15 @@ While most of the CSS code is cross-browser compatible, some layouts require dif
 
 The syntax of the generated classes is `k-[browser] k-[browser][majorVersion]`.
 
+## Checkboxes and Radio buttons
+
+With Q3 2014 release Kendo UI provides customized presentation for checkboxes / radio buttons via the **k-checkbox** / **k-radio** classes. At this time these two types of input cannot be styled with CSS only - therefore Kendo UI Checkboxes / Radio buttons appearance relies that the `<input>` element is **immediately followed** by a `<label>` element with respectively **k-checkbox-label** / **k-radio-label** classes. I.e. the expected HTML is as follows: 
+
+    <!-- Kendo UI Checkbox -->
+	<input type="checkbox" id="checkbox" class="k-checkbox">
+	<label class="k-checkbox-label" for="checkbox"></label>
+
+	<!-- Kendo UI Radio button -->
+	<input type="radio" id="radiobutton" class="k-radio">
+	<label class="k-radio-label" for="radiobutton"></label>
+
