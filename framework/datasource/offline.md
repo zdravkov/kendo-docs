@@ -195,8 +195,33 @@ This is why the Kendo UI DataSource does not attempt to automatically detect off
     }, 5000);)
 
 
-Both approaches have their pros and cons. The "online" and "offline" events behave differently among the browsers - Firefox and Internet Explorer fire those events when the user switches between offline and online mode.
+Both approaches have their pros and cons. The "online" and "offline" events behave differently among the browsers -
+Firefox and Internet Explorer fire those events when the user switches between offline and online mode.
 
-Ajax polling is more robust but leads to constant HTTP requests (CPU and bandwidth usage). In addition Ajax requests could fail for other reasons than not having Internet connection - server error, timeout.
+Ajax polling is more robust but leads to constant HTTP requests (CPU and bandwidth usage).
+In addition Ajax requests could fail for other reasons than not having Internet connection - server error, timeout.
 
 The online and offline events work as expected in mobile devices and Phonegap applications. The ajax polling approach works best for desktop browsers.
+
+## Offline Storage Considerations and FAQ
+
+* **What is the available offline storage space?** The default localStorage space is normally around 5MB per *origin* (i.e. specific domain, port and protocol),
+but this should not be relied on, because it can depend on the browser and the browser settings, controlled by the user.
+Theoretically, it is possible to measure the maximum available storage space by trying to save large chunks of data via the localStorage API,
+but this may cause the browser to become temporarily irresponsive and is not recommended.
+
+* **Can the web application request allocation of more offline storage space by the browser?** No.
+
+* **Do several Kendo UI DataSource instances share the same offline storage space?** Yes. Moreover, different Kendo UI DataSource instances must use
+different `offlineStorage` keys, otherwise they will overwrite one another's saved data.
+
+* **How do I check the currently used local storage space?** There are different ways to do that, depending on how you store your data and what exactly you want to check.
+One possible option to measure the amount of data stored by a Kendo UI DataSource instance is:
+        
+        // check amount of used offline storage space for a specific key
+        JSON.stringify(localStorage.getItem("your-offlineStorage-key-here")).length
+        // check overall used offline storage space
+        JSON.stringify(localStorage).length
+
+* **What happens when the offline storage quota is exceeded?** The data saving will fail and the browser will trigger an unhandled exception.
+If you want to handle these, it is possible to use a [customized offlineStorage](#use-custom-offline-storage) implementation with `try ... catch` blocks.
