@@ -197,7 +197,7 @@ The CSS class applied to the command button.
 
 The JavaScript function executed when the user clicks the command button. The function receives a [jQuery Event](http://api.jquery.com/category/events/event-object/) as an argument.
 
-The function context (available via the `this` keyword) will be set to the grid instance.
+The function context (available via the `this` keyword) will be set to the treelist instance.
 
 #### Example - handle the click event of the custom command button
 
@@ -473,7 +473,7 @@ is displayed in the column header cell.
 
 ### columns.sortable `Boolean|Object` *(default: true)*
 
-If set to `true` the user can click the column header and sort the grid by the column [field](#configuration-columns.field) when sorting is enabled. If set to `false` sorting will
+If set to `true` the user can click the column header and sort the treelist by the column [field](#configuration-columns.field) when sorting is enabled. If set to `false` sorting will
 be disabled for this column. By default all columns are sortable if sorting is enabled via the [sortable](#configuration-sortable) option.
 
 #### Example - disable sorting
@@ -1514,7 +1514,7 @@ Sets the title of the PDF file.
 
 ### scrollable `Boolean|Object` *(default: true)*
 
-If set to `true` the grid will display a scrollbar when the total row height (or width) exceeds the grid height (or width). By default scrolling is enabled.
+If set to `true` the treelist will display a scrollbar when the total row height (or width) exceeds the treelist height (or width). By default scrolling is enabled.
 
 Can be set to a JavaScript object which represents the scrolling configuration.
 
@@ -1803,7 +1803,7 @@ The height of the treelist. Numeric values are treated as pixels.
 
 ### filterable `Boolean|Object` *(default: false)*
 
-If set to `true` the user can filter the data source using the grid filter menu. Filtering is disabled by default.
+If set to `true` the user can filter the data source using the treelist filter menu. Filtering is disabled by default.
 
 Can be set to a JavaScript object which represents the filter menu configuration.
 
@@ -1925,7 +1925,7 @@ The editing mode to use. The supported editing modes are "inline" and "popup".
 
 The [template](/api/framework/kendo#methods-template) which renders popup editor.
 
-The template should contain elements whose `name` HTML attributes are set as the editable fields. This is how the grid will know
+The template should contain elements whose `name` HTML attributes are set as the editable fields. This is how the treelist will know
 which field to update. The other option is to use [MVVM](/framework/mvvm/overview) bindings in order to bind HTML elements to data item fields.
 
 > Use the `role` data attribute to initialize Kendo UI widgets in the template. Check [data attribute initialization](/data-attribute-initialization) for more info.
@@ -2246,6 +2246,54 @@ Renders all table rows using the current data items.
         });
         var treeList = $("#treeList").data("kendoTreeList");
         treeList.refresh();
+    </script>
+
+### saveAsExcel
+
+Initiates the Excel export. Also fires the "excelExport" event.
+
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+
+#### Example - manually initiate Excel export
+
+    <button id="export">Export to Excel</button>
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [ "id", "name" ],
+            dataSource: [
+                { id: 1, parentId: null, name: "Jane Doe", age: 30 },
+                { id: 2, parentId: 1, name: "John Doe", age: 33 }
+            ]
+        });
+        $("#export").click(function(e) {
+            var treeList = $("#treeList").data("kendoTreeList");
+            treeList.saveAsExcel();
+        });
+    </script>
+
+### saveAsPDF
+
+Initiates the PDF export. Also fires the "pdfExport" event.
+
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+
+#### Example - manually initiate PDF export
+
+    <button id="export">Export to PDF</button>
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [ "id", "name" ],
+            dataSource: [
+                { id: 1, parentId: null, name: "Jane Doe", age: 30 },
+                { id: 2, parentId: 1, name: "John Doe", age: 33 }
+            ]
+        });
+        $("#export").click(function(e) {
+            var treeList = $("#treeList").data("kendoTreeList");
+            treeList.saveAsPDF();
+        });
     </script>
 
 ### destroy
@@ -2598,7 +2646,7 @@ Fires the [edit](#events-edit) event.
 
 ### removeRow
 
-Removes the specified table row from the grid. Also removes the corresponding data item from the data source.
+Removes the specified table row from the treelist. Also removes the corresponding data item from the data source.
 
 Fires the [remove](#events-remove) event.
 
@@ -2807,6 +2855,69 @@ The widget instance which fired the event.
         treeList.dataSource.fetch();
     </script>
 
+### excelExport
+
+Fired when the user clicks the "Export to Excel" toolbar button.
+
+#### Event Data
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+##### e.workbook `Object`
+
+The Excel [workbook configuration object](/api/javascript/ooxml/workbook#configuration). Used to initialize a `kendo.ooxml.Workbook` class. Modifications of the workbook will reflect in the output Excel document.
+
+##### e.preventDefault `Function`
+
+If invoked the treelist will not save the generated file.
+
+#### Example - subscribe to the "excelExport" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      toolbar: ["excel"],
+      columns: [
+        { field: "Name" },
+        { field: "Position" }
+      ],
+      dataSource: [
+        { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+        { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+      ],
+      excelExport: function(e) {
+        e.workbook.fileName = "Employees.xslx";
+      }
+    });
+    var treelist = $("#treelist").data("kendoTreeList");
+    treelist.saveAsExcel();
+    </script>
+
+#### Example - subscribe to the "excelExport" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      toolbar: ["excel"],
+      columns: [
+        { field: "Name" },
+        { field: "Position" }
+      ],
+      dataSource: [
+        { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+        { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+      ],
+    });
+    var treelist = $("#treelist").data("kendoTreeList");
+    treelist.bind("excelExport", function(e) {
+        e.workbook.fileName = "Employees.xslx";
+    });
+    treelist.saveAsExcel();
+    </script>
+
+
 ### expand
 
 Fired when an item is about to be expanded.
@@ -2867,6 +2978,62 @@ If invoked prevents the expand action. The child table rows will not be shown.
         var treeList = $("#treeList").data("kendoTreeList");
         treeList.bind("expand", expand);
         treeList.dataSource.fetch();
+    </script>
+
+### pdfExport
+
+Fired when the user clicks the "Export to PDF" toolbar button.
+
+#### Event Data
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+##### e.preventDefault `Function`
+
+If invoked the treelist will not save the generated file.
+
+#### Example - subscribe to the "pdfExport" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      toolbar: ["pdf"],
+      columns: [
+        { field: "Name" },
+        { field: "Position" }
+      ],
+      dataSource: [
+        { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+        { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+      ],
+      pdfExport: function(e) {
+      }
+    });
+    var treelist = $("#treelist").data("kendoTreeList");
+    treelist.saveAsPDF();
+    </script>
+
+#### Example - subscribe to the "pdfExport" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+    $("#treeList").kendoTreeList({
+      toolbar: ["pdf"],
+      columns: [
+        { field: "Name" },
+        { field: "Position" }
+      ],
+      dataSource: [
+        { id: 1, Name: "Daryl Sweeney", Position: "CEO", parentId: null },
+        { id: 2, Name: "Guy Wooten", Position: "Chief Technical Officer", parentId: 1 }
+      ],
+    });
+    var treelist = $("#treelist").data("kendoTreeList");
+    treelist.bind("pdfExport", function(e) {
+    });
+    treelist.saveAsPDF();
     </script>
 
 ### remove
