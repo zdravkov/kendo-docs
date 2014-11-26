@@ -23,9 +23,9 @@ Commonly-used CSS classes include:
 *   **k-widget** - applied to the widget wrapper to set a border, text and background color. In addition to t-widget, every widget has its own specific CSS class, for example **k-menu**, **k-panelbar**, **k-tabstrip**, etc.
 *   **k-header** - applied to Grid headers, Menu top level items, PanelBar top level items, TabStrip items, DropDownLists, to set a background image and a background color
 *   **k-link** - applied to hyperlinks and clickable text items to set a text color
-*   **k-button** - applied to elements that should look like push buttons. The class sets a text color, background color, background image and hover styling. This is the **recommended **class for styling **form buttons**
+*   **k-button** - applied to elements that should look like push buttons. The class sets a text color, background color, background image and hover styling. This is the recommended class for styling **form buttons**
 *   **k-input** - applied to textboxes inside input widgets like ComboBox and AutoComplete to set border, text and background color
-*   **k-textbox** - same as k-input, but used for standalone (generic) input elements that are not part of widget. This is the **recommended **class for styling user** form input elements** as it provides the same look, height and vertical alignment as the Kendo UI input widgets
+*   **k-textbox** - same as k-input, but used for standalone (generic) input elements that are not part of widget. This is the recommended class for styling **form input elements** as it provides the same look, height and vertical alignment as the Kendo UI input widgets
 *   **k-checkbox** - applied to checkboxes inside the treeview widget, when checkboxes are enabled for it.
 *   **k-group** and **k-content** - applied to various containers to set a background and border color
 *   **k-popup** - applied to popup containers that are detached from their opener component and are placed in the `body` element
@@ -42,6 +42,10 @@ The appearance of a component may also depend on its state, which is also tied t
 *   **k-state-active** - a class set on activated **k-link** elements
 *   **k-state-selected** - selected items receive this class to apply their selected look, like in PanelBar and TabStrip
 *   **k-state-disabled** - this class is set on disabled items
+*   **k-state-error** - this class can be used with form fields that have an invalid value
+
+In addition, there are some CSS classes, which you can use to apply borders and background colors to containers - `k-info-colored`, `k-success-colored` and `k-error-colored`.
+They are shown in the [http://demos.telerik.com/kendo-ui/styling/panels](Styling / Panels demo).
 
 ## LESS structure
 
