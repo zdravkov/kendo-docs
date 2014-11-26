@@ -198,6 +198,31 @@ The value should be a valid [number](/api/framework/kendo#standard-number-format
 
     columns.Bound(o => o.OrderDate).Format("{0:d}"); // Will use the short date pattern
 
+### How do I add Kendo UI icons to custom command buttons?
+
+The custom command buttons have the required `span` element, which is normally used to display an icon, but this element has no CSS classes. You can add them in the `dataBound` handler.
+
+A list of the available Kendo UI icons and their CSS classes is available in the [Styling / Icons demo](http://demos.telerik.com/kendo-ui/styling/icons).
+
+#### Example: Add Kendo UI icons to custom command buttons
+
+**C#**
+
+    @(Html.Kendo().Grid()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Command(command => { command.Custom("myCommand").Text("My Text"); });
+        })
+        .Events(ev => ev.DataBound("addIcons"))
+    )
+
+**Javascript**
+
+    function addIcons(e) {
+        e.sender.tbody.find(".k-grid-myCommand > span").addClass("k-icon k-i-custom");
+    }
+
 ## Data Binding
 
 ### How do I implement paging, sorting, filtering and grouping?
