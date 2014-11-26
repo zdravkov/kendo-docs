@@ -10,7 +10,7 @@ description: This documentation page will explain how to print and export the Ke
 
 In most cases the Grid is not the only content on the page, however, there are cases when one would like to print the Grid only. There are two ways to achieve that.
 
-1. Print the existing web page, but use a print stylesheet to hide parts of the page, which are not needed.  
+1. Print the existing web page, but use a print stylesheet to hide parts of the page, which are not needed.
 2. Retrieve the Grid HTML, inject it in a new browser window, and trigger printing of the new page.
 
 The example below shows how to implement the second option. There are some other important things to keep in mind, which are also addressed by the provided example.
@@ -123,10 +123,12 @@ In such cases it is advisable to use a separate print-friendly page with no froz
 ## Exporting
 
 When using **Kendo UI Q3 2014 (2014.3.1119) and newer versions**, the Grid provides built-in PDF and Excel export functionality.
+
+Check [Excel Export](/web/grid/excel-export) for more info.
+
 To make it work, one has to enable the corresponding Grid toolbar command(s) and to configure some export settings.
 
 * [PDF export configuration](/api/javascript/ui/grid#configuration-pdf) and [PDF export demo](http://demos.telerik.com/kendo-ui/grid/pdf-export)
-* [Excel export configuration](/api/javascript/ui/grid#configuration-excel) and [Excel export demo](http://demos.telerik.com/kendo-ui/grid/excel-export)
 * [Toolbar configuration](/api/javascript/ui/grid#configuration-toolbar)
 
 The most important thing to point out is that exporting in older browsers (IE9 and below, Safari) requires the implementation of a server proxy
