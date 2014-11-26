@@ -8,6 +8,7 @@ description: Kendo UI Grid Excel Export feature
 Kendo UI Grid can export its data as Excel document since the Q3 2014 (2014.3.1119) version.
 
 - [Enable Excel Export](#enable-excel-export)
+- [What is Exported](#what-is-exported)
 - [How To](#how-to)
     - [Export All Data](#export-all-data)
     - [Customize the Excel Document](#customize-the-excel-document)
@@ -56,6 +57,22 @@ To enable Excel export include the corresponding toolbar command and configure t
 To initiate Excel export via code call the [saveAsExcel](/api/javascript/ui/grid.html#methods-saveAsExcel) method.
 
 > Important: Older browsers (IE9 and below, Safari) require the implementation of a [server proxy](/framework/save-files/introduction#browser-support).
+
+## What is Exported
+
+With the default configuration Kendo UI Grid exports the current page of the data with sorting, filtering, grouping and aggregates applied. [Export All Data](#export-all-data) shows how to export all pages.
+
+The grid uses the current column order, visibility and dimensions to generate the Excel file.
+
+The grid doesn't export the current CSS theme in the Excel file. Check [Customzie the Excel Document](customize-the-excel-document) for information about changing the visual appearance of the Excel document.
+
+The grid exports only data-bound columns. All columns that don't have their [field](/api/javascript/ui/grid#configuration-columns.field) option set are ignored.
+
+The [format](/api/javascript/ui/grid#configuration-columns.format) option is **not** used during export. Check [Column Format](#column-format) for more info.
+
+The [template](/api/javascript/ui/grid#configuration-columns.template) option is **not** used during export. Check [Column Template](#column-template) for more info.
+
+The [detailTemplate](/api/javascript/ui/grid#configuration-detailTemplate) option is **not** used during export. Check [Detail Template](#detail-template) for more info.
 
 ## How To
 
