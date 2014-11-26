@@ -166,12 +166,13 @@ If needed, a fixed table layout can be applied to a non-scrollable Grid:
 When creating the Grid from an HTML `table`, column widths can be set via the `col` elements.
 
 If all columns have pixel widths and their sum exceeds the width of the grid, a horizontal scrollbar will appear (if scrolling is enabled). If that sum is less than the width of the grid,
-the column widths will be ignored and all columns will expand. This will lead to undesired side effects, e.g. when resizing columns. In old IE versions the column widths will be obeyed, but misalignment will occur.
-That's why it is recommended to have at least one column without specified width, so that it can adjust freely. Explicit widths for all columns should be set **only** if they are set in percent,
+the column widths will be ignored and all columns will expand. This will lead to undesired side effects, e.g. when resizing columns.
+In old IE versions the column widths will be obeyed, but misalignment will occur. That's why it is recommended to have at least one column without specified width,
+so that it can adjust freely. Explicit widths for all columns should be set **only** if they are set in percent,
 or if their sum exceeds the Grid width and the goal is to have horizontal scrolling.
 
-If the Grid has no fixed width and resizes with the browser window, one can apply min-width to the Grid (if scrolling is disabled) or its two table elements (if scrolling is enabled). This will prevent undesired
-side effects if the browser window size is reduced too much.
+If the Grid has no fixed width and resizes with the browser window, one can apply min-width to the Grid (if scrolling is disabled) or its two table elements (if scrolling is enabled).
+This will prevent undesired side effects if the browser window size is reduced too much.
 
     /* How to apply minimum width to the Grid when scrolling is disabled */
 
@@ -190,6 +191,9 @@ side effects if the browser window size is reduced too much.
     }
 
 Using the Grid ID (Name) in the above selectors is optional, so that the styles are applied to a particular Grid instance only.
+
+Setting column widths in percent is possible, but if the sum of all widths is greater than 100% (i.e. a horizontal scrollbar is desired), the Grid tables must have a (min-)width style,
+otherwise the tables will be 100% wide (as wide as the Grid) and the columns will be narrower than desired.
 
 ## Virtual Scrolling
 
