@@ -72,10 +72,10 @@ To extract the DataSource to an Excel document (a.k.a. workbook) follow these st
           }) 
         }
         var workbook = new kendo.ooxml.Workbook({
-          // Column settings (width)
           sheets: [
             {
               columns: [
+                // Column settings (width)
                 { autoWidth: true },
                 { autoWidth: true },
                 { autoWidth: true },
