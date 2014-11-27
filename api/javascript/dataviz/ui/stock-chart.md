@@ -1510,7 +1510,7 @@ The opacity of the highlighted points.
 
 A value indicating if the series points should be highlighted.
 
-### navigator.series.aggregate `String`*(default: "max")*
+### navigator.series.aggregate `String|Function` *(default: "max")*
 
 The aggregate function to apply for date series.
 
@@ -5553,7 +5553,7 @@ The opacity of the highlighted points.
 
 ** Applicable to bubble, pie, candlestick and ohlc series. **
 
-### series.aggregate `String`*(default: "max")*
+### series.aggregate `String|Function` *(default: "max")*
 
 The aggregate function to apply for date series.
 

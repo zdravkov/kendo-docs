@@ -2339,7 +2339,7 @@ The opacity of the highlighted points.
 
 A value indicating if the series points should be highlighted.
 
-### series.aggregate `String`*(default: "max")*
+### series.aggregate `String|Function` *(default: "max")*
 
 The aggregate function to apply for date series.
 
