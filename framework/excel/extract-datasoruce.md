@@ -7,7 +7,7 @@ position: 7
 
 # Requirements
 
-Kendo UI API allows you to create Excel documents from any data set, and save it to a client machine. This means that you can extract the data stored in a Kendo UI DataSource into an Excel file.
+Kendo UI API allows you to create Excel documents from any data set, and save them to a client machine. This way you can extract the data stored in a Kendo UI DataSource into an Excel file.
 
 ## Extract DataSource to excel
 
