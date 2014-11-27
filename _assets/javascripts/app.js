@@ -51,6 +51,33 @@ function preventParentSelection(e) {
 }
 
 $(function(){
+    $("pre[lang]").each(function() {
+       if (this.parentNode.className.indexOf("k-content") >= 0) {
+           return;
+       }
+
+       var langs = $(this).nextUntil(":not(pre)", "pre").add(this);
+
+       var tabs = $.map(langs, function(item) {
+          return $("<li>").text($(item).attr("lang"));
+       });
+
+       if (tabs.length < 2) {
+           return;
+       }
+
+       tabs[0].addClass("k-state-active");
+
+       var tabstrip = $("<div>")
+                       .insertBefore(this)
+                       .append($("<ul>").append(tabs))
+                       .append(langs);
+
+       langs.wrap("<div>");
+
+       tabstrip.kendoTabStrip();
+    });
+
     $("pre").addClass("prettyprint");
 
     prettyPrint();
