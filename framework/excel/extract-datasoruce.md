@@ -1,5 +1,5 @@
 ---
-title: Extract DataSource to an Excel document
+title: Extract DataSource
 page_title: Create Excel files directly from a DataSource
 description: This article shows how to create Excel document using a Kendo UI DataSource
 position: 7
