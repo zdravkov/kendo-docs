@@ -260,8 +260,8 @@ can be changed by disabling `ServerOperation`.
           .Name("grid")
           .DataSource(dataSource => dataSource
               .Ajax()
+              .ServerOperation(false) // Paging, sorting, filtering and grouping will be done client-side
               .Read(read => read
-                   .ServerOperation(false) // Paging, sorting, filtering and grouping will be done client-side
                    .Action("Products_Read", "Home") // Set the action method which will return the data in JSON format
                    .Data("productsReadData")
               )
@@ -282,8 +282,8 @@ can be changed by disabling `ServerOperation`.
           .Name("grid")
           .DataSource(dataSource => dataSource
               .Ajax()
+              .ServerOperation(false) // Paging, sorting, filtering and grouping will be done client-side
               .Read(read => read
-                   .ServerOperation(false) // Paging, sorting, filtering and grouping will be done client-side
                    .Action("Products_Read", "Home") // Set the action method which will return the data in JSON format
                    .Data("productsReadData")
               )
