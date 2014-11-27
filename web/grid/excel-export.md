@@ -107,7 +107,6 @@ By default the Kendo UI Grid exports only the current page of data. To export al
     });
 </script>
 ```
-
 ### Customize the Excel Document
 
 The [excelExport](/api/javascript/ui/grid#events-excelExport) event allows customization of the generated Excel document.
@@ -115,47 +114,13 @@ The `workbook` event argument exposes the generated Excel workbook configuration
 
 To understand how Excel documents work check the [Excel Introduction](/framework/excel/introduction#create-excel-document) help topic.
 
-#### Example - customize the Excel document (implement zebra effect)
-
-```html
-<div id="grid"></div>
-<script>
-    $("#grid").kendoGrid({
-        toolbar: ["excel"],
-        excelExport: function(e) {
-          var sheet = e.workbook.sheets[0];
-          for (var rowIndex = 1; rowIndex < sheet.rows.length; rowIndex++) {
-            if (rowIndex % 2 == 0) {
-              var row = sheet.rows[rowIndex];
-              for (var cellIndex = 0; cellIndex < row.cells.length; cellIndex ++) {
-                row.cells[cellIndex].background = "#aabbcc";
-              }
-            }
-          }
-        },
-        dataSource: {
-          type: "odata",
-          transport: {
-              read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products"
-          },
-          pageSize: 7
-        },
-        pageable: true,
-        columns: [
-            { width: 300, field: "ProductName", title: "Product Name" },
-            { width: 300, field: "UnitPrice", title: "Unit Price" },
-            { field: "UnitsOnOrder", title: "Units On Order" },
-            { field: "UnitsInStock", title: "Units In Stock" }
-        ]
-    });
-</script>
-```
+The [Color Alternating Rows](/web/grid/how-to/excel/alternating-rows) tutorial shows one way to customize the generated Excel document.
 
 ### Column Templates
 
 Kendo UI Grid doesn't use [column templates](/api/javascript/ui/grid#configuration-columns.template) during Excel export - it exports only the data. The reason is simple - a column template may contain arbitrary HTML which can't be converted to Excel column values.
 
-If a column template doesn't contain HTML you can follow the [Column Template](/web/grid/how-to/excel/column-template-export) tutorial.
+The [Column Template](/web/grid/how-to/excel/column-template-export) tutorial shows how to use a column template that doesn't contain HTML.
 
 ### Column Format
 
@@ -165,33 +130,7 @@ To format the cell values set the [format](/api/javascript/ooxml/workbook.html#c
 
 The [Create a custom number format](https://support.office.com/en-us/article/Create-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4) page describes the formats that Excel supports.
 
-#### Example - format cell values
-
-```html
-<div id="grid"></div>
-<script>
-    $("#grid").kendoGrid({
-        toolbar: ["excel"],
-        excelExport: function(e) {
-          var sheet = e.workbook.sheets[0];
-
-          for (var rowIndex = 1; rowIndex < sheet.rows.length; rowIndex++) {
-            var row = sheet.rows[rowIndex];
-            for (var cellIndex = 0; cellIndex < row.cells.length; cellIndex ++) {
-              row.cells[cellIndex].format = "[Blue]#,##0.0_);[Red](#,##0.0);0.0;"
-            }
-          }
-        },
-        dataSource: {
-          data: [
-            { text: "Positive", value: 10.5 },
-            { text: "Negative", value: -10.5 },
-            { text: "Zero", value: 0 }
-          ]
-        }
-    });
-</script>
-```
+The [Cell Format](/web/grid/how-to/excel/cell-format) tutorial shows how to format the cell values.
 
 ### Detail Template
 
@@ -207,3 +146,4 @@ The [Multiple Grid Export](/web/grid/how-to/excel/multiple-grid-export) tutorial
 
 * [Create Excel Documents with Kendo UI](/framework/excel/introduction)
 * [Save Files with Kendo UI](/framework/save-files/introduction)
+* [kendo.ooxml.Workbook API Reference](/api/javascript/ooxml/Workbook)
