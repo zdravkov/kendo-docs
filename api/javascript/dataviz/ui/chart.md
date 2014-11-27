@@ -8380,7 +8380,7 @@ If a type value is missing, the type is assumed to be the one specified in serie
     });
     </script>
 
-### series.aggregate `String` *(default: "max")*
+### series.aggregate `String|Function` *(default: "max")*
 
 The aggregate function to apply for date series.
 
