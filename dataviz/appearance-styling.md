@@ -25,7 +25,7 @@ Setting a Kendo UI DataViz theme is a two-step process:
 * Include stylesheets:
 
 1. **kendo.common.css**
-1. **kendo.common.[theme].css**
+1. **kendo.[theme].css**
 1. **kendo.dataviz.css**
 1. **kendo.dataviz.[theme].css**
 
