@@ -30,7 +30,7 @@ navigation:
         title: "Web Widgets"
         position: 5
     "dataviz":
-        title: "Data Visualisation"
+        title: "Data Visualization"
         position: 6
     "mobile":
         title: "Mobile Framework and Widgets"
