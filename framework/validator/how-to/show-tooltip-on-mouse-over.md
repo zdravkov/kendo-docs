@@ -4,7 +4,7 @@ page_title: Show tooltip on mouse over
 description: Show tooltip on mouse over
 ---
 
-# Add tooltip for grid cell
+# Show tooltip on mouse over
 
 The example below demonstrates how to show the validation tooltip only when moving the cursor over the input that failed to validate.
 
@@ -12,14 +12,21 @@ The example below demonstrates how to show the validation tooltip only when movi
 
 ```html
     <style scoped>
+      .k-invalid-msg
+      {
+        display: none !important;
+      }
 
+      .k-invalid
+      {
+        border: 1px solid red;
+      }
       .k-textbox {
         width: 11.8em;
       }
 
       .demo-section {
         width: 700px;
-        font-size: 12px;
       }
 
       #tickets {
@@ -34,8 +41,6 @@ The example below demonstrates how to show the validation tooltip only when movi
         font-weight: normal;
         font-size: 1.4em;
         border-bottom: 1px solid #ccc;
-        margin: 10px 0 0;
-        padding: 0;
       }
 
       #tickets ul {
@@ -44,7 +49,7 @@ The example below demonstrates how to show the validation tooltip only when movi
         padding: 0;
       }
       #tickets li {
-        margin: 10px 0 0 0;
+        margin: 7px 0 0 0;
       }
 
       label {
@@ -71,74 +76,62 @@ The example below demonstrates how to show the validation tooltip only when movi
       span.k-tooltip {
         margin-left: 6px;
       }
-      .k-input.k-invalid {
-        border: 1px solid red;
-      }
     </style>
-    <div class="demo-section k-header">
-      <form id="tickets">
-        <h3>Book Tickets</h3>
-        <ul>
-          <li>
-            <label for="fullname" class="required">Your Name</label>
-            <input type="text" id="fullname" name="fullname" class="k-textbox" placeholder="Full name" required validationMessage="Enter {0}" style="width: 200px;" />
-          </li>
-          <li>
-            <label for="search" class="required">Movie</label>
-            <input type="search" id="search" name="search" required validationMessage="Select movie" style="width: 200px;"/><span class="k-invalid-msg" data-for="search"></span>
-          </li>
-          <li>
-            <label for="time">Start time</label>
-            <input id="datetime" name="datetime" required data-required-msg="Select date!" style="width: 200px;"/>
-            <span class="k-invalid-msg" data-for="datetime"></span>
-          </li>
-          <li  class="accept">
-            <button class="k-button" type="submit">Submit</button>
-          </li>
-          <li class="status">
-          </li>
-        </ul>
-      </form>
+    <div id="example">
+      <div class="demo-section k-header">
+        <form id="tickets">
+          <h3>Book Tickets</h3>
+          <ul>
+            <li>
+              <label for="fullname" class="required">Your Name</label>
+              <div style="display:inline-block">
+                <input type="text" id="fullname" name="fullname" class="k-textbox" placeholder="Full name" required validationMessage="Enter {0}" style="width: 200px;" />
+              </div>
+            </li>
+            <li  class="accept">
+              <button class="k-button" type="submit">Submit</button>
+            </li>
+            <li class="status">
+            </li>
+          </ul>
+        </form>
+      </div>
+
+
+      <script>
+        $(document).ready(function() {
+          var errorTemplate = '<div class="k-widget k-tooltip k-tooltip-validation"' +
+              'style="margin:0.5em"><span class="k-icon k-warning"> </span>' +
+              '#=message#<div class="k-callout k-callout-n"></div></div>'
+
+          var validator = $("#tickets").kendoValidator({
+            errorTemplate: errorTemplate
+          }).data("kendoValidator");
+
+          var tooltip = $("#tickets").kendoTooltip({
+            filter: ".k-invalid",
+            content: function(e) {
+              var errorMessage = $("#tickets").find("[data-for=" + e.target.attr("name") + "]");
+
+              return '<span class="k-icon k-warning"> </span>' + errorMessage.text();
+            }
+          });
+
+          var status = $(".status");
+
+          $("form").submit(function(event) {
+            event.preventDefault();
+            if (validator.validate()) {
+              status.text("Hooray! Your tickets has been booked!")
+              .removeClass("invalid")
+              .addClass("valid");
+            } else {
+              status.text("Oops! There is invalid data in the form.")
+              .removeClass("valid")
+              .addClass("invalid");
+            }
+          });
+        });
+      </script>
     </div>
-
-
-    <script>
-      $(document).ready(function() {
-        var data = [
-          "12 Angry Men",
-          "Il buono, il brutto, il cattivo.",
-          "Inception",
-          "One Flew Over the Cuckoo's Nest",
-          "Pulp Fiction",
-          "Schindler's List",
-          "The Dark Knight",
-          "The Godfather",
-          "The Godfather: Part II",
-          "The Shawshank Redemption"
-        ];
-
-        $("#search").kendoAutoComplete({
-          dataSource: data,
-          separator: ", "
-        });
-
-        $("#datetime").kendoDatePicker();
-
-        var validator = $("#tickets").kendoValidator().data("kendoValidator"),
-            status = $(".status");
-
-        $("form").submit(function(event) {
-          event.preventDefault();
-          if (validator.validate()) {
-            status.text("Hooray! Your tickets has been booked!")
-            .removeClass("invalid")
-            .addClass("valid");
-          } else {
-            status.text("Oops! There is invalid data in the form.")
-            .removeClass("valid")
-            .addClass("invalid");
-          }
-        });
-      });
-    </script> 
 ```

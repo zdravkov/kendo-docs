@@ -4,7 +4,7 @@ page_title: Use a template to customize the tooltip
 description: Use a template to customize the tooltip
 ---
 
-# Add tooltip for grid cell
+# Use a template to customize the tooltip
 
 The example below demonstrates how to use an [errorTemplate](/api/framework/validator#configuration-errorTemplate) to customize the tooltip.
 
