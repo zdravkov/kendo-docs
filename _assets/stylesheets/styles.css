@@ -530,10 +530,10 @@ footer
 
 
 .toggle-nav {
-    width: 24px; 
+    width: 24px;
     height: 24px;
-    background: transparent; 
-    display: none; 
+    background: transparent;
+    display: none;
     position: relative;
     margin-left: 1.833em;
     cursor: pointer;
@@ -563,16 +563,41 @@ footer
     display: none;
 }
 
+.k-tabstrip {
+    border: 0;
+}
+
+.k-tabstrip .k-item {
+    border-width: 0 1px 0;
+    border-color: #acacac;
+}
+
+.k-tabstrip .k-content {
+    border-color: #acacac;
+    background: #F1F5F9;
+}
+.k-tabstrip .k-content pre {
+    border: 0;
+}
+
+.k-tabstrip .k-tabstrip-items .k-state-active {
+    border-bottom-width: 0;
+    margin-bottom: -1px;
+    padding-bottom: -1px;
+    z-index: 1;
+    background: #F1F5F9;
+}
+
 @media (max-width: 1200px) {
     #page-nav {
-       width: 30%; 
+       width: 30%;
     }
-    
+
     #markdown-toc,
-    #page-article { 
-        width: 70%; 
+    #page-article {
+        width: 70%;
     }
-    
+
     #page-search {
         left: 30%;
     }
@@ -644,16 +669,16 @@ footer
     }
 
     #page-search > div {
-        padding: 0 3.83em 0 0;    
+        padding: 0 3.83em 0 0;
     }
 
-    .toggle-nav span { 
-        position: absolute; 
+    .toggle-nav span {
+        position: absolute;
     }
-    
-    .toggle-nav span, 
+
+    .toggle-nav span,
     .toggle-nav span:before,
-    .toggle-nav span:after {    
+    .toggle-nav span:after {
       border-radius: 1px;
       height: 3px;
       width: 24px;
@@ -668,9 +693,9 @@ footer
     }
 
     .toggle-nav span:after {
-      bottom: -8px; 
+      bottom: -8px;
     }
-        
+
     .show-search {
         display: inline-block;
         margin: 0;

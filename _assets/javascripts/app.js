@@ -75,7 +75,7 @@ $(function(){
 
        langs.wrap("<div>");
 
-       tabstrip.kendoTabStrip();
+       tabstrip.kendoTabStrip({ animation: false });
     });
 
     $("pre").addClass("prettyprint");
