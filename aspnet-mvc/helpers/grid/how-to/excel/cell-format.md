@@ -9,6 +9,6 @@ To format the cell values set the [format](/api/javascript/ooxml/workbook.html#c
 
 The [Create a custom number format](https://support.office.com/en-us/article/Create-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4) page describes the formats that Excel supports.
 
-> This project requires UI for ASP.NET version 2014.3.1125 at least. In earlier versions the `ExcelExport` event isn't exposed in the fluent API.
+> This project requires UI for ASP.NET MVC version 2014.3.1125 and up. Earlier versions don't have the `ExcelExport` event exposed via the fluent API.
 
 [Excel Cell Format Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/cell-format-excel)
