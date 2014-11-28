@@ -1,12 +1,12 @@
 ---
-title: Hide checkboxes for root level
-page_title: Hide checkboxes for root level
-description: Hide checkboxes for root level
+title: Expand all nodes upon check
+page_title: Expand all nodes upon check
+description: Expand all nodes upon check
 ---
 
-# Hide checkboxes for root level
+# Expand all nodes upon check
 
-The example below demonstrates how to use the checkboxes.template configuration option in order to hide the checkboxes for the root level items.
+The example below demonstrates how to expand all child nodes when checking a root node.
 
 #### Example
 
