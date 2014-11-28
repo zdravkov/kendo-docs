@@ -62,48 +62,51 @@ Decorate that parameter with the `Kendo.Mvc.UI.DataSourceRequestAttribute`. That
             }
         }
 1.  In the view configure the grid to use the action method created in the previous steps.
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid<KendoGridAjaxBinding.Models.Product>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource // Configure the grid data source
-                      .Ajax() // Specify that ajax binding is used
-                      .Read(read => read.Action("Products_Read", "Home")) // Set the action method which will return the data in JSON format
-                   )
-                  .Columns(columns =>
-                  {
-                      // Create a column bound to the ProductID property
-                      columns.Bound(product => product.ProductID);
-                      // Create a column bound to the ProductName property
-                      columns.Bound(product => product.ProductName);
-                      // Create a column bound to the UnitsInStock property
-                      columns.Bound(product => product.UnitsInStock);
-                  })
-                  .Pageable() // Enable paging
-                  .Sortable() // Enable sorting
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid<KendoGridAjaxBinding.Models.Product>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource // Configure the grid data source
-                      .Ajax() // Specify that ajax binding is used
-                      .Read(read => read.Action("Products_Read", "Home")) // Set the action method which will return the data in JSON format
-                   )
-                  .Columns(columns =>
-                  {
-                      // Create a column bound to the ProductID property
-                      columns.Bound(product => product.ProductID);
-                      // Create a column bound to the ProductName property
-                      columns.Bound(product => product.ProductName);
-                      // Create a column bound to the UnitsInStock property
-                      columns.Bound(product => product.UnitsInStock);
-                  })
-                  .Pageable() // Enable paging
-                  .Sortable() // Enable sorting
-            )
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridAjaxBinding.Models.Product>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource // Configure the grid data source
+              .Ajax() // Specify that ajax binding is used
+              .Read(read => read.Action("Products_Read", "Home")) // Set the action method which will return the data in JSON format
+           )
+          .Columns(columns =>
+          {
+              // Create a column bound to the ProductID property
+              columns.Bound(product => product.ProductID);
+              // Create a column bound to the ProductName property
+              columns.Bound(product => product.ProductName);
+              // Create a column bound to the UnitsInStock property
+              columns.Bound(product => product.UnitsInStock);
+          })
+          .Pageable() // Enable paging
+          .Sortable() // Enable sorting
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridAjaxBinding.Models.Product>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource // Configure the grid data source
+              .Ajax() // Specify that ajax binding is used
+              .Read(read => read.Action("Products_Read", "Home")) // Set the action method which will return the data in JSON format
+           )
+          .Columns(columns =>
+          {
+              // Create a column bound to the ProductID property
+              columns.Bound(product => product.ProductID);
+              // Create a column bound to the ProductName property
+              columns.Bound(product => product.ProductName);
+              // Create a column bound to the UnitsInStock property
+              columns.Bound(product => product.UnitsInStock);
+          })
+          .Pageable() // Enable paging
+          .Sortable() // Enable sorting
+    %>
+    ```
 1. Build and run the application
 ![Final result](/aspnet-mvc/helpers/grid/images/grid-bound-grid.png)
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/ajax-binding)
 
 The `ToDataSourceResult` method uses the `DataSourceRequest` parameter and LINQ expressions to page, sort, filter and group your data.
 The JSON response of the action method will contain only a single page of data. The grid will be bound to that data.
@@ -127,40 +130,41 @@ This tutorial will show how to use view models and Kendo UI Grid for ASP.NET MVC
             public short? UnitsInStock { get; set; }
         }
 1. Modify the grid declaration and make it use `ProductViewModel` instead of `Product`.
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid<KendoGridAjaxBinding.Models.ProductViewModel>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource
-                      .Ajax()
-                      .Read(read => read.Action("Products_Read", "Home"))
-                   )
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                      columns.Bound(product => product.UnitsInStock);
-                  })
-                  .Pageable()
-                  .Sortable()
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid<KendoGridAjaxBinding.Models.ProductViewModel>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource
-                      .Ajax()
-                      .Read(read => read.Action("Products_Read", "Home"))
-                   )
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                      columns.Bound(product => product.UnitsInStock);
-                  })
-                  .Pageable()
-                  .Sortable()
-            )
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridAjaxBinding.Models.ProductViewModel>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .Read(read => read.Action("Products_Read", "Home"))
+           )
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+              columns.Bound(product => product.UnitsInStock);
+          })
+          .Pageable()
+          .Sortable()
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridAjaxBinding.Models.ProductViewModel>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .Read(read => read.Action("Products_Read", "Home"))
+           )
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+              columns.Bound(product => product.UnitsInStock);
+          })
+          .Pageable()
+          .Sortable()
+    %>
+    ```
 1. Modify the `Products_Read` action method and use the `ToDataSourceResult` method overload which accepts a mapping lambda.
 
             public ActionResult Products_Read([DataSourceRequest]DataSourceRequest request)
@@ -178,6 +182,8 @@ This tutorial will show how to use view models and Kendo UI Grid for ASP.NET MVC
                     return Json(result);
                 }
             }
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/ajax-binding-view-model)
 
 ## Pass Additional Data to the Action Method
 
