@@ -126,70 +126,73 @@ Name the model "Northwind.edmx" and click "Next". This will start the "Entity Da
             return Json(new[] { product }.ToDataSourceResult(request, ModelState));
         }
 1.  In the view configure the grid to use the action methods created in the previous steps.
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID).Width(100);
-                      columns.Bound(product => product.ProductName);
-                      columns.Bound(product => product.UnitsInStock).Width(250);
-                      columns.Command(commands =>
-                      {
-                          commands.Edit(); // The "edit" command will edit and update data items
-                          commands.Destroy(); // The "destroy" command removes data items
-                      }).Title("Commands").Width(200);
-                  })
-                  .ToolBar(toolbar => toolbar.Create()) // The "create" command adds new data items
-                  .Editable(editable => editable.Mode(GridEditMode.InLine)) // Use inline editing mode
-                  .DataSource(dataSource =>
-                      dataSource.Ajax()
-                        .Model(model =>
-                        {
-                            model.Id(product => product.ProductID); // Specify the property which is the unique identifier of the model
-                            model.Field(product => product.ProductID).Editable(false); // Make the ProductID property not editable
-                        })
-                        .Create(create => create.Action("Products_Create", "Home")) // Action invoked when the user saves a new data item
-                        .Read(read => read.Action("Products_Read", "Home"))  // Action invoked when the grid needs data
-                        .Update(update => update.Action("Products_Update", "Home"))  // Action invoked when the user saves an updated data item
-                        .Destroy(destroy => destroy.Action("Products_Destroy", "Home")) // Action invoked when the user removes a data item
-                  )
-                  .Pageable()
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID).Width(100);
-                      columns.Bound(product => product.ProductName);
-                      columns.Bound(product => product.UnitsInStock).Width(250);
-                      columns.Command(commands =>
-                      {
-                          commands.Edit(); // The "edit" command will edit and update data items
-                          commands.Destroy(); // The "destroy" command removes data items
-                      }).Title("Commands").Width(200);
-                  })
-                  .ToolBar(toolbar => toolbar.Create()) // The "create" command adds new data items
-                  .Editable(editable => editable.Mode(GridEditMode.InLine)) // Use inline editing mode
-                  .DataSource(dataSource =>
-                      dataSource.Ajax()
-                        .Model(model =>
-                        {
-                            model.Id(product => product.ProductID); // Specify the property which is the unique identifier of the model
-                            model.Field(product => product.ProductID).Editable(false); // Make the ProductID property not editable
-                        })
-                        .Create(create => create.Action("Products_Create", "Home")) // Action invoked when the user saves a new data item
-                        .Read(read => read.Action("Products_Read", "Home"))  // Action invoked when the grid needs data
-                        .Update(update => update.Action("Products_Update", "Home"))  // Action invoked when the user saves an updated data item
-                        .Destroy(destroy => destroy.Action("Products_Destroy", "Home")) // Action invoked when the user removes a data item
-                  )
-                  .Pageable()
-            )
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID).Width(100);
+              columns.Bound(product => product.ProductName);
+              columns.Bound(product => product.UnitsInStock).Width(250);
+              columns.Command(commands =>
+              {
+                  commands.Edit(); // The "edit" command will edit and update data items
+                  commands.Destroy(); // The "destroy" command removes data items
+              }).Title("Commands").Width(200);
+          })
+          .ToolBar(toolbar => toolbar.Create()) // The "create" command adds new data items
+          .Editable(editable => editable.Mode(GridEditMode.InLine)) // Use inline editing mode
+          .DataSource(dataSource =>
+              dataSource.Ajax()
+                .Model(model =>
+                {
+                    model.Id(product => product.ProductID); // Specify the property which is the unique identifier of the model
+                    model.Field(product => product.ProductID).Editable(false); // Make the ProductID property not editable
+                })
+                .Create(create => create.Action("Products_Create", "Home")) // Action invoked when the user saves a new data item
+                .Read(read => read.Action("Products_Read", "Home"))  // Action invoked when the grid needs data
+                .Update(update => update.Action("Products_Update", "Home"))  // Action invoked when the user saves an updated data item
+                .Destroy(destroy => destroy.Action("Products_Destroy", "Home")) // Action invoked when the user removes a data item
+          )
+          .Pageable()
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID).Width(100);
+              columns.Bound(product => product.ProductName);
+              columns.Bound(product => product.UnitsInStock).Width(250);
+              columns.Command(commands =>
+              {
+                  commands.Edit(); // The "edit" command will edit and update data items
+                  commands.Destroy(); // The "destroy" command removes data items
+              }).Title("Commands").Width(200);
+          })
+          .ToolBar(toolbar => toolbar.Create()) // The "create" command adds new data items
+          .Editable(editable => editable.Mode(GridEditMode.InLine)) // Use inline editing mode
+          .DataSource(dataSource =>
+              dataSource.Ajax()
+                .Model(model =>
+                {
+                    model.Id(product => product.ProductID); // Specify the property which is the unique identifier of the model
+                    model.Field(product => product.ProductID).Editable(false); // Make the ProductID property not editable
+                })
+                .Create(create => create.Action("Products_Create", "Home")) // Action invoked when the user saves a new data item
+                .Read(read => read.Action("Products_Read", "Home"))  // Action invoked when the grid needs data
+                .Update(update => update.Action("Products_Update", "Home"))  // Action invoked when the user saves an updated data item
+                .Destroy(destroy => destroy.Action("Products_Destroy", "Home")) // Action invoked when the user removes a data item
+          )
+          .Pageable()
+    %>
+    ```
 1. Build and run the application
 ![Final result](/aspnet-mvc/helpers/grid/images/grid-inline-grid.png)
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/ajax-editing)
 
 ## Display ModelState errors
 
@@ -233,107 +236,110 @@ Server validation is often needed when performing editing. The following tutoria
         }
 1. Subscribe to the [error](/api/framework/datasource#events-error) event of the data source. It is fired when there are model state errors or some other unexpected problem occurred when making the ajax request.
 In the event handler display the errors and call the [cancelChanges](/api/web/grid#methods-cancelChanges) method of the grid.
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID).Width(100);
-                      columns.Bound(product => product.ProductName);
-                      columns.Bound(product => product.UnitsInStock).Width(250);
-                      columns.Command(commands =>
-                      {
-                          commands.Edit();
-                          commands.Destroy();
-                      }).Title("Commands").Width(200);
-                  })
-                  .ToolBar(toolbar => toolbar.Create())
-                  .Editable(editable => editable.Mode(GridEditMode.InLine))
-                  .DataSource(dataSource =>
-                      dataSource.Ajax()
-                        .Events(events => events.Error("grid_error")) // Handle the "error" event
-                        .Model(model =>
-                        {
-                            model.Id(product => product.ProductID);
-                            model.Field(product => product.ProductID).Editable(false);
-                        })
-                        .Create(create => create.Action("Products_Create", "Home"))
-                        .Read(read => read.Action("Products_Read", "Home"))
-                        .Update(update => update.Action("Products_Update", "Home"))
-                        .Destroy(destroy => destroy.Action("Products_Destroy", "Home"))
-                  )
-                  .Pageable()
-            %>
-            <script>
-            function grid_error(e) {
-                if (e.errors) {
-                    var message = "There are some errors:\n";
-                    // Create a message containing all errors.
-                    $.each(e.errors, function (key, value) {
-                        if ('errors' in value) {
-                            $.each(value.errors, function () {
-                                message += this + "\n";
-                            });
-                        }
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID).Width(100);
+              columns.Bound(product => product.ProductName);
+              columns.Bound(product => product.UnitsInStock).Width(250);
+              columns.Command(commands =>
+              {
+                  commands.Edit();
+                  commands.Destroy();
+              }).Title("Commands").Width(200);
+          })
+          .ToolBar(toolbar => toolbar.Create())
+          .Editable(editable => editable.Mode(GridEditMode.InLine))
+          .DataSource(dataSource =>
+              dataSource.Ajax()
+                .Events(events => events.Error("grid_error")) // Handle the "error" event
+                .Model(model =>
+                {
+                    model.Id(product => product.ProductID);
+                    model.Field(product => product.ProductID).Editable(false);
+                })
+                .Create(create => create.Action("Products_Create", "Home"))
+                .Read(read => read.Action("Products_Read", "Home"))
+                .Update(update => update.Action("Products_Update", "Home"))
+                .Destroy(destroy => destroy.Action("Products_Destroy", "Home"))
+          )
+          .Pageable()
+    )
+    <script>
+    function grid_error(e) {
+        if (e.errors) {
+            var message = "There are some errors:\n";
+            // Create a message containing all errors.
+            $.each(e.errors, function (key, value) {
+                if ('errors' in value) {
+                    $.each(value.errors, function () {
+                        message += this + "\n";
                     });
-                    // Display the message
-                    alert(message);
-                    // Cancel the changes
-                    var grid = $("#grid").data("kendoGrid");
-                    grid.cancelChanges();
                 }
-            }
-            </script>
-    - Index.cshtml (Razor)
+            });
+            // Display the message
+            alert(message);
+            // Cancel the changes
+            var grid = $("#grid").data("kendoGrid");
+            grid.cancelChanges();
+        }
+    }
+    </script>
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID).Width(100);
+              columns.Bound(product => product.ProductName);
+              columns.Bound(product => product.UnitsInStock).Width(250);
+              columns.Command(commands =>
+              {
+                  commands.Edit();
+                  commands.Destroy();
+              }).Title("Commands").Width(200);
+          })
+          .ToolBar(toolbar => toolbar.Create())
+          .Editable(editable => editable.Mode(GridEditMode.InLine))
+          .DataSource(dataSource =>
+              dataSource.Ajax()
+                .Events(events => events.Error("grid_error")) // Handle the "error" event
+                .Model(model =>
+                {
+                    model.Id(product => product.ProductID);
+                    model.Field(product => product.ProductID).Editable(false);
+                })
+                .Create(create => create.Action("Products_Create", "Home"))
+                .Read(read => read.Action("Products_Read", "Home"))
+                .Update(update => update.Action("Products_Update", "Home"))
+                .Destroy(destroy => destroy.Action("Products_Destroy", "Home"))
+          )
+          .Pageable()
+    %>
+    <script>
+    function grid_error(e) {
+        if (e.errors) {
+            var message = "There are some errors:\n";
+            // Create a message containing all errors.
+            $.each(e.errors, function (key, value) {
+                if ('errors' in value) {
+                    $.each(value.errors, function () {
+                        message += this + "\n";
+                    });
+                }
+            });
+            // Display the message
+            alert(message);
+            // Cancel the changes
+            var grid = $("#grid").data("kendoGrid");
+            grid.cancelChanges();
+        }
+    }
+    </script>
+    ```
 
-            @(Html.Kendo().Grid<KendoGridAjaxEditing.Models.ProductViewModel>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID).Width(100);
-                      columns.Bound(product => product.ProductName);
-                      columns.Bound(product => product.UnitsInStock).Width(250);
-                      columns.Command(commands =>
-                      {
-                          commands.Edit();
-                          commands.Destroy();
-                      }).Title("Commands").Width(200);
-                  })
-                  .ToolBar(toolbar => toolbar.Create())
-                  .Editable(editable => editable.Mode(GridEditMode.InLine))
-                  .DataSource(dataSource =>
-                      dataSource.Ajax()
-                        .Events(events => events.Error("grid_error")) // Handle the "error" event
-                        .Model(model =>
-                        {
-                            model.Id(product => product.ProductID);
-                            model.Field(product => product.ProductID).Editable(false);
-                        })
-                        .Create(create => create.Action("Products_Create", "Home"))
-                        .Read(read => read.Action("Products_Read", "Home"))
-                        .Update(update => update.Action("Products_Update", "Home"))
-                        .Destroy(destroy => destroy.Action("Products_Destroy", "Home"))
-                  )
-                  .Pageable()
-            )
-            <script>
-            function grid_error(e) {
-                if (e.errors) {
-                    var message = "There are some errors:\n";
-                    // Create a message containing all errors.
-                    $.each(e.errors, function (key, value) {
-                        if ('errors' in value) {
-                            $.each(value.errors, function () {
-                                message += this + "\n";
-                            });
-                        }
-                    });
-                    // Display the message
-                    alert(message);
-                    // Cancel the changes
-                    var grid = $("#grid").data("kendoGrid");
-                    grid.cancelChanges();
-                }
-            }
-            </script>
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/ajax-editing-model-state)
