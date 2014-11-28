@@ -4,7 +4,7 @@ page_title: Use MutationObserver to add red border and hide tooltip
 description: Use MutationObserver to add red border and hide tooltip
 ---
 
-# Add tooltip for grid cell
+# Use MutationObserver to add red border and hide tooltip
 
 The example below demonstrates how to hide the validation tooltip and add a red border around input elemnts and widgets that failed to validate using a MutationObserver.
 

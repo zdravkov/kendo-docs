@@ -4,7 +4,7 @@ page_title: Add red border and hide tooltip
 description: Add red border and hide tooltip
 ---
 
-# Add tooltip for grid cell
+# Add red border and hide tooltip
 
 The example below demonstrates how to hide the validation tooltip and add a red border around input elemnts and widgets that failed to validate.
 
