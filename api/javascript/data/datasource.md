@@ -2643,7 +2643,8 @@ If set to function the data source will invoke it and use the result as the URL.
 ### type `String`
 
 If set the data source will use a predefined [transport](#configuration-transport) and/or [schema](#configuration-schema).
-The supported values are "odata" which supports the [OData](http://www.odata.org) v.2 protocol and "signalr".
+The supported values are "odata" which supports the [OData](http://www.odata.org) v.2 protocol, "odata-v4" which [partially supports](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/odata-v4-web-api-binding) 
+odata version 4 and "signalr".
 
 #### Example - enable OData support
 
