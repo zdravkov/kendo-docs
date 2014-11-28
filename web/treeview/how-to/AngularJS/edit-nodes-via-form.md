@@ -35,8 +35,8 @@ The example below demonstrates how to allow users to edit nodes via a standalone
     </div>
 
     <script>
-      angular.module("KendoDemos", [ "kendo.directives" ]);
-      function MyCtrl($scope) {
+      angular.module("KendoDemos", [ "kendo.directives" ])
+      .controller("MyCtrl", function ($scope) {
         $scope.treeData = new kendo.data.HierarchicalDataSource({ data: [
           { name: "John Smith", age: 34 },
           { name: "Jane Doe", age: 30, expanded: true, items: [
@@ -53,7 +53,7 @@ The example below demonstrates how to allow users to edit nodes via a standalone
           dataItem.name = undefined; // force refresh of dataItem
           dataItem.set("name", name);
         };
-      }
+      });
     </script>
     <style>
       .k-treeview .k-in {
