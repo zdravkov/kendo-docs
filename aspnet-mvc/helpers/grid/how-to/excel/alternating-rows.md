@@ -11,6 +11,6 @@ The demo uses the [background](/api/javascript/ooxml/workbook#configuration-shee
 
 To understand how Excel documents work check the [Excel Introduction](/framework/excel/introduction#create-excel-document) help topic.
 
-> This project needs at least 2014.3.1125 version of Kendo UI. In earlier versions the `ExcelExport` event isn't exposed in the fluent API.
+> This project requires UI for ASP.NET MVC version 2014.3.1125 and up. Earlier versions don't have the `ExcelExport` event exposed via the fluent API.
 
 [Alternating Rows Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/alternating-rows)
