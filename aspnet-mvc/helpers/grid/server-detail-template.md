@@ -34,71 +34,75 @@ Name the model "Northwind.edmx" and click "Next". This will start the "Entity Da
             return View();
         }
 1. In the view configure the grid for server binding to `ViewBag.Products`
-    - Index.aspx (ASPX)
 
-            <% Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-                  .Render();
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-            )
+    ```Razor
+    @(Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+    )
+    ```
+    ```ASPX
+    <% Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+          .Render();
+    %>
+    ```
 1. Set the detail template.
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-                  .Pageable()
-                  .DetailTemplate(product => {
-                  %>
-                      <div>ProductID: <%: product.ProductID %></div>
-                      <div>ProductName: <%: product.ProductName %></div>
-                      <div>UnitsInStock: <%: product.UnitsInStock %></div>
-                      <div>UnitPrice: <%: product.UnitPrice %></div>
-                      <div>UnitsOnOrder: <%: product.UnitsOnOrder %></div>
-                      <div>Discontinued: <%: product.Discontinued %></div>
-                  <%
-                  })
-                  .Render();
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-                  .Pageable()
-                  .DetailTemplate(@<text>
-                      <div>ProductID: @item.ProductID</div>
-                      <div>ProductName: @item.ProductName</div>
-                      <div>UnitsInStock: @item.UnitsInStock</div>
-                      <div>UnitPrice: @item.UnitPrice</div>
-                      <div>UnitsOnOrder: @item.UnitsOnOrder</div>
-                      <div>Discontinued: @item.Discontinued</div>
-                  </text>)
-            )
+    ```Razor
+    @(Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+          .Pageable()
+          .DetailTemplate(@<text>
+              <div>ProductID: @item.ProductID</div>
+              <div>ProductName: @item.ProductName</div>
+              <div>UnitsInStock: @item.UnitsInStock</div>
+              <div>UnitPrice: @item.UnitPrice</div>
+              <div>UnitsOnOrder: @item.UnitsOnOrder</div>
+              <div>Discontinued: @item.Discontinued</div>
+          </text>)
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid((IEnumerable<KendoGridServerDetailTemplate.Models.Product>)ViewBag.Products)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+          .Pageable()
+          .DetailTemplate(product => {
+          %>
+              <div>ProductID: <%: product.ProductID %></div>
+              <div>ProductName: <%: product.ProductName %></div>
+              <div>UnitsInStock: <%: product.UnitsInStock %></div>
+              <div>UnitPrice: <%: product.UnitPrice %></div>
+              <div>UnitsOnOrder: <%: product.UnitsOnOrder %></div>
+              <div>Discontinued: <%: product.Discontinued %></div>
+          <%
+          })
+          .Render();
+    %>
+    ```
 1. Build and run.
 ![Server detail template](/aspnet-mvc/helpers/grid/images/grid-detail-template.png)
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/server-detail-template)
 
 ## Server hierarchy
 
@@ -118,79 +122,82 @@ Name the model "Northwind.edmx" and click "Next". This will start the "Entity Da
         public ActionResult Index()
         {
             var northwind = new NorthwindEntities();
-            ViewBag.Products = northwind.Categories;
+            ViewBag.Categories = northwind.Categories;
             return View();
         }
 1. In the view configure the grid for server binding to `ViewBag.Categories`
-    - Index.aspx (ASPX)
 
-            <% Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
-                  })
-                  .Render();
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
-                  })
-            )
+    ```Razor
+    @(Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+    )
+    ```
+    ```ASPX
+    <% Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+          .Render();
+    %>
+    ```
 1. Set the detail template. Define another grid which is bound to the `Products` property of the category entity. Make sure the name of the grid is unique.
 
-    - Index.aspx (ASPX)
-
-            <% Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
-                  .Name("grid")
+    ```Razor
+    @(Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+          .Pageable()
+          .DetailTemplate(@<text>
+            @(Html.Kendo().Grid(item.Products)
+                  .Name(string.Format("product_grid_{0}", item.CategoryID)) // the Name() should be unique
                   .Columns(columns =>
                   {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
-                  })
-                  .DetailTemplate(category => {
-                  %>
-                    <% Html.Kendo().Grid(item.Products)
-                          .Name(string.Format("product_grid_{0}", item.CategoryID)) // the Name() should be unique
-                          .Columns(columns =>
-                          {
-                              columns.Bound(product => product.ProductID);
-                              columns.Bound(product => product.ProductName);
-                          })
-                          .Pageable()
-                          .Render();
-                    %>
-                  <%
-                  })
-                  .Render();
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
+                      columns.Bound(product => product.ProductID);
+                      columns.Bound(product => product.ProductName);
                   })
                   .Pageable()
-                  .DetailTemplate(@<text>
-                    @(Html.Kendo().Grid(item.Products)
-                          .Name(string.Format("product_grid_{0}", item.CategoryID)) // the Name() should be unique
-                          .Columns(columns =>
-                          {
-                              columns.Bound(product => product.ProductID);
-                              columns.Bound(product => product.ProductName);
-                          })
-                          .Pageable()
-                    )
-                  </text>)
             )
+          </text>)
+    )
+    ```
+    ```ASPX
+    <% Html.Kendo().Grid((IEnumerable<KendoGridServerHierarchy.Models.Category>)ViewBag.Categories)
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+          .DetailTemplate(category => {
+          %>
+            <% Html.Kendo().Grid(item.Products)
+                  .Name(string.Format("product_grid_{0}", item.CategoryID)) // the Name() should be unique
+                  .Columns(columns =>
+                  {
+                      columns.Bound(product => product.ProductID);
+                      columns.Bound(product => product.ProductName);
+                  })
+                  .Pageable()
+                  .Render();
+            %>
+          <%
+          })
+          .Render();
+    %>
+    ```
 1. Build and run.
 ![Server hierarchy](/aspnet-mvc/helpers/grid/images/grid-hierarchy.png)
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/server-hierarchy)
