@@ -59,36 +59,37 @@ Decorate that parameter with the `Kendo.Mvc.UI.DataSourceRequestAttribute`. That
             }
         }
 1.  In the view configure the grid to use the action method created in the previous steps.
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource
-                      .Ajax()
-                      .Read(read => read.Action("Products_Read", "Home"))
-                   )
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-                  .Pageable()
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource
-                      .Ajax()
-                      .Read(read => read.Action("Products_Read", "Home"))
-                   )
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-                  .Pageable()
-            )
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .Read(read => read.Action("Products_Read", "Home"))
+           )
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+          .Pageable()
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .Read(read => read.Action("Products_Read", "Home"))
+           )
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+          .Pageable()
+    %>
+    ```
 1.  Define the client template using [Kendo UI Template](/framework/templates/overview) syntax. The context of the template is the data item (Product entity) to which the current grid row is bound.
 > Any "#" symbols that are not part of a template expression (#: #, # # or #= #) must be escaped ("\\#").
 
@@ -102,40 +103,42 @@ Decorate that parameter with the `Kendo.Mvc.UI.DataSourceRequestAttribute`. That
         </script>
 1.  Specify the id of the template using the `ClientDetailTemplateId` method.
 
-    - Index.aspx (ASPX)
-
-            <%: Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource
-                      .Ajax()
-                      .Read(read => read.Action("Products_Read", "Home"))
-                   )
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-                  .Pageable()
-                  .ClientDetailTemplateId("client-template")
-            %>
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
-                  .Name("grid")
-                  .DataSource(dataSource => dataSource
-                      .Ajax()
-                      .Read(read => read.Action("Products_Read", "Home"))
-                   )
-                  .Columns(columns =>
-                  {
-                      columns.Bound(product => product.ProductID);
-                      columns.Bound(product => product.ProductName);
-                  })
-                  .Pageable()
-                  .ClientDetailTemplateId("client-template")
-            )
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .Read(read => read.Action("Products_Read", "Home"))
+           )
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+          .Pageable()
+          .ClientDetailTemplateId("client-template")
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridClientDetailTemplate.Models.Product>()
+          .Name("grid")
+          .DataSource(dataSource => dataSource
+              .Ajax()
+              .Read(read => read.Action("Products_Read", "Home"))
+           )
+          .Columns(columns =>
+          {
+              columns.Bound(product => product.ProductID);
+              columns.Bound(product => product.ProductName);
+          })
+          .Pageable()
+          .ClientDetailTemplateId("client-template")
+    %>
+    ```
 1. Build and run
 ![Client detail template](/aspnet-mvc/helpers/grid/images/grid-detail-template.png)
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/client-detail-template)
 
 ## Client hierarchy
 
@@ -207,37 +210,37 @@ Decorate that parameter with the `Kendo.Mvc.UI.DataSourceRequestAttribute`. That
             }
         }
 1. In the view configure the grid for ajax binding to `Categories_Read`
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
-                  })
-                  .DataSource(dataSource =>
-                    dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
-                  )
-            %>
-
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
-                  })
-                  .DataSource(dataSource =>
-                    dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
-                  )
-            )
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+          .DataSource(dataSource =>
+            dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
+          )
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+          .DataSource(dataSource =>
+            dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
+          )
+    %>
+    ```
 1. Define the client template using [Kendo UI Template](/framework/templates/overview) syntax. The context of the template is the Category entity to which the current grid row is bound. The template itself
 contains another grid which is bound to the `Products_Read` action.
 > **Always** call the `ToClientTemplate` method when using Telerik UI for ASP.NET MVC widgets in a client template.
-> 
+>
 >**Important:** The "#" characters used for a template expression should be escaped when using a column `ClientTemplate` in a detail template so that the expression is evaluated in the correct context.
 
         <script id="client-template" type="text/x-kendo-template">
@@ -257,34 +260,36 @@ contains another grid which is bound to the `Products_Read` action.
         )
         </script>
 1. Specify the id of the template using the `ClientDetailTemplateId` method.
-    - Index.aspx (ASPX)
 
-            <%: Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
-                  })
-                  .DataSource(dataSource =>
-                      dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
-                  )
-                  .ClientDetailTemplateId("client-template")
-            %>
-
-    - Index.cshtml (Razor)
-
-            @(Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
-                  .Name("grid")
-                  .Columns(columns =>
-                  {
-                      columns.Bound(category => category.CategoryID);
-                      columns.Bound(category => category.CategoryName);
-                  })
-                  .DataSource(dataSource =>
-                      dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
-                  )
-                  .ClientDetailTemplateId("client-template")
-            )
+    ```Razor
+    @(Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+          .DataSource(dataSource =>
+              dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
+          )
+          .ClientDetailTemplateId("client-template")
+    )
+    ```
+    ```ASPX
+    <%: Html.Kendo().Grid<KendoGridClientHierarchy.Models.Category>()
+          .Name("grid")
+          .Columns(columns =>
+          {
+              columns.Bound(category => category.CategoryID);
+              columns.Bound(category => category.CategoryName);
+          })
+          .DataSource(dataSource =>
+              dataSource.Ajax().Read(read => read.Action("Categories_Read", "Home"))
+          )
+          .ClientDetailTemplateId("client-template")
+    %>
+    ```
 1. Build and run.
 ![Client hierarchy](/aspnet-mvc/helpers/grid/images/grid-hierarchy.png)
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/client-hierarchy)
