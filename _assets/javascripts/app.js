@@ -162,7 +162,7 @@ var dojoApi = (function($) {
                 angular = '';
             }
 
-            if (!(/ooxml|saveAsExcel/i).test(snippet)) {
+            if (!(/ooxml|excel/i).test(snippet)) {
                 jszip  = '';
             }
 
