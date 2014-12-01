@@ -279,9 +279,9 @@ The name of the command. The built-in commands are "edit" and "destroy". Can be 
     });
     </script>
 
-### columns.command.text `String`
+### columns.command.text `String|Object`
 
-The text displayed by the command button. If not set the [name](#configuration-columns.command.name) option is used as the button text.
+The text displayed by the command button and the "cancel", "edit" and "update" texts of the edit command. If not set the [name](#configuration-columns.command.name) option is used as the button text.
 
 #### Example - customize the text of the command
     <div id="grid"></div>
@@ -318,6 +318,57 @@ The text displayed by the command button. If not set the [name](#configuration-c
       editable: {
         mode: "inline"
       }
+    });
+    </script>
+
+### columns.command.text.edit `String`
+
+The "edit" text of the edit command.
+
+#### Example - customize the edit text of the edit command
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { command: [{ name: "edit", text: { edit: "Custom edit"} }] }
+      ],
+      editable: "inline",
+      dataSource: [ { name: "Jane Doe" } ]
+    });
+    </script>
+
+### columns.command.text.cancel `String`
+
+The "cancel" text of the edit command.
+
+#### Example - customize the cancel text of the edit command
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { command: [{ name: "edit", text: { cancel: "Custom cancel"} }] }
+      ],
+      editable: "inline",
+      dataSource: [ { name: "Jane Doe" } ]
+    });
+    </script>
+
+### columns.command.text.update `String`
+
+The "update" text of the edit command.
+
+#### Example - customize the update text of the edit command
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      columns: [
+        { field: "name" },
+        { command: [{ name: "edit", text: { update: "Custom Update"} }] }
+      ],
+      editable: "inline",
+      dataSource: [ { name: "Jane Doe" } ]
     });
     </script>
 
