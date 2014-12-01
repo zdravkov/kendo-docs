@@ -26,7 +26,7 @@ $("#grid").kendoGrid({
   excelExport: function(e) {
     var sheet = e.workbook.sheets[0];
     var template = kendo.template(this.columns[1].template);
-    var data = this.dataSource.view();
+    var data = this.dataSource.view(); // use this.dataSource.data() if you are exporting all pages
 
     for (var i = 0; i < data.length; i++) {
        sheet.rows[i+1].cells[1].value = template(data[i]);
