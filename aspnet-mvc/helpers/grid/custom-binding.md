@@ -18,56 +18,63 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
 
         public ActionResult Index([DataSourceRequest(Prefix = "Grid")] DataSourceRequest request)
         {
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
         }
 2.  Assign a default pageSize:
 
-        public ActionResult Index([DataSourceRequest]DataSourceRequest request)
+        public ActionResult Index([DataSourceRequest(Prefix = "Grid")] DataSourceRequest request)
         {
             if (request.PageSize == 0)
             {
                request.PageSize = 10;
             }
 
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
         }
 3.  Handle the appropriate data operations:
 
-        public ActionResult Index([DataSourceRequest]DataSourceRequest request)
+        public ActionResult Index([DataSourceRequest(Prefix = "Grid")] DataSourceRequest request)
         {
             if (request.PageSize == 0)
             {
                 request.PageSize = 10;
             }
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
 
-            //Apply sorting
-            foreach (SortDescriptor sortDescriptor in request.Sorts)
+            if (request.Sorts.Any())
             {
-                if (sortDescriptor.SortDirection == ListSortDirection.Ascending)
+                foreach (SortDescriptor sortDescriptor in request.Sorts)
                 {
-                    switch (sortDescriptor.Member)
+                    if (sortDescriptor.SortDirection == ListSortDirection.Ascending)
                     {
-                        case "OrderID":
-                            orders= orders.OrderBy(order => order.OrderID);
-                            break;
-                        case "ShipAddress":
-                            orders= orders.OrderBy(order => order.ShipAddress);
-                            break;
+                        switch (sortDescriptor.Member)
+                        {
+                            case "OrderID":
+                                orders= orders.OrderBy(order => order.OrderID);
+                                break;
+                            case "ShipAddress":
+                                orders= orders.OrderBy(order => order.ShipAddress);
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        switch (sortDescriptor.Member)
+                        {
+                            case "OrderID":
+                                orders= orders.OrderByDescending(order => order.OrderID);
+                                break;
+                            case "ShipAddress":
+                                orders= orders.OrderByDescending(order => order.ShipAddress);
+                                break;
+                        }
                     }
                 }
-                else
-                {
-                    switch (sortDescriptor.Member)
-                    {
-                        case "OrderID":
-                            orders= orders.OrderByDescending(order => order.OrderID);
-                            break;
-                        case "ShipAddress":
-                            orders= orders.OrderByDescending(order => order.ShipAddress);
-                            break;
-                    }
-                }
+            }
+            else
+            {
+                // EF can't page unsorted data
+                orders = orders.OrderBy(o => o.OrderID);
             }
 
             // Apply paging
@@ -78,13 +85,13 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
         }
 4.  Calculate the total number of records.
 
-        public ActionResult Index([DataSourceRequest]DataSourceRequest request)
+        public ActionResult Index([DataSourceRequest(Prefix = "Grid")] DataSourceRequest request)
         {
             if (request.PageSize == 0)
             {
                 request.PageSize = 10;
             }
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
 
             //Apply sorting (code omitted)
 
@@ -109,15 +116,14 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
         }
 6.  Set `EnableCustomBinding(true)` through the Grid Widget declaration.
 
-        @(Html.Kendo().Grid<Kendo.Mvc.Examples.Models.Order>()
+        @model IEnumerable<KendoGridCustomServerBinding.Models.Order>
+
+        @(Html.Kendo().Grid(Model)
             .Name("Grid")
-            .EnableCustomBinding(true) // Enable custom binding
-            .BindTo(Model)
+            .EnableCustomBinding(true)
             .Columns(columns => {
-                columns.Bound(o => o.OrderID).Groupable(false);
-                columns.Bound(o => o.ShipCity);
-                columns.Bound(o => o.ShipCountry);
-                columns.Bound(o => o.ShipName);
+                columns.Bound(o => o.OrderID);
+                columns.Bound(o => o.ShipAddress);
             })
             .Pageable()
             .Sortable()
@@ -125,10 +131,11 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
         )
 7.  Assign the total number of records through the `DataSource`, in case paging is enabled.
 
-        @(Html.Kendo().Grid<Kendo.Mvc.Examples.Models.Order>()
+        @model IEnumerable<KendoGridCustomServerBinding.Models.Order>
+
+        @(Html.Kendo().Grid(Model)
             .Name("Grid")
             .EnableCustomBinding(true)
-            .BindTo(Model)
             .Columns(columns => {
                 columns.Bound(o => o.OrderID);
                 columns.Bound(o => o.ShipAddress);
@@ -142,6 +149,8 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
             )
         )
 
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/custom-server-binding)
+
 ## Custom ajax binding
 
 To configure the Kendo Grid for server custom binding follow these steps:
@@ -152,41 +161,50 @@ It will contain the current grid request information - page, sort, group and fil
 
         public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
         {
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
         }
 2. Handle the appropriate data operations and calculate the total number of records.
 
         public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
         {
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
 
             //Apply sorting
-            foreach (SortDescriptor sortDescriptor in request.Sorts)
+
+            if (request.Sorts.Any())
             {
-                if (sortDescriptor.SortDirection == ListSortDirection.Ascending)
+                foreach (SortDescriptor sortDescriptor in request.Sorts)
                 {
-                    switch (sortDescriptor.Member)
+                    if (sortDescriptor.SortDirection == ListSortDirection.Ascending)
                     {
-                        case "OrderID":
-                            orders= orders.OrderBy(order => order.OrderID);
-                            break;
-                        case "ShipAddress":
-                            orders= orders.OrderBy(order => order.ShipAddress);
-                            break;
+                        switch (sortDescriptor.Member)
+                        {
+                            case "OrderID":
+                                orders= orders.OrderBy(order => order.OrderID);
+                                break;
+                            case "ShipAddress":
+                                orders= orders.OrderBy(order => order.ShipAddress);
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        switch (sortDescriptor.Member)
+                        {
+                            case "OrderID":
+                                orders= orders.OrderByDescending(order => order.OrderID);
+                                break;
+                            case "ShipAddress":
+                                orders= orders.OrderByDescending(order => order.ShipAddress);
+                                break;
+                        }
                     }
                 }
-                else
-                {
-                    switch (sortDescriptor.Member)
-                    {
-                        case "OrderID":
-                            orders= orders.OrderByDescending(order => order.OrderID);
-                            break;
-                        case "ShipAddress":
-                            orders= orders.OrderByDescending(order => order.ShipAddress);
-                            break;
-                    }
-                }
+            }
+            else
+            {
+                // EF can't page unsorted data
+                orders = orders.OrderBy(o => o.OrderID);
             }
 
             var total = orders.Count();
@@ -202,7 +220,7 @@ It will contain the current grid request information - page, sort, group and fil
         public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
         {
             // Get the data (code omitted)
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
 
             // Apply sorting (code omitted)
 
@@ -220,7 +238,7 @@ It will contain the current grid request information - page, sort, group and fil
         public ActionResult Orders_Read([DataSourceRequest]DataSourceRequest request)
         {
             // Get the data (code omitted)
-            IQueryable<Order> orders = new NorthwindDataContext().Orders;
+            IQueryable<Order> orders = new NorthwindEntities().Orders;
 
             // Apply sorting (code omitted)
 
@@ -237,3 +255,22 @@ It will contain the current grid request information - page, sort, group and fil
             // Return the result as JSON
             return Json(result);
         }
+5. Congigure the grid for custom ajax binding
+
+        @(Html.Kendo().Grid<KendoGridCustomAjaxBinding.Models.Order>()
+            .Name("Grid")
+            .EnableCustomBinding(true)
+            .Columns(columns => {
+                columns.Bound(o => o.OrderID);
+                columns.Bound(o => o.ShipAddress);
+            })
+            .Pageable()
+            .Sortable()
+            .Scrollable()
+            .DataSource(dataSource => dataSource
+                .Ajax()
+                .Read("Orders_Read", "Home")
+            )
+        )
+
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/custom-ajax-binding)
