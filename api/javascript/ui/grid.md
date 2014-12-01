@@ -7424,6 +7424,10 @@ Fired when the user clicks the "Export to Excel" toolbar button.
 
 The widget instance which fired the event.
 
+##### e.data `Array`
+
+The array of data items used to create the Excel workbook. Available since the 2014.3.1205 version.
+
 ##### e.workbook `Object`
 
 The Excel [workbook configuration object](/api/javascript/ooxml/workbook#configuration). Used to initialize a `kendo.ooxml.Workbook` class. Modifications of the workbook will reflect in the output Excel document.
