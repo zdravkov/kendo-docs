@@ -16,20 +16,31 @@ For additional info check [Create Excel Documents](/framework/excel/introduction
 $("#grid").kendoGrid({
   toolbar: ["excel"],
   columns: [
-    { field: "productName", title: "Product Name" },
-    { field: "price", title: "Price", template: 'Price: #: kendo.format("{0:c}", price)#' }
+    { field: "ProductName", title: "Product Name" },
+    { field: "UnitPrice", title: "Price", template: 'Price: #: kendo.format("{0:c}", UnitPrice)#' }
   ],
-  dataSource: [
-    { productName: "Chai", price: 5.2 },
-    { productName: "Coffee", price: 3.8 }
-  ],
+  pageable: true,
+  dataSource: {
+    transport: {
+      read: {
+        url: "http://demos.telerik.com/kendo-ui/service/products",
+        dataType: "jsonp"
+      }
+    },
+    pageSize: 10
+  },
   excelExport: function(e) {
     var sheet = e.workbook.sheets[0];
     var template = kendo.template(this.columns[1].template);
-    var data = this.dataSource.view();
 
-    for (var i = 0; i < data.length; i++) {
-       sheet.rows[i+1].cells[1].value = template(data[i]);
+    for (var i = 1; i < sheet.rows.length; i++) {
+      var row = sheet.rows[i];
+
+      var dataItem = {
+         UnitPrice: row.cells[1].value
+      };
+
+      row.cells[1].value = template(dataItem);
     }
   }
 });
