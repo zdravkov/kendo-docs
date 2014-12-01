@@ -12,47 +12,50 @@ To bind the grid with data you just need to set its data source and render the v
 
 ##   Bind to the `Model` of the view:
 
-### Action
+### Controller
 
     public ActionResult Index()
     {
-        var products = new NorthwindDataContext().Products;
-
+        var northwind = new NorthwindEntities();
+        var products = northwind.Products;
         return View(products);
     }
 
-### WebForms View
+### View
 
-    <%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master"
-       Inherits="System.Web.Mvc.ViewPage<IEnumerable<MvcApplication1.Models.Product>>" %>
+```Razor
+@model IEnumerable<KendoGridServerBinding.Models.Product>
 
-    <%: Html.Kendo().Grid(Model) // Bind the grid to the Model property of the view
-            .Name("Grid")
-            .Columns(columns =>
-            {
-                columns.Bound(p => p.ProductID);   //Create a column bound to the "ProductID" property
-                columns.Bound(p => p.ProductName); //Create a column bound to the "ProductName" property
-                columns.Bound(p => p.UnitPrice);   //Create a column bound to the "UnitPrice" property
-                columns.Bound(p => p.UnitsInStock);//Create a column bound to the "UnitsInStock" property
-            })
-            .Pageable() //Enable paging
-    %>
+@(Html.Kendo().Grid(Model) // Bind the grid to the Model property of the view
+      .Name("Grid")
+      .Columns(columns =>
+      {
+          columns.Bound(p => p.ProductID);   //Create a column bound to the "ProductID" property
+          columns.Bound(p => p.ProductName); //Create a column bound to the "ProductName" property
+          columns.Bound(p => p.UnitPrice);   //Create a column bound to the "UnitPrice" property
+          columns.Bound(p => p.UnitsInStock);//Create a column bound to the "UnitsInStock" property
+      })
+     .Pageable() //Enable paging
+)
+```
+```ASPX
+<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master"
+   Inherits="System.Web.Mvc.ViewPage<IEnumerable<KendoGridServerBinding.Models.Product>>" %>
 
-### Razor View
+<%: Html.Kendo().Grid(Model) // Bind the grid to the Model property of the view
+        .Name("Grid")
+        .Columns(columns =>
+        {
+            columns.Bound(p => p.ProductID);   //Create a column bound to the "ProductID" property
+            columns.Bound(p => p.ProductName); //Create a column bound to the "ProductName" property
+            columns.Bound(p => p.UnitPrice);   //Create a column bound to the "UnitPrice" property
+            columns.Bound(p => p.UnitsInStock);//Create a column bound to the "UnitsInStock" property
+        })
+        .Pageable() //Enable paging
+%>
+```
 
-    @model IEnumerable<MvcApplication1.Models.Product>
-
-    @(Html.Kendo().Grid(Model) // Bind the grid to the Model property of the view
-          .Name("Grid")
-          .Columns(columns =>
-          {
-              columns.Bound(p => p.ProductID);   //Create a column bound to the "ProductID" property
-              columns.Bound(p => p.ProductName); //Create a column bound to the "ProductName" property
-              columns.Bound(p => p.UnitPrice);   //Create a column bound to the "UnitPrice" property
-              columns.Bound(p => p.UnitsInStock);//Create a column bound to the "UnitsInStock" property
-          })
-         .Pageable() //Enable paging
-    )
+[Download Visual Studio Project](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/server-binding)
 
 ##   Bind to an item from the `ViewData` or `ViewBag`:
 
