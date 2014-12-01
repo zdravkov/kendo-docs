@@ -37,11 +37,47 @@ data source is fired. By default the widget will bind to the data source specifi
 
 ### connectionDefaults `Object`
 
-Defines the connections configuration.
+Defines the defaults of the connections. Whenever a connection is created, the specified connectionDefaults will be used and merged with the (optional) configuration passed through the connection creation method.
+
+#### Example - typical connectionDefaults
+
+    $("#diagram").kendoDiagram({
+       shapes:[
+           {
+               id:"1",
+               content:{
+                   text: "Monday"
+               }
+           },
+           {
+               id:"2",
+               content:"Tuesday"
+           }
+       ],
+       connections:[
+           {
+               from: new Point(100,100),
+               to: new Point(100,300)
+           },
+           {
+               from: "1",
+               to: "2"
+           }
+       ],
+       connectionDefaults: {
+           stroke: {
+               color: "#979797",
+               width: 1
+           },
+           type:"polyline",
+           startCap: "FilledCircle",
+           endCap: "ArrowEnd"
+       }
+   });
 
 ### connectionDefaults.content `Object`
 
-Defines the shapes content settings.
+Defines the label displayed on the connection path.
 
 ### connectionDefaults.content.template `String|Function`
 
@@ -53,11 +89,11 @@ The fields which can be used in the template are:
 
 ### connectionDefaults.content.text `String`
 
-The text displayed for the connection.
+The static text displayed on the connection.
 
 ### connectionDefaults.editable `Boolean|Object` *(default: true)*
 
-Defines the shape editable options.
+Defines the editing behavior of the connections.
 
 ### connectionDefaults.editable.tools `Array`
 
@@ -86,11 +122,26 @@ Defines the hover configuration.
 
 ### connectionDefaults.hover.stroke `Object`
 
-Defines the hover stroke configuration.
+Defines the hover configuration.
 
 ### connectionDefaults.hover.stroke.color `String` *(default: "#70CAFF")*
 
 Defines the highlight color when the pointer is hovering over the connection.
+
+#### Example - turning the connection red on hover
+
+     connectionDefaults: {
+                hover: {
+                    stroke: {color: "red"}
+                },               
+                stroke: {
+                    color: "#979797",
+                    width: 4
+                },
+                type: "polyline",
+                startCap: "FilledCircle",
+                endCap: "ArrowEnd"
+            }
 
 ### connectionDefaults.selection `Object`
 
@@ -323,15 +374,114 @@ Defines the point y value.
 
 ### connectionsDataSource `Object|Array|kendo.data.DataSource`
 
-See the [dataSource field](#fields-dataSource).
+Defines the data source of the connections.
+
+#### Example - settings the connectionsDataSource and dynamic labelling
+
+Note that the 'from' and 'to' fields in the connectionsDataSource refer to the 'id' of the dataSource. The label on the connection is set via the [connectionsDefaults.content.template](connectionsDefaults-content-template).
+
+     $("#diagram").kendoDiagram({
+            dataSource: [
+                {id:"one", name:"One"},
+                {id:"two", name:"Two"},
+                {id:"five", name:"Five"},
+            ],
+            connectionsDataSource:[
+                {from:"one", to:"two", label: "plus one"},
+                {from:"one", to:"five", label: "plus three"}
+            ],
+            layout: {
+                type: "tree",
+                subtype: "right"
+            },
+            shapeDefaults: {
+                type: "circle",
+                content: {
+                    template: "#= name #"
+                },
+                width: 70,
+                height: 70,
+                hover: {
+                    fill: "Orange"
+                }
+            },
+            connectionDefaults: {
+                stroke: {
+                    color: "#979797",
+                    width: 1
+                },
+                type: "polyline",
+                startCap: "FilledCircle",
+                endCap: "ArrowEnd",
+                content:{
+                    template:"#= label#"
+                }
+            },
+
+            autoBind: true
+        });
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
-See the [dataSource field](#fields-dataSource).
+Defines the data source of the diagram.
+
+#### Example - defining a tree-diagram via the dataSource
+
+Note that the HierarchicalDataSource needs to be used to define a hierarchy.
+See also the connectionsDataSource example for other ways to define a diagram through a data source.
+
+     var dataSource = new kendo.data.HierarchicalDataSource({
+        data: [{
+            "name": "Telerik",
+            "items": [
+                {"name": "Kendo",
+                    "items":[
+                        {"name": "Tree"},
+                        {"name": "Chart"}
+                    ]
+                },
+                {"name": "Icenium"}
+            ]
+        }],
+        schema: {
+            model: {
+                children: "items"
+            }
+        }
+    });
+    $("#diagram").kendoDiagram({
+        dataSource:dataSource,
+        layout: {
+            type: "tree",
+            subtype: "radial"
+        },
+        shapeDefaults: {
+            type: "circle",
+            content: {
+                template: "#= name #"
+            },
+            width: 70,
+            height: 70,
+            hover: {
+                fill: "Orange"
+            }
+        },
+        connectionDefaults: {
+            stroke: {
+                color: "#979797",
+                width: 1
+            },
+            type: "polyline",
+            startCap: "FilledCircle",
+            endCap: "ArrowEnd"
+        },
+
+        autoBind: true
+    });
 
 ### editable `Boolean|Object` *(default: true)*
 
-Specifies the shape editable.
+Defines how the diagram behaves when the user attempts to edit shape content, create new connections, edit connection labels and so on.
 
 ### editable.connectionTemplate `String|Function`
 
@@ -575,6 +725,8 @@ Specifies the the toolbar tools. Predefined tools are:
 * "redo" - Executes again the previously undone action.
 * "rotateClockwise" - Selected items can be rotated clockwise. Default value for rotation is 90 degree.
 * "rotateAnticlockwise" - Selected items can be rotated anticlockwise. Default value for rotation is 90 degree.
+
+> If the toolbar or toolbar items are not visible, please make sure the Kendo stylesheets are included in the header.
 
 ### editable.tools.name `String`
 
