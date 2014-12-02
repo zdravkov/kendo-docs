@@ -1,5 +1,5 @@
 ---
-title: Extract DataSource
+title: Export DataSource
 page_title: Create Excel files directly from a DataSource
 description: This article shows how to create Excel document using a Kendo UI DataSource
 position: 7
@@ -9,7 +9,7 @@ position: 7
 
 Kendo UI API allows you to create Excel documents from any data set, and save them to a client machine. This way you can extract the data stored in a Kendo UI DataSource into an Excel file.
 
-## Extract DataSource to excel
+## Export DataSource to excel document
 
 To extract the DataSource to an Excel document (a.k.a. workbook) follow these steps:
 
