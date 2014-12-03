@@ -725,68 +725,6 @@ The DOM element that may have a Kendo UI instance attached to it.
 
 ## Fields
 
-### effects
-
-Collection of effects/animation related utilities.
-
-#### effects
-
-##### box `Function`
-
-returns the given element offset and dimensions
-
-###### kendo.effects.box Example
-    <div id="foo" style="position: absolute; top:10px; left: 10px; height: 200px; width: 200px"></div>
-
-    <script>
-        var fooBox = kendo.effects.box($("#foo"));
-        console.log(fooBox); // { top: 10, left: 10, width: 200, height: 200 }
-    </script>
-
-##### fillScale `Function`
-
-Determines the fill scale factor based on two elements' boxes.
-
-###### kendo.effects.fillScale Example
-    <div id="foo" style="position: absolute; top:10px; left: 10px; height: 200px; width: 200px"></div>
-    <div id="bar" style="position: absolute; top:10px; left: 10px; height: 100px; width: 50px"></div>
-
-    <script>
-        var fooBox = kendo.effects.box($("#foo")),
-        var barBox = kendo.effects.box($("#bar"));
-
-        console.log(kendo.effects.fillScale(bar, foo); // 0.5;
-    </script>
-
-##### fitScale `Function`
-
-Determines the fit scale factor based on two elements' boxes.
-
-###### kendo.effects.fitScale Example
-
-    <div id="foo" style="position: absolute; top:10px; left: 10px; height: 200px; width: 200px"></div>
-    <div id="bar" style="position: absolute; top:10px; left: 10px; height: 100px; width: 50px"></div>
-
-    <script>
-        var fooBox = kendo.effects.box($("#foo")),
-        var barBox = kendo.effects.box($("#bar"));
-
-        console.log(kendo.effects.fitScale(bar, foo); // 0.25;
-    </script>
-
-##### transformOrigin `Function`
-
-Determines the transform origin point based on two elements' boxes. The method is primarily used in zoom/transfer effects.
-
-###### kendo.effects.fitScale Example
-
-    <div id="foo" style="position: absolute; top:10px; left: 10px; height: 200px; width: 200px; border: 1px solid red;">foo</div>
-    <div id="bar" style="position: absolute; top:60px; left: 60px; height: 100px; width: 100px; border: 1px solid blue;">bar</div>
-
-    <script>
-        console.log(kendo.effects.transformOrigin(kendo.effects.box("#bar"), kendo.effects.box("#foo"))); // x: 101, y: 101
-    </script>
-
 ### keys
 
 A dictionary of special keys' ASCII codes, which can be accessed by user-friendly names, instead of their numeric values.
