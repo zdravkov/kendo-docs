@@ -78,4 +78,4 @@ digits) hex notation.  The `#` sign can be omitted.
 
 ### More options
 
-For more options please see the [API page](../../../api/web/color).
+For more options please see the [API page](../../api/javascript/color).
