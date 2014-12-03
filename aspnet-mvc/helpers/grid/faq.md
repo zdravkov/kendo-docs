@@ -427,6 +427,34 @@ use the `Model` method of the DataSource.
         })
      // -- removed for brevity
 
+### How do I create a helper method that renders a predefined widget which I can further configure?
+
+In many cases we want to avoid setting similar settings to all the places widget is used. Instead of defining same settings all over again we can create a helper method that wraps a Kendo widget which is already configured.
+
+We need to first create such extension method in a static class
+
+#### Example: Create custom helper that wraps the Grid configurator
+
+**C#**
+
+    public static class Extensions
+    {
+        public static GridBuilder<T> MyGrid<T>(this HtmlHelper helper)
+                where T: class
+                    {
+                        return helper.Kendo().Grid<T>()
+                                        .Scrollable();
+                    }
+    }
+
+**View code**
+
+    @using TheNamespaceOfTheExtensionsClass
+
+    @(Html.MyGrid.Name("foo")) //the Grid is already configured to be Scrollable
+
+> In case you want to avoid adding the `using` statement in every view this Html helper is used, then add namespace reference to the `Web.config` file inside the Views folder of your MVC project.
+
 ### How do I mark certain properties as read-only?
 
 By default all properties are readonly. Decorate the read-only properties with the [ReadOnly](http://msdn.microsoft.com/en-us/library/system.componentmodel.readonlyattribute.aspx) data annotation attribute or use the `Editable` configuration method.
