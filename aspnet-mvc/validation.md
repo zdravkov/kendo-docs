@@ -312,6 +312,18 @@ If the client-side validation does not prevent the form to be posted and the ser
 ###Globalized dates and numbers are not recognized as valid when using the Kendo Validator.
 The Kendo Validator uses the current Kendo culture to determine if a value is in a valid format. In order for the values to be recognized as valid, you should use the same culture on the client and on the server as described in the [Globalization](/aspnet-mvc/globalization#use-the-same-culture-on-the-server-and-client-side) documentation.
 
+If the above solution is not feasible, because a custom date format is used, then the build-in `mvcdate` rule that comes from `kendo.aspnetmvc.min.js` needs to be overriden.
+
+    <script src="../kendo/js/kendo.aspnetmvc.min.js"></script>
+    <script>
+        kendo.ui.validator.rules.mvcdate = function (input) {
+            //use the custom date format here
+            //kendo.parseDate - http://docs.telerik.com/kendo-ui/api/javascript/kendo#methods-parseDate
+
+            return input.val() === "" || kendo.parseDate(input.val(), "dd/MM/yyyy") !== null;
+        }
+    </script>
+
 ###Globalized dates and numbers are not recognized as valid when using the jQuery validation.
 The jQuery validation does not support globalized dates and numbers. In order for the values to be recognized as valid when using a not default culture, you should override the validator date and number methods.
 
