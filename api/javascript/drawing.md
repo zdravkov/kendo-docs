@@ -17,6 +17,7 @@ The operation is asynchronous and returns a [promise](http://api.jquery.com/Type
 The promise will be resolved with the root [Group](drawing/group) of the scene.
 
 #### Parameters
+
 ##### element `Element`
 The root DOM element to draw.
 
@@ -53,6 +54,7 @@ The promise will be resolved with a PNG image encoded as a [Data URI](https://de
 > Scene images must be of same origin or [CORS-enabled](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image).
 
 #### Parameters
+
 ##### group `kendo.drawing.Group`
 The root group containing all elements to export.
 
@@ -98,6 +100,7 @@ The promise will be resolved with a PDF file encoded as a [Data URI](https://dev
 > Scene images must be of same origin or [CORS-enabled](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image).
 
 #### Parameters
+
 ##### group `kendo.drawing.Group`
 The root group containing all elements to export.
 
@@ -134,6 +137,7 @@ The export operation is asynchronous and returns a [promise](http://api.jquery.c
 The promise will be resolved with a SVG document encoded as a [Data URI](https://developer.mozilla.org/en-US/docs/data_URIs).
 
 #### Parameters
+
 ##### group `kendo.drawing.Group`
 The root group containing all elements to export.
 
