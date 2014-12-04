@@ -31,6 +31,7 @@ The configuration options.
 Create a straight path from the given points.
 
 #### Parameters
+
 ##### points `Array`
 Array of [kendo.geometry.Point](../geometry/point) objects or [x, y] arrays.
 
@@ -42,6 +43,7 @@ Array of [kendo.geometry.Point](../geometry/point) objects or [x, y] arrays.
 Create a straight path from the given rectangle.
 
 #### Parameters
+
 ##### rect `kendo.geometry.Rect`
 The source rectangle to trace.
 

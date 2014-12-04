@@ -51,6 +51,7 @@ The South East extreme location.
 Tests if a location is contained within the extent.
 
 #### Parameters
+
 ##### location `kendo.dataviz.map.Location`
 The location to test for.
 
@@ -62,6 +63,7 @@ The location to test for.
 Tests if any of the locations is contained within the extent.
 
 #### Parameters
+
 ##### locations `Array`
 An array of [locations](location) to test for.
 
@@ -80,6 +82,7 @@ Returns the center of the extent.
 Grows the extent, if required, to contain the specified location.
 
 #### Parameters
+
 ##### location `kendo.dataviz.map.Location`
 The location to include in the extent.
 
@@ -88,6 +91,7 @@ The location to include in the extent.
 Grows the extent, if required, to contain all specified locations.
 
 #### Parameters
+
 ##### locations `Array`
 The locations to include in the extent.
 
@@ -110,6 +114,7 @@ Returns the four extreme locations of the extent as an array.
 Tests if the given extent overlaps with this instance.
 
 #### Parameters
+
 ##### extent `kendo.dataviz.map.Extent`
 The extent to test with.
 
