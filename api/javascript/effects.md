@@ -14,7 +14,7 @@ Calculates the offset and dimensions of the given element
 
 #### Parameters
 
-##### element `Element`
+##### element `HTMLElement`
 The element to calculate dimensions for.
 
 #### Returns
@@ -33,10 +33,10 @@ Determines the fill scale factor based on two elements' boxes.
 
 #### Parameters
 
-##### firstElement `Element`
+##### firstElement`HTMLElement`
 The first element.
 
-##### secondElement `Element`
+##### secondElement`HTMLElement`
 The second element.
 
 #### Returns
@@ -57,10 +57,10 @@ Determines the fit scale factor based on two elements' boxes.
 
 #### Parameters
 
-##### firstElement `Element`
+##### firstElement`HTMLElement`
 The first element.
 
-##### secondElement `Element`
+##### secondElement`HTMLElement`
 The second element.
 
 #### Returns
@@ -82,10 +82,10 @@ Determines the transform origin point based on two elements' boxes. The method i
 
 #### Parameters
 
-##### firstElement `Element`
+##### firstElement`HTMLElement`
 The first element.
 
-##### secondElement `Element`
+##### secondElement`HTMLElement`
 The second element.
 
 #### Returns
