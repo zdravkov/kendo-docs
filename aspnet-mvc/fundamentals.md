@@ -160,7 +160,13 @@ The `ToClientTemplate` method instructs the widget wrapper to escape its own scr
 ## CSS Bundling
 
 ASP.NET bundling allows multiple stylesheets to be combined on the web server, so that the browser loads them as a single file.
-When using this feature with the Kendo UI stylesheets, the **virtual location of the bundle must match the physical location of the Kendo UI CSS files**.
+
+> Internet Explorer versions 6-9 have various limitations with regard to the amount of CSS code. Those, which must be kept in mind when using CSS bundles are:
+>
+> * a stylesheet may contain up to 4095 CSS selectors;
+> * a stylesheet may be up to 250KB in size
+
+When using CSS bundling with the Kendo UI stylesheets, the **virtual location of the bundle must match the physical location of the Kendo UI CSS files**.
 This is because the image URLs in the Kendo UI themes are **relative** and the browser will search for the theme images depending on the virtual URL.
 
 Imagine the following scenario:
