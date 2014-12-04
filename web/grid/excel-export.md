@@ -16,6 +16,7 @@ Kendo UI Grid can export its data as Excel document since the Q3 2014 (2014.3.11
     - [Column Format](#column-format)
     - [Detail Template](#detail-template)
     - [Export Multiple Grids](#export-multiple-grids)
+- [Troubleshooting](#troubleshooting)
 - [Further Reading](#further-reading)
 
 ## Enable Excel Export
@@ -56,7 +57,6 @@ To enable Excel export include the corresponding toolbar command and configure t
 
 To initiate Excel export via code call the [saveAsExcel](/api/javascript/ui/grid.html#methods-saveAsExcel) method.
 
-> Important: Older browsers (IE9 and below, Safari) require the implementation of a [server proxy](/framework/save-files/introduction#browser-support).
 
 ## What is Exported
 
@@ -141,6 +141,46 @@ If the detail template contains another grid you can follow the [Detail Grid Exp
 ### Export Multiple Grids
 
 The [Multiple Grid Export](/web/grid/how-to/excel/multiple-grid-export) tutorial shows how to export multiple grids in a single Excel document. Each grid is exported in a separate Excel sheet.
+
+## Troubleshooting
+
+### JavaScript error that JSZip is not found
+
+Clicking the "Export to Excel" button or calling the `saveAsExcel` throws an exception if the JSZip JavaScript library isn't found. Including JSZip in the page solves the problem.
+Further info is available in the [Excel Export Introduction](/framework/excel/introduction#requirements)
+
+### Export does not work in Internet Explorer and Safari
+
+Internet Explorer versions below 10 and Safari can't save a file and require the implementation of a [server proxy](/framework/save-files/introduction#browser-support).
+Set the [proxyURL](/api/javascript/ui/grid#configuration-excel.proxyURL) option to specify the server proxy URL.
+
+#### Example - user server proxy
+
+    <div id="grid"></div>
+    <script>
+        $("#grid").kendoGrid({
+            toolbar: ["excel"],
+            excel: {
+                fileName: "Kendo UI Grid Export.xlsx",
+                proxyURL: "/proxy"
+            },
+            dataSource: {
+                type: "odata",
+                transport: {
+                    read: "http://demos.telerik.com/kendo-ui/service/Northwind.svc/Products"
+                },
+                pageSize: 7
+            },
+            sortable: true,
+            pageable: true,
+            columns: [
+                { width: 300, field: "ProductName", title: "Product Name" },
+                { field: "UnitsOnOrder", title: "Units On Order" },
+                { field: "UnitsInStock", title: "Units In Stock" }
+            ]
+        });
+    </script>
+
 
 ## Further Reading
 
