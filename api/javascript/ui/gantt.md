@@ -1216,138 +1216,9 @@ The width of the task list. Numeric values are treated as pixels.
 
 The configuration of the Gantt messages. Use this option to customize or localize the Gantt messages.
 
-### messages.views `Object`
-
-The configuration of the Gantt view messages. Use this option to customize or localize the Gantt view messages.
-
-### messages.views.day `String` *(default: "Day")*
-
-The text similar to "Day" displayed as Gantt "day" view title.
-
-#### Example
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [{
-         id: 1,
-         orderId: 0,
-         parentId: null,
-         title: "Task1",
-         start: new Date("2014/6/17 9:00"),
-         end: new Date("2014/6/17 11:00")
-      }],
-      messages: {
-        views: {
-          day: "Day view"
-        }
-      }
-    });
-    </script>
-
-### messages.views.week `String` *(default: "Week")*
-
-The text similar to "Week" displayed as Gantt "week" view title.
-
-#### Example
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [{
-         id: 1,
-         orderId: 0,
-         parentId: null,
-         title: "Task1",
-         start: new Date("2014/6/17 9:00"),
-         end: new Date("2014/6/17 11:00")
-      }],
-      messages: {
-        views: {
-          week: "Week view"
-        }
-      }
-    });
-    </script>
-
-### messages.views.month `String` *(default: "Month")*
-
-The text similar to "Month" displayed as Gantt "month" view title.
-
-#### Example
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [{
-         id: 1,
-         orderId: 0,
-         parentId: null,
-         title: "Task1",
-         start: new Date("2014/6/17 9:00"),
-         end: new Date("2014/6/17 11:00")
-      }],
-      messages: {
-        views: {
-          month: "Month view"
-        }
-      }
-    });
-    </script>
-
-### messages.views.year `String` *(default: "Year")*
-
-The text similar to "Year" displayed as Gantt "year" view title.
-
-#### Example
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [{
-         id: 1,
-         orderId: 0,
-         parentId: null,
-         title: "Task1",
-         start: new Date("2014/6/17 9:00"),
-         end: new Date("2014/6/17 11:00")
-      }],
-      messages: {
-        views: {
-          Year: "Year view"
-        }
-      }
-    });
-    </script>
-
 ### messages.actions `Object`
 
 The configuration of the Gantt action messages. Use this option to customize or localize the Gantt action messages.
-
-### messages.actions.append `String` *(default: "Add Task")*
-
-The text similar to "Append" displayed as Gantt "append" buttons.
-
-#### Example
-
-    <div id="gantt"></div>
-    <script>
-    $("#gantt").kendoGantt({
-      dataSource: [{
-         id: 1,
-         orderId: 0,
-         parentId: null,
-         title: "Task1",
-         start: new Date("2014/6/17 9:00"),
-         end: new Date("2014/6/17 11:00")
-      }],
-      messages: {
-        actions: {
-          append: "Add new Task"
-        }
-      }
-    });
-    </script>
 
 ### messages.actions.addChild `String` *(default: "Add Child")*
 
@@ -1374,9 +1245,9 @@ The text similar to "Add child" displayed as Gantt "add child" buttons.
     });
     </script>
 
-### messages.actions.insertBefore `String` *(default: "Add Above")*
+### messages.actions.append `String` *(default: "Add Task")*
 
-The text similar to "Add above" displayed as Gantt "add above" buttons.
+The text similar to "Append" displayed as Gantt "append" buttons.
 
 #### Example
 
@@ -1393,7 +1264,7 @@ The text similar to "Add above" displayed as Gantt "add above" buttons.
       }],
       messages: {
         actions: {
-          insertBefore: "Add Task Above"
+          append: "Add new Task"
         }
       }
     });
@@ -1424,9 +1295,34 @@ The text similar to "Add below" displayed as Gantt "add below" buttons.
     });
     </script>
 
+### messages.actions.insertBefore `String` *(default: "Add Above")*
+
+The text similar to "Add above" displayed as Gantt "add above" buttons.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        actions: {
+          insertBefore: "Add Task Above"
+        }
+      }
+    });
+    </script>
+
 ### messages.actions.pdf `String` *(default: "Export to PDF")*
 
-The text of "Export to PDF" button of the gantt toolbar.
+The text of "Export to PDF" button of the Gantt toolbar.
 
 #### Example
 
@@ -1445,6 +1341,549 @@ The text of "Export to PDF" button of the gantt toolbar.
       messages: {
         actions: {
           pdf: "PDF Export"
+        }
+      }
+    });
+    </script>
+
+### messages.cancel `String` *(default: "Cancel")*
+
+The text similar to "Cancel" displayed in Gantt.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        cancel: "Undo"
+      }
+    });
+    </script>
+
+### messages.deleteDependencyWindowTitle `String` *(default: "Delete dependency")*
+
+The text similar to "Delete dependency" displayed in Gantt dependency delete dialog.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        deleteDependencyWindowTitle: "Delete dependency?"
+      }
+    });
+    </script>
+
+### messages.deleteTaskWindowTitle `String` *(default: "Delete task")*
+
+The text similar to "Delete task" displayed in Gantt task delete dialog.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        deleteTaskWindowTitle: "Delete task?"
+      }
+    });
+    </script>
+
+### messages.destroy `String` *(default: "Delete")*
+
+The text similar to "Delete" displayed in Gantt.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        destroy: "Destroy"
+      }
+    });
+    </script>
+
+### messages.editor `Object`
+
+The configuration of the Gantt editor messages. Use this option to customize or localize the Gantt editor messages.
+
+### messages.editor.assignButton `String` *(default: "Assign")*
+
+The text similar to "Assign" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            assignButton:"Assign Resources"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.editorTitle `String` *(default: "Task")*
+
+The text similar to "Task" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            editorTitle:"Edit Task"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.end `String` *(default: "End")*
+
+The text similar to "End" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            end:"Task End"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.percentComplete `String` *(default: "Complete")*
+
+The text similar to "Complete" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            percentComplete:"Task Progress"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.resources `String` *(default: "Resources")*
+
+The text similar to "Resources" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            resources:"Task Resources"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.resourcesEditorTitle `String` *(default: "Resources")*
+
+The text similar to "Resources" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            resourcesEditorTitle:"Assign Task Resources"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.resourcesHeader `String` *(default: "Resources")*
+
+The text similar to "Resources" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            resourcesHeader:"Available Resources"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.start `String` *(default: "Start")*
+
+The text similar to "Start" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            start:"Task Start"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.title `String` *(default: "Title")*
+
+The text similar to "Title" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            title:"Task Title"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.editor.unitsHeader `String` *(default: "Units")*
+
+The text similar to "Units" displayed in Gantt task editor.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          editor: {
+            unitsHeader:"Resource Units"
+          }
+        }
+      }
+    });
+    </script>
+
+### messages.save `String` *(default: "Save")*
+
+The text similar to "Save" displayed in Gantt.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        save: "Update"
+      }
+    });
+    </script>
+
+### messages.views `Object`
+
+The configuration of the Gantt view messages. Use this option to customize or localize the Gantt view messages.
+
+### messages.views.day `String` *(default: "Day")*
+
+The text similar to "Day" displayed as Gantt "day" view title.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          day: "Day view"
+        }
+      }
+    });
+    </script>
+
+### messages.views.end `String` *(default: "End")*
+
+The text similar to "End" displayed in Gantt resize hint.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          end: "Task End"
+        }
+      }
+    });
+    </script>
+
+### messages.views.month `String` *(default: "Month")*
+
+The text similar to "Month" displayed as Gantt "month" view title.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          month: "Month view"
+        }
+      }
+    });
+    </script>
+
+### messages.views.start `String` *(default: "Start")*
+
+The text similar to "Start" displayed in Gantt resize hint.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          start: "Task Start"
+        }
+      }
+    });
+    </script>
+
+### messages.views.week `String` *(default: "Week")*
+
+The text similar to "Week" displayed as Gantt "week" view title.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          week: "Week view"
+        }
+      }
+    });
+    </script>
+
+### messages.views.year `String` *(default: "Year")*
+
+The text similar to "Year" displayed as Gantt "year" view title.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+         id: 1,
+         orderId: 0,
+         parentId: null,
+         title: "Task1",
+         start: new Date("2014/6/17 9:00"),
+         end: new Date("2014/6/17 11:00")
+      }],
+      messages: {
+        views: {
+          Year: "Year view"
         }
       }
     });
