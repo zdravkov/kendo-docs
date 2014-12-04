@@ -18,7 +18,7 @@ The promise will be resolved with the root [Group](drawing/group) of the scene.
 
 #### Parameters
 
-##### element `Element`
+##### element `HTMLElement`
 The root DOM element to draw.
 
 #### Returns
