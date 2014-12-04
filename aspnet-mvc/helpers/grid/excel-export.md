@@ -16,6 +16,7 @@ Kendo UI Grid can export its data as Excel document since the Q3 2014 (2014.3.11
     - [Column Format](#column-format)
     - [Detail Template](#detail-template)
     - [Export Multiple Grids](#export-multiple-grids)
+- [Troubleshooting](#troubleshooting)
 - [Further Reading](#further-reading)
 
 ## Enable Excel Export
@@ -143,6 +144,61 @@ If the detail template contains another grid you can follow the [Detail Grid Exp
 ### Export Multiple Grids
 
 The [Multiple Grid Export](/aspnet-mvc/helpers/grid/how-to/excel/multiple-grid-export) tutorial shows how to export multiple grids in a single Excel document. Each grid is exported in a separate Excel sheet.
+
+## Troubleshooting
+
+### JavaScript error that JSZip is not found
+
+Clicking the "Export to Excel" button or calling the `saveAsExcel` throws an exception if the JSZip JavaScript library isn't found. Including JSZip in the page solves the problem.
+Further info is available in the [Excel Export Introduction](/framework/excel/introduction#requirements)
+
+### Export does not work in Internet Explorer and Safari
+
+Internet Explorer versions below 10 and Safari can't save a file and require the implementation of a [server proxy](/framework/save-files/introduction#browser-support).
+Set the `ProxyURL` option to specify the server proxy URL.
+
+#### Example - user server proxy
+
+```Controller
+public class ProxyController
+{
+    [HttpPost]
+    public ActionResult Save(string contentType, string base64, string fileName)
+    {
+        var fileContents = Convert.FromBase64String(base64);
+
+        return File(fileContents, contentType, fileName);
+    }
+}
+```
+```Razor
+@(Html.Kendo().Grid<MvcApplication.Models.ProductViewModel>()
+    .Name("grid")
+    .ToolBar(tools => tools.Excel())
+    .Excel(excel => excel
+        .AllPages(true)
+        .ProxyURL(Url.Action("Save", "Proxy"))
+    )
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Read(read => read.Action("Products_Read", "Home"))
+    )
+)
+```
+```ASPX
+<%: Html.Kendo().Grid<MvcApplication.Models.ProductViewModel>()
+    .Name("grid")
+    .ToolBar(tools => tools.Excel())
+    .Excel(excel => excel
+        .AllPages(true)
+        .ProxyURL(Url.Action("Save", "Proxy"))
+    )
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Read(read => read.Action("Products_Read", "Home"))
+    )
+%>
+```
 
 ## Further Reading
 
