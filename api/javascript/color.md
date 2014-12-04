@@ -6,7 +6,23 @@ description: Documentation how to get started with the kendo.Color object. Find 
 
 # kendo.Color
 
-The `Color` object provides a representation of colors, with a set of utility functions.
+These objects can be used to manipulate colors.  You cannot instantiate a
+`Color` object directly, instead you should use `kendo.parseColor` or one of
+the functions below:
+
+    var red = kendo.Color.fromRGB(1, 0, 0, 1);
+    var blue = kendo.Color.fromBytes(0, 0, 255, 1);
+    var green = kendo.Color.fromHSV(120, 1, 1, 1);
+
+We support three color representations: as RGB (where the values are float
+numbers between 0 and 1), as Bytes (where values are integers between 0 and
+255) or as [HSV](http://en.wikipedia.org/wiki/HSL_and_HSV).  They all
+support transparency via the last argument, a float between 0 and 1.  If
+missing it will default to 1 (fully opaque).
+
+If you are not certain which representation is used internally for a
+particular color object, you can convert it to the one you need using one of
+the methods below.
 
 ## Methods
 
@@ -50,6 +66,77 @@ Compares two color objects for equality.
     var opaqueRed = kendo.Color.fromBytes(255,0,0,1);
     console.log(red.equals(opaqueRed)); // logs true
     </script>
+
+#### toHSV
+
+Returns the color in HSV representation.  As HSV object, it has the
+following properties:
+
+- `h` -- hue, an integer between 0 and 360
+- `s` -- saturation, floating point between 0 and 1
+- `v` -- value, floating point between 0 and 1
+- `a` -- alpha, floating point between 0 and 1
+
+This does not modify the current object, it creates a new one instead.
+
+#### Returns
+`Object` An object with h, s, v and a fields.
+
+#### toRGB
+
+Returns the color in RGB representation.  The result has the following
+properties:
+
+- `r` -- red component as floating point between 0 and 1
+- `g` -- green component
+- `b` -- blue component
+- `a` -- alpha
+
+This does not modify the current object, it creates a new one instead.
+
+#### Returns
+`Object` An object with r, g, b and a fields.
+
+#### toBytes
+
+Returns the color in "Bytes" representation.  It has the same properties as
+RGB, but `r`, `g` and `b` are integers between 0 and 255 instead of floats.
+
+This does not modify the current object, it creates a new one instead.
+
+#### Returns
+`Object` An object with r, g and b fields.
+
+#### toHex
+
+Returns a string in `"FF0000"` form (without a leading `#`).
+
+#### Returns
+`String` The color in hex notation.
+
+#### toCss
+
+Like `toHex`, but includes a leading `#`.
+
+#### Returns
+`String` The color in CSS notation.
+
+#### toCssRgba
+
+Returns the color in RGBA notation (includes the opacity).
+
+#### Returns
+`String` The color in RGBA notation.
+
+#### toDisplay
+
+Returns the color in the best notation supported by the current browser.  In
+IE < 9 this returns the `#FF0000` form; in all other browsers it returns the
+RGBA form.
+
+#### Returns
+`String` The color in the best notation supported by the current browser.
+
 
 ## Static Methods
 
