@@ -90,7 +90,21 @@ When the Grid has a height set, it calculates the appropriate height of its scro
 In some special scenarios, it is possible to set a height style (via Javascript or external CSS) to the Grid's scrollable data area, which is a `div.k-grid-content` element.
 In this case, please do not set height to the Grid.
 
-### Making the Grid 100% high and auto resizable
+### Allow the Grid height to vary within certain limits
+
+It is possible to make the Grid expand and shrink vertically, according to the number of its rows, but within certain limits.
+To achieve this, do not set any Grid height and apply a min and/or max height style to the scrollable data area.
+Do not forget to [remove the default data area height](/aspnet-mvc/helpers/grid/configuration#scrolling) if using the MVC wrapper.
+
+    #GridID .k-grid-content
+    {
+        min-height: 100px;
+        max-height: 400px;
+    }
+
+You can use the `.k-grid` class instead of the Grid ID to target all widget instances.
+
+### Make the Grid 100% high and auto resizable
 
 This section is applicable to **scrollable** Grids only.
 
@@ -120,7 +134,7 @@ The `resize` method will work for Kendo UI versions **Q3 2013 or later**. For ol
         gridElement.children(".k-grid-content").height(newHeight - otherElementsHeight);
     });
 
-## Initializing the Grid inside a hidden container
+## Initialize the Grid inside a hidden container
 
 Depending on the Grid configuration, the widget may need to perform Javascript calculations to adjust its layout during initialization
 (e.g. when scrolling, virtual scrolling or frozen columns are used). Generally, Javascript size calculations don't work for elements,
@@ -176,18 +190,32 @@ This will prevent undesired side effects if the browser window size is reduced t
 
     /* How to apply minimum width to the Grid when scrolling is disabled */
 
-    #GridID /* or use the .k-grid class to apply to all Grids */
+    #GridID
     {
         min-width: 800px;
     }
 
-    /* How to apply minimum width to the Grid tables when scrolling is enabled */
+    /* How to apply minimum width to the Grid tables when scrolling is enabled and nested tables (hierarchy) ARE NOT USED */
 
     #GridID .k-grid-header-wrap > table, /* header table */
-    #GridID .k-grid-content > table, /* data table, no virtual scrolling */
-    #GridID .k-virtual-scrollable-wrap > table /* data table, with virtual scrolling */
+    #GridID .k-grid-content table, /* data table, no virtual scrolling */
+    #GridID .k-virtual-scrollable-wrap table /* data table, with virtual scrolling */
     {
         min-width: 800px;
+    }
+    
+    /* How to apply minimum width to the Grid tables when scrolling is enabled and nested tables (hierarchy) ARE USED */
+
+    #GridID .k-grid-header-wrap > table, /* header table */
+    #GridID .k-grid-content table, /* data table, no virtual scrolling */
+    #GridID .k-virtual-scrollable-wrap table /* data table, with virtual scrolling */
+    {
+        min-width: 800px;
+    }
+    #GridID .k-grid-content table table, /* data table, no virtual scrolling */
+    #GridID .k-virtual-scrollable-wrap table table /* data table, with virtual scrolling */
+    {
+        min-width: initial;
     }
 
 Using the Grid ID (Name) in the above selectors is optional, so that the styles are applied to a particular Grid instance only.
