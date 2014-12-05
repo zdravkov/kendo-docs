@@ -575,6 +575,50 @@ If set to `true` the user could sort this column by clicking its header cells. B
     });
     </script>
 
+### currentTimeMarker `Boolean|Object`
+
+If set to `false` the "current time" marker of the Gantt would not be displayed.
+
+#### Example - disable "current time" marker
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date(),
+        end: kendo.date.addDays(new Date(), 1)
+      }],
+      currentTimeMarker: false,
+      views: [ "day", "week", "month" ]
+    });
+    </script>
+
+### currentTimeMarker.updateInterval `Number` *(default: 10000)*
+
+The update interval of the "current time" marker, in milliseconds.
+
+#### Example - set the update interval of the "current time" marker
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date(),
+        end: kendo.date.addDays(new Date(), 1)
+      }],
+      currentTimeMarker: {
+        updateInterval: 100
+      },
+      views: [ "day", "week", "month" ]
+    });
+    </script>
+
 ### dataSource `Object|Array|kendo.data.GanttDataSource`
 
 The data source of the widget which contains the tasks. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.GanttDataSource](/api/framework/ganttdatasource)
