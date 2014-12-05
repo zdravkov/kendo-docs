@@ -6464,7 +6464,7 @@ The data source to which the widget should be bound.
 
 Sets the options of the Grid. Use this method if you want to enable/disable a particular feature/option or to loadcomplete state retrieved from the getOptions method.
 
-> Important limitation when using setOptions method in combination with the MVC wrappers is that any toolbar or header server templates (razor syntax @<text></text>) will be lost and the layout will become incorrect once the method is invoked. Those options cannot be persisted because there is no JavaScript equivalent option for them since they contain server side logic. Consider using JavaScript initialization (instead MVC wrapper). Another option is to specify the same option with the JavaScrpt equivalent.
+> Important limitation when using setOptions method in combination with the MVC wrappers is that any toolbar or header server templates (razor syntax @<text></text>) will be lost and the layout will become incorrect once the method is invoked. Those options cannot be persisted because there is no JavaScript equivalent option for them since they contain server side logic. Consider using JavaScript initialization (instead MVC wrapper). Another option is to specify the same option with the JavaScript equivalent.
 
 #### Parameters
 
