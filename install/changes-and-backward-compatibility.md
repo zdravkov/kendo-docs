@@ -9,7 +9,7 @@ previous_url: /changes-and-backward-compatibility
 
 ## Kendo UI 2014 Q3
 
-### Changes from 2014 Q3
+### Changes from 2014 Q2 SP2 (2014.2.1008)
 
 #### Breaking changes
 
