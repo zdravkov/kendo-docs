@@ -4098,6 +4098,8 @@ The type of the request. Set to "create", "read", "update" or "destroy".
     dataSource.fetch();
     </script>
 
+> The requestEvent does not hold information regarding any errors occured during the request. The error information is availale as part of the error event.
+
 ### requestStart
 
 Fired when the data source makes a remote service request.
