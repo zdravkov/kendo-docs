@@ -149,7 +149,7 @@ var dojoApi = (function($) {
         showHintButton: function (element, text) {
             element = $(element);
 
-            $("<button>")
+            $("<button type='button'>")
                 .text(text)
                 .addClass("btn btn-action dojo-submit-button")
                 .insertBefore(element);
