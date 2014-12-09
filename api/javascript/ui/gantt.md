@@ -2781,6 +2781,33 @@ The [template](/api/framework/kendo#methods-template) used to render the year sl
     });
     </script>
 
+### views.resizeTooltipFormat `String`
+
+The format used to display the start and end dates in the resize tooltip.
+
+#### Example
+
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      dataSource: [{
+        id: 1,
+        orderId: 0,
+        parentId: null,
+        title: "Task1",
+        start: new Date("2014/6/17"),
+        end: new Date("2014/6/18")
+      }],
+      snap: false,
+      views: [
+        {
+          type: "week",
+          resizeTooltipFormat: "yyyy/M/dd h:mm"
+        },
+      ]
+    });
+    </script>
+
 ### resources `Object`
 
 The configuration of the gantt resource(s). A gantt resource is optional metadata that can be associated
