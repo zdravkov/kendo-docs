@@ -85,4 +85,6 @@ The example below demonstrates how to enable sorting by text in ForeignKey colum
             dataSource: categories
           });
         }
+      </script>
+    </div>
 ```
