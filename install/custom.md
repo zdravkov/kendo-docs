@@ -95,7 +95,6 @@ The following script files, either minified or not, can be included on a per-wid
   - [Notification](#notification)
   - [NumericTextBox](#numerictextbox)
   - [PanelBar](#panelbar)
-  - [PivotConfigurator](#pivotconfigurator)
   - [PivotGrid](#pivotgrid)
   - [ProgressBar](#progressbar)
   - [Scheduler](#scheduler)
@@ -449,21 +448,6 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.core.js
 1. kendo.panelbar.js
 
-### PivotConfigurator
-1. jquery.js
-1. kendo.core.js
-1. kendo.data.js
-1. kendo.popup.js
-1. kendo.list.js
-1. kendo.dropdownlist.js
-1. kendo.userevents.js
-1. kendo.draganddrop.js
-1. kendo.treeview.js
-1. kendo.menu.js (PivotConfigurator Filtering feature)
-1. kendo.window.js (PivotConfigurator Filtering feature)
-1. kendo.pivot.fieldmenu.js (PivotConfigurator Filtering feature)
-1. kendo.pivotgrid.configurator.js
-
 ### PivotGrid
 1. jquery.js
 1. kendo.core.js
@@ -473,19 +457,27 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.sortable.js
-1. kendo.fx.js (Mobile scroller feature)
-1. kendo.mobile.scroller.js (Mobile scroller feature)
-1. kendo.popup.js (PivotGrid Filtering feature)
-1. kendo.menu.js (PivotGrid Filtering feature)
-1. kendo.window.js (PivotGrid Filtering feature)
-1. kendo.treeview.js (PivotGrid Filtering feature)
-1. kendo.list.js (PivotGrid Filtering feature)
-1. kendo.dropdownlist.js (PivotGrid Filtering feature)
-1. kendo.pivot.fieldmenu.js (PivotGrid Filtering feature)
+1. kendo.popup.js (Configurator feature)
+1. kendo.list.js (Configurator feature)
+1. kendo.dropdownlist.js (Configurator feature)
+1. kendo.treeview.js (Configurator feature)
+1. kendo.menu.js (Configurator feature)
+1. kendo.window.js (Configurator feature)
+1. kendo.pivot.fieldmenu.js (Configurator feature)
+1. kendo.pivot.configurator.js (Configurator feature)
+1. kendo.popup.js (Filtering feature)
+1. kendo.menu.js (Filtering feature)
+1. kendo.window.js (Filtering feature)
+1. kendo.treeview.js (Filtering feature)
+1. kendo.list.js (Filtering feature)
+1. kendo.dropdownlist.js (Filtering feature)
+1. kendo.pivot.fieldmenu.js (Filtering feature)
 1. kendo.ooxml.js (Excel export feature)
 1. kendo.pdf.js (PDF export feature)
 1. kendo.color.js (PDF export feature)
 1. kendo.drawing.js (PDF export feature)
+1. kendo.fx.js (Mobile scroller feature)
+1. kendo.mobile.scroller.js (Mobile scroller feature)
 1. kendo.pivotgrid.js
 
 ### ProgressBar
