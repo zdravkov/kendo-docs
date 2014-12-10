@@ -173,6 +173,7 @@ Shared components providing behaviors, data access and other services
 ### Drawing API
 1. jquery.js
 1. kendo.core.js
+1. kendo.color.js
 1. kendo.pdf.js (PDF export feature)
 1. kendo.drawing.js
 
@@ -230,6 +231,7 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 ### Color tools
 1. jquery.js
 1. kendo.core.js
+1. kendo.color.js
 1. kendo.popup.js
 1. kendo.userevents.js
 1. kendo.draganddrop.js
@@ -287,6 +289,7 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.userevents.js
 1. kendo.draganddrop.js
 1. kendo.window.js
+1. kendo.color.js
 1. kendo.slider.js
 1. kendo.colorpicker.js
 1. kendo.selectable.js (Image Browser feature)
@@ -383,8 +386,10 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.mobile.popover.js (Grid adaptive rendering feature)
 1. kendo.mobile.shim.js (Grid adaptive rendering feature)
 1. kendo.mobile.actionsheet.js (Grid adaptive rendering feature)
+1. kendo.ooxml.js (Excel export feature)
 1. kendo.excel.js (Excel export feature)
 1. kendo.pdf.js (PDF export feature)
+1. kendo.color.js (PDF export feature)
 1. kendo.drawing.js (PDF export feature)
 1. kendo.grid.js
 
@@ -447,16 +452,12 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 ### PivotConfigurator
 1. jquery.js
 1. kendo.core.js
-1. kendo.dom.js
 1. kendo.data.js
-1. kendo.data.xml.js
-1. kendo.userevents.js
-1. kendo.draganddrop.js
-1. kendo.sortable.js
-1. kendo.pivotgrid.js
 1. kendo.popup.js
 1. kendo.list.js
 1. kendo.dropdownlist.js
+1. kendo.userevents.js
+1. kendo.draganddrop.js
 1. kendo.treeview.js
 1. kendo.menu.js (PivotConfigurator Filtering feature)
 1. kendo.window.js (PivotConfigurator Filtering feature)
@@ -474,7 +475,6 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.sortable.js
 1. kendo.fx.js (Mobile scroller feature)
 1. kendo.mobile.scroller.js (Mobile scroller feature)
-1. kendo.pivotgrid.js (PivotGrid Filtering feature)
 1. kendo.popup.js (PivotGrid Filtering feature)
 1. kendo.menu.js (PivotGrid Filtering feature)
 1. kendo.window.js (PivotGrid Filtering feature)
@@ -482,6 +482,10 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.list.js (PivotGrid Filtering feature)
 1. kendo.dropdownlist.js (PivotGrid Filtering feature)
 1. kendo.pivot.fieldmenu.js (PivotGrid Filtering feature)
+1. kendo.ooxml.js (Excel export feature)
+1. kendo.pdf.js (PDF export feature)
+1. kendo.color.js (PDF export feature)
+1. kendo.drawing.js (PDF export feature)
 1. kendo.pivotgrid.js
 
 ### ProgressBar
@@ -522,6 +526,7 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.mobile.shim.js (Scheduler adaptive rendering feature)
 1. kendo.mobile.actionsheet.js (Scheduler adaptive rendering feature)
 1. kendo.pdf.js (PDF export feature)
+1. kendo.color.js (PDF export feature)
 1. kendo.drawing.js (PDF export feature)
 1. kendo.scheduler.js
 
@@ -589,8 +594,10 @@ Desktop UI Widgets for mobile-ready Web Sites and Applications
 1. kendo.window.js (Editing feature)
 1. kendo.userevents.js (Selection feature)
 1. kendo.selectable.js (Selection feature)
+1. kendo.ooxml.js (Excel export feature)
 1. kendo.excel.js (Excel export feature)
 1. kendo.pdf.js (PDF export feature)
+1. kendo.color.js (PDF export feature)
 1. kendo.drawing.js (PDF export feature)
 1. kendo.treelist.js
 
@@ -626,8 +633,9 @@ Data Visualization Widgets for Desktop and Mobile web apps
 ### Barcode
 1. jquery.js
 1. kendo.core.js
-1. kendo.dataviz.core.js
+1. kendo.color.js
 1. kendo.drawing.js
+1. kendo.dataviz.core.js
 1. kendo.dataviz.barcode.js
 
 ### Chart
@@ -635,7 +643,7 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.core.js
 1. kendo.data.js
 1. kendo.userevents.js
-1. kendo.pdf.js (PDF export feature)
+1. kendo.color.js
 1. kendo.drawing.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.themes.js
@@ -643,6 +651,7 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.dataviz.chart.polar.js (Polar & Radar feature)
 1. kendo.dataviz.chart.js (Funnel chart feature)
 1. kendo.dataviz.chart.funnel.js (Funnel chart feature)
+1. kendo.pdf.js (PDF export feature)
 1. kendo.dataviz.chart.js
 
 ### Diagram
@@ -653,16 +662,30 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.fx.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
-1. kendo.dataviz.core.js
-1. kendo.pdf.js (PDF export feature)
+1. kendo.color.js
 1. kendo.drawing.js
+1. kendo.dataviz.core.js
+1. kendo.dataviz.themes.js
+1. kendo.toolbar.js
+1. kendo.pdf.js (PDF export feature)
+1. kendo.calendar.js (Editing feature)
+1. kendo.popup.js (Editing feature)
+1. kendo.datepicker.js (Editing feature)
+1. kendo.numerictextbox.js (Editing feature)
+1. kendo.validator.js (Editing feature)
+1. kendo.binder.js (Editing feature)
+1. kendo.editable.js (Editing feature)
+1. kendo.window.js (Editing feature)
+1. kendo.list.js (Editing feature)
+1. kendo.dropdownlist.js (Editing feature)
 1. kendo.dataviz.diagram.js
 
 ### Gauge
 1. jquery.js
 1. kendo.core.js
-1. kendo.dataviz.core.js
+1. kendo.color.js
 1. kendo.drawing.js
+1. kendo.dataviz.core.js
 1. kendo.dataviz.themes.js
 1. kendo.dataviz.gauge.js
 
@@ -673,8 +696,9 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.userevents.js
 1. kendo.popup.js
 1. kendo.tooltip.js
-1. kendo.dataviz.core.js
+1. kendo.color.js
 1. kendo.drawing.js
+1. kendo.dataviz.core.js
 1. kendo.fx.js
 1. kendo.draganddrop.js
 1. kendo.mobile.scroller.js
@@ -683,8 +707,9 @@ Data Visualization Widgets for Desktop and Mobile web apps
 ### QRCode
 1. jquery.js
 1. kendo.core.js
-1. kendo.dataviz.core.js
+1. kendo.color.js
 1. kendo.drawing.js
+1. kendo.dataviz.core.js
 1. kendo.dataviz.qrcode.js
 
 ### Sparkline
@@ -692,6 +717,7 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.core.js
 1. kendo.data.js
 1. kendo.userevents.js
+1. kendo.color.js
 1. kendo.drawing.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.themes.js
@@ -703,6 +729,7 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.core.js
 1. kendo.data.js
 1. kendo.userevents.js
+1. kendo.color.js
 1. kendo.drawing.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.themes.js
@@ -714,6 +741,8 @@ Data Visualization Widgets for Desktop and Mobile web apps
 1. kendo.core.js
 1. kendo.data.js
 1. kendo.userevents.js
+1. kendo.color.js
+1. kendo.drawing.js
 1. kendo.dataviz.core.js
 1. kendo.dataviz.themes.js
 1. kendo.dataviz.treeMap.js
@@ -889,5 +918,4 @@ Supplementary scripts for integration with server-side technologies
 1. kendo.multiselect.js
 1. kendo.validator.js
 1. kendo.aspnetmvc.js
-
 
