@@ -23,7 +23,7 @@ When an input element is disabled the end user cannot change its value (type in 
         isNameDisabled: false,
         name: "John Doe",
         disableInput: function() {
-            this.set("isNameDisabled", false);
+            this.set("isNameDisabled", true);
         }
     });
 
@@ -33,7 +33,7 @@ When an input element is disabled the end user cannot change its value (type in 
 
 In this example the input element will be initially enabled because the value of the `isNameDisabled` field
 is `false`. When the user presses the button the input will be disabled because the value of the `isNameDisabled`
-field is set to `false`.
+field is set to `true`.
 
 ## Non-boolean values
 
