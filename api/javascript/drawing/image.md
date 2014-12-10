@@ -71,6 +71,14 @@ The element clipping path.
 `kendo.drawing.Path` The current element clipping path.
 
 
+### clippedBBox
+Returns the bounding box of the element with clipping and transformations applied.
+Inherited from [Element.clippedBBox](element#methods-clippedBBox)
+
+#### Returns
+`kendo.geometry.Rect` The bounding box of the element with clipping transformations applied.
+
+
 ### opacity
 Gets or sets the element opacity.
 Inherited from [Element.opacity](element#methods-opacity)

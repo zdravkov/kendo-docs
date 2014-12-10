@@ -117,6 +117,15 @@ The element clipping path.
 `kendo.drawing.Path` The current element clipping path.
 
 
+### clippedBBox
+Returns the bounding box of the element with clipping and transformations applied.
+
+This is the rectangle that will fit around the actual rendered element.
+
+#### Returns
+`kendo.geometry.Rect` The bounding box of the element with clipping and transformations applied.
+
+
 ### opacity
 Gets or sets the element opacity.
 
