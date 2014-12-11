@@ -26,7 +26,7 @@ In this example the `src` and `alt` attributes of the image are bound to the Vie
     <img id="logo" src="http://www.telerik.com/image/kendo-logo.png" alt="Kendo Logo"" />
 
 
-Changing the `imageSource` or `imageSource` fields would update the `src` and `alt` attributes respectively.
+Changing the `imageSource` or `imageAlt` fields would update the `src` and `alt` attributes respectively.
 
 ### Important: value and checked attribute binding
 
