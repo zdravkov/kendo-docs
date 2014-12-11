@@ -103,7 +103,7 @@ This is the binding constructor. If this function is overriden the base Binder c
 
 ### refresh
 
-The `refresh` handler is responsible for updating the HTML element. It will be executed each time when the value of the bound MVVM field chandes. The bound DOM element and attached MVVM bindings could be retrieved through the context of the function.
+The `refresh` handler is responsible for updating the HTML element. It will be executed each time when the value of the bound MVVM field changes. The bound DOM element and attached MVVM bindings could be retrieved through the context of the function.
 
     refresh: function() {
         this.bindings //contains all bindings for the current element
@@ -116,7 +116,7 @@ The `change` handler is responsible for updating the View-Model. It listens for 
 
     change: function() {
         this.bindings //contains all bindings for the current element
-        this.element //reference the to the DOM element
+        this.element //reference to the DOM element
     }
 
 ### bindings - methods
