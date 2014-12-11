@@ -11,6 +11,7 @@ The example below demonstrates how to enable sorting by text in ForeignKey colum
 #### Example:
 
 ```html
+
     <script src="http://demos.telerik.com/kendo-ui/content/shared/js/products.js" type="text/javascript"></script>
     <div id="example">
       <div id="grid"></div>
