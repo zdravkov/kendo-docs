@@ -1507,6 +1507,8 @@ If function is assigned, the current path and image name will be provided.
 
 The URL which will handle the upload of the new images. If not specified the Upload button will not be displayed.
 
+The requirements for this handler are the same as for the [save handler](/web/upload/modes#save-handler) in the Upload widget.
+
 #### Example
 
     <textarea id="editor"></textarea>
