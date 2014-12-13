@@ -134,6 +134,8 @@ The `resize` method will work for Kendo UI versions **Q3 2013 or later**. For ol
         gridElement.children(".k-grid-content").height(newHeight - otherElementsHeight);
     });
 
+The "[How to resize the Grid when the window is resized](/web/grid/how-to/Layout/resize-grid-when-the-window-is-resized)" documentation page contains a runnable example of the discussed scenario.
+
 ## Initialize the Grid inside a hidden container
 
 Depending on the Grid configuration, the widget may need to perform Javascript calculations to adjust its layout during initialization
