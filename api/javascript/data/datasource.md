@@ -3654,7 +3654,8 @@ option is set to `true`.
 
 Reads data items from a remote service (if the [transport](#configuration-transport) option is set) or from a JavaScript array (if the [data](#configuration-data) option is set).
 
-> The `read` method always makes a request to the remote service.
+> The `read` method always makes a request to the remote service, unless the Data Source is [offline](#methods-online).
+offline.
 
 #### Parameters
 
