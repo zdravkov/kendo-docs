@@ -119,6 +119,10 @@ navigation:
         title: "Sparkline"
     "*stockchart":
         title: "StockChart"
+    "*map":
+        title: "Map"
+    "*diagram":
+        title: "Diagram"
     "*hierarchicaldatasource":
         title: "HierarchicalDataSource"
     "*datasource":
