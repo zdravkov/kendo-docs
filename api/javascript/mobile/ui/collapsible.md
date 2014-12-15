@@ -118,9 +118,9 @@ Collapses the content.
 
 #### Parameters
 
-##### instant `Boolean` *optional*
+##### instant `Boolean`
 
-When set to true the collapse action will be performed without animation.
+Optional. When set to true the collapse action will be performed without animation.
 
 #### Example
 
