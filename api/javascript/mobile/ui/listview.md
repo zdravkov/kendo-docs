@@ -747,6 +747,53 @@ Specifies the comparison operator used in the filter expression. The operator mu
     new kendo.mobile.Application();
     </script>
 
+### virtualViewSize `Number`
+
+ Used when virtualization of local data is used. This configuration is needed to determine the items displayed, since the datasource does not (and should not) have paging set.
+ 
+#### Example - virtualization using local data
+
+    <script src="../content/shared/js/products.js"></script>
+    <div data-role="view" data-init="mobileListViewLocalFiltering" data-title="Products">
+      <ul id="local-filterable-listview"></ul>
+    </div>
+
+    <script type="text/x-kendo-tmpl" id="mobile-listview-filtering-template">
+        <h3>#:ProductName#</h3>
+    </script>
+
+    <script>
+      function mobileListViewLocalFiltering() {
+        var dataSource = new kendo.data.DataSource({
+          data: products,
+          schema: {
+            model: {
+              fields: {
+                ProductName: { type: "string" },
+                UnitPrice: { type: "number" },
+                UnitsInStock: { type: "number" },
+                Discontinued: { type: "boolean" }
+              }
+            }
+          }
+        });
+
+        $("#local-filterable-listview").kendoMobileListView({
+          dataSource: dataSource,
+          template: $("#mobile-listview-filtering-template").text(),
+          filterable: {
+            field: "ProductName",
+            operator: "startswith"
+          },
+          virtualViewSize: 100, // this configuration is needed to determine the items displayed, since the datasource does not (and should not) have paging set.
+          endlessScroll: true
+        });
+      }
+    </script>
+    <script>
+      var app = new kendo.mobile.Application(document.body);
+    </script>
+
 ## Methods
 
 ### append
