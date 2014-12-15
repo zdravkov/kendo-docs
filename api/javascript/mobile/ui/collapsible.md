@@ -77,7 +77,7 @@ Sets the icon for the header of the collapsible widget when it is in a collapsed
         }
     </style>
 
-### collapseIcon `String`*(default: "plus")*
+### expandIcon `String`*(default: "plus")*
 
 Sets the icon for the header of the collapsible widget when it is in a expanded state.
 
