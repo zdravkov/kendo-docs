@@ -1,4 +1,3 @@
-
 ---
 title: PivotConfigurator overview
 page_title: Overview of the Kendo UI PivotConfigurator widget
