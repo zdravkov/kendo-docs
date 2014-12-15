@@ -326,6 +326,36 @@ Clears ListView selected items and triggers change event.
     listView.clearSelection();
     </script>
 
+### dataItem
+
+Returns the specified data item.
+
+#### Parameters
+
+##### row `String|Element|jQuery`
+
+A string, DOM element or jQuery object which represents the listview item. A string is treated as a jQuery selector.
+
+#### Returns
+
+`kendo.data.ObservableObject` the data item to which the specified listview item is bound. [More information about the ObservableObject type...](/api/framework/observableobject)
+
+#### Example - get the data item to which the first listview element is bound
+
+    <div id ="listView"></div>
+    <script>
+      var dataSource = new kendo.data.DataSource({
+        data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+      });
+      var listview = $("#listView").kendoListView({
+        dataSource: dataSource,
+        template: "<div>#:name#</div>"
+      }).data("kendoListView")
+
+      var row = $('#listView > div').first();
+      console.log(listview.dataItem(row));
+    </script>
+
 ### destroy
 Prepares the **ListView** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
