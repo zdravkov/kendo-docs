@@ -65,7 +65,7 @@ workbook of the detail grids. The event is prevented to avoid saving an Excel fi
         // merge the detail export sheet rows with the master sheet rows
         // loop backwards so the masterRowIndex doesn't need to be updated
         for (var i = detailExports.length - 1; i >= 0; i--) {
-          var masterRowIndex = Math.max(detailExports[i].masterRowIndex, 1);
+          var masterRowIndex = detailExports[i].masterRowIndex + 1; // compensate for the header row
 
           var sheet = detailExports[i].sheet;
 
@@ -101,7 +101,7 @@ workbook of the detail grids. The event is prevented to avoid saving an Excel fi
     var deferred = $.Deferred();
 
     // get the index of the master row
-    var masterRowIndex = e.masterRow.index();
+    var masterRowIndex = e.masterRow.index(".k-master-row");
 
     // add the deferred to the list of promises
     detailExportPromises.push(deferred);
@@ -138,5 +138,5 @@ workbook of the detail grids. The event is prevented to avoid saving an Excel fi
       ]
     });
   }
-  </script>
+</script>
 ```
