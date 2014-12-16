@@ -160,7 +160,7 @@ Set the `ProxyURL` option to specify the server proxy URL.
 #### Example - user server proxy
 
 ```Controller
-public class ProxyController
+public class ProxyController : Controller
 {
     [HttpPost]
     public ActionResult Save(string contentType, string base64, string fileName)
