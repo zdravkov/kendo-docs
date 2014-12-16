@@ -156,7 +156,7 @@ If set to true, the application will not use AJAX to load remote views.
 
 ### skin `String`
 
-The skin to apply to the application. Currently, Kendo UI Mobile ships with **flat**, **material** and **materialblack** skin in addition to the native looking ones. You can also set platform variants with it ("android-light" or "android-dark").
+The skin to apply to the application. Currently, Kendo UI Mobile ships with **flat**, **material** and **materialblack** skins in addition to the native looking ones. You can also set platform variants with it ("android-light" or "android-dark").
 
 > The skin setting will be applied on any device, making the application look the same way.
 
