@@ -29,7 +29,7 @@ Turns on or off the animation of the widget.
 
 ### collapsed `Boolean`*(default: true)*
 
-If set to `false` the widget content will be expanded intially. The content of the widget is collapsed by default.
+If set to `false` the widget content will be expanded initially. The content of the widget is collapsed by default.
 
 #### Example - create initially expanded collapsible panel
 
@@ -44,6 +44,7 @@ If set to `false` the widget content will be expanded intially. The content of t
     var app = new kendo.mobile.Application();
     </script>
 
+    <!-- <script src="../src/kendo.mobile.application.js"></script> -->
 ### collapseIcon `String`*(default: "minus")*
 
 Sets the icon for the header of the collapsible widget when it is in a collapsed state.
