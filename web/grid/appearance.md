@@ -79,11 +79,13 @@ A height can be set to the Grid in one of the following ways:
 
 * apply an inline height style to the `div` from which the Grid is initialized
 * use the widget's **`height`** property, which will apply an inline style to the Grid wrapper, i.e. same as above
-* use external CSS, e.g. by using the Grid's ID or CSS class(es) to apply a height style
+* use external CSS, e.g. by using the Grid's ID or CSS class (`.k-grid`) to apply a height style
 
 It makes sense to set height to the Grid **only if Grid scrolling is enabled**.
 
-When the Grid has a height set, it calculates the appropriate height of its scrollable data area, so that the sum of the header, data and pager is equal to the expected Grid height.
+When the Grid has a set height, it calculates the appropriate height of its scrollable data area, so that the sum of the header, data and pager is equal to the expected Grid height.
+That's why, if the Grid height is changed width Javascript after the widget has been created, the [Grid's `resize` method](/install/prerequisites#jquery) must be called afterwards.
+In this way the Grid will recalculate the height of its data area.
 
 ![Grid With Fixed Height And Scrolling](/web/grid/grid3_1.png)
 
