@@ -1,5 +1,5 @@
 ---
-title: Select item on TAB 
+title: Select item on TAB
 page_title: Select item on TAB
 description: Example that shows how to select item on TAB
 ---
@@ -44,7 +44,7 @@ The example below demonstrates how to select item on TAB.
           var filter = combobox.dataSource.filter() || { filters: [] };
 
           if (e.keyCode === 9 && filter.filters[0]) { //TAB
-            combobox.select(0);
+            combobox.select(combobox.current().index());
           }
         });
       });
