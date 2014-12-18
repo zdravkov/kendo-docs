@@ -19,6 +19,7 @@ The Data Visualization widgets are fully functional in the browsers listed below
 
 * Internet Explorer 6, 7 and 8 are supported with the following limitations:
     * **PDF export** is not supported.
+    * **Image export** is not supported.
     * 64-bit versions do not support text rotation.
     * Pie and donut charts don't have gradients
 * Android 2.x will use non-interactive canvas output
