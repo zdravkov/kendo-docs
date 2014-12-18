@@ -9,7 +9,6 @@ description: How to add Resources to Scheduler HtmlHelper extension for Kendo UI
 The Scheduler HtmlHelper extension supports assigning scheduler events to a set of predefined [resources](/web/scheduler/resources).
 
 
-
 ## Getting Started
 
 Here is how to add a simple scheduler resource and bind it to local data:
@@ -53,6 +52,8 @@ Here is how to add a simple scheduler resource and bind it to local data:
 ## Multiple resource types
 
 The Scheduler HtmlHelper extension supports unlimited resource types. For example we can combine the single and multiple resource examples in a single one.
+
+> Widget requires the first resource to have a color field, because the event background color is get from the first resource.
 
 ### Example - multiple resource types
 
