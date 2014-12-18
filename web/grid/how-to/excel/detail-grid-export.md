@@ -30,6 +30,7 @@ workbook of the detail grids. The event is prevented to avoid saving an Excel fi
     pageable: true,
     detailInit: detailInit,
     dataBound: function() {
+      detailExportPromises = [];
       this.expandRow(this.tbody.find("tr.k-master-row").first());
     },
     excelExport: function(e) {
