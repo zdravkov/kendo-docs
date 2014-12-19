@@ -22,6 +22,7 @@ The Data Visualization widgets are fully functional in the browsers listed below
     * **Image export** is not supported.
     * 64-bit versions do not support text rotation.
     * Pie and donut charts don't have gradients
+* Internet Explorer 10 does not support dashed lines in canvas. This affects the exportImage as well.
 * Android 2.x will use non-interactive canvas output
 
 > Quirks mode is not supported. Always specify [DOCTYPE](http://reference.sitepoint.com/html/doctypes) on your pages.
