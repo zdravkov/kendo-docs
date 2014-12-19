@@ -228,6 +228,10 @@ Invoking this method will force the widget to redraw and it will trigger the `re
 
 The new pane configuration
 
+#### Returns
+
+`jQuery` the pane element.
+
 #### Example
 
     <div id="splitter">
