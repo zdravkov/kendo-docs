@@ -118,12 +118,12 @@ The example below demonstrates how create an external editor form
 
             if (event.isNew()) {
               setTimeout(function() {
-                dataSource.add(event);   
+                dataSource.add(event);
                 editEvent(event);
               });
             } else {
               editEvent(event);
-            }  
+            }
           }
         });
 
@@ -140,21 +140,20 @@ The example below demonstrates how create an external editor form
         var currentEvent;
 
         function editEvent(event) {
-          destroyEditor(); 
-          scheduler.cancelEvent(currentEvent);
-
-          editor.html(template({}));
-          kendo.bind(editor, event); //Bind the editor container (uses MVVM)
-
-          editor.find("#save").click(function() {
-            scheduler.saveEvent();
             destroyEditor();
-          });
 
-          editor.find("#cancel").click(function() {
-            scheduler.cancelEvent(currentEvent);
-            destroyEditor();
-          });
+            editor.html(template({}));
+            kendo.bind(editor, event); //Bind the editor container (uses MVVM)
+
+            editor.find("#save").click(function() {
+                scheduler.dataSource.sync();
+                destroyEditor();
+            });
+
+            editor.find("#cancel").click(function() {
+                scheduler.dataSource.cancelChanges(currentEvent);
+                destroyEditor();
+            });
         }
       });
     </script>
