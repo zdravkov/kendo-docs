@@ -45,7 +45,7 @@ The appearance of a component may also depend on its state, which is also tied t
 *   **k-state-error** - this class can be used with form fields that have an invalid value
 
 In addition, there are some CSS classes, which you can use to apply borders and background colors to containers - `k-info-colored`, `k-success-colored` and `k-error-colored`.
-They are shown in the [http://demos.telerik.com/kendo-ui/styling/panels](Styling / Panels demo).
+They are shown in the [StylingPanels demo](http://demos.telerik.com/kendo-ui/styling/panels).
 
 ## LESS structure
 
