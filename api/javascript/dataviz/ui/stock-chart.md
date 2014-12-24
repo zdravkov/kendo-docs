@@ -9179,12 +9179,12 @@ The DOM element of the label.
 
 ### legendItemClick
 
-Fires when an legend item is clicked.
+Fires when an legend item is clicked, before the selected series visibility is toggled.
+Can be cancelled.
 
-#### Example
-
+#### Example - prevent toggling the series visibility on legend item click
     function onLegendItemClick(e) {
-        alert("Clicked " + e.text + " series");
+        e.preventDefault();
     }
 
 #### Event Data
@@ -9204,6 +9204,10 @@ The series index.
 ##### e.pointIndex `Number`
 
 The point index.
+
+##### e.preventDefault `Function`
+
+If invoked the default action (toggle series visibility) will be prevented.
 
 ##### e.element `Object`
 
