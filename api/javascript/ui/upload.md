@@ -914,13 +914,14 @@ Verify that this is an actual XHR before accessing any other fields.
 ### upload
 
 Fires when one or more files are about to be uploaded.
-Cancelling the event will prevent the upload.
+Canceling the event will prevent the upload.
 
-Note: The upload event fires only when the upload is in
+> The upload event fires only when the upload is in
 [async mode](/web/upload/modes#asynchronous-mode).
 
-#### Example
+> It is possible to change the saveUrl at this point.
 
+#### Example - Disallow certain files
     <input type="file" name="files" id="photos" />
 	<script>
 	    $("#photos").kendoUpload({
@@ -945,8 +946,7 @@ Note: The upload event fires only when the upload is in
 	    }
 	</script>
 
-#### Example
-
+#### Example - Add request header
     <input type="file" name="files" id="photos" />
 	<script>
 	    $("#photos").kendoUpload({
@@ -968,6 +968,22 @@ Note: The upload event fires only when the upload is in
 	        }
 	    }
 	</script>
+
+#### Example - Change saveUrl before upload
+    <input type="file" name="files" id="photos" />
+    <script>
+        $("#photos").kendoUpload({
+            async: {
+                saveUrl: "save",
+                removeUrl: "remove"
+            },
+            upload: onUpload
+        });
+
+        function onUpload(e) {
+            e.sender.options.async.saveUrl = "save?id" + 1;
+        }
+    </script>
 
 #### Event Data
 
