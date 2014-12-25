@@ -378,7 +378,7 @@ Defines the data source of the connections.
 
 #### Example - settings the connectionsDataSource and dynamic labelling
 
-Note that the 'from' and 'to' fields in the connectionsDataSource refer to the 'id' of the dataSource. The label on the connection is set via the [connectionsDefaults.content.template](connectionsDefaults-content-template).
+Note that the 'from' and 'to' fields in the connectionsDataSource refer to the 'id' of the dataSource. The label on the connection is set via the [connectionsDefaults.content.template](#configuration-connectionDefaults.content.template).
 
      $("#diagram").kendoDiagram({
             dataSource: [
