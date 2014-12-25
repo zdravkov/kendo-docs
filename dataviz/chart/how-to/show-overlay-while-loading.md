@@ -6,19 +6,24 @@ description: Show overlay while loading
 
 # Show overlay while loading
 
-The example below demonstrates how show overlay on top of the chart component while data is being loaded.
+The example below demonstrates how to show a loading indicator while chart data is being loaded.
+
+The loading indicator is cleared in the [render](/api/javascript/dataviz/ui/chart#events-render) event.
+
+Replace with the [dataBound](/api/javascript/dataviz/ui/chart#events-dataBound) event for version prior to 2014.3.1119.
 
 #### Example:
 
 ```html
-    <div id="parent">
+    <div class="chart-wrap" style="position: relative;">
       <div id="chart"></div>
-      <div id="overlay"></div>
+      <div class="chart-loading"></div>
     </div>
     <script>
       var ds = new kendo.data.DataSource({
         transport: {
           read: function(e) {
+            // Delay response to simulate remote data
             setTimeout(function() {
               e.success([{
                 value: 1
@@ -27,7 +32,7 @@ The example below demonstrates how show overlay on top of the chart component wh
               }, {
                 value: 3
               }]);
-            }, 1000);
+            }, 2000);
           }
         }
       });
@@ -37,34 +42,16 @@ The example below demonstrates how show overlay on top of the chart component wh
         series: [{
           field: "value"
         }],
-        dataBound: function() {
-          $("#overlay").fadeOut();
+        render: function(e) {
+          // Clear up the loading indicator for this chart
+          var loading = $(".chart-loading", e.sender.element.parent());
+          kendo.ui.progress(loading, false);
         }
       });
 
-      setTimout(function() {
-        $("#overlay").fadeIn();
-        ds.read();
-      }, 2000);
+      $(document).ready(function() {
+        // Spin all loading indicators on the page
+        kendo.ui.progress($(".chart-loading"), true);
+      });
     </script>
-    <style>
-      #parent {
-        width: 600px;
-        height 400px;
-        position: relative;
-      }
-
-      #chart, #overlay {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
-      #overlay {
-        background: #000;
-        opacity: 0.8;
-      }
-    </style>
 ```
