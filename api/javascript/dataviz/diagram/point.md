@@ -4,7 +4,7 @@ title: Point
 
 # kendo.dataviz.diagram.Point
 
-Reprsents a point in the two-dimensional space.
+Represents a point in two-dimensional space.
 
 ## Configuration
 
@@ -12,6 +12,6 @@ Reprsents a point in the two-dimensional space.
 
 Defines the x-coordinate of the point.
 
-### y `Number
+### y `Number`
 
 Defines the y-coordinate of the point.
