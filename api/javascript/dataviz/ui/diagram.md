@@ -548,6 +548,10 @@ Specifies the fill color of the rotation thumb.
 
 Specifies the fill opacity of the rotation thumb.
 
+### editable.rotate.stroke `Object`
+
+Specifies the stroke settings of the rotation thumb.
+
 ### editable.rotate.stroke.color `String`
 
 Specifies the stroke color of the rotation thumb.
