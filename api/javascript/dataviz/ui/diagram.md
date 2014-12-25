@@ -41,6 +41,8 @@ Defines the defaults of the connections. Whenever a connection is created, the s
 
 #### Example - typical connectionDefaults
 
+    <div id="diagram"></div>
+    <script>
     $("#diagram").kendoDiagram({
        shapes:[
            {
@@ -73,7 +75,8 @@ Defines the defaults of the connections. Whenever a connection is created, the s
            startCap: "FilledCircle",
            endCap: "ArrowEnd"
        }
-   });
+    });
+    </script>
 
 ### connectionDefaults.content `Object`
 
@@ -286,27 +289,25 @@ Sets the intermediate points (in global coordinates) of the connection. It's imp
 
 ![Intermediate connection points.](/api/javascript/dataviz/diagram/connection_points.png)
 
-     $("#diagram").kendoDiagram({
-            shapes: [
-                {
-                    id: "1",
-                    content: {
-                        text: "Monday"
-                    }
-                },
-                {
-                    id: "2",
-                    content: "Tuesday"
-                }
-            ],
-            connections: [
-
-                {
-                    from: "1",
-                    to: "2",
-                    points:[new kendo.dataviz.diagram.Point(100,55)]
-                }
-            ]});
+    <div id="diagram"></div>
+    <script>
+    $("#diagram").kendoDiagram({
+        shapes: [{
+            id: "1",
+            content: {
+                text: "Monday"
+            }
+        }, {
+            id: "2",
+            content: "Tuesday"
+        }],
+        connections: [{
+            from: "1",
+            to: "2",
+            points:[new kendo.dataviz.diagram.Point(100,55)]
+        }]
+    });
+    </script>
 
 ### connections.points.x `Number`
 
@@ -380,6 +381,8 @@ Defines the data source of the connections.
 
 Note that the 'from' and 'to' fields in the connectionsDataSource refer to the 'id' of the dataSource. The label on the connection is set via the [connectionsDefaults.content.template](#configuration-connectionDefaults.content.template).
 
+    <div id="diagram"></div>
+    <script>
      $("#diagram").kendoDiagram({
             dataSource: [
                 {id:"one", name:"One"},
@@ -420,6 +423,7 @@ Note that the 'from' and 'to' fields in the connectionsDataSource refer to the '
 
             autoBind: true
         });
+    </script>
 
 ### dataSource `Object|Array|kendo.data.DataSource`
 
@@ -430,6 +434,8 @@ Defines the data source of the diagram.
 Note that the HierarchicalDataSource needs to be used to define a hierarchy.
 See also the connectionsDataSource example for other ways to define a diagram through a data source.
 
+    <div id="diagram"></div>
+    <script>
      var dataSource = new kendo.data.HierarchicalDataSource({
         data: [{
             "name": "Telerik",
@@ -478,6 +484,7 @@ See also the connectionsDataSource example for other ways to define a diagram th
 
         autoBind: true
     });
+    </script>
 
 ### editable `Boolean|Object` *(default: true)*
 
@@ -489,7 +496,8 @@ Specifies the connection editor template which shows up when editing the connect
 
 #### Example - setting the connectionTemplate
 
-Assuming that the diagram is data bound and that the connection data contains properties 'meaning' and 'domain'. These can be edited by setting a Kendo template 
+Assuming that the diagram is data bound and that the connection data contains properties 'meaning' and 'domain'.
+These can be edited by setting a Kendo template and a diagram configuration as follows.
 
      <script id="popup-editor" type="text/x-kendo-template">
         <h3>Edit Connection Data</h3>
@@ -500,25 +508,26 @@ Assuming that the diagram is data bound and that the connection data contains pr
             <label>Domain: <input data-role="domain" name="domain" /></label>
         </p>
     </script>
-     
-and a diagram configuration as follows
 
-     $("#diagram").kendoDiagram({
-                readOnly: false,
-                dataSource: shapesDataSource,
-                connectionsDataSource: connectionsDataSource,
-                editable: {
-                    tools: ["edit"],
-                    connectionTemplate: kendo.template($("#popup-editor").html())
-                },
-                 
-                connectionDefaults: {
-                   editable: {
-                        tools: ["edit"]
-                    }
-                },
-                dataBound: onDataBound
-            });     
+    <div id="diagram"></div>
+    <script>
+    $("#diagram").kendoDiagram({
+        readOnly: false,
+        dataSource: shapesDataSource,
+        connectionsDataSource: connectionsDataSource,
+        editable: {
+            tools: ["edit"],
+            connectionTemplate: kendo.template($("#popup-editor").html())
+        },
+        connectionDefaults: {
+           editable: {
+                tools: ["edit"]
+            }
+        },
+        dataBound: onDataBound
+    });
+    </script>
+
 See also the Kendo data-bound sample for a similar example.
 
 ### editable.resize `Boolean|Object` *(default: true)*
@@ -529,54 +538,51 @@ Defines the look-and-feel of the resizing handles.
 
 The 'editable.resize' configuration below collects pretty much all of the available parameters. 
 
+    <div id="diagram"></div>
+    <script>
      $("#diagram").kendoDiagram({
-            shapes: [
-                {
-                    id: "1",
-                    content: {
-                        text: "Monday"
-                    }
-                },
-                {
-                    id: "2",
-                    content: "Tuesday"
-                }
-            ],
-            connections: [
-                {
-                    from: "1",
-                    to: "2"
-                }
-           ],           
-            editable: {
-                resize: {
-                    handles: {
+        shapes: [{
+            id: "1",
+            content: {
+                text: "Monday"
+            }
+        }, {
+            id: "2",
+            content: "Tuesday"
+        }],
+        connections: [{
+            from: "1",
+            to: "2"
+        }],
+        editable: {
+            resize: {
+                handles: {
+                    fill: {
+                        color: "red",
+                        opacity: 0.5
+                    },
+                    height: 10,
+                    width: 10,
+                    stroke: {
+                        color:"blue",
+                        width:1,
+                        dashType:"dot"
+                    },
+                    hover: {
                         fill: {
-                            color: "red",
-                            opacity: 0.5
+                            color:"green",
+                            opcaity:.8
                         },
-                        height:10,
-                        width: 10,
-                        stroke:{
-                            color:"blue",
-                            width:1,
-                            dashType:"dot"
-                        },
-                        hover:
-                        {
-                            fill:{
-                                color:"green",
-                                opcaity:.8
-                            },
-                            stroke:{
-                                color:"purple",
-                                width:5
-                            }
+                        stroke: {
+                            color:"purple",
+                            width:5
                         }
                     }
                 }
             }
-        });
+        }
+    });
+    </script>
 
 ### editable.resize.handles `Object`
 
