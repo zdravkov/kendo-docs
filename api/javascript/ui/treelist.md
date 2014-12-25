@@ -449,7 +449,7 @@ The format that is applied to the value before it is displayed. Takes the form "
         });
     </script>
 
-### columns.headerTemplate `Object`
+### columns.headerAttributes `Object`
 
 HTML attributes of the table header cell (`<th>`) rendered for the column.
 
