@@ -68,7 +68,7 @@ HTML attributes of the table cell (`<td>`) rendered for the column.
       });
     </script>
 
-The table cells would look like this: `<td class="table-cell" style="text-align: right">...</td>`.
+The table cells would look like this: `<td class="name-cell" style="text-align: right">...</td>`.
 
 
 ### columns.command `Array`
@@ -448,6 +448,34 @@ The format that is applied to the value before it is displayed. Takes the form "
             dataSource: [ { date: new Date(), number: 3.1415 } ]
         });
     </script>
+
+### columns.headerTemplate `Object`
+
+HTML attributes of the table header cell (`<th>`) rendered for the column.
+
+> HTML attributes which are JavaScript keywords (e.g. *class*) must be quoted.
+
+#### Example - specify column header HTML attributes
+
+    <div id="treeList"></div>
+    <script>
+      var dataSource = new kendo.data.TreeListDataSource({
+        data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+      });
+      $("#treeList").kendoTreeList({
+        columns: [ {
+          field: "name",
+          headerAttributes: {
+            "class": "name-header",
+            style: "text-align: right"
+          }
+        } ],
+        dataSource: dataSource
+      });
+    </script>
+
+The table headers would look like this: `<th class="name-header" style="text-align: right">...</th>`.
+
 
 ### columns.headerTemplate `String|Function`
 
