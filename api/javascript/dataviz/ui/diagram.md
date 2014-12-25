@@ -10,7 +10,7 @@ description: Examples and detailed explanation of Kendo UI methods and propertie
 
 ### autoBind `Boolean` *(default: true)*
 
-If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
+If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/javascript/data/datasource#events-change) event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 > Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
@@ -45,7 +45,7 @@ Defines the shapes content settings.
 
 ### connectionDefaults.content.template `String|Function`
 
-The [template](/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/javascript/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -95,6 +95,27 @@ Defines the highlight color when the pointer is hovering over the connection.
 ### connectionDefaults.selection `Object`
 
 Defines the connection selection configuration.
+
+##### Example - Styling the connection selection
+
+     connectionDefaults: {
+                hover: {
+                    stroke: {color: "red"}
+                },
+                stroke: {
+                    color: "#979797",
+                    width: 4
+                },
+                type: "polyline",
+                startCap: "FilledCircle",
+                endCap: "ArrowEnd",
+                selection: {
+                    handles: {
+                        fill: {color: "Yellow"},
+                        stroke: {color: "White"}
+                    }
+                }
+            }
 
 ### connectionDefaults.selection.handles `Object`
 
@@ -146,7 +167,7 @@ Defines the shapes content settings.
 
 ### connections.content.template `String|Function`
 
-The [template](/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/javascript/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -183,15 +204,15 @@ Note that you can also use the "ArrowStart" for the endCap but its direction wil
 
 ### connections.from `Object|String|Number`
 
-Defines the connection from.
+Defines the source of the connection.
 
 ### connections.from.x `Number`
 
-Defines the point x value.
+Defines the x-coordinate of the connection source.
 
 ### connections.from.y `Number`
 
-Defines the point y value.
+Defines the y-coordinate of the connection source.
 
 ### connections.hover `Object`
 
@@ -209,17 +230,40 @@ Defines the highlight color when the pointer is hovering over the connection.
 
 Sets the intermediate points (in global coordinates) of the connection. It's important to note that currently these points cannot be manipulated in the interface.
 
+
 #### Example - setting intermediate connection points
 
-![Intermediate connection points.](/api/dataviz/diagram/connection_points.png)
+![Intermediate connection points.](/api/javascript/dataviz/diagram/connection_points.png)
+
+     $("#diagram").kendoDiagram({
+            shapes: [
+                {
+                    id: "1",
+                    content: {
+                        text: "Monday"
+                    }
+                },
+                {
+                    id: "2",
+                    content: "Tuesday"
+                }
+            ],
+            connections: [
+
+                {
+                    from: "1",
+                    to: "2",
+                    points:[new kendo.dataviz.diagram.Point(100,55)]
+                }
+            ]});
 
 ### connections.points.x `Number`
 
-Sets the X coordinate of the point.
+Sets the X coordinate of the intermediate point.
 
 ### connections.points.y `Number`
 
-Sets the Y coordinate of the point.
+Sets the Y coordinate of the intermediate point.
 
 ### connections.selection `Object`
 
@@ -291,87 +335,234 @@ Specifies the shape editable.
 
 ### editable.connectionTemplate `String|Function`
 
-Specifies the connection editor template.
+Specifies the connection editor template which shows up when editing the connection via a pop-up editor much like 'editable.template' configuration of the Kendo UI Grid widget. 
+
+#### Example - setting the connectionTemplate
+
+Assuming that the diagram is data bound and that the connection data contains properties 'meaning' and 'domain'. These can be edited by setting a Kendo template 
+
+     <script id="popup-editor" type="text/x-kendo-template">
+        <h3>Edit Connection Data</h3>
+        <p>
+            <label>Semantic meaning:<input name="meaning" /></label>
+        </p>
+        <p>
+            <label>Domain: <input data-role="domain" name="domain" /></label>
+        </p>
+    </script>
+     
+and a diagram configuration as follows
+
+     $("#diagram").kendoDiagram({
+                readOnly: false,
+                dataSource: shapesDataSource,
+                connectionsDataSource: connectionsDataSource,
+                editable: {
+                    tools: ["edit"],
+                    connectionTemplate: kendo.template($("#popup-editor").html())
+                },
+                 
+                connectionDefaults: {
+                   editable: {
+                        tools: ["edit"]
+                    }
+                },
+                dataBound: onDataBound
+            });     
+See also the Kendo data-bound sample for a similar example.
 
 ### editable.resize `Boolean|Object` *(default: true)*
 
-Specifies the shape resizing.
+Defines the look-and-feel of the resizing handles.
+
+#### Example - styling the resizing handles
+
+The 'editable.resize' configuration below collects pretty much all of the available parameters. 
+
+     $("#diagram").kendoDiagram({
+            shapes: [
+                {
+                    id: "1",
+                    content: {
+                        text: "Monday"
+                    }
+                },
+                {
+                    id: "2",
+                    content: "Tuesday"
+                }
+            ],
+            connections: [
+                {
+                    from: "1",
+                    to: "2"
+                }
+           ],           
+            editable: {
+                resize: {
+                    handles: {
+                        fill: {
+                            color: "red",
+                            opacity: 0.5
+                        },
+                        height:10,
+                        width: 10,
+                        stroke:{
+                            color:"blue",
+                            width:1,
+                            dashType:"dot"
+                        },
+                        hover:
+                        {
+                            fill:{
+                                color:"green",
+                                opcaity:.8
+                            },
+                            stroke:{
+                                color:"purple",
+                                width:5
+                            }
+                        }
+                    }
+                }
+            }
+        });
 
 ### editable.resize.handles `Object`
 
-Specifies the handles style.
+Specifies the settings of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
 
 ### editable.resize.handles.fill `String|Object`
 
-Specifies the handles fill options.
+Specifies the fill settings of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.fill.color `String`
 
-Specifies the handles fill color.
+Specifies the fill color of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.fill.opacity `Number` *(default: 1)*
 
-Specifies the handles fill opacity.
+Specifies the fill opacity of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.height `Number`
 
-The hangles height.
+Specifies the height of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover `Object`
 
-Set the handles hover styles.
+Specifies the settings of the resizing handles on hovering over them. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover.fill `String|Object`
 
-Set the handles hover fill options.
+Specifies the fill settings on hovering over the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover.fill.color `String`
 
-Set the handles hover fill color.
+Specifies the fill color on hovering over the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover.fill.opacity `Number` *(default: 1)*
 
-Set the handles hover fill opacity.
+Specifies the fill opacity on hovering over the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover.stroke `Object`
 
-Specifies the handles stroke styles.
+Specifies the stroke on hovering over the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover.stroke.color `String`
 
-Specifies the handles stroke color.
+Specifies the stroke color on hovering over the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover.stroke.dashType `String`
 
-Specifies the handles stroke dash type.
+Specifies the stroke dash type on hovering over the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.hover.stroke.width `Number`
 
-Specifies the handles stroke width.
+Specifies the stroke color on hovering over the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.stroke `Object`
 
-Specifies the handles stroke styles.
+Specifies the stroke of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.stroke.color `String`
 
-Specifies the handles stroke color.
+Specifies the stroke color of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.stroke.dashType `String`
 
-Specifies the handles stroke dash type.
+Specifies the stroke dash type of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.stroke.width `Number`
 
-Specifies the handles stroke width.
+Specifies the stroke thickness of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
 
 ### editable.resize.handles.width `Number`
 
-The hangles width.
+Specifies the width of the resizing handles. See the [editable.resize](#configuration-editable.resize) configuration for an example.
+
+
+### editable.rotate `Boolean|Object` *(default: true)*
+
+Specifies whether the shapes can be rotated. Note that changing this setting after creating the diagram will have no effect.
+
+#### Example - styling the rotation thumb
+
+     editable:{
+         rotate:{
+             fill:{
+                 color:"red",
+                 opacity:.5
+             },
+             stroke:{
+                 color:"blue",
+                 width:2
+             }
+         }
+     }
+
+### editable.rotate.fill `Object`
+
+Specifies the fill settings of the rotation thumb.
+
+### editable.rotate.fill.color `String`
+
+Specifies the fill color of the rotation thumb.
+
+### editable.rotate.fill.opacity `Number` *(default: 1)*
+
+Specifies the fill opacity of the rotation thumb.
+
+### editable.rotate.stroke `Object`
+
+Specifies the stroke settings of the rotation thumb.
+
+### editable.rotate.stroke.color `String`
+
+Specifies the stroke color of the rotation thumb.
+
+### editable.rotate.stroke.width `Number` *(default: 1)*
+
+Specifies the stroke thickness of the rotation thumb.
 
 ### editable.shapeTemplate `String|Function`
 
-Specifies the shape editor template.
+Specifies the shape editor template. See the 'editable.connectionTemplate' for an example.
 
 ### editable.tools `Array`
 
@@ -399,7 +590,7 @@ The layout of a diagram consists in arranging the shapes (sometimes also the con
 
 On a technical level, layout consists of a multitude of algorithms and optimizations:
 
-* analysis of the relational structure (loops, multi-edge occurence...)
+* analysis of the relational structure (loops, multi-edge occurrence...)
 * connectedness of the diagram and the splitting into disconnected components
 * crossings of connections
 * bends and length of links
@@ -421,13 +612,13 @@ Defines where the circle/arc ends. The positive direction is **clockwise** and t
 ### layout.grid `Object`
 
 Each layout algorithm has a different set of parameters customizing the layout but they also all have a common collection of parameters which relate to the way 'pieces' of a diagram are organized.
-![Diagram component](/api/dataviz/diagram/component_example.png)
+![Diagram component](/api/javascript/dataviz/diagram/component_example.png)
 
 A diagram can have in general disconnected pieces, known as components, which can be organized in a way independent of the way a component on its own is arranged. In the picture above, this is one diagram consisting of four components.
 
 When you apply a certain layout an analysis will first split the diagram in components, arrange each component individually and thereafter organize the components in a grid. The common parameters referred above deal with this grid layout, they define the width, margin and padding of the (invisible) grid used to organize the components.
 
-![Component parameters](/api/dataviz/diagram/component_parameters.png)
+![Component parameters](/api/javascript/dataviz/diagram/component_parameters.png)
 
 ### layout.grid.componentSpacingX `Number` *(default: 50)*
 
@@ -453,7 +644,7 @@ Defines the width of the grid. The bigger this parameter the more components wil
 
 Either the distance between the siblings if the tree is up/down or between levels if the tree is left/right. In *tipOver tree layout* this setting is used only for the direct children of the root
 
-![Tree parameters](/api/dataviz/diagram/tree_parameters.png)
+![Tree parameters](/api/javascript/dataviz/diagram/tree_parameters.png)
 
 ### layout.iterations `Number` *(default: 300)*
 
@@ -463,7 +654,7 @@ In situations where there is enough symmetry in the diagram the increased number
 
 *This setting is specific to the force-directed layout*
 
-![Increasing iterations](/api/dataviz/diagram/force_directed_iterations.png)
+![Increasing iterations](/api/javascript/dataviz/diagram/force_directed_iterations.png)
 
 ### layout.layerSeparation `Number` *(default: 50)*
 
@@ -495,39 +686,39 @@ The subtype further defines the layout type by specifying in greater detail the 
 
 * "down" - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the top and its children downwards. For the layered layout the links are directed downwards. This is the default subtype.
 
-![Tree down parameters](/api/dataviz/diagram/tree_down_parameters.png)
+![Tree down parameters](/api/javascript/dataviz/diagram/tree_down_parameters.png)
 
 * "up" - *tree layout* and *layered layout* specific subtype. In the tree layout the root is arranged at the bottom and its children upwards. For the layered layout the links are directed upwards.
 * "left" - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the left and its children sideways to the right. For the layered layout the links are directed to the left.
 * "right" - *tree layout* *layered layout* specific subtype. In the tree layout the root is arranged at the right and its children sideways to the left. For the layered layout the links are directed downwards.
 
-![Tree right parameters](/api/dataviz/diagram/tree_right_parameters.png)
+![Tree right parameters](/api/javascript/dataviz/diagram/tree_right_parameters.png)
 
 * "mindmapHorizontal" - *tree layout* specific subtype. The root sits at the center and its children are spread equally to the left and right.
 * "mindmapVertical" - *tree layout* specific subtype. The root sits at the center and its children are spread equally above and below.
 
-![Mindmap parameters](/api/dataviz/diagram/mindmap_parameters.png)
+![Mindmap parameters](/api/javascript/dataviz/diagram/mindmap_parameters.png)
 
 * "radial" - *tree layout* specific subtype. The root sits at the center and its children are spread radially around.
 
-![Radial tree parameters](/api/dataviz/diagram/radial_tree_parameters.png)
-![Radial layout angles.](/api/dataviz/diagram/radial_angles.png)
+![Radial tree parameters](/api/javascript/dataviz/diagram/radial_tree_parameters.png)
+![Radial layout angles.](/api/javascript/dataviz/diagram/radial_angles.png)
 
 * "tipOver" - *tree layout* specific subtype. A special version of the tree-down layout where the grand-children (and iteratively) are arranged vertically while the direct children are arranged horizontally. This arrangement has the advantage that it doesn't spread as much as the classic tree-down layout. See below for a concrete example.
 
-![Tip-over parameters](/api/dataviz/diagram/tip_over_parameters.png)
+![Tip-over parameters](/api/javascript/dataviz/diagram/tip_over_parameters.png)
 
 * "horizontal" - *layered layout* specific subtype. The preferred direction of the links is horizontal.
 * "vertical" - *layered layout* specific subtype. The preferred direction of the links is vertical.
 
 ### layout.type `String` *(default: "tree")*
 
-The type of the layout algorythm to use. Predefined values are:
+The type of the layout algorithm to use. Predefined values are:
 
 * "tree" - Organizes a diagram in a hierarchical way and is typically used in organizational representations. This type includes the radial tree layout, mindmapping and the classic tree diagrams.
 * "force" - Force-directed layout algorithm (also known as the spring-embedder algorithm) is based on a physical simulation of forces acting on the nodes whereby the links define whether two nodes act upon each other. Each link effectively is like a spring embedded in the diagram. The simulation attempts to find a minimum energy state in such a way that the springs are in their base-state and thus do not pull or push any (linked) node. This force-directed layout is **non-deterministic**; each layout pass will result in an unpredictable (and hence not reproducible) layout. The optimal length is more and indication in the algorithm than a guarantee that all nodes will be at this distance. The result of the layout is really a combination of the incidence structure of the diagram, the initial topology (positions of the nodes) and the number of iterations.
 
-![Force-directed parameter](/api/dataviz/diagram/force_directed_parameters.png)
+![Force-directed parameter](/api/javascript/dataviz/diagram/force_directed_parameters.png)
 
 * "layered" - Organizes the diagram with an emphasis on *flow* and minimizing the crossing between layers of shapes. This layout works well when few components are present and some sort of top-down flow is present. The concept of *flow* in this context being a more or less clear direction of the connections with a minimum of cycles (connections flowing back upstream). Layered graph layout is a type of graph layout in which the nodes of a (directed) graph are drawn in horizontal or vertical layers with the links directed in the complementary direction. It is also known as Sugiyama or hierarchical graph layout. When the graph is a tree the layout reduces to a standard tree layout and thus can be considered as an extension to the classic tree layout.
 
@@ -545,7 +736,7 @@ The construction of a layered graph drawing proceeds in a series of steps (assum
  + Each node is assigned a coordinate within its layer, consistent with the permutation calculated in the previous step.
  + The edges reversed in the first step of the algorithm are returned to their original orientations, the dummy vertices are removed from the graph and the vertices and edges are drawn.
 
-![Layered layout parameters.](/api/dataviz/diagram/layered_parameters.png)
+![Layered layout parameters.](/api/javascript/dataviz/diagram/layered_parameters.png)
 
 ### layout.underneathHorizontalOffset `Number` *(default: 15)*
 
@@ -1031,7 +1222,7 @@ The font size of the shape content text.
 
 ### shapeDefaults.content.template `String|Function`
 
-The [template](/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/javascript/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -1112,11 +1303,11 @@ The path option of a Shape is a description of a custom geometry. The format fol
 
 ### shapeDefaults.rotation `Object` *(default: null)*
 
-
+Defines the rotation of the shape.
 
 ### shapeDefaults.rotation.angle `Number` *(default: 0)*
 
-
+Sets the rotational angle of the shape.
 
 ### shapeDefaults.source `String`
 
@@ -1267,7 +1458,7 @@ The font size of the shape content text.
 
 ### shapes.content.template `String|Function`
 
-The [template](/api/framework/kendo#methods-template) which renders the labels.
+The [template](/api/javascript/kendo#methods-template) which renders the labels.
 
 The fields which can be used in the template are:
 
@@ -1415,7 +1606,7 @@ Defines the y-coordinate of the shape when added to the diagram.
 
 ### template `String|Function` *(default: "")*
 
-The [template](/api/framework/kendo#methods-template) which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
+The [template](/api/javascript/kendo#methods-template) which renders the content of the shape when bound to a dataSource. The names you can use in the template correspond to the properties used in the dataSource. See the dataSource topic below for a concrete example.
 
 ### zoom `Number` *(default: 1)*
 
@@ -1589,7 +1780,7 @@ Clears the content of the diagram.
 Creates a connection which can be either attached on both ends to a shape, half attached or floating (not attached to any shape). When a connection is (half) attached to a shape it happens through the intermediate Connector object. Connectors are part of a Shape's definition and you can specify the binding of a connection to a shape directly via the shape or via one of its connectors. If you specify a Shape as a connection's endpoint the Auto-connector will be used. This means that the endpoint of the connection will switch to the most convenient (in the sense of shortest path) connector automatically. If you specify a shape's connector as an endpoint for a connection the endpoint will remain attached to that given Connector instance.
 Finally, if you wish to have a (half) floating connection endpoint you should specify a Point as parameter for the floating end.
 
-![Creating connections.](/api/dataviz/diagram/connect.png)
+![Creating connections.](/api/javascript/dataviz/diagram/connect.png)
 
 #### Parameters
 
@@ -2174,19 +2365,36 @@ The point to zoom into or out of.
 
 ### add
 
-Fired when the user add new shape or connection.
+Fired when the user adds new shape or connection.
 
 The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Example - handling the add event
+
+     $('<div id="diagram" />').kendoDiagram({
+         shapes: [{
+             id: "id1",
+             type: "Rectangle",
+             x: 0,
+             y: 0,
+             width: 100,
+             height: 100
+         }],
+         add: function(e) {
+             var addedShape = e.shape;
+             // 'this' refers to the widget here
+         }
+     })
 
 #### Event Data
 
 ##### e.connection `kendo.data.Model`
 
-The dataItem to which connection is bound.
+The connection which has been added/changed, if any.
 
 ##### e.shape `kendo.data.Model`
 
-The dataItem to which shape is bound.
+The shape which has been added/changed, if any.
 
 ##### e.sender `kendo.ui.Diagram`
 
@@ -2194,7 +2402,7 @@ The widget instance which fired the event.
 
 ### cancel
 
-Fired when the user clicks the "cancel" button in the popup window.
+Fired when the user clicks the "cancel" button in the popup window in case the item was added via a toolbar.
 
 #### Event Data
 
@@ -2222,7 +2430,7 @@ Fired when an item is added or removed to/from the diagram.
 
 ##### e.added `Array`
 
-The removed items (shapes or connections).
+The added items (shapes or connections).
 
 ##### e.removed `Array`
 
@@ -2235,6 +2443,52 @@ The widget instance which fired the event.
 ### click
 
 Fired when the user clicks on a shape or a connection.
+
+#### Example - handling the click event
+
+     $("#diagram").kendoDiagram({
+                 shapes: [
+                     {
+                         id: "1",
+                         content: {
+                             text: "Monday"
+                         }
+                     },
+                     {
+                         id: "2",
+                         content: "Tuesday"
+                     }
+                 ],
+                 connections: [
+
+                     {
+                         from: "1",
+                         to: "2"
+                     }
+                 ],
+                 layout: {
+                     type: "tree"
+                 },
+                 click: function(e) {
+                     if(e.item instanceof kendo.dataviz.diagram.Shape)
+                         console.log(e.item.options.content? e.item.options.content.text: "No content.");
+                     else
+                         console.log("Clicked a connection.");
+                 },
+                 shapeDefaults: {
+                     type: "circle",
+                     width: 70,
+                     height: 70,
+                     hover: {
+                         fill: "Orange"
+                     }
+                 },
+                 connectionDefaults: {
+                     type: "polyline",
+                     startCap: "FilledCircle",
+                     endCap: "ArrowEnd"
+                 }
+             })
 
 #### Event Data
 
@@ -2344,7 +2598,7 @@ The widget instance which fired the event.
 
 ### save
 
-Fired when the user a shape or connection da is saved.
+Fired when the user saved a shape or a connection.
 
 #### Event Data
 
