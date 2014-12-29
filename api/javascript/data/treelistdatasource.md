@@ -29,13 +29,50 @@ See the [DataSource methods](/api/framework/datasource#methods) for all inherite
 
 ### load
 
-Loads the child nodes for model.
+Loads the child nodes of a model.
 
 #### Parameters
 
 ##### model `kendo.data.TreeListModel`
 
 The model that must be loaded.
+
+#### Returns
+
+`Promise` A promise that will be resolved when the child nodes have been loaded, or rejected if an HTTP error occurs.
+
+#### Example
+
+    <script>
+      var dataSource = new kendo.data.TreeListDataSource({
+        transport: {
+          read: {
+            url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory",
+            dataType: "jsonp"
+          }
+        },
+        schema: {
+          model: {
+            id: "EmployeeId",
+            fields: {
+              EmployeeId: { type: "number", nullable: false },
+              parentId: { field: "ReportsTo", nullable: true }
+            }
+          }
+        }
+      });
+
+      dataSource.read().then(function() {
+        // load child nodes of first root item
+        var root = dataSource.at(0);
+        return dataSource.load(root);
+      }).then(function() {
+        // log child nodes of first root
+        var root = dataSource.at(0);
+        var children = dataSource.childNodes(root);
+        console.log(children);
+      });
+    </script>
 
 ### childNodes
 

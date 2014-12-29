@@ -2643,7 +2643,7 @@ If set to function the data source will invoke it and use the result as the URL.
 ### type `String`
 
 If set the data source will use a predefined [transport](#configuration-transport) and/or [schema](#configuration-schema).
-The supported values are "odata" which supports the [OData](http://www.odata.org) v.2 protocol, "odata-v4" which [partially supports](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/odata-v4-web-api-binding) 
+The supported values are "odata" which supports the [OData](http://www.odata.org) v.2 protocol, "odata-v4" which [partially supports](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/odata-v4-web-api-binding)
 odata version 4 and "signalr".
 
 #### Example - enable OData support
@@ -2968,6 +2968,10 @@ Reads the data items from a remote service (if the [transport](#configuration-tr
 
 The optional function which is executed when the remote request is finished.  The function context (available via the `this` keyword) will be set to the data source instance.
 
+#### Returns
+
+`Promise` A promise that will be resolved when the data has been loaded, or rejected if an HTTP error occurs.
+
 #### Example - read data from a remote data source
 
     <script>
@@ -2982,6 +2986,26 @@ The optional function which is executed when the remote request is finished.  Th
     // read the data items from http://demos.telerik.com/kendo-ui/service/products
     dataSource.fetch(function(){
       var data = this.data();
+      console.log(data.length);  // displays "77"
+      console.log(data[0].ProductName); // displays "Chai"
+    });
+    </script>
+
+#### Example - use Promise API to track when a request finishes
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read:  {
+          url: "http://demos.telerik.com/kendo-ui/service/products",
+          dataType: "jsonp"
+        }
+      }
+    });
+
+    // read the data items from http://demos.telerik.com/kendo-ui/service/products
+    dataSource.fetch(function(){
+      var data = dataSource.data();
       console.log(data.length);  // displays "77"
       console.log(data[0].ProductName); // displays "Chai"
     });
@@ -3628,6 +3652,10 @@ The sort configuration. Accepts the same values as the [sort](#configuration-sor
 The `query` method will request the remote service if the [serverSorting](#configuration-serverSorting)
 option is set to `true`.
 
+#### Returns
+
+`Promise` A promise that will be resolved when the data has been loaded, or rejected if an HTTP error occurs.
+
 #### Example - query the data source
     <script>
     var dataSource = new kendo.data.DataSource({
@@ -3650,6 +3678,29 @@ option is set to `true`.
     });
     </script>
 
+#### Example - use the Promise API to get notified when the query finishes
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.telerik.com/kendo-ui/service/products",
+          dataType: "jsonp"
+        }
+      }
+    });
+
+    // sort by "ProductName" and get the third page with page size set to 20
+    dataSource.query({
+      sort: { field: "ProductName", dir: "desc" },
+      page: 3,
+      pageSize: 20
+    }).then(function(e) {
+        var view = dataSource.view();
+        console.log(view[0].ProductName); // displays "Manjimup Dried Apples"
+      });
+    </script>
+
 ### read
 
 Reads data items from a remote service (if the [transport](#configuration-transport) option is set) or from a JavaScript array (if the [data](#configuration-data) option is set).
@@ -3663,6 +3714,10 @@ offline.
 
 Optional data to pass to the remote service.
 If you need to **filter**, it is better to use the [`filter()`](#methods-filter) method or the [`query()`](#methods-query) method with a `filter` parameter.
+
+#### Returns
+
+`Promise` A promise that will be resolved when the data has been loaded, or rejected if an HTTP error occurs.
 
 #### Example - read data from a remote service
 
@@ -3679,10 +3734,28 @@ If you need to **filter**, it is better to use the [`filter()`](#methods-filter)
         console.log(view[0].ProductName); // displays "Chai"
       }
     });
-    
+
     var optionalData = { foo: 42, bar: "baz" };
-    
+
     dataSource.read(optionalData);
+    </script>
+
+#### Example - use Promise API to track when a request finishes
+
+    <script>
+    var dataSource = new kendo.data.DataSource({
+      transport: {
+        read: {
+          url: "http://demos.telerik.com/kendo-ui/service/products",
+          dataType: "jsonp"
+        }
+      }
+    });
+
+    dataSource.read().then(function() {
+      var view = dataSource.view();
+      console.log(view[0].ProductName); // displays "Chai"
+    });
     </script>
 
 ### remove
