@@ -7,14 +7,20 @@ position: 3
 
 # Work offline with the Kendo UI DataSource
 
-The Kendo UI DataSource provides offline storage support since the 2014 Q2 SP1 release. Offline support allows data-bound Kendo UI widgets to function without Internet connection -
-the user can continue working with data without Internet access. The Kendo UI DataSource syncs all changes with the remote service when Internet connection is available.
+Offline support allows data-bound Kendo UI widgets to function without active server connection.
+Users can continue working with the available data until network connectivity resumes.
+
+The Kendo UI DataSource syncs all changes with the remote service when a connection becomes available.
+
+> Offline storage support is available since the 2014 Q2 SP1 release.
 
 ## Configure offline storage
 
 Set the [offlineStorage](/api/framework/datasource#configuration-offlineStorage) option to enable offline storage. The DataSource uses this value as a key when saving and loading its state.
 
 By default the Kendo UI DataSource uses [localStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage#localStorage) to persist its offline state.
+
+> In order to use offline storage, the model must have a designated ID field.
 
 ### Example - set offline storage key
 
@@ -24,6 +30,11 @@ By default the Kendo UI DataSource uses [localStorage](https://developer.mozilla
             read: {
                 url: "http://demos.telerik.com/kendo-ui/service/products",
                 type: "jsonp"
+            }
+        },
+        schema: {
+            model: {
+                id: "ProductID"
             }
         }
     });
