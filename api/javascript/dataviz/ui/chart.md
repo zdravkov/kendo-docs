@@ -9742,17 +9742,31 @@ The data item field which contains the series outliers value.
 
 ### series.gap `Number` *(default: 1.5)*
 
-The distance between the category clusters.
+The distance between categories expressed as a percentage of the bar width.
+
+See the related [spacing](#configuration-series.spacing) setting.
 
 > The `gap` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick", "ohlc", "radarColumn" or "waterfall".
 
-#### Example - set the chart series gap
+#### Example - remove distance between categories
 
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
       series: [ {
         gap: 0,
+        data: [1, 2]
+      }]
+    });
+    </script>
+
+#### Example - overlap categories by half bar width
+
+    <div id="chart"></div>
+    <script>
+    $("#chart").kendoChart({
+      series: [ {
+        gap: -0.5,
         data: [1, 2]
       }]
     });
@@ -12101,19 +12115,25 @@ The data field containing the bubble size value.
 
 ### series.spacing `Number` *(default: 0.4)*
 
-The space between the chart series as proportion of the series width.
+The distance between series points within a category. Expressed as a percentage of the bar width.
+
+See the related [gap](#configuration-series.gap) setting.
 
 > The `spacing` option is supported when [series.type](#configuration-series.type) is set to "bar", "column", "candlestick", "ohlc" or "radarColumn".
 
-#### Example - set the chart series spacing
+#### Example - remove spacing between series points
 
     <div id="chart"></div>
     <script>
     $("#chart").kendoChart({
-      series: [
-        { spacing: 0.1, data: [ 1, 2 ,3 ] },
-        { data: [ 1, 2 ,3 ] }
-      ]
+      seriesDefaults: {
+        spacing: 0
+      },
+      series: [{
+        data: [1, 2, 3]
+      }, {
+        data: [1, 2, 3]
+      }]
     });
     </script>
 
