@@ -1,6 +1,6 @@
 ---
 title: Include Only What You Need
-page_title: Build a Custom Kendo UI Dstribution
+page_title: Build a Custom Kendo UI Distribution
 previous_url: /javascript-dependencies
 description: "How to include only the parts of Kendo UI which your project uses"
 position: 4
