@@ -54,7 +54,7 @@ Finally, let's bind the View to the View-Model. This is done by calling the `ken
 
 ## Bindings
 
-A binding pairs DOM element (or widget) property to a field or method of the View-Model. Bindings are specified via the `data-bind` attribute in the form `<binding name>: <view model field or method>` e.g. `value: name`. Two bindings were used in the aforementioned example - `value` and `click`.
+A binding pairs a DOM element (or widget) property to a field or method of the View-Model. Bindings are specified via the `data-bind` attribute in the form `<binding name>: <view model field or method>` e.g. `value: name`. Two bindings were used in the aforementioned example - `value` and `click`.
 Kendo MVVM supports binding to other properties as well: `source, html, attr, visible, enabled` etc. The `data-bind` may contain a comma-separated list of bindings e.g. `data-bind="value: name, visible: isNameVisible"`. Kendo MVVM also supports data binding to nested View-Model fields:
 
 ### Binding to nested fields:
@@ -75,7 +75,7 @@ Kendo MVVM supports binding to other properties as well: `source, html, attr, vi
 Although bindings look like JavaScript code they are not. The following is **NOT** a valid Kendo MVVM binding declaration:
 `<div data-bind="text: person.name.toLowerCase()"></div>`
 
-If a value from the View-Model requires processing before displaying it in the View a method should be created and used instead:
+If a value from the View-Model requires processing before displaying it in the View, a method should be created and used instead:
 
 
     <div data-bind="text: person.lowerCaseName"></div>
