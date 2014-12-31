@@ -131,11 +131,11 @@ The TreeListDataSource can be bound to remote data, in order to enable the TreeL
 
 Note that the `parentId` is mapped from the `ReportsTo` field by the line `parentId: { field: "ReportsTo", nullable: true }`. The TreeList renders its hierarchy based on the `parentId` - `id` relationship.
 
-> All fields that must be listed when using `schema.model.fields`. The field which represents the `id` of the event must also be set via `schema.model.id`. Not setting these will still work for displaying data, but will post incomplete objects on the server when editing items.
+> All fields must be listed when using `schema.model.fields`. The field which represents the `id` of the event must also be set via `schema.model.id`. Not setting these will still work for displaying data, but will post incomplete objects on the server when editing items.
 
 ## Getting reference to a Kendo UI TreeList
 
-To get a reference to a Kendo UI TreeList instance, use the jQuery `data` and pass "kendoTreeList" as argument:
+To get a reference to a Kendo UI TreeList instance, use the jQuery `data` method and pass "kendoTreeList" as argument:
 
 ### Example - get reference to a Kendo UI TreeList
 
@@ -162,7 +162,7 @@ To get a reference to a Kendo UI TreeList instance, use the jQuery `data` and pa
 
 ## Using the API of Kendo UI TreeList
 
-The TreeList widget exposes a set of [methods](/api/web/treelist#methods) and [fields](/api/web/treelist#fields) which you can use.
+The TreeList widget exposes a set of [methods](/api/javascript/ui/treelist#methods) and [fields](/api/javascript/ui/treelist#fields) which you can use.
 
 ### Example - use the API of the Kendo UI TreeList
 
@@ -193,12 +193,12 @@ The TreeList widget exposes a set of [methods](/api/web/treelist#methods) and [f
 
 ## Subscribing to the events of Kendo UI TreeList
 
-The treelist widget supports a set of [events](/api/web/treelist#events) which you can subscribe to. There are two ways to handle events:
+The treelist widget supports a set of [events](/api/javascript/ui/treelist#events) which you can subscribe to. There are two ways to handle events:
 
 * Specify the JavaScript function which will handle the event during widget initialization.
 * Use the `bind` method of the widget.
 
-The event handler is the JavaScript function invoked when the event is fired. The argument of the event handler is a JavaScript object which contains event specific data.
+The event handler is the JavaScript function invoked when the event is fired. The argument of the event handler is a JavaScript object which contains event-specific data.
 You can get a reference of the widget which fired the event via the `sender` field of the event argument.
 The function context of the event handler (available via the `this` keyword) is set to the instance of the widget which fired the event.
 
