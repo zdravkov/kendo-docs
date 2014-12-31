@@ -10,7 +10,7 @@ previous_url: /howto/interact-with-an-existing-database
 
 The DataSource plays a central role in practically all web applications built with Kendo UI.
 It is an abstraction for using local data (arrays of JavaScript objects) or
-remote data (web services returning JSON, JSONP, OData or XML).
+remote data (web services returning JSON, JSONP, [OData](http://www.odata.org/) or XML).
 
 The Kendo UI DataSource has many abilities and responsibilities, including:
 
