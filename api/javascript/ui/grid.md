@@ -1,7 +1,7 @@
 ---
 title: Grid
 page_title: Configuration, methods and events of Kendo UI Grid
-description: Code examples for Grid UI widget configuration, learn how to use methods and which events to set once the grid UI widget detail is initialized and expanded.
+description: Code examples for Grid UI widget configuration. Learn how to use methods and which events to set once the grid UI widget detail is initialized and expanded.
 ---
 
 # kendo.ui.Grid
@@ -1882,7 +1882,7 @@ Check [Detail Template](http://demos.telerik.com/kendo-ui/web/grid/detailtemplat
 
 ### editable `Boolean|Object` *(default: false)*
 
-If set to `true` the user would be able to edit the data to which the grid is bound to. By default editing is disabled.
+If set to `true` the user would be able to edit the data to which the grid is bound. By default editing is disabled.
 
 Can be set to a string ("inline", "incell" or "popup") to specify the editing mode. The default editing mode is "incell".
 
@@ -2357,7 +2357,8 @@ The proxy will receive a POST request with the following parameters in the reque
 * base64: The base-64 encoded file content
 * fileName: The file name, as requested by the caller.
 
-The proxy should return the decoded file with set "Content-Disposition" header.
+The proxy should return the decoded file with the "Content-Disposition" header set to
+`attachment; filename="<fileName.xslx>"`.
 
 #### Example - set the server proxy URL
     <div id="grid"></div>
@@ -2405,7 +2406,7 @@ Can be set to a JavaScript object which represents the filter menu configuration
 
 ### filterable.extra `Boolean` *(default: true)*
 
-If set to `true` the filter menu allows the user to input a second criteria.
+If set to `true` the filter menu allows the user to input a second criterion.
 
 #### Example - disable the extra filtering criteria
 
@@ -3574,7 +3575,7 @@ Can also be set to the following string values:
                     { field: "age" }
                 ],
                 filterable: {
-                    mode: "menu"
+                    mode: "menu, row"
                 },
                 dataSource: [
                     { name: "Jane Doe", age: 30 },
@@ -3780,7 +3781,7 @@ Defines the text of the command buttons that are shown within the Grid. Used pri
 
 ### messages.commands.cancel `String`
 
-Defines the text of "Cancel Changes" button located in the toolbar of the widget.
+Defines the text of the "Cancel Changes" button located in the toolbar of the widget.
 
 #### Example
 
@@ -3807,7 +3808,7 @@ Defines the text of "Cancel Changes" button located in the toolbar of the widget
 
 ### messages.commands.canceledit `String`
 
-Defines the text of "Cancel" button that is rendered in `inline` or `popup` editing mode.
+Defines the text of the "Cancel" button that is rendered in `inline` or `popup` editing mode.
 
 #### Example
 
@@ -3834,7 +3835,7 @@ Defines the text of "Cancel" button that is rendered in `inline` or `popup` edit
 
 ### messages.commands.create `String`
 
-Defines the text of "Add new record" button located in the toolbar of the widget.
+Defines the text of the "Add new record" button located in the toolbar of the widget.
 
 #### Example
 
@@ -3861,7 +3862,7 @@ Defines the text of "Add new record" button located in the toolbar of the widget
 
 ### messages.commands.destroy `String`
 
-Defines the text of "Delete" button rendered in `inline` or `popup` editing mode.
+Defines the text of the "Delete" button rendered in `inline` or `popup` editing mode.
 
 #### Example
 
@@ -3888,7 +3889,7 @@ Defines the text of "Delete" button rendered in `inline` or `popup` editing mode
 
 ### messages.commands.edit `String`
 
-Defines the text of "Edit" button that is rendered in `inline` or `popup` editing mode.
+Defines the text of the "Edit" button that is rendered in `inline` or `popup` editing mode.
 
 #### Example
 
@@ -3915,7 +3916,7 @@ Defines the text of "Edit" button that is rendered in `inline` or `popup` editin
 
 ### messages.commands.excel `String`
 
-Defines the text of "Export to Excel" button of the grid toolbar.
+Defines the text of the "Export to Excel" button of the grid toolbar.
 
 #### Example
 
@@ -3941,7 +3942,7 @@ Defines the text of "Export to Excel" button of the grid toolbar.
 
 ### messages.commands.save `String`
 
-Defines the text of "Save Changes" button located in the toolbar of the widget.
+Defines the text of the "Save Changes" button located in the toolbar of the widget.
 
 #### Example
 
@@ -3968,7 +3969,7 @@ Defines the text of "Save Changes" button located in the toolbar of the widget.
 
 ### messages.commands.update `String`
 
-Defines the text of "Update" button that is rendered in `inline` or `popup` editing mode.
+Defines the text of the "Update" button that is rendered in `inline` or `popup` editing mode.
 
 #### Example
 
@@ -4900,7 +4901,8 @@ The proxy will receive a POST request with the following parameters in the reque
 * base64: The base-64 encoded file content
 * fileName: The file name, as requested by the caller.
 
-The proxy should return the decoded file with set "Content-Disposition" header.
+The proxy should return the decoded file with the "Content-Disposition" header set to
+`attachment; filename="<fileName.pdf>"`.
 
 #### Example - set the server proxy URL
     <div id="grid"></div>
@@ -5182,7 +5184,7 @@ If set to `true` the user can get the grid in unsorted state by clicking the sor
 
 ### sortable.mode `String` *(default: "single")*
 
-The sorting mode. If set to "single" the user can sort by one column. If set to "multiple" the user can sort by one column.
+The sorting mode. If set to "single" the user can sort by one column. If set to "multiple" the user can sort by multiple columns.
 
 #### Example - allow multiple column sorting
 
@@ -5205,12 +5207,12 @@ The sorting mode. If set to "single" the user can sort by one column. If set to 
 
 ### toolbar `String|Function|Array`
 
-If a `String` value is assigned to the `toolbar` configuration option, it will be treated as a single string template for the whole Grid Toolbar,
+If a `String` value is assigned to the `toolbar` configuration option, it will be treated as a single string template for the whole grid Toolbar,
 and the string value will be passed as an argument to a [`kendo.template()`](/api/framework/kendo#methods-template) function.
 
 If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the Grid Toolbar contents.
 
-If an `Array` value is assigned, it will be treated as the list of commands displayed in the Grid Toolbar. Commands can be custom or built-in ("cancel", "create", "save", "excel", "pdf").
+If an `Array` value is assigned, it will be treated as the list of commands displayed in the grid's Toolbar. Commands can be custom or built-in ("cancel", "create", "save", "excel", "pdf").
 
 The "cancel" built-in command reverts any data changes done by the end user.
 
@@ -5436,7 +5438,7 @@ The columns of the grid initialized from the [columns](#configuration-columns) o
 
 The [data source](/api/framework/datasource) of the widget. Configured via the [dataSource](#configuration-dataSource) option.
 
-> Changes of the data source will be reflected in the widget.
+> Changes to the data source will be reflected in the widget.
 
 > Assigning a new data source would have no effect. Use the [setDataSource](#methods-setDataSource) method instead.
 
@@ -5890,7 +5892,7 @@ A string, DOM element or jQuery object which represents the table row. A string 
 
 ### destroy
 
-Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
+Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls the `destroy` method of any child Kendo widgets.
 
 > This method does not remove the widget element from DOM.
 
@@ -6242,9 +6244,9 @@ The column whose position should be changed.
 
 ### saveAsExcel
 
-Initiates the Excel export. Also fires the "excelExport" event.
+Initiates the Excel export. Also fires the [`excelExport`](#events-excelExport) event.
 
-> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that, always call it as a response to an end-user action e.g. button click.
 
 #### Example - manually initiate Excel export
 
@@ -6269,9 +6271,9 @@ Initiates the Excel export. Also fires the "excelExport" event.
 
 ### saveAsPDF
 
-Initiates the PDF export. Also fires the "pdfExport" event.
+Initiates the PDF export. Also fires the [`pdfExport`](#events-pdfExport) event.
 
-> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that, always call it as a response to an end-user action e.g. button click.
 
 #### Example - manually initiate PDF export
 
@@ -6462,9 +6464,9 @@ The data source to which the widget should be bound.
 
 ### setOptions
 
-Sets the options of the Grid. Use this method if you want to enable/disable a particular feature/option or to loadcomplete state retrieved from the getOptions method.
+Sets the options of the Grid. Use this method if you want to enable/disable a particular feature/option or to load the complete state retrieved via the [`getOptions`](#getOptions) method.
 
-> Important limitation when using setOptions method in combination with the MVC wrappers is that any toolbar or header server templates (razor syntax @<text></text>) will be lost and the layout will become incorrect once the method is invoked. Those options cannot be persisted because there is no JavaScript equivalent option for them since they contain server side logic. Consider using JavaScript initialization (instead MVC wrapper). Another option is to specify the same option with the JavaScript equivalent.
+> An important limitation when using the `setOptions` method in combination with the MVC wrappers is that any toolbar or header server templates (razor syntax @<text></text>) will be lost and the layout will become incorrect once the method is invoked. Those options cannot be persisted because there is no JavaScript equivalent option for them since they contain server side logic. Consider using JavaScript initialization (instead of the MVC wrapper). An alternative is to specify the same option with the JavaScript equivalent.
 
 #### Parameters
 
@@ -7479,7 +7481,7 @@ The widget instance which fired the event.
 
 ##### e.data `Array`
 
-The array of data items used to create the Excel workbook. Available since the 2014.3.1205 version.
+The array of data items used to create the Excel workbook. Available since version 2014.3.1205.
 
 ##### e.workbook `Object`
 
@@ -7605,7 +7607,7 @@ The field of the column for which the filter menu is initialized.
 
 The widget instance which fired the event.
 
-#### Example - subscribe to the "filterMenuInit" event during initialization
+#### Example - subscribe to the "filterMenuInit" event during initialization and change the default operators
 
     <div id="grid"></div>
     <script>
