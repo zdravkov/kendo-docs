@@ -135,12 +135,13 @@ The one thing you must be careful about when using `rowTemplate` is to include t
 In order to take full control on the logic that performs the request to the server all you have to do is to define the different transport operations as functions. Inside the function you can use the $http or the $.ajax methods to perform the needed. When done (inside the success callback) you just need to pass the result to the `success` function part of the events arguments object.
 
         <div ng-controller="MyCtrl">
-            <kendo-grid options="GridOptions"></kendo-grid>
+            <div kendo-grid k-options="gridOptions"></div>
         </div>
         <script>
 
-        angular.module("mine").controller("MyCtrl", function($scope) {
-            $scope.mainGridOptions = {
+        angular.module("mine", ["kendo.directives"]).controller("MyCtrl", function($scope, $http) {
+            $scope.gridOptions = {
+                columns: [ { field: "FirstName" }, { field: "LastName" } ],
                 dataSource: {
                     schema: {
                         data: "d"
@@ -157,9 +158,7 @@ In order to take full control on the logic that performs the request to the serv
                           });
                       }
                    },
-                  pageSize: 5,
-                  serverPaging: true,
-                  serverSorting: true
+                  pageSize: 5
                 }
             }
         });
