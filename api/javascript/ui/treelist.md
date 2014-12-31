@@ -1,7 +1,7 @@
 ---
 title: TreeList
 page_title: Configuration, methods and events of Kendo UI TreeList
-description: Code examples for TreeList UI widget configuration, learn how to use methods and which events to set once the treelist UI widget is initialized and expanded.
+description: Code examples for TreeList UI widget configuration. Learn how to use methods and which events to set once the treelist UI widget is initialized and expanded.
 ---
 
 # kendo.ui.TreeList
@@ -12,7 +12,7 @@ Represents the Kendo UI TreeList widget. Inherits from [Widget](/api/framework/w
 
 ### columns `Array`
 
-The configuration of the treelist columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
+The configuration of the treelist columns. An array of JavaScript objects or strings. JavaScript objects are interpreted as column configurations. Strings are interpreted as the
 [field](#configuration-columns.field) to which the column is bound. The treelist will create a column for every item of the array.
 
 #### Example - specify treelist columns as array of strings
@@ -73,17 +73,17 @@ The table cells would look like this: `<td class="name-cell" style="text-align: 
 
 ### columns.command `Array`
 
-The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit", "destroy" or "createChild").
+The configuration of the column command(s). If set the column would display a button for every command. Commands can be custom or built-in ("edit", "createChild" or "destroy"):
 
-The "edit" built-in command switches the current table row in edit mode.
+* The "edit" built-in command switches the current table row to edit mode.
 
-The "createChild" built-in command adds new child item to the current table row and switches in edit mode.
+* The "createChild" built-in command adds a new child item to the current table row and switches to edit mode.
 
-The "destroy" built-in command removes the data item to which the current table row is bound.
+* The "destroy" built-in command removes the data item to which the current table row is bound.
 
 Custom commands are supported by specifying the [click](#configuration-columns.command.click) option.
 
-> The built-in "edit", "destroy" and "createChild" commands work *only* if editing is enabled via the [editable](#configuration-editable) option. The "edit" command supports "inline" and "popup" editing modes.
+> The built-in "edit", "createChild" and "destroy" commands work *only* if editing is enabled via the [editable](#configuration-editable) option. The "edit" command supports "inline" and "popup" editing modes.
 
 #### Example - set command as array of strings
 
@@ -298,7 +298,7 @@ The model instance to which the current table row is bound.
                 {
                     field: "name",
                     editor: function(container, options) {
-                        //create input element and add the validation attribute
+                        // create input element and add the validation attribute
                         var input = $('<input name="' + options.field + '" required="required" />');
                         // set its name to the field to which the column is bound ('name' in this case)
                         input.attr("name", options.field);
@@ -313,9 +313,9 @@ The model instance to which the current table row is bound.
                             ]
                         });
 
-                        //create tooltipElement element, NOTE: data-for attribute should match editor's name attribute
+                        // create tooltipElement element, NOTE: data-for attribute should match editor's name attribute
                         var tooltipElement = $('<span class="k-invalid-msg" data-for="' + options.field + '"></span>');
-                        //append the tooltip element
+                        // append the tooltip element
                         tooltipElement.appendTo(container);
                     }
                 },
@@ -349,7 +349,7 @@ If set to `true` the column value will be HTML-encoded before it is displayed. I
 
 ### columns.expandable `Boolean` *(default: false)*
 
-If set to `true` the column will show the icons that are used for exapdning and collapsing of child rows. By default, the first column of the TreeList is expandable.
+If set to `true` the column will show the icons that are used for expanding and collapsing child rows. By default, the first column of the TreeList is expandable.
 
 #### Example - make the second column expandable
 
@@ -482,7 +482,7 @@ The table headers would look like this: `<th class="name-header" style="text-ali
 The [template](/api/framework/kendo#methods-template) which renders the column header content. By default the value of the [title](#configuration-columns.title) column option
 is displayed in the column header cell.
 
-> If sorting is enabled, the column header content will be wrapped in a `<a>` element. As a result the template **must** contain only inline elements.
+> If sorting is enabled, the column header content will be wrapped in an `<a>` element. As a result the template **must** contain only inline elements.
 
 #### Example - column header template as a string
 
@@ -567,7 +567,7 @@ Each table row consists of table cells (`<td>`) which represent the treelist col
     $("#treelist").kendoTreeList({
       columns: [ {
         field: "name",
-        template: "<strong>#: name # </strong>"
+        template: "<strong>#: name #</strong>"
       }],
       dataSource: [ { name: "Jane Doe" }, { name: "John Doe" } ]
     });
@@ -589,7 +589,7 @@ The text that is displayed in the column header cell. If not set the [field](#co
 
 ### columns.width `String|Number`
 
-The width of the column. Numeric values are treated as pixels. **For more important information, please refer to [Column Widths](/web/treelist/walkthrough#column-widths)**.
+The width of the column. Numeric values are treated as pixels. **For more important information, please refer to [Column Widths](/web/grid/walkthrough#column-widths)**.
 
 #### Example - set the column width as a string
      <div id="treelist"></div>
@@ -644,7 +644,7 @@ Can be set to a JavaScript object which represents the filter menu configuration
 
 ### columns.filterable.ui `String|Function`
 
-The role data attribute of the widget used in the filter menu or a JavaScript function which initializes that widget.
+The `role` [data attribute](/framework/data-attribute-initialization) of the widget used in the filter menu or a JavaScript function which initializes that widget.
 
 #### Example - specify the filter UI as a string
 
@@ -682,7 +682,7 @@ The role data attribute of the widget used in the filter menu or a JavaScript fu
 
 ### autoBind `Boolean` *(default: true)*
 
-If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/framework/datasource#events-change) event of the
+If set to `false` the widget will not bind to the data source during initialization. In this case data binding will occur when the [change](/api/javascript/data/datasource#events-change) event of the
 data source is fired. By default the widget will bind to the data source specified in the configuration.
 
 > Setting `autoBind` to `false` is useful when multiple widgets are bound to the same data source. Disabling automatic binding ensures that the shared data source doesn't make more than one request to the remote service.
@@ -761,7 +761,7 @@ Defines the text of "No records to display" message when the widget does not sho
 
 ### messages.loading `String` *(default: "Loading...")*
 
-Defines the text of "Loading..." message when the widget loads its root-level items.
+Defines the text of the "Loading..." message when the widget loads its root-level items.
 
 #### Example
 
@@ -858,7 +858,7 @@ Defines the text for the command buttons used across the widget.
 
 ### messages.commands.edit `String` *(default: "Edit")*
 
-Defines the text of "Edit" button that shows the editable fields for the row.
+Defines the text of the "Edit" button that shows the editable fields for the row.
 
 #### Example
 
@@ -882,7 +882,7 @@ Defines the text of "Edit" button that shows the editable fields for the row.
 
 ### messages.commands.update `String` *(default: "Update")*
 
-Defines the text of "Update" button that applies the changes during editing.
+Defines the text of the "Update" button that applies the changes during editing.
 
 #### Example
 
@@ -906,7 +906,7 @@ Defines the text of "Update" button that applies the changes during editing.
 
 ### messages.commands.canceledit `String` *(default: "Cancel")*
 
-Defines the text of "Cancel" button that discards the changes during editing.
+Defines the text of the "Cancel" button that discards the changes during editing.
 
 #### Example
 
@@ -930,7 +930,7 @@ Defines the text of "Cancel" button that discards the changes during editing.
 
 ### messages.commands.create `String` *(default: "Add new record")*
 
-Defines the text of "Add new record" button that adds new data rows.
+Defines the text of the "Add new record" button that adds new data rows.
 
 #### Example
 
@@ -954,7 +954,7 @@ Defines the text of "Add new record" button that adds new data rows.
 
 ### messages.commands.createchild `String` *(default: "Add child record")*
 
-Defines the text of "Add child record" button that adds new child data rows.
+Defines the text of the "Add child record" button that adds new child data rows.
 
 #### Example
 
@@ -978,7 +978,7 @@ Defines the text of "Add child record" button that adds new child data rows.
 
 ### messages.commands.destroy `String` *(default: "Delete")*
 
-Defines the text of "Delete" button that deletes a data row.
+Defines the text of the "Delete" button that deletes a data row.
 
 #### Example
 
@@ -1002,7 +1002,7 @@ Defines the text of "Delete" button that deletes a data row.
 
 ### messages.commands.excel `String` *(default: "Export to Excel")*
 
-Defines the text of "Export to Excel" button that exports the widget data in spreadsheet format.
+Defines the text of the "Export to Excel" button that exports the widget data in spreadsheet format.
 
 #### Example
 
@@ -1026,7 +1026,7 @@ Defines the text of "Export to Excel" button that exports the widget data in spr
 
 ### messages.commands.pdf `String` *(default: "Export to PDF")*
 
-Defines the text of "Export to PDF" button that exports the widget data in PDF format.
+Defines the text of the "Export to PDF" button that exports the widget data in PDF format.
 
 #### Example
 
@@ -1213,6 +1213,7 @@ Specifies the file name of the exported PDF file.
     </script>
 
 ### pdf.forceProxy `Boolean` *(default: false)*
+
 If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.proxyURL) even if the browser supports saving files locally.
 
 ### pdf.keywords `String` *(default: null)*
@@ -1257,7 +1258,7 @@ Specifies the keywords of the exported PDF file.
 
 ### pdf.landscape `Boolean` *(default: false)*
 
-Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+Set to `true` to reverse the paper dimensions such that width is the larger edge.
 
 #### Example - enable landscape mode
 
@@ -1360,13 +1361,13 @@ The top margin. Numbers are considered as "pt" units.
 ### pdf.paperSize `String|Array` *(default: "auto")*
 
 Specifies the paper size of the PDF document.
-The default "auto" means paper size is determined by content.
+The default "auto" means the paper size is determined by the content.
 
 > The size of the content in pixels will match the size of the output in points (1 pixel = 1/72 inch).
 
 Supported values:
 
-* A predefined size: "A4", "A3" etc
+* A predefined size: "A4", "A3" etc.
 * An array of two numbers specifying the width and height in points (1pt = 1/72in)
 * An array of two strings specifying the width and height in units.
   Supported units are "mm", "cm", "in" and "pt".
@@ -1412,7 +1413,7 @@ Supported values:
 The URL of the server side proxy which will stream the file to the end user.
 
 A proxy will be used when the browser isn't capable of saving files locally.
-Such browsers are IE version 9 and lower and Safari.
+Such browsers are IE version 9 and lower, and Safari.
 
 The developer is responsible for implementing the server-side proxy.
 
@@ -1422,7 +1423,8 @@ The proxy will receive a POST request with the following parameters in the reque
 * base64: The base-64 encoded file content
 * fileName: The file name, as requested by the caller.
 
-The proxy should return the decoded file with set "Content-Disposition" header.
+The proxy should return the decoded file with the "Content-Disposition" header set to
+`attachment; filename="<fileName.pdf>"`.
 
 #### Example - set the server proxy URL
 
@@ -1633,7 +1635,7 @@ Can be set to a JavaScript object which represents the sorting configuration.
 
 ### sortable.allowUnsort `Boolean` *(default: true)*
 
-If set to `true` the user can get the treelist in unsorted state by clicking the sorted column header.
+If set to `true` the user can get the treelist in its unsorted state by clicking the sorted column header.
 
 #### Example - do not allow unsorting
 
@@ -1656,7 +1658,7 @@ If set to `true` the user can get the treelist in unsorted state by clicking the
 
 ### sortable.mode `String` *(default: "single")*
 
-The sorting mode. If set to "single" the user can sort by one column. If set to "multiple" the user can sort by one column.
+The sorting mode. If set to "single" the user can sort by one column. If set to "multiple" the user can sort by multiple columns.
 
 #### Example - allow multiple column sorting
 
@@ -1668,7 +1670,7 @@ The sorting mode. If set to "single" the user can sort by one column. If set to 
             { field: "age" }
           ],
           sortable: {
-              model: "multiple"
+              mode: "multiple"
           },
           dataSource: [
               { name: "Jane Doe", age: 30 },
@@ -1682,15 +1684,15 @@ The sorting mode. If set to "single" the user can sort by one column. If set to 
 If a `String` value is assigned to the `toolbar` configuration option, it will be treated as a single string template for the whole treelist Toolbar,
 and the string value will be passed as an argument to a [`kendo.template()`](/api/framework/kendo#methods-template) function.
 
-If a `Function` value is assigned (it may be a kendo.template() function call or a generic function reference), then the return value of the function will be used to render the treelist Toolbar contents.
+If a `Function` value is assigned (it may be a `kendo.template()` function call or a generic function reference), then the return value of the function will be used to render the treelist Toolbar contents.
 
-If an `Array` value is assigned, it will be treated as the list of commands displayed in the treelist Toolbar. Commands can be custom or built-in ("create", "pdf", "excel").
+If an `Array` value is assigned, it will be treated as the list of commands displayed in the treelist Toolbar. Commands can be custom or built-in ("create", "excel", "pdf").
 
-The "create" command adds an empty data item to the treelist.
+* The "create" command adds an empty data item to the treelist.
 
-The "excel" command exports the treelist data in MS Excel format.
+* The "excel" command exports the treelist data in MS Excel format.
 
-The "pdf" command exports the treelist data in PDF format.
+* The "pdf" command exports the treelist data in PDF format.
 
 #### Example - configure the TreeList Toolbar as a string template
 
@@ -1747,8 +1749,8 @@ The "pdf" command exports the treelist data in PDF format.
 
 ### toolbar.name `String`
 
-The name of the toolbar command. Either a built-in ("create", "pdf", "excel") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
-This class can be used to obtain reference to the button after TreeList initialization and attach click handlers.
+The name of the toolbar command. Either a built-in ("create", "excel", "pdf") or custom. The `name` is reflected in one of the CSS classes, which is applied to the button - `k-grid-name`.
+This class can be used to get a reference to the button (after TreeList initialization) and attach click handlers.
 
 #### Example - specify the name of the command
 
@@ -1835,29 +1837,9 @@ If set to `true` the user can filter the data source using the treelist filter m
 
 Can be set to a JavaScript object which represents the filter menu configuration.
 
-#### Example - enable filtering
+> All other [`filterable` options from Grid](/api/javascript/ui/grid#configuration-filterable) can be used, except for `filterable.mode`, which is always `menu`.
 
-    <div id="treeList"></div>
-    <script>
-        $("#treeList").kendoTreeList({
-          height: "100em",
-          columns: [
-            { field: "name" },
-            { field: "age" }
-          ],
-          filterable: true,
-          dataSource: [
-              { name: "Jane Doe", age: 30 },
-              { name: "John Doe", age: 33 }
-          ]
-        });
-    </script>
-
-### filterable.extra `Boolean` *(default: true)*
-
-If set to `true` the filter menu allows the user to input a second criteria.
-
-#### Example - disable the extra filtering criteria
+#### Example - enable and configure filtering
 
     <div id="treeList"></div>
     <script>
@@ -1868,7 +1850,50 @@ If set to `true` the filter menu allows the user to input a second criteria.
             { field: "age" }
           ],
           filterable: {
-            extra: false
+            extra: false,
+            messages: {
+              and: "and",
+              or: "or",
+              filter: "Apply filter",
+              clear: "Clear filter",
+              info: "Filter by: ",
+              isFalse: "False",
+              isTrue: "True",
+              selectValue: "Select category",
+              cancel: "Reject",
+              operator: "Choose operator",
+              value: "Choose value"
+            },
+            operators: {
+              string: {
+                eq: "Equal to",
+                neq: "Not equal to",
+                startswith: "Starts",
+                endswith: "Ends",
+                contains: "Contains",
+                doesnotcontain: "Doesn't contain"
+              },
+              number: {
+                eq: "Equal to",
+                neq: "Not equal to",
+                gt: "Greater than",
+                gte: "Greater than or equal to",
+                lt: "Less than",
+                lte: "Less than or equal to"
+              },
+              date: {
+                gt: "After",
+                gte: "On or after"
+                lt: "Before",
+                lte: "On or before",
+                eq: "On",
+                neq: "Not equal"
+              },
+              enums: {
+                eq: "Equal to",
+                neq: "Not equal to"
+              }
+            }
           },
           dataSource: [
               { name: "Jane Doe", age: 30 },
@@ -1877,9 +1902,10 @@ If set to `true` the filter menu allows the user to input a second criteria.
         });
     </script>
 
+
 ### editable `Boolean|Object` *(default: false)*
 
-If set to `true` the user would be able to edit the data to which the treelist is bound to. By default editing is disabled.
+If set to `true` the user would be able to edit the data to which the treelist is bound. By default editing is disabled.
 
 Can be set to a string ("inline" or "popup") to specify the editing mode. The default editing mode is "inline".
 
@@ -1923,7 +1949,7 @@ Can be set to a JavaScript object which represents the editing configuration.
         });
     </script>
 
-### editable.mode `String` *(default: "incell")*
+### editable.mode `String` *(default: "inline")*
 
 The editing mode to use. The supported editing modes are "inline" and "popup".
 
@@ -1951,12 +1977,12 @@ The editing mode to use. The supported editing modes are "inline" and "popup".
 
 ### editable.template `String|Function`
 
-The [template](/api/framework/kendo#methods-template) which renders popup editor.
+The [template](/api/framework/kendo#methods-template) which renders the popup editor.
 
 The template should contain elements whose `name` HTML attributes are set as the editable fields. This is how the treelist will know
 which field to update. The other option is to use [MVVM](/framework/mvvm/overview) bindings in order to bind HTML elements to data item fields.
 
-> Use the `role` data attribute to initialize Kendo UI widgets in the template. Check [data attribute initialization](/data-attribute-initialization) for more info.
+> Use the `role` data attribute to initialize Kendo UI widgets in the template. Check [data attribute initialization](/framework/data-attribute-initialization) for more info.
 
 #### Example - customize the popup editor
 
@@ -2020,7 +2046,7 @@ which field to update. The other option is to use [MVVM](/framework/mvvm/overvie
 
 ### editable.window `Object`
 
-Configures the Kendo UI Window instance, which is used when the TreeLsit edit mode is `"popup"`. The configuration is optional.
+Configures the Kendo UI Window instance, which is used when the TreeList edit mode is "popup". The configuration is optional.
 
 For more information, please refer to the [Window configuration API](/api/web/window).
 
@@ -2136,11 +2162,12 @@ Enables or disables column filtering in the Excel file. Not to be mistaken with 
     </script>
 
 ### excel.forceProxy `Boolean` *(default: false)*
+
 If set to true, the content will be forwarded to [proxyURL](#configuration-excel.proxyURL) even if the browser supports saving files locally.
 
 ### excel.proxyURL `String` *(default: null)*
 
-The URL of the server side proxy which will stream the file to the end user.
+The URL of the server-side proxy which will stream the file to the end user.
 
 A proxy will be used when the browser isn't capable of saving files locally.
 Such browsers are IE version 9 and lower and Safari.
@@ -2153,7 +2180,8 @@ The proxy will receive a POST request with the following parameters in the reque
 * base64: The base-64 encoded file content
 * fileName: The file name, as requested by the caller.
 
-The proxy should return the decoded file with set "Content-Disposition" header.
+The proxy should return the decoded file with the "Content-Disposition" header set to
+`attachment; filename="<fileName.xslx>"`.
 
 #### Example - set the server proxy URL
 
@@ -2192,12 +2220,12 @@ The proxy should return the decoded file with set "Content-Disposition" header.
 
 ### dataSource `Object|Array|kendo.data.TreeListDataSource`
 
-The data source of the widget which is used render table rows. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
+The data source of the widget which is used to render table rows. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
 instance.
 
 If the `dataSource` option is set to a JavaScript object or array the widget will initialize a new [kendo.data.DataSource](/api/framework/datasource) instance using that value as data source configuration.
 
-If the `dataSource` option is an existing [kendo.data.DataSource](/api/framework/datasource) instance the widget will use that instance and will **not** initialize a new one.
+If the `dataSource` option is an existing `kendo.data.DataSource` instance, the widget will use that instance and will **not** initialize a new one.
 
 #### Example - set dataSource as a JavaScript object
 
@@ -2278,9 +2306,9 @@ Renders all table rows using the current data items.
 
 ### saveAsExcel
 
-Initiates the Excel export. Also fires the "excelExport" event.
+Initiates the Excel export. Also fires the [`excelExport`](#events-excelExport) event.
 
-> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that, always call it as a response to an end-user action e.g. button click.
 
 #### Example - manually initiate Excel export
 
@@ -2302,9 +2330,9 @@ Initiates the Excel export. Also fires the "excelExport" event.
 
 ### saveAsPDF
 
-Initiates the PDF export. Also fires the "pdfExport" event.
+Initiates the PDF export. Also fires the [`pdfExport`](#events-pdfExport) event.
 
-> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that, always call it as a response to an end-user action e.g. button click.
 
 #### Example - manually initiate PDF export
 
@@ -2326,7 +2354,7 @@ Initiates the PDF export. Also fires the "pdfExport" event.
 
 ### destroy
 
-Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
+Prepares the widget for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls the `destroy` method of any child Kendo widgets.
 
 > This method does not remove the widget element from DOM.
 
@@ -2530,7 +2558,7 @@ A string, DOM element or jQuery object which represents the table row. A string 
 
 ### editRow
 
-Switches the specified table row in edit mode.
+Switches the specified table row to edit mode.
 
 Fires the [edit](#events-edit) event.
 
@@ -2540,7 +2568,7 @@ Fires the [edit](#events-edit) event.
 
 The jQuery object which represents the table row.
 
-#### Example - switch the first row in edit mode
+#### Example - switch the first row to edit mode
 
     <div id="treeList"></div>
     <script>
@@ -2623,7 +2651,7 @@ Fires the [edit](#events-save) event.
 
 ### addRow
 
-Adds an empty data item to the treelist. In "inline" editing mode a table row will be appended. Popup window will be displayed in "popup" editing mode.
+Adds an empty data item to the treelist. In "inline" editing mode a table row will be appended. A popup window will be displayed in "popup" editing mode.
 
 Fires the [edit](#events-edit) event.
 
@@ -2895,7 +2923,7 @@ The widget instance which fired the event.
 
 ##### e.data `Array`
 
-The array of data items used to create the Excel workbook. Available since the 2014.3.1205 version.
+The array of data items used to create the Excel workbook. Available since version 2014.3.1205.
 
 ##### e.workbook `Object`
 
@@ -3090,7 +3118,7 @@ The widget instance which fired the event.
 
 ##### e.preventDefault `Function`
 
-If invoked prevents the remove of the model. The table rows will remain unchanged.
+If invoked prevents the removal of the data item. The table rows will remain unchanged.
 
 #### Example - subscribe to the "remove" event before initialization
 
@@ -3457,7 +3485,7 @@ The widget instance which fired the event.
         });
     </script>
 
-#### Example - subscribe to the "filterMenuInit" event after initialization
+#### Example - subscribe to the "filterMenuInit" event during initialization and change the default operators
 
     <div id="treelist"></div>
     <script>
