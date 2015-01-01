@@ -80,6 +80,12 @@ The discrete [categoryAxis.baseUnitStep](#configuration-categoryAxis.baseUnitSte
 either [categoryAxis.baseUnit](#configuration-categoryAxis.baseUnit) is set to "fit" or
 [categoryAxis.baseUnitStep](#configuration-categoryAxis.baseUnitStep) is set to "auto".
 
+The axis will try to divide the active period into successively larger intervals.
+It will start from x-second intervals, where x is picked from the autoBaseUnitSteps.seconds array.
+Then it will move to minutes, seconds and so on.
+This will continue until the number of intervals is less than
+[maxDateGroups](#configuration-categoryAxis.maxDateGroups).
+
 #### Example - set category axis auto base unit steps
 
     <div id="chart"></div>
