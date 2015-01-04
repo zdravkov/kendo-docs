@@ -140,7 +140,7 @@ Specifies the type of the field. The available options are `"string"`, `"number"
 
 ##### options.fields.fieldName.from `String`
 
-Specifies the field of the original record which value to be used for population of the Model field.
+Specifies the field of the original record whose value is used to populate the Model field.
 
 ##### options.fields.fieldName.validation `Object`
 
