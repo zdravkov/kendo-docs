@@ -126,29 +126,6 @@ widget needs to have different states for items that have no children (e.g. the 
     console.log(datasource.data()[0].hasChildren); // logs true
     </script>
 
-#### Example - compute if an item has children with a function
-
-    <script>
-    var datasource = new kendo.data.HierarchicalDataSource({
-      data: [
-        { categoryName: "SciFi" },
-        { categoryName: "Drama" }
-      ],
-      schema: {
-        model: {
-          hasChildren: function(item) {
-            return item.categoryName != "Drama";
-          }
-        }
-      }
-    });
-
-    datasource.read();
-
-    console.log(datasource.data()[0].hasChildren); // logs true
-    console.log(datasource.data()[1].hasChildren); // logs false
-    </script>
-
 ### schema.model.children `String|Object` *(default: "items")*
 
 DataSource object or configuration for fetching child nodes. Through examples of that can be found
