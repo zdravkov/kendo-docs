@@ -6,6 +6,10 @@ description: Easy to follow steps for DataSource component configuration, exampl
 
 # kendo.data.DataSource
 
+## Overview
+
+See the [DataSource Overview](/framework/datasource/overview) and [Basic Usage](/framework/datasource/basic-usage) for an introduction to DataSource.
+
 ## Configuration
 
 ### aggregate `Array`
