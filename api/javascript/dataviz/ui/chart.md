@@ -6312,6 +6312,12 @@ The supported values are:
 
 * "custom" - the legend is positioned using [legend.offsetX](#configuration-legend.offsetX) and [legend.offsetY](#configuration-legend.offsetY).
 
+### legend.reverse `Boolean` *(default: false)*
+
+If set to `true` the legend items will be reversed.
+
+Available in versions 2013.3.1306 and later.
+
 ### legend.visible `Boolean` *(default: true)*
 
 If set to `true` the chart will display the legend. By default the chart legend is visible.

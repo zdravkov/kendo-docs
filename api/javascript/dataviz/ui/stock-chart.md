@@ -4640,6 +4640,12 @@ The legend is positioned on the right.
 
 The legend is positioned using OffsetX and OffsetY.
 
+### legend.reverse `Boolean` *(default: false)*
+
+If set to `true` the legend items will be reversed.
+
+Available in versions 2013.3.1306 and later.
+
 ### legend.visible `Boolean`*(default: false)*
 
  The visibility of the legend.
