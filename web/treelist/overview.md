@@ -35,7 +35,7 @@ To create a Kendo UI TreeList, use an empty `div` element and supply all TreeLis
             dataSource: {
                 data: [
                     { id: 1, parentId: null, Name: "Jane Smith", Position: "CEO" },
-                    { id: 2, parentId: 1,    Name: "Alex Sells", Position: "EVP Sales" }
+                    { id: 2, parentId: 1,    Name: "Alex Sells", Position: "EVP Sales" },
                     { id: 3, parentId: 1,    Name: "Bob Price",  Position: "EVP Marketing" }
                 ]
             }
