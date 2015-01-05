@@ -31565,6 +31565,13 @@ The event handler function context (available via the `this` keyword) will be se
 
 The data point category
 
+##### e.categoryPoints `Array`
+
+A list of all points that are in the same category. Each item has the same fields - value, series, dataItem, etc.
+
+Defined only when a [shared tooltip](#configuration-tooltip.shared) is in use.
+Available in versions 2014.3.1306 and later.
+
 ##### e.element `Object`
 
 The DOM element of the data point.
