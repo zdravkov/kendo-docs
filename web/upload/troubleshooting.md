@@ -32,6 +32,15 @@ For IE10 see [KB2980019](http://support.microsoft.com/kb/2980019)
 No official fix for IE 11 as of November 6, 2014.
 See bug ID [819941](https://connect.microsoft.com/IE/feedback/details/819941/file-upload-stop-working-on-ie-with-windows-authentication)
 
+## Problem: Incorrect progress readings when using IE10/11 with Windows Authentication
+
+The upload progress indicator can go over 100% or freeze. This doesn't indicate that the request has completed.
+It seems that the issue only occurs when accessing a web server on localhost.
+
+#### Solution
+
+Deploy the application on a remote web server.
+
 ## Problem: Incorrect behavior in the Opera browser
 
 Symptom include:
