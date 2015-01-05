@@ -2991,7 +2991,7 @@ The optional function which is executed when the remote request is finished.  Th
     });
     </script>
 
-#### Example - use Promise API to track when a request finishes
+#### Example - use the Promise API to track when a request finishes
 
     <script>
     var dataSource = new kendo.data.DataSource({
@@ -3004,7 +3004,7 @@ The optional function which is executed when the remote request is finished.  Th
     });
 
     // read the data items from http://demos.telerik.com/kendo-ui/service/products
-    dataSource.fetch(function(){
+    dataSource.fetch().then(function(){
       var data = dataSource.data();
       console.log(data.length);  // displays "77"
       console.log(data[0].ProductName); // displays "Chai"
@@ -3740,7 +3740,7 @@ If you need to **filter**, it is better to use the [`filter()`](#methods-filter)
     dataSource.read(optionalData);
     </script>
 
-#### Example - use Promise API to track when a request finishes
+#### Example - use the Promise API to track when a request finishes
 
     <script>
     var dataSource = new kendo.data.DataSource({
