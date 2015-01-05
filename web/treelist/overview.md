@@ -11,7 +11,7 @@ The Kendo UI TreeList widget enables display of self-referencing tabular data, a
 
 ## Getting Started
 
-The Kendo UI TreeList needs a data source where the data is retrieved from. The treelist uses a special type of Kendo UI DataSource - the [kendo.data.TreeListDataSource](/api/framework/treelistdatasource). The `TreeListDataSource` contains instances of a custom Kendo UI model - [kendo.data.TreeListModel](/api/framework/treelistmodel) - which represents the treelist data items.
+The Kendo UI TreeList needs a data source where the data is retrieved from. The treelist uses a special type of Kendo UI DataSource - the [kendo.data.TreeListDataSource](/api/javascript/data/treelistdatasource). The `TreeListDataSource` contains instances of a custom Kendo UI model - [kendo.data.TreeListModel](/api/javascript/data/treelistmodel) - which represents the treelist data items.
 
 ## Binding to a JavaScript array
 
