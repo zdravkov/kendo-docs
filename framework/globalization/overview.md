@@ -68,3 +68,8 @@ Here is a list of widgets which depends on the current culture:
 - TimePicker
 - DateTimePicker
 - NumericTextBox
+- MaskedTextBox (globalized mask literals)
+- Scheduler
+- Gantt
+
+All widgets that support date or numeric formatting also depend on current culture. These widgets are the more complex ones like Grid, ListView, Charts and etc.
