@@ -2726,6 +2726,42 @@ The rotated item (shape or connection).
 
 The widget instance which fired the event.
 
+### mouseEnter
+
+Fired when the mouse enters a shape or a connection.
+
+Will not fire for disabled items.
+
+> Available in version 2014.3.1307 and later
+
+#### Event Data
+
+##### e.item `Object`
+
+The target shape or connection.
+
+##### e.sender `kendo.ui.Diagram`
+
+The diagram instance which fired the event.
+
+### mouseLeave
+
+Fired when the mouse leaves a shape or a connection.
+
+Will not fire for disabled items.
+
+> Available in version 2014.3.1307 and later
+
+#### Event Data
+
+##### e.item `Object`
+
+The target shape or connection.
+
+##### e.sender `kendo.ui.Diagram`
+
+The diagram instance which fired the event.
+
 ### pan
 
 Fired when the user pans the diagram.
