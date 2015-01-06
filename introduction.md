@@ -74,7 +74,7 @@ question. If you can provide a link to the closest anchor to the issue, that is 
 
 ### Update the Documentation at GitHub
 
-This is the most direct method. Follow [the contribution instructions](https://github.com/telerik/kendo-docs/blob/master/readme.md). The basic steps
+This is the most direct method. Follow [the contribution instructions](https://github.com/telerik/kendo-docs/blob/master/README.md). The basic steps
 are that you fork our documentation and submit a pull request. That way you may contribute to exactly where you found the error. After that, our technical
 writing team just needs to approve your change request. Please use only standard markdown and follow the directions at the link. If you find an issue
 in the docs, or even feel like creating new content, we are happy to have your contributions!
