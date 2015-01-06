@@ -30,7 +30,7 @@ each tab.
         });
     </script>
 
-### Initialize a Kendo UI TabStrip using JSON data object
+### Initialize a Kendo UI TabStrip using a JSON data object
      <div id="tabstrip"></div>
 
     <script>
