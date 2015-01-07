@@ -27,6 +27,22 @@ pass the plugin name as a *string* (the Kendo UI widgets are jQuery plugins).
             });
         </script>
 
+To get a reference to a widget instance, you may also use the `getKendo<WidgetName>` method.
+
+        <p>Animal: <input id="animal" /></p>
+
+        <script>
+            $(function() {
+              // create a new widget instance
+              $("#animal").kendoAutoComplete({ dataSource: [ "Ant", "Antilope", "Badger", "Beaver", "Bird" ] });
+
+              // retrieve the widget instance
+              var autoComplete = $("#animal").getKendoAutoComplete();
+              
+              console.log(autoComplete);
+            });
+        </script>
+
 > The jQuery convention of returning the selected DOM element(s) applies to widget initialization plugin methods too.
 This means that the plugin method (e.g. `kendoAutoComplete()`) **does not return the widget instance**, but the jQuery selector that the method was used on.
 
