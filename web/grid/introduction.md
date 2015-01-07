@@ -57,10 +57,14 @@ and ensures that the user will see data even if Javascript is disabled or there 
 
     <!-- Define the HTML table, with rows, columns, and data -->
     <table id="grid">
+        <colgroup>
+            <col />
+            <col style="width:100px" />
+        </colgroup>
         <thead>
             <tr>
-                <th data-field="title">Title</th>
-                <th data-field="year">Year</th>
+                <th data-field="title" data-filterable="false">Title</th>
+                <th data-field="year" data-type="number" data-template="<strong>#=year#</strong>">Year</th>
             </tr>
         </thead>
         <tbody>
@@ -79,7 +83,10 @@ and ensures that the user will see data even if Javascript is disabled or there 
     <script>
 
         $(document).ready(function(){
-          $("#grid").kendoGrid();
+          $("#grid").kendoGrid({
+            sortable: true,
+            filterable: true
+          });
         });
 
     </script>
@@ -91,6 +98,23 @@ The data field names should be valid Javascript identifiers, that's why it is re
 * no spaces
 * no special characters
 * the first character should be a letter
+
+When creating the Grid from an existing table, the following **column** settings can be defined via HTML attributes:
+
+* data field names via `data-field` attributes
+* column widths via `width` styles applied to the respective `<col>` elements
+* define data type via `data-type` attributes
+* define a column template via `data-template` attributes
+* enable or disable the column menu via `data-menu` attributes
+* enable or disable sorting via `data-sortable` attributes
+* enable or disable filtering via `data-filterable` attributes
+* enable or disable grouping via `data-groupable` attributes
+
+All attributes should be applied to the `<th>` elements, except the column width styles.
+
+All other column-related settings cannot be defined via HTML attributes in the <table>. If such settings must be used (e.g. commands, locking, editors, etc.)
+then the above attribute configuration should be abandoned and all settings should be included in the Grid's Javascript initialization statement
+(when using declarative widget initialization, the column properties should be set via the `data-columns` attribute).
 
 As seen from the above code snippets, in one case the Grid client object is attached to a `div`, while in the other case, the object is attached to a `table`.
 However, the generated resulting HTML output of the Grid depends entirely on the widget settings and it will always be the same, no matter how the widget is initialized.
