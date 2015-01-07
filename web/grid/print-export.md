@@ -142,9 +142,9 @@ When using **Kendo UI Q2 2014 SP2 (2014.2.1008) or older versions**, exporting r
 The Kendo UI Code Library provides several examples of exporting the Grid to CSV, Excel and PDF formats.
 
 * [Export Kendo UI Grid to Excel](http://www.telerik.com/support/code-library/export-grid-to-excel-8d91dd145501)
-* [Export MVC Grid to Excel](http://www.telerik.com/support/code-library/export-grid-to-excel)
-* [Export MVC Grid to PDF](http://www.telerik.com/support/code-library/export-grid-to-pdf)
-* [Export MVC Grid to CSV](http://www.telerik.com/support/code-library/export-grid-to-csv)
+* [Export MVC Grid to Excel](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/excel-export-server-side)
+* [Export MVC Grid to PDF](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/pdf-export-server-side)
+* [Export MVC Grid to CSV](https://github.com/telerik/ui-for-aspnet-mvc-examples/tree/master/grid/csv-export-server-side)
 
 A thing to keep in mind during client-side export is that the Grid and its dataSource contain only the data items from the current page.
 As a result, exporting should be made in chunks, or paging should be disabled.
