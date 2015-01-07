@@ -1070,6 +1070,7 @@ The fields which can be used in the template are:
 * max - the value of the "max" aggregate (if specified)
 * min - the value of the "min" aggregate (if specified)
 * sum - the value of the "sum" aggregate (if specified)
+* aggregates - all of the aggregate (if specified) values for the current group
 
 #### Example - set the group header template
 
