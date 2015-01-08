@@ -2899,12 +2899,15 @@ The `roundToBaseUnit` option will be ignored if [series.type](#configuration-ser
 
 The selected axis range. If set, axis selection will be enabled.
 
-The range units are:
+The range is index based, starting from 0.
+Categories with indexes in the range [select.from, select.to) will be selected.
+That is, the last category in the range will not be included in the selection.
 
-* Category index (0-based)
-* Date
+If the categories are dates, the range must also be specified with date values.
 
-#### Example - configure category axis selection
+> Selection is only supported if the axis is horizontal.
+
+#### Example - select the second category initially
 
     <div id="chart"></div>
     <script>
@@ -2946,10 +2949,6 @@ The lower boundary of the selected range.
 ### categoryAxis.select.max `Object`
 
 The maximum value which the user can select.
-
-> The category with the specified index (date) is not included in the selected range
-unless the axis is justified. In order to select all categories set
-a value larger than the last category index (date).
 
 #### Example - set the category axis selection maximum
 
