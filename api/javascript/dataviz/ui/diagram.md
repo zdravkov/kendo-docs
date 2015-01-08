@@ -107,7 +107,7 @@ Specifies the the toolbar tools. Predefined tools are:
 
 ### connectionDefaults.editable.tools.name `String`
 
-The name of the tool. The built-in tools are "edit" and "delete". Can be set to a custom value.
+The name of the tool. The built-in tools are "edit" and "delete".
 
 ### connectionDefaults.endCap `String` *(default: "ArrowEnd")*
 
@@ -244,7 +244,7 @@ Specifies the the toolbar tools. Predefined tools are:
 
 ### connections.editable.tools.name `String`
 
-The name of the tool. The built-in tools are "edit" and "delete". Can be set to a custom value.
+The name of the tool. The built-in tools are "edit" and "delete".
 
 ### connections.endCap `String` *(default: "ArrowEnd")*
 
@@ -736,7 +736,7 @@ Specifies the the toolbar tools. Predefined tools are:
 
 ### editable.tools.name `String`
 
-The name of the tool. The built-in tools are "edit", "createShape", "createConnection", "undo", "redo", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+The name of the tool. The built-in tools are "edit", "createShape", "createConnection", "undo", "redo", "rotateClockwise" and "rotateAnticlockwise".
 
 ### editable.tools.step `Number` *(default: 90)*
 
@@ -1409,7 +1409,7 @@ Specifies the the toolbar tools. Predefined tools are:
 
 ### shapeDefaults.editable.tools.name `String`
 
-The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise".
 
 ### shapeDefaults.editable.tools.step `Number` *(default: 90)*
 
@@ -1645,7 +1645,7 @@ Specifies the the toolbar tools. Predefined tools are:
 
 ### shapes.editable.tools.name `String`
 
-The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise". Can be set to a custom value.
+The name of the tool. The built-in tools are "edit", "delete", "rotateClockwise" and "rotateAnticlockwise".
 
 ### shapes.editable.tools.step `Number` *(default: 90)*
 
