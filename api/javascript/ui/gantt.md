@@ -2505,6 +2505,83 @@ The text displayed by the command button. If not set the [name](#configuration-t
     });
     </script>
 
+### tooltip `Object`
+
+The task tooltip configuration options.
+
+#### Example - configure the task tooltip
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      tooltip: {
+        visible: true
+      },
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+### tooltip.template `String|Function`
+
+The [template](/api/framework/kendo#methods-template) which renders the tooltip.
+
+The fields which can be used in the template are:
+
+* task - the gantt task, for which the template is shown
+
+#### Example - set the task tooltip template
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      tooltip: {
+        visible: true,
+        template: "Title: #= task.title #"
+      },
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
+### tooltip.visible `Boolean` *(default: true)*
+
+If set to `false` the gantt will not display the task tooltip. By default the task tooltip is displayed.
+
+#### Example - disable the task tooltip
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+      tooltip: {
+        visible: false
+      },
+      dataSource: [
+        {
+          id: 1,
+          orderId: 0,
+          parentId: null,
+          title: "Task1",
+          start: new Date("2014/6/17 9:00"),
+          end: new Date("2014/6/17 11:00")
+        }
+      ]
+    });
+    </script>
+
 ### views `Array`
 
 The views displayed by the Gantt and their configuration. The array items can be either objects specifying the view configuration or strings representing the view types (assuming default configuration).
