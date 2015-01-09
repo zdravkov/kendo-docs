@@ -242,7 +242,7 @@ The string which should be parsed as `Date`.
 
 ##### formats `String|Array` *(optional)*
 
-The format(s) that will be used to parse the date. By default all standard date formats of the current culture are used.
+The format(s) that will be used to parse the date. By default all [standard date formats](/framework/globalization/dateformatting) of the current culture are used.
 
 ##### culture `String` *(optional)*
 
@@ -654,7 +654,7 @@ The `Date` or `Number` which should be formatted.
 
 ##### format `String`
 
-The format string which should be used to format the value.
+The format string which should be used to format the value. [Number formatting](/framework/globalization/numberformatting) and [date formatting](/framework/globalization/dateformatting) depends on the current culture.
 
 ##### culture `String`
 

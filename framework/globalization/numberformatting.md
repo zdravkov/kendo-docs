@@ -12,41 +12,41 @@ The purpose of number formatting is to convert a Number object to a human readab
 
 - *n* for number
 
-    kendo.culture("en-US");
-    kendo.toString(1234.567, "n"); //1,234.57
+        kendo.culture("en-US");
+        kendo.toString(1234.567, "n"); //1,234.57
 
-	kendo.toString(10.12, "n5"); //10.12000
-	kendo.toString(10.12, "n0"); //10
+        kendo.toString(10.12, "n5"); //10.12000
+        kendo.toString(10.12, "n0"); //10
 
-    kendo.culture("de-DE");
-    kendo.toString(1234.567, "n3"); //1.234,567
+        kendo.culture("de-DE");
+        kendo.toString(1234.567, "n3"); //1.234,567
 
 - *c* for currency
 
-	kendo.culture("en-US");
-    kendo.toString(1234.567, "c"); //$1,234.57
+        kendo.culture("en-US");
+        kendo.toString(1234.567, "c"); //$1,234.57
 
-	kendo.culture("en-US");
-	kendo.toString(1234.567, "c0"); //$1,235
+        kendo.culture("en-US");
+        kendo.toString(1234.567, "c0"); //$1,235
 
-    kendo.culture("de-DE");
-    kendo.toString(1234.567, "c3"); //1.234,567 €
+        kendo.culture("de-DE");
+        kendo.toString(1234.567, "c3"); //1.234,567 €
 
 - *p* for percentage (number is multiplied by 100)
 
-	kendo.culture("en-US");
-    kendo.toString(0.222, "p"); //22.20 %
+        kendo.culture("en-US");
+        kendo.toString(0.222, "p"); //22.20 %
 
-	kendo.culture("en-US");
-    kendo.toString(0.222, "p0"); //22 %
+        kendo.culture("en-US");
+        kendo.toString(0.222, "p0"); //22 %
 
-    kendo.culture("de-DE");
-    kendo.toString(0.22, "p3"); //22.000 %
+        kendo.culture("de-DE");
+        kendo.toString(0.22, "p3"); //22.000 %
 
 - *e* for exponential
 
-   kendo.toString(0.122, "e"); //1.22e-1
-   kendo.toString(0.122, "e4"); //1.2200e-1
+       kendo.toString(0.122, "e"); //1.22e-1
+       kendo.toString(0.122, "e4"); //1.2200e-1
 
 ## Custom numeric formats
 
