@@ -58,6 +58,7 @@ The name of the aggregate function. The supported aggregates are "average", "cou
       var results = dataSource.aggregates().age;
       console.log(results.sum); // displays "63"
     });
+    </script>
 
 ### aggregate.field `String`
 
