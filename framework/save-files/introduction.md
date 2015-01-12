@@ -17,7 +17,7 @@ To save a file on the client machine call the `kendo.saveAs` method and pass a v
 
 ```html
 <script>
-var dataURI = "data:text/plain," + encodeURIComponent("Hello World!");
+var dataURI = "data:text/plain;base64," + kendo.util.encodeBase64("Hello World!");
 kendo.saveAs({
     dataURI: dataURI,
     fileName: "test.txt"
@@ -36,7 +36,7 @@ by setting the `forceProxy` option to `true`.
 
 ```
 <script>
-var dataURI = "data:text/plain," + encodeURIComponent("Hello World!");
+var dataURI = "data:text/plain;base64," + kendo.util.encodeBase64("Hello World!");
 kendo.saveAs({
     dataURI: dataURI,
     fileName: "test.txt",
@@ -49,7 +49,7 @@ kendo.saveAs({
 
 ```
 <script>
-var dataURI = "data:text/plain," + encodeURIComponent("Hello World!");
+var dataURI = "data:text/plain;base64," + kendo.util.encodeBase64("Hello World!");
 kendo.saveAs({
     dataURI: dataURI,
     fileName: "test.txt",
@@ -92,7 +92,7 @@ public class HomeController
 
 ```
 <script>
-var dataURI = "data:text/plain," + encodeURIComponent("Hello World!");
+var dataURI = "data:text/plain;base64," + kendo.util.encodeBase64("Hello World!");
 kendo.saveAs({
     dataURI: dataURI,
     fileName: "test.txt",
