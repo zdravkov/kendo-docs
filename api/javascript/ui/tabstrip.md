@@ -865,6 +865,27 @@ The target tab(s), specified as a selector, jQuery object or index in the tab gr
 
 `jQuery` the selected tab if called without arguments. `kendo.ui.TabStrip` if called with arguments.
 
+### setDataSource
+
+Sets the data source of the widget.
+
+#### Example
+
+    <div id="tabstrip">
+    </div>
+
+    <script>
+      $("#tabstrip").kendoTabStrip({
+        dataContentField: "content",
+        dataTextField : "label"
+      })
+
+      $("#tabstrip").data("kendoTabStrip").setDataSource(kendo.data.DataSource.create([
+        { label: "Label", content: "Content" }
+      ]));
+      
+    </script>
+
 ## Events
 
 ### activate
