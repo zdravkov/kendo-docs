@@ -879,11 +879,11 @@ Sets the data source of the widget.
         dataContentField: "content",
         dataTextField : "label"
       })
-
-      $("#tabstrip").data("kendoTabStrip").setDataSource(kendo.data.DataSource.create([
+      var dataSource = kendo.data.DataSource.create([
         { label: "Label", content: "Content" }
-      ]));
+      ])
       
+      $("#tabstrip").data("kendoTabStrip").setDataSource(dataSource);
     </script>
 
 ## Events
