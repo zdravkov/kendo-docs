@@ -203,6 +203,10 @@ The format string.
     console.log(kendo.format("{0:c} - {1:c}", 12, 24)); // outputs "$12.00 - $24.00"
     </script>
 
+#### See Also
+[Supported number formats](http://docs.telerik.com/kendo-ui/framework/globalization/numberformatting)
+
+
 ### htmlEncode
 
 Encodes HTML characters to entities.
