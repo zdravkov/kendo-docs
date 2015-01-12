@@ -84,7 +84,7 @@ A height can be set to the Grid in one of the following ways:
 It makes sense to set height to the Grid **only if Grid scrolling is enabled**.
 
 When the Grid has a set height, it calculates the appropriate height of its scrollable data area, so that the sum of the header, data and pager is equal to the expected Grid height.
-That's why, if the Grid height is changed width Javascript after the widget has been created, the [Grid's `resize` method](/install/prerequisites#jquery) must be called afterwards.
+That's why, if the Grid height is changed width Javascript after the widget has been created, the [Grid's `resize` method](/using-kendo-in-responsive-web-pages) must be called afterwards.
 In this way the Grid will recalculate the height of its data area.
 
 ![Grid With Fixed Height And Scrolling](/web/grid/grid3_1.png)
