@@ -54,7 +54,7 @@ You can generate a static web site from the Kendo UI the documentation and brows
 1. Clone the repository `git clone git@github.com:telerik/kendo-docs.git`
 2. Run `bundle install` (you must have ruby and bundler installed beforehand)
 3. Run `jekyll serve`
-4. Open "http://localhost:4000/kendo-ui" in your browser
+4. Open "http://localhost:4000/kendo-ui/introduction.html" in your browser
 
 ## License
 
