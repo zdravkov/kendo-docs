@@ -7,6 +7,14 @@ previous_url: /changes-and-backward-compatibility
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## Kendo UI 2014 Q3 SP1
+
+### Changes from 2014 Q3 (2014.3.1119)
+
+#### Breaking changes
+
+* **Kendo UI Mobile Material skins**: The Material themes are renamed to **material-light** and **material-dark** in order to sync with the other mobile themes.
+
 ## Kendo UI 2014 Q3
 
 ### Changes from 2014 Q2 SP2 (2014.2.1008)
