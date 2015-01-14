@@ -3845,6 +3845,10 @@ The `sync` method will request the remote service if:
 * the [transport.destroy](#configuration-transport.destroy) option is set and data items have been removed from the data source
 * the [transport.update](#configuration-transport.update) option is set and the data source contains updated data items
 
+#### Returns
+
+`Promise` A promise that will be resolved when all sync requests have finished succesfully, or rejected if any single request fails.
+
 #### Example - save the changes
 
     <script>
