@@ -452,6 +452,28 @@ Setting it to `true` underlines the cell value.
     });
     </script>
 
+### sheets.rows.cells.wrap `Boolean` *(default: false)*
+
+Setting it to `true` wraps the cell value.
+
+#### Example - make the cell text underline
+
+    <script>
+    var workbook = new kendo.ooxml.Workbook({
+      sheets: [
+          {
+              rows: [
+                { cells: [ { value: "Long value", wrap: true } ] }
+              ]
+          }
+      ]
+    });
+    kendo.saveAs({
+      dataURI: workbook.toDataURL(),
+      fileName: "Test.xlsx"
+    });
+    </script>
+
 ### sheets.rows.cells.vAlign `String` *(default: "bottom")*
 
 Sets the vertical alignment of the cell value. Supported values are `"top"`, `"center"` and `"bottom"`.
