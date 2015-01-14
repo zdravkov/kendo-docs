@@ -9,6 +9,7 @@ navigation:
         title: "Excel"
     "*how-to":
         title: "How To"
+        position: 1
     "framework/datasource":
         title: "DataSource"
         position: 1
@@ -50,6 +51,8 @@ navigation:
     "php":
         title: "UI for PHP"
         position: 13
+    "*pdf-export":
+        title: "PDF Export"
     "webforms":
         title: "Use in ASP.NET Web Forms"
         position: 14
