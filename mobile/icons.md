@@ -52,7 +52,7 @@ Kendo UI Mobile includes 34 integrated font icons, which can be used directly in
     <li><span class="button km-wifi"></span>wifi</li>
 </ul>
 
-In addition to these 34 icons, there are more icons available inside the font file distributed with Kendo UI Mobile. For a full list of them, check the end of this document.
+In addition to these 34 icons, there are more icons available inside the font file distributed with Kendo UI Mobile. For a full list of them, check the [end of this document](#additional-icons-in-kendo-ui-mobile-font).
 
 # Creating custom icon font
 
@@ -366,11 +366,8 @@ already defined and in use, but only in the iOS7 platform theme (and available s
 }
 .additional-icons {
   list-style-type: none;
-  width: 567px;
   margin: 0;
   padding: 0;
-  border-left: 1px solid #e7e7e7;
-  border-top: 1px solid #e7e7e7;
 }
 .additional-icons:after {
   content: "";
@@ -383,19 +380,21 @@ already defined and in use, but only in the iOS7 platform theme (and available s
   margin: 0;
   padding: 0;
   width: 80px;
-  height: 80px;
+  height: 90px;
   text-align: center;
-  border-right: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
+  color: #787878;
 }
 .button {
-  display: block;
-  width: 48px;
-  height: 48px;
-  text-decoration: none;
-  color: #666;
-  margin: 0 auto;
-  font-size: 32px;
+    display: block;
+    width: 48px;
+    height: 48px;
+    text-decoration: none;
+    color: #333;
+    margin: 0 auto;
+    font-size: 16px;
+    border-radius: 50%;
+    border: 1px solid #ebecee;
+    background-color: #f5f7f8;
 }
 .button:after
 {
@@ -405,7 +404,7 @@ already defined and in use, but only in the iOS7 platform theme (and available s
     height: 100%;
     text-align: center;
     vertical-align: middle;
-    font: 1em/1.5em "KendoUI" !important;
+    font: 1em/3em "KendoUI" !important;
 }
 .k-i-arrow-e:after { content: "\E000"; }
 .k-i-arrow-n:after { content: "\E001"; }
@@ -891,11 +890,11 @@ already defined and in use, but only in the iOS7 platform theme (and available s
     <li><span class="button k-i-chart-line"></span>\e04f</li>
     <li><span class="button k-i-chart-area"></span>\e050</li>
     <li><span class="button k-i-chart-donut"></span>\e051</li>
-    <li><span class="button k-i-align-left"></span>\e052</li>
+    <!--li><span class="button k-i-align-left"></span>\e052</li>
     <li><span class="button k-i-align-center"></span>\e053</li>
     <li><span class="button k-i-align-right"></span>\e054</li>
     <li><span class="button k-i-align-justify"></span>\e055</li>
-    <li><span class="button k-i-align-clear"></span>\e056</li>
+    <li><span class="button k-i-align-clear"></span>\e056</li-->
     <li><span class="button k-i-bold"></span>\e057</li>
     <li><span class="button k-i-bold-sans"></span>\e058</li>
     <li><span class="button k-i-italic"></span>\e059</li>
