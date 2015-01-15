@@ -31,8 +31,28 @@ You can draw it from JavaScript with the following call:
 
 `drawing.drawDOM` takes a jQuery selector or object, or a plain DOM node, and returns a promise which will deliver a `drawing.Group` object.
 
-If you're aiming for PDF output, please read the [note about fonts](/framework/drawing/pdf-output.html#using-custom-fonts).  For optimal layout, an additional requirement when drawing HTML is that the browser should use the exact same fonts as the PDF renderer, so besides the `kendo.pdf.defineFont` declaration it's a good idea to include [CSS `font-face` declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face) with the same fonts in your page stylesheet.
+### Custom fonts and PDF
 
+If you need PDF output, for optimal layout and Unicode support your document should declare the fonts that it uses using [CSS `font-face` declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).  Starting with version Q3-2014-SP1, the PDF generator in Kendo UI is able to dig such declarations directly from the CSS and there is no need for you to manually call [pdf.defineFont](/framework/drawing/pdf-output.html#using-custom-fonts).
+
+Here is an example CSS declaration:
+
+    @font-face {
+      font-family: "DejaVu Sans";
+      src: url("fonts/DejaVu/DejaVuSans.ttf") format("truetype");
+    }
+
+Next, to make sure the elements that you are trying to export are using this font, simply specify `font-family: "DejaVu Sans"` in their styles.  For instance, to make all Kendo widgets use this font:
+
+    font-family: "DejaVu Sans";
+
+Notes:
+
+- the PDF generator supports only TrueType fonts with Unicode mappings.
+
+- in order for automatic font discovery to work your CSS must reside on the same domain as the web page.
+
+- Kendo UI bundles the DejaVu font family and will fall back to it for a few names like “Times New Roman”, “Arial”, “Courier”, or generics like “serif”, “sans-serif”, “monospace”, if no alternate fonts are specified.  This is so that Unicode works by default.  Note, however, that the layout problem will remain — the PDF output will be slightly different from the browser unless the exact same fonts are used.
 
 ### Known limitations
 
