@@ -10,7 +10,7 @@ position: 0
 
 Telerik UI for ASP.NET MVC is a set of server-side wrappers. A server-wrapper does the following.
 
-* Allows the developer to configure a Kendo UI widget via C# or VB.NET code - set its value, data source etc.
+* Allows the developer to configure a [Kendo UI](http://docs.telerik.com/kendo-ui/introduction) widget via C# or VB.NET code - set its value, data source etc.
 * Renders the HTML and JavaScript needed to initialize the Kendo UI widget. The widget options propagate to the client-side via the widget initialization script.
 
 ![Server-side wrapper outputs HTML and JavaScript](/aspnet-mvc/images/wrapper-output.png)
@@ -19,7 +19,7 @@ Telerik UI for ASP.NET MVC is a set of server-side wrappers. A server-wrapper do
 
 ### Kendo HtmlHelper extension method
 
-The **Kendo** [HtmlHelper](http://www.asp.net/mvc/tutorials/older-versions/views/creating-custom-html-helpers-cs) exposes all Kendo UI server-wrappers.
+The **Kendo** [HtmlHelper](http://www.asp.net/mvc/tutorials/older-versions/views/creating-custom-html-helpers-cs) exposes all Kendo UI server wrappers.
 
 ![Kendo HtmlHelper extension method](/aspnet-mvc/images/kendo-extension.png)
 
@@ -39,13 +39,13 @@ To set an option call the corresponding method and pass the required option valu
 
 ### Name
 
-You must set the **Name** option of a Kendo UI widget. The value will be used as the `id` and `name` HTML attributes (the `name` HTML attribute is set only for input widgets e.g. DatePicker, NumericTextBox, DropDownList etc.).
+You must set the **Name** option of a Kendo UI server wrapper. The value will be used as the `id` and `name` HTML attributes (the `name` HTML attribute is set only for input widgets e.g. DatePicker, NumericTextBox, DropDownList etc.).
 The `id` HTML attribute is used to initialize the Kendo UI widget.
 
 ![Wrapper name](/aspnet-mvc/images/wrapper-name.png)
 
-Alternatively you can use `NumericTextBoxFor`. All Kendo UI widgets which accept a value can be initialized via a [WidgetName]For method e.g. DatePicker -> DatePicker**For**.
-Those methods set the **Name** of the widget automatically. Thus `@Html.Kendo().NumericTextBoxFor(model => model.Age)` is the same as `@Html.Kendo().NumericTextBox().Name("Age").Value(Model.Age)`.
+Alternatively you can use `NumericTextBoxFor`. All Kendo UI server wrappers which accept a value can be initialized via a [WidgetName]For method e.g. DatePicker -> DatePicker**For**.
+Those methods set the **Name** of the server wrapper automatically. Thus `@Html.Kendo().NumericTextBoxFor(model => model.Age)` is the same as `@Html.Kendo().NumericTextBox().Name("Age").Value(Model.Age)`.
 
 ## Deferred initialization
 
@@ -145,7 +145,7 @@ If you have deferred the initialization of the widget, make sure you get its ins
 
 ## Client Templates
 
-By default every Kendo UI wrapper renders a script elements with an initialization statement. If the wrapper declaration is placed inside a Kendo UI template, this would lead to nested script elements which is invalid.
+By default every Kendo UI MVC server wrapper renders a script elements with an initialization statement. If the wrapper declaration is placed inside a Kendo UI template, this would lead to nested script elements which is invalid.
 The `ToClientTemplate` method instructs the widget wrapper to escape its own script element, so that it can be nested.
 
     <script id="template" type="text/x-kendo-template">
@@ -170,7 +170,7 @@ ASP.NET bundling allows multiple stylesheets to be combined on the web server, s
 > * a stylesheet may contain up to 4095 CSS selectors;
 > * a stylesheet may be up to 250KB in size
 
-When using CSS bundling with the Kendo UI stylesheets, the **virtual location of the bundle must match the physical location of the Kendo UI CSS files**.
+When using CSS bundling with the Kendo UI MVC server wrappers stylesheets, the **virtual location of the bundle must match the physical location of the Kendo UI CSS files**.
 This is because the image URLs in the Kendo UI themes are **relative** and the browser will search for the theme images depending on the virtual URL.
 
 Imagine the following scenario:
