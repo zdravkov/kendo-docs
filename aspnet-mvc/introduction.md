@@ -6,7 +6,7 @@ position: -1
 ---
 
 # Telerik UI for ASP.NET MVC
-Telerik UI for ASP.NET MVC is a set of server-side wrappers that allow using the Kendo UI widgets from C# or VB.NET code.
+Telerik UI for ASP.NET MVC is a set of server-side wrappers that allow using the [Kendo UI](http://docs.telerik.com/kendo-ui/introduction) widgets from C# or VB.NET code.
 This article shows how to download Telerik UI for ASP.NET MVC, install it and then run the sample ASP.NET MVC application.
 
 ## Requirements and Supported Environments
@@ -25,7 +25,7 @@ The offline sample application requires:
 * Visual Studio 2012 or Visual Studio 2013
 * LocalDB
 
-The Kendo UI Visual Studio Extensions support Visual Studio 2010+.
+The Telerik UI for ASP.NET MVC Visual Studio Extensions support Visual Studio 2010+.
 
 ## Download
 
@@ -58,7 +58,7 @@ The Telerik UI for ASP.NET MVC contains the following directories.
 * **wrappers\aspnetmvc\Examples\VS2012**- ASP.NET MVC 4 sample application built with Visual Studio 2012.
 * **wrappers\aspnetmvc\Examples\VS2013**- ASP.NET MVC 5 sample application built with Visual Studio 2013.
 * **wrappers\aspnetmvc\EditorTemplates**- ready-to-use editor templates based on the Kendo UI widgets.
-* **wrappers\aspnetmvc\LegacyThemes** - themes ported from Telerik Extensions for ASP.NET MVC.
+* **wrappers\aspnetmvc\LegacyThemes** - themes ported from Telerik Extensions for ASP.NET MVC (discontinued product superseded by Telerik UI for ASP.NET MVC).
 
 ## Sample application
 
@@ -94,8 +94,8 @@ The sample application Visual Studio solution contains the following.
 After you run the sample application you can continue with the following articles.
 
 * [Fundamentals](/aspnet-mvc/fundamentals)
-* [Kendo UI in ASP.NET MVC 3 application](/aspnet-mvc/asp-net-mvc-3)
-* [Kendo UI in ASP.NET MVC 4 application](/aspnet-mvc/asp-net-mvc-4)
-* [Kendo UI in ASP.NET MVC 5 application](/aspnet-mvc/asp-net-mvc-5)
-* [Using the Kendo UI Visual Studio Extensions](/aspnet-mvc/vs-integration/introduction)
+* [Using Telerik UI for ASP.NET MVC in MVC 3 application](/aspnet-mvc/asp-net-mvc-3)
+* [Using Telerik UI for ASP.NET MVC in MVC 4 application](/aspnet-mvc/asp-net-mvc-4)
+* [Using Telerik UI for ASP.NET MVC in MVC 5 application](/aspnet-mvc/asp-net-mvc-5)
+* [Using the Telerik UI for ASP.NET MVC Visual Studio Extensions](/aspnet-mvc/vs-integration/introduction)
 * [Troubleshooting](/aspnet-mvc/troubleshooting)
