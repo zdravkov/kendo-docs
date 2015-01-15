@@ -39,7 +39,7 @@ To set an option call the corresponding method and pass the required option valu
 
 ### Name
 
-You must set the **Name** option of a Kendo UI server wrapper. The value will be used as the `id` and `name` HTML attributes (the `name` HTML attribute is set only for input widgets e.g. DatePicker, NumericTextBox, DropDownList etc.).
+You must set the **Name** option of a Kendo UI server wrapper. The value will be used as the `id` and `name` HTML attributes (the `name` HTML attribute is set only for input widgets e.g. DatePicker, NumericTextBox, DropDownList, etc.).
 The `id` HTML attribute is used to initialize the Kendo UI widget.
 
 ![Wrapper name](/aspnet-mvc/images/wrapper-name.png)
