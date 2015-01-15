@@ -116,7 +116,7 @@ The animation that will be used when expanding items.
 
 ### animation.expand.duration `Number` *(default: 200)*
 
- The number of milliseconds used for the animation when a
+The number of milliseconds used for the animation when a
 node is expanded.
 
 #### Example - specify a slow expand animation
@@ -199,26 +199,6 @@ If `true` or an object, renders checkboxes beside each node.
     });
     </script>
 
-### checkboxes.name `String`
-
-Sets the name attribute of the checkbox inputs. That name will be posted to the server.
-
-#### Example
-
-    <div id="treeview"></div>
-    <script>
-    $("#treeview").kendoTreeView({
-      checkboxes: {
-        name: "checkedItems[]"
-      },
-      dataSource: [
-        { text: "foo", items: [
-          { text: "bar" }
-        ] }
-      ]
-    });
-    </script>
-
 ### checkboxes.checkChildren `Boolean`*(default: false)*
 
 Indicates whether checkboxes of child items should get checked when the checkbox of a parent item is checked. This
@@ -231,6 +211,26 @@ also enables tri-state checkboxes with an indeterminate state.
     $("#treeview").kendoTreeView({
       checkboxes: {
         checkChildren: true
+      },
+      dataSource: [
+        { text: "foo", items: [
+          { text: "bar" }
+        ] }
+      ]
+    });
+    </script>
+
+### checkboxes.name `String`
+
+Sets the name attribute of the checkbox inputs. That name will be posted to the server.
+
+#### Example
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      checkboxes: {
+        name: "checkedItems[]"
       },
       dataSource: [
         { text: "foo", items: [
@@ -519,31 +519,6 @@ The text message shown while the root level items are loading.
     });
     </script>
 
-### messages.retry `String` *(default: "Retry")*
-
-The text message shown in the retry button.
-
-#### Example - customize retry message
-
-    <div id="treeview"></div>
-    <script>
-    $("#treeview").kendoTreeView({
-      dataSource: {
-        transport: {
-          read: function(options) {
-            // request always fails after 1s
-            setTimeout(function() {
-              options.error({});
-            }, 1000);
-          }
-        }
-      },
-      messages: {
-        retry: "Wiederholen"
-      }
-    });
-    </script>
-
 ### messages.requestFailed `String` *(default: "Request failed.")*
 
 The text message shown when an error occurs while fetching the content.
@@ -565,6 +540,31 @@ The text message shown when an error occurs while fetching the content.
       },
       messages: {
         requestFailed: "Anforderung fehlgeschlagen."
+      }
+    });
+    </script>
+
+### messages.retry `String` *(default: "Retry")*
+
+The text message shown in the retry button.
+
+#### Example - customize retry message
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: {
+        transport: {
+          read: function(options) {
+            // request always fails after 1s
+            setTimeout(function() {
+              options.error({});
+            }, 1000);
+          }
+        }
+      },
+      messages: {
+        retry: "Wiederholen"
       }
     });
     </script>
@@ -1283,6 +1283,44 @@ Optional. The root of the hierarchy that will be looped through. Allows only a s
 
 ## Events
 
+### change
+
+Triggered when the selection has changed (either by the user or through the `select` method).
+
+#### Example - subscribe to the "change" event during initialization
+
+    <div id="treeview"></div>
+    <script>
+    $("#treeview").kendoTreeView({
+      dataSource: [
+        { text: "foo", items: [
+          { text: "bar" }
+        ] }
+      ],
+      change: function(e) {
+        console.log("Change", this.select());
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "change" event after initialization
+
+    <div id="treeview"></div>
+    <script>
+    function tree_change(e) {
+      console.log("Change", this.select());
+    }
+    $("#treeview").kendoTreeView({
+      dataSource: [
+        { text: "foo", items: [
+          { text: "bar" }
+        ] }
+      ]
+    });
+    var treeview = $("#treeview").data("kendoTreeView");
+    treeview.bind("change", tree_change);
+    </script>
+
 ### check
 
 Triggered after the user has checked or unchecked a checkbox.
@@ -1775,11 +1813,17 @@ The expanded node
     treeview.bind("expand", tree_expand);
     </script>
 
-### change
+### navigate
 
-Triggered when the selection has changed (either by the user or through the `select` method).
+Triggered when the user moves the focus on another node
 
-#### Example - subscribe to the "change" event during initialization
+#### Event Data
+
+##### e.node `Element`
+
+The focused node
+
+#### Example - subscribe to the "navigate" event during initialization
 
     <div id="treeview"></div>
     <script>
@@ -1789,18 +1833,18 @@ Triggered when the selection has changed (either by the user or through the `sel
           { text: "bar" }
         ] }
       ],
-      change: function(e) {
-        console.log("Change", this.select());
+      navigate: function(e) {
+        console.log("Navigated to", e.node);
       }
     });
     </script>
 
-#### Example - subscribe to the "change" event after initialization
+#### Example - subscribe to the "navigate" event after initialization
 
     <div id="treeview"></div>
     <script>
-    function tree_change(e) {
-      console.log("Change", this.select());
+    function tree_navigate(e) {
+      console.log("Navigating to", e.node);
     }
     $("#treeview").kendoTreeView({
       dataSource: [
@@ -1810,7 +1854,7 @@ Triggered when the selection has changed (either by the user or through the `sel
       ]
     });
     var treeview = $("#treeview").data("kendoTreeView");
-    treeview.bind("change", tree_change);
+    treeview.bind("navigate", tree_navigate);
     </script>
 
 ### select
@@ -1857,46 +1901,3 @@ The selected node
     treeview.bind("Selecting", tree_select);
     </script>
 
-### navigate
-
-Triggered when the user moves the focus on another node
-
-#### Event Data
-
-##### e.node `Element`
-
-The focused node
-
-#### Example - subscribe to the "navigate" event during initialization
-
-    <div id="treeview"></div>
-    <script>
-    $("#treeview").kendoTreeView({
-      dataSource: [
-        { text: "foo", items: [
-          { text: "bar" }
-        ] }
-      ],
-      navigate: function(e) {
-        console.log("Navigated to", e.node);
-      }
-    });
-    </script>
-
-#### Example - subscribe to the "navigate" event after initialization
-
-    <div id="treeview"></div>
-    <script>
-    function tree_navigate(e) {
-      console.log("Navigating to", e.node);
-    }
-    $("#treeview").kendoTreeView({
-      dataSource: [
-        { text: "foo", items: [
-          { text: "bar" }
-        ] }
-      ]
-    });
-    var treeview = $("#treeview").data("kendoTreeView");
-    treeview.bind("navigate", tree_navigate);
-    </script>
