@@ -198,46 +198,23 @@ through the data-icon attribute. One row can contain both regular links and deta
 
 ## Item Icons
 
-An icon can be set in two ways - either by adding an `img` element inside the `li` element, or by setting an `icon` data attribute to the `li` element.
-if data attribute is used then an `a` element should be put in the `li` element. The icon class will be applied to the `a` element.
-Kendo mobile ships with several ready to use icons:
+An icon can be set in two ways:
 
-*   <span class="km-icon km-about"></span>about
-*   <span class="km-icon km-action"></span>action
-*   <span class="km-icon km-add"></span>add
-*   <span class="km-icon km-bookmarks"></span>bookmarks
-*   <span class="km-icon km-camera"></span>camera
-*   <span class="km-icon km-cart"></span>cart
-*   <span class="km-icon km-compose"></span>compose
-*   <span class="km-icon km-contacts"></span>contacts
-*   <span class="km-icon km-details"></span>details
-*   <span class="km-icon km-downloads"></span>downloads
-*   <span class="km-icon km-fastforward"></span>fastforward
-*   <span class="km-icon km-favorites"></span>favorites
-*   <span class="km-icon km-featured"></span>featured
-*   <span class="km-icon km-toprated"></span>toprated
-*   <span class="km-icon km-globe"></span>globe
-*   <span class="km-icon km-history"></span>history
-*   <span class="km-icon km-home"></span>home
-*   <span class="km-icon km-info"></span>info
-*   <span class="km-icon km-more"></span>more
-*   <span class="km-icon km-mostrecent"></span>mostrecent
-*   <span class="km-icon km-mostviewed"></span>mostviewed
-*   <span class="km-icon km-organize"></span>organize
-*   <span class="km-icon km-pause"></span>pause
-*   <span class="km-icon km-play"></span>play
-*   <span class="km-icon km-recents"></span>recents
-*   <span class="km-icon km-refresh"></span>refresh
-*   <span class="km-icon km-reply"></span>reply
-*   <span class="km-icon km-rewind"></span>rewind
-*   <span class="km-icon km-search"></span>search
-*   <span class="km-icon km-settings"></span>settings
-*   <span class="km-icon km-share"></span>share
-*   <span class="km-icon km-stop"></span>stop
-*   <span class="km-icon km-trash"></span>trash
+1. By adding an `img` element inside the `li` element
+2. By setting a `data-icon` attribute to the `li` element. In this case an `a` element should be placed inside the `li` element. The icon CSS class will be applied to the `a` element.
+   
+### Example - using font icons with `data-icon` attribute
+
+    <ul data-role="listview" data-style="inset">
+      <li data-icon="home">
+         <a>Home</a>
+      </li>
+    </ul>
+
+> **Important:** Kendo UI ships with several ready to use icons. The full list of predefined icons can be seen in the [Icons](./icons) article.
 
 Additional icons may be added by defining the respective CSS class.
-If the `icon` data attribute is set to `custom`, the tab will receive `km-custom` CSS class.
+If the `data-icon` attribute is set to `custom`, the item will receive `km-custom` CSS class.
 
 ### Creating Custom Icons
 
