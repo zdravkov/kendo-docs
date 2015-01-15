@@ -6054,6 +6054,8 @@ Expands specified master row.
 
 Retrieves the options that are currently enabled or disabled on the Grid, also gives the current state of the dataSource. Use this method if you want to save the state of the Grid into a variable.
 
+> Notice that when the options object is retrieved and then serialized into a string through JSON.stringify(options), then each field that is a function will be lost. This is limitation of the serialization that the JSON.stringify does. You need to either explicitly set the fields that were functions after parsing the object back or you need to use some [custom implementation](https://github.com/tarruda/super-json) for serialization to handle the serialization of the JavaScript functions.
+
 #### Parameters
 
 #### Example - expand the first master table row
