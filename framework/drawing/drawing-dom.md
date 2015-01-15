@@ -44,7 +44,9 @@ Here is an example CSS declaration:
 
 Next, to make sure the elements that you are trying to export are using this font, simply specify `font-family: "DejaVu Sans"` in their styles.  For instance, to make all Kendo widgets use this font:
 
-    font-family: "DejaVu Sans";
+    .k-widget {
+      font-family: "DejaVu Sans";
+    }
 
 Notes:
 
