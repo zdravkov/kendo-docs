@@ -128,10 +128,10 @@ widget needs to have different states for items that have no children (e.g. the 
 
 ### schema.model.children `String|Object` *(default: "items")*
 
-DataSource object or configuration for fetching child nodes. Through examples of that can be found
-in the **Getting started** section.
+DataSource object or configuration for fetching child nodes.
+Detailed explanation of how children are fetched is found in the [HierarchicalDataSource overview help topic](http://docs.telerik.com/kendo-ui/framework/hierarchicaldatasource/overview).
 
-> Note that "children" is not a valid value. The model already has a children property - the child data source.
+> Note that "children" cannot be used as a field name. The model already has a children property - the child data source.
 
 For static HierarchicalDataSource (local data), this field may be a `String`,
 indicating which field holds the nested data.
