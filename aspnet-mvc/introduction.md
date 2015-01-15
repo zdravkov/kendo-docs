@@ -97,5 +97,5 @@ After you run the sample application you can continue with the following article
 * [Using Telerik UI for ASP.NET MVC in MVC 3 application](/aspnet-mvc/asp-net-mvc-3)
 * [Using Telerik UI for ASP.NET MVC in MVC 4 application](/aspnet-mvc/asp-net-mvc-4)
 * [Using Telerik UI for ASP.NET MVC in MVC 5 application](/aspnet-mvc/asp-net-mvc-5)
-* [Using the Telerik UI for ASP.NET MVC Visual Studio Extensions](/aspnet-mvc/vs-integration/introduction)
+* [Using Telerik UI for ASP.NET MVC Visual Studio Extensions](/aspnet-mvc/vs-integration/introduction)
 * [Troubleshooting](/aspnet-mvc/troubleshooting)
