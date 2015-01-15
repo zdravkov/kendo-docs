@@ -66,11 +66,24 @@ The following options are currently supported:
 
 - `margin` — paper margins.  Must be an object containing `top`, `left`, `right` and `bottom`, numbers which specify the paper margins.  Again, if numbers are passed they will be assumed to be in points; with strings you can specify units. When `paperSize` is "auto", the dimensions will be adjusted to include the margin.
 
-- `landscape` — (boolean, default `false`).  If `true` is specified the paper dimensions will be rotated if needed such that the width is the larger edge.
+- `landscape` (boolean, default `false`) — if `true` is specified the paper dimensions will be rotated if needed such that the width is the larger edge.
 
 - `title`, `author`, `subject`, `keywords`, `creator` — optional strings to be included in the PDF information dictionary.
 
 - `date` — optional `Date` object to specify the creation date of the document.  Default is current date/time (`new Date()`).
+
+- `multiPage` (boolean, default `false`) — pass `true` to enable support for multiple page output (see the next section).
+
+
+## Multiple pages output
+
+For rendering a multiple pages PDF, you must pass `multiPage: true` to the `Group` object that you pass to `drawing.pdf.toDataURL` (let's call this the “master group”).  This group is then expected to contain in turn only `Group` shapes, one for each page (“page groups”).  The PDF options that you pass to the master group will apply to each page group, unless the page group overrides them.  The following options can be overridden:
+
+- paperSize
+- margin
+- landscape
+
+Note that if `paperSize` is `"auto"` on the master group and page groups do not override it, then the paper size for each individual page will be determined by its corresponding group—this means the final document could have pages of different sizes.
 
 
 ## Using custom fonts
