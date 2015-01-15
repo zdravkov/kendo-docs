@@ -380,6 +380,11 @@ Returns a jQuery collection of all visible notifications, displayed by the given
     var elements = notificationWidget.getNotifications();
 	</script>
 
+#### Returns
+
+`jQuery` A collection of all visible notifications.
+
+
 ### hide
 
 Hides all notifications from the given widget instance.
