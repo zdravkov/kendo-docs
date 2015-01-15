@@ -214,13 +214,12 @@ article, aside, footer {
 #page-article {
     background-color: #fff;
     line-height: 1.5;
-
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     overflow: auto;
-    padding: 15px 1em 0 3em;
+    padding: 15px 1em 3em 3em;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -304,16 +303,30 @@ h1 span.type-link a:hover {
 }
 
 h2 {
-    margin: 2em 0 0;
-}
-
-h3 {
-    padding-top: 20px;
-    margin-top: 40px;
+    margin: 2.5em 0 0;
+    padding-top: 2em;
     position: relative;
 }
 
-h3:before {
+#markdown-toc + #page-article h2 {
+    margin: 2em 0 0;
+    padding: 0;
+}
+
+
+
+h3 {
+    margin-top: 2em;
+}
+
+#markdown-toc + #page-article h3 {
+    margin-top: 2.5em;
+    padding-top: 2em;
+    position: relative;
+}
+
+h2:before,
+#markdown-toc + #page-article h3:before {
     content: " ";
     display: block;
     font-size: 0;
@@ -325,6 +338,11 @@ h3:before {
     border-top: 2px solid #ebecee;
 }
 
+#markdown-toc + #page-article h2:before {
+    height: 0;
+    border-top: 0;
+}
+
 h2 + h3 {
     border-top: 0;
     margin-top: 0;
@@ -333,7 +351,7 @@ h2 + h3 {
 h3 code, h3 em {
     color: #666;
     font-family: monospace;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 h3 code {
