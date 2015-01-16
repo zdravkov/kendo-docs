@@ -95,8 +95,6 @@ Notes:
 
 - no rendering of shadow DOM
 
-- no rendering of list item bullets or numbers (a consequence of not rendering shadow DOM)
-
 - no CSS box-shadow, text-shadow, gradients
 
 - only `solid` border-style
@@ -105,7 +103,7 @@ Notes:
 
 - images hosted on different domains might not be rendered, unless permissive [Cross-Origin HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image) are provided by the server.  Similarly, fonts might not be possible to load cross-domain.
 
-- the output is always a single page (no page breaking is performed)
+- no automatic page breaking is performed
 
 
 ## Supported browsers
