@@ -31,6 +31,7 @@ You can draw it from JavaScript with the following call:
 
 `drawing.drawDOM` takes a jQuery selector or object, or a plain DOM node, and returns a promise which will deliver a `drawing.Group` object.
 
+
 ### Custom fonts and PDF
 
 If you need PDF output, for optimal layout and Unicode support your document should declare the fonts that it uses using [CSS `font-face` declarations](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face).  Starting with version Q3-2014-SP1, the PDF generator in Kendo UI is able to dig such declarations directly from the CSS and there is no need for you to manually call [pdf.defineFont](/framework/drawing/pdf-output.html#using-custom-fonts).
@@ -55,6 +56,40 @@ Notes:
 - in order for automatic font discovery to work your CSS must reside on the same domain as the web page.
 
 - Kendo UI bundles the DejaVu font family and will fall back to it for a few names like “Times New Roman”, “Arial”, “Courier”, or generics like “serif”, “sans-serif”, “monospace”, if no alternate fonts are specified.  This is so that Unicode works by default.  Note, however, that the layout problem will remain — the PDF output will be slightly different from the browser unless the exact same fonts are used.
+
+
+### Multi-page PDF output
+
+`drawing.drawDOM` allows you to create a [multi-page PDF](/framework/drawing/pdf-output.html#multiple-pages-output) by specifying manual page breaks (automatic page breaking is not supported).  For this, pass a second options argument which contains `forcePageBreak` — a CSS selector.  Here is an example which draws a grid on a multi-page PDF:
+
+    <div id="grid"></div>
+
+    <script>
+      var data = [];
+      for (var i = 1; i < 50; ++i) {
+        data.push({ title: "Item " + i, id: i });
+      }
+
+      $("#grid").kendoGrid({
+        dataSource: data,
+        rowTemplate: $("#rowTemplate").html()
+      });
+
+      kendo.drawing
+        .drawDOM("#grid", { forcePageBreak: ".page-break" })
+        .then(function(group){
+          drawing.pdf.saveAs(group, "multipage.pdf")
+        });
+    </script>
+
+    <script id="rowTemplate" type="x/kendo-template">
+      <!-- to every tenth row we add the "page-break" class -->
+      <tr data-uid="#= uid #" class="#= (id%10 == 0 ? 'page-break' : '') #">
+        <td>#: title #</td>
+        <td>#: id #</td>
+      </tr>
+    </script>
+
 
 ### Known limitations
 
