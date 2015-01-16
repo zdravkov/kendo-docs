@@ -60,6 +60,15 @@ article, aside, footer {
     text-decoration: none;
 }
 
+#page-edit-link {
+    position: absolute;
+    z-index: 10;
+    right: 28px;
+    top: 10px;
+    margin: 0;
+    text-decoration: none;
+}
+
 #logo-bar {
     float: left;
     margin-top: 1.617em;
