@@ -40,14 +40,8 @@ The example below demonstrates how to use AngularJS directives in custom Grid po
             }
           }
         };
-<<<<<<< HEAD
-      });
-
-    function MyCtrl($scope) {
-=======
       })
       .controller("MyCtrl", function($scope) {
->>>>>>> fac3c1d... Update example
         $scope.mainGridOptions = {
           dataSource: {
             transport: {
@@ -109,11 +103,6 @@ The example below demonstrates how to use AngularJS directives in custom Grid po
           "Aniseed Syrup",
           "Chef Anton's Cajun Seasoning"
         ];
-<<<<<<< HEAD
-    }
-</script>
-=======
       });
     </script>
->>>>>>> fac3c1d... Update example
 ```
