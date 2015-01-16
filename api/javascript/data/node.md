@@ -18,12 +18,21 @@ The child `kendo.data.HierarchicalDataSource` of the node. This field is initial
 or when the [load](#methods-load) or [append](#methods-append) methods have been called.
 
 #### Example - get the child nodes
+
     <script>
     var parent = new kendo.data.Node({ text: "Parent" });
     parent.append({ text: "Child" });
     console.log(parent.children.data().length); // outputs "1"
     var child = parent.children.at(0);
     console.log(child.text); // outputs "Child"
+    </script>
+
+#### Example - sync the child datasource
+
+    <script>
+    var parent = new kendo.data.Node({ text: "Parent" });
+    parent.append({ text: "Child" }); // add new child node
+    parent.children.sync();
     </script>
 
 ## Methods
