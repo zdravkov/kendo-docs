@@ -1,13 +1,13 @@
 ---
 title: ASP.NET MVC 3
-page_title: Using Kendo UI with ASP.NET MVC 3
+page_title: Using Telerik UI for ASP.NET MVC with MVC 3
 description: How to use Telerik UI  for ASP.NET MVC in ASP.NET MVC 3 applications
 position: 1
 ---
 
-# Kendo UI in ASP.NET MVC 3 applications
+# Telerik UI for ASP.NET MVC in MVC 3 applications
 
-This tutorial shows how to use Telerik UI for ASP.NET MVC in ASP.NET MVC 3 applications. The tutorial uses Visual Studio 2010 but will work with all Visual Studio versions that support ASP.NET MVC 3. The tutorial also creates a new ASP.NET MVC 3 application but the steps to use Kendo UI in exsiting ASP.NET MVC 3 application are the same.
+This tutorial shows how to use Telerik UI for ASP.NET MVC in ASP.NET MVC 3 applications. The tutorial uses Visual Studio 2010 but will work with all Visual Studio versions that support ASP.NET MVC 3. The tutorial also creates a new ASP.NET MVC 3 application but the steps to use Telerik UI for ASP.NET MVC in existing ASP.NET MVC 3 application are the same.
 
 **The Telerik UI for ASP.NET MVC Visual Studio extensions (http://docs.telerik.com/kendo-ui/aspnet-mvc/vs-integration/introduction) automate the whole procedure which this document describes.**
 
@@ -30,11 +30,11 @@ To use Telerik UI for ASP.NET MVC you need to include the required JavaScript an
 
 ### Include the JavaScript and CSS files
 
-Kendo UI requires certain JavaScript and CSS files to be included in the page. There are two options - either to include a local copy of those files **or** to use Kendo UI CDN (Content Delivery Network).
+Telerik UI for ASP.NET MVC requires certain JavaScript and CSS files to be included in the page. There are two options - either to include a local copy of those files **or** to use our CDN (Content Delivery Network).
 
 Using local JavaScript and CSS
 
-To copy the Kendo UI JavaScript and CSS files in the Visual Studio Solution of the application follow these steps.
+To copy the required JavaScript and CSS files in the Visual Studio Solution of the application follow these steps.
 
 1. Navigate to the install location of Telerik UI for ASP.NET MVC**. By default it is in **C:\Program Files (x86)\Telerik\.
 2. Copy the **js** directory from the install location and paste it in the **Scripts** folder of the application.
@@ -42,7 +42,7 @@ To copy the Kendo UI JavaScript and CSS files in the Visual Studio Solution of t
 4. Rename the **Scripts/js** directory to **Scripts/kendo**. Rename **Content/styles** to **Content/kendo**.
 ![Kendo directories in Solution Explorer](/aspnet-mvc/images/mvc3-solution.png)
 
-After the Kendo UI JavaScript and CSS files are added in the application you can include them.
+After the needed JavaScript and CSS files are added in the application you can include them.
 
 1. Open the layout of the application. By default it is **Views/Shared/_Layout.cshtml** (or **Site.master** if using ASPX).
 2. Include **Content/kendo/kendo.common.min.css** and **Content/kendo/kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
@@ -56,7 +56,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
             <link rel="stylesheet" href="<%: Url.Content("~/Content/kendo/kendo.default.min.css") %>" />
 
 3. Delete any existing **script** tags that include older versions of jQuery.
-4. Include the jQuery JavaScript file distributed with Kendo UI or a compatible version from other location. Add a **script** tag in within the **head** tag of the layout.
+4. Include the jQuery JavaScript file distributed with Telerik UI for ASP.NET MVC or a compatible version from other location. Add a **script** tag in within the **head** tag of the layout.
     - Razor
 
             <script src="@Url.Content("~/Scripts/kendo/jquery.min.js")"></script>
@@ -77,7 +77,7 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
             <script src="<%: Url.Content("~/Scripts/kendo/kendo.all.min.js") %>"></script>
             <script src="<%: Url.Content("~/Scripts/kendo/kendo.aspnetmvc.min.js") %>"></script>
 
-6. If using Kendo UI Scheduler include **Scripts/kendo/kendo.timezones.min.js** after **kendo.all.min.js**.
+6. If using the Telerik MVC Scheduler wrapper, include **Scripts/kendo/kendo.timezones.min.js** after **kendo.all.min.js**.
     - Razor
 
             <script src="@Url.Content("~/Scripts/kendo/jquery.min.js")"></script>
@@ -92,9 +92,9 @@ After the Kendo UI JavaScript and CSS files are added in the application you can
             <script src="<%: Url.Content("~/Scripts/kendo/kendo.timezones.min.js") %>"></script>
             <script src="<%: Url.Content("~/Scripts/kendo/kendo.aspnetmvc.min.js") %>"></script>
 
-#### Using Kendo UI CDN
+#### Using CDN
 
-To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Important! Dont’t forget to replace "kendo ui version" from the code snippets below with the current version of Kendo UI e.g. “2013.2.918”.
+To include the Telerik UI for ASP.NET MVC JavaScript and CSS files from CDN follow these steps. Important! Dont’t forget to replace "kendo ui version" from the code snippets below with the current version of the product, e.g. “2013.2.918”.
 
 1. Open the layout of the application. By default it is **Views/Shared/_Layout.cshtml** (or **Site.master** if using ASPX).
 2. Include **kendo.common.min.css** and **kendo.default.min.css**. Add a **link** tag within the **head** tag of the layout.
@@ -103,7 +103,7 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
         <link rel="stylesheet" href="http://cdn.kendostatic.com/<kendo ui version>/styles/kendo.default.min.css" />
 
 3. Delete any existing **script** tags that include older versions of jQuery.
-4. Include the jQuery JavaScript file from Kendo CDN or a compatible version from other location. Add a **script** tag in within the **head** tag.
+4. Include the jQuery JavaScript file from our CDN or a compatible version from other location. Add a **script** tag in within the **head** tag.
 
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/jquery.min.js”></script>
 
@@ -112,14 +112,14 @@ To include the Kendo UI JavaScript and CSS files from CDN follow these steps. Im
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js”></script>
         <script src=”http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js”></script>
 
-6. If using Kendo UI Scheduler include **kendo.timezones.min.js** _after_ **kendo.all.min.js**
+6. If using Telerik MVC Scheduler wrapper, include **kendo.timezones.min.js** _after_ **kendo.all.min.js**
 
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.all.min.js"></script>
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.timezones.min.js"></script>
         <script src="http://cdn.kendostatic.com/<kendo ui version>/js/kendo.aspnetmvc.min.js"></script>
 ### Add reference to Kendo.Mvc.dll
 
-The next step is to add a reference to **Kendo.Mvc.dll** which is the assembly containing the Kendo UI server-side wrappers.
+The next step is to add a reference to **Kendo.Mvc.dll** which is the assembly containing the Kendo UI MVC server-side wrappers.
 
 1. Right-click the **References** node in Solution Explorer and click **Add Reference**.
 2. Select the **Browse** tab of the **Add Reference** dialog and navigate to the install location of Telerik UI for ASP.NET MVC.
@@ -144,7 +144,7 @@ The next step is to let ASP.NET MVC know of the Kendo.Mvc.UI namespace where the
 
 ## Use a Kendo UI widget
 
-Finally lets use a Kendo UI widget.
+Finally lets use a Kendo UI widget via its MVC server wrapper initialization.
 
 1. Open the **Views/Home/Index.cshtml** view (or **Index.aspx** if using **ASPX**).
 2. Add a Kendo UI DatePicker widget.
@@ -162,5 +162,5 @@ Finally lets use a Kendo UI widget.
 ## Next steps
 
 * [Fundamentals](/aspnet-mvc/fundamentals)
-* [Using the Kendo UI Visual Studio Extensions](/aspnet-mvc/vs-integration/introduction)
+* [Using the Telerik UI for ASP.NET MVC Visual Studio Extensions](/aspnet-mvc/vs-integration/introduction)
 * [Troubleshooting](/aspnet-mvc/troubleshooting)

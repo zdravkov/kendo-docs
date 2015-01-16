@@ -9,11 +9,11 @@ position: 4
 Globalization is the process of designing and developing an application that works in multiple cultures and languages.
 The culture defines specific information for the number formats, week and month names, date and time formats etc.
 
-To make Kendo UI use a different culture than the default (which is "en-US") you should perform the following steps:
+To make Telerik UI for ASP.NET MVC use a different culture than the default (which is "en-US") you should perform the following steps:
 
 1. Copy the required culture JavaScript file from the **\js\culture\** directory of your Telerik UI for ASP.NET MVC installation
 to the **~/Scripts/cultures/** directory of your application. Let's use the Spanish (es-ES) culture for the example.
-1. Include the corresponding culture JavaScript file *after* the other Kendo UI JavaScript files.
+1. Include the corresponding culture JavaScript file *after* the other JavaScript product files.
     - ASPX
 
             <script src="<%= Url.Content("~/Scripts/jquery.min.js") %>"></script>
@@ -32,11 +32,11 @@ to the **~/Scripts/cultures/** directory of your application. Let's use the Span
         kendo.culture("es-ES");
         </script>
 
-After performing those steps all Kendo UI widgets will use the "es-ES" culture for parsing and formatting dates and numbers.
+After performing those steps all UI widgets included in the product will use the "es-ES" culture for parsing and formatting dates and numbers.
 
 ## Set the current server-side culture
 
-The previous tutorial showed how to set the client-side Kendo UI culture. To set the server-side culture you need to update the
+The previous tutorial showed how to set the culture client-side. To set the server-side culture you need to update the
 **web.config** file of your ASP.NET MVC application:
 
     <system.web>
@@ -50,7 +50,7 @@ and [CurrentUICulture](http://msdn.microsoft.com/en-us/library/system.globalizat
 
 ## Use the same culture on the server and client-side
 
-To make Kendo UI use the same culture as the server-side follow these steps:
+To make Telerik UI for ASP.NET MVC use the same culture as the server-side follow these steps:
 
 1. Copy the required culture JavaScript files from the **\js\culture\** directory of your Telerik UI for ASP.NET MVC installation
 to the **~/Scripts/cultures/** directory of your application.
@@ -65,7 +65,7 @@ to the **~/Scripts/cultures/** directory of your application.
             @{
                 var culture =  System.Globalization.CultureInfo.CurrentCulture.ToString();
             }
-1. Include the corresponding Kendo UI culture JavaScript file.
+1. Include the corresponding culture JavaScript file.
     - ASPX
 
             <script src="<%= Url.Content("~/Scripts/cultures/kendo.culture." + culture + ".min.js") %>"></script>
@@ -126,7 +126,7 @@ To change the provided localization messages a custom version of Kendo.Mvc.dll m
 1. Copy **\src\Kendo.Mvc\bin\Release\Kendo.Mvc.dll** and **\src\Kendo.Mvc\bin\Release\es-ES\Kendo.Mvc.resources.dll** to your ASP.NET MVC application.
 1. Update the Kendo.Mvc.dll assembly reference to the newly copied one.
 
-Apart from building a custom version of Kendo.Mvc.dll you can specify a new value for the corresponding message in the Kendo UI widget HtmlHelper configuration.
+Apart from building a custom version of Kendo.Mvc.dll you can specify a new value for the corresponding message in the MVC HtmlHelper configuration.
 
 For example to change the default message for the "create" grid toolbar command you can do the following:
 - ASPX
