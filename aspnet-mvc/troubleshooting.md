@@ -7,30 +7,30 @@ position: 7
 
 # Troubleshooting
 
-This page provides solutions for common problems you may encounter while working with Telerik UI for ASP.NET MVC. In addition you could check the general [Kendo UI troubleshooting help topic](/troubleshooting).
+This page provides solutions for common problems you may encounter while working with Telerik UI for ASP.NET MVC. In addition you could check the general [Kendo UI troubleshooting help topic](/troubleshooting), which is relevant since Telerik UI for ASP.NET MVC is powered by Kendo UI.
 
 ## JavaScript error that jQuery is unavailable or undefined
 
 This error will be triggered in the following cases:
 
 * jQuery is not included at all
-* jQuery is included after the Kendo UI script files
-* jQuery is included after a Kendo UI widget declaration
+* jQuery is included after the Telerik UI for ASP.NET MVC script files
+* jQuery is included after a Kendo UI widget or MVC wrapper declaration
 
 Check the [Kendo UI troubleshooting help topic](/troubleshooting#javascript-error-that-jquery-is-unavailable-or-undefined) for more symptoms.
 
-Make sure that jQuery is included **before** the Kendo UI Javascript files, and **before** any Kendo UI widget declarations,
+Make sure that jQuery is included **before** the Telerik UI for ASP.NET MVC JavaScript files, and **before** any Kendo UI widget or MVC wrapper declarations,
 unless [deferred initialization](/aspnet-mvc/introduction#deferring-kendo-ui-initialization-scripts) is used.
-If using ASP.NET bundles move the `Scripts.Render("~/bundles/jquery")` block **before** the Kendo Javascript files.
+If using ASP.NET bundles move the `Scripts.Render("~/bundles/jquery")` block **before** the Telerik UI for ASP.NET MVC JavaScript files.
 
-## JavaScript error that Kendo widgets are unavailable or undefined
+## JavaScript error that Kendo UI widgets are unavailable or undefined
 
 If jQuery is included more than once in the page all existing jQuery plugins (including Kendo UI) will be wiped out. Will also occur
-if the [required Kendo JavaScript files](/javascript-dependencies) are not included.
+if the [required Kendo UI JavaScript files](/javascript-dependencies) are not included.
 
 Check the [Kendo UI troubleshooting help topic](/troubleshooting#javascript-error-that-kendo-widgets-are-unavailable-or-undefined) for more symptoms.
 
-Make sure jQuery is not included more than once in your page. Remove any duplicate `script` references to jQuery. Include all [required Kendo JavaScript files](/javascript-dependencies).
+Make sure jQuery is not included more than once in your page. Remove any duplicate `script` references to jQuery. Include all [required Kendo UI JavaScript files](/javascript-dependencies).
 
 If the application is also using Telerik Extensions for ASP.NET MVC tell the `ScriptRegistrar` not to include jQuery:
 
@@ -53,7 +53,7 @@ You would need to install them separately. The packages are [Microsoft.jQuery.Un
 First you must delete **jquery.unobtrusive-ajax.js**, **jquery.unobtrusive-ajax.min.js**, **jquery.validate.unobtrusive.js** and **jquery.validate.unobtrusive.min.js**
 from your **~/Sripts** folder. Then install Microsoft.jQuery.Unobtrusive.Ajax and Microsoft.jQuery.Unobtrusive.Validation.
 
-## Visual Studio IntelliSense does not show the Kendo HtmlHelper extension method
+## Visual Studio server IntelliSense does not show the MVC HtmlHelper extension method
 
 ### Solution
 
@@ -85,7 +85,7 @@ from your **~/Sripts** folder. Then install Microsoft.jQuery.Unobtrusive.Ajax an
                  </pages>
              </system.web.webPages.razor>
 2. Rebuild your solution.
-3. Close and open again the view you were editing. Intellisense should be working now.
+3. Close and open again the view you were editing. IntelliSense should be working now.
 
 ## Menu renders too slow in debug mode
 
@@ -187,11 +187,11 @@ In "Getting Started" section of every widget you can find "Configure widget for 
 
 ## Only one instance of the widget works in the page
 
-This will happen if two or more widgets have the same `Name()`. The value specified via the `Name()` method is used as the `id` HTML attribute of the widget. The latter must be unique in the page.
+This will happen if two or more widgets or MVC server wrappers have the same `Name()`. The value specified via the `Name()` method is used as the `id` HTML attribute of the widget. The latter must be unique in the page.
 
 ### Solution
 
-Always use unique widget names. For example you can append an index to make the name unique.
+Always use unique widget or MVC sevver wrappers names. For example you can append an index to make the name unique.
 
 ## Loading a partial view that contains a Kendo UI widget works only the first time
 
@@ -206,12 +206,12 @@ the MVC model binder will fail to bind the value.
 
 Omit specifying Name() or use the same Name() as the name of the property.
 
-## Kendo UI wrappers do not work inside client templates
+## Kendo UI MVC wrappers do not work inside client templates
 
 This can happen if the wrapper is declared without ToClientTemplate(). For more information please refer to
 [Using Kendo UI MVC wrappers inside client templates](/aspnet-mvc/fundamentals#client-templates)
 
-## Nesting Kendo UI wrappers produces a server-side exception when using the WebForms view engine
+## Nesting Kendo UI MVC wrappers produces a server-side exception when using the WebForms view engine
 
 This can happen if the nested wrappers are declared within code blocks, which output content directly, i.e. `<%= %>` or `<%: %>`.
 The following exception is thrown: **Invalid expression term ')'**.
@@ -246,7 +246,7 @@ For example:
 		.Render();
 	%>
 
-## Nesting Kendo UI wrappers produces a server-side exception when using the Razor view engine
+## Nesting Kendo UI MVC wrappers produces a server-side exception when using the Razor view engine
 
 This can happen if there are nested `<text>` tags, which is not allowed by the Razor view engine.
 The following exception is thrown: **Inline markup blocks cannot be nested. Only one level of inline markup is allowed**.
@@ -279,7 +279,7 @@ In such scenarios the inner widget can be included via a custom helper. For exam
 				</text>);
 		})
 	)
-## Kendo UI Wrappers cause double AJAX postback in debug mode using Ajax.Beginform()
+## Kendo UI MVC wrappers cause double AJAX postback in debug mode using Ajax.Beginform()
 
 To address this issue, add the following line to the bundleconfig.cs file:
  
