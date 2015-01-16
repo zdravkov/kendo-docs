@@ -27,6 +27,7 @@ To use Kendo UI in your project, you need to include the required JavaScript and
 1. Include the Kendo UI JavaScript and CSS files in the `head` tag of your HTML document. **Make sure the common CSS file is registered before the theme CSS file**.
 
         <!DOCTYPE html>
+        <html>
         <head>
             <title>Welcome to Kendo UI!</title>
             <!-- Common Kendo UI CSS -->
