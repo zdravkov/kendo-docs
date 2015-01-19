@@ -21,6 +21,7 @@ Telerik UI for ASP.NET MVC requires ASP.NET MVC. It supports:
 
 The offline sample application requires:
 
+* .NET 4.5
 * ASP.NET MVC 4 or ASP.NET MVC 5
 * Visual Studio 2012 or Visual Studio 2013
 * LocalDB
