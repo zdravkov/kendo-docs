@@ -1054,9 +1054,10 @@ Executed before the server response is used. Use it to preprocess or parse the s
 The field from the server response which contains the total number of data items. Can be set to a function which is called to
 return the total number of data items for the response.
 
-> If `schema.total` is not specified the `length` of the `Array` returned by [schema.data](#configuration-schema.data) will be used.
+> The `schema.total` setting may be omitted when the Grid is bound to a plain `Array` (i.e. the data items' collection is not a value of a field in the server response).
+In this case, the `length` of the response `Array` will be used.
 
-> The `schema.total` option must be set if the [serverPaging](#configuration-serverPaging) option is set to `true`.
+> `schema.total` must be set if the [serverPaging](#configuration-serverPaging) option is set to `true`.
 
 #### Returns
 
