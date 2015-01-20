@@ -3997,7 +3997,7 @@ The event handler function context (available via the `this` keyword) will be se
 
 The data source instance which fired the event.
 
-##### e.action `string` *(optional)*
+##### e.action `String` *(optional)*
 
 String describing the action type (available for all actions other than "read"). Possible values are "itemchange", "add", "remove" and "sync".
 
