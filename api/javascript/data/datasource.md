@@ -2903,6 +2903,8 @@ Every item from the array is wrapped in a [kendo.data.ObservableObject](/api/fra
 If the data source is grouped (via the [group](#configuration-group) option or the [group](#methods-group) method) and the [serverGrouping](#configuration-serverGrouping) is set to `true`
 the `data` method will return the group items.
 
+> The [schema.model](#configuration-schema.model) configuration will not be used to parse the set data items. The data should be parsed in advance.
+
 #### Parameters
 
 ##### value `Array|kendo.data.ObservableArray`
