@@ -630,20 +630,23 @@ Formats a `Number` or `Date` using the specified format and the current culture.
 #### Example
     <script src="http://cdn.kendostatic.com/2013.2.716/js/cultures/kendo.culture.de-DE.min.js"></script>
     <script>
-      //format a number using standard number formats and default culture (en-US)
-      console.log(kendo.toString(10.12, "n")); // outputs "10.12"
-      console.log(kendo.toString(10.12, "n0")); // outputs "10"
-      console.log(kendo.toString(10.12, "n5")); // outputs "10.12000"
-      console.log(kendo.toString(10.12, "c")); // outputs "$10.12"
-      console.log(kendo.toString(0.12, "p")); // outputs "12.00 %"
-      //format a number using custom number formats
-      console.log(kendo.toString(19.12, "00##")); //outputs "0019"
-      //format a number using standard number format and a specific culture de-DE (default culture is en-US)
-      console.log(kendo.toString(10.12, "c", "de-DE")); //outputs "10,12" €
-      //format a date
-      console.log(kendo.toString(new Date(2010, 9, 5), "yyyy/MM/dd" )); // outputs "2010/10/05"
-      console.log(kendo.toString(new Date(2010, 9, 5), "dddd MMMM d, yyyy" )); // outputs "Tuesday October 5, 2010"
-      console.log(kendo.toString(new Date(2010, 10, 10, 22, 12), "hh:mm tt" )); // outputs "10:12 PM"
+      // Format a number using standard number formats and default culture (en-US)
+      console.log(kendo.toString(10.12, "n"));  // "10.12"
+      console.log(kendo.toString(10.12, "n0")); // "10"
+      console.log(kendo.toString(10.12, "n5")); // "10.12000"
+      console.log(kendo.toString(10.12, "c"));  // "$10.12"
+      console.log(kendo.toString(0.12, "p"));   // "12.00 %"
+
+      // Format a number using custom number formats
+      console.log(kendo.toString(19.12, "00##")); // "0019"
+
+      // Format a number using standard number format and a specific culture de-DE (default culture is en-US)
+      console.log(kendo.toString(10.12, "c", "de-DE")); // "10,12" €
+
+      // Format a date
+      console.log(kendo.toString(new Date(2010, 9, 5), "yyyy/MM/dd" ));         // "2010/10/05"
+      console.log(kendo.toString(new Date(2010, 9, 5), "dddd MMMM d, yyyy" ));  // "Tuesday October 5, 2010"
+      console.log(kendo.toString(new Date(2010, 10, 10, 22, 12), "hh:mm tt" )); // "10:12 PM"
     </script>
 
 #### Returns
@@ -660,7 +663,7 @@ The `Date` or `Number` which should be formatted.
 
 The format string which should be used to format the value. [Number formatting](/framework/globalization/numberformatting) and [date formatting](/framework/globalization/dateformatting) depends on the current culture.
 
-##### culture `String`
+##### culture `String` *(optional)*
 
 The name of the culture which should be used to format the value. [The culture should be registered on the page](/framework/globalization/overview#add culture scripts to the page).
 
