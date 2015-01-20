@@ -142,6 +142,22 @@ Prepares the **View** for safe removal from DOM. Detaches all event handlers and
 
 > **Important:** This method does not remove the View element from DOM.
 
+#### Example
+
+```html
+<div data-role="view" id="main">
+    <a data-role="button" data-click="destroyView">Destroy and remove view</a>
+</div>
+
+<script>
+function destroyView() {
+  $("#main").data("kendoMobileView").destroy();
+  $("#main").remove();
+}
+new kendo.mobile.Application();
+</script>
+```
+
 ### enable
 
 Enables or disables the user interaction with the view and its contents.
