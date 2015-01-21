@@ -700,6 +700,317 @@ The width of the column. Numeric values are treated as pixels. **For more import
      });
      </script>
 
+### columns.hidden `Boolean` *(default: false)*
+
+If set to `true` the column will not be displayed in the treelist. By default all columns are displayed.
+
+#### Example - hide columns
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age", hidden: true }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columns.menu `Boolean`
+
+If set to `true` the column will be visible in the grid column menu. By default the column menu includes all data-bound columns (ones that have their [field](#configuration-columns.field) set).
+
+#### Example - hide a column from the column menu
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", menu: false },
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### reorderable `Boolean` *(default:false)*
+
+If set to `true` the user could reorder the columns by dragging their header cells. By default reordering is disabled.
+
+#### Example - enable column reordering
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id" },
+                { field: "name" },
+                { field: "age" }
+            ],
+            reorderable: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu `Boolean|Object` *(default: false)*
+
+If set to `true` the treelist will display the column menu when the user clicks the chevron icon in the column headers. The column menu allows the user to show and hide columns, filter and sort (if filtering and sorting are enabled).
+By default the column menu is not enabled.
+
+Can be set to a JavaScript object which represents the column menu configuration.
+
+#### Example - enable the column menu
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.columns `Boolean` *(default: true)*
+
+If set to `true` the column menu would allow the user to select (show and hide) treelist columns. By default the column menu allows column selection.
+
+#### Example - disable column selection
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                columns: false
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.filterable `Boolean` *(default: true)*
+
+If set to `true` the column menu would allow the user to filter the treelist. By default the column menu allows the user to filter if filtering is enabled via the [filterable](#configuration-filterable).
+
+#### Example - disable column menu filtering
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                filterable: false
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.sortable `Boolean` *(default: true)*
+
+If set to `true` the column menu would allow the user to sort the treelist by the column field. By default the column menu allows the user to sort if sorting is enabled via the [sortable](#configuration-sortable) option.
+
+> If this option is set to `false` the user could still sort by clicking the column header cell.
+
+#### Example - disable column menu sorting
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                sortable: false
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.messages `Object`
+
+The text messages displayed in the column menu. Use it to customize or localize the column menu messages.
+
+#### Example - customize column menu messages
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                messages: {
+                  columns: "Choose columns",
+                  filter: "Apply filter",
+                  sortAscending: "Sort (asc)",
+                  sortDescending: "Sort (desc)"
+                }
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.messages.columns `String` *(default: "Columns")*
+
+The text message displayed for the column selection menu item.
+
+#### Example - set the column selection message
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                messages: {
+                  columns: "Choose columns"
+                }
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.messages.filter `String` *(default: "Filter")*
+
+The text message displayed for the filter menu item.
+
+#### Example - set the filter message
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                messages: {
+                  filter: "Apply filter",
+                }
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.messages.sortAscending `String` *(default: "Sort Ascending")*
+
+The text message displayed for the menu item which performs ascending sort.
+
+#### Example - set the sort ascending message
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                messages: {
+                  sortAscending: "Sort (asc)",
+                }
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columnMenu.messages.sortDescending `String` *(default: "Sort Descending")*
+
+The text message displayed for the menu item which performs descending sort.
+
+#### Example - set the sort descending message
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            columnMenu: {
+                messages: {
+                  sortDescending: "Sort (desc)",
+                }
+            },
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
 ### dataSource `Object|Array|kendo.data.TreeListDataSource`
 
 The data source of the widget which is used to render table rows. Can be a JavaScript object which represents a valid data source configuration, a JavaScript array or an existing [kendo.data.DataSource](/api/framework/datasource)
@@ -2732,6 +3043,145 @@ The data source to which the widget should be bound.
         treeList.setDataSource(dataSource);
     </script>
 
+### showColumn
+
+Shows the specified column.
+
+#### Parameters
+
+##### column `Number|String`
+
+The index of the column, or the [field](#configuration-columns.field) to which the columns is bound.
+
+#### Example - show a hidden column by index
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age", hidden: true }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.showColumn(1);
+    </script>
+
+#### Example - show a hidden column by field
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age", hidden: true }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.showColumn("age");
+    </script>
+
+### hideColumn
+
+Hides the specified column.
+
+#### Parameters
+
+##### column `Number|String`
+
+The index of the column, or the [field](#configuration-columns.field) to which the columns is bound.
+
+#### Example - hide column by index
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.hideColumn(1);
+    </script>
+
+#### Example - show a hidden column by field
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.hideColumn("age");
+    </script>
+
+### reorderColumn
+
+Changes the position of the specified column.
+
+#### Parameters
+
+##### destIndex `Number`
+
+The new position of the column. The destination index should be calculated with regard to all columns, including the hidden ones.
+
+##### column `Object`
+
+The column whose position should be changed.
+
+#### Example - move a column
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.reorderColumn(1, treelist.columns[0]);
+    </script>
+
 ## Events
 
 ### cancel
@@ -3509,3 +3959,280 @@ The widget instance which fired the event.
         treeList.dataSource.fetch();
     </script>
 
+### columnShow
+
+Fired when the user shows a column.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.column `Object`
+
+A JavaScript object which represents the [column](#configuration-columns) configuration.
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnShow" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            columnShow: function(e) {
+                console.log(e.column.field); // displays the field of the hidden column
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "columnShow" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+        function treelist_columnShow(e) {
+            console.log(e.column.field); // displays the field of the hidden column
+        }
+
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.bind("columnShow", treelist_columnShow);
+    </script>
+
+### columnHide
+
+Fired when the user hides a column.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.column `Object`
+
+A JavaScript object which represents the [column](#configuration-columns) configuration.
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnHide" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            columnHide: function(e) {
+                console.log(e.column.field); // displays the field of the visible column
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "columnHide" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+        function treelist_columnHide(e) {
+            console.log(e.column.field); // displays the field of the visible column
+        }
+
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.bind("columnHide", treelist_columnHide);
+    </script>
+
+### columnReorder
+
+Fired when the user changes the order of a column.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.column `Object`
+
+A JavaScript object which represents the [column](#configuration-columns) configuration.
+
+##### e.newIndex `Number`
+
+The new column index.
+
+##### e.oldIndex `Number`
+
+The previous column index.
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnReorder" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            reorderable: true,
+            columnReorder: function(e) {
+                console.log(e.column.field, e.newIndex, e.oldIndex);
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "columnReorder" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+        function treelist_columnReorder(e) {
+          console.log(e.column.field, e.newIndex, e.oldIndex);
+        }
+
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            reorderable: true
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.bind("columnReorder", treelist_columnReorder);
+    </script>
+
+### columnMenuInit
+
+Fired when the column menu is initialized.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.container `jQuery`
+
+The jQuery object representing column menu form element.
+
+##### e.field `String`
+
+The field of the column for which the column menu is initialized.
+
+##### e.sender `kendo.ui.TreeList`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnMenuInit" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            columnMenu: true,
+            columnMenuInit: function(e) {
+                var menu = e.container.find(".k-menu").data("kendoMenu");
+                var field = e.field;
+                menu.append({ text: "Custom" });
+                menu.bind("select", function(e) {
+                    if ($(e.item).text() == "Custom") {
+                        console.log("Custom button for", field);
+                    }
+                });
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "columnMenuInit" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+        function treelist_columnMenuInit(e) {
+            var menu = e.container.find(".k-menu").data("kendoMenu");
+            var field = e.field;
+            menu.append({ text: "Custom" });
+            menu.bind("select", function(e) {
+                if ($(e.item).text() == "Custom") {
+                    console.log("Custom button for", field);
+                }
+            });
+        }
+
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "name" },
+                { field: "age" }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            columnMenu: true
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.bind("columnMenuInit", treelist_columnMenuInit);
+    </script>
