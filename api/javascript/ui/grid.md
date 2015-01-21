@@ -6084,9 +6084,11 @@ Hides the specified grid column.
 
 #### Parameters
 
-##### column `Number|String`
+##### column `Number|String|Object`
 
-The index of the column or the [field](#configuration-columns.field) to which the columns is bound.
+The index of the column, or the [field](#configuration-columns.field) to which the columns is bound, or the column object obtained from the [columns](#fields-columns) collection.
+
+When using multicolumn headers, using an index will hide a top-level column together will all its "child columns". In such scenarios, using field names or column objects may be more appropriate.
 
 #### Example - hide a column by index
 
@@ -6124,6 +6126,29 @@ The index of the column or the [field](#configuration-columns.field) to which th
     grid.hideColumn("age");
     </script>
 
+#### Example - hide a column by column object reference
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        columns: [{
+            title: "Person",
+            columns: [
+                { field: "fname", title: "First name"},
+                { field: "lname", title: "Last name"}
+            ]}, {
+                field: "age"
+            }
+        ],
+        dataSource: [
+            { fname: "Jane", lname: "Smith", age: 30 },
+            { fname: "John", lname: "Stevens", age: 33 }
+        ]
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.hideColumn(grid.columns[0].columns[1]);
+    </script>
+    
 ### lockColumn
 
 Locks (freezes) a column, allowing users to see it at all times when scrolling.
@@ -6503,9 +6528,11 @@ Shows the specified column.
 
 #### Parameters
 
-##### column `Number|String`
+##### column `Number|String|Object`
 
-The index of the column or the [field](#configuration-columns.field) to which the columns is bound.
+The index of the column, or the [field](#configuration-columns.field) to which the columns is bound, or the column object obtained from the [columns](#fields-columns) collection.
+
+When using multicolumn headers, using an index will hide a top-level column together will all its "child columns". In such scenarios, using field names or column objects may be more appropriate.
 
 #### Example - show a hidden column by index
 
@@ -6541,6 +6568,29 @@ The index of the column or the [field](#configuration-columns.field) to which th
     });
     var grid = $("#grid").data("kendoGrid");
     grid.showColumn("age");
+    </script>
+
+#### Example - show a column by column object reference
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        columns: [{
+            title: "Person",
+            columns: [
+                { field: "fname", title: "First name"},
+                { field: "lname", title: "Last name", hidden: true}
+            ]}, {
+                field: "age"
+            }
+        ],
+        dataSource: [
+            { fname: "Jane", lname: "Smith", age: 30 },
+            { fname: "John", lname: "Stevens", age: 33 }
+        ]
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.hideColumn(grid.columns[0].columns[1]);
     </script>
 
 ### unlockColumn
