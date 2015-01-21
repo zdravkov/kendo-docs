@@ -132,7 +132,7 @@ To make it work, one has to enable the corresponding Grid toolbar command(s) and
 * [Toolbar configuration](/api/javascript/ui/grid#configuration-toolbar)
 
 The most important thing to point out is that exporting in older browsers (IE9 and below, Safari) requires the implementation of a server proxy
-(more information is available in the `proxyUrl` configuration sections above).
+(more information is available in the `proxyUrl` configuration sections above). **PDF export is not supported in IE8 and below.**
 
 When using **Kendo UI Q2 2014 SP2 (2014.2.1008) or older versions**, exporting requires a custom implementation and there are two ways to approach the task:
 
