@@ -51,11 +51,19 @@ Series can be excluded from the legend by setting their `visibleInLegend` option
 
 The Chart comes with a number of predefined themes:
 
-*   Default
 *   Black
 *   BlueOpal
+*   Bootstrap
+*   Default
+*   Flat
+*   HighContrast
+*   Material
+*   MaterialBlack
 *   Metro
+*   MetroBlack
+*   Moonlight
 *   Silver
+*   Uniform
 
 Use the `theme` option to select a theme:
 
