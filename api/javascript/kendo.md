@@ -60,7 +60,7 @@ All descendant elements are traversed.
 
 The View-Model which the elements are bound to. Wrapped as an instance of `kendo.data.ObservableObject` if not already.
 
-##### namespace `Object`
+##### namespace `Object` *(optional)*
 
 Optional namespace too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
 `kendo.ui` will be used. Multiple namespaces can be passed.
@@ -91,7 +91,7 @@ Instantiates Kendo UI widgets in a given DOM element based on role data attribut
 
 The root element(s) from which the instantiation starts. Can be a valid jQuery string selector, a DOM element or a jQuery object. All descendant elements are traversed.
 
-##### namespace `Object`
+##### namespace `Object` *(optional)*
 
 Optional namespace too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
 `kendo.ui` will be used. Multiple namespaces can be passed.
@@ -711,7 +711,7 @@ This method can be used in scenarios when the page (e.g. a form) contains both g
 
 The DOM element that may have a Kendo UI instance attached to it.
 
-##### suite `Object`
+##### suite `Object` *(optional)*
 
 **Optional**. The Kendo UI suite, that the widget is expected to be part of - `kendo.ui` (web widgets), `kendo.mobile.ui` or `kendo.dataviz.ui`. As of Q1 2014 you can also pass an array of suites.
 
