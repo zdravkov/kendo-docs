@@ -50,6 +50,12 @@ Just like jQuery, the Kendo UI bundles include the corresponding AngularJS minif
 * Kendo UI 2014.3.1119 (Q3 2014) - AngularJS 1.3.0
 * Kendo UI 2014.2.716 (Q2 2014) - AngularJS 1.2.16 (upgraded to 1.2.21 in subsequent internal builds)
 
+## Excel export
+
+The [Excel export feature](http://docs.telerik.com/kendo-ui/framework/excel/introduction), available since Q3 2014, depends upon the the [JsZip library](https://stuk.github.io/jszip/).
+
+> The JsZip library is *not required* if you do not configure the widgets to support Excel exporting.
+
 ## Script tag placement
 
 There is a general recommendation to place `script` tags before the closing `body` tag, so that the scripts are loaded and executed after the HTML markup. Usually, the Kendo UI widget
