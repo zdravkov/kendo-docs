@@ -13,6 +13,10 @@ As a result, appearance settings are split between declarative options and tradi
 
 ## Themes and StyleSheets
 
+Kendo UI DataViz widgets arrive with a number of predefined themes:
+
+![Kendo UI DataViz Themes](/dataviz/dataviz-themes.png)
+
 Setting a Kendo UI DataViz theme is a two-step process:
 
 * Set the widget theme option:
