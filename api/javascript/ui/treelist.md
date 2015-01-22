@@ -2285,6 +2285,12 @@ Adds an empty data item to the treelist. In "inline" editing mode a table row wi
 
 Fires the [edit](#events-edit) event.
 
+#### Parameters
+
+##### parentRow `String|Element|jQuery`
+
+A string, DOM element or jQuery object which represents the parent table row. A string is treated as a jQuery selector.
+
 #### Example - add a new root data item
 
     <div id="treeList"></div>
