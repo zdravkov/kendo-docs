@@ -1038,6 +1038,24 @@ Indicates whether inline scripts will be serialized and posted to the server.
     console.log($("#editor").data("kendoEditor").value()); // logs "The character &auml; is an umlaut"
     </script>
 
+### serialization.semantic `Boolean` *(default: true)*
+
+Indicates whether the font styles will be saved as semantic (strong / em / span) tags,
+or as presentational (b / i / u / font) tags. Used for outputting content for legacy systems.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      value: "Check out <em>this</em> <strong>kata</strong>.",
+      serialization: {
+        semantic: false
+      }
+    });
+    console.log($("#editor").data("kendoEditor").value()); // logs "Check out <i>this</i> <b>kata</b>.",
+    </script>
+
 ### stylesheets `Array`
 
 Allows custom stylesheets to be included within the editing area. This setting is applicable only when the [Editor is initialized from a `textarea`](/web/editor/overview)
@@ -1081,6 +1099,8 @@ The available editor commands are:
         - **insertHtml**
 *   HTML code view
         - **viewHtml**
+*   Print edited page
+        - **print**
 
 #### Example
 
