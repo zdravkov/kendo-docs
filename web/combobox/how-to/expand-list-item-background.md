@@ -6,7 +6,7 @@ description: Example that shows how to expand background of long list items of K
 
 # How to expand the background of long list items
 
-The example below is applicable to the **AutoComplete** and **DropDownList** widgets as well.
+The example below is applicable to the **AutoComplete**, **DropDownList** and **MultiSelect** widgets as well.
 
 Normally, long items in the widget dropdown wrap to multiple lines. However, if the list item content is non-wrappable (e.g. a very long word or string with no spaces),
 a horizontal scrollbar will apppear. In this situation, the hover and selected state's background will not expand beyond the 100% width of the dropdown, due to the way
