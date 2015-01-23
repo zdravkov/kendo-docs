@@ -12,13 +12,13 @@ The example below demonstrates how to increase the height of the cells to show m
 
 ```html
     <style>
-        /*increase the height of the cells in day, work week and week views
+        /*increase the height of the cells in day, work week and week views*/
         .k-scheduler-table td, .k-scheduler-table th
         {
           height: 5.5em;
         }
 
-        /*increase the height of the month view cells
+        /*increase the height of the month view cells*/
         .k-scheduler-monthview .k-scheduler-table td
         {
           height: 15.5em;
