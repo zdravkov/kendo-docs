@@ -7109,6 +7109,15 @@ The widget instance which fired the event.
 
 If invoked prevents the data bind action. The table rows will remain unchanged and `dataBound` event will not fire.
 
+##### e.action `String`
+
+The action that caused the dataBinding event
+
+##### e.index `Number`
+
+##### e.items `Array`
+
+
 #### Example - subscribe to the "dataBinding" event before initialization
 
     <div id="grid"></div>
