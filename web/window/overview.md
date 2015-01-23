@@ -33,7 +33,7 @@ DOM element that was used to initialize the content.
 
 ### HTML structure and DOM Placement
 
-By default, the Window is created as a child of the `&lt;body&gt;` element. This behavior should be taken into account with regard to CSS selectors or element discovery via Javascript.
+By default, the Window is created as a child of the `<body>` element. This behavior should be taken into account with regard to CSS selectors or element discovery via Javascript.
 The behavior is configurable via the [`appendTo` setting](/api/web/window#configuration-appendTo).
 
 #### Before initialization
