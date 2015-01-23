@@ -1544,9 +1544,9 @@ The requirements for this handler are the same as for the [save handler](/web/up
 
 ### imageBrowser.transport.imageUrl `String|Function`
 
-The URL responsible for serving the original image. A file name placeholder should be specified.
+The URL responsible for serving the original image. A file name placeholder should be specified. By default the placeholder value is URL encoded. If this is not desired, use a function.
 
-#### Example
+#### Example - imageUrl as String
 
     <textarea id="editor"></textarea>
     <script>
@@ -1554,6 +1554,21 @@ The URL responsible for serving the original image. A file name placeholder shou
       imageBrowser: {
         transport: {
           imageUrl: "/content/images/{0}" //the placeholder will be replaced with the current virtual path and selected file name
+        }
+      }
+    });
+    </script>
+
+#### Example - imageUrl as Function (can be used to avoid automatic URL encoding)
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      imageBrowser: {
+        transport: {
+          imageUrl: function (e) {
+            return "/content/images/" + e;
+          }
         }
       }
     });
@@ -2337,9 +2352,9 @@ The URL which will handle the upload of the new files. If not specified the Uplo
 
 ### fileBrowser.transport.fileUrl `String|Function`
 
-The URL responsible for serving the original file. A file name placeholder should be specified.
+The URL responsible for serving the original file. A file name placeholder should be specified. By default the placeholder value is URL encoded. If this is not desired, use a function.
 
-#### Example
+#### Example - fileUrl as String
 
     <textarea id="editor"></textarea>
     <script>
@@ -2347,6 +2362,20 @@ The URL responsible for serving the original file. A file name placeholder shoul
       fileBrowser: {
         transport: {
           fileUrl: "/content/files/{0}" //the placeholder will be replaced with the current virtual path and selected file name
+        }
+      }
+    });
+    </script>
+
+#### Example - fileUrl as Function (can be used to avoid automatic URL encoding)
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      fileBrowser: {
+        transport: {
+          fileUrl: function (e) {
+            return "/content/files/" + e;
         }
       }
     });
