@@ -11,6 +11,7 @@ The example below demonstrates how to create custom editor in Kendo Grid using A
 #### Example:
 
 ```html
+  <script src="http://demos.telerik.com/kendo-ui/content/shared/js/products.js"></script>
   <div id="example" ng-app="KendoDemos">
     <div ng-controller="MyCtrl">
       <kendo-grid options="mainGridOptions"></kendo-grid>
