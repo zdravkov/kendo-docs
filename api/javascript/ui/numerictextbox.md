@@ -96,7 +96,7 @@ Represents the Kendo UI NumericTextBox widget. Inherits from [Widget](/api/frame
 
  Specifies the smallest value the user can enter.
 
-#### Example - specify max option
+#### Example - specify min option
 
     <input id="numerictextbox" />
     <script>
