@@ -68,7 +68,7 @@ In this way the TabStrip will not be able to receive focus and capture keyboard 
             $("#tabstrip").on("keydown", function (e) {
                 // kendo.keys is documented at http://docs.telerik.com/kendo-ui/api/javascript/kendo#fields-keys
                 if (e.keyCode == kendo.keys.DOWN || e.keyCode == kendo.keys.UP) {
-                    // prevent built-in TabStrip keyboard navigation
+                    // prevent the built-in TabStrip keyboard navigation
                     e.stopImmediatePropagation();
                     // prevent page scroll
                     e.preventDefault();
@@ -91,6 +91,8 @@ In this way the TabStrip will not be able to receive focus and capture keyboard 
                     }
                 }
             });
+            
+            $("#tabstrip").focus();
 
         });
     </script>
