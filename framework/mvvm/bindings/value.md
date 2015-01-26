@@ -225,3 +225,63 @@ The third `option` will be displayed as selected. Selecting another `option` wil
 
 The second `option` will be displayed as selected. Selecting another `option` will append the corresponding item from the `products` array to the
 `selectedProducts` array. Unselecting an `option` will remove its corresponding item from the `selectedProducts` array.
+
+## Strongly typed value binding
+By default the View-Model fields are updated with string values, as this is what the DOM element's value property contains. Since the 2015 Q1 release, Kendo MVVM allows strongly typed value binding by parsing the element's value before updating the View-Model field bound to it. Supported types are `text`, `number`, `date`, `datetime-local` and `boolean`.  
+
+> To be correctly parsed, the `date` and `datetime-local` values should use strict formatting rules, including the leading zeroes:
+> 
+> - `date` - "yyyy-MM-dd"
+> - `datetime-local` - "yyyy-MM-ddTHH:mm:ss"
+
+
+### Using the type attribute
+Kendo MVVM automatically uses strongly typed value binding based on the input element's `type` attribute.
+```html
+    <div id="view">
+        <input type="number" data-bind="value: Quantity"/>
+        <input type="date" data-bind="value: ArrivalDate"/> 
+    </div>
+    <script>
+        var viewModel = kendo.observable({
+            Quantity: 22,
+            ArrivalDate : new Date()
+        });
+        kendo.bind($("#view"), viewModel);
+        viewModel.bind("change", function(e){
+            console.log(e.field, "=", this.get(e.field));
+        });
+    </script>
+```
+
+### Using the data-type attribute
+Explicitly specifying the data type is also supported, via the `data-type` attribute.
+```html
+    <div id="view">
+        <input type="text" data-type="number" data-bind="value: Quantity"/>
+        <input type="date" data-type="text" data-bind="value: ArrivalDate"/> 
+        
+        <select multiple="multiple" data-type="number" data-bind="value: number">
+            <option value="3.14">Pi</option>
+            <option value="1.41">Pythagoras' constant</option>
+            <option value="1.61">Golden ratio</option>
+        </select>
+        
+        <select data-type="date" data-bind="value: Birthday">
+            <option value="2015-01-01">John</option>
+            <option value="2014-12-31">Jane</option> 
+        </select>
+    </div>
+    <script>
+        var viewModel = kendo.observable({
+            Quantity: 22,
+            ArrivalDate : kendo.toString(new Date(), "yyyy-MM-dd"),
+            Birthday: kendo.parseDate("2014-12-31", "yyyy-MM-dd"),
+            number: [1.61, 3.14]
+        });
+        kendo.bind($("#view"), viewModel);
+        viewModel.bind("change", function(e){
+            console.log(e.field, "=", this.get(e.field));
+        });
+    </script>
+```

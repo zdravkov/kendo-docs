@@ -88,3 +88,33 @@ In this example the second radio button would be checked after calling `kendo.bi
 ### Important: a group of radio buttons should have the same name attribute
 
 All radio buttons acting as a group should have the same `name` attribute. Only then checking a radio button from the group will uncheck the previously checked one.
+
+
+## Strongly typed checked binding
+Checkbox inputs bound to an array and radio buttons also support strong typing, using the same principles applied to the [strongly typed value binding](value#strongly-typed-value-binding).
+
+### Using the data-type attribute
+```html
+    <div id="view">
+        <input type="checkbox" name="items" data-bind="checked: items" value="bike"/>
+        <input type="checkbox" name="items" data-bind="checked: items" value="-1" data-type="number"/>
+        <input type="checkbox" name="items" data-bind="checked: items" value="true" data-type="boolean"/>
+        <input type="checkbox" name="items" data-bind="checked: items" value="2015-01-31" data-type="date"/>
+        
+        <input type="radio" name="group" data-type="date" data-bind="checked: group" value="2015-01-31"/>
+        <input type="radio" name="group" data-type="datetime-local" data-bind="checked: group" value="2013-06-05T23:13:40"/>
+        <input type="radio" name="group" data-type="text" data-bind="checked: group" value="Hello"/>
+        <input type="radio" name="group" data-type="number" data-bind="checked: group" value="3.14"/>
+        <input type="radio" name="group" data-type="boolean" data-bind="checked: group" value="false"/>
+    </div>
+    <script>
+        var viewModel = kendo.observable({
+            items: [-1, true],
+            group: kendo.parseDate("2015-01-31", "yyyy-MM-dd")
+        });
+        kendo.bind($("#view"), viewModel);
+        viewModel.bind("change", function(e){
+            console.log(e.field, "=", this.get(e.field));
+        });
+    </script>
+```
