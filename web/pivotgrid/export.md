@@ -1,5 +1,5 @@
 ---
-title: Excel Export
+title: Exporting
 description: Kendo UI Grid Excel Export feature
 ---
 
