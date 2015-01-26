@@ -1185,7 +1185,7 @@ For information about the tuple structure check this [link](/api/framework/pivot
 
     <script>
     $("#pivotgrid").kendoPivotGrid({
-        columnHeaderTemplate: $("#columnTemplate").html(),
+        rowHeaderTemplate: $("#rowTemplate").html(),
         dataSource: {
             type: "xmla",
             rows: [{ name: "[Date].[Calendar]", expand: true } ],
