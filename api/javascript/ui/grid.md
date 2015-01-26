@@ -7566,7 +7566,7 @@ If invoked the grid will not save the generated file.
         { name: "John Doe"}
       ],
       excelExport: function(e) {
-        e.workbook.fileName = "Grid.xslx";
+        e.workbook.fileName = "Grid.xlsx";
       }
     });
     var grid = $("#grid").data("kendoGrid");
@@ -7589,7 +7589,7 @@ If invoked the grid will not save the generated file.
     });
     var grid = $("#grid").data("kendoGrid");
     grid.bind("excelExport", function(e) {
-        e.workbook.fileName = "Grid.xslx";
+        e.workbook.fileName = "Grid.xlsx";
     });
     grid.saveAsExcel();
     </script>
