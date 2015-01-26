@@ -1459,6 +1459,30 @@ Can be set to a JavaScript object which represents the filter menu configuration
         });
     </script>
 
+### filterable.extra `Boolean` *(default: true)*
+
+If set to `true` the filter menu allows the user to input a second criteria.
+
+#### Example - disable the extra filtering criteria
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+          height: "100em",
+          columns: [
+            { field: "name" },
+            { field: "age" }
+          ],
+          filterable: {
+            extra: false
+          },
+          dataSource: [
+              { name: "Jane Doe", age: 30 },
+              { name: "John Doe", age: 33 }
+          ]
+        });
+    </script>
+
 ### height `Number|String`
 
 The height of the treelist. Numeric values are treated as pixels.
