@@ -62,7 +62,7 @@ The View-Model which the elements are bound to. Wrapped as an instance of `kendo
 
 ##### namespace `Object` *(optional)*
 
-Optional namespace too look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
+Optional namespace to look in when instantiating Kendo UI widgets. The valid namespaces are `kendo.ui`, `kendo.dataviz.ui` and `kendo.mobile.ui`. If omitted
 `kendo.ui` will be used. Multiple namespaces can be passed.
 
 
