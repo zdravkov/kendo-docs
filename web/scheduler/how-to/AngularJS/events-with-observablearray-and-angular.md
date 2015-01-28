@@ -18,9 +18,9 @@ The example below demonstrates how to create events using Kendo UI ObservableArr
     </div>
 
     <script>
-      angular.module("KendoDemos", [ "kendo.directives" ]);
+      angular.module("KendoDemos", [ "kendo.directives" ])
+        .controller("MyCtrl", function($scope){
 
-      function MyCtrl($scope) {
         var events = new kendo.data.ObservableArray([]);
 
         $scope.ds = new kendo.data.SchedulerDataSource({
@@ -102,6 +102,6 @@ The example below demonstrates how to create events using Kendo UI ObservableArr
         setTimeout(function () {
           fill();
         }, 1000);
-      }
+      });
     </script>
 ```
