@@ -28,8 +28,8 @@ The example below demonstrates how to set initial data manually using AngularJS
 
     <script>
       angular.module("KendoDemos", [ "kendo.directives" ]);
+        .controller("MyCtrl", function($scope){
 
-      function MyCtrl($scope, $timeout) {
         $scope.ds = new kendo.data.SchedulerDataSource({
           batch: true,
           transport: {
@@ -139,6 +139,6 @@ The example below demonstrates how to set initial data manually using AngularJS
         }
 
         return result;
-      }
+      });
     </script>
 ```

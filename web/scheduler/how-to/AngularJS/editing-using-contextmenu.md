@@ -36,8 +36,8 @@ The example below demonstrates how to edit Scheduler event using ContextMenu
     </div>
 
     <script>
-      angular.module("KendoDemos", [ "kendo.directives" ]);
-      function MyCtrl($scope) {
+      angular.module("KendoDemos", [ "kendo.directives" ])
+        .controller("MyCtrl", function($scope){
 
         $scope.onContextMenuOpen = function(e) {
           var menu = $scope.contextMenu;
@@ -142,6 +142,6 @@ The example below demonstrates how to edit Scheduler event using ContextMenu
             }
           ]
         };
-      }
+      });
     </script>
 ```
