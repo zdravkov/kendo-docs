@@ -451,7 +451,7 @@ We do need to make some small tweaks to our method which assigns or builds the D
 Since we have already bound the change event on the DataSource possibly once, we need to make sure we unbind it if necessary. If this is not done, the
 widget will retain a list of all the bindings and will execute the **refresh** function numerous times - which is not what we want. Also, MVVM will be
 listening to the internal **_refreshHandler** function which we have not yet defined. We simply need to point that internal **_refreshHandler** to our
-publicly exposes refresh method. First though, we need to check and see if there is an existing connection between the public **refresh** (which is
+publicly exposed refresh method. First though, we need to check and see if there is an existing connection between the public **refresh** (which is
 bound to the change event on the DataSource) and the internal **_refreshHandler**. If there is, we need to remove just the binding to the change
 event. If there is no connection between our internal **_refreshHandler** and the public **refresh** function, we need to create it. This is done by
 the **$.proxy** jQuery method which simply calls the public **refresh** with the correct context, which is the widget itself. Finally, we rebind to
