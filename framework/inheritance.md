@@ -18,7 +18,7 @@ One of the things that tends to happen quickly in JavaScript programming, is tha
 the quirkiness of JavaScript’s Object Model.  It’s somewhat counter-intuitive when it comes to things like simple inheritance strategies and
 oftentimes we give up and just start chaining elements until we’ve built “the monster”.
 
-It’s essential that we take some of the fantastic structure and DRY principals from OO and use them in our JavaScript development.  Especially as
+It’s essential that we take some of the fantastic structure and DRY principles from OO and use them in our JavaScript development.  Especially as
 JavaScript plays more and more of a role on the server (Node.js for instance).
 
 > Wikipedia describes JavaScript as a:
