@@ -73,7 +73,6 @@ The [Create a custom number format](https://support.office.com/en-us/article/Cre
         }
       }
     }
-
   });
   $("#export").click(function(e) {
     var grid = $("#grid").data("kendoGrid");
