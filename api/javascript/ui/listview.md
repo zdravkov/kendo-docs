@@ -356,6 +356,24 @@ A string, DOM element or jQuery object which represents the listview item. A str
       console.log(listview.dataItem(row));
     </script>
 
+### dataItems
+
+Returns the array that is bound to the widget
+
+#### Example
+
+    <div id ="listView"></div>
+    <script>
+      var dataSource = new kendo.data.DataSource({
+        data: [ { name: "Jane Doe" }, { name: "John Doe" }]
+      });
+      var listview = $("#listView").kendoListView({
+        dataSource: dataSource,
+        template: "<div>#:name#</div>"
+      }).data("kendoListView")
+      console.log(listview.dataItems()) //will output the bound array
+    </script>
+
 ### destroy
 Prepares the **ListView** for safe removal from DOM. Detaches all event handlers and removes jQuery.data attributes to avoid memory leaks. Calls destroy method of any child Kendo widgets.
 
