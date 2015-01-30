@@ -501,3 +501,23 @@ Fires after the mobile application is instantiated.
             }
         });
     </script>
+
+
+## Fields
+
+### router `kendo.Router`
+
+the [router](api/javascript/router) instance used by the mobile application for navigation purposes.
+
+The mobile application binds to the `routeMissing` router event handler, so registering routes will take precedence over the default mobile app actions.
+
+```html
+    <div data-role="view">Hello!</div>
+
+    <script>
+        $(function() {
+            var app = new kendo.mobile.Application();
+            console.log(app.router);
+        });
+    </script>
+```
