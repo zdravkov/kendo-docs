@@ -507,7 +507,7 @@ Fires after the mobile application is instantiated.
 
 ### router `kendo.Router`
 
-the [router](api/javascript/router) instance used by the mobile application for navigation purposes.
+the [router](/api/javascript/router) instance used by the mobile application for navigation purposes.
 
 The mobile application binds to the `routeMissing` router event handler, so registering routes will take precedence over the default mobile app actions.
 
