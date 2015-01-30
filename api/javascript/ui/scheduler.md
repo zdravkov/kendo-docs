@@ -590,6 +590,44 @@ If set to `true` the user can update events. Updating is enabled by default.
     });
     </script>
 
+### editable.window `Object`
+
+Configures the Kendo UI Window instance, which is used when the Grid edit mode is `"popup"`. The configuration is optional.
+
+For more information, please refer to the [Window configuration API](/api/web/window).
+
+#### Example - Scheduler popup Window configuration
+
+    <div id="scheduler"></div>
+    <script>
+
+    function myOpenEventHandler(e) {
+        // ...
+    }
+
+    $("#scheduler").kendoScheduler({
+      date: new Date("2013/6/6"),
+      editable: {
+        window: {
+            title: "My Custom Title",
+            animation: false,
+            open: myOpenEventHandler
+        }
+      },
+      views: [
+        { type: "day" }
+      ],
+      dataSource: [
+        {
+          id: 1,
+          start: new Date("2013/6/6 08:00 AM"),
+          end: new Date("2013/6/6 09:00 AM"),
+          title: "Interview"
+        }
+      ]
+    });
+    </script>
+
 ### endTime `Date`
 
 The end time of the week and day views. The scheduler will display events ending before the `endTime`.
