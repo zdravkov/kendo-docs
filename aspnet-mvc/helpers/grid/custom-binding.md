@@ -153,7 +153,7 @@ Decorate that parameter with the `Kendo.UI.DataSourceRequestAttribute`. That att
 
 ## Custom ajax binding
 
-To configure the Kendo Grid for server custom binding follow these steps:
+To configure the Kendo Grid for ajax custom binding follow these steps:
 
 1. Add a new parameter of type `Kendo.UI.DataSourceRequest` to the action method.
 It will contain the current grid request information - page, sort, group and filter. Decorate that parameter with the
