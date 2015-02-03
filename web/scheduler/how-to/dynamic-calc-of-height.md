@@ -21,7 +21,7 @@ $(function() {
             {type: "week", selected: true}
         ],
         timezone: "Etc/UTC",
-        date: kendo.date.today()
+        date: kendo.date.today(),
         dataSource: []
     });
 
