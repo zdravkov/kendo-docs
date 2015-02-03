@@ -2174,7 +2174,7 @@ which field to update. The other option is to use [MVVM](/framework/mvvm/overvie
     <script id="popup-editor" type="text/x-kendo-template">
       <h3>Edit Person</h3>
       <p>
-        <label>Name:<input data-bind="value: name" /></label>
+        <label>Name:<input data-bind="valueu:name" /></label>
       </p>
       <p>
         <label>Age:<input data-role="numerictextbox" data-bind="value:age" /></label>
