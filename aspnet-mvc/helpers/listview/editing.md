@@ -11,12 +11,12 @@ description: Find which steps to follow in order to configure Kendo UI ListView 
 To configure Kendo ListView for ASP.NET MVC for editing follow these steps:
 
 1.	Define item template for listview:
-	
+
 		<!-- The following markup contains the `Add new record` button -->
 		<div class="k-toolbar k-grid-toolbar">
 		    <a class="k-button k-button-icontext k-add-button" href="#"><span class="k-icon k-add"></span>Add new record</a>
 		</div>
-		
+
 		<!-- ListView item template -->
 		<script id="list-view-template" type="text/x-kendo-template">
 		    <div class="product-view">
@@ -36,12 +36,12 @@ To configure Kendo ListView for ASP.NET MVC for editing follow these steps:
 		            </div>
 		        </div>
 		</script>
-        
+
 	**Note:** Click events for elements with class name **k-edit-button** and **k-delete-button** will be automatically handled and treated by Kendo ListView as **edit** and **delete** actions.
 
 2.	Define `EditorTemplate` for the model:
 
-		@model Kendo.Mvc.Examples.Models.ProductViewModel		
+		@model Kendo.Mvc.Examples.Models.ProductViewModel
 		<div class="product-view">
 		    <dl>
 		        <dt>Product Name</dt>
@@ -71,14 +71,14 @@ To configure Kendo ListView for ASP.NET MVC for editing follow these steps:
 		    </div>
 		</div>
 
-	**Note:** Click events for elements with class name **k-update-button** and **k-cancel-button** will be automatically handled and treated by Kendo ListView as **save** and **cancel** actions.
+	**Note:** Click events for elements with class name **k-update-button** and **k-cancel-button** will be automatically handled and treated by Kendo ListView as **save** and **cancel** actions. The editor template should be wrapped in a HTML container, same as the item template.
 
 3.	Enable listview editing:
 
 		@(Html.Kendo().ListView<Kendo.Mvc.Examples.Models.ProductViewModel>()
 		    .Name("listView")
 		    .TagName("div")
-		    .ClientTemplateId("list-view-template")		    
+		    .ClientTemplateId("list-view-template")
 		    .Editable() // <-- Enable editing
 		)
 
@@ -90,15 +90,15 @@ To configure Kendo ListView for ASP.NET MVC for editing follow these steps:
 		    .ClientTemplateId("list-view-template")
 			.Editable()
 		    .DataSource(dataSource => dataSource
-		        // Configure CRUD -->		        
+		        // Configure CRUD -->
 		        .Create(create => create.Action("Editing_Create", "ListView"))
 		        .Read(read => read.Action("Editing_Read", "ListView"))
 		        .Update(update => update.Action("Editing_Update", "ListView"))
 		        .Destroy(destroy => destroy.Action("Editing_Destroy", "ListView"))
 				// <-- Configure CRUD
-		    )		    
+		    )
 		)
-        
+
 5.  Specify the property of the model which is the unique identifier (primary key):
 
 		@(Html.Kendo().ListView<Kendo.Mvc.Examples.Models.ProductViewModel>(Model)
@@ -108,14 +108,14 @@ To configure Kendo ListView for ASP.NET MVC for editing follow these steps:
 			.Editable()
 		    .DataSource(dataSource => dataSource
 				// Specify that the ProductID property is the unique identifier of the model
-		        .Model(model => model.Id("ProductID"))		        
+		        .Model(model => model.Id("ProductID"))
 		        .Create(create => create.Action("Editing_Create", "ListView"))
 		        .Read(read => read.Action("Editing_Read", "ListView"))
 		        .Update(update => update.Action("Editing_Update", "ListView"))
 		        .Destroy(destroy => destroy.Action("Editing_Destroy", "ListView"))
-		    )		    		    
+		    )
 		)
-        
+
 6.  Implement the `Read` action method:
 
         public ActionResult Editing_Read([DataSourceRequest] DataSourceRequest request)
