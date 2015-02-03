@@ -90,13 +90,23 @@ The example below demonstrates how to add Kendo UI controls to a custom event ed
             }
           ],
           edit: function(e) {
-            var container = e.container;
+                var container = e.container;
 
-            container.find("[data-container-for=ownerId]")
-            .find("[data-role=dropdownlist]")
-            .data("kendoDropDownList")
-            .wrapper.width("400px");
+                /* ACTION: ADD custom button */
+                var newButton = $('<a class="k-button" href="#">New button</a>');
 
+                //wire its click event
+                newButton.click(function(e) { alert("Clicked"); });
+
+                //add the button to the container
+                var buttonsContainer = container.find(".k-edit-buttons");
+                buttonsContainer.append(newButton);
+
+                /* ACTION: Accessing dropdownlist widget */
+                container.find("[data-container-for=ownerId]")
+                .find("[data-role=dropdownlist]")
+                .data("kendoDropDownList")
+                .wrapper.width("400px");
           }
         });
 
