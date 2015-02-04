@@ -1254,7 +1254,7 @@ The code below shows how to use a template and pass variables to it. This allows
     <script id="toolTemplate" type="text/x-kendo-template">
         <button class='k-button'>#= myText #</button>
     </script>
-    
+
     <textarea id="editor"></textarea>
     <script>
     $("#editor").kendoEditor({
@@ -1267,7 +1267,7 @@ The code below shows how to use a template and pass variables to it. This allows
       ]
     });
     </script>
-    
+
 ### imageBrowser `Object`
 
 Configuration for image browser dialog.
@@ -3384,6 +3384,19 @@ The pasted content
     $("#editor").kendoEditor();
     var editor = $("#editor").data("kendoEditor");
     editor.bind("paste", editor_paste);
+    </script>
+
+#### Example - process the pasted content
+
+    <textarea id="editor"></textarea>
+    <script>
+    function onPaste(e) {
+      // replace all <a> / </a> tags in the pasted content
+      e.html = e.html.replace(/<\/?a[^>]*>/g, "");
+    }
+    $("#editor").kendoEditor({
+      paste: onPaste
+    });
     </script>
 
 ### select
