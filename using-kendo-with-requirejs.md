@@ -12,11 +12,11 @@ For example, supposing you need to use a grid and a dropdownlist, your code coul
     <div id="grid"></div>
     <br>
     <select id="ddl"></select>
-    
+
     <!-- Load the jQuery and RequireJS files from CDN -->
-    
+
     <script data-main="http://cdn.kendostatic.com/2014.2.903/js/jquery.min.js"
-            src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script> 
+            src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script>
 
     <script>
       require([ "kendo.dropdownlist.min", "kendo.grid.min" ], initApp); //include the needed Kendo UI widgets scripts
@@ -76,3 +76,48 @@ In practice, if you use RequireJS you will probably have some files of your own 
     </script>
 
 For more information about RequireJS please [visit the website](http://requirejs.org/).
+
+## Using Kendo UI Custom Download with AngularJS and Require
+
+In this scenario a custom schim configuration is needed. The app will be initialized using `angular.bootstrap`, after all the scripts are loaded
+
+    <div id="example" ng-controller="MyCtrl">
+        <br>
+        <select kendo-drop-down-list k-options="myOptions"></select>
+      </div>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.1/require.min.js"></script>
+      <script>
+        require.config({
+          paths: {
+            'jquery' : 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
+            'angular': 'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min',
+            'kendo': 'path-to-your-kendo-custom.min.js file'
+          },
+          shim: {
+            'kendo': ['jquery'],
+            'angular' : ['jquery'],
+            'app': {
+              deps: ['angular', 'kendo'] //set dependencies
+            }
+          }
+        });
+
+        require([
+          'angular',
+          'kendo'
+        ], initApp);
+
+        function initApp() {
+          var app = angular.module("app", ['kendo.directives']);
+          app.controller("MyCtrl", function($scope){
+            $scope.myOptions = {
+              dataSource: {
+                data: [{name:"Jane Doe", value: 1}, {name:"John Doe", value: 2}]
+              },
+              dataTextField: "name",
+              dataValueField: "value"
+            }
+          })
+          angular.bootstrap(document, ['app']); //initialize application
+        }
+      </script>
