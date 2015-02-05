@@ -71,6 +71,40 @@ The proxy should return the decoded file with set "Content-Disposition" header.
 
 Here are a few sample implementations of a server-side proxy for different platforms.
 
+### ASP.NET WebAPI Controller
+
+```
+public class SaveFile : ApiController
+{
+    public class FileData
+    {
+        public string ContentType { get; set; }
+        public string Base64 { get; set; }
+        public string FileName { get; set; }
+    }
+
+    // POST api/savefile
+    public HttpResponseMessage Post([FromBody]FileData file)
+    {
+        var data = Convert.FromBase64String(file.Base64);
+
+        var result = new HttpResponseMessage(HttpStatusCode.OK)
+        {
+            Content = new StreamContent(new MemoryStream(data))
+        };
+
+        result.Content.Headers.ContentType = new MediaTypeHeaderValue(file.ContentType);
+
+        result.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment")
+        {
+            FileName = file.FileName
+        };
+
+        return result;
+    }
+}
+```
+
 ### ASP.NET MVC Proxy
 
 #### Controller
