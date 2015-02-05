@@ -51,6 +51,9 @@ Adding or removing items from the array will update the HTML contents of the tar
 
 ### Source binding to array of objects
 
+> *Important:* Source binding requires the result set to be either an [ObservableArray](http://docs.telerik.com/kendo-ui/api/javascript/data/observablearray) or
+a list of [ObservableObject](http://docs.telerik.com/kendo-ui/api/javascript/data/observableobject) instances.
+
     <ul data-template="ul-template" data-bind="source: products">
     </ul>
     <script id="ul-template" type="text/x-kendo-template">
