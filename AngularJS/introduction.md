@@ -45,6 +45,9 @@ As a shortcut, you can discard the dashes after `kendo-`:
 
 You can specify any options supported by Kendo UI widgets in element attributes, by converting the option name from camelCase to dash-separated-words, and prefixing it with `k-`.  For example:
 
+> Important: Kendo bindings will parse attributes without **prefixes** if they match widget's options. For instance, the HTML5 `placeholder` attribute defined in the `NumericTextBox` element will be parsed as Angular expression,
+because the widget has a placeholder option. Because of this built-in functionality, you will need to ensure that attribute has a valid Angular expression or a valid string value, quoted with `'` characters.
+
 #### Set Kendo UI widget options as attributes in AngularJS
 
 ```html
