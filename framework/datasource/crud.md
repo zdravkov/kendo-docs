@@ -517,4 +517,4 @@ Please refer to the [online Grid Editing demos](http://demos.telerik.com/kendo-u
 
 ## CRUD Examples with ASP.NET MVC
 
-https://github.com/telerik/kendo-examples-asp-net
+More examples with CRUD operations in ASP.NET MVC can be found [here](https://github.com/telerik/kendo-examples-asp-net)
