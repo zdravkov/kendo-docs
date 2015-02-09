@@ -40,7 +40,7 @@ A JavaScript array that contains the ToolBar's commands configuration.
             items: [
                 { type: "button", text: "Button" },
                 { type: "button", text: "Toggle", togglable: true },
-                { type: "splitButton", text: "SplitButton", items: [{text: "Option 1"}, {text: "Option 2"}] }
+                { type: "splitButton", text: "SplitButton", menuButtons: [{text: "Option 1"}, {text: "Option 2"}] }
             ]
         });
     </script>
@@ -1304,7 +1304,7 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", items: [
+                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", menuButtons: [
                     { id: "option1", text: "Option 1" },
                     { id: "option2", text: "Option 2" },
                     { id: "option3", text: "Option 3" },
@@ -1323,7 +1323,7 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", items: [
+                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", menuButtons: [
                     { id: "option1", text: "Option 1" },
                     { id: "option2", text: "Option 2" },
                     { id: "option3", text: "Option 3" },
@@ -1362,7 +1362,7 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", items: [
+                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", menuButtons: [
                     { id: "option1", text: "Option 1" },
                     { id: "option2", text: "Option 2" },
                     { id: "option3", text: "Option 3" },
@@ -1381,7 +1381,7 @@ The widget instance which fired the event.
     <script>
         $("#toolbar").kendoToolBar({
             items: [
-                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", items: [
+                { type: "splitButton", id: "splitButton", name: "splitButton", text: "Split Button", menuButtons: [
                     { id: "option1", text: "Option 1" },
                     { id: "option2", text: "Option 2" },
                     { id: "option3", text: "Option 3" },
