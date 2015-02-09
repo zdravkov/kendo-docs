@@ -90,7 +90,7 @@ Otherwise the DataSource instance will operate with incorrect data and subsequen
     var dataSource = new kendo.data.DataSource({
         transport: {
             /* the other CRUD settings are ommitted for brevity */
-            update: function (e) {
+            create: function (e) {
                 // batch is disabled
                 // generate appropriate data item ID and save the new items to the original datasource
                 e.data.my_ID_field_name = 123;
