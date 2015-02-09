@@ -65,10 +65,10 @@ updated, they are received as an array of objects in `e.data.models`. Again, the
                 //var updateItems = e.data.models;
                 // batch is disabled
                 var updatedItem = e.data;
-                
+
                 // save the updated item to the original datasource
                 // ...
-                
+
                 // on success
                 e.success();
                 // on failure
@@ -86,16 +86,16 @@ The `create` function should perform a similar routine as `update`, with a coupl
 Otherwise the DataSource instance will operate with incorrect data and subsequent data operations can fail.
 
 <!-- exit list -->
-    
+
     var dataSource = new kendo.data.DataSource({
         transport: {
             /* the other CRUD settings are ommitted for brevity */
-            update: function (e) {
+            create: function (e) {
                 // batch is disabled
                 // generate appropriate data item ID and save the new items to the original datasource
                 e.data.my_ID_field_name = 123;
                 // ...
-                
+
                 // on success return the new data items with IDs
                 e.success(e.data);
                 // on failure
@@ -114,7 +114,7 @@ The function should remove the provided items from the original datasource and r
             /* the other CRUD settings are ommitted for brevity */
             destroy: function (e) {
                 // remove items from the original datasource by using e.data
-                
+
                 // on success
                 e.success();
                 // on failure
@@ -174,14 +174,14 @@ All data operations are persisted in this variable, so that it can be used or su
             {ProductID: 3, ProductName: "Nokia 5880", Introduced: new Date(2008, 10, 2), UnitPrice: 275, Discontinued: true, UnitsInStock: 0}
         ];
 
-        // custom logic start    
-        
+        // custom logic start
+
         var sampleDataNextID = sampleData.length + 1;
-        
+
         function getIndexById(id) {
             var idx,
                 l = sampleData.length;
-            
+
             for (var j; j < l; j++) {
                 if (sampleData[j].ProductID == id) {
                     return j;
@@ -189,7 +189,7 @@ All data operations are persisted in this variable, so that it can be used or su
             }
             return null;
         }
-        
+
         // custom logic end
 
         $(document).ready(function () {
@@ -321,7 +321,7 @@ but information about the [total number of items](/api/javascript/data/datasourc
 so that a correct paging interface can be generated, if needed.
 
     /*Server response:
-    
+
     {
         "itemCount": 10,
         "items": [{
@@ -359,10 +359,10 @@ The update service expects the edited data item(s) and should return the same it
 An empty response is also treated as a valid success response.
 
     /*Client POST request:
-    
+
     ProductID: 1
     ProductName: "Fresh yellow bananas"
-    
+
     Server response:
 
     [{
@@ -391,9 +391,9 @@ It is possible to return only the ID field(s) and value(s).
 In this case these IDs will be assigned to the client-side data items in the same order in which the newly created data items have been submitted.
 
     /*Client POST request:
-    
+
     ProductName: "Fresh yellow bananas"
-    
+
     Server response:
 
     [{
@@ -419,10 +419,10 @@ The `destroy` action submits the data item(s) that should be deleted, or just it
 The expected response is similar to that of the `update` action - it can be empty, or it can include the same data item(s).
 
     /*Client POST request:
-    
+
     ProductID: 1
     ProductName: "Fresh yellow bananas"
-    
+
     Server response:
 
     [{
@@ -458,23 +458,23 @@ The two techniques cannot be combined, i.e. custom errors can be provided only w
 Here is a standard error example:
 
     /* Server response:
-    
+
     HTTP status code: 401 Unathorized
     Response body: empty
-    
+
     */
     var dataSource = new kendo.data.DataSource({
         /* the other CRUD settings are ommitted for brevity */
         error: function (e) {
             /* the e event argument will represent the following object:
-            
+
             {
                 errorThrown: "Unauthorized",
                 sender: {... the Kendo UI DataSource instance ...}
                 status: "error"
                 xhr: {... the Ajax request object ...}
             }
-            
+
             */
             alert("Status: " + e.status + "; Error message: " + e.errorThrown);
         }
@@ -483,16 +483,16 @@ Here is a standard error example:
 Here is a custom error example:
 
     /* Server response:
-    
+
     HTTP status code: 200 OK
     Response body: { "errors": ["foo", "bar"] }
-    
+
     */
     var dataSource = new kendo.data.DataSource({
         /* the other CRUD settings are ommitted for brevity */
         error: function (e) {
             /* the e event argument will represent the following object:
-            
+
             {
                 errorThrown: "custom error",
                 errors: ["foo", "bar"]
@@ -500,7 +500,7 @@ Here is a custom error example:
                 status: "customerror"
                 xhr: null
             }
-            
+
             */
             alert("Errors: " + e.errors.join("; "));
         }
