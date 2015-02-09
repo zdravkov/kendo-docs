@@ -76,6 +76,43 @@ By default the surface will expand to fill the height of the first positioned co
 The width of the surface element.
 By default the surface will expand to fill the width of the first positioned container.
 
+## Methods
+
+### clear
+Clears the drawing surface.
+
+
+### draw
+Draws the element and its children on the surface.
+Existing elements will remain visible.
+
+#### Parameters
+
+##### element `kendo.drawing.Element`
+The element to draw.
+
+
+### eventTarget
+Returns the target drawing element of a DOM event.
+
+#### Parameters
+
+##### e `Object`
+The original DOM or jQuery event object.
+
+#### Returns
+`kendo.drawing.Element` The target drawing element, if any.
+
+
+### resize
+Resizes the surface to match the size of the container.
+
+#### Parameters
+
+##### force `Boolean` *optional*
+Whether to proceed with resizing even if the container dimensions have not changed.
+
+
 ## Events
 
 ### click
@@ -164,40 +201,3 @@ The target element.
 
 ##### e.originalEvent `Object`
 The browser event that triggered the click.
-
-## Methods
-
-### clear
-Clears the drawing surface.
-
-
-### draw
-Draws the element and its children on the surface.
-Existing elements will remain visible.
-
-#### Parameters
-
-##### element `kendo.drawing.Element`
-The element to draw.
-
-
-### eventTarget
-Returns the target drawing element of a DOM event.
-
-#### Parameters
-
-##### e `Object`
-The original DOM or jQuery event object.
-
-#### Returns
-`kendo.drawing.Element` The target drawing element, if any.
-
-
-### resize
-Resizes the surface to match the size of the container.
-
-#### Parameters
-
-##### force `Boolean` *optional*
-Whether to proceed with resizing even if the container dimensions have not changed.
-
