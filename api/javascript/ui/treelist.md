@@ -2540,6 +2540,28 @@ This method expands the row.
         treeList.expand($("#treeList tbody>tr:eq(0)"));
     </script>
 
+#### Example - expand row of a data item with a given id
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [ "id", "name" ],
+            dataSource: [
+                { id: 1, parentId: null, name: "Jane Doe", age: 30 },
+                { id: 2, parentId: 1, name: "John Doe", age: 33 }
+            ]
+        });
+        var treeList = $("#treeList").data("kendoTreeList");
+
+        // find item with id = 1 in datasource
+        var dataItem = treeList.dataSource.get(1);
+
+        // find row for data item
+        var row = treeList.content.find("tr[data-uid=" + dataItem.uid + "]")
+
+        treeList.expand(row);
+    </script>
+
 ### refresh
 
 Renders all table rows using the current data items.
