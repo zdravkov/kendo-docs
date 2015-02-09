@@ -46,7 +46,7 @@ Creates a drawing surface matching the browser capabilities.
 
 #### Parameters
 
-##### element `Element`
+##### element `jQuery|Element`
 The DOM (or jQuery) element that will host the surface.
 
 ##### options `Object` *optional*
