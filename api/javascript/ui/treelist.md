@@ -746,6 +746,56 @@ If set to `true` the column will be visible in the grid column menu. By default 
         });
     </script>
 
+### columns.locked `Boolean` *(default: false)*
+
+If set to `true` the column will be displayed as locked in the treelist. Also see [Frozen Columns](/web/grid/walkthrough#frozen-columns-locked-columns).
+
+#### Example - locked columns
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, width: 100},
+                { field: "name", width: 200 },
+                { field: "age", width: 150 }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
+### columns.lockable `Boolean` *(default: true)*
+
+If set to `false` the column will remain in the side of the treelist into which its own locked configuration placed it.
+
+> This option is meaningful when the treelist has columns which are configured with a [locked](#configuration-columns.locked) value. Setting it explicitly to `false` will
+prevent the user from locking or unlocking this column using the user interface.
+
+#### Example - lockable columns
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, lockable: false, width: 100},
+                { field: "name", width: 200 },
+                { field: "age", width: 150, lockable: false }
+            ],
+            reorderable: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
 ### reorderable `Boolean` *(default:false)*
 
 If set to `true` the user could reorder the columns by dragging their header cells. By default reordering is disabled.
@@ -3199,6 +3249,74 @@ The index of the column, or the [field](#configuration-columns.field) to which t
         treelist.hideColumn("age");
     </script>
 
+### lockColumn
+
+Locks (freezes) a column, allowing users to see it at all times when scrolling.
+
+#### Parameters
+
+##### column `Number|String`
+
+The index of the column or the [field](#configuration-columns.field) to which the columns is bound.
+
+> In order to use this method, the treelist must be initialized with at least one locked column, and should have unlocked columns left after the target column is locked.
+
+#### Example - lock a column
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, width: 100},
+                { field: "name", width: 200 },
+                { field: "age", width: 150 }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.lockColumn("age");
+    </script>
+
+### unlockColumn
+
+Unlocks (unfreezes) a column.
+
+#### Parameters
+
+##### column `Number|String`
+
+The index of the column or the [field](#configuration-columns.field) to which the columns is bound.
+
+> In order to use this method, the treelist must be initialized with at least one locked column, and there should be locked columns left after the target column is unlocked.
+
+#### Example - unlock a column
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, width: 100},
+                { field: "name", width: 200 },
+                { field: "age", locked: true, width: 150 }
+            ],
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treelist = $("#treeList").data("kendoTreeList");
+        treelist.unlockColumn("age");
+    </script>
+
 ### reorderColumn
 
 Changes the position of the specified column.
@@ -4287,4 +4405,136 @@ The widget instance which fired the event.
 
         var treelist = $("#treeList").data("kendoTreeList");
         treelist.bind("columnMenuInit", treelist_columnMenuInit);
+    </script>
+
+### columnLock
+
+Fired when the user lock a column.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.column `Object`
+
+A JavaScript object which represents the [column](#configuration-columns) configuration.
+
+##### e.sender `kendo.ui.Grid`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnLock" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, width: 100},
+                { field: "name", width: 200 },
+                { field: "age", width: 150 }
+            ],
+            columnMenu: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            columnLock: function(e) {
+                console.log(e.column.field); // displays the field of the just locked column
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "columnLock" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+        function treeList_columnLock(e) {
+            console.log(e.column.field); // displays the field of the just locked column
+        }
+
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, width: 100},
+                { field: "name", width: 200 },
+                { field: "age", width: 150 }
+            ],
+            columnMenu: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treeList = $("#treeList").data("kendoTreeList");
+        treeList.bind("columnLock", treeList_columnLock);
+    </script>
+
+### columnUnlock
+
+Fired when the user unlock a column.
+
+The event handler function context (available via the `this` keyword) will be set to the widget instance.
+
+#### Event Data
+
+##### e.column `Object`
+
+A JavaScript object which represents the [column](#configuration-columns) configuration.
+
+##### e.sender `kendo.ui.Grid`
+
+The widget instance which fired the event.
+
+#### Example - subscribe to the "columnUnlock" event during initialization
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, width: 100},
+                { field: "name", width: 200, locked: true },
+                { field: "age", width: 150 }
+            ],
+            columnMenu: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            },
+            columnUnlock: function(e) {
+                console.log(e.column.field); // displays the field of the just unlocked column
+            }
+        });
+    </script>
+
+#### Example - subscribe to the "columnUnlock" event after initialization
+
+    <div id="treeList"></div>
+    <script>
+        function treeList_columnUnlock(e) {
+            console.log(e.column.field); // displays the field of the just unlocked column
+        }
+
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id", locked: true, width: 100},
+                { field: "name", width: 200, locked: true },
+                { field: "age", width: 150 }
+            ],
+            columnMenu: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+
+        var treeList = $("#treeList").data("kendoTreeList");
+        treeList.bind("columnUnlock", treeList_columnUnlock);
     </script>
