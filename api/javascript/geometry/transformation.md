@@ -84,13 +84,9 @@ The angle of rotation in decimal degrees.
 Measured in clockwise direction with 0 pointing "right".
 Negative values or values greater than 360 will be normalized.
 
-##### x `Number`
+##### center `Array|kendo.geometry.Point`
 
-The center of rotation on the X axis.
-
-##### y `Number`
-
-The center of rotation on the Y axis.
+The center of rotation.
 
 #### Returns
 
