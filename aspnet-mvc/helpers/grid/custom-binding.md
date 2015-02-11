@@ -255,7 +255,7 @@ It will contain the current grid request information - page, sort, group and fil
             // Return the result as JSON
             return Json(result);
         }
-5. Congigure the grid for custom ajax binding
+5. Configure the grid for custom ajax binding
 
         @(Html.Kendo().Grid<KendoGridCustomAjaxBinding.Models.Order>()
             .Name("Grid")
