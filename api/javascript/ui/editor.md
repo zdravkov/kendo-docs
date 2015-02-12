@@ -997,6 +997,49 @@ The title of the tool that deletes selected table columns.
     });
     </script>
 
+### resizable `Boolean|Object` *(default: false)*
+
+If enabled, the editor renders a resize handle to allow users to resize it.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      resizable: true
+    });
+    </script>
+
+### resizable.min `Number`
+
+The minimum height that the editor can be resized to.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      resizable: {
+        min: 100
+      }
+    });
+    </script>
+
+### resizable.max `Number`
+
+The maximum height that the editor can be resized to.
+
+#### Example
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      resizable: {
+        max: 600
+      }
+    });
+    </script>
+
 ### serialization `Object`
 
 Allows setting of serialization options.
