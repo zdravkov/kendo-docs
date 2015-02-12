@@ -325,3 +325,6 @@ We've covered a lot of ground so far. You should now be able to:
 - Take control over styling your app for different platforms
 
 As a next step, make sure to check the features provided by the [mobile application class](/mobile/application).
+
+## Tutorial - Kendo UI mobile guidance
+If you would like to see a complete tutorial including guidelines and recommendations about how to build mobile applications for phones and tables with Kendo UI mobile widgets and application tools, please visit the [following link](http://www.kendouimobileguide.com/). 
