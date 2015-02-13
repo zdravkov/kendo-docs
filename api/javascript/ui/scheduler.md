@@ -291,8 +291,8 @@ The current date of the scheduler. Used to determine the period which is display
 The [template](/api/framework/kendo#methods-template) used to render the date header cells.
 
 By default the scheduler renders the date using a custom date format - "ddd M/dd".
-The "ddd" specifier, a.k.a abbreviated name of the week day, will be localized using the current Kendo UI culture.
-If the developer wants to control the day and month order then one needs to define a custom template.
+The "ddd" specifier represents the abbreviated name of the week day and will be localized using the current Kendo UI culture.
+If the developer wants to control the day and month order, then one needs to define a custom template.
 
 The fields which can be used in the template are:
 
