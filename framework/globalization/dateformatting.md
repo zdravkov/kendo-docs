@@ -12,7 +12,7 @@ The purpose of date formatting is to convert Date object to a human readable str
 
 - *d* - short date pattern ("M/d/yyyy" for en-US)
 
-    `kendo.toString(new Date(2000, 10, 6), "d")` -> 11/6/2000
+    `kendo.toString(new Date(2000, 10, 6), "d")` -> 10/6/2000
 
 - "D" - long date pattern (dddd, MMMM dd, yyyy" for en-US)
 
