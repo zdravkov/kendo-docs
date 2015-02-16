@@ -9071,7 +9071,7 @@ When set to `false` all segments become with the same height, otherwise the heig
       series: [
         {
           type: "funnel",
-          dynamicWidth: true,
+          dynamicHeight: true,
           data: [
             { value: 2 }, //height of this segment is 10% of the whole chart
             { value: 4 }, //height of this segment is 20% of the whole chart
