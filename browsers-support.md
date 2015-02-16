@@ -6,68 +6,29 @@ description: browser, platform support and prerequisites for best performance wh
 position: 2
 ---
 
-<style scoped>
-    .stripes
-    {
-        border: 1px solid #E15613;
-        border-collapse: collapse;
-    }
-    .stripes th
-    {
-        background: #E15613;
-        color: #fff;
-    }
-    .stripes tr:nth-child(2n+1) td
-    {
-        background: #fed;
-    }
-
-    .stripes th,
-    .stripes td
-    {
-        padding: 3px 5px;
-        text-align: left;
-    }
-</style>
-
 # Supported Desktop Browsers
 
-<table class="devices-platforms stripes" style="margin-top: 1.2em;">
-   <tbody>
-        <tr>
-            <th class="browsers" style="width: 120px"></th>
-            <th class="browsers" style="width: 220px">Kendo UI Core</th>
-            <th class="browsers" style="width: 220px">Kendo UI Professional</th>
-        </tr>
-        <tr>
-           <td><span class="ie"></span>Internet Explorer</td>
-           <td>7+<br/>10+ (for mobile widgets)</td>
-           <td>7+<br/>10+ (for mobile widgets)</td>
-        </tr>
-        <tr>
-            <td><span class="firefox"></span>Firefox</td>
-            <td><a href="http://www.mozilla.org/en-US/firefox/organizations/">ESR</a> +<br/>*not supported by mobile widgets</td>
-            <td><a href="http://www.mozilla.org/en-US/firefox/organizations/">ESR</a> +<br/>*not supported by mobile widgets</td>
-        </tr>
-        <tr>
-            <td><span class="chrome"></span>Chrome</td>
-            <td>Yes</td>
-            <td>Yes</td>
-        </tr>
-        <tr>
-            <td><span class="opera"></span>Opera</td>
-            <td>15.0 +</td>
-            <td>15.0 +</td>
-        </tr>
-        <tr>
-            <td><span class="safari"></span>Safari 5+ (OS X)</td>
-            <td>Yes</td>
-            <td>Yes</td>
-        </tr>
-    </tbody>
-</table>
+### Core and Web widgets
+| Browser           | Supported versions
+| ---               | ---
+| Internet Explorer | 7 and later
+| Chrome            | 21 and later
+| Firefox           | 24 and later, [ESR](https://www.mozilla.org/en-US/firefox/organizations/faq/)
+| Opera             | 15 and later
+| OS X Safari       | 5 and later
 
-**NOTES:**
+### Mobile widgets
+| Browser           | Supported versions
+| ---               | ---
+| Internet Explorer | 10 and later
+| Firefox           | Not supported
+| _Others_          | Same as Core and Web widgets
+
+### DataViz widgets
+
+[Supported desktop and mobile browsers for Kendo UI DataViz](/dataviz/supported-browsers)
+
+### Important Notes
 
 * Browsers in beta stage are not supported;
 * [Quirks mode](http://www.quirksmode.org/css/quirksmode.html) is not supported. Always specify a [DOCTYPE](http://reference.sitepoint.com/html/doctypes).
@@ -92,42 +53,18 @@ As a result, some events, on which Kendo UI relies, are not fired. In order to a
 
 # Supported Operating Systems
 
-<table class="devices-platforms stripes" style="margin-top: 1.2em;">
-    <tr>
-        <th class="platform">Platform</th>
-        <th class="platform-version">Version</th>
-    </tr>
-    <tr>
-        <td style="width: 150px;"><span class="windows"></span>Windows</td>
-        <td>XP +, Server 2003 +</td>
-    </tr>
-    <tr>
-        <td><span class="mac"></span> OS X</td>
-        <td>OS X 10.5+</td>
-    </tr>
-    <tr>
-        <td><span class="android"></span> Android</td>
-        <td>2.3 +</td>
-    </tr>
-    <tr>
-        <td><span class="ios"></span> iOS</td>
-        <td>6.0 +</td>
-    </tr>
-    <tr>
-        <td><span class="blackberry"></span>BlackBerry</td>
-        <td>10.0+</td>
-    </tr>
-    <tr>
-        <td><span class="winphone"></span>Windows Phone</td>
-        <td>8.0+</td>
-    </tr>
-     <tr>
-        <td><span class="chrome"></span>Chrome for Android</td>
-        <td>Yes</td>
-    </tr>
-</table>
+| Platform          | Version
+| ---               | ---
+| Windows           | XP and later
+| Windows Server    | Server 2003 and later
+| OS X              | 10.5 and later
+| Android           | 2.3 and later
+| iOS               | 6.0 and later
+| BlackBerry        | 10.0 and later
+| Windows Phone     | 8.0 and later
+| Chrome for Mobile | Any
 
-**NOTES:**
+## Important notes
 
 * In Android 2.3 dataviz widgets support only Canvas rendering mode;
 * Hybrid mouse and touch devices are supported (for instance IE10, Chrome and Firefox on Windows 8).
