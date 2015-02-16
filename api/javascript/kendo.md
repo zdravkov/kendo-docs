@@ -803,7 +803,7 @@ Returns true if the browser supports overflow-scrolling CSS property (currently 
 ##### devicePixelRatio `Number` *(default: 1)*
 Returns the current device's Device to Pixel Ratio. Doesn't work in Windows Phone 8, where IE10 doesn't support it.
 
-##### placeHolder `Boolean`
+##### placeholder `Boolean`
 Retruns true if the browser supports input placeholders.
 
 ##### zoomLevel `Number` *(default: 1)*
