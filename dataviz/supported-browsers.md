@@ -8,12 +8,15 @@ description: Find detailed browser requirements for Kendo UI DataViz suite.
 
 The Data Visualization widgets are fully functional in the browsers listed below.
 
-* Internet Explorer 9+
-* Chrome
-* Firefox and Firefox Extended Support Release (ESR)
-* Safari 4+
-* Safari on iOS 4.0+
-* Chrome on Android 4.0+
+| Browser           | Supported versions
+| ---               | ---
+| Internet Explorer | 9 and later
+| Chrome            | 21 and later
+| Firefox           | 24 and later, [ESR](https://www.mozilla.org/en-US/firefox/organizations/faq/)
+| Opera             | 15 and later
+| OS X Safari       | 5 and later
+| iOS Safari        | 4 and later
+| Chrome for Mobile | 4 and later
 
 # Browsers with Limited support
 
