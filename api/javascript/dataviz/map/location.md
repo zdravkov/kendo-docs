@@ -136,6 +136,13 @@ Returns the location coordinates as an [lat, lng] array.
 `Array` An array representation of the location, e.g. [39, -179]
 
 
+### toString
+Returns the location coordinates formatted as '{lat},{lng}'.
+
+#### Returns
+`String` A string representation of the location, e.g. "39,-179"
+
+
 ### wrap
 Wraps the latitude and longitude to fit into the [0, 90] and [0, 180] range.
 
