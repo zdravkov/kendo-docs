@@ -19232,22 +19232,37 @@ The unique axis name. Used to associate a series with a value axis using the [se
     });
     </script>
 
-### valueAxis.narrowRange `Boolean` *(default: false)*
+### valueAxis.narrowRange `Boolean`
 
 If set to `true` the chart will prevent the automatic axis range from snapping to 0.
+Setting it to `false` will force the automatic axis range to snap to 0.
 
 #### Example - prevent automatic axis range snapping
 
     <div id="chart"></div>
     <script>
-    $("#chart").kendoChart({
-      valueAxis: {
-        narrowRange: false
-      },
-      series: [
-        { data: [1, 2, 3] }
-      ]
-    });
+        $("#chart").kendoChart({
+            valueAxis: {
+                narrowRange: true
+            },
+            series: [{
+                data: [1000, 2000]
+            }]
+        });
+    </script>
+
+#### Example - force automatic axis range snapping
+
+    <div id="chart"></div>
+    <script>
+        $("#chart").kendoChart({
+            valueAxis: {
+                narrowRange: false
+            },
+            series: [{
+                data: [1000, 1100]
+            }]
+        });
     </script>
 
 ### valueAxis.pane `String`
@@ -23752,19 +23767,40 @@ The unique axis name. Used to associate a series with a x axis using the [series
 ### xAxis.narrowRange `Boolean` *(default: false)*
 
 If set to `true` the chart will prevent the automatic axis range from snapping to 0.
+Setting it to `false` will force the automatic axis range to snap to 0.
 
-#### Example - prevent scatter chart x axis automatic range snapping
+#### Example - prevent scatter chart axis automatic zero snapping
     <div id="chart"></div>
     <script>
-    $("#chart").kendoChart({
-      series: [{
-        type: "scatter",
-        data: [[1, 1],[2, 2]]
-      }],
-      xAxis: {
-        narrowRange: false
-      }
-    });
+        $("#chart").kendoChart({
+          series: [{
+            type: "scatter",
+            data: [[1000, 1000],[2000, 2000]]
+          }],
+          xAxis: {
+            narrowRange: true
+          },
+          xAxis: {
+            narrowRange: true
+          }
+        });
+    </script>
+
+#### Example - force scatter chart axis zero snapping
+    <div id="chart"></div>
+    <script>
+        $("#chart").kendoChart({
+          series: [{
+            type: "scatter",
+            data: [[1000, 1000],[1100, 1100]]
+          }],
+          xAxis: {
+            narrowRange: false
+          },
+          yAxis: {
+            narrowRange: false
+          }
+        });
     </script>
 
 ### xAxis.pane `String`
@@ -28303,19 +28339,40 @@ The unique axis name. Used to associate a series with a y axis using the [series
 ### yAxis.narrowRange `Boolean` *(default: false)*
 
 If set to `true` the chart will prevent the automatic axis range from snapping to 0.
+Setting it to `false` will force the automatic axis range to snap to 0.
 
-#### Example - prevent scatter chart y axis automatic range snapping
+#### Example - prevent scatter chart axis automatic zero snapping
     <div id="chart"></div>
     <script>
-    $("#chart").kendoChart({
-      series: [{
-        type: "scatter",
-        data: [[1, 1],[2, 2]]
-      }],
-      yAxis: {
-        narrowRange: false
-      }
-    });
+        $("#chart").kendoChart({
+          series: [{
+            type: "scatter",
+            data: [[1000, 1000],[2000, 2000]]
+          }],
+          xAxis: {
+            narrowRange: true
+          },
+          xAxis: {
+            narrowRange: true
+          }
+        });
+    </script>
+
+#### Example - force scatter chart axis zero snapping
+    <div id="chart"></div>
+    <script>
+        $("#chart").kendoChart({
+          series: [{
+            type: "scatter",
+            data: [[1000, 1000],[1100, 1100]]
+          }],
+          xAxis: {
+            narrowRange: false
+          },
+          yAxis: {
+            narrowRange: false
+          }
+        });
     </script>
 
 ### yAxis.pane `String`
