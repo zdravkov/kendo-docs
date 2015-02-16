@@ -28,7 +28,7 @@ Kendo exposes methods which converts the specified string to a [Number](https://
     kendo.parseFloat("12.22"); //12.22
 
     //assumes that current culture defines decimal separator as "."
-    kendo.parseInt("10.22 %") //0.1022
+    kendo.parseFloat("10.22 %") //0.1022
 
     //assumes that current culture defines decimal separator as ",", group separator as "." and currency symbol as "€"
     kendo.parseFloat("1.212,22 €"); //1212.22
