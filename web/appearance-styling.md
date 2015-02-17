@@ -13,8 +13,8 @@ The Kendo UI **Web** widgets (i.e. excluding Mobile and DataViz) require two sty
 The common (base) stylesheet applies styles related to positioning and size, but which are not related to the color scheme and are always required for the widget to
 look correct and function properly. The theme stylesheet applies theme-specific styles like colors and backgrounds.
 
-Some themes require a different "common" stylesheet that applies different dimensions, for example **kendo.common-bootstrap.css**. These common stylesheets should be used
-**instead of** kendo.common.css and only with their respective theme (e.g. kendo.bootstrap.css).
+Some themes require a different "common" stylesheet that applies different dimensions, for example **kendo.common-bootstrap.css** and **kendo.common-material.css**. These common stylesheets should be used
+**instead of** kendo.common.css and only with their respective theme (e.g. kendo.bootstrap.css or kendo.material.css).
 
 > Be sure to include the common CSS file before the theme CSS file. In some cases, the theme CSS file may override base styles as it uses selectors with the same specificity.
 
@@ -110,7 +110,7 @@ In order to customize the appearance of a **particular widget instance**, you wi
 	<ul id="menu1" class="k-widget k-menu">
 		<!-- menu items here -->
 	</ul>
-	
+
 can be styled by using its ID:
 
 	#menu1 .k-link
@@ -119,7 +119,7 @@ can be styled by using its ID:
 	}
 
 The above CSS rule will not affect any other widget instances, which are outside `#menu1`.
-	
+
 ## Browser-specific CSS
 
 While most of the CSS code is cross-browser compatible, some layouts require different styles for different browsers. Kendo UI targets specific browsers by adding browser-specific classes to the document root element instead of relying on CSS parsing hacks. You can take advantage of these classes in the following manner:
@@ -132,7 +132,7 @@ The syntax of the generated classes is `k-[browser] k-[browser][majorVersion]`.
 
 ## Checkboxes and Radio buttons
 
-With Q3 2014 release Kendo UI provides customized presentation for checkboxes / radio buttons via the **k-checkbox** / **k-radio** classes. At this time these two types of input cannot be styled with CSS only - therefore Kendo UI Checkboxes / Radio buttons appearance relies that the `<input>` element is **immediately followed** by a `<label>` element with respectively **k-checkbox-label** / **k-radio-label** classes. I.e. the expected HTML is as follows: 
+With Q3 2014 release Kendo UI provides customized presentation for checkboxes / radio buttons via the **k-checkbox** / **k-radio** classes. At this time these two types of input cannot be styled with CSS only - therefore Kendo UI Checkboxes / Radio buttons appearance relies that the `<input>` element is **immediately followed** by a `<label>` element with respectively **k-checkbox-label** / **k-radio-label** classes. I.e. the expected HTML is as follows:
 
     <!-- Kendo UI Checkbox -->
 	<input type="checkbox" id="checkbox" class="k-checkbox">
