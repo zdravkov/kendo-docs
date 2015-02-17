@@ -20,8 +20,10 @@ Here is how to configure a simple Kendo TreeMap:
         {
             return View();
         }
+
 3.  Add a simple treemap:
     - WebForms
+
             <%= Html.Kendo().TreeMap()
                     .Name("treeMap")
                     .DataSource(dataSource => dataSource
@@ -33,7 +35,9 @@ Here is how to configure a simple Kendo TreeMap:
                     .ValueField("Value")
                     .TextField("Name")
             %>
+
     - Razor
+
             $(Html.Kendo().TreeMap()
                   .Name("treeMap")
                   .DataSource(dataSource => dataSource
@@ -61,7 +65,6 @@ Once a reference has been established, you can use the [API](/api/dataviz/treema
     });
     </script>
 
-
 ## Handling Kendo UI TreeMap events
 
 You can subscribe to all [events](/api/dataviz/treemap#events) exposed by Kendo UI TreeMap:
@@ -75,6 +78,7 @@ You can subscribe to all [events](/api/dataviz/treemap#events) exposed by Kendo 
                 .DataBound("onDataBound")
             )
     %>
+
     <script>
     function onItemCreated() {
         // Handle the itemCreated event
@@ -95,6 +99,7 @@ You can subscribe to all [events](/api/dataviz/treemap#events) exposed by Kendo 
               .DataBound("onDataBound")
           )
     )
+
     <script>
     function onItemCreated() {
         // Handle the itemCreated event
