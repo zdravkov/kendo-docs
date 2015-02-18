@@ -863,6 +863,39 @@ Callback function that will be called once the path has been expanded.
 
     </script>
 
+#### Example of expanding a remote loaded path
+
+    <button class="k-button">Expand</button>
+    <div id="treeview"></div>
+
+    <script>
+      var datasource = new kendo.data.HierarchicalDataSource({
+        transport: {
+          read: {
+            url: "http://demos.telerik.com/kendo-ui/service/Employees",
+            dataType: "jsonp"
+          }
+        },
+        schema: {
+          model: {
+            id: "EmployeeId",
+            hasChildren: "HasEmployees"
+          }
+        }
+      });
+
+      $("#treeview").kendoTreeView({
+        dataSource: datasource,
+        dataTextField: "FullName"
+      });
+
+      $("button").click(function() {
+        var treeview = $("#treeview").data("kendoTreeView");
+
+        treeview.expandPath([2, 5]);
+      });
+    </script>
+
 ### expandTo
 
 Expands all nodes up to a given element. The element needs to be already loaded.
