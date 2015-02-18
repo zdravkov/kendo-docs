@@ -2836,6 +2836,8 @@ Returns a `kendo.data.Model` instance if the [schema.model](#configuration-schem
 
 Cancels any pending changes in the data source. Deleted data items are restored, new data items are removed and updated data items are restored to their initial state.
 
+> Note that change event will be triggered only when all changes are reverted and will not be triggered when reverting changes for a single model instance.
+
 #### Parameters
 
 ##### model `kendo.data.Model`
