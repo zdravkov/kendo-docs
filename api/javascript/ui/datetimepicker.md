@@ -311,7 +311,8 @@ The template used for rendering cells in the calendar "month" view, which are ou
 
 ### parseFormats `Array`
 
- Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the `options.format` and `options.timeFormat` will be used. Note that value of the format option is always used.
+ Specifies the formats, which are used to parse the value set with value() method or by direct input. If not set the value of the `options.format` and `options.timeFormat` will be used.
+ Note that value of the `format` option is always used. The `timeFormat` value also will be used if defined.
 
  > Order of the provided parse formats is important and it should from stricter to less strict.
 
