@@ -71,6 +71,46 @@ The proxy should return the decoded file with set "Content-Disposition" header.
 
 Here are a few sample implementations of a server-side proxy for different platforms.
 
+### ASP.NET WebForms
+
+#### ASPX
+
+```
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SaveFile.aspx.cs" Inherits="SaveFile" %>
+```
+
+#### Code-behind
+```
+public partial class SaveFile : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        string contentType = Request.Form["contentType"];
+        string base64 = Request.Form["base64"];
+        string fileName = Request.Form["fileName"];
+
+        byte[] fileContents = Convert.FromBase64String(base64);
+
+        Response.ContentType = contentType;
+        Response.AppendHeader("Content-Disposition", "attachment; filename=" + fileName);
+        Response.BinaryWrite(fileContents);
+        Response.End();
+    }
+}
+```
+#### Usage
+
+```
+<script>
+var dataURI = "data:text/plain;base64," + kendo.util.encodeBase64("Hello World!");
+kendo.saveAs({
+    dataURI: dataURI,
+    fileName: "test.txt",
+    proxyURL: "<%= ResolveUrl("~/SaveFile.aspx") %>"
+});
+</script>
+```
+
 ### ASP.NET WebAPI Controller
 
 ```
