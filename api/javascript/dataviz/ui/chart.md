@@ -16916,7 +16916,7 @@ Date at which the category axis crosses this axis. (Only for date)
 
 The background color of the axis.
 
-#### Example - set the category axis crossing values
+#### Example - set the background
 
     <div id="chart"></div>
     <script>
