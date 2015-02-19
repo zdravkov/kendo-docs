@@ -7,6 +7,45 @@ previous_url: /changes-and-backward-compatibility
 
 # Kendo UI Framework Changes and Backwards Compatibility
 
+## Kendo UI 2015 Q1
+
+### Changes from 2014 Q3 SP2 (2014.3.1411)
+
+#### Breaking changes
+
+* **Editor**: In order to solve a double-encoding bug in Firefox and Chrome, the editor value may be retrieved from the `defaultValue` property of the editor. This will introduce a breaking change when all of these are true:
+
+    * The editor value is rendered from the server
+    * The `encoded` configuration option is set to true (this is by default)
+    * The textarea value is pre-processed prior to initializing the widget
+
+     To resolve the problem, use the `value` configuration option when initializing:
+
+-Old:
+
+    <textarea id="editor">
+        foo
+    </textarea>
+
+    <script>
+        $("#editor").value("bar").kendoEditor({
+            encoded: true
+        });
+    </script>
+
+-New:
+
+    <textarea id="editor">
+        foo
+    </textarea>
+
+    <script>
+        $("#editor").kendoEditor({
+            encoded: true,
+            value: "bar"
+        });
+    </script>
+
 ## Kendo UI 2014 Q3 SP1
 
 ### Changes from 2014 Q3 (2014.3.1119)
