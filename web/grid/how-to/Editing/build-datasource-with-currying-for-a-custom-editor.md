@@ -10,7 +10,7 @@ The following runnable sample demonstrates how to create a custom dataSource bas
 
 #### Example:
 ```html
-    <script src="../content/shared/js/products.js"></script>
+    <script src="http://demos.telerik.com/kendo-ui/content/shared/js/products.js"></script>
     <div id="example">
         <div id="grid"></div>
       <script>
