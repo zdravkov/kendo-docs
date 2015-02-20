@@ -3483,9 +3483,12 @@ The task which should be removed. Also accepts a string which is the `uid` of th
 
 ### saveAsPDF
 
-Initiates the PDF export. Also fires the "pdfExport" event.
+Initiates the PDF export and returns a promise. Also triggers the [pdfExport](#events-pdfExport) event.
 
-> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that always call it as a response to end-user action e.g. button click.
+> Calling this method may trip the built-in browser pop-up blocker. To avoid that, call this method as a response to an end-user action, e.g. a button click.
+
+#### Returns
+`Promise` A promise that will be resolved when the export completes. The same promise is available in the [pdfExport](#events-pdfExport) event arguments.
 
 #### Example - manually initiate PDF export
     <button id="export">Export to PDF</button>
@@ -4551,6 +4554,10 @@ The widget instance which fired the event.
 ##### e.preventDefault `Function`
 
 If invoked the gantt will not save the generated file.
+
+##### e.promise `Promise`
+
+A promise that will be resolved when the export completes.
 
 #### Example - subscribe to the "pdfExport" event during initialization
     <div id="gantt"></div>

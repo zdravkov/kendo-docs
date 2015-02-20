@@ -38,6 +38,9 @@ Inherited from [Element.opacity](element#configuration-opacity)
 
 The opacity of any child groups and elements will be multiplied by this value.
 
+### pdf `kendo.drawing.PDFOptions`
+Page options to apply during PDF export.
+
 ### transform `kendo.geometry.Transformation`
 The transformation to apply to this group and its children.
 Inherited from [Element.transform](element#configuration-transform)

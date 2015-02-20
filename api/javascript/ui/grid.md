@@ -4644,6 +4644,34 @@ The Tooltip of the ellipsis ("...") button, which appears when the number of pag
 
 Configures the Kendo UI Grid PDF export settings.
 
+### pdf.allPages `Boolean` *(default: false)*
+
+Exports all grid pages, starting from the first one.
+
+#### Example - export all pages
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+      toolbar: ["pdf"],
+      columns: [
+        { field: "name" }
+      ],
+      dataSource: {
+        data: [{ name: "Jane Doe"},
+               { name: "John Doe"},
+               { name: "Tim Doe"},
+               { name: "Alice Doe"}],
+        pageSize: 2
+      },
+      pdf: {
+        allPages: true
+      }
+    });
+    var grid = $("#grid").data("kendoGrid");
+    grid.saveAsPDF();
+    </script>
+
 ### pdf.author `String` *(default: null)*
 
 The author of the PDF document.
@@ -6298,9 +6326,12 @@ Initiates the Excel export. Also fires the [`excelExport`](#events-excelExport) 
 
 ### saveAsPDF
 
-Initiates the PDF export. Also fires the [`pdfExport`](#events-pdfExport) event.
+Initiates the PDF export and returns a promise. Also triggers the [pdfExport](#events-pdfExport) event.
 
-> Calling this method could trigger the browser built-in popup blocker in some cases. To avoid that, always call it as a response to an end-user action e.g. button click.
+> Calling this method may trip the built-in browser pop-up blocker. To avoid that, call this method as a response to an end-user action, e.g. a button click.
+
+#### Returns
+`Promise` A promise that will be resolved when the export completes. The same promise is available in the [pdfExport](#events-pdfExport) event arguments.
 
 #### Example - manually initiate PDF export
 
@@ -6322,6 +6353,7 @@ Initiates the PDF export. Also fires the [`pdfExport`](#events-pdfExport) event.
         grid.saveAsPDF();
     });
     </script>
+
 
 ### saveChanges
 
@@ -7608,7 +7640,20 @@ The widget instance which fired the event.
 
 If invoked the grid will not save the generated file.
 
-#### Example - subscribe to the "pdfExport" event during initialization
+##### e.promise `Promise`
+
+A promise that will be resolved when the export completes.
+
+The promise [progress handler](http://api.jquery.com/deferred.progress/) will be called periodically with the following arguments:
+* page - The current page content. An instance of [drawing.Group](/api/javascript/drawing/group)
+* pageNumber - The current page number
+* progress - Number if the range 0 to 1, indicating the progress of the current export operation
+* totalPages - The total number of pages
+
+Any changes to the page content group will be applied, including PDF page options.
+This allows you to change paper size, orientation and apply transformations on each individual page.
+
+#### Example - Monitor export progress
 
     <div id="grid"></div>
     <script>
@@ -7617,18 +7662,31 @@ If invoked the grid will not save the generated file.
       columns: [
         { field: "name" }
       ],
-      dataSource: [
-        { name: "Jane Doe"},
-        { name: "John Doe"}
-      ],
+      dataSource: {
+        data: [{ name: "Jane Doe"},
+               { name: "John Doe"},
+               { name: "Tim Doe"},
+               { name: "Alice Doe"}],
+        pageSize: 2
+      },
+      pdf: {
+          allPages: true
+      },
       pdfExport: function(e) {
+        e.promise
+        .progress(function(e) {
+            console.log(kendo.format("{0:P} complete", e.progress));
+        })
+        .done(function() {
+            alert("Export completed!");
+        });
       }
     });
     var grid = $("#grid").data("kendoGrid");
     grid.saveAsPDF();
     </script>
 
-#### Example - subscribe to the "pdfExport" event after initialization
+#### Example - Change page orientation on the fly
 
     <div id="grid"></div>
     <script>
@@ -7637,14 +7695,30 @@ If invoked the grid will not save the generated file.
       columns: [
         { field: "name" }
       ],
-      dataSource: [
-        { name: "Jane Doe"},
-        { name: "John Doe"}
-      ]
+      dataSource: {
+        data: [{ name: "Jane Doe"},
+               { name: "John Doe"},
+               { name: "Tim Doe"},
+               { name: "Alice Doe"}],
+        pageSize: 2
+      },
+      pdf: {
+        allPages: true,
+        paperSize: "A3",
+        landscape: false
+      },
+      pdfExport: function(e) {
+        e.promise
+        .progress(function(e) {
+            if (e.pageNumber > 1) {
+                e.page.options.pdf = {
+                    landscape: true
+                };
+            }
+        });
+      }
     });
     var grid = $("#grid").data("kendoGrid");
-    grid.bind("pdfExport", function(e) {
-    });
     grid.saveAsPDF();
     </script>
 
