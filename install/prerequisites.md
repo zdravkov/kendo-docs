@@ -52,7 +52,7 @@ Just like jQuery, the Kendo UI bundles include the corresponding AngularJS minif
 
 ## Excel export
 
-The [Excel export feature](http://docs.telerik.com/kendo-ui/framework/excel/introduction), available since Q3 2014, depends upon the the [JsZip library](https://stuk.github.io/jszip/).
+The [Excel export feature](http://docs.telerik.com/kendo-ui/framework/excel/introduction), available since Q3 2014, depends upon the [JsZip library](https://stuk.github.io/jszip/).
 
 > The JsZip library is *not required* if you do not configure the widgets to support Excel exporting.
 
