@@ -179,6 +179,8 @@ External templates do not live in JavaScript, but instead in special blocks in H
             <!--Template content here-->
         </script>
 
+> Note: The type of `text/x-kendo-template` is not specifically required. When using Visual Studio, you can maintain Syntax Highlighting by setting the type to `text/html`. You may use virtually any value as the type, except `text/javascript` to prevent the browser from rendering the block at runtime, except where used as a template.
+
 External templates should always have an ID, too, so that you can select the template content when initalizign in JavaScript:
 
         //extract the template content from script tag
