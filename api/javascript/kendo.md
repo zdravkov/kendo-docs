@@ -471,6 +471,13 @@ The proxy should return the decoded file with set "Content-Disposition" header.
         });
     </script>
 
+##### options.proxyTarget `String` *(default: "_self")*
+
+A name or keyword indicating where to display the document returned from the proxy.
+
+If you want to display the document in a new window or iframe,
+the proxy should set the "Content-Disposition" header to `inline; filename="<fileName.ext>"`.
+
 ### stringify
 
 Converts a JavaScript object to [JSON](http://en.wikipedia.org/wiki/JSON). Uses [JSON.stringify](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/JSON/stringify) in browsers that support it.

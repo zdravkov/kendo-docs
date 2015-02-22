@@ -5179,6 +5179,37 @@ The proxy should return the decoded file with set "Content-Disposition" header.
       chart.saveAsPDF();
     </script>
 
+### pdf.proxyTarget `String` *(default: "_self")*
+
+A name or keyword indicating where to display the document returned from the proxy.
+
+If you want to display the document in a new window or iframe,
+the proxy should set the "Content-Disposition" header to `inline; filename="<fileName.pdf>"`.
+
+#### Example - open the generated document in a new window
+    <div id="chart"></div>
+    <script>
+      $("#stock-chart").kendoStockChart({
+          pdf: {
+              forceProxy: true,
+              proxyURL: "/save",
+              proxyTarget: "_blank"
+          },
+          series: [{
+            type: "line",
+            field: "value",
+            categoryField: "date",
+            data: [
+              { value: 1, date: new Date(2012, 1, 1) },
+              { value: 2, date: new Date(2012, 1, 2) }
+            ]
+          }]
+      });
+
+      var chart = $("#stock-chart").getKendoStockChart();
+      chart.saveAsPDF();
+    </script>
+
 ### pdf.subject `String` *(default: null)*
 Sets the subject of the PDF file.
 

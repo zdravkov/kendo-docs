@@ -674,6 +674,48 @@ The proxy should return the decoded file with the "Content-Disposition" header s
     });
     </script>
 
+### pdf.proxyTarget `String` *(default: "_self")*
+
+A name or keyword indicating where to display the document returned from the proxy.
+
+If you want to display the document in a new window or iframe,
+the proxy should set the "Content-Disposition" header to `inline; filename="<fileName.pdf>"`.
+
+#### Example - open the generated document in a new window
+
+    <div id="pivotgrid"></div>
+    <script>
+    $("#pivotgrid").kendoPivotGrid({
+        pdf: {
+            forceProxy: true,
+            proxyURL: "/save",
+            proxyTarget: "_blank"
+        },
+        height: 550,
+        dataSource: {
+            type: "xmla",
+            columns: [{ name: "[Date].[Calendar]", expand: true }, { name: "[Geography].[City]" } ],
+            rows: [{ name: "[Product].[Product]" }],
+            measures: ["[Measures].[Internet Sales Amount]"],
+            transport: {
+                connection: {
+                    catalog: "Adventure Works DW 2008R2",
+                    cube: "Adventure Works"
+                },
+                read: {
+                    url: "http://demos.telerik.com/olap/msmdpump.dll",
+                    dataType: "text",
+                    contentType: "text/xml",
+                    type: "POST"
+                }
+            },
+            schema: {
+                type: "xmla"
+            }
+        }
+    });
+    </script>
+
 ### pdf.subject `String` *(default: null)*
 
 Sets the subject of the PDF file.

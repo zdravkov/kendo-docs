@@ -4953,6 +4953,37 @@ The proxy should return the decoded file with the "Content-Disposition" header s
     });
     </script>
 
+### pdf.proxyTarget `String` *(default: "_self")*
+
+A name or keyword indicating where to display the document returned from the proxy.
+
+If you want to display the document in a new window or iframe,
+the proxy should set the "Content-Disposition" header to `inline; filename="<fileName.pdf>"`.
+
+#### Example - open the generated document in a new window
+
+    <div id="grid"></div>
+    <script>
+    $("#grid").kendoGrid({
+        toolbar: ["pdf"],
+        pdf: {
+            forceProxy: true,
+            proxyURL: "/save",
+            proxyTarget: "_blank"
+        },
+        dataSource: {
+            transport: {
+                read: {
+                    url: "http://demos.telerik.com/kendo-ui/service/products",
+                    dataType: "jsonp"
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true
+    });
+    </script>
+
 ### pdf.subject `String` *(default: null)*
 
 Sets the subject of the PDF file.

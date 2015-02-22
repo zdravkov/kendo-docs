@@ -2210,6 +2210,36 @@ The proxy should return the decoded file with set "Content-Disposition" header.
     });
     </script>
 
+### pdf.proxyTarget `String` *(default: "_self")*
+
+A name or keyword indicating where to display the document returned from the proxy.
+
+If you want to display the document in a new window or iframe,
+the proxy should set the "Content-Disposition" header to `inline; filename="<fileName.pdf>"`.
+
+#### Example - open the generated document in a new window
+    <div id="gantt"></div>
+    <script>
+    $("#gantt").kendoGantt({
+        toolbar: ["pdf"],
+        pdf: {
+            forceProxy: true,
+            proxyURL: "/save",
+            proxyTarget: "_blank"
+        },
+        dataSource: [
+            {
+                id: 1,
+                orderId: 0,
+                parentId: null,
+                title: "Task1",
+                start: new Date("2014/6/17 9:00"),
+                end: new Date("2014/6/17 11:00")
+            }
+        ]
+    });
+    </script>
+
 ### pdf.subject `String` *(default: null)*
 
 Sets the subject of the PDF file.

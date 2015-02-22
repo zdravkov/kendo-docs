@@ -2331,6 +2331,51 @@ The proxy should return the decoded file with the "Content-Disposition" header s
       });
     </script>
 
+### pdf.proxyTarget `String` *(default: "_self")*
+
+A name or keyword indicating where to display the document returned from the proxy.
+
+If you want to display the document in a new window or iframe,
+the proxy should set the "Content-Disposition" header to `inline; filename="<fileName.pdf>"`.
+
+#### Example - open the generated document in a new window
+
+    <div id="treelist"></div>
+    <script>
+      $("#treelist").kendoTreeList({
+        toolbar: ["pdf"],
+        columns: [
+          { field: "FirstName", title: "First Name" },
+          { field: "LastName", title: "Last Name", width: 160 },
+          { field: "Position" }
+        ],
+        pdf: {
+            forceProxy: true,
+            proxyURL: "/save",
+            proxyTarget: "_blank"
+        },
+        dataSource: {
+          transport: {
+            read: {
+              url: "http://demos.telerik.com/kendo-ui/service/EmployeeDirectory/All",
+              dataType: "jsonp"
+            }
+          },
+          schema: {
+            model: {
+              id: "EmployeeID",
+              fields: {
+                parentId: { field: "ReportsTo",  nullable: true },
+                EmployeeID: { field: "EmployeeId", type: "number" },
+                Extension: { field: "Extension", type: "number" }
+              },
+              expanded: true
+            }
+          }
+        }
+      });
+    </script>
+
 ### pdf.subject `String` *(default: null)*
 
 Sets the subject of the PDF file.
