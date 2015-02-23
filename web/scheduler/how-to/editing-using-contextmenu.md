@@ -98,7 +98,7 @@ The example below demonstrates how to edit Scheduler event using ContextMenu
           ]
         }
       ]
-    });
+    }).data("kendoScheduler");
 
     $("#contextMenu").kendoContextMenu({
         filter: ".k-event, .k-scheduler-table",
