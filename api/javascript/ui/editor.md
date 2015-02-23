@@ -997,6 +997,251 @@ The title of the tool that deletes selected table columns.
     });
     </script>
 
+### pdf `Object`
+
+Configures the Kendo UI Editor PDF export settings.
+
+### pdf.author `String` *(default: null)*
+
+The author of the PDF document.
+
+#### Example - set the author
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                author: "John Doe"
+            }
+        });
+    </script>
+
+### pdf.creator `String` *(default: "Kendo UI PDF Generator")*
+
+The creator of the PDF document.
+
+#### Example - set the creator
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                creator: "John Doe"
+            }
+        });
+    </script>
+
+### pdf.date `Date`
+
+The date when the PDF document is created. Defaults to `new Date()`.
+
+#### Example - set the date
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                date: new Date("2015/1/31")
+            }
+        });
+    </script>
+
+### pdf.fileName `String` *(default: "Export.pdf")*
+
+Specifies the file name of the exported PDF file.
+
+#### Example - set the default PDF file name
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                fileName: "Document.pdf"
+            }
+        });
+    </script>
+
+### pdf.forceProxy `Boolean` *(default: false)*
+If set to true, the content will be forwarded to [proxyURL](#configuration-pdf.proxyURL) even if the browser supports saving files locally.
+
+### pdf.keywords `String` *(default: null)*
+
+Specifies the keywords of the exported PDF file.
+
+#### Example - set the keywords
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                keywords: "Kendo UI Editor PDF export"
+            }
+        });
+    </script>
+
+### pdf.landscape `Boolean` *(default: false)*
+
+Set to `true` to reverse the paper dimensions if needed such that width is the larger edge.
+
+#### Example - enable landscape mode
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                landscape: true
+            }
+        });
+    </script>
+
+### pdf.margin `Object`
+
+Specifies the margins of the page (numbers or strings with units). Supported
+units are "mm", "cm", "in" and "pt" (default).
+
+#### Example - set the margins
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                margin: {
+                    bottom: 20,
+                    left: 20,
+                    right: 20,
+                    top: 20
+                }
+            }
+        });
+    </script>
+
+### pdf.margin.bottom `Number|String` *(default: 0)*
+
+The bottom margin. Numbers are considered as "pt" units.
+
+### pdf.margin.left `Number|String` *(default: 0)*
+
+The left margin. Numbers are considered as "pt" units.
+
+### pdf.margin.right `Number|String` *(default: 0)*
+
+The right margin. Numbers are considered as "pt" units.
+
+### pdf.margin.top `Number|String` *(default: 0)*
+
+The top margin. Numbers are considered as "pt" units.
+
+### pdf.paperSize `String|Array` *(default: "auto")*
+
+Specifies the paper size of the PDF document.
+The default "auto" means paper size is determined by content.
+
+> The size of the content in pixels will match the size of the output in points (1 pixel = 1/72 inch).
+
+Supported values:
+
+* A predefined size: "A4", "A3" etc
+* An array of two numbers specifying the width and height in points (1pt = 1/72in)
+* An array of two strings specifying the width and height in units.
+  Supported units are "mm", "cm", "in" and "pt".
+
+#### Example - set custom paper size
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                paperSize : "A4"
+            }
+        });
+    </script>
+
+### pdf.proxyURL `String` *(default: null)*
+
+The URL of the server side proxy which will stream the file to the end user.
+
+A proxy will be used when the browser isn't capable of saving files locally e.g. Internet Explorer 9 and Safari. PDF export is not supported in Internet Explorer 8 and below.
+
+The developer is responsible for implementing the server-side proxy.
+
+The proxy will receive a POST request with the following parameters in the request body:
+
+* contentType: The MIME type of the file
+* base64: The base-64 encoded file content
+* fileName: The file name, as requested by the caller.
+
+The proxy should return the decoded file with the "Content-Disposition" header set to
+`attachment; filename="<fileName.pdf>"`.
+
+#### Example - set the server proxy URL
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                proxyURL: "/save"
+            }
+        });
+    </script>
+
+### pdf.proxyTarget `String` *(default: "_self")*
+
+A name or keyword indicating where to display the document returned from the proxy.
+
+If you want to display the document in a new window or iframe,
+the proxy should set the "Content-Disposition" header to `inline; filename="<fileName.pdf>"`.
+
+#### Example - open the generated document in a new window
+
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                forceProxy: true,
+                proxyURL: "/save",
+                proxyTarget: "_blank"
+            }
+        });
+    </script>
+
+### pdf.subject `String` *(default: null)*
+
+Sets the subject of the PDF file.
+
+#### Example - set the subject
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+                subject : "Kendo UI Editor overview"
+            }
+        });
+    </script>
+
+### pdf.title `String` *(default: null)*
+
+Sets the title of the PDF file.
+
+#### Example - set the title
+    <textarea id="editor"></textarea>
+    <script>
+        $("#editor").kendoEditor({
+            tools: ["pdf"],
+            pdf: {
+                title : "Overview"
+            }
+        });
+    </script>
+
 ### resizable `Boolean|Object` *(default: false)*
 
 If enabled, the editor renders a resize handle to allow users to resize it.
@@ -1144,6 +1389,8 @@ The available editor commands are:
         - **viewHtml**
 *   Print edited page
         - **print**
+*   Export to PDF
+        - **pdf**
 
 #### Example
 
@@ -3186,6 +3433,34 @@ Reinitializes the editing area iframe. Should be used after moving the editor in
     editor.refresh();
     </script>
 
+### saveAsPDF
+
+Initiates the PDF export and returns a promise. Also triggers the [pdfExport](#events-pdfExport) event.
+
+> Calling this method may trip the built-in browser pop-up blocker. To avoid that, call this method as a response to an end-user action, e.g. a button click.
+
+#### Returns
+`Promise` A promise that will be resolved when the export completes. The same promise is available in the [pdfExport](#events-pdfExport) event arguments.
+
+#### Example - manually initiate PDF export
+
+    <button id="export">Export to PDF</button>
+    <textarea id="editor" rows="10" cols="30" style="height:440px">
+            Kendo UI Editor allows your users to edit HTML in a familiar, user-friendly way.&lt;br /&gt;
+            In this version, the Editor provides the core HTML editing engine, which includes basic text formatting, hyperlinks, lists,
+            and image handling. The widget &lt;strong&gt;outputs identical HTML&lt;/strong&gt; across all major browsers, follows
+            accessibility standards and provides API for content manipulation.
+    </textarea>
+    
+    <script>
+        $("#editor").kendoEditor();
+        $("#export").click(function(e) {
+            var editor = $("#editor").data("kendoEditor");
+            editor.saveAsPDF();
+        });
+    </script>
+
+
 ### selectRange
 
 Focuses the editable area and selects the range described by the range parameter.
@@ -3460,6 +3735,45 @@ The pasted content
     $("#editor").kendoEditor({
       paste: onPaste
     });
+    </script>
+
+### pdfExport
+
+Fired when the user clicks the "Export to PDF" toolbar button.
+
+#### Event Data
+
+##### e.sender `kendo.ui.Editor`
+
+The widget instance which fired the event.
+
+##### e.preventDefault `Function`
+
+If invoked the Editor will not save the generated file.
+
+##### e.promise `Promise`
+
+A promise that will be resolved when the export completes.
+
+#### Example - subscribe to the "select" event during initialization
+
+    <textarea id="editor"></textarea>
+    <script>
+    $("#editor").kendoEditor({
+      pdfExport: function(e) {
+      }
+    });
+    </script>
+
+#### Example - subscribe to the "select" event after initialization
+
+    <textarea id="editor"></textarea>
+    <script>
+    function onEditorExport(e) {
+    }
+    $("#editor").kendoEditor();
+    var editor = $("#editor").data("kendoEditor");
+    editor.bind("pdfExport", onEditorExport);
     </script>
 
 ### select
