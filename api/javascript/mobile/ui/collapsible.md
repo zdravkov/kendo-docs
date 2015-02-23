@@ -111,6 +111,40 @@ Sets the icon for the header of the collapsible widget when it is in a expanded 
         }
     </style>
 
+### iconPosition `String`*(default: "left")*
+
+Sets the icon position in the header of the collapsible widget. Possible values are "left", "right", "top".
+
+#### Example
+
+    <div id="home" data-role="view">
+        <div id="collapsible" data-role="collapsible" data-icon-postion="right">
+            <h2>Header</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+    </script>
+
+### inset `Boolean`*(default: "false")*
+
+Forses inset appearance - the collapsible panel is padded from the View and receives rounded corners.
+
+#### Example
+
+    <div id="home" data-role="view">
+        <div id="collapsible" data-role="collapsible" data-inset="true">
+            <h2>Header</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+    </script>
+
 ## Methods
 
 ### collapse
