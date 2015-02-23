@@ -796,6 +796,30 @@ prevent the user from locking or unlocking this column using the user interface.
         });
     </script>
 
+### resizable `Boolean` *(default: false)*
+
+If set to `true` allows users to resize columns by dragging their header borders. By default resizing is disabled.
+
+#### Example - enable column resizing
+
+    <div id="treeList"></div>
+    <script>
+        $("#treeList").kendoTreeList({
+            columns: [
+                { field: "id" },
+                { field: "name" },
+                { field: "age" }
+            ],
+            resizable: true,
+            dataSource: {
+                data: [
+                    { id: 1, parentId: null, name: "Jane Doe", age: 22 },
+                    { id: 2, parentId: 1, name: "John Doe", age: 24 }
+                ]
+            }
+        });
+    </script>
+
 ### reorderable `Boolean` *(default:false)*
 
 If set to `true` the user could reorder the columns by dragging their header cells. By default reordering is disabled.
