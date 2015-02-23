@@ -1797,6 +1797,44 @@ If set to `true` the chart will display the category axis labels. By default the
     });
     </script>
 
+### categoryAxis.labels.visual `Function`
+
+A function that can be used to create a custom visual for the labels. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the labels
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        categoryAxis: {
+          categories: ["foo bar"],
+          labels: {
+            visual: function(e) {
+              var rect = new kendo.geometry.Rect(e.rect.origin, [e.rect.size.width, 100]);
+              var layout = new kendo.drawing.Layout(rect, {
+                orientation: "vertical",
+                alignContent: "center"
+              });
+              var words = e.text.split(" ");
+              for (var i = 0; i < words.length; i++) {
+                layout.append(new kendo.drawing.Text(words[i]));
+              }
+              layout.reflow();
+              return layout;
+            }
+          }
+        },
+        series: [{
+          data: [1]
+        }]
+      });
+    </script>
+
 ### categoryAxis.line `Object`
 
 The configuration of the axis lines. Also affects the major and minor ticks, but not the grid lines.
@@ -3686,6 +3724,45 @@ If set to `true` the chart will display the category axis title. By default the 
     });
     </script>
 
+### categoryAxis.title.visual `Function`
+
+A function that can be used to create a custom visual for the title. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the title
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        categoryAxis: [{
+          title: {
+            text: "foo bar",
+            visual: function (e) {
+              var layout = new kendo.drawing.Layout(e.rect, {
+                orientation: "vertical",
+                alignContent: "center",
+                justifyContent: "end"
+              });
+              var words = e.text.split(" ");
+              for (var i = 0; i < words.length; i++) {
+                layout.append(new kendo.drawing.Text(words[i]));
+              }
+              layout.reflow();
+              return layout;
+            }
+          },
+          categories: ["2012", "2013"]
+        }],
+        series: [
+          { data: [1, 2, 3] }
+        ]
+      });
+    </script>
+
 ### categoryAxis.type `String` *(default: "category")*
 
 The category axis type.
@@ -4933,6 +5010,48 @@ The length of the connecting lines in pixels.
         }
       }
     });
+    </script>
+
+### categoryAxis.notes.visual `Function`
+
+A function that can be used to create a custom visual for the notes. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines the note target rect.
+* options - the note options.
+* createVisual - a function that can be used to get the default visual.
+* value - the note value.
+
+#### Example - use custom visual for the notes
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          data: [1, 2, 3]
+        }],
+        categoryAxis: {
+          notes: {
+            data: [{
+              value: 1
+            }],
+            visual: function (e) {
+              var targetPoint = { x: e.rect.center().x, y: e.rect.origin.y };
+              var line = new kendo.drawing.Path()
+              .moveTo(targetPoint.x, targetPoint.y)
+              .lineTo(targetPoint.x, targetPoint.y - 10);
+              var circle = new kendo.drawing.Circle(new kendo.geometry.Circle([targetPoint.x, targetPoint.y - 30], 20), {
+                fill: {
+                  color: "red"
+                }
+              });
+
+              return new kendo.drawing.Group({
+                zIndex: 1
+              }).append(line, circle);
+            }
+          }
+        }
+      });
     </script>
 
 ### chartArea `Object`
@@ -7648,6 +7767,43 @@ If set to `true` the chart will display the pane title. By default the pane titl
     });
     </script>
 
+### panes.title.visual `Function`
+
+A function that can be used to create a custom visual for the title. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the title
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [
+          { data: [1, 2, 3] }
+        ],
+        panes: [{
+          title: {
+            text: "foo bar",
+            visual: function (e) {
+              var layout = new kendo.drawing.Layout(e.rect, {
+                orientation: "vertical",
+                alignContent: "center"
+              });
+              var words = e.text.split(" ");
+              for (var i = 0; i < words.length; i++) {
+                layout.append(new kendo.drawing.Text(words[i]));
+              }
+              layout.reflow();
+              return layout;
+            }
+          }
+        }]
+      });
+    </script>
+
 ### pdf `Object`
 Configures the export settings for the [saveAsPDF](#methods-saveAsPDF) method.
 
@@ -9177,6 +9333,37 @@ The following value types are supported:
     });
     </script>
 
+### series.errorBars.visual `Function`
+
+A function that can be used to create a custom visual for the error bars. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the error bar options.
+* createVisual - a function that can be used to get the default visual.
+* low - the error bar low value.
+* high - the error bar high value.
+
+#### Example - use custom visual for the error bars
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          data: [4.743, 7.295, 7.175, 6.376],
+          errorBars: {
+            value: "stddev(0.5)",
+            visual: function (e) {
+              return kendo.drawing.Path.fromRect(e.rect, {
+                fill: {
+                  color: e.options.color
+                }
+              });
+            }
+          }
+        }]
+      });
+    </script>
+
 ### series.errorBars.xValue `String|Number|Array|Function`
 
 The xAxis error bars value. See the [series.errorBars.value option](#configuration-series.errorBars.value) for a list of the supported value types.
@@ -10089,6 +10276,38 @@ The opacity of the highlighted points.
     });
     </script>
 
+### series.highlight.toggle `Function`
+
+A function that can be used to handle toggling the points highlight. The available argument fields are:
+
+* preventDefault - a function that can be used to prevent showing the default highlight overlay.
+* show - a boolean value indicating whether the highlight should be shown.
+* visual - the visual element that should be highlighted.
+* category - the point category.
+* dataItem - the point dataItem.
+* value - the point value.
+* series - the point series.
+
+#### Example - using custom highlight
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          type: "pie",
+          data: [1, 2],
+          highlight: {
+            toggle: function (e) {
+              e.preventDefault();
+
+              var opacity = e.show ? 0.5 : 1;
+              e.visual.opacity(opacity);
+            }
+          }
+        }]
+      });
+    </script>
+
 ### series.highlight.visible `Boolean` *(default: true)*
 
 If set to `true` the chart will highlight the series when the user hovers it with the mouse.
@@ -10694,6 +10913,37 @@ If set to `true` the chart will display the series labels. By default chart seri
         data: [1, 2, 3]
       }]
     });
+    </script>
+
+### series.labels.visual `Function`
+
+A function that can be used to create a custom visual for the labels. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the labels
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [ {
+          labels: {
+            visible: true,
+            visual: function(e) {
+              var center = e.rect.center();
+              return new kendo.drawing.Text(e.text, [center.x, e.rect.origin.y], {
+                fill: {
+                  color: "red"
+                }
+              });
+            }
+          },
+          data: [1, 2, 3]
+        }]
+      });
     </script>
 
 ### series.labels.from `Object`
@@ -11351,6 +11601,49 @@ If set to `true` the chart will display the series markers. By default chart ser
         data: [1, 2, 3]
       }]
     });
+    </script>
+
+### series.markers.visual `Function`
+
+A function that can be used to create a custom visual for the markers. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the marker options.
+* createVisual - a function that can be used to get the default visual.
+* category - the category of the marker point.
+* dataItem - the dataItem of the marker point.
+* value - the value of the marker point.
+* series - the series of the marker point.
+
+#### Example - use custom visual for the markers
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          type: "line",
+          markers: {
+            visual: function (e) {
+              var origin = e.rect.origin;
+              var center = e.rect.center();
+              var bottomRight = e.rect.bottomRight();
+
+              var path = new kendo.drawing.Path({
+                fill: {
+                  color: e.options.border.color
+                }
+              })
+              .moveTo(origin.x, bottomRight.y)
+              .lineTo(bottomRight.x, bottomRight.y)
+              .lineTo(center.x, origin.y)
+              .close();
+
+              return path;
+            }
+          },
+          data: [1, 2, 3]
+        }]
+      });
     </script>
 
 ### series.markers.rotation `Number|Function`
@@ -12943,6 +13236,46 @@ The data item field which indicates whether to show the point category name in t
     });
     </script>
 
+### series.visual `Function`
+
+A function that can be used to create a custom visual for the points. Applicable for bar and column series. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the point options.
+* createVisual - a function that can be used to get the default visual.
+* category - the point category.
+* dataItem - the point dataItem.
+* value - the point value.
+* series - the point series.
+
+#### Example - using custom visual
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          data: [1, 2, 3],
+          visual: function (e) {
+            var origin = e.rect.origin;
+            var center = e.rect.center();
+            var bottomRight = e.rect.bottomRight();
+
+            var path = new kendo.drawing.Path({
+              fill: {
+                color: e.options.color
+              }
+            })
+            .moveTo(origin.x, bottomRight.y)
+            .lineTo(bottomRight.x, bottomRight.y)
+            .lineTo(center.x, origin.y)
+            .close();
+
+            return path;
+          }
+        }]
+      });
+    </script>
+
 ### series.width `Number`
 
 The line width.
@@ -13656,6 +13989,55 @@ The length of the connecting lines in pixels.
         }
       }]
     });
+    </script>
+
+### series.notes.visual `Function`
+
+A function that can be used to create a custom visual for the notes. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines the note target rect.
+* options - the note options.
+* createVisual - a function that can be used to get the default visual.
+* category - the category of the note point.
+* dataItem - the dataItem of the note point.
+* value - the value of the note point.
+* series - the series of the note point.
+* text - the note text.
+
+#### Example - use custom visual for the notes
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        dataSource: {
+          data: [{
+            value: 1,
+            noteText: "A"
+          }]
+        },
+        series: [{
+          field: "value",
+          noteTextField: "noteText",
+          notes: {
+            visual: function (e) {
+              var targetPoint = { x: e.rect.center().x, y: e.rect.origin.y };
+              var line = new kendo.drawing.Path()
+              .moveTo(targetPoint.x, targetPoint.y)
+              .lineTo(targetPoint.x, targetPoint.y - 10);
+              var circle = new kendo.drawing.Circle(new kendo.geometry.Circle([targetPoint.x, targetPoint.y - 30], 20), {
+                fill: {
+                  color: "red"
+                }
+              });
+
+              var text = new kendo.drawing.Text(e.text);
+              var bbox = text.bbox();
+              text.position([targetPoint.x - 20 + (40 - bbox.width()) / 2, targetPoint.y - 50 + (40 - bbox.height()) / 2]);
+              return new kendo.drawing.Group().append(line, circle, text);
+            }
+          }
+        }]
+      });
     </script>
 
 ### series.zIndex `Number`
@@ -14456,6 +14838,39 @@ If set to `true` the chart will display the series labels. By default chart seri
         data: [1, 2, 3]
       }]
     });
+    </script>
+
+### seriesDefaults.labels.visual `Function`
+
+A function that can be used to create a custom visual for the labels. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the labels
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        seriesDefaults: {
+          labels: {
+            visible: true,
+            visual: function(e) {
+              var center = e.rect.center();
+              return new kendo.drawing.Text(e.text, [center.x, e.rect.origin.y], {
+                fill: {
+                  color: "red"
+                }
+              });
+            }
+          }
+        },
+        series: [{
+          data: [1, 2, 3]
+        }]
+      });
     </script>
 
 ### seriesDefaults.labels.from `Object`
@@ -15325,6 +15740,49 @@ The verticalLine chart series options. Accepts all values supported by the [seri
     });
     </script>
 
+
+### seriesDefaults.visual `Function`
+
+A function that can be used to create a custom visual for the points. Applicable for bar and column series. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the point options.
+* createVisual - a function that can be used to get the default visual.
+* category - the point category.
+* dataItem - the point dataItem.
+* value - the point value.
+* series - the point series.
+
+#### Example - using custom visual
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        seriesDefaults: {
+          visual: function (e) {
+            var origin = e.rect.origin;
+            var center = e.rect.center();
+            var bottomRight = e.rect.bottomRight();
+
+            var path = new kendo.drawing.Path({
+              fill: {
+                color: e.options.color
+              }
+            })
+            .moveTo(origin.x, bottomRight.y)
+            .lineTo(bottomRight.x, bottomRight.y)
+            .lineTo(center.x, origin.y)
+            .close();
+
+            return path;
+          }
+        },
+        series: [{
+          data: [1, 2, 3]
+        }]
+      });
+    </script>
+
 ### seriesDefaults.notes `Object`
 
 The seriesDefaults notes configuration.
@@ -15997,6 +16455,57 @@ The length of the connecting lines in pixels.
         noteTextField: "noteText"
       }]
     });
+    </script>
+
+### seriesDefaults.notes.visual `Function`
+
+A function that can be used to create a custom visual for the notes. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines the note target rect.
+* options - the note options.
+* createVisual - a function that can be used to get the default visual.
+* category - the category of the note point.
+* dataItem - the dataItem of the note point.
+* value - the value of the note point.
+* series - the series of the note point.
+* text - the note text.
+
+#### Example - use custom visual for the notes
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        dataSource: {
+          data: [{
+            value: 1,
+            noteText: "A"
+          }]
+        },
+        series: [{
+          field: "value",
+          noteTextField: "noteText"
+        }],
+        seriesDefaults: {
+          notes: {
+            visual: function (e) {
+              var targetPoint = { x: e.rect.center().x, y: e.rect.origin.y };
+              var line = new kendo.drawing.Path()
+              .moveTo(targetPoint.x, targetPoint.y)
+              .lineTo(targetPoint.x, targetPoint.y - 10);
+              var circle = new kendo.drawing.Circle(new kendo.geometry.Circle([targetPoint.x, targetPoint.y - 30], 20), {
+                fill: {
+                  color: "red"
+                }
+              });
+
+              var text = new kendo.drawing.Text(e.text);
+              var bbox = text.bbox();
+              text.position([targetPoint.x - 20 + (40 - bbox.width()) / 2, targetPoint.y - 50 + (40 - bbox.height()) / 2]);
+              return new kendo.drawing.Group().append(line, circle, text);
+            }
+          }
+        }
+      });
     </script>
 
 ### theme `String`
@@ -18231,6 +18740,38 @@ If set to `true` the chart will display the value axis labels. By default the ca
     });
     </script>
 
+### valueAxis.labels.visual `Function`
+
+A function that can be used to create a custom visual for the labels. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the labels
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        valueAxis: [{
+          labels: {
+            visual: function(e) {
+              var center = e.rect.center();
+              return new kendo.drawing.Text(e.text, e.rect.origin, {
+                fill: {
+                  color: "red"
+                }
+              });
+            }
+          }
+        }],
+        series: [
+          { data: [1, 2, 3] }
+        ]
+      });
+    </script>
+
 ### valueAxis.line `Object`
 
 The configuration of the axis lines. Also affects the major and minor ticks, but not the grid lines.
@@ -19985,6 +20526,37 @@ If set to `true` the chart will display the value axis title. By default the val
     });
     </script>
 
+### valueAxis.title.visual `Function`
+
+A function that can be used to create a custom visual for the title. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the title
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        valueAxis: [{
+          title: {
+            text: "Years",
+            visual: function(e) {
+              return new kendo.drawing.Text(e.text, e.rect.origin, {
+                fill: {
+                  color: "red"
+                }
+              });
+            }
+          }
+        }],
+        series: [
+          { data: [1, 2, 3] }
+        ]
+      });
+    </script>
 
 ### valueAxis.type `String` *(default: "numeric")*
 
@@ -21210,6 +21782,46 @@ The length of the connecting lines in pixels.
         }
       }
     });
+    </script>
+
+### valueAxis.notes.visual `Function`
+
+A function that can be used to create a custom visual for the notes. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines the note target rect.
+* options - the note options.
+* createVisual - a function that can be used to get the default visual.
+* value - the note value.
+
+#### Example - use custom visual for the notes
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          data: [1, 2, 3]
+        }],
+        valueAxis: {
+          notes: {
+            data: [{
+              value: 1
+            }],
+            visual: function (e) {
+              var targetPoint = { x: e.rect.origin.x, y: e.rect.center().y };
+              var line = new kendo.drawing.Path()
+              .moveTo(targetPoint.x, targetPoint.y)
+              .lineTo(targetPoint.x + 10, targetPoint.y);
+              var circle = new kendo.drawing.Circle(new kendo.geometry.Circle([targetPoint.x + 30, targetPoint.y], 20), {
+                fill: {
+                  color: "red"
+                }
+              });
+
+              return new kendo.drawing.Group().append(line, circle);
+            }
+          }
+        }
+      });
     </script>
 
 ### xAxis `Array`
@@ -22763,6 +23375,40 @@ If set to `true` the chart will display the x axis labels. By default the x axis
         }
       }
     });
+    </script>
+
+### xAxis.labels.visual `Function`
+
+A function that can be used to create a custom visual for the labels. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the labels
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [
+          {
+            type: "scatter",
+            data: [ [1, 2] ]
+          }
+        ],
+        xAxis: {
+          labels: {
+            visual: function(e) {
+              return new kendo.drawing.Text(e.text, e.rect.origin, {
+                fill: {
+                  color: "red"
+                }
+              });
+            }
+          }
+        }
+      });
     </script>
 
 ### xAxis.line `Object`
@@ -24529,6 +25175,44 @@ If set to `true` the chart will display the scatter chart x axis title. By defau
     });
     </script>
 
+### xAxis.title.visual `Function`
+
+A function that can be used to create a custom visual for the title. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the title
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        xAxis: [{
+          title: {
+            text: "foo bar",
+            visual: function (e) {
+              var layout = new kendo.drawing.Layout(e.rect, {
+                orientation: "vertical",
+                alignContent: "center",
+                justifyContent: "end"
+              });
+              var words = e.text.split(" ");
+              for (var i = 0; i < words.length; i++) {
+                layout.append(new kendo.drawing.Text(words[i]));
+              }
+              layout.reflow();
+              return layout;
+            }
+          }
+        }],
+        series: [
+          { type: "scatter", data: [[1, 2]] }
+        ]
+      });
+    </script>
+
 ### xAxis.type `String` *(default: "numeric")*
 
 The axis type.
@@ -25784,6 +26468,49 @@ The length of the connecting lines in pixels.
         }
       }
     });
+    </script>
+
+### xAxis.notes.visual `Function`
+
+A function that can be used to create a custom visual for the notes. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines the note target rect.
+* options - the note options.
+* createVisual - a function that can be used to get the default visual.
+* value - the note value.
+
+#### Example - use custom visual for the notes
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          type: "scatter",
+          data: [[1, 2]]
+        }],
+        xAxis: {
+          notes: {
+            data: [{
+              value: 1
+            }],
+            visual: function (e) {
+              var targetPoint = { x: e.rect.center().x, y: e.rect.origin.y };
+              var line = new kendo.drawing.Path()
+              .moveTo(targetPoint.x, targetPoint.y)
+              .lineTo(targetPoint.x, targetPoint.y - 10);
+              var circle = new kendo.drawing.Circle(new kendo.geometry.Circle([targetPoint.x, targetPoint.y - 30], 20), {
+                fill: {
+                  color: "red"
+                }
+              });
+
+              return new kendo.drawing.Group({
+                zIndex: 1
+              }).append(line, circle);
+            }
+          }
+        }
+      });
     </script>
 
 ### yAxis `Array`
@@ -27335,6 +28062,40 @@ If set to `true` the chart will display the y axis labels. By default the y axis
         }
       }
     });
+    </script>
+
+### yAxis.labels.visual `Function`
+
+A function that can be used to create a custom visual for the labels. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the labels
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [
+          {
+            type: "scatter",
+            data: [ [1, 2] ]
+          }
+        ],
+        yAxis: {
+          labels: {
+            visual: function(e) {
+              return new kendo.drawing.Text(e.text, e.rect.origin, {
+                fill: {
+                  color: "red"
+                }
+              });
+            }
+          }
+        }
+      });
     </script>
 
 ### yAxis.line `Object`
@@ -29095,6 +29856,43 @@ If set to `true` the chart will display the scatter chart y axis title. By defau
     });
     </script>
 
+### yAxis.title.visual `Function`
+
+A function that can be used to create a custom visual for the title. The available argument fields are:
+
+* text - the label text.
+* rect - the `kendo.geometry.Rect` that defines where the visual should be rendered.
+* options - the label options.
+* createVisual - a function that can be used to get the default visual.
+
+#### Example - using custom visual for the title
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        yAxis: [{
+          title: {
+            text: "foo bar",
+            visual: function (e) {
+              var layout = new kendo.drawing.Layout(e.rect, {
+                orientation: "vertical",
+                justifyContent: "center"
+              });
+              var words = e.text.split(" ");
+              for (var i = 0; i < words.length; i++) {
+                layout.append(new kendo.drawing.Text(words[i]));
+              }
+              layout.reflow();
+              return layout;
+            }
+          }
+        }],
+        series: [
+          { type: "scatter", data: [[1, 2]] }
+        ]
+      });
+    </script>
+
 ### yAxis.type `String` *(default: "numeric")*
 
 The axis type.
@@ -30350,6 +31148,47 @@ The length of the connecting lines in pixels.
         }
       }
     });
+    </script>
+
+### yAxis.notes.visual `Function`
+
+A function that can be used to create a custom visual for the notes. The available argument fields are:
+
+* rect - the `kendo.geometry.Rect` that defines the note target rect.
+* options - the note options.
+* createVisual - a function that can be used to get the default visual.
+* value - the note value.
+
+#### Example - use custom visual for the notes
+
+    <div id="chart"></div>
+    <script>
+      $("#chart").kendoChart({
+        series: [{
+          type: "scatter",
+          data: [[1, 2]]
+        }],
+        yAxis: {
+          notes: {
+            data: [{
+              value: 2
+            }],
+            visual: function (e) {
+              var targetPoint = { x: e.rect.origin.x, y: e.rect.center().y };
+              var line = new kendo.drawing.Path()
+              .moveTo(targetPoint.x, targetPoint.y)
+              .lineTo(targetPoint.x + 10, targetPoint.y);
+              var circle = new kendo.drawing.Circle(new kendo.geometry.Circle([targetPoint.x + 30, targetPoint.y], 20), {
+                fill: {
+                  color: "red"
+                }
+              });
+
+              return new kendo.drawing.Group().append(line, circle);
+            }
+          }
+        }
+      });
     </script>
 
 ## Fields
