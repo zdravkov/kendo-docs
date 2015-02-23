@@ -38,6 +38,33 @@ Represents the Kendo UI Mobile Button widget. Inherits from [kendo.mobile.ui.Wid
     }
     </script>
 
+### clickOn `String` *(default "up")*
+
+Configures the DOM event used to trigger the button click event/navigate in the mobile application. Can be set to `"down"` as an alias for `touchstart`, `mousedown`, `MSPointerDown`, and `PointerDown` vendor specific events.
+Setting the `clickOn` to `down` usually makes sense for buttons in the header or in non-scrollable views for increased responsiveness.
+
+By default, buttons trigger click/navigate when the user taps the button (a press + release action sequence occurs).
+
+#### Example - button which reacts immediately when pressed
+
+```html
+    <div data-role="view" data-title="Foo">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="viewtitle"></span>
+                <a data-role="button" data-click-on="down" data-align="right" data-click="onClick">Button</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var app = new kendo.mobile.Application();
+        function onClick() {
+            console.log("click");
+        }
+    </script>
+```
+
 ### enable `Boolean`*(default: true)*
 
 If set to `false` the widget will be disabled and will not allow the user to click it. The widget is enabled by default.
