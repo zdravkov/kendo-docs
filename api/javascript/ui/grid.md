@@ -5915,7 +5915,7 @@ DOM element or jQuery object which represents the navigatable cell.
 
 ### dataItem
 
-Returns the data item to which the specified table row is bound.
+Returns the data item to which the specified table row is bound. The data item is a [Kendo UI Model](/api/javascript/data/model) instance.
 
 > When using the **Grid's MVC wrapper**, the Grid must be **Ajax-bound** for the dataItem() method to work.
 When using server binding, the dataSource instance does not contain the serialized data items.
