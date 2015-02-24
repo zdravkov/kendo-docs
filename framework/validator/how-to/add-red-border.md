@@ -6,7 +6,7 @@ description: Add red border and hide tooltip
 
 # Add red border and hide tooltip
 
-The example below demonstrates how to hide the validation tooltip and add a red border around input elemnts and widgets that failed to validate.
+The example below demonstrates how to hide the validation tooltips and add a red border around input elements and widgets that failed to validate.
 
 #### Example:
 
@@ -126,7 +126,11 @@ The example below demonstrates how to hide the validation tooltip and add a red 
 
         $("#datetime").kendoDatePicker();
 
-        var validator = $("#tickets").kendoValidator().data("kendoValidator"),
+        var validator = $("#tickets").kendoValidator({
+            validate: function(e) {
+                $("span.k-invalid-msg").hide();
+            }
+        }).data("kendoValidator"),
             status = $(".status");
 
         $("form").submit(function(event) {
